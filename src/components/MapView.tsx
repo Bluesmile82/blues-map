@@ -230,6 +230,7 @@ export default function MapView({ musicians, onSelect, selectedId }: MapViewProp
   const [hovered, setHovered] = useState<string | null>(null);
   const [listHovered, setListHovered] = useState<string | null>(null);
   const [viewState, setViewState] = useState<MapViewState>(INITIAL_VIEW_STATE);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const spentPlaces = useMemo<SpentFlat[]>(
     () =>
@@ -344,14 +345,25 @@ export default function MapView({ musicians, onSelect, selectedId }: MapViewProp
 
   return (
     <div className="relative w-full h-full">
-      {/* Musician Sidebar */}
-      <MusicianSidebar
-        musicians={completeMusicians}
-        onSelect={onSelect}
-        onHover={setListHovered}
-        selectedId={selectedId}
-        hoveredId={listHovered}
-      />
+      {/* Mobile sidebar toggle */}
+      <button
+        onClick={() => setSidebarOpen(o => !o)}
+        className="sm:hidden absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/95 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-md"
+      >
+        <span>{sidebarOpen ? '✕' : '☰'}</span>
+        <span>{sidebarOpen ? 'Close' : 'Musicians'}</span>
+      </button>
+
+      {/* Musician Sidebar — always visible on sm+, toggleable on mobile */}
+      <div className={`${sidebarOpen ? 'flex' : 'hidden'} sm:flex absolute left-0 top-0 bottom-0 z-10`}>
+        <MusicianSidebar
+          musicians={completeMusicians}
+          onSelect={(m) => { onSelect(m); setSidebarOpen(false); }}
+          onHover={setListHovered}
+          selectedId={selectedId}
+          hoveredId={listHovered}
+        />
+      </div>
 
       {/* Map */}
       <div className="relative w-full h-full">

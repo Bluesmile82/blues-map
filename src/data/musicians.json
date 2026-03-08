@@ -2,7 +2,7 @@
   {
     "id": "junior-watson",
     "name": "Junior Watson",
-    "image": "",
+    "image": "/images/musicians/junior-watson.webp",
     "birthDate": "1949",
     "birthPlace": "Tulare, California",
     "birthCoords": [
@@ -29,24 +29,24 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "West Coast Blues, Jump Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=MiXvVYWJM5A",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Fq1eFqsCIqU",
     "albums": [
       {
         "name": "Long Overdue (1994)",
-        "youtubeLink": ""
+        "youtubeLink": "https://www.youtube.com/watch?v=k5zm5yNnvhM"
       },
       {
         "name": "If I Had A Genie (2002)",
-        "youtubeLink": ""
+        "youtubeLink": "https://www.youtube.com/watch?v=UYuid-5qQDU"
       },
       {
         "name": "Jumpin' Wit Junior (2012)",
-        "youtubeLink": ""
+        "youtubeLink": "https://www.youtube.com/watch?v=Fq1eFqsCIqU"
       },
       {
         "name": "Nothin' to It But to Do It (2019)",
-        "youtubeLink": ""
+        "youtubeLink": "https://www.youtube.com/watch?v=reZG3IFxKB0"
       }
     ],
     "description": "Junior Watson is an influential American jump blues guitarist and singer. A founding member of The Mighty Flyers, he performed with Canned Heat throughout the 1990s. Known for his spontaneous, humorous style that fuses traditional electric blues with swing and jazz elements.",
@@ -67,9 +67,10 @@
     ],
     "incomplete": false
   },
+  {
     "id": "charley-patton",
     "name": "Charley Patton",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Charley_Patton_01.jpg/220px-Charley_Patton_01.jpg",
+    "image": "/images/musicians/charley-patton.webp",
     "birthDate": "1891-05-01",
     "birthPlace": "Hinds County, Mississippi",
     "birthCoords": [
@@ -126,7 +127,7 @@
   {
     "id": "ma-rainey",
     "name": "Ma Rainey",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ma_Rainey%27s_Black_Bottom_-_publicity_-_1925.jpg/220px-Ma_Rainey%27s_Black_Bottom_-_publicity_-_1925.jpg",
+    "image": "/images/musicians/ma-rainey.webp",
     "birthDate": "1886-04-26",
     "birthPlace": "Columbus, Georgia",
     "birthCoords": [
@@ -156,7 +157,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Classic Blues, Country Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=9U94_14tFhI",
     "albums": [
       {
@@ -175,12 +176,15 @@
       "bessie-smith",
       "alberta-hunter"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Country Blues"
+    ]
   },
   {
     "id": "bessie-smith",
     "name": "Bessie Smith",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bessie_Smith.jpg/220px-Bessie_Smith.jpg",
+    "image": "/images/musicians/bessie-smith.webp",
     "birthDate": "1894-04-15",
     "birthPlace": "Chattanooga, Tennessee",
     "birthCoords": [
@@ -210,7 +214,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Classic Blues, Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=I5B_sBp30Vs",
     "albums": [
       {
@@ -228,12 +232,15 @@
       "ma-rainey"
     ],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Vaudeville Blues"
+    ]
   },
   {
     "id": "son-house",
     "name": "Son House",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Son_House_NYC.jpg/220px-Son_House_NYC.jpg",
+    "image": "/images/musicians/son-house.webp",
     "birthDate": "1902-03-21",
     "birthPlace": "Lyon, Mississippi",
     "birthCoords": [
@@ -295,7 +302,7 @@
   {
     "id": "skip-james",
     "name": "Skip James",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Skip_James_1964.jpg/220px-Skip_James_1964.jpg",
+    "image": "/images/musicians/skip-james.webp",
     "birthDate": "1902-06-09",
     "birthPlace": "Bentonia, Mississippi",
     "birthCoords": [
@@ -318,7 +325,7 @@
       }
     ],
     "instrument": "Guitar, Piano, Vocals",
-    "bluesStyle": "Delta Blues, Mississippi Blues",
+    "bluesStyle": "Delta Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=FblpawkAbq8",
     "albums": [
       {
@@ -347,7 +354,7 @@
   {
     "id": "robert-johnson",
     "name": "Robert Johnson",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Robert_Johnson.png/220px-Robert_Johnson.png",
+    "image": "/images/musicians/robert-johnson.webp",
     "birthDate": "1911-05-08",
     "birthPlace": "Hazlehurst, Mississippi",
     "birthCoords": [
@@ -429,7 +436,7 @@
       }
     ],
     "instrument": "Harmonica, Vocals",
-    "bluesStyle": "Delta Blues, Chicago Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=m4fomLRcEEk",
     "albums": [
       {
@@ -454,7 +461,10 @@
       "little-walter",
       "alexis-korner"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Delta Blues"
+    ]
   },
   {
     "id": "howlin-wolf",
@@ -496,7 +506,7 @@
       }
     ],
     "instrument": "Guitar, Harmonica, Vocals",
-    "bluesStyle": "Chicago Blues, Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=ovCkILOVwQk",
     "albums": [
       {
@@ -522,12 +532,15 @@
     "influencedBy": [
       "buddy-guy"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Mississippi Blues"
+    ]
   },
   {
     "id": "muddy-waters",
     "name": "Muddy Waters",
-    "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Muddy_Waters.jpg/1280px-Muddy_Waters.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Muddy_Waters.jpg/1280px-Muddy_Waters.jpg",
     "birthDate": "1913-04-04",
     "birthPlace": "Issaquena County, Mississippi",
     "birthCoords": [
@@ -557,7 +570,7 @@
       }
     ],
     "instrument": "Guitar, Vocals, Harmonica",
-    "bluesStyle": "Chicago Blues, Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=l6nZO5gTSE4",
     "albums": [
       {
@@ -591,12 +604,15 @@
       "jb-lenoir",
       "alexis-korner"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Mississippi Blues"
+    ]
   },
   {
     "id": "john-lee-hooker",
     "name": "John Lee Hooker",
-    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.V58IFlaURhwO9bnqRaXVzAHaEc%3Fpid%3DApi&f=1&ipt=441ff25cfdeebd96575e5c689ced45e4740379e4a3a8535853b875c466de636e&ipo=images",
+    "image": "/images/musicians/john-lee-hooker.webp",
     "birthDate": "1917-08-22",
     "birthPlace": "Clarksdale, Mississippi",
     "birthCoords": [
@@ -721,7 +737,7 @@
   {
     "id": "bb-king",
     "name": "B.B. King",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/BB_King_005.jpg/220px-BB_King_005.jpg",
+    "image": "/images/musicians/bb-king.webp",
     "birthDate": "1925-09-16",
     "birthPlace": "Itta Bena, Mississippi",
     "birthCoords": [
@@ -750,8 +766,8 @@
         ]
       }
     ],
-    "instrument": "Guitar (Lucille), Vocals",
-    "bluesStyle": "Electric Blues, Memphis Blues",
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Electric Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=oica5jG7FpU",
     "albums": [
       {
@@ -783,12 +799,15 @@
       "buddy-guy",
       "stevie-ray-vaughan"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Memphis Blues"
+    ]
   },
   {
     "id": "albert-king",
     "name": "Albert King",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Albert_King.jpg/220px-Albert_King.jpg",
+    "image": "/images/musicians/albert-king.webp",
     "birthDate": "1923-04-25",
     "birthPlace": "Indianola, Mississippi",
     "birthCoords": [
@@ -818,7 +837,7 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "Electric Blues, Soul Blues",
+    "bluesStyle": "Electric Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=1VEbL3VhT_E",
     "albums": [
       {
@@ -843,12 +862,15 @@
     "influencedBy": [
       "stevie-ray-vaughan"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Soul Blues"
+    ]
   },
   {
     "id": "buddy-guy",
     "name": "Buddy Guy",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Buddy_Guy_1.jpg/220px-Buddy_Guy_1.jpg",
+    "image": "/images/musicians/buddy-guy.webp",
     "birthDate": "1936-07-30",
     "birthPlace": "Lettsworth, Louisiana",
     "birthCoords": [
@@ -875,7 +897,7 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "Chicago Blues, Electric Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=GMVZ5SISLNM",
     "albums": [
       {
@@ -905,12 +927,15 @@
     "influencedBy": [
       "stevie-ray-vaughan"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Electric Blues"
+    ]
   },
   {
     "id": "stevie-ray-vaughan",
     "name": "Stevie Ray Vaughan",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Stevie_Ray_Vaughan_c1985.jpg/220px-Stevie_Ray_Vaughan_c1985.jpg",
+    "image": "/images/musicians/stevie-ray-vaughan.webp",
     "birthDate": "1954-10-03",
     "birthPlace": "Dallas, Texas",
     "birthCoords": [
@@ -975,7 +1000,7 @@
   {
     "id": "lightnin-hopkins",
     "name": "Lightnin' Hopkins",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Lightnin_Hopkins.jpg/220px-Lightnin_Hopkins.jpg",
+    "image": "/images/musicians/lightnin-hopkins.webp",
     "birthDate": "1912-03-15",
     "birthPlace": "Centerville, Texas",
     "birthCoords": [
@@ -1040,7 +1065,7 @@
   {
     "id": "jb-lenoir",
     "name": "J.B. Lenoir",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/JB_Lenoir.jpg/220px-JB_Lenoir.jpg",
+    "image": "/images/musicians/jb-lenoir.webp",
     "birthDate": "1929-03-05",
     "birthPlace": "Monticello, Mississippi",
     "birthCoords": [
@@ -1070,7 +1095,7 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "Chicago Blues, Electric Blues",
+    "bluesStyle": "Electric Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=zIWwPWq8Xf0",
     "albums": [
       {
@@ -1095,7 +1120,10 @@
       "lightnin-hopkins"
     ],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Chicago Blues"
+    ]
   },
   {
     "id": "junior-kimbrough",
@@ -1162,7 +1190,7 @@
   {
     "id": "albert-ammons",
     "name": "Albert Ammons",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Albert_Ammons.jpg/220px-Albert_Ammons.jpg",
+    "image": "/images/musicians/albert-ammons.webp",
     "birthDate": "1907-09-23",
     "birthPlace": "Chicago, Illinois",
     "birthCoords": [
@@ -1192,7 +1220,7 @@
       }
     ],
     "instrument": "Piano",
-    "bluesStyle": "Boogie-Woogie, Chicago Blues",
+    "bluesStyle": "Boogie Woogie",
     "youtubeLink": "https://www.youtube.com/watch?v=_8yGGtVKrD8",
     "albums": [
       {
@@ -1221,7 +1249,7 @@
   {
     "id": "albert-collins",
     "name": "Albert Collins",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/AlbertCollins1990.jpg/500px-AlbertCollins1990.jpg",
+    "image": "/images/musicians/albert-collins.webp",
     "birthDate": "1932-10-01",
     "birthPlace": "Leona, Texas",
     "birthCoords": [
@@ -1251,7 +1279,7 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "Electric Blues, Texas Blues, Blues Rock",
+    "bluesStyle": "Electric Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=R7VuKk8tM_w",
     "albums": [
       {
@@ -1293,7 +1321,10 @@
     "influencedBy": [
       "stevie-ray-vaughan"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Texas Blues"
+    ]
   },
   {
     "id": "alberta-hunter",
@@ -1335,7 +1366,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Classic Blues, Jazz Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=mp2av6etNm8",
     "albums": [
       {
@@ -1357,12 +1388,15 @@
       "ma-rainey"
     ],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Jazz"
+    ]
   },
   {
     "id": "alexis-korner",
     "name": "Alexis Korner",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexis-Korner.jpg?width=500",
+    "image": "/images/musicians/alexis-korner.webp",
     "birthDate": "1928-04-19",
     "birthPlace": "Paris, France",
     "birthCoords": [
@@ -1385,7 +1419,7 @@
       }
     ],
     "instrument": "Guitar, Vocals, Harmonica",
-    "bluesStyle": "British Blues, Chicago Blues",
+    "bluesStyle": "British Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=noxWJfRael4",
     "albums": [
       {
@@ -1404,12 +1438,15 @@
       "sonny-boy-williamson"
     ],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Chicago Blues"
+    ]
   },
   {
     "id": "alger-texas-alexander",
     "name": "Alger \"Texas\" Alexander",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alger%20%22Texas%22%20Alexander.png?width=500",
+    "image": "/images/musicians/alger-texas-alexander.webp",
     "birthDate": "1900-09-12",
     "birthPlace": "Jewett, Texas",
     "birthCoords": [
@@ -1439,7 +1476,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Texas Blues, Country Blues, Field Hollers",
+    "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=_J_q0ly7sQE",
     "albums": [
       {
@@ -1453,7 +1490,10 @@
     "influencedBy": [
       "lightnin-hopkins"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Country Blues"
+    ]
   },
   {
     "id": "alvin-youngblood-hart",
@@ -1485,7 +1525,7 @@
       }
     ],
     "instrument": "Guitar, Mandolin, Banjo, Vocals",
-    "bluesStyle": "Delta Blues, Country Blues",
+    "bluesStyle": "Delta Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=g70CH3QsTkY",
     "albums": [
       {
@@ -1505,7 +1545,10 @@
       "lightnin-hopkins"
     ],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Mississippi Blues"
+    ]
   },
   {
     "id": "amos-milburn",
@@ -1540,7 +1583,7 @@
       }
     ],
     "instrument": "Piano, Vocals",
-    "bluesStyle": "Rhythm and Blues, Boogie-Woogie, Jump Blues",
+    "bluesStyle": "Rythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=7GvfIx_-Xm4",
     "albums": [
       {
@@ -1560,12 +1603,15 @@
     "activeFrom": "1947",
     "influences": [],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Jump Blues"
+    ]
   },
   {
     "id": "t-bone-walker",
     "name": "T-Bone Walker",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/T-Bone_Walker.jpg/220px-T-Bone_Walker.jpg",
+    "image": "/images/musicians/t-bone-walker.webp",
     "birthDate": "1910-05-28",
     "birthPlace": "Linden, Texas",
     "birthCoords": [
@@ -1602,7 +1648,7 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "West Coast Blues, Electric Blues, Texas Blues",
+    "bluesStyle": "West Coast Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=xifoTGRBhg0",
     "albums": [
       {
@@ -1623,12 +1669,13 @@
       "albert-collins",
       "lowell-fulson"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": []
   },
   {
     "id": "lowell-fulson",
     "name": "Lowell Fulson",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Lowell_Fulson.jpg/220px-Lowell_Fulson.jpg",
+    "image": "/images/musicians/lowell-fulson.webp",
     "birthDate": "1921-03-31",
     "birthPlace": "Tulsa, Oklahoma",
     "birthCoords": [
@@ -1658,7 +1705,7 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "West Coast Blues, Electric Blues",
+    "bluesStyle": "West Coast Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=zFq2zrABFU0",
     "albums": [
       {
@@ -1676,12 +1723,15 @@
       "t-bone-walker"
     ],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Electric Blues"
+    ]
   },
   {
     "id": "charles-brown",
     "name": "Charles Brown",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Charles_Brown_blues.jpg/220px-Charles_Brown_blues.jpg",
+    "image": "/images/musicians/charles-brown.webp",
     "birthDate": "1922-09-13",
     "birthPlace": "Texas City, Texas",
     "birthCoords": [
@@ -1711,7 +1761,7 @@
       }
     ],
     "instrument": "Piano, Vocals",
-    "bluesStyle": "West Coast Blues, Rhythm and Blues, Jump Blues",
+    "bluesStyle": "Rythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=fUyC2l--fSw",
     "albums": [
       {
@@ -1729,12 +1779,15 @@
     "influencedBy": [
       "percy-mayfield"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "secondaryStyles": [
+      "Jump Blues"
+    ]
   },
   {
     "id": "percy-mayfield",
     "name": "Percy Mayfield",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Percy_Mayfield.jpg/220px-Percy_Mayfield.jpg",
+    "image": "/images/musicians/percy-mayfield.webp",
     "birthDate": "1920-08-12",
     "birthPlace": "Minden, Louisiana",
     "birthCoords": [
@@ -1764,7 +1817,7 @@
       }
     ],
     "instrument": "Vocals, Piano",
-    "bluesStyle": "West Coast Blues, Rhythm and Blues, Soul Blues",
+    "bluesStyle": "Rythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=mxgSqmyIUAo",
     "albums": [
       {
@@ -1783,5 +1836,172 @@
     ],
     "influencedBy": [],
     "incomplete": false
+  },
+  {
+    "id": "blind-boy-fuller",
+    "name": "Blind Boy Fuller",
+    "image": "/images/musicians/blind-boy-fuller.webp",
+    "birthDate": "1908",
+    "birthPlace": "Wadesboro, North Carolina",
+    "birthCoords": [
+      -79.9239,
+      34.6774
+    ],
+    "deathDate": "1941-02-11",
+    "deathPlace": "New York City, New York",
+    "deathCoords": [
+      -74.006,
+      40.7128
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Durham, North Carolina",
+        "coords": [
+          -78.8986,
+          35.994
+        ]
+      },
+      {
+        "place": "Richmond, Virginia",
+        "coords": [
+          -77.436,
+          37.5407
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=7Y4r6XQo6dA",
+    "albums": [
+      {
+        "name": "The Best of Blind Boy Fuller (1935–1938)",
+        "youtubeLink": "https://www.youtube.com/watch?v=7Y4r6XQo6dA"
+      },
+      {
+        "name": "Last Sessions (1938–1940)",
+        "youtubeLink": "https://www.youtube.com/watch?v=z0wL5T7J0l4"
+      }
+    ],
+    "description": "Blind Boy Fuller was the most recorded of the Piedmont blues musicians, known for his ragtime-based fingerpicking guitar style. A prolific recording artist with over 120 songs to his name, he helped popularize the East Coast Piedmont blues style that influenced generations of guitarists including Brownie McGhee and Sonny Terry.",
+    "activeFrom": "1935",
+    "influences": [
+      "charley-patton"
+    ],
+    "influencedBy": [
+      "brownie-mcghee",
+      "sonny-terry"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "paul-gayten",
+    "name": "Paul Gayten",
+    "image": "/images/musicians/paul-gayten.webp",
+    "birthDate": "1920-01-17",
+    "birthPlace": "New Orleans, Louisiana",
+    "birthCoords": [
+      -90.0715,
+      29.9511
+    ],
+    "deathDate": "1991-03-09",
+    "deathPlace": "New Orleans, Louisiana",
+    "deathCoords": [
+      -90.0715,
+      29.9511
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans, Louisiana",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Piano, Vocals",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=0e0p0l8qF6k",
+    "albums": [
+      {
+        "name": "Paul Gayten (1947)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0e0p0l8qF6k"
+      },
+      {
+        "name": "The Blues According to Paul Gayten (1959)",
+        "youtubeLink": "https://www.youtube.com/watch?v=aK8b9hK1c8I"
+      }
+    ],
+    "description": "Paul Gayten was a pioneering New Orleans R&B pianist and bandleader who helped shape the city's distinctive musical sound. He worked with early New Orleans musicians including Dave Bartholomew and was an influential figure in the development of rhythm and blues. His 1947 recording 'Annie's Rainbow' was one of the first R&B hits to come out of New Orleans.",
+    "activeFrom": "1947",
+    "influences": [
+      "amos-milburn",
+      "charles-brown"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "blind-lemon-jefferson",
+    "name": "Blind Lemon Jefferson",
+    "image": "/images/musicians/blind-lemon-jefferson.webp",
+    "birthDate": "1893-09-24",
+    "birthPlace": "Couchman, Texas",
+    "birthCoords": [
+      -96.3158,
+      31.7943
+    ],
+    "deathDate": "1929-12-19",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Dallas, Texas",
+        "coords": [
+          -96.797,
+          32.7767
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=8FJgR8c2R5I",
+    "albums": [
+      {
+        "name": "The Best of Blind Lemon Jefferson (1925-1929)",
+        "youtubeLink": "https://www.youtube.com/watch?v=8FJgR8c2R5I"
+      },
+      {
+        "name": "Blind Lemon Jefferson Vol. 1 (1925-1926)",
+        "youtubeLink": "https://www.youtube.com/watch?v=kWKFJ7eXrZ8"
+      }
+    ],
+    "description": "Known as the 'Father of the Texas Blues', Blind Lemon Jefferson was one of the first commercially successful country-blues artists. His high-pitched voice and intricate, fast fingerpicking guitar style influenced generations of blues musicians including Lightnin' Hopkins and T-Bone Walker.",
+    "activeFrom": "1912",
+    "influences": [],
+    "influencedBy": [
+      "lightnin-hopkins",
+      "t-bone-walker"
+    ],
+    "incomplete": false,
+    "secondaryStyles": [
+      "Country Blues"
+    ]
   }
 ]

@@ -25,7 +25,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   const [r, g, b] = getStyleColor(musician.bluesStyle) as [number, number, number];
 
   return (
-    <div className="fixed top-14 right-0 bottom-0 w-100 bg-bg flex flex-col overflow-hidden z-50 animate-slide-in shadow-2xl">
+    <div className="fixed top-14 right-0 bottom-0 w-full sm:w-[26rem] bg-bg flex flex-col overflow-hidden z-50 animate-slide-in shadow-2xl">
 
       {/* ── Close button – always visible, top-right corner ── */}
       <button
@@ -121,7 +121,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
 
       {/* ── Scrollable body ── */}
       <div className="flex-1 overflow-y-auto">
-        <div className="px-12 py-10 flex flex-col gap-10">
+        <div className="px-5 py-6 sm:px-12 sm:py-10 flex flex-col gap-6 sm:gap-10">
 
           {/* Description */}
           {musician.description && (

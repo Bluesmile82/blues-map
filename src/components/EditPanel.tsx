@@ -59,6 +59,8 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
   const [saveStatus, setSaveStatus] = useState('');
   const [errors, setErrors] = useState<ValidationErrors>({});
   const [touched, setTouched] = useState<Set<string>>(new Set());
+  const [isDownloadingImage, setIsDownloadingImage] = useState(false);
+  const [imageDownloadError, setImageDownloadError] = useState('');
 
   // Raw string state for coordinate fields (allows partial typing)
   const [birthCoordsRaw, setBirthCoordsRaw] = useState(
@@ -77,6 +79,29 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
   const handleChange = (field: keyof Musician, value: unknown) => {
     setFormData(prev => ({ ...prev, [field]: value }));
     setTouched(prev => new Set(prev).add(field));
+  };
+
+  const handleDownloadImage = async () => {
+    const url = formData.image.trim();
+    if (!url.startsWith('http')) return;
+    const id = isNew ? generateSlug(formData.name) : formData.id;
+    if (!id) return;
+    setIsDownloadingImage(true);
+    setImageDownloadError('');
+    try {
+      const res = await fetch('/api/musicians/download-image', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id, url }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? 'Download failed');
+      handleChange('image', data.path);
+    } catch (e) {
+      setImageDownloadError(e instanceof Error ? e.message : 'Download failed');
+    } finally {
+      setIsDownloadingImage(false);
+    }
   };
 
   const handleBlur = (field: string) => {
@@ -208,14 +233,30 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
           <section className="space-y-4">
             <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">Image</h3>
             <Field label="Image URL" required error={fieldError('image')}>
-              <input
-                type="url"
-                value={formData.image}
-                onChange={(e) => handleChange('image', e.target.value)}
-                onBlur={() => handleBlur('image')}
-                placeholder="https://..."
-                className={inputClass(fieldError('image'))}
-              />
+              <div className="flex gap-2">
+                <input
+                  type="url"
+                  value={formData.image}
+                  onChange={(e) => handleChange('image', e.target.value)}
+                  onBlur={() => handleBlur('image')}
+                  placeholder="https://..."
+                  className={inputClass(fieldError('image')) + ' flex-1'}
+                />
+                {formData.image.startsWith('http') && (
+                  <button
+                    type="button"
+                    onClick={handleDownloadImage}
+                    disabled={isDownloadingImage}
+                    title="Download and save as local thumbnail"
+                    className="shrink-0 px-3 py-2 text-xs bg-[#1a1208] border border-[#2a1e0e] rounded text-ink3 hover:text-ink hover:border-accent disabled:opacity-50 transition-colors"
+                  >
+                    {isDownloadingImage ? 'Saving…' : '⬇ Save local'}
+                  </button>
+                )}
+              </div>
+              {imageDownloadError && (
+                <p className="text-red-400 text-xs mt-1">{imageDownloadError}</p>
+              )}
               {formData.image && (
                 <div className="mt-2">
                   <img

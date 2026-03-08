@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Musician backups (auto-generated during dev)
+src/data/backups/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

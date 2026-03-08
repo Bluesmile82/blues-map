@@ -8,35 +8,17 @@ import FloatingVideoPlayer from './components/FloatingVideoPlayer';
 import type { Musician } from './types';
 import musiciansData from './data/musicians.json';
 
-const STORAGE_KEY = 'blues-genealogy-musicians';
-
-function getStoredMusicians(): Musician[] {
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) {
-      return JSON.parse(stored);
-    }
-  } catch (e) {
-    console.error('Error reading from localStorage:', e);
-  }
-  return musiciansData as unknown as Musician[];
-}
-
-function saveMusiciansToStorage(musicians: Musician[]) {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(musicians));
-  } catch (e) {
-    console.error('Error saving to localStorage:', e);
-  }
-}
+const EDIT_MODE_ENABLED = import.meta.env.VITE_ENABLE_EDIT_MODE === 'true';
 
 export default function App() {
-  const [musicians, setMusicians] = useState<Musician[]>(() => getStoredMusicians());
+  const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown as Musician[]);
   const [view, setView] = useState<'influence' | 'map'>('influence');
   const [selected, setSelected] = useState<Musician | null>(null);
   const [editMode, setEditMode] = useState(false);
   const [showPlayer, setShowPlayer] = useState(false);
   const [manualVideoUrl, setManualVideoUrl] = useState<string | null>(null);
+  // Tracks whose video is in the player — independent of the info panel (persists when panel closes)
+  const [videoMusician, setVideoMusician] = useState<Musician | null>(null);
   const [editing, setEditing] = useState<Musician | null>(null);
   const [isCreating, setIsCreating] = useState(false);
 
@@ -45,8 +27,11 @@ export default function App() {
       setEditing(musician);
     } else {
       setSelected(musician);
-      setShowPlayer(true);
       setManualVideoUrl(null);
+      if (musician.youtubeLink) {
+        setVideoMusician(musician);
+        setShowPlayer(true);
+      }
     }
   }, [editMode]);
 
@@ -68,7 +53,6 @@ export default function App() {
       : musicians.map(m => m.id === updated.id ? updated : m);
 
     setMusicians(newMusicians);
-    saveMusiciansToStorage(newMusicians);
 
     try {
       await fetch('/api/musicians', {
@@ -82,12 +66,10 @@ export default function App() {
   }, [musicians]);
 
   const handleDelete = useCallback((musicianId: string) => {
-    const newMusicians = musicians.filter(m => m.id !== musicianId);
-    setMusicians(newMusicians);
-    saveMusiciansToStorage(newMusicians);
+    setMusicians(prev => prev.filter(m => m.id !== musicianId));
     setEditing(null);
     setSelected(null);
-  }, [musicians]);
+  }, []);
 
   return (
     <div className="flex flex-col w-full h-full overflow-hidden">
@@ -97,6 +79,7 @@ export default function App() {
         editMode={editMode}
         onEditModeChange={setEditMode}
         onCreateNew={handleCreateNew}
+        editModeEnabled={EDIT_MODE_ENABLED}
       />
 
       <main className="relative flex-1 mt-14 overflow-hidden">
@@ -115,22 +98,23 @@ export default function App() {
           onNavigate={handleSelect}
           editMode={false}
           onEdit={handleEdit}
-          onPlayVideo={(url) => { setManualVideoUrl(url); setShowPlayer(true); }}
+          onPlayVideo={(url) => { setManualVideoUrl(url); setShowPlayer(true); setVideoMusician(selected); }}
         />
       )}
 
-      {selected && selected.youtubeLink && showPlayer && !editMode && (
+      {videoMusician && showPlayer && !editMode && (
         <FloatingVideoPlayer
-          key={selected.id}
-          youtubeUrl={selected.youtubeLink}
-          albums={selected.albums}
-          musicianName={selected.name}
+          key={videoMusician.id}
+          youtubeUrl={videoMusician.youtubeLink}
+          albums={videoMusician.albums}
+          musicianName={videoMusician.name}
           manualVideoUrl={manualVideoUrl}
+          panelOpen={!!selected}
           onClose={() => setShowPlayer(false)}
         />
       )}
 
-      {editing && (
+      {EDIT_MODE_ENABLED && editing && (
         <EditPanel
           musician={editing}
           onClose={() => {
@@ -143,7 +127,7 @@ export default function App() {
         />
       )}
 
-      {isCreating && (
+      {EDIT_MODE_ENABLED && isCreating && (
         <EditPanel
           musician={{
             id: '',

@@ -45,10 +45,11 @@ interface Props {
   albums: Album[];
   musicianName: string;
   manualVideoUrl: string | null;
+  panelOpen: boolean;
   onClose: () => void;
 }
 
-export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, manualVideoUrl, onClose }: Props) {
+export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, manualVideoUrl, panelOpen, onClose }: Props) {
   const playerRef = useRef<YT.Player | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [apiReady, setApiReady] = useState(false);
@@ -153,7 +154,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
 
   return (
     <div
-      className="fixed top-14 right-100 z-40 flex flex-col rounded-bl-xl rounded-br-xl overflow-hidden shadow-2xl border border-white/10"
+      className={`fixed top-14 z-40 flex flex-col rounded-bl-xl rounded-br-xl overflow-hidden shadow-2xl border border-white/10 transition-[right] duration-300 ${panelOpen ? 'right-0 sm:right-104' : 'right-0'}`}
       style={{ width: 320, background: '#1a1a1a' }}
     >
       {/* Header */}
