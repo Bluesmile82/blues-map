@@ -1,0 +1,1787 @@
+[
+  {
+    "id": "junior-watson",
+    "name": "Junior Watson",
+    "image": "",
+    "birthDate": "1949",
+    "birthPlace": "Tulare, California",
+    "birthCoords": [
+      -119.3427,
+      36.2077
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Northern California",
+        "coords": [
+          -121.4944,
+          38.5816
+        ]
+      },
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "West Coast Blues, Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=MiXvVYWJM5A",
+    "albums": [
+      {
+        "name": "Long Overdue (1994)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "If I Had A Genie (2002)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Jumpin' Wit Junior (2012)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Nothin' to It But to Do It (2019)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Junior Watson is an influential American jump blues guitarist and singer. A founding member of The Mighty Flyers, he performed with Canned Heat throughout the 1990s. Known for his spontaneous, humorous style that fuses traditional electric blues with swing and jazz elements.",
+    "activeFrom": "1970",
+    "influences": [
+      "tiny-grimes",
+      "bill-jennings",
+      "robert-jr-lockwood",
+      "jimmy-rogers",
+      "eddie-taylor",
+      "guitar-slim",
+      "earl-hooker"
+    ],
+    "influencedBy": [
+      "kid-ramos",
+      "alex-schultz",
+      "rick-holmstrom"
+    ],
+    "incomplete": false
+  },
+    "id": "charley-patton",
+    "name": "Charley Patton",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Charley_Patton_01.jpg/220px-Charley_Patton_01.jpg",
+    "birthDate": "1891-05-01",
+    "birthPlace": "Hinds County, Mississippi",
+    "birthCoords": [
+      -90.2557,
+      32.2988
+    ],
+    "deathDate": "1934-04-28",
+    "deathPlace": "Indianola, Mississippi",
+    "deathCoords": [
+      -90.6554,
+      33.4507
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Dockery Farms, Mississippi",
+        "coords": [
+          -90.7326,
+          33.6001
+        ]
+      },
+      {
+        "place": "Mississippi Delta",
+        "coords": [
+          -90.5517,
+          33.4504
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=MiXvVYWJM5A",
+    "albums": [
+      {
+        "name": "Founder of the Delta Blues (1959)",
+        "youtubeLink": "https://www.youtube.com/watch?v=fzcCQJ3F_eQ"
+      },
+      {
+        "name": "King of the Delta Blues (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Vvm3fIBZhBg"
+      }
+    ],
+    "description": "Charley Patton is considered the 'Father of the Delta Blues'. His bold, percussive guitar style, showmanship, and raw vocal power established the foundations of the Delta blues tradition that all subsequent players built upon.",
+    "activeFrom": "1911",
+    "influences": [],
+    "influencedBy": [
+      "son-house",
+      "skip-james",
+      "howlin-wolf",
+      "john-lee-hooker",
+      "junior-kimbrough"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "ma-rainey",
+    "name": "Ma Rainey",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ma_Rainey%27s_Black_Bottom_-_publicity_-_1925.jpg/220px-Ma_Rainey%27s_Black_Bottom_-_publicity_-_1925.jpg",
+    "birthDate": "1886-04-26",
+    "birthPlace": "Columbus, Georgia",
+    "birthCoords": [
+      -84.9877,
+      32.461
+    ],
+    "deathDate": "1939-12-22",
+    "deathPlace": "Columbus, Georgia",
+    "deathCoords": [
+      -84.9877,
+      32.461
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New Orleans, Louisiana",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues, Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9U94_14tFhI",
+    "albums": [
+      {
+        "name": "Ma Rainey's Black Bottom (1927)",
+        "youtubeLink": "https://www.youtube.com/watch?v=w_7e--d5nzE"
+      },
+      {
+        "name": "Broken Hearted Blues (1923)",
+        "youtubeLink": "https://www.youtube.com/watch?v=iBNTiqOifPA"
+      }
+    ],
+    "description": "Gertrude 'Ma' Rainey is considered the 'Mother of the Blues'. One of the first blues performers to record, she mentored Bessie Smith and was a pioneering voice who helped define the blues as a formal musical genre.",
+    "activeFrom": "1923",
+    "influences": [],
+    "influencedBy": [
+      "bessie-smith",
+      "alberta-hunter"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "bessie-smith",
+    "name": "Bessie Smith",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bessie_Smith.jpg/220px-Bessie_Smith.jpg",
+    "birthDate": "1894-04-15",
+    "birthPlace": "Chattanooga, Tennessee",
+    "birthCoords": [
+      -85.3097,
+      35.0456
+    ],
+    "deathDate": "1937-09-26",
+    "deathPlace": "Clarksdale, Mississippi",
+    "deathCoords": [
+      -90.5715,
+      34.2001
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Philadelphia, Pennsylvania",
+        "coords": [
+          -75.1652,
+          39.9526
+        ]
+      },
+      {
+        "place": "New York, New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues, Vaudeville Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=I5B_sBp30Vs",
+    "albums": [
+      {
+        "name": "The Complete Recordings Vol. 1 (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=4Ob_sW2_2Zw"
+      },
+      {
+        "name": "Empress of the Blues (1971)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xKn-QVQzISo"
+      }
+    ],
+    "description": "Known as the 'Empress of the Blues', Bessie Smith was the most popular female blues singer of the 1920s and 1930s. Her powerful contralto voice and commanding stage presence made her a dominant force in American music.",
+    "activeFrom": "1914",
+    "influences": [
+      "ma-rainey"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "son-house",
+    "name": "Son House",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Son_House_NYC.jpg/220px-Son_House_NYC.jpg",
+    "birthDate": "1902-03-21",
+    "birthPlace": "Lyon, Mississippi",
+    "birthCoords": [
+      -90.5832,
+      34.2321
+    ],
+    "deathDate": "1988-10-19",
+    "deathPlace": "Detroit, Michigan",
+    "deathCoords": [
+      -83.0458,
+      42.3314
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi Delta",
+        "coords": [
+          -90.5517,
+          33.4504
+        ]
+      },
+      {
+        "place": "Rochester, New York",
+        "coords": [
+          -77.6109,
+          43.1566
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=OxZJmFEvIoU",
+    "albums": [
+      {
+        "name": "Father of Folk Blues (1965)",
+        "youtubeLink": "https://www.youtube.com/watch?v=3_5Vmsh5GL4"
+      },
+      {
+        "name": "Death Letter (1965)",
+        "youtubeLink": "https://www.youtube.com/watch?v=fny8aSRZFT4"
+      },
+      {
+        "name": "The Legendary Son House (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xF_91F9ElKg"
+      }
+    ],
+    "description": "Son House was the crucial link between the Delta blues generation of Charley Patton and the later work of Robert Johnson and Muddy Waters. His tortured vocals and slide guitar captured the raw emotional power of the blues at its most elemental.",
+    "activeFrom": "1965",
+    "influences": [
+      "charley-patton"
+    ],
+    "influencedBy": [
+      "robert-johnson",
+      "howlin-wolf",
+      "muddy-waters",
+      "john-lee-hooker"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "skip-james",
+    "name": "Skip James",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Skip_James_1964.jpg/220px-Skip_James_1964.jpg",
+    "birthDate": "1902-06-09",
+    "birthPlace": "Bentonia, Mississippi",
+    "birthCoords": [
+      -90.3654,
+      32.6621
+    ],
+    "deathDate": "1969-10-03",
+    "deathPlace": "Philadelphia, Pennsylvania",
+    "deathCoords": [
+      -75.1652,
+      39.9526
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.7416
+        ]
+      }
+    ],
+    "instrument": "Guitar, Piano, Vocals",
+    "bluesStyle": "Delta Blues, Mississippi Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=FblpawkAbq8",
+    "albums": [
+      {
+        "name": "Today! (1966)",
+        "youtubeLink": "https://www.youtube.com/watch?v=nN3bFu3QBHU"
+      },
+      {
+        "name": "Devil Got My Woman (1968)",
+        "youtubeLink": "https://www.youtube.com/watch?v=HP8b6B9-wNg"
+      },
+      {
+        "name": "Skip James (1969)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uVxB1HDRZWA"
+      }
+    ],
+    "description": "Skip James created one of the most distinctive sounds in blues history with his dark, minor-key compositions and haunting falsetto. Rediscovered at the 1964 Newport Folk Festival after decades of obscurity, his song 'I'm So Glad' was famously covered by Cream.",
+    "activeFrom": "1966",
+    "influences": [
+      "charley-patton"
+    ],
+    "influencedBy": [
+      "robert-johnson"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "robert-johnson",
+    "name": "Robert Johnson",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Robert_Johnson.png/220px-Robert_Johnson.png",
+    "birthDate": "1911-05-08",
+    "birthPlace": "Hazlehurst, Mississippi",
+    "birthCoords": [
+      -90.3929,
+      31.8643
+    ],
+    "deathDate": "1938-08-16",
+    "deathPlace": "Greenwood, Mississippi",
+    "deathCoords": [
+      -90.1798,
+      33.5165
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi Delta",
+        "coords": [
+          -90.5517,
+          33.4504
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Oeg3GQl__Gc",
+    "albums": [
+      {
+        "name": "King of the Delta Blues Singers (1961)",
+        "youtubeLink": "https://www.youtube.com/watch?v=bJ_7nYEpkBo"
+      },
+      {
+        "name": "King of the Delta Blues Singers Vol. II (1970)",
+        "youtubeLink": "https://www.youtube.com/watch?v=31SMxhzbWPQ"
+      }
+    ],
+    "description": "Often called the 'King of the Delta Blues Singers', Robert Johnson made a pact with the devil at a crossroads according to legend. His recordings from 1936–37, with their haunting slide guitar and intense vocals, profoundly shaped the entire history of rock and blues.",
+    "activeFrom": "1931",
+    "influences": [
+      "son-house",
+      "skip-james"
+    ],
+    "influencedBy": [
+      "sonny-boy-williamson",
+      "howlin-wolf",
+      "muddy-waters",
+      "bb-king"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "sonny-boy-williamson",
+    "name": "Sonny Boy Williamson II",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.QQprARzGhpB-mm0dYBfjAgHaI3%3Fpid%3DApi&f=1&ipt=b2f2d7493691dfe56091e27eba56c52424648d5a2918140153d744c15e5bc5f6&ipo=images",
+    "birthDate": "1912-12-05",
+    "birthPlace": "Glendora, Mississippi",
+    "birthCoords": [
+      -90.3143,
+      33.8265
+    ],
+    "deathDate": "1965-05-25",
+    "deathPlace": "Helena, Arkansas",
+    "deathCoords": [
+      -90.576,
+      34.5298
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Helena, Arkansas",
+        "coords": [
+          -90.576,
+          34.5298
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Harmonica, Vocals",
+    "bluesStyle": "Delta Blues, Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=m4fomLRcEEk",
+    "albums": [
+      {
+        "name": "Down and Out Blues (1959)",
+        "youtubeLink": "https://www.youtube.com/watch?v=_GbZd3YC6G0"
+      },
+      {
+        "name": "King Biscuit Time (1965)",
+        "youtubeLink": "https://www.youtube.com/watch?v=608Pwm9jv2Q"
+      },
+      {
+        "name": "One Way Out (1975)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Eoramfv-b8o"
+      }
+    ],
+    "description": "Sonny Boy Williamson II (Aleck Ford Miller) was one of the most charismatic and idiosyncratic figures in blues. His King Biscuit Time radio show made him a household name in the South, and his European tours inspired the British blues boom.",
+    "activeFrom": "1959",
+    "influences": [
+      "robert-johnson"
+    ],
+    "influencedBy": [
+      "little-walter",
+      "alexis-korner"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "howlin-wolf",
+    "name": "Howlin' Wolf",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.UWAMNZSJxW8_0FQGqpIUTAHaE8%3Fpid%3DApi&f=1&ipt=6d3781cb03d3762f854e0b46762b759d74d188cee9c74576c61fdab2878687a8&ipo=images",
+    "birthDate": "1910-06-10",
+    "birthPlace": "White Station, Mississippi",
+    "birthCoords": [
+      -90.7529,
+      33.3721
+    ],
+    "deathDate": "1976-01-10",
+    "deathPlace": "Hines, Illinois",
+    "deathCoords": [
+      -87.8615,
+      41.8592
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New Orleans, Louisiana",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.7416
+        ]
+      }
+    ],
+    "instrument": "Guitar, Harmonica, Vocals",
+    "bluesStyle": "Chicago Blues, Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ovCkILOVwQk",
+    "albums": [
+      {
+        "name": "Moanin' in the Moonshine (1959)",
+        "youtubeLink": "https://www.youtube.com/watch?v=I9lvpocL_20"
+      },
+      {
+        "name": "Howlin' Wolf (The Rockin' Chair Album) (1962)",
+        "youtubeLink": "https://www.youtube.com/watch?v=MF6URTNjCF4"
+      },
+      {
+        "name": "The London Howlin' Wolf Sessions (1971)",
+        "youtubeLink": "https://www.youtube.com/watch?v=4NX-rQ0WJ14"
+      }
+    ],
+    "description": "Chester Arthur Burnett, known as Howlin' Wolf, was a massive physical presence with a ferocious performing style. His Chess Records work with Willie Dixon produced some of the greatest blues recordings ever made.",
+    "activeFrom": "1959",
+    "influences": [
+      "charley-patton",
+      "son-house",
+      "robert-johnson"
+    ],
+    "influencedBy": [
+      "buddy-guy"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "muddy-waters",
+    "name": "Muddy Waters",
+    "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Muddy_Waters.jpg/1280px-Muddy_Waters.jpg",
+    "birthDate": "1913-04-04",
+    "birthPlace": "Issaquena County, Mississippi",
+    "birthCoords": [
+      -90.901,
+      32.7426
+    ],
+    "deathDate": "1983-04-30",
+    "deathPlace": "Westmont, Illinois",
+    "deathCoords": [
+      -87.9739,
+      41.7959
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Mississippi Delta",
+        "coords": [
+          -90.5517,
+          33.4504
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals, Harmonica",
+    "bluesStyle": "Chicago Blues, Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=l6nZO5gTSE4",
+    "albums": [
+      {
+        "name": "At Newport 1960 (1960)",
+        "youtubeLink": "https://www.youtube.com/watch?v=IEUrVqImq6k"
+      },
+      {
+        "name": "Folk Singer (1964)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Co-h0XVKDhw"
+      },
+      {
+        "name": "Electric Mud (1968)",
+        "youtubeLink": "https://www.youtube.com/watch?v=dvNjZGZ_UjI"
+      },
+      {
+        "name": "Hard Again (1977)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ZoVO9zZTJ10"
+      }
+    ],
+    "description": "Born McKinley Morganfield, Muddy Waters moved from the Mississippi Delta to Chicago and electrified the blues, creating the template for modern Chicago blues and influencing virtually every rock band of the British Invasion.",
+    "activeFrom": "1960",
+    "influences": [
+      "son-house",
+      "robert-johnson"
+    ],
+    "influencedBy": [
+      "little-walter",
+      "bb-king",
+      "albert-king",
+      "buddy-guy",
+      "jb-lenoir",
+      "alexis-korner"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "john-lee-hooker",
+    "name": "John Lee Hooker",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.V58IFlaURhwO9bnqRaXVzAHaEc%3Fpid%3DApi&f=1&ipt=441ff25cfdeebd96575e5c689ced45e4740379e4a3a8535853b875c466de636e&ipo=images",
+    "birthDate": "1917-08-22",
+    "birthPlace": "Clarksdale, Mississippi",
+    "birthCoords": [
+      -90.5715,
+      34.2001
+    ],
+    "deathDate": "2001-06-21",
+    "deathPlace": "Los Altos, California",
+    "deathCoords": [
+      -122.1141,
+      37.3861
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Detroit, Michigan",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      {
+        "place": "Oakland, California",
+        "coords": [
+          -122.2711,
+          37.8044
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Detroit Blues, Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=72p9TTkoymY",
+    "albums": [
+      {
+        "name": "Burnin' (1962)",
+        "youtubeLink": "https://www.youtube.com/watch?v=yHSMjghZZm0"
+      },
+      {
+        "name": "The Healer (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=dZc67EFA5g4"
+      },
+      {
+        "name": "Mr. Lucky (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=7rLNpH_6ih0"
+      },
+      {
+        "name": "Boom Boom (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=o_6SlT3Yy10"
+      }
+    ],
+    "description": "With his hypnotic, droning boogie guitar style and raw, personal lyrics, John Lee Hooker was a force unto himself. His 1989 comeback album 'The Healer' brought him a new generation of fans and collaborators.",
+    "activeFrom": "1962",
+    "influences": [
+      "charley-patton",
+      "son-house"
+    ],
+    "influencedBy": [
+      "bb-king",
+      "stevie-ray-vaughan",
+      "albert-collins",
+      "jb-lenoir"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "little-walter",
+    "name": "Little Walter",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.PHwXs_uv5IZ2u7-LGSYl6wHaDP%3Fpid%3DApi&f=1&ipt=a853b926d53555651ce49fc86520f89c2b53e97613b2e4d3bb61266dfb8532b0&ipo=images",
+    "birthDate": "1930-05-01",
+    "birthPlace": "Marksville, Louisiana",
+    "birthCoords": [
+      -92.0679,
+      31.1249
+    ],
+    "deathDate": "1968-02-15",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New Orleans, Louisiana",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Harmonica, Vocals",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=pSgRCFyWkVo",
+    "albums": [
+      {
+        "name": "The Best of Little Walter (1958)",
+        "youtubeLink": "https://www.youtube.com/watch?v=CrIU5c0pgJg"
+      },
+      {
+        "name": "Hate to See You Go (1969)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UOnUzH0eNPo"
+      },
+      {
+        "name": "Confessin' the Blues (1966)",
+        "youtubeLink": "https://www.youtube.com/watch?v=dlXO1SqIbSM"
+      }
+    ],
+    "description": "Little Walter revolutionized blues harmonica by amplifying it and treating it like a horn instrument. His innovative technique with Muddy Waters' band and as a solo artist made him the definitive Chicago blues harp player.",
+    "activeFrom": "1958",
+    "influences": [
+      "muddy-waters",
+      "sonny-boy-williamson"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "bb-king",
+    "name": "B.B. King",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/BB_King_005.jpg/220px-BB_King_005.jpg",
+    "birthDate": "1925-09-16",
+    "birthPlace": "Itta Bena, Mississippi",
+    "birthCoords": [
+      -90.3298,
+      33.5001
+    ],
+    "deathDate": "2015-05-14",
+    "deathPlace": "Las Vegas, Nevada",
+    "deathCoords": [
+      -115.1398,
+      36.1699
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Las Vegas, Nevada",
+        "coords": [
+          -115.1398,
+          36.1699
+        ]
+      }
+    ],
+    "instrument": "Guitar (Lucille), Vocals",
+    "bluesStyle": "Electric Blues, Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=oica5jG7FpU",
+    "albums": [
+      {
+        "name": "Live at the Regal (1965)",
+        "youtubeLink": "https://www.youtube.com/watch?v=sz6CnSj2u-o"
+      },
+      {
+        "name": "Completely Well (1969)",
+        "youtubeLink": "https://www.youtube.com/watch?v=-H5ddcxlLgg"
+      },
+      {
+        "name": "Indianola Mississippi Seeds (1970)",
+        "youtubeLink": "https://www.youtube.com/watch?v=oeA6AqB2T0Y"
+      },
+      {
+        "name": "Riding with the King (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=RYJIc9bjENk"
+      }
+    ],
+    "description": "Known as the 'King of the Blues', B.B. King defined the genre with his expressive vibrato and fluid single-note runs on his beloved guitar Lucille. He brought the blues to mainstream audiences worldwide and mentored countless guitarists.",
+    "activeFrom": "1965",
+    "influences": [
+      "robert-johnson",
+      "muddy-waters",
+      "john-lee-hooker"
+    ],
+    "influencedBy": [
+      "albert-king",
+      "buddy-guy",
+      "stevie-ray-vaughan"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "albert-king",
+    "name": "Albert King",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Albert_King.jpg/220px-Albert_King.jpg",
+    "birthDate": "1923-04-25",
+    "birthPlace": "Indianola, Mississippi",
+    "birthCoords": [
+      -90.6554,
+      33.4507
+    ],
+    "deathDate": "1992-12-21",
+    "deathPlace": "Memphis, Tennessee",
+    "deathCoords": [
+      -90.049,
+      35.1495
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "St. Louis, Missouri",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Electric Blues, Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=1VEbL3VhT_E",
+    "albums": [
+      {
+        "name": "Born Under a Bad Sign (1967)",
+        "youtubeLink": "https://www.youtube.com/watch?v=u1MUHFYII9A"
+      },
+      {
+        "name": "Live Wire/Blues Power (1968)",
+        "youtubeLink": "https://www.youtube.com/watch?v=2aRGXIRfbVE"
+      },
+      {
+        "name": "I'll Play the Blues for You (1972)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Uz0ArJ0w5bE"
+      }
+    ],
+    "description": "Albert King's huge, bending string style played left-handed on a right-handed guitar was utterly distinctive. His Stax Records recordings defined soul blues, and his influence on Stevie Ray Vaughan and Eric Clapton is immeasurable.",
+    "activeFrom": "1967",
+    "influences": [
+      "muddy-waters",
+      "bb-king"
+    ],
+    "influencedBy": [
+      "stevie-ray-vaughan"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "buddy-guy",
+    "name": "Buddy Guy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Buddy_Guy_1.jpg/220px-Buddy_Guy_1.jpg",
+    "birthDate": "1936-07-30",
+    "birthPlace": "Lettsworth, Louisiana",
+    "birthCoords": [
+      -91.7243,
+      30.9393
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Baton Rouge, Louisiana",
+        "coords": [
+          -91.1403,
+          30.4515
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Chicago Blues, Electric Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=GMVZ5SISLNM",
+    "albums": [
+      {
+        "name": "A Man and the Blues (1968)",
+        "youtubeLink": "https://www.youtube.com/watch?v=SqDYo4m-hPA"
+      },
+      {
+        "name": "Damn Right, I've Got the Blues (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=LGpEMPUYUCU"
+      },
+      {
+        "name": "Slippin' In (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=g-QcP56m8Hg"
+      },
+      {
+        "name": "Sweet Tea (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=itN1Sh1TvAk"
+      }
+    ],
+    "description": "Buddy Guy bridged the Chicago blues tradition with the coming rock era. His wild, feedback-drenched guitar style directly influenced Jimi Hendrix, Eric Clapton, and Stevie Ray Vaughan, who all cited him as a primary inspiration.",
+    "activeFrom": "1968",
+    "influences": [
+      "muddy-waters",
+      "howlin-wolf",
+      "bb-king"
+    ],
+    "influencedBy": [
+      "stevie-ray-vaughan"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "stevie-ray-vaughan",
+    "name": "Stevie Ray Vaughan",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Stevie_Ray_Vaughan_c1985.jpg/220px-Stevie_Ray_Vaughan_c1985.jpg",
+    "birthDate": "1954-10-03",
+    "birthPlace": "Dallas, Texas",
+    "birthCoords": [
+      -96.797,
+      32.7767
+    ],
+    "deathDate": "1990-08-27",
+    "deathPlace": "East Troy, Wisconsin",
+    "deathCoords": [
+      -88.3997,
+      42.7875
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Austin, Texas",
+        "coords": [
+          -97.7431,
+          30.2672
+        ]
+      },
+      {
+        "place": "Dallas, Texas",
+        "coords": [
+          -96.797,
+          32.7767
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Texas Blues, Electric Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=KC5H9P4F5Uk",
+    "albums": [
+      {
+        "name": "Texas Flood (1983)",
+        "youtubeLink": "https://www.youtube.com/watch?v=-lBZTtoJ3t0"
+      },
+      {
+        "name": "Couldn't Stand the Weather (1984)",
+        "youtubeLink": "https://www.youtube.com/watch?v=iwCQJcTYWzA"
+      },
+      {
+        "name": "Soul to Soul (1985)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Xj5488sW3UI"
+      },
+      {
+        "name": "In Step (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=LBZ4Y9LZrhY"
+      }
+    ],
+    "description": "Stevie Ray Vaughan almost single-handedly revived the blues guitar tradition for a rock audience in the 1980s. His massive tone, scorching technique, and deep feel for the blues tradition made him one of the greatest guitarists of all time.",
+    "activeFrom": "1983",
+    "influences": [
+      "bb-king",
+      "albert-king",
+      "buddy-guy",
+      "john-lee-hooker",
+      "albert-collins"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "lightnin-hopkins",
+    "name": "Lightnin' Hopkins",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Lightnin_Hopkins.jpg/220px-Lightnin_Hopkins.jpg",
+    "birthDate": "1912-03-15",
+    "birthPlace": "Centerville, Texas",
+    "birthCoords": [
+      -96.1675,
+      30.9758
+    ],
+    "deathDate": "1982-01-30",
+    "deathPlace": "Houston, Texas",
+    "deathCoords": [
+      -95.3698,
+      29.7604
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Houston, Texas",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      {
+        "place": "East Texas",
+        "coords": [
+          -95.2906,
+          31.2994
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals, Piano",
+    "bluesStyle": "Texas Blues, Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=e7pY6Wbqcvg",
+    "albums": [
+      {
+        "name": "Lightnin' (1959)",
+        "youtubeLink": "https://www.youtube.com/watch?v=tSyY6zfsUvI"
+      },
+      {
+        "name": "Lightnin' Strikes (1963)",
+        "youtubeLink": "https://www.youtube.com/watch?v=SB0k60SJemI"
+      },
+      {
+        "name": "Lightnin' Hopkins Sings the Blues (1964)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Yiafiiv1BF8"
+      },
+      {
+        "name": "It's a Sin to Be Rich, It's a Low-Down Shame to Be Poor (1969)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6xTQxSkTXww"
+      }
+    ],
+    "description": "Sam John 'Lightnin'' Hopkins was one of the most prolific and influential Texas bluesmen. His spare, fingerpicking guitar style and spontaneous, storytelling approach created hundreds of recordings that defined the country blues tradition. His influence on folk and blues revival movements was immense.",
+    "activeFrom": "1959",
+    "influences": [
+      "blind-lemon-jefferson",
+      "alger-texas-alexander"
+    ],
+    "influencedBy": [
+      "albert-collins",
+      "jb-lenoir"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "jb-lenoir",
+    "name": "J.B. Lenoir",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/JB_Lenoir.jpg/220px-JB_Lenoir.jpg",
+    "birthDate": "1929-03-05",
+    "birthPlace": "Monticello, Mississippi",
+    "birthCoords": [
+      -89.8623,
+      31.5287
+    ],
+    "deathDate": "1967-04-20",
+    "deathPlace": "Urbana, Illinois",
+    "deathCoords": [
+      -88.2073,
+      40.1097
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New Orleans, Louisiana",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Chicago Blues, Electric Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=zIWwPWq8Xf0",
+    "albums": [
+      {
+        "name": "Alabama Blues (1965)",
+        "youtubeLink": "https://www.youtube.com/watch?v=TtzIy1YUVXU"
+      },
+      {
+        "name": "Natural Man (1969)",
+        "youtubeLink": "https://www.youtube.com/watch?v=sB-q6k2gwxo"
+      },
+      {
+        "name": "Vietnam Blues (1970)",
+        "youtubeLink": "https://www.youtube.com/watch?v=v15PIIigDNc"
+      }
+    ],
+    "description": "J.B. Lenoir was a unique Chicago bluesman known for his socially conscious songs that addressed racism, war, and inequality. His guitar-playing father introduced him to the music of Blind Lemon Jefferson. During the early 1940s, he worked with Sonny Boy Williamson II and Elmore James in New Orleans. His eclectic style incorporated elements of folk, R&B, and blues, often featuring his distinctive falsetto voice and unconventional guitar tunings.",
+    "activeFrom": "1965",
+    "influences": [
+      "muddy-waters",
+      "john-lee-hooker",
+      "blind-lemon-jefferson",
+      "lightnin-hopkins"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "junior-kimbrough",
+    "name": "Junior Kimbrough",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.vTjWn86MK_rhTngl9vdVHAHaHa%3Fpid%3DApi&f=1&ipt=b894dfbdddabd762adfde2e9e506ec3efee93fa34933ab7eda3a60d48fe71f51&ipo=images",
+    "birthDate": "1930-07-28",
+    "birthPlace": "Hudsonville, Mississippi",
+    "birthCoords": [
+      -89.6864,
+      34.2481
+    ],
+    "deathDate": "1998-01-17",
+    "deathPlace": "Holly Springs, Mississippi",
+    "deathCoords": [
+      -89.4505,
+      34.7709
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Holly Springs, Mississippi",
+        "coords": [
+          -89.4505,
+          34.7709
+        ]
+      },
+      {
+        "place": "North Mississippi",
+        "coords": [
+          -89.3985,
+          33.7416
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "North Mississippi Blues, Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=DhLd_D7N8Eo",
+    "albums": [
+      {
+        "name": "All Night Long (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=4PD31AM1cpA"
+      },
+      {
+        "name": "Sad Days, Lonely Nights (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=qBtUACfTd9c"
+      },
+      {
+        "name": "Most Things Haven't Worked Out (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=OlH9d1X390k"
+      },
+      {
+        "name": "God Knows I Tried (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=oOQU-g7HJOU"
+      }
+    ],
+    "description": "Junior Kimbrough, along with R.L. Burnside, created and defined the hypnotic, droning sound of North Mississippi Hill Country blues. His juke joint in Holly Springs was legendary, and his repetitive, trance-like grooves heavily influenced the Black Keys and other modern blues-rock acts.",
+    "activeFrom": "1992",
+    "influences": [
+      "charley-patton",
+      "fred-mcdowell"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "albert-ammons",
+    "name": "Albert Ammons",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Albert_Ammons.jpg/220px-Albert_Ammons.jpg",
+    "birthDate": "1907-09-23",
+    "birthPlace": "Chicago, Illinois",
+    "birthCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "deathDate": "1949-12-02",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York, New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie-Woogie, Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=_8yGGtVKrD8",
+    "albums": [
+      {
+        "name": "Boogie Woogie Stomp (1936)",
+        "youtubeLink": "https://www.youtube.com/watch?v=vsjwKlTzuaQ"
+      },
+      {
+        "name": "Albert Ammons and His Rhythm Kings (1936)",
+        "youtubeLink": "https://www.youtube.com/watch?v=eQo-ZmCSktE"
+      },
+      {
+        "name": "The Boogie Woogie Trio (1938)",
+        "youtubeLink": "https://www.youtube.com/watch?v=V_wJTGQr9Zo"
+      }
+    ],
+    "description": "Albert Ammons was one of the three great boogie-woogie pianists of the late 1930s alongside Meade Lux Lewis and Pete Johnson. His powerful left-hand bass patterns and energetic style helped bring boogie-woogie from Chicago clubs to Carnegie Hall and international audiences.",
+    "activeFrom": "1936",
+    "influences": [
+      "pinetop-smith",
+      "hersal-thomas",
+      "jimmy-yancey"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "albert-collins",
+    "name": "Albert Collins",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/AlbertCollins1990.jpg/500px-AlbertCollins1990.jpg",
+    "birthDate": "1932-10-01",
+    "birthPlace": "Leona, Texas",
+    "birthCoords": [
+      -96.6217,
+      31.1733
+    ],
+    "deathDate": "1993-11-24",
+    "deathPlace": "Las Vegas, Nevada",
+    "deathCoords": [
+      -115.1398,
+      36.1699
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Houston, Texas",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Electric Blues, Texas Blues, Blues Rock",
+    "youtubeLink": "https://www.youtube.com/watch?v=R7VuKk8tM_w",
+    "albums": [
+      {
+        "name": "The Cool Sound of Albert Collins (1965)",
+        "youtubeLink": "https://www.youtube.com/watch?v=R7VuKk8tM_w"
+      },
+      {
+        "name": "Ice Pickin' (1978)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Y3fA1n5qMkI"
+      },
+      {
+        "name": "Frostbite (1980)",
+        "youtubeLink": "https://www.youtube.com/watch?v=2WJt0n7dXkQ"
+      },
+      {
+        "name": "Don't Lose Your Cool (1983)",
+        "youtubeLink": "https://www.youtube.com/watch?v=tQoW6lVv9Oc"
+      },
+      {
+        "name": "Showdown! (1985) - with Robert Cray & Johnny Copeland",
+        "youtubeLink": "https://www.youtube.com/watch?v=sqP8jZAbO-I"
+      },
+      {
+        "name": "Cold Snap (1986)",
+        "youtubeLink": "https://www.youtube.com/watch?v=gTfJhJ2t0R4"
+      },
+      {
+        "name": "Iceman (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Jj8fFZ7vQKs"
+      }
+    ],
+    "description": "Albert Collins, known as 'The Master of the Telecaster' and 'The Iceman', was a pioneering electric blues guitarist who revolutionized Texas blues with his distinctive sound. Famous for playing Fender Telecasters, using altered tunings (F-minor), and leaving the stage to mingle with audiences while still playing. His 1965 instrumental 'Frosty' became his signature song, and his innovative 'horn-like' guitar lines influenced Stevie Ray Vaughan, Robert Cray, and Jimmie Vaughan. Won Grammy for Showdown! (1985) with Robert Cray and Johnny Copeland.",
+    "activeFrom": "1965",
+    "influences": [
+      "lightnin-hopkins",
+      "john-lee-hooker",
+      "t-bone-walker"
+    ],
+    "influencedBy": [
+      "stevie-ray-vaughan"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "alberta-hunter",
+    "name": "Alberta Hunter",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/AlbertaHunter1930.png?width=500",
+    "birthDate": "1895-04-01",
+    "birthPlace": "Memphis, Tennessee",
+    "birthCoords": [
+      -90.049,
+      35.1495
+    ],
+    "deathDate": "1984-10-17",
+    "deathPlace": "New York City, New York",
+    "deathCoords": [
+      -74.006,
+      40.7128
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New York, New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "London, United Kingdom",
+        "coords": [
+          -0.1275,
+          51.5072
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues, Jazz Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=mp2av6etNm8",
+    "albums": [
+      {
+        "name": "Downhearted Blues (1923)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ZqKImTf3auw"
+      },
+      {
+        "name": "Amtrak Blues (1978)",
+        "youtubeLink": "https://www.youtube.com/watch?v=v6Dfk732ukk"
+      },
+      {
+        "name": "The Legendary Alberta Hunter: The London Sessions 1934",
+        "youtubeLink": "https://www.youtube.com/watch?v=FECbNc8eY7w"
+      }
+    ],
+    "description": "Alberta Hunter was a pioneering African American blues and jazz singer who had two remarkable careers. In the 1920s she was a celebrated recording artist who wrote 'Downhearted Blues' (later a hit for Bessie Smith) and was among the first Black artists to perform in London's West End. She then worked as a licensed practical nurse for over 20 years before making a stunning comeback at age 82, recording and performing to great acclaim until her death.",
+    "activeFrom": "1923",
+    "influences": [
+      "ma-rainey"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "alexis-korner",
+    "name": "Alexis Korner",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexis-Korner.jpg?width=500",
+    "birthDate": "1928-04-19",
+    "birthPlace": "Paris, France",
+    "birthCoords": [
+      2.3522,
+      48.8566
+    ],
+    "deathDate": "1984-01-01",
+    "deathPlace": "London, United Kingdom",
+    "deathCoords": [
+      -0.1275,
+      51.5072
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London, United Kingdom",
+        "coords": [
+          -0.1275,
+          51.5072
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals, Harmonica",
+    "bluesStyle": "British Blues, Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=noxWJfRael4",
+    "albums": [
+      {
+        "name": "R&B from the Marquee (1962)",
+        "youtubeLink": "https://www.youtube.com/watch?v=swcJHgEfHZY"
+      },
+      {
+        "name": "Blues Incorporated (1964)",
+        "youtubeLink": "https://www.youtube.com/watch?v=noxWJfRael4"
+      }
+    ],
+    "description": "Alexis Korner was the 'Father of British Blues', co-founding Blues Incorporated in 1961—the seminal band that launched the careers of Mick Jagger, Charlie Watts, Brian Jones, Jack Bruce, and Ginger Baker. His Ealing Club residency was the epicenter of the British blues movement, making him the single most influential figure in bringing American blues to British rock and roll.",
+    "activeFrom": "1962",
+    "influences": [
+      "muddy-waters",
+      "sonny-boy-williamson"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "alger-texas-alexander",
+    "name": "Alger \"Texas\" Alexander",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alger%20%22Texas%22%20Alexander.png?width=500",
+    "birthDate": "1900-09-12",
+    "birthPlace": "Jewett, Texas",
+    "birthCoords": [
+      -96.1447,
+      31.3622
+    ],
+    "deathDate": "1954-04-16",
+    "deathPlace": "Richards, Texas",
+    "deathCoords": [
+      -95.8394,
+      30.5378
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Houston, Texas",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      {
+        "place": "East Texas",
+        "coords": [
+          -95.2906,
+          31.2994
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Texas Blues, Country Blues, Field Hollers",
+    "youtubeLink": "https://www.youtube.com/watch?v=_J_q0ly7sQE",
+    "albums": [
+      {
+        "name": "Texas Alexander Vol. 1 (1927–1928)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JmWQdoC2hIY"
+      }
+    ],
+    "description": "Alger 'Texas' Alexander was a pioneering Texas blues vocalist who recorded prolifically for OKeh Records from 1927–1934, often accompanied by Lonnie Johnson on guitar. A cousin of Lightnin' Hopkins, the two recorded together in the late 1940s. His unaccompanied field holler style—raw, unmetered, and deeply rooted in the African American work song tradition—represented one of the deepest roots of the Texas blues.",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [
+      "lightnin-hopkins"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "alvin-youngblood-hart",
+    "name": "Alvin Youngblood Hart",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alvin-youngblood-hart.jpg?width=500",
+    "birthDate": "1963-03-02",
+    "birthPlace": "Oakland, California",
+    "birthCoords": [
+      -122.2711,
+      37.8044
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Oakland, California",
+        "coords": [
+          -122.2711,
+          37.8044
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.7416
+        ]
+      }
+    ],
+    "instrument": "Guitar, Mandolin, Banjo, Vocals",
+    "bluesStyle": "Delta Blues, Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=g70CH3QsTkY",
+    "albums": [
+      {
+        "name": "Big Mama's Door (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=16kiY-la2ok"
+      },
+      {
+        "name": "Territory (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=hNwxL1nSuP4"
+      }
+    ],
+    "description": "Alvin Youngblood Hart is a Grammy Award-winning contemporary blues guitarist who has dedicated his career to preserving and reinvigorating the acoustic blues tradition. Born in Oakland but deeply connected to his Southern roots, he immerses himself in the authentic Delta and country blues styles of the 1920s and 1930s, serving as a living link between the original blues masters and modern audiences.",
+    "activeFrom": "1996",
+    "influences": [
+      "charley-patton",
+      "son-house",
+      "lightnin-hopkins"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "amos-milburn",
+    "name": "Amos Milburn",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Amos%20Milburn%2C%20c.%201955.jpg?width=500",
+    "birthDate": "1927-04-01",
+    "birthPlace": "Houston, Texas",
+    "birthCoords": [
+      -95.3698,
+      29.7604
+    ],
+    "deathDate": "1980-01-03",
+    "deathPlace": "Houston, Texas",
+    "deathCoords": [
+      -95.3698,
+      29.7604
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Houston, Texas",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Piano, Vocals",
+    "bluesStyle": "Rhythm and Blues, Boogie-Woogie, Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=7GvfIx_-Xm4",
+    "albums": [
+      {
+        "name": "Chicken Shack Boogie (1947)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ufb9EobUW3w"
+      },
+      {
+        "name": "Let's Rock a While (1952)",
+        "youtubeLink": "https://www.youtube.com/watch?v=zagA762r-18"
+      },
+      {
+        "name": "The Return of the Blues Boss (1963)",
+        "youtubeLink": "https://www.youtube.com/watch?v=qSVALBz4fvM"
+      }
+    ],
+    "description": "Amos Milburn was one of the most important figures in the transition from blues to rhythm and blues in the late 1940s and early 1950s. His rollicking piano style and party-themed songs like 'Chicken Shack Boogie' and 'Bad, Bad Whiskey' earned him a string of R&B number-one hits on Aladdin Records, making him a foundational figure in the evolution toward rock and roll.",
+    "activeFrom": "1947",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "t-bone-walker",
+    "name": "T-Bone Walker",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/T-Bone_Walker.jpg/220px-T-Bone_Walker.jpg",
+    "birthDate": "1910-05-28",
+    "birthPlace": "Linden, Texas",
+    "birthCoords": [
+      -94.3616,
+      32.9979
+    ],
+    "deathDate": "1975-03-16",
+    "deathPlace": "Los Angeles, California",
+    "deathCoords": [
+      -118.2437,
+      34.0522
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Dallas, Texas",
+        "coords": [
+          -96.797,
+          32.7767
+        ]
+      },
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "West Coast Blues, Electric Blues, Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=xifoTGRBhg0",
+    "albums": [
+      {
+        "name": "T-Bone Blues (1959)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6QjhOhROP58"
+      },
+      {
+        "name": "Stormy Monday Blues: The Complete Imperial Recordings (1950–1954)",
+        "youtubeLink": "https://www.youtube.com/watch?v=kaPe8fZzZG0"
+      }
+    ],
+    "description": "T-Bone Walker was the architect of West Coast electric blues and one of the most influential guitarists in history. He was among the first to play amplified electric guitar in a blues context, and his fluid, jazzy single-note lines and showmanship—playing behind his head, doing splits—became the blueprint for every electric blues guitarist who followed, from B.B. King to Albert Collins to Jimi Hendrix.",
+    "activeFrom": "1929",
+    "influences": [
+      "blind-lemon-jefferson"
+    ],
+    "influencedBy": [
+      "albert-collins",
+      "lowell-fulson"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "lowell-fulson",
+    "name": "Lowell Fulson",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Lowell_Fulson.jpg/220px-Lowell_Fulson.jpg",
+    "birthDate": "1921-03-31",
+    "birthPlace": "Tulsa, Oklahoma",
+    "birthCoords": [
+      -95.9928,
+      36.154
+    ],
+    "deathDate": "1999-03-07",
+    "deathPlace": "Pomona, California",
+    "deathCoords": [
+      -117.7501,
+      34.0553
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Oakland, California",
+        "coords": [
+          -122.2711,
+          37.8044
+        ]
+      },
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "West Coast Blues, Electric Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=zFq2zrABFU0",
+    "albums": [
+      {
+        "name": "Reconsider Baby (1954)",
+        "youtubeLink": "https://www.youtube.com/watch?v=zFq2zrABFU0"
+      },
+      {
+        "name": "Tramp (1967)",
+        "youtubeLink": "https://www.youtube.com/watch?v=plRaZXnLA5c"
+      }
+    ],
+    "description": "Lowell Fulson was a cornerstone of the West Coast blues scene, recording some of the most beloved blues songs of the postwar era. His 'Reconsider Baby' became a blues standard covered by Elvis Presley, and 'Tramp' was transformed into an Otis Redding and Carla Thomas soul classic. He worked with Ray Charles early in both their careers and helped define the sophisticated, urbane West Coast blues sound.",
+    "activeFrom": "1946",
+    "influences": [
+      "t-bone-walker"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "charles-brown",
+    "name": "Charles Brown",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Charles_Brown_blues.jpg/220px-Charles_Brown_blues.jpg",
+    "birthDate": "1922-09-13",
+    "birthPlace": "Texas City, Texas",
+    "birthCoords": [
+      -94.9077,
+      29.3838
+    ],
+    "deathDate": "1999-01-21",
+    "deathPlace": "Oakland, California",
+    "deathCoords": [
+      -122.2711,
+      37.8044
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      {
+        "place": "Oakland, California",
+        "coords": [
+          -122.2711,
+          37.8044
+        ]
+      }
+    ],
+    "instrument": "Piano, Vocals",
+    "bluesStyle": "West Coast Blues, Rhythm and Blues, Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=fUyC2l--fSw",
+    "albums": [
+      {
+        "name": "Driftin' Blues (1945)",
+        "youtubeLink": "https://www.youtube.com/watch?v=fUyC2l--fSw"
+      },
+      {
+        "name": "Please Come Home for Christmas (1960)",
+        "youtubeLink": "https://www.youtube.com/watch?v=7g_gtiATKDY"
+      }
+    ],
+    "description": "Charles Brown was the master of the cool, sophisticated West Coast blues style—intimate, introspective, and deeply soulful. His silky piano playing and gentle vocals on 'Driftin' Blues' defined a generation's sound and influenced Ray Charles, Amos Milburn, and countless R&B artists. His holiday classic 'Please Come Home for Christmas' became a perennial standard covered by the Eagles and many others.",
+    "activeFrom": "1945",
+    "influences": [],
+    "influencedBy": [
+      "percy-mayfield"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "percy-mayfield",
+    "name": "Percy Mayfield",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Percy_Mayfield.jpg/220px-Percy_Mayfield.jpg",
+    "birthDate": "1920-08-12",
+    "birthPlace": "Minden, Louisiana",
+    "birthCoords": [
+      -93.2877,
+      32.6154
+    ],
+    "deathDate": "1984-08-11",
+    "deathPlace": "Los Angeles, California",
+    "deathCoords": [
+      -118.2437,
+      34.0522
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      {
+        "place": "Houston, Texas",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      }
+    ],
+    "instrument": "Vocals, Piano",
+    "bluesStyle": "West Coast Blues, Rhythm and Blues, Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=mxgSqmyIUAo",
+    "albums": [
+      {
+        "name": "Please Send Me Someone to Love (1950)",
+        "youtubeLink": "https://www.youtube.com/watch?v=mxgSqmyIUAo"
+      },
+      {
+        "name": "My Jug and I (1966)",
+        "youtubeLink": "https://www.youtube.com/watch?v=u5qzPtyLlJw"
+      }
+    ],
+    "description": "Known as the 'Poet Laureate of the Blues', Percy Mayfield was one of the most gifted songwriter-singers in blues and R&B history. His deeply philosophical lyrics and melancholy delivery set him apart. His 1950 hit 'Please Send Me Someone to Love' became a blues standard, and he wrote 'Hit the Road Jack' for Ray Charles. A near-fatal car accident in 1952 limited his career but deepened his artistic vision.",
+    "activeFrom": "1950",
+    "influences": [
+      "charles-brown"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  }
+]

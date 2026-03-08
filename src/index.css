@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg:      #0a0805;
+  --color-bg2:     #0a0805;
+  --color-bg3:     #0a0805;
+  --color-accent:  #4C93A9;
+  --color-accent2: #80B6C6;
+  --color-accent3: #9CC6D3;
+  --color-ink:     #fff;
+  --color-ink2:    #fff;
+  --color-ink3:    #fff;
+  --color-border:  #3a2a15;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button { cursor: pointer; font-family: inherit; }
+a { color: var(--color-accent2); text-decoration: none; }
+a:hover { color: var(--color-accent3); }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg2); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-ink3); }
+
+@keyframes slide-in {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+.animate-slide-in { animation: slide-in 0.22s ease; }
