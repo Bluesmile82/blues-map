@@ -22102,7 +22102,7 @@
   {
     "id": "johnny-yard-dog-jones",
     "name": "Johnny \"Yard Dog\" Jones",
-    "image": "",
+    "image": "/images/musicians/johnny-yard-dog-jones.webp",
     "birthDate": "1941-06-21",
     "birthPlace": "Crawfordsville",
     "birthCoords": [
@@ -22139,11 +22139,11 @@
       }
     ],
     "instrument": "Guitar, Harmonica, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=5MCYLN8Xx-Q",
     "albums": [],
     "description": "Johnny \"Yard Dog\" Jones (June 21, 1941 – September 15, 2015) was an American Chicago blues and soul blues singer, guitarist, harmonica player, and songwriter.  He won a W. C.",
-    "activeFrom": "2015",
+    "activeFrom": "1965",
     "influences": [],
     "influencedBy": [
       "johnny-b-moore"
