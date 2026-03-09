@@ -27,6 +27,7 @@ export interface Musician {
   activeFrom: string;
   influences: string[];
   influencedBy: string[];
+  playedWith: string[];
   secondaryStyles?: string[];
   incomplete?: boolean;
 }

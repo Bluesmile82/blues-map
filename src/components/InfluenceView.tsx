@@ -5,6 +5,7 @@ import { PathLayer, ScatterplotLayer, TextLayer, IconLayer } from '@deck.gl/laye
 import type { PickingInfo } from '@deck.gl/core';
 import type { Musician } from '../types';
 import { getStyleColor, getStyleHex, STYLE_COLORS, CANONICAL_STYLES } from '../utils/colors';
+import SearchInput from './SearchInput';
 import {
   computeTreeLayout,
   computeDecadeTicks,
@@ -37,13 +38,6 @@ export default function InfluenceView({
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
 }) {
-  const completeMusicians = useMemo(() => {
-    const valid = musicians.filter((m) =>
-      m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.activeFrom
-    );
-    return styleFilter ? valid.filter((m) => m.bluesStyle === styleFilter) : valid;
-  }, [musicians, styleFilter]);
-
   const containerRef = useRef<HTMLDivElement>(null);
   const dimsRef = useRef({ width: 0, height: 0 });
   const [dims, setDims] = useState({ width: 0, height: 0 });
@@ -53,7 +47,41 @@ export default function InfluenceView({
   const [groupBy, setGroupBy] = useState<GroupBy>('style');
   const [scatter, setScatter] = useState(true);
   const [search, setSearch] = useState('');
+  const [textFilter, setTextFilter] = useState('');
   const searchInputRef = useRef<HTMLInputElement>(null);
+  const [yearRange, setYearRange] = useState<[number, number] | null>(null);
+
+  const { minYear, maxYear } = useMemo(() => {
+    const years = musicians
+      .filter((m) => m.activeFrom)
+      .map((m) => parseInt(m.activeFrom));
+    if (!years.length) return { minYear: 1880, maxYear: 1990 };
+    return { minYear: Math.min(...years), maxYear: Math.max(...years) };
+  }, [musicians]);
+
+  const effectiveYearRange: [number, number] = yearRange ?? [minYear, maxYear];
+
+  const completeMusicians = useMemo(() => {
+    const valid = musicians.filter((m) =>
+      m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.activeFrom
+    );
+    const styleFiltered = styleFilter ? valid.filter((m) => m.bluesStyle === styleFilter) : valid;
+    if (!yearRange) return styleFiltered;
+    const [y0, y1] = yearRange;
+    return styleFiltered.filter((m) => {
+      const y = parseInt(m.activeFrom);
+      return y >= y0 && y <= y1;
+    });
+  }, [musicians, styleFilter, yearRange]);
+
+  const displayMusicians = useMemo(() => {
+    if (!textFilter.trim()) return completeMusicians;
+    const q = textFilter.trim().toLowerCase();
+    return completeMusicians.filter((m) =>
+      m.description.toLowerCase().includes(q) ||
+      m.albums.some((a) => a.name.toLowerCase().includes(q))
+    );
+  }, [completeMusicians, textFilter]);
 
   // World dimensions locked on first valid dims
   const worldRef = useRef<{ w: number; h: number } | null>(null);
@@ -106,15 +134,15 @@ export default function InfluenceView({
   const WW = worldRef.current?.w ?? 1400;
   const WH = worldRef.current?.h ?? 2500;
 
-  const { positions, styleZones, edges, decadeTicks } = useMemo(() => {
+  const { positions, styleZones, edges, playedWithEdges, decadeTicks } = useMemo(() => {
     if (!dims.width || !dims.height || !worldRef.current)
-      return { positions: {} as InfluenceLayout, styleZones: [] as StyleZone[], edges: [] as { path: Position2D[]; targetId: string; sourceId: string }[], decadeTicks: [] };
+      return { positions: {} as InfluenceLayout, styleZones: [] as StyleZone[], edges: [] as { path: Position2D[]; targetId: string; sourceId: string }[], playedWithEdges: [] as { path: Position2D[]; targetId: string; sourceId: string }[], decadeTicks: [] };
 
     const { w, h } = worldRef.current;
     const layoutOptions: LayoutOptions = { groupBy, scatter };
-    const { positions, styleZones } = computeTreeLayout(completeMusicians, w, h, layoutOptions);
+    const { positions, styleZones } = computeTreeLayout(displayMusicians, w, h, layoutOptions);
 
-    const edges = completeMusicians.flatMap((m) =>
+    const edges = displayMusicians.flatMap((m) =>
       m.influences
         .map((srcId) => {
           const from = positions[srcId];
@@ -125,33 +153,46 @@ export default function InfluenceView({
         .filter(Boolean)
     ) as { path: Position2D[]; targetId: string; sourceId: string }[];
 
+    const playedWithEdges = displayMusicians.flatMap((m) =>
+      m.playedWith
+        .map((srcId) => {
+          const from = positions[srcId];
+          const to = positions[m.id];
+          if (!from || !to) return null;
+          return { path: bezierPath(from, to), targetId: m.id, sourceId: srcId };
+        })
+        .filter(Boolean)
+    ) as { path: Position2D[]; targetId: string; sourceId: string }[];
+
     const decadeTicks = computeDecadeTicks(h / 2, h);
-    return { positions, styleZones, edges, decadeTicks };
-  }, [completeMusicians, groupBy, scatter, WW, WH]);
+    return { positions, styleZones, edges, playedWithEdges, decadeTicks };
+  }, [displayMusicians, groupBy, scatter, WW, WH]);
 
   // Build musician data for layers
   const musicianData = useMemo(() => {
-    return completeMusicians.map((m) => {
+    return displayMusicians.map((m) => {
       const pos = positions[m.id];
       if (!pos) return null;
       return { musician: m, position: pos };
     }).filter(Boolean) as { musician: Musician; position: Position2D }[];
-  }, [completeMusicians, positions]);
+  }, [displayMusicians, positions]);
 
   const focusId = hovered ?? selectedId;
-  const focusedMusician = focusId ? completeMusicians.find((m) => m.id === focusId) : null;
+  const focusedMusician = focusId ? displayMusicians.find((m) => m.id === focusId) : null;
   const relatedIds: Set<string> | null = focusedMusician
     ? new Set([
       focusedMusician.id,
       ...focusedMusician.influences,
-      ...completeMusicians.filter((m) => m.influences.includes(focusId!)).map((m) => m.id),
+      ...displayMusicians.filter((m) => m.influences.includes(focusId!)).map((m) => m.id),
+      ...focusedMusician.playedWith,
+      ...displayMusicians.filter((m) => m.playedWith.includes(focusId!)).map((m) => m.id),
     ])
     : null;
 
   const effectiveRelatedIds: Set<string> | null = relatedIds
     ? relatedIds
     : hoveredStyle
-      ? new Set(completeMusicians.filter((m) => m.bluesStyle === hoveredStyle).map((m) => m.id))
+      ? new Set(displayMusicians.filter((m) => m.bluesStyle === hoveredStyle).map((m) => m.id))
       : null;
 
   // Handle picking
@@ -176,7 +217,7 @@ export default function InfluenceView({
       year,
     }));
 
-    const lifespanData = completeMusicians
+    const lifespanData = displayMusicians
       .map((m) => {
         const pos = positions[m.id];
         if (!pos) return null;
@@ -265,7 +306,7 @@ export default function InfluenceView({
           : edges,
         getPath: (d) => d.path,
         getColor: (d): [number, number, number, number] => {
-          const m = completeMusicians.find((x) => x.id === d.targetId);
+          const m = displayMusicians.find((x) => x.id === d.targetId);
           return [...getStyleColor(m?.bluesStyle ?? ''), effectiveRelatedIds ? 18 : 55] as [number, number, number, number];
         },
         getWidth: 1,
@@ -279,9 +320,33 @@ export default function InfluenceView({
           data: edges.filter((e) => effectiveRelatedIds.has(e.sourceId) && effectiveRelatedIds.has(e.targetId)),
           getPath: (d) => d.path,
           getColor: (d): [number, number, number, number] => {
-            const m = completeMusicians.find((x) => x.id === d.targetId);
+            const m = displayMusicians.find((x) => x.id === d.targetId);
             return [...getStyleColor(m?.bluesStyle ?? ''), 210] as [number, number, number, number];
           },
+          getWidth: 2,
+          widthUnits: 'pixels' as const,
+          pickable: false,
+        })]
+        : []),
+      // Played with edges (dim)
+      new PathLayer({
+        id: 'played-with-dim',
+        data: effectiveRelatedIds
+          ? playedWithEdges.filter((e) => !effectiveRelatedIds.has(e.sourceId) || !effectiveRelatedIds.has(e.targetId))
+          : playedWithEdges,
+        getPath: (d) => d.path,
+        getColor: (): [number, number, number, number] => [255, 255, 255, effectiveRelatedIds ? 15 : 40],
+        getWidth: 1,
+        widthUnits: 'pixels' as const,
+        pickable: false,
+      }),
+      // Played with edges (highlighted)
+      ...(effectiveRelatedIds
+        ? [new PathLayer({
+          id: 'played-with-highlight',
+          data: playedWithEdges.filter((e) => effectiveRelatedIds.has(e.sourceId) && effectiveRelatedIds.has(e.targetId)),
+          getPath: (d) => d.path,
+          getColor: (): [number, number, number, number] => [255, 255, 255, 200],
           getWidth: 2,
           widthUnits: 'pixels' as const,
           pickable: false,
@@ -412,12 +477,12 @@ export default function InfluenceView({
         pickable: false,
       }),
     ];
-  }, [dims.width, edges, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, completeMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, onHover, onClick]);
+  }, [dims.width, edges, playedWithEdges, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, onHover, onClick]);
 
   // Search
   const searchQuery = search.trim().toLowerCase();
   const searchMatches = searchQuery
-    ? completeMusicians.filter((m) => m.name.toLowerCase().includes(searchQuery)).slice(0, 8)
+    ? displayMusicians.filter((m) => m.name.toLowerCase().includes(searchQuery)).slice(0, 8)
     : [];
 
   const goToMusician = useCallback((m: Musician) => {
@@ -501,7 +566,99 @@ export default function InfluenceView({
             })}
           </div>
 
-          {/* Top bar: group-by + scatter + search */}
+          {/* Left search panel */}
+          <div className="absolute left-3 sm:left-4 top-3 sm:top-4 z-40 flex flex-col gap-2" style={{ width: 220 }}>
+            <div className="relative">
+              <SearchInput
+                ref={searchInputRef}
+                value={search}
+                onChange={setSearch}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && searchMatches[0]) goToMusician(searchMatches[0]);
+                  if (e.key === 'Escape') setSearch('');
+                }}
+                placeholder="Find by name…"
+              />
+              {searchMatches.length > 0 && (
+                <div className="absolute top-full mt-1 left-0 right-0 bg-[#0f0c07] border border-[#2a1e0e] rounded-lg overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto">
+                  {searchMatches.map((m) => {
+                    const hex = getStyleHex(m.bluesStyle);
+                    return (
+                      <button key={m.id} onClick={() => goToMusician(m)} className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-[#1a1208] transition-colors">
+                        <span className="w-3 h-3 rounded-full shrink-0" style={{ background: hex }} />
+                        <span className="text-[0.8rem] text-ink flex-1 truncate">{m.name}</span>
+                        <span className="text-[0.65rem] shrink-0" style={{ color: hex }}>{m.bluesStyle.replace(' Blues', '')}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+            <SearchInput
+              value={textFilter}
+              onChange={setTextFilter}
+              placeholder="Filter by description or albums…"
+            />
+            {textFilter && (
+              <p className="text-[0.65rem] text-ink3 px-0.5">{displayMusicians.length} musician{displayMusicians.length !== 1 ? 's' : ''} shown</p>
+            )}
+
+            {/* Year range filter */}
+            <div className="bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2 flex flex-col gap-1.5">
+              <div className="flex items-center justify-between">
+                <span className="text-[0.6rem] text-accent tracking-widest uppercase">Active years</span>
+                {yearRange && (
+                  <button
+                    onClick={() => setYearRange(null)}
+                    className="text-[0.55rem] text-ink3 hover:text-ink transition-colors"
+                  >
+                    reset
+                  </button>
+                )}
+              </div>
+              <div className="flex items-center justify-between text-[0.65rem] text-ink3">
+                <span>{effectiveYearRange[0]}</span>
+                <span>{effectiveYearRange[1]}</span>
+              </div>
+              <div className="relative h-4 flex items-center">
+                <input
+                  type="range"
+                  min={minYear}
+                  max={maxYear}
+                  value={effectiveYearRange[0]}
+                  onChange={(e) => {
+                    const v = parseInt(e.target.value);
+                    setYearRange([Math.min(v, effectiveYearRange[1] - 1), effectiveYearRange[1]]);
+                  }}
+                  className="year-range-slider absolute w-full h-1"
+                  style={{ zIndex: 3 }}
+                />
+                <input
+                  type="range"
+                  min={minYear}
+                  max={maxYear}
+                  value={effectiveYearRange[1]}
+                  onChange={(e) => {
+                    const v = parseInt(e.target.value);
+                    setYearRange([effectiveYearRange[0], Math.max(v, effectiveYearRange[0] + 1)]);
+                  }}
+                  className="year-range-slider absolute w-full h-1"
+                  style={{ zIndex: 3 }}
+                />
+                <div className="absolute w-full h-1 rounded bg-[#2a1e0e]" style={{ zIndex: 1 }}>
+                  <div
+                    className="absolute h-full rounded bg-accent/50"
+                    style={{
+                      left: `${((effectiveYearRange[0] - minYear) / (maxYear - minYear)) * 100}%`,
+                      right: `${((maxYear - effectiveYearRange[1]) / (maxYear - minYear)) * 100}%`,
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Top bar: group-by + scatter */}
           <div className="absolute top-3 sm:top-4 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2">
             <div className="flex items-center bg-bg/90 border border-[#2a1e0e] rounded-lg p-0.5 gap-0.5">
               {(['style', 'instrument'] as GroupBy[]).map((mode) => (
@@ -522,47 +679,6 @@ export default function InfluenceView({
             >
               Scatter
             </button>
-
-            <div className="relative">
-              <input
-                ref={searchInputRef}
-                type="text"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' && searchMatches[0]) goToMusician(searchMatches[0]);
-                  if (e.key === 'Escape') setSearch('');
-                }}
-                placeholder="Search…"
-                className="min-w-56 sm:w-40 bg-bg/90 border border-[#2a1e0e] rounded-lg px-2.5 py-1 text-[0.75rem] text-ink placeholder-ink3 outline-none focus:border-accent/60 transition-colors"
-              />
-              {search && (
-                <button
-                  onClick={() => setSearch('')}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 text-ink3 hover:text-ink text-xs"
-                >
-                  ✕
-                </button>
-              )}
-              {searchMatches.length > 0 && (
-                <div className="absolute top-full mt-1 left-0 right-0 bg-[#0f0c07] border border-[#2a1e0e] rounded-lg overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto">
-                  {searchMatches.map((m) => {
-                    const hex = getStyleHex(m.bluesStyle);
-                    return (
-                      <button
-                        key={m.id}
-                        onClick={() => goToMusician(m)}
-                        className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-[#1a1208] transition-colors"
-                      >
-                        <span className="w-3 h-3 rounded-full shrink-0" style={{ background: hex }} />
-                        <span className="text-[0.8rem] text-ink flex-1 truncate">{m.name}</span>
-                        <span className="text-[0.65rem] shrink-0" style={{ color: hex }}>{m.bluesStyle.replace(' Blues', '')}</span>
-                      </button>
-                    );
-                  })}
-                </div>
-              )}
-            </div>
           </div>
 
           {/* Zoom controls */}
@@ -591,55 +707,50 @@ export default function InfluenceView({
           </div>
 
           {/* Color legend */}
-          <div className="hidden sm:flex absolute bottom-5 left-15 flex-col z-40">
+          <div className="hidden sm:flex absolute bottom-5 left-15 flex-col z-40 bg-bg/90 border border-[#2a1e0e] rounded-lg py-2">
             <button
               onClick={() => setLegendOpen((o) => !o)}
-              className="flex items-center gap-2 px-3 py-2 bg-bg/90 border border-[#2a1e0e] rounded-lg text-[0.62rem] text-accent tracking-widest uppercase hover:border-accent/50 transition-colors"
+              className="flex items-center gap-1.5 px-3 pb-1 text-[0.6rem] text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
             >
-              <span className="flex-1 text-left">Blues Style</span>
-              <span className="text-[0.65rem] text-ink3">{legendOpen ? '▲' : '▼'}</span>
+              Blues Style
+              <span className="text-[0.55rem] opacity-60">{legendOpen ? '▲' : '▼'}</span>
             </button>
-
-            {legendOpen && (
-              <div className="mt-1 bg-bg/90 border border-[#2a1e0e] rounded-lg py-2 flex flex-col">
-                {CANONICAL_STYLES.filter((style) => completeMusicians.some((m) => m.bluesStyle === style)).map((style) => {
-                  const [r, g, b] = STYLE_COLORS[style] ?? [150, 150, 150];
-                  const isActive = hoveredStyle === style;
-                  return (
-                    <div
-                      key={style}
-                      className="flex items-center gap-2 px-3 py-1 cursor-pointer transition-colors"
-                      style={{
-                        background: isActive || styleFilter === style ? `rgba(${r},${g},${b},0.15)` : undefined,
-                        color: isActive || styleFilter === style ? `rgb(${r},${g},${b})` : 'rgba(255,255,255,0.65)',
-                      }}
-                      onMouseEnter={() => setHoveredStyle(style)}
-                      onMouseLeave={() => setHoveredStyle(null)}
-                      onClick={() => onStyleFilterChange(styleFilter === style ? null : style)}
-                    >
-                      <span
-                        className="w-2.5 h-2.5 rounded-full shrink-0 transition-transform"
-                        style={{
-                          background: `rgb(${r},${g},${b})`,
-                          border: isActive || styleFilter === style ? `1.5px solid rgb(${r},${g},${b})` : '1px solid rgba(255,255,255,0.1)',
-                          transform: isActive || styleFilter === style ? 'scale(1.3)' : 'scale(1)',
-                          boxShadow: isActive || styleFilter === style ? `0 0 6px rgba(${r},${g},${b},0.6)` : 'none',
-                        }}
-                      />
-                      <span className="text-[0.72rem] flex-1">{style}</span>
-                      {styleFilter === style && (
-                        <span className="text-[0.6rem] opacity-60">✕</span>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            )}
+            {legendOpen && CANONICAL_STYLES.filter((style) => completeMusicians.some((m) => m.bluesStyle === style)).map((style) => {
+              const [r, g, b] = STYLE_COLORS[style] ?? [150, 150, 150];
+              const isActive = hoveredStyle === style;
+              return (
+                <div
+                  key={style}
+                  className="flex items-center gap-2 px-3 py-0.5 cursor-pointer transition-colors"
+                  style={{
+                    background: isActive || styleFilter === style ? `rgba(${r},${g},${b},0.15)` : undefined,
+                    color: isActive || styleFilter === style ? `rgb(${r},${g},${b})` : 'rgba(255,255,255,0.65)',
+                  }}
+                  onMouseEnter={() => setHoveredStyle(style)}
+                  onMouseLeave={() => setHoveredStyle(null)}
+                  onClick={() => onStyleFilterChange(styleFilter === style ? null : style)}
+                >
+                  <span
+                    className="w-2 h-2 rounded-full shrink-0 transition-transform"
+                    style={{
+                      background: `rgb(${r},${g},${b})`,
+                      transform: isActive || styleFilter === style ? 'scale(1.3)' : 'scale(1)',
+                      boxShadow: isActive || styleFilter === style ? `0 0 5px rgba(${r},${g},${b},0.6)` : 'none',
+                    }}
+                  />
+                  <span className="text-[0.7rem] flex-1">{style}</span>
+                  {styleFilter === style && (
+                    <span className="text-[0.6rem] opacity-50">✕</span>
+                  )}
+                </div>
+              );
+            })}
           </div>
+
 
           {/* Hover tooltip */}
           {hovered && !selectedId && (() => {
-            const m = completeMusicians.find((x) => x.id === hovered);
+            const m = displayMusicians.find((x) => x.id === hovered);
             if (!m) return null;
             return (
               <div className="absolute bottom-4 sm:bottom-5 left-1/2 -translate-x-1/2 max-w-[90vw] bg-[#0f0c07]/95 border border-accent/60 rounded-lg px-3 sm:px-4 py-2 sm:py-2.5 flex items-center gap-2 sm:gap-3 pointer-events-none z-50 shadow-lg overflow-hidden">

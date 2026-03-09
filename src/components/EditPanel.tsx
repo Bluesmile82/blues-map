@@ -71,7 +71,7 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
   );
 
   useEffect(() => {
-    setFormData({ ...musician });
+    setFormData({ ...musician, playedWith: musician.playedWith ?? [] });
     setBirthCoordsRaw(musician.birthCoords.every(c => c === 0) ? '' : musician.birthCoords.join(', '));
     setDeathCoordsRaw(musician.deathCoords ? musician.deathCoords.join(', ') : '');
   }, [musician]);
@@ -536,6 +536,15 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
                 onChange={(e) => handleChange('influencedBy', e.target.value.split(',').map(s => s.trim()).filter(Boolean))}
                 rows={2}
                 placeholder="bb-king, eric-clapton"
+                className={inputClass() + ' resize-none'}
+              />
+            </Field>
+            <Field label="Played with (musician IDs, comma-separated)" hint="Musicians this person played with">
+              <textarea
+                value={formData.playedWith.join(', ')}
+                onChange={(e) => handleChange('playedWith', e.target.value.split(',').map(s => s.trim()).filter(Boolean))}
+                rows={2}
+                placeholder="bb-king, buddy-guy"
                 className={inputClass() + ' resize-none'}
               />
             </Field>

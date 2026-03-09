@@ -203,13 +203,18 @@ export function computeTreeLayout(
     }
   });
 
-  // Second pass: pull musicians toward their cross-style influences
+  // Second pass: pull musicians toward their cross-style influences and played-with relationships
   // This creates clustering where related musicians across styles are closer
   const allInfluenceLinks: { from: string; to: string }[] = [];
   musicians.forEach((m) => {
     m.influences.forEach((infId) => {
       if (xPos[infId] !== undefined) {
         allInfluenceLinks.push({ from: infId, to: m.id });
+      }
+    });
+    m.playedWith.forEach((playedId) => {
+      if (xPos[playedId] !== undefined) {
+        allInfluenceLinks.push({ from: playedId, to: m.id });
       }
     });
   });
@@ -257,13 +262,18 @@ export function computeTreeLayout(
     const [zoneStart, zoneEnd] = styleZoneMap[style];
     const inStyle = new Set(group.map((m) => m.id));
 
-    // Build intra-style children map
+    // Build intra-style children map (includes both influences and played-with)
     const childrenOf: Record<string, string[]> = {};
     group.forEach((m) => { childrenOf[m.id] = []; });
     group.forEach((m) => {
       m.influences.forEach((infId) => {
         if (inStyle.has(infId) && childrenOf[infId]) {
           childrenOf[infId].push(m.id);
+        }
+      });
+      m.playedWith.forEach((playedId) => {
+        if (inStyle.has(playedId) && childrenOf[playedId]) {
+          childrenOf[playedId].push(m.id);
         }
       });
     });

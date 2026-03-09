@@ -6,6 +6,7 @@ import Map from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Musician } from '../types';
 import { getStyleColor, getStyleHex, STYLE_COLORS, CANONICAL_STYLES } from '../utils/colors';
+import SearchInput from './SearchInput';
 
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
 
@@ -93,12 +94,10 @@ function MusicianSidebar({
       <div className="shrink-0 p-6 border-b border-border bg-bg">
         {/* Search */}
         <div className="mb-3">
-          <input
-            type="text"
-            placeholder="Search by name or birthplace..."
+          <SearchInput
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full px-4 py-2.5 text-sm bg-bg rounded-lg text-ink placeholder-ink3 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
+            onChange={setSearchQuery}
+            placeholder="Search by name or birthplace..."
           />
         </div>
       </div>

@@ -21,6 +21,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
 
   const influencers = musician.influences.map((id) => musicianMap[id]).filter(Boolean) as Musician[];
   const influenced = completeMusicians.filter((m) => m.influences.includes(musician.id));
+  const playedWith = musician.playedWith.map((id) => musicianMap[id]).filter(Boolean) as Musician[];
   const hex = getStyleHex(musician.bluesStyle);
   const [r, g, b] = getStyleColor(musician.bluesStyle) as [number, number, number];
 
@@ -215,6 +216,17 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
             <Section title="Influenced" r={r} g={g} b={b} hex={hex}>
               <div className="flex flex-wrap gap-2.5">
                 {influenced.map((m) => (
+                  <MusicianChip key={m.id} musician={m} onClick={() => onNavigate(m)} />
+                ))}
+              </div>
+            </Section>
+          )}
+
+          {/* Played with */}
+          {playedWith.length > 0 && (
+            <Section title="Played with" r={r} g={g} b={b} hex={hex}>
+              <div className="flex flex-wrap gap-2.5">
+                {playedWith.map((m) => (
                   <MusicianChip key={m.id} musician={m} onClick={() => onNavigate(m)} />
                 ))}
               </div>

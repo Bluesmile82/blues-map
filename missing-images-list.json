@@ -1,0 +1,847 @@
+[
+  {
+    "id": "mozelle-alderson",
+    "name": "Mozelle Alderson",
+    "expectedPath": "public/images/musicians/mozelle-alderson.png"
+  },
+  {
+    "id": "ora-alexander",
+    "name": "Ora Alexander",
+    "expectedPath": "public/images/musicians/ora-alexander.png"
+  },
+  {
+    "id": "son-bonds",
+    "name": "Son Bonds",
+    "expectedPath": "public/images/musicians/son-bonds.png"
+  },
+  {
+    "id": "kitty-brown",
+    "name": "Kitty Brown",
+    "expectedPath": "public/images/musicians/kitty-brown.png"
+  },
+  {
+    "id": "bumble-bee-slim",
+    "name": "Bumble Bee Slim",
+    "expectedPath": "public/images/musicians/bumble-bee-slim.png"
+  },
+  {
+    "id": "blind-blues-darby",
+    "name": "Blind Blues Darby",
+    "expectedPath": "public/images/musicians/blind-blues-darby.png"
+  },
+  {
+    "id": "little-buddy-doyle",
+    "name": "Little Buddy Doyle",
+    "expectedPath": "public/images/musicians/little-buddy-doyle.png"
+  },
+  {
+    "id": "ethel-finnie",
+    "name": "Ethel Finnie",
+    "expectedPath": "public/images/musicians/ethel-finnie.png"
+  },
+  {
+    "id": "jazz-gillum",
+    "name": "Jazz Gillum",
+    "expectedPath": "public/images/musicians/jazz-gillum.png"
+  },
+  {
+    "id": "boyd-gilmore",
+    "name": "Boyd Gilmore",
+    "expectedPath": "public/images/musicians/boyd-gilmore.png"
+  },
+  {
+    "id": "coot-grant",
+    "name": "Coot Grant",
+    "expectedPath": "public/images/musicians/coot-grant.png"
+  },
+  {
+    "id": "lucille-hegamin",
+    "name": "Lucille Hegamin",
+    "expectedPath": "public/images/musicians/lucille-hegamin.png"
+  },
+  {
+    "id": "edmonia-henderson",
+    "name": "Edmonia Henderson",
+    "expectedPath": "public/images/musicians/edmonia-henderson.png"
+  },
+  {
+    "id": "edith-north-johnson",
+    "name": "Edith North Johnson",
+    "expectedPath": "public/images/musicians/edith-north-johnson.png"
+  },
+  {
+    "id": "little-hat-jones",
+    "name": "Little Hat Jones",
+    "expectedPath": "public/images/musicians/little-hat-jones.png"
+  },
+  {
+    "id": "lottie-kimbrough",
+    "name": "Lottie Kimbrough",
+    "expectedPath": "public/images/musicians/lottie-kimbrough.png"
+  },
+  {
+    "id": "charley-lincoln",
+    "name": "Charley Lincoln",
+    "expectedPath": "public/images/musicians/charley-lincoln.png"
+  },
+  {
+    "id": "eddie-mapp",
+    "name": "Eddie Mapp",
+    "expectedPath": "public/images/musicians/eddie-mapp.png"
+  },
+  {
+    "id": "kansas-joe-mccoy",
+    "name": "Kansas Joe McCoy",
+    "expectedPath": "public/images/musicians/kansas-joe-mccoy.png"
+  },
+  {
+    "id": "hambone-willie-newbern",
+    "name": "Hambone Willie Newbern",
+    "expectedPath": "public/images/musicians/hambone-willie-newbern.png"
+  },
+  {
+    "id": "buster-pickens",
+    "name": "Buster Pickens",
+    "expectedPath": "public/images/musicians/buster-pickens.png"
+  },
+  {
+    "id": "joe-pullum",
+    "name": "Joe Pullum",
+    "expectedPath": "public/images/musicians/joe-pullum.png"
+  },
+  {
+    "id": "dan-sane",
+    "name": "Dan Sane",
+    "expectedPath": "public/images/musicians/dan-sane.png"
+  },
+  {
+    "id": "alec-seward",
+    "name": "Alec Seward",
+    "expectedPath": "public/images/musicians/alec-seward.png"
+  },
+  {
+    "id": "jd-short",
+    "name": "J.D. Short",
+    "expectedPath": "public/images/musicians/jd-short.png"
+  },
+  {
+    "id": "clara-smith",
+    "name": "Clara Smith",
+    "expectedPath": "public/images/musicians/clara-smith.png"
+  },
+  {
+    "id": "willie-trice",
+    "name": "Willie Trice",
+    "expectedPath": "public/images/musicians/willie-trice.png"
+  },
+  {
+    "id": "bessie-tucker",
+    "name": "Bessie Tucker",
+    "expectedPath": "public/images/musicians/bessie-tucker.png"
+  },
+  {
+    "id": "kip-anderson",
+    "name": "Kip Anderson",
+    "expectedPath": "public/images/musicians/kip-anderson.png"
+  },
+  {
+    "id": "lefty-bates",
+    "name": "Lefty Bates",
+    "expectedPath": "public/images/musicians/lefty-bates.png"
+  },
+  {
+    "id": "blind-john-davis",
+    "name": "Blind John Davis",
+    "expectedPath": "public/images/musicians/blind-john-davis.png"
+  },
+  {
+    "id": "maxwell-street-jimmy-davis",
+    "name": "Maxwell Street Jimmy Davis",
+    "expectedPath": "public/images/musicians/maxwell-street-jimmy-davis.png"
+  },
+  {
+    "id": "floyd-dixon",
+    "name": "Floyd Dixon",
+    "expectedPath": "public/images/musicians/floyd-dixon.png"
+  },
+  {
+    "id": "archie-edwards",
+    "name": "Archie Edwards",
+    "expectedPath": "public/images/musicians/archie-edwards.png"
+  },
+  {
+    "id": "margie-evans",
+    "name": "Margie Evans",
+    "expectedPath": "public/images/musicians/margie-evans.png"
+  },
+  {
+    "id": "turner-foddrell",
+    "name": "Turner Foddrell",
+    "expectedPath": "public/images/musicians/turner-foddrell.png"
+  },
+  {
+    "id": "forest-city-joe",
+    "name": "Forest City Joe",
+    "expectedPath": "public/images/musicians/forest-city-joe.png"
+  },
+  {
+    "id": "guitar-pete-franklin",
+    "name": "Guitar Pete Franklin",
+    "expectedPath": "public/images/musicians/guitar-pete-franklin.png"
+  },
+  {
+    "id": "calvin-frazier",
+    "name": "Calvin Frazier",
+    "expectedPath": "public/images/musicians/calvin-frazier.png"
+  },
+  {
+    "id": "lacy-gibson",
+    "name": "Lacy Gibson",
+    "expectedPath": "public/images/musicians/lacy-gibson.png"
+  },
+  {
+    "id": "good-rockin-charles",
+    "name": "Good Rockin' Charles",
+    "expectedPath": "public/images/musicians/good-rockin-charles.png"
+  },
+  {
+    "id": "lc-green",
+    "name": "L.C. Green",
+    "expectedPath": "public/images/musicians/lc-green.png"
+  },
+  {
+    "id": "guitar-nubbit",
+    "name": "Guitar Nubbit",
+    "expectedPath": "public/images/musicians/guitar-nubbit.png"
+  },
+  {
+    "id": "james-harman",
+    "name": "James Harman",
+    "expectedPath": "public/images/musicians/james-harman.png"
+  },
+  {
+    "id": "harmonica-slim",
+    "name": "Harmonica Slim",
+    "expectedPath": "public/images/musicians/harmonica-slim.png"
+  },
+  {
+    "id": "little-hatch",
+    "name": "Little Hatch",
+    "expectedPath": "public/images/musicians/little-hatch.png"
+  },
+  {
+    "id": "duke-henderson",
+    "name": "Duke Henderson",
+    "expectedPath": "public/images/musicians/duke-henderson.png"
+  },
+  {
+    "id": "silas-hogan",
+    "name": "Silas Hogan",
+    "expectedPath": "public/images/musicians/silas-hogan.png"
+  },
+  {
+    "id": "smokey-hogg",
+    "name": "Smokey Hogg",
+    "expectedPath": "public/images/musicians/smokey-hogg.png"
+  },
+  {
+    "id": "long-john-hunter",
+    "name": "Long John Hunter",
+    "expectedPath": "public/images/musicians/long-john-hunter.png"
+  },
+  {
+    "id": "bobo-jenkins",
+    "name": "Bobo Jenkins",
+    "expectedPath": "public/images/musicians/bobo-jenkins.png"
+  },
+  {
+    "id": "floyd-jones",
+    "name": "Floyd Jones",
+    "expectedPath": "public/images/musicians/floyd-jones.png"
+  },
+  {
+    "id": "moody-jones",
+    "name": "Moody Jones",
+    "expectedPath": "public/images/musicians/moody-jones.png"
+  },
+  {
+    "id": "tail-dragger-jones",
+    "name": "Tail Dragger Jones",
+    "expectedPath": "public/images/musicians/tail-dragger-jones.png"
+  },
+  {
+    "id": "kansas-city-red",
+    "name": "Kansas City Red",
+    "expectedPath": "public/images/musicians/kansas-city-red.png"
+  },
+  {
+    "id": "sammy-lawhorn",
+    "name": "Sammy Lawhorn",
+    "expectedPath": "public/images/musicians/sammy-lawhorn.png"
+  },
+  {
+    "id": "lovie-lee",
+    "name": "Lovie Lee",
+    "expectedPath": "public/images/musicians/lovie-lee.png"
+  },
+  {
+    "id": "lefty-dizz",
+    "name": "Lefty Dizz",
+    "expectedPath": "public/images/musicians/lefty-dizz.png"
+  },
+  {
+    "id": "little-joe-blue",
+    "name": "Little Joe Blue",
+    "expectedPath": "public/images/musicians/little-joe-blue.png"
+  },
+  {
+    "id": "lonesome-sundown",
+    "name": "Lonesome Sundown",
+    "expectedPath": "public/images/musicians/lonesome-sundown.png"
+  },
+  {
+    "id": "willie-love",
+    "name": "Willie Love",
+    "expectedPath": "public/images/musicians/willie-love.png"
+  },
+  {
+    "id": "johnny-mars",
+    "name": "Johnny Mars",
+    "expectedPath": "public/images/musicians/johnny-mars.png"
+  },
+  {
+    "id": "pete-mayes",
+    "name": "Pete Mayes",
+    "expectedPath": "public/images/musicians/pete-mayes.png"
+  },
+  {
+    "id": "earring-george-mayweather",
+    "name": "Earring George Mayweather",
+    "expectedPath": "public/images/musicians/earring-george-mayweather.png"
+  },
+  {
+    "id": "delbert-mcclinton",
+    "name": "Delbert McClinton",
+    "expectedPath": "public/images/musicians/delbert-mcclinton.png"
+  },
+  {
+    "id": "johnny-b-moore",
+    "name": "Johnny B. Moore",
+    "expectedPath": "public/images/musicians/johnny-b-moore.png"
+  },
+  {
+    "id": "andrew-odom",
+    "name": "Andrew Odom",
+    "expectedPath": "public/images/musicians/andrew-odom.png"
+  },
+  {
+    "id": "doug-quattlebaum",
+    "name": "Doug Quattlebaum",
+    "expectedPath": "public/images/musicians/doug-quattlebaum.png"
+  },
+  {
+    "id": "jimmie-lee-robinson",
+    "name": "Jimmie Lee Robinson",
+    "expectedPath": "public/images/musicians/jimmie-lee-robinson.png"
+  },
+  {
+    "id": "roscoe-shelton",
+    "name": "Roscoe Shelton",
+    "expectedPath": "public/images/musicians/roscoe-shelton.png"
+  },
+  {
+    "id": "frankie-lee-sims",
+    "name": "Frankie Lee Sims",
+    "expectedPath": "public/images/musicians/frankie-lee-sims.png"
+  },
+  {
+    "id": "drink-small",
+    "name": "Drink Small",
+    "expectedPath": "public/images/musicians/drink-small.png"
+  },
+  {
+    "id": "robert-curtis-smith",
+    "name": "Robert Curtis Smith",
+    "expectedPath": "public/images/musicians/robert-curtis-smith.png"
+  },
+  {
+    "id": "smoky-babe",
+    "name": "Smoky Babe",
+    "expectedPath": "public/images/musicians/smoky-babe.png"
+  },
+  {
+    "id": "little-smokey-smothers",
+    "name": "Little Smokey Smothers",
+    "expectedPath": "public/images/musicians/little-smokey-smothers.png"
+  },
+  {
+    "id": "tabby-thomas",
+    "name": "Tabby Thomas",
+    "expectedPath": "public/images/musicians/tabby-thomas.png"
+  },
+  {
+    "id": "titus-turner",
+    "name": "Titus Turner",
+    "expectedPath": "public/images/musicians/titus-turner.png"
+  },
+  {
+    "id": "mose-vinson",
+    "name": "Mose Vinson",
+    "expectedPath": "public/images/musicians/mose-vinson.png"
+  },
+  {
+    "id": "baby-boy-warren",
+    "name": "Baby Boy Warren",
+    "expectedPath": "public/images/musicians/baby-boy-warren.png"
+  },
+  {
+    "id": "willie-d-warren",
+    "name": "Willie D. Warren",
+    "expectedPath": "public/images/musicians/willie-d-warren.png"
+  },
+  {
+    "id": "boogie-bill-webb",
+    "name": "Boogie Bill Webb",
+    "expectedPath": "public/images/musicians/boogie-bill-webb.png"
+  },
+  {
+    "id": "big-john-wrencher",
+    "name": "Big John Wrencher",
+    "expectedPath": "public/images/musicians/big-john-wrencher.png"
+  },
+  {
+    "id": "laith-al-saadi",
+    "name": "Laith Al-Saadi",
+    "expectedPath": "public/images/musicians/laith-al-saadi.png"
+  },
+  {
+    "id": "lv-banks",
+    "name": "L.V. Banks",
+    "expectedPath": "public/images/musicians/lv-banks.png"
+  },
+  {
+    "id": "boo-boo-davis",
+    "name": "Boo Boo Davis",
+    "expectedPath": "public/images/musicians/boo-boo-davis.png"
+  },
+  {
+    "id": "terry-garland",
+    "name": "Terry Garland",
+    "expectedPath": "public/images/musicians/terry-garland.png"
+  },
+  {
+    "id": "guitar-slim-jr",
+    "name": "Guitar Slim Jr.",
+    "expectedPath": "public/images/musicians/guitar-slim-jr.png"
+  },
+  {
+    "id": "sandra-hall",
+    "name": "Sandra Hall",
+    "expectedPath": "public/images/musicians/sandra-hall.png"
+  },
+  {
+    "id": "lv-johnson",
+    "name": "L.V. Johnson",
+    "expectedPath": "public/images/musicians/lv-johnson.png"
+  },
+  {
+    "id": "little-jimmy-king",
+    "name": "Little Jimmy King",
+    "expectedPath": "public/images/musicians/little-jimmy-king.png"
+  },
+  {
+    "id": "saffire-the-uppity-blues-women",
+    "name": "Saffire – The Uppity Blues Women",
+    "expectedPath": "public/images/musicians/saffire-the-uppity-blues-women.png"
+  },
+  {
+    "id": "demetria-taylor",
+    "name": "Demetria Taylor",
+    "expectedPath": "public/images/musicians/demetria-taylor.png"
+  },
+  {
+    "id": "maurice-john-vaughn",
+    "name": "Maurice John Vaughn",
+    "expectedPath": "public/images/musicians/maurice-john-vaughn.png"
+  },
+  {
+    "id": "valerie-wellington",
+    "name": "Valerie Wellington",
+    "expectedPath": "public/images/musicians/valerie-wellington.png"
+  },
+  {
+    "id": "ed-bell",
+    "name": "Ed Bell",
+    "expectedPath": "public/images/musicians/ed-bell.png"
+  },
+  {
+    "id": "willie-brown",
+    "name": "Willie Brown",
+    "expectedPath": "public/images/musicians/willie-brown.png"
+  },
+  {
+    "id": "sam-collins",
+    "name": "Sam Collins",
+    "expectedPath": "public/images/musicians/sam-collins.png"
+  },
+  {
+    "id": "tom-delaney",
+    "name": "Tom Delaney",
+    "expectedPath": "public/images/musicians/tom-delaney.png"
+  },
+  {
+    "id": "richard-hacksaw-harney",
+    "name": "Richard \"Hacksaw\" Harney",
+    "expectedPath": "public/images/musicians/richard-hacksaw-harney.png"
+  },
+  {
+    "id": "katherine-henderson",
+    "name": "Katherine Henderson",
+    "expectedPath": "public/images/musicians/katherine-henderson.png"
+  },
+  {
+    "id": "jim-jackson",
+    "name": "Jim Jackson",
+    "expectedPath": "public/images/musicians/jim-jackson.png"
+  },
+  {
+    "id": "lonnie-johnson",
+    "name": "Lonnie Johnson",
+    "expectedPath": "public/images/musicians/lonnie-johnson.png"
+  },
+  {
+    "id": "mary-johnson",
+    "name": "Mary Johnson",
+    "expectedPath": "public/images/musicians/mary-johnson.png"
+  },
+  {
+    "id": "charlie-specks-mcfadden",
+    "name": "Charlie \"Specks\" McFadden",
+    "expectedPath": "public/images/musicians/charlie-specks-mcfadden.png"
+  },
+  {
+    "id": "whistlin-alex-moore",
+    "name": "Whistlin' Alex Moore",
+    "expectedPath": "public/images/musicians/whistlin-alex-moore.png"
+  },
+  {
+    "id": "red-nelson",
+    "name": "Red Nelson",
+    "expectedPath": "public/images/musicians/red-nelson.png"
+  },
+  {
+    "id": "walter-roland",
+    "name": "Walter Roland",
+    "expectedPath": "public/images/musicians/walter-roland.png"
+  },
+  {
+    "id": "henry-son-sims",
+    "name": "Henry \"Son\" Sims",
+    "expectedPath": "public/images/musicians/henry-son-sims.png"
+  },
+  {
+    "id": "j-t-funny-papa-smith",
+    "name": "J. T. \"Funny Papa\" Smith",
+    "expectedPath": "public/images/musicians/j-t-funny-papa-smith.png"
+  },
+  {
+    "id": "pinetop-sparks",
+    "name": "Pinetop Sparks",
+    "expectedPath": "public/images/musicians/pinetop-sparks.png"
+  },
+  {
+    "id": "speckled-red",
+    "name": "Speckled Red",
+    "expectedPath": "public/images/musicians/speckled-red.png"
+  },
+  {
+    "id": "frank-stokes",
+    "name": "Frank Stokes",
+    "expectedPath": "public/images/musicians/frank-stokes.png"
+  },
+  {
+    "id": "henry-townsend",
+    "name": "Henry Townsend",
+    "expectedPath": "public/images/musicians/henry-townsend.png"
+  },
+  {
+    "id": "sylvester-weaver",
+    "name": "Sylvester Weaver",
+    "expectedPath": "public/images/musicians/sylvester-weaver.png"
+  },
+  {
+    "id": "boogie-woogie-red",
+    "name": "Boogie Woogie Red",
+    "expectedPath": "public/images/musicians/boogie-woogie-red.png"
+  },
+  {
+    "id": "walter-brown",
+    "name": "Walter Brown",
+    "expectedPath": "public/images/musicians/walter-brown.png"
+  },
+  {
+    "id": "james-thunderbird-davis",
+    "name": "James \"Thunderbird\" Davis",
+    "expectedPath": "public/images/musicians/james-thunderbird-davis.png"
+  },
+  {
+    "id": "robert-big-mojo-elem",
+    "name": "Robert \"Big Mojo\" Elem",
+    "expectedPath": "public/images/musicians/robert-big-mojo-elem.png"
+  },
+  {
+    "id": "johnny-fuller",
+    "name": "Johnny Fuller",
+    "expectedPath": "public/images/musicians/johnny-fuller.png"
+  },
+  {
+    "id": "peter-green",
+    "name": "Peter Green",
+    "expectedPath": "public/images/musicians/peter-green.png"
+  },
+  {
+    "id": "eddie-king",
+    "name": "Eddie King",
+    "expectedPath": "public/images/musicians/eddie-king.png"
+  },
+  {
+    "id": "bob-kirkpatrick",
+    "name": "Bob Kirkpatrick",
+    "expectedPath": "public/images/musicians/bob-kirkpatrick.png"
+  },
+  {
+    "id": "luke-long-gone-miles",
+    "name": "Luke \"Long Gone\" Miles",
+    "expectedPath": "public/images/musicians/luke-long-gone-miles.png"
+  },
+  {
+    "id": "dan-pickett",
+    "name": "Dan Pickett",
+    "expectedPath": "public/images/musicians/dan-pickett.png"
+  },
+  {
+    "id": "moses-whispering-smith",
+    "name": "Moses \"Whispering\" Smith",
+    "expectedPath": "public/images/musicians/moses-whispering-smith.png"
+  },
+  {
+    "id": "arthur-big-boy-spires",
+    "name": "Arthur \"Big Boy\" Spires",
+    "expectedPath": "public/images/musicians/arthur-big-boy-spires.png"
+  },
+  {
+    "id": "baby-tate",
+    "name": "Baby Tate",
+    "expectedPath": "public/images/musicians/baby-tate.png"
+  },
+  {
+    "id": "sam-taylor",
+    "name": "Sam Taylor",
+    "expectedPath": "public/images/musicians/sam-taylor.png"
+  },
+  {
+    "id": "johnny-big-moose-walker",
+    "name": "Johnny \"Big Moose\" Walker",
+    "expectedPath": "public/images/musicians/johnny-big-moose-walker.png"
+  },
+  {
+    "id": "golden-big-wheeler",
+    "name": "Golden \"Big\" Wheeler",
+    "expectedPath": "public/images/musicians/golden-big-wheeler.png"
+  },
+  {
+    "id": "lester-williams",
+    "name": "Lester Williams",
+    "expectedPath": "public/images/musicians/lester-williams.png"
+  },
+  {
+    "id": "alan-wilson",
+    "name": "Alan Wilson",
+    "expectedPath": "public/images/musicians/alan-wilson.png"
+  },
+  {
+    "id": "billy-wright",
+    "name": "Billy Wright",
+    "expectedPath": "public/images/musicians/billy-wright.png"
+  },
+  {
+    "id": "james-armstrong",
+    "name": "James Armstrong",
+    "expectedPath": "public/images/musicians/james-armstrong.png"
+  },
+  {
+    "id": "terry-harmonica-bean",
+    "name": "Terry \"Harmonica\" Bean",
+    "expectedPath": "public/images/musicians/terry-harmonica-bean.png"
+  },
+  {
+    "id": "adolphus-bell",
+    "name": "Adolphus Bell",
+    "expectedPath": "public/images/musicians/adolphus-bell.png"
+  },
+  {
+    "id": "skeeter-brandon",
+    "name": "Skeeter Brandon",
+    "expectedPath": "public/images/musicians/skeeter-brandon.png"
+  },
+  {
+    "id": "william-clarke",
+    "name": "William Clarke",
+    "expectedPath": "public/images/musicians/william-clarke.png"
+  },
+  {
+    "id": "guy-davis",
+    "name": "Guy Davis",
+    "expectedPath": "public/images/musicians/guy-davis.png"
+  },
+  {
+    "id": "thornetta-davis",
+    "name": "Thornetta Davis",
+    "expectedPath": "public/images/musicians/thornetta-davis.png"
+  },
+  {
+    "id": "little-arthur-duncan",
+    "name": "Little Arthur Duncan",
+    "expectedPath": "public/images/musicians/little-arthur-duncan.png"
+  },
+  {
+    "id": "kirk-fletcher",
+    "name": "Kirk Fletcher",
+    "expectedPath": "public/images/musicians/kirk-fletcher.png"
+  },
+  {
+    "id": "rick-franklin",
+    "name": "Rick Franklin",
+    "expectedPath": "public/images/musicians/rick-franklin.png"
+  },
+  {
+    "id": "odessa-harris",
+    "name": "Odessa Harris",
+    "expectedPath": "public/images/musicians/odessa-harris.png"
+  },
+  {
+    "id": "big-boy-henry",
+    "name": "Big Boy Henry",
+    "expectedPath": "public/images/musicians/big-boy-henry.png"
+  },
+  {
+    "id": "paul-wine-jones",
+    "name": "Paul \"Wine\" Jones",
+    "expectedPath": "public/images/musicians/paul-wine-jones.png"
+  },
+  {
+    "id": "tutu-jones",
+    "name": "Tutu Jones",
+    "expectedPath": "public/images/musicians/tutu-jones.png"
+  },
+  {
+    "id": "harrison-kennedy",
+    "name": "Harrison Kennedy",
+    "expectedPath": "public/images/musicians/harrison-kennedy.png"
+  },
+  {
+    "id": "johnny-laws",
+    "name": "Johnny Laws",
+    "expectedPath": "public/images/musicians/johnny-laws.png"
+  },
+  {
+    "id": "professor-eddie-lusk",
+    "name": "Professor Eddie Lusk",
+    "expectedPath": "public/images/musicians/professor-eddie-lusk.png"
+  },
+  {
+    "id": "johnnie-marshall",
+    "name": "Johnnie Marshall",
+    "expectedPath": "public/images/musicians/johnnie-marshall.png"
+  },
+  {
+    "id": "clara-mcdaniel",
+    "name": "Clara McDaniel",
+    "expectedPath": "public/images/musicians/clara-mcdaniel.png"
+  },
+  {
+    "id": "jay-owens",
+    "name": "Jay Owens",
+    "expectedPath": "public/images/musicians/jay-owens.png"
+  },
+  {
+    "id": "sista-monica-parker",
+    "name": "Sista Monica Parker",
+    "expectedPath": "public/images/musicians/sista-monica-parker.png"
+  },
+  {
+    "id": "neal-pattman",
+    "name": "Neal Pattman",
+    "expectedPath": "public/images/musicians/neal-pattman.png"
+  },
+  {
+    "id": "lonnie-pitchford",
+    "name": "Lonnie Pitchford",
+    "expectedPath": "public/images/musicians/lonnie-pitchford.png"
+  },
+  {
+    "id": "henry-qualls",
+    "name": "Henry Qualls",
+    "expectedPath": "public/images/musicians/henry-qualls.png"
+  },
+  {
+    "id": "andy-rodgers",
+    "name": "Andy Rodgers",
+    "expectedPath": "public/images/musicians/andy-rodgers.png"
+  },
+  {
+    "id": "isaac-scott",
+    "name": "Isaac Scott",
+    "expectedPath": "public/images/musicians/isaac-scott.png"
+  },
+  {
+    "id": "lonnie-shields",
+    "name": "Lonnie Shields",
+    "expectedPath": "public/images/musicians/lonnie-shields.png"
+  },
+  {
+    "id": "eddie-taylor-jr",
+    "name": "Eddie Taylor Jr.",
+    "expectedPath": "public/images/musicians/eddie-taylor-jr.png"
+  },
+  {
+    "id": "otis-taylor",
+    "name": "Otis Taylor",
+    "expectedPath": "public/images/musicians/otis-taylor.png"
+  },
+  {
+    "id": "lil-dave-thompson",
+    "name": "Lil' Dave Thompson",
+    "expectedPath": "public/images/musicians/lil-dave-thompson.png"
+  },
+  {
+    "id": "pyeng-threadgill",
+    "name": "Pyeng Threadgill",
+    "expectedPath": "public/images/musicians/pyeng-threadgill.png"
+  },
+  {
+    "id": "mike-wheeler",
+    "name": "Mike Wheeler",
+    "expectedPath": "public/images/musicians/mike-wheeler.png"
+  },
+  {
+    "id": "albert-white",
+    "name": "Albert White",
+    "expectedPath": "public/images/musicians/albert-white.png"
+  },
+  {
+    "id": "big-jack-johnson",
+    "name": "Big Jack Johnson",
+    "expectedPath": "public/images/musicians/big-jack-johnson.png"
+  },
+  {
+    "id": "booba-barnes",
+    "name": "Booba Barnes",
+    "expectedPath": "public/images/musicians/booba-barnes.png"
+  },
+  {
+    "id": "james-super-chikan-johnson",
+    "name": "James \"Super Chikan\" Johnson",
+    "expectedPath": "public/images/musicians/james-super-chikan-johnson.png"
+  }
+]
