@@ -5,7 +5,7 @@ import type { MapViewState } from '@deck.gl/core';
 import Map from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Musician } from '../types';
-import { getStyleColor, getStyleHex, STYLE_COLORS } from '../utils/colors';
+import { getStyleColor, getStyleHex, STYLE_COLORS, CANONICAL_STYLES } from '../utils/colors';
 
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
 
@@ -36,6 +36,8 @@ interface MapViewProps {
   musicians: Musician[];
   onSelect: (musician: Musician) => void;
   selectedId: string | null;
+  styleFilter: string | null;
+  onStyleFilterChange: (style: string | null) => void;
 }
 
 function MusicianSidebar({
@@ -44,20 +46,16 @@ function MusicianSidebar({
   onHover,
   selectedId,
   hoveredId,
+  styleFilter,
 }: {
   musicians: Musician[];
   onSelect: (musician: Musician) => void;
   onHover: (id: string | null) => void;
   selectedId: string | null;
   hoveredId: string | null;
+  styleFilter: string | null;
 }) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [styleFilter, setStyleFilter] = useState<string>('all');
-
-  const allStyles = useMemo(() => {
-    const styles = new Set(musicians.map((m) => m.bluesStyle));
-    return Array.from(styles).sort();
-  }, [musicians]);
 
   const filteredMusicians = useMemo(() => {
     const filtered = musicians.filter((m) => {
@@ -65,7 +63,7 @@ function MusicianSidebar({
         !searchQuery ||
         m.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         m.birthPlace.toLowerCase().includes(searchQuery.toLowerCase());
-      const matchesStyle = styleFilter === 'all' || m.bluesStyle === styleFilter;
+      const matchesStyle = !styleFilter || m.bluesStyle === styleFilter;
       return matchesSearch && matchesStyle;
     });
 
@@ -102,23 +100,6 @@ function MusicianSidebar({
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full px-4 py-2.5 text-sm bg-bg rounded-lg text-ink placeholder-ink3 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
           />
-        </div>
-
-        {/* Style Filter */}
-        <div>
-          <label className="text-xs text-ink3 uppercase tracking-wide mb-2 block font-semibold">Filter by Style</label>
-          <select
-            value={styleFilter}
-            onChange={(e) => setStyleFilter(e.target.value)}
-            className="w-full px-4 py-2.5 text-sm bg-bg rounded-lg text-ink focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all cursor-pointer"
-          >
-            <option value="all">All Styles</option>
-            {allStyles.map((style) => (
-              <option key={style} value={style}>
-                {style}
-              </option>
-            ))}
-          </select>
         </div>
       </div>
 
@@ -222,13 +203,17 @@ function MusicianSidebar({
   );
 }
 
-export default function MapView({ musicians, onSelect, selectedId }: MapViewProps) {
-  const completeMusicians = useMemo(() => musicians.filter((m) =>
-    m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
-  ), [musicians]);
+export default function MapView({ musicians, onSelect, selectedId, styleFilter, onStyleFilterChange }: MapViewProps) {
+  const completeMusicians = useMemo(() => {
+    const valid = musicians.filter((m) =>
+      m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
+    );
+    return styleFilter ? valid.filter((m) => m.bluesStyle === styleFilter) : valid;
+  }, [musicians, styleFilter]);
 
   const [hovered, setHovered] = useState<string | null>(null);
   const [listHovered, setListHovered] = useState<string | null>(null);
+  const [legendOpen, setLegendOpen] = useState(true);
   const [viewState, setViewState] = useState<MapViewState>(INITIAL_VIEW_STATE);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -362,7 +347,54 @@ export default function MapView({ musicians, onSelect, selectedId }: MapViewProp
           onHover={setListHovered}
           selectedId={selectedId}
           hoveredId={listHovered}
+          styleFilter={styleFilter}
+          onStyleFilterChange={onStyleFilterChange}
         />
+      </div>
+
+      {/* Blues Style Legend — bottom-left, right of sidebar on sm+ */}
+      <div className="hidden sm:flex absolute bottom-5 left-83 flex-col z-20">
+        <button
+          onClick={() => setLegendOpen((o) => !o)}
+          className="flex items-center gap-2 px-3 py-2 bg-bg/90 border border-[#2a1e0e] rounded-lg text-[0.62rem] text-accent tracking-widest uppercase hover:border-accent/50 transition-colors"
+        >
+          <span className="flex-1 text-left">Blues Style</span>
+          {styleFilter && <span className="text-[0.6rem] text-ink3 normal-case tracking-normal truncate max-w-20">{styleFilter}</span>}
+          <span className="text-[0.65rem] text-ink3">{legendOpen ? '▲' : '▼'}</span>
+        </button>
+        {legendOpen && (
+          <div className="mt-1 bg-bg/90 border border-[#2a1e0e] rounded-lg py-2 flex flex-col">
+            {CANONICAL_STYLES.filter((style) =>
+              musicians.some((m) => m.bluesStyle === style)
+            ).map((style) => {
+              const [r, g, b] = STYLE_COLORS[style] ?? [150, 150, 150];
+              const isFiltered = styleFilter === style;
+              return (
+                <div
+                  key={style}
+                  className="flex items-center gap-2 px-3 py-1 cursor-pointer transition-colors"
+                  style={{
+                    background: isFiltered ? `rgba(${r},${g},${b},0.15)` : undefined,
+                    color: isFiltered ? `rgb(${r},${g},${b})` : 'rgba(255,255,255,0.65)',
+                  }}
+                  onClick={() => onStyleFilterChange(isFiltered ? null : style)}
+                >
+                  <span
+                    className="w-2.5 h-2.5 rounded-full shrink-0 transition-transform"
+                    style={{
+                      background: `rgb(${r},${g},${b})`,
+                      border: isFiltered ? `1.5px solid rgb(${r},${g},${b})` : '1px solid rgba(255,255,255,0.1)',
+                      transform: isFiltered ? 'scale(1.3)' : 'scale(1)',
+                      boxShadow: isFiltered ? `0 0 6px rgba(${r},${g},${b},0.6)` : 'none',
+                    }}
+                  />
+                  <span className="text-[0.72rem] flex-1">{style}</span>
+                  {isFiltered && <span className="text-[0.6rem] opacity-60">✕</span>}
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
 
       {/* Map */}

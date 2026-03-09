@@ -14,7 +14,8 @@
     "dev:server": "concurrently \"npm run dev\" \"npm run server\"",
     "etl": "node etl-claude-enrich.js",
     "etl:all": "node etl-claude-enrich.js --all",
-    "etl:musician": "node etl-claude-enrich.js --musician"
+    "etl:musician": "node etl-claude-enrich.js --musician",
+    "enrich": "node enrich-musicians-v3.js"
   },
   "dependencies": {
     "@deck.gl/geo-layers": "^9.2.11",

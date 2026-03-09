@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import NavBar from './components/NavBar';
 import InfluenceView from './components/InfluenceView';
 import MapView from './components/MapView';
@@ -13,14 +13,30 @@ const EDIT_MODE_ENABLED = import.meta.env.VITE_ENABLE_EDIT_MODE === 'true';
 export default function App() {
   const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown as Musician[]);
   const [view, setView] = useState<'influence' | 'map'>('influence');
-  const [selected, setSelected] = useState<Musician | null>(null);
+
+  const initialMusician = (() => {
+    const id = window.location.pathname.slice(1);
+    return id ? (musiciansData as unknown as Musician[]).find((m) => m.id === id) ?? null : null;
+  })();
+  const [selected, setSelected] = useState<Musician | null>(initialMusician);
   const [editMode, setEditMode] = useState(false);
-  const [showPlayer, setShowPlayer] = useState(false);
+  const [showPlayer, setShowPlayer] = useState(!!initialMusician?.youtubeLink);
   const [manualVideoUrl, setManualVideoUrl] = useState<string | null>(null);
   // Tracks whose video is in the player — independent of the info panel (persists when panel closes)
-  const [videoMusician, setVideoMusician] = useState<Musician | null>(null);
+  const [videoMusician, setVideoMusician] = useState<Musician | null>(initialMusician ?? null);
   const [editing, setEditing] = useState<Musician | null>(null);
   const [isCreating, setIsCreating] = useState(false);
+  const [styleFilter, setStyleFilter] = useState<string | null>(null);
+
+  // Sync URL → selection on browser back/forward
+  useEffect(() => {
+    const onPop = () => {
+      const id = window.location.pathname.slice(1);
+      setSelected(id ? (musicians.find((m) => m.id === id) ?? null) : null);
+    };
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, [musicians]);
 
   const handleSelect = useCallback((musician: Musician) => {
     if (editMode) {
@@ -28,6 +44,7 @@ export default function App() {
     } else {
       setSelected(musician);
       setManualVideoUrl(null);
+      window.history.pushState(null, '', `/${musician.id}`);
       if (musician.youtubeLink) {
         setVideoMusician(musician);
         setShowPlayer(true);
@@ -35,7 +52,15 @@ export default function App() {
     }
   }, [editMode]);
 
-  const handleClose = useCallback(() => setSelected(null), []);
+  const handleClose = useCallback(() => {
+    setSelected(null);
+    window.history.pushState(null, '', '/');
+  }, []);
+
+  const handleRandom = useCallback(() => {
+    const pick = musicians[Math.floor(Math.random() * musicians.length)];
+    handleSelect(pick);
+  }, [musicians, handleSelect]);
 
   const handleEdit = useCallback(() => {
     setEditing(selected);
@@ -80,13 +105,14 @@ export default function App() {
         onEditModeChange={setEditMode}
         onCreateNew={handleCreateNew}
         editModeEnabled={EDIT_MODE_ENABLED}
+        onRandom={handleRandom}
       />
 
       <main className="relative flex-1 mt-14 overflow-hidden">
         {view === 'influence' ? (
-          <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} />
+          <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} />
         ) : (
-          <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} />
+          <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} />
         )}
       </main>
 

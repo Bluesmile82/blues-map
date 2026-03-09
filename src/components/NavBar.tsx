@@ -5,15 +5,16 @@ interface NavBarProps {
   onEditModeChange: (editMode: boolean) => void;
   onCreateNew: () => void;
   editModeEnabled: boolean;
+  onRandom: () => void;
 }
 
-export default function NavBar({ view, onViewChange, editMode, onEditModeChange, onCreateNew, editModeEnabled }: NavBarProps) {
+export default function NavBar({ view, onViewChange, editMode, onEditModeChange, onCreateNew, editModeEnabled, onRandom }: NavBarProps) {
   return (
     <header className="fixed top-0 left-0 right-0 h-14 z-[100] flex items-center gap-2 sm:gap-4 px-3 sm:px-6 bg-[#0a0805]/98 backdrop-blur-lg border-b border-[#2a1e0e]">
       {/* Brand */}
       <div className="flex items-baseline gap-2 shrink-0">
         <span className="text-accent text-xl">♬</span>
-        <span className="hidden sm:block text-ink text-base font-bold tracking-wide">Blues Genealogy</span>
+        <span className="hidden sm:block text-ink text-base font-bold tracking-wide">Blues Musicians map</span>
       </div>
 
       {/* View tabs */}
@@ -39,6 +40,14 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
       </nav>
 
       <div className="ml-auto flex items-center gap-2 sm:gap-3">
+        <button
+          onClick={onRandom}
+          className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-[0.8rem] font-medium tracking-wide border border-border text-ink3 hover:bg-[#1a1208] hover:border-[#4a3a25] hover:text-ink transition-all duration-200"
+          title="Random musician"
+        >
+          <span className="text-[0.85rem]">⚄</span>
+          <span className="hidden sm:inline">Random</span>
+        </button>
         {editModeEnabled && editMode && (
           <button
             onClick={onCreateNew}
