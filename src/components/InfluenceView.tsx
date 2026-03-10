@@ -23,6 +23,10 @@ import {
 const NODE_RADIUS = 32; // Base radius for musician nodes, scaled by zoom level in the view state
 const ICON_SIZE = 60; // Size for the photo icons
 
+// When circles exceed this screen size (px), expand X only so nodes don't overlap
+const EXPAND_PX_THRESHOLD = 30;
+const EXPAND_ZOOM_THRESHOLD = Math.log2(EXPAND_PX_THRESHOLD / NODE_RADIUS); // ≈ 1.322
+
 type DeckVS = { target: [number, number, number]; zoom: number; minZoom: number; maxZoom: number };
 
 export default function InfluenceView({
@@ -89,13 +93,25 @@ export default function InfluenceView({
   // View state
   const [deckVS, setDeckVS] = useState<DeckVS | null>(null);
 
-  // Block browser pinch-to-zoom
+  // Track cursor X in canvas space (center = 0) for stable cursor-centered zoom
+  const cursorScreenXRef = useRef(0);
+
+
+  // Block browser pinch-to-zoom; also track cursor position
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
-    const handler = (e: WheelEvent) => { if (e.ctrlKey) e.preventDefault(); };
-    el.addEventListener('wheel', handler, { passive: false });
-    return () => el.removeEventListener('wheel', handler);
+    const onWheel = (e: WheelEvent) => { if (e.ctrlKey) e.preventDefault(); };
+    const onMouseMove = (e: MouseEvent) => {
+      const rect = el.getBoundingClientRect();
+      cursorScreenXRef.current = e.clientX - rect.left - rect.width / 2;
+    };
+    el.addEventListener('wheel', onWheel, { passive: false });
+    el.addEventListener('mousemove', onMouseMove);
+    return () => {
+      el.removeEventListener('wheel', onWheel);
+      el.removeEventListener('mousemove', onMouseMove);
+    };
   }, []);
 
   useEffect(() => {
@@ -153,9 +169,13 @@ export default function InfluenceView({
         .filter(Boolean)
     ) as { path: Position2D[]; targetId: string; sourceId: string }[];
 
+    const seenPlayedWithPairs = new Set<string>();
     const playedWithEdges = displayMusicians.flatMap((m) =>
       m.playedWith
         .map((srcId) => {
+          const pairKey = [m.id, srcId].sort().join('|');
+          if (seenPlayedWithPairs.has(pairKey)) return null;
+          seenPlayedWithPairs.add(pairKey);
           const from = positions[srcId];
           const to = positions[m.id];
           if (!from || !to) return null;
@@ -195,6 +215,19 @@ export default function InfluenceView({
       ? new Set(displayMusicians.filter((m) => m.bluesStyle === hoveredStyle).map((m) => m.id))
       : null;
 
+  const currentZoom = deckVS?.zoom ?? 0;
+
+  // Horizontal expansion factor: past the zoom where nodes hit EXPAND_PX_THRESHOLD,
+  // scale X positions so nodes spread apart instead of overlapping.
+  const xExpand = Math.max(1, Math.pow(2, Math.max(0, currentZoom - EXPAND_ZOOM_THRESHOLD)));
+
+  // Shrink world-space radius so circles stay at most EXPAND_PX_THRESHOLD px on screen.
+  // Below the threshold zoom they grow naturally; above it they shrink to remain constant.
+  const overlapFactor = Math.min(1, EXPAND_PX_THRESHOLD / (NODE_RADIUS * Math.pow(2, currentZoom)));
+  const cappedRadius = NODE_RADIUS * overlapFactor;
+  const cappedIconSize = ICON_SIZE * overlapFactor;
+  const cappedTextSize = 14 * overlapFactor;
+
   // Handle picking
   const onHover = useCallback((info: PickingInfo) => {
     const m = info.object as { musician: Musician } | undefined;
@@ -211,9 +244,11 @@ export default function InfluenceView({
 
     const { w, h } = worldRef.current;
     const halfH = h / 2;
+    const xe = xExpand;
+    const sx = (x: number) => x * xe;
 
     const tickLines = decadeTicks.map(({ year, y }) => ({
-      path: [[-w / 2, y], [w / 2, y]] as [Position2D, Position2D],
+      path: [[-w / 2 * xe, y], [w / 2 * xe, y]] as [Position2D, Position2D],
       year,
     }));
 
@@ -221,7 +256,7 @@ export default function InfluenceView({
       .map((m) => {
         const pos = positions[m.id];
         if (!pos) return null;
-        const x = pos[0];
+        const x = sx(pos[0]);
         const yBirth = yearToWorldY(getYear(m.birthDate), halfH, h, 100);
         const deathYear = m.deathDate ? getYear(m.deathDate) : 2025;
         const yDeath = yearToWorldY(deathYear, halfH, h, 100);
@@ -250,7 +285,7 @@ export default function InfluenceView({
       new PathLayer({
         id: 'zone-borders',
         data: styleZones,
-        getPath: (d) => [[d.x, -h / 2 + 100], [d.x, h / 2 - 100]] as Position2D[],
+        getPath: (d) => [[sx(d.x), -h / 2 + 100], [sx(d.x), h / 2 - 100]] as Position2D[],
         getColor: (d): [number, number, number, number] => {
           const [r, g, b] = getStyleColor(d.style) as [number, number, number];
           return [r, g, b, 40];
@@ -258,6 +293,7 @@ export default function InfluenceView({
         getWidth: 1,
         widthUnits: 'pixels' as const,
         pickable: false,
+        updateTriggers: { getPath: [xExpand] },
       }),
       // Decade grid lines
       new PathLayer({
@@ -293,7 +329,7 @@ export default function InfluenceView({
             const [r, g, b] = getStyleColor(d.musician.bluesStyle);
             return [r, g, b, 200];
           },
-          getWidth: 2.5,
+          getWidth: 10,
           widthUnits: 'pixels' as const,
           pickable: false,
         })]
@@ -304,21 +340,22 @@ export default function InfluenceView({
         data: effectiveRelatedIds
           ? edges.filter((e) => !effectiveRelatedIds.has(e.sourceId) || !effectiveRelatedIds.has(e.targetId))
           : edges,
-        getPath: (d) => d.path,
+        getPath: (d) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
         getColor: (d): [number, number, number, number] => {
           const m = displayMusicians.find((x) => x.id === d.targetId);
-          return [...getStyleColor(m?.bluesStyle ?? ''), effectiveRelatedIds ? 18 : 55] as [number, number, number, number];
+          return [...getStyleColor(m?.bluesStyle ?? ''), effectiveRelatedIds ? 1 : 10] as [number, number, number, number];
         },
         getWidth: 1,
         widthUnits: 'pixels' as const,
         pickable: false,
+        updateTriggers: { getPath: [xExpand] },
       }),
       // Influence edges (highlighted)
       ...(effectiveRelatedIds
         ? [new PathLayer({
           id: 'edges-highlight',
           data: edges.filter((e) => effectiveRelatedIds.has(e.sourceId) && effectiveRelatedIds.has(e.targetId)),
-          getPath: (d) => d.path,
+          getPath: (d) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
           getColor: (d): [number, number, number, number] => {
             const m = displayMusicians.find((x) => x.id === d.targetId);
             return [...getStyleColor(m?.bluesStyle ?? ''), 210] as [number, number, number, number];
@@ -326,6 +363,7 @@ export default function InfluenceView({
           getWidth: 2,
           widthUnits: 'pixels' as const,
           pickable: false,
+          updateTriggers: { getPath: [xExpand] },
         })]
         : []),
       // Played with edges (dim)
@@ -334,30 +372,36 @@ export default function InfluenceView({
         data: effectiveRelatedIds
           ? playedWithEdges.filter((e) => !effectiveRelatedIds.has(e.sourceId) || !effectiveRelatedIds.has(e.targetId))
           : playedWithEdges,
-        getPath: (d) => d.path,
-        getColor: (): [number, number, number, number] => [255, 255, 255, effectiveRelatedIds ? 15 : 40],
+        getPath: (d) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
+        getColor: (): [number, number, number, number] => [255, 255, 255, effectiveRelatedIds ? 15 : 10],
         getWidth: 1,
         widthUnits: 'pixels' as const,
         pickable: false,
+        updateTriggers: { getPath: [xExpand] },
       }),
       // Played with edges (highlighted)
       ...(effectiveRelatedIds
         ? [new PathLayer({
           id: 'played-with-highlight',
-          data: playedWithEdges.filter((e) => effectiveRelatedIds.has(e.sourceId) && effectiveRelatedIds.has(e.targetId)),
-          getPath: (d) => d.path,
+          data: playedWithEdges.filter((e) =>
+            focusId
+              ? e.sourceId === focusId || e.targetId === focusId
+              : effectiveRelatedIds.has(e.sourceId) && effectiveRelatedIds.has(e.targetId)
+          ),
+          getPath: (d) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
           getColor: (): [number, number, number, number] => [255, 255, 255, 200],
           getWidth: 2,
           widthUnits: 'pixels' as const,
           pickable: false,
+          updateTriggers: { getPath: [xExpand] },
         })]
         : []),
       // Musician circles (filled background)
       new ScatterplotLayer({
         id: 'musician-circles',
         data: musicianData,
-        getPosition: (d) => d.position,
-        getRadius: (d) => d.musician.id === hovered ? NODE_RADIUS * 2 : NODE_RADIUS,
+        getPosition: (d) => [sx(d.position[0]), d.position[1]] as Position2D,
+        getRadius: (d) => d.musician.id === hovered ? cappedRadius * 2 : cappedRadius,
         getFillColor: (d): [number, number, number, number] => {
           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
           const dimmed = effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
@@ -384,7 +428,8 @@ export default function InfluenceView({
         onHover,
         onClick,
         updateTriggers: {
-          getRadius: [hovered],
+          getPosition: [xExpand],
+          getRadius: [hovered, cappedRadius],
           getFillColor: [effectiveRelatedIds, selectedId, hovered],
           getLineColor: [selectedId, hovered],
         },
@@ -399,14 +444,14 @@ export default function InfluenceView({
       new IconLayer({
         id: 'musician-photos',
         data: musicianData,
-        getPosition: (d) => d.position,
+        getPosition: (d) => [sx(d.position[0]), d.position[1]] as Position2D,
         getIcon: (d) => ({
           url: d.musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(d.musician.name)}&background=251a0d&color=c8872a&size=80`,
           width: 128,
           height: 128,
           mask: false,
         }),
-        getSize: (d) => d.musician.id === hovered ? ICON_SIZE * 2 : ICON_SIZE,
+        getSize: (d) => d.musician.id === hovered ? cappedIconSize * 2 : cappedIconSize,
         sizeUnits: 'common' as const,
         pickable: true,
         onHover,
@@ -417,7 +462,8 @@ export default function InfluenceView({
           return [255, 255, 255, 255];
         },
         updateTriggers: {
-          getSize: [hovered],
+          getPosition: [xExpand],
+          getSize: [hovered, cappedIconSize],
           getColor: [effectiveRelatedIds],
         },
         transitions: {
@@ -432,11 +478,11 @@ export default function InfluenceView({
         id: 'musician-labels',
         data: musicianData.filter((d) => !effectiveRelatedIds || effectiveRelatedIds.has(d.musician.id)),
         getPosition: (d) => {
-          const radius = d.musician.id === hovered ? NODE_RADIUS * 2 : NODE_RADIUS;
-          return [d.position[0], d.position[1] + radius + 12];
+          const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
+          return [sx(d.position[0]), d.position[1] + radius + 12] as Position2D;
         },
         getText: (d) => d.musician.name,
-        getSize: 14,
+        getSize: cappedTextSize,
         getColor: (d): [number, number, number, number] => {
           const isSelected = d.musician.id === selectedId;
           const isHovered = d.musician.id === hovered;
@@ -453,7 +499,8 @@ export default function InfluenceView({
         sizeUnits: 'common' as const,
         pickable: false,
         updateTriggers: {
-          getPosition: [hovered],
+          getPosition: [hovered, xExpand],
+          getSize: [cappedTextSize],
           getColor: [selectedId, hovered, effectiveRelatedIds],
           data: [effectiveRelatedIds],
         },
@@ -462,7 +509,7 @@ export default function InfluenceView({
       new TextLayer({
         id: 'zone-labels',
         data: styleZones,
-        getPosition: (d) => [d.x + d.width / 2, h / 2 - 80],
+        getPosition: (d) => [sx(d.x + d.width / 2), h / 2 - 80] as Position2D,
         getText: (d) => groupBy === 'style' ? d.style.replace(' Blues', '') : d.style,
         getSize: 11,
         getColor: (d): [number, number, number, number] => {
@@ -475,9 +522,10 @@ export default function InfluenceView({
         fontWeight: '700',
         sizeUnits: 'common' as const,
         pickable: false,
+        updateTriggers: { getPosition: [xExpand] },
       }),
     ];
-  }, [dims.width, edges, playedWithEdges, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, onHover, onClick]);
+  }, [dims.width, edges, playedWithEdges, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick]);
 
   // Search
   const searchQuery = search.trim().toLowerCase();
@@ -488,7 +536,9 @@ export default function InfluenceView({
   const goToMusician = useCallback((m: Musician) => {
     const pos = positions[m.id];
     if (!pos || !deckVS) return;
-    setDeckVS({ ...deckVS, target: [pos[0], pos[1], 0], zoom: Math.max(deckVS.zoom, 0.5) });
+    const targetZoom = Math.max(deckVS.zoom, 0.5);
+    const xe = Math.max(1, Math.pow(2, Math.max(0, targetZoom - EXPAND_ZOOM_THRESHOLD)));
+    setDeckVS({ ...deckVS, target: [pos[0] * xe, pos[1], 0], zoom: targetZoom });
     onSelect(m);
     setSearch('');
   }, [positions, deckVS, onSelect]);
@@ -511,15 +561,37 @@ export default function InfluenceView({
     const ty = v.target?.[1] ?? 0;
     const { width, height } = dimsRef.current;
     const s = 2 ** z;
-
-    // Clamp pan to world bounds
     const { w, h } = worldRef.current!;
-    const maxTx = Math.max(0, w / 2 - width / (2 * s));
-    const maxTy = Math.max(0, h / 2 - height / (2 * s));
-    const ctx = Math.max(-maxTx, Math.min(maxTx, tx));
-    const cty = Math.max(-maxTy, Math.min(maxTy, ty));
 
-    setDeckVS((prev) => prev ? { ...prev, target: [ctx, cty, 0], zoom: z } : null);
+    setDeckVS((prev) => {
+      if (!prev) return null;
+
+      const oldS = 2 ** prev.zoom;
+      const xExpandOld = Math.max(1, Math.pow(2, Math.max(0, prev.zoom - EXPAND_ZOOM_THRESHOLD)));
+      const xExpandNew = Math.max(1, Math.pow(2, Math.max(0, z - EXPAND_ZOOM_THRESHOLD)));
+
+      let compensatedTx: number;
+      if (s !== oldS && xExpandNew !== xExpandOld) {
+        // xExpand changes at this zoom step: recompute from our own prev state so the
+        // world point under the cursor stays fixed despite the coordinate rescaling.
+        //   cursorVisualX = visual world X under cursor at prev zoom
+        //   newTarget = cursorVisualX * (xExpandNew/xExpandOld) - cursorX / s
+        const cursorX = cursorScreenXRef.current;
+        const cursorVisualX = prev.target[0] + cursorX / oldS;
+        compensatedTx = cursorVisualX * (xExpandNew / xExpandOld) - cursorX / s;
+      } else {
+        // No xExpand change (low/mid zoom or pure pan): deck.gl already computed a correct
+        // cursor-centred target from the actual wheel-event position — use it directly.
+        compensatedTx = tx;
+      }
+
+      const maxTx = Math.max(0, w / 2 * xExpandNew - width / (2 * s));
+      const maxTy = Math.max(0, h / 2 - height / (2 * s));
+      const ctx = Math.max(-maxTx, Math.min(maxTx, compensatedTx));
+      const cty = Math.max(-maxTy, Math.min(maxTy, ty));
+
+      return { ...prev, target: [ctx, cty, 0], zoom: z };
+    });
   }, []);
 
   return (

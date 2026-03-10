@@ -1,10 +1,11 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import NavBar from './components/NavBar';
 import InfluenceView from './components/InfluenceView';
 import MapView from './components/MapView';
 import MusicianPanel from './components/MusicianPanel';
 import EditPanel from './components/EditPanel';
 import FloatingVideoPlayer from './components/FloatingVideoPlayer';
+import CreditsPage from './components/CreditsPage';
 import type { Musician } from './types';
 import musiciansData from './data/musicians.json';
 
@@ -27,6 +28,11 @@ export default function App() {
   const [editing, setEditing] = useState<Musician | null>(null);
   const [isCreating, setIsCreating] = useState(false);
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
+  const [showCredits, setShowCredits] = useState(false);
+
+  // Persist video player position/size across close-reopen cycles
+  const videoPlayerPosRef = useRef<{ x: number; y: number } | null>(null);
+  const videoPlayerWRef = useRef(320);
 
   // Sync URL → selection on browser back/forward
   useEffect(() => {
@@ -106,6 +112,7 @@ export default function App() {
         onCreateNew={handleCreateNew}
         editModeEnabled={EDIT_MODE_ENABLED}
         onRandom={handleRandom}
+        onCredits={() => setShowCredits(true)}
       />
 
       <main className="relative flex-1 mt-14 overflow-hidden">
@@ -137,7 +144,15 @@ export default function App() {
           manualVideoUrl={manualVideoUrl}
           panelOpen={!!selected}
           onClose={() => setShowPlayer(false)}
+          initialPos={videoPlayerPosRef.current}
+          initialW={videoPlayerWRef.current}
+          onPositionChange={(pos) => { videoPlayerPosRef.current = pos; }}
+          onSizeChange={(w) => { videoPlayerWRef.current = w; }}
         />
+      )}
+
+      {showCredits && (
+        <CreditsPage onClose={() => setShowCredits(false)} />
       )}
 
       {EDIT_MODE_ENABLED && editing && (

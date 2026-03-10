@@ -186,7 +186,10 @@
     "secondaryStyles": [
       "Country Blues"
     ],
-    "playedWith": []
+    "playedWith": [
+      "tampa-red",
+      "bessie-smith"
+    ]
   },
   {
     "id": "bessie-smith",
@@ -309,7 +312,12 @@
       "alvin-youngblood-hart"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "willie-brown",
+      "robert-johnson",
+      "charley-patton",
+      "howlin-wolf"
+    ]
   },
   {
     "id": "skip-james",
@@ -365,7 +373,11 @@
       "hip-linkchain"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "son-house",
+      "robert-johnson",
+      "johnny-shines"
+    ]
   },
   {
     "id": "robert-johnson",
@@ -422,7 +434,15 @@
       "keb-mo"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "son-house",
+      "willie-brown",
+      "charley-patton",
+      "johnny-shines",
+      "robert-lockwood-jr",
+      "elmore-james",
+      "howlin-wolf"
+    ]
   },
   {
     "id": "sonny-boy-williamson",
@@ -490,7 +510,13 @@
     "secondaryStyles": [
       "Delta Blues"
     ],
-    "playedWith": []
+    "playedWith": [
+      "elmore-james",
+      "robert-lockwood-jr",
+      "robert-johnson",
+      "howlin-wolf",
+      "big-joe-williams"
+    ]
   },
   {
     "id": "howlin-wolf",
@@ -618,7 +644,7 @@
     ],
     "instrument": "Guitar, Vocals, Harmonica",
     "bluesStyle": "Chicago Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=Q_opdXliJlU",
+    "youtubeLink": "https://www.youtube.com/watch?v=IEUrVqImq6k",
     "albums": [
       {
         "name": "At Newport 1960 (1960)",
@@ -659,7 +685,18 @@
     "secondaryStyles": [
       "Mississippi Blues"
     ],
-    "playedWith": []
+    "playedWith": [
+      "jimmy-rogers",
+      "little-walter",
+      "willie-dixon",
+      "otis-spann",
+      "buddy-guy",
+      "howlin-wolf",
+      "john-lee-hooker",
+      "bb-king",
+      "eric-clapton",
+      "albert-collins"
+    ]
   },
   {
     "id": "john-lee-hooker",
@@ -731,7 +768,11 @@
     "secondaryStyles": [
       "Delta Blues"
     ],
-    "playedWith": []
+    "playedWith": [
+      "eddie-taylor",
+      "luther-allison",
+      "mike-bloomfield"
+    ]
   },
   {
     "id": "little-walter",
@@ -793,7 +834,14 @@
       "jimmy-mccracklin"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "muddy-waters",
+      "jimmy-rogers",
+      "sonny-boy-williamson",
+      "memphis-minnie",
+      "johnny-shines",
+      "otis-rush"
+    ]
   },
   {
     "id": "bb-king",
@@ -1105,7 +1153,13 @@
     "secondaryStyles": [
       "Electric Blues"
     ],
-    "playedWith": []
+    "playedWith": [
+      "bb-king",
+      "albert-king",
+      "buddy-guy",
+      "john-lee-hooker",
+      "albert-collins"
+    ]
   },
   {
     "id": "lightnin-hopkins",
@@ -1177,7 +1231,14 @@
     "secondaryStyles": [
       "Country Blues"
     ],
-    "playedWith": []
+    "playedWith": [
+      "blind-lemon-jefferson",
+      "alger-texas-alexander",
+      "brownie-mcghee",
+      "big-joe-williams",
+      "sonny-terry",
+      "albert-collins"
+    ]
   },
   {
     "id": "jb-lenoir",
@@ -1241,7 +1302,14 @@
     "secondaryStyles": [
       "Chicago Blues"
     ],
-    "playedWith": []
+    "playedWith": [
+      "sonny-boy-williamson",
+      "elmore-james",
+      "big-bill-broonzy",
+      "memphis-minnie",
+      "big-maceo-merriweather",
+      "muddy-waters"
+    ]
   },
   {
     "id": "junior-kimbrough",
@@ -1590,7 +1658,9 @@
       "buddy-guy",
       "eric-clapton",
       "bobby-bland",
-      "peter-green"
+      "peter-green",
+      "muddy-waters",
+      "sonny-boy-williamson"
     ]
   },
   {
@@ -1644,7 +1714,11 @@
     "secondaryStyles": [
       "Country Blues"
     ],
-    "playedWith": []
+    "playedWith": [
+      "lightnin-hopkins",
+      "blind-lemon-jefferson",
+      "lowell-fulson"
+    ]
   },
   {
     "id": "alvin-youngblood-hart",
@@ -1833,7 +1907,12 @@
     ],
     "incomplete": false,
     "secondaryStyles": [],
-    "playedWith": []
+    "playedWith": [
+      "bb-king",
+      "buddy-guy",
+      "john-lee-hooker",
+      "muddy-waters"
+    ]
   },
   {
     "id": "lowell-fulson",
@@ -1890,7 +1969,13 @@
     "secondaryStyles": [
       "Electric Blues"
     ],
-    "playedWith": []
+    "playedWith": [
+      "alger-texas-alexander",
+      "ray-charles",
+      "jimmy-mccracklin",
+      "john-lee-hooker",
+      "jimmy-rogers"
+    ]
   },
   {
     "id": "charles-brown",
@@ -2454,7 +2539,10 @@
       "gus-cannon"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "meade-lux-lewis",
+      "t-bone-walker"
+    ]
   },
   {
     "id": "walter-wolfman-washington",
@@ -2624,7 +2712,11 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "sonny-boy-williamson",
+      "joe-willie-wilkins",
+      "tampa-red"
+    ]
   },
   {
     "id": "robert-lockwood-jr",
@@ -2705,7 +2797,11 @@
       "bb-king"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "sonny-boy-williamson",
+      "robert-johnson",
+      "johnny-shines"
+    ]
   },
   {
     "id": "johny-shines",
@@ -2865,7 +2961,16 @@
       "terry-garland"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "frank-stokes",
+      "furry-lewis",
+      "big-bill-broonzy",
+      "bb-king",
+      "peetie-wheatstraw",
+      "washboard-sam",
+      "memphis-slim",
+      "tampa-red"
+    ]
   },
   {
     "name": "R.L. Burnside",
@@ -3024,15 +3129,15 @@
     ],
     "instrument": "Voice",
     "bluesStyle": "Classic Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=qtFqyNlsHXU",
+    "youtubeLink": "https://www.youtube.com/watch?v=PkwnuSDALCQ",
     "albums": [
       {
         "name": "Female Blues Singers, Vol. 1: A/B (1924–1932) (Document Records, 1997)",
-        "youtubeLink": "https://www.youtube.com/watch?v=qtFqyNlsHXU"
+        "youtubeLink": "https://www.youtube.com/watch?v=PkwnuSDALCQ"
       }
     ],
     "description": "Ora Alexander (born c.  1896) was an American classic female blues singer.  She was a recording artist in the early 1930s, releasing eight sides, including the dirty blues tracks \"You've Got to Save That Thing\" and \"I Crave Your Lovin' Every Day\".",
-    "activeFrom": "1931",
+    "activeFrom": "1930",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
@@ -3406,7 +3511,9 @@
       "bumble-bee-slim"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "leroy-carr"
+    ]
   },
   {
     "id": "blind-blake",
@@ -3837,7 +3944,13 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "big-bill-broonzy",
+      "peetie-wheatstraw",
+      "memphis-minnie",
+      "scrapper-blackwell",
+      "leroy-carr"
+    ]
   },
   {
     "id": "leroy-carr",
@@ -3909,7 +4022,9 @@
       "eddie-boyd"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "scrapper-blackwell"
+    ]
   },
   {
     "id": "doctor-clayton",
@@ -4467,7 +4582,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "sonny-boy-williamson-i"
+    ]
   },
   {
     "id": "ethel-finnie",
@@ -4636,7 +4753,10 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "big-maceo-merriweather",
+      "memphis-slim"
+    ]
   },
   {
     "id": "boyd-gilmore",
@@ -4808,7 +4928,9 @@
       "lonesome-sundown"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "big-bill-broonzy"
+    ]
   },
   {
     "id": "shirley-griffith",
@@ -5103,7 +5225,13 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "sonny-terry",
+      "brownie-mcghee",
+      "skip-james",
+      "bukka-white",
+      "mance-lipscomb"
+    ]
   },
   {
     "id": "papa-charlie-jackson",
@@ -5433,7 +5561,13 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "josh-white",
+      "sonny-terry",
+      "brownie-mcghee",
+      "blind-lemon-jefferson",
+      "sonny-boy-williamson"
+    ]
   },
   {
     "id": "furry-lewis",
@@ -5627,7 +5761,10 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "lightnin-hopkins",
+      "big-joe-williams"
+    ]
   },
   {
     "id": "virginia-liston",
@@ -5886,7 +6023,11 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "memphis-minnie",
+      "papa-charlie-mccoy",
+      "robert-nighthawk"
+    ]
   },
   {
     "id": "papa-charlie-mccoy",
@@ -5934,7 +6075,11 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "memphis-minnie",
+      "kansas-joe-mccoy",
+      "robert-nighthawk"
+    ]
   },
   {
     "id": "mississippi-fred-mcdowell",
@@ -6216,7 +6361,12 @@
       "baby-boy-warren"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "big-bill-broonzy",
+      "sonny-boy-williamson-i",
+      "kansas-joe-mccoy",
+      "tampa-red"
+    ]
   },
   {
     "id": "mississippi-sheiks",
@@ -6348,7 +6498,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "otis-rush"
+    ]
   },
   {
     "id": "buddy-moss",
@@ -6443,7 +6595,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "sleepy-john-estes"
+    ]
   },
   {
     "id": "st-louis-jimmy-oden",
@@ -6803,7 +6957,12 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "big-joe-williams",
+      "david-honeyboy-edwards",
+      "henry-townsend",
+      "son-house"
+    ]
   },
   {
     "id": "clara-smith",
@@ -7002,7 +7161,12 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "lonnie-johnson",
+      "big-joe-williams",
+      "roosevelt-sykes",
+      "alberta-hunter"
+    ]
   },
   {
     "id": "roosevelt-sykes",
@@ -7068,7 +7232,10 @@
       "eddie-boyd"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "victoria-spivey",
+      "lonnie-johnson"
+    ]
   },
   {
     "id": "tampa-red",
@@ -7136,7 +7303,14 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "georgia-tom-dorsey",
+      "ma-rainey",
+      "sonny-boy-williamson",
+      "memphis-minnie",
+      "big-maceo-merriweather",
+      "big-bill-broonzy"
+    ]
   },
   {
     "id": "ramblin-thomas",
@@ -7822,7 +7996,14 @@
       "terry-garland"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "lead-belly",
+      "buddy-moss",
+      "leroy-carr",
+      "scrapper-blackwell",
+      "lucille-hegamin",
+      "victoria-spivey"
+    ]
   },
   {
     "id": "big-joe-williams",
@@ -7986,7 +8167,10 @@
       "gene-birdlegg-pittman"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "sleepy-john-estes",
+      "big-joe-williams"
+    ]
   },
   {
     "id": "woodrow-adams",
@@ -8096,7 +8280,14 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "howlin-wolf",
+      "freddie-king",
+      "jimmy-dawkins",
+      "magic-sam",
+      "otis-rush",
+      "james-cotton"
+    ]
   },
   {
     "id": "mose-allison",
@@ -8279,7 +8470,12 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "big-joe-williams",
+      "howlin-wolf",
+      "lightnin-hopkins",
+      "sonny-boy-williamson"
+    ]
   },
   {
     "id": "lou-ann-barton",
@@ -8360,7 +8556,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "lowell-fulson"
+    ]
   },
   {
     "id": "lefty-bates",
@@ -8813,7 +9011,17 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "muddy-waters",
+      "howlin-wolf",
+      "bb-king",
+      "buddy-guy",
+      "albert-king",
+      "albert-collins",
+      "john-mayall",
+      "james-cotton",
+      "big-joe-williams"
+    ]
   },
   {
     "id": "eddie-boyd",
@@ -8882,7 +9090,9 @@
       "muddy-waters",
       "sonny-boy-williamson",
       "john-mayall",
-      "peter-green"
+      "peter-green",
+      "jazz-gillum",
+      "tampa-red"
     ]
   },
   {
@@ -9091,7 +9301,18 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "mike-bloomfield",
+      "elvin-bishop",
+      "charlie-musselwhite",
+      "muddy-waters",
+      "howlin-wolf",
+      "little-walter",
+      "otis-rush",
+      "bb-king",
+      "albert-king",
+      "stevie-ray-vaughan"
+    ]
   },
   {
     "id": "carolina-slim",
@@ -9326,7 +9547,11 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "albert-collins",
+      "robert-cray",
+      "stevie-ray-vaughan"
+    ]
   },
   {
     "id": "james-cotton",
@@ -9401,7 +9626,23 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "howlin-wolf",
+      "muddy-waters",
+      "sonny-boy-williamson",
+      "freddie-king",
+      "otis-spann",
+      "little-walter",
+      "buddy-guy",
+      "jimmie-vaughan",
+      "matt-guitar-murphy",
+      "charlie-musselwhite",
+      "taj-mahal",
+      "joe-louis-walker",
+      "paul-butterfield",
+      "mike-bloomfield",
+      "johnny-winter"
+    ]
   },
   {
     "id": "pee-wee-crayton",
@@ -9681,7 +9922,12 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "magic-sam",
+      "otis-rush",
+      "luther-allison",
+      "albert-king"
+    ]
   },
   {
     "id": "floyd-dixon",
@@ -9841,7 +10087,18 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "muddy-waters",
+      "howlin-wolf",
+      "little-walter",
+      "buddy-guy",
+      "koko-taylor",
+      "otis-rush",
+      "memphis-slim",
+      "jimmy-rogers",
+      "big-walter-horton",
+      "sonny-boy-williamson"
+    ]
   },
   {
     "id": "champion-jack-dupree",
@@ -9885,7 +10142,8 @@
       "tampa-red",
       "alexis-korner",
       "john-mayall",
-      "eric-clapton"
+      "eric-clapton",
+      "albert-collins"
     ]
   },
   {
@@ -10887,7 +11145,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "mike-bloomfield"
+    ]
   },
   {
     "id": "james-harman",
@@ -10925,7 +11185,17 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "big-joe-turner",
+      "john-lee-hooker",
+      "freddie-king",
+      "muddy-waters",
+      "albert-king",
+      "bb-king",
+      "t-bone-walker",
+      "lowell-fulson",
+      "albert-collins"
+    ]
   },
   {
     "id": "harmonica-slim",
@@ -10963,7 +11233,14 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "percy-mayfield",
+      "bb-king",
+      "t-bone-walker",
+      "pee-wee-crayton",
+      "ray-charles",
+      "lowell-fulson"
+    ]
   },
   {
     "id": "wynonie-harris",
@@ -11072,7 +11349,11 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "magic-sam",
+      "luther-allison",
+      "willie-dixon"
+    ]
   },
   {
     "id": "little-hatch",
@@ -11183,7 +11464,11 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "jimmy-mccracklin",
+      "big-mama-thornton",
+      "johnny-fuller"
+    ]
   },
   {
     "id": "duke-henderson",
@@ -11444,7 +11729,10 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "melvin-taylor",
+      "taj-mahal"
+    ]
   },
   {
     "id": "earl-hooker",
@@ -11818,7 +12106,8 @@
       "ike-turner",
       "big-joe-turner",
       "eddie-taylor",
-      "willie-dixon"
+      "willie-dixon",
+      "tampa-red"
     ]
   },
   {
@@ -11924,7 +12213,8 @@
     "incomplete": false,
     "playedWith": [
       "bessie-smith",
-      "albert-collins"
+      "albert-collins",
+      "bb-king"
     ]
   },
   {
@@ -12368,7 +12658,10 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "mississippi-fred-mcdowell",
+      "son-house"
+    ]
   },
   {
     "id": "earl-king",
@@ -12698,7 +12991,13 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "slim-harpo",
+      "lightnin-slim",
+      "kenny-neal",
+      "lucky-peterson",
+      "jimmie-vaughan"
+    ]
   },
   {
     "id": "calvin-leavy",
@@ -13019,7 +13318,11 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "pinetop-perkins",
+      "little-walter",
+      "jimmy-dawkins"
+    ]
   },
   {
     "id": "little-joe-blue",
@@ -13268,7 +13571,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "howlin-wolf"
+    ]
   },
   {
     "id": "lonesome-sundown",
@@ -13402,7 +13707,10 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "muddy-waters",
+      "john-lee-hooker"
+    ]
   },
   {
     "id": "willie-love",
@@ -13468,7 +13776,12 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "sonny-boy-williamson",
+      "elmore-james",
+      "joe-willie-wilkins",
+      "eddie-shaw"
+    ]
   },
   {
     "id": "magic-sam",
@@ -13536,7 +13849,14 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "muddy-waters",
+      "little-walter",
+      "otis-rush",
+      "buddy-guy",
+      "willie-dixon",
+      "charlie-musselwhite"
+    ]
   },
   {
     "id": "magic-slim",
@@ -13603,7 +13923,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "magic-sam"
+    ]
   },
   {
     "id": "jj-malone",
@@ -13661,7 +13983,12 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "magic-sam",
+      "earl-hooker",
+      "bb-king",
+      "jesse-fuller"
+    ]
   },
   {
     "id": "john-mayall",
@@ -13722,7 +14049,14 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "albert-king",
+      "buddy-guy",
+      "eric-clapton",
+      "john-lee-hooker",
+      "otis-rush",
+      "peter-green"
+    ]
   },
   {
     "id": "pete-mayes",
@@ -13975,7 +14309,15 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "bb-king",
+      "charles-brown",
+      "t-bone-walker",
+      "big-joe-turner",
+      "big-mama-thornton",
+      "etta-james",
+      "lowell-fulson"
+    ]
   },
   {
     "id": "brownie-mcghee",
@@ -14050,7 +14392,14 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "sonny-terry",
+      "blind-boy-fuller",
+      "lightnin-hopkins",
+      "big-joe-williams",
+      "champion-jack-dupree",
+      "big-bill-broonzy"
+    ]
   },
   {
     "id": "memphis-slim",
@@ -14118,7 +14467,11 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "big-bill-broonzy",
+      "sonny-boy-williamson-i",
+      "jimmy-rogers"
+    ]
   },
   {
     "id": "big-maceo-merriweather",
@@ -14193,7 +14546,14 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "tampa-red",
+      "leroy-carr",
+      "roosevelt-sykes",
+      "meade-lux-lewis",
+      "albert-ammons",
+      "sleepy-john-estes"
+    ]
   },
   {
     "id": "roy-milton",
@@ -14396,7 +14756,11 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "jimmy-reed",
+      "koko-taylor",
+      "willie-dixon"
+    ]
   },
   {
     "id": "charlie-musselwhite",
@@ -14638,7 +15002,12 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "etta-james",
+      "big-mama-thornton",
+      "wynonie-harris",
+      "charles-brown"
+    ]
   },
   {
     "id": "junior-parker",
@@ -14708,7 +15077,13 @@
       "junior-wells"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "sonny-boy-williamson",
+      "howlin-wolf",
+      "bobby-blue-bland",
+      "bb-king",
+      "ike-turner"
+    ]
   },
   {
     "id": "odie-payne",
@@ -14834,7 +15209,14 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "muddy-waters",
+      "buddy-guy",
+      "bb-king",
+      "jimmy-rogers",
+      "robert-nighthawk",
+      "ike-turner"
+    ]
   },
   {
     "id": "rod-piazza",
@@ -14910,7 +15292,12 @@
       "little-hatch"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "sonny-boy-williamson-i",
+      "sonny-boy-williamson",
+      "floyd-jones",
+      "jimmy-rogers"
+    ]
   },
   {
     "id": "doug-quattlebaum",
@@ -15046,7 +15433,12 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "john-lee-hooker",
+      "bb-king",
+      "stevie-ray-vaughan",
+      "mississippi-fred-mcdowell"
+    ]
   },
   {
     "id": "jimmy-reed",
@@ -15371,7 +15763,15 @@
       "junior-watson"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "muddy-waters",
+      "little-walter",
+      "big-walter-horton",
+      "robert-lockwood-jr",
+      "snooky-pryor",
+      "howlin-wolf",
+      "lowell-fulson"
+    ]
   },
   {
     "id": "roomful-of-blues",
@@ -15510,7 +15910,12 @@
       "sean-costello"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "magic-sam",
+      "muddy-waters",
+      "buddy-guy",
+      "albert-king"
+    ]
   },
   {
     "id": "son-seals",
@@ -15711,7 +16116,14 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "robert-johnson",
+      "big-walter-horton",
+      "willie-dixon",
+      "robert-lockwood-jr",
+      "mississippi-fred-mcdowell",
+      "snooky-pryor"
+    ]
   },
   {
     "id": "frankie-lee-sims",
@@ -16111,7 +16523,16 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "muddy-waters",
+      "jimmy-rogers",
+      "little-walter",
+      "buddy-guy",
+      "bb-king",
+      "howlin-wolf",
+      "big-walter-horton",
+      "robert-lockwood-jr"
+    ]
   },
   {
     "id": "arbee-stidham",
@@ -16317,7 +16738,7 @@
     ],
     "instrument": "Guitar, Piano, Slide guitar, Voice",
     "bluesStyle": "Chicago Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=jKVdLpYBdIA",
+    "youtubeLink": "https://www.youtube.com/watch?v=L4AAeqvnQkI",
     "albums": [
       {
         "name": "Kings of the Slide Guitar (1984)",
@@ -16337,7 +16758,15 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "little-walter",
+      "koko-taylor",
+      "muddy-waters",
+      "freddie-king",
+      "big-mama-thornton",
+      "sonny-terry",
+      "brownie-mcghee"
+    ]
   },
   {
     "id": "koko-taylor",
@@ -16405,7 +16834,14 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "willie-dixon",
+      "little-walter",
+      "hound-dog-taylor",
+      "buddy-guy",
+      "junior-wells",
+      "muddy-waters"
+    ]
   },
   {
     "id": "sonny-terry",
@@ -16466,7 +16902,11 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "brownie-mcghee",
+      "big-joe-williams",
+      "blind-boy-fuller"
+    ]
   },
   {
     "id": "tabby-thomas",
@@ -16764,7 +17204,21 @@
       "gus-cannon"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "bb-king",
+      "howlin-wolf",
+      "bobby-blue-bland",
+      "muddy-waters",
+      "elmore-james",
+      "little-walter",
+      "robert-nighthawk",
+      "otis-rush",
+      "buddy-guy",
+      "albert-king",
+      "keb-mo",
+      "lightnin-hopkins",
+      "etta-james"
+    ]
   },
   {
     "id": "titus-turner",
@@ -16860,7 +17314,13 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "stevie-ray-vaughan",
+      "bb-king",
+      "eric-clapton",
+      "robert-cray",
+      "buddy-guy"
+    ]
   },
   {
     "id": "mose-vinson",
@@ -17188,7 +17648,13 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "muddy-waters",
+      "earl-hooker",
+      "buddy-guy",
+      "little-walter",
+      "sonny-boy-williamson"
+    ]
   },
   {
     "id": "lavelle-white",
@@ -17285,7 +17751,17 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "arthur-big-boy-crudup",
+      "elmore-james",
+      "howlin-wolf",
+      "little-walter",
+      "memphis-slim",
+      "mose-vinson",
+      "robert-nighthawk",
+      "roosevelt-sykes",
+      "sonny-boy-williamson"
+    ]
   },
   {
     "id": "up-wilson",
@@ -17426,7 +17902,14 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "muddy-waters",
+      "mike-bloomfield",
+      "willie-dixon",
+      "big-walter-horton",
+      "bb-king",
+      "bobby-blue-bland"
+    ]
   },
   {
     "id": "jimmy-witherspoon",
@@ -17494,7 +17977,10 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "jay-mcshann",
+      "t-bone-walker"
+    ]
   },
   {
     "id": "big-john-wrencher",
@@ -17968,7 +18454,17 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "albert-collins",
+      "johnny-copeland",
+      "john-lee-hooker",
+      "bb-king",
+      "eric-clapton",
+      "buddy-guy",
+      "jimmie-vaughan",
+      "stevie-ray-vaughan",
+      "bonnie-raitt"
+    ]
   },
   {
     "id": "debbie-davies",
@@ -18097,7 +18593,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "roomful-of-blues"
+    ]
   },
   {
     "id": "tinsley-ellis",
@@ -18396,7 +18894,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "stevie-ray-vaughan"
+    ]
   },
   {
     "id": "sandra-hall",
@@ -19100,7 +19600,12 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "bb-king",
+      "clarence-gatemouth-brown",
+      "pinetop-perkins",
+      "henry-townsend"
+    ]
   },
   {
     "id": "cootie-stark",
@@ -19303,7 +19808,13 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "bb-king",
+      "buddy-guy",
+      "john-lee-hooker",
+      "bonnie-raitt",
+      "johnny-winter"
+    ]
   },
   {
     "id": "maurice-john-vaughn",
@@ -19396,7 +19907,22 @@
       "pete-mayes"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "bb-king",
+      "buddy-guy",
+      "charlie-musselwhite",
+      "clarence-gatemouth-brown",
+      "earl-hooker",
+      "ike-turner",
+      "james-cotton",
+      "john-mayall",
+      "john-lee-hooker",
+      "mike-bloomfield",
+      "muddy-waters",
+      "otis-rush",
+      "robert-lockwood-jr",
+      "taj-mahal"
+    ]
   },
   {
     "id": "carl-weathersby",
@@ -19479,7 +20005,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "magic-slim"
+    ]
   },
   {
     "id": "lil-ed-williams",
@@ -19547,7 +20075,15 @@
       "rory-gallagher"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "junior-wells",
+      "jimmy-dawkins",
+      "bobby-rush",
+      "buddy-guy",
+      "albert-king",
+      "bb-king",
+      "willie-dixon"
+    ]
   },
   {
     "id": "ed-bell",
@@ -19609,7 +20145,11 @@
       "pete-mayes"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "charley-patton",
+      "son-house",
+      "robert-johnson"
+    ]
   },
   {
     "id": "gus-cannon",
@@ -19676,7 +20216,12 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "jim-jackson",
+      "furry-lewis",
+      "bukka-white",
+      "blind-blake"
+    ]
   },
   {
     "id": "sam-collins",
@@ -19867,7 +20412,12 @@
       "big-bill-broonzy"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "frank-stokes",
+      "bessie-smith",
+      "memphis-minnie",
+      "furry-lewis"
+    ]
   },
   {
     "id": "lonnie-johnson",
@@ -19919,7 +20469,12 @@
       "ramblin-thomas"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "victoria-spivey",
+      "alger-texas-alexander",
+      "bessie-smith",
+      "roosevelt-sykes"
+    ]
   },
   {
     "id": "mary-johnson",
@@ -20124,7 +20679,7 @@
       }
     ],
     "instrument": "Piano, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Jazz",
     "youtubeLink": "https://www.youtube.com/watch?v=rn96-UaQWTk",
     "albums": [
       {
@@ -20157,7 +20712,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "jimmy-witherspoon"
+    ]
   },
   {
     "id": "whistlin-alex-moore",
@@ -20389,7 +20946,11 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "charley-patton",
+      "muddy-waters",
+      "robert-nighthawk"
+    ]
   },
   {
     "id": "j-t-funny-papa-smith",
@@ -20573,7 +21134,7 @@
   {
     "id": "johnny-temple",
     "name": "Johnny Temple",
-    "image": "/images/musicians/johnny-temple.png",
+    "image": "/images/musicians/johnny-temple.webp",
     "birthDate": "1927-08-08",
     "birthPlace": "Lexington, North Carolina",
     "birthCoords": [
@@ -20649,7 +21210,11 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "skip-james",
+      "kansas-joe-mccoy",
+      "big-walter-horton"
+    ]
   },
   {
     "id": "henry-townsend",
@@ -20679,7 +21244,12 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "robert-johnson",
+      "willie-brown",
+      "son-house",
+      "jd-short"
+    ]
   },
   {
     "id": "sylvester-weaver",
@@ -21038,7 +21608,7 @@
       }
     ],
     "instrument": "Guitar, Harmonica, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Detroit Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=XsMQQtG2cao",
     "albums": [
       {
@@ -21381,7 +21951,7 @@
   {
     "id": "henry-gray",
     "name": "Henry Gray",
-    "image": "/images/musicians/henry-gray.png",
+    "image": "/images/musicians/henry-gray.webp",
     "birthDate": "1925-01-19",
     "birthPlace": "Alsen, Louisiana",
     "birthCoords": [
@@ -21396,7 +21966,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Piano, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Swamp Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=gz8c_mpEZs8",
     "albums": [
       {
@@ -21413,7 +21983,12 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "howlin-wolf"
+    ],
+    "secondaryStyles": [
+      "Chicago Blues"
+    ]
   },
   {
     "id": "peter-green",
@@ -21465,7 +22040,14 @@
       "lonesome-sundown"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "john-mayall",
+      "eric-clapton",
+      "otis-spann",
+      "big-walter-horton",
+      "willie-dixon",
+      "buddy-guy"
+    ]
   },
   {
     "id": "luther-guitar-junior-johnson",
@@ -21547,7 +22129,7 @@
       }
     ],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=LJ0EHE6wDWw",
     "albums": [
       {
@@ -21566,7 +22148,16 @@
       "ramblin-thomas"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "muddy-waters",
+      "howlin-wolf",
+      "jimmy-rogers",
+      "little-walter",
+      "willie-dixon"
+    ],
+    "secondaryStyles": [
+      "Delta Blues"
+    ]
   },
   {
     "id": "eddie-king",
@@ -21739,7 +22330,11 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "muddy-waters",
+      "james-cotton",
+      "otis-spann"
+    ]
   },
   {
     "id": "dan-pickett",
@@ -22104,7 +22699,18 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "keb-mo",
+      "buddy-guy",
+      "lightnin-hopkins",
+      "muddy-waters",
+      "howlin-wolf",
+      "bb-king",
+      "etta-james",
+      "john-lee-hooker",
+      "bonnie-raitt",
+      "johnny-winter"
+    ]
   },
   {
     "id": "baby-tate",
@@ -22408,7 +23014,7 @@
       }
     ],
     "instrument": "Guitar, Mandolin",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=hrwRAjCr_lA",
     "albums": [
       {
@@ -22431,7 +23037,15 @@
       "rory-gallagher"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "john-lee-hooker",
+      "little-walter",
+      "memphis-slim",
+      "snooky-pryor"
+    ],
+    "secondaryStyles": [
+      "Delta Blues"
+    ]
   },
   {
     "id": "linsey-alexander",
@@ -22995,7 +23609,9 @@
       "jimmy-mccracklin"
     ],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "eric-bibb"
+    ]
   },
   {
     "id": "thornetta-davis",
@@ -23329,7 +23945,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Piedmont Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=BowNzRlIuk0",
     "albums": [],
     "description": "George Higgs (March 9, 1930 – January 29, 2013) was an American Piedmont blues acoustic guitarist, harmonicist, singer and songwriter.  He recorded three albums in his lifetime, although he spent over sixty years performing regularly, mainly in his home State.  In 1993, Higgs was granted the North Carolina Heritage Award from the North Carolina Arts Council.",
@@ -23564,7 +24180,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "eric-bibb"
+    ]
   },
   {
     "id": "chris-thomas-king",
@@ -23645,7 +24263,10 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "jimmy-reed",
+      "buster-benton"
+    ]
   },
   {
     "id": "professor-eddie-lusk",
@@ -24933,7 +25554,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "phil-wiggins"
+      "phil-wiggins",
+      "archie-edwards"
     ]
   },
   {
