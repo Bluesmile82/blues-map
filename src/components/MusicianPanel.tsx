@@ -118,7 +118,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                 ✏️ Edit Musician
               </button>
             )}
-            {editMode && onToggleFavorite && import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
+            {onToggleFavorite && import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
               <button
                 onClick={onToggleFavorite}
                 className={`mt-2 inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium border transition-all ${

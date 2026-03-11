@@ -6,6 +6,21 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// Load environment variables from .env.development for the server
+try {
+  const envPath = path.join(__dirname, '../.env.development');
+  const envContent = fs.readFileSync(envPath, 'utf-8');
+  envContent.split('\n').forEach(line => {
+    const [key, ...values] = line.split('=');
+    if (key && values.length > 0) {
+      process.env[key] = values.join('=');
+    }
+  });
+  console.log('✅ Loaded .env.development');
+} catch (error) {
+  console.log('⚠️  No .env.development file found, using defaults');
+}
 const musiciansPath = path.resolve(__dirname, '../src/data/musicians.json');
 
 const app = express();
@@ -84,7 +99,9 @@ app.post('/api/musicians', (req, res) => {
 });
 
 // Favorites API endpoints (dev only)
-if (process.env.VITE_ENABLE_EDIT_MODE === 'true') {
+// Check both VITE_ prefix (for consistency) and non-prefixed version
+const enableEditMode = process.env.VITE_ENABLE_EDIT_MODE === 'true' || process.env.ENABLE_EDIT_MODE === 'true';
+if (enableEditMode) {
   const FAVORITES_PATH = path.join(__dirname, '../data/favourites.json');
   
   // Simple lock to prevent race conditions
