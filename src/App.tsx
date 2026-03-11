@@ -30,6 +30,12 @@ export default function App() {
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
   const [showCredits, setShowCredits] = useState(false);
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
+  const favoritesRef = useRef(favorites);
+
+  // Keep ref in sync with state
+  useEffect(() => {
+    favoritesRef.current = favorites;
+  }, [favorites]);
 
   // Persist video player position/size across close-reopen cycles
   const videoPlayerPosRef = useRef<{ x: number; y: number } | null>(null);
@@ -125,6 +131,10 @@ export default function App() {
   const handleToggleFavorite = useCallback(async (musicianId: string) => {
     if (!EDIT_MODE_ENABLED) return;
 
+    // Get current state from ref
+    const currentFavorites = favoritesRef.current;
+    const isCurrentlyFavorited = currentFavorites.has(musicianId);
+
     // Optimistic update
     setFavorites(prev => {
       const newFavorites = new Set(prev);
@@ -136,18 +146,17 @@ export default function App() {
       return newFavorites;
     });
 
-    const isFavorited = favorites.has(musicianId);
-    const method = isFavorited ? 'DELETE' : 'POST';
+    const method = isCurrentlyFavorited ? 'DELETE' : 'POST';
 
     try {
-      const url = isFavorited
+      const url = isCurrentlyFavorited
         ? `/api/favorites/${musicianId}`
         : '/api/favorites';
 
       const res = await fetch(url, {
         method,
         headers: { 'Content-Type': 'application/json' },
-        body: isFavorited ? undefined : JSON.stringify({ musicianId }),
+        body: isCurrentlyFavorited ? undefined : JSON.stringify({ musicianId }),
       });
 
       if (res.ok) {
@@ -157,7 +166,7 @@ export default function App() {
         // Revert on error
         setFavorites(prev => {
           const newFavorites = new Set(prev);
-          if (isFavorited) {
+          if (isCurrentlyFavorited) {
             newFavorites.add(musicianId);
           } else {
             newFavorites.delete(musicianId);
@@ -170,7 +179,7 @@ export default function App() {
       // Revert on error
       setFavorites(prev => {
         const newFavorites = new Set(prev);
-        if (isFavorited) {
+        if (isCurrentlyFavorited) {
           newFavorites.add(musicianId);
         } else {
           newFavorites.delete(musicianId);
@@ -178,7 +187,7 @@ export default function App() {
         return newFavorites;
       });
     }
-  }, [favorites]);
+  }, []); // Empty deps - uses ref instead
 
   return (
     <div className="flex flex-col w-full h-full overflow-hidden">

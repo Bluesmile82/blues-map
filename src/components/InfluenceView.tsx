@@ -702,7 +702,7 @@ export default function InfluenceView({
                         <span className="text-[0.65rem] shrink-0" style={{ color: hex }}>{m.bluesStyle.replace(' Blues', '')}</span>
                         {import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
                           <svg
-                            className="w-4 h-4 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
+                            className="w-4 h-4 shrink-0"
                             viewBox="0 0 24 24"
                             fill={isFav ? "currentColor" : "none"}
                             stroke="currentColor"
