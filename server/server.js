@@ -83,6 +83,70 @@ app.post('/api/musicians', (req, res) => {
   }
 });
 
+// Favorites API endpoints (dev only)
+if (process.env.VITE_ENABLE_EDIT_MODE === 'true') {
+  const FAVORITES_PATH = path.join(__dirname, '../data/favourites.json');
+
+  // Helper to read favorites
+  async function getFavorites() {
+    try {
+      const data = await fs.promises.readFile(FAVORITES_PATH, 'utf-8');
+      return JSON.parse(data).favorites || [];
+    } catch (error) {
+      console.error('Error reading favorites:', error);
+      return [];
+    }
+  }
+
+  // Helper to write favorites
+  async function saveFavorites(favorites) {
+    await fs.promises.writeFile(FAVORITES_PATH, JSON.stringify({ favorites }, null, 2));
+  }
+
+  // GET /api/favorites - Get all favorite musician IDs
+  app.get('/api/favorites', async (req, res) => {
+    try {
+      const favorites = await getFavorites();
+      res.json({ favorites });
+    } catch (error) {
+      res.status(500).json({ error: 'Failed to read favorites' });
+    }
+  });
+
+  // POST /api/favorites - Add a musician to favorites
+  app.post('/api/favorites', async (req, res) => {
+    try {
+      const { musicianId } = req.body;
+      if (!musicianId) {
+        return res.status(400).json({ error: 'musicianId is required' });
+      }
+      const favorites = await getFavorites();
+      if (!favorites.includes(musicianId)) {
+        favorites.push(musicianId);
+        await saveFavorites(favorites);
+      }
+      res.json({ favorites });
+    } catch (error) {
+      res.status(500).json({ error: 'Failed to add favorite' });
+    }
+  });
+
+  // DELETE /api/favorites/:id - Remove a musician from favorites
+  app.delete('/api/favorites/:id', async (req, res) => {
+    try {
+      const { id } = req.params;
+      let favorites = await getFavorites();
+      favorites = favorites.filter(fav => fav !== id);
+      await saveFavorites(favorites);
+      res.json({ favorites });
+    } catch (error) {
+      res.status(500).json({ error: 'Failed to remove favorite' });
+    }
+  });
+
+  console.log('✓ Favorites API endpoints enabled (dev mode)');
+}
+
 app.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
