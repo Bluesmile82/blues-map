@@ -11,9 +11,11 @@ interface MusicianPanelProps {
   editMode: boolean;
   onEdit: () => void;
   onPlayVideo: (url: string) => void;
+  isFavorited?: boolean;
+  onToggleFavorite?: () => void;
 }
 
-export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo }: MusicianPanelProps) {
+export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, isFavorited = false, onToggleFavorite }: MusicianPanelProps) {
   const completeMusicians = useMemo(() => musicians.filter((m) =>
     m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
   ), [musicians]);
@@ -114,6 +116,21 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                 className="mt-2 inline-flex items-center gap-2 px-4 py-2 bg-accent text-bg rounded text-sm font-medium hover:bg-accent/90 transition-colors"
               >
                 ✏️ Edit Musician
+              </button>
+            )}
+            {editMode && onToggleFavorite && import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
+              <button
+                onClick={onToggleFavorite}
+                className={`mt-2 inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium border transition-all ${
+                  isFavorited
+                    ? 'bg-accent/20 border-accent text-accent'
+                    : 'bg-bg border-[#2a1e0e] text-ink3 hover:text-ink hover:border-accent/60'
+                }`}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill={isFavorited ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+                {isFavorited ? 'Favorited' : 'Add to Favorites'}
               </button>
             )}
           </div>
