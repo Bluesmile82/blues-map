@@ -12,7 +12,22 @@ const BACKUPS_DIR = path.resolve('src/data/backups');
 const MAX_BACKUPS = 20;
 const BACKUP_INTERVAL_MS = 30 * 60 * 1000; // 30 minutes
 
-const EDIT_MODE = process.env.VITE_ENABLE_EDIT_MODE === 'true';
+// Load environment variables
+const envPath = path.resolve('.env.development');
+let EDIT_MODE = process.env.VITE_ENABLE_EDIT_MODE === 'true';
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, 'utf-8');
+  envContent.split('\n').forEach(line => {
+    const [key, ...values] = line.split('=');
+    if (key && values.length > 0) {
+      const value = values.join('=');
+      if (key === 'VITE_ENABLE_EDIT_MODE' && value === 'true') {
+        EDIT_MODE = true;
+      }
+      process.env[key] = value;
+    }
+  });
+}
 
 function readBody(req: IncomingMessage): Promise<string> {
   return new Promise((resolve, reject) => {
