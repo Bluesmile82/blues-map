@@ -125,6 +125,17 @@ export default function App() {
   const handleToggleFavorite = useCallback(async (musicianId: string) => {
     if (!EDIT_MODE_ENABLED) return;
 
+    // Optimistic update
+    setFavorites(prev => {
+      const newFavorites = new Set(prev);
+      if (newFavorites.has(musicianId)) {
+        newFavorites.delete(musicianId);
+      } else {
+        newFavorites.add(musicianId);
+      }
+      return newFavorites;
+    });
+
     const isFavorited = favorites.has(musicianId);
     const method = isFavorited ? 'DELETE' : 'POST';
 
@@ -142,9 +153,30 @@ export default function App() {
       if (res.ok) {
         const data = await res.json();
         setFavorites(new Set(data.favorites || []));
+      } else {
+        // Revert on error
+        setFavorites(prev => {
+          const newFavorites = new Set(prev);
+          if (isFavorited) {
+            newFavorites.add(musicianId);
+          } else {
+            newFavorites.delete(musicianId);
+          }
+          return newFavorites;
+        });
       }
     } catch (error) {
       console.error('Failed to toggle favorite:', error);
+      // Revert on error
+      setFavorites(prev => {
+        const newFavorites = new Set(prev);
+        if (isFavorited) {
+          newFavorites.add(musicianId);
+        } else {
+          newFavorites.delete(musicianId);
+        }
+        return newFavorites;
+      });
     }
   }, [favorites]);
 
