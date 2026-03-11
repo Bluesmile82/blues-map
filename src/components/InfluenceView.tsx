@@ -35,12 +35,16 @@ export default function InfluenceView({
   selectedId,
   styleFilter,
   onStyleFilterChange,
+  favorites,
+  onToggleFavorite,
 }: {
   musicians: Musician[];
   onSelect: (m: Musician) => void;
   selectedId: string | null;
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
+  favorites?: Set<string>;
+  onToggleFavorite?: (id: string) => void;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const dimsRef = useRef({ width: 0, height: 0 });
@@ -54,6 +58,7 @@ export default function InfluenceView({
   const [textFilter, setTextFilter] = useState('');
   const searchInputRef = useRef<HTMLInputElement>(null);
   const [yearRange, setYearRange] = useState<[number, number] | null>(null);
+  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
 
   const { minYear, maxYear } = useMemo(() => {
     const years = musicians
@@ -70,13 +75,20 @@ export default function InfluenceView({
       m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.activeFrom
     );
     const styleFiltered = styleFilter ? valid.filter((m) => m.bluesStyle === styleFilter) : valid;
-    if (!yearRange) return styleFiltered;
-    const [y0, y1] = yearRange;
-    return styleFiltered.filter((m) => {
-      const y = parseInt(m.activeFrom);
-      return y >= y0 && y <= y1;
-    });
-  }, [musicians, styleFilter, yearRange]);
+
+    const yearFiltered = yearRange
+      ? styleFiltered.filter((m) => {
+          const y = parseInt(m.activeFrom);
+          return y >= yearRange[0] && y <= yearRange[1];
+        })
+      : styleFiltered;
+
+    const favoritesFiltered = showFavoritesOnly && favorites && favorites.size > 0
+      ? yearFiltered.filter((m) => favorites.has(m.id))
+      : yearFiltered;
+
+    return favoritesFiltered;
+  }, [musicians, styleFilter, yearRange, showFavoritesOnly, favorites]);
 
   const displayMusicians = useMemo(() => {
     if (!textFilter.trim()) return completeMusicians;
@@ -673,6 +685,21 @@ export default function InfluenceView({
             />
             {textFilter && (
               <p className="text-[0.65rem] text-ink3 px-0.5">{displayMusicians.length} musician{displayMusicians.length !== 1 ? 's' : ''} shown</p>
+            )}
+
+            {import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
+              <label className="flex items-center gap-2 px-0.5 py-2 cursor-pointer hover:bg-[#1a1208] rounded transition-colors">
+                <input
+                  type="checkbox"
+                  checked={showFavoritesOnly}
+                  onChange={(e) => setShowFavoritesOnly(e.target.checked)}
+                  className="w-4 h-4 rounded border-[#2a1e0e] bg-[#0f0c07] text-accent focus:ring-accent focus:ring-offset-0"
+                />
+                <span className="text-[0.7rem] text-ink3">Show favorites only</span>
+                {favorites && favorites.size > 0 && (
+                  <span className="text-[0.65rem] text-accent">({favorites.size})</span>
+                )}
+              </label>
             )}
 
             {/* Year range filter */}
