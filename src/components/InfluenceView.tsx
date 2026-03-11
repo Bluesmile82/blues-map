@@ -667,11 +667,32 @@ export default function InfluenceView({
                 <div className="absolute top-full mt-1 left-0 right-0 bg-[#0f0c07] border border-[#2a1e0e] rounded-lg overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto">
                   {searchMatches.map((m) => {
                     const hex = getStyleHex(m.bluesStyle);
+                    const isFav = favorites?.has(m.id);
                     return (
-                      <button key={m.id} onClick={() => goToMusician(m)} className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-[#1a1208] transition-colors">
+                      <button
+                        key={m.id}
+                        onClick={() => goToMusician(m)}
+                        className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-[#1a1208] transition-colors group"
+                      >
                         <span className="w-3 h-3 rounded-full shrink-0" style={{ background: hex }} />
                         <span className="text-[0.8rem] text-ink flex-1 truncate">{m.name}</span>
                         <span className="text-[0.65rem] shrink-0" style={{ color: hex }}>{m.bluesStyle.replace(' Blues', '')}</span>
+                        {import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
+                          <svg
+                            className="w-4 h-4 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
+                            viewBox="0 0 24 24"
+                            fill={isFav ? "currentColor" : "none"}
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            style={{ color: isFav ? '#c8872a' : '#6b5c4a' }}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              onToggleFavorite?.(m.id);
+                            }}
+                          >
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                          </svg>
+                        )}
                       </button>
                     );
                   })}
