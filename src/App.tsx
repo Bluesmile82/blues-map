@@ -29,6 +29,7 @@ export default function App() {
   const [isCreating, setIsCreating] = useState(false);
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
   const [showCredits, setShowCredits] = useState(false);
+  const [favorites, setFavorites] = useState<Set<string>>(new Set());
 
   // Persist video player position/size across close-reopen cycles
   const videoPlayerPosRef = useRef<{ x: number; y: number } | null>(null);
@@ -43,6 +44,25 @@ export default function App() {
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
   }, [musicians]);
+
+  // Fetch favorites on mount (dev only)
+  useEffect(() => {
+    if (!EDIT_MODE_ENABLED) return;
+
+    const fetchFavorites = async () => {
+      try {
+        const res = await fetch('/api/favorites');
+        if (res.ok) {
+          const data = await res.json();
+          setFavorites(new Set(data.favorites || []));
+        }
+      } catch (error) {
+        console.error('Failed to fetch favorites:', error);
+      }
+    };
+
+    fetchFavorites();
+  }, []);
 
   const handleSelect = useCallback((musician: Musician) => {
     if (editMode) {
@@ -102,6 +122,32 @@ export default function App() {
     setSelected(null);
   }, []);
 
+  const handleToggleFavorite = useCallback(async (musicianId: string) => {
+    if (!EDIT_MODE_ENABLED) return;
+
+    const isFavorited = favorites.has(musicianId);
+    const method = isFavorited ? 'DELETE' : 'POST';
+
+    try {
+      const url = isFavorited
+        ? `/api/favorites/${musicianId}`
+        : '/api/favorites';
+
+      const res = await fetch(url, {
+        method,
+        headers: { 'Content-Type': 'application/json' },
+        body: isFavorited ? undefined : JSON.stringify({ musicianId }),
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        setFavorites(new Set(data.favorites || []));
+      }
+    } catch (error) {
+      console.error('Failed to toggle favorite:', error);
+    }
+  }, [favorites]);
+
   return (
     <div className="flex flex-col w-full h-full overflow-hidden">
       <NavBar
@@ -117,7 +163,7 @@ export default function App() {
 
       <main className="relative flex-1 mt-14 overflow-hidden">
         {view === 'influence' ? (
-          <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} />
+          <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} favorites={favorites} onToggleFavorite={handleToggleFavorite} />
         ) : (
           <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} />
         )}
@@ -132,6 +178,8 @@ export default function App() {
           editMode={false}
           onEdit={handleEdit}
           onPlayVideo={(url) => { setManualVideoUrl(url); setShowPlayer(true); setVideoMusician(selected); }}
+          isFavorited={selected ? favorites.has(selected.id) : false}
+          onToggleFavorite={() => selected && handleToggleFavorite(selected.id)}
         />
       )}
 
