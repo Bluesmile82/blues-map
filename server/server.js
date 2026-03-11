@@ -86,6 +86,9 @@ app.post('/api/musicians', (req, res) => {
 // Favorites API endpoints (dev only)
 if (process.env.VITE_ENABLE_EDIT_MODE === 'true') {
   const FAVORITES_PATH = path.join(__dirname, '../data/favourites.json');
+  
+  // Simple lock to prevent race conditions
+  let favoritesLock = Promise.resolve();
 
   // Helper to read favorites
   async function getFavorites() {
@@ -100,7 +103,17 @@ if (process.env.VITE_ENABLE_EDIT_MODE === 'true') {
 
   // Helper to write favorites
   async function saveFavorites(favorites) {
-    await fs.promises.writeFile(FAVORITES_PATH, JSON.stringify({ favorites }, null, 2));
+    try {
+      await fs.promises.writeFile(FAVORITES_PATH, JSON.stringify({ favorites }, null, 2));
+    } catch (error) {
+      console.error('Error saving favorites:', error);
+      throw error;
+    }
+  }
+
+  // Validate musician ID format
+  function isValidMusicianId(id) {
+    return id && typeof id === 'string' && id.trim() !== '';
   }
 
   // GET /api/favorites - Get all favorite musician IDs
@@ -117,14 +130,22 @@ if (process.env.VITE_ENABLE_EDIT_MODE === 'true') {
   app.post('/api/favorites', async (req, res) => {
     try {
       const { musicianId } = req.body;
-      if (!musicianId) {
-        return res.status(400).json({ error: 'musicianId is required' });
+      if (!isValidMusicianId(musicianId)) {
+        return res.status(400).json({ error: 'Invalid musicianId' });
       }
-      const favorites = await getFavorites();
-      if (!favorites.includes(musicianId)) {
-        favorites.push(musicianId);
-        await saveFavorites(favorites);
-      }
+      
+      // Use lock to prevent race conditions
+      favoritesLock = favoritesLock.then(async () => {
+        const favorites = await getFavorites();
+        if (!favorites.includes(musicianId)) {
+          favorites.push(musicianId);
+          await saveFavorites(favorites);
+          console.log(`✅ Added favorite: ${musicianId}`);
+        }
+        return favorites;
+      });
+      
+      const favorites = await favoritesLock;
       res.json({ favorites });
     } catch (error) {
       res.status(500).json({ error: 'Failed to add favorite' });
@@ -135,9 +156,20 @@ if (process.env.VITE_ENABLE_EDIT_MODE === 'true') {
   app.delete('/api/favorites/:id', async (req, res) => {
     try {
       const { id } = req.params;
-      let favorites = await getFavorites();
-      favorites = favorites.filter(fav => fav !== id);
-      await saveFavorites(favorites);
+      if (!isValidMusicianId(id)) {
+        return res.status(400).json({ error: 'Invalid musician ID' });
+      }
+      
+      // Use lock to prevent race conditions
+      favoritesLock = favoritesLock.then(async () => {
+        const favorites = await getFavorites();
+        const filteredFavorites = favorites.filter(fav => fav !== id);
+        await saveFavorites(filteredFavorites);
+        console.log(`✅ Removed favorite: ${id}`);
+        return filteredFavorites;
+      });
+      
+      const favorites = await favoritesLock;
       res.json({ favorites });
     } catch (error) {
       res.status(500).json({ error: 'Failed to remove favorite' });
