@@ -7,9 +7,12 @@ const IMAGES_DIR = path.resolve('public/images/musicians');
 const THUMBNAIL_SIZE = 200; // px, square crop
 
 const MUSICIANS_PATH = path.resolve('src/data/musicians.json');
+const FAVORITES_PATH = path.resolve('data/favourites.json');
 const BACKUPS_DIR = path.resolve('src/data/backups');
 const MAX_BACKUPS = 20;
 const BACKUP_INTERVAL_MS = 30 * 60 * 1000; // 30 minutes
+
+const EDIT_MODE = process.env.VITE_ENABLE_EDIT_MODE === 'true';
 
 function readBody(req: IncomingMessage): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -140,9 +143,107 @@ export function musiciansApiPlugin(): Plugin {
         }
       });
 
-      console.log('[musicians-api] 🎸 Musicians API ready (dev only)');
-      console.log(`[musicians-api] 📁 ${MUSICIANS_PATH}`);
-      console.log(`[musicians-api] 💾 Backups → ${BACKUPS_DIR} (every 30min + pre-save, max ${MAX_BACKUPS})`);
+      // Favorites API endpoints (dev only)
+      if (EDIT_MODE) {
+        let favoritesLock = Promise.resolve();
+
+        async function getFavorites(): Promise<string[]> {
+          try {
+            if (!fs.existsSync(FAVORITES_PATH)) {
+              return [];
+            }
+            const data = fs.readFileSync(FAVORITES_PATH, 'utf-8');
+            const parsed = JSON.parse(data);
+            return parsed.favorites || [];
+          } catch (error) {
+            console.error('[favorites-api] Error reading favorites:', error);
+            return [];
+          }
+        }
+
+        async function saveFavorites(favorites: string[]): Promise<void> {
+          const dir = path.dirname(FAVORITES_PATH);
+          if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir, { recursive: true });
+          }
+          fs.writeFileSync(FAVORITES_PATH, JSON.stringify({ favorites }, null, 2), 'utf-8');
+        }
+
+        function isValidMusicianId(id: unknown): id is string {
+          return typeof id === 'string' && id.trim().length > 0;
+        }
+
+        server.middlewares.use(async (req: IncomingMessage, res: ServerResponse, next: () => void) => {
+          if (!req.url?.startsWith('/api/favorites')) return next();
+
+          res.setHeader('Content-Type', 'application/json');
+
+          try {
+            if (req.method === 'GET' && req.url === '/api/favorites') {
+              const favorites = await getFavorites();
+              res.end(JSON.stringify({ favorites }));
+              return;
+            }
+
+            if (req.method === 'POST' && req.url === '/api/favorites') {
+              const { musicianId } = JSON.parse(await readBody(req));
+              if (!isValidMusicianId(musicianId)) {
+                res.statusCode = 400;
+                res.end(JSON.stringify({ error: 'Invalid musicianId' }));
+                return;
+              }
+
+              // Use lock to prevent race conditions
+              const updatedFavorites = await favoritesLock.then(async () => {
+                const favorites = await getFavorites();
+                if (!favorites.includes(musicianId)) {
+                  favorites.push(musicianId);
+                  await saveFavorites(favorites);
+                  console.log(`[favorites-api] ⭐ Added favorite: ${musicianId}`);
+                }
+                return favorites;
+              });
+              favoritesLock = Promise.resolve();
+
+              res.end(JSON.stringify({ favorites: updatedFavorites }));
+              return;
+            }
+
+            if (req.method === 'DELETE' && req.url.startsWith('/api/favorites/')) {
+              const id = req.url.split('/')[3];
+              if (!isValidMusicianId(id)) {
+                res.statusCode = 400;
+                res.end(JSON.stringify({ error: 'Invalid musicianId' }));
+                return;
+              }
+
+              // Use lock to prevent race conditions
+              const updatedFavorites = await favoritesLock.then(async () => {
+                let favorites = await getFavorites();
+                const initialLength = favorites.length;
+                favorites = favorites.filter(fav => fav !== id);
+                if (favorites.length !== initialLength) {
+                  await saveFavorites(favorites);
+                  console.log(`[favorites-api] 💔 Removed favorite: ${id}`);
+                }
+                return favorites;
+              });
+              favoritesLock = Promise.resolve();
+
+              res.end(JSON.stringify({ favorites: updatedFavorites }));
+              return;
+            }
+
+            next();
+          } catch (err) {
+            console.error('[favorites-api] Error:', err);
+            res.statusCode = 500;
+            res.end(JSON.stringify({ error: 'Internal server error' }));
+          }
+        });
+
+        console.log('[favorites-api] ⭐ Favorites API endpoints enabled (dev mode)');
+      }
     },
   };
 }
