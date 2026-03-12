@@ -51,12 +51,13 @@ interface Props {
   initialW?: number;
   onPositionChange?: (pos: { x: number; y: number }) => void;
   onSizeChange?: (w: number) => void;
+  autoplay?: boolean;
 }
 
 const MIN_W = 200;
 const MAX_W = 720;
 
-export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, manualVideoUrl, onClose, initialPos, initialW, onPositionChange, onSizeChange }: Props) {
+export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, manualVideoUrl, onClose, initialPos, initialW, onPositionChange, onSizeChange, autoplay = true }: Props) {
   const playerRef = useRef<YT.Player | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [apiReady, setApiReady] = useState(false);
@@ -176,11 +177,13 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
 
     playerRef.current = new window.YT.Player('yt-floating-player', {
       videoId: videosRef.current[0].videoId,
-      playerVars: { autoplay: 1, modestbranding: 1, rel: 0 },
+      playerVars: { autoplay: autoplay ? 1 : 0, modestbranding: 1, rel: 0 },
       events: {
         onReady: ({ target }) => {
-          target.playVideo();
-          setIsPlaying(true);
+          if (autoplay) {
+            target.playVideo();
+            setIsPlaying(true);
+          }
         },
         onStateChange: ({ data }) => {
           setIsPlaying(data === window.YT.PlayerState.PLAYING);

@@ -23,6 +23,10 @@ export default function App() {
   const [editMode, setEditMode] = useState(false);
   const [showPlayer, setShowPlayer] = useState(!!initialMusician?.youtubeLink);
   const [manualVideoUrl, setManualVideoUrl] = useState<string | null>(null);
+  const [autoplay, setAutoplay] = useState(() => {
+    const stored = localStorage.getItem('autoplay');
+    return stored ? stored === 'true' : true;
+  });
   // Tracks whose video is in the player — independent of the info panel (persists when panel closes)
   const [videoMusician, setVideoMusician] = useState<Musician | null>(initialMusician ?? null);
   const [editing, setEditing] = useState<Musician | null>(null);
@@ -37,9 +41,30 @@ export default function App() {
     favoritesRef.current = favorites;
   }, [favorites]);
 
-  // Persist video player position/size across close-reopen cycles
-  const videoPlayerPosRef = useRef<{ x: number; y: number } | null>(null);
-  const videoPlayerWRef = useRef(320);
+  // Persist autoplay setting to localStorage
+  useEffect(() => {
+    localStorage.setItem('autoplay', String(autoplay));
+  }, [autoplay]);
+
+  // Persist video player position/size across sessions
+  const [videoPlayerPos, setVideoPlayerPos] = useState<{ x: number; y: number } | null>(() => {
+    const stored = localStorage.getItem('videoPlayerPos');
+    return stored ? JSON.parse(stored) : null;
+  });
+  const [videoPlayerW, setVideoPlayerW] = useState(() => {
+    const stored = localStorage.getItem('videoPlayerW');
+    return stored ? Number(stored) : 320;
+  });
+
+  useEffect(() => {
+    if (videoPlayerPos) {
+      localStorage.setItem('videoPlayerPos', JSON.stringify(videoPlayerPos));
+    }
+  }, [videoPlayerPos]);
+
+  useEffect(() => {
+    localStorage.setItem('videoPlayerW', String(videoPlayerW));
+  }, [videoPlayerW]);
 
   // Sync URL → selection on browser back/forward
   useEffect(() => {
@@ -200,13 +225,15 @@ export default function App() {
         editModeEnabled={EDIT_MODE_ENABLED}
         onRandom={handleRandom}
         onCredits={() => setShowCredits(true)}
+        autoplay={autoplay}
+        onAutoplayChange={setAutoplay}
       />
 
       <main className="relative flex-1 mt-14 overflow-hidden">
         {view === 'influence' ? (
           <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} favorites={favorites} onToggleFavorite={handleToggleFavorite} />
         ) : (
-          <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} />
+          <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} favorites={favorites} onToggleFavorite={handleToggleFavorite} />
         )}
       </main>
 
@@ -233,10 +260,11 @@ export default function App() {
           manualVideoUrl={manualVideoUrl}
           panelOpen={!!selected}
           onClose={() => setShowPlayer(false)}
-          initialPos={videoPlayerPosRef.current}
-          initialW={videoPlayerWRef.current}
-          onPositionChange={(pos) => { videoPlayerPosRef.current = pos; }}
-          onSizeChange={(w) => { videoPlayerWRef.current = w; }}
+          initialPos={videoPlayerPos}
+          initialW={videoPlayerW}
+          onPositionChange={setVideoPlayerPos}
+          onSizeChange={setVideoPlayerW}
+          autoplay={autoplay}
         />
       )}
 

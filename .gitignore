@@ -25,3 +25,4 @@ src/data/backups/
 *.njsproj
 *.sln
 *.sw?
+data/favourites.json

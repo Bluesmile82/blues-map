@@ -7,9 +7,11 @@ interface NavBarProps {
   editModeEnabled: boolean;
   onRandom: () => void;
   onCredits: () => void;
+  autoplay: boolean;
+  onAutoplayChange: (autoplay: boolean) => void;
 }
 
-export default function NavBar({ view, onViewChange, editMode, onEditModeChange, onCreateNew, editModeEnabled, onRandom, onCredits }: NavBarProps) {
+export default function NavBar({ view, onViewChange, editMode, onEditModeChange, onCreateNew, editModeEnabled, onRandom, onCredits, autoplay, onAutoplayChange }: NavBarProps) {
   return (
     <header className="fixed top-0 left-0 right-0 h-14 z-[100] flex items-center gap-2 sm:gap-4 px-3 sm:px-6 bg-[#0a0805]/98 backdrop-blur-lg border-b border-[#2a1e0e]">
       {/* Brand */}
@@ -41,6 +43,19 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
       </nav>
 
       <div className="ml-auto flex items-center gap-2 sm:gap-3">
+        <button
+          onClick={() => onAutoplayChange(!autoplay)}
+          className={[
+            'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-[0.8rem] font-medium tracking-wide border transition-all duration-200',
+            autoplay
+              ? 'bg-accent/20 border-accent text-accent shadow-sm'
+              : 'bg-transparent border-[#3a2a15] text-ink3 hover:bg-[#1a1208] hover:border-[#4a3a25] hover:text-ink',
+          ].join(' ')}
+          title={autoplay ? 'Autoplay enabled' : 'Autoplay disabled'}
+        >
+          <span className="text-[0.85rem]">{autoplay ? '⏸' : '▶'}</span>
+          <span className="hidden sm:inline">{autoplay ? 'Disable Autoplay' : 'Enable Autoplay'}</span>
+        </button>
         <button
           onClick={onRandom}
           className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-[0.8rem] font-medium tracking-wide border border-border text-ink3 hover:bg-[#1a1208] hover:border-[#4a3a25] hover:text-ink transition-all duration-200"

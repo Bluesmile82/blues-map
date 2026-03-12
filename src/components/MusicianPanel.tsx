@@ -28,13 +28,13 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   const [r, g, b] = getStyleColor(musician.bluesStyle) as [number, number, number];
 
   return (
-    <div className="fixed top-14 right-0 bottom-0 w-full sm:w-[26rem] bg-bg flex flex-col overflow-hidden z-50 animate-slide-in shadow-2xl">
+    <div className="fixed top-14 right-0 bottom-0 w-full sm:w-[26rem] bg-bg flex flex-col overflow-hidden z-50 shadow-2xl">
 
       {/* ── Close button – always visible, top-right corner ── */}
       <button
         onClick={onClose}
         aria-label="Close panel"
-        className="absolute top-4 right-4 z-20 w-9 h-9 flex items-center justify-center rounded-full bg-[#1a1208] border border-[#3a2a15] text-ink3 text-sm hover:text-ink hover:border-accent hover:bg-[#251a0d] transition-all duration-200 shadow-sm"
+        className="absolute top-4 right-4 z-[9999] w-9 h-9 flex items-center justify-center rounded-full bg-[#1a1208] border border-[#3a2a15] text-ink3 text-sm hover:text-ink hover:border-accent hover:bg-[#251a0d] transition-all duration-200 shadow-sm pointer-events-auto"
       >
         ✕
       </button>
