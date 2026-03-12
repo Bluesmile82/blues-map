@@ -232,42 +232,54 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
           {/* Image */}
           <section className="space-y-4">
             <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">Image</h3>
-            <Field label="Image URL" required error={fieldError('image')}>
-              <div className="flex gap-2">
-                <input
-                  type="url"
-                  value={formData.image}
-                  onChange={(e) => handleChange('image', e.target.value)}
-                  onBlur={() => handleBlur('image')}
-                  placeholder="https://..."
-                  className={inputClass(fieldError('image')) + ' flex-1'}
-                />
-                {formData.image.startsWith('http') && (
-                  <button
-                    type="button"
-                    onClick={handleDownloadImage}
-                    disabled={isDownloadingImage}
-                    title="Download and save as local thumbnail"
-                    className="shrink-0 px-3 py-2 text-xs bg-[#1a1208] border border-[#2a1e0e] rounded text-ink3 hover:text-ink hover:border-accent disabled:opacity-50 transition-colors"
-                  >
-                    {isDownloadingImage ? 'Saving…' : '⬇ Save local'}
-                  </button>
-                )}
-              </div>
-              {imageDownloadError && (
-                <p className="text-red-400 text-xs mt-1">{imageDownloadError}</p>
-              )}
-              {formData.image && (
-                <div className="mt-2">
-                  <img
-                    src={formData.image}
-                    alt={formData.name}
-                    className="w-20 h-20 rounded object-cover border border-[#2a1e0e]"
-                    onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
-                  />
-                </div>
-              )}
-            </Field>
+             <Field label="Image URL" required error={fieldError('image')}>
+               <div className="flex gap-2">
+                 <input
+                   type="url"
+                   value={formData.image}
+                   onChange={(e) => handleChange('image', e.target.value)}
+                   onBlur={() => handleBlur('image')}
+                   placeholder="https://..."
+                   className={inputClass(fieldError('image')) + ' flex-1'}
+                 />
+                 {formData.image.startsWith('http') && (
+                   <button
+                     type="button"
+                     onClick={handleDownloadImage}
+                     disabled={isDownloadingImage}
+                     title="Download and save as local thumbnail"
+                     className="shrink-0 px-3 py-2 text-xs bg-[#1a1208] border border-[#2a2a0e] rounded text-ink3 hover:text-ink hover:border-accent disabled:opacity-50 transition-colors"
+                   >
+                     {isDownloadingImage ? 'Saving…' : '⬇ Save local'}
+                   </button>
+                 )}
+               </div>
+               {imageDownloadError && (
+                 <p className="text-red-400 text-xs mt-1">{imageDownloadError}</p>
+               )}
+             </Field>
+
+             <Field label="Image Source" error={fieldError('image_source' as keyof Musician)}>
+               <input
+                 type="text"
+                 value={formData.image_source || ''}
+                 onChange={(e) => handleChange('image_source' as keyof Musician, e.target.value)}
+                 placeholder="e.g., Wikipedia, Library of Congress"
+                 className={inputClass(fieldError('image_source' as keyof Musician))}
+               />
+               <p className="text-ink3 text-xs mt-1">Source or attribution for the image</p>
+             </Field>
+
+             {formData.image && (
+               <div className="mt-2">
+                 <img
+                   src={formData.image}
+                   alt={formData.name}
+                   className="w-20 h-20 rounded object-cover border border-[#2a1a0e]"
+                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                 />
+               </div>
+             )}
           </section>
 
           {/* Dates & Locations */}

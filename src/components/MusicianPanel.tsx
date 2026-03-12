@@ -110,6 +110,9 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                 : ' — still active'}
             </p>
             <p className="text-ink2 text-[0.82rem] mt-1">{musician.instrument}</p>
+            {musician.image_source && (
+              <p className="text-ink3 text-[0.75rem] mt-1 italic">Image: {musician.image_source}</p>
+            )}
             {editMode && (
               <button
                 onClick={onEdit}

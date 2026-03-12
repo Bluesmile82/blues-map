@@ -291,6 +291,7 @@ export default function App() {
             id: '',
             name: '',
             image: '',
+            image_source: '',
             birthDate: '',
             birthPlace: '',
             birthCoords: [0, 0],
@@ -306,6 +307,7 @@ export default function App() {
             activeFrom: '',
             influences: [],
             influencedBy: [],
+            playedWith: [],
           }}
           onClose={() => setIsCreating(false)}
           onSave={(musician) => handleSave(musician, true)}

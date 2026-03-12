@@ -2716,6 +2716,9 @@
       "sonny-boy-williamson",
       "joe-willie-wilkins",
       "tampa-red"
+    ],
+    "secondaryStyles": [
+      "Chicago Blues"
     ]
   },
   {
@@ -3476,7 +3479,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Urban Blues",
+    "bluesStyle": "Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=50UgA0nz8PA",
     "albums": [
       {
@@ -3908,7 +3911,7 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "Urban Blues",
+    "bluesStyle": "Piedmont Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=pyxe6l2qwes",
     "albums": [
       {
@@ -4015,7 +4018,9 @@
     ],
     "description": "Leroy Carr (March 27, 1904 or 1905 – April 29, 1935) was an American blues singer, songwriter and pianist who developed a laid-back, crooning technique and whose popularity and style influenced such artists as Nat King Cole and Ray Charles.  Music historian Elijah Wald has called him \"the most influential male blues singer and songwriter of the first half of the 20th century\".  He first became famous for \"How Long, How Long Blues\", his debut recording released by Vocalion Records in 1928.",
     "activeFrom": "1928",
-    "influences": [],
+    "influences": [
+      "ray-charles"
+    ],
     "influencedBy": [
       "ted-bogan",
       "bumble-bee-slim",
@@ -4239,7 +4244,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Vocals",
-    "bluesStyle": "Urban Blues",
+    "bluesStyle": "Piedmont Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=aEhDZoNTmbE",
     "albums": [
       {
@@ -4252,7 +4257,10 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [],
+    "secondaryStyles": [
+      "Country Blues"
+    ]
   },
   {
     "id": "reverend-gary-davis",
@@ -4400,7 +4408,7 @@
       }
     ],
     "instrument": "Piano",
-    "bluesStyle": "Urban Blues",
+    "bluesStyle": "Gospel",
     "youtubeLink": "https://www.youtube.com/watch?v=wJGV1msknjw",
     "albums": [
       {
@@ -7270,7 +7278,7 @@
       }
     ],
     "instrument": "Guitar, Piano",
-    "bluesStyle": "Urban Blues",
+    "bluesStyle": "Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=NMqHifetBiw",
     "albums": [
       {
@@ -7300,7 +7308,9 @@
     ],
     "description": "Hudson Whittaker (born Hudson Woodbridge; January 8, 1903 – March 19, 1981), better known by his stage name Tampa Red, was an American Chicago blues musician.  His distinctive single-string slide guitar style, songwriting and bottleneck technique influenced other Chicago blues guitarists such as Big Bill Broonzy, Robert Nighthawk, Muddy Waters, and Elmore James.  \nIn a career spanning over 30 years, he also recorded pop, R&B and hokum songs.",
     "activeFrom": "1920",
-    "influences": [],
+    "influences": [
+      "muddy-waters"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -7697,7 +7707,7 @@
       }
     ],
     "instrument": "Voice",
-    "bluesStyle": "Urban Blues",
+    "bluesStyle": "Jazz",
     "youtubeLink": "https://www.youtube.com/watch?v=bk7Kzgbq8-8",
     "albums": [
       {
@@ -8329,7 +8339,7 @@
       }
     ],
     "instrument": "Piano, Voice",
-    "bluesStyle": "Urban Blues",
+    "bluesStyle": "Jazz",
     "youtubeLink": "https://www.youtube.com/watch?v=pBLJq4XPk94",
     "albums": [
       {
@@ -9776,7 +9786,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Piano, Voice",
-    "bluesStyle": "Urban Blues",
+    "bluesStyle": "Boogie Woogie",
     "youtubeLink": "https://www.youtube.com/watch?v=tVKxifwUOkk",
     "albums": [
       {
@@ -10614,7 +10624,13 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "johny-shines", "big-maceo-merriweather", "sonny-boy-williamson", "baby-boy-warren", "robert-johnson", "johnny-shines", "sampson-pittman-t"
+      "johny-shines",
+      "big-maceo-merriweather",
+      "sonny-boy-williamson",
+      "baby-boy-warren",
+      "robert-johnson",
+      "johnny-shines",
+      "sampson-pittman-t"
     ]
   },
   {
@@ -10704,7 +10720,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": []
+    "playedWith": [
+      "sonny-terry"
+    ]
   },
   {
     "id": "rory-gallagher",
@@ -13161,7 +13179,7 @@
       }
     ],
     "instrument": "Guitar, Harmonica, Voice",
-    "bluesStyle": "Urban Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=ISc03A1Z3A4",
     "albums": [
       {
@@ -17350,7 +17368,7 @@
       }
     ],
     "instrument": "Piano, Voice",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Boogie Woogie",
     "youtubeLink": "https://www.youtube.com/watch?v=AcyBBOffzQ0",
     "albums": [
       {
@@ -20531,7 +20549,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Piano",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Boogie Woogie",
     "youtubeLink": "https://www.youtube.com/watch?v=7gGGL_09a6g",
     "albums": [
       {
@@ -20592,7 +20610,7 @@
       }
     ],
     "instrument": "Piano",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Boogie Woogie",
     "youtubeLink": "https://www.youtube.com/watch?v=TyyjGeqnQ9U",
     "albums": [
       {
@@ -21100,7 +21118,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Memphis Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=RNtOhNC4loo",
     "albums": [
       {
@@ -21780,7 +21798,7 @@
       }
     ],
     "instrument": "Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=aAI5bU4XQf4",
     "albums": [
       {
@@ -22087,7 +22105,7 @@
       }
     ],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=LJ0EHE6wDWw",
     "albums": [
       {
@@ -22406,7 +22424,7 @@
       }
     ],
     "instrument": "Guitar, Harmonica, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=tETZ_t8VE6E",
     "albums": [
       {
@@ -22477,7 +22495,7 @@
       }
     ],
     "instrument": "Harmonica",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=edt4UwciHrc",
     "albums": [
       {
@@ -24255,12 +24273,12 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=b6zTsGGNopQ",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Hh75cmq3DPk",
     "albums": [
       {
         "name": "Burnin' in My Soul (1999)",
-        "youtubeLink": "https://www.youtube.com/watch?v=b6zTsGGNopQ"
+        "youtubeLink": "https://www.youtube.com/watch?v=3f3Ldop3TWQ"
       }
     ],
     "description": "Johnny Laws (January 12, 1943 – March 28, 2021) was an American Chicago blues guitarist, singer and songwriter.  A regular performer for over half a century in Chicago's South Side clubs, Laws released two albums, including Burnin' in My Soul, of which Blues & Rhythm magazine in November 1999 noted, \"It's a real shame that Johnny Laws has been unjustly ignored in the past...  This is an enjoyable CD...",
@@ -25117,7 +25135,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Soul Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=zu-8TvN5FAU",
     "albums": [
       {

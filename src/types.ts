@@ -12,6 +12,7 @@ export interface Musician {
   id: string;
   name: string;
   image: string;
+  image_source?: string;
   birthDate: string;
   birthPlace: string;
   birthCoords: [number, number];
