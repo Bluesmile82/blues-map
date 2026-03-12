@@ -6,6 +6,8 @@ import type { PickingInfo } from '@deck.gl/core';
 import type { Musician } from '../types';
 import { getStyleColor, getStyleHex, STYLE_COLORS, CANONICAL_STYLES } from '../utils/colors';
 import SearchInput from './SearchInput';
+import { useAtomValue } from 'jotai';
+import { isMusicianFavoritedAtom } from '../atoms/lists';
 import {
   computeTreeLayout,
   computeDecadeTicks,
@@ -35,16 +37,12 @@ export default function InfluenceView({
   selectedId,
   styleFilter,
   onStyleFilterChange,
-  favorites,
-  onToggleFavorite,
 }: {
   musicians: Musician[];
   onSelect: (m: Musician) => void;
   selectedId: string | null;
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
-  favorites?: Set<string>;
-  onToggleFavorite?: (id: string) => void;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const dimsRef = useRef({ width: 0, height: 0 });
@@ -59,6 +57,7 @@ export default function InfluenceView({
   const searchInputRef = useRef<HTMLInputElement>(null);
   const [yearRange, setYearRange] = useState<[number, number] | null>(null);
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+  const favorites = useAtomValue(isMusicianFavoritedAtom);
 
   const { minYear, maxYear } = useMemo(() => {
     const years = musicians
@@ -83,9 +82,9 @@ export default function InfluenceView({
         })
       : styleFiltered;
 
-    const favoritesFiltered = showFavoritesOnly && favorites && favorites.size > 0
-      ? yearFiltered.filter((m) => favorites.has(m.id))
-      : yearFiltered;
+    const favoritesFiltered = showFavoritesOnly && favorites
+       ? yearFiltered.filter((m) => favorites(m.id))
+       : yearFiltered;
 
     return favoritesFiltered;
   }, [musicians, styleFilter, yearRange, showFavoritesOnly, favorites]);
@@ -485,29 +484,29 @@ export default function InfluenceView({
           },
         },
       }),
-      // Favorite star badges (dev only)
-      ...(import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && favorites && favorites.size > 0 ? [new IconLayer({
-        id: 'favorite-stars',
-        data: musicianData.filter((d) => favorites.has(d.musician.id)),
-        getPosition: (d) => {
-          const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
-          // Position star in top-right corner of the musician photo
-          return [sx(d.position[0]) + radius * 0.5, d.position[1] - radius * 0.5] as Position2D;
-        },
-        getIcon: () => ({
-          url: 'data:image/svg+xml;base64,' + btoa(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#c8872a" stroke="#c8872a" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`),
-          width: 24,
-          height: 24,
-          mask: false,
-        }),
-        getSize: () => 20,
-        sizeUnits: 'pixels' as const,
-        pickable: false,
-        updateTriggers: {
-          getPosition: [hovered, xExpand],
-          data: [favorites],
-        },
-      })] : []),
+// Favorite star badges (dev only)
+       ...(import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && favorites && musicianData.some((d) => favorites(d.musician.id)) ? [new IconLayer({
+         id: 'favorite-stars',
+         data: musicianData.filter((d) => favorites(d.musician.id)),
+         getPosition: (d) => {
+           const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
+           // Position star in top-right corner of the musician photo
+           return [sx(d.position[0]) + radius * 0.5, d.position[1] - radius * 0.5] as Position2D;
+         },
+         getIcon: () => ({
+           url: 'data:image/svg+xml;base64,' + btoa(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#c8872a" stroke="#c8872a" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`),
+           width: 24,
+           height: 24,
+           mask: false,
+         }),
+         getSize: () => 20,
+         sizeUnits: 'pixels' as const,
+         pickable: false,
+         updateTriggers: {
+           getPosition: [hovered, xExpand],
+           data: [favorites],
+         },
+       })] : []),
       // Musician labels
       new TextLayer({
         id: 'musician-labels',
@@ -689,8 +688,8 @@ export default function InfluenceView({
               {searchMatches.length > 0 && (
                 <div className="absolute top-full mt-1 left-0 right-0 bg-[#0f0c07] border border-[#2a1e0e] rounded-lg overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto">
                   {searchMatches.map((m) => {
-                    const hex = getStyleHex(m.bluesStyle);
-                    const isFav = favorites?.has(m.id);
+                     const hex = getStyleHex(m.bluesStyle);
+                     const isFav = favorites(m.id);
                     return (
                       <button
                         key={m.id}

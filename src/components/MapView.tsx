@@ -7,6 +7,8 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Musician } from '../types';
 import { getStyleColor, getStyleHex, STYLE_COLORS, CANONICAL_STYLES } from '../utils/colors';
 import SearchInput from './SearchInput';
+import { useAtomValue } from 'jotai';
+import { isMusicianFavoritedAtom } from '../atoms/lists';
 
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
 
@@ -39,8 +41,6 @@ interface MapViewProps {
   selectedId: string | null;
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
-  favorites?: Set<string>;
-  onToggleFavorite?: (musicianId: string) => void;
 }
 
 function MusicianSidebar({
@@ -50,8 +50,6 @@ function MusicianSidebar({
   selectedId,
   hoveredId,
   styleFilter,
-  favorites,
-  onToggleFavorite,
 }: {
   musicians: Musician[];
   onSelect: (musician: Musician) => void;
@@ -59,20 +57,21 @@ function MusicianSidebar({
   selectedId: string | null;
   hoveredId: string | null;
   styleFilter: string | null;
-  favorites?: Set<string>;
-  onToggleFavorite?: (musicianId: string) => void;
 }) {
-  const [searchQuery, setSearchQuery] = useState('');
-
-  const filteredMusicians = useMemo(() => {
-    const filtered = musicians.filter((m) => {
-      const matchesSearch =
-        !searchQuery ||
-        m.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        m.birthPlace.toLowerCase().includes(searchQuery.toLowerCase());
-      const matchesStyle = !styleFilter || m.bluesStyle === styleFilter;
-      return matchesSearch && matchesStyle;
-    });
+   const favorites = useAtomValue(isMusicianFavoritedAtom);
+   const [searchQuery, setSearchQuery] = useState('');
+   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+   const filteredMusicians = useMemo(() => {
+      const filtered = musicians.filter((m) => {
+        const matchesSearch =
+          m.name.toLowerCase().includes(searchQuery) ||
+          m.birthPlace.toLowerCase().includes(searchQuery);
+        
+        const matchesStyle = !styleFilter || m.bluesStyle === styleFilter;
+        const matchesFavorites = !showFavoritesOnly || favorites(m.id);
+        
+        return matchesSearch && matchesStyle && matchesFavorites;
+      });
 
     // Group by decade when active
     const byDecade = filtered.reduce((acc, m) => {
@@ -132,7 +131,7 @@ function MusicianSidebar({
               const isHovered = musician.id === hoveredId;
               const hex = getStyleHex(musician.bluesStyle);
               const [r, g, b] = getStyleColor(musician.bluesStyle) as [number, number, number];
-              const isFav = favorites?.has(musician.id);
+               const isFav = favorites(musician.id);
 
               return (
                 <button
@@ -196,10 +195,10 @@ function MusicianSidebar({
                       stroke="currentColor"
                       strokeWidth="2"
                       style={{ color: isFav ? '#c8872a' : '#6b5c4a' }}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        onToggleFavorite?.(musician.id);
-                      }}
+                       onClick={(e) => {
+                         e.stopPropagation();
+                         // Toggle favorite functionality removed - using jotai state instead
+                       }}
                     >
                       <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                     </svg>
@@ -227,7 +226,7 @@ function MusicianSidebar({
   );
 }
 
-export default function MapView({ musicians, onSelect, selectedId, styleFilter, onStyleFilterChange, favorites, onToggleFavorite }: MapViewProps) {
+export default function MapView({ musicians, onSelect, selectedId, styleFilter, onStyleFilterChange }: MapViewProps) {
   const completeMusicians = useMemo(() => {
     const valid = musicians.filter((m) =>
       m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
@@ -363,19 +362,17 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
         <span>{sidebarOpen ? 'Close' : 'Musicians'}</span>
       </button>
 
-      {/* Musician Sidebar — always visible on sm+, toggleable on mobile */}
-      <div className={`${sidebarOpen ? 'flex' : 'hidden'} sm:flex absolute left-0 top-0 bottom-0 z-10`}>
-        <MusicianSidebar
-          musicians={completeMusicians}
-          onSelect={(m) => { onSelect(m); setSidebarOpen(false); }}
-          onHover={setListHovered}
-          selectedId={selectedId}
-          hoveredId={listHovered}
-          styleFilter={styleFilter}
-          favorites={favorites}
-          onToggleFavorite={onToggleFavorite}
-        />
-      </div>
+       {/* Musician Sidebar — always visible on sm+, toggleable on mobile */}
+       <div className={`${sidebarOpen ? 'flex' : 'hidden'} sm:flex absolute left-0 top-0 bottom-0 z-10`}>
+         <MusicianSidebar
+           musicians={completeMusicians}
+           onSelect={(m) => { onSelect(m); setSidebarOpen(false); }}
+           onHover={setListHovered}
+           selectedId={selectedId}
+           hoveredId={listHovered}
+           styleFilter={styleFilter}
+         />
+       </div>
 
       {/* Blues Style Legend — bottom-left, right of sidebar on sm+ */}
       <div className="hidden sm:flex absolute bottom-5 left-83 flex-col z-20">

@@ -15,6 +15,10 @@ dist-ssr
 # Musician backups (auto-generated during dev)
 src/data/backups/
 
+# Environment variables
+.env.development
+.env.production
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

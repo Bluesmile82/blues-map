@@ -258,6 +258,42 @@ export function musiciansApiPlugin(): Plugin {
         });
 
         console.log('[favorites-api] ⭐ Favorites API endpoints enabled (dev mode)');
+
+        // Contact form endpoint
+        server.middlewares.use(async (req: IncomingMessage, res: ServerResponse, next: () => void) => {
+          if (req.url === '/api/contact' && req.method === 'POST') {
+            try {
+              const body = await readBody(req);
+              const { name, email, message } = JSON.parse(body);
+
+              if (!name || !email || !message) {
+                res.statusCode = 400;
+                res.end(JSON.stringify({ error: 'Name, email, and message are required' }));
+                return;
+              }
+
+              // Log the contact form submission
+              console.log(`[contact-api] 📧 New message from ${name} (${email})`);
+              console.log(`[contact-api] Message: ${message.substring(0, 100)}${message.length > 100 ? '...' : ''}`);
+
+              // In production, you would:
+              // - Send an email using a service like SendGrid, Resend, or AWS SES
+              // - Store in a database
+              // - Send to a service like Formspree
+              
+              // For now, just log and return success
+              res.end(JSON.stringify({ success: true }));
+            } catch (err) {
+              console.error('[contact-api] Error:', err);
+              res.statusCode = 500;
+              res.end(JSON.stringify({ error: 'Failed to send message' }));
+            }
+            return;
+          }
+          next();
+        });
+
+        console.log('[contact-api] 📧 Contact form endpoint enabled (dev mode)');
       }
     },
   };

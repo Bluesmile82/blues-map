@@ -1,3 +1,5 @@
+import AuthButton from './auth/AuthButton'
+
 interface NavBarProps {
   view: 'influence' | 'map';
   onViewChange: (view: 'influence' | 'map') => void;
@@ -39,6 +41,7 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
       </nav>
 
       <div className="ml-auto flex items-center gap-2 sm:gap-3">
+        <AuthButton />
         <button
           onClick={() => onAutoplayChange(!autoplay)}
           className={[

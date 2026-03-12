@@ -1,7 +1,13 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import type { Musician } from '../types';
 import { getStyleHex, getStyleColor, STYLE_HEX } from '../utils/colors';
 import { getYear } from '../utils/layout';
+import { useAtomValue } from 'jotai';
+import { userAtom } from '../atoms/auth';
+import { isMusicianFavoritedAtom } from '../atoms/lists';
+import { useLists } from '../hooks/useLists';
+import AuthModal from '../components/auth/AuthModal';
+import ListsDropdown from '../components/lists/ListsDropdown';
 
 interface MusicianPanelProps {
   musician: Musician;
@@ -11,11 +17,9 @@ interface MusicianPanelProps {
   editMode: boolean;
   onEdit: () => void;
   onPlayVideo: (url: string) => void;
-  isFavorited?: boolean;
-  onToggleFavorite?: () => void;
 }
 
-export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, isFavorited = false, onToggleFavorite }: MusicianPanelProps) {
+export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo }: MusicianPanelProps) {
   const completeMusicians = useMemo(() => musicians.filter((m) =>
     m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
   ), [musicians]);
@@ -26,6 +30,13 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   const playedWith = musician.playedWith.map((id) => musicianMap[id]).filter(Boolean) as Musician[];
   const hex = getStyleHex(musician.bluesStyle);
   const [r, g, b] = getStyleColor(musician.bluesStyle) as [number, number, number];
+  
+  // Auth and favorites state
+  const user = useAtomValue(userAtom);
+  const isFavorited = useAtomValue(isMusicianFavoritedAtom);
+  const { toggleFavorite } = useLists();
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [showListsDropdown, setShowListsDropdown] = useState(false);
 
   return (
     <div className="fixed top-14 right-0 bottom-0 w-full sm:w-[26rem] bg-bg flex flex-col overflow-hidden z-50 shadow-2xl">
@@ -121,20 +132,51 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                 ✏️ Edit Musician
               </button>
             )}
-            {onToggleFavorite && import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
+            {/* Favorite buttons */}
+            <div className="flex items-center gap-2 mt-4">
               <button
-                onClick={onToggleFavorite}
-                className={`mt-2 inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium border transition-all ${
-                  isFavorited
-                    ? 'bg-accent/20 border-accent text-accent'
-                    : 'bg-bg border-[#2a1e0e] text-ink3 hover:text-ink hover:border-accent/60'
+                onClick={() => {
+                  if (!user) {
+                    setShowAuthModal(true);
+                  } else {
+                    toggleFavorite(musician.id);
+                  }
+                }}
+                className={`flex items-center gap-2 px-3 py-1.5 rounded-lg transition-colors ${
+                  isFavorited(musician.id)
+                    ? 'bg-red-500/20 text-red-400'
+                    : 'bg-white/10 hover:bg-white/20'
                 }`}
               >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill={isFavorited ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                <svg className="w-4 h-4" fill={isFavorited(musician.id) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
-                {isFavorited ? 'Favorited' : 'Add to Favorites'}
+                {isFavorited(musician.id) ? 'Favorited' : 'Favorite'}
               </button>
+              
+              <button
+                onClick={() => {
+                  if (!user) {
+                    setShowAuthModal(true);
+                  } else {
+                    setShowListsDropdown(true);
+                  }
+                }}
+                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+                Add to list
+              </button>
+            </div>
+            
+            {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
+            {showListsDropdown && (
+              <ListsDropdown
+                musicianId={musician.id}
+                onClose={() => setShowListsDropdown(false)}
+              />
             )}
           </div>
         </div>

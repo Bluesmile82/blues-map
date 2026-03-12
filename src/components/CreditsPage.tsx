@@ -1,15 +1,44 @@
-import musiciansData from '../data/musicians.json';
+import { useState } from 'react';
 
 interface CreditsPageProps {
   onClose: () => void;
 }
 
-// Musicians whose photos are most likely still under copyright (died after 1954 or still living)
-// grouped for display purposes only — each image should be individually verified.
-const CONTACT_EMAIL = 'pursuance@gmail.com';
+interface ContactFormData {
+  name: string;
+  email: string;
+  message: string;
+}
 
 export default function CreditsPage({ onClose }: CreditsPageProps) {
-  const musicians = musiciansData as Array<{ id: string; name: string; deathDate: string | null }>;
+  const [formData, setFormData] = useState<ContactFormData>({ name: '', email: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleContactSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="fixed inset-0 z-[200] bg-[#0a0805] flex flex-col overflow-hidden animate-slide-in">
@@ -44,28 +73,96 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
             <p>
               Written descriptions and musician photographs are used in good faith for educational purposes.
               If you are a rights holder and believe your content is used without proper authorization,
-              please contact us and we will respond promptly.
+              please use the contact form below and we will respond promptly.
             </p>
           </div>
         </section>
 
-        {/* DMCA / Contact */}
+        {/* Contact Form */}
         <section>
-          <h2 className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">DMCA &amp; Copyright Contact</h2>
+          <h2 className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">Contact Us</h2>
+          <div className="bg-[#111008] border border-[#2a1e0e] rounded-xl p-5 text-sm text-[#ccc]">
+            <p className="mb-4">
+              Have questions, suggestions, or copyright concerns? Please fill out the form below and we'll get back to you.
+            </p>
+
+            <form onSubmit={handleContactSubmit} className="space-y-4">
+              <div>
+                <label htmlFor="name" className="block text-xs font-medium text-[#888] mb-1">
+                  Name *
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  className="w-full px-3 py-2 bg-[#0a0805] border border-[#2a1e0e] rounded-lg text-white text-sm focus:outline-none focus:border-accent transition-colors"
+                  placeholder="Your name"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-xs font-medium text-[#888] mb-1">
+                  Email *
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  className="w-full px-3 py-2 bg-[#0a0805] border border-[#2a1e0e] rounded-lg text-white text-sm focus:outline-none focus:border-accent transition-colors"
+                  placeholder="your@email.com"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block text-xs font-medium text-[#888] mb-1">
+                  Message *
+                </label>
+                <textarea
+                  id="message"
+                  required
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  rows={4}
+                  className="w-full px-3 py-2 bg-[#0a0805] border border-[#2a1e0e] rounded-lg text-white text-sm focus:outline-none focus:border-accent transition-colors resize-none"
+                  placeholder="Describe your inquiry, copyright concern, or suggestion..."
+                />
+              </div>
+
+              {submitStatus === 'success' && (
+                <div className="p-3 bg-green-900/30 border border-green-700/50 rounded-lg text-green-300 text-xs">
+                  ✓ Message sent successfully! We'll get back to you soon.
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="p-3 bg-red-900/30 border border-red-700/50 rounded-lg text-red-300 text-xs">
+                  ✕ Failed to send message. Please try again later.
+                </div>
+              )}
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full px-4 py-2.5 bg-accent text-bg font-medium rounded-lg hover:bg-accent/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+              >
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+              </button>
+            </form>
+          </div>
+        </section>
+
+        {/* DMCA / Copyright */}
+        <section>
+          <h2 className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">Copyright Inquiries</h2>
           <div className="bg-[#111008] border border-[#2a1e0e] rounded-xl p-5 text-sm leading-relaxed text-[#ccc] space-y-3">
             <p>
               If you are a copyright holder and believe that any image or text on this site infringes your
-              rights, please send a takedown notice to:
+              rights, please use the contact form above. Include in your message:
             </p>
-            <p>
-              <a
-                href={`mailto:${CONTACT_EMAIL}`}
-                className="text-accent2 font-medium hover:text-accent3 underline underline-offset-2"
-              >
-                {CONTACT_EMAIL}
-              </a>
-            </p>
-            <p>Please include in your message:</p>
             <ul className="list-disc list-inside space-y-1 pl-2">
               <li>Identification of the copyrighted work claimed to be infringed</li>
               <li>The specific URL or musician name where the content appears</li>
@@ -87,56 +184,9 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
               photographers, record labels, or estates.
             </p>
             <p>
-              If you are the rights holder for any image below and wish it to be attributed, corrected,
-              or removed, please contact{' '}
-              <a href={`mailto:${CONTACT_EMAIL}`} className="text-accent2 hover:text-accent3 underline underline-offset-2">
-                {CONTACT_EMAIL}
-              </a>.
+              If you are the rights holder for any image and wish it to be attributed, corrected,
+              or removed, please use the contact form above.
             </p>
-          </div>
-
-          <div className="mt-4 border border-[#2a1e0e] rounded-xl overflow-hidden">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="bg-[#151009] border-b border-[#2a1e0e]">
-                  <th className="text-left px-4 py-2.5 text-[#888] font-medium">Musician</th>
-                  <th className="text-left px-4 py-2.5 text-[#888] font-medium hidden sm:table-cell">Image Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                {musicians.map((m, i) => {
-                  const deathYear = m.deathDate ? parseInt(m.deathDate.toString().slice(0, 4)) : null;
-                  const isPublicDomain = deathYear !== null && deathYear < 1928;
-                  const status = isPublicDomain
-                    ? 'Public domain (US)'
-                    : '© Respective rights holders';
-
-                  return (
-                    <tr
-                      key={m.id}
-                      className={[
-                        'border-b border-[#1a1208] last:border-0',
-                        i % 2 === 0 ? 'bg-[#0d0a06]' : 'bg-[#0a0805]',
-                      ].join(' ')}
-                    >
-                      <td className="px-4 py-2 text-[#ddd]">{m.name}</td>
-                      <td className="px-4 py-2 hidden sm:table-cell">
-                        <span
-                          className={[
-                            'text-xs px-2 py-0.5 rounded-full',
-                            isPublicDomain
-                              ? 'bg-[#1a2a1a] text-[#6abf6a]'
-                              : 'bg-[#1a1a2a] text-[#8888cc]',
-                          ].join(' ')}
-                        >
-                          {status}
-                        </span>
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
           </div>
         </section>
 
@@ -153,10 +203,7 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
         </section>
 
         <p className="text-center text-xs text-[#555] pb-4">
-          Blues Map — Non-commercial educational project. For inquiries:{' '}
-          <a href={`mailto:${CONTACT_EMAIL}`} className="text-accent2 hover:text-accent3">
-            {CONTACT_EMAIL}
-          </a>
+          Blues Map — Non-commercial educational project.
         </p>
       </div>
     </div>
