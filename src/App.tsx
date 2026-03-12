@@ -25,7 +25,7 @@ export default function App() {
   const [manualVideoUrl, setManualVideoUrl] = useState<string | null>(null);
   const [autoplay, setAutoplay] = useState(() => {
     const stored = localStorage.getItem('autoplay');
-    return stored ? stored === 'true' : true;
+    return stored ? stored === 'true' : false;
   });
   // Tracks whose video is in the player — independent of the info panel (persists when panel closes)
   const [videoMusician, setVideoMusician] = useState<Musician | null>(initialMusician ?? null);
