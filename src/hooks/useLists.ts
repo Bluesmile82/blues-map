@@ -51,6 +51,28 @@ export function useLists() {
 
       let userLists = (listsData as DbList[]).map(dbListToList)
 
+      // Handle multiple default lists: keep only the oldest one
+      const defaultLists = userLists.filter((l) => l.isDefault)
+      if (defaultLists.length > 1) {
+        // Sort by created_at descending (newest first), mark all but oldest as non-default
+        const sortedDefaults = [...defaultLists].sort((a, b) =>
+          a.createdAt.getTime() - b.createdAt.getTime()
+        )
+        const toKeep = sortedDefaults[0]
+        const toUpdate = sortedDefaults.slice(1)
+
+        // Update database to mark duplicates as non-default
+        for (const list of toUpdate) {
+          await supabase
+            .from('lists')
+            .update({ is_default: false, updated_at: new Date().toISOString() })
+            .eq('id', list.id)
+        }
+
+        // Filter to only keep the true default
+        userLists = userLists.filter((l) => l.id !== toKeep.id || l === toKeep)
+      }
+
       // Create default list if it doesn't exist
       if (!userLists.some((l) => l.isDefault)) {
         const { data: newList, error: createError } = await supabase
@@ -202,30 +224,31 @@ export function useLists() {
     [lists, setLists]
   )
 
-  const addToList = useCallback(
-    async (listId: string, musicianId: string) => {
-      const { error } = await supabase.from('favorites').insert({
-        list_id: listId,
-        musician_id: musicianId,
-      })
+    const addToList = useCallback(
+      async (listId: string, musicianId: string) => {
+        const { error } = await supabase.from('favorites').insert({
+          list_id: listId,
+          musician_id: musicianId,
+        })
 
-      if (error) {
-        console.error('Error adding to list:', error)
-        return false
-      }
-
-      setFavoritesMap((prev) => {
-        const newMap = new Map(prev)
-        if (!newMap.has(listId)) {
-          newMap.set(listId, new Set())
+        if (error) {
+          console.error('Error adding to list:', error)
+          alert('Failed to add to list. Please check your database permissions.')
+          return false
         }
-        newMap.get(listId)!.add(musicianId)
-        return newMap
-      })
-      return true
-    },
-    [setFavoritesMap]
-  )
+
+        setFavoritesMap((prev) => {
+          const newMap = new Map(prev)
+          if (!newMap.has(listId)) {
+            newMap.set(listId, new Set())
+          }
+          newMap.get(listId)!.add(musicianId)
+          return newMap
+        })
+        return true
+      },
+      [setFavoritesMap]
+    )
 
   const removeFromList = useCallback(
     async (listId: string, musicianId: string) => {
@@ -237,6 +260,7 @@ export function useLists() {
 
       if (error) {
         console.error('Error removing from list:', error)
+        alert('Failed to remove from list. Please check your database permissions.')
         return false
       }
 

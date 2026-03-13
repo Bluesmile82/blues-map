@@ -17,6 +17,14 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
   const [editingName, setEditingName] = useState('')
   const [creating, setCreating] = useState(false)
 
+  // Deduplicate: only show first default list if there are multiple
+  const displayLists = lists.filter((list, index, self) => {
+    if (!list.isDefault) return true
+    // Only show the first default list
+    const firstDefaultIndex = self.findIndex(l => l.isDefault)
+    return index === firstDefaultIndex
+  })
+
   const handleCreate = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!newListName.trim()) return
@@ -60,7 +68,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
         </div>
         
         <div className="max-h-96 overflow-y-auto">
-          {lists.map((list) => {
+          {displayLists.map((list) => {
             const count = favoritesMap.get(list.id)?.size ?? 0
             
             return (

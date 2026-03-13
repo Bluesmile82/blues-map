@@ -7,7 +7,8 @@ import type { Musician } from '../types';
 import { getStyleColor, getStyleHex, STYLE_COLORS, CANONICAL_STYLES } from '../utils/colors';
 import SearchInput from './SearchInput';
 import { useAtomValue } from 'jotai';
-import { isMusicianFavoritedAtom } from '../atoms/lists';
+import { listsAtom, favoritesMapAtom, isMusicianFavoritedAtom } from '../atoms/lists';
+import { userAtom } from '../atoms/auth';
 import {
   computeTreeLayout,
   computeDecadeTicks,
@@ -57,7 +58,12 @@ export default function InfluenceView({
   const searchInputRef = useRef<HTMLInputElement>(null);
   const [yearRange, setYearRange] = useState<[number, number] | null>(null);
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
-  const favorites = useAtomValue(isMusicianFavoritedAtom);
+  const [filterListId, setFilterListId] = useState<string | null>(null);
+  
+  const user = useAtomValue(userAtom);
+  const lists = useAtomValue(listsAtom);
+  const favoritesMap = useAtomValue(favoritesMapAtom);
+  const isMusicianFavorited = useAtomValue(isMusicianFavoritedAtom);
 
   const { minYear, maxYear } = useMemo(() => {
     const years = musicians
@@ -68,6 +74,25 @@ export default function InfluenceView({
   }, [musicians]);
 
   const effectiveYearRange: [number, number] = yearRange ?? [minYear, maxYear];
+
+  // Create favorites checker for the selected list or all lists
+  const favoritesChecker = useMemo(() => {
+    if (!showFavoritesOnly) return null;
+    
+    if (filterListId) {
+      // Filter by specific list
+      const set = favoritesMap.get(filterListId);
+      return set ? ((musicianId: string) => set.has(musicianId)) : null;
+    } else {
+      // Filter by any list (default behavior)
+      return (musicianId: string) => {
+        for (const set of favoritesMap.values()) {
+          if (set.has(musicianId)) return true;
+        }
+        return false;
+      };
+    }
+  }, [showFavoritesOnly, filterListId, favoritesMap]);
 
   const completeMusicians = useMemo(() => {
     const valid = musicians.filter((m) =>
@@ -82,12 +107,12 @@ export default function InfluenceView({
         })
       : styleFiltered;
 
-    const favoritesFiltered = showFavoritesOnly && favorites
-       ? yearFiltered.filter((m) => favorites(m.id))
+    const favoritesFiltered = showFavoritesOnly && favoritesChecker
+       ? yearFiltered.filter((m) => favoritesChecker(m.id))
        : yearFiltered;
 
     return favoritesFiltered;
-  }, [musicians, styleFilter, yearRange, showFavoritesOnly, favorites]);
+  }, [musicians, styleFilter, yearRange, showFavoritesOnly, favoritesChecker]);
 
   const displayMusicians = useMemo(() => {
     if (!textFilter.trim()) return completeMusicians;
@@ -483,11 +508,11 @@ export default function InfluenceView({
             easing: (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
           },
         },
-      }),
-// Favorite star badges (dev only)
-       ...(import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && favorites && musicianData.some((d) => favorites(d.musician.id)) ? [new IconLayer({
+ }),
+ // Favorite star badges
+       ...(import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && favoritesChecker && musicianData.some((d) => favoritesChecker(d.musician.id)) ? [new IconLayer({
          id: 'favorite-stars',
-         data: musicianData.filter((d) => favorites(d.musician.id)),
+         data: musicianData.filter((d) => favoritesChecker(d.musician.id)),
          getPosition: (d) => {
            const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
            // Position star in top-right corner of the musician photo
@@ -504,7 +529,7 @@ export default function InfluenceView({
          pickable: false,
          updateTriggers: {
            getPosition: [hovered, xExpand],
-           data: [favorites],
+           data: [favoritesChecker],
          },
        })] : []),
       // Musician labels
@@ -689,7 +714,7 @@ export default function InfluenceView({
                 <div className="absolute top-full mt-1 left-0 right-0 bg-[#0f0c07] border border-[#2a1e0e] rounded-lg overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto">
                   {searchMatches.map((m) => {
                      const hex = getStyleHex(m.bluesStyle);
-                     const isFav = favorites(m.id);
+                     const isFav = isMusicianFavorited(m.id);
                     return (
                       <button
                         key={m.id}
@@ -707,10 +732,6 @@ export default function InfluenceView({
                             stroke="currentColor"
                             strokeWidth="2"
                             style={{ color: isFav ? '#c8872a' : '#6b5c4a' }}
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              onToggleFavorite?.(m.id);
-                            }}
                           >
                             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                           </svg>
@@ -730,19 +751,40 @@ export default function InfluenceView({
               <p className="text-[0.65rem] text-ink3 px-0.5">{displayMusicians.length} musician{displayMusicians.length !== 1 ? 's' : ''} shown</p>
             )}
 
-            {import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
-              <label className="flex items-center gap-2 px-0.5 py-2 cursor-pointer hover:bg-[#1a1208] rounded transition-colors">
-                <input
-                  type="checkbox"
-                  checked={showFavoritesOnly}
-                  onChange={(e) => setShowFavoritesOnly(e.target.checked)}
-                  className="w-4 h-4 rounded border-[#2a1e0e] bg-[#0f0c07] text-accent focus:ring-accent focus:ring-offset-0"
-                />
-                <span className="text-[0.7rem] text-ink3">Show favorites only</span>
-                {favorites && favorites.size > 0 && (
-                  <span className="text-[0.65rem] text-accent">({favorites.size})</span>
+            {/* Favorites filter - only show when logged in */}
+            {user && (
+              <div className="bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2 flex flex-col gap-2">
+                <div className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    checked={showFavoritesOnly}
+                    onChange={(e) => setShowFavoritesOnly(e.target.checked)}
+                    className="w-4 h-4 rounded border-[#2a1e0e] bg-[#0f0c07] text-accent focus:ring-accent focus:ring-offset-0"
+                  />
+                  <span className="text-[0.7rem] text-ink3">Show favorites only</span>
+                </div>
+                
+                {/* List selector dropdown */}
+                {showFavoritesOnly && lists.length > 0 && (
+                  <div className="flex flex-col gap-1.5">
+                    <select
+                      value={filterListId ?? ''}
+                      onChange={(e) => setFilterListId(e.target.value || null)}
+                      className="text-[0.7rem] bg-[#0f0c07] border border-[#2a1e0e] rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
+                    >
+                      <option value="">All lists</option>
+                      {lists.map((list) => {
+                        const count = favoritesMap.get(list.id)?.size ?? 0
+                        return (
+                          <option key={list.id} value={list.id}>
+                            {list.name} ({count})
+                          </option>
+                        )
+                      })}
+                    </select>
+                  </div>
                 )}
-              </label>
+              </div>
             )}
 
             {/* Year range filter */}

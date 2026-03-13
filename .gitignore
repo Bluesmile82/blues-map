@@ -30,3 +30,5 @@ src/data/backups/
 *.sln
 *.sw?
 data/favourites.json
+.env.development
+.env.production

@@ -1817,7 +1817,6 @@ CREATE POLICY "Users can add to own lists"
   ON favorites FOR INSERT
   WITH CHECK (
     list_id IN (SELECT id FROM lists WHERE user_id = auth.uid())
-    AND (SELECT COUNT(*) FROM favorites f WHERE f.list_id = favorites.list_id) < 500
   );
 
 -- Favorites: Users can remove from own lists

@@ -8,7 +8,8 @@ import type { Musician } from '../types';
 import { getStyleColor, getStyleHex, STYLE_COLORS, CANONICAL_STYLES } from '../utils/colors';
 import SearchInput from './SearchInput';
 import { useAtomValue } from 'jotai';
-import { isMusicianFavoritedAtom } from '../atoms/lists';
+import { isMusicianFavoritedAtom, listsAtom, favoritesMapAtom } from '../atoms/lists';
+import { userAtom } from '../atoms/auth';
 
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
 
@@ -61,14 +62,27 @@ function MusicianSidebar({
    const favorites = useAtomValue(isMusicianFavoritedAtom);
    const [searchQuery, setSearchQuery] = useState('');
    const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+   const [filterListId, setFilterListId] = useState<string | null>(null);
+   
+   const user = useAtomValue(userAtom);
+   const lists = useAtomValue(listsAtom);
+   const favoritesMap = useAtomValue(favoritesMapAtom);
+   
    const filteredMusicians = useMemo(() => {
-      const filtered = musicians.filter((m) => {
+     // Create favorites checker for the selected list or all lists
+     const favoritesChecker = showFavoritesOnly
+       ? filterListId
+         ? (id: string) => favoritesMap.get(filterListId)?.has(id) ?? false
+         : favorites
+       : null;
+     
+     const filtered = musicians.filter((m) => {
         const matchesSearch =
           m.name.toLowerCase().includes(searchQuery) ||
           m.birthPlace.toLowerCase().includes(searchQuery);
         
         const matchesStyle = !styleFilter || m.bluesStyle === styleFilter;
-        const matchesFavorites = !showFavoritesOnly || favorites(m.id);
+        const matchesFavorites = !showFavoritesOnly || (favoritesChecker && favoritesChecker(m.id));
         
         return matchesSearch && matchesStyle && matchesFavorites;
       });
@@ -83,15 +97,15 @@ function MusicianSidebar({
     }, {} as Record<number, Musician[]>);
 
     // Sort decades and musicians within each decade
-    const sortedDecades = Object.keys(byDecade).sort((a, b) => parseInt(b) - parseInt(a));
-    return {
-      items: sortedDecades.flatMap(decade => [
-        { type: 'decade', decade: parseInt(decade) } as const,
-        ...byDecade[decade].map(m => ({ type: 'musician', musician: m }) as const)
-      ]),
-      count: filtered.length
-    };
-  }, [musicians, searchQuery, styleFilter]);
+     const sortedDecades = Object.keys(byDecade).sort((a, b) => parseInt(b) - parseInt(a));
+     return {
+       items: sortedDecades.flatMap(decade => [
+         { type: 'decade', decade: parseInt(decade) } as const,
+         ...byDecade[decade].map(m => ({ type: 'musician', musician: m }) as const)
+       ]),
+       count: filtered.length
+     };
+   }, [musicians, searchQuery, styleFilter, showFavoritesOnly, filterListId, favorites, favoritesMap]);
 
   return (
     <div className="absolute left-0 top-0 bottom-0 w-80 bg-bg/95 backdrop-blur-md flex flex-col z-10 shadow-2xl">
@@ -105,6 +119,45 @@ function MusicianSidebar({
             placeholder="Search by name or birthplace..."
           />
         </div>
+        
+        {/* Favorites filter */}
+        {user && (
+          <div className="mb-3 bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2 flex flex-col gap-2">
+            <div className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                id="map-favorites-filter"
+                checked={showFavoritesOnly}
+                onChange={(e) => setShowFavoritesOnly(e.target.checked)}
+                className="w-4 h-4 rounded border-[#2a1e0e] bg-[#0f0c07] text-accent focus:ring-accent focus:ring-offset-0"
+              />
+              <label htmlFor="map-favorites-filter" className="text-[0.7rem] text-ink3 cursor-pointer">
+                Show favorites only
+              </label>
+            </div>
+            
+            {/* List selector dropdown */}
+            {showFavoritesOnly && lists.length > 0 && (
+              <div className="flex flex-col gap-1.5">
+                <select
+                  value={filterListId ?? ''}
+                  onChange={(e) => setFilterListId(e.target.value || null)}
+                  className="text-[0.7rem] bg-[#0f0c07] border border-[#2a1e0e] rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
+                >
+                  <option value="">All lists</option>
+                  {lists.map((list) => {
+                    const count = favoritesMap.get(list.id)?.size ?? 0
+                    return (
+                      <option key={list.id} value={list.id}>
+                        {list.name} ({count})
+                      </option>
+                    )
+                  })}
+                </select>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Musician List */}
