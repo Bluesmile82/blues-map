@@ -53,8 +53,8 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
       <div className="absolute inset-0" onClick={onClose} />
-      
-      <div className="relative w-full max-w-md mx-4 bg-zinc-900 rounded-xl shadow-2xl border border-white/10">
+
+      <div className="absolute top-full w-full max-w-md mx-4 bg-zinc-900 rounded-xl shadow-2xl border border-white/10">
         <div className="flex items-center justify-between p-4 border-b border-white/10">
           <h3 className="font-semibold text-lg">My Lists</h3>
           <button
@@ -66,11 +66,11 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
             </svg>
           </button>
         </div>
-        
+
         <div className="max-h-96 overflow-y-auto">
           {displayLists.map((list) => {
             const count = favoritesMap.get(list.id)?.size ?? 0
-            
+
             return (
               <div
                 key={list.id}
@@ -105,14 +105,13 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                     </span>
                   </div>
                 )}
-                
+
                 <div className="flex items-center gap-1">
                   {/* Public toggle */}
                   <button
                     onClick={() => togglePublic(list.id)}
-                    className={`p-2 rounded-lg transition-colors ${
-                      list.isPublic ? 'text-amber-500 bg-amber-500/10' : 'text-zinc-500 hover:bg-white/10'
-                    }`}
+                    className={`p-2 rounded-lg transition-colors ${list.isPublic ? 'text-amber-500 bg-amber-500/10' : 'text-zinc-500 hover:bg-white/10'
+                      }`}
                     title={list.isPublic ? 'Public' : 'Private'}
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -123,7 +122,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                       )}
                     </svg>
                   </button>
-                  
+
                   {/* Copy link (only if public) */}
                   {list.isPublic && list.shareSlug && (
                     <button
@@ -136,7 +135,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                       </svg>
                     </button>
                   )}
-                  
+
                   {/* Rename */}
                   {!list.isDefault && (
                     <button
@@ -152,7 +151,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                       </svg>
                     </button>
                   )}
-                  
+
                   {/* Delete */}
                   {!list.isDefault && (
                     <button
@@ -174,7 +173,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
             )
           })}
         </div>
-        
+
         <form onSubmit={handleCreate} className="p-4 border-t border-white/10">
           <div className="flex gap-2">
             <input
