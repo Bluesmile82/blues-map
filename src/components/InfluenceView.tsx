@@ -4,8 +4,9 @@ import { OrthographicView } from '@deck.gl/core';
 import { PathLayer, ScatterplotLayer, TextLayer, IconLayer } from '@deck.gl/layers';
 import type { PickingInfo } from '@deck.gl/core';
 import type { Musician } from '../types';
-import { getStyleColor, getStyleHex, STYLE_COLORS, CANONICAL_STYLES } from '../utils/colors';
+import { getStyleColor, getStyleHex } from '../utils/colors';
 import SearchInput from './SearchInput';
+import BluesStyleLegend from './BluesStyleLegend';
 import { useAtomValue } from 'jotai';
 import { listsAtom, favoritesMapAtom, isMusicianFavoritedAtom } from '../atoms/lists';
 import { userAtom } from '../atoms/auth';
@@ -59,6 +60,7 @@ export default function InfluenceView({
   const [yearRange, setYearRange] = useState<[number, number] | null>(null);
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   const [filterListId, setFilterListId] = useState<string | null>(null);
+  const [filtersCollapsed, setFiltersCollapsed] = useState(false);
   
   const user = useAtomValue(userAtom);
   const lists = useAtomValue(listsAtom);
@@ -698,7 +700,20 @@ export default function InfluenceView({
           </div>
 
           {/* Left search panel */}
-          <div className="absolute left-3 sm:left-4 top-3 sm:top-4 z-40 flex flex-col gap-2" style={{ width: 220 }}>
+          <div className="absolute left-3 sm:left-4 top-3 sm:top-4 z-40 flex flex-col gap-2" style={{ width: 'calc(100vw - 1.5rem)', maxWidth: 220 }}>
+            {/* Mobile filter toggle button */}
+            <button
+              onClick={() => setFiltersCollapsed(!filtersCollapsed)}
+              className="sm:hidden flex items-center justify-between w-full px-3 py-2 bg-[#0f0c07]/95 border border-[#2a1e0e] rounded-lg text-ink text-xs font-medium backdrop-blur-sm"
+            >
+              <span>Filters</span>
+              <svg className={`w-4 h-4 transition-transform ${filtersCollapsed ? '' : 'rotate-180'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            
+            {/* Collapsible filters wrapper */}
+            <div className={`${filtersCollapsed ? 'hidden' : 'flex'} sm:flex flex-col gap-2`}>
             <div className="relative">
               <SearchInput
                 ref={searchInputRef}
@@ -840,6 +855,7 @@ export default function InfluenceView({
                 </div>
               </div>
             </div>
+            </div>
           </div>
 
           {/* Top bar: group-by + scatter */}
@@ -891,45 +907,16 @@ export default function InfluenceView({
           </div>
 
           {/* Color legend */}
-          <div className="hidden sm:flex absolute bottom-5 left-15 flex-col z-40 bg-bg/90 border border-[#2a1e0e] rounded-lg py-2">
-            <button
-              onClick={() => setLegendOpen((o) => !o)}
-              className="flex items-center gap-1.5 px-3 pb-1 text-[0.6rem] text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
-            >
-              Blues Style
-              <span className="text-[0.55rem] opacity-60">{legendOpen ? '▲' : '▼'}</span>
-            </button>
-            {legendOpen && CANONICAL_STYLES.filter((style) => completeMusicians.some((m) => m.bluesStyle === style)).map((style) => {
-              const [r, g, b] = STYLE_COLORS[style] ?? [150, 150, 150];
-              const isActive = hoveredStyle === style;
-              return (
-                <div
-                  key={style}
-                  className="flex items-center gap-2 px-3 py-0.5 cursor-pointer transition-colors"
-                  style={{
-                    background: isActive || styleFilter === style ? `rgba(${r},${g},${b},0.15)` : undefined,
-                    color: isActive || styleFilter === style ? `rgb(${r},${g},${b})` : 'rgba(255,255,255,0.65)',
-                  }}
-                  onMouseEnter={() => setHoveredStyle(style)}
-                  onMouseLeave={() => setHoveredStyle(null)}
-                  onClick={() => onStyleFilterChange(styleFilter === style ? null : style)}
-                >
-                  <span
-                    className="w-2 h-2 rounded-full shrink-0 transition-transform"
-                    style={{
-                      background: `rgb(${r},${g},${b})`,
-                      transform: isActive || styleFilter === style ? 'scale(1.3)' : 'scale(1)',
-                      boxShadow: isActive || styleFilter === style ? `0 0 5px rgba(${r},${g},${b},0.6)` : 'none',
-                    }}
-                  />
-                  <span className="text-[0.7rem] flex-1">{style}</span>
-                  {styleFilter === style && (
-                    <span className="text-[0.6rem] opacity-50">✕</span>
-                  )}
-                </div>
-              );
-            })}
-          </div>
+          <BluesStyleLegend
+            isOpen={legendOpen}
+            onToggle={() => setLegendOpen((o) => !o)}
+            styleFilter={styleFilter}
+            onStyleFilterChange={onStyleFilterChange}
+            onHoverStyle={setHoveredStyle}
+            hoveredStyle={hoveredStyle}
+            availableStyles={Array.from(new Set(completeMusicians.map((m) => m.bluesStyle)))}
+            position="bottom-left"
+          />
 
 
           {/* Hover tooltip */}

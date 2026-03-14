@@ -177,34 +177,40 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
          )}
        </main>
 
-       {selected && !editMode && (
-         <MusicianPanel
-           musician={selected}
-           musicians={musicians}
-           onClose={handleClose}
-           onNavigate={handleSelect}
-           editMode={false}
-           onEdit={handleEdit}
-           onPlayVideo={(url) => { setManualVideoUrl(url); setShowPlayer(true); setVideoMusician(selected); }}
-         />
-       )}
+        {selected && !editMode && (
+          <MusicianPanel
+            musician={selected}
+            musicians={musicians}
+            onClose={handleClose}
+            onNavigate={handleSelect}
+            editMode={false}
+            onEdit={handleEdit}
+            onPlayVideo={(url) => { setManualVideoUrl(url); setShowPlayer(true); setVideoMusician(selected); }}
+            videoMusician={videoMusician}
+            manualVideoUrl={manualVideoUrl}
+            autoplay={autoplay}
+            onVideoClose={() => setShowPlayer(false)}
+          />
+        )}
 
-      {videoMusician && showPlayer && !editMode && (
-        <FloatingVideoPlayer
-          key={videoMusician.id}
-          youtubeUrl={videoMusician.youtubeLink}
-          albums={videoMusician.albums}
-          musicianName={videoMusician.name}
-          manualVideoUrl={manualVideoUrl}
-          panelOpen={!!selected}
-          onClose={() => setShowPlayer(false)}
-          initialPos={videoPlayerPos}
-          initialW={videoPlayerW}
-          onPositionChange={setVideoPlayerPos}
-          onSizeChange={setVideoPlayerW}
-          autoplay={autoplay}
-        />
-      )}
+       {videoMusician && showPlayer && !editMode && (
+         <div className="hidden sm:block">
+           <FloatingVideoPlayer
+             key={videoMusician.id}
+             youtubeUrl={videoMusician.youtubeLink}
+             albums={videoMusician.albums}
+             musicianName={videoMusician.name}
+             manualVideoUrl={manualVideoUrl}
+             panelOpen={!!selected}
+             onClose={() => setShowPlayer(false)}
+             initialPos={videoPlayerPos}
+             initialW={videoPlayerW}
+             onPositionChange={setVideoPlayerPos}
+             onSizeChange={setVideoPlayerW}
+             autoplay={autoplay}
+           />
+         </div>
+       )}
 
       {showCredits && (
         <CreditsPage onClose={() => setShowCredits(false)} />

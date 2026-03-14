@@ -5,8 +5,9 @@ import type { MapViewState } from '@deck.gl/core';
 import Map from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Musician } from '../types';
-import { getStyleColor, getStyleHex, STYLE_COLORS, CANONICAL_STYLES } from '../utils/colors';
+import { getStyleColor, getStyleHex } from '../utils/colors';
 import SearchInput from './SearchInput';
+import BluesStyleLegend from './BluesStyleLegend';
 import { useAtomValue } from 'jotai';
 import { isMusicianFavoritedAtom, listsAtom, favoritesMapAtom } from '../atoms/lists';
 import { userAtom } from '../atoms/auth';
@@ -426,51 +427,18 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
            styleFilter={styleFilter}
          />
        </div>
-
-      {/* Blues Style Legend — bottom-left, right of sidebar on sm+ */}
-      <div className="hidden sm:flex absolute bottom-5 left-83 flex-col z-20">
-        <button
-          onClick={() => setLegendOpen((o) => !o)}
-          className="flex items-center gap-2 px-3 py-2 bg-bg/90 border border-[#2a1e0e] rounded-lg text-[0.62rem] text-accent tracking-widest uppercase hover:border-accent/50 transition-colors"
-        >
-          <span className="flex-1 text-left">Blues Style</span>
-          {styleFilter && <span className="text-[0.6rem] text-ink3 normal-case tracking-normal truncate max-w-20">{styleFilter}</span>}
-          <span className="text-[0.65rem] text-ink3">{legendOpen ? '▲' : '▼'}</span>
-        </button>
-        {legendOpen && (
-          <div className="mt-1 bg-bg/90 border border-[#2a1e0e] rounded-lg py-2 flex flex-col">
-            {CANONICAL_STYLES.filter((style) =>
-              musicians.some((m) => m.bluesStyle === style)
-            ).map((style) => {
-              const [r, g, b] = STYLE_COLORS[style] ?? [150, 150, 150];
-              const isFiltered = styleFilter === style;
-              return (
-                <div
-                  key={style}
-                  className="flex items-center gap-2 px-3 py-1 cursor-pointer transition-colors"
-                  style={{
-                    background: isFiltered ? `rgba(${r},${g},${b},0.15)` : undefined,
-                    color: isFiltered ? `rgb(${r},${g},${b})` : 'rgba(255,255,255,0.65)',
-                  }}
-                  onClick={() => onStyleFilterChange(isFiltered ? null : style)}
-                >
-                  <span
-                    className="w-2.5 h-2.5 rounded-full shrink-0 transition-transform"
-                    style={{
-                      background: `rgb(${r},${g},${b})`,
-                      border: isFiltered ? `1.5px solid rgb(${r},${g},${b})` : '1px solid rgba(255,255,255,0.1)',
-                      transform: isFiltered ? 'scale(1.3)' : 'scale(1)',
-                      boxShadow: isFiltered ? `0 0 6px rgba(${r},${g},${b},0.6)` : 'none',
-                    }}
-                  />
-                  <span className="text-[0.72rem] flex-1">{style}</span>
-                  {isFiltered && <span className="text-[0.6rem] opacity-60">✕</span>}
-                </div>
-              );
-            })}
-          </div>
-        )}
-      </div>
+ 
+      {/* Blues Style Legend — visible on both mobile and desktop */}
+      <BluesStyleLegend
+        isOpen={legendOpen}
+        onToggle={() => setLegendOpen((o) => !o)}
+        styleFilter={styleFilter}
+        onStyleFilterChange={onStyleFilterChange}
+        onHoverStyle={() => {}}
+        hoveredStyle={null}
+        availableStyles={Array.from(new Set(musicians.map((m) => m.bluesStyle)))}
+        position="bottom-left"
+      />
 
       {/* Map */}
       <div className="relative w-full h-full">

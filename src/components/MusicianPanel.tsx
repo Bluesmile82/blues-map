@@ -8,6 +8,7 @@ import { isMusicianFavoritedAtom } from '../atoms/lists';
 import { useLists } from '../hooks/useLists';
 import AuthModal from '../components/auth/AuthModal';
 import ListsDropdown from '../components/lists/ListsDropdown';
+import MobileVideoPlayer from './MobileVideoPlayer';
 
 interface MusicianPanelProps {
   musician: Musician;
@@ -17,9 +18,13 @@ interface MusicianPanelProps {
   editMode: boolean;
   onEdit: () => void;
   onPlayVideo: (url: string) => void;
+  videoMusician?: Musician | null;
+  manualVideoUrl?: string | null | undefined;
+  autoplay?: boolean;
+  onVideoClose?: () => void;
 }
 
-export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo }: MusicianPanelProps) {
+export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, videoMusician, manualVideoUrl, autoplay, onVideoClose }: MusicianPanelProps) {
   const completeMusicians = useMemo(() => musicians.filter((m) =>
     m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
   ), [musicians]);
@@ -142,16 +147,16 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                     toggleFavorite(musician.id);
                   }
                 }}
-                className={`flex items-center gap-2 px-3 py-1.5 rounded-lg transition-colors ${
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-lg transition-colors touch-manipulation ${
                   isFavorited(musician.id)
                     ? 'bg-red-500/20 text-red-400'
-                    : 'bg-white/10 hover:bg-white/20'
+                    : 'bg-white/10 hover:bg-white/20 active:bg-white/30'
                 }`}
               >
-                <svg className="w-4 h-4" fill={isFavorited(musician.id) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5" fill={isFavorited(musician.id) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
-                {isFavorited(musician.id) ? 'Favorited' : 'Favorite'}
+                <span className="text-sm font-medium">{isFavorited(musician.id) ? 'Favorited' : 'Favorite'}</span>
               </button>
               
               <button
@@ -162,12 +167,12 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                     setShowListsDropdown(true);
                   }
                 }}
-                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-white/10 hover:bg-white/20 active:bg-white/30 transition-colors touch-manipulation"
               >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                 </svg>
-                Add to list
+                <span className="text-sm font-medium">Add to list</span>
               </button>
             </div>
             
@@ -310,6 +315,21 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
 
         </div>
       </div>
+
+      {/* Mobile video player - embedded at bottom */}
+      {videoMusician && onVideoClose && (
+        <div className="sm:hidden shrink-0">
+          <MobileVideoPlayer
+            key={videoMusician.id}
+            youtubeUrl={videoMusician.youtubeLink}
+            albums={videoMusician.albums}
+            musicianName={videoMusician.name}
+            manualVideoUrl={manualVideoUrl ?? null}
+            onClose={onVideoClose ?? (() => {})}
+            autoplay={autoplay ?? false}
+          />
+        </div>
+      )}
     </div>
   );
 }
