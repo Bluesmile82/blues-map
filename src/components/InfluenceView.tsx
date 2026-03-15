@@ -207,42 +207,16 @@ export default function InfluenceView({
   const WW = worldRef.current?.w ?? 1400;
   const WH = worldRef.current?.h ?? 2500;
 
-  const { positions, styleZones, edges, playedWithEdges, decadeTicks } = useMemo(() => {
+    const { positions, styleZones, decadeTicks } = useMemo(() => {
     if (!dims.width || !dims.height || !worldRef.current)
-      return { positions: {} as InfluenceLayout, styleZones: [] as StyleZone[], edges: [] as { path: Position2D[]; targetId: string; sourceId: string }[], playedWithEdges: [] as { path: Position2D[]; targetId: string; sourceId: string }[], decadeTicks: [] };
+      return { positions: {} as InfluenceLayout, styleZones: [] as StyleZone[], decadeTicks: [] };
 
     const { w, h } = worldRef.current;
     const layoutOptions: LayoutOptions = { groupBy, scatter };
     const { positions, styleZones } = computeTreeLayout(displayMusicians, w, h, layoutOptions);
 
-    const edges = displayMusicians.flatMap((m) =>
-      m.influences
-        .map((srcId) => {
-          const from = positions[srcId];
-          const to = positions[m.id];
-          if (!from || !to) return null;
-          return { path: bezierPath(from, to), targetId: m.id, sourceId: srcId };
-        })
-        .filter(Boolean)
-    ) as { path: Position2D[]; targetId: string; sourceId: string }[];
-
-    const seenPlayedWithPairs = new Set<string>();
-    const playedWithEdges = displayMusicians.flatMap((m) =>
-      m.playedWith
-        .map((srcId) => {
-          const pairKey = [m.id, srcId].sort().join('|');
-          if (seenPlayedWithPairs.has(pairKey)) return null;
-          seenPlayedWithPairs.add(pairKey);
-          const from = positions[srcId];
-          const to = positions[m.id];
-          if (!from || !to) return null;
-          return { path: bezierPath(from, to), targetId: m.id, sourceId: srcId };
-        })
-        .filter(Boolean)
-    ) as { path: Position2D[]; targetId: string; sourceId: string }[];
-
     const decadeTicks = computeDecadeTicks(h / 2, h);
-    return { positions, styleZones, edges, playedWithEdges, decadeTicks };
+    return { positions, styleZones, decadeTicks };
   }, [displayMusicians, groupBy, scatter, WW, WH]);
 
   const clusters = useMemo(() => {
@@ -422,6 +396,33 @@ export default function InfluenceView({
         return { musician: m, path: [[x, yBirth], [x, yDeath]] as [Position2D, Position2D] };
       })
       .filter(Boolean) as { musician: Musician; path: [Position2D, Position2D] }[];
+
+    // Compute edges using interpolated positions so they connect to clustered nodes
+    const edges = displayMusicians.flatMap((m) =>
+      m.influences
+        .map((srcId) => {
+          const from = interpolatedPositions[srcId] ?? positions[srcId];
+          const to = interpolatedPositions[m.id] ?? positions[m.id];
+          if (!from || !to) return null;
+          return { path: bezierPath(from, to), targetId: m.id, sourceId: srcId };
+        })
+        .filter(Boolean)
+    ) as { path: Position2D[]; targetId: string; sourceId: string }[];
+
+    const seenPlayedWithPairs = new Set<string>();
+    const playedWithEdges = displayMusicians.flatMap((m) =>
+      m.playedWith
+        .map((srcId) => {
+          const pairKey = [m.id, srcId].sort().join('|');
+          if (seenPlayedWithPairs.has(pairKey)) return null;
+          seenPlayedWithPairs.add(pairKey);
+          const from = interpolatedPositions[srcId] ?? positions[srcId];
+          const to = interpolatedPositions[m.id] ?? positions[m.id];
+          if (!from || !to) return null;
+          return { path: bezierPath(from, to), targetId: m.id, sourceId: srcId };
+        })
+        .filter(Boolean)
+    ) as { path: Position2D[]; targetId: string; sourceId: string }[];
 
     return [
       // Decade grid lines
@@ -768,7 +769,7 @@ export default function InfluenceView({
         updateTriggers: { getPosition: [xExpand] },
       }),
     ];
-  }, [dims.width, edges, playedWithEdges, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, clusterLabelData, currentZoom]);
+  }, [dims.width, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, clusterLabelData, currentZoom]);
 
   // Search
   const searchQuery = search.trim().toLowerCase();
