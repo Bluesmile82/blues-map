@@ -46,12 +46,16 @@ export default function InfluenceView({
   selectedId,
   styleFilter,
   onStyleFilterChange,
+  forceZoomToId,
+  onZoomComplete,
 }: {
   musicians: Musician[];
   onSelect: (m: Musician) => void;
   selectedId: string | null;
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
+  forceZoomToId?: string | null;
+  onZoomComplete?: () => void;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const dimsRef = useRef({ width: 0, height: 0 });
@@ -344,6 +348,16 @@ export default function InfluenceView({
       setClusterCompression(1.0 - progress);
     }
   }, [deckVS?.zoom]);
+
+  // Handle external zoom trigger (e.g., from random selection)
+  useEffect(() => {
+    if (!forceZoomToId || !deckVS || !positions[forceZoomToId]) return;
+    const m = musicians.find(mus => mus.id === forceZoomToId);
+    if (m) {
+      goToMusician(m);
+      onZoomComplete?.();
+    }
+  }, [forceZoomToId, deckVS, positions, musicians, onZoomComplete]);
 
   // Handle picking
   const onHover = useCallback((info: PickingInfo) => {

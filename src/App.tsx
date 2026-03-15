@@ -35,6 +35,7 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
    const [isCreating, setIsCreating] = useState(false);
    const [styleFilter, setStyleFilter] = useState<string | null>(null);
    const [showCredits, setShowCredits] = useState(false);
+   const [forceZoomToId, setForceZoomToId] = useState<string | null>(null);
 
    // Persist autoplay setting to localStorage
    useEffect(() => {
@@ -90,6 +91,7 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
       const index = Math.floor(randomValue * musicians.length);
       
       const pick = musicians[index];
+      setForceZoomToId(pick.id);
       handleSelect(pick);
     }, [musicians, handleSelect]);
 
@@ -177,7 +179,7 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
          {!publicListSlug && (
            <>
              {view === 'influence' ? (
-               <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} />
+               <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} forceZoomToId={forceZoomToId} onZoomComplete={() => setForceZoomToId(null)} />
              ) : (
                <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} />
              )}
