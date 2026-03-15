@@ -585,11 +585,14 @@ export default function InfluenceView({
        ...(import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && favoritesChecker && musicianData.some((d) => favoritesChecker(d.musician.id)) ? [new IconLayer({
          id: 'favorite-stars',
          data: musicianData.filter((d) => favoritesChecker(d.musician.id)),
-         getPosition: (d) => {
-           const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
-           // Position star in top-right corner of the musician photo
-           return [sx(d.position[0]) + radius * 0.5, d.position[1] - radius * 0.5] as Position2D;
-         },
+          getPosition: (d) => {
+            const interpolated = interpolatedPositions[d.musician.id];
+            const x = interpolated ? interpolated[0] : d.position[0];
+            const y = interpolated ? interpolated[1] : d.position[1];
+            const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
+            // Position star in top-right corner of the musician photo
+            return [sx(x) + radius * 0.5, y - radius * 0.5] as Position2D;
+          },
          getIcon: () => ({
            url: 'data:image/svg+xml;base64,' + btoa(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#c8872a" stroke="#c8872a" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`),
            width: 24,
@@ -599,10 +602,10 @@ export default function InfluenceView({
          getSize: () => 20,
          sizeUnits: 'pixels' as const,
          pickable: false,
-         updateTriggers: {
-           getPosition: [hovered, xExpand],
-           data: [favoritesChecker],
-         },
+          updateTriggers: {
+            getPosition: [hovered, xExpand, interpolatedPositions],
+            data: [favoritesChecker],
+          },
        })] : []),
        // Musician labels
        new TextLayer({
