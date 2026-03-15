@@ -81,7 +81,15 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
     }, []);
 
     const handleRandom = useCallback(() => {
-      const pick = musicians[Math.floor(Math.random() * musicians.length)];
+      if (musicians.length === 0) return;
+      
+      // Generate cryptographically secure random index
+      const array = new Uint32Array(1);
+      crypto.getRandomValues(array);
+      const randomValue = array[0] / (0xFFFFFFFF + 1);
+      const index = Math.floor(randomValue * musicians.length);
+      
+      const pick = musicians[index];
       handleSelect(pick);
     }, [musicians, handleSelect]);
 
