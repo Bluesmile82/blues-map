@@ -35,7 +35,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   const playedWith = musician.playedWith.map((id) => musicianMap[id]).filter(Boolean) as Musician[];
   const hex = getStyleHex(musician.bluesStyle);
   const [r, g, b] = getStyleColor(musician.bluesStyle) as [number, number, number];
-  
+
   // Auth and favorites state
   const user = useAtomValue(userAtom);
   const isFavorited = useAtomValue(isMusicianFavoritedAtom);
@@ -147,18 +147,17 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                     toggleFavorite(musician.id);
                   }
                 }}
-                className={`flex items-center gap-2 px-4 py-2.5 rounded-lg transition-colors touch-manipulation ${
-                  isFavorited(musician.id)
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-lg transition-colors touch-manipulation ${isFavorited(musician.id)
                     ? 'bg-red-500/20 text-red-400'
                     : 'bg-white/10 hover:bg-white/20 active:bg-white/30'
-                }`}
+                  }`}
               >
                 <svg className="w-5 h-5" fill={isFavorited(musician.id) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
                 <span className="text-sm font-medium">{isFavorited(musician.id) ? 'Favorited' : 'Favorite'}</span>
               </button>
-              
+
               <button
                 onClick={() => {
                   if (!user) {
@@ -175,7 +174,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                 <span className="text-sm font-medium">Add to list</span>
               </button>
             </div>
-            
+
             {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
             {showListsDropdown && (
               <ListsDropdown
@@ -325,7 +324,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
             albums={videoMusician.albums}
             musicianName={videoMusician.name}
             manualVideoUrl={manualVideoUrl ?? null}
-            onClose={onVideoClose ?? (() => {})}
+            onClose={onVideoClose ?? (() => { })}
             autoplay={autoplay ?? false}
           />
         </div>

@@ -5,7 +5,7 @@ import type { MapViewState } from '@deck.gl/core';
 import Map from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Musician } from '../types';
-import { getStyleColor, getStyleHex } from '../utils/colors';
+import { CANONICAL_STYLES, getStyleColor, getStyleHex } from '../utils/colors';
 import SearchInput from './SearchInput';
 import BluesStyleLegend from './BluesStyleLegend';
 import { useAtomValue } from 'jotai';
@@ -52,6 +52,7 @@ function MusicianSidebar({
   selectedId,
   hoveredId,
   styleFilter,
+  onStyleFilterChange,
 }: {
   musicians: Musician[];
   onSelect: (musician: Musician) => void;
@@ -59,34 +60,36 @@ function MusicianSidebar({
   selectedId: string | null;
   hoveredId: string | null;
   styleFilter: string | null;
+  onStyleFilterChange: (style: string | null) => void;
 }) {
-   const favorites = useAtomValue(isMusicianFavoritedAtom);
-   const [searchQuery, setSearchQuery] = useState('');
-   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
-   const [filterListId, setFilterListId] = useState<string | null>(null);
-   
-   const user = useAtomValue(userAtom);
-   const lists = useAtomValue(listsAtom);
-   const favoritesMap = useAtomValue(favoritesMapAtom);
-   
-   const filteredMusicians = useMemo(() => {
-     // Create favorites checker for the selected list or all lists
-     const favoritesChecker = showFavoritesOnly
-       ? filterListId
-         ? (id: string) => favoritesMap.get(filterListId)?.has(id) ?? false
-         : favorites
-       : null;
-     
-     const filtered = musicians.filter((m) => {
-        const matchesSearch =
-          m.name.toLowerCase().includes(searchQuery) ||
-          m.birthPlace.toLowerCase().includes(searchQuery);
-        
-        const matchesStyle = !styleFilter || m.bluesStyle === styleFilter;
-        const matchesFavorites = !showFavoritesOnly || (favoritesChecker && favoritesChecker(m.id));
-        
-        return matchesSearch && matchesStyle && matchesFavorites;
-      });
+  const favorites = useAtomValue(isMusicianFavoritedAtom);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+  const [filterListId, setFilterListId] = useState<string | null>(null);
+  const [styleLegendCollapsed, setStyleLegendCollapsed] = useState(true);
+
+  const user = useAtomValue(userAtom);
+  const lists = useAtomValue(listsAtom);
+  const favoritesMap = useAtomValue(favoritesMapAtom);
+
+  const filteredMusicians = useMemo(() => {
+    // Create favorites checker for the selected list or all lists
+    const favoritesChecker = showFavoritesOnly
+      ? filterListId
+        ? (id: string) => favoritesMap.get(filterListId)?.has(id) ?? false
+        : favorites
+      : null;
+
+    const filtered = musicians.filter((m) => {
+      const matchesSearch =
+        m.name.toLowerCase().includes(searchQuery) ||
+        m.birthPlace.toLowerCase().includes(searchQuery);
+
+      const matchesStyle = !styleFilter || m.bluesStyle === styleFilter;
+      const matchesFavorites = !showFavoritesOnly || (favoritesChecker && favoritesChecker(m.id));
+
+      return matchesSearch && matchesStyle && matchesFavorites;
+    });
 
     // Group by decade when active
     const byDecade = filtered.reduce((acc, m) => {
@@ -98,64 +101,120 @@ function MusicianSidebar({
     }, {} as Record<number, Musician[]>);
 
     // Sort decades and musicians within each decade
-     const sortedDecades = Object.keys(byDecade).sort((a, b) => parseInt(b) - parseInt(a));
-     return {
-       items: sortedDecades.flatMap(decade => [
-         { type: 'decade', decade: parseInt(decade) } as const,
-         ...byDecade[decade].map(m => ({ type: 'musician', musician: m }) as const)
-       ]),
-       count: filtered.length
-     };
-   }, [musicians, searchQuery, styleFilter, showFavoritesOnly, filterListId, favorites, favoritesMap]);
+    const sortedDecades = Object.keys(byDecade).sort((a, b) => parseInt(b) - parseInt(a));
+    return {
+      items: sortedDecades.flatMap(decade => [
+        { type: 'decade', decade: parseInt(decade) } as const,
+        ...byDecade[decade].map(m => ({ type: 'musician', musician: m }) as const)
+      ]),
+      count: filtered.length
+    };
+  }, [musicians, searchQuery, styleFilter, showFavoritesOnly, filterListId, favorites, favoritesMap]);
 
   return (
     <div className="absolute left-0 top-0 bottom-0 w-80 bg-bg/95 backdrop-blur-md flex flex-col z-10 shadow-2xl">
       {/* Header */}
-      <div className="shrink-0 p-6 border-b border-border bg-bg">
-        {/* Search */}
-        <div className="mb-3">
-          <SearchInput
-            value={searchQuery}
-            onChange={setSearchQuery}
-            placeholder="Search by name or birthplace..."
-          />
-        </div>
-        
-        {/* Favorites filter */}
-        {user && (
-          <div className="mb-3 bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2 flex flex-col gap-2">
-            <div className="flex items-center gap-2">
-              <input
-                type="checkbox"
-                id="map-favorites-filter"
-                checked={showFavoritesOnly}
-                onChange={(e) => setShowFavoritesOnly(e.target.checked)}
-                className="w-4 h-4 rounded border-[#2a1e0e] bg-[#0f0c07] text-accent focus:ring-accent focus:ring-offset-0"
-              />
-              <label htmlFor="map-favorites-filter" className="text-[0.7rem] text-ink3 cursor-pointer">
-                Show favorites only
-              </label>
+      {/* Search */}
+      <div className="mb-3">
+        <SearchInput
+          value={searchQuery}
+          onChange={setSearchQuery}
+          placeholder="Search by name or birthplace..."
+        />
+      </div>
+
+      {/* Favorites filter */}
+      {user && (
+        <div className="mb-3 bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2 flex flex-col gap-2">
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              id="map-favorites-filter"
+              checked={showFavoritesOnly}
+              onChange={(e) => setShowFavoritesOnly(e.target.checked)}
+              className="w-4 h-4 rounded border-[#2a1e0e] bg-[#0f0c07] text-accent focus:ring-accent focus:ring-offset-0"
+            />
+            <label htmlFor="map-favorites-filter" className="text-[0.7rem] text-ink3 cursor-pointer">
+              Show favorites only
+            </label>
+          </div>
+
+          {/* List selector dropdown */}
+          {showFavoritesOnly && lists.length > 0 && (
+            <div className="flex flex-col gap-1.5">
+              <select
+                value={filterListId ?? ''}
+                onChange={(e) => setFilterListId(e.target.value || null)}
+                className="text-[0.7rem] bg-[#0f0c07] border border-[#2a1e0e] rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
+              >
+                <option value="">All lists</option>
+                {lists.map((list) => {
+                  const count = favoritesMap.get(list.id)?.size ?? 0
+                  return (
+                    <option key={list.id} value={list.id}>
+                      {list.name} ({count})
+                    </option>
+                  )
+                })}
+              </select>
             </div>
-            
-            {/* List selector dropdown */}
-            {showFavoritesOnly && lists.length > 0 && (
-              <div className="flex flex-col gap-1.5">
-                <select
-                  value={filterListId ?? ''}
-                  onChange={(e) => setFilterListId(e.target.value || null)}
-                  className="text-[0.7rem] bg-[#0f0c07] border border-[#2a1e0e] rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
+          )}
+
+        </div>
+      )}
+
+      {/* Blues Style Legend - collapsible */}
+      <div className="mb-3 bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2">
+        <button
+          onClick={() => setStyleLegendCollapsed(!styleLegendCollapsed)}
+          className="flex items-center justify-between w-full text-[0.65rem] text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
+        >
+          <span>Blues Style</span>
+          <span className="text-[0.55rem] opacity-60">{styleLegendCollapsed ? '▼' : '▲'}</span>
+        </button>
+
+        {!styleLegendCollapsed && (
+          <div className="mt-2 max-h-48 overflow-y-auto">
+            {CANONICAL_STYLES.map((style) => {
+              const [r, g, b] = (getStyleColor(style) as [number, number, number]);
+              const isActive = styleFilter === style;
+
+              return (
+                <div
+                  key={style}
+                  className="flex items-center gap-2 px-2 py-1 cursor-pointer transition-colors hover:bg-[#1a1208] rounded"
+                  style={{
+                    background: isActive ? `rgba(${r},${g},${b},0.15)` : undefined,
+                    color: isActive ? `rgb(${r},${g},${b})` : 'rgba(255,255,255,0.65)',
+                  }}
+                  onClick={() => onStyleFilterChange(isActive ? null : style)}
                 >
-                  <option value="">All lists</option>
-                  {lists.map((list) => {
-                    const count = favoritesMap.get(list.id)?.size ?? 0
-                    return (
-                      <option key={list.id} value={list.id}>
-                        {list.name} ({count})
-                      </option>
-                    )
-                  })}
-                </select>
-              </div>
+                  <span
+                    className="w-2 h-2 rounded-full shrink-0 transition-transform"
+                    style={{
+                      background: `rgb(${r},${g},${b})`,
+                      transform: isActive ? 'scale(1.3)' : 'scale(1)',
+                      boxShadow: isActive ? `0 0 5px rgba(${r},${g},${b},0.6)` : 'none',
+                    }}
+                  />
+                  <span className="text-[0.7rem] flex-1">{style}</span>
+                  {isActive && (
+                    <span className="text-[0.6rem] opacity-50">✕</span>
+                  )}
+                </div>
+              );
+            })}
+
+            {styleFilter && (
+              <button
+                onClick={() => {
+                  const event = new CustomEvent('styleFilterChange', { detail: null });
+                  window.dispatchEvent(event);
+                }}
+                className="w-full px-2 py-1 text-[0.65rem] text-ink3 hover:text-ink hover:bg-[#1a1208] transition-colors text-left rounded"
+              >
+                Clear filter
+              </button>
             )}
           </div>
         )}
@@ -172,9 +231,9 @@ function MusicianSidebar({
             {filteredMusicians.items.map((item: any) => {
               if (item.type === 'decade') {
                 return (
-                  <div key={`decade-${item.decade}`} className="sticky top-0 z-10 py-2.5 px-3 my-2 bg-[#0a0805] border-b border-border">
-                    <span className="text-xs font-bold text-accent uppercase tracking-wide">
-                      Active {item.decade}s
+                  <div key={`decade-${item.decade}`} className="sticky -top-3 z-10 py-1 px-3 bg-[#0a0805] border-b border-border">
+                    <span className="text-xs font-bold text-accent tracking-wide">
+                      <span className='uppercase'>Active in</span> {item.decade}s
                     </span>
                   </div>
                 );
@@ -185,7 +244,7 @@ function MusicianSidebar({
               const isHovered = musician.id === hoveredId;
               const hex = getStyleHex(musician.bluesStyle);
               const [r, g, b] = getStyleColor(musician.bluesStyle) as [number, number, number];
-               const isFav = favorites(musician.id);
+              const isFav = favorites(musician.id);
 
               return (
                 <button
@@ -249,12 +308,12 @@ function MusicianSidebar({
                       stroke="currentColor"
                       strokeWidth="2"
                       style={{ color: isFav ? '#c8872a' : '#6b5c4a' }}
-                       onClick={(e) => {
-                         e.stopPropagation();
-                         // Toggle favorite functionality removed - using jotai state instead
-                       }}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        // Toggle favorite functionality removed - using jotai state instead
+                      }}
                     >
-                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                     </svg>
                   )}
 
@@ -408,37 +467,35 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
   return (
     <div className="relative w-full h-full">
       {/* Mobile sidebar toggle */}
-      <button
+      {sidebarOpen ? (
+        <button
+          onClick={() => setSidebarOpen(o => !o)}
+          className="sm:hidden absolute top-1 right-2 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/95 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-md"
+        >
+          <span>✕</span>
+          <span>Close</span>
+        </button>
+      ) : <button
         onClick={() => setSidebarOpen(o => !o)}
         className="sm:hidden absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/95 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-md"
       >
-        <span>{sidebarOpen ? '✕' : '☰'}</span>
-        <span>{sidebarOpen ? 'Close' : 'Musicians'}</span>
+        <span>☰</span>
+        <span>Musicians</span>
       </button>
+      }
 
-       {/* Musician Sidebar — always visible on sm+, toggleable on mobile */}
-       <div className={`${sidebarOpen ? 'flex' : 'hidden'} sm:flex absolute left-0 top-0 bottom-0 z-10`}>
-         <MusicianSidebar
-           musicians={completeMusicians}
-           onSelect={(m) => { onSelect(m); setSidebarOpen(false); }}
-           onHover={setListHovered}
-           selectedId={selectedId}
-           hoveredId={listHovered}
-           styleFilter={styleFilter}
-         />
-       </div>
- 
-      {/* Blues Style Legend — visible on both mobile and desktop */}
-      <BluesStyleLegend
-        isOpen={legendOpen}
-        onToggle={() => setLegendOpen((o) => !o)}
-        styleFilter={styleFilter}
-        onStyleFilterChange={onStyleFilterChange}
-        onHoverStyle={() => {}}
-        hoveredStyle={null}
-        availableStyles={Array.from(new Set(musicians.map((m) => m.bluesStyle)))}
-        position="bottom-left"
-      />
+      {/* Musician Sidebar — always visible on sm+, toggleable on mobile */}
+      <div className={`${sidebarOpen ? 'flex' : 'hidden'} sm:flex absolute left-0 top-0 bottom-0 z-10`}>
+        <MusicianSidebar
+          musicians={completeMusicians}
+          onSelect={(m) => { onSelect(m); setSidebarOpen(false); }}
+          onHover={setListHovered}
+          selectedId={selectedId}
+          hoveredId={listHovered}
+          styleFilter={styleFilter}
+          onStyleFilterChange={onStyleFilterChange}
+        />
+      </div>
 
       {/* Map */}
       <div className="relative w-full h-full">

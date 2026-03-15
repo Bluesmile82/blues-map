@@ -264,24 +264,15 @@ export default function InfluenceView({
     return result;
   }, [positions, clusters, clusterCompression, musicianMap]);
 
-  // Build musician data for layers
-  const musicianData = useMemo(() => {
-    return displayMusicians.map((m) => {
-      const pos = positions[m.id];
-      if (!pos) return null;
-      return { musician: m, position: pos };
-    }).filter(Boolean) as { musician: Musician; position: Position2D }[];
-  }, [displayMusicians, positions]);
-
-  const clusterLabelData = useMemo(() => {
-    return Object.entries(clusters)
-      .filter(([_, cluster]) => cluster.count > 0 && clusterCompression > 0.3)
-      .map(([style, cluster]) => ({
-        style,
-        position: cluster.center,
-        count: cluster.count,
-      }));
-  }, [clusters, clusterCompression]);
+const clusterLabelData = useMemo(() => {
+  return Object.entries(clusters)
+    .filter(([_, cluster]) => cluster.count > 0 && clusterCompression > 0.3)
+    .map(([style, cluster]) => ({
+      style,
+      position: cluster.center,
+      count: cluster.count,
+    }));
+}, [clusters, clusterCompression]);
 
   const focusId = hovered ?? selectedId;
   const focusedMusician = focusId ? displayMusicians.find((m) => m.id === focusId) : null;
@@ -313,6 +304,24 @@ export default function InfluenceView({
   const cappedRadius = NODE_RADIUS * overlapFactor;
   const cappedIconSize = ICON_SIZE * overlapFactor;
   const cappedTextSize = 14 * overlapFactor;
+
+  // Build musician data for layers
+  const musicianData = useMemo(() => {
+    return displayMusicians.map((m) => {
+      const pos = positions[m.id];
+      if (!pos) return null;
+      
+      // Blob mode: make circles much larger and more transparent to merge
+      const blobRadius = NODE_RADIUS * 4;
+      const isBlob = clusterCompression > 0.5;
+      const currentRadius = isBlob ? blobRadius : cappedRadius;
+      
+      // When in blob mode, circles are highly transparent to merge into single color
+      const blobOpacity = isBlob ? 0.15 : 1.0;
+      
+      return { musician: m, position: pos, currentRadius, blobOpacity, isBlob };
+    }).filter(Boolean) as { musician: Musician; position: Position2D; currentRadius: number; blobOpacity: number; isBlob: boolean }[];
+  }, [displayMusicians, positions, clusterCompression, cappedRadius]);
 
   // Update cluster compression based on zoom
   useEffect(() => {
@@ -407,20 +416,23 @@ export default function InfluenceView({
         widthUnits: 'pixels' as const,
         pickable: false,
       }),
-      // Lifespan lines (dim)
-      new PathLayer({
-        id: 'lifespan-dim',
-        data: lifespanData.filter((d) => !focusId || d.musician.id !== focusId),
-        getPath: (d) => d.path,
-        getColor: (d): [number, number, number, number] => {
-          const [r, g, b] = getStyleColor(d.musician.bluesStyle);
-          return [r, g, b, focusId ? 20 : 50];
-        },
-        getWidth: 1.5,
-        widthUnits: 'pixels' as const,
-        pickable: false,
-        updateTriggers: { getColor: [focusId] },
-      }),
+       // Lifespan lines (dim)
+       new PathLayer({
+         id: 'lifespan-dim',
+         data: lifespanData.filter((d) => (!focusId || d.musician.id !== focusId) && clusterCompression < 0.5),
+         getPath: (d) => d.path,
+         getColor: (d): [number, number, number, number] => {
+           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
+           return [r, g, b, focusId ? 20 : 50];
+         },
+         getWidth: 1.5,
+         widthUnits: 'pixels' as const,
+         pickable: false,
+         updateTriggers: { 
+           getColor: [focusId],
+           data: [clusterCompression],
+         },
+       }),
       // Lifespan lines (focused)
       ...(focusId
         ? [new PathLayer({
@@ -506,7 +518,7 @@ export default function InfluenceView({
           const interpolated = interpolatedPositions[d.musician.id];
           return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
         },
-        getRadius: (d) => d.musician.id === hovered ? cappedRadius * 2 : cappedRadius,
+        getRadius: (d) => d.currentRadius,
         getFillColor: (d): [number, number, number, number] => {
           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
           const dimmed = effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
@@ -514,12 +526,24 @@ export default function InfluenceView({
           const isHovered = d.musician.id === hovered;
           if (dimmed) return [r, g, b, 40];
           if (isSelected || isHovered) return [r, g, b, 255];
+          
+          // Blob mode: highly transparent to merge into single color
+          if (d.isBlob) {
+            return [r, g, b, Math.floor(180 * d.blobOpacity)];
+          }
+          
           return [r, g, b, 200];
         },
         getLineColor: (d): [number, number, number, number] => {
           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
           const isSelected = d.musician.id === selectedId;
           const isHovered = d.musician.id === hovered;
+          
+          // Blob mode: no stroke to help merging
+          if (d.isBlob) {
+            return [r, g, b, 0];
+          }
+          
           if (isSelected) return [255, 255, 255, 255];
           if (isHovered) return [r, g, b, 255];
           return [r, g, b, 180];
@@ -534,9 +558,9 @@ export default function InfluenceView({
         onClick,
         updateTriggers: {
           getPosition: [xExpand, interpolatedPositions],
-          getRadius: [hovered, cappedRadius],
-          getFillColor: [effectiveRelatedIds, selectedId, hovered],
-          getLineColor: [selectedId, hovered],
+          getRadius: [hovered],
+          getFillColor: [effectiveRelatedIds, selectedId, hovered, clusterCompression],
+          getLineColor: [selectedId, hovered, clusterCompression],
         },
         transitions: {
           getRadius: {
@@ -548,7 +572,7 @@ export default function InfluenceView({
       // Musician photos
       new IconLayer({
         id: 'musician-photos',
-        data: musicianData,
+        data: musicianData.filter(d => !d.isBlob),
         getPosition: (d) => {
           const interpolated = interpolatedPositions[d.musician.id];
           return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
@@ -573,6 +597,7 @@ export default function InfluenceView({
           getPosition: [xExpand, interpolatedPositions],
           getSize: [hovered, cappedIconSize],
           getColor: [effectiveRelatedIds],
+          data: [clusterCompression],
         },
         transitions: {
           getSize: {
@@ -580,33 +605,33 @@ export default function InfluenceView({
             easing: (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
           },
         },
- }),
- // Favorite star badges
-       ...(import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && favoritesChecker && musicianData.some((d) => favoritesChecker(d.musician.id)) ? [new IconLayer({
-         id: 'favorite-stars',
-         data: musicianData.filter((d) => favoritesChecker(d.musician.id)),
-          getPosition: (d) => {
-            const interpolated = interpolatedPositions[d.musician.id];
-            const x = interpolated ? interpolated[0] : d.position[0];
-            const y = interpolated ? interpolated[1] : d.position[1];
-            const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
-            // Position star in top-right corner of the musician photo
-            return [sx(x) + radius * 0.5, y - radius * 0.5] as Position2D;
-          },
-         getIcon: () => ({
-           url: 'data:image/svg+xml;base64,' + btoa(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#c8872a" stroke="#c8872a" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`),
-           width: 24,
-           height: 24,
-           mask: false,
-         }),
-         getSize: () => 20,
-         sizeUnits: 'pixels' as const,
-         pickable: false,
-          updateTriggers: {
-            getPosition: [hovered, xExpand, interpolatedPositions],
-            data: [favoritesChecker],
-          },
-       })] : []),
+  }),
+  // Favorite star badges
+        ...(import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && favoritesChecker && musicianData.some((d) => favoritesChecker(d.musician.id)) ? [new IconLayer({
+          id: 'favorite-stars',
+          data: musicianData.filter((d) => favoritesChecker(d.musician.id) && !d.isBlob),
+           getPosition: (d) => {
+             const interpolated = interpolatedPositions[d.musician.id];
+             const x = interpolated ? interpolated[0] : d.position[0];
+             const y = interpolated ? interpolated[1] : d.position[1];
+             const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
+             // Position star in top-right corner of the musician photo
+             return [sx(x) + radius * 0.5, y - radius * 0.5] as Position2D;
+           },
+          getIcon: () => ({
+            url: 'data:image/svg+xml;base64,' + btoa(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#c8872a" stroke="#c8872a" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`),
+            width: 24,
+            height: 24,
+            mask: false,
+          }),
+          getSize: () => 20,
+          sizeUnits: 'pixels' as const,
+          pickable: false,
+           updateTriggers: {
+             getPosition: [hovered, xExpand, interpolatedPositions],
+             data: [favoritesChecker, clusterCompression],
+           },
+        })] : []),
        // Musician labels
        new TextLayer({
          id: 'musician-labels',
@@ -620,13 +645,17 @@ export default function InfluenceView({
          },
         getText: (d) => d.musician.name,
         getSize: cappedTextSize,
-        getColor: (d): [number, number, number, number] => {
-          const isSelected = d.musician.id === selectedId;
-          const isHovered = d.musician.id === hovered;
-          if (isSelected) return [245, 237, 224, 255];
-          if (isHovered) return [232, 200, 152, 255];
-          return [184, 164, 136, effectiveRelatedIds ? 255 : 190];
-        },
+         getColor: (d): [number, number, number, number] => {
+           // Hide labels in blob mode
+           if (d.isBlob) {
+             return [184, 164, 136, 0];
+           }
+           const isSelected = d.musician.id === selectedId;
+           const isHovered = d.musician.id === hovered;
+           if (isSelected) return [245, 237, 224, 255];
+           if (isHovered) return [232, 200, 152, 255];
+           return [184, 164, 136, effectiveRelatedIds ? 255 : 190];
+         },
         getTextAnchor: 'middle',
         getAlignmentBaseline: 'top',
         fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
@@ -635,37 +664,37 @@ export default function InfluenceView({
         outlineColor: [0, 0, 0, 200],
         sizeUnits: 'common' as const,
         pickable: false,
-        updateTriggers: {
-          getPosition: [hovered, xExpand, interpolatedPositions],
-          getSize: [cappedTextSize],
-          getColor: [selectedId, hovered, effectiveRelatedIds],
-          data: [effectiveRelatedIds],
-         },
+         updateTriggers: {
+           getPosition: [hovered, xExpand, interpolatedPositions],
+           getSize: [cappedTextSize],
+           getColor: [selectedId, hovered, effectiveRelatedIds, clusterCompression],
+           data: [effectiveRelatedIds],
+          },
        }),
-      // Cluster labels
-      ...(clusterLabelData.length > 0 ? [new TextLayer({
-        id: 'cluster-labels',
-        data: clusterLabelData,
-        getPosition: (d) => [sx(d.position[0]), d.position[1] - 80] as Position2D,
-        getText: (d) => groupBy === 'style' ? d.style.replace(' Blues', '') : d.style,
-        getSize: 14,
-        getColor: (d): [number, number, number, number] => {
-          const [r, g, b] = getStyleColor(d.style) as [number, number, number];
-          return [r, g, b, Math.floor(255 * (1 - clusterCompression * 0.3))];
-        },
-        getTextAnchor: 'middle',
-        getAlignmentBaseline: 'bottom',
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-        fontWeight: '700',
-        outlineWidth: 4,
-        outlineColor: [0, 0, 0, 220],
-        sizeUnits: 'common' as const,
-        pickable: false,
-        updateTriggers: {
-          getPosition: [xExpand],
-          getColor: [clusterCompression],
-        },
-      })] : []),
+       // Cluster labels
+       ...(clusterLabelData.length > 0 ? [new TextLayer({
+         id: 'cluster-labels',
+         data: clusterLabelData,
+         getPosition: (d) => [sx(d.position[0]), d.position[1] - 80] as Position2D,
+         getText: (d) => groupBy === 'style' ? d.style.replace(' Blues', '') : d.style,
+         getSize: 14,
+         getColor: (d): [number, number, number, number] => {
+           const [r, g, b] = getStyleColor(d.style) as [number, number, number];
+           return [r, g, b, Math.floor(255 * (1 - clusterCompression * 0.3))];
+         },
+         getTextAnchor: 'middle',
+         getAlignmentBaseline: 'bottom',
+         fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+         fontWeight: '700',
+         outlineWidth: 4,
+         outlineColor: [0, 0, 0, 220],
+         sizeUnits: 'common' as const,
+         pickable: false,
+         updateTriggers: {
+           getPosition: [xExpand],
+           getColor: [clusterCompression],
+         },
+       })] : []),
        // Zone labels
       new TextLayer({
         id: 'zone-labels',

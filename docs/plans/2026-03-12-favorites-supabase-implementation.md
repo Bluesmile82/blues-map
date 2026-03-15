@@ -333,12 +333,12 @@ export default function AuthButton() {
             {user.email?.[0].toUpperCase() ?? '?'}
           </div>
         </button>
-        
+
         {showMenu && (
           <>
-            <div 
-              className="fixed inset-0 z-40" 
-              onClick={() => setShowMenu(false)} 
+            <div
+              className="fixed inset-0 z-40"
+              onClick={() => setShowMenu(false)}
             />
             <div className="absolute right-0 top-full mt-1 w-48 bg-zinc-800 rounded-lg shadow-xl border border-white/10 z-50 py-1">
               <div className="px-3 py-2 text-sm text-zinc-400 border-b border-white/10 truncate">
@@ -368,7 +368,7 @@ export default function AuthButton() {
       >
         Sign in
       </button>
-      
+
       {showModal && <AuthModal onClose={() => setShowModal(false)} />}
     </>
   )
@@ -413,23 +413,23 @@ export default function AuthModal({ onClose }: AuthModalProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setSubmitting(true)
-    
+
     if (mode === 'signin') {
       await signInWithEmail(email, password)
     } else {
       await signUpWithEmail(email, password)
     }
-    
+
     setSubmitting(false)
   }
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
-      <div 
-        className="absolute inset-0" 
-        onClick={onClose} 
+      <div
+        className="absolute inset-0"
+        onClick={onClose}
       />
-      
+
       <div className="relative w-full max-w-sm mx-4 bg-zinc-900 rounded-xl shadow-2xl border border-white/10">
         <button
           onClick={onClose}
@@ -439,12 +439,12 @@ export default function AuthModal({ onClose }: AuthModalProps) {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
-        
+
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-6">
             {mode === 'signin' ? 'Sign in' : 'Create account'}
           </h2>
-          
+
           <button
             onClick={signInWithGoogle}
             className="w-full flex items-center justify-center gap-3 px-4 py-2.5 rounded-lg bg-white text-zinc-900 font-medium hover:bg-zinc-100 transition-colors"
@@ -457,13 +457,13 @@ export default function AuthModal({ onClose }: AuthModalProps) {
             </svg>
             Continue with Google
           </button>
-          
+
           <div className="flex items-center gap-3 my-5">
             <div className="flex-1 h-px bg-white/10" />
             <span className="text-sm text-zinc-500">or</span>
             <div className="flex-1 h-px bg-white/10" />
           </div>
-          
+
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label className="block text-sm text-zinc-400 mb-1.5">Email</label>
@@ -475,7 +475,7 @@ export default function AuthModal({ onClose }: AuthModalProps) {
                 className="w-full px-3 py-2 rounded-lg bg-zinc-800 border border-white/10 focus:border-amber-500 focus:outline-none transition-colors"
               />
             </div>
-            
+
             <div>
               <label className="block text-sm text-zinc-400 mb-1.5">Password</label>
               <input
@@ -487,11 +487,11 @@ export default function AuthModal({ onClose }: AuthModalProps) {
                 className="w-full px-3 py-2 rounded-lg bg-zinc-800 border border-white/10 focus:border-amber-500 focus:outline-none transition-colors"
               />
             </div>
-            
+
             {error && (
               <p className="text-sm text-red-400">{error}</p>
             )}
-            
+
             <button
               type="submit"
               disabled={submitting}
@@ -500,7 +500,7 @@ export default function AuthModal({ onClose }: AuthModalProps) {
               {submitting ? 'Loading...' : mode === 'signin' ? 'Sign in' : 'Create account'}
             </button>
           </form>
-          
+
           <p className="mt-4 text-sm text-center text-zinc-400">
             {mode === 'signin' ? (
               <>
@@ -996,7 +996,7 @@ export default function ListsDropdown({ musicianId, onClose }: ListsDropdownProp
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
       <div className="absolute inset-0" onClick={onClose} />
-      
+
       <div className="relative w-full max-w-xs mx-4 bg-zinc-900 rounded-xl shadow-2xl border border-white/10">
         <div className="flex items-center justify-between p-4 border-b border-white/10">
           <h3 className="font-semibold">Add to list</h3>
@@ -1009,7 +1009,7 @@ export default function ListsDropdown({ musicianId, onClose }: ListsDropdownProp
             </svg>
           </button>
         </div>
-        
+
         <div className="max-h-64 overflow-y-auto p-2">
           {lists.map((list) => (
             <button
@@ -1035,7 +1035,7 @@ export default function ListsDropdown({ musicianId, onClose }: ListsDropdownProp
             </button>
           ))}
         </div>
-        
+
         <form onSubmit={handleCreate} className="p-3 border-t border-white/10">
           <div className="flex gap-2">
             <input
@@ -1125,8 +1125,8 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
       <div className="absolute inset-0" onClick={onClose} />
-      
-      <div className="relative w-full max-w-md mx-4 bg-zinc-900 rounded-xl shadow-2xl border border-white/10">
+
+      <div className="absolute top-full w-full max-w-md mx-4 bg-zinc-900 rounded-xl shadow-2xl border border-white/10">
         <div className="flex items-center justify-between p-4 border-b border-white/10">
           <h3 className="font-semibold text-lg">My Lists</h3>
           <button
@@ -1138,11 +1138,11 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
             </svg>
           </button>
         </div>
-        
+
         <div className="max-h-96 overflow-y-auto">
           {lists.map((list) => {
             const count = favoritesMap.get(list.id)?.size ?? 0
-            
+
             return (
               <div
                 key={list.id}
@@ -1177,7 +1177,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                     </span>
                   </div>
                 )}
-                
+
                 <div className="flex items-center gap-1">
                   {/* Public toggle */}
                   <button
@@ -1195,7 +1195,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                       )}
                     </svg>
                   </button>
-                  
+
                   {/* Copy link (only if public) */}
                   {list.isPublic && list.shareSlug && (
                     <button
@@ -1208,7 +1208,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                       </svg>
                     </button>
                   )}
-                  
+
                   {/* Rename */}
                   {!list.isDefault && (
                     <button
@@ -1224,7 +1224,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                       </svg>
                     </button>
                   )}
-                  
+
                   {/* Delete */}
                   {!list.isDefault && (
                     <button
@@ -1246,7 +1246,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
             )
           })}
         </div>
-        
+
         <form onSubmit={handleCreate} className="p-4 border-t border-white/10">
           <div className="flex gap-2">
             <input
@@ -1358,7 +1358,7 @@ export default function PublicListView({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
       <div className="absolute inset-0" onClick={onClose} />
-      
+
       <div className="relative w-full max-w-lg mx-4 bg-zinc-900 rounded-xl shadow-2xl border border-white/10 max-h-[80vh] flex flex-col">
         <div className="flex items-center justify-between p-4 border-b border-white/10">
           <div>
@@ -1380,14 +1380,14 @@ export default function PublicListView({
             </svg>
           </button>
         </div>
-        
+
         <div className="flex-1 overflow-y-auto">
           {loading && (
             <div className="flex items-center justify-center py-12">
               <div className="w-8 h-8 border-2 border-amber-500 border-t-transparent rounded-full animate-spin" />
             </div>
           )}
-          
+
           {error && (
             <div className="flex flex-col items-center justify-center py-12 text-center px-4">
               <svg className="w-12 h-12 text-zinc-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1396,13 +1396,13 @@ export default function PublicListView({
               <p className="text-zinc-400">{error}</p>
             </div>
           )}
-          
+
           {!loading && !error && listMusicians.length === 0 && (
             <div className="flex flex-col items-center justify-center py-12 text-center px-4">
               <p className="text-zinc-400">This list is empty</p>
             </div>
           )}
-          
+
           {!loading && !error && listMusicians.map((musician) => (
             <button
               key={musician.id}
@@ -1497,7 +1497,7 @@ const [showListsDropdown, setShowListsDropdown] = useState(false)
     </svg>
     {isFavorited(musician.id) ? 'Favorited' : 'Favorite'}
   </button>
-  
+
   <button
     onClick={() => {
       if (!user) {
@@ -1786,8 +1786,8 @@ CREATE POLICY "Users can create own lists"
     auth.uid() = user_id
     AND (SELECT COUNT(*) FROM lists WHERE user_id = auth.uid()) < 20
     AND (
-      SELECT COUNT(*) FROM lists 
-      WHERE user_id = auth.uid() 
+      SELECT COUNT(*) FROM lists
+      WHERE user_id = auth.uid()
       AND created_at > NOW() - INTERVAL '1 minute'
     ) < 5
   );
