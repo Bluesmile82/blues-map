@@ -356,7 +356,7 @@ export default function InfluenceView({
 
     const lifespanData = displayMusicians
       .map((m) => {
-        const pos = positions[m.id];
+        const pos = interpolatedPositions[m.id];
         if (!pos) return null;
         const x = sx(pos[0]);
         const yBirth = yearToWorldY(getYear(m.birthDate), halfH, h, 100);
