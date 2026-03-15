@@ -615,8 +615,10 @@ export default function InfluenceView({
         onHover,
         onClick,
         getColor: (d): [number, number, number, number] => {
-          const dimmed = currentZoom < CLUSTER_DETAILS_ZOOM && effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
-          if (dimmed) return [255, 255, 255, 60];
+          const isSelected = d.musician.id === selectedId;
+          const isHovered = d.musician.id === hovered;
+          const dimmed = currentZoom < CLUSTER_DETAILS_ZOOM && effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id) || !(isHovered || isSelected);
+          if (dimmed) return [255, 255, 255, 100];
           return [255, 255, 255, 255];
         },
         updateTriggers: {
@@ -667,23 +669,29 @@ export default function InfluenceView({
           const x = interpolated ? interpolated[0] : d.position[0];
           const y = interpolated ? interpolated[1] : d.position[1];
           const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
-          return [sx(x), y + radius + 12] as Position2D;
+          return [sx(x), y + radius + 6] as Position2D;
         },
         getText: (d) => d.musician.name,
-        getSize: cappedTextSize,
+        getSize: (d): number => {
+          const isSelected = d.musician.id === selectedId;
+          const isHovered = d.musician.id === hovered;
+
+          return (isSelected || isHovered) ? cappedTextSize + 4 : cappedTextSize;
+        },
         getColor: (d): [number, number, number, number] => {
           const isSelected = d.musician.id === selectedId;
           const isHovered = d.musician.id === hovered;
-          if (isSelected) return [245, 237, 224, 255];
-          if (isHovered) return [232, 200, 152, 255];
-          return [184, 164, 136, effectiveRelatedIds ? 255 : 190];
+          if (isSelected) return [255, 2255, 225, 255];
+          if (isHovered) return [255, 255, 225, 255];
+          return [255, 255, 255, effectiveRelatedIds ? 255 : 140];
         },
         getTextAnchor: 'middle',
         getAlignmentBaseline: 'top',
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
         fontWeight: '600',
         outlineWidth: 3,
         outlineColor: [0, 0, 0, 200],
+        background: true,
+        backgroundColor: [0, 0, 0, 200],
         sizeUnits: 'common' as const,
         pickable: false,
         updateTriggers: {
@@ -750,7 +758,7 @@ export default function InfluenceView({
   const goToMusician = useCallback((m: Musician, minZoom = CLUSTER_DETAILS_ZOOM) => {
     const pos = positions[m.id];
     if (!pos || !deckVS) return;
-    const targetZoom = Math.max(minZoom, deckVS.zoom);
+    const targetZoom = Math.max(minZoom, deckVS.zoom) + 0.1;
     const startZoom = deckVS.zoom;
     const startTarget = deckVS.target;
     const endTarget: [number, number, number] = [pos[0] * Math.max(1, Math.pow(2, Math.max(0, targetZoom - EXPAND_ZOOM_THRESHOLD))), pos[1], 0];
