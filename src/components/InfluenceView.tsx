@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect, useMemo, useCallback } from 'react';
 import DeckGL from '@deck.gl/react';
 import { OrthographicView } from '@deck.gl/core';
-import { PathLayer, ScatterplotLayer, TextLayer, IconLayer, PolygonLayer } from '@deck.gl/layers';
+import { PathLayer, ScatterplotLayer, TextLayer, IconLayer } from '@deck.gl/layers';
 import type { PickingInfo } from '@deck.gl/core';
 import type { Musician } from '../types';
 import { getStyleColor, getStyleHex } from '../utils/colors';
@@ -37,48 +37,6 @@ const CLUSTER_ZOOM_START = 0.8; // Below this: fully clustered
 const CLUSTER_ZOOM_END = 1.2;   // Above this: fully expanded
 const CLUSTER_DETAILS_ZOOM = 1.0; // Above this: show musician names and images
 
-// Helper: compute convex hull using Graham scan algorithm
-function computeConvexHull(points: Position2D[]): Position2D[] {
-  if (points.length < 3) return points;
-  
-  // Find the point with the lowest y (and leftmost if tied)
-  const start = points.reduce((a, b) => a[1] < b[1] || (a[1] === b[1] && a[0] < b[0]) ? a : b);
-  
-  // Sort by polar angle from start point
-  const sorted = points
-    .filter(p => p !== start)
-    .map(p => ({ point: p, angle: Math.atan2(p[1] - start[1], p[0] - start[0]) }))
-    .sort((a, b) => a.angle - b.angle)
-    .map(({ point }) => point);
-  
-  const hull: Position2D[] = [start];
-  
-  for (const point of sorted) {
-    while (hull.length > 1) {
-      const top = hull[hull.length - 1];
-      const second = hull[hull.length - 2];
-      const cross = (top[0] - second[0]) * (point[1] - second[1]) - (top[1] - second[1]) * (point[0] - second[0]);
-      if (cross <= 0) break;
-      hull.pop();
-    }
-    hull.push(point);
-  }
-  
-  return hull;
-}
-
-// Helper: expand polygon outward from center
-function expandPolygon(polygon: Position2D[], center: Position2D, expansion: number): Position2D[] {
-  return polygon.map(([x, y]) => {
-    const dx = x - center[0];
-    const dy = y - center[1];
-    const dist = Math.sqrt(dx * dx + dy * dy);
-    if (dist === 0) return [x, y];
-    const scale = (dist + expansion) / dist;
-    return [center[0] + dx * scale, center[1] + dy * scale];
-  });
-}
-
 type DeckVS = { target: [number, number, number]; zoom: number; minZoom: number; maxZoom: number };
 
 export default function InfluenceView({
@@ -110,7 +68,7 @@ export default function InfluenceView({
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   const [filterListId, setFilterListId] = useState<string | null>(null);
   const [filtersCollapsed, setFiltersCollapsed] = useState(false);
-  
+
   const user = useAtomValue(userAtom);
   const lists = useAtomValue(listsAtom);
   const favoritesMap = useAtomValue(favoritesMapAtom);
@@ -129,7 +87,7 @@ export default function InfluenceView({
   // Create favorites checker for the selected list or all lists
   const favoritesChecker = useMemo(() => {
     if (!showFavoritesOnly) return null;
-    
+
     if (filterListId) {
       // Filter by specific list
       const set = favoritesMap.get(filterListId);
@@ -153,14 +111,14 @@ export default function InfluenceView({
 
     const yearFiltered = yearRange
       ? styleFiltered.filter((m) => {
-          const y = parseInt(m.activeFrom);
-          return y >= yearRange[0] && y <= yearRange[1];
-        })
+        const y = parseInt(m.activeFrom);
+        return y >= yearRange[0] && y <= yearRange[1];
+      })
       : styleFiltered;
 
     const favoritesFiltered = showFavoritesOnly && favoritesChecker
-       ? yearFiltered.filter((m) => favoritesChecker(m.id))
-       : yearFiltered;
+      ? yearFiltered.filter((m) => favoritesChecker(m.id))
+      : yearFiltered;
 
     return favoritesFiltered;
   }, [musicians, styleFilter, yearRange, showFavoritesOnly, favoritesChecker]);
@@ -307,15 +265,15 @@ export default function InfluenceView({
     return result;
   }, [positions, clusters, clusterCompression, musicianMap]);
 
-const clusterLabelData = useMemo(() => {
-  return Object.entries(clusters)
-    .filter(([_, cluster]) => cluster.count > 0 && clusterCompression > 0.5)
-    .map(([style, cluster]) => ({
-      style,
-      position: cluster.center,
-      count: cluster.count,
-    }));
-}, [clusters, clusterCompression]);
+  const clusterLabelData = useMemo(() => {
+    return Object.entries(clusters)
+      .filter(([_, cluster]) => cluster.count > 0 && clusterCompression > 0.5)
+      .map(([style, cluster]) => ({
+        style,
+        position: cluster.center,
+        count: cluster.count,
+      }));
+  }, [clusters, clusterCompression]);
 
   const focusId = hovered ?? selectedId;
   const focusedMusician = focusId ? displayMusicians.find((m) => m.id === focusId) : null;
@@ -347,44 +305,13 @@ const clusterLabelData = useMemo(() => {
   const cappedRadius = NODE_RADIUS * overlapFactor;
   const cappedIconSize = ICON_SIZE * overlapFactor;
   const cappedTextSize = 14 * overlapFactor;
-
-  // Compute cluster shape polygons (filled areas)
-  const clusterShapeData = useMemo(() => {
-    const result: Array<{ style: string; polygon: Position2D[]; count: number }> = [];
-    
-    Object.entries(clusters).forEach(([style, cluster]) => {
-      if (cluster.count === 0) return;
-      
-      // Get all musician positions in this cluster
-      const positionsInCluster = cluster.musicianIds
-        .map(id => positions[id])
-        .filter((p): p is Position2D => p !== undefined);
-      
-      if (positionsInCluster.length < 3) return;
-      
-      // Compute convex hull using Graham scan algorithm
-      const convexHull = computeConvexHull(positionsInCluster);
-      
-      // Expand hull outward by circle radius to encompass the circles
-      const expandedHull = expandPolygon(convexHull, cluster.center, cappedRadius * 1.2);
-      
-      result.push({
-        style,
-        polygon: expandedHull,
-        count: cluster.count,
-      });
-    });
-    
-    return result;
-  }, [clusters, positions, cappedRadius]);
-
-
+ 
   // Build musician data for layers
   const musicianData = useMemo(() => {
     return displayMusicians.map((m) => {
       const pos = positions[m.id];
       if (!pos) return null;
-      
+
       return { musician: m, position: pos };
     }).filter(Boolean) as { musician: Musician; position: Position2D }[];
   }, [displayMusicians, positions]);
@@ -448,22 +375,6 @@ const clusterLabelData = useMemo(() => {
       })
       .filter(Boolean) as { musician: Musician; path: [Position2D, Position2D] }[];
 
-    // Style zone background polygons (unused for now, keeping for potential future use)
-    // const zoneData = styleZones.map((zone) => {
-    //   const [r, g, b] = getStyleColor(zone.style) as [number, number, number];
-    //   return {
-    //     zone,
-    //     path: [
-    //       [zone.x, -h / 2 + 100],
-    //       [zone.x + zone.width, -h / 2 + 100],
-    //       [zone.x + zone.width, h / 2 - 100],
-    //       [zone.x, h / 2 - 100],
-    //       [zone.x, -h / 2 + 100],
-    //     ] as Position2D[],
-    //     color: [r, g, b, 12] as [number, number, number, number],
-    //   };
-    // });
-
     return [
       // Zone backgrounds
       new PathLayer({
@@ -489,23 +400,23 @@ const clusterLabelData = useMemo(() => {
         widthUnits: 'pixels' as const,
         pickable: false,
       }),
-       // Lifespan lines (dim)
-       new PathLayer({
-         id: 'lifespan-dim',
-         data: lifespanData.filter((d) => (!focusId || d.musician.id !== focusId) && clusterCompression < 0.5),
-         getPath: (d) => d.path,
-         getColor: (d): [number, number, number, number] => {
-           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
-           return [r, g, b, focusId ? 20 : 50];
-         },
-         getWidth: 1.5,
-         widthUnits: 'pixels' as const,
-         pickable: false,
-         updateTriggers: { 
-           getColor: [focusId],
-           data: [clusterCompression],
-         },
-       }),
+      // Lifespan lines (dim)
+      new PathLayer({
+        id: 'lifespan-dim',
+        data: lifespanData.filter((d) => (!focusId || d.musician.id !== focusId) && clusterCompression < 0.5),
+        getPath: (d) => d.path,
+        getColor: (d): [number, number, number, number] => {
+          const [r, g, b] = getStyleColor(d.musician.bluesStyle);
+          return [r, g, b, focusId ? 20 : 50];
+        },
+        getWidth: 1.5,
+        widthUnits: 'pixels' as const,
+        pickable: false,
+        updateTriggers: {
+          getColor: [focusId],
+          data: [clusterCompression],
+        },
+      }),
       // Lifespan lines (focused)
       ...(focusId
         ? [new PathLayer({
@@ -583,74 +494,47 @@ const clusterLabelData = useMemo(() => {
           updateTriggers: { getPath: [xExpand] },
          })]
          : []),
-       // Cluster filled shapes
-       new PolygonLayer({
-         id: 'cluster-shapes',
-         data: clusterShapeData,
-         getPolygon: (d) => [d.polygon.map(([x, y]: [number, number]) => [sx(x), y] as [number, number])] as [number, number][][],
-         getFillColor: (d): [number, number, number, number] => {
-           const [r, g, b] = getStyleColor(d.style) as [number, number, number];
-           const isHovered = hoveredStyle === d.style;
-           return [r, g, b, isHovered ? 240 : 200];
-         },
-         getLineColor: (d): [number, number, number, number] => {
-           const [r, g, b] = getStyleColor(d.style) as [number, number, number];
-           return [r, g, b, 255];
-         },
-         lineWidth: 3,
-         lineWidthUnits: 'pixels' as const,
-         pickable: true,
-         onHover: (info) => {
-           const d = info.object as { style: string };
-           setHoveredStyle(d?.style ?? null);
-         },
-         updateTriggers: {
-           getPolygon: [xExpand],
-           getFillColor: [hoveredStyle],
-           getLineColor: [hoveredStyle],
-         },
-       }),
-        // Musician circles (filled background)
+       // Musician circles (filled background)
        new ScatterplotLayer({
          id: 'musician-circles',
-         data: currentZoom > CLUSTER_ZOOM_END ? musicianData : [],
+         data: musicianData,
          getPosition: (d) => {
            const interpolated = interpolatedPositions[d.musician.id];
            return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
          },
-         getRadius: (d) => d.musician.id === hovered ? cappedRadius * 2 : cappedRadius,
-         getFillColor: (d): [number, number, number, number] => {
-           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
-           const dimmed = effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
-           const isSelected = d.musician.id === selectedId;
-           const isHovered = d.musician.id === hovered;
-           if (dimmed) return [r, g, b, 40];
-           if (isSelected || isHovered) return [r, g, b, 255];
-           return [r, g, b, 255];
-         },
-         getLineColor: (d): [number, number, number, number] => {
-           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
-           const isSelected = d.musician.id === selectedId;
-           const isHovered = d.musician.id === hovered;
-           if (isSelected) return [255, 255, 255, 255];
-           if (isHovered) return [r, g, b, 255];
-           return [r, g, b, 180];
-         },
-         lineWidthMinPixels: 2,
-         lineWidthMaxPixels: 4,
-         stroked: true,
-         filled: true,
-         radiusUnits: 'common' as const,
-         pickable: true,
-         onHover,
-         onClick,
-         updateTriggers: {
-           getPosition: [xExpand, interpolatedPositions],
-           getRadius: [hovered, cappedRadius],
-           getFillColor: [effectiveRelatedIds, selectedId, hovered],
-           getLineColor: [selectedId, hovered],
-           data: [currentZoom],
-         },
+        getRadius: (d) => d.musician.id === hovered ? cappedRadius * 2 : cappedRadius,
+        getFillColor: (d): [number, number, number, number] => {
+          const [r, g, b] = getStyleColor(d.musician.bluesStyle);
+          const dimmed = effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
+          const isSelected = d.musician.id === selectedId;
+          const isHovered = d.musician.id === hovered;
+          if (dimmed) return [r, g, b, 40];
+          if (isSelected || isHovered) return [r, g, b, 255];
+          return [r, g, b, 255];
+        },
+        getLineColor: (d): [number, number, number, number] => {
+          const [r, g, b] = getStyleColor(d.musician.bluesStyle);
+          const isSelected = d.musician.id === selectedId;
+          const isHovered = d.musician.id === hovered;
+          if (isSelected) return [255, 255, 255, 255];
+          if (isHovered) return [r, g, b, 255];
+          return [r, g, b, 180];
+        },
+        lineWidthMinPixels: 2,
+        lineWidthMaxPixels: 4,
+        stroked: true,
+        filled: true,
+        radiusUnits: 'common' as const,
+        pickable: true,
+        onHover,
+        onClick,
+        updateTriggers: {
+          getPosition: [xExpand, interpolatedPositions],
+          getRadius: [hovered, cappedRadius],
+          getFillColor: [effectiveRelatedIds, selectedId, hovered],
+          getLineColor: [selectedId, hovered],
+          data: [currentZoom],
+        },
         transitions: {
           getRadius: {
             duration: 150,
@@ -658,131 +542,131 @@ const clusterLabelData = useMemo(() => {
           },
         },
       }),
-       // Musician photos
-       new IconLayer({
-         id: 'musician-photos',
-         data: currentZoom > CLUSTER_DETAILS_ZOOM ? musicianData : [],
-         getPosition: (d) => {
-           const interpolated = interpolatedPositions[d.musician.id];
-           return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
-         },
-         getIcon: (d) => ({
-           url: d.musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(d.musician.name)}&background=251a0d&color=c8872a&size=80`,
-           width: 128,
-           height: 128,
-           mask: false,
-         }),
-         getSize: (d) => d.musician.id === hovered ? cappedIconSize * 2 : cappedIconSize,
-         sizeUnits: 'common' as const,
-         pickable: true,
-         onHover,
-         onClick,
-         getColor: (d): [number, number, number, number] => {
-           const dimmed = effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
-           if (dimmed) return [255, 255, 255, 60];
-           return [255, 255, 255, 255];
-         },
-         updateTriggers: {
-           getPosition: [xExpand, interpolatedPositions],
-           getSize: [hovered, cappedIconSize],
-           getColor: [effectiveRelatedIds],
-           data: [currentZoom],
-         },
-         transitions: {
-           getSize: {
-             duration: 150,
-             easing: (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
-           },
-         },
-  }),
-   // Favorite star badges
-        ...(import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && favoritesChecker && musicianData.some((d) => favoritesChecker(d.musician.id)) ? [new IconLayer({
-          id: 'favorite-stars',
-          data: clusterCompression < 0.5 ? musicianData.filter((d) => favoritesChecker(d.musician.id)) : [],
-           getPosition: (d) => {
-             const interpolated = interpolatedPositions[d.musician.id];
-             const x = interpolated ? interpolated[0] : d.position[0];
-             const y = interpolated ? interpolated[1] : d.position[1];
-             const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
-             // Position star in top-right corner of the musician photo
-             return [sx(x) + radius * 0.5, y - radius * 0.5] as Position2D;
-           },
-          getIcon: () => ({
-            url: 'data:image/svg+xml;base64,' + btoa(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#c8872a" stroke="#c8872a" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`),
-            width: 24,
-            height: 24,
-            mask: false,
-          }),
-          getSize: () => 20,
-          sizeUnits: 'pixels' as const,
-          pickable: false,
-           updateTriggers: {
-             getPosition: [hovered, xExpand, interpolatedPositions],
-             data: [favoritesChecker, clusterCompression],
-           },
-        })] : []),
-        // Musician labels
-        new TextLayer({
-          id: 'musician-labels',
-          data: currentZoom > CLUSTER_DETAILS_ZOOM ? musicianData.filter((d) => !effectiveRelatedIds || effectiveRelatedIds.has(d.musician.id)) : [],
-          getPosition: (d) => {
-            const interpolated = interpolatedPositions[d.musician.id];
-            const x = interpolated ? interpolated[0] : d.position[0];
-            const y = interpolated ? interpolated[1] : d.position[1];
-            const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
-            return [sx(x), y + radius + 12] as Position2D;
+      // Musician photos
+      new IconLayer({
+        id: 'musician-photos',
+        data: currentZoom > CLUSTER_DETAILS_ZOOM ? musicianData : [],
+        getPosition: (d) => {
+          const interpolated = interpolatedPositions[d.musician.id];
+          return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
+        },
+        getIcon: (d) => ({
+          url: d.musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(d.musician.name)}&background=251a0d&color=c8872a&size=80`,
+          width: 128,
+          height: 128,
+          mask: false,
+        }),
+        getSize: (d) => d.musician.id === hovered ? cappedIconSize * 2 : cappedIconSize,
+        sizeUnits: 'common' as const,
+        pickable: true,
+        onHover,
+        onClick,
+        getColor: (d): [number, number, number, number] => {
+          const dimmed = effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
+          if (dimmed) return [255, 255, 255, 60];
+          return [255, 255, 255, 255];
+        },
+        updateTriggers: {
+          getPosition: [xExpand, interpolatedPositions],
+          getSize: [hovered, cappedIconSize],
+          getColor: [effectiveRelatedIds],
+          data: [currentZoom],
+        },
+        transitions: {
+          getSize: {
+            duration: 150,
+            easing: (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
           },
-         getText: (d) => d.musician.name,
-         getSize: cappedTextSize,
-          getColor: (d): [number, number, number, number] => {
-            const isSelected = d.musician.id === selectedId;
-            const isHovered = d.musician.id === hovered;
-            if (isSelected) return [245, 237, 224, 255];
-            if (isHovered) return [232, 200, 152, 255];
-            return [184, 164, 136, effectiveRelatedIds ? 255 : 190];
-          },
-         getTextAnchor: 'middle',
-         getAlignmentBaseline: 'top',
-         fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-         fontWeight: '600',
-         outlineWidth: 3,
-         outlineColor: [0, 0, 0, 200],
-         sizeUnits: 'common' as const,
-         pickable: false,
-          updateTriggers: {
-            getPosition: [hovered, xExpand, interpolatedPositions],
-            getSize: [cappedTextSize],
-            getColor: [selectedId, hovered, effectiveRelatedIds],
-            data: [effectiveRelatedIds, currentZoom],
-          },
-         }),
-        // Cluster labels
-        ...(clusterLabelData.length > 0 ? [new TextLayer({
-          id: 'cluster-labels',
-          data: clusterLabelData,
-          getPosition: (d) => [sx(d.position[0]), d.position[1]] as Position2D,
-          getText: (d) => {
-            const styleName = groupBy === 'style' ? d.style.replace(' Blues', '') : d.style;
-            const isHovered = hoveredStyle === d.style;
-            return isHovered ? `${styleName} (${d.count})` : styleName;
-          },
-          getSize: (d) => hoveredStyle === d.style ? 28 : 24,
-          getColor: () => [255, 255, 255, 255],
-          getTextAnchor: 'middle',
-          getAlignmentBaseline: 'center',
-          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-          fontWeight: '700',
-          outlineWidth: 6,
-          outlineColor: [0, 0, 0, 255],
-          sizeUnits: 'common' as const,
-          pickable: false,
-          updateTriggers: {
-            getPosition: [xExpand],
-            getText: [hoveredStyle, groupBy],
-            getSize: [hoveredStyle],
-          },
-        })] : []),
-       // Zone labels
+        },
+      }),
+      // Favorite star badges
+      ...(import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && favoritesChecker && musicianData.some((d) => favoritesChecker(d.musician.id)) ? [new IconLayer({
+        id: 'favorite-stars',
+        data: clusterCompression < 0.5 ? musicianData.filter((d) => favoritesChecker(d.musician.id)) : [],
+        getPosition: (d) => {
+          const interpolated = interpolatedPositions[d.musician.id];
+          const x = interpolated ? interpolated[0] : d.position[0];
+          const y = interpolated ? interpolated[1] : d.position[1];
+          const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
+          // Position star in top-right corner of the musician photo
+          return [sx(x) + radius * 0.5, y - radius * 0.5] as Position2D;
+        },
+        getIcon: () => ({
+          url: 'data:image/svg+xml;base64,' + btoa(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#c8872a" stroke="#c8872a" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`),
+          width: 24,
+          height: 24,
+          mask: false,
+        }),
+        getSize: () => 20,
+        sizeUnits: 'pixels' as const,
+        pickable: false,
+        updateTriggers: {
+          getPosition: [hovered, xExpand, interpolatedPositions],
+          data: [favoritesChecker, clusterCompression],
+        },
+      })] : []),
+      // Musician labels
+      new TextLayer({
+        id: 'musician-labels',
+        data: currentZoom > CLUSTER_DETAILS_ZOOM ? musicianData.filter((d) => !effectiveRelatedIds || effectiveRelatedIds.has(d.musician.id)) : [],
+        getPosition: (d) => {
+          const interpolated = interpolatedPositions[d.musician.id];
+          const x = interpolated ? interpolated[0] : d.position[0];
+          const y = interpolated ? interpolated[1] : d.position[1];
+          const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
+          return [sx(x), y + radius + 12] as Position2D;
+        },
+        getText: (d) => d.musician.name,
+        getSize: cappedTextSize,
+        getColor: (d): [number, number, number, number] => {
+          const isSelected = d.musician.id === selectedId;
+          const isHovered = d.musician.id === hovered;
+          if (isSelected) return [245, 237, 224, 255];
+          if (isHovered) return [232, 200, 152, 255];
+          return [184, 164, 136, effectiveRelatedIds ? 255 : 190];
+        },
+        getTextAnchor: 'middle',
+        getAlignmentBaseline: 'top',
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        fontWeight: '600',
+        outlineWidth: 3,
+        outlineColor: [0, 0, 0, 200],
+        sizeUnits: 'common' as const,
+        pickable: false,
+        updateTriggers: {
+          getPosition: [hovered, xExpand, interpolatedPositions],
+          getSize: [cappedTextSize],
+          getColor: [selectedId, hovered, effectiveRelatedIds],
+          data: [effectiveRelatedIds, currentZoom],
+        },
+      }),
+      // Cluster labels
+      ...(clusterLabelData.length > 0 ? [new TextLayer({
+        id: 'cluster-labels',
+        data: clusterLabelData,
+        getPosition: (d) => [sx(d.position[0]), d.position[1]] as Position2D,
+        getText: (d) => {
+          const styleName = groupBy === 'style' ? d.style.replace(' Blues', '') : d.style;
+          const isHovered = hoveredStyle === d.style;
+          return isHovered ? `${styleName} (${d.count})` : styleName;
+        },
+        getSize: (d) => hoveredStyle === d.style ? 28 : 24,
+        getColor: () => [255, 255, 255, 255],
+        getTextAnchor: 'middle',
+        getAlignmentBaseline: 'center',
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        fontWeight: '700',
+        outlineWidth: 6,
+        outlineColor: [0, 0, 0, 255],
+        sizeUnits: 'common' as const,
+        pickable: false,
+        updateTriggers: {
+          getPosition: [xExpand],
+          getText: [hoveredStyle, groupBy],
+          getSize: [hoveredStyle],
+        },
+      })] : []),
+      // Zone labels
       new TextLayer({
         id: 'zone-labels',
         data: styleZones,
@@ -802,7 +686,7 @@ const clusterLabelData = useMemo(() => {
         updateTriggers: { getPosition: [xExpand] },
       }),
     ];
-  }, [dims.width, edges, playedWithEdges, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, clusterLabelData, clusterShapeData, currentZoom]);
+  }, [dims.width, edges, playedWithEdges, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, clusterLabelData, currentZoom]);
 
   // Search
   const searchQuery = search.trim().toLowerCase();
@@ -927,150 +811,150 @@ const clusterLabelData = useMemo(() => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            
+
             {/* Collapsible filters wrapper */}
             <div className={`${filtersCollapsed ? 'hidden' : 'flex'} sm:flex flex-col gap-2`}>
-            <div className="relative">
-              <SearchInput
-                ref={searchInputRef}
-                value={search}
-                onChange={setSearch}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' && searchMatches[0]) goToMusician(searchMatches[0]);
-                  if (e.key === 'Escape') setSearch('');
-                }}
-                placeholder="Find by name…"
-              />
-              {searchMatches.length > 0 && (
-                <div className="absolute top-full mt-1 left-0 right-0 bg-[#0f0c07] border border-[#2a1e0e] rounded-lg overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto">
-                  {searchMatches.map((m) => {
-                     const hex = getStyleHex(m.bluesStyle);
-                     const isFav = isMusicianFavorited(m.id);
-                    return (
-                      <button
-                        key={m.id}
-                        onClick={() => goToMusician(m)}
-                        className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-[#1a1208] transition-colors group"
-                      >
-                        <span className="w-3 h-3 rounded-full shrink-0" style={{ background: hex }} />
-                        <span className="text-[0.8rem] text-ink flex-1 truncate">{m.name}</span>
-                        <span className="text-[0.65rem] shrink-0" style={{ color: hex }}>{m.bluesStyle.replace(' Blues', '')}</span>
-                        {import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
-                          <svg
-                            className="w-4 h-4 shrink-0"
-                            viewBox="0 0 24 24"
-                            fill={isFav ? "currentColor" : "none"}
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            style={{ color: isFav ? '#c8872a' : '#6b5c4a' }}
-                          >
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                          </svg>
-                        )}
-                      </button>
-                    );
-                  })}
-                </div>
-              )}
-            </div>
-            <SearchInput
-              value={textFilter}
-              onChange={setTextFilter}
-              placeholder="Filter by description or albums…"
-            />
-            {textFilter && (
-              <p className="text-[0.65rem] text-ink3 px-0.5">{displayMusicians.length} musician{displayMusicians.length !== 1 ? 's' : ''} shown</p>
-            )}
-
-            {/* Favorites filter - only show when logged in */}
-            {user && (
-              <div className="bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2 flex flex-col gap-2">
-                <div className="flex items-center gap-2">
-                  <input
-                    type="checkbox"
-                    checked={showFavoritesOnly}
-                    onChange={(e) => setShowFavoritesOnly(e.target.checked)}
-                    className="w-4 h-4 rounded border-[#2a1e0e] bg-[#0f0c07] text-accent focus:ring-accent focus:ring-offset-0"
-                  />
-                  <span className="text-[0.7rem] text-ink3">Show favorites only</span>
-                </div>
-                
-                {/* List selector dropdown */}
-                {showFavoritesOnly && lists.length > 0 && (
-                  <div className="flex flex-col gap-1.5">
-                    <select
-                      value={filterListId ?? ''}
-                      onChange={(e) => setFilterListId(e.target.value || null)}
-                      className="text-[0.7rem] bg-[#0f0c07] border border-[#2a1e0e] rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
-                    >
-                      <option value="">All lists</option>
-                      {lists.map((list) => {
-                        const count = favoritesMap.get(list.id)?.size ?? 0
-                        return (
-                          <option key={list.id} value={list.id}>
-                            {list.name} ({count})
-                          </option>
-                        )
-                      })}
-                    </select>
+              <div className="relative">
+                <SearchInput
+                  ref={searchInputRef}
+                  value={search}
+                  onChange={setSearch}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && searchMatches[0]) goToMusician(searchMatches[0]);
+                    if (e.key === 'Escape') setSearch('');
+                  }}
+                  placeholder="Find by name…"
+                />
+                {searchMatches.length > 0 && (
+                  <div className="absolute top-full mt-1 left-0 right-0 bg-[#0f0c07] border border-[#2a1e0e] rounded-lg overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto">
+                    {searchMatches.map((m) => {
+                      const hex = getStyleHex(m.bluesStyle);
+                      const isFav = isMusicianFavorited(m.id);
+                      return (
+                        <button
+                          key={m.id}
+                          onClick={() => goToMusician(m)}
+                          className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-[#1a1208] transition-colors group"
+                        >
+                          <span className="w-3 h-3 rounded-full shrink-0" style={{ background: hex }} />
+                          <span className="text-[0.8rem] text-ink flex-1 truncate">{m.name}</span>
+                          <span className="text-[0.65rem] shrink-0" style={{ color: hex }}>{m.bluesStyle.replace(' Blues', '')}</span>
+                          {import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
+                            <svg
+                              className="w-4 h-4 shrink-0"
+                              viewBox="0 0 24 24"
+                              fill={isFav ? "currentColor" : "none"}
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              style={{ color: isFav ? '#c8872a' : '#6b5c4a' }}
+                            >
+                              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                          )}
+                        </button>
+                      );
+                    })}
                   </div>
                 )}
               </div>
-            )}
+              <SearchInput
+                value={textFilter}
+                onChange={setTextFilter}
+                placeholder="Filter by description or albums…"
+              />
+              {textFilter && (
+                <p className="text-[0.65rem] text-ink3 px-0.5">{displayMusicians.length} musician{displayMusicians.length !== 1 ? 's' : ''} shown</p>
+              )}
 
-            {/* Year range filter */}
-            <div className="bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2 flex flex-col gap-1.5">
-              <div className="flex items-center justify-between">
-                <span className="text-[0.6rem] text-accent tracking-widest uppercase">Active years</span>
-                {yearRange && (
-                  <button
-                    onClick={() => setYearRange(null)}
-                    className="text-[0.55rem] text-ink3 hover:text-ink transition-colors"
-                  >
-                    reset
-                  </button>
-                )}
-              </div>
-              <div className="flex items-center justify-between text-[0.65rem] text-ink3">
-                <span>{effectiveYearRange[0]}</span>
-                <span>{effectiveYearRange[1]}</span>
-              </div>
-              <div className="relative h-4 flex items-center">
-                <input
-                  type="range"
-                  min={minYear}
-                  max={maxYear}
-                  value={effectiveYearRange[0]}
-                  onChange={(e) => {
-                    const v = parseInt(e.target.value);
-                    setYearRange([Math.min(v, effectiveYearRange[1] - 1), effectiveYearRange[1]]);
-                  }}
-                  className="year-range-slider absolute w-full h-1"
-                  style={{ zIndex: 3 }}
-                />
-                <input
-                  type="range"
-                  min={minYear}
-                  max={maxYear}
-                  value={effectiveYearRange[1]}
-                  onChange={(e) => {
-                    const v = parseInt(e.target.value);
-                    setYearRange([effectiveYearRange[0], Math.max(v, effectiveYearRange[0] + 1)]);
-                  }}
-                  className="year-range-slider absolute w-full h-1"
-                  style={{ zIndex: 3 }}
-                />
-                <div className="absolute w-full h-1 rounded bg-[#2a1e0e]" style={{ zIndex: 1 }}>
-                  <div
-                    className="absolute h-full rounded bg-accent/50"
-                    style={{
-                      left: `${((effectiveYearRange[0] - minYear) / (maxYear - minYear)) * 100}%`,
-                      right: `${((maxYear - effectiveYearRange[1]) / (maxYear - minYear)) * 100}%`,
+              {/* Favorites filter - only show when logged in */}
+              {user && (
+                <div className="bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2 flex flex-col gap-2">
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="checkbox"
+                      checked={showFavoritesOnly}
+                      onChange={(e) => setShowFavoritesOnly(e.target.checked)}
+                      className="w-4 h-4 rounded border-[#2a1e0e] bg-[#0f0c07] text-accent focus:ring-accent focus:ring-offset-0"
+                    />
+                    <span className="text-[0.7rem] text-ink3">Show favorites only</span>
+                  </div>
+
+                  {/* List selector dropdown */}
+                  {showFavoritesOnly && lists.length > 0 && (
+                    <div className="flex flex-col gap-1.5">
+                      <select
+                        value={filterListId ?? ''}
+                        onChange={(e) => setFilterListId(e.target.value || null)}
+                        className="text-[0.7rem] bg-[#0f0c07] border border-[#2a1e0e] rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
+                      >
+                        <option value="">All lists</option>
+                        {lists.map((list) => {
+                          const count = favoritesMap.get(list.id)?.size ?? 0
+                          return (
+                            <option key={list.id} value={list.id}>
+                              {list.name} ({count})
+                            </option>
+                          )
+                        })}
+                      </select>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Year range filter */}
+              <div className="bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2 flex flex-col gap-1.5">
+                <div className="flex items-center justify-between">
+                  <span className="text-[0.6rem] text-accent tracking-widest uppercase">Active years</span>
+                  {yearRange && (
+                    <button
+                      onClick={() => setYearRange(null)}
+                      className="text-[0.55rem] text-ink3 hover:text-ink transition-colors"
+                    >
+                      reset
+                    </button>
+                  )}
+                </div>
+                <div className="flex items-center justify-between text-[0.65rem] text-ink3">
+                  <span>{effectiveYearRange[0]}</span>
+                  <span>{effectiveYearRange[1]}</span>
+                </div>
+                <div className="relative h-4 flex items-center">
+                  <input
+                    type="range"
+                    min={minYear}
+                    max={maxYear}
+                    value={effectiveYearRange[0]}
+                    onChange={(e) => {
+                      const v = parseInt(e.target.value);
+                      setYearRange([Math.min(v, effectiveYearRange[1] - 1), effectiveYearRange[1]]);
                     }}
+                    className="year-range-slider absolute w-full h-1"
+                    style={{ zIndex: 3 }}
                   />
+                  <input
+                    type="range"
+                    min={minYear}
+                    max={maxYear}
+                    value={effectiveYearRange[1]}
+                    onChange={(e) => {
+                      const v = parseInt(e.target.value);
+                      setYearRange([effectiveYearRange[0], Math.max(v, effectiveYearRange[0] + 1)]);
+                    }}
+                    className="year-range-slider absolute w-full h-1"
+                    style={{ zIndex: 3 }}
+                  />
+                  <div className="absolute w-full h-1 rounded bg-[#2a1e0e]" style={{ zIndex: 1 }}>
+                    <div
+                      className="absolute h-full rounded bg-accent/50"
+                      style={{
+                        left: `${((effectiveYearRange[0] - minYear) / (maxYear - minYear)) * 100}%`,
+                        right: `${((maxYear - effectiveYearRange[1]) / (maxYear - minYear)) * 100}%`,
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
             </div>
           </div>
 
