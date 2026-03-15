@@ -74,3 +74,36 @@ export function getStyleHex(style: string): string {
   const key = Object.keys(STYLE_HEX).find((k) => style.includes(k));
   return key ? STYLE_HEX[key] : '#969696';
 }
+
+// Generate consistent color for instruments based on hash of instrument name
+export function getInstrumentColor(instrument: string, alpha?: number): RGB | RGBA {
+  // Simple hash function to generate a number from string
+  let hash = 0;
+  for (let i = 0; i < instrument.length; i++) {
+    hash = instrument.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  
+  // Use hash to select from a predefined palette of distinct colors
+  const palettes: RGB[] = [
+    [231, 76, 60],   // Red-orange
+    [200, 135, 42],  // Orange-brown
+    [212, 175, 55],  // Yellow-gold
+    [101, 163, 13],  // Green
+    [26, 188, 156],  // Teal
+    [52, 152, 219],  // Blue
+    [90, 130, 200],  // Medium blue
+    [140, 80, 185],  // Purple
+    [74, 144, 217],  // Blue
+    [46, 204, 113],  // Green
+    [241, 196, 15],  // Yellow
+    [155, 155, 155], // Gray
+  ];
+  
+  const rgb: RGB = palettes[Math.abs(hash) % palettes.length];
+  return alpha !== undefined ? [...rgb, alpha] as RGBA : rgb;
+}
+
+export function getInstrumentHex(instrument: string): string {
+  const [r, g, b] = getInstrumentColor(instrument) as RGB;
+  return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+}

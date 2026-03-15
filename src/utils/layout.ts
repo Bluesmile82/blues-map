@@ -354,6 +354,48 @@ export function computeStyleClusters(
   return clusters;
 }
 
+/**
+ * Compute instrument clusters from musicians and their positions.
+ * @precondition musicians must be an array of Musician objects
+ * @precondition positions must be an InfluenceLayout object mapping musician IDs to positions
+ */
+export function computeInstrumentClusters(
+  musicians: Musician[],
+  positions: InfluenceLayout
+): Record<string, StyleCluster> {
+  const clusters: Record<string, StyleCluster> = {};
+
+  // Group musicians by instrument
+  const byInstrument: Record<string, Musician[]> = {};
+  musicians.forEach((m) => {
+    if (!m.instrument) return;
+    if (!byInstrument[m.instrument]) byInstrument[m.instrument] = [];
+    byInstrument[m.instrument].push(m);
+  });
+
+  // Compute cluster center as weighted average of positions
+  Object.entries(byInstrument).forEach(([instrument, instrumentMusicians]) => {
+    const validPositions = instrumentMusicians
+      .map((m) => positions[m.id])
+      .filter((p): p is Position2D => p !== undefined);
+
+    if (validPositions.length === 0) return;
+
+    // Average X and Y
+    const avgX = validPositions.reduce((sum, p) => sum + p[0], 0) / validPositions.length;
+    const avgY = validPositions.reduce((sum, p) => sum + p[1], 0) / validPositions.length;
+
+    clusters[instrument] = {
+      center: [avgX, avgY],
+      musicianIds: instrumentMusicians.map((m) => m.id),
+      count: instrumentMusicians.length,
+    };
+  });
+
+  return clusters;
+}
+
+
 export function interpolatePosition(
   actualPosition: Position2D,
   clusterCenter: Position2D,

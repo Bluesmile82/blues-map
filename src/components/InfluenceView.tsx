@@ -4,7 +4,7 @@ import { OrthographicView } from '@deck.gl/core';
 import { PathLayer, ScatterplotLayer, TextLayer, IconLayer } from '@deck.gl/layers';
 import type { PickingInfo } from '@deck.gl/core';
 import type { Musician } from '../types';
-import { getStyleColor, getStyleHex } from '../utils/colors';
+import { getStyleColor, getStyleHex, getInstrumentColor, getInstrumentHex } from '../utils/colors';
 import SearchInput from './SearchInput';
 import BluesStyleLegend from './BluesStyleLegend';
 import { useAtomValue } from 'jotai';
@@ -14,6 +14,7 @@ import {
   computeTreeLayout,
   computeDecadeTicks,
   computeStyleClusters,
+  computeInstrumentClusters,
   bezierPath,
   getYear,
   yearToWorldY,
@@ -33,9 +34,9 @@ const ICON_SIZE = 60; // Size for the photo icons
 const EXPAND_PX_THRESHOLD = 30;
 const EXPAND_ZOOM_THRESHOLD = Math.log2(EXPAND_PX_THRESHOLD / NODE_RADIUS); // ≈ 1.322
 
-const CLUSTER_ZOOM_START = 0.8; // Below this: fully clustered
-const CLUSTER_ZOOM_END = 1.2;   // Above this: fully expanded
-const CLUSTER_DETAILS_ZOOM = 1.0; // Above this: show musician names and images
+const CLUSTER_ZOOM_START = -1; // Below this: fully clustered
+const CLUSTER_ZOOM_END = 0;   // Above this: fully expanded
+const CLUSTER_DETAILS_ZOOM = 0.3; // Above this: show musician names and images
 
 type DeckVS = { target: [number, number, number]; zoom: number; minZoom: number; maxZoom: number };
 
@@ -236,8 +237,11 @@ export default function InfluenceView({
   const clusters = useMemo(() => {
     if (!dims.width || !dims.height || !worldRef.current)
       return {};
+    if (groupBy === 'instrument') {
+      return computeInstrumentClusters(displayMusicians, positions);
+    }
     return computeStyleClusters(displayMusicians, positions, styleZones);
-  }, [displayMusicians, positions, styleZones]);
+  }, [displayMusicians, positions, styleZones, groupBy]);
 
   const musicianMap = useMemo(() => {
     const map = new Map<string, Musician>();
@@ -249,12 +253,18 @@ export default function InfluenceView({
     const result: InfluenceLayout = {};
     Object.entries(positions).forEach(([id, pos]) => {
       const m = musicianMap.get(id);
-      if (!m || !m.bluesStyle) {
+      if (!m) {
         result[id] = pos;
         return;
       }
 
-      const cluster = clusters[m.bluesStyle];
+      const clusterKey = groupBy === 'instrument' ? m.instrument : m.bluesStyle;
+      if (!clusterKey) {
+        result[id] = pos;
+        return;
+      }
+
+      const cluster = clusters[clusterKey];
       if (!cluster) {
         result[id] = pos;
         return;
@@ -263,7 +273,7 @@ export default function InfluenceView({
       result[id] = interpolatePosition(pos, cluster.center, clusterCompression);
     });
     return result;
-  }, [positions, clusters, clusterCompression, musicianMap]);
+  }, [positions, clusters, clusterCompression, musicianMap, groupBy]);
 
   const clusterLabelData = useMemo(() => {
     return Object.entries(clusters)
@@ -290,7 +300,10 @@ export default function InfluenceView({
   const effectiveRelatedIds: Set<string> | null = relatedIds
     ? relatedIds
     : hoveredStyle
-      ? new Set(displayMusicians.filter((m) => m.bluesStyle === hoveredStyle).map((m) => m.id))
+      ? new Set(displayMusicians.filter((m) => {
+          const clusterValue = groupBy === 'instrument' ? m.instrument : m.bluesStyle;
+          return clusterValue === hoveredStyle;
+        }).map((m) => m.id))
       : null;
 
   const currentZoom = deckVS?.zoom ?? 0;
@@ -305,7 +318,7 @@ export default function InfluenceView({
   const cappedRadius = NODE_RADIUS * overlapFactor;
   const cappedIconSize = ICON_SIZE * overlapFactor;
   const cappedTextSize = 14 * overlapFactor;
- 
+
   // Build musician data for layers
   const musicianData = useMemo(() => {
     return displayMusicians.map((m) => {
@@ -339,11 +352,14 @@ export default function InfluenceView({
     setHovered(musicianId);
     if (musicianId) {
       const musician = displayMusicians.find(x => x.id === musicianId);
-      if (musician) setHoveredStyle(musician.bluesStyle);
+      if (musician) {
+        const hoveredValue = groupBy === 'instrument' ? musician.instrument : musician.bluesStyle;
+        setHoveredStyle(hoveredValue);
+      }
     } else {
       setHoveredStyle(null);
     }
-  }, [displayMusicians]);
+  }, [displayMusicians, groupBy]);
 
   const onClick = useCallback((info: PickingInfo) => {
     const m = info.object as { musician: Musician } | undefined;
@@ -492,16 +508,16 @@ export default function InfluenceView({
           widthUnits: 'pixels' as const,
           pickable: false,
           updateTriggers: { getPath: [xExpand] },
-         })]
-         : []),
-       // Musician circles (filled background)
-       new ScatterplotLayer({
-         id: 'musician-circles',
-         data: musicianData,
-         getPosition: (d) => {
-           const interpolated = interpolatedPositions[d.musician.id];
-           return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
-         },
+        })]
+        : []),
+      // Musician circles (filled background)
+      new ScatterplotLayer({
+        id: 'musician-circles',
+        data: musicianData,
+        getPosition: (d) => {
+          const interpolated = interpolatedPositions[d.musician.id];
+          return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
+        },
         getRadius: (d) => d.musician.id === hovered ? cappedRadius * 2 : cappedRadius,
         getFillColor: (d): [number, number, number, number] => {
           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
