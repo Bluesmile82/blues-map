@@ -273,6 +273,16 @@ export default function InfluenceView({
     }).filter(Boolean) as { musician: Musician; position: Position2D }[];
   }, [displayMusicians, positions]);
 
+  const clusterLabelData = useMemo(() => {
+    return Object.entries(clusters)
+      .filter(([_, cluster]) => cluster.count > 0 && clusterCompression > 0.3)
+      .map(([style, cluster]) => ({
+        style,
+        position: cluster.center,
+        count: cluster.count,
+      }));
+  }, [clusters, clusterCompression]);
+
   const focusId = hovered ?? selectedId;
   const focusedMusician = focusId ? displayMusicians.find((m) => m.id === focusId) : null;
   const relatedIds: Set<string> | null = focusedMusician
@@ -627,9 +637,33 @@ export default function InfluenceView({
           getSize: [cappedTextSize],
           getColor: [selectedId, hovered, effectiveRelatedIds],
           data: [effectiveRelatedIds],
+         },
+       }),
+      // Cluster labels
+      ...(clusterLabelData.length > 0 ? [new TextLayer({
+        id: 'cluster-labels',
+        data: clusterLabelData,
+        getPosition: (d) => [sx(d.position[0]), d.position[1] - 80] as Position2D,
+        getText: (d) => groupBy === 'style' ? d.style.replace(' Blues', '') : d.style,
+        getSize: 14,
+        getColor: (d): [number, number, number, number] => {
+          const [r, g, b] = getStyleColor(d.style) as [number, number, number];
+          return [r, g, b, Math.floor(255 * (1 - clusterCompression * 0.3))];
         },
-      }),
-      // Zone labels
+        getTextAnchor: 'middle',
+        getAlignmentBaseline: 'bottom',
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        fontWeight: '700',
+        outlineWidth: 4,
+        outlineColor: [0, 0, 0, 220],
+        sizeUnits: 'common' as const,
+        pickable: false,
+        updateTriggers: {
+          getPosition: [xExpand],
+          getColor: [clusterCompression],
+        },
+      })] : []),
+       // Zone labels
       new TextLayer({
         id: 'zone-labels',
         data: styleZones,
@@ -649,7 +683,7 @@ export default function InfluenceView({
         updateTriggers: { getPosition: [xExpand] },
       }),
     ];
-  }, [dims.width, edges, playedWithEdges, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions]);
+  }, [dims.width, edges, playedWithEdges, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, clusterLabelData]);
 
   // Search
   const searchQuery = search.trim().toLowerCase();
