@@ -334,8 +334,15 @@ const clusterLabelData = useMemo(() => {
   // Handle picking
   const onHover = useCallback((info: PickingInfo) => {
     const m = info.object as { musician: Musician } | undefined;
-    setHovered(m?.musician?.id ?? null);
-  }, []);
+    const musicianId = m?.musician?.id ?? null;
+    setHovered(musicianId);
+    if (musicianId) {
+      const musician = displayMusicians.find(x => x.id === musicianId);
+      if (musician) setHoveredStyle(musician.bluesStyle);
+    } else {
+      setHoveredStyle(null);
+    }
+  }, [displayMusicians]);
 
   const onClick = useCallback((info: PickingInfo) => {
     const m = info.object as { musician: Musician } | undefined;
@@ -502,47 +509,46 @@ const clusterLabelData = useMemo(() => {
           updateTriggers: { getPath: [xExpand] },
         })]
         : []),
-      // Musician circles (filled background)
-      new ScatterplotLayer({
-        id: 'musician-circles',
-        data: clusterCompression < 0.5 ? musicianData : [],
-        getPosition: (d) => {
-          const interpolated = interpolatedPositions[d.musician.id];
-          return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
-        },
-        getRadius: (d) => d.musician.id === hovered ? cappedRadius * 2 : cappedRadius,
-        getFillColor: (d): [number, number, number, number] => {
-          const [r, g, b] = getStyleColor(d.musician.bluesStyle);
-          const dimmed = effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
-          const isSelected = d.musician.id === selectedId;
-          const isHovered = d.musician.id === hovered;
-          if (dimmed) return [r, g, b, 40];
-          if (isSelected || isHovered) return [r, g, b, 255];
-          return [r, g, b, 200];
-        },
-        getLineColor: (d): [number, number, number, number] => {
-          const [r, g, b] = getStyleColor(d.musician.bluesStyle);
-          const isSelected = d.musician.id === selectedId;
-          const isHovered = d.musician.id === hovered;
-          if (isSelected) return [255, 255, 255, 255];
-          if (isHovered) return [r, g, b, 255];
-          return [r, g, b, 180];
-        },
-        lineWidthMinPixels: 2,
-        lineWidthMaxPixels: 4,
-        stroked: true,
-        filled: true,
-        radiusUnits: 'common' as const,
-        pickable: true,
-        onHover,
-        onClick,
-        updateTriggers: {
-          getPosition: [xExpand, interpolatedPositions],
-          getRadius: [hovered, cappedRadius],
-          getFillColor: [effectiveRelatedIds, selectedId, hovered],
-          getLineColor: [selectedId, hovered],
-          data: [clusterCompression],
-        },
+       // Musician circles (filled background)
+       new ScatterplotLayer({
+         id: 'musician-circles',
+         data: musicianData,
+         getPosition: (d) => {
+           const interpolated = interpolatedPositions[d.musician.id];
+           return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
+         },
+         getRadius: (d) => d.musician.id === hovered ? cappedRadius * 2 : cappedRadius,
+         getFillColor: (d): [number, number, number, number] => {
+           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
+           const dimmed = effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
+           const isSelected = d.musician.id === selectedId;
+           const isHovered = d.musician.id === hovered;
+           if (dimmed) return [r, g, b, 40];
+           if (isSelected || isHovered) return [r, g, b, 255];
+           return [r, g, b, 255];
+         },
+         getLineColor: (d): [number, number, number, number] => {
+           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
+           const isSelected = d.musician.id === selectedId;
+           const isHovered = d.musician.id === hovered;
+           if (isSelected) return [255, 255, 255, 255];
+           if (isHovered) return [r, g, b, 255];
+           return [r, g, b, 180];
+         },
+         lineWidthMinPixels: 2,
+         lineWidthMaxPixels: 4,
+         stroked: true,
+         filled: true,
+         radiusUnits: 'common' as const,
+         pickable: true,
+         onHover,
+         onClick,
+         updateTriggers: {
+           getPosition: [xExpand, interpolatedPositions],
+           getRadius: [hovered, cappedRadius],
+           getFillColor: [effectiveRelatedIds, selectedId, hovered],
+           getLineColor: [selectedId, hovered],
+         },
         transitions: {
           getRadius: {
             duration: 150,
@@ -647,41 +653,9 @@ const clusterLabelData = useMemo(() => {
            getColor: [selectedId, hovered, effectiveRelatedIds, clusterCompression],
            data: [effectiveRelatedIds],
           },
-        }),
-        // Cluster blobs (solid shapes)
-        new ScatterplotLayer({
-          id: 'cluster-blobs',
-          data: clusterLabelData,
-          getPosition: (d) => [sx(d.position[0]), d.position[1]] as Position2D,
-          getRadius: (d) => Math.min(60 + d.count * 1.5, 150),
-          getFillColor: (d): [number, number, number, number] => {
-            const [r, g, b] = getStyleColor(d.style) as [number, number, number];
-            const isHovered = hoveredStyle === d.style;
-            return [r, g, b, isHovered ? 255 : 220];
-          },
-          getLineColor: (d): [number, number, number, number] => {
-            const [r, g, b] = getStyleColor(d.style) as [number, number, number];
-            const isHovered = hoveredStyle === d.style;
-            return isHovered ? [255, 255, 255, 255] : [r, g, b, 180];
-          },
-          lineWidthMinPixels: 3,
-          lineWidthMaxPixels: 5,
-          stroked: true,
-          filled: true,
-          radiusUnits: 'common' as const,
-          pickable: true,
-          onHover: (info) => {
-            const d = info.object as { style: string };
-            setHoveredStyle(d?.style ?? null);
-          },
-          updateTriggers: {
-            getPosition: [xExpand],
-            getFillColor: [hoveredStyle],
-            getLineColor: [hoveredStyle],
-          },
-        }),
-        // Cluster labels
-        ...(clusterLabelData.length > 0 ? [new TextLayer({
+         }),
+         // Cluster labels
+         ...(clusterLabelData.length > 0 ? [new TextLayer({
           id: 'cluster-labels',
           data: clusterLabelData,
           getPosition: (d) => [sx(d.position[0]), d.position[1]] as Position2D,
