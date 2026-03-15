@@ -9,6 +9,7 @@ interface BluesStyleLegendProps {
   hoveredStyle: string | null
   availableStyles: string[]
   position?: 'bottom-left' | 'top-right' | 'bottom-right'
+  embedded?: boolean
 }
 
 export default function BluesStyleLegend({
@@ -20,6 +21,7 @@ export default function BluesStyleLegend({
   hoveredStyle,
   availableStyles,
   position = 'bottom-left',
+  embedded = false,
 }: BluesStyleLegendProps) {
   const positionClasses = {
     'bottom-left': 'absolute bottom-4 left-4 sm:bottom-5 sm:left-15',
@@ -29,8 +31,12 @@ export default function BluesStyleLegend({
 
   const styles = CANONICAL_STYLES.filter((style) => availableStyles.includes(style))
 
+  const containerClass = embedded
+    ? 'flex flex-col'
+    : `flex flex-col z-40 bg-bg/95 border border-[#2a1e0e] rounded-lg shadow-lg backdrop-blur-sm ${positionClasses[position]}`
+
   return (
-    <div className={`flex flex-col z-40 bg-bg/95 border border-[#2a1e0e] rounded-lg shadow-lg backdrop-blur-sm ${positionClasses[position]}`}>
+    <div className={containerClass}>
       <button
         onClick={onToggle}
         className="flex items-center justify-between gap-2 px-3 py-2 text-[0.65rem] sm:text-[0.7rem] text-accent tracking-widest uppercase hover:text-accent2 transition-colors border-b border-[#2a1e0e]"

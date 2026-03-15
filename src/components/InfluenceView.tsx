@@ -835,14 +835,9 @@ export default function InfluenceView({
               return (
                 <div
                   key={year}
+                  className='absolute left-1 transform -translate-y-1/2 text-xl text-white bg-bg/60 backdrop-blur-xl p-1 rounded pointer-events-auto select-none'
                   style={{
-                    position: 'absolute',
-                    right: 6,
                     top: screenY,
-                    transform: 'translateY(-50%)',
-                    fontSize: 10,
-                    color: 'rgba(255,255,255,0.5)',
-                    fontFamily: 'Georgia, serif',
                     whiteSpace: 'nowrap',
                   }}
                 >
@@ -853,7 +848,7 @@ export default function InfluenceView({
           </div>
 
           {/* Left search panel */}
-          <div className="absolute left-3 sm:left-4 top-3 sm:top-4 z-40 flex flex-col gap-2" style={{ width: 'calc(100vw - 1.5rem)', maxWidth: 220 }}>
+          <div className="absolute left-3 sm:left-16 top-3 sm:top-4 z-40 flex flex-col gap-2" style={{ width: 'calc(100vw - 1.5rem)', maxWidth: 220 }}>
             {/* Mobile filter toggle button */}
             <button
               onClick={() => setFiltersCollapsed(!filtersCollapsed)}
@@ -866,7 +861,7 @@ export default function InfluenceView({
             </button>
 
             {/* Collapsible filters wrapper */}
-            <div className={`${filtersCollapsed ? 'hidden' : 'flex'} sm:flex flex-col gap-2`}>
+            <div className={`${filtersCollapsed ? 'hidden' : 'flex'} sm:flex flex-col gap-2 bg-bg/90 rounded-lg p-3`}>
               <div className="relative">
                 <SearchInput
                   ref={searchInputRef}
@@ -1053,23 +1048,23 @@ export default function InfluenceView({
             <button
               onClick={() => handleZoom(0.4)}
               title="Zoom in"
-              className="w-8 h-8 flex items-center justify-center rounded-lg bg-bg/90 border border-[#2a1e0e] text-ink3 hover:text-ink hover:border-accent/60 text-base transition-colors"
+              className="w-10 h-10 flex items-center justify-center rounded-lg bg-bg/90 border border-[#2a1e0e] text-ink3 hover:text-ink hover:border-accent/60 text-3xl transition-colors"
             >
               +
             </button>
             <button
               onClick={() => handleZoom(-0.4)}
               title="Zoom out"
-              className="w-8 h-8 flex items-center justify-center rounded-lg bg-bg/90 border border-[#2a1e0e] text-ink3 hover:text-ink hover:border-accent/60 text-base transition-colors"
+              className="w-10 h-10 flex items-center justify-center rounded-lg bg-bg/90 border border-[#2a1e0e] text-ink3 hover:text-ink hover:border-accent/60 text-3xl transition-colors"
             >
               −
             </button>
             <button
               onClick={handleReset}
               title="Reset view"
-              className="w-8 h-8 flex items-center justify-center rounded-lg bg-bg/90 border border-[#2a1e0e] text-ink3 hover:text-ink hover:border-accent/60 text-xs transition-colors mt-1"
+              className="w-10 h-10 flex items-center justify-center rounded-lg bg-bg/90 border border-[#2a1e0e] text-ink3 hover:text-ink hover:border-accent/60 text-3xl transition-colors mt-1"
             >
-              ⊙
+              ⟳
             </button>
           </div>
 
