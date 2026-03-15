@@ -819,7 +819,7 @@ export default function InfluenceView({
           <DeckGL
             views={[new OrthographicView({ id: 'ortho', controller: true })]}
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            viewState={deckVS as any}
+            viewState={{ zoom: deckVS.zoom, target: deckVS.target, minZoom: deckVS.minZoom, maxZoom: deckVS.maxZoom } as any}
             onViewStateChange={handleViewStateChange}
             layers={deckLayers}
             getCursor={({ isHovering }) => isHovering ? 'pointer' : 'grab'}
@@ -1008,6 +1008,20 @@ export default function InfluenceView({
                   </div>
                 </div>
               </div>
+
+              {/* Blues Style filter */}
+              <div className="bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2">
+                <BluesStyleLegend
+                  isOpen={legendOpen}
+                  onToggle={() => setLegendOpen((o) => !o)}
+                  styleFilter={styleFilter}
+                  onStyleFilterChange={onStyleFilterChange}
+                  onHoverStyle={setHoveredStyle}
+                  hoveredStyle={hoveredStyle}
+                  availableStyles={Array.from(new Set(completeMusicians.map((m) => m.bluesStyle)))}
+                  embedded
+                />
+              </div>
             </div>
           </div>
 
@@ -1058,18 +1072,6 @@ export default function InfluenceView({
               ⊙
             </button>
           </div>
-
-          {/* Color legend */}
-          <BluesStyleLegend
-            isOpen={legendOpen}
-            onToggle={() => setLegendOpen((o) => !o)}
-            styleFilter={styleFilter}
-            onStyleFilterChange={onStyleFilterChange}
-            onHoverStyle={setHoveredStyle}
-            hoveredStyle={hoveredStyle}
-            availableStyles={Array.from(new Set(completeMusicians.map((m) => m.bluesStyle)))}
-            position="bottom-left"
-          />
 
 
           {/* Hover tooltip */}
