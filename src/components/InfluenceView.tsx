@@ -23,7 +23,6 @@ import {
   type InfluenceLayout,
   type Position2D,
   type StyleZone,
-  type StyleCluster,
 } from '../utils/layout';
 
 // World-space sizes
@@ -239,11 +238,20 @@ export default function InfluenceView({
     return computeStyleClusters(displayMusicians, positions, styleZones);
   }, [displayMusicians, positions, styleZones]);
 
+  const musicianMap = useMemo(() => {
+    const map = new Map<string, Musician>();
+    displayMusicians.forEach(m => map.set(m.id, m));
+    return map;
+  }, [displayMusicians]);
+
   const interpolatedPositions = useMemo(() => {
     const result: InfluenceLayout = {};
     Object.entries(positions).forEach(([id, pos]) => {
-      const m = displayMusicians.find(x => x.id === id);
-      if (!m) return;
+      const m = musicianMap.get(id);
+      if (!m || !m.bluesStyle) {
+        result[id] = pos;
+        return;
+      }
 
       const cluster = clusters[m.bluesStyle];
       if (!cluster) {
@@ -254,7 +262,7 @@ export default function InfluenceView({
       result[id] = interpolatePosition(pos, cluster.center, clusterCompression);
     });
     return result;
-  }, [positions, clusters, clusterCompression, displayMusicians]);
+  }, [positions, clusters, clusterCompression, musicianMap]);
 
   // Build musician data for layers
   const musicianData = useMemo(() => {
