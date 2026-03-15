@@ -74,6 +74,12 @@ export interface StyleZone {
   width: number;
 }
 
+export interface StyleCluster {
+  center: Position2D;
+  musicianIds: string[];
+  count: number;
+}
+
 export interface TreeLayoutResult {
   positions: InfluenceLayout;
   styleZones: StyleZone[];
@@ -303,6 +309,42 @@ export function computeTreeLayout(
   });
 
   return { positions, styleZones };
+}
+
+export function computeStyleClusters(
+  musicians: Musician[],
+  positions: InfluenceLayout,
+  styleZones: StyleZone[]
+): Record<string, StyleCluster> {
+  const clusters: Record<string, StyleCluster> = {};
+
+  // Group musicians by style
+  const byStyle: Record<string, Musician[]> = {};
+  musicians.forEach((m) => {
+    if (!byStyle[m.bluesStyle]) byStyle[m.bluesStyle] = [];
+    byStyle[m.bluesStyle].push(m);
+  });
+
+  // Compute cluster center as weighted average of positions
+  Object.entries(byStyle).forEach(([style, styleMusicians]) => {
+    const validPositions = styleMusicians
+      .map((m) => positions[m.id])
+      .filter((p): p is Position2D => p !== undefined);
+
+    if (validPositions.length === 0) return;
+
+    // Average X and Y
+    const avgX = validPositions.reduce((sum, p) => sum + p[0], 0) / validPositions.length;
+    const avgY = validPositions.reduce((sum, p) => sum + p[1], 0) / validPositions.length;
+
+    clusters[style] = {
+      center: [avgX, avgY],
+      musicianIds: styleMusicians.map((m) => m.id),
+      count: styleMusicians.length,
+    };
+  });
+
+  return clusters;
 }
 
 export interface DecadeTick {
