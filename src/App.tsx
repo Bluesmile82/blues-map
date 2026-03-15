@@ -36,6 +36,7 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
    const [styleFilter, setStyleFilter] = useState<string | null>(null);
    const [showCredits, setShowCredits] = useState(false);
    const [forceZoomToId, setForceZoomToId] = useState<string | null>(null);
+   const [filteredMusicians, setFilteredMusicians] = useState<Musician[]>(musiciansData as unknown as Musician[]);
 
    // Persist autoplay setting to localStorage
    useEffect(() => {
@@ -82,18 +83,19 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
     }, []);
 
     const handleRandom = useCallback(() => {
-      if (musicians.length === 0) return;
+      const pool = filteredMusicians.length > 0 ? filteredMusicians : musicians;
+      if (pool.length === 0) return;
       
       // Generate cryptographically secure random index
       const array = new Uint32Array(1);
       crypto.getRandomValues(array);
       const randomValue = array[0] / (0xFFFFFFFF + 1);
-      const index = Math.floor(randomValue * musicians.length);
+      const index = Math.floor(randomValue * pool.length);
       
-      const pick = musicians[index];
+      const pick = pool[index];
       setForceZoomToId(pick.id);
       handleSelect(pick);
-    }, [musicians, handleSelect]);
+    }, [filteredMusicians, musicians, handleSelect]);
 
     const handleEdit = useCallback(() => {
       setEditing(selected);
@@ -179,7 +181,7 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
          {!publicListSlug && (
            <>
              {view === 'influence' ? (
-               <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} forceZoomToId={forceZoomToId} onZoomComplete={() => setForceZoomToId(null)} />
+               <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} forceZoomToId={forceZoomToId} onZoomComplete={() => setForceZoomToId(null)} onFilteredMusiciansChange={setFilteredMusicians} />
              ) : (
                <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} />
              )}

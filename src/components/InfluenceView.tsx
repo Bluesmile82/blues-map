@@ -48,6 +48,7 @@ export default function InfluenceView({
   onStyleFilterChange,
   forceZoomToId,
   onZoomComplete,
+  onFilteredMusiciansChange,
 }: {
   musicians: Musician[];
   onSelect: (m: Musician) => void;
@@ -56,6 +57,7 @@ export default function InfluenceView({
   onStyleFilterChange: (style: string | null) => void;
   forceZoomToId?: string | null;
   onZoomComplete?: () => void;
+  onFilteredMusiciansChange?: (musicians: Musician[]) => void;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const dimsRef = useRef({ width: 0, height: 0 });
@@ -127,6 +129,11 @@ export default function InfluenceView({
 
     return favoritesFiltered;
   }, [musicians, styleFilter, yearRange, showFavoritesOnly, favoritesChecker]);
+
+  // Report filtered musicians to parent for random selection
+  useEffect(() => {
+    onFilteredMusiciansChange?.(completeMusicians);
+  }, [completeMusicians, onFilteredMusiciansChange]);
 
   const displayMusicians = useMemo(() => {
     if (!textFilter.trim()) return completeMusicians;
