@@ -38,7 +38,7 @@ const CLUSTER_ZOOM_START = -1; // Below this: fully clustered
 const CLUSTER_ZOOM_END = 0.1;   // Above this: fully expanded
 const CLUSTER_DETAILS_ZOOM = 0.2; // Above this: show musician names and images
 
-type DeckVS = { target: [number, number, number]; zoom: number; minZoom: number; maxZoom: number };
+type DeckVS = { target: [number, number, number]; zoom: number; minZoom: number; maxZoom: number; transitionDuration?: number; transitionEasing?: (t: number) => number };
 
 export default function InfluenceView({
   musicians,
@@ -368,8 +368,9 @@ export default function InfluenceView({
       if (deckVS && currentZoom < CLUSTER_DETAILS_ZOOM) {
         const pos = positions[m.musician.id];
         if (pos) {
-          const xe = Math.max(1, Math.pow(2, Math.max(0, CLUSTER_DETAILS_ZOOM - EXPAND_ZOOM_THRESHOLD)));
-          setDeckVS({ ...deckVS, target: [pos[0] * xe, pos[1], 0], zoom: CLUSTER_DETAILS_ZOOM });
+          goToMusician(m.musician);
+          // const xe = Math.max(1, Math.pow(2, Math.max(0, CLUSTER_DETAILS_ZOOM - EXPAND_ZOOM_THRESHOLD))) + 0.1;
+          // setDeckVS({ ...deckVS, target: [pos[0] * xe, pos[1], 0], zoom: CLUSTER_DETAILS_ZOOM });
         }
       }
       onSelect(m.musician);
@@ -419,9 +420,11 @@ export default function InfluenceView({
         data: decadeTicks,
         getPosition: (d) => [sx(d.path[0][0]), d.path[0][1]] as Position2D,
         getText: (d) => String(d.year),
-        getSize: 11,
+        getSize: 14,
         sizeUnits: 'pixels' as const,
-        getColor: (): [number, number, number, number] => [255, 255, 255, 230],
+        getColor: (): [number, number, number, number] => [255, 255, 255, 255],
+        background: true,
+        backgroundColor: [15, 12, 7, 255],
         getTextAnchor: 'end' as const,
         getAlignmentBaseline: 'center' as const,
         fontFamily: 'Georgia, serif',
@@ -744,12 +747,12 @@ export default function InfluenceView({
     ? displayMusicians.filter((m) => m.name.toLowerCase().includes(searchQuery)).slice(0, 8)
     : [];
 
-  const goToMusician = useCallback((m: Musician) => {
+  const goToMusician = useCallback((m: Musician, minZoom = CLUSTER_DETAILS_ZOOM) => {
     const pos = positions[m.id];
     if (!pos || !deckVS) return;
-    const targetZoom = Math.max(deckVS.zoom, 0.5);
+    const targetZoom = Math.max(deckVS.zoom, minZoom);
     const xe = Math.max(1, Math.pow(2, Math.max(0, targetZoom - EXPAND_ZOOM_THRESHOLD)));
-    setDeckVS({ ...deckVS, target: [pos[0] * xe, pos[1], 0], zoom: targetZoom });
+    setDeckVS({ ...deckVS, target: [pos[0] * xe, pos[1], 0], zoom: targetZoom, transitionDuration: 300, transitionEasing: (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2 });
     onSelect(m);
     setSearch('');
   }, [positions, deckVS, onSelect]);
