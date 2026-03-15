@@ -311,9 +311,15 @@ export function computeTreeLayout(
   return { positions, styleZones };
 }
 
+/**
+ * Compute style clusters from musicians and their positions.
+ * @precondition musicians must be an array of Musician objects
+ * @precondition positions must be an InfluenceLayout object mapping musician IDs to positions
+ */
 export function computeStyleClusters(
   musicians: Musician[],
   positions: InfluenceLayout,
+  // styleZones: reserved for future zone-based clustering
   styleZones: StyleZone[]
 ): Record<string, StyleCluster> {
   const clusters: Record<string, StyleCluster> = {};
@@ -321,6 +327,7 @@ export function computeStyleClusters(
   // Group musicians by style
   const byStyle: Record<string, Musician[]> = {};
   musicians.forEach((m) => {
+    if (!m.bluesStyle) return;
     if (!byStyle[m.bluesStyle]) byStyle[m.bluesStyle] = [];
     byStyle[m.bluesStyle].push(m);
   });
