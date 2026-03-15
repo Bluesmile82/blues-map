@@ -750,9 +750,34 @@ export default function InfluenceView({
   const goToMusician = useCallback((m: Musician, minZoom = CLUSTER_DETAILS_ZOOM) => {
     const pos = positions[m.id];
     if (!pos || !deckVS) return;
-    const targetZoom = Math.max(deckVS.zoom, minZoom);
-    const xe = Math.max(1, Math.pow(2, Math.max(0, targetZoom - EXPAND_ZOOM_THRESHOLD)));
-    setDeckVS({ ...deckVS, target: [pos[0] * xe, pos[1], 0], zoom: targetZoom, transitionDuration: 300, transitionEasing: (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2 });
+    const targetZoom = Math.max(minZoom, deckVS.zoom);
+    const startZoom = deckVS.zoom;
+    const startTarget = deckVS.target;
+    const endTarget: [number, number, number] = [pos[0] * Math.max(1, Math.pow(2, Math.max(0, targetZoom - EXPAND_ZOOM_THRESHOLD))), pos[1], 0];
+
+    const duration = 500;
+    const startTime = performance.now();
+
+    const animate = (currentTime: number) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+      const currentZoom = startZoom + (targetZoom - startZoom) * eased;
+      const currentTarget: [number, number, number] = [
+        startTarget[0] + (endTarget[0] - startTarget[0]) * eased,
+        startTarget[1] + (endTarget[1] - startTarget[1]) * eased,
+        0,
+      ];
+
+      setDeckVS({ ...deckVS!, zoom: currentZoom, target: currentTarget });
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    requestAnimationFrame(animate);
     onSelect(m);
     setSearch('');
   }, [positions, deckVS, onSelect]);
