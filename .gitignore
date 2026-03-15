@@ -32,3 +32,6 @@ src/data/backups/
 data/favourites.json
 .env.development
 .env.production
+
+*storybook.log
+storybook-static

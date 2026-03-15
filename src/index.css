@@ -1,16 +1,49 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg:      #0a0805;
-  --color-bg2:     #0a0805;
-  --color-bg3:     #0a0805;
-  --color-accent:  #4C93A9;
-  --color-accent2: #80B6C6;
-  --color-accent3: #9CC6D3;
-  --color-ink:     #fff;
-  --color-ink2:    #fff;
-  --color-ink3:    #fff;
-  --color-border:  #3a2a15;
+  /* ── Backgrounds ───────────────────────────────────── */
+  --color-bg:          #0a0805;  /* deepest – app bg, navbar */
+  --color-bg2:         #0f0c07;  /* panels, filter backgrounds */
+  --color-bg3:         #141008;  /* elevated surfaces, chips */
+  --color-bg-subtle:   #0f0c07;
+  --color-bg-elevated: #141008;
+  --color-bg-hover:    #1a1208;  /* hover / active backgrounds */
+  --color-bg-deep:     #251a0d;  /* deep hover (close button) */
+
+  /* ── Borders ───────────────────────────────────────── */
+  --color-border-subtle: #264954;
+  --color-border:        #396E7F;
+  --color-border-hover:  #4c93a9;
+
+  /* ── Text ──────────────────────────────────────────── */
+  --color-ink:      #ffffff;
+  --color-ink2:     #E0E9D8;  /* secondary / body text */
+  --color-ink3:     #CBDBBD;  /* muted / metadata */
+  --color-ink-warm: #f0e6d3;  /* warm hover text */
+
+  /* ── Accent (steel blue) ──────────────────────────── */
+  --color-accent:  #4c93a9;
+  --color-accent2: #80b6c6;
+  --color-accent3: #9cc6d3;
+
+  /* ── Primary CTA (warm amber) ─────────────────────── */
+  --color-primary:  #658547;
+  --color-primary2: #83A960;
+
+  /* ── Status ───────────────────────────────────────── */
+  --color-success:    #4ade80;
+  --color-success-bg: #14230d;
+  --color-danger:     #f87171;
+  --color-danger-bg:  #230d0d;
+
+  /* ── Typography scale ─────────────────────────────── */
+  --text-3xs:   0.55rem;   /* ~8.8px  — smallest labels */
+  --text-2xs:   0.65rem;   /* ~10.4px — badges, metadata */
+  --text-label: 0.70rem;   /* ~11.2px — filter labels, legend text, UI labels */
+  --text-ui:    0.85rem;   /* ~13.6px — panel body text, button text */
+
+  /* ── Font families ────────────────────────────────── */
+  --font-serif: Georgia, 'Times New Roman', serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -21,7 +54,7 @@ html, body, #root {
   overflow: hidden;
   background: var(--color-bg);
   color: var(--color-ink);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,7 +66,7 @@ a:hover { color: var(--color-accent3); }
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--color-bg2); }
 ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: var(--color-ink3); }
+::-webkit-scrollbar-thumb:hover { background: var(--color-border-hover); }
 
 /* Dual-range year slider */
 .year-range-slider {
@@ -52,7 +85,7 @@ a:hover { color: var(--color-accent3); }
   background: var(--color-accent);
   cursor: pointer;
   border: 2px solid var(--color-bg);
-  box-shadow: 0 0 4px rgba(76, 147, 169, 0.5);
+  box-shadow: 0 0 4px color-mix(in srgb, var(--color-accent) 50%, transparent);
 }
 .year-range-slider::-moz-range-thumb {
   pointer-events: auto;
@@ -62,7 +95,7 @@ a:hover { color: var(--color-accent3); }
   background: var(--color-accent);
   cursor: pointer;
   border: 2px solid var(--color-bg);
-  box-shadow: 0 0 4px rgba(76, 147, 169, 0.5);
+  box-shadow: 0 0 4px color-mix(in srgb, var(--color-accent) 50%, transparent);
 }
 
 @keyframes slide-in {

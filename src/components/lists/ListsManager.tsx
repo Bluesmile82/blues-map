@@ -20,7 +20,6 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
   // Deduplicate: only show first default list if there are multiple
   const displayLists = lists.filter((list, index, self) => {
     if (!list.isDefault) return true
-    // Only show the first default list
     const firstDefaultIndex = self.findIndex(l => l.isDefault)
     return index === firstDefaultIndex
   })
@@ -54,12 +53,12 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
       <div className="absolute inset-0" onClick={onClose} />
 
-      <div className="absolute top-full w-full max-w-md mx-4 bg-zinc-900 rounded-xl shadow-2xl border border-white/10">
-        <div className="flex items-center justify-between p-4 border-b border-white/10">
-          <h3 className="font-semibold text-lg">My Lists</h3>
+      <div className="relative w-full max-w-md mx-4 bg-bg border border-border-subtle rounded-xl shadow-2xl">
+        <div className="flex items-center justify-between p-4 border-b border-border-subtle">
+          <h3 className="font-semibold text-lg text-ink">My Lists</h3>
           <button
             onClick={onClose}
-            className="p-1 rounded-lg hover:bg-white/10 transition-colors"
+            className="p-1 rounded-lg text-ink3 hover:bg-bg-hover hover:text-ink transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -74,7 +73,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
             return (
               <div
                 key={list.id}
-                className="flex items-center gap-3 px-4 py-3 border-b border-white/5 hover:bg-white/5"
+                className="flex items-center gap-3 px-4 py-3 border-b border-border-subtle/40 hover:bg-bg-hover/50"
               >
                 {editingId === list.id ? (
                   <input
@@ -88,19 +87,19 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                     }}
                     autoFocus
                     maxLength={100}
-                    className="flex-1 px-2 py-1 text-sm rounded bg-zinc-800 border border-amber-500 focus:outline-none"
+                    className="flex-1 px-2 py-1 text-sm rounded bg-bg-elevated border border-accent focus:outline-none text-ink"
                   />
                 ) : (
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
-                      <span className="font-medium truncate">{list.name}</span>
+                      <span className="font-medium truncate text-ink">{list.name}</span>
                       {list.isDefault && (
-                        <span className="text-xs px-1.5 py-0.5 rounded bg-amber-600/20 text-amber-500">
+                        <span className="text-2xs px-1.5 py-0.5 rounded bg-primary/20 text-primary">
                           Default
                         </span>
                       )}
                     </div>
-                    <span className="text-sm text-zinc-500">
+                    <span className="text-sm text-ink3">
                       {count} musician{count !== 1 ? 's' : ''}
                     </span>
                   </div>
@@ -110,8 +109,11 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                   {/* Public toggle */}
                   <button
                     onClick={() => togglePublic(list.id)}
-                    className={`p-2 rounded-lg transition-colors ${list.isPublic ? 'text-amber-500 bg-amber-500/10' : 'text-zinc-500 hover:bg-white/10'
-                      }`}
+                    className={`p-2 rounded-lg transition-colors ${
+                      list.isPublic
+                        ? 'text-accent bg-accent/10'
+                        : 'text-ink3 hover:bg-bg-hover'
+                    }`}
                     title={list.isPublic ? 'Public' : 'Private'}
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,7 +129,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                   {list.isPublic && list.shareSlug && (
                     <button
                       onClick={() => handleCopyLink(list.shareSlug!)}
-                      className="p-2 rounded-lg text-zinc-500 hover:bg-white/10 transition-colors"
+                      className="p-2 rounded-lg text-ink3 hover:bg-bg-hover transition-colors"
                       title="Copy link"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -143,7 +145,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                         setEditingId(list.id)
                         setEditingName(list.name)
                       }}
-                      className="p-2 rounded-lg text-zinc-500 hover:bg-white/10 transition-colors"
+                      className="p-2 rounded-lg text-ink3 hover:bg-bg-hover transition-colors"
                       title="Rename"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -160,7 +162,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                           deleteList(list.id)
                         }
                       }}
-                      className="p-2 rounded-lg text-zinc-500 hover:bg-red-500/10 hover:text-red-500 transition-colors"
+                      className="p-2 rounded-lg text-ink3 hover:bg-danger-bg hover:text-danger transition-colors"
                       title="Delete"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -174,7 +176,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
           })}
         </div>
 
-        <form onSubmit={handleCreate} className="p-4 border-t border-white/10">
+        <form onSubmit={handleCreate} className="p-4 border-t border-border-subtle">
           <div className="flex gap-2">
             <input
               type="text"
@@ -182,12 +184,12 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
               onChange={(e) => setNewListName(e.target.value)}
               placeholder="Create new list..."
               maxLength={100}
-              className="flex-1 px-3 py-2 rounded-lg bg-zinc-800 border border-white/10 focus:border-amber-500 focus:outline-none transition-colors"
+              className="flex-1 px-3 py-2 rounded-lg bg-bg-elevated border border-border-subtle focus:border-accent focus:outline-none transition-colors text-ink placeholder-ink3"
             />
             <button
               type="submit"
               disabled={creating || !newListName.trim()}
-              className="px-4 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium"
+              className="px-4 py-2 rounded-lg bg-primary hover:bg-primary2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium text-ink"
             >
               {creating ? '...' : 'Create'}
             </button>

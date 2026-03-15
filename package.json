@@ -15,7 +15,9 @@
     "etl": "node etl-claude-enrich.js",
     "etl:all": "node etl-claude-enrich.js --all",
     "etl:musician": "node etl-claude-enrich.js --musician",
-    "enrich": "node enrich-musicians-v3.js"
+    "enrich": "node enrich-musicians-v3.js",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@deck.gl/geo-layers": "^9.2.11",
@@ -48,6 +50,18 @@
     "sharp": "^0.34.5",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3",
-    "vite": "^7.3.1"
+    "vite": "^7.3.1",
+    "storybook": "^10.2.19",
+    "@storybook/react-vite": "^10.2.19",
+    "@chromatic-com/storybook": "^5.0.1",
+    "@storybook/addon-vitest": "^10.2.19",
+    "@storybook/addon-a11y": "^10.2.19",
+    "@storybook/addon-docs": "^10.2.19",
+    "@storybook/addon-onboarding": "^10.2.19",
+    "eslint-plugin-storybook": "^10.2.19",
+    "vitest": "^4.1.0",
+    "playwright": "^1.58.2",
+    "@vitest/browser-playwright": "^4.1.0",
+    "@vitest/coverage-v8": "^4.1.0"
   }
 }

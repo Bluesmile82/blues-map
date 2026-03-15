@@ -27,7 +27,6 @@ export default function PublicListView({
       setLoading(true)
       setError(null)
 
-      // Fetch list by share_slug
       const { data: listData, error: listError } = await supabase
         .from('lists')
         .select('*')
@@ -43,7 +42,6 @@ export default function PublicListView({
 
       setList(listData as DbList)
 
-      // Fetch favorites in this list
       const { data: favoritesData, error: favoritesError } = await supabase
         .from('favorites')
         .select('musician_id')
@@ -67,51 +65,51 @@ export default function PublicListView({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
       <div className="absolute inset-0" onClick={onClose} />
-      
-      <div className="relative w-full max-w-lg mx-4 bg-zinc-900 rounded-xl shadow-2xl border border-white/10 max-h-[80vh] flex flex-col">
-        <div className="flex items-center justify-between p-4 border-b border-white/10">
+
+      <div className="relative w-full max-w-lg mx-4 bg-bg border border-border-subtle rounded-xl shadow-2xl max-h-[80vh] flex flex-col">
+        <div className="flex items-center justify-between p-4 border-b border-border-subtle">
           <div>
-            <h3 className="font-semibold text-lg">
+            <h3 className="font-semibold text-lg text-ink">
               {loading ? 'Loading...' : list?.name ?? 'List'}
             </h3>
             {!loading && !error && (
-              <p className="text-sm text-zinc-500">
+              <p className="text-sm text-ink3">
                 {listMusicians.length} musician{listMusicians.length !== 1 ? 's' : ''}
               </p>
             )}
           </div>
           <button
             onClick={onClose}
-            className="p-1 rounded-lg hover:bg-white/10 transition-colors"
+            className="p-1 rounded-lg text-ink3 hover:bg-bg-hover hover:text-ink transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
-        
+
         <div className="flex-1 overflow-y-auto">
           {loading && (
             <div className="flex items-center justify-center py-12">
-              <div className="w-8 h-8 border-2 border-amber-500 border-t-transparent rounded-full animate-spin" />
+              <div className="w-8 h-8 border-2 border-accent border-t-transparent rounded-full animate-spin" />
             </div>
           )}
-          
+
           {error && (
             <div className="flex flex-col items-center justify-center py-12 text-center px-4">
-              <svg className="w-12 h-12 text-zinc-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-12 h-12 text-ink3 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
               </svg>
-              <p className="text-zinc-400">{error}</p>
+              <p className="text-ink3">{error}</p>
             </div>
           )}
-          
+
           {!loading && !error && listMusicians.length === 0 && (
             <div className="flex flex-col items-center justify-center py-12 text-center px-4">
-              <p className="text-zinc-400">This list is empty</p>
+              <p className="text-ink3">This list is empty</p>
             </div>
           )}
-          
+
           {!loading && !error && listMusicians.map((musician) => (
             <button
               key={musician.id}
@@ -119,16 +117,16 @@ export default function PublicListView({
                 onSelectMusician(musician)
                 onClose()
               }}
-              className="w-full flex items-center gap-3 px-4 py-3 border-b border-white/5 hover:bg-white/5 transition-colors text-left"
+              className="w-full flex items-center gap-3 px-4 py-3 border-b border-border-subtle/40 hover:bg-bg-hover transition-colors text-left"
             >
               <img
                 src={musician.image}
                 alt={musician.name}
-                className="w-12 h-12 rounded-lg object-cover bg-zinc-800"
+                className="w-12 h-12 rounded-lg object-cover bg-bg-elevated"
               />
               <div className="flex-1 min-w-0">
-                <div className="font-medium truncate">{musician.name}</div>
-                <div className="text-sm text-zinc-500 truncate">
+                <div className="font-medium truncate text-ink">{musician.name}</div>
+                <div className="text-sm text-ink3 truncate">
                   {musician.bluesStyle} • {musician.instrument}
                 </div>
               </div>

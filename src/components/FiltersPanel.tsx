@@ -70,7 +70,7 @@ export default function FiltersPanel({
       {(isCollapsed || !isMobile) && (
         <button
           onClick={() => setCollapsed(!isCollapsed)}
-          className="flex items-center justify-between w-full px-3 py-2 bg-[#0f0c07]/95 border border-[#2a1e0e] rounded-lg text-ink text-xs font-medium backdrop-blur-sm hover:border-[#3a2a15] transition-colors"
+          className="flex items-center justify-between w-full px-3 py-2 bg-bg-subtle/95 border border-border-subtle rounded-lg text-ink text-xs font-medium backdrop-blur-sm hover:border-border transition-colors"
         >
           <span>Filters</span>
           <svg
@@ -102,22 +102,22 @@ export default function FiltersPanel({
           placeholder="Filter by description or albums…"
         />
         {textFilterValue && displayMusiciansCount !== undefined && (
-          <p className="text-[0.65rem] text-ink3 px-0.5">
+          <p className="text-2xs text-ink3 px-0.5">
             {displayMusiciansCount} musician{displayMusiciansCount !== 1 ? 's' : ''} shown
           </p>
         )}
 
         {/* Favorites filter - only show when logged in */}
         {user && (
-          <div className="bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2 flex flex-col gap-2">
+          <div className="bg-bg/90 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
             <div className="flex items-center gap-2">
               <input
                 type="checkbox"
                 checked={showFavoritesOnly}
                 onChange={(e) => onFavoritesOnlyChange(e.target.checked)}
-                className="w-4 h-4 rounded border-[#2a1e0e] bg-[#0f0c07] text-accent focus:ring-accent focus:ring-offset-0"
+                className="w-4 h-4 rounded border-border-subtle bg-bg-subtle text-accent focus:ring-accent focus:ring-offset-0"
               />
-              <span className="text-[0.7rem] text-ink3">Show favorites only</span>
+              <span className="text-label text-ink3">Show favorites only</span>
             </div>
 
             {/* List selector dropdown */}
@@ -126,7 +126,7 @@ export default function FiltersPanel({
                 <select
                   value={filterListId ?? ''}
                   onChange={(e) => onFilterListIdChange(e.target.value || null)}
-                  className="text-[0.7rem] bg-[#0f0c07] border border-[#2a1e0e] rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
+                  className="text-label bg-bg-subtle border border-border-subtle rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
                 >
                   <option value="">All lists</option>
                   {lists.map((list) => {
@@ -144,13 +144,13 @@ export default function FiltersPanel({
         )}
 
         {/* Blues style legend */}
-        <div className="bg-bg/90 border border-[#2a1e0e] rounded-lg">
+        <div className="bg-bg/90 border border-border-subtle rounded-lg">
           <button
             onClick={() => setLegendOpen(!legendOpen)}
-            className="flex items-center justify-between w-full px-3 py-2 text-[0.65rem] text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
+            className="flex items-center justify-between w-full px-3 py-2 text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
           >
             <span>Blues Style</span>
-            <span className="text-[0.55rem] opacity-60">{legendOpen ? '▲' : '▼'}</span>
+            <span className="text-3xs opacity-60">{legendOpen ? '▲' : '▼'}</span>
           </button>
 
           {legendOpen && (
@@ -162,7 +162,7 @@ export default function FiltersPanel({
                 return (
                   <div
                     key={style}
-                    className="flex items-center gap-2 px-2 py-1 cursor-pointer transition-colors hover:bg-[#1a1208] rounded"
+                    className="flex items-center gap-2 px-2 py-1 cursor-pointer transition-colors hover:bg-bg-hover rounded"
                     style={{
                       background: isActive ? `rgba(${r},${g},${b},0.15)` : undefined,
                       color: isActive ? `rgb(${r},${g},${b})` : 'rgba(255,255,255,0.65)',
@@ -177,9 +177,9 @@ export default function FiltersPanel({
                         boxShadow: isActive ? `0 0 5px rgba(${r},${g},${b},0.6)` : 'none',
                       }}
                     />
-                    <span className="text-[0.7rem] flex-1">{style}</span>
+                    <span className="text-label flex-1">{style}</span>
                     {isActive && (
-                      <span className="text-[0.6rem] opacity-50">✕</span>
+                      <span className="text-2xs opacity-50">✕</span>
                     )}
                   </div>
                 )
@@ -188,7 +188,7 @@ export default function FiltersPanel({
               {styleFilter && (
                 <button
                   onClick={() => onStyleFilterChange(null)}
-                  className="w-full px-2 py-1 text-[0.65rem] text-ink3 hover:text-ink hover:bg-[#1a1208] transition-colors text-left rounded"
+                  className="w-full px-2 py-1 text-2xs text-ink3 hover:text-ink hover:bg-bg-hover transition-colors text-left rounded"
                 >
                   Clear filter
                 </button>
@@ -198,19 +198,19 @@ export default function FiltersPanel({
         </div>
 
         {/* Year range filter */}
-        <div className="bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2 flex flex-col gap-1.5">
+        <div className="bg-bg/90 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-1.5">
           <div className="flex items-center justify-between">
-            <span className="text-[0.6rem] text-accent tracking-widest uppercase">Active years</span>
+            <span className="text-2xs text-accent tracking-widest uppercase">Active years</span>
             {yearRange && (
               <button
                 onClick={() => onYearRangeChange(null)}
-                className="text-[0.55rem] text-ink3 hover:text-ink transition-colors"
+                className="text-3xs text-ink3 hover:text-ink transition-colors"
               >
                 reset
               </button>
             )}
           </div>
-          <div className="flex items-center justify-between text-[0.65rem] text-ink3">
+          <div className="flex items-center justify-between text-2xs text-ink3">
             <span>{effectiveYearRange[0]}</span>
             <span>{effectiveYearRange[1]}</span>
           </div>
@@ -239,7 +239,7 @@ export default function FiltersPanel({
               className="year-range-slider absolute w-full h-1"
               style={{ zIndex: 3 }}
             />
-            <div className="absolute w-full h-1 rounded bg-[#2a1e0e]" style={{ zIndex: 1 }}>
+            <div className="absolute w-full h-1 rounded bg-border-subtle" style={{ zIndex: 1 }}>
               <div
                 className="absolute h-full rounded bg-accent/50"
                 style={{

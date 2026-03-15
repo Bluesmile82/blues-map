@@ -50,7 +50,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
       <button
         onClick={onClose}
         aria-label="Close panel"
-        className="absolute top-4 right-4 z-[9999] w-9 h-9 flex items-center justify-center rounded-full bg-[#1a1208] border border-[#3a2a15] text-ink3 text-sm hover:text-ink hover:border-accent hover:bg-[#251a0d] transition-all duration-200 shadow-sm pointer-events-auto"
+        className="absolute top-4 right-4 z-[9999] w-9 h-9 flex items-center justify-center rounded-full bg-bg-hover border border-border text-ink3 text-sm hover:text-ink hover:border-accent hover:bg-bg-deep transition-all duration-200 shadow-sm pointer-events-auto"
       >
         ✕
       </button>
@@ -93,7 +93,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
             <h2 className="text-ink font-bold text-[1.25rem] leading-tight mb-2">{musician.name}</h2>
             <div className="flex flex-wrap items-center gap-1.5 mb-2.5">
               <span
-                className="inline-block text-[0.7rem] font-semibold tracking-wide uppercase px-3 py-1 rounded-lg"
+                className="inline-block text-label font-semibold tracking-wide uppercase px-3 py-1 rounded-lg"
                 style={{
                   color: hex,
                   background: `rgba(${r},${g},${b},0.12)`,
@@ -107,7 +107,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                 return (
                   <span
                     key={style}
-                    className="inline-block text-[0.65rem] font-medium tracking-wide uppercase px-2.5 py-0.5 rounded-lg opacity-75"
+                    className="inline-block text-2xs font-medium tracking-wide uppercase px-2.5 py-0.5 rounded-lg opacity-75"
                     style={{
                       color: styleHex,
                       border: `1px solid ${styleHex}55`,
@@ -119,15 +119,15 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                 );
               })}
             </div>
-            <p className="text-ink3 text-[0.82rem] leading-relaxed font-medium">
+            <p className="text-ink3 text-ui leading-relaxed font-medium">
               {musician.birthPlace} · b. {getYear(musician.birthDate)}
               {musician.deathDate
                 ? ` — d. ${getYear(musician.deathDate)}, ${musician.deathPlace}`
                 : ' — still active'}
             </p>
-            <p className="text-ink2 text-[0.82rem] mt-1">{musician.instrument}</p>
+            <p className="text-ink2 text-ui mt-1">{musician.instrument}</p>
             {musician.image_source && (
-              <p className="text-ink3 text-[0.75rem] mt-1 italic">Image: {musician.image_source}</p>
+              <p className="text-ink3 text-xs mt-1 italic">Image: {musician.image_source}</p>
             )}
             {editMode && (
               <button
@@ -148,8 +148,8 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                   }
                 }}
                 className={`flex items-center gap-2 px-4 py-2.5 rounded-lg transition-colors touch-manipulation ${isFavorited(musician.id)
-                    ? 'bg-red-500/20 text-red-400'
-                    : 'bg-white/10 hover:bg-white/20 active:bg-white/30'
+                    ? 'bg-danger-bg text-danger'
+                    : 'bg-bg-hover hover:bg-bg-deep active:bg-border-subtle'
                   }`}
               >
                 <svg className="w-5 h-5" fill={isFavorited(musician.id) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
@@ -192,7 +192,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
 
           {/* Description */}
           {musician.description && (
-            <p className="text-[0.88rem] text-ink leading-[1.75]">{musician.description}</p>
+            <p className="text-ui text-ink leading-[1.75]">{musician.description}</p>
           )}
 
           {/* Listen */}
@@ -200,7 +200,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
             <Section title="Listen" r={r} g={g} b={b} hex={hex}>
               <button
                 onClick={() => onPlayVideo(musician.youtubeLink)}
-                className="inline-flex items-center gap-3 px-5 py-3 rounded-md text-[0.86rem] font-medium border transition-all duration-150"
+                className="inline-flex items-center gap-3 px-5 py-3 rounded-md text-ui font-medium border transition-all duration-150"
                 style={{
                   color: hex,
                   background: `rgba(${r},${g},${b},0.1)`,
@@ -217,7 +217,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                   el.style.borderColor = `rgba(${r},${g},${b},0.3)`;
                 }}
               >
-                <span className="w-7 h-7 rounded-full flex items-center justify-center text-[0.65rem]"
+                <span className="w-7 h-7 rounded-full flex items-center justify-center text-2xs"
                   style={{ background: `rgba(${r},${g},${b},0.25)` }}>
                   ▶
                 </span>
@@ -232,13 +232,13 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
               <ul className="flex flex-col gap-4">
                 {musician.albums.map((album) => (
                   <li key={album.name} className="flex items-start gap-3">
-                    <span className="mt-1.5 shrink-0 text-[0.65rem]" style={{ color: hex }}>◆</span>
+                    <span className="mt-1.5 shrink-0 text-2xs" style={{ color: hex }}>◆</span>
                     <div className="flex-1 flex items-center justify-between gap-3 py-1.5">
-                      <span className="text-[0.86rem] text-ink2">{album.name}</span>
+                      <span className="text-ui text-ink2">{album.name}</span>
                       {album.youtubeLink && (
                         <button
                           onClick={() => onPlayVideo(album.youtubeLink)}
-                          className="shrink-0 inline-flex items-center gap-2 px-3.5 py-2 rounded text-[0.73rem] font-medium border transition-all duration-150"
+                          className="shrink-0 inline-flex items-center gap-2 px-3.5 py-2 rounded text-label font-medium border transition-all duration-150"
                           style={{
                             color: hex,
                             background: `rgba(${r},${g},${b},0.08)`,
@@ -255,7 +255,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                             el.style.borderColor = `rgba(${r},${g},${b},0.25)`;
                           }}
                         >
-                          <span className="text-[0.65rem]">▶</span>
+                          <span className="text-2xs">▶</span>
                           Listen
                         </button>
                       )}
@@ -342,7 +342,7 @@ function Section({
     <section className="flex flex-col gap-4">
       <div className="flex items-center gap-3">
         <span className="w-1 h-4.5 rounded-full shrink-0" style={{ background: hex }} />
-        <h3 className="text-[0.7rem] font-semibold tracking-wide uppercase" style={{ color: hex }}>
+        <h3 className="text-label font-semibold tracking-wide uppercase" style={{ color: hex }}>
           {title}
         </h3>
         <div className="flex-1 h-px" style={{ background: `rgba(${r},${g},${b},0.12)` }} />
@@ -358,12 +358,12 @@ function MusicianChip({ musician, onClick }: { musician: Musician; onClick: () =
   return (
     <button
       onClick={onClick}
-      className="flex items-center gap-2 rounded-full pl-1 pr-4 py-2 text-ink2 text-[0.83rem] font-medium border border-[#2a1e0e] bg-[#141008] transition-all duration-200 hover:shadow-md"
+      className="flex items-center gap-2 rounded-full pl-1 pr-4 py-2 text-ink2 text-ui font-medium border border-border-subtle bg-bg-elevated transition-all duration-200 hover:shadow-md"
       onMouseEnter={(e) => {
         const el = e.currentTarget as HTMLElement;
         el.style.borderColor = hex;
         el.style.background = `rgba(${r},${g},${b},0.12)`;
-        el.style.color = '#f0e6d3';
+        el.style.color = 'var(--color-ink-warm)';
       }}
       onMouseLeave={(e) => {
         const el = e.currentTarget as HTMLElement;
@@ -392,7 +392,7 @@ function MusicianChip({ musician, onClick }: { musician: Musician; onClick: () =
 
 function DetailRow({ label, value }: { label: string; value: string }) {
   return (
-    <div className="flex gap-3.5 text-[0.82rem]">
+    <div className="flex gap-3.5 text-ui">
       <span className="text-ink3 w-[4.8rem] shrink-0 pt-px">{label}</span>
       <span className="text-ink2 leading-snug">{value}</span>
     </div>

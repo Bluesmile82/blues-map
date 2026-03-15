@@ -31,15 +31,12 @@ export default function AuthModal({ onClose }: AuthModalProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
-      <div
-        className="absolute inset-0"
-        onClick={onClose}
-      />
+      <div className="absolute inset-0" onClick={onClose} />
 
-      <div className="absolute top-full w-full max-w-sm mx-4 bg-zinc-900 rounded-xl shadow-2xl border border-white/10">
+      <div className="relative w-full max-w-sm mx-4 bg-bg border border-border-subtle rounded-xl shadow-2xl">
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 p-1 rounded-lg hover:bg-white/10 transition-colors"
+          className="absolute top-3 right-3 p-1 rounded-lg text-ink3 hover:bg-bg-hover hover:text-ink transition-colors"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -47,13 +44,13 @@ export default function AuthModal({ onClose }: AuthModalProps) {
         </button>
 
         <div className="p-6">
-          <h2 className="text-xl font-semibold mb-6">
+          <h2 className="text-xl font-semibold mb-6 text-ink">
             {mode === 'signin' ? 'Sign in' : 'Create account'}
           </h2>
 
           <button
             onClick={signInWithGoogle}
-            className="w-full flex items-center justify-center gap-3 px-4 py-2.5 rounded-lg bg-white text-zinc-900 font-medium hover:bg-zinc-100 transition-colors"
+            className="w-full flex items-center justify-center gap-3 px-4 py-2.5 rounded-lg bg-ink text-bg font-medium hover:bg-ink2 transition-colors"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24">
               <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
@@ -65,32 +62,32 @@ export default function AuthModal({ onClose }: AuthModalProps) {
           </button>
 
           <div className="flex items-center gap-3 my-5">
-            <div className="flex-1 h-px bg-white/10" />
-            <span className="text-sm text-zinc-500">or</span>
-            <div className="flex-1 h-px bg-white/10" />
+            <div className="flex-1 h-px bg-border-subtle" />
+            <span className="text-sm text-ink3">or</span>
+            <div className="flex-1 h-px bg-border-subtle" />
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm text-zinc-400 mb-1.5">Email</label>
+              <label className="block text-sm text-ink3 mb-1.5">Email</label>
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full px-3 py-2 rounded-lg bg-zinc-800 border border-white/10 focus:border-amber-500 focus:outline-none transition-colors"
+                className="w-full px-3 py-2 rounded-lg bg-bg-elevated border border-border-subtle focus:border-accent focus:outline-none transition-colors text-ink"
               />
             </div>
 
             <div>
-              <label className="block text-sm text-zinc-400 mb-1.5">Password</label>
+              <label className="block text-sm text-ink3 mb-1.5">Password</label>
               <input
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 minLength={6}
-                className="w-full px-3 py-2 rounded-lg bg-zinc-800 border border-white/10 focus:border-amber-500 focus:outline-none transition-colors"
+                className="w-full px-3 py-2 rounded-lg bg-bg-elevated border border-border-subtle focus:border-accent focus:outline-none transition-colors text-ink"
               />
             </div>
 
@@ -101,30 +98,24 @@ export default function AuthModal({ onClose }: AuthModalProps) {
             <button
               type="submit"
               disabled={submitting}
-              className="w-full px-4 py-2.5 rounded-lg bg-amber-600 hover:bg-amber-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium"
+              className="w-full px-4 py-2.5 rounded-lg bg-primary hover:bg-primary2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium text-ink"
             >
               {submitting ? 'Loading...' : mode === 'signin' ? 'Sign in' : 'Create account'}
             </button>
           </form>
 
-          <p className="mt-4 text-sm text-center text-zinc-400">
+          <p className="mt-4 text-sm text-center text-ink3">
             {mode === 'signin' ? (
               <>
                 Don't have an account?{' '}
-                <button
-                  onClick={() => setMode('signup')}
-                  className="text-amber-500 hover:text-amber-400"
-                >
+                <button onClick={() => setMode('signup')} className="text-accent hover:text-accent2">
                   Sign up
                 </button>
               </>
             ) : (
               <>
                 Already have an account?{' '}
-                <button
-                  onClick={() => setMode('signin')}
-                  className="text-amber-500 hover:text-amber-400"
-                >
+                <button onClick={() => setMode('signin')} className="text-accent hover:text-accent2">
                   Sign in
                 </button>
               </>

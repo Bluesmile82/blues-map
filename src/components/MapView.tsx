@@ -125,16 +125,16 @@ function MusicianSidebar({
 
       {/* Favorites filter */}
       {user && (
-        <div className="mb-3 bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2 flex flex-col gap-2">
+        <div className="mb-3 bg-bg/90 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
           <div className="flex items-center gap-2">
             <input
               type="checkbox"
               id="map-favorites-filter"
               checked={showFavoritesOnly}
               onChange={(e) => setShowFavoritesOnly(e.target.checked)}
-              className="w-4 h-4 rounded border-[#2a1e0e] bg-[#0f0c07] text-accent focus:ring-accent focus:ring-offset-0"
+              className="w-4 h-4 rounded border-border-subtle bg-bg-subtle text-accent focus:ring-accent focus:ring-offset-0"
             />
-            <label htmlFor="map-favorites-filter" className="text-[0.7rem] text-ink3 cursor-pointer">
+            <label htmlFor="map-favorites-filter" className="text-label text-ink3 cursor-pointer">
               Show favorites only
             </label>
           </div>
@@ -145,7 +145,7 @@ function MusicianSidebar({
               <select
                 value={filterListId ?? ''}
                 onChange={(e) => setFilterListId(e.target.value || null)}
-                className="text-[0.7rem] bg-[#0f0c07] border border-[#2a1e0e] rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
+                className="text-label bg-bg-subtle border border-border-subtle rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
               >
                 <option value="">All lists</option>
                 {lists.map((list) => {
@@ -164,13 +164,13 @@ function MusicianSidebar({
       )}
 
       {/* Blues Style Legend - collapsible */}
-      <div className="mb-3 bg-bg/90 border border-[#2a1e0e] rounded-lg px-3 py-2">
+      <div className="mb-3 bg-bg/90 border border-border-subtle rounded-lg px-3 py-2">
         <button
           onClick={() => setStyleLegendCollapsed(!styleLegendCollapsed)}
-          className="flex items-center justify-between w-full text-[0.65rem] text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
+          className="flex items-center justify-between w-full text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
         >
           <span>Blues Style</span>
-          <span className="text-[0.55rem] opacity-60">{styleLegendCollapsed ? '▼' : '▲'}</span>
+          <span className="text-3xs opacity-60">{styleLegendCollapsed ? '▼' : '▲'}</span>
         </button>
 
         {!styleLegendCollapsed && (
@@ -182,7 +182,7 @@ function MusicianSidebar({
               return (
                 <div
                   key={style}
-                  className="flex items-center gap-2 px-2 py-1 cursor-pointer transition-colors hover:bg-[#1a1208] rounded"
+                  className="flex items-center gap-2 px-2 py-1 cursor-pointer transition-colors hover:bg-bg-hover rounded"
                   style={{
                     background: isActive ? `rgba(${r},${g},${b},0.15)` : undefined,
                     color: isActive ? `rgb(${r},${g},${b})` : 'rgba(255,255,255,0.65)',
@@ -197,9 +197,9 @@ function MusicianSidebar({
                       boxShadow: isActive ? `0 0 5px rgba(${r},${g},${b},0.6)` : 'none',
                     }}
                   />
-                  <span className="text-[0.7rem] flex-1">{style}</span>
+                  <span className="text-label flex-1">{style}</span>
                   {isActive && (
-                    <span className="text-[0.6rem] opacity-50">✕</span>
+                    <span className="text-2xs opacity-50">✕</span>
                   )}
                 </div>
               );
@@ -211,7 +211,7 @@ function MusicianSidebar({
                   const event = new CustomEvent('styleFilterChange', { detail: null });
                   window.dispatchEvent(event);
                 }}
-                className="w-full px-2 py-1 text-[0.65rem] text-ink3 hover:text-ink hover:bg-[#1a1208] transition-colors text-left rounded"
+                className="w-full px-2 py-1 text-2xs text-ink3 hover:text-ink hover:bg-bg-hover transition-colors text-left rounded"
               >
                 Clear filter
               </button>
@@ -231,7 +231,7 @@ function MusicianSidebar({
             {filteredMusicians.items.map((item: any) => {
               if (item.type === 'decade') {
                 return (
-                  <div key={`decade-${item.decade}`} className="sticky -top-3 z-10 py-1 px-3 bg-[#0a0805] border-b border-border">
+                  <div key={`decade-${item.decade}`} className="sticky -top-3 z-10 py-1 px-3 bg-bg border-b border-border">
                     <span className="text-xs font-bold text-accent tracking-wide">
                       <span className='uppercase'>Active in</span> {item.decade}s
                     </span>
@@ -286,7 +286,7 @@ function MusicianSidebar({
                     </div>
                     <div className="flex items-center gap-2">
                       <span
-                        className="text-[0.65rem] font-medium px-2 py-0.5 rounded-md"
+                        className="text-2xs font-medium px-2 py-0.5 rounded-md"
                         style={{
                           color: hex,
                           background: `rgba(${r},${g},${b},0.12)`,
@@ -332,7 +332,7 @@ function MusicianSidebar({
       </div>
 
       {/* Footer count */}
-      <div className="shrink-0 px-5 py-3 border-t border-border text-xs text-ink3 bg-[#0a0805] font-medium">
+      <div className="shrink-0 px-5 py-3 border-t border-border text-xs text-ink3 bg-bg font-medium">
         {filteredMusicians.count} of {musicians.length} musicians
       </div>
     </div>
@@ -349,7 +349,6 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
 
   const [hovered, setHovered] = useState<string | null>(null);
   const [listHovered, setListHovered] = useState<string | null>(null);
-  const [legendOpen, setLegendOpen] = useState(true);
   const [viewState, setViewState] = useState<MapViewState>(INITIAL_VIEW_STATE);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -423,12 +422,12 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       getPosition: (d) => d.birthCoords,
       getRadius: (d) => (d.id === focusId ? 28000 : !focusId ? 18000 : 12000),
       getFillColor: (d): [number, number, number, number] => {
-        const a = !focusId || d.id === focusId ? 220 : 40;
+        const a = !focusId || d.id === focusId ? 220 : 140;
         return [...getStyleColor(d.bluesStyle), a] as [number, number, number, number];
       },
       stroked: true,
       getLineColor: (d): [number, number, number, number] => {
-        const a = d.id === focusId ? 255 : !focusId ? 80 : 20;
+        const a = d.id === focusId ? 255 : !focusId ? 180 : 20;
         return [255, 255, 255, a];
       },
       lineWidthUnits: 'pixels' as const,
@@ -452,8 +451,8 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       sizeUnits: 'pixels' as const,
       getPixelOffset: [0, -32] as [number, number],
       getColor: (d): [number, number, number, number] => {
-        const a = !focusId || d.id === focusId ? 220 : 50;
-        return [240, 210, 160, a];
+        const a = !focusId || d.id === focusId ? 220 : 10;
+        return [255, 255, 255, a];
       },
       getTextAnchor: 'middle' as const,
       fontFamily: 'Georgia, serif',
@@ -488,7 +487,14 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       <div className={`${sidebarOpen ? 'flex' : 'hidden'} sm:flex absolute left-0 top-0 bottom-0 z-10`}>
         <MusicianSidebar
           musicians={completeMusicians}
-          onSelect={(m) => { onSelect(m); setSidebarOpen(false); }}
+          onSelect={(m) => {
+            onSelect(m);
+
+            // Zoom to musician's birth place on map
+
+
+            setSidebarOpen(false);
+          }}
           onHover={setListHovered}
           selectedId={selectedId}
           hoveredId={listHovered}
@@ -511,13 +517,13 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
 
         {/* Legend */}
         <div className="absolute bottom-6 right-6 bg-bg/90 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none">
-          <p className="text-[0.68rem] text-accent tracking-widest uppercase mb-1">Map Key</p>
+          <p className="text-2xs text-accent tracking-widest uppercase mb-1">Map Key</p>
           {[
             { label: 'Birth place', el: <span className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" /> },
             { label: 'Time spent', el: <span className="w-2.5 h-2.5 rounded-full border-[1.5px] border-accent shrink-0" /> },
             { label: 'Migration arc', el: <span className="w-4 h-0.5 bg-gradient-to-r from-accent/40 to-accent/90 rounded shrink-0" /> },
           ].map(({ label, el }) => (
-            <div key={label} className="flex items-center gap-2 text-[0.75rem] text-ink2">
+            <div key={label} className="flex items-center gap-2 text-xs text-ink2">
               {el}
               {label}
             </div>
@@ -527,9 +533,9 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
         {/* Hover tooltip */}
         {hoveredMusician && !selectedId && (
           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-bg2/96 border border-accent rounded-md px-4 py-2 flex items-center gap-2.5 pointer-events-none whitespace-nowrap">
-            <strong className="text-ink text-[0.9rem]">{hoveredMusician.name}</strong>
-            <span className="text-ink2 text-[0.78rem]">Born: {hoveredMusician.birthPlace}</span>
-            <span className="text-accent text-[0.75rem]">{hoveredMusician.bluesStyle}</span>
+            <strong className="text-ink text-sm">{hoveredMusician.name}</strong>
+            <span className="text-ink2 text-xs">Born: {hoveredMusician.birthPlace}</span>
+            <span className="text-accent text-xs">{hoveredMusician.bluesStyle}</span>
           </div>
         )}
       </div>

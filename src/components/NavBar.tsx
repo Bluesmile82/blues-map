@@ -17,33 +17,33 @@ interface NavBarProps {
 export default function NavBar({ view, onViewChange, editMode, onEditModeChange, onCreateNew, editModeEnabled, onRandom, onCredits, autoplay, onAutoplayChange }: NavBarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  const tabClass = (active: boolean) => [
+    'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border transition-all duration-200',
+    active
+      ? 'bg-bg-hover border-accent text-accent shadow-sm'
+      : 'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink',
+  ].join(' ')
+
+  const btnClass = 'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink transition-all duration-200'
+
   return (
-    <header className="fixed top-0 left-0 right-0 h-14 z-[100] flex items-center gap-2 sm:gap-4 px-3 sm:px-6 bg-[#0a0805]/98 backdrop-blur-lg border-b border-[#2a1e0e]">
+    <header className="fixed top-0 left-0 right-0 h-14 z-[100] flex items-center gap-2 sm:gap-4 px-3 sm:px-6 bg-bg/98 backdrop-blur-lg border-b border-border-subtle">
       {/* Brand */}
       <h1 className="block text-ink text-base font-bold tracking-wide">The Blues Map</h1>
 
-      {/* View tabs - hide on mobile, show on sm+ */}
+      {/* View tabs - desktop */}
       <nav className="hidden sm:flex gap-1 sm:gap-1.5 shrink-0">
         {([
           { id: 'influence', label: 'Timeline' },
           { id: 'map', label: 'Map' },
         ] as const).map(({ id, label }) => (
-          <button
-            key={id}
-            onClick={() => onViewChange(id)}
-            className={[
-              'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-[0.8rem] font-medium tracking-wide border transition-all duration-200',
-              view === id
-                ? 'bg-[#1a1208] border-accent text-accent shadow-sm'
-                : 'bg-transparent border-[#3a2a15] text-ink3 hover:bg-[#1a1208] hover:border-[#4a3a25] hover:text-ink',
-            ].join(' ')}
-          >
+          <button key={id} onClick={() => onViewChange(id)} className={tabClass(view === id)}>
             {label}
           </button>
         ))}
       </nav>
 
-      {/* Mobile view tabs */}
+      {/* View tabs - mobile */}
       <div className="sm:hidden flex gap-1 ml-auto">
         {([
           { id: 'influence', label: 'Timeline' },
@@ -53,10 +53,10 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
             key={id}
             onClick={() => onViewChange(id)}
             className={[
-              'px-3 py-1.5 rounded-lg text-[0.75rem] font-medium tracking-wide border transition-all duration-200',
+              'px-3 py-1.5 rounded-lg text-xs font-medium tracking-wide border transition-all duration-200',
               view === id
-                ? 'bg-[#1a1208] border-accent text-accent shadow-sm'
-                : 'bg-transparent border-[#3a2a15] text-ink3 hover:bg-[#1a1208] hover:border-[#4a3a25] hover:text-ink',
+                ? 'bg-bg-hover border-accent text-accent shadow-sm'
+                : 'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink',
             ].join(' ')}
           >
             {label}
@@ -69,38 +69,30 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
         <button
           onClick={() => onAutoplayChange(!autoplay)}
           className={[
-            'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-[0.8rem] font-medium tracking-wide border transition-all duration-200',
+            'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border transition-all duration-200',
             autoplay
               ? 'bg-accent/20 border-accent text-accent shadow-sm'
-              : 'bg-transparent border-[#3a2a15] text-ink3 hover:bg-[#1a1208] hover:border-[#4a3a25] hover:text-ink',
+              : 'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink',
           ].join(' ')}
           title={autoplay ? 'Autoplay enabled' : 'Autoplay disabled'}
         >
-          <span className="text-[0.85rem]">{autoplay ? '⏸' : '▶'}</span>
+          <span className="text-ui">{autoplay ? '⏸' : '▶'}</span>
           <span className="hidden sm:inline">{autoplay ? 'Disable Autoplay' : 'Enable Autoplay'}</span>
         </button>
-        <button
-          onClick={onRandom}
-          className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-[0.8rem] font-medium tracking-wide border border-border text-ink3 hover:bg-[#1a1208] hover:border-[#4a3a25] hover:text-ink transition-all duration-200"
-          title="Random musician"
-        >
-          <span className="text-[0.85rem]">⚄</span>
+        <button onClick={onRandom} className={btnClass} title="Random musician">
+          <span className="text-ui">⚄</span>
           <span className="hidden sm:inline">Random</span>
         </button>
-        <button
-          onClick={onCredits}
-          className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-[0.8rem] font-medium tracking-wide border border-border text-ink3 hover:bg-[#1a1208] hover:border-[#4a3a25] hover:text-ink transition-all duration-200"
-          title="Credits & Legal"
-        >
-          <span className="text-[0.85rem]">©</span>
+        <button onClick={onCredits} className={btnClass} title="Credits & Legal">
+          <span className="text-ui">©</span>
           <span className="hidden sm:inline">Credits</span>
         </button>
         {editModeEnabled && editMode && (
           <button
             onClick={onCreateNew}
-            className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-[0.8rem] font-medium tracking-wide border bg-accent/20 border-accent text-accent shadow-sm"
+            className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border bg-accent/20 border-accent text-accent shadow-sm"
           >
-            <span className="text-[0.85rem]">+</span>
+            <span className="text-ui">+</span>
             <span className="hidden sm:inline">New Musician</span>
           </button>
         )}
@@ -108,17 +100,17 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
           <button
             onClick={() => onEditModeChange(!editMode)}
             className={[
-              'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-[0.8rem] font-medium tracking-wide border transition-all duration-200',
+              'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border transition-all duration-200',
               editMode
                 ? 'bg-accent/20 border-accent text-accent shadow-sm'
-                : 'bg-transparent border-[#3a2a15] text-ink3 hover:bg-[#1a1208] hover:border-[#4a3a25] hover:text-ink',
+                : 'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink',
             ].join(' ')}
           >
-            <span className="text-[0.85rem]">{editMode ? '✓' : '✎'}</span>
+            <span className="text-ui">{editMode ? '✓' : '✎'}</span>
             <span className="hidden sm:inline">{editMode ? 'Done' : 'Edit'}</span>
           </button>
         )}
-        <p className="hidden md:block text-[0.7rem] text-ink3 font-medium">
+        <p className="hidden md:block text-label text-ink3 font-medium">
           {editModeEnabled && editMode ? 'Click to edit' : 'Click a musician'}
         </p>
         <AuthButton />
@@ -129,7 +121,7 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
         <AuthButton />
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="p-2 rounded-lg border border-[#3a2a15] text-ink3 hover:bg-[#1a1208] hover:border-[#4a3a25] hover:text-ink transition-all"
+          className="p-2 rounded-lg border border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink transition-all"
           aria-label="Menu"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -145,49 +137,34 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
       {/* Mobile menu dropdown */}
       {mobileMenuOpen && (
         <>
-          <div
-            className="fixed inset-0 z-40 bg-black/50"
-            onClick={() => setMobileMenuOpen(false)}
-          />
-          <div className="fixed top-14 right-0 sm:right-4 w-64 max-w-[calc(100vw-1rem)] bg-[#0a0805] border border-[#2a1e0e] rounded-b-lg shadow-xl z-50 flex flex-col">
+          <div className="fixed inset-0 z-40 bg-black/50" onClick={() => setMobileMenuOpen(false)} />
+          <div className="fixed top-14 right-0 sm:right-4 w-64 max-w-[calc(100vw-1rem)] bg-bg border border-border-subtle rounded-b-lg shadow-xl z-50 flex flex-col">
             <div className="p-2 flex flex-col gap-1">
               <button
-                onClick={() => {
-                  onRandom()
-                  setMobileMenuOpen(false)
-                }}
-                className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-[#1a1208] transition-colors text-left"
+                onClick={() => { onRandom(); setMobileMenuOpen(false) }}
+                className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
               >
                 <span className="text-lg">⚄</span>
                 <span className="text-sm">Random Musician</span>
               </button>
               <button
-                onClick={() => {
-                  onAutoplayChange(!autoplay)
-                  setMobileMenuOpen(false)
-                }}
-                className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-[#1a1208] transition-colors text-left"
+                onClick={() => { onAutoplayChange(!autoplay); setMobileMenuOpen(false) }}
+                className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
               >
                 <span className="text-lg">{autoplay ? '⏸' : '▶'}</span>
                 <span className="text-sm">{autoplay ? 'Disable Autoplay' : 'Enable Autoplay'}</span>
               </button>
               <button
-                onClick={() => {
-                  onCredits()
-                  setMobileMenuOpen(false)
-                }}
-                className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-[#1a1208] transition-colors text-left"
+                onClick={() => { onCredits(); setMobileMenuOpen(false) }}
+                className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
               >
                 <span className="text-lg">©</span>
                 <span className="text-sm">Credits</span>
               </button>
               {editModeEnabled && editMode && (
                 <button
-                  onClick={() => {
-                    onCreateNew()
-                    setMobileMenuOpen(false)
-                  }}
-                  className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-accent hover:bg-[#1a1208] transition-colors text-left"
+                  onClick={() => { onCreateNew(); setMobileMenuOpen(false) }}
+                  className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-accent hover:bg-bg-hover transition-colors text-left"
                 >
                   <span className="text-lg">+</span>
                   <span className="text-sm">New Musician</span>
@@ -195,11 +172,8 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
               )}
               {editModeEnabled && (
                 <button
-                  onClick={() => {
-                    onEditModeChange(!editMode)
-                    setMobileMenuOpen(false)
-                  }}
-                  className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-[#1a1208] transition-colors text-left"
+                  onClick={() => { onEditModeChange(!editMode); setMobileMenuOpen(false) }}
+                  className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
                 >
                   <span className="text-lg">{editMode ? '✓' : '✎'}</span>
                   <span className="text-sm">{editMode ? 'Done Editing' : 'Edit Mode'}</span>

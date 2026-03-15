@@ -40,47 +40,47 @@ export default function ListsDropdown({ musicianId, onClose }: ListsDropdownProp
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
       <div className="absolute inset-0" onClick={onClose} />
-      
-      <div className="relative w-full max-w-xs mx-4 bg-zinc-900 rounded-xl shadow-2xl border border-white/10">
-        <div className="flex items-center justify-between p-4 border-b border-white/10">
-          <h3 className="font-semibold">Add to list</h3>
+
+      <div className="relative w-full max-w-xs mx-4 bg-bg border border-border-subtle rounded-xl shadow-2xl">
+        <div className="flex items-center justify-between p-4 border-b border-border-subtle">
+          <h3 className="font-semibold text-ink">Add to list</h3>
           <button
             onClick={onClose}
-            className="p-1 rounded-lg hover:bg-white/10 transition-colors"
+            className="p-1 rounded-lg text-ink3 hover:bg-bg-hover hover:text-ink transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
-        
+
         <div className="max-h-64 overflow-y-auto p-2">
           {lists.map((list) => (
             <button
               key={list.id}
               onClick={() => handleToggle(list.id)}
-              className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/10 transition-colors"
+              className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-bg-hover transition-colors"
             >
               <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
                 isMusicianInList(list.id, musicianId)
-                  ? 'bg-amber-600 border-amber-600'
-                  : 'border-white/30'
+                  ? 'bg-primary border-primary'
+                  : 'border-border text-ink3'
               }`}>
                 {isMusicianInList(list.id, musicianId) && (
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-3 h-3 text-ink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                   </svg>
                 )}
               </div>
-              <span className="flex-1 text-left truncate">{list.name}</span>
+              <span className="flex-1 text-left truncate text-ink">{list.name}</span>
               {list.isDefault && (
-                <span className="text-xs text-zinc-500">Default</span>
+                <span className="text-2xs text-ink3">Default</span>
               )}
             </button>
           ))}
         </div>
-        
-        <form onSubmit={handleCreate} className="p-3 border-t border-white/10">
+
+        <form onSubmit={handleCreate} className="p-3 border-t border-border-subtle">
           <div className="flex gap-2">
             <input
               type="text"
@@ -88,12 +88,12 @@ export default function ListsDropdown({ musicianId, onClose }: ListsDropdownProp
               onChange={(e) => setNewListName(e.target.value)}
               placeholder="New list name..."
               maxLength={100}
-              className="flex-1 px-3 py-1.5 text-sm rounded-lg bg-zinc-800 border border-white/10 focus:border-amber-500 focus:outline-none transition-colors"
+              className="flex-1 px-3 py-1.5 text-sm rounded-lg bg-bg-elevated border border-border-subtle focus:border-accent focus:outline-none transition-colors text-ink placeholder-ink3"
             />
             <button
               type="submit"
               disabled={creating || !newListName.trim()}
-              className="px-3 py-1.5 text-sm rounded-lg bg-amber-600 hover:bg-amber-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="px-3 py-1.5 text-sm rounded-lg bg-primary hover:bg-primary2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-ink font-medium"
             >
               {creating ? '...' : 'Add'}
             </button>

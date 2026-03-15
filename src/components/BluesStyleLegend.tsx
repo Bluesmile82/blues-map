@@ -33,16 +33,16 @@ export default function BluesStyleLegend({
 
   const containerClass = embedded
     ? 'flex flex-col'
-    : `flex flex-col z-40 bg-bg/95 border border-[#2a1e0e] rounded-lg shadow-lg backdrop-blur-sm ${positionClasses[position]}`
+    : `flex flex-col z-40 bg-bg/95 border border-border-subtle rounded-lg shadow-lg backdrop-blur-sm ${positionClasses[position]}`
 
   return (
     <div className={containerClass}>
       <button
         onClick={onToggle}
-        className="flex items-center justify-between gap-2 px-3 py-2 text-[0.65rem] sm:text-[0.7rem] text-accent tracking-widest uppercase hover:text-accent2 transition-colors border-b border-[#2a1e0e]"
+        className="flex items-center justify-between gap-2 px-3 py-2 text-2xs sm:text-label text-accent tracking-widest uppercase hover:text-accent2 transition-colors border-b border-border-subtle"
       >
         <span>Blues Style</span>
-        <span className="text-[0.55rem] opacity-60">{isOpen ? '▲' : '▼'}</span>
+        <span className="text-3xs opacity-60">{isOpen ? '▲' : '▼'}</span>
       </button>
       
       {isOpen && (
@@ -55,7 +55,7 @@ export default function BluesStyleLegend({
             return (
               <div
                 key={style}
-                className="flex items-center gap-2 px-3 py-1.5 cursor-pointer transition-colors hover:bg-[#1a1208]"
+                className="flex items-center gap-2 px-3 py-1.5 cursor-pointer transition-colors hover:bg-bg-hover"
                 style={{
                   background: isActive || isSelected ? `rgba(${r},${g},${b},0.15)` : undefined,
                   color: isActive || isSelected ? `rgb(${r},${g},${b})` : 'rgba(255,255,255,0.65)',
@@ -72,9 +72,9 @@ export default function BluesStyleLegend({
                     boxShadow: isActive || isSelected ? `0 0 5px rgba(${r},${g},${b},0.6)` : 'none',
                   }}
                 />
-                <span className="text-[0.7rem] flex-1">{style}</span>
+                <span className="text-label flex-1">{style}</span>
                 {isSelected && (
-                  <span className="text-[0.6rem] opacity-50">✕</span>
+                  <span className="text-2xs opacity-50">✕</span>
                 )}
               </div>
             )
@@ -83,7 +83,7 @@ export default function BluesStyleLegend({
           {styleFilter && (
             <button
               onClick={() => onStyleFilterChange(null)}
-              className="w-full px-3 py-1.5 text-[0.65rem] text-ink3 hover:text-ink hover:bg-[#1a1208] transition-colors text-left"
+              className="w-full px-3 py-1.5 text-2xs text-ink3 hover:text-ink hover:bg-bg-hover transition-colors text-left"
             >
               Clear filter
             </button>

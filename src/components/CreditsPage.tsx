@@ -41,14 +41,14 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
   };
 
   return (
-    <div className="fixed inset-0 z-[200] bg-[#0a0805] flex flex-col overflow-hidden animate-slide-in">
+    <div className="fixed inset-0 z-[200] bg-bg flex flex-col overflow-hidden animate-slide-in">
       {/* Header */}
-      <div className="shrink-0 flex items-center justify-between px-6 py-4 border-b border-[#2a1e0e]">
+      <div className="shrink-0 flex items-center justify-between px-6 py-4 border-b border-border-subtle">
         <h1 className="text-lg font-bold text-white tracking-wide">Credits &amp; Legal</h1>
         <button
           onClick={onClose}
           aria-label="Close"
-          className="w-9 h-9 flex items-center justify-center rounded-full bg-[#1a1208] border border-[#3a2a15] text-[#999] text-sm hover:text-white hover:border-accent transition-all"
+          className="w-9 h-9 flex items-center justify-center rounded-full bg-bg-hover border border-border text-ink3 text-sm hover:text-white hover:border-accent transition-all"
         >
           ✕
         </button>
@@ -60,7 +60,7 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
         {/* Disclaimer */}
         <section>
           <h2 className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">Disclaimer</h2>
-          <div className="bg-[#111008] border border-[#2a1e0e] rounded-xl p-5 text-sm leading-relaxed text-[#ccc] space-y-3">
+          <div className="bg-bg-elevated border border-border-subtle rounded-xl p-5 text-sm leading-relaxed text-ink2 space-y-3">
             <p>
               <strong className="text-white">Blues Map</strong> is a non-commercial, educational fan project
               dedicated to documenting the history, geography, and influence networks of blues musicians.
@@ -81,14 +81,14 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
         {/* Contact Form */}
         <section>
           <h2 className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">Contact Us</h2>
-          <div className="bg-[#111008] border border-[#2a1e0e] rounded-xl p-5 text-sm text-[#ccc]">
+          <div className="bg-bg-elevated border border-border-subtle rounded-xl p-5 text-sm text-ink2">
             <p className="mb-4">
               Have questions, suggestions, or copyright concerns? Please fill out the form below and we'll get back to you.
             </p>
 
             <form onSubmit={handleContactSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-xs font-medium text-[#888] mb-1">
+                <label htmlFor="name" className="block text-xs font-medium text-ink3 mb-1">
                   Name *
                 </label>
                 <input
@@ -97,13 +97,13 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-3 py-2 bg-[#0a0805] border border-[#2a1e0e] rounded-lg text-white text-sm focus:outline-none focus:border-accent transition-colors"
+                  className="w-full px-3 py-2 bg-bg border border-border-subtle rounded-lg text-white text-sm focus:outline-none focus:border-accent transition-colors"
                   placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-xs font-medium text-[#888] mb-1">
+                <label htmlFor="email" className="block text-xs font-medium text-ink3 mb-1">
                   Email *
                 </label>
                 <input
@@ -112,13 +112,13 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-3 py-2 bg-[#0a0805] border border-[#2a1e0e] rounded-lg text-white text-sm focus:outline-none focus:border-accent transition-colors"
+                  className="w-full px-3 py-2 bg-bg border border-border-subtle rounded-lg text-white text-sm focus:outline-none focus:border-accent transition-colors"
                   placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-xs font-medium text-[#888] mb-1">
+                <label htmlFor="message" className="block text-xs font-medium text-ink3 mb-1">
                   Message *
                 </label>
                 <textarea
@@ -127,7 +127,7 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows={4}
-                  className="w-full px-3 py-2 bg-[#0a0805] border border-[#2a1e0e] rounded-lg text-white text-sm focus:outline-none focus:border-accent transition-colors resize-none"
+                  className="w-full px-3 py-2 bg-bg border border-border-subtle rounded-lg text-white text-sm focus:outline-none focus:border-accent transition-colors resize-none"
                   placeholder="Describe your inquiry, copyright concern, or suggestion..."
                 />
               </div>
@@ -158,7 +158,7 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
         {/* DMCA / Copyright */}
         <section>
           <h2 className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">Copyright Inquiries</h2>
-          <div className="bg-[#111008] border border-[#2a1e0e] rounded-xl p-5 text-sm leading-relaxed text-[#ccc] space-y-3">
+          <div className="bg-bg-elevated border border-border-subtle rounded-xl p-5 text-sm leading-relaxed text-ink2 space-y-3">
             <p>
               If you are a copyright holder and believe that any image or text on this site infringes your
               rights, please use the contact form above. Include in your message:
@@ -176,7 +176,7 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
         {/* Image Credits */}
         <section>
           <h2 className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">Image Credits</h2>
-          <div className="bg-[#111008] border border-[#2a1e0e] rounded-xl p-5 text-sm text-[#ccc] space-y-3">
+          <div className="bg-bg-elevated border border-border-subtle rounded-xl p-5 text-sm text-ink2 space-y-3">
             <p>
               Musician photographs are sourced from publicly available historical archives, Wikimedia Commons,
               and other online sources. Images of musicians who died before 1928 are believed to be in the
@@ -193,7 +193,7 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
         {/* YouTube */}
         <section>
           <h2 className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">Video Links</h2>
-          <div className="bg-[#111008] border border-[#2a1e0e] rounded-xl p-5 text-sm text-[#ccc]">
+          <div className="bg-bg-elevated border border-border-subtle rounded-xl p-5 text-sm text-ink2">
             <p>
               This site links to YouTube videos but does not host any audio or video content. All videos
               are the property of their respective copyright holders and are embedded via the standard
@@ -202,7 +202,7 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
           </div>
         </section>
 
-        <p className="text-center text-xs text-[#555] pb-4">
+        <p className="text-center text-xs text-ink3 pb-4">
           Blues Map — Non-commercial educational project.
         </p>
       </div>

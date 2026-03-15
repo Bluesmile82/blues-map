@@ -171,9 +171,9 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
-      <div className="bg-[#141008] border border-[#2a1e0e] rounded-lg shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-hidden flex flex-col">
+      <div className="bg-bg-elevated border border-border-subtle rounded-lg shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-hidden flex flex-col">
         {/* Header */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-[#2a1e0e] bg-[#1a1208]">
+        <div className="flex items-center justify-between px-6 py-4 border-b border-border-subtle bg-bg-hover">
           <h2 className="text-xl font-bold text-ink">{isNew ? 'New Musician' : 'Edit Musician'}</h2>
           <div className="flex items-center gap-3">
             {!isNew && onDelete && (
@@ -212,7 +212,7 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
                   type="text"
                   value={isNew ? generateSlug(formData.name) : formData.id}
                   disabled
-                  className="w-full px-3 py-2 bg-[#0a0805]/50 border border-[#2a1e0e] rounded text-ink3 text-sm cursor-not-allowed"
+                  className="w-full px-3 py-2 bg-bg/50 border border-border-subtle rounded text-ink3 text-sm cursor-not-allowed"
                 />
               </Field>
             </div>
@@ -248,7 +248,7 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
                      onClick={handleDownloadImage}
                      disabled={isDownloadingImage}
                      title="Download and save as local thumbnail"
-                     className="shrink-0 px-3 py-2 text-xs bg-[#1a1208] border border-[#2a2a0e] rounded text-ink3 hover:text-ink hover:border-accent disabled:opacity-50 transition-colors"
+                     className="shrink-0 px-3 py-2 text-xs bg-bg-hover border border-border-subtle rounded text-ink3 hover:text-ink hover:border-accent disabled:opacity-50 transition-colors"
                    >
                      {isDownloadingImage ? 'Saving…' : '⬇ Save local'}
                    </button>
@@ -275,7 +275,7 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
                  <img
                    src={formData.image}
                    alt={formData.name}
-                   className="w-20 h-20 rounded object-cover border border-[#2a1a0e]"
+                   className="w-20 h-20 rounded object-cover border border-border-subtle"
                    onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                  />
                </div>
@@ -465,7 +465,7 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
             </div>
             <div className="space-y-2">
               {formData.albums.map((album, index) => (
-                <div key={index} className="flex gap-2 items-start p-3 bg-[#0a0805] border border-[#2a1e0e] rounded">
+                <div key={index} className="flex gap-2 items-start p-3 bg-bg border border-border-subtle rounded">
                   <div className="flex-1 space-y-2">
                     <input
                       type="text"
@@ -578,7 +578,7 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
         </div>
 
         {/* Footer */}
-        <div className="flex items-center justify-between px-6 py-4 border-t border-[#2a1e0e] bg-[#1a1208]">
+        <div className="flex items-center justify-between px-6 py-4 border-t border-border-subtle bg-bg-hover">
           <div className="text-sm">
             {saveStatus && (
               <span className={saveStatus.includes('Error') ? 'text-red-400' : 'text-green-400'}>
@@ -612,7 +612,7 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
 }
 
 function inputClass(error?: string) {
-  return `w-full px-3 py-2 bg-[#0a0805] border ${error ? 'border-red-500' : 'border-[#2a1e0e]'} rounded text-ink text-sm focus:border-accent focus:outline-none`;
+  return `w-full px-3 py-2 bg-bg border ${error ? 'border-red-500' : 'border-border-subtle'} rounded text-ink text-sm focus:border-accent focus:outline-none`;
 }
 
 function Field({ label, required, error, hint, children }: {
@@ -652,14 +652,14 @@ function SpentPlaceRow({ place, onChange, onRemove }: {
   };
 
   return (
-    <div className="flex gap-2 items-start p-3 bg-[#0a0805] border border-[#2a1e0e] rounded">
+    <div className="flex gap-2 items-start p-3 bg-bg border border-border-subtle rounded">
       <div className="flex-1 space-y-2">
         <input
           type="text"
           value={place.place}
           onChange={(e) => onChange({ ...place, place: e.target.value })}
           placeholder="Place name"
-          className="w-full px-3 py-2 bg-[#141008] border border-[#2a1e0e] rounded text-ink text-sm focus:border-accent focus:outline-none"
+          className="w-full px-3 py-2 bg-bg-elevated border border-border-subtle rounded text-ink text-sm focus:border-accent focus:outline-none"
         />
         <input
           type="text"
@@ -667,7 +667,7 @@ function SpentPlaceRow({ place, onChange, onRemove }: {
           onChange={(e) => setCoordsRaw(e.target.value)}
           onBlur={handleCoordsBlur}
           placeholder="Coordinates: longitude, latitude"
-          className="w-full px-3 py-2 bg-[#141008] border border-[#2a1e0e] rounded text-ink text-sm focus:border-accent focus:outline-none"
+          className="w-full px-3 py-2 bg-bg-elevated border border-border-subtle rounded text-ink text-sm focus:border-accent focus:outline-none"
         />
       </div>
       <button
