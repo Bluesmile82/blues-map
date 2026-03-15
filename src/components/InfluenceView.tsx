@@ -31,6 +31,9 @@ const ICON_SIZE = 60; // Size for the photo icons
 const EXPAND_PX_THRESHOLD = 30;
 const EXPAND_ZOOM_THRESHOLD = Math.log2(EXPAND_PX_THRESHOLD / NODE_RADIUS); // ≈ 1.322
 
+const CLUSTER_ZOOM_START = 0.8; // Below this: fully clustered
+const CLUSTER_ZOOM_END = 1.2;   // Above this: fully expanded
+
 type DeckVS = { target: [number, number, number]; zoom: number; minZoom: number; maxZoom: number };
 
 export default function InfluenceView({
@@ -52,6 +55,7 @@ export default function InfluenceView({
   const [hovered, setHovered] = useState<string | null>(null);
   const [hoveredStyle, setHoveredStyle] = useState<string | null>(null);
   const [legendOpen, setLegendOpen] = useState(true);
+  const [clusterCompression, setClusterCompression] = useState(1.0); // 1.0 = clustered, 0.0 = expanded
   const [groupBy, setGroupBy] = useState<GroupBy>('style');
   const [scatter, setScatter] = useState(true);
   const [search, setSearch] = useState('');
@@ -265,6 +269,22 @@ export default function InfluenceView({
   const cappedRadius = NODE_RADIUS * overlapFactor;
   const cappedIconSize = ICON_SIZE * overlapFactor;
   const cappedTextSize = 14 * overlapFactor;
+
+  // Update cluster compression based on zoom
+  useEffect(() => {
+    if (!deckVS) return;
+    const zoom = deckVS.zoom;
+
+    if (zoom <= CLUSTER_ZOOM_START) {
+      setClusterCompression(1.0);
+    } else if (zoom >= CLUSTER_ZOOM_END) {
+      setClusterCompression(0.0);
+    } else {
+      // Linear interpolation between start and end
+      const progress = (zoom - CLUSTER_ZOOM_START) / (CLUSTER_ZOOM_END - CLUSTER_ZOOM_START);
+      setClusterCompression(1.0 - progress);
+    }
+  }, [deckVS?.zoom]);
 
   // Handle picking
   const onHover = useCallback((info: PickingInfo) => {
