@@ -17,6 +17,7 @@ import {
   bezierPath,
   getYear,
   yearToWorldY,
+  interpolatePosition,
   type GroupBy,
   type LayoutOptions,
   type InfluenceLayout,
@@ -237,6 +238,23 @@ export default function InfluenceView({
       return {};
     return computeStyleClusters(displayMusicians, positions, styleZones);
   }, [displayMusicians, positions, styleZones]);
+
+  const interpolatedPositions = useMemo(() => {
+    const result: InfluenceLayout = {};
+    Object.entries(positions).forEach(([id, pos]) => {
+      const m = displayMusicians.find(x => x.id === id);
+      if (!m) return;
+
+      const cluster = clusters[m.bluesStyle];
+      if (!cluster) {
+        result[id] = pos;
+        return;
+      }
+
+      result[id] = interpolatePosition(pos, cluster.center, clusterCompression);
+    });
+    return result;
+  }, [positions, clusters, clusterCompression, displayMusicians]);
 
   // Build musician data for layers
   const musicianData = useMemo(() => {
@@ -466,7 +484,10 @@ export default function InfluenceView({
       new ScatterplotLayer({
         id: 'musician-circles',
         data: musicianData,
-        getPosition: (d) => [sx(d.position[0]), d.position[1]] as Position2D,
+        getPosition: (d) => {
+          const interpolated = interpolatedPositions[d.musician.id];
+          return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
+        },
         getRadius: (d) => d.musician.id === hovered ? cappedRadius * 2 : cappedRadius,
         getFillColor: (d): [number, number, number, number] => {
           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
@@ -494,7 +515,7 @@ export default function InfluenceView({
         onHover,
         onClick,
         updateTriggers: {
-          getPosition: [xExpand],
+          getPosition: [xExpand, interpolatedPositions],
           getRadius: [hovered, cappedRadius],
           getFillColor: [effectiveRelatedIds, selectedId, hovered],
           getLineColor: [selectedId, hovered],
