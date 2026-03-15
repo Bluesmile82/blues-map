@@ -309,7 +309,7 @@ export default function InfluenceView({
 
 const clusterLabelData = useMemo(() => {
   return Object.entries(clusters)
-    .filter(([_, cluster]) => cluster.count > 0 && clusterCompression > 0.3)
+    .filter(([_, cluster]) => cluster.count > 0 && clusterCompression > 0.5)
     .map(([style, cluster]) => ({
       style,
       position: cluster.center,
@@ -591,9 +591,14 @@ const clusterLabelData = useMemo(() => {
          getFillColor: (d): [number, number, number, number] => {
            const [r, g, b] = getStyleColor(d.style) as [number, number, number];
            const isHovered = hoveredStyle === d.style;
-           return [r, g, b, isHovered ? 230 : 200];
+           return [r, g, b, isHovered ? 240 : 200];
          },
-         getLineColor: () => [0, 0, 0, 0],
+         getLineColor: (d): [number, number, number, number] => {
+           const [r, g, b] = getStyleColor(d.style) as [number, number, number];
+           return [r, g, b, 255];
+         },
+         lineWidth: 3,
+         lineWidthUnits: 'pixels' as const,
          pickable: true,
          onHover: (info) => {
            const d = info.object as { style: string };
@@ -602,12 +607,13 @@ const clusterLabelData = useMemo(() => {
          updateTriggers: {
            getPolygon: [xExpand],
            getFillColor: [hoveredStyle],
+           getLineColor: [hoveredStyle],
          },
        }),
         // Musician circles (filled background)
        new ScatterplotLayer({
          id: 'musician-circles',
-         data: musicianData,
+         data: currentZoom > CLUSTER_ZOOM_END ? musicianData : [],
          getPosition: (d) => {
            const interpolated = interpolatedPositions[d.musician.id];
            return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
@@ -643,6 +649,7 @@ const clusterLabelData = useMemo(() => {
            getRadius: [hovered, cappedRadius],
            getFillColor: [effectiveRelatedIds, selectedId, hovered],
            getLineColor: [selectedId, hovered],
+           data: [currentZoom],
          },
         transitions: {
           getRadius: {
@@ -749,35 +756,30 @@ const clusterLabelData = useMemo(() => {
             data: [effectiveRelatedIds, currentZoom],
           },
          }),
-         // Cluster labels
-         ...(clusterLabelData.length > 0 ? [new TextLayer({
+        // Cluster labels
+        ...(clusterLabelData.length > 0 ? [new TextLayer({
           id: 'cluster-labels',
           data: clusterLabelData,
           getPosition: (d) => [sx(d.position[0]), d.position[1]] as Position2D,
-           getText: (d) => {
-             const styleName = groupBy === 'style' ? d.style.replace(' Blues', '') : d.style;
-             const isHovered = hoveredStyle === d.style;
-             return isHovered ? `${styleName} (${d.count})` : styleName;
-           },
-           getSize: (d) => hoveredStyle === d.style ? 26 : 24,
-          getColor: (d): [number, number, number, number] => {
-            const [r, g, b] = getStyleColor(d.style) as [number, number, number];
+          getText: (d) => {
+            const styleName = groupBy === 'style' ? d.style.replace(' Blues', '') : d.style;
             const isHovered = hoveredStyle === d.style;
-            return [r, g, b, isHovered ? 255 : 220];
+            return isHovered ? `${styleName} (${d.count})` : styleName;
           },
+          getSize: (d) => hoveredStyle === d.style ? 28 : 24,
+          getColor: () => [255, 255, 255, 255],
           getTextAnchor: 'middle',
           getAlignmentBaseline: 'center',
           fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
           fontWeight: '700',
-          outlineWidth: 4,
-          outlineColor: [0, 0, 0, 220],
+          outlineWidth: 6,
+          outlineColor: [0, 0, 0, 255],
           sizeUnits: 'common' as const,
           pickable: false,
           updateTriggers: {
             getPosition: [xExpand],
             getText: [hoveredStyle, groupBy],
             getSize: [hoveredStyle],
-            getColor: [hoveredStyle],
           },
         })] : []),
        // Zone labels
