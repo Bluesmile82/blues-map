@@ -13,6 +13,7 @@ import { userAtom } from '../atoms/auth';
 import {
   computeTreeLayout,
   computeDecadeTicks,
+  computeStyleClusters,
   bezierPath,
   getYear,
   yearToWorldY,
@@ -21,6 +22,7 @@ import {
   type InfluenceLayout,
   type Position2D,
   type StyleZone,
+  type StyleCluster,
 } from '../utils/layout';
 
 // World-space sizes
@@ -229,6 +231,12 @@ export default function InfluenceView({
     const decadeTicks = computeDecadeTicks(h / 2, h);
     return { positions, styleZones, edges, playedWithEdges, decadeTicks };
   }, [displayMusicians, groupBy, scatter, WW, WH]);
+
+  const clusters = useMemo(() => {
+    if (!dims.width || !dims.height || !worldRef.current)
+      return {};
+    return computeStyleClusters(displayMusicians, positions, styleZones);
+  }, [displayMusicians, positions, styleZones]);
 
   // Build musician data for layers
   const musicianData = useMemo(() => {
