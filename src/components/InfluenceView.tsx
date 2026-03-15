@@ -539,7 +539,10 @@ export default function InfluenceView({
       new IconLayer({
         id: 'musician-photos',
         data: musicianData,
-        getPosition: (d) => [sx(d.position[0]), d.position[1]] as Position2D,
+        getPosition: (d) => {
+          const interpolated = interpolatedPositions[d.musician.id];
+          return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
+        },
         getIcon: (d) => ({
           url: d.musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(d.musician.name)}&background=251a0d&color=c8872a&size=80`,
           width: 128,
@@ -557,7 +560,7 @@ export default function InfluenceView({
           return [255, 255, 255, 255];
         },
         updateTriggers: {
-          getPosition: [xExpand],
+          getPosition: [xExpand, interpolatedPositions],
           getSize: [hovered, cappedIconSize],
           getColor: [effectiveRelatedIds],
         },
@@ -591,14 +594,17 @@ export default function InfluenceView({
            data: [favoritesChecker],
          },
        })] : []),
-      // Musician labels
-      new TextLayer({
-        id: 'musician-labels',
-        data: musicianData.filter((d) => !effectiveRelatedIds || effectiveRelatedIds.has(d.musician.id)),
-        getPosition: (d) => {
-          const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
-          return [sx(d.position[0]), d.position[1] + radius + 12] as Position2D;
-        },
+       // Musician labels
+       new TextLayer({
+         id: 'musician-labels',
+         data: musicianData.filter((d) => !effectiveRelatedIds || effectiveRelatedIds.has(d.musician.id)),
+         getPosition: (d) => {
+           const interpolated = interpolatedPositions[d.musician.id];
+           const x = interpolated ? interpolated[0] : d.position[0];
+           const y = interpolated ? interpolated[1] : d.position[1];
+           const radius = d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
+           return [sx(x), y + radius + 12] as Position2D;
+         },
         getText: (d) => d.musician.name,
         getSize: cappedTextSize,
         getColor: (d): [number, number, number, number] => {
@@ -617,7 +623,7 @@ export default function InfluenceView({
         sizeUnits: 'common' as const,
         pickable: false,
         updateTriggers: {
-          getPosition: [hovered, xExpand],
+          getPosition: [hovered, xExpand, interpolatedPositions],
           getSize: [cappedTextSize],
           getColor: [selectedId, hovered, effectiveRelatedIds],
           data: [effectiveRelatedIds],
@@ -643,7 +649,7 @@ export default function InfluenceView({
         updateTriggers: { getPosition: [xExpand] },
       }),
     ];
-  }, [dims.width, edges, playedWithEdges, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick]);
+  }, [dims.width, edges, playedWithEdges, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions]);
 
   // Search
   const searchQuery = search.trim().toLowerCase();
