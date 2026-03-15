@@ -320,7 +320,7 @@ export function computeStyleClusters(
   musicians: Musician[],
   positions: InfluenceLayout,
   // styleZones: reserved for future zone-based clustering
-  styleZones: StyleZone[]
+  _styleZones: StyleZone[]
 ): Record<string, StyleCluster> {
   const clusters: Record<string, StyleCluster> = {};
 
