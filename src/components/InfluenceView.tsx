@@ -311,17 +311,9 @@ const clusterLabelData = useMemo(() => {
       const pos = positions[m.id];
       if (!pos) return null;
       
-      // Blob mode: make circles much larger and more transparent to merge
-      const blobRadius = NODE_RADIUS * 4;
-      const isBlob = clusterCompression > 0.5;
-      const currentRadius = isBlob ? blobRadius : cappedRadius;
-      
-      // When in blob mode, circles are highly transparent to merge into single color
-      const blobOpacity = isBlob ? 0.15 : 1.0;
-      
-      return { musician: m, position: pos, currentRadius, blobOpacity, isBlob };
-    }).filter(Boolean) as { musician: Musician; position: Position2D; currentRadius: number; blobOpacity: number; isBlob: boolean }[];
-  }, [displayMusicians, positions, clusterCompression, cappedRadius]);
+      return { musician: m, position: pos };
+    }).filter(Boolean) as { musician: Musician; position: Position2D }[];
+  }, [displayMusicians, positions]);
 
   // Update cluster compression based on zoom
   useEffect(() => {
@@ -513,12 +505,12 @@ const clusterLabelData = useMemo(() => {
       // Musician circles (filled background)
       new ScatterplotLayer({
         id: 'musician-circles',
-        data: musicianData,
+        data: clusterCompression < 0.5 ? musicianData : [],
         getPosition: (d) => {
           const interpolated = interpolatedPositions[d.musician.id];
           return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
         },
-        getRadius: (d) => d.currentRadius,
+        getRadius: (d) => d.musician.id === hovered ? cappedRadius * 2 : cappedRadius,
         getFillColor: (d): [number, number, number, number] => {
           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
           const dimmed = effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
@@ -526,24 +518,12 @@ const clusterLabelData = useMemo(() => {
           const isHovered = d.musician.id === hovered;
           if (dimmed) return [r, g, b, 40];
           if (isSelected || isHovered) return [r, g, b, 255];
-          
-          // Blob mode: highly transparent to merge into single color
-          if (d.isBlob) {
-            return [r, g, b, Math.floor(180 * d.blobOpacity)];
-          }
-          
           return [r, g, b, 200];
         },
         getLineColor: (d): [number, number, number, number] => {
           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
           const isSelected = d.musician.id === selectedId;
           const isHovered = d.musician.id === hovered;
-          
-          // Blob mode: no stroke to help merging
-          if (d.isBlob) {
-            return [r, g, b, 0];
-          }
-          
           if (isSelected) return [255, 255, 255, 255];
           if (isHovered) return [r, g, b, 255];
           return [r, g, b, 180];
@@ -558,9 +538,10 @@ const clusterLabelData = useMemo(() => {
         onClick,
         updateTriggers: {
           getPosition: [xExpand, interpolatedPositions],
-          getRadius: [hovered],
-          getFillColor: [effectiveRelatedIds, selectedId, hovered, clusterCompression],
-          getLineColor: [selectedId, hovered, clusterCompression],
+          getRadius: [hovered, cappedRadius],
+          getFillColor: [effectiveRelatedIds, selectedId, hovered],
+          getLineColor: [selectedId, hovered],
+          data: [clusterCompression],
         },
         transitions: {
           getRadius: {
@@ -569,47 +550,47 @@ const clusterLabelData = useMemo(() => {
           },
         },
       }),
-      // Musician photos
-      new IconLayer({
-        id: 'musician-photos',
-        data: musicianData.filter(d => !d.isBlob),
-        getPosition: (d) => {
-          const interpolated = interpolatedPositions[d.musician.id];
-          return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
-        },
-        getIcon: (d) => ({
-          url: d.musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(d.musician.name)}&background=251a0d&color=c8872a&size=80`,
-          width: 128,
-          height: 128,
-          mask: false,
-        }),
-        getSize: (d) => d.musician.id === hovered ? cappedIconSize * 2 : cappedIconSize,
-        sizeUnits: 'common' as const,
-        pickable: true,
-        onHover,
-        onClick,
-        getColor: (d): [number, number, number, number] => {
-          const dimmed = effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
-          if (dimmed) return [255, 255, 255, 60];
-          return [255, 255, 255, 255];
-        },
-        updateTriggers: {
-          getPosition: [xExpand, interpolatedPositions],
-          getSize: [hovered, cappedIconSize],
-          getColor: [effectiveRelatedIds],
-          data: [clusterCompression],
-        },
-        transitions: {
-          getSize: {
-            duration: 150,
-            easing: (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
-          },
-        },
+       // Musician photos
+       new IconLayer({
+         id: 'musician-photos',
+         data: clusterCompression < 0.5 ? musicianData : [],
+         getPosition: (d) => {
+           const interpolated = interpolatedPositions[d.musician.id];
+           return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
+         },
+         getIcon: (d) => ({
+           url: d.musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(d.musician.name)}&background=251a0d&color=c8872a&size=80`,
+           width: 128,
+           height: 128,
+           mask: false,
+         }),
+         getSize: (d) => d.musician.id === hovered ? cappedIconSize * 2 : cappedIconSize,
+         sizeUnits: 'common' as const,
+         pickable: true,
+         onHover,
+         onClick,
+         getColor: (d): [number, number, number, number] => {
+           const dimmed = effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
+           if (dimmed) return [255, 255, 255, 60];
+           return [255, 255, 255, 255];
+         },
+         updateTriggers: {
+           getPosition: [xExpand, interpolatedPositions],
+           getSize: [hovered, cappedIconSize],
+           getColor: [effectiveRelatedIds],
+           data: [clusterCompression],
+         },
+         transitions: {
+           getSize: {
+             duration: 150,
+             easing: (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
+           },
+         },
   }),
-  // Favorite star badges
+   // Favorite star badges
         ...(import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && favoritesChecker && musicianData.some((d) => favoritesChecker(d.musician.id)) ? [new IconLayer({
           id: 'favorite-stars',
-          data: musicianData.filter((d) => favoritesChecker(d.musician.id) && !d.isBlob),
+          data: clusterCompression < 0.5 ? musicianData.filter((d) => favoritesChecker(d.musician.id)) : [],
            getPosition: (d) => {
              const interpolated = interpolatedPositions[d.musician.id];
              const x = interpolated ? interpolated[0] : d.position[0];
@@ -646,10 +627,6 @@ const clusterLabelData = useMemo(() => {
         getText: (d) => d.musician.name,
         getSize: cappedTextSize,
          getColor: (d): [number, number, number, number] => {
-           // Hide labels in blob mode
-           if (d.isBlob) {
-             return [184, 164, 136, 0];
-           }
            const isSelected = d.musician.id === selectedId;
            const isHovered = d.musician.id === hovered;
            if (isSelected) return [245, 237, 224, 255];
@@ -670,31 +647,70 @@ const clusterLabelData = useMemo(() => {
            getColor: [selectedId, hovered, effectiveRelatedIds, clusterCompression],
            data: [effectiveRelatedIds],
           },
-       }),
-       // Cluster labels
-       ...(clusterLabelData.length > 0 ? [new TextLayer({
-         id: 'cluster-labels',
-         data: clusterLabelData,
-         getPosition: (d) => [sx(d.position[0]), d.position[1] - 80] as Position2D,
-         getText: (d) => groupBy === 'style' ? d.style.replace(' Blues', '') : d.style,
-         getSize: 14,
-         getColor: (d): [number, number, number, number] => {
-           const [r, g, b] = getStyleColor(d.style) as [number, number, number];
-           return [r, g, b, Math.floor(255 * (1 - clusterCompression * 0.3))];
-         },
-         getTextAnchor: 'middle',
-         getAlignmentBaseline: 'bottom',
-         fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-         fontWeight: '700',
-         outlineWidth: 4,
-         outlineColor: [0, 0, 0, 220],
-         sizeUnits: 'common' as const,
-         pickable: false,
-         updateTriggers: {
-           getPosition: [xExpand],
-           getColor: [clusterCompression],
-         },
-       })] : []),
+        }),
+        // Cluster blobs (solid shapes)
+        new ScatterplotLayer({
+          id: 'cluster-blobs',
+          data: clusterLabelData,
+          getPosition: (d) => [sx(d.position[0]), d.position[1]] as Position2D,
+          getRadius: (d) => Math.min(60 + d.count * 1.5, 150),
+          getFillColor: (d): [number, number, number, number] => {
+            const [r, g, b] = getStyleColor(d.style) as [number, number, number];
+            const isHovered = hoveredStyle === d.style;
+            return [r, g, b, isHovered ? 255 : 220];
+          },
+          getLineColor: (d): [number, number, number, number] => {
+            const [r, g, b] = getStyleColor(d.style) as [number, number, number];
+            const isHovered = hoveredStyle === d.style;
+            return isHovered ? [255, 255, 255, 255] : [r, g, b, 180];
+          },
+          lineWidthMinPixels: 3,
+          lineWidthMaxPixels: 5,
+          stroked: true,
+          filled: true,
+          radiusUnits: 'common' as const,
+          pickable: true,
+          onHover: (info) => {
+            const d = info.object as { style: string };
+            setHoveredStyle(d?.style ?? null);
+          },
+          updateTriggers: {
+            getPosition: [xExpand],
+            getFillColor: [hoveredStyle],
+            getLineColor: [hoveredStyle],
+          },
+        }),
+        // Cluster labels
+        ...(clusterLabelData.length > 0 ? [new TextLayer({
+          id: 'cluster-labels',
+          data: clusterLabelData,
+          getPosition: (d) => [sx(d.position[0]), d.position[1]] as Position2D,
+          getText: (d) => {
+            const styleName = groupBy === 'style' ? d.style.replace(' Blues', '') : d.style;
+            const isHovered = hoveredStyle === d.style;
+            return isHovered ? `${styleName} (${d.count})` : styleName;
+          },
+          getSize: (d) => hoveredStyle === d.style ? 18 : 16,
+          getColor: (d): [number, number, number, number] => {
+            const [r, g, b] = getStyleColor(d.style) as [number, number, number];
+            const isHovered = hoveredStyle === d.style;
+            return [r, g, b, isHovered ? 255 : 220];
+          },
+          getTextAnchor: 'middle',
+          getAlignmentBaseline: 'center',
+          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+          fontWeight: '700',
+          outlineWidth: 4,
+          outlineColor: [0, 0, 0, 220],
+          sizeUnits: 'common' as const,
+          pickable: false,
+          updateTriggers: {
+            getPosition: [xExpand],
+            getText: [hoveredStyle, groupBy],
+            getSize: [hoveredStyle],
+            getColor: [hoveredStyle],
+          },
+        })] : []),
        // Zone labels
       new TextLayer({
         id: 'zone-labels',
