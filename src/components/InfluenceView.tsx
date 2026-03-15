@@ -363,8 +363,18 @@ export default function InfluenceView({
 
   const onClick = useCallback((info: PickingInfo) => {
     const m = info.object as { musician: Musician } | undefined;
-    if (m?.musician) onSelect(m.musician);
-  }, [onSelect]);
+    if (m?.musician) {
+      // Zoom to musician if zoomed out below detail visibility threshold
+      if (deckVS && currentZoom < CLUSTER_DETAILS_ZOOM) {
+        const pos = positions[m.musician.id];
+        if (pos) {
+          const xe = Math.max(1, Math.pow(2, Math.max(0, CLUSTER_DETAILS_ZOOM - EXPAND_ZOOM_THRESHOLD)));
+          setDeckVS({ ...deckVS, target: [pos[0] * xe, pos[1], 0], zoom: CLUSTER_DETAILS_ZOOM });
+        }
+      }
+      onSelect(m.musician);
+    }
+  }, [onSelect, deckVS, currentZoom, positions]);
 
   const deckLayers = useMemo(() => {
     if (!dims.width || !worldRef.current) return [];
@@ -392,6 +402,31 @@ export default function InfluenceView({
       .filter(Boolean) as { musician: Musician; path: [Position2D, Position2D] }[];
 
     return [
+      // Decade grid lines
+      new PathLayer({
+        id: 'decade-lines',
+        data: tickLines,
+        getPath: (d) => d.path,
+        getColor: (): [number, number, number, number] => [255, 255, 255, 40],
+        getWidth: 1,
+        widthUnits: 'pixels' as const,
+        pickable: false,
+        updateTriggers: { getPath: [xExpand] },
+      }),
+      // Decade year labels
+      new TextLayer({
+        id: 'decade-labels',
+        data: decadeTicks,
+        getPosition: (d) => [sx(d.path[0][0]), d.path[0][1]] as Position2D,
+        getText: (d) => String(d.year),
+        getSize: 11,
+        sizeUnits: 'pixels' as const,
+        getColor: (): [number, number, number, number] => [255, 255, 255, 230],
+        getTextAnchor: 'end' as const,
+        getAlignmentBaseline: 'center' as const,
+        fontFamily: 'Georgia, serif',
+        pickable: false,
+      }),
       // Zone backgrounds
       new PathLayer({
         id: 'zone-borders',
