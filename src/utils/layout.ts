@@ -354,6 +354,23 @@ export function computeStyleClusters(
   return clusters;
 }
 
+export function interpolatePosition(
+  actualPosition: Position2D,
+  clusterCenter: Position2D,
+  compression: number
+): Position2D {
+  // compression: 1.0 = fully clustered, 0.0 = fully expanded
+  // At compression 1.0, we want to be 15% toward cluster center
+  // At compression 0.0, we want to be at actual position
+  const clusterFactor = 0.15; // At full compression, go 15% toward center
+  const effectiveCompression = compression * clusterFactor;
+
+  return [
+    clusterCenter[0] + (actualPosition[0] - clusterCenter[0]) * (1 - effectiveCompression),
+    clusterCenter[1] + (actualPosition[1] - clusterCenter[1]) * (1 - effectiveCompression),
+  ];
+}
+
 export interface DecadeTick {
   year: number;
   y: number;
