@@ -35,8 +35,8 @@ const EXPAND_PX_THRESHOLD = 30;
 const EXPAND_ZOOM_THRESHOLD = Math.log2(EXPAND_PX_THRESHOLD / NODE_RADIUS); // ≈ 1.322
 
 const CLUSTER_ZOOM_START = -1; // Below this: fully clustered
-const CLUSTER_ZOOM_END = 0;   // Above this: fully expanded
-const CLUSTER_DETAILS_ZOOM = 0.3; // Above this: show musician names and images
+const CLUSTER_ZOOM_END = 0.1;   // Above this: fully expanded
+const CLUSTER_DETAILS_ZOOM = 0.2; // Above this: show musician names and images
 
 type DeckVS = { target: [number, number, number]; zoom: number; minZoom: number; maxZoom: number };
 
@@ -301,9 +301,9 @@ export default function InfluenceView({
     ? relatedIds
     : hoveredStyle
       ? new Set(displayMusicians.filter((m) => {
-          const clusterValue = groupBy === 'instrument' ? m.instrument : m.bluesStyle;
-          return clusterValue === hoveredStyle;
-        }).map((m) => m.id))
+        const clusterValue = groupBy === 'instrument' ? m.instrument : m.bluesStyle;
+        return clusterValue === hoveredStyle;
+      }).map((m) => m.id))
       : null;
 
   const currentZoom = deckVS?.zoom ?? 0;
@@ -405,6 +405,53 @@ export default function InfluenceView({
         widthUnits: 'pixels' as const,
         pickable: false,
         updateTriggers: { getPath: [xExpand] },
+      }),
+      // Musician circles (filled background)
+      new ScatterplotLayer({
+        id: 'musician-circles',
+        data: musicianData,
+        getPosition: (d) => {
+          const interpolated = interpolatedPositions[d.musician.id];
+          return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
+        },
+        getRadius: (d) => d.musician.id === hovered ? cappedRadius * 2 : cappedRadius,
+        getFillColor: (d): [number, number, number, number] => {
+          const [r, g, b] = getStyleColor(d.musician.bluesStyle);
+          const dimmed = currentZoom > CLUSTER_DETAILS_ZOOM && effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
+          const isSelected = d.musician.id === selectedId;
+          if (dimmed) return [r, g, b, 100];
+          if (isSelected) return [r, g, b, 255];
+          return [r, g, b, 255];
+        },
+        getLineColor: (d): [number, number, number, number] => {
+          const [r, g, b] = getStyleColor(d.musician.bluesStyle);
+          const isSelected = d.musician.id === selectedId;
+          const isHovered = d.musician.id === hovered;
+          if (isSelected) return [255, 255, 255, 255];
+          if (isHovered) return [r, g, b, 255];
+          return [r, g, b, 180];
+        },
+        lineWidthMinPixels: 2,
+        lineWidthMaxPixels: 4,
+        stroked: true,
+        filled: true,
+        radiusUnits: 'common' as const,
+        pickable: true,
+        onHover,
+        onClick,
+        updateTriggers: {
+          getPosition: [xExpand, interpolatedPositions],
+          getRadius: [hovered, cappedRadius],
+          getFillColor: [effectiveRelatedIds, selectedId, hovered],
+          getLineColor: [selectedId, hovered],
+          data: [currentZoom],
+        },
+        transitions: {
+          getRadius: {
+            duration: 150,
+            easing: (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
+          },
+        },
       }),
       // Decade grid lines
       new PathLayer({
@@ -510,54 +557,6 @@ export default function InfluenceView({
           updateTriggers: { getPath: [xExpand] },
         })]
         : []),
-      // Musician circles (filled background)
-      new ScatterplotLayer({
-        id: 'musician-circles',
-        data: musicianData,
-        getPosition: (d) => {
-          const interpolated = interpolatedPositions[d.musician.id];
-          return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
-        },
-        getRadius: (d) => d.musician.id === hovered ? cappedRadius * 2 : cappedRadius,
-        getFillColor: (d): [number, number, number, number] => {
-          const [r, g, b] = getStyleColor(d.musician.bluesStyle);
-          const dimmed = effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
-          const isSelected = d.musician.id === selectedId;
-          const isHovered = d.musician.id === hovered;
-          if (dimmed) return [r, g, b, 40];
-          if (isSelected || isHovered) return [r, g, b, 255];
-          return [r, g, b, 255];
-        },
-        getLineColor: (d): [number, number, number, number] => {
-          const [r, g, b] = getStyleColor(d.musician.bluesStyle);
-          const isSelected = d.musician.id === selectedId;
-          const isHovered = d.musician.id === hovered;
-          if (isSelected) return [255, 255, 255, 255];
-          if (isHovered) return [r, g, b, 255];
-          return [r, g, b, 180];
-        },
-        lineWidthMinPixels: 2,
-        lineWidthMaxPixels: 4,
-        stroked: true,
-        filled: true,
-        radiusUnits: 'common' as const,
-        pickable: true,
-        onHover,
-        onClick,
-        updateTriggers: {
-          getPosition: [xExpand, interpolatedPositions],
-          getRadius: [hovered, cappedRadius],
-          getFillColor: [effectiveRelatedIds, selectedId, hovered],
-          getLineColor: [selectedId, hovered],
-          data: [currentZoom],
-        },
-        transitions: {
-          getRadius: {
-            duration: 150,
-            easing: (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
-          },
-        },
-      }),
       // Musician photos
       new IconLayer({
         id: 'musician-photos',
@@ -578,7 +577,7 @@ export default function InfluenceView({
         onHover,
         onClick,
         getColor: (d): [number, number, number, number] => {
-          const dimmed = effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
+          const dimmed = currentZoom < CLUSTER_DETAILS_ZOOM && effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
           if (dimmed) return [255, 255, 255, 60];
           return [255, 255, 255, 255];
         },
