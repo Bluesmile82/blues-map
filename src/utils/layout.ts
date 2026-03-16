@@ -1,4 +1,12 @@
 import type { Musician } from '../types';
+import {
+  forceSimulation,
+  forceCollide,
+  forceLink,
+  forceX,
+  forceY,
+  type SimulationNodeDatum,
+} from 'd3';
 
 export type Position2D = [number, number];
 
@@ -209,98 +217,86 @@ export function computeTreeLayout(
     }
   });
 
-  // Second pass: pull musicians toward their cross-style influences and played-with relationships
-  // This creates clustering where related musicians across styles are closer
-  const allInfluenceLinks: { from: string; to: string }[] = [];
+  // --- D3 force simulation ---
+  // Spreads nodes apart within each style zone, using same-style influence/playedWith
+  // links to cluster related musicians together. Y is anchored strongly to year.
+  interface ForceNode extends SimulationNodeDatum {
+    id: string;
+    targetY: number;
+    zoneStart: number;
+    zoneEnd: number;
+    zoneMargin: number;
+  }
+
+  const musicianById: Record<string, Musician> = {};
+  musicians.forEach((m) => { musicianById[m.id] = m; });
+
+  const simNodes: ForceNode[] = musicians.map((m) => {
+    const key = groupBy === 'style' ? m.bluesStyle : primaryInstrument(m.instrument);
+    const [zStart = 0, zEnd = 0] = styleZoneMap[key] ?? [0, 0];
+    const zw = zEnd - zStart;
+    return {
+      id: m.id,
+      x: xPos[m.id],
+      y: yPos[m.id],
+      targetY: yPos[m.id],
+      zoneStart: zStart,
+      zoneEnd: zEnd,
+      zoneMargin: zw * 0.06,
+    };
+  });
+
+  // Same-group links only — cross-style connections must not pull nodes across boundaries
+  const simLinks: { source: string; target: string }[] = [];
+  const seenLinks = new Set<string>();
   musicians.forEach((m) => {
-    m.influences.forEach((infId) => {
-      if (xPos[infId] !== undefined) {
-        allInfluenceLinks.push({ from: infId, to: m.id });
-      }
-    });
-    m.playedWith.forEach((playedId) => {
-      if (xPos[playedId] !== undefined) {
-        allInfluenceLinks.push({ from: playedId, to: m.id });
-      }
+    const keyM = groupBy === 'style' ? m.bluesStyle : primaryInstrument(m.instrument);
+    [...m.influences, ...m.playedWith].forEach((peerId) => {
+      const peer = musicianById[peerId];
+      if (!peer) return;
+      const keyP = groupBy === 'style' ? peer.bluesStyle : primaryInstrument(peer.instrument);
+      if (keyP !== keyM) return;
+      const edgeKey = peerId < m.id ? `${peerId}\0${m.id}` : `${m.id}\0${peerId}`;
+      if (seenLinks.has(edgeKey)) return;
+      seenLinks.add(edgeKey);
+      simLinks.push({ source: m.id, target: peerId });
     });
   });
 
-  // Apply force-directed adjustment (simplified: just average toward connections)
-  for (let iter = 0; iter < 3; iter++) {
-    const pulls: Record<string, number[]> = {};
+  const COLLIDE_R = 48;
 
-    allInfluenceLinks.forEach(({ from, to }) => {
-      const fromStyle = musicians.find(m => m.id === from)?.bluesStyle;
-      const toStyle = musicians.find(m => m.id === to)?.bluesStyle;
+  const simulation = forceSimulation<ForceNode>(simNodes)
+    // Push overlapping nodes apart
+    .force('collide', forceCollide<ForceNode>(COLLIDE_R).strength(0.85).iterations(3))
+    // Pull same-style connected musicians toward each other
+    .force(
+      'link',
+      forceLink<ForceNode, { source: string; target: string }>(simLinks)
+        .id((d) => d.id)
+        .distance(COLLIDE_R * 2.5)
+        .strength(0.08),
+    )
+    // Strong Y anchor — keeps each musician pinned to their year on the timeline
+    .force('anchorY', forceY<ForceNode>((d) => d.targetY).strength(0.9))
+    // Soft pull toward zone center to prevent drifting to edges
+    .force('softCenterX', forceX<ForceNode>((d) => (d.zoneStart + d.zoneEnd) / 2).strength(0.02))
+    .alphaDecay(0.018)
+    .stop();
 
-      // Only pull if in different styles (cross-style relationship)
-      if (fromStyle && toStyle && fromStyle !== toStyle) {
-        if (!pulls[from]) pulls[from] = [];
-        if (!pulls[to]) pulls[to] = [];
-        pulls[from].push(xPos[to]);
-        pulls[to].push(xPos[from]);
-      }
-    });
-
-    // Apply pulls with damping
-    Object.entries(pulls).forEach(([id, targets]) => {
-      if (targets.length === 0) return;
-      const m = musicians.find(x => x.id === id);
-      if (!m) return;
-
-      const style = groupBy === 'style' ? m.bluesStyle : primaryInstrument(m.instrument);
-      const [zoneStart, zoneEnd] = styleZoneMap[style] || [0, 0];
-      const zoneMargin = (zoneEnd - zoneStart) * 0.08;
-
-      const avgTarget = targets.reduce((a, b) => a + b, 0) / targets.length;
-      const current = xPos[id];
-      // Pull 20% toward average of connected musicians
-      const newX = current * 0.8 + avgTarget * 0.2;
-      // Clamp to zone
-      xPos[id] = Math.max(zoneStart + zoneMargin, Math.min(zoneEnd - zoneMargin, newX));
+  // Run synchronously, clamping X to zone boundaries after every tick
+  for (let t = 0; t < 300; t++) {
+    simulation.tick();
+    simNodes.forEach((node) => {
+      node.x = Math.max(
+        node.zoneStart + node.zoneMargin,
+        Math.min(node.zoneEnd - node.zoneMargin, node.x ?? 0),
+      );
     });
   }
 
-  // Third pass: within-style genealogy adjustment
-  presentStyles.forEach((style) => {
-    const group = byStyle[style];
-    if (!group) return;
-    const [zoneStart, zoneEnd] = styleZoneMap[style];
-    const inStyle = new Set(group.map((m) => m.id));
-
-    // Build intra-style children map (includes both influences and played-with)
-    const childrenOf: Record<string, string[]> = {};
-    group.forEach((m) => { childrenOf[m.id] = []; });
-    group.forEach((m) => {
-      m.influences.forEach((infId) => {
-        if (inStyle.has(infId) && childrenOf[infId]) {
-          childrenOf[infId].push(m.id);
-        }
-      });
-      m.playedWith.forEach((playedId) => {
-        if (inStyle.has(playedId) && childrenOf[playedId]) {
-          childrenOf[playedId].push(m.id);
-        }
-      });
-    });
-
-    // Sort by year and pull parents toward children
-    const sortedByYear = [...group].sort((a, b) => parseInt(a.activeFrom) - parseInt(b.activeFrom));
-    const reverseChronological = [...sortedByYear].reverse();
-
-    reverseChronological.forEach((m) => {
-      const ch = childrenOf[m.id] ?? [];
-      if (ch.length === 0) return;
-
-      const avgChildX = ch.reduce((s, c) => s + xPos[c], 0) / ch.length;
-      xPos[m.id] = avgChildX * 0.6 + xPos[m.id] * 0.4;
-    });
-
-    // Final clamp
-    const zoneMargin = (zoneEnd - zoneStart) * 0.05;
-    group.forEach((m) => {
-      xPos[m.id] = Math.max(zoneStart + zoneMargin, Math.min(zoneEnd - zoneMargin, xPos[m.id]));
-    });
+  // Write simulation X results back; keep original year-based Y exact
+  simNodes.forEach((node) => {
+    xPos[node.id] = node.x ?? xPos[node.id];
   });
 
   const positions: InfluenceLayout = {};
