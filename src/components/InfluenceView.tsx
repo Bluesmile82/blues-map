@@ -1145,63 +1145,80 @@ export default function InfluenceView({
               
               {/* Collision Radius */}
               <div className="mb-2">
-                <div className="flex justify-between text-2xs text-ink3">
+                <div className="flex justify-between text-2xs text-ink3" title="How far apart nodes push each other">
                   <span>Collision Radius</span>
                   <span>{layoutConfig.collisionRadius}</span>
                 </div>
                 <input
                   type="range"
-                  min={30}
-                  max={100}
+                  min={20}
+                  max={200}
                   value={layoutConfig.collisionRadius}
                   onChange={(e) => setLayoutConfig((c) => ({ ...c, collisionRadius: Number(e.target.value) }))}
                   className="w-full"
                 />
               </div>
 
-              {/* Collision Strength */}
-              <div className="mb-2">
-                <div className="flex justify-between text-2xs text-ink3">
-                  <span>Collision Strength</span>
-                  <span>{layoutConfig.collisionStrength.toFixed(2)}</span>
-                </div>
-                <input
-                  type="range"
-                  min={0}
-                  max={1}
-                  step={0.05}
-                  value={layoutConfig.collisionStrength}
-                  onChange={(e) => setLayoutConfig((c) => ({ ...c, collisionStrength: Number(e.target.value) }))}
-                  className="w-full"
-                />
-              </div>
-
               {/* Collision Iterations */}
               <div className="mb-2">
-                <div className="flex justify-between text-2xs text-ink3">
+                <div className="flex justify-between text-2xs text-ink3" title="How many times collision is applied">
                   <span>Collision Iterations</span>
                   <span>{layoutConfig.collisionIterations}</span>
                 </div>
                 <input
                   type="range"
                   min={1}
-                  max={10}
+                  max={15}
                   value={layoutConfig.collisionIterations}
                   onChange={(e) => setLayoutConfig((c) => ({ ...c, collisionIterations: Number(e.target.value) }))}
                   className="w-full"
                 />
               </div>
 
+              {/* Influence Weight */}
+              <div className="mb-2">
+                <div className="flex justify-between text-2xs text-ink3" title="How strongly influence relationships pull musicians together">
+                  <span>Influence Weight</span>
+                  <span>{layoutConfig.influenceWeight.toFixed(1)}</span>
+                </div>
+                <input
+                  type="range"
+                  min={0}
+                  max={3}
+                  step={0.1}
+                  value={layoutConfig.influenceWeight}
+                  onChange={(e) => setLayoutConfig((c) => ({ ...c, influenceWeight: Number(e.target.value) }))}
+                  className="w-full"
+                />
+              </div>
+
+              {/* Played With Weight */}
+              <div className="mb-2">
+                <div className="flex justify-between text-2xs text-ink3" title="How strongly played-with relationships pull musicians together">
+                  <span>Played With Weight</span>
+                  <span>{layoutConfig.playedWithWeight.toFixed(1)}</span>
+                </div>
+                <input
+                  type="range"
+                  min={0}
+                  max={3}
+                  step={0.1}
+                  value={layoutConfig.playedWithWeight}
+                  onChange={(e) => setLayoutConfig((c) => ({ ...c, playedWithWeight: Number(e.target.value) }))}
+                  className="w-full"
+                />
+              </div>
+
               {/* Link Distance */}
               <div className="mb-2">
-                <div className="flex justify-between text-2xs text-ink3">
+                <div className="flex justify-between text-2xs text-ink3" title="Target distance between connected musicians">
                   <span>Link Distance</span>
                   <span>{layoutConfig.linkDistance}</span>
                 </div>
                 <input
                   type="range"
-                  min={50}
-                  max={300}
+                  min={30}
+                  max={400}
                   value={layoutConfig.linkDistance}
                   onChange={(e) => setLayoutConfig((c) => ({ ...c, linkDistance: Number(e.target.value) }))}
                   className="w-full"

@@ -275,27 +275,45 @@ export function computeTreeLayout(
   });
 
   // Same-group links only unless naturalPositions is enabled
-  const simLinks: { source: string; target: string }[] = [];
-  const seenLinks = new Set<string>();
+  const cfg = { ...DEFAULT_LAYOUT_CONFIG, ...options.config };
+  const influenceLinks: { source: string; target: string }[] = [];
+  const playedWithLinks: { source: string; target: string }[] = [];
+  const seenInfluenceLinks = new Set<string>();
+  const seenPlayedWithLinks = new Set<string>();
+  
   musicians.forEach((m) => {
     const keyM = groupBy === 'style' ? m.bluesStyle : primaryInstrument(m.instrument);
-    [...m.influences, ...m.playedWith].forEach((peerId) => {
+    
+    // Process influences
+    m.influences.forEach((peerId) => {
       const peer = musicianById[peerId];
       if (!peer) return;
-      // Skip cross-group links unless naturalPositions is enabled
       if (!options.naturalPositions) {
         const keyP = groupBy === 'style' ? peer.bluesStyle : primaryInstrument(peer.instrument);
         if (keyP !== keyM) return;
       }
       const edgeKey = peerId < m.id ? `${peerId}\0${m.id}` : `${m.id}\0${peerId}`;
-      if (seenLinks.has(edgeKey)) return;
-      seenLinks.add(edgeKey);
-      simLinks.push({ source: m.id, target: peerId });
+      if (seenInfluenceLinks.has(edgeKey)) return;
+      seenInfluenceLinks.add(edgeKey);
+      influenceLinks.push({ source: m.id, target: peerId });
+    });
+    
+    // Process playedWith
+    m.playedWith.forEach((peerId) => {
+      const peer = musicianById[peerId];
+      if (!peer) return;
+      if (!options.naturalPositions) {
+        const keyP = groupBy === 'style' ? peer.bluesStyle : primaryInstrument(peer.instrument);
+        if (keyP !== keyM) return;
+      }
+      const edgeKey = peerId < m.id ? `${peerId}\0${m.id}` : `${m.id}\0${peerId}`;
+      if (seenPlayedWithLinks.has(edgeKey)) return;
+      seenPlayedWithLinks.add(edgeKey);
+      playedWithLinks.push({ source: m.id, target: peerId });
     });
   });
 
   // Merge config with defaults
-  const cfg = { ...DEFAULT_LAYOUT_CONFIG, ...options.config };
   const COLLIDE_R = cfg.collisionRadius;
   const isNatural = options.naturalPositions;
 
@@ -305,14 +323,22 @@ export function computeTreeLayout(
 
   const simulation = forceSimulation<ForceNode>(simNodes)
     // Push overlapping nodes apart (disabled in naturalPositions)
-    .force('collide', useCollision ? forceCollide<ForceNode>(COLLIDE_R).strength(cfg.collisionStrength).iterations(cfg.collisionIterations) : null)
-    // Pull connected musicians toward each other
+    .force('collide', useCollision ? forceCollide<ForceNode>(COLLIDE_R).strength(1).iterations(cfg.collisionIterations) : null)
+    // Pull influences together
     .force(
-      'link',
-      forceLink<ForceNode, { source: string; target: string }>(simLinks)
+      'influenceLink',
+      forceLink<ForceNode, { source: string; target: string }>(influenceLinks)
         .id((d) => d.id)
-        .distance(isNatural ? cfg.linkDistance : cfg.linkDistance * 0.8)
-        .strength(isNatural ? cfg.linkStrength * 2 : cfg.linkStrength),
+        .distance(cfg.linkDistance)
+        .strength(cfg.linkStrength * cfg.influenceWeight),
+    )
+    // Pull played-with together
+    .force(
+      'playedWithLink',
+      forceLink<ForceNode, { source: string; target: string }>(playedWithLinks)
+        .id((d) => d.id)
+        .distance(cfg.linkDistance)
+        .strength(cfg.linkStrength * cfg.playedWithWeight),
     )
     // Y anchor — keeps each musician pinned to their year on the timeline
     .force('anchorY', forceY<ForceNode>((d) => d.targetY).strength(isNatural ? 0.95 : cfg.yAnchorStrength))
