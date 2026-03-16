@@ -902,21 +902,32 @@ export default function InfluenceView({
             })}
           </div>
 
-          {/* Left search panel */}
-          <div className="absolute left-3 sm:left-16 top-3 sm:top-4 z-40 flex flex-col gap-2" style={{ width: 'calc(100vw - 1.5rem)', maxWidth: 220 }}>
-            {/* Mobile filter toggle button */}
-            <button
-              onClick={() => setFiltersCollapsed(!filtersCollapsed)}
-              className="sm:hidden flex items-center justify-between w-full px-3 py-2 bg-bg-subtle/95 border border-border-subtle rounded-lg text-ink text-xs font-medium backdrop-blur-sm"
-            >
-              <span>Filters</span>
-              <svg className={`w-4 h-4 transition-transform ${filtersCollapsed ? '' : 'rotate-180'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-
-            {/* Collapsible filters wrapper */}
-            <div className={`${filtersCollapsed ? 'hidden' : 'flex'} sm:flex flex-col gap-2 bg-bg/90 rounded-lg p-3`}>
+          {/* Filter panel - collapsible on all screen sizes */}
+          <div className="absolute left-3 sm:left-16 top-3 sm:top-4 z-40">
+            {filtersCollapsed ? (
+              <button
+                onClick={() => setFiltersCollapsed(false)}
+                className="flex items-center gap-2 px-3 py-2 bg-bg/90 border border-border-subtle rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4h18M3 8h18M3 12h12" />
+                </svg>
+                <span>Filters</span>
+                <svg className="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            ) : (
+            <div className="flex flex-col gap-2 bg-bg/90 rounded-lg p-3" style={{ width: 'min(220px, calc(100vw - 1.5rem))' }}>
+              <button
+                onClick={() => setFiltersCollapsed(true)}
+                className="flex items-center justify-between w-full text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors mb-1"
+              >
+                <span>Filters</span>
+                <svg className="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
               <div className="relative">
                 <SearchInput
                   ref={searchInputRef}
@@ -1073,6 +1084,7 @@ export default function InfluenceView({
                 />
               </div>
             </div>
+            )}
           </div>
 
           {/* Top bar: group-by + scatter */}
@@ -1098,26 +1110,26 @@ export default function InfluenceView({
             </button>
           </div>
 
-          {/* Zoom controls */}
-          <div className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center gap-1">
+          {/* Zoom controls - bottom left */}
+          <div className="absolute bottom-4 left-3 sm:left-16 z-40 flex items-center gap-1">
             <button
               onClick={() => handleZoom(0.4)}
               title="Zoom in"
-              className="w-10 h-10 flex items-center justify-center rounded-lg bg-bg/90 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60 text-3xl transition-colors"
+              className="w-9 h-9 flex items-center justify-center rounded-lg bg-bg/90 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60 text-2xl transition-colors"
             >
               +
             </button>
             <button
               onClick={() => handleZoom(-0.4)}
               title="Zoom out"
-              className="w-10 h-10 flex items-center justify-center rounded-lg bg-bg/90 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60 text-3xl transition-colors"
+              className="w-9 h-9 flex items-center justify-center rounded-lg bg-bg/90 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60 text-2xl transition-colors"
             >
               −
             </button>
             <button
               onClick={handleReset}
               title="Reset view"
-              className="w-10 h-10 flex items-center justify-center rounded-lg bg-bg/90 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60 text-3xl transition-colors mt-1"
+              className="w-9 h-9 flex items-center justify-center rounded-lg bg-bg/90 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60 text-xl transition-colors"
             >
               ⟳
             </button>

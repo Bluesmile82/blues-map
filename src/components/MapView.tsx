@@ -5,7 +5,7 @@ import type { MapViewState } from '@deck.gl/core';
 import Map from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Musician } from '../types';
-import { CANONICAL_STYLES, getStyleColor, getStyleHex } from '../utils/colors';
+import { getStyleColor, getStyleHex } from '../utils/colors';
 import SearchInput from './SearchInput';
 import BluesStyleLegend from './BluesStyleLegend';
 import { useAtomValue } from 'jotai';
@@ -67,6 +67,7 @@ function MusicianSidebar({
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   const [filterListId, setFilterListId] = useState<string | null>(null);
   const [styleLegendCollapsed, setStyleLegendCollapsed] = useState(true);
+  const [hoveredStyle, setHoveredStyle] = useState<string | null>(null);
 
   const user = useAtomValue(userAtom);
   const lists = useAtomValue(listsAtom);
@@ -165,59 +166,16 @@ function MusicianSidebar({
 
       {/* Blues Style Legend - collapsible */}
       <div className="mb-3 bg-bg/90 border border-border-subtle rounded-lg px-3 py-2">
-        <button
-          onClick={() => setStyleLegendCollapsed(!styleLegendCollapsed)}
-          className="flex items-center justify-between w-full text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
-        >
-          <span>Blues Style</span>
-          <span className="text-3xs opacity-60">{styleLegendCollapsed ? '▼' : '▲'}</span>
-        </button>
-
-        {!styleLegendCollapsed && (
-          <div className="mt-2 max-h-48 overflow-y-auto">
-            {CANONICAL_STYLES.map((style) => {
-              const [r, g, b] = (getStyleColor(style) as [number, number, number]);
-              const isActive = styleFilter === style;
-
-              return (
-                <div
-                  key={style}
-                  className="flex items-center gap-2 px-2 py-1 cursor-pointer transition-colors hover:bg-bg-hover rounded"
-                  style={{
-                    background: isActive ? `rgba(${r},${g},${b},0.15)` : undefined,
-                    color: isActive ? `rgb(${r},${g},${b})` : 'rgba(255,255,255,0.65)',
-                  }}
-                  onClick={() => onStyleFilterChange(isActive ? null : style)}
-                >
-                  <span
-                    className="w-2 h-2 rounded-full shrink-0 transition-transform"
-                    style={{
-                      background: `rgb(${r},${g},${b})`,
-                      transform: isActive ? 'scale(1.3)' : 'scale(1)',
-                      boxShadow: isActive ? `0 0 5px rgba(${r},${g},${b},0.6)` : 'none',
-                    }}
-                  />
-                  <span className="text-label flex-1">{style}</span>
-                  {isActive && (
-                    <span className="text-2xs opacity-50">✕</span>
-                  )}
-                </div>
-              );
-            })}
-
-            {styleFilter && (
-              <button
-                onClick={() => {
-                  const event = new CustomEvent('styleFilterChange', { detail: null });
-                  window.dispatchEvent(event);
-                }}
-                className="w-full px-2 py-1 text-2xs text-ink3 hover:text-ink hover:bg-bg-hover transition-colors text-left rounded"
-              >
-                Clear filter
-              </button>
-            )}
-          </div>
-        )}
+        <BluesStyleLegend
+          embedded
+          isOpen={!styleLegendCollapsed}
+          onToggle={() => setStyleLegendCollapsed((c) => !c)}
+          styleFilter={styleFilter}
+          onStyleFilterChange={onStyleFilterChange}
+          onHoverStyle={setHoveredStyle}
+          hoveredStyle={hoveredStyle}
+          availableStyles={[...new Set(musicians.map((m) => m.bluesStyle))]}
+        />
       </div>
 
       {/* Musician List */}
