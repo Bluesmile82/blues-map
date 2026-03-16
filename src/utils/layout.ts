@@ -110,6 +110,7 @@ function primaryInstrument(instrument: string): string {
 export interface LayoutOptions {
   groupBy: GroupBy;
   scatter: boolean; // If true, use hash-based scatter; if false, use simple sorted lines
+  naturalPositions?: boolean; // If true, disable style zone constraints in force layout
 }
 
 /**
@@ -246,7 +247,7 @@ export function computeTreeLayout(
     };
   });
 
-  // Same-group links only — cross-style connections must not pull nodes across boundaries
+  // Same-group links only unless naturalPositions is enabled
   const simLinks: { source: string; target: string }[] = [];
   const seenLinks = new Set<string>();
   musicians.forEach((m) => {
@@ -254,8 +255,11 @@ export function computeTreeLayout(
     [...m.influences, ...m.playedWith].forEach((peerId) => {
       const peer = musicianById[peerId];
       if (!peer) return;
-      const keyP = groupBy === 'style' ? peer.bluesStyle : primaryInstrument(peer.instrument);
-      if (keyP !== keyM) return;
+      // Skip cross-group links unless naturalPositions is enabled
+      if (!options.naturalPositions) {
+        const keyP = groupBy === 'style' ? peer.bluesStyle : primaryInstrument(peer.instrument);
+        if (keyP !== keyM) return;
+      }
       const edgeKey = peerId < m.id ? `${peerId}\0${m.id}` : `${m.id}\0${peerId}`;
       if (seenLinks.has(edgeKey)) return;
       seenLinks.add(edgeKey);
@@ -278,20 +282,22 @@ export function computeTreeLayout(
     )
     // Y anchor — keeps each musician pinned to their year on the timeline
     .force('anchorY', forceY<ForceNode>((d) => d.targetY).strength(0.8))
-    // Soft pull toward zone center to prevent drifting to edges
-    .force('softCenterX', forceX<ForceNode>((d) => (d.zoneStart + d.zoneEnd) / 2).strength(0.02))
+    // Soft pull toward zone center to prevent drifting to edges (disabled when naturalPositions)
+    .force('softCenterX', forceX<ForceNode>((d) => (d.zoneStart + d.zoneEnd) / 2).strength(options.naturalPositions ? 0 : 0.02))
     .alphaDecay(0.02)
     .stop();
 
-  // Run synchronously, clamping X to zone boundaries after every tick
+  // Run synchronously, clamping X to zone boundaries after every tick (unless naturalPositions)
   for (let t = 0; t < 300; t++) {
     simulation.tick();
-    simNodes.forEach((node) => {
-      node.x = Math.max(
-        node.zoneStart + node.zoneMargin,
-        Math.min(node.zoneEnd - node.zoneMargin, node.x ?? 0),
-      );
-    });
+    if (!options.naturalPositions) {
+      simNodes.forEach((node) => {
+        node.x = Math.max(
+          node.zoneStart + node.zoneMargin,
+          Math.min(node.zoneEnd - node.zoneMargin, node.x ?? 0),
+        );
+      });
+    }
   }
 
   // Write simulation X results back; keep original year-based Y exact

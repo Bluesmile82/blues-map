@@ -68,6 +68,7 @@ export default function InfluenceView({
   const [clusterCompression, setClusterCompression] = useState(1.0); // 1.0 = clustered, 0.0 = expanded
   const [groupBy, setGroupBy] = useState<GroupBy>('style');
   const [scatter, setScatter] = useState(true);
+  const [naturalPositions, setNaturalPositions] = useState(false);
   const [search, setSearch] = useState('');
   const [textFilter, setTextFilter] = useState('');
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -212,12 +213,12 @@ export default function InfluenceView({
       return { positions: {} as InfluenceLayout, styleZones: [] as StyleZone[], decadeTicks: [] };
 
     const { w, h } = worldRef.current;
-    const layoutOptions: LayoutOptions = { groupBy, scatter };
+    const layoutOptions: LayoutOptions = { groupBy, scatter, naturalPositions };
     const { positions, styleZones } = computeTreeLayout(displayMusicians, w, h, layoutOptions);
 
     const decadeTicks = computeDecadeTicks(h / 2, h);
     return { positions, styleZones, decadeTicks };
-  }, [displayMusicians, groupBy, scatter, WW, WH]);
+  }, [displayMusicians, groupBy, scatter, naturalPositions, WW, WH]);
 
   const clusters = useMemo(() => {
     if (!dims.width || !dims.height || !worldRef.current)
@@ -1108,6 +1109,19 @@ export default function InfluenceView({
             >
               Scatter
             </button>
+
+            <label
+              title="Let relationships determine positions freely"
+              className="flex items-center gap-1.5 px-2 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase bg-bg/90 border border-border-subtle cursor-pointer select-none"
+            >
+              <input
+                type="checkbox"
+                checked={naturalPositions}
+                onChange={(e) => setNaturalPositions(e.target.checked)}
+                className="w-3.5 h-3.5 accent-accent"
+              />
+              <span className={naturalPositions ? 'text-accent' : 'text-ink3'}>Natural</span>
+            </label>
           </div>
 
           {/* Zoom controls - bottom left */}
