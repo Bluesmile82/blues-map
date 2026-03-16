@@ -19,8 +19,10 @@ import {
   getYear,
   yearToWorldY,
   interpolatePosition,
+  DEFAULT_LAYOUT_CONFIG,
   type GroupBy,
   type LayoutOptions,
+  type LayoutConfig,
   type InfluenceLayout,
   type Position2D,
   type StyleZone,
@@ -69,6 +71,8 @@ export default function InfluenceView({
   const [groupBy, setGroupBy] = useState<GroupBy>('style');
   const [scatter, setScatter] = useState(true);
   const [naturalPositions, setNaturalPositions] = useState(false);
+  const [layoutConfig, setLayoutConfig] = useState<LayoutConfig>(DEFAULT_LAYOUT_CONFIG);
+  const [showConfig, setShowConfig] = useState(false);
   const [search, setSearch] = useState('');
   const [textFilter, setTextFilter] = useState('');
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -213,12 +217,12 @@ export default function InfluenceView({
       return { positions: {} as InfluenceLayout, styleZones: [] as StyleZone[], decadeTicks: [] };
 
     const { w, h } = worldRef.current;
-    const layoutOptions: LayoutOptions = { groupBy, scatter, naturalPositions };
+    const layoutOptions: LayoutOptions = { groupBy, scatter, naturalPositions, config: layoutConfig };
     const { positions, styleZones } = computeTreeLayout(displayMusicians, w, h, layoutOptions);
 
     const decadeTicks = computeDecadeTicks(h / 2, h);
     return { positions, styleZones, decadeTicks };
-  }, [displayMusicians, groupBy, scatter, naturalPositions, WW, WH]);
+  }, [displayMusicians, groupBy, scatter, naturalPositions, layoutConfig, WW, WH]);
 
   const clusters = useMemo(() => {
     if (!dims.width || !dims.height || !worldRef.current)
@@ -1122,7 +1126,165 @@ export default function InfluenceView({
               />
               <span className={naturalPositions ? 'text-accent' : 'text-ink3'}>Natural</span>
             </label>
+
+            {import.meta.env.DEV && (
+              <button
+                onClick={() => setShowConfig((s) => !s)}
+                title="Layout configuration"
+                className={`px-2 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase bg-bg/90 border border-border-subtle ${showConfig ? 'bg-accent text-bg' : 'text-ink3 hover:text-ink'}`}
+              >
+                Config
+              </button>
+            )}
           </div>
+
+          {/* Layout config sliders - dev only */}
+          {import.meta.env.DEV && showConfig && (
+            <div className="absolute top-16 right-4 z-50 bg-bg/95 border border-border-subtle rounded-lg p-3 shadow-lg w-64 max-h-[70vh] overflow-y-auto">
+              <div className="text-xs font-semibold uppercase tracking-wide text-ink mb-2">Layout Config</div>
+              
+              {/* Collision Radius */}
+              <div className="mb-2">
+                <div className="flex justify-between text-2xs text-ink3">
+                  <span>Collision Radius</span>
+                  <span>{layoutConfig.collisionRadius}</span>
+                </div>
+                <input
+                  type="range"
+                  min={30}
+                  max={100}
+                  value={layoutConfig.collisionRadius}
+                  onChange={(e) => setLayoutConfig((c) => ({ ...c, collisionRadius: Number(e.target.value) }))}
+                  className="w-full"
+                />
+              </div>
+
+              {/* Collision Strength */}
+              <div className="mb-2">
+                <div className="flex justify-between text-2xs text-ink3">
+                  <span>Collision Strength</span>
+                  <span>{layoutConfig.collisionStrength.toFixed(2)}</span>
+                </div>
+                <input
+                  type="range"
+                  min={0}
+                  max={1}
+                  step={0.05}
+                  value={layoutConfig.collisionStrength}
+                  onChange={(e) => setLayoutConfig((c) => ({ ...c, collisionStrength: Number(e.target.value) }))}
+                  className="w-full"
+                />
+              </div>
+
+              {/* Collision Iterations */}
+              <div className="mb-2">
+                <div className="flex justify-between text-2xs text-ink3">
+                  <span>Collision Iterations</span>
+                  <span>{layoutConfig.collisionIterations}</span>
+                </div>
+                <input
+                  type="range"
+                  min={1}
+                  max={10}
+                  value={layoutConfig.collisionIterations}
+                  onChange={(e) => setLayoutConfig((c) => ({ ...c, collisionIterations: Number(e.target.value) }))}
+                  className="w-full"
+                />
+              </div>
+
+              {/* Link Distance */}
+              <div className="mb-2">
+                <div className="flex justify-between text-2xs text-ink3">
+                  <span>Link Distance</span>
+                  <span>{layoutConfig.linkDistance}</span>
+                </div>
+                <input
+                  type="range"
+                  min={50}
+                  max={300}
+                  value={layoutConfig.linkDistance}
+                  onChange={(e) => setLayoutConfig((c) => ({ ...c, linkDistance: Number(e.target.value) }))}
+                  className="w-full"
+                />
+              </div>
+
+              {/* Link Strength */}
+              <div className="mb-2">
+                <div className="flex justify-between text-2xs text-ink3">
+                  <span>Link Strength</span>
+                  <span>{layoutConfig.linkStrength.toFixed(3)}</span>
+                </div>
+                <input
+                  type="range"
+                  min={0.001}
+                  max={0.5}
+                  step={0.001}
+                  value={layoutConfig.linkStrength}
+                  onChange={(e) => setLayoutConfig((c) => ({ ...c, linkStrength: Number(e.target.value) }))}
+                  className="w-full"
+                />
+              </div>
+
+              {/* Y Anchor Strength */}
+              <div className="mb-2">
+                <div className="flex justify-between text-2xs text-ink3">
+                  <span>Y Anchor Strength</span>
+                  <span>{layoutConfig.yAnchorStrength.toFixed(2)}</span>
+                </div>
+                <input
+                  type="range"
+                  min={0}
+                  max={1}
+                  step={0.05}
+                  value={layoutConfig.yAnchorStrength}
+                  onChange={(e) => setLayoutConfig((c) => ({ ...c, yAnchorStrength: Number(e.target.value) }))}
+                  className="w-full"
+                />
+              </div>
+
+              {/* Soft Center Strength */}
+              <div className="mb-2">
+                <div className="flex justify-between text-2xs text-ink3">
+                  <span>Soft Center</span>
+                  <span>{layoutConfig.softCenterStrength.toFixed(3)}</span>
+                </div>
+                <input
+                  type="range"
+                  min={0}
+                  max={0.1}
+                  step={0.001}
+                  value={layoutConfig.softCenterStrength}
+                  onChange={(e) => setLayoutConfig((c) => ({ ...c, softCenterStrength: Number(e.target.value) }))}
+                  className="w-full"
+                />
+              </div>
+
+              {/* Simulation Iterations */}
+              <div className="mb-2">
+                <div className="flex justify-between text-2xs text-ink3">
+                  <span>Simulation Iterations</span>
+                  <span>{layoutConfig.simulationIterations}</span>
+                </div>
+                <input
+                  type="range"
+                  min={100}
+                  max={500}
+                  step={50}
+                  value={layoutConfig.simulationIterations}
+                  onChange={(e) => setLayoutConfig((c) => ({ ...c, simulationIterations: Number(e.target.value) }))}
+                  className="w-full"
+                />
+              </div>
+
+              {/* Reset button */}
+              <button
+                onClick={() => setLayoutConfig(DEFAULT_LAYOUT_CONFIG)}
+                className="w-full mt-2 px-2 py-1 text-2xs uppercase bg-bg border border-border-subtle rounded hover:text-accent"
+              >
+                Reset Defaults
+              </button>
+            </div>
+          )}
 
           {/* Zoom controls - bottom left */}
           <div className="absolute bottom-4 left-3 sm:left-16 z-40 flex items-center gap-1">

@@ -107,10 +107,37 @@ function primaryInstrument(instrument: string): string {
   return instrument.split(/[,\/]/)[0].trim() || 'Unknown';
 }
 
+export interface LayoutConfig {
+  collisionRadius: number;      // 30-100, default 60
+  collisionStrength: number;    // 0-1, default 1
+  collisionIterations: number;  // 1-10, default 5
+  linkDistance: number;         // 50-300, default 150
+  linkStrength: number;         // 0-1, default 0.05
+  influenceWeight: number;       // 0-2, default 1
+  playedWithWeight: number;      // 0-2, default 1
+  yAnchorStrength: number;       // 0-1, default 0.8
+  softCenterStrength: number;    // 0-0.1, default 0.02
+  simulationIterations: number;  // 100-500, default 300
+}
+
+export const DEFAULT_LAYOUT_CONFIG: LayoutConfig = {
+  collisionRadius: 60,
+  collisionStrength: 1,
+  collisionIterations: 5,
+  linkDistance: 150,
+  linkStrength: 0.05,
+  influenceWeight: 1,
+  playedWithWeight: 1,
+  yAnchorStrength: 0.8,
+  softCenterStrength: 0.02,
+  simulationIterations: 300,
+};
+
 export interface LayoutOptions {
   groupBy: GroupBy;
   scatter: boolean; // If true, use hash-based scatter; if false, use simple sorted lines
   naturalPositions?: boolean; // If true, disable style zone constraints in force layout
+  config?: Partial<LayoutConfig>; // Configuration overrides for force simulation
 }
 
 /**
@@ -267,32 +294,35 @@ export function computeTreeLayout(
     });
   });
 
-  const COLLIDE_R = 60;
+  // Merge config with defaults
+  const cfg = { ...DEFAULT_LAYOUT_CONFIG, ...options.config };
+  const COLLIDE_R = cfg.collisionRadius;
+  const isNatural = options.naturalPositions;
 
   // In naturalPositions mode, only use link force (relationships), no scattering
-  const useCollision = !options.naturalPositions;
-  const useSoftCenterX = !options.naturalPositions;
+  const useCollision = !isNatural;
+  const useSoftCenterX = !isNatural;
 
   const simulation = forceSimulation<ForceNode>(simNodes)
     // Push overlapping nodes apart (disabled in naturalPositions)
-    .force('collide', useCollision ? forceCollide<ForceNode>(COLLIDE_R).strength(1).iterations(5) : null)
-    // Pull connected musicians toward each other (only force in naturalPositions)
+    .force('collide', useCollision ? forceCollide<ForceNode>(COLLIDE_R).strength(cfg.collisionStrength).iterations(cfg.collisionIterations) : null)
+    // Pull connected musicians toward each other
     .force(
       'link',
       forceLink<ForceNode, { source: string; target: string }>(simLinks)
         .id((d) => d.id)
-        .distance(options.naturalPositions ? COLLIDE_R * 3 : COLLIDE_R * 2.5)
-        .strength(options.naturalPositions ? 0.5 : 0.05),
+        .distance(isNatural ? cfg.linkDistance : cfg.linkDistance * 0.8)
+        .strength(isNatural ? cfg.linkStrength * 2 : cfg.linkStrength),
     )
     // Y anchor — keeps each musician pinned to their year on the timeline
-    .force('anchorY', forceY<ForceNode>((d) => d.targetY).strength(options.naturalPositions ? 0.95 : 0.8))
+    .force('anchorY', forceY<ForceNode>((d) => d.targetY).strength(isNatural ? 0.95 : cfg.yAnchorStrength))
     // Soft pull toward zone center to prevent drifting to edges (disabled when naturalPositions)
-    .force('softCenterX', useSoftCenterX ? forceX<ForceNode>((d) => (d.zoneStart + d.zoneEnd) / 2).strength(0.02) : null)
+    .force('softCenterX', useSoftCenterX ? forceX<ForceNode>((d) => (d.zoneStart + d.zoneEnd) / 2).strength(cfg.softCenterStrength) : null)
     .alphaDecay(0.02)
     .stop();
 
   // Run synchronously, clamping X to zone boundaries after every tick (unless naturalPositions)
-  for (let t = 0; t < 300; t++) {
+  for (let t = 0; t < cfg.simulationIterations; t++) {
     simulation.tick();
     if (!options.naturalPositions) {
       simNodes.forEach((node) => {
