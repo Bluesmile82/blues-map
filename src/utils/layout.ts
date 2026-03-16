@@ -263,24 +263,24 @@ export function computeTreeLayout(
     });
   });
 
-  const COLLIDE_R = 48;
+  const COLLIDE_R = 60;
 
   const simulation = forceSimulation<ForceNode>(simNodes)
     // Push overlapping nodes apart
-    .force('collide', forceCollide<ForceNode>(COLLIDE_R).strength(0.85).iterations(3))
+    .force('collide', forceCollide<ForceNode>(COLLIDE_R).strength(1).iterations(5))
     // Pull same-style connected musicians toward each other
     .force(
       'link',
       forceLink<ForceNode, { source: string; target: string }>(simLinks)
         .id((d) => d.id)
         .distance(COLLIDE_R * 2.5)
-        .strength(0.08),
+        .strength(0.05),
     )
-    // Strong Y anchor — keeps each musician pinned to their year on the timeline
-    .force('anchorY', forceY<ForceNode>((d) => d.targetY).strength(0.9))
+    // Y anchor — keeps each musician pinned to their year on the timeline
+    .force('anchorY', forceY<ForceNode>((d) => d.targetY).strength(0.8))
     // Soft pull toward zone center to prevent drifting to edges
     .force('softCenterX', forceX<ForceNode>((d) => (d.zoneStart + d.zoneEnd) / 2).strength(0.02))
-    .alphaDecay(0.018)
+    .alphaDecay(0.02)
     .stop();
 
   // Run synchronously, clamping X to zone boundaries after every tick
