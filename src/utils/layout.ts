@@ -269,21 +269,25 @@ export function computeTreeLayout(
 
   const COLLIDE_R = 60;
 
+  // In naturalPositions mode, only use link force (relationships), no scattering
+  const useCollision = !options.naturalPositions;
+  const useSoftCenterX = !options.naturalPositions;
+
   const simulation = forceSimulation<ForceNode>(simNodes)
-    // Push overlapping nodes apart
-    .force('collide', forceCollide<ForceNode>(COLLIDE_R).strength(1).iterations(5))
-    // Pull same-style connected musicians toward each other
+    // Push overlapping nodes apart (disabled in naturalPositions)
+    .force('collide', useCollision ? forceCollide<ForceNode>(COLLIDE_R).strength(1).iterations(5) : null)
+    // Pull connected musicians toward each other (only force in naturalPositions)
     .force(
       'link',
       forceLink<ForceNode, { source: string; target: string }>(simLinks)
         .id((d) => d.id)
-        .distance(COLLIDE_R * 2.5)
-        .strength(0.05),
+        .distance(options.naturalPositions ? COLLIDE_R * 3 : COLLIDE_R * 2.5)
+        .strength(options.naturalPositions ? 0.5 : 0.05),
     )
     // Y anchor — keeps each musician pinned to their year on the timeline
-    .force('anchorY', forceY<ForceNode>((d) => d.targetY).strength(0.8))
+    .force('anchorY', forceY<ForceNode>((d) => d.targetY).strength(options.naturalPositions ? 0.95 : 0.8))
     // Soft pull toward zone center to prevent drifting to edges (disabled when naturalPositions)
-    .force('softCenterX', forceX<ForceNode>((d) => (d.zoneStart + d.zoneEnd) / 2).strength(options.naturalPositions ? 0 : 0.02))
+    .force('softCenterX', useSoftCenterX ? forceX<ForceNode>((d) => (d.zoneStart + d.zoneEnd) / 2).strength(0.02) : null)
     .alphaDecay(0.02)
     .stop();
 
