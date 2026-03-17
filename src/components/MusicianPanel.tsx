@@ -44,13 +44,13 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   const [showListsDropdown, setShowListsDropdown] = useState(false);
 
   return (
-    <div className="fixed top-14 right-0 bottom-0 w-full sm:w-[26rem] bg-bg flex flex-col overflow-hidden z-50 shadow-2xl">
+    <div className="fixed top-14 right-0 bottom-0 w-full sm:w-[26rem] bg-bg/50 backdrop-blur-sm flex flex-col overflow-hidden z-50 shadow-2xl">
 
       {/* ── Close button – always visible, top-right corner ── */}
       <button
         onClick={onClose}
         aria-label="Close panel"
-        className="absolute top-4 right-4 z-[9999] w-9 h-9 flex items-center justify-center rounded-full bg-bg-hover border border-border text-ink3 text-sm hover:text-ink hover:border-accent hover:bg-bg-deep transition-all duration-200 shadow-sm pointer-events-auto"
+        className="absolute top-4 right-4 z-50 w-9 h-9 flex items-center justify-center rounded-full bg-bg-hover border border-border text-ink3 text-sm hover:text-ink hover:border-accent hover:bg-bg-deep transition-all duration-200 shadow-sm pointer-events-auto"
       >
         ✕
       </button>
@@ -148,8 +148,8 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                   }
                 }}
                 className={`flex items-center gap-2 px-4 py-2.5 rounded-lg transition-colors touch-manipulation ${isFavorited(musician.id)
-                    ? 'bg-danger-bg text-danger'
-                    : 'bg-bg-hover hover:bg-bg-deep active:bg-border-subtle'
+                  ? 'bg-danger-bg text-danger'
+                  : 'bg-bg-hover hover:bg-bg-deep active:bg-border-subtle'
                   }`}
               >
                 <svg className="w-5 h-5" fill={isFavorited(musician.id) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">

@@ -92,7 +92,7 @@ export default function MobileVideoPlayer({
     window.onYouTubeIframeAPIReady = () => setApiReady(true);
 
     return () => {
-      window.onYouTubeIframeAPIReady = () => {};
+      window.onYouTubeIframeAPIReady = () => { };
     };
   }, []);
 
@@ -174,7 +174,7 @@ export default function MobileVideoPlayer({
       console.warn('Player not ready or methods not available');
       return;
     }
-    
+
     try {
       if (isPlaying) {
         playerRef.current.pauseVideo();
@@ -192,7 +192,7 @@ export default function MobileVideoPlayer({
     if (newIndex < 0 || newIndex >= videos.length || !playerRef.current) return;
     currentIndexRef.current = newIndex;
     setCurrentIndex(newIndex);
-    
+
     const videoId = videos[newIndex].videoId;
     playerRef.current.loadVideoById(videoId);
     setIsPlaying(true); // Video starts playing when loaded
@@ -204,9 +204,9 @@ export default function MobileVideoPlayer({
   const hasMultiple = videos.length > 1;
 
   return (
-    <div className="shrink-0 border-t border-white/10 bg-bg relative" style={{ height: '180px' }}>
+    <div className="shrink-0 border-t border-white/10 bg-bg/50 relative" style={{ height: '180px' }}>
       {!apiReady && (
-        <div className="absolute inset-0 flex items-center justify-center bg-bg z-10">
+        <div className="absolute inset-0 flex items-center justify-center bg-bg/50 z-10">
           <div className="text-white/50 text-xs">Loading...</div>
         </div>
       )}
@@ -253,8 +253,8 @@ export default function MobileVideoPlayer({
       </div>
 
       {/* Video Player */}
-      <div 
-        className="absolute inset-0 bg-black"
+      <div
+        className="absolute inset-0 bg-bg/50"
         onClick={handlePlayPause}
       >
         <div
@@ -292,7 +292,7 @@ export default function MobileVideoPlayer({
             </>
           )}
         </div>
-        
+
         <button
           onClick={onClose}
           className="p-1 rounded text-white/90 hover:bg-white/10"

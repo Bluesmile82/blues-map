@@ -19,7 +19,7 @@ const SearchInput = forwardRef<HTMLInputElement, SearchInputProps>(
           onChange={(e) => onChange(e.target.value)}
           onKeyDown={onKeyDown}
           placeholder={placeholder}
-          className="w-full bg-bg/90 border border-accent/50 rounded-lg px-2.5 py-1.5 text-xs text-ink placeholder-ink3 outline-none focus:border-accent transition-colors"
+          className="w-full bg-bg/50 border border-accent/50 rounded-lg px-2.5 py-1.5 text-xs text-ink placeholder-ink3 outline-none focus:border-accent transition-colors"
         />
         {value && (
           <button

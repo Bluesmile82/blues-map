@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import DeckGL from '@deck.gl/react';
 import { ScatterplotLayer, ArcLayer, TextLayer } from '@deck.gl/layers';
+
 import type { MapViewState } from '@deck.gl/core';
 import Map from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
@@ -113,7 +114,7 @@ function MusicianSidebar({
   }, [musicians, searchQuery, styleFilter, showFavoritesOnly, filterListId, favorites, favoritesMap]);
 
   return (
-    <div className="absolute left-0 top-0 bottom-0 w-80 bg-bg/95 backdrop-blur-md flex flex-col z-10 shadow-2xl">
+    <div className="absolute left-0 top-0 bottom-0 w-80 bg-bg/55 backdrop-blur-sm flex flex-col z-10 shadow-2xl">
       {/* Header */}
       {/* Search */}
       <div className="mb-3">
@@ -126,7 +127,7 @@ function MusicianSidebar({
 
       {/* Favorites filter */}
       {user && (
-        <div className="mb-3 bg-bg/90 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
+        <div className="mb-3 bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
           <div className="flex items-center gap-2">
             <input
               type="checkbox"
@@ -165,7 +166,7 @@ function MusicianSidebar({
       )}
 
       {/* Blues Style Legend - collapsible */}
-      <div className="mb-3 bg-bg/90 border border-border-subtle rounded-lg px-3 py-2">
+      <div className="mb-3 bg-bg/50 border border-border-subtle rounded-lg px-3 py-2">
         <BluesStyleLegend
           embedded
           isOpen={!styleLegendCollapsed}
@@ -337,6 +338,50 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
 
   const focusId = hovered ?? listHovered ?? selectedId;
 
+  // CPU-side collision filtering for map labels
+  const visibleMapLabels = useMemo(() => {
+    const zoom = viewState.zoom;
+    // Approximate pixels per degree at this zoom (Mercator)
+    const pxPerDeg = 256 * Math.pow(2, zoom) / 360;
+    const FONT_PX = 11;
+    const CHAR_W = FONT_PX * 0.55;
+
+    const candidates = completeMusicians.map((m) => {
+      const [lng, lat] = m.birthCoords;
+      const screenX = lng * pxPerDeg;
+      const screenY = -lat * pxPerDeg; // Y inverted in screen space
+      const textW = m.name.length * CHAR_W;
+      const isFocused = m.id === focusId;
+      return {
+        musician: m,
+        screenX,
+        screenY,
+        halfW: textW / 2 + 6,
+        halfH: FONT_PX / 2 + 6,
+        priority: isFocused ? 1 : 0,
+      };
+    });
+
+    // Focused musician always wins
+    candidates.sort((a, b) => b.priority - a.priority);
+
+    const placed: typeof candidates = [];
+    for (const c of candidates) {
+      let overlaps = false;
+      for (const p of placed) {
+        if (
+          Math.abs(c.screenX - p.screenX) < c.halfW + p.halfW &&
+          Math.abs(c.screenY - p.screenY) < c.halfH + p.halfH
+        ) {
+          overlaps = true;
+          break;
+        }
+      }
+      if (!overlaps) placed.push(c);
+    }
+    return placed.map((c) => c.musician);
+  }, [completeMusicians, viewState.zoom, focusId]);
+
   const layers = useMemo(() => [
     new ArcLayer<MigrationArc>({
       id: 'arcs',
@@ -402,7 +447,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
 
     new TextLayer<Musician>({
       id: 'birth-labels',
-      data: completeMusicians,
+      data: visibleMapLabels,
       getPosition: (d) => d.birthCoords,
       getText: (d) => d.name,
       getSize: (d) => (d.id === focusId ? 14 : !focusId ? 11 : 10),
@@ -417,7 +462,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       pickable: false,
       updateTriggers: { getColor: [focusId], getSize: [focusId] },
     }),
-  ], [spentPlaces, migrationArcs, focusId, onSelect]);
+  ], [spentPlaces, migrationArcs, focusId, onSelect, visibleMapLabels]);
 
   const hoveredMusician = hovered ? completeMusicians.find((m) => m.id === hovered) : null;
 
@@ -427,14 +472,14 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       {sidebarOpen ? (
         <button
           onClick={() => setSidebarOpen(o => !o)}
-          className="sm:hidden absolute top-1 right-2 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/95 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-md"
+          className="sm:hidden absolute top-1 right-2 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/55 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm"
         >
           <span>✕</span>
           <span>Close</span>
         </button>
       ) : <button
         onClick={() => setSidebarOpen(o => !o)}
-        className="sm:hidden absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/95 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-md"
+        className="sm:hidden absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/55 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm"
       >
         <span>☰</span>
         <span>Musicians</span>
@@ -474,7 +519,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
         </DeckGL>
 
         {/* Legend */}
-        <div className="absolute bottom-6 right-6 bg-bg/90 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none">
+        <div className="absolute bottom-6 right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none">
           <p className="text-2xs text-accent tracking-widest uppercase mb-1">Map Key</p>
           {[
             { label: 'Birth place', el: <span className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" /> },

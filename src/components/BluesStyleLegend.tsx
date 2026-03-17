@@ -33,18 +33,18 @@ export default function BluesStyleLegend({
 
   const containerClass = embedded
     ? 'flex flex-col'
-    : `flex flex-col z-40 bg-bg/95 border border-border-subtle rounded-lg shadow-lg backdrop-blur-sm ${positionClasses[position]}`
+    : `flex flex-col z-40 bg-bg/55 rounded-lg shadow-lg backdrop-blur-sm ${positionClasses[position]}`
 
   return (
     <div className={containerClass}>
       <button
         onClick={onToggle}
-        className="flex items-center justify-between gap-2 px-3 py-2 text-2xs sm:text-label text-accent tracking-widest uppercase hover:text-accent2 transition-colors border-b border-border-subtle"
+        className="flex items-center justify-between gap-2 px-3 py-2 text-2xs sm:text-label text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
       >
         <span>Blues Style</span>
         <span className="text-3xs opacity-60">{isOpen ? '▲' : '▼'}</span>
       </button>
-      
+
       {isOpen && (
         <div className="py-2 max-h-[40vh] overflow-y-auto">
           {styles.map((style) => {
@@ -79,7 +79,7 @@ export default function BluesStyleLegend({
               </div>
             )
           })}
-          
+
           {styleFilter && (
             <button
               onClick={() => onStyleFilterChange(null)}

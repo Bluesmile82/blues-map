@@ -109,7 +109,7 @@ export default function FiltersPanel({
 
         {/* Favorites filter - only show when logged in */}
         {user && (
-          <div className="bg-bg/90 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
+          <div className="bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
             <div className="flex items-center gap-2">
               <input
                 type="checkbox"
@@ -144,7 +144,7 @@ export default function FiltersPanel({
         )}
 
         {/* Blues style legend */}
-        <div className="bg-bg/90 border border-border-subtle rounded-lg">
+        <div className="bg-bg/50 border border-border-subtle rounded-lg">
           <button
             onClick={() => setLegendOpen(!legendOpen)}
             className="flex items-center justify-between w-full px-3 py-2 text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
@@ -198,7 +198,7 @@ export default function FiltersPanel({
         </div>
 
         {/* Year range filter */}
-        <div className="bg-bg/90 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-1.5">
+        <div className="bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-1.5">
           <div className="flex items-center justify-between">
             <span className="text-2xs text-accent tracking-widest uppercase">Active years</span>
             {yearRange && (

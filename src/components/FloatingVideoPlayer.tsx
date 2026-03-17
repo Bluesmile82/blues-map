@@ -98,7 +98,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
       posRef.current = { x, y };
       setPos({ x, y });
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Drag/resize mouse tracking
@@ -259,22 +259,16 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
       )}
 
       <div
+        className='fixed z-50 rounded-lg border-ink3 overflow-hidden'
         style={{
-          position: 'fixed',
           left: pos.x,
           top: pos.y,
           width: w,
-          zIndex: 110,
-          background: '#1a1a1a',
-          borderRadius: 12,
-          boxShadow: '0 8px 32px rgba(0,0,0,0.6)',
-          border: '1px solid rgba(255,255,255,0.1)',
-          overflow: 'hidden',
         }}
       >
         {/* Header — drag handle */}
         <div
-          className="flex items-center justify-between px-3 py-2 bg-black/60 backdrop-blur-sm"
+          className="flex items-center justify-between px-3 py-2 bg-bg/40 backdrop-blur-sm"
           style={{ cursor: isDragging ? 'grabbing' : 'grab', userSelect: 'none' }}
           onMouseDown={handleDragStart}
         >
@@ -314,7 +308,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
         </div>
 
         {/* Controls */}
-        <div className="flex items-center justify-center gap-3 px-3 py-3 bg-black/60 backdrop-blur-sm">
+        <div className="flex items-center justify-center gap-3 px-3 py-3 bg-bg/50 backdrop-blur-sm">
           {videos.length > 1 && (
             <button
               onClick={() => handleNavigate(currentIndex - 1)}
@@ -371,7 +365,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
 
         {/* Track indicator (only when multiple videos) */}
         {videos.length > 1 && (
-          <div className="flex items-center justify-center gap-1 pb-2 bg-black/60">
+          <div className="flex items-center justify-center gap-1 pb-2 bg-bg/50">
             {videos.map((v, i) => (
               <button
                 key={i}

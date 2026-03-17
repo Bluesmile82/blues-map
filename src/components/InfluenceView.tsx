@@ -212,7 +212,7 @@ export default function InfluenceView({
   const WW = worldRef.current?.w ?? 1400;
   const WH = worldRef.current?.h ?? 2500;
 
-    const { positions, styleZones, decadeTicks } = useMemo(() => {
+  const { positions, styleZones, decadeTicks } = useMemo(() => {
     if (!dims.width || !dims.height || !worldRef.current)
       return { positions: {} as InfluenceLayout, styleZones: [] as StyleZone[], decadeTicks: [] };
 
@@ -266,14 +266,66 @@ export default function InfluenceView({
   }, [positions, clusters, clusterCompression, musicianMap, groupBy]);
 
   const clusterLabelData = useMemo(() => {
-    return Object.entries(clusters)
-      .filter(([_, cluster]) => cluster.count > 0 && clusterCompression > 0.5)
-      .map(([style, cluster]) => ({
-        style,
-        position: cluster.center,
-        count: cluster.count,
-      }));
-  }, [clusters, clusterCompression]);
+    if (clusterCompression <= 0.5) return [];
+    const zoom = deckVS?.zoom ?? 0;
+    const xe = Math.max(1, Math.pow(2, Math.max(0, zoom - EXPAND_ZOOM_THRESHOLD)));
+    const scale = Math.pow(2, zoom);
+    const zoneByStyle = Object.fromEntries(styleZones.map((z) => [z.style, z]));
+
+    // Build candidates with estimated screen bounds
+    const FONT_PX = 20; // matches getSize in the layer
+    const CHAR_W = FONT_PX * 0.6; // approximate character width
+    const PAD_X = 12; // backgroundPadding horizontal
+    const PAD_Y = 12; // backgroundPadding vertical
+
+    const candidates = Object.entries(clusters)
+      .filter(([_, cluster]) => cluster.count > 0)
+      .map(([style, cluster]) => {
+        const zone = zoneByStyle[style];
+        const zoneX = zone ? zone.x + zone.width / 2 : cluster.center[0];
+        const shortName = style.replace(' Blues', '');
+        const text = groupBy === 'style' ? shortName : style;
+        const worldX = zoneX * xe;
+        const worldY = cluster.center[1];
+        // Screen-space bounds (pixels)
+        const textW = text.length * CHAR_W + PAD_X * 2;
+        const textH = FONT_PX + PAD_Y * 2;
+        // Screen position (relative to viewport center)
+        const screenX = worldX * scale;
+        const screenY = worldY * scale;
+        return {
+          style,
+          position: cluster.center,
+          zoneX,
+          zoneWidth: zone?.width ?? 0,
+          count: cluster.count,
+          shortName,
+          screenX,
+          screenY,
+          halfW: textW / 2,
+          halfH: textH / 2,
+        };
+      })
+      // Sort by priority: wider zones first (more important styles)
+      .sort((a, b) => b.zoneWidth - a.zoneWidth);
+
+    // Greedy placement: skip labels that overlap already-placed ones
+    const placed: typeof candidates = [];
+    for (const c of candidates) {
+      let overlaps = false;
+      for (const p of placed) {
+        if (
+          Math.abs(c.screenX - p.screenX) < c.halfW + p.halfW &&
+          Math.abs(c.screenY - p.screenY) < c.halfH + p.halfH
+        ) {
+          overlaps = true;
+          break;
+        }
+      }
+      if (!overlaps) placed.push(c);
+    }
+    return placed;
+  }, [clusters, clusterCompression, styleZones, deckVS?.zoom, groupBy]);
 
   const focusId = hovered ?? selectedId;
   const focusedMusician = focusId ? displayMusicians.find((m) => m.id === focusId) : null;
@@ -318,6 +370,60 @@ export default function InfluenceView({
       return { musician: m, position: pos };
     }).filter(Boolean) as { musician: Musician; position: Position2D }[];
   }, [displayMusicians, positions]);
+
+  // CPU-side collision filtering for musician labels
+  const visibleMusicianLabels = useMemo(() => {
+    if (currentZoom <= CLUSTER_DETAILS_ZOOM) return [];
+    const filtered = effectiveRelatedIds
+      ? musicianData.filter((d) => effectiveRelatedIds.has(d.musician.id))
+      : musicianData;
+
+    const scale = Math.pow(2, currentZoom);
+    const xe = Math.max(1, Math.pow(2, Math.max(0, currentZoom - EXPAND_ZOOM_THRESHOLD)));
+    // Text is in 'common' (world) units; screen px = worldSize * scale
+    const screenFont = cappedTextSize * scale;
+    const charW = screenFont * 0.55;
+
+    type LabelCandidate = typeof musicianData[number] & {
+      screenX: number; screenY: number; halfW: number; halfH: number; priority: number;
+    };
+
+    const candidates: LabelCandidate[] = filtered.map((d) => {
+      const iPos = interpolatedPositions[d.musician.id];
+      const wx = (iPos ? iPos[0] : d.position[0]) * xe;
+      const wy = (iPos ? iPos[1] : d.position[1]) + cappedRadius + 6;
+      const textW = d.musician.name.length * charW;
+      const isSelected = d.musician.id === selectedId;
+      const isHovered = d.musician.id === hovered;
+      return {
+        ...d,
+        screenX: wx * scale,
+        screenY: wy * scale,
+        halfW: textW / 2 + 4,
+        halfH: screenFont / 2 + 4,
+        priority: isSelected ? 2 : isHovered ? 1 : 0,
+      };
+    });
+
+    // Selected/hovered first so they always win placement
+    candidates.sort((a, b) => b.priority - a.priority);
+
+    const placed: typeof candidates = [];
+    for (const c of candidates) {
+      let overlaps = false;
+      for (const p of placed) {
+        if (
+          Math.abs(c.screenX - p.screenX) < c.halfW + p.halfW &&
+          Math.abs(c.screenY - p.screenY) < c.halfH + p.halfH
+        ) {
+          overlaps = true;
+          break;
+        }
+      }
+      if (!overlaps) placed.push(c);
+    }
+    return placed;
+  }, [currentZoom, musicianData, effectiveRelatedIds, interpolatedPositions, cappedTextSize, cappedRadius, selectedId, hovered]);
 
   // Update cluster compression based on zoom
   useEffect(() => {
@@ -441,36 +547,6 @@ export default function InfluenceView({
         pickable: false,
         updateTriggers: { getPath: [xExpand] },
       }),
-      // Decade year labels
-      new TextLayer({
-        id: 'decade-labels',
-        data: decadeTicks,
-        getPosition: (d) => [sx(d.path[0][0]), d.path[0][1]] as Position2D,
-        getText: (d) => String(d.year),
-        getSize: 14,
-        sizeUnits: 'pixels' as const,
-        getColor: (): [number, number, number, number] => [255, 255, 255, 255],
-        background: true,
-        backgroundColor: [15, 12, 7, 255],
-        getTextAnchor: 'end' as const,
-        getAlignmentBaseline: 'center' as const,
-        fontFamily: 'Georgia, serif',
-        pickable: false,
-      }),
-      // Zone backgrounds
-      new PathLayer({
-        id: 'zone-borders',
-        data: styleZones,
-        getPath: (d) => [[sx(d.x), -h / 2 + 100], [sx(d.x), h / 2 - 100]] as Position2D[],
-        getColor: (d): [number, number, number, number] => {
-          const [r, g, b] = getStyleColor(d.style) as [number, number, number];
-          return [r, g, b, 40];
-        },
-        getWidth: 1,
-        widthUnits: 'pixels' as const,
-        pickable: false,
-        updateTriggers: { getPath: [xExpand] },
-      }),
       // Musician circles (filled background)
       new ScatterplotLayer({
         id: 'musician-circles',
@@ -479,7 +555,12 @@ export default function InfluenceView({
           const interpolated = interpolatedPositions[d.musician.id];
           return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
         },
-        getRadius: (d) => d.musician.id === hovered ? cappedRadius * 2 : cappedRadius,
+        getRadius: (d) => {
+          if (currentZoom <= CLUSTER_DETAILS_ZOOM) {
+            return cappedRadius + (currentZoom * 13);
+          }
+          return d.musician.id === hovered ? cappedRadius * 2 : cappedRadius;
+        },
         getFillColor: (d): [number, number, number, number] => {
           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
           const dimmed = currentZoom > CLUSTER_DETAILS_ZOOM && effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
@@ -517,16 +598,6 @@ export default function InfluenceView({
             easing: (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
           },
         },
-      }),
-      // Decade grid lines
-      new PathLayer({
-        id: 'decade-lines',
-        data: tickLines,
-        getPath: (d) => d.path,
-        getColor: (): [number, number, number, number] => [255, 255, 255, 40],
-        getWidth: 1,
-        widthUnits: 'pixels' as const,
-        pickable: false,
       }),
       // Lifespan lines (dim)
       new PathLayer({
@@ -687,10 +758,10 @@ export default function InfluenceView({
           data: [favoritesChecker, clusterCompression],
         },
       })] : []),
-      // Musician labels
+      // Musician labels — CPU-side greedy deoverlap (visibleMusicianLabels already filtered)
       new TextLayer({
         id: 'musician-labels',
-        data: currentZoom > CLUSTER_DETAILS_ZOOM ? musicianData.filter((d) => !effectiveRelatedIds || effectiveRelatedIds.has(d.musician.id)) : [],
+        data: visibleMusicianLabels,
         getPosition: (d) => {
           const interpolated = interpolatedPositions[d.musician.id];
           const x = interpolated ? interpolated[0] : d.position[0];
@@ -702,13 +773,12 @@ export default function InfluenceView({
         getSize: (d): number => {
           const isSelected = d.musician.id === selectedId;
           const isHovered = d.musician.id === hovered;
-
           return (isSelected || isHovered) ? cappedTextSize + 4 : cappedTextSize;
         },
         getColor: (d): [number, number, number, number] => {
           const isSelected = d.musician.id === selectedId;
           const isHovered = d.musician.id === hovered;
-          if (isSelected) return [255, 2255, 225, 255];
+          if (isSelected) return [255, 255, 225, 255];
           if (isHovered) return [255, 255, 225, 255];
           return [255, 255, 255, effectiveRelatedIds ? 255 : 140];
         },
@@ -725,56 +795,42 @@ export default function InfluenceView({
           getPosition: [hovered, xExpand, interpolatedPositions],
           getSize: [cappedTextSize],
           getColor: [selectedId, hovered, effectiveRelatedIds],
-          data: [effectiveRelatedIds, currentZoom],
+          data: [visibleMusicianLabels],
         },
       }),
-      // Cluster labels
+      // Cluster labels — CPU-side greedy deoverlap (clusterLabelData already filtered)
       ...(clusterLabelData.length > 0 ? [new TextLayer({
         id: 'cluster-labels',
         data: clusterLabelData,
-        getPosition: (d) => [sx(d.position[0]), d.position[1]] as Position2D,
+        getPosition: (d) => [sx(d.zoneX), d.position[1]] as Position2D,
         getText: (d) => {
-          const styleName = groupBy === 'style' ? d.style.replace(' Blues', '') : d.style;
+          const name = groupBy === 'style' ? d.shortName : d.style;
           const isHovered = hoveredStyle === d.style;
-          return isHovered ? `${styleName} (${d.count})` : styleName;
+          return isHovered ? `${name} (${d.count})` : name;
         },
-        getSize: (d) => hoveredStyle === d.style ? 28 : 24,
+        background: true,
+        backgroundPadding: [6, 6, 6, 6],
+        backgroundBorderRadius: 16,
+        getBackgroundColor: (d: { style: string }) => {
+          const [r, g, b] = getStyleColor(d.style) as [number, number, number];
+          return [r, g, b, 180] as [number, number, number, number];
+        },
+        getSize: () => 20,
         getColor: () => [255, 255, 255, 255],
         getTextAnchor: 'middle',
         getAlignmentBaseline: 'center',
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
         fontWeight: '700',
         outlineWidth: 6,
         outlineColor: [0, 0, 0, 255],
-        sizeUnits: 'common' as const,
+        sizeUnits: 'pixels' as const,
         pickable: false,
         updateTriggers: {
           getPosition: [xExpand],
           getText: [hoveredStyle, groupBy],
-          getSize: [hoveredStyle],
         },
       })] : []),
-      // Zone labels
-      new TextLayer({
-        id: 'zone-labels',
-        data: styleZones,
-        getPosition: (d) => [sx(d.x + d.width / 2), h / 2 - 80] as Position2D,
-        getText: (d) => groupBy === 'style' ? d.style.replace(' Blues', '') : d.style,
-        getSize: 11,
-        getColor: (d): [number, number, number, number] => {
-          const [r, g, b] = getStyleColor(d.style) as [number, number, number];
-          return [r, g, b, 160];
-        },
-        getTextAnchor: 'middle',
-        getAlignmentBaseline: 'top',
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-        fontWeight: '700',
-        sizeUnits: 'common' as const,
-        pickable: false,
-        updateTriggers: { getPosition: [xExpand] },
-      }),
     ];
-  }, [dims.width, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, clusterLabelData, currentZoom]);
+  }, [dims.width, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, clusterLabelData, visibleMusicianLabels, currentZoom]);
 
   // Search
   const searchQuery = search.trim().toLowerCase();
@@ -912,7 +968,7 @@ export default function InfluenceView({
             {filtersCollapsed ? (
               <button
                 onClick={() => setFiltersCollapsed(false)}
-                className="flex items-center gap-2 px-3 py-2 bg-bg/90 border border-border-subtle rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm transition-colors"
+                className="flex items-center gap-2 px-3 py-2 bg-bg/50 border border-border-subtle rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4h18M3 8h18M3 12h12" />
@@ -923,178 +979,178 @@ export default function InfluenceView({
                 </svg>
               </button>
             ) : (
-            <div className="flex flex-col gap-2 bg-bg/90 rounded-lg p-3" style={{ width: 'min(220px, calc(100vw - 1.5rem))' }}>
-              <button
-                onClick={() => setFiltersCollapsed(true)}
-                className="flex items-center justify-between w-full text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors mb-1"
-              >
-                <span>Filters</span>
-                <svg className="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <div className="relative">
-                <SearchInput
-                  ref={searchInputRef}
-                  value={search}
-                  onChange={setSearch}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' && searchMatches[0]) goToMusician(searchMatches[0]);
-                    if (e.key === 'Escape') setSearch('');
-                  }}
-                  placeholder="Find by name…"
-                />
-                {searchMatches.length > 0 && (
-                  <div className="absolute top-full mt-1 left-0 right-0 bg-bg-subtle border border-border-subtle rounded-lg overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto">
-                    {searchMatches.map((m) => {
-                      const hex = getStyleHex(m.bluesStyle);
-                      const isFav = isMusicianFavorited(m.id);
-                      return (
-                        <button
-                          key={m.id}
-                          onClick={() => goToMusician(m)}
-                          className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-bg-hover transition-colors group"
-                        >
-                          <span className="w-3 h-3 rounded-full shrink-0" style={{ background: hex }} />
-                          <span className="text-ui text-ink flex-1 truncate">{m.name}</span>
-                          <span className="text-2xs shrink-0" style={{ color: hex }}>{m.bluesStyle.replace(' Blues', '')}</span>
-                          {import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
-                            <svg
-                              className="w-4 h-4 shrink-0"
-                              viewBox="0 0 24 24"
-                              fill={isFav ? "currentColor" : "none"}
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              style={{ color: isFav ? '#c8872a' : '#6b5c4a' }}
-                            >
-                              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                            </svg>
-                          )}
-                        </button>
-                      );
-                    })}
-                  </div>
-                )}
-              </div>
-              <SearchInput
-                value={textFilter}
-                onChange={setTextFilter}
-                placeholder="Filter by description or albums…"
-              />
-              {textFilter && (
-                <p className="text-2xs text-ink3 px-0.5">{displayMusicians.length} musician{displayMusicians.length !== 1 ? 's' : ''} shown</p>
-              )}
-
-              {/* Favorites filter - only show when logged in */}
-              {user && (
-                <div className="bg-bg/90 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
-                  <div className="flex items-center gap-2">
-                    <input
-                      type="checkbox"
-                      checked={showFavoritesOnly}
-                      onChange={(e) => setShowFavoritesOnly(e.target.checked)}
-                      className="w-4 h-4 rounded border-border-subtle bg-bg-subtle text-accent focus:ring-accent focus:ring-offset-0"
-                    />
-                    <span className="text-label text-ink3">Show favorites only</span>
-                  </div>
-
-                  {/* List selector dropdown */}
-                  {showFavoritesOnly && lists.length > 0 && (
-                    <div className="flex flex-col gap-1.5">
-                      <select
-                        value={filterListId ?? ''}
-                        onChange={(e) => setFilterListId(e.target.value || null)}
-                        className="text-label bg-bg-subtle border border-border-subtle rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
-                      >
-                        <option value="">All lists</option>
-                        {lists.map((list) => {
-                          const count = favoritesMap.get(list.id)?.size ?? 0
-                          return (
-                            <option key={list.id} value={list.id}>
-                              {list.name} ({count})
-                            </option>
-                          )
-                        })}
-                      </select>
+              <div className="flex flex-col gap-2 bg-bg/50 rounded-lg p-3" style={{ width: 'min(220px, calc(100vw - 1.5rem))' }}>
+                <button
+                  onClick={() => setFiltersCollapsed(true)}
+                  className="flex items-center justify-between w-full text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors mb-1"
+                >
+                  <span>Filters</span>
+                  <svg className="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <div className="relative">
+                  <SearchInput
+                    ref={searchInputRef}
+                    value={search}
+                    onChange={setSearch}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' && searchMatches[0]) goToMusician(searchMatches[0]);
+                      if (e.key === 'Escape') setSearch('');
+                    }}
+                    placeholder="Find by name…"
+                  />
+                  {searchMatches.length > 0 && (
+                    <div className="absolute top-full mt-1 left-0 right-0 bg-bg-subtle border border-border-subtle rounded-lg overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto">
+                      {searchMatches.map((m) => {
+                        const hex = getStyleHex(m.bluesStyle);
+                        const isFav = isMusicianFavorited(m.id);
+                        return (
+                          <button
+                            key={m.id}
+                            onClick={() => goToMusician(m)}
+                            className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-bg-hover transition-colors group"
+                          >
+                            <span className="w-3 h-3 rounded-full shrink-0" style={{ background: hex }} />
+                            <span className="text-ui text-ink flex-1 truncate">{m.name}</span>
+                            <span className="text-2xs shrink-0" style={{ color: hex }}>{m.bluesStyle.replace(' Blues', '')}</span>
+                            {import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
+                              <svg
+                                className="w-4 h-4 shrink-0"
+                                viewBox="0 0 24 24"
+                                fill={isFav ? "currentColor" : "none"}
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                style={{ color: isFav ? '#c8872a' : '#6b5c4a' }}
+                              >
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                              </svg>
+                            )}
+                          </button>
+                        );
+                      })}
                     </div>
                   )}
                 </div>
-              )}
+                <SearchInput
+                  value={textFilter}
+                  onChange={setTextFilter}
+                  placeholder="Filter by description or albums…"
+                />
+                {textFilter && (
+                  <p className="text-2xs text-ink3 px-0.5">{displayMusicians.length} musician{displayMusicians.length !== 1 ? 's' : ''} shown</p>
+                )}
 
-              {/* Year range filter */}
-              <div className="bg-bg/90 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-1.5">
-                <div className="flex items-center justify-between">
-                  <span className="text-2xs text-accent tracking-widest uppercase">Active years</span>
-                  {yearRange && (
-                    <button
-                      onClick={() => setYearRange(null)}
-                      className="text-3xs text-ink3 hover:text-ink transition-colors"
-                    >
-                      reset
-                    </button>
-                  )}
-                </div>
-                <div className="flex items-center justify-between text-2xs text-ink3">
-                  <span>{effectiveYearRange[0]}</span>
-                  <span>{effectiveYearRange[1]}</span>
-                </div>
-                <div className="relative h-4 flex items-center">
-                  <input
-                    type="range"
-                    min={minYear}
-                    max={maxYear}
-                    value={effectiveYearRange[0]}
-                    onChange={(e) => {
-                      const v = parseInt(e.target.value);
-                      setYearRange([Math.min(v, effectiveYearRange[1] - 1), effectiveYearRange[1]]);
-                    }}
-                    className="year-range-slider absolute w-full h-1"
-                    style={{ zIndex: 3 }}
-                  />
-                  <input
-                    type="range"
-                    min={minYear}
-                    max={maxYear}
-                    value={effectiveYearRange[1]}
-                    onChange={(e) => {
-                      const v = parseInt(e.target.value);
-                      setYearRange([effectiveYearRange[0], Math.max(v, effectiveYearRange[0] + 1)]);
-                    }}
-                    className="year-range-slider absolute w-full h-1"
-                    style={{ zIndex: 3 }}
-                  />
-                  <div className="absolute w-full h-1 rounded bg-border-subtle" style={{ zIndex: 1 }}>
-                    <div
-                      className="absolute h-full rounded bg-accent/50"
-                      style={{
-                        left: `${((effectiveYearRange[0] - minYear) / (maxYear - minYear)) * 100}%`,
-                        right: `${((maxYear - effectiveYearRange[1]) / (maxYear - minYear)) * 100}%`,
+                {/* Favorites filter - only show when logged in */}
+                {user && (
+                  <div className="bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
+                    <div className="flex items-center gap-2">
+                      <input
+                        type="checkbox"
+                        checked={showFavoritesOnly}
+                        onChange={(e) => setShowFavoritesOnly(e.target.checked)}
+                        className="w-4 h-4 rounded border-border-subtle bg-bg-subtle text-accent focus:ring-accent focus:ring-offset-0"
+                      />
+                      <span className="text-label text-ink3">Show favorites only</span>
+                    </div>
+
+                    {/* List selector dropdown */}
+                    {showFavoritesOnly && lists.length > 0 && (
+                      <div className="flex flex-col gap-1.5">
+                        <select
+                          value={filterListId ?? ''}
+                          onChange={(e) => setFilterListId(e.target.value || null)}
+                          className="text-label bg-bg-subtle border border-border-subtle rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
+                        >
+                          <option value="">All lists</option>
+                          {lists.map((list) => {
+                            const count = favoritesMap.get(list.id)?.size ?? 0
+                            return (
+                              <option key={list.id} value={list.id}>
+                                {list.name} ({count})
+                              </option>
+                            )
+                          })}
+                        </select>
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {/* Year range filter */}
+                <div className="bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="text-2xs text-accent tracking-widest uppercase">Active years</span>
+                    {yearRange && (
+                      <button
+                        onClick={() => setYearRange(null)}
+                        className="text-3xs text-ink3 hover:text-ink transition-colors"
+                      >
+                        reset
+                      </button>
+                    )}
+                  </div>
+                  <div className="flex items-center justify-between text-2xs text-ink3">
+                    <span>{effectiveYearRange[0]}</span>
+                    <span>{effectiveYearRange[1]}</span>
+                  </div>
+                  <div className="relative h-4 flex items-center">
+                    <input
+                      type="range"
+                      min={minYear}
+                      max={maxYear}
+                      value={effectiveYearRange[0]}
+                      onChange={(e) => {
+                        const v = parseInt(e.target.value);
+                        setYearRange([Math.min(v, effectiveYearRange[1] - 1), effectiveYearRange[1]]);
                       }}
+                      className="year-range-slider absolute w-full h-1"
+                      style={{ zIndex: 3 }}
                     />
+                    <input
+                      type="range"
+                      min={minYear}
+                      max={maxYear}
+                      value={effectiveYearRange[1]}
+                      onChange={(e) => {
+                        const v = parseInt(e.target.value);
+                        setYearRange([effectiveYearRange[0], Math.max(v, effectiveYearRange[0] + 1)]);
+                      }}
+                      className="year-range-slider absolute w-full h-1"
+                      style={{ zIndex: 3 }}
+                    />
+                    <div className="absolute w-full h-1 rounded bg-border-subtle" style={{ zIndex: 1 }}>
+                      <div
+                        className="absolute h-full rounded bg-accent/50"
+                        style={{
+                          left: `${((effectiveYearRange[0] - minYear) / (maxYear - minYear)) * 100}%`,
+                          right: `${((maxYear - effectiveYearRange[1]) / (maxYear - minYear)) * 100}%`,
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Blues Style filter */}
-              <div className="bg-bg/90 border border-border-subtle rounded-lg px-3 py-2">
-                <BluesStyleLegend
-                  isOpen={legendOpen}
-                  onToggle={() => setLegendOpen((o) => !o)}
-                  styleFilter={styleFilter}
-                  onStyleFilterChange={onStyleFilterChange}
-                  onHoverStyle={setHoveredStyle}
-                  hoveredStyle={hoveredStyle}
-                  availableStyles={Array.from(new Set(completeMusicians.map((m) => m.bluesStyle)))}
-                  embedded
-                />
+                {/* Blues Style filter */}
+                <div className="bg-bg/50 border border-border-subtle rounded-lg px-3 py-2">
+                  <BluesStyleLegend
+                    isOpen={legendOpen}
+                    onToggle={() => setLegendOpen((o) => !o)}
+                    styleFilter={styleFilter}
+                    onStyleFilterChange={onStyleFilterChange}
+                    onHoverStyle={setHoveredStyle}
+                    hoveredStyle={hoveredStyle}
+                    availableStyles={Array.from(new Set(completeMusicians.map((m) => m.bluesStyle)))}
+                    embedded
+                  />
+                </div>
               </div>
-            </div>
             )}
           </div>
 
           {/* Top bar: group-by + scatter */}
           <div className="absolute top-3 sm:top-4 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2">
-            <div className="flex items-center bg-bg/90 border border-border-subtle rounded-lg p-0.5 gap-0.5">
+            <div className="flex items-center bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5">
               {(['style', 'instrument'] as GroupBy[]).map((mode) => (
                 <button
                   key={mode}
@@ -1109,14 +1165,14 @@ export default function InfluenceView({
             <button
               onClick={() => setScatter((s) => !s)}
               title={scatter ? 'Switch to sorted lines' : 'Switch to scattered layout'}
-              className={`px-2 sm:px-3 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase transition-all bg-bg/90 border border-border-subtle ${scatter ? 'bg-accent text-bg' : 'text-ink3 hover:text-ink'}`}
+              className={`px-2 sm:px-3 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase transition-all bg-bg/50 border border-border-subtle ${scatter ? 'bg-accent text-bg' : 'text-ink3 hover:text-ink'}`}
             >
               Scatter
             </button>
 
             <label
               title="Let relationships determine positions freely"
-              className="flex items-center gap-1.5 px-2 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase bg-bg/90 border border-border-subtle cursor-pointer select-none"
+              className="flex items-center gap-1.5 px-2 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase bg-bg/50 border border-border-subtle cursor-pointer select-none"
             >
               <input
                 type="checkbox"
@@ -1131,7 +1187,7 @@ export default function InfluenceView({
               <button
                 onClick={() => setShowConfig((s) => !s)}
                 title="Layout configuration"
-                className={`px-2 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase bg-bg/90 border border-border-subtle ${showConfig ? 'bg-accent text-bg' : 'text-ink3 hover:text-ink'}`}
+                className={`px-2 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase bg-bg/50 border border-border-subtle ${showConfig ? 'bg-accent text-bg' : 'text-ink3 hover:text-ink'}`}
               >
                 Config
               </button>
@@ -1140,9 +1196,9 @@ export default function InfluenceView({
 
           {/* Layout config sliders - dev only */}
           {import.meta.env.DEV && showConfig && (
-            <div className="absolute top-16 right-4 z-50 bg-bg/95 border border-border-subtle rounded-lg p-3 shadow-lg w-64 max-h-[70vh] overflow-y-auto">
+            <div className="absolute top-16 right-4 z-50 bg-bg/55 border border-border-subtle rounded-lg p-3 shadow-lg w-64 max-h-[70vh] overflow-y-auto">
               <div className="text-xs font-semibold uppercase tracking-wide text-ink mb-2">Layout Config</div>
-              
+
               {/* Collision Radius */}
               <div className="mb-2">
                 <div className="flex justify-between text-2xs text-ink3" title="How far apart nodes push each other">
@@ -1308,21 +1364,21 @@ export default function InfluenceView({
             <button
               onClick={() => handleZoom(0.4)}
               title="Zoom in"
-              className="w-9 h-9 flex items-center justify-center rounded-lg bg-bg/90 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60 text-2xl transition-colors"
+              className="w-9 h-9 flex items-center justify-center rounded-lg bg-bg/50 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60 text-2xl transition-colors"
             >
               +
             </button>
             <button
               onClick={() => handleZoom(-0.4)}
               title="Zoom out"
-              className="w-9 h-9 flex items-center justify-center rounded-lg bg-bg/90 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60 text-2xl transition-colors"
+              className="w-9 h-9 flex items-center justify-center rounded-lg bg-bg/50 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60 text-2xl transition-colors"
             >
               −
             </button>
             <button
               onClick={handleReset}
               title="Reset view"
-              className="w-9 h-9 flex items-center justify-center rounded-lg bg-bg/90 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60 text-xl transition-colors"
+              className="w-9 h-9 flex items-center justify-center rounded-lg bg-bg/50 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60 text-xl transition-colors"
             >
               ⟳
             </button>

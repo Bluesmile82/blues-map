@@ -53,7 +53,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
       <div className="absolute inset-0" onClick={onClose} />
 
-      <div className="relative w-full max-w-md mx-4 bg-bg border border-border-subtle rounded-xl shadow-2xl">
+      <div className="absolute top-10 w-full max-w-md mx-4 bg-bg border border-border-subtle rounded-xl shadow-2xl">
         <div className="flex items-center justify-between p-4 border-b border-border-subtle">
           <h3 className="font-semibold text-lg text-ink">My Lists</h3>
           <button
@@ -109,11 +109,10 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                   {/* Public toggle */}
                   <button
                     onClick={() => togglePublic(list.id)}
-                    className={`p-2 rounded-lg transition-colors ${
-                      list.isPublic
-                        ? 'text-accent bg-accent/10'
-                        : 'text-ink3 hover:bg-bg-hover'
-                    }`}
+                    className={`p-2 rounded-lg transition-colors ${list.isPublic
+                      ? 'text-accent bg-accent/10'
+                      : 'text-ink3 hover:bg-bg-hover'
+                      }`}
                     title={list.isPublic ? 'Public' : 'Private'}
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

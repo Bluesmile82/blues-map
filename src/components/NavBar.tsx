@@ -27,7 +27,7 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
   const btnClass = 'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink transition-all duration-200'
 
   return (
-    <header className="fixed top-0 left-0 right-0 h-14 z-[100] flex items-center gap-2 sm:gap-4 px-3 sm:px-6 bg-bg/98 backdrop-blur-lg border-b border-border-subtle">
+    <header className="fixed top-0 left-0 right-0 h-14 z-[100] flex items-center gap-2 sm:gap-4 px-3 sm:px-6 bg-bg/98 backdrop-blur-sm border-b border-border-subtle">
       {/* Brand */}
       <h1 className="block text-ink text-base font-bold tracking-wide">The Blues Map</h1>
 
