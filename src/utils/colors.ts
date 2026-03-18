@@ -16,7 +16,6 @@ export const CANONICAL_STYLES = [
   'Memphis Blues',
   'Kansas City Blues',
   'Chicago Blues',
-  'Urban Blues',
   'Rythm and Blues',
   'Detroit Blues',
   'Soul Blues',
@@ -24,6 +23,7 @@ export const CANONICAL_STYLES = [
   'Jump Blues',
   'Georgia Blues',
   'Piedmont Blues',
+  'St. Louis Blues',
   'Jazz',
   'British Blues',
   'Gospel',
@@ -32,29 +32,29 @@ export const CANONICAL_STYLES = [
 export type BluesStyle = typeof CANONICAL_STYLES[number];
 
 export const STYLE_COLORS: Record<string, RGB> = {
-  'Delta Blues':       [200, 135,  42],
-  'Hill Country Blues':[130, 200,  90],
-  'Country Blues':     [101, 163,  13],
-  'Boogie Woogie':     [ 26, 188, 156],
-  'Classic Blues':     [212, 175,  55],
-  'Vaudeville Blues':  [180, 140,  80],
-  'Texas Blues':       [232,  69,  69],
-  'Swamp Blues':       [ 80, 160,  90],
-  'New Orleans Blues': [220, 110,  50],
-  'Memphis Blues':     [200,  70, 120],
-  'Kansas City Blues': [120,  90, 210],
-  'Chicago Blues':     [ 74, 144, 217],
-  'Urban Blues':       [140,  80, 185],
-  'Rythm and Blues':   [ 46, 204, 113],
-  'Detroit Blues':     [155, 155, 155],
-  'Soul Blues':        [233,  30,  99],
-  'West Coast Blues':  [ 52, 152, 219],
-  'Jump Blues':        [241, 196,  15],
-  'Georgia Blues':     [210, 140,  50],
-  'Piedmont Blues':    [142,  68, 173],
-  'Jazz':              [ 26, 188, 156],
-  'British Blues':     [ 90, 130, 200],
-  'Gospel':            [231,  76,  60],
+  'Delta Blues': [200, 135, 42],
+  'Hill Country Blues': [130, 200, 90],
+  'Country Blues': [101, 163, 13],
+  'Boogie Woogie': [26, 188, 156],
+  'Classic Blues': [212, 175, 55],
+  'Vaudeville Blues': [180, 140, 80],
+  'Texas Blues': [232, 69, 69],
+  'Swamp Blues': [80, 160, 90],
+  'New Orleans Blues': [220, 110, 50],
+  'Memphis Blues': [200, 70, 120],
+  'Kansas City Blues': [120, 90, 210],
+  'Chicago Blues': [74, 144, 217],
+  'Rythm and Blues': [46, 204, 113],
+  'Detroit Blues': [155, 155, 155],
+  'Soul Blues': [233, 30, 99],
+  'West Coast Blues': [52, 152, 219],
+  'Jump Blues': [241, 196, 15],
+  'Georgia Blues': [210, 140, 50],
+  'Piedmont Blues': [142, 68, 173],
+  'St. Louis Blues': [185, 110, 160],
+  'Jazz': [26, 188, 156],
+  'British Blues': [90, 130, 200],
+  'Gospel': [231, 76, 60],
 };
 
 export function getStyleColor(style: string, alpha?: number): RGB | RGBA {
@@ -82,7 +82,7 @@ export function getInstrumentColor(instrument: string, alpha?: number): RGB | RG
   for (let i = 0; i < instrument.length; i++) {
     hash = instrument.charCodeAt(i) + ((hash << 5) - hash);
   }
-  
+
   // Use hash to select from a predefined palette of distinct colors
   const palettes: RGB[] = [
     [231, 76, 60],   // Red-orange
@@ -98,7 +98,7 @@ export function getInstrumentColor(instrument: string, alpha?: number): RGB | RG
     [241, 196, 15],  // Yellow
     [155, 155, 155], // Gray
   ];
-  
+
   const rgb: RGB = palettes[Math.abs(hash) % palettes.length];
   return alpha !== undefined ? [...rgb, alpha] as RGBA : rgb;
 }

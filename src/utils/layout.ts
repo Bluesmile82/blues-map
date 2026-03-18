@@ -26,6 +26,7 @@ export const STYLE_ORDER = [
   'Texas Blues',
   'Georgia Blues',
   'Piedmont Blues',
+  'St. Louis Blues',
   'Vaudeville Blues',
   'Classic Blues',
   'Jazz',
@@ -41,7 +42,6 @@ export const STYLE_ORDER = [
   'Memphis Blues',
   'Kansas City Blues',
   'Chicago Blues',
-  'Urban Blues',
   'Rythm and Blues',
   'Soul Blues',
   'Detroit Blues',
@@ -283,10 +283,10 @@ export function computeTreeLayout(
   const playedWithLinks: { source: string; target: string }[] = [];
   const seenInfluenceLinks = new Set<string>();
   const seenPlayedWithLinks = new Set<string>();
-  
+
   musicians.forEach((m) => {
     const keyM = groupBy === 'style' ? m.bluesStyle : primaryInstrument(m.instrument);
-    
+
     // Process influences
     m.influences.forEach((peerId) => {
       const peer = musicianById[peerId];
@@ -300,7 +300,7 @@ export function computeTreeLayout(
       seenInfluenceLinks.add(edgeKey);
       influenceLinks.push({ source: m.id, target: peerId });
     });
-    
+
     // Process playedWith
     m.playedWith.forEach((peerId) => {
       const peer = musicianById[peerId];
@@ -538,59 +538,58 @@ function styleTreeBezier(p0: Position2D, p1: Position2D, numPts = 24): Position2
 
 // Approximate year each style emerged — used to vertically order cluster labels
 export const STYLE_ERA_YEAR: Readonly<Record<string, number>> = {
-  'Delta Blues':        1903,
-  'Country Blues':      1900,
-  'Gospel':             1905,
+  'Delta Blues': 1903,
+  'Country Blues': 1900,
+  'Gospel': 1905,
   'Hill Country Blues': 1912,
-  'Classic Blues':      1920,
-  'Boogie Woogie':      1920,
-  'Texas Blues':        1920,
-  'Piedmont Blues':     1920,
-  'Georgia Blues':      1920,
-  'Vaudeville Blues':   1923,
-  'Memphis Blues':      1923,
-  'New Orleans Blues':  1925,
-  'Jazz':               1910,
-  'Kansas City Blues':  1930,
-  'Swamp Blues':        1935,
-  'Chicago Blues':      1935,
-  'Jump Blues':         1940,
-  'Urban Blues':        1943,
-  'Detroit Blues':      1943,
-  'West Coast Blues':   1946,
-  'Rythm and Blues':    1946,
-  'Soul Blues':         1955,
-  'British Blues':      1960,
+  'Classic Blues': 1920,
+  'Boogie Woogie': 1920,
+  'Texas Blues': 1920,
+  'Piedmont Blues': 1920,
+  'Georgia Blues': 1920,
+  'St. Louis Blues': 1920,
+  'Vaudeville Blues': 1923,
+  'Memphis Blues': 1923,
+  'New Orleans Blues': 1925,
+  'Jazz': 1910,
+  'Kansas City Blues': 1930,
+  'Swamp Blues': 1935,
+  'Chicago Blues': 1935,
+  'Jump Blues': 1940,
+  'Detroit Blues': 1943,
+  'West Coast Blues': 1946,
+  'Rythm and Blues': 1946,
+  'Soul Blues': 1955,
+  'British Blues': 1960,
 };
 
 // Historical blues style evolution tree: [parent, child]
 // Older / foundational styles are roots; newer derived styles are leaves.
 export const STYLE_TREE_EDGES: ReadonlyArray<[string, string]> = [
-  ['Delta Blues',       'Hill Country Blues'],
-  ['Delta Blues',       'Memphis Blues'],
-  ['Delta Blues',       'Chicago Blues'],
-  ['Delta Blues',       'Boogie Woogie'],
-  ['Country Blues',     'Piedmont Blues'],
-  ['Country Blues',     'Georgia Blues'],
-  ['Country Blues',     'Texas Blues'],
-  ['Country Blues',     'Classic Blues'],
-  ['Classic Blues',     'Vaudeville Blues'],
-  ['Classic Blues',     'Jazz'],
-  ['Gospel',            'Soul Blues'],
-  ['Texas Blues',       'Swamp Blues'],
-  ['Texas Blues',       'New Orleans Blues'],
-  ['Memphis Blues',     'Kansas City Blues'],
-  ['Memphis Blues',     'Chicago Blues'],
-  ['Boogie Woogie',     'Jump Blues'],
-  ['Chicago Blues',     'Urban Blues'],
-  ['Chicago Blues',     'Detroit Blues'],
-  ['Chicago Blues',     'British Blues'],
-  ['Urban Blues',       'Rythm and Blues'],
-  ['Jump Blues',        'Rythm and Blues'],
-  ['Jump Blues',        'West Coast Blues'],
-  ['Rythm and Blues',   'Soul Blues'],
+  ['Delta Blues', 'Hill Country Blues'],
+  ['Delta Blues', 'Memphis Blues'],
+  ['Delta Blues', 'Chicago Blues'],
+  ['Delta Blues', 'Boogie Woogie'],
+  ['Country Blues', 'Piedmont Blues'],
+  ['Country Blues', 'Georgia Blues'],
+  ['Country Blues', 'Texas Blues'],
+  ['Country Blues', 'Classic Blues'],
+  ['Classic Blues', 'Vaudeville Blues'],
+  ['Classic Blues', 'St. Louis Blues'],
+  ['Classic Blues', 'Jazz'],
+  ['Gospel', 'Soul Blues'],
+  ['Texas Blues', 'Swamp Blues'],
+  ['Texas Blues', 'New Orleans Blues'],
+  ['Memphis Blues', 'Kansas City Blues'],
+  ['Memphis Blues', 'Chicago Blues'],
+  ['Boogie Woogie', 'Jump Blues'],
+  ['Chicago Blues', 'Detroit Blues'],
+  ['Chicago Blues', 'British Blues'],
+  ['Jump Blues', 'Rythm and Blues'],
+  ['Jump Blues', 'West Coast Blues'],
+  ['Rythm and Blues', 'Soul Blues'],
   ['New Orleans Blues', 'Swamp Blues'],
-  ['Jazz',              'Jump Blues'],
+  ['Jazz', 'Jump Blues'],
 ];
 
 export interface StyleTreePath {

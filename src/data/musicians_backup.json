@@ -981,7 +981,7 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "Memphis Blues",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=SyVhBfIFbiQ",
     "albums": [
       {
@@ -3378,13 +3378,6 @@
           -89.3985,
           32.3547
         ]
-      },
-      {
-        "place": "Atlanta, Georgia",
-        "coords": [
-          -84.388,
-          33.749
-        ]
       }
     ],
     "instrument": "Guitar, Voice",
@@ -3414,21 +3407,12 @@
       {
         "name": "The Essential (2001)",
         "youtubeLink": "https://www.youtube.com/watch?v=JNartrN9cho"
-      },
-      {
-        "name": "Barbecue Blues (1927)",
-        "youtubeLink": ""
       }
     ],
     "description": "Robert Hicks (September 11, 1902 – October 21, 1931), known as Barbecue Bob, was an American Piedmont blues musician who played 12 string guitar which was popular in the Atlanta, Georgia, area at the time.  A record talent scout gave him his nickname because he worked as a cook in a barbecue restaurant.  One of the two existing photographs of him shows him playing his guitar and wearing a full length, white apron and cook's hat.",
     "activeFrom": "1927",
-    "influences": [
-      "curley-weaver"
-    ],
-    "influencedBy": [
-      "buddy-moss",
-      "blind-willie-mctell"
-    ],
+    "influences": [],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "charley-lincoln",
@@ -3533,13 +3517,6 @@
           -99.9018,
           31.9686
         ]
-      },
-      {
-        "place": "Fort Worth, Texas",
-        "coords": [
-          -97.3308,
-          32.7555
-        ]
       }
     ],
     "instrument": "Guitar",
@@ -3553,24 +3530,14 @@
       {
         "name": "Texas Slide Guitars: Complete Recorded Works 1930-1938 in Chronological Order (1992)",
         "youtubeLink": "https://www.youtube.com/watch?v=7qKXSGwXls0"
-      },
-      {
-        "name": "The Black Ace (1960)",
-        "youtubeLink": ""
       }
     ],
-    "description": "Black Ace (Babe Kyro Lemon Turner) was a Texas blues musician known for playing a National steel guitar flat on his lap. He hosted a radio show in Fort Worth in the late 1930s and recorded his signature song 'Black Ace'. He was rediscovered in 1960 and recorded for Arhoolie Records.",
+    "description": "Babe Kyro Lemon Turner (December 21, 1905 – November 7, 1972) was an American Texas blues musician most frequently known by the stage name Black Ace.  He was also known as B.  K.",
     "activeFrom": "1960",
-    "influences": [
-      "oscar-buddy-woods",
-      "smokey-hogg"
-    ],
+    "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [
-      "smokey-hogg",
-      "oscar-buddy-woods"
-    ],
+    "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Black_Ace_(disambiguation)"
   },
   {
@@ -3929,7 +3896,7 @@
       }
     ],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=N-pShRISHnQ",
     "albums": [
       {
@@ -4132,7 +4099,7 @@
       }
     ],
     "instrument": "Piano, Voice",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=uMTHm-HcdBg",
     "albums": [
       {
@@ -4171,7 +4138,9 @@
       "eddie-boyd"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "scrapper-blackwell"
+    ],
     "source": "https://en.wikipedia.org/wiki/Leroy_Carr"
   },
   {
@@ -4893,7 +4862,7 @@
       }
     ],
     "instrument": "Harmonica",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=WL7p1cmqHdA",
     "albums": [
       {
@@ -5075,7 +5044,7 @@
       }
     ],
     "instrument": "Voice",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=taWeOm1NQyw",
     "albums": [
       {
@@ -6756,7 +6725,7 @@
       }
     ],
     "instrument": "Piano, Voice",
-    "bluesStyle": "St. Louis Blues",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=dADLcAzcoI4",
     "albums": [
       {
@@ -6867,7 +6836,7 @@
       }
     ],
     "instrument": "Voice",
-    "bluesStyle": "Texas Blues",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=d8djanGv4Jw",
     "albums": [
       {
@@ -6921,7 +6890,7 @@
       }
     ],
     "instrument": "Voice",
-    "bluesStyle": "Kansas City Blues",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=ijiNEBDxxyg",
     "albums": [
       {
@@ -7024,15 +6993,7 @@
       -74.00611111111111,
       40.71277777777778
     ],
-    "spentTimePlaces": [
-      {
-        "place": "New York City, New York",
-        "coords": [
-          -74.006,
-          40.7128
-        ]
-      }
-    ],
+    "spentTimePlaces": [],
     "instrument": "Guitar, Voice",
     "bluesStyle": "Piedmont Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=3_kvcm6wgNQ",
@@ -7040,10 +7001,6 @@
       {
         "name": "Bluesgeezer (1959)",
         "youtubeLink": "https://www.youtube.com/watch?v=3_kvcm6wgNQ"
-      },
-      {
-        "name": "Creepin' Blues (Bluesville, 1965)",
-        "youtubeLink": ""
       }
     ],
     "description": "Alec Seward (born Alexander T.  Seward, March 16, 1901 – May 11, 1972) was an American Piedmont blues and country blues singer, guitarist and songwriter.  Some of his records were released under pseudonyms, such as Guitar Slim, Blues Servant Boy, King Blues and Georgia Slim.",
@@ -7051,12 +7008,7 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [
-      "brownie-mcghee",
-      "sonny-terry",
-      "woody-guthrie",
-      "lead-belly"
-    ],
+    "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Alec_Seward"
   },
   {
@@ -7383,7 +7335,7 @@
       }
     ],
     "instrument": "Piano",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=xjJHsqdw_hQ",
     "albums": [],
     "description": "Roosevelt Sykes (January 31, 1906 – July 17, 1983) was an American blues musician, also known as \"the Honeydripper.",
@@ -7627,13 +7579,6 @@
           -96.7969,
           32.7767
         ]
-      },
-      {
-        "place": "Dallas, Texas",
-        "coords": [
-          -96.797,
-          32.7767
-        ]
       }
     ],
     "instrument": "Voice",
@@ -7643,21 +7588,14 @@
       {
         "name": "Complete Recorded Works in Chronological Order, 1928-1929 (1991)",
         "youtubeLink": "https://www.youtube.com/watch?v=Ese6XbX8PSg"
-      },
-      {
-        "name": "Penitentiary (1928)",
-        "youtubeLink": ""
       }
     ],
-    "description": "Bessie Tucker was a powerful Texas blues singer known for her deep voice and songs reflecting the harsh realities of life, particularly prison life. Her 1928 and 1929 recordings, including 'Penitentiary', are considered classics of the genre, though she died young and remains an enigmatic figure.",
+    "description": "Bessie Tucker (c.  1906 – January 6, 1933) was an American classic female blues, country blues, and Texas blues  singer and songwriter.  Little is known of her life outside the music industry.",
     "activeFrom": "1928",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [
-      "k-d-johnson",
-      "jesse-thomas"
-    ],
+    "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Bessie_Tucker"
   },
   {
@@ -7930,6 +7868,56 @@
     "source": "https://en.wikipedia.org/wiki/Ethel_Waters"
   },
   {
+    "id": "curley-weaver",
+    "name": "Curley Weaver",
+    "image": "/images/musicians/curley-weaver.png",
+    "image_source": "",
+    "birthDate": "1906-03-25",
+    "birthPlace": "Covington",
+    "birthCoords": [
+      -83.866666666667,
+      33.6
+    ],
+    "deathDate": "1962-09-20",
+    "deathPlace": "Georgia",
+    "deathCoords": [
+      -83.5,
+      33
+    ],
+    "spentTimePlaces": [
+      {
+        "name": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Georgia Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=jsq8HtKy_o8",
+    "albums": [
+      {
+        "name": "Based on the context provided",
+        "youtubeLink": null
+      }
+    ],
+    "description": "Curley James Weaver (March 25, 1906 – September 20, 1962) was an American blues musician, also known as Slim Gordon.",
+    "activeFrom": "1925",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "blind-willie-mctell",
+      "barbecue-bob",
+      "charley-lincoln",
+      "fred-mcmullen",
+      "buddy-moss",
+      "eddie-mapp"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Curley_Weaver"
+  },
+  {
     "id": "casey-bill-weldon",
     "name": "Casey Bill Weldon",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Casey_Bill_Weldon.webp/500px-Casey_Bill_Weldon.webp.png",
@@ -8014,7 +8002,7 @@
       }
     ],
     "instrument": "Piano, Guitar, Voice",
-    "bluesStyle": "Country Blues",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=EC5dORhL0QQ",
     "albums": [
       {
@@ -8234,7 +8222,7 @@
       }
     ],
     "instrument": "Harmonica",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=3WzZdRY29Js",
     "albums": [
       {
@@ -10502,42 +10490,23 @@
           -90.1848,
           32.2988
         ]
-      },
-      {
-        "place": "Washington, D.C.",
-        "coords": [
-          -77.0369,
-          38.9072
-        ]
       }
     ],
     "instrument": "Guitar, Voice",
     "bluesStyle": "Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=DSmbr6uan7Y",
-    "albums": [
-      {
-        "name": "Blues 'n Bones (1989)",
-        "youtubeLink": ""
-      }
-    ],
-    "description": "Archie Edwards was a Piedmont blues guitarist and barber whose shop in Washington, D.C. served as a hub for blues musicians. He played in the 'East Virginia' style influenced by Blind Boy Fuller and maintained a friendship with Mississippi John Hurt. Edwards was a key figure in keeping the Piedmont tradition alive through the folk revival and beyond.",
+    "albums": [],
+    "description": "Archie L.  Edwards (September 4, 1918 – June 18, 1998) was an American Piedmont blues guitarist, who in a sporadic career spanning several decades worked with Mississippi John Hurt, Skip James, and John Jackson.  His best-known recordings are \"Saturday Night Hop\", \"The Road Is Rough and Rocky\", and \"I Called My Baby Long Distance\".",
     "activeFrom": "1930",
     "influences": [
       "blind-boy-fuller",
       "blind-lemon-jefferson",
       "jesse-fuller",
-      "johnny-fuller",
-      "mississippi-john-hurt"
+      "johnny-fuller"
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [
-      "mississippi-john-hurt",
-      "skip-james",
-      "john-jackson",
-      "john-cephas",
-      "phil-wiggins"
-    ],
+    "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians"
   },
   {
@@ -10911,7 +10880,7 @@
       }
     ],
     "instrument": "Piano, Voice",
-    "bluesStyle": "East Coast Blues",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=gjGuuBs7dA4",
     "albums": [
       {
@@ -14739,7 +14708,7 @@
       }
     ],
     "instrument": "Piano, Voice",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=XCu1e0p50qM",
     "albums": [
       {
@@ -14988,7 +14957,7 @@
       }
     ],
     "instrument": "Voice",
-    "bluesStyle": "Gospel",
+    "bluesStyle": "Urban Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=DZO-Ta9-srI",
     "albums": [
       {
@@ -17713,20 +17682,6 @@
           -90.049,
           35.1495
         ]
-      },
-      {
-        "place": "Detroit, Michigan",
-        "coords": [
-          -83.0458,
-          42.3314
-        ]
-      },
-      {
-        "place": "Memphis, Tennessee",
-        "coords": [
-          -90.049,
-          35.1495
-        ]
       }
     ],
     "instrument": "Guitar",
@@ -17736,28 +17691,16 @@
       {
         "name": "Baby Boy Warren (1954)",
         "youtubeLink": "https://www.youtube.com/watch?v=Iz1N3WZtp10"
-      },
-      {
-        "name": "Stop Breakin' Down (1954)",
-        "youtubeLink": ""
       }
     ],
-    "description": "Baby Boy Warren was a prominent figure in the Detroit blues scene of the 1950s. Originally from Louisiana and raised in Memphis, he absorbed the Delta style from icons like Howlin' Wolf and Little Buddy Doyle. In Detroit, he crafted a sound noted for its witty lyrics and solid guitar work, becoming a staple of the city's blues heritage.",
+    "description": "Robert Henry \"Baby Boy\" Warren (August 13, 1919 – July 1, 1977), was an American blues singer and guitarist who was a leading figure on the Detroit blues scene in the 1950s.",
     "activeFrom": "1931",
     "influences": [
-      "memphis-minnie",
-      "little-buddy-doyle",
-      "willie-61-blackwell"
+      "memphis-minnie"
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [
-      "sonny-boy-williamson",
-      "howlin-wolf",
-      "robert-lockwood-jr",
-      "boogie-woogie-red",
-      "calvin-frazier"
-    ],
+    "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Baby_Boy_Warren"
   },
   {
@@ -21015,6 +20958,8 @@
       -93.26916666666666,
       44.981944444444444
     ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
     "bluesStyle": "Boogie Woogie",
     "youtubeLink": "https://www.youtube.com/watch?v=7gGGL_09a6g",
     "albums": [
@@ -21054,134 +20999,55 @@
   {
     "id": "cripple-clarence-lofton",
     "name": "Cripple Clarence Lofton",
-    "image": "",
+    "image": "/images/musicians/cripple-clarence-lofton.png",
     "image_source": "",
     "birthDate": "1887-03-28",
-    "birthPlace": "Kingsport, Tennessee",
+    "birthPlace": "Kingsport",
     "birthCoords": [
       -82.55944444444444,
       36.55025
     ],
     "deathDate": "1957-01-09",
-    "deathPlace": "Chicago, Illinois",
+    "deathPlace": "Chicago",
     "deathCoords": [
       -87.62777777777778,
       41.88194444444444
     ],
     "spentTimePlaces": [
       {
-        "place": "Kingsport, Tennessee",
-        "coords": [
-          -82.55944444444444,
-          36.55025
-        ]
-      },
-      {
-        "place": "Chicago, Illinois",
+        "name": "Chicago",
         "coords": [
           -87.6298,
           41.8781
         ]
-      },
-      {
-        "name": "Atlanta",
-        "coords": [
-          -84.388,
-          33.749
-        ]
       }
     ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=TyyjGeqnQ9U",
     "albums": [
       {
-        "name": "Clarence's Blues (1979)",
-        "youtubeLink": "https://www.youtube.com/playlist?list=PLfJndz0utgOO3K6Me7lXD4GFyMvJe7naL"
-      }
-    ],
-    "description": "Cripple Clarence Lofton (born Albert or Clarence Clemens; March 28, 1887 or 1896/1897 – January 9, 1957), credited as Cripple Clarence Lofton, was an American boogie-woogie pianist and singer born in Tennessee. Born with a limp, he derived his stage name from this condition. He began his career as a tap dancer before settling in Chicago and becoming a mainstay in the boogie-woogie genre. His energetic stage performances included playing, singing, whistling, and snapping his fingers for percussive accompaniment. He lived in Chicago for the rest of his life and died of a blood clot in his brain at Cook County Hospital in 1957. The Killer Blues Headstone Project placed a headstone for him at Restvale Cemetery in Alsip, Illinois in 2014.",
-    "activeFrom": "1935",
-    "influences": [
-      "pinetop-smith",
-      "meade-lux-lewis"
-    ],
-    "influencedBy": [
-      "erwin-helfer"
-    ],
-    "incomplete": false,
-    "instrument": "Vocals, Piano",
-    "bluesStyle": "Boogie Woogie",
-    "youtubeLink": "https://www.youtube.com/watch?v=oiwHO7zSfC4",
-    "playedWith": [
-      "big-bill-broonzy",
-      "red-nelson",
-      "meade-lux-lewis",
-      "cow-cow-davenport",
-      "jimmy-yancey",
-      "blind-willie-mctell",
-      "barbecue-bob",
-      "charley-lincoln",
-      "fred-mcmullen",
-      "buddy-moss",
-      "eddie-mapp"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Cripple_Clarence_Lofton"
-  },
-  {
-    "id": "curley-weaver",
-    "name": "Curley Weaver",
-    "image": "/images/musicians/curley-weaver.png",
-    "image_source": "",
-    "birthDate": "1906-03-25",
-    "birthPlace": "Covington, Georgia",
-    "birthCoords": [
-      -83.8603,
-      33.5965
-    ],
-    "deathDate": "1962-09-20",
-    "deathPlace": "Covington, Georgia",
-    "deathCoords": [
-      -83.8603,
-      33.5965
-    ],
-    "spentTimePlaces": [
-      {
-        "place": "Covington, Georgia",
-        "coords": [
-          -83.8603,
-          33.5965
-        ]
+        "name": "Complete Recorded Works in Chronological Order, Vol. 1: 1935-1939 (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=SWsTPOHBWwI"
       },
       {
-        "place": "Atlanta, Georgia",
-        "coords": [
-          -84.388,
-          33.749
-        ]
+        "name": "Boogie Woogie Kings (2009)",
+        "youtubeLink": "https://www.youtube.com/watch?v=fG59BZymfuU"
       },
       {
-        "place": "New York City, New York",
-        "coords": [
-          -74.006,
-          40.7128
-        ]
+        "name": "Complete Recorded Works in Chronological Order, Volume 2: 1939-1943",
+        "youtubeLink": "https://www.youtube.com/watch?v=SWsTPOHBWwI"
       }
     ],
-    "instrument": "Guitar, Vocals",
-    "bluesStyle": "Piedmont Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=jsq8HtKy_o8",
-    "albums": [],
-    "description": "Curley James Weaver was an American blues musician known for his work with Barbecue Bob and Blind Willie McTell. He was a key figure in the Atlanta blues scene and recorded extensively from 1928 to 1949, working with various labels including Columbia, Okeh, and Vocalion.",
-    "activeFrom": "1925",
+    "description": "Clarence Lofton (March 28, 1887, 1896 or 1897 – January 9, 1957), credited as Cripple Clarence Lofton, was an American boogie-woogie pianist and singer born in Tennessee.",
+    "activeFrom": "1929",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "barbecue-bob",
-      "blind-willie-mctell",
-      "buddy-moss",
-      "fred-mcmullen",
-      "eddie-mapp"
+      "big-bill-broonzy"
     ],
-    "source": "https://en.wikipedia.org/wiki/Curley_Weaver"
+    "source": "https://en.wikipedia.org/wiki/Cripple_Clarence_Lofton"
   },
   {
     "id": "charlie-specks-mcfadden",

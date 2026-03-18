@@ -41,6 +41,8 @@ const EXPAND_ZOOM_THRESHOLD = Math.log2(EXPAND_PX_THRESHOLD / NODE_RADIUS); // â
 
 const CLUSTER_ZOOM_START = -1; // Below this: fully clustered
 const CLUSTER_ZOOM_END = 0.1;   // Above this: fully expanded
+
+const SIDEBAR_PX = 250; // Approximate width of filter sidebar + left margin on sm+ screens
 const CLUSTER_DETAILS_ZOOM = 0.2; // Above this: show musician names and images
 
 type DeckVS = { target: [number, number, number]; zoom: number; minZoom: number; maxZoom: number; transitionDuration?: number; transitionEasing?: (t: number) => number };
@@ -204,8 +206,13 @@ export default function InfluenceView({
 
     const fitZoom = Math.log2(dims.height / WH);
 
+    // Offset initial view so the content is centered in the area right of the filter sidebar
+    const scale = Math.pow(2, fitZoom);
+    const sidebarOffset = dims.width >= 640 ? SIDEBAR_PX / (2 * scale) : 0;
+    const initialTargetX = -sidebarOffset;
+
     setDeckVS({
-      target: [0, 0, 0],
+      target: [initialTargetX, 0, 0],
       zoom: fitZoom,
       minZoom: fitZoom,
       maxZoom: 2.5,
@@ -793,7 +800,7 @@ export default function InfluenceView({
         },
       }),
       // Favorite star badges
-      ...(import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && favoritesChecker && musicianData.some((d) => favoritesChecker(d.musician.id)) ? [new IconLayer({
+      ...(favoritesChecker && musicianData.some((d) => favoritesChecker(d.musician.id)) ? [new IconLayer({
         id: 'favorite-stars',
         data: clusterCompression < 0.5 ? musicianData.filter((d) => favoritesChecker(d.musician.id)) : [],
         getPosition: (d) => {
@@ -941,7 +948,10 @@ export default function InfluenceView({
 
   const handleReset = useCallback(() => {
     if (!deckVS) return;
-    setDeckVS({ ...deckVS, target: [0, 0, 0], zoom: deckVS.minZoom });
+    const { width } = dimsRef.current;
+    const scale = Math.pow(2, deckVS.minZoom);
+    const sidebarOffset = width >= 640 ? SIDEBAR_PX / (2 * scale) : 0;
+    setDeckVS({ ...deckVS, target: [-sidebarOffset, 0, 0], zoom: deckVS.minZoom });
   }, [deckVS]);
 
   const handleViewStateChange = useCallback(({ viewState }: { viewState: unknown }) => {
@@ -977,7 +987,9 @@ export default function InfluenceView({
 
       const maxTx = Math.max(0, w / 2 * xExpandNew - width / (2 * s));
       const maxTy = Math.max(0, h / 2 - height / (2 * s));
-      const ctx = Math.max(-maxTx, Math.min(maxTx, compensatedTx));
+      // Allow extra leftward panning to accommodate the filter sidebar
+      const sidebarWorldOffset = width >= 640 ? SIDEBAR_PX / (2 * s) : 0;
+      const ctx = Math.max(-maxTx - sidebarWorldOffset, Math.min(maxTx, compensatedTx));
       const cty = Math.max(-maxTy, Math.min(maxTy, ty));
 
       return { ...prev, target: [ctx, cty, 0], zoom: z };

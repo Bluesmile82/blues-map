@@ -15,9 +15,9 @@ import fs from 'fs';
 
 const musicians = JSON.parse(fs.readFileSync('./src/data/musicians.json', 'utf-8'));
 
-const WIKIDATA_API  = 'https://www.wikidata.org/w/api.php';
+const WIKIDATA_API = 'https://www.wikidata.org/w/api.php';
 const WIKIPEDIA_API = 'https://en.wikipedia.org/w/api.php';
-const SPARQL_API    = 'https://query.wikidata.org/sparql';
+const SPARQL_API = 'https://query.wikidata.org/sparql';
 
 // Delay between requests to avoid rate-limiting
 const DELAY_MS = 600;
@@ -26,8 +26,7 @@ const DELAY_MS = 600;
 const CANONICAL_STYLES = [
   'Delta Blues', 'Hill Country Blues', 'Country Blues', 'Boogie Woogie',
   'Classic Blues', 'Vaudeville Blues', 'Texas Blues', 'Swamp Blues',
-  'New Orleans Blues', 'Memphis Blues', 'Kansas City Blues', 'Chicago Blues',
-  'Urban Blues', 'Rythm and Blues', 'Detroit Blues', 'Soul Blues',
+  'New Orleans Blues', 'Memphis Blues', 'Kansas City Blues', 'Chicago Blues', 'Rythm and Blues', 'Detroit Blues', 'Soul Blues',
   'West Coast Blues', 'Jump Blues', 'Georgia Blues', 'Piedmont Blues', 'Jazz', 'British Blues', 'Gospel',
 ];
 
@@ -42,33 +41,32 @@ function mapToCanonicalStyle(genreLabels) {
   // 2. Keyword-based fallback for aliases (e.g. "rhythm and blues", "folk blues")
   for (const label of genreLabels) {
     const l = label.toLowerCase();
-    if (l.includes('delta'))                          return 'Delta Blues';
-    if (l.includes('hill country'))                   return 'Hill Country Blues';
+    if (l.includes('delta')) return 'Delta Blues';
+    if (l.includes('hill country')) return 'Hill Country Blues';
     if (l.includes('country blues') || l.includes('folk blues') || l.includes('rural blues')) return 'Country Blues';
-    if (l.includes('boogie'))                         return 'Boogie Woogie';
-    if (l.includes('classic blues'))                  return 'Classic Blues';
-    if (l.includes('vaudeville'))                     return 'Vaudeville Blues';
-    if (l.includes('texas'))                          return 'Texas Blues';
-    if (l.includes('swamp'))                          return 'Swamp Blues';
-    if (l.includes('new orleans'))                    return 'New Orleans Blues';
-    if (l.includes('memphis'))                        return 'Memphis Blues';
-    if (l.includes('kansas city'))                    return 'Kansas City Blues';
-    if (l.includes('chicago'))                        return 'Chicago Blues';
-    if (l.includes('urban blues'))                    return 'Urban Blues';
+    if (l.includes('boogie')) return 'Boogie Woogie';
+    if (l.includes('classic blues')) return 'Classic Blues';
+    if (l.includes('vaudeville')) return 'Vaudeville Blues';
+    if (l.includes('texas')) return 'Texas Blues';
+    if (l.includes('swamp')) return 'Swamp Blues';
+    if (l.includes('new orleans')) return 'New Orleans Blues';
+    if (l.includes('memphis')) return 'Memphis Blues';
+    if (l.includes('kansas city')) return 'Kansas City Blues';
+    if (l.includes('chicago')) return 'Chicago Blues';
     if (l.includes('rhythm and blues') || l.includes('r&b')) return 'Rythm and Blues';
-    if (l.includes('detroit'))                        return 'Detroit Blues';
-    if (l.includes('soul blues'))                     return 'Soul Blues';
-    if (l.includes('west coast'))                     return 'West Coast Blues';
-    if (l.includes('jump blues'))                     return 'Jump Blues';
+    if (l.includes('detroit')) return 'Detroit Blues';
+    if (l.includes('soul blues')) return 'Soul Blues';
+    if (l.includes('west coast')) return 'West Coast Blues';
+    if (l.includes('jump blues')) return 'Jump Blues';
     if (l.includes('georgia blues') || l.includes('atlanta blues')) return 'Georgia Blues';
-    if (l.includes('piedmont'))                       return 'Piedmont Blues';
-    if (l.includes('jazz'))                           return 'Jazz';
-    if (l.includes('british blues'))                  return 'British Blues';
-    if (l.includes('gospel'))                         return 'Gospel';
+    if (l.includes('piedmont')) return 'Piedmont Blues';
+    if (l.includes('jazz')) return 'Jazz';
+    if (l.includes('british blues')) return 'British Blues';
+    if (l.includes('gospel')) return 'Gospel';
   }
   // 3. Generic "blues" → Delta as default
   for (const label of genreLabels) {
-    if (label.toLowerCase().includes('blues'))        return 'Delta Blues';
+    if (label.toLowerCase().includes('blues')) return 'Delta Blues';
   }
   return '';
 }
@@ -200,7 +198,7 @@ function parseWikidataDate(claim) {
   const match = val.time?.match(/\+(\d{4})-(\d{2})-(\d{2})/);
   if (!match) return null;
   const precision = val.precision;
-  if (precision <= 9)  return match[1];          // year only
+  if (precision <= 9) return match[1];          // year only
   if (precision === 10) return `${match[1]}-${match[2]}-01`;
   return `${match[1]}-${match[2]}-${match[3]}`;
 }
@@ -210,12 +208,12 @@ async function resolvePlace(claim) {
   if (!id) return { name: null, coords: null };
   const entity = await getWikidataEntity(id);
   await delay(150);
-  const name   = entity?.labels?.en?.value || null;
+  const name = entity?.labels?.en?.value || null;
   const coords = entity?.claims?.P625?.[0]
     ? (() => {
-        const v = entity.claims.P625[0].mainsnak?.datavalue?.value;
-        return v ? [v.longitude, v.latitude] : null;
-      })()
+      const v = entity.claims.P625[0].mainsnak?.datavalue?.value;
+      return v ? [v.longitude, v.latitude] : null;
+    })()
     : null;
   return { name, coords };
 }
@@ -253,7 +251,7 @@ async function getImage(musicianName, wikidataId) {
     const url = `${WIKIPEDIA_API}?action=query&titles=${encodeURIComponent(musicianName)}&prop=pageimages&pithumbsize=500&piprop=thumbnail|original&format=json&origin=*&redirects=1`;
     const data = await fetchJSON(url);
     const pages = data?.query?.pages || {};
-    const page  = Object.values(pages)[0];
+    const page = Object.values(pages)[0];
     // Prefer original (full size) over thumbnail
     if (page?.original?.source) return page.original.source;
     if (page?.thumbnail?.source) return page.thumbnail.source;
@@ -265,7 +263,7 @@ async function getImage(musicianName, wikidataId) {
     const url = `${WIKIPEDIA_API}?action=query&titles=${encodeURIComponent(musicianName)}&prop=images&imlimit=20&format=json&origin=*&redirects=1`;
     const data = await fetchJSON(url);
     const pages = data?.query?.pages || {};
-    const page  = Object.values(pages)[0];
+    const page = Object.values(pages)[0];
     const images = page?.images || [];
     // Skip icons, logos, flags — pick the first likely portrait photo
     const skip = /flag|icon|logo|commons|wiki|symbol|signature|map|svg/i;
@@ -301,7 +299,7 @@ async function fetchWikipediaExtract(title) {
   const url = `${WIKIPEDIA_API}?action=query&prop=extracts&exintro=1&explaintext=1&titles=${encodeURIComponent(title)}&format=json&origin=*&redirects=1`;
   const data = await fetchJSON(url);
   const pages = data?.query?.pages || {};
-  const page  = Object.values(pages)[0];
+  const page = Object.values(pages)[0];
   if (!page?.extract || page.missing) return '';
   const clean = page.extract.replace(/\[\d+\]/g, '').trim();
   const sentences = clean.match(/[^.!?]+[.!?]+/g) || [];
@@ -344,41 +342,41 @@ async function getWikipediaDescription(musicianName) {
 // ---------------------------------------------------------------------------
 
 const BLUES_CITIES = {
-  'Chicago':       [-87.6298,  41.8781],
-  'Memphis':       [-90.0490,  35.1495],
-  'New Orleans':   [-90.0715,  29.9511],
-  'Detroit':       [-83.0458,  42.3314],
-  'Houston':       [-95.3698,  29.7604],
-  'Dallas':        [-96.7969,  32.7767],
-  'Atlanta':       [-84.3880,  33.7490],
-  'St. Louis':     [-90.1994,  38.6270],
-  'Kansas City':   [-94.5786,  39.0997],
-  'Los Angeles':   [-118.2437, 34.0522],
-  'New York':      [-74.0060,  40.7128],
-  'Birmingham':    [-86.8025,  33.5207],
-  'Nashville':     [-86.7816,  36.1627],
-  'Jackson':       [-90.1848,  32.2988],
-  'Clarksdale':    [-90.5726,  34.2001],
-  'Helena':        [-90.5882,  34.5298],
-  'Vicksburg':     [-90.8773,  32.3526],
-  'Greenville':    [-91.0632,  33.4076],
-  'Greenwood':     [-90.1801,  33.5162],
-  'Baton Rouge':   [-91.1871,  30.4515],
-  'Shreveport':    [-93.7502,  32.5251],
-  'Oakland':       [-122.2712, 37.8044],
+  'Chicago': [-87.6298, 41.8781],
+  'Memphis': [-90.0490, 35.1495],
+  'New Orleans': [-90.0715, 29.9511],
+  'Detroit': [-83.0458, 42.3314],
+  'Houston': [-95.3698, 29.7604],
+  'Dallas': [-96.7969, 32.7767],
+  'Atlanta': [-84.3880, 33.7490],
+  'St. Louis': [-90.1994, 38.6270],
+  'Kansas City': [-94.5786, 39.0997],
+  'Los Angeles': [-118.2437, 34.0522],
+  'New York': [-74.0060, 40.7128],
+  'Birmingham': [-86.8025, 33.5207],
+  'Nashville': [-86.7816, 36.1627],
+  'Jackson': [-90.1848, 32.2988],
+  'Clarksdale': [-90.5726, 34.2001],
+  'Helena': [-90.5882, 34.5298],
+  'Vicksburg': [-90.8773, 32.3526],
+  'Greenville': [-91.0632, 33.4076],
+  'Greenwood': [-90.1801, 33.5162],
+  'Baton Rouge': [-91.1871, 30.4515],
+  'Shreveport': [-93.7502, 32.5251],
+  'Oakland': [-122.2712, 37.8044],
   'San Francisco': [-122.4194, 37.7749],
-  'Philadelphia':  [-75.1652,  39.9526],
-  'Cleveland':     [-81.6944,  41.4993],
-  'Cincinnati':    [-84.5120,  39.1031],
-  'Indianapolis':  [-86.1581,  39.7684],
-  'Pittsburgh':    [-79.9959,  40.4406],
-  'Baltimore':     [-76.6122,  39.2904],
-  'Richmond':      [-77.4605,  37.5407],
-  'Charlotte':     [-80.8431,  35.2271],
-  'Tupelo':        [-88.7037,  34.2576],
-  'London':        [-0.1276,   51.5074],
-  'Mississippi':   [-89.3985,  32.3547],
-  'Texas':         [-99.9018,  31.9686],
+  'Philadelphia': [-75.1652, 39.9526],
+  'Cleveland': [-81.6944, 41.4993],
+  'Cincinnati': [-84.5120, 39.1031],
+  'Indianapolis': [-86.1581, 39.7684],
+  'Pittsburgh': [-79.9959, 40.4406],
+  'Baltimore': [-76.6122, 39.2904],
+  'Richmond': [-77.4605, 37.5407],
+  'Charlotte': [-80.8431, 35.2271],
+  'Tupelo': [-88.7037, 34.2576],
+  'London': [-0.1276, 51.5074],
+  'Mississippi': [-89.3985, 32.3547],
+  'Texas': [-99.9018, 31.9686],
 };
 
 // ---------------------------------------------------------------------------
@@ -618,8 +616,8 @@ async function getSpentTimePlacesFromWikipedia(musicianName, birthPlace) {
 // ---------------------------------------------------------------------------
 
 async function enrichOptionalFields(musician, allMusicians, index, total) {
-  const needsInfluences   = musician.influences?.length === 0;
-  const needsSpentTime    = musician.spentTimePlaces?.length === 0;
+  const needsInfluences = musician.influences?.length === 0;
+  const needsSpentTime = musician.spentTimePlaces?.length === 0;
   if (!needsInfluences && !needsSpentTime) return false;
 
   // Fetch wikitext once, reuse for all three optional fields
@@ -636,7 +634,7 @@ async function enrichOptionalFields(musician, allMusicians, index, total) {
     const inf = parseInfluencesFromWikitext(content, musician.name, allMusicians);
     if (inf.length) {
       musician.influences = inf;
-      console.log(`  [${index+1}/${total}] ${musician.name}: influences → ${inf.join(', ')}`);
+      console.log(`  [${index + 1}/${total}] ${musician.name}: influences → ${inf.join(', ')}`);
       changed = true;
     }
   }
@@ -645,7 +643,7 @@ async function enrichOptionalFields(musician, allMusicians, index, total) {
     const places = parseSpentTimePlacesFromWikitext(content, musician.birthPlace || '');
     if (places.length) {
       musician.spentTimePlaces = places;
-      console.log(`  [${index+1}/${total}] ${musician.name}: spentTime → ${places.map(p=>p.name).join(', ')}`);
+      console.log(`  [${index + 1}/${total}] ${musician.name}: spentTime → ${places.map(p => p.name).join(', ')}`);
       changed = true;
     }
   }
@@ -885,23 +883,23 @@ function needsEnrichment(m) {
 
 async function enrichMusician(musician, index, total) {
   // Ensure all required fields exist — handles stub entries with only id/name
-  musician.image        ??= '';
-  musician.birthDate    ??= '';
-  musician.birthPlace   ??= '';
-  musician.birthCoords  ??= [0, 0];
-  musician.deathDate    ??= null;
-  musician.deathPlace   ??= null;
-  musician.deathCoords  ??= null;
+  musician.image ??= '';
+  musician.birthDate ??= '';
+  musician.birthPlace ??= '';
+  musician.birthCoords ??= [0, 0];
+  musician.deathDate ??= null;
+  musician.deathPlace ??= null;
+  musician.deathCoords ??= null;
   musician.spentTimePlaces ??= [];
-  musician.instrument   ??= '';
-  musician.bluesStyle   ??= '';
-  musician.youtubeLink  ??= '';
-  musician.albums       ??= [];
-  musician.description  ??= '';
-  musician.activeFrom   ??= '';
-  musician.influences   ??= [];
+  musician.instrument ??= '';
+  musician.bluesStyle ??= '';
+  musician.youtubeLink ??= '';
+  musician.albums ??= [];
+  musician.description ??= '';
+  musician.activeFrom ??= '';
+  musician.influences ??= [];
   musician.influencedBy ??= [];
-  musician.incomplete   ??= true;
+  musician.incomplete ??= true;
 
   if (!needsEnrichment(musician)) {
     console.log(`[${index + 1}/${total}] ✓ Skip ${musician.name} (complete)`);
@@ -943,7 +941,7 @@ async function enrichMusician(musician, index, total) {
       // Birth place + coords
       if ((!musician.birthPlace || musician.birthPlace === '' || musician.birthCoords[0] === 0) && claims.P19) {
         const { name, coords } = await resolvePlace(claims.P19);
-        if (name  && !musician.birthPlace)      musician.birthPlace  = name;
+        if (name && !musician.birthPlace) musician.birthPlace = name;
         if (coords && musician.birthCoords[0] === 0) musician.birthCoords = coords;
         if (name) console.log(`  ✓ Birth place: ${musician.birthPlace}`);
       }
@@ -957,14 +955,14 @@ async function enrichMusician(musician, index, total) {
       // Death place + coords
       if (!musician.deathPlace && claims.P20) {
         const { name, coords } = await resolvePlace(claims.P20);
-        if (name)   musician.deathPlace  = name;
+        if (name) musician.deathPlace = name;
         if (coords) musician.deathCoords = coords;
-        if (name)   console.log(`  ✓ Death place: ${musician.deathPlace}`);
+        if (name) console.log(`  ✓ Death place: ${musician.deathPlace}`);
       }
 
       // Instrument
       if ((!musician.instrument || musician.instrument === '') && claims.P1303) {
-        const ids  = extractIds(claims.P1303).slice(0, 4);
+        const ids = extractIds(claims.P1303).slice(0, 4);
         const names = [];
         for (const id of ids) {
           const label = await resolveLabel(id);
@@ -1279,8 +1277,8 @@ async function main() {
     // Save progress every 5 musicians
     if ((i + 1) % 5 === 0) {
       fs.writeFileSync('./src/data/musicians.json', JSON.stringify(musicians, null, 2));
-      const elapsed  = Math.round((Date.now() - startTime) / 1000);
-      const perItem  = elapsed / (i + 1);
+      const elapsed = Math.round((Date.now() - startTime) / 1000);
+      const perItem = elapsed / (i + 1);
       const remaining = Math.round(perItem * (musicians.length - i - 1));
       console.log(`\n💾 Saved (${i + 1}/${musicians.length}) — ${elapsed}s elapsed, ~${remaining}s left\n`);
     }
