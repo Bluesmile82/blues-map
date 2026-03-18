@@ -12514,7 +12514,7 @@
       }
     ],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Detroit Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=sOG6No8o7y4",
     "albums": [
       {
@@ -15392,7 +15392,7 @@
         ]
       }
     ],
-    "instrument": "Drum kit, Voice",
+    "instrument": "Drums, Voice",
     "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=yUDxw5cn890",
     "albums": [],
@@ -16096,7 +16096,7 @@
     "name": "Roomful of Blues",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Roomful_of_Blues_at_The_Cut_June_2024.jpg/500px-Roomful_of_Blues_at_The_Cut_June_2024.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Roomful_of_Blues_at_The_Cut_June_2024.jpg/500px-Roomful_of_Blues_at_The_Cut_June_2024.jpg",
-    "birthDate": "",
+    "birthDate": "1967-01-01",
     "birthPlace": "Rhode Island",
     "birthCoords": [
       -71.5,
@@ -16129,7 +16129,7 @@
       }
     ],
     "instrument": "Guitar, Saxophone, Trumpet, Piano, Bass, Drums, Vocals",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Jump Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=OwkwncRFOsY",
     "albums": [
       {
@@ -19942,7 +19942,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar, Piano, Vocals",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=igu2GHbgA8s",
     "albums": [
       {
@@ -20865,7 +20865,7 @@
     "spentTimePlaces": [],
     "instrument": "Guitar, Piano, Voice",
     "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=qtFqyNlsHXU",
+    "youtubeLink": "https://www.youtube.com/watch?v=AtQUCOhGyE4",
     "albums": [
       {
         "name": "Lonnie Johnson (1977)",
@@ -21962,7 +21962,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Rythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=V2rhQVdS1d4",
     "albums": [
       {
@@ -22704,7 +22704,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=SNuruTw1Mqw",
     "albums": [
       {
@@ -23281,11 +23281,11 @@
       -95.2997,
       32.3514
     ],
-    "deathDate": null,
+    "deathDate": "1990-02-02",
     "deathPlace": null,
     "deathCoords": null,
     "spentTimePlaces": [],
-    "instrument": "Tenor Saxophone, Voice",
+    "instrument": "Saxophone, Voice",
     "bluesStyle": "Delta Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=rWQNWwTeLNY",
     "albums": [
@@ -23347,7 +23347,7 @@
       }
     ],
     "instrument": "Bass guitar, Organ, Guitar, Piano",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=Vz2SPN_dtFw",
     "albums": [],
     "description": "Johnny \"Big Moose\" Walker (June 27, 1927 –  November 27, 1999) was an American Chicago blues and electric blues pianist and organist.  He worked with many blues musicians, including Ike Turner, Sonny Boy Williamson II, Lowell Fulson, Choker Campbell, Elmore James, Earl Hooker, Muddy Waters, Otis Spann, Sunnyland Slim, Jimmy Dawkins and Son Seals. \nWalker was primarily a piano player but was also proficient on the electronic organ and the bass guitar (he played the bass guitar when backing Muddy Waters).",
@@ -23388,7 +23388,7 @@
       }
     ],
     "instrument": "Harmonica, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=gQUBTpaquXc",
     "albums": [
       {
@@ -24002,7 +24002,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=lLEGVFFvuBU",
     "albums": [],
     "description": "Ronnie Baker Brooks (born January 23, 1967) is an American Chicago blues and soul blues guitarist, singer and songwriter.  He was a respected club performer in Chicago, even before recording three solo albums for Watchdog Records.   The son of fellow Chicago blues musician Lonnie Brooks, he is the brother of another blues guitarist, Wayne Baker Brooks.",
@@ -24044,7 +24044,7 @@
       }
     ],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=eX6WVJYvhko",
     "albums": [],
     "description": "Jimmy Burns (born February 27, 1943) is an American soul blues and electric blues guitarist, singer and songwriter.  Although he was born in the Mississippi Delta, Burns has spent nearly all his life in Chicago.  His elder brother, Eddie \"Guitar\" Burns, was a Detroit blues musician.",
@@ -24723,7 +24723,7 @@
       }
     ],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=2Qz1ER_risQ",
     "albums": [
       {
@@ -24739,7 +24739,11 @@
     ],
     "incomplete": false,
     "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Tutu_Jones"
+    "source": "https://en.wikipedia.org/wiki/Tutu_Jones",
+    "secondaryStyles": [
+      "Chicago Blues",
+      "Soul Blues"
+    ]
   },
   {
     "id": "harrison-kennedy",
@@ -25023,7 +25027,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Gospel",
     "youtubeLink": "https://www.youtube.com/watch?v=717aFbEBKCs",
     "albums": [
       {
@@ -25039,7 +25043,10 @@
     ],
     "incomplete": false,
     "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Sista_Monica_Parker"
+    "source": "https://en.wikipedia.org/wiki/Sista_Monica_Parker",
+    "secondaryStyles": [
+      "Soul Blues"
+    ]
   },
   {
     "id": "neal-pattman",
@@ -25464,7 +25471,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "West Coast Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=3ddwQqCBbLc",
     "albums": [
       {
@@ -25543,7 +25550,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=cBAQTF81PbI",
     "albums": [
       {
@@ -25720,7 +25727,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=09QV3CijwsI",
     "albums": [
       {

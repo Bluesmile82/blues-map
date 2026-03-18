@@ -15,34 +15,37 @@ const MAX_YEAR = 2026;
 
 export type GroupBy = 'style' | 'instrument';
 
-// Chronological/geographic style ordering — related styles are adjacent.
-// Delta → Hill Country (North Mississippi) → rural South →
-// Texas → Louisiana (Swamp → New Orleans) → up the river (Memphis) →
-// Midwest (Kansas City) → Chicago → Urban → R&B/Detroit/Soul →
-// West Coast/Jump → Piedmont (East Coast) → Jazz → British → Gospel
+// Tree-shaped style ordering — foundational styles at the CENTER, descendants spread outward.
+// Left branch: Country Blues descendants (outermost → center)
+// Center: Country Blues, Delta Blues, Gospel (the three roots / oldest styles)
+// Right branch: Delta Blues descendants (center → outermost)
 export const STYLE_ORDER = [
-  'Delta Blues',
-  'Hill Country Blues',
-  'Country Blues',
-  'Boogie Woogie',
-  'Classic Blues',
-  'Vaudeville Blues',
-  'Texas Blues',
+  // ← Left branch (Country Blues family, outermost first)
   'Swamp Blues',
   'New Orleans Blues',
+  'Texas Blues',
+  'Georgia Blues',
+  'Piedmont Blues',
+  'Vaudeville Blues',
+  'Classic Blues',
+  'Jazz',
+  'Jump Blues',
+  'West Coast Blues',
+  // — Center (foundational roots) —
+  'Country Blues',
+  'Delta Blues',
+  'Gospel',
+  // Right branch (Delta Blues family, center first) →
+  'Hill Country Blues',
+  'Boogie Woogie',
   'Memphis Blues',
   'Kansas City Blues',
   'Chicago Blues',
   'Urban Blues',
   'Rythm and Blues',
-  'Detroit Blues',
   'Soul Blues',
-  'West Coast Blues',
-  'Jump Blues',
-  'Piedmont Blues',
-  'Jazz',
+  'Detroit Blues',
   'British Blues',
-  'Gospel',
 ];
 
 // Primary instrument ordering (roughly by prevalence/era in blues)
@@ -509,4 +512,107 @@ export function bezierPath(p0: Position2D, p1: Position2D, numPts = 32): Positio
     ]);
   }
   return path;
+}
+
+/**
+ * Cubic bezier for style tree branches — flows vertically from parent to child
+ * with horizontal movement happening in the middle, giving an organic branch feel.
+ */
+function styleTreeBezier(p0: Position2D, p1: Position2D, numPts = 24): Position2D[] {
+  // Control points: drop vertically from source, then curve horizontally to target
+  const midY = (p0[1] + p1[1]) / 2;
+  const cx1: Position2D = [p0[0], midY];
+  const cx2: Position2D = [p1[0], midY];
+
+  const path: Position2D[] = [];
+  for (let i = 0; i <= numPts; i++) {
+    const t = i / numPts;
+    const mt = 1 - t;
+    path.push([
+      mt ** 3 * p0[0] + 3 * mt ** 2 * t * cx1[0] + 3 * mt * t ** 2 * cx2[0] + t ** 3 * p1[0],
+      mt ** 3 * p0[1] + 3 * mt ** 2 * t * cx1[1] + 3 * mt * t ** 2 * cx2[1] + t ** 3 * p1[1],
+    ]);
+  }
+  return path;
+}
+
+// Approximate year each style emerged — used to vertically order cluster labels
+export const STYLE_ERA_YEAR: Readonly<Record<string, number>> = {
+  'Delta Blues':        1903,
+  'Country Blues':      1900,
+  'Gospel':             1905,
+  'Hill Country Blues': 1912,
+  'Classic Blues':      1920,
+  'Boogie Woogie':      1920,
+  'Texas Blues':        1920,
+  'Piedmont Blues':     1920,
+  'Georgia Blues':      1920,
+  'Vaudeville Blues':   1923,
+  'Memphis Blues':      1923,
+  'New Orleans Blues':  1925,
+  'Jazz':               1910,
+  'Kansas City Blues':  1930,
+  'Swamp Blues':        1935,
+  'Chicago Blues':      1935,
+  'Jump Blues':         1940,
+  'Urban Blues':        1943,
+  'Detroit Blues':      1943,
+  'West Coast Blues':   1946,
+  'Rythm and Blues':    1946,
+  'Soul Blues':         1955,
+  'British Blues':      1960,
+};
+
+// Historical blues style evolution tree: [parent, child]
+// Older / foundational styles are roots; newer derived styles are leaves.
+export const STYLE_TREE_EDGES: ReadonlyArray<[string, string]> = [
+  ['Delta Blues',       'Hill Country Blues'],
+  ['Delta Blues',       'Memphis Blues'],
+  ['Delta Blues',       'Chicago Blues'],
+  ['Delta Blues',       'Boogie Woogie'],
+  ['Country Blues',     'Piedmont Blues'],
+  ['Country Blues',     'Georgia Blues'],
+  ['Country Blues',     'Texas Blues'],
+  ['Country Blues',     'Classic Blues'],
+  ['Classic Blues',     'Vaudeville Blues'],
+  ['Classic Blues',     'Jazz'],
+  ['Gospel',            'Soul Blues'],
+  ['Texas Blues',       'Swamp Blues'],
+  ['Texas Blues',       'New Orleans Blues'],
+  ['Memphis Blues',     'Kansas City Blues'],
+  ['Memphis Blues',     'Chicago Blues'],
+  ['Boogie Woogie',     'Jump Blues'],
+  ['Chicago Blues',     'Urban Blues'],
+  ['Chicago Blues',     'Detroit Blues'],
+  ['Chicago Blues',     'British Blues'],
+  ['Urban Blues',       'Rythm and Blues'],
+  ['Jump Blues',        'Rythm and Blues'],
+  ['Jump Blues',        'West Coast Blues'],
+  ['Rythm and Blues',   'Soul Blues'],
+  ['New Orleans Blues', 'Swamp Blues'],
+  ['Jazz',              'Jump Blues'],
+];
+
+export interface StyleTreePath {
+  path: Position2D[];
+  fromStyle: string;
+  toStyle: string;
+}
+
+/**
+ * Compute tree edge paths between style cluster positions.
+ * Since STYLE_ORDER already places roots at the center and descendants outward,
+ * the edges simply connect the existing cluster label positions.
+ */
+export function computeStyleTreeEdges(
+  nodePositions: Record<string, Position2D>,
+): StyleTreePath[] {
+  const paths: StyleTreePath[] = [];
+  STYLE_TREE_EDGES.forEach(([from, to]) => {
+    const fromPos = nodePositions[from];
+    const toPos = nodePositions[to];
+    if (!fromPos || !toPos) return;
+    paths.push({ path: styleTreeBezier(fromPos, toPos), fromStyle: from, toStyle: to });
+  });
+  return paths;
 }

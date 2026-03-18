@@ -15,6 +15,8 @@ import {
   computeDecadeTicks,
   computeStyleClusters,
   computeInstrumentClusters,
+  computeStyleTreeEdges,
+  STYLE_ERA_YEAR,
   bezierPath,
   getYear,
   yearToWorldY,
@@ -26,6 +28,7 @@ import {
   type InfluenceLayout,
   type Position2D,
   type StyleZone,
+  type StyleTreePath,
 } from '../utils/layout';
 
 // World-space sizes
@@ -233,6 +236,39 @@ export default function InfluenceView({
     return computeStyleClusters(displayMusicians, positions, styleZones);
   }, [displayMusicians, positions, styleZones, groupBy]);
 
+  // Per-style label Y: era-year-based, clamped to each style's musician Y range
+  const styleLabelY = useMemo(() => {
+    if (!worldRef.current || groupBy !== 'style') return {} as Record<string, number>;
+    const { h } = worldRef.current;
+    const halfH = h / 2;
+    const result: Record<string, number> = {};
+    for (const [style, cluster] of Object.entries(clusters)) {
+      const eraYear = STYLE_ERA_YEAR[style];
+      const targetY = eraYear ? yearToWorldY(eraYear, halfH, h, 100) : cluster.center[1];
+      // Clamp to the actual Y range of this style's musicians
+      const ys = cluster.musicianIds
+        .map(id => positions[id]?.[1])
+        .filter((y): y is number => y !== undefined);
+      if (ys.length === 0) { result[style] = targetY; continue; }
+      const minY = Math.min(...ys);
+      const maxY = Math.max(...ys);
+      result[style] = Math.max(minY, Math.min(maxY, targetY));
+    }
+    return result;
+  }, [clusters, positions, groupBy, WH]);
+
+  const styleTreePaths = useMemo(() => {
+    if (groupBy !== 'style' || Object.keys(clusters).length === 0) return [] as StyleTreePath[];
+    const zoneByStyle = Object.fromEntries(styleZones.map(z => [z.style, z]));
+    const nodePositions: Record<string, Position2D> = {};
+    for (const [style, cluster] of Object.entries(clusters)) {
+      const zone = zoneByStyle[style];
+      const x = zone ? zone.x + zone.width / 2 : cluster.center[0];
+      nodePositions[style] = [x, styleLabelY[style] ?? cluster.center[1]];
+    }
+    return computeStyleTreeEdges(nodePositions);
+  }, [clusters, styleZones, groupBy, styleLabelY]);
+
   const musicianMap = useMemo(() => {
     const map = new Map<string, Musician>();
     displayMusicians.forEach(m => map.set(m.id, m));
@@ -286,7 +322,9 @@ export default function InfluenceView({
         const shortName = style.replace(' Blues', '');
         const text = groupBy === 'style' ? shortName : style;
         const worldX = zoneX * xe;
-        const worldY = cluster.center[1];
+        // Use era-year-based Y for style grouping, cluster center for instruments
+        const labelY = groupBy === 'style' ? (styleLabelY[style] ?? cluster.center[1]) : cluster.center[1];
+        const worldY = labelY;
         // Screen-space bounds (pixels)
         const textW = text.length * CHAR_W + PAD_X * 2;
         const textH = FONT_PX + PAD_Y * 2;
@@ -295,7 +333,7 @@ export default function InfluenceView({
         const screenY = worldY * scale;
         return {
           style,
-          position: cluster.center,
+          position: [cluster.center[0], labelY] as Position2D,
           zoneX,
           zoneWidth: zone?.width ?? 0,
           count: cluster.count,
@@ -325,7 +363,7 @@ export default function InfluenceView({
       if (!overlaps) placed.push(c);
     }
     return placed;
-  }, [clusters, clusterCompression, styleZones, deckVS?.zoom, groupBy]);
+  }, [clusters, clusterCompression, styleZones, deckVS?.zoom, groupBy, styleLabelY]);
 
   const focusId = hovered ?? selectedId;
   const focusedMusician = focusId ? displayMusicians.find((m) => m.id === focusId) : null;
@@ -535,7 +573,29 @@ export default function InfluenceView({
         .filter(Boolean)
     ) as { path: Position2D[]; targetId: string; sourceId: string }[];
 
+    // Style tree alpha: fully visible when fully clustered, fades out as nodes expand
+    const treeRatio = currentZoom <= CLUSTER_ZOOM_START
+      ? 1
+      : Math.max(0, 1 - (currentZoom - CLUSTER_ZOOM_START) / (CLUSTER_ZOOM_END - CLUSTER_ZOOM_START));
+    const treeAlpha = Math.round(treeRatio * 200);
+
     return [
+      // Style evolution tree — edges between cluster labels (visible at low zoom only)
+      ...(treeAlpha > 0 && groupBy === 'style' ? [
+        new PathLayer({
+          id: 'style-tree-edges',
+          data: styleTreePaths,
+          getPath: (d: StyleTreePath) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
+          getColor: (d: StyleTreePath): [number, number, number, number] => {
+            const [r, g, b] = getStyleColor(d.toStyle) as [number, number, number];
+            return [r, g, b, treeAlpha];
+          },
+          getWidth: 2,
+          widthUnits: 'pixels' as const,
+          pickable: false,
+          updateTriggers: { getColor: [treeAlpha], getPath: [xExpand] },
+        }),
+      ] : []),
       // Decade grid lines
       new PathLayer({
         id: 'decade-lines',
@@ -830,7 +890,7 @@ export default function InfluenceView({
         },
       })] : []),
     ];
-  }, [dims.width, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, clusterLabelData, visibleMusicianLabels, currentZoom]);
+  }, [dims.width, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, clusterLabelData, visibleMusicianLabels, currentZoom, styleTreePaths]);
 
   // Search
   const searchQuery = search.trim().toLowerCase();
