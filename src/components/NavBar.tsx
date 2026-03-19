@@ -17,36 +17,15 @@ interface NavBarProps {
 }
 
 export default function NavBar({ view, onViewChange, editMode, onEditModeChange, onCreateNew, editModeEnabled, onRandom, onCredits, autoplay, onAutoplayChange, theme, onThemeChange }: NavBarProps) {
-   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
-  const tabClass = (active: boolean) => [
-    'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border transition-all duration-200',
-    active
-      ? 'bg-bg-hover border-accent text-accent shadow-sm'
-      : 'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink',
-  ].join(' ')
-
-  const btnClass = 'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink transition-all duration-200'
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <header className="fixed top-0 left-0 right-0 h-14 z-[100] flex items-center gap-2 sm:gap-4 px-3 sm:px-6 bg-bg/98 backdrop-blur-sm border-b border-border-subtle">
       {/* Brand */}
-      <h1 className="block text-ink text-base font-bold tracking-wide">The Blues Map</h1>
+      <h1 className="block text-ink text-xl font-bold tracking-wide uppercase">The Blues Map</h1>
 
-      {/* View tabs - desktop */}
-      <nav className="hidden sm:flex gap-1 sm:gap-1.5 shrink-0">
-        {([
-          { id: 'influence', label: 'Timeline' },
-          { id: 'map', label: 'Map' },
-        ] as const).map(({ id, label }) => (
-          <button key={id} onClick={() => onViewChange(id)} className={tabClass(view === id)}>
-            {label}
-          </button>
-        ))}
-      </nav>
-
-      {/* View tabs - mobile */}
-      <div className="sm:hidden flex gap-1 ml-auto">
+      {/* View switch - desktop */}
+      <div className="hidden sm:flex bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5">
         {([
           { id: 'influence', label: 'Timeline' },
           { id: 'map', label: 'Map' },
@@ -54,12 +33,23 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
           <button
             key={id}
             onClick={() => onViewChange(id)}
-            className={[
-              'px-3 py-1.5 rounded-lg text-xs font-medium tracking-wide border transition-all duration-200',
-              view === id
-                ? 'bg-bg-hover border-accent text-accent shadow-sm'
-                : 'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink',
-            ].join(' ')}
+            className={`px-3 py-1 rounded text-xs font-semibold tracking-wide uppercase transition-all ${view === id ? 'bg-accent text-bg' : 'text-ink3 hover:text-ink'}`}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {/* View switch - mobile */}
+      <div className="sm:hidden flex bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5 ml-auto">
+        {([
+          { id: 'influence', label: 'Timeline' },
+          { id: 'map', label: 'Map' },
+        ] as const).map(({ id, label }) => (
+          <button
+            key={id}
+            onClick={() => onViewChange(id)}
+            className={`px-2 py-1 rounded text-xs font-semibold tracking-wide uppercase transition-all ${view === id ? 'bg-accent text-bg' : 'text-ink3 hover:text-ink'}`}
           >
             {label}
           </button>
@@ -71,58 +61,56 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
         <button
           onClick={() => onThemeChange(theme === 'light' ? 'dark' : 'light')}
           className={[
-            'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border transition-all duration-200',
-            theme === 'dark'
-              ? 'bg-accent/20 border-accent text-accent shadow-sm'
-              : 'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink',
+            'flex items-center gap-2 px-3 pt-1 pb-1.5 rounded-lg text-ui font-medium tracking-wide border transition-all duration-500 overflow-hidden w-10 hover:w-auto group',
+            'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink',
           ].join(' ')}
           title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
         >
-          <span className="text-ui">{theme === 'dark' ? '☀️' : '🌙'}</span>
-          <span className="hidden sm:inline">{theme === 'dark' ? 'Light' : 'Dark'}</span>
+          <span className="text-ui text-accent shrink-0">☀</span>
+          <span className="hidden sm:inline opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto group-hover:ml-2 transition-all duration-500 whitespace-nowrap">
+            {theme === 'dark' ? 'Light mode' : 'Dark mode'}
+          </span>
         </button>
         <button
           onClick={() => onAutoplayChange(!autoplay)}
           className={[
-            'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border transition-all duration-200',
-            autoplay
-              ? 'bg-accent/20 border-accent text-accent shadow-sm'
-              : 'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink',
+            'flex items-center gap-2 px-3 pt-1 pb-1.5 rounded-lg text-ui font-medium tracking-wide border transition-all duration-500 overflow-hidden w-10 hover:w-auto group',
+            'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink',
           ].join(' ')}
           title={autoplay ? 'Autoplay enabled' : 'Autoplay disabled'}
         >
-          <span className="text-ui">{autoplay ? '⏸' : '▶'}</span>
-          <span className="hidden sm:inline">{autoplay ? 'Disable Autoplay' : 'Enable Autoplay'}</span>
+          <span className="text-ui text-accent shrink-0">{autoplay ? '⏸' : '▶'}</span>
+          <span className="hidden sm:inline opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto group-hover:ml-2 transition-all duration-500 whitespace-nowrap">
+            {autoplay ? 'No autoplay' : 'Autoplay'}
+          </span>
         </button>
-        <button onClick={onRandom} className={btnClass} title="Random musician">
-          <span className="text-ui">⚄</span>
-          <span className="hidden sm:inline">Random</span>
+        <button onClick={onRandom} className="flex items-center gap-2 px-3 pt-1 pb-1.5 rounded-lg text-ui font-medium tracking-wide border transition-all duration-500 overflow-hidden w-10 hover:w-auto bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink group" title="Random musician">
+          <span className="text-ui text-accent shrink-0">⚄</span>
+          <span className="hidden sm:inline opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto group-hover:ml-2 transition-all duration-500 whitespace-nowrap">Random</span>
         </button>
-        <button onClick={onCredits} className={btnClass} title="Credits & Legal">
-          <span className="text-ui">©</span>
-          <span className="hidden sm:inline">Credits</span>
+        <button onClick={onCredits} className="flex items-center gap-2 px-3 pt-1 pb-1.5 rounded-lg text-ui font-medium tracking-wide border transition-all duration-500 overflow-hidden w-10 hover:w-auto bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink group" title="Credits & Legal">
+          <span className="text-ui text-accent shrink-0">©</span>
+          <span className="hidden sm:inline opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto group-hover:ml-2 transition-all duration-500 whitespace-nowrap">Credits</span>
         </button>
         {editModeEnabled && editMode && (
           <button
             onClick={onCreateNew}
-            className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border bg-accent/20 border-accent text-accent shadow-sm"
+            className="flex items-center gap-2 px-3 pt-1 pb-1.5 rounded-lg text-ui font-medium tracking-wide border transition-all duration-500 overflow-hidden w-10 hover:w-auto bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink group"
           >
-            <span className="text-ui">+</span>
-            <span className="hidden sm:inline">New Musician</span>
+            <span className="text-ui text-accent shrink-0">+</span>
+            <span className="hidden sm:inline opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto group-hover:ml-2 transition-all duration-500 whitespace-nowrap">New Musician</span>
           </button>
         )}
         {editModeEnabled && (
           <button
             onClick={() => onEditModeChange(!editMode)}
             className={[
-              'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border transition-all duration-200',
-              editMode
-                ? 'bg-accent/20 border-accent text-accent shadow-sm'
-                : 'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink',
+              'flex items-center gap-2 px-3 pt-1 pb-1.5 rounded-lg text-ui font-medium tracking-wide border transition-all duration-500 overflow-hidden w-10 hover:w-auto',
+              'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink group',
             ].join(' ')}
           >
-            <span className="text-ui">{editMode ? '✓' : '✎'}</span>
-            <span className="hidden sm:inline">{editMode ? 'Done' : 'Edit'}</span>
+            <span className="text-ui text-accent shrink-0">{editMode ? '✓' : '✎'}</span>
+            <span className="hidden sm:inline opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto group-hover:ml-2 transition-all duration-500 whitespace-nowrap">{editMode ? 'Done' : 'Edit'}</span>
           </button>
         )}
         <p className="hidden md:block text-label text-ink3 font-medium">
@@ -156,37 +144,37 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
           <div className="fixed top-14 right-0 sm:right-4 w-64 max-w-[calc(100vw-1rem)] bg-bg border border-border-subtle rounded-b-lg shadow-xl z-50 flex flex-col">
             <div className="p-2 flex flex-col gap-1">
               <button
-                 onClick={() => { onRandom(); setMobileMenuOpen(false) }}
-                 className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
-               >
-                 <span className="text-lg">⚄</span>
-                 <span className="text-sm">Random Musician</span>
-               </button>
-               <button
-                 onClick={() => { onThemeChange(theme === 'light' ? 'dark' : 'light'); setMobileMenuOpen(false) }}
-                 className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
-               >
-                 <span className="text-lg">{theme === 'dark' ? '☀️' : '🌙'}</span>
-                 <span className="text-sm">{theme === 'dark' ? 'Light Mode' : 'Dark Mode'}</span>
-               </button>
-               <button
-                 onClick={() => { onAutoplayChange(!autoplay); setMobileMenuOpen(false) }}
-                 className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
-               >
-                 <span className="text-lg">{autoplay ? '⏸' : '▶'}</span>
-                 <span className="text-sm">{autoplay ? 'Disable Autoplay' : 'Enable Autoplay'}</span>
-               </button>
+                onClick={() => { onRandom(); setMobileMenuOpen(false) }}
+                className="flex items-center gap-3 px-3 pt-1 pb-1.5.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
+              >
+                <span className="text-lg text-accent">⚄</span>
+                <span className="text-sm">Random Musician</span>
+              </button>
+              <button
+                onClick={() => { onThemeChange(theme === 'light' ? 'dark' : 'light'); setMobileMenuOpen(false) }}
+                className="flex items-center gap-3 px-3 pt-1 pb-1.5.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
+              >
+                <span className="text-lg text-accent">☀</span>
+                <span className="text-sm">Light/Dark Mode</span>
+              </button>
+              <button
+                onClick={() => { onAutoplayChange(!autoplay); setMobileMenuOpen(false) }}
+                className="flex items-center gap-3 px-3 pt-1 pb-1.5.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
+              >
+                <span className="text-lg text-accent">{autoplay ? '⏸' : '▶'}</span>
+                <span className="text-sm">{autoplay ? 'Disable Autoplay' : 'Enable Autoplay'}</span>
+              </button>
               <button
                 onClick={() => { onCredits(); setMobileMenuOpen(false) }}
-                className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
+                className="flex items-center gap-3 px-3 pt-1 pb-1.5.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
               >
-                <span className="text-lg">©</span>
+                <span className="text-lg text-accent">©</span>
                 <span className="text-sm">Credits</span>
               </button>
               {editModeEnabled && editMode && (
                 <button
                   onClick={() => { onCreateNew(); setMobileMenuOpen(false) }}
-                  className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-accent hover:bg-bg-hover transition-colors text-left"
+                  className="flex items-center gap-3 px-3 pt-1 pb-1.5.5 rounded-lg text-accent hover:bg-bg-hover transition-colors text-left"
                 >
                   <span className="text-lg">+</span>
                   <span className="text-sm">New Musician</span>
@@ -195,7 +183,16 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
               {editModeEnabled && (
                 <button
                   onClick={() => { onEditModeChange(!editMode); setMobileMenuOpen(false) }}
-                  className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
+                  className="flex items-center gap-3 px-3 pt-1 pb-1.5.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
+                >
+                  <span className="text-lg text-accent">{editMode ? '✓' : '✎'}</span>
+                  <span className="text-sm">{editMode ? 'Done' : 'Edit'}</span>
+                </button>
+              )}
+              {editModeEnabled && (
+                <button
+                  onClick={() => { onEditModeChange(!editMode); setMobileMenuOpen(false) }}
+                  className="flex items-center gap-3 px-3 pt-1 pb-1.5.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
                 >
                   <span className="text-lg">{editMode ? '✓' : '✎'}</span>
                   <span className="text-sm">{editMode ? 'Done Editing' : 'Edit Mode'}</span>

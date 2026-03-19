@@ -115,7 +115,6 @@ export default function FiltersPanel({
                 type="checkbox"
                 checked={showFavoritesOnly}
                 onChange={(e) => onFavoritesOnlyChange(e.target.checked)}
-                className="w-4 h-4 rounded border-border-subtle bg-bg-subtle text-accent focus:ring-accent focus:ring-offset-0"
               />
               <span className="text-label text-ink3">Show favorites only</span>
             </div>

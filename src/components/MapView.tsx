@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import DeckGL from '@deck.gl/react';
 import { ScatterplotLayer, ArcLayer, TextLayer } from '@deck.gl/layers';
 
@@ -7,6 +7,7 @@ import Map from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Musician } from '../types';
 import { getStyleColor, getStyleHex } from '../utils/colors';
+import { getStyleAbbreviation } from '../utils/layout';
 import SearchInput from './SearchInput';
 import BluesStyleLegend from './BluesStyleLegend';
 import { useAtomValue } from 'jotai';
@@ -118,7 +119,7 @@ function MusicianSidebar({
   }, [musicians, searchQuery, styleFilter, showFavoritesOnly, filterListId, favorites, favoritesMap]);
 
   return (
-    <div className="absolute left-0 top-0 bottom-0 w-80 bg-bg/85 backdrop-blur-sm flex flex-col z-10 shadow-2xl border-r border-border-subtle">
+    <div className="absolute left-0 top-0 bottom-0 px-4 pt-4 w-80 bg-bg/85 backdrop-blur-sm flex flex-col z-10 shadow-2xl border-r border-border-subtle">
       {/* Header */}
       {/* Search */}
       <div className="mb-3">
@@ -138,7 +139,6 @@ function MusicianSidebar({
               id="map-favorites-filter"
               checked={showFavoritesOnly}
               onChange={(e) => setShowFavoritesOnly(e.target.checked)}
-              className="w-4 h-4 rounded border-border-subtle bg-bg-subtle text-accent focus:ring-accent focus:ring-offset-0"
             />
             <label htmlFor="map-favorites-filter" className="text-label text-ink3 cursor-pointer">
               Show favorites only
@@ -256,7 +256,7 @@ function MusicianSidebar({
                           border: `1px solid rgba(${r},${g},${b},0.25)`,
                         }}
                       >
-                        {musician.bluesStyle}
+                        {getStyleAbbreviation(musician.bluesStyle)}
                       </span>
                       <span className="text-xs text-ink3 truncate">{musician.birthPlace}</span>
                     </div>
@@ -314,6 +314,22 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
   const [listHovered, setListHovered] = useState<string | null>(null);
   const [viewState, setViewState] = useState<MapViewState>(INITIAL_VIEW_STATE);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // Zoom to selected musician
+  useEffect(() => {
+    if (selectedId) {
+      const musician = completeMusicians.find((m) => m.id === selectedId);
+      if (musician) {
+        setViewState({
+          ...viewState,
+          longitude: musician.birthCoords[0],
+          latitude: musician.birthCoords[1],
+          zoom: 6,
+          transitionDuration: 1500,
+        });
+      }
+    }
+  }, [selectedId, completeMusicians]);
 
   const spentPlaces = useMemo<SpentFlat[]>(
     () =>
@@ -496,10 +512,6 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
           musicians={completeMusicians}
           onSelect={(m) => {
             onSelect(m);
-
-            // Zoom to musician's birth place on map
-
-
             setSidebarOpen(false);
           }}
           onHover={setListHovered}
@@ -519,11 +531,25 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
           layers={layers}
           getCursor={({ isHovering }: { isHovering: boolean }) => (isHovering ? 'pointer' : 'grab')}
         >
-          <Map mapStyle={MAP_STYLES[theme]} />
+          <Map
+            mapStyle={MAP_STYLES[theme]}
+            onLoad={(evt) => {
+              // Darken the land on light mode
+              if (theme === 'light') {
+                const map = evt.target;
+                const layers = map.getStyle().layers;
+                layers?.forEach((layer: { type?: string; id?: string }) => {
+                  if (layer.type === 'fill' && layer.id?.includes('land')) {
+                    map.setPaintProperty(layer.id, 'fill-color', '#c8c5c4');
+                  }
+                });
+              }
+            }}
+          />
         </DeckGL>
 
         {/* Legend */}
-        <div className="absolute bottom-6 right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none">
+        <div className="absolute bottom-12 right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none">
           <p className="text-2xs text-accent tracking-widest uppercase mb-1">Map Key</p>
           {[
             { label: 'Birth place', el: <span className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" /> },

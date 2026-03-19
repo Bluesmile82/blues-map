@@ -610,11 +610,11 @@ export default function InfluenceView({
         id: 'decade-lines',
         data: tickLines,
         getPath: (d) => d.path,
-        getColor: (): [number, number, number, number] => [255, 255, 255, 40],
+        getColor: (): [number, number, number, number] => theme === 'dark' ? [255, 255, 255, 40] : [74, 143, 166, 40],
         getWidth: 1,
         widthUnits: 'pixels' as const,
         pickable: false,
-        updateTriggers: { getPath: [xExpand] },
+        updateTriggers: { getColor: [theme], getPath: [xExpand] },
       }),
       // Musician circles (filled background)
       new ScatterplotLayer({
@@ -632,7 +632,8 @@ export default function InfluenceView({
         },
         getFillColor: (d): [number, number, number, number] => {
           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
-          const dimmed = currentZoom > CLUSTER_DETAILS_ZOOM && effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id);
+          const styleMatch = !hoveredStyle || d.musician.bluesStyle === hoveredStyle;
+          const dimmed = (currentZoom > CLUSTER_DETAILS_ZOOM && effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id)) || !styleMatch;
           const isSelected = d.musician.id === selectedId;
           if (dimmed) return [r, g, b, 100];
           if (isSelected) return [r, g, b, 255];
@@ -652,7 +653,7 @@ export default function InfluenceView({
         updateTriggers: {
           getPosition: [xExpand, interpolatedPositions],
           getRadius: [hovered, cappedRadius],
-          getFillColor: [effectiveRelatedIds, selectedId, hovered],
+          getFillColor: [effectiveRelatedIds, selectedId, hovered, hoveredStyle],
           getLineColor: [selectedId, hovered],
           data: [currentZoom],
         },
@@ -734,7 +735,7 @@ export default function InfluenceView({
           ? playedWithEdges.filter((e) => !effectiveRelatedIds.has(e.sourceId) || !effectiveRelatedIds.has(e.targetId))
           : playedWithEdges,
         getPath: (d) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
-        getColor: (): [number, number, number, number] => theme === 'dark' ? [255, 255, 255, effectiveRelatedIds ? 15 : 10] : [0, 0, 0, effectiveRelatedIds ? 25 : 20],
+        getColor: (): [number, number, number, number] => theme === 'dark' ? [255, 255, 255, effectiveRelatedIds ? 8 : 5] : [0, 0, 0, effectiveRelatedIds ? 12 : 8],
         getWidth: 1,
         widthUnits: 'pixels' as const,
         pickable: false,
@@ -779,14 +780,15 @@ export default function InfluenceView({
         getColor: (d): [number, number, number, number] => {
           const isSelected = d.musician.id === selectedId;
           const isHovered = d.musician.id === hovered;
-          const dimmed = currentZoom < CLUSTER_DETAILS_ZOOM && effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id) || !(isHovered || isSelected);
+          const styleMatch = !hoveredStyle || d.musician.bluesStyle === hoveredStyle;
+          const dimmed = currentZoom < CLUSTER_DETAILS_ZOOM && effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id) || !(isHovered || isSelected) || !styleMatch;
           if (dimmed) return [255, 255, 255, 100];
           return [255, 255, 255, 255];
         },
         updateTriggers: {
           getPosition: [xExpand, interpolatedPositions],
           getSize: [hovered, cappedIconSize],
-          getColor: [effectiveRelatedIds],
+          getColor: [effectiveRelatedIds, hoveredStyle],
           data: [currentZoom],
         },
         transitions: {
@@ -842,8 +844,10 @@ export default function InfluenceView({
         getColor: (d): [number, number, number, number] => {
           const isSelected = d.musician.id === selectedId;
           const isHovered = d.musician.id === hovered;
+          const styleMatch = !hoveredStyle || d.musician.bluesStyle === hoveredStyle;
           if (isSelected) return [255, 255, 225, 255];
           if (isHovered) return [255, 255, 225, 255];
+          if (!styleMatch) return [255, 255, 255, 80];
           return [255, 255, 255, effectiveRelatedIds ? 255 : 140];
         },
         getTextAnchor: 'middle',
@@ -858,7 +862,7 @@ export default function InfluenceView({
         updateTriggers: {
           getPosition: [hovered, xExpand, interpolatedPositions],
           getSize: [cappedTextSize],
-          getColor: [selectedId, hovered, effectiveRelatedIds],
+          getColor: [selectedId, hovered, effectiveRelatedIds, hoveredStyle],
           data: [visibleMusicianLabels],
         },
       }),
@@ -996,7 +1000,7 @@ export default function InfluenceView({
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-full overflow-hidden bg-bg select-none"
+      className="relative w-full h-full overflow-hidden bg-bg-elevated select-none"
       style={{ touchAction: 'none' }}
     >
       {deckVS !== null && (
@@ -1118,7 +1122,6 @@ export default function InfluenceView({
                         type="checkbox"
                         checked={showFavoritesOnly}
                         onChange={(e) => setShowFavoritesOnly(e.target.checked)}
-                        className="w-4 h-4 rounded border-border-subtle bg-bg-subtle text-accent focus:ring-accent focus:ring-offset-0"
                       />
                       <span className="text-label text-ink3">Show favorites only</span>
                     </div>
@@ -1247,7 +1250,6 @@ export default function InfluenceView({
                 type="checkbox"
                 checked={naturalPositions}
                 onChange={(e) => setNaturalPositions(e.target.checked)}
-                className="w-3.5 h-3.5 accent-accent"
               />
               <span className={naturalPositions ? 'text-accent' : 'text-ink3'}>Natural</span>
             </label>

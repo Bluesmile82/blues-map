@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 import type { Musician, Album, SpentTimePlace } from '../types';
 import { STYLE_COLORS, getStyleColor } from '../utils/colors';
+import MusicianSelect from './MusicianSelect';
 
 const BLUES_STYLES = Object.keys(STYLE_COLORS);
 
 interface EditPanelProps {
   musician: Musician;
+  musicians: Musician[];
   onClose: () => void;
   onSave: (updated: Musician) => Promise<void> | void;
   onDelete?: (musicianId: string) => void;
@@ -53,7 +55,7 @@ function validateForm(formData: Musician): ValidationErrors {
   return errors;
 }
 
-export default function EditPanel({ musician, onClose, onSave, onDelete, isNew = false }: EditPanelProps) {
+export default function EditPanel({ musician, musicians, onClose, onSave, onDelete, isNew = false }: EditPanelProps) {
   const [formData, setFormData] = useState<Musician>({ ...musician });
   const [isSaving, setIsSaving] = useState(false);
   const [saveStatus, setSaveStatus] = useState('');
@@ -71,7 +73,11 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
   );
 
   useEffect(() => {
-    setFormData({ ...musician, playedWith: musician.playedWith ?? [] });
+    setFormData({ 
+      ...musician, 
+      playedWith: musician.playedWith ?? [],
+      influencedBy: musician.influencedBy ?? [] 
+    });
     setBirthCoordsRaw(musician.birthCoords.every(c => c === 0) ? '' : musician.birthCoords.join(', '));
     setDeathCoordsRaw(musician.deathCoords ? musician.deathCoords.join(', ') : '');
   }, [musician]);
@@ -533,33 +539,30 @@ export default function EditPanel({ musician, onClose, onSave, onDelete, isNew =
           {/* Influences */}
           <section className="space-y-4">
             <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">Influences</h3>
-            <Field label="Influenced by (musician IDs, comma-separated)" hint="e.g. muddy-waters, howlin-wolf">
-              <textarea
-                value={formData.influences.join(', ')}
-                onChange={(e) => handleChange('influences', e.target.value.split(',').map(s => s.trim()).filter(Boolean))}
-                rows={2}
-                placeholder="muddy-waters, howlin-wolf"
-                className={inputClass() + ' resize-none'}
-              />
-            </Field>
-            <Field label="Influenced (musician IDs, comma-separated)" hint="Musicians this person influenced">
-              <textarea
-                value={formData.influencedBy.join(', ')}
-                onChange={(e) => handleChange('influencedBy', e.target.value.split(',').map(s => s.trim()).filter(Boolean))}
-                rows={2}
-                placeholder="bb-king, eric-clapton"
-                className={inputClass() + ' resize-none'}
-              />
-            </Field>
-            <Field label="Played with (musician IDs, comma-separated)" hint="Musicians this person played with">
-              <textarea
-                value={formData.playedWith.join(', ')}
-                onChange={(e) => handleChange('playedWith', e.target.value.split(',').map(s => s.trim()).filter(Boolean))}
-                rows={2}
-                placeholder="bb-king, buddy-guy"
-                className={inputClass() + ' resize-none'}
-              />
-            </Field>
+            
+            <MusicianSelect
+              label="Influenced by (musicians)"
+              selected={formData.influences}
+              onChange={(ids) => handleChange('influences', ids)}
+              musicians={musicians}
+              placeholder="Select musicians that influenced this artist"
+            />
+            
+            <MusicianSelect
+              label="Influenced (musicians this artist influenced)"
+              selected={formData.influencedBy}
+              onChange={(ids) => handleChange('influencedBy', ids)}
+              musicians={musicians}
+              placeholder="Select musicians influenced by this artist"
+            />
+            
+            <MusicianSelect
+              label="Played with (musicians)"
+              selected={formData.playedWith}
+              onChange={(ids) => handleChange('playedWith', ids)}
+              musicians={musicians}
+              placeholder="Select musicians this artist played with"
+            />
           </section>
 
           {/* Status */}

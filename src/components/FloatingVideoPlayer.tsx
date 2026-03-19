@@ -171,9 +171,21 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
     }
   }, []);
 
-  // Create player once API is ready
+  // Create player once API is ready or when videos change
   useEffect(() => {
     if (!apiReady || videosRef.current.length === 0) return;
+
+    // Destroy existing player before creating a new one
+    if (playerRef.current) {
+      playerRef.current.destroy();
+      playerRef.current = null;
+    }
+
+    // Clear the container to prevent multiple iframes
+    const container = document.getElementById('yt-floating-player');
+    if (container) {
+      container.innerHTML = '';
+    }
 
     playerRef.current = new window.YT.Player('yt-floating-player', {
       videoId: videosRef.current[0].videoId,
@@ -200,10 +212,13 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
     });
 
     return () => {
-      playerRef.current?.destroy();
-      playerRef.current = null;
+      if (playerRef.current) {
+        playerRef.current.stopVideo();
+        playerRef.current.destroy();
+        playerRef.current = null;
+      }
     };
-  }, [apiReady]);
+  }, [apiReady, musicianName, youtubeUrl, albums.length, autoplay]);
 
   // When caller requests a specific video (e.g. album link clicked in panel)
   useEffect(() => {
@@ -214,6 +229,8 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
     const newIndex = idx >= 0 ? idx : 0;
     currentIndexRef.current = newIndex;
     setCurrentIndex(newIndex);
+    // Stop current video before loading new one to prevent echo
+    playerRef.current.stopVideo();
     playerRef.current.loadVideoById(id);
     setIsPlaying(true);
   }, [manualVideoUrl]);
@@ -236,6 +253,8 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
     if (newIndex < 0 || newIndex >= videos.length || !playerRef.current) return;
     currentIndexRef.current = newIndex;
     setCurrentIndex(newIndex);
+    // Stop current video before loading new one
+    playerRef.current.stopVideo();
     playerRef.current.loadVideoById(videos[newIndex].videoId);
     setIsPlaying(true);
   };

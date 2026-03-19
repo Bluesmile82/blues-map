@@ -41,6 +41,14 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
    const [showCredits, setShowCredits] = useState(false);
    const [forceZoomToId, setForceZoomToId] = useState<string | null>(null);
    const [filteredMusicians, setFilteredMusicians] = useState<Musician[]>(musiciansData as unknown as Musician[]);
+   const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+
+   // Listen for window resize to update isMobile
+   useEffect(() => {
+     const handleResize = () => setIsMobile(window.innerWidth < 640);
+     window.addEventListener('resize', handleResize);
+     return () => window.removeEventListener('resize', handleResize);
+   }, []);
 
     // Persist autoplay setting to localStorage
     useEffect(() => {
@@ -218,11 +226,12 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
             manualVideoUrl={manualVideoUrl}
             autoplay={autoplay}
             onVideoClose={() => setShowPlayer(false)}
+            isMobile={isMobile}
           />
         )}
 
-       {videoMusician && showPlayer && !editMode && (
-         <div className="hidden sm:block">
+       {!isMobile && videoMusician && showPlayer && !editMode && (
+         <div className="block">
            <FloatingVideoPlayer
              key={videoMusician.id}
              youtubeUrl={videoMusician.youtubeLink}
@@ -247,6 +256,7 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
       {EDIT_MODE_ENABLED && editing && (
         <EditPanel
           musician={editing}
+          musicians={musicians}
           onClose={() => {
             setEditing(null);
             setSelected(null);
@@ -281,6 +291,7 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
             influencedBy: [],
             playedWith: [],
           }}
+          musicians={musicians}
           onClose={() => setIsCreating(false)}
           onSave={(musician) => handleSave(musician, true)}
           isNew={true}

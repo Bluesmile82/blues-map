@@ -165,6 +165,8 @@ export default function MobileVideoPlayer({
     const newIndex = idx >= 0 ? idx : 0;
     currentIndexRef.current = newIndex;
     setCurrentIndex(newIndex);
+    // Stop current video before loading new one to prevent echo
+    playerRef.current.stopVideo();
     playerRef.current.loadVideoById(id);
     setIsPlaying(true);
   }, [manualVideoUrl]);
@@ -194,6 +196,8 @@ export default function MobileVideoPlayer({
     setCurrentIndex(newIndex);
 
     const videoId = videos[newIndex].videoId;
+    // Stop current video before loading new one
+    playerRef.current.stopVideo();
     playerRef.current.loadVideoById(videoId);
     setIsPlaying(true); // Video starts playing when loaded
   };

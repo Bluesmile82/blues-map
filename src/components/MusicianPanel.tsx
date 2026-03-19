@@ -22,9 +22,10 @@ interface MusicianPanelProps {
   manualVideoUrl?: string | null | undefined;
   autoplay?: boolean;
   onVideoClose?: () => void;
+  isMobile?: boolean;
 }
 
-export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, videoMusician, manualVideoUrl, autoplay, onVideoClose }: MusicianPanelProps) {
+export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, videoMusician, manualVideoUrl, autoplay, onVideoClose, isMobile }: MusicianPanelProps) {
   const completeMusicians = useMemo(() => musicians.filter((m) =>
     m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
   ), [musicians]);
@@ -316,8 +317,8 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
       </div>
 
       {/* Mobile video player - embedded at bottom */}
-      {videoMusician && onVideoClose && (
-        <div className="sm:hidden shrink-0">
+      {isMobile && videoMusician && onVideoClose && (
+        <div className="shrink-0">
           <MobileVideoPlayer
             key={videoMusician.id}
             youtubeUrl={videoMusician.youtubeLink}

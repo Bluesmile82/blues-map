@@ -3985,7 +3985,7 @@
   {
     "id": "kitty-brown",
     "name": "Kitty Brown",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/James_Brown_1996.jpg/500px-James_Brown_1996.jpg",
+    "image": "/images/musicians/kitty-brown.webp",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/James_Brown_1996.jpg/500px-James_Brown_1996.jpg",
     "birthDate": "1899-10-01",
     "birthPlace": "New York City",
@@ -3993,9 +3993,12 @@
       -74.00611111111111,
       40.71277777777778
     ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
+    "deathDate": "1992-01-01",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.00611111111111,
+      40.71277777777778
+    ],
     "spentTimePlaces": [
       {
         "name": "New York",
@@ -4010,13 +4013,15 @@
     "youtubeLink": "https://www.youtube.com/watch?v=5Ti5kxXvE5g",
     "albums": [],
     "description": "Catherine Brown, known as Kitty Brown (October 1899 – after 1990), was an American classic female blues singer.  She sometimes used the pseudonyms Bessie Williams (she was not the only performer to use this name), Jane White, Dixie Gray, Rosa Green, and Mazie Leroy.  Brown was active as a recording artist from 1923 to the mid-1930s.",
-    "activeFrom": "1919",
+    "activeFrom": "1923",
     "influences": [],
     "influencedBy": [
       "pete-mayes"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "leroy-morton"
+    ],
     "source": "https://en.wikipedia.org/wiki/James_Brown"
   },
   {
@@ -4938,7 +4943,7 @@
   {
     "id": "boyd-gilmore",
     "name": "Boyd Gilmore",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Bobby_Rush_1999.jpg/500px-Bobby_Rush_1999.jpg",
+    "image": "/images/musicians/boyd-gilmore.webp",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Bobby_Rush_1999.jpg/500px-Bobby_Rush_1999.jpg",
     "birthDate": "1905-06-01",
     "birthPlace": "Inverness, Mississippi",
@@ -10481,7 +10486,7 @@
   {
     "id": "archie-edwards",
     "name": "Archie Edwards",
-    "image": "/images/musicians/archie-edwards.png",
+    "image": "/images/musicians/archie-edwards.webp",
     "image_source": "",
     "birthDate": "1918-09-04",
     "birthPlace": "Franklin County, Virginia",
@@ -10513,11 +10518,15 @@
     ],
     "instrument": "Guitar, Voice",
     "bluesStyle": "Country Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=DSmbr6uan7Y",
+    "youtubeLink": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOVP.Y6LglV7OA4ZyDcCQEnLCRwEsDh%3Fpid%3DApi&f=1",
     "albums": [
       {
         "name": "Blues 'n Bones (1989)",
-        "youtubeLink": ""
+        "youtubeLink": "https://www.youtube.com/watch?v=T4xHOznTgQU"
+      },
+      {
+        "name": "Original Field Blues Recordings Vol.6",
+        "youtubeLink": "https://www.youtube.com/watch?v=_gXNEdnPIaA"
       }
     ],
     "description": "Archie Edwards was a Piedmont blues guitarist and barber whose shop in Washington, D.C. served as a hub for blues musicians. He played in the 'East Virginia' style influenced by Blind Boy Fuller and maintained a friendship with Mississippi John Hurt. Edwards was a key figure in keeping the Piedmont tradition alive through the folk revival and beyond.",
@@ -12342,7 +12351,7 @@
     ],
     "instrument": "Guitar, Voice",
     "bluesStyle": "Chicago Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=JjjoGDOqefs",
+    "youtubeLink": "https://www.youtube.com/watch?v=tsXjGIsCaG8",
     "albums": [
       {
         "name": "Memorial Album (1965)",
@@ -14345,8 +14354,8 @@
     "youtubeLink": "https://www.youtube.com/watch?v=IYoJ7Qh1Sx8",
     "albums": [
       {
-        "name": "Based on the context provided",
-        "youtubeLink": null
+        "name": "Jazz Blues fusion (1972)",
+        "youtubeLink": "https://www.youtube.com/watch?v=_MK08uAGSAQ"
       }
     ],
     "description": "John Brumwell Mayall  (29 November 1933 – 22 July 2024) was an English blues and rock musician, songwriter and producer.  In the 1960s, he formed John Mayall & the Bluesbreakers, a band that has counted among its members some of the most famous blues and blues rock musicians of all-time.  A singer, guitarist, harmonica player, and keyboardist, he had a career that spanned nearly seven decades, remaining an active musician until his death aged 90.",
@@ -15666,7 +15675,12 @@
     "instrument": "Voice",
     "bluesStyle": "Piedmont Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=TcKz9OnDw14",
-    "albums": [],
+    "albums": [
+      {
+        "name": "Softee Man Blues-full album (1964)",
+        "youtubeLink": "https://www.youtube.com/watch?v=XWb8OtybcWY"
+      }
+    ],
     "description": "Elijah Douglas Quattlebaum  (January 22, 1929  – March 1, 1996), better known as  Doug Quattlebaum, was an American Piedmont blues guitarist, singer and songwriter.  He recorded one single for Gotham Records in 1953, but was offered another opportunity following his employment as an ice cream salesman.",
     "activeFrom": "1949",
     "influences": [],
@@ -22858,7 +22872,7 @@
   {
     "id": "luke-long-gone-miles",
     "name": "Luke \"Long Gone\" Miles",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Chambers_Brothers_1970.JPG/500px-Chambers_Brothers_1970.JPG",
+    "image": "/images/musicians/luke-long-gone-miles.webp",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Chambers_Brothers_1970.JPG/500px-Chambers_Brothers_1970.JPG",
     "birthDate": "1925-05-08",
     "birthPlace": "Caddo Parish, Louisiana",
@@ -22889,7 +22903,7 @@
       }
     ],
     "instrument": "Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=BSO2K62LbWE",
     "albums": [
       {
@@ -23408,7 +23422,7 @@
   {
     "id": "sam-taylor",
     "name": "Sam Taylor",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sam_taylor_lg.jpg/500px-Sam_taylor_lg.jpg",
+    "image": "/images/musicians/sam-taylor.webp",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sam_taylor_lg.jpg/500px-Sam_taylor_lg.jpg",
     "birthDate": "1916-10-09",
     "birthPlace": "Tyler",
@@ -23421,11 +23435,11 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Saxophone, Voice",
-    "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=rWQNWwTeLNY",
+    "bluesStyle": "Jazz",
+    "youtubeLink": "https://www.youtube.com/watch?v=1ob3hjKF3dA",
     "albums": [
       {
-        "name": "サム・テイラー全集～魅惑のテナー・サックス (2008)",
+        "name": "The Bad and the Beautiful ",
         "youtubeLink": "https://www.youtube.com/watch?v=TpY9UG-xWts"
       },
       {
@@ -24625,7 +24639,7 @@
       }
     ],
     "instrument": "Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Piedmont Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=POqr0p9hb-w",
     "albums": [
       {
@@ -26987,7 +27001,7 @@
   {
     "id": "jontavious-willis",
     "name": "Jontavious Willis",
-    "image": "https://jontaviouswillis.com/wp-content/uploads/2021/03/Jontavious-Willis-Blue-1024x1024.jpg",
+    "image": "/images/musicians/jontavious-willis.webp",
     "image_source": "Artist Website",
     "birthDate": "1996",
     "birthPlace": "Greenville, Georgia",
@@ -27016,19 +27030,19 @@
     ],
     "instrument": "Guitar, Vocals",
     "bluesStyle": "Piedmont Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=XdAQE9KWJT8",
+    "youtubeLink": "https://www.youtube.com/watch?v=Ci7aGH5gCUI",
     "albums": [
       {
         "name": "Blue Metamorphosis (2016)",
-        "youtubeLink": "https://www.youtube.com/watch?v=XdAQE9KWJT8"
+        "youtubeLink": "https://www.youtube.com/watch?v=Mf-opoFqo98"
       },
       {
         "name": "Spectacular Class (2019)",
-        "youtubeLink": "https://www.youtube.com/watch?v=ZySgYzh6oQY"
+        "youtubeLink": "https://www.youtube.com/watch?v=vxqkW-ROWio"
       },
       {
         "name": "West Georgia Blues (2022)",
-        "youtubeLink": "https://www.youtube.com/watch?v=T1_AQDGH8ds"
+        "youtubeLink": "https://www.youtube.com/watch?v=HdlOxKrApNM"
       }
     ],
     "description": "Jontavious Willis is a remarkable young blues guitarist and singer who has mastered the Piedmont and country blues styles at an exceptionally young age. Discovered by Taj Mahal as a teenager, Willis plays with an authenticity and depth that belies his years. His fingerpicking guitar work draws from pre-war blues greats like Blind Willie McTell and Curley Weaver. Despite his youth, he has performed at major festivals and shared stages with blues legends, earning recognition as a torchbearer for traditional blues in the modern era.",
@@ -27396,5 +27410,58 @@
       "son-house"
     ],
     "source": "https://en.wikipedia.org/wiki/Tommy_Johnson"
+  },
+  {
+    "id": "sam-taylor-jr",
+    "name": "Sam Taylor Jr.",
+    "image": "/images/musicians/sam-taylor-jr.webp",
+    "image_source": "",
+    "birthDate": "1934-10-25",
+    "birthPlace": "Mobile, Alabama",
+    "birthCoords": [
+      -88.0399,
+      30.6954
+    ],
+    "deathDate": "2009-01-05",
+    "deathPlace": "Islandia ,New York",
+    "deathCoords": [
+      -73.1703,
+      40.8028
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Santa Monica, California",
+        "coords": [
+          -118.491,
+          34.01945
+        ]
+      },
+      {
+        "place": "Riverhead, New York",
+        "coords": [
+          72.66204,
+          40.91704
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=rWQNWwTeLNY&t=38s",
+    "albums": [],
+    "description": "Sam Taylor (October 25, 1934 – January 5, 2009) was an American jump blues musician and songwriter.\nTaylor's more popular recordings included \"Funny\", \"Drinking Straight Tequila\", and \"Voice of the Blues\". He variously worked with Joey Dee and the Starliters, Otis Redding, B.T. Express, The Drifters, Big Joe Turner, T-Bone Walker, Sam & Dave, Tracy Nelson, Mother Earth, and The Isley Brothers. Taylor was inducted to the Long Island Music Hall of Fame.",
+    "activeFrom": "1960",
+    "influences": [],
+    "influencedBy": [
+      "freddie-king",
+      "son-seals",
+      "jimmy-witherspoon"
+    ],
+    "playedWith": [
+      "big-joe-turner",
+      "t-bone-walker"
+    ],
+    "secondaryStyles": [
+      "Chicago Blues"
+    ]
   }
 ]
