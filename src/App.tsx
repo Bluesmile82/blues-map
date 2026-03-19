@@ -202,15 +202,15 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
              }}
            />
          )}
-         {!publicListSlug && (
-           <>
-              {view === 'influence' ? (
-                <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} forceZoomToId={forceZoomToId} onZoomComplete={() => setForceZoomToId(null)} onFilteredMusiciansChange={setFilteredMusicians} theme={theme} />
-              ) : (
-                <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} theme={theme} />
-              )}
-           </>
-         )}
+          {!publicListSlug && (
+            <>
+               {view === 'influence' ? (
+                 <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} forceZoomToId={forceZoomToId} onZoomComplete={() => setForceZoomToId(null)} onFilteredMusiciansChange={setFilteredMusicians} theme={theme} isMobile={isMobile} />
+               ) : (
+                 <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} theme={theme} isMobile={isMobile} />
+               )}
+            </>
+          )}
        </main>
 
         {selected && !editMode && (

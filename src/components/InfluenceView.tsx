@@ -57,6 +57,7 @@ export default function InfluenceView({
   onZoomComplete,
   onFilteredMusiciansChange,
   theme,
+  isMobile,
 }: {
   musicians: Musician[];
   onSelect: (m: Musician) => void;
@@ -67,13 +68,14 @@ export default function InfluenceView({
   onZoomComplete?: () => void;
   onFilteredMusiciansChange?: (musicians: Musician[]) => void;
   theme: 'light' | 'dark';
+  isMobile: boolean;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const dimsRef = useRef({ width: 0, height: 0 });
   const [dims, setDims] = useState({ width: 0, height: 0 });
   const [hovered, setHovered] = useState<string | null>(null);
   const [hoveredStyle, setHoveredStyle] = useState<string | null>(null);
-  const [legendOpen, setLegendOpen] = useState(true);
+  const [legendOpen, setLegendOpen] = useState(!isMobile);
   const [clusterCompression, setClusterCompression] = useState(1.0); // 1.0 = clustered, 0.0 = expanded
   const [groupBy, setGroupBy] = useState<GroupBy>('style');
   const [scatter, setScatter] = useState(true);
@@ -86,7 +88,7 @@ export default function InfluenceView({
   const [yearRange, setYearRange] = useState<[number, number] | null>(null);
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   const [filterListId, setFilterListId] = useState<string | null>(null);
-  const [filtersCollapsed, setFiltersCollapsed] = useState(false);
+  const [filtersCollapsed, setFiltersCollapsed] = useState(isMobile);
 
   const user = useAtomValue(userAtom);
   const lists = useAtomValue(listsAtom);
@@ -1234,34 +1236,36 @@ export default function InfluenceView({
               ))}
             </div>
 
-            <button
-              onClick={() => setScatter((s) => !s)}
-              title={scatter ? 'Switch to sorted lines' : 'Switch to scattered layout'}
-              className={`px-2 sm:px-3 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase transition-all bg-bg/50 border border-border-subtle ${scatter ? 'bg-accent text-bg' : 'text-ink3 hover:text-ink'}`}
-            >
-              Scatter
-            </button>
+            {import.meta.env.DEV && !isMobile && (
+              <>
+                <button
+                  onClick={() => setScatter((s) => !s)}
+                  title={scatter ? 'Switch to sorted lines' : 'Switch to scattered layout'}
+                  className={`px-2 sm:px-3 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase transition-all bg-bg/50 border border-border-subtle ${scatter ? 'bg-accent text-bg' : 'text-ink3 hover:text-ink'}`}
+                >
+                  Scatter
+                </button>
 
-            <label
-              title="Let relationships determine positions freely"
-              className="flex items-center gap-1.5 px-2 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase bg-bg/50 border border-border-subtle cursor-pointer select-none"
-            >
-              <input
-                type="checkbox"
-                checked={naturalPositions}
-                onChange={(e) => setNaturalPositions(e.target.checked)}
-              />
-              <span className={naturalPositions ? 'text-accent' : 'text-ink3'}>Natural</span>
-            </label>
+                <label
+                  title="Let relationships determine positions freely"
+                  className="flex items-center gap-1.5 px-2 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase bg-bg/50 border border-border-subtle cursor-pointer select-none"
+                >
+                  <input
+                    type="checkbox"
+                    checked={naturalPositions}
+                    onChange={(e) => setNaturalPositions(e.target.checked)}
+                  />
+                  <span className={naturalPositions ? 'text-accent' : 'text-ink3'}>Natural</span>
+                </label>
 
-            {import.meta.env.DEV && (
-              <button
-                onClick={() => setShowConfig((s) => !s)}
-                title="Layout configuration"
-                className={`px-2 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase bg-bg/50 border border-border-subtle ${showConfig ? 'bg-accent text-bg' : 'text-ink3 hover:text-ink'}`}
-              >
-                Config
-              </button>
+                <button
+                  onClick={() => setShowConfig((s) => !s)}
+                  title="Layout configuration"
+                  className={`px-2 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase bg-bg/50 border border-border-subtle ${showConfig ? 'bg-accent text-bg' : 'text-ink3 hover:text-ink'}`}
+                >
+                  Config
+                </button>
+              </>
             )}
           </div>
 

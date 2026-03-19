@@ -49,6 +49,7 @@ interface MapViewProps {
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
   theme: 'light' | 'dark';
+  isMobile: boolean;
 }
 
 function MusicianSidebar({
@@ -73,6 +74,7 @@ function MusicianSidebar({
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   const [filterListId, setFilterListId] = useState<string | null>(null);
   const [styleLegendCollapsed, setStyleLegendCollapsed] = useState(true);
+  const [filtersCollapsed, setFiltersCollapsed] = useState(true);
   const [hoveredStyle, setHoveredStyle] = useState<string | null>(null);
 
   const user = useAtomValue(userAtom);
@@ -110,78 +112,99 @@ function MusicianSidebar({
     // Sort decades and musicians within each decade
     const sortedDecades = Object.keys(byDecade).sort((a, b) => parseInt(b) - parseInt(a));
     return {
-      items: sortedDecades.flatMap(decade => [
-        { type: 'decade', decade: parseInt(decade) } as const,
-        ...byDecade[decade].map(m => ({ type: 'musician', musician: m }) as const)
-      ]),
+      items: sortedDecades.flatMap(decadeStr => {
+        const decade = parseInt(decadeStr);
+        return [
+          { type: 'decade', decade } as const,
+          ...byDecade[decade].map((m: Musician) => ({ type: 'musician', musician: m }) as const)
+        ];
+      }),
       count: filtered.length
     };
   }, [musicians, searchQuery, styleFilter, showFavoritesOnly, filterListId, favorites, favoritesMap]);
 
   return (
     <div className="absolute left-0 top-0 bottom-0 px-4 pt-4 w-80 bg-bg/85 backdrop-blur-sm flex flex-col z-10 shadow-2xl border-r border-border-subtle">
-      {/* Header */}
-      {/* Search */}
-      <div className="mb-3">
-        <SearchInput
-          value={searchQuery}
-          onChange={setSearchQuery}
-          placeholder="Search by name or birthplace..."
-        />
-      </div>
+      {/* Filters toggle */}
+      <button
+        onClick={() => setFiltersCollapsed(!filtersCollapsed)}
+        className="flex items-center justify-between w-full text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors mb-3 px-1"
+      >
+        <span>Filters</span>
+        <svg
+          className={`w-3 h-3 opacity-60 transition-transform ${filtersCollapsed ? '' : 'rotate-180'}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
 
-      {/* Favorites filter */}
-      {user && (
-        <div className="mb-3 bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
-          <div className="flex items-center gap-2">
-            <input
-              type="checkbox"
-              id="map-favorites-filter"
-              checked={showFavoritesOnly}
-              onChange={(e) => setShowFavoritesOnly(e.target.checked)}
+      {!filtersCollapsed && (
+        <>
+          {/* Search */}
+          <div className="mb-3">
+            <SearchInput
+              value={searchQuery}
+              onChange={setSearchQuery}
+              placeholder="Search by name or birthplace..."
             />
-            <label htmlFor="map-favorites-filter" className="text-label text-ink3 cursor-pointer">
-              Show favorites only
-            </label>
           </div>
 
-          {/* List selector dropdown */}
-          {showFavoritesOnly && lists.length > 0 && (
-            <div className="flex flex-col gap-1.5">
-              <select
-                value={filterListId ?? ''}
-                onChange={(e) => setFilterListId(e.target.value || null)}
-                className="text-label bg-bg-subtle border border-border-subtle rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
-              >
-                <option value="">All lists</option>
-                {lists.map((list) => {
-                  const count = favoritesMap.get(list.id)?.size ?? 0
-                  return (
-                    <option key={list.id} value={list.id}>
-                      {list.name} ({count})
-                    </option>
-                  )
-                })}
-              </select>
+          {/* Favorites filter */}
+          {user && (
+            <div className="mb-3 bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
+              <div className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  id="map-favorites-filter"
+                  checked={showFavoritesOnly}
+                  onChange={(e) => setShowFavoritesOnly(e.target.checked)}
+                />
+                <label htmlFor="map-favorites-filter" className="text-label text-ink3 cursor-pointer">
+                  Show favorites only
+                </label>
+              </div>
+
+              {/* List selector dropdown */}
+              {showFavoritesOnly && lists.length > 0 && (
+                <div className="flex flex-col gap-1.5">
+                  <select
+                    value={filterListId ?? ''}
+                    onChange={(e) => setFilterListId(e.target.value || null)}
+                    className="text-label bg-bg-subtle border border-border-subtle rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
+                  >
+                    <option value="">All lists</option>
+                    {lists.map((list) => {
+                      const count = favoritesMap.get(list.id)?.size ?? 0
+                      return (
+                        <option key={list.id} value={list.id}>
+                          {list.name} ({count})
+                        </option>
+                      )
+                    })}
+                  </select>
+                </div>
+              )}
             </div>
           )}
 
-        </div>
+          {/* Blues Style Legend - collapsible */}
+          <div className="mb-3 bg-bg/50 border border-border-subtle rounded-lg px-3 py-2">
+            <BluesStyleLegend
+              embedded
+              isOpen={!styleLegendCollapsed}
+              onToggle={() => setStyleLegendCollapsed((c) => !c)}
+              styleFilter={styleFilter}
+              onStyleFilterChange={onStyleFilterChange}
+              onHoverStyle={setHoveredStyle}
+              hoveredStyle={hoveredStyle}
+              availableStyles={[...new Set(musicians.map((m) => m.bluesStyle))]}
+            />
+          </div>
+        </>
       )}
-
-      {/* Blues Style Legend - collapsible */}
-      <div className="mb-3 bg-bg/50 border border-border-subtle rounded-lg px-3 py-2">
-        <BluesStyleLegend
-          embedded
-          isOpen={!styleLegendCollapsed}
-          onToggle={() => setStyleLegendCollapsed((c) => !c)}
-          styleFilter={styleFilter}
-          onStyleFilterChange={onStyleFilterChange}
-          onHoverStyle={setHoveredStyle}
-          hoveredStyle={hoveredStyle}
-          availableStyles={[...new Set(musicians.map((m) => m.bluesStyle))]}
-        />
-      </div>
 
       {/* Musician List */}
       <div className="flex-1 overflow-y-auto px-3 py-3">
@@ -302,7 +325,7 @@ function MusicianSidebar({
   );
 }
 
-export default function MapView({ musicians, onSelect, selectedId, styleFilter, onStyleFilterChange, theme }: MapViewProps) {
+export default function MapView({ musicians, onSelect, selectedId, styleFilter, onStyleFilterChange, theme, isMobile }: MapViewProps) {
   const completeMusicians = useMemo(() => {
     const valid = musicians.filter((m) =>
       m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
@@ -548,9 +571,9 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
           />
         </DeckGL>
 
-        {/* Legend */}
-        <div className="absolute bottom-12 right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none">
-          <p className="text-2xs text-accent tracking-widest uppercase mb-1">Map Key</p>
+      {/* Legend */}
+      <div className={`absolute right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none transition-all ${isMobile ? 'bottom-16' : 'bottom-6'}`}>
+        <p className="text-2xs text-accent tracking-widest uppercase mb-1">Map Key</p>
           {[
             { label: 'Birth place', el: <span className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" /> },
             { label: 'Time spent', el: <span className="w-2.5 h-2.5 rounded-full border-[1.5px] border-accent shrink-0" /> },

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect, useRef } from 'react';
 import type { Musician } from '../types';
 import { getStyleHex, getStyleColor, STYLE_HEX } from '../utils/colors';
 import { getYear } from '../utils/layout';
@@ -26,6 +26,7 @@ interface MusicianPanelProps {
 }
 
 export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, videoMusician, manualVideoUrl, autoplay, onVideoClose, isMobile }: MusicianPanelProps) {
+  const [isMinimized, setIsMinimized] = useState(false);
   const completeMusicians = useMemo(() => musicians.filter((m) =>
     m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
   ), [musicians]);
@@ -44,33 +45,97 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showListsDropdown, setShowListsDropdown] = useState(false);
 
-  return (
-    <div className="fixed top-14 right-0 bottom-0 w-full sm:w-[26rem] bg-bg/50 backdrop-blur-sm flex flex-col overflow-hidden z-50 shadow-2xl">
+  // Handle backdrop click with a small delay to prevent ghost clicks on mobile
+  const [canClose, setCanClose] = useState(false);
+  useEffect(() => {
+    setCanClose(false);
+    setIsMinimized(false);
+    const timer = setTimeout(() => setCanClose(true), 400);
+    return () => clearTimeout(timer);
+  }, [musician.id]);
 
-      {/* ── Close button – always visible, top-right corner ── */}
-      <button
-        onClick={onClose}
-        aria-label="Close panel"
-        className="absolute top-4 right-4 z-50 w-9 h-9 flex items-center justify-center rounded-full bg-bg-hover border border-border text-ink3 text-sm hover:text-ink hover:border-accent hover:bg-bg-deep transition-all duration-200 shadow-sm pointer-events-auto"
+  // Drag to close logic
+  const [dragOffset, setDragOffset] = useState(0);
+  const startY = useRef<number | null>(null);
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    startY.current = e.touches[0].clientY;
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    if (startY.current === null) return;
+    const delta = e.touches[0].clientY - startY.current;
+    if (delta > 0) {
+      setDragOffset(delta);
+    }
+  };
+
+  const onTouchEnd = () => {
+    if (dragOffset > 100) {
+      if (!isMinimized) {
+        setIsMinimized(true);
+      } else {
+        onClose();
+      }
+    } else if (dragOffset < -50 && isMinimized) {
+      setIsMinimized(false);
+    }
+    setDragOffset(0);
+    startY.current = null;
+  };
+
+  const handleToggleMinimize = () => {
+    if (isMobile) setIsMinimized(!isMinimized);
+  };
+
+  return (
+    <>
+      {/* Mobile backdrop */}
+      <div 
+        className={`fixed inset-0 bg-black/40 z-40 animate-fade-in sm:hidden ${(!canClose || isMinimized) ? 'pointer-events-none opacity-0' : 'pointer-events-auto opacity-100'} transition-opacity duration-300`} 
+        onClick={() => canClose && !isMinimized && onClose()}
+      />
+      <div 
+        className={`fixed z-50 bg-bg backdrop-blur-xl flex flex-col overflow-hidden shadow-2xl border-t sm:border-t-0 border-border-subtle transition-all duration-300 ease-out
+          ${isMobile 
+            ? `left-0 right-0 rounded-t-3xl ${isMinimized ? 'bottom-0 h-12' : 'bottom-0 h-[85%]'}` 
+            : 'top-14 right-0 bottom-0 w-full sm:w-[26rem] h-auto rounded-t-none'
+          }`}
+        style={isMobile && !isMinimized ? { transform: `translateY(${dragOffset}px)`, transition: dragOffset === 0 ? 'transform 0.3s ease-out, height 0.3s ease-out' : 'none' } : {}}
+        onTouchStart={isMobile ? onTouchStart : undefined}
+        onTouchMove={isMobile ? onTouchMove : undefined}
+        onTouchEnd={isMobile ? onTouchEnd : undefined}
       >
-        ✕
-      </button>
+        {/* Mobile handle */}
+        <div className="w-full flex justify-center py-2.5 shrink-0 sm:hidden cursor-pointer active:opacity-50 transition-opacity" onClick={handleToggleMinimize}>
+          <div className="w-12 h-1 rounded-full bg-ink3/30" />
+        </div>
+
+        {/* ── Close button – always visible, top-right corner ── */}
+        <button
+          onClick={onClose}
+          aria-label="Close panel"
+          className={`absolute z-50 w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-full bg-bg-hover border border-border text-ink3 text-sm hover:text-ink hover:border-accent hover:bg-bg-deep transition-all duration-200 shadow-sm pointer-events-auto
+            ${isMobile ? 'top-2 right-3' : 'top-4 right-4'}`}
+        >
+          ✕
+        </button>
 
       {/* ── Header ── */}
       <div
-        className="shrink-0 p-4"
+        className="shrink-0 p-3 sm:p-4"
         style={{
           background: `linear-gradient(160deg, rgba(${r},${g},${b},0.15) 0%, rgba(10,8,5,0) 70%)`,
           borderBottom: `1px solid rgba(${r},${g},${b},0.2)`,
         }}
       >
-        <div className="flex gap-5 items-start">
+        <div className="flex gap-3 sm:gap-5 items-start">
           {/* Avatar with colored ring */}
           <div className="relative shrink-0 mt-0.5">
             <img
               src={musician.image}
               alt={musician.name}
-              className="w-[88px] h-[88px] rounded-full object-cover"
+              className="w-[64px] h-[64px] sm:w-[88px] sm:h-[88px] rounded-full object-cover"
               style={{ filter: 'sepia(8%) contrast(1.05)' }}
               onError={(e) => {
                 (e.target as HTMLImageElement).src =
@@ -81,20 +146,20 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
             <div
               className="absolute rounded-full pointer-events-none"
               style={{
-                inset: '-4px',
-                border: `2.5px solid ${hex}`,
+                inset: '-3px sm:-4px',
+                border: `${isMobile ? '2px' : '2.5px'} solid ${hex}`,
                 borderRadius: '50%',
-                boxShadow: `0 0 16px rgba(${r},${g},${b},0.4)`,
+                boxShadow: `0 0 12px rgba(${r},${g},${b},0.4)`,
               }}
             />
           </div>
 
           {/* Name + meta */}
-          <div className="flex-1 min-w-0 pr-12">
-            <h2 className="text-ink font-bold text-[1.25rem] leading-tight mb-2">{musician.name}</h2>
-            <div className="flex flex-wrap items-center gap-1.5 mb-2.5">
+          <div className="flex-1 min-w-0 pr-10 sm:pr-12">
+            <h2 className="text-ink font-bold text-lg sm:text-[1.25rem] leading-tight mb-1.5 sm:mb-2">{musician.name}</h2>
+            <div className="flex flex-wrap items-center gap-1 sm:gap-1.5 mb-2 sm:mb-2.5">
               <span
-                className="inline-block text-label font-semibold tracking-wide uppercase px-3 py-1 rounded-lg"
+                className="inline-block text-3xs sm:text-label font-semibold tracking-wide uppercase px-2 py-0.5 sm:px-3 sm:py-1 rounded-md sm:rounded-lg"
                 style={{
                   color: hex,
                   background: `rgba(${r},${g},${b},0.12)`,
@@ -108,7 +173,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                 return (
                   <span
                     key={style}
-                    className="inline-block text-2xs font-medium tracking-wide uppercase px-2.5 py-0.5 rounded-lg opacity-75"
+                    className="inline-block text-[0.6rem] sm:text-2xs font-medium tracking-wide uppercase px-2 py-0.5 rounded-md opacity-75"
                     style={{
                       color: styleHex,
                       border: `1px solid ${styleHex}55`,
@@ -120,26 +185,26 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                 );
               })}
             </div>
-            <p className="text-ink3 text-ui leading-relaxed font-medium">
+            <p className="text-ink3 text-2xs sm:text-ui leading-relaxed font-medium">
               {musician.birthPlace} · b. {getYear(musician.birthDate)}
               {musician.deathDate
-                ? ` — d. ${getYear(musician.deathDate)}, ${musician.deathPlace}`
-                : ' — still active'}
+                ? ` — d. ${getYear(musician.deathDate)}`
+                : ' — active'}
             </p>
-            <p className="text-ink2 text-ui mt-1">{musician.instrument}</p>
-            {musician.image_source && (
+            <p className="text-ink2 text-2xs sm:text-ui mt-0.5">{musician.instrument}</p>
+            {musician.image_source && !isMobile && (
               <p className="text-ink3 text-xs mt-1 italic">Image: {musician.image_source}</p>
             )}
             {editMode && (
               <button
                 onClick={onEdit}
-                className="mt-2 inline-flex items-center gap-2 px-4 py-2 bg-accent text-bg rounded text-sm font-medium hover:bg-accent/90 transition-colors"
+                className="mt-2 inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-accent text-bg rounded text-xs sm:text-sm font-medium hover:bg-accent/90 transition-colors"
               >
-                ✏️ Edit Musician
+                ✏️ Edit
               </button>
             )}
             {/* Favorite buttons */}
-            <div className="flex items-center gap-2 mt-4">
+            <div className="flex items-center gap-2 mt-3 sm:mt-4">
               <button
                 onClick={() => {
                   if (!user) {
@@ -148,15 +213,15 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                     toggleFavorite(musician.id);
                   }
                 }}
-                className={`flex items-center gap-2 px-4 py-2.5 rounded-lg transition-colors touch-manipulation ${isFavorited(musician.id)
+                className={`flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-lg transition-colors touch-manipulation ${isFavorited(musician.id)
                   ? 'bg-danger-bg text-danger'
                   : 'bg-bg-hover hover:bg-bg-deep active:bg-border-subtle'
                   }`}
               >
-                <svg className="w-5 h-5" fill={isFavorited(musician.id) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5" fill={isFavorited(musician.id) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
-                <span className="text-sm font-medium">{isFavorited(musician.id) ? 'Favorited' : 'Favorite'}</span>
+                <span className="text-xs sm:text-sm font-medium">{isFavorited(musician.id) ? 'Favorited' : 'Favorite'}</span>
               </button>
 
               <button
@@ -167,12 +232,12 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                     setShowListsDropdown(true);
                   }
                 }}
-                className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-bg3/30 hover:bg-bg3/50 active:bg-bg3/70 transition-colors touch-manipulation"
+                className="flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-lg bg-bg3/30 hover:bg-bg3/50 active:bg-bg3/70 transition-colors touch-manipulation"
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                 </svg>
-                <span className="text-sm font-medium">Add to list</span>
+                <span className="text-xs sm:text-sm font-medium">Add to list</span>
               </button>
             </div>
 
@@ -331,7 +396,8 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
         </div>
       )}
     </div>
-  );
+  </>
+);
 }
 
 function Section({

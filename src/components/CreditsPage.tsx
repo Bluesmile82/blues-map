@@ -203,7 +203,9 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
         </section>
 
         <p className="text-center text-xs text-ink3 pb-4">
-          Blues Map — Non-commercial educational project.
+          Non-commercial educational project.
+          Álvaro Leal, 2026.{" "}
+          <a href="https://github.com/bluesmile82" className="text-accent underline">GitHub</a>
         </p>
       </div>
     </div>
