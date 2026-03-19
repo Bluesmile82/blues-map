@@ -69,6 +69,36 @@ export const INSTRUMENT_ORDER = [
   'Horns',
 ];
 
+export const STYLE_ABBREVIATIONS: Record<string, string> = {
+  'Delta Blues': 'DELTA',
+  'Hill Country Blues': 'HILL COUNTRY',
+  'Country Blues': 'COUNTRY',
+  'Boogie Woogie': 'BOOGIE',
+  'Classic Blues': 'CLASSIC',
+  'Vaudeville Blues': 'VAUDEVILLE',
+  'Texas Blues': 'TEXAS',
+  'Swamp Blues': 'SWAMP',
+  'New Orleans Blues': 'NEW ORLEANS',
+  'Memphis Blues': 'MEMPHIS',
+  'Kansas City Blues': 'KANSAS CITY',
+  'Chicago Blues': 'CHICAGO',
+  'Rythm and Blues': 'R&B',
+  'Detroit Blues': 'DETROIT',
+  'Soul Blues': 'SOUL',
+  'West Coast Blues': 'WEST COAST',
+  'Jump Blues': 'JUMP',
+  'Georgia Blues': 'GEORGIA',
+  'Piedmont Blues': 'PIEDMONT',
+  'St. Louis Blues': 'ST. LOUIS',
+  'Jazz': 'JAZZ',
+  'British Blues': 'BRITISH',
+  'Gospel': 'GOSPEL',
+};
+
+export function getStyleAbbreviation(style: string): string {
+  return STYLE_ABBREVIATIONS[style] || style.replace(' Blues', '').toUpperCase();
+}
+
 export function getYear(dateStr: string): number {
   return new Date(dateStr).getFullYear();
 }

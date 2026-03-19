@@ -259,7 +259,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
       )}
 
       <div
-        className='fixed z-50 rounded-lg border-ink3 overflow-hidden'
+        className='fixed z-50 rounded-lg border border-border-subtle overflow-hidden'
         style={{
           left: pos.x,
           top: pos.y,
@@ -283,16 +283,16 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
               <circle cx="7.5" cy="11.5" r="1.5" />
             </svg>
             <div className="flex flex-col min-w-0">
-              <span className="text-white text-sm font-medium truncate">{musicianName}</span>
+              <span className="text-ink text-sm font-medium truncate">{musicianName}</span>
               {currentLabel !== musicianName && (
-                <span className="text-white/50 text-xs truncate">{currentLabel}</span>
+                <span className="text-ink3/70 text-xs truncate">{currentLabel}</span>
               )}
             </div>
           </div>
           <button
             onClick={onClose}
             onMouseDown={(e) => e.stopPropagation()}
-            className="text-white/60 hover:text-white transition-colors text-lg leading-none shrink-0"
+            className="text-ink3/60 hover:text-ink transition-colors text-lg leading-none shrink-0"
             aria-label="Close player"
           >
             ✕
@@ -313,7 +313,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
             <button
               onClick={() => handleNavigate(currentIndex - 1)}
               disabled={currentIndex === 0}
-              className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white disabled:opacity-30 disabled:cursor-not-allowed"
+              className="flex items-center justify-center w-8 h-8 rounded-full bg-bg3/30 hover:bg-bg3/50 transition-colors text-ink disabled:opacity-30 disabled:cursor-not-allowed"
               aria-label="Previous video"
             >
               <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
@@ -324,7 +324,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
 
           <button
             onClick={handlePlayPause}
-            className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white"
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-bg3/30 hover:bg-bg3/50 transition-colors text-ink"
             aria-label={isPlaying ? 'Pause' : 'Play'}
           >
             {isPlaying ? (
@@ -341,7 +341,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
 
           <button
             onClick={handleStop}
-            className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white"
+            className="flex items-center justify-center w-8 h-8 rounded-full bg-bg3/30 hover:bg-bg3/50 transition-colors text-ink"
             aria-label="Stop"
           >
             <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
@@ -353,7 +353,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
             <button
               onClick={() => handleNavigate(currentIndex + 1)}
               disabled={currentIndex === videos.length - 1}
-              className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white disabled:opacity-30 disabled:cursor-not-allowed"
+              className="flex items-center justify-center w-8 h-8 rounded-full bg-bg3/30 hover:bg-bg3/50 transition-colors text-ink disabled:opacity-30 disabled:cursor-not-allowed"
               aria-label="Next video"
             >
               <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
@@ -375,7 +375,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
                   width: i === currentIndex ? 16 : 6,
                   height: 4,
                   borderRadius: 2,
-                  background: i === currentIndex ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.25)',
+                  background: i === currentIndex ? 'rgba(42, 31, 20, 0.8)' : 'rgba(42, 31, 20, 0.25)',
                 }}
                 aria-label={v.label}
               />

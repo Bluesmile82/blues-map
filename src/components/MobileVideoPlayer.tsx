@@ -204,18 +204,18 @@ export default function MobileVideoPlayer({
   const hasMultiple = videos.length > 1;
 
   return (
-    <div className="shrink-0 border-t border-white/10 bg-bg/50 relative" style={{ height: '180px' }}>
+    <div className="shrink-0 border-t border-border-subtle bg-bg/50 relative" style={{ height: '180px' }}>
       {!apiReady && (
         <div className="absolute inset-0 flex items-center justify-center bg-bg/50 z-10">
-          <div className="text-white/50 text-xs">Loading...</div>
+          <div className="text-ink3/50 text-xs">Loading...</div>
         </div>
       )}
       {/* Header */}
-      <div className="flex items-center justify-between px-3 py-2 border-b border-white/5">
+      <div className="flex items-center justify-between px-3 py-2 border-b border-border-subtle">
         <div className="flex items-center gap-2 min-w-0 flex-1">
-          <span className="text-white text-sm font-medium truncate">{musicianName}</span>
+          <span className="text-ink text-sm font-medium truncate">{musicianName}</span>
           {currentLabel !== musicianName && (
-            <span className="text-white/50 text-xs truncate">{currentLabel}</span>
+            <span className="text-ink3/70 text-xs truncate">{currentLabel}</span>
           )}
         </div>
         <div className="flex items-center gap-1">
@@ -224,7 +224,7 @@ export default function MobileVideoPlayer({
               <button
                 onClick={() => handleNavigate(currentIndex - 1)}
                 disabled={currentIndex === 0}
-                className="p-1.5 rounded text-white/70 hover:text-white hover:bg-white/10 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-white/70"
+                className="p-1.5 rounded text-ink3/70 hover:text-ink hover:bg-bg3/30 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-ink3/70"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -233,7 +233,7 @@ export default function MobileVideoPlayer({
               <button
                 onClick={() => handleNavigate(currentIndex + 1)}
                 disabled={currentIndex === videos.length - 1}
-                className="p-1.5 rounded text-white/70 hover:text-white hover:bg-white/10 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-white/70"
+                className="p-1.5 rounded text-ink3/70 hover:text-ink hover:bg-bg3/30 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-ink3/70"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -243,7 +243,7 @@ export default function MobileVideoPlayer({
           )}
           <button
             onClick={onClose}
-            className="p-1.5 rounded text-white/70 hover:text-white hover:bg-white/10"
+            className="p-1.5 rounded text-ink3/70 hover:text-ink hover:bg-bg3/30"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -264,26 +264,26 @@ export default function MobileVideoPlayer({
       </div>
 
       {/* Minimal Controls Overlay */}
-      <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-2 py-1.5 bg-gradient-to-t from-black/80 to-transparent">
+      <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-2 py-1.5 bg-gradient-to-t from-bg/90 to-transparent">
         <div className="flex items-center gap-1">
           {hasMultiple && (
             <>
               <button
                 onClick={() => handleNavigate(currentIndex - 1)}
                 disabled={currentIndex === 0}
-                className="p-1 rounded text-white/90 hover:bg-white/10 disabled:opacity-30"
+                className="p-1 rounded text-ink/90 hover:bg-bg3/30 disabled:opacity-30"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
-              <span className="text-white/70 text-xs px-1">
+              <span className="text-ink/70 text-xs px-1">
                 {currentIndex + 1}/{videos.length}
               </span>
               <button
                 onClick={() => handleNavigate(currentIndex + 1)}
                 disabled={currentIndex === videos.length - 1}
-                className="p-1 rounded text-white/90 hover:bg-white/10 disabled:opacity-30"
+                className="p-1 rounded text-ink/90 hover:bg-bg3/30 disabled:opacity-30"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -295,7 +295,7 @@ export default function MobileVideoPlayer({
 
         <button
           onClick={onClose}
-          className="p-1 rounded text-white/90 hover:bg-white/10"
+          className="p-1 rounded text-ink/90 hover:bg-bg3/30"
           title="Close video"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

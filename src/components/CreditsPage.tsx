@@ -44,11 +44,11 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
     <div className="fixed inset-0 z-[200] bg-bg flex flex-col overflow-hidden animate-slide-in">
       {/* Header */}
       <div className="shrink-0 flex items-center justify-between px-6 py-4 border-b border-border-subtle">
-        <h1 className="text-lg font-bold text-white tracking-wide">Credits &amp; Legal</h1>
+        <h1 className="text-lg font-bold text-ink tracking-wide">Credits &amp; Legal</h1>
         <button
           onClick={onClose}
           aria-label="Close"
-          className="w-9 h-9 flex items-center justify-center rounded-full bg-bg-hover border border-border text-ink3 text-sm hover:text-white hover:border-accent transition-all"
+          className="w-9 h-9 flex items-center justify-center rounded-full bg-bg-hover border border-border text-ink3 text-sm hover:text-ink hover:border-accent transition-all"
         >
           ✕
         </button>
@@ -62,7 +62,7 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
           <h2 className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">Disclaimer</h2>
           <div className="bg-bg-elevated border border-border-subtle rounded-xl p-5 text-sm leading-relaxed text-ink2 space-y-3">
             <p>
-              <strong className="text-white">Blues Map</strong> is a non-commercial, educational fan project
+              <strong className="text-ink">Blues Map</strong> is a non-commercial, educational fan project
               dedicated to documenting the history, geography, and influence networks of blues musicians.
             </p>
             <p>
@@ -97,7 +97,7 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-3 py-2 bg-bg border border-border-subtle rounded-lg text-white text-sm focus:outline-none focus:border-accent transition-colors"
+                  className="w-full px-3 py-2 bg-bg border border-border-subtle rounded-lg text-ink text-sm focus:outline-none focus:border-accent transition-colors"
                   placeholder="Your name"
                 />
               </div>
@@ -112,7 +112,7 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-3 py-2 bg-bg border border-border-subtle rounded-lg text-white text-sm focus:outline-none focus:border-accent transition-colors"
+                  className="w-full px-3 py-2 bg-bg border border-border-subtle rounded-lg text-ink text-sm focus:outline-none focus:border-accent transition-colors"
                   placeholder="your@email.com"
                 />
               </div>
@@ -127,19 +127,19 @@ export default function CreditsPage({ onClose }: CreditsPageProps) {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows={4}
-                  className="w-full px-3 py-2 bg-bg border border-border-subtle rounded-lg text-white text-sm focus:outline-none focus:border-accent transition-colors resize-none"
+                  className="w-full px-3 py-2 bg-bg border border-border-subtle rounded-lg text-ink text-sm focus:outline-none focus:border-accent transition-colors resize-none"
                   placeholder="Describe your inquiry, copyright concern, or suggestion..."
                 />
               </div>
 
               {submitStatus === 'success' && (
-                <div className="p-3 bg-green-900/30 border border-green-700/50 rounded-lg text-green-300 text-xs">
+                <div className="p-3 bg-success-bg border border-success/50 rounded-lg text-success text-xs">
                   ✓ Message sent successfully! We'll get back to you soon.
                 </div>
               )}
 
               {submitStatus === 'error' && (
-                <div className="p-3 bg-red-900/30 border border-red-700/50 rounded-lg text-red-300 text-xs">
+                <div className="p-3 bg-danger-bg border border-danger/50 rounded-lg text-danger text-xs">
                   ✕ Failed to send message. Please try again later.
                 </div>
               )}

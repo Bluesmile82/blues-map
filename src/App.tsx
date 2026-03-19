@@ -15,6 +15,10 @@ const EDIT_MODE_ENABLED = import.meta.env.VITE_ENABLE_EDIT_MODE === 'true';
 export default function App() {
 const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown as Musician[]);
    const [view, setView] = useState<'influence' | 'map'>('influence');
+   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+     const stored = localStorage.getItem('theme');
+     return (stored === 'dark' || stored === 'light') ? stored : 'light';
+   });
    const [publicListSlug, setPublicListSlug] = useState<string | null>(null);
 
    const initialMusician = (() => {
@@ -38,10 +42,20 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
    const [forceZoomToId, setForceZoomToId] = useState<string | null>(null);
    const [filteredMusicians, setFilteredMusicians] = useState<Musician[]>(musiciansData as unknown as Musician[]);
 
-   // Persist autoplay setting to localStorage
-   useEffect(() => {
-     localStorage.setItem('autoplay', String(autoplay));
-   }, [autoplay]);
+    // Persist autoplay setting to localStorage
+    useEffect(() => {
+      localStorage.setItem('autoplay', String(autoplay));
+    }, [autoplay]);
+
+    // Apply theme to HTML element and persist to localStorage
+    useEffect(() => {
+      localStorage.setItem('theme', theme);
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    }, [theme]);
 
    // Persist video player position/size across sessions
    const [videoPlayerPos, setVideoPlayerPos] = useState<{ x: number; y: number } | null>(() => {
@@ -150,18 +164,20 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
 
    return (
      <div className="flex flex-col w-full h-full overflow-hidden">
-       <NavBar
-         view={view}
-         onViewChange={setView}
-         editMode={editMode}
-         onEditModeChange={setEditMode}
-         onCreateNew={handleCreateNew}
-         editModeEnabled={EDIT_MODE_ENABLED}
-         onRandom={handleRandom}
-         onCredits={() => setShowCredits(true)}
-         autoplay={autoplay}
-         onAutoplayChange={setAutoplay}
-       />
+        <NavBar
+          view={view}
+          onViewChange={setView}
+          editMode={editMode}
+          onEditModeChange={setEditMode}
+          onCreateNew={handleCreateNew}
+          editModeEnabled={EDIT_MODE_ENABLED}
+          onRandom={handleRandom}
+          onCredits={() => setShowCredits(true)}
+          autoplay={autoplay}
+          onAutoplayChange={setAutoplay}
+          theme={theme}
+          onThemeChange={setTheme}
+        />
 
        <main className="relative flex-1 mt-14 overflow-hidden">
          {publicListSlug && (
@@ -180,11 +196,11 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
          )}
          {!publicListSlug && (
            <>
-             {view === 'influence' ? (
-               <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} forceZoomToId={forceZoomToId} onZoomComplete={() => setForceZoomToId(null)} onFilteredMusiciansChange={setFilteredMusicians} />
-             ) : (
-               <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} />
-             )}
+              {view === 'influence' ? (
+                <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} forceZoomToId={forceZoomToId} onZoomComplete={() => setForceZoomToId(null)} onFilteredMusiciansChange={setFilteredMusicians} theme={theme} />
+              ) : (
+                <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} theme={theme} />
+              )}
            </>
          )}
        </main>

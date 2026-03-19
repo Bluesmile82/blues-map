@@ -13,7 +13,10 @@ import { useAtomValue } from 'jotai';
 import { isMusicianFavoritedAtom, listsAtom, favoritesMapAtom } from '../atoms/lists';
 import { userAtom } from '../atoms/auth';
 
-const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
+const MAP_STYLES = {
+  light: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
+  dark: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
+};
 
 const INITIAL_VIEW_STATE: MapViewState = {
   longitude: -93,
@@ -44,6 +47,7 @@ interface MapViewProps {
   selectedId: string | null;
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
+  theme: 'light' | 'dark';
 }
 
 function MusicianSidebar({
@@ -114,7 +118,7 @@ function MusicianSidebar({
   }, [musicians, searchQuery, styleFilter, showFavoritesOnly, filterListId, favorites, favoritesMap]);
 
   return (
-    <div className="absolute left-0 top-0 bottom-0 w-80 bg-bg/55 backdrop-blur-sm flex flex-col z-10 shadow-2xl">
+    <div className="absolute left-0 top-0 bottom-0 w-80 bg-bg/85 backdrop-blur-sm flex flex-col z-10 shadow-2xl border-r border-border-subtle">
       {/* Header */}
       {/* Search */}
       <div className="mb-3">
@@ -298,7 +302,7 @@ function MusicianSidebar({
   );
 }
 
-export default function MapView({ musicians, onSelect, selectedId, styleFilter, onStyleFilterChange }: MapViewProps) {
+export default function MapView({ musicians, onSelect, selectedId, styleFilter, onStyleFilterChange, theme }: MapViewProps) {
   const completeMusicians = useMemo(() => {
     const valid = musicians.filter((m) =>
       m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
@@ -455,7 +459,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       getPixelOffset: [0, -32] as [number, number],
       getColor: (d): [number, number, number, number] => {
         const a = !focusId || d.id === focusId ? 220 : 10;
-        return [255, 255, 255, a];
+        return theme === 'dark' ? [255, 255, 255, a] : [0, 0, 0, a];
       },
       getTextAnchor: 'middle' as const,
       fontFamily: 'Georgia, serif',
@@ -515,7 +519,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
           layers={layers}
           getCursor={({ isHovering }: { isHovering: boolean }) => (isHovering ? 'pointer' : 'grab')}
         >
-          <Map mapStyle={MAP_STYLE} />
+          <Map mapStyle={MAP_STYLES[theme]} />
         </DeckGL>
 
         {/* Legend */}

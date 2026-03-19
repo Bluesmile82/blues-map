@@ -12,10 +12,12 @@ interface NavBarProps {
   onCredits: () => void;
   autoplay: boolean;
   onAutoplayChange: (autoplay: boolean) => void;
+  theme: 'light' | 'dark';
+  onThemeChange: (theme: 'light' | 'dark') => void;
 }
 
-export default function NavBar({ view, onViewChange, editMode, onEditModeChange, onCreateNew, editModeEnabled, onRandom, onCredits, autoplay, onAutoplayChange }: NavBarProps) {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+export default function NavBar({ view, onViewChange, editMode, onEditModeChange, onCreateNew, editModeEnabled, onRandom, onCredits, autoplay, onAutoplayChange, theme, onThemeChange }: NavBarProps) {
+   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const tabClass = (active: boolean) => [
     'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border transition-all duration-200',
@@ -66,6 +68,19 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
 
       {/* Desktop controls */}
       <div className="hidden sm:flex ml-auto items-center gap-2 sm:gap-3">
+        <button
+          onClick={() => onThemeChange(theme === 'light' ? 'dark' : 'light')}
+          className={[
+            'flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 rounded-lg text-ui font-medium tracking-wide border transition-all duration-200',
+            theme === 'dark'
+              ? 'bg-accent/20 border-accent text-accent shadow-sm'
+              : 'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink',
+          ].join(' ')}
+          title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+        >
+          <span className="text-ui">{theme === 'dark' ? '☀️' : '🌙'}</span>
+          <span className="hidden sm:inline">{theme === 'dark' ? 'Light' : 'Dark'}</span>
+        </button>
         <button
           onClick={() => onAutoplayChange(!autoplay)}
           className={[
@@ -141,19 +156,26 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
           <div className="fixed top-14 right-0 sm:right-4 w-64 max-w-[calc(100vw-1rem)] bg-bg border border-border-subtle rounded-b-lg shadow-xl z-50 flex flex-col">
             <div className="p-2 flex flex-col gap-1">
               <button
-                onClick={() => { onRandom(); setMobileMenuOpen(false) }}
-                className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
-              >
-                <span className="text-lg">⚄</span>
-                <span className="text-sm">Random Musician</span>
-              </button>
-              <button
-                onClick={() => { onAutoplayChange(!autoplay); setMobileMenuOpen(false) }}
-                className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
-              >
-                <span className="text-lg">{autoplay ? '⏸' : '▶'}</span>
-                <span className="text-sm">{autoplay ? 'Disable Autoplay' : 'Enable Autoplay'}</span>
-              </button>
+                 onClick={() => { onRandom(); setMobileMenuOpen(false) }}
+                 className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
+               >
+                 <span className="text-lg">⚄</span>
+                 <span className="text-sm">Random Musician</span>
+               </button>
+               <button
+                 onClick={() => { onThemeChange(theme === 'light' ? 'dark' : 'light'); setMobileMenuOpen(false) }}
+                 className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
+               >
+                 <span className="text-lg">{theme === 'dark' ? '☀️' : '🌙'}</span>
+                 <span className="text-sm">{theme === 'dark' ? 'Light Mode' : 'Dark Mode'}</span>
+               </button>
+               <button
+                 onClick={() => { onAutoplayChange(!autoplay); setMobileMenuOpen(false) }}
+                 className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
+               >
+                 <span className="text-lg">{autoplay ? '⏸' : '▶'}</span>
+                 <span className="text-sm">{autoplay ? 'Disable Autoplay' : 'Enable Autoplay'}</span>
+               </button>
               <button
                 onClick={() => { onCredits(); setMobileMenuOpen(false) }}
                 className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"

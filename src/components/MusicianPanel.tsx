@@ -166,7 +166,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                     setShowListsDropdown(true);
                   }
                 }}
-                className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-white/10 hover:bg-white/20 active:bg-white/30 transition-colors touch-manipulation"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-bg3/30 hover:bg-bg3/50 active:bg-bg3/70 transition-colors touch-manipulation"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />

@@ -1,40 +1,40 @@
 @import "tailwindcss";
 
 @theme {
-  /* ── Backgrounds ───────────────────────────────────── */
-  --color-bg:          #0a0805;  /* deepest – app bg, navbar */
-  --color-bg2:         #0f0c07;  /* panels, filter backgrounds */
-  --color-bg3:         #141008;  /* elevated surfaces, chips */
-  --color-bg-subtle:   #0f0c07;
-  --color-bg-elevated: #141008;
-  --color-bg-hover:    #1a1208;  /* hover / active backgrounds */
-  --color-bg-deep:     #251a0d;  /* deep hover (close button) */
+  /* ── Light Mode Backgrounds (default) ───────────────────────────────────── */
+  --color-bg:          #d4d1d1;  /* medium gray – app bg, navbar */
+  --color-bg2:         #c9c6c6;  /* panels, filter backgrounds */
+  --color-bg3:         #bebbbb;  /* elevated surfaces, chips */
+  --color-bg-subtle:   #c9c6c6;
+  --color-bg-elevated: #bebbbb;
+  --color-bg-hover:    #b3b0b0;  /* hover backgrounds */
+  --color-bg-deep:     #a8a5a5;  /* deep hover */
 
-  /* ── Borders ───────────────────────────────────────── */
-  --color-border-subtle: #264954;
-  --color-border:        #396E7F;
-  --color-border-hover:  #4c93a9;
+  /* ── Light Mode Borders ───────────────────────────────────────── */
+  --color-border-subtle: #a8a6a6;
+  --color-border:        #9a9999;
+  --color-border-hover:  #8c8b8b;
 
-  /* ── Text ──────────────────────────────────────────── */
-  --color-ink:      #ffffff;
-  --color-ink2:     #E0E9D8;  /* secondary / body text */
-  --color-ink3:     #CBDBBD;  /* muted / metadata */
-  --color-ink-warm: #f0e6d3;  /* warm hover text */
+  /* ── Light Mode Text ──────────────────────────────────────────── */
+  --color-ink:      #0f0f0f;  /* almost black - main text */
+  --color-ink2:     #2a2a2a;  /* secondary body text */
+  --color-ink3:     #5a5858;  /* muted metadata */
+  --color-ink-warm: #3a3838;  /* warm hover text */
 
-  /* ── Accent (steel blue) ──────────────────────────── */
-  --color-accent:  #4c93a9;
-  --color-accent2: #80b6c6;
-  --color-accent3: #9cc6d3;
+  /* ── Light Mode Accent (darker steel blue) ──────────────────────────── */
+  --color-accent:  #2E6B7F;  /* darker for light mode */
+  --color-accent2: #4A8FA6;
+  --color-accent3: #68A9BD;
 
-  /* ── Primary CTA ─────────────────────── */
-  --color-primary:  #4c93a9;
-  --color-primary2: #80b6c6;
+  /* ── Light Mode Primary CTA ─────────────────────── */
+  --color-primary:  #2E6B7F;
+  --color-primary2: #4A8FA6;
 
-  /* ── Status ───────────────────────────────────────── */
-  --color-success:    #4ade80;
-  --color-success-bg: #14230d;
-  --color-danger:     #f87171;
-  --color-danger-bg:  #230d0d;
+  /* ── Light Mode Status ───────────────────────────────────────── */
+  --color-success:    #2d7a3f;  /* darker for light mode */
+  --color-success-bg: #E8F5E9;
+  --color-danger:     #c53030;
+  --color-danger-bg:  #FEE2E2;
 
   /* ── Typography scale ─────────────────────────────── */
   --text-3xs:   0.55rem;   /* ~8.8px  — smallest labels */
@@ -44,6 +44,43 @@
 
   /* ── Font families ────────────────────────────────── */
   --font-serif: Georgia, 'Times New Roman', serif;
+}
+
+/* Dark mode colors - applied when .dark class is present */
+.dark {
+  --color-bg:          #0a0805;  /* deepest – app bg, navbar */
+  --color-bg2:         #0f0c07;  /* panels, filter backgrounds */
+  --color-bg3:         #141008;  /* elevated surfaces, chips */
+  --color-bg-subtle:   #0f0c07;
+  --color-bg-elevated: #141008;
+  --color-bg-hover:    #1a1208;  /* hover / active backgrounds */
+  --color-bg-deep:     #251a0d;  /* deep hover (close button) */
+
+  /* ── Dark Mode Borders ───────────────────────────────────────── */
+  --color-border-subtle: #264954;
+  --color-border:        #396E7F;
+  --color-border-hover:  #4c93a9;
+
+  /* ── Dark Mode Text ──────────────────────────────────────────── */
+  --color-ink:      #ffffff;
+  --color-ink2:     #E0E9D8;  /* secondary / body text */
+  --color-ink3:     #CBDBBD;  /* muted / metadata */
+  --color-ink-warm: #f0e6d3;  /* warm hover text */
+
+  /* ── Dark Mode Accent (steel blue) ──────────────────────────── */
+  --color-accent:  #4c93a9;
+  --color-accent2: #80b6c6;
+  --color-accent3: #9cc6d3;
+
+  /* ── Dark Mode Primary CTA ─────────────────────── */
+  --color-primary:  #4c93a9;
+  --color-primary2: #80b6c6;
+
+  /* ── Dark Mode Status ───────────────────────────────────────── */
+  --color-success:    #4ade80;
+  --color-success-bg: #14230d;
+  --color-danger:     #f87171;
+  --color-danger-bg:  #230d0d;
 }
 
 *, *::before, *::after { box-sizing: border-box; }

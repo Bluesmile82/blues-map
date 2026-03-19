@@ -4,7 +4,7 @@ import { OrthographicView } from '@deck.gl/core';
 import { PathLayer, ScatterplotLayer, TextLayer, IconLayer } from '@deck.gl/layers';
 import type { PickingInfo } from '@deck.gl/core';
 import type { Musician } from '../types';
-import { getStyleColor, getStyleHex, getInstrumentColor, getInstrumentHex } from '../utils/colors';
+import { getStyleColor, getStyleHex } from '../utils/colors';
 import SearchInput from './SearchInput';
 import BluesStyleLegend from './BluesStyleLegend';
 import { useAtomValue } from 'jotai';
@@ -40,10 +40,10 @@ const EXPAND_PX_THRESHOLD = 30;
 const EXPAND_ZOOM_THRESHOLD = Math.log2(EXPAND_PX_THRESHOLD / NODE_RADIUS); // ≈ 1.322
 
 const CLUSTER_ZOOM_START = -1; // Below this: fully clustered
-const CLUSTER_ZOOM_END = 0.1;   // Above this: fully expanded
+const CLUSTER_ZOOM_END = 0.3;   // Above this: fully expanded
 
 const SIDEBAR_PX = 250; // Approximate width of filter sidebar + left margin on sm+ screens
-const CLUSTER_DETAILS_ZOOM = 0.2; // Above this: show musician names and images
+const CLUSTER_DETAILS_ZOOM = 0.3; // Above this: show musician names and images
 
 type DeckVS = { target: [number, number, number]; zoom: number; minZoom: number; maxZoom: number; transitionDuration?: number; transitionEasing?: (t: number) => number };
 
@@ -56,6 +56,7 @@ export default function InfluenceView({
   forceZoomToId,
   onZoomComplete,
   onFilteredMusiciansChange,
+  theme,
 }: {
   musicians: Musician[];
   onSelect: (m: Musician) => void;
@@ -65,6 +66,7 @@ export default function InfluenceView({
   forceZoomToId?: string | null;
   onZoomComplete?: () => void;
   onFilteredMusiciansChange?: (musicians: Musician[]) => void;
+  theme: 'light' | 'dark';
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const dimsRef = useRef({ width: 0, height: 0 });
@@ -309,14 +311,14 @@ export default function InfluenceView({
   }, [positions, clusters, clusterCompression, musicianMap, groupBy]);
 
   const clusterLabelData = useMemo(() => {
-    if (clusterCompression <= 0.5) return [];
+    if (clusterCompression <= 0.1) return [];
     const zoom = deckVS?.zoom ?? 0;
     const xe = Math.max(1, Math.pow(2, Math.max(0, zoom - EXPAND_ZOOM_THRESHOLD)));
     const scale = Math.pow(2, zoom);
     const zoneByStyle = Object.fromEntries(styleZones.map((z) => [z.style, z]));
 
     // Build candidates with estimated screen bounds
-    const FONT_PX = 20; // matches getSize in the layer
+    const FONT_PX = 12; // matches getSize in the layer
     const CHAR_W = FONT_PX * 0.6; // approximate character width
     const PAD_X = 12; // backgroundPadding horizontal
     const PAD_Y = 12; // backgroundPadding vertical
@@ -597,7 +599,7 @@ export default function InfluenceView({
             const [r, g, b] = getStyleColor(d.toStyle) as [number, number, number];
             return [r, g, b, treeAlpha];
           },
-          getWidth: 2,
+          getWidth: 4,
           widthUnits: 'pixels' as const,
           pickable: false,
           updateTriggers: { getColor: [treeAlpha], getPath: [xExpand] },
@@ -636,13 +638,8 @@ export default function InfluenceView({
           if (isSelected) return [r, g, b, 255];
           return [r, g, b, 255];
         },
-        getLineColor: (d): [number, number, number, number] => {
-          const [r, g, b] = getStyleColor(d.musician.bluesStyle);
-          const isSelected = d.musician.id === selectedId;
-          const isHovered = d.musician.id === hovered;
-          if (isSelected) return [255, 255, 255, 255];
-          if (isHovered) return [r, g, b, 255];
-          return [r, g, b, 180];
+        getLineColor: (): [number, number, number, number] => {
+          return [0, 0, 0, 0];
         },
         lineWidthMinPixels: 2,
         lineWidthMaxPixels: 4,
@@ -737,7 +734,7 @@ export default function InfluenceView({
           ? playedWithEdges.filter((e) => !effectiveRelatedIds.has(e.sourceId) || !effectiveRelatedIds.has(e.targetId))
           : playedWithEdges,
         getPath: (d) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
-        getColor: (): [number, number, number, number] => [255, 255, 255, effectiveRelatedIds ? 15 : 10],
+        getColor: (): [number, number, number, number] => theme === 'dark' ? [255, 255, 255, effectiveRelatedIds ? 15 : 10] : [0, 0, 0, effectiveRelatedIds ? 25 : 20],
         getWidth: 1,
         widthUnits: 'pixels' as const,
         pickable: false,
@@ -753,7 +750,7 @@ export default function InfluenceView({
               : effectiveRelatedIds.has(e.sourceId) && effectiveRelatedIds.has(e.targetId)
           ),
           getPath: (d) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
-          getColor: (): [number, number, number, number] => [255, 255, 255, 200],
+          getColor: (): [number, number, number, number] => theme === 'dark' ? [255, 255, 255, 200] : [0, 0, 0, 180],
           getWidth: 2,
           widthUnits: 'pixels' as const,
           pickable: false,
@@ -883,7 +880,7 @@ export default function InfluenceView({
           return [r, g, b, 180] as [number, number, number, number];
         },
         getSize: () => 20,
-        getColor: () => [255, 255, 255, 255],
+        getColor: () => theme === 'dark' ? [255, 255, 255, 255] : [60, 60, 60, 255],
         getTextAnchor: 'middle',
         getAlignmentBaseline: 'center',
         fontWeight: '700',
@@ -1023,7 +1020,7 @@ export default function InfluenceView({
               return (
                 <div
                   key={year}
-                  className='absolute left-1 transform -translate-y-1/2 text-xl text-white bg-bg/60 backdrop-blur-xl p-1 rounded pointer-events-auto select-none'
+                  className='absolute left-1 transform -translate-y-1/2 text-xl text-ink bg-bg/60 backdrop-blur-xl p-1 rounded pointer-events-auto select-none'
                   style={{
                     top: screenY,
                     whiteSpace: 'nowrap',

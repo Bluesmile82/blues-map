@@ -6773,7 +6773,7 @@
       }
     ],
     "description": "James Burke \"St.  Louis Jimmy\" Oden (June 26, 1903 – December 30, 1977) was an American blues musician and songwriter.",
-    "activeFrom": "1969",
+    "activeFrom": "1930",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
@@ -10911,7 +10911,7 @@
       }
     ],
     "instrument": "Piano, Voice",
-    "bluesStyle": "East Coast Blues",
+    "bluesStyle": "Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=gjGuuBs7dA4",
     "albums": [
       {
@@ -20079,7 +20079,7 @@
       }
     ],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Country Blues",
+    "bluesStyle": "Piedmont Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=nttmTEXv2X0",
     "albums": [
       {
@@ -20099,7 +20099,8 @@
       "taj-mahal",
       "kenny-wayne-shepherd"
     ],
-    "source": "https://en.wikipedia.org/wiki/Cootie_Stark"
+    "source": "https://en.wikipedia.org/wiki/Cootie_Stark",
+    "secondaryStyles": []
   },
   {
     "id": "angela-strehli",
@@ -21647,7 +21648,7 @@
       }
     ],
     "instrument": "Piano, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Boogie Woogie",
     "youtubeLink": "https://www.youtube.com/watch?v=mwHhjBHH1R4",
     "albums": [
       {
@@ -23368,8 +23369,8 @@
   {
     "id": "baby-tate",
     "name": "Baby Tate",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Grady_Tate_-_American_jazz_drummer.png",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Grady_Tate_-_American_jazz_drummer.png",
+    "image": "/images/musicians/baby-tate.webp",
+    "image_source": "wirz.de",
     "birthDate": "1919-01-28",
     "birthPlace": "Georgia",
     "birthCoords": [
@@ -23381,12 +23382,12 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=uWVNhuAfOXE",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=8f-YL02pumY",
     "albums": [
       {
         "name": "Baby Tate (1961)",
-        "youtubeLink": "https://www.youtube.com/watch?v=uWVNhuAfOXE"
+        "youtubeLink": "https://www.youtube.com/watch?v=Krn9yEMmh_o"
       }
     ],
     "description": "Baby Tate (born Bessie Mae Tate, January 28, 1919 – August 21, 1974) was an American Piedmont blues singer and guitarist. She performed and recorded in the 1960s folk blues revival, showcasing traditional country blues style.",
@@ -27224,7 +27225,7 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "Gulf Coast Blues",
+    "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=WVZqHO7rLiY",
     "albums": [
       {

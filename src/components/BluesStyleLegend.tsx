@@ -55,10 +55,10 @@ export default function BluesStyleLegend({
             return (
               <div
                 key={style}
-                className="flex items-center gap-2 px-3 py-1.5 cursor-pointer transition-colors hover:bg-bg-hover"
+                className={`flex items-center gap-2 px-3 py-1.5 cursor-pointer transition-colors hover:bg-bg-hover ${isActive || isSelected ? '' : 'text-ink2'}`}
                 style={{
                   background: isActive || isSelected ? `rgba(${r},${g},${b},0.15)` : undefined,
-                  color: isActive || isSelected ? `rgb(${r},${g},${b})` : 'rgba(255,255,255,0.65)',
+                  color: isActive || isSelected ? `rgb(${r},${g},${b})` : undefined,
                 }}
                 onMouseEnter={() => onHoverStyle(style)}
                 onMouseLeave={() => onHoverStyle(null)}
