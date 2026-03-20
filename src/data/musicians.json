@@ -5740,7 +5740,7 @@
     ],
     "instrument": "Accordion, Guitar, Voice",
     "bluesStyle": "Country Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=miH7m3Q2YLE",
+    "youtubeLink": "https://www.youtube.com/watch?v=YTr3AWxSsIY",
     "albums": [
       {
         "name": "Rock Island Line: Huddie Ledbetter Memorial Album, Volume 2 (1953)",
@@ -8090,7 +8090,7 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "Country Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=kB9O6HnptVU",
+    "youtubeLink": "https://www.youtube.com/watch?v=o3BoLfRYCV4",
     "albums": [
       {
         "name": "Blues Before Sunrise (1962)",
@@ -10517,7 +10517,7 @@
       }
     ],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Country Blues",
+    "bluesStyle": "Piedmont Blues",
     "youtubeLink": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOVP.Y6LglV7OA4ZyDcCQEnLCRwEsDh%3Fpid%3DApi&f=1",
     "albums": [
       {
@@ -11214,7 +11214,7 @@
   {
     "id": "lc-green",
     "name": "L.C. Green",
-    "image": "/images/musicians/lc-green.png",
+    "image": "/images/musicians/lc-green.webp",
     "image_source": "",
     "birthDate": "1921-10-23",
     "birthPlace": "Minter City, Mississippi",
@@ -11245,19 +11245,30 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=9aYwRA6MKpM",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=pkRYWqz89Tk&list=RDpkRYWqz89Tk&start_radio=1",
     "albums": [
       {
         "name": "L.C. Green: Detroit Blues Master (1960-1980) (Document Records, 1996)",
-        "youtubeLink": "https://www.youtube.com/watch?v=9aYwRA6MKpM"
+        "youtubeLink": "https://www.youtube.com/watch?v=1tSWx3dubfs"
+      },
+      {
+        "name": "Going back to the river",
+        "youtubeLink": "https://www.youtube.com/watch?v=nyIj4vznChU&list=RDnyIj4vznChU&start_radio=1"
+      },
+      {
+        "name": "Come back sugar mama (1954)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Bq7vxg9cFgk&list=RDBq7vxg9cFgk&start_radio=1"
       }
     ],
     "description": "L.C. Green (October 23, 1921 – August 24, 1985) was an American Chicago blues guitarist. He worked with John Lee Hooker, Eddie Burns, and other Detroit and Chicago blues musicians, known for his rhythmic chord work and steady accompaniment style.",
-    "activeFrom": "1941",
-    "influences": [],
+    "activeFrom": "1952",
+    "influences": [
+      "john-lee-hooker"
+    ],
     "influencedBy": [
-      "lonesome-sundown"
+      "lonesome-sundown",
+      "sonny-boy-williamson-i"
     ],
     "incomplete": false,
     "playedWith": [],

@@ -1,6 +1,6 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
 import DeckGL from '@deck.gl/react';
-import { ScatterplotLayer, ArcLayer, TextLayer } from '@deck.gl/layers';
+import { ScatterplotLayer, ArcLayer, TextLayer, LineLayer } from '@deck.gl/layers';
 
 import type { MapViewState } from '@deck.gl/core';
 import Map from 'react-map-gl/maplibre';
@@ -13,6 +13,8 @@ import BluesStyleLegend from './BluesStyleLegend';
 import { useAtomValue } from 'jotai';
 import { isMusicianFavoritedAtom, listsAtom, favoritesMapAtom } from '../atoms/lists';
 import { userAtom } from '../atoms/auth';
+import { useMapClusters } from '../hooks/useMapClusters';
+import type { ClusterGroup, ClusterPoint, SpiderLeg } from '../hooks/useMapClusters';
 
 const MAP_STYLES = {
   light: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
@@ -338,6 +340,46 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
   const [viewState, setViewState] = useState<MapViewState>(INITIAL_VIEW_STATE);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  // Compute viewport bounds from viewState for supercluster
+  const viewportBounds = useMemo<[number, number, number, number] | null>(() => {
+    const { longitude, latitude, zoom } = viewState;
+    // Approximate bounds from center + zoom
+    const latRange = 180 / Math.pow(2, zoom);
+    const lngRange = 360 / Math.pow(2, zoom);
+    return [
+      Math.max(-180, longitude - lngRange),
+      Math.max(-90, latitude - latRange),
+      Math.min(180, longitude + lngRange),
+      Math.min(90, latitude + latRange),
+    ];
+  }, [viewState]);
+
+  // Clustering + spidering
+  const {
+    clusters,
+    points,
+    spiderLegs,
+    spideredClusterId,
+    onClusterClick,
+    collapseSpider,
+    onZoomChange,
+  } = useMapClusters({
+    musicians: completeMusicians,
+    zoom: viewState.zoom,
+    bounds: viewportBounds,
+    selectedId,
+  });
+
+  // Collapse spider on zoom change
+  const handleViewStateChange = useCallback(
+    ({ viewState: vs }: { viewState: unknown }) => {
+      const next = vs as MapViewState;
+      onZoomChange(next.zoom);
+      setViewState(next);
+    },
+    [onZoomChange]
+  );
+
   // Zoom to selected musician
   useEffect(() => {
     if (selectedId) {
@@ -381,31 +423,29 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
 
   const focusId = hovered ?? listHovered ?? selectedId;
 
-  // CPU-side collision filtering for map labels
+  // CPU-side collision filtering for labels (only unclustered individual points)
   const visibleMapLabels = useMemo(() => {
     const zoom = viewState.zoom;
-    // Approximate pixels per degree at this zoom (Mercator)
     const pxPerDeg = 256 * Math.pow(2, zoom) / 360;
     const FONT_PX = 11;
     const CHAR_W = FONT_PX * 0.55;
 
-    const candidates = completeMusicians.map((m) => {
-      const [lng, lat] = m.birthCoords;
+    const candidates = points.map((p) => {
+      const [lng, lat] = p.position;
       const screenX = lng * pxPerDeg;
-      const screenY = -lat * pxPerDeg; // Y inverted in screen space
-      const textW = m.name.length * CHAR_W;
-      const isFocused = m.id === focusId;
+      const screenY = -lat * pxPerDeg;
+      const textW = p.musician.name.length * CHAR_W;
+      const isFocused = p.musician.id === focusId;
       return {
-        musician: m,
+        point: p,
         screenX,
         screenY,
         halfW: textW / 2 + 6,
         halfH: FONT_PX / 2 + 6,
-        priority: isFocused ? 1 : 0,
+        priority: isFocused ? 2 : p.spidered ? 1 : 0,
       };
     });
 
-    // Focused musician always wins
     candidates.sort((a, b) => b.priority - a.priority);
 
     const placed: typeof candidates = [];
@@ -422,10 +462,11 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       }
       if (!overlaps) placed.push(c);
     }
-    return placed.map((c) => c.musician);
-  }, [completeMusicians, viewState.zoom, focusId]);
+    return placed.map((c) => c.point);
+  }, [points, viewState.zoom, focusId]);
 
   const layers = useMemo(() => [
+    // Migration arcs (only for focused musician)
     new ArcLayer<MigrationArc>({
       id: 'arcs',
       data: migrationArcs,
@@ -445,11 +486,13 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       updateTriggers: { getSourceColor: [focusId], getTargetColor: [focusId], getWidth: [focusId] },
     }),
 
+    // Spent time places
     new ScatterplotLayer<SpentFlat>({
       id: 'spent-places',
       data: spentPlaces,
       getPosition: (d) => d.coords,
-      getRadius: (d) => (!focusId || d.musicianId === focusId ? 22000 : 10000),
+      radiusUnits: 'pixels' as const,
+      getRadius: (d) => (!focusId || d.musicianId === focusId ? 12 : 6),
       getFillColor: [0, 0, 0, 0],
       stroked: true,
       getLineColor: (d): [number, number, number, number] => {
@@ -462,42 +505,135 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       updateTriggers: { getRadius: [focusId], getLineColor: [focusId] },
     }),
 
-    new ScatterplotLayer<Musician>({
-      id: 'birth-places',
-      data: completeMusicians,
-      getPosition: (d) => d.birthCoords,
-      getRadius: (d) => (d.id === focusId ? 28000 : !focusId ? 18000 : 12000),
+    // Spider legs — lines from cluster center to spidered musicians
+    new LineLayer<SpiderLeg>({
+      id: 'spider-legs',
+      data: spiderLegs,
+      getSourcePosition: (d) => d.source,
+      getTargetPosition: (d) => d.target,
+      getColor: (d): [number, number, number, number] => {
+        const isFocused = d.musician.id === focusId;
+        const [r, g, b] = getStyleColor(d.musician.bluesStyle);
+        return [r, g, b, isFocused ? 200 : 100];
+      },
+      getWidth: (d) => (d.musician.id === focusId ? 2 : 1),
+      widthUnits: 'pixels' as const,
+      pickable: false,
+      updateTriggers: { getColor: [focusId], getWidth: [focusId] },
+    }),
+
+    // Cluster circles
+    new ScatterplotLayer<ClusterGroup>({
+      id: 'clusters',
+      data: clusters,
+      getPosition: (d) => d.position,
+      radiusUnits: 'pixels' as const,
+      getRadius: (d) => {
+        // Pixel-based radius: readable but capped to avoid overlap
+        return Math.min(32, Math.max(18, 14 + Math.sqrt(d.count) * 3));
+      },
       getFillColor: (d): [number, number, number, number] => {
-        const a = !focusId || d.id === focusId ? 220 : 140;
-        return [...getStyleColor(d.bluesStyle), a] as [number, number, number, number];
+        const [r, g, b] = getStyleColor(d.bluesStyle);
+        return [r, g, b, 180];
+      },
+      stroked: true,
+      getLineColor: [255, 255, 255, 200] as [number, number, number, number],
+      lineWidthUnits: 'pixels' as const,
+      getLineWidth: 2,
+      pickable: true,
+      autoHighlight: true,
+      highlightColor: [255, 255, 255, 60],
+      onClick: ({ object }: { object?: ClusterGroup }) => {
+        if (object) onClusterClick(object.clusterId);
+      },
+      onHover: ({ object }: { object?: ClusterGroup }) => {
+        // Clear musician hover when hovering clusters
+        if (object) {
+          setHovered(null);
+          setListHovered(null);
+        }
+      },
+    }),
+
+    // Cluster count labels — disable depth test so text always renders on top of circles
+    new TextLayer<ClusterGroup>({
+      id: 'cluster-labels',
+      data: clusters,
+      getPosition: (d) => d.position,
+      getText: (d) => String(d.count),
+      getSize: 18,
+      sizeUnits: 'pixels' as const,
+      getColor: [255, 255, 255, 255] as [number, number, number, number],
+      getTextAnchor: 'middle' as const,
+      getAlignmentBaseline: 'center' as const,
+      fontFamily: 'Georgia, serif',
+      fontWeight: 700,
+      pickable: false,
+      parameters: { depthCompare: 'always' as const },
+    }),
+
+    // Individual musician dots (unclustered + spidered)
+    // Sort so focused musician renders last (on top) for easier selection
+    new ScatterplotLayer<ClusterPoint>({
+      id: 'birth-places',
+      data: [...points].sort((a, b) => {
+        const aFocus = a.musician.id === focusId ? 1 : 0;
+        const bFocus = b.musician.id === focusId ? 1 : 0;
+        return aFocus - bFocus;
+      }),
+      getPosition: (d) => d.position,
+      radiusUnits: 'pixels' as const,
+      getRadius: (d) => {
+        const id = d.musician.id;
+        return id === focusId ? 14 : 10;
+      },
+      getFillColor: (d): [number, number, number, number] => {
+        const a = !focusId || d.musician.id === focusId ? 220 : 140;
+        return [...getStyleColor(d.musician.bluesStyle), a] as [number, number, number, number];
       },
       stroked: true,
       getLineColor: (d): [number, number, number, number] => {
-        const a = d.id === focusId ? 255 : !focusId ? 180 : 20;
+        const a = d.musician.id === focusId ? 255 : !focusId ? 180 : 20;
         return [255, 255, 255, a];
       },
       lineWidthUnits: 'pixels' as const,
-      getLineWidth: (d) => (d.id === focusId ? 2 : 1),
+      getLineWidth: (d) => (d.musician.id === focusId ? 2 : 1),
       pickable: true,
       autoHighlight: false,
-      onClick: ({ object }: { object?: Musician }) => object && onSelect(object),
-      onHover: ({ object }: { object?: Musician }) => {
-        setHovered(object?.id ?? null);
+      onClick: ({ object }: { object?: ClusterPoint }) => {
+        if (object) {
+          if (!object.spidered && spideredClusterId !== null) {
+            collapseSpider();
+          }
+          onSelect(object.musician);
+        }
+      },
+      onHover: ({ object }: { object?: ClusterPoint }) => {
+        setHovered(object?.musician.id ?? null);
         setListHovered(null);
       },
-      updateTriggers: { getFillColor: [focusId], getLineColor: [focusId], getRadius: [focusId] },
+      updateTriggers: {
+        getFillColor: [focusId],
+        getLineColor: [focusId],
+        getRadius: [focusId],
+        data: [focusId],
+      },
     }),
 
-    new TextLayer<Musician>({
+    // Musician name labels
+    new TextLayer<ClusterPoint>({
       id: 'birth-labels',
       data: visibleMapLabels,
-      getPosition: (d) => d.birthCoords,
-      getText: (d) => d.name,
-      getSize: (d) => (d.id === focusId ? 14 : !focusId ? 11 : 10),
+      getPosition: (d) => d.position,
+      getText: (d) => d.musician.name,
+      getSize: (d) => {
+        const isFocused = d.musician.id === focusId;
+        return isFocused ? 14 : d.spidered ? 12 : !focusId ? 11 : 10;
+      },
       sizeUnits: 'pixels' as const,
       getPixelOffset: [0, -32] as [number, number],
       getColor: (d): [number, number, number, number] => {
-        const a = !focusId || d.id === focusId ? 220 : 10;
+        const a = !focusId || d.musician.id === focusId ? 220 : d.spidered ? 180 : 10;
         return theme === 'dark' ? [255, 255, 255, a] : [0, 0, 0, a];
       },
       getTextAnchor: 'middle' as const,
@@ -505,10 +641,10 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       pickable: false,
       updateTriggers: { getColor: [focusId], getSize: [focusId] },
     }),
-  ], [spentPlaces, migrationArcs, focusId, onSelect, visibleMapLabels]);
+  ], [spentPlaces, migrationArcs, focusId, onSelect, visibleMapLabels, clusters, points,
+      spiderLegs, spideredClusterId, collapseSpider, onClusterClick, viewState, theme]);
 
   const hoveredMusician = hovered ? completeMusicians.find((m) => m.id === hovered) : null;
-
   return (
     <div className="relative w-full h-full">
       {/* Mobile sidebar toggle */}
@@ -549,15 +685,20 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       <div className="relative w-full h-full">
         <DeckGL
           viewState={viewState}
-          onViewStateChange={({ viewState: vs }) => setViewState(vs as MapViewState)}
+          onViewStateChange={handleViewStateChange}
           controller={true}
           layers={layers}
           getCursor={({ isHovering }: { isHovering: boolean }) => (isHovering ? 'pointer' : 'grab')}
+          onClick={(info: { object?: unknown }) => {
+            // Click on empty space collapses spider
+            if (!info.object && spideredClusterId !== null) {
+              collapseSpider();
+            }
+          }}
         >
           <Map
             mapStyle={MAP_STYLES[theme]}
             onLoad={(evt) => {
-              // Darken the land on light mode
               if (theme === 'light') {
                 const map = evt.target;
                 const layers = map.getStyle().layers;
@@ -576,6 +717,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
         <p className="text-2xs text-accent tracking-widest uppercase mb-1">Map Key</p>
           {[
             { label: 'Birth place', el: <span className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" /> },
+            { label: 'Cluster (click to expand)', el: <span className="w-3.5 h-3.5 rounded-full bg-accent/60 border-[1.5px] border-white/60 shrink-0 flex items-center justify-center text-[6px] text-white font-bold">n</span> },
             { label: 'Time spent', el: <span className="w-2.5 h-2.5 rounded-full border-[1.5px] border-accent shrink-0" /> },
             { label: 'Migration arc', el: <span className="w-4 h-0.5 bg-gradient-to-r from-accent/40 to-accent/90 rounded shrink-0" /> },
           ].map(({ label, el }) => (

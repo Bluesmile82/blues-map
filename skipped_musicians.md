@@ -5,7 +5,6 @@ Alabama Sheiks
 Albert McCoy
 Albertine King
 Alec Johnson
-Alice Moore
 Allen Shaw
 Allison Mathis
 Amelia Johnson
@@ -17,7 +16,6 @@ Arthur Weston
 Arzo Youngblood
 Austen Pete
 Avery Brady
-Baby Tate
 Barefoot Bill
 Belton Sutherland
 Bertha Henderson
@@ -46,13 +44,9 @@ Cofer Brothers
 Coley Jones
 Country Jim Bledsoe
 Cousin Joe
-Cow Cow Davenport
-Curtis Jones
-Corey Harris
 Dad Crockett
 Daddy Hotcakes
 Darby & Tarlton
-David "Honeyboy" Edwards
 David "Pete" McKinley
 David McCarn
 David Miller
@@ -65,7 +59,6 @@ Dixon Brothers
 Doc Reed
 Dock Boggs
 Dock Walsh
-Doug Quattlebaum
 Dr. Hepcat
 Dr. Ross
 Dykes Magic City Trio

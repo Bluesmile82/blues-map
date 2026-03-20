@@ -3,11 +3,11 @@
 
 @theme {
   /* ── Light Mode Backgrounds (default) ───────────────────────────────────── */
-  --color-bg:          #d7d0cf;  /* warm light gray – app bg, navbar */
+  --color-bg:          #ddd9d9;  /* warm light gray – app bg, navbar */
   --color-bg2:         #ccc7c6;  /* panels, filter backgrounds */
-  --color-bg3:         #c1bebd;  /* elevated surfaces, chips */
+  --color-bg3:         #b2afae;  /* elevated surfaces, chips */
   --color-bg-subtle:   #ccc7c6;
-  --color-bg-elevated: #c1bebd;
+  --color-bg-elevated: #d3d0cf;
   --color-bg-hover:    #b6b3b2;  /* hover backgrounds */
   --color-bg-deep:     #aba8a7;  /* deep hover */
 
