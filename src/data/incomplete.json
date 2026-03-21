@@ -1,0 +1,80 @@
+[{
+    "id": "alice-moore",
+    "name": "Alice Moore",
+    "image": "",
+    "image_source": "",
+    "birthDate": null,
+    "birthPlace": null,
+    "birthCoords": null,
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis, Missouri",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Female Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=HZuRfU4ielg",
+    "albums": [],
+    "description": "Alice Moore was an American classic female blues singer, active in the St. Louis blues scene from 1934-1940. She recorded with Kokomo Arnold for Paramount Records, with songs including 'Grass Cutter Blues' and 'Dark Angel'. Limited biographical information exists from the race record labels of the Great Depression era.",
+    "activeFrom": "1934",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true
+  },
+    {
+    "id": "georgia-white",
+    "name": "Georgia White",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1903-03-09",
+    "birthPlace": "Sandersville, Georgia",
+    "birthCoords": [
+      -82.8126,
+      33.3265
+    ],
+    "deathDate": "1980",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Sandersville, Georgia",
+        "coords": [
+          -82.8126,
+          33.3265
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Female Blues, Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dXqUXmzZL2E",
+    "albums": [
+      {
+        "name": "Hot Nuts (1930s recordings)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "I'll Keep Satisfying You (1930s)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Georgia White was an American classic female blues singer, born in Sandersville, Georgia in 1903. She recorded in the 1930s and performed in Chicago. Her death place is unknown, with sources only listing 'United States'. She was active in the Chicago blues scene and recorded for Decca Records.",
+    "activeFrom": "1930",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true
+  }
+]

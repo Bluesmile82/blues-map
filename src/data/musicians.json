@@ -9519,7 +9519,7 @@
     "image": "/images/musicians/eric-clapton.png",
     "image_source": "",
     "birthDate": "1945-03-30",
-    "birthPlace": "Ripley",
+    "birthPlace": "Ripley, UK",
     "birthCoords": [
       -0.4881,
       51.297861111111
@@ -23236,7 +23236,7 @@
       }
     ],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=WYcwXlu8cKM",
     "albums": [],
     "description": "Otis \"Big Smokey\" Smothers (March 21, 1929 – July 23, 1993) was an American Chicago blues guitarist and singer.  He was a member of Howlin' Wolf's backing band and worked with Muddy Waters, Jimmy Rogers, Bo Diddley, Ike Turner, J.  T.",
@@ -23244,7 +23244,12 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "muddy-waters",
+      "howlin-wolf",
+      "ike-turner",
+      "jimmy-rogers"
+    ],
     "source": "https://en.wikipedia.org/wiki/Otis_\"Big_Smokey\"_Smothers"
   },
   {
@@ -27445,36 +27450,6 @@
     ]
   },
   {
-    "id": "alice-moore",
-    "name": "Alice Moore",
-    "image": "",
-    "image_source": "",
-    "birthDate": null,
-    "birthPlace": null,
-    "birthCoords": null,
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [
-      {
-        "place": "St. Louis, Missouri",
-        "coords": [
-          -90.1994,
-          38.627
-        ]
-      }
-    ],
-    "instrument": "Vocals",
-    "bluesStyle": "Classic Female Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=HZuRfU4ielg",
-    "albums": [],
-    "description": "Alice Moore was an American classic female blues singer, active in the St. Louis blues scene from 1934-1940. She recorded with Kokomo Arnold for Paramount Records, with songs including 'Grass Cutter Blues' and 'Dark Angel'. Limited biographical information exists from the race record labels of the Great Depression era.",
-    "activeFrom": "1934",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": true
-  },
-  {
     "id": "corey-harris",
     "name": "Corey Harris",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Corey_Harris_2011.jpg/500px-Corey_Harris_2011.jpg",
@@ -27512,7 +27487,7 @@
       }
     ],
     "instrument": "Guitar, Vocals, Banjo",
-    "bluesStyle": "Country Blues, Delta Blues, African Blues",
+    "bluesStyle": "Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=9w8lJcVrGKQ",
     "albums": [
       {
@@ -27693,7 +27668,7 @@
       }
     ],
     "instrument": "Guitar, Harmonica, Drums, Vocals",
-    "bluesStyle": "Delta Blues, Detroit Blues, One-Man Band",
+    "bluesStyle": "Delta Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=kOy9VYnK3RM",
     "albums": [
       {
@@ -27837,55 +27812,6 @@
     "incomplete": false
   },
   {
-    "id": "georgia-white",
-    "name": "Georgia White",
-    "image": "",
-    "image_source": "",
-    "birthDate": "1903-03-09",
-    "birthPlace": "Sandersville, Georgia",
-    "birthCoords": [
-      -82.8126,
-      33.3265
-    ],
-    "deathDate": "1980",
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [
-      {
-        "place": "Sandersville, Georgia",
-        "coords": [
-          -82.8126,
-          33.3265
-        ]
-      },
-      {
-        "place": "Chicago, Illinois",
-        "coords": [
-          -87.6298,
-          41.8781
-        ]
-      }
-    ],
-    "instrument": "Vocals",
-    "bluesStyle": "Classic Female Blues, Chicago Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=dXqUXmzZL2E",
-    "albums": [
-      {
-        "name": "Hot Nuts (1930s recordings)",
-        "youtubeLink": ""
-      },
-      {
-        "name": "I'll Keep Satisfying You (1930s)",
-        "youtubeLink": ""
-      }
-    ],
-    "description": "Georgia White was an American classic female blues singer, born in Sandersville, Georgia in 1903. She recorded in the 1930s and performed in Chicago. Her death place is unknown, with sources only listing 'United States'. She was active in the Chicago blues scene and recorded for Decca Records.",
-    "activeFrom": "1930",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": true
-  },
-  {
     "id": "jaybird-coleman",
     "name": "Jaybird Coleman",
     "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Jaybird_Coleman.jpg/500px-Jaybird_Coleman.jpg",
@@ -27969,7 +27895,7 @@
       }
     ],
     "instrument": "Guitar, Vocals, Drums, Tambourine",
-    "bluesStyle": "North Mississippi Hill Country Blues",
+    "bluesStyle": "Hill Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=eyPtCxxKdK8",
     "albums": [
       {
@@ -27988,8 +27914,7 @@
     "description": "Jessie Mae Hemphill was an American electric guitarist, songwriter, and vocalist specializing in North Mississippi hill country blues. Granddaughter of fife-and-drum band leader Sid Hemphill, she began playing guitar at age seven and drums in her grandfather's band. She won W.C. Handy Awards in 1987 and 1988. A 1993 stroke paralyzed her left side, ending her guitar playing.",
     "activeFrom": "1950",
     "influences": [
-      "sid-hemphill",
-      "fife-and-drum-tradition"
+      "sid-hemphill"
     ],
     "influencedBy": [],
     "incomplete": false
@@ -28176,54 +28101,6 @@
     ],
     "description": "Mercy Dee Walton was an American West Coast blues and jump blues pianist and singer. Born in Waco, Texas, he moved to California where he became part of the West Coast blues scene. Known for his energetic piano playing and vocal style, Walton recorded for various labels in the late 1940s and 1950s.",
     "activeFrom": "1940",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false
-  },
-  {
-    "id": "oscar-woods",
-    "name": "Oscar Woods",
-    "image": "",
-    "image_source": "",
-    "birthDate": "1903",
-    "birthPlace": "Shreveport, Louisiana",
-    "birthCoords": [
-      -93.7502,
-      32.5251
-    ],
-    "deathDate": "1957-10-24",
-    "deathPlace": "Shreveport, Louisiana",
-    "deathCoords": [
-      -93.7502,
-      32.5251
-    ],
-    "spentTimePlaces": [
-      {
-        "place": "Shreveport, Louisiana",
-        "coords": [
-          -93.7502,
-          32.5251
-        ]
-      },
-      {
-        "place": "Chicago, Illinois",
-        "coords": [
-          -87.6298,
-          41.8781
-        ]
-      }
-    ],
-    "instrument": "Piano, Vocals",
-    "bluesStyle": "Chicago Blues, Piano Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=gr6Q0vi1r1M",
-    "albums": [
-      {
-        "name": "Complete Recorded Works 1930-1937",
-        "youtubeLink": ""
-      }
-    ],
-    "description": "Oscar 'Buddy' Woods was an American Chicago blues and piano blues pianist and singer. Born in Shreveport, Louisiana, he recorded in the 1930s for Decca Records. Woods was part of the Chicago blues scene and was known for his piano accompaniment work with various blues artists.",
-    "activeFrom": "1930",
     "influences": [],
     "influencedBy": [],
     "incomplete": false
@@ -28706,5 +28583,874 @@
       "tracy-nelson"
     ],
     "source": "Female Blues Musicians And Singers: 16 Influential Artists"
+  },
+  {
+    "id": "fantastic-negrito",
+    "name": "Fantastic Negrito",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1968-01-20",
+    "birthPlace": "Great Barrington, Massachusetts",
+    "birthCoords": [
+      -73.3621,
+      42.196
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Oakland, California",
+        "coords": [
+          -122.2712,
+          37.8044
+        ]
+      }
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=2GKFsncJzjI",
+    "albums": [
+      {
+        "name": "The Last Days of Oakland (2016)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Please Don't Be Dead (2018)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Have You Lost Your Mind Yet? (2020)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "White Jesus Black Problems (2022)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Son of a Broken Man (2024)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Fantastic Negrito is a three-time Grammy-winning singer-songwriter from Oakland who revived his music career in 2014. He describes his style as 'black roots music for everyone', merging traditional blues elements with R&B, funk, and hip-hop to deliver powerful social commentary.",
+    "activeFrom": "2014",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": []
+  },
+  {
+    "id": "buffalo-nichols",
+    "name": "Carl \"Buffalo\" Nichols",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1990-09-20",
+    "birthPlace": "Houston, Texas",
+    "birthCoords": [
+      -95.3698,
+      29.7604
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Milwaukee, Wisconsin",
+        "coords": [
+          -87.9065,
+          43.0389
+        ]
+      },
+      {
+        "place": "Austin, Texas",
+        "coords": [
+          -97.7431,
+          30.2672
+        ]
+      }
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=T2yJxjQoMhA",
+    "albums": [
+      {
+        "name": "Buffalo Nichols (2021)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "The Fatalist (2023)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Buffalo Nichols is a contemporary artist honoring country blues traditions while adding 21st-century accents like electronic beats and drum machines. His music features dramatic wordplay, stark acoustic slide guitar, and addresses modern political and racial concerns.",
+    "activeFrom": "2021",
+    "influences": [
+      "skip-james"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": []
+  },
+  {
+    "id": "bob-corritore",
+    "name": "Bob Corritore",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1956-12-16",
+    "birthPlace": "Chicago, Illinois",
+    "birthCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Phoenix, Arizona",
+        "coords": [
+          -112.074,
+          33.4484
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=nDdVlH7pCYQ",
+    "albums": [
+      {
+        "name": "All-Star Blues Sessions (1996)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Harmonica Blues (2010)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Tabitha (2013)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Down Home Blues Revue (2019)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Bob Corritore is a highly regarded Chicago-born harmonica player, producer, and radio host. He learned from masters like Big Walter Horton and Carey Bell and has been a prolific figure in recording and producing contemporary and traditional blues albums.",
+    "activeFrom": "1979",
+    "influences": [
+      "big-walter-horton",
+      "junior-wells"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": []
+  },
+  {
+    "id": "ruthie-foster",
+    "name": "Ruthie Foster",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1964-09-05",
+    "birthPlace": "Gause, Texas",
+    "birthCoords": [
+      -96.6752,
+      30.7933
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Austin, Texas",
+        "coords": [
+          -97.7431,
+          30.2672
+        ]
+      }
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=zIlckOdCMl0",
+    "albums": [
+      {
+        "name": "Full Circle (2003)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "The Phenomenal Ruthie Foster (2007)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Let It Burn (2012)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Promise of a Brand New Day (2014)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Mileage (2019)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Ruthie Foster is a Texas native whose music is an eclectic blend of traditional blues, folk, pop, and gospel. Known for her soaring, soulful vocals, she brings unique variations to the blues pantheon and regularly earns Grammy nominations for her contemporary blues albums.",
+    "activeFrom": "1997",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": []
+  },
+  {
+    "id": "marquise-knox",
+    "name": "Marquise Knox",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1991-08-17",
+    "birthPlace": "St. Louis, Missouri",
+    "birthCoords": [
+      -90.1994,
+      38.627
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis, Missouri",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=4wv4UTMMnkY",
+    "albums": [
+      {
+        "name": "Manchild (2009)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Here I Am (2011)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Black and Blue (2021)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Marquise Knox is a St. Louis native who was born to the blues, learning guitar from his grandmother. Mentored by older blues players, he has an old-school sound and frequently covers Muddy Waters while writing his own signature tunes.",
+    "activeFrom": "2009",
+    "influences": [
+      "muddy-waters"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bb-king"
+    ]
+  },
+  {
+    "id": "grace-bowers",
+    "name": "Grace Bowers",
+    "image": "",
+    "image_source": "",
+    "birthDate": "2006-07-30",
+    "birthPlace": "Danville, California",
+    "birthCoords": [
+      37.8216,
+      -121.9888
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "name": "Nashville",
+        "coords": [
+          -86.7816,
+          36.1627
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Wine on Venus",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Grace Bowers is a young guitar prodigy who gained a Gibson endorsement at age fourteen. Relocating to Nashville, she recorded her debut album 'Wine on Venus' with her band The Hodge Podge, showcasing a style characterized by soulful phrasing and funky grooves.",
+    "activeFrom": "2017",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "dolly-parton",
+      "eric-clapton"
+    ],
+    "source": "13 Modern Blues Guitarists to keep on your radar in 2025; The Evolution of the Blues: A Comprehensive Analysis"
+  },
+  {
+    "id": "marcus-king",
+    "name": "Marcus King",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1996-03-11",
+    "birthPlace": "Greenville, South Carolina",
+    "birthCoords": [
+      -82.394,
+      34.8526
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "name": "Nashville",
+        "coords": [
+          -86.7816,
+          36.1627
+        ]
+      }
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Young Blood",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Mood Swings",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Marcus King is a soulful singer and guitarist known for his catchy melodic phrasing and fusion of blues with soul and jazz. He leads The Marcus King Band and has drawn heavy influence from artists like Robin Trower.",
+    "activeFrom": "2015",
+    "influences": [
+      "robin-trower"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "dan-auerbach"
+    ],
+    "source": "13 Modern Blues Guitarists to keep on your radar in 2025; Best Blues Guitarists of 2022"
+  },
+  {
+    "id": "selwyn-birchwood",
+    "name": "Selwyn Birchwood",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1985-03-09",
+    "birthPlace": "Orlando, Florida",
+    "birthCoords": [
+      -81.3792,
+      28.5383
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "name": "Tampa, Florida",
+        "coords": [
+          -82.4572,
+          27.9506
+        ]
+      }
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Electric Swamp Funkin' Blues",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Selwyn Birchwood is a visionary contemporary blues artist who describes his style as 'Electric Swamp Funkin' Blues'. He is recognized for pushing the boundaries of the genre, wiring swamp dirt and church soul into his own unapologetic sound.",
+    "activeFrom": "2011",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "Spotlight: The High Voltage Blues of Selwyn Birchwood; Selwyn Birchwood announces new album"
+  },
+  {
+    "id": "dk-harrell",
+    "name": "D.K. Harrell",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1998-04-24",
+    "birthPlace": "Ruston, Louisiana",
+    "birthCoords": [
+      -90.049,
+      35.1495
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "name": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Talkin' Heavy",
+        "youtubeLink": ""
+      },
+      {
+        "name": "The Right Man",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "D.K. Harrell is an emerging blues artist who made significant waves with his debut recording for Alligator Records. Noted for his mastery of the B.B. King-style single-string soloing technique, he won the 2024 BMA for Best Emerging Artist Album.",
+    "activeFrom": "2020",
+    "influences": [
+      "bb-king",
+      "albert-collins"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "The Best 12 True to the Blues Albums of 2025 So Far; The Evolution of the Blues"
+  },
+  {
+    "id": "adia-victoria",
+    "name": "Adia Victoria",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1986-07-22",
+    "birthPlace": "Spartanburg, South Carolina",
+    "birthCoords": [
+      -81.932,
+      34.9496
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "name": "Nashville",
+        "coords": [
+          -86.7816,
+          36.1627
+        ]
+      }
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Baby Blues",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Beyond the Bloodhounds",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Silences",
+        "youtubeLink": ""
+      },
+      {
+        "name": "A Southern Gothic",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Adia Victoria is a singer, songwriter, and guitarist originally from South Carolina who created her own 'gothic blues' style. Her music aims to expand and re-center the roots of the blues within a contemporary framework.",
+    "activeFrom": "2014",
+    "influences": [
+      "robert-johnson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "12 Essential Contemporary Blues Artists"
+  },
+  {
+    "id": "tyler-bryant",
+    "name": "Tyler Bryant",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1991-01-05",
+    "birthPlace": "Paris, Texas",
+    "birthCoords": [
+      -95.5555,
+      33.6609
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "name": "Nashville",
+        "coords": [
+          -86.7816,
+          36.1627
+        ]
+      }
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Wild Child",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Tyler Bryant is a Texas-born guitar prodigy who relocated to Nashville to form Tyler Bryant & The Shakedown. Strongly influenced by Muddy Waters, his playing incorporates southern Americana grooves and high-energy blues rock.",
+    "activeFrom": "2009",
+    "influences": [
+      "muddy-waters",
+      "jeff-beck"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "13 Modern Blues Guitarists to keep on your radar in 2025"
+  },
+  {
+    "id": "sugaray-rayford",
+    "name": "Caron \"Sugaray\" Rayford",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1968-02-12",
+    "birthPlace": "Tyler, Texas",
+    "birthCoords": [
+      -95.301,
+      32.3513
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "name": "Tyler, Texas",
+        "coords": [
+          -95.301,
+          32.3513
+        ]
+      },
+      {
+        "name": "San Diego",
+        "coords": [
+          -117.1611,
+          32.7157
+        ]
+      },
+      {
+        "name": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Voice",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Blind Alley",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Double Dynamite",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Human Decency",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Caron 'Sugaray' Rayford is a Texas-born soul-blues specialist who began singing in church as a child. He sang lead for the Los Angeles-based Mannish Boys before launching a successful solo career with his booming voice and gospel-infused style.",
+    "activeFrom": "2010",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "the-mannish-boys"
+    ],
+    "source": "12 Essential Contemporary Blues Artists"
+  },
+  {
+    "id": "dan-auerbach",
+    "name": "Dan Auerbach",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1979-05-14",
+    "birthPlace": "Akron, Ohio",
+    "birthCoords": [
+      -81.519,
+      41.0814
+    ],
+    "deathDate": "",
+    "deathPlace": "",
+    "deathCoords": [],
+    "spentTimePlaces": [
+      {
+        "name": "Akron, Ohio",
+        "coords": [
+          -81.519,
+          41.0814
+        ]
+      },
+      {
+        "name": "Nashville, Tennessee",
+        "coords": [
+          -86.7844,
+          36.1659
+        ]
+      }
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Thickfreakness (2003)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Brothers (2010)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Delta Kream (2021)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Dan Auerbach is the guitarist and vocalist of The Black Keys, whose raw, lo-fi blues rock sound draws heavily from Mississippi hill country blues. A devoted disciple of Junior Kimbrough and R.L. Burnside, he also runs Easy Eye Sound studio and label in Nashville, producing records for artists including Dr. John.",
+    "activeFrom": "2001",
+    "influences": [
+      "junior-kimbrough",
+      "rl-burnside",
+      "muddy-waters",
+      "howlin-wolf",
+      "robert-johnson",
+      "mississippi-fred-mcdowell",
+      "junior-watson",
+      "john-lee-hooker"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "dr-john",
+      "marcus-king"
+    ],
+    "source": ""
+  },
+  {
+    "id": "jeff-beck",
+    "name": "Jeff Beck",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1944-06-24",
+    "birthPlace": "Wallington, Surrey, England",
+    "birthCoords": [
+      -0.1494,
+      51.3573
+    ],
+    "deathDate": "2023-01-10",
+    "deathPlace": "Wadhurst, East Sussex, England",
+    "deathCoords": [
+      0.328,
+      51.0663
+    ],
+    "spentTimePlaces": [
+      {
+        "name": "London, England",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "British Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Truth (1968)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Blow by Blow (1975)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Wired (1976)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Jeff Beck was a pioneering British guitarist who rose to fame as a member of the Yardbirds before forging a groundbreaking solo career spanning blues, rock, and jazz fusion. His fierce, overdriven approach to the blues laid the groundwork for heavy metal, and Rolling Stone named him one of the most influential lead guitarists in rock.",
+    "activeFrom": "1965",
+    "influences": [
+      "muddy-waters",
+      "bb-king",
+      "buddy-guy",
+      "otis-rush",
+      "lightnin-hopkins"
+    ],
+    "influencedBy": [
+      "tyler-bryant",
+      "joe-bonamassa",
+      "eric-clapton",
+      "stevie-ray-vaughan",
+      "gary-clark-jr",
+      "kenny-wayne-shepherd",
+      "johnny-winter"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "buddy-guy",
+      "eric-clapton",
+      "stevie-ray-vaughan"
+    ],
+    "source": ""
+  },
+  {
+    "id": "bo-diddley",
+    "name": "Bo Diddley",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1928-12-30",
+    "birthPlace": "McComb, Mississippi",
+    "birthCoords": [
+      -90.4534,
+      31.2438
+    ],
+    "deathDate": "2008-06-02",
+    "deathPlace": "Archer, Florida",
+    "deathCoords": [
+      -82.519,
+      29.5294
+    ],
+    "spentTimePlaces": [
+      {
+        "name": "Chicago, Illinois",
+        "coords": [-87.6298, 41.8781]
+      },
+      {
+        "name": "Archer, Florida",
+        "coords": [-82.519, 29.5294]
+      }
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Bo Diddley (1958)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Go Bo Diddley (1959)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Have Guitar Will Travel (1960)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Bo Diddley was a foundational figure in the transition from blues to rock and roll, best known for his syncopated 'Bo Diddley beat' that became one of the most influential rhythmic patterns in popular music. Born in Mississippi and raised in Chicago, he fused blues, R&B, and African rhythms into a wholly original sound that shaped generations of musicians.",
+    "activeFrom": "1951",
+    "influences": [
+      "muddy-waters",
+      "john-lee-hooker",
+      "louis-jordan"
+    ],
+    "influencedBy": [
+      "buddy-guy",
+      "eric-clapton"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "muddy-waters",
+      "buddy-guy"
+    ],
+    "source": ""
+  },
+  {
+    "id": "van-morrison",
+    "name": "Van Morrison",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1945-08-31",
+    "birthPlace": "Belfast, Northern Ireland",
+    "birthCoords": [
+      -5.9301,
+      54.5973
+    ],
+    "deathDate": "",
+    "deathPlace": "",
+    "deathCoords": [],
+    "spentTimePlaces": [
+      {
+        "name": "London, England",
+        "coords": [-0.1276, 51.5074]
+      },
+      {
+        "name": "Marin County, California",
+        "coords": [-122.7, 38.05]
+      }
+    ],
+    "instrument": "Voice, Guitar, Harmonica, Saxophone",
+    "bluesStyle": "British Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=3UUWkr4FUlo",
+    "albums": [
+      {
+        "name": "Astral Weeks (1968)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Moondance (1970)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Too Long in Exile (1993)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Van Morrison is a Northern Irish singer-songwriter and multi-instrumentalist whose music weaves blues, jazz, folk, and soul into a deeply personal style. His gritty vocal delivery and harmonica playing are rooted in the blues tradition, and albums like 'Too Long in Exile' — recorded with John Lee Hooker — showcase his lifelong devotion to the genre.",
+    "activeFrom": "1958",
+    "influences": [
+      "muddy-waters",
+      "john-lee-hooker",
+      "lead-belly",
+      "sonny-boy-williamson",
+      "lightnin-hopkins"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "john-lee-hooker",
+      "bo-diddley"
+    ],
+    "source": ""
   }
 ]

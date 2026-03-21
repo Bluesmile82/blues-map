@@ -74,15 +74,16 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
     musician.deathCoords ? musician.deathCoords.join(', ') : ''
   );
 
-  useEffect(() => {
-    setFormData({
-      ...musician,
-      playedWith: musician.playedWith ?? [],
-      influencedBy: musician.influencedBy ?? []
-    });
-    setBirthCoordsRaw(musician.birthCoords.every(c => c === 0) ? '' : musician.birthCoords.join(', '));
-    setDeathCoordsRaw(musician.deathCoords ? musician.deathCoords.join(', ') : '');
-  }, [musician]);
+    useEffect(() => {
+      setFormData({
+        ...musician,
+        playedWith: musician.playedWith ?? [],
+        influencedBy: musician.influencedBy ?? [],
+        influences: musician.influences ?? []
+      });
+      setBirthCoordsRaw(musician.birthCoords.every(c => c === 0) ? '' : musician.birthCoords.join(', '));
+      setDeathCoordsRaw(musician.deathCoords ? musician.deathCoords.join(', ') : '');
+    }, [musician]);
 
   const handleChange = (field: keyof Musician, value: unknown) => {
     setFormData(prev => ({ ...prev, [field]: value }));

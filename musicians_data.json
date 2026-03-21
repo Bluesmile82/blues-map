@@ -1,0 +1,40 @@
+{
+  "musicians": [
+    {
+      "id": "marquise-knox",
+      "birthDate": "1991-02-08",
+      "birthPlace": "St. Louis, Missouri, United States",
+      "birthCoords": [38.6270, -90.1994],
+      "deathDate": null,
+      "deathPlace": null,
+      "deathCoords": null
+    },
+    {
+      "id": "grace-bowers",
+      "birthDate": "2006-07-30",
+      "birthPlace": "Danville, California, United States",
+      "birthCoords": [37.8216, -121.9888],
+      "deathDate": null,
+      "deathPlace": null,
+      "deathCoords": null
+    },
+    {
+      "id": "marcus-king",
+      "birthDate": "1996-03-11",
+      "birthPlace": "Greenville, South Carolina, United States",
+      "birthCoords": [34.8526, -82.3940],
+      "deathDate": null,
+      "deathPlace": null,
+      "deathCoords": null
+    },
+    {
+      "id": "selwyn-birchwood",
+      "birthDate": "1985-03-09",
+      "birthPlace": "Orlando, Florida, United States",
+      "birthCoords": [28.5383, -81.3792],
+      "deathDate": null,
+      "deathPlace": null,
+      "deathCoords": null
+    }
+  ]
+}
