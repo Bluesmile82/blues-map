@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import SearchInput from './SearchInput'
 import { useAtomValue } from 'jotai'
 import { userAtom } from '../atoms/auth'
@@ -48,6 +49,7 @@ export default function FiltersPanel({
   onCollapsedChange,
   isMobile = false,
 }: FiltersPanelProps) {
+  const { t } = useTranslation()
   const [localCollapsed, setLocalCollapsed] = useState(collapsed)
   const [legendOpen, setLegendOpen] = useState(false)
 
@@ -72,7 +74,7 @@ export default function FiltersPanel({
           onClick={() => setCollapsed(!isCollapsed)}
           className="flex items-center justify-between w-full px-3 py-2 bg-bg-subtle/95 border border-border-subtle rounded-lg text-ink text-xs font-medium backdrop-blur-sm hover:border-border transition-colors"
         >
-          <span>Filters</span>
+          <span>{t('filters.title')}</span>
           <svg
             className={`w-4 h-4 transition-transform ${isCollapsed ? '' : 'rotate-180'}`}
             fill="none"
@@ -91,7 +93,7 @@ export default function FiltersPanel({
           <SearchInput
             value={searchValue}
             onChange={onSearchChange}
-            placeholder="Find by name…"
+            placeholder={t('filters.findByName')}
           />
         </div>
 
@@ -99,11 +101,11 @@ export default function FiltersPanel({
         <SearchInput
           value={textFilterValue}
           onChange={onTextFilterChange}
-          placeholder="Filter by description or albums…"
+          placeholder={t('filters.filterByDescription')}
         />
         {textFilterValue && displayMusiciansCount !== undefined && (
           <p className="text-2xs text-ink3 px-0.5">
-            {displayMusiciansCount} musician{displayMusiciansCount !== 1 ? 's' : ''} shown
+            {displayMusiciansCount} {displayMusiciansCount !== 1 ? t('filters.musicians') : t('filters.musician')} {t('filters.shown')}
           </p>
         )}
 
@@ -116,7 +118,7 @@ export default function FiltersPanel({
                 checked={showFavoritesOnly}
                 onChange={(e) => onFavoritesOnlyChange(e.target.checked)}
               />
-              <span className="text-label text-ink3">Show favorites only</span>
+              <span className="text-label text-ink3">{t('filters.showFavoritesOnly')}</span>
             </div>
 
             {/* List selector dropdown */}
@@ -127,7 +129,7 @@ export default function FiltersPanel({
                   onChange={(e) => onFilterListIdChange(e.target.value || null)}
                   className="text-label bg-bg-subtle border border-border-subtle rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
                 >
-                  <option value="">All lists</option>
+                  <option value="">{t('filters.allLists')}</option>
                   {lists.map((list) => {
                     const count = favoritesMap.get(list.id)?.size ?? 0
                     return (
@@ -148,7 +150,7 @@ export default function FiltersPanel({
             onClick={() => setLegendOpen(!legendOpen)}
             className="flex items-center justify-between w-full px-3 py-2 text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
           >
-            <span>Blues Style</span>
+            <span>{t('filters.bluesStyle')}</span>
             <span className="text-3xs opacity-60">{legendOpen ? '▲' : '▼'}</span>
           </button>
 
@@ -176,7 +178,7 @@ export default function FiltersPanel({
                         boxShadow: isActive ? `0 0 5px rgba(${r},${g},${b},0.6)` : 'none',
                       }}
                     />
-                    <span className="text-label flex-1">{style}</span>
+                    <span className="text-label flex-1">{t(`styles.${style}`, style)}</span>
                     {isActive && (
                       <span className="text-2xs opacity-50">✕</span>
                     )}
@@ -189,7 +191,7 @@ export default function FiltersPanel({
                   onClick={() => onStyleFilterChange(null)}
                   className="w-full px-2 py-1 text-2xs text-ink3 hover:text-ink hover:bg-bg-hover transition-colors text-left rounded"
                 >
-                  Clear filter
+                  {t('filters.clearFilter')}
                 </button>
               )}
             </div>
@@ -199,13 +201,13 @@ export default function FiltersPanel({
         {/* Year range filter */}
         <div className="bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-1.5">
           <div className="flex items-center justify-between">
-            <span className="text-2xs text-accent tracking-widest uppercase">Active years</span>
+            <span className="text-2xs text-accent tracking-widest uppercase">{t('filters.activeYears')}</span>
             {yearRange && (
               <button
                 onClick={() => onYearRangeChange(null)}
                 className="text-3xs text-ink3 hover:text-ink transition-colors"
               >
-                reset
+                {t('filters.reset')}
               </button>
             )}
           </div>

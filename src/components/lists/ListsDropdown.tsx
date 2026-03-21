@@ -1,5 +1,6 @@
 // src/components/lists/ListsDropdown.tsx
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useAtomValue } from 'jotai'
 import { listsAtom, isMusicianInListAtom } from '../../atoms/lists'
 import { useLists } from '../../hooks/useLists'
@@ -10,6 +11,7 @@ interface ListsDropdownProps {
 }
 
 export default function ListsDropdown({ musicianId, onClose }: ListsDropdownProps) {
+  const { t } = useTranslation()
   const lists = useAtomValue(listsAtom)
   const isMusicianInList = useAtomValue(isMusicianInListAtom)
   const { addToList, removeFromList, createList } = useLists()
@@ -43,7 +45,7 @@ export default function ListsDropdown({ musicianId, onClose }: ListsDropdownProp
 
       <div className="relative w-full max-w-xs mx-4 bg-bg border border-border-subtle rounded-xl shadow-2xl">
         <div className="flex items-center justify-between p-4 border-b border-border-subtle">
-          <h3 className="font-semibold text-ink">Add to list</h3>
+          <h3 className="font-semibold text-ink">{t('lists.addToList')}</h3>
           <button
             onClick={onClose}
             className="p-1 rounded-lg text-ink3 hover:bg-bg-hover hover:text-ink transition-colors"
@@ -74,7 +76,7 @@ export default function ListsDropdown({ musicianId, onClose }: ListsDropdownProp
               </div>
               <span className="flex-1 text-left truncate text-ink">{list.name}</span>
               {list.isDefault && (
-                <span className="text-2xs text-ink3">Default</span>
+                <span className="text-2xs text-ink3">{t('lists.default')}</span>
               )}
             </button>
           ))}
@@ -86,7 +88,7 @@ export default function ListsDropdown({ musicianId, onClose }: ListsDropdownProp
               type="text"
               value={newListName}
               onChange={(e) => setNewListName(e.target.value)}
-              placeholder="New list name..."
+              placeholder={t('lists.newListName')}
               maxLength={100}
               className="flex-1 px-3 py-1.5 text-sm rounded-lg bg-bg-elevated border border-border-subtle focus:border-accent focus:outline-none transition-colors text-ink placeholder-ink3"
             />
@@ -95,7 +97,7 @@ export default function ListsDropdown({ musicianId, onClose }: ListsDropdownProp
               disabled={creating || !newListName.trim()}
               className="px-3 py-1.5 text-sm rounded-lg bg-primary hover:bg-primary2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-ink font-medium"
             >
-              {creating ? '...' : 'Add'}
+              {creating ? '...' : t('lists.add')}
             </button>
           </div>
         </form>

@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect, useMemo, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import DeckGL from '@deck.gl/react';
 import { OrthographicView } from '@deck.gl/core';
 import { PathLayer, ScatterplotLayer, TextLayer, IconLayer } from '@deck.gl/layers';
@@ -70,6 +71,7 @@ export default function InfluenceView({
   theme: 'light' | 'dark';
   isMobile: boolean;
 }) {
+  const { t } = useTranslation();
   const containerRef = useRef<HTMLDivElement>(null);
   const dimsRef = useRef({ width: 0, height: 0 });
   const [dims, setDims] = useState({ width: 0, height: 0 });
@@ -383,8 +385,8 @@ export default function InfluenceView({
       focusedMusician.id,
       ...focusedMusician.influences,
       ...displayMusicians.filter((m) => m.influences.includes(focusId!)).map((m) => m.id),
-      ...focusedMusician.playedWith,
-      ...displayMusicians.filter((m) => m.playedWith.includes(focusId!)).map((m) => m.id),
+      ...(focusedMusician.playedWith ?? []),
+      ...displayMusicians.filter((m) => (m.playedWith ?? []).includes(focusId!)).map((m) => m.id),
     ])
     : null;
 
@@ -571,7 +573,7 @@ export default function InfluenceView({
 
     const seenPlayedWithPairs = new Set<string>();
     const playedWithEdges = displayMusicians.flatMap((m) =>
-      m.playedWith
+      (m.playedWith ?? [])
         .map((srcId) => {
           const pairKey = [m.id, srcId].sort().join('|');
           if (seenPlayedWithPairs.has(pairKey)) return null;
@@ -1048,7 +1050,7 @@ export default function InfluenceView({
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4h18M3 8h18M3 12h12" />
                 </svg>
-                <span>Filters</span>
+                <span>{t('filters.title')}</span>
                 <svg className="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -1059,7 +1061,7 @@ export default function InfluenceView({
                   onClick={() => setFiltersCollapsed(true)}
                   className="flex items-center justify-between w-full text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors mb-1"
                 >
-                  <span>Filters</span>
+                  <span>{t('filters.title')}</span>
                   <svg className="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                   </svg>
@@ -1073,7 +1075,7 @@ export default function InfluenceView({
                       if (e.key === 'Enter' && searchMatches[0]) goToMusician(searchMatches[0]);
                       if (e.key === 'Escape') setSearch('');
                     }}
-                    placeholder="Find by name…"
+                    placeholder={t('filters.findByName')}
                   />
                   {searchMatches.length > 0 && (
                     <div className="absolute top-full mt-1 left-0 right-0 bg-bg-subtle border border-border-subtle rounded-lg overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto">
@@ -1088,7 +1090,7 @@ export default function InfluenceView({
                           >
                             <span className="w-3 h-3 rounded-full shrink-0" style={{ background: hex }} />
                             <span className="text-ui text-ink flex-1 truncate">{m.name}</span>
-                            <span className="text-2xs shrink-0" style={{ color: hex }}>{m.bluesStyle.replace(' Blues', '')}</span>
+                            <span className="text-2xs shrink-0" style={{ color: hex }}>{t(`styles.${m.bluesStyle}`, m.bluesStyle).replace(' Blues', '')}</span>
                             {import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
                               <svg
                                 className="w-4 h-4 shrink-0"
@@ -1110,10 +1112,10 @@ export default function InfluenceView({
                 <SearchInput
                   value={textFilter}
                   onChange={setTextFilter}
-                  placeholder="Filter by description or albums…"
+                  placeholder={t('filters.filterByDescription')}
                 />
                 {textFilter && (
-                  <p className="text-2xs text-ink3 px-0.5">{displayMusicians.length} musician{displayMusicians.length !== 1 ? 's' : ''} shown</p>
+                  <p className="text-2xs text-ink3 px-0.5">{displayMusicians.length} {displayMusicians.length !== 1 ? t('filters.musicians') : t('filters.musician')} {t('filters.shown')}</p>
                 )}
 
                 {/* Favorites filter - only show when logged in */}
@@ -1125,7 +1127,7 @@ export default function InfluenceView({
                         checked={showFavoritesOnly}
                         onChange={(e) => setShowFavoritesOnly(e.target.checked)}
                       />
-                      <span className="text-label text-ink3">Show favorites only</span>
+                      <span className="text-label text-ink3">{t('filters.showFavoritesOnly')}</span>
                     </div>
 
                     {/* List selector dropdown */}
@@ -1136,7 +1138,7 @@ export default function InfluenceView({
                           onChange={(e) => setFilterListId(e.target.value || null)}
                           className="text-label bg-bg-subtle border border-border-subtle rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
                         >
-                          <option value="">All lists</option>
+                          <option value="">{t('filters.allLists')}</option>
                           {lists.map((list) => {
                             const count = favoritesMap.get(list.id)?.size ?? 0
                             return (
@@ -1154,13 +1156,13 @@ export default function InfluenceView({
                 {/* Year range filter */}
                 <div className="bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-1.5">
                   <div className="flex items-center justify-between">
-                    <span className="text-2xs text-accent tracking-widest uppercase">Active years</span>
+                    <span className="text-2xs text-accent tracking-widest uppercase">{t('filters.activeYears')}</span>
                     {yearRange && (
                       <button
                         onClick={() => setYearRange(null)}
                         className="text-3xs text-ink3 hover:text-ink transition-colors"
                       >
-                        reset
+                        {t('filters.reset')}
                       </button>
                     )}
                   </div>
@@ -1231,7 +1233,7 @@ export default function InfluenceView({
                   onClick={() => setGroupBy(mode)}
                   className={`px-2 sm:px-3 py-1 rounded text-2xs sm:text-xs font-semibold tracking-wide uppercase transition-all ${groupBy === mode ? 'bg-accent text-bg' : 'text-ink3 hover:text-ink'}`}
                 >
-                  {mode === 'style' ? 'Style' : 'Instrument'}
+                  {mode === 'style' ? t('filters.style') : t('filters.instrument')}
                 </button>
               ))}
             </div>
@@ -1471,7 +1473,7 @@ export default function InfluenceView({
                   {getYear(m.birthDate)}{m.deathDate ? ` – ${getYear(m.deathDate)}` : ''}
                 </span>
                 <span className="hidden sm:inline text-xs px-1.5 py-0.5 rounded shrink-0" style={{ color: getStyleHex(m.bluesStyle), border: `1px solid ${getStyleHex(m.bluesStyle)}40`, background: `${getStyleHex(m.bluesStyle)}15` }}>
-                  {m.bluesStyle}
+                  {t(`styles.${m.bluesStyle}`, m.bluesStyle)}
                 </span>
               </div>
             );

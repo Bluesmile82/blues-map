@@ -18473,41 +18473,6 @@
     "source": "https://en.wikipedia.org/wiki/Laith_Al-Saadi"
   },
   {
-    "id": "marcia-ball",
-    "name": "Marcia Ball",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Marcia_Ball_31_Rawa_Blues_2011_001.jpg/500px-Marcia_Ball_31_Rawa_Blues_2011_001.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Marcia_Ball_31_Rawa_Blues_2011_001.jpg/500px-Marcia_Ball_31_Rawa_Blues_2011_001.jpg",
-    "birthDate": "1949-03-20",
-    "birthPlace": "Orange",
-    "birthCoords": [
-      -93.759166666667,
-      30.109166666667
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [
-      {
-        "name": "Austin",
-        "coords": [
-          -97.733333333333,
-          30.3
-        ]
-      }
-    ],
-    "instrument": "Piano, Voice",
-    "bluesStyle": "Chicago Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=TT9Svq9qWkA",
-    "albums": [],
-    "description": "Marcia Ball (born March 20, 1949) is an American retired blues singer and pianist raised in Vinton, Louisiana. \nBall was described in USA Today as \"a sensation, saucy singer and superb pianist...  where Texas stomp-rock and Louisiana blues-swamp meet.",
-    "activeFrom": "1970",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Marcia_Ball"
-  },
-  {
     "id": "chico-banks",
     "name": "Chico Banks",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/ChicoBanks_2008-09-03_0738.jpg/500px-ChicoBanks_2008-09-03_0738.jpg",
@@ -22827,17 +22792,21 @@
       -89.5,
       32.5
     ],
-    "deathDate": null,
+    "deathDate": "2012-03-14",
     "deathPlace": null,
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar, Voice",
-    "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=hR6F4OKPfk8",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=cJ_NQ44-p3I",
     "albums": [
       {
         "name": "Another Cow's Dead (1987)",
-        "youtubeLink": "https://www.youtube.com/watch?v=hR6F4OKPfk8"
+        "youtubeLink": "https://www.youtube.com/watch?v=cJ_NQ44-p3I"
+      },
+      {
+        "name": "Kitty Kat (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=TUmPf1ccz38"
       }
     ],
     "description": "Eddie King (April 21, 1938 – March 14, 2012) was an American Chicago blues guitarist, singer and songwriter. A protégé of Slim Harpo, King recorded for several labels and worked with Freddie King and other Chicago blues legends.",
@@ -27474,5 +27443,1268 @@
     "secondaryStyles": [
       "Chicago Blues"
     ]
+  },
+  {
+    "id": "alice-moore",
+    "name": "Alice Moore",
+    "image": "",
+    "image_source": "",
+    "birthDate": null,
+    "birthPlace": null,
+    "birthCoords": null,
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis, Missouri",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Female Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=HZuRfU4ielg",
+    "albums": [],
+    "description": "Alice Moore was an American classic female blues singer, active in the St. Louis blues scene from 1934-1940. She recorded with Kokomo Arnold for Paramount Records, with songs including 'Grass Cutter Blues' and 'Dark Angel'. Limited biographical information exists from the race record labels of the Great Depression era.",
+    "activeFrom": "1934",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true
+  },
+  {
+    "id": "corey-harris",
+    "name": "Corey Harris",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Corey_Harris_2011.jpg/500px-Corey_Harris_2011.jpg",
+    "image_source": "https://en.wikipedia.org/wiki/Corey_Harris_(musician)",
+    "birthDate": "1969-03-24",
+    "birthPlace": "Denver, Colorado",
+    "birthCoords": [
+      -104.9903,
+      39.7392
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Denver, Colorado",
+        "coords": [
+          -104.9903,
+          39.7392
+        ]
+      },
+      {
+        "place": "New Orleans, Louisiana",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Virginia",
+        "coords": [
+          -78.6569,
+          37.4316
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals, Banjo",
+    "bluesStyle": "Country Blues, Delta Blues, African Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9w8lJcVrGKQ",
+    "albums": [
+      {
+        "name": "Between Midnight and Day (1995)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Greens from the Garden (1999)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Mississippi to Mali (2003)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Daily Bread (2005)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Corey Harris is an American blues musician who blends traditional country blues with African influences. Featured in Martin Scorsese's documentary 'Feel Like Going Home', he has explored the African roots of blues music through collaborations with Malian musicians. Harris performs on guitar, banjo, and vocals, and has been recognized with multiple Blues Music Awards.",
+    "activeFrom": "1990",
+    "influences": [
+      "son-house",
+      "mississippi-john-hurt",
+      "lead-belly"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "cow-cow-davenport",
+    "name": "Cow Cow Davenport",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Charles_Edward_Davenport_%281894%E2%80%931955%29.png/500px-Charles_Edward_Davenport_%281894%E2%80%931955%29.png",
+    "image_source": "https://en.wikipedia.org/wiki/Cow_Cow_Davenport",
+    "birthDate": "1894-04-23",
+    "birthPlace": "Anniston, Alabama",
+    "birthCoords": [
+      -85.8409,
+      33.7415
+    ],
+    "deathDate": "1955-12-03",
+    "deathPlace": "Cleveland, Ohio",
+    "deathCoords": [
+      -81.6944,
+      41.4993
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Anniston, Alabama",
+        "coords": [
+          -85.8409,
+          33.7415
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Cleveland, Ohio",
+        "coords": [
+          -81.6944,
+          41.4993
+        ]
+      }
+    ],
+    "instrument": "Piano, Vocals, Organ",
+    "bluesStyle": "Boogie-Woogie, Piano Blues, Vaudeville",
+    "youtubeLink": "https://www.youtube.com/watch?v=T8oIDmT3S0I",
+    "albums": [
+      {
+        "name": "Cow Cow Blues (1979)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Alabama Strut (1979)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Charles Edward 'Cow Cow' Davenport was an American boogie-woogie and piano blues player and vaudeville entertainer. His best-known tune 'Cow Cow Blues' influenced Ray Charles's 'Mess Around'. Davenport worked as a talent scout for Vocalion Records and was inducted into the Alabama Music Hall of Fame.",
+    "activeFrom": "1910",
+    "influences": [],
+    "influencedBy": [
+      "meade-lux-lewis",
+      "albert-ammons"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "curtis-jones",
+    "name": "Curtis Jones",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1906-01-16",
+    "birthPlace": "Nashville, Tennessee",
+    "birthCoords": [
+      -86.7816,
+      36.1627
+    ],
+    "deathDate": "1971-09-10",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Nashville, Tennessee",
+        "coords": [
+          -86.7816,
+          36.1627
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano, Vocals",
+    "bluesStyle": "Chicago Blues, Piano Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=g15N7iKZXFo",
+    "albums": [
+      {
+        "name": "Lonesome Bedroom Blues (1972)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Curtis Jones was an American Chicago blues pianist and singer. Born in Nashville, he moved to Chicago where he became part of the city's blues scene. Known for his distinctive piano style and heartfelt vocals, Jones recorded for various labels throughout his career.",
+    "activeFrom": "1930",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "dr-ross",
+    "name": "Dr. Ross",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/1d/Isaiah_ross_portrait.png",
+    "image_source": "https://en.wikipedia.org/wiki/Doctor_Ross",
+    "birthDate": "1925-10-21",
+    "birthPlace": "Tunica, Mississippi",
+    "birthCoords": [
+      -90.5318,
+      34.6895
+    ],
+    "deathDate": "1993-05-28",
+    "deathPlace": "Flint, Michigan",
+    "deathCoords": [
+      -83.6875,
+      43.0125
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Tunica, Mississippi",
+        "coords": [
+          -90.5318,
+          34.6895
+        ]
+      },
+      {
+        "place": "Helena, Arkansas",
+        "coords": [
+          -90.5918,
+          34.5295
+        ]
+      },
+      {
+        "place": "Flint, Michigan",
+        "coords": [
+          -83.6875,
+          43.0125
+        ]
+      }
+    ],
+    "instrument": "Guitar, Harmonica, Drums, Vocals",
+    "bluesStyle": "Delta Blues, Detroit Blues, One-Man Band",
+    "youtubeLink": "https://www.youtube.com/watch?v=kOy9VYnK3RM",
+    "albums": [
+      {
+        "name": "Call the Doctor (1965)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Doctor Ross the Harmonica Boss (1971)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Jivin' the Blues (1974)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Isaiah 'Doctor' Ross was an American blues musician and one-man band who performed simultaneously singing and playing guitar, harmonica, and drums. He served in the U.S. Army during World War II and worked at a General Motors plant for 40 years. Ross won a Grammy Award in 1981 for Best Ethnic or Traditional Recording.",
+    "activeFrom": "1942",
+    "influences": [
+      "john-lee-hooker",
+      "sonny-boy-williamson-i"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "eddie-kirkland",
+    "name": "Eddie Kirkland",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Eddie_kirkland_hires1.jpg/500px-Eddie_kirkland_hires1.jpg",
+    "image_source": "https://en.wikipedia.org/wiki/Eddie_Kirkland",
+    "birthDate": "1923-08-16",
+    "birthPlace": "Kingston, Jamaica",
+    "birthCoords": [
+      -76.7942,
+      18.013
+    ],
+    "deathDate": "2011-02-27",
+    "deathPlace": "Crystal River, Florida",
+    "deathCoords": [
+      -82.6026,
+      28.8989
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Dothan, Alabama",
+        "coords": [
+          -85.3954,
+          31.2233
+        ]
+      },
+      {
+        "place": "Detroit, Michigan",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      {
+        "place": "Macon, Georgia",
+        "coords": [
+          -83.6324,
+          32.8407
+        ]
+      }
+    ],
+    "instrument": "Guitar, Harmonica, Vocals",
+    "bluesStyle": "Electric Blues, Soul-Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=PNlWjCVy8wI",
+    "albums": [
+      {
+        "name": "It's the Blues Man! (1962)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Front and Center (1972)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "The Devil and Other Blues Demons (1974)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Pick Up The Pieces (1981)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Eddie Kirkland, known as the 'Gypsy of the Blues', was an American electric blues guitarist, harmonicist, singer, and songwriter. Born in Jamaica and raised in Alabama, he played and toured with John Lee Hooker from 1949 to 1962 before pursuing a successful solo career. He wrote 'I Must Have Done Somebody Wrong', later covered by Elmore James and The Allman Brothers Band.",
+    "activeFrom": "1949",
+    "influences": [
+      "john-lee-hooker",
+      "blind-blake"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "gabriel-brown",
+    "name": "Gabriel Brown",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1910-05-07",
+    "birthPlace": "Jacksonville, Florida",
+    "birthCoords": [
+      -81.6557,
+      30.3322
+    ],
+    "deathDate": "1990-03-14",
+    "deathPlace": "New York, New York",
+    "deathCoords": [
+      -74.006,
+      40.7128
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Jacksonville, Florida",
+        "coords": [
+          -81.6557,
+          30.3322
+        ]
+      },
+      {
+        "place": "New York, New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Country Blues, Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=EmZKtdtOjt0",
+    "albums": [
+      {
+        "name": "Gabriel Brown (1940s recordings)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Gabriel Brown was an American country blues guitarist and singer from Jacksonville, Florida. He recorded in the 1940s and was known for his Piedmont blues style. Brown performed in New York and was part of the folk blues revival scene.",
+    "activeFrom": "1940",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "georgia-white",
+    "name": "Georgia White",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1903-03-09",
+    "birthPlace": "Sandersville, Georgia",
+    "birthCoords": [
+      -82.8126,
+      33.3265
+    ],
+    "deathDate": "1980",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Sandersville, Georgia",
+        "coords": [
+          -82.8126,
+          33.3265
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Female Blues, Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dXqUXmzZL2E",
+    "albums": [
+      {
+        "name": "Hot Nuts (1930s recordings)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "I'll Keep Satisfying You (1930s)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Georgia White was an American classic female blues singer, born in Sandersville, Georgia in 1903. She recorded in the 1930s and performed in Chicago. Her death place is unknown, with sources only listing 'United States'. She was active in the Chicago blues scene and recorded for Decca Records.",
+    "activeFrom": "1930",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true
+  },
+  {
+    "id": "jaybird-coleman",
+    "name": "Jaybird Coleman",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Jaybird_Coleman.jpg/500px-Jaybird_Coleman.jpg",
+    "image_source": "https://en.wikipedia.org/wiki/Jaybird_Coleman",
+    "birthDate": "1896-05-20",
+    "birthPlace": "Gainesville, Alabama",
+    "birthCoords": [
+      -87.6292,
+      32.8206
+    ],
+    "deathDate": "1950-01-28",
+    "deathPlace": "Tuskegee, Alabama",
+    "deathCoords": [
+      -85.7095,
+      32.4282
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Gainesville, Alabama",
+        "coords": [
+          -87.6292,
+          32.8206
+        ]
+      },
+      {
+        "place": "Bessemer, Alabama",
+        "coords": [
+          -86.9544,
+          33.4018
+        ]
+      }
+    ],
+    "instrument": "Harmonica, Guitar, Vocals",
+    "bluesStyle": "Country Blues, Harmonica Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=wO6Zv4lRPJY",
+    "albums": [
+      {
+        "name": "Jaybird Coleman 1927-1930 (1992)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Burl C. 'Jaybird' Coleman was an American country blues harmonica player, vocalist, and guitarist. Born to sharecroppers in Alabama, he taught himself harmonica at age 12. He served in World War I at Fort McClellan, earning the nickname 'Jaybird'. Coleman recorded for Gennett, Black Patti, Silvertone, OKeh, and Columbia Records in the late 1920s and early 1930s.",
+    "activeFrom": "1926",
+    "influences": [],
+    "influencedBy": [
+      "big-joe-williams"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "jessie-mae-hemphill",
+    "name": "Jessie Mae Hemphill",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/JessieMHemphillbyLMcGaughran.jpg/500px-JessieMHemphillbyLMcGaughran.jpg",
+    "image_source": "https://en.wikipedia.org/wiki/Jessie_Mae_Hemphill",
+    "birthDate": "1923-10-18",
+    "birthPlace": "Senatobia, Mississippi",
+    "birthCoords": [
+      -89.9698,
+      34.6077
+    ],
+    "deathDate": "2006-07-22",
+    "deathPlace": "Memphis, Tennessee",
+    "deathCoords": [
+      -90.049,
+      35.1495
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Senatobia, Mississippi",
+        "coords": [
+          -89.9698,
+          34.6077
+        ]
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals, Drums, Tambourine",
+    "bluesStyle": "North Mississippi Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=eyPtCxxKdK8",
+    "albums": [
+      {
+        "name": "She-Wolf (1981)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Feelin' Good (1990)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Dare You to Do It Again (2004)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Jessie Mae Hemphill was an American electric guitarist, songwriter, and vocalist specializing in North Mississippi hill country blues. Granddaughter of fife-and-drum band leader Sid Hemphill, she began playing guitar at age seven and drums in her grandfather's band. She won W.C. Handy Awards in 1987 and 1988. A 1993 stroke paralyzed her left side, ending her guitar playing.",
+    "activeFrom": "1950",
+    "influences": [
+      "sid-hemphill",
+      "fife-and-drum-tradition"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "kc-douglas",
+    "name": "K. C. Douglas",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/American_blues_guitarist_KC_Douglas.png/500px-American_blues_guitarist_KC_Douglas.png",
+    "image_source": "https://en.wikipedia.org/wiki/K._C._Douglas",
+    "birthDate": "1913-11-21",
+    "birthPlace": "Sharon, Mississippi",
+    "birthCoords": [
+      -89.9492,
+      32.5921
+    ],
+    "deathDate": "1975-10-18",
+    "deathPlace": "Berkeley, California",
+    "deathCoords": [
+      -122.2728,
+      37.8716
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Sharon, Mississippi",
+        "coords": [
+          -89.9492,
+          32.5921
+        ]
+      },
+      {
+        "place": "Jackson, Mississippi",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      },
+      {
+        "place": "Vallejo, California",
+        "coords": [
+          -122.2566,
+          38.1041
+        ]
+      },
+      {
+        "place": "Oakland, California",
+        "coords": [
+          -122.2728,
+          37.8044
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Rural Blues, Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=zvZlESYi8aA",
+    "albums": [
+      {
+        "name": "A Dead Beat Guitar and the Mississippi Blues (1956)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "K. C.'s Blues (1961)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Big Road Blues (1961)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Mercury Blues (1974)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "K. C. Douglas was an American rural blues singer and guitarist. His song 'Mercury Boogie' (later 'Mercury Blues') has been covered by Steve Miller, David Lindley, Ry Cooder, Dwight Yoakam, and Alan Jackson. Ford Motor Company purchased rights to the song for a TV commercial. Douglas influenced Seasick Steve, whom he taught guitar while working at a garage in California.",
+    "activeFrom": "1940",
+    "influences": [
+      "tommy-johnson"
+    ],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "luke-jordan",
+    "name": "Luke Jordan",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Lukejordan.jpg/500px-Lukejordan.jpg",
+    "image_source": "https://en.wikipedia.org/wiki/Luke_Jordan",
+    "birthDate": "1892-01-28",
+    "birthPlace": "Lynchburg, Virginia",
+    "birthCoords": [
+      -79.1423,
+      37.4138
+    ],
+    "deathDate": "1952-06-25",
+    "deathPlace": "Lynchburg, Virginia",
+    "deathCoords": [
+      -79.1423,
+      37.4138
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Lynchburg, Virginia",
+        "coords": [
+          -79.1423,
+          37.4138
+        ]
+      },
+      {
+        "place": "Bluefield, West Virginia",
+        "coords": [
+          -81.2229,
+          37.2697
+        ]
+      },
+      {
+        "place": "Charlotte, North Carolina",
+        "coords": [
+          -80.8431,
+          35.2271
+        ]
+      },
+      {
+        "place": "New York, New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Piedmont Blues, Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=iPb8L2k9xTM",
+    "albums": [
+      {
+        "name": "Complete Recorded Works (1927-1929)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Luke Jordan was an American blues guitarist and vocalist from Lynchburg, Virginia. Known for his smooth, relaxed tenor voice contrasting with harsher Delta blues singers, he recorded for Victor Records in Charlotte in 1927 and in New York in 1929. His song 'Church Bells Blues' was later recorded by Ralph Willis and David Bromberg.",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "mercy-dee",
+    "name": "Mercy Dee",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1915-04-16",
+    "birthPlace": "Waco, Texas",
+    "birthCoords": [
+      -97.1467,
+      31.5493
+    ],
+    "deathDate": "1967-02-02",
+    "deathPlace": "California",
+    "deathCoords": [
+      -119.4179,
+      36.7783
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Waco, Texas",
+        "coords": [
+          -97.1467,
+          31.5493
+        ]
+      },
+      {
+        "place": "California",
+        "coords": [
+          -119.4179,
+          36.7783
+        ]
+      }
+    ],
+    "instrument": "Piano, Vocals",
+    "bluesStyle": "West Coast Blues, Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=5-lFt3cZpyI",
+    "albums": [
+      {
+        "name": "Mercy Dee Walton (1949-1950s recordings)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Mercy Dee Walton was an American West Coast blues and jump blues pianist and singer. Born in Waco, Texas, he moved to California where he became part of the West Coast blues scene. Known for his energetic piano playing and vocal style, Walton recorded for various labels in the late 1940s and 1950s.",
+    "activeFrom": "1940",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "oscar-woods",
+    "name": "Oscar Woods",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1903",
+    "birthPlace": "Shreveport, Louisiana",
+    "birthCoords": [
+      -93.7502,
+      32.5251
+    ],
+    "deathDate": "1957-10-24",
+    "deathPlace": "Shreveport, Louisiana",
+    "deathCoords": [
+      -93.7502,
+      32.5251
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Shreveport, Louisiana",
+        "coords": [
+          -93.7502,
+          32.5251
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano, Vocals",
+    "bluesStyle": "Chicago Blues, Piano Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=gr6Q0vi1r1M",
+    "albums": [
+      {
+        "name": "Complete Recorded Works 1930-1937",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Oscar 'Buddy' Woods was an American Chicago blues and piano blues pianist and singer. Born in Shreveport, Louisiana, he recorded in the 1930s for Decca Records. Woods was part of the Chicago blues scene and was known for his piano accompaniment work with various blues artists.",
+    "activeFrom": "1930",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "rev-gary-davis",
+    "name": "Reverend Gary Davis",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Reverend_Gary_Davis1960s_LOC_Restored.jpg/500px-Reverend_Gary_Davis1960s_LOC_Restored.jpg",
+    "image_source": "https://en.wikipedia.org/wiki/Reverend_Gary_Davis",
+    "birthDate": "1896-04-30",
+    "birthPlace": "Laurens, South Carolina",
+    "birthCoords": [
+      -82.0246,
+      34.0043
+    ],
+    "deathDate": "1972-05-05",
+    "deathPlace": "Hammonton, New Jersey",
+    "deathCoords": [
+      -74.79,
+      39.6464
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Laurens, South Carolina",
+        "coords": [
+          -82.0246,
+          34.0043
+        ]
+      },
+      {
+        "place": "Durham, North Carolina",
+        "coords": [
+          -78.8986,
+          35.994
+        ]
+      },
+      {
+        "place": "New York, New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Guitar, Banjo, Harmonica, Vocals",
+    "bluesStyle": "Gospel Blues, Piedmont Blues, Country Blues, Folk Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9w8lJcVrGKQ",
+    "albums": [
+      {
+        "name": "Harlem Street Singer (1960)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Say No to the Devil (1961)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "A Little More Faith (1961)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "At Newport (1967)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Reverend Gary Davis was an American blues and gospel singer and instrumentalist, blind since infancy. He first performed in the Piedmont blues scene of Durham, NC in the 1930s, then converted to Christianity and became a minister. His fingerpicking guitar style influenced many artists including Stefan Grossman, Bob Dylan, the Grateful Dead, and Jorma Kaukonen. His notable recordings include 'Samson and Delilah' and 'Death Don't Have No Mercy'.",
+    "activeFrom": "1930",
+    "influences": [],
+    "influencedBy": [
+      "blind-boy-fuller"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "robert-wilkins",
+    "name": "Robert Wilkins",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1896-01-16",
+    "birthPlace": "Hernando, Mississippi",
+    "birthCoords": [
+      -89.9941,
+      34.824
+    ],
+    "deathDate": "1987-05-26",
+    "deathPlace": "Memphis, Tennessee",
+    "deathCoords": [
+      -90.049,
+      35.1495
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Hernando, Mississippi",
+        "coords": [
+          -89.9941,
+          34.824
+        ]
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Guitar, Vocals",
+    "bluesStyle": "Country Blues, Memphis Blues, Gospel Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=5uKlVhT8wDw",
+    "albums": [
+      {
+        "name": "The Original Roll & Tumble (1964)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Memphis Gospel Singer (1964)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Robert Wilkins was an American country blues and gospel blues guitarist and singer from Hernando, Mississippi. He recorded in the 1920s and 1930s for Victor Records. Known for songs like 'Rollin' Stone' and 'Prodigal Son', he later became a minister and performed gospel music. His music was rediscovered during the folk revival of the 1960s.",
+    "activeFrom": "1928",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false
+  },
+  {
+    "id": "sam-chatmon",
+    "name": "Sam Chatmon",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Sam_Chatmon_of_the_Delta_Blues.jpg/500px-Sam_Chatmon_of_the_Delta_Blues.jpg",
+    "image_source": "https://en.wikipedia.org/wiki/Sam_Chatmon",
+    "birthDate": "1897-01-10",
+    "birthPlace": "Bolton, Mississippi",
+    "birthCoords": [
+      -90.3563,
+      32.3537
+    ],
+    "deathDate": "1983-02-02",
+    "deathPlace": "Hollandale, Mississippi",
+    "deathCoords": [
+      -90.8689,
+      33.674
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Bolton, Mississippi",
+        "coords": [
+          -90.3563,
+          32.3537
+        ]
+      },
+      {
+        "place": "Hollandale, Mississippi",
+        "coords": [
+          -90.8689,
+          33.674
+        ]
+      }
+    ],
+    "instrument": "Guitar, Banjo, Mandolin, Harmonica, Vocals",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=AkEhtfPN084",
+    "albums": [
+      {
+        "name": "Sam Chatmon: The Mississippi Sheik (1970)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Hollandale Blues (1977)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Sam Chatmon's Advice (1979)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Sam Chatmon & His Barbecue Boys (1981)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Vivian 'Sam' Chatmon was an American Delta blues guitarist and singer, member of the Mississippi Sheiks. His family was well known in Mississippi for their musical talents. He may have been Charley Patton's half-brother. Chatmon played banjo, mandolin, and harmonica in addition to guitar. Rediscovered in 1960, he toured extensively during the 1960s and 1970s and played major folk festivals including the Smithsonian Folklife Festival in 1972.",
+    "activeFrom": "1930",
+    "influences": [],
+    "influencedBy": [
+      "bo-carter",
+      "lonnie-chatmon"
+    ],
+    "incomplete": false
+  },
+  {
+    "id": "christone-kingfish-ingram",
+    "name": "Christone \"Kingfish\" Ingram",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/Kingfish_by_Rory_Doyle.jpg",
+    "image_source": "Wikipedia Commons (Photo by Rory Doyle)",
+    "birthDate": "1999-01-19",
+    "birthPlace": "Clarksdale, Mississippi",
+    "birthCoords": [
+      -90.6731,
+      34.2008
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      "Clarksdale, Mississippi"
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ldjseeFkHNo",
+    "albums": [
+      {
+        "name": "Kingfish",
+        "youtubeLink": "https://www.youtube.com/watch?v=search"
+      },
+      {
+        "name": "662",
+        "youtubeLink": "https://www.youtube.com/watch?v=search"
+      },
+      {
+        "name": "Live In London",
+        "youtubeLink": "https://www.youtube.com/watch?v=search"
+      }
+    ],
+    "description": "Christone 'Kingfish' Ingram is a Grammy-winning guitarist and singer from Clarksdale, Mississippi. He is known for his virtuosic, soulful style that provides a direct lineage to the Delta blues, and has shared the stage with artists like Buddy Guy and the Tedeschi Trucks Band.",
+    "activeFrom": "2019",
+    "influences": [
+      "buddy-guy",
+      "albert-king",
+      "freddie-king",
+      "bb-king"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "buddy-guy",
+      "tedeschi-trucks-band",
+      "artur-menezes",
+      "grace-bowers"
+    ],
+    "source": "13 Modern Blues Guitarists to keep on your radar in 2025; The Visual Pulse of the Blues"
+  },
+  {
+    "id": "gary-clark-jr",
+    "name": "Gary Clark Jr.",
+    "image": "https://fastly-s3.allmusic.com/artist/mn0000989208/400/Syp3vHzi9ypCKoDeQ43e2CpQg_7iAU1wjqLgK_xGXts=.jpg",
+    "image_source": "AllMusic (Photo by Mike Miller)",
+    "birthDate": "1984-02-15",
+    "birthPlace": "Austin, Texas",
+    "birthCoords": [
+      -97.7431,
+      30.2672
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      "Austin, Texas"
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9KgNaRQ_J-c",
+    "albums": [
+      {
+        "name": "Blak And Blu",
+        "youtubeLink": "https://www.youtube.com/watch?v=search"
+      },
+      {
+        "name": "The Bright Lights EP",
+        "youtubeLink": "https://www.youtube.com/watch?v=search"
+      },
+      {
+        "name": "The Story of Sonny Boy Slim",
+        "youtubeLink": "https://www.youtube.com/watch?v=search"
+      },
+      {
+        "name": "Gary Clark, Jr. Live",
+        "youtubeLink": "https://www.youtube.com/watch?v=search"
+      },
+      {
+        "name": "This Land",
+        "youtubeLink": "https://www.youtube.com/watch?v=search"
+      },
+      {
+        "name": "JPEG RAW",
+        "youtubeLink": "https://www.youtube.com/watch?v=search"
+      }
+    ],
+    "description": "Gary Clark Jr. is an Austin, Texas-based musician known for his distorted guitar sound and smooth vocal style. He blends blues, jazz, soul, country, and hip hop, and gained wide recognition after an electrifying performance at Eric Clapton's 2010 Crossroads Guitar Festival.",
+    "activeFrom": "2011",
+    "influences": [
+      "jimi-hendrix",
+      "curtis-mayfield",
+      "lowell-fulson",
+      "elizabeth-cotten",
+      "albert-king",
+      "freddie-king",
+      "bb-king"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "eric-clapton",
+      "alicia-keys",
+      "slash",
+      "the-roots"
+    ],
+    "source": "Gary Clark Jr. : When My Train Pulls In - Relix; GaryClarkJr"
+  },
+  {
+    "id": "samantha-fish",
+    "name": "Samantha Fish",
+    "image": "https://fastly-s3.allmusic.com/artist/mn0002661815/400/lgFQoey159Gi2OJvLOK9IQ4Q1ghY8VaPylnm7PwcKNY=.jpg",
+    "image_source": "AllMusic (Photo by Alexis Interiano)",
+    "birthDate": "1989-01-30",
+    "birthPlace": "Kansas City, Missouri",
+    "birthCoords": [
+      -94.5786,
+      39.0997
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      "New Orleans"
+    ],
+    "instrument": "Guitar, Cigar Box Guitar, Voice",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9v2SMTJAgmI",
+    "albums": [
+      {
+        "name": "Kill Or Be Kind",
+        "youtubeLink": "https://www.youtube.com/watch?v=1rGDILDK6bM"
+      },
+      {
+        "name": "Faster",
+        "youtubeLink": "https://www.youtube.com/watch?v=7deWpfw-sHg"
+      },
+      {
+        "name": "Wild Heart",
+        "youtubeLink": "https://www.youtube.com/watch?v=_aU-to-BmLY"
+      }
+    ],
+    "description": "Samantha Fish is a contemporary blues artist, singer, songwriter, and lead guitarist known for her energetic performances and cigar box slide guitar playing. Her work explores various facets of blues, Americana, and Memphis soul.",
+    "activeFrom": "2009",
+    "influences": [
+      "bonnie-raitt",
+      "stevie-ray-vaughan",
+      "tom-petty",
+      "rolling-stones"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "jesse-dayton"
+    ],
+    "source": "13 Most Legendary And Famous Blues Artists of All Time; Female Blues Musicians And Singers"
+  },
+  {
+    "id": "joe-bonamassa",
+    "name": "Joe Bonamassa",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Joe_Bonamassa_-_2013_World_Tour_-_Meistersingerhalle_Nuernberg_-_11-03-2013_%281534407%29.jpg/500px-Joe_Bonamassa_-_2013_World_Tour_-_Meistersinger_Nuernberg_-_11-03-2013_%281534407%29.jpg",
+    "image_source": "Wikipedia Commons",
+    "birthDate": "1977-05-08",
+    "birthPlace": "New Hartford, New York",
+    "birthCoords": [
+      -75.1947,
+      43.0711
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/shorts/SDEYzt7I2BA",
+    "albums": [
+      {
+        "name": "Different Shades of Blue",
+        "youtubeLink": "https://www.youtube.com/watch?v=Ogu-XdLQK_U"
+      },
+      {
+        "name": "Blues of Desperation",
+        "youtubeLink": "https://www.youtube.com/watch?v=YF7ZKJXMm0k"
+      },
+      {
+        "name": "Royal Tea",
+        "youtubeLink": "https://www.youtube.com/watch?v=Jq0F0v-KGyk"
+      },
+      {
+        "name": "Time Clocks",
+        "youtubeLink": "https://www.youtube.com/watch?v=cQ0qG9kjMls"
+      }
+    ],
+    "description": "Joe Bonamassa is a modern blues virtuoso who began his career touring with B.B. King at age 12. He has scored numerous number 1 albums on the US charts and created the Keeping The Blues Alive Records label to promote blues talent.",
+    "activeFrom": "1989",
+    "influences": [
+      "bb-king",
+      "muddy-waters",
+      "howlin-wolf"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bb-king",
+      "john-mayall"
+    ],
+    "source": "13 Most Legendary And Famous Blues Artists of All Time"
+  },
+  {
+    "id": "joanne-shaw-taylor",
+    "name": "Joanne Shaw Taylor",
+    "image": "https://www.joanneshawtaylor.com/wp-content/uploads/2024/05/JST-282-1024x683.jpg",
+    "image_source": "Official Website",
+    "birthDate": "1985-02-13",
+    "birthPlace": "Wednesbury, West Midlands, England",
+    "birthCoords": [
+      -2.0333,
+      52.5667
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      "Nashville"
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "British Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=E8fSX0jJimQ",
+    "albums": [
+      {
+        "name": "The Blues Album",
+        "youtubeLink": "https://www.youtube.com/watch?v=suUTCqEEF38"
+      }
+    ],
+    "description": "Joanne Shaw Taylor is an English blues rock guitarist discovered by Dave Stewart at age sixteen. Known for her punchy lead tones on her favorite Telecaster, she delivers soulful performances and is currently based in Nashville.",
+    "activeFrom": "2002",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "dave-stewart",
+      "joe-bonamassa",
+      "josh-smith"
+    ],
+    "source": "13 Modern Blues Guitarists to keep on your radar in 2025"
+  },
+  {
+    "id": "marcia-ball",
+    "name": "Marcia Ball",
+    "image": "https://commons.wikimedia.org/wiki/File:Marcia_Ball_31_Rawa_Blues_2011_057.jpg",
+    "image_source": "Wikimedia Commons",
+    "birthDate": "1949-03-20",
+    "birthPlace": "Orange, Texas",
+    "birthCoords": [
+      -94.1158,
+      30.0956
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      "Austin",
+      "New Orleans"
+    ],
+    "instrument": "Piano, Voice",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=0wMIgQ_m9b0",
+    "albums": [
+      {
+        "name": "Sing It!",
+        "youtubeLink": "https://www.youtube.com/watch?v=eh54DTlE4SQ"
+      }
+    ],
+    "description": "Marcia Ball is an American blues singer and pianist known for her unique style combining Texas stomp-rock with Louisiana blues-swamp. She was described in USA Today as 'a sensation, saucy singer and superb pianist.' Inducted into Blues Hall of Fame in 2026.",
+    "activeFrom": "1970",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "irma-thomas",
+      "tracy-nelson"
+    ],
+    "source": "Female Blues Musicians And Singers: 16 Influential Artists"
   }
 ]

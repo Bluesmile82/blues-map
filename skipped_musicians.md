@@ -60,21 +60,18 @@ Doc Reed
 Dock Boggs
 Dock Walsh
 Dr. Hepcat
-Dr. Ross
 Dykes Magic City Trio
 E. C. Ball & Orna Ball
 Ed Andrews
 Ed Lewis
 Eddie Bowles
 Eddie Head & His Family
-Eddie Kirkland
 Edward Thompson
 Elester Anderson
 Eli Framer
 Elijah Jones
 Elzadie Robinson
 Emery Glen
-Gabriel Brown
 Garfield Akers
 Geeshie Wiley
 Gene Campbell
@@ -86,7 +83,6 @@ George Noble
 George Reneau
 George Torey
 Georgia Slim
-Georgia White
 Gid Tanner
 Guitar Shorty
 Guitar Slim & Jelly Belly
@@ -100,14 +96,12 @@ Henry Johnson
 James Henry Diggs
 James Lowry
 James Putmon
-Jaybird Coleman
 Jaydee Short
 Jenny Pope
 Jesse James
 Jesse Lee Vortis
 Jesse Thomas
 Jesse Wadley
-Jessie Mae Hemphill
 Jewell Long
 Jim Brewer
 Jimmie Gordon
@@ -139,7 +133,6 @@ Johnny Jones
 Johnny Young
 Jolly Two
 Julius Daniels
-K. C. Douglas
 Kelly Harrell
 Kentucky Ramblers
 Kid Bailey
@@ -179,7 +172,6 @@ Mildred White
 Milton Sparks
 Mississippi Bracey
 Lucious Curtis
-Luke Jordan
 Luther Huff
 Luther Stoneham
 Macon Ed and Tampa Joe
@@ -189,19 +181,16 @@ Marshall Owens
 Martha Copeland
 Mattie Delaney
 Memphis Willie B.
-Mercy Dee
 Merline Johnson
 Myrt Holmes
 Nugrape Twins
 Ollie Rupert
 Ollis Martin
-Oscar Woods
 Otis Harris
 Otto Virgial
 P.R. Higginbotham
 Reese Crenshaw
 Rev. Edward W. Clayborn
-Rev. Gary Davis
 Rev. Rassie Moore
 Rich Amerson
 Rich Trice
@@ -215,7 +204,6 @@ Robert Lockwood Jr.
 Robert Peeples
 Robert Pete Williams
 Robert Petway
-Robert Wilkins
 Roger "Burn Down" Garnett
 Romeo Nelson
 Roosevelt Antrim
@@ -231,7 +219,6 @@ Roy Harvey
 Rube Lacy
 Rufus and Ben Quillian
 Ruth Willis
-Sam Chatmon
 Sam McGee
 Sam Montgomery
 Sam Townsend

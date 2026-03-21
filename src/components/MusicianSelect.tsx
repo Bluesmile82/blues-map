@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import type { Musician } from '../types';
 
 interface MusicianSelectProps {
@@ -11,6 +12,7 @@ interface MusicianSelectProps {
 }
 
 export default function MusicianSelect({ selected, onChange, musicians, placeholder, label, disabled = false }: MusicianSelectProps) {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [search, setSearch] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
@@ -48,7 +50,7 @@ export default function MusicianSelect({ selected, onChange, musicians, placehol
 
   return (
     <div className="relative">
-      <label className="block text-ink3 text-sm mb-1">{label || 'Select musicians'}</label>
+      <label className="block text-ink3 text-sm mb-1">{label || t('musicianSelect.selectMusicians')}</label>
       
       {/* Selected items display */}
       <div
@@ -56,7 +58,7 @@ export default function MusicianSelect({ selected, onChange, musicians, placehol
         className={`min-h-[60px] p-2 bg-bg border ${disabled ? 'border-border-subtle opacity-50' : 'border-border-subtle hover:border-border cursor-pointer'} rounded-lg flex flex-wrap gap-2 focus-within:ring-2 focus-within:ring-accent/20`}
       >
         {selectedMusicians.length === 0 && !isOpen && (
-          <span className="text-ink3/50 text-sm">{placeholder || 'Select musicians...'}</span>
+          <span className="text-ink3/50 text-sm">{placeholder || t('musicianSelect.selectMusiciansPlaceholder')}</span>
         )}
         
         {selectedMusicians.map((musician) => (
@@ -94,7 +96,7 @@ export default function MusicianSelect({ selected, onChange, musicians, placehol
               setTimeout(() => inputRef.current?.focus(), 0);
             }}
           >
-            + Add
+            {t('musicianSelect.add')}
           </button>
         )}
       </div>
@@ -112,7 +114,7 @@ export default function MusicianSelect({ selected, onChange, musicians, placehol
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search musicians..."
+              placeholder={t('musicianSelect.searchMusicians')}
               className="w-full px-3 py-2 bg-bg2 border border-border-subtle rounded text-ink text-sm focus:border-accent focus:outline-none"
               autoFocus
             />
@@ -122,7 +124,7 @@ export default function MusicianSelect({ selected, onChange, musicians, placehol
           <div className="overflow-y-auto flex-1 p-1">
             {filteredMusicians.length === 0 ? (
               <div className="text-ink3/50 text-sm text-center py-4">
-                {search ? 'No musicians found' : 'All musicians selected'}
+                {search ? t('musicianSelect.noMusiciansFound') : t('musicianSelect.allSelected')}
               </div>
             ) : (
               filteredMusicians.slice(0, 50).map((musician) => (
@@ -146,7 +148,7 @@ export default function MusicianSelect({ selected, onChange, musicians, placehol
                   />
                   <div className="flex-1 min-w-0">
                     <div className="text-sm font-medium text-ink truncate">{musician.name}</div>
-                    <div className="text-xs text-ink3 truncate">{musician.bluesStyle}</div>
+                    <div className="text-xs text-ink3 truncate">{t(`styles.${musician.bluesStyle}`, musician.bluesStyle)}</div>
                   </div>
                   <span
                     className="text-xs px-2 py-0.5 rounded font-medium"
@@ -155,7 +157,7 @@ export default function MusicianSelect({ selected, onChange, musicians, placehol
                       background: `rgba(${getStyleColor(musician.bluesStyle).join(',')},0.15)`,
                     }}
                   >
-                    {musician.bluesStyle.replace(' Blues', '')}
+                    {t(`styles.${musician.bluesStyle}`, musician.bluesStyle).replace(' Blues', '')}
                   </span>
                 </button>
               ))

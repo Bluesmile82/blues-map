@@ -1,5 +1,6 @@
 // src/components/lists/PublicListView.tsx
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { supabase } from '../../lib/supabase'
 import type { Musician } from '../../types'
 import type { DbList, DbFavorite } from '../../types/database'
@@ -17,6 +18,7 @@ export default function PublicListView({
   onSelectMusician,
   onClose,
 }: PublicListViewProps) {
+  const { t } = useTranslation()
   const [list, setList] = useState<DbList | null>(null)
   const [favoriteIds, setFavoriteIds] = useState<string[]>([])
   const [loading, setLoading] = useState(true)
@@ -35,7 +37,7 @@ export default function PublicListView({
         .single()
 
       if (listError || !listData) {
-        setError('List not found or is private')
+        setError(t('lists.listNotFound'))
         setLoading(false)
         return
       }
@@ -48,7 +50,7 @@ export default function PublicListView({
         .eq('list_id', listData.id)
 
       if (favoritesError) {
-        setError('Failed to load list contents')
+        setError(t('lists.failedToLoad'))
         setLoading(false)
         return
       }
@@ -70,11 +72,11 @@ export default function PublicListView({
         <div className="flex items-center justify-between p-4 border-b border-border-subtle">
           <div>
             <h3 className="font-semibold text-lg text-ink">
-              {loading ? 'Loading...' : list?.name ?? 'List'}
+              {loading ? t('auth.loading') : list?.name ?? t('lists.list')}
             </h3>
             {!loading && !error && (
               <p className="text-sm text-ink3">
-                {listMusicians.length} musician{listMusicians.length !== 1 ? 's' : ''}
+                {listMusicians.length} {listMusicians.length !== 1 ? t('filters.musicians') : t('filters.musician')}
               </p>
             )}
           </div>
@@ -106,7 +108,7 @@ export default function PublicListView({
 
           {!loading && !error && listMusicians.length === 0 && (
             <div className="flex flex-col items-center justify-center py-12 text-center px-4">
-              <p className="text-ink3">This list is empty</p>
+              <p className="text-ink3">{t('lists.emptyList')}</p>
             </div>
           )}
 
@@ -127,7 +129,7 @@ export default function PublicListView({
               <div className="flex-1 min-w-0">
                 <div className="font-medium truncate text-ink">{musician.name}</div>
                 <div className="text-sm text-ink3 truncate">
-                  {musician.bluesStyle} • {musician.instrument}
+                  {t(`styles.${musician.bluesStyle}`, musician.bluesStyle)} • {musician.instrument.split(', ').map(i => t(`instruments.${i}`, i)).join(', ')}
                 </div>
               </div>
             </button>

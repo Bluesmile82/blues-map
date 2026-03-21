@@ -1,5 +1,6 @@
 // src/components/lists/ListsManager.tsx
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useAtomValue } from 'jotai'
 import { listsAtom, favoritesMapAtom } from '../../atoms/lists'
 import { useLists } from '../../hooks/useLists'
@@ -9,6 +10,7 @@ interface ListsManagerProps {
 }
 
 export default function ListsManager({ onClose }: ListsManagerProps) {
+  const { t } = useTranslation()
   const lists = useAtomValue(listsAtom)
   const favoritesMap = useAtomValue(favoritesMapAtom)
   const { createList, renameList, deleteList, togglePublic } = useLists()
@@ -55,7 +57,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
 
       <div className="absolute top-10 w-full max-w-md mx-4 bg-bg border border-border-subtle rounded-xl shadow-2xl">
         <div className="flex items-center justify-between p-4 border-b border-border-subtle">
-          <h3 className="font-semibold text-lg text-ink">My Lists</h3>
+          <h3 className="font-semibold text-lg text-ink">{t('lists.myLists')}</h3>
           <button
             onClick={onClose}
             className="p-1 rounded-lg text-ink3 hover:bg-bg-hover hover:text-ink transition-colors"
@@ -95,12 +97,12 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                       <span className="font-medium truncate text-ink">{list.name}</span>
                       {list.isDefault && (
                         <span className="text-2xs px-1.5 py-0.5 rounded bg-primary/20 text-primary">
-                          Default
+                          {t('lists.default')}
                         </span>
                       )}
                     </div>
                     <span className="text-sm text-ink3">
-                      {count} musician{count !== 1 ? 's' : ''}
+                      {count} {count !== 1 ? t('filters.musicians') : t('filters.musician')}
                     </span>
                   </div>
                 )}
@@ -113,7 +115,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                       ? 'text-accent bg-accent/10'
                       : 'text-ink3 hover:bg-bg-hover'
                       }`}
-                    title={list.isPublic ? 'Public' : 'Private'}
+                    title={list.isPublic ? t('lists.public') : t('lists.private')}
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {list.isPublic ? (
@@ -129,7 +131,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                     <button
                       onClick={() => handleCopyLink(list.shareSlug!)}
                       className="p-2 rounded-lg text-ink3 hover:bg-bg-hover transition-colors"
-                      title="Copy link"
+                      title={t('lists.copyLink')}
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
@@ -145,7 +147,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                         setEditingName(list.name)
                       }}
                       className="p-2 rounded-lg text-ink3 hover:bg-bg-hover transition-colors"
-                      title="Rename"
+                      title={t('lists.rename')}
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -162,7 +164,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
                         }
                       }}
                       className="p-2 rounded-lg text-ink3 hover:bg-danger-bg hover:text-danger transition-colors"
-                      title="Delete"
+                      title={t('lists.delete')}
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
@@ -181,7 +183,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
               type="text"
               value={newListName}
               onChange={(e) => setNewListName(e.target.value)}
-              placeholder="Create new list..."
+              placeholder={t('lists.createNewList')}
               maxLength={100}
               className="flex-1 px-3 py-2 rounded-lg bg-bg-elevated border border-border-subtle focus:border-accent focus:outline-none transition-colors text-ink placeholder-ink3"
             />
@@ -190,7 +192,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
               disabled={creating || !newListName.trim()}
               className="px-4 py-2 rounded-lg bg-primary hover:bg-primary2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium text-ink"
             >
-              {creating ? '...' : 'Create'}
+              {creating ? '...' : t('lists.create')}
             </button>
           </div>
         </form>

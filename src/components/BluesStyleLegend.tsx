@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { STYLE_COLORS, CANONICAL_STYLES } from '../utils/colors'
 
 interface BluesStyleLegendProps {
@@ -23,6 +24,7 @@ export default function BluesStyleLegend({
   position = 'bottom-left',
   embedded = false,
 }: BluesStyleLegendProps) {
+  const { t } = useTranslation()
   const positionClasses = {
     'bottom-left': 'absolute bottom-4 left-4 sm:bottom-5 sm:left-15',
     'top-right': 'absolute top-16 right-4',
@@ -41,7 +43,7 @@ export default function BluesStyleLegend({
         onClick={onToggle}
         className="flex items-center justify-between gap-2 px-3 py-2 text-2xs sm:text-label text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
       >
-        <span>Blues Style</span>
+        <span>{t('filters.bluesStyle')}</span>
         <span className="text-3xs opacity-60">{isOpen ? '▲' : '▼'}</span>
       </button>
 
@@ -72,7 +74,7 @@ export default function BluesStyleLegend({
                     boxShadow: isActive || isSelected ? `0 0 5px rgba(${r},${g},${b},0.6)` : 'none',
                   }}
                 />
-                <span className="text-label flex-1">{style}</span>
+                <span className="text-label flex-1">{t(`styles.${style}`, style)}</span>
                 {isSelected && (
                   <span className="text-2xs opacity-50">✕</span>
                 )}
@@ -85,7 +87,7 @@ export default function BluesStyleLegend({
               onClick={() => onStyleFilterChange(null)}
               className="w-full px-3 py-1.5 text-2xs text-ink3 hover:text-ink hover:bg-bg-hover transition-colors text-left"
             >
-              Clear filter
+              {t('filters.clearFilter')}
             </button>
           )}
         </div>

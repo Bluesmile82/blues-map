@@ -1,4 +1,5 @@
 import { useMemo, useState, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import type { Musician } from '../types';
 import { getStyleHex, getStyleColor, STYLE_HEX } from '../utils/colors';
 import { getYear } from '../utils/layout';
@@ -34,7 +35,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
 
   const influencers = musician.influences.map((id) => musicianMap[id]).filter(Boolean) as Musician[];
   const influenced = completeMusicians.filter((m) => m.influences.includes(musician.id));
-  const playedWith = musician.playedWith.map((id) => musicianMap[id]).filter(Boolean) as Musician[];
+  const playedWith = (musician.playedWith ?? []).map((id) => musicianMap[id]).filter(Boolean) as Musician[];
   const hex = getStyleHex(musician.bluesStyle);
   const [r, g, b] = getStyleColor(musician.bluesStyle) as [number, number, number];
 
@@ -44,6 +45,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   const { toggleFavorite } = useLists();
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showListsDropdown, setShowListsDropdown] = useState(false);
+  const { t } = useTranslation();
 
   // Handle backdrop click with a small delay to prevent ghost clicks on mobile
   const [canClose, setCanClose] = useState(false);
@@ -114,7 +116,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
         {/* ── Close button – always visible, top-right corner ── */}
         <button
           onClick={onClose}
-          aria-label="Close panel"
+          aria-label={t('musician.closePanel')}
           className={`absolute z-50 w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-full bg-bg-hover border border-border text-ink3 text-sm hover:text-ink hover:border-accent hover:bg-bg-deep transition-all duration-200 shadow-sm pointer-events-auto
             ${isMobile ? 'top-2 right-3' : 'top-4 right-4'}`}
         >
@@ -166,7 +168,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                   border: `1px solid rgba(${r},${g},${b},0.25)`,
                 }}
               >
-                {musician.bluesStyle}
+                {t(`styles.${musician.bluesStyle}`, musician.bluesStyle)}
               </span>
               {musician.secondaryStyles?.map(style => {
                 const styleHex = STYLE_HEX[style] ?? '#969696';
@@ -180,27 +182,27 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                       background: `${styleHex}12`,
                     }}
                   >
-                    {style}
+                    {t(`styles.${style}`, style)}
                   </span>
                 );
               })}
             </div>
             <p className="text-ink3 text-2xs sm:text-ui leading-relaxed font-medium">
-              {musician.birthPlace} · b. {getYear(musician.birthDate)}
+              {musician.birthPlace} · {t('musician.bornAbbr')} {getYear(musician.birthDate)}
               {musician.deathDate
-                ? ` — d. ${getYear(musician.deathDate)}`
-                : ' — active'}
+                ? ` — ${t('musician.diedAbbr')} ${getYear(musician.deathDate)}`
+                : ` — ${t('musician.active')}`}
             </p>
-            <p className="text-ink2 text-2xs sm:text-ui mt-0.5">{musician.instrument}</p>
+            <p className="text-ink2 text-2xs sm:text-ui mt-0.5">{musician.instrument.split(', ').map(i => t(`instruments.${i}`, i)).join(', ')}</p>
             {musician.image_source && !isMobile && (
-              <p className="text-ink3 text-xs mt-1 italic">Image: {musician.image_source}</p>
+              <p className="text-ink3 text-xs mt-1 italic">{t('musician.image')}: {musician.image_source}</p>
             )}
             {editMode && (
               <button
                 onClick={onEdit}
                 className="mt-2 inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-accent text-bg rounded text-xs sm:text-sm font-medium hover:bg-accent/90 transition-colors"
               >
-                ✏️ Edit
+                ✏️ {t('musician.editBtn')}
               </button>
             )}
             {/* Favorite buttons */}
@@ -221,7 +223,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                 <svg className="w-4 h-4 sm:w-5 sm:h-5" fill={isFavorited(musician.id) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
-                <span className="text-xs sm:text-sm font-medium">{isFavorited(musician.id) ? 'Favorited' : 'Favorite'}</span>
+                <span className="text-xs sm:text-sm font-medium">{isFavorited(musician.id) ? t('musician.favorited') : t('musician.favorite')}</span>
               </button>
 
               <button
@@ -237,7 +239,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                 <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                 </svg>
-                <span className="text-xs sm:text-sm font-medium">Add to list</span>
+                <span className="text-xs sm:text-sm font-medium">{t('musician.addToList')}</span>
               </button>
             </div>
 
@@ -263,7 +265,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
 
           {/* Listen */}
           {musician.youtubeLink && (
-            <Section title="Listen" r={r} g={g} b={b} hex={hex}>
+            <Section title={t('musician.listen')} r={r} g={g} b={b} hex={hex}>
               <button
                 onClick={() => onPlayVideo(musician.youtubeLink)}
                 className="inline-flex items-center gap-3 px-5 py-3 rounded-md text-ui font-medium border transition-all duration-150"
@@ -287,14 +289,14 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                   style={{ background: `rgba(${r},${g},${b},0.25)` }}>
                   ▶
                 </span>
-                Watch on YouTube
+                {t('musician.watchOnYoutube')}
               </button>
             </Section>
           )}
 
           {/* Albums */}
           {musician.albums.length > 0 && (
-            <Section title="Notable Albums" r={r} g={g} b={b} hex={hex}>
+            <Section title={t('musician.notableAlbums')} r={r} g={g} b={b} hex={hex}>
               <ul className="flex flex-col gap-4">
                 {musician.albums.map((album) => (
                   <li key={album.name} className="flex items-start gap-3">
@@ -322,7 +324,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                           }}
                         >
                           <span className="text-2xs">▶</span>
-                          Listen
+                          {t('musician.listen')}
                         </button>
                       )}
                     </div>
@@ -334,7 +336,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
 
           {/* Influenced by */}
           {influencers.length > 0 && (
-            <Section title="Influenced by" r={r} g={g} b={b} hex={hex}>
+            <Section title={t('musician.influencedBy')} r={r} g={g} b={b} hex={hex}>
               <div className="flex flex-wrap gap-2.5">
                 {influencers.map((m) => (
                   <MusicianChip key={m.id} musician={m} onClick={() => onNavigate(m)} />
@@ -345,7 +347,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
 
           {/* Influenced */}
           {influenced.length > 0 && (
-            <Section title="Influenced" r={r} g={g} b={b} hex={hex}>
+            <Section title={t('musician.influenced')} r={r} g={g} b={b} hex={hex}>
               <div className="flex flex-wrap gap-2.5">
                 {influenced.map((m) => (
                   <MusicianChip key={m.id} musician={m} onClick={() => onNavigate(m)} />
@@ -356,7 +358,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
 
           {/* Played with */}
           {playedWith.length > 0 && (
-            <Section title="Played with" r={r} g={g} b={b} hex={hex}>
+            <Section title={t('musician.playedWith')} r={r} g={g} b={b} hex={hex}>
               <div className="flex flex-wrap gap-2.5">
                 {playedWith.map((m) => (
                   <MusicianChip key={m.id} musician={m} onClick={() => onNavigate(m)} />
@@ -366,14 +368,14 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
           )}
 
           {/* Details */}
-          <Section title="Details" r={r} g={g} b={b} hex={hex}>
+          <Section title={t('musician.details')} r={r} g={g} b={b} hex={hex}>
             <div className="flex flex-col gap-2">
-              <DetailRow label="Born" value={`${musician.birthDate.split('-')[0]} — ${musician.birthPlace}`} />
+              <DetailRow label={t('musician.born')} value={`${musician.birthDate.split('-')[0]} — ${musician.birthPlace}`} />
               {musician.deathDate && musician.deathPlace && (
-                <DetailRow label="Died" value={`${musician.deathDate.split('-')[0]} — ${musician.deathPlace}`} />
+                <DetailRow label={t('musician.died')} value={`${musician.deathDate.split('-')[0]} — ${musician.deathPlace}`} />
               )}
               {musician.spentTimePlaces.length > 0 && (
-                <DetailRow label="Active in" value={musician.spentTimePlaces.map((s) => s.place).join(', ')} />
+                <DetailRow label={t('musician.activeIn')} value={musician.spentTimePlaces.map((s) => s.place).join(', ')} />
               )}
             </div>
           </Section>

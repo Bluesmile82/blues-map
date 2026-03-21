@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import type { Album } from '../types';
 
 declare global {
@@ -57,6 +58,7 @@ export default function MobileVideoPlayer({
   onClose,
   autoplay = true,
 }: MobileVideoPlayerProps) {
+  const { t } = useTranslation();
   const playerRef = useRef<YT.Player | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [apiReady, setApiReady] = useState(false);
@@ -211,7 +213,7 @@ export default function MobileVideoPlayer({
     <div className="shrink-0 border-t border-border-subtle bg-bg/50 relative" style={{ height: '180px' }}>
       {!apiReady && (
         <div className="absolute inset-0 flex items-center justify-center bg-bg/50 z-10">
-          <div className="text-ink3/50 text-xs">Loading...</div>
+          <div className="text-ink3/50 text-xs">{t('video.loading')}</div>
         </div>
       )}
       {/* Header */}
@@ -300,7 +302,7 @@ export default function MobileVideoPlayer({
         <button
           onClick={onClose}
           className="p-1 rounded text-ink/90 hover:bg-bg3/30"
-          title="Close video"
+          title={t('video.closeVideo')}
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

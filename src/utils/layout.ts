@@ -332,7 +332,7 @@ export function computeTreeLayout(
     });
 
     // Process playedWith
-    m.playedWith.forEach((peerId) => {
+    (m.playedWith ?? []).forEach((peerId) => {
       const peer = musicianById[peerId];
       if (!peer) return;
       if (!options.naturalPositions) {

@@ -15,6 +15,7 @@ import { isMusicianFavoritedAtom, listsAtom, favoritesMapAtom } from '../atoms/l
 import { userAtom } from '../atoms/auth';
 import { useMapClusters } from '../hooks/useMapClusters';
 import type { ClusterGroup, ClusterPoint, SpiderLeg } from '../hooks/useMapClusters';
+import { useTranslation } from 'react-i18next';
 
 const MAP_STYLES = {
   light: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
@@ -71,6 +72,7 @@ function MusicianSidebar({
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
 }) {
+  const { t } = useTranslation();
   const favorites = useAtomValue(isMusicianFavoritedAtom);
   const [searchQuery, setSearchQuery] = useState('');
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
@@ -132,7 +134,7 @@ function MusicianSidebar({
         onClick={() => setFiltersCollapsed(!filtersCollapsed)}
         className="flex items-center justify-between w-full text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors mb-3 px-1"
       >
-        <span>Filters</span>
+        <span>{t('filters.title')}</span>
         <svg
           className={`w-3 h-3 opacity-60 transition-transform ${filtersCollapsed ? '' : 'rotate-180'}`}
           fill="none"
@@ -150,7 +152,7 @@ function MusicianSidebar({
             <SearchInput
               value={searchQuery}
               onChange={setSearchQuery}
-              placeholder="Search by name or birthplace..."
+              placeholder={t('map.searchByNameOrBirthplace')}
             />
           </div>
 
@@ -165,7 +167,7 @@ function MusicianSidebar({
                   onChange={(e) => setShowFavoritesOnly(e.target.checked)}
                 />
                 <label htmlFor="map-favorites-filter" className="text-label text-ink3 cursor-pointer">
-                  Show favorites only
+                  {t('filters.showFavoritesOnly')}
                 </label>
               </div>
 
@@ -177,7 +179,7 @@ function MusicianSidebar({
                     onChange={(e) => setFilterListId(e.target.value || null)}
                     className="text-label bg-bg-subtle border border-border-subtle rounded px-2 py-1.5 text-ink focus:border-accent focus:outline-none"
                   >
-                    <option value="">All lists</option>
+                    <option value="">{t('filters.allLists')}</option>
                     {lists.map((list) => {
                       const count = favoritesMap.get(list.id)?.size ?? 0
                       return (
@@ -212,7 +214,7 @@ function MusicianSidebar({
       <div className="flex-1 overflow-y-auto px-3 py-3">
         {filteredMusicians.items.length === 0 ? (
           <div className="text-center py-8 text-ink3 text-sm">
-            No musicians found matching your search
+            {t('map.noMusiciansFound')}
           </div>
         ) : (
           <div className="flex flex-col">
@@ -221,7 +223,7 @@ function MusicianSidebar({
                 return (
                   <div key={`decade-${item.decade}`} className="sticky -top-3 z-10 py-1 px-3 bg-bg border-b border-border">
                     <span className="text-xs font-bold text-accent tracking-wide">
-                      <span className='uppercase'>Active in</span> {item.decade}s
+                      <span className='uppercase'>{t('map.activeInDecade')}</span> {item.decade}s
                     </span>
                   </div>
                 );
@@ -321,13 +323,14 @@ function MusicianSidebar({
 
       {/* Footer count */}
       <div className="shrink-0 px-5 py-3 border-t border-border text-xs text-ink3 bg-bg font-medium">
-        {filteredMusicians.count} of {musicians.length} musicians
+        {filteredMusicians.count} {t('map.ofMusicians')} {musicians.length} {t('filters.musicians')}
       </div>
     </div>
   );
 }
 
 export default function MapView({ musicians, onSelect, selectedId, styleFilter, onStyleFilterChange, theme, isMobile }: MapViewProps) {
+  const { t } = useTranslation();
   const completeMusicians = useMemo(() => {
     const valid = musicians.filter((m) =>
       m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
@@ -654,14 +657,14 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
           className="sm:hidden absolute top-1 right-2 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/55 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm"
         >
           <span>✕</span>
-          <span>Close</span>
+          <span>{t('map.close')}</span>
         </button>
       ) : <button
         onClick={() => setSidebarOpen(o => !o)}
         className="sm:hidden absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/55 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm"
       >
         <span>☰</span>
-        <span>Musicians</span>
+        <span>{t('map.musicians')}</span>
       </button>
       }
 
@@ -714,12 +717,12 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
 
       {/* Legend */}
       <div className={`absolute right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none transition-all ${isMobile ? 'bottom-16' : 'bottom-6'}`}>
-        <p className="text-2xs text-accent tracking-widest uppercase mb-1">Map Key</p>
+        <p className="text-2xs text-accent tracking-widest uppercase mb-1">{t('map.legend.title')}</p>
           {[
-            { label: 'Birth place', el: <span className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" /> },
-            { label: 'Cluster (click to expand)', el: <span className="w-3.5 h-3.5 rounded-full bg-accent/60 border-[1.5px] border-white/60 shrink-0 flex items-center justify-center text-[6px] text-white font-bold">n</span> },
-            { label: 'Time spent', el: <span className="w-2.5 h-2.5 rounded-full border-[1.5px] border-accent shrink-0" /> },
-            { label: 'Migration arc', el: <span className="w-4 h-0.5 bg-gradient-to-r from-accent/40 to-accent/90 rounded shrink-0" /> },
+            { label: t('map.legend.birthPlace'), el: <span className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" /> },
+            { label: t('map.legend.cluster'), el: <span className="w-3.5 h-3.5 rounded-full bg-accent/60 border-[1.5px] border-white/60 shrink-0 flex items-center justify-center text-[6px] text-white font-bold">n</span> },
+            { label: t('map.legend.timeSpent'), el: <span className="w-2.5 h-2.5 rounded-full border-[1.5px] border-accent shrink-0" /> },
+            { label: t('map.legend.migrationArc'), el: <span className="w-4 h-0.5 bg-gradient-to-r from-accent/40 to-accent/90 rounded shrink-0" /> },
           ].map(({ label, el }) => (
             <div key={label} className="flex items-center gap-2 text-xs text-ink2">
               {el}
@@ -732,8 +735,8 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
         {hoveredMusician && !selectedId && (
           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-bg2/96 border border-accent rounded-md px-4 py-2 flex items-center gap-2.5 pointer-events-none whitespace-nowrap">
             <strong className="text-ink text-sm">{hoveredMusician.name}</strong>
-            <span className="text-ink2 text-xs">Born: {hoveredMusician.birthPlace}</span>
-            <span className="text-accent text-xs">{hoveredMusician.bluesStyle}</span>
+            <span className="text-ink2 text-xs">{t('map.tooltip.born')}: {hoveredMusician.birthPlace}</span>
+            <span className="text-accent text-xs">{t(`styles.${hoveredMusician.bluesStyle}`, hoveredMusician.bluesStyle)}</span>
           </div>
         )}
       </div>

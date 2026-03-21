@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import type { Musician, Album, SpentTimePlace } from '../types';
 import { STYLE_COLORS, getStyleColor } from '../utils/colors';
 import MusicianSelect from './MusicianSelect';
@@ -36,26 +37,27 @@ interface ValidationErrors {
   youtubeLink?: string;
 }
 
-function validateForm(formData: Musician): ValidationErrors {
+function validateForm(formData: Musician, t: (key: string) => string): ValidationErrors {
   const errors: ValidationErrors = {};
-  if (!formData.name.trim()) errors.name = 'Name is required';
-  if (!formData.description.trim()) errors.description = 'Description is required';
-  if (!formData.image.trim()) errors.image = 'Image URL is required';
-  if (!formData.birthDate.trim()) errors.birthDate = 'Birth date is required';
-  if (!formData.birthPlace.trim()) errors.birthPlace = 'Birth place is required';
-  if (!formData.activeFrom.trim()) errors.activeFrom = 'Active from year is required';
-  if (!formData.instrument.trim()) errors.instrument = 'Instrument is required';
-  if (!formData.bluesStyle) errors.bluesStyle = 'Blues style is required';
+  if (!formData.name.trim()) errors.name = t('editPanel.nameRequired');
+  if (!formData.description.trim()) errors.description = t('editPanel.descriptionRequired');
+  if (!formData.image.trim()) errors.image = t('editPanel.imageRequired');
+  if (!formData.birthDate.trim()) errors.birthDate = t('editPanel.birthDateRequired');
+  if (!formData.birthPlace.trim()) errors.birthPlace = t('editPanel.birthPlaceRequired');
+  if (!formData.activeFrom.trim()) errors.activeFrom = t('editPanel.activeFromRequired');
+  if (!formData.instrument.trim()) errors.instrument = t('editPanel.instrumentRequired');
+  if (!formData.bluesStyle) errors.bluesStyle = t('editPanel.bluesStyleRequired');
   if (formData.birthCoords[0] === 0 && formData.birthCoords[1] === 0) {
-    errors.birthCoords = 'Birth coordinates are required';
+    errors.birthCoords = t('editPanel.birthCoordsRequired');
   }
   if (formData.youtubeLink && !/^https?:\/\/.+/.test(formData.youtubeLink)) {
-    errors.youtubeLink = 'Must be a valid URL';
+    errors.youtubeLink = t('editPanel.invalidUrl');
   }
   return errors;
 }
 
 export default function EditPanel({ musician, musicians, onClose, onSave, onDelete, isNew = false }: EditPanelProps) {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<Musician>({ ...musician });
   const [isSaving, setIsSaving] = useState(false);
   const [saveStatus, setSaveStatus] = useState('');
@@ -73,10 +75,10 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
   );
 
   useEffect(() => {
-    setFormData({ 
-      ...musician, 
+    setFormData({
+      ...musician,
       playedWith: musician.playedWith ?? [],
-      influencedBy: musician.influencedBy ?? [] 
+      influencedBy: musician.influencedBy ?? []
     });
     setBirthCoordsRaw(musician.birthCoords.every(c => c === 0) ? '' : musician.birthCoords.join(', '));
     setDeathCoordsRaw(musician.deathCoords ? musician.deathCoords.join(', ') : '');
@@ -140,7 +142,7 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
     const deathCoords = deathCoordsRaw.trim() ? (parseCoordsString(deathCoordsRaw) ?? formData.deathCoords) : null;
     const updatedForm = { ...formData, birthCoords, deathCoords };
 
-    const validationErrors = validateForm(updatedForm);
+    const validationErrors = validateForm(updatedForm, t);
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       // Mark all fields as touched to show errors
@@ -157,10 +159,10 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
         musicianToSave.id = generateSlug(updatedForm.name);
       }
       await onSave(musicianToSave);
-      setSaveStatus(isNew ? 'Created successfully!' : 'Saved successfully!');
+      setSaveStatus(isNew ? t('editPanel.createdSuccess') : t('editPanel.savedSuccess'));
       setTimeout(() => onClose(), 800);
     } catch (error) {
-      setSaveStatus('Error saving. Please try again.');
+      setSaveStatus(t('editPanel.saveError'));
       console.error('Save error:', error);
     } finally {
       setIsSaving(false);
@@ -168,7 +170,7 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
   };
 
   const handleDelete = () => {
-    if (onDelete && formData.id && confirm('Are you sure you want to delete this musician?')) {
+    if (onDelete && formData.id && confirm(t('editPanel.confirmDelete'))) {
       onDelete(formData.id);
     }
   };
@@ -180,14 +182,14 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
       <div className="bg-bg-elevated border border-border-subtle rounded-lg shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-hidden flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-border-subtle bg-bg-hover">
-          <h2 className="text-xl font-bold text-ink">{isNew ? 'New Musician' : 'Edit Musician'}</h2>
+          <h2 className="text-xl font-bold text-ink">{isNew ? t('editPanel.newMusician') : t('editPanel.editMusician')}</h2>
           <div className="flex items-center gap-3">
             {!isNew && onDelete && (
               <button
                 onClick={handleDelete}
                 className="px-3 py-1.5 text-sm text-red-400 hover:text-red-300 hover:bg-red-900/30 rounded border border-red-900/50 transition-colors"
               >
-                Delete
+                {t('editPanel.delete')}
               </button>
             )}
             <button onClick={onClose} className="text-ink3 hover:text-ink text-2xl leading-none">✕</button>
@@ -199,21 +201,21 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
 
           {/* Basic Info */}
           <section className="space-y-4">
-            <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">Basic Info</h3>
+            <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">{t('editPanel.basicInfo')}</h3>
 
             <div className="grid grid-cols-2 gap-4">
-              <Field label="Name" required error={fieldError('name')}>
+              <Field label={t('editPanel.name')} required error={fieldError('name')}>
                 <input
                   type="text"
                   value={formData.name}
                   onChange={(e) => handleChange('name', e.target.value)}
                   onBlur={() => handleBlur('name')}
-                  placeholder="e.g. Robert Johnson"
+                  placeholder={t('editPanel.namePlaceholder')}
                   className={inputClass(fieldError('name'))}
                 />
               </Field>
 
-              <Field label="ID (auto-generated)">
+              <Field label={t('editPanel.idAutoGenerated')}>
                 <input
                   type="text"
                   value={isNew ? generateSlug(formData.name) : formData.id}
@@ -223,13 +225,13 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
               </Field>
             </div>
 
-            <Field label="Description" required error={fieldError('description')}>
+            <Field label={t('editPanel.description')} required error={fieldError('description')}>
               <textarea
                 value={formData.description}
                 onChange={(e) => handleChange('description', e.target.value)}
                 onBlur={() => handleBlur('description')}
                 rows={3}
-                placeholder="Brief biography..."
+                placeholder={t('editPanel.descriptionPlaceholder')}
                 className={inputClass(fieldError('description')) + ' resize-none'}
               />
             </Field>
@@ -237,8 +239,8 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
 
           {/* Image */}
           <section className="space-y-4">
-            <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">Image</h3>
-             <Field label="Image URL" required error={fieldError('image')}>
+            <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">{t('editPanel.image')}</h3>
+             <Field label={t('editPanel.imageUrl')} required error={fieldError('image')}>
                <div className="flex gap-2">
                  <input
                    type="url"
@@ -256,7 +258,7 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
                      title="Download and save as local thumbnail"
                      className="shrink-0 px-3 py-2 text-xs bg-bg-hover border border-border-subtle rounded text-ink3 hover:text-ink hover:border-accent disabled:opacity-50 transition-colors"
                    >
-                     {isDownloadingImage ? 'Saving…' : '⬇ Save local'}
+                     {isDownloadingImage ? t('editPanel.saving') : t('editPanel.saveLocal')}
                    </button>
                  )}
                </div>
@@ -265,15 +267,15 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
                )}
              </Field>
 
-             <Field label="Image Source" error={fieldError('image_source' as keyof Musician)}>
+             <Field label={t('editPanel.imageSource')} error={fieldError('image_source' as keyof Musician)}>
                <input
                  type="text"
                  value={formData.image_source || ''}
                  onChange={(e) => handleChange('image_source' as keyof Musician, e.target.value)}
-                 placeholder="e.g., Wikipedia, Library of Congress"
+                 placeholder={t('editPanel.imageSourcePlaceholder')}
                  className={inputClass(fieldError('image_source' as keyof Musician))}
                />
-               <p className="text-ink3 text-xs mt-1">Source or attribution for the image</p>
+               <p className="text-ink3 text-xs mt-1">{t('editPanel.imageSourceHint')}</p>
              </Field>
 
              {formData.image && (
@@ -290,10 +292,10 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
 
           {/* Dates & Locations */}
           <section className="space-y-4">
-            <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">Dates & Locations</h3>
+            <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">{t('editPanel.datesAndLocations')}</h3>
 
             <div className="grid grid-cols-2 gap-4">
-              <Field label="Birth Date" required error={fieldError('birthDate')}>
+              <Field label={t('editPanel.birthDate')} required error={fieldError('birthDate')}>
                 <input
                   type="date"
                   value={formData.birthDate}
@@ -303,23 +305,23 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
                 />
               </Field>
 
-              <Field label="Birth Place" required error={fieldError('birthPlace')}>
+              <Field label={t('editPanel.birthPlace')} required error={fieldError('birthPlace')}>
                 <input
                   type="text"
                   value={formData.birthPlace}
                   onChange={(e) => handleChange('birthPlace', e.target.value)}
                   onBlur={() => handleBlur('birthPlace')}
-                  placeholder="e.g. Hinds County, Mississippi"
+                  placeholder={t('editPanel.birthPlacePlaceholder')}
                   className={inputClass(fieldError('birthPlace'))}
                 />
               </Field>
             </div>
 
             <Field
-              label="Birth Coordinates (longitude, latitude)"
+              label={t('editPanel.birthCoordinates')}
               required
               error={fieldError('birthCoords')}
-              hint="e.g. -90.2557, 32.2988"
+              hint={t('editPanel.birthCoordinatesHint')}
             >
               <input
                 type="text"
@@ -332,7 +334,7 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
             </Field>
 
             <div className="grid grid-cols-2 gap-4">
-              <Field label="Death Date" hint="Leave empty if still alive">
+              <Field label={t('editPanel.deathDate')} hint={t('editPanel.deathDateHint')}>
                 <input
                   type="date"
                   value={formData.deathDate || ''}
@@ -341,18 +343,18 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
                 />
               </Field>
 
-              <Field label="Death Place" hint="Leave empty if still alive">
+              <Field label={t('editPanel.deathPlace')} hint={t('editPanel.deathPlaceHint')}>
                 <input
                   type="text"
                   value={formData.deathPlace || ''}
                   onChange={(e) => handleChange('deathPlace', e.target.value || null)}
-                  placeholder="e.g. Chicago, Illinois"
+                  placeholder={t('editPanel.deathPlacePlaceholder')}
                   className={inputClass()}
                 />
               </Field>
             </div>
 
-            <Field label="Death Coordinates" hint="longitude, latitude — leave empty if still alive">
+            <Field label={t('editPanel.deathCoordinates')} hint={t('editPanel.deathCoordinatesHint')}>
               <input
                 type="text"
                 value={deathCoordsRaw}
@@ -363,13 +365,13 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
               />
             </Field>
 
-            <Field label="Active From (year)" required error={fieldError('activeFrom')}>
+            <Field label={t('editPanel.activeFromYear')} required error={fieldError('activeFrom')}>
               <input
                 type="number"
                 value={formData.activeFrom}
                 onChange={(e) => handleChange('activeFrom', e.target.value)}
                 onBlur={() => handleBlur('activeFrom')}
-                placeholder="e.g. 1930"
+                placeholder={t('editPanel.activeFromPlaceholder')}
                 min={1800}
                 max={2025}
                 className={inputClass(fieldError('activeFrom'))}
@@ -379,21 +381,21 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
 
           {/* Music Info */}
           <section className="space-y-4">
-            <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">Music Info</h3>
+            <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">{t('editPanel.musicInfo')}</h3>
 
             <div className="grid grid-cols-2 gap-4">
-              <Field label="Instrument(s)" required error={fieldError('instrument')}>
+              <Field label={t('editPanel.instruments')} required error={fieldError('instrument')}>
                 <input
                   type="text"
                   value={formData.instrument}
                   onChange={(e) => handleChange('instrument', e.target.value)}
                   onBlur={() => handleBlur('instrument')}
-                  placeholder="e.g. Guitar, Vocals"
+                  placeholder={t('editPanel.instrumentsPlaceholder')}
                   className={inputClass(fieldError('instrument'))}
                 />
               </Field>
 
-              <Field label="Primary Style" required error={fieldError('bluesStyle')} hint="Used for color and grouping">
+              <Field label={t('editPanel.primaryStyle')} required error={fieldError('bluesStyle')} hint={t('editPanel.primaryStyleHint')}>
                 <select
                   value={formData.bluesStyle}
                   onChange={(e) => {
@@ -407,15 +409,15 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
                   onBlur={() => handleBlur('bluesStyle')}
                   className={inputClass(fieldError('bluesStyle'))}
                 >
-                  <option value="">Select a style…</option>
+                  <option value="">{t('editPanel.selectStyle')}</option>
                   {BLUES_STYLES.map(style => (
-                    <option key={style} value={style}>{style}</option>
+                    <option key={style} value={style}>{t(`styles.${style}`, style)}</option>
                   ))}
                 </select>
               </Field>
             </div>
 
-            <Field label="Secondary Styles" hint="Click to toggle additional styles this musician played">
+            <Field label={t('editPanel.secondaryStyles')} hint={t('editPanel.secondaryStylesHint')}>
               <div className="flex flex-wrap gap-2 mt-1">
                 {BLUES_STYLES.filter(s => s !== formData.bluesStyle).map(style => {
                   const [r, g, b] = getStyleColor(style) as [number, number, number];
@@ -438,14 +440,14 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
                       }}
                       className="px-2.5 py-1 rounded-full text-xs font-medium transition-all hover:opacity-80"
                     >
-                      {style}
+                      {t(`styles.${style}`, style)}
                     </button>
                   );
                 })}
               </div>
             </Field>
 
-            <Field label="YouTube Link" error={fieldError('youtubeLink')} hint="Main track or performance video">
+            <Field label={t('editPanel.youtubeLink')} error={fieldError('youtubeLink')} hint={t('editPanel.youtubeLinkHint')}>
               <input
                 type="url"
                 value={formData.youtubeLink}
@@ -460,13 +462,13 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
           {/* Albums */}
           <section className="space-y-4">
             <div className="flex items-center justify-between">
-              <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">Albums</h3>
+              <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">{t('editPanel.albums')}</h3>
               <button
                 type="button"
                 onClick={() => handleChange('albums', [...formData.albums, { name: '', youtubeLink: '' } as Album])}
                 className="text-xs px-3 py-1 bg-accent text-bg rounded hover:bg-accent/90 transition-colors"
               >
-                + Add Album
+                {t('editPanel.addAlbum')}
               </button>
             </div>
             <div className="space-y-2">
@@ -481,7 +483,7 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
                         updated[index] = { ...album, name: e.target.value };
                         handleChange('albums', updated);
                       }}
-                      placeholder="Album name"
+                      placeholder={t('editPanel.albumName')}
                       className={inputClass()}
                     />
                     <input
@@ -492,7 +494,7 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
                         updated[index] = { ...album, youtubeLink: e.target.value };
                         handleChange('albums', updated);
                       }}
-                      placeholder="YouTube link (optional)"
+                      placeholder={t('editPanel.albumYoutubeLink')}
                       className={inputClass()}
                     />
                   </div>
@@ -501,7 +503,7 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
                     onClick={() => handleChange('albums', formData.albums.filter((_, i) => i !== index))}
                     className="text-ink3 hover:text-red-400 text-sm mt-2"
                   >
-                    Remove
+                    {t('editPanel.remove')}
                   </button>
                 </div>
               ))}
@@ -511,13 +513,13 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
           {/* Spent Time Places */}
           <section className="space-y-4">
             <div className="flex items-center justify-between">
-              <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">Spent Time Places</h3>
+              <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">{t('editPanel.spentTimePlaces')}</h3>
               <button
                 type="button"
                 onClick={() => handleChange('spentTimePlaces', [...formData.spentTimePlaces, { place: '', coords: [0, 0] } as SpentTimePlace])}
                 className="text-xs px-3 py-1 bg-accent text-bg rounded hover:bg-accent/90 transition-colors"
               >
-                + Add Place
+                {t('editPanel.addPlace')}
               </button>
             </div>
             <div className="space-y-2">
@@ -538,36 +540,36 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
 
           {/* Influences */}
           <section className="space-y-4">
-            <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">Influences</h3>
-            
+            <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">{t('editPanel.influences')}</h3>
+
             <MusicianSelect
-              label="Influenced by (musicians)"
+              label={t('editPanel.influencedByLabel')}
               selected={formData.influences}
               onChange={(ids) => handleChange('influences', ids)}
               musicians={musicians}
-              placeholder="Select musicians that influenced this artist"
+              placeholder={t('editPanel.influencedByPlaceholder')}
             />
-            
+
             <MusicianSelect
-              label="Influenced (musicians this artist influenced)"
+              label={t('editPanel.influencedLabel')}
               selected={formData.influencedBy}
               onChange={(ids) => handleChange('influencedBy', ids)}
               musicians={musicians}
-              placeholder="Select musicians influenced by this artist"
+              placeholder={t('editPanel.influencedPlaceholder')}
             />
-            
+
             <MusicianSelect
-              label="Played with (musicians)"
+              label={t('editPanel.playedWithLabel')}
               selected={formData.playedWith}
               onChange={(ids) => handleChange('playedWith', ids)}
               musicians={musicians}
-              placeholder="Select musicians this artist played with"
+              placeholder={t('editPanel.playedWithPlaceholder')}
             />
           </section>
 
           {/* Status */}
           <section className="space-y-4">
-            <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">Status</h3>
+            <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">{t('editPanel.status')}</h3>
             <label className="flex items-center gap-2 text-ink2 text-sm cursor-pointer">
               <input
                 type="checkbox"
@@ -575,7 +577,7 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
                 onChange={(e) => handleChange('incomplete', e.target.checked)}
                 className="w-4 h-4 accent-accent"
               />
-              Mark as incomplete (hide from visualization)
+              {t('editPanel.markIncomplete')}
             </label>
           </section>
         </div>
@@ -589,7 +591,7 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
               </span>
             )}
             {Object.keys(errors).length > 0 && touched.size > 0 && !saveStatus && (
-              <span className="text-red-400 text-xs">Please fix the errors above</span>
+              <span className="text-red-400 text-xs">{t('editPanel.fixErrors')}</span>
             )}
           </div>
           <div className="flex gap-3">
@@ -598,14 +600,14 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
               disabled={isSaving}
               className="px-4 py-2 text-ink3 text-sm font-medium hover:text-ink disabled:opacity-50 transition-colors"
             >
-              Cancel
+              {t('editPanel.cancel')}
             </button>
             <button
               onClick={handleSubmit}
               disabled={isSaving}
               className="px-6 py-2 bg-accent text-bg text-sm font-medium rounded hover:bg-accent/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
-              {isSaving ? (isNew ? 'Creating...' : 'Saving...') : (isNew ? 'Create Musician' : 'Save Changes')}
+              {isSaving ? (isNew ? t('editPanel.creating') : t('editPanel.savingStatus')) : (isNew ? t('editPanel.createMusician') : t('editPanel.saveChanges'))}
             </button>
           </div>
         </div>
@@ -643,6 +645,7 @@ function SpentPlaceRow({ place, onChange, onRemove }: {
   onChange: (updated: SpentTimePlace) => void;
   onRemove: () => void;
 }) {
+  const { t } = useTranslation();
   const [coordsRaw, setCoordsRaw] = useState(
     place.coords.every(c => c === 0) ? '' : place.coords.join(', ')
   );
@@ -661,7 +664,7 @@ function SpentPlaceRow({ place, onChange, onRemove }: {
           type="text"
           value={place.place}
           onChange={(e) => onChange({ ...place, place: e.target.value })}
-          placeholder="Place name"
+          placeholder={t('editPanel.placeName')}
           className="w-full px-3 py-2 bg-bg-elevated border border-border-subtle rounded text-ink text-sm focus:border-accent focus:outline-none"
         />
         <input
@@ -669,7 +672,7 @@ function SpentPlaceRow({ place, onChange, onRemove }: {
           value={coordsRaw}
           onChange={(e) => setCoordsRaw(e.target.value)}
           onBlur={handleCoordsBlur}
-          placeholder="Coordinates: longitude, latitude"
+          placeholder={t('editPanel.coordinatesPlaceholder')}
           className="w-full px-3 py-2 bg-bg-elevated border border-border-subtle rounded text-ink text-sm focus:border-accent focus:outline-none"
         />
       </div>
@@ -678,7 +681,7 @@ function SpentPlaceRow({ place, onChange, onRemove }: {
         onClick={onRemove}
         className="text-ink3 hover:text-red-400 text-sm mt-2"
       >
-        Remove
+        {t('editPanel.remove')}
       </button>
     </div>
   );
