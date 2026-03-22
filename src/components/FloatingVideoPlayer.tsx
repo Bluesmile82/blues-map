@@ -30,7 +30,8 @@ declare namespace YT {
   const PlayerState: { PLAYING: number; PAUSED: number; ENDED: number };
 }
 
-function extractVideoId(url: string): string | null {
+function extractVideoId(url: string | null): string | null {
+  if (!url) return null;
   const match = url.match(/[?&]v=([^&#]+)/) || url.match(/youtu\.be\/([^?&#]+)/);
   return match ? match[1] : null;
 }

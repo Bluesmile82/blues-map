@@ -9574,12 +9574,7 @@
     "instrument": "Guitar, Voice, Keyboard instrument",
     "bluesStyle": "British Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=Kh5lcx0kAMo",
-    "albums": [
-      {
-        "name": "Based on the provided context",
-        "youtubeLink": null
-      }
-    ],
+    "albums": [],
     "description": "Eric Patrick Clapton (born 30 March 1945) is an English rock and blues guitarist, singer, and songwriter.  He is regarded as one of the most successful and influential guitarists in rock music.  Clapton ranked second in Rolling Stone's list of the \"100 Greatest Guitarists of All Time\" and fourth in Gibson's \"Top 50 Guitarists of All Time\".",
     "activeFrom": "1962",
     "influences": [],
@@ -29297,7 +29292,7 @@
   {
     "id": "jeff-beck",
     "name": "Jeff Beck",
-    "image": "",
+    "image": "/images/musicians/jeff-beck.webp",
     "image_source": "",
     "birthDate": "1944-06-24",
     "birthPlace": "Wallington, Surrey, England",
@@ -29322,7 +29317,7 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "British Blues",
-    "youtubeLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=6Q0p7yXoOVg",
     "albums": [
       {
         "name": "Truth (1968)",
