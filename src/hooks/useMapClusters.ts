@@ -20,6 +20,8 @@ export interface ClusterGroup {
   count: number;
   /** Representative blues style (most common in cluster) */
   bluesStyle: string;
+  /** Distribution of blues styles in this cluster (style → count) */
+  styleDistribution: Record<string, number>;
 }
 
 export interface SpiderLeg {
@@ -250,6 +252,7 @@ export function useMapClusters({
             position: coords,
             count: selectedExtracted ? clusterCount - 1 : clusterCount,
             bluesStyle: topStyle,
+            styleDistribution: Object.fromEntries(styleCounts),
           });
         }
       } else {
@@ -282,12 +285,16 @@ export function useMapClusters({
     setSpideredClusterId(null);
   }, []);
 
-  /** Always spider on cluster click so individual musicians are selectable */
+  /** Spider small clusters; zoom into large ones (>40) to break them apart */
   const onClusterClick = useCallback(
-    (clusterId: number) => {
+    (clusterId: number, count: number, position: [number, number]): { zoomTo?: { longitude: number; latitude: number; zoom: number } } | void => {
+      if (count > 40) {
+        const expansionZoom = Math.min(index.getClusterExpansionZoom(clusterId) + 1, maxClusterZoom);
+        return { zoomTo: { longitude: position[0], latitude: position[1], zoom: expansionZoom } };
+      }
       setSpideredClusterId(clusterId);
     },
-    []
+    [index, maxClusterZoom]
   );
 
   // Collapse spider when zoom changes significantly

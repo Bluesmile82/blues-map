@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect, useCallback } from 'react';
 import DeckGL from '@deck.gl/react';
-import { ScatterplotLayer, ArcLayer, TextLayer, LineLayer } from '@deck.gl/layers';
+import { ScatterplotLayer, ArcLayer, TextLayer, LineLayer, SolidPolygonLayer } from '@deck.gl/layers';
 
 import type { MapViewState } from '@deck.gl/core';
 import Map from 'react-map-gl/maplibre';
@@ -31,6 +31,14 @@ const INITIAL_VIEW_STATE: MapViewState = {
   minZoom: 2,
   maxZoom: 14,
 };
+
+// ── Pie wedge polygon type ──────────────────────────────────────────────────
+
+interface PieWedge {
+  polygon: [number, number][];
+  color: [number, number, number, number];
+  clusterId: number;
+}
 
 interface SpentFlat {
   coords: [number, number];
@@ -128,7 +136,7 @@ function MusicianSidebar({
   }, [musicians, searchQuery, styleFilter, showFavoritesOnly, filterListId, favorites, favoritesMap]);
 
   return (
-    <div className="absolute left-0 top-0 bottom-0 px-4 pt-4 w-80 bg-bg/85 backdrop-blur-sm flex flex-col z-10 shadow-2xl border-r border-border-subtle">
+    <div className="absolute left-0 top-0 bottom-0 px-4 pt-4 w-80 bg-bg/30 backdrop-blur-sm flex flex-col z-10 shadow-2xl border-r border-border-subtle">
       {/* Filters toggle */}
       <button
         onClick={() => setFiltersCollapsed(!filtersCollapsed)}
@@ -213,15 +221,15 @@ function MusicianSidebar({
       {/* Musician List */}
       <div className="flex-1 overflow-y-auto px-3 py-3">
         {filteredMusicians.items.length === 0 ? (
-          <div className="text-center py-8 text-ink3 text-sm">
+          <div className="text-center py-8 text-ink3 text-sm rounded-lg">
             {t('map.noMusiciansFound')}
           </div>
         ) : (
-          <div className="flex flex-col">
+          <div className="flex flex-col rounded-lg">
             {filteredMusicians.items.map((item: any) => {
               if (item.type === 'decade') {
                 return (
-                  <div key={`decade-${item.decade}`} className="sticky -top-3 z-10 py-1 px-3 bg-bg border-b border-border">
+                  <div key={`decade-${item.decade}`} className="sticky -top-3 z-10 py-1 px-3 bg-bg/80 backdrop-blur-lg rounded-t-lg border-b border-border">
                     <span className="text-xs font-bold text-accent tracking-wide">
                       <span className='uppercase'>{t('map.activeInDecade')}</span> {item.decade}s
                     </span>
@@ -242,11 +250,11 @@ function MusicianSidebar({
                   onClick={() => onSelect(musician)}
                   onMouseEnter={() => onHover(musician.id)}
                   onMouseLeave={() => onHover(null)}
-                  className={`flex items-center gap-1 px-4 py-1 transition-all duration-200 text-left mb-2 ${isSelected
-                    ? 'bg-[rgba(212, 154, 58, 0.12)] shadow-md'
+                  className={`flex items-center gap-1 px-4 py-1 transition-all duration-200 text-left mb-2 rounded-lg bg-bg/40 ${isSelected
+                    ? 'bg-bg/80 shadow-md'
                     : isHovered
-                      ? 'bg-bg3 shadow-sm'
-                      : 'bg-bg2 border-bode'
+                      ? 'shadow-sm bg-bg/80'
+                      : 'border-bode'
                     }`}
                 >
                   {/* Avatar */}
@@ -489,7 +497,24 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       updateTriggers: { getSourceColor: [focusId], getTargetColor: [focusId], getWidth: [focusId] },
     }),
 
-    // Spent time places
+    // Spider legs — lines from cluster center to spidered musicians
+    new LineLayer<SpiderLeg>({
+      id: 'spider-legs',
+      data: spiderLegs,
+      getSourcePosition: (d) => d.source,
+      getTargetPosition: (d) => d.target,
+      getColor: (d): [number, number, number, number] => {
+        const isFocused = d.musician.id === focusId;
+        const [r, g, b] = getStyleColor(d.musician.bluesStyle);
+        return [r, g, b, isFocused ? 200 : 100];
+      },
+      getWidth: (d) => (d.musician.id === focusId ? 2 : 1),
+      widthUnits: 'pixels' as const,
+      pickable: false,
+      updateTriggers: { getColor: [focusId], getWidth: [focusId] },
+    }),
+
+    // Spent time places (below clusters and musician dots)
     new ScatterplotLayer<SpentFlat>({
       id: 'spent-places',
       data: spentPlaces,
@@ -508,37 +533,58 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       updateTriggers: { getRadius: [focusId], getLineColor: [focusId] },
     }),
 
-    // Spider legs — lines from cluster center to spidered musicians
-    new LineLayer<SpiderLeg>({
-      id: 'spider-legs',
-      data: spiderLegs,
-      getSourcePosition: (d) => d.source,
-      getTargetPosition: (d) => d.target,
-      getColor: (d): [number, number, number, number] => {
-        const isFocused = d.musician.id === focusId;
-        const [r, g, b] = getStyleColor(d.musician.bluesStyle);
-        return [r, g, b, isFocused ? 200 : 100];
-      },
-      getWidth: (d) => (d.musician.id === focusId ? 2 : 1),
-      widthUnits: 'pixels' as const,
-      pickable: false,
-      updateTriggers: { getColor: [focusId], getWidth: [focusId] },
-    }),
+    // Cluster pie chart wedges — computed inline, depth test disabled so they render above spent-places
+    ...((): SolidPolygonLayer<PieWedge>[] => {
+      const wedges: PieWedge[] = [];
+      const SEGMENTS = 20;
+      const scale = 360 / (256 * Math.pow(2, viewState.zoom));
 
-    // Cluster circles
+      for (const cluster of clusters) {
+        const [lng, lat] = cluster.position;
+        const radiusPx = Math.min(16, Math.max(10, 7 + Math.sqrt(cluster.count) * 1.5));
+        const rLng = radiusPx * scale;
+        const rLat = radiusPx * scale * Math.cos(lat * Math.PI / 180);
+
+        const dist = cluster.styleDistribution;
+        const total = Object.values(dist).reduce((a, b) => a + b, 0);
+        if (total === 0) continue;
+
+        const styles = Object.entries(dist).sort((a, b) => b[1] - a[1]);
+        let startAngle = -Math.PI / 2;
+        for (const [style, count] of styles) {
+          const fraction = count / total;
+          const endAngle = startAngle + fraction * 2 * Math.PI;
+          const [r, g, b] = getStyleColor(style);
+          const segCount = Math.max(3, Math.round(fraction * SEGMENTS));
+          const pts: [number, number][] = [[lng, lat]];
+          for (let i = 0; i <= segCount; i++) {
+            const angle = startAngle + (endAngle - startAngle) * (i / segCount);
+            pts.push([lng + rLng * Math.cos(angle), lat + rLat * Math.sin(angle)]);
+          }
+          wedges.push({ polygon: pts, color: [r, g, b, 200], clusterId: cluster.clusterId });
+          startAngle = endAngle;
+        }
+      }
+
+      return [new SolidPolygonLayer<PieWedge>({
+        id: 'cluster-pies',
+        data: wedges,
+        getPolygon: (d) => d.polygon,
+        getFillColor: (d) => d.color,
+        pickable: false,
+        parameters: { depthCompare: 'always' as const },
+      })];
+    })(),
+
+    // Cluster border ring + picking — filled transparent for full-area click target
     new ScatterplotLayer<ClusterGroup>({
-      id: 'clusters',
+      id: 'cluster-rings',
       data: clusters,
       getPosition: (d) => d.position,
       radiusUnits: 'pixels' as const,
-      getRadius: (d) => {
-        // Pixel-based radius: readable but capped to avoid overlap
-        return Math.min(32, Math.max(18, 14 + Math.sqrt(d.count) * 3));
-      },
-      getFillColor: (d): [number, number, number, number] => {
-        const [r, g, b] = getStyleColor(d.bluesStyle);
-        return [r, g, b, 180];
-      },
+      getRadius: (d) => Math.min(16, Math.max(10, 7 + Math.sqrt(d.count) * 1.5)),
+      filled: true,
+      getFillColor: [0, 0, 0, 0],
       stroked: true,
       getLineColor: [255, 255, 255, 200] as [number, number, number, number],
       lineWidthUnits: 'pixels' as const,
@@ -547,15 +593,24 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       autoHighlight: true,
       highlightColor: [255, 255, 255, 60],
       onClick: ({ object }: { object?: ClusterGroup }) => {
-        if (object) onClusterClick(object.clusterId);
+        if (object) {
+          const result = onClusterClick(object.clusterId, object.count, object.position);
+          if (result?.zoomTo) {
+            setViewState((prev) => ({
+              ...prev,
+              ...result.zoomTo,
+              transitionDuration: 800,
+            }));
+          }
+        }
       },
       onHover: ({ object }: { object?: ClusterGroup }) => {
-        // Clear musician hover when hovering clusters
         if (object) {
           setHovered(null);
           setListHovered(null);
         }
       },
+      parameters: { depthCompare: 'always' as const },
     }),
 
     // Cluster count labels — disable depth test so text always renders on top of circles
@@ -564,7 +619,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       data: clusters,
       getPosition: (d) => d.position,
       getText: (d) => String(d.count),
-      getSize: 18,
+      getSize: 13,
       sizeUnits: 'pixels' as const,
       getColor: [255, 255, 255, 255] as [number, number, number, number],
       getTextAnchor: 'middle' as const,
@@ -645,7 +700,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       updateTriggers: { getColor: [focusId], getSize: [focusId] },
     }),
   ], [spentPlaces, migrationArcs, focusId, onSelect, visibleMapLabels, clusters, points,
-      spiderLegs, spideredClusterId, collapseSpider, onClusterClick, viewState, theme]);
+    spiderLegs, spideredClusterId, collapseSpider, onClusterClick, viewState, theme]);
 
   const hoveredMusician = hovered ? completeMusicians.find((m) => m.id === hovered) : null;
   return (
@@ -715,9 +770,9 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
           />
         </DeckGL>
 
-      {/* Legend */}
-      <div className={`absolute right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none transition-all ${isMobile ? 'bottom-16' : 'bottom-6'}`}>
-        <p className="text-2xs text-accent tracking-widest uppercase mb-1">{t('map.legend.title')}</p>
+        {/* Legend */}
+        <div className={`absolute right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none transition-all ${isMobile ? 'bottom-16' : 'bottom-6'}`}>
+          <p className="text-2xs text-accent tracking-widest uppercase mb-1">{t('map.legend.title')}</p>
           {[
             { label: t('map.legend.birthPlace'), el: <span className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" /> },
             { label: t('map.legend.cluster'), el: <span className="w-3.5 h-3.5 rounded-full bg-accent/60 border-[1.5px] border-white/60 shrink-0 flex items-center justify-center text-[6px] text-white font-bold">n</span> },

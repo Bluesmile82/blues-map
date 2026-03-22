@@ -11,6 +11,7 @@ import BluesStyleLegend from './BluesStyleLegend';
 import { useAtomValue } from 'jotai';
 import { listsAtom, favoritesMapAtom, isMusicianFavoritedAtom } from '../atoms/lists';
 import { userAtom } from '../atoms/auth';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import {
   computeTreeLayout,
   computeDecadeTicks,
@@ -1041,30 +1042,23 @@ export default function InfluenceView({
           </div>
 
           {/* Filter panel - collapsible on all screen sizes */}
-          <div className="absolute left-3 sm:left-16 top-3 sm:top-4 z-40">
+          <div className="absolute left-3 sm:left-16 top-3 sm:top-4 z-40 w-50 border border-accent/50 bg-bg/5 backdrop-blur-xs rounded-lg" style={{ width: 'min(220px, calc(100vw - 1.5rem))' }}>
             {filtersCollapsed ? (
               <button
                 onClick={() => setFiltersCollapsed(false)}
-                className="flex items-center gap-2 px-3 py-2 bg-bg/50 border border-border-subtle rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm transition-colors"
+                className="flex items-center justify-between w-full text-2xs text-accent2 tracking-widest uppercase hover:text-accent3 transition-colors mb-1 p-3"
               >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4h18M3 8h18M3 12h12" />
-                </svg>
                 <span>{t('filters.title')}</span>
-                <svg className="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+                <ChevronDown className="w-4 h-4 opacity-60" />
               </button>
             ) : (
-              <div className="flex flex-col gap-2 bg-bg/50 rounded-lg p-3" style={{ width: 'min(220px, calc(100vw - 1.5rem))' }}>
+              <div className="flex flex-col gap-2 p-3" style={{ width: 'min(218px, calc(100vw - 1.5rem))' }}>
                 <button
                   onClick={() => setFiltersCollapsed(true)}
-                  className="flex items-center justify-between w-full text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors mb-1"
+                  className="flex items-center justify-between w-full text-2xs text-accent2 tracking-widest uppercase hover:text-accent3 transition-colors mb-1"
                 >
                   <span>{t('filters.title')}</span>
-                  <svg className="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
+                  <ChevronUp className="w-4 h-4 opacity-60" />
                 </button>
                 <div className="relative">
                   <SearchInput
