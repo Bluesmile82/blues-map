@@ -27447,7 +27447,8 @@
     ],
     "secondaryStyles": [
       "Chicago Blues"
-    ]
+    ],
+    "incomplete": false
   },
   {
     "id": "corey-harris",
@@ -27515,7 +27516,8 @@
       "lead-belly"
     ],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": []
   },
   {
     "id": "cow-cow-davenport",
@@ -27558,8 +27560,8 @@
       }
     ],
     "instrument": "Piano, Vocals, Organ",
-    "bluesStyle": "Boogie-Woogie, Piano Blues, Vaudeville",
-    "youtubeLink": "https://www.youtube.com/watch?v=T8oIDmT3S0I",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=g0fvsdc7XEU&list=RDg0fvsdc7XEU&start_radio=1",
     "albums": [
       {
         "name": "Cow Cow Blues (1979)",
@@ -27577,12 +27579,16 @@
       "meade-lux-lewis",
       "albert-ammons"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": [],
+    "secondaryStyles": [
+      "Vaudeville Blues"
+    ]
   },
   {
     "id": "curtis-jones",
     "name": "Curtis Jones",
-    "image": "",
+    "image": "/images/musicians/curtis-jones.webp",
     "image_source": "",
     "birthDate": "1906-01-16",
     "birthPlace": "Nashville, Tennessee",
@@ -27613,8 +27619,8 @@
       }
     ],
     "instrument": "Piano, Vocals",
-    "bluesStyle": "Chicago Blues, Piano Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=g15N7iKZXFo",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=g15N7iKZXFo&list=PLY9eGiRxGa4_-_WcxVIj4qeXh7_SrPym9",
     "albums": [
       {
         "name": "Lonesome Bedroom Blues (1972)",
@@ -27625,7 +27631,8 @@
     "activeFrom": "1930",
     "influences": [],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": []
   },
   {
     "id": "dr-ross",
@@ -27691,7 +27698,8 @@
       "sonny-boy-williamson-i"
     ],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": []
   },
   {
     "id": "eddie-kirkland",
@@ -27734,8 +27742,8 @@
       }
     ],
     "instrument": "Guitar, Harmonica, Vocals",
-    "bluesStyle": "Electric Blues, Soul-Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=PNlWjCVy8wI",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ieG2DTvVFpc&list=PLOFsCPXqLYfqJ8XfvZUBGTC7KuSgRteiv",
     "albums": [
       {
         "name": "It's the Blues Man! (1962)",
@@ -27761,12 +27769,15 @@
       "blind-blake"
     ],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": [
+      "john-lee-hooker"
+    ]
   },
   {
     "id": "gabriel-brown",
     "name": "Gabriel Brown",
-    "image": "",
+    "image": "/images/musicians/gabriel-brown.webp",
     "image_source": "",
     "birthDate": "1910-05-07",
     "birthPlace": "Jacksonville, Florida",
@@ -27797,7 +27808,7 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "Country Blues, Piedmont Blues",
+    "bluesStyle": "Piedmont Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=EmZKtdtOjt0",
     "albums": [
       {
@@ -27809,7 +27820,8 @@
     "activeFrom": "1940",
     "influences": [],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": []
   },
   {
     "id": "jaybird-coleman",
@@ -27845,7 +27857,7 @@
       }
     ],
     "instrument": "Harmonica, Guitar, Vocals",
-    "bluesStyle": "Country Blues, Harmonica Blues",
+    "bluesStyle": "Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=wO6Zv4lRPJY",
     "albums": [
       {
@@ -27859,7 +27871,8 @@
     "influencedBy": [
       "big-joe-williams"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": []
   },
   {
     "id": "jessie-mae-hemphill",
@@ -27917,7 +27930,8 @@
       "sid-hemphill"
     ],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": []
   },
   {
     "id": "kc-douglas",
@@ -27967,8 +27981,8 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "Rural Blues, Country Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=zvZlESYi8aA",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=QsTfCITzISM",
     "albums": [
       {
         "name": "A Dead Beat Guitar and the Mississippi Blues (1956)",
@@ -27984,7 +27998,7 @@
       },
       {
         "name": "Mercury Blues (1974)",
-        "youtubeLink": ""
+        "youtubeLink": "https://www.youtube.com/watch?v=QsTfCITzISM"
       }
     ],
     "description": "K. C. Douglas was an American rural blues singer and guitarist. His song 'Mercury Boogie' (later 'Mercury Blues') has been covered by Steve Miller, David Lindley, Ry Cooder, Dwight Yoakam, and Alan Jackson. Ford Motor Company purchased rights to the song for a TV commercial. Douglas influenced Seasick Steve, whom he taught guitar while working at a garage in California.",
@@ -27993,12 +28007,13 @@
       "tommy-johnson"
     ],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": []
   },
   {
     "id": "luke-jordan",
     "name": "Luke Jordan",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Lukejordan.jpg/500px-Lukejordan.jpg",
+    "image": "/images/musicians/luke-jordan.webp",
     "image_source": "https://en.wikipedia.org/wiki/Luke_Jordan",
     "birthDate": "1892-01-28",
     "birthPlace": "Lynchburg, Virginia",
@@ -28043,8 +28058,8 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "Piedmont Blues, Country Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=iPb8L2k9xTM",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=40xYxLlJTYw",
     "albums": [
       {
         "name": "Complete Recorded Works (1927-1929)",
@@ -28055,12 +28070,13 @@
     "activeFrom": "1927",
     "influences": [],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": []
   },
   {
     "id": "mercy-dee",
     "name": "Mercy Dee",
-    "image": "",
+    "image": "/images/musicians/mercy-dee.webp",
     "image_source": "",
     "birthDate": "1915-04-16",
     "birthPlace": "Waco, Texas",
@@ -28091,7 +28107,7 @@
       }
     ],
     "instrument": "Piano, Vocals",
-    "bluesStyle": "West Coast Blues, Jump Blues",
+    "bluesStyle": "West Coast Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=5-lFt3cZpyI",
     "albums": [
       {
@@ -28103,7 +28119,11 @@
     "activeFrom": "1940",
     "influences": [],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": [],
+    "secondaryStyles": [
+      "Jump Blues"
+    ]
   },
   {
     "id": "rev-gary-davis",
@@ -28146,8 +28166,8 @@
       }
     ],
     "instrument": "Guitar, Banjo, Harmonica, Vocals",
-    "bluesStyle": "Gospel Blues, Piedmont Blues, Country Blues, Folk Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=9w8lJcVrGKQ",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=4fpPgo4Deo4",
     "albums": [
       {
         "name": "Harlem Street Singer (1960)",
@@ -28172,12 +28192,16 @@
     "influencedBy": [
       "blind-boy-fuller"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": [],
+    "secondaryStyles": [
+      "Country Blues"
+    ]
   },
   {
     "id": "robert-wilkins",
     "name": "Robert Wilkins",
-    "image": "",
+    "image": "/images/musicians/robert-wilkins.webp",
     "image_source": "",
     "birthDate": "1896-01-16",
     "birthPlace": "Hernando, Mississippi",
@@ -28208,8 +28232,8 @@
       }
     ],
     "instrument": "Guitar, Vocals",
-    "bluesStyle": "Country Blues, Memphis Blues, Gospel Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=5uKlVhT8wDw",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=FgENS7U_gJg",
     "albums": [
       {
         "name": "The Original Roll & Tumble (1964)",
@@ -28224,7 +28248,12 @@
     "activeFrom": "1928",
     "influences": [],
     "influencedBy": [],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": [],
+    "secondaryStyles": [
+      "Country Blues",
+      "Gospel"
+    ]
   },
   {
     "id": "sam-chatmon",
@@ -28287,7 +28316,8 @@
       "bo-carter",
       "lonnie-chatmon"
     ],
-    "incomplete": false
+    "incomplete": false,
+    "playedWith": []
   },
   {
     "id": "christone-kingfish-ingram",
@@ -29353,11 +29383,17 @@
     "spentTimePlaces": [
       {
         "name": "Chicago, Illinois",
-        "coords": [-87.6298, 41.8781]
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
       },
       {
         "name": "Archer, Florida",
-        "coords": [-82.519, 29.5294]
+        "coords": [
+          -82.519,
+          29.5294
+        ]
       }
     ],
     "instrument": "Guitar, Voice",
@@ -29412,11 +29448,17 @@
     "spentTimePlaces": [
       {
         "name": "London, England",
-        "coords": [-0.1276, 51.5074]
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
       },
       {
         "name": "Marin County, California",
-        "coords": [-122.7, 38.05]
+        "coords": [
+          -122.7,
+          38.05
+        ]
       }
     ],
     "instrument": "Voice, Guitar, Harmonica, Saxophone",
