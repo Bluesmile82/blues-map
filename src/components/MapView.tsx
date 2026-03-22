@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useCallback } from 'react';
+import { useState, useMemo, useEffect, useCallback, useRef } from 'react';
 import DeckGL from '@deck.gl/react';
 import { ScatterplotLayer, ArcLayer, TextLayer, LineLayer, SolidPolygonLayer } from '@deck.gl/layers';
 
@@ -370,6 +370,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
     clusters,
     points,
     spiderLegs,
+    spiderRadiusPx,
     spideredClusterId,
     onClusterClick,
     collapseSpider,
@@ -380,6 +381,27 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
     bounds: viewportBounds,
     selectedId,
   });
+
+  // Spider expand animation (0 → 1)
+  const [spiderProgress, setSpiderProgress] = useState(1);
+  const spiderAnimRef = useRef(0);
+  useEffect(() => {
+    if (spideredClusterId !== null) {
+      setSpiderProgress(0);
+      const start = performance.now();
+      const duration = 350;
+      const id = ++spiderAnimRef.current;
+      const animate = (now: number) => {
+        if (spiderAnimRef.current !== id) return; // cancelled
+        const t = Math.min(1, (now - start) / duration);
+        setSpiderProgress(1 - Math.pow(1 - t, 3)); // ease-out cubic
+        if (t < 1) requestAnimationFrame(animate);
+      };
+      requestAnimationFrame(animate);
+    } else {
+      setSpiderProgress(1);
+    }
+  }, [spideredClusterId]);
 
   // Collapse spider on zoom change
   const handleViewStateChange = useCallback(
@@ -410,12 +432,14 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
   const spentPlaces = useMemo<SpentFlat[]>(
     () =>
       completeMusicians.flatMap((m) =>
-        m.spentTimePlaces.map((s) => ({
-          coords: s.coords,
-          place: s.place,
-          musicianId: m.id,
-          musician: m,
-        }))
+        (m.spentTimePlaces ?? [])
+          .filter((s): s is { coords: [number, number]; place: string; name?: string } => typeof s === 'object' && s !== null && 'coords' in s)
+          .map((s) => ({
+            coords: s.coords,
+            place: s.place ?? s.name ?? '',
+            musicianId: m.id,
+            musician: m,
+          }))
       ),
     [completeMusicians]
   );
@@ -495,23 +519,6 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       getHeight: 0.4,
       pickable: false,
       updateTriggers: { getSourceColor: [focusId], getTargetColor: [focusId], getWidth: [focusId] },
-    }),
-
-    // Spider legs — lines from cluster center to spidered musicians
-    new LineLayer<SpiderLeg>({
-      id: 'spider-legs',
-      data: spiderLegs,
-      getSourcePosition: (d) => d.source,
-      getTargetPosition: (d) => d.target,
-      getColor: (d): [number, number, number, number] => {
-        const isFocused = d.musician.id === focusId;
-        const [r, g, b] = getStyleColor(d.musician.bluesStyle);
-        return [r, g, b, isFocused ? 200 : 100];
-      },
-      getWidth: (d) => (d.musician.id === focusId ? 2 : 1),
-      widthUnits: 'pixels' as const,
-      pickable: false,
-      updateTriggers: { getColor: [focusId], getWidth: [focusId] },
     }),
 
     // Spent time places (below clusters and musician dots)
@@ -630,6 +637,45 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       parameters: { depthCompare: 'always' as const },
     }),
 
+    // Spider background — semi-opaque disc behind expanded spider points (above clusters)
+    ...((): ScatterplotLayer[] => {
+      if (spiderLegs.length === 0 || spiderProgress === 0) return [];
+      const center = spiderLegs[0].source;
+      const radiusPx = spiderRadiusPx * spiderProgress * 2.2;
+      return [new ScatterplotLayer({
+        id: 'spider-bg',
+        data: [{ position: center }],
+        getPosition: (d: { position: [number, number] }) => d.position,
+        radiusUnits: 'pixels' as const,
+        getRadius: radiusPx,
+        filled: true,
+        getFillColor: theme === 'dark' ? [20, 15, 10, 160] : [245, 242, 238, 190],
+        stroked: false,
+        pickable: false,
+        parameters: { depthCompare: 'always' as const },
+      })];
+    })(),
+
+    // Spider legs — lines from cluster center to spidered musicians
+    new LineLayer<SpiderLeg>({
+      id: 'spider-legs',
+      data: spiderLegs,
+      getSourcePosition: (d) => d.source,
+      getTargetPosition: (d) => [
+        d.source[0] + (d.target[0] - d.source[0]) * spiderProgress,
+        d.source[1] + (d.target[1] - d.source[1]) * spiderProgress,
+      ] as [number, number],
+      getColor: (d): [number, number, number, number] => {
+        const isFocused = d.musician.id === focusId;
+        const [r, g, b] = getStyleColor(d.musician.bluesStyle);
+        return [r, g, b, isFocused ? 200 : 100];
+      },
+      getWidth: (d) => (d.musician.id === focusId ? 2 : 1),
+      widthUnits: 'pixels' as const,
+      pickable: false,
+      updateTriggers: { getColor: [focusId], getWidth: [focusId], getTargetPosition: [spiderProgress] },
+    }),
+
     // Individual musician dots (unclustered + spidered)
     // Sort so focused musician renders last (on top) for easier selection
     new ScatterplotLayer<ClusterPoint>({
@@ -639,7 +685,16 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
         const bFocus = b.musician.id === focusId ? 1 : 0;
         return aFocus - bFocus;
       }),
-      getPosition: (d) => d.position,
+      getPosition: (d) => {
+        if (d.spidered && spiderProgress < 1 && spiderLegs.length > 0) {
+          const center = spiderLegs[0].source;
+          return [
+            center[0] + (d.position[0] - center[0]) * spiderProgress,
+            center[1] + (d.position[1] - center[1]) * spiderProgress,
+          ] as [number, number];
+        }
+        return d.position;
+      },
       radiusUnits: 'pixels' as const,
       getRadius: (d) => {
         const id = d.musician.id;
@@ -674,6 +729,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
         getFillColor: [focusId],
         getLineColor: [focusId],
         getRadius: [focusId],
+        getPosition: [spiderProgress],
         data: [focusId],
       },
     }),
@@ -696,11 +752,15 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       },
       getTextAnchor: 'middle' as const,
       fontFamily: 'Georgia, serif',
+      background: true,
+      getBackgroundColor: (): [number, number, number, number] =>
+        theme === 'dark' ? [20, 15, 10, 180] : [255, 252, 248, 200],
+      backgroundPadding: [4, 2] as [number, number],
       pickable: false,
-      updateTriggers: { getColor: [focusId], getSize: [focusId] },
+      updateTriggers: { getColor: [focusId], getSize: [focusId], getBackgroundColor: [theme] },
     }),
   ], [spentPlaces, migrationArcs, focusId, onSelect, visibleMapLabels, clusters, points,
-    spiderLegs, spideredClusterId, collapseSpider, onClusterClick, viewState, theme]);
+    spiderLegs, spideredClusterId, collapseSpider, onClusterClick, viewState, theme, spiderProgress]);
 
   const hoveredMusician = hovered ? completeMusicians.find((m) => m.id === hovered) : null;
   return (

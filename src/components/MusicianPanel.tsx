@@ -193,7 +193,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                   ? ` — ${t('musician.diedAbbr')} ${getYear(musician.deathDate)}`
                   : ` — ${t('musician.active')}`}
               </p>
-              <p className="text-ink2 text-2xs sm:text-ui mt-0.5">{musician.instrument.split(', ').map(i => t(`instruments.${i}`, i)).join(', ')}</p>
+              <p className="text-ink2 text-2xs sm:text-ui mt-0.5">{[musician.instrument, ...(musician.secondaryInstruments ?? [])].map(i => t(`instruments.${i}`, i)).join(', ')}</p>
               {musician.image_source && !isMobile && (
                 <p className="text-ink3 text-xs mt-1 italic">{t('musician.image')}: {musician.image_source}</p>
               )}

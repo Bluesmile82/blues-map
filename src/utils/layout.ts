@@ -135,9 +135,9 @@ export function yearToWorldY(year: number, halfH: number, height: number, paddin
   return halfH - padding - ny * (height - 2 * padding);
 }
 
-/** Extract the primary instrument from a compound string like "Guitar, Vocals" */
+/** Return the primary instrument (already a single value after data migration) */
 function primaryInstrument(instrument: string): string {
-  return instrument.split(/[,\/]/)[0].trim() || 'Unknown';
+  return instrument || 'Unknown';
 }
 
 export interface LayoutConfig {

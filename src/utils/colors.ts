@@ -31,6 +31,30 @@ export const CANONICAL_STYLES = [
 
 export type BluesStyle = typeof CANONICAL_STYLES[number];
 
+export const CANONICAL_INSTRUMENTS = [
+  'Guitar',
+  'Piano',
+  'Harmonica',
+  'Vocals',
+  'Saxophone',
+  'Banjo',
+  'Drums',
+  'Bass',
+  'Organ',
+  'Keyboards',
+  'Fiddle',
+  'Mandolin',
+  'Slide guitar',
+  'Accordion',
+  'Clarinet',
+  'Flute',
+  'Violin',
+  'Double bass',
+  'Washboard',
+  'Tambourine',
+  'Trumpet',
+] as const;
+
 export const STYLE_COLORS: Record<string, RGB> = {
   'Delta Blues': [200, 135, 42],
   'Hill Country Blues': [130, 200, 90],

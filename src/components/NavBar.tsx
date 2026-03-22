@@ -42,6 +42,9 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
           </button>
         ))}
       </div>
+      <p className="hidden md:block text-label text-ink3 font-medium">
+        {editModeEnabled && editMode ? t('nav.clickToEdit') : t('nav.clickMusician')}
+      </p>
 
       {/* View switch - mobile */}
       <div className="sm:hidden flex bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5 ml-auto">
@@ -91,9 +94,8 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
           <span className="text-ui text-accent shrink-0">⚄</span>
           <span className="hidden sm:inline opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto group-hover:ml-2 transition-all duration-500 whitespace-nowrap">{t('nav.random')}</span>
         </button>
-        <button onClick={onCredits} className="flex items-center gap-2 px-3 pt-1 pb-1.5 rounded-lg text-ui font-medium tracking-wide border transition-all duration-500 overflow-hidden w-10 hover:w-auto bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink group" title={t('nav.creditsLegal')}>
-          <span className="text-ui text-accent shrink-0">©</span>
-          <span className="hidden sm:inline opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto group-hover:ml-2 transition-all duration-500 whitespace-nowrap">{t('nav.credits')}</span>
+        <button onClick={onCredits} className="flex items-center gap-2 px-3 pt-1 pb-1.5 text-ui font-medium tracking-wide text-ink3 hover:text-ink group" title={t('nav.creditsLegal')}>
+          {t('nav.credits')}
         </button>
         {editModeEnabled && editMode && (
           <button
@@ -116,9 +118,6 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
             <span className="hidden sm:inline opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto group-hover:ml-2 transition-all duration-500 whitespace-nowrap">{editMode ? t('nav.done') : t('nav.edit')}</span>
           </button>
         )}
-        <p className="hidden md:block text-label text-ink3 font-medium">
-          {editModeEnabled && editMode ? t('nav.clickToEdit') : t('nav.clickMusician')}
-        </p>
         <div className="flex items-center bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5">
           <button
             onClick={() => { i18n.changeLanguage('en'); localStorage.setItem('language', 'en'); }}

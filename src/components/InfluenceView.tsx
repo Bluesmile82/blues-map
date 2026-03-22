@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import DeckGL from '@deck.gl/react';
 import { OrthographicView } from '@deck.gl/core';
 import { PathLayer, ScatterplotLayer, TextLayer, IconLayer } from '@deck.gl/layers';
+import { PathStyleExtension } from '@deck.gl/extensions';
 import type { PickingInfo } from '@deck.gl/core';
 import type { Musician } from '../types';
 import { getStyleColor, getStyleHex } from '../utils/colors';
@@ -733,20 +734,7 @@ export default function InfluenceView({
           updateTriggers: { getPath: [xExpand] },
         })]
         : []),
-      // Played with edges (dim)
-      new PathLayer({
-        id: 'played-with-dim',
-        data: effectiveRelatedIds
-          ? playedWithEdges.filter((e) => !effectiveRelatedIds.has(e.sourceId) || !effectiveRelatedIds.has(e.targetId))
-          : playedWithEdges,
-        getPath: (d) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
-        getColor: (): [number, number, number, number] => theme === 'dark' ? [255, 255, 255, effectiveRelatedIds ? 8 : 5] : [0, 0, 0, effectiveRelatedIds ? 12 : 8],
-        getWidth: 1,
-        widthUnits: 'pixels' as const,
-        pickable: false,
-        updateTriggers: { getPath: [xExpand] },
-      }),
-      // Played with edges (highlighted)
+      // Played with edges (highlighted) — dashed
       ...(effectiveRelatedIds
         ? [new PathLayer({
           id: 'played-with-highlight',
@@ -756,10 +744,12 @@ export default function InfluenceView({
               : effectiveRelatedIds.has(e.sourceId) && effectiveRelatedIds.has(e.targetId)
           ),
           getPath: (d) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
-          getColor: (): [number, number, number, number] => theme === 'dark' ? [255, 255, 255, 200] : [0, 0, 0, 180],
+          getColor: (): [number, number, number, number] => theme === 'dark' ? [255, 255, 255, 150] : [0, 0, 0, 90],
           getWidth: 2,
           widthUnits: 'pixels' as const,
           pickable: false,
+          getDashArray: [3, 6],
+          extensions: [new PathStyleExtension({ dash: true })],
           updateTriggers: { getPath: [xExpand] },
         })]
         : []),
@@ -850,10 +840,17 @@ export default function InfluenceView({
           const isSelected = d.musician.id === selectedId;
           const isHovered = d.musician.id === hovered;
           const styleMatch = !hoveredStyle || d.musician.bluesStyle === hoveredStyle;
-          if (isSelected) return [255, 255, 225, 255];
-          if (isHovered) return [255, 255, 225, 255];
-          if (!styleMatch) return [255, 255, 255, 80];
-          return [255, 255, 255, effectiveRelatedIds ? 255 : 140];
+          if (theme === 'dark') {
+            if (isSelected) return [255, 255, 225, 255];
+            if (isHovered) return [255, 255, 225, 255];
+            if (!styleMatch) return [255, 255, 255, 200];
+            return [255, 255, 255, effectiveRelatedIds ? 255 : 200];
+          } else {
+            if (isSelected) return [0, 0, 0, 255];
+            if (isHovered) return [0, 0, 0, 255];
+            if (!styleMatch) return [0, 0, 0, 80];
+            return [0, 0, 0, effectiveRelatedIds ? 255 : 140];
+          }
         },
         getTextAnchor: 'middle',
         getAlignmentBaseline: 'top',
@@ -861,7 +858,8 @@ export default function InfluenceView({
         outlineWidth: 3,
         outlineColor: [0, 0, 0, 200],
         background: true,
-        backgroundColor: [0, 0, 0, 200],
+        backgroundPadding: [4, 4, 4, 4],
+        backgroundColor: theme === 'dark' ? [0, 0, 0, 170] : [255, 255, 255, 170],
         sizeUnits: 'common' as const,
         pickable: false,
         updateTriggers: {
@@ -1431,7 +1429,7 @@ export default function InfluenceView({
           )}
 
           {/* Zoom controls - bottom left */}
-          <div className="absolute bottom-4 left-3 sm:left-16 z-40 flex items-center gap-1">
+          <div className="absolute top-4 left-3 sm:left-100 z-40 flex items-center gap-1">
             <button
               onClick={() => handleZoom(0.4)}
               title="Zoom in"
@@ -1455,6 +1453,43 @@ export default function InfluenceView({
             </button>
           </div>
 
+
+          {/* Timeline legend */}
+          <div className={`absolute right-3 sm:right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none transition-all ${isMobile ? 'bottom-16' : 'bottom-6'}`}>
+            <p className="text-2xs text-accent tracking-widest uppercase mb-1">{t('timeline.legend.title')}</p>
+            {[
+              { label: t('timeline.legend.musician'), el: <span className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" /> },
+              {
+                label: t('timeline.legend.influence'), el: (
+                  <svg width="16" height="10" className="shrink-0">
+                    <path d="M0,5 Q8,0 16,5" fill="none" stroke="var(--color-accent)" strokeWidth="1.5" opacity="0.7" />
+                  </svg>
+                )
+              },
+              {
+                label: t('timeline.legend.playedWith'), el: (
+                  <svg width="16" height="10" className="shrink-0">
+                    <path d="M0,5 Q8,0 16,5" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="2 2" opacity="0.5" />
+                  </svg>
+                )
+              },
+              { label: t('timeline.legend.lifeSpan'), el: <span className="w-0.5 h-3 bg-accent/60 rounded shrink-0" /> },
+              {
+                label: t('timeline.legend.bluesStyle'), el: (
+                  <span className="flex gap-0.5 shrink-0">
+                    <span className="w-1.5 h-1.5 rounded-full" style={{ background: getStyleHex('Delta Blues') }} />
+                    <span className="w-1.5 h-1.5 rounded-full" style={{ background: getStyleHex('Chicago Blues') }} />
+                    <span className="w-1.5 h-1.5 rounded-full" style={{ background: getStyleHex('Texas Blues') }} />
+                  </span>
+                )
+              },
+            ].map(({ label, el }) => (
+              <div key={label} className="flex items-center gap-2 text-xs text-ink2">
+                {el}
+                {label}
+              </div>
+            ))}
+          </div>
 
           {/* Hover tooltip */}
           {hovered && !selectedId && (() => {

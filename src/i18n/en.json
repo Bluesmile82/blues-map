@@ -73,7 +73,7 @@
     "activeInDecade": "Active in",
     "ofMusicians": "of",
     "legend": {
-      "title": "Map Key",
+      "title": "Map Legend",
       "birthPlace": "Birth place",
       "cluster": "Cluster (click to expand)",
       "timeSpent": "Time spent",
@@ -81,6 +81,16 @@
     },
     "tooltip": {
       "born": "Born"
+    }
+  },
+  "timeline": {
+    "legend": {
+      "title": "Legend",
+      "musician": "Musician",
+      "influence": "Influence",
+      "playedWith": "Played with",
+      "lifeSpan": "Life span",
+      "bluesStyle": "Blues style color"
     }
   },
   "auth": {
@@ -181,6 +191,11 @@
     "musicInfo": "Music Info",
     "instruments": "Instrument(s)",
     "instrumentsPlaceholder": "e.g. Guitar, Vocals",
+    "primaryInstrument": "Primary Instrument",
+    "primaryInstrumentHint": "Used for grouping",
+    "selectInstrument": "Select an instrument…",
+    "secondaryInstruments": "Secondary Instruments",
+    "secondaryInstrumentsHint": "Click to toggle additional instruments this musician played",
     "primaryStyle": "Primary Style",
     "primaryStyleHint": "Used for color and grouping",
     "selectStyle": "Select a style…",
@@ -269,7 +284,6 @@
     "Accordion": "Accordion",
     "Banjo": "Banjo",
     "Bass": "Bass",
-    "Bass guitar": "Bass Guitar",
     "Clarinet": "Clarinet",
     "Double bass": "Double Bass",
     "Drum kit": "Drum Kit",

@@ -21,6 +21,7 @@ export interface Musician {
   deathCoords: [number, number] | null;
   spentTimePlaces: SpentTimePlace[];
   instrument: string;
+  secondaryInstruments?: string[];
   bluesStyle: string;
   youtubeLink: string;
   albums: Album[];

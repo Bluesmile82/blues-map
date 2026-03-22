@@ -83,6 +83,16 @@
       "born": "Nacido en"
     }
   },
+  "timeline": {
+    "legend": {
+      "title": "Leyenda",
+      "musician": "Músico",
+      "influence": "Influencia",
+      "playedWith": "Tocó con",
+      "lifeSpan": "Duración de vida",
+      "bluesStyle": "Color del estilo"
+    }
+  },
   "auth": {
     "signIn": "Iniciar sesión",
     "signUp": "Registrarse",
@@ -181,6 +191,11 @@
     "musicInfo": "Información musical",
     "instruments": "Instrumento(s)",
     "instrumentsPlaceholder": "ej. Guitarra, Voz",
+    "primaryInstrument": "Instrumento principal",
+    "primaryInstrumentHint": "Usado para agrupación",
+    "selectInstrument": "Selecciona un instrumento…",
+    "secondaryInstruments": "Instrumentos secundarios",
+    "secondaryInstrumentsHint": "Clic para alternar instrumentos adicionales que este músico tocaba",
     "primaryStyle": "Estilo principal",
     "primaryStyleHint": "Usado para color y agrupación",
     "selectStyle": "Selecciona un estilo…",
@@ -269,7 +284,6 @@
     "Accordion": "Acordeón",
     "Banjo": "Banjo",
     "Bass": "Bajo",
-    "Bass guitar": "Bajo eléctrico",
     "Clarinet": "Clarinete",
     "Double bass": "Contrabajo",
     "Drum kit": "Batería",

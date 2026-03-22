@@ -1,5 +1,6 @@
 import { useMemo, useState, useCallback } from 'react';
 import Supercluster from 'supercluster';
+import { forceSimulation, forceCollide, forceRadial } from 'd3';
 import type { Musician } from '../types';
 
 // ── Types ──────────────────────────────────────────────────────────────────────
@@ -32,36 +33,54 @@ export interface SpiderLeg {
 
 export type ClusterItem = ClusterPoint | ClusterGroup;
 
-// ── Spider layout ──────────────────────────────────────────────────────────────
+// ── Spider layout (d3-force) ────────────────────────────────────────────────────
 
 /**
- * Arrange N points in a spiral around a center.
- * Uses a Fermat spiral for even spacing that scales well from 2 to 50+ points.
+ * Use d3-force to pack N circles tightly around a center with no overlap.
+ * forceCollide prevents overlap, forceRadial pulls everything toward center.
  */
-function spiralPositions(
+function forcePositions(
   center: [number, number],
   count: number,
   zoom: number
-): [number, number][] {
-  if (count === 0) return [];
-  if (count === 1) return [center];
+): { positions: [number, number][]; radiusPx: number } {
+  if (count === 0) return { positions: [], radiusPx: 0 };
+  if (count === 1) return { positions: [center], radiusPx: 12 };
 
-  // Base angular separation in degrees, shrinks with zoom so spiders stay
-  // visually consistent across zoom levels.
-  const baseSep = 1.8 / Math.pow(2, Math.max(zoom - 3, 0));
+  const degPerPx = 360 / (256 * Math.pow(2, zoom));
+  const dotRadiusPx = 7; // tight fit — matches 10px dot radius + tiny gap
 
-  const positions: [number, number][] = [];
-  const goldenAngle = Math.PI * (3 - Math.sqrt(5)); // ~137.5°
+  // Run simulation in pixel space, then convert to degrees
+  interface ForceNode { x: number; y: number; index?: number }
+  const nodes: ForceNode[] = Array.from({ length: count }, (_, i) => {
+    // Seed on a small circle so the simulation converges fast
+    const angle = (2 * Math.PI * i) / count;
+    const seedR = dotRadiusPx * 1.2;
+    return { x: Math.cos(angle) * seedR, y: Math.sin(angle) * seedR };
+  });
 
-  for (let i = 0; i < count; i++) {
-    const angle = i * goldenAngle;
-    // Fermat spiral: r ∝ sqrt(i)
-    const r = baseSep * Math.sqrt(i + 1);
-    const lng = center[0] + r * Math.cos(angle);
-    const lat = center[1] + r * Math.sin(angle);
-    positions.push([lng, lat]);
+  const sim = forceSimulation<ForceNode>(nodes)
+    .force('collide', forceCollide<ForceNode>(dotRadiusPx).iterations(6))
+    .force('radial', forceRadial<ForceNode>(0, 0, 0).strength(0.25))
+    .stop();
+
+  // Run synchronously — 60 ticks is enough for convergence
+  for (let i = 0; i < 60; i++) sim.tick();
+
+  // Max pixel distance from center (computed before coordinate conversion)
+  let maxDistPx = 0;
+  for (const n of nodes) {
+    maxDistPx = Math.max(maxDistPx, Math.sqrt(n.x * n.x + n.y * n.y));
   }
-  return positions;
+  const radiusPx = maxDistPx + dotRadiusPx + 4; // dot radius + padding
+
+  const latCos = Math.cos(center[1] * Math.PI / 180);
+  const positions = nodes.map((n) => [
+    center[0] + n.x * degPerPx,
+    center[1] + n.y * degPerPx / latCos,
+  ] as [number, number]);
+
+  return { positions, radiusPx };
 }
 
 // ── Coordinate snapping ────────────────────────────────────────────────────────
@@ -163,9 +182,9 @@ export function useMapClusters({
   }, [musicians]);
 
   // Get clusters + points for current viewport
-  const { clusters, points, spiderLegs } = useMemo(() => {
+  const { clusters, points, spiderLegs, spiderRadiusPx } = useMemo(() => {
     if (!bounds) {
-      return { clusters: [] as ClusterGroup[], points: [] as ClusterPoint[], spiderLegs: [] as SpiderLeg[] };
+      return { clusters: [] as ClusterGroup[], points: [] as ClusterPoint[], spiderLegs: [] as SpiderLeg[], spiderRadiusPx: 0 };
     }
 
     const floorZoom = Math.floor(zoom);
@@ -174,6 +193,7 @@ export function useMapClusters({
     const clusters: ClusterGroup[] = [];
     const points: ClusterPoint[] = [];
     const spiderLegs: SpiderLeg[] = [];
+    let spiderRadiusPx = 0;
 
     for (const feature of raw) {
       const coords = feature.geometry.coordinates as [number, number];
@@ -186,7 +206,8 @@ export function useMapClusters({
         if (clusterId === spideredClusterId) {
           const leaves = index.getLeaves(clusterId, Infinity);
           const center = coords;
-          const spiderPositions = spiralPositions(center, leaves.length, zoom);
+          const { positions: spiderPositions, radiusPx: spiderR } = forcePositions(center, leaves.length, zoom);
+          spiderRadiusPx = spiderR;
 
           for (let i = 0; i < leaves.length; i++) {
             const leaf = leaves[i];
@@ -269,7 +290,7 @@ export function useMapClusters({
       }
     }
 
-    return { clusters, points, spiderLegs };
+    return { clusters, points, spiderLegs, spiderRadiusPx };
   }, [index, bounds, zoom, spideredClusterId, musicianMap, selectedId]);
 
   // ── Actions ────────────────────────────────────────────────────────────────
@@ -311,6 +332,7 @@ export function useMapClusters({
     clusters,
     points,
     spiderLegs,
+    spiderRadiusPx,
     spideredClusterId,
     expandCluster,
     collapseSpider,

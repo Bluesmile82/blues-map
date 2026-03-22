@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Musician, Album, SpentTimePlace } from '../types';
-import { STYLE_COLORS, getStyleColor } from '../utils/colors';
+import { STYLE_COLORS, getStyleColor, CANONICAL_INSTRUMENTS, getInstrumentColor } from '../utils/colors';
 import MusicianSelect from './MusicianSelect';
 
 const BLUES_STYLES = Object.keys(STYLE_COLORS);
@@ -385,15 +385,23 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
             <h3 className="text-accent text-sm font-semibold uppercase tracking-wide">{t('editPanel.musicInfo')}</h3>
 
             <div className="grid grid-cols-2 gap-4">
-              <Field label={t('editPanel.instruments')} required error={fieldError('instrument')}>
-                <input
-                  type="text"
+              <Field label={t('editPanel.primaryInstrument') || t('editPanel.instruments')} required error={fieldError('instrument')} hint={t('editPanel.primaryInstrumentHint') || ''}>
+                <select
                   value={formData.instrument}
-                  onChange={(e) => handleChange('instrument', e.target.value)}
-                  onBlur={() => handleBlur('instrument')}
-                  placeholder={t('editPanel.instrumentsPlaceholder')}
+                  onChange={(e) => {
+                    const newPrimary = e.target.value;
+                    handleChange('instrument', newPrimary);
+                    if (formData.secondaryInstruments?.includes(newPrimary)) {
+                      handleChange('secondaryInstruments', formData.secondaryInstruments.filter(s => s !== newPrimary));
+                    }
+                  }}
                   className={inputClass(fieldError('instrument'))}
-                />
+                >
+                  <option value="">{t('editPanel.selectInstrument') || 'Select an instrument…'}</option>
+                  {CANONICAL_INSTRUMENTS.map(inst => (
+                    <option key={inst} value={inst}>{t(`instruments.${inst}`, inst)}</option>
+                  ))}
+                </select>
               </Field>
 
               <Field label={t('editPanel.primaryStyle')} required error={fieldError('bluesStyle')} hint={t('editPanel.primaryStyleHint')}>
@@ -442,6 +450,36 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
                       className="px-2.5 py-1 rounded-full text-xs font-medium transition-all hover:opacity-80"
                     >
                       {t(`styles.${style}`, style)}
+                    </button>
+                  );
+                })}
+              </div>
+            </Field>
+
+            <Field label={t('editPanel.secondaryInstruments') || 'Secondary Instruments'} hint={t('editPanel.secondaryInstrumentsHint') || 'Click to toggle additional instruments this musician played'}>
+              <div className="flex flex-wrap gap-2 mt-1">
+                {CANONICAL_INSTRUMENTS.filter(i => i !== formData.instrument).map(inst => {
+                  const [r, g, b] = getInstrumentColor(inst) as [number, number, number];
+                  const isSelected = formData.secondaryInstruments?.includes(inst) ?? false;
+                  return (
+                    <button
+                      key={inst}
+                      type="button"
+                      onClick={() => {
+                        const current = formData.secondaryInstruments ?? [];
+                        handleChange('secondaryInstruments', isSelected
+                          ? current.filter(s => s !== inst)
+                          : [...current, inst]
+                        );
+                      }}
+                      style={{
+                        color: isSelected ? `rgb(${r},${g},${b})` : '#6b5a45',
+                        border: `1px solid ${isSelected ? `rgba(${r},${g},${b},0.6)` : '#2a1e0e'}`,
+                        background: isSelected ? `rgba(${r},${g},${b},0.12)` : 'transparent',
+                      }}
+                      className="px-2.5 py-1 rounded-full text-xs font-medium transition-all hover:opacity-80"
+                    >
+                      {t(`instruments.${inst}`, inst)}
                     </button>
                   );
                 })}

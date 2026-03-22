@@ -129,7 +129,7 @@ export default function PublicListView({
               <div className="flex-1 min-w-0">
                 <div className="font-medium truncate text-ink">{musician.name}</div>
                 <div className="text-sm text-ink3 truncate">
-                  {t(`styles.${musician.bluesStyle}`, musician.bluesStyle)} • {musician.instrument.split(', ').map(i => t(`instruments.${i}`, i)).join(', ')}
+                  {t(`styles.${musician.bluesStyle}`, musician.bluesStyle)} • {[musician.instrument, ...(musician.secondaryInstruments ?? [])].map(i => t(`instruments.${i}`, i)).join(', ')}
                 </div>
               </div>
             </button>
