@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect, useRef } from 'react';
+import { useMemo, useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Musician } from '../types';
 import { getStyleHex, getStyleColor, STYLE_HEX } from '../utils/colors';
@@ -10,6 +10,19 @@ import { useLists } from '../hooks/useLists';
 import AuthModal from '../components/auth/AuthModal';
 import ListsDropdown from '../components/lists/ListsDropdown';
 import MobileVideoPlayer from './MobileVideoPlayer';
+
+type PanelHeight = 'full' | 'half' | 'collapsed';
+
+const HANDLE_H = 56; // collapsed shows just the drag handle
+const NAVBAR_H = 56; // top nav bar height
+
+function getSnapPx(h: PanelHeight, availH: number) {
+  switch (h) {
+    case 'full': return availH * 0.85;
+    case 'half': return availH * 0.5;
+    case 'collapsed': return HANDLE_H;
+  }
+}
 
 interface MusicianPanelProps {
   musician: Musician;
@@ -24,10 +37,12 @@ interface MusicianPanelProps {
   autoplay?: boolean;
   onVideoClose?: () => void;
   isMobile?: boolean;
+  /** Pixel height of bottom toolbar to sit above (0 when no toolbar) */
+  bottomInset?: number;
 }
 
-export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, videoMusician, manualVideoUrl, autoplay, onVideoClose, isMobile }: MusicianPanelProps) {
-  const [isMinimized, setIsMinimized] = useState(false);
+export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, videoMusician, manualVideoUrl, autoplay, onVideoClose, isMobile, bottomInset = 0 }: MusicianPanelProps) {
+  const [panelHeight, setPanelHeight] = useState<PanelHeight>('full');
   const completeMusicians = useMemo(() => musicians.filter((m) =>
     m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
   ), [musicians]);
@@ -47,70 +62,121 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   const [showListsDropdown, setShowListsDropdown] = useState(false);
   const { t } = useTranslation();
 
-  // Handle backdrop click with a small delay to prevent ghost clicks on mobile
-  const [canClose, setCanClose] = useState(false);
+  // Reset to full when musician changes
+  const [, setCanClose] = useState(false);
   useEffect(() => {
     setCanClose(false);
-    setIsMinimized(false);
+    setPanelHeight('full');
     const timer = setTimeout(() => setCanClose(true), 400);
     return () => clearTimeout(timer);
   }, [musician.id]);
 
-  // Drag to close logic
-  const [dragOffset, setDragOffset] = useState(0);
-  const startY = useRef<number | null>(null);
+  // --- Mobile drag (handle-only) ---
+  const vh = typeof window !== 'undefined' ? window.innerHeight : 800;
+  const availH = vh - NAVBAR_H - bottomInset; // usable height between navbar and toolbar
+  const dragRef = useRef({ startY: 0, startH: 0, active: false });
+  const [dragH, setDragH] = useState<number | null>(null); // null = not dragging
 
-  const onTouchStart = (e: React.TouchEvent) => {
-    startY.current = e.touches[0].clientY;
-  };
+  const snapPx = getSnapPx(panelHeight, availH);
+  const maxH = availH * 0.85;
+  const clamp = useCallback((h: number) => Math.max(HANDLE_H, Math.min(maxH, h)), [maxH]);
 
-  const onTouchMove = (e: React.TouchEvent) => {
-    if (startY.current === null) return;
-    const delta = e.touches[0].clientY - startY.current;
-    if (delta > 0) {
-      setDragOffset(delta);
+  const onHandleTouchStart = useCallback((e: React.TouchEvent) => {
+    if (e.touches.length !== 1) return;
+    e.preventDefault();
+    dragRef.current = { startY: e.touches[0].clientY, startH: snapPx, active: true };
+  }, [snapPx]);
+
+  const onHandleTouchMove = useCallback((e: React.TouchEvent) => {
+    if (!dragRef.current.active || e.touches.length !== 1) return;
+    e.preventDefault();
+    // drag up = increase height (startY - clientY is positive when dragging up)
+    const dy = dragRef.current.startY - e.touches[0].clientY;
+    setDragH(clamp(dragRef.current.startH + dy));
+  }, [clamp]);
+
+  const snapToNearest = useCallback((currentH: number) => {
+    const points: { h: PanelHeight; px: number }[] = [
+      { h: 'full', px: getSnapPx('full', availH) },
+      { h: 'half', px: getSnapPx('half', availH) },
+      { h: 'collapsed', px: getSnapPx('collapsed', availH) },
+    ];
+    let best = points[0];
+    for (const p of points) {
+      if (Math.abs(currentH - p.px) < Math.abs(currentH - best.px)) best = p;
     }
-  };
-
-  const onTouchEnd = () => {
-    if (dragOffset > 100) {
-      if (!isMinimized) {
-        setIsMinimized(true);
-      } else {
-        onClose();
-      }
-    } else if (dragOffset < -50 && isMinimized) {
-      setIsMinimized(false);
+    // If dragged below collapsed threshold, close the panel
+    if (currentH < HANDLE_H * 0.5) {
+      onClose();
+    } else {
+      setPanelHeight(best.h);
     }
-    setDragOffset(0);
-    startY.current = null;
-  };
+  }, [availH, onClose]);
 
-  const handleToggleMinimize = () => {
-    if (isMobile) setIsMinimized(!isMinimized);
-  };
+  const onHandleTouchEnd = useCallback(() => {
+    if (!dragRef.current.active) return;
+    dragRef.current.active = false;
+    const finalH = dragH ?? snapPx;
+    setDragH(null);
+    snapToNearest(finalH);
+  }, [dragH, snapPx, snapToNearest]);
+
+  // Mouse drag for desktop testing
+  useEffect(() => {
+    const onMouseMove = (e: MouseEvent) => {
+      if (!dragRef.current.active) return;
+      e.preventDefault();
+      const dy = dragRef.current.startY - e.clientY;
+      setDragH(clamp(dragRef.current.startH + dy));
+    };
+    const onMouseUp = () => {
+      if (!dragRef.current.active) return;
+      dragRef.current.active = false;
+      setDragH(prev => {
+        snapToNearest(prev ?? snapPx);
+        return null;
+      });
+    };
+    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('mouseup', onMouseUp);
+    return () => {
+      window.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('mouseup', onMouseUp);
+    };
+  }, [clamp, snapPx, snapToNearest]);
+
+  const onHandleMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    dragRef.current = { startY: e.clientY, startH: snapPx, active: true };
+  }, [snapPx]);
+
+  const currentH = dragH ?? snapPx;
 
   return (
     <>
-      {/* Mobile backdrop */}
       <div
-        className={`fixed inset-0 bg-black/40 z-40 animate-fade-in sm:hidden ${(!canClose || isMinimized) ? 'pointer-events-none opacity-0' : 'pointer-events-auto opacity-100'} transition-opacity duration-300`}
-        onClick={() => canClose && !isMinimized && onClose()}
-      />
-      <div
-        className={`fixed z-50 bg-bg/10 backdrop-blur-md flex flex-col overflow-hidden shadow-2xl border-t sm:border-t-0 border-border-subtle transition-all duration-300 ease-out
+        className={`fixed z-80 bg-bg/10 backdrop-blur-md flex flex-col overflow-hidden shadow-2xl border-t sm:border-t-0 border-border-subtle
           ${isMobile
-            ? `left-0 right-0 rounded-t-3xl ${isMinimized ? 'bottom-0 h-12' : 'bottom-0 h-[85%]'}`
-            : 'top-14 right-0 bottom-0 w-full sm:w-[26rem] h-auto rounded-t-none'
+            ? 'left-0 right-0 rounded-t-3xl'
+            : 'top-14 right-0 bottom-0 w-full sm:w-[26rem] h-auto rounded-t-none transition-all duration-300 ease-out'
           }`}
-        style={isMobile && !isMinimized ? { transform: `translateY(${dragOffset}px)`, transition: dragOffset === 0 ? 'transform 0.3s ease-out, height 0.3s ease-out' : 'none' } : {}}
-        onTouchStart={isMobile ? onTouchStart : undefined}
-        onTouchMove={isMobile ? onTouchMove : undefined}
-        onTouchEnd={isMobile ? onTouchEnd : undefined}
+        style={isMobile ? {
+          bottom: bottomInset,
+          height: currentH,
+          transition: dragH !== null ? 'none' : 'height 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+        } : undefined}
       >
-        {/* Mobile handle */}
-        <div className="w-full flex justify-center py-2.5 shrink-0 sm:hidden cursor-pointer active:opacity-50 transition-opacity" onClick={handleToggleMinimize}>
-          <div className="w-12 h-1 rounded-full bg-ink3/30" />
+        {/* Mobile drag handle — only this area is draggable */}
+        <div
+          className="w-full flex justify-center py-3 shrink-0 sm:hidden cursor-grab active:cursor-grabbing select-none"
+          style={{ touchAction: 'none' }}
+          onTouchStart={isMobile ? onHandleTouchStart : undefined}
+          onTouchMove={isMobile ? onHandleTouchMove : undefined}
+          onTouchEnd={isMobile ? onHandleTouchEnd : undefined}
+          onTouchCancel={isMobile ? onHandleTouchEnd : undefined}
+          onMouseDown={isMobile ? onHandleMouseDown : undefined}
+        >
+          <div className="w-12 h-1.5 rounded-full bg-ink3/40" />
         </div>
 
         {/* ── Close button – always visible, top-right corner ── */}
@@ -123,7 +189,52 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
           ✕
         </button>
 
-        {/* ── Header ── */}
+        {/* ── Compact header (half / collapsed on mobile) ── */}
+        {isMobile && panelHeight !== 'full' ? (
+          <div
+            className="shrink-0 p-3"
+            style={{
+              background: `linear-gradient(160deg, rgba(${r},${g},${b},0.15) 0%, rgba(10,8,5,0) 70%)`,
+            }}
+          >
+            <div className="flex gap-3 items-center">
+              <div className="relative shrink-0">
+                <img
+                  src={musician.image}
+                  alt={musician.name}
+                  className="w-11 h-11 rounded-full object-cover"
+                  style={{ filter: 'sepia(8%) contrast(1.05)' }}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src =
+                      `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=80`;
+                  }}
+                />
+                <div className="absolute inset-[-2px] rounded-full pointer-events-none"
+                  style={{ border: `2px solid ${hex}` }} />
+              </div>
+              <div className="flex-1 min-w-0 pr-10">
+                <h2 className="text-ink font-bold text-base leading-tight truncate">{musician.name}</h2>
+                <p className="text-ink3 text-2xs mt-0.5 truncate">
+                  {t(`styles.${musician.bluesStyle}`, musician.bluesStyle)} · {musician.birthPlace} · {getYear(musician.birthDate)}
+                  {musician.deathDate ? `–${getYear(musician.deathDate)}` : ''}
+                </p>
+              </div>
+            </div>
+            <button
+              onClick={() => setPanelHeight('full')}
+              className="mt-3 w-full py-2.5 rounded-lg text-sm font-semibold transition-colors touch-manipulation"
+              style={{
+                color: hex,
+                background: `rgba(${r},${g},${b},0.12)`,
+                border: `1px solid rgba(${r},${g},${b},0.25)`,
+              }}
+            >
+              {t('musician.details')}
+            </button>
+          </div>
+        ) : (
+        <>
+        {/* ── Full header ── */}
         <div
           className="shrink-0 p-3 sm:p-4"
           style={{
@@ -194,9 +305,6 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                   : ` — ${t('musician.active')}`}
               </p>
               <p className="text-ink2 text-2xs sm:text-ui mt-0.5">{[musician.instrument, ...(musician.secondaryInstruments ?? [])].map(i => t(`instruments.${i}`, i)).join(', ')}</p>
-              {musician.image_source && !isMobile && (
-                <p className="text-ink3 text-xs mt-1 italic">{t('musician.image')}: {musician.image_source}</p>
-              )}
               {editMode && (
                 <button
                   onClick={onEdit}
@@ -382,6 +490,8 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
 
           </div>
         </div>
+        </>
+        )}
 
         {/* Mobile video player - embedded at bottom */}
         {isMobile && videoMusician && onVideoClose && (

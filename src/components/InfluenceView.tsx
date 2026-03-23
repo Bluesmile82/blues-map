@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect, useMemo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
+import { AnimatePresence } from 'framer-motion';
 import DeckGL from '@deck.gl/react';
 import { OrthographicView } from '@deck.gl/core';
 import { PathLayer, ScatterplotLayer, TextLayer, IconLayer } from '@deck.gl/layers';
@@ -9,6 +10,9 @@ import type { Musician } from '../types';
 import { getStyleColor, getStyleHex } from '../utils/colors';
 import SearchInput from './SearchInput';
 import BluesStyleLegend from './BluesStyleLegend';
+import GestureHint from './GestureHint';
+import MobileBottomToolbar from './MobileBottomToolbar';
+import MusicianPreviewCard from './MusicianPreviewCard';
 import { useAtomValue } from 'jotai';
 import { listsAtom, favoritesMapAtom, isMusicianFavoritedAtom } from '../atoms/lists';
 import { userAtom } from '../atoms/auth';
@@ -93,6 +97,8 @@ export default function InfluenceView({
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   const [filterListId, setFilterListId] = useState<string | null>(null);
   const [filtersCollapsed, setFiltersCollapsed] = useState(isMobile);
+  const [gestureHintShown, setGestureHintShown] = useState(false);
+  const [previewMusician, setPreviewMusician] = useState<Musician | null>(null);
 
   const user = useAtomValue(userAtom);
   const lists = useAtomValue(listsAtom);
@@ -152,6 +158,17 @@ export default function InfluenceView({
   useEffect(() => {
     onFilteredMusiciansChange?.(completeMusicians);
   }, [completeMusicians, onFilteredMusiciansChange]);
+
+  // Gesture hints - show only once on mobile
+  useEffect(() => {
+    if (!isMobile) return;
+    const timer = setTimeout(() => {
+      if (localStorage.getItem('gesture-hint-shown-pinch') !== 'true') {
+        setGestureHintShown(true);
+      }
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [isMobile]);
 
   const displayMusicians = useMemo(() => {
     if (!textFilter.trim()) return completeMusicians;
@@ -523,18 +540,26 @@ export default function InfluenceView({
   const onClick = useCallback((info: PickingInfo) => {
     const m = info.object as { musician: Musician } | undefined;
     if (m?.musician) {
-      // Zoom to musician if zoomed out below detail visibility threshold
-      if (deckVS && currentZoom < CLUSTER_DETAILS_ZOOM) {
-        const pos = positions[m.musician.id];
-        if (pos) {
-          goToMusician(m.musician);
-          // const xe = Math.max(1, Math.pow(2, Math.max(0, CLUSTER_DETAILS_ZOOM - EXPAND_ZOOM_THRESHOLD))) + 0.1;
-          // setDeckVS({ ...deckVS, target: [pos[0] * xe, pos[1], 0], zoom: CLUSTER_DETAILS_ZOOM });
+      // On mobile, show preview instead of opening panel directly
+      if (isMobile) {
+        setPreviewMusician(m.musician);
+      } else {
+        // Zoom to musician if zoomed out below detail visibility threshold
+        if (deckVS && currentZoom < CLUSTER_DETAILS_ZOOM) {
+          const pos = positions[m.musician.id];
+          if (pos) {
+            goToMusician(m.musician);
+          }
         }
+        onSelect(m.musician);
       }
-      onSelect(m.musician);
+    } else {
+      // Clicked on empty space - close preview
+      if (isMobile) {
+        setPreviewMusician(null);
+      }
     }
-  }, [onSelect, deckVS, currentZoom, positions]);
+  }, [onSelect, deckVS, currentZoom, positions, isMobile]);
 
   const deckLayers = useMemo(() => {
     if (!dims.width || !worldRef.current) return [];
@@ -887,7 +912,7 @@ export default function InfluenceView({
           return [r, g, b, 180] as [number, number, number, number];
         },
         getSize: () => 20,
-        getColor: () => theme === 'dark' ? [255, 255, 255, 255] : [60, 60, 60, 255],
+        getColor: () => theme === 'dark' ? [255, 255, 255, 255] : [20, 20, 20, 255],
         getTextAnchor: 'middle',
         getAlignmentBaseline: 'center',
         fontWeight: '700',
@@ -1039,24 +1064,24 @@ export default function InfluenceView({
             })}
           </div>
 
-          {/* Filter panel - collapsible on all screen sizes */}
-          <div className="absolute left-3 sm:left-16 top-3 sm:top-4 z-40 w-50 border border-accent/50 bg-bg/5 backdrop-blur-xs rounded-lg" style={{ width: 'min(220px, calc(100vw - 1.5rem))' }}>
+          {/* Filter panel - desktop always visible, mobile when not collapsed */}
+          <div className={`absolute left-3 sm:left-16 top-3 sm:top-4 z-40 w-50 border border-accent/50 bg-bg/5 backdrop-blur-xs rounded-lg ${isMobile && filtersCollapsed ? 'hidden' : ''}`} style={{ width: 'min(220px, calc(100vw - 1.5rem))' }}>
             {filtersCollapsed ? (
               <button
                 onClick={() => setFiltersCollapsed(false)}
-                className="flex items-center justify-between w-full text-2xs text-accent2 tracking-widest uppercase hover:text-accent3 transition-colors mb-1 p-3"
+                className="flex items-center justify-between w-full text-sm font-bold text-accent tracking-widest uppercase hover:text-accent3 transition-colors mb-1 p-3"
               >
                 <span>{t('filters.title')}</span>
-                <ChevronDown className="w-4 h-4 opacity-60" />
+                <ChevronDown className="w-4 h-4" />
               </button>
             ) : (
               <div className="flex flex-col gap-2 p-3" style={{ width: 'min(218px, calc(100vw - 1.5rem))' }}>
                 <button
                   onClick={() => setFiltersCollapsed(true)}
-                  className="flex items-center justify-between w-full text-2xs text-accent2 tracking-widest uppercase hover:text-accent3 transition-colors mb-1"
+                  className="flex items-center justify-between w-full text-sm font-bold text-accent tracking-widest uppercase hover:text-accent3 transition-colors mb-1"
                 >
                   <span>{t('filters.title')}</span>
-                  <ChevronUp className="w-4 h-4 opacity-60" />
+                  <ChevronUp className="w-4 h-4" />
                 </button>
                 <div className="relative">
                   <SearchInput
@@ -1216,8 +1241,8 @@ export default function InfluenceView({
             )}
           </div>
 
-          {/* Top bar: group-by + scatter */}
-          <div className="absolute top-3 sm:top-4 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2">
+          {/* Top bar: group-by + scatter - desktop only */}
+          <div className="hidden sm:flex absolute top-3 sm:top-4 left-1/2 -translate-x-1/2 z-40 items-center gap-2">
             <div className="flex items-center bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5">
               {(['style', 'instrument'] as GroupBy[]).map((mode) => (
                 <button
@@ -1428,8 +1453,8 @@ export default function InfluenceView({
             </div>
           )}
 
-          {/* Zoom controls - bottom left */}
-          <div className="absolute top-4 left-3 sm:left-100 z-40 flex items-center gap-1">
+          {/* Zoom controls - desktop only */}
+          <div className="hidden sm:flex absolute top-4 left-3 sm:left-100 z-40 items-center gap-1">
             <button
               onClick={() => handleZoom(0.4)}
               title="Zoom in"
@@ -1505,10 +1530,48 @@ export default function InfluenceView({
                   {t(`styles.${m.bluesStyle}`, m.bluesStyle)}
                 </span>
               </div>
-            );
-          })()}
+             );
+           })()}
+
+          {/* Gesture Hints - Mobile Only */}
+          {isMobile && gestureHintShown && (
+            <AnimatePresence>
+              <GestureHint
+                icon="pinch"
+                text={t('mobile.gestureHintPinch')}
+                position="center"
+                onDismiss={() => setGestureHintShown(false)}
+              />
+            </AnimatePresence>
+          )}
+
+          {/* Musician Preview Card - Mobile Only */}
+          {isMobile && previewMusician && (
+            <MusicianPreviewCard
+              musician={previewMusician}
+              onViewDetails={() => {
+                setPreviewMusician(null);
+                onSelect(previewMusician);
+              }}
+              onClose={() => setPreviewMusician(null)}
+              isMobile={isMobile}
+            />
+          )}
+
+          {/* Mobile Bottom Toolbar */}
+          {isMobile && (
+            <MobileBottomToolbar
+              groupBy={groupBy}
+              onGroupByChange={setGroupBy}
+              onZoomIn={() => handleZoom(0.2)}
+              onZoomOut={() => handleZoom(-0.2)}
+              onReset={handleReset}
+              onFilterToggle={() => setFiltersCollapsed(!filtersCollapsed)}
+              filterCount={yearRange ? 1 : 0}
+            />
+          )}
         </>
-      )}
-    </div>
+       )}
+     </div>
   );
 }

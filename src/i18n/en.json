@@ -27,6 +27,12 @@
     "menu": "Menu",
     "lightDarkMode": "Light/Dark Mode"
   },
+  "mobile": {
+    "gestureHintPinch": "Pinch to zoom in and out",
+    "gestureHintCluster": "Tap clusters to see musicians",
+    "gestureHintDrag": "Drag to explore the timeline",
+    "gestureHintTap": "Tap musicians for details"
+  },
   "filters": {
     "title": "Filters",
     "findByName": "Find by name…",
@@ -56,7 +62,7 @@
     "influencedBy": "Influenced by",
     "influenced": "Influenced",
     "playedWith": "Played with",
-    "details": "Details",
+    "details": "View Full Details",
     "born": "Born",
     "bornAbbr": "b.",
     "diedAbbr": "d.",

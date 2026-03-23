@@ -10,12 +10,14 @@ import { getStyleColor, getStyleHex } from '../utils/colors';
 import { getStyleAbbreviation } from '../utils/layout';
 import SearchInput from './SearchInput';
 import BluesStyleLegend from './BluesStyleLegend';
+import MapBottomSheet from './MapBottomSheet';
 import { useAtomValue } from 'jotai';
 import { isMusicianFavoritedAtom, listsAtom, favoritesMapAtom } from '../atoms/lists';
 import { userAtom } from '../atoms/auth';
 import { useMapClusters } from '../hooks/useMapClusters';
 import type { ClusterGroup, ClusterPoint, SpiderLeg } from '../hooks/useMapClusters';
 import { useTranslation } from 'react-i18next';
+import { ChevronUp, ChevronDown } from 'lucide-react';
 
 const MAP_STYLES = {
   light: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
@@ -140,9 +142,10 @@ function MusicianSidebar({
       {/* Filters toggle */}
       <button
         onClick={() => setFiltersCollapsed(!filtersCollapsed)}
-        className="flex items-center justify-between w-full text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors mb-3 px-1"
+        className="flex items-center justify-between w-full text-sm font-bold text-accent tracking-widest uppercase hover:text-accent3 transition-colors mb-1 p-3"
       >
         <span>{t('filters.title')}</span>
+        {filtersCollapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
         <svg
           className={`w-3 h-3 opacity-60 transition-transform ${filtersCollapsed ? '' : 'rotate-180'}`}
           fill="none"
@@ -350,6 +353,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
   const [listHovered, setListHovered] = useState<string | null>(null);
   const [viewState, setViewState] = useState<MapViewState>(INITIAL_VIEW_STATE);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sheetHeight, setSheetHeight] = useState<'collapsed' | 'half' | 'full'>('collapsed');
 
   // Compute viewport bounds from viewState for supercluster
   const viewportBounds = useMemo<[number, number, number, number] | null>(() => {
@@ -766,38 +770,70 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
   return (
     <div className="relative w-full h-full">
       {/* Mobile sidebar toggle */}
-      {sidebarOpen ? (
+      {isMobile ? (
+        sheetHeight !== 'collapsed' ? (
+          <button
+            onClick={() => setSheetHeight('collapsed')}
+            className="sm:hidden absolute top-1 right-2 z-76 flex items-center gap-1.5 px-3 py-2 bg-bg/55 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm"
+          >
+            <span>✕</span>
+            <span>{t('map.close')}</span>
+          </button>
+        ) : (
+          <button
+            onClick={() => setSheetHeight('half')}
+            className="sm:hidden absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/55 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm"
+          >
+            <span>☰</span>
+            <span>{t('map.musicians')}</span>
+          </button>
+        )
+      ) : (
         <button
           onClick={() => setSidebarOpen(o => !o)}
-          className="sm:hidden absolute top-1 right-2 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/55 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm"
+          className="absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/55 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm"
         >
-          <span>✕</span>
-          <span>{t('map.close')}</span>
+          <span>{sidebarOpen ? '✕' : '☰'}</span>
+          <span>{sidebarOpen ? t('map.close') : t('map.musicians')}</span>
         </button>
-      ) : <button
-        onClick={() => setSidebarOpen(o => !o)}
-        className="sm:hidden absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/55 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm"
-      >
-        <span>☰</span>
-        <span>{t('map.musicians')}</span>
-      </button>
-      }
+      )}
 
-      {/* Musician Sidebar — always visible on sm+, toggleable on mobile */}
-      <div className={`${sidebarOpen ? 'flex' : 'hidden'} sm:flex absolute left-0 top-0 bottom-0 z-10`}>
-        <MusicianSidebar
-          musicians={completeMusicians}
-          onSelect={(m) => {
-            onSelect(m);
-            setSidebarOpen(false);
-          }}
-          onHover={setListHovered}
-          selectedId={selectedId}
-          hoveredId={listHovered}
-          styleFilter={styleFilter}
-          onStyleFilterChange={onStyleFilterChange}
-        />
-      </div>
+       {/* Musician Sidebar */}
+       {isMobile ? (
+         <MapBottomSheet
+           height={sheetHeight}
+           onHeightChange={setSheetHeight}
+           onClose={() => setSheetHeight('collapsed')}
+         >
+           <MusicianSidebar
+             musicians={completeMusicians}
+             onSelect={(m) => {
+               onSelect(m);
+               setSheetHeight('collapsed');
+             }}
+             onHover={setListHovered}
+             selectedId={selectedId}
+             hoveredId={listHovered}
+             styleFilter={styleFilter}
+             onStyleFilterChange={onStyleFilterChange}
+           />
+         </MapBottomSheet>
+       ) : (
+         <div className="absolute left-0 top-0 bottom-0 z-10">
+           <MusicianSidebar
+             musicians={completeMusicians}
+             onSelect={(m) => {
+               onSelect(m);
+               setSidebarOpen(false);
+             }}
+             onHover={setListHovered}
+             selectedId={selectedId}
+             hoveredId={listHovered}
+             styleFilter={styleFilter}
+             onStyleFilterChange={onStyleFilterChange}
+           />
+         </div>
+       )}
 
       {/* Map */}
       <div className="relative w-full h-full">

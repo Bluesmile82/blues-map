@@ -3,11 +3,11 @@
 
 @theme {
   /* ── Light Mode Backgrounds (default) ───────────────────────────────────── */
-  --color-bg:          #ddd9d9;  /* warm light gray – app bg, navbar */
+  --color-bg:          #e0e0e0;  /* warm light gray – app bg, navbar */
   --color-bg2:         #ccc7c6;  /* panels, filter backgrounds */
   --color-bg3:         #b2afae;  /* elevated surfaces, chips */
   --color-bg-subtle:   #ccc7c6;
-  --color-bg-elevated: #d3d0cf;
+  --color-bg-elevated: #f2f0ef;
   --color-bg-hover:    #b6b3b2;  /* hover backgrounds */
   --color-bg-deep:     #aba8a7;  /* deep hover */
 
@@ -201,3 +201,47 @@ a:hover { color: var(--color-accent3); }
 .animate-slide-up { animation: slide-up 0.3s ease-out; }
 
 .animate-slide-in { animation: slide-in 0.22s ease; }
+
+/* ── Touch-Specific Styles ───────────────────────────────────────────── */
+
+/* Disable tap highlight color and add custom feedback */
+@media (hover: none) and (pointer: coarse) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  button:active,
+  a:active,
+  [role="button"]:active {
+    transform: scale(0.97);
+    transition: transform 100ms ease-out;
+  }
+
+  .touch-target:active {
+    background-color: var(--color-bg-hover);
+  }
+
+  /* Larger touch feedback area */
+  button,
+  a,
+  [role="button"],
+  .touch-target {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+/* Smooth scrolling for touch */
+@media (hover: none) {
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Prevent zoom on double-tap for buttons */
+button,
+a,
+[role="button"] {
+  touch-action: manipulation;
+}

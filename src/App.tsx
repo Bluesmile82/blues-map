@@ -227,6 +227,7 @@ const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown 
             autoplay={autoplay}
             onVideoClose={() => setShowPlayer(false)}
             isMobile={isMobile}
+            bottomInset={isMobile ? 72 : 0}
           />
         )}
 

@@ -72,7 +72,7 @@ export default function FiltersPanel({
       {(isCollapsed || !isMobile) && (
         <button
           onClick={() => setCollapsed(!isCollapsed)}
-          className="flex items-center justify-between w-full px-3 py-2 bg-bg-subtle/95 border border-border-subtle rounded-lg text-ink text-xs font-medium backdrop-blur-sm hover:border-border transition-colors"
+          className="flex items-center justify-between w-full px-3 py-2 bg-bg-subtle/95 border border-border-subtle rounded-lg text-ink text-sm font-bold backdrop-blur-sm hover:border-border transition-colors"
         >
           <span>{t('filters.title')}</span>
           <svg

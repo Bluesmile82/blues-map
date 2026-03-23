@@ -7212,7 +7212,7 @@
   {
     "id": "dan-sane",
     "name": "Dan Sane",
-    "image": "/images/musicians/dan-sane.png",
+    "image": "/images/musicians/dan-sane.webp",
     "image_source": "",
     "birthDate": "1896-09-22",
     "birthPlace": "Hernando, Mississippi",
@@ -7244,7 +7244,7 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "Memphis Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=NWeIzDJATe4",
+    "youtubeLink": "https://www.youtube.com/watch?v=_g-aMYqyvxE",
     "albums": [
       {
         "name": "Dan Sane & Frank Stokes Complete Recordings (1927-1929) (Document Records, 1994)",
@@ -11531,11 +11531,13 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "Chicago Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=5AmGzh3RcV8",
+    "youtubeLink": "https://www.youtube.com/watch?v=jios9FDduuI",
     "albums": [],
     "description": "Brice Lee Gates (December 20, 1937 – April 15, 2020) was an American blues guitarist, singer, and songwriter.  The cousin of fellow bluesman Albert Collins, Gates released three albums on the Music Maker label.  Gates performed for almost sixty years, for the bulk of that time being resident in Milwaukee, Wisconsin.",
     "activeFrom": "1956",
-    "influences": [],
+    "influences": [
+      "albert-collins"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -18930,7 +18932,7 @@
   {
     "id": "johnny-winter",
     "name": "Johnny Winter",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Johnny_Winter1990.jpg/500px-Johnny_Winter1990.jpg",
+    "image": "/images/musicians/johnny-winter.webp",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Johnny_Winter1990.jpg/500px-Johnny_Winter1990.jpg",
     "birthDate": "1944-02-23",
     "birthPlace": "Beaumont",
@@ -18990,7 +18992,7 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "Chicago Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=Cea7wM9B3cw",
+    "youtubeLink": "https://www.youtube.com/watch?v=QzUcxc4B3qw",
     "albums": [
       {
         "name": "First Winter (1969)",
@@ -19447,13 +19449,15 @@
         ]
       }
     ],
-    "instrument": "Guitar",
+    "instrument": "Drums",
     "bluesStyle": "Hill Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=tL8iAo0Sivc",
     "albums": [],
     "description": "Cedric O.  Burnside (born August 26, 1978) is an American electric blues guitarist, drummer, singer and songwriter.  He is the son of blues drummer Calvin Jackson and  grandson of blues singer, songwriter, and guitarist R.",
     "activeFrom": "1991",
-    "influences": [],
+    "influences": [
+      "rl-burnside"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "secondaryStyles": [
@@ -19461,7 +19465,10 @@
     ],
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Cedric_Burnside",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Guitar",
+      "Vocals"
+    ]
   },
   {
     "id": "karen-carroll",
@@ -21289,7 +21296,7 @@
   {
     "id": "valerie-wellington",
     "name": "Valerie Wellington",
-    "image": "/images/musicians/valerie-wellington.png",
+    "image": "/images/musicians/valerie-wellington.webp",
     "image_source": "",
     "birthDate": "1959-11-14",
     "birthPlace": "Chicago, Illinois",
@@ -21310,7 +21317,7 @@
     "albums": [
       {
         "name": "Million Dollar Secret (1984)",
-        "youtubeLink": "https://www.youtube.com/watch?v=7hsBi_9JKiw"
+        "youtubeLink": "https://www.youtube.com/watch?v=Xna7q-ynz90&list=RDXna7q-ynz90&start_radio=1&pp=ygUadmFsZXJpZSB3ZWxsaW5ndG9uIG1pbGxpb26gBwE%3D"
       }
     ],
     "description": "Valerie Wellington (November 14, 1959 – January 2, 1993) was an American singer who, in her short career, switched from singing opera to singing Chicago blues and electric blues.  On her 1984 album, Million Dollar Secret, she worked with Sunnyland Slim, Billy Branch, and Magic Slim.  She also worked with Lee \"Shot\" Williams.",
@@ -21319,7 +21326,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "magic-slim"
+      "magic-slim",
+      "sunnyland-slim"
     ],
     "source": "https://en.wikipedia.org/wiki/Valerie_Wellington",
     "secondaryInstruments": []
@@ -21446,7 +21454,7 @@
   {
     "id": "willie-brown",
     "name": "Willie Brown",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Willie_Brown_-_grave.jpg/500px-Willie_Brown_-_grave.jpg",
+    "image": "/images/musicians/willie-brown.webp",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Willie_Brown_-_grave.jpg/500px-Willie_Brown_-_grave.jpg",
     "birthDate": "1900-08-06",
     "birthPlace": "Clarksdale",
@@ -21454,21 +21462,24 @@
       -90.57022222222223,
       34.20063888888889
     ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
+    "deathDate": "1952-12-30",
+    "deathPlace": "Tunica, Mississippi",
+    "deathCoords": [
+      34.6866,
+      -90.3749
+    ],
     "spentTimePlaces": [],
     "instrument": "Guitar",
     "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=tdYz0gIzqVk",
+    "youtubeLink": "https://www.youtube.com/watch?v=_WREOMLH2uI",
     "albums": [
       {
         "name": "Son House and the Great Delta Blues Singers (1928-1930) (1990)",
-        "youtubeLink": "https://www.youtube.com/watch?v=F4MLRfswqCM"
+        "youtubeLink": "https://www.youtube.com/watch?v=_WREOMLH2uI"
       }
     ],
     "description": "Willie Lee Brown (1899 or August 6, 1900 – December 30, 1952) was an American blues guitar player and vocalist.  He performed and recorded with other blues musicians, including Son House and Charlie Patton, and influenced Robert Johnson and Muddy Waters.  Brown is considered one of the pioneering musicians of the Delta blues genre.",
-    "activeFrom": "1990",
+    "activeFrom": "1921",
     "influences": [],
     "influencedBy": [
       "pete-mayes"
@@ -22580,7 +22591,7 @@
   {
     "id": "frank-stokes",
     "name": "Frank Stokes",
-    "image": "/images/musicians/frank-stokes.png",
+    "image": "/images/musicians/frank-stokes.webp",
     "image_source": "",
     "birthDate": "1888-01-01",
     "birthPlace": "Tennessee",
@@ -22594,7 +22605,7 @@
     "spentTimePlaces": [],
     "instrument": "Guitar",
     "bluesStyle": "Memphis Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=RNtOhNC4loo",
+    "youtubeLink": "https://www.youtube.com/watch?v=ByBoMdSIfdI",
     "albums": [
       {
         "name": "Creator of the Memphis Blues (1990)",
@@ -26224,12 +26235,12 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=_oL_pCjPgUg",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Fao_i6_0pdk",
     "albums": [
       {
         "name": "Blue Monday (2001)",
-        "youtubeLink": "https://www.youtube.com/watch?v=_oL_pCjPgUg"
+        "youtubeLink": "https://www.youtube.com/watch?v=yyV00ZPoPUs"
       }
     ],
     "description": "Jay Owens (born February 10, 1969) is an American blues guitarist, singer and songwriter. Known for his work in the Texas blues scene, Owens combines traditional blues with rock and soul influences.",
@@ -30848,5 +30859,127 @@
       "Saxophone",
       "Vocals"
     ]
+  },
+  {
+    "id": "billy-branch",
+    "name": "Billy Branch",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/71/Billy_Branch_%28blues_musician%29_2.jpg",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Billy_Branch_(blues_musician)_2.jpg",
+    "birthDate": "1951-10-03",
+    "birthPlace": "Great Lakes, Illinois",
+    "birthCoords": [
+      -87.8345,
+      42.3067
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ekoDTRJ2DxI",
+    "albums": [
+      {
+        "name": "Harp Attack! (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=epx5jINg_hE"
+      },
+      {
+        "name": "The Blues Keep Following Me Around (2005)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Blues Shock (2016)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ekoDTRJ2DxI"
+      }
+    ],
+    "description": "Billy Branch is an American blues harmonica player and bandleader, leading the Sons of Blues since the late 1970s. A protégé of Willie Dixon, he became one of the foremost torchbearers of the Chicago blues harmonica tradition, carrying on the legacy of Little Walter and Big Walter Horton. He has earned multiple Blues Music Award nominations and is a respected educator bringing blues into schools.",
+    "activeFrom": "1977",
+    "influences": [
+      "little-walter",
+      "willie-dixon",
+      "junior-wells",
+      "muddy-waters"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "willie-dixon",
+      "lurrie-bell",
+      "son-seals",
+      "buddy-guy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Billy_Branch",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "fred-below",
+    "name": "Fred Below",
+    "image": "https://www.allaboutbluesmusic.com/wp-content/uploads/2012/08/FRED-BELOW.png",
+    "image_source": "https://www.allaboutbluesmusic.com/fred-below/",
+    "birthDate": "1926-09-16",
+    "birthPlace": "Chicago, Illinois",
+    "birthCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "deathDate": "1988-08-14",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Drums",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=duRp_avXtMM",
+    "albums": [
+      {
+        "name": "Little Walter — My Babe (1955)",
+        "youtubeLink": "https://www.youtube.com/watch?v=duRp_avXtMM"
+      },
+      {
+        "name": "Buddy Guy — The First Time I Met the Blues (1960)",
+        "youtubeLink": "https://www.youtube.com/watch?v=exutWZUTl44"
+      },
+      {
+        "name": "Otis Rush — I Can't Quit You Baby (live)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Uy2tEP3I3DM"
+      }
+    ],
+    "description": "Fred Below was an American blues drummer widely regarded as the most important and influential drummer in post-war Chicago blues. He played on countless Chess Records sessions, providing the rhythmic backbone for Little Walter, Muddy Waters, Howlin' Wolf, Chuck Berry, and many others. His innovative shuffle patterns and use of jazz-influenced technique helped define the sound of electric Chicago blues.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "little-walter",
+      "muddy-waters",
+      "howlin-wolf",
+      "willie-dixon",
+      "jimmy-rogers",
+      "elmore-james",
+      "otis-rush",
+      "junior-wells"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Fred_Below",
+    "secondaryInstruments": []
   }
 ]

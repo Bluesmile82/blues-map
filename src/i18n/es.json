@@ -27,6 +27,12 @@
     "menu": "Menú",
     "lightDarkMode": "Modo claro/oscuro"
   },
+  "mobile": {
+    "gestureHintPinch": "Pellizca para acercar o alejar",
+    "gestureHintCluster": "Toca los grupos para ver músicos",
+    "gestureHintDrag": "Arrastra para explorar la línea de tiempo",
+    "gestureHintTap": "Toca músicos para ver detalles"
+  },
   "filters": {
     "title": "Filtros",
     "findByName": "Buscar por nombre…",
@@ -56,7 +62,7 @@
     "influencedBy": "Influido por",
     "influenced": "Influyó a",
     "playedWith": "Tocó con",
-    "details": "Detalles",
+    "details": "Ver detalles completos",
     "born": "Nacimiento",
     "bornAbbr": "n.",
     "diedAbbr": "f.",
