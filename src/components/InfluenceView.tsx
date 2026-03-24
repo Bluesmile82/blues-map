@@ -1479,8 +1479,8 @@ export default function InfluenceView({
           </div>
 
 
-          {/* Timeline legend */}
-          <div className={`absolute right-3 sm:right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none transition-all ${isMobile ? 'bottom-16' : 'bottom-6'}`}>
+           {/* Timeline legend */}
+           <div className={`absolute right-3 sm:right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none transition-all ${isMobile ? 'top-4 right-4' : 'bottom-6'}`}>
             <p className="text-2xs text-accent tracking-widest uppercase mb-1">{t('timeline.legend.title')}</p>
             {[
               { label: t('timeline.legend.musician'), el: <span className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" /> },

@@ -2,13 +2,15 @@ import { motion } from 'framer-motion';
 import { GroupBy } from '../utils/layout';
 
 interface MobileBottomToolbarProps {
-  groupBy: GroupBy;
-  onGroupByChange: (groupBy: GroupBy) => void;
+  groupBy?: GroupBy;
+  onGroupByChange?: (groupBy: GroupBy) => void;
   onZoomIn: () => void;
   onZoomOut: () => void;
   onReset: () => void;
   onFilterToggle: () => void;
   filterCount?: number;
+  filterLabel?: string;
+  filterActive?: boolean;
 }
 
 export default function MobileBottomToolbar({
@@ -18,7 +20,9 @@ export default function MobileBottomToolbar({
   onZoomOut,
   onReset,
   onFilterToggle,
-  filterCount = 0
+  filterCount = 0,
+  filterLabel = 'Filters',
+  filterActive = false,
 }: MobileBottomToolbarProps) {
   return (
     <motion.div
@@ -31,14 +35,14 @@ export default function MobileBottomToolbar({
         <div className="flex items-center justify-around px-2 py-2 gap-1">
           <motion.button
             onClick={onFilterToggle}
-            className="flex flex-col items-center justify-center min-w-[64px] min-h-[56px] px-2 rounded-lg active:bg-bg-hover transition-colors touch-manipulation relative"
+            className={`flex flex-col items-center justify-center min-w-[64px] min-h-[56px] px-2 rounded-lg active:bg-bg-hover transition-colors touch-manipulation relative ${filterActive ? 'bg-accent/15' : ''}`}
             whileTap={{ scale: 0.95 }}
-            aria-label="Toggle filters"
+            aria-label={filterLabel}
           >
             <svg className="w-6 h-6 text-accent mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4h18M3 8h18M3 12h12" />
             </svg>
-            <span className="text-2xs text-ink3">Filters</span>
+            <span className="text-2xs text-ink3">{filterLabel}</span>
             {filterCount > 0 && (
               <span className="absolute top-0 right-2 w-5 h-5 bg-accent text-bg text-xs font-bold rounded-full flex items-center justify-center">
                 {filterCount}
@@ -46,21 +50,23 @@ export default function MobileBottomToolbar({
             )}
           </motion.button>
 
-          <div className="flex items-center bg-bg3/50 rounded-lg p-1 min-h-[48px]">
-            {(['style', 'instrument'] as GroupBy[]).map((mode) => (
-              <motion.button
-                key={mode}
-                onClick={() => onGroupByChange(mode)}
-                className={`px-3 py-2 rounded-md text-xs font-semibold tracking-wide uppercase transition-all touch-manipulation min-w-[72px] ${
-                  groupBy === mode ? 'bg-accent text-bg' : 'text-ink3'
-                }`}
-                whileTap={{ scale: 0.95 }}
-                aria-pressed={groupBy === mode}
-              >
-                {mode === 'style' ? 'Style' : 'Instrument'}
-              </motion.button>
-            ))}
-          </div>
+          {onGroupByChange && groupBy != null && (
+            <div className="flex items-center bg-bg3/50 rounded-lg p-1 min-h-[48px]">
+              {(['style', 'instrument'] as GroupBy[]).map((mode) => (
+                <motion.button
+                  key={mode}
+                  onClick={() => onGroupByChange(mode)}
+                  className={`px-3 py-2 rounded-md text-xs font-semibold tracking-wide uppercase transition-all touch-manipulation min-w-[72px] ${
+                    groupBy === mode ? 'bg-accent text-bg' : 'text-ink3'
+                  }`}
+                  whileTap={{ scale: 0.95 }}
+                  aria-pressed={groupBy === mode}
+                >
+                  {mode === 'style' ? 'Style' : 'Instrument'}
+                </motion.button>
+              ))}
+            </div>
+          )}
 
           <div className="flex items-center gap-1">
             <motion.button

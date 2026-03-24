@@ -10,7 +10,7 @@ import { getStyleColor, getStyleHex } from '../utils/colors';
 import { getStyleAbbreviation } from '../utils/layout';
 import SearchInput from './SearchInput';
 import BluesStyleLegend from './BluesStyleLegend';
-import MapBottomSheet from './MapBottomSheet';
+import MobileBottomToolbar from './MobileBottomToolbar';
 import { useAtomValue } from 'jotai';
 import { isMusicianFavoritedAtom, listsAtom, favoritesMapAtom } from '../atoms/lists';
 import { userAtom } from '../atoms/auth';
@@ -73,6 +73,7 @@ function MusicianSidebar({
   hoveredId,
   styleFilter,
   onStyleFilterChange,
+  isMobile,
 }: {
   musicians: Musician[];
   onSelect: (musician: Musician) => void;
@@ -81,6 +82,7 @@ function MusicianSidebar({
   hoveredId: string | null;
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
+  isMobile?: boolean;
 }) {
   const { t } = useTranslation();
   const favorites = useAtomValue(isMusicianFavoritedAtom);
@@ -138,7 +140,10 @@ function MusicianSidebar({
   }, [musicians, searchQuery, styleFilter, showFavoritesOnly, filterListId, favorites, favoritesMap]);
 
   return (
-    <div className="absolute left-0 top-0 bottom-0 px-4 pt-4 w-80 bg-bg/30 backdrop-blur-sm flex flex-col z-10 shadow-2xl border-r border-border-subtle">
+    <div className={isMobile
+      ? 'flex flex-col min-h-0 h-full px-3 pt-3'
+      : 'absolute left-0 top-0 bottom-0 px-4 pt-4 w-80 bg-bg/30 backdrop-blur-sm flex flex-col z-10 shadow-2xl border-r border-border-subtle'
+    }>
       {/* Filters toggle */}
       <button
         onClick={() => setFiltersCollapsed(!filtersCollapsed)}
@@ -146,14 +151,6 @@ function MusicianSidebar({
       >
         <span>{t('filters.title')}</span>
         {filtersCollapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
-        <svg
-          className={`w-3 h-3 opacity-60 transition-transform ${filtersCollapsed ? '' : 'rotate-180'}`}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
       </button>
 
       {!filtersCollapsed && (
@@ -222,7 +219,7 @@ function MusicianSidebar({
       )}
 
       {/* Musician List */}
-      <div className="flex-1 overflow-y-auto px-3 py-3">
+      <div className="flex-1 overflow-y-auto min-h-0 px-3 py-3">
         {filteredMusicians.items.length === 0 ? (
           <div className="text-center py-8 text-ink3 text-sm rounded-lg">
             {t('map.noMusiciansFound')}
@@ -353,7 +350,6 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
   const [listHovered, setListHovered] = useState<string | null>(null);
   const [viewState, setViewState] = useState<MapViewState>(INITIAL_VIEW_STATE);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [sheetHeight, setSheetHeight] = useState<'collapsed' | 'half' | 'full'>('collapsed');
 
   // Compute viewport bounds from viewState for supercluster
   const viewportBounds = useMemo<[number, number, number, number] | null>(() => {
@@ -769,71 +765,42 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
   const hoveredMusician = hovered ? completeMusicians.find((m) => m.id === hovered) : null;
   return (
     <div className="relative w-full h-full">
-      {/* Mobile sidebar toggle */}
+      {/* Musician Sidebar */}
       {isMobile ? (
-        sheetHeight !== 'collapsed' ? (
-          <button
-            onClick={() => setSheetHeight('collapsed')}
-            className="sm:hidden absolute top-1 right-2 z-76 flex items-center gap-1.5 px-3 py-2 bg-bg/55 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm"
-          >
-            <span>✕</span>
-            <span>{t('map.close')}</span>
-          </button>
-        ) : (
-          <button
-            onClick={() => setSheetHeight('half')}
-            className="sm:hidden absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/55 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm"
-          >
-            <span>☰</span>
-            <span>{t('map.musicians')}</span>
-          </button>
-        )
-      ) : (
-        <button
-          onClick={() => setSidebarOpen(o => !o)}
-          className="absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-2 bg-bg/55 border border-border rounded-lg text-xs text-ink3 hover:text-ink backdrop-blur-sm"
+        <div
+          className={`absolute left-3 top-3 z-40 rounded-lg border border-accent/50 bg-bg/90 backdrop-blur-lg shadow-xl flex flex-col ${!sidebarOpen ? 'hidden' : ''}`}
+          style={{ width: 'min(300px, calc(100vw - 1.5rem))', maxHeight: 'calc(100vh - 10rem)' }}
         >
-          <span>{sidebarOpen ? '✕' : '☰'}</span>
-          <span>{sidebarOpen ? t('map.close') : t('map.musicians')}</span>
-        </button>
+          <MusicianSidebar
+            musicians={completeMusicians}
+            onSelect={(m) => {
+              onSelect(m);
+              setSidebarOpen(false);
+            }}
+            onHover={setListHovered}
+            selectedId={selectedId}
+            hoveredId={listHovered}
+            styleFilter={styleFilter}
+            onStyleFilterChange={onStyleFilterChange}
+            isMobile
+          />
+        </div>
+      ) : (
+        <div className="absolute left-0 top-0 bottom-0 z-10">
+          <MusicianSidebar
+            musicians={completeMusicians}
+            onSelect={(m) => {
+              onSelect(m);
+              setSidebarOpen(false);
+            }}
+            onHover={setListHovered}
+            selectedId={selectedId}
+            hoveredId={listHovered}
+            styleFilter={styleFilter}
+            onStyleFilterChange={onStyleFilterChange}
+          />
+        </div>
       )}
-
-       {/* Musician Sidebar */}
-       {isMobile ? (
-         <MapBottomSheet
-           height={sheetHeight}
-           onHeightChange={setSheetHeight}
-           onClose={() => setSheetHeight('collapsed')}
-         >
-           <MusicianSidebar
-             musicians={completeMusicians}
-             onSelect={(m) => {
-               onSelect(m);
-               setSheetHeight('collapsed');
-             }}
-             onHover={setListHovered}
-             selectedId={selectedId}
-             hoveredId={listHovered}
-             styleFilter={styleFilter}
-             onStyleFilterChange={onStyleFilterChange}
-           />
-         </MapBottomSheet>
-       ) : (
-         <div className="absolute left-0 top-0 bottom-0 z-10">
-           <MusicianSidebar
-             musicians={completeMusicians}
-             onSelect={(m) => {
-               onSelect(m);
-               setSidebarOpen(false);
-             }}
-             onHover={setListHovered}
-             selectedId={selectedId}
-             hoveredId={listHovered}
-             styleFilter={styleFilter}
-             onStyleFilterChange={onStyleFilterChange}
-           />
-         </div>
-       )}
 
       {/* Map */}
       <div className="relative w-full h-full">
@@ -891,6 +858,18 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
           </div>
         )}
       </div>
+
+      {/* Mobile Bottom Toolbar */}
+      {isMobile && (
+        <MobileBottomToolbar
+          onZoomIn={() => setViewState(vs => ({ ...vs, zoom: Math.min(vs.zoom + 1, vs.maxZoom ?? 14) }))}
+          onZoomOut={() => setViewState(vs => ({ ...vs, zoom: Math.max(vs.zoom - 1, vs.minZoom ?? 2) }))}
+          onReset={() => setViewState(INITIAL_VIEW_STATE)}
+          onFilterToggle={() => setSidebarOpen(o => !o)}
+          filterLabel={t('map.musicians')}
+          filterActive={sidebarOpen}
+        />
+      )}
     </div>
   );
 }

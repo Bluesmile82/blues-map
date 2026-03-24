@@ -25,7 +25,18 @@
     "clickToEdit": "Haz clic para editar",
     "clickMusician": "Haz clic en un músico",
     "menu": "Menú",
-    "lightDarkMode": "Modo claro/oscuro"
+    "lightDarkMode": "Modo claro/oscuro",
+    "card": "Carta"
+  },
+  "card": {
+    "flipToMap": "Clic para ver lugares",
+    "flipToFront": "Clic para volver",
+    "influencedBy": "Influido por",
+    "influences": "Influyó a",
+    "playedWith": "Tocó con",
+    "born": "Nacimiento",
+    "died": "Fallecimiento",
+    "lived": "Vivió en"
   },
   "mobile": {
     "gestureHintPinch": "Pellizca para acercar o alejar",

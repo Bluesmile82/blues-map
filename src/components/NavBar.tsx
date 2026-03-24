@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import AuthButton from './auth/AuthButton'
+import type { ViewType } from '../App'
 
 interface NavBarProps {
-  view: 'influence' | 'map';
-  onViewChange: (view: 'influence' | 'map') => void;
+  view: ViewType;
+  onViewChange: (view: ViewType) => void;
   editMode: boolean;
   onEditModeChange: (editMode: boolean) => void;
   onCreateNew: () => void;
@@ -30,8 +31,9 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
       {/* View switch - desktop */}
       <div className="hidden sm:flex bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5">
         {([
-          { id: 'influence', label: t('nav.timeline') },
+          { id: 'card', label: t('nav.card') },
           { id: 'map', label: t('nav.map') },
+          { id: 'influence', label: t('nav.timeline') },
         ] as const).map(({ id, label }) => (
           <button
             key={id}
@@ -51,6 +53,7 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
         {([
           { id: 'influence', label: t('nav.timeline') },
           { id: 'map', label: t('nav.map') },
+          { id: 'card', label: t('nav.card') },
         ] as const).map(({ id, label }) => (
           <button
             key={id}
