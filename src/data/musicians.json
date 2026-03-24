@@ -25588,50 +25588,9 @@
     ]
   },
   {
-    "id": "larry-hamilton",
-    "name": "Larry Hamilton",
-    "image": "/images/musicians/larry-hamilton.png",
-    "image_source": "",
-    "birthDate": "1931-03-11",
-    "birthPlace": "St. Joseph, Missouri",
-    "birthCoords": [
-      -94.84663888888889,
-      39.76861111111111
-    ],
-    "deathDate": "1996-07-20",
-    "deathPlace": "St. Joseph",
-    "deathCoords": [
-      -94.84663888888889,
-      39.76861111111111
-    ],
-    "spentTimePlaces": [
-      {
-        "name": "New York",
-        "coords": [
-          -74.006,
-          40.7128
-        ]
-      }
-    ],
-    "instrument": "Guitar",
-    "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=qtFqyNlsHXU",
-    "albums": [],
-    "description": "Larry Hamilton (March 11, 1931 – July 20, 1996) was an American blues guitarist and singer. He recorded for several labels in the 1950s and 1960s and was part of the St. Louis blues scene.",
-    "activeFrom": "1951",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Larry_Hamilton_(musician)",
-    "secondaryInstruments": [
-      "Vocals"
-    ]
-  },
-  {
     "id": "odessa-harris",
     "name": "Odessa Harris",
-    "image": "/images/musicians/odessa-harris.png",
+    "image": "/images/musicians/odessa-harris.webp",
     "image_source": "",
     "birthDate": "1936-06-08",
     "birthPlace": "West Helena, Arkansas",
@@ -25670,14 +25629,14 @@
     ],
     "instrument": "Vocals",
     "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=hR6F4OKPfk8",
+    "youtubeLink": "https://www.youtube.com/watch?v=f5Js4AFAclU",
     "albums": [
       {
         "name": "Odessa Harris Sings the Blues (1995)",
-        "youtubeLink": "https://www.youtube.com/watch?v=hR6F4OKPfk8"
+        "youtubeLink": "https://www.youtube.com/watch?v=V6pvzbzlZeU"
       }
     ],
-    "description": "Dessie Mae Williams, known professionally as Odessa Harris (June 8, 1936 – August 18, 2007) was an American blues and jazz singer. \nIn a lengthy career, Harris toured for two years with B. B.",
+    "description": "Dessie Mae Williams, known professionally as Odessa Harris (June 8, 1936 – August 18, 2007) was an American blues and jazz singer. In a lengthy career, Harris toured for two years with B.B. King, who which gave her the stage name Odessa Harris, and recorded for Capitol Records. Later in 1993, she returned to recording, after a three-decade break, to release her debut album.",
     "activeFrom": "1955",
     "influences": [],
     "influencedBy": [],
@@ -26341,7 +26300,7 @@
   {
     "id": "asie-payton",
     "name": "Asie Payton",
-    "image": "/images/musicians/asie-payton.png",
+    "image": "/images/musicians/asie-payton.webp",
     "image_source": "",
     "birthDate": "1937-04-12",
     "birthPlace": "Holly Ridge, Mississippi",
@@ -26355,11 +26314,11 @@
     "spentTimePlaces": [],
     "instrument": "Guitar",
     "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=RBOYAizkyns",
+    "youtubeLink": "https://www.youtube.com/watch?v=sOEw7RcpERI",
     "albums": [
       {
         "name": "Worried (1997)",
-        "youtubeLink": "https://www.youtube.com/watch?v=RBOYAizkyns"
+        "youtubeLink": "https://www.youtube.com/watch?v=6_cKXoSCaiY"
       }
     ],
     "description": "Asie Reed Payton (April 12, 1937 – May 19, 1997) was an American blues musician, who lived most of his life in Holly Ridge, Mississippi, in the Mississippi Delta.   Born in Washington County, Mississippi, he sang and played the guitar, but made his living as a farmer. \nNear the end of his life he recorded one album, Worried, for the Fat Possum Records label, which was released after his death.",
