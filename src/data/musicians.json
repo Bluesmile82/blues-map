@@ -8605,7 +8605,7 @@
       }
     ],
     "instrument": "Harmonica",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Delta Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=tzCSeF_TUzA",
     "albums": [],
     "description": "Woodrow Wilson Adams (April 9, 1917 – August 9, 1988) was an American Delta blues guitarist and harmonica player.  He made a late entry into the recording industry, producing three singles.  His most accomplished song was \"How Long\", which offered an insight into his lifestyle.",
@@ -18501,7 +18501,7 @@
   {
     "id": "willie-d-warren",
     "name": "Willie D. Warren",
-    "image": "/images/musicians/willie-d-warren.png",
+    "image": "/images/musicians/willie-d-warren.webp",
     "image_source": "",
     "birthDate": "1924-09-11",
     "birthPlace": "Mississippi",
@@ -18523,7 +18523,7 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=tdYz0gIzqVk",
+    "youtubeLink": "https://www.youtube.com/watch?v=SV7SebTO8IU",
     "albums": [
       {
         "name": "Country Get-Together (1970)",
@@ -18543,7 +18543,7 @@
       },
       {
         "name": "Face of a Fighter (1978)",
-        "youtubeLink": "https://www.youtube.com/watch?v=J0vUqvfHQeQ"
+        "youtubeLink": ""
       },
       {
         "name": "Willie and David (1980)",
@@ -18555,7 +18555,15 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "otis-rush",
+      "david-honeyboy-edwards",
+      "baby-boy-warren",
+      "guitar-slim",
+      "freddie-king",
+      "jimmy-reed",
+      "bobo-jenkins"
+    ],
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians",
     "secondaryInstruments": [
       "Vocals"
@@ -26795,9 +26803,11 @@
         "youtubeLink": "https://www.youtube.com/watch?v=D5VAf0VE7Nc"
       }
     ],
-    "description": "Lonnie Shields (born April 17, 1956) is an American electric blues singer, songwriter, and guitarist.  His primary influence was B. B.",
+    "description": "Lonnie Shields (born April 17, 1956) is an American electric blues singer, songwriter, and guitarist. His primary influence was B.B. King. He has released seven albums to date, and one publication described his music as \"bewitching, funk-influenced variations on the oldest country blues\"",
     "activeFrom": "1976",
-    "influences": [],
+    "influences": [
+      "bb-king"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
