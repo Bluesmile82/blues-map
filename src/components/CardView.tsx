@@ -344,128 +344,133 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   const cardZone = (
     <div
       ref={cardZoneRef}
-      className="relative flex items-center justify-center shrink-0"
-      style={{
-        width: cardW + arrowGap * 2,
-        height: cardH + arrowGap * 2,
-      }}
-      onTouchStart={isMobile ? handleTouchStart : undefined}
-      onTouchEnd={isMobile ? handleTouchEnd : undefined}
-    >
-      {/* Top: influencedBy */}
-      {(influencers.length > 0 || upIsBack) && (
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 z-10" style={{ maxWidth: cardW + arrowGap }}>
-          {upIsBack ? (
-            <div className="flex items-end justify-center">
-              <NavArrow direction="up" label={t('card.influencedBy')} targetName={backMusician!.name} count={1} isBack onClick={navigateBack} isMobile={isMobile} />
-            </div>
-          ) : (
-            <PaginatedArrowRow
-              key={current.id + '-influencers'}
-              musicians={influencers}
-              direction="up"
-              label={t('card.influencedBy')}
-              onNavigate={(m) => navigateToMusician(m, 'up')}
-              isMobile={isMobile}
-              maxVisible={isMobile ? 4 : 5}
-            />
-          )}
-        </div>
-      )}
+      className="min-h-[80%] lg:h-full relative flex items-center justify-center gap-3 ml-4">
+      <div
+        className="relative flex items-center justify-center shrink-0"
+        style={{
+          // width: cardW + arrowGap * 2,
+          height: cardH + arrowGap * 2 + 10,
+        }}
+        onTouchStart={isMobile ? handleTouchStart : undefined}
+        onTouchEnd={isMobile ? handleTouchEnd : undefined}
+      >
+        {/* Top: influencedBy */}
+        {(influencers.length > 0 || upIsBack) && (
 
-      {/* Bottom: influenced */}
-      {(influenced.length > 0 || downIsBack) && (
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10" style={{ maxWidth: cardW + arrowGap }}>
-          {downIsBack ? (
-            <div className="flex items-start justify-center">
-              <NavArrow direction="down" label={t('card.influences')} targetName={backMusician!.name} count={1} isBack onClick={navigateBack} isMobile={isMobile} />
-            </div>
-          ) : (
-            <PaginatedArrowRow
-              key={current.id + '-influenced'}
-              musicians={influenced}
-              direction="down"
-              label={t('card.influences')}
-              onNavigate={(m) => navigateToMusician(m, 'down')}
-              isMobile={isMobile}
-              maxVisible={isMobile ? 4 : 5}
-            />
-          )}
-        </div>
-      )}
+          <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center" style={{ maxWidth: cardW + arrowGap }}>
+            <span className="text-[10px] text-ink3 uppercase tracking-wide font-medium mb-2">{t('card.influencedBy')}</span>
+            {upIsBack ? (
+              <div className="flex items-end justify-center">
+                <NavArrow direction="up" label={t('card.influencedBy')} targetName={backMusician!.name} count={1} isBack onClick={navigateBack} isMobile={isMobile} />
+              </div>
+            ) : (
+              <PaginatedArrowRow
+                key={current.id + '-influencers'}
+                musicians={influencers}
+                direction="up"
+                label={t('card.influencedBy')}
+                onNavigate={(m) => navigateToMusician(m, 'up')}
+                isMobile={isMobile}
+                maxVisible={isMobile ? 4 : 5}
+              />
+            )}
+          </div>
+        )}
 
-      {/* Card centered in the zone */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={current.id}
-          initial={{ opacity: 0, x: slideDir.x * 60, y: slideDir.y * 60, scale: 0.93 }}
-          animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
-          exit={{ opacity: 0, x: -slideDir.x * 60, y: -slideDir.y * 60, scale: 0.93 }}
-          transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
-          className="relative"
-          style={{ width: cardW, height: cardH }}
-        >
-          {/* 3D tilt wrapper — mouse handlers only on desktop */}
-          <div
-            ref={tiltWrapperRef}
-            onMouseMove={!isMobile ? handleMouseMove : undefined}
-            onMouseEnter={!isMobile ? handleMouseEnter : undefined}
-            onMouseLeave={!isMobile ? handleMouseLeave : undefined}
-            onClick={() => setIsFlipped(f => !f)}
-            style={{
-              width: '100%',
-              height: '100%',
-              cursor: 'pointer',
-              transform: 'perspective(900px) rotateX(0deg) rotateY(0deg) scale(1)',
-              transformStyle: 'preserve-3d',
-              transition: 'transform 0.9s cubic-bezier(0.23, 1, 0.32, 1)',
-            }}
+        {/* Bottom: influenced */}
+        {(influenced.length > 0 || downIsBack) && (
+          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center" style={{ maxWidth: cardW + arrowGap }}>
+            <span className="text-[10px] text-ink3 uppercase tracking-wide font-medium mb-2">{t('card.influences')}</span>
+            {downIsBack ? (
+              <div className="flex items-start justify-center">
+                <NavArrow direction="down" label={t('card.influences')} targetName={backMusician!.name} count={1} isBack onClick={navigateBack} isMobile={isMobile} />
+              </div>
+            ) : (
+              <PaginatedArrowRow
+                key={current.id + '-influenced'}
+                musicians={influenced}
+                direction="down"
+                label={t('card.influences')}
+                onNavigate={(m) => navigateToMusician(m, 'down')}
+                isMobile={isMobile}
+                maxVisible={isMobile ? 4 : 5}
+              />
+            )}
+          </div>
+        )}
+
+        {/* Card centered in the zone */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current.id}
+            initial={{ opacity: 0, x: slideDir.x * 60, y: slideDir.y * 60, scale: 0.93 }}
+            animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+            exit={{ opacity: 0, x: -slideDir.x * 60, y: -slideDir.y * 60, scale: 0.93 }}
+            transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
+            className="relative"
+            style={{ width: cardW, height: cardH }}
           >
-            <motion.div
-              animate={{ rotateY: isFlipped ? 180 : 0 }}
-              transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
-              style={{ transformStyle: 'preserve-3d', width: '100%', height: '100%' }}
-              className="relative"
+            {/* 3D tilt wrapper — mouse handlers only on desktop */}
+            <div
+              ref={tiltWrapperRef}
+              onMouseMove={!isMobile ? handleMouseMove : undefined}
+              onMouseEnter={!isMobile ? handleMouseEnter : undefined}
+              onMouseLeave={!isMobile ? handleMouseLeave : undefined}
+              onClick={() => setIsFlipped(f => !f)}
+              style={{
+                width: '100%',
+                height: '100%',
+                cursor: 'pointer',
+                transform: 'perspective(900px) rotateX(0deg) rotateY(0deg) scale(1)',
+                transformStyle: 'preserve-3d',
+                transition: 'transform 0.9s cubic-bezier(0.23, 1, 0.32, 1)',
+              }}
             >
-              {/* Front Face */}
-              <div
-                className="absolute inset-0 rounded-xl overflow-hidden border-2 shadow-xl bg-bg-elevated flex flex-col"
-                style={{ backfaceVisibility: 'hidden', borderColor: `rgba(${r},${g},${b},0.4)` }}
+              <motion.div
+                animate={{ rotateY: isFlipped ? 180 : 0 }}
+                transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
+                style={{ transformStyle: 'preserve-3d', width: '100%', height: '100%' }}
+                className="relative"
               >
-                <div className="h-1 shrink-0" style={{ background: hex }} />
-                <div className="relative flex-1 min-h-0 overflow-hidden">
-                  <img
-                    src={current.image}
-                    alt={current.name}
-                    className="w-full h-full object-cover"
-                    style={{ filter: 'sepia(8%) contrast(1.05)' }}
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(current.name)}&background=333&color=fff&size=400`;
-                    }}
-                  />
-                  <div className="absolute top-2 right-2 w-5 h-5 rotate-45 rounded-sm shadow-lg opacity-90" style={{ background: hex }} />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-3 pt-6 pb-2">
-                    <div className="flex items-center gap-2">
-                      <h2 className="text-white font-bold text-lg tracking-wide leading-tight truncate flex-1">{current.name}</h2>
-                      <InstrumentIcon instrument={current.instrument} className="text-white/80 shrink-0" size={18} />
-                    </div>
-                    <div className="flex items-center gap-2 mt-1">
-                      <span className="inline-block px-2 py-0.5 rounded-full text-white text-[11px] font-semibold tracking-wide" style={{ background: `rgba(${r},${g},${b},0.85)` }}>
-                        {current.bluesStyle}
-                      </span>
-                      <span className="text-white/60 text-xs">{birthYear}</span>
+                {/* Front Face */}
+                <div
+                  className="absolute inset-0 rounded-xl overflow-hidden border-2 shadow-xl bg-bg-elevated flex flex-col"
+                  style={{ backfaceVisibility: 'hidden', borderColor: `rgba(${r},${g},${b},0.4)` }}
+                >
+                  <div className="h-1 shrink-0" style={{ background: hex }} />
+                  <div className="relative flex-1 min-h-0 overflow-hidden">
+                    <img
+                      src={current.image}
+                      alt={current.name}
+                      className="w-full h-full object-cover"
+                      style={{ filter: 'sepia(8%) contrast(1.05)' }}
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(current.name)}&background=333&color=fff&size=400`;
+                      }}
+                    />
+                    <div className="absolute top-2 right-2 w-5 h-5 rotate-45 rounded-sm shadow-lg opacity-90" style={{ background: hex }} />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-3 pt-6 pb-2">
+                      <div className="flex items-center gap-2">
+                        <h2 className="text-white font-bold text-lg tracking-wide leading-tight truncate flex-1">{current.name}</h2>
+                        <InstrumentIcon instrument={current.instrument} className="text-white/80 shrink-0" size={18} />
+                      </div>
+                      <div className="flex items-center gap-2 mt-1">
+                        <span className="inline-block px-2 py-0.5 rounded-full text-white text-[11px] font-semibold tracking-wide" style={{ background: `rgba(${r},${g},${b},0.85)` }}>
+                          {current.bluesStyle}
+                        </span>
+                        <span className="text-white/60 text-xs">{birthYear}</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="px-3 py-2.5 shrink-0">
-                  <p className="text-ink text-xs leading-relaxed line-clamp-3">{current.description}</p>
-                </div>
-                <div className="h-1 shrink-0" style={{ background: hex }} />
+                  <div className="px-3 py-2.5 shrink-0">
+                    <p className="text-ink text-xs leading-relaxed line-clamp-3">{current.description}</p>
+                  </div>
+                  <div className="h-1 shrink-0" style={{ background: hex }} />
 
-                {/* ── Holo overlays (desktop) ── */}
-                {!isMobile && (<>
-                  {/* Rainbow foil */}
-                  {/* <div
+                  {/* ── Holo overlays (desktop) ── */}
+                  {!isMobile && (<>
+                    {/* Rainbow foil */}
+                    {/* <div
                     ref={holoRef}
                     className="absolute inset-0 pointer-events-none z-20 rounded-xl"
                     style={{
@@ -474,18 +479,18 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
                       transition: 'opacity 0.5s ease',
                     }}
                   /> */}
-                  {/* Specular glare */}
-                  <div
-                    ref={glareRef}
-                    className="absolute inset-0 pointer-events-none z-20 rounded-3xl"
-                    style={{
-                      opacity: 0,
-                      mixBlendMode: 'screen' as React.CSSProperties['mixBlendMode'],
-                      transition: 'opacity 0.1s ease',
-                    }}
-                  />
-                  {/* Sparkle dot grid */}
-                  {/* <div
+                    {/* Specular glare */}
+                    <div
+                      ref={glareRef}
+                      className="absolute inset-0 pointer-events-none z-20 rounded-3xl"
+                      style={{
+                        opacity: 0,
+                        mixBlendMode: 'screen' as React.CSSProperties['mixBlendMode'],
+                        transition: 'opacity 0.1s ease',
+                      }}
+                    />
+                    {/* Sparkle dot grid */}
+                    {/* <div
                   ref={sparkleRef}
                   className="absolute inset-0 pointer-events-none z-20 rounded-xl overflow-hidden"
                   style={{
@@ -500,49 +505,52 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
                     backgroundSize: '26px 26px, 18px 18px, 13px 13px',
                   }}
                 /> */}
-                </>)}
-              </div>
+                  </>)}
+                </div>
 
-              {/* Back Face */}
-              <div
-                className="absolute inset-0 rounded-xl overflow-hidden border-2 shadow-xl bg-bg-elevated"
-                style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)', borderColor: `rgba(${r},${g},${b},0.4)` }}
-              >
-                <div className="h-1 shrink-0" style={{ background: hex }} />
-                <div className="px-3 py-2 text-center border-b border-border-subtle bg-bg/80">
-                  <h3 className="text-ink font-bold text-sm tracking-wide">{current.name}</h3>
-                </div>
-                <div className="flex-1 relative" style={{ height: cardH - 90 }}>
-                  {isFlipped && <CardMiniMap musician={current} theme={theme} />}
-                </div>
-                <div className="flex items-center justify-center gap-3 px-2 py-1.5 border-t border-border-subtle bg-bg/80">
-                  <span className="flex items-center gap-1 text-[10px] text-ink3">
-                    <span className="w-2 h-2 rounded-full bg-green-500 inline-block" /> {t('card.born')}
-                  </span>
-                  {current.deathCoords && (
+                {/* Back Face */}
+                <div
+                  className="absolute inset-0 rounded-xl overflow-hidden border-2 shadow-xl bg-bg-elevated"
+                  style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)', borderColor: `rgba(${r},${g},${b},0.4)` }}
+                >
+                  <div className="h-1 shrink-0" style={{ background: hex }} />
+                  <div className="px-3 py-2 text-center border-b border-border-subtle bg-bg/80">
+                    <h3 className="text-ink font-bold text-sm tracking-wide">{current.name}</h3>
+                  </div>
+                  <div className="flex-1 relative" style={{ height: cardH - 90 }}>
+                    {isFlipped && <CardMiniMap musician={current} theme={theme} />}
+                  </div>
+                  <div className="flex items-center justify-center gap-3 px-2 py-1.5 border-t border-border-subtle bg-bg/80">
                     <span className="flex items-center gap-1 text-[10px] text-ink3">
-                      <span className="w-2 h-2 rounded-full bg-red-500 inline-block" /> {t('card.died')}
+                      <span className="w-2 h-2 rounded-full bg-green-500 inline-block" /> {t('card.born')}
                     </span>
-                  )}
-                  {current.spentTimePlaces.length > 0 && (
-                    <span className="flex items-center gap-1 text-[10px] text-ink3">
-                      <span className="w-2 h-2 rounded-full bg-blue-400 inline-block" /> {t('card.lived')}
-                    </span>
-                  )}
+                    {current.deathCoords && (
+                      <span className="flex items-center gap-1 text-[10px] text-ink3">
+                        <span className="w-2 h-2 rounded-full bg-red-500 inline-block" /> {t('card.died')}
+                      </span>
+                    )}
+                    {current.spentTimePlaces.length > 0 && (
+                      <span className="flex items-center gap-1 text-[10px] text-ink3">
+                        <span className="w-2 h-2 rounded-full bg-blue-400 inline-block" /> {t('card.lived')}
+                      </span>
+                    )}
+                  </div>
+                  <div className="h-1 shrink-0" style={{ background: hex }} />
                 </div>
-                <div className="h-1 shrink-0" style={{ background: hex }} />
-              </div>
-            </motion.div>
-          </div>
-        </motion.div>
-      </AnimatePresence>
+              </motion.div>
+            </div>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+      {playedWith.length > 0 && (
+        <PlayedWithRow
+          key={current.id}
+          musicians={playedWith}
+          onNavigate={(m) => navigateToMusician(m, 'left')}
+          className="shrink"
+        />
+      )}
     </div>
-  );
-
-  const flipHint = (
-    <p className="text-2xs text-ink3 text-center select-none">
-      {isFlipped ? t('card.flipToFront') : t('card.flipToMap')}
-    </p>
   );
 
   // Mobile: vertical stack
@@ -550,15 +558,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
     return (
       <div className="w-full h-full flex flex-col items-center bg-bg overflow-y-auto">
         {cardZone}
-        {flipHint}
-        {playedWith.length > 0 && (
-          <PlayedWithRow
-            key={current.id}
-            musicians={playedWith}
-            onNavigate={(m) => navigateToMusician(m, 'left')}
-          />
-        )}
-        <div className="w-full px-4 pb-8 mt-2">
+        <div className="w-screen px-4 pb-8 mt-2">
           {current.description && (
             <p className="text-ui text-ink leading-[1.75] mb-6">{current.description}</p>
           )}
@@ -582,25 +582,17 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
 
   // Desktop: card left, description + video right, vertically centered together
   return (
-    <div className="w-full h-full flex items-center bg-bg overflow-hidden">
-      {/* Left side: card */}
-      <div className="flex flex-col items-center shrink-0 pl-4 w-1/2">
+    <div className="w-full h-full flex flex-wrap justify-center gap-4 items-center bg-bg overflow-auto">
+      {/* Left side: card + flip hint */}
+      <div className="flex flex-1 flex-col items-center justify-center min-w-1/2">
         {cardZone}
-        {flipHint}
-        {playedWith.length > 0 && (
-          <PlayedWithRow
-            key={current.id}
-            musicians={playedWith}
-            onNavigate={(m) => navigateToMusician(m, 'left')}
-          />
-        )}
       </div>
 
-      {/* Right side: description + video, vertically centered */}
-      <div className="flex-1 min-w-0 h-full flex items-center">
-        <div className="w-full max-w-xl px-8 py-6 overflow-y-auto" style={{ maxHeight: cardH + arrowGap * 2 }}>
+      {/* Right side: played with + description + video */}
+      <div className="h-full shrink flex items-center min-w-[300px]">
+        <div className="w-full max-w-xl px-8 py-6 flex flex-col gap-6 overflow-y-auto" style={{ maxHeight: cardH + arrowGap * 2 }}>
           {current.description && (
-            <p className="text-ui text-ink leading-[1.75] mb-6">{current.description}</p>
+            <p className="text-ui text-ink leading-[1.75]">{current.description}</p>
           )}
           {current.youtubeLink && (
             <MobileVideoPlayer
@@ -723,7 +715,7 @@ function PaginatedArrowRow({
   const alignItems = direction === 'up' ? 'items-end' : 'items-start';
 
   return (
-    <div className={`flex ${alignItems} justify-center gap-0.5`}>
+    <div className={`flex ${alignItems} justify-center gap-2`}>
       {needsPaging && page > 0 && (
         <motion.button
           whileTap={{ scale: 0.9 }}
@@ -767,9 +759,11 @@ function PaginatedArrowRow({
 function PlayedWithRow({
   musicians,
   onNavigate,
+  className,
 }: {
   musicians: Musician[];
   onNavigate: (m: Musician) => void;
+  className?: string;
 }) {
   const { t } = useTranslation();
   const [page, setPage] = useState(0);
@@ -781,24 +775,23 @@ function PlayedWithRow({
   const totalPages = Math.ceil(total / maxVisible);
 
   return (
-    <div className="flex flex-col items-center gap-1.5 px-4 py-2">
-      <span className="text-[10px] text-ink3 uppercase tracking-wide font-medium">{t('card.playedWith')}</span>
-      <div className="flex items-center gap-1.5 flex-wrap justify-center">
-        {needsPaging && page > 0 && (
-          <motion.button
-            whileTap={{ scale: 0.9 }}
-            onClick={() => setPage(p => p - 1)}
-            className="flex items-center justify-center w-6 h-6 rounded-full bg-bg/60 border border-border-subtle text-ink3 hover:text-ink transition-colors shrink-0"
-          >
-            <ChevronLeft size={12} />
-          </motion.button>
-        )}
+    <div className={`flex flex-col gap-2 ${className}`}>
+      <span className="text-[10px] text-ink3 uppercase tracking-wide pl-1 font-medium">{t('card.playedWith')}</span>
+      <div className="flex flex-col gap-1.5 flex-wrap">
+        <motion.button
+          whileTap={{ scale: 0.9 }}
+          onClick={() => setPage(p => p - 1)}
+          disabled={!needsPaging || page === 0}
+          className="flex items-center justify-center w-6 h-6 rounded-full bg-bg/60 border border-border-subtle text-ink3 hover:text-ink transition-colors shrink-0 disabled:opacity-40 disabled:pointer-events-none"
+        >
+          <ChevronLeft size={12} />
+        </motion.button>
         {visible.map(m => (
           <motion.button
             key={m.id}
             whileTap={{ scale: 0.95 }}
             onClick={() => onNavigate(m)}
-            className="px-3 py-1.5 rounded-full text-xs font-medium bg-bg/80 border border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover transition-colors whitespace-nowrap"
+            className="max-w-24 truncate px-3 py-1.5 rounded-full text-xs font-medium bg-bg/80 border border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover transition-colors whitespace-nowrap"
           >
             {m.name}
           </motion.button>
