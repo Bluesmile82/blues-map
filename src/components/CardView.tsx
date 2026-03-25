@@ -3,10 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Map, { Marker, Source, Layer } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useTranslation } from 'react-i18next';
-import { Guitar, Piano, Mic, Drum, Music, ChevronUp, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Guitar, Piano, Mic, Drum, Music, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, Info } from 'lucide-react';
 import type { Musician } from '../types';
 import { getStyleHex, getStyleColor } from '../utils/colors';
 import MobileVideoPlayer from './MobileVideoPlayer';
+import MapBottomSheet from './MapBottomSheet';
+import MusicianPanel from './MusicianPanel';
 
 const MAP_STYLES = {
   light: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
@@ -72,6 +74,14 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   const { t } = useTranslation();
   const [isFlipped, setIsFlipped] = useState(false);
   const [slideDir, setSlideDir] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
+  
+  // Mobile gesture state
+  const [dragDirection, setDragDirection] = useState<Direction | null>(null);
+  const [showHints, setShowHints] = useState(false);
+  
+  // Mobile drawer state
+  const [showDrawer, setShowDrawer] = useState(false);
+  const [drawerHeight, setDrawerHeight] = useState<'collapsed' | 'half' | 'full'>('half');
 
   // Navigation history stack: each entry = "I was at musicianId and pressed direction to get here"
   const [history, setHistory] = useState<HistoryEntry[]>([]);
@@ -114,6 +124,44 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
 
     }
   }, [current?.id]);
+
+  // Mobile: apply subtle constant 3D tilt
+  useEffect(() => {
+    if (!isMobile || !tiltWrapperRef.current) return;
+    
+    let animationFrameId: number;
+    let startTime = Date.now();
+    
+    const animate = () => {
+      if (!tiltWrapperRef.current || isTouchingRef.current) return;
+      
+      const elapsed = Date.now() - startTime;
+      // Create smooth, faster oscillation using sine waves
+      const rotX = Math.sin(elapsed * 0.002) * 4 + 2;
+      const rotY = Math.cos(elapsed * 0.0025) * 5 - 3;
+      
+      tiltWrapperRef.current.style.transition = 'transform 0.1s linear, box-shadow 0.15s ease';
+      tiltWrapperRef.current.style.transform =
+        `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.03)`;
+      
+      const shadowX = -rotY * 2;
+      const shadowY = -rotX * 2;
+      tiltWrapperRef.current.style.boxShadow = `
+        ${shadowX}px ${shadowY}px 30px rgba(0,0,0,0.25),
+        ${shadowX * 0.5}px ${shadowY * 0.5}px 60px rgba(0,0,0,0.15)
+      `;
+      
+      animationFrameId = requestAnimationFrame(animate);
+    };
+    
+    animate();
+    
+    return () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
+  }, [isMobile, current?.id]);
 
   // Resolve relationships
   const influencers = useMemo(
@@ -218,7 +266,54 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   const handleTouchStart = useCallback((e: React.TouchEvent) => {
     if ((e.target as Element).closest('button')) return;
     touchStartRef.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    setDragDirection(null);
+    setShowHints(true); // Show hints immediately on touch
   }, []);
+
+  const isTouchingRef = useRef(false);
+
+  const handleTouchMove = useCallback((e: React.TouchEvent) => {
+    if (!isMobile) return;
+    if (!touchStartRef.current || !tiltWrapperRef.current) return;
+    
+    isTouchingRef.current = true;
+    const rect = tiltWrapperRef.current.getBoundingClientRect();
+    const touch = e.touches[0];
+    const x = (touch.clientX - rect.left) / rect.width;
+    const y = (touch.clientY - rect.top) / rect.height;
+    
+    // More dynamic tilt on touch
+    const rotX = (y - 0.5) * -10;
+    const rotY = (x - 0.5) * 10;
+    
+    tiltWrapperRef.current.style.transition = 'transform 0.15s linear, box-shadow 0.2s ease';
+    tiltWrapperRef.current.style.transform =
+      `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.04)`;
+    
+    // Dynamic shadow on touch
+    const shadowX = -(x - 0.5) * 20;
+    const shadowY = -(y - 0.5) * 20;
+    tiltWrapperRef.current.style.boxShadow = `
+      ${shadowX}px ${shadowY}px 30px rgba(0,0,0,0.25),
+      ${shadowX * 0.5}px ${shadowY * 0.5}px 60px rgba(0,0,0,0.15)
+    `;
+
+    // Detect drag direction
+    const dx = touch.clientX - touchStartRef.current.x;
+    const dy = touch.clientY - touchStartRef.current.y;
+    const absDx = Math.abs(dx);
+    const absDy = Math.abs(dy);
+    
+    if (Math.max(absDx, absDy) > 20) {
+      if (absDx > absDy * 1.2) {
+        setDragDirection(dx < 0 ? 'left' : 'right');
+        setShowHints(false); // Hide all hints when dragging
+      } else if (absDy > absDx * 1.2) {
+        setDragDirection(dy < 0 ? 'up' : 'down');
+        setShowHints(false); // Hide all hints when dragging
+      }
+    }
+  }, [isMobile]);
 
   const handleTouchEnd = useCallback((e: React.TouchEvent) => {
     if (!touchStartRef.current) return;
@@ -227,19 +322,59 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
     touchStartRef.current = null;
     const absDx = Math.abs(dx);
     const absDy = Math.abs(dy);
-    if (Math.max(absDx, absDy) < 40) return;
-    if (absDx > absDy * 1.2) {
-      if (dx < 0) navigateLeft();
-      else navigateRight();
+    
+    // Tap gesture - keep hints visible
+    if (Math.max(absDx, absDy) < 20) {
+      setTimeout(() => {
+        setShowHints(false);
+      }, 2000);
+      setTimeout(() => {
+        isTouchingRef.current = false;
+      }, 300);
+      return;
+    }
+    
+    // Drag gesture - navigate in the dragged direction
+    if (dragDirection) {
+      switch (dragDirection) {
+        case 'left':
+          if (isFlipped) {
+            setIsFlipped(false); // Go back to front from map
+          } else {
+            setIsFlipped(true); // Show map
+          }
+          break;
+        case 'right':
+          if (playedWith.length > 0) navigateToMusician(playedWith[0], 'right');
+          break;
+        case 'up':
+          if (influencers.length > 0) navigateToMusician(influencers[0], 'up');
+          break;
+        case 'down':
+          if (influenced.length > 0) navigateToMusician(influenced[0], 'down');
+          break;
+      }
     } else {
-      // Vertical: always directional — up = ancestors, down = descendants. No back-cycling.
-      if (dy < 0) {
-        if (influencers.length > 0) navigateToMusician(influencers[0], 'up');
+      // Fallback to original swipe navigation
+      if (absDx > absDy * 1.2) {
+        if (dx < 0) navigateLeft();
+        else navigateRight();
       } else {
-        if (influenced.length > 0) navigateToMusician(influenced[0], 'down');
+        if (dy < 0) {
+          if (influencers.length > 0) navigateToMusician(influencers[0], 'up');
+        } else {
+          if (influenced.length > 0) navigateToMusician(influenced[0], 'down');
+        }
       }
     }
-  }, [navigateLeft, navigateRight, navigateToMusician, influencers, influenced]);
+    
+    setDragDirection(null);
+    setShowHints(false);
+    // Resume animation after touch ends
+    setTimeout(() => {
+      isTouchingRef.current = false;
+    }, 300);
+  }, [navigateLeft, navigateRight, navigateToMusician, influencers, influenced, playedWith, dragDirection, isFlipped]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -276,6 +411,14 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
     if (tiltWrapperRef.current) {
       tiltWrapperRef.current.style.transform =
         `perspective(900px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.03)`;
+      
+      // Dynamic shadow on opposite side
+      const shadowX = -(x - 0.5) * 20;
+      const shadowY = -(y - 0.5) * 20;
+      tiltWrapperRef.current.style.boxShadow = `
+        ${shadowX}px ${shadowY}px 30px rgba(0,0,0,0.25),
+        ${shadowX * 0.5}px ${shadowY * 0.5}px 60px rgba(0,0,0,0.15)
+      `;
     }
     if (holoRef.current) {
       holoRef.current.style.backgroundImage = `
@@ -320,6 +463,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
     if (tiltWrapperRef.current) {
       tiltWrapperRef.current.style.transition = 'transform 0.9s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.5s ease';
       tiltWrapperRef.current.style.transform = 'perspective(900px) rotateX(0deg) rotateY(0deg) scale(1)';
+      tiltWrapperRef.current.style.boxShadow = '';
     }
     if (holoRef.current) { holoRef.current.style.opacity = '0'; }
     if (glareRef.current) { glareRef.current.style.opacity = '0'; }
@@ -344,18 +488,18 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   const cardZone = (
     <div
       ref={cardZoneRef}
-      className="min-h-[80%] lg:h-full relative flex items-center justify-center gap-3 ml-4">
+      className={isMobile ? "h-[70%] relative flex items-center justify-center" : "min-h-[80%] lg:h-full relative flex items-center justify-center gap-3 ml-4"}>
       <div
         className="relative flex items-center justify-center shrink-0"
         style={{
-          // width: cardW + arrowGap * 2,
-          height: cardH + arrowGap * 2 + 10,
+          width: isMobile ? cardW : cardW + arrowGap * 2,
+          height: isMobile ? cardH : cardH + arrowGap * 2 + 10,
         }}
         onTouchStart={isMobile ? handleTouchStart : undefined}
         onTouchEnd={isMobile ? handleTouchEnd : undefined}
       >
         {/* Top: influencedBy */}
-        {(influencers.length > 0 || upIsBack) && (
+        {!isMobile && (influencers.length > 0 || upIsBack) && (
 
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center" style={{ maxWidth: cardW + arrowGap }}>
             <span className="text-[10px] text-ink3 uppercase tracking-wide font-medium mb-2">{t('card.influencedBy')}</span>
@@ -378,7 +522,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
         )}
 
         {/* Bottom: influenced */}
-        {(influenced.length > 0 || downIsBack) && (
+        {!isMobile && (influenced.length > 0 || downIsBack) && (
           <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center" style={{ maxWidth: cardW + arrowGap }}>
             <span className="text-[10px] text-ink3 uppercase tracking-wide font-medium mb-2">{t('card.influences')}</span>
             {downIsBack ? (
@@ -416,6 +560,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
               onMouseMove={!isMobile ? handleMouseMove : undefined}
               onMouseEnter={!isMobile ? handleMouseEnter : undefined}
               onMouseLeave={!isMobile ? handleMouseLeave : undefined}
+              onTouchMove={isMobile ? handleTouchMove : undefined}
               onClick={() => setIsFlipped(f => !f)}
               style={{
                 width: '100%',
@@ -542,7 +687,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
           </motion.div>
         </AnimatePresence>
       </div>
-      {playedWith.length > 0 && (
+      {!isMobile && playedWith.length > 0 && (
         <PlayedWithRow
           key={current.id}
           musicians={playedWith}
@@ -556,26 +701,153 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   // Mobile: vertical stack
   if (isMobile) {
     return (
-      <div className="w-full h-full flex flex-col items-center bg-bg overflow-y-auto">
+      <div className="w-full h-full flex flex-col items-center justify-center bg-bg overflow-hidden relative">
         {cardZone}
-        <div className="w-screen px-4 pb-8 mt-2">
-          {current.description && (
-            <p className="text-ui text-ink leading-[1.75] mb-6">{current.description}</p>
+        
+        {/* Direction hints overlay - shows all 4 directions */}
+        <AnimatePresence>
+          {showHints && !dragDirection && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="absolute inset-0 pointer-events-none flex items-center justify-center"
+            >
+              <div className="absolute top-24 text-center">
+                <ChevronUp size={28} className="mx-auto mb-1 text-accent opacity-80" />
+                <span className="text-xs text-ink3 uppercase tracking-wide font-medium">{t('card.influencedBy')}</span>
+              </div>
+              <div className="absolute bottom-32 text-center">
+                <ChevronDown size={28} className="mx-auto mb-1 text-accent opacity-80" />
+                <span className="text-xs text-ink3 uppercase tracking-wide font-medium">{t('card.influences')}</span>
+              </div>
+              <div className="absolute right-6 text-center">
+                <ChevronRight size={28} className="mx-auto mb-1 text-accent opacity-80" />
+                <span className="text-xs text-ink3 uppercase tracking-wide font-medium">{t('card.playedWith')}</span>
+              </div>
+              <div className="absolute left-6 text-center">
+                <ChevronLeft size={28} className="mx-auto mb-1 text-accent opacity-80" />
+                <span className="text-xs text-ink3 uppercase tracking-wide font-medium">{isFlipped ? t('card.flipToFront') : t('card.map')}</span>
+              </div>
+            </motion.div>
           )}
-          {current.youtubeLink && (
-            <div className="max-w-lg mx-auto">
-              <MobileVideoPlayer
-                key={current.id}
-                youtubeUrl={current.youtubeLink}
-                albums={current.albums}
-                musicianName={current.name}
+        </AnimatePresence>
+        
+        {/* Single direction hint overlay when dragging */}
+        <AnimatePresence>
+          {dragDirection && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              className="absolute inset-0 pointer-events-none flex items-center justify-center"
+            >
+              <div className="bg-bg-elevated/95 backdrop-blur-md rounded-2xl shadow-2xl px-8 py-6 max-w-sm mx-4">
+                {dragDirection === 'up' && (
+                  <div className="text-center">
+                    <ChevronUp size={40} className="mx-auto mb-3 text-accent" />
+                    <span className="text-base font-bold text-ink block mb-2">{t('card.influencedBy')}</span>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      {influencers.slice(0, 4).map(m => (
+                        <span key={m.id} className="text-sm text-ink3 bg-bg px-3 py-1.5 rounded-full">{m.name}</span>
+                      ))}
+                      {influencers.length > 4 && (
+                        <span className="text-sm text-ink3">+{influencers.length - 4} more</span>
+                      )}
+                    </div>
+                  </div>
+                )}
+                {dragDirection === 'down' && (
+                  <div className="text-center">
+                    <ChevronDown size={40} className="mx-auto mb-3 text-accent" />
+                    <span className="text-base font-bold text-ink block mb-2">{t('card.influences')}</span>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      {influenced.slice(0, 4).map(m => (
+                        <span key={m.id} className="text-sm text-ink3 bg-bg px-3 py-1.5 rounded-full">{m.name}</span>
+                      ))}
+                      {influenced.length > 4 && (
+                        <span className="text-sm text-ink3">+{influenced.length - 4} more</span>
+                      )}
+                    </div>
+                  </div>
+                )}
+                {dragDirection === 'right' && (
+                  <div className="text-center">
+                    <ChevronRight size={40} className="mx-auto mb-3 text-accent" />
+                    <span className="text-base font-bold text-ink block mb-2">{t('card.playedWith')}</span>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      {playedWith.slice(0, 4).map(m => (
+                        <span key={m.id} className="text-sm text-ink3 bg-bg px-3 py-1.5 rounded-full">{m.name}</span>
+                      ))}
+                      {playedWith.length > 4 && (
+                        <span className="text-sm text-ink3">+{playedWith.length - 4} more</span>
+                      )}
+                    </div>
+                  </div>
+                )}
+                {dragDirection === 'left' && (
+                  <div className="text-center">
+                    <ChevronLeft size={40} className="mx-auto mb-3 text-accent" />
+                    <span className="text-base font-bold text-ink block mb-2">{isFlipped ? t('card.flipToFront') : t('card.map')}</span>
+                    <span className="text-sm text-ink3">{isFlipped ? t('card.flipToFront') : t('card.viewMap')}</span>
+                  </div>
+                )}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+        
+        {/* Bottom button to open drawer */}
+        <AnimatePresence>
+          {!showDrawer && (
+            <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              onClick={() => {
+                setShowDrawer(true);
+                setDrawerHeight('half');
+              }}
+              className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2 bg-accent text-white px-5 py-3 rounded-full shadow-lg active:scale-95 transition-transform touch-manipulation"
+            >
+              <Info size={18} />
+              <span className="text-sm font-semibold">{t('card.fullInfo')}</span>
+            </motion.button>
+          )}
+        </AnimatePresence>
+        
+        {/* Bottom sheet drawer for musician details */}
+        <AnimatePresence>
+          {showDrawer && (
+            <MapBottomSheet
+              height={drawerHeight}
+              onHeightChange={setDrawerHeight}
+              onClose={() => {
+                setShowDrawer(false);
+                setDrawerHeight('half');
+              }}
+            >
+              <MusicianPanel
+                musician={current}
+                musicians={musicians}
+                onClose={() => {
+                  setShowDrawer(false);
+                  setDrawerHeight('half');
+                }}
+                onNavigate={onSelect}
+                editMode={false}
+                onEdit={() => {}}
+                onPlayVideo={() => {}}
+                videoMusician={null}
                 manualVideoUrl={null}
-                onClose={() => { }}
                 autoplay={autoplay}
+                onVideoClose={() => {}}
+                isMobile={true}
+                bottomInset={0}
               />
-            </div>
+            </MapBottomSheet>
           )}
-        </div>
+        </AnimatePresence>
       </div>
     );
   }
