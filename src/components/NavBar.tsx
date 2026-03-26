@@ -44,10 +44,6 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
           </button>
         ))}
       </div>
-      <p className="hidden md:block text-label text-ink3 font-medium">
-        {editModeEnabled && editMode ? t('nav.clickToEdit') : t('nav.clickMusician')}
-      </p>
-
       {/* View switch - mobile (no map) */}
       <div className="sm:hidden flex bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5 ml-auto">
         {([

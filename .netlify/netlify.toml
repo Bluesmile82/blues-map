@@ -14,6 +14,7 @@ command = "npm run build"
 
 [build.environment]
 NODE_VERSION = "20"
+VITE_ENABLE_EDIT_MODE = "false"
 
 [build.processing]
 
