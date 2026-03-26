@@ -3,12 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Map, { Marker, Source, Layer } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useTranslation } from 'react-i18next';
-import { Guitar, Piano, Mic, Drum, Music, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, Info } from 'lucide-react';
+import { Guitar, Piano, Mic, Drum, Music, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, Info, Dice5, Play, Pause } from 'lucide-react';
 import type { Musician } from '../types';
 import { getStyleHex, getStyleColor } from '../utils/colors';
 import MobileVideoPlayer from './MobileVideoPlayer';
 import MapBottomSheet from './MapBottomSheet';
 import MusicianPanel from './MusicianPanel';
+import MiniPlayer from './MiniPlayer';
 
 const MAP_STYLES = {
   light: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
@@ -21,6 +22,31 @@ const INSTRUMENT_ICONS: Record<string, React.ComponentType<{ className?: string;
   Vocals: Mic, Voice: Mic,
   Drums: Drum, 'Drum kit': Drum,
 };
+
+/** Returns the nearest item index using 2D distance from the touch point,
+ *  but only when the touch is within the dialog card's bounding box.
+ *  Returns null when the touch is outside the dialog. */
+function hitTestNearest(
+  dialog: HTMLDivElement | null,
+  refs: (HTMLDivElement | null)[],
+  x: number,
+  y: number,
+): number | null {
+  if (!dialog) return null;
+  const dr = dialog.getBoundingClientRect();
+  if (x < dr.left || x > dr.right || y < dr.top || y > dr.bottom) return null;
+  let best = -1, bestDist = Infinity;
+  for (let i = 0; i < refs.length; i++) {
+    const el = refs[i];
+    if (!el) continue;
+    const r = el.getBoundingClientRect();
+    const cx = (r.left + r.right) / 2;
+    const cy = (r.top + r.bottom) / 2;
+    const dist = Math.hypot(x - cx, y - cy);
+    if (dist < bestDist) { bestDist = dist; best = i; }
+  }
+  return best >= 0 ? best : null;
+}
 
 function InstrumentIcon({ instrument, className, size }: { instrument: string; className?: string; size?: number }) {
   const Icon = INSTRUMENT_ICONS[instrument] ?? Music;
@@ -78,10 +104,19 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   // Mobile gesture state
   const [dragDirection, setDragDirection] = useState<Direction | null>(null);
   const [showHints, setShowHints] = useState(false);
+  const [selectedMusicianIndex, setSelectedMusicianIndex] = useState(0);
   
   // Mobile drawer state
   const [showDrawer, setShowDrawer] = useState(false);
   const [drawerHeight, setDrawerHeight] = useState<'collapsed' | 'half' | 'full'>('half');
+
+  // Mini player state
+  const [miniPlayerActive, setMiniPlayerActive] = useState(false);
+  
+  // Gyroscope state - use ref to avoid re-renders
+  const gyroRef = useRef({ alpha: 0, beta: 0, gamma: 0, enabled: false });
+  const [gyroPermissionGranted, setGyroPermissionGranted] = useState(false);
+  const [gyroNeedsPrompt, setGyroNeedsPrompt] = useState(false);
 
   // Navigation history stack: each entry = "I was at musicianId and pressed direction to get here"
   const [history, setHistory] = useState<HistoryEntry[]>([]);
@@ -125,20 +160,87 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
     }
   }, [current?.id]);
 
-  // Mobile: apply subtle constant 3D tilt
+  // Mobile: determine if iOS gyro prompt is needed (must run before the tilt effect)
+  useEffect(() => {
+    if (!isMobile) return;
+    if (
+      typeof DeviceOrientationEvent !== 'undefined' &&
+      typeof (DeviceOrientationEvent as any).requestPermission === 'function'
+    ) {
+      // iOS 13+ — needs a user gesture before we can request permission
+      setGyroNeedsPrompt(true);
+    } else {
+      // Android / non-iOS — attach listener directly, no prompt needed
+      setGyroPermissionGranted(true);
+    }
+  }, [isMobile]);
+
+  const handleGyroPermissionRequest = useCallback(async () => {
+    try {
+      const permissionState = await (DeviceOrientationEvent as any).requestPermission();
+      if (permissionState === 'granted') {
+        setGyroPermissionGranted(true);
+      }
+    } catch (error) {
+      console.log('Gyroscope permission denied or error:', error);
+    }
+    setGyroNeedsPrompt(false);
+  }, []);
+
+  // Mobile: apply subtle constant 3D tilt with gyroscope
   useEffect(() => {
     if (!isMobile || !tiltWrapperRef.current) return;
-    
+
     let animationFrameId: number;
     let startTime = Date.now();
+
+    // Gyroscope handler
+    const handleOrientation = (event: DeviceOrientationEvent) => {
+      const beta = event.beta || 0;   // x-axis tilt (-180 to 180)
+      const gamma = event.gamma || 0;  // y-axis tilt (-90 to 90)
+
+      gyroRef.current = {
+        alpha: event.alpha || 0,
+        beta: beta,
+        gamma: gamma,
+        enabled: true
+      };
+    };
+
+    if (gyroPermissionGranted) {
+      window.addEventListener('deviceorientation', handleOrientation);
+      gyroRef.current.enabled = true;
+    }
     
     const animate = () => {
       if (!tiltWrapperRef.current || isTouchingRef.current) return;
       
       const elapsed = Date.now() - startTime;
-      // Create smooth, faster oscillation using sine waves
-      const rotX = Math.sin(elapsed * 0.002) * 4 + 2;
-      const rotY = Math.cos(elapsed * 0.0025) * 5 - 3;
+      
+      // Use gyroscope if available and enabled, otherwise fall back to animation only
+      let rotX: number, rotY: number;
+      
+      if (gyroRef.current.enabled) {
+        // Normalize beta (-180 to 180) to roughly -45 to 45 for tilt
+        const normalizedBeta = Math.max(-45, Math.min(45, gyroRef.current.beta - 45));
+        // Normalize gamma (-90 to 90) to roughly -30 to 30
+        const normalizedGamma = Math.max(-30, Math.min(30, gyroRef.current.gamma));
+        
+        // Use gyro for more natural movement (increased intensity)
+        const gyroRotX = normalizedBeta * 0.4;
+        const gyroRotY = normalizedGamma * 0.5;
+        
+        // Add subtle oscillation on top of gyroscope
+        const animRotX = Math.sin(elapsed * 0.001) * 1.5;
+        const animRotY = Math.cos(elapsed * 0.0012) * 1.5;
+        
+        rotX = gyroRotX + animRotX;
+        rotY = gyroRotY + animRotY;
+      } else {
+        // Fallback to animation only
+        rotX = Math.sin(elapsed * 0.002) * 4 + 2;
+        rotY = Math.cos(elapsed * 0.0025) * 5 - 3;
+      }
       
       tiltWrapperRef.current.style.transition = 'transform 0.1s linear, box-shadow 0.15s ease';
       tiltWrapperRef.current.style.transform =
@@ -160,8 +262,9 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
       if (animationFrameId) {
         cancelAnimationFrame(animationFrameId);
       }
+      window.removeEventListener('deviceorientation', handleOrientation);
     };
-  }, [isMobile, current?.id]);
+  }, [isMobile, current?.id, gyroPermissionGranted]);
 
   // Resolve relationships
   const influencers = useMemo(
@@ -265,55 +368,200 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
 
   const handleTouchStart = useCallback((e: React.TouchEvent) => {
     if ((e.target as Element).closest('button')) return;
-    touchStartRef.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    const touch = e.touches[0];
+    touchStartRef.current = { x: touch.clientX, y: touch.clientY };
     setDragDirection(null);
-    setShowHints(true); // Show hints immediately on touch
+    dragDirectionRef.current = null;
+    hadSignificantDragRef.current = false;
+    setShowHints(true);
+    setSelectedMusicianIndex(0);
+    dragDistanceRef.current = 0;
+    dragVelocityRef.current = { x: 0, y: 0 };
+    lastTouchRef.current = { x: touch.clientX, y: touch.clientY, time: Date.now() };
+    lockedDirectionRef.current = null;
+    dismissedDirsRef.current = new Set();
+
+    // Cancel any running inertia animation
+    if (inertiaAnimationRef.current) {
+      cancelAnimationFrame(inertiaAnimationRef.current);
+      inertiaAnimationRef.current = null;
+    }
   }, []);
 
   const isTouchingRef = useRef(false);
+  const dismissedDirsRef = useRef<Set<Direction>>(new Set());
+  const dragDirectionRef = useRef<Direction | null>(null);   // always-current mirror of dragDirection state
+  const hadSignificantDragRef = useRef(false);               // true if drag ever left the cancel zone
+  const dragDistanceRef = useRef(0);
+  // Refs to rendered overlay items and containers for hit-testing
+  const influencerItemRefs     = useRef<(HTMLDivElement | null)[]>([]);
+  const influencedItemRefs     = useRef<(HTMLDivElement | null)[]>([]);
+  const playedWithItemRefs     = useRef<(HTMLDivElement | null)[]>([]);
+  const influencerContainerRef = useRef<HTMLDivElement | null>(null);
+  const influencedContainerRef = useRef<HTMLDivElement | null>(null);
+  const playedWithContainerRef = useRef<HTMLDivElement | null>(null);
+  const dragOffsetRef = useRef({ x: 0, y: 0 });
+  const dragVelocityRef = useRef({ x: 0, y: 0 });
+  const lastTouchRef = useRef({ x: 0, y: 0, time: 0 });
+  const inertiaAnimationRef = useRef<number | null>(null);
+  const lockedDirectionRef = useRef<Direction | null>(null);
 
   const handleTouchMove = useCallback((e: React.TouchEvent) => {
     if (!isMobile) return;
     if (!touchStartRef.current || !tiltWrapperRef.current) return;
     
     isTouchingRef.current = true;
-    const rect = tiltWrapperRef.current.getBoundingClientRect();
     const touch = e.touches[0];
-    const x = (touch.clientX - rect.left) / rect.width;
-    const y = (touch.clientY - rect.top) / rect.height;
+    const currentTime = Date.now();
     
-    // More dynamic tilt on touch
-    const rotX = (y - 0.5) * -10;
-    const rotY = (x - 0.5) * 10;
-    
-    tiltWrapperRef.current.style.transition = 'transform 0.15s linear, box-shadow 0.2s ease';
-    tiltWrapperRef.current.style.transform =
-      `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.04)`;
-    
-    // Dynamic shadow on touch
-    const shadowX = -(x - 0.5) * 20;
-    const shadowY = -(y - 0.5) * 20;
-    tiltWrapperRef.current.style.boxShadow = `
-      ${shadowX}px ${shadowY}px 30px rgba(0,0,0,0.25),
-      ${shadowX * 0.5}px ${shadowY * 0.5}px 60px rgba(0,0,0,0.15)
-    `;
-
-    // Detect drag direction
+    // Calculate drag offset from start position
     const dx = touch.clientX - touchStartRef.current.x;
     const dy = touch.clientY - touchStartRef.current.y;
     const absDx = Math.abs(dx);
     const absDy = Math.abs(dy);
     
-    if (Math.max(absDx, absDy) > 20) {
-      if (absDx > absDy * 1.2) {
-        setDragDirection(dx < 0 ? 'left' : 'right');
-        setShowHints(false); // Hide all hints when dragging
-      } else if (absDy > absDx * 1.2) {
-        setDragDirection(dy < 0 ? 'up' : 'down');
-        setShowHints(false); // Hide all hints when dragging
-      }
+    // Calculate velocity for inertia
+    const deltaTime = currentTime - lastTouchRef.current.time;
+    if (deltaTime > 0) {
+      dragVelocityRef.current = {
+        x: (touch.clientX - lastTouchRef.current.x) / deltaTime,
+        y: (touch.clientY - lastTouchRef.current.y) / deltaTime
+      };
     }
-  }, [isMobile]);
+    
+    // Update last touch position
+    lastTouchRef.current = { x: touch.clientX, y: touch.clientY, time: currentTime };
+    
+    // Movement limits — keep translation small
+    const maxOffsetUnlocked = Math.min(window.innerWidth, window.innerHeight) * 0.06;
+    const maxOffsetLocked   = Math.min(window.innerWidth, window.innerHeight) * 0.12;
+    const currentMaxOffset  = lockedDirectionRef.current ? maxOffsetLocked : maxOffsetUnlocked;
+
+    // Clamp position
+    const clampedDx = Math.max(-currentMaxOffset, Math.min(currentMaxOffset, dx));
+    const clampedDy = Math.max(-currentMaxOffset, Math.min(currentMaxOffset, dy));
+
+    // Store clamped offset
+    dragOffsetRef.current = { x: clampedDx, y: clampedDy };
+
+    // Calculate how far we've dragged as a percentage (0 to 1)
+    const dragProgressX = clampedDx / currentMaxOffset;
+    const dragProgressY = clampedDy / currentMaxOffset;
+
+    // Subtle 3D tilt
+    const rotationX = dragProgressY * -22;
+    const rotationY = dragProgressX * 22;
+    const rotation  = clampedDx * 0.12;
+
+    tiltWrapperRef.current.style.transition = 'none';
+    tiltWrapperRef.current.style.transform = `
+      translate(${clampedDx}px, ${clampedDy}px)
+      rotateX(${rotationX}deg) rotateY(${rotationY}deg) rotate(${rotation}deg)
+      scale(1.04)
+    `;
+
+    const shadowX = -clampedDx * 0.3;
+    const shadowY = -clampedDy * 0.3;
+    tiltWrapperRef.current.style.boxShadow = `
+      ${shadowX}px ${shadowY}px 40px rgba(0,0,0,0.3),
+      ${shadowX * 0.5}px ${shadowY * 0.5}px 80px rgba(0,0,0,0.15)
+    `;
+
+    const distance = Math.max(absDx, absDy);
+    dragDistanceRef.current = distance;
+
+    const dragPercent    = distance / currentMaxOffset;
+    const CANCEL_ZONE    = 0.25; // inner 25% = neutral
+    const LOCK_THRESHOLD = 0.45; // must drag 45% to lock
+    const UNLOCK_THRESHOLD = 0.30; // return to 30% to unlock
+
+    // Helpers — setDir keeps the ref and state in sync
+    const setDir = (d: Direction | null) => {
+      dragDirectionRef.current = d;
+      setDragDirection(d);
+    };
+    // unlock: just removes the lock, direction can re-lock this gesture
+    const unlock = () => {
+      lockedDirectionRef.current = null;
+      setDir(null);
+      setSelectedMusicianIndex(0);
+    };
+    // dismiss: also blocks this direction for the rest of the gesture
+    const dismiss = (dir: Direction) => {
+      dismissedDirsRef.current.add(dir);
+      unlock();
+    };
+
+    // Track that the finger has left the cancel zone at least once
+    if (dragPercent > CANCEL_ZONE) hadSignificantDragRef.current = true;
+
+    // Locked and finger reverses back past the drag origin → permanently dismiss this direction
+    if (lockedDirectionRef.current) {
+      const dir = lockedDirectionRef.current;
+      const reversed =
+        (dir === 'up'    && dy > 0) ||
+        (dir === 'down'  && dy < 0) ||
+        (dir === 'right' && dx < 0) ||
+        (dir === 'left'  && dx > 0);
+      if (reversed) { dismiss(dir); return; }
+    }
+
+    // Returning to center while locked → just unlock (direction can re-lock later this gesture)
+    if (lockedDirectionRef.current && dragPercent < UNLOCK_THRESHOLD) {
+      unlock();
+      return;
+    }
+
+    if (dragPercent > CANCEL_ZONE) {
+      if (absDx > absDy * 1.0) {
+        const dir = dx < 0 ? 'left' : 'right';
+
+        if (lockedDirectionRef.current && lockedDirectionRef.current !== dir) {
+          // stay locked in current direction
+        } else if (dismissedDirsRef.current.has(dir)) {
+          // this direction was dismissed in this gesture — ignore
+        } else if (dragPercent > LOCK_THRESHOLD) {
+          lockedDirectionRef.current = dir;
+          setDir(dir);
+          setShowHints(false);
+
+          if (dir === 'right' && playedWith.length > 1) {
+            const i = hitTestNearest(playedWithContainerRef.current, playedWithItemRefs.current, touch.clientX, touch.clientY);
+            if (i !== null) setSelectedMusicianIndex(i);
+          }
+        } else {
+          setDir(dir);
+          setShowHints(false);
+        }
+      } else if (absDy > absDx * 1.0) {
+        const dir = dy < 0 ? 'up' : 'down';
+
+        if (lockedDirectionRef.current && lockedDirectionRef.current !== dir) {
+          // stay locked in current direction
+        } else if (dismissedDirsRef.current.has(dir)) {
+          // this direction was dismissed in this gesture — ignore
+        } else if (dragPercent > LOCK_THRESHOLD) {
+          lockedDirectionRef.current = dir;
+          setDir(dir);
+          setShowHints(false);
+
+          const musicians = dir === 'up' ? influencers : influenced;
+          if (musicians.length > 1) {
+            const refs = dir === 'up' ? influencerItemRefs.current : influencedItemRefs.current;
+            const container = dir === 'up' ? influencerContainerRef.current : influencedContainerRef.current;
+            const i = hitTestNearest(container, refs, touch.clientX, touch.clientY);
+            if (i !== null) setSelectedMusicianIndex(i);
+          }
+        } else {
+          setDir(dir);
+          setShowHints(false);
+        }
+      }
+    } else {
+      // In cancel zone — clear direction hint
+      setDir(null);
+    }
+  }, [isMobile, playedWith, influencers, influenced]);
 
   const handleTouchEnd = useCallback((e: React.TouchEvent) => {
     if (!touchStartRef.current) return;
@@ -322,59 +570,144 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
     touchStartRef.current = null;
     const absDx = Math.abs(dx);
     const absDy = Math.abs(dy);
+
+    // Read from refs — avoids stale-closure issues with batched state updates
+    const dirOnRelease = dragDirectionRef.current;
+    const hadSignificantDrag = hadSignificantDragRef.current;
     
-    // Tap gesture - keep hints visible
-    if (Math.max(absDx, absDy) < 20) {
-      setTimeout(() => {
-        setShowHints(false);
-      }, 2000);
-      setTimeout(() => {
-        isTouchingRef.current = false;
-      }, 300);
+    // Apply smooth inertia animation without bounce
+    if (tiltWrapperRef.current) {
+      let currentX = dragOffsetRef.current.x;
+      let currentY = dragOffsetRef.current.y;
+      let velocityX = dragVelocityRef.current.x * 10;
+      let velocityY = dragVelocityRef.current.y * 10;
+      
+      const friction = 0.85;
+      const minVelocity = 0.5;
+      
+      const animateInertia = () => {
+        if (!tiltWrapperRef.current) return;
+        
+        // Only apply friction, no return force (no spring effect)
+        velocityX *= friction;
+        velocityY *= friction;
+        
+        currentX += velocityX;
+        currentY += velocityY;
+        
+        // Calculate rotation
+        const maxOffset = Math.min(window.innerWidth, window.innerHeight) * (lockedDirectionRef.current ? 0.12 : 0.06);
+        const rotationX = (currentY / maxOffset) * -22;
+        const rotationY = (currentX / maxOffset) * 22;
+        const rotation = currentX * 0.12;
+
+        // Apply transform
+        tiltWrapperRef.current.style.transform = `
+          translate(${currentX}px, ${currentY}px)
+          rotateX(${rotationX}deg) rotateY(${rotationY}deg) rotate(${rotation}deg)
+          scale(1.04)
+        `;
+
+        // Update shadow
+        const shadowX = -currentX * 0.3;
+        const shadowY = -currentY * 0.3;
+        tiltWrapperRef.current.style.boxShadow = `
+          ${shadowX}px ${shadowY}px 40px rgba(0,0,0,0.3),
+          ${shadowX * 0.5}px ${shadowY * 0.5}px 80px rgba(0,0,0,0.15)
+        `;
+        
+        // Check if animation should continue
+        const speed = Math.sqrt(velocityX * velocityX + velocityY * velocityY);
+        const offset = Math.sqrt(currentX * currentX + currentY * currentY);
+        
+        if (speed > minVelocity && offset > 1) {
+          inertiaAnimationRef.current = requestAnimationFrame(animateInertia);
+        } else {
+          // Animation complete - smooth CSS transition to center
+          tiltWrapperRef.current.style.transition = 'transform 0.4s ease-out, box-shadow 0.4s ease-out';
+          tiltWrapperRef.current.style.transform = 'translate(0, 0) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1.03)';
+          tiltWrapperRef.current.style.boxShadow = '';
+          inertiaAnimationRef.current = null;
+        }
+      };
+      
+      // Start inertia animation
+      inertiaAnimationRef.current = requestAnimationFrame(animateInertia);
+    }
+    
+    // Snap card back helper
+    const snapBack = () => {
+      if (tiltWrapperRef.current) {
+        tiltWrapperRef.current.style.transition = 'transform 0.3s ease-out';
+        tiltWrapperRef.current.style.transform = 'translate(0,0) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1.03)';
+        tiltWrapperRef.current.style.boxShadow = '';
+      }
+    };
+
+    // Reset all gesture state
+    const resetGesture = () => {
+      lockedDirectionRef.current = null;
+      dragDirectionRef.current = null;
+      hadSignificantDragRef.current = false;
+      setDragDirection(null);
+      setSelectedMusicianIndex(0);
+      dragDistanceRef.current = 0;
+      dragOffsetRef.current = { x: 0, y: 0 };
+      dragVelocityRef.current = { x: 0, y: 0 };
+      setTimeout(() => { isTouchingRef.current = false; }, 400);
+    };
+
+    const maxOffset = Math.min(window.innerWidth, window.innerHeight) * (lockedDirectionRef.current ? 0.12 : 0.06);
+    const dragPercent = Math.max(absDx, absDy) / maxOffset;
+    const CANCEL_THRESHOLD = 0.2;
+
+    // Pure tap (no significant drag) → flip the card
+    if (dragPercent < CANCEL_THRESHOLD && !hadSignificantDrag) {
+      snapBack();
+      resetGesture();
+      setIsFlipped(f => !f);
+      setTimeout(() => { setShowHints(false); }, 2000);
       return;
     }
-    
-    // Drag gesture - navigate in the dragged direction
-    if (dragDirection) {
-      switch (dragDirection) {
-        case 'left':
-          if (isFlipped) {
-            setIsFlipped(false); // Go back to front from map
-          } else {
-            setIsFlipped(true); // Show map
-          }
-          break;
-        case 'right':
-          if (playedWith.length > 0) navigateToMusician(playedWith[0], 'right');
-          break;
-        case 'up':
-          if (influencers.length > 0) navigateToMusician(influencers[0], 'up');
-          break;
-        case 'down':
-          if (influenced.length > 0) navigateToMusician(influenced[0], 'down');
-          break;
+
+    // Returned to center after a drag, or drag too small → just cancel, no flip
+    if (dragPercent < CANCEL_THRESHOLD || !dirOnRelease) {
+      snapBack();
+      resetGesture();
+      setShowHints(false);
+      return;
+    }
+
+    // Committed directional drag — navigate
+    const releaseX = e.changedTouches[0].clientX;
+    const releaseY = e.changedTouches[0].clientY;
+    switch (dirOnRelease) {
+      case 'left':
+        navigateLeft();
+        break;
+      case 'right': {
+        const hit = hitTestNearest(playedWithContainerRef.current, playedWithItemRefs.current, releaseX, releaseY);
+        if (hit !== null && playedWith.length > 0)
+          navigateToMusician(playedWith[Math.min(hit, playedWith.length - 1)], 'right');
+        break;
       }
-    } else {
-      // Fallback to original swipe navigation
-      if (absDx > absDy * 1.2) {
-        if (dx < 0) navigateLeft();
-        else navigateRight();
-      } else {
-        if (dy < 0) {
-          if (influencers.length > 0) navigateToMusician(influencers[0], 'up');
-        } else {
-          if (influenced.length > 0) navigateToMusician(influenced[0], 'down');
-        }
+      case 'up': {
+        const hit = hitTestNearest(influencerContainerRef.current, influencerItemRefs.current, releaseX, releaseY);
+        if (hit !== null && influencers.length > 0)
+          navigateToMusician(influencers[Math.min(hit, influencers.length - 1)], 'up');
+        break;
+      }
+      case 'down': {
+        const hit = hitTestNearest(influencedContainerRef.current, influencedItemRefs.current, releaseX, releaseY);
+        if (hit !== null && influenced.length > 0)
+          navigateToMusician(influenced[Math.min(hit, influenced.length - 1)], 'down');
+        break;
       }
     }
-    
-    setDragDirection(null);
+
+    resetGesture();
     setShowHints(false);
-    // Resume animation after touch ends
-    setTimeout(() => {
-      isTouchingRef.current = false;
-    }, 300);
-  }, [navigateLeft, navigateRight, navigateToMusician, influencers, influenced, playedWith, dragDirection, isFlipped]);
+  }, [navigateLeft, navigateRight, navigateToMusician, influencers, influenced, playedWith]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -494,9 +827,13 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
         style={{
           width: isMobile ? cardW : cardW + arrowGap * 2,
           height: isMobile ? cardH : cardH + arrowGap * 2 + 10,
+          userSelect: 'none',
+          WebkitUserSelect: 'none',
+          WebkitTouchCallout: 'none' as 'none',
         }}
         onTouchStart={isMobile ? handleTouchStart : undefined}
         onTouchEnd={isMobile ? handleTouchEnd : undefined}
+        onContextMenu={isMobile ? (e) => e.preventDefault() : undefined}
       >
         {/* Top: influencedBy */}
         {!isMobile && (influencers.length > 0 || upIsBack) && (
@@ -561,7 +898,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
               onMouseEnter={!isMobile ? handleMouseEnter : undefined}
               onMouseLeave={!isMobile ? handleMouseLeave : undefined}
               onTouchMove={isMobile ? handleTouchMove : undefined}
-              onClick={() => setIsFlipped(f => !f)}
+              onClick={!isMobile ? () => setIsFlipped(f => !f) : undefined}
               style={{
                 width: '100%',
                 height: '100%',
@@ -569,6 +906,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
                 transform: 'perspective(900px) rotateX(0deg) rotateY(0deg) scale(1)',
                 transformStyle: 'preserve-3d',
                 transition: 'transform 0.9s cubic-bezier(0.23, 1, 0.32, 1)',
+                touchAction: 'none',
               }}
             >
               <motion.div
@@ -587,7 +925,8 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
                     <img
                       src={current.image}
                       alt={current.name}
-                      className="w-full h-full object-cover"
+                      draggable={false}
+                      className="w-full h-full object-cover pointer-events-none"
                       style={{ filter: 'sepia(8%) contrast(1.05)' }}
                       onError={(e) => {
                         (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(current.name)}&background=333&color=fff&size=400`;
@@ -702,36 +1041,129 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   if (isMobile) {
     return (
       <div className="w-full h-full flex flex-col items-center justify-center bg-bg overflow-hidden relative">
+        {/* Random musician button */}
+        <motion.button
+          whileTap={{ scale: 0.9 }}
+          whileHover={{ scale: 1.1 }}
+          onClick={() => {
+            const others = completeMusicians.filter(m => m.id !== current?.id);
+            if (others.length > 0) onSelect(others[Math.floor(Math.random() * others.length)]);
+          }}
+          className="absolute top-3 right-3 z-50 flex flex-col items-center gap-0.5"
+        >
+          <div className="w-11 h-11 flex items-center justify-center rounded-full backdrop-blur-sm border bg-bg/80 border-border-subtle text-ink3 shadow-md transition-colors hover:text-ink hover:bg-bg-hover">
+            <Dice5 size={20} />
+          </div>
+          <span className="text-[9px] text-ink3 uppercase tracking-wide font-medium">{t('card.random')}</span>
+        </motion.button>
+
+        {/* Play / pause button — top left */}
+        <motion.button
+          whileTap={{ scale: 0.9 }}
+          whileHover={{ scale: 1.1 }}
+          onClick={() => setMiniPlayerActive(v => !v)}
+          className="absolute top-3 left-3 z-50 flex flex-col items-center gap-0.5"
+        >
+          <div className={`w-11 h-11 flex items-center justify-center rounded-full backdrop-blur-sm border shadow-md transition-colors ${miniPlayerActive ? 'bg-accent text-white border-accent' : 'bg-bg/80 border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover'}`}>
+            {miniPlayerActive ? <Pause size={20} /> : <Play size={20} />}
+          </div>
+          <span className="text-[9px] text-ink3 uppercase tracking-wide font-medium">{miniPlayerActive ? t('card.pause') : t('card.play')}</span>
+        </motion.button>
+
+        {/* Mini player: hidden iframe + now-playing bar */}
+        {current && (
+          <MiniPlayer
+            musician={current}
+            isPlaying={miniPlayerActive}
+            onPlayingChange={setMiniPlayerActive}
+          />
+        )}
+
         {cardZone}
-        
-        {/* Direction hints overlay - shows all 4 directions */}
-        <AnimatePresence>
-          {showHints && !dragDirection && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="absolute inset-0 pointer-events-none flex items-center justify-center"
+
+        {/* iOS gyroscope permission prompt */}
+        {gyroNeedsPrompt && (
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-50">
+            <button
+              onClick={handleGyroPermissionRequest}
+              className="px-4 py-2 rounded-full bg-accent text-white text-sm font-medium shadow-lg active:scale-95 transition-transform"
             >
-              <div className="absolute top-24 text-center">
-                <ChevronUp size={28} className="mx-auto mb-1 text-accent opacity-80" />
-                <span className="text-xs text-ink3 uppercase tracking-wide font-medium">{t('card.influencedBy')}</span>
-              </div>
-              <div className="absolute bottom-32 text-center">
-                <ChevronDown size={28} className="mx-auto mb-1 text-accent opacity-80" />
-                <span className="text-xs text-ink3 uppercase tracking-wide font-medium">{t('card.influences')}</span>
-              </div>
-              <div className="absolute right-6 text-center">
-                <ChevronRight size={28} className="mx-auto mb-1 text-accent opacity-80" />
-                <span className="text-xs text-ink3 uppercase tracking-wide font-medium">{t('card.playedWith')}</span>
-              </div>
-              <div className="absolute left-6 text-center">
-                <ChevronLeft size={28} className="mx-auto mb-1 text-accent opacity-80" />
-                <span className="text-xs text-ink3 uppercase tracking-wide font-medium">{isFlipped ? t('card.flipToFront') : t('card.map')}</span>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+              Enable tilt effect
+            </button>
+          </div>
+        )}
+
+        {/* Direction hints overlay - shows available directions only */}
+        <div className="absolute inset-0 pointer-events-none">
+          <AnimatePresence>
+            {showHints && !dragDirection && influencers.length > 0 && (
+              <motion.div
+                key="hint-up"
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.25 }}
+                className="absolute top-24 left-1/2 -translate-x-1/2 text-center"
+              >
+                <div className="flex flex-col items-center gap-1 bg-bg/85 backdrop-blur-sm border border-border-subtle rounded-2xl px-4 py-2.5 shadow-lg">
+                  <ChevronUp size={22} className="text-accent" />
+                  <span className="text-[11px] text-ink font-semibold uppercase tracking-wide">{t('card.influencedBy')}</span>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <AnimatePresence>
+            {showHints && !dragDirection && influenced.length > 0 && (
+              <motion.div
+                key="hint-down"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                transition={{ duration: 0.25 }}
+                className="absolute bottom-32 left-1/2 -translate-x-1/2 text-center"
+              >
+                <div className="flex flex-col items-center gap-1 bg-bg/85 backdrop-blur-sm border border-border-subtle rounded-2xl px-4 py-2.5 shadow-lg">
+                  <ChevronDown size={22} className="text-accent" />
+                  <span className="text-[11px] text-ink font-semibold uppercase tracking-wide">{t('card.influences')}</span>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <AnimatePresence>
+            {showHints && !dragDirection && playedWith.length > 0 && (
+              <motion.div
+                key="hint-right"
+                initial={{ opacity: 0, x: 10 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 20 }}
+                transition={{ duration: 0.25 }}
+                className="absolute right-4 top-1/2 -translate-y-1/2"
+              >
+                <div className="flex flex-col items-center gap-1 bg-bg/85 backdrop-blur-sm border border-border-subtle rounded-2xl px-3 py-2.5 shadow-lg">
+                  <ChevronRight size={22} className="text-accent" />
+                  <span className="text-[11px] text-ink font-semibold uppercase tracking-wide">{t('card.playedWith')}</span>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <AnimatePresence>
+            {showHints && !dragDirection && leftIsBack && backMusician && (
+              <motion.div
+                key="hint-left"
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.25 }}
+                className="absolute left-4 top-1/2 -translate-y-1/2"
+              >
+                <div className="flex flex-col items-center gap-1 bg-accent/15 backdrop-blur-sm border border-accent/30 rounded-2xl px-3 py-2.5 shadow-lg">
+                  <ChevronLeft size={22} className="text-accent" />
+                  <span className="text-[11px] text-accent font-bold uppercase tracking-wide truncate max-w-18">{backMusician.name}</span>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
         
         {/* Single direction hint overlay when dragging */}
         <AnimatePresence>
@@ -740,59 +1172,74 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
-              className="absolute inset-0 pointer-events-none flex items-center justify-center"
+              className="absolute inset-0 pointer-events-none"
             >
-              <div className="bg-bg-elevated/95 backdrop-blur-md rounded-2xl shadow-2xl px-8 py-6 max-w-sm mx-4">
-                {dragDirection === 'up' && (
-                  <div className="text-center">
-                    <ChevronUp size={40} className="mx-auto mb-3 text-accent" />
-                    <span className="text-base font-bold text-ink block mb-2">{t('card.influencedBy')}</span>
-                    <div className="flex flex-wrap gap-2 justify-center">
-                      {influencers.slice(0, 4).map(m => (
-                        <span key={m.id} className="text-sm text-ink3 bg-bg px-3 py-1.5 rounded-full">{m.name}</span>
-                      ))}
-                      {influencers.length > 4 && (
-                        <span className="text-sm text-ink3">+{influencers.length - 4} more</span>
-                      )}
-                    </div>
+              {dragDirection === 'up' && influencers.length > 0 && (
+                <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[90vw] max-w-sm mx-4">
+                  <div ref={influencerContainerRef} className="bg-bg-elevated/95 backdrop-blur-md rounded-2xl shadow-2xl px-4 py-4 text-center">
+                    <ChevronUp size={36} className="mx-auto mb-2 text-accent" />
+                    <span className="text-sm font-bold text-ink block mb-3">{t('card.influencedBy')}</span>
+                    {influencers.length > 1 ? (
+                      <div className={influencers.length > 5 ? 'grid grid-cols-2 gap-x-2 gap-y-1' : 'space-y-1'}>
+                        {influencers.map((m, i) => (
+                          <div key={m.id} ref={el => { influencerItemRefs.current[i] = el; }} className={`text-sm py-2 px-3 rounded-lg transition-all text-left ${i === selectedMusicianIndex ? 'bg-accent/20 text-accent font-semibold' : 'text-ink3'}`}>
+                            {m.name}
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="text-lg font-semibold text-ink">{influencers[0]?.name}</div>
+                    )}
                   </div>
-                )}
-                {dragDirection === 'down' && (
-                  <div className="text-center">
-                    <ChevronDown size={40} className="mx-auto mb-3 text-accent" />
-                    <span className="text-base font-bold text-ink block mb-2">{t('card.influences')}</span>
-                    <div className="flex flex-wrap gap-2 justify-center">
-                      {influenced.slice(0, 4).map(m => (
-                        <span key={m.id} className="text-sm text-ink3 bg-bg px-3 py-1.5 rounded-full">{m.name}</span>
-                      ))}
-                      {influenced.length > 4 && (
-                        <span className="text-sm text-ink3">+{influenced.length - 4} more</span>
-                      )}
-                    </div>
+                </div>
+              )}
+              {dragDirection === 'down' && influenced.length > 0 && (
+                <div className="absolute bottom-28 left-1/2 -translate-x-1/2 w-[90vw] max-w-sm mx-4">
+                  <div ref={influencedContainerRef} className="bg-bg-elevated/95 backdrop-blur-md rounded-2xl shadow-2xl px-4 py-4 text-center">
+                    <ChevronDown size={36} className="mx-auto mb-2 text-accent" />
+                    <span className="text-sm font-bold text-ink block mb-3">{t('card.influences')}</span>
+                    {influenced.length > 1 ? (
+                      <div className={influenced.length > 5 ? 'grid grid-cols-2 gap-x-2 gap-y-1' : 'space-y-1'}>
+                        {influenced.map((m, i) => (
+                          <div key={m.id} ref={el => { influencedItemRefs.current[i] = el; }} className={`text-sm py-2 px-3 rounded-lg transition-all text-left ${i === selectedMusicianIndex ? 'bg-accent/20 text-accent font-semibold' : 'text-ink3'}`}>
+                            {m.name}
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="text-lg font-semibold text-ink">{influenced[0]?.name}</div>
+                    )}
                   </div>
-                )}
-                {dragDirection === 'right' && (
-                  <div className="text-center">
-                    <ChevronRight size={40} className="mx-auto mb-3 text-accent" />
-                    <span className="text-base font-bold text-ink block mb-2">{t('card.playedWith')}</span>
-                    <div className="flex flex-wrap gap-2 justify-center">
-                      {playedWith.slice(0, 4).map(m => (
-                        <span key={m.id} className="text-sm text-ink3 bg-bg px-3 py-1.5 rounded-full">{m.name}</span>
-                      ))}
-                      {playedWith.length > 4 && (
-                        <span className="text-sm text-ink3">+{playedWith.length - 4} more</span>
-                      )}
-                    </div>
+                </div>
+              )}
+              {dragDirection === 'right' && playedWith.length > 0 && (
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 w-40">
+                  <div ref={playedWithContainerRef} className="bg-bg-elevated/95 backdrop-blur-md rounded-2xl shadow-2xl px-4 py-4 text-center">
+                    <ChevronRight size={36} className="mx-auto mb-2 text-accent" />
+                    <span className="text-sm font-bold text-ink block mb-3">{t('card.playedWith')}</span>
+                    {playedWith.length > 1 ? (
+                      <div className="space-y-1">
+                        {playedWith.map((m, i) => (
+                          <div key={m.id} ref={el => { playedWithItemRefs.current[i] = el; }} className={`text-sm py-2 px-3 rounded-lg transition-all text-left ${i === selectedMusicianIndex ? 'bg-accent/20 text-accent font-semibold' : 'text-ink3'}`}>
+                            {m.name}
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="text-lg font-semibold text-ink">{playedWith[0]?.name}</div>
+                    )}
                   </div>
-                )}
-                {dragDirection === 'left' && (
-                  <div className="text-center">
-                    <ChevronLeft size={40} className="mx-auto mb-3 text-accent" />
-                    <span className="text-base font-bold text-ink block mb-2">{isFlipped ? t('card.flipToFront') : t('card.map')}</span>
-                    <span className="text-sm text-ink3">{isFlipped ? t('card.flipToFront') : t('card.viewMap')}</span>
+                </div>
+              )}
+              {dragDirection === 'left' && leftIsBack && backMusician && (
+                <div className="absolute left-6 top-1/2 -translate-y-1/2 text-center">
+                  <div className="bg-bg-elevated/95 backdrop-blur-md rounded-2xl shadow-2xl px-6 py-4 max-w-xs mx-4">
+                    <ChevronLeft size={36} className="mx-auto mb-2 text-accent" />
+                    <span className="text-[10px] text-ink3 uppercase tracking-wide font-medium block mb-1">{t('card.back')}</span>
+                    <span className="text-base font-bold text-ink">{backMusician.name}</span>
                   </div>
-                )}
-              </div>
+                </div>
+              )}
             </motion.div>
           )}
         </AnimatePresence>

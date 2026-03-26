@@ -7,9 +7,11 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load environment variables from .env.development for the server
+// Load environment variables based on NODE_ENV
+const isProduction = process.env.NODE_ENV === 'production';
+const envFile = isProduction ? '.env.production' : '.env.development';
 try {
-  const envPath = path.join(__dirname, '../.env.development');
+  const envPath = path.join(__dirname, `../${envFile}`);
   const envContent = fs.readFileSync(envPath, 'utf-8');
   envContent.split('\n').forEach(line => {
     const [key, ...values] = line.split('=');
@@ -17,9 +19,9 @@ try {
       process.env[key] = values.join('=');
     }
   });
-  console.log('✅ Loaded .env.development');
+  console.log(`✅ Loaded ${envFile}`);
 } catch (error) {
-  console.log('⚠️  No .env.development file found, using defaults');
+  console.log(`⚠️  No ${envFile} file found, using defaults`);
 }
 const musiciansPath = path.resolve(__dirname, '../src/data/musicians.json');
 

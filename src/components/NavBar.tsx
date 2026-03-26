@@ -48,12 +48,11 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
         {editModeEnabled && editMode ? t('nav.clickToEdit') : t('nav.clickMusician')}
       </p>
 
-      {/* View switch - mobile */}
+      {/* View switch - mobile (no map) */}
       <div className="sm:hidden flex bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5 ml-auto">
         {([
-          { id: 'influence', label: t('nav.timeline') },
-          { id: 'map', label: t('nav.map') },
           { id: 'card', label: t('nav.card') },
+          { id: 'influence', label: t('nav.timeline') },
         ] as const).map(({ id, label }) => (
           <button
             key={id}

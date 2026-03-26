@@ -169,7 +169,7 @@ export default function MapBottomSheet({ height, onHeightChange, onClose, childr
         {/* Close button (not when collapsed) */}
         {height !== 'collapsed' && (
           <button
-            onClick={() => onHeightChange('collapsed')}
+            onClick={onClose}
             className="absolute top-3 right-3 p-2 rounded-lg active:bg-bg-hover transition-colors touch-manipulation z-10"
             aria-label="Close"
           >

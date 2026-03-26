@@ -100,6 +100,11 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Mobile doesn't have map view — redirect to card
+  useEffect(() => {
+    if (isMobile && view === 'map') setView('card');
+  }, [isMobile, view]);
+
   // Persist autoplay setting to localStorage
   useEffect(() => {
     localStorage.setItem('autoplay', String(autoplay));

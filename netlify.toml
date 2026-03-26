@@ -4,6 +4,9 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  VITE_ENABLE_EDIT_MODE = "false"
+  # VITE_SUPABASE_URL = "your-supabase-url"
+  # VITE_SUPABASE_PUBLISHABLE_KEY = "your-supabase-key"
 
 [[redirects]]
   from = "/*"

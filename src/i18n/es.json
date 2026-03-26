@@ -37,9 +37,15 @@
     "map": "Mapa",
     "viewMap": "Ver mapa",
     "fullInfo": "Info Completa",
+    "dragLeftRight": "Arrastra izq/der para cambiar",
+    "dragUpDown": "Arrastra arriba/abajo para cambiar",
     "born": "Nacimiento",
     "died": "Fallecimiento",
-    "lived": "Vivió en"
+    "lived": "Vivió en",
+    "back": "Volver",
+    "random": "Aleatorio",
+    "play": "Reproducir",
+    "pause": "Pausar"
   },
   "mobile": {
     "gestureHintPinch": "Pellizca para acercar o alejar",
@@ -277,7 +283,7 @@
   },
   "styles": {
     "Delta Blues": "Blues del Delta",
-    "Hill Country Blues": "Blues de las Colinas",
+    "Hill Country Blues": "Hill Country Blues",
     "Country Blues": "Blues Rural",
     "Boogie Woogie": "Boogie Woogie",
     "Classic Blues": "Blues Clásico",
@@ -294,7 +300,7 @@
     "West Coast Blues": "Blues de la Costa Oeste",
     "Jump Blues": "Jump Blues",
     "Georgia Blues": "Blues de Georgia",
-    "Piedmont Blues": "Blues del Piamonte",
+    "Piedmont Blues": "Blues de Piedmont",
     "St. Louis Blues": "Blues de St. Louis",
     "Jazz": "Jazz",
     "British Blues": "Blues Británico",

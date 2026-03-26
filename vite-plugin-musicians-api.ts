@@ -12,8 +12,9 @@ const BACKUPS_DIR = path.resolve('src/data/backups');
 const MAX_BACKUPS = 20;
 const BACKUP_INTERVAL_MS = 30 * 60 * 1000; // 30 minutes
 
-// Load environment variables
-const envPath = path.resolve('.env.development');
+// Load environment variables based on mode
+const mode = process.env.NODE_ENV || 'development';
+const envPath = path.resolve(`.env.${mode}`);
 let EDIT_MODE = process.env.VITE_ENABLE_EDIT_MODE === 'true';
 if (fs.existsSync(envPath)) {
   const envContent = fs.readFileSync(envPath, 'utf-8');
@@ -27,6 +28,7 @@ if (fs.existsSync(envPath)) {
       process.env[key] = value;
     }
   });
+  console.log(`[musicians-api] ✅ Loaded .env.${mode}`);
 }
 
 function readBody(req: IncomingMessage): Promise<string> {
@@ -280,7 +282,7 @@ export function musiciansApiPlugin(): Plugin {
               // - Send an email using a service like SendGrid, Resend, or AWS SES
               // - Store in a database
               // - Send to a service like Formspree
-              
+
               // For now, just log and return success
               res.end(JSON.stringify({ success: true }));
             } catch (err) {
