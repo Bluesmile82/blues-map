@@ -2299,8 +2299,8 @@
   {
     "id": "paul-gayten",
     "name": "Paul Gayten",
-    "image": "/images/musicians/paul-gayten.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/10/Paul_Gayten.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/1/10/Paul_Gayten.jpg",
     "birthDate": "1920-01-17",
     "birthPlace": "New Orleans, Louisiana",
     "birthCoords": [
@@ -2784,8 +2784,8 @@
   {
     "id": "robert-nighthawk",
     "name": "Robert Nighthawk",
-    "image": "/images/musicians/robert-nighthawk.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/1a/Robert_Lee_McCollum.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/1/1a/Robert_Lee_McCollum.jpg",
     "birthDate": "1909-11-30",
     "birthPlace": "Helena",
     "birthCoords": [
@@ -3478,8 +3478,8 @@
   {
     "id": "barbecue-bob",
     "name": "Barbecue Bob",
-    "image": "/images/musicians/barbecue-bob.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/86/Barbecue_Bob.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/8/86/Barbecue_Bob.jpg",
     "birthDate": "1902-09-11",
     "birthPlace": "Georgia",
     "birthCoords": [
@@ -3709,8 +3709,8 @@
   {
     "id": "scrapper-blackwell",
     "name": "Scrapper Blackwell",
-    "image": "/images/musicians/scrapper-blackwell.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/3a/Scrapper_Blackwell.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/3/3a/Scrapper_Blackwell.jpg",
     "birthDate": "1903-02-21",
     "birthPlace": "North Carolina",
     "birthCoords": [
@@ -4132,7 +4132,7 @@
   {
     "id": "kitty-brown",
     "name": "Kitty Brown",
-    "image": "/images/musicians/kitty-brown.webp",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/James_Brown_1996.jpg/500px-James_Brown_1996.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/James_Brown_1996.jpg/500px-James_Brown_1996.jpg",
     "birthDate": "1899-10-01",
     "birthPlace": "New York City",
@@ -4257,8 +4257,8 @@
   {
     "id": "leroy-carr",
     "name": "Leroy Carr",
-    "image": "/images/musicians/leroy-carr.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/d/d9/Leroy_Carr.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/d/d9/Leroy_Carr.jpg",
     "birthDate": "1905-03-27",
     "birthPlace": "Nashville",
     "birthCoords": [
@@ -4687,7 +4687,7 @@
   {
     "id": "georgia-tom-dorsey",
     "name": "Georgia Tom Dorsey",
-    "image": "/images/musicians/georgia-tom-dorsey.png",
+    "image": "",
     "image_source": "",
     "birthDate": "1899-07-01",
     "birthPlace": "Villa Rica",
@@ -5470,8 +5470,8 @@
   {
     "id": "edna-hicks",
     "name": "Edna Hicks",
-    "image": "/images/musicians/edna-hicks.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/E/Ed/Edna_Hicks.jpg/500px-Edna_Hicks.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/E/Ed/Edna_Hicks.jpg/500px-Edna_Hicks.jpg",
     "birthDate": "1895-10-14",
     "birthPlace": "New Orleans",
     "birthCoords": [
@@ -6378,8 +6378,8 @@
   {
     "id": "lil-mcclintock",
     "name": "Lil McClintock",
-    "image": "/images/musicians/lil-mcclintock.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/89/Lil_McClintock.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/8/89/Lil_McClintock.jpg",
     "birthDate": "1883-06-05",
     "birthPlace": "Georgia",
     "birthCoords": [
@@ -6617,8 +6617,8 @@
   {
     "id": "fred-mcmullen",
     "name": "Fred McMullen",
-    "image": "/images/musicians/fred-mcmullen.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/8a/Fred_McMullen.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/8/8a/Fred_McMullen.jpg",
     "birthDate": "1905",
     "birthPlace": "Florida",
     "birthCoords": [
@@ -7997,8 +7997,8 @@
   {
     "id": "sippie-wallace",
     "name": "Sippie Wallace",
-    "image": "/images/musicians/sippie-wallace.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/54/Sippie_Wallace.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/5/54/Sippie_Wallace.jpg",
     "birthDate": "1898-11-01",
     "birthPlace": "Houston",
     "birthCoords": [
@@ -8503,8 +8503,8 @@
   {
     "id": "sonny-boy-williamson-i",
     "name": "Sonny Boy Williamson I",
-    "image": "/images/musicians/sonny-boy-williamson-i.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/J/Jo/John_Lee_Williamson.jpg/500px-John_Lee_Williamson.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/J/Jo/John_Lee_Williamson.jpg/500px-John_Lee_Williamson.jpg",
     "birthDate": "1914-03-30",
     "birthPlace": "Madison County",
     "birthCoords": [
@@ -8577,8 +8577,8 @@
   {
     "id": "woodrow-adams",
     "name": "Woodrow Adams",
-    "image": "/images/musicians/woodrow-adams.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/93/Woodrow_Adams.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/9/93/Woodrow_Adams.jpg",
     "birthDate": "1917-04-09",
     "birthPlace": "Mississippi",
     "birthCoords": [
@@ -9863,8 +9863,8 @@
   {
     "id": "eric-clapton",
     "name": "Eric Clapton",
-    "image": "/images/musicians/eric-clapton.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Eric_Clapton_-_Royal_Albert_Hall_-_Wednesday_24th_May_2017_EricClaptonRAH240517-30_%2834987232355%29_%28cropped%29.jpg/500px-Eric_Clapton_-_Royal_Albert_Hall_-_Wednesday_24th_May_2017_EricClaptonRAH240517-30_%2834987232355%29_%28cropped%29.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Eric_Clapton_-_Royal_Albert_Hall_-_Wednesday_24th_May_2017_EricClaptonRAH240517-30_%2834987232355%29_%28cropped%29.jpg/500px-Eric_Clapton_-_Royal_Albert_Hall_-_Wednesday_24th_May_2017_EricClaptonRAH240517-30_%2834987232355%29_%28cropped%29.jpg",
     "birthDate": "1945-03-30",
     "birthPlace": "Ripley, UK",
     "birthCoords": [
@@ -11308,8 +11308,8 @@
   {
     "id": "bob-gaddy",
     "name": "Bob Gaddy",
-    "image": "/images/musicians/bob-gaddy.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/3d/Bob_Gaddy.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/3/3d/Bob_Gaddy.jpg",
     "birthDate": "1924-02-04",
     "birthPlace": "South Carolina",
     "birthCoords": [
@@ -11356,8 +11356,8 @@
   {
     "id": "rory-gallagher",
     "name": "Rory Gallagher",
-    "image": "/images/musicians/rory-gallagher.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Rory_Gallagher_1982.jpg/500px-Rory_Gallagher_1982.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Rory_Gallagher_1982.jpg/500px-Rory_Gallagher_1982.jpg",
     "birthDate": "1948-03-02",
     "birthPlace": "Ballyshannon",
     "birthCoords": [
@@ -11595,8 +11595,8 @@
   {
     "id": "good-rockin-charles",
     "name": "Good Rockin' Charles",
-    "image": "/images/musicians/good-rockin-charles.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Good_Rockin_Charles.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Good_Rockin_Charles.jpg",
     "birthDate": "1933-03-04",
     "birthPlace": "Tuscaloosa, Alabama",
     "birthCoords": [
@@ -12807,8 +12807,8 @@
   {
     "id": "elmore-james",
     "name": "Elmore James",
-    "image": "/images/musicians/elmore-james.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/E/El/Elmore_James.gif/500px-Elmore_James.gif",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/E/El/Elmore_James.gif/500px-Elmore_James.gif",
     "birthDate": "1918-01-27",
     "birthPlace": "Richland",
     "birthCoords": [
@@ -15551,8 +15551,8 @@
   {
     "id": "gatemouth-moore",
     "name": "Gatemouth Moore",
-    "image": "/images/musicians/gatemouth-moore.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/A/Am/American_blues_and_gospel_singer_Gatemouth_Moore.png/500px-American_blues_and_gospel_singer_Gatemouth_Moore.png",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/A/Am/American_blues_and_gospel_singer_Gatemouth_Moore.png/500px-American_blues_and_gospel_singer_Gatemouth_Moore.png",
     "birthDate": "1913-11-08",
     "birthPlace": "Topeka",
     "birthCoords": [
@@ -15880,8 +15880,8 @@
   {
     "id": "johnny-otis",
     "name": "Johnny Otis",
-    "image": "/images/musicians/johnny-otis.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/J/Jo/Johnny_Otis.jpg/500px-Johnny_Otis.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/J/Jo/Johnny_Otis.jpg/500px-Johnny_Otis.jpg",
     "birthDate": "1921-12-28",
     "birthPlace": "Vallejo",
     "birthCoords": [
@@ -16959,8 +16959,8 @@
   {
     "id": "son-seals",
     "name": "Son Seals",
-    "image": "/images/musicians/son-seals.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/c/c2/Son_Seals.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/c/c2/Son_Seals.jpg",
     "birthDate": "1942-08-13",
     "birthPlace": "Osceola",
     "birthCoords": [
@@ -17518,8 +17518,8 @@
   {
     "id": "otis-spann",
     "name": "Otis Spann",
-    "image": "/images/musicians/otis-spann.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/O/Ot/Otis_Spann.jpg/500px-Otis_Spann.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/O/Ot/Otis_Spann.jpg/500px-Otis_Spann.jpg",
     "birthDate": "1930-03-21",
     "birthPlace": "Jackson",
     "birthCoords": [
@@ -18572,8 +18572,8 @@
   {
     "id": "washboard-willie",
     "name": "Washboard Willie",
-    "image": "/images/musicians/washboard-willie.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/f6/Washboard_Willie.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/f/f6/Washboard_Willie.jpg",
     "birthDate": "1909-07-24",
     "birthPlace": "Bullock County",
     "birthCoords": [
@@ -20152,8 +20152,8 @@
   {
     "id": "ted-hawkins",
     "name": "Ted Hawkins",
-    "image": "/images/musicians/ted-hawkins.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/a6/Ted_Hawkins.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/a/a6/Ted_Hawkins.jpg",
     "birthDate": "1936-10-28",
     "birthPlace": "Biloxi",
     "birthCoords": [
@@ -21188,8 +21188,8 @@
   {
     "id": "joe-louis-walker",
     "name": "Joe Louis Walker",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Joe_Louis_Walker_2007.jpg/500px-Joe_Louis_Walker_2007.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Joe_Louis_Walker_2007.jpg/500px-Joe_Louis_Walker_2007.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/J/Jl/Jlwrauma.jpg/500px-Jlwrauma.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/J/Jl/Jlwrauma.jpg/500px-Jlwrauma.jpg",
     "birthDate": "1949-12-25",
     "birthPlace": "San Francisco",
     "birthCoords": [
@@ -21386,8 +21386,8 @@
   {
     "id": "zora-young",
     "name": "Zora Young",
-    "image": "/images/musicians/zora-young.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Zora_Young09.JPG/500px-Zora_Young09.JPG",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Zora_Young09.JPG/500px-Zora_Young09.JPG",
     "birthDate": "1948-01-21",
     "birthPlace": "West Point",
     "birthCoords": [
@@ -21758,8 +21758,8 @@
   {
     "id": "jim-jackson",
     "name": "Jim Jackson",
-    "image": "/images/musicians/jim-jackson.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Jim_Jackson.jpg/500px-Jim_Jackson.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Jim_Jackson.jpg/500px-Jim_Jackson.jpg",
     "birthDate": "1890",
     "birthPlace": "Hernando, Mississippi",
     "birthCoords": [
@@ -21868,8 +21868,8 @@
   {
     "id": "mary-johnson",
     "name": "Mary Johnson",
-    "image": "/images/musicians/mary-johnson.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Mary_Johnson.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Mary_Johnson.jpg",
     "birthDate": "1903",
     "birthPlace": "Mississippi",
     "birthCoords": [
@@ -21959,8 +21959,8 @@
   {
     "id": "cripple-clarence-lofton",
     "name": "Cripple Clarence Lofton",
-    "image": "",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/C/Cl/Clarence_Lofton.jpg/500px-Clarence_Lofton.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/C/Cl/Clarence_Lofton.jpg/500px-Clarence_Lofton.jpg",
     "birthDate": "1887-03-28",
     "birthPlace": "Kingsport, Tennessee",
     "birthCoords": [
@@ -22036,8 +22036,8 @@
   {
     "id": "curley-weaver",
     "name": "Curley Weaver",
-    "image": "/images/musicians/curley-weaver.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Curley_Weaver.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/7/76/Curley_Weaver.jpg",
     "birthDate": "1906-03-25",
     "birthPlace": "Covington, Georgia",
     "birthCoords": [
@@ -22257,8 +22257,8 @@
   {
     "id": "piano-red",
     "name": "Piano Red",
-    "image": "/images/musicians/piano-red.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/P/Pi/Piano_Red.jpg/500px-Piano_Red.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/P/Pi/Piano_Red.jpg/500px-Piano_Red.jpg",
     "birthDate": "1911-10-19",
     "birthPlace": "Georgia",
     "birthCoords": [
@@ -22330,8 +22330,8 @@
   {
     "id": "red-nelson",
     "name": "Red Nelson",
-    "image": "/images/musicians/red-nelson.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Red_Nelson.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Red_Nelson.jpg",
     "birthDate": "1907",
     "birthPlace": "Mississippi",
     "birthCoords": [
@@ -22660,8 +22660,8 @@
   {
     "id": "johnny-temple",
     "name": "Johnny Temple",
-    "image": "/images/musicians/johnny-temple.webp",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Johnny_Temple.jpg/500px-Johnny_Temple.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Johnny_Temple.jpg/500px-Johnny_Temple.jpg",
     "birthDate": "1927-08-08",
     "birthPlace": "Lexington, North Carolina",
     "birthCoords": [
@@ -23860,7 +23860,7 @@
   {
     "id": "luke-long-gone-miles",
     "name": "Luke \"Long Gone\" Miles",
-    "image": "/images/musicians/luke-long-gone-miles.webp",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Chambers_Brothers_1970.JPG/500px-Chambers_Brothers_1970.JPG",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Chambers_Brothers_1970.JPG/500px-Chambers_Brothers_1970.JPG",
     "birthDate": "1925-05-08",
     "birthPlace": "Caddo Parish, Louisiana",
@@ -24400,8 +24400,8 @@
   {
     "id": "baby-tate",
     "name": "Baby Tate",
-    "image": "/images/musicians/baby-tate.webp",
-    "image_source": "wirz.de",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Grady_Tate_-_American_jazz_drummer.png",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Grady_Tate_-_American_jazz_drummer.png",
     "birthDate": "1919-01-28",
     "birthPlace": "Georgia",
     "birthCoords": [
@@ -24442,7 +24442,7 @@
   {
     "id": "sam-taylor",
     "name": "Sam Taylor",
-    "image": "/images/musicians/sam-taylor.webp",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sam_taylor_lg.jpg/500px-Sam_taylor_lg.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sam_taylor_lg.jpg/500px-Sam_taylor_lg.jpg",
     "birthDate": "1916-10-09",
     "birthPlace": "Tyler",
@@ -24836,8 +24836,8 @@
   {
     "id": "james-armstrong",
     "name": "James Armstrong",
-    "image": "/images/musicians/james-armstrong.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/James_Armstrong.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/c/c5/James_Armstrong.jpg",
     "birthDate": "1961-11-03",
     "birthPlace": "Memphis, Tennessee",
     "birthCoords": [
@@ -24959,8 +24959,8 @@
   {
     "id": "chris-beard",
     "name": "Chris Beard",
-    "image": "/images/musicians/chris-beard.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Chris_Beard.jpg/500px-Chris_Beard.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Chris_Beard.jpg/500px-Chris_Beard.jpg",
     "birthDate": "1973-02-18",
     "birthPlace": "Marietta, Georgia",
     "birthCoords": [
@@ -26323,7 +26323,7 @@
   {
     "id": "asie-payton",
     "name": "Asie Payton",
-    "image": "/images/musicians/asie-payton.webp",
+    "image": "",
     "image_source": "",
     "birthDate": "1937-04-12",
     "birthPlace": "Holly Ridge, Mississippi",
@@ -27877,8 +27877,8 @@
   {
     "id": "katie-webster",
     "name": "Katie Webster",
-    "image": "",
-    "image_source": "Discogs",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Katie_Webster.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/4/40/Katie_Webster.jpg",
     "birthDate": "1936-01-11",
     "birthPlace": "Houston, Texas",
     "birthCoords": [
@@ -29002,8 +29002,8 @@
   {
     "id": "gabriel-brown",
     "name": "Gabriel Brown",
-    "image": "/images/musicians/gabriel-brown.webp",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Gabriel_Brown.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/4/45/Gabriel_Brown.jpg",
     "birthDate": "1910-05-07",
     "birthPlace": "Jacksonville, Florida",
     "birthCoords": [
@@ -29932,8 +29932,8 @@
   {
     "id": "fantastic-negrito",
     "name": "Fantastic Negrito",
-    "image": "",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Fantastic_Negrito.jpg/500px-Fantastic_Negrito.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Fantastic_Negrito.jpg/500px-Fantastic_Negrito.jpg",
     "birthDate": "1968-01-20",
     "birthPlace": "Great Barrington, Massachusetts",
     "birthCoords": [
@@ -30107,8 +30107,8 @@
   {
     "id": "ruthie-foster",
     "name": "Ruthie Foster",
-    "image": "",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/RuthieFoster1photocreditJohnCarrico.jpg/500px-RuthieFoster1photocreditJohnCarrico.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/RuthieFoster1photocreditJohnCarrico.jpg/500px-RuthieFoster1photocreditJohnCarrico.jpg",
     "birthDate": "1964-09-05",
     "birthPlace": "Gause, Texas",
     "birthCoords": [
@@ -30165,8 +30165,8 @@
   {
     "id": "marquise-knox",
     "name": "Marquise Knox",
-    "image": "",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/M_closeup_singing_2.JPG/500px-M_closeup_singing_2.JPG",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/M_closeup_singing_2.JPG/500px-M_closeup_singing_2.JPG",
     "birthDate": "1991-08-17",
     "birthPlace": "St. Louis, Missouri",
     "birthCoords": [
@@ -30219,8 +30219,8 @@
   {
     "id": "grace-bowers",
     "name": "Grace Bowers",
-    "image": "",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Grace_Bowers_at_Night_Club_101_on_March_16th%2C_2026.jpg/500px-Grace_Bowers_at_Night_Club_101_on_March_16th%2C_2026.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Grace_Bowers_at_Night_Club_101_on_March_16th%2C_2026.jpg/500px-Grace_Bowers_at_Night_Club_101_on_March_16th%2C_2026.jpg",
     "birthDate": "2006-07-30",
     "birthPlace": "Danville, California",
     "birthCoords": [
@@ -30314,8 +30314,8 @@
   {
     "id": "selwyn-birchwood",
     "name": "Selwyn Birchwood",
-    "image": "",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Selwyn_Birchwood.jpg/500px-Selwyn_Birchwood.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Selwyn_Birchwood.jpg/500px-Selwyn_Birchwood.jpg",
     "birthDate": "1985-03-09",
     "birthPlace": "Orlando, Florida",
     "birthCoords": [
@@ -30464,8 +30464,8 @@
   {
     "id": "tyler-bryant",
     "name": "Tyler Bryant",
-    "image": "",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Tyler_Bryant.jpg/500px-Tyler_Bryant.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Tyler_Bryant.jpg/500px-Tyler_Bryant.jpg",
     "birthDate": "1991-01-05",
     "birthPlace": "Paris, Texas",
     "birthCoords": [
@@ -30510,8 +30510,8 @@
   {
     "id": "sugaray-rayford",
     "name": "Caron \"Sugaray\" Rayford",
-    "image": "",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Sugaray_Rayford.jpg/500px-Sugaray_Rayford.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Sugaray_Rayford.jpg/500px-Sugaray_Rayford.jpg",
     "birthDate": "1968-02-12",
     "birthPlace": "Tyler, Texas",
     "birthCoords": [
@@ -30575,8 +30575,8 @@
   {
     "id": "dan-auerbach",
     "name": "Dan Auerbach",
-    "image": "",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dan_Auerbach_performing_with_the_Black_Keys.jpg/500px-Dan_Auerbach_performing_with_the_Black_Keys.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dan_Auerbach_performing_with_the_Black_Keys.jpg/500px-Dan_Auerbach_performing_with_the_Black_Keys.jpg",
     "birthDate": "1979-05-14",
     "birthPlace": "Akron, Ohio",
     "birthCoords": [
@@ -30645,8 +30645,8 @@
   {
     "id": "jeff-beck",
     "name": "Jeff Beck",
-    "image": "/images/musicians/jeff-beck.webp",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Jeff_Beck_in_Amsterdam_1979_%28cropped%29.jpg/500px-Jeff_Beck_in_Amsterdam_1979_%28cropped%29.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Jeff_Beck_in_Amsterdam_1979_%28cropped%29.jpg/500px-Jeff_Beck_in_Amsterdam_1979_%28cropped%29.jpg",
     "birthDate": "1944-06-24",
     "birthPlace": "Wallington, Surrey, England",
     "birthCoords": [
@@ -30715,8 +30715,8 @@
   {
     "id": "bo-diddley",
     "name": "Bo Diddley",
-    "image": "",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Bo_Diddley_%281957_publicity_portrait%29.jpg/500px-Bo_Diddley_%281957_publicity_portrait%29.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Bo_Diddley_%281957_publicity_portrait%29.jpg/500px-Bo_Diddley_%281957_publicity_portrait%29.jpg",
     "birthDate": "1928-12-30",
     "birthPlace": "McComb, Mississippi",
     "birthCoords": [
@@ -30786,8 +30786,8 @@
   {
     "id": "van-morrison",
     "name": "Van Morrison",
-    "image": "",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Van_morrison%2C_slieve_donard_2015.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Van_morrison%2C_slieve_donard_2015.jpg",
     "birthDate": "1945-08-31",
     "birthPlace": "Belfast, Northern Ireland",
     "birthCoords": [
@@ -31428,8 +31428,8 @@
   {
     "id": "kenny-beedy-eyes-smith",
     "name": "Kenny \"Beedy Eyes\" Smith",
-    "image": "/images/musicians/kenny-beedy-eyes-smith.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Willie_Big_Eyes_Smith.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Willie_Big_Eyes_Smith.jpg",
     "birthDate": null,
     "birthPlace": "Chicago, Illinois",
     "birthCoords": [
