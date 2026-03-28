@@ -207,8 +207,8 @@
   {
     "id": "bessie-smith",
     "name": "Bessie Smith",
-    "image": "/images/musicians/bessie-smith.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Bessie_Smith_%281936%29_by_Carl_Van_Vechten.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Bessie_Smith_%281936%29_by_Carl_Van_Vechten.jpg",
     "birthDate": "1894-04-15",
     "birthPlace": "Chattanooga, Tennessee",
     "birthCoords": [
@@ -335,8 +335,8 @@
   {
     "id": "skip-james",
     "name": "Skip James",
-    "image": "/images/musicians/skip-james.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Skip_James.jpg/500px-Skip_James.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Skip_James.jpg/500px-Skip_James.jpg",
     "birthDate": "1902-06-09",
     "birthPlace": "Bentonia, Mississippi",
     "birthCoords": [
@@ -401,8 +401,8 @@
   {
     "id": "robert-johnson",
     "name": "Robert Johnson",
-    "image": "/images/musicians/robert-johnson.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Robert_Johnson%2C_c._1935_-_NARA_-_281675.jpg/500px-Robert_Johnson%2C_c._1935_-_NARA_-_281675.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Robert_Johnson%2C_c._1935_-_NARA_-_281675.jpg/500px-Robert_Johnson%2C_c._1935_-_NARA_-_281675.jpg",
     "birthDate": "1911-05-08",
     "birthPlace": "Hazlehurst, Mississippi",
     "birthCoords": [
@@ -742,8 +742,8 @@
   {
     "id": "john-lee-hooker",
     "name": "John Lee Hooker",
-    "image": "/images/musicians/john-lee-hooker.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/John_Lee_Hooker_1986.jpg/500px-John_Lee_Hooker_1986.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/John_Lee_Hooker_1986.jpg/500px-John_Lee_Hooker_1986.jpg",
     "birthDate": "1917-08-22",
     "birthPlace": "Clarksdale, Mississippi",
     "birthCoords": [
@@ -823,8 +823,8 @@
   {
     "id": "little-walter",
     "name": "Little Walter",
-    "image": "/images/musicians/little-walter.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Little_Walter.jpg/500px-Little_Walter.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Little_Walter.jpg/500px-Little_Walter.jpg",
     "birthDate": "1930-05-01",
     "birthPlace": "Marksville, Louisiana",
     "birthCoords": [
@@ -1962,8 +1962,8 @@
   {
     "id": "t-bone-walker",
     "name": "T-Bone Walker",
-    "image": "/images/musicians/t-bone-walker.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/T-Bone_Walker_in_1942.jpg/500px-T-Bone_Walker_in_1942.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/T-Bone_Walker_in_1942.jpg/500px-T-Bone_Walker_in_1942.jpg",
     "birthDate": "1910-05-28",
     "birthPlace": "Linden, Texas",
     "birthCoords": [
@@ -2232,8 +2232,8 @@
   {
     "id": "blind-boy-fuller",
     "name": "Blind Boy Fuller",
-    "image": "/images/musicians/blind-boy-fuller.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Blind_Boy_Fuller.jpg/500px-Blind_Boy_Fuller.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Blind_Boy_Fuller.jpg/500px-Blind_Boy_Fuller.jpg",
     "birthDate": "1908",
     "birthPlace": "Wadesboro, North Carolina",
     "birthCoords": [
@@ -2539,8 +2539,8 @@
   {
     "id": "guitar-slim",
     "name": "Guitar Slim",
-    "image": "/images/musicians/guitar-slim.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Guitar_Slim.jpg/500px-Guitar_Slim.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Guitar_Slim.jpg/500px-Guitar_Slim.jpg",
     "birthDate": "1926-12-10",
     "birthPlace": "Greenwood, Mississippi",
     "birthCoords": [
@@ -2601,8 +2601,8 @@
   {
     "id": "slim-harpo",
     "name": "Slim Harpo",
-    "image": "/images/musicians/slim-harpo.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Slim_Harpo.jpeg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/0/06/Slim_Harpo.jpeg",
     "birthDate": "1924-01-11",
     "birthPlace": "Lobdell, Louisiana",
     "birthCoords": [
@@ -3357,8 +3357,8 @@
   {
     "id": "pink-anderson",
     "name": "Pink Anderson",
-    "image": "/images/musicians/pink-anderson.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/c/cd/Pink_Anderson_and_son.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/c/cd/Pink_Anderson_and_son.jpg",
     "birthDate": "1900-02-12",
     "birthPlace": "Laurens",
     "birthCoords": [
@@ -3784,8 +3784,8 @@
   {
     "id": "blind-blake",
     "name": "Blind Blake",
-    "image": "/images/musicians/blind-blake.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/7/72/Blind_Blake.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/7/72/Blind_Blake.jpg",
     "birthDate": "1893",
     "birthPlace": "Jacksonville",
     "birthCoords": [
@@ -3852,8 +3852,8 @@
   {
     "id": "lucille-bogan",
     "name": "Lucille Bogan",
-    "image": "/images/musicians/lucille-bogan.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Lucille_Bogan.jpg/500px-Lucille_Bogan.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Lucille_Bogan.jpg/500px-Lucille_Bogan.jpg",
     "birthDate": "1897-04-01",
     "birthPlace": "Amory",
     "birthCoords": [
@@ -4386,8 +4386,8 @@
   {
     "id": "elizabeth-cotten",
     "name": "Elizabeth Cotten",
-    "image": "/images/musicians/elizabeth-cotten.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/f1/Elizabeth_Cotten.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/f/f1/Elizabeth_Cotten.jpg",
     "birthDate": "1893-01-05",
     "birthPlace": "Chapel Hill",
     "birthCoords": [
@@ -4433,8 +4433,8 @@
   {
     "id": "floyd-council",
     "name": "Floyd Council",
-    "image": "/images/musicians/floyd-council.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Floyd_Council.jpg/500px-Floyd_Council.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Floyd_Council.jpg/500px-Floyd_Council.jpg",
     "birthDate": "1911-09-02",
     "birthPlace": "Chapel Hill",
     "birthCoords": [
@@ -4984,8 +4984,8 @@
   {
     "id": "jesse-fuller",
     "name": "Jesse Fuller",
-    "image": "/images/musicians/jesse-fuller.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/American_blues_musician_Jesse_Fuller.png/500px-American_blues_musician_Jesse_Fuller.png",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/American_blues_musician_Jesse_Fuller.png/500px-American_blues_musician_Jesse_Fuller.png",
     "birthDate": "1896-03-12",
     "birthPlace": "Jonesboro",
     "birthCoords": [
@@ -6206,8 +6206,8 @@
   {
     "id": "virginia-liston",
     "name": "Virginia Liston",
-    "image": "/images/musicians/virginia-liston.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Photo_of_Virginia_Liston.jpg/500px-Photo_of_Virginia_Liston.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Photo_of_Virginia_Liston.jpg/500px-Photo_of_Virginia_Liston.jpg",
     "birthDate": "1890",
     "birthPlace": "Louisiana",
     "birthCoords": [
@@ -6308,8 +6308,8 @@
   {
     "id": "sara-martin",
     "name": "Sara Martin",
-    "image": "/images/musicians/sara-martin.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Martin%26weaver.jpg/500px-Martin%26weaver.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Martin%26weaver.jpg/500px-Martin%26weaver.jpg",
     "birthDate": "1884-06-18",
     "birthPlace": "Louisville",
     "birthCoords": [
@@ -6486,8 +6486,8 @@
   {
     "id": "papa-charlie-mccoy",
     "name": "Papa Charlie McCoy",
-    "image": "/images/musicians/papa-charlie-mccoy.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/33/%22Papa%22_Charlie_McCoy_as_a_young_man.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/3/33/%22Papa%22_Charlie_McCoy_as_a_young_man.jpg",
     "birthDate": "1909-05-26",
     "birthPlace": "Jackson",
     "birthCoords": [
@@ -6971,8 +6971,8 @@
   {
     "id": "st-louis-jimmy-oden",
     "name": "St. Louis Jimmy Oden",
-    "image": "/images/musicians/st-louis-jimmy-oden.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/American_blues_pianist_St_Louis_Jimmy_Oden.png/500px-American_blues_pianist_St_Louis_Jimmy_Oden.png",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/American_blues_pianist_St_Louis_Jimmy_Oden.png/500px-American_blues_pianist_St_Louis_Jimmy_Oden.png",
     "birthDate": "1905-06-26",
     "birthPlace": "Nashville",
     "birthCoords": [
@@ -8069,8 +8069,8 @@
   {
     "id": "washboard-sam",
     "name": "Washboard Sam",
-    "image": "/images/musicians/washboard-sam.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/f5/Washboard_Sam.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/f/f5/Washboard_Sam.jpg",
     "birthDate": "1910-07-15",
     "birthPlace": "Lawrence County",
     "birthCoords": [
@@ -9120,8 +9120,8 @@
   {
     "id": "buster-benton",
     "name": "Buster Benton",
-    "image": "/images/musicians/buster-benton.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/4b/Buster_Benton.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/4/4b/Buster_Benton.jpg",
     "birthDate": "1932-07-19",
     "birthPlace": "Texarkana",
     "birthCoords": [
@@ -9997,8 +9997,8 @@
   {
     "id": "johnny-copeland",
     "name": "Johnny Copeland",
-    "image": "/images/musicians/johnny-copeland.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Johnny_Copeland.jpg/500px-Johnny_Copeland.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Johnny_Copeland.jpg/500px-Johnny_Copeland.jpg",
     "birthDate": "1937-03-27",
     "birthPlace": "Haynesville",
     "birthCoords": [
@@ -12030,8 +12030,8 @@
   {
     "id": "shakey-jake-harris",
     "name": "Shakey Jake Harris",
-    "image": "/images/musicians/shakey-jake-harris.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/b/b0/American_blues_musician_Shakey_Jake_Harris.png",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/b/b0/American_blues_musician_Shakey_Jake_Harris.png",
     "birthDate": "1921-04-12",
     "birthPlace": "Arkansas",
     "birthCoords": [
@@ -12157,8 +12157,8 @@
   {
     "id": "johnny-heartsman",
     "name": "Johnny Heartsman",
-    "image": "/images/musicians/johnny-heartsman.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/6e/Johnny_Heartsman.JPG",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/6/6e/Johnny_Heartsman.JPG",
     "birthDate": "1937-02-09",
     "birthPlace": "San Fernando",
     "birthCoords": [
@@ -12257,8 +12257,8 @@
   {
     "id": "z-z-hill",
     "name": "Z. Z. Hill",
-    "image": "/images/musicians/z-z-hill.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/08/ZZ_Hill.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/0/08/ZZ_Hill.jpg",
     "birthDate": "1935-09-30",
     "birthPlace": "Naples, Texas",
     "birthCoords": [
@@ -12501,8 +12501,8 @@
   {
     "id": "earl-hooker",
     "name": "Earl Hooker",
-    "image": "/images/musicians/earl-hooker.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/16/American_blues_guitarist_Earl_Hooker.png/500px-American_blues_guitarist_Earl_Hooker.png",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/thumb/1/16/American_blues_guitarist_Earl_Hooker.png/500px-American_blues_guitarist_Earl_Hooker.png",
     "birthDate": "1929-01-15",
     "birthPlace": "Clarksdale",
     "birthCoords": [
@@ -14680,8 +14680,8 @@
   {
     "id": "magic-sam",
     "name": "Magic Sam",
-    "image": "/images/musicians/magic-sam.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/AABF_1969_Magic_Sam_JT.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/1/10/AABF_1969_Magic_Sam_JT.jpg",
     "birthDate": "1937-02-14",
     "birthPlace": "Grenada",
     "birthCoords": [
@@ -15395,8 +15395,8 @@
   {
     "id": "big-maceo-merriweather",
     "name": "Big Maceo Merriweather",
-    "image": "/images/musicians/big-maceo-merriweather.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b7/American_blues_pianist_Big_Maceo_Merriweather.png/500px-American_blues_pianist_Big_Maceo_Merriweather.png",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b7/American_blues_pianist_Big_Maceo_Merriweather.png/500px-American_blues_pianist_Big_Maceo_Merriweather.png",
     "birthDate": "1905-03-31",
     "birthPlace": "Atlanta",
     "birthCoords": [
@@ -16074,8 +16074,8 @@
   {
     "id": "dave-peabody",
     "name": "Dave Peabody",
-    "image": "/images/musicians/dave-peabody.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Peabody-Magpie-Norwich-81.jpg/500px-Peabody-Magpie-Norwich-81.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Peabody-Magpie-Norwich-81.jpg/500px-Peabody-Magpie-Norwich-81.jpg",
     "birthDate": "1948-04-20",
     "birthPlace": "Southall",
     "birthCoords": [
@@ -17619,8 +17619,8 @@
   {
     "id": "arbee-stidham",
     "name": "Arbee Stidham",
-    "image": "/images/musicians/arbee-stidham.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Arbee_William_Stidham_WWII_Draft_Card.png/500px-Arbee_William_Stidham_WWII_Draft_Card.png",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Arbee_William_Stidham_WWII_Draft_Card.png/500px-Arbee_William_Stidham_WWII_Draft_Card.png",
     "birthDate": "1917-02-09",
     "birthPlace": "DeValls Bluff",
     "birthCoords": [
@@ -17695,8 +17695,8 @@
   {
     "id": "eddie-taylor",
     "name": "Eddie Taylor",
-    "image": "/images/musicians/eddie-taylor.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Eddie_Taylor_1970_JT.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Eddie_Taylor_1970_JT.jpg",
     "birthDate": "1923-01-29",
     "birthPlace": "Benoit",
     "birthCoords": [
@@ -17993,8 +17993,8 @@
   {
     "id": "big-mama-thornton",
     "name": "Big Mama Thornton",
-    "image": "/images/musicians/big-mama-thornton.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Thornton_Big_Mama_01.jpg/500px-Thornton_Big_Mama_01.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Thornton_Big_Mama_01.jpg/500px-Thornton_Big_Mama_01.jpg",
     "birthDate": "1926-12-11",
     "birthPlace": "Montgomery",
     "birthCoords": [
@@ -18602,19 +18602,24 @@
         ]
       }
     ],
-    "instrument": "Harmonica",
+    "instrument": "Washboard",
     "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=tdYz0gIzqVk",
+    "youtubeLink": "https://www.youtube.com/watch?v=FFslydpEpiQ",
     "albums": [],
     "description": "William Paden Hensley (July 24, 1906 or 1909 – August 24, 1991), known as Washboard Willie, was an American Detroit blues musician, who specialised in playing the washboard.  He recorded tracks including \"A Fool on a Mule in the Middle of The Road\" plus \"Cherry Red Blues\", and worked variously with Eddie \"Guitar\" Burns, Baby Boy Warren, and Boogie Woogie Red.",
     "activeFrom": "1952",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "eddie-guitar-burns",
+      "baby-boy-warren",
+      "boogie-woogie-red"
+    ],
     "source": "https://en.wikipedia.org/wiki/Washboard_Willie",
     "secondaryInstruments": [
-      "Vocals"
+      "Vocals",
+      "Harmonica"
     ]
   },
   {
@@ -18940,7 +18945,7 @@
   {
     "id": "johnny-winter",
     "name": "Johnny Winter",
-    "image": "/images/musicians/johnny-winter.webp",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Johnny_Winter1990.jpg/500px-Johnny_Winter1990.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Johnny_Winter1990.jpg/500px-Johnny_Winter1990.jpg",
     "birthDate": "1944-02-23",
     "birthPlace": "Beaumont",
@@ -19437,8 +19442,8 @@
   {
     "id": "cedric-burnside",
     "name": "Cedric Burnside",
-    "image": "/images/musicians/cedric-burnside.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cedric_Burnside_INNt%C3%B6ne_2024_02.jpg/500px-Cedric_Burnside_INNt%C3%B6ne_2024_02.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cedric_Burnside_INNt%C3%B6ne_2024_02.jpg/500px-Cedric_Burnside_INNt%C3%B6ne_2024_02.jpg",
     "birthDate": "1978-08-26",
     "birthPlace": "Memphis",
     "birthCoords": [
@@ -20615,8 +20620,8 @@
   {
     "id": "gary-primich",
     "name": "Gary Primich",
-    "image": "/images/musicians/gary-primich.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Gary_Primich.jpg/500px-Gary_Primich.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Gary_Primich.jpg/500px-Gary_Primich.jpg",
     "birthDate": "1958-04-20",
     "birthPlace": "Chicago",
     "birthCoords": [
@@ -20902,8 +20907,8 @@
   {
     "id": "cootie-stark",
     "name": "Cootie Stark",
-    "image": "/images/musicians/cootie-stark.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/American_blues_guitarist_Cootie_Stark.png/500px-American_blues_guitarist_Cootie_Stark.png",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/American_blues_guitarist_Cootie_Stark.png/500px-American_blues_guitarist_Cootie_Stark.png",
     "birthDate": "1927-12-27",
     "birthPlace": "Greenville, South Carolina",
     "birthCoords": [
@@ -21462,8 +21467,8 @@
   {
     "id": "willie-brown",
     "name": "Willie Brown",
-    "image": "/images/musicians/willie-brown.webp",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Willie_Brown_-_grave.jpg/500px-Willie_Brown_-_grave.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Willie_Brown_-_grave.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Willie_Brown_-_grave.jpg",
     "birthDate": "1900-08-06",
     "birthPlace": "Clarksdale",
     "birthCoords": [
@@ -23122,8 +23127,8 @@
   {
     "id": "eddie-guitar-burns",
     "name": "Eddie \"Guitar\" Burns",
-    "image": "/images/musicians/eddie-guitar-burns.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/b/b3/American_blues_guitarist_Eddie_Guitar_Burns.png",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/b/b3/American_blues_guitarist_Eddie_Guitar_Burns.png",
     "birthDate": "1928-02-08",
     "birthPlace": "Belzoni",
     "birthCoords": [
@@ -23470,7 +23475,7 @@
       }
     ],
     "instrument": "Bass",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=RxoJW-ZNCW0",
     "albums": [],
     "description": "Robert \"Big Mojo\" Elem (January 22, 1928 – February 5, 1997) was an American Chicago blues bass guitarist and singer.  Although he recorded only one studio album in his long career, Elem was a part of the Chicago blues scene for over 40 years.  He variously backed Arthur \"Big Boy\" Spires, Lester Davenport, Freddie King, Magic Sam, Junior Wells, Shakey Jake Harris, Jimmy Dawkins, Luther Allison, and Otis Rush.",
@@ -23478,9 +23483,19 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "freddie-king",
+      "magic-sam",
+      "junior-wells",
+      "jimmy-dawkins",
+      "luther-allison",
+      "otis-rush",
+      "shakey-jake-harris"
+    ],
     "source": "https://en.wikipedia.org/wiki/Robert_\"Big_Mojo\"_Elem",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   },
   {
     "id": "johnny-fuller",
@@ -23506,7 +23521,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "West Coast Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=sgp4T2jPCOI",
     "albums": [
       {
@@ -23533,7 +23548,8 @@
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Johnny_Fuller_(musician)",
     "secondaryInstruments": [
-      "Vocals"
+      "Vocals",
+      "Piano"
     ]
   },
   {
@@ -23895,8 +23911,8 @@
   {
     "id": "matt-guitar-murphy",
     "name": "Matt \"Guitar\" Murphy",
-    "image": "/images/musicians/matt-guitar-murphy.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/2010_Chicago_Blues_Festival_-_Friday_%284879145689%29_%28cropped%29.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/1/11/2010_Chicago_Blues_Festival_-_Friday_%284879145689%29_%28cropped%29.jpg",
     "birthDate": "1929-12-29",
     "birthPlace": "Sunflower",
     "birthCoords": [
@@ -24584,7 +24600,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=Hb8q4v2EvWw",
     "albums": [
       {
@@ -25464,7 +25480,7 @@
       }
     ],
     "instrument": "Harmonica",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=VFYdKNPBTxo",
     "albums": [
       {
@@ -25477,7 +25493,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "earl-hooker"
+    ],
     "source": "https://en.wikipedia.org/wiki/Little_Arthur_Duncan",
     "secondaryInstruments": [
       "Vocals"
@@ -26291,7 +26309,12 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "cootie-stark",
+      "taj-mahal",
+      "dave-peabody",
+      "kenny-wayne-shepherd"
+    ],
     "source": "https://en.wikipedia.org/wiki/Neal_Pattman",
     "secondaryInstruments": [
       "Vocals"
@@ -26504,7 +26527,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=RhX-ZNjmnFM",
     "albums": [
       {
@@ -26998,8 +27021,8 @@
   {
     "id": "albert-white",
     "name": "Albert White",
-    "image": "/images/musicians/albert-white.png",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Albert_White_Music_Maker_Revue.JPG",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/9/91/Albert_White_Music_Maker_Revue.JPG",
     "birthDate": "1942-06-15",
     "birthPlace": "Mississippi",
     "birthCoords": [
@@ -28149,8 +28172,8 @@
   {
     "id": "jontavious-willis",
     "name": "Jontavious Willis",
-    "image": "/images/musicians/jontavious-willis.webp",
-    "image_source": "Artist Website",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/JontaviousWillis-CBF-Spring23.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/9/90/JontaviousWillis-CBF-Spring23.jpg",
     "birthDate": "1996",
     "birthPlace": "Greenville, Georgia",
     "birthCoords": [
@@ -28778,8 +28801,8 @@
   {
     "id": "curtis-jones",
     "name": "Curtis Jones",
-    "image": "/images/musicians/curtis-jones.webp",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/80/Curtis_Jones_%28blues_pianist%29.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/8/80/Curtis_Jones_%28blues_pianist%29.jpg",
     "birthDate": "1906-01-16",
     "birthPlace": "Nashville, Tennessee",
     "birthCoords": [
@@ -29429,8 +29452,8 @@
   {
     "id": "robert-wilkins",
     "name": "Robert Wilkins",
-    "image": "/images/musicians/robert-wilkins.webp",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Rev_Robt_Wilkins_Mpls_1970_JT.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Rev_Robt_Wilkins_Mpls_1970_JT.jpg",
     "birthDate": "1896-01-16",
     "birthPlace": "Hernando, Mississippi",
     "birthCoords": [
@@ -30384,8 +30407,8 @@
   {
     "id": "adia-victoria",
     "name": "Adia Victoria",
-    "image": "",
-    "image_source": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Adia_Victoria_ACL_Music_Festival_2015_%2822314857881%29.jpg/500px-Adia_Victoria_ACL_Music_Festival_2015_%2822314857881%29.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Adia_Victoria_ACL_Music_Festival_2015_%2822314857881%29.jpg/500px-Adia_Victoria_ACL_Music_Festival_2015_%2822314857881%29.jpg",
     "birthDate": "1986-07-22",
     "birthPlace": "Spartanburg, South Carolina",
     "birthCoords": [
@@ -31034,8 +31057,8 @@
   {
     "id": "john-primer",
     "name": "John Primer",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/JohnPrimerPromo8x10.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/3/35/JohnPrimerPromo8x10.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/JohnPrimerPromo8x10.jpg/500px-JohnPrimerPromo8x10.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/JohnPrimerPromo8x10.jpg/500px-JohnPrimerPromo8x10.jpg",
     "birthDate": "1945-03-05",
     "birthPlace": "Camden, Mississippi",
     "birthCoords": [
