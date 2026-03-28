@@ -3,13 +3,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Map, { Marker, Source, Layer } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useTranslation } from 'react-i18next';
-import { Guitar, Piano, Mic, Drum, Music, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, Info, Dice5, Play, Pause } from 'lucide-react';
+import { Guitar, Piano, Mic, Drum, Music, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, Info, Dice5, Play, Pause, Search, Heart, ListPlus } from 'lucide-react';
 import type { Musician } from '../types';
 import { getStyleHex, getStyleColor } from '../utils/colors';
 import MobileVideoPlayer from './MobileVideoPlayer';
-import MapBottomSheet from './MapBottomSheet';
 import MusicianPanel from './MusicianPanel';
 import MiniPlayer from './MiniPlayer';
+import SearchInput from './SearchInput';
+import ListsDropdown from './lists/ListsDropdown';
+import { useAtomValue } from 'jotai';
+import { userAtom } from '../atoms/auth';
+import { isMusicianFavoritedAtom } from '../atoms/lists';
+import { useLists } from '../hooks/useLists';
 
 const MAP_STYLES = {
   light: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
@@ -108,10 +113,21 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   
   // Mobile drawer state
   const [showDrawer, setShowDrawer] = useState(false);
-  const [drawerHeight, setDrawerHeight] = useState<'collapsed' | 'half' | 'full'>('half');
 
   // Mini player state
   const [miniPlayerActive, setMiniPlayerActive] = useState(false);
+  const [loadVideoId, setLoadVideoId] = useState<string | null>(null);
+
+  // Search state
+  const [showSearch, setShowSearch] = useState(false);
+  const [search, setSearch] = useState('');
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  // Favourites state
+  const [showListsDropdown, setShowListsDropdown] = useState(false);
+  const user = useAtomValue(userAtom);
+  const isMusicianFavorited = useAtomValue(isMusicianFavoritedAtom);
+  const { toggleFavorite } = useLists();
   
   // Gyroscope state - use ref to avoid re-renders
   const gyroRef = useRef({ alpha: 0, beta: 0, gamma: 0, enabled: false });
@@ -135,6 +151,12 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   );
 
   const current = completeMusicians.find(m => m.id === selectedId) ?? completeMusicians[0];
+
+  // Search logic
+  const searchQuery = search.trim().toLowerCase();
+  const searchMatches = searchQuery
+    ? completeMusicians.filter(m => m.name.toLowerCase().includes(searchQuery)).slice(0, 8)
+    : [];
 
   // Auto-select if nothing is selected
   useEffect(() => {
@@ -686,21 +708,33 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
         navigateLeft();
         break;
       case 'right': {
-        const hit = hitTestNearest(playedWithContainerRef.current, playedWithItemRefs.current, releaseX, releaseY);
-        if (hit !== null && playedWith.length > 0)
-          navigateToMusician(playedWith[Math.min(hit, playedWith.length - 1)], 'right');
+        if (playedWith.length === 1) {
+          navigateToMusician(playedWith[0], 'right');
+        } else {
+          const hit = hitTestNearest(playedWithContainerRef.current, playedWithItemRefs.current, releaseX, releaseY);
+          if (hit !== null && playedWith.length > 0)
+            navigateToMusician(playedWith[Math.min(hit, playedWith.length - 1)], 'right');
+        }
         break;
       }
       case 'up': {
-        const hit = hitTestNearest(influencerContainerRef.current, influencerItemRefs.current, releaseX, releaseY);
-        if (hit !== null && influencers.length > 0)
-          navigateToMusician(influencers[Math.min(hit, influencers.length - 1)], 'up');
+        if (influencers.length === 1) {
+          navigateToMusician(influencers[0], 'up');
+        } else {
+          const hit = hitTestNearest(influencerContainerRef.current, influencerItemRefs.current, releaseX, releaseY);
+          if (hit !== null && influencers.length > 0)
+            navigateToMusician(influencers[Math.min(hit, influencers.length - 1)], 'up');
+        }
         break;
       }
       case 'down': {
-        const hit = hitTestNearest(influencedContainerRef.current, influencedItemRefs.current, releaseX, releaseY);
-        if (hit !== null && influenced.length > 0)
-          navigateToMusician(influenced[Math.min(hit, influenced.length - 1)], 'down');
+        if (influenced.length === 1) {
+          navigateToMusician(influenced[0], 'down');
+        } else {
+          const hit = hitTestNearest(influencedContainerRef.current, influencedItemRefs.current, releaseX, releaseY);
+          if (hit !== null && influenced.length > 0)
+            navigateToMusician(influenced[Math.min(hit, influenced.length - 1)], 'down');
+        }
         break;
       }
     }
@@ -884,10 +918,10 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
         <AnimatePresence mode="wait">
           <motion.div
             key={current.id}
-            initial={{ opacity: 0, x: slideDir.x * 60, y: slideDir.y * 60, scale: 0.93 }}
-            animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
-            exit={{ opacity: 0, x: -slideDir.x * 60, y: -slideDir.y * 60, scale: 0.93 }}
-            transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
+            initial={{ opacity: 0, y: 40, scale: 0.92, rotate: isMobile ? slideDir.x * 2 : 0 }}
+            animate={{ opacity: 1, x: 0, y: 0, scale: 1, rotate: 0 }}
+            exit={{ opacity: 0, x: slideDir.x * 80, y: slideDir.y * 80 - 30, scale: 0.85, rotate: slideDir.x * 5 }}
+            transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
             className="relative"
             style={{ width: cardW, height: cardH }}
           >
@@ -1041,7 +1075,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   if (isMobile) {
     return (
       <div className="w-full h-full flex flex-col items-center justify-center bg-bg overflow-hidden relative">
-        {/* Random musician button */}
+        {/* Random musician button — top right */}
         <motion.button
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.1 }}
@@ -1076,22 +1110,119 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
             musician={current}
             isPlaying={miniPlayerActive}
             onPlayingChange={setMiniPlayerActive}
+            loadVideoId={loadVideoId}
+            onLoadVideoConsumed={() => setLoadVideoId(null)}
           />
         )}
 
         {cardZone}
 
-        {/* iOS gyroscope permission prompt */}
+        {/* Bottom toolbar: search left, favourite + add-to-list stacked right */}
+        <div className="absolute bottom-3 left-3 z-40">
+          <motion.button
+            whileTap={{ scale: 0.9 }}
+            onClick={() => setShowSearch(v => !v)}
+            className="flex flex-col items-center gap-0.5"
+          >
+            <div className={`w-11 h-11 flex items-center justify-center rounded-full backdrop-blur-sm border shadow-md transition-colors ${showSearch ? 'bg-accent text-white border-accent' : 'bg-bg/80 border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover'}`}>
+              <Search size={20} />
+            </div>
+            <span className="text-[9px] text-ink3 uppercase tracking-wide font-medium">{t('card.search')}</span>
+          </motion.button>
+        </div>
+
+        {user && (
+          <div className="absolute bottom-3 right-3 z-40 flex flex-col items-center gap-1">
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              onClick={() => current && toggleFavorite(current.id)}
+              className="flex flex-col items-center gap-0.5"
+            >
+              <div className={`w-11 h-11 flex items-center justify-center rounded-full backdrop-blur-sm border shadow-md transition-colors ${current && isMusicianFavorited(current.id) ? 'bg-accent/20 border-accent/40 text-accent' : 'bg-bg/80 border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover'}`}>
+                <Heart size={20} fill={current && isMusicianFavorited(current.id) ? 'currentColor' : 'none'} />
+              </div>
+              <span className="text-[9px] text-ink3 uppercase tracking-wide font-medium">{t('card.favorite')}</span>
+            </motion.button>
+
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              onClick={() => current && setShowListsDropdown(true)}
+              className="flex flex-col items-center gap-0.5"
+            >
+              <div className="w-11 h-11 flex items-center justify-center rounded-full backdrop-blur-sm border bg-bg/80 border-border-subtle text-ink3 shadow-md transition-colors hover:text-ink hover:bg-bg-hover">
+                <ListPlus size={20} />
+              </div>
+              <span className="text-[9px] text-ink3 uppercase tracking-wide font-medium">{t('card.addToList')}</span>
+            </motion.button>
+          </div>
+        )}
+
+        {/* iOS gyroscope permission prompt — above the info button */}
         {gyroNeedsPrompt && (
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-50">
+          <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-50">
             <button
               onClick={handleGyroPermissionRequest}
               className="px-4 py-2 rounded-full bg-accent text-white text-sm font-medium shadow-lg active:scale-95 transition-transform"
             >
-              Enable tilt effect
+              {t('card.enableTilt')}
             </button>
           </div>
         )}
+
+        {/* Mobile search input overlay — bottom positioned */}
+        <AnimatePresence>
+          {showSearch && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.2 }}
+              className="absolute bottom-20 left-3 right-3 z-50"
+            >
+              <div className="relative">
+                <SearchInput
+                  ref={searchInputRef}
+                  value={search}
+                  onChange={setSearch}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && searchMatches[0]) {
+                      onSelect(searchMatches[0]);
+                      setSearch('');
+                      setShowSearch(false);
+                    }
+                    if (e.key === 'Escape') {
+                      setSearch('');
+                      setShowSearch(false);
+                    }
+                  }}
+                  placeholder={t('filters.findByName')}
+                />
+                {searchMatches.length > 0 && (
+                  <div className="absolute bottom-full mb-1 left-0 right-0 bg-bg-subtle border border-border-subtle rounded-lg overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto">
+                    {searchMatches.map((m) => {
+                      const hex = getStyleHex(m.bluesStyle);
+                      return (
+                        <button
+                          key={m.id}
+                          onClick={() => {
+                            onSelect(m);
+                            setSearch('');
+                            setShowSearch(false);
+                          }}
+                          className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-bg-hover transition-colors"
+                        >
+                          <span className="w-3 h-3 rounded-full shrink-0" style={{ background: hex }} />
+                          <span className="text-sm text-ink flex-1 truncate">{m.name}</span>
+                          <span className="text-xs shrink-0" style={{ color: hex }}>{t(`styles.${m.bluesStyle}`, m.bluesStyle).replace(' Blues', '')}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {/* Direction hints overlay - shows available directions only */}
         <div className="absolute inset-0 pointer-events-none">
@@ -1253,7 +1384,6 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
               exit={{ opacity: 0, y: 20 }}
               onClick={() => {
                 setShowDrawer(true);
-                setDrawerHeight('half');
               }}
               className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2 bg-accent text-white px-5 py-3 rounded-full shadow-lg active:scale-95 transition-transform touch-manipulation"
             >
@@ -1266,42 +1396,164 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
         {/* Bottom sheet drawer for musician details */}
         <AnimatePresence>
           {showDrawer && (
-            <MapBottomSheet
-              height={drawerHeight}
-              onHeightChange={setDrawerHeight}
+            <MusicianPanel
+              musician={current}
+              musicians={musicians}
               onClose={() => {
                 setShowDrawer(false);
-                setDrawerHeight('half');
               }}
-            >
-              <MusicianPanel
-                musician={current}
-                musicians={musicians}
-                onClose={() => {
-                  setShowDrawer(false);
-                  setDrawerHeight('half');
-                }}
-                onNavigate={onSelect}
-                editMode={false}
-                onEdit={() => {}}
-                onPlayVideo={() => {}}
-                videoMusician={null}
-                manualVideoUrl={null}
-                autoplay={autoplay}
-                onVideoClose={() => {}}
-                isMobile={true}
-                bottomInset={0}
-              />
-            </MapBottomSheet>
+              onNavigate={onSelect}
+              editMode={false}
+              onEdit={() => {}}
+              onPlayVideo={(url: string) => {
+                const m = url.match(/[?&]v=([^&#]+)/) || url.match(/youtu\.be\/([^?&#]+)/);
+                if (m) {
+                  setLoadVideoId(m[1]);
+                  setMiniPlayerActive(true);
+                }
+              }}
+              videoMusician={null}
+              manualVideoUrl={null}
+              autoplay={autoplay}
+              onVideoClose={() => {}}
+              isMobile={true}
+              bottomInset={0}
+              cardMode={true}
+            />
           )}
         </AnimatePresence>
+
+        {/* Lists dropdown modal — mobile */}
+        {showListsDropdown && current && (
+          <ListsDropdown
+            musicianId={current.id}
+            onClose={() => setShowListsDropdown(false)}
+          />
+        )}
       </div>
     );
   }
 
   // Desktop: card left, description + video right, vertically centered together
   return (
-    <div className="w-full h-full flex flex-wrap justify-center gap-4 items-center bg-bg overflow-auto">
+    <div className="w-full h-full flex flex-wrap justify-center gap-4 items-center bg-bg overflow-auto relative">
+      {/* Desktop toolbar — top right */}
+      <div className="absolute top-4 right-4 z-50 flex items-center gap-2">
+        {/* Search toggle */}
+        <motion.button
+          whileTap={{ scale: 0.9 }}
+          whileHover={{ scale: 1.1 }}
+          onClick={() => setShowSearch(v => !v)}
+          className={`flex items-center justify-center w-10 h-10 rounded-full backdrop-blur-sm border shadow-md transition-colors ${showSearch ? 'bg-accent text-white border-accent' : 'bg-bg/80 border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover'}`}
+          title={t('card.search')}
+        >
+          <Search size={18} />
+        </motion.button>
+
+        {/* Random */}
+        <motion.button
+          whileTap={{ scale: 0.9 }}
+          whileHover={{ scale: 1.1 }}
+          onClick={() => {
+            const others = completeMusicians.filter(m => m.id !== current?.id);
+            if (others.length > 0) onSelect(others[Math.floor(Math.random() * others.length)]);
+          }}
+          className="flex items-center justify-center w-10 h-10 rounded-full backdrop-blur-sm border bg-bg/80 border-border-subtle text-ink3 shadow-md transition-colors hover:text-ink hover:bg-bg-hover"
+          title={t('card.random')}
+        >
+          <Dice5 size={18} />
+        </motion.button>
+
+        {/* Favourite toggle */}
+        {user && (
+          <motion.button
+            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.1 }}
+            onClick={() => current && toggleFavorite(current.id)}
+            className={`flex items-center justify-center w-10 h-10 rounded-full backdrop-blur-sm border shadow-md transition-colors ${current && isMusicianFavorited(current.id) ? 'bg-accent/20 border-accent/40 text-accent' : 'bg-bg/80 border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover'}`}
+            title={t('card.favorite')}
+          >
+            <Heart size={18} fill={current && isMusicianFavorited(current.id) ? 'currentColor' : 'none'} />
+          </motion.button>
+        )}
+
+        {/* Add to list */}
+        {user && (
+          <motion.button
+            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.1 }}
+            onClick={() => current && setShowListsDropdown(true)}
+            className="flex items-center justify-center w-10 h-10 rounded-full backdrop-blur-sm border bg-bg/80 border-border-subtle text-ink3 shadow-md transition-colors hover:text-ink hover:bg-bg-hover"
+            title={t('card.addToList')}
+          >
+            <ListPlus size={18} />
+          </motion.button>
+        )}
+      </div>
+
+      {/* Desktop search input overlay */}
+      <AnimatePresence>
+        {showSearch && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="absolute top-16 right-4 z-50 w-72"
+          >
+            <div className="relative">
+              <SearchInput
+                ref={searchInputRef}
+                value={search}
+                onChange={setSearch}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && searchMatches[0]) {
+                    onSelect(searchMatches[0]);
+                    setSearch('');
+                    setShowSearch(false);
+                  }
+                  if (e.key === 'Escape') {
+                    setSearch('');
+                    setShowSearch(false);
+                  }
+                }}
+                placeholder={t('filters.findByName')}
+              />
+              {searchMatches.length > 0 && (
+                <div className="absolute top-full mt-1 left-0 right-0 bg-bg-subtle border border-border-subtle rounded-lg overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto">
+                  {searchMatches.map((m) => {
+                    const hex = getStyleHex(m.bluesStyle);
+                    return (
+                      <button
+                        key={m.id}
+                        onClick={() => {
+                          onSelect(m);
+                          setSearch('');
+                          setShowSearch(false);
+                        }}
+                        className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-bg-hover transition-colors"
+                      >
+                        <span className="w-3 h-3 rounded-full shrink-0" style={{ background: hex }} />
+                        <span className="text-sm text-ink flex-1 truncate">{m.name}</span>
+                        <span className="text-xs shrink-0" style={{ color: hex }}>{t(`styles.${m.bluesStyle}`, m.bluesStyle).replace(' Blues', '')}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Lists dropdown modal — desktop */}
+      {showListsDropdown && current && (
+        <ListsDropdown
+          musicianId={current.id}
+          onClose={() => setShowListsDropdown(false)}
+        />
+      )}
+
       {/* Left side: card + flip hint */}
       <div className="flex flex-1 flex-col items-center justify-center min-w-1/2">
         {cardZone}

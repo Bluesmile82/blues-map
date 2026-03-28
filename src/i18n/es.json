@@ -43,7 +43,11 @@
     "back": "Volver",
     "random": "Aleatorio",
     "play": "Reproducir",
-    "pause": "Pausar"
+    "pause": "Pausar",
+    "search": "Buscar",
+    "favorite": "Favorito",
+    "addToList": "Añadir a Lista",
+    "enableTilt": "Activar efecto inclinación"
   },
   "mobile": {
     "gestureHintPinch": "Pellizca para acercar o alejar",

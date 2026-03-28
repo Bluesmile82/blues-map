@@ -39,9 +39,11 @@ interface MusicianPanelProps {
   isMobile?: boolean;
   /** Pixel height of bottom toolbar to sit above (0 when no toolbar) */
   bottomInset?: number;
+  /** When true, only snaps between full and closed (no half/collapsed), with opaque background */
+  cardMode?: boolean;
 }
 
-export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, videoMusician, manualVideoUrl, autoplay, onVideoClose, isMobile, bottomInset = 0 }: MusicianPanelProps) {
+export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, videoMusician, manualVideoUrl, autoplay, onVideoClose, isMobile, bottomInset = 0, cardMode = false }: MusicianPanelProps) {
   const [panelHeight, setPanelHeight] = useState<PanelHeight>('full');
   const completeMusicians = useMemo(() => musicians.filter((m) =>
     m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
@@ -77,7 +79,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   const dragRef = useRef({ startY: 0, startH: 0, active: false });
   const [dragH, setDragH] = useState<number | null>(null); // null = not dragging
 
-  const snapPx = getSnapPx(panelHeight, availH);
+  const snapPx = cardMode ? getSnapPx('full', availH) : getSnapPx(panelHeight, availH);
   const maxH = availH * 0.85;
   const clamp = useCallback((h: number) => Math.max(HANDLE_H, Math.min(maxH, h)), [maxH]);
 
@@ -96,6 +98,15 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   }, [clamp]);
 
   const snapToNearest = useCallback((currentH: number) => {
+    if (cardMode) {
+      const fullPx = getSnapPx('full', availH);
+      if (currentH < fullPx * 0.4) {
+        onClose();
+      } else {
+        setPanelHeight('full');
+      }
+      return;
+    }
     const points: { h: PanelHeight; px: number }[] = [
       { h: 'full', px: getSnapPx('full', availH) },
       { h: 'half', px: getSnapPx('half', availH) },
@@ -111,7 +122,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
     } else {
       setPanelHeight(best.h);
     }
-  }, [availH, onClose]);
+  }, [availH, onClose, cardMode]);
 
   const onHandleTouchEnd = useCallback(() => {
     if (!dragRef.current.active) return;
@@ -155,10 +166,10 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   return (
     <>
       <div
-        className={`fixed z-80 bg-bg/10 backdrop-blur-md flex flex-col overflow-hidden shadow-2xl border-t sm:border-t-0 border-border-subtle
+        className={`fixed z-80 flex flex-col overflow-hidden shadow-2xl border-t border-border-subtle
           ${isMobile
-            ? 'left-0 right-0 rounded-t-3xl'
-            : 'top-14 right-0 bottom-0 w-full sm:w-[26rem] h-auto rounded-t-none transition-all duration-300 ease-out'
+            ? `left-0 right-0 rounded-t-3xl ${cardMode ? 'bg-bg/95 backdrop-blur-lg' : 'bg-bg/10 backdrop-blur-md'}`
+            : 'top-14 right-0 bottom-0 w-full sm:w-[26rem] h-auto rounded-t-none bg-bg/10 backdrop-blur-md transition-all duration-300 ease-out'
           }`}
         style={isMobile ? {
           bottom: bottomInset,

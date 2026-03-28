@@ -43,7 +43,11 @@
     "back": "Back",
     "random": "Random",
     "play": "Play",
-    "pause": "Pause"
+    "pause": "Pause",
+    "search": "Search",
+    "favorite": "Favorite",
+    "addToList": "Add to List",
+    "enableTilt": "Enable tilt effect"
   },
   "mobile": {
     "gestureHintPinch": "Pinch to zoom in and out",

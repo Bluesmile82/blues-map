@@ -36,11 +36,14 @@ interface MiniPlayerProps {
   musician: Musician;
   isPlaying: boolean;
   onPlayingChange: (playing: boolean) => void;
+  /** When set, loads and plays this specific video ID */
+  loadVideoId?: string | null;
+  onLoadVideoConsumed?: () => void;
 }
 
 const PLAYER_ID = 'mini-player-iframe';
 
-export default function MiniPlayer({ musician, isPlaying, onPlayingChange }: MiniPlayerProps) {
+export default function MiniPlayer({ musician, isPlaying, onPlayingChange, loadVideoId, onLoadVideoConsumed }: MiniPlayerProps) {
   const playerRef = useRef<YTMini.Player | null>(null);
   const [apiReady, setApiReady] = useState(!!((window as any).YT?.Player));
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -106,6 +109,11 @@ export default function MiniPlayer({ musician, isPlaying, onPlayingChange }: Min
         enablejsapi: 1,
       },
       events: {
+        onReady: () => {
+          if (isPlayingRef.current) {
+            playerRef.current?.playVideo();
+          }
+        },
         onStateChange: (e) => {
           if (e.data === YT.PlayerState.ENDED) {
             const next = currentIndexRef.current + 1;
@@ -139,6 +147,22 @@ export default function MiniPlayer({ musician, isPlaying, onPlayingChange }: Min
       else playerRef.current.pauseVideo();
     } catch { /* player not ready yet */ }
   }, [isPlaying]);
+
+  // Load a specific video when requested (from MusicianPanel buttons)
+  useEffect(() => {
+    if (!loadVideoId || !playerRef.current) return;
+    const videos = videosRef.current;
+    const idx = videos.findIndex(v => v.videoId === loadVideoId);
+    if (idx >= 0) {
+      currentIndexRef.current = idx;
+      setCurrentIndex(idx);
+    }
+    try {
+      playerRef.current.loadVideoById(loadVideoId);
+    } catch { /* player not ready */ }
+    onPlayingChange(true);
+    onLoadVideoConsumed?.();
+  }, [loadVideoId, onPlayingChange, onLoadVideoConsumed]);
 
   const navigateTo = (idx: number) => {
     const videos = videosRef.current;
