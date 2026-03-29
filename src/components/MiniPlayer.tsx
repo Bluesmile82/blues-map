@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Musician } from '../types';
 
-declare namespace YTMini {
+declare namespace YT {
   class Player {
     constructor(elementId: string, options: PlayerOptions);
     playVideo(): void;
@@ -11,6 +11,7 @@ declare namespace YTMini {
     stopVideo(): void;
     loadVideoById(videoId: string): void;
     destroy(): void;
+    getPlayerState(): number;
   }
   interface PlayerOptions {
     videoId: string;
@@ -44,11 +45,13 @@ interface MiniPlayerProps {
 const PLAYER_ID = 'mini-player-iframe';
 
 export default function MiniPlayer({ musician, isPlaying, onPlayingChange, loadVideoId, onLoadVideoConsumed }: MiniPlayerProps) {
-  const playerRef = useRef<YTMini.Player | null>(null);
+  const playerRef = useRef<YT.Player | null>(null);
+  const playerReadyRef = useRef(false);
   const [apiReady, setApiReady] = useState(!!((window as any).YT?.Player));
   const [currentIndex, setCurrentIndex] = useState(0);
   const isPlayingRef = useRef(isPlaying);
   const currentIndexRef = useRef(0);
+  const pendingVideoIdRef = useRef<string | null>(null);
 
   const buildVideos = (m: Musician): VideoEntry[] => {
     const list: VideoEntry[] = [];
@@ -81,28 +84,16 @@ export default function MiniPlayer({ musician, isPlaying, onPlayingChange, loadV
     };
   }, []);
 
-  // Re-init player when musician or API readiness changes
+  // Init player once when API is ready
   useEffect(() => {
     if (!apiReady) return;
 
-    const videos = buildVideos(musician);
-    videosRef.current = videos;
-    currentIndexRef.current = 0;
-    setCurrentIndex(0);
-
-    if (videos.length === 0) return;
-
-    if (playerRef.current) {
-      playerRef.current.destroy();
-      playerRef.current = null;
-    }
-
-    const YT: typeof YTMini = (window as any).YT;
+    playerReadyRef.current = false;
 
     playerRef.current = new YT.Player(PLAYER_ID, {
-      videoId: videos[0].videoId,
+      videoId: '',
       playerVars: {
-        autoplay: isPlayingRef.current ? 1 : 0,
+        autoplay: 0,
         playsinline: 1,
         rel: 0,
         controls: 0,
@@ -110,8 +101,10 @@ export default function MiniPlayer({ musician, isPlaying, onPlayingChange, loadV
       },
       events: {
         onReady: () => {
-          if (isPlayingRef.current) {
-            playerRef.current?.playVideo();
+          playerReadyRef.current = true;
+          if (pendingVideoIdRef.current) {
+            playerRef.current?.loadVideoById(pendingVideoIdRef.current);
+            pendingVideoIdRef.current = null;
           }
         },
         onStateChange: (e) => {
@@ -133,15 +126,43 @@ export default function MiniPlayer({ musician, isPlaying, onPlayingChange, loadV
     });
 
     return () => {
-      playerRef.current?.destroy();
-      playerRef.current = null;
+      if (playerRef.current) {
+        playerRef.current.destroy();
+        playerRef.current = null;
+        playerReadyRef.current = false;
+      }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [apiReady]);
+
+  // When musician changes, load new video into existing player
+  useEffect(() => {
+    if (!apiReady) return;
+
+    const videos = buildVideos(musician);
+    videosRef.current = videos;
+    currentIndexRef.current = 0;
+    setCurrentIndex(0);
+
+    if (videos.length === 0) return;
+
+    const videoId = videos[0].videoId;
+
+    if (playerReadyRef.current && playerRef.current) {
+      try {
+        playerRef.current.loadVideoById(videoId);
+        if (!isPlayingRef.current) {
+          playerRef.current.pauseVideo();
+        }
+      } catch { /* player not ready yet */ }
+    } else {
+      pendingVideoIdRef.current = videoId;
+    }
   }, [apiReady, musician.id]);
 
   // Play / pause when isPlaying prop changes
   useEffect(() => {
-    if (!playerRef.current) return;
+    if (!playerRef.current || !playerReadyRef.current) return;
     try {
       if (isPlaying) playerRef.current.playVideo();
       else playerRef.current.pauseVideo();
@@ -150,7 +171,7 @@ export default function MiniPlayer({ musician, isPlaying, onPlayingChange, loadV
 
   // Load a specific video when requested (from MusicianPanel buttons)
   useEffect(() => {
-    if (!loadVideoId || !playerRef.current) return;
+    if (!loadVideoId || !playerRef.current || !playerReadyRef.current) return;
     const videos = videosRef.current;
     const idx = videos.findIndex(v => v.videoId === loadVideoId);
     if (idx >= 0) {
