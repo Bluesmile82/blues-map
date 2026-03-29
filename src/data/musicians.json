@@ -3147,7 +3147,10 @@
     ],
     "description": "Booker T.  Washington \"Bukka\" White (November 12, between 1900 and 1909 – February 26, 1977) was an American Delta blues guitarist and singer.  His first full-length biography, The Life and Music of Booker \"Bukka\" White: Recalling the Blues (2024), has been published by the University Press of Mississippi.",
     "activeFrom": "1920",
-    "influences": [],
+    "influences": [
+      "charley-patton",
+      "blind-willie-johnson"
+    ],
     "influencedBy": [
       "terry-garland"
     ],
@@ -5611,7 +5614,9 @@
     "description": "John Smith Hurt (March 8, 1893 – November 2, 1966), known as Mississippi John Hurt, was an American country blues singer, songwriter, and guitarist.",
     "activeFrom": "1928",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "taj-mahal"
+    ],
     "incomplete": false,
     "playedWith": [
       "sonny-terry",
@@ -5973,8 +5978,13 @@
     ],
     "description": "Huddie William Ledbetter ( HYOO-dee; January 1888 or 1889 – December 6, 1949), better known by the stage name Lead Belly, was an American folk and blues singer notable for his strong vocals, virtuosity on the twelve-string guitar, and the folk standards he introduced, including his renditions of \"In the Pines\" (also known as \"Where Did You Sleep Last Night? \" and “Black Girl”), \"Pick a Bale of Cotton\", \"Goodnight, Irene\", \"Black Betty\", \"Midnight Special\", \"Cotton Fields\", and \"Boll Weevil\". \nLedbetter usually played a twelve-string guitar, but he also played the piano, mandolin, harmonica, violin, and windjammer (accordion).",
     "activeFrom": "1903",
-    "influences": [],
-    "influencedBy": [],
+    "influences": [
+      "blind-lemon-jefferson"
+    ],
+    "influencedBy": [
+      "sonny-terry",
+      "brownie-mcghee"
+    ],
     "incomplete": false,
     "playedWith": [
       "josh-white",
@@ -6059,7 +6069,10 @@
     ],
     "description": "Walter E.  \"Furry\" Lewis (March 6, 1893 or 1899 – September 14, 1981) was an American country blues guitarist and songwriter from Memphis, Tennessee.  He was one of the earliest of the blues musicians active in the 1920s to be brought out of retirement and given new opportunities to record during the folk blues revival of the 1960s.",
     "activeFrom": "1900",
-    "influences": [],
+    "influences": [
+      "bessie-smith",
+      "blind-lemon-jefferson"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -6702,7 +6715,9 @@
     "description": "Blind Willie McTell (born William Samuel McTier; circa 1903 – August 19, 1959) was an American Piedmont blues and ragtime singer, songwriter and guitarist.  He played in a fluid, syncopated finger picking guitar style common among many East Coast, Piedmont blues players.  Like his Atlanta contemporaries, he came to use twelve-string guitars exclusively.",
     "activeFrom": "1927",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "taj-mahal"
+    ],
     "incomplete": false,
     "playedWith": [
       "curley-weaver"
@@ -6847,7 +6862,9 @@
     "description": "Eurreal Wilford \"Little Brother\" Montgomery (April 18, 1906 – September 6, 1985) was an American jazz, boogie-woogie and blues pianist and singer. \nLargely self-taught, Montgomery was an important blues pianist with an original style.  He was also versatile, working in jazz bands, including larger ensembles that used written arrangements.",
     "activeFrom": "1969",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "willie-dixon"
+    ],
     "incomplete": false,
     "playedWith": [
       "otis-rush"
@@ -8547,7 +8564,9 @@
     ],
     "description": "John Lee Curtis \"Sonny Boy\" Williamson (March 30, 1914 – June 1, 1948) was an American blues harmonica player and singer-songwriter.  He is often regarded as the pioneer of the blues harp as a solo instrument.  He played on hundreds of recordings by many pre–World War II blues artists.",
     "activeFrom": "1937",
-    "influences": [],
+    "influences": [
+      "sleepy-john-estes"
+    ],
     "influencedBy": [
       "james-cotton",
       "good-rockin-charles",
@@ -8675,7 +8694,13 @@
     ],
     "description": "Luther Sylvester Allison (August 17, 1939 – August 12, 1997) was an American blues singer-songwriter and guitarist.  He was born in Widener, Arkansas, although some accounts suggest his actual place of birth was Mayflower, Arkansas.  Allison was interested in music as a child and during the late 1940s he toured in a family gospel group called The Southern Travellers.",
     "activeFrom": "1957",
-    "influences": [],
+    "influences": [
+      "howlin-wolf",
+      "freddie-king",
+      "magic-sam",
+      "otis-rush",
+      "james-cotton"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -9083,7 +9108,9 @@
     "influences": [
       "roomful-of-blues"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "billy-branch"
+    ],
     "incomplete": false,
     "playedWith": [
       "earl-hooker",
@@ -9327,8 +9354,13 @@
     ],
     "description": "Robert Calvin Bland (born Robert Calvin Brooks; January 27, 1930 – June 23, 2013), known professionally as Bobby \"Blue\" Bland, was an American blues singer.  Bland developed a sound that mixed gospel with the blues and R&B.  He was described as \"among the great storytellers of blues and soul music...",
     "activeFrom": "1951",
-    "influences": [],
-    "influencedBy": [],
+    "influences": [
+      "bb-king",
+      "t-bone-walker"
+    ],
+    "influencedBy": [
+      "van-morrison"
+    ],
     "incomplete": false,
     "playedWith": [
       "bb-king",
@@ -9783,8 +9815,17 @@
     ],
     "description": "Paul Vaughn Butterfield (December 17, 1942 – May 4, 1987) was an American blues harmonica player, singer, and bandleader.  After early training as a classical flautist, he developed an interest in blues harmonica.  He explored the blues scene in his native Chicago, where he met Muddy Waters and other blues greats, who provided encouragement and opportunities for him to join in jam sessions.",
     "activeFrom": "1963",
-    "influences": [],
-    "influencedBy": [],
+    "influences": [
+      "muddy-waters",
+      "howlin-wolf",
+      "little-walter",
+      "otis-rush",
+      "big-walter-horton"
+    ],
+    "influencedBy": [
+      "bonnie-raitt",
+      "eric-clapton"
+    ],
     "incomplete": false,
     "playedWith": [
       "mike-bloomfield",
@@ -10041,8 +10082,13 @@
     ],
     "description": "John Clyde Copeland (March 27, 1937 – July 3, 1997) was an American Texas blues guitarist and singer.  In 1983, he was named Blues Entertainer of the Year by the Blues Foundation.  He is the father of blues singer Shemekia Copeland.",
     "activeFrom": "1950",
-    "influences": [],
-    "influencedBy": [],
+    "influences": [
+      "t-bone-walker",
+      "albert-collins"
+    ],
+    "influencedBy": [
+      "shemekia-copeland"
+    ],
     "incomplete": false,
     "playedWith": [
       "albert-collins",
@@ -10208,7 +10254,9 @@
     ],
     "description": "Connie Curtis Crayton (December 18, 1914 – June 25, 1985), known as Pee Wee Crayton, was an American R&B and blues guitarist and singer.",
     "activeFrom": "1934",
-    "influences": [],
+    "influences": [
+      "t-bone-walker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -10622,8 +10670,20 @@
     ],
     "description": "William James Dixon (July 1, 1915 – January 29, 1992) was an American blues musician, vocalist, songwriter, arranger and record producer.  He was proficient in playing both the upright bass and the guitar, and sang with a distinctive voice, but he is perhaps best known as one of the most prolific songwriters of his time.  Next to Muddy Waters, Dixon is recognized as the most influential person in shaping the post–World War II sound of the Chicago blues.",
     "activeFrom": "1939",
-    "influences": [],
-    "influencedBy": [],
+    "influences": [
+      "little-brother-montgomery"
+    ],
+    "influencedBy": [
+      "muddy-waters",
+      "howlin-wolf",
+      "little-walter",
+      "koko-taylor",
+      "otis-rush",
+      "magic-sam",
+      "buddy-guy",
+      "memphis-slim",
+      "jimmy-rogers"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -12665,7 +12725,11 @@
     "description": "Walter Horton (April 6, 1921  – December 8, 1981), known as Big Walter (Horton) or Walter \"Shakey\" Horton, was an American blues harmonica player.  A quiet, unassuming, shy man, he is remembered as one of the premier harmonica players in the history of blues.  Willie Dixon once called Horton 'the best harmonica player I ever heard'.",
     "activeFrom": "1939",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "james-cotton",
+      "little-walter",
+      "carey-bell"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -13640,7 +13704,19 @@
     ],
     "description": "Freddie King (born Fred King  September 3, 1934 – December 28, 1976), also billed as Freddy King, was an American blues guitarist, singer and songwriter.  He is considered one of the \"Three Kings of the Blues Guitar\" (along with Albert King and B.  B.",
     "activeFrom": "1952",
-    "influences": [],
+    "influences": [
+      "muddy-waters",
+      "howlin-wolf",
+      "t-bone-walker",
+      "elmore-james",
+      "bb-king",
+      "jimmy-rogers",
+      "willie-dixon",
+      "memphis-slim",
+      "little-walter",
+      "hound-dog-taylor",
+      "magic-sam"
+    ],
     "influencedBy": [
       "sean-costello"
     ],
@@ -14806,8 +14882,14 @@
     ],
     "description": "Morris Holt (August 7, 1937 – February 21, 2013), known as Magic Slim, was an American blues singer and guitarist.  Born at Torrance, near Grenada, Mississippi, the son of sharecroppers, he followed blues greats such as Muddy Waters and Howlin' Wolf to Chicago, developing his own place in the Chicago blues scene. \nIn 2017, Magic Slim was posthumously inducted in to the Blues Hall of Fame.",
     "activeFrom": "1955",
-    "influences": [],
-    "influencedBy": [],
+    "influences": [
+      "magic-sam",
+      "muddy-waters",
+      "howlin-wolf"
+    ],
+    "influencedBy": [
+      "john-primer"
+    ],
     "incomplete": false,
     "playedWith": [
       "magic-sam"
@@ -15449,8 +15531,14 @@
     ],
     "description": "Major \"Big Maceo\" Merriweather (March 31, 1905 – February 23, 1953) was an American pianist and blues singer.  He was mainly active in Chicago through the 1940s.",
     "activeFrom": "1930",
-    "influences": [],
-    "influencedBy": [],
+    "influences": [
+      "roosevelt-sykes",
+      "meade-lux-lewis",
+      "tampa-red"
+    ],
+    "influencedBy": [
+      "henry-gray"
+    ],
     "incomplete": false,
     "playedWith": [
       "tampa-red",
@@ -16143,7 +16231,10 @@
     "albums": [],
     "description": "Joe Willie \"Pinetop\" Perkins (July 7, 1913 – March 21, 2011) was an American blues pianist.  He played with some of the most influential blues and rock-and-roll performers of his time and received numerous honors, including a Grammy Lifetime Achievement Award and induction into the Blues Hall of Fame.",
     "activeFrom": "1933",
-    "influences": [],
+    "influences": [
+      "robert-johnson",
+      "earl-hooker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -16199,7 +16290,9 @@
     ],
     "description": "Rod Piazza (born December 18, 1947, Riverside, California) is an American blues harmonica player and singer.  He has been playing with his band The Mighty Flyers, which he formed with his pianist wife Honey Piazza, since 1980.  Their boogie sound combines the styles of jump blues, West Coast blues and Chicago blues.",
     "activeFrom": "1967",
-    "influences": [],
+    "influences": [
+      "george-harmonica-smith"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -17825,7 +17918,9 @@
     ],
     "description": "Theodore Roosevelt \"Hound Dog\" Taylor (April 12, 1915 – December 17, 1975) was an American Chicago blues guitarist and singer.",
     "activeFrom": "1957",
-    "influences": [],
+    "influences": [
+      "elmore-james"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -19015,7 +19110,11 @@
     ],
     "description": "John Dawson Winter III (February 23, 1944 – July 16, 2014) was an American singer, guitarist, songwriter, and record producer.  Winter was known for his high-energy blues rock albums, live performances, and slide guitar playing from the late 1960s into the early 2000s.  He also produced three Grammy Award–winning albums for blues singer and guitarist Muddy Waters.",
     "activeFrom": "1964",
-    "influences": [],
+    "influences": [
+      "muddy-waters",
+      "bb-king",
+      "bobby-bland"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -21929,7 +22028,9 @@
     "description": "Anderson Meade \"Lux\" Lewis (September 4, 1905 – June 7, 1964) was an American pianist and composer, remembered for his playing in the boogie-woogie style.  His best-known work, \"Honky Tonk Train Blues\", has been recorded by many artists.",
     "activeFrom": "1927",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "big-maceo-merriweather"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Meade_Lux_Lewis",
@@ -22177,7 +22278,9 @@
     "description": "James Columbus \"Jay\" McShann (January 12, 1916 – December 7, 2006) was an American jazz pianist, vocalist, composer, and bandleader.  He led bands in Kansas City, Missouri, that included Charlie Parker, Bernard Anderson, Walter Brown, and Ben Webster.",
     "activeFrom": "1931",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "jimmy-witherspoon"
+    ],
     "incomplete": false,
     "playedWith": [
       "jimmy-witherspoon"
@@ -24139,7 +24242,9 @@
     ],
     "description": "George \"Harmonica\" Smith (born Allen George Smith, April 22, 1924 – October 2, 1983) was an American electric blues harmonica player.  Apart from his solo recordings, Smith is best known for his work backing both Muddy Waters and Big Mama Thornton.",
     "activeFrom": "1954",
-    "influences": [],
+    "influences": [
+      "little-walter"
+    ],
     "influencedBy": [
       "lucille-hegamin"
     ],
@@ -25294,7 +25399,10 @@
     ],
     "description": "William Clarke (July 21, 1951 – November 2, 1996) was an American blues harmonica player. A leading figure in the West Coast blues scene, Clarke was known for his powerful amplified harmonica playing and his work with the Hollywood Fats Band and as a solo artist.",
     "activeFrom": "1978",
-    "influences": [],
+    "influences": [
+      "george-harmonica-smith",
+      "little-walter"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -27842,7 +27950,10 @@
       "memphis-minnie",
       "big-mama-thornton"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "bonnie-raitt",
+      "shemekia-copeland"
+    ],
     "incomplete": false,
     "playedWith": [
       "willie-dixon",
