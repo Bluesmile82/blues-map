@@ -5,8 +5,16 @@
 [build.environment]
   NODE_VERSION = "20"
   VITE_ENABLE_EDIT_MODE = "false"
-  # VITE_SUPABASE_URL = "your-supabase-url"
-  # VITE_SUPABASE_PUBLISHABLE_KEY = "your-supabase-key"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
 [[redirects]]
   from = "/*"
