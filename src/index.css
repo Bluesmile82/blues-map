@@ -202,6 +202,11 @@ a:hover { color: var(--color-accent3); }
 
 .animate-slide-in { animation: slide-in 0.22s ease; }
 
+@keyframes equalizer {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
 /* ── Touch-Specific Styles ───────────────────────────────────────────── */
 
 /* Disable tap highlight color and add custom feedback */

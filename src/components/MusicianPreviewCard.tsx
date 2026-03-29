@@ -43,7 +43,7 @@ export default function MusicianPreviewCard({ musician, onViewDetails, onClose, 
             {/* Avatar */}
             <div className="relative shrink-0">
               <img
-                src={musician.image}
+                src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=80`}
                 alt={musician.name}
                 className="w-20 h-20 rounded-full object-cover"
                 style={{ filter: 'sepia(8%) contrast(1.05)' }}

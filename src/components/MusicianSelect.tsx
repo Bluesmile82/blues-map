@@ -138,7 +138,7 @@ export default function MusicianSelect({ selected, onChange, musicians, placehol
                   className="w-full flex items-center gap-3 px-3 py-2 rounded hover:bg-bg-hover transition-colors text-left"
                 >
                   <img
-                    src={musician.image}
+                    src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=32`}
                     alt={musician.name}
                     className="w-8 h-8 rounded-full object-cover"
                     onError={(e) => {

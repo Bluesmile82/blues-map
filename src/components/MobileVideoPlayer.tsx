@@ -2,34 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Album } from '../types';
 
-declare global {
-  interface Window {
-    YT: typeof YT;
-    onYouTubeIframeAPIReady: () => void;
-  }
-}
 
-declare namespace YT {
-  class Player {
-    constructor(elementId: string, options: PlayerOptions);
-    playVideo(): void;
-    pauseVideo(): void;
-    stopVideo(): void;
-    loadVideoById(videoId: string);
-    getPlayerState(): number;
-    destroy(): void;
-  }
-  interface PlayerOptions {
-    videoId: string;
-    playerVars?: Record<string, number | string>;
-    events?: {
-      onReady?: (event: { target: Player }) => void;
-      onStateChange?: (event: { data: number }) => void;
-      onError?: (event: { data: number }) => void;
-    };
-  }
-  const PlayerState: { PLAYING: number; PAUSED: number; ENDED: number };
-}
 
 function extractVideoId(url: string | null | undefined): string | null {
   if (!url) return null;

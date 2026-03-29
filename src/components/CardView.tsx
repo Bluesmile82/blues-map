@@ -141,7 +141,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   const [chain, setChain] = useState<{ sourceId: string; direction: Direction; pool: Musician[]; index: number } | null>(null);
 
   const completeMusicians = useMemo(
-    () => musicians.filter(m => m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom),
+    () => musicians.filter(m => m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.activeFrom),
     [musicians],
   );
 

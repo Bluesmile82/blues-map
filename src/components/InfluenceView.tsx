@@ -1031,6 +1031,11 @@ export default function InfluenceView({
       className="relative w-full h-full overflow-hidden bg-bg-elevated select-none"
       style={{ touchAction: 'none' }}
     >
+      {deckVS === null && (
+        <div className="flex items-center justify-center w-full h-full">
+          <div className="w-8 h-8 border-2 border-accent border-t-transparent rounded-full animate-spin" />
+        </div>
+      )}
       {deckVS !== null && (
         <>
           <DeckGL

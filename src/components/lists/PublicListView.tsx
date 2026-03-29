@@ -122,7 +122,7 @@ export default function PublicListView({
               className="w-full flex items-center gap-3 px-4 py-3 border-b border-border-subtle/40 hover:bg-bg-hover transition-colors text-left"
             >
               <img
-                src={musician.image}
+                src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=48`}
                 alt={musician.name}
                 className="w-12 h-12 rounded-lg object-cover bg-bg-elevated"
               />

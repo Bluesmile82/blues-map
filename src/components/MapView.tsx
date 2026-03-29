@@ -260,7 +260,7 @@ function MusicianSidebar({
                   {/* Avatar */}
                   <div className="relative shrink-0">
                     <img
-                      src={musician.image}
+                      src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=40`}
                       alt={musician.name}
                       className="w-11 h-11 rounded-full object-cover"
                       style={{ filter: 'sepia(8%) contrast(1.02)' }}
@@ -341,7 +341,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
   const { t } = useTranslation();
   const completeMusicians = useMemo(() => {
     const valid = musicians.filter((m) =>
-      m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
+      m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.activeFrom
     );
     return styleFilter ? valid.filter((m) => m.bluesStyle === styleFilter) : valid;
   }, [musicians, styleFilter]);

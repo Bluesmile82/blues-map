@@ -46,7 +46,7 @@ interface MusicianPanelProps {
 export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, videoMusician, manualVideoUrl, autoplay, onVideoClose, isMobile, bottomInset = 0, cardMode = false }: MusicianPanelProps) {
   const [panelHeight, setPanelHeight] = useState<PanelHeight>('full');
   const completeMusicians = useMemo(() => musicians.filter((m) =>
-    m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.image && m.activeFrom
+    m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.activeFrom
   ), [musicians]);
   const musicianMap = useMemo(() => Object.fromEntries(completeMusicians.map((m) => [m.id, m])), [completeMusicians]);
 
@@ -211,7 +211,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
             <div className="flex gap-3 items-center">
               <div className="relative shrink-0">
                 <img
-                  src={musician.image}
+                  src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=80`}
                   alt={musician.name}
                   className="w-11 h-11 rounded-full object-cover"
                   style={{ filter: 'sepia(8%) contrast(1.05)' }}
@@ -257,7 +257,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
             {/* Avatar with colored ring */}
             <div className="relative shrink-0 mt-0.5">
               <img
-                src={musician.image}
+                src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=200`}
                 alt={musician.name}
                 className="w-[64px] h-[64px] sm:w-[88px] sm:h-[88px] rounded-full object-cover"
                 style={{ filter: 'sepia(8%) contrast(1.05)' }}
@@ -564,7 +564,7 @@ function MusicianChip({ musician, onClick }: { musician: Musician; onClick: () =
     >
       <div className="relative shrink-0">
         <img
-          src={musician.image}
+          src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=40`}
           alt={musician.name}
           className="w-7.5 h-7.5 rounded-full object-cover"
           onError={(e) => {

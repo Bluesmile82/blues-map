@@ -1,126 +1,136 @@
 import { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import type { Musician } from '../types';
 
-declare namespace YT {
-  class Player {
-    constructor(elementId: string, options: PlayerOptions);
-    playVideo(): void;
-    pauseVideo(): void;
-    stopVideo(): void;
-    loadVideoById(videoId: string): void;
-    destroy(): void;
-    getPlayerState(): number;
-  }
-  interface PlayerOptions {
-    videoId: string;
-    playerVars?: Record<string, number | string>;
-    events?: {
-      onReady?: (e: { target: Player }) => void;
-      onStateChange?: (e: { data: number }) => void;
-      onError?: (e: { data: number }) => void;
-    };
-  }
-  const PlayerState: { PLAYING: number; PAUSED: number; ENDED: number };
-}
+
 
 function extractVideoId(url: string | null | undefined): string | null {
   if (!url) return null;
-  const m = url.match(/[?&]v=([^&#]+)/) || url.match(/youtu\.be\/([^?&#]+)/);
-  return m ? m[1] : null;
+  const match = url.match(/[?&]v=([^&#]+)/) || url.match(/youtu\.be\/([^?&#]+)/);
+  return match ? match[1] : null;
 }
 
-interface VideoEntry { label: string; videoId: string; }
+interface VideoEntry {
+  label: string;
+  videoId: string;
+}
 
 interface MiniPlayerProps {
   musician: Musician;
   isPlaying: boolean;
   onPlayingChange: (playing: boolean) => void;
-  /** When set, loads and plays this specific video ID */
-  loadVideoId?: string | null;
-  onLoadVideoConsumed?: () => void;
+  loadVideoId: string | null;
+  onLoadVideoConsumed: () => void;
 }
 
-const PLAYER_ID = 'mini-player-iframe';
+const PLAYER_DIV_ID = 'mini-player-container';
 
-export default function MiniPlayer({ musician, isPlaying, onPlayingChange, loadVideoId, onLoadVideoConsumed }: MiniPlayerProps) {
+export default function MiniPlayer({
+  musician,
+  isPlaying,
+  onPlayingChange,
+  loadVideoId,
+  onLoadVideoConsumed,
+}: MiniPlayerProps) {
+  const [apiReady, setApiReady] = useState(false);
   const playerRef = useRef<YT.Player | null>(null);
   const playerReadyRef = useRef(false);
-  const [apiReady, setApiReady] = useState(!!((window as any).YT?.Player));
-  const [currentIndex, setCurrentIndex] = useState(0);
   const isPlayingRef = useRef(isPlaying);
-  const currentIndexRef = useRef(0);
   const pendingVideoIdRef = useRef<string | null>(null);
+  const musicianIdRef = useRef<string>(musician.id);
+  const videosRef = useRef<VideoEntry[]>([]);
+  const currentIndexRef = useRef(0);
+  const changingTrackRef = useRef(false);
+  const onPlayingChangeRef = useRef(onPlayingChange);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const buildVideos = (m: Musician): VideoEntry[] => {
-    const list: VideoEntry[] = [];
-    const mainId = extractVideoId(m.youtubeLink);
-    if (mainId) list.push({ label: m.name, videoId: mainId });
-    for (const album of m.albums) {
+  isPlayingRef.current = isPlaying;
+  onPlayingChangeRef.current = onPlayingChange;
+
+  const buildVideos = (): VideoEntry[] => {
+    const result: VideoEntry[] = [];
+    for (const album of musician.albums) {
       const id = extractVideoId(album.youtubeLink);
-      if (id) list.push({ label: album.name, videoId: id });
+      if (id) result.push({ label: album.name, videoId: id });
     }
-    return list;
+    const mainId = extractVideoId(musician.youtubeLink);
+    if (mainId && !result.some(v => v.videoId === mainId)) {
+      result.unshift({ label: musician.name, videoId: mainId });
+    }
+    return result;
   };
 
-  const videosRef = useRef<VideoEntry[]>(buildVideos(musician));
+  videosRef.current = buildVideos();
 
-  // Keep isPlayingRef fresh
-  useEffect(() => { isPlayingRef.current = isPlaying; }, [isPlaying]);
-
-  // Load YouTube IFrame API once
   useEffect(() => {
-    if ((window as any).YT?.Player) { setApiReady(true); return; }
-    if (!(window as any).onYouTubeIframeAPIReady) {
-      const tag = document.createElement('script');
-      tag.src = 'https://www.youtube.com/iframe_api';
-      document.head.appendChild(tag);
-    }
-    const prev = (window as any).onYouTubeIframeAPIReady;
-    (window as any).onYouTubeIframeAPIReady = () => {
-      prev?.();
+    if (window.YT) {
       setApiReady(true);
+      return;
+    }
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag);
+    window.onYouTubeIframeAPIReady = () => setApiReady(true);
+    return () => {
+      window.onYouTubeIframeAPIReady = () => {};
     };
   }, []);
 
-  // Init player once when API is ready
   useEffect(() => {
     if (!apiReady) return;
+    if (playerRef.current) return;
 
-    playerReadyRef.current = false;
+    const videos = videosRef.current;
+    const initialVideoId = videos.length > 0 ? videos[0].videoId : '';
 
-    playerRef.current = new YT.Player(PLAYER_ID, {
-      videoId: '',
+    playerRef.current = new YT.Player(PLAYER_DIV_ID, {
+      videoId: initialVideoId,
       playerVars: {
         autoplay: 0,
         playsinline: 1,
         rel: 0,
+        modestbranding: 1,
         controls: 0,
-        enablejsapi: 1,
       },
       events: {
         onReady: () => {
           playerReadyRef.current = true;
           if (pendingVideoIdRef.current) {
-            playerRef.current?.loadVideoById(pendingVideoIdRef.current);
+            const vid = pendingVideoIdRef.current;
             pendingVideoIdRef.current = null;
+            if (isPlayingRef.current) {
+              playerRef.current?.loadVideoById(vid);
+            } else {
+              playerRef.current?.cueVideoById(vid);
+            }
+          } else if (isPlayingRef.current && initialVideoId) {
+            playerRef.current?.playVideo();
           }
         },
-        onStateChange: (e) => {
-          if (e.data === YT.PlayerState.ENDED) {
-            const next = currentIndexRef.current + 1;
-            if (next < videosRef.current.length) {
-              navigateTo(next);
-            } else {
-              onPlayingChange(false);
+        onStateChange: (event: { data: number }) => {
+          if (event.data === YT.PlayerState.PLAYING) {
+            changingTrackRef.current = false;
+            onPlayingChangeRef.current(true);
+          } else if (
+            event.data === YT.PlayerState.PAUSED ||
+            event.data === YT.PlayerState.ENDED
+          ) {
+            if (!changingTrackRef.current) {
+              onPlayingChangeRef.current(false);
             }
           }
         },
-        onError: () => {
-          const next = currentIndexRef.current + 1;
-          if (next < videosRef.current.length) navigateTo(next);
-          else onPlayingChange(false);
+        onError: (event: { data: number }) => {
+          console.error('MiniPlayer YT error:', event.data);
+          const nextIndex = currentIndexRef.current + 1;
+          const videos = videosRef.current;
+          if (nextIndex < videos.length) {
+            currentIndexRef.current = nextIndex;
+            setCurrentIndex(nextIndex);
+            playerRef.current?.loadVideoById(videos[nextIndex].videoId);
+          }
         },
       },
     });
@@ -132,83 +142,78 @@ export default function MiniPlayer({ musician, isPlaying, onPlayingChange, loadV
         playerReadyRef.current = false;
       }
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [apiReady]);
 
-  // When musician changes, load new video into existing player
   useEffect(() => {
-    if (!apiReady) return;
+    if (!playerReadyRef.current || !playerRef.current) return;
+    if (changingTrackRef.current) return;
+    if (isPlaying) {
+      playerRef.current.playVideo();
+    } else {
+      playerRef.current.pauseVideo();
+    }
+  }, [isPlaying]);
 
-    const videos = buildVideos(musician);
-    videosRef.current = videos;
+  useEffect(() => {
+    const videos = videosRef.current;
+    if (videos.length === 0) return;
+
+    const newVideoId = videos[0].videoId;
     currentIndexRef.current = 0;
     setCurrentIndex(0);
 
-    if (videos.length === 0) return;
-
-    const videoId = videos[0].videoId;
-
-    if (playerReadyRef.current && playerRef.current) {
-      try {
-        playerRef.current.loadVideoById(videoId);
-        if (!isPlayingRef.current) {
-          playerRef.current.pauseVideo();
-        }
-      } catch { /* player not ready yet */ }
-    } else {
-      pendingVideoIdRef.current = videoId;
+    if (!playerReadyRef.current || !playerRef.current) {
+      pendingVideoIdRef.current = newVideoId;
+      return;
     }
-  }, [apiReady, musician.id]);
 
-  // Play / pause when isPlaying prop changes
-  useEffect(() => {
-    if (!playerRef.current || !playerReadyRef.current) return;
-    try {
-      if (isPlaying) playerRef.current.playVideo();
-      else playerRef.current.pauseVideo();
-    } catch { /* player not ready yet */ }
-  }, [isPlaying]);
+    if (isPlayingRef.current) {
+      changingTrackRef.current = true;
+      playerRef.current.loadVideoById(newVideoId);
+    } else {
+      playerRef.current.cueVideoById(newVideoId);
+    }
+    musicianIdRef.current = musician.id;
+  }, [musician.id]);
 
-  // Load a specific video when requested (from MusicianPanel buttons)
   useEffect(() => {
-    if (!loadVideoId || !playerRef.current || !playerReadyRef.current) return;
+    if (!loadVideoId) return;
+    if (!playerReadyRef.current || !playerRef.current) {
+      pendingVideoIdRef.current = loadVideoId;
+      onLoadVideoConsumed();
+      return;
+    }
+
     const videos = videosRef.current;
-    const idx = videos.findIndex(v => v.videoId === loadVideoId);
+    const idx = videos.findIndex((v) => v.videoId === loadVideoId);
     if (idx >= 0) {
       currentIndexRef.current = idx;
       setCurrentIndex(idx);
     }
-    try {
-      playerRef.current.loadVideoById(loadVideoId);
-    } catch { /* player not ready */ }
-    onPlayingChange(true);
-    onLoadVideoConsumed?.();
-  }, [loadVideoId, onPlayingChange, onLoadVideoConsumed]);
+
+    changingTrackRef.current = true;
+    playerRef.current.loadVideoById(loadVideoId);
+    onLoadVideoConsumed();
+  }, [loadVideoId, onLoadVideoConsumed]);
 
   const navigateTo = (idx: number) => {
     const videos = videosRef.current;
     if (idx < 0 || idx >= videos.length || !playerRef.current) return;
     currentIndexRef.current = idx;
     setCurrentIndex(idx);
-    playerRef.current.stopVideo();
+    changingTrackRef.current = true;
     playerRef.current.loadVideoById(videos[idx].videoId);
   };
 
   const videos = videosRef.current;
-  const currentLabel = videos[currentIndex]?.label ?? musician.name;
+  const currentLabel = videos[currentIndex]?.label ?? '';
   const hasMultiple = videos.length > 1;
 
   return (
     <>
-      {/* Hidden iframe container — must stay in DOM */}
-      <div
-        aria-hidden
-        style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', opacity: 0, pointerEvents: 'none', zIndex: -1 }}
-      >
-        <div id={PLAYER_ID} />
+      <div className="pointer-events-none">
+        <div id={PLAYER_DIV_ID} className="w-0 h-0 overflow-hidden" />
       </div>
-
-      {/* Now-playing bar */}
       <AnimatePresence>
         {isPlaying && videos.length > 0 && (
           <motion.div
@@ -217,27 +222,38 @@ export default function MiniPlayer({ musician, isPlaying, onPlayingChange, loadV
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-0 left-0 right-0 z-40 flex items-center gap-1 px-12 py-1.5 bg-bg/90 backdrop-blur-sm border-b border-border-subtle"
+            className="absolute top-3 left-16 right-16 z-40 flex justify-center pointer-events-auto"
           >
-            {hasMultiple && (
-              <button
-                onClick={() => navigateTo(currentIndex - 1)}
-                disabled={currentIndex === 0}
-                className="p-1 text-ink3 disabled:opacity-30 shrink-0 active:scale-90 transition-transform"
-              >
-                <ChevronLeft size={14} />
-              </button>
-            )}
-            <span className="text-[11px] text-ink font-medium truncate flex-1 text-center">{currentLabel}</span>
-            {hasMultiple && (
-              <button
-                onClick={() => navigateTo(currentIndex + 1)}
-                disabled={currentIndex === videos.length - 1}
-                className="p-1 text-ink3 disabled:opacity-30 shrink-0 active:scale-90 transition-transform"
-              >
-                <ChevronRight size={14} />
-              </button>
-            )}
+            <div className="bg-bg/80 backdrop-blur-lg border border-border-subtle rounded-full px-2 py-1 shadow-md flex items-center gap-1">
+              {hasMultiple && (
+                <button
+                  onClick={() => navigateTo(currentIndex - 1)}
+                  disabled={currentIndex === 0}
+                  className="p-0.5 text-ink3 disabled:opacity-30 shrink-0 active:scale-90 transition-transform"
+                >
+                  <ChevronLeft size={14} />
+                </button>
+              )}
+              <div className="flex items-center gap-1.5 min-w-0 shrink">
+                <div className="flex gap-[2px] shrink-0 items-end h-3">
+                  <span className="w-[2px] h-3 bg-accent rounded-full origin-bottom animate-[equalizer_0.6s_ease-in-out_infinite_0ms]" />
+                  <span className="w-[2px] h-3 bg-accent rounded-full origin-bottom animate-[equalizer_0.6s_ease-in-out_infinite_200ms]" />
+                  <span className="w-[2px] h-3 bg-accent rounded-full origin-bottom animate-[equalizer_0.6s_ease-in-out_infinite_400ms]" />
+                </div>
+                {currentLabel && (
+                  <span className="text-[11px] text-ink/80 truncate font-medium whitespace-nowrap">{currentLabel}</span>
+                )}
+              </div>
+              {hasMultiple && (
+                <button
+                  onClick={() => navigateTo(currentIndex + 1)}
+                  disabled={currentIndex >= videos.length - 1}
+                  className="p-0.5 text-ink3 disabled:opacity-30 shrink-0 active:scale-90 transition-transform"
+                >
+                  <ChevronRight size={14} />
+                </button>
+              )}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

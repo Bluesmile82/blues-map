@@ -9,9 +9,9 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "/blues-icon.svg",
+      "src": "/blues-icon.ico",
       "sizes": "any",
-      "type": "image/svg+xml",
+      "type": "image/ico",
       "purpose": "any maskable"
     }
   ]
