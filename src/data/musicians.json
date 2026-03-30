@@ -1448,7 +1448,9 @@
       "charley-patton",
       "fred-mcdowell"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "buddy-guy"
+    ],
     "incomplete": false,
     "secondaryStyles": [
       "Delta Blues"
@@ -2084,7 +2086,9 @@
     "influences": [
       "t-bone-walker"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "bb-king"
+    ],
     "incomplete": false,
     "secondaryStyles": [
       "Electric Blues"
@@ -2642,7 +2646,9 @@
       "muddy-waters",
       "lightnin-hopkins"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "the-fabulous-thunderbirds"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Slim_Harpo",
@@ -3248,7 +3254,14 @@
     ],
     "description": "R.  L.  Burnside (November 23, 1926 – September 1, 2005) was an American hill country blues singer, songwriter, and guitarist.",
     "activeFrom": "1960",
-    "influences": [],
+    "influences": [
+      "mississippi-fred-mcdowell",
+      "muddy-waters",
+      "lightnin-hopkins",
+      "john-lee-hooker",
+      "howlin-wolf",
+      "elmore-james"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "secondaryStyles": [
@@ -3466,8 +3479,12 @@
     ],
     "description": "James \"Kokomo\" Arnold (February 15, 1896 or 1901 – November 8, 1968) was an American blues musician.  A left-handed slide guitarist, his intense style of playing and rapid-fire vocal delivery set him apart from his contemporaries.  He got his nickname in 1934 after releasing \"Old Original Kokomo Blues\" for Decca Records, a cover version of Scrapper Blackwell's blues song about the city of Kokomo, Indiana.",
     "activeFrom": "1938",
-    "influences": [],
-    "influencedBy": [],
+    "influences": [
+      "scrapper-blackwell"
+    ],
+    "influencedBy": [
+      "robert-johnson"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Kokomo_Arnold",
@@ -3919,7 +3936,11 @@
     "description": "Lucille Bogan (née Anderson; April 1, 1897 – August 10, 1948) was an American classic female blues singer and songwriter, among the first to be recorded.  She also recorded under the pseudonym Bessie Jackson.  Music critic Ernest Borneman noted that Bogan was one of \"the big three of the blues\", along with Ma Rainey and Bessie Smith.",
     "activeFrom": "1926",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "tampa-red",
+      "blind-blake",
+      "josh-white"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lucille_Bogan",
@@ -4419,7 +4440,12 @@
     "description": "Elizabeth \"Libba\" Cotten (née Nevills; January 5, 1893 – June 29, 1987) was an influential American folk and blues musician.  She was a self-taught left-handed guitarist who played a guitar strung for a right-handed player, but played it upside down.  This position meant that she played the bass lines with her fingers and the melody with her thumb.",
     "activeFrom": "1930",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "mississippi-john-hurt",
+      "john-lee-hooker",
+      "muddy-waters",
+      "taj-mahal"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
@@ -4542,7 +4568,9 @@
     ],
     "description": "Ida M.  Cox (née Prather; February 26, 1888 or 1896 – November 10, 1967) was an American singer and vaudeville performer, best known for her blues performances and recordings.  She was billed as \"The Uncrowned Queen of the Blues\".",
     "activeFrom": "1920",
-    "influences": [],
+    "influences": [
+      "ma-rainey"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -4670,7 +4698,11 @@
     ],
     "description": "Gary D.  Davis (April 30, 1896 – May 5, 1972), known as Reverend Gary Davis and Blind Gary Davis, was a blues and gospel singer who was also proficient on the banjo, guitar and harmonica.  Born in Laurens, South Carolina, and blind since infancy, Davis first performed professionally in the Piedmont blues scene of Durham, North Carolina, in the 1930s, then converted to Christianity and became a minister.",
     "activeFrom": "1935",
-    "influences": [],
+    "influences": [
+      "blind-blake",
+      "lonnie-johnson",
+      "blind-willie-johnson"
+    ],
     "influencedBy": [
       "roy-book-binder",
       "jimmy-mccracklin"
@@ -5686,7 +5718,9 @@
     ],
     "description": "William Henry \"Papa Charlie\" Jackson (November 10, 1887 – May 7, 1938) was an early African American bluesman and songster who accompanied himself with a banjo guitar, a guitar, or a ukulele.  His recording career began in 1924.   Much of his life remains a mystery, but his draft card lists his birthplace as New Orleans, Louisiana, and his death certificate states that he died in Chicago, Illinois, on May 7, 1938.",
     "activeFrom": "1924",
-    "influences": [],
+    "influences": [
+      "blind-blake"
+    ],
     "influencedBy": [
       "robert-nighthawk",
       "big-bill-broonzy"
@@ -6917,8 +6951,14 @@
     ],
     "description": "Eugene \"Buddy\" Moss (January 16, 1914 – October 19, 1984) was an American blues musician.  He is one of two influential Piedmont blues guitarists to record in the period between Blind Blake's final sessions in 1932 and Blind Boy Fuller's debut in 1935 (the other being Josh White).  A younger contemporary of Blind Willie McTell, Curley Weaver and Barbecue Bob, Moss was part of a coterie of Atlanta bluesmen.",
     "activeFrom": "1930",
-    "influences": [],
-    "influencedBy": [],
+    "influences": [
+      "blind-blake",
+      "barbecue-bob"
+    ],
+    "influencedBy": [
+      "blind-willie-mctell",
+      "josh-white"
+    ],
     "incomplete": false,
     "playedWith": [
       "barbecue-bob",
@@ -7210,7 +7250,9 @@
     "description": "James Andrew Rushing (August 26, 1901 – June 8, 1972) was an American singer and pianist from Oklahoma City, Oklahoma, U. S. , best known as the featured vocalist of Count Basie's Orchestra from 1935 to 1948.",
     "activeFrom": "1929",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "wynonie-harris"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Rushing",
@@ -7585,8 +7627,13 @@
     ],
     "description": "Victoria Regina Spivey (October 15, 1906 – October 3, 1976), sometimes known as Queen Victoria, was an American blues singer, songwriter, and record company founder.  During a recording career that spanned 40 years, from 1926 to the mid-1960s, she worked with  Louis Armstrong, King Oliver, Clarence Williams, Luis Russell, Lonnie Johnson, and Bob Dylan.  She also performed in vaudeville and clubs, sometimes with her sisters Addie \"Sweet Peas\" (or \"Sweet Pease\") Spivey and Elton Island Spivey (also known as the Za Zu Girl).",
     "activeFrom": "1926",
-    "influences": [],
-    "influencedBy": [],
+    "influences": [
+      "blind-lemon-jefferson"
+    ],
+    "influencedBy": [
+      "lonnie-johnson",
+      "sippie-wallace"
+    ],
     "incomplete": false,
     "playedWith": [
       "lonnie-johnson",
@@ -7738,7 +7785,10 @@
     "influences": [
       "muddy-waters"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "muddy-waters",
+      "elmore-james"
+    ],
     "incomplete": false,
     "playedWith": [
       "georgia-tom-dorsey",
@@ -7930,7 +7980,9 @@
     ],
     "description": "Bessie Tucker was a powerful Texas blues singer known for her deep voice and songs reflecting the harsh realities of life, particularly prison life. Her 1928 and 1929 recordings, including 'Penitentiary', are considered classics of the genre, though she died young and remains an enigmatic figure.",
     "activeFrom": "1928",
-    "influences": [],
+    "influences": [
+      "victoria-spivey"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -8065,7 +8117,10 @@
     "description": "Sippie Wallace (born Beulah Belle Thomas; November 1, 1898 – November 1, 1986) was an American blues singer, pianist and songwriter.  Her early career in tent shows gained her the billing \"The Texas Nightingale\".  Between 1923 and 1927, she recorded over 40 songs for Okeh Records, many written by her or her brothers, George and Hersal Thomas.",
     "activeFrom": "1923",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "bonnie-raitt",
+      "victoria-spivey"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sippie_Wallace",
@@ -8337,7 +8392,10 @@
     "description": "William Bunch (December 21, 1902 – December 21, 1941), known as Peetie Wheatstraw, was an American musician, an influential figure among 1930s blues singers.",
     "activeFrom": "1930",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "robert-johnson",
+      "champion-jack-dupree"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Peetie_Wheatstraw",
@@ -8410,7 +8468,10 @@
     ],
     "description": "Joshua Daniel White (February 11, 1914 – September 5, 1969) was an American singer, guitarist, songwriter, actor and civil rights activist.  He also recorded under the names Pinewood Tom and Tippy Barton in the 1930s. \nWhite grew up in the South during the 1920s and 1930s.",
     "activeFrom": "1928",
-    "influences": [],
+    "influences": [
+      "blind-blake",
+      "blind-willie-johnson"
+    ],
     "influencedBy": [
       "terry-garland"
     ],
@@ -8863,7 +8924,10 @@
     "description": "Etta Baker (March 31, 1913 – September 23, 2006) was an American Piedmont blues guitarist and singer from North Carolina.",
     "activeFrom": "1933",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "taj-mahal",
+      "kenny-wayne-shepherd"
+    ],
     "incomplete": false,
     "playedWith": [
       "blind-blake"
@@ -8958,7 +9022,10 @@
     ],
     "description": "Lou Ann Barton (born February 17, 1954) is an American blues singer based in Austin, Texas since the 1970s.  AllMusic noted that \"The grace, poise, and confidence she projects on-stage is part of a long tradition for women blues singers\".",
     "activeFrom": "1970",
-    "influences": [],
+    "influences": [
+      "jimmy-reed",
+      "slim-harpo"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -9004,7 +9071,11 @@
     "albums": [],
     "description": "Johnnie Alexander Bassett (October 9, 1935 – August 4, 2012) was a Detroit-based American electric blues guitarist, singer, and songwriter.  Working for decades primarily as a session musician, by the 1990s Bassett had his own backing band.  He released seven albums in his lifetime.",
     "activeFrom": "1965",
-    "influences": [],
+    "influences": [
+      "albert-king",
+      "bb-king",
+      "t-bone-walker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -9645,8 +9716,15 @@
     ],
     "description": "Lonnie Brooks (born Lee Baker Jr. , December 18, 1933 – April 1, 2017) was an American blues singer and guitarist.  The musicologist Robert Palmer, writing in Rolling Stone, stated, \"His music is witty, soulful and ferociously energetic, brimming with novel harmonic turnarounds, committed vocals and simply astonishing guitar work.",
     "activeFrom": "1953",
-    "influences": [],
-    "influencedBy": [],
+    "influences": [
+      "clarence-gatemouth-brown",
+      "t-bone-walker",
+      "bb-king"
+    ],
+    "influencedBy": [
+      "the-fabulous-thunderbirds",
+      "eric-clapton"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lonnie_Brooks",
@@ -9719,7 +9797,9 @@
     "description": "Leroy \"Roy\" Buchanan (September 23, 1939 – August 14, 1988) was an American guitarist and blues rock musician.  A pioneer of the \"Telecaster sound\", Buchanan worked as a sideman and as a solo artist, with two gold albums early in his career and two later solo albums that made it to the Billboard chart.  He never achieved stardom, but is considered a highly influential guitar player.",
     "activeFrom": "1958",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "jeff-beck"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Roy_Buchanan",
@@ -10735,7 +10815,9 @@
     "albums": [],
     "description": "William Thomas \"Champion Jack\" Dupree (July 23, 1909 or July 4, 1910 – January 21, 1992) was an American blues and boogie-woogie pianist and singer.  His nickname was derived from his early career as a boxer.",
     "activeFrom": "1930",
-    "influences": [],
+    "influences": [
+      "tampa-red"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -12068,7 +12150,10 @@
     ],
     "description": "Wynonie Harris (August 24, 1915 – June 14, 1969) was an American blues shouter best remembered as a singer of upbeat songs, featuring humorous, often ribald lyrics.  He had fifteen Top 10 hits between 1946 and 1952.  Harris is attributed by many music scholars to be one of the founding fathers of rock and roll.",
     "activeFrom": "1935",
-    "influences": [],
+    "influences": [
+      "jimmy-rushing",
+      "big-joe-turner"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -12626,7 +12711,9 @@
     ],
     "description": "Earl Zebedee Hooker (January 15, 1930 – April 21, 1970) was a Chicago blues guitarist known for his slide guitar playing.  Considered a \"musician's musician\", he performed with blues artists such as Sonny Boy Williamson II, Junior Wells, and John Lee Hooker and fronted his own bands.  An early player of the electric guitar, Hooker was influenced by the modern urban styles of T-Bone Walker and Robert Nighthawk.",
     "activeFrom": "1952",
-    "influences": [],
+    "influences": [
+      "t-bone-walker"
+    ],
     "influencedBy": [
       "junior-watson",
       "maxwell-street-jimmy-davis"
@@ -13173,7 +13260,9 @@
     ],
     "description": "Floyd Jones (July 21, 1917 – December 19, 1989) was an American blues singer, guitarist and songwriter.  He was one of the first of the new generation of electric blues artists to record in Chicago after World War II, and a number of his recordings are regarded as classics of the Chicago blues idiom.",
     "activeFrom": "1948",
-    "influences": [],
+    "influences": [
+      "howlin-wolf"
+    ],
     "influencedBy": [
       "johnny-b-moore"
     ],
@@ -13597,8 +13686,15 @@
     ],
     "description": "Earl Silas Johnson IV (February 7, 1934 – April 17, 2003), known as Earl King, was an American singer, guitarist, and songwriter, most active in blues music.  A composer of blues standards such as \"Come On\" (covered by Jimi Hendrix, Freddie King, Stevie Ray Vaughan) and \"Big Chief\" (recorded by Professor Longhair), he was an important figure in New Orleans R&B.",
     "activeFrom": "1953",
-    "influences": [],
-    "influencedBy": [],
+    "influences": [
+      "guitar-slim"
+    ],
+    "influencedBy": [
+      "freddie-king",
+      "stevie-ray-vaughan",
+      "anson-funderburgh",
+      "professor-longhair"
+    ],
     "incomplete": false,
     "playedWith": [
       "guitar-slim",
@@ -13896,8 +13992,14 @@
     ],
     "description": "Leslie Johnson (June 20, 1933 – August 22, 2018), known as Lazy Lester, was an American blues musician who sang and played the harmonica and guitar.  In a career spanning the 1950s to 2018, he pioneered swamp blues, and also played harmonica blues, rhythm and blues and Louisiana blues. \nBest known for regional hits recorded with Ernie Young's Nashville-based Excello Records, Lester also contributed to songs recorded by other Excello artists, including Slim Harpo, Lightnin' Slim, and Katie Webster.",
     "activeFrom": "1967",
-    "influences": [],
-    "influencedBy": [],
+    "influences": [
+      "lightnin-slim"
+    ],
+    "influencedBy": [
+      "anson-funderburgh",
+      "the-fabulous-thunderbirds",
+      "buddy-guy"
+    ],
     "incomplete": false,
     "playedWith": [
       "slim-harpo",
@@ -14177,7 +14279,9 @@
     "description": "Otis Verries Hicks (March 13, 1913 – July 27, 1974), known as Lightnin' Slim, was an American blues musician who played Louisiana blues and swamp blues for Excello Records.",
     "activeFrom": "1940",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "lazy-lester"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lightnin'_Slim",
@@ -14935,7 +15039,7 @@
   {
     "id": "johnny-mars",
     "name": "Johnny Mars",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Johnny_Matos_-_Cantor_-_Youtuber_e_Int%C3%A9prete_de_Bruno_Mars_no_Brasil.jpg/500px-Johnny_Matos_-_Cantor_-_Youtuber_e_Int%C3%A9prete_de_Bruno_Mars_no_Brasil.jpg",
+    "image": "https://images.squarespace-cdn.com/content/v1/65d75f324651d708c169f161/1715333578259-A2ULQLOYMMHOI3M7VCMF/johnny+at+Sidmouth.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Johnny_Matos_-_Cantor_-_Youtuber_e_Int%C3%A9prete_de_Bruno_Mars_no_Brasil.jpg/500px-Johnny_Matos_-_Cantor_-_Youtuber_e_Int%C3%A9prete_de_Bruno_Mars_no_Brasil.jpg",
     "birthDate": "1942-12-07",
     "birthPlace": "Laurens, South Carolina",
@@ -14956,7 +15060,7 @@
         "youtubeLink": "https://www.youtube.com/watch?v=FV40p5ya-uY"
       }
     ],
-    "description": "Johnny Mars (born December 7, 1942) is an American electric blues harmonica player, singer, and songwriter.  Over a long career, he has worked with Magic Sam, Earl Hooker, B. B.",
+    "description": "Johnny Mars (born December 7, 1942) is an American electric blues harmonica player, singer, and songwriter.  Over a long career, he has worked with Magic Sam, Earl Hooker, B. B. King",
     "activeFrom": "1962",
     "influences": [],
     "influencedBy": [],
@@ -16338,7 +16442,9 @@
     ],
     "description": "James Edward \"Snooky\" Pryor (September 15, 1919 or 1921 – October 18, 2006) was an American Chicago blues harmonica player.   He claimed to have pioneered the now-common method of playing amplified harmonica by cupping a small microphone in his hands along with the harmonica, although on his earliest records, in the late 1940s, he did not use this method.  In 2023, he was inducted in the Blues Hall of Fame.",
     "activeFrom": "1945",
-    "influences": [],
+    "influences": [
+      "sonny-boy-williamson-i"
+    ],
     "influencedBy": [
       "little-hatch"
     ],
@@ -17129,7 +17235,10 @@
     "albums": [],
     "description": "Eddie Shaw (March 20, 1937 – January 29, 2018) was an American Chicago blues tenor saxophonist, arranger and bandleader.   He led Howlin' Wolf's band, the Wolf Gang, from 1972, both before Wolf's death in 1976 and subsequently.",
     "activeFrom": "1967",
-    "influences": [],
+    "influences": [
+      "muddy-waters",
+      "howlin-wolf"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -17238,7 +17347,9 @@
     ],
     "description": "John Ned Shines (April 25, 1915 – April 20, 1992) was an American blues singer and guitarist.",
     "activeFrom": "1932",
-    "influences": [],
+    "influences": [
+      "robert-johnson"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -19196,7 +19307,9 @@
     ],
     "description": "James Witherspoon (August 8, 1920 – September 18, 1997) was an American jump blues and jazz singer.",
     "activeFrom": "1949",
-    "influences": [],
+    "influences": [
+      "jay-mcshann"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -19482,7 +19595,10 @@
     ],
     "description": "Tab Benoit (born November 17, 1967) is an American blues guitarist, musician, and singer.  His playing combines a number of blues styles, primarily Delta blues. \nHe plays a stock 1972 Fender Telecaster Thinline electric guitar and writes his own musical compositions.",
     "activeFrom": "1987",
-    "influences": [],
+    "influences": [
+      "tabby-thomas",
+      "henry-gray"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -19887,7 +20003,10 @@
     ],
     "description": "Tinsley Ellis (born June 4, 1957) is an American blues and rock musician, who was born in Atlanta, Georgia, United States, and grew up in South Florida.   According to Billboard, \"nobody has released more consistently excellent blues albums than Atlanta's Tinsley Ellis.  He sings like a man possessed and wields a mean lead guitar.",
     "activeFrom": "1975",
-    "influences": [],
+    "influences": [
+      "freddie-king",
+      "bb-king"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -20005,7 +20124,9 @@
     "albums": [],
     "description": "Anson Funderburgh (born James Anson Funderburgh; November 14, 1954) is an American blues guitar player and bandleader of Anson Funderburgh and the Rockets since 1978.  The band's style incorporates both Chicago blues and Texas blues.",
     "activeFrom": "1978",
-    "influences": [],
+    "influences": [
+      "lazy-lester"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -20316,7 +20437,9 @@
     ],
     "description": "Colin James  (born Colin James Munn; August 17, 1964) is a Canadian blues rock singer and songwriter.  James has been very successful in Canada, having attained seven Gold-certified albums in Canada during his career, including four Platinum albums and two Double Platinum albums.",
     "activeFrom": "1986",
-    "influences": [],
+    "influences": [
+      "stevie-ray-vaughan"
+    ],
     "influencedBy": [
       "j-b-hutto",
       "etta-james",
@@ -20554,7 +20677,11 @@
     "albums": [],
     "description": "Larry McCray (born April 5, 1960), is an American blues guitarist and singer from Magnolia, Arkansas.",
     "activeFrom": "1980",
-    "influences": [],
+    "influences": [
+      "albert-king",
+      "bb-king",
+      "freddie-king"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -20893,7 +21020,9 @@
     ],
     "description": "Michael John \"Duke\" Robillard (born October 4, 1948) is an American guitarist and singer.  He founded the band Roomful of Blues and was a member of the Fabulous Thunderbirds.  Although he is known as a rock and blues guitarist, he also plays jazz and swing.",
     "activeFrom": "1967",
-    "influences": [],
+    "influences": [
+      "t-bone-walker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -20970,7 +21099,13 @@
     "albums": [],
     "description": "Kenny Wayne Shepherd (born Kenneth Wayne Brobst; June 12, 1977) is an American guitarist.  He has released several studio albums and experienced significant commercial success as a blues rock artist.",
     "activeFrom": "1990",
-    "influences": [],
+    "influences": [
+      "stevie-ray-vaughan",
+      "bb-king",
+      "clarence-gatemouth-brown",
+      "pinetop-perkins",
+      "etta-baker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -21070,7 +21205,11 @@
     "albums": [],
     "description": "Angela Strehli (born November 22, 1945) is an American electric blues singer and songwriter.  She is also a Texas blues historian and impresario.  Despite a sporadic recording career, Strehli spends time each year performing in Europe, the US and Canada.",
     "activeFrom": "1965",
-    "influences": [],
+    "influences": [
+      "buddy-guy",
+      "howlin-wolf",
+      "muddy-waters"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -21306,7 +21445,12 @@
     ],
     "description": "Louis Joseph Walker Jr.  (December 25, 1949 – April 30, 2025), known as Joe Louis Walker, was an American musician, best known as an electric blues guitarist, singer, songwriter and producer.  His knowledge of blues history is revealed by his use of older material and playing styles.",
     "activeFrom": "1964",
-    "influences": [],
+    "influences": [
+      "t-bone-walker",
+      "bb-king",
+      "meade-lux-lewis",
+      "amos-milburn"
+    ],
     "influencedBy": [
       "clarence-garlow",
       "pete-mayes"
@@ -23100,7 +23244,10 @@
     ],
     "description": "Clarence \"Gatemouth\" Brown (April 18, 1924 – September 10, 2005) was an American singer and multi-instrumentalist from Louisiana.  He was best-known as a blues performer, but his music was often eclectic and also touched on genres including country, jazz and rock and roll.  Brown won a Grammy Award for Best Traditional Blues Album in 1983 for his album, Alright Again!",
     "activeFrom": "1947",
-    "influences": [],
+    "influences": [
+      "louis-jordan",
+      "t-bone-walker"
+    ],
     "influencedBy": [
       "pete-mayes"
     ],
@@ -23669,7 +23816,9 @@
     ],
     "description": "Henry Gray (January 19, 1925 – February 17, 2020) was an American Louisiana blues pianist and singer. He is best known for his work with Howlin' Wolf in the 1950s and for his long career playing swamp blues in Louisiana.",
     "activeFrom": "1940",
-    "influences": [],
+    "influences": [
+      "big-maceo-merriweather"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -23729,7 +23878,9 @@
     ],
     "description": "Peter Green (born Peter Allen Greenbaum, October 29, 1946) is an English blues rock singer-songwriter and guitarist. He founded Fleetwood Mac and is known for his distinctive guitar playing and songs like 'Black Magic Woman' and 'Albatross'.",
     "activeFrom": "1966",
-    "influences": [],
+    "influences": [
+      "eric-clapton"
+    ],
     "influencedBy": [
       "lonesome-sundown"
     ],
@@ -26118,7 +26269,9 @@
     ],
     "description": "Chris Thomas King (born Durwood Christopher Thomas, October 14, 1962) is an American blues musician and actor based in New Orleans, Louisiana.",
     "activeFrom": "1984",
-    "influences": [],
+    "influences": [
+      "tabby-thomas"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -27098,7 +27251,10 @@
     ],
     "description": "Mike Wheeler (born March 15, 1964) is an American Chicago blues guitarist, singer and songwriter. A veteran of the Chicago blues scene, Wheeler has played with numerous blues legends and leads his own band, blending traditional Chicago blues with contemporary sounds.",
     "activeFrom": "1980",
-    "influences": [],
+    "influences": [
+      "bb-king",
+      "muddy-waters"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -27419,7 +27575,9 @@
     ],
     "description": "Big Jack Johnson (July 30, 1940 – March 14, 2011) was an American electric blues musician from Lambert, Mississippi. A key figure in the Hill Country blues tradition, Johnson was known for his raw, electrified Delta blues sound and his work with the Jelly Roll Kings. He played guitar, mandolin, and vocals, and won a W.C. Handy Award in 2003 for Best Acoustic Blues Album. Johnson was also called 'The Oil Man' due to his work driving trucks for Shell Oil.",
     "activeFrom": "1960",
-    "influences": [],
+    "influences": [
+      "bb-king"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -29081,7 +29239,9 @@
       "john-lee-hooker",
       "blind-blake"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "elmore-james"
+    ],
     "incomplete": false,
     "playedWith": [
       "john-lee-hooker"
@@ -30009,7 +30169,9 @@
     ],
     "description": "Marcia Ball is an American blues singer and pianist known for her unique style combining Texas stomp-rock with Louisiana blues-swamp. She was described in USA Today as 'a sensation, saucy singer and superb pianist.' Inducted into Blues Hall of Fame in 2026.",
     "activeFrom": "1970",
-    "influences": [],
+    "influences": [
+      "professor-longhair"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -30437,7 +30599,14 @@
     ],
     "description": "Selwyn Birchwood is a visionary contemporary blues artist who describes his style as 'Electric Swamp Funkin' Blues'. He is recognized for pushing the boundaries of the genre, wiring swamp dirt and church soul into his own unapologetic sound.",
     "activeFrom": "2011",
-    "influences": [],
+    "influences": [
+      "buddy-guy",
+      "freddie-king",
+      "muddy-waters",
+      "albert-king",
+      "lightnin-hopkins",
+      "albert-collins"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
