@@ -22,7 +22,6 @@ Arthur Bell
 Arthur Crudup
 Arthur Pettis
 Arthur Weston
-Arvella Gray
 Arzo Youngblood
 Austen Pete
 Avery Brady
@@ -31,7 +30,6 @@ Babe Stovall
 Baby Boy Warren
 Baby Tate
 Banjo Ikey Robinson
-Barbecue Bob
 Barefoot Bill
 Barrelhouse Buck McFarland
 Bascom Lamar Lunsford
@@ -41,11 +39,7 @@ Bertha Henderson
 Bertha Lee
 Bessie Jackson/Lucille Bogan
 Bessie Tucker
-Big Bill Broonzy
 Big Boy
-Big Joe Turner
-Big Joe Williams
-Big Maceo
 Bill Cox
 Bill Gaither
 Bill Jackson
@@ -53,37 +47,30 @@ Bill Monroe
 Bill Williams
 Billy Bird
 Bishop Perry Tillis
-Black Ace
 Black Bottom McPhail
 Black Boy Shine
 Black Diamond
 Blind Alfred Reed
 Blind Blake
-Blind Boy Fuller
 Blind Connie Williams
 Blind Gussie Nesbit
 Blind Joe
 Blind Joe Reynolds
 Blind Joe Taggart
 Blind John Davis
-Blind Lemon Jefferson
 Blind Leroy Garnett
 Blind Percy and his Blind Band
 Blind Pete & Partner
 Blind Willie Davis
 Blind Willie Johnson
-Blind Willie McTell
 Blind Willie Reynolds
-Bo Carter
 Bo Jones
 Bo Weavil Jackson
 Bob Campbell
 Bob Coleman
 Bobby Grant
-Bobo Jenkins
 Bogus Ben Covington
 Booker T. Sapps
-Booker White
 Boy Green
 Boyd Rivers & Ruth May Rivers
 Bozie Sturdivant
@@ -105,7 +92,6 @@ Carl Martin
 Carolina Slim
 Cecil Barfield
 Cedar Creek Sheik
-Champion Jack Dupree
 Charles Caldwell
 Charley Bradix
 Charley Jordan
@@ -118,7 +104,6 @@ Charlie Campbell
 Charlie Kyle
 Charlie Manson
 Charlie McCoy
-Charlie Patton
 Charlie Pickett
 Charlie Poole
 Charlie Spand
@@ -135,16 +120,12 @@ Cofer Brothers
 Coley Jones
 Country Jim Bledsoe
 Cousin Joe
-Cow Cow Davenport
 Cripple Clarence Lofton
-Curley Weaver
 Curtis Jones
-Corey Harris
 Dad Crockett
 Daddy Hotcakes
 Dan Pickett
 Darby & Tarlton
-David "Honeyboy" Edwards
 David "Pete" McKinley
 David McCarn
 David Miller
@@ -160,7 +141,6 @@ Dock Walsh
 Doctor Clayton
 Doug Quattlebaum
 Dr. Hepcat
-Dr. Ross
 Dykes Magic City Trio
 E. C. Ball & Orna Ball
 Ed Andrews
@@ -168,7 +148,6 @@ Ed Bell
 Ed Lewis
 Eddie Bowles
 Eddie Head & His Family
-Eddie Kirkland
 Edward Thompson
 Elester Anderson
 Eli Framer
@@ -189,18 +168,13 @@ Frank Edwards
 Frank Evans
 Frank Hovington
 Frank Hutchison
-Frank Stokes
 Frank Tannehill
-Frankie Lee Sims
-Fred McDowell
 Fred McMullen
 Freddie Spruell
 Freezone
 Fruit Jar Guzzlers
 Funny Papa Smith
-Furry Lewis
 Cannon's Jug Stompers
-Mississippi Sheiks
 Gabriel Brown
 Garfield Akers
 Geeshie Wiley
@@ -215,7 +189,6 @@ George Torey
 Georgia Slim
 Georgia White
 Gid Tanner
-Guitar Shorty
 Guitar Slim & Jelly Belly
 Guitar Welch
 Gus Cannon
@@ -228,7 +201,6 @@ Henry Green
 Henry Johnson
 Henry Spaulding
 Henry Thomas
-Henry Townsend
 Henry Whitter
 Herman E. Johnson
 Hezekiah Jenkins
@@ -236,13 +208,8 @@ Hi Henry Brown
 Hobart Smith
 Hogman Maxey
 Homer Harris
-Homesick James
-Honeyboy Edwards
-Ida Cox
 Irene Scruggs
 Irvin "Gar Mouth" Lowry
-Ishmon Bracey
-J B Lenoir
 J. W. Warren
 J. Wilson
 J.E. Mainer
@@ -254,16 +221,13 @@ James Clark
 James Henry Diggs
 James Lowry
 James Putmon
-Jaybird Coleman
 Jaydee Short
-Jazz Gillum
 Jenny Pope
 Jesse Fuller
 Jesse James
 Jesse Lee Vortis
 Jesse Thomas
 Jesse Wadley
-Jessie Mae Hemphill
 Jewell Long
 Jim Brewer
 Jim Jackson
@@ -275,7 +239,6 @@ Jimmy Brown
 Jimmy Lee Williams
 Jimmy Murphy
 Jimmy Rogers
-Joe Callicott
 Joe Dean
 Joe Harris
 Joe Lee
@@ -291,7 +254,6 @@ John Henry Barbee
 John Jackson
 John Lee
 John Lee Granderson
-John Lee Hooker
 John Lee Ziegler
 John Tinsley
 Johnie Lewis
@@ -299,7 +261,6 @@ Johnnie Head
 Johnny Beck
 Johnny Howard
 Johnny Jones
-Johnny Shines
 Johnny Temple
 Johnny Young
 Jolly Two
@@ -329,7 +290,6 @@ Leecan and Cooksey
 Leola Wilson
 Leon Strickland
 Leroy Campbell & Robert (Yancey) Sanders
-Leroy Carr
 Leroy Dallas
 Lesley Riddle
 Lester McFarland
@@ -353,7 +313,6 @@ Lonnie Johnson
 Lonnie McIntorsh
 Lonzie Thomas
 Lottie Beamon/Kimbrough
-Louie Lasky
 Louise Johnson
 Lovey Williams
 Lowe Stokes
@@ -362,7 +321,6 @@ Lucious Curtis
 Luke Jordan
 Luther Huff
 Luther Stoneham
-Ma Rainey
 Macon Ed and Tampa Joe
 Mae Glover
 Mance Lipscomb
@@ -372,7 +330,6 @@ Martha Copeland
 Mary Johnson
 Mattie Delaney
 Memphis Minnie
-Memphis Slim
 Memphis Willie B.
 Mercy Dee
 Merline Johnson
@@ -380,10 +337,8 @@ Mike Seeger
 Mildred White
 Milton Sparks
 Mississippi Bracey
-Mississippi John Hurt
 Mississippi Matilda
 Mississippi Moaner
-Mississippi Sheiks
 Monkey Joe
 Monroe Gevedon
 Mooch Richardson
@@ -391,23 +346,17 @@ Mose Andrews
 Moses Mason
 Mother McCollum
 Mott Willis
-Muddy Waters
 Myrt Holmes
 Nugrape Twins
 Ollie Rupert
 Ollis Martin
 Oscar Woods
 Otis Harris
-Otis Spann
 Otto Virgial
 P.R. Higginbotham
-Papa Charlie Jackson
 Papa Egg Shell
 Paul Geremia
 Pearl Dickson
-Peetie Wheatstraw
-Peg Leg Howell
-Peg Leg Sam
 Pernell Charity
 Pete Franklin
 Peter Warfield
@@ -416,11 +365,8 @@ Pigmeat Pete and Catjuice Charlie
 Pillie Bolling
 Pine Top Smith
 Pinetop Burks
-Pink Anderson
-Precious Bryant
 Prince Albert Hunt
 R T Hanen
-R. L. Burnside
 Ralph Willis
 Ramblin' Thomas
 Ranie Burnette
@@ -428,29 +374,24 @@ Rattlesnake Cooper
 Red Nelson
 Reese Crenshaw
 Rev. Edward W. Clayborn
-Rev. Gary Davis
 Rev. Rassie Moore
 Rich Amerson
 Rich Trice
 Richard "Rabbit" Brown
 Richard Trice
 Riley Puckett
-Robert Belfour
 Robert Curtis Smith
-Robert Johnson
 Robert Lee McCoy
 Robert Lockwood Jr.
 Robert Peeples
 Robert Pete Williams
 Robert Petway
-Robert Wilkins
 Roger "Burn Down" Garnett
 Romeo Nelson
 Roosevelt Antrim
 Roosevelt Charles
 Roosevelt Graves
 Roosevelt Holts
-Roosevelt Sykes
 Rosa Henderson
 Rosa Lee Hill
 Roscoe Holcomb
@@ -469,14 +410,11 @@ Sammy Hill
 Sampson Pittman
 Sara Martin
 Scott Dunbar
-Scrapper Blackwell
 Seth Richard
 Shirley Griffith
 Sid Hemphill
 Sister O. M. Terrell
-Skip James
 Skoodle Dum Doo and Sheffield
-Sleepy John Estes
 Slim Duckett & Pig Norwood
 Sloppy Henry
 Sluefoot Joe
@@ -485,14 +423,10 @@ Smoky Babe
 Smoky Harrison
 Snooks Eaglin
 Son Becky
-Son House
 Sonny Boy & Lonnie
-Sonny Boy Williamson I
-Sonny Boy Williamson II
 Sonny Chestain
 Sonny Jones
 Sonny Scott
-Sonny Terry
 Spark Plug Smith
 Speckled Red
 Stump Johnson
@@ -502,9 +436,7 @@ Sweet Papa Tadpole
 Sylvester Cotton
 Sylvester Palmer
 Sylvester Weaver
-T-Bone Walker
 Tallahassee Tight
-Tampa Red
 Tarheel Slim
 Tarter & Gay
 Teddy Darby
@@ -533,7 +465,6 @@ Victoria Spivey
 Viola James
 Virgil Childers
 Wade Walton
-W.C. Handy
 Wallace Chains
 Walter Beasley
 Walter Cole
@@ -570,7 +501,6 @@ Willie Harris
 Willie Hatcher
 Willie Lane
 Willie Lofton
-Willie Mabon
 Willie Moore
 Willie Reed
 Willie Trice
@@ -579,4 +509,3 @@ Willie Williams
 Wilmer Watts
 Winston Holmes
 Wright Holmes
-Yank Rachell
