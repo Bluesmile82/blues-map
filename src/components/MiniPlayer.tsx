@@ -34,17 +34,15 @@ export default function MiniPlayer({
   onLoadVideoConsumed,
 }: MiniPlayerProps) {
   const [apiReady, setApiReady] = useState(false);
+  const [playerKey, setPlayerKey] = useState(0);
   const playerRef = useRef<YT.Player | null>(null);
   const playerReadyRef = useRef(false);
   const isPlayingRef = useRef(isPlaying);
-  const pendingVideoIdRef = useRef<string | null>(null);
-  const musicianIdRef = useRef<string>(musician.id);
+  const onPlayingChangeRef = useRef(onPlayingChange);
   const videosRef = useRef<VideoEntry[]>([]);
   const currentIndexRef = useRef(0);
-  const changingTrackRef = useRef(false);
-  const forcePlayAttemptedRef = useRef(false);
-  const onPlayingChangeRef = useRef(onPlayingChange);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const destroyAndRecreateRef = useRef<() => void>(() => {});
 
   isPlayingRef.current = isPlaying;
   onPlayingChangeRef.current = onPlayingChange;
@@ -89,7 +87,7 @@ export default function MiniPlayer({
     playerRef.current = new YT.Player(PLAYER_DIV_ID, {
       videoId: initialVideoId,
       playerVars: {
-        autoplay: 0,
+        autoplay: isPlayingRef.current && initialVideoId ? 1 : 0,
         playsinline: 1,
         rel: 0,
         modestbranding: 1,
@@ -98,38 +96,15 @@ export default function MiniPlayer({
       events: {
         onReady: () => {
           playerReadyRef.current = true;
-          if (pendingVideoIdRef.current) {
-            const vid = pendingVideoIdRef.current;
-            pendingVideoIdRef.current = null;
-            if (isPlayingRef.current) {
-              playerRef.current?.loadVideoById(vid);
-            } else {
-              playerRef.current?.cueVideoById(vid);
-            }
-          } else if (isPlayingRef.current && initialVideoId) {
-            playerRef.current?.playVideo();
-          }
         },
         onStateChange: (event: { data: number }) => {
           if (event.data === YT.PlayerState.PLAYING) {
-            changingTrackRef.current = false;
-            forcePlayAttemptedRef.current = false;
             onPlayingChangeRef.current(true);
           } else if (
             event.data === YT.PlayerState.PAUSED ||
             event.data === YT.PlayerState.ENDED
           ) {
-            if (changingTrackRef.current) {
-              if (!forcePlayAttemptedRef.current) {
-                forcePlayAttemptedRef.current = true;
-                playerRef.current?.playVideo();
-              } else {
-                changingTrackRef.current = false;
-                onPlayingChangeRef.current(false);
-              }
-            } else {
-              onPlayingChangeRef.current(false);
-            }
+            onPlayingChangeRef.current(false);
           }
         },
         onError: (event: { data: number }) => {
@@ -145,6 +120,15 @@ export default function MiniPlayer({
       },
     });
 
+    destroyAndRecreateRef.current = () => {
+      if (playerRef.current) {
+        playerRef.current.destroy();
+        playerRef.current = null;
+        playerReadyRef.current = false;
+      }
+      setPlayerKey(k => k + 1);
+    };
+
     return () => {
       if (playerRef.current) {
         playerRef.current.destroy();
@@ -152,11 +136,10 @@ export default function MiniPlayer({
         playerReadyRef.current = false;
       }
     };
-  }, [apiReady]);
+  }, [apiReady, playerKey]);
 
   useEffect(() => {
     if (!playerReadyRef.current || !playerRef.current) return;
-    if (changingTrackRef.current) return;
     if (isPlaying) {
       playerRef.current.playVideo();
     } else {
@@ -172,25 +155,18 @@ export default function MiniPlayer({
     currentIndexRef.current = 0;
     setCurrentIndex(0);
 
-    if (!playerReadyRef.current || !playerRef.current) {
-      pendingVideoIdRef.current = newVideoId;
-      return;
-    }
+    if (!playerReadyRef.current || !playerRef.current) return;
 
     if (isPlayingRef.current) {
-      changingTrackRef.current = true;
-      forcePlayAttemptedRef.current = false;
-      playerRef.current.loadVideoById(newVideoId);
+      destroyAndRecreateRef.current();
     } else {
       playerRef.current.cueVideoById(newVideoId);
     }
-    musicianIdRef.current = musician.id;
   }, [musician.id]);
 
   useEffect(() => {
     if (!loadVideoId) return;
     if (!playerReadyRef.current || !playerRef.current) {
-      pendingVideoIdRef.current = loadVideoId;
       onLoadVideoConsumed();
       return;
     }
@@ -202,7 +178,6 @@ export default function MiniPlayer({
       setCurrentIndex(idx);
     }
 
-    changingTrackRef.current = true;
     playerRef.current.loadVideoById(loadVideoId);
     onLoadVideoConsumed();
   }, [loadVideoId, onLoadVideoConsumed]);
@@ -212,7 +187,6 @@ export default function MiniPlayer({
     if (idx < 0 || idx >= videos.length || !playerRef.current) return;
     currentIndexRef.current = idx;
     setCurrentIndex(idx);
-    changingTrackRef.current = true;
     playerRef.current.loadVideoById(videos[idx].videoId);
   };
 

@@ -243,14 +243,15 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
       let rotX: number, rotY: number;
       
       if (gyroRef.current.enabled) {
-        // Normalize beta (-180 to 180) to roughly -45 to 45 for tilt
-        const normalizedBeta = Math.max(-45, Math.min(45, gyroRef.current.beta - 45));
+        // Normalize beta so vertical phone (beta ~90) = neutral (0)
+        const normalizedBeta = Math.max(-45, Math.min(45, gyroRef.current.beta - 90));
         // Normalize gamma (-90 to 90) to roughly -30 to 30
         const normalizedGamma = Math.max(-30, Math.min(30, gyroRef.current.gamma));
         
-        // Use gyro for more natural movement (increased intensity)
-        const gyroRotX = -normalizedBeta * 0.4;
-        const gyroRotY = -normalizedGamma * 0.5;
+        // Positive rotateX = card top toward user (opposite of phone tilt)
+        const gyroRotX = normalizedBeta * 0.4;
+        // Positive rotateY = card leans left (opposite of phone tilt right)
+        const gyroRotY = normalizedGamma * 0.5;
         
         // Add subtle oscillation on top of gyroscope
         const animRotX = Math.sin(elapsed * 0.001) * 1.5;
@@ -259,9 +260,9 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
         rotX = gyroRotX + animRotX;
         rotY = gyroRotY + animRotY;
       } else {
-        // Fallback to animation only
-        rotX = Math.sin(elapsed * 0.002) * 4 + 2;
-        rotY = Math.cos(elapsed * 0.0025) * 5 - 3;
+        // Fallback to animation only — no bias so card rests neutral
+        rotX = Math.sin(elapsed * 0.002) * 4;
+        rotY = Math.cos(elapsed * 0.0025) * 5;
       }
       
       tiltWrapperRef.current.style.transition = 'transform 0.1s linear, box-shadow 0.15s ease';
