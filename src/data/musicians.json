@@ -14249,7 +14249,7 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "New Orleans Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=qtFqyNlsHXU",
+    "youtubeLink": "https://www.youtube.com/watch?v=Fq9CUBLQRc0",
     "albums": [
       {
         "name": "Bell Ringer (1965)",
@@ -20745,7 +20745,9 @@
     ],
     "description": "Kenny Neal (born October 14, 1957), is an American blues guitar player, singer, and band member.  \nNeal was born in New Orleans, Louisiana, the son of Raful Neal, and he comes from a musical family.  He has often performed with his brothers in his band.",
     "activeFrom": "1997",
-    "influences": [],
+    "influences": [
+      "raful-neal"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -25515,7 +25517,7 @@
   {
     "id": "william-clarke",
     "name": "William Clarke",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/William_Clarke.jpg/500px-William_Clarke.jpg",
+    "image": "https://1.bp.blogspot.com/_pNV5RsTY1-Y/TRBpt3-fDZI/AAAAAAAAAms/Bc62Hb3XAvg/s1600/William%2BClarke%2B%2528blues-USA%2529.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/William_Clarke.jpg/500px-William_Clarke.jpg",
     "birthDate": "1951-07-21",
     "birthPlace": "Los Angeles, California",
@@ -26791,7 +26793,7 @@
   {
     "id": "andy-rodgers",
     "name": "Andy Rodgers",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Andy_Rodgers_-_Pittsburgh_Pirates_-_1966.jpg",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmgyIeotgPeB7ykVYBisx5eb-vEUL1bl99B41xOyFapeYVm7invasUQ6dra6pkJZtZb6TXWzAxGJSt3ZY5dHSg5mZZcoYeW2SIUDPq2T6fT66soPrrdVoJ7592mv7dkWh27jf4Iw/s640-rw/2.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Andy_Rodgers_-_Pittsburgh_Pirates_-_1966.jpg",
     "birthDate": "1983-10-18",
     "birthPlace": "Falkirk, Scotland",
@@ -26805,41 +26807,22 @@
     "spentTimePlaces": [],
     "instrument": "Vocals",
     "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=u0-zOsciwUc",
-    "albums": [
-      {
-        "name": "Broadway! (1988)",
-        "youtubeLink": "https://www.youtube.com/watch?v=jMzsHbpXy-I"
-      },
-      {
-        "name": "The Song Is . . . Rodgers & Hart (1990)",
-        "youtubeLink": "https://www.youtube.com/watch?v=5QbsvsxFyDo"
-      },
-      {
-        "name": "American Songbook Series: Richard Rodgers & Lorenz Hart (1992)",
-        "youtubeLink": ""
-      },
-      {
-        "name": "The World’s Most Beautiful Melodies: The Sweetest Sounds / Great Songs of Richard Rodgers (1993)",
-        "youtubeLink": "https://www.youtube.com/watch?v=U13jxf5IXDM"
-      },
-      {
-        "name": "The Rodgers and Hammerstein Collection (1993)",
-        "youtubeLink": "https://www.youtube.com/watch?v=jMzsHbpXy-I"
-      },
-      {
-        "name": "The Rodgers & Hammerstein Songbook (1993)",
-        "youtubeLink": "https://www.youtube.com/watch?v=50vixerp6do"
-      }
-    ],
-    "description": "Andy Rodgers (born October 18, 1983) is a Scottish blues singer known for his interpretations of blues standards and Broadway material. His performances blend traditional blues with theatrical elements.",
+    "youtubeLink": "https://www.youtube.com/watch?v=NhTNlMdci2M&t=83s",
+    "albums": [],
+    "description": "Andy Rodgers (March 14, 1922 – August 14, 2004) was an American Delta blues harmonicist, guitarist, singer, and songwriter. A flamboyant character, known commonly as the Midnight Cowboy, Rodgers worked part-time as a musician for most of his lifetime, finally recording two albums in the 1990s.",
     "activeFrom": "1988",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "carey-bell",
+      "junior-wells",
+      "kenny-neal"
+    ],
     "source": "https://en.wikipedia.org/wiki/Andy_Rodgers_(musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Harmonica"
+    ]
   },
   {
     "id": "mighty-mo-rodgers",
@@ -31735,6 +31718,425 @@
       "Piano",
       "Harmonica",
       "Vocals"
+    ]
+  },
+  {
+    "id": "billy-boy-arnold",
+    "name": "Billy Boy Arnold",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Billy_Boy_Arnold_%28blues_musician%29.jpg/300px-Billy_Boy_Arnold_%28blues_musician%29.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Billy_Boy_Arnold_%28blues_musician%29.jpg",
+    "birthDate": "1935-09-16",
+    "birthPlace": "Chicago, Illinois",
+    "birthCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "London, England",
+        "coords": [
+          -0.1278,
+          51.5074
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=YJDbYMzvjZo",
+    "albums": [
+      {
+        "name": "Back Where I Belong (Alligator, 1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=RotgbEXlgTw"
+      },
+      {
+        "name": "Eldorado Cadillac (Alligator, 1995)",
+        "youtubeLink": "https://www.youtube.com/playlist?list=PLjc75S90GZ8XTZ5aeCKYZI6WkoXiePVVZ"
+      },
+      {
+        "name": "More Blues On The South Side (Prestige, 1966)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JRuj-6L-rDY"
+      }
+    ],
+    "description": "William \"Billy Boy\" Arnold is an American blues harmonica player, singer, and songwriter born in Chicago in 1935. A self-taught musician, he received informal lessons from Sonny Boy Williamson I as a teenager and played harmonica on Bo Diddley's original 1955 recording of \"I'm a Man.\" His original compositions \"I Wish You Would\" and \"I Ain't Got You\" were later covered by the Yardbirds and David Bowie. After decades in Chicago blues clubs, he made a celebrated comeback in the 1990s with acclaimed albums on Alligator Records.",
+    "activeFrom": "1952",
+    "influences": [
+      "sonny-boy-williamson-i",
+      "little-walter"
+    ],
+    "influencedBy": [
+      "eric-clapton"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "bo-diddley",
+      "otis-rush",
+      "earl-hooker",
+      "howlin-wolf",
+      "muddy-waters"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Billy_Boy_Arnold",
+    "secondaryInstruments": [
+      "Vocals",
+      "Guitar"
+    ]
+  },
+  {
+    "id": "yank-rachell",
+    "name": "Yank Rachell",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Yank_Rachell.jpg/300px-Yank_Rachell.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/3/3c/Yank_Rachell.jpg",
+    "birthDate": "1910-03-16",
+    "birthPlace": "Brownsville, Tennessee",
+    "birthCoords": [
+      -89.1318,
+      35.5949
+    ],
+    "deathDate": "1997-04-09",
+    "deathPlace": "Indianapolis, Indiana",
+    "deathCoords": [
+      -86.1581,
+      39.7684
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Brownsville, Tennessee",
+        "coords": [
+          -89.1318,
+          35.5949
+        ]
+      },
+      {
+        "place": "Indianapolis, Indiana",
+        "coords": [
+          -86.1581,
+          39.7684
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Mandolin",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=vARk0EjjmiI",
+    "albums": [
+      {
+        "name": "Too Hot for the Devil (Blue Goose, 1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=FNe7r17_yzo"
+      },
+      {
+        "name": "Blues Mandolin (Delmark, 1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xO-oX-hpdJg"
+      }
+    ],
+    "description": "Yank Rachell was an American country blues musician and a master of the blues mandolin whose performing career spanned nearly seventy years, from the late 1920s to the 1990s. He frequently collaborated with Sleepy John Estes and wrote \"She Caught the Katy,\" which became a blues standard. Often called an \"elder statesman of the blues,\" he was one of the last active musicians whose career began in the 1920s.",
+    "activeFrom": "1929",
+    "influences": [
+      "tampa-red"
+    ],
+    "influencedBy": [
+      "taj-mahal"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "sleepy-john-estes",
+      "taj-mahal"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Yank_Rachell",
+    "secondaryInstruments": [
+      "Guitar",
+      "Vocals"
+    ]
+  },
+  {
+    "id": "raful-neal",
+    "name": "Raful Neal",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1936-06-06",
+    "birthPlace": "Baton Rouge, Louisiana",
+    "birthCoords": [
+      -91.1871,
+      30.4515
+    ],
+    "deathDate": "2004-09-01",
+    "deathPlace": "Baton Rouge, Louisiana",
+    "deathCoords": [
+      -91.1871,
+      30.4515
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chamberlin, West Baton Rouge Parish",
+        "coords": [
+          -91.21,
+          30.39
+        ]
+      },
+      {
+        "place": "New Orleans, Louisiana",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=jEJv3khJhoE",
+    "albums": [
+      {
+        "name": "Louisiana Legend (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=-VKboMG0YEE"
+      },
+      {
+        "name": "I Been Mistreated (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=GTK4pnXDIJM"
+      }
+    ],
+    "description": "Raful Neal (June 6, 1936 – September 1, 2004) was an American Louisiana blues singer, harmonicist and songwriter. Born in Baton Rouge and reared on a tenant farm in Chamberlin, West Baton Rouge Parish, Neal began playing harmonica at age 14. He played with Buddy Guy in a band called the Clouds in his early years and made his recording debut in 1958 with \"Sunny Side of Love\" on Peacock Records. A key architect of the Baton Rouge blues sound, Neal released several albums including Louisiana Legend (1990) on Alligator Records and I Been Mistreated (1991) on Ichiban Records. He performed for 14 consecutive years at the New Orleans Jazz and Heritage Festival and toured globally. Father of Kenny Neal and patriarch of a musical family—nine of his ten children became blues musicians. He died of cancer in Baton Rouge in 2004.",
+    "activeFrom": "1958",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "buddy-guy",
+      "tab-benoit"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Raful_Neal",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "w.c.-handy",
+    "name": "W.C. Handy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/W._C._Handy_%281941_Van_Vechten_portrait%29.jpg/300px-W._C._Handy_%281941_Van_Vechten_portrait%29.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/a/a7/W._C._Handy_%281941_Van_Vechten_portrait%29.jpg",
+    "birthDate": "1873-11-16",
+    "birthPlace": "Florence, Alabama",
+    "birthCoords": [
+      -87.6773,
+      34.7998
+    ],
+    "deathDate": "1958-03-28",
+    "deathPlace": "New York City, New York",
+    "deathCoords": [
+      -74.006,
+      40.7128
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Clarksdale, Mississippi",
+        "coords": [
+          -90.5715,
+          34.2001
+        ]
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "New York, New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Trumpet",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=cSuTTSOctGw",
+    "albums": [
+      {
+        "name": "Father of the Blues (Columbia, 1958)",
+        "youtubeLink": "https://www.youtube.com/watch?v=U1UrzxsmcpI"
+      },
+      {
+        "name": "The Memphis Blues Band Recordings (Paramount, 1922)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Oquemt6k5Wc"
+      },
+      {
+        "name": "Blues: An Anthology (Handy Bros. Music, 1926)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ZGqBmlZR3dc"
+      }
+    ],
+    "description": "William Christopher Handy, known as the 'Father of the Blues,' was an American composer, musician, and bandleader who was one of the first to publish music in the blues form. His compositions including 'St. Louis Blues,' 'Memphis Blues,' and 'Beale Street Blues' helped transform the blues from a regional Delta music style into a nationally popular genre, taking it to a new level of popularity.",
+    "activeFrom": "1893",
+    "influences": [],
+    "influencedBy": [
+      "bessie-smith",
+      "ma-rainey",
+      "ethel-waters"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "bessie-smith"
+    ],
+    "source": "https://en.wikipedia.org/wiki/W._C._Handy",
+    "secondaryInstruments": [
+      "Cornet",
+      "Piano"
+    ]
+  },
+  {
+    "id": "cab-calloway",
+    "name": "Cab Calloway",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Cab_Calloway_Gottlieb.jpg/300px-Cab_Calloway_Gottlieb.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Cab_Calloway_Gottlieb.jpg",
+    "birthDate": "1907-12-25",
+    "birthPlace": "Rochester, New York",
+    "birthCoords": [
+      -77.6177,
+      43.161
+    ],
+    "deathDate": "1994-11-18",
+    "deathPlace": "Hockessin, Delaware",
+    "deathCoords": [
+      -75.696,
+      39.777
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Baltimore",
+        "coords": [
+          -76.6122,
+          39.2904
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New York City",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Jazz",
+    "youtubeLink": "https://www.youtube.com/watch?v=8mq4UT4VnbE",
+    "albums": [
+      {
+        "name": "Hi-De-Hi-De-Ho (RCA Victor, 1959)",
+        "youtubeLink": "https://www.youtube.com/watch?v=t5b4Ks0gO2M"
+      },
+      {
+        "name": "Blues Make Me Happy (Coral, 1962)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UIoVzETr7Q4"
+      },
+      {
+        "name": "Hi De Ho Man (Columbia, 1974)",
+        "youtubeLink": "https://www.youtube.com/watch?v=LsrG1YdjHzc"
+      }
+    ],
+    "description": "Cab Calloway was an American jazz singer, songwriter and bandleader known as the 'Hi-De-Ho Man.' He led one of the most popular dance bands of the swing era from the Cotton Club in Harlem. His 1931 hit 'Minnie the Moocher' was the first record by an African American to sell a million copies, and he reached the Billboard charts in five consecutive decades.",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "louis-jordan"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Cab_Calloway",
+    "secondaryInstruments": [
+      "Drums"
+    ]
+  },
+  {
+    "id": "willie-mabon",
+    "name": "Willie Mabon",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Willie_Mabon.jpg/300px-Willie_Mabon.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/3/30/Willie_Mabon.jpg",
+    "birthDate": "1925-10-24",
+    "birthPlace": "Hollywood, Memphis, Tennessee",
+    "birthCoords": [
+      -90.049,
+      35.1495
+    ],
+    "deathDate": "1985-04-19",
+    "deathPlace": "Paris, France",
+    "deathCoords": [
+      2.3522,
+      48.8566
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Paris, France",
+        "coords": [
+          2.3522,
+          48.8566
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Ja5j8XjUC40",
+    "albums": [
+      {
+        "name": "Willie Mabon Sings 'I Don't Know' and Other Chicago Blues Hits (1976)",
+        "youtubeLink": "https://www.youtube.com/watch?v=LS4kzJTqzRQ"
+      },
+      {
+        "name": "Chicago Blues Session! (1977)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ndkEUvj7n_U"
+      }
+    ],
+    "description": "Willie Mabon (October 24, 1925 - April 19, 1985) was an American R&B singer, songwriter, pianist and harmonica player who scored two number-one Billboard R&B hits with 'I Don't Know' in 1952 and 'I'm Mad' in 1953. A key Chess Records artist, he was the first to record Willie Dixon's 'The Seventh Son.' He relocated to Paris in 1972 and toured extensively in Europe before his death.",
+    "activeFrom": "1949",
+    "influences": [
+      "memphis-slim",
+      "roosevelt-sykes",
+      "sunnyland-slim"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "hubert-sumlin",
+      "willie-dixon"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Willie_Mabon",
+    "secondaryInstruments": [
+      "Vocals",
+      "Harmonica"
     ]
   }
 ]
