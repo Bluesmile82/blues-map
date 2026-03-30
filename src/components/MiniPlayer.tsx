@@ -42,6 +42,7 @@ export default function MiniPlayer({
   const videosRef = useRef<VideoEntry[]>([]);
   const currentIndexRef = useRef(0);
   const changingTrackRef = useRef(false);
+  const forcePlayAttemptedRef = useRef(false);
   const onPlayingChangeRef = useRef(onPlayingChange);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -112,12 +113,21 @@ export default function MiniPlayer({
         onStateChange: (event: { data: number }) => {
           if (event.data === YT.PlayerState.PLAYING) {
             changingTrackRef.current = false;
+            forcePlayAttemptedRef.current = false;
             onPlayingChangeRef.current(true);
           } else if (
             event.data === YT.PlayerState.PAUSED ||
             event.data === YT.PlayerState.ENDED
           ) {
-            if (!changingTrackRef.current) {
+            if (changingTrackRef.current) {
+              if (!forcePlayAttemptedRef.current) {
+                forcePlayAttemptedRef.current = true;
+                playerRef.current?.playVideo();
+              } else {
+                changingTrackRef.current = false;
+                onPlayingChangeRef.current(false);
+              }
+            } else {
               onPlayingChangeRef.current(false);
             }
           }
@@ -169,6 +179,7 @@ export default function MiniPlayer({
 
     if (isPlayingRef.current) {
       changingTrackRef.current = true;
+      forcePlayAttemptedRef.current = false;
       playerRef.current.loadVideoById(newVideoId);
     } else {
       playerRef.current.cueVideoById(newVideoId);

@@ -249,8 +249,8 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
         const normalizedGamma = Math.max(-30, Math.min(30, gyroRef.current.gamma));
         
         // Use gyro for more natural movement (increased intensity)
-        const gyroRotX = normalizedBeta * 0.4;
-        const gyroRotY = normalizedGamma * 0.5;
+        const gyroRotX = -normalizedBeta * 0.4;
+        const gyroRotY = -normalizedGamma * 0.5;
         
         // Add subtle oscillation on top of gyroscope
         const animRotX = Math.sin(elapsed * 0.001) * 1.5;
