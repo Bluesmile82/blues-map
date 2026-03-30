@@ -131,6 +131,8 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   
   // Gyroscope state - use ref to avoid re-renders
   const gyroRef = useRef({ alpha: 0, beta: 0, gamma: 0, enabled: false });
+  const smoothBetaRef = useRef(0);
+  const smoothGammaRef = useRef(0);
   const [gyroPermissionGranted, setGyroPermissionGranted] = useState(false);
   const [gyroNeedsPrompt, setGyroNeedsPrompt] = useState(false);
 
@@ -213,6 +215,9 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   useEffect(() => {
     if (!isMobile || !tiltWrapperRef.current) return;
 
+    smoothBetaRef.current = 0;
+    smoothGammaRef.current = 0;
+
     let animationFrameId: number;
     let startTime = Date.now();
 
@@ -243,17 +248,19 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
       let rotX: number, rotY: number;
       
       if (gyroRef.current.enabled) {
-        // Normalize beta so vertical phone (beta ~90) = neutral (0)
-        const normalizedBeta = Math.max(-45, Math.min(45, gyroRef.current.beta - 90));
-        // Normalize gamma (-90 to 90) to roughly -30 to 30
-        const normalizedGamma = Math.max(-30, Math.min(30, gyroRef.current.gamma));
+        const targetBeta = Math.max(-45, Math.min(45, gyroRef.current.beta - 90));
+        const targetGamma = Math.max(-30, Math.min(30, gyroRef.current.gamma));
+
+        smoothBetaRef.current += (targetBeta - smoothBetaRef.current) * 0.08;
+        smoothGammaRef.current += (targetGamma - smoothGammaRef.current) * 0.08;
+
+        const deadZone = 0.8;
+        const dBeta = Math.abs(smoothBetaRef.current) < deadZone ? 0 : smoothBetaRef.current;
+        const dGamma = Math.abs(smoothGammaRef.current) < deadZone ? 0 : smoothGammaRef.current;
+
+        const gyroRotX = dBeta * 0.4;
+        const gyroRotY = -dGamma * 0.5;
         
-        // Positive rotateX = card top toward user (opposite of phone tilt)
-        const gyroRotX = normalizedBeta * 0.4;
-        // Positive rotateY = card leans left (opposite of phone tilt right)
-        const gyroRotY = normalizedGamma * 0.5;
-        
-        // Add subtle oscillation on top of gyroscope
         const animRotX = Math.sin(elapsed * 0.001) * 1.5;
         const animRotY = Math.cos(elapsed * 0.0012) * 1.5;
         

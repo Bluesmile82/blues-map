@@ -25,6 +25,7 @@ interface MiniPlayerProps {
 }
 
 const PLAYER_DIV_ID = 'mini-player-container';
+const MAX_RETRIES = 5;
 
 export default function MiniPlayer({
   musician,
@@ -34,15 +35,17 @@ export default function MiniPlayer({
   onLoadVideoConsumed,
 }: MiniPlayerProps) {
   const [apiReady, setApiReady] = useState(false);
-  const [playerKey, setPlayerKey] = useState(0);
   const playerRef = useRef<YT.Player | null>(null);
   const playerReadyRef = useRef(false);
   const isPlayingRef = useRef(isPlaying);
-  const onPlayingChangeRef = useRef(onPlayingChange);
+  const pendingVideoIdRef = useRef<string | null>(null);
+  const musicianIdRef = useRef<string>(musician.id);
   const videosRef = useRef<VideoEntry[]>([]);
   const currentIndexRef = useRef(0);
+  const requestingPlayRef = useRef(false);
+  const retryCountRef = useRef(0);
+  const onPlayingChangeRef = useRef(onPlayingChange);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const destroyAndRecreateRef = useRef<() => void>(() => {});
 
   isPlayingRef.current = isPlaying;
   onPlayingChangeRef.current = onPlayingChange;
@@ -61,6 +64,22 @@ export default function MiniPlayer({
   };
 
   videosRef.current = buildVideos();
+
+  const retryPlay = () => {
+    if (retryCountRef.current >= MAX_RETRIES || !playerRef.current) {
+      requestingPlayRef.current = false;
+      retryCountRef.current = 0;
+      onPlayingChangeRef.current(false);
+      return;
+    }
+    retryCountRef.current++;
+    const delay = 300 * retryCountRef.current;
+    setTimeout(() => {
+      if (requestingPlayRef.current && playerRef.current) {
+        playerRef.current.playVideo();
+      }
+    }, delay);
+  };
 
   useEffect(() => {
     if (window.YT) {
@@ -87,7 +106,7 @@ export default function MiniPlayer({
     playerRef.current = new YT.Player(PLAYER_DIV_ID, {
       videoId: initialVideoId,
       playerVars: {
-        autoplay: isPlayingRef.current && initialVideoId ? 1 : 0,
+        autoplay: 0,
         playsinline: 1,
         rel: 0,
         modestbranding: 1,
@@ -96,38 +115,54 @@ export default function MiniPlayer({
       events: {
         onReady: () => {
           playerReadyRef.current = true;
+          if (pendingVideoIdRef.current) {
+            const vid = pendingVideoIdRef.current;
+            pendingVideoIdRef.current = null;
+            if (isPlayingRef.current) {
+              requestingPlayRef.current = true;
+              retryCountRef.current = 0;
+              playerRef.current?.loadVideoById(vid);
+            } else {
+              playerRef.current?.cueVideoById(vid);
+            }
+          } else if (isPlayingRef.current && initialVideoId) {
+            requestingPlayRef.current = true;
+            retryCountRef.current = 0;
+            playerRef.current?.playVideo();
+          }
         },
         onStateChange: (event: { data: number }) => {
           if (event.data === YT.PlayerState.PLAYING) {
+            requestingPlayRef.current = false;
+            retryCountRef.current = 0;
             onPlayingChangeRef.current(true);
           } else if (
             event.data === YT.PlayerState.PAUSED ||
             event.data === YT.PlayerState.ENDED
           ) {
-            onPlayingChangeRef.current(false);
+            if (requestingPlayRef.current) {
+              retryPlay();
+            } else {
+              onPlayingChangeRef.current(false);
+            }
           }
         },
         onError: (event: { data: number }) => {
           console.error('MiniPlayer YT error:', event.data);
+          requestingPlayRef.current = false;
+          retryCountRef.current = 0;
           const nextIndex = currentIndexRef.current + 1;
           const videos = videosRef.current;
           if (nextIndex < videos.length) {
             currentIndexRef.current = nextIndex;
             setCurrentIndex(nextIndex);
+            requestingPlayRef.current = true;
+            retryCountRef.current = 0;
             playerRef.current?.loadVideoById(videos[nextIndex].videoId);
           }
         },
       },
     });
-
-    destroyAndRecreateRef.current = () => {
-      if (playerRef.current) {
-        playerRef.current.destroy();
-        playerRef.current = null;
-        playerReadyRef.current = false;
-      }
-      setPlayerKey(k => k + 1);
-    };
 
     return () => {
       if (playerRef.current) {
@@ -136,13 +171,18 @@ export default function MiniPlayer({
         playerReadyRef.current = false;
       }
     };
-  }, [apiReady, playerKey]);
+  }, [apiReady]);
 
   useEffect(() => {
     if (!playerReadyRef.current || !playerRef.current) return;
+    if (requestingPlayRef.current) return;
     if (isPlaying) {
+      requestingPlayRef.current = true;
+      retryCountRef.current = 0;
       playerRef.current.playVideo();
     } else {
+      requestingPlayRef.current = false;
+      retryCountRef.current = 0;
       playerRef.current.pauseVideo();
     }
   }, [isPlaying]);
@@ -155,18 +195,25 @@ export default function MiniPlayer({
     currentIndexRef.current = 0;
     setCurrentIndex(0);
 
-    if (!playerReadyRef.current || !playerRef.current) return;
+    if (!playerReadyRef.current || !playerRef.current) {
+      pendingVideoIdRef.current = newVideoId;
+      return;
+    }
 
     if (isPlayingRef.current) {
-      destroyAndRecreateRef.current();
+      requestingPlayRef.current = true;
+      retryCountRef.current = 0;
+      playerRef.current.loadVideoById(newVideoId);
     } else {
       playerRef.current.cueVideoById(newVideoId);
     }
+    musicianIdRef.current = musician.id;
   }, [musician.id]);
 
   useEffect(() => {
     if (!loadVideoId) return;
     if (!playerReadyRef.current || !playerRef.current) {
+      pendingVideoIdRef.current = loadVideoId;
       onLoadVideoConsumed();
       return;
     }
@@ -178,6 +225,8 @@ export default function MiniPlayer({
       setCurrentIndex(idx);
     }
 
+    requestingPlayRef.current = true;
+    retryCountRef.current = 0;
     playerRef.current.loadVideoById(loadVideoId);
     onLoadVideoConsumed();
   }, [loadVideoId, onLoadVideoConsumed]);
@@ -187,6 +236,8 @@ export default function MiniPlayer({
     if (idx < 0 || idx >= videos.length || !playerRef.current) return;
     currentIndexRef.current = idx;
     setCurrentIndex(idx);
+    requestingPlayRef.current = true;
+    retryCountRef.current = 0;
     playerRef.current.loadVideoById(videos[idx].videoId);
   };
 
