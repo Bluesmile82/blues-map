@@ -8,7 +8,7 @@ import type { Musician } from '../types';
 import { getStyleHex, getStyleColor } from '../utils/colors';
 import MobileVideoPlayer from './MobileVideoPlayer';
 import MusicianPanel from './MusicianPanel';
-import MiniPlayer, { type MiniPlayerHandle } from './MiniPlayer';
+import MiniPlayer from './MiniPlayer';
 import SearchInput from './SearchInput';
 import ListsDropdown from './lists/ListsDropdown';
 import { useAtomValue } from 'jotai';
@@ -117,7 +117,6 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   // Mini player state
   const [miniPlayerActive, setMiniPlayerActive] = useState(false);
   const [loadVideoId, setLoadVideoId] = useState<string | null>(null);
-  const miniPlayerRef = useRef<MiniPlayerHandle>(null);
 
   // Search state
   const [showSearch, setShowSearch] = useState(false);
@@ -1104,15 +1103,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
         <motion.button
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.1 }}
-          onClick={() => {
-            if (miniPlayerActive) {
-              miniPlayerRef.current?.pause();
-              setMiniPlayerActive(false);
-            } else {
-              setMiniPlayerActive(true);
-              miniPlayerRef.current?.play();
-            }
-          }}
+          onClick={() => setMiniPlayerActive(v => !v)}
           className="absolute top-3 left-3 z-50 flex flex-col items-center gap-0.5"
         >
           <div className={`w-11 h-11 flex items-center justify-center rounded-full backdrop-blur-sm border shadow-md transition-colors ${miniPlayerActive ? 'bg-accent text-white border-accent' : 'bg-bg/80 border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover'}`}>
@@ -1124,7 +1115,6 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
         {/* Mini player: hidden iframe + now-playing bar */}
         {current && (
           <MiniPlayer
-            ref={miniPlayerRef}
             musician={current}
             isPlaying={miniPlayerActive}
             onPlayingChange={setMiniPlayerActive}

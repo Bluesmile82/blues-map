@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, forwardRef, useImperativeHandle, useCallback } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import type { Musician } from '../types';
@@ -24,21 +24,16 @@ interface MiniPlayerProps {
   onLoadVideoConsumed: () => void;
 }
 
-export interface MiniPlayerHandle {
-  play: () => void;
-  pause: () => void;
-  loadAndPlay: () => void;
-  cue: () => void;
-  navigateToTrack: (idx: number) => void;
-}
-
 const PLAYER_DIV_ID = 'mini-player-container';
 const LOADING_TIMEOUT_MS = 15000;
 
-const MiniPlayer = forwardRef<MiniPlayerHandle, MiniPlayerProps>(function MiniPlayer(
-  { musician, isPlaying, onPlayingChange, loadVideoId, onLoadVideoConsumed },
-  ref,
-) {
+export default function MiniPlayer({
+  musician,
+  isPlaying,
+  onPlayingChange,
+  loadVideoId,
+  onLoadVideoConsumed,
+}: MiniPlayerProps) {
   const [apiReady, setApiReady] = useState(false);
   const playerRef = useRef<YT.Player | null>(null);
   const playerReadyRef = useRef(false);
@@ -47,10 +42,12 @@ const MiniPlayer = forwardRef<MiniPlayerHandle, MiniPlayerProps>(function MiniPl
   const videosRef = useRef<VideoEntry[]>([]);
   const currentIndexRef = useRef(0);
   const onPlayingChangeRef = useRef(onPlayingChange);
-  const loadingRef = useRef(false);
+  const changingTrackRef = useRef(false);
   const loadingTimerRef = useRef<number>(0);
-  const imperativePlayRef = useRef(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  isPlayingRef.current = isPlaying;
+  onPlayingChangeRef.current = onPlayingChange;
 
   const clearTimeoutLoading = () => {
     if (loadingTimerRef.current) {
@@ -62,81 +59,27 @@ const MiniPlayer = forwardRef<MiniPlayerHandle, MiniPlayerProps>(function MiniPl
   const startLoadingTimeout = () => {
     clearTimeoutLoading();
     loadingTimerRef.current = window.setTimeout(() => {
-      if (loadingRef.current) {
-        loadingRef.current = false;
+      if (changingTrackRef.current) {
+        changingTrackRef.current = false;
         onPlayingChangeRef.current(false);
       }
     }, LOADING_TIMEOUT_MS);
   };
 
-  isPlayingRef.current = isPlaying;
-  onPlayingChangeRef.current = onPlayingChange;
-
-  const buildVideos = useCallback((m: Musician): VideoEntry[] => {
+  const buildVideos = (): VideoEntry[] => {
     const result: VideoEntry[] = [];
-    for (const album of m.albums) {
+    for (const album of musician.albums) {
       const id = extractVideoId(album.youtubeLink);
       if (id) result.push({ label: album.name, videoId: id });
     }
-    const mainId = extractVideoId(m.youtubeLink);
+    const mainId = extractVideoId(musician.youtubeLink);
     if (mainId && !result.some(v => v.videoId === mainId)) {
-      result.unshift({ label: m.name, videoId: mainId });
+      result.unshift({ label: musician.name, videoId: mainId });
     }
     return result;
-  }, []);
+  };
 
-  videosRef.current = buildVideos(musician);
-
-  useImperativeHandle(ref, () => ({
-    play() {
-      imperativePlayRef.current = true;
-      if (!playerReadyRef.current || !playerRef.current) return;
-      loadingRef.current = true;
-      startLoadingTimeout();
-      playerRef.current.playVideo();
-    },
-    pause() {
-      imperativePlayRef.current = true;
-      loadingRef.current = false;
-      clearTimeoutLoading();
-      if (!playerReadyRef.current || !playerRef.current) return;
-      playerRef.current.pauseVideo();
-    },
-    loadAndPlay() {
-      const videos = videosRef.current;
-      if (videos.length === 0) return;
-      currentIndexRef.current = 0;
-      setCurrentIndex(0);
-      if (!playerReadyRef.current || !playerRef.current) {
-        pendingVideoIdRef.current = videos[0].videoId;
-        return;
-      }
-      loadingRef.current = true;
-      startLoadingTimeout();
-      playerRef.current.loadVideoById(videos[0].videoId);
-    },
-    cue() {
-      const videos = videosRef.current;
-      if (videos.length === 0) return;
-      currentIndexRef.current = 0;
-      setCurrentIndex(0);
-      if (!playerReadyRef.current || !playerRef.current) {
-        pendingVideoIdRef.current = videos[0].videoId;
-        return;
-      }
-      loadingRef.current = false;
-      playerRef.current.cueVideoById(videos[0].videoId);
-    },
-    navigateToTrack(idx: number) {
-      const videos = videosRef.current;
-      if (idx < 0 || idx >= videos.length || !playerRef.current) return;
-      currentIndexRef.current = idx;
-      setCurrentIndex(idx);
-      loadingRef.current = true;
-      startLoadingTimeout();
-      playerRef.current.loadVideoById(videos[idx].videoId);
-    },
-  }), []);
+  videosRef.current = buildVideos();
 
   useEffect(() => {
     if (window.YT) {
@@ -176,43 +119,40 @@ const MiniPlayer = forwardRef<MiniPlayerHandle, MiniPlayerProps>(function MiniPl
             const vid = pendingVideoIdRef.current;
             pendingVideoIdRef.current = null;
             if (isPlayingRef.current) {
-              loadingRef.current = true;
+              changingTrackRef.current = true;
               startLoadingTimeout();
               playerRef.current?.loadVideoById(vid);
             } else {
               playerRef.current?.cueVideoById(vid);
             }
           } else if (isPlayingRef.current && initialVideoId) {
-            loadingRef.current = true;
-            startLoadingTimeout();
             playerRef.current?.playVideo();
           }
         },
         onStateChange: (event: { data: number }) => {
-          imperativePlayRef.current = false;
           if (event.data === YT.PlayerState.PLAYING) {
-            loadingRef.current = false;
+            changingTrackRef.current = false;
             clearTimeoutLoading();
             onPlayingChangeRef.current(true);
           } else if (
             event.data === YT.PlayerState.PAUSED ||
             event.data === YT.PlayerState.ENDED
           ) {
-            if (!loadingRef.current) {
+            if (!changingTrackRef.current) {
               onPlayingChangeRef.current(false);
             }
           }
         },
         onError: (event: { data: number }) => {
           console.error('MiniPlayer YT error:', event.data);
-          loadingRef.current = false;
+          changingTrackRef.current = false;
           clearTimeoutLoading();
           const nextIndex = currentIndexRef.current + 1;
           const videos = videosRef.current;
           if (nextIndex < videos.length) {
             currentIndexRef.current = nextIndex;
             setCurrentIndex(nextIndex);
-            loadingRef.current = true;
+            changingTrackRef.current = true;
             startLoadingTimeout();
             playerRef.current?.loadVideoById(videos[nextIndex].videoId);
           }
@@ -230,18 +170,11 @@ const MiniPlayer = forwardRef<MiniPlayerHandle, MiniPlayerProps>(function MiniPl
   }, [apiReady]);
 
   useEffect(() => {
-    if (imperativePlayRef.current) {
-      imperativePlayRef.current = false;
-      return;
-    }
     if (!playerReadyRef.current || !playerRef.current) return;
+    if (changingTrackRef.current) return;
     if (isPlaying) {
-      loadingRef.current = true;
-      startLoadingTimeout();
       playerRef.current.playVideo();
     } else {
-      loadingRef.current = false;
-      clearTimeoutLoading();
       playerRef.current.pauseVideo();
     }
   }, [isPlaying]);
@@ -260,7 +193,7 @@ const MiniPlayer = forwardRef<MiniPlayerHandle, MiniPlayerProps>(function MiniPl
     }
 
     if (isPlayingRef.current) {
-      loadingRef.current = true;
+      changingTrackRef.current = true;
       startLoadingTimeout();
       playerRef.current.loadVideoById(newVideoId);
     } else {
@@ -283,11 +216,21 @@ const MiniPlayer = forwardRef<MiniPlayerHandle, MiniPlayerProps>(function MiniPl
       setCurrentIndex(idx);
     }
 
-    loadingRef.current = true;
+    changingTrackRef.current = true;
     startLoadingTimeout();
     playerRef.current.loadVideoById(loadVideoId);
     onLoadVideoConsumed();
   }, [loadVideoId, onLoadVideoConsumed]);
+
+  const navigateTo = (idx: number) => {
+    const videos = videosRef.current;
+    if (idx < 0 || idx >= videos.length || !playerRef.current) return;
+    currentIndexRef.current = idx;
+    setCurrentIndex(idx);
+    changingTrackRef.current = true;
+    startLoadingTimeout();
+    playerRef.current.loadVideoById(videos[idx].videoId);
+  };
 
   const videos = videosRef.current;
   const currentLabel = videos[currentIndex]?.label ?? '';
@@ -311,12 +254,7 @@ const MiniPlayer = forwardRef<MiniPlayerHandle, MiniPlayerProps>(function MiniPl
             <div className="bg-bg/80 backdrop-blur-lg border border-border-subtle rounded-full px-2 py-1 shadow-md flex items-center gap-1">
               {hasMultiple && (
                 <button
-                  onClick={() => {
-                    const player = ref as React.RefObject<MiniPlayerHandle>;
-                    if ('current' in player && player.current) {
-                      player.current.navigateToTrack(currentIndex - 1);
-                    }
-                  }}
+                  onClick={() => navigateTo(currentIndex - 1)}
                   disabled={currentIndex === 0}
                   className="p-0.5 text-ink3 disabled:opacity-30 shrink-0 active:scale-90 transition-transform"
                 >
@@ -335,12 +273,7 @@ const MiniPlayer = forwardRef<MiniPlayerHandle, MiniPlayerProps>(function MiniPl
               </div>
               {hasMultiple && (
                 <button
-                  onClick={() => {
-                    const player = ref as React.RefObject<MiniPlayerHandle>;
-                    if ('current' in player && player.current) {
-                      player.current.navigateToTrack(currentIndex + 1);
-                    }
-                  }}
+                  onClick={() => navigateTo(currentIndex + 1)}
                   disabled={currentIndex >= videos.length - 1}
                   className="p-0.5 text-ink3 disabled:opacity-30 shrink-0 active:scale-90 transition-transform"
                 >
@@ -353,6 +286,4 @@ const MiniPlayer = forwardRef<MiniPlayerHandle, MiniPlayerProps>(function MiniPl
       </AnimatePresence>
     </>
   );
-});
-
-export default MiniPlayer;
+}
