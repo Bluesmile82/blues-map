@@ -5500,7 +5500,7 @@
   {
     "id": "edna-hicks",
     "name": "Edna Hicks",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/E/Ed/Edna_Hicks.jpg/500px-Edna_Hicks.jpg",
+    "image": "https://hu.wikipedia.org/wiki/Edna_Hicks",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/E/Ed/Edna_Hicks.jpg/500px-Edna_Hicks.jpg",
     "birthDate": "1895-10-14",
     "birthPlace": "New Orleans",
@@ -18124,7 +18124,7 @@
   {
     "id": "tabby-thomas",
     "name": "Tabby Thomas",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Tabby_Manse_-_Thomas_Fuller_House_%28Beaufort%2C_South_Carolina%29.jpg",
+    "image": "https://alchetron.com/cdn/tabby-thomas-c426aea8-d2b8-4ec7-88ed-39f16820c50-resize-750.jpeg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/2/25/Tabby_Manse_-_Thomas_Fuller_House_%28Beaufort%2C_South_Carolina%29.jpg",
     "birthDate": "1929-01-05",
     "birthPlace": "Baton Rouge, Louisiana",
@@ -21951,21 +21951,24 @@
   {
     "id": "katherine-henderson",
     "name": "Katherine Henderson",
-    "image": "/images/musicians/katherine-henderson.png",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP._35ngAkFkUuk0A9xYuemNAHaJH%3Fpid%3DApi&f=1&ipt=01b15373a2018c6eb152246446f2d2c8f1f62798a619821fac045a22bebeb42f&ipo=images",
     "image_source": "",
-    "birthDate": "1898",
-    "birthPlace": "Kentucky",
+    "birthDate": "1909-06-23",
+    "birthPlace": "St. louis, Missouri",
     "birthCoords": [
-      -85,
-      37
+      90.19,
+      38.62
     ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
+    "deathDate": "2002-09-01",
+    "deathPlace": "St. Louis, Missouri",
+    "deathCoords": [
+      90.19,
+      38.62
+    ],
     "spentTimePlaces": [],
     "instrument": "Vocals",
-    "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=qtFqyNlsHXU",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=kAmtyJuQ_mI",
     "albums": [
       {
         "name": "Complete Recorded Works (1924-1926) (Document Records, 1994)",
@@ -21979,7 +21982,10 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "secondaryStyles": [
+      "Vaudeville Blues"
+    ]
   },
   {
     "id": "jim-jackson",
@@ -25746,7 +25752,7 @@
   {
     "id": "kirk-fletcher",
     "name": "Kirk Fletcher",
-    "image": "/images/musicians/kirk-fletcher.png",
+    "image": "https://www.therockpit.net/wp-content/uploads/2020/07/kirkfletcher-promo1.jpg",
     "image_source": "",
     "birthDate": "1975-12-23",
     "birthPlace": "Compton, California",
@@ -27142,7 +27148,7 @@
   {
     "id": "pyeng-threadgill",
     "name": "Pyeng Threadgill",
-    "image": "/images/musicians/pyeng-threadgill.png",
+    "image": "https://images.squarespace-cdn.com/content/v1/5702670701dbae8fc9bea49b/1531776485125-F2K6IN3DZHJ0WAHXIH1K/pyengnyccom.JPG",
     "image_source": "",
     "birthDate": "1977-11-14",
     "birthPlace": "New York City, New York",
@@ -27163,8 +27169,8 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=MwRx_FxF9QM",
+    "bluesStyle": "Jazz",
+    "youtubeLink": "https://www.youtube.com/watch?v=QBMylD66F04&list=RDB7tpxcRUW3M&index=5",
     "albums": [
       {
         "name": "Sweet Home: Pyeng Threadgill Sings Robert Johnson (2004)",
@@ -30500,7 +30506,7 @@
   {
     "id": "marcus-king",
     "name": "Marcus King",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Marcus_D._King_-_2015.jpg/500px-Marcus_D._King_-_2015.jpg",
+    "image": "https://thebiography.org/wp-content/uploads/2024/03/Marcus-King-Dan-Auerbach-59-Les-Paul-Young-Blood-Electric-guitars-Acoustic-guitars-Effects-pedals-Amplifiers-Product-reviews-scaled.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Marcus_D._King_-_2015.jpg/500px-Marcus_D._King_-_2015.jpg",
     "birthDate": "1996-03-11",
     "birthPlace": "Greenville, South Carolina",
@@ -31221,7 +31227,7 @@
   {
     "id": "mr-sipp",
     "name": "Castro \"Mr. Sipp\" Coleman",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Castro_Mr_Sipp_Coleman.jpg/500px-Castro_Mr_Sipp_Coleman.jpg",
+    "image": "https://media.gettyimages.com/id/1140017286/photo/2019-new-orleans-jazz-heritage-festival-day-3.jpg?s=594x594&w=gi&k=20&c=3nQXwVVSiRSzhQPW2YekwTynwRY_LoJXjtVHX9Q3kng=",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Castro_Mr_Sipp_Coleman.jpg/500px-Castro_Mr_Sipp_Coleman.jpg",
     "birthDate": "1976-08-25",
     "birthPlace": "McComb, Mississippi",
@@ -31925,7 +31931,7 @@
   {
     "id": "w.c.-handy",
     "name": "W.C. Handy",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/W._C._Handy_%281941_Van_Vechten_portrait%29.jpg/300px-W._C._Handy_%281941_Van_Vechten_portrait%29.jpg",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNs4lgiIyMgSt8xjDFVBzK8fEWbW8fM8jY9fxad_CiUUi3nDKaz_6uOnGqLZF111Xx8CGUoTzhv9GToYdG3dSy55LnVDonnsrDQmtm8GqzRykr3HcCGueBNyWphn16z5d1tDoVz2P5ActH/s1600/W.C.+HANDY+%25281873-1958%2529.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/a/a7/W._C._Handy_%281941_Van_Vechten_portrait%29.jpg",
     "birthDate": "1873-11-16",
     "birthPlace": "Florence, Alabama",
@@ -31963,7 +31969,7 @@
       }
     ],
     "instrument": "Trumpet",
-    "bluesStyle": "Memphis Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=cSuTTSOctGw",
     "albums": [
       {

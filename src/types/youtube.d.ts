@@ -25,5 +25,5 @@ declare namespace YT {
       onError?: (event: { data: number }) => void;
     };
   }
-  const PlayerState: { PLAYING: number; PAUSED: number; ENDED: number; BUFFERING: number };
+  const PlayerState: { PLAYING: number; PAUSED: number; ENDED: number; BUFFERING: number; CUED: number; UNSTARTED: number };
 }
