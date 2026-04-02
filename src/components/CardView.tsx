@@ -3,7 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Map, { Marker, Source, Layer } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useTranslation } from 'react-i18next';
-import { Guitar, Piano, Mic, Drum, Music, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, Info, Dice5, Play, Pause, Search, Heart, ListPlus } from 'lucide-react';
+import {
+  Guitar, Piano, Mic, Drum, Music, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, Info, Dice5, Play, Pause, Search, Heart, ListPlus
+} from 'lucide-react';
 import type { Musician } from '../types';
 import { getStyleHex, getStyleColor } from '../utils/colors';
 import MobileVideoPlayer from './MobileVideoPlayer';
@@ -26,6 +28,9 @@ const INSTRUMENT_ICONS: Record<string, React.ComponentType<{ className?: string;
   Piano, Keyboards: Piano, Organ: Piano,
   Vocals: Mic, Voice: Mic,
   Drums: Drum, 'Drum kit': Drum,
+  Mandolin: Guitar,
+  Washboard: Drum,
+  Tambourine: Drum,
 };
 
 /** Returns the nearest item index using 2D distance from the touch point,
@@ -105,12 +110,12 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   const { t } = useTranslation();
   const [isFlipped, setIsFlipped] = useState(false);
   const [slideDir, setSlideDir] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
-  
+
   // Mobile gesture state
   const [dragDirection, setDragDirection] = useState<Direction | null>(null);
   const [showHints, setShowHints] = useState(false);
   const [selectedMusicianIndex, setSelectedMusicianIndex] = useState(0);
-  
+
   // Mobile drawer state
   const [showDrawer, setShowDrawer] = useState(false);
 
@@ -128,7 +133,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   const user = useAtomValue(userAtom);
   const isMusicianFavorited = useAtomValue(isMusicianFavoritedAtom);
   const { toggleFavorite } = useLists();
-  
+
   // Gyroscope state - use ref to avoid re-renders
   const gyroRef = useRef({ alpha: 0, beta: 0, gamma: 0, enabled: false });
   const smoothBetaRef = useRef(0);
@@ -238,15 +243,15 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
       window.addEventListener('deviceorientation', handleOrientation);
       gyroRef.current.enabled = true;
     }
-    
+
     const animate = () => {
       if (!tiltWrapperRef.current || isTouchingRef.current) return;
-      
+
       const elapsed = Date.now() - startTime;
-      
+
       // Use gyroscope if available and enabled, otherwise fall back to animation only
       let rotX: number, rotY: number;
-      
+
       if (gyroRef.current.enabled) {
         const targetBeta = Math.max(-45, Math.min(45, gyroRef.current.beta - 90));
         const targetGamma = Math.max(-30, Math.min(30, gyroRef.current.gamma));
@@ -260,10 +265,10 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
 
         const gyroRotX = dBeta * 0.4;
         const gyroRotY = -dGamma * 0.5;
-        
+
         const animRotX = Math.sin(elapsed * 0.001) * 1.5;
         const animRotY = Math.cos(elapsed * 0.0012) * 1.5;
-        
+
         rotX = gyroRotX + animRotX;
         rotY = gyroRotY + animRotY;
       } else {
@@ -271,23 +276,23 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
         rotX = Math.sin(elapsed * 0.002) * 4;
         rotY = Math.cos(elapsed * 0.0025) * 5;
       }
-      
+
       tiltWrapperRef.current.style.transition = 'transform 0.1s linear, box-shadow 0.15s ease';
       tiltWrapperRef.current.style.transform =
         `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.03)`;
-      
+
       const shadowX = -rotY * 2;
       const shadowY = -rotX * 2;
       tiltWrapperRef.current.style.boxShadow = `
         ${shadowX}px ${shadowY}px 30px rgba(0,0,0,0.25),
         ${shadowX * 0.5}px ${shadowY * 0.5}px 60px rgba(0,0,0,0.15)
       `;
-      
+
       animationFrameId = requestAnimationFrame(animate);
     };
-    
+
     animate();
-    
+
     return () => {
       if (animationFrameId) {
         cancelAnimationFrame(animationFrameId);
@@ -424,9 +429,9 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   const hadSignificantDragRef = useRef(false);               // true if drag ever left the cancel zone
   const dragDistanceRef = useRef(0);
   // Refs to rendered overlay items and containers for hit-testing
-  const influencerItemRefs     = useRef<(HTMLDivElement | null)[]>([]);
-  const influencedItemRefs     = useRef<(HTMLDivElement | null)[]>([]);
-  const playedWithItemRefs     = useRef<(HTMLDivElement | null)[]>([]);
+  const influencerItemRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const influencedItemRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const playedWithItemRefs = useRef<(HTMLDivElement | null)[]>([]);
   const influencerContainerRef = useRef<HTMLDivElement | null>(null);
   const influencedContainerRef = useRef<HTMLDivElement | null>(null);
   const playedWithContainerRef = useRef<HTMLDivElement | null>(null);
@@ -439,17 +444,17 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   const handleTouchMove = useCallback((e: React.TouchEvent) => {
     if (!isMobile) return;
     if (!touchStartRef.current || !tiltWrapperRef.current) return;
-    
+
     isTouchingRef.current = true;
     const touch = e.touches[0];
     const currentTime = Date.now();
-    
+
     // Calculate drag offset from start position
     const dx = touch.clientX - touchStartRef.current.x;
     const dy = touch.clientY - touchStartRef.current.y;
     const absDx = Math.abs(dx);
     const absDy = Math.abs(dy);
-    
+
     // Calculate velocity for inertia
     const deltaTime = currentTime - lastTouchRef.current.time;
     if (deltaTime > 0) {
@@ -458,14 +463,14 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
         y: (touch.clientY - lastTouchRef.current.y) / deltaTime
       };
     }
-    
+
     // Update last touch position
     lastTouchRef.current = { x: touch.clientX, y: touch.clientY, time: currentTime };
-    
+
     // Movement limits — keep translation small
     const maxOffsetUnlocked = Math.min(window.innerWidth, window.innerHeight) * 0.06;
-    const maxOffsetLocked   = Math.min(window.innerWidth, window.innerHeight) * 0.12;
-    const currentMaxOffset  = lockedDirectionRef.current ? maxOffsetLocked : maxOffsetUnlocked;
+    const maxOffsetLocked = Math.min(window.innerWidth, window.innerHeight) * 0.12;
+    const currentMaxOffset = lockedDirectionRef.current ? maxOffsetLocked : maxOffsetUnlocked;
 
     // Clamp position
     const clampedDx = Math.max(-currentMaxOffset, Math.min(currentMaxOffset, dx));
@@ -481,7 +486,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
     // Subtle 3D tilt
     const rotationX = dragProgressY * -22;
     const rotationY = dragProgressX * 22;
-    const rotation  = clampedDx * 0.12;
+    const rotation = clampedDx * 0.12;
 
     tiltWrapperRef.current.style.transition = 'none';
     tiltWrapperRef.current.style.transform = `
@@ -500,8 +505,8 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
     const distance = Math.max(absDx, absDy);
     dragDistanceRef.current = distance;
 
-    const dragPercent    = distance / currentMaxOffset;
-    const CANCEL_ZONE    = 0.25; // inner 25% = neutral
+    const dragPercent = distance / currentMaxOffset;
+    const CANCEL_ZONE = 0.25; // inner 25% = neutral
     const LOCK_THRESHOLD = 0.45; // must drag 45% to lock
     const UNLOCK_THRESHOLD = 0.30; // return to 30% to unlock
 
@@ -529,10 +534,10 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
     if (lockedDirectionRef.current) {
       const dir = lockedDirectionRef.current;
       const reversed =
-        (dir === 'up'    && dy > 0) ||
-        (dir === 'down'  && dy < 0) ||
+        (dir === 'up' && dy > 0) ||
+        (dir === 'down' && dy < 0) ||
         (dir === 'right' && dx < 0) ||
-        (dir === 'left'  && dx > 0);
+        (dir === 'left' && dx > 0);
       if (reversed) { dismiss(dir); return; }
     }
 
@@ -604,27 +609,27 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
     // Read from refs — avoids stale-closure issues with batched state updates
     const dirOnRelease = dragDirectionRef.current;
     const hadSignificantDrag = hadSignificantDragRef.current;
-    
+
     // Apply smooth inertia animation without bounce
     if (tiltWrapperRef.current) {
       let currentX = dragOffsetRef.current.x;
       let currentY = dragOffsetRef.current.y;
       let velocityX = dragVelocityRef.current.x * 10;
       let velocityY = dragVelocityRef.current.y * 10;
-      
+
       const friction = 0.85;
       const minVelocity = 0.5;
-      
+
       const animateInertia = () => {
         if (!tiltWrapperRef.current) return;
-        
+
         // Only apply friction, no return force (no spring effect)
         velocityX *= friction;
         velocityY *= friction;
-        
+
         currentX += velocityX;
         currentY += velocityY;
-        
+
         // Calculate rotation
         const maxOffset = Math.min(window.innerWidth, window.innerHeight) * (lockedDirectionRef.current ? 0.12 : 0.06);
         const rotationX = (currentY / maxOffset) * -22;
@@ -645,11 +650,11 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
           ${shadowX}px ${shadowY}px 40px rgba(0,0,0,0.3),
           ${shadowX * 0.5}px ${shadowY * 0.5}px 80px rgba(0,0,0,0.15)
         `;
-        
+
         // Check if animation should continue
         const speed = Math.sqrt(velocityX * velocityX + velocityY * velocityY);
         const offset = Math.sqrt(currentX * currentX + currentY * currentY);
-        
+
         if (speed > minVelocity && offset > 1) {
           inertiaAnimationRef.current = requestAnimationFrame(animateInertia);
         } else {
@@ -660,11 +665,11 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
           inertiaAnimationRef.current = null;
         }
       };
-      
+
       // Start inertia animation
       inertiaAnimationRef.current = requestAnimationFrame(animateInertia);
     }
-    
+
     // Snap card back helper
     const snapBack = () => {
       if (tiltWrapperRef.current) {
@@ -786,7 +791,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
     if (tiltWrapperRef.current) {
       tiltWrapperRef.current.style.transform =
         `perspective(900px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.03)`;
-      
+
       // Dynamic shadow on opposite side
       const shadowX = -(x - 0.5) * 20;
       const shadowY = -(y - 0.5) * 20;
@@ -850,6 +855,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   const hex = getStyleHex(current.bluesStyle);
   const [r, g, b] = getStyleColor(current.bluesStyle) as [number, number, number];
   const birthYear = current.birthDate?.slice(0, 4) ?? '';
+  const deathYear = current.deathDate?.slice(0, 4) ?? '';
   const cardW = isMobile ? Math.min(window.innerWidth * 0.72, 300) : 340;
   const cardH = cardW * 1.4;
 
@@ -974,17 +980,19 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
                         (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(current.name)}&background=333&color=fff&size=400`;
                       }}
                     />
-                    <div className="absolute top-2 right-2 w-5 h-5 rotate-45 rounded-sm shadow-lg opacity-90" style={{ background: hex }} />
+                    <div className="absolute top-2 right-2 w-6 h-6 rotate-45 rounded-sm shadow-lg opacity-90 flex items-center justify-center" style={{ background: hex }} >
+                      <InstrumentIcon instrument={current.instrument} className="text-white/80 shrink-0 -rotate-45" size={18} />
+                    </div>
+
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-3 pt-6 pb-2">
                       <div className="flex items-center gap-2">
                         <h2 className="text-white font-bold text-lg tracking-wide leading-tight truncate flex-1">{current.name}</h2>
-                        <InstrumentIcon instrument={current.instrument} className="text-white/80 shrink-0" size={18} />
                       </div>
                       <div className="flex items-center gap-2 mt-1">
                         <span className="inline-block px-2 py-0.5 rounded-full text-white text-[11px] font-semibold tracking-wide" style={{ background: `rgba(${r},${g},${b},0.85)` }}>
                           {current.bluesStyle}
                         </span>
-                        <span className="text-white/60 text-xs">{birthYear}</span>
+                        {birthYear && <span className="text-white/60 text-xs">{birthYear} - {deathYear || 'Present'}</span>}
                       </div>
                     </div>
                   </div>
@@ -1303,7 +1311,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
             )}
           </AnimatePresence>
         </div>
-        
+
         {/* Single direction hint overlay when dragging */}
         <AnimatePresence>
           {dragDirection && (
@@ -1382,7 +1390,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
             </motion.div>
           )}
         </AnimatePresence>
-        
+
         {/* Bottom button to open drawer */}
         <AnimatePresence>
           {!showDrawer && (
@@ -1400,7 +1408,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
             </motion.button>
           )}
         </AnimatePresence>
-        
+
         {/* Bottom sheet drawer for musician details */}
         <AnimatePresence>
           {showDrawer && (
@@ -1412,7 +1420,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
               }}
               onNavigate={onSelect}
               editMode={false}
-              onEdit={() => {}}
+              onEdit={() => { }}
               onPlayVideo={(url: string) => {
                 const m = url.match(/[?&]v=([^&#]+)/) || url.match(/youtu\.be\/([^?&#]+)/);
                 if (m) {
@@ -1423,7 +1431,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
               videoMusician={null}
               manualVideoUrl={null}
               autoplay={autoplay}
-              onVideoClose={() => {}}
+              onVideoClose={() => { }}
               isMobile={true}
               bottomInset={0}
               cardMode={true}
