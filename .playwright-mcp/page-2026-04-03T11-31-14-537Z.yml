@@ -1,0 +1,765 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - generic [ref=e13]:
+          - link "YouTube Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e19]:
+              - img
+          - generic [ref=e20]: ES
+        - button "Skip navigation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Skip navigation
+      - button "Search" [ref=e31] [cursor=pointer]:
+        - generic [ref=e34]:
+          - img
+        - tooltip "tooltip"
+      - generic [ref=e36]:
+        - button "Settings" [ref=e41] [cursor=pointer]:
+          - generic [ref=e44]:
+            - img
+        - link "Sign in" [ref=e47] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DPaul%252BGayten%252Brhythm%252Bblues%252Bpiano%252Bperformance&hl=en&ec=65620
+          - generic [ref=e50]: Sign in
+  - generic [ref=e54]:
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - generic [ref=e61]:
+            - tablist [ref=e63]:
+              - tab "All" [selected] [ref=e67] [cursor=pointer]:
+                - generic [ref=e69]: All
+              - tab "Shorts" [ref=e76] [cursor=pointer]:
+                - generic [ref=e78]: Shorts
+              - tab "Videos" [ref=e85] [cursor=pointer]:
+                - generic [ref=e87]: Videos
+              - tab "Unwatched" [ref=e94] [cursor=pointer]:
+                - generic [ref=e96]: Unwatched
+              - tab "Watched" [ref=e103] [cursor=pointer]:
+                - generic [ref=e105]: Watched
+              - tab "Recently uploaded" [ref=e112] [cursor=pointer]:
+                - generic [ref=e114]: Recently uploaded
+              - tab "Live" [ref=e121] [cursor=pointer]:
+                - generic [ref=e123]: Live
+            - button "Next" [ref=e131] [cursor=pointer]:
+              - generic [ref=e135]:
+                - img
+          - link "About these results" [ref=e142] [cursor=pointer]:
+            - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+            - generic [ref=e143]: About these results
+            - generic [ref=e147]:
+              - img
+          - generic [ref=e152]:
+            - button "Search filters" [ref=e154] [cursor=pointer]:
+              - generic [ref=e155]: Filters
+              - generic [ref=e159]:
+                - img
+            - tooltip "tooltip"
+        - generic [ref=e168]:
+          - generic [ref=e173]:
+            - img [ref=e179]:
+              - generic [ref=e181]:
+                - img
+            - generic [ref=e183] [cursor=pointer]:
+              - generic [ref=e184]:
+                - link "Science-Backed ADHD Music" [ref=e187]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CPmwhAaXPaeeJGYOqhcIP86WesA348OaihgHi2JfruhVkEAEgAGDVtdcCggEXY2EtcHViLTYyMTk4MTE3NDcwNDkzNzGgAd3i0cgDqAMEyAMKqgS2Ak_QBddtbtFHId8yXEd5GSCLmJr_IyN5L8SU0jX9BqKVWszc5E-eWng9SR8SvsYjerASGej4M1AAsjz-7GpnqgUKptGncy_VtLvwsfbuygwy2eWLCpEMnTFnizA2mYtYe6eDhX0Q9eea6frujrzDGp1-Nd7w98xOGY1vt2XkYW5YqDvX9gl4lNqwEoE6z4VJzxGa5X-fCcHzkTWaQlYyf_LDziDyF3LepwXqc-E9_lE0r4OA8vb4tQohI60YcX-9iBxf6DURWkn244cQ6PTTQGkiLgqj1tA7IjrajjOcBVoxDxWeXpdc2A1Oc0QzZ3U3zMYZUlMHNFlqZfSmExeV4kUYAaeHb2qT7vH6EkjB20W3C9GCCBAkYxWbb1m0KTCsgUSAVeHmfxD20GJTfSmYurT-71kkfp-IBf6V3o9XkgUHCBN48-WTNqAGboAHi52uN5AHAagH8sCxAqgHuMSxAqgH4baxAqgHpc-xAqgH552xAqgH6J2xAqgH77WxAqgH8LWxAqgH-dOxAqgHydqxAqgHqeCxAqgHhAioB6bUsQKoB6jSG6gHtgeoB7CbsQKoB66xsQKoB-a8sQKoB8q6sQKoB_2ysQKoB_e4sQKoB_i4sQKoB8jPsQKoB8nPsQKoB63gsQKoB83HsQKoB_HRsQKoB_zVsQKoB_vVsQKoB4zWsQKoB4vWsQKoB5rhsQKoB53XsQKoB53UsQKoB4HGG6gH_K-xAqgHq8UbqAe3obECqAfVqbECqAfYprECqAfetbECuAgB0gg3CIDBgFAQARheMgijgsCAgICgDDoSgMKAgICQgAKAgICAgJCG4AMqSNmg0jVQFFjI4KK8ytGTA5oJFWh0dHBzOi8vd3d3LmJyYWluLmZtL7EJ2JbKTw0LvFnICQDICYoCmAsBugtDCAMQBRgEIAgoATAcQAFIAFABWE5gAGgAcAGIAQCYAQGiAQsKAKACAagCA9gCAdgBAYACAYgCBroDCXZpYnJ1emFiYdALEqIMDCoKCgiV4rECjt-xAtIMAhABmg0BEqoNAkVTyA0B0g1zaHR0cHM6Ly93d3cuYnJhaW4uZm0vP3V0bV9zb3VyY2U9Z29vZ2xlLWFkcy1kZW1hbmQtZ2VuLXRpZXItMiZ1dG1fY2FtcGFpZ249JmdhZF9zb3VyY2U9MiZnYWRfY2FtcGFpZ25pZD0yMzM4Njg4NDg2MrgT____________AbAUA8AVgYCAQNAVAdgVAZgWAeIWAggBgBcBihcWCAMYASABKAEwATgBQAFIAVABWAFgAqAXAakX6BrHRClg9Mi6FwYoADAAOAHQGAHwGAHCGQIIAQ&gclid=EAIaIQobChMIp46jvMrRkwMVA1VBAh3zkgfWEAEYASAAEgIGyfD_BwE&num=1&cid=CAASF-Ro2uZ1cBGm39U_FRboBkgWnShHnj8g&sig=AOD64_1oeWAG6ZrHoWccF95uukwcl3wp3Q&ms=%5BCLICK_MS%5D&nb=0&nx=%5BNX%5D&ny=%5BNY%5D&dim=%5BDIM%5D
+                - 'link "The #1 Music App for ADHD" [ref=e190]':
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CPmwhAaXPaeeJGYOqhcIP86WesA348OaihgHi2JfruhVkEAEgAGDVtdcCggEXY2EtcHViLTYyMTk4MTE3NDcwNDkzNzGgAd3i0cgDqAMEyAMKqgS2Ak_QBddtbtFHId8yXEd5GSCLmJr_IyN5L8SU0jX9BqKVWszc5E-eWng9SR8SvsYjerASGej4M1AAsjz-7GpnqgUKptGncy_VtLvwsfbuygwy2eWLCpEMnTFnizA2mYtYe6eDhX0Q9eea6frujrzDGp1-Nd7w98xOGY1vt2XkYW5YqDvX9gl4lNqwEoE6z4VJzxGa5X-fCcHzkTWaQlYyf_LDziDyF3LepwXqc-E9_lE0r4OA8vb4tQohI60YcX-9iBxf6DURWkn244cQ6PTTQGkiLgqj1tA7IjrajjOcBVoxDxWeXpdc2A1Oc0QzZ3U3zMYZUlMHNFlqZfSmExeV4kUYAaeHb2qT7vH6EkjB20W3C9GCCBAkYxWbb1m0KTCsgUSAVeHmfxD20GJTfSmYurT-71kkfp-IBf6V3o9XkgUHCBN48-WTNqAGboAHi52uN5AHAagH8sCxAqgHuMSxAqgH4baxAqgHpc-xAqgH552xAqgH6J2xAqgH77WxAqgH8LWxAqgH-dOxAqgHydqxAqgHqeCxAqgHhAioB6bUsQKoB6jSG6gHtgeoB7CbsQKoB66xsQKoB-a8sQKoB8q6sQKoB_2ysQKoB_e4sQKoB_i4sQKoB8jPsQKoB8nPsQKoB63gsQKoB83HsQKoB_HRsQKoB_zVsQKoB_vVsQKoB4zWsQKoB4vWsQKoB5rhsQKoB53XsQKoB53UsQKoB4HGG6gH_K-xAqgHq8UbqAe3obECqAfVqbECqAfYprECqAfetbECuAgB0gg3CIDBgFAQARheMgijgsCAgICgDDoSgMKAgICQgAKAgICAgJCG4AMqSNmg0jVQFFjI4KK8ytGTA5oJFWh0dHBzOi8vd3d3LmJyYWluLmZtL7EJ2JbKTw0LvFnICQDICYoCmAsBugtDCAMQBRgEIAgoATAcQAFIAFABWE5gAGgAcAGIAQCYAQGiAQsKAKACAagCA9gCAdgBAYACAYgCBroDCXZpYnJ1emFiYdALEqIMDCoKCgiV4rECjt-xAtIMAhABmg0BEqoNAkVTyA0B0g1zaHR0cHM6Ly93d3cuYnJhaW4uZm0vP3V0bV9zb3VyY2U9Z29vZ2xlLWFkcy1kZW1hbmQtZ2VuLXRpZXItMiZ1dG1fY2FtcGFpZ249JmdhZF9zb3VyY2U9MiZnYWRfY2FtcGFpZ25pZD0yMzM4Njg4NDg2MrgT____________AbAUA8AVgYCAQNAVAdgVAZgWAeIWAggBgBcBihcWCAMYASABKAEwATgBQAFIAVABWAFgAqAXAakX6BrHRClg9Mi6FwYoADAAOAHQGAHwGAHCGQIIAQ&gclid=EAIaIQobChMIp46jvMrRkwMVA1VBAh3zkgfWEAEYASAAEgIGyfD_BwE&num=1&cid=CAASF-Ro2uZ1cBGm39U_FRboBkgWnShHnj8g&sig=AOD64_1oeWAG6ZrHoWccF95uukwcl3wp3Q&ms=%5BCLICK_MS%5D&nb=7&nx=%5BNX%5D&ny=%5BNY%5D&dim=%5BDIM%5D
+                - generic [ref=e191]:
+                  - generic [ref=e193]:
+                    - generic [ref=e194]: Sponsored
+                    - text: ·
+                  - generic [ref=e196]: Brain.fm
+              - button "My Ad Center" [ref=e199]:
+                - generic [ref=e203]:
+                  - img
+          - generic [ref=e208]:
+            - link [ref=e210] [cursor=pointer]:
+              - /url: /watch?v=JBifFvErklk&list=RDJBifFvErklk&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+              - img [ref=e212]
+              - img [ref=e215]:
+                - generic [ref=e218]:
+                  - img
+                - generic [ref=e219]: 2:48
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e220] [cursor=pointer]:
+              - generic [ref=e221]:
+                - generic [ref=e222]:
+                  - 'heading "#NOLA#Rocker #Latin Paul Gayten 78rpm #REGAL 3281 Ooh La La #50s #New#Orleans #Rumba #Piano #Clave 2 minutes, 48 seconds" [level=3] [ref=e223]':
+                    - 'link "#NOLA#Rocker #Latin Paul Gayten 78rpm #REGAL 3281 Ooh La La #50s #New#Orleans #Rumba #Piano #Clave 2 minutes, 48 seconds" [ref=e224]':
+                      - /url: /watch?v=JBifFvErklk&list=RDJBifFvErklk&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                      - text: "#NOLA#Rocker #Latin Paul Gayten 78rpm #REGAL 3281 Ooh La La #50s #New#Orleans #Rumba #Piano #Clave"
+                  - button "Action menu" [ref=e228]:
+                    - generic [ref=e231]:
+                      - img
+                - generic [ref=e234]:
+                  - generic [ref=e235]: 90 views
+                  - generic [ref=e236]: •3 years ago
+              - generic [ref=e237]:
+                - link "Go to channel TURocker" [ref=e238]:
+                  - /url: /@TURocker
+                - link "TURocker" [ref=e244]:
+                  - /url: /@TURocker
+              - generic [ref=e245]:
+                - generic [ref=e246]: "w/his#Orchestra #Louisiana #Rhythm&#Blues."
+                - tooltip "tooltip"
+          - generic [ref=e247]:
+            - generic [ref=e250]:
+              - img [ref=e252]:
+                - generic [ref=e254]:
+                  - img
+              - heading "Shorts" [level=2] [ref=e257]
+            - generic [ref=e258]:
+              - generic [ref=e259]:
+                - generic [ref=e262]:
+                  - link [ref=e263] [cursor=pointer]:
+                    - /url: /shorts/XxRA7U5uqLk
+                    - img [ref=e268]:
+                      - generic [ref=e269]: New
+                  - generic [ref=e270] [cursor=pointer]:
+                    - link "Pastor Troy — No Mo Play in GA | Vintage 1950s Blues Interpretation" [ref=e271]:
+                      - /url: /shorts/XxRA7U5uqLk
+                    - generic [ref=e272]: 1K views
+                  - button "More actions" [ref=e274] [cursor=pointer]:
+                    - generic [ref=e278]:
+                      - img
+                - generic [ref=e284]:
+                  - link [ref=e285] [cursor=pointer]:
+                    - /url: /shorts/1qeD79RR1sA
+                  - generic [ref=e289] [cursor=pointer]:
+                    - link "Been a long day and now I need to play some blues" [ref=e290]:
+                      - /url: /shorts/1qeD79RR1sA
+                    - generic [ref=e291]: 115K views
+                  - button "More actions" [ref=e293] [cursor=pointer]:
+                    - generic [ref=e297]:
+                      - img
+              - generic [ref=e301]:
+                - generic [ref=e304]:
+                  - link [ref=e305] [cursor=pointer]:
+                    - /url: /shorts/YT2CXY2Rmw8
+                  - generic [ref=e309] [cursor=pointer]:
+                    - 'link "Please #blues #piano #viral Follow thank you 🙏 😊" [ref=e310]':
+                      - /url: /shorts/YT2CXY2Rmw8
+                    - generic [ref=e311]: 37K views
+                  - button "More actions" [ref=e313] [cursor=pointer]:
+                    - generic [ref=e317]:
+                      - img
+                - generic [ref=e323]:
+                  - link [ref=e324] [cursor=pointer]:
+                    - /url: /shorts/g78e--7yBeY
+                  - generic [ref=e328] [cursor=pointer]:
+                    - link "How to play Blues Piano" [ref=e329]:
+                      - /url: /shorts/g78e--7yBeY
+                    - generic [ref=e330]: 201K views
+                  - button "More actions" [ref=e332] [cursor=pointer]:
+                    - generic [ref=e336]:
+                      - img
+            - button "Show more" [ref=e343] [cursor=pointer]:
+              - generic [ref=e344]: Show more
+              - generic [ref=e348]:
+                - img
+          - generic [ref=e353]:
+            - link [ref=e355] [cursor=pointer]:
+              - /url: /watch?v=i_hjtrY9qb8&list=RDi_hjtrY9qb8&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e357] [cursor=pointer]:
+              - generic [ref=e358]:
+                - generic [ref=e359]:
+                  - heading "Jools Holland - Blues Piano Demo (Nov 23rd 1994, Later With Jools Holland) 2 minutes, 25 seconds" [level=3] [ref=e360]:
+                    - link "Jools Holland - Blues Piano Demo (Nov 23rd 1994, Later With Jools Holland) 2 minutes, 25 seconds" [ref=e361]:
+                      - /url: /watch?v=i_hjtrY9qb8&list=RDi_hjtrY9qb8&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                      - text: Jools Holland - Blues Piano Demo (Nov 23rd 1994, Later With Jools Holland)
+                  - button "Action menu" [ref=e365]:
+                    - generic [ref=e368]:
+                      - img
+                - generic [ref=e371]:
+                  - generic [ref=e372]: 22K views
+                  - generic [ref=e373]: •3 years ago
+              - generic [ref=e374]:
+                - link "Go to channel Jools Holland" [ref=e375]:
+                  - /url: /channel/UCNFul0clNqtk0c-qN7-huAQ
+                - generic [ref=e376]:
+                  - link "Jools Holland" [ref=e380]:
+                    - /url: /channel/UCNFul0clNqtk0c-qN7-huAQ
+                  - img "Official Artist Channel" [ref=e383]:
+                    - generic [ref=e386]:
+                      - img
+              - generic [ref=e387]:
+                - generic [ref=e388]: This week, Jools gets the crowd going, providing a back beat for a Blues Piano Demo. To help celebrate the 30th anniversary of ...
+                - tooltip "tooltip"
+          - generic [ref=e390]:
+            - link [ref=e392] [cursor=pointer]:
+              - /url: /watch?v=jWuAgin8Ol4&list=RDjWuAgin8Ol4&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e394] [cursor=pointer]:
+              - generic [ref=e395]:
+                - generic [ref=e396]:
+                  - heading "The Music Goes Round & Round - Paul Gayton 2 minutes" [level=3] [ref=e397]:
+                    - link "The Music Goes Round & Round - Paul Gayton 2 minutes" [ref=e398]:
+                      - /url: /watch?v=jWuAgin8Ol4&list=RDjWuAgin8Ol4&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                      - text: The Music Goes Round & Round - Paul Gayton
+                  - button "Action menu" [ref=e402]:
+                    - generic [ref=e405]:
+                      - img
+                - generic [ref=e408]:
+                  - generic [ref=e409]: 257 views
+                  - generic [ref=e410]: •5 years ago
+              - generic [ref=e411]:
+                - link "Go to channel Bob Marvin" [ref=e412]:
+                  - /url: /@bobmarvin2384
+                - link "Bob Marvin" [ref=e417]:
+                  - /url: /@bobmarvin2384
+          - generic [ref=e418]:
+            - generic [ref=e421]:
+              - img [ref=e423]:
+                - generic [ref=e425]:
+                  - img
+              - heading "Shorts" [level=2] [ref=e428]
+            - generic [ref=e429]:
+              - generic [ref=e430]:
+                - generic [ref=e433]:
+                  - link [ref=e434] [cursor=pointer]:
+                    - /url: /shorts/Fd8WI92Ni48
+                  - generic [ref=e438] [cursor=pointer]:
+                    - link "Gospel Blues Rhythm Chords" [ref=e439]:
+                      - /url: /shorts/Fd8WI92Ni48
+                    - generic [ref=e440]: 7.9K views
+                  - button "More actions" [ref=e442] [cursor=pointer]:
+                    - generic [ref=e446]:
+                      - img
+                - generic [ref=e452]:
+                  - link [ref=e453] [cursor=pointer]:
+                    - /url: /shorts/e4sfjdL6t24
+                  - generic [ref=e457] [cursor=pointer]:
+                    - link "Powerful blues piano solo 🤯🤯" [ref=e458]:
+                      - /url: /shorts/e4sfjdL6t24
+                    - generic [ref=e459]: 46K views
+                  - button "More actions" [ref=e461] [cursor=pointer]:
+                    - generic [ref=e465]:
+                      - img
+              - generic [ref=e469]:
+                - generic [ref=e472]:
+                  - link [ref=e473] [cursor=pointer]:
+                    - /url: /shorts/2e2qMnYsjUI
+                  - generic [ref=e477] [cursor=pointer]:
+                    - 'link "Blues Endings and turnaround #lovemusic #bluescommunity" [ref=e478]':
+                      - /url: /shorts/2e2qMnYsjUI
+                    - generic [ref=e479]: 359 views
+                  - button "More actions" [ref=e481] [cursor=pointer]:
+                    - generic [ref=e485]:
+                      - img
+                - generic [ref=e491]:
+                  - link [ref=e492] [cursor=pointer]:
+                    - /url: /shorts/5uPcm-KE798
+                  - generic [ref=e496] [cursor=pointer]:
+                    - 'link "Day 23: Simple Blues Line #12keysgoodtogo #30daychallenge" [ref=e497]':
+                      - /url: /shorts/5uPcm-KE798
+                    - generic [ref=e498]: 7.9K views
+                  - button "More actions" [ref=e500] [cursor=pointer]:
+                    - generic [ref=e504]:
+                      - img
+            - button "Show more" [ref=e511] [cursor=pointer]:
+              - generic [ref=e512]: Show more
+              - generic [ref=e516]:
+                - img
+          - generic [ref=e521]:
+            - link [ref=e523] [cursor=pointer]:
+              - /url: /watch?v=XDSRNRPycHo&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+            - generic [ref=e525] [cursor=pointer]:
+              - generic [ref=e526]:
+                - generic [ref=e527]:
+                  - heading "Bridie King’s Blues N Boogie play Yellow Dog (Paul Gayten) cover 56 seconds" [level=3] [ref=e528]:
+                    - link "Bridie King’s Blues N Boogie play Yellow Dog (Paul Gayten) cover 56 seconds" [ref=e529]:
+                      - /url: /watch?v=XDSRNRPycHo&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+                      - text: Bridie King’s Blues N Boogie play Yellow Dog (Paul Gayten) cover
+                  - button "Action menu" [ref=e533]:
+                    - generic [ref=e536]:
+                      - img
+                - generic [ref=e539]:
+                  - generic [ref=e540]: 36 views
+                  - generic [ref=e541]: •4 years ago
+              - generic [ref=e542]:
+                - link "Go to channel Bridie King" [ref=e543]:
+                  - /url: /@bridieking8750
+                - link "Bridie King" [ref=e548]:
+                  - /url: /@bridieking8750
+              - generic [ref=e549]:
+                - generic [ref=e550]: Paul Gayten (New Orleans) 1950s instrumental played by Bridie King piano, David 'Fred' Learmonth guitar and Andrew 'Smithy' ...
+                - tooltip "tooltip"
+          - generic [ref=e552]:
+            - link [ref=e554] [cursor=pointer]:
+              - /url: /watch?v=dbJmVOB9vOs&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+            - generic [ref=e556] [cursor=pointer]:
+              - generic [ref=e557]:
+                - generic [ref=e558]:
+                  - heading "BASIC JAZZ AND BLUES PIANO - TUTIORAL - BOOGIE BASS LINE/TIMING - JOHN-PAUL GARD - VIDEO 18 1 minute, 39 seconds" [level=3] [ref=e559]:
+                    - link "BASIC JAZZ AND BLUES PIANO - TUTIORAL - BOOGIE BASS LINE/TIMING - JOHN-PAUL GARD - VIDEO 18 1 minute, 39 seconds" [ref=e560]:
+                      - /url: /watch?v=dbJmVOB9vOs&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+                      - text: BASIC JAZZ AND BLUES PIANO - TUTIORAL - BOOGIE BASS LINE/TIMING - JOHN-PAUL GARD - VIDEO 18
+                  - button "Action menu" [ref=e564]:
+                    - generic [ref=e567]:
+                      - img
+                - generic [ref=e570]:
+                  - generic [ref=e571]: 26 views
+                  - generic [ref=e572]: •4 years ago
+              - generic [ref=e573]:
+                - link "Go to channel John-paul Gard - Music" [ref=e574]:
+                  - /url: /@johnpaulgard
+                - link "John-paul Gard - Music" [ref=e579]:
+                  - /url: /@johnpaulgard
+              - generic [ref=e580]:
+                - generic [ref=e581]: BASIC JAZZ AND BLUES PIANO - TUTIORAL - BOOGIE BASS LINE/TIMING - JOHN-PAUL GARD - VIDEO 18 Welcome to my ...
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e584]:
+                - generic [ref=e585]: CC
+          - generic [ref=e587]:
+            - link [ref=e589] [cursor=pointer]:
+              - /url: /watch?v=SOHvW2HJ_74&list=RDSOHvW2HJ_74&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e591] [cursor=pointer]:
+              - generic [ref=e592]:
+                - generic [ref=e593]:
+                  - heading "DRIVING HOME by Paul Gayten Parts I - II 6 Minutes of R&B Sax 1957 6 minutes, 4 seconds" [level=3] [ref=e594]:
+                    - link "DRIVING HOME by Paul Gayten Parts I - II 6 Minutes of R&B Sax 1957 6 minutes, 4 seconds" [ref=e595]:
+                      - /url: /watch?v=SOHvW2HJ_74&list=RDSOHvW2HJ_74&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                      - text: DRIVING HOME by Paul Gayten Parts I - II 6 Minutes of R&B Sax 1957
+                  - button "Action menu" [ref=e599]:
+                    - generic [ref=e602]:
+                      - img
+                - generic [ref=e605]:
+                  - generic [ref=e606]: 9.1K views
+                  - generic [ref=e607]: •16 years ago
+              - generic [ref=e608]:
+                - link "Go to channel cdbpdx" [ref=e609]:
+                  - /url: /@cdbpdx
+                - link "cdbpdx" [ref=e614]:
+                  - /url: /@cdbpdx
+              - generic [ref=e615]:
+                - generic [ref=e616]: Great R&B instrumental by Paul Gayten on Argo record label. I've never heard of that label (or the artsit. Could be rare, certainly ...
+                - tooltip "tooltip"
+          - generic [ref=e618]:
+            - link [ref=e620] [cursor=pointer]:
+              - /url: /watch?v=Y3lrS2YutSM&list=RDY3lrS2YutSM&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e622] [cursor=pointer]:
+              - generic [ref=e623]:
+                - generic [ref=e624]:
+                  - heading "Paul Gayten Featuring Lee Allen - Backtrackin' (Dr. Daddy-O) 2 minutes, 54 seconds" [level=3] [ref=e625]:
+                    - link "Paul Gayten Featuring Lee Allen - Backtrackin' (Dr. Daddy-O) 2 minutes, 54 seconds" [ref=e626]:
+                      - /url: /watch?v=Y3lrS2YutSM&list=RDY3lrS2YutSM&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                      - text: Paul Gayten Featuring Lee Allen - Backtrackin' (Dr. Daddy-O)
+                  - button "Action menu" [ref=e630]:
+                    - generic [ref=e633]:
+                      - img
+                - generic [ref=e636]:
+                  - generic [ref=e637]: 757 views
+                  - generic [ref=e638]: •9 years ago
+              - generic [ref=e639]:
+                - link "Go to channel BlueRhythmBoy" [ref=e640]:
+                  - /url: /@bluerhythmboy
+                - link "BlueRhythmBoy" [ref=e645]:
+                  - /url: /@bluerhythmboy
+          - generic [ref=e647]:
+            - link [ref=e649] [cursor=pointer]:
+              - /url: /watch?v=iQ9yQ-eQhyU&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+            - generic [ref=e651] [cursor=pointer]:
+              - generic [ref=e652]:
+                - generic [ref=e653]:
+                  - heading "Yo Yo Walk - Paul Gayten - Piano - 78rpm 2 minutes, 24 seconds" [level=3] [ref=e654]:
+                    - link "Yo Yo Walk - Paul Gayten - Piano - 78rpm 2 minutes, 24 seconds" [ref=e655]:
+                      - /url: /watch?v=iQ9yQ-eQhyU&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+                      - text: Yo Yo Walk - Paul Gayten - Piano - 78rpm
+                  - button "Action menu" [ref=e659]:
+                    - generic [ref=e662]:
+                      - img
+                - generic [ref=e665]:
+                  - generic [ref=e666]: 72 views
+                  - generic [ref=e667]: •3 years ago
+              - generic [ref=e668]:
+                - link "Go to channel The 78rpm Saviour" [ref=e669]:
+                  - /url: /@the78rpmsaviour
+                - link "The 78rpm Saviour" [ref=e674]:
+                  - /url: /@the78rpmsaviour
+              - generic [ref=e675]:
+                - text: London American HL.8503 MSP.2018 1957 Other side Happy, Happy Birthday Baby https://youtu.be/u6zRXcbzaYs.
+                - tooltip "tooltip"
+          - generic [ref=e677]:
+            - link [ref=e679] [cursor=pointer]:
+              - /url: /watch?v=Q8hTv4GSLAg&list=RDQ8hTv4GSLAg&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e681] [cursor=pointer]:
+              - generic [ref=e682]:
+                - generic [ref=e683]:
+                  - heading "IN THE EVENING WHEN THE SUN GOES DOWN / PAUL GAYTEN & HIS TRIO [DELUXE 1118-B] 2 minutes, 34 seconds" [level=3] [ref=e684]:
+                    - link "IN THE EVENING WHEN THE SUN GOES DOWN / PAUL GAYTEN & HIS TRIO [DELUXE 1118-B] 2 minutes, 34 seconds" [ref=e685]:
+                      - /url: /watch?v=Q8hTv4GSLAg&list=RDQ8hTv4GSLAg&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                      - text: IN THE EVENING WHEN THE SUN GOES DOWN / PAUL GAYTEN & HIS TRIO [DELUXE 1118-B]
+                  - button "Action menu" [ref=e689]:
+                    - generic [ref=e692]:
+                      - img
+                - generic [ref=e695]:
+                  - generic [ref=e696]: 248 views
+                  - generic [ref=e697]: •8 years ago
+              - generic [ref=e698]:
+                - link "Go to channel 78rpm Studio" [ref=e699]:
+                  - /url: /@78rpmstudio76
+                - link "78rpm Studio" [ref=e704]:
+                  - /url: /@78rpmstudio76
+              - generic [ref=e705]:
+                - generic [ref=e706]: DELUXE 1118-B [421] IN THE EVENING WHEN THE SUN GOES DOWN (Paul Gayten) PAUL GAYTEN & HIS TRIO New Orleans, ...
+                - tooltip "tooltip"
+              - img "4K" [ref=e709]:
+                - generic [ref=e710]: 4K
+          - generic [ref=e712]:
+            - heading "People also watched" [level=2] [ref=e715]:
+              - generic [ref=e717]: People also watched
+            - generic [ref=e719]:
+              - generic [ref=e720]:
+                - generic [ref=e722]:
+                  - link [ref=e724] [cursor=pointer]:
+                    - /url: /watch?v=pIbfejRSsR8&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+                  - generic [ref=e726] [cursor=pointer]:
+                    - generic [ref=e727]:
+                      - generic [ref=e728]:
+                        - heading "Play This, Not That, On The Blues | You'll Hear It 22 minutes" [level=3] [ref=e729]:
+                          - link "Play This, Not That, On The Blues | You'll Hear It 22 minutes" [ref=e730]:
+                            - /url: /watch?v=pIbfejRSsR8&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+                            - text: Play This, Not That, On The Blues | You'll Hear It
+                        - button "Action menu" [ref=e734]:
+                          - generic [ref=e737]:
+                            - img
+                      - generic [ref=e740]:
+                        - generic [ref=e741]: 116K views
+                        - generic [ref=e742]: •5 years ago
+                    - generic [ref=e743]:
+                      - link "Go to channel Open Studio" [ref=e744]:
+                        - /url: /@OpenStudioJazz
+                      - generic [ref=e745]:
+                        - link "Open Studio" [ref=e749]:
+                          - /url: /@OpenStudioJazz
+                        - img "Verified" [ref=e752]
+                    - generic [ref=e754]:
+                      - generic [ref=e755]: There are a lot of questions surrounding the blues... Adam Maness and Peter Martin are here to set the record straight on what to ...
+                      - tooltip "tooltip"
+                    - img "4K" [ref=e758]:
+                      - generic [ref=e759]: 4K
+                - generic [ref=e761]:
+                  - link [ref=e763] [cursor=pointer]:
+                    - /url: /watch?v=DASMcVfbqtA&list=RDDASMcVfbqtA&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                  - generic [ref=e765] [cursor=pointer]:
+                    - generic [ref=e766]:
+                      - generic [ref=e767]:
+                        - heading "Jazz Blues ☕ Jazz & Bossa Nova piano instrument to relax, study, work 24 hours" [level=3] [ref=e768]:
+                          - link "Jazz Blues ☕ Jazz & Bossa Nova piano instrument to relax, study, work 24 hours" [ref=e769]:
+                            - /url: /watch?v=DASMcVfbqtA&list=RDDASMcVfbqtA&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                            - text: Jazz Blues ☕ Jazz & Bossa Nova piano instrument to relax, study, work
+                        - button "Action menu" [ref=e773]:
+                          - generic [ref=e776]:
+                            - img
+                      - generic [ref=e779]:
+                        - generic [ref=e780]: 412K views
+                        - generic [ref=e781]: •3 years ago
+                    - generic [ref=e782]:
+                      - link "Go to channel Cozy Jazz Music" [ref=e783]:
+                        - /url: /@cozyjazzmusic9431
+                      - generic [ref=e784]:
+                        - link "Cozy Jazz Music" [ref=e788]:
+                          - /url: /@cozyjazzmusic9431
+                        - img "Verified" [ref=e791]
+                    - generic [ref=e793]:
+                      - generic [ref=e794]: Jazz Blues ☕ Jazz & Bossa Nova piano instrument to relax, study, work https://youtu.be/DASMcVfbqtA ...
+                      - tooltip "tooltip"
+                - generic [ref=e796]:
+                  - link [ref=e798] [cursor=pointer]:
+                    - /url: /watch?v=6GTMdGTPdTg&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+                  - generic [ref=e800] [cursor=pointer]:
+                    - generic [ref=e801]:
+                      - generic [ref=e802]:
+                        - heading "Jools Holland - Live At St Pancras International (29.09.2016), Part 1 (OFFICIAL) 4 minutes, 15 seconds" [level=3] [ref=e803]:
+                          - link "Jools Holland - Live At St Pancras International (29.09.2016), Part 1 (OFFICIAL) 4 minutes, 15 seconds" [ref=e804]:
+                            - /url: /watch?v=6GTMdGTPdTg&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+                            - text: Jools Holland - Live At St Pancras International (29.09.2016), Part 1 (OFFICIAL)
+                        - button "Action menu" [ref=e808]:
+                          - generic [ref=e811]:
+                            - img
+                      - generic [ref=e814]:
+                        - generic [ref=e815]: 169K views
+                        - generic [ref=e816]: •9 years ago
+                    - generic [ref=e817]:
+                      - link "Go to channel Jools Holland" [ref=e818]:
+                        - /url: /channel/UCNFul0clNqtk0c-qN7-huAQ
+                      - generic [ref=e819]:
+                        - link "Jools Holland" [ref=e823]:
+                          - /url: /channel/UCNFul0clNqtk0c-qN7-huAQ
+                        - img "Official Artist Channel" [ref=e826]:
+                          - generic [ref=e829]:
+                            - img
+                    - generic [ref=e830]:
+                      - generic [ref=e831]: Jools Holland tries out the piano donated by Sir Elton John to St Pancras International in London and announces the coming of a ...
+                      - tooltip "tooltip"
+                - generic [ref=e833]:
+                  - link [ref=e835] [cursor=pointer]:
+                    - /url: /watch?v=L79aBxSeWNM&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+                  - generic [ref=e837] [cursor=pointer]:
+                    - generic [ref=e838]:
+                      - generic [ref=e839]:
+                        - heading "How To IMPROVISE On Piano With The C Minor Blues Scale 11 minutes, 13 seconds" [level=3] [ref=e840]:
+                          - link "How To IMPROVISE On Piano With The C Minor Blues Scale 11 minutes, 13 seconds" [ref=e841]:
+                            - /url: /watch?v=L79aBxSeWNM&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+                            - text: How To IMPROVISE On Piano With The C Minor Blues Scale
+                        - button "Action menu" [ref=e845]:
+                          - generic [ref=e848]:
+                            - img
+                      - generic [ref=e851]:
+                        - generic [ref=e852]: 124K views
+                        - generic [ref=e853]: •2 years ago
+                    - generic [ref=e854]:
+                      - link "Go to channel Piano with Nate" [ref=e855]:
+                        - /url: /@PianowithNate
+                      - link "Piano with Nate" [ref=e860]:
+                        - /url: /@PianowithNate
+                    - generic [ref=e861]:
+                      - generic [ref=e862]: "How To IMPROVISE On Piano With The C Minor Blues Scale - Want to play pop & rock songs with confidence? Start here: ..."
+                      - tooltip "tooltip"
+                    - generic [ref=e865]:
+                      - generic [ref=e866]:
+                        - generic [ref=e870]: 3 chapters
+                        - button "Intro | C Minor Blues Scale and Improvising Tips | C Minor Blues Improvisation Demonstration"
+                      - button "More" [ref=e875]:
+                        - generic [ref=e879]:
+                          - img
+              - generic "+6 more" [ref=e884] [cursor=pointer]
+          - generic [ref=e886]:
+            - link [ref=e888] [cursor=pointer]:
+              - /url: /watch?v=q4EizJ6tjYU&list=RDq4EizJ6tjYU&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e890] [cursor=pointer]:
+              - generic [ref=e891]:
+                - generic [ref=e892]:
+                  - heading "YELLOW DOG by Paul Gayten (cover by Bridie King) 2 minutes, 57 seconds" [level=3] [ref=e893]:
+                    - link "YELLOW DOG by Paul Gayten (cover by Bridie King) 2 minutes, 57 seconds" [ref=e894]:
+                      - /url: /watch?v=q4EizJ6tjYU&list=RDq4EizJ6tjYU&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                      - text: YELLOW DOG by Paul Gayten (cover by Bridie King)
+                  - button "Action menu" [ref=e898]:
+                    - generic [ref=e901]:
+                      - img
+                - generic [ref=e904]:
+                  - generic [ref=e905]: 112 views
+                  - generic [ref=e906]: •4 years ago
+              - generic [ref=e907]:
+                - link "Go to channel Bridie King" [ref=e908]:
+                  - /url: /@bridieking8750
+                - link "Bridie King" [ref=e913]:
+                  - /url: /@bridieking8750
+              - generic [ref=e914]:
+                - generic [ref=e915]: Bridie King's Old Skool RnB plays Yellow Dog. Originally this track was recorded in New Orleans in the 1950s by Paul Gayten ...
+                - tooltip "tooltip"
+          - generic [ref=e917]:
+            - link [ref=e919] [cursor=pointer]:
+              - /url: /watch?v=UkPVrLOXsCQ&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+            - generic [ref=e921] [cursor=pointer]:
+              - generic [ref=e922]:
+                - generic [ref=e923]:
+                  - heading "Professor Longhair \"Hey, Little Girl\" blues piano tutorial with Terry Miles 3 minutes, 49 seconds" [level=3] [ref=e924]:
+                    - link "Professor Longhair \"Hey, Little Girl\" blues piano tutorial with Terry Miles 3 minutes, 49 seconds" [ref=e925]:
+                      - /url: /watch?v=UkPVrLOXsCQ&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNl
+                      - text: Professor Longhair "Hey, Little Girl" blues piano tutorial with Terry Miles
+                  - button "Action menu" [ref=e929]:
+                    - generic [ref=e932]:
+                      - img
+                - generic [ref=e935]:
+                  - generic [ref=e936]: 13K views
+                  - generic [ref=e937]: •11 years ago
+              - generic [ref=e938]:
+                - link "Go to channel Spo-dee-o-dee" [ref=e939]:
+                  - /url: /@spo-dee-o-dee5399
+                - link "Spo-dee-o-dee" [ref=e944]:
+                  - /url: /@spo-dee-o-dee5399
+              - generic [ref=e945]:
+                - generic [ref=e946]: Classic New Orleans rhumba blues from Fess originally recorded for Atlantic way back in 1949. The Professor would record it a ...
+                - tooltip "tooltip"
+          - generic [ref=e948]:
+            - link [ref=e950] [cursor=pointer]:
+              - /url: /watch?v=KDHs6fZB4lE&list=RDKDHs6fZB4lE&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e952] [cursor=pointer]:
+              - generic [ref=e953]:
+                - generic [ref=e954]:
+                  - heading "Paul Gayten - Creole Alley 2 minutes, 15 seconds" [level=3] [ref=e955]:
+                    - link "Paul Gayten - Creole Alley 2 minutes, 15 seconds" [ref=e956]:
+                      - /url: /watch?v=KDHs6fZB4lE&list=RDKDHs6fZB4lE&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                      - text: Paul Gayten - Creole Alley
+                  - button "Action menu" [ref=e960]:
+                    - generic [ref=e963]:
+                      - img
+                - generic [ref=e966]:
+                  - generic [ref=e967]: 861 views
+                  - generic [ref=e968]: •6 years ago
+              - generic [ref=e969]:
+                - link "Go to channel Sliptrail" [ref=e970]:
+                  - /url: /@Sliptrail
+                - link "Sliptrail" [ref=e975]:
+                  - /url: /@Sliptrail
+              - generic [ref=e976]:
+                - generic [ref=e977]: Paul Gayten with Lee Allen on the saxophone. This is not the Creole Alley as released by Lee Allen in 1959 though. We´ve got ...
+                - tooltip "tooltip"
+          - generic [ref=e979]:
+            - link [ref=e981] [cursor=pointer]:
+              - /url: /watch?v=q7XsLh2yf-k&list=RDq7XsLh2yf-k&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e983] [cursor=pointer]:
+              - generic [ref=e984]:
+                - heading "Paul Gayten - Ain't Nothin' Happenin' 2 minutes, 3 seconds" [level=3] [ref=e986]:
+                  - link "Paul Gayten - Ain't Nothin' Happenin' 2 minutes, 3 seconds" [ref=e987]:
+                    - /url: /watch?v=q7XsLh2yf-k&list=RDq7XsLh2yf-k&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                    - text: Paul Gayten - Ain't Nothin' Happenin'
+                - generic [ref=e990]:
+                  - generic [ref=e991]: 6.4K views
+                  - generic [ref=e992]: •15 years ago
+              - generic [ref=e993]:
+                - link "Go to channel El Toro Records" [ref=e994]:
+                  - /url: /@ElToroRecords
+                - link "El Toro Records" [ref=e999]:
+                  - /url: /@ElToroRecords
+              - generic [ref=e1000]:
+                - generic [ref=e1001]: The unsung Crescent City bandleader Paul Gayten made the first New Orleans R&B recordings of the post war era and had the ...
+                - tooltip "tooltip"
+          - generic [ref=e1003]:
+            - link [ref=e1005] [cursor=pointer]:
+              - /url: /watch?v=8DhH4N6xuFc&list=RD8DhH4N6xuFc&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+            - generic [ref=e1007] [cursor=pointer]:
+              - generic [ref=e1008]:
+                - heading "Lonely Blues - Annie Laurie and Paul Gayten & His Trio (1948) 3 minutes, 18 seconds" [level=3] [ref=e1010]:
+                  - link "Lonely Blues - Annie Laurie and Paul Gayten & His Trio (1948) 3 minutes, 18 seconds" [ref=e1011]:
+                    - /url: /watch?v=8DhH4N6xuFc&list=RD8DhH4N6xuFc&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+                    - text: Lonely Blues - Annie Laurie and Paul Gayten & His Trio (1948)
+                - generic [ref=e1014]:
+                  - generic [ref=e1015]: 102 views
+                  - generic [ref=e1016]: •1 year ago
+              - generic [ref=e1017]:
+                - link "Go to channel Singing Bluebird" [ref=e1018]:
+                  - /url: /@SingingBluebird
+                - link "Singing Bluebird" [ref=e1023]:
+                  - /url: /@SingingBluebird
+              - generic [ref=e1024]:
+                - generic [ref=e1025]: Released in 1948, performed by Paul Gayten & His Trio with vocals by Annie Laurie. Written by Paul Gayten. From the DeLuxe ...
+                - tooltip "tooltip"
+          - generic [ref=e1027]:
+            - link [ref=e1029] [cursor=pointer]:
+              - /url: /shorts/vwqxMi7lt9g
+            - generic [ref=e1031] [cursor=pointer]:
+              - generic [ref=e1032]:
+                - heading "The BEST Blues Piano Riff!! by This Is Jazz 20,405 views 2 years ago 25 seconds - play Short" [level=3] [ref=e1034]:
+                  - link "The BEST Blues Piano Riff!! by This Is Jazz 20,405 views 2 years ago 25 seconds - play Short" [ref=e1035]:
+                    - /url: /shorts/vwqxMi7lt9g
+                    - text: The BEST Blues Piano Riff!!
+                - generic [ref=e1038]:
+                  - generic [ref=e1039]: 20K views
+                  - generic [ref=e1040]: •2 years ago
+              - generic [ref=e1041]:
+                - link "Go to channel This Is Jazz" [ref=e1042]:
+                  - /url: /channel/UCJVVTNeIFDoA9avIdN2oWlw
+                - generic [ref=e1043]:
+                  - link "This Is Jazz" [ref=e1047]:
+                    - /url: /channel/UCJVVTNeIFDoA9avIdN2oWlw
+                  - img "Official Artist Channel" [ref=e1050]:
+                    - generic [ref=e1053]:
+                      - img
+              - generic [ref=e1054]:
+                - generic [ref=e1055]: "One of my all-time favorite piano riffs!! Listen to Quentin's original music on Spotify and all other platforms! Spotify: ..."
+                - tooltip "tooltip"
+          - generic [ref=e1057]:
+            - link [ref=e1059] [cursor=pointer]:
+              - /url: /watch?v=0ocneDVnPO0&list=RD0ocneDVnPO0&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e1061] [cursor=pointer]:
+              - generic [ref=e1062]:
+                - heading "Mule Face 2 minutes, 15 seconds" [level=3] [ref=e1064]:
+                  - link "Mule Face 2 minutes, 15 seconds" [ref=e1065]:
+                    - /url: /watch?v=0ocneDVnPO0&list=RD0ocneDVnPO0&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                    - text: Mule Face
+                - generic [ref=e1069]: 152 views
+              - generic [ref=e1070]:
+                - link "Go to channel Paul Gayten - Topic" [ref=e1071]:
+                  - /url: /channel/UCG_c3lffNPeMZJpkhuai-iA
+                - link "Paul Gayten - Topic" [ref=e1076]:
+                  - /url: /channel/UCG_c3lffNPeMZJpkhuai-iA
+              - generic [ref=e1077]:
+                - generic [ref=e1078]: Provided to YouTube by The Orchard Enterprises Mule Face · Paul Gayten & Orchestra · Paul Gayten Heavy Sugar Second ...
+                - tooltip "tooltip"
+          - generic [ref=e1080]:
+            - link [ref=e1082] [cursor=pointer]:
+              - /url: /watch?v=2xspWdYvTp8&list=RD2xspWdYvTp8&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e1084] [cursor=pointer]:
+              - generic [ref=e1085]:
+                - heading "Paul Gayten And His Orchestra Mule Face 1954 2 minutes, 11 seconds" [level=3] [ref=e1087]:
+                  - link "Paul Gayten And His Orchestra Mule Face 1954 2 minutes, 11 seconds" [ref=e1088]:
+                    - /url: /watch?v=2xspWdYvTp8&list=RD2xspWdYvTp8&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                    - text: Paul Gayten And His Orchestra Mule Face 1954
+                - generic [ref=e1091]:
+                  - generic [ref=e1092]: 574 views
+                  - generic [ref=e1093]: •6 years ago
+              - generic [ref=e1094]:
+                - link "Go to channel TheBudgie29" [ref=e1095]:
+                  - /url: /@TheBudgie29
+                - link "TheBudgie29" [ref=e1100]:
+                  - /url: /@TheBudgie29
+              - generic [ref=e1101]:
+                - generic [ref=e1102]: I do Not own the Copyright for the Audio. Just Enjoy. UK Pressing. Paul Gayten And His Orchestra - Mule Face 1954.
+                - tooltip "tooltip"
+          - generic [ref=e1104]:
+            - link [ref=e1106] [cursor=pointer]:
+              - /url: /watch?v=Kl_6skmUkwc&list=RDKl_6skmUkwc&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e1108] [cursor=pointer]:
+              - generic [ref=e1109]:
+                - heading "Paul Gayten Driving Home Parts 1 & 2 6 minutes, 4 seconds" [level=3] [ref=e1111]:
+                  - link "Paul Gayten Driving Home Parts 1 & 2 6 minutes, 4 seconds" [ref=e1112]:
+                    - /url: /watch?v=Kl_6skmUkwc&list=RDKl_6skmUkwc&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                    - text: Paul Gayten Driving Home Parts 1 & 2
+                - generic [ref=e1115]:
+                  - generic [ref=e1116]: 48 views
+                  - generic [ref=e1117]: •2 years ago
+              - generic [ref=e1118]:
+                - link "Go to channel Steve Miller😎" [ref=e1119]:
+                  - /url: /@stevemiller1203
+                - link "Steve Miller😎" [ref=e1124]:
+                  - /url: /@stevemiller1203
+              - generic [ref=e1125]:
+                - text: Instrumental.
+                - tooltip "tooltip"
+          - generic [ref=e1127]:
+            - link [ref=e1129] [cursor=pointer]:
+              - /url: /watch?v=OokvBhxSKU8&list=RDOokvBhxSKU8&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e1131] [cursor=pointer]:
+              - generic [ref=e1132]:
+                - heading "Paul Gayten - The Music Goes Round And Round 2 minutes, 7 seconds" [level=3] [ref=e1134]:
+                  - link "Paul Gayten - The Music Goes Round And Round 2 minutes, 7 seconds" [ref=e1135]:
+                    - /url: /watch?v=OokvBhxSKU8&list=RDOokvBhxSKU8&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                    - text: Paul Gayten - The Music Goes Round And Round
+                - generic [ref=e1138]:
+                  - generic [ref=e1139]: 387 views
+                  - generic [ref=e1140]: •1 year ago
+              - generic [ref=e1141]:
+                - link "Go to channel althazarr's good time oldies" [ref=e1142]:
+                  - /url: /@althazarr
+                - link "althazarr's good time oldies" [ref=e1147]:
+                  - /url: /@althazarr
+              - generic [ref=e1148]:
+                - generic [ref=e1149]: Released in September of 1956. Paul Leon Gayten (January 29, 1920 – March 26, 1991) was an American R&B pianist, ...
+                - tooltip "tooltip"
+          - generic [ref=e1151]:
+            - link [ref=e1153] [cursor=pointer]:
+              - /url: /watch?v=AbISgKeVqJQ&list=RDAbISgKeVqJQ&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e1155] [cursor=pointer]:
+              - generic [ref=e1156]:
+                - heading "Paul Gayten - Yeah! Yeah! Yeah! 2 minutes, 53 seconds" [level=3] [ref=e1158]:
+                  - link "Paul Gayten - Yeah! Yeah! Yeah! 2 minutes, 53 seconds" [ref=e1159]:
+                    - /url: /watch?v=AbISgKeVqJQ&list=RDAbISgKeVqJQ&start_radio=1&pp=ygUqUGF1bCBHYXl0ZW4gcmh5dGhtIGJsdWVzIHBpYW5vIHBlcmZvcm1hbmNloAcB
+                    - text: Paul Gayten - Yeah! Yeah! Yeah!
+                - generic [ref=e1162]:
+                  - generic [ref=e1163]: 280 views
+                  - generic [ref=e1164]: •4 years ago
+              - generic [ref=e1165]:
+                - link "Go to channel Larry O'Manza" [ref=e1166]:
+                  - /url: /@larryomanza9350
+                - link "Larry O'Manza" [ref=e1171]:
+                  - /url: /@larryomanza9350
+    - text: •

@@ -1,0 +1,813 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - generic [ref=e13]:
+          - link "YouTube Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e19]:
+              - img
+          - generic [ref=e20]: ES
+        - button "Skip navigation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Skip navigation
+      - button "Search" [ref=e31] [cursor=pointer]:
+        - generic [ref=e34]:
+          - img
+        - tooltip "tooltip"
+      - generic [ref=e36]:
+        - button "Settings" [ref=e41] [cursor=pointer]:
+          - generic [ref=e44]:
+            - img
+        - link "Sign in" [ref=e47] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DWoody%252BGuthrie%252Bfolk%252Bperformance%252Blive%252Bfootage&hl=en&ec=65620
+          - generic [ref=e51]:
+            - img
+          - generic [ref=e52]: Sign in
+  - generic [ref=e56]:
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e60]:
+          - generic [ref=e63]:
+            - tablist [ref=e65]:
+              - tab "All" [selected] [ref=e69] [cursor=pointer]:
+                - generic [ref=e71]: All
+              - tab "Shorts" [ref=e78] [cursor=pointer]:
+                - generic [ref=e80]: Shorts
+              - tab "Videos" [ref=e87] [cursor=pointer]:
+                - generic [ref=e89]: Videos
+              - tab "Unwatched" [ref=e96] [cursor=pointer]:
+                - generic [ref=e98]: Unwatched
+              - tab "Watched" [ref=e105] [cursor=pointer]:
+                - generic [ref=e107]: Watched
+              - tab "Recently uploaded" [ref=e114] [cursor=pointer]:
+                - generic [ref=e116]: Recently uploaded
+              - tab "Live" [ref=e123] [cursor=pointer]:
+                - generic [ref=e125]: Live
+              - tab "Under 4 min" [ref=e132] [cursor=pointer]:
+                - generic [ref=e134]: Under 4 min
+              - tab "4 - 20 min" [ref=e141] [cursor=pointer]:
+                - generic [ref=e143]: 4 - 20 min
+              - tab "Over 20 min" [ref=e150] [cursor=pointer]:
+                - generic [ref=e152]: Over 20 min
+            - button "Next" [ref=e160] [cursor=pointer]:
+              - generic [ref=e164]:
+                - img
+          - link "About these results" [ref=e171] [cursor=pointer]:
+            - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+            - generic [ref=e172]: About these results
+            - generic [ref=e176]:
+              - img
+          - generic [ref=e181]:
+            - button "Search filters" [ref=e183] [cursor=pointer]:
+              - generic [ref=e184]: Filters
+              - generic [ref=e188]:
+                - img
+            - tooltip "tooltip"
+        - generic [ref=e197]:
+          - generic [ref=e199]:
+            - link [ref=e201] [cursor=pointer]:
+              - /url: /watch?v=G5NJKx8ObDY&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+              - img [ref=e203]
+              - img [ref=e206]:
+                - generic [ref=e207]: 0:56
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e208] [cursor=pointer]:
+              - generic [ref=e209]:
+                - generic [ref=e210]:
+                  - heading "Woody Guthrie - 1945 56 seconds" [level=3] [ref=e211]:
+                    - link "Woody Guthrie - 1945 56 seconds" [ref=e212]:
+                      - /url: /watch?v=G5NJKx8ObDY&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+                      - text: Woody Guthrie - 1945
+                  - button "Action menu" [ref=e216]:
+                    - generic [ref=e219]:
+                      - img
+                - generic [ref=e222]:
+                  - generic [ref=e223]: 482K views
+                  - generic [ref=e224]: •18 years ago
+              - generic [ref=e225]:
+                - link "Go to channel lupine22" [ref=e226]:
+                  - /url: /@lupine22
+                - link "lupine22" [ref=e232]:
+                  - /url: /@lupine22
+              - generic [ref=e233]:
+                - generic [ref=e234]: One of the two surviving film clips of Woody Guthrie performing. This one, of "Ranger's Command," is from 1945. The other, of ...
+                - tooltip "tooltip"
+          - generic [ref=e236]:
+            - link [ref=e238] [cursor=pointer]:
+              - /url: /watch?v=0wv3MLXTdEA&list=RD0wv3MLXTdEA&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+              - img [ref=e240]
+              - img [ref=e243]:
+                - generic [ref=e246]:
+                  - img
+                - generic [ref=e247]: 1:13
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e248] [cursor=pointer]:
+              - generic [ref=e249]:
+                - generic [ref=e250]:
+                  - heading "Woody Guthrie 1946 performance footage 1 minute, 13 seconds" [level=3] [ref=e251]:
+                    - link "Woody Guthrie 1946 performance footage 1 minute, 13 seconds" [ref=e252]:
+                      - /url: /watch?v=0wv3MLXTdEA&list=RD0wv3MLXTdEA&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                      - text: Woody Guthrie 1946 performance footage
+                  - button "Action menu" [ref=e256]:
+                    - generic [ref=e259]:
+                      - img
+                - generic [ref=e262]:
+                  - generic [ref=e263]: 920 views
+                  - generic [ref=e264]: •8 months ago
+              - generic [ref=e265]:
+                - link "Go to channel BetaGems Lost Media" [ref=e266]:
+                  - /url: /@betagemslostmedia607
+                - link "BetaGems Lost Media" [ref=e272]:
+                  - /url: /@betagemslostmedia607
+              - generic [ref=e273]:
+                - generic [ref=e274]: 1946 performance footage of Woody Guthrie. BetaGems are culled from an archive of over 1000 beta video tapes recorded from ...
+                - tooltip "tooltip"
+          - generic [ref=e276]:
+            - link [ref=e278] [cursor=pointer]:
+              - /url: /watch?v=wTVq6X360Xo&list=RDwTVq6X360Xo&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+              - img [ref=e280]
+              - img [ref=e283]:
+                - generic [ref=e286]:
+                  - img
+                - generic [ref=e287]: 12:38
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e288] [cursor=pointer]:
+              - generic [ref=e289]:
+                - generic [ref=e290]:
+                  - heading "Pete Seeger- \"Woody Guthrie Medley\" 1963 [Reelin' In The Years Archives] 12 minutes, 38 seconds" [level=3] [ref=e291]:
+                    - link "Pete Seeger- \"Woody Guthrie Medley\" 1963 [Reelin' In The Years Archives] 12 minutes, 38 seconds" [ref=e292]:
+                      - /url: /watch?v=wTVq6X360Xo&list=RDwTVq6X360Xo&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                      - text: Pete Seeger- "Woody Guthrie Medley" 1963 [Reelin' In The Years Archives]
+                  - button "Action menu" [ref=e296]:
+                    - generic [ref=e299]:
+                      - img
+                - generic [ref=e302]:
+                  - generic [ref=e303]: 56K views
+                  - generic [ref=e304]: •7 years ago
+              - generic [ref=e305]:
+                - link "Go to channel ReelinInTheYears66" [ref=e306]:
+                  - /url: /@ReelinInTheYears66
+                - link "ReelinInTheYears66" [ref=e312]:
+                  - /url: /@ReelinInTheYears66
+              - generic [ref=e313]:
+                - generic [ref=e314]: This Woody Guthrie medley from 1963 includes the songs "I'm Gonna Mail Myself To You," "Put Your Finger In The Air," "Union ...
+                - tooltip "tooltip"
+          - generic [ref=e316]:
+            - link [ref=e318] [cursor=pointer]:
+              - /url: /watch?v=ZaRviyj2kDE&list=RDZaRviyj2kDE&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+              - img [ref=e320]
+              - img [ref=e323]:
+                - generic [ref=e326]:
+                  - img
+                - generic [ref=e327]: 51:01
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e328] [cursor=pointer]:
+              - generic [ref=e329]:
+                - generic [ref=e330]:
+                  - heading "Woody Guthrie All-Star Tribute Concert 1970 51 minutes" [level=3] [ref=e331]:
+                    - link "Woody Guthrie All-Star Tribute Concert 1970 51 minutes" [ref=e332]:
+                      - /url: /watch?v=ZaRviyj2kDE&list=RDZaRviyj2kDE&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                      - text: Woody Guthrie All-Star Tribute Concert 1970
+                  - button "Action menu" [ref=e336]:
+                    - generic [ref=e339]:
+                      - img
+                - generic [ref=e342]:
+                  - generic [ref=e343]: 366 views
+                  - generic [ref=e344]: •6 months ago
+              - generic [ref=e345]:
+                - link "Go to channel MVD Entertainment Group" [ref=e346]:
+                  - /url: /@MVDEntGrp
+                - link "MVD Entertainment Group" [ref=e352]:
+                  - /url: /@MVDEntGrp
+              - generic [ref=e353]:
+                - generic [ref=e354]: The Woody Guthrie All-Star Tribute Concert 1970 at the Hollywood Bowl is a rare historic tribute concert that has never been seen ...
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e357]:
+                - generic [ref=e358]: CC
+          - generic [ref=e360]:
+            - link [ref=e362] [cursor=pointer]:
+              - /url: /watch?v=VwcKwGS7OSQ&list=RDVwcKwGS7OSQ&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+              - img [ref=e364]
+              - img [ref=e367]:
+                - generic [ref=e370]:
+                  - img
+                - generic [ref=e371]: 1:35
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e372] [cursor=pointer]:
+              - generic [ref=e373]:
+                - generic [ref=e374]:
+                  - heading "Woody Guthrie~ All You Fascists Bound To Lose 1 minute, 35 seconds" [level=3] [ref=e375]:
+                    - link "Woody Guthrie~ All You Fascists Bound To Lose 1 minute, 35 seconds" [ref=e376]:
+                      - /url: /watch?v=VwcKwGS7OSQ&list=RDVwcKwGS7OSQ&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                      - text: Woody Guthrie~ All You Fascists Bound To Lose
+                  - button "Action menu" [ref=e380]:
+                    - generic [ref=e383]:
+                      - img
+                - generic [ref=e386]:
+                  - generic [ref=e387]: 3.8M views
+                  - generic [ref=e388]: •17 years ago
+              - generic [ref=e389]:
+                - link "Go to channel UnAmericanBandstand" [ref=e390]:
+                  - /url: /@UnAmericanBandstand
+                - link "UnAmericanBandstand" [ref=e396]:
+                  - /url: /@UnAmericanBandstand
+              - generic [ref=e397]:
+                - generic [ref=e398]: "A short song from one of Woody's radio broadcasts. (1940's?) Featured in this performance are: *Woody of course-guitar and voc."
+                - tooltip "tooltip"
+          - generic [ref=e400] [cursor=pointer]:
+            - link [ref=e401]:
+              - /url: /watch?v=3k6IKVHTV-A&list=PLxKeRjy_KXLGSdKjAY-JSx82CKTCSBNrf
+              - generic [ref=e411]:
+                - generic [ref=e414]:
+                  - img
+                - generic [ref=e415]: 18 videos
+            - generic [ref=e418]:
+              - 'heading "20130512 - The Live Wire: Woody Guthrie In Performance 1949" [level=3] [ref=e419]':
+                - 'link "20130512 - The Live Wire: Woody Guthrie In Performance 1949" [ref=e420]':
+                  - /url: /watch?v=3k6IKVHTV-A&list=PLxKeRjy_KXLGSdKjAY-JSx82CKTCSBNrf
+              - generic [ref=e422]:
+                - generic [ref=e423]:
+                  - link "kt0408ha" [ref=e426]:
+                    - /url: /@kt0408ha
+                  - generic [ref=e427]: •
+                  - link "Playlist" [ref=e430]:
+                    - /url: /@kt0408ha
+                - link "Woody Guthrie - \"Black Diamond\" · 4:52" [ref=e434]:
+                  - /url: /watch?v=3k6IKVHTV-A&list=PLxKeRjy_KXLGSdKjAY-JSx82CKTCSBNrf
+                - link "Woody Guthrie - \"A Cowboy Of Some Kind\" · 1:22" [ref=e437]:
+                  - /url: /watch?v=VosgcrL5Tyk&list=PLxKeRjy_KXLGSdKjAY-JSx82CKTCSBNrf
+                - link "View full playlist" [ref=e442]:
+                  - /url: /playlist?list=PLxKeRjy_KXLGSdKjAY-JSx82CKTCSBNrf
+          - generic [ref=e444]:
+            - link [ref=e446] [cursor=pointer]:
+              - /url: /watch?v=_s9FovBfPT0&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+            - generic [ref=e448] [cursor=pointer]:
+              - generic [ref=e449]:
+                - generic [ref=e450]:
+                  - heading "Pete Seeger introduces Woody Guthrie on British TV in 1964 1 minute, 28 seconds" [level=3] [ref=e451]:
+                    - link "Pete Seeger introduces Woody Guthrie on British TV in 1964 1 minute, 28 seconds" [ref=e452]:
+                      - /url: /watch?v=_s9FovBfPT0&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+                      - text: Pete Seeger introduces Woody Guthrie on British TV in 1964
+                  - button "Action menu" [ref=e456]:
+                    - generic [ref=e459]:
+                      - img
+                - generic [ref=e462]:
+                  - generic [ref=e463]: 270K views
+                  - generic [ref=e464]: •17 years ago
+              - generic [ref=e465]:
+                - link "Go to channel Joe Stead" [ref=e466]:
+                  - /url: /@banjostead
+                - link "Joe Stead" [ref=e471]:
+                  - /url: /@banjostead
+              - generic [ref=e472]:
+                - generic [ref=e473]: Pete Seeger introduces Woody Guthrie on British TV in 1964.
+                - tooltip "tooltip"
+          - generic [ref=e474]:
+            - generic [ref=e477]:
+              - img [ref=e479]:
+                - generic [ref=e481]:
+                  - img
+              - heading "Shorts" [level=2] [ref=e484]
+            - generic [ref=e485]:
+              - generic [ref=e486]:
+                - generic [ref=e489]:
+                  - link [ref=e490] [cursor=pointer]:
+                    - /url: /shorts/rCmn2TPqVxc
+                  - generic [ref=e494] [cursor=pointer]:
+                    - link "Woody Guthrie (Jul 14, 1912 – Oct 3, 1967) was an American singer songwriter - American folk music" [ref=e495]:
+                      - /url: /shorts/rCmn2TPqVxc
+                    - generic [ref=e496]: 7.4K views
+                  - button "More actions" [ref=e498] [cursor=pointer]:
+                    - generic [ref=e502]:
+                      - img
+                - generic [ref=e508]:
+                  - link [ref=e509] [cursor=pointer]:
+                    - /url: /shorts/MPClB4Ibevk
+                  - generic [ref=e513] [cursor=pointer]:
+                    - link "Bob Dylan with a great performance of Woody Guthrie's Pretty Boy Floyd. Full video on my channel" [ref=e514]:
+                      - /url: /shorts/MPClB4Ibevk
+                    - generic [ref=e515]: 65K views
+                  - button "More actions" [ref=e517] [cursor=pointer]:
+                    - generic [ref=e521]:
+                      - img
+              - generic [ref=e525]:
+                - generic [ref=e528]:
+                  - link [ref=e529] [cursor=pointer]:
+                    - /url: /shorts/DupCh4gIAfE
+                  - generic [ref=e533] [cursor=pointer]:
+                    - 'link "Woody Guthrie wrote this in 1948 #folkmusic" [ref=e534]':
+                      - /url: /shorts/DupCh4gIAfE
+                    - generic [ref=e535]: 18K views
+                  - button "More actions" [ref=e537] [cursor=pointer]:
+                    - generic [ref=e541]:
+                      - img
+                - generic [ref=e547]:
+                  - link [ref=e548] [cursor=pointer]:
+                    - /url: /shorts/07xyoH5CsHw
+                  - generic [ref=e552] [cursor=pointer]:
+                    - 'link "WOODY GUTHRIE''S PASSING ❤️ - October 3, 1967 #woodyguthrie #folkmusic #folk #rip #shorts" [ref=e553]':
+                      - /url: /shorts/07xyoH5CsHw
+                    - generic [ref=e554]: 6.2K views
+                  - button "More actions" [ref=e556] [cursor=pointer]:
+                    - generic [ref=e560]:
+                      - img
+            - button "Show more" [ref=e567] [cursor=pointer]:
+              - generic [ref=e568]: Show more
+              - generic [ref=e572]:
+                - img
+          - generic [ref=e577]:
+            - link [ref=e579] [cursor=pointer]:
+              - /url: /watch?v=6VHCQloZEKc&list=RD6VHCQloZEKc&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+            - generic [ref=e581] [cursor=pointer]:
+              - generic [ref=e582]:
+                - generic [ref=e583]:
+                  - heading "Woody Guthrie - Rangers command ( Live 1945 ) 47 seconds" [level=3] [ref=e584]:
+                    - link "Woody Guthrie - Rangers command ( Live 1945 ) 47 seconds" [ref=e585]:
+                      - /url: /watch?v=6VHCQloZEKc&list=RD6VHCQloZEKc&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                      - text: Woody Guthrie - Rangers command ( Live 1945 )
+                  - button "Action menu" [ref=e589]:
+                    - generic [ref=e592]:
+                      - img
+                - generic [ref=e595]:
+                  - generic [ref=e596]: 843 views
+                  - generic [ref=e597]: •4 years ago
+              - generic [ref=e598]:
+                - link "Go to channel Vintage Music Video’s" [ref=e599]:
+                  - /url: /@vintagemusicvideos1245
+                - link "Vintage Music Video’s" [ref=e604]:
+                  - /url: /@vintagemusicvideos1245
+          - generic [ref=e606]:
+            - link [ref=e608] [cursor=pointer]:
+              - /url: /watch?v=XNjQU-O24Oo&list=RDXNjQU-O24Oo&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+            - generic [ref=e610] [cursor=pointer]:
+              - generic [ref=e611]:
+                - generic [ref=e612]:
+                  - heading "Woody Guthrie At 100! / \"This Land Is Your Land\" 2 minutes, 29 seconds" [level=3] [ref=e613]:
+                    - link "Woody Guthrie At 100! / \"This Land Is Your Land\" 2 minutes, 29 seconds" [ref=e614]:
+                      - /url: /watch?v=XNjQU-O24Oo&list=RDXNjQU-O24Oo&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                      - text: Woody Guthrie At 100! / "This Land Is Your Land"
+                  - button "Action menu" [ref=e618]:
+                    - generic [ref=e621]:
+                      - img
+                - generic [ref=e624]:
+                  - generic [ref=e625]: 61K views
+                  - generic [ref=e626]: •12 years ago
+              - generic [ref=e627]:
+                - link "Go to channel LegacyRecordingsVEVO" [ref=e628]:
+                  - /url: /@LegacyRecordingsVEVO
+                - generic [ref=e629]:
+                  - link "LegacyRecordingsVEVO" [ref=e633]:
+                    - /url: /@LegacyRecordingsVEVO
+                  - img "Verified" [ref=e636]:
+                    - generic [ref=e639]:
+                      - img
+              - generic [ref=e640]:
+                - generic [ref=e641]: "\"Music video by Various performing Woody Guthrie At 100! / \"\"This Land Is Your Land\"\". (C) 2013 Woody Guthrie Publications, Inc\""
+                - tooltip "tooltip"
+          - generic [ref=e643]:
+            - link [ref=e645] [cursor=pointer]:
+              - /url: /watch?v=se2bx_gsQj4&list=RDse2bx_gsQj4&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+            - generic [ref=e647] [cursor=pointer]:
+              - generic [ref=e648]:
+                - generic [ref=e649]:
+                  - heading "Woody Guthrie All-Star Tribute Concert 1970 | Rare Music Archive Footage | Amplified 50 minutes" [level=3] [ref=e650]:
+                    - link "Woody Guthrie All-Star Tribute Concert 1970 | Rare Music Archive Footage | Amplified 50 minutes" [ref=e651]:
+                      - /url: /watch?v=se2bx_gsQj4&list=RDse2bx_gsQj4&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                      - text: Woody Guthrie All-Star Tribute Concert 1970 | Rare Music Archive Footage | Amplified
+                  - button "Action menu" [ref=e655]:
+                    - generic [ref=e658]:
+                      - img
+                - generic [ref=e661]:
+                  - generic [ref=e662]: 323K views
+                  - generic [ref=e663]: •2 years ago
+              - generic [ref=e664]:
+                - link "Go to channel Amplified - Classic Rock & Music History" [ref=e665]:
+                  - /url: /@AmplifiedMusicDocs
+                - link "Amplified - Classic Rock & Music History" [ref=e670]:
+                  - /url: /@AmplifiedMusicDocs
+              - generic [ref=e671]:
+                - generic [ref=e672]: Experience the remarkable Woody Guthrie All-Star Tribute Concert of 1970, held at the iconic Hollywood Bowl, as it pays homage ...
+                - tooltip "tooltip"
+              - generic [ref=e675]:
+                - generic [ref=e676]:
+                  - generic [ref=e680]: 13 chapters
+                  - button "Intro | Oklahoma Hill | Pretty Boy Floyd | Dust Storm | I Aint Got No Home | The Land of California | Migrants | Roll On Columbia | From My Home | Naked | Reuben James | Ive Got To Know | I Hate A Song"
+                - button "More" [ref=e685]:
+                  - generic [ref=e689]:
+                    - img
+          - generic [ref=e693]:
+            - generic [ref=e696]:
+              - img [ref=e698]:
+                - generic [ref=e700]:
+                  - img
+              - heading "Shorts" [level=2] [ref=e703]
+            - generic [ref=e704]:
+              - generic [ref=e705]:
+                - generic [ref=e708]:
+                  - link [ref=e709] [cursor=pointer]:
+                    - /url: /shorts/3yJFG3zU4Gc
+                  - generic [ref=e713] [cursor=pointer]:
+                    - link "Woody Guthrie" [ref=e714]:
+                      - /url: /shorts/3yJFG3zU4Gc
+                    - generic [ref=e715]: 44K views
+                  - button "More actions" [ref=e717] [cursor=pointer]:
+                    - generic [ref=e721]:
+                      - img
+                - generic [ref=e727]:
+                  - link [ref=e728] [cursor=pointer]:
+                    - /url: /shorts/hIhx8VzuHbo
+                  - generic [ref=e732] [cursor=pointer]:
+                    - 'link "Beat Root Revival playing at Woody Guthrie Festival #shorts #music #livemusic #woodyguthriefest" [ref=e733]':
+                      - /url: /shorts/hIhx8VzuHbo
+                    - generic [ref=e734]: 168 views
+                  - button "More actions" [ref=e736] [cursor=pointer]:
+                    - generic [ref=e740]:
+                      - img
+              - generic [ref=e744]:
+                - generic [ref=e747]:
+                  - link [ref=e748] [cursor=pointer]:
+                    - /url: /shorts/11biZUnQPrk
+                  - generic [ref=e752] [cursor=pointer]:
+                    - link "U2 Perform “Pride” At 2025 Woody Guthrie Music Prize Ceremony" [ref=e753]:
+                      - /url: /shorts/11biZUnQPrk
+                    - generic [ref=e754]: 8.7K views
+                  - button "More actions" [ref=e756] [cursor=pointer]:
+                    - generic [ref=e760]:
+                      - img
+                - generic [ref=e766]:
+                  - link [ref=e767] [cursor=pointer]:
+                    - /url: /shorts/eq0bdq1pXAw
+                  - generic [ref=e771] [cursor=pointer]:
+                    - link "Song to Woody - A Slideshow" [ref=e772]:
+                      - /url: /shorts/eq0bdq1pXAw
+                    - generic [ref=e773]: 18K views
+                  - button "More actions" [ref=e775] [cursor=pointer]:
+                    - generic [ref=e779]:
+                      - img
+            - button "Show more" [ref=e786] [cursor=pointer]:
+              - generic [ref=e787]: Show more
+              - generic [ref=e791]:
+                - img
+          - generic [ref=e796]:
+            - link [ref=e798] [cursor=pointer]:
+              - /url: /watch?v=7kib74US5oc&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+            - generic [ref=e800] [cursor=pointer]:
+              - generic [ref=e801]:
+                - generic [ref=e802]:
+                  - 'heading "These United States: Woody Guthrie''s music of America 8 minutes, 22 seconds" [level=3] [ref=e803]':
+                    - 'link "These United States: Woody Guthrie''s music of America 8 minutes, 22 seconds" [ref=e804]':
+                      - /url: /watch?v=7kib74US5oc&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+                      - text: "These United States: Woody Guthrie's music of America"
+                  - button "Action menu" [ref=e808]:
+                    - generic [ref=e811]:
+                      - img
+                - generic [ref=e814]:
+                  - generic [ref=e815]: 85K views
+                  - generic [ref=e816]: •7 months ago
+              - generic [ref=e817]:
+                - link "Go to channel CBS Sunday Morning" [ref=e818]:
+                  - /url: /@CBSSundayMorning
+                - generic [ref=e819]:
+                  - link "CBS Sunday Morning" [ref=e823]:
+                    - /url: /@CBSSundayMorning
+                  - img "Verified" [ref=e826]:
+                    - generic [ref=e829]:
+                      - img
+              - generic [ref=e830]:
+                - generic [ref=e831]: "Folk singer-songwriter Woody Guthrie crafted a song we all know, that is about all of us: \"This Land Is Your Land.\" Correspondent ..."
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e834]:
+                - generic [ref=e835]: CC
+          - generic [ref=e837]:
+            - link [ref=e839] [cursor=pointer]:
+              - /url: /@woodyfest
+            - link "Woody Guthrie Folk Festival (WoodyFest) @woodyfest•643 subscribers The Woody Guthrie Coalition, a not-for-profit, 501(C) 3 organization, is dedicated to preserving and promoting the legacy and ..." [ref=e843] [cursor=pointer]:
+              - /url: /@woodyfest
+              - generic [ref=e844]:
+                - generic [ref=e848]: Woody Guthrie Folk Festival (WoodyFest)
+                - generic [ref=e849]: "@woodyfest•643 subscribers"
+                - generic [ref=e850]: The Woody Guthrie Coalition, a not-for-profit, 501(C) 3 organization, is dedicated to preserving and promoting the legacy and ...
+          - generic [ref=e852]:
+            - heading "People also watched" [level=2] [ref=e855]:
+              - generic [ref=e857]: People also watched
+            - generic [ref=e859]:
+              - generic [ref=e860]:
+                - generic [ref=e862]:
+                  - link [ref=e864] [cursor=pointer]:
+                    - /url: /watch?v=AvOLzY3Uqg4&list=RDAvOLzY3Uqg4&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                  - generic [ref=e866] [cursor=pointer]:
+                    - generic [ref=e867]:
+                      - generic [ref=e868]:
+                        - 'heading "Episode 24 - Rainbow Quest by Pete Seeger: Alexander Zelkin 54 minutes" [level=3] [ref=e869]':
+                          - 'link "Episode 24 - Rainbow Quest by Pete Seeger: Alexander Zelkin 54 minutes" [ref=e870]':
+                            - /url: /watch?v=AvOLzY3Uqg4&list=RDAvOLzY3Uqg4&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                            - text: "Episode 24 - Rainbow Quest by Pete Seeger: Alexander Zelkin"
+                        - button "Action menu" [ref=e874]:
+                          - generic [ref=e877]:
+                            - img
+                      - generic [ref=e880]:
+                        - generic [ref=e881]: 4.1K views
+                        - generic [ref=e882]: •4 years ago
+                    - generic [ref=e883]:
+                      - link "Go to channel Russ J." [ref=e884]:
+                        - /url: /@russj.5296
+                      - link "Russ J." [ref=e889]:
+                        - /url: /@russj.5296
+                    - generic [ref=e890]:
+                      - text: Alexandre Zelkine, then a young Russian emigre living in Canada, trades songs from all over the world with Pete Seeger.
+                      - tooltip "tooltip"
+                - generic [ref=e892]:
+                  - link [ref=e894] [cursor=pointer]:
+                    - /url: /watch?v=cMLnDFZ4y4c&list=RDcMLnDFZ4y4c&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                  - generic [ref=e896] [cursor=pointer]:
+                    - generic [ref=e897]:
+                      - generic [ref=e898]:
+                        - heading "ARLO GUTHRIE & PETE SEEGER WITH THE GUTHRIE FAMILY AT CARNEGIE HALL NYC 30 Nov 2013 1 hour, 54 minutes" [level=3] [ref=e899]:
+                          - link "ARLO GUTHRIE & PETE SEEGER WITH THE GUTHRIE FAMILY AT CARNEGIE HALL NYC 30 Nov 2013 1 hour, 54 minutes" [ref=e900]:
+                            - /url: /watch?v=cMLnDFZ4y4c&list=RDcMLnDFZ4y4c&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                            - text: ARLO GUTHRIE & PETE SEEGER WITH THE GUTHRIE FAMILY AT CARNEGIE HALL NYC 30 Nov 2013
+                        - button "Action menu" [ref=e904]:
+                          - generic [ref=e907]:
+                            - img
+                      - generic [ref=e910]:
+                        - generic [ref=e911]: 203K views
+                        - generic [ref=e912]: •12 years ago
+                    - generic [ref=e913]:
+                      - link "Go to channel BDM" [ref=e914]:
+                        - /url: /@bdm9449
+                      - link "BDM" [ref=e919]:
+                        - /url: /@bdm9449
+                    - generic [ref=e920]:
+                      - generic [ref=e921]: ARLO GUTHRIE & PETE SEEGER WITH THE GUTHRIE FAMILY AT CARNEGIE HALL New York, New York, USA November 30, ...
+                      - tooltip "tooltip"
+                - generic [ref=e923]:
+                  - link [ref=e925] [cursor=pointer]:
+                    - /url: /watch?v=inNDsOMLDbA&list=RDinNDsOMLDbA&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                  - generic [ref=e927] [cursor=pointer]:
+                    - generic [ref=e928]:
+                      - generic [ref=e929]:
+                        - heading "Arlo Guthrie & Pete Seeger - Together In Concert (Live) 1 hour, 10 minutes" [level=3] [ref=e930]:
+                          - link "Arlo Guthrie & Pete Seeger - Together In Concert (Live) 1 hour, 10 minutes" [ref=e931]:
+                            - /url: /watch?v=inNDsOMLDbA&list=RDinNDsOMLDbA&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                            - text: Arlo Guthrie & Pete Seeger - Together In Concert (Live)
+                        - button "Action menu" [ref=e935]:
+                          - generic [ref=e938]:
+                            - img
+                      - generic [ref=e941]:
+                        - generic [ref=e942]: 148K views
+                        - generic [ref=e943]: •6 years ago
+                    - generic [ref=e944]:
+                      - link "Go to channel moonchilddave" [ref=e945]:
+                        - /url: /@moonchilddave
+                      - link "moonchilddave" [ref=e950]:
+                        - /url: /@moonchilddave
+                    - generic [ref=e951]:
+                      - generic [ref=e952]: This live show from Wolf Trap Farm Park in Vienna, VA originally aired on PBS on August 23, 1978. I am unsure if this is the ...
+                      - tooltip "tooltip"
+                - generic [ref=e954]:
+                  - link [ref=e956] [cursor=pointer]:
+                    - /url: /watch?v=aFNC1an4Dk4&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+                  - generic [ref=e958] [cursor=pointer]:
+                    - generic [ref=e959]:
+                      - generic [ref=e960]:
+                        - heading "Pete seeger live in australia 1963 HD 1 hour, 48 minutes" [level=3] [ref=e961]:
+                          - link "Pete seeger live in australia 1963 HD 1 hour, 48 minutes" [ref=e962]:
+                            - /url: /watch?v=aFNC1an4Dk4&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+                            - text: Pete seeger live in australia 1963 HD
+                        - button "Action menu" [ref=e966]:
+                          - generic [ref=e969]:
+                            - img
+                      - generic [ref=e972]:
+                        - generic [ref=e973]: 36K views
+                        - generic [ref=e974]: •3 years ago
+                    - generic [ref=e975]:
+                      - link "Go to channel @GRB0609" [ref=e976]:
+                        - /url: /@GRB-0609
+                      - link "@GRB0609" [ref=e981]:
+                        - /url: /@GRB-0609
+              - generic "+6 more" [ref=e983] [cursor=pointer]
+          - generic [ref=e985]:
+            - link [ref=e987] [cursor=pointer]:
+              - /url: /watch?v=GXKeYgVtabo&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+            - generic [ref=e989] [cursor=pointer]:
+              - generic [ref=e990]:
+                - generic [ref=e991]:
+                  - heading "Ani DiFranco - Woody Guthrie At 100! / Ani on history of Folk Singers (Digital Video clip) 1 minute, 1 second" [level=3] [ref=e992]:
+                    - link "Ani DiFranco - Woody Guthrie At 100! / Ani on history of Folk Singers (Digital Video clip) 1 minute, 1 second" [ref=e993]:
+                      - /url: /watch?v=GXKeYgVtabo&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+                      - text: Ani DiFranco - Woody Guthrie At 100! / Ani on history of Folk Singers (Digital Video clip)
+                  - button "Action menu" [ref=e997]:
+                    - generic [ref=e1000]:
+                      - img
+                - generic [ref=e1003]:
+                  - generic [ref=e1004]: 1K views
+                  - generic [ref=e1005]: •12 years ago
+              - generic [ref=e1006]:
+                - link "Go to channel LegacyRecordingsVEVO" [ref=e1007]:
+                  - /url: /@LegacyRecordingsVEVO
+                - generic [ref=e1008]:
+                  - link "LegacyRecordingsVEVO" [ref=e1012]:
+                    - /url: /@LegacyRecordingsVEVO
+                  - img "Verified" [ref=e1015]:
+                    - generic [ref=e1018]:
+                      - img
+              - generic [ref=e1019]:
+                - generic [ref=e1020]: Music video by Ani Difranco performing Woody Guthrie At 100! / Ani on history of Folk Singers. (C) 2013 Woody Guthrie ...
+                - tooltip "tooltip"
+          - generic [ref=e1022]:
+            - link [ref=e1024] [cursor=pointer]:
+              - /url: /watch?v=Y4c4YEbZWB4&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+            - generic [ref=e1026] [cursor=pointer]:
+              - generic [ref=e1027]:
+                - generic [ref=e1028]:
+                  - heading "Donovan - Woody Guthrie At 100! /Donovan on folk songs 58 seconds" [level=3] [ref=e1029]:
+                    - link "Donovan - Woody Guthrie At 100! /Donovan on folk songs 58 seconds" [ref=e1030]:
+                      - /url: /watch?v=Y4c4YEbZWB4&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+                      - text: Donovan - Woody Guthrie At 100! /Donovan on folk songs
+                  - button "Action menu" [ref=e1034]:
+                    - generic [ref=e1037]:
+                      - img
+                - generic [ref=e1040]:
+                  - generic [ref=e1041]: 2.5K views
+                  - generic [ref=e1042]: •6 years ago
+              - generic [ref=e1043]:
+                - link "Go to channel DonovanVEVO" [ref=e1044]:
+                  - /url: /channel/UC09ddi2PE0Y7NrqKSOJHSvw
+                - generic [ref=e1045]:
+                  - link "Donovan" [ref=e1049]:
+                    - /url: /channel/UC09ddi2PE0Y7NrqKSOJHSvw
+                  - img "Official Artist Channel" [ref=e1052]:
+                    - generic [ref=e1055]:
+                      - img
+              - generic [ref=e1056]:
+                - generic [ref=e1057]: "Watch Donovan discuss folk songs and the folk music genre Listen to Donovan: https://Donovan.lnk.to/listenYD Subscribe to the ..."
+                - tooltip "tooltip"
+          - generic [ref=e1059]:
+            - link [ref=e1061] [cursor=pointer]:
+              - /url: /watch?v=AePCvFrggZM&list=RDAePCvFrggZM&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+            - generic [ref=e1063] [cursor=pointer]:
+              - generic [ref=e1064]:
+                - generic [ref=e1065]:
+                  - heading "This Land is Your Land 2 minutes, 46 seconds" [level=3] [ref=e1066]:
+                    - link "This Land is Your Land 2 minutes, 46 seconds" [ref=e1067]:
+                      - /url: /watch?v=AePCvFrggZM&list=RDAePCvFrggZM&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                      - text: This Land is Your Land
+                  - button "Action menu" [ref=e1071]:
+                    - generic [ref=e1074]:
+                      - img
+                - generic [ref=e1078]: 1.7M views
+              - generic [ref=e1079]:
+                - link "Go to channel Woody Guthrie - Topic" [ref=e1080]:
+                  - /url: /channel/UCgbCJIqwRQbo8xuVWvQFqYg
+                - link "Woody Guthrie - Topic" [ref=e1085]:
+                  - /url: /channel/UCgbCJIqwRQbo8xuVWvQFqYg
+              - generic [ref=e1086]:
+                - generic [ref=e1087]: "Provided to YouTube by Smithsonian Folkways Recordings This Land is Your Land · Woody Guthrie This Land is Your Land: The ..."
+                - tooltip "tooltip"
+          - generic [ref=e1089]:
+            - link [ref=e1091] [cursor=pointer]:
+              - /url: /watch?v=wxiMrvDbq3s&list=RDwxiMrvDbq3s&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e1093] [cursor=pointer]:
+              - generic [ref=e1094]:
+                - generic [ref=e1095]:
+                  - heading "Woody Guthrie- This Land Is Your Land 4 minutes, 31 seconds" [level=3] [ref=e1096]:
+                    - link "Woody Guthrie- This Land Is Your Land 4 minutes, 31 seconds" [ref=e1097]:
+                      - /url: /watch?v=wxiMrvDbq3s&list=RDwxiMrvDbq3s&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                      - text: Woody Guthrie- This Land Is Your Land
+                  - button "Action menu" [ref=e1101]:
+                    - generic [ref=e1104]:
+                      - img
+                - generic [ref=e1107]:
+                  - generic [ref=e1108]: 9.8M views
+                  - generic [ref=e1109]: •17 years ago
+              - generic [ref=e1110]:
+                - link "Go to channel rutaloot" [ref=e1111]:
+                  - /url: /@rutaloot
+                - link "rutaloot" [ref=e1116]:
+                  - /url: /@rutaloot
+              - generic [ref=e1117]:
+                - generic [ref=e1118]: the great Woody Guthrie.
+                - tooltip "tooltip"
+          - generic [ref=e1120]:
+            - link [ref=e1122] [cursor=pointer]:
+              - /url: /watch?v=dkAxuqrVNBM&list=RDdkAxuqrVNBM&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+            - generic [ref=e1124] [cursor=pointer]:
+              - generic [ref=e1125]:
+                - generic [ref=e1126]:
+                  - heading "Woody Guthrie - Talking Dustbowl Blues 2 minutes, 40 seconds" [level=3] [ref=e1127]:
+                    - link "Woody Guthrie - Talking Dustbowl Blues 2 minutes, 40 seconds" [ref=e1128]:
+                      - /url: /watch?v=dkAxuqrVNBM&list=RDdkAxuqrVNBM&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                      - text: Woody Guthrie - Talking Dustbowl Blues
+                  - button "Action menu" [ref=e1132]:
+                    - generic [ref=e1135]:
+                      - img
+                - generic [ref=e1138]:
+                  - generic [ref=e1139]: 497K views
+                  - generic [ref=e1140]: •17 years ago
+              - generic [ref=e1141]:
+                - link "Go to channel Joe Stead" [ref=e1142]:
+                  - /url: /@banjostead
+                - link "Joe Stead" [ref=e1147]:
+                  - /url: /@banjostead
+              - generic [ref=e1148]:
+                - generic [ref=e1149]: Woody Guthrie.
+                - tooltip "tooltip"
+          - generic [ref=e1151]:
+            - link [ref=e1153] [cursor=pointer]:
+              - /url: /watch?v=J8FnGVStw-A&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+            - generic [ref=e1155] [cursor=pointer]:
+              - generic [ref=e1156]:
+                - generic [ref=e1157]:
+                  - heading "Newly released tapes reveal intimate reflections by Woody Guthrie 8 minutes, 57 seconds" [level=3] [ref=e1158]:
+                    - link "Newly released tapes reveal intimate reflections by Woody Guthrie 8 minutes, 57 seconds" [ref=e1159]:
+                      - /url: /watch?v=J8FnGVStw-A&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+                      - text: Newly released tapes reveal intimate reflections by Woody Guthrie
+                  - button "Action menu" [ref=e1163]:
+                    - generic [ref=e1166]:
+                      - img
+                - generic [ref=e1169]:
+                  - generic [ref=e1170]: 25K views
+                  - generic [ref=e1171]: •7 months ago
+              - generic [ref=e1172]:
+                - link "Go to channel PBS NewsHour" [ref=e1173]:
+                  - /url: /@PBSNewsHour
+                - generic [ref=e1174]:
+                  - link "PBS NewsHour" [ref=e1178]:
+                    - /url: /@PBSNewsHour
+                  - img "Verified" [ref=e1181]:
+                    - generic [ref=e1184]:
+                      - img
+              - generic [ref=e1185]:
+                - generic [ref=e1186]: Nearly 60 years after his death, there is a renewed interest in the life and music of American folk icon and social activist Woody ...
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e1189]:
+                - generic [ref=e1190]: CC
+          - generic [ref=e1192]:
+            - link [ref=e1194] [cursor=pointer]:
+              - /url: /watch?v=9EnXnFgnkUc&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+            - generic [ref=e1196] [cursor=pointer]:
+              - generic [ref=e1197]:
+                - generic [ref=e1198]:
+                  - heading "BBC Arena - Woody Guthrie (1988) 1 hour, 7 minutes" [level=3] [ref=e1199]:
+                    - link "BBC Arena - Woody Guthrie (1988) 1 hour, 7 minutes" [ref=e1200]:
+                      - /url: /watch?v=9EnXnFgnkUc&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZQ%3D%3D
+                      - text: BBC Arena - Woody Guthrie (1988)
+                  - button "Action menu" [ref=e1204]:
+                    - generic [ref=e1207]:
+                      - img
+                - generic [ref=e1210]:
+                  - generic [ref=e1211]: 492K views
+                  - generic [ref=e1212]: •14 years ago
+              - generic [ref=e1213]:
+                - link "Go to channel Nheryvra" [ref=e1214]:
+                  - /url: /@Nheryvra
+                - link "Nheryvra" [ref=e1219]:
+                  - /url: /@Nheryvra
+              - generic [ref=e1220]:
+                - generic [ref=e1221]: Documentary on the life of Woody Guthrie, the travelling songwriter and singer who paved the way for the likes of Bob Dylan and ...
+                - tooltip "tooltip"
+          - generic [ref=e1223]:
+            - link [ref=e1225] [cursor=pointer]:
+              - /url: /watch?v=gtigp6DA314&list=RDgtigp6DA314&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+            - generic [ref=e1227] [cursor=pointer]:
+              - generic [ref=e1228]:
+                - generic [ref=e1229]:
+                  - heading "Arlo Guthrie - Deportee (Live at Farm Aid 2000) 4 minutes, 3 seconds" [level=3] [ref=e1230]:
+                    - link "Arlo Guthrie - Deportee (Live at Farm Aid 2000) 4 minutes, 3 seconds" [ref=e1231]:
+                      - /url: /watch?v=gtigp6DA314&list=RDgtigp6DA314&start_radio=1&pp=ygUrV29vZHkgR3V0aHJpZSBmb2xrIHBlcmZvcm1hbmNlIGxpdmUgZm9vdGFnZaAHAQ%3D%3D
+                      - text: Arlo Guthrie - Deportee (Live at Farm Aid 2000)
+                  - button "Action menu" [ref=e1235]:
+                    - generic [ref=e1238]:
+                      - img
+                - generic [ref=e1241]:
+                  - generic [ref=e1242]: 141K views
+                  - generic [ref=e1243]: •11 years ago
+              - generic [ref=e1244]:
+                - link "Go to channel Farm Aid" [ref=e1245]:
+                  - /url: /@FarmAid
+                - link "Farm Aid" [ref=e1250]:
+                  - /url: /@FarmAid
+              - generic [ref=e1251]:
+                - generic [ref=e1252]: Arlo Guthrie perfroms "Deportee/Plane Wreck at Los Gatos" at Farm Aid 2000 in Bristow, Virginia on September 17, 2000.
+                - tooltip "tooltip"
+              - img "Fundraiser" [ref=e1255]:
+                - generic [ref=e1256]: Fundraiser
+    - text: •

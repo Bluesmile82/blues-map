@@ -1,0 +1,686 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - generic [ref=e13]:
+          - link "YouTube Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e19]:
+              - img
+          - generic [ref=e20]: ES
+        - button "Skip navigation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Skip navigation
+      - button "Search" [ref=e31] [cursor=pointer]:
+        - generic [ref=e34]:
+          - img
+        - tooltip "tooltip"
+      - generic [ref=e36]:
+        - button "Settings" [ref=e41] [cursor=pointer]:
+          - generic [ref=e44]:
+            - img
+        - link "Sign in" [ref=e47] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DTracy%252BNelson%252Bblues%252Bsinger%252BMother%252BEarth%252Blive&hl=en&ec=65620
+          - generic [ref=e51]:
+            - img
+          - generic [ref=e52]: Sign in
+  - generic [ref=e56]:
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e60]:
+          - generic [ref=e63]:
+            - tablist [ref=e65]:
+              - tab "All" [selected] [ref=e69] [cursor=pointer]:
+                - generic [ref=e71]: All
+              - tab "Shorts" [ref=e78] [cursor=pointer]:
+                - generic [ref=e80]: Shorts
+              - tab "Videos" [ref=e87] [cursor=pointer]:
+                - generic [ref=e89]: Videos
+              - tab "Unwatched" [ref=e96] [cursor=pointer]:
+                - generic [ref=e98]: Unwatched
+              - tab "Watched" [ref=e105] [cursor=pointer]:
+                - generic [ref=e107]: Watched
+              - tab "Recently uploaded" [ref=e114] [cursor=pointer]:
+                - generic [ref=e116]: Recently uploaded
+              - tab "Live" [ref=e123] [cursor=pointer]:
+                - generic [ref=e125]: Live
+              - tab "Playlists" [ref=e132] [cursor=pointer]:
+                - generic [ref=e134]: Playlists
+            - button "Next" [ref=e142] [cursor=pointer]:
+              - generic [ref=e146]:
+                - img
+          - link "About these results" [ref=e153] [cursor=pointer]:
+            - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+            - generic [ref=e154]: About these results
+            - generic [ref=e158]:
+              - img
+          - generic [ref=e163]:
+            - button "Search filters" [ref=e165] [cursor=pointer]:
+              - generic [ref=e166]: Filters
+              - generic [ref=e170]:
+                - img
+            - tooltip "tooltip"
+        - generic [ref=e179]:
+          - generic [ref=e181]:
+            - link [ref=e183] [cursor=pointer]:
+              - /url: /watch?v=yiHa0LFN80I&list=RDyiHa0LFN80I&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+              - img [ref=e185]
+              - img [ref=e188]:
+                - generic [ref=e191]:
+                  - img
+                - generic [ref=e192]: 6:07
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e193] [cursor=pointer]:
+              - generic [ref=e194]:
+                - generic [ref=e195]:
+                  - heading "MOTHER EARTH - TRACY NELSON & MOTHER EARTH 6 minutes, 7 seconds" [level=3] [ref=e196]:
+                    - link "MOTHER EARTH - TRACY NELSON & MOTHER EARTH 6 minutes, 7 seconds" [ref=e197]:
+                      - /url: /watch?v=yiHa0LFN80I&list=RDyiHa0LFN80I&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+                      - text: MOTHER EARTH - TRACY NELSON & MOTHER EARTH
+                  - button "Action menu" [ref=e201]:
+                    - generic [ref=e204]:
+                      - img
+                - generic [ref=e207]:
+                  - generic [ref=e208]: 220 views
+                  - generic [ref=e209]: •7 years ago
+              - generic [ref=e210]:
+                - link "Go to channel LawdyMissClawdyMEDIA" [ref=e211]:
+                  - /url: /@LawdyMissClawdyMEDIA
+                - link "LawdyMissClawdyMEDIA" [ref=e217]:
+                  - /url: /@LawdyMissClawdyMEDIA
+          - generic [ref=e219]:
+            - link [ref=e221] [cursor=pointer]:
+              - /url: /watch?v=QDmjOOmVIDw&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZQ%3D%3D
+              - img [ref=e223]
+              - img [ref=e226]:
+                - generic [ref=e227]: 6:40
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e228] [cursor=pointer]:
+              - generic [ref=e229]:
+                - generic [ref=e230]:
+                  - heading "Al Kooper • Interview (Tracy Nelson & Mother Earth) • 1994 [Reelin' In The Years Archive] 6 minutes, 40 seconds" [level=3] [ref=e231]:
+                    - link "Al Kooper • Interview (Tracy Nelson & Mother Earth) • 1994 [Reelin' In The Years Archive] 6 minutes, 40 seconds" [ref=e232]:
+                      - /url: /watch?v=QDmjOOmVIDw&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZQ%3D%3D
+                      - text: Al Kooper • Interview (Tracy Nelson & Mother Earth) • 1994 [Reelin' In The Years Archive]
+                  - button "Action menu" [ref=e236]:
+                    - generic [ref=e239]:
+                      - img
+                - generic [ref=e242]:
+                  - generic [ref=e243]: 1.1K views
+                  - generic [ref=e244]: •3 years ago
+              - generic [ref=e245]:
+                - link "Go to channel ReelinInTheYears66" [ref=e246]:
+                  - /url: /@ReelinInTheYears66
+                - link "ReelinInTheYears66" [ref=e252]:
+                  - /url: /@ReelinInTheYears66
+              - generic [ref=e253]:
+                - text: Reelin' In The Years Productions has available for licensing over 30000 hours of music footage spanning 90 years. Additionally ...
+                - tooltip "tooltip"
+          - generic [ref=e255]:
+            - link [ref=e257] [cursor=pointer]:
+              - /url: /watch?v=wmV6NvDnidM&list=RDwmV6NvDnidM&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+              - img [ref=e259]
+              - img [ref=e262]:
+                - generic [ref=e265]:
+                  - img
+                - generic [ref=e266]: 4:43
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e267] [cursor=pointer]:
+              - generic [ref=e268]:
+                - generic [ref=e269]:
+                  - heading "Mother Earth and Tracy Nelson - Rare Footage from 1969 in Nashville 4 minutes, 43 seconds" [level=3] [ref=e270]:
+                    - link "Mother Earth and Tracy Nelson - Rare Footage from 1969 in Nashville 4 minutes, 43 seconds" [ref=e271]:
+                      - /url: /watch?v=wmV6NvDnidM&list=RDwmV6NvDnidM&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+                      - text: Mother Earth and Tracy Nelson - Rare Footage from 1969 in Nashville
+                  - button "Action menu" [ref=e275]:
+                    - generic [ref=e278]:
+                      - img
+                - generic [ref=e281]:
+                  - generic [ref=e282]: 72K views
+                  - generic [ref=e283]: •14 years ago
+              - generic [ref=e284]:
+                - link "Go to channel Richard Harrington" [ref=e285]:
+                  - /url: /@rharrington
+                - link "Richard Harrington" [ref=e291]:
+                  - /url: /@rharrington
+              - generic [ref=e292]:
+                - generic [ref=e293]: Mother Earth and Tracy Nelson - Rare Footage from 1969 in Nashville. Also available on the Nashville Sound DVD.
+                - tooltip "tooltip"
+          - generic [ref=e295]:
+            - link [ref=e297] [cursor=pointer]:
+              - /url: /watch?v=e4YUtDjDF4Y&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZQ%3D%3D
+              - img [ref=e299]
+              - img [ref=e302]:
+                - generic [ref=e303]: 6:27
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e304] [cursor=pointer]:
+              - generic [ref=e305]:
+                - generic [ref=e306]:
+                  - heading "Mother Earth (Tracy Nelson) Rare footage in Nashville REACTION 6 minutes, 27 seconds" [level=3] [ref=e307]:
+                    - link "Mother Earth (Tracy Nelson) Rare footage in Nashville REACTION 6 minutes, 27 seconds" [ref=e308]:
+                      - /url: /watch?v=e4YUtDjDF4Y&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZQ%3D%3D
+                      - text: Mother Earth (Tracy Nelson) Rare footage in Nashville REACTION
+                  - button "Action menu" [ref=e312]:
+                    - generic [ref=e315]:
+                      - img
+                - generic [ref=e318]:
+                  - generic [ref=e319]: 297 views
+                  - generic [ref=e320]: •2 years ago
+              - generic [ref=e321]:
+                - link "Go to channel Deep Cuts Reactions" [ref=e322]:
+                  - /url: /@deepcutsreactions7774
+                - link "Deep Cuts Reactions" [ref=e328]:
+                  - /url: /@deepcutsreactions7774
+              - generic [ref=e329]:
+                - generic [ref=e330]: recorded live in Nashville 1969.
+                - tooltip "tooltip"
+          - generic [ref=e332]:
+            - link [ref=e334] [cursor=pointer]:
+              - /url: /watch?v=F5ycASOGbW4&list=RDF5ycASOGbW4&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+              - img [ref=e336]
+              - img [ref=e339]:
+                - generic [ref=e342]:
+                  - img
+                - generic [ref=e343]: 2:21
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e344] [cursor=pointer]:
+              - generic [ref=e345]:
+                - generic [ref=e346]:
+                  - heading "Tracy Nelson & Band at Newport69 2 minutes, 21 seconds" [level=3] [ref=e347]:
+                    - link "Tracy Nelson & Band at Newport69 2 minutes, 21 seconds" [ref=e348]:
+                      - /url: /watch?v=F5ycASOGbW4&list=RDF5ycASOGbW4&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                      - text: Tracy Nelson & Band at Newport69
+                  - button "Action menu" [ref=e352]:
+                    - generic [ref=e355]:
+                      - img
+                - generic [ref=e358]:
+                  - generic [ref=e359]: 20K views
+                  - generic [ref=e360]: •19 years ago
+              - generic [ref=e361]:
+                - link "Go to channel johanincr" [ref=e362]:
+                  - /url: /@johanincr
+                - link "johanincr" [ref=e368]:
+                  - /url: /@johanincr
+              - generic [ref=e369]:
+                - generic [ref=e370]: incomplete song from a badly degenerated video copy of the 16mm footage.
+                - tooltip "tooltip"
+          - generic [ref=e372]:
+            - link [ref=e374] [cursor=pointer]:
+              - /url: /watch?v=wt0DZ372cQM&list=RDwt0DZ372cQM&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e376] [cursor=pointer]:
+              - generic [ref=e377]:
+                - generic [ref=e378]:
+                  - heading "Mother Earth 6 minutes, 13 seconds" [level=3] [ref=e379]:
+                    - link "Mother Earth 6 minutes, 13 seconds" [ref=e380]:
+                      - /url: /watch?v=wt0DZ372cQM&list=RDwt0DZ372cQM&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                      - text: Mother Earth
+                  - button "Action menu" [ref=e384]:
+                    - generic [ref=e387]:
+                      - img
+                - generic [ref=e391]: 17K views
+              - generic [ref=e392]:
+                - link "Go to channel Tracy Nelson - Topic" [ref=e393]:
+                  - /url: /channel/UC3RHYBQ1YBxaATPEMVFYCvQ
+                - link "Tracy Nelson - Topic" [ref=e399]:
+                  - /url: /channel/UC3RHYBQ1YBxaATPEMVFYCvQ
+              - generic [ref=e400]:
+                - generic [ref=e401]: Provided to YouTube by 143/Warner Records Mother Earth · Tracy Nelson The Best Of Tracy Nelson/Mother Earth ℗ 1996 ...
+                - tooltip "tooltip"
+          - generic [ref=e403]:
+            - link [ref=e405] [cursor=pointer]:
+              - /url: /watch?v=SSUM3wKa5gE&list=RDSSUM3wKa5gE&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+            - generic [ref=e407] [cursor=pointer]:
+              - generic [ref=e408]:
+                - generic [ref=e409]:
+                  - heading "Tracy Nelson and the Jimmys Mother Earth Mt. Morris Jamboree 8/8/25 10 minutes, 57 seconds" [level=3] [ref=e410]:
+                    - link "Tracy Nelson and the Jimmys Mother Earth Mt. Morris Jamboree 8/8/25 10 minutes, 57 seconds" [ref=e411]:
+                      - /url: /watch?v=SSUM3wKa5gE&list=RDSSUM3wKa5gE&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+                      - text: Tracy Nelson and the Jimmys Mother Earth Mt. Morris Jamboree 8/8/25
+                  - button "Action menu" [ref=e415]:
+                    - generic [ref=e418]:
+                      - img
+                - generic [ref=e421]:
+                  - generic [ref=e422]: 73 views
+                  - generic [ref=e423]: •7 months ago
+              - generic [ref=e424]:
+                - link "Go to channel Steve Jones" [ref=e425]:
+                  - /url: /@subinsignia
+                - link "Steve Jones" [ref=e430]:
+                  - /url: /@subinsignia
+              - generic [ref=e431]:
+                - generic [ref=e432]: Tracy Nelson and the Jimmys Mother Earth Mt. Morris Jamboree 8/8/25.
+                - tooltip "tooltip"
+          - generic [ref=e434]:
+            - link [ref=e436] [cursor=pointer]:
+              - /url: /watch?v=tX9pWXZ7X1I&list=RDtX9pWXZ7X1I&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+            - generic [ref=e438] [cursor=pointer]:
+              - generic [ref=e439]:
+                - generic [ref=e440]:
+                  - heading "Mother Earth 6 minutes, 13 seconds" [level=3] [ref=e441]:
+                    - link "Mother Earth 6 minutes, 13 seconds" [ref=e442]:
+                      - /url: /watch?v=tX9pWXZ7X1I&list=RDtX9pWXZ7X1I&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+                      - text: Mother Earth
+                  - button "Action menu" [ref=e446]:
+                    - generic [ref=e449]:
+                      - img
+                - generic [ref=e453]: 393 views
+              - generic [ref=e454]:
+                - link "Go to channel Tracy Nelson - Topic" [ref=e455]:
+                  - /url: /channel/UC3RHYBQ1YBxaATPEMVFYCvQ
+                - link "Tracy Nelson - Topic" [ref=e460]:
+                  - /url: /channel/UC3RHYBQ1YBxaATPEMVFYCvQ
+              - generic [ref=e461]:
+                - generic [ref=e462]: "Provided to YouTube by Warner Music Group - X5 Music Group Mother Earth · Tracy Nelson Trouble on the Line: Electric Blues ..."
+                - tooltip "tooltip"
+          - generic [ref=e464]:
+            - link [ref=e466] [cursor=pointer]:
+              - /url: /watch?v=DUx3hPwxtgE&list=RDDUx3hPwxtgE&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+            - generic [ref=e468] [cursor=pointer]:
+              - generic [ref=e469]:
+                - generic [ref=e470]:
+                  - heading "Tracy Nelson - On Stage at Lonesome Pine 40 minutes" [level=3] [ref=e471]:
+                    - link "Tracy Nelson - On Stage at Lonesome Pine 40 minutes" [ref=e472]:
+                      - /url: /watch?v=DUx3hPwxtgE&list=RDDUx3hPwxtgE&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+                      - text: Tracy Nelson - On Stage at Lonesome Pine
+                  - button "Action menu" [ref=e476]:
+                    - generic [ref=e479]:
+                      - img
+                - generic [ref=e482]:
+                  - generic [ref=e483]: 1K views
+                  - generic [ref=e484]: •9 months ago
+              - generic [ref=e485]:
+                - link "Go to channel Clark Santee Video Productions" [ref=e486]:
+                  - /url: /@santeevideo
+                - link "Clark Santee Video Productions" [ref=e491]:
+                  - /url: /@santeevideo
+              - generic [ref=e492]:
+                - generic [ref=e493]: 1988 ~ Blues virtuoso, Tracy Nelson, performs with backup legends, Pebble Daniel and Dianne Davidson, presenting blues ...
+                - tooltip "tooltip"
+              - img "4K" [ref=e496]:
+                - generic [ref=e497]: 4K
+          - generic [ref=e499]:
+            - link [ref=e501] [cursor=pointer]:
+              - /url: /watch?v=N3V_kr9ORoA&list=RDN3V_kr9ORoA&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+            - generic [ref=e503] [cursor=pointer]:
+              - generic [ref=e504]:
+                - generic [ref=e505]:
+                  - heading "Mother Earth (with Tracy Nelson) -- Mother Earth 6 minutes, 19 seconds" [level=3] [ref=e506]:
+                    - link "Mother Earth (with Tracy Nelson) -- Mother Earth 6 minutes, 19 seconds" [ref=e507]:
+                      - /url: /watch?v=N3V_kr9ORoA&list=RDN3V_kr9ORoA&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+                      - text: Mother Earth (with Tracy Nelson) -- Mother Earth
+                  - button "Action menu" [ref=e511]:
+                    - generic [ref=e514]:
+                      - img
+                - generic [ref=e517]:
+                  - generic [ref=e518]: 1.9K views
+                  - generic [ref=e519]: •5 years ago
+              - generic [ref=e520]:
+                - link "Go to channel Steve Minkin" [ref=e521]:
+                  - /url: /@steveminkin5517
+                - link "Steve Minkin" [ref=e526]:
+                  - /url: /@steveminkin5517
+          - generic [ref=e528] [cursor=pointer]:
+            - link [ref=e529]:
+              - /url: /watch?v=Nyv8Yr0tQjw&list=PLD3C38E3FD827794F
+              - generic [ref=e539]:
+                - generic [ref=e542]:
+                  - img
+                - generic [ref=e543]: 21 videos
+            - generic [ref=e546]:
+              - heading "Mother Earth/ Tracy Nelson" [level=3] [ref=e547]:
+                - link "Mother Earth/ Tracy Nelson" [ref=e548]:
+                  - /url: /watch?v=Nyv8Yr0tQjw&list=PLD3C38E3FD827794F
+              - generic [ref=e550]:
+                - generic [ref=e551]:
+                  - link "James Dickson" [ref=e554]:
+                    - /url: /@BalloonaticAustinweird
+                  - generic [ref=e555]: •
+                  - link "Playlist" [ref=e558]:
+                    - /url: /@BalloonaticAustinweird
+                - link "MOTHER EARTH - THE KINGDOM OF HEAVEN (IS WITHIN YOU) · 4:58" [ref=e562]:
+                  - /url: /watch?v=Nyv8Yr0tQjw&list=PLD3C38E3FD827794F
+                - link "Down So Low · 3:43" [ref=e565]:
+                  - /url: /watch?v=PZ8RaqDuUik&list=PLD3C38E3FD827794F
+                - link "View full playlist" [ref=e570]:
+                  - /url: /playlist?list=PLD3C38E3FD827794F
+          - generic [ref=e572]:
+            - link [ref=e574] [cursor=pointer]:
+              - /url: /watch?v=Yw0jGceuiKE&list=RDYw0jGceuiKE&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e576] [cursor=pointer]:
+              - generic [ref=e577]:
+                - generic [ref=e578]:
+                  - heading "Tracy Nelson \"Mother Earth (LIVE)\" Official Audio 8 minutes, 51 seconds" [level=3] [ref=e579]:
+                    - link "Tracy Nelson \"Mother Earth (LIVE)\" Official Audio 8 minutes, 51 seconds" [ref=e580]:
+                      - /url: /watch?v=Yw0jGceuiKE&list=RDYw0jGceuiKE&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                      - text: Tracy Nelson "Mother Earth (LIVE)" Official Audio
+                  - button "Action menu" [ref=e584]:
+                    - generic [ref=e587]:
+                      - img
+                - generic [ref=e590]:
+                  - generic [ref=e591]: 5.3K views
+                  - generic [ref=e592]: •10 years ago
+              - generic [ref=e593]:
+                - link "Go to channel Memphis International Records" [ref=e594]:
+                  - /url: /@MemphisInternationalRecords
+                - generic [ref=e595]:
+                  - link "Memphis International Records" [ref=e599]:
+                    - /url: /@MemphisInternationalRecords
+                  - img "Verified" [ref=e602]:
+                    - generic [ref=e605]:
+                      - img
+              - generic [ref=e606]:
+                - generic [ref=e607]: "You can purchase the \"Live from Cell Block D\" CD here: https://tinyurl.com/335efh8h 2003: Memphis International Records ..."
+                - tooltip "tooltip"
+          - generic [ref=e609]:
+            - heading "People also watched" [level=2] [ref=e612]:
+              - generic [ref=e614]: People also watched
+            - generic [ref=e616]:
+              - generic [ref=e617]:
+                - generic [ref=e619]:
+                  - link [ref=e621] [cursor=pointer]:
+                    - /url: /watch?v=eJZav1PWyXQ&list=RDeJZav1PWyXQ&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+                  - generic [ref=e623] [cursor=pointer]:
+                    - generic [ref=e624]:
+                      - generic [ref=e625]:
+                        - heading "Eric Andersen - special guest Townes Van Zandt (Genova 3-12-1994) 1 hour, 21 minutes" [level=3] [ref=e626]:
+                          - link "Eric Andersen - special guest Townes Van Zandt (Genova 3-12-1994) 1 hour, 21 minutes" [ref=e627]:
+                            - /url: /watch?v=eJZav1PWyXQ&list=RDeJZav1PWyXQ&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+                            - text: Eric Andersen - special guest Townes Van Zandt (Genova 3-12-1994)
+                        - button "Action menu" [ref=e631]:
+                          - generic [ref=e634]:
+                            - img
+                      - generic [ref=e637]:
+                        - generic [ref=e638]: 8.7K views
+                        - generic [ref=e639]: •6 years ago
+                    - generic [ref=e640]:
+                      - link "Go to channel Lineatrad Television" [ref=e641]:
+                        - /url: /@Lineatrad
+                      - link "Lineatrad Television" [ref=e646]:
+                        - /url: /@Lineatrad
+                    - generic [ref=e647]:
+                      - text: Eric Andersen, Rick Danko, Jonas Fjeld, special guest Townes Van Zandt - Teatro Albatros, Genova, 3 dicembre 1994.
+                      - tooltip "tooltip"
+                - generic [ref=e649]:
+                  - link [ref=e651] [cursor=pointer]:
+                    - /url: /watch?v=HOGlIYtWvy0&list=RDHOGlIYtWvy0&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+                  - generic [ref=e653] [cursor=pointer]:
+                    - generic [ref=e654]:
+                      - generic [ref=e655]:
+                        - heading "TRACY NELSON PLEASE NO MORE JazzAlleySeattle 08 08 12 6 minutes, 52 seconds" [level=3] [ref=e656]:
+                          - link "TRACY NELSON PLEASE NO MORE JazzAlleySeattle 08 08 12 6 minutes, 52 seconds" [ref=e657]:
+                            - /url: /watch?v=HOGlIYtWvy0&list=RDHOGlIYtWvy0&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+                            - text: TRACY NELSON PLEASE NO MORE JazzAlleySeattle 08 08 12
+                        - button "Action menu" [ref=e661]:
+                          - generic [ref=e664]:
+                            - img
+                      - generic [ref=e667]:
+                        - generic [ref=e668]: 14K views
+                        - generic [ref=e669]: •13 years ago
+                    - generic [ref=e670]:
+                      - link "Go to channel Larry Guthrie" [ref=e671]:
+                        - /url: /@larryguthrie3572
+                      - link "Larry Guthrie" [ref=e676]:
+                        - /url: /@larryguthrie3572
+                    - generic [ref=e677]:
+                      - generic [ref=e678]: Tracy Nelson with Garey Shelton on Bass, John Morton on Guitar, Chris Leighton on Drums and Larry Guthrie on Hammond B3.
+                      - tooltip "tooltip"
+                - generic [ref=e680]:
+                  - link [ref=e682] [cursor=pointer]:
+                    - /url: /watch?v=OvjO1zIAqBA&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZQ%3D%3D
+                  - generic [ref=e684] [cursor=pointer]:
+                    - generic [ref=e685]:
+                      - generic [ref=e686]:
+                        - heading "Tracy Nelson - Backstage at Mountain Stage 10 minutes, 19 seconds" [level=3] [ref=e687]:
+                          - link "Tracy Nelson - Backstage at Mountain Stage 10 minutes, 19 seconds" [ref=e688]:
+                            - /url: /watch?v=OvjO1zIAqBA&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZQ%3D%3D
+                            - text: Tracy Nelson - Backstage at Mountain Stage
+                        - button "Action menu" [ref=e692]:
+                          - generic [ref=e695]:
+                            - img
+                      - generic [ref=e698]:
+                        - generic [ref=e699]: 9.4K views
+                        - generic [ref=e700]: •14 years ago
+                    - generic [ref=e701]:
+                      - link "Go to channel Mountain Stage" [ref=e702]:
+                        - /url: /@mtnstage
+                      - link "Mountain Stage" [ref=e707]:
+                        - /url: /@mtnstage
+                    - generic [ref=e708]:
+                      - generic [ref=e709]: Powerful vocalist Tracy Nelson sits down with host Larry Groce Backstage at Mountain Stage. You can hear this episode on the ...
+                      - tooltip "tooltip"
+                - generic [ref=e711]:
+                  - link [ref=e713] [cursor=pointer]:
+                    - /url: /watch?v=FD8CsdHLqYI&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZQ%3D%3D
+                  - generic [ref=e715] [cursor=pointer]:
+                    - generic [ref=e716]:
+                      - generic [ref=e717]:
+                        - heading "At 76, Marcia Griffiths Finally Opens Up About Her Days With the I Threes… 8 minutes, 5 seconds" [level=3] [ref=e718]:
+                          - link "At 76, Marcia Griffiths Finally Opens Up About Her Days With the I Threes… 8 minutes, 5 seconds" [ref=e719]:
+                            - /url: /watch?v=FD8CsdHLqYI&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZQ%3D%3D
+                            - text: At 76, Marcia Griffiths Finally Opens Up About Her Days With the I Threes…
+                        - button "Action menu" [ref=e723]:
+                          - generic [ref=e726]:
+                            - img
+                      - generic [ref=e729]:
+                        - generic [ref=e730]: 436 views
+                        - generic [ref=e731]: •4 days ago
+                    - generic [ref=e732]:
+                      - link "Go to channel Behind Thier Silence" [ref=e733]:
+                        - /url: /@BehindThierSilence
+                      - link "Behind Thier Silence" [ref=e738]:
+                        - /url: /@BehindThierSilence
+                    - generic [ref=e739]:
+                      - text: Marcia Griffiths finally reveals the truth about the I-Threes at 76, offering a rare and emotional look back at one of reggae's most ...
+                      - tooltip "tooltip"
+                    - img "New" [ref=e742]:
+                      - generic [ref=e743]: New
+              - generic "+6 more" [ref=e745] [cursor=pointer]
+          - generic [ref=e747] [cursor=pointer]:
+            - link [ref=e748]:
+              - /url: /watch?v=eXOB_hrCAsM&list=PLd-zIhUXa2BvK3CvUupZGj8MwN6k9ueRW
+              - generic [ref=e758]:
+                - generic [ref=e761]:
+                  - img
+                - generic [ref=e762]: 11 videos
+            - generic [ref=e765]:
+              - heading "Tracy Nelson - Mother Earth (Full Album)" [level=3] [ref=e766]:
+                - link "Tracy Nelson - Mother Earth (Full Album)" [ref=e767]:
+                  - /url: /watch?v=eXOB_hrCAsM&list=PLd-zIhUXa2BvK3CvUupZGj8MwN6k9ueRW
+              - generic [ref=e769]:
+                - generic [ref=e770]:
+                  - link "ghortaur" [ref=e773]:
+                    - /url: /@ghortaur
+                  - generic [ref=e774]: •
+                  - link "Playlist" [ref=e777]:
+                    - /url: /@ghortaur
+                - link "The Same Old Thing · 5:22" [ref=e781]:
+                  - /url: /watch?v=eXOB_hrCAsM&list=PLd-zIhUXa2BvK3CvUupZGj8MwN6k9ueRW
+                - link "I'm That Way · 3:10" [ref=e784]:
+                  - /url: /watch?v=O_SzFF68B74&list=PLd-zIhUXa2BvK3CvUupZGj8MwN6k9ueRW
+                - link "View full playlist" [ref=e789]:
+                  - /url: /playlist?list=PLd-zIhUXa2BvK3CvUupZGj8MwN6k9ueRW
+          - generic [ref=e791]:
+            - link [ref=e793] [cursor=pointer]:
+              - /url: /watch?v=7Cmmtsv-O0A&list=RD7Cmmtsv-O0A&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+            - generic [ref=e795] [cursor=pointer]:
+              - generic [ref=e796]:
+                - generic [ref=e797]:
+                  - heading "Tracy Nelson & Mother Earth Tonight, The Sky Is About To Cry 5 minutes, 6 seconds" [level=3] [ref=e798]:
+                    - link "Tracy Nelson & Mother Earth Tonight, The Sky Is About To Cry 5 minutes, 6 seconds" [ref=e799]:
+                      - /url: /watch?v=7Cmmtsv-O0A&list=RD7Cmmtsv-O0A&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+                      - text: Tracy Nelson & Mother Earth Tonight, The Sky Is About To Cry
+                  - button "Action menu" [ref=e803]:
+                    - generic [ref=e806]:
+                      - img
+                - generic [ref=e809]:
+                  - generic [ref=e810]: 16K views
+                  - generic [ref=e811]: •13 years ago
+              - generic [ref=e812]:
+                - link "Go to channel milos krsmanovic" [ref=e813]:
+                  - /url: /@Tarkus1987
+                - link "milos krsmanovic" [ref=e818]:
+                  - /url: /@Tarkus1987
+          - generic [ref=e820]:
+            - link [ref=e822] [cursor=pointer]:
+              - /url: /watch?v=jvskSJH3XZ8&list=RDjvskSJH3XZ8&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e824] [cursor=pointer]:
+              - generic [ref=e825]:
+                - generic [ref=e826]:
+                  - heading "Tracy Nelson - Live From Cell Block D - 2002 - Mother Earth - Dimitris Lesini Blues 8 minutes, 50 seconds" [level=3] [ref=e827]:
+                    - link "Tracy Nelson - Live From Cell Block D - 2002 - Mother Earth - Dimitris Lesini Blues 8 minutes, 50 seconds" [ref=e828]:
+                      - /url: /watch?v=jvskSJH3XZ8&list=RDjvskSJH3XZ8&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                      - text: Tracy Nelson - Live From Cell Block D - 2002 - Mother Earth - Dimitris Lesini Blues
+                  - button "Action menu" [ref=e832]:
+                    - generic [ref=e835]:
+                      - img
+                - generic [ref=e838]:
+                  - generic [ref=e839]: 1.1K views
+                  - generic [ref=e840]: •11 years ago
+              - generic [ref=e841]:
+                - link "Go to channel Dimitris Lesini Greece" [ref=e842]:
+                  - /url: /@BLUESORCRAVE
+                - link "Dimitris Lesini Greece" [ref=e847]:
+                  - /url: /@BLUESORCRAVE
+              - generic [ref=e848]:
+                - generic [ref=e849]: Tracy Nelson Live From Cell Block D 2002 Mother Earth Dimitris Lesini Blues.
+                - tooltip "tooltip"
+          - generic [ref=e851]:
+            - link [ref=e853] [cursor=pointer]:
+              - /url: /watch?v=0FWEwZjuw2E&list=RD0FWEwZjuw2E&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+            - generic [ref=e855] [cursor=pointer]:
+              - generic [ref=e856]:
+                - generic [ref=e857]:
+                  - heading "Temptation Took Control of Me and I Fell 3 minutes, 24 seconds" [level=3] [ref=e858]:
+                    - link "Temptation Took Control of Me and I Fell 3 minutes, 24 seconds" [ref=e859]:
+                      - /url: /watch?v=0FWEwZjuw2E&list=RD0FWEwZjuw2E&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+                      - text: Temptation Took Control of Me and I Fell
+                  - button "Action menu" [ref=e863]:
+                    - generic [ref=e866]:
+                      - img
+                - generic [ref=e870]: 3K views
+              - generic [ref=e871]:
+                - link "Go to channel Tracy Nelson - Topic" [ref=e872]:
+                  - /url: /channel/UC3RHYBQ1YBxaATPEMVFYCvQ
+                - link "Tracy Nelson - Topic" [ref=e877]:
+                  - /url: /channel/UC3RHYBQ1YBxaATPEMVFYCvQ
+              - generic [ref=e878]:
+                - generic [ref=e879]: Provided to YouTube by 143/Warner Records Temptation Took Control of Me and I Fell · Tracy Nelson The Best Of Tracy ...
+                - tooltip "tooltip"
+          - generic [ref=e881] [cursor=pointer]:
+            - link [ref=e882]:
+              - /url: /watch?v=zQUIkGU06AE&list=PLqvDPHJht40TkotbNVD48QYm2jhyIVbpT
+              - generic [ref=e892]:
+                - generic [ref=e895]:
+                  - img
+                - generic [ref=e896]: 12 videos
+            - generic [ref=e899]:
+              - heading "Tracy Nelson Country - Mother Earth Presents" [level=3] [ref=e900]:
+                - link "Tracy Nelson Country - Mother Earth Presents" [ref=e901]:
+                  - /url: /watch?v=zQUIkGU06AE&list=PLqvDPHJht40TkotbNVD48QYm2jhyIVbpT
+              - generic [ref=e903]:
+                - generic [ref=e904]:
+                  - link "Island Spirit75" [ref=e907]:
+                    - /url: /@islandspirit7599
+                  - generic [ref=e908]: •
+                  - link "Playlist" [ref=e911]:
+                    - /url: /@islandspirit7599
+                - link "Mother Earth - Sad Situation · 3:44" [ref=e915]:
+                  - /url: /watch?v=zQUIkGU06AE&list=PLqvDPHJht40TkotbNVD48QYm2jhyIVbpT
+                - link "Mother Earth - Stay As Sweet As You Are · 2:38" [ref=e918]:
+                  - /url: /watch?v=Gfn0re1ezhg&list=PLqvDPHJht40TkotbNVD48QYm2jhyIVbpT
+                - link "View full playlist" [ref=e923]:
+                  - /url: /playlist?list=PLqvDPHJht40TkotbNVD48QYm2jhyIVbpT
+          - generic [ref=e925]:
+            - link [ref=e927] [cursor=pointer]:
+              - /url: /watch?v=YEQPgx3G7xc&list=RDYEQPgx3G7xc&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+            - generic [ref=e929] [cursor=pointer]:
+              - generic [ref=e930]:
+                - generic [ref=e931]:
+                  - heading "Tracy Nelson Mother Earth 10 minutes, 6 seconds" [level=3] [ref=e932]:
+                    - link "Tracy Nelson Mother Earth 10 minutes, 6 seconds" [ref=e933]:
+                      - /url: /watch?v=YEQPgx3G7xc&list=RDYEQPgx3G7xc&start_radio=1&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZaAHAQ%3D%3D
+                      - text: Tracy Nelson Mother Earth
+                  - button "Action menu" [ref=e937]:
+                    - generic [ref=e940]:
+                      - img
+                - generic [ref=e943]:
+                  - generic [ref=e944]: 10K views
+                  - generic [ref=e945]: •14 years ago
+              - generic [ref=e946]:
+                - link "Go to channel Theresa Hassen" [ref=e947]:
+                  - /url: /@mysttickl
+                - link "Theresa Hassen" [ref=e952]:
+                  - /url: /@mysttickl
+          - generic [ref=e954]:
+            - link [ref=e956] [cursor=pointer]:
+              - /url: /watch?v=zNcKqHLgNN4&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZQ%3D%3D
+            - generic [ref=e958] [cursor=pointer]:
+              - generic [ref=e959]:
+                - generic [ref=e960]:
+                  - heading "13.Tracy Nelson ~ Mother Earth~ Girl Geo,Radio 31 minutes" [level=3] [ref=e961]:
+                    - link "13.Tracy Nelson ~ Mother Earth~ Girl Geo,Radio 31 minutes" [ref=e962]:
+                      - /url: /watch?v=zNcKqHLgNN4&pp=ygUrVHJhY3kgTmVsc29uIGJsdWVzIHNpbmdlciBNb3RoZXIgRWFydGggbGl2ZQ%3D%3D
+                      - text: 13.Tracy Nelson ~ Mother Earth~ Girl Geo,Radio
+                  - button "Action menu" [ref=e966]:
+                    - generic [ref=e969]:
+                      - img
+                - generic [ref=e972]:
+                  - generic [ref=e973]: 482 views
+                  - generic [ref=e974]: •11 years ago
+              - generic [ref=e975]:
+                - link "Go to channel GirlGeorgeTVshow" [ref=e976]:
+                  - /url: /@GirlGeorgeTVshow
+                - link "GirlGeorgeTVshow" [ref=e981]:
+                  - /url: /@GirlGeorgeTVshow
+              - generic [ref=e982]:
+                - text: "Girl George & the Dragons Radio Show # 13 3.30.14.Girl George & Gypsy Poet Interview:: video by Girl Geo."
+                - tooltip "tooltip"
+              - generic [ref=e985]:
+                - generic [ref=e986]:
+                  - generic [ref=e990]: 3 moments
+                  - button "Hillbilly Heartthrob | Berkeley CITY LIMIT | NELSON AND MOTHER EARTH LIBERTY HALL JULY 8th 9th 10th 1976"
+                - button "More" [ref=e995]:
+                  - generic [ref=e999]:
+                    - img
+          - generic [ref=e1004] [cursor=pointer]:
+            - link [ref=e1005]:
+              - /url: /watch?v=PZ8RaqDuUik&list=PLeak9Q8o2Xa5wNWzvnThdtDOme_iQgiug
+              - generic [ref=e1015]:
+                - generic [ref=e1018]:
+                  - img
+                - generic [ref=e1019]: 15 videos
+            - generic [ref=e1022]:
+              - heading "Tracy Nelson & Mother Earth" [level=3] [ref=e1023]:
+                - link "Tracy Nelson & Mother Earth" [ref=e1024]:
+                  - /url: /watch?v=PZ8RaqDuUik&list=PLeak9Q8o2Xa5wNWzvnThdtDOme_iQgiug
+              - generic [ref=e1026]:
+                - generic [ref=e1027]:
+                  - link "Poor Richard" [ref=e1030]:
+                    - /url: /@pralmanack2010
+                  - generic [ref=e1031]: •
+                  - link "Playlist" [ref=e1034]:
+                    - /url: /@pralmanack2010
+                - link "Down So Low · 3:43" [ref=e1038]:
+                  - /url: /watch?v=PZ8RaqDuUik&list=PLeak9Q8o2Xa5wNWzvnThdtDOme_iQgiug
+                - link "Tracy Nelson - Goodnight Nelda Greb (The Telephone Company Has Cut Us Off) · 2:39" [ref=e1041]:
+                  - /url: /watch?v=uS5RSQp2eDs&list=PLeak9Q8o2Xa5wNWzvnThdtDOme_iQgiug
+                - link "View full playlist" [ref=e1046]:
+                  - /url: /playlist?list=PLeak9Q8o2Xa5wNWzvnThdtDOme_iQgiug
+    - text: •

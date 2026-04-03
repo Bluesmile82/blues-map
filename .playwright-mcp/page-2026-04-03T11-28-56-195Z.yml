@@ -1,0 +1,635 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+          - button "Next" [ref=e111] [cursor=pointer]
+        - link "About these results" [ref=e120] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e121]: About these results
+        - generic [ref=e128]:
+          - button "Search filters" [ref=e130] [cursor=pointer]:
+            - generic [ref=e131]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e142]:
+        - generic [ref=e144]:
+          - link [ref=e146] [cursor=pointer]:
+            - /url: /watch?v=fv-_az5nArc&list=RDfv-_az5nArc&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+            - img [ref=e148]
+            - img [ref=e151]:
+              - generic [ref=e153]: 7:20
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e154] [cursor=pointer]:
+            - generic [ref=e155]:
+              - heading "Shake Your Hips/Whole Lotta Rosie - Samantha Fish & Jesse Dayton (LIVE! @ the Texas Music Cafe®) 7 minutes, 20 seconds" [level=3] [ref=e157]:
+                - link "Shake Your Hips/Whole Lotta Rosie - Samantha Fish & Jesse Dayton (LIVE! @ the Texas Music Cafe®) 7 minutes, 20 seconds" [ref=e158]:
+                  - /url: /watch?v=fv-_az5nArc&list=RDfv-_az5nArc&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Shake Your Hips/Whole Lotta Rosie - Samantha Fish & Jesse Dayton (LIVE! @ the Texas Music Cafe®)
+              - generic [ref=e161]:
+                - generic [ref=e162]: 2.1M views
+                - generic [ref=e163]: •2 years ago
+            - generic [ref=e164]:
+              - link "Go to channel Texas Music Cafe®" [ref=e165]:
+                - /url: /@TexasMusicCafe
+              - link "Texas Music Cafe®" [ref=e171]:
+                - /url: /@TexasMusicCafe
+            - generic [ref=e172]:
+              - generic [ref=e173]: "Samantha Fish and Jesse Dayton rocked The Texas Music Cafe with Whole Lotta Rosie/Shake Your Hips #Samanthafish ..."
+              - tooltip "tooltip"
+            - img "4K" [ref=e176]:
+              - generic [ref=e177]: 4K
+        - generic [ref=e179]:
+          - link [ref=e181] [cursor=pointer]:
+            - /url: /@JesseDaytonHardcharger
+          - link "Jesse Dayton Official Artist Channel @JesseDaytonHardcharger•4.79K subscribers The Hard Way Blues, produced by Shooter Jennings, is out now." [ref=e185] [cursor=pointer]:
+            - /url: /@JesseDaytonHardcharger
+            - generic [ref=e186]:
+              - generic [ref=e187]:
+                - generic [ref=e190]: Jesse Dayton
+                - img "Official Artist Channel" [ref=e193]
+              - generic [ref=e195]: "@JesseDaytonHardcharger•4.79K subscribers"
+              - generic [ref=e196]: The Hard Way Blues, produced by Shooter Jennings, is out now.
+        - generic [ref=e198] [cursor=pointer]:
+          - link [ref=e199]:
+            - /url: /watch?v=FMqbURHk6pM&list=PL347462vUoxxUeczap8QwnqfDwVlQa3MB
+            - generic [ref=e211]: 20 videos
+          - generic [ref=e214]:
+            - heading "Jesse Dayton Live" [level=3] [ref=e215]:
+              - link "Jesse Dayton Live" [ref=e216]:
+                - /url: /watch?v=FMqbURHk6pM&list=PL347462vUoxxUeczap8QwnqfDwVlQa3MB
+            - generic [ref=e218]:
+              - generic [ref=e219]:
+                - link "Jesse Dayton" [ref=e222]:
+                  - /url: /@JesseDaytonHardcharger
+                - generic [ref=e223]: •
+                - link "Playlist" [ref=e226]:
+                  - /url: /@JesseDaytonHardcharger
+              - link "Kris Kristofferson - Me & Bobby McGee (Jesse Dayton cover) · 2:14" [ref=e230]:
+                - /url: /watch?v=FMqbURHk6pM&list=PL347462vUoxxUeczap8QwnqfDwVlQa3MB
+              - link "Jesse Dayton, \"Burnin'\" Live on KXCI · 3:22" [ref=e233]:
+                - /url: /watch?v=uBOD3BDLM_I&list=PL347462vUoxxUeczap8QwnqfDwVlQa3MB
+              - link "View full playlist" [ref=e238]:
+                - /url: /playlist?list=PL347462vUoxxUeczap8QwnqfDwVlQa3MB
+        - generic [ref=e240]:
+          - link [ref=e242] [cursor=pointer]:
+            - /url: /watch?v=4DW-q3V0o_Y&list=RD4DW-q3V0o_Y&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e244] [cursor=pointer]:
+            - generic [ref=e245]:
+              - heading "Samantha Fish and Jesse Dayton - Rippin' and Runnin' (LIVE @ the Texas Music Cafe®) 4 minutes, 47 seconds" [level=3] [ref=e247]:
+                - link "Samantha Fish and Jesse Dayton - Rippin' and Runnin' (LIVE @ the Texas Music Cafe®) 4 minutes, 47 seconds" [ref=e248]:
+                  - /url: /watch?v=4DW-q3V0o_Y&list=RD4DW-q3V0o_Y&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Samantha Fish and Jesse Dayton - Rippin' and Runnin' (LIVE @ the Texas Music Cafe®)
+              - generic [ref=e251]:
+                - generic [ref=e252]: 26K views
+                - generic [ref=e253]: •2 years ago
+            - generic [ref=e254]:
+              - link "Go to channel Texas Music Cafe®" [ref=e255]:
+                - /url: /@TexasMusicCafe
+              - link "Texas Music Cafe®" [ref=e261]:
+                - /url: /@TexasMusicCafe
+            - generic [ref=e262]:
+              - generic [ref=e263]: "Samantha Fish and Jesse Dayton rocked The Texas Music Cafe with their original hit song Rippin' and Running'! #jessedayton ..."
+              - tooltip "tooltip"
+            - img "4K" [ref=e266]:
+              - generic [ref=e267]: 4K
+        - generic [ref=e269]:
+          - link [ref=e271] [cursor=pointer]:
+            - /url: /watch?v=uBOD3BDLM_I&list=RDuBOD3BDLM_I&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e273] [cursor=pointer]:
+            - generic [ref=e274]:
+              - heading "Jesse Dayton, \"Burnin'\" Live on KXCI 3 minutes, 22 seconds" [level=3] [ref=e276]:
+                - link "Jesse Dayton, \"Burnin'\" Live on KXCI 3 minutes, 22 seconds" [ref=e277]:
+                  - /url: /watch?v=uBOD3BDLM_I&list=RDuBOD3BDLM_I&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Jesse Dayton, "Burnin'" Live on KXCI
+              - generic [ref=e280]:
+                - generic [ref=e281]: 2.4K views
+                - generic [ref=e282]: •7 years ago
+            - generic [ref=e283]:
+              - link "Go to channel KXCI" [ref=e284]:
+                - /url: /@KXCIvideo
+              - link "KXCI" [ref=e290]:
+                - /url: /@KXCIvideo
+            - generic [ref=e291]:
+              - generic [ref=e292]: Austin-based, maverick-minded musician Jesse Dayton has made Tucson a regular stop on his relentless touring itinerary and ...
+              - tooltip "tooltip"
+        - generic [ref=e294]:
+          - link [ref=e296] [cursor=pointer]:
+            - /url: /watch?v=QhMkdP8km04&list=RDQhMkdP8km04&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e298] [cursor=pointer]:
+            - generic [ref=e299]:
+              - heading "Samantha Fish w/ Jesse Dayton (live) - Bell's Eccentric Cafe (Kalamazoo, MI) - June 28, 2023 9 minutes, 35 seconds" [level=3] [ref=e301]:
+                - link "Samantha Fish w/ Jesse Dayton (live) - Bell's Eccentric Cafe (Kalamazoo, MI) - June 28, 2023 9 minutes, 35 seconds" [ref=e302]:
+                  - /url: /watch?v=QhMkdP8km04&list=RDQhMkdP8km04&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Samantha Fish w/ Jesse Dayton (live) - Bell's Eccentric Cafe (Kalamazoo, MI) - June 28, 2023
+              - generic [ref=e305]:
+                - generic [ref=e306]: 853 views
+                - generic [ref=e307]: •2 years ago
+            - generic [ref=e308]:
+              - link "Go to channel Michigan Live" [ref=e309]:
+                - /url: /@MichiganLive
+              - link "Michigan Live" [ref=e315]:
+                - /url: /@MichiganLive
+            - generic [ref=e316]:
+              - generic [ref=e317]: "Triple guitar attack: Samantha Fish, Jesse Dayton, and Eric Johanson team up on the slow-burn blues show-closer \"Goin' Down ..."
+              - tooltip "tooltip"
+            - img "4K" [ref=e320]:
+              - generic [ref=e321]: 4K
+        - generic [ref=e323]:
+          - link [ref=e325] [cursor=pointer]:
+            - /url: /watch?v=SgapIW8ff9E&list=RDSgapIW8ff9E&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e327] [cursor=pointer]:
+            - generic [ref=e328]:
+              - heading "Jesse Dayton - Talkin' Company Man Blues [Live] [Official Music Video] 4 minutes, 16 seconds" [level=3] [ref=e330]:
+                - link "Jesse Dayton - Talkin' Company Man Blues [Live] [Official Music Video] 4 minutes, 16 seconds" [ref=e331]:
+                  - /url: /watch?v=SgapIW8ff9E&list=RDSgapIW8ff9E&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Jesse Dayton - Talkin' Company Man Blues [Live] [Official Music Video]
+              - generic [ref=e334]:
+                - generic [ref=e335]: 10K views
+                - generic [ref=e336]: •2 years ago
+            - generic [ref=e337]:
+              - link "Go to channel Jesse Dayton" [ref=e338]:
+                - /url: /channel/UCbRGV0aQnxjJ7UlNICs0B3w
+              - generic [ref=e339]:
+                - link "Jesse Dayton" [ref=e343]:
+                  - /url: /channel/UCbRGV0aQnxjJ7UlNICs0B3w
+                - img "Official Artist Channel" [ref=e346]
+            - generic [ref=e348]:
+              - generic [ref=e349]: "The official live video for Jesse Dayton's \"Talkin' Company Man Blues.\" Add the song to your library here: ..."
+              - tooltip "tooltip"
+            - img "4K" [ref=e352]:
+              - generic [ref=e353]: 4K
+        - generic [ref=e354]:
+          - generic [ref=e357]:
+            - img [ref=e359]
+            - heading "Shorts" [level=2] [ref=e362]
+          - generic [ref=e363]:
+            - generic [ref=e364]:
+              - generic [ref=e367]:
+                - link [ref=e368] [cursor=pointer]:
+                  - /url: /shorts/_LRBc5t-IZU
+                - generic [ref=e372] [cursor=pointer]:
+                  - link "Jesse Dayton - Talkin' Company Man Blues - Solo" [ref=e373]:
+                    - /url: /shorts/_LRBc5t-IZU
+                  - generic [ref=e374]: 675 views
+                - button "More actions" [ref=e376] [cursor=pointer]
+              - generic [ref=e384]:
+                - link [ref=e385] [cursor=pointer]:
+                  - /url: /shorts/_3r8OuVzDG0
+                - generic [ref=e389] [cursor=pointer]:
+                  - link "Jesse Dayton" [ref=e390]:
+                    - /url: /shorts/_3r8OuVzDG0
+                  - generic [ref=e391]: 902 views
+                - button "More actions" [ref=e393] [cursor=pointer]
+            - generic [ref=e399]:
+              - generic [ref=e402]:
+                - link [ref=e403] [cursor=pointer]:
+                  - /url: /shorts/xLTvbaQWgHM
+                - generic [ref=e407] [cursor=pointer]:
+                  - link "Jesse Dayton- Ballad of Boyd Elder (LIVE! @ The Texas Music Cafe®)" [ref=e408]:
+                    - /url: /shorts/xLTvbaQWgHM
+                  - generic [ref=e409]: 464 views
+                - button "More actions" [ref=e411] [cursor=pointer]
+              - generic [ref=e419]:
+                - link [ref=e420] [cursor=pointer]:
+                  - /url: /shorts/mSICFBXbAeo
+                - generic [ref=e424] [cursor=pointer]:
+                  - link "Jesse Dayton - Baby's Long Gone (Acoustic)" [ref=e425]:
+                    - /url: /shorts/mSICFBXbAeo
+                  - generic [ref=e426]: 2.1K views
+                - button "More actions" [ref=e428] [cursor=pointer]
+          - button "Show more" [ref=e437] [cursor=pointer]:
+            - generic [ref=e438]: Show more
+        - generic [ref=e445]:
+          - link [ref=e447] [cursor=pointer]:
+            - /url: /watch?v=r2wNVRAWWfc&list=RDr2wNVRAWWfc&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e449] [cursor=pointer]:
+            - generic [ref=e450]:
+              - heading "Samatha Fish and Jesse Dayton Shake Your Hips / Whole Lotta Rosie at The Whisky A Go Go 12/5/2022 8 minutes, 1 second" [level=3] [ref=e452]:
+                - link "Samatha Fish and Jesse Dayton Shake Your Hips / Whole Lotta Rosie at The Whisky A Go Go 12/5/2022 8 minutes, 1 second" [ref=e453]:
+                  - /url: /watch?v=r2wNVRAWWfc&list=RDr2wNVRAWWfc&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Samatha Fish and Jesse Dayton Shake Your Hips / Whole Lotta Rosie at The Whisky A Go Go 12/5/2022
+              - generic [ref=e456]:
+                - generic [ref=e457]: 27K views
+                - generic [ref=e458]: •3 years ago
+            - generic [ref=e459]:
+              - link "Go to channel Randy Maxwell" [ref=e460]:
+                - /url: /@randymaxwell1793
+              - link "Randy Maxwell" [ref=e465]:
+                - /url: /@randymaxwell1793
+            - generic [ref=e466]:
+              - generic [ref=e467]: Samatha Fish and Jesse Dayton Shake Your Hips / Whole Lotta Rosie at The Whisky A Go Go 12/5/2022 ~ These 2 were destined ...
+              - tooltip "tooltip"
+        - generic [ref=e469]:
+          - link [ref=e471] [cursor=pointer]:
+            - /url: /watch?v=CcS915SoDIA&list=RDCcS915SoDIA&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e473] [cursor=pointer]:
+            - generic [ref=e474]:
+              - heading "Samantha Fish w/ Jesse Dayton (live) - Bell's Eccentric Cafe (Kalamazoo, MI) - June 28, 2023 7 minutes, 14 seconds" [level=3] [ref=e476]:
+                - link "Samantha Fish w/ Jesse Dayton (live) - Bell's Eccentric Cafe (Kalamazoo, MI) - June 28, 2023 7 minutes, 14 seconds" [ref=e477]:
+                  - /url: /watch?v=CcS915SoDIA&list=RDCcS915SoDIA&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Samantha Fish w/ Jesse Dayton (live) - Bell's Eccentric Cafe (Kalamazoo, MI) - June 28, 2023
+              - generic [ref=e480]:
+                - generic [ref=e481]: 728 views
+                - generic [ref=e482]: •2 years ago
+            - generic [ref=e483]:
+              - link "Go to channel Michigan Live" [ref=e484]:
+                - /url: /@MichiganLive
+              - link "Michigan Live" [ref=e489]:
+                - /url: /@MichiganLive
+            - generic [ref=e490]:
+              - generic [ref=e491]: Killer jams early in the set on "Deathwish" and "Feels So Good". Great guitar convos between Samantha and Jesse throughout!
+              - tooltip "tooltip"
+            - img "4K" [ref=e494]:
+              - generic [ref=e495]: 4K
+        - generic [ref=e496]:
+          - generic [ref=e499]:
+            - img [ref=e501]
+            - heading "Shorts" [level=2] [ref=e504]
+          - generic [ref=e505]:
+            - generic [ref=e506]:
+              - generic [ref=e509]:
+                - link [ref=e510] [cursor=pointer]:
+                  - /url: /shorts/KhHYHu3wFwk
+                - generic [ref=e514] [cursor=pointer]:
+                  - link "Jesse Dayton - Ballad of Boyd Elder" [ref=e515]:
+                    - /url: /shorts/KhHYHu3wFwk
+                  - generic [ref=e516]: 1K views
+                - button "More actions" [ref=e518] [cursor=pointer]
+              - generic [ref=e526]:
+                - link [ref=e527] [cursor=pointer]:
+                  - /url: /shorts/vukwtp2Jcl8
+                - generic [ref=e531] [cursor=pointer]:
+                  - link "Jesse Dayton - The Hard Way" [ref=e532]:
+                    - /url: /shorts/vukwtp2Jcl8
+                  - generic [ref=e533]: 331 views
+                - button "More actions" [ref=e535] [cursor=pointer]
+            - generic [ref=e541]:
+              - generic [ref=e544]:
+                - link [ref=e545] [cursor=pointer]:
+                  - /url: /shorts/v9cr5sTSLmo
+                - generic [ref=e549] [cursor=pointer]:
+                  - link "Jesse Dayton - Night Brain - Instrumental" [ref=e550]:
+                    - /url: /shorts/v9cr5sTSLmo
+                  - generic [ref=e551]: 224 views
+                - button "More actions" [ref=e553] [cursor=pointer]
+              - generic [ref=e561]:
+                - link [ref=e562] [cursor=pointer]:
+                  - /url: /shorts/zIlHME-Hau4
+                - generic [ref=e566] [cursor=pointer]:
+                  - link "Jesse Dayton - Night Brain" [ref=e567]:
+                    - /url: /shorts/zIlHME-Hau4
+                  - generic [ref=e568]: 624 views
+                - button "More actions" [ref=e570] [cursor=pointer]
+          - button "Show more" [ref=e579] [cursor=pointer]:
+            - generic [ref=e580]: Show more
+        - generic [ref=e587]:
+          - link [ref=e589] [cursor=pointer]:
+            - /url: /watch?v=GOfxowE1aP4&list=RDGOfxowE1aP4&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+          - generic [ref=e591] [cursor=pointer]:
+            - generic [ref=e592]:
+              - heading "Tab Benoit w Jesse Dayton live at Sellersville Theater | Tue, Dec 10, 2024 16 minutes" [level=3] [ref=e594]:
+                - link "Tab Benoit w Jesse Dayton live at Sellersville Theater | Tue, Dec 10, 2024 16 minutes" [ref=e595]:
+                  - /url: /watch?v=GOfxowE1aP4&list=RDGOfxowE1aP4&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+                  - text: Tab Benoit w Jesse Dayton live at Sellersville Theater | Tue, Dec 10, 2024
+              - generic [ref=e598]:
+                - generic [ref=e599]: 869 views
+                - generic [ref=e600]: •1 year ago
+            - generic [ref=e601]:
+              - link "Go to channel SellersvilleTheater" [ref=e602]:
+                - /url: /@ST94TV
+              - link "SellersvilleTheater" [ref=e607]:
+                - /url: /@ST94TV
+            - generic [ref=e608]:
+              - generic [ref=e609]: "TAB BENOIT LINKS WEB: https://www.tabbenoit.com JESSE DAYTON LINKS WEB: https://www.jessedayton.com/ ..."
+              - tooltip "tooltip"
+        - generic [ref=e611]:
+          - link [ref=e613] [cursor=pointer]:
+            - /url: /watch?v=7hhobJHE6iU&list=RD7hhobJHE6iU&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e615] [cursor=pointer]:
+            - generic [ref=e616]:
+              - heading "JESSE DAYTON “Daddy was a Badas\" live Rock and blues Zaragoza 4/4/2025 7 minutes, 4 seconds" [level=3] [ref=e618]:
+                - link "JESSE DAYTON “Daddy was a Badas\" live Rock and blues Zaragoza 4/4/2025 7 minutes, 4 seconds" [ref=e619]:
+                  - /url: /watch?v=7hhobJHE6iU&list=RD7hhobJHE6iU&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: JESSE DAYTON “Daddy was a Badas" live Rock and blues Zaragoza 4/4/2025
+              - generic [ref=e622]:
+                - generic [ref=e623]: 252 views
+                - generic [ref=e624]: •11 months ago
+            - generic [ref=e625]:
+              - link "Go to channel JavierMcallan Live Music" [ref=e626]:
+                - /url: /@JavierMcallan
+              - link "JavierMcallan Live Music" [ref=e631]:
+                - /url: /@JavierMcallan
+            - img "4K" [ref=e634]:
+              - generic [ref=e635]: 4K
+        - generic [ref=e637]:
+          - heading "People also watched" [level=2] [ref=e640]:
+            - generic [ref=e642]: People also watched
+          - generic [ref=e644]:
+            - generic [ref=e645]:
+              - generic [ref=e647]:
+                - link [ref=e649] [cursor=pointer]:
+                  - /url: /watch?v=X08sYP61nsg&list=RDX08sYP61nsg&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                - generic [ref=e651] [cursor=pointer]:
+                  - generic [ref=e652]:
+                    - heading "JESSE DAYTON \"Cowboy song\" Thin Lizzy´ cover Live Rock and Blues 5/5/2022 6 minutes, 4 seconds" [level=3] [ref=e654]:
+                      - link "JESSE DAYTON \"Cowboy song\" Thin Lizzy´ cover Live Rock and Blues 5/5/2022 6 minutes, 4 seconds" [ref=e655]:
+                        - /url: /watch?v=X08sYP61nsg&list=RDX08sYP61nsg&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                        - text: JESSE DAYTON "Cowboy song" Thin Lizzy´ cover Live Rock and Blues 5/5/2022
+                    - generic [ref=e658]:
+                      - generic [ref=e659]: 1.7K views
+                      - generic [ref=e660]: •3 years ago
+                  - generic [ref=e661]:
+                    - link "Go to channel JavierMcallan Live Music" [ref=e662]:
+                      - /url: /@JavierMcallan
+                    - link "JavierMcallan Live Music" [ref=e667]:
+                      - /url: /@JavierMcallan
+                  - img "4K" [ref=e670]:
+                    - generic [ref=e671]: 4K
+              - generic [ref=e673]:
+                - link [ref=e675] [cursor=pointer]:
+                  - /url: /watch?v=zYh7jslgQIs&list=RDzYh7jslgQIs&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                - generic [ref=e677] [cursor=pointer]:
+                  - generic [ref=e678]:
+                    - heading "RON ESCHETÉ TRIO | Live at Campus JAX | A JAXblast Network Production 1 hour, 41 minutes" [level=3] [ref=e680]:
+                      - link "RON ESCHETÉ TRIO | Live at Campus JAX | A JAXblast Network Production 1 hour, 41 minutes" [ref=e681]:
+                        - /url: /watch?v=zYh7jslgQIs&list=RDzYh7jslgQIs&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                        - text: RON ESCHETÉ TRIO | Live at Campus JAX | A JAXblast Network Production
+                    - generic [ref=e684]:
+                      - generic [ref=e685]: 2.3K views
+                      - generic [ref=e686]: •10 days ago
+                  - generic [ref=e687]:
+                    - link "Go to channel JAX Hideaway" [ref=e688]:
+                      - /url: /@JAXHideaway
+                    - link "JAX Hideaway" [ref=e693]:
+                      - /url: /@JAXHideaway
+                  - generic [ref=e694]:
+                    - generic [ref=e695]: RON ESCHETÉ (pronounced ESH-tay) is the consummate master of the seven-string guitar.Whether he is playing bebop, ballads ...
+                    - tooltip "tooltip"
+              - generic [ref=e697]:
+                - link [ref=e699] [cursor=pointer]:
+                  - /url: /watch?v=ZKpyNgtHiLk&list=RDZKpyNgtHiLk&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                - generic [ref=e701] [cursor=pointer]:
+                  - generic [ref=e702]:
+                    - heading "\"Goin' Down South\" Samantha Fish - Jesse Dayton - Eric Johanson with some RL Burnside style 6/30/23 8 minutes, 33 seconds" [level=3] [ref=e704]:
+                      - link "\"Goin' Down South\" Samantha Fish - Jesse Dayton - Eric Johanson with some RL Burnside style 6/30/23 8 minutes, 33 seconds" [ref=e705]:
+                        - /url: /watch?v=ZKpyNgtHiLk&list=RDZKpyNgtHiLk&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                        - text: "\"Goin' Down South\" Samantha Fish - Jesse Dayton - Eric Johanson with some RL Burnside style 6/30/23"
+                    - generic [ref=e708]:
+                      - generic [ref=e709]: 4.4K views
+                      - generic [ref=e710]: •2 years ago
+                  - generic [ref=e711]:
+                    - link "Go to channel John “Bluesmusiclives” Richardson" [ref=e712]:
+                      - /url: /@Bluesmusiclives
+                    - link "John “Bluesmusiclives” Richardson" [ref=e717]:
+                      - /url: /@Bluesmusiclives
+                  - generic [ref=e718]:
+                    - generic [ref=e719]: The fantastic RL Burnside style and sound is visited by Samantha, Jesse and Eric with their interpretation, blending their own ...
+                    - tooltip "tooltip"
+              - generic [ref=e721]:
+                - link [ref=e723] [cursor=pointer]:
+                  - /url: /watch?v=oRfiaAwvpZs&list=RDoRfiaAwvpZs&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+                - generic [ref=e725] [cursor=pointer]:
+                  - generic [ref=e726]:
+                    - heading "Fiery Samantha Fish belts out \"Bulletproof\" @Sweetwater with Jesse Dayton and her Cigar Box 7/30/23 6 minutes, 13 seconds" [level=3] [ref=e728]:
+                      - link "Fiery Samantha Fish belts out \"Bulletproof\" @Sweetwater with Jesse Dayton and her Cigar Box 7/30/23 6 minutes, 13 seconds" [ref=e729]:
+                        - /url: /watch?v=oRfiaAwvpZs&list=RDoRfiaAwvpZs&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+                        - text: Fiery Samantha Fish belts out "Bulletproof" @Sweetwater with Jesse Dayton and her Cigar Box 7/30/23
+                    - generic [ref=e732]:
+                      - generic [ref=e733]: 28K views
+                      - generic [ref=e734]: •2 years ago
+                  - generic [ref=e735]:
+                    - link "Go to channel John “Bluesmusiclives” Richardson" [ref=e736]:
+                      - /url: /@Bluesmusiclives
+                    - link "John “Bluesmusiclives” Richardson" [ref=e741]:
+                      - /url: /@Bluesmusiclives
+                  - generic [ref=e742]:
+                    - generic [ref=e743]: Samantha and Jesse touring in support of Death Wish Blues which showcases the raw power of Fish and Dayton's guitar playing, ...
+                    - tooltip "tooltip"
+            - generic "+6 more" [ref=e745] [cursor=pointer]
+        - generic [ref=e747]:
+          - link [ref=e749] [cursor=pointer]:
+            - /url: /watch?v=fjsCaUFrh_g&list=RDfjsCaUFrh_g&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e751] [cursor=pointer]:
+            - generic [ref=e752]:
+              - heading "Jesse Dayton - Baby's Long Gone - [LIVE] [Official Video] 3 minutes, 44 seconds" [level=3] [ref=e754]:
+                - link "Jesse Dayton - Baby's Long Gone - [LIVE] [Official Video] 3 minutes, 44 seconds" [ref=e755]:
+                  - /url: /watch?v=fjsCaUFrh_g&list=RDfjsCaUFrh_g&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Jesse Dayton - Baby's Long Gone - [LIVE] [Official Video]
+              - generic [ref=e758]:
+                - generic [ref=e759]: 18K views
+                - generic [ref=e760]: •2 years ago
+            - generic [ref=e761]:
+              - link "Go to channel Jesse Dayton" [ref=e762]:
+                - /url: /channel/UCbRGV0aQnxjJ7UlNICs0B3w
+              - generic [ref=e763]:
+                - link "Jesse Dayton" [ref=e767]:
+                  - /url: /channel/UCbRGV0aQnxjJ7UlNICs0B3w
+                - img "Official Artist Channel" [ref=e770]
+            - generic [ref=e772]:
+              - generic [ref=e773]: "The official live video for Jesse Dayton's \"Baby's Long Gone\" Add the song to your library here: ..."
+              - tooltip "tooltip"
+            - img "4K" [ref=e776]:
+              - generic [ref=e777]: 4K
+        - generic [ref=e779]:
+          - link [ref=e781] [cursor=pointer]:
+            - /url: /watch?v=ClF1yvwJdlM&list=RDClF1yvwJdlM&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e783] [cursor=pointer]:
+            - generic [ref=e784]:
+              - heading "Samantha Fish & Jesse Dayton Live @Bells wsg Eric Johanson \"Goin Down South\" Smokin Hot Blues! 9 minutes, 41 seconds" [level=3] [ref=e786]:
+                - link "Samantha Fish & Jesse Dayton Live @Bells wsg Eric Johanson \"Goin Down South\" Smokin Hot Blues! 9 minutes, 41 seconds" [ref=e787]:
+                  - /url: /watch?v=ClF1yvwJdlM&list=RDClF1yvwJdlM&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Samantha Fish & Jesse Dayton Live @Bells wsg Eric Johanson "Goin Down South" Smokin Hot Blues!
+              - generic [ref=e790]:
+                - generic [ref=e791]: 1.4K views
+                - generic [ref=e792]: •2 years ago
+            - generic [ref=e793]:
+              - link "Go to channel John “Bluesmusiclives” Richardson" [ref=e794]:
+                - /url: /@Bluesmusiclives
+              - link "John “Bluesmusiclives” Richardson" [ref=e799]:
+                - /url: /@Bluesmusiclives
+            - generic [ref=e800]:
+              - generic [ref=e801]: Samantha climbs the speakers on this hot hill country blues Burnside stylin" jam!!! Live at Bells Eccentric Cafe Samantha and ...
+              - tooltip "tooltip"
+        - generic [ref=e803]:
+          - link [ref=e805] [cursor=pointer]:
+            - /url: /watch?v=KQS7TNaR0DU&list=RDKQS7TNaR0DU&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e807] [cursor=pointer]:
+            - generic [ref=e808]:
+              - heading "Jesse Dayton - Talkin' Company Man Blues - Live at Kent Stage - Kent, Ohio - 2024 4 minutes, 56 seconds" [level=3] [ref=e810]:
+                - link "Jesse Dayton - Talkin' Company Man Blues - Live at Kent Stage - Kent, Ohio - 2024 4 minutes, 56 seconds" [ref=e811]:
+                  - /url: /watch?v=KQS7TNaR0DU&list=RDKQS7TNaR0DU&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Jesse Dayton - Talkin' Company Man Blues - Live at Kent Stage - Kent, Ohio - 2024
+              - generic [ref=e814]:
+                - generic [ref=e815]: 206 views
+                - generic [ref=e816]: •1 year ago
+            - generic [ref=e817]:
+              - link "Go to channel Kenz Vidz" [ref=e818]:
+                - /url: /@KenzVidz101
+              - link "Kenz Vidz" [ref=e823]:
+                - /url: /@KenzVidz101
+            - generic [ref=e824]:
+              - text: Recorded on April 14th, 202.
+              - tooltip "tooltip"
+            - img "4K" [ref=e827]:
+              - generic [ref=e828]: 4K
+        - generic [ref=e830]:
+          - link [ref=e832] [cursor=pointer]:
+            - /url: /watch?v=U3p_hj_Qxoc&list=RDU3p_hj_Qxoc&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e834] [cursor=pointer]:
+            - generic [ref=e835]:
+              - heading "Jesse Dayton Live @ The Token Lounge \"Gunslinger Blues\" 12/15/22 Fantastic! 3 minutes, 48 seconds" [level=3] [ref=e837]:
+                - link "Jesse Dayton Live @ The Token Lounge \"Gunslinger Blues\" 12/15/22 Fantastic! 3 minutes, 48 seconds" [ref=e838]:
+                  - /url: /watch?v=U3p_hj_Qxoc&list=RDU3p_hj_Qxoc&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Jesse Dayton Live @ The Token Lounge "Gunslinger Blues" 12/15/22 Fantastic!
+              - generic [ref=e841]:
+                - generic [ref=e842]: 533 views
+                - generic [ref=e843]: •3 years ago
+            - generic [ref=e844]:
+              - link "Go to channel John “Bluesmusiclives” Richardson" [ref=e845]:
+                - /url: /@Bluesmusiclives
+              - link "John “Bluesmusiclives” Richardson" [ref=e850]:
+                - /url: /@Bluesmusiclives
+            - generic [ref=e851]:
+              - generic [ref=e852]: Jesse Dayton is an American musician, actor and record producer from Austin, Texas best known for his guitar contributions to ...
+              - tooltip "tooltip"
+        - generic [ref=e854]:
+          - link [ref=e856] [cursor=pointer]:
+            - /url: /watch?v=vr4Nnk1ApIA&list=RDvr4Nnk1ApIA&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e858] [cursor=pointer]:
+            - generic [ref=e859]:
+              - heading "Samantha Fish & Jesse Dayton - Live at Le Bataclan, Paris, France, 31 May 2023 1 hour, 39 minutes" [level=3] [ref=e861]:
+                - link "Samantha Fish & Jesse Dayton - Live at Le Bataclan, Paris, France, 31 May 2023 1 hour, 39 minutes" [ref=e862]:
+                  - /url: /watch?v=vr4Nnk1ApIA&list=RDvr4Nnk1ApIA&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Samantha Fish & Jesse Dayton - Live at Le Bataclan, Paris, France, 31 May 2023
+              - generic [ref=e865]:
+                - generic [ref=e866]: 111K views
+                - generic [ref=e867]: •2 years ago
+            - generic [ref=e868]:
+              - link "Go to channel Anthony Bo" [ref=e869]:
+                - /url: /@anthony.bo75
+              - link "Anthony Bo" [ref=e874]:
+                - /url: /@anthony.bo75
+            - generic [ref=e875]:
+              - generic [ref=e876]: Last show of May 2023 Death Wish Blues European Tour. Samantha Fish & Jesse Dayton played 22 songs among which all 12 ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e879]:
+              - generic [ref=e880]: 4K
+            - generic [ref=e883]:
+              - generic [ref=e884]:
+                - generic [ref=e888]: 23 chapters
+                - button "Intro | Kick Out The Jams | Deathwish | Feelin' Good | Hello Stranger | Brand New Cadillac | Settle for Less | Bulletproof | Down in the Mud | No Apology | Trauma | I'll Be Here in the Morning | Baby's Long Gone | Lover on the Side | Rippin' and Runnin' | Dangerous People | Flooded Love | Supadupabad | I Put a Spell on You | 7 and 7 Is | Riders | You Know My Heart | Goin' Down South"
+              - button "More" [ref=e893]
+        - generic [ref=e900]:
+          - link [ref=e902] [cursor=pointer]:
+            - /url: /watch?v=QKO9ViZZE_Q&list=RDQKO9ViZZE_Q&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e904] [cursor=pointer]:
+            - generic [ref=e905]:
+              - heading "Samantha Fish & Jesse Dayton - Settle For Less (LIVE! @ The Texas Music Cafe®) 3 minutes, 21 seconds" [level=3] [ref=e907]:
+                - link "Samantha Fish & Jesse Dayton - Settle For Less (LIVE! @ The Texas Music Cafe®) 3 minutes, 21 seconds" [ref=e908]:
+                  - /url: /watch?v=QKO9ViZZE_Q&list=RDQKO9ViZZE_Q&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Samantha Fish & Jesse Dayton - Settle For Less (LIVE! @ The Texas Music Cafe®)
+              - generic [ref=e911]:
+                - generic [ref=e912]: 2.3K views
+                - generic [ref=e913]: •2 years ago
+            - generic [ref=e914]:
+              - link "Go to channel Texas Music Cafe®" [ref=e915]:
+                - /url: /@TexasMusicCafe
+              - link "Texas Music Cafe®" [ref=e920]:
+                - /url: /@TexasMusicCafe
+            - generic [ref=e921]:
+              - generic [ref=e922]: We, @ The Texas Music Cafe®, feel extremely fortunate to have been able to make this film Samantha Fish and Jesse Dayton at ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e925]:
+              - generic [ref=e926]: 4K
+        - generic [ref=e928]:
+          - link [ref=e930] [cursor=pointer]:
+            - /url: /watch?v=rooV_lopQXE&list=RDrooV_lopQXE&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e932] [cursor=pointer]:
+            - generic [ref=e933]:
+              - heading "Jesse Dayton - Gunslinger Blues (Live), 12/3/2025, The Birchmere, Arlington, VA 4 minutes, 32 seconds" [level=3] [ref=e935]:
+                - link "Jesse Dayton - Gunslinger Blues (Live), 12/3/2025, The Birchmere, Arlington, VA 4 minutes, 32 seconds" [ref=e936]:
+                  - /url: /watch?v=rooV_lopQXE&list=RDrooV_lopQXE&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Jesse Dayton - Gunslinger Blues (Live), 12/3/2025, The Birchmere, Arlington, VA
+              - generic [ref=e939]:
+                - generic [ref=e940]: 43 views
+                - generic [ref=e941]: •3 months ago
+            - generic [ref=e942]:
+              - link "Go to channel Lary Chinowsky" [ref=e943]:
+                - /url: /@larychinowsky3682
+              - link "Lary Chinowsky" [ref=e948]:
+                - /url: /@larychinowsky3682
+            - generic [ref=e949]:
+              - generic [ref=e950]: Jesse Dayton playing "Gunslinger Blues" at The Birchmere in Alexandria, VA on December 3. 2025. Jesse Dayton - Guitar and ...
+              - tooltip "tooltip"
+        - generic [ref=e952]:
+          - link [ref=e954] [cursor=pointer]:
+            - /url: /watch?v=yveoWEc4Ypg&list=RDyveoWEc4Ypg&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e956] [cursor=pointer]:
+            - generic [ref=e957]:
+              - heading "Jesse Dayton - The Hard Way [Official Video] 3 minutes, 51 seconds" [level=3] [ref=e959]:
+                - link "Jesse Dayton - The Hard Way [Official Video] 3 minutes, 51 seconds" [ref=e960]:
+                  - /url: /watch?v=yveoWEc4Ypg&list=RDyveoWEc4Ypg&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB
+                  - text: Jesse Dayton - The Hard Way [Official Video]
+              - generic [ref=e963]:
+                - generic [ref=e964]: 24K views
+                - generic [ref=e965]: •2 years ago
+            - generic [ref=e966]:
+              - link "Go to channel Jesse Dayton" [ref=e967]:
+                - /url: /channel/UCbRGV0aQnxjJ7UlNICs0B3w
+              - generic [ref=e968]:
+                - link "Jesse Dayton" [ref=e972]:
+                  - /url: /channel/UCbRGV0aQnxjJ7UlNICs0B3w
+                - img "Official Artist Channel" [ref=e975]
+            - generic [ref=e977]:
+              - generic [ref=e978]: The official music video for Jesse Dayton's "The Hard Way," from his new album, 'The Hard Way Blues,' produced by Shooter ...
+              - tooltip "tooltip"
+        - generic [ref=e980]:
+          - link [ref=e982] [cursor=pointer]:
+            - /url: /watch?v=HuOo6wS6ung&list=RDHuOo6wS6ung&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+          - generic [ref=e984] [cursor=pointer]:
+            - generic [ref=e985]:
+              - heading "Jesse Dayton - Just What I Needed - Live Jo's Coffee / Lonestar Round Up 4 minutes, 18 seconds" [level=3] [ref=e987]:
+                - link "Jesse Dayton - Just What I Needed - Live Jo's Coffee / Lonestar Round Up 4 minutes, 18 seconds" [ref=e988]:
+                  - /url: /watch?v=HuOo6wS6ung&list=RDHuOo6wS6ung&start_radio=1&pp=ygUqSmVzc2UgRGF5dG9uIGxpdmUgYmx1ZXMgZ3VpdGFyIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+                  - text: Jesse Dayton - Just What I Needed - Live Jo's Coffee / Lonestar Round Up
+              - generic [ref=e991]:
+                - generic [ref=e992]: 4.1K views
+                - generic [ref=e993]: •14 years ago
+            - generic [ref=e994]:
+              - link "Go to channel SINCITYSOCIALCLUB" [ref=e995]:
+                - /url: /@SINCITYSOCIALCLUB
+              - link "SINCITYSOCIALCLUB" [ref=e1000]:
+                - /url: /@SINCITYSOCIALCLUB
+            - generic [ref=e1001]:
+              - generic [ref=e1002]: Austin's own Jesse Dayton covering The Cars classic during the annual Lonestar Hot Rod convention in Austin , Texas Ably ...
+              - tooltip "tooltip"

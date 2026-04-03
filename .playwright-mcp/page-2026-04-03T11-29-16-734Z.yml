@@ -1,0 +1,831 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - generic [ref=e13]:
+          - link "YouTube Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e19]:
+              - img
+          - generic [ref=e20]: ES
+        - button "Skip navigation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Skip navigation
+      - button "Search" [ref=e31] [cursor=pointer]:
+        - generic [ref=e34]:
+          - img
+        - tooltip "tooltip"
+      - generic [ref=e36]:
+        - button "Settings" [ref=e41] [cursor=pointer]:
+          - generic [ref=e44]:
+            - img
+        - link "Sign in" [ref=e47] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DJimmy%252BYancey%252Bboogie%252Bwoogie%252Bpiano%252Bblues%252Blive&hl=en&ec=65620
+          - generic [ref=e51]:
+            - img
+          - generic [ref=e52]: Sign in
+  - generic [ref=e56]:
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e60]:
+          - generic [ref=e63]:
+            - tablist [ref=e65]:
+              - tab "All" [selected] [ref=e69] [cursor=pointer]:
+                - generic [ref=e71]: All
+              - tab "Shorts" [ref=e78] [cursor=pointer]:
+                - generic [ref=e80]: Shorts
+              - tab "Videos" [ref=e87] [cursor=pointer]:
+                - generic [ref=e89]: Videos
+              - tab "Unwatched" [ref=e96] [cursor=pointer]:
+                - generic [ref=e98]: Unwatched
+              - tab "Watched" [ref=e105] [cursor=pointer]:
+                - generic [ref=e107]: Watched
+              - tab "Recently uploaded" [ref=e114] [cursor=pointer]:
+                - generic [ref=e116]: Recently uploaded
+              - tab "Live" [ref=e123] [cursor=pointer]:
+                - generic [ref=e125]: Live
+            - button "Next" [ref=e133] [cursor=pointer]:
+              - generic [ref=e137]:
+                - img
+          - link "About these results" [ref=e144] [cursor=pointer]:
+            - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+            - generic [ref=e145]: About these results
+            - generic [ref=e149]:
+              - img
+          - generic [ref=e154]:
+            - button "Search filters" [ref=e156] [cursor=pointer]:
+              - generic [ref=e157]: Filters
+              - generic [ref=e161]:
+                - img
+            - tooltip "tooltip"
+        - generic [ref=e170]:
+          - generic [ref=e172]:
+            - link [ref=e174] [cursor=pointer]:
+              - /url: /watch?v=f5NRJErrBNM&list=RDf5NRJErrBNM&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+              - img [ref=e176]
+              - img [ref=e179]:
+                - generic [ref=e182]:
+                  - img
+                - generic [ref=e183]: 2:48
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e184] [cursor=pointer]:
+              - generic [ref=e185]:
+                - generic [ref=e186]:
+                  - heading "Jimmy Yancey's 'State Street Special' - Early Chicago Boogie-Woogie 2 minutes, 48 seconds" [level=3] [ref=e187]:
+                    - link "Jimmy Yancey's 'State Street Special' - Early Chicago Boogie-Woogie 2 minutes, 48 seconds" [ref=e188]:
+                      - /url: /watch?v=f5NRJErrBNM&list=RDf5NRJErrBNM&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: Jimmy Yancey's 'State Street Special' - Early Chicago Boogie-Woogie
+                  - button "Action menu" [ref=e192]:
+                    - generic [ref=e195]:
+                      - img
+                - generic [ref=e198]:
+                  - generic [ref=e199]: 7.2K views
+                  - generic [ref=e200]: •5 years ago
+              - generic [ref=e201]:
+                - link "Go to channel Ethan Leinwand" [ref=e202]:
+                  - /url: /@EthanLeinwand
+                - link "Ethan Leinwand" [ref=e208]:
+                  - /url: /@EthanLeinwand
+              - generic [ref=e209]:
+                - generic [ref=e210]: A little Jimmy Yancey from the overhead keys perspective. One of my all-time favorite pieces to play. There was 4 or 5 year period ...
+                - tooltip "tooltip"
+          - generic [ref=e212]:
+            - link [ref=e214] [cursor=pointer]:
+              - /url: /watch?v=TbVvN6BUjNw&list=RDTbVvN6BUjNw&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+              - img [ref=e216]
+              - img [ref=e219]:
+                - generic [ref=e222]:
+                  - img
+                - generic [ref=e223]: 4:08
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e224] [cursor=pointer]:
+              - generic [ref=e225]:
+                - generic [ref=e226]:
+                  - heading "Jimmy Yancey - Eternal Blues | Boogie woogie transcription 4 minutes, 8 seconds" [level=3] [ref=e227]:
+                    - link "Jimmy Yancey - Eternal Blues | Boogie woogie transcription 4 minutes, 8 seconds" [ref=e228]:
+                      - /url: /watch?v=TbVvN6BUjNw&list=RDTbVvN6BUjNw&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: Jimmy Yancey - Eternal Blues | Boogie woogie transcription
+                  - button "Action menu" [ref=e232]:
+                    - generic [ref=e235]:
+                      - img
+                - generic [ref=e238]:
+                  - generic [ref=e239]: 438 views
+                  - generic [ref=e240]: •2 years ago
+              - generic [ref=e241]:
+                - link "Go to channel BlueBlackJazz" [ref=e242]:
+                  - /url: /@blueblackjazz
+                - link "BlueBlackJazz" [ref=e248]:
+                  - /url: /@blueblackjazz
+              - generic [ref=e249]:
+                - generic [ref=e250]: "\"Eternal Blues\" as played by Jimmy Yancey recorded in 1943, transcribed by Paul Marcorelles. Jimmy Yancey (1898 - 1951) was ..."
+                - tooltip "tooltip"
+          - generic [ref=e252]:
+            - link [ref=e254] [cursor=pointer]:
+              - /url: /watch?v=ij09tqKhdcE&list=RDij09tqKhdcE&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+              - img [ref=e256]
+              - img [ref=e259]:
+                - generic [ref=e262]:
+                  - img
+                - generic [ref=e263]: 4:04
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e264] [cursor=pointer]:
+              - generic [ref=e265]:
+                - generic [ref=e266]:
+                  - heading "I Remember Jimmy Yancey 4 minutes, 4 seconds" [level=3] [ref=e267]:
+                    - link "I Remember Jimmy Yancey 4 minutes, 4 seconds" [ref=e268]:
+                      - /url: /watch?v=ij09tqKhdcE&list=RDij09tqKhdcE&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: I Remember Jimmy Yancey
+                  - button "Action menu" [ref=e272]:
+                    - generic [ref=e275]:
+                      - img
+                - generic [ref=e279]: 8.7K views
+              - generic [ref=e280]:
+                - link "Go to channel Piano Connection - Topic" [ref=e281]:
+                  - /url: /channel/UCK-BSox0GQZxc_Lvsghou-w
+                - link "Piano Connection - Topic" [ref=e287]:
+                  - /url: /channel/UCK-BSox0GQZxc_Lvsghou-w
+              - generic [ref=e288]:
+                - generic [ref=e289]: Provided to YouTube by Zebralution GmbH I Remember Jimmy Yancey · Piano Connection & Marcs Boogie Boogie Woogie ...
+                - tooltip "tooltip"
+          - generic [ref=e291]:
+            - link [ref=e293] [cursor=pointer]:
+              - /url: /watch?v=ksdET04mov0&list=RDksdET04mov0&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+              - img [ref=e295]
+              - img [ref=e298]:
+                - generic [ref=e301]:
+                  - img
+                - generic [ref=e302]: 25:00
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e303] [cursor=pointer]:
+              - generic [ref=e304]:
+                - generic [ref=e305]:
+                  - heading "Ethan Leinwand • Live Concert • Jimmy Yancey, Professor Longhair & more 25 minutes" [level=3] [ref=e306]:
+                    - link "Ethan Leinwand • Live Concert • Jimmy Yancey, Professor Longhair & more 25 minutes" [ref=e307]:
+                      - /url: /watch?v=ksdET04mov0&list=RDksdET04mov0&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: Ethan Leinwand • Live Concert • Jimmy Yancey, Professor Longhair & more
+                  - button "Action menu" [ref=e311]:
+                    - generic [ref=e314]:
+                      - img
+                - generic [ref=e317]:
+                  - generic [ref=e318]: 9.5K views
+                  - generic [ref=e319]: •3 years ago
+              - generic [ref=e320]:
+                - link "Go to channel Ethan Leinwand" [ref=e321]:
+                  - /url: /@EthanLeinwand
+                - link "Ethan Leinwand" [ref=e327]:
+                  - /url: /@EthanLeinwand
+              - generic [ref=e328]:
+                - generic [ref=e329]: Performance from a blues and boogie-woogie piano concert at the The Focal Point in St. Louis, MO. 0:00:00 - State Street Special ...
+                - tooltip "tooltip"
+              - img "4K" [ref=e332]:
+                - generic [ref=e333]: 4K
+              - generic [ref=e336]:
+                - generic [ref=e337]:
+                  - generic [ref=e341]: 6 chapters
+                  - button "State Street Special by Jimmy Yancey | Tipitina by Professor Longhair | Improvisation in Eb | 31 Blues by Bob Call | Yancey Stomp by Jimmy Yancey | Deep Morgan Blues by Henry Brown"
+                - button "More" [ref=e346]:
+                  - generic [ref=e350]:
+                    - img
+          - generic [ref=e355]:
+            - link [ref=e357] [cursor=pointer]:
+              - /url: /watch?v=IbBh0mMbazw&list=RDIbBh0mMbazw&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+              - img [ref=e359]
+              - img [ref=e362]:
+                - generic [ref=e365]:
+                  - img
+                - generic [ref=e366]: 18:01
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e367] [cursor=pointer]:
+              - generic [ref=e368]:
+                - generic [ref=e369]:
+                  - heading "Jimmy Yancey's Best 6 Piano Solos 18 minutes" [level=3] [ref=e370]:
+                    - link "Jimmy Yancey's Best 6 Piano Solos 18 minutes" [ref=e371]:
+                      - /url: /watch?v=IbBh0mMbazw&list=RDIbBh0mMbazw&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: Jimmy Yancey's Best 6 Piano Solos
+                  - button "Action menu" [ref=e375]:
+                    - generic [ref=e378]:
+                      - img
+                - generic [ref=e381]:
+                  - generic [ref=e382]: 20K views
+                  - generic [ref=e383]: •7 years ago
+              - generic [ref=e384]:
+                - link "Go to channel Blues Piano Sheets" [ref=e385]:
+                  - /url: /@BluesPianoSheets
+                - link "Blues Piano Sheets" [ref=e391]:
+                  - /url: /@BluesPianoSheets
+              - generic [ref=e392]:
+                - generic [ref=e393]: "6 of the best piano blues by Jimmy Yancey. Sheet music available at: https://bluespianosheets.com/ plus sheet music from Otis ..."
+                - tooltip "tooltip"
+              - generic [ref=e396]:
+                - generic [ref=e397]:
+                  - generic [ref=e401]: 6 chapters
+                  - button "La Salle Street Breakdown | How Long Blues | Yancey's Bugle Call | Mournful Blues | South Side Stuff | Yancey Special"
+                - button "More" [ref=e406]:
+                  - generic [ref=e410]:
+                    - img
+          - generic [ref=e415]:
+            - link [ref=e417] [cursor=pointer]:
+              - /url: /watch?v=hmv9wRzxxjk&list=RDhmv9wRzxxjk&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+            - generic [ref=e419] [cursor=pointer]:
+              - generic [ref=e420]:
+                - generic [ref=e421]:
+                  - heading "Ethan Leinwand - Two O'Clock Blues (by Jimmy Yancey) 3 minutes, 24 seconds" [level=3] [ref=e422]:
+                    - link "Ethan Leinwand - Two O'Clock Blues (by Jimmy Yancey) 3 minutes, 24 seconds" [ref=e423]:
+                      - /url: /watch?v=hmv9wRzxxjk&list=RDhmv9wRzxxjk&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: Ethan Leinwand - Two O'Clock Blues (by Jimmy Yancey)
+                  - button "Action menu" [ref=e427]:
+                    - generic [ref=e430]:
+                      - img
+                - generic [ref=e433]:
+                  - generic [ref=e434]: 29K views
+                  - generic [ref=e435]: •13 years ago
+              - generic [ref=e436]:
+                - link "Go to channel Ethan Leinwand" [ref=e437]:
+                  - /url: /@EthanLeinwand
+                - link "Ethan Leinwand" [ref=e442]:
+                  - /url: /@EthanLeinwand
+              - generic [ref=e443]:
+                - generic [ref=e444]: Ethan Leinwand playing "Two O'Clock Blues," by the great Jimmy Yancey. Filmed at The Manhattan Inn,. For more info and music ...
+                - tooltip "tooltip"
+          - generic [ref=e446] [cursor=pointer]:
+            - link [ref=e447]:
+              - /url: /watch?v=1pappgawdaE&list=PLDfgdXn7XEXw6ZhhKRwpz6aGeueaHSGCd
+              - generic [ref=e457]:
+                - generic [ref=e460]:
+                  - img
+                - generic [ref=e461]: 26 videos
+            - generic [ref=e464]:
+              - heading "Albert Ammons, Jimmy Yancey - Milestones of Legends - Boogie Woogie & Blues Piano, Vol. 5 (Full Album)" [level=3] [ref=e465]:
+                - link "Albert Ammons, Jimmy Yancey - Milestones of Legends - Boogie Woogie & Blues Piano, Vol. 5 (Full Album)" [ref=e466]:
+                  - /url: /watch?v=1pappgawdaE&list=PLDfgdXn7XEXw6ZhhKRwpz6aGeueaHSGCd
+              - generic [ref=e468]:
+                - generic [ref=e469]:
+                  - link "aygen1459" [ref=e472]:
+                    - /url: /@aygen1459
+                  - generic [ref=e473]: •
+                  - link "Playlist" [ref=e476]:
+                    - /url: /@aygen1459
+                - link "Swanee River · 2:35" [ref=e480]:
+                  - /url: /watch?v=1pappgawdaE&list=PLDfgdXn7XEXw6ZhhKRwpz6aGeueaHSGCd
+                - link "Unreleased · 57:58" [ref=e483]:
+                  - /url: /watch?v=J0vUqvfHQeQ&list=PLDfgdXn7XEXw6ZhhKRwpz6aGeueaHSGCd&pp=0gcJCRwBOCosWNin
+                - link "View full playlist" [ref=e488]:
+                  - /url: /playlist?list=PLDfgdXn7XEXw6ZhhKRwpz6aGeueaHSGCd
+          - generic [ref=e490]:
+            - link [ref=e492] [cursor=pointer]:
+              - /url: /watch?v=ILQc1FYM_AY&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZQ%3D%3D
+            - generic [ref=e494] [cursor=pointer]:
+              - generic [ref=e495]:
+                - generic [ref=e496]:
+                  - heading "Yancey Special by Jimmy Yancey . Lesson No 5 16 minutes" [level=3] [ref=e497]:
+                    - link "Yancey Special by Jimmy Yancey . Lesson No 5 16 minutes" [ref=e498]:
+                      - /url: /watch?v=ILQc1FYM_AY&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZQ%3D%3D
+                      - text: Yancey Special by Jimmy Yancey . Lesson No 5
+                  - button "Action menu" [ref=e502]:
+                    - generic [ref=e505]:
+                      - img
+                - generic [ref=e508]:
+                  - generic [ref=e509]: 3.3K views
+                  - generic [ref=e510]: •2 years ago
+              - generic [ref=e511]:
+                - link "Go to channel Boogie Woogie , Blues & Classical Piano" [ref=e512]:
+                  - /url: /@boogiewoogieandbluespiano
+                - link "Boogie Woogie , Blues & Classical Piano" [ref=e517]:
+                  - /url: /@boogiewoogieandbluespiano
+              - generic [ref=e518]:
+                - generic [ref=e519]: Leason No 5 . Really easy to follow tutorial of Yancey Special by Jimmy Yancey. Lesson No 5 covers bars 49-60 This is the ...
+                - tooltip "tooltip"
+              - img "4K" [ref=e522]:
+                - generic [ref=e523]: 4K
+              - generic [ref=e526]:
+                - generic [ref=e527]:
+                  - generic [ref=e531]: 14 chapters
+                  - button "Demo 1 | The left hand | The right hand complete | Bars 49-50 right hand | Bars 49-50 hands together | Bars 51-52 right hand | Bars 51-52 hands together | Bars 53-54 right hand | Bars 53-54 hands together | Bars 55-56 right hand | Bars 49-56 hands together | Bars 34-35 right hand | last 4 bars hands together | Slow demo. All 12 bars hands together"
+                - button "More" [ref=e536]:
+                  - generic [ref=e540]:
+                    - img
+          - generic [ref=e545]:
+            - link [ref=e547] [cursor=pointer]:
+              - /url: /watch?v=j0dkWUeIPZU&list=RDj0dkWUeIPZU&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+            - generic [ref=e549] [cursor=pointer]:
+              - generic [ref=e550]:
+                - generic [ref=e551]:
+                  - heading "Boogie Woogie Blues Piano - Jimmy Yancey - State Street Special 🎹 1 minute, 4 seconds" [level=3] [ref=e552]:
+                    - link "Boogie Woogie Blues Piano - Jimmy Yancey - State Street Special 🎹 1 minute, 4 seconds" [ref=e553]:
+                      - /url: /watch?v=j0dkWUeIPZU&list=RDj0dkWUeIPZU&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: Boogie Woogie Blues Piano - Jimmy Yancey - State Street Special 🎹
+                  - button "Action menu" [ref=e557]:
+                    - generic [ref=e560]:
+                      - img
+                - generic [ref=e563]:
+                  - generic [ref=e564]: 4.6K views
+                  - generic [ref=e565]: •2 years ago
+              - generic [ref=e566]:
+                - link "Go to channel Koala Piano" [ref=e567]:
+                  - /url: /@koalapiano2450
+                - link "Koala Piano" [ref=e572]:
+                  - /url: /@koalapiano2450
+              - generic [ref=e573]:
+                - generic [ref=e574]: State Street Special - Jimmy Yancey https://mymusic.st/narapiano/121828.
+                - tooltip "tooltip"
+          - generic [ref=e575]:
+            - generic [ref=e578]:
+              - img [ref=e580]:
+                - generic [ref=e582]:
+                  - img
+              - heading "Shorts" [level=2] [ref=e585]
+            - generic [ref=e586]:
+              - generic [ref=e587]:
+                - generic [ref=e590]:
+                  - link [ref=e591] [cursor=pointer]:
+                    - /url: /shorts/9o26gWw8pP4
+                  - generic [ref=e595] [cursor=pointer]:
+                    - 'link "Learn to play Yancey Special by Jimmy Yancey. Link to tutorial in description #shorts" [ref=e596]':
+                      - /url: /shorts/9o26gWw8pP4
+                    - generic [ref=e597]: 1.4K views
+                  - button "More actions" [ref=e599] [cursor=pointer]:
+                    - generic [ref=e603]:
+                      - img
+                - generic [ref=e609]:
+                  - link [ref=e610] [cursor=pointer]:
+                    - /url: /shorts/ZI8rwtUxgkY
+                  - generic [ref=e614] [cursor=pointer]:
+                    - 'link "Yancey Special by Jimmy Yancey. Tutorial link in description #shorts #boogie #piano #pianotutorial" [ref=e615]':
+                      - /url: /shorts/ZI8rwtUxgkY
+                    - generic [ref=e616]: 1.8K views
+                  - button "More actions" [ref=e618] [cursor=pointer]:
+                    - generic [ref=e622]:
+                      - img
+              - generic [ref=e626]:
+                - generic [ref=e629]:
+                  - link [ref=e630] [cursor=pointer]:
+                    - /url: /shorts/Q41X1xtX42E
+                  - generic [ref=e634] [cursor=pointer]:
+                    - link "Boogie Woogie Piano Gets Lady In Green To Dance!" [ref=e635]:
+                      - /url: /shorts/Q41X1xtX42E
+                    - generic [ref=e636]: 1.6M views
+                  - button "More actions" [ref=e638] [cursor=pointer]:
+                    - generic [ref=e642]:
+                      - img
+                - generic [ref=e648]:
+                  - link [ref=e649] [cursor=pointer]:
+                    - /url: /shorts/D6GUOC1ftG8
+                  - generic [ref=e653] [cursor=pointer]:
+                    - 'link "Jools Holland - #StayHome And Learn Boogie-Woogie Piano #WithMe (Lesson Six)" [ref=e654]':
+                      - /url: /shorts/D6GUOC1ftG8
+                    - generic [ref=e655]: 18K views
+                  - button "More actions" [ref=e657] [cursor=pointer]:
+                    - generic [ref=e661]:
+                      - img
+            - button "Show more" [ref=e668] [cursor=pointer]:
+              - generic [ref=e669]: Show more
+              - generic [ref=e673]:
+                - img
+          - generic [ref=e678]:
+            - link [ref=e680] [cursor=pointer]:
+              - /url: /watch?v=vLNRzicD30c&list=RDvLNRzicD30c&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+            - generic [ref=e682] [cursor=pointer]:
+              - generic [ref=e683]:
+                - generic [ref=e684]:
+                  - heading "Blues for Jimmy Yancey - Piano 3 minutes, 12 seconds" [level=3] [ref=e685]:
+                    - link "Blues for Jimmy Yancey - Piano 3 minutes, 12 seconds" [ref=e686]:
+                      - /url: /watch?v=vLNRzicD30c&list=RDvLNRzicD30c&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: Blues for Jimmy Yancey - Piano
+                  - button "Action menu" [ref=e690]:
+                    - generic [ref=e693]:
+                      - img
+                - generic [ref=e696]:
+                  - generic [ref=e697]: 55K views
+                  - generic [ref=e698]: •8 years ago
+              - generic [ref=e699]:
+                - link "Go to channel Andrew Campbell - Blues Piano Player" [ref=e700]:
+                  - /url: /@andrewcampbell-bluespianop6741
+                - link "Andrew Campbell - Blues Piano Player" [ref=e705]:
+                  - /url: /@andrewcampbell-bluespianop6741
+              - generic [ref=e706]:
+                - generic [ref=e707]: I've always loved the blues piano of Jimmy Yancey. Born in Chicago in 1901, he was a pioneer of early boogie woogie and blues ...
+                - tooltip "tooltip"
+          - generic [ref=e709]:
+            - link [ref=e711] [cursor=pointer]:
+              - /url: /watch?v=Yl-k8RxEWwY&list=RDYl-k8RxEWwY&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e713] [cursor=pointer]:
+              - generic [ref=e714]:
+                - generic [ref=e715]:
+                  - heading "Jimmy Yancey - The Mellow Blues | Boogie woogie transcription 2 minutes, 44 seconds" [level=3] [ref=e716]:
+                    - link "Jimmy Yancey - The Mellow Blues | Boogie woogie transcription 2 minutes, 44 seconds" [ref=e717]:
+                      - /url: /watch?v=Yl-k8RxEWwY&list=RDYl-k8RxEWwY&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                      - text: Jimmy Yancey - The Mellow Blues | Boogie woogie transcription
+                  - button "Action menu" [ref=e721]:
+                    - generic [ref=e724]:
+                      - img
+                - generic [ref=e727]:
+                  - generic [ref=e728]: 546 views
+                  - generic [ref=e729]: •2 years ago
+              - generic [ref=e730]:
+                - link "Go to channel BlueBlackJazz" [ref=e731]:
+                  - /url: /@blueblackjazz
+                - link "BlueBlackJazz" [ref=e736]:
+                  - /url: /@blueblackjazz
+              - generic [ref=e737]:
+                - generic [ref=e738]: "\"The Mellow Blues\" as played by Jimmy Yancey recorded in 1939, transcribed by Paul Marcorelles. Jimmy Yancey (1898 - 1951) ..."
+                - tooltip "tooltip"
+          - generic [ref=e740]:
+            - link [ref=e742] [cursor=pointer]:
+              - /url: /watch?v=ddmb7i7vipg&list=RDddmb7i7vipg&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+            - generic [ref=e744] [cursor=pointer]:
+              - generic [ref=e745]:
+                - generic [ref=e746]:
+                  - heading "Yancey Special Jimmy Yancey 4 minutes, 27 seconds" [level=3] [ref=e747]:
+                    - link "Yancey Special Jimmy Yancey 4 minutes, 27 seconds" [ref=e748]:
+                      - /url: /watch?v=ddmb7i7vipg&list=RDddmb7i7vipg&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: Yancey Special Jimmy Yancey
+                  - button "Action menu" [ref=e752]:
+                    - generic [ref=e755]:
+                      - img
+                - generic [ref=e758]:
+                  - generic [ref=e759]: 102K views
+                  - generic [ref=e760]: •15 years ago
+              - generic [ref=e761]:
+                - link "Go to channel adbo52" [ref=e762]:
+                  - /url: /@adbo52
+                - link "adbo52" [ref=e767]:
+                  - /url: /@adbo52
+              - generic [ref=e768]:
+                - generic [ref=e769]: Yancey Special by Jimmy Yancey., Chicago, December 1943. A tribute to my favourite piano player.
+                - tooltip "tooltip"
+          - generic [ref=e771]:
+            - heading "People also watched" [level=2] [ref=e774]:
+              - generic [ref=e776]: People also watched
+            - generic [ref=e778]:
+              - generic [ref=e779]:
+                - generic [ref=e781]:
+                  - link [ref=e783] [cursor=pointer]:
+                    - /url: /watch?v=TgsQaOiHv10&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZQ%3D%3D
+                  - generic [ref=e785] [cursor=pointer]:
+                    - generic [ref=e786]:
+                      - generic [ref=e787]:
+                        - heading "Boogie Woogie Freakout DOWN UNDER - Sax Player Appears from Nowhere 4 minutes, 30 seconds" [level=3] [ref=e788]:
+                          - link "Boogie Woogie Freakout DOWN UNDER - Sax Player Appears from Nowhere 4 minutes, 30 seconds" [ref=e789]:
+                            - /url: /watch?v=TgsQaOiHv10&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZQ%3D%3D
+                            - text: Boogie Woogie Freakout DOWN UNDER - Sax Player Appears from Nowhere
+                        - button "Action menu" [ref=e793]:
+                          - generic [ref=e796]:
+                            - img
+                      - generic [ref=e799]:
+                        - generic [ref=e800]: 29K views
+                        - generic [ref=e801]: •1 year ago
+                    - generic [ref=e802]:
+                      - link "Go to channel Terry Miles" [ref=e803]:
+                        - /url: /@TerryMilesPiano
+                      - generic [ref=e804]:
+                        - link "Terry Miles" [ref=e808]:
+                          - /url: /@TerryMilesPiano
+                        - img "Verified" [ref=e811]:
+                          - generic [ref=e814]:
+                            - img
+                    - generic [ref=e815]:
+                      - generic [ref=e816]: Alex White - Saxophone & Terry Miles - Piano Hi everyone. I'm Terry Miles and I'm touring Australia looking for 'The Public Piano'.
+                      - tooltip "tooltip"
+                - generic [ref=e818]:
+                  - link [ref=e820] [cursor=pointer]:
+                    - /url: /watch?v=M3i75ZJVbTQ&list=RDM3i75ZJVbTQ&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - generic [ref=e822] [cursor=pointer]:
+                    - generic [ref=e823]:
+                      - generic [ref=e824]:
+                        - heading "Honky Tonk Train Blues – 4 Pianists Live | Swiss Boogie Woogie 4 minutes, 59 seconds" [level=3] [ref=e825]:
+                          - link "Honky Tonk Train Blues – 4 Pianists Live | Swiss Boogie Woogie 4 minutes, 59 seconds" [ref=e826]:
+                            - /url: /watch?v=M3i75ZJVbTQ&list=RDM3i75ZJVbTQ&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                            - text: Honky Tonk Train Blues – 4 Pianists Live | Swiss Boogie Woogie
+                        - button "Action menu" [ref=e830]:
+                          - generic [ref=e833]:
+                            - img
+                      - generic [ref=e836]:
+                        - generic [ref=e837]: 22K views
+                        - generic [ref=e838]: •2 months ago
+                    - generic [ref=e839]:
+                      - link "Go to channel International Boogie Nights" [ref=e840]:
+                        - /url: /@InternationalBoogieNights
+                      - link "International Boogie Nights" [ref=e845]:
+                        - /url: /@InternationalBoogieNights
+                    - generic [ref=e846]:
+                      - generic [ref=e847]: Honky Tonk Train Blues by Meade “Lux” Lewis, performed live by an outstanding all-star lineup at the 8th Stride & Boogie Summit ...
+                      - tooltip "tooltip"
+                - generic [ref=e849]:
+                  - link [ref=e851] [cursor=pointer]:
+                    - /url: /watch?v=udwrZXtX6LQ&list=RDudwrZXtX6LQ&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                  - generic [ref=e853] [cursor=pointer]:
+                    - generic [ref=e854]:
+                      - generic [ref=e855]:
+                        - heading "Incredible Boogie Woogie Piano Jam SHUTS DOWN This Bar! 2 minutes, 9 seconds" [level=3] [ref=e856]:
+                          - link "Incredible Boogie Woogie Piano Jam SHUTS DOWN This Bar! 2 minutes, 9 seconds" [ref=e857]:
+                            - /url: /watch?v=udwrZXtX6LQ&list=RDudwrZXtX6LQ&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                            - text: Incredible Boogie Woogie Piano Jam SHUTS DOWN This Bar!
+                        - button "Action menu" [ref=e861]:
+                          - generic [ref=e864]:
+                            - img
+                      - generic [ref=e867]:
+                        - generic [ref=e868]: 7.2K views
+                        - generic [ref=e869]: •7 months ago
+                    - generic [ref=e870]:
+                      - link "Go to channel Jonty Williams" [ref=e871]:
+                        - /url: /@JontyWilliamsMusic
+                      - link "Jonty Williams" [ref=e876]:
+                        - /url: /@JontyWilliamsMusic
+                    - generic [ref=e877]:
+                      - generic [ref=e878]: This is the moment a quiet evening erupted into one of the most incredible, high-energy boogie woogie jam sessions! Watch as ...
+                      - tooltip "tooltip"
+                - generic [ref=e880]:
+                  - link [ref=e882] [cursor=pointer]:
+                    - /url: /watch?v=fn7qV_aV52A&list=RDfn7qV_aV52A&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                  - generic [ref=e884] [cursor=pointer]:
+                    - generic [ref=e885]:
+                      - generic [ref=e886]:
+                        - heading "The Greatness of Jimmy Yancey 9 minutes, 17 seconds" [level=3] [ref=e887]:
+                          - link "The Greatness of Jimmy Yancey 9 minutes, 17 seconds" [ref=e888]:
+                            - /url: /watch?v=fn7qV_aV52A&list=RDfn7qV_aV52A&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                            - text: The Greatness of Jimmy Yancey
+                        - button "Action menu" [ref=e892]:
+                          - generic [ref=e895]:
+                            - img
+                      - generic [ref=e898]:
+                        - generic [ref=e899]: 8.3K views
+                        - generic [ref=e900]: •5 years ago
+                    - generic [ref=e901]:
+                      - link "Go to channel Andria Rogava" [ref=e902]:
+                        - /url: /@AndriaRogava
+                      - link "Andria Rogava" [ref=e907]:
+                        - /url: /@AndriaRogava
+                    - generic [ref=e908]:
+                      - generic [ref=e909]: In this video I combined three numbers from Jimmy Yancey's memorable, final recording session in Chicago, Illinois on July 18, ...
+                      - tooltip "tooltip"
+              - generic "+6 more" [ref=e911] [cursor=pointer]
+          - generic [ref=e913] [cursor=pointer]:
+            - link [ref=e914]:
+              - /url: /watch?v=tAKpzsYcds4&list=PLmJ1Z-JlOGArR1ZDWG9g9tlMu8D5vBDad
+              - generic [ref=e924]:
+                - generic [ref=e927]:
+                  - img
+                - generic [ref=e928]: 11 videos
+            - generic [ref=e931]:
+              - heading "Jimmy Yancey Piano Solo Transcriptions" [level=3] [ref=e932]:
+                - link "Jimmy Yancey Piano Solo Transcriptions" [ref=e933]:
+                  - /url: /watch?v=tAKpzsYcds4&list=PLmJ1Z-JlOGArR1ZDWG9g9tlMu8D5vBDad
+              - generic [ref=e935]:
+                - generic [ref=e936]:
+                  - link "BlueBlackJazz" [ref=e939]:
+                    - /url: /@blueblackjazz
+                  - generic [ref=e940]: •
+                  - link "Playlist" [ref=e943]:
+                    - /url: /@blueblackjazz
+                - link "Jimmy Yancey - Beezum Blues | Boogie woogie transcription · 3:26" [ref=e947]:
+                  - /url: /watch?v=tAKpzsYcds4&list=PLmJ1Z-JlOGArR1ZDWG9g9tlMu8D5vBDad
+                - link "Jimmy Yancey - The Mellow Blues | Boogie woogie transcription · 2:44" [ref=e950]:
+                  - /url: /watch?v=Yl-k8RxEWwY&list=PLmJ1Z-JlOGArR1ZDWG9g9tlMu8D5vBDad
+                - link "View full playlist" [ref=e955]:
+                  - /url: /playlist?list=PLmJ1Z-JlOGArR1ZDWG9g9tlMu8D5vBDad
+          - generic [ref=e957]:
+            - link [ref=e959] [cursor=pointer]:
+              - /url: /watch?v=B_X6HZe7kmI&list=RDB_X6HZe7kmI&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+            - generic [ref=e961] [cursor=pointer]:
+              - generic [ref=e962]:
+                - generic [ref=e963]:
+                  - heading "Boogie Woogie Band Marc Anderegg Jimmy Yancey Special 6 minutes, 35 seconds" [level=3] [ref=e964]:
+                    - link "Boogie Woogie Band Marc Anderegg Jimmy Yancey Special 6 minutes, 35 seconds" [ref=e965]:
+                      - /url: /watch?v=B_X6HZe7kmI&list=RDB_X6HZe7kmI&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: Boogie Woogie Band Marc Anderegg Jimmy Yancey Special
+                  - button "Action menu" [ref=e969]:
+                    - generic [ref=e972]:
+                      - img
+                - generic [ref=e975]:
+                  - generic [ref=e976]: 1K views
+                  - generic [ref=e977]: •14 years ago
+              - generic [ref=e978]:
+                - link "Go to channel Marc Anderegg" [ref=e979]:
+                  - /url: /@Boogie4052
+                - link "Marc Anderegg" [ref=e984]:
+                  - /url: /@Boogie4052
+              - generic [ref=e985]:
+                - generic [ref=e986]: Marc Anderegg Band recorded at Waeckerschwend Switzerland. This Blues is original written by Mr. Jimmy Yancey. He was a ...
+                - tooltip "tooltip"
+          - generic [ref=e987]:
+            - generic [ref=e990]:
+              - img [ref=e992]:
+                - generic [ref=e994]:
+                  - img
+              - heading "Shorts" [level=2] [ref=e997]
+            - generic [ref=e998]:
+              - generic [ref=e999]:
+                - generic [ref=e1002]:
+                  - link [ref=e1003] [cursor=pointer]:
+                    - /url: /shorts/kKMMf2Mt8vM
+                    - img [ref=e1008]:
+                      - generic [ref=e1009]: New
+                  - generic [ref=e1010] [cursor=pointer]:
+                    - link "Chicago Boogie Woogie & Blues Lick" [ref=e1011]:
+                      - /url: /shorts/kKMMf2Mt8vM
+                    - generic [ref=e1012]: 2.5K views
+                  - button "More actions" [ref=e1014] [cursor=pointer]:
+                    - generic [ref=e1018]:
+                      - img
+                - generic [ref=e1024]:
+                  - link [ref=e1025] [cursor=pointer]:
+                    - /url: /shorts/O14398eLKeY
+                  - generic [ref=e1029] [cursor=pointer]:
+                    - 'link "Michael Drexler plays Yancey Special | Boogie Piano #boogiewoogiepiano #ragtime #boogie" [ref=e1030]':
+                      - /url: /shorts/O14398eLKeY
+                    - generic [ref=e1031]: 738 views
+                  - button "More actions" [ref=e1033] [cursor=pointer]:
+                    - generic [ref=e1037]:
+                      - img
+              - generic [ref=e1041]:
+                - generic [ref=e1044]:
+                  - link [ref=e1045] [cursor=pointer]:
+                    - /url: /shorts/3oFzg0CWlcA
+                  - generic [ref=e1049] [cursor=pointer]:
+                    - link "Jimmy Yancey Blues - Keyboard Cover on the Medeli M331 (#shorts)" [ref=e1050]:
+                      - /url: /shorts/3oFzg0CWlcA
+                    - generic [ref=e1051]: 1.1K views
+                  - button "More actions" [ref=e1053] [cursor=pointer]:
+                    - generic [ref=e1057]:
+                      - img
+                - generic [ref=e1063]:
+                  - link [ref=e1064] [cursor=pointer]:
+                    - /url: /shorts/XwNWlZXxVzU
+                    - img [ref=e1069]:
+                      - generic [ref=e1070]: New
+                  - generic [ref=e1071] [cursor=pointer]:
+                    - link "Pounding Piano Boogie in Paris Jazz Club" [ref=e1072]:
+                      - /url: /shorts/XwNWlZXxVzU
+                    - generic [ref=e1073]: 1.1K views
+                  - button "More actions" [ref=e1075] [cursor=pointer]:
+                    - generic [ref=e1079]:
+                      - img
+            - button "Show more" [ref=e1086] [cursor=pointer]:
+              - generic [ref=e1087]: Show more
+              - generic [ref=e1091]:
+                - img
+          - generic [ref=e1096]:
+            - link [ref=e1098] [cursor=pointer]:
+              - /url: /watch?v=aqtQ-6c1s9Q&list=RDaqtQ-6c1s9Q&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e1100] [cursor=pointer]:
+              - generic [ref=e1101]:
+                - generic [ref=e1102]:
+                  - heading "SWITZERLAND GOT BLUES Nico Brina plays Jimmy Yancey style - Slow Boogie Woogie Piano 2 minutes, 9 seconds" [level=3] [ref=e1103]:
+                    - link "SWITZERLAND GOT BLUES Nico Brina plays Jimmy Yancey style - Slow Boogie Woogie Piano 2 minutes, 9 seconds" [ref=e1104]:
+                      - /url: /watch?v=aqtQ-6c1s9Q&list=RDaqtQ-6c1s9Q&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                      - text: SWITZERLAND GOT BLUES Nico Brina plays Jimmy Yancey style - Slow Boogie Woogie Piano
+                  - button "Action menu" [ref=e1108]:
+                    - generic [ref=e1111]:
+                      - img
+                - generic [ref=e1114]:
+                  - generic [ref=e1115]: 940 views
+                  - generic [ref=e1116]: •4 months ago
+              - generic [ref=e1117]:
+                - link "Go to channel Nico Brina" [ref=e1118]:
+                  - /url: /channel/UCU9v1FkMnh9HZstPFn5X9-Q
+                - generic [ref=e1119]:
+                  - link "Nico Brina" [ref=e1123]:
+                    - /url: /channel/UCU9v1FkMnh9HZstPFn5X9-Q
+                  - img "Official Artist Channel" [ref=e1126]:
+                    - generic [ref=e1129]:
+                      - img
+              - generic [ref=e1130]:
+                - text: "Enjoy a beautiful view on a sunny autumn day in Switzerland with Nico Brina #pianoblues #nicobrina #bluespiano #cheesepiano ..."
+                - tooltip "tooltip"
+              - img "4K" [ref=e1133]:
+                - generic [ref=e1134]: 4K
+          - generic [ref=e1136]:
+            - link [ref=e1138] [cursor=pointer]:
+              - /url: /watch?v=LI8RzmsBPKE&list=RDLI8RzmsBPKE&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+            - generic [ref=e1140] [cursor=pointer]:
+              - generic [ref=e1141]:
+                - generic [ref=e1142]:
+                  - heading "How Long Blues (Alt. Take) 4 minutes, 1 second" [level=3] [ref=e1143]:
+                    - link "How Long Blues (Alt. Take) 4 minutes, 1 second" [ref=e1144]:
+                      - /url: /watch?v=LI8RzmsBPKE&list=RDLI8RzmsBPKE&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: How Long Blues (Alt. Take)
+                  - button "Action menu" [ref=e1148]:
+                    - generic [ref=e1151]:
+                      - img
+                - generic [ref=e1155]: 4.5K views
+              - generic [ref=e1156]:
+                - link "Go to channel Jimmy Yancey - Topic" [ref=e1157]:
+                  - /url: /channel/UCWc7JXx1dsHfl2i5MALJ9uw
+                - link "Jimmy Yancey - Topic" [ref=e1162]:
+                  - /url: /channel/UCWc7JXx1dsHfl2i5MALJ9uw
+              - generic [ref=e1163]:
+                - generic [ref=e1164]: Provided to YouTube by The Orchard Enterprises How Long Blues (Alt. Take) · Jimmy Yancey Jimmy Yancey Vol. 2 1940 - 1943 ...
+                - tooltip "tooltip"
+          - generic [ref=e1166]:
+            - link [ref=e1168] [cursor=pointer]:
+              - /url: /watch?v=BAwM70e18s4&list=RDBAwM70e18s4&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+            - generic [ref=e1170] [cursor=pointer]:
+              - generic [ref=e1171]:
+                - generic [ref=e1172]:
+                  - heading "Jimmy Yancey - How Long Blues 4 minutes, 1 second" [level=3] [ref=e1173]:
+                    - link "Jimmy Yancey - How Long Blues 4 minutes, 1 second" [ref=e1174]:
+                      - /url: /watch?v=BAwM70e18s4&list=RDBAwM70e18s4&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: Jimmy Yancey - How Long Blues
+                  - button "Action menu" [ref=e1178]:
+                    - generic [ref=e1181]:
+                      - img
+                - generic [ref=e1184]:
+                  - generic [ref=e1185]: 111K views
+                  - generic [ref=e1186]: •11 years ago
+              - generic [ref=e1187]:
+                - link "Go to channel Andria Rogava" [ref=e1188]:
+                  - /url: /@AndriaRogava
+                - link "Andria Rogava" [ref=e1193]:
+                  - /url: /@AndriaRogava
+              - generic [ref=e1194]:
+                - text: A rare take, very slow and moody, a real gem.
+                - tooltip "tooltip"
+          - generic [ref=e1196]:
+            - link [ref=e1198] [cursor=pointer]:
+              - /url: /watch?v=cos1J1eE1W4&list=RDcos1J1eE1W4&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+            - generic [ref=e1200] [cursor=pointer]:
+              - generic [ref=e1201]:
+                - generic [ref=e1202]:
+                  - heading "How Long Blues - Jimmy Yancey 3 minutes, 38 seconds" [level=3] [ref=e1203]:
+                    - link "How Long Blues - Jimmy Yancey 3 minutes, 38 seconds" [ref=e1204]:
+                      - /url: /watch?v=cos1J1eE1W4&list=RDcos1J1eE1W4&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: How Long Blues - Jimmy Yancey
+                  - button "Action menu" [ref=e1208]:
+                    - generic [ref=e1211]:
+                      - img
+                - generic [ref=e1214]:
+                  - generic [ref=e1215]: 32K views
+                  - generic [ref=e1216]: •4 years ago
+              - generic [ref=e1217]:
+                - link "Go to channel Kristian Olsen" [ref=e1218]:
+                  - /url: /@kristian_olsen
+                - link "Kristian Olsen" [ref=e1223]:
+                  - /url: /@kristian_olsen
+              - generic [ref=e1224]:
+                - generic [ref=e1225]: You can find the sheet music for this arrangement at http://kristianolsen.org/yanceyhowlong. This is my rendition of Jimmy ...
+                - tooltip "tooltip"
+          - generic [ref=e1227]:
+            - link [ref=e1229] [cursor=pointer]:
+              - /url: /watch?v=J8e0oKfMYhw&list=RDJ8e0oKfMYhw&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+            - generic [ref=e1231] [cursor=pointer]:
+              - generic [ref=e1232]:
+                - generic [ref=e1233]:
+                  - heading "\"Yancey's Bugle Call\" • Jimmy Yancey's Boogie-Woogie Style • by Ethan Leinwand 2 minutes, 51 seconds" [level=3] [ref=e1234]:
+                    - link "\"Yancey's Bugle Call\" • Jimmy Yancey's Boogie-Woogie Style • by Ethan Leinwand 2 minutes, 51 seconds" [ref=e1235]:
+                      - /url: /watch?v=J8e0oKfMYhw&list=RDJ8e0oKfMYhw&start_radio=1&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZaAHAQ%3D%3D
+                      - text: "\"Yancey's Bugle Call\" • Jimmy Yancey's Boogie-Woogie Style • by Ethan Leinwand"
+                  - button "Action menu" [ref=e1239]:
+                    - generic [ref=e1242]:
+                      - img
+                - generic [ref=e1245]:
+                  - generic [ref=e1246]: 11K views
+                  - generic [ref=e1247]: •4 years ago
+              - generic [ref=e1248]:
+                - link "Go to channel Ethan Leinwand" [ref=e1249]:
+                  - /url: /@EthanLeinwand
+                - link "Ethan Leinwand" [ref=e1254]:
+                  - /url: /@EthanLeinwand
+              - generic [ref=e1255]:
+                - generic [ref=e1256]: Here's a new recording of one of the greatest Eb boogie-woogie's ever written. Jimmy Yancey's "Yancey's Bugle Call" has all the ...
+                - tooltip "tooltip"
+          - generic [ref=e1258]:
+            - link [ref=e1260] [cursor=pointer]:
+              - /url: /watch?v=xv6d31ij0pg&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZQ%3D%3D
+            - generic [ref=e1262] [cursor=pointer]:
+              - generic [ref=e1263]:
+                - generic [ref=e1264]:
+                  - heading "Jimmy Yancey on the Street - Geneva Music Contest 2022 6 minutes, 1 second" [level=3] [ref=e1265]:
+                    - link "Jimmy Yancey on the Street - Geneva Music Contest 2022 6 minutes, 1 second" [ref=e1266]:
+                      - /url: /watch?v=xv6d31ij0pg&pp=ygUrSmltbXkgWWFuY2V5IGJvb2dpZSB3b29naWUgcGlhbm8gYmx1ZXMgbGl2ZQ%3D%3D
+                      - text: Jimmy Yancey on the Street - Geneva Music Contest 2022
+                  - button "Action menu" [ref=e1270]:
+                    - generic [ref=e1273]:
+                      - img
+                - generic [ref=e1276]:
+                  - generic [ref=e1277]: 202 views
+                  - generic [ref=e1278]: •3 years ago
+              - generic [ref=e1279]:
+                - link "Go to channel Jacques Covo piano" [ref=e1280]:
+                  - /url: /@JackinGenevaBoogieWoogie
+                - link "Jacques Covo piano" [ref=e1285]:
+                  - /url: /@JackinGenevaBoogieWoogie
+              - img "8K" [ref=e1288]:
+                - generic [ref=e1289]: 8K
+    - text: •

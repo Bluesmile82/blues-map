@@ -1,0 +1,575 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+            - tab "Under 4 min" [ref=e110] [cursor=pointer]:
+              - generic [ref=e112]: Under 4 min
+            - tab "4 - 20 min" [ref=e119] [cursor=pointer]:
+              - generic [ref=e121]: 4 - 20 min
+            - tab "Over 20 min" [ref=e128] [cursor=pointer]:
+              - generic [ref=e130]: Over 20 min
+          - button "Next" [ref=e138] [cursor=pointer]
+        - link "About these results" [ref=e147] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e148]: About these results
+        - generic [ref=e155]:
+          - button "Search filters" [ref=e157] [cursor=pointer]:
+            - generic [ref=e158]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e169]:
+        - generic [ref=e174]:
+          - img [ref=e180]
+          - generic [ref=e182] [cursor=pointer]:
+            - generic [ref=e183]:
+              - link "Masterclass for new guitarists" [ref=e186]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=C5lIBI6TPaYuKJsWhmLAPh8268QWy9rmZhgGsrcC-vhNkEAEgAGDVtdcCggEXY2EtcHViLTYyMTk4MTE3NDcwNDkzNzGgAZqvx_kCqAMEyAMKqgSxAk_QBSiDJjlPaslbyKrtdfr-DloHFmL6WebVsG6G2-X-I09c_Uji728J1JU7bjpH8SCBtFCk7w7mCMEaMcezJgK9gXI0kBzGkKlAddyIkZeTrPokvfBpmlRtybq7REoyTsvcBA6PMrolL1cyY03v6ybBsgzCAoRSZbx77MBPwmvU6ut9r828GCL6iYAOsTUSl5VbnWBrj9APXbza22K4vEN_Qpr9V9spsHyFInzWNNOiBH-nBWcMIZy2bzz00tqEYI2rxXYn94ms757s0rWWfQHwBFcohYTK9ry_SEkD9NZ00Dx0yRLBWP9B9AUbtkEbk1yXjT503AgiYSC0dHsVWfOT2SmF7vqOR-i3jp3m0lTklQZts6bUnF2AoVgrxKqzPi8euhSNiQirqK_2uEmUs1raiAWr8r3kUJIFCAgTeJiU1oYBoAZugAfO0LiGAZAHAagH8sCxAqgHuMSxAqgH4baxAqgHpc-xAqgH552xAqgH6J2xAqgH77WxAqgH8LWxAqgH-dOxAqgHydqxAqgHqeCxAqgHhAioB6bUsQKoB6jSG6gHtgeoB7CbsQKoB66xsQKoB-a8sQKoB8q6sQKoB_2ysQKoB_e4sQKoB_i4sQKoB8jPsQKoB8nPsQKoB63gsQKoB83HsQKoB_HRsQKoB_zVsQKoB_vVsQKoB4zWsQKoB4vWsQKoB5rhsQKoB53XsQKoB53UsQKoB4HGG6gH_K-xAqgHq8UbqAe3obECqAfVqbECqAfYprECqAfetbECuAgB0gg3CIDBgFAQARheMgijgsCAgICgDDoSgMKAgICQgAKAgICAgJCG4AMqSNmg0jVQFFjQ-cHSydGTA5oJJWh0dHBzOi8vbGVhcm5wcmFjdGljZXBsYXkuY29tL3NpZ251cC-xCS084ahPecxEyAkAyAmKApgLAboLQwgDEAUYBCAIKAEwHEABSABQAVhOYABoAHABiAEAmAEBogELCgCgAgGoAgPYAgHYAQGAAgGIAgW6Awl2aWJydXphYmHQCxLSDAIQAZoNARKqDQJFU8gNAdIN8AFodHRwczovL2xlYXJucHJhY3RpY2VwbGF5LmNvbS9zaWdudXAvP2FkYl9hZF9pZD03MTMwODk0NjUxMzcmYWRiX2FkX3NvdXJjZT1nb29nbGUmYWRiX2NsaWNrX2lkPXtnY2xpZH0mYWRiX2NhbXBhaWduX2lkPTIxNjg1NTY1NzM5JmFkYl9hZGdyb3VwX2lkPTE2Njg0NjMyNzQyNiZhZGJfdGFyZ2V0X2lkPSZhZGJfcGxhY2VtZW50PSZhZGJfdGFyZ2V0PSZnYWRfc291cmNlPTImZ2FkX2NhbXBhaWduaWQ9MjE2ODU1NjU3Mzm4E____________wGIFAGwFAPAFYGAgEDQFQHYFQGYFgHiFgIIAYAXAYoXFggDGAEgASgBMAE4AUABSAFQAVgBYAKgFwGpF2HoL-rsP5XLuhcGKAAwADgB0BgB8BgBwhkCCAE&gclid=EAIaIQobChMIy6fC0snRkwMVxRAGAB2Hpi5eEAEYASAAEgLy4fD_BwE&num=1&cid=CAASF-RoScbBRezxqS4akqYRYxTP6bbBSqkn&sig=AOD64_3h7WnPU7B3b_2NtzMrWvYZzdM8tg&ms=%5BCLICK_MS%5D&nb=0&nx=%5BNX%5D&ny=%5BNY%5D&dim=%5BDIM%5D
+              - link "Online guitar courses taught by master guitar teacher Paul Davids." [ref=e189]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=C5lIBI6TPaYuKJsWhmLAPh8268QWy9rmZhgGsrcC-vhNkEAEgAGDVtdcCggEXY2EtcHViLTYyMTk4MTE3NDcwNDkzNzGgAZqvx_kCqAMEyAMKqgSxAk_QBSiDJjlPaslbyKrtdfr-DloHFmL6WebVsG6G2-X-I09c_Uji728J1JU7bjpH8SCBtFCk7w7mCMEaMcezJgK9gXI0kBzGkKlAddyIkZeTrPokvfBpmlRtybq7REoyTsvcBA6PMrolL1cyY03v6ybBsgzCAoRSZbx77MBPwmvU6ut9r828GCL6iYAOsTUSl5VbnWBrj9APXbza22K4vEN_Qpr9V9spsHyFInzWNNOiBH-nBWcMIZy2bzz00tqEYI2rxXYn94ms757s0rWWfQHwBFcohYTK9ry_SEkD9NZ00Dx0yRLBWP9B9AUbtkEbk1yXjT503AgiYSC0dHsVWfOT2SmF7vqOR-i3jp3m0lTklQZts6bUnF2AoVgrxKqzPi8euhSNiQirqK_2uEmUs1raiAWr8r3kUJIFCAgTeJiU1oYBoAZugAfO0LiGAZAHAagH8sCxAqgHuMSxAqgH4baxAqgHpc-xAqgH552xAqgH6J2xAqgH77WxAqgH8LWxAqgH-dOxAqgHydqxAqgHqeCxAqgHhAioB6bUsQKoB6jSG6gHtgeoB7CbsQKoB66xsQKoB-a8sQKoB8q6sQKoB_2ysQKoB_e4sQKoB_i4sQKoB8jPsQKoB8nPsQKoB63gsQKoB83HsQKoB_HRsQKoB_zVsQKoB_vVsQKoB4zWsQKoB4vWsQKoB5rhsQKoB53XsQKoB53UsQKoB4HGG6gH_K-xAqgHq8UbqAe3obECqAfVqbECqAfYprECqAfetbECuAgB0gg3CIDBgFAQARheMgijgsCAgICgDDoSgMKAgICQgAKAgICAgJCG4AMqSNmg0jVQFFjQ-cHSydGTA5oJJWh0dHBzOi8vbGVhcm5wcmFjdGljZXBsYXkuY29tL3NpZ251cC-xCS084ahPecxEyAkAyAmKApgLAboLQwgDEAUYBCAIKAEwHEABSABQAVhOYABoAHABiAEAmAEBogELCgCgAgGoAgPYAgHYAQGAAgGIAgW6Awl2aWJydXphYmHQCxLSDAIQAZoNARKqDQJFU8gNAdIN8AFodHRwczovL2xlYXJucHJhY3RpY2VwbGF5LmNvbS9zaWdudXAvP2FkYl9hZF9pZD03MTMwODk0NjUxMzcmYWRiX2FkX3NvdXJjZT1nb29nbGUmYWRiX2NsaWNrX2lkPXtnY2xpZH0mYWRiX2NhbXBhaWduX2lkPTIxNjg1NTY1NzM5JmFkYl9hZGdyb3VwX2lkPTE2Njg0NjMyNzQyNiZhZGJfdGFyZ2V0X2lkPSZhZGJfcGxhY2VtZW50PSZhZGJfdGFyZ2V0PSZnYWRfc291cmNlPTImZ2FkX2NhbXBhaWduaWQ9MjE2ODU1NjU3Mzm4E____________wGIFAGwFAPAFYGAgEDQFQHYFQGYFgHiFgIIAYAXAYoXFggDGAEgASgBMAE4AUABSAFQAVgBYAKgFwGpF2HoL-rsP5XLuhcGKAAwADgB0BgB8BgBwhkCCAE&gclid=EAIaIQobChMIy6fC0snRkwMVxRAGAB2Hpi5eEAEYASAAEgLy4fD_BwE&num=1&cid=CAASF-RoScbBRezxqS4akqYRYxTP6bbBSqkn&sig=AOD64_3h7WnPU7B3b_2NtzMrWvYZzdM8tg&ms=%5BCLICK_MS%5D&nb=7&nx=%5BNX%5D&ny=%5BNY%5D&dim=%5BDIM%5D
+              - generic [ref=e190]:
+                - generic [ref=e192]:
+                  - generic [ref=e193]: Sponsored
+                  - text: ·
+                - generic [ref=e195]: Paul Davids guitar
+            - button "My Ad Center" [ref=e198]
+        - generic [ref=e205]:
+          - link [ref=e207] [cursor=pointer]:
+            - /url: /watch?v=KevWIIfpQ64&list=RDKevWIIfpQ64&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+          - generic [ref=e209] [cursor=pointer]:
+            - generic [ref=e210]:
+              - heading "Dr John's best blues piano solo \"There Must Be A Better World Somewhere\" 6 minutes, 47 seconds" [level=3] [ref=e212]:
+                - link "Dr John's best blues piano solo \"There Must Be A Better World Somewhere\" 6 minutes, 47 seconds" [ref=e213]:
+                  - /url: /watch?v=KevWIIfpQ64&list=RDKevWIIfpQ64&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                  - text: Dr John's best blues piano solo "There Must Be A Better World Somewhere"
+              - generic [ref=e216]:
+                - generic [ref=e217]: 317K views
+                - generic [ref=e218]: •11 years ago
+            - generic [ref=e219]:
+              - link "Go to channel Blues Piano Sheets" [ref=e220]:
+                - /url: /@BluesPianoSheets
+              - link "Blues Piano Sheets" [ref=e226]:
+                - /url: /@BluesPianoSheets
+            - generic [ref=e227]:
+              - generic [ref=e228]: Dr John "There Must Be a Better World Somewhere" Blues Piano Sheets, the channel for everyone who loves blues piano. Finally ...
+              - tooltip "tooltip"
+        - generic [ref=e230]:
+          - link [ref=e232] [cursor=pointer]:
+            - /url: /watch?v=33IujcZcurs&list=RD33IujcZcurs&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+          - generic [ref=e234] [cursor=pointer]:
+            - generic [ref=e235]:
+              - heading "Dr John Plays the Blues for You! 4 minutes, 32 seconds" [level=3] [ref=e237]:
+                - link "Dr John Plays the Blues for You! 4 minutes, 32 seconds" [ref=e238]:
+                  - /url: /watch?v=33IujcZcurs&list=RD33IujcZcurs&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                  - text: Dr John Plays the Blues for You!
+              - generic [ref=e241]:
+                - generic [ref=e242]: 459K views
+                - generic [ref=e243]: •11 years ago
+            - generic [ref=e244]:
+              - link "Go to channel Keyboard Instrument Chops and Gear" [ref=e245]:
+                - /url: /@keyboardmag1
+              - link "Keyboard Instrument Chops and Gear" [ref=e251]:
+                - /url: /@keyboardmag1
+            - generic [ref=e252]:
+              - generic [ref=e253]: Dr John (Mac Rebennack) demonstrates New Orleans-style blues playing exclusively for our readers. Look for him on the cover of ...
+              - tooltip "tooltip"
+        - generic [ref=e255]:
+          - link [ref=e257] [cursor=pointer]:
+            - /url: /watch?v=po8JpBCiwS4&list=RDpo8JpBCiwS4&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+          - generic [ref=e259] [cursor=pointer]:
+            - generic [ref=e260]:
+              - heading "Dr JOHN (1973) Ultrasonic Studios | Full Album | Blues | Rock | Live Concert 1 hour, 23 minutes" [level=3] [ref=e262]:
+                - link "Dr JOHN (1973) Ultrasonic Studios | Full Album | Blues | Rock | Live Concert 1 hour, 23 minutes" [ref=e263]:
+                  - /url: /watch?v=po8JpBCiwS4&list=RDpo8JpBCiwS4&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                  - text: Dr JOHN (1973) Ultrasonic Studios | Full Album | Blues | Rock | Live Concert
+              - generic [ref=e266]:
+                - generic [ref=e267]: 19K views
+                - generic [ref=e268]: •3 years ago
+            - generic [ref=e269]:
+              - link "Go to channel Dad ́s a Soul Man" [ref=e270]:
+                - /url: /@dadsasoulman9368
+              - link "Dad ́s a Soul Man" [ref=e276]:
+                - /url: /@dadsasoulman9368
+            - generic [ref=e277]:
+              - generic [ref=e278]: The live performance by Dr. John, aka Mac Rebbenack, at Ultrasonic Studios in Hempstead, NY, on November 6th, 1973, was a ...
+              - tooltip "tooltip"
+        - generic [ref=e280]:
+          - link [ref=e282] [cursor=pointer]:
+            - /url: /watch?v=BQAuykvykuU&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5v
+          - generic [ref=e284] [cursor=pointer]:
+            - generic [ref=e285]:
+              - heading "Dr John Teaches New Orleans Piano 1 hour" [level=3] [ref=e287]:
+                - link "Dr John Teaches New Orleans Piano 1 hour" [ref=e288]:
+                  - /url: /watch?v=BQAuykvykuU&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5v
+                  - text: Dr John Teaches New Orleans Piano
+              - generic [ref=e291]:
+                - generic [ref=e292]: 140K views
+                - generic [ref=e293]: •4 years ago
+            - generic [ref=e294]:
+              - link "Go to channel Music Discipline" [ref=e295]:
+                - /url: /@musicdiscipline4645
+              - link "Music Discipline" [ref=e300]:
+                - /url: /@musicdiscipline4645
+            - generic [ref=e301]:
+              - text: Subscribe For More Videos.
+              - tooltip "tooltip"
+        - generic [ref=e303]:
+          - link [ref=e305] [cursor=pointer]:
+            - /url: /watch?v=V8MmDr838E8&list=RDV8MmDr838E8&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+          - generic [ref=e307] [cursor=pointer]:
+            - generic [ref=e308]:
+              - heading "Dr John - The Last Waltz - Such A Night - LIVE 1976 4 minutes, 2 seconds" [level=3] [ref=e310]:
+                - link "Dr John - The Last Waltz - Such A Night - LIVE 1976 4 minutes, 2 seconds" [ref=e311]:
+                  - /url: /watch?v=V8MmDr838E8&list=RDV8MmDr838E8&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                  - text: Dr John - The Last Waltz - Such A Night - LIVE 1976
+              - generic [ref=e314]:
+                - generic [ref=e315]: 280K views
+                - generic [ref=e316]: •8 years ago
+            - generic [ref=e317]:
+              - link "Go to channel Blues Piano Sheets" [ref=e318]:
+                - /url: /@BluesPianoSheets
+              - link "Blues Piano Sheets" [ref=e324]:
+                - /url: /@BluesPianoSheets
+            - generic [ref=e325]:
+              - generic [ref=e326]: Dr John's most loved live performance. "Such A Night" at The Last Waltz Thanksgiving Day concert November 25th 1976 San ...
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e329]:
+              - generic [ref=e330]: CC
+        - generic [ref=e332]:
+          - link [ref=e334] [cursor=pointer]:
+            - /url: /watch?v=EFe3Gf1FhXk&list=RDEFe3Gf1FhXk&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB0gcJCdkKAYcqIYzv
+          - generic [ref=e336] [cursor=pointer]:
+            - generic [ref=e337]:
+              - 'heading "DR. JOHN : Solo Piano Live 1988 58 minutes" [level=3] [ref=e339]':
+                - 'link "DR. JOHN : Solo Piano Live 1988 58 minutes" [ref=e340]':
+                  - /url: /watch?v=EFe3Gf1FhXk&list=RDEFe3Gf1FhXk&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB0gcJCdkKAYcqIYzv
+                  - text: "DR. JOHN : Solo Piano Live 1988"
+              - generic [ref=e343]:
+                - generic [ref=e344]: 23K views
+                - generic [ref=e345]: •1 year ago
+            - generic [ref=e346]:
+              - link "Go to channel YEBISU_VIDEO" [ref=e347]:
+                - /url: /@YEBISU_VIDEO
+              - link "YEBISU_VIDEO" [ref=e352]:
+                - /url: /@YEBISU_VIDEO
+            - generic [ref=e353]:
+              - text: 00:00 Mac's Boogie 03:53 Stack-a-Lee 08:43 Iko Iko 14:35 Georgia On My Mind 19:15 Right Place Wrong Time 23:32 Sick and ...
+              - tooltip "tooltip"
+        - generic [ref=e355]:
+          - link [ref=e357] [cursor=pointer]:
+            - /url: /watch?v=hHSAwLfMZ9Y&list=RDhHSAwLfMZ9Y&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+          - generic [ref=e359] [cursor=pointer]:
+            - generic [ref=e360]:
+              - heading "Dr. John - Full Concert - 08/13/06 - Newport Jazz Festival (OFFICIAL) 52 minutes" [level=3] [ref=e362]:
+                - link "Dr. John - Full Concert - 08/13/06 - Newport Jazz Festival (OFFICIAL) 52 minutes" [ref=e363]:
+                  - /url: /watch?v=hHSAwLfMZ9Y&list=RDhHSAwLfMZ9Y&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                  - text: Dr. John - Full Concert - 08/13/06 - Newport Jazz Festival (OFFICIAL)
+              - generic [ref=e366]:
+                - generic [ref=e367]: 289K views
+                - generic [ref=e368]: •11 years ago
+            - generic [ref=e369]:
+              - link "Go to channel Wolfgang's Funk & Reggae" [ref=e370]:
+                - /url: /@Wolfgangsfunkandreggae
+              - link "Wolfgang's Funk & Reggae" [ref=e375]:
+                - /url: /@Wolfgangsfunkandreggae
+            - generic [ref=e376]:
+              - generic [ref=e377]: "Dr. John - Full Concert Recorded Live: 8/13/2006 - Newport Jazz Festival (Newport, RI) More Dr. John at Music Vault: ..."
+              - tooltip "tooltip"
+            - generic [ref=e380]:
+              - generic [ref=e381]:
+                - generic [ref=e385]: 9 chapters
+                - button "Wild Honey | Come Rain Or Come Shine | It Don't Mean A Thing | Blues In The Night | Makin' Whoopee | St. James Infirmary | Dream (When You're Feeling Blue) | Right Place Wrong Time | Goin' Back To New Orleans"
+              - button "More" [ref=e390]
+        - generic [ref=e397]:
+          - link [ref=e399] [cursor=pointer]:
+            - /url: /watch?v=QO53Xu6TZBg&list=RDQO53Xu6TZBg&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+          - generic [ref=e401] [cursor=pointer]:
+            - generic [ref=e402]:
+              - heading "Dr John's Best Ever version of \"Such a Night\" piano blues 8 minutes, 6 seconds" [level=3] [ref=e404]:
+                - link "Dr John's Best Ever version of \"Such a Night\" piano blues 8 minutes, 6 seconds" [ref=e405]:
+                  - /url: /watch?v=QO53Xu6TZBg&list=RDQO53Xu6TZBg&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                  - text: Dr John's Best Ever version of "Such a Night" piano blues
+              - generic [ref=e408]:
+                - generic [ref=e409]: 1.6M views
+                - generic [ref=e410]: •10 years ago
+            - generic [ref=e411]:
+              - link "Go to channel Blues Piano Sheets" [ref=e412]:
+                - /url: /@BluesPianoSheets
+              - link "Blues Piano Sheets" [ref=e417]:
+                - /url: /@BluesPianoSheets
+            - generic [ref=e418]:
+              - generic [ref=e419]: "\"Such A Night\" Dr John's best known, most recorded song. I've listened to a dozen different versions of this great piano blues and ..."
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e422]:
+              - generic [ref=e423]: CC
+        - generic [ref=e425]:
+          - link [ref=e427] [cursor=pointer]:
+            - /url: /watch?v=8KRcyduODa8&list=RD8KRcyduODa8&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+          - generic [ref=e429] [cursor=pointer]:
+            - generic [ref=e430]:
+              - heading "Dr. John, \"When the Saints Go Marching In\" 3 minutes, 12 seconds" [level=3] [ref=e432]:
+                - link "Dr. John, \"When the Saints Go Marching In\" 3 minutes, 12 seconds" [ref=e433]:
+                  - /url: /watch?v=8KRcyduODa8&list=RD8KRcyduODa8&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                  - text: Dr. John, "When the Saints Go Marching In"
+              - generic [ref=e436]:
+                - generic [ref=e437]: 566K views
+                - generic [ref=e438]: •16 years ago
+            - generic [ref=e439]:
+              - link "Go to channel whatsmylogin" [ref=e440]:
+                - /url: /@whatsmylogin
+              - link "whatsmylogin" [ref=e445]:
+                - /url: /@whatsmylogin
+            - generic [ref=e446]:
+              - generic [ref=e447]: The good doctor grooves a lot here, and plays a beautiful solo. He said that this is how they played this in New Orleans Spiritual ...
+              - tooltip "tooltip"
+        - generic [ref=e448]:
+          - generic [ref=e451]:
+            - img [ref=e453]
+            - heading "Shorts" [level=2] [ref=e456]
+          - generic [ref=e457]:
+            - generic [ref=e458]:
+              - generic [ref=e461]:
+                - link [ref=e462] [cursor=pointer]:
+                  - /url: /shorts/Rj_T-8jiKDY
+                - generic [ref=e466] [cursor=pointer]:
+                  - link "Dr. John Piano Lick 🎹" [ref=e467]:
+                    - /url: /shorts/Rj_T-8jiKDY
+                  - generic [ref=e468]: 12K views
+                - button "More actions" [ref=e470] [cursor=pointer]
+              - generic [ref=e478]:
+                - link [ref=e479] [cursor=pointer]:
+                  - /url: /shorts/MLV9apvQWlE
+                - generic [ref=e483] [cursor=pointer]:
+                  - 'link "My dear friend Dr. John and I playing together in New York City on Night Music in 1988 #joolsholland" [ref=e484]':
+                    - /url: /shorts/MLV9apvQWlE
+                  - generic [ref=e485]: 4.9K views
+                - button "More actions" [ref=e487] [cursor=pointer]
+            - generic [ref=e493]:
+              - generic [ref=e496]:
+                - link [ref=e497] [cursor=pointer]:
+                  - /url: /shorts/iaTrUe4xJas
+                - generic [ref=e501] [cursor=pointer]:
+                  - link "Dr. John - Such a Night (Acousticsamples VTines Mk 1 Demo)" [ref=e502]:
+                    - /url: /shorts/iaTrUe4xJas
+                  - generic [ref=e503]: 5K views
+                - button "More actions" [ref=e505] [cursor=pointer]
+              - generic [ref=e513]:
+                - link [ref=e514] [cursor=pointer]:
+                  - /url: /shorts/SW3Y_X-Gxcg
+                - generic [ref=e518] [cursor=pointer]:
+                  - link "Dr John blues piano" [ref=e519]:
+                    - /url: /shorts/SW3Y_X-Gxcg
+                  - generic [ref=e520]: 1.1K views
+                - button "More actions" [ref=e522] [cursor=pointer]
+          - button "Show more" [ref=e531] [cursor=pointer]:
+            - generic [ref=e532]: Show more
+        - generic [ref=e539]:
+          - link [ref=e541] [cursor=pointer]:
+            - /url: /watch?v=dgklKOkT_P0&list=RDdgklKOkT_P0&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+          - generic [ref=e543] [cursor=pointer]:
+            - generic [ref=e544]:
+              - heading "Dr. John - Stack A Lee Montreux 1986 (Official Video) 4 minutes, 12 seconds" [level=3] [ref=e546]:
+                - link "Dr. John - Stack A Lee Montreux 1986 (Official Video) 4 minutes, 12 seconds" [ref=e547]:
+                  - /url: /watch?v=dgklKOkT_P0&list=RDdgklKOkT_P0&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                  - text: Dr. John - Stack A Lee Montreux 1986 (Official Video)
+              - generic [ref=e550]:
+                - generic [ref=e551]: 2.2K views
+                - generic [ref=e552]: •2 years ago
+            - generic [ref=e553]:
+              - link "Go to channel Dr. John Official" [ref=e554]:
+                - /url: /@DrJohnOfficial
+              - link "Dr. John Official" [ref=e559]:
+                - /url: /@DrJohnOfficial
+            - generic [ref=e560]:
+              - generic [ref=e561]: Six time Grammy Award winner and Rock and Roll Hall of Fame inductee, Dr. John performed at Montreux 10 times between ...
+              - tooltip "tooltip"
+        - generic [ref=e563]:
+          - link [ref=e565] [cursor=pointer]:
+            - /url: /watch?v=dxK6dTcaJTc&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5v
+          - generic [ref=e567] [cursor=pointer]:
+            - generic [ref=e568]:
+              - 'heading "Night Music: Jools Holland & Doctor John as the \"Boogie Woogie Twins\" 3 minutes, 36 seconds" [level=3] [ref=e570]':
+                - 'link "Night Music: Jools Holland & Doctor John as the \"Boogie Woogie Twins\" 3 minutes, 36 seconds" [ref=e571]':
+                  - /url: /watch?v=dxK6dTcaJTc&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5v
+                  - text: "Night Music: Jools Holland & Doctor John as the \"Boogie Woogie Twins\""
+              - generic [ref=e574]:
+                - generic [ref=e575]: 4.7M views
+                - generic [ref=e576]: •13 years ago
+            - generic [ref=e577]:
+              - link "Collaboration channels" [ref=e579]
+              - generic [ref=e598]: Archivo Humano and Archivo's Music
+            - generic [ref=e599]:
+              - text: "Taken from Night Music #104. A very enjoyable moment. Con Subtítulos en Español. #NightMusic #SundayNight."
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e602]:
+              - generic [ref=e603]: CC
+        - generic [ref=e605] [cursor=pointer]:
+          - link [ref=e606]:
+            - /url: /watch?v=V8MmDr838E8&list=PLHe9i2gQyfDogMGG-4bmT8Fi2LB8yn0i-
+            - generic [ref=e618]: 13 videos
+          - generic [ref=e621]:
+            - heading "The Best of Dr John New Orleans Blues Piano Legend" [level=3] [ref=e622]:
+              - link "The Best of Dr John New Orleans Blues Piano Legend" [ref=e623]:
+                - /url: /watch?v=V8MmDr838E8&list=PLHe9i2gQyfDogMGG-4bmT8Fi2LB8yn0i-
+            - generic [ref=e625]:
+              - generic [ref=e626]:
+                - link "Blues Piano Sheets" [ref=e629]:
+                  - /url: /@BluesPianoSheets
+                - generic [ref=e630]: •
+                - link "Playlist" [ref=e633]:
+                  - /url: /@BluesPianoSheets
+              - link "Dr John - The Last Waltz - Such A Night - LIVE 1976 · 4:02" [ref=e637]:
+                - /url: /watch?v=V8MmDr838E8&list=PLHe9i2gQyfDogMGG-4bmT8Fi2LB8yn0i-
+              - link "Dr John's best blues piano solo \"There Must Be A Better World Somewhere\" · 6:47" [ref=e640]:
+                - /url: /watch?v=KevWIIfpQ64&list=PLHe9i2gQyfDogMGG-4bmT8Fi2LB8yn0i-
+              - link "View full playlist" [ref=e645]:
+                - /url: /playlist?list=PLHe9i2gQyfDogMGG-4bmT8Fi2LB8yn0i-
+        - generic [ref=e647]:
+          - heading "People also watched" [level=2] [ref=e650]:
+            - generic [ref=e652]: People also watched
+          - generic [ref=e654]:
+            - generic [ref=e655]:
+              - generic [ref=e657]:
+                - link [ref=e659] [cursor=pointer]:
+                  - /url: /watch?v=eLqUT3Rb3KA&list=RDeLqUT3Rb3KA&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                - generic [ref=e661] [cursor=pointer]:
+                  - generic [ref=e662]:
+                    - heading "Deacon John's Jump Blues Concert 1 hour" [level=3] [ref=e664]:
+                      - link "Deacon John's Jump Blues Concert 1 hour" [ref=e665]:
+                        - /url: /watch?v=eLqUT3Rb3KA&list=RDeLqUT3Rb3KA&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                        - text: Deacon John's Jump Blues Concert
+                    - generic [ref=e668]:
+                      - generic [ref=e669]: 5.8K views
+                      - generic [ref=e670]: •3 years ago
+                  - generic [ref=e671]:
+                    - link "Go to channel Cyril Vetter" [ref=e672]:
+                      - /url: /@cevetter
+                    - link "Cyril Vetter" [ref=e677]:
+                      - /url: /@cevetter
+                  - generic [ref=e678]:
+                    - generic [ref=e679]: Recorded at the historic Orpheum Theater in New Orleans, the Deacon John's Jump Blues concert features some of the seminal ...
+                    - tooltip "tooltip"
+                  - img "4K" [ref=e682]:
+                    - generic [ref=e683]: 4K
+              - generic [ref=e685]:
+                - link [ref=e687] [cursor=pointer]:
+                  - /url: /watch?v=mEMerVeZY54&list=RDmEMerVeZY54&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                - generic [ref=e689] [cursor=pointer]:
+                  - generic [ref=e690]:
+                    - heading "Dr. John - North Sea Jazz Compilation 1 hour, 1 minute" [level=3] [ref=e692]:
+                      - link "Dr. John - North Sea Jazz Compilation 1 hour, 1 minute" [ref=e693]:
+                        - /url: /watch?v=mEMerVeZY54&list=RDmEMerVeZY54&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                        - text: Dr. John - North Sea Jazz Compilation
+                    - generic [ref=e696]:
+                      - generic [ref=e697]: 16K views
+                      - generic [ref=e698]: •6 years ago
+                  - generic [ref=e699]:
+                    - link "Go to channel TheHagueYears" [ref=e700]:
+                      - /url: /@thehagueyears
+                    - link "TheHagueYears" [ref=e705]:
+                      - /url: /@thehagueyears
+                  - generic [ref=e706]:
+                    - generic [ref=e707]: "In memory of The Night Tripper. Live at the North Sea Jazz Festival: 1995 + 2000 in The Hague, 2014 in Rotterdam. From Dutch ..."
+                    - tooltip "tooltip"
+              - generic [ref=e709]:
+                - link [ref=e711] [cursor=pointer]:
+                  - /url: /watch?v=1eFqrUfLHeU&list=RD1eFqrUfLHeU&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                - generic [ref=e713] [cursor=pointer]:
+                  - generic [ref=e714]:
+                    - heading "Jon Cleary and Dumpstaphunk, Dr. John's \"Such a Night\" II TMTTR Live 7 minutes, 35 seconds" [level=3] [ref=e716]:
+                      - link "Jon Cleary and Dumpstaphunk, Dr. John's \"Such a Night\" II TMTTR Live 7 minutes, 35 seconds" [ref=e717]:
+                        - /url: /watch?v=1eFqrUfLHeU&list=RD1eFqrUfLHeU&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                        - text: Jon Cleary and Dumpstaphunk, Dr. John's "Such a Night" II TMTTR Live
+                    - generic [ref=e720]:
+                      - generic [ref=e721]: 37K views
+                      - generic [ref=e722]: •4 years ago
+                  - generic [ref=e723]:
+                    - link "Go to channel TAKE ME TO THE RIVER" [ref=e724]:
+                      - /url: /@TakeMetotheRiver
+                    - link "TAKE ME TO THE RIVER" [ref=e729]:
+                      - /url: /@TakeMetotheRiver
+                  - generic [ref=e730]:
+                    - generic [ref=e731]: Legendary New Orleans Piano master Jon Cleary joins Dumpstaphunk in a performance of Dr. John's "What a Night".
+                    - tooltip "tooltip"
+                  - img "4K" [ref=e734]:
+                    - generic [ref=e735]: 4K
+              - generic [ref=e737]:
+                - link [ref=e739] [cursor=pointer]:
+                  - /url: /watch?v=asQ6x7aLSvI&list=RDasQ6x7aLSvI&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                - generic [ref=e741] [cursor=pointer]:
+                  - generic [ref=e742]:
+                    - heading "Van Morrison w/ Dr John, Mick Ronson, Hilversum NL, Wonderland, June 22, 1977, Full Show, 4k 1 hour, 6 minutes" [level=3] [ref=e744]:
+                      - link "Van Morrison w/ Dr John, Mick Ronson, Hilversum NL, Wonderland, June 22, 1977, Full Show, 4k 1 hour, 6 minutes" [ref=e745]:
+                        - /url: /watch?v=asQ6x7aLSvI&list=RDasQ6x7aLSvI&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                        - text: Van Morrison w/ Dr John, Mick Ronson, Hilversum NL, Wonderland, June 22, 1977, Full Show, 4k
+                    - generic [ref=e748]:
+                      - generic [ref=e749]: 3.8K views
+                      - generic [ref=e750]: •1 year ago
+                  - generic [ref=e751]:
+                    - link "Go to channel The Unfinished Self" [ref=e752]:
+                      - /url: /@The_Unfinished_Self
+                    - link "The Unfinished Self" [ref=e757]:
+                      - /url: /@The_Unfinished_Self
+                  - generic [ref=e758]:
+                    - text: The mid 70s were Morrison's blinding peak. In support of his new record, "A Period of Transition" -- following a 3 year hiatus -- the ...
+                    - tooltip "tooltip"
+                  - img "4K" [ref=e761]:
+                    - generic [ref=e762]: 4K
+                  - generic [ref=e765]:
+                    - generic [ref=e766]:
+                      - generic [ref=e770]: 13 moments
+                      - button "2. Cold Wind In August | 3. Joyous Sound | 4. You Gotta Make It Through The World | 5. I Just Wanna Make Love To You | 6. Shakin' All Over | 7. The Eternal Kansas City | 8. Cold Wind In August | 9. Hallelujah I Just Love Her So | 10. Nobody's Fault But Mine | 11. Fever | 12. Foggy Mountain Top | 13. I'll Go Crazy | 14. Baby Please Don't Go"
+                    - button "More" [ref=e775]
+            - generic "+6 more" [ref=e782] [cursor=pointer]
+        - generic [ref=e784]:
+          - link [ref=e786] [cursor=pointer]:
+            - /url: /watch?v=MQzM8O4eLi0&list=RDMQzM8O4eLi0&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+          - generic [ref=e788] [cursor=pointer]:
+            - generic [ref=e789]:
+              - heading "Dr John - Didn't He Ramble - Closer Walk With Thee 6 minutes, 34 seconds" [level=3] [ref=e791]:
+                - link "Dr John - Didn't He Ramble - Closer Walk With Thee 6 minutes, 34 seconds" [ref=e792]:
+                  - /url: /watch?v=MQzM8O4eLi0&list=RDMQzM8O4eLi0&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                  - text: Dr John - Didn't He Ramble - Closer Walk With Thee
+              - generic [ref=e795]:
+                - generic [ref=e796]: 74K views
+                - generic [ref=e797]: •8 years ago
+            - generic [ref=e798]:
+              - link "Go to channel Blues Piano Sheets" [ref=e799]:
+                - /url: /@BluesPianoSheets
+              - link "Blues Piano Sheets" [ref=e804]:
+                - /url: /@BluesPianoSheets
+            - generic [ref=e805]:
+              - generic [ref=e806]: Another one of Dr John's most popular tunes. Medley, "Didn't He Ramble - Closer Walk With Thee". https://bluespianosheets.com/
+              - tooltip "tooltip"
+        - generic [ref=e808]:
+          - link [ref=e810] [cursor=pointer]:
+            - /url: /watch?v=T6awYoJv6jY&list=RDT6awYoJv6jY&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+          - generic [ref=e812] [cursor=pointer]:
+            - generic [ref=e813]:
+              - heading "Dr John live at Montreux 1986 - Mac's Boogie 3 minutes, 23 seconds" [level=3] [ref=e815]:
+                - link "Dr John live at Montreux 1986 - Mac's Boogie 3 minutes, 23 seconds" [ref=e816]:
+                  - /url: /watch?v=T6awYoJv6jY&list=RDT6awYoJv6jY&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                  - text: Dr John live at Montreux 1986 - Mac's Boogie
+              - generic [ref=e819]:
+                - generic [ref=e820]: 243K views
+                - generic [ref=e821]: •18 years ago
+            - generic [ref=e822]:
+              - link "Go to channel World Traveller" [ref=e823]:
+                - /url: /@worldtraveller8604
+              - link "World Traveller" [ref=e828]:
+                - /url: /@worldtraveller8604
+            - generic [ref=e829]:
+              - generic [ref=e830]: "Surely the finest three minutes of blues piano ever played! June 2019: Dr John sadly died on June 6th. I uploaded this video 12 ..."
+              - tooltip "tooltip"
+        - generic [ref=e831]:
+          - generic [ref=e834]:
+            - img [ref=e836]
+            - heading "Shorts" [level=2] [ref=e839]
+          - generic [ref=e840]:
+            - generic [ref=e841]:
+              - generic [ref=e844]:
+                - link [ref=e845] [cursor=pointer]:
+                  - /url: /shorts/MuvyXyrM7bA
+                - generic [ref=e849] [cursor=pointer]:
+                  - 'link "Dr. John Inspired Blues Lick #2 on Piano in F Major" [ref=e850]':
+                    - /url: /shorts/MuvyXyrM7bA
+                  - generic [ref=e851]: 1.1K views
+                - button "More actions" [ref=e853] [cursor=pointer]
+              - generic [ref=e861]:
+                - link [ref=e862] [cursor=pointer]:
+                  - /url: /shorts/nrctZS-F5QA
+                - generic [ref=e866] [cursor=pointer]:
+                  - 'link "Dr. John: New Orleans Blues Legend In 60 Seconds." [ref=e867]':
+                    - /url: /shorts/nrctZS-F5QA
+                  - generic [ref=e868]: 4.1K views
+                - button "More actions" [ref=e870] [cursor=pointer]
+            - generic [ref=e876]:
+              - generic [ref=e879]:
+                - link [ref=e880] [cursor=pointer]:
+                  - /url: /shorts/wzhbGl4AzHQ
+                - generic [ref=e884] [cursor=pointer]:
+                  - link "Dr.John Live" [ref=e885]:
+                    - /url: /shorts/wzhbGl4AzHQ
+                  - generic [ref=e886]: 114 views
+                - button "More actions" [ref=e888] [cursor=pointer]
+              - generic [ref=e896]:
+                - link [ref=e897] [cursor=pointer]:
+                  - /url: /shorts/Ys9477oBKC4
+                - generic [ref=e901] [cursor=pointer]:
+                  - link "Signature Dr. John Blues Lick" [ref=e902]:
+                    - /url: /shorts/Ys9477oBKC4
+                  - generic [ref=e903]: 15K views
+                - button "More actions" [ref=e905] [cursor=pointer]
+          - button "Show more" [ref=e914] [cursor=pointer]:
+            - generic [ref=e915]: Show more
+        - generic [ref=e922]:
+          - link [ref=e924] [cursor=pointer]:
+            - /url: /watch?v=RHlmIQzIYvY&list=RDRHlmIQzIYvY&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+          - generic [ref=e926] [cursor=pointer]:
+            - generic [ref=e927]:
+              - heading "Dr John \"Honey Dripper\". Dr John Plays Mac Rebennack vol. 1 3 minutes, 39 seconds" [level=3] [ref=e929]:
+                - link "Dr John \"Honey Dripper\". Dr John Plays Mac Rebennack vol. 1 3 minutes, 39 seconds" [ref=e930]:
+                  - /url: /watch?v=RHlmIQzIYvY&list=RDRHlmIQzIYvY&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                  - text: Dr John "Honey Dripper". Dr John Plays Mac Rebennack vol. 1
+              - generic [ref=e933]:
+                - generic [ref=e934]: 45K views
+                - generic [ref=e935]: •8 years ago
+            - generic [ref=e936]:
+              - link "Go to channel Blues Piano Sheets" [ref=e937]:
+                - /url: /@BluesPianoSheets
+              - link "Blues Piano Sheets" [ref=e942]:
+                - /url: /@BluesPianoSheets
+            - generic [ref=e943]:
+              - generic [ref=e944]: Piano Blues. Here's another great tune from Dr John's Album "Dr John Plays Mac Rebennack" volume 1. If this doesn't get your ...
+              - tooltip "tooltip"
+        - generic [ref=e946]:
+          - link [ref=e948] [cursor=pointer]:
+            - /url: /watch?v=qZgOlHFVkec&list=RDqZgOlHFVkec&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+          - generic [ref=e950] [cursor=pointer]:
+            - generic [ref=e951]:
+              - heading "DR.JOHN live at an Italian TV music program (1988) 38 minutes" [level=3] [ref=e953]:
+                - link "DR.JOHN live at an Italian TV music program (1988) 38 minutes" [ref=e954]:
+                  - /url: /watch?v=qZgOlHFVkec&list=RDqZgOlHFVkec&start_radio=1&pp=ygUkRHIgSm9obiBsaXZlIHBlcmZvcm1hbmNlIGJsdWVzIHBpYW5voAcB
+                  - text: DR.JOHN live at an Italian TV music program (1988)
+              - generic [ref=e957]:
+                - generic [ref=e958]: 123K views
+                - generic [ref=e959]: •5 years ago
+            - generic [ref=e960]:
+              - link "Go to channel Eric Ranzoni" [ref=e961]:
+                - /url: /@eric669
+              - link "Eric Ranzoni" [ref=e966]:
+                - /url: /@eric669
+            - generic [ref=e967]:
+              - generic [ref=e968]: I've had these marvelous performances by the late, great "Night Tripper" on an old VHS tape for over three decades. I found it ...
+              - tooltip "tooltip"
+            - generic [ref=e971]:
+              - generic [ref=e972]:
+                - generic [ref=e976]: 9 chapters
+                - button "SOMETHING YOU GOT | SUCH A NIGHT | RIGHT PLACE WRONG TIME | DANCE THE NIGHT AWAY WITH YOU | TIPTINA | BON TON ROULET | WILD HONEY | GEORGIA ON MY MIND | HUEY 'PIANO' SMITH MEDLEY"
+              - button "More" [ref=e981]

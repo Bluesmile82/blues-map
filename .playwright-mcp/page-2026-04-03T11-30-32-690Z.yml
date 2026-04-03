@@ -1,0 +1,647 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+            - tab "Playlists" [ref=e110] [cursor=pointer]:
+              - generic [ref=e112]: Playlists
+            - tab "Under 4 min" [ref=e119] [cursor=pointer]:
+              - generic [ref=e121]: Under 4 min
+            - tab "4 - 20 min" [ref=e128] [cursor=pointer]:
+              - generic [ref=e130]: 4 - 20 min
+            - tab "Over 20 min" [ref=e137] [cursor=pointer]:
+              - generic [ref=e139]: Over 20 min
+          - button "Next" [ref=e147] [cursor=pointer]
+        - link "About these results" [ref=e156] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e157]: About these results
+        - generic [ref=e164]:
+          - button "Search filters" [ref=e166] [cursor=pointer]:
+            - generic [ref=e167]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e178]:
+        - generic [ref=e180]:
+          - link [ref=e182] [cursor=pointer]:
+            - /url: /watch?v=mFnfkLtFgSA&list=RDmFnfkLtFgSA&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+          - generic [ref=e184] [cursor=pointer]:
+            - generic [ref=e185]:
+              - heading "Lou Rawls / Stormy Monday (1989) 7 minutes, 55 seconds" [level=3] [ref=e187]:
+                - link "Lou Rawls / Stormy Monday (1989) 7 minutes, 55 seconds" [ref=e188]:
+                  - /url: /watch?v=mFnfkLtFgSA&list=RDmFnfkLtFgSA&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                  - text: Lou Rawls / Stormy Monday (1989)
+              - generic [ref=e191]:
+                - generic [ref=e192]: 416K views
+                - generic [ref=e193]: •14 years ago
+            - generic [ref=e194]:
+              - link "Go to channel paris0820" [ref=e195]:
+                - /url: /@paris0820
+              - link "paris0820" [ref=e201]:
+                - /url: /@paris0820
+            - generic [ref=e202]:
+              - generic [ref=e203]: "Lou Rawls : vo Stanley Turrentine : ts Les McCann : p Curtis Robertson : b Curtis Alan Sharrod Jr. : ds Mt. Fuji Jazz Festival with ..."
+              - tooltip "tooltip"
+        - generic [ref=e205] [cursor=pointer]:
+          - link [ref=e206]:
+            - /url: /watch?v=PFcmcH1DN2k&list=PL7MUP7A1pENm879JRLEMUEMTilMRoL25r
+            - generic [ref=e218]: 10 videos
+          - generic [ref=e221]:
+            - heading "Lou Rawls LIve" [level=3] [ref=e222]:
+              - link "Lou Rawls LIve" [ref=e223]:
+                - /url: /watch?v=PFcmcH1DN2k&list=PL7MUP7A1pENm879JRLEMUEMTilMRoL25r
+            - generic [ref=e225]:
+              - generic [ref=e226]:
+                - link "Ellie Farley" [ref=e229]:
+                  - /url: /@elliefarley541
+                - generic [ref=e230]: •
+                - link "Playlist" [ref=e233]:
+                  - /url: /@elliefarley541
+              - link "Lou Rawls St James Infirmary · 4:31" [ref=e237]:
+                - /url: /watch?v=PFcmcH1DN2k&list=PL7MUP7A1pENm879JRLEMUEMTilMRoL25r&pp=0gcJCRwBOCosWNin
+              - link "Lou Rawls - The Shadow Of Your Smile · 4:22" [ref=e240]:
+                - /url: /watch?v=_Il4gNHiaa0&list=PL7MUP7A1pENm879JRLEMUEMTilMRoL25r
+              - link "View full playlist" [ref=e245]:
+                - /url: /playlist?list=PL7MUP7A1pENm879JRLEMUEMTilMRoL25r
+        - generic [ref=e247]:
+          - link [ref=e249] [cursor=pointer]:
+            - /url: /watch?v=XrjYelJUl1s&list=RDXrjYelJUl1s&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+          - generic [ref=e251] [cursor=pointer]:
+            - generic [ref=e252]:
+              - heading "Lou Rawls - Live . In Concert 1 hour, 3 minutes" [level=3] [ref=e254]:
+                - link "Lou Rawls - Live . In Concert 1 hour, 3 minutes" [ref=e255]:
+                  - /url: /watch?v=XrjYelJUl1s&list=RDXrjYelJUl1s&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                  - text: Lou Rawls - Live . In Concert
+              - generic [ref=e258]:
+                - generic [ref=e259]: 425K views
+                - generic [ref=e260]: •11 years ago
+            - generic [ref=e261]:
+              - link "Go to channel James Jacob" [ref=e262]:
+                - /url: /@jamesjacob6166
+              - link "James Jacob" [ref=e268]:
+                - /url: /@jamesjacob6166
+            - generic [ref=e269]:
+              - generic [ref=e270]: Lou Rawls - Live . In Concert Recorded in Black Entertainment's Television Studio II in Washington, D.C. 01. Groovy People 02.
+              - tooltip "tooltip"
+        - generic [ref=e272]:
+          - link [ref=e274] [cursor=pointer]:
+            - /url: /watch?v=-_lvGeYNSnQ&list=RD-_lvGeYNSnQ&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+          - generic [ref=e276] [cursor=pointer]:
+            - generic [ref=e277]:
+              - heading "Lou Rawls live at the North Sea Jazz Festival • 16-07-1989 • World of Jazz 1 hour, 7 minutes" [level=3] [ref=e279]:
+                - link "Lou Rawls live at the North Sea Jazz Festival • 16-07-1989 • World of Jazz 1 hour, 7 minutes" [ref=e280]:
+                  - /url: /watch?v=-_lvGeYNSnQ&list=RD-_lvGeYNSnQ&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                  - text: Lou Rawls live at the North Sea Jazz Festival • 16-07-1989 • World of Jazz
+              - generic [ref=e283]:
+                - generic [ref=e284]: 28K views
+                - generic [ref=e285]: •8 years ago
+            - generic [ref=e286]:
+              - link "Go to channel World of Jazz" [ref=e287]:
+                - /url: /@WorldofJazz
+              - generic [ref=e289]:
+                - link "World of Jazz" [ref=e293]:
+                  - /url: /@WorldofJazz
+                - img "Verified" [ref=e296]
+            - generic [ref=e298]:
+              - generic [ref=e299]: This concert was Lou Rawls' first live performance in the Netherlands. It took place at the North Sea Jazz Festival 1989 at the ...
+              - tooltip "tooltip"
+        - generic [ref=e301]:
+          - link [ref=e303] [cursor=pointer]:
+            - /url: /watch?v=elTxKv1H0po&list=RDelTxKv1H0po&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+          - generic [ref=e305] [cursor=pointer]:
+            - generic [ref=e306]:
+              - heading "Lou Rawls Live \"Groove People\" 3 minutes" [level=3] [ref=e308]:
+                - link "Lou Rawls Live \"Groove People\" 3 minutes" [ref=e309]:
+                  - /url: /watch?v=elTxKv1H0po&list=RDelTxKv1H0po&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                  - text: Lou Rawls Live "Groove People"
+              - generic [ref=e312]:
+                - generic [ref=e313]: 770 views
+                - generic [ref=e314]: •4 years ago
+            - generic [ref=e315]:
+              - link "Go to channel LLF MUSIC TV" [ref=e316]:
+                - /url: /@llfmusictv
+              - link "LLF MUSIC TV" [ref=e322]:
+                - /url: /@llfmusictv
+            - generic [ref=e323]:
+              - text: "Gracias por suscribirte al canal. Si querés contribuir con mis ediciónes: https://www.paypal.com/paypalme/laurinhalf ** ** Este ..."
+              - tooltip "tooltip"
+        - generic [ref=e325]:
+          - link [ref=e327] [cursor=pointer]:
+            - /url: /watch?v=Yl228bZ6ZVs&list=RDYl228bZ6ZVs&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e329] [cursor=pointer]:
+            - generic [ref=e330]:
+              - heading "Lou Rawls - Full Concert [HD] | Live at North Sea Jazz Festival 1992 1 hour, 16 minutes" [level=3] [ref=e332]:
+                - link "Lou Rawls - Full Concert [HD] | Live at North Sea Jazz Festival 1992 1 hour, 16 minutes" [ref=e333]:
+                  - /url: /watch?v=Yl228bZ6ZVs&list=RDYl228bZ6ZVs&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: Lou Rawls - Full Concert [HD] | Live at North Sea Jazz Festival 1992
+              - generic [ref=e336]:
+                - generic [ref=e337]: 14K views
+                - generic [ref=e338]: •1 year ago
+            - generic [ref=e339]:
+              - link "Go to channel North Sea Jazz Archive" [ref=e340]:
+                - /url: /@NorthSeaJazzArchive
+              - link "North Sea Jazz Archive" [ref=e346]:
+                - /url: /@NorthSeaJazzArchive
+            - generic [ref=e347]:
+              - generic [ref=e348]: "THE LOU RAWLS SHOW '92 -Live at North Sea Jazz 1992 Location & date: SATURDAY 11 JULY 1992 • TUINPAVILJOEN ..."
+              - tooltip "tooltip"
+        - generic [ref=e350]:
+          - link [ref=e352] [cursor=pointer]:
+            - /url: /watch?v=G9td1rJo03Q&list=RDG9td1rJo03Q&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+          - generic [ref=e354] [cursor=pointer]:
+            - generic [ref=e355]:
+              - heading "Street Corner Hustler Blues/World Of Trouble (Live/Medley) 8 minutes, 7 seconds" [level=3] [ref=e357]:
+                - link "Street Corner Hustler Blues/World Of Trouble (Live/Medley) 8 minutes, 7 seconds" [ref=e358]:
+                  - /url: /watch?v=G9td1rJo03Q&list=RDG9td1rJo03Q&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                  - text: Street Corner Hustler Blues/World Of Trouble (Live/Medley)
+              - generic [ref=e362]: 217K views
+            - generic [ref=e363]:
+              - link "Go to channel Lou Rawls - Topic" [ref=e364]:
+                - /url: /channel/UCYHFm9qpYz6iLR-ok-ydshA
+              - generic [ref=e365]:
+                - link "Lou Rawls" [ref=e369]:
+                  - /url: /channel/UCYHFm9qpYz6iLR-ok-ydshA
+                - img "Official Artist Channel" [ref=e372]
+            - generic [ref=e374]:
+              - generic [ref=e375]: Provided to YouTube by Universal Music Group Street Corner Hustler Blues/World Of Trouble (Live/Medley) · Lou Rawls Live ...
+              - tooltip "tooltip"
+        - generic [ref=e377] [cursor=pointer]:
+          - link [ref=e378]:
+            - /url: /watch?v=S7CSTHsEJJ0&list=PLKLPE6Ph1xZoPamEZwsuqaI3SrorwZv4M
+            - generic [ref=e390]: 10 videos
+          - generic [ref=e393]:
+            - heading "Lou Rawls – Live! (1966) full album" [level=3] [ref=e394]:
+              - link "Lou Rawls – Live! (1966) full album" [ref=e395]:
+                - /url: /watch?v=S7CSTHsEJJ0&list=PLKLPE6Ph1xZoPamEZwsuqaI3SrorwZv4M
+            - generic [ref=e397]:
+              - generic [ref=e398]:
+                - link "吉田三郎" [ref=e401]:
+                  - /url: /@%E5%90%89%E7%94%B0%E4%B8%89%E9%83%8E-w7n
+                - generic [ref=e402]: •
+                - link "Playlist" [ref=e405]:
+                  - /url: /@%E5%90%89%E7%94%B0%E4%B8%89%E9%83%8E-w7n
+              - link "(They Call It) Stormy Monday (Live/Remastered) · 3:22" [ref=e409]:
+                - /url: /watch?v=S7CSTHsEJJ0&list=PLKLPE6Ph1xZoPamEZwsuqaI3SrorwZv4M
+              - link "I'd Rather Drink Muddy Water (Live) · 2:54" [ref=e412]:
+                - /url: /watch?v=y9erlyADPHQ&list=PLKLPE6Ph1xZoPamEZwsuqaI3SrorwZv4M
+              - link "View full playlist" [ref=e417]:
+                - /url: /playlist?list=PLKLPE6Ph1xZoPamEZwsuqaI3SrorwZv4M
+        - generic [ref=e419]:
+          - link [ref=e421] [cursor=pointer]:
+            - /url: /watch?v=PI3u1Fvx1Ww&list=RDPI3u1Fvx1Ww&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e423] [cursor=pointer]:
+            - generic [ref=e424]:
+              - heading "Lou Rawls - Tobacco Road - 8/18/1991 - Newport Jazz Festival (Official) 4 minutes, 27 seconds" [level=3] [ref=e426]:
+                - link "Lou Rawls - Tobacco Road - 8/18/1991 - Newport Jazz Festival (Official) 4 minutes, 27 seconds" [ref=e427]:
+                  - /url: /watch?v=PI3u1Fvx1Ww&list=RDPI3u1Fvx1Ww&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: Lou Rawls - Tobacco Road - 8/18/1991 - Newport Jazz Festival (Official)
+              - generic [ref=e430]:
+                - generic [ref=e431]: 129K views
+                - generic [ref=e432]: •11 years ago
+            - generic [ref=e433]:
+              - link "Go to channel Jazz on MV" [ref=e434]:
+                - /url: /@jazzmv
+              - link "Jazz on MV" [ref=e439]:
+                - /url: /@jazzmv
+            - generic [ref=e440]:
+              - generic [ref=e441]: "Lou Rawls - Tobacco Road Recorded Live: 8/18/1991 - Newport Jazz Festival - Newport, RI More Lou Rawls at Music Vault: ..."
+              - tooltip "tooltip"
+        - generic [ref=e442]:
+          - generic [ref=e445]:
+            - img [ref=e447]
+            - heading "Shorts" [level=2] [ref=e450]
+          - generic [ref=e451]:
+            - generic [ref=e452]:
+              - generic [ref=e455]:
+                - link [ref=e456] [cursor=pointer]:
+                  - /url: /shorts/XvfIAzds-cg
+                - generic [ref=e460] [cursor=pointer]:
+                  - link "♥️LOU RAWLS♥️🌟(Live)🌟\"Always\"🌟#lourawls#soul#music🌟" [ref=e461]:
+                    - /url: /shorts/XvfIAzds-cg
+                  - generic [ref=e462]: 1.1K views
+                - button "More actions" [ref=e464] [cursor=pointer]
+              - generic [ref=e472]:
+                - link [ref=e473] [cursor=pointer]:
+                  - /url: /shorts/RbymwiFBNoE
+                - generic [ref=e477] [cursor=pointer]:
+                  - link "🔥LOU RAWLS🔥(Live)🔥\"Oh Yeah\"🔥#lourawls#soulmusic🔥" [ref=e478]:
+                    - /url: /shorts/RbymwiFBNoE
+                  - generic [ref=e479]: 602 views
+                - button "More actions" [ref=e481] [cursor=pointer]
+            - generic [ref=e487]:
+              - generic [ref=e490]:
+                - link [ref=e491] [cursor=pointer]:
+                  - /url: /shorts/L7es-wGBhrs
+                - generic [ref=e495] [cursor=pointer]:
+                  - 'link "♥️LOU RAWLS♥️🌟(Live)🌟\"I Wonder Why\"🌟#LouRawls#soul #music🌟" [ref=e496]':
+                    - /url: /shorts/L7es-wGBhrs
+                  - generic [ref=e497]: 961 views
+                - button "More actions" [ref=e499] [cursor=pointer]
+              - generic [ref=e507]:
+                - link [ref=e508] [cursor=pointer]:
+                  - /url: /shorts/Zoyc1OJG8JQ
+                - generic [ref=e512] [cursor=pointer]:
+                  - link "❤️LOU RAWLS❤️🌟(Live)🌟\"Why\"🌟#lourawls#soul#music🌟" [ref=e513]:
+                    - /url: /shorts/Zoyc1OJG8JQ
+                  - generic [ref=e514]: 1.2K views
+                - button "More actions" [ref=e516] [cursor=pointer]
+          - button "Show more" [ref=e525] [cursor=pointer]:
+            - generic [ref=e526]: Show more
+        - generic [ref=e533]:
+          - link [ref=e535] [cursor=pointer]:
+            - /url: /watch?v=84xZM2LqSBM&list=RD84xZM2LqSBM&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+          - generic [ref=e537] [cursor=pointer]:
+            - generic [ref=e538]:
+              - heading "St. James Infirmary (Live/Remastered) 4 minutes, 35 seconds" [level=3] [ref=e540]:
+                - link "St. James Infirmary (Live/Remastered) 4 minutes, 35 seconds" [ref=e541]:
+                  - /url: /watch?v=84xZM2LqSBM&list=RD84xZM2LqSBM&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                  - text: St. James Infirmary (Live/Remastered)
+              - generic [ref=e545]: 76K views
+            - generic [ref=e546]:
+              - link "Go to channel Lou Rawls - Topic" [ref=e547]:
+                - /url: /channel/UCYHFm9qpYz6iLR-ok-ydshA
+              - generic [ref=e548]:
+                - link "Lou Rawls" [ref=e552]:
+                  - /url: /channel/UCYHFm9qpYz6iLR-ok-ydshA
+                - img "Official Artist Channel" [ref=e555]
+            - generic [ref=e557]:
+              - generic [ref=e558]: Provided to YouTube by Universal Music Group St. James Infirmary (Live/Remastered) · Lou Rawls Live ℗ 2005 Capitol Records ...
+              - tooltip "tooltip"
+        - generic [ref=e560]:
+          - link [ref=e562] [cursor=pointer]:
+            - /url: /watch?v=iEiiGfeuITw&list=RDiEiiGfeuITw&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+          - generic [ref=e564] [cursor=pointer]:
+            - generic [ref=e565]:
+              - heading "Lou Rawls - Full Concert - 08/18/91 - Newport Jazz Festival (OFFICIAL) 59 minutes" [level=3] [ref=e567]:
+                - link "Lou Rawls - Full Concert - 08/18/91 - Newport Jazz Festival (OFFICIAL) 59 minutes" [ref=e568]:
+                  - /url: /watch?v=iEiiGfeuITw&list=RDiEiiGfeuITw&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                  - text: Lou Rawls - Full Concert - 08/18/91 - Newport Jazz Festival (OFFICIAL)
+              - generic [ref=e571]:
+                - generic [ref=e572]: 80K views
+                - generic [ref=e573]: •11 years ago
+            - generic [ref=e574]:
+              - link "Go to channel Jazz on MV" [ref=e575]:
+                - /url: /@jazzmv
+              - link "Jazz on MV" [ref=e580]:
+                - /url: /@jazzmv
+            - generic [ref=e581]:
+              - generic [ref=e582]: "Lou Rawls - Full Concert Recorded Live: 8/18/1991 - Newport Jazz Festival (Newport, RI) More Lou Rawls at Music Vault: ..."
+              - tooltip "tooltip"
+            - generic [ref=e585]:
+              - generic [ref=e586]:
+                - generic [ref=e590]: 14 chapters
+                - button "It's a Tough Job (But Someobody's Got to Do It) | A Natural Man | Tobacco Road | Lady Love | I Wish You Belong To Me | Love Is a Hurtin' Thing | At Last | Fine Brown Frame | After the Lights Go Down Low | All Around the World | The Way You Look Tonight | I've Got a Room with a View of the Blues | Hoochie Coochie Man | You'll Never Find Another Love Like Mine"
+              - button "More" [ref=e595]
+        - generic [ref=e602]:
+          - link [ref=e604] [cursor=pointer]:
+            - /url: /watch?v=8ks03I4wWG4&list=RD8ks03I4wWG4&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+          - generic [ref=e606] [cursor=pointer]:
+            - generic [ref=e607]:
+              - heading "I'd Rather Drink Muddy Water - Marc Broussard (Lou Rawls Cover - Live Performance) 4 minutes, 42 seconds" [level=3] [ref=e609]:
+                - link "I'd Rather Drink Muddy Water - Marc Broussard (Lou Rawls Cover - Live Performance) 4 minutes, 42 seconds" [ref=e610]:
+                  - /url: /watch?v=8ks03I4wWG4&list=RD8ks03I4wWG4&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                  - text: I'd Rather Drink Muddy Water - Marc Broussard (Lou Rawls Cover - Live Performance)
+              - generic [ref=e613]:
+                - generic [ref=e614]: 274K views
+                - generic [ref=e615]: •2 years ago
+            - generic [ref=e616]:
+              - link "Go to channel Marc Broussard" [ref=e617]:
+                - /url: /channel/UCacgZMovR2v8pJO7WfM_mhw
+              - generic [ref=e618]:
+                - link "Marc Broussard" [ref=e622]:
+                  - /url: /channel/UCacgZMovR2v8pJO7WfM_mhw
+                - img "Official Artist Channel" [ref=e625]
+            - generic [ref=e627]:
+              - text: "Stream/Purchase: https://ktbarecords.com/streaming/marcbroussard/mb-bluesforyoursoul/ CD/Vinyl: Merch: ..."
+              - tooltip "tooltip"
+        - generic [ref=e629]:
+          - heading "People also watched" [level=2] [ref=e632]:
+            - generic [ref=e634]: People also watched
+          - generic [ref=e636]:
+            - generic [ref=e637]:
+              - generic [ref=e639]:
+                - link [ref=e641] [cursor=pointer]:
+                  - /url: /watch?v=xOZppnUNRYU&list=RDxOZppnUNRYU&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+                - generic [ref=e643] [cursor=pointer]:
+                  - generic [ref=e644]:
+                    - 'heading "Lou Rawls: The Velvet Voice of Soul | Best Soul & Jazz Classics 2 hours, 38 minutes" [level=3] [ref=e646]':
+                      - 'link "Lou Rawls: The Velvet Voice of Soul | Best Soul & Jazz Classics 2 hours, 38 minutes" [ref=e647]':
+                        - /url: /watch?v=xOZppnUNRYU&list=RDxOZppnUNRYU&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+                        - text: "Lou Rawls: The Velvet Voice of Soul | Best Soul & Jazz Classics"
+                    - generic [ref=e650]:
+                      - generic [ref=e651]: 204 views
+                      - generic [ref=e652]: •9 days ago
+                  - generic [ref=e653]:
+                    - link "Go to channel LookUP! Music Staff" [ref=e654]:
+                      - /url: /@lookupmusicstaff
+                    - link "LookUP! Music Staff" [ref=e659]:
+                      - /url: /@lookupmusicstaff
+                  - generic [ref=e660]:
+                    - generic [ref=e661]: "Lou Rawls: The Velvet Voice of Soul and Jazz Welcome to the definitive selection dedicated to Lou Rawls, one of the most ..."
+                    - tooltip "tooltip"
+              - generic [ref=e663]:
+                - link [ref=e665] [cursor=pointer]:
+                  - /url: /watch?v=KoNm4xdR0ss&list=RDKoNm4xdR0ss&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                - generic [ref=e667] [cursor=pointer]:
+                  - generic [ref=e668]:
+                    - heading "Lou Rawls. In Concert. With The Edmonton Symphony . Live. 47 minutes" [level=3] [ref=e670]:
+                      - link "Lou Rawls. In Concert. With The Edmonton Symphony . Live. 47 minutes" [ref=e671]:
+                        - /url: /watch?v=KoNm4xdR0ss&list=RDKoNm4xdR0ss&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                        - text: Lou Rawls. In Concert. With The Edmonton Symphony . Live.
+                    - generic [ref=e674]:
+                      - generic [ref=e675]: 203K views
+                      - generic [ref=e676]: •12 years ago
+                  - generic [ref=e677]:
+                    - link "Go to channel Charlie Brad" [ref=e678]:
+                      - /url: /@charliebrad6229
+                    - link "Charlie Brad" [ref=e683]:
+                      - /url: /@charliebrad6229
+                  - generic [ref=e684]:
+                    - text: With The Edmonton Symphony. 01. You'll Never Find 02. It's Been a Long Time . 03. Lady Love . 04. Dead End Street . 05.
+                    - tooltip "tooltip"
+              - generic [ref=e686]:
+                - link [ref=e688] [cursor=pointer]:
+                  - /url: /watch?v=Tt58RiElRkc&list=RDTt58RiElRkc&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                - generic [ref=e690] [cursor=pointer]:
+                  - generic [ref=e691]:
+                    - heading "Lou Rawls in Concert Rotterdam 1981 25 minutes" [level=3] [ref=e693]:
+                      - link "Lou Rawls in Concert Rotterdam 1981 25 minutes" [ref=e694]:
+                        - /url: /watch?v=Tt58RiElRkc&list=RDTt58RiElRkc&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                        - text: Lou Rawls in Concert Rotterdam 1981
+                    - generic [ref=e697]:
+                      - generic [ref=e698]: 16K views
+                      - generic [ref=e699]: •9 years ago
+                  - generic [ref=e700]:
+                    - link "Go to channel Thejazzsingers channel" [ref=e701]:
+                      - /url: /@thejazzsingers
+                    - link "Thejazzsingers channel" [ref=e706]:
+                      - /url: /@thejazzsingers
+                  - generic [ref=e707]:
+                    - generic [ref=e708]: Big part of Lou Rawls concert in Rotterdam during his big world tour in 1981 .
+                    - tooltip "tooltip"
+              - generic [ref=e710]:
+                - link [ref=e712] [cursor=pointer]:
+                  - /url: /watch?v=XOWZn79oKkQ&list=RDXOWZn79oKkQ&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                - generic [ref=e714] [cursor=pointer]:
+                  - generic [ref=e715]:
+                    - heading "Lou Rawls - Dead End Street - Tobacco Road - A Natural Man • World of Jazz 7 minutes, 51 seconds" [level=3] [ref=e717]:
+                      - link "Lou Rawls - Dead End Street - Tobacco Road - A Natural Man • World of Jazz 7 minutes, 51 seconds" [ref=e718]:
+                        - /url: /watch?v=XOWZn79oKkQ&list=RDXOWZn79oKkQ&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                        - text: Lou Rawls - Dead End Street - Tobacco Road - A Natural Man • World of Jazz
+                    - generic [ref=e721]:
+                      - generic [ref=e722]: 2.2K views
+                      - generic [ref=e723]: •5 days ago
+                  - generic [ref=e724]:
+                    - link "Go to channel World of Jazz" [ref=e725]:
+                      - /url: /@WorldofJazz
+                    - generic [ref=e726]:
+                      - link "World of Jazz" [ref=e730]:
+                        - /url: /@WorldofJazz
+                      - img "Verified" [ref=e733]
+                  - generic [ref=e735]:
+                    - generic [ref=e736]: "Louis Allen \"Lou\" Rawls (1933 - 2006) will always be remembered because of his recognizable voice, that almost everyone loves: ..."
+                    - tooltip "tooltip"
+                  - img "New" [ref=e739]:
+                    - generic [ref=e740]: New
+            - generic "+6 more" [ref=e742] [cursor=pointer]
+        - generic [ref=e744]:
+          - link [ref=e746] [cursor=pointer]:
+            - /url: /watch?v=sg6LFyeq4Ls&list=RDsg6LFyeq4Ls&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e748] [cursor=pointer]:
+            - generic [ref=e749]:
+              - heading "Lou Rawls Live You Will Never Find Another Love Like Mine Louis Allen 1933 To 2006 Gamble & Huff 4 minutes, 27 seconds" [level=3] [ref=e751]:
+                - link "Lou Rawls Live You Will Never Find Another Love Like Mine Louis Allen 1933 To 2006 Gamble & Huff 4 minutes, 27 seconds" [ref=e752]:
+                  - /url: /watch?v=sg6LFyeq4Ls&list=RDsg6LFyeq4Ls&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: Lou Rawls Live You Will Never Find Another Love Like Mine Louis Allen 1933 To 2006 Gamble & Huff
+              - generic [ref=e755]:
+                - generic [ref=e756]: 31K views
+                - generic [ref=e757]: •13 years ago
+            - generic [ref=e758]:
+              - link "Go to channel Tayseer Hararah 17" [ref=e759]:
+                - /url: /@TayseerHararah
+              - link "Tayseer Hararah 17" [ref=e764]:
+                - /url: /@TayseerHararah
+            - generic [ref=e765]:
+              - generic [ref=e766]: You'll never find, as long as you live Someone who loves you tender like I do You'll never find, no matter where you search ...
+              - tooltip "tooltip"
+        - generic [ref=e768]:
+          - link [ref=e770] [cursor=pointer]:
+            - /url: /watch?v=plnA96FtgAw&list=RDplnA96FtgAw&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e772] [cursor=pointer]:
+            - generic [ref=e773]:
+              - heading "LOU RAWLS LIVE - TOBACCO ROAD- 3 minutes, 36 seconds" [level=3] [ref=e775]:
+                - link "LOU RAWLS LIVE - TOBACCO ROAD- 3 minutes, 36 seconds" [ref=e776]:
+                  - /url: /watch?v=plnA96FtgAw&list=RDplnA96FtgAw&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: LOU RAWLS LIVE - TOBACCO ROAD-
+              - generic [ref=e779]:
+                - generic [ref=e780]: 2.1K views
+                - generic [ref=e781]: •4 years ago
+            - generic [ref=e782]:
+              - link "Go to channel LLF MUSIC TV" [ref=e783]:
+                - /url: /@llfmusictv
+              - link "LLF MUSIC TV" [ref=e788]:
+                - /url: /@llfmusictv
+            - generic [ref=e789]:
+              - text: Este video no infringe derechos de Copyright ya que lo monetizan los propietarios de los temas , no el canal **This video does ...
+              - tooltip "tooltip"
+        - generic [ref=e790]:
+          - generic [ref=e793]:
+            - img [ref=e795]
+            - heading "Shorts" [level=2] [ref=e798]
+          - generic [ref=e799]:
+            - generic [ref=e800]:
+              - generic [ref=e803]:
+                - link [ref=e804] [cursor=pointer]:
+                  - /url: /shorts/9PvWNXVoxkQ
+                - generic [ref=e808] [cursor=pointer]:
+                  - link "♥️LOU RAWLS♥️🌟(Live)🌟\"Suddenly\"🌟#lourawls#soul#music🌟" [ref=e809]:
+                    - /url: /shorts/9PvWNXVoxkQ
+                  - generic [ref=e810]: 997 views
+                - button "More actions" [ref=e812] [cursor=pointer]
+              - generic [ref=e820]:
+                - link [ref=e821] [cursor=pointer]:
+                  - /url: /shorts/1rVy7OxEtgc
+                - generic [ref=e825] [cursor=pointer]:
+                  - link "Barry White vs Lou Rawls#soul#rnb" [ref=e826]:
+                    - /url: /shorts/1rVy7OxEtgc
+                  - generic [ref=e827]: 3.2K views
+                - button "More actions" [ref=e829] [cursor=pointer]
+            - generic [ref=e835]:
+              - generic [ref=e838]:
+                - link [ref=e839] [cursor=pointer]:
+                  - /url: /shorts/2lhQYXm3OeA
+                - generic [ref=e843] [cursor=pointer]:
+                  - link "❤️LOU RAWLS❤️🌟(Live)🌟\"Yesterday\"🌟#lourawls#soulmusic🌟" [ref=e844]:
+                    - /url: /shorts/2lhQYXm3OeA
+                  - generic [ref=e845]: 1.1K views
+                - button "More actions" [ref=e847] [cursor=pointer]
+              - generic [ref=e855]:
+                - link [ref=e856] [cursor=pointer]:
+                  - /url: /shorts/s1PHJ4sCLuY
+                - generic [ref=e860] [cursor=pointer]:
+                  - 'link "Lou Rawls ''s 3 marriages and personal life #shorts #celebrity #blackceleb" [ref=e861]':
+                    - /url: /shorts/s1PHJ4sCLuY
+                  - generic [ref=e862]: 20K views
+                - button "More actions" [ref=e864] [cursor=pointer]
+          - button "Show more" [ref=e873] [cursor=pointer]:
+            - generic [ref=e874]: Show more
+        - generic [ref=e881]:
+          - link [ref=e883] [cursor=pointer]:
+            - /url: /watch?v=BUh3Hj2-cCo&list=RDBUh3Hj2-cCo&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+          - generic [ref=e885] [cursor=pointer]:
+            - generic [ref=e886]:
+              - heading "Lou Rawls - You'll Never Find Another Love Like Mine (Official Soul Train Video) 3 minutes, 57 seconds" [level=3] [ref=e888]:
+                - link "Lou Rawls - You'll Never Find Another Love Like Mine (Official Soul Train Video) 3 minutes, 57 seconds" [ref=e889]:
+                  - /url: /watch?v=BUh3Hj2-cCo&list=RDBUh3Hj2-cCo&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                  - text: Lou Rawls - You'll Never Find Another Love Like Mine (Official Soul Train Video)
+              - generic [ref=e892]:
+                - generic [ref=e893]: 41M views
+                - generic [ref=e894]: •5 years ago
+            - generic [ref=e895]:
+              - link "Go to channel Philadelphia International Records" [ref=e896]:
+                - /url: /@soundofphiladelphia
+              - generic [ref=e897]:
+                - link "Philadelphia International Records" [ref=e901]:
+                  - /url: /@soundofphiladelphia
+                - img "Verified" [ref=e904]
+            - generic [ref=e906]:
+              - generic [ref=e907]: "PhillySound on Soul Train presents: \"You'll Never Find Another Love Like Mine\" by Lou Rawls Listen to Lou Rawls: ..."
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e910]:
+              - generic [ref=e911]: CC
+        - generic [ref=e913]:
+          - link [ref=e915] [cursor=pointer]:
+            - /url: /watch?v=dV9sKJ311Sc&list=RDdV9sKJ311Sc&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+          - generic [ref=e917] [cursor=pointer]:
+            - generic [ref=e918]:
+              - heading "Lou Rawls || Live at North Sea Jazz Festival || 1995 The Hague 41 minutes" [level=3] [ref=e920]:
+                - link "Lou Rawls || Live at North Sea Jazz Festival || 1995 The Hague 41 minutes" [ref=e921]:
+                  - /url: /watch?v=dV9sKJ311Sc&list=RDdV9sKJ311Sc&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                  - text: Lou Rawls || Live at North Sea Jazz Festival || 1995 The Hague
+              - generic [ref=e924]:
+                - generic [ref=e925]: 2.5K views
+                - generic [ref=e926]: •1 year ago
+            - generic [ref=e927]:
+              - link "Go to channel Charly Records" [ref=e928]:
+                - /url: /@CharlyRecordsUK
+              - link "Charly Records" [ref=e933]:
+                - /url: /@CharlyRecordsUK
+            - generic [ref=e934]:
+              - generic [ref=e935]: Successfully blending elements of jazz, R&B, soul and even easy-listening into his songs, Lou Rawls was a leading figure in ...
+              - tooltip "tooltip"
+            - generic [ref=e938]:
+              - generic [ref=e939]:
+                - generic [ref=e943]: 11 chapters
+                - button "Tobacco Road | Lady Love | Let Me Good to You | Since I Met You Baby | A Lover's Question | Your Good Thing Is About to End | Room with a View | Send in the Clowns | Hoochie Coochie Man | You'll Never Find Another Love Like Mine | See You When I Get There"
+              - button "More" [ref=e948]
+        - generic [ref=e955]:
+          - link [ref=e957] [cursor=pointer]:
+            - /url: /watch?v=fO5X-zM2QpQ&list=RDfO5X-zM2QpQ&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+          - generic [ref=e959] [cursor=pointer]:
+            - generic [ref=e960]:
+              - heading "Lou Rawls,Bobby Hutcherson - The Blues is a woman 5 minutes, 33 seconds" [level=3] [ref=e962]:
+                - link "Lou Rawls,Bobby Hutcherson - The Blues is a woman 5 minutes, 33 seconds" [ref=e963]:
+                  - /url: /watch?v=fO5X-zM2QpQ&list=RDfO5X-zM2QpQ&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                  - text: Lou Rawls,Bobby Hutcherson - The Blues is a woman
+              - generic [ref=e966]:
+                - generic [ref=e967]: 22K views
+                - generic [ref=e968]: •17 years ago
+            - generic [ref=e969]:
+              - link "Go to channel cminor7add9th" [ref=e970]:
+                - /url: /@cminor7add9th
+              - link "cminor7add9th" [ref=e975]:
+                - /url: /@cminor7add9th
+            - generic [ref=e976]:
+              - generic [ref=e977]: Jam Session at Mt.Fuji Jazz Fes with Blue Note 1989. Lou Rawls:vo,Bobby Hutcherson:vib,Les McCann:p, Chris Severin:b,Billy ...
+              - tooltip "tooltip"
+            - generic [ref=e980]:
+              - generic [ref=e981]:
+                - generic [ref=e985]: 6 moments
+                - button "The Blues Is A Woman | Lou Rawls (vo) | NTT JAZZ NIGHT Aug. 26th (Sat) | Bobby Hutcherson (vib) | Les McCann (p) | Chris Severin (b)"
+              - button "More" [ref=e990]
+        - generic [ref=e997] [cursor=pointer]:
+          - link [ref=e998]:
+            - /url: /watch?v=fPQ5N-zwjos&list=PLb72gFQdbjPk2hYD0QaiAhnVpC3pfnvKp
+            - generic [ref=e1010]: 12 videos
+          - generic [ref=e1013]:
+            - heading "Lou Rawls - Lou Rawls Live (1978)" [level=3] [ref=e1014]:
+              - link "Lou Rawls - Lou Rawls Live (1978)" [ref=e1015]:
+                - /url: /watch?v=fPQ5N-zwjos&list=PLb72gFQdbjPk2hYD0QaiAhnVpC3pfnvKp
+            - generic [ref=e1017]:
+              - generic [ref=e1018]:
+                - link "Rahaman Holley" [ref=e1021]:
+                  - /url: /@RJHBraveheart
+                - generic [ref=e1022]: •
+                - link "Playlist" [ref=e1025]:
+                  - /url: /@RJHBraveheart
+              - link "Overture (Live at the Mark Hellinger Theatre, New York, NY - November 1977) · 10:22" [ref=e1029]:
+                - /url: /watch?v=fPQ5N-zwjos&list=PLb72gFQdbjPk2hYD0QaiAhnVpC3pfnvKp
+              - 'link "Charge Card Blues Medley: Stormy Monday (Live at the Mark Hellinger Theatre, New York, NY -... · 10:08" [ref=e1032]':
+                - /url: /watch?v=I5My-Iik8z4&list=PLb72gFQdbjPk2hYD0QaiAhnVpC3pfnvKp
+              - link "View full playlist" [ref=e1037]:
+                - /url: /playlist?list=PLb72gFQdbjPk2hYD0QaiAhnVpC3pfnvKp
+        - generic [ref=e1039]:
+          - link [ref=e1041] [cursor=pointer]:
+            - /url: /watch?v=Ra8rfxWfflk&list=RDRa8rfxWfflk&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+          - generic [ref=e1043] [cursor=pointer]:
+            - generic [ref=e1044]:
+              - heading "Tobacco Road (Live) 8 minutes" [level=3] [ref=e1046]:
+                - link "Tobacco Road (Live) 8 minutes" [ref=e1047]:
+                  - /url: /watch?v=Ra8rfxWfflk&list=RDRa8rfxWfflk&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                  - text: Tobacco Road (Live)
+              - generic [ref=e1051]: 149K views
+            - generic [ref=e1052]:
+              - link "Go to channel Lou Rawls - Topic" [ref=e1053]:
+                - /url: /channel/UCYHFm9qpYz6iLR-ok-ydshA
+              - generic [ref=e1054]:
+                - link "Lou Rawls" [ref=e1058]:
+                  - /url: /channel/UCYHFm9qpYz6iLR-ok-ydshA
+                - img "Official Artist Channel" [ref=e1061]
+            - generic [ref=e1063]:
+              - generic [ref=e1064]: Provided to YouTube by Universal Music Group Tobacco Road (Live) · Lou Rawls Legendary Lou Rawls ℗ 1966 Capitol Records, ...
+              - tooltip "tooltip"
+        - generic [ref=e1066]:
+          - link [ref=e1068] [cursor=pointer]:
+            - /url: /watch?v=oFO7qzN6yFE&list=RDoFO7qzN6yFE&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+          - generic [ref=e1070] [cursor=pointer]:
+            - generic [ref=e1071]:
+              - heading "Lou Rawls infamous coughing fit LIVE! 1977 on \"You'll Never Find Another Love Like Mine\" 4 minutes, 34 seconds" [level=3] [ref=e1073]:
+                - link "Lou Rawls infamous coughing fit LIVE! 1977 on \"You'll Never Find Another Love Like Mine\" 4 minutes, 34 seconds" [ref=e1074]:
+                  - /url: /watch?v=oFO7qzN6yFE&list=RDoFO7qzN6yFE&start_radio=1&pp=ygUlTG91IFJhd2xzIGxpdmUgcGVyZm9ybWFuY2Ugc291bCBibHVlc6AHAQ%3D%3D
+                  - text: Lou Rawls infamous coughing fit LIVE! 1977 on "You'll Never Find Another Love Like Mine"
+              - generic [ref=e1077]:
+                - generic [ref=e1078]: 159K views
+                - generic [ref=e1079]: •8 years ago
+            - generic [ref=e1080]:
+              - link "Go to channel Phoenix Rising - The Glen Campbell Archives" [ref=e1081]:
+                - /url: /@phoenixrising-theglencampb330
+              - link "Phoenix Rising - The Glen Campbell Archives" [ref=e1086]:
+                - /url: /@phoenixrising-theglencampb330
+            - generic [ref=e1087]:
+              - generic [ref=e1088]: Host Glen Campbell introduces co-host Lou on the 1977 4th Annual AMA's...and THIS happened. Truly amazing. *For more first ...
+              - tooltip "tooltip"

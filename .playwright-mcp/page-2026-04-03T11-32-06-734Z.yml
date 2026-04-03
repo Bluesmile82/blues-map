@@ -1,0 +1,618 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+      - generic [ref=e30]:
+        - button "Settings" [ref=e35] [cursor=pointer]
+        - link "Sign in" [ref=e39] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DRolling%252BStones%252Blive%252Bblues%252Bperformance%252Bconcert&hl=en&ec=65620
+          - generic [ref=e42]: Sign in
+  - main [ref=e47]:
+    - generic [ref=e48]:
+      - generic [ref=e50]:
+        - generic [ref=e53]:
+          - tablist [ref=e55]:
+            - tab "All" [selected] [ref=e59] [cursor=pointer]:
+              - generic [ref=e61]: All
+            - tab "Shorts" [ref=e68] [cursor=pointer]:
+              - generic [ref=e70]: Shorts
+            - tab "Videos" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]: Videos
+            - tab "Unwatched" [ref=e86] [cursor=pointer]:
+              - generic [ref=e88]: Unwatched
+            - tab "Watched" [ref=e95] [cursor=pointer]:
+              - generic [ref=e97]: Watched
+            - tab "Recently uploaded" [ref=e104] [cursor=pointer]:
+              - generic [ref=e106]: Recently uploaded
+            - tab "Live" [ref=e113] [cursor=pointer]:
+              - generic [ref=e115]: Live
+            - tab "Under 4 min" [ref=e122] [cursor=pointer]:
+              - generic [ref=e124]: Under 4 min
+            - tab "4 - 20 min" [ref=e131] [cursor=pointer]:
+              - generic [ref=e133]: 4 - 20 min
+            - tab "Over 20 min" [ref=e140] [cursor=pointer]:
+              - generic [ref=e142]: Over 20 min
+          - button "Next" [ref=e150] [cursor=pointer]
+        - link "About these results" [ref=e159] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e160]: About these results
+        - generic [ref=e167]:
+          - button "Search filters" [ref=e169] [cursor=pointer]:
+            - generic [ref=e170]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e181]:
+        - generic [ref=e183]:
+          - link [ref=e185] [cursor=pointer]:
+            - /url: /watch?v=z3Or7huOK7o&list=RDz3Or7huOK7o&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+            - img [ref=e187]
+            - img [ref=e190]:
+              - generic [ref=e192]: 10:56
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e193] [cursor=pointer]:
+            - generic [ref=e194]:
+              - heading "Muddy Waters & The Rolling Stones - Baby Please Don't Go - Live At Checkerboard Lounge 10 minutes, 56 seconds" [level=3] [ref=e196]:
+                - link "Muddy Waters & The Rolling Stones - Baby Please Don't Go - Live At Checkerboard Lounge 10 minutes, 56 seconds" [ref=e197]:
+                  - /url: /watch?v=z3Or7huOK7o&list=RDz3Or7huOK7o&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: Muddy Waters & The Rolling Stones - Baby Please Don't Go - Live At Checkerboard Lounge
+              - generic [ref=e200]:
+                - generic [ref=e201]: 30M views
+                - generic [ref=e202]: •13 years ago
+            - generic [ref=e203]:
+              - link "Go to channel The Rolling Stones" [ref=e204]:
+                - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+              - generic [ref=e206]:
+                - link "The Rolling Stones" [ref=e210]:
+                  - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+                - img "Official Artist Channel" [ref=e213]
+            - generic [ref=e215]:
+              - generic [ref=e216]: "A brand new studio album from The Rolling Stones… Hackney Diamonds Out October 20th & available to pre-order now: ..."
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e219]:
+              - generic [ref=e220]: CC
+        - generic [ref=e222]:
+          - link [ref=e224] [cursor=pointer]:
+            - /url: /watch?v=YI-OzM0dy30&list=RDYI-OzM0dy30&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+            - img [ref=e226]
+            - img [ref=e229]:
+              - generic [ref=e231]: 7:26
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e232] [cursor=pointer]:
+            - generic [ref=e233]:
+              - heading "The Rolling Stones - Miss You - Sweet Summer Sun - Hyde Park Live 7 minutes, 26 seconds" [level=3] [ref=e235]:
+                - link "The Rolling Stones - Miss You - Sweet Summer Sun - Hyde Park Live 7 minutes, 26 seconds" [ref=e236]:
+                  - /url: /watch?v=YI-OzM0dy30&list=RDYI-OzM0dy30&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: The Rolling Stones - Miss You - Sweet Summer Sun - Hyde Park Live
+              - generic [ref=e239]:
+                - generic [ref=e240]: 11M views
+                - generic [ref=e241]: •12 years ago
+            - generic [ref=e242]:
+              - link "Go to channel The Rolling Stones" [ref=e243]:
+                - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+              - generic [ref=e245]:
+                - link "The Rolling Stones" [ref=e249]:
+                  - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+                - img "Official Artist Channel" [ref=e252]
+            - generic [ref=e254]:
+              - generic [ref=e255]: "A brand new studio album from The Rolling Stones… Hackney Diamonds Out October 20th & available to pre-order now: ..."
+              - tooltip "tooltip"
+        - generic [ref=e257]:
+          - link [ref=e259] [cursor=pointer]:
+            - /url: /watch?v=AHYUzrMzhD0&list=RDAHYUzrMzhD0&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+            - img [ref=e261]
+            - img [ref=e264]:
+              - generic [ref=e266]: 1:11:24
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e267] [cursor=pointer]:
+            - generic [ref=e268]:
+              - heading "Rolling Stones Live in London - 1969 Rare Version 1 hour, 11 minutes" [level=3] [ref=e270]:
+                - link "Rolling Stones Live in London - 1969 Rare Version 1 hour, 11 minutes" [ref=e271]:
+                  - /url: /watch?v=AHYUzrMzhD0&list=RDAHYUzrMzhD0&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: Rolling Stones Live in London - 1969 Rare Version
+              - generic [ref=e274]:
+                - generic [ref=e275]: 810K views
+                - generic [ref=e276]: •1 year ago
+            - generic [ref=e277]:
+              - link "Go to channel Rock 'N' Roll Forever" [ref=e278]:
+                - /url: /@rocknrollforeverandever
+              - link "Rock 'N' Roll Forever" [ref=e284]:
+                - /url: /@rocknrollforeverandever
+            - generic [ref=e285]:
+              - generic [ref=e286]: The Rolling Stones Live in Hyde Park (London, 1969) - Remastered Enjoy it and subscribe in the channel.
+              - tooltip "tooltip"
+        - generic [ref=e288]:
+          - link [ref=e290] [cursor=pointer]:
+            - /url: /watch?v=V0qqwxYYX2Y&list=RDV0qqwxYYX2Y&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e292] [cursor=pointer]:
+            - generic [ref=e293]:
+              - heading "MUDDY WATERS BLUESBAND 1977 46 minutes" [level=3] [ref=e295]:
+                - link "MUDDY WATERS BLUESBAND 1977 46 minutes" [ref=e296]:
+                  - /url: /watch?v=V0qqwxYYX2Y&list=RDV0qqwxYYX2Y&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: MUDDY WATERS BLUESBAND 1977
+              - generic [ref=e299]:
+                - generic [ref=e300]: 558K views
+                - generic [ref=e301]: •5 years ago
+            - generic [ref=e302]:
+              - link "Go to channel Zvonimir Bucevic" [ref=e303]:
+                - /url: /@ZvonimirBucevicBuc
+              - link "Zvonimir Bucevic" [ref=e309]:
+                - /url: /@ZvonimirBucevicBuc
+            - generic [ref=e310]:
+              - text: Muddy Waters guitar & vocals, Luther Johnsen guitar, Robert Margolin guitar, Jerry Portnoy harmonica, Bob Willie Perkins piano, ...
+              - tooltip "tooltip"
+            - generic [ref=e313]:
+              - generic [ref=e314]:
+                - generic [ref=e318]: 10 chapters
+                - button "band members introduction by announcer | \"Rocker\" (W. Jacobs) - Muddy Waters Band | Announcement for Mr. Waters feat. \"The Honeydripper\"(Joe Liggins) | \"Prison Bound\" (J.L. Hooker) | \"Blow Wind Blow\" (M. Morganfield) | \"Baby Please Don't Go\" (J.L. Williams) | \"Can't Get No Grindin\" (M. Morganfield) | \"You Don't Have to Go\" (J. Reed) | \"Got My Mojo Workin'\" (M. Morganfield / P. Foster) | Short interview with Mr. Waters"
+              - button "More" [ref=e323]
+        - generic [ref=e330]:
+          - link [ref=e332] [cursor=pointer]:
+            - /url: /watch?v=yafcId3UYcE&list=RDyafcId3UYcE&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e334] [cursor=pointer]:
+            - generic [ref=e335]:
+              - heading "Rolling Stones - Vienna 2022 Full Concert 2 hours, 12 minutes" [level=3] [ref=e337]:
+                - link "Rolling Stones - Vienna 2022 Full Concert 2 hours, 12 minutes" [ref=e338]:
+                  - /url: /watch?v=yafcId3UYcE&list=RDyafcId3UYcE&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: Rolling Stones - Vienna 2022 Full Concert
+              - generic [ref=e341]:
+                - generic [ref=e342]: 2.4M views
+                - generic [ref=e343]: •3 years ago
+            - generic [ref=e344]:
+              - link "Go to channel progress6" [ref=e345]:
+                - /url: /@progress6
+              - link "progress6" [ref=e351]:
+                - /url: /@progress6
+            - generic [ref=e352]:
+              - generic [ref=e353]: The Rolling Stones SIXTY Tour 2022 Vienna, Austria Ernst-Happel-Stadion 15.7.2022 01. Charlie Watts Tribute Intro 00:00:00 02.
+              - tooltip "tooltip"
+            - generic [ref=e356]:
+              - generic [ref=e357]:
+                - generic [ref=e361]: 20 chapters
+                - button "01. Charlie Watts Tribute Intro | 02. Street Fighting Man | 03. Let's Spend the Night Together | 04. Tumbling Dice | 05. Like a Rolling Stone | 06. Out of Time | 07. Wild Horses | 08. Living in a Ghost Town | 09. Paint It Black | 10. Honky Tonk Women | 11. Slipping Away | 12. Happy | 13. Miss You | 14. Midnight Rambler | 15. Sympathy for the Devil | 16. Start Me Up | 17. Gimme Shelter | 18. Jumpin' Jack Flash | 19. You Can't Always Get What You Want (with Dzvinochok boys choir and Vognyk girls choir) | 20. (I Can't Get No) Satisfaction"
+              - button "More" [ref=e366]
+        - generic [ref=e373]:
+          - link [ref=e375] [cursor=pointer]:
+            - /url: /watch?v=MLehHzoEvmg&list=RDMLehHzoEvmg&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e377] [cursor=pointer]:
+            - generic [ref=e378]:
+              - heading "The Rolling Stones Live 1998 Buenos Aires Argentina 2 hours, 20 minutes" [level=3] [ref=e380]:
+                - link "The Rolling Stones Live 1998 Buenos Aires Argentina 2 hours, 20 minutes" [ref=e381]:
+                  - /url: /watch?v=MLehHzoEvmg&list=RDMLehHzoEvmg&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: The Rolling Stones Live 1998 Buenos Aires Argentina
+              - generic [ref=e384]:
+                - generic [ref=e385]: 357K views
+                - generic [ref=e386]: •2 years ago
+            - generic [ref=e387]:
+              - link "Go to channel club fans stones" [ref=e388]:
+                - /url: /@clubfansstones2026
+              - link "club fans stones" [ref=e393]:
+                - /url: /@clubfansstones2026
+        - generic [ref=e395]:
+          - link [ref=e397] [cursor=pointer]:
+            - /url: /watch?v=nMIfJdDvg5s&list=RDnMIfJdDvg5s&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e399] [cursor=pointer]:
+            - generic [ref=e400]:
+              - heading "HD - The Rolling Stones & Sheryl Crow \"Honky Tonk Women\" 4 minutes, 57 seconds" [level=3] [ref=e402]:
+                - link "HD - The Rolling Stones & Sheryl Crow \"Honky Tonk Women\" 4 minutes, 57 seconds" [ref=e403]:
+                  - /url: /watch?v=nMIfJdDvg5s&list=RDnMIfJdDvg5s&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: HD - The Rolling Stones & Sheryl Crow "Honky Tonk Women"
+              - generic [ref=e406]:
+                - generic [ref=e407]: 1M views
+                - generic [ref=e408]: •3 years ago
+            - generic [ref=e409]:
+              - link "Go to channel lu@" [ref=e410]:
+                - /url: /@lu.videos
+              - link "lu@" [ref=e415]:
+                - /url: /@lu.videos
+            - generic [ref=e416]:
+              - generic [ref=e417]: "rollingstones #sherylcrow #remastered #1080p #shorts #rock #officialvideo #mickjagger #keithrichards."
+              - tooltip "tooltip"
+        - generic [ref=e419]:
+          - link [ref=e421] [cursor=pointer]:
+            - /url: /watch?v=B51A6bcMeDY&list=RDB51A6bcMeDY&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e423] [cursor=pointer]:
+            - generic [ref=e424]:
+              - heading "The Rolling Stones - All Down The Line (Live) - OFFICIAL 4 minutes, 16 seconds" [level=3] [ref=e426]:
+                - link "The Rolling Stones - All Down The Line (Live) - OFFICIAL 4 minutes, 16 seconds" [ref=e427]:
+                  - /url: /watch?v=B51A6bcMeDY&list=RDB51A6bcMeDY&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: The Rolling Stones - All Down The Line (Live) - OFFICIAL
+              - generic [ref=e430]:
+                - generic [ref=e431]: 4M views
+                - generic [ref=e432]: •13 years ago
+            - generic [ref=e433]:
+              - link "Go to channel The Rolling Stones" [ref=e434]:
+                - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+              - generic [ref=e435]:
+                - link "The Rolling Stones" [ref=e439]:
+                  - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+                - img "Official Artist Channel" [ref=e442]
+            - generic [ref=e444]:
+              - generic [ref=e445]: "A brand new studio album from The Rolling Stones… Hackney Diamonds Out October 20th & available to pre-order now: ..."
+              - tooltip "tooltip"
+        - generic [ref=e446]:
+          - generic [ref=e449]:
+            - img [ref=e451]
+            - heading "Shorts" [level=2] [ref=e454]
+          - generic [ref=e455]:
+            - generic [ref=e456]:
+              - generic [ref=e459]:
+                - link [ref=e460] [cursor=pointer]:
+                  - /url: /shorts/QYcPiRf4bMI
+                - generic [ref=e464] [cursor=pointer]:
+                  - 'link "The Rolling Stones and Muddy Waters live 🎙️ #nostalgia #oldschool #oldschoolmusic #80s #80smusic" [ref=e465]':
+                    - /url: /shorts/QYcPiRf4bMI
+                  - generic [ref=e466]: 2M views
+                - button "More actions" [ref=e468] [cursor=pointer]
+              - generic [ref=e476]:
+                - link [ref=e477] [cursor=pointer]:
+                  - /url: /shorts/CA32Wk089eM
+                - generic [ref=e481] [cursor=pointer]:
+                  - link "Keith Richards On Stage - The Rolling Stones Concert Live in Arizona 1981" [ref=e482]:
+                    - /url: /shorts/CA32Wk089eM
+                  - generic [ref=e483]: 3M views
+                - button "More actions" [ref=e485] [cursor=pointer]
+            - generic [ref=e491]:
+              - generic [ref=e494]:
+                - link [ref=e495] [cursor=pointer]:
+                  - /url: /shorts/_fZ2z3X3E9w
+                - generic [ref=e499] [cursor=pointer]:
+                  - link "The Rolling Stones joined Muddy Waters onstage at the legendary Checkerboard Lounge in Chicago, 1981" [ref=e500]:
+                    - /url: /shorts/_fZ2z3X3E9w
+                  - generic [ref=e501]: 286K views
+                - button "More actions" [ref=e503] [cursor=pointer]
+              - generic [ref=e511]:
+                - link [ref=e512] [cursor=pointer]:
+                  - /url: /shorts/R0xTt5qQqsY
+                - generic [ref=e516] [cursor=pointer]:
+                  - link "THE ROLLING STONES Opening SIXTY 2022 Berlin 08/03/22 last live concert Mick Jagger Keith Richards" [ref=e517]:
+                    - /url: /shorts/R0xTt5qQqsY
+                  - generic [ref=e518]: 13M views
+                - button "More actions" [ref=e520] [cursor=pointer]
+          - button "Show more" [ref=e529] [cursor=pointer]:
+            - generic [ref=e530]: Show more
+        - generic [ref=e537]:
+          - link [ref=e539] [cursor=pointer]:
+            - /url: /watch?v=cuCYEu8Cq0I&list=RDcuCYEu8Cq0I&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e541] [cursor=pointer]:
+            - generic [ref=e542]:
+              - heading "The Rolling Stones Live on the TAMI Show 1964 (Brian Jones Plays His VOX Teardrop Guitar) 17 minutes" [level=3] [ref=e544]:
+                - link "The Rolling Stones Live on the TAMI Show 1964 (Brian Jones Plays His VOX Teardrop Guitar) 17 minutes" [ref=e545]:
+                  - /url: /watch?v=cuCYEu8Cq0I&list=RDcuCYEu8Cq0I&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: The Rolling Stones Live on the TAMI Show 1964 (Brian Jones Plays His VOX Teardrop Guitar)
+              - generic [ref=e548]:
+                - generic [ref=e549]: 526K views
+                - generic [ref=e550]: •6 years ago
+            - generic [ref=e551]:
+              - link "Go to channel Brian Jones' Rolling Stones" [ref=e552]:
+                - /url: /@brianjonesrollingstones9333
+              - link "Brian Jones' Rolling Stones" [ref=e557]:
+                - /url: /@brianjonesrollingstones9333
+            - generic [ref=e558]:
+              - generic [ref=e559]: The Rolling Stones Live on the TAMI Show (Brian Jones at his very best)
+              - tooltip "tooltip"
+        - generic [ref=e561]:
+          - link [ref=e563] [cursor=pointer]:
+            - /url: /watch?v=LI8WGX3afDs&list=RDLI8WGX3afDs&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e565] [cursor=pointer]:
+            - generic [ref=e566]:
+              - heading "The Rolling Stones - Sympathy for the Devil - Live in St Louis 8 minutes, 17 seconds" [level=3] [ref=e568]:
+                - link "The Rolling Stones - Sympathy for the Devil - Live in St Louis 8 minutes, 17 seconds" [ref=e569]:
+                  - /url: /watch?v=LI8WGX3afDs&list=RDLI8WGX3afDs&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: The Rolling Stones - Sympathy for the Devil - Live in St Louis
+              - generic [ref=e572]:
+                - generic [ref=e573]: 1.9M views
+                - generic [ref=e574]: •13 years ago
+            - generic [ref=e575]:
+              - link "Go to channel The Rolling Stones" [ref=e576]:
+                - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+              - generic [ref=e577]:
+                - link "The Rolling Stones" [ref=e581]:
+                  - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+                - img "Official Artist Channel" [ref=e584]
+            - generic [ref=e586]:
+              - generic [ref=e587]: "A brand new studio album from The Rolling Stones… Hackney Diamonds Out October 20th & available to pre-order now: ..."
+              - tooltip "tooltip"
+        - generic [ref=e588]:
+          - generic [ref=e591]:
+            - img [ref=e593]
+            - heading "Shorts" [level=2] [ref=e596]
+          - generic [ref=e597]:
+            - generic [ref=e598]:
+              - generic [ref=e601]:
+                - link [ref=e602] [cursor=pointer]:
+                  - /url: /shorts/cYRlljkrqUE
+                - generic [ref=e606] [cursor=pointer]:
+                  - link "Clip of Ronnie Wood and Keith Richards of The Rolling Stones at the 2024 New Orleans Jazz Festival" [ref=e607]:
+                    - /url: /shorts/cYRlljkrqUE
+                  - generic [ref=e608]: 83K views
+                - button "More actions" [ref=e610] [cursor=pointer]
+              - generic [ref=e618]:
+                - link [ref=e619] [cursor=pointer]:
+                  - /url: /shorts/wVGWzVLm3-g
+                - generic [ref=e623] [cursor=pointer]:
+                  - link "This is how you should start a concert🔥 | The Rolling Stones - Brown Sugar, live 2003" [ref=e624]:
+                    - /url: /shorts/wVGWzVLm3-g
+                  - generic [ref=e625]: 1M views
+                - button "More actions" [ref=e627] [cursor=pointer]
+            - generic [ref=e633]:
+              - generic [ref=e636]:
+                - link [ref=e637] [cursor=pointer]:
+                  - /url: /shorts/JzBqpJYE7qk
+                - generic [ref=e641] [cursor=pointer]:
+                  - 'link "🔥 Rolling Stones Set the Stage on Fire in Berlin Final Europe Night 🎸🎶 #rollingstones #mickjagger" [ref=e642]':
+                    - /url: /shorts/JzBqpJYE7qk
+                  - generic [ref=e643]: 642K views
+                - button "More actions" [ref=e645] [cursor=pointer]
+              - generic [ref=e653]:
+                - link [ref=e654] [cursor=pointer]:
+                  - /url: /shorts/Awg7neHEcPA
+                - generic [ref=e658] [cursor=pointer]:
+                  - link "THE ROLLING STONES Opening SIXTY 2022 Berlin 08/03/22 last live concert Mick Jagger Keith Richards" [ref=e659]:
+                    - /url: /shorts/Awg7neHEcPA
+                  - generic [ref=e660]: 212K views
+                - button "More actions" [ref=e662] [cursor=pointer]
+          - button "Show more" [ref=e671] [cursor=pointer]:
+            - generic [ref=e672]: Show more
+        - generic [ref=e679]:
+          - link [ref=e681] [cursor=pointer]:
+            - /url: /watch?v=Ugafzp4C_zc&list=RDUgafzp4C_zc&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e683] [cursor=pointer]:
+            - generic [ref=e684]:
+              - heading "The Rolling Stones - Live in USA 1969 44 minutes" [level=3] [ref=e686]:
+                - link "The Rolling Stones - Live in USA 1969 44 minutes" [ref=e687]:
+                  - /url: /watch?v=Ugafzp4C_zc&list=RDUgafzp4C_zc&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: The Rolling Stones - Live in USA 1969
+              - generic [ref=e690]:
+                - generic [ref=e691]: 658K views
+                - generic [ref=e692]: •1 year ago
+            - generic [ref=e693]:
+              - link "Go to channel Gab" [ref=e694]:
+                - /url: /@Gab-9082
+              - link "Gab" [ref=e699]:
+                - /url: /@Gab-9082
+            - generic [ref=e700]:
+              - generic [ref=e701]: The Rolling Stones' 1969 concert in the United States is one of the most iconic events in music history. It took place during their ...
+              - tooltip "tooltip"
+        - generic [ref=e703]:
+          - link [ref=e705] [cursor=pointer]:
+            - /url: /watch?v=ryRDcE2sB2A&list=RDryRDcE2sB2A&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e707] [cursor=pointer]:
+            - generic [ref=e708]:
+              - heading "The Rolling Stones - Love In Vain (Live) - Official 6 minutes, 37 seconds" [level=3] [ref=e710]:
+                - link "The Rolling Stones - Love In Vain (Live) - Official 6 minutes, 37 seconds" [ref=e711]:
+                  - /url: /watch?v=ryRDcE2sB2A&list=RDryRDcE2sB2A&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: The Rolling Stones - Love In Vain (Live) - Official
+              - generic [ref=e714]:
+                - generic [ref=e715]: 4.9M views
+                - generic [ref=e716]: •13 years ago
+            - generic [ref=e717]:
+              - link "Go to channel The Rolling Stones" [ref=e718]:
+                - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+              - generic [ref=e719]:
+                - link "The Rolling Stones" [ref=e723]:
+                  - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+                - img "Official Artist Channel" [ref=e726]
+            - generic [ref=e728]:
+              - generic [ref=e729]: "A brand new studio album from The Rolling Stones… Hackney Diamonds Out October 20th & available to pre-order now: ..."
+              - tooltip "tooltip"
+        - generic [ref=e731]:
+          - heading "People also watched" [level=2] [ref=e734]:
+            - generic [ref=e736]: People also watched
+          - generic [ref=e738]:
+            - generic [ref=e739]:
+              - generic [ref=e741]:
+                - link [ref=e743] [cursor=pointer]:
+                  - /url: /watch?v=MqIMhoEISdM&list=RDMqIMhoEISdM&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                - generic [ref=e745] [cursor=pointer]:
+                  - generic [ref=e746]:
+                    - heading "The Rolling Stones live at Twickenham Stadium, London, 24 August 2003 - pro video | complete concert 1 hour, 58 minutes" [level=3] [ref=e748]:
+                      - link "The Rolling Stones live at Twickenham Stadium, London, 24 August 2003 - pro video | complete concert 1 hour, 58 minutes" [ref=e749]:
+                        - /url: /watch?v=MqIMhoEISdM&list=RDMqIMhoEISdM&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                        - text: The Rolling Stones live at Twickenham Stadium, London, 24 August 2003 - pro video | complete concert
+                    - generic [ref=e752]:
+                      - generic [ref=e753]: 2.1M views
+                      - generic [ref=e754]: •3 years ago
+                  - generic [ref=e755]:
+                    - link "Go to channel EdBLive" [ref=e756]:
+                      - /url: /@EdBLive
+                    - link "EdBLive" [ref=e761]:
+                      - /url: /@EdBLive
+                  - generic [ref=e762]:
+                    - generic [ref=e763]: Complete audio + pro video recordings of The Rolling Stones Licks tour concert at the Twickenham Stadium, London, England.
+                    - tooltip "tooltip"
+                  - generic [ref=e766]:
+                    - generic [ref=e767]:
+                      - generic [ref=e771]: 23 chapters
+                      - button "intro | Brown Sugar | You Got Me Rocking | Don't Stop | Rocks Off | Wild Horses | You Can't Always Get What You Want | Paint It Black | Tumbling Dice | Band introductions | Slipping Away | Happy | Sympathy For The Devil | walk to b-stage | Star Star (B-stage) | I Just Want To Make Love To You (B-stage) | Street Fighting Man (B-stage) | Gimme Shelter (including intro/walk to main stage) | Honky Tonk Women | Start Me Up | (I Can't Get No) Satisfaction | Jumpin' Jack Flash (encore) | outro"
+                    - button "More" [ref=e776]
+              - generic [ref=e783]:
+                - link [ref=e785] [cursor=pointer]:
+                  - /url: /watch?v=JgxkCy02OaE&list=RDJgxkCy02OaE&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                - generic [ref=e787] [cursor=pointer]:
+                  - generic [ref=e788]:
+                    - heading "Rolling Stones No Filter Full Concert - Prague 2018-07-04 2 hours, 3 minutes" [level=3] [ref=e790]:
+                      - link "Rolling Stones No Filter Full Concert - Prague 2018-07-04 2 hours, 3 minutes" [ref=e791]:
+                        - /url: /watch?v=JgxkCy02OaE&list=RDJgxkCy02OaE&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                        - text: Rolling Stones No Filter Full Concert - Prague 2018-07-04
+                    - generic [ref=e794]:
+                      - generic [ref=e795]: 2.1M views
+                      - generic [ref=e796]: •6 years ago
+                  - generic [ref=e797]:
+                    - link "Go to channel progress6" [ref=e798]:
+                      - /url: /@progress6
+                    - link "progress6" [ref=e803]:
+                      - /url: /@progress6
+                  - generic [ref=e804]:
+                    - generic [ref=e805]: The Rolling Stones No Filter Tour 2018 Prague, Czech Republic Letnany Airport 4.7.2018 01. Intro 00:00:00 02. Street Fighting ...
+                    - tooltip "tooltip"
+                  - generic [ref=e808]:
+                    - generic [ref=e809]:
+                      - generic [ref=e813]: 22 chapters
+                      - button "01. Intro | 02. Street Fighting Man | 03. It's Only Rock 'n' Roll (But I Like It) | 04. Tumbling Dice | 05. Ride 'Em on Down | 06. Under My Thumb | 07. Like a Rolling Stone | 08. You Can't Always Get What You Want | 09. Paint it Black | 10. Honky Tonk Women | 11. Band Intros | 12. You Got the Silver | 13. Before They Make Me Run | 14. Sympathy for the Devil | 15. Miss You | 16. Midnight Rambler | 17. Start Me Up | 18. Jumpin' Jack Flash | 19. Brown Sugar | 20. Crowd | 21. Gimme Shelter | 22. (I Can't Get No) Satisfaction"
+                    - button "More" [ref=e818]
+              - generic [ref=e825]:
+                - link [ref=e827] [cursor=pointer]:
+                  - /url: /watch?v=AQB3Al74VN8&list=RDAQB3Al74VN8&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                - generic [ref=e829] [cursor=pointer]:
+                  - generic [ref=e830]:
+                    - heading "2021.11.06 Las Vegas Rolling Stones Full Concert 2 hours, 11 minutes" [level=3] [ref=e832]:
+                      - link "2021.11.06 Las Vegas Rolling Stones Full Concert 2 hours, 11 minutes" [ref=e833]:
+                        - /url: /watch?v=AQB3Al74VN8&list=RDAQB3Al74VN8&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                        - text: 2021.11.06 Las Vegas Rolling Stones Full Concert
+                    - generic [ref=e836]:
+                      - generic [ref=e837]: 1.1M views
+                      - generic [ref=e838]: •4 years ago
+                  - generic [ref=e839]:
+                    - link "Go to channel midiman nz" [ref=e840]:
+                      - /url: /@midimannz6112
+                    - link "midiman nz" [ref=e845]:
+                      - /url: /@midimannz6112
+                  - generic [ref=e846]:
+                    - generic [ref=e847]: 2021.11.06 Las Vegas Rolling Stones Full Concert Street Fighting Man It's Only Rock'n'Roll 19th Nervous Breakdown Tumbling ...
+                    - tooltip "tooltip"
+              - generic [ref=e849]:
+                - link [ref=e851] [cursor=pointer]:
+                  - /url: /watch?v=XLdZuMlspE0&list=RDXLdZuMlspE0&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                - generic [ref=e853] [cursor=pointer]:
+                  - generic [ref=e854]:
+                    - heading "The Rolling Stones Live in Japan 1990 1 hour, 56 minutes" [level=3] [ref=e856]:
+                      - link "The Rolling Stones Live in Japan 1990 1 hour, 56 minutes" [ref=e857]:
+                        - /url: /watch?v=XLdZuMlspE0&list=RDXLdZuMlspE0&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                        - text: The Rolling Stones Live in Japan 1990
+                    - generic [ref=e860]:
+                      - generic [ref=e861]: 1M views
+                      - generic [ref=e862]: •11 years ago
+                  - generic [ref=e863]:
+                    - link "Go to channel cminor7add9th" [ref=e864]:
+                      - /url: /@cminor7add9th
+                    - link "cminor7add9th" [ref=e869]:
+                      - /url: /@cminor7add9th
+            - generic "+6 more" [ref=e871] [cursor=pointer]
+        - generic [ref=e873]:
+          - link [ref=e875] [cursor=pointer]:
+            - /url: /watch?v=TP6ZxPoPpIE&list=RDTP6ZxPoPpIE&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e877] [cursor=pointer]:
+            - generic [ref=e878]:
+              - heading "Iconic Rolling Stones Moments from the 70s! 31 minutes" [level=3] [ref=e880]:
+                - link "Iconic Rolling Stones Moments from the 70s! 31 minutes" [ref=e881]:
+                  - /url: /watch?v=TP6ZxPoPpIE&list=RDTP6ZxPoPpIE&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: Iconic Rolling Stones Moments from the 70s!
+              - generic [ref=e884]:
+                - generic [ref=e885]: 2M views
+                - generic [ref=e886]: •4 years ago
+            - generic [ref=e887]:
+              - link "Go to channel The Rolling Stones" [ref=e888]:
+                - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+              - generic [ref=e889]:
+                - link "The Rolling Stones" [ref=e893]:
+                  - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+                - img "Official Artist Channel" [ref=e896]
+            - generic [ref=e898]:
+              - generic [ref=e899]: The 1970s held a lot of Iconic Moments for the Rolling Stones, from being live at The Marquee Club to the L.A. Forum! Re-live ...
+              - tooltip "tooltip"
+            - generic [ref=e902]:
+              - generic [ref=e903]:
+                - generic [ref=e907]: 4 chapters
+                - button "Happy (Ladies & Gentleman - 1972) | You Can't Always Get What You Want (L.A. Forum - 1975) | Shattered (Some Girls - Live in Texas - 1978) | Midnight Rambler (The Marquee Club - 1971)"
+              - button "More" [ref=e912]
+        - generic [ref=e919]:
+          - link [ref=e921] [cursor=pointer]:
+            - /url: /watch?v=t87B4frtEh8&list=RDt87B4frtEh8&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e923] [cursor=pointer]:
+            - generic [ref=e924]:
+              - heading "The Rolling Stones - Midnight Rambler [Live] HD Marquee Club 1971 NEW 10 minutes, 1 second" [level=3] [ref=e926]:
+                - link "The Rolling Stones - Midnight Rambler [Live] HD Marquee Club 1971 NEW 10 minutes, 1 second" [ref=e927]:
+                  - /url: /watch?v=t87B4frtEh8&list=RDt87B4frtEh8&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: The Rolling Stones - Midnight Rambler [Live] HD Marquee Club 1971 NEW
+              - generic [ref=e930]:
+                - generic [ref=e931]: 3.1M views
+                - generic [ref=e932]: •9 years ago
+            - generic [ref=e933]:
+              - link "Go to channel genaro garcia" [ref=e934]:
+                - /url: /@genarogarcia472
+              - link "genaro garcia" [ref=e939]:
+                - /url: /@genarogarcia472
+            - generic [ref=e940]:
+              - generic [ref=e941]: The show was an intimate, rare club appearance and very little footage has been released, until now. Part of the “From The Vault” ...
+              - tooltip "tooltip"
+        - generic [ref=e943]:
+          - link [ref=e945] [cursor=pointer]:
+            - /url: /watch?v=761yzGz4HzQ&list=RD761yzGz4HzQ&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e947] [cursor=pointer]:
+            - generic [ref=e948]:
+              - heading "The Rolling Stones - Beast of Burden (Live) - OFFICIAL 6 minutes, 38 seconds" [level=3] [ref=e950]:
+                - link "The Rolling Stones - Beast of Burden (Live) - OFFICIAL 6 minutes, 38 seconds" [ref=e951]:
+                  - /url: /watch?v=761yzGz4HzQ&list=RD761yzGz4HzQ&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: The Rolling Stones - Beast of Burden (Live) - OFFICIAL
+              - generic [ref=e954]:
+                - generic [ref=e955]: 6.3M views
+                - generic [ref=e956]: •13 years ago
+            - generic [ref=e957]:
+              - link "Go to channel The Rolling Stones" [ref=e958]:
+                - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+              - generic [ref=e959]:
+                - link "The Rolling Stones" [ref=e963]:
+                  - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+                - img "Official Artist Channel" [ref=e966]
+            - generic [ref=e968]:
+              - generic [ref=e969]: "A brand new studio album from The Rolling Stones… Hackney Diamonds Out October 20th & available to pre-order now: ..."
+              - tooltip "tooltip"
+        - generic [ref=e971]:
+          - link [ref=e973] [cursor=pointer]:
+            - /url: /watch?v=bk2_XMW6dio&list=RDbk2_XMW6dio&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e975] [cursor=pointer]:
+            - generic [ref=e976]:
+              - heading "The Rolling Stones - Stray Cat Blues (Live At The Wiltern) 4 minutes, 56 seconds" [level=3] [ref=e978]:
+                - link "The Rolling Stones - Stray Cat Blues (Live At The Wiltern) 4 minutes, 56 seconds" [ref=e979]:
+                  - /url: /watch?v=bk2_XMW6dio&list=RDbk2_XMW6dio&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: The Rolling Stones - Stray Cat Blues (Live At The Wiltern)
+              - generic [ref=e982]:
+                - generic [ref=e983]: 10K views
+                - generic [ref=e984]: •1 year ago
+            - generic [ref=e985]:
+              - link "Go to channel Gold of music" [ref=e986]:
+                - /url: /@Danick-4K
+              - link "Gold of music" [ref=e991]:
+                - /url: /@Danick-4K
+            - generic [ref=e992]:
+              - generic [ref=e993]: Other videos of this concert in my playlist - The Rolling Stones - Live At The Wiltern (2002/2024)
+              - tooltip "tooltip"
+        - generic [ref=e995]:
+          - link [ref=e997] [cursor=pointer]:
+            - /url: /watch?v=XQbuhm-RReQ&list=RDXQbuhm-RReQ&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+          - generic [ref=e999] [cursor=pointer]:
+            - generic [ref=e1000]:
+              - heading "The Rolling Stones - Jumpin' Jack Flash (Bridges To Buenos Aires) 6 minutes, 53 seconds" [level=3] [ref=e1002]:
+                - link "The Rolling Stones - Jumpin' Jack Flash (Bridges To Buenos Aires) 6 minutes, 53 seconds" [ref=e1003]:
+                  - /url: /watch?v=XQbuhm-RReQ&list=RDXQbuhm-RReQ&start_radio=1&pp=ygUtUm9sbGluZyBTdG9uZXMgbGl2ZSBibHVlcyBwZXJmb3JtYW5jZSBjb25jZXJ0oAcB
+                  - text: The Rolling Stones - Jumpin' Jack Flash (Bridges To Buenos Aires)
+              - generic [ref=e1006]:
+                - generic [ref=e1007]: 3.7M views
+                - generic [ref=e1008]: •6 years ago
+            - generic [ref=e1009]:
+              - link "Go to channel The Rolling Stones" [ref=e1010]:
+                - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+              - generic [ref=e1011]:
+                - link "The Rolling Stones" [ref=e1015]:
+                  - /url: /channel/UCB_Z6rBg3WW3NL4-QimhC2A
+                - img "Official Artist Channel" [ref=e1018]
+            - generic [ref=e1020]:
+              - generic [ref=e1021]: "A brand new studio album from The Rolling Stones… Hackney Diamonds Out October 20th & available to pre-order now: ..."
+              - tooltip "tooltip"

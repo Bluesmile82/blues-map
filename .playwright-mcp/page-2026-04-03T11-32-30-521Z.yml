@@ -1,0 +1,503 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+          - button "Next" [ref=e111] [cursor=pointer]
+        - link "About these results" [ref=e120] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e121]: About these results
+        - generic [ref=e128]:
+          - button "Search filters" [ref=e130] [cursor=pointer]:
+            - generic [ref=e131]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e142]:
+        - generic [ref=e147]:
+          - img [ref=e153]
+          - generic [ref=e155] [cursor=pointer]:
+            - generic [ref=e156]:
+              - link "Masterclass for new guitarists" [ref=e159]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CSk07TaXPaZSyJNHNhcIPnrmFoAey9rmZhgGsrcC-vhNkEAEgAGDVtdcCggEXY2EtcHViLTYyMTk4MTE3NDcwNDkzNzGgAZqvx_kCqAMEyAMKqgS1Ak_QKgTM8svZPRWf0vG0Eoeuuhk2NLr53Il5l11-WKapoTT23ZHoFPlmHMcykShv4nHSMc4N_4ycHsGF8f0OjyWPgQhF1vcd_8q507xv3ghkOSATg510Js7R3lmXxCO4aKodNeJAMwY2_6vk-wGehUr8FrNNbVK1BtyzVKB4Ymsp7QfbxdgQqrjsoTdPCv5TWbadsLWtxt-vIu4RbhjRAn5f9ZCvYCAzS5cLlxbuyIhc4c6PT0ij4B3AxVB96HdkaXcRsgQU95zJKdWL-EOShYDQWORF747KPSnyLyVQc4TTNbCpWkqbTOy_nliyoLimwjbzwCOBqdSecxIpcuRSzOGVrGC7TnZkbTseYw7hRQK4CBe8shV2rtEhSpJOCL4djSogo6soBNmdefdPpb-1mkoR2Xm-6YgFq_K95FCSBQgIE3iYlNaGAaAGboAHztC4hgGQBwGoB_LAsQKoB7jEsQKoB-G2sQKoB6XPsQKoB-edsQKoB-idsQKoB--1sQKoB_C1sQKoB_nTsQKoB8nasQKoB6ngsQKoB4QIqAem1LECqAeo0huoB7YHqAewm7ECqAeusbECqAfmvLECqAfKurECqAf9srECqAf3uLECqAf4uLECqAfIz7ECqAfJz7ECqAet4LECqAfNx7ECqAfx0bECqAf81bECqAf71bECqAeM1rECqAeL1rECqAea4bECqAed17ECqAed1LECqAeBxhuoB_yvsQKoB6vFG6gHt6GxAqgH1amxAqgH2KaxAqgH3rWxArgIAdIINwiAwYBQEAEYXjIIo4LAgICAoAw6EoDCgICAkIACgICAgICQhuADKkjZoNI1UBRY2OPM4MrRkwOaCSVodHRwczovL2xlYXJucHJhY3RpY2VwbGF5LmNvbS9zaWdudXAvsQktPOGoT3nMRMgJAMgJigKYCwG6C0MIAxAFGAQgCCgBMBxAAUgAUAFYTmAAaABwAYgBAJgBAaIBCwoAoAIBqAID2AIB2AEBgAIBiAIFugMJdmlicnV6YWJh0AsS0gwCEAGaDQESqg0CRVPIDQHSDfABaHR0cHM6Ly9sZWFybnByYWN0aWNlcGxheS5jb20vc2lnbnVwLz9hZGJfYWRfaWQ9NzEzMDg5NDY1MTM3JmFkYl9hZF9zb3VyY2U9Z29vZ2xlJmFkYl9jbGlja19pZD17Z2NsaWR9JmFkYl9jYW1wYWlnbl9pZD0yMTY4NTU2NTczOSZhZGJfYWRncm91cF9pZD0xNjY4NDYzMjc0MjYmYWRiX3RhcmdldF9pZD0mYWRiX3BsYWNlbWVudD0mYWRiX3RhcmdldD0mZ2FkX3NvdXJjZT0yJmdhZF9jYW1wYWlnbmlkPTIxNjg1NTY1NzM5uBP___________8BiBQBsBQDwBWBgIBA0BUB2BUBmBYB4hYCCAGAFwGKFxYIAxgBIAEoATABOAFAAUgBUAFYAWACoBcBqRdh6C_q7D-Vy7oXBigAMAA4AdAYAfAYAcIZAggB&gclid=EAIaIQobChMI1IzN4MrRkwMV0WZBAh2eXAF0EAEYASAAEgI98fD_BwE&num=1&cid=CAASF-RohQGPOcaf16BuNNFXRLu7VA6yhH_T&sig=AOD64_2xKtonmMqJ9G2W1F27N5bhkNjPEg&ms=%5BCLICK_MS%5D&nb=0&nx=%5BNX%5D&ny=%5BNY%5D&dim=%5BDIM%5D
+              - link "Online guitar courses taught by master guitar teacher Paul Davids." [ref=e162]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CSk07TaXPaZSyJNHNhcIPnrmFoAey9rmZhgGsrcC-vhNkEAEgAGDVtdcCggEXY2EtcHViLTYyMTk4MTE3NDcwNDkzNzGgAZqvx_kCqAMEyAMKqgS1Ak_QKgTM8svZPRWf0vG0Eoeuuhk2NLr53Il5l11-WKapoTT23ZHoFPlmHMcykShv4nHSMc4N_4ycHsGF8f0OjyWPgQhF1vcd_8q507xv3ghkOSATg510Js7R3lmXxCO4aKodNeJAMwY2_6vk-wGehUr8FrNNbVK1BtyzVKB4Ymsp7QfbxdgQqrjsoTdPCv5TWbadsLWtxt-vIu4RbhjRAn5f9ZCvYCAzS5cLlxbuyIhc4c6PT0ij4B3AxVB96HdkaXcRsgQU95zJKdWL-EOShYDQWORF747KPSnyLyVQc4TTNbCpWkqbTOy_nliyoLimwjbzwCOBqdSecxIpcuRSzOGVrGC7TnZkbTseYw7hRQK4CBe8shV2rtEhSpJOCL4djSogo6soBNmdefdPpb-1mkoR2Xm-6YgFq_K95FCSBQgIE3iYlNaGAaAGboAHztC4hgGQBwGoB_LAsQKoB7jEsQKoB-G2sQKoB6XPsQKoB-edsQKoB-idsQKoB--1sQKoB_C1sQKoB_nTsQKoB8nasQKoB6ngsQKoB4QIqAem1LECqAeo0huoB7YHqAewm7ECqAeusbECqAfmvLECqAfKurECqAf9srECqAf3uLECqAf4uLECqAfIz7ECqAfJz7ECqAet4LECqAfNx7ECqAfx0bECqAf81bECqAf71bECqAeM1rECqAeL1rECqAea4bECqAed17ECqAed1LECqAeBxhuoB_yvsQKoB6vFG6gHt6GxAqgH1amxAqgH2KaxAqgH3rWxArgIAdIINwiAwYBQEAEYXjIIo4LAgICAoAw6EoDCgICAkIACgICAgICQhuADKkjZoNI1UBRY2OPM4MrRkwOaCSVodHRwczovL2xlYXJucHJhY3RpY2VwbGF5LmNvbS9zaWdudXAvsQktPOGoT3nMRMgJAMgJigKYCwG6C0MIAxAFGAQgCCgBMBxAAUgAUAFYTmAAaABwAYgBAJgBAaIBCwoAoAIBqAID2AIB2AEBgAIBiAIFugMJdmlicnV6YWJh0AsS0gwCEAGaDQESqg0CRVPIDQHSDfABaHR0cHM6Ly9sZWFybnByYWN0aWNlcGxheS5jb20vc2lnbnVwLz9hZGJfYWRfaWQ9NzEzMDg5NDY1MTM3JmFkYl9hZF9zb3VyY2U9Z29vZ2xlJmFkYl9jbGlja19pZD17Z2NsaWR9JmFkYl9jYW1wYWlnbl9pZD0yMTY4NTU2NTczOSZhZGJfYWRncm91cF9pZD0xNjY4NDYzMjc0MjYmYWRiX3RhcmdldF9pZD0mYWRiX3BsYWNlbWVudD0mYWRiX3RhcmdldD0mZ2FkX3NvdXJjZT0yJmdhZF9jYW1wYWlnbmlkPTIxNjg1NTY1NzM5uBP___________8BiBQBsBQDwBWBgIBA0BUB2BUBmBYB4hYCCAGAFwGKFxYIAxgBIAEoATABOAFAAUgBUAFYAWACoBcBqRdh6C_q7D-Vy7oXBigAMAA4AdAYAfAYAcIZAggB&gclid=EAIaIQobChMI1IzN4MrRkwMV0WZBAh2eXAF0EAEYASAAEgI98fD_BwE&num=1&cid=CAASF-RohQGPOcaf16BuNNFXRLu7VA6yhH_T&sig=AOD64_2xKtonmMqJ9G2W1F27N5bhkNjPEg&ms=%5BCLICK_MS%5D&nb=7&nx=%5BNX%5D&ny=%5BNY%5D&dim=%5BDIM%5D
+              - generic [ref=e163]:
+                - generic [ref=e165]:
+                  - generic [ref=e166]: Sponsored
+                  - text: ·
+                - generic [ref=e168]: Paul Davids guitar
+            - button "My Ad Center" [ref=e171]
+        - generic [ref=e178]:
+          - link [ref=e180] [cursor=pointer]:
+            - /url: /watch?v=ZLYSfMUnUIQ&list=RDZLYSfMUnUIQ&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+            - img [ref=e182]
+            - img [ref=e185]:
+              - generic [ref=e187]: 2:44
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e188] [cursor=pointer]:
+            - generic [ref=e189]:
+              - heading "Welfare Blues 2 minutes, 44 seconds" [level=3] [ref=e191]:
+                - link "Welfare Blues 2 minutes, 44 seconds" [ref=e192]:
+                  - /url: /watch?v=ZLYSfMUnUIQ&list=RDZLYSfMUnUIQ&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Welfare Blues
+              - generic [ref=e196]: 13 views
+            - generic [ref=e197]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e198]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e203]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e204]:
+              - generic [ref=e205]: Provided to YouTube by Xelon Entertainment Welfare Blues · Sampson Pittman Top 9 Classics - The Very Best of Sampson ...
+              - tooltip "tooltip"
+        - generic [ref=e207]:
+          - link [ref=e209] [cursor=pointer]:
+            - /url: /watch?v=16NNfhhb7dA&list=RD16NNfhhb7dA&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+          - generic [ref=e211] [cursor=pointer]:
+            - generic [ref=e212]:
+              - heading "Calvin Frazier and Sampson Pittman - Alan Lomax Recording, Detroit, MI, January , 11, 1938 4 minutes, 25 seconds" [level=3] [ref=e214]:
+                - link "Calvin Frazier and Sampson Pittman - Alan Lomax Recording, Detroit, MI, January , 11, 1938 4 minutes, 25 seconds" [ref=e215]:
+                  - /url: /watch?v=16NNfhhb7dA&list=RD16NNfhhb7dA&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                  - text: Calvin Frazier and Sampson Pittman - Alan Lomax Recording, Detroit, MI, January , 11, 1938
+              - generic [ref=e218]:
+                - generic [ref=e219]: 475 views
+                - generic [ref=e220]: •7 years ago
+            - generic [ref=e221]:
+              - link "Go to channel Blues Compartido" [ref=e222]:
+                - /url: /@bluescompartido5786
+              - link "Blues Compartido" [ref=e228]:
+                - /url: /@bluescompartido5786
+            - generic [ref=e229]:
+              - generic [ref=e230]: Blues played by Sampson Pittman and Calvin Frazier, guitars.
+              - tooltip "tooltip"
+        - generic [ref=e232]:
+          - link [ref=e234] [cursor=pointer]:
+            - /url: /watch?v=k4m7cdXJvrE&list=RDk4m7cdXJvrE&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+          - generic [ref=e236] [cursor=pointer]:
+            - generic [ref=e237]:
+              - 'heading "Calvin Frazier: Blues 4 minutes, 10 seconds" [level=3] [ref=e239]':
+                - 'link "Calvin Frazier: Blues 4 minutes, 10 seconds" [ref=e240]':
+                  - /url: /watch?v=k4m7cdXJvrE&list=RDk4m7cdXJvrE&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                  - text: "Calvin Frazier: Blues"
+              - generic [ref=e243]:
+                - generic [ref=e244]: 2.2K views
+                - generic [ref=e245]: •14 years ago
+            - generic [ref=e246]:
+              - link "Go to channel DiverseRecords" [ref=e247]:
+                - /url: /@DiverseRecords
+              - link "DiverseRecords" [ref=e253]:
+                - /url: /@DiverseRecords
+            - generic [ref=e254]:
+              - generic [ref=e255]: A beautiful instrumental blues from the great 1938 Library of Congress session in Detroit, with Calvin Frazier and Sampson ...
+              - tooltip "tooltip"
+        - generic [ref=e257]:
+          - link [ref=e259] [cursor=pointer]:
+            - /url: /watch?v=855XbPpwEQY&list=RD855XbPpwEQY&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e261] [cursor=pointer]:
+            - generic [ref=e262]:
+              - 'heading "Sampson Pittman: Highway 61 Blues, Slide Guitar 3 minutes, 34 seconds" [level=3] [ref=e264]':
+                - 'link "Sampson Pittman: Highway 61 Blues, Slide Guitar 3 minutes, 34 seconds" [ref=e265]':
+                  - /url: /watch?v=855XbPpwEQY&list=RD855XbPpwEQY&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+                  - text: "Sampson Pittman: Highway 61 Blues, Slide Guitar"
+              - generic [ref=e268]:
+                - generic [ref=e269]: 2.6K views
+                - generic [ref=e270]: •12 years ago
+            - generic [ref=e271]:
+              - link "Go to channel tonfunk67" [ref=e272]:
+                - /url: /@tonfunk67
+              - link "tonfunk67" [ref=e278]:
+                - /url: /@tonfunk67
+            - generic [ref=e279]:
+              - generic [ref=e280]: Highway 61 Blues Sampson Pittman was born in Blytheville, Arkansas, ...recorded 1938 in Detroit, Michigan by A. Lomax.
+              - tooltip "tooltip"
+        - generic [ref=e282]:
+          - link [ref=e284] [cursor=pointer]:
+            - /url: /watch?v=IhiXGkHClLU&list=RDIhiXGkHClLU&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+          - generic [ref=e286] [cursor=pointer]:
+            - generic [ref=e287]:
+              - heading "Welfare Blues 2 minutes, 44 seconds" [level=3] [ref=e289]:
+                - link "Welfare Blues 2 minutes, 44 seconds" [ref=e290]:
+                  - /url: /watch?v=IhiXGkHClLU&list=RDIhiXGkHClLU&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                  - text: Welfare Blues
+              - generic [ref=e294]: 13 views
+            - generic [ref=e295]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e296]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e301]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e302]:
+              - generic [ref=e303]: Provided to YouTube by The Orchard Enterprises Welfare Blues · Sampson Pittman 100 Cash Poor Blues ℗ 2011 Vintage ...
+              - tooltip "tooltip"
+        - generic [ref=e305]:
+          - link [ref=e307] [cursor=pointer]:
+            - /url: /watch?v=Y-AfRi06zrI&list=RDY-AfRi06zrI&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e309] [cursor=pointer]:
+            - generic [ref=e310]:
+              - heading "Cotton Farmer Blues 3 minutes, 23 seconds" [level=3] [ref=e312]:
+                - link "Cotton Farmer Blues 3 minutes, 23 seconds" [ref=e313]:
+                  - /url: /watch?v=Y-AfRi06zrI&list=RDY-AfRi06zrI&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Cotton Farmer Blues
+              - generic [ref=e317]: 11 views
+            - generic [ref=e318]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e319]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e324]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e325]:
+              - generic [ref=e326]: Provided to YouTube by Xelon Entertainment Cotton Farmer Blues · Sampson Pittman Top 9 Classics - The Very Best of Sampson ...
+              - tooltip "tooltip"
+        - generic [ref=e328]:
+          - link [ref=e330] [cursor=pointer]:
+            - /url: /watch?v=V4wCnusMI_Y&list=RDV4wCnusMI_Y&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e332] [cursor=pointer]:
+            - generic [ref=e333]:
+              - heading "Welfare Blues 2 minutes, 44 seconds" [level=3] [ref=e335]:
+                - link "Welfare Blues 2 minutes, 44 seconds" [ref=e336]:
+                  - /url: /watch?v=V4wCnusMI_Y&list=RDV4wCnusMI_Y&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Welfare Blues
+              - generic [ref=e340]: 156 views
+            - generic [ref=e341]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e342]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e347]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e348]:
+              - generic [ref=e349]: Provided to YouTube by The Orchard Enterprises Welfare Blues · Sampson Pittman Motor City Blues ℗ 2008 Stardust Records ...
+              - tooltip "tooltip"
+        - generic [ref=e351]:
+          - link [ref=e353] [cursor=pointer]:
+            - /url: /watch?v=UyR4u4va9UM&list=RDUyR4u4va9UM&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+          - generic [ref=e355] [cursor=pointer]:
+            - generic [ref=e356]:
+              - heading "John Henry 2 minutes, 52 seconds" [level=3] [ref=e358]:
+                - link "John Henry 2 minutes, 52 seconds" [ref=e359]:
+                  - /url: /watch?v=UyR4u4va9UM&list=RDUyR4u4va9UM&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                  - text: John Henry
+              - generic [ref=e363]: 10 views
+            - generic [ref=e364]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e365]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e370]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e371]:
+              - generic [ref=e372]: Provided to YouTube by Xelon Entertainment John Henry · Sampson Pittman Top 9 Classics - The Very Best of Sampson Pittman ...
+              - tooltip "tooltip"
+        - generic [ref=e374]:
+          - link [ref=e376] [cursor=pointer]:
+            - /url: /watch?v=CNAmUl_1Qnc&list=RDCNAmUl_1Qnc&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+          - generic [ref=e378] [cursor=pointer]:
+            - generic [ref=e379]:
+              - heading "Highway 61 Blues 3 minutes, 36 seconds" [level=3] [ref=e381]:
+                - link "Highway 61 Blues 3 minutes, 36 seconds" [ref=e382]:
+                  - /url: /watch?v=CNAmUl_1Qnc&list=RDCNAmUl_1Qnc&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                  - text: Highway 61 Blues
+              - generic [ref=e386]: 28 views
+            - generic [ref=e387]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e388]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e393]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e394]:
+              - generic [ref=e395]: "Provided to YouTube by The Orchard Enterprises Highway 61 Blues · Sampson Pittman Let Me Tell You About the Blues: Detroit, ..."
+              - tooltip "tooltip"
+        - generic [ref=e397]:
+          - link [ref=e399] [cursor=pointer]:
+            - /url: /watch?v=Ac2chVY_9NU&list=RDAc2chVY_9NU&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e401] [cursor=pointer]:
+            - generic [ref=e402]:
+              - heading "Joe Louis 3 minutes, 28 seconds" [level=3] [ref=e404]:
+                - link "Joe Louis 3 minutes, 28 seconds" [ref=e405]:
+                  - /url: /watch?v=Ac2chVY_9NU&list=RDAc2chVY_9NU&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Joe Louis
+              - generic [ref=e409]: 82 views
+            - generic [ref=e410]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e411]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e416]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e417]:
+              - generic [ref=e418]: Provided to YouTube by The Orchard Enterprises Joe Louis · Sampson Pittman Motor City Blues ℗ 2008 Stardust Records ...
+              - tooltip "tooltip"
+        - generic [ref=e420]:
+          - link [ref=e422] [cursor=pointer]:
+            - /url: /watch?v=001Al3tJlzw&list=RD001Al3tJlzw&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+          - generic [ref=e424] [cursor=pointer]:
+            - generic [ref=e425]:
+              - heading "Welfare Blues 2 minutes, 44 seconds" [level=3] [ref=e427]:
+                - link "Welfare Blues 2 minutes, 44 seconds" [ref=e428]:
+                  - /url: /watch?v=001Al3tJlzw&list=RD001Al3tJlzw&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                  - text: Welfare Blues
+              - generic [ref=e432]: 25 views
+            - generic [ref=e433]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e434]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e439]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e440]:
+              - generic [ref=e441]: Provided to YouTube by The Orchard Enterprises Welfare Blues · Sampson Pittman Exile On Main Street Blues ℗ 2009 ...
+              - tooltip "tooltip"
+        - generic [ref=e443]:
+          - link [ref=e445] [cursor=pointer]:
+            - /url: /watch?v=ahZPJpnlwho&list=RDahZPJpnlwho&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e447] [cursor=pointer]:
+            - generic [ref=e448]:
+              - 'heading "African American Folk Music (MI/WI): Welfare blues 2 3 minutes, 27 seconds" [level=3] [ref=e450]':
+                - 'link "African American Folk Music (MI/WI): Welfare blues 2 3 minutes, 27 seconds" [ref=e451]':
+                  - /url: /watch?v=ahZPJpnlwho&list=RDahZPJpnlwho&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+                  - text: "African American Folk Music (MI/WI): Welfare blues 2"
+              - generic [ref=e454]:
+                - generic [ref=e455]: 36 views
+                - generic [ref=e456]: •9 years ago
+            - generic [ref=e457]:
+              - link "Go to channel Voices in Time" [ref=e458]:
+                - /url: /@voicesintime7800
+              - link "Voices in Time" [ref=e463]:
+                - /url: /@voicesintime7800
+            - generic [ref=e464]:
+              - generic [ref=e465]: "Title: Welfare blues, Contributor Names: Frazier, Calvin (Performer)Pittman, Sampson (Performer)Lomax, Alan, 1915-2002 ..."
+              - tooltip "tooltip"
+        - generic [ref=e467]:
+          - heading "People also watched" [level=2] [ref=e470]:
+            - generic [ref=e472]: People also watched
+          - generic [ref=e474]:
+            - generic [ref=e475]:
+              - generic [ref=e477]:
+                - link [ref=e479] [cursor=pointer]:
+                  - /url: /watch?v=EW4HVwCKkGs&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5Mzg%3D
+                - generic [ref=e481] [cursor=pointer]:
+                  - generic [ref=e482]:
+                    - heading "Magic Sam Guitar Lesson - \"Magic Rocker\" 26 minutes" [level=3] [ref=e484]:
+                      - link "Magic Sam Guitar Lesson - \"Magic Rocker\" 26 minutes" [ref=e485]:
+                        - /url: /watch?v=EW4HVwCKkGs&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5Mzg%3D
+                        - text: Magic Sam Guitar Lesson - "Magic Rocker"
+                    - generic [ref=e488]:
+                      - generic [ref=e489]: 6.8K views
+                      - generic [ref=e490]: •8 years ago
+                  - generic [ref=e491]:
+                    - link "Go to channel Old School Blues Guitar" [ref=e492]:
+                      - /url: /@OldSchoolBluesGuitar
+                    - link "Old School Blues Guitar" [ref=e497]:
+                      - /url: /@OldSchoolBluesGuitar
+                  - generic [ref=e498]:
+                    - text: NO TAB for this lesson - sorry! Follow the video - it's easy!!!! My lessons are FREE, but I would appreciate a small donation from ...
+                    - tooltip "tooltip"
+                  - generic [ref=e501]:
+                    - generic [ref=e502]:
+                      - generic [ref=e506]: 15 moments
+                      - button "hammering my 2nd finger to the 11th fret of the 3rd string | move it over the 4 chord | fret double stop first and second strings | start with the double stop | stop tenth fret first and second string | playing over the first position g bar chord | hammering on to the 6th fret of the 3rd string | starting playing over the first position d barre chord | starting on the tenth fret of the third string | getting the second string tenth fret | slide to the 15th fret of the second string | hear him starting on the twelfth fret of the fourth string | flatten out the ring finger on the twelfth fret | using my second finger on the 13th fret of the second string | slide to the 4th 15th fret of the 2nd string"
+                    - button "More" [ref=e511]
+              - generic [ref=e518]:
+                - link [ref=e520] [cursor=pointer]:
+                  - /url: /watch?v=KE2t4QPuFWk&list=RDKE2t4QPuFWk&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                - generic [ref=e522] [cursor=pointer]:
+                  - generic [ref=e523]:
+                    - heading "Blue Suit Blues – Midnight Chicago Blues & Smooth Jazz for Late Night Relaxation 1 hour, 1 minute" [level=3] [ref=e525]:
+                      - link "Blue Suit Blues – Midnight Chicago Blues & Smooth Jazz for Late Night Relaxation 1 hour, 1 minute" [ref=e526]:
+                        - /url: /watch?v=KE2t4QPuFWk&list=RDKE2t4QPuFWk&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                        - text: Blue Suit Blues – Midnight Chicago Blues & Smooth Jazz for Late Night Relaxation
+                    - generic [ref=e529]:
+                      - generic [ref=e530]: 105K views
+                      - generic [ref=e531]: •7 days ago
+                  - generic [ref=e532]:
+                    - link "Go to channel Blue Suit Blues" [ref=e533]:
+                      - /url: /@BlueSuitBluess
+                    - link "Blue Suit Blues" [ref=e538]:
+                      - /url: /@BlueSuitBluess
+                  - generic [ref=e539]:
+                    - generic [ref=e540]: Blue Suit Blues presents a deep midnight session where slow Chicago blues meets soulful vocals and smooth jazz textures for ...
+                    - tooltip "tooltip"
+              - generic [ref=e542]:
+                - link [ref=e544] [cursor=pointer]:
+                  - /url: /watch?v=CeRpbddep6k&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5Mzg%3D
+                - generic [ref=e546] [cursor=pointer]:
+                  - generic [ref=e547]:
+                    - heading "Jump Blues Guitar Solo Lesson - Blue Light Boogie (Bill Jennings) w/tabs 4 minutes, 48 seconds" [level=3] [ref=e549]:
+                      - link "Jump Blues Guitar Solo Lesson - Blue Light Boogie (Bill Jennings) w/tabs 4 minutes, 48 seconds" [ref=e550]:
+                        - /url: /watch?v=CeRpbddep6k&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5Mzg%3D
+                        - text: Jump Blues Guitar Solo Lesson - Blue Light Boogie (Bill Jennings) w/tabs
+                    - generic [ref=e553]:
+                      - generic [ref=e554]: 26K views
+                      - generic [ref=e555]: •7 years ago
+                  - generic [ref=e556]:
+                    - link "Go to channel Damian Bacci" [ref=e557]:
+                      - /url: /@Damianblf
+                    - link "Damian Bacci" [ref=e562]:
+                      - /url: /@Damianblf
+                  - generic [ref=e563]:
+                    - generic [ref=e564]: https://damianbacci.com In this lesson we'll be taking a look at Bill Jennings guitar solo that he played in the song "Blue Light ...
+                    - tooltip "tooltip"
+              - generic [ref=e566]:
+                - link [ref=e568] [cursor=pointer]:
+                  - /url: /watch?v=C0DpUF86_NU&list=RDC0DpUF86_NU&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                - generic [ref=e570] [cursor=pointer]:
+                  - generic [ref=e571]:
+                    - heading "I've Been Down In The Circle Before 3 minutes, 51 seconds" [level=3] [ref=e573]:
+                      - link "I've Been Down In The Circle Before 3 minutes, 51 seconds" [ref=e574]:
+                        - /url: /watch?v=C0DpUF86_NU&list=RDC0DpUF86_NU&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                        - text: I've Been Down In The Circle Before
+                    - generic [ref=e578]: 721 views
+                  - generic [ref=e579]:
+                    - link "Go to channel Sampson Pittman - Topic" [ref=e580]:
+                      - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+                    - link "Sampson Pittman - Topic" [ref=e585]:
+                      - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+                  - generic [ref=e586]:
+                    - generic [ref=e587]: Provided to YouTube by Universal Music Group I've Been Down In The Circle Before · Sampson Pittman The Land Where The ...
+                    - tooltip "tooltip"
+            - generic "+6 more" [ref=e589] [cursor=pointer]
+        - generic [ref=e591]:
+          - link [ref=e593] [cursor=pointer]:
+            - /url: /watch?v=EebFbcZZv0U&list=RDEebFbcZZv0U&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+          - generic [ref=e595] [cursor=pointer]:
+            - generic [ref=e596]:
+              - heading "John Henry 2 minutes, 52 seconds" [level=3] [ref=e598]:
+                - link "John Henry 2 minutes, 52 seconds" [ref=e599]:
+                  - /url: /watch?v=EebFbcZZv0U&list=RDEebFbcZZv0U&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                  - text: John Henry
+              - generic [ref=e603]: 257 views
+            - generic [ref=e604]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e605]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e610]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e611]:
+              - generic [ref=e612]: Provided to YouTube by The Orchard Enterprises John Henry · Sampson Pittman Motor City Blues ℗ 2008 Stardust Records ...
+              - tooltip "tooltip"
+        - generic [ref=e614]:
+          - link [ref=e616] [cursor=pointer]:
+            - /url: /watch?v=dLTrbPME00g&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5Mzg%3D
+          - generic [ref=e618] [cursor=pointer]:
+            - generic [ref=e619]:
+              - heading "Levee Camp Story 4 minutes, 45 seconds" [level=3] [ref=e621]:
+                - link "Levee Camp Story 4 minutes, 45 seconds" [ref=e622]:
+                  - /url: /watch?v=dLTrbPME00g&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5Mzg%3D
+                  - text: Levee Camp Story
+              - generic [ref=e626]: 11 views
+            - generic [ref=e627]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e628]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e633]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e634]:
+              - generic [ref=e635]: Provided to YouTube by Xelon Entertainment Levee Camp Story · Sampson Pittman Top 9 Classics - The Very Best of Sampson ...
+              - tooltip "tooltip"
+        - generic [ref=e637]:
+          - link [ref=e639] [cursor=pointer]:
+            - /url: /watch?v=QlcySqkyh9s&list=RDQlcySqkyh9s&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+          - generic [ref=e641] [cursor=pointer]:
+            - generic [ref=e642]:
+              - heading "This Old World's in a Tangle 3 minutes, 45 seconds" [level=3] [ref=e644]:
+                - link "This Old World's in a Tangle 3 minutes, 45 seconds" [ref=e645]:
+                  - /url: /watch?v=QlcySqkyh9s&list=RDQlcySqkyh9s&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                  - text: This Old World's in a Tangle
+              - generic [ref=e649]: 267 views
+            - generic [ref=e650]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e651]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e656]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e657]:
+              - generic [ref=e658]: "Provided to YouTube by The Orchard Enterprises This Old World's in a Tangle · Sampson Pittman · Alan Lomax Michigan-I-O: ..."
+              - tooltip "tooltip"
+        - generic [ref=e660]:
+          - link [ref=e662] [cursor=pointer]:
+            - /url: /watch?v=tTbmtPJTxp8&list=RDtTbmtPJTxp8&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+          - generic [ref=e664] [cursor=pointer]:
+            - generic [ref=e665]:
+              - heading "I've Been Down in the Circle Before 3 minutes, 51 seconds" [level=3] [ref=e667]:
+                - link "I've Been Down in the Circle Before 3 minutes, 51 seconds" [ref=e668]:
+                  - /url: /watch?v=tTbmtPJTxp8&list=RDtTbmtPJTxp8&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                  - text: I've Been Down in the Circle Before
+              - generic [ref=e672]: 11 views
+            - generic [ref=e673]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e674]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e679]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e680]:
+              - generic [ref=e681]: Provided to YouTube by Xelon Entertainment I've Been Down in the Circle Before · Sampson Pittman Top 9 Classics - The Very ...
+              - tooltip "tooltip"
+        - generic [ref=e683]:
+          - link [ref=e685] [cursor=pointer]:
+            - /url: /watch?v=f5ALP0NpSEI&list=RDf5ALP0NpSEI&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e687] [cursor=pointer]:
+            - generic [ref=e688]:
+              - heading "Sampson Pittman - Brother Low-Down And Sister Do-Dad (Parts 1, 2, and 3) 6 minutes, 39 seconds" [level=3] [ref=e690]:
+                - link "Sampson Pittman - Brother Low-Down And Sister Do-Dad (Parts 1, 2, and 3) 6 minutes, 39 seconds" [ref=e691]:
+                  - /url: /watch?v=f5ALP0NpSEI&list=RDf5ALP0NpSEI&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Sampson Pittman - Brother Low-Down And Sister Do-Dad (Parts 1, 2, and 3)
+              - generic [ref=e694]:
+                - generic [ref=e695]: 3.3K views
+                - generic [ref=e696]: •13 years ago
+            - generic [ref=e697]:
+              - link "Go to channel TheBWJohnson" [ref=e698]:
+                - /url: /@TheBWJohnson
+              - link "TheBWJohnson" [ref=e703]:
+                - /url: /@TheBWJohnson
+            - generic [ref=e704]:
+              - generic [ref=e705]: The Devil Is Busy recorded by Alan Lomax November 1, 1938 w/Calvin Frazier Pittman was born and raised in the Arkansas Delta ...
+              - tooltip "tooltip"
+        - generic [ref=e707]:
+          - link [ref=e709] [cursor=pointer]:
+            - /url: /watch?v=MwafvZnIx_Q&list=RDMwafvZnIx_Q&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+          - generic [ref=e711] [cursor=pointer]:
+            - generic [ref=e712]:
+              - heading "Joe Louis 3 minutes, 28 seconds" [level=3] [ref=e714]:
+                - link "Joe Louis 3 minutes, 28 seconds" [ref=e715]:
+                  - /url: /watch?v=MwafvZnIx_Q&list=RDMwafvZnIx_Q&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                  - text: Joe Louis
+              - generic [ref=e719]: 13 views
+            - generic [ref=e720]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e721]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e726]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e727]:
+              - generic [ref=e728]: Provided to YouTube by Xelon Entertainment Joe Louis · Sampson Pittman Top 9 Classics - The Very Best of Sampson Pittman ...
+              - tooltip "tooltip"
+        - generic [ref=e730]:
+          - link [ref=e732] [cursor=pointer]:
+            - /url: /watch?v=wmO-72Nwmx8&list=RDwmO-72Nwmx8&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+          - generic [ref=e734] [cursor=pointer]:
+            - generic [ref=e735]:
+              - heading "Highway 61 Blues 3 minutes, 36 seconds" [level=3] [ref=e737]:
+                - link "Highway 61 Blues 3 minutes, 36 seconds" [ref=e738]:
+                  - /url: /watch?v=wmO-72Nwmx8&list=RDwmO-72Nwmx8&start_radio=1&pp=ygUpU2FtcHNvbiBQaXR0bWFuIGJsdWVzIGd1aXRhciBEZXRyb2l0IDE5MzigBwE%3D
+                  - text: Highway 61 Blues
+              - generic [ref=e742]: 36 views
+            - generic [ref=e743]:
+              - link "Go to channel Sampson Pittman - Topic" [ref=e744]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+              - link "Sampson Pittman - Topic" [ref=e749]:
+                - /url: /channel/UCGCgvHB4fMLcNmOp9OEJnYA
+            - generic [ref=e750]:
+              - generic [ref=e751]: Provided to YouTube by Streaming Only Highway 61 Blues · Sampson Pittman Texas Blues (Blues People - 1930 - 1939) ℗ Salt ...
+              - tooltip "tooltip"

@@ -1,0 +1,682 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - generic [ref=e13]:
+          - link "YouTube Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e19]:
+              - img
+          - generic [ref=e20]: ES
+        - button "Skip navigation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Skip navigation
+      - button "Search" [ref=e31] [cursor=pointer]:
+        - generic [ref=e34]:
+          - img
+        - tooltip "tooltip"
+      - generic [ref=e36]:
+        - button "Settings" [ref=e41] [cursor=pointer]
+        - link "Sign in" [ref=e45] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DBill%252BJennings%252Bguitarist%252Bjazz%252Bblues%252Blive&hl=en&ec=65620
+          - generic [ref=e48]: Sign in
+  - generic [ref=e52]:
+    - main [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e56]:
+          - generic [ref=e59]:
+            - tablist [ref=e61]:
+              - tab "All" [selected] [ref=e65] [cursor=pointer]:
+                - generic [ref=e67]: All
+              - tab "Shorts" [ref=e74] [cursor=pointer]:
+                - generic [ref=e76]: Shorts
+              - tab "Videos" [ref=e83] [cursor=pointer]:
+                - generic [ref=e85]: Videos
+              - tab "Unwatched" [ref=e92] [cursor=pointer]:
+                - generic [ref=e94]: Unwatched
+              - tab "Watched" [ref=e101] [cursor=pointer]:
+                - generic [ref=e103]: Watched
+              - tab "Recently uploaded" [ref=e110] [cursor=pointer]:
+                - generic [ref=e112]: Recently uploaded
+              - tab "Live" [ref=e119] [cursor=pointer]:
+                - generic [ref=e121]: Live
+            - button "Next" [ref=e129] [cursor=pointer]
+          - link "About these results" [ref=e138] [cursor=pointer]:
+            - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+            - generic [ref=e139]: About these results
+          - generic [ref=e146]:
+            - button "Search filters" [ref=e148] [cursor=pointer]:
+              - generic [ref=e149]: Filters
+            - tooltip "tooltip"
+        - generic [ref=e160]:
+          - generic [ref=e162]:
+            - link [ref=e164] [cursor=pointer]:
+              - /url: /watch?v=BY_uJk8oHJs&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+              - img [ref=e166]
+              - img [ref=e169]:
+                - generic [ref=e170]: 24:06
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e171] [cursor=pointer]:
+              - generic [ref=e172]:
+                - generic [ref=e173]:
+                  - heading "Cool Jazz Blues guitar study! Bill Jennings style bebop lines & simple old school swagger! 24 minutes" [level=3] [ref=e174]:
+                    - link "Cool Jazz Blues guitar study! Bill Jennings style bebop lines & simple old school swagger! 24 minutes" [ref=e175]:
+                      - /url: /watch?v=BY_uJk8oHJs&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+                      - text: Cool Jazz Blues guitar study! Bill Jennings style bebop lines & simple old school swagger!
+                  - button "Action menu" [ref=e179]
+                - generic [ref=e183]:
+                  - generic [ref=e184]: 39K views
+                  - generic [ref=e185]: •1 year ago
+              - generic [ref=e186]:
+                - link "Go to channel Alex Farran Guitar" [ref=e187]:
+                  - /url: /@AlexFarranGuitar
+                - link "Alex Farran Guitar" [ref=e193]:
+                  - /url: /@AlexFarranGuitar
+              - generic [ref=e194]:
+                - text: Access all lesson materials by becoming a Patreon at the link below for just a small monthly fee!..
+                - tooltip "tooltip"
+              - img "4K" [ref=e197]:
+                - generic [ref=e198]: 4K
+              - generic [ref=e201]:
+                - generic [ref=e202]:
+                  - generic [ref=e206]: 19 moments
+                  - 'button "Learning the changes! | Chord functions | Getting fancy! | Lead study breakdown | Book a private Zoom lesson! | ii-V thinking | Charlie Parker bebop vocabulary | Bill Jennings/Django style | Turnaround ii-V lick | Solo #2 | Classic piano-lick | ii-V of IV | E diminished 7th arpeggio | Arpeggios within arpeggios! | Blues scale broad-strokes | Altered chord stabs; Shout Chorus style | Thoughts | Tone talk! | A small favour?"'
+                - button "More" [ref=e211]
+          - generic [ref=e217]:
+            - generic [ref=e220]:
+              - img [ref=e222]
+              - heading "Shorts" [level=2] [ref=e225]
+            - generic [ref=e226]:
+              - generic [ref=e227]:
+                - generic [ref=e230]:
+                  - link [ref=e231] [cursor=pointer]:
+                    - /url: /shorts/6aQgsP1ZDdk
+                  - generic [ref=e235] [cursor=pointer]:
+                    - link "“Big Boy” Bill Jennings blues solo" [ref=e236]:
+                      - /url: /shorts/6aQgsP1ZDdk
+                    - generic [ref=e237]: 1.5K views
+                  - button "More actions" [ref=e239] [cursor=pointer]
+                - generic [ref=e247]:
+                  - link [ref=e248] [cursor=pointer]:
+                    - /url: /shorts/5x9NuYf6VVY
+                  - generic [ref=e252] [cursor=pointer]:
+                    - 'link "Some Bill Jennings on the Silvertone 1385 #silvertoneguitar #bluesguitar #guitar #jazz #shorts" [ref=e253]':
+                      - /url: /shorts/5x9NuYf6VVY
+                    - generic [ref=e254]: 1.1K views
+                  - button "More actions" [ref=e256] [cursor=pointer]
+              - generic [ref=e262]:
+                - generic [ref=e265]:
+                  - link [ref=e266] [cursor=pointer]:
+                    - /url: /shorts/1kEIb9exRrA
+                  - generic [ref=e270] [cursor=pointer]:
+                    - link "A bit of Bill Jennings on a 1956 Epiphone Triumph." [ref=e271]:
+                      - /url: /shorts/1kEIb9exRrA
+                    - generic [ref=e272]: 714 views
+                  - button "More actions" [ref=e274] [cursor=pointer]
+                - generic [ref=e282]:
+                  - link [ref=e283] [cursor=pointer]:
+                    - /url: /shorts/J4kYBXkgEpc
+                  - generic [ref=e287] [cursor=pointer]:
+                    - 'link "Underrated Blues Guitarists Ep. 1: Bill Jennings" [ref=e288]':
+                      - /url: /shorts/J4kYBXkgEpc
+                    - generic [ref=e289]: 2.3K views
+                  - button "More actions" [ref=e291] [cursor=pointer]
+            - button "Show more" [ref=e300] [cursor=pointer]:
+              - generic [ref=e301]: Show more
+          - generic [ref=e308]:
+            - link [ref=e310] [cursor=pointer]:
+              - /url: /watch?v=-xII_wGoWaQ&list=RD-xII_wGoWaQ&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+            - generic [ref=e312] [cursor=pointer]:
+              - generic [ref=e313]:
+                - generic [ref=e314]:
+                  - heading "Little Charlie Baty & Junior Watson - Big Boy (Bill Jennings) - Live at Atlantis, Basel 7 minutes, 35 seconds" [level=3] [ref=e315]:
+                    - link "Little Charlie Baty & Junior Watson - Big Boy (Bill Jennings) - Live at Atlantis, Basel 7 minutes, 35 seconds" [ref=e316]:
+                      - /url: /watch?v=-xII_wGoWaQ&list=RD-xII_wGoWaQ&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                      - text: Little Charlie Baty & Junior Watson - Big Boy (Bill Jennings) - Live at Atlantis, Basel
+                  - button "Action menu" [ref=e320]
+                - generic [ref=e324]:
+                  - generic [ref=e325]: 15K views
+                  - generic [ref=e326]: •5 years ago
+              - generic [ref=e327]:
+                - link "Go to channel amedeo pillitteri (acpilly)" [ref=e328]:
+                  - /url: /@amedeopillitteri1380
+                - link "amedeo pillitteri (acpilly)" [ref=e333]:
+                  - /url: /@amedeopillitteri1380
+              - generic [ref=e334]:
+                - generic [ref=e335]: "West Coast Blues Guitar Summit 2018 - live at Atlantis, Basel Mitch Kashmar: Lead vocals, Harmonica Junior Watson: Guitar Little ..."
+                - tooltip "tooltip"
+          - generic [ref=e337]:
+            - link [ref=e339] [cursor=pointer]:
+              - /url: /watch?v=Ze6mRO_PyVg&list=RDZe6mRO_PyVg&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+            - generic [ref=e341] [cursor=pointer]:
+              - generic [ref=e342]:
+                - generic [ref=e343]:
+                  - heading "\"Big Boy\" - Bill Jennings (live) 3 minutes, 6 seconds" [level=3] [ref=e344]:
+                    - link "\"Big Boy\" - Bill Jennings (live) 3 minutes, 6 seconds" [ref=e345]:
+                      - /url: /watch?v=Ze6mRO_PyVg&list=RDZe6mRO_PyVg&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                      - text: "\"Big Boy\" - Bill Jennings (live)"
+                  - button "Action menu" [ref=e349]
+                - generic [ref=e353]:
+                  - generic [ref=e354]: 1.7K views
+                  - generic [ref=e355]: •6 years ago
+              - generic [ref=e356]:
+                - link "Go to channel Arrigo Martelli" [ref=e357]:
+                  - /url: /@ArrigoMartelli
+                - link "Arrigo Martelli" [ref=e362]:
+                  - /url: /@ArrigoMartelli
+              - generic [ref=e363]:
+                - generic [ref=e364]: Here's our rendition of the classic tune “Big Boy”, by the great swing, blues, and bebop guitarist Bill Jennings. ♫ Tabs / Sheet ...
+                - tooltip "tooltip"
+          - generic [ref=e365]:
+            - generic [ref=e368]:
+              - img [ref=e370]
+              - heading "Shorts" [level=2] [ref=e373]
+            - generic [ref=e374]:
+              - generic [ref=e375]:
+                - generic [ref=e378]:
+                  - link [ref=e379] [cursor=pointer]:
+                    - /url: /shorts/wEI-eEq-v1s
+                  - generic [ref=e383] [cursor=pointer]:
+                    - link "John Jennings, Caleb Ginyard, George McFadden, Ted Brooks - Brother Bill 1945 (by louis armstrong)" [ref=e384]:
+                      - /url: /shorts/wEI-eEq-v1s
+                    - generic [ref=e385]: 2.2K views
+                  - button "More actions" [ref=e387] [cursor=pointer]
+                - generic [ref=e395]:
+                  - link [ref=e396] [cursor=pointer]:
+                    - /url: /shorts/PegHmNDgq3U
+                    - img [ref=e401]:
+                      - generic [ref=e402]: New
+                  - generic [ref=e403] [cursor=pointer]:
+                    - link "Billy Gibbons with Waiting \"On The Bus Jesus / Just Left Chicago\" from Skyville Live" [ref=e404]:
+                      - /url: /shorts/PegHmNDgq3U
+                    - generic [ref=e405]: 7.6K views
+                  - button "More actions" [ref=e407] [cursor=pointer]
+              - generic [ref=e413]:
+                - generic [ref=e416]:
+                  - link [ref=e417] [cursor=pointer]:
+                    - /url: /shorts/Z5beAOu4FTA
+                  - generic [ref=e421] [cursor=pointer]:
+                    - 'link "Jazz Blues Guitar Solo #shorts #guitar #jazz" [ref=e422]':
+                      - /url: /shorts/Z5beAOu4FTA
+                    - generic [ref=e423]: 135 views
+                  - button "More actions" [ref=e425] [cursor=pointer]
+                - generic [ref=e433]:
+                  - link [ref=e434] [cursor=pointer]:
+                    - /url: /shorts/hA7MqM-GK0Y
+                  - generic [ref=e438] [cursor=pointer]:
+                    - link "Jump Blues Melting Pot" [ref=e439]:
+                      - /url: /shorts/hA7MqM-GK0Y
+                    - generic [ref=e440]: 1.3K views
+                  - button "More actions" [ref=e442] [cursor=pointer]
+            - button "Show more" [ref=e451] [cursor=pointer]:
+              - generic [ref=e452]: Show more
+          - generic [ref=e459] [cursor=pointer]:
+            - link [ref=e460]:
+              - /url: /watch?v=Yc65bhfWqI0&list=PLeRexR6C2M1Es2OHH3b-7jFFdEm4H9J6E
+              - generic [ref=e472]: 8 videos
+            - generic [ref=e475]:
+              - heading "jump blues, jazz swing guitar - Bill Jennings" [level=3] [ref=e476]:
+                - link "jump blues, jazz swing guitar - Bill Jennings" [ref=e477]:
+                  - /url: /watch?v=Yc65bhfWqI0&list=PLeRexR6C2M1Es2OHH3b-7jFFdEm4H9J6E
+              - generic [ref=e479]:
+                - generic [ref=e480]:
+                  - link "Joey Driven" [ref=e483]:
+                    - /url: /@JoeyDriven
+                  - generic [ref=e484]: •
+                  - link "Playlist" [ref=e487]:
+                    - /url: /@JoeyDriven
+                - link "Bill Jennings - Glide On · 5:35" [ref=e491]:
+                  - /url: /watch?v=Yc65bhfWqI0&list=PLeRexR6C2M1Es2OHH3b-7jFFdEm4H9J6E&pp=0gcJCRwBOCosWNin
+                - link "Bill Jennings - Brillin' And Bluin' · 4:47" [ref=e494]:
+                  - /url: /watch?v=nSqRbOE3msI&list=PLeRexR6C2M1Es2OHH3b-7jFFdEm4H9J6E
+                - link "View full playlist" [ref=e499]:
+                  - /url: /playlist?list=PLeRexR6C2M1Es2OHH3b-7jFFdEm4H9J6E
+          - generic [ref=e501]:
+            - link [ref=e503] [cursor=pointer]:
+              - /url: /watch?v=nnf4OUYuaRs&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl0gcJCdkKAYcqIYzv
+            - generic [ref=e505] [cursor=pointer]:
+              - generic [ref=e506]:
+                - generic [ref=e507]:
+                  - heading "Joel Paterson – “Big Boy” Bill Jennings 1 minute, 54 seconds" [level=3] [ref=e508]:
+                    - link "Joel Paterson – “Big Boy” Bill Jennings 1 minute, 54 seconds" [ref=e509]:
+                      - /url: /watch?v=nnf4OUYuaRs&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl0gcJCdkKAYcqIYzv
+                      - text: Joel Paterson – “Big Boy” Bill Jennings
+                  - button "Action menu" [ref=e513]
+                - generic [ref=e517]:
+                  - generic [ref=e518]: 15K views
+                  - generic [ref=e519]: •7 years ago
+              - generic [ref=e520]:
+                - link "Go to channel Joel Paterson" [ref=e521]:
+                  - /url: /@thejoelpaterson
+                - link "Joel Paterson" [ref=e526]:
+                  - /url: /@thejoelpaterson
+              - generic [ref=e527]:
+                - generic [ref=e528]: Here is an all-time classic solo by the great swing, blues, and bebop guitarist Bill Jennings, who recorded “Big Boy” with Bill ...
+                - tooltip "tooltip"
+          - generic [ref=e530]:
+            - link [ref=e532] [cursor=pointer]:
+              - /url: /watch?v=3LJ0PFjvG5c&list=RD3LJ0PFjvG5c&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+            - generic [ref=e534] [cursor=pointer]:
+              - generic [ref=e535]:
+                - generic [ref=e536]:
+                  - heading "What's New - Bill Jennings Guitar Solo (full piece) 3 minutes, 33 seconds" [level=3] [ref=e537]:
+                    - link "What's New - Bill Jennings Guitar Solo (full piece) 3 minutes, 33 seconds" [ref=e538]:
+                      - /url: /watch?v=3LJ0PFjvG5c&list=RD3LJ0PFjvG5c&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                      - text: What's New - Bill Jennings Guitar Solo (full piece)
+                  - button "Action menu" [ref=e542]
+                - generic [ref=e546]:
+                  - generic [ref=e547]: 6.9K views
+                  - generic [ref=e548]: •12 years ago
+              - generic [ref=e549]:
+                - link "Go to channel Alex Farran Guitar" [ref=e550]:
+                  - /url: /@AlexFarranGuitar
+                - link "Alex Farran Guitar" [ref=e555]:
+                  - /url: /@AlexFarranGuitar
+              - generic [ref=e556]:
+                - generic [ref=e557]: Today's solo is actually a full piece. The incredible Bill Jennings doing his thing on "What's New", featuring Andy Johnson on ...
+                - tooltip "tooltip"
+          - generic [ref=e559]:
+            - link [ref=e561] [cursor=pointer]:
+              - /url: /watch?v=HYQK0i-IEps&list=RDHYQK0i-IEps&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+            - generic [ref=e563] [cursor=pointer]:
+              - generic [ref=e564]:
+                - generic [ref=e565]:
+                  - 'heading "Midnight Cannonball plays \"Big Boy\" (Bill Jennings) 11/11/23 #jumpblues #jazz #jazzblues #swingblues 1 minute, 51 seconds" [level=3] [ref=e566]':
+                    - 'link "Midnight Cannonball plays \"Big Boy\" (Bill Jennings) 11/11/23 #jumpblues #jazz #jazzblues #swingblues 1 minute, 51 seconds" [ref=e567]':
+                      - /url: /watch?v=HYQK0i-IEps&list=RDHYQK0i-IEps&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                      - text: "Midnight Cannonball plays \"Big Boy\" (Bill Jennings) 11/11/23 #jumpblues #jazz #jazzblues #swingblues"
+                  - button "Action menu" [ref=e571]
+                - generic [ref=e575]:
+                  - generic [ref=e576]: 152 views
+                  - generic [ref=e577]: •2 years ago
+              - generic [ref=e578]:
+                - link "Go to channel Neil Grove & Midnight Cannonball" [ref=e579]:
+                  - /url: /@neilgrove-midnightcannonball
+                - link "Neil Grove & Midnight Cannonball" [ref=e584]:
+                  - /url: /@neilgrove-midnightcannonball
+          - generic [ref=e586]:
+            - link [ref=e588] [cursor=pointer]:
+              - /url: /watch?v=bO1-YyVfIB8&list=RDbO1-YyVfIB8&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+            - generic [ref=e590] [cursor=pointer]:
+              - generic [ref=e591]:
+                - generic [ref=e592]:
+                  - heading "Big Boy - Bill Jennings' iconic jump blues solo (note for note) Billy Butler? 2 minutes, 13 seconds" [level=3] [ref=e593]:
+                    - link "Big Boy - Bill Jennings' iconic jump blues solo (note for note) Billy Butler? 2 minutes, 13 seconds" [ref=e594]:
+                      - /url: /watch?v=bO1-YyVfIB8&list=RDbO1-YyVfIB8&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                      - text: Big Boy - Bill Jennings' iconic jump blues solo (note for note) Billy Butler?
+                  - button "Action menu" [ref=e598]
+                - generic [ref=e602]:
+                  - generic [ref=e603]: 5.9K views
+                  - generic [ref=e604]: •3 years ago
+              - generic [ref=e605]:
+                - link "Go to channel Alex Farran Guitar" [ref=e606]:
+                  - /url: /@AlexFarranGuitar
+                - link "Alex Farran Guitar" [ref=e611]:
+                  - /url: /@AlexFarranGuitar
+              - generic [ref=e612]:
+                - text: Click here to purchase my complete transcription for this awesome solo!.. https://smogfalls.gumroad.com/l/pokuj A legendary solo ...
+                - tooltip "tooltip"
+              - img "4K" [ref=e615]:
+                - generic [ref=e616]: 4K
+          - generic [ref=e618]:
+            - link [ref=e620] [cursor=pointer]:
+              - /url: /watch?v=GwVSwx2ZXx4&list=RDGwVSwx2ZXx4&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+            - generic [ref=e622] [cursor=pointer]:
+              - generic [ref=e623]:
+                - generic [ref=e624]:
+                  - heading "Bill Jennings - Enough Said! 37 minutes" [level=3] [ref=e625]:
+                    - link "Bill Jennings - Enough Said! 37 minutes" [ref=e626]:
+                      - /url: /watch?v=GwVSwx2ZXx4&list=RDGwVSwx2ZXx4&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                      - text: Bill Jennings - Enough Said!
+                  - button "Action menu" [ref=e630]
+                - generic [ref=e634]:
+                  - generic [ref=e635]: 426 views
+                  - generic [ref=e636]: •11 months ago
+              - generic [ref=e637]:
+                - link "Go to channel Classic Jazz Music" [ref=e638]:
+                  - /url: /@ClassicJazzMusic
+                - link "Classic Jazz Music" [ref=e643]:
+                  - /url: /@ClassicJazzMusic
+              - generic [ref=e644]:
+                - generic [ref=e645]: Bill Jennings - Enough Said! 0:00 Enough Said! 6:34 Tough Gain 10:49 Volare 17:47 Dark Eyes 22:25 It Could Happen To You ...
+                - tooltip "tooltip"
+              - img "4K" [ref=e648]:
+                - generic [ref=e649]: 4K
+          - generic [ref=e651]:
+            - link [ref=e653] [cursor=pointer]:
+              - /url: /watch?v=W4v3kIxz034&list=RDW4v3kIxz034&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+            - generic [ref=e655] [cursor=pointer]:
+              - generic [ref=e656]:
+                - generic [ref=e657]:
+                  - heading "July 6, 1954 recording \"Piccadilly Circus\", Bill Jennings 2 minutes" [level=3] [ref=e658]:
+                    - link "July 6, 1954 recording \"Piccadilly Circus\", Bill Jennings 2 minutes" [ref=e659]:
+                      - /url: /watch?v=W4v3kIxz034&list=RDW4v3kIxz034&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                      - text: July 6, 1954 recording "Piccadilly Circus", Bill Jennings
+                  - button "Action menu" [ref=e663]
+                - generic [ref=e667]:
+                  - generic [ref=e668]: 1.8K views
+                  - generic [ref=e669]: •8 years ago
+              - generic [ref=e670]:
+                - link "Go to channel Remember Our Music" [ref=e671]:
+                  - /url: /@rememberourmusic53
+                - link "Remember Our Music" [ref=e676]:
+                  - /url: /@rememberourmusic53
+              - generic [ref=e677]:
+                - generic [ref=e678]: Bill Jenning's sound has been compared to Tiny Grimes with a hint of early Charlie Christian. A peer of Billy Butler, Jennings ...
+                - tooltip "tooltip"
+          - generic [ref=e680]:
+            - link [ref=e682] [cursor=pointer]:
+              - /url: /watch?v=duELXXIxtKc&list=RDduELXXIxtKc&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+            - generic [ref=e684] [cursor=pointer]:
+              - generic [ref=e685]:
+                - generic [ref=e686]:
+                  - heading "Bill Jennings \"Big Boy\" Solo (Mayones Legend P-90) 2 minutes, 9 seconds" [level=3] [ref=e687]:
+                    - link "Bill Jennings \"Big Boy\" Solo (Mayones Legend P-90) 2 minutes, 9 seconds" [ref=e688]:
+                      - /url: /watch?v=duELXXIxtKc&list=RDduELXXIxtKc&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                      - text: Bill Jennings "Big Boy" Solo (Mayones Legend P-90)
+                  - button "Action menu" [ref=e692]
+                - generic [ref=e696]:
+                  - generic [ref=e697]: 5.6K views
+                  - generic [ref=e698]: •9 years ago
+              - generic [ref=e699]:
+                - link "Go to channel ROOGUITAR" [ref=e700]:
+                  - /url: /@rooguitar
+                - link "ROOGUITAR" [ref=e705]:
+                  - /url: /@rooguitar
+              - generic [ref=e706]:
+                - generic [ref=e707]: Mayones Legend SSS , maple fretboard. Handcrafted P-90s pickups. Guitar - Drums demo. Bill Jennings Big Boy Song ...
+                - tooltip "tooltip"
+          - generic [ref=e709]:
+            - heading "People also watched" [level=2] [ref=e712]:
+              - generic [ref=e714]: People also watched
+            - generic [ref=e716]:
+              - generic [ref=e717]:
+                - generic [ref=e719]:
+                  - link [ref=e721] [cursor=pointer]:
+                    - /url: /watch?v=VoPMfRx4NbI&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+                  - generic [ref=e723] [cursor=pointer]:
+                    - generic [ref=e724]:
+                      - generic [ref=e725]:
+                        - heading "Little Charlie and The Night Cats with Duke Robillard @ The Roxy - Wash DC 5-16-88* 50 minutes" [level=3] [ref=e726]:
+                          - link "Little Charlie and The Night Cats with Duke Robillard @ The Roxy - Wash DC 5-16-88* 50 minutes" [ref=e727]:
+                            - /url: /watch?v=VoPMfRx4NbI&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+                            - text: Little Charlie and The Night Cats with Duke Robillard @ The Roxy - Wash DC 5-16-88*
+                        - button "Action menu" [ref=e731]
+                      - generic [ref=e735]:
+                        - generic [ref=e736]: 20K views
+                        - generic [ref=e737]: •8 years ago
+                    - generic [ref=e738]:
+                      - link "Go to channel Mark Tryon" [ref=e739]:
+                        - /url: /@marktryon5373
+                      - link "Mark Tryon" [ref=e744]:
+                        - /url: /@marktryon5373
+                    - generic [ref=e745]:
+                      - text: Little Charlie and The Night Cats with Duke Robillard @ The Roxy - Wash DC 5-16-88* *Confusion about date - might be 9-16 or ...
+                      - tooltip "tooltip"
+                - generic [ref=e747]:
+                  - link [ref=e749] [cursor=pointer]:
+                    - /url: /watch?v=0WUD0Hcadzo&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+                  - generic [ref=e751] [cursor=pointer]:
+                    - generic [ref=e752]:
+                      - generic [ref=e753]:
+                        - heading "Keith Wyatt Jump Jive 'n' Swing Guitar 1 hour, 6 minutes" [level=3] [ref=e754]:
+                          - link "Keith Wyatt Jump Jive 'n' Swing Guitar 1 hour, 6 minutes" [ref=e755]:
+                            - /url: /watch?v=0WUD0Hcadzo&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+                            - text: Keith Wyatt Jump Jive 'n' Swing Guitar
+                        - button "Action menu" [ref=e759]
+                      - generic [ref=e763]:
+                        - generic [ref=e764]: 54K views
+                        - generic [ref=e765]: •8 years ago
+                    - generic [ref=e766]:
+                      - link "Go to channel Vicente Andres Espinoza Martinez" [ref=e767]:
+                        - /url: /@vichoespinozam
+                      - link "Vicente Andres Espinoza Martinez" [ref=e772]:
+                        - /url: /@vichoespinozam
+                - generic [ref=e774]:
+                  - link [ref=e776] [cursor=pointer]:
+                    - /url: /watch?v=ALAHoxSs8tQ&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+                  - generic [ref=e778] [cursor=pointer]:
+                    - generic [ref=e779]:
+                      - generic [ref=e780]:
+                        - heading "LITTLE CHARLIE BATY - GUITAR SOLOS @ Callahan's, April 2016 11 minutes, 24 seconds" [level=3] [ref=e781]:
+                          - link "LITTLE CHARLIE BATY - GUITAR SOLOS @ Callahan's, April 2016 11 minutes, 24 seconds" [ref=e782]:
+                            - /url: /watch?v=ALAHoxSs8tQ&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+                            - text: LITTLE CHARLIE BATY - GUITAR SOLOS @ Callahan's, April 2016
+                        - button "Action menu" [ref=e786]
+                      - generic [ref=e790]:
+                        - generic [ref=e791]: 14K views
+                        - generic [ref=e792]: •6 years ago
+                    - generic [ref=e793]:
+                      - link "Go to channel bluzdudemi" [ref=e794]:
+                        - /url: /@bluzdudemi
+                      - link "bluzdudemi" [ref=e799]:
+                        - /url: /@bluzdudemi
+                    - generic [ref=e800]:
+                      - generic [ref=e801]: This video consists of the guitar solos of Charlie Baty while playing for The Lone Star-Golden State Blues Revue. April 21, 2016 ...
+                      - tooltip "tooltip"
+                - generic [ref=e803]:
+                  - link [ref=e805] [cursor=pointer]:
+                    - /url: /watch?v=fiTRWVCvZJE&list=RDfiTRWVCvZJE&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                  - generic [ref=e807] [cursor=pointer]:
+                    - generic [ref=e808]:
+                      - generic [ref=e809]:
+                        - heading "Bill Jennings and Leo Parker's Stuffy. With Paul Pigat, Kid Ramos, and Tommy Harkenrider 6 minutes, 2 seconds" [level=3] [ref=e810]:
+                          - link "Bill Jennings and Leo Parker's Stuffy. With Paul Pigat, Kid Ramos, and Tommy Harkenrider 6 minutes, 2 seconds" [ref=e811]:
+                            - /url: /watch?v=fiTRWVCvZJE&list=RDfiTRWVCvZJE&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                            - text: Bill Jennings and Leo Parker's Stuffy. With Paul Pigat, Kid Ramos, and Tommy Harkenrider
+                        - button "Action menu" [ref=e815]
+                      - generic [ref=e819]:
+                        - generic [ref=e820]: 20K views
+                        - generic [ref=e821]: •10 years ago
+                    - generic [ref=e822]:
+                      - link "Go to channel Tommy Harkenrider" [ref=e823]:
+                        - /url: /@TommyHarkenriderguitar
+                      - link "Tommy Harkenrider" [ref=e828]:
+                        - /url: /@TommyHarkenriderguitar
+                    - generic [ref=e829]:
+                      - text: This was from a show we did at a killer record store in Santa Ana, ca called The Beatnick Bandito. Paul, Kid and myself with ...
+                      - tooltip "tooltip"
+              - generic "+6 more" [ref=e831] [cursor=pointer]
+          - generic [ref=e833]:
+            - link [ref=e835] [cursor=pointer]:
+              - /url: /watch?v=s8ROneVlhdw&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+            - generic [ref=e837] [cursor=pointer]:
+              - generic [ref=e838]:
+                - generic [ref=e839]:
+                  - heading "Bill Jennings // Mack 'n' Duff // Note for Note 1 minute, 23 seconds" [level=3] [ref=e840]:
+                    - link "Bill Jennings // Mack 'n' Duff // Note for Note 1 minute, 23 seconds" [ref=e841]:
+                      - /url: /watch?v=s8ROneVlhdw&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+                      - text: Bill Jennings // Mack 'n' Duff // Note for Note
+                  - button "Action menu" [ref=e845]
+                - generic [ref=e849]:
+                  - generic [ref=e850]: 1.7K views
+                  - generic [ref=e851]: •4 years ago
+              - generic [ref=e852]:
+                - link "Go to channel Swing & Blues Guitar Transcriptions" [ref=e853]:
+                  - /url: /@swingandbluesguitar
+                - link "Swing & Blues Guitar Transcriptions" [ref=e858]:
+                  - /url: /@swingandbluesguitar
+              - generic [ref=e859]:
+                - generic [ref=e860]: Note for Note transcription of Bill Jennings' solo on "Mack'n'Duff" from Jack McDuff's album "Brother Jack" (Prestige, 1960) TABS ...
+                - tooltip "tooltip"
+          - generic [ref=e862]:
+            - link [ref=e864] [cursor=pointer]:
+              - /url: /watch?v=xWSdidYAAQg&list=RDxWSdidYAAQg&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+            - generic [ref=e866] [cursor=pointer]:
+              - generic [ref=e867]:
+                - generic [ref=e868]:
+                  - heading "Duke plays Bill Jennings 10 minutes" [level=3] [ref=e869]:
+                    - link "Duke plays Bill Jennings 10 minutes" [ref=e870]:
+                      - /url: /watch?v=xWSdidYAAQg&list=RDxWSdidYAAQg&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                      - text: Duke plays Bill Jennings
+                  - button "Action menu" [ref=e874]
+                - generic [ref=e878]:
+                  - generic [ref=e879]: 16K views
+                  - generic [ref=e880]: •17 years ago
+              - generic [ref=e881]:
+                - link "Go to channel teebeeferris" [ref=e882]:
+                  - /url: /@teebeeferris
+                - link "teebeeferris" [ref=e887]:
+                  - /url: /@teebeeferris
+              - generic [ref=e888]:
+                - generic [ref=e889]: I would hate to try to say whos my favorite guitarist, Heres Duke Robillard blowin the roof off Bluecat Blues,Dallas 1998.
+                - tooltip "tooltip"
+          - generic [ref=e891]:
+            - link [ref=e893] [cursor=pointer]:
+              - /url: /watch?v=G2bVDxoBcOg&list=RDG2bVDxoBcOg&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+            - generic [ref=e895] [cursor=pointer]:
+              - generic [ref=e896]:
+                - generic [ref=e897]:
+                  - heading "Bill Jennings - The Fabulous Guitar of Bill Jennings -1955 (FULL ALBUM) 20 minutes" [level=3] [ref=e898]:
+                    - link "Bill Jennings - The Fabulous Guitar of Bill Jennings -1955 (FULL ALBUM) 20 minutes" [ref=e899]:
+                      - /url: /watch?v=G2bVDxoBcOg&list=RDG2bVDxoBcOg&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                      - text: Bill Jennings - The Fabulous Guitar of Bill Jennings -1955 (FULL ALBUM)
+                  - button "Action menu" [ref=e903]
+                - generic [ref=e907]:
+                  - generic [ref=e908]: 2.4K views
+                  - generic [ref=e909]: •2 years ago
+              - generic [ref=e910]:
+                - link "Go to channel DISCOS REDONDOS ( FULL ALBUMS )" [ref=e911]:
+                  - /url: /@discosredondosfullalbum
+                - link "DISCOS REDONDOS ( FULL ALBUMS )" [ref=e916]:
+                  - /url: /@discosredondosfullalbum
+          - generic [ref=e918]:
+            - link [ref=e920] [cursor=pointer]:
+              - /url: /watch?v=OfpXicJEVa4&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl0gcJCdkKAYcqIYzv
+            - generic [ref=e922] [cursor=pointer]:
+              - generic [ref=e923]:
+                - generic [ref=e924]:
+                  - heading "Bill Jennings solo from \"There Will Never Be Another You\" (1960) 46 seconds" [level=3] [ref=e925]:
+                    - link "Bill Jennings solo from \"There Will Never Be Another You\" (1960) 46 seconds" [ref=e926]:
+                      - /url: /watch?v=OfpXicJEVa4&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl0gcJCdkKAYcqIYzv
+                      - text: Bill Jennings solo from "There Will Never Be Another You" (1960)
+                  - button "Action menu" [ref=e930]
+                - generic [ref=e934]:
+                  - generic [ref=e935]: 447 views
+                  - generic [ref=e936]: •9 years ago
+              - generic [ref=e937]:
+                - link "Go to channel Frank Tutwiler" [ref=e938]:
+                  - /url: /@franktutwiler
+                - link "Frank Tutwiler" [ref=e943]:
+                  - /url: /@franktutwiler
+              - generic [ref=e944]:
+                - generic [ref=e945]: Bill Jennings solo from "There Will Never Be Another You" (1960). 1956 Fender Telecaster - 1964 Princeton Reverb.
+                - tooltip "tooltip"
+          - generic [ref=e947]:
+            - link [ref=e949] [cursor=pointer]:
+              - /url: /watch?v=VTaFq4ZMj4k&list=RDVTaFq4ZMj4k&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+            - generic [ref=e951] [cursor=pointer]:
+              - generic [ref=e952]:
+                - generic [ref=e953]:
+                  - heading "Early Morning Blues Jimmy Preston ( feat. Bill Jennings on guitar ) 3 minutes, 24 seconds" [level=3] [ref=e954]:
+                    - link "Early Morning Blues Jimmy Preston ( feat. Bill Jennings on guitar ) 3 minutes, 24 seconds" [ref=e955]:
+                      - /url: /watch?v=VTaFq4ZMj4k&list=RDVTaFq4ZMj4k&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                      - text: Early Morning Blues Jimmy Preston ( feat. Bill Jennings on guitar )
+                  - button "Action menu" [ref=e959]
+                - generic [ref=e963]:
+                  - generic [ref=e964]: 6.6K views
+                  - generic [ref=e965]: •11 years ago
+              - generic [ref=e966]:
+                - link "Go to channel Maddy Tube" [ref=e967]:
+                  - /url: /@madelineb03
+                - link "Maddy Tube" [ref=e972]:
+                  - /url: /@madelineb03
+          - generic [ref=e974]:
+            - link [ref=e976] [cursor=pointer]:
+              - /url: /watch?v=ZYekfxGEGbU&list=RDZYekfxGEGbU&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+            - generic [ref=e978] [cursor=pointer]:
+              - generic [ref=e979]:
+                - generic [ref=e980]:
+                  - heading "Bill Jennings // Billy In The Lion's Den // Note for Note 1 minute, 11 seconds" [level=3] [ref=e981]:
+                    - link "Bill Jennings // Billy In The Lion's Den // Note for Note 1 minute, 11 seconds" [ref=e982]:
+                      - /url: /watch?v=ZYekfxGEGbU&list=RDZYekfxGEGbU&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                      - text: Bill Jennings // Billy In The Lion's Den // Note for Note
+                  - button "Action menu" [ref=e986]
+                - generic [ref=e990]:
+                  - generic [ref=e991]: 1K views
+                  - generic [ref=e992]: •6 years ago
+              - generic [ref=e993]:
+                - link "Go to channel Swing & Blues Guitar Transcriptions" [ref=e994]:
+                  - /url: /@swingandbluesguitar
+                - link "Swing & Blues Guitar Transcriptions" [ref=e999]:
+                  - /url: /@swingandbluesguitar
+              - generic [ref=e1000]:
+                - generic [ref=e1001]: note for note transcription of "Billy In the Lion's Den" as recorded by Bill Jennings on the album "Billy In The Lion's Den" by the Bill ...
+                - tooltip "tooltip"
+          - generic [ref=e1003]:
+            - link [ref=e1005] [cursor=pointer]:
+              - /url: /watch?v=juQq2JsHsWU&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+            - generic [ref=e1007] [cursor=pointer]:
+              - generic [ref=e1008]:
+                - generic [ref=e1009]:
+                  - heading "Bill Jennings // Brother Jack (McDuff) // Note for Note 1 minute, 22 seconds" [level=3] [ref=e1010]:
+                    - link "Bill Jennings // Brother Jack (McDuff) // Note for Note 1 minute, 22 seconds" [ref=e1011]:
+                      - /url: /watch?v=juQq2JsHsWU&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+                      - text: Bill Jennings // Brother Jack (McDuff) // Note for Note
+                  - button "Action menu" [ref=e1015]
+                - generic [ref=e1019]:
+                  - generic [ref=e1020]: 1.1K views
+                  - generic [ref=e1021]: •4 years ago
+              - generic [ref=e1022]:
+                - link "Go to channel Swing & Blues Guitar Transcriptions" [ref=e1023]:
+                  - /url: /@swingandbluesguitar
+                - link "Swing & Blues Guitar Transcriptions" [ref=e1028]:
+                  - /url: /@swingandbluesguitar
+              - generic [ref=e1029]:
+                - generic [ref=e1030]: Note for Note transcription of Bill Jennings' solo on "Brother Jack" from Jack McDuff's album "Brother Jack" (Prestige, 1960) TABS ...
+                - tooltip "tooltip"
+          - generic [ref=e1032]:
+            - link [ref=e1034] [cursor=pointer]:
+              - /url: /watch?v=aUDFpRC40j0&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+            - generic [ref=e1036] [cursor=pointer]:
+              - generic [ref=e1037]:
+                - generic [ref=e1038]:
+                  - heading "Bill Jennings – Enough Said! 38 minutes" [level=3] [ref=e1039]:
+                    - link "Bill Jennings – Enough Said! 38 minutes" [ref=e1040]:
+                      - /url: /watch?v=aUDFpRC40j0&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZl
+                      - text: Bill Jennings – Enough Said!
+                  - button "Action menu" [ref=e1044]
+                - generic [ref=e1048]:
+                  - generic [ref=e1049]: 3.2K views
+                  - generic [ref=e1050]: •9 months ago
+              - generic [ref=e1051]:
+                - link "Go to channel BlueNote 33RPM" [ref=e1052]:
+                  - /url: /@BlueNote33RPM
+                - link "BlueNote 33RPM" [ref=e1057]:
+                  - /url: /@BlueNote33RPM
+              - generic [ref=e1058]:
+                - generic [ref=e1059]: Bill Jennings – Enough Said!. Original 1959 US MONO (Prestige – PRLP-7164) Original Jazz Vinyl Bill Jennings, guitar Brother ...
+                - tooltip "tooltip"
+              - generic [ref=e1062]:
+                - generic [ref=e1063]:
+                  - generic [ref=e1067]: 7 chapters
+                  - button "Enough Said | Tough Gain | Volare | Dark Eyes | It Could Happen To You | Blue Jams | Dig Uncle Will"
+                - button "More" [ref=e1072]
+          - generic [ref=e1079]:
+            - link [ref=e1081] [cursor=pointer]:
+              - /url: /watch?v=VyxIWJboTA0&list=RDVyxIWJboTA0&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+            - generic [ref=e1083] [cursor=pointer]:
+              - generic [ref=e1084]:
+                - generic [ref=e1085]:
+                  - heading "Bill Jennings - Big boy (Jazz Jump Blues) 2 minutes, 14 seconds" [level=3] [ref=e1086]:
+                    - link "Bill Jennings - Big boy (Jazz Jump Blues) 2 minutes, 14 seconds" [ref=e1087]:
+                      - /url: /watch?v=VyxIWJboTA0&list=RDVyxIWJboTA0&start_radio=1&pp=ygUnQmlsbCBKZW5uaW5ncyBndWl0YXJpc3QgamF6eiBibHVlcyBsaXZloAcB
+                      - text: Bill Jennings - Big boy (Jazz Jump Blues)
+                  - button "Action menu" [ref=e1091]
+                - generic [ref=e1095]:
+                  - generic [ref=e1096]: 210 views
+                  - generic [ref=e1097]: •4 years ago
+              - generic [ref=e1098]:
+                - link "Go to channel Bluesman Hong 블루스맨 홍" [ref=e1099]:
+                  - /url: /@bluesmanhong8044
+                - link "Bluesman Hong 블루스맨 홍" [ref=e1104]:
+                  - /url: /@bluesmanhong8044
+              - generic [ref=e1105]:
+                - text: 빌 제닝스의 '빅보이' 연주입니다. 6개월 전 처음 이 곡을 카피해 영상을 만들었는데 확실히 그때보다 좀 더 향상된 것이 느껴지네요.
+                - tooltip "tooltip"
+    - text: •

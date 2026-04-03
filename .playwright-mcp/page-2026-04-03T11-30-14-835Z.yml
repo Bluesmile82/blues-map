@@ -1,0 +1,677 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - generic [ref=e13]:
+          - link "YouTube Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e19]:
+              - img
+          - generic [ref=e20]: ES
+        - button "Skip navigation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Skip navigation
+      - button "Search" [ref=e31] [cursor=pointer]:
+        - generic [ref=e34]:
+          - img
+        - tooltip "tooltip"
+      - generic [ref=e36]:
+        - button "Settings" [ref=e41] [cursor=pointer]
+        - link "Sign in" [ref=e45] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DKoko%252BTaylor%252Bblues%252BChicago%252Blive%252Bperformance&hl=en&ec=65620
+          - generic [ref=e48]: Sign in
+  - generic [ref=e52]:
+    - main [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e56]:
+          - generic [ref=e59]:
+            - tablist [ref=e61]:
+              - tab "All" [selected] [ref=e65] [cursor=pointer]:
+                - generic [ref=e67]: All
+              - tab "Shorts" [ref=e74] [cursor=pointer]:
+                - generic [ref=e76]: Shorts
+              - tab "Videos" [ref=e83] [cursor=pointer]:
+                - generic [ref=e85]: Videos
+              - tab "Unwatched" [ref=e92] [cursor=pointer]:
+                - generic [ref=e94]: Unwatched
+              - tab "Watched" [ref=e101] [cursor=pointer]:
+                - generic [ref=e103]: Watched
+              - tab "Recently uploaded" [ref=e110] [cursor=pointer]:
+                - generic [ref=e112]: Recently uploaded
+              - tab "Live" [ref=e119] [cursor=pointer]:
+                - generic [ref=e121]: Live
+              - tab "Under 4 min" [ref=e128] [cursor=pointer]:
+                - generic [ref=e130]: Under 4 min
+              - tab "4 - 20 min" [ref=e137] [cursor=pointer]:
+                - generic [ref=e139]: 4 - 20 min
+              - tab "Over 20 min" [ref=e146] [cursor=pointer]:
+                - generic [ref=e148]: Over 20 min
+            - button "Next" [ref=e156] [cursor=pointer]
+          - link "About these results" [ref=e165] [cursor=pointer]:
+            - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+            - generic [ref=e166]: About these results
+          - generic [ref=e173]:
+            - button "Search filters" [ref=e175] [cursor=pointer]:
+              - generic [ref=e176]: Filters
+            - tooltip "tooltip"
+        - generic [ref=e187]:
+          - generic [ref=e189]:
+            - link [ref=e191] [cursor=pointer]:
+              - /url: /watch?v=ckFAdkGT8m4&list=RDckFAdkGT8m4&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+              - img [ref=e193]
+              - img [ref=e196]:
+                - generic [ref=e198]: 5:20
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e199] [cursor=pointer]:
+              - generic [ref=e200]:
+                - generic [ref=e201]:
+                  - heading "Koko Taylor - Wang Dang Doodle - A Celebration of Blues and Soul 5 minutes, 20 seconds" [level=3] [ref=e202]:
+                    - link "Koko Taylor - Wang Dang Doodle - A Celebration of Blues and Soul 5 minutes, 20 seconds" [ref=e203]:
+                      - /url: /watch?v=ckFAdkGT8m4&list=RDckFAdkGT8m4&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                      - text: Koko Taylor - Wang Dang Doodle - A Celebration of Blues and Soul
+                  - button "Action menu" [ref=e207]
+                - generic [ref=e211]:
+                  - generic [ref=e212]: 409K views
+                  - generic [ref=e213]: •11 years ago
+              - generic [ref=e214]:
+                - link "Go to channel ShoutFactoryMusic" [ref=e215]:
+                  - /url: /@ShoutFactoryMusic
+                - link "ShoutFactoryMusic" [ref=e221]:
+                  - /url: /@ShoutFactoryMusic
+              - generic [ref=e222]:
+                - generic [ref=e223]: Koko Taylor performs "Wang Dang Doodle" live at the Washington Convention Center for the Presidential Inaugural Concert in ...
+                - tooltip "tooltip"
+          - generic [ref=e225] [cursor=pointer]:
+            - link [ref=e226]:
+              - /url: /watch?v=5N3WP7e6rrE&list=PLQG4YIHI_jpEpi3AKwypiTpi1y93r2iXg
+              - generic [ref=e238]: 11 videos
+            - generic [ref=e241]:
+              - heading "Koko Taylor - Live At The Chicago Blues Festival, 5Th June 1994 (Full Album)" [level=3] [ref=e242]:
+                - link "Koko Taylor - Live At The Chicago Blues Festival, 5Th June 1994 (Full Album)" [ref=e243]:
+                  - /url: /watch?v=5N3WP7e6rrE&list=PLQG4YIHI_jpEpi3AKwypiTpi1y93r2iXg
+              - generic [ref=e245]:
+                - generic [ref=e246]:
+                  - link "SassyBratt24" [ref=e249]:
+                    - /url: /@SassyBratt24
+                  - generic [ref=e250]: •
+                  - link "Playlist" [ref=e253]:
+                    - /url: /@SassyBratt24
+                - link "Introduction (Remastered) · 0:47" [ref=e257]:
+                  - /url: /watch?v=5N3WP7e6rrE&list=PLQG4YIHI_jpEpi3AKwypiTpi1y93r2iXg
+                - link "Something I Can’T Let Go (Remastered) · 8:09" [ref=e260]:
+                  - /url: /watch?v=KGuMeavAwKI&list=PLQG4YIHI_jpEpi3AKwypiTpi1y93r2iXg
+                - link "View full playlist" [ref=e265]:
+                  - /url: /playlist?list=PLQG4YIHI_jpEpi3AKwypiTpi1y93r2iXg
+          - generic [ref=e267]:
+            - link [ref=e269] [cursor=pointer]:
+              - /url: /watch?v=mO17iDtlwNk&list=RDmO17iDtlwNk&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+              - img [ref=e271]
+              - img [ref=e274]:
+                - generic [ref=e276]: 46:32
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e277] [cursor=pointer]:
+              - generic [ref=e278]:
+                - generic [ref=e279]:
+                  - heading "Koko Taylor - Live in Chicago 1985 (Complete Bootleg) 46 minutes" [level=3] [ref=e280]:
+                    - link "Koko Taylor - Live in Chicago 1985 (Complete Bootleg) 46 minutes" [ref=e281]:
+                      - /url: /watch?v=mO17iDtlwNk&list=RDmO17iDtlwNk&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                      - text: Koko Taylor - Live in Chicago 1985 (Complete Bootleg)
+                  - button "Action menu" [ref=e285]
+                - generic [ref=e289]:
+                  - generic [ref=e290]: 2.6K views
+                  - generic [ref=e291]: •4 years ago
+              - generic [ref=e292]:
+                - link "Go to channel MojoPaw" [ref=e293]:
+                  - /url: /@SurfingTheSoundwaves
+                - link "MojoPaw" [ref=e299]:
+                  - /url: /@SurfingTheSoundwaves
+              - generic [ref=e300]:
+                - generic [ref=e301]: Full SBD boot from the Chicago Blues Fest - June 7, 1985 Intro/Boogie Chillen Let the Good Times Roll I'm a Woman Come to ...
+                - tooltip "tooltip"
+          - generic [ref=e303]:
+            - link [ref=e305] [cursor=pointer]:
+              - /url: /watch?v=QD-hk1eleBA&list=RDQD-hk1eleBA&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+              - img [ref=e307]
+              - img [ref=e310]:
+                - generic [ref=e312]: 58:59
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e313] [cursor=pointer]:
+              - generic [ref=e314]:
+                - generic [ref=e315]:
+                  - heading "Koko Taylor Live 58 minutes" [level=3] [ref=e316]:
+                    - link "Koko Taylor Live 58 minutes" [ref=e317]:
+                      - /url: /watch?v=QD-hk1eleBA&list=RDQD-hk1eleBA&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                      - text: Koko Taylor Live
+                  - button "Action menu" [ref=e321]
+                - generic [ref=e325]:
+                  - generic [ref=e326]: 118K views
+                  - generic [ref=e327]: •13 years ago
+              - generic [ref=e328]:
+                - link "Go to channel Fernando BgBk" [ref=e329]:
+                  - /url: /@fernandobugnon
+                - link "Fernando BgBk" [ref=e335]:
+                  - /url: /@fernandobugnon
+              - generic [ref=e336]:
+                - generic [ref=e337]: The living legends of Blues - Special Koko Taylor 1978.
+                - tooltip "tooltip"
+          - generic [ref=e339]:
+            - link [ref=e341] [cursor=pointer]:
+              - /url: /watch?v=VfzLsSVM-wQ&list=RDVfzLsSVM-wQ&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+              - img [ref=e343]
+              - img [ref=e346]:
+                - generic [ref=e348]: 1:15:24
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e349] [cursor=pointer]:
+              - generic [ref=e350]:
+                - generic [ref=e351]:
+                  - heading "Koko Taylor vesves Her Blues Machine Chicago Blues Festival. 1988 1 hour, 15 minutes" [level=3] [ref=e352]:
+                    - link "Koko Taylor vesves Her Blues Machine Chicago Blues Festival. 1988 1 hour, 15 minutes" [ref=e353]:
+                      - /url: /watch?v=VfzLsSVM-wQ&list=RDVfzLsSVM-wQ&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                      - text: Koko Taylor vesves Her Blues Machine Chicago Blues Festival. 1988
+                  - button "Action menu" [ref=e357]
+                - generic [ref=e361]:
+                  - generic [ref=e362]: 500 views
+                  - generic [ref=e363]: •8 years ago
+              - generic [ref=e364]:
+                - link "Go to channel Morton VonRueden" [ref=e365]:
+                  - /url: /@mortonvonrueden4737
+                - link "Morton VonRueden" [ref=e371]:
+                  - /url: /@mortonvonrueden4737
+              - generic [ref=e372]:
+                - text: 01. Let the Good Times Roll 02. Let Me Love You Baby 03. I Cried Like a Baby 04. I Dont Care No More 05. Im a Woman 06.
+                - tooltip "tooltip"
+          - generic [ref=e374]:
+            - link [ref=e376] [cursor=pointer]:
+              - /url: /watch?v=ggDM01LRG3w&list=RDggDM01LRG3w&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e378] [cursor=pointer]:
+              - generic [ref=e379]:
+                - generic [ref=e380]:
+                  - heading "Koko Taylor the Chicago Blues Queen 48 minutes" [level=3] [ref=e381]:
+                    - link "Koko Taylor the Chicago Blues Queen 48 minutes" [ref=e382]:
+                      - /url: /watch?v=ggDM01LRG3w&list=RDggDM01LRG3w&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                      - text: Koko Taylor the Chicago Blues Queen
+                  - button "Action menu" [ref=e386]
+                - generic [ref=e390]:
+                  - generic [ref=e391]: 397 views
+                  - generic [ref=e392]: •3 years ago
+              - generic [ref=e393]:
+                - link "Go to channel Jazz and Blues Music" [ref=e394]:
+                  - /url: /@jazzandbluesmusic2721
+                - link "Jazz and Blues Music" [ref=e400]:
+                  - /url: /@jazzandbluesmusic2721
+              - generic [ref=e401]:
+                - generic [ref=e402]: Música blues - Música rock blues - Melhor Musica de blues Koko Taylor the Chicago Blues Queen Koko Taylor (September 28, ...
+                - tooltip "tooltip"
+          - generic [ref=e404]:
+            - link [ref=e406] [cursor=pointer]:
+              - /url: /watch?v=7qS7r3j_W_o&list=RD7qS7r3j_W_o&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e408] [cursor=pointer]:
+              - generic [ref=e409]:
+                - generic [ref=e410]:
+                  - heading "I CRIED LIKE A BABY - KOKO TAYLOR LIVE IN CHICAGO 6 minutes, 5 seconds" [level=3] [ref=e411]:
+                    - link "I CRIED LIKE A BABY - KOKO TAYLOR LIVE IN CHICAGO 6 minutes, 5 seconds" [ref=e412]:
+                      - /url: /watch?v=7qS7r3j_W_o&list=RD7qS7r3j_W_o&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                      - text: I CRIED LIKE A BABY - KOKO TAYLOR LIVE IN CHICAGO
+                  - button "Action menu" [ref=e416]
+                - generic [ref=e420]:
+                  - generic [ref=e421]: 3.5K views
+                  - generic [ref=e422]: •6 years ago
+              - generic [ref=e423]:
+                - link "Go to channel LawdyMissClawdyMEDIA" [ref=e424]:
+                  - /url: /@LawdyMissClawdyMEDIA
+                - link "LawdyMissClawdyMEDIA" [ref=e429]:
+                  - /url: /@LawdyMissClawdyMEDIA
+          - generic [ref=e431]:
+            - link [ref=e433] [cursor=pointer]:
+              - /url: /watch?v=BUKDcI5cvTE&list=RDBUKDcI5cvTE&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e435] [cursor=pointer]:
+              - generic [ref=e436]:
+                - generic [ref=e437]:
+                  - heading "Chicago Blues, Live Vol. 1 1 hour, 7 minutes" [level=3] [ref=e438]:
+                    - link "Chicago Blues, Live Vol. 1 1 hour, 7 minutes" [ref=e439]:
+                      - /url: /watch?v=BUKDcI5cvTE&list=RDBUKDcI5cvTE&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                      - text: Chicago Blues, Live Vol. 1
+                  - button "Action menu" [ref=e443]
+                - generic [ref=e447]:
+                  - generic [ref=e448]: 1M views
+                  - generic [ref=e449]: •13 years ago
+              - generic [ref=e450]:
+                - link "Go to channel onemediamusic" [ref=e451]:
+                  - /url: /@OneMediaMusic
+                - generic [ref=e452]:
+                  - link "onemediamusic" [ref=e456]:
+                    - /url: /@OneMediaMusic
+                  - img "Verified" [ref=e459]
+              - generic [ref=e461]:
+                - generic [ref=e462]: Chicago Blues, Live Vol. 1 This hour long video sees some of the greatest blues musicians performing live at Buddy Guy's Tavern ...
+                - tooltip "tooltip"
+          - generic [ref=e464]:
+            - link [ref=e466] [cursor=pointer]:
+              - /url: /watch?v=kEtepEvoEN4&list=RDkEtepEvoEN4&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e468] [cursor=pointer]:
+              - generic [ref=e469]:
+                - generic [ref=e470]:
+                  - heading "Muddy Waters Tribute 1997 Koko Taylor Keb Mo Buddy Guy Keith Richards Gregg Allman 31 minutes" [level=3] [ref=e471]:
+                    - link "Muddy Waters Tribute 1997 Koko Taylor Keb Mo Buddy Guy Keith Richards Gregg Allman 31 minutes" [ref=e472]:
+                      - /url: /watch?v=kEtepEvoEN4&list=RDkEtepEvoEN4&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                      - text: Muddy Waters Tribute 1997 Koko Taylor Keb Mo Buddy Guy Keith Richards Gregg Allman
+                  - button "Action menu" [ref=e476]
+                - generic [ref=e480]:
+                  - generic [ref=e481]: 1M views
+                  - generic [ref=e482]: •11 years ago
+              - generic [ref=e483]:
+                - link "Go to channel Benniken" [ref=e484]:
+                  - /url: /@Benniken
+                - link "Benniken" [ref=e489]:
+                  - /url: /@Benniken
+              - generic [ref=e490]:
+                - generic [ref=e491]: Recorded October 10 1997 at the Kennedy Center in Washington DC.......with Koko Taylor, Keb Mo, Buddy Guy, and Gregg ...
+                - tooltip "tooltip"
+          - generic [ref=e493]:
+            - link [ref=e495] [cursor=pointer]:
+              - /url: /watch?v=TibTrPa7q4s&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNl
+            - generic [ref=e497] [cursor=pointer]:
+              - generic [ref=e498]:
+                - generic [ref=e499]:
+                  - heading "Koko Taylor - Live at Biddy Muligan's - Chicago - 1985 (short clip) 2 minutes, 3 seconds" [level=3] [ref=e500]:
+                    - link "Koko Taylor - Live at Biddy Muligan's - Chicago - 1985 (short clip) 2 minutes, 3 seconds" [ref=e501]:
+                      - /url: /watch?v=TibTrPa7q4s&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNl
+                      - text: Koko Taylor - Live at Biddy Muligan's - Chicago - 1985 (short clip)
+                  - button "Action menu" [ref=e505]
+                - generic [ref=e509]:
+                  - generic [ref=e510]: 1.5K views
+                  - generic [ref=e511]: •5 years ago
+              - generic [ref=e512]:
+                - link "Go to channel Robbert Fossen" [ref=e513]:
+                  - /url: /@robbertfossen
+                - link "Robbert Fossen" [ref=e518]:
+                  - /url: /@robbertfossen
+              - generic [ref=e519]:
+                - text: "These short (combined) clips were in the Dutch documentary 'Smart'. Here is the link to the full documentary: ..."
+                - tooltip "tooltip"
+          - generic [ref=e520]:
+            - generic [ref=e523]:
+              - img [ref=e525]
+              - heading "Shorts" [level=2] [ref=e528]
+            - generic [ref=e529]:
+              - generic [ref=e530]:
+                - generic [ref=e533]:
+                  - link [ref=e534] [cursor=pointer]:
+                    - /url: /shorts/W3RykoxYxN8
+                  - generic [ref=e538] [cursor=pointer]:
+                    - link "Koko Taylor “Queen Of The Blues” Gravesite 🕊️2024" [ref=e539]:
+                      - /url: /shorts/W3RykoxYxN8
+                    - generic [ref=e540]: 1.4K views
+                  - button "More actions" [ref=e542] [cursor=pointer]
+                - generic [ref=e550]:
+                  - link [ref=e551] [cursor=pointer]:
+                    - /url: /shorts/NgYiNuBd2_Y
+                  - generic [ref=e555] [cursor=pointer]:
+                    - 'link "\"Koko Taylor – The Queen of Blues who forever changed music history!\" #blues #music" [ref=e556]':
+                      - /url: /shorts/NgYiNuBd2_Y
+                    - generic [ref=e557]: 3.2K views
+                  - button "More actions" [ref=e559] [cursor=pointer]
+              - generic [ref=e565]:
+                - generic [ref=e568]:
+                  - link [ref=e569] [cursor=pointer]:
+                    - /url: /shorts/IghzvvtGj7M
+                  - generic [ref=e573] [cursor=pointer]:
+                    - 'link "Koko Taylor: The Unstoppable Queen of the Blues | A Legacy Born from Grit & Soul #musichistory ￼" [ref=e574]':
+                      - /url: /shorts/IghzvvtGj7M
+                    - generic [ref=e575]: 832 views
+                  - button "More actions" [ref=e577] [cursor=pointer]
+                - generic [ref=e585]:
+                  - link [ref=e586] [cursor=pointer]:
+                    - /url: /shorts/b4m64PsyczA
+                  - generic [ref=e590] [cursor=pointer]:
+                    - link "Koko Taylor - Wang Dang Doodle (Live) 🔥" [ref=e591]:
+                      - /url: /shorts/b4m64PsyczA
+                    - generic [ref=e592]: 416 views
+                  - button "More actions" [ref=e594] [cursor=pointer]
+            - button "Show more" [ref=e603] [cursor=pointer]:
+              - generic [ref=e604]: Show more
+          - generic [ref=e611]:
+            - link [ref=e613] [cursor=pointer]:
+              - /url: /watch?v=dVwEmfttDmE&list=RDdVwEmfttDmE&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e615] [cursor=pointer]:
+              - generic [ref=e616]:
+                - generic [ref=e617]:
+                  - heading "Koko Taylor - Live at Pistoia Bluesin' 87 - July 4th, 1987 (audio) 43 minutes" [level=3] [ref=e618]:
+                    - link "Koko Taylor - Live at Pistoia Bluesin' 87 - July 4th, 1987 (audio) 43 minutes" [ref=e619]:
+                      - /url: /watch?v=dVwEmfttDmE&list=RDdVwEmfttDmE&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                      - text: Koko Taylor - Live at Pistoia Bluesin' 87 - July 4th, 1987 (audio)
+                  - button "Action menu" [ref=e623]
+                - generic [ref=e627]:
+                  - generic [ref=e628]: 532 views
+                  - generic [ref=e629]: •3 years ago
+              - generic [ref=e630]:
+                - link "Go to channel jerryxever" [ref=e631]:
+                  - /url: /@jerryxever
+                - link "jerryxever" [ref=e636]:
+                  - /url: /@jerryxever
+              - generic [ref=e637]:
+                - generic [ref=e638]: Koko Taylor - Live at Pistoia "Bluesin' 87" Blues Festival - July 4th, 1987. Audience recording made with a Sony TCS-310 Stereo ...
+                - tooltip "tooltip"
+              - generic [ref=e641]:
+                - generic [ref=e642]:
+                  - generic [ref=e646]: 7 chapters
+                  - button "Intro by the band | Let The Good Times Roll (Fleecie Moore - Sam Theard) | I Cried Like A Baby (Brown, David & David) | I Don't Care No More (Koko Taylor) | I'm A Woman (McKinley Morganfield - arr. Koko Taylor) | Hey Bartender (Dossie Terry) | Wang Dang Doodle (Willie Dixon)"
+                - button "More" [ref=e651]
+          - generic [ref=e658]:
+            - link [ref=e660] [cursor=pointer]:
+              - /url: /watch?v=uuSnIh2sikQ&list=RDuuSnIh2sikQ&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e662] [cursor=pointer]:
+              - generic [ref=e663]:
+                - generic [ref=e664]:
+                  - heading "Let The Good Times Roll (Live) 4 minutes, 28 seconds" [level=3] [ref=e665]:
+                    - link "Let The Good Times Roll (Live) 4 minutes, 28 seconds" [ref=e666]:
+                      - /url: /watch?v=uuSnIh2sikQ&list=RDuuSnIh2sikQ&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                      - text: Let The Good Times Roll (Live)
+                  - button "Action menu" [ref=e670]
+                - generic [ref=e675]: 1.6K views
+              - generic [ref=e676]:
+                - link "Go to channel Koko Taylor - Topic" [ref=e677]:
+                  - /url: /channel/UCSpFymFQX2WBX2gNH0LQIDg
+                - link "Koko Taylor - Topic" [ref=e682]:
+                  - /url: /channel/UCSpFymFQX2WBX2gNH0LQIDg
+              - generic [ref=e683]:
+                - generic [ref=e684]: Provided to YouTube by Routenote Let The Good Times Roll (Live) · Koko Taylor · Leonard Lee · Shirley Goodman Get Together ...
+                - tooltip "tooltip"
+          - generic [ref=e686]:
+            - heading "People also watched" [level=2] [ref=e689]:
+              - generic [ref=e691]: People also watched
+            - generic [ref=e693]:
+              - generic [ref=e694]:
+                - generic [ref=e696]:
+                  - link [ref=e698] [cursor=pointer]:
+                    - /url: /watch?v=S2xnkAD1QSA&list=RDS2xnkAD1QSA&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - generic [ref=e700] [cursor=pointer]:
+                    - generic [ref=e701]:
+                      - heading "Koko Taylor The queen of the Blues \"Can't Let Go\" 2001 / Paul Parello's Blues Power 6 minutes, 2 seconds" [level=3] [ref=e703]:
+                        - link "Koko Taylor The queen of the Blues \"Can't Let Go\" 2001 / Paul Parello's Blues Power 6 minutes, 2 seconds" [ref=e704]:
+                          - /url: /watch?v=S2xnkAD1QSA&list=RDS2xnkAD1QSA&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                          - text: Koko Taylor The queen of the Blues "Can't Let Go" 2001 / Paul Parello's Blues Power
+                      - generic [ref=e707]:
+                        - generic [ref=e708]: 1.4K views
+                        - generic [ref=e709]: •5 years ago
+                    - generic [ref=e710]:
+                      - link "Go to channel PaulParellosBluesPwr" [ref=e711]:
+                        - /url: /@PaulParellosBluesPwr
+                      - link "PaulParellosBluesPwr" [ref=e716]:
+                        - /url: /@PaulParellosBluesPwr
+                    - generic [ref=e717]:
+                      - generic [ref=e718]: Koko Taylor "The Queen Of The Blues" performing "Can't Let Go" at the 2001 Chord On Blues Festival Paul Parello's Blues Power.
+                      - tooltip "tooltip"
+                - generic [ref=e720]:
+                  - link [ref=e722] [cursor=pointer]:
+                    - /url: /watch?v=lrCdiIzIVqo&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNl
+                  - generic [ref=e724] [cursor=pointer]:
+                    - generic [ref=e725]:
+                      - heading "Segundo Festival de Blues en México 1979. Koko Taylor. 30 minutes" [level=3] [ref=e727]:
+                        - link "Segundo Festival de Blues en México 1979. Koko Taylor. 30 minutes" [ref=e728]:
+                          - /url: /watch?v=lrCdiIzIVqo&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNl
+                          - text: Segundo Festival de Blues en México 1979. Koko Taylor.
+                      - generic [ref=e731]:
+                        - generic [ref=e732]: 10K views
+                        - generic [ref=e733]: •5 years ago
+                    - generic [ref=e734]:
+                      - link "Go to channel Cultura Blues. La Revista Electrónica" [ref=e735]:
+                        - /url: /@culturablues.larevistaelec3982
+                      - link "Cultura Blues. La Revista Electrónica" [ref=e740]:
+                        - /url: /@culturablues.larevistaelec3982
+                    - generic [ref=e741]:
+                      - generic [ref=e742]: Segundo Festival de Blues en México 1979. Tercera parte. Koko Taylor y su Blues Machine.
+                      - tooltip "tooltip"
+                - generic [ref=e744]:
+                  - link [ref=e746] [cursor=pointer]:
+                    - /url: /watch?v=m15DIhyImwo&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNl
+                  - generic [ref=e748] [cursor=pointer]:
+                    - generic [ref=e749]:
+                      - heading "Koko Taylor \"Wang Dang Doodle\" on Letterman, December 14, 1988 5 minutes, 45 seconds" [level=3] [ref=e751]:
+                        - link "Koko Taylor \"Wang Dang Doodle\" on Letterman, December 14, 1988 5 minutes, 45 seconds" [ref=e752]:
+                          - /url: /watch?v=m15DIhyImwo&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNl
+                          - text: Koko Taylor "Wang Dang Doodle" on Letterman, December 14, 1988
+                      - generic [ref=e755]:
+                        - generic [ref=e756]: 45K views
+                        - generic [ref=e757]: •8 years ago
+                    - generic [ref=e758]:
+                      - link "Go to channel Don Giller" [ref=e759]:
+                        - /url: /@dongiller
+                      - link "Don Giller" [ref=e764]:
+                        - /url: /@dongiller
+                    - generic [ref=e765]:
+                      - generic [ref=e766]: Koko Taylor's only appearance on Late Night, performing "Wang Dang Doodle" and then chatting with Dave.
+                      - tooltip "tooltip"
+                - generic [ref=e768]:
+                  - link [ref=e770] [cursor=pointer]:
+                    - /url: /watch?v=I7PXH7sDuqE&list=RDI7PXH7sDuqE&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - generic [ref=e772] [cursor=pointer]:
+                    - generic [ref=e773]:
+                      - heading "Good Times Roll + I'm A Woman - Koko Taylor (Live 1978) 9 minutes, 4 seconds" [level=3] [ref=e775]:
+                        - link "Good Times Roll + I'm A Woman - Koko Taylor (Live 1978) 9 minutes, 4 seconds" [ref=e776]:
+                          - /url: /watch?v=I7PXH7sDuqE&list=RDI7PXH7sDuqE&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                          - text: Good Times Roll + I'm A Woman - Koko Taylor (Live 1978)
+                      - generic [ref=e779]:
+                        - generic [ref=e780]: 15K views
+                        - generic [ref=e781]: •10 years ago
+                    - generic [ref=e782]:
+                      - link "Go to channel Bob Juke" [ref=e783]:
+                        - /url: /@bobjuke4216
+                      - link "Bob Juke" [ref=e788]:
+                        - /url: /@bobjuke4216
+                    - generic [ref=e789]:
+                      - text: Great singer - Great band!
+                      - tooltip "tooltip"
+              - generic "+6 more" [ref=e791] [cursor=pointer]
+          - generic [ref=e793]:
+            - link [ref=e795] [cursor=pointer]:
+              - /url: /watch?v=ThMbCVdXQmo&list=RDThMbCVdXQmo&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e797] [cursor=pointer]:
+              - generic [ref=e798]:
+                - heading "Albert King, BB King, Willie Dixon, Etta James, Koko Taylor - Let the Good Times Roll 7 minutes, 30 seconds" [level=3] [ref=e800]:
+                  - link "Albert King, BB King, Willie Dixon, Etta James, Koko Taylor - Let the Good Times Roll 7 minutes, 30 seconds" [ref=e801]:
+                    - /url: /watch?v=ThMbCVdXQmo&list=RDThMbCVdXQmo&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                    - text: Albert King, BB King, Willie Dixon, Etta James, Koko Taylor - Let the Good Times Roll
+                - generic [ref=e804]:
+                  - generic [ref=e805]: 2.9M views
+                  - generic [ref=e806]: •5 years ago
+              - generic [ref=e807]:
+                - link "Go to channel DC MUSIC" [ref=e808]:
+                  - /url: /@CanalPappoxSiempre
+                - link "DC MUSIC" [ref=e813]:
+                  - /url: /@CanalPappoxSiempre
+              - generic [ref=e814]:
+                - generic [ref=e815]: 1987. There are also Robert Cray, Junior Wells, Dr John, Ry Cooder and more. All the Blues united. The Kings of the Blues / Los ...
+                - tooltip "tooltip"
+          - generic [ref=e817]:
+            - link [ref=e819] [cursor=pointer]:
+              - /url: /watch?v=07u9y2mDGJY&list=RD07u9y2mDGJY&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e821] [cursor=pointer]:
+              - generic [ref=e822]:
+                - heading "Koko Taylor @ Germany & Holland (1988/89) 1 hour, 32 minutes" [level=3] [ref=e824]:
+                  - link "Koko Taylor @ Germany & Holland (1988/89) 1 hour, 32 minutes" [ref=e825]:
+                    - /url: /watch?v=07u9y2mDGJY&list=RD07u9y2mDGJY&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                    - text: Koko Taylor @ Germany & Holland (1988/89)
+                - generic [ref=e828]:
+                  - generic [ref=e829]: 703 views
+                  - generic [ref=e830]: •3 years ago
+              - generic [ref=e831]:
+                - link "Go to channel Ghent Rootz" [ref=e832]:
+                  - /url: /@GhentRootz
+                - link "Ghent Rootz" [ref=e837]:
+                  - /url: /@GhentRootz
+              - generic [ref=e838]:
+                - generic [ref=e839]: Koko Taylor & Her Blues Machine were recorded live @ Bremen, Germany (1988) & Laren, Holland (1989) band Germany (0 ...
+                - tooltip "tooltip"
+          - generic [ref=e840]:
+            - generic [ref=e843]:
+              - img [ref=e845]
+              - heading "Shorts" [level=2] [ref=e848]
+            - generic [ref=e849]:
+              - generic [ref=e850]:
+                - generic [ref=e853]:
+                  - link [ref=e854] [cursor=pointer]:
+                    - /url: /shorts/yBEV0LRn6Hw
+                  - generic [ref=e858] [cursor=pointer]:
+                    - 'link "BluesWoman inspired by Koko Taylor-I''am A Woman #bluesessentials #chicagobluesfestival #blueslegends" [ref=e859]':
+                      - /url: /shorts/yBEV0LRn6Hw
+                    - generic [ref=e860]: 337 views
+                  - button "More actions" [ref=e862] [cursor=pointer]
+                - generic [ref=e870]:
+                  - link [ref=e871] [cursor=pointer]:
+                    - /url: /shorts/PrYUEgYrngw
+                  - generic [ref=e875] [cursor=pointer]:
+                    - 'link "Voodoo Woman - Koko Taylor/ Susan Tedeschi #classicrock #cover #coversong #susantedeschi" [ref=e876]':
+                      - /url: /shorts/PrYUEgYrngw
+                    - generic [ref=e877]: 390 views
+                  - button "More actions" [ref=e879] [cursor=pointer]
+              - generic [ref=e885]:
+                - generic [ref=e888]:
+                  - link [ref=e889] [cursor=pointer]:
+                    - /url: /shorts/7OSu5rPab48
+                  - generic [ref=e893] [cursor=pointer]:
+                    - 'link "Koko Taylor I''m a Woman Queen of the Blues #kokotaylor #Blues" [ref=e894]':
+                      - /url: /shorts/7OSu5rPab48
+                    - generic [ref=e895]: 750 views
+                  - button "More actions" [ref=e897] [cursor=pointer]
+                - generic [ref=e905]:
+                  - link [ref=e906] [cursor=pointer]:
+                    - /url: /shorts/GXPOSs0RvzI
+                  - generic [ref=e910] [cursor=pointer]:
+                    - 'link "Koko Taylor inspired me to sing the BLUES #shorts #kokotaylor #blues #music #chicagoblues #singer" [ref=e911]':
+                      - /url: /shorts/GXPOSs0RvzI
+                    - generic [ref=e912]: 1.4K views
+                  - button "More actions" [ref=e914] [cursor=pointer]
+            - button "Show more" [ref=e923] [cursor=pointer]:
+              - generic [ref=e924]: Show more
+          - generic [ref=e931]:
+            - link [ref=e933] [cursor=pointer]:
+              - /url: /watch?v=bZU29FyIJf8&list=RDbZU29FyIJf8&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e935] [cursor=pointer]:
+              - generic [ref=e936]:
+                - heading "Come To Mama (Live) 5 minutes, 39 seconds" [level=3] [ref=e938]:
+                  - link "Come To Mama (Live) 5 minutes, 39 seconds" [ref=e939]:
+                    - /url: /watch?v=bZU29FyIJf8&list=RDbZU29FyIJf8&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                    - text: Come To Mama (Live)
+                - generic [ref=e943]: 125 views
+              - generic [ref=e944]:
+                - link "Go to channel Koko Taylor - Topic" [ref=e945]:
+                  - /url: /channel/UCSpFymFQX2WBX2gNH0LQIDg
+                - link "Koko Taylor - Topic" [ref=e950]:
+                  - /url: /channel/UCSpFymFQX2WBX2gNH0LQIDg
+              - generic [ref=e951]:
+                - generic [ref=e952]: Provided to YouTube by Redeye Worldwide Come To Mama (Live) · Koko Taylor Live From Chicago - An Audience With The ...
+                - tooltip "tooltip"
+          - generic [ref=e954]:
+            - link [ref=e956] [cursor=pointer]:
+              - /url: /watch?v=62322RC1xyE&list=RD62322RC1xyE&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e958] [cursor=pointer]:
+              - generic [ref=e959]:
+                - heading "Koko Taylor - Ernestine (Live) 3 minutes, 23 seconds" [level=3] [ref=e961]:
+                  - link "Koko Taylor - Ernestine (Live) 3 minutes, 23 seconds" [ref=e962]:
+                    - /url: /watch?v=62322RC1xyE&list=RD62322RC1xyE&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                    - text: Koko Taylor - Ernestine (Live)
+                - generic [ref=e965]:
+                  - generic [ref=e966]: 192K views
+                  - generic [ref=e967]: •18 years ago
+              - generic [ref=e968]:
+                - link "Go to channel mechanic765" [ref=e969]:
+                  - /url: /@mechanic765
+                - link "mechanic765" [ref=e974]:
+                  - /url: /@mechanic765
+              - generic [ref=e975]:
+                - generic [ref=e976]: Koko Taylor - Ernestine (Live)
+                - tooltip "tooltip"
+          - generic [ref=e978]:
+            - link [ref=e980] [cursor=pointer]:
+              - /url: /watch?v=DRdARKjc6Sg&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNl
+            - generic [ref=e982] [cursor=pointer]:
+              - generic [ref=e983]:
+                - heading "Koko Taylor's Blues Machine - Chicago Blues Festival 2008 fl 2 minutes, 28 seconds" [level=3] [ref=e985]:
+                  - link "Koko Taylor's Blues Machine - Chicago Blues Festival 2008 fl 2 minutes, 28 seconds" [ref=e986]:
+                    - /url: /watch?v=DRdARKjc6Sg&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNl
+                    - text: Koko Taylor's Blues Machine - Chicago Blues Festival 2008 fl
+                - generic [ref=e989]:
+                  - generic [ref=e990]: 9.9K views
+                  - generic [ref=e991]: •17 years ago
+              - generic [ref=e992]:
+                - link "Go to channel LKWay" [ref=e993]:
+                  - /url: /@guitarlove626
+                - link "LKWay" [ref=e998]:
+                  - /url: /@guitarlove626
+              - generic [ref=e999]:
+                - generic [ref=e1000]: Chicago Blues Festival June 6, 2008 The band warming up the crowd at the 25th Annual Chicago Blues Festival "Ricky Nelson" ...
+                - tooltip "tooltip"
+          - generic [ref=e1002]:
+            - link [ref=e1004] [cursor=pointer]:
+              - /url: /watch?v=gO90qNrNdaE&list=RDgO90qNrNdaE&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e1006] [cursor=pointer]:
+              - generic [ref=e1007]:
+                - heading "Koko Taylor - Hey Bartender [Live] (Kostas A~171) 5 minutes" [level=3] [ref=e1009]:
+                  - link "Koko Taylor - Hey Bartender [Live] (Kostas A~171) 5 minutes" [ref=e1010]:
+                    - /url: /watch?v=gO90qNrNdaE&list=RDgO90qNrNdaE&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                    - text: Koko Taylor - Hey Bartender [Live] (Kostas A~171)
+                - generic [ref=e1013]:
+                  - generic [ref=e1014]: 975 views
+                  - generic [ref=e1015]: •5 years ago
+              - generic [ref=e1016]:
+                - link "Go to channel Kostas A171" [ref=e1017]:
+                  - /url: /@KostasA171
+                - link "Kostas A171" [ref=e1022]:
+                  - /url: /@KostasA171
+              - generic [ref=e1023]:
+                - generic [ref=e1024]: Koko Taylor - Hey Bartender (Live) This album was recorded at Navy Pier, Chicago, Illinois at the Chicagofest Blues Deluxe Stage ...
+                - tooltip "tooltip"
+          - generic [ref=e1026]:
+            - link [ref=e1028] [cursor=pointer]:
+              - /url: /watch?v=dxmuxezrmNM&list=RDdxmuxezrmNM&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+            - generic [ref=e1030] [cursor=pointer]:
+              - generic [ref=e1031]:
+                - heading "KOKO TAYLOR - AN AUDIENCE WITH THE QUEEN (FULL VINYL) 41 minutes" [level=3] [ref=e1033]:
+                  - link "KOKO TAYLOR - AN AUDIENCE WITH THE QUEEN (FULL VINYL) 41 minutes" [ref=e1034]:
+                    - /url: /watch?v=dxmuxezrmNM&list=RDdxmuxezrmNM&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+                    - text: KOKO TAYLOR - AN AUDIENCE WITH THE QUEEN (FULL VINYL)
+                - generic [ref=e1037]:
+                  - generic [ref=e1038]: 25K views
+                  - generic [ref=e1039]: •11 years ago
+              - generic [ref=e1040]:
+                - link "Go to channel JIMBLUESROCK Vol2" [ref=e1041]:
+                  - /url: /@JIMBLUESROCKVol2
+                - link "JIMBLUESROCK Vol2" [ref=e1046]:
+                  - /url: /@JIMBLUESROCKVol2
+              - generic [ref=e1047]:
+                - generic [ref=e1048]: KOKO TAYLOR - AN AUDIENCE WITH THE QUEEN (1987) SIDE A 00:00 Let The Good Times Roll 04:15 I'm A Woman 10:05 ...
+                - tooltip "tooltip"
+          - generic [ref=e1050]:
+            - link [ref=e1052] [cursor=pointer]:
+              - /url: /watch?v=Oei4_zp5Hx8&list=RDOei4_zp5Hx8&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+            - generic [ref=e1054] [cursor=pointer]:
+              - generic [ref=e1055]:
+                - heading "I'm A Queen Bee (Live) 7 minutes, 34 seconds" [level=3] [ref=e1057]:
+                  - link "I'm A Queen Bee (Live) 7 minutes, 34 seconds" [ref=e1058]:
+                    - /url: /watch?v=Oei4_zp5Hx8&list=RDOei4_zp5Hx8&start_radio=1&pp=ygUqS29rbyBUYXlsb3IgYmx1ZXMgQ2hpY2FnbyBsaXZlIHBlcmZvcm1hbmNloAcB
+                    - text: I'm A Queen Bee (Live)
+                - generic [ref=e1062]: 1.6K views
+              - generic [ref=e1063]:
+                - link "Go to channel Koko Taylor - Topic" [ref=e1064]:
+                  - /url: /channel/UCSpFymFQX2WBX2gNH0LQIDg
+                - link "Koko Taylor - Topic" [ref=e1069]:
+                  - /url: /channel/UCSpFymFQX2WBX2gNH0LQIDg
+              - generic [ref=e1070]:
+                - generic [ref=e1071]: Provided to YouTube by IIP-DDS I'm A Queen Bee (Live) · Koko Taylor Chicago Blues Festival 1994 ℗ 1994 The Media Champ ...
+                - tooltip "tooltip"
+    - text: •

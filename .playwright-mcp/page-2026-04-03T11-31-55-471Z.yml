@@ -1,0 +1,869 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - generic [ref=e13]:
+          - link "YouTube Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e19]:
+              - img
+          - generic [ref=e20]: ES
+        - button "Skip navigation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Skip navigation
+      - button "Search" [ref=e31] [cursor=pointer]:
+        - generic [ref=e34]:
+          - img
+        - tooltip "tooltip"
+      - generic [ref=e36]:
+        - button "Settings" [ref=e41] [cursor=pointer]:
+          - generic [ref=e44]:
+            - img
+        - link "Sign in" [ref=e47] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DRobin%252BTrower%252Blive%252Bconcert%252B1975%252B1976&hl=en&ec=65620
+          - generic [ref=e51]:
+            - img
+          - generic [ref=e52]: Sign in
+  - generic [ref=e56]:
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e60]:
+          - generic [ref=e63]:
+            - tablist [ref=e65]:
+              - tab "All" [selected] [ref=e69] [cursor=pointer]:
+                - generic [ref=e71]: All
+              - tab "Shorts" [ref=e78] [cursor=pointer]:
+                - generic [ref=e80]: Shorts
+              - tab "Videos" [ref=e87] [cursor=pointer]:
+                - generic [ref=e89]: Videos
+              - tab "Unwatched" [ref=e96] [cursor=pointer]:
+                - generic [ref=e98]: Unwatched
+              - tab "Watched" [ref=e105] [cursor=pointer]:
+                - generic [ref=e107]: Watched
+              - tab "Recently uploaded" [ref=e114] [cursor=pointer]:
+                - generic [ref=e116]: Recently uploaded
+              - tab "Live" [ref=e123] [cursor=pointer]:
+                - generic [ref=e125]: Live
+              - tab "Playlists" [ref=e132] [cursor=pointer]:
+                - generic [ref=e134]: Playlists
+            - button "Next" [ref=e142] [cursor=pointer]:
+              - generic [ref=e146]:
+                - img
+          - link "About these results" [ref=e153] [cursor=pointer]:
+            - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+            - generic [ref=e154]: About these results
+            - generic [ref=e158]:
+              - img
+          - generic [ref=e163]:
+            - button "Search filters" [ref=e165] [cursor=pointer]:
+              - generic [ref=e166]: Filters
+              - generic [ref=e170]:
+                - img
+            - tooltip "tooltip"
+        - generic [ref=e177]:
+          - generic [ref=e184]:
+            - generic [ref=e185]:
+              - img "Sponsored" [ref=e189]:
+                - generic [ref=e190]: Sponsored
+                - text: ·
+              - heading "Suggested products" [level=3] [ref=e191]
+              - button [ref=e195] [cursor=pointer]:
+                - generic [ref=e198]:
+                  - img
+            - generic [ref=e200]:
+              - generic [ref=e203]:
+                - generic [ref=e206] [cursor=pointer]:
+                  - 'link "Ad: Robin Trower - Robin Trower Live! (Vinilo / LP)." [ref=e211]':
+                    - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwiBs-XPytGTAxUba0ECHaaxMi8YACICCAEQARoCd3M&co=1&ase=2&gclid=EAIaIQobChMIgbPlz8rRkwMVG2tBAh2msTIvEAQYASABEgIbCPD_BwE&category=acrcp_v1_32&sig=AOD64_08qPM0wl_nrzGOo_mxR22vmX-D1g&adurl=https://imusic.es/music/0840401722121/robin-trower-2026-robin-trower-live-lp%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dshopping-ES%26gad_source%3D2%26gad_campaignid%3D21056921746&ctype=5&ms=%5BCLICK_MS%5D&nx=%5BNX%5D&ny=%5BNY%5D&nb=%5BNB%5D
+                    - generic "Robin Trower - Robin Trower Live! (Vinilo / LP)" [ref=e212]
+                  - generic [ref=e213]:
+                    - generic "imusic.es" [ref=e214]
+                    - generic "€34.99" [ref=e215]
+                  - generic "+€10.49 shipping" [ref=e217]
+                - generic [ref=e220] [cursor=pointer]:
+                  - 'link "Ad: Live At Rockpalast 1976 (2 LP-Vinilo).." [ref=e225]':
+                    - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwiBs-XPytGTAxUba0ECHaaxMi8YACICCAEQAxoCd3M&co=1&ase=2&gclid=EAIaIQobChMIgbPlz8rRkwMVG2tBAh2msTIvEAQYAiABEgLtjPD_BwE&category=acrcp_v1_37&sig=AOD64_0gwJ3VsssvqFJ89mObc0P9zLWsHw&adurl=https://www.elcorteingles.es/musica/A37764868-live-at-rockpalast-1976-2-lp-vinilo/%3Futm_medium%3Dcpc%26utm_source%3Dgoogle%26utm_campaign%3Deci_cyo_cyom_gads_sem_musica_20260301-20260831_pla_perf_64532%26utm_content%3Dna%26utm_term%3Dna%26gclsrc%3Daw.ds%26gad_source%3D2%26gad_campaignid%3D19965631911&ctype=5&ms=%5BCLICK_MS%5D&nx=%5BNX%5D&ny=%5BNY%5D&nb=%5BNB%5D
+                    - generic "Live At Rockpalast 1976 (2 LP-Vinilo)." [ref=e226]
+                  - generic [ref=e227]:
+                    - generic "El Corte Inglés" [ref=e228]
+                    - generic "€31.99" [ref=e229]
+                  - generic "+€2.90 shipping" [ref=e231]
+                - generic [ref=e234] [cursor=pointer]:
+                  - 'link "Ad: Live 1976 (LP-Vinilo).." [ref=e237]':
+                    - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwiBs-XPytGTAxUba0ECHaaxMi8YACICCAEQBRoCd3M&co=1&ase=2&gclid=EAIaIQobChMIgbPlz8rRkwMVG2tBAh2msTIvEAQYAyABEgLugfD_BwE&category=acrcp_v1_37&sig=AOD64_1yAEp_yuKr-GAE6_nlQV96wiF2QQ&adurl=https://www.elcorteingles.es/musica/A53955491-live-1976-lp-vinilo/%3Futm_medium%3Dcpc%26utm_source%3Dgoogle%26utm_campaign%3Deci_cyo_cyom_gads_sem_musica_20260301-20260831_pla_perf_64532%26utm_content%3Dna%26utm_term%3Dna%26gclsrc%3Daw.ds%26gad_source%3D2%26gad_campaignid%3D19965631911&ctype=5&ms=%5BCLICK_MS%5D&nx=%5BNX%5D&ny=%5BNY%5D&nb=%5BNB%5D
+                    - generic "Live 1976 (LP-Vinilo)." [ref=e238]
+                  - generic [ref=e239]:
+                    - generic "El Corte Inglés" [ref=e240]
+                    - generic "€31.99" [ref=e241]
+                  - generic "+€2.90 shipping" [ref=e243]
+                - generic [ref=e246] [cursor=pointer]:
+                  - 'link "Ad: Robin Trower: Robin Trower Live! CD." [ref=e249]':
+                    - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwiBs-XPytGTAxUba0ECHaaxMi8YACICCAEQBxoCd3M&co=1&ase=2&gclid=EAIaIQobChMIgbPlz8rRkwMVG2tBAh2msTIvEAQYBCABEgLzZvD_BwE&category=acrcp_v1_32&sig=AOD64_3jgmVbH3Q5VypFaENSZp1x3xzcZw&adurl=https://www.grooves-inc.es/trower-robin-robin-trower-live-chrysalis-cd-pZZa1-2101818707.html%3Fcurrency%3DEUR%26language%3Des%26_z%3Des%26camp%3Des_css%26utm_medium%3Des_css_2%26gad_source%3D2%26gad_campaignid%3D22092776812&ctype=5&ms=%5BCLICK_MS%5D&nx=%5BNX%5D&ny=%5BNY%5D&nb=%5BNB%5D
+                    - 'generic "Robin Trower: Robin Trower Live! CD" [ref=e250]'
+                  - generic [ref=e251]:
+                    - generic "grooves-inc.es" [ref=e252]
+                    - generic "€32.49" [ref=e253]
+                  - generic "Free shipping" [ref=e255]
+                - generic [ref=e258] [cursor=pointer]:
+                  - 'link "Ad: Robin Trower - One Moment In Time - Live In The USA (Vinilo / LP)." [ref=e261]':
+                    - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwiBs-XPytGTAxUba0ECHaaxMi8YACICCAEQCRoCd3M&co=1&ase=2&gclid=EAIaIQobChMIgbPlz8rRkwMVG2tBAh2msTIvEAQYBSABEgKme_D_BwE&category=acrcp_v1_32&sig=AOD64_35ectbYc3B6Wp8JnRaNaGLZnvtDA&adurl=https://imusic.es/music/8712725752110/robin-trower-2026-one-moment-in-time-live-in-the-usa-lp%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dshopping-ES%26gad_source%3D2%26gad_campaignid%3D21056921746&ctype=5&ms=%5BCLICK_MS%5D&nx=%5BNX%5D&ny=%5BNY%5D&nb=%5BNB%5D
+                    - generic "Robin Trower - One Moment In Time - Live In The USA (Vinilo / LP)" [ref=e262]
+                  - generic [ref=e263]:
+                    - generic "imusic.es" [ref=e264]
+                    - generic "€33.49" [ref=e265]
+                  - generic "+€8.99 shipping" [ref=e267]
+                - generic [ref=e270] [cursor=pointer]:
+                  - 'link "Ad: Live Into The Future 1976 (LP-Vinilo).." [ref=e273]':
+                    - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwiBs-XPytGTAxUba0ECHaaxMi8YACICCAEQCxoCd3M&co=1&ase=2&gclid=EAIaIQobChMIgbPlz8rRkwMVG2tBAh2msTIvEAQYBiABEgLxa_D_BwE&category=acrcp_v1_37&sig=AOD64_1h9U_7KpHqp1TCdU-tBzAGbRXI1A&adurl=https://www.elcorteingles.es/musica/A51268635-live-into-the-future-1976-lp-vinilo/%3Futm_medium%3Dcpc%26utm_source%3Dgoogle%26utm_campaign%3Deci_cyo_cyom_gads_sem_musica_20260301-20260831_pla_perf_64532%26utm_content%3Dna%26utm_term%3Dna%26gclsrc%3Daw.ds%26gad_source%3D2%26gad_campaignid%3D19965631911&ctype=5&ms=%5BCLICK_MS%5D&nx=%5BNX%5D&ny=%5BNY%5D&nb=%5BNB%5D
+                    - generic "Live Into The Future 1976 (LP-Vinilo)." [ref=e274]
+                  - generic [ref=e275]:
+                    - generic "El Corte Inglés" [ref=e276]
+                    - generic "€17.99" [ref=e277]
+                  - generic "+€2.90 shipping" [ref=e279]
+                - generic [ref=e282] [cursor=pointer]:
+                  - 'link "Ad: The Kinks - Live in Virginia 1972 (2lp Orange Vinyl) (Vinilo / LP)." [ref=e285]':
+                    - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwiBs-XPytGTAxUba0ECHaaxMi8YACICCAEQDRoCd3M&co=1&ase=2&gclid=EAIaIQobChMIgbPlz8rRkwMVG2tBAh2msTIvEAQYByABEgL6JfD_BwE&category=acrcp_v1_32&sig=AOD64_1Wq-3vUUzhHHAI3ZaSyUIMDhLAmw&adurl=https://imusic.es/music/5053792511532/the-kinks-2023-live-in-virginia-1972-2lp-orange-vinyl-lp%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dshopping-ES%26gad_source%3D2%26gad_campaignid%3D21056921746&ctype=5&ms=%5BCLICK_MS%5D&nx=%5BNX%5D&ny=%5BNY%5D&nb=%5BNB%5D
+                    - generic "The Kinks - Live in Virginia 1972 (2lp Orange Vinyl) (Vinilo / LP)" [ref=e286]
+                  - generic [ref=e287]:
+                    - generic "imusic.es" [ref=e288]
+                    - generic "€34.99" [ref=e289]
+                  - generic "+€8.49 shipping" [ref=e291]
+                - generic [ref=e294] [cursor=pointer]:
+                  - 'link "Ad: 1976 U.S. Tour (3 LP-Vinilo).." [ref=e297]':
+                    - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwiBs-XPytGTAxUba0ECHaaxMi8YACICCAEQDxoCd3M&co=1&ase=2&gclid=EAIaIQobChMIgbPlz8rRkwMVG2tBAh2msTIvEAQYCCABEgKjsvD_BwE&category=acrcp_v1_37&sig=AOD64_2uDgTA2MmNH1Sw8UiP5xO3h3vViA&adurl=https://www.elcorteingles.es/musica/A55921854-1976-us-tour-3-lp-vinilo/%3Futm_medium%3Dcpc%26utm_source%3Dgoogle%26utm_campaign%3Deci_cyo_cyom_gads_sem_musica_20260301-20260831_pla_perf_64532%26utm_content%3Dna%26utm_term%3Dna%26gclsrc%3Daw.ds%26gad_source%3D2%26gad_campaignid%3D19965631911&ctype=5&ms=%5BCLICK_MS%5D&nx=%5BNX%5D&ny=%5BNY%5D&nb=%5BNB%5D
+                    - generic "1976 U.S. Tour (3 LP-Vinilo)." [ref=e298]
+                  - generic [ref=e299]:
+                    - generic "El Corte Inglés" [ref=e300]
+                    - generic "€82.50" [ref=e301]
+                  - generic "+€2.90 shipping" [ref=e303]
+              - button "Next" [ref=e306] [cursor=pointer]:
+                - generic [ref=e310]:
+                  - img
+          - generic [ref=e315]:
+            - generic [ref=e317] [cursor=pointer]:
+              - link [ref=e318]:
+                - /url: /watch?v=nRPEPPqAzRI&list=PLc8IRe18uq7LCXf155DpyPlh4Drx605PT
+                - generic [ref=e328]:
+                  - generic [ref=e331]:
+                    - img
+                  - generic [ref=e332]: 8 videos
+              - generic [ref=e335]:
+                - heading "Robin Trower Live!" [level=3] [ref=e336]:
+                  - link "Robin Trower Live!" [ref=e337]:
+                    - /url: /watch?v=nRPEPPqAzRI&list=PLc8IRe18uq7LCXf155DpyPlh4Drx605PT
+                - generic [ref=e339]:
+                  - generic [ref=e340]:
+                    - link "IntoTheFire2025" [ref=e343]:
+                      - /url: /@IntoTheFire2025
+                    - generic [ref=e344]: •
+                    - link "Playlist" [ref=e347]:
+                      - /url: /@IntoTheFire2025
+                  - link "01. Too Rolling Stoned - Robin Trower Live! · 6:48" [ref=e351]:
+                    - /url: /watch?v=nRPEPPqAzRI&list=PLc8IRe18uq7LCXf155DpyPlh4Drx605PT
+                  - link "02. Daydream - Robin Trower Live! · 7:59" [ref=e354]:
+                    - /url: /watch?v=xIXg70XHFXc&list=PLc8IRe18uq7LCXf155DpyPlh4Drx605PT
+                  - link "View full playlist" [ref=e359]:
+                    - /url: /playlist?list=PLc8IRe18uq7LCXf155DpyPlh4Drx605PT
+            - generic [ref=e361]:
+              - link [ref=e363] [cursor=pointer]:
+                - /url: /watch?v=WCQqfLxh3c8&list=RDWCQqfLxh3c8&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                - img [ref=e365]
+                - img [ref=e368]:
+                  - generic [ref=e371]:
+                    - img
+                  - generic [ref=e372]: 1:22:36
+                - generic:
+                  - generic: Now playing
+                  - generic:
+                    - img
+              - generic [ref=e373] [cursor=pointer]:
+                - generic [ref=e374]:
+                  - generic [ref=e375]:
+                    - heading "Robin Trower - Full Concert - 03/15/75 - Winterland (OFFICIAL) 1 hour, 22 minutes" [level=3] [ref=e376]:
+                      - link "Robin Trower - Full Concert - 03/15/75 - Winterland (OFFICIAL) 1 hour, 22 minutes" [ref=e377]:
+                        - /url: /watch?v=WCQqfLxh3c8&list=RDWCQqfLxh3c8&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: Robin Trower - Full Concert - 03/15/75 - Winterland (OFFICIAL)
+                    - button "Action menu" [ref=e381]:
+                      - generic [ref=e384]:
+                        - img
+                  - generic [ref=e387]:
+                    - generic [ref=e388]: 855K views
+                    - generic [ref=e389]: •11 years ago
+                - generic [ref=e390]:
+                  - link "Go to channel Robin Trower on MV" [ref=e391]:
+                    - /url: /channel/UCeodIyM2pBjbBb468J3d0lw
+                  - generic [ref=e393]:
+                    - link "Robin Trower" [ref=e397]:
+                      - /url: /channel/UCeodIyM2pBjbBb468J3d0lw
+                    - img "Official Artist Channel" [ref=e400]:
+                      - generic [ref=e403]:
+                        - img
+                - generic [ref=e404]:
+                  - generic [ref=e405]: "Robin Trower - Full Concert Recorded Live: 3/15/1975 - Winterland (San Francisco, CA) More Robin Trower at Music Vault: ..."
+                  - tooltip "tooltip"
+                - generic [ref=e408]:
+                  - generic [ref=e409]:
+                    - generic [ref=e413]: 13 chapters
+                    - button "Day Of The Eagle | Bridge Of Sighs | Gonna Be More Suspicious | Fine Day | Lady Love | Daydream | Too Rolling Stoned | I Can't Wait Much Longer | Alethea | Little Bit Of Sympathy | Confessin' Midnight | Rock Me Baby | The Fool And Me"
+                  - button "More" [ref=e418]:
+                    - generic [ref=e422]:
+                      - img
+            - generic [ref=e427]:
+              - link [ref=e429] [cursor=pointer]:
+                - /url: /watch?v=z5U3lkhKzPk&list=RDz5U3lkhKzPk&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                - img [ref=e431]
+                - img [ref=e434]:
+                  - generic [ref=e437]:
+                    - img
+                  - generic [ref=e438]: 56:26
+                - generic:
+                  - generic: Now playing
+                  - generic:
+                    - img
+              - generic [ref=e439] [cursor=pointer]:
+                - generic [ref=e440]:
+                  - generic [ref=e441]:
+                    - heading "ROBIN TROWER - BBC RADIO ONE IN CONCERT LIVE AT THE GOLDERS GREEN HIPPODROME LONDON 1975 56 minutes" [level=3] [ref=e442]:
+                      - link "ROBIN TROWER - BBC RADIO ONE IN CONCERT LIVE AT THE GOLDERS GREEN HIPPODROME LONDON 1975 56 minutes" [ref=e443]:
+                        - /url: /watch?v=z5U3lkhKzPk&list=RDz5U3lkhKzPk&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: ROBIN TROWER - BBC RADIO ONE IN CONCERT LIVE AT THE GOLDERS GREEN HIPPODROME LONDON 1975
+                    - button "Action menu" [ref=e447]:
+                      - generic [ref=e450]:
+                        - img
+                  - generic [ref=e453]:
+                    - generic [ref=e454]: 32K views
+                    - generic [ref=e455]: •10 years ago
+                - generic [ref=e456]:
+                  - link "Go to channel DAVE STICKLEY - AQUA TARKUS" [ref=e457]:
+                    - /url: /@davestickley-aquatarkus3307
+                  - link "DAVE STICKLEY - AQUA TARKUS" [ref=e463]:
+                    - /url: /@davestickley-aquatarkus3307
+                - generic [ref=e464]:
+                  - generic [ref=e465]: ROBIN TROWER LIVE AT THE GOLDERS GREEN HIPPODROME LONDON 1975 FOR BBC RADIO ONE IN CONCERT.I DONT ...
+                  - tooltip "tooltip"
+            - generic [ref=e467] [cursor=pointer]:
+              - link [ref=e468]:
+                - /url: /watch?v=DGlWGrmCpPM&list=PLQhssxuAB3vTV51oyQX20iUDz0gjOkMBG
+                - generic [ref=e478]:
+                  - generic [ref=e481]:
+                    - img
+                  - generic [ref=e482]: 13 videos
+              - generic [ref=e485]:
+                - heading "Robin Trower. Live in Winterland 1975. Full Concert in Colour." [level=3] [ref=e486]:
+                  - link "Robin Trower. Live in Winterland 1975. Full Concert in Colour." [ref=e487]:
+                    - /url: /watch?v=DGlWGrmCpPM&list=PLQhssxuAB3vTV51oyQX20iUDz0gjOkMBG
+                - generic [ref=e489]:
+                  - generic [ref=e490]:
+                    - link "Colour Hits" [ref=e493]:
+                      - /url: /@colourhits6420
+                    - generic [ref=e494]: •
+                    - link "Playlist" [ref=e497]:
+                      - /url: /@colourhits6420
+                  - link "Robin Trower - \"Day Of The Eagle\". Live in Winterland 1975. HQ IN COLOUR. · 3:55" [ref=e501]:
+                    - /url: /watch?v=DGlWGrmCpPM&list=PLQhssxuAB3vTV51oyQX20iUDz0gjOkMBG&pp=0gcJCRwBOCosWNin
+                  - link "Robin Trower - Bridge of Sighs. Live in Winterland 1975. HQ IN COLOUR · 7:21" [ref=e504]:
+                    - /url: /watch?v=lwjn2_sgMCA&list=PLQhssxuAB3vTV51oyQX20iUDz0gjOkMBG
+                  - link "View full playlist" [ref=e509]:
+                    - /url: /playlist?list=PLQhssxuAB3vTV51oyQX20iUDz0gjOkMBG
+            - generic [ref=e511]:
+              - link [ref=e513] [cursor=pointer]:
+                - /url: /watch?v=fqmEYkGgqQ0&list=RDfqmEYkGgqQ0&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+              - generic [ref=e515] [cursor=pointer]:
+                - generic [ref=e516]:
+                  - generic [ref=e517]:
+                    - heading "Robin Trower - BBC In Concert (29-January-1975) 43 minutes" [level=3] [ref=e518]:
+                      - link "Robin Trower - BBC In Concert (29-January-1975) 43 minutes" [ref=e519]:
+                        - /url: /watch?v=fqmEYkGgqQ0&list=RDfqmEYkGgqQ0&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: Robin Trower - BBC In Concert (29-January-1975)
+                    - button "Action menu" [ref=e523]:
+                      - generic [ref=e526]:
+                        - img
+                  - generic [ref=e529]:
+                    - generic [ref=e530]: 474 views
+                    - generic [ref=e531]: •3 years ago
+                - generic [ref=e532]:
+                  - link "Go to channel Woodwork Kittens" [ref=e533]:
+                    - /url: /@woodworkkittens5626
+                  - link "Woodwork Kittens" [ref=e538]:
+                    - /url: /@woodworkkittens5626
+                - generic [ref=e539]:
+                  - generic [ref=e540]: To finish off my Trower fixation we go back to 1975. Nine days after recording this concert for the BBC at the Paris Theatre, London ...
+                  - tooltip "tooltip"
+            - generic [ref=e542]:
+              - link [ref=e544] [cursor=pointer]:
+                - /url: /watch?v=b4W2Hj-zYgo&list=RDb4W2Hj-zYgo&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+              - generic [ref=e546] [cursor=pointer]:
+                - generic [ref=e547]:
+                  - generic [ref=e548]:
+                    - heading "Robin Trower Live \"Neptune Rising\" 73 to '75 CD 1 hour, 9 minutes" [level=3] [ref=e549]:
+                      - link "Robin Trower Live \"Neptune Rising\" 73 to '75 CD 1 hour, 9 minutes" [ref=e550]:
+                        - /url: /watch?v=b4W2Hj-zYgo&list=RDb4W2Hj-zYgo&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: Robin Trower Live "Neptune Rising" 73 to '75 CD
+                    - button "Action menu" [ref=e554]:
+                      - generic [ref=e557]:
+                        - img
+                  - generic [ref=e560]:
+                    - generic [ref=e561]: 5.9K views
+                    - generic [ref=e562]: •9 years ago
+                - generic [ref=e563]:
+                  - link "Go to channel Nikki Ray" [ref=e564]:
+                    - /url: /@6was9
+                  - link "Nikki Ray" [ref=e569]:
+                    - /url: /@6was9
+                - generic [ref=e570]:
+                  - generic [ref=e571]: Robin Trower "Neptune Rising" Is a 1995 Bootleg CD. Track's 1 thur 9 recorded at the 5th St. Studios in Cincinnati, Ohio on ...
+                  - tooltip "tooltip"
+            - generic [ref=e573]:
+              - link [ref=e575] [cursor=pointer]:
+                - /url: /watch?v=n-13QHDHS7M&list=RDn-13QHDHS7M&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwHSBwkJ2QoBhyohjO8%3D
+              - generic [ref=e577] [cursor=pointer]:
+                - generic [ref=e578]:
+                  - generic [ref=e579]:
+                    - heading "Robin Trower- Madison Square Garden, NY 3/24/76 1 hour, 21 minutes" [level=3] [ref=e580]:
+                      - link "Robin Trower- Madison Square Garden, NY 3/24/76 1 hour, 21 minutes" [ref=e581]:
+                        - /url: /watch?v=n-13QHDHS7M&list=RDn-13QHDHS7M&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwHSBwkJ2QoBhyohjO8%3D
+                        - text: Robin Trower- Madison Square Garden, NY 3/24/76
+                    - button "Action menu" [ref=e585]:
+                      - generic [ref=e588]:
+                        - img
+                  - generic [ref=e591]:
+                    - generic [ref=e592]: 5.4K views
+                    - generic [ref=e593]: •9 years ago
+                - generic [ref=e594]:
+                  - link "Go to channel carlygtr" [ref=e595]:
+                    - /url: /@carlygtr554
+                  - link "carlygtr" [ref=e600]:
+                    - /url: /@carlygtr554
+                - generic [ref=e601]:
+                  - text: 1. Day Of The Eagle 2. Bridge Of Sighs 3. Sailing 4. Lady Love 5. Long Misty Days 6. The Fool And Me 7. Too Rolling Stoned 8.
+                  - tooltip "tooltip"
+            - generic [ref=e603]:
+              - link [ref=e605] [cursor=pointer]:
+                - /url: /watch?v=Or7VtmfB2x8&list=RDOr7VtmfB2x8&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+              - generic [ref=e607] [cursor=pointer]:
+                - generic [ref=e608]:
+                  - generic [ref=e609]:
+                    - heading "Robin Trower Live. Boston, MA. 4/1/76 1 hour, 19 minutes" [level=3] [ref=e610]:
+                      - link "Robin Trower Live. Boston, MA. 4/1/76 1 hour, 19 minutes" [ref=e611]:
+                        - /url: /watch?v=Or7VtmfB2x8&list=RDOr7VtmfB2x8&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: Robin Trower Live. Boston, MA. 4/1/76
+                    - button "Action menu" [ref=e615]:
+                      - generic [ref=e618]:
+                        - img
+                  - generic [ref=e621]:
+                    - generic [ref=e622]: 14K views
+                    - generic [ref=e623]: •7 years ago
+                - generic [ref=e624]:
+                  - link "Go to channel Nikki Ray" [ref=e625]:
+                    - /url: /@6was9
+                  - link "Nikki Ray" [ref=e630]:
+                    - /url: /@6was9
+                - generic [ref=e631]:
+                  - generic [ref=e632]: Robin Trower Live at the Boston Music Hall, in Boston, MA. on April 1, 1976. Audio has lots of audience noise, and hollering of ...
+                  - tooltip "tooltip"
+            - generic [ref=e634]:
+              - link [ref=e636] [cursor=pointer]:
+                - /url: /watch?v=0wkkscG08So&list=RD0wkkscG08So&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+              - generic [ref=e638] [cursor=pointer]:
+                - generic [ref=e639]:
+                  - generic [ref=e640]:
+                    - heading "Robin Trower live | Rockpalast | 2005 58 minutes" [level=3] [ref=e641]:
+                      - link "Robin Trower live | Rockpalast | 2005 58 minutes" [ref=e642]:
+                        - /url: /watch?v=0wkkscG08So&list=RD0wkkscG08So&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: Robin Trower live | Rockpalast | 2005
+                    - button "Action menu" [ref=e646]:
+                      - generic [ref=e649]:
+                        - img
+                  - generic [ref=e652]:
+                    - generic [ref=e653]: 795K views
+                    - generic [ref=e654]: •7 years ago
+                - generic [ref=e655]:
+                  - link "Go to channel WDR Rockpalast" [ref=e656]:
+                    - /url: /@WDRRockpalast
+                  - generic [ref=e657]:
+                    - link "WDR Rockpalast" [ref=e661]:
+                      - /url: /@WDRRockpalast
+                    - img "Verified" [ref=e664]:
+                      - generic [ref=e667]:
+                        - img
+                - generic [ref=e668]:
+                  - text: Robin Trower live | Rockpalast | 2005 | Setlist 1. Too Rolling Stoned 00:00 2. Sweet Angel 07:58 3. Daydream 11:48 4. Living ...
+                  - tooltip "tooltip"
+                - generic [ref=e671]:
+                  - generic [ref=e672]:
+                    - generic [ref=e676]: 10 chapters
+                    - button "1. Too Rolling Stoned | 2. Sweet Angel | 3. Daydream | 4. Living Out Of Time | 5. Day Of The Eagle | 6. Bridge Of Sighs | 7. Close Every Door | 8. I Want You To Love Me | 9. Please Tell Me | 10. Little Bit Of Sympathy"
+                  - button "More" [ref=e681]:
+                    - generic [ref=e685]:
+                      - img
+            - generic [ref=e690] [cursor=pointer]:
+              - link [ref=e691]:
+                - /url: /watch?v=sMySsuBVVRI&list=PL0wnJ4aHrVhjlMK6k1ScJuFsTINuXxA14
+                - generic [ref=e701]:
+                  - generic [ref=e704]:
+                    - img
+                  - generic [ref=e705]: 7 videos
+              - generic [ref=e708]:
+                - heading "Robin Trower Live 1975 Sweden" [level=3] [ref=e709]:
+                  - link "Robin Trower Live 1975 Sweden" [ref=e710]:
+                    - /url: /watch?v=sMySsuBVVRI&list=PL0wnJ4aHrVhjlMK6k1ScJuFsTINuXxA14
+                - generic [ref=e712]:
+                  - generic [ref=e713]:
+                    - link "GuitarWorX Fiji" [ref=e716]:
+                      - /url: /@GuitarWorXFiji
+                    - generic [ref=e717]: •
+                    - link "Playlist" [ref=e720]:
+                      - /url: /@GuitarWorXFiji
+                  - link "Robin Trower- Too Rolling Stoned(Live!) 1975-Sweden · 6:27" [ref=e724]:
+                    - /url: /watch?v=sMySsuBVVRI&list=PL0wnJ4aHrVhjlMK6k1ScJuFsTINuXxA14
+                  - link "Robin Trower-Daydream(Live!) 1975-Sweden · 7:57" [ref=e727]:
+                    - /url: /watch?v=a3DsErlBPdY&list=PL0wnJ4aHrVhjlMK6k1ScJuFsTINuXxA14
+                  - link "View full playlist" [ref=e732]:
+                    - /url: /playlist?list=PL0wnJ4aHrVhjlMK6k1ScJuFsTINuXxA14
+            - generic [ref=e734]:
+              - link [ref=e736] [cursor=pointer]:
+                - /url: /watch?v=npTd88r51LY&list=RDnpTd88r51LY&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+              - generic [ref=e738] [cursor=pointer]:
+                - generic [ref=e739]:
+                  - generic [ref=e740]:
+                    - heading "Robin Trower - I Can't Wait Much Longer - 3/15/1975 - Winterland (Official) 7 minutes, 44 seconds" [level=3] [ref=e741]:
+                      - link "Robin Trower - I Can't Wait Much Longer - 3/15/1975 - Winterland (Official) 7 minutes, 44 seconds" [ref=e742]:
+                        - /url: /watch?v=npTd88r51LY&list=RDnpTd88r51LY&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: Robin Trower - I Can't Wait Much Longer - 3/15/1975 - Winterland (Official)
+                    - button "Action menu" [ref=e746]:
+                      - generic [ref=e749]:
+                        - img
+                  - generic [ref=e752]:
+                    - generic [ref=e753]: 277K views
+                    - generic [ref=e754]: •11 years ago
+                - generic [ref=e755]:
+                  - link "Go to channel Robin Trower on MV" [ref=e756]:
+                    - /url: /channel/UCeodIyM2pBjbBb468J3d0lw
+                  - generic [ref=e757]:
+                    - link "Robin Trower" [ref=e761]:
+                      - /url: /channel/UCeodIyM2pBjbBb468J3d0lw
+                    - img "Official Artist Channel" [ref=e764]:
+                      - generic [ref=e767]:
+                        - img
+                - generic [ref=e768]:
+                  - generic [ref=e769]: "Robin Trower - I Can't Wait Much Longer Recorded Live: 3/15/1975 - Winterland - San Francisco, CA More Robin Trower at Music ..."
+                  - tooltip "tooltip"
+            - generic [ref=e771]:
+              - heading "People also watched" [level=2] [ref=e774]:
+                - generic [ref=e776]: People also watched
+              - generic [ref=e778]:
+                - generic [ref=e779]:
+                  - generic [ref=e781]:
+                    - link [ref=e783] [cursor=pointer]:
+                      - /url: /watch?v=mlaffoxKY-w&list=RDmlaffoxKY-w&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                    - generic [ref=e785] [cursor=pointer]:
+                      - generic [ref=e786]:
+                        - generic [ref=e787]:
+                          - heading "Robin Trower- Koseinenkin Hall, Osaka, Japan 1/25/77 1 hour" [level=3] [ref=e788]:
+                            - link "Robin Trower- Koseinenkin Hall, Osaka, Japan 1/25/77 1 hour" [ref=e789]:
+                              - /url: /watch?v=mlaffoxKY-w&list=RDmlaffoxKY-w&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                              - text: Robin Trower- Koseinenkin Hall, Osaka, Japan 1/25/77
+                          - button "Action menu" [ref=e793]:
+                            - generic [ref=e796]:
+                              - img
+                        - generic [ref=e799]:
+                          - generic [ref=e800]: 2.5K views
+                          - generic [ref=e801]: •6 years ago
+                      - generic [ref=e802]:
+                        - link "Go to channel carlygtr" [ref=e803]:
+                          - /url: /@carlygtr554
+                        - link "carlygtr" [ref=e808]:
+                          - /url: /@carlygtr554
+                      - generic [ref=e809]:
+                        - text: 1. Same Rain Falls 2. Lady love 3. Bridge Of Sighs 4. Caledonia 5. The Fool And Me 6. Long Misty Days 7. Too Rolling Stoned 8.
+                        - tooltip "tooltip"
+                  - generic [ref=e811]:
+                    - link [ref=e813] [cursor=pointer]:
+                      - /url: /watch?v=nvYG1cyYki0&list=RDnvYG1cyYki0&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                    - generic [ref=e815] [cursor=pointer]:
+                      - generic [ref=e816]:
+                        - generic [ref=e817]:
+                          - heading "Robin Trower Live. Old Roslyn, NY. 11-7-86 1 hour, 30 minutes" [level=3] [ref=e818]:
+                            - link "Robin Trower Live. Old Roslyn, NY. 11-7-86 1 hour, 30 minutes" [ref=e819]:
+                              - /url: /watch?v=nvYG1cyYki0&list=RDnvYG1cyYki0&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                              - text: Robin Trower Live. Old Roslyn, NY. 11-7-86
+                          - button "Action menu" [ref=e823]:
+                            - generic [ref=e826]:
+                              - img
+                        - generic [ref=e829]:
+                          - generic [ref=e830]: 12K views
+                          - generic [ref=e831]: •9 years ago
+                      - generic [ref=e832]:
+                        - link "Go to channel Nikki Ray" [ref=e833]:
+                          - /url: /@6was9
+                        - link "Nikki Ray" [ref=e838]:
+                          - /url: /@6was9
+                      - generic [ref=e839]:
+                        - generic [ref=e840]: Robin Trower Live @ My Father's Place ~ Old Roslyn, Ny 11/7/1986 Support the artist. https://www.trowerpower.com/ ...
+                        - tooltip "tooltip"
+                  - generic [ref=e842]:
+                    - link [ref=e844] [cursor=pointer]:
+                      - /url: /watch?v=szjvIlCvjnM&list=RDszjvIlCvjnM&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                    - generic [ref=e846] [cursor=pointer]:
+                      - generic [ref=e847]:
+                        - generic [ref=e848]:
+                          - heading "Robin Trower- Caley Cinema, Edinburgh, Scotland 2/9/75 55 minutes" [level=3] [ref=e849]:
+                            - link "Robin Trower- Caley Cinema, Edinburgh, Scotland 2/9/75 55 minutes" [ref=e850]:
+                              - /url: /watch?v=szjvIlCvjnM&list=RDszjvIlCvjnM&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                              - text: Robin Trower- Caley Cinema, Edinburgh, Scotland 2/9/75
+                          - button "Action menu" [ref=e854]:
+                            - generic [ref=e857]:
+                              - img
+                        - generic [ref=e860]:
+                          - generic [ref=e861]: 971 views
+                          - generic [ref=e862]: •8 years ago
+                      - generic [ref=e863]:
+                        - link "Go to channel carlygtr" [ref=e864]:
+                          - /url: /@carlygtr554
+                        - link "carlygtr" [ref=e869]:
+                          - /url: /@carlygtr554
+                      - generic [ref=e870]:
+                        - text: 1. Day Of The Eagle 2. Bridge Of Sighs 3. Gonna Be More Suspicious 4. Fine Day 5. Lady Love 6. Daydream 7. Too Rolling ...
+                        - tooltip "tooltip"
+                  - generic [ref=e872]:
+                    - link [ref=e874] [cursor=pointer]:
+                      - /url: /watch?v=QfolrM-AGFo&list=RDQfolrM-AGFo&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                    - generic [ref=e876] [cursor=pointer]:
+                      - generic [ref=e877]:
+                        - generic [ref=e878]:
+                          - heading "Robin Trower July 6, 2025 Taft Theater - Cincinnati Ohio 1 hour, 20 minutes" [level=3] [ref=e879]:
+                            - link "Robin Trower July 6, 2025 Taft Theater - Cincinnati Ohio 1 hour, 20 minutes" [ref=e880]:
+                              - /url: /watch?v=QfolrM-AGFo&list=RDQfolrM-AGFo&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                              - text: Robin Trower July 6, 2025 Taft Theater - Cincinnati Ohio
+                          - button "Action menu" [ref=e884]:
+                            - generic [ref=e887]:
+                              - img
+                        - generic [ref=e890]:
+                          - generic [ref=e891]: 13K views
+                          - generic [ref=e892]: •8 months ago
+                      - generic [ref=e893]:
+                        - link "Go to channel John Waters" [ref=e894]:
+                          - /url: /@Finatic13
+                        - link "John Waters" [ref=e899]:
+                          - /url: /@Finatic13
+                      - generic [ref=e900]:
+                        - text: Way back around 1982 I was a young rock enthusiast, learning about new bands and music, especially 70s hard rock. My high ...
+                        - tooltip "tooltip"
+                - generic "+6 more" [ref=e902] [cursor=pointer]
+            - generic [ref=e904]:
+              - link [ref=e906] [cursor=pointer]:
+                - /url: /watch?v=88O1qfqK5GU&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzY%3D
+              - generic [ref=e908] [cursor=pointer]:
+                - generic [ref=e909]:
+                  - generic [ref=e910]:
+                    - heading "Robin Trower- Chicago, Illinois 1976 30 minutes" [level=3] [ref=e911]:
+                      - link "Robin Trower- Chicago, Illinois 1976 30 minutes" [ref=e912]:
+                        - /url: /watch?v=88O1qfqK5GU&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzY%3D
+                        - text: Robin Trower- Chicago, Illinois 1976
+                    - button "Action menu" [ref=e916]:
+                      - generic [ref=e919]:
+                        - img
+                  - generic [ref=e922]:
+                    - generic [ref=e923]: 7.2K views
+                    - generic [ref=e924]: •9 years ago
+                - generic [ref=e925]:
+                  - link "Go to channel carlygtr" [ref=e926]:
+                    - /url: /@carlygtr554
+                  - link "carlygtr" [ref=e931]:
+                    - /url: /@carlygtr554
+                - generic [ref=e932]:
+                  - text: 1. Intro 2. Lady Love 3. I Can't Wait Much Longer 4. Too Rolling Stoned 5. Little Bit Of Sympathy 6. Alethea.
+                  - tooltip "tooltip"
+            - generic [ref=e934]:
+              - link [ref=e936] [cursor=pointer]:
+                - /url: /watch?v=0tLsFsGxLmE&list=RD0tLsFsGxLmE&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+              - generic [ref=e938] [cursor=pointer]:
+                - generic [ref=e939]:
+                  - generic [ref=e940]:
+                    - heading "ROBIN TROWER - Bridge Of Sighs (1974 UK TV Appearance) ~ HIGH QUALITY HQ ~ 4 minutes, 53 seconds" [level=3] [ref=e941]:
+                      - link "ROBIN TROWER - Bridge Of Sighs (1974 UK TV Appearance) ~ HIGH QUALITY HQ ~ 4 minutes, 53 seconds" [ref=e942]:
+                        - /url: /watch?v=0tLsFsGxLmE&list=RD0tLsFsGxLmE&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: ROBIN TROWER - Bridge Of Sighs (1974 UK TV Appearance) ~ HIGH QUALITY HQ ~
+                    - button "Action menu" [ref=e946]:
+                      - generic [ref=e949]:
+                        - img
+                  - generic [ref=e952]:
+                    - generic [ref=e953]: 9M views
+                    - generic [ref=e954]: •16 years ago
+                - generic [ref=e955]:
+                  - link "Go to channel GreatGuitarHeroes" [ref=e956]:
+                    - /url: /@GreatGuitarHeroes
+                  - link "GreatGuitarHeroes" [ref=e961]:
+                    - /url: /@GreatGuitarHeroes
+                - generic [ref=e962]:
+                  - generic [ref=e963]: top of the pops old grey whistle test 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 ...
+                  - tooltip "tooltip"
+            - generic [ref=e965]:
+              - link [ref=e967] [cursor=pointer]:
+                - /url: /watch?v=0b_h5_7V8LI&list=RD0b_h5_7V8LI&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+              - generic [ref=e969] [cursor=pointer]:
+                - generic [ref=e970]:
+                  - generic [ref=e971]:
+                    - heading "Robin Trower - BBC In Concert * 1975 58 minutes" [level=3] [ref=e972]:
+                      - link "Robin Trower - BBC In Concert * 1975 58 minutes" [ref=e973]:
+                        - /url: /watch?v=0b_h5_7V8LI&list=RD0b_h5_7V8LI&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: Robin Trower - BBC In Concert * 1975
+                    - button "Action menu" [ref=e977]:
+                      - generic [ref=e980]:
+                        - img
+                  - generic [ref=e983]:
+                    - generic [ref=e984]: 539 views
+                    - generic [ref=e985]: •4 years ago
+                - generic [ref=e986]:
+                  - link "Go to channel Elon Live Speech" [ref=e987]:
+                    - /url: /@ElonSpeechTesla2023
+                  - link "Elon Live Speech" [ref=e992]:
+                    - /url: /@ElonSpeechTesla2023
+                - generic [ref=e993]:
+                  - text: "Setlist: 01 DJ Intro 02 Day of the Eagle 03 Bridge of Sighs 04 Gonna Be More Suspicious 05 Fine Day 06 Lady Love 07 Daydream ..."
+                  - tooltip "tooltip"
+            - generic [ref=e994]:
+              - generic [ref=e997]:
+                - img [ref=e999]:
+                  - generic [ref=e1001]:
+                    - img
+                - heading "Shorts" [level=2] [ref=e1004]
+              - generic [ref=e1005]:
+                - generic [ref=e1006]:
+                  - generic [ref=e1009]:
+                    - link [ref=e1010] [cursor=pointer]:
+                      - /url: /shorts/I_udPi37KnM
+                    - generic [ref=e1014] [cursor=pointer]:
+                      - 'link "Robin Trower - “Day Of The Eagle” Live at Winterland (3/15/1975) #shorts #robintrower" [ref=e1015]':
+                        - /url: /shorts/I_udPi37KnM
+                      - generic [ref=e1016]: 5.2K views
+                    - button "More actions" [ref=e1018] [cursor=pointer]:
+                      - generic [ref=e1022]:
+                        - img
+                  - generic [ref=e1028]:
+                    - link [ref=e1029] [cursor=pointer]:
+                      - /url: /shorts/LR6TZq8M5ZU
+                    - generic [ref=e1033] [cursor=pointer]:
+                      - link "Robin Trower “Too Rolling Stoned” live 1975" [ref=e1034]:
+                        - /url: /shorts/LR6TZq8M5ZU
+                      - generic [ref=e1035]: 133K views
+                    - button "More actions" [ref=e1037] [cursor=pointer]:
+                      - generic [ref=e1041]:
+                        - img
+                - generic [ref=e1045]:
+                  - generic [ref=e1048]:
+                    - link [ref=e1049] [cursor=pointer]:
+                      - /url: /shorts/a8HR59RRlcU
+                    - generic [ref=e1053] [cursor=pointer]:
+                      - 'link "Robin Trower (Live) Guitar Solo Little Bit Of Sympathy 1974. #robintrower #live #guitarsolo #1970s" [ref=e1054]':
+                        - /url: /shorts/a8HR59RRlcU
+                      - generic [ref=e1055]: 2.9K views
+                    - button "More actions" [ref=e1057] [cursor=pointer]:
+                      - generic [ref=e1061]:
+                        - img
+                  - generic [ref=e1067]:
+                    - link [ref=e1068] [cursor=pointer]:
+                      - /url: /shorts/97w3jAPpchA
+                    - generic [ref=e1072] [cursor=pointer]:
+                      - link "Robin Trower | Live in London | 21st May 2025" [ref=e1073]:
+                        - /url: /shorts/97w3jAPpchA
+                      - generic [ref=e1074]: 5.4K views
+                    - button "More actions" [ref=e1076] [cursor=pointer]:
+                      - generic [ref=e1080]:
+                        - img
+              - button "Show more" [ref=e1087] [cursor=pointer]:
+                - generic [ref=e1088]: Show more
+                - generic [ref=e1092]:
+                  - img
+            - generic [ref=e1097]:
+              - link [ref=e1099] [cursor=pointer]:
+                - /url: /watch?v=sTpvd3UAXP4&list=RDsTpvd3UAXP4&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+              - generic [ref=e1101] [cursor=pointer]:
+                - generic [ref=e1102]:
+                  - generic [ref=e1103]:
+                    - heading "Robin Trower - Day Of The Eagle - 3/15/1975 - Winterland (Official) 3 minutes, 55 seconds" [level=3] [ref=e1104]:
+                      - link "Robin Trower - Day Of The Eagle - 3/15/1975 - Winterland (Official) 3 minutes, 55 seconds" [ref=e1105]:
+                        - /url: /watch?v=sTpvd3UAXP4&list=RDsTpvd3UAXP4&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: Robin Trower - Day Of The Eagle - 3/15/1975 - Winterland (Official)
+                    - button "Action menu" [ref=e1109]:
+                      - generic [ref=e1112]:
+                        - img
+                  - generic [ref=e1115]:
+                    - generic [ref=e1116]: 969K views
+                    - generic [ref=e1117]: •11 years ago
+                - generic [ref=e1118]:
+                  - link "Go to channel Robin Trower on MV" [ref=e1119]:
+                    - /url: /channel/UCeodIyM2pBjbBb468J3d0lw
+                  - generic [ref=e1120]:
+                    - link "Robin Trower" [ref=e1124]:
+                      - /url: /channel/UCeodIyM2pBjbBb468J3d0lw
+                    - img "Official Artist Channel" [ref=e1127]:
+                      - generic [ref=e1130]:
+                        - img
+                - generic [ref=e1131]:
+                  - generic [ref=e1132]: "Robin Trower - Day Of The Eagle Recorded Live: 3/15/1975 - Winterland - San Francisco, CA More Robin Trower at Music Vault: ..."
+                  - tooltip "tooltip"
+            - generic [ref=e1134]:
+              - link [ref=e1136] [cursor=pointer]:
+                - /url: /watch?v=n9T06UfP1S0&list=RDn9T06UfP1S0&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+              - generic [ref=e1138] [cursor=pointer]:
+                - generic [ref=e1139]:
+                  - generic [ref=e1140]:
+                    - heading "Robin Trower Live - Bridge of Sighs 10 minutes, 34 seconds" [level=3] [ref=e1141]:
+                      - link "Robin Trower Live - Bridge of Sighs 10 minutes, 34 seconds" [ref=e1142]:
+                        - /url: /watch?v=n9T06UfP1S0&list=RDn9T06UfP1S0&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: Robin Trower Live - Bridge of Sighs
+                    - button "Action menu" [ref=e1146]:
+                      - generic [ref=e1149]:
+                        - img
+                  - generic [ref=e1152]:
+                    - generic [ref=e1153]: 2M views
+                    - generic [ref=e1154]: •16 years ago
+                - generic [ref=e1155]:
+                  - link "Go to channel Jesse Fitzgerald" [ref=e1156]:
+                    - /url: /@bootstrapjesse
+                  - link "Jesse Fitzgerald" [ref=e1161]:
+                    - /url: /@bootstrapjesse
+                - generic [ref=e1162]:
+                  - generic [ref=e1163]: Robin Trower - Bridge of Sighs. Live at the Rockpalast Crossroads Festival 09/03/2005.
+                  - tooltip "tooltip"
+            - generic [ref=e1165]:
+              - link [ref=e1167] [cursor=pointer]:
+                - /url: /watch?v=ZTyAXk_LyCY&list=RDZTyAXk_LyCY&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+              - generic [ref=e1169] [cursor=pointer]:
+                - generic [ref=e1170]:
+                  - generic [ref=e1171]:
+                    - heading "Robin Trower - Too Rolling Stoned - 3/15/1975 - Winterland (Official) 7 minutes, 25 seconds" [level=3] [ref=e1172]:
+                      - link "Robin Trower - Too Rolling Stoned - 3/15/1975 - Winterland (Official) 7 minutes, 25 seconds" [ref=e1173]:
+                        - /url: /watch?v=ZTyAXk_LyCY&list=RDZTyAXk_LyCY&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: Robin Trower - Too Rolling Stoned - 3/15/1975 - Winterland (Official)
+                    - button "Action menu" [ref=e1177]:
+                      - generic [ref=e1180]:
+                        - img
+                  - generic [ref=e1183]:
+                    - generic [ref=e1184]: 1.5M views
+                    - generic [ref=e1185]: •11 years ago
+                - generic [ref=e1186]:
+                  - link "Go to channel Robin Trower on MV" [ref=e1187]:
+                    - /url: /channel/UCeodIyM2pBjbBb468J3d0lw
+                  - generic [ref=e1188]:
+                    - link "Robin Trower" [ref=e1192]:
+                      - /url: /channel/UCeodIyM2pBjbBb468J3d0lw
+                    - img "Official Artist Channel" [ref=e1195]:
+                      - generic [ref=e1198]:
+                        - img
+                - generic [ref=e1199]:
+                  - generic [ref=e1200]: "Robin Trower - Too Rolling Stoned Recorded Live: 3/15/1975 - Winterland - San Francisco, CA More Robin Trower at Music Vault: ..."
+                  - tooltip "tooltip"
+            - generic [ref=e1201]:
+              - generic [ref=e1204]:
+                - img [ref=e1206]:
+                  - generic [ref=e1208]:
+                    - img
+                - heading "Shorts" [level=2] [ref=e1211]
+              - generic [ref=e1212]:
+                - generic [ref=e1213]:
+                  - generic [ref=e1216]:
+                    - link [ref=e1217] [cursor=pointer]:
+                      - /url: /shorts/hWpqTTT9XBc
+                    - generic [ref=e1221] [cursor=pointer]:
+                      - 'link "Robin Trower Live 10-2-25 #robintrower #70smusic #blues #rocknroll #fenderstratocaster" [ref=e1222]':
+                        - /url: /shorts/hWpqTTT9XBc
+                      - generic [ref=e1223]: 47 views
+                    - button "More actions" [ref=e1225] [cursor=pointer]:
+                      - generic [ref=e1229]:
+                        - img
+                  - generic [ref=e1235]:
+                    - link [ref=e1236] [cursor=pointer]:
+                      - /url: /shorts/wILNJq6TUfs
+                    - generic [ref=e1240] [cursor=pointer]:
+                      - 'link "Announcing: Robin Trower Live! - 50th Anniversary Edition" [ref=e1241]':
+                        - /url: /shorts/wILNJq6TUfs
+                      - generic [ref=e1242]: 5.8K views
+                    - button "More actions" [ref=e1244] [cursor=pointer]:
+                      - generic [ref=e1248]:
+                        - img
+                - generic [ref=e1252]:
+                  - generic [ref=e1255]:
+                    - link [ref=e1256] [cursor=pointer]:
+                      - /url: /shorts/j-bIfu-yTZY
+                    - generic [ref=e1260] [cursor=pointer]:
+                      - 'link "Robin Trower Live 10-2-25 #robintrower #70smusic #blues #rocknroll #fenderstratocaster" [ref=e1261]':
+                        - /url: /shorts/j-bIfu-yTZY
+                      - generic [ref=e1262]: 28 views
+                    - button "More actions" [ref=e1264] [cursor=pointer]:
+                      - generic [ref=e1268]:
+                        - img
+                  - generic [ref=e1274]:
+                    - link [ref=e1275] [cursor=pointer]:
+                      - /url: /shorts/VU0uRpltxlI
+                    - generic [ref=e1279] [cursor=pointer]:
+                      - link "Robin Trower Man of the World" [ref=e1280]:
+                        - /url: /shorts/VU0uRpltxlI
+                      - generic [ref=e1281]: 41K views
+                    - button "More actions" [ref=e1283] [cursor=pointer]:
+                      - generic [ref=e1287]:
+                        - img
+              - button "Show more" [ref=e1294] [cursor=pointer]:
+                - generic [ref=e1295]: Show more
+                - generic [ref=e1299]:
+                  - img
+            - generic [ref=e1304]:
+              - link [ref=e1306] [cursor=pointer]:
+                - /url: /watch?v=S_VHatf6H0w&list=RDS_VHatf6H0w&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+              - generic [ref=e1308] [cursor=pointer]:
+                - generic [ref=e1309]:
+                  - generic [ref=e1310]:
+                    - heading "Robin Trower - The Fool And Me - 3/15/1975 - Winterland (Official) 6 minutes, 29 seconds" [level=3] [ref=e1311]:
+                      - link "Robin Trower - The Fool And Me - 3/15/1975 - Winterland (Official) 6 minutes, 29 seconds" [ref=e1312]:
+                        - /url: /watch?v=S_VHatf6H0w&list=RDS_VHatf6H0w&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: Robin Trower - The Fool And Me - 3/15/1975 - Winterland (Official)
+                    - button "Action menu" [ref=e1316]:
+                      - generic [ref=e1319]:
+                        - img
+                  - generic [ref=e1322]:
+                    - generic [ref=e1323]: 445K views
+                    - generic [ref=e1324]: •11 years ago
+                - generic [ref=e1325]:
+                  - link "Go to channel Robin Trower on MV" [ref=e1326]:
+                    - /url: /channel/UCeodIyM2pBjbBb468J3d0lw
+                  - generic [ref=e1327]:
+                    - link "Robin Trower" [ref=e1331]:
+                      - /url: /channel/UCeodIyM2pBjbBb468J3d0lw
+                    - img "Official Artist Channel" [ref=e1334]:
+                      - generic [ref=e1337]:
+                        - img
+                - generic [ref=e1338]:
+                  - generic [ref=e1339]: "Robin Trower - The Fool And Me Recorded Live: 3/15/1975 - Winterland - San Francisco, CA More Robin Trower at Music Vault: ..."
+                  - tooltip "tooltip"
+            - generic [ref=e1341]:
+              - link [ref=e1343] [cursor=pointer]:
+                - /url: /watch?v=IuJfA0LguQk&list=RDIuJfA0LguQk&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+              - generic [ref=e1345] [cursor=pointer]:
+                - generic [ref=e1346]:
+                  - generic [ref=e1347]:
+                    - heading "Robin Trower - Daydream - 3/15/1975 - Winterland (Official) 10 minutes, 35 seconds" [level=3] [ref=e1348]:
+                      - link "Robin Trower - Daydream - 3/15/1975 - Winterland (Official) 10 minutes, 35 seconds" [ref=e1349]:
+                        - /url: /watch?v=IuJfA0LguQk&list=RDIuJfA0LguQk&start_radio=1&pp=ygUjUm9iaW4gVHJvd2VyIGxpdmUgY29uY2VydCAxOTc1IDE5NzagBwE%3D
+                        - text: Robin Trower - Daydream - 3/15/1975 - Winterland (Official)
+                    - button "Action menu" [ref=e1353]:
+                      - generic [ref=e1356]:
+                        - img
+                  - generic [ref=e1359]:
+                    - generic [ref=e1360]: 291K views
+                    - generic [ref=e1361]: •11 years ago
+                - generic [ref=e1362]:
+                  - link "Go to channel Robin Trower on MV" [ref=e1363]:
+                    - /url: /channel/UCeodIyM2pBjbBb468J3d0lw
+                  - generic [ref=e1364]:
+                    - link "Robin Trower" [ref=e1368]:
+                      - /url: /channel/UCeodIyM2pBjbBb468J3d0lw
+                    - img "Official Artist Channel" [ref=e1371]:
+                      - generic [ref=e1374]:
+                        - img
+                - generic [ref=e1375]:
+                  - generic [ref=e1376]: "Robin Trower - Daydream Recorded Live: 3/15/1975 - Winterland - San Francisco, CA More Robin Trower at Music Vault: ..."
+                  - tooltip "tooltip"
+    - text: •

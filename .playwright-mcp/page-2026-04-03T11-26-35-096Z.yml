@@ -1,0 +1,504 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+          - button "Next" [ref=e111] [cursor=pointer]
+        - link "About these results" [ref=e120] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e121]: About these results
+        - generic [ref=e128]:
+          - button "Search filters" [ref=e130] [cursor=pointer]:
+            - generic [ref=e131]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e142]:
+        - generic [ref=e144]:
+          - link [ref=e146] [cursor=pointer]:
+            - /url: /watch?v=23ATWWmAgZU&list=RD23ATWWmAgZU&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e148] [cursor=pointer]:
+            - generic [ref=e149]:
+              - heading "Arthur Crudup & Sons - The very real Blues 4 minutes, 3 seconds" [level=3] [ref=e151]:
+                - link "Arthur Crudup & Sons - The very real Blues 4 minutes, 3 seconds" [ref=e152]:
+                  - /url: /watch?v=23ATWWmAgZU&list=RD23ATWWmAgZU&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Arthur Crudup & Sons - The very real Blues
+              - generic [ref=e155]:
+                - generic [ref=e156]: 1.2K views
+                - generic [ref=e157]: •10 years ago
+            - generic [ref=e158]:
+              - link "Go to channel Fernando Blues – Working Man Blues" [ref=e159]:
+                - /url: /@fernandoblueschannel
+              - link "Fernando Blues – Working Man Blues" [ref=e165]:
+                - /url: /@fernandoblueschannel
+            - generic [ref=e166]:
+              - generic [ref=e167]: fernandoblueschannel Arthur "Big Boy" Crudup (August 24, 1905 — March 28, 1974) was a delta blues singer and guitarist.
+              - tooltip "tooltip"
+        - generic [ref=e169]:
+          - link [ref=e171] [cursor=pointer]:
+            - /url: /watch?v=dLg69fAfmFw&list=RDdLg69fAfmFw&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e173] [cursor=pointer]:
+            - generic [ref=e174]:
+              - 'heading "The very real Blues: Arthur Crudup & Sons 4 minutes, 10 seconds" [level=3] [ref=e176]':
+                - 'link "The very real Blues: Arthur Crudup & Sons 4 minutes, 10 seconds" [ref=e177]':
+                  - /url: /watch?v=dLg69fAfmFw&list=RDdLg69fAfmFw&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: "The very real Blues: Arthur Crudup & Sons"
+              - generic [ref=e180]:
+                - generic [ref=e181]: 996 views
+                - generic [ref=e182]: •14 years ago
+            - generic [ref=e183]:
+              - link "Go to channel mercydee2" [ref=e184]:
+                - /url: /@mercydee2
+              - link "mercydee2" [ref=e189]:
+                - /url: /@mercydee2
+            - generic [ref=e190]:
+              - generic [ref=e191]: http://solo-blues.blogspot.com/ One of the greatest traditional blues singers ever, in action at home with his sons.
+              - tooltip "tooltip"
+        - generic [ref=e193]:
+          - link [ref=e195] [cursor=pointer]:
+            - /url: /watch?v=LtHW8wpDjkg&list=RDLtHW8wpDjkg&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e197] [cursor=pointer]:
+            - generic [ref=e198]:
+              - heading "Arthur Crudup - That's All Right (Official Audio) 2 minutes, 59 seconds" [level=3] [ref=e200]:
+                - link "Arthur Crudup - That's All Right (Official Audio) 2 minutes, 59 seconds" [ref=e201]:
+                  - /url: /watch?v=LtHW8wpDjkg&list=RDLtHW8wpDjkg&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Arthur Crudup - That's All Right (Official Audio)
+              - generic [ref=e204]:
+                - generic [ref=e205]: 246K views
+                - generic [ref=e206]: •3 years ago
+            - generic [ref=e207]:
+              - link "Go to channel ArthurCrudupVEVO" [ref=e208]:
+                - /url: /channel/UCyCcEhsGyll0wdf6LgH9YNw
+              - generic [ref=e209]:
+                - link "Arthur Crudup" [ref=e213]:
+                  - /url: /channel/UCyCcEhsGyll0wdf6LgH9YNw
+                - img "Official Artist Channel" [ref=e216]
+            - generic [ref=e218]:
+              - generic [ref=e219]: "\"That's All Right” by Arthur Crudup Listen to Arthur Crudup: https://ArthurCrudup.lnk.to/listenYD Watch more of Arthur Crudup's ..."
+              - tooltip "tooltip"
+        - generic [ref=e221]:
+          - link [ref=e223] [cursor=pointer]:
+            - /url: /watch?v=1xjCqx5FxWg&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZQ%3D%3D
+          - generic [ref=e225] [cursor=pointer]:
+            - generic [ref=e226]:
+              - heading "Arthur 'Big Boy' Crudup 1973 (Live Video) 28 minutes" [level=3] [ref=e228]:
+                - link "Arthur 'Big Boy' Crudup 1973 (Live Video) 28 minutes" [ref=e229]:
+                  - /url: /watch?v=1xjCqx5FxWg&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZQ%3D%3D
+                  - text: Arthur 'Big Boy' Crudup 1973 (Live Video)
+              - generic [ref=e232]:
+                - generic [ref=e233]: 24K views
+                - generic [ref=e234]: •7 years ago
+            - generic [ref=e235]:
+              - link "Go to channel Bob Juke" [ref=e236]:
+                - /url: /@bobjuke4216
+              - link "Bob Juke" [ref=e242]:
+                - /url: /@bobjuke4216
+        - generic [ref=e244]:
+          - link [ref=e246] [cursor=pointer]:
+            - /url: /watch?v=_rzeW2LmEsk&list=RD_rzeW2LmEsk&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e248] [cursor=pointer]:
+            - generic [ref=e249]:
+              - heading "Arthur Crudup - Mean Old Frisco Blues (Official Audio) 2 minutes, 40 seconds" [level=3] [ref=e251]:
+                - link "Arthur Crudup - Mean Old Frisco Blues (Official Audio) 2 minutes, 40 seconds" [ref=e252]:
+                  - /url: /watch?v=_rzeW2LmEsk&list=RD_rzeW2LmEsk&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: Arthur Crudup - Mean Old Frisco Blues (Official Audio)
+              - generic [ref=e255]:
+                - generic [ref=e256]: 11K views
+                - generic [ref=e257]: •3 years ago
+            - generic [ref=e258]:
+              - link "Go to channel ArthurCrudupVEVO" [ref=e259]:
+                - /url: /channel/UCyCcEhsGyll0wdf6LgH9YNw
+              - generic [ref=e260]:
+                - link "Arthur Crudup" [ref=e264]:
+                  - /url: /channel/UCyCcEhsGyll0wdf6LgH9YNw
+                - img "Official Artist Channel" [ref=e267]
+            - generic [ref=e269]:
+              - generic [ref=e270]: "\"Mean Old Frisco Blues” by Arthur Crudup Listen to Arthur Crudup: https://ArthurCrudup.lnk.to/listenYD Watch more of Arthur ..."
+              - tooltip "tooltip"
+        - generic [ref=e272]:
+          - link [ref=e274] [cursor=pointer]:
+            - /url: /watch?v=J4FgichaCd0&list=RDJ4FgichaCd0&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e276] [cursor=pointer]:
+            - generic [ref=e277]:
+              - heading "Arthur Crudup - That's Your Red Wagon (Official Audio) 3 minutes, 17 seconds" [level=3] [ref=e279]:
+                - link "Arthur Crudup - That's Your Red Wagon (Official Audio) 3 minutes, 17 seconds" [ref=e280]:
+                  - /url: /watch?v=J4FgichaCd0&list=RDJ4FgichaCd0&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: Arthur Crudup - That's Your Red Wagon (Official Audio)
+              - generic [ref=e283]:
+                - generic [ref=e284]: 1.3K views
+                - generic [ref=e285]: •3 years ago
+            - generic [ref=e286]:
+              - link "Go to channel ArthurCrudupVEVO" [ref=e287]:
+                - /url: /channel/UCyCcEhsGyll0wdf6LgH9YNw
+              - generic [ref=e288]:
+                - link "Arthur Crudup" [ref=e292]:
+                  - /url: /channel/UCyCcEhsGyll0wdf6LgH9YNw
+                - img "Official Artist Channel" [ref=e295]
+            - generic [ref=e297]:
+              - generic [ref=e298]: "\"That's Your Red Wagon” by Arthur Crudup Listen to Arthur Crudup: https://ArthurCrudup.lnk.to/listenYD Watch more of Arthur ..."
+              - tooltip "tooltip"
+        - generic [ref=e300]:
+          - link [ref=e302] [cursor=pointer]:
+            - /url: /watch?v=iHKPODodfeo&list=RDiHKPODodfeo&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e304] [cursor=pointer]:
+            - generic [ref=e305]:
+              - heading "Arthur Crudup - Chicago Blues (Official Audio) 3 minutes, 16 seconds" [level=3] [ref=e307]:
+                - link "Arthur Crudup - Chicago Blues (Official Audio) 3 minutes, 16 seconds" [ref=e308]:
+                  - /url: /watch?v=iHKPODodfeo&list=RDiHKPODodfeo&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: Arthur Crudup - Chicago Blues (Official Audio)
+              - generic [ref=e311]:
+                - generic [ref=e312]: 9.3K views
+                - generic [ref=e313]: •3 years ago
+            - generic [ref=e314]:
+              - link "Go to channel ArthurCrudupVEVO" [ref=e315]:
+                - /url: /channel/UCyCcEhsGyll0wdf6LgH9YNw
+              - generic [ref=e316]:
+                - link "Arthur Crudup" [ref=e320]:
+                  - /url: /channel/UCyCcEhsGyll0wdf6LgH9YNw
+                - img "Official Artist Channel" [ref=e323]
+            - generic [ref=e325]:
+              - generic [ref=e326]: "\"Chicago Blues” by Arthur Crudup Listen to Arthur Crudup: https://ArthurCrudup.lnk.to/listenYD Watch more of Arthur Crudup's ..."
+              - tooltip "tooltip"
+        - generic [ref=e328]:
+          - link [ref=e330] [cursor=pointer]:
+            - /url: /watch?v=K_ZiX14VrHA&list=RDK_ZiX14VrHA&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e332] [cursor=pointer]:
+            - generic [ref=e333]:
+              - 'heading "The very real Blues: Arthur Crudup & Sons 4 minutes, 3 seconds" [level=3] [ref=e335]':
+                - 'link "The very real Blues: Arthur Crudup & Sons 4 minutes, 3 seconds" [ref=e336]':
+                  - /url: /watch?v=K_ZiX14VrHA&list=RDK_ZiX14VrHA&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: "The very real Blues: Arthur Crudup & Sons"
+              - generic [ref=e339]:
+                - generic [ref=e340]: 41K views
+                - generic [ref=e341]: •17 years ago
+            - generic [ref=e342]:
+              - link "Go to channel mercydee" [ref=e343]:
+                - /url: /@mercydee
+              - link "mercydee" [ref=e348]:
+                - /url: /@mercydee
+            - generic [ref=e349]:
+              - text: Cuando tuve la suerte de ver, hace un mazo de años, y nada menos que en pantalla grande, el documental franchute "Along The ...
+              - tooltip "tooltip"
+        - generic [ref=e351]:
+          - link [ref=e353] [cursor=pointer]:
+            - /url: /watch?v=LjWdS2rw8p8&list=RDLjWdS2rw8p8&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e355] [cursor=pointer]:
+            - generic [ref=e356]:
+              - heading "Arthur 'Big Boy' Crudup - My Baby Left Me - 1972 3 minutes, 57 seconds" [level=3] [ref=e358]:
+                - link "Arthur 'Big Boy' Crudup - My Baby Left Me - 1972 3 minutes, 57 seconds" [ref=e359]:
+                  - /url: /watch?v=LjWdS2rw8p8&list=RDLjWdS2rw8p8&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: Arthur 'Big Boy' Crudup - My Baby Left Me - 1972
+              - generic [ref=e362]:
+                - generic [ref=e363]: 37K views
+                - generic [ref=e364]: •13 years ago
+            - generic [ref=e365]:
+              - link "Go to channel Bob Hardy" [ref=e366]:
+                - /url: /@bobjazz11
+              - link "Bob Hardy" [ref=e371]:
+                - /url: /@bobjazz11
+            - generic [ref=e372]:
+              - generic [ref=e373]: Another great Mississippi blues pioneer.
+              - tooltip "tooltip"
+        - generic [ref=e375]:
+          - link [ref=e377] [cursor=pointer]:
+            - /url: /watch?v=HZ6aoA81wv8&list=RDHZ6aoA81wv8&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e379] [cursor=pointer]:
+            - generic [ref=e380]:
+              - heading "Arthur 'Big Boy' Crudup - Born In The Blues - 1973 (complete) 28 minutes" [level=3] [ref=e382]:
+                - link "Arthur 'Big Boy' Crudup - Born In The Blues - 1973 (complete) 28 minutes" [ref=e383]:
+                  - /url: /watch?v=HZ6aoA81wv8&list=RDHZ6aoA81wv8&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Arthur 'Big Boy' Crudup - Born In The Blues - 1973 (complete)
+              - generic [ref=e386]:
+                - generic [ref=e387]: 3.7K views
+                - generic [ref=e388]: •6 years ago
+            - generic [ref=e389]:
+              - link "Go to channel Ghent Rootz" [ref=e390]:
+                - /url: /@GhentRootz
+              - link "Ghent Rootz" [ref=e395]:
+                - /url: /@GhentRootz
+            - generic [ref=e396]:
+              - text: documentary (1973)
+              - tooltip "tooltip"
+            - generic [ref=e399]:
+              - generic [ref=e400]:
+                - generic [ref=e404]: 4 moments
+                - button "CINEMATOGRAPHER EDITOR JEFFREY ABRAMSON | PRODUCTION ASSISTANT JEAN FULTON | DIRECTED BY DAVID DEUTSCH | FILMED ON LOCATION IN FRANKTON. VIRGINIA"
+              - button "More" [ref=e409]
+        - generic [ref=e416]:
+          - link [ref=e418] [cursor=pointer]:
+            - /url: /watch?v=X6d2GTYG4lc&list=RDX6d2GTYG4lc&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e420] [cursor=pointer]:
+            - generic [ref=e421]:
+              - heading "Arthur \"Big Boy\" Crudup - Mean Ol' Frisco Blues (1942) 2 minutes, 42 seconds" [level=3] [ref=e423]:
+                - link "Arthur \"Big Boy\" Crudup - Mean Ol' Frisco Blues (1942) 2 minutes, 42 seconds" [ref=e424]:
+                  - /url: /watch?v=X6d2GTYG4lc&list=RDX6d2GTYG4lc&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: Arthur "Big Boy" Crudup - Mean Ol' Frisco Blues (1942)
+              - generic [ref=e427]:
+                - generic [ref=e428]: 44K views
+                - generic [ref=e429]: •15 years ago
+            - generic [ref=e430]:
+              - link "Go to channel cojwat" [ref=e431]:
+                - /url: /@cojwat
+              - link "cojwat" [ref=e436]:
+                - /url: /@cojwat
+            - generic [ref=e437]:
+              - generic [ref=e438]: Arthur "Big Boy" Crudup was a wonderful delta blues singer and guitarist. He is best known outside blues circles for writing songs ...
+              - tooltip "tooltip"
+        - generic [ref=e440]:
+          - link [ref=e442] [cursor=pointer]:
+            - /url: /watch?v=rLS5sOQaEng&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZQ%3D%3D
+          - generic [ref=e444] [cursor=pointer]:
+            - generic [ref=e445]:
+              - 'heading "The Story of a Blues Legend: Arthur \"Big Boy\" Crudup 1 minute, 22 seconds" [level=3] [ref=e447]':
+                - 'link "The Story of a Blues Legend: Arthur \"Big Boy\" Crudup 1 minute, 22 seconds" [ref=e448]':
+                  - /url: /watch?v=rLS5sOQaEng&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZQ%3D%3D
+                  - text: "The Story of a Blues Legend: Arthur \"Big Boy\" Crudup"
+              - generic [ref=e451]:
+                - generic [ref=e452]: 223 views
+                - generic [ref=e453]: •3 years ago
+            - generic [ref=e454]:
+              - link "Go to channel Primary Wave Music" [ref=e455]:
+                - /url: /@primarywave
+              - link "Primary Wave Music" [ref=e460]:
+                - /url: /@primarywave
+            - generic [ref=e461]:
+              - text: "RIDE THE WAVE https://PrimaryWave.com Instagram: https://www.instagram.com/primarywave Facebook: ..."
+              - tooltip "tooltip"
+        - generic [ref=e463]:
+          - heading "People also watched" [level=2] [ref=e466]:
+            - generic [ref=e468]: People also watched
+          - generic [ref=e470]:
+            - generic [ref=e471]:
+              - generic [ref=e473]:
+                - link [ref=e475] [cursor=pointer]:
+                  - /url: /watch?v=jUII2BkIE3I&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZQ%3D%3D
+                - generic [ref=e477] [cursor=pointer]:
+                  - generic [ref=e478]:
+                    - heading "Arthur Big Boy Crudup Lesson by Johnny Burgin 6 minutes, 56 seconds" [level=3] [ref=e480]:
+                      - link "Arthur Big Boy Crudup Lesson by Johnny Burgin 6 minutes, 56 seconds" [ref=e481]:
+                        - /url: /watch?v=jUII2BkIE3I&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZQ%3D%3D
+                        - text: Arthur Big Boy Crudup Lesson by Johnny Burgin
+                    - generic [ref=e484]:
+                      - generic [ref=e485]: 2.3K views
+                      - generic [ref=e486]: •5 years ago
+                  - generic [ref=e487]:
+                    - link "Go to channel Johnny Burgin" [ref=e488]:
+                      - /url: /channel/UCEBHvKSv_hMbkfXjyWPlTgQ
+                    - generic [ref=e489]:
+                      - link "Johnny Burgin" [ref=e493]:
+                        - /url: /channel/UCEBHvKSv_hMbkfXjyWPlTgQ
+                      - img "Official Artist Channel" [ref=e496]
+                  - generic [ref=e498]:
+                    - generic [ref=e499]: Big Boy Crudup is famous as the writer of "That's All Right", a hit for Elvis Presley. You can find a million versions of that song now, ...
+                    - tooltip "tooltip"
+                  - generic [ref=e502]:
+                    - generic [ref=e503]:
+                      - generic [ref=e507]: 4 chapters
+                      - button "Intro | Chords | Sound | Outro"
+                    - button "More" [ref=e512]
+              - generic [ref=e519]:
+                - link [ref=e521] [cursor=pointer]:
+                  - /url: /watch?v=qnn3U1eb9J8&list=RDqnn3U1eb9J8&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                - generic [ref=e523] [cursor=pointer]:
+                  - generic [ref=e524]:
+                    - heading "Arthur \"Big Boy\" Crudup - at his home, Franktown, Virginia (1973) 3 minutes, 43 seconds" [level=3] [ref=e526]:
+                      - link "Arthur \"Big Boy\" Crudup - at his home, Franktown, Virginia (1973) 3 minutes, 43 seconds" [ref=e527]:
+                        - /url: /watch?v=qnn3U1eb9J8&list=RDqnn3U1eb9J8&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                        - text: Arthur "Big Boy" Crudup - at his home, Franktown, Virginia (1973)
+                    - generic [ref=e530]:
+                      - generic [ref=e531]: 6K views
+                      - generic [ref=e532]: •13 years ago
+                  - generic [ref=e533]:
+                    - link "Go to channel RawBluesTV" [ref=e534]:
+                      - /url: /@RawBluesTV
+                    - link "RawBluesTV" [ref=e539]:
+                      - /url: /@RawBluesTV
+                  - generic [ref=e540]:
+                    - generic [ref=e541]: Crudup sums up his life in BORN IN THE BLUES, an intropestive portrait of the soft spoken blues singer filmed at his house in ...
+                    - tooltip "tooltip"
+              - generic [ref=e543]:
+                - link [ref=e545] [cursor=pointer]:
+                  - /url: /watch?v=Bf1UmwuCsnA&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZQ%3D%3D
+                - generic [ref=e547] [cursor=pointer]:
+                  - generic [ref=e548]:
+                    - heading "Arthur Crudup- born into the Blues pt2 6 minutes, 49 seconds" [level=3] [ref=e550]:
+                      - link "Arthur Crudup- born into the Blues pt2 6 minutes, 49 seconds" [ref=e551]:
+                        - /url: /watch?v=Bf1UmwuCsnA&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZQ%3D%3D
+                        - text: Arthur Crudup- born into the Blues pt2
+                    - generic [ref=e554]:
+                      - generic [ref=e555]: 6K views
+                      - generic [ref=e556]: •15 years ago
+                  - generic [ref=e557]:
+                    - link "Go to channel dressersix" [ref=e558]:
+                      - /url: /@dressersix
+                    - link "dressersix" [ref=e563]:
+                      - /url: /@dressersix
+                  - generic [ref=e564]:
+                    - generic [ref=e565]: Arthur "Big Boy" Crudup (August 24, 1905 — March 28, 1974) was a delta blues singer and guitarist. He is best known outside ...
+                    - tooltip "tooltip"
+              - generic [ref=e567]:
+                - link [ref=e569] [cursor=pointer]:
+                  - /url: /watch?v=RHsbUe6uGWE&list=RDRHsbUe6uGWE&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                - generic [ref=e571] [cursor=pointer]:
+                  - generic [ref=e572]:
+                    - heading "Alvin Youngblood Hart live at The Tuesday Night Music Club 19th February 2022 1 hour, 30 minutes" [level=3] [ref=e574]:
+                      - link "Alvin Youngblood Hart live at The Tuesday Night Music Club 19th February 2022 1 hour, 30 minutes" [ref=e575]:
+                        - /url: /watch?v=RHsbUe6uGWE&list=RDRHsbUe6uGWE&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                        - text: Alvin Youngblood Hart live at The Tuesday Night Music Club 19th February 2022
+                    - generic [ref=e578]:
+                      - generic [ref=e579]: 2.2K views
+                      - generic [ref=e580]: •3 years ago
+                  - generic [ref=e581]:
+                    - link "Go to channel The Tuesday Night Music Club" [ref=e582]:
+                      - /url: /@TheTuesdayNightMusicClub
+                    - link "The Tuesday Night Music Club" [ref=e587]:
+                      - /url: /@TheTuesdayNightMusicClub
+                  - generic [ref=e588]:
+                    - text: Another first for The Tuesday Night Music Club... welcoming a Grammy winner to our stage! But this was not about the Grammy, ...
+                    - tooltip "tooltip"
+            - generic "+6 more" [ref=e590] [cursor=pointer]
+        - generic [ref=e592]:
+          - link [ref=e594] [cursor=pointer]:
+            - /url: /watch?v=qb1yF-2b2Y4&list=RDqb1yF-2b2Y4&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e596] [cursor=pointer]:
+            - generic [ref=e597]:
+              - heading "Arthur Crudup - Cool Disposition (Official Audio) 3 minutes, 12 seconds" [level=3] [ref=e599]:
+                - link "Arthur Crudup - Cool Disposition (Official Audio) 3 minutes, 12 seconds" [ref=e600]:
+                  - /url: /watch?v=qb1yF-2b2Y4&list=RDqb1yF-2b2Y4&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Arthur Crudup - Cool Disposition (Official Audio)
+              - generic [ref=e603]:
+                - generic [ref=e604]: 2.4K views
+                - generic [ref=e605]: •3 years ago
+            - generic [ref=e606]:
+              - link "Go to channel ArthurCrudupVEVO" [ref=e607]:
+                - /url: /channel/UCyCcEhsGyll0wdf6LgH9YNw
+              - generic [ref=e608]:
+                - link "Arthur Crudup" [ref=e612]:
+                  - /url: /channel/UCyCcEhsGyll0wdf6LgH9YNw
+                - img "Official Artist Channel" [ref=e615]
+            - generic [ref=e617]:
+              - generic [ref=e618]: "\"Cool Disposition” by Arthur Crudup Listen to Arthur Crudup: https://ArthurCrudup.lnk.to/listenYD Watch more of Arthur Crudup's ..."
+              - tooltip "tooltip"
+        - generic [ref=e620]:
+          - link [ref=e622] [cursor=pointer]:
+            - /url: /watch?v=56mlpgUebvY&list=RD56mlpgUebvY&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e624] [cursor=pointer]:
+            - generic [ref=e625]:
+              - heading "Arthur \"Blues\" Crump & his Guitar (Arthur Crudup) I Wonder (1952) 2 minutes, 16 seconds" [level=3] [ref=e627]:
+                - link "Arthur \"Blues\" Crump & his Guitar (Arthur Crudup) I Wonder (1952) 2 minutes, 16 seconds" [ref=e628]:
+                  - /url: /watch?v=56mlpgUebvY&list=RD56mlpgUebvY&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Arthur "Blues" Crump & his Guitar (Arthur Crudup) I Wonder (1952)
+              - generic [ref=e631]:
+                - generic [ref=e632]: 1.2K views
+                - generic [ref=e633]: •11 years ago
+            - generic [ref=e634]:
+              - link "Go to channel randomandrare" [ref=e635]:
+                - /url: /@randomandrare
+              - link "randomandrare" [ref=e640]:
+                - /url: /@randomandrare
+            - generic [ref=e641]:
+              - generic [ref=e642]: I do not own the copyright to this recording. This video is for historical and educational purposes only. Arthur "Blues" Crump a/k/a ...
+              - tooltip "tooltip"
+        - generic [ref=e643]:
+          - generic [ref=e646]:
+            - img [ref=e648]
+            - heading "Shorts" [level=2] [ref=e651]
+          - generic [ref=e652]:
+            - generic [ref=e653]:
+              - generic [ref=e656]:
+                - link [ref=e657] [cursor=pointer]:
+                  - /url: /shorts/2GloiqlmPZY
+                - generic [ref=e661] [cursor=pointer]:
+                  - link "Did you know that Elvis' breakout hit was a cover from Arthur Crudup? Stream the original today!" [ref=e662]:
+                    - /url: /shorts/2GloiqlmPZY
+                  - generic [ref=e663]: 1.7K views
+                - button "More actions" [ref=e665] [cursor=pointer]
+              - generic [ref=e673]:
+                - link [ref=e674] [cursor=pointer]:
+                  - /url: /shorts/KZPSMyYH534
+                - generic [ref=e678] [cursor=pointer]:
+                  - 'link "Arthur Crudup / That''s All Right #arthurcrudup #blues" [ref=e679]':
+                    - /url: /shorts/KZPSMyYH534
+                  - generic [ref=e680]: 22 views
+                - button "More actions" [ref=e682] [cursor=pointer]
+            - generic [ref=e688]:
+              - generic [ref=e691]:
+                - link [ref=e692] [cursor=pointer]:
+                  - /url: /shorts/vbcwAS5J1ag
+                - generic [ref=e696] [cursor=pointer]:
+                  - 'link "Arthur Big Boy Crudup. Anutha musician people should show credit 2. #blues #Hero #rocknroll #Rip." [ref=e697]':
+                    - /url: /shorts/vbcwAS5J1ag
+                  - generic [ref=e698]: 656 views
+                - button "More actions" [ref=e700] [cursor=pointer]
+              - generic [ref=e708]:
+                - link [ref=e709] [cursor=pointer]:
+                  - /url: /shorts/pCiHfqCihDE
+                - generic [ref=e713] [cursor=pointer]:
+                  - 'link "‘’That’s All Right” was written by blues artist Arthur Crudup! Originally recorded in 1946 #elvis" [ref=e714]':
+                    - /url: /shorts/pCiHfqCihDE
+                  - generic [ref=e715]: 624 views
+                - button "More actions" [ref=e717] [cursor=pointer]
+          - button "Show more" [ref=e726] [cursor=pointer]:
+            - generic [ref=e727]: Show more
+        - generic [ref=e734]:
+          - link [ref=e736] [cursor=pointer]:
+            - /url: /watch?v=7Dl9Hry3UmQ&list=RD7Dl9Hry3UmQ&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e738] [cursor=pointer]:
+            - generic [ref=e739]:
+              - heading "Arthur Crudup - Cool Disposition 3 minutes, 12 seconds" [level=3] [ref=e741]:
+                - link "Arthur Crudup - Cool Disposition 3 minutes, 12 seconds" [ref=e742]:
+                  - /url: /watch?v=7Dl9Hry3UmQ&list=RD7Dl9Hry3UmQ&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: Arthur Crudup - Cool Disposition
+              - generic [ref=e745]:
+                - generic [ref=e746]: 1.6K views
+                - generic [ref=e747]: •11 years ago
+            - generic [ref=e748]:
+              - link "Go to channel Sliptrail" [ref=e749]:
+                - /url: /@Sliptrail
+              - link "Sliptrail" [ref=e754]:
+                - /url: /@Sliptrail
+            - generic [ref=e755]:
+              - text: This is a 1944 recording, the label shown is not mine but from Wirz discography ...
+              - tooltip "tooltip"
+        - generic [ref=e757]:
+          - link [ref=e759] [cursor=pointer]:
+            - /url: /watch?v=NOmL9Tkec8g&list=RDNOmL9Tkec8g&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e761] [cursor=pointer]:
+            - generic [ref=e762]:
+              - heading "Arthur Crudup - Roebuck Man - Blues Music [full album] 48 minutes" [level=3] [ref=e764]:
+                - link "Arthur Crudup - Roebuck Man - Blues Music [full album] 48 minutes" [ref=e765]:
+                  - /url: /watch?v=NOmL9Tkec8g&list=RDNOmL9Tkec8g&start_radio=1&pp=ygUfQXJ0aHVyIENydWR1cCBibHVlcyBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Arthur Crudup - Roebuck Man - Blues Music [full album]
+              - generic [ref=e768]:
+                - generic [ref=e769]: 181 views
+                - generic [ref=e770]: •1 year ago
+            - generic [ref=e771]:
+              - link "Go to channel Blues Emotion" [ref=e772]:
+                - /url: /@blues_emotion
+              - link "Blues Emotion" [ref=e777]:
+                - /url: /@blues_emotion

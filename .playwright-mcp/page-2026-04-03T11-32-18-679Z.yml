@@ -1,0 +1,687 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+      - generic [ref=e30]:
+        - button "Settings" [ref=e35] [cursor=pointer]
+        - link "Sign in" [ref=e39] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DSam%252BCooke%252Blive%252Btelevision%252BEd%252BSullivan%252Bperformance&hl=en&ec=65620
+          - generic [ref=e42]: Sign in
+  - generic [ref=e46]:
+    - main [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e50]:
+          - generic [ref=e53]:
+            - tablist [ref=e55]:
+              - tab "All" [selected] [ref=e59] [cursor=pointer]:
+                - generic [ref=e61]: All
+              - tab "Shorts" [ref=e68] [cursor=pointer]:
+                - generic [ref=e70]: Shorts
+              - tab "Videos" [ref=e77] [cursor=pointer]:
+                - generic [ref=e79]: Videos
+              - tab "Unwatched" [ref=e86] [cursor=pointer]:
+                - generic [ref=e88]: Unwatched
+              - tab "Watched" [ref=e95] [cursor=pointer]:
+                - generic [ref=e97]: Watched
+              - tab "Recently uploaded" [ref=e104] [cursor=pointer]:
+                - generic [ref=e106]: Recently uploaded
+              - tab "Live" [ref=e113] [cursor=pointer]:
+                - generic [ref=e115]: Live
+            - button "Next" [ref=e123] [cursor=pointer]
+          - link "About these results" [ref=e132] [cursor=pointer]:
+            - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+            - generic [ref=e133]: About these results
+          - generic [ref=e140]:
+            - button "Search filters" [ref=e142] [cursor=pointer]:
+              - generic [ref=e143]: Filters
+            - tooltip "tooltip"
+        - generic [ref=e154]:
+          - generic [ref=e156]:
+            - link [ref=e158] [cursor=pointer]:
+              - /url: /watch?v=REjmIdpAHsw&list=RDREjmIdpAHsw&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+              - img [ref=e160]
+              - img [ref=e163]:
+                - generic [ref=e165]: 0:59
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e166] [cursor=pointer]:
+              - generic [ref=e167]:
+                - heading "Sam Cooke \"You Send Me\" on The Ed Sullivan Show 59 seconds" [level=3] [ref=e169]:
+                  - link "Sam Cooke \"You Send Me\" on The Ed Sullivan Show 59 seconds" [ref=e170]:
+                    - /url: /watch?v=REjmIdpAHsw&list=RDREjmIdpAHsw&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Sam Cooke "You Send Me" on The Ed Sullivan Show
+                - generic [ref=e173]:
+                  - generic [ref=e174]: 498K views
+                  - generic [ref=e175]: •15 years ago
+              - generic [ref=e176]:
+                - link "Go to channel The Ed Sullivan Show" [ref=e177]:
+                  - /url: /@TheEdSullivanShow
+                - generic [ref=e179]:
+                  - link "The Ed Sullivan Show" [ref=e183]:
+                    - /url: /@TheEdSullivanShow
+                  - img "Verified" [ref=e186]
+              - generic [ref=e188]:
+                - generic [ref=e189]: http://goo.gl/n8f54 - Sam Cooke performing "You Send Me" on The Ed Sullivan Show on December 1, 1957. © SOFA ...
+                - tooltip "tooltip"
+          - generic [ref=e191]:
+            - link [ref=e193] [cursor=pointer]:
+              - /url: /watch?v=hyWdINgC4FE&list=RDhyWdINgC4FE&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+              - img [ref=e195]
+              - img [ref=e198]:
+                - generic [ref=e200]: 1:39
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e201] [cursor=pointer]:
+              - generic [ref=e202]:
+                - heading "Sam Cooke \"(I Love You) For Sentimental Reasons\" on The Ed Sullivan Show 1 minute, 39 seconds" [level=3] [ref=e204]:
+                  - link "Sam Cooke \"(I Love You) For Sentimental Reasons\" on The Ed Sullivan Show 1 minute, 39 seconds" [ref=e205]:
+                    - /url: /watch?v=hyWdINgC4FE&list=RDhyWdINgC4FE&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Sam Cooke "(I Love You) For Sentimental Reasons" on The Ed Sullivan Show
+                - generic [ref=e208]:
+                  - generic [ref=e209]: 141K views
+                  - generic [ref=e210]: •5 years ago
+              - generic [ref=e211]:
+                - link "Go to channel The Ed Sullivan Show" [ref=e212]:
+                  - /url: /@TheEdSullivanShow
+                - generic [ref=e214]:
+                  - link "The Ed Sullivan Show" [ref=e218]:
+                    - /url: /@TheEdSullivanShow
+                  - img "Verified" [ref=e221]
+              - generic [ref=e223]:
+                - generic [ref=e224]: Sam Cooke "(I Love You) For Sentimental Reasons" on The Ed Sullivan Show on December 1, 1957. Subscribe now to never ...
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e227]:
+                - generic [ref=e228]: CC
+          - generic [ref=e230]:
+            - link [ref=e232] [cursor=pointer]:
+              - /url: /watch?v=85ekOXs1-7k&list=RD85ekOXs1-7k&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+              - img [ref=e234]
+              - img [ref=e237]:
+                - generic [ref=e239]: 3:02
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e240] [cursor=pointer]:
+              - generic [ref=e241]:
+                - heading "Sam Cooke - You Send Me (Live) 3 minutes, 2 seconds" [level=3] [ref=e243]:
+                  - link "Sam Cooke - You Send Me (Live) 3 minutes, 2 seconds" [ref=e244]:
+                    - /url: /watch?v=85ekOXs1-7k&list=RD85ekOXs1-7k&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                    - text: Sam Cooke - You Send Me (Live)
+                - generic [ref=e247]:
+                  - generic [ref=e248]: 2.7M views
+                  - generic [ref=e249]: •14 years ago
+              - generic [ref=e250]:
+                - link "Go to channel gaslightrecords" [ref=e251]:
+                  - /url: /@pigcityrecords
+                - link "gaslightrecords" [ref=e257]:
+                  - /url: /@pigcityrecords
+              - generic [ref=e258]:
+                - generic [ref=e259]: Follow the past 50 years of Rock n' Roll as if it is happening today at www.gaslightrecords.com Record Review of Sam Cooke's ...
+                - tooltip "tooltip"
+          - generic [ref=e261]:
+            - link [ref=e263] [cursor=pointer]:
+              - /url: /watch?v=7yIMt-aZjCo&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZdIHCQnZCgGHKiGM7w%3D%3D
+              - img [ref=e265]
+              - img [ref=e268]:
+                - generic [ref=e269]: 2:57
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e270] [cursor=pointer]:
+              - generic [ref=e271]:
+                - heading "Sam Cooke Live Twistin' the Night Away 1963 2 minutes, 57 seconds" [level=3] [ref=e273]:
+                  - link "Sam Cooke Live Twistin' the Night Away 1963 2 minutes, 57 seconds" [ref=e274]:
+                    - /url: /watch?v=7yIMt-aZjCo&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZdIHCQnZCgGHKiGM7w%3D%3D
+                    - text: Sam Cooke Live Twistin' the Night Away 1963
+                - generic [ref=e277]:
+                  - generic [ref=e278]: 956K views
+                  - generic [ref=e279]: •13 years ago
+              - generic [ref=e280]:
+                - link "Go to channel supercanadian4" [ref=e281]:
+                  - /url: /@supercanadian4
+                - link "supercanadian4" [ref=e287]:
+                  - /url: /@supercanadian4
+              - generic [ref=e288]:
+                - generic [ref=e289]: This is Sam Cooke singing Twisting the night away live on tv in 1963.
+                - tooltip "tooltip"
+          - generic [ref=e291]:
+            - link [ref=e293] [cursor=pointer]:
+              - /url: /@TheEdSullivanShow
+            - link "The Ed Sullivan Show Verified @TheEdSullivanShow•1.14M subscribers The Ed Sullivan Show was a television variety program that aired on CBS from 1948-1971. For 23 years it aired every Sunday ..." [ref=e297] [cursor=pointer]:
+              - /url: /@TheEdSullivanShow
+              - generic [ref=e298]:
+                - generic [ref=e299]:
+                  - generic [ref=e302]: The Ed Sullivan Show
+                  - img "Verified" [ref=e305]
+                - generic [ref=e307]: "@TheEdSullivanShow•1.14M subscribers"
+                - generic [ref=e308]: The Ed Sullivan Show was a television variety program that aired on CBS from 1948-1971. For 23 years it aired every Sunday ...
+          - generic [ref=e310]:
+            - link [ref=e312] [cursor=pointer]:
+              - /url: /watch?v=R8OyD8QdvSU&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZQ%3D%3D
+            - generic [ref=e314] [cursor=pointer]:
+              - generic [ref=e315]:
+                - heading "Sam Cooke & Muhammad Ali -- Hey, Hey, The Gang's All Here 1 minute, 18 seconds" [level=3] [ref=e317]:
+                  - link "Sam Cooke & Muhammad Ali -- Hey, Hey, The Gang's All Here 1 minute, 18 seconds" [ref=e318]:
+                    - /url: /watch?v=R8OyD8QdvSU&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZQ%3D%3D
+                    - text: Sam Cooke & Muhammad Ali -- Hey, Hey, The Gang's All Here
+                - generic [ref=e321]:
+                  - generic [ref=e322]: 226K views
+                  - generic [ref=e323]: •5 years ago
+              - generic [ref=e324]:
+                - link "Go to channel Matt Wheeler" [ref=e325]:
+                  - /url: /@mattwheeler2511
+                - link "Matt Wheeler" [ref=e331]:
+                  - /url: /@mattwheeler2511
+              - generic [ref=e332]:
+                - text: Restored with color correction, image denoising, and frame interpolation to 60i. This was probably broadcast on "Grandstand", on ...
+                - tooltip "tooltip"
+          - generic [ref=e334]:
+            - link [ref=e336] [cursor=pointer]:
+              - /url: /watch?v=gr4n-nSicnM&list=RDgr4n-nSicnM&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e338] [cursor=pointer]:
+              - generic [ref=e339]:
+                - heading "The Lovin' Spoonful \"Darlin' Be Home Soon\" Live On The Ed Sullivan Show 3 minutes, 37 seconds" [level=3] [ref=e341]:
+                  - link "The Lovin' Spoonful \"Darlin' Be Home Soon\" Live On The Ed Sullivan Show 3 minutes, 37 seconds" [ref=e342]:
+                    - /url: /watch?v=gr4n-nSicnM&list=RDgr4n-nSicnM&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: The Lovin' Spoonful "Darlin' Be Home Soon" Live On The Ed Sullivan Show
+                - generic [ref=e345]:
+                  - generic [ref=e346]: 804K views
+                  - generic [ref=e347]: •4 years ago
+              - generic [ref=e348]:
+                - link "Go to channel The Ed Sullivan Show" [ref=e349]:
+                  - /url: /@TheEdSullivanShow
+                - generic [ref=e350]:
+                  - link "The Ed Sullivan Show" [ref=e354]:
+                    - /url: /@TheEdSullivanShow
+                  - img "Verified" [ref=e357]
+              - generic [ref=e359]:
+                - generic [ref=e360]: The Lovin' Spoonful "Darlin' Be Home Soon" Live On The Ed Sullivan Show, January 22, 1967. Subscribe now to never miss an ...
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e363]:
+                - generic [ref=e364]: CC
+          - generic [ref=e366]:
+            - link [ref=e368] [cursor=pointer]:
+              - /url: /watch?v=6_jH-TXUhzU&list=RD6_jH-TXUhzU&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e370] [cursor=pointer]:
+              - generic [ref=e371]:
+                - heading "Sam & Dave \"I Thank You\" on The Ed Sullivan Show 3 minutes, 6 seconds" [level=3] [ref=e373]:
+                  - link "Sam & Dave \"I Thank You\" on The Ed Sullivan Show 3 minutes, 6 seconds" [ref=e374]:
+                    - /url: /watch?v=6_jH-TXUhzU&list=RD6_jH-TXUhzU&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Sam & Dave "I Thank You" on The Ed Sullivan Show
+                - generic [ref=e377]:
+                  - generic [ref=e378]: 454K views
+                  - generic [ref=e379]: •5 years ago
+              - generic [ref=e380]:
+                - link "Go to channel The Ed Sullivan Show" [ref=e381]:
+                  - /url: /@TheEdSullivanShow
+                - generic [ref=e382]:
+                  - link "The Ed Sullivan Show" [ref=e386]:
+                    - /url: /@TheEdSullivanShow
+                  - img "Verified" [ref=e389]
+              - generic [ref=e391]:
+                - generic [ref=e392]: "Sam & Dave \"I Thank You\" on The Ed Sullivan Show on May 25, 1969. Subscribe now to never miss an update: ..."
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e395]:
+                - generic [ref=e396]: CC
+          - generic [ref=e397]:
+            - generic [ref=e400]:
+              - img [ref=e402]
+              - heading "Shorts" [level=2] [ref=e405]
+            - generic [ref=e406]:
+              - generic [ref=e407]:
+                - generic [ref=e410]:
+                  - link [ref=e411] [cursor=pointer]:
+                    - /url: /shorts/LwDaPG2AGZ0
+                  - generic [ref=e415] [cursor=pointer]:
+                    - 'link "Sam Cooke - You Send Me #shorts" [ref=e416]':
+                      - /url: /shorts/LwDaPG2AGZ0
+                    - generic [ref=e417]: 144K views
+                  - button "More actions" [ref=e419] [cursor=pointer]
+                - generic [ref=e427]:
+                  - link [ref=e428] [cursor=pointer]:
+                    - /url: /shorts/xy7lw8KIeVc
+                  - generic [ref=e432] [cursor=pointer]:
+                    - 'link "Connie Francis \"Lipstick On Your Collar\" 💄 Live on The Ed Sullivan Show, June 14, 1959 #shorts" [ref=e433]':
+                      - /url: /shorts/xy7lw8KIeVc
+                    - generic [ref=e434]: 108K views
+                  - button "More actions" [ref=e436] [cursor=pointer]
+              - generic [ref=e442]:
+                - generic [ref=e445]:
+                  - link [ref=e446] [cursor=pointer]:
+                    - /url: /shorts/e-zLksGdmK8
+                  - generic [ref=e450] [cursor=pointer]:
+                    - link "Sam Cooke you send me live" [ref=e451]:
+                      - /url: /shorts/e-zLksGdmK8
+                    - generic [ref=e452]: 20K views
+                  - button "More actions" [ref=e454] [cursor=pointer]
+                - generic [ref=e462]:
+                  - link [ref=e463] [cursor=pointer]:
+                    - /url: /shorts/X_a41q8Eh90
+                  - generic [ref=e467] [cursor=pointer]:
+                    - 'link "On This Day - Nat King Cole Debuts on The Ed Sullivan Show 🎶 #shorts" [ref=e468]':
+                      - /url: /shorts/X_a41q8Eh90
+                    - generic [ref=e469]: 18K views
+                  - button "More actions" [ref=e471] [cursor=pointer]
+            - button "Show more" [ref=e480] [cursor=pointer]:
+              - generic [ref=e481]: Show more
+          - generic [ref=e488]:
+            - link [ref=e490] [cursor=pointer]:
+              - /url: /watch?v=mDmasOKAneI&list=RDmDmasOKAneI&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e492] [cursor=pointer]:
+              - generic [ref=e493]:
+                - heading "Sam Cooke \"Good News\" 5 minutes, 21 seconds" [level=3] [ref=e495]:
+                  - link "Sam Cooke \"Good News\" 5 minutes, 21 seconds" [ref=e496]:
+                    - /url: /watch?v=mDmasOKAneI&list=RDmDmasOKAneI&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                    - text: Sam Cooke "Good News"
+                - generic [ref=e499]:
+                  - generic [ref=e500]: 395K views
+                  - generic [ref=e501]: •13 years ago
+              - generic [ref=e502]:
+                - link "Go to channel NRRArchives2" [ref=e503]:
+                  - /url: /@NRRArchives2
+                - link "NRRArchives2" [ref=e508]:
+                  - /url: /@NRRArchives2
+              - generic [ref=e509]:
+                - generic [ref=e510]: American Bandstand. April 04, 1964. Previously uploaded on my Beech-Nut channel, I am also uploading it here as it is a 60's ...
+                - tooltip "tooltip"
+          - generic [ref=e512]:
+            - link [ref=e514] [cursor=pointer]:
+              - /url: /watch?v=PBDdLgBO0Nw&list=RDPBDdLgBO0Nw&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e516] [cursor=pointer]:
+              - generic [ref=e517]:
+                - heading "Sam Cooke - Blowing in the Wind 2 minutes, 35 seconds" [level=3] [ref=e519]:
+                  - link "Sam Cooke - Blowing in the Wind 2 minutes, 35 seconds" [ref=e520]:
+                    - /url: /watch?v=PBDdLgBO0Nw&list=RDPBDdLgBO0Nw&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Sam Cooke - Blowing in the Wind
+                - generic [ref=e523]:
+                  - generic [ref=e524]: 2.2M views
+                  - generic [ref=e525]: •16 years ago
+              - generic [ref=e526]:
+                - link "Go to channel TheAim666" [ref=e527]:
+                  - /url: /@TheAim666
+                - link "TheAim666" [ref=e532]:
+                  - /url: /@TheAim666
+              - generic [ref=e533]:
+                - generic [ref=e534]: Sam Cooke - Blowing in the Wind.
+                - tooltip "tooltip"
+          - generic [ref=e535]:
+            - generic [ref=e538]:
+              - img [ref=e540]
+              - heading "Shorts" [level=2] [ref=e543]
+            - generic [ref=e544]:
+              - generic [ref=e545]:
+                - generic [ref=e548]:
+                  - link [ref=e549] [cursor=pointer]:
+                    - /url: /shorts/tB8GPGtxuxc
+                  - generic [ref=e553] [cursor=pointer]:
+                    - 'link "Why Ed Sullivan Was So Stiff #shorts #edsullivan" [ref=e554]':
+                      - /url: /shorts/tB8GPGtxuxc
+                    - generic [ref=e555]: 405K views
+                  - button "More actions" [ref=e557] [cursor=pointer]
+                - generic [ref=e565]:
+                  - link [ref=e566] [cursor=pointer]:
+                    - /url: /shorts/Jc3Z6cGvuTA
+                    - img [ref=e571]:
+                      - generic [ref=e572]: New
+                  - generic [ref=e573] [cursor=pointer]:
+                    - 'link "60 years ago, the Kessler Twins dazzled The Ed Sullivan Show with this medley! 👯‍♀️✨ #shorts" [ref=e574]':
+                      - /url: /shorts/Jc3Z6cGvuTA
+                    - generic [ref=e575]: 12K views
+                  - button "More actions" [ref=e577] [cursor=pointer]
+              - generic [ref=e583]:
+                - generic [ref=e586]:
+                  - link [ref=e587] [cursor=pointer]:
+                    - /url: /shorts/UDDXcBPNX3k
+                  - generic [ref=e591] [cursor=pointer]:
+                    - 'link "On June 28, 1964, Sinatra & Sullivan celebrated The Ed Sullivan Show’s 16th anniversary! 🎂 #shorts" [ref=e592]':
+                      - /url: /shorts/UDDXcBPNX3k
+                    - generic [ref=e593]: 53K views
+                  - button "More actions" [ref=e595] [cursor=pointer]
+                - generic [ref=e603]:
+                  - link [ref=e604] [cursor=pointer]:
+                    - /url: /shorts/ytuCvST_tuc
+                  - generic [ref=e608] [cursor=pointer]:
+                    - 'link "65 years ago, Nina Simone debuted on The Ed Sullivan Show with unforgettable performances! #shorts" [ref=e609]':
+                      - /url: /shorts/ytuCvST_tuc
+                    - generic [ref=e610]: 61K views
+                  - button "More actions" [ref=e612] [cursor=pointer]
+            - button "Show more" [ref=e621] [cursor=pointer]:
+              - generic [ref=e622]: Show more
+          - generic [ref=e629]:
+            - link [ref=e631] [cursor=pointer]:
+              - /url: /watch?v=mwKwua0JXq8&list=RDmwKwua0JXq8&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e633] [cursor=pointer]:
+              - generic [ref=e634]:
+                - heading "Sam Cooke on Ed Sullivan 1957 1 minute, 37 seconds" [level=3] [ref=e636]:
+                  - link "Sam Cooke on Ed Sullivan 1957 1 minute, 37 seconds" [ref=e637]:
+                    - /url: /watch?v=mwKwua0JXq8&list=RDmwKwua0JXq8&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Sam Cooke on Ed Sullivan 1957
+                - generic [ref=e640]:
+                  - generic [ref=e641]: 3.2K views
+                  - generic [ref=e642]: •4 years ago
+              - generic [ref=e643]:
+                - link "Go to channel Bambu Soulja" [ref=e644]:
+                  - /url: /@BambuSouljaBlessUP
+                - link "Bambu Soulja" [ref=e649]:
+                  - /url: /@BambuSouljaBlessUP
+              - generic [ref=e650]:
+                - generic [ref=e651]: 12/1/1957 - Sam Cooke originally first appeared on Ed Sullivan about a month earlier on November 3rd but it was cut short since ...
+                - tooltip "tooltip"
+          - generic [ref=e653]:
+            - link [ref=e655] [cursor=pointer]:
+              - /url: /watch?v=hEVMK0vd_JI&list=RDhEVMK0vd_JI&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e657] [cursor=pointer]:
+              - generic [ref=e658]:
+                - heading "Sammy Davis Jr. \"Jam Session (Sam, By George!)\" on The Ed Sullivan Show 3 minutes, 51 seconds" [level=3] [ref=e660]:
+                  - link "Sammy Davis Jr. \"Jam Session (Sam, By George!)\" on The Ed Sullivan Show 3 minutes, 51 seconds" [ref=e661]:
+                    - /url: /watch?v=hEVMK0vd_JI&list=RDhEVMK0vd_JI&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Sammy Davis Jr. "Jam Session (Sam, By George!)" on The Ed Sullivan Show
+                - generic [ref=e664]:
+                  - generic [ref=e665]: 96K views
+                  - generic [ref=e666]: •1 year ago
+              - generic [ref=e667]:
+                - link "Go to channel The Ed Sullivan Show" [ref=e668]:
+                  - /url: /@TheEdSullivanShow
+                - generic [ref=e669]:
+                  - link "The Ed Sullivan Show" [ref=e673]:
+                    - /url: /@TheEdSullivanShow
+                  - img "Verified" [ref=e676]
+              - generic [ref=e678]:
+                - generic [ref=e679]: Sammy Davis Jr. "Jam Session (Sam, By George!)" on The Ed Sullivan Show, November 15, 1964. Subscribe now to never miss ...
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e682]:
+                - generic [ref=e683]: CC
+          - generic [ref=e685]:
+            - heading "People also watched" [level=2] [ref=e688]:
+              - generic [ref=e690]: People also watched
+            - generic [ref=e692]:
+              - generic [ref=e693]:
+                - generic [ref=e695]:
+                  - link [ref=e697] [cursor=pointer]:
+                    - /url: /watch?v=kB36G9EKsnA&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZdIHCQnZCgGHKiGM7w%3D%3D
+                  - generic [ref=e699] [cursor=pointer]:
+                    - generic [ref=e700]:
+                      - heading "THE ED SULLIVAN SHOW - Even More Great Performances. (In my opinion ) 56 minutes" [level=3] [ref=e702]:
+                        - link "THE ED SULLIVAN SHOW - Even More Great Performances. (In my opinion ) 56 minutes" [ref=e703]:
+                          - /url: /watch?v=kB36G9EKsnA&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZdIHCQnZCgGHKiGM7w%3D%3D
+                          - text: THE ED SULLIVAN SHOW - Even More Great Performances. (In my opinion )
+                      - generic [ref=e706]:
+                        - generic [ref=e707]: 87K views
+                        - generic [ref=e708]: •2 months ago
+                    - generic [ref=e709]:
+                      - link "Go to channel Pete Roberts" [ref=e710]:
+                        - /url: /@peteroberts4033
+                      - link "Pete Roberts" [ref=e715]:
+                        - /url: /@peteroberts4033
+                    - generic [ref=e716]:
+                      - generic [ref=e717]: No copyright infringement intended.. All shared from You Tube with very many thanks . Especially to the Ed Sullivan channel .
+                      - tooltip "tooltip"
+                - generic [ref=e719]:
+                  - link [ref=e721] [cursor=pointer]:
+                    - /url: /watch?v=dT5RppqL6vw&list=RDdT5RppqL6vw&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - generic [ref=e723] [cursor=pointer]:
+                    - generic [ref=e724]:
+                      - heading "YouTube - Sam Cooke and Jackie Wilson-Cha Cha Cha.mp4 2 minutes, 41 seconds" [level=3] [ref=e726]:
+                        - link "YouTube - Sam Cooke and Jackie Wilson-Cha Cha Cha.mp4 2 minutes, 41 seconds" [ref=e727]:
+                          - /url: /watch?v=dT5RppqL6vw&list=RDdT5RppqL6vw&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                          - text: YouTube - Sam Cooke and Jackie Wilson-Cha Cha Cha.mp4
+                      - generic [ref=e730]:
+                        - generic [ref=e731]: 1.6M views
+                        - generic [ref=e732]: •16 years ago
+                    - generic [ref=e733]:
+                      - link "Go to channel Kuro Ness" [ref=e734]:
+                        - /url: /@KuroPantherX
+                      - link "Kuro Ness" [ref=e739]:
+                        - /url: /@KuroPantherX
+                - generic [ref=e741]:
+                  - link [ref=e743] [cursor=pointer]:
+                    - /url: /watch?v=x1Fg4rBXi1M&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZQ%3D%3D
+                  - generic [ref=e745] [cursor=pointer]:
+                    - generic [ref=e746]:
+                      - heading "BETTER THAN THE ORIGINAL? Incredible Sam Cooke covers on The Voice 12 minutes, 14 seconds" [level=3] [ref=e748]:
+                        - link "BETTER THAN THE ORIGINAL? Incredible Sam Cooke covers on The Voice 12 minutes, 14 seconds" [ref=e749]:
+                          - /url: /watch?v=x1Fg4rBXi1M&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZQ%3D%3D
+                          - text: BETTER THAN THE ORIGINAL? Incredible Sam Cooke covers on The Voice
+                      - generic [ref=e752]:
+                        - generic [ref=e753]: 1.8M views
+                        - generic [ref=e754]: •2 years ago
+                    - generic [ref=e755]:
+                      - link "Go to channel The Voice Global" [ref=e756]:
+                        - /url: /@TheVoiceGlobal
+                      - generic [ref=e757]:
+                        - link "The Voice Global" [ref=e761]:
+                          - /url: /@TheVoiceGlobal
+                        - img "Verified" [ref=e764]
+                    - generic [ref=e766]:
+                      - generic [ref=e767]: These talents from around the world perform some of the best Sam Cooke songs. Which one was your favorite? Let us know in the ...
+                      - tooltip "tooltip"
+                    - generic [ref=e770]:
+                      - generic [ref=e771]:
+                        - generic [ref=e775]: 7 chapters
+                        - button "1. NOIVAS sings 'A Change Is Gonna Come' (The Voice US) | 2. Trevor Francis sings 'A Change Is Gonna Come' (The Voice UK) | 3. Ben Sekali sings 'A Change Is Gonna Come' (The Voice Australia) | 4. Enzo S sings 'A Change Is Gonna Come' (The Voice France) | 5. Louise sings 'A Change Is Gonna Come' (The Voice Vlaanderen) | 6. Mo and Diamond sing 'A Change Is Gonna Come' (The Voice UK) | 7. Johnny Manuel sings 'A Change Is Gonna Come' (The Voice Australia)"
+                      - button "More" [ref=e780]
+                - generic [ref=e787]:
+                  - link [ref=e789] [cursor=pointer]:
+                    - /url: /watch?v=Fowldx4hRtI&list=RDFowldx4hRtI&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - generic [ref=e791] [cursor=pointer]:
+                    - generic [ref=e792]:
+                      - heading "Sam and Dave - Hold On, I'm Coming 7 minutes, 15 seconds" [level=3] [ref=e794]:
+                        - link "Sam and Dave - Hold On, I'm Coming 7 minutes, 15 seconds" [ref=e795]:
+                          - /url: /watch?v=Fowldx4hRtI&list=RDFowldx4hRtI&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                          - text: Sam and Dave - Hold On, I'm Coming
+                      - generic [ref=e798]:
+                        - generic [ref=e799]: 1.8M views
+                        - generic [ref=e800]: •15 years ago
+                    - generic [ref=e801]:
+                      - link "Go to channel EdBlackmail" [ref=e802]:
+                        - /url: /@EdBlackmail
+                      - link "EdBlackmail" [ref=e807]:
+                        - /url: /@EdBlackmail
+                    - generic [ref=e808]:
+                      - generic [ref=e809]: Amazing performance - Sam and Dave - Hold On, I'm Coming (Live 1966, Stax & Volt tour)
+                      - tooltip "tooltip"
+              - generic "+5 more" [ref=e811] [cursor=pointer]
+          - generic [ref=e813] [cursor=pointer]:
+            - link [ref=e814]:
+              - /url: /watch?v=PBDdLgBO0Nw&list=PLyuhf1uXCkFvYBCi4hfukaS1mQRScFh2S
+              - generic [ref=e826]: 13 videos
+            - generic [ref=e829]:
+              - heading "Sam Cooke Live" [level=3] [ref=e830]:
+                - link "Sam Cooke Live" [ref=e831]:
+                  - /url: /watch?v=PBDdLgBO0Nw&list=PLyuhf1uXCkFvYBCi4hfukaS1mQRScFh2S
+              - generic [ref=e833]:
+                - generic [ref=e834]:
+                  - link "Moses Smith" [ref=e837]:
+                    - /url: /@mosessmith545
+                  - generic [ref=e838]: •
+                  - link "Playlist" [ref=e841]:
+                    - /url: /@mosessmith545
+                - link "Sam Cooke - Blowing in the Wind · 2:35" [ref=e845]:
+                  - /url: /watch?v=PBDdLgBO0Nw&list=PLyuhf1uXCkFvYBCi4hfukaS1mQRScFh2S
+                - link "Sam Cooke- Ol' Man River · 3:16" [ref=e848]:
+                  - /url: /watch?v=1sA_luKXidk&list=PLyuhf1uXCkFvYBCi4hfukaS1mQRScFh2S
+                - link "View full playlist" [ref=e853]:
+                  - /url: /playlist?list=PLyuhf1uXCkFvYBCi4hfukaS1mQRScFh2S
+          - generic [ref=e855]:
+            - link [ref=e857] [cursor=pointer]:
+              - /url: /shorts/YgVQ6cAUwzg
+            - generic [ref=e859] [cursor=pointer]:
+              - generic [ref=e860]:
+                - 'heading "🎤 Sam Cooke''s Soulful \"You Send Me\" Debut on Ed Sullivan #classicmusic #60smusic #musiclegends by Retro Music Trip 1,914 views 1 year ago 30 seconds - play Short" [level=3] [ref=e862]':
+                  - 'link "🎤 Sam Cooke''s Soulful \"You Send Me\" Debut on Ed Sullivan #classicmusic #60smusic #musiclegends by Retro Music Trip 1,914 views 1 year ago 30 seconds - play Short" [ref=e863]':
+                    - /url: /shorts/YgVQ6cAUwzg
+                    - text: "🎤 Sam Cooke's Soulful \"You Send Me\" Debut on Ed Sullivan #classicmusic #60smusic #musiclegends"
+                - generic [ref=e866]:
+                  - generic [ref=e867]: 1.9K views
+                  - generic [ref=e868]: •1 year ago
+              - generic [ref=e869]:
+                - link "Go to channel Retro Music Trip" [ref=e870]:
+                  - /url: /@retro.musictrip
+                - link "Retro Music Trip" [ref=e875]:
+                  - /url: /@retro.musictrip
+              - generic [ref=e876]:
+                - generic [ref=e877]: Watch the incredible Sam Cooke deliver a passionate performance of his hit "You Send Me" in this 1957 clip from The Ed Sullivan ...
+                - tooltip "tooltip"
+          - generic [ref=e879]:
+            - link [ref=e881] [cursor=pointer]:
+              - /url: /watch?v=_qQzuvfvBdE&list=RD_qQzuvfvBdE&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e883] [cursor=pointer]:
+              - generic [ref=e884]:
+                - heading "Buddy Holly & The Crickets \"Peggy Sue\" on The Ed Sullivan Show 1 minute, 55 seconds" [level=3] [ref=e886]:
+                  - link "Buddy Holly & The Crickets \"Peggy Sue\" on The Ed Sullivan Show 1 minute, 55 seconds" [ref=e887]:
+                    - /url: /watch?v=_qQzuvfvBdE&list=RD_qQzuvfvBdE&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Buddy Holly & The Crickets "Peggy Sue" on The Ed Sullivan Show
+                - generic [ref=e890]:
+                  - generic [ref=e891]: 4.1M views
+                  - generic [ref=e892]: •5 years ago
+              - generic [ref=e893]:
+                - link "Go to channel The Ed Sullivan Show" [ref=e894]:
+                  - /url: /@TheEdSullivanShow
+                - generic [ref=e895]:
+                  - link "The Ed Sullivan Show" [ref=e899]:
+                    - /url: /@TheEdSullivanShow
+                  - img "Verified" [ref=e902]
+              - generic [ref=e904]:
+                - generic [ref=e905]: REMASTERED IN HD! Buddy Holly & The Crickets "Peggy Sue" on the Ed Sullivan Show on December 1, 1957. Subscribe now to ...
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e908]:
+                - generic [ref=e909]: CC
+          - generic [ref=e911]:
+            - link [ref=e913] [cursor=pointer]:
+              - /url: /watch?v=7lJ8ZQ__4kI&list=RD7lJ8ZQ__4kI&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e915] [cursor=pointer]:
+              - generic [ref=e916]:
+                - heading "Sammy Davis Jr. & Ella Fitzgerald \"S'Wonderful\" on The Ed Sullivan Show 4 minutes, 27 seconds" [level=3] [ref=e918]:
+                  - link "Sammy Davis Jr. & Ella Fitzgerald \"S'Wonderful\" on The Ed Sullivan Show 4 minutes, 27 seconds" [ref=e919]:
+                    - /url: /watch?v=7lJ8ZQ__4kI&list=RD7lJ8ZQ__4kI&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Sammy Davis Jr. & Ella Fitzgerald "S'Wonderful" on The Ed Sullivan Show
+                - generic [ref=e922]:
+                  - generic [ref=e923]: 178K views
+                  - generic [ref=e924]: •2 years ago
+              - generic [ref=e925]:
+                - link "Collaboration channels" [ref=e927]
+                - generic [ref=e947]:
+                  - text: The Ed Sullivan Show
+                  - img [ref=e950]
+                  - text: and Ella Fitzgerald
+                  - img [ref=e953]
+              - generic [ref=e954]:
+                - generic [ref=e955]: Sammy Davis Jr. & Ella Fitzgerald "S'Wonderful" on The Ed Sullivan Show, February 2, 1964. Subscribe now to never miss an ...
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e958]:
+                - generic [ref=e959]: CC
+          - generic [ref=e961] [cursor=pointer]:
+            - link [ref=e962]:
+              - /url: /watch?v=jenWdylTtzs&list=PLQWND5qZhbj0nqnmye5U2g3Z-ai8wos4p
+              - generic [ref=e974]: 50 videos
+            - generic [ref=e977]:
+              - heading "The Best Music Performances on The Ed Sullivan Show" [level=3] [ref=e978]:
+                - link "The Best Music Performances on The Ed Sullivan Show" [ref=e979]:
+                  - /url: /watch?v=jenWdylTtzs&list=PLQWND5qZhbj0nqnmye5U2g3Z-ai8wos4p
+              - generic [ref=e981]:
+                - generic [ref=e982]:
+                  - link "The Ed Sullivan Show" [ref=e985]:
+                    - /url: /@TheEdSullivanShow
+                    - text: The Ed Sullivan Show
+                    - img [ref=e988]
+                  - generic [ref=e989]: •
+                  - link "Playlist" [ref=e992]:
+                    - /url: /@TheEdSullivanShow
+                - link "The Beatles - The Beatles - I Want To Hold Your Hand (Live on The Ed Sullivan Show) · 2:37" [ref=e996]:
+                  - /url: /watch?v=jenWdylTtzs&list=PLQWND5qZhbj0nqnmye5U2g3Z-ai8wos4p
+                - link "Tom Jones \"Delilah\" on The Ed Sullivan Show · 3:15" [ref=e999]:
+                  - /url: /watch?v=MIIU9xkGAMs&list=PLQWND5qZhbj0nqnmye5U2g3Z-ai8wos4p
+                - link "View full playlist" [ref=e1004]:
+                  - /url: /playlist?list=PLQWND5qZhbj0nqnmye5U2g3Z-ai8wos4p
+          - generic [ref=e1006]:
+            - link [ref=e1008] [cursor=pointer]:
+              - /url: /watch?v=6CNyVlo40h8&list=RD6CNyVlo40h8&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e1010] [cursor=pointer]:
+              - generic [ref=e1011]:
+                - heading "Jackie Wilson \"Lonely Teardrops\" (May 27, 1962) on The Ed Sullivan Show 3 minutes, 5 seconds" [level=3] [ref=e1013]:
+                  - link "Jackie Wilson \"Lonely Teardrops\" (May 27, 1962) on The Ed Sullivan Show 3 minutes, 5 seconds" [ref=e1014]:
+                    - /url: /watch?v=6CNyVlo40h8&list=RD6CNyVlo40h8&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Jackie Wilson "Lonely Teardrops" (May 27, 1962) on The Ed Sullivan Show
+                - generic [ref=e1017]:
+                  - generic [ref=e1018]: 1M views
+                  - generic [ref=e1019]: •5 years ago
+              - generic [ref=e1020]:
+                - link "Go to channel The Ed Sullivan Show" [ref=e1021]:
+                  - /url: /@TheEdSullivanShow
+                - generic [ref=e1022]:
+                  - link "The Ed Sullivan Show" [ref=e1026]:
+                    - /url: /@TheEdSullivanShow
+                  - img "Verified" [ref=e1029]
+              - generic [ref=e1031]:
+                - generic [ref=e1032]: "Jackie Wilson \"Lonely Teardrops\" on The Ed Sullivan Show on May 27, 1962. Subscribe now to never miss an update: ..."
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e1035]:
+                - generic [ref=e1036]: CC
+          - generic [ref=e1038]:
+            - link [ref=e1040] [cursor=pointer]:
+              - /url: /watch?v=fGp8ju4zi7Y&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZQ%3D%3D
+            - generic [ref=e1042] [cursor=pointer]:
+              - generic [ref=e1043]:
+                - heading "Ed Sullivan Sits Down With Johnny | Carson Tonight Show 8 minutes, 11 seconds" [level=3] [ref=e1045]:
+                  - link "Ed Sullivan Sits Down With Johnny | Carson Tonight Show 8 minutes, 11 seconds" [ref=e1046]:
+                    - /url: /watch?v=fGp8ju4zi7Y&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZQ%3D%3D
+                    - text: Ed Sullivan Sits Down With Johnny | Carson Tonight Show
+                - generic [ref=e1049]:
+                  - generic [ref=e1050]: 288K views
+                  - generic [ref=e1051]: •3 years ago
+              - generic [ref=e1052]:
+                - link "Go to channel Johnny Carson" [ref=e1053]:
+                  - /url: /@johnnycarson
+                - generic [ref=e1054]:
+                  - link "Johnny Carson" [ref=e1058]:
+                    - /url: /@johnnycarson
+                  - img "Verified" [ref=e1061]
+              - generic [ref=e1063]:
+                - generic [ref=e1064]: "Original Airdate: December 14th, 1972 #johnnycarson #thetonightshow #edsullivan."
+                - tooltip "tooltip"
+              - generic [ref=e1067]:
+                - generic [ref=e1068]:
+                  - generic [ref=e1071]: Summary
+                  - button "Relive a classic Tonight Show moment from December 14th, 1972, featuring a candid conversation between Johnny Carson and Ed Sullivan. They reminisce about Sullivan's legendary career, touching on early radio days and iconic television moments. Enjoy this rare glimpse into late-night television history."
+                  - text: ·
+                - button "More" [ref=e1076]
+          - generic [ref=e1083]:
+            - link [ref=e1085] [cursor=pointer]:
+              - /url: /watch?v=ruKCw797JM4&list=RDruKCw797JM4&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e1087] [cursor=pointer]:
+              - generic [ref=e1088]:
+                - heading "The Beach Boys \"I Get Around\" on The Ed Sullivan Show 2 minutes, 1 second" [level=3] [ref=e1090]:
+                  - link "The Beach Boys \"I Get Around\" on The Ed Sullivan Show 2 minutes, 1 second" [ref=e1091]:
+                    - /url: /watch?v=ruKCw797JM4&list=RDruKCw797JM4&start_radio=1&pp=ygUxU2FtIENvb2tlIGxpdmUgdGVsZXZpc2lvbiBFZCBTdWxsaXZhbiBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: The Beach Boys "I Get Around" on The Ed Sullivan Show
+                - generic [ref=e1094]:
+                  - generic [ref=e1095]: 13M views
+                  - generic [ref=e1096]: •5 years ago
+              - generic [ref=e1097]:
+                - link "Collaboration channels" [ref=e1099]
+                - generic [ref=e1119]:
+                  - text: The Ed Sullivan Show
+                  - img [ref=e1122]
+                  - text: and The Beach Boys
+                  - img [ref=e1125]
+              - generic [ref=e1126]:
+                - generic [ref=e1127]: The Beach Boys "I Get Around" remastered in HD on The Ed Sullivan Show on September 27, 1964. Subscribe now to never miss ...
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e1130]:
+                - generic [ref=e1131]: CC
+    - text: •

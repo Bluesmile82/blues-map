@@ -1,0 +1,671 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+      - generic [ref=e30]:
+        - button "Settings" [ref=e35] [cursor=pointer]
+        - link "Sign in" [ref=e39] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DTedeschi%252BTrucks%252BBand%252Blive%252Bconcert%252Bofficial&hl=en&ec=65620
+          - generic [ref=e42]: Sign in
+  - main [ref=e47]:
+    - generic [ref=e48]:
+      - generic [ref=e50]:
+        - generic [ref=e53]:
+          - tablist [ref=e55]:
+            - tab "All" [selected] [ref=e59] [cursor=pointer]:
+              - generic [ref=e61]: All
+            - tab "Shorts" [ref=e68] [cursor=pointer]:
+              - generic [ref=e70]: Shorts
+            - tab "Videos" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]: Videos
+            - tab "Unwatched" [ref=e86] [cursor=pointer]:
+              - generic [ref=e88]: Unwatched
+            - tab "Watched" [ref=e95] [cursor=pointer]:
+              - generic [ref=e97]: Watched
+            - tab "Recently uploaded" [ref=e104] [cursor=pointer]:
+              - generic [ref=e106]: Recently uploaded
+            - tab "Live" [ref=e113] [cursor=pointer]:
+              - generic [ref=e115]: Live
+          - button "Next" [ref=e123] [cursor=pointer]
+        - link "About these results" [ref=e132] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e133]: About these results
+        - generic [ref=e140]:
+          - button "Search filters" [ref=e142] [cursor=pointer]:
+            - generic [ref=e143]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e154]:
+        - generic [ref=e156]:
+          - link [ref=e158] [cursor=pointer]:
+            - /url: /watch?v=r9Mc3_ebTuQ&list=RDr9Mc3_ebTuQ&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+            - img [ref=e160]
+            - img [ref=e163]:
+              - generic [ref=e165]: 2:07:36
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e166] [cursor=pointer]:
+            - generic [ref=e167]:
+              - heading "Tedeschi Trucks Band | Red Rocks 2025 2 hours, 7 minutes" [level=3] [ref=e169]:
+                - link "Tedeschi Trucks Band | Red Rocks 2025 2 hours, 7 minutes" [ref=e170]:
+                  - /url: /watch?v=r9Mc3_ebTuQ&list=RDr9Mc3_ebTuQ&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                  - text: Tedeschi Trucks Band | Red Rocks 2025
+              - generic [ref=e173]:
+                - generic [ref=e174]: 24K views
+                - generic [ref=e175]: •7 months ago
+            - generic [ref=e176]:
+              - link "Go to channel Top Load Tele" [ref=e177]:
+                - /url: /@toploadtele
+              - link "Top Load Tele" [ref=e182]:
+                - /url: /@toploadtele
+            - generic [ref=e183]:
+              - text: Full Show - 08/01/2025.
+              - tooltip "tooltip"
+        - generic [ref=e185]:
+          - link [ref=e187] [cursor=pointer]:
+            - /url: /watch?v=ML8zJhbfMaM&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFs
+          - generic [ref=e189] [cursor=pointer]:
+            - generic [ref=e190]:
+              - heading "Tedeschi Trucks Band | The Capitol Theatre | 2/20/18 | Relix 3 hours, 9 minutes" [level=3] [ref=e192]:
+                - link "Tedeschi Trucks Band | The Capitol Theatre | 2/20/18 | Relix 3 hours, 9 minutes" [ref=e193]:
+                  - /url: /watch?v=ML8zJhbfMaM&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFs
+                  - text: Tedeschi Trucks Band | The Capitol Theatre | 2/20/18 | Relix
+              - generic [ref=e196]:
+                - generic [ref=e197]: 886K views
+                - generic [ref=e198]: •Streamed 8 years ago
+            - generic [ref=e199]:
+              - link "Go to channel Relix" [ref=e200]:
+                - /url: /@RelixMag
+              - generic [ref=e202]:
+                - link "Relix" [ref=e206]:
+                  - /url: /@RelixMag
+                - img "Verified" [ref=e209]
+            - generic [ref=e211]:
+              - generic [ref=e212]: Tedeschi Trucks Band captured live at The Capitol Theatre on 2/20/18. Archival concert footage from the Relix vault. Subscribe to ...
+              - tooltip "tooltip"
+        - generic [ref=e214]:
+          - link [ref=e216] [cursor=pointer]:
+            - /url: /watch?v=z6uN30rqrno&list=RDz6uN30rqrno&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+          - generic [ref=e218] [cursor=pointer]:
+            - generic [ref=e219]:
+              - heading "Tedeschi Trucks Band - 3/10/26 - Beacon Theatre NYC Night 1 - Complete show (4K) 2 hours, 43 minutes" [level=3] [ref=e221]:
+                - link "Tedeschi Trucks Band - 3/10/26 - Beacon Theatre NYC Night 1 - Complete show (4K) 2 hours, 43 minutes" [ref=e222]:
+                  - /url: /watch?v=z6uN30rqrno&list=RDz6uN30rqrno&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                  - text: Tedeschi Trucks Band - 3/10/26 - Beacon Theatre NYC Night 1 - Complete show (4K)
+              - generic [ref=e225]:
+                - generic [ref=e226]: 18K views
+                - generic [ref=e227]: •2 weeks ago
+            - generic [ref=e228]:
+              - link "Go to channel Larry Rulz 5" [ref=e229]:
+                - /url: /@larryrulz5
+              - link "Larry Rulz 5" [ref=e235]:
+                - /url: /@larryrulz5
+            - generic [ref=e236]:
+              - text: "Recorded on March 10, 2026 at the Beacon Theatre in New York, NY. Setlist: Set 1: 0:00 Anyhow 6:54 Playing With My Emotions ..."
+              - tooltip "tooltip"
+            - img "4K" [ref=e239]:
+              - generic [ref=e240]: 4K
+            - generic [ref=e243]:
+              - generic [ref=e244]:
+                - generic [ref=e248]: 22 chapters
+                - button "Anyhow | Playing With My Emotions | I Got You | Hero (Live debut) | Under the Knife (Live debut) | Part of Me | It's So Heavy | Stand Back | Soul Sweet Song | Love Has Something Else to Say | Ohio (TTB debut) | Midnight in Harlem | La Di Da | Get What You Deserve | Bell Bottom Blues | Why Does Love Got to Be So Sad? | Circles 'Round the Sun | Pasaquan | Just Won't Burn | I Walk on Guilded Splinters | Let the Good Times Roll | Made Up Mind"
+              - button "More" [ref=e253]
+        - generic [ref=e260]:
+          - link [ref=e262] [cursor=pointer]:
+            - /url: /watch?v=bIivRlhwvS4&list=RDbIivRlhwvS4&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+            - img [ref=e264]
+            - img [ref=e267]:
+              - generic [ref=e269]: 2:11:46
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e270] [cursor=pointer]:
+            - generic [ref=e271]:
+              - heading "Tedeschi Trucks Band Orpheum Theatre - Madison, WI, USA 2015 2 hours, 11 minutes" [level=3] [ref=e273]:
+                - link "Tedeschi Trucks Band Orpheum Theatre - Madison, WI, USA 2015 2 hours, 11 minutes" [ref=e274]:
+                  - /url: /watch?v=bIivRlhwvS4&list=RDbIivRlhwvS4&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                  - text: Tedeschi Trucks Band Orpheum Theatre - Madison, WI, USA 2015
+              - generic [ref=e277]:
+                - generic [ref=e278]: 2.1M views
+                - generic [ref=e279]: •10 years ago
+            - generic [ref=e280]:
+              - link "Go to channel Pavel Bobovnikov" [ref=e281]:
+                - /url: /@Pashatiger
+              - link "Pavel Bobovnikov" [ref=e287]:
+                - /url: /@Pashatiger
+            - generic [ref=e288]:
+              - text: March 28, 2015 Orpheum Theatre - Madison, WI, USA 01:00. All That I Need 09:00. Do I Look Worried 14:24. Made Up Mind ...
+              - tooltip "tooltip"
+            - generic [ref=e291]:
+              - generic [ref=e292]:
+                - generic [ref=e296]: 15 moments
+                - button "All That I Need | Do I Look Worried | Made Up Mind | In Every Heart | Don't Miss Me | Let Me Get By | Keep On Growing | Midnight In Harlem | Break In The Road | Idle Wind | I Pity The Fool | Bound For Glory | I Got A Feeling | I Want More & What Is and What Should Never Be | The Storm"
+              - button "More" [ref=e301]
+        - generic [ref=e308]:
+          - link [ref=e310] [cursor=pointer]:
+            - /url: /watch?v=3Ke3rez03qQ&list=RD3Ke3rez03qQ&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB0gcJCdkKAYcqIYzv
+          - generic [ref=e312] [cursor=pointer]:
+            - generic [ref=e313]:
+              - heading "Tedeschi Trucks Band St. Augustine Amphitheatre 10/25/25 2 hours, 47 minutes" [level=3] [ref=e315]:
+                - link "Tedeschi Trucks Band St. Augustine Amphitheatre 10/25/25 2 hours, 47 minutes" [ref=e316]:
+                  - /url: /watch?v=3Ke3rez03qQ&list=RD3Ke3rez03qQ&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB0gcJCdkKAYcqIYzv
+                  - text: Tedeschi Trucks Band St. Augustine Amphitheatre 10/25/25
+              - generic [ref=e319]:
+                - generic [ref=e320]: 26K views
+                - generic [ref=e321]: •4 months ago
+            - generic [ref=e322]:
+              - link "Go to channel Bob Beatty (historian)" [ref=e323]:
+                - /url: /@longlivetheabb
+              - link "Bob Beatty (historian)" [ref=e329]:
+                - /url: /@longlivetheabb
+            - generic [ref=e330]:
+              - generic [ref=e331]: "LIFE IS SHORT, BUY THE TICKETS: https://longlivetheabb.substack.com/p/life-is-short-buy-the-tickets Final full Tedeschi Trucks ..."
+              - tooltip "tooltip"
+        - generic [ref=e333]:
+          - link [ref=e335] [cursor=pointer]:
+            - /url: /watch?v=suaiN07zx5U&list=RDsuaiN07zx5U&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+          - generic [ref=e337] [cursor=pointer]:
+            - generic [ref=e338]:
+              - heading "Tedeschi Trucks Band @ Atrium Health Amphitheater, Macon, GA on 10/11/2025 (Full Concert 4k) 1 hour, 54 minutes" [level=3] [ref=e340]:
+                - link "Tedeschi Trucks Band @ Atrium Health Amphitheater, Macon, GA on 10/11/2025 (Full Concert 4k) 1 hour, 54 minutes" [ref=e341]:
+                  - /url: /watch?v=suaiN07zx5U&list=RDsuaiN07zx5U&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                  - text: Tedeschi Trucks Band @ Atrium Health Amphitheater, Macon, GA on 10/11/2025 (Full Concert 4k)
+              - generic [ref=e344]:
+                - generic [ref=e345]: 24K views
+                - generic [ref=e346]: •4 months ago
+            - generic [ref=e347]:
+              - link "Go to channel Cosmic Hippo" [ref=e348]:
+                - /url: /@cosmichippo9708
+              - link "Cosmic Hippo" [ref=e353]:
+                - /url: /@cosmichippo9708
+            - generic [ref=e354]:
+              - generic [ref=e355]: Here is a performance by Tedeschi Trucks Band from Atrium Health Amphitheater in Macon, GA on 10/11/2025. Another epic ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e358]:
+              - generic [ref=e359]: 4K
+            - generic [ref=e362]:
+              - generic [ref=e363]:
+                - generic [ref=e367]: 21 chapters
+                - button "0) Start | 1) Crazy Cryin' | 2) Anyhow | 3) Do I Look Worried | 4) Done Somebody Wrong | 5) Who Am I | 6) I Walk On Guilded Splinters (Dr. John) | 7) Until You Remember | 8) Keep On Smilin' (Wet Willie) | 9) It Ain't Fair (Aretha Franklin) | 10) Devil Be Gone | 11) Angel From Montgomery | 12) Sugaree (Grateful Dead) | 13) Angel From Montgomery | 14) Made Up Mind | 15) Pasaquan | 16) Drums | 17) Derek Solo | 18) Mountain Jam (The Allman Brothers Band) | 19) Pasaquan | 20) With A Little Help From My Friends"
+              - button "More" [ref=e372]
+        - generic [ref=e379]:
+          - link [ref=e381] [cursor=pointer]:
+            - /url: /watch?v=wJzR_PyRdXc&list=RDwJzR_PyRdXc&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+          - generic [ref=e383] [cursor=pointer]:
+            - generic [ref=e384]:
+              - heading "Tedeschi Trucks Band - Austin City Limits - 2016 - Full Episode 52 minutes" [level=3] [ref=e386]:
+                - link "Tedeschi Trucks Band - Austin City Limits - 2016 - Full Episode 52 minutes" [ref=e387]:
+                  - /url: /watch?v=wJzR_PyRdXc&list=RDwJzR_PyRdXc&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                  - text: Tedeschi Trucks Band - Austin City Limits - 2016 - Full Episode
+              - generic [ref=e390]:
+                - generic [ref=e391]: 39K views
+                - generic [ref=e392]: •1 year ago
+            - generic [ref=e393]:
+              - link "Go to channel Axilla" [ref=e394]:
+                - /url: /@turmoil-tinfioil
+              - link "Axilla" [ref=e399]:
+                - /url: /@turmoil-tinfioil
+        - generic [ref=e401]:
+          - link [ref=e403] [cursor=pointer]:
+            - /url: /watch?v=RRipadkd6wk&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFs
+          - generic [ref=e405] [cursor=pointer]:
+            - generic [ref=e406]:
+              - 'heading "Tedeschi Trucks Band: Tiny Desk Concert 17 minutes" [level=3] [ref=e408]':
+                - 'link "Tedeschi Trucks Band: Tiny Desk Concert 17 minutes" [ref=e409]':
+                  - /url: /watch?v=RRipadkd6wk&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFs
+                  - text: "Tedeschi Trucks Band: Tiny Desk Concert"
+              - generic [ref=e412]:
+                - generic [ref=e413]: 9.6M views
+                - generic [ref=e414]: •10 years ago
+            - generic [ref=e415]:
+              - link "Go to channel NPR Music" [ref=e416]:
+                - /url: /@nprmusic
+              - generic [ref=e417]:
+                - link "NPR Music" [ref=e421]:
+                  - /url: /@nprmusic
+                - img "Verified" [ref=e424]
+            - generic [ref=e426]:
+              - generic [ref=e427]: March 25, 2016 by FELIX CONTRERAS When singer-guitarist Susan Tedeschi sings and plays, you can hear the sound move ...
+              - tooltip "tooltip"
+        - generic [ref=e429] [cursor=pointer]:
+          - link [ref=e430]:
+            - /url: /watch?v=hxaineCMv38&list=PLs9pvRjAsqb4UocEvC_k2NdlvRH9GJzpD&pp=0gcJCbkEOCosWNin
+            - generic [ref=e442]: 30 videos
+          - generic [ref=e445]:
+            - heading "Best of Tedeschi Trucks Band Live" [level=3] [ref=e446]:
+              - link "Best of Tedeschi Trucks Band Live" [ref=e447]:
+                - /url: /watch?v=hxaineCMv38&list=PLs9pvRjAsqb4UocEvC_k2NdlvRH9GJzpD&pp=0gcJCbkEOCosWNin
+            - generic [ref=e449]:
+              - generic [ref=e450]:
+                - link "PlaylistsRob" [ref=e453]:
+                  - /url: /@duvaje
+                - generic [ref=e454]: •
+                - link "Playlist" [ref=e457]:
+                  - /url: /@duvaje
+              - link "Tedeschi Trucks Band - Bound for Glory - Live from Atlanta · 9:59" [ref=e461]:
+                - /url: /watch?v=hxaineCMv38&list=PLs9pvRjAsqb4UocEvC_k2NdlvRH9GJzpD
+              - link "Tedeschi Trucks Band - Angel From Montgomery/Sugaree · 7:44" [ref=e464]:
+                - /url: /watch?v=ZrSK-0-MQ8s&list=PLs9pvRjAsqb4UocEvC_k2NdlvRH9GJzpD
+              - link "View full playlist" [ref=e469]:
+                - /url: /playlist?list=PLs9pvRjAsqb4UocEvC_k2NdlvRH9GJzpD
+        - generic [ref=e471]:
+          - link [ref=e473] [cursor=pointer]:
+            - /url: /watch?v=WLlTAmFtG-4&list=RDWLlTAmFtG-4&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+          - generic [ref=e475] [cursor=pointer]:
+            - generic [ref=e476]:
+              - 'heading "Tedeschi Trucks Band with Warren Haynes: September 2025 2 hours" [level=3] [ref=e478]':
+                - 'link "Tedeschi Trucks Band with Warren Haynes: September 2025 2 hours" [ref=e479]':
+                  - /url: /watch?v=WLlTAmFtG-4&list=RDWLlTAmFtG-4&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                  - text: "Tedeschi Trucks Band with Warren Haynes: September 2025"
+              - generic [ref=e482]:
+                - generic [ref=e483]: 123K views
+                - generic [ref=e484]: •6 months ago
+            - generic [ref=e485]:
+              - link "Go to channel Bob Beatty (historian)" [ref=e486]:
+                - /url: /@longlivetheabb
+              - link "Bob Beatty (historian)" [ref=e491]:
+                - /url: /@longlivetheabb
+            - generic [ref=e492]:
+              - generic [ref=e493]: Compilation of Warren Hanyes sit-in's with Tedesch Trucks Band September 3-10, 2025. 9/3/25 Toronto 0:00:20 Stand Back ...
+              - tooltip "tooltip"
+            - generic [ref=e496]:
+              - generic [ref=e497]:
+                - generic [ref=e501]: 12 moments
+                - button "Stand Back | With a Little Help from My Friends | Spanish Moon | Key to the Highway | It Ain't Fair… | Dreams | Stand Back | With a Little Help from My Friends | In Memory of Elizabeth Reed | Space Captain | Whipping Post | With a Little Help from My Friends"
+              - button "More" [ref=e506]
+        - generic [ref=e513] [cursor=pointer]:
+          - link [ref=e514]:
+            - /url: /watch?v=mZZtZ-gzjss&list=PLuBHqUI8mpJSgzqYRgP8C4CQMRKXUuetG&pp=0gcJCbkEOCosWNin
+            - generic [ref=e526]: 52 videos
+          - generic [ref=e529]:
+            - heading "Tedeschi Trucks Band Live" [level=3] [ref=e530]:
+              - link "Tedeschi Trucks Band Live" [ref=e531]:
+                - /url: /watch?v=mZZtZ-gzjss&list=PLuBHqUI8mpJSgzqYRgP8C4CQMRKXUuetG&pp=0gcJCbkEOCosWNin
+            - generic [ref=e533]:
+              - generic [ref=e534]:
+                - link "Tedeschi Trucks Band" [ref=e537]:
+                  - /url: /@TedeschiTrucksBand
+                - generic [ref=e538]: •
+                - link "Playlist" [ref=e541]:
+                  - /url: /@TedeschiTrucksBand
+              - link "I Am The Moon - 7/29/22 - Morrison, CO · 6:17" [ref=e545]:
+                - /url: /watch?v=mZZtZ-gzjss&list=PLuBHqUI8mpJSgzqYRgP8C4CQMRKXUuetG
+              - link "I Walk on Guilded Splinters (Dr. John cover) - 8/20/22 - Greek Theatre - Berkeley, CA · 6:24" [ref=e548]:
+                - /url: /watch?v=S8kqv88cRkI&list=PLuBHqUI8mpJSgzqYRgP8C4CQMRKXUuetG
+              - link "View full playlist" [ref=e553]:
+                - /url: /playlist?list=PLuBHqUI8mpJSgzqYRgP8C4CQMRKXUuetG
+        - generic [ref=e555]:
+          - link [ref=e557] [cursor=pointer]:
+            - /url: /watch?v=6GkdCiqsFUI&list=RD6GkdCiqsFUI&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+          - generic [ref=e559] [cursor=pointer]:
+            - generic [ref=e560]:
+              - heading "Tedeschi Trucks Band - \"Midnight in Harlem\" (Live on eTown) 8 minutes" [level=3] [ref=e562]:
+                - link "Tedeschi Trucks Band - \"Midnight in Harlem\" (Live on eTown) 8 minutes" [ref=e563]:
+                  - /url: /watch?v=6GkdCiqsFUI&list=RD6GkdCiqsFUI&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                  - text: Tedeschi Trucks Band - "Midnight in Harlem" (Live on eTown)
+              - generic [ref=e566]:
+                - generic [ref=e567]: 18M views
+                - generic [ref=e568]: •14 years ago
+            - generic [ref=e569]:
+              - link "Go to channel eTown" [ref=e570]:
+                - /url: /@eTownRadioShow
+              - link "eTown" [ref=e575]:
+                - /url: /@eTownRadioShow
+            - generic [ref=e576]:
+              - generic [ref=e577]: Tedeschi Trucks Band delivers a jaw-dropping performance of "Midnight In Harlem" during a live radio show taping for eTown.
+              - tooltip "tooltip"
+        - generic [ref=e579]:
+          - heading "People also watched" [level=2] [ref=e582]:
+            - generic [ref=e584]: People also watched
+          - generic [ref=e586]:
+            - generic [ref=e587]:
+              - generic [ref=e589]:
+                - link [ref=e591] [cursor=pointer]:
+                  - /url: /watch?v=KQLFg_8PdC4&list=RDKQLFg_8PdC4&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                - generic [ref=e593] [cursor=pointer]:
+                  - generic [ref=e594]:
+                    - 'heading "Tedeschi Trucks Band - Bluesy Saturday Live, Tokyo Show #3, 2023-10-21 *FULL SHOW* 1 hour, 59 minutes" [level=3] [ref=e596]':
+                      - 'link "Tedeschi Trucks Band - Bluesy Saturday Live, Tokyo Show #3, 2023-10-21 *FULL SHOW* 1 hour, 59 minutes" [ref=e597]':
+                        - /url: /watch?v=KQLFg_8PdC4&list=RDKQLFg_8PdC4&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                        - text: "Tedeschi Trucks Band - Bluesy Saturday Live, Tokyo Show #3, 2023-10-21 *FULL SHOW*"
+                    - generic [ref=e600]:
+                      - generic [ref=e601]: 21K views
+                      - generic [ref=e602]: •2 years ago
+                  - generic [ref=e603]:
+                    - link "Go to channel Toshi Aizawa" [ref=e604]:
+                      - /url: /@ToshiAizawa
+                    - link "Toshi Aizawa" [ref=e609]:
+                      - /url: /@ToshiAizawa
+                  - generic [ref=e610]:
+                    - generic [ref=e611]: "Tedeschi Trucks Band Japan Tour 2023 Tokyo Dome City Hall, Tokyo, Japan 2023-10-21 (Show 3 of 4) Playlist: ..."
+                    - tooltip "tooltip"
+                  - generic [ref=e614]:
+                    - generic [ref=e615]:
+                      - generic [ref=e619]: 17 chapters
+                      - button "Opening | The Letter | Do I Look Worried | Last Night In The Rain | Until You Remember | All The Love | Gravity | Everybody’s Got To Change Sometime | Take Me As I Am | Sax and Drums Solo | Shame | Just As Strange | Keep On Growing | How Blue Can You Get? | Angel From Montgomery / Sugaree | Bound For Glory | Space Captain"
+                    - button "More" [ref=e624]
+              - generic [ref=e631]:
+                - link [ref=e633] [cursor=pointer]:
+                  - /url: /watch?v=foVvFSzMfBU&list=RDfoVvFSzMfBU&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                - generic [ref=e635] [cursor=pointer]:
+                  - generic [ref=e636]:
+                    - heading "Tedeschi Trucks Band w/ Warren Haynes - It Ain’t Fair/Dreams @ The Beacon Theater 3/28/26 19 minutes" [level=3] [ref=e638]:
+                      - link "Tedeschi Trucks Band w/ Warren Haynes - It Ain’t Fair/Dreams @ The Beacon Theater 3/28/26 19 minutes" [ref=e639]:
+                        - /url: /watch?v=foVvFSzMfBU&list=RDfoVvFSzMfBU&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                        - text: Tedeschi Trucks Band w/ Warren Haynes - It Ain’t Fair/Dreams @ The Beacon Theater 3/28/26
+                    - generic [ref=e642]:
+                      - generic [ref=e643]: 7.2K views
+                      - generic [ref=e644]: •5 days ago
+                  - generic [ref=e645]:
+                    - link "Go to channel themeboudin" [ref=e646]:
+                      - /url: /@JMEJJP
+                    - link "themeboudin" [ref=e651]:
+                      - /url: /@JMEJJP
+                  - generic [ref=e652]:
+                    - img "New" [ref=e654]:
+                      - generic [ref=e655]: New
+                    - img "4K" [ref=e657]:
+                      - generic [ref=e658]: 4K
+              - generic [ref=e660]:
+                - link [ref=e662] [cursor=pointer]:
+                  - /url: /watch?v=JJsfSxXepZY&list=RDJJsfSxXepZY&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                - generic [ref=e664] [cursor=pointer]:
+                  - generic [ref=e665]:
+                    - heading "Tedeschi Trucks Band - 9/25/24 - Beacon Theatre N2 - New York, NY (4K) 2 hours, 39 minutes" [level=3] [ref=e667]:
+                      - link "Tedeschi Trucks Band - 9/25/24 - Beacon Theatre N2 - New York, NY (4K) 2 hours, 39 minutes" [ref=e668]:
+                        - /url: /watch?v=JJsfSxXepZY&list=RDJJsfSxXepZY&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                        - text: Tedeschi Trucks Band - 9/25/24 - Beacon Theatre N2 - New York, NY (4K)
+                    - generic [ref=e671]:
+                      - generic [ref=e672]: 17K views
+                      - generic [ref=e673]: •1 year ago
+                  - generic [ref=e674]:
+                    - link "Go to channel Larry Rulz 5" [ref=e675]:
+                      - /url: /@larryrulz5
+                    - link "Larry Rulz 5" [ref=e680]:
+                      - /url: /@larryrulz5
+                  - generic [ref=e681]:
+                    - text: "Recorded on September 25, 2024 at the Beacon Theatre in New York, NY. Setlist: Set 1: 0:00 Don't Drift Away 6:52 Part of Me ..."
+                    - tooltip "tooltip"
+                  - img "4K" [ref=e684]:
+                    - generic [ref=e685]: 4K
+                  - generic [ref=e688]:
+                    - generic [ref=e689]:
+                      - generic [ref=e693]: 21 chapters
+                      - button "Don't Drift Away | Part of Me | I Am the Moon | Crying Over You | Little by Little | Anyhow | It Ain't Fair | Dreams | Show Me | Preachin' Blues | I Can Feel You Smiling | Meet Me in the Morning | Don't Think Twice, It's All Right | I Want More | Beck's Bolero | Leaving Trunk | Midnight in Harlem | Down in the Flood | Just Won't Burn | Made Up Mind | Space Captain"
+                    - button "More" [ref=e698]
+              - generic [ref=e705]:
+                - link [ref=e707] [cursor=pointer]:
+                  - /url: /watch?v=KO3b-AfMC68&list=RDKO3b-AfMC68&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB0gcJCdkKAYcqIYzv
+                - generic [ref=e709] [cursor=pointer]:
+                  - generic [ref=e710]:
+                    - heading "Tedeschi Trucks Band w/ Warren Haynes & Jaimoe - Whipping Post @ The Beacon Theater NYC 3/28/26 14 minutes, 30 seconds" [level=3] [ref=e712]:
+                      - link "Tedeschi Trucks Band w/ Warren Haynes & Jaimoe - Whipping Post @ The Beacon Theater NYC 3/28/26 14 minutes, 30 seconds" [ref=e713]:
+                        - /url: /watch?v=KO3b-AfMC68&list=RDKO3b-AfMC68&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB0gcJCdkKAYcqIYzv
+                        - text: Tedeschi Trucks Band w/ Warren Haynes & Jaimoe - Whipping Post @ The Beacon Theater NYC 3/28/26
+                    - generic [ref=e716]:
+                      - generic [ref=e717]: 12K views
+                      - generic [ref=e718]: •5 days ago
+                  - generic [ref=e719]:
+                    - link "Go to channel themeboudin" [ref=e720]:
+                      - /url: /@JMEJJP
+                    - link "themeboudin" [ref=e725]:
+                      - /url: /@JMEJJP
+                  - generic [ref=e726]:
+                    - img "New" [ref=e728]:
+                      - generic [ref=e729]: New
+                    - img "4K" [ref=e731]:
+                      - generic [ref=e732]: 4K
+            - generic "+6 more" [ref=e734] [cursor=pointer]
+        - generic [ref=e736]:
+          - link [ref=e738] [cursor=pointer]:
+            - /url: /watch?v=M45fhW6iZ0g&list=RDM45fhW6iZ0g&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+          - generic [ref=e740] [cursor=pointer]:
+            - generic [ref=e741]:
+              - heading "Tedeschi Trucks Band - Beacon 50th 10-03-2022 Complete Show (Multicam Edit) 2 hours, 33 minutes" [level=3] [ref=e743]:
+                - link "Tedeschi Trucks Band - Beacon 50th 10-03-2022 Complete Show (Multicam Edit) 2 hours, 33 minutes" [ref=e744]:
+                  - /url: /watch?v=M45fhW6iZ0g&list=RDM45fhW6iZ0g&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                  - text: Tedeschi Trucks Band - Beacon 50th 10-03-2022 Complete Show (Multicam Edit)
+              - generic [ref=e747]:
+                - generic [ref=e748]: 202K views
+                - generic [ref=e749]: •3 years ago
+            - generic [ref=e750]:
+              - link "Go to channel Ron Fleischer" [ref=e751]:
+                - /url: /@RonToon
+              - link "Ron Fleischer" [ref=e756]:
+                - /url: /@RonToon
+            - generic [ref=e757]:
+              - generic [ref=e758]: A very nice multicam edit of Tedeschi Trucks Band 50th show at The Beacon back in October. Video footage by edtyre1, ...
+              - tooltip "tooltip"
+        - generic [ref=e760]:
+          - link [ref=e762] [cursor=pointer]:
+            - /url: /@TedeschiTrucksBand
+          - link "Tedeschi Trucks Band Official Artist Channel @TedeschiTrucksBand•224K subscribers The Official Tedeschi Trucks Band Youtube Channel." [ref=e766] [cursor=pointer]:
+            - /url: /@TedeschiTrucksBand
+            - generic [ref=e767]:
+              - generic [ref=e768]:
+                - generic [ref=e771]: Tedeschi Trucks Band
+                - img "Official Artist Channel" [ref=e774]
+              - generic [ref=e776]: "@TedeschiTrucksBand•224K subscribers"
+              - generic [ref=e777]: The Official Tedeschi Trucks Band Youtube Channel.
+        - generic [ref=e779]:
+          - link [ref=e781] [cursor=pointer]:
+            - /url: /watch?v=UNgGenopCVY&list=RDUNgGenopCVY&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+          - generic [ref=e783] [cursor=pointer]:
+            - generic [ref=e784]:
+              - heading "Tedeschi Trucks Band - 5/20/25 - Beacon Theatre New York - Complete show (4K) 2 hours, 5 minutes" [level=3] [ref=e786]:
+                - link "Tedeschi Trucks Band - 5/20/25 - Beacon Theatre New York - Complete show (4K) 2 hours, 5 minutes" [ref=e787]:
+                  - /url: /watch?v=UNgGenopCVY&list=RDUNgGenopCVY&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                  - text: Tedeschi Trucks Band - 5/20/25 - Beacon Theatre New York - Complete show (4K)
+              - generic [ref=e790]:
+                - generic [ref=e791]: 70K views
+                - generic [ref=e792]: •10 months ago
+            - generic [ref=e793]:
+              - link "Go to channel Larry Rulz 5" [ref=e794]:
+                - /url: /@larryrulz5
+              - link "Larry Rulz 5" [ref=e799]:
+                - /url: /@larryrulz5
+            - generic [ref=e800]:
+              - text: "Recorded on May 20, 2025 at the Beacon Theatre in New York, NY. Setlist: 0:00 Keep On Growing 9:04 Get What You Deserve ..."
+              - tooltip "tooltip"
+            - img "4K" [ref=e803]:
+              - generic [ref=e804]: 4K
+            - generic [ref=e807]:
+              - generic [ref=e808]:
+                - generic [ref=e812]: 16 chapters
+                - button "Keep On Growing | Get What You Deserve | Don't Let Me Slide | I Am the Moon | Learn How to Love | La Di Da | Gravity | Had to Cry Today | Just Won't Burn | D.M.S.R. | Midnight in Harlem | I Walk on Guilded Splinters | Bound for Glory | Future Soul | Fire and Rain | Space Captain"
+              - button "More" [ref=e817]
+        - generic [ref=e824]:
+          - link [ref=e826] [cursor=pointer]:
+            - /url: /watch?v=TqXrDp207MA&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFs
+          - generic [ref=e828] [cursor=pointer]:
+            - generic [ref=e829]:
+              - heading "Tedeschi Trucks Band - Full Show - Port Chester, NY 10/8/2024 2 hours, 31 minutes" [level=3] [ref=e831]:
+                - link "Tedeschi Trucks Band - Full Show - Port Chester, NY 10/8/2024 2 hours, 31 minutes" [ref=e832]:
+                  - /url: /watch?v=TqXrDp207MA&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFs
+                  - text: Tedeschi Trucks Band - Full Show - Port Chester, NY 10/8/2024
+              - generic [ref=e835]:
+                - generic [ref=e836]: 78K views
+                - generic [ref=e837]: •1 year ago
+            - generic [ref=e838]:
+              - link "Go to channel Project Live Music" [ref=e839]:
+                - /url: /@ProjectLiveMusic
+              - link "Project Live Music" [ref=e844]:
+                - /url: /@ProjectLiveMusic
+            - generic [ref=e845]:
+              - text: https://www.tedeschitrucksband.com/ Thanks Capitol Theatre for hosting a great show! https://www.thecapitoltheatre.com/ SET 1 ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e848]:
+              - generic [ref=e849]: 4K
+        - generic [ref=e851]:
+          - link [ref=e853] [cursor=pointer]:
+            - /url: /watch?v=gCL4o6i5934&list=RDgCL4o6i5934&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+          - generic [ref=e855] [cursor=pointer]:
+            - generic [ref=e856]:
+              - heading "Tedeschi Trucks Band - Layla (Live at LOCKN' / 2019) (Official Music Video) 9 minutes, 3 seconds" [level=3] [ref=e858]:
+                - link "Tedeschi Trucks Band - Layla (Live at LOCKN' / 2019) (Official Music Video) 9 minutes, 3 seconds" [ref=e859]:
+                  - /url: /watch?v=gCL4o6i5934&list=RDgCL4o6i5934&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                  - text: Tedeschi Trucks Band - Layla (Live at LOCKN' / 2019) (Official Music Video)
+              - generic [ref=e862]:
+                - generic [ref=e863]: 2.6M views
+                - generic [ref=e864]: •4 years ago
+            - generic [ref=e865]:
+              - link "Go to channel TedeschiTrucksVEVO" [ref=e866]:
+                - /url: /channel/UCYzeIbJic6iEuXlFkK9ikOg
+              - generic [ref=e867]:
+                - link "Tedeschi Trucks Band" [ref=e871]:
+                  - /url: /channel/UCYzeIbJic6iEuXlFkK9ikOg
+                - img "Official Artist Channel" [ref=e874]
+            - generic [ref=e876]:
+              - generic [ref=e877]: "Layla” is from the album, Layla Revisited (Live at LOCKN'), listen/order here: https://found.ee/TTBLaylaRevisited Tedeschi Trucks ..."
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e880]:
+              - generic [ref=e881]: CC
+        - generic [ref=e883]:
+          - link [ref=e885] [cursor=pointer]:
+            - /url: /watch?v=0BFISKz-jaw&list=RD0BFISKz-jaw&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+          - generic [ref=e887] [cursor=pointer]:
+            - generic [ref=e888]:
+              - heading "Tedeschi Trucks Band & Leon Russell – “The Letter” [Feat. Susan Tedeschi] 4 minutes, 12 seconds" [level=3] [ref=e890]:
+                - link "Tedeschi Trucks Band & Leon Russell – “The Letter” [Feat. Susan Tedeschi] 4 minutes, 12 seconds" [ref=e891]:
+                  - /url: /watch?v=0BFISKz-jaw&list=RD0BFISKz-jaw&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                  - text: Tedeschi Trucks Band & Leon Russell – “The Letter” [Feat. Susan Tedeschi]
+              - generic [ref=e894]:
+                - generic [ref=e895]: 1.8M views
+                - generic [ref=e896]: •8 months ago
+            - generic [ref=e897]:
+              - link "Go to channel Tedeschi Trucks Band" [ref=e898]:
+                - /url: /channel/UCYzeIbJic6iEuXlFkK9ikOg
+              - generic [ref=e899]:
+                - link "Tedeschi Trucks Band" [ref=e903]:
+                  - /url: /channel/UCYzeIbJic6iEuXlFkK9ikOg
+                - img "Official Artist Channel" [ref=e906]
+            - generic [ref=e908]:
+              - generic [ref=e909]: Watch Tedeschi Trucks Band perform “The Letter” live from Mad Dogs & Englishmen Revisited (LIVE AT LOCKN') with Leon ...
+              - tooltip "tooltip"
+        - generic [ref=e911]:
+          - link [ref=e913] [cursor=pointer]:
+            - /url: /watch?v=xbOlgESKbIc&list=RDxbOlgESKbIc&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+          - generic [ref=e915] [cursor=pointer]:
+            - generic [ref=e916]:
+              - heading "Tedeschi Trucks Band - Midnight in Harlem (Live) 6 minutes, 55 seconds" [level=3] [ref=e918]:
+                - link "Tedeschi Trucks Band - Midnight in Harlem (Live) 6 minutes, 55 seconds" [ref=e919]:
+                  - /url: /watch?v=xbOlgESKbIc&list=RDxbOlgESKbIc&start_radio=1&pp=ygUqVGVkZXNjaGkgVHJ1Y2tzIEJhbmQgbGl2ZSBjb25jZXJ0IG9mZmljaWFsoAcB
+                  - text: Tedeschi Trucks Band - Midnight in Harlem (Live)
+              - generic [ref=e922]:
+                - generic [ref=e923]: 5.4M views
+                - generic [ref=e924]: •14 years ago
+            - generic [ref=e925]:
+              - link "Go to channel funky stuff" [ref=e926]:
+                - /url: /@funkystufforg
+              - link "funky stuff" [ref=e931]:
+                - /url: /@funkystufforg
+            - generic [ref=e932]:
+              - text: "https://www.funkystuff.org #funkystuff #funkystuff.org."
+              - tooltip "tooltip"
+        - generic [ref=e933]:
+          - generic [ref=e936]:
+            - img [ref=e938]
+            - heading "Shorts" [level=2] [ref=e941]
+          - generic [ref=e942]:
+            - generic [ref=e943]:
+              - generic [ref=e946]:
+                - link [ref=e947] [cursor=pointer]:
+                  - /url: /shorts/my4NCp7nFEk
+                - generic [ref=e951] [cursor=pointer]:
+                  - link "Susan Tedeschi Sings in an Irish Pub" [ref=e952]:
+                    - /url: /shorts/my4NCp7nFEk
+                  - generic [ref=e953]: 200K views
+                - button "More actions" [ref=e955] [cursor=pointer]
+              - generic [ref=e963]:
+                - link [ref=e964] [cursor=pointer]:
+                  - /url: /shorts/pZ9lo2w8i-A
+                - generic [ref=e968] [cursor=pointer]:
+                  - link "You Need To Be With Me (Just Won't Burn 25th Anniversary Sessions)" [ref=e969]:
+                    - /url: /shorts/pZ9lo2w8i-A
+                  - generic [ref=e970]: 64K views
+                - button "More actions" [ref=e972] [cursor=pointer]
+            - generic [ref=e978]:
+              - generic [ref=e981]:
+                - link [ref=e982] [cursor=pointer]:
+                  - /url: /shorts/z1y15oKhPEs
+                - generic [ref=e986] [cursor=pointer]:
+                  - link "Watch the full “I Got You” video now" [ref=e987]:
+                    - /url: /shorts/z1y15oKhPEs
+                  - generic [ref=e988]: 47K views
+                - button "More actions" [ref=e990] [cursor=pointer]
+              - generic [ref=e998]:
+                - link [ref=e999] [cursor=pointer]:
+                  - /url: /shorts/k3BVFpVVO6g
+                - generic [ref=e1003] [cursor=pointer]:
+                  - link "Sometimes Love Is Just Knowing What The Other Needs" [ref=e1004]:
+                    - /url: /shorts/k3BVFpVVO6g
+                  - generic [ref=e1005]: 912K views
+                - button "More actions" [ref=e1007] [cursor=pointer]
+          - button "Show more" [ref=e1016] [cursor=pointer]:
+            - generic [ref=e1017]: Show more
+        - generic [ref=e1024] [cursor=pointer]:
+          - link [ref=e1025]:
+            - /url: /watch?v=r9Mc3_ebTuQ&list=RDr9Mc3_ebTuQ&start_radio=1
+            - generic [ref=e1037]: Mix
+          - generic [ref=e1040]:
+            - heading "Mix - Tedeschi Trucks Band | Red Rocks 2025" [level=3] [ref=e1041]:
+              - link "Mix - Tedeschi Trucks Band | Red Rocks 2025" [ref=e1042]:
+                - /url: /watch?v=r9Mc3_ebTuQ&list=RDr9Mc3_ebTuQ&start_radio=1
+            - generic [ref=e1044]:
+              - generic [ref=e1046]: Derek Trucks, Tedeschi Trucks Band, Gabe Dixon, and more
+              - link "Tedeschi Trucks Band | Red Rocks 2025 · 2:07:36" [ref=e1050]:
+                - /url: /watch?v=r9Mc3_ebTuQ&list=RDr9Mc3_ebTuQ&start_radio=1&pp=0gcJCRwBOCosWNin
+              - link "I Choose You - Official Music Video · 4:00" [ref=e1053]:
+                - /url: /watch?v=8ZkGyVqPUW0&list=RDr9Mc3_ebTuQ&start_radio=1
+        - generic [ref=e1055]:
+          - generic [ref=e1058]:
+            - img [ref=e1060]
+            - heading "Shorts" [level=2] [ref=e1063]
+          - generic [ref=e1064]:
+            - generic [ref=e1065]:
+              - generic [ref=e1068]:
+                - link [ref=e1069] [cursor=pointer]:
+                  - /url: /shorts/MoSQarIG2uk
+                - generic [ref=e1073] [cursor=pointer]:
+                  - link "Watch the full “Who Am I” video from Red Rocks on YouTube and stream the single on all platforms." [ref=e1074]:
+                    - /url: /shorts/MoSQarIG2uk
+                  - generic [ref=e1075]: 96K views
+                - button "More actions" [ref=e1077] [cursor=pointer]
+              - generic [ref=e1085]:
+                - link [ref=e1086] [cursor=pointer]:
+                  - /url: /shorts/WrS_Afem04I
+                - generic [ref=e1090] [cursor=pointer]:
+                  - link "Tedeschi Trucks Band live from Ohana Festival -7! -With A Little Help From My Friends" [ref=e1091]:
+                    - /url: /shorts/WrS_Afem04I
+                  - generic [ref=e1092]: 2.5K views
+                - button "More actions" [ref=e1094] [cursor=pointer]
+            - generic [ref=e1100]:
+              - generic [ref=e1103]:
+                - link [ref=e1104] [cursor=pointer]:
+                  - /url: /shorts/5gVofRMmsPo
+                - generic [ref=e1108] [cursor=pointer]:
+                  - link "Things TTB Can't Tour Without" [ref=e1109]:
+                    - /url: /shorts/5gVofRMmsPo
+                  - generic [ref=e1110]: 31K views
+                - button "More actions" [ref=e1112] [cursor=pointer]
+              - generic [ref=e1120]:
+                - link [ref=e1121] [cursor=pointer]:
+                  - /url: /shorts/2f5GFMD5d6g
+                - generic [ref=e1125] [cursor=pointer]:
+                  - link "Future Soul is out now!" [ref=e1126]:
+                    - /url: /shorts/2f5GFMD5d6g
+                  - generic [ref=e1127]: 24K views
+                - button "More actions" [ref=e1129] [cursor=pointer]
+          - button "Show more" [ref=e1138] [cursor=pointer]:
+            - generic [ref=e1139]: Show more

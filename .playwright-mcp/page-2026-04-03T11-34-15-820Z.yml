@@ -1,0 +1,662 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+      - generic [ref=e30]:
+        - button "Settings" [ref=e35] [cursor=pointer]
+        - link "Sign in" [ref=e39] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DJimi%252BHendrix%252Blive%252Bconcert%252Bofficial%252Bperformance&hl=en&ec=65620
+          - generic [ref=e42]: Sign in
+  - main [ref=e47]:
+    - generic [ref=e48]:
+      - generic [ref=e50]:
+        - generic [ref=e53]:
+          - tablist [ref=e55]:
+            - tab "All" [selected] [ref=e59] [cursor=pointer]:
+              - generic [ref=e61]: All
+            - tab "Shorts" [ref=e68] [cursor=pointer]:
+              - generic [ref=e70]: Shorts
+            - tab "Videos" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]: Videos
+            - tab "Unwatched" [ref=e86] [cursor=pointer]:
+              - generic [ref=e88]: Unwatched
+            - tab "Watched" [ref=e95] [cursor=pointer]:
+              - generic [ref=e97]: Watched
+            - tab "Recently uploaded" [ref=e104] [cursor=pointer]:
+              - generic [ref=e106]: Recently uploaded
+            - tab "Live" [ref=e113] [cursor=pointer]:
+              - generic [ref=e115]: Live
+            - tab "Playlists" [ref=e122] [cursor=pointer]:
+              - generic [ref=e124]: Playlists
+            - tab "Under 4 min" [ref=e131] [cursor=pointer]:
+              - generic [ref=e133]: Under 4 min
+            - tab "4 - 20 min" [ref=e140] [cursor=pointer]:
+              - generic [ref=e142]: 4 - 20 min
+            - tab "Over 20 min" [ref=e149] [cursor=pointer]:
+              - generic [ref=e151]: Over 20 min
+          - button "Next" [ref=e159] [cursor=pointer]
+        - link "About these results" [ref=e168] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e169]: About these results
+        - generic [ref=e176]:
+          - button "Search filters" [ref=e178] [cursor=pointer]:
+            - generic [ref=e179]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e190]:
+        - generic [ref=e192]:
+          - link [ref=e194] [cursor=pointer]:
+            - /url: /watch?v=qFfnlYbFEiE&list=RDqFfnlYbFEiE&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - img [ref=e196]
+            - img [ref=e199]:
+              - generic [ref=e201]: 6:15
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e202] [cursor=pointer]:
+            - generic [ref=e203]:
+              - heading "The Jimi Hendrix Experience - Voodoo Child (Slight Return) (Live In Maui, 1970) 6 minutes, 15 seconds" [level=3] [ref=e205]:
+                - link "The Jimi Hendrix Experience - Voodoo Child (Slight Return) (Live In Maui, 1970) 6 minutes, 15 seconds" [ref=e206]:
+                  - /url: /watch?v=qFfnlYbFEiE&list=RDqFfnlYbFEiE&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: The Jimi Hendrix Experience - Voodoo Child (Slight Return) (Live In Maui, 1970)
+              - generic [ref=e209]:
+                - generic [ref=e210]: 62M views
+                - generic [ref=e211]: •5 years ago
+            - generic [ref=e212]:
+              - link "Go to channel JimiHendrixVEVO" [ref=e213]:
+                - /url: /channel/UCEqrtYLjy1o4hvaUI0J530w
+              - generic [ref=e215]:
+                - link "Jimi Hendrix" [ref=e219]:
+                  - /url: /channel/UCEqrtYLjy1o4hvaUI0J530w
+                - img "Official Artist Channel" [ref=e222]
+            - generic [ref=e224]:
+              - generic [ref=e225]: "Live in Maui, 1970 - \"Voodoo Child (Slight Return)\" by The Jimi Hendrix Experience Listen to Jimi Hendrix: ..."
+              - tooltip "tooltip"
+        - generic [ref=e227]:
+          - link [ref=e229] [cursor=pointer]:
+            - /url: /watch?v=ot7fBM4m4wA&list=RDot7fBM4m4wA&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - img [ref=e231]
+            - img [ref=e234]:
+              - generic [ref=e236]: 56:19
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e237] [cursor=pointer]:
+            - generic [ref=e238]:
+              - heading "Jimi Hendrix Live Full Concert 1969 Amazing Clear Footage 56 minutes" [level=3] [ref=e240]:
+                - link "Jimi Hendrix Live Full Concert 1969 Amazing Clear Footage 56 minutes" [ref=e241]:
+                  - /url: /watch?v=ot7fBM4m4wA&list=RDot7fBM4m4wA&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Jimi Hendrix Live Full Concert 1969 Amazing Clear Footage
+              - generic [ref=e244]:
+                - generic [ref=e245]: 335K views
+                - generic [ref=e246]: •7 years ago
+            - generic [ref=e247]:
+              - link "Go to channel Rock Big" [ref=e248]:
+                - /url: /@rockbig407
+              - link "Rock Big" [ref=e254]:
+                - /url: /@rockbig407
+        - generic [ref=e256]:
+          - link [ref=e258] [cursor=pointer]:
+            - /url: /watch?v=6oXvEbtx4L4&list=RD6oXvEbtx4L4&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - img [ref=e260]
+            - img [ref=e263]:
+              - generic [ref=e265]: 56:30
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e266] [cursor=pointer]:
+            - generic [ref=e267]:
+              - heading "THE JIMI HENDRIX EXPERIENCE LIVE STOCKHOLM, SWEDEN, 1969 56 minutes" [level=3] [ref=e269]:
+                - link "THE JIMI HENDRIX EXPERIENCE LIVE STOCKHOLM, SWEDEN, 1969 56 minutes" [ref=e270]:
+                  - /url: /watch?v=6oXvEbtx4L4&list=RD6oXvEbtx4L4&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: THE JIMI HENDRIX EXPERIENCE LIVE STOCKHOLM, SWEDEN, 1969
+              - generic [ref=e273]:
+                - generic [ref=e274]: 916K views
+                - generic [ref=e275]: •9 years ago
+            - generic [ref=e276]:
+              - link "Go to channel PATIO SAN LAUREANO (patiosanlaureano)" [ref=e277]:
+                - /url: /@patiosanlaureano4433
+              - link "PATIO SAN LAUREANO (patiosanlaureano)" [ref=e283]:
+                - /url: /@patiosanlaureano4433
+            - generic [ref=e284]:
+              - generic [ref=e285]: JIMI HENDRIX. Canal para la difusión cultural de la música de aquí, sin ánimo de lucro. Se intentará subir vídeos de enorme ...
+              - tooltip "tooltip"
+        - generic [ref=e287] [cursor=pointer]:
+          - link [ref=e288]:
+            - /url: /watch?v=qFfnlYbFEiE&list=RDqFfnlYbFEiE&start_radio=1
+            - generic [ref=e300]: Mix
+          - generic [ref=e303]:
+            - heading "Mix - The Jimi Hendrix Experience - Voodoo Child (Slight Return) (Live In Maui, 1970)" [level=3] [ref=e304]:
+              - link "Mix - The Jimi Hendrix Experience - Voodoo Child (Slight Return) (Live In Maui, 1970)" [ref=e305]:
+                - /url: /watch?v=qFfnlYbFEiE&list=RDqFfnlYbFEiE&start_radio=1
+            - generic [ref=e307]:
+              - generic [ref=e309]: Jimi Hendrix, Bob Dylan, Carlos Santana, and more
+              - link "The Jimi Hendrix Experience - Voodoo Child (Slight Return) (Live In Maui, 1970) · 6:15" [ref=e313]:
+                - /url: /watch?v=qFfnlYbFEiE&list=RDqFfnlYbFEiE&start_radio=1
+              - link "Santana - Soul Sacrifice 1969 Woodstock live concierto HQ · 6:17" [ref=e316]:
+                - /url: /watch?v=JaaT_HRb4GU&list=RDqFfnlYbFEiE&start_radio=1
+        - generic [ref=e319]:
+          - link [ref=e321] [cursor=pointer]:
+            - /url: /watch?v=G5Lvc1a76dU&list=RDG5Lvc1a76dU&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - img [ref=e323]
+            - img [ref=e326]:
+              - generic [ref=e328]: 3:52
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e329] [cursor=pointer]:
+            - generic [ref=e330]:
+              - heading "Jimi Hendrix Hey Joe Live at the Monterey 1967 1080 3 minutes, 52 seconds" [level=3] [ref=e332]:
+                - link "Jimi Hendrix Hey Joe Live at the Monterey 1967 1080 3 minutes, 52 seconds" [ref=e333]:
+                  - /url: /watch?v=G5Lvc1a76dU&list=RDG5Lvc1a76dU&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Jimi Hendrix Hey Joe Live at the Monterey 1967 1080
+              - generic [ref=e336]:
+                - generic [ref=e337]: 335K views
+                - generic [ref=e338]: •3 years ago
+            - generic [ref=e339]:
+              - link "Go to channel VJ KASKA" [ref=e340]:
+                - /url: /@vjkaska0412
+              - link "VJ KASKA" [ref=e346]:
+                - /url: /@vjkaska0412
+        - generic [ref=e348]:
+          - link [ref=e350] [cursor=pointer]:
+            - /url: /watch?v=wG0kHWoh3Ms&list=RDwG0kHWoh3Ms&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e352] [cursor=pointer]:
+            - generic [ref=e353]:
+              - heading "Live in Scandinavia 1969 - Jimi Hendrix - 2ND SHOW / RARE / IMPROVED AUDIO 1 hour, 8 minutes" [level=3] [ref=e355]:
+                - link "Live in Scandinavia 1969 - Jimi Hendrix - 2ND SHOW / RARE / IMPROVED AUDIO 1 hour, 8 minutes" [ref=e356]:
+                  - /url: /watch?v=wG0kHWoh3Ms&list=RDwG0kHWoh3Ms&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Live in Scandinavia 1969 - Jimi Hendrix - 2ND SHOW / RARE / IMPROVED AUDIO
+              - generic [ref=e359]:
+                - generic [ref=e360]: 234K views
+                - generic [ref=e361]: •1 year ago
+            - generic [ref=e362]:
+              - link "Go to channel Joe" [ref=e363]:
+                - /url: /@pinksoundtrips
+              - link "Joe" [ref=e369]:
+                - /url: /@pinksoundtrips
+            - generic [ref=e370]:
+              - generic [ref=e371]: (Stockholm 1969.01.09 Second Show) Jimi Hendrix Live in Scandinavia 1969 Soundboard Source 00:00 Introduction 01:49 I ...
+              - tooltip "tooltip"
+            - generic [ref=e374]:
+              - generic [ref=e375]:
+                - generic [ref=e379]: 10 chapters
+                - button "Introduction | I Don't Live Today | Spanish Castle Magic | Hey Joe | Voodoo Chile | Sunshine Of Your Love | Red House | Fire | Purple Haze | Star Spangled Banner"
+              - button "More" [ref=e384]
+        - generic [ref=e391]:
+          - link [ref=e393] [cursor=pointer]:
+            - /url: /watch?v=cJunCsrhJjg&list=RDcJunCsrhJjg&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e395] [cursor=pointer]:
+            - generic [ref=e396]:
+              - heading "The Jimi Hendrix Experience - Purple Haze (Live at the Atlanta Pop Festival) 3 minutes, 49 seconds" [level=3] [ref=e398]:
+                - link "The Jimi Hendrix Experience - Purple Haze (Live at the Atlanta Pop Festival) 3 minutes, 49 seconds" [ref=e399]:
+                  - /url: /watch?v=cJunCsrhJjg&list=RDcJunCsrhJjg&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: The Jimi Hendrix Experience - Purple Haze (Live at the Atlanta Pop Festival)
+              - generic [ref=e402]:
+                - generic [ref=e403]: 36M views
+                - generic [ref=e404]: •10 years ago
+            - generic [ref=e405]:
+              - link "Go to channel JimiHendrixVEVO" [ref=e406]:
+                - /url: /channel/UCEqrtYLjy1o4hvaUI0J530w
+              - generic [ref=e407]:
+                - link "Jimi Hendrix" [ref=e411]:
+                  - /url: /channel/UCEqrtYLjy1o4hvaUI0J530w
+                - img "Official Artist Channel" [ref=e414]
+            - generic [ref=e416]:
+              - generic [ref=e417]: "Live at the Atlanta Pop Festival - \"Purple Haze\" by The Jimi Hendrix Experience Listen to Jimi Hendrix: ..."
+              - tooltip "tooltip"
+        - generic [ref=e419]:
+          - link [ref=e421] [cursor=pointer]:
+            - /url: /watch?v=_PVjcIO4MT4&list=RD_PVjcIO4MT4&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e423] [cursor=pointer]:
+            - generic [ref=e424]:
+              - heading "The Jimi Hendrix Experience - Foxey Lady (Miami Pop 1968) 4 minutes, 29 seconds" [level=3] [ref=e426]:
+                - link "The Jimi Hendrix Experience - Foxey Lady (Miami Pop 1968) 4 minutes, 29 seconds" [ref=e427]:
+                  - /url: /watch?v=_PVjcIO4MT4&list=RD_PVjcIO4MT4&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: The Jimi Hendrix Experience - Foxey Lady (Miami Pop 1968)
+              - generic [ref=e430]:
+                - generic [ref=e431]: 61M views
+                - generic [ref=e432]: •12 years ago
+            - generic [ref=e433]:
+              - link "Go to channel JimiHendrixVEVO" [ref=e434]:
+                - /url: /channel/UCEqrtYLjy1o4hvaUI0J530w
+              - generic [ref=e435]:
+                - link "Jimi Hendrix" [ref=e439]:
+                  - /url: /channel/UCEqrtYLjy1o4hvaUI0J530w
+                - img "Official Artist Channel" [ref=e442]
+            - generic [ref=e444]:
+              - generic [ref=e445]: "Live Performance Video - \"Foxey Lady (Miami Pop 1968)\" by The Jimi Hendrix Experience Listen to Jimi Hendrix: ..."
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e448]:
+              - generic [ref=e449]: CC
+        - generic [ref=e451]:
+          - link [ref=e453] [cursor=pointer]:
+            - /url: /watch?v=7MX2VEYpTfw&list=RD7MX2VEYpTfw&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e455] [cursor=pointer]:
+            - generic [ref=e456]:
+              - heading "Monterey Pop Festival 1967 (Remastered) 1 hour, 10 minutes" [level=3] [ref=e458]:
+                - link "Monterey Pop Festival 1967 (Remastered) 1 hour, 10 minutes" [ref=e459]:
+                  - /url: /watch?v=7MX2VEYpTfw&list=RD7MX2VEYpTfw&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Monterey Pop Festival 1967 (Remastered)
+              - generic [ref=e462]:
+                - generic [ref=e463]: 93K views
+                - generic [ref=e464]: •2 years ago
+            - generic [ref=e465]:
+              - link "Go to channel Martin Frecha" [ref=e466]:
+                - /url: /@martinfrecha
+              - link "Martin Frecha" [ref=e471]:
+                - /url: /@martinfrecha
+            - generic [ref=e472]:
+              - text: "If you want to help me to keep uploading this content you can help me donating to my paypal: martinfrecha@hotmail.com The ..."
+              - tooltip "tooltip"
+        - generic [ref=e474]:
+          - link [ref=e476] [cursor=pointer]:
+            - /url: /watch?v=U9isjqt7kPU&list=RDU9isjqt7kPU&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e478] [cursor=pointer]:
+            - generic [ref=e479]:
+              - heading "JIMI HENDRIX \"Live in Maui 1970 38 minutes" [level=3] [ref=e481]:
+                - link "JIMI HENDRIX \"Live in Maui 1970 38 minutes" [ref=e482]:
+                  - /url: /watch?v=U9isjqt7kPU&list=RDU9isjqt7kPU&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: JIMI HENDRIX "Live in Maui 1970
+              - generic [ref=e485]:
+                - generic [ref=e486]: 21K views
+                - generic [ref=e487]: •3 years ago
+            - generic [ref=e488]:
+              - link "Go to channel Rasatura tradizionale - Antuono" [ref=e489]:
+                - /url: /@rasatura.
+              - link "Rasatura tradizionale - Antuono" [ref=e494]:
+                - /url: /@rasatura.
+        - generic [ref=e496]:
+          - link [ref=e498] [cursor=pointer]:
+            - /url: /watch?v=OIoN6z8Uy88&list=RDOIoN6z8Uy88&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e500] [cursor=pointer]:
+            - generic [ref=e501]:
+              - heading "JIMI HENDRIX - The Scandinavian Experience (1969) - Full Concert 56 minutes" [level=3] [ref=e503]:
+                - link "JIMI HENDRIX - The Scandinavian Experience (1969) - Full Concert 56 minutes" [ref=e504]:
+                  - /url: /watch?v=OIoN6z8Uy88&list=RDOIoN6z8Uy88&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: JIMI HENDRIX - The Scandinavian Experience (1969) - Full Concert
+              - generic [ref=e507]:
+                - generic [ref=e508]: 3.1M views
+                - generic [ref=e509]: •8 years ago
+            - generic [ref=e510]:
+              - link "Go to channel Captain Midnight" [ref=e511]:
+                - /url: /@captainmidnight6921
+              - link "Captain Midnight" [ref=e516]:
+                - /url: /@captainmidnight6921
+            - generic [ref=e517]:
+              - generic [ref=e518]: Jimi Hendrix Experience - Live in Stockholm (1969) - Full Concert. - Killing Floor - Spanish Castle Magic - Fire - Hey Joe - Voodoo ...
+              - tooltip "tooltip"
+        - generic [ref=e520]:
+          - heading "People also watched" [level=2] [ref=e523]:
+            - generic [ref=e525]: People also watched
+          - generic [ref=e527]:
+            - generic [ref=e528]:
+              - generic [ref=e530]:
+                - link [ref=e532] [cursor=pointer]:
+                  - /url: /watch?v=Hoo72BGB4KE&list=RDHoo72BGB4KE&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                - generic [ref=e534] [cursor=pointer]:
+                  - generic [ref=e535]:
+                    - 'heading "Chicago: Live at Tanglewood 1970 (Full Concert Experience) 1 hour, 35 minutes" [level=3] [ref=e537]':
+                      - 'link "Chicago: Live at Tanglewood 1970 (Full Concert Experience) 1 hour, 35 minutes" [ref=e538]':
+                        - /url: /watch?v=Hoo72BGB4KE&list=RDHoo72BGB4KE&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                        - text: "Chicago: Live at Tanglewood 1970 (Full Concert Experience)"
+                    - generic [ref=e541]:
+                      - generic [ref=e542]: 185K views
+                      - generic [ref=e543]: •6 days ago
+                  - generic [ref=e544]:
+                    - link "Go to channel Headliners" [ref=e545]:
+                      - /url: /@HeadlinersHQ
+                    - link "Headliners" [ref=e550]:
+                      - /url: /@HeadlinersHQ
+                  - generic [ref=e551]:
+                    - generic [ref=e552]: "Chicago: Live at Tanglewood 1970 (Full Concert Experience) Subscribe to Headliners channel: https://bit.ly/4cZH94s ..."
+                    - tooltip "tooltip"
+                  - img "New" [ref=e555]:
+                    - generic [ref=e556]: New
+                  - generic [ref=e559]:
+                    - generic [ref=e560]:
+                      - generic [ref=e564]: 21 chapters
+                      - button "Introduction | Song Introduction | In The Country | Free Form Piano | Does Anybody Really Know What Time It Is? | 25 or 6 to 4 | Poem for the People | Song Introduction | I Don’t Want Your Money | Song Introduction | Mother | It Better End Soon | Beginnings | Song Introduction | Ballet For A Girl In Buchannon (Make Me Smile) / So Much To Say, So Much To Give | Colour My World / Make Me Smile | Encore Applause | I’m a Man | Applause | Terry Kath Outro | Bill Graham Closing Announcements"
+                    - button "More" [ref=e569]
+              - generic [ref=e576]:
+                - link [ref=e578] [cursor=pointer]:
+                  - /url: /watch?v=nbEIA23ql-g&list=RDnbEIA23ql-g&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                - generic [ref=e580] [cursor=pointer]:
+                  - generic [ref=e581]:
+                    - 'heading "1970-06-13 | The Jimi Hendrix Experience: Live In Baltimore ''70 1 hour, 9 minutes" [level=3] [ref=e583]':
+                      - 'link "1970-06-13 | The Jimi Hendrix Experience: Live In Baltimore ''70 1 hour, 9 minutes" [ref=e584]':
+                        - /url: /watch?v=nbEIA23ql-g&list=RDnbEIA23ql-g&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                        - text: "1970-06-13 | The Jimi Hendrix Experience: Live In Baltimore '70"
+                    - generic [ref=e587]:
+                      - generic [ref=e588]: 40K views
+                      - generic [ref=e589]: •4 years ago
+                  - generic [ref=e590]:
+                    - link "Go to channel Jimi Hendrix" [ref=e591]:
+                      - /url: /channel/UCEqrtYLjy1o4hvaUI0J530w
+                    - generic [ref=e592]:
+                      - link "Jimi Hendrix" [ref=e596]:
+                        - /url: /channel/UCEqrtYLjy1o4hvaUI0J530w
+                      - img "Official Artist Channel" [ref=e599]
+                  - generic [ref=e601]:
+                    - generic [ref=e602]: "The Jimi Hendrix Experience: Live In Baltimore '70 Baltimore Civic Center, Baltimore, MD June 13, 1970 Featuring Jimi Hendrix, ..."
+                    - tooltip "tooltip"
+                  - generic [ref=e605]:
+                    - generic [ref=e606]:
+                      - generic [ref=e610]: 14 chapters
+                      - button "Straight Ahead | Lover Man | Machine Gun | Ezy Ryder | Red House | Message To Love | Hey Joe | Freedom | Hear My Train A Comin' | Room Full Of Mirrors | Foxey Lady | Purple Haze | Star Spangled Banner | Voodoo Child (Slight Return)"
+                    - button "More" [ref=e615]
+              - generic [ref=e622]:
+                - link [ref=e624] [cursor=pointer]:
+                  - /url: /watch?v=v0Ue55muT_Y&list=RDv0Ue55muT_Y&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                - generic [ref=e626] [cursor=pointer]:
+                  - generic [ref=e627]:
+                    - heading "Voodoo Child/Room Full of Mirrors Jam - The Jimi Hendrix Experience - Royal Albert Hall 18 minutes" [level=3] [ref=e629]:
+                      - link "Voodoo Child/Room Full of Mirrors Jam - The Jimi Hendrix Experience - Royal Albert Hall 18 minutes" [ref=e630]:
+                        - /url: /watch?v=v0Ue55muT_Y&list=RDv0Ue55muT_Y&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                        - text: Voodoo Child/Room Full of Mirrors Jam - The Jimi Hendrix Experience - Royal Albert Hall
+                    - generic [ref=e633]:
+                      - generic [ref=e634]: 309K views
+                      - generic [ref=e635]: •1 month ago
+                  - generic [ref=e636]:
+                    - link "Go to channel Balders" [ref=e637]:
+                      - /url: /@balders2030
+                    - link "Balders" [ref=e642]:
+                      - /url: /@balders2030
+              - generic [ref=e644]:
+                - link [ref=e646] [cursor=pointer]:
+                  - /url: /watch?v=EjUo4kuzomo&list=RDEjUo4kuzomo&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                - generic [ref=e648] [cursor=pointer]:
+                  - generic [ref=e649]:
+                    - heading "Janis Joplin & Jimi Hendrix 🔥 Midnight Blues at Monterey 1967 | Psychedelic Soul (Inspired Tribute) 38 minutes" [level=3] [ref=e651]:
+                      - link "Janis Joplin & Jimi Hendrix 🔥 Midnight Blues at Monterey 1967 | Psychedelic Soul (Inspired Tribute) 38 minutes" [ref=e652]:
+                        - /url: /watch?v=EjUo4kuzomo&list=RDEjUo4kuzomo&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                        - text: Janis Joplin & Jimi Hendrix 🔥 Midnight Blues at Monterey 1967 | Psychedelic Soul (Inspired Tribute)
+                    - generic [ref=e655]:
+                      - generic [ref=e656]: 10K views
+                      - generic [ref=e657]: •2 days ago
+                  - generic [ref=e658]:
+                    - link "Go to channel Lost Tapes Archives – Official Channel" [ref=e659]:
+                      - /url: /@LostTapesWord
+                    - link "Lost Tapes Archives – Official Channel" [ref=e664]:
+                      - /url: /@LostTapesWord
+                  - generic [ref=e665]:
+                    - generic [ref=e666]: Janis Joplin & Jimi Hendrix Midnight Blues at Monterey 1967 | Psychedelic Soul Experience (Inspired Tribute) Step into a ...
+                    - tooltip "tooltip"
+                  - img "New" [ref=e669]:
+                    - generic [ref=e670]: New
+            - generic "+6 more" [ref=e672] [cursor=pointer]
+        - generic [ref=e674]:
+          - link [ref=e676] [cursor=pointer]:
+            - /url: /watch?v=-z4Ue1-jcyo&list=RD-z4Ue1-jcyo&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e678] [cursor=pointer]:
+            - generic [ref=e679]:
+              - heading "GOAT Jimi Hendrix plays \"Killing Floor\" - June 18, 1967, Monterey International Pop Festival 3 minutes, 12 seconds" [level=3] [ref=e681]:
+                - link "GOAT Jimi Hendrix plays \"Killing Floor\" - June 18, 1967, Monterey International Pop Festival 3 minutes, 12 seconds" [ref=e682]:
+                  - /url: /watch?v=-z4Ue1-jcyo&list=RD-z4Ue1-jcyo&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: GOAT Jimi Hendrix plays "Killing Floor" - June 18, 1967, Monterey International Pop Festival
+              - generic [ref=e685]:
+                - generic [ref=e686]: 356K views
+                - generic [ref=e687]: •5 years ago
+            - generic [ref=e688]:
+              - link "Go to channel NM" [ref=e689]:
+                - /url: /@bobombbattlefield
+              - link "NM" [ref=e694]:
+                - /url: /@bobombbattlefield
+            - generic [ref=e695]:
+              - generic [ref=e696]: As great and pure as anything in life can possibly be. Effortlessly good. Jimi Hendrix, the GOAT. June 18, 1967, Monterey ...
+              - tooltip "tooltip"
+        - generic [ref=e698]:
+          - link [ref=e700] [cursor=pointer]:
+            - /url: /watch?v=RX-pQOaTiMM&list=RDRX-pQOaTiMM&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e702] [cursor=pointer]:
+            - generic [ref=e703]:
+              - heading "Jimi Hendrix - Spanish Castle Magic live stockholm 1969 HD 1440p 60FPS 7 minutes, 37 seconds" [level=3] [ref=e705]:
+                - link "Jimi Hendrix - Spanish Castle Magic live stockholm 1969 HD 1440p 60FPS 7 minutes, 37 seconds" [ref=e706]:
+                  - /url: /watch?v=RX-pQOaTiMM&list=RDRX-pQOaTiMM&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Jimi Hendrix - Spanish Castle Magic live stockholm 1969 HD 1440p 60FPS
+              - generic [ref=e709]:
+                - generic [ref=e710]: 63K views
+                - generic [ref=e711]: •3 years ago
+            - generic [ref=e712]:
+              - link "Go to channel MusicWithTopazVideo" [ref=e713]:
+                - /url: /@MusicWithTopazVideo
+              - link "MusicWithTopazVideo" [ref=e718]:
+                - /url: /@MusicWithTopazVideo
+            - generic [ref=e719]:
+              - generic [ref=e720]: Jimi Hendrix performed two shows at Konserthuset in Stockholm, Sweden, on January 9, 1969. The setlists for both shows ...
+              - tooltip "tooltip"
+        - generic [ref=e721]:
+          - generic [ref=e724]:
+            - img [ref=e726]
+            - heading "Shorts" [level=2] [ref=e729]
+          - generic [ref=e730]:
+            - generic [ref=e731]:
+              - generic [ref=e734]:
+                - link [ref=e735] [cursor=pointer]:
+                  - /url: /shorts/HP_V_QfxyaY
+                - generic [ref=e739] [cursor=pointer]:
+                  - link "Jimi Hendrix & John Lennon Jam at Woodstock 1969" [ref=e740]:
+                    - /url: /shorts/HP_V_QfxyaY
+                  - generic [ref=e741]: 3.6M views
+                - button "More actions" [ref=e743] [cursor=pointer]
+              - generic [ref=e751]:
+                - link [ref=e752] [cursor=pointer]:
+                  - /url: /shorts/617QiRm-73c
+                - generic [ref=e756] [cursor=pointer]:
+                  - link "Jimi Hendrix Jams With Marc Bolan Woodstock 1969" [ref=e757]:
+                    - /url: /shorts/617QiRm-73c
+                  - generic [ref=e758]: 58K views
+                - button "More actions" [ref=e760] [cursor=pointer]
+            - generic [ref=e766]:
+              - generic [ref=e769]:
+                - link [ref=e770] [cursor=pointer]:
+                  - /url: /shorts/fRXoAUbXgUQ
+                - generic [ref=e774] [cursor=pointer]:
+                  - link "Jimi Hendrix Jams with Bill Haley Woodstock 1969" [ref=e775]:
+                    - /url: /shorts/fRXoAUbXgUQ
+                  - generic [ref=e776]: 246K views
+                - button "More actions" [ref=e778] [cursor=pointer]
+              - generic [ref=e786]:
+                - link [ref=e787] [cursor=pointer]:
+                  - /url: /shorts/0JVqd7yUvEw
+                - generic [ref=e791] [cursor=pointer]:
+                  - link "Jimi Hendrix Plays With the Brilliant Janis Joplin at Woodstock 1969" [ref=e792]:
+                    - /url: /shorts/0JVqd7yUvEw
+                  - generic [ref=e793]: 190K views
+                - button "More actions" [ref=e795] [cursor=pointer]
+          - button "Show more" [ref=e804] [cursor=pointer]:
+            - generic [ref=e805]: Show more
+        - generic [ref=e812]:
+          - link [ref=e814] [cursor=pointer]:
+            - /url: /watch?v=7SYeW3I9psY&list=RD7SYeW3I9psY&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e816] [cursor=pointer]:
+            - generic [ref=e817]:
+              - heading "Jimi Hendrix - 1969 - Live in Stockholm 56 minutes" [level=3] [ref=e819]:
+                - link "Jimi Hendrix - 1969 - Live in Stockholm 56 minutes" [ref=e820]:
+                  - /url: /watch?v=7SYeW3I9psY&list=RD7SYeW3I9psY&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Jimi Hendrix - 1969 - Live in Stockholm
+              - generic [ref=e823]:
+                - generic [ref=e824]: 2M views
+                - generic [ref=e825]: •3 years ago
+            - generic [ref=e826]:
+              - link "Go to channel ROCKcity 3000" [ref=e827]:
+                - /url: /@ROCKcity.3000
+              - link "ROCKcity 3000" [ref=e832]:
+                - /url: /@ROCKcity.3000
+            - generic [ref=e833]:
+              - text: "For any concern, comments / suggestions & support, you can send your message at: rock.city3000@gmail.com Thank you very ..."
+              - tooltip "tooltip"
+        - generic [ref=e835] [cursor=pointer]:
+          - link [ref=e836]:
+            - /url: /watch?v=zv97c3W6lw8&list=PLEjD5gC6S-fAjJ2xqdcX0Z2vbzq4vnBIU
+            - generic [ref=e848]: 16 videos
+          - generic [ref=e851]:
+            - heading "Jimi Hendrix Live Performances" [level=3] [ref=e852]:
+              - link "Jimi Hendrix Live Performances" [ref=e853]:
+                - /url: /watch?v=zv97c3W6lw8&list=PLEjD5gC6S-fAjJ2xqdcX0Z2vbzq4vnBIU
+            - generic [ref=e855]:
+              - generic [ref=e856]:
+                - link "Echelon Entertainment" [ref=e859]:
+                  - /url: /@EchelonEntertainment
+                - generic [ref=e860]: •
+                - link "Playlist" [ref=e863]:
+                  - /url: /@EchelonEntertainment
+              - link "The Jimi Hendrix Experience - Foxey Lady (Live In Maui, 1970) · 4:17" [ref=e867]:
+                - /url: /watch?v=zv97c3W6lw8&list=PLEjD5gC6S-fAjJ2xqdcX0Z2vbzq4vnBIU
+              - link "Jimi Hendrix - Freedom (Live at the Atlanta Pop Festival) · 4:07" [ref=e870]:
+                - /url: /watch?v=wDvlErh5zcc&list=PLEjD5gC6S-fAjJ2xqdcX0Z2vbzq4vnBIU
+              - link "View full playlist" [ref=e875]:
+                - /url: /playlist?list=PLEjD5gC6S-fAjJ2xqdcX0Z2vbzq4vnBIU
+        - generic [ref=e876]:
+          - generic [ref=e879]:
+            - img [ref=e881]
+            - heading "Shorts" [level=2] [ref=e884]
+          - generic [ref=e885]:
+            - generic [ref=e886]:
+              - generic [ref=e889]:
+                - link [ref=e890] [cursor=pointer]:
+                  - /url: /shorts/LzoJGhcLYoM
+                - generic [ref=e894] [cursor=pointer]:
+                  - 'link "Jimi Hendrix Live at the Hollywood Bowl 🎸🔥 1968 Performance #RockLegend" [ref=e895]':
+                    - /url: /shorts/LzoJGhcLYoM
+                  - generic [ref=e896]: 24K views
+                - button "More actions" [ref=e898] [cursor=pointer]
+              - generic [ref=e906]:
+                - link [ref=e907] [cursor=pointer]:
+                  - /url: /shorts/ssB0L7hm3ZQ
+                - generic [ref=e911] [cursor=pointer]:
+                  - 'link "Jimi Hendrix - Killing Floor - June 18, 1967, Monterey International Pop Festival #rock #music" [ref=e912]':
+                    - /url: /shorts/ssB0L7hm3ZQ
+                  - generic [ref=e913]: 41K views
+                - button "More actions" [ref=e915] [cursor=pointer]
+            - generic [ref=e921]:
+              - generic [ref=e924]:
+                - link [ref=e925] [cursor=pointer]:
+                  - /url: /shorts/J5POoN0KY1Q
+                - generic [ref=e929] [cursor=pointer]:
+                  - link "Jimi Hendrix Coming for the Final Concert Performance at the Isle of Fehmarn in Germany, 1970." [ref=e930]:
+                    - /url: /shorts/J5POoN0KY1Q
+                  - generic [ref=e931]: 24K views
+                - button "More actions" [ref=e933] [cursor=pointer]
+              - generic [ref=e941]:
+                - link [ref=e942] [cursor=pointer]:
+                  - /url: /shorts/8Zdr7tUV5kk
+                - generic [ref=e946] [cursor=pointer]:
+                  - 'link "Jimi Hendrix Sets California on Fire! 🎸🔥 Newport Pop Festival 1969 #RockLegend" [ref=e947]':
+                    - /url: /shorts/8Zdr7tUV5kk
+                  - generic [ref=e948]: 86K views
+                - button "More actions" [ref=e950] [cursor=pointer]
+          - button "Show more" [ref=e959] [cursor=pointer]:
+            - generic [ref=e960]: Show more
+        - generic [ref=e967]:
+          - link [ref=e969] [cursor=pointer]:
+            - /url: /watch?v=xVN8_7wVSG0&list=RDxVN8_7wVSG0&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e971] [cursor=pointer]:
+            - generic [ref=e972]:
+              - heading "Wild Thing (1967) (Monterey Pop Festival) 7 minutes, 27 seconds" [level=3] [ref=e974]:
+                - link "Wild Thing (1967) (Monterey Pop Festival) 7 minutes, 27 seconds" [ref=e975]:
+                  - /url: /watch?v=xVN8_7wVSG0&list=RDxVN8_7wVSG0&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Wild Thing (1967) (Monterey Pop Festival)
+              - generic [ref=e978]:
+                - generic [ref=e979]: 813K views
+                - generic [ref=e980]: •4 years ago
+            - generic [ref=e981]:
+              - link "Go to channel DcheJ" [ref=e982]:
+                - /url: /@DcheJ.
+              - link "DcheJ" [ref=e987]:
+                - /url: /@DcheJ.
+            - generic [ref=e988]:
+              - generic [ref=e989]: Live At Monterey Pop Festival.
+              - tooltip "tooltip"
+        - generic [ref=e991] [cursor=pointer]:
+          - link [ref=e992]:
+            - /url: /watch?v=qFfnlYbFEiE&list=PLFHmfumKSuzbbjM82U8Q5jCNqfKH_g_Z8&pp=0gcJCbkEOCosWNin
+            - generic [ref=e1004]: 42 videos
+          - generic [ref=e1007]:
+            - heading "Jimi Hendrix Live" [level=3] [ref=e1008]:
+              - link "Jimi Hendrix Live" [ref=e1009]:
+                - /url: /watch?v=qFfnlYbFEiE&list=PLFHmfumKSuzbbjM82U8Q5jCNqfKH_g_Z8&pp=0gcJCbkEOCosWNin
+            - generic [ref=e1011]:
+              - generic [ref=e1012]:
+                - link "Lynn Bain" [ref=e1015]:
+                  - /url: /@lynnbain4525
+                - generic [ref=e1016]: •
+                - link "Playlist" [ref=e1019]:
+                  - /url: /@lynnbain4525
+              - link "The Jimi Hendrix Experience - Voodoo Child (Slight Return) (Live In Maui, 1970) · 6:15" [ref=e1023]:
+                - /url: /watch?v=qFfnlYbFEiE&list=PLFHmfumKSuzbbjM82U8Q5jCNqfKH_g_Z8
+              - link "The Jimi Hendrix Experience - Foxey Lady (Live In Maui, 1970) · 4:17" [ref=e1026]:
+                - /url: /watch?v=zv97c3W6lw8&list=PLFHmfumKSuzbbjM82U8Q5jCNqfKH_g_Z8
+              - link "View full playlist" [ref=e1031]:
+                - /url: /playlist?list=PLFHmfumKSuzbbjM82U8Q5jCNqfKH_g_Z8
+        - generic [ref=e1033]:
+          - link [ref=e1035] [cursor=pointer]:
+            - /url: /watch?v=mAsyiE-dLKA&list=RDmAsyiE-dLKA&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e1037] [cursor=pointer]:
+            - generic [ref=e1038]:
+              - heading "The Jimi Hendrix Experience - Rock Me Baby Live At Monterey 4k upscaled 3 minutes, 24 seconds" [level=3] [ref=e1040]:
+                - link "The Jimi Hendrix Experience - Rock Me Baby Live At Monterey 4k upscaled 3 minutes, 24 seconds" [ref=e1041]:
+                  - /url: /watch?v=mAsyiE-dLKA&list=RDmAsyiE-dLKA&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: The Jimi Hendrix Experience - Rock Me Baby Live At Monterey 4k upscaled
+              - generic [ref=e1044]:
+                - generic [ref=e1045]: 25K views
+                - generic [ref=e1046]: •10 months ago
+            - generic [ref=e1047]:
+              - link "Go to channel mindtpi" [ref=e1048]:
+                - /url: /@mindtpi
+              - link "mindtpi" [ref=e1053]:
+                - /url: /@mindtpi
+            - img "4K" [ref=e1056]:
+              - generic [ref=e1057]: 4K
+        - generic [ref=e1059]:
+          - link [ref=e1061] [cursor=pointer]:
+            - /url: /watch?v=bhqVPrGnQfY&list=RDbhqVPrGnQfY&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e1063] [cursor=pointer]:
+            - generic [ref=e1064]:
+              - heading "The Jimi Hendrix Experience [1080p HD Remaster] The Wind Cries Mary - (Live At Monterey) 3 minutes, 23 seconds" [level=3] [ref=e1066]:
+                - link "The Jimi Hendrix Experience [1080p HD Remaster] The Wind Cries Mary - (Live At Monterey) 3 minutes, 23 seconds" [ref=e1067]:
+                  - /url: /watch?v=bhqVPrGnQfY&list=RDbhqVPrGnQfY&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: The Jimi Hendrix Experience [1080p HD Remaster] The Wind Cries Mary - (Live At Monterey)
+              - generic [ref=e1070]:
+                - generic [ref=e1071]: 115K views
+                - generic [ref=e1072]: •2 years ago
+            - generic [ref=e1073]:
+              - link "Go to channel Christopher Hazard" [ref=e1074]:
+                - /url: /@Hazard4K
+              - link "Christopher Hazard" [ref=e1079]:
+                - /url: /@Hazard4K
+            - generic [ref=e1080]:
+              - generic [ref=e1081]: Jimi Hendrix's debut American set at 1967's Monterey Pop Festival is generally considered one of the most radical and legendary ...
+              - tooltip "tooltip"
+        - generic [ref=e1083]:
+          - link [ref=e1085] [cursor=pointer]:
+            - /url: /watch?v=tZoIxlRC32k&list=RDtZoIxlRC32k&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e1087] [cursor=pointer]:
+            - generic [ref=e1088]:
+              - heading "Jimi Hendrix - Sgt. Pepper's Lonely Hearts Club Band (Live) 2 minutes, 9 seconds" [level=3] [ref=e1090]:
+                - link "Jimi Hendrix - Sgt. Pepper's Lonely Hearts Club Band (Live) 2 minutes, 9 seconds" [ref=e1091]:
+                  - /url: /watch?v=tZoIxlRC32k&list=RDtZoIxlRC32k&start_radio=1&pp=ygUuSmltaSBIZW5kcml4IGxpdmUgY29uY2VydCBvZmZpY2lhbCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Jimi Hendrix - Sgt. Pepper's Lonely Hearts Club Band (Live)
+              - generic [ref=e1094]:
+                - generic [ref=e1095]: 1.9M views
+                - generic [ref=e1096]: •11 years ago
+            - generic [ref=e1097]:
+              - link "Go to channel TheSoaringSixties" [ref=e1098]:
+                - /url: /@thesoaringsixties7757
+              - link "TheSoaringSixties" [ref=e1103]:
+                - /url: /@thesoaringsixties7757
+            - generic [ref=e1104]:
+              - generic [ref=e1105]: I DO NOT OWN THIS PIECE OF MUSICAL ART, ALL CREDIT GOES TO ALL FOUR BEATLES AND JIMI HENDRIX) Music video ...
+              - tooltip "tooltip"

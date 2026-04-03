@@ -1,0 +1,715 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - generic [ref=e13]:
+          - link "YouTube Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e19]:
+              - img
+          - generic [ref=e20]: ES
+        - button "Skip navigation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Skip navigation
+      - button "Search" [ref=e31] [cursor=pointer]:
+        - generic [ref=e34]:
+          - img
+        - tooltip "tooltip"
+      - generic [ref=e36]:
+        - button "Settings" [ref=e41] [cursor=pointer]
+        - link "Sign in" [ref=e45] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DJosh%252BSmith%252Bblues%252Bguitarist%252Blive%252Bperformance&hl=en&ec=65620
+          - generic [ref=e48]: Sign in
+  - generic [ref=e52]:
+    - main [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e56]:
+          - generic [ref=e59]:
+            - tablist [ref=e61]:
+              - tab "All" [selected] [ref=e65] [cursor=pointer]:
+                - generic [ref=e67]: All
+              - tab "Shorts" [ref=e74] [cursor=pointer]:
+                - generic [ref=e76]: Shorts
+              - tab "Videos" [ref=e83] [cursor=pointer]:
+                - generic [ref=e85]: Videos
+              - tab "Unwatched" [ref=e92] [cursor=pointer]:
+                - generic [ref=e94]: Unwatched
+              - tab "Watched" [ref=e101] [cursor=pointer]:
+                - generic [ref=e103]: Watched
+              - tab "Recently uploaded" [ref=e110] [cursor=pointer]:
+                - generic [ref=e112]: Recently uploaded
+              - tab "Live" [ref=e119] [cursor=pointer]:
+                - generic [ref=e121]: Live
+            - button "Next" [ref=e129] [cursor=pointer]
+          - link "About these results" [ref=e138] [cursor=pointer]:
+            - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+            - generic [ref=e139]: About these results
+          - generic [ref=e146]:
+            - button "Search filters" [ref=e148] [cursor=pointer]:
+              - generic [ref=e149]: Filters
+            - tooltip "tooltip"
+        - generic [ref=e160]:
+          - generic [ref=e162]:
+            - link [ref=e164] [cursor=pointer]:
+              - /url: /watch?v=yS7x27PcomU&list=RDyS7x27PcomU&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+              - img [ref=e166]
+              - img [ref=e169]:
+                - generic [ref=e171]: 10:33
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e172] [cursor=pointer]:
+              - generic [ref=e173]:
+                - generic [ref=e174]:
+                  - heading "Josh Smith, Kirk Fletcher, Ariel Posen - \"Crosscut Saw\" Jam - Collings Guitars Booth NAMM 2019 10 minutes, 33 seconds" [level=3] [ref=e175]:
+                    - link "Josh Smith, Kirk Fletcher, Ariel Posen - \"Crosscut Saw\" Jam - Collings Guitars Booth NAMM 2019 10 minutes, 33 seconds" [ref=e176]:
+                      - /url: /watch?v=yS7x27PcomU&list=RDyS7x27PcomU&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                      - text: Josh Smith, Kirk Fletcher, Ariel Posen - "Crosscut Saw" Jam - Collings Guitars Booth NAMM 2019
+                  - button "Action menu" [ref=e180]
+                - generic [ref=e184]:
+                  - generic [ref=e185]: 982K views
+                  - generic [ref=e186]: •7 years ago
+              - generic [ref=e187]:
+                - link "Go to channel 1AnitrasDance" [ref=e188]:
+                  - /url: /@1AnitrasDance
+                - link "1AnitrasDance" [ref=e194]:
+                  - /url: /@1AnitrasDance
+              - generic [ref=e195]:
+                - generic [ref=e196]: (Filmed by Natasha in 1080 HD) Ariel Posen, Kirk Fletcher & Josh Smith at the Collings Guitar Booth at the 2019 NAMM ...
+                - tooltip "tooltip"
+          - generic [ref=e198]:
+            - link [ref=e200] [cursor=pointer]:
+              - /url: /watch?v=nquZoKBPSKE&list=RDnquZoKBPSKE&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+              - img [ref=e202]
+              - img [ref=e205]:
+                - generic [ref=e207]: 11:59
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e208] [cursor=pointer]:
+              - generic [ref=e209]:
+                - generic [ref=e210]:
+                  - heading "Josh Smith - Pusher - 10/21/19 Two Old Hippies - Nashville, TN 11 minutes, 59 seconds" [level=3] [ref=e211]:
+                    - link "Josh Smith - Pusher - 10/21/19 Two Old Hippies - Nashville, TN 11 minutes, 59 seconds" [ref=e212]:
+                      - /url: /watch?v=nquZoKBPSKE&list=RDnquZoKBPSKE&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                      - text: Josh Smith - Pusher - 10/21/19 Two Old Hippies - Nashville, TN
+                  - button "Action menu" [ref=e216]
+                - generic [ref=e220]:
+                  - generic [ref=e221]: 325K views
+                  - generic [ref=e222]: •6 years ago
+              - generic [ref=e223]:
+                - link "Go to channel 1AnitrasDance" [ref=e224]:
+                  - /url: /@1AnitrasDance
+                - link "1AnitrasDance" [ref=e230]:
+                  - /url: /@1AnitrasDance
+              - generic [ref=e231]:
+                - generic [ref=e232]: (Filmed by Natasha in 1080 HD) Josh Smith - Guitar & Vocals, Calvin Turner - Bass, Marcus Finnie - Drums Filmed & Recorded on ...
+                - tooltip "tooltip"
+          - generic [ref=e234]:
+            - link [ref=e236] [cursor=pointer]:
+              - /url: /watch?v=yDV_wYzrPWs&list=RDyDV_wYzrPWs&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+              - img [ref=e238]
+              - img [ref=e241]:
+                - generic [ref=e243]: 1:34:19
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e244] [cursor=pointer]:
+              - generic [ref=e245]:
+                - generic [ref=e246]:
+                  - heading "Josh Smith - Full Concert @ TC HQ 1 hour, 34 minutes" [level=3] [ref=e247]:
+                    - link "Josh Smith - Full Concert @ TC HQ 1 hour, 34 minutes" [ref=e248]:
+                      - /url: /watch?v=yDV_wYzrPWs&list=RDyDV_wYzrPWs&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                      - text: Josh Smith - Full Concert @ TC HQ
+                  - button "Action menu" [ref=e252]
+                - generic [ref=e256]:
+                  - generic [ref=e257]: 26K views
+                  - generic [ref=e258]: •3 years ago
+              - generic [ref=e259]:
+                - link "Go to channel TC Electronic" [ref=e260]:
+                  - /url: /@tcelectronic
+                - link "TC Electronic" [ref=e266]:
+                  - /url: /@tcelectronic
+              - generic [ref=e267]:
+                - generic [ref=e268]: Renowned blues guitarist Josh Smith swung by TC headquarters for an intimate concert and guitar clinic in late 2018. Here is the ...
+                - tooltip "tooltip"
+          - generic [ref=e270]:
+            - link [ref=e272] [cursor=pointer]:
+              - /url: /watch?v=Vu-eqi_HhGw&list=RDVu-eqi_HhGw&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+              - img [ref=e274]
+              - img [ref=e277]:
+                - generic [ref=e279]: 10:25
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e280] [cursor=pointer]:
+              - generic [ref=e281]:
+                - generic [ref=e282]:
+                  - heading "Josh Smith, Kirk Fletcher & Joe Bonamassa - Crosscut Saw - 1/14/17 Midnight Mission Benefit Show 10 minutes, 25 seconds" [level=3] [ref=e283]:
+                    - link "Josh Smith, Kirk Fletcher & Joe Bonamassa - Crosscut Saw - 1/14/17 Midnight Mission Benefit Show 10 minutes, 25 seconds" [ref=e284]:
+                      - /url: /watch?v=Vu-eqi_HhGw&list=RDVu-eqi_HhGw&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                      - text: Josh Smith, Kirk Fletcher & Joe Bonamassa - Crosscut Saw - 1/14/17 Midnight Mission Benefit Show
+                  - button "Action menu" [ref=e288]
+                - generic [ref=e292]:
+                  - generic [ref=e293]: 252K views
+                  - generic [ref=e294]: •9 years ago
+              - generic [ref=e295]:
+                - link "Go to channel 1AnitrasDance" [ref=e296]:
+                  - /url: /@1AnitrasDance
+                - link "1AnitrasDance" [ref=e302]:
+                  - /url: /@1AnitrasDance
+              - generic [ref=e303]:
+                - text: (Filmed by Natasha in 1080 HD) http://www.midnightmission.org/ Check out link and donate to the Midnight Mission to help the ...
+                - tooltip "tooltip"
+          - generic [ref=e305]:
+            - link [ref=e307] [cursor=pointer]:
+              - /url: /watch?v=WXrGvZWSYko&list=RDWXrGvZWSYko&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+              - img [ref=e309]
+              - img [ref=e312]:
+                - generic [ref=e314]: 2:12:50
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e315] [cursor=pointer]:
+              - generic [ref=e316]:
+                - generic [ref=e317]:
+                  - heading "Josh Smith's Full Show on 1/2/18 at The Baked Potato 2 hours, 12 minutes" [level=3] [ref=e318]:
+                    - link "Josh Smith's Full Show on 1/2/18 at The Baked Potato 2 hours, 12 minutes" [ref=e319]:
+                      - /url: /watch?v=WXrGvZWSYko&list=RDWXrGvZWSYko&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                      - text: Josh Smith's Full Show on 1/2/18 at The Baked Potato
+                  - button "Action menu" [ref=e323]
+                - generic [ref=e327]:
+                  - generic [ref=e328]: 291K views
+                  - generic [ref=e329]: •8 years ago
+              - generic [ref=e330]:
+                - link "Go to channel 1AnitrasDance" [ref=e331]:
+                  - /url: /@1AnitrasDance
+                - link "1AnitrasDance" [ref=e337]:
+                  - /url: /@1AnitrasDance
+              - generic [ref=e338]:
+                - generic [ref=e339]: (Filmed by Natasha in 1080 HD) Josh Smith's full show at the Baked Potato in Studio City, CA. Josh Smith - Guitar & Vocals, Scott ...
+                - tooltip "tooltip"
+              - generic [ref=e342]:
+                - generic [ref=e343]:
+                  - generic [ref=e347]: 13 moments
+                  - button "How Long | Pusher | The Way You Do | Letting You Go | When I Get Mine | Penance | Just Kissed My Baby | That Ain't Me | First Hand Look | Payin The Cost | The Middle | Where's My Baby | Angel"
+                - button "More" [ref=e352]
+          - generic [ref=e359]:
+            - link [ref=e361] [cursor=pointer]:
+              - /url: /watch?v=hveuWDZ2KnY&list=RDhveuWDZ2KnY&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e363] [cursor=pointer]:
+              - generic [ref=e364]:
+                - generic [ref=e365]:
+                  - 'heading "HEY JOE: Eric Gales, Kingfish, Josh Smith, Joe Bonamassa: All-Star Session on KTBAS X 10 minutes, 24 seconds" [level=3] [ref=e366]':
+                    - 'link "HEY JOE: Eric Gales, Kingfish, Josh Smith, Joe Bonamassa: All-Star Session on KTBAS X 10 minutes, 24 seconds" [ref=e367]':
+                      - /url: /watch?v=hveuWDZ2KnY&list=RDhveuWDZ2KnY&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                      - text: "HEY JOE: Eric Gales, Kingfish, Josh Smith, Joe Bonamassa: All-Star Session on KTBAS X"
+                  - button "Action menu" [ref=e371]
+                - generic [ref=e375]:
+                  - generic [ref=e376]: 405K views
+                  - generic [ref=e377]: •1 year ago
+              - generic [ref=e378]:
+                - link "Go to channel Arya’s Music Notes" [ref=e379]:
+                  - /url: /@aryamsharma
+                - link "Arya’s Music Notes" [ref=e385]:
+                  - /url: /@aryamsharma
+              - generic [ref=e386]:
+                - generic [ref=e387]: Christone "KIngfish" Ingram and Eric Gales live with Joe Bonamassa, Jimmy Vivino, Josh Smith, Reese Wynans, Jesse Williams at ...
+                - tooltip "tooltip"
+          - generic [ref=e389]:
+            - link [ref=e391] [cursor=pointer]:
+              - /url: /watch?v=tCstPUEUde0&list=RDtCstPUEUde0&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e393] [cursor=pointer]:
+              - generic [ref=e394]:
+                - generic [ref=e395]:
+                  - heading "Josh Smith - Multi Cam 4K - 2020-02-17 Boca Raton, Florida - The Funky Biscuit - Full Show 1 hour, 33 minutes" [level=3] [ref=e396]:
+                    - link "Josh Smith - Multi Cam 4K - 2020-02-17 Boca Raton, Florida - The Funky Biscuit - Full Show 1 hour, 33 minutes" [ref=e397]:
+                      - /url: /watch?v=tCstPUEUde0&list=RDtCstPUEUde0&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                      - text: Josh Smith - Multi Cam 4K - 2020-02-17 Boca Raton, Florida - The Funky Biscuit - Full Show
+                  - button "Action menu" [ref=e401]
+                - generic [ref=e405]:
+                  - generic [ref=e406]: 74K views
+                  - generic [ref=e407]: •5 years ago
+              - generic [ref=e408]:
+                - link "Go to channel datflys" [ref=e409]:
+                  - /url: /@datflys
+                - link "datflys" [ref=e414]:
+                  - /url: /@datflys
+              - generic [ref=e415]:
+                - generic [ref=e416]: 00:00:00 Brown Gatton 00:08:10 Half Blues 00:14:19 Pusher 00:29:24 What We Need 00:40:50 Lettin' You Go 00:47:45 When I ...
+                - tooltip "tooltip"
+              - img "4K" [ref=e419]:
+                - generic [ref=e420]: 4K
+              - generic [ref=e423]:
+                - generic [ref=e424]:
+                  - generic [ref=e428]: 10 chapters
+                  - button "Brown Gatton | Half Blues | Pusher | What We Need | Lettin' You Go | When I Get Mine | Penance | First Hand Look | The Middle | Where's My Baby"
+                - button "More" [ref=e433]
+          - generic [ref=e440]:
+            - link [ref=e442] [cursor=pointer]:
+              - /url: /watch?v=QqsPTMDZzgE&list=RDQqsPTMDZzgE&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e444] [cursor=pointer]:
+              - generic [ref=e445]:
+                - generic [ref=e446]:
+                  - 'heading "PACK IT UP: Joe Bonamassa and Josh Smith on KTBAS X 12 minutes, 3 seconds" [level=3] [ref=e447]':
+                    - 'link "PACK IT UP: Joe Bonamassa and Josh Smith on KTBAS X 12 minutes, 3 seconds" [ref=e448]':
+                      - /url: /watch?v=QqsPTMDZzgE&list=RDQqsPTMDZzgE&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                      - text: "PACK IT UP: Joe Bonamassa and Josh Smith on KTBAS X"
+                  - button "Action menu" [ref=e452]
+                - generic [ref=e456]:
+                  - generic [ref=e457]: 40K views
+                  - generic [ref=e458]: •11 months ago
+              - generic [ref=e459]:
+                - link "Go to channel Arya’s Music Notes" [ref=e460]:
+                  - /url: /@aryamsharma
+                - link "Arya’s Music Notes" [ref=e465]:
+                  - /url: /@aryamsharma
+              - generic [ref=e466]:
+                - generic [ref=e467]: Joe Bonamassa live on Keeping the Blues Alive at Sea X cruise on Norwegian Gem, recorded on an iPhone 12 Pro by Arya's ...
+                - tooltip "tooltip"
+          - generic [ref=e469]:
+            - link [ref=e471] [cursor=pointer]:
+              - /url: /watch?v=d69iW7TUsKc&list=RDd69iW7TUsKc&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e473] [cursor=pointer]:
+              - generic [ref=e474]:
+                - generic [ref=e475]:
+                  - heading "Greg Koch And Josh Smith. Folsom Prison Blues. January 27th, 2020. 6 minutes, 57 seconds" [level=3] [ref=e476]:
+                    - link "Greg Koch And Josh Smith. Folsom Prison Blues. January 27th, 2020. 6 minutes, 57 seconds" [ref=e477]:
+                      - /url: /watch?v=d69iW7TUsKc&list=RDd69iW7TUsKc&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                      - text: Greg Koch And Josh Smith. Folsom Prison Blues. January 27th, 2020.
+                  - button "Action menu" [ref=e481]
+                - generic [ref=e485]:
+                  - generic [ref=e486]: 444K views
+                  - generic [ref=e487]: •6 years ago
+              - generic [ref=e488]:
+                - link "Go to channel Lynda LaHue" [ref=e489]:
+                  - /url: /@LyndaLaHue
+                - link "Lynda LaHue" [ref=e494]:
+                  - /url: /@LyndaLaHue
+              - generic [ref=e495]:
+                - generic [ref=e496]: Dylan Koch. Drums. Toby Lee. Hammond B3 Organ. Presented By Cadillac Zack. Monday Night Blues And Jam. Maui Sugar Mill ...
+                - tooltip "tooltip"
+          - generic [ref=e497]:
+            - generic [ref=e500]:
+              - img [ref=e502]
+              - heading "Shorts" [level=2] [ref=e505]
+            - generic [ref=e506]:
+              - generic [ref=e507]:
+                - generic [ref=e510]:
+                  - link [ref=e511] [cursor=pointer]:
+                    - /url: /shorts/qoz5O33TInU
+                  - generic [ref=e515] [cursor=pointer]:
+                    - link "Josh Smith at JazzOpen Stuttgart on 10.07.2025" [ref=e516]:
+                      - /url: /shorts/qoz5O33TInU
+                    - generic [ref=e517]: 14K views
+                  - button "More actions" [ref=e519] [cursor=pointer]
+                - generic [ref=e527]:
+                  - link [ref=e528] [cursor=pointer]:
+                    - /url: /shorts/BZKwVb9JuGc
+                  - generic [ref=e532] [cursor=pointer]:
+                    - 'link "Josh Smith Guitar Solo & Joe Bonamassa @ Seattle 2025 #ibanez #gibson #joebonamassa #blues #seattle" [ref=e533]':
+                      - /url: /shorts/BZKwVb9JuGc
+                    - generic [ref=e534]: 17K views
+                  - button "More actions" [ref=e536] [cursor=pointer]
+              - generic [ref=e542]:
+                - generic [ref=e545]:
+                  - link [ref=e546] [cursor=pointer]:
+                    - /url: /shorts/FmxWQ5iSKeQ
+                  - generic [ref=e550] [cursor=pointer]:
+                    - 'link "Josh Smith & Kirk Fletcher acoustic blues jam at NAMM 2024 😎 🎸 #kirkfletcher #joshsmith #guitar" [ref=e551]':
+                      - /url: /shorts/FmxWQ5iSKeQ
+                    - generic [ref=e552]: 11K views
+                  - button "More actions" [ref=e554] [cursor=pointer]
+                - generic [ref=e562]:
+                  - link [ref=e563] [cursor=pointer]:
+                    - /url: /shorts/Xvh5mXGu8Tg
+                  - generic [ref=e567] [cursor=pointer]:
+                    - link "Josh Smith // Rhumba Blues (2018)" [ref=e568]:
+                      - /url: /shorts/Xvh5mXGu8Tg
+                    - generic [ref=e569]: 12K views
+                  - button "More actions" [ref=e571] [cursor=pointer]
+            - button "Show more" [ref=e580] [cursor=pointer]:
+              - generic [ref=e581]: Show more
+          - generic [ref=e588]:
+            - link [ref=e590] [cursor=pointer]:
+              - /url: /watch?v=H6KfPW3MVkM&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZQ%3D%3D
+            - generic [ref=e592] [cursor=pointer]:
+              - generic [ref=e593]:
+                - generic [ref=e594]:
+                  - heading "Josh Smith Blues Fusion Guitar Masterclass 7 minutes, 43 seconds" [level=3] [ref=e595]:
+                    - link "Josh Smith Blues Fusion Guitar Masterclass 7 minutes, 43 seconds" [ref=e596]:
+                      - /url: /watch?v=H6KfPW3MVkM&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZQ%3D%3D
+                      - text: Josh Smith Blues Fusion Guitar Masterclass
+                  - button "Action menu" [ref=e600]
+                - generic [ref=e604]:
+                  - generic [ref=e605]: 1.3M views
+                  - generic [ref=e606]: •8 years ago
+              - generic [ref=e607]:
+                - link "Go to channel Guitarist" [ref=e608]:
+                  - /url: /@guitarist
+                - link "Guitarist" [ref=e613]:
+                  - /url: /@guitarist
+              - generic [ref=e614]:
+                - generic [ref=e615]: "Featured in Guitarist 431 Gear demos playlist: http://goo.gl/30cAf Subscribe for more from Guitarist: http://goo.gl/2PRXE Buy ..."
+                - tooltip "tooltip"
+              - generic [ref=e618]:
+                - generic [ref=e619]:
+                  - generic [ref=e623]: 3 moments
+                  - button "The jazz influence | Mixing it up | The country influence"
+                - button "More" [ref=e628]
+          - generic [ref=e635]:
+            - link [ref=e637] [cursor=pointer]:
+              - /url: /watch?v=5vlKHkOvmZc&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZQ%3D%3D
+            - generic [ref=e639] [cursor=pointer]:
+              - generic [ref=e640]:
+                - generic [ref=e641]:
+                  - heading "Two-Rock Presents... TS1 Full Performance featuring MATT SCHOFIELD & JOSH SMITH 9 minutes, 43 seconds" [level=3] [ref=e642]:
+                    - link "Two-Rock Presents... TS1 Full Performance featuring MATT SCHOFIELD & JOSH SMITH 9 minutes, 43 seconds" [ref=e643]:
+                      - /url: /watch?v=5vlKHkOvmZc&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZQ%3D%3D
+                      - text: Two-Rock Presents... TS1 Full Performance featuring MATT SCHOFIELD & JOSH SMITH
+                  - button "Action menu" [ref=e647]
+                - generic [ref=e651]:
+                  - generic [ref=e652]: 338K views
+                  - generic [ref=e653]: •8 years ago
+              - generic [ref=e654]:
+                - link "Go to channel Two-Rock Amplifiers" [ref=e655]:
+                  - /url: /@TwoRockAmplifiers
+                - link "Two-Rock Amplifiers" [ref=e660]:
+                  - /url: /@TwoRockAmplifiers
+              - generic [ref=e661]:
+                - generic [ref=e662]: Full performance of Matt Schofield and Josh Smith both playing the TS1. This amp was originally released in 2010. Bill Krinard ...
+                - tooltip "tooltip"
+              - generic [ref=e665]:
+                - generic [ref=e666]:
+                  - generic [ref=e670]: 3 moments
+                  - button "MATT SCHOFIELD | JOSH SMITH | Two Rock AMPLIFIERS"
+                - button "More" [ref=e675]
+          - generic [ref=e682]:
+            - link [ref=e684] [cursor=pointer]:
+              - /url: /watch?v=1GlCPQ79B_c&list=RD1GlCPQ79B_c&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e686] [cursor=pointer]:
+              - generic [ref=e687]:
+                - generic [ref=e688]:
+                  - heading "Josh Smith - Live at Umbriablues 1 hour, 29 minutes" [level=3] [ref=e689]:
+                    - link "Josh Smith - Live at Umbriablues 1 hour, 29 minutes" [ref=e690]:
+                      - /url: /watch?v=1GlCPQ79B_c&list=RD1GlCPQ79B_c&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                      - text: Josh Smith - Live at Umbriablues
+                  - button "Action menu" [ref=e694]
+                - generic [ref=e698]:
+                  - generic [ref=e699]: 72K views
+                  - generic [ref=e700]: •5 years ago
+              - generic [ref=e701]:
+                - link "Go to channel Umbriablues Festival" [ref=e702]:
+                  - /url: /@umbriablues
+                - link "Umbriablues Festival" [ref=e707]:
+                  - /url: /@umbriablues
+              - generic [ref=e708]:
+                - generic [ref=e709]: Josh Smith live at Umbriablues Festival (www.umbriablues.com) Foligno (Italy) - June 20, 2019 Produced by Ermanno Bonifazi at ...
+                - tooltip "tooltip"
+          - generic [ref=e711]:
+            - heading "People also watched" [level=2] [ref=e714]:
+              - generic [ref=e716]: People also watched
+            - generic [ref=e718]:
+              - generic [ref=e719]:
+                - generic [ref=e721]:
+                  - link [ref=e723] [cursor=pointer]:
+                    - /url: /watch?v=iF5jPth5EcM&list=RDiF5jPth5EcM&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - generic [ref=e725] [cursor=pointer]:
+                    - generic [ref=e726]:
+                      - generic [ref=e727]:
+                        - heading "Josh Smith, Kirk Fletcher, Matt Schofield, Eric Gales & JD Simo (Full Show)- 2/14/16 Fishtails 1 hour, 40 minutes" [level=3] [ref=e728]:
+                          - link "Josh Smith, Kirk Fletcher, Matt Schofield, Eric Gales & JD Simo (Full Show)- 2/14/16 Fishtails 1 hour, 40 minutes" [ref=e729]:
+                            - /url: /watch?v=iF5jPth5EcM&list=RDiF5jPth5EcM&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                            - text: Josh Smith, Kirk Fletcher, Matt Schofield, Eric Gales & JD Simo (Full Show)- 2/14/16 Fishtails
+                        - button "Action menu" [ref=e733]
+                      - generic [ref=e737]:
+                        - generic [ref=e738]: 102K views
+                        - generic [ref=e739]: •9 years ago
+                    - generic [ref=e740]:
+                      - link "Go to channel 1AnitrasDance" [ref=e741]:
+                        - /url: /@1AnitrasDance
+                      - link "1AnitrasDance" [ref=e746]:
+                        - /url: /@1AnitrasDance
+                    - generic [ref=e747]:
+                      - generic [ref=e748]: (Filmed by Natasha in 1080 HD) Josh Smith and Kirk Fletcher performed a free show and invited their friends Matt Schofield, Eric ...
+                      - tooltip "tooltip"
+                    - generic [ref=e751]:
+                      - generic [ref=e752]:
+                        - generic [ref=e756]: 10 moments
+                        - button "Paying The Cost (with Matt Schofield) | Black Cat Bone (with Matt Schofield) | Just Kissed My Baby (with Eric Gales) | Little Wing (with Eric Gales) | Let Me Have It All (with Eric Gales) | Fine Young Thing (with JD Simo) | Bemsha Swing (with JD Simo) | Pusher (with Matt Schofield) | Empty Arms (with Matt Schofield) | El Medio"
+                      - button "More" [ref=e761]
+                - generic [ref=e768]:
+                  - link [ref=e770] [cursor=pointer]:
+                    - /url: /watch?v=UWh4MnndiRM&list=RDUWh4MnndiRM&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - generic [ref=e772] [cursor=pointer]:
+                    - generic [ref=e773]:
+                      - heading "Josh Smith - Full Show - 10/7/18 Baked Potato 2 hours, 30 minutes" [level=3] [ref=e775]:
+                        - link "Josh Smith - Full Show - 10/7/18 Baked Potato 2 hours, 30 minutes" [ref=e776]:
+                          - /url: /watch?v=UWh4MnndiRM&list=RDUWh4MnndiRM&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                          - text: Josh Smith - Full Show - 10/7/18 Baked Potato
+                      - generic [ref=e779]:
+                        - generic [ref=e780]: 38K views
+                        - generic [ref=e781]: •7 years ago
+                    - generic [ref=e782]:
+                      - link "Go to channel 1AnitrasDance" [ref=e783]:
+                        - /url: /@1AnitrasDance
+                      - link "1AnitrasDance" [ref=e788]:
+                        - /url: /@1AnitrasDance
+                    - generic [ref=e789]:
+                      - generic [ref=e790]: "(Filmed by Natasha in 1080 HD) NEW ALBUM \"Burn To Grow\" AVAILABLE HERE: https://lnk.to/burntogrow Josh Smith - Guitar ..."
+                      - tooltip "tooltip"
+                    - generic [ref=e793]:
+                      - generic [ref=e794]:
+                        - generic [ref=e798]: 18 moments
+                        - button "Bemsha Swing | Half Blues | Pusher | What We Need | Lettin' You Go | Let Me Take Care Of You | Penance | Burn To Grow | Skunk Tree | Watching You Go | Payin The Cost | First Hand Look | When I Get Mine | That Ain't Me | Just Kissed My Baby | The Middle | Where's My Baby | Angel"
+                      - button "More" [ref=e803]
+                - generic [ref=e810]:
+                  - link [ref=e812] [cursor=pointer]:
+                    - /url: /watch?v=GQEkovtZMeE&list=RDGQEkovtZMeE&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - generic [ref=e814] [cursor=pointer]:
+                    - generic [ref=e815]:
+                      - heading "Joe Bonamassa , Josh Smith, Kirk Fletcher, Guy King 1 hour, 35 minutes" [level=3] [ref=e817]:
+                        - link "Joe Bonamassa , Josh Smith, Kirk Fletcher, Guy King 1 hour, 35 minutes" [ref=e818]:
+                          - /url: /watch?v=GQEkovtZMeE&list=RDGQEkovtZMeE&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                          - text: Joe Bonamassa , Josh Smith, Kirk Fletcher, Guy King
+                      - generic [ref=e821]:
+                        - generic [ref=e822]: 23K views
+                        - generic [ref=e823]: •8 years ago
+                    - generic [ref=e824]:
+                      - link "Go to channel missmoke007" [ref=e825]:
+                        - /url: /@missmoke007promotesgreatmusic
+                      - link "missmoke007" [ref=e830]:
+                        - /url: /@missmoke007promotesgreatmusic
+                    - generic [ref=e831]:
+                      - text: Filmed in HD 1080 by Linda Moke.
+                      - tooltip "tooltip"
+                - generic [ref=e833]:
+                  - link [ref=e835] [cursor=pointer]:
+                    - /url: /watch?v=tR8Y_mbN9w4&list=RDtR8Y_mbN9w4&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - generic [ref=e837] [cursor=pointer]:
+                    - generic [ref=e838]:
+                      - heading "Josh Smith 25.05.2015 - 2nd part of the show - in Celle Herzog-Ernst Germany 1 hour, 19 minutes" [level=3] [ref=e840]:
+                        - link "Josh Smith 25.05.2015 - 2nd part of the show - in Celle Herzog-Ernst Germany 1 hour, 19 minutes" [ref=e841]:
+                          - /url: /watch?v=tR8Y_mbN9w4&list=RDtR8Y_mbN9w4&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                          - text: Josh Smith 25.05.2015 - 2nd part of the show - in Celle Herzog-Ernst Germany
+                      - generic [ref=e844]:
+                        - generic [ref=e845]: 24K views
+                        - generic [ref=e846]: •10 years ago
+                    - generic [ref=e847]:
+                      - link "Go to channel Herzog Ernst Celle" [ref=e848]:
+                        - /url: /@HerzogErnstCelle-live
+                      - link "Herzog Ernst Celle" [ref=e853]:
+                        - /url: /@HerzogErnstCelle-live
+                    - generic [ref=e854]:
+                      - generic [ref=e855]: "live in Herzog Ernst Celle http://www.herzog-ernst.com/ the artists: Josh Smith http://www.joshsmithguitar.com/"
+                      - tooltip "tooltip"
+              - generic "+6 more" [ref=e857] [cursor=pointer]
+          - generic [ref=e859]:
+            - link [ref=e861] [cursor=pointer]:
+              - /url: /watch?v=UOk1Vu0JJhA&list=RDUOk1Vu0JJhA&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e863] [cursor=pointer]:
+              - generic [ref=e864]:
+                - heading "Josh Smith delivering the goods 1 minute, 14 seconds" [level=3] [ref=e866]:
+                  - link "Josh Smith delivering the goods 1 minute, 14 seconds" [ref=e867]:
+                    - /url: /watch?v=UOk1Vu0JJhA&list=RDUOk1Vu0JJhA&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Josh Smith delivering the goods
+                - generic [ref=e870]:
+                  - generic [ref=e871]: 43K views
+                  - generic [ref=e872]: •1 year ago
+              - generic [ref=e873]:
+                - link "Go to channel pickups by Pete A Flynn" [ref=e874]:
+                  - /url: /@pickupsbypeteaflynn
+                - link "pickups by Pete A Flynn" [ref=e879]:
+                  - /url: /@pickupsbypeteaflynn
+              - generic [ref=e880]:
+                - generic [ref=e881]: Josh Smith on tour with Joe Bonamassa at the Appleton Performing Arts Center Nov 27, 2024 on his Ibanez Semi-Hollowbody ...
+                - tooltip "tooltip"
+          - generic [ref=e883]:
+            - link [ref=e885] [cursor=pointer]:
+              - /url: /watch?v=KXJOiAhbSCE&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e887] [cursor=pointer]:
+              - generic [ref=e888]:
+                - heading "Kirk Fletcher & Josh Smith playing a pair of Original 1958 Fender Stratocasters 4 minutes" [level=3] [ref=e890]:
+                  - link "Kirk Fletcher & Josh Smith playing a pair of Original 1958 Fender Stratocasters 4 minutes" [ref=e891]:
+                    - /url: /watch?v=KXJOiAhbSCE&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZdIHCQnZCgGHKiGM7w%3D%3D
+                    - text: Kirk Fletcher & Josh Smith playing a pair of Original 1958 Fender Stratocasters
+                - generic [ref=e894]:
+                  - generic [ref=e895]: 308K views
+                  - generic [ref=e896]: •8 years ago
+              - generic [ref=e897]:
+                - link "Go to channel Normans Rare Guitars" [ref=e898]:
+                  - /url: /@NormansRareGuitars
+                - link "Normans Rare Guitars" [ref=e903]:
+                  - /url: /@NormansRareGuitars
+              - generic [ref=e904]:
+                - generic [ref=e905]: Two of the greatest blues guitar players alive, Kirk Fletcher and Josh Smith playing a pair of original 1958 Fender Stratocasters ...
+                - tooltip "tooltip"
+          - generic [ref=e906]:
+            - generic [ref=e909]:
+              - img [ref=e911]
+              - heading "Shorts" [level=2] [ref=e914]
+            - generic [ref=e915]:
+              - generic [ref=e916]:
+                - generic [ref=e919]:
+                  - link [ref=e920] [cursor=pointer]:
+                    - /url: /shorts/0NKdpykJrss
+                  - generic [ref=e924] [cursor=pointer]:
+                    - link "Josh Smith Guitar Solo at Crossroads 2023" [ref=e925]:
+                      - /url: /shorts/0NKdpykJrss
+                    - generic [ref=e926]: 4.8K views
+                  - button "More actions" [ref=e928] [cursor=pointer]
+                - generic [ref=e936]:
+                  - link [ref=e937] [cursor=pointer]:
+                    - /url: /shorts/7c4x68dKuYg
+                  - generic [ref=e941] [cursor=pointer]:
+                    - link "Josh Smith... back from tour with Joe Bonamassa Playing a FLATV2 | Ibanez seen at NAMM 25.Subscribe?" [ref=e942]:
+                      - /url: /shorts/7c4x68dKuYg
+                    - generic [ref=e943]: 1.1K views
+                  - button "More actions" [ref=e945] [cursor=pointer]
+              - generic [ref=e951]:
+                - generic [ref=e954]:
+                  - link [ref=e955] [cursor=pointer]:
+                    - /url: /shorts/ghPbTzEN_FQ
+                  - generic [ref=e959] [cursor=pointer]:
+                    - link "Josh Smith Ignites Athens – Wahcko in Full Force!" [ref=e960]:
+                      - /url: /shorts/ghPbTzEN_FQ
+                    - generic [ref=e961]: 1.7K views
+                  - button "More actions" [ref=e963] [cursor=pointer]
+                - generic [ref=e971]:
+                  - link [ref=e972] [cursor=pointer]:
+                    - /url: /shorts/sFHVHhqKhtA
+                  - generic [ref=e976] [cursor=pointer]:
+                    - link "Josh Smith Tasty Solo" [ref=e977]:
+                      - /url: /shorts/sFHVHhqKhtA
+                    - generic [ref=e978]: 6.2K views
+                  - button "More actions" [ref=e980] [cursor=pointer]
+            - button "Show more" [ref=e989] [cursor=pointer]:
+              - generic [ref=e990]: Show more
+          - generic [ref=e997]:
+            - link [ref=e999] [cursor=pointer]:
+              - /url: /watch?v=syHGABc3wIE&list=RDsyHGABc3wIE&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e1001] [cursor=pointer]:
+              - generic [ref=e1002]:
+                - heading "Josh Smith, Matt Schofield, Tomo Fujita and Eric Gales with Eminence at NAMM 2016 10 minutes, 33 seconds" [level=3] [ref=e1004]:
+                  - link "Josh Smith, Matt Schofield, Tomo Fujita and Eric Gales with Eminence at NAMM 2016 10 minutes, 33 seconds" [ref=e1005]:
+                    - /url: /watch?v=syHGABc3wIE&list=RDsyHGABc3wIE&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                    - text: Josh Smith, Matt Schofield, Tomo Fujita and Eric Gales with Eminence at NAMM 2016
+                - generic [ref=e1008]:
+                  - generic [ref=e1009]: 762K views
+                  - generic [ref=e1010]: •9 years ago
+              - generic [ref=e1011]:
+                - link "Go to channel Eminence Speaker" [ref=e1012]:
+                  - /url: /@eminencespeaker
+                - link "Eminence Speaker" [ref=e1017]:
+                  - /url: /@eminencespeaker
+              - generic [ref=e1018]:
+                - generic [ref=e1019]: Fine Young Thing, performed by the Josh Smith Band with Matt Schofield, Tomo Fujita and Eric Gales. Eminence Speaker ...
+                - tooltip "tooltip"
+          - generic [ref=e1021]:
+            - link [ref=e1023] [cursor=pointer]:
+              - /url: /watch?v=erZUB9s_ANA&list=RDerZUB9s_ANA&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e1025] [cursor=pointer]:
+              - generic [ref=e1026]:
+                - heading "Josh Smith and Matt Schofield - Crosscut Saw 12 minutes, 7 seconds" [level=3] [ref=e1028]:
+                  - link "Josh Smith and Matt Schofield - Crosscut Saw 12 minutes, 7 seconds" [ref=e1029]:
+                    - /url: /watch?v=erZUB9s_ANA&list=RDerZUB9s_ANA&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Josh Smith and Matt Schofield - Crosscut Saw
+                - generic [ref=e1032]:
+                  - generic [ref=e1033]: 178K views
+                  - generic [ref=e1034]: •11 years ago
+              - generic [ref=e1035]:
+                - link "Go to channel Josh Smith (Guitarzan)" [ref=e1036]:
+                  - /url: /@JoshSmithGuitar
+                - link "Josh Smith (Guitarzan)" [ref=e1041]:
+                  - /url: /@JoshSmithGuitar
+              - generic [ref=e1042]:
+                - generic [ref=e1043]: Just some fun with Matt, live at the Baked Potato. Joel Taylor - Drums Mike Mennell - Bass.
+                - tooltip "tooltip"
+          - generic [ref=e1045]:
+            - link [ref=e1047] [cursor=pointer]:
+              - /url: /watch?v=s78WCIJD734&list=RDs78WCIJD734&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e1049] [cursor=pointer]:
+              - generic [ref=e1050]:
+                - heading "Surprising guitar duel!!~Joe Bonamassa, Tommy Emmanuel & Josh Smith 9 minutes, 37 seconds" [level=3] [ref=e1052]:
+                  - link "Surprising guitar duel!!~Joe Bonamassa, Tommy Emmanuel & Josh Smith 9 minutes, 37 seconds" [ref=e1053]:
+                    - /url: /watch?v=s78WCIJD734&list=RDs78WCIJD734&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Surprising guitar duel!!~Joe Bonamassa, Tommy Emmanuel & Josh Smith
+                - generic [ref=e1056]:
+                  - generic [ref=e1057]: 7.6M views
+                  - generic [ref=e1058]: •6 years ago
+              - generic [ref=e1059]:
+                - link "Go to channel missmoke007" [ref=e1060]:
+                  - /url: /@missmoke007promotesgreatmusic
+                - link "missmoke007" [ref=e1065]:
+                  - /url: /@missmoke007promotesgreatmusic
+              - generic [ref=e1066]:
+                - generic [ref=e1067]: Filmed by Linda Moke~~Breaking Up Someone's Home Joe Bonamassa - Guitar and Vocals, Keyboards -Reese Wynans , Bass ...
+                - tooltip "tooltip"
+          - generic [ref=e1069]:
+            - link [ref=e1071] [cursor=pointer]:
+              - /url: /watch?v=UsdSSTJ-h-8&list=RDUsdSSTJ-h-8&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e1073] [cursor=pointer]:
+              - generic [ref=e1074]:
+                - heading "Jack Pearson, Josh Smith & Kirk Fletcher - Everyday I Have The Blues - 2/7/17 KTBA Cruise 14 minutes, 33 seconds" [level=3] [ref=e1076]:
+                  - link "Jack Pearson, Josh Smith & Kirk Fletcher - Everyday I Have The Blues - 2/7/17 KTBA Cruise 14 minutes, 33 seconds" [ref=e1077]:
+                    - /url: /watch?v=UsdSSTJ-h-8&list=RDUsdSSTJ-h-8&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Jack Pearson, Josh Smith & Kirk Fletcher - Everyday I Have The Blues - 2/7/17 KTBA Cruise
+                - generic [ref=e1080]:
+                  - generic [ref=e1081]: 313K views
+                  - generic [ref=e1082]: •9 years ago
+              - generic [ref=e1083]:
+                - link "Go to channel 1AnitrasDance" [ref=e1084]:
+                  - /url: /@1AnitrasDance
+                - link "1AnitrasDance" [ref=e1089]:
+                  - /url: /@1AnitrasDance
+              - generic [ref=e1090]:
+                - generic [ref=e1091]: (Filmed by Natasha in 1080 HD) Jack Pearson performing with Josh Smith & Kirk Fletcher on the Keeping the Blues Alive Cruise ...
+                - tooltip "tooltip"
+          - generic [ref=e1093]:
+            - link [ref=e1095] [cursor=pointer]:
+              - /url: /watch?v=FNeaDx9uMAg&list=RDFNeaDx9uMAg&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+            - generic [ref=e1097] [cursor=pointer]:
+              - generic [ref=e1098]:
+                - heading "Josh Smith - Where's My Baby - 10/21/19 Two Old Hippies - Nashville, TN 10 minutes, 1 second" [level=3] [ref=e1100]:
+                  - link "Josh Smith - Where's My Baby - 10/21/19 Two Old Hippies - Nashville, TN 10 minutes, 1 second" [ref=e1101]:
+                    - /url: /watch?v=FNeaDx9uMAg&list=RDFNeaDx9uMAg&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                    - text: Josh Smith - Where's My Baby - 10/21/19 Two Old Hippies - Nashville, TN
+                - generic [ref=e1104]:
+                  - generic [ref=e1105]: 453K views
+                  - generic [ref=e1106]: •6 years ago
+              - generic [ref=e1107]:
+                - link "Go to channel 1AnitrasDance" [ref=e1108]:
+                  - /url: /@1AnitrasDance
+                - link "1AnitrasDance" [ref=e1113]:
+                  - /url: /@1AnitrasDance
+              - generic [ref=e1114]:
+                - generic [ref=e1115]: (Filmed by Natasha in 1080 HD) Josh Smith - Guitar & Vocals, Calvin Turner - Bass, Marcus Finnie - Drums Filmed & Recorded on ...
+                - tooltip "tooltip"
+          - generic [ref=e1117]:
+            - link [ref=e1119] [cursor=pointer]:
+              - /url: /watch?v=Dk2jmt3qVB8&list=RDDk2jmt3qVB8&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e1121] [cursor=pointer]:
+              - generic [ref=e1122]:
+                - heading "Josh Smith - Penance - 10/21/19 Two Old Hippies - Nashville, TN 9 minutes, 19 seconds" [level=3] [ref=e1124]:
+                  - link "Josh Smith - Penance - 10/21/19 Two Old Hippies - Nashville, TN 9 minutes, 19 seconds" [ref=e1125]:
+                    - /url: /watch?v=Dk2jmt3qVB8&list=RDDk2jmt3qVB8&start_radio=1&pp=ygUrSm9zaCBTbWl0aCBibHVlcyBndWl0YXJpc3QgbGl2ZSBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                    - text: Josh Smith - Penance - 10/21/19 Two Old Hippies - Nashville, TN
+                - generic [ref=e1128]:
+                  - generic [ref=e1129]: 39K views
+                  - generic [ref=e1130]: •6 years ago
+              - generic [ref=e1131]:
+                - link "Go to channel 1AnitrasDance" [ref=e1132]:
+                  - /url: /@1AnitrasDance
+                - link "1AnitrasDance" [ref=e1137]:
+                  - /url: /@1AnitrasDance
+              - generic [ref=e1138]:
+                - generic [ref=e1139]: (Filmed by Natasha in 1080 HD) Josh Smith - Guitar & Vocals, Calvin Turner - Bass, Marcus Finnie - Drums Filmed & Recorded on ...
+                - tooltip "tooltip"
+    - text: •

@@ -1,0 +1,811 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - generic [ref=e13]:
+          - link "YouTube Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e19]:
+              - img
+          - generic [ref=e20]: ES
+        - button "Skip navigation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Skip navigation
+      - button "Search" [ref=e31] [cursor=pointer]:
+        - generic [ref=e34]:
+          - img
+        - tooltip "tooltip"
+      - generic [ref=e36]:
+        - button "Settings" [ref=e41] [cursor=pointer]:
+          - generic [ref=e44]:
+            - img
+        - link "Sign in" [ref=e47] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DJesse%252BThomas%252Bblues%252Bguitar%252BLouisiana%252Bperformance&hl=en&ec=65620
+          - generic [ref=e51]:
+            - img
+          - generic [ref=e52]: Sign in
+  - generic [ref=e56]:
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e60]:
+          - generic [ref=e63]:
+            - tablist [ref=e65]:
+              - tab "All" [selected] [ref=e69] [cursor=pointer]:
+                - generic [ref=e71]: All
+              - tab "Shorts" [ref=e78] [cursor=pointer]:
+                - generic [ref=e80]: Shorts
+              - tab "Videos" [ref=e87] [cursor=pointer]:
+                - generic [ref=e89]: Videos
+              - tab "Unwatched" [ref=e96] [cursor=pointer]:
+                - generic [ref=e98]: Unwatched
+              - tab "Watched" [ref=e105] [cursor=pointer]:
+                - generic [ref=e107]: Watched
+              - tab "Recently uploaded" [ref=e114] [cursor=pointer]:
+                - generic [ref=e116]: Recently uploaded
+              - tab "Live" [ref=e123] [cursor=pointer]:
+                - generic [ref=e125]: Live
+            - button "Next" [ref=e133] [cursor=pointer]:
+              - generic [ref=e137]:
+                - img
+          - link "About these results" [ref=e144] [cursor=pointer]:
+            - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+            - generic [ref=e145]: About these results
+            - generic [ref=e149]:
+              - img
+          - generic [ref=e154]:
+            - button "Search filters" [ref=e156] [cursor=pointer]:
+              - generic [ref=e157]: Filters
+              - generic [ref=e161]:
+                - img
+            - tooltip "tooltip"
+        - generic [ref=e170]:
+          - generic [ref=e172]:
+            - link [ref=e174] [cursor=pointer]:
+              - /url: /watch?v=j_N07gP5RSU&list=RDj_N07gP5RSU&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+              - img [ref=e176]
+              - img [ref=e179]:
+                - generic [ref=e182]:
+                  - img
+                - generic [ref=e183]: 4:32
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e184] [cursor=pointer]:
+              - generic [ref=e185]:
+                - generic [ref=e186]:
+                  - heading "Jesse Thomas with The Velvet Swivel Rockers 4 minutes, 32 seconds" [level=3] [ref=e187]:
+                    - link "Jesse Thomas with The Velvet Swivel Rockers 4 minutes, 32 seconds" [ref=e188]:
+                      - /url: /watch?v=j_N07gP5RSU&list=RDj_N07gP5RSU&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+                      - text: Jesse Thomas with The Velvet Swivel Rockers
+                  - button "Action menu" [ref=e192]:
+                    - generic [ref=e195]:
+                      - img
+                - generic [ref=e198]:
+                  - generic [ref=e199]: 788 views
+                  - generic [ref=e200]: •19 years ago
+              - generic [ref=e201]:
+                - link "Go to channel Louisiana Haywire" [ref=e202]:
+                  - /url: /@louisianahaywire
+                - link "Louisiana Haywire" [ref=e208]:
+                  - /url: /@louisianahaywire
+              - generic [ref=e209]:
+                - generic [ref=e210]: Rare performance footage (circa mid 80s) of Jesse Thomas performing with The Velvet Swivel Rockers (Dan Garner, Mike Jordan, ...
+                - tooltip "tooltip"
+          - generic [ref=e212]:
+            - link [ref=e214] [cursor=pointer]:
+              - /url: /watch?v=gaUNSilIicQ&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2U%3D
+              - img [ref=e216]
+              - img [ref=e219]:
+                - generic [ref=e220]: 16:39
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e221] [cursor=pointer]:
+              - generic [ref=e222]:
+                - generic [ref=e223]:
+                  - heading "Jesse Thomas, Blues Wizard from Louisiana, Guitar Lesson 16 minutes" [level=3] [ref=e224]:
+                    - link "Jesse Thomas, Blues Wizard from Louisiana, Guitar Lesson 16 minutes" [ref=e225]:
+                      - /url: /watch?v=gaUNSilIicQ&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2U%3D
+                      - text: Jesse Thomas, Blues Wizard from Louisiana, Guitar Lesson
+                  - button "Action menu" [ref=e229]:
+                    - generic [ref=e232]:
+                      - img
+                - generic [ref=e235]:
+                  - generic [ref=e236]: 913 views
+                  - generic [ref=e237]: •3 years ago
+              - generic [ref=e238]:
+                - link "Go to channel Johnny Burgin" [ref=e239]:
+                  - /url: /channel/UCEBHvKSv_hMbkfXjyWPlTgQ
+                - generic [ref=e241]:
+                  - link "Johnny Burgin" [ref=e245]:
+                    - /url: /channel/UCEBHvKSv_hMbkfXjyWPlTgQ
+                  - img "Official Artist Channel" [ref=e248]:
+                    - generic [ref=e251]:
+                      - img
+              - generic [ref=e252]:
+                - generic [ref=e253]: This week I'm looking at a fascinating, obscure artist, Jesse Thomas (1911-1995). His recording career went from the 20s to the ...
+                - tooltip "tooltip"
+              - img "4K" [ref=e256]:
+                - generic [ref=e257]: 4K
+          - generic [ref=e259]:
+            - link [ref=e261] [cursor=pointer]:
+              - /url: /watch?v=FDLPm9teu7g&list=RDFDLPm9teu7g&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+              - img [ref=e263]
+              - img [ref=e266]:
+                - generic [ref=e269]:
+                  - img
+                - generic [ref=e270]: 2:53
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e271] [cursor=pointer]:
+              - generic [ref=e272]:
+                - generic [ref=e273]:
+                  - 'heading "Jesse Thomas : Texas Blues (1949) 2 minutes, 53 seconds" [level=3] [ref=e274]':
+                    - 'link "Jesse Thomas : Texas Blues (1949) 2 minutes, 53 seconds" [ref=e275]':
+                      - /url: /watch?v=FDLPm9teu7g&list=RDFDLPm9teu7g&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: "Jesse Thomas : Texas Blues (1949)"
+                  - button "Action menu" [ref=e279]:
+                    - generic [ref=e282]:
+                      - img
+                - generic [ref=e285]:
+                  - generic [ref=e286]: 627 views
+                  - generic [ref=e287]: •5 years ago
+              - generic [ref=e288]:
+                - link "Go to channel Stephane Vitse" [ref=e289]:
+                  - /url: /@stephanevitse2581
+                - link "Stephane Vitse" [ref=e295]:
+                  - /url: /@stephanevitse2581
+              - generic [ref=e296]:
+                - generic [ref=e297]: Jesse Thomas was at the top of his art in 1949, when he recorded four down home Texas blues alone with his guitar for Modern.
+                - tooltip "tooltip"
+          - generic [ref=e299]:
+            - link [ref=e301] [cursor=pointer]:
+              - /url: /watch?v=LPra4omJtpw&list=RDLPra4omJtpw&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+              - img [ref=e303]
+              - img [ref=e306]:
+                - generic [ref=e309]:
+                  - img
+                - generic [ref=e310]: 2:37
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e311] [cursor=pointer]:
+              - generic [ref=e312]:
+                - generic [ref=e313]:
+                  - heading "Jesse (\"Babyface\") Thomas \"Blue Goose Blues\" V-38555 (1929) blues Shreveport, Louisiana = \"two bits\" 2 minutes, 37 seconds" [level=3] [ref=e314]:
+                    - link "Jesse (\"Babyface\") Thomas \"Blue Goose Blues\" V-38555 (1929) blues Shreveport, Louisiana = \"two bits\" 2 minutes, 37 seconds" [ref=e315]:
+                      - /url: /watch?v=LPra4omJtpw&list=RDLPra4omJtpw&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: Jesse ("Babyface") Thomas "Blue Goose Blues" V-38555 (1929) blues Shreveport, Louisiana = "two bits"
+                  - button "Action menu" [ref=e319]:
+                    - generic [ref=e322]:
+                      - img
+                - generic [ref=e325]:
+                  - generic [ref=e326]: 371 views
+                  - generic [ref=e327]: •6 years ago
+              - generic [ref=e328]:
+                - link "Go to channel Tim Gracyk" [ref=e329]:
+                  - /url: /@timgracyk
+                - link "Tim Gracyk" [ref=e335]:
+                  - /url: /@timgracyk
+              - generic [ref=e336]:
+                - generic [ref=e337]: Jesse ("Babyface") Thomas "Blue Goose Blues" on V-38555 August 10, 1929 "Blue Goose" is a section--or neighborhood--of ...
+                - tooltip "tooltip"
+          - generic [ref=e339]:
+            - link [ref=e341] [cursor=pointer]:
+              - /url: /watch?v=R8vdnANeJy0&list=RDR8vdnANeJy0&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+              - img [ref=e343]
+              - img [ref=e346]:
+                - generic [ref=e349]:
+                  - img
+                - generic [ref=e350]: 3:16
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e351] [cursor=pointer]:
+              - generic [ref=e352]:
+                - generic [ref=e353]:
+                  - heading "Jesse Thomas - It's You I'm Thinking 3 minutes, 16 seconds" [level=3] [ref=e354]:
+                    - link "Jesse Thomas - It's You I'm Thinking 3 minutes, 16 seconds" [ref=e355]:
+                      - /url: /watch?v=R8vdnANeJy0&list=RDR8vdnANeJy0&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: Jesse Thomas - It's You I'm Thinking
+                  - button "Action menu" [ref=e359]:
+                    - generic [ref=e362]:
+                      - img
+                - generic [ref=e365]:
+                  - generic [ref=e366]: 1K views
+                  - generic [ref=e367]: •12 years ago
+              - generic [ref=e368]:
+                - link "Go to channel Document Records" [ref=e369]:
+                  - /url: /@documentrecords
+                - link "Document Records" [ref=e375]:
+                  - /url: /@documentrecords
+              - generic [ref=e376]:
+                - generic [ref=e377]: "Jesse Thomas - 'It's You I'm Thinking Of' From the CD: 'Another Friend Like Me' Document Records DOCD-32-3019 In 1990 ..."
+                - tooltip "tooltip"
+          - generic [ref=e379]:
+            - link [ref=e381] [cursor=pointer]:
+              - /url: /watch?v=v93Qlv5p6Vo&list=RDv93Qlv5p6Vo&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+            - generic [ref=e383] [cursor=pointer]:
+              - generic [ref=e384]:
+                - generic [ref=e385]:
+                  - heading "Jesse Thomas - Blue Goose Blues 2 minutes, 38 seconds" [level=3] [ref=e386]:
+                    - link "Jesse Thomas - Blue Goose Blues 2 minutes, 38 seconds" [ref=e387]:
+                      - /url: /watch?v=v93Qlv5p6Vo&list=RDv93Qlv5p6Vo&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: Jesse Thomas - Blue Goose Blues
+                  - button "Action menu" [ref=e391]:
+                    - generic [ref=e394]:
+                      - img
+                - generic [ref=e397]:
+                  - generic [ref=e398]: 5K views
+                  - generic [ref=e399]: •14 years ago
+              - generic [ref=e400]:
+                - link "Go to channel Good Time Music" [ref=e401]:
+                  - /url: /@GoodTimeMusic
+                - link "Good Time Music" [ref=e407]:
+                  - /url: /@GoodTimeMusic
+          - generic [ref=e409]:
+            - link [ref=e411] [cursor=pointer]:
+              - /url: /watch?v=zagJIRSpYdA&list=RDzagJIRSpYdA&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+            - generic [ref=e413] [cursor=pointer]:
+              - generic [ref=e414]:
+                - generic [ref=e415]:
+                  - heading "Jesse \"Babyface\" Thomas-Blue Goose Blues 2 minutes, 37 seconds" [level=3] [ref=e416]:
+                    - link "Jesse \"Babyface\" Thomas-Blue Goose Blues 2 minutes, 37 seconds" [ref=e417]:
+                      - /url: /watch?v=zagJIRSpYdA&list=RDzagJIRSpYdA&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: Jesse "Babyface" Thomas-Blue Goose Blues
+                  - button "Action menu" [ref=e421]:
+                    - generic [ref=e424]:
+                      - img
+                - generic [ref=e427]:
+                  - generic [ref=e428]: 856 views
+                  - generic [ref=e429]: •5 years ago
+              - generic [ref=e430]:
+                - link "Go to channel Traveler Into The Blue" [ref=e431]:
+                  - /url: /@TravelerIntoTheBlue
+                - link "Traveler Into The Blue" [ref=e436]:
+                  - /url: /@TravelerIntoTheBlue
+              - generic [ref=e437]:
+                - generic [ref=e438]: Jesse "Babyface" Thomas-Blue Goose Blues.
+                - tooltip "tooltip"
+          - generic [ref=e440]:
+            - link [ref=e442] [cursor=pointer]:
+              - /url: /watch?v=c5zd-WvcHPw&list=RDc5zd-WvcHPw&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+            - generic [ref=e444] [cursor=pointer]:
+              - generic [ref=e445]:
+                - generic [ref=e446]:
+                  - heading "JESSE THOMAS Band 22 minutes" [level=3] [ref=e447]:
+                    - link "JESSE THOMAS Band 22 minutes" [ref=e448]:
+                      - /url: /watch?v=c5zd-WvcHPw&list=RDc5zd-WvcHPw&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: JESSE THOMAS Band
+                  - button "Action menu" [ref=e452]:
+                    - generic [ref=e455]:
+                      - img
+                - generic [ref=e458]:
+                  - generic [ref=e459]: 807 views
+                  - generic [ref=e460]: •3 years ago
+              - generic [ref=e461]:
+                - link "Go to channel North Bay Ontario Music" [ref=e462]:
+                  - /url: /@Northbayontariomusic
+                - link "North Bay Ontario Music" [ref=e467]:
+                  - /url: /@Northbayontariomusic
+              - generic [ref=e468]:
+                - generic [ref=e469]: Jesse Thomas Guitar/Vocals , Jake Thomas Guitar , Mike Foisy Drums , Ryan Rogers Bass Pride and Joy Stevie Ray Vaughn ...
+                - tooltip "tooltip"
+              - img "4K" [ref=e472]:
+                - generic [ref=e473]: 4K
+          - generic [ref=e475]:
+            - link [ref=e477] [cursor=pointer]:
+              - /url: /watch?v=sPyKBfauwvc&list=RDsPyKBfauwvc&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+            - generic [ref=e479] [cursor=pointer]:
+              - generic [ref=e480]:
+                - generic [ref=e481]:
+                  - heading "\"Call Me\" by Jesse Thomas 3 minutes, 42 seconds" [level=3] [ref=e482]:
+                    - link "\"Call Me\" by Jesse Thomas 3 minutes, 42 seconds" [ref=e483]:
+                      - /url: /watch?v=sPyKBfauwvc&list=RDsPyKBfauwvc&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: "\"Call Me\" by Jesse Thomas"
+                  - button "Action menu" [ref=e487]:
+                    - generic [ref=e490]:
+                      - img
+                - generic [ref=e493]:
+                  - generic [ref=e494]: 1.5K views
+                  - generic [ref=e495]: •19 years ago
+              - generic [ref=e496]:
+                - link "Go to channel Louisiana Haywire" [ref=e497]:
+                  - /url: /@louisianahaywire
+                - link "Louisiana Haywire" [ref=e502]:
+                  - /url: /@louisianahaywire
+              - generic [ref=e503]:
+                - generic [ref=e504]: Legendary pre-war bluesman, Jesse Thomas performs in this rare footage with "Louisiana" Dan Garner. This is believed to be his ...
+                - tooltip "tooltip"
+          - generic [ref=e506]:
+            - link [ref=e508] [cursor=pointer]:
+              - /url: /watch?v=0XVyoezWsAY&list=RD0XVyoezWsAY&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+            - generic [ref=e510] [cursor=pointer]:
+              - generic [ref=e511]:
+                - generic [ref=e512]:
+                  - heading "Jesse (\"Babyface\") Thomas \"Blue Goose Blues\" V-38555 (1929) blues Shreveport, Louisiana = \"two bits\" 2 minutes, 42 seconds" [level=3] [ref=e513]:
+                    - link "Jesse (\"Babyface\") Thomas \"Blue Goose Blues\" V-38555 (1929) blues Shreveport, Louisiana = \"two bits\" 2 minutes, 42 seconds" [ref=e514]:
+                      - /url: /watch?v=0XVyoezWsAY&list=RD0XVyoezWsAY&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: Jesse ("Babyface") Thomas "Blue Goose Blues" V-38555 (1929) blues Shreveport, Louisiana = "two bits"
+                  - button "Action menu" [ref=e518]:
+                    - generic [ref=e521]:
+                      - img
+                - generic [ref=e524]:
+                  - generic [ref=e525]: 29 views
+                  - generic [ref=e526]: •3 weeks ago
+              - generic [ref=e527]:
+                - link "Go to channel Tim Gracyk" [ref=e528]:
+                  - /url: /@timgracyk
+                - link "Tim Gracyk" [ref=e533]:
+                  - /url: /@timgracyk
+              - generic [ref=e534]:
+                - generic [ref=e535]: Jesse ("Babyface") Thomas "Blue Goose Blues" on V-38555 August 10, 1929 "Blue Goose" is a section--or neighborhood--of ...
+                - tooltip "tooltip"
+          - generic [ref=e537]:
+            - link [ref=e539] [cursor=pointer]:
+              - /url: /watch?v=wz9xqpOX-iQ&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2XSBwkJ2QoBhyohjO8%3D
+            - generic [ref=e541] [cursor=pointer]:
+              - generic [ref=e542]:
+                - generic [ref=e543]:
+                  - heading "Talking Jesse Thomas Blues 3 minutes, 3 seconds" [level=3] [ref=e544]:
+                    - link "Talking Jesse Thomas Blues 3 minutes, 3 seconds" [ref=e545]:
+                      - /url: /watch?v=wz9xqpOX-iQ&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2XSBwkJ2QoBhyohjO8%3D
+                      - text: Talking Jesse Thomas Blues
+                  - button "Action menu" [ref=e549]:
+                    - generic [ref=e552]:
+                      - img
+                - generic [ref=e555]:
+                  - generic [ref=e556]: 78 views
+                  - generic [ref=e557]: •8 days ago
+              - generic [ref=e558]:
+                - link "Go to channel Dan Garner" [ref=e559]:
+                  - /url: /@dangarner8270
+                - link "Dan Garner" [ref=e564]:
+                  - /url: /@dangarner8270
+          - generic [ref=e566] [cursor=pointer]:
+            - link [ref=e567]:
+              - /url: /watch?v=uqsu8uuV9kY&list=PLML3koAWKdIf2fQ2WAH4hWHpiUQYq_3qA
+              - generic [ref=e577]:
+                - generic [ref=e580]:
+                  - img
+                - generic [ref=e581]: 12 videos
+            - generic [ref=e584]:
+              - heading "Jesse Thomas" [level=3] [ref=e585]:
+                - link "Jesse Thomas" [ref=e586]:
+                  - /url: /watch?v=uqsu8uuV9kY&list=PLML3koAWKdIf2fQ2WAH4hWHpiUQYq_3qA
+              - generic [ref=e588]:
+                - generic [ref=e589]:
+                  - link "vadtab" [ref=e592]:
+                    - /url: /@vladivad
+                  - generic [ref=e593]: •
+                  - link "Playlist" [ref=e596]:
+                    - /url: /@vladivad
+                - link "Jesse Thomas - Another Friend Like Me · 2:27" [ref=e600]:
+                  - /url: /watch?v=uqsu8uuV9kY&list=PLML3koAWKdIf2fQ2WAH4hWHpiUQYq_3qA
+                - link "Jesse Thomas - Long Time 78 rpm! · 2:42" [ref=e603]:
+                  - /url: /watch?v=V-T9B-QfrLA&list=PLML3koAWKdIf2fQ2WAH4hWHpiUQYq_3qA
+                - link "View full playlist" [ref=e608]:
+                  - /url: /playlist?list=PLML3koAWKdIf2fQ2WAH4hWHpiUQYq_3qA
+          - generic [ref=e610]:
+            - heading "People also watched" [level=2] [ref=e613]:
+              - generic [ref=e615]: People also watched
+            - generic [ref=e617]:
+              - generic [ref=e618]:
+                - generic [ref=e620]:
+                  - link [ref=e622] [cursor=pointer]:
+                    - /url: /watch?v=qoKNz3y7l0Q&list=RDqoKNz3y7l0Q&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                  - generic [ref=e624] [cursor=pointer]:
+                    - generic [ref=e625]:
+                      - generic [ref=e626]:
+                        - heading "Jessie Lee & The Alchemists \"Born Under A Bad Sign\" Le Buis Blues Festival 2017 6 minutes, 44 seconds" [level=3] [ref=e627]:
+                          - link "Jessie Lee & The Alchemists \"Born Under A Bad Sign\" Le Buis Blues Festival 2017 6 minutes, 44 seconds" [ref=e628]:
+                            - /url: /watch?v=qoKNz3y7l0Q&list=RDqoKNz3y7l0Q&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                            - text: Jessie Lee & The Alchemists "Born Under A Bad Sign" Le Buis Blues Festival 2017
+                        - button "Action menu" [ref=e632]:
+                          - generic [ref=e635]:
+                            - img
+                      - generic [ref=e638]:
+                        - generic [ref=e639]: 67K views
+                        - generic [ref=e640]: •8 years ago
+                    - generic [ref=e641]:
+                      - link "Go to channel LeBuisBluesFestival" [ref=e642]:
+                        - /url: /@LeBuisBluesFestival
+                      - link "LeBuisBluesFestival" [ref=e647]:
+                        - /url: /@LeBuisBluesFestival
+                    - generic [ref=e648]:
+                      - generic [ref=e649]: "Jessie Lee & The Alchemists : Born Under A Bad Sign ( Booker T. Jones : William Bell ) Jessie Lee : Vocal & Guitar Alexis Didier ..."
+                      - tooltip "tooltip"
+                    - img "4K" [ref=e652]:
+                      - generic [ref=e653]: 4K
+                - generic [ref=e655]:
+                  - link [ref=e657] [cursor=pointer]:
+                    - /url: /watch?v=P9fsJG66gAI&list=RDP9fsJG66gAI&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                  - generic [ref=e659] [cursor=pointer]:
+                    - generic [ref=e660]:
+                      - generic [ref=e661]:
+                        - heading "The Jesse Williams Band LIVE - \"Aim To Please\" | Atlanta Dogwood Festival 2025 10 minutes, 18 seconds" [level=3] [ref=e662]:
+                          - link "The Jesse Williams Band LIVE - \"Aim To Please\" | Atlanta Dogwood Festival 2025 10 minutes, 18 seconds" [ref=e663]:
+                            - /url: /watch?v=P9fsJG66gAI&list=RDP9fsJG66gAI&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                            - text: The Jesse Williams Band LIVE - "Aim To Please" | Atlanta Dogwood Festival 2025
+                        - button "Action menu" [ref=e667]:
+                          - generic [ref=e670]:
+                            - img
+                      - generic [ref=e673]:
+                        - generic [ref=e674]: 98 views
+                        - generic [ref=e675]: •3 weeks ago
+                    - generic [ref=e676]:
+                      - link "Go to channel The Jesse Williams Band" [ref=e677]:
+                        - /url: /channel/UCYK6zoMd4n2U0zWpWjX6KGg
+                      - generic [ref=e678]:
+                        - link "The Jesse Williams Band" [ref=e682]:
+                          - /url: /channel/UCYK6zoMd4n2U0zWpWjX6KGg
+                        - img "Official Artist Channel" [ref=e685]:
+                          - generic [ref=e688]:
+                            - img
+                    - generic [ref=e689]:
+                      - generic [ref=e690]: Homegrown original, "Aim To Please" kicked off our performance at the Atlanta Dogwood Festival 2025. With me on stage is Evan ...
+                      - tooltip "tooltip"
+                    - img "4K" [ref=e693]:
+                      - generic [ref=e694]: 4K
+                - generic [ref=e696]:
+                  - link [ref=e698] [cursor=pointer]:
+                    - /url: /watch?v=faINBVBHar8&list=RDfaINBVBHar8&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                  - generic [ref=e700] [cursor=pointer]:
+                    - generic [ref=e701]:
+                      - generic [ref=e702]:
+                        - heading "Masters of the Blues - Elizabeth Cotten & Jesse Fuller 22 minutes" [level=3] [ref=e703]:
+                          - link "Masters of the Blues - Elizabeth Cotten & Jesse Fuller 22 minutes" [ref=e704]:
+                            - /url: /watch?v=faINBVBHar8&list=RDfaINBVBHar8&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                            - text: Masters of the Blues - Elizabeth Cotten & Jesse Fuller
+                        - button "Action menu" [ref=e708]:
+                          - generic [ref=e711]:
+                            - img
+                      - generic [ref=e714]:
+                        - generic [ref=e715]: 67K views
+                        - generic [ref=e716]: •12 years ago
+                    - generic [ref=e717]:
+                      - link "Go to channel Nastya Jiva" [ref=e718]:
+                        - /url: /@NastyaLegostaeva
+                      - link "Nastya Jiva" [ref=e723]:
+                        - /url: /@NastyaLegostaeva
+                    - generic [ref=e724]:
+                      - generic [ref=e725]: "Tracklist: Elizabeth Cotten 1. Freight Train 2. Sweet Bye and Bye 3. Vastopol 4. George Buck 5. Washington Blues 6. I'm Going ..."
+                      - tooltip "tooltip"
+                - generic [ref=e727]:
+                  - link [ref=e729] [cursor=pointer]:
+                    - /url: /watch?v=sTCv4aWHnqI&list=RDsTCv4aWHnqI&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                  - generic [ref=e731] [cursor=pointer]:
+                    - generic [ref=e732]:
+                      - generic [ref=e733]:
+                        - heading "Jessie Lee & The Alchemists - \"I'm Gonna Play The Blues\" (Official Music Video) 5 minutes, 59 seconds" [level=3] [ref=e734]:
+                          - link "Jessie Lee & The Alchemists - \"I'm Gonna Play The Blues\" (Official Music Video) 5 minutes, 59 seconds" [ref=e735]:
+                            - /url: /watch?v=sTCv4aWHnqI&list=RDsTCv4aWHnqI&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                            - text: Jessie Lee & The Alchemists - "I'm Gonna Play The Blues" (Official Music Video)
+                        - button "Action menu" [ref=e739]:
+                          - generic [ref=e742]:
+                            - img
+                      - generic [ref=e745]:
+                        - generic [ref=e746]: 17K views
+                        - generic [ref=e747]: •10 months ago
+                    - generic [ref=e748]:
+                      - link "Go to channel Jessie Lee & The Alchemists" [ref=e749]:
+                        - /url: /@JessieLeeTheAlchemists
+                      - link "Jessie Lee & The Alchemists" [ref=e754]:
+                        - /url: /@JessieLeeTheAlchemists
+                    - generic [ref=e755]:
+                      - generic [ref=e756]: Official music video for "I'm Gonna Play The Blues" from Jessie Lee & The Alchemists new album "Legacy".
+                      - tooltip "tooltip"
+                    - img "4K" [ref=e759]:
+                      - generic [ref=e760]: 4K
+              - generic "+6 more" [ref=e762] [cursor=pointer]
+          - generic [ref=e764]:
+            - link [ref=e766] [cursor=pointer]:
+              - /url: /watch?v=fRVeigiDJas&list=RDfRVeigiDJas&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+            - generic [ref=e768] [cursor=pointer]:
+              - generic [ref=e769]:
+                - generic [ref=e770]:
+                  - heading "Jesse Thomas - Same Old Stuff (1948) 2 minutes, 56 seconds" [level=3] [ref=e771]:
+                    - link "Jesse Thomas - Same Old Stuff (1948) 2 minutes, 56 seconds" [ref=e772]:
+                      - /url: /watch?v=fRVeigiDJas&list=RDfRVeigiDJas&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+                      - text: Jesse Thomas - Same Old Stuff (1948)
+                  - button "Action menu" [ref=e776]:
+                    - generic [ref=e779]:
+                      - img
+                - generic [ref=e782]:
+                  - generic [ref=e783]: 2.8K views
+                  - generic [ref=e784]: •13 years ago
+              - generic [ref=e785]:
+                - link "Go to channel lupine22" [ref=e786]:
+                  - /url: /@lupine22
+                - link "lupine22" [ref=e791]:
+                  - /url: /@lupine22
+              - generic [ref=e792]:
+                - generic [ref=e793]: Jesse Thomas, brother of bluesman Willard 'Rambling' Thomas, from Logansport, Louisiana. Jesse made four recordings in 1929 ...
+                - tooltip "tooltip"
+          - generic [ref=e795]:
+            - link [ref=e797] [cursor=pointer]:
+              - /url: /watch?v=Fca7qzB4clc&list=RDFca7qzB4clc&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+            - generic [ref=e799] [cursor=pointer]:
+              - generic [ref=e800]:
+                - generic [ref=e801]:
+                  - 'heading "Jesse Thomas And The Blues Troubadour { D. Double Due Love You } 1948, 2 minutes, 41 seconds" [level=3] [ref=e802]':
+                    - 'link "Jesse Thomas And The Blues Troubadour { D. Double Due Love You } 1948, 2 minutes, 41 seconds" [ref=e803]':
+                      - /url: /watch?v=Fca7qzB4clc&list=RDFca7qzB4clc&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: "Jesse Thomas And The Blues Troubadour { D. Double Due Love You } 1948,"
+                  - button "Action menu" [ref=e807]:
+                    - generic [ref=e810]:
+                      - img
+                - generic [ref=e813]:
+                  - generic [ref=e814]: 196 views
+                  - generic [ref=e815]: •1 year ago
+              - generic [ref=e816]:
+                - link "Go to channel ドクた、" [ref=e817]:
+                  - /url: /@user-doc-ta
+                - link "ドクた、" [ref=e822]:
+                  - /url: /@user-doc-ta
+              - generic [ref=e823]:
+                - text: "Source: Various – Roy Milton's Miltone Records Story Label: Acrobat – ADDCD3016 Format: 2 x CD, Compilation Country: UK ..."
+                - tooltip "tooltip"
+          - generic [ref=e825]:
+            - link [ref=e827] [cursor=pointer]:
+              - /url: /watch?v=ulon_aZKa-M&list=RDulon_aZKa-M&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+            - generic [ref=e829] [cursor=pointer]:
+              - generic [ref=e830]:
+                - generic [ref=e831]:
+                  - heading "Jesse Thomas Tomorrow I May Be Gone (Alt. Take) (1949) 3 minutes, 40 seconds" [level=3] [ref=e832]:
+                    - link "Jesse Thomas Tomorrow I May Be Gone (Alt. Take) (1949) 3 minutes, 40 seconds" [ref=e833]:
+                      - /url: /watch?v=ulon_aZKa-M&list=RDulon_aZKa-M&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: Jesse Thomas Tomorrow I May Be Gone (Alt. Take) (1949)
+                  - button "Action menu" [ref=e837]:
+                    - generic [ref=e840]:
+                      - img
+                - generic [ref=e843]:
+                  - generic [ref=e844]: 955 views
+                  - generic [ref=e845]: •11 years ago
+              - generic [ref=e846]:
+                - link "Go to channel randomandrare" [ref=e847]:
+                  - /url: /@randomandrare
+                - link "randomandrare" [ref=e852]:
+                  - /url: /@randomandrare
+              - generic [ref=e853]:
+                - generic [ref=e854]: I do not own the copyright to this recording. This video is for historical and educational purposes only. Jesse Thomas:Vocals ...
+                - tooltip "tooltip"
+          - generic [ref=e856]:
+            - link [ref=e858] [cursor=pointer]:
+              - /url: /watch?v=vKcwt3flOrQ&list=RDvKcwt3flOrQ&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+            - generic [ref=e860] [cursor=pointer]:
+              - generic [ref=e861]:
+                - generic [ref=e862]:
+                  - heading "Blue Goose Blues 3 minutes, 16 seconds" [level=3] [ref=e863]:
+                    - link "Blue Goose Blues 3 minutes, 16 seconds" [ref=e864]:
+                      - /url: /watch?v=vKcwt3flOrQ&list=RDvKcwt3flOrQ&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+                      - text: Blue Goose Blues
+                  - button "Action menu" [ref=e868]:
+                    - generic [ref=e871]:
+                      - img
+                - generic [ref=e875]: 292 views
+              - generic [ref=e876]:
+                - link "Go to channel Jesse Thomas - Topic" [ref=e877]:
+                  - /url: /channel/UCqwfd7Vu9iLnbd4aGmpdzwg
+                - link "Jesse Thomas - Topic" [ref=e882]:
+                  - /url: /channel/UCqwfd7Vu9iLnbd4aGmpdzwg
+              - generic [ref=e883]:
+                - generic [ref=e884]: "Provided to YouTube by Believe A. Blue Goose Blues · Jesse Thomas Blue Goose Blues ℗ Iris Music Released on: 1996-06-06 ..."
+                - tooltip "tooltip"
+          - generic [ref=e886]:
+            - link [ref=e888] [cursor=pointer]:
+              - /url: /watch?v=KtvhnjXnBHM&list=RDKtvhnjXnBHM&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+            - generic [ref=e890] [cursor=pointer]:
+              - generic [ref=e891]:
+                - generic [ref=e892]:
+                  - heading "Jesse Thomas - \"Say Hello\" Live At Infrasonic Studios 2 minutes, 52 seconds" [level=3] [ref=e893]:
+                    - link "Jesse Thomas - \"Say Hello\" Live At Infrasonic Studios 2 minutes, 52 seconds" [ref=e894]:
+                      - /url: /watch?v=KtvhnjXnBHM&list=RDKtvhnjXnBHM&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: Jesse Thomas - "Say Hello" Live At Infrasonic Studios
+                  - button "Action menu" [ref=e898]:
+                    - generic [ref=e901]:
+                      - img
+                - generic [ref=e904]:
+                  - generic [ref=e905]: 8.9K views
+                  - generic [ref=e906]: •13 years ago
+              - generic [ref=e907]:
+                - link "Go to channel Jesse Thomas" [ref=e908]:
+                  - /url: /channel/UCOVfoKT855oDHye45NpV57Q
+                - generic [ref=e909]:
+                  - link "Jesse Thomas" [ref=e913]:
+                    - /url: /channel/UCOVfoKT855oDHye45NpV57Q
+                  - img "Official Artist Channel" [ref=e916]:
+                    - generic [ref=e919]:
+                      - img
+              - generic [ref=e920]:
+                - text: "like me on Facebook: http://facebook.com/iamjessethomas iTunes: ..."
+                - tooltip "tooltip"
+          - generic [ref=e922]:
+            - link [ref=e924] [cursor=pointer]:
+              - /url: /watch?v=Ajr668iW94I&list=RDAjr668iW94I&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+            - generic [ref=e926] [cursor=pointer]:
+              - generic [ref=e927]:
+                - generic [ref=e928]:
+                  - heading "Jesse Thomas - Gonna Move to California 2 minutes, 26 seconds" [level=3] [ref=e929]:
+                    - link "Jesse Thomas - Gonna Move to California 2 minutes, 26 seconds" [ref=e930]:
+                      - /url: /watch?v=Ajr668iW94I&list=RDAjr668iW94I&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: Jesse Thomas - Gonna Move to California
+                  - button "Action menu" [ref=e934]:
+                    - generic [ref=e937]:
+                      - img
+                - generic [ref=e940]:
+                  - generic [ref=e941]: 135 views
+                  - generic [ref=e942]: •10 years ago
+              - generic [ref=e943]:
+                - link "Go to channel finetunes Blues" [ref=e944]:
+                  - /url: /@finetunesblues4476
+                - link "finetunes Blues" [ref=e949]:
+                  - /url: /@finetunesblues4476
+              - generic [ref=e950]:
+                - generic [ref=e951]: Gonna Move to California by Jesse Thomas from the album The Roots of It All - Acoustic Blues - The Definitive Collection, Vol.
+                - tooltip "tooltip"
+          - generic [ref=e953]:
+            - link [ref=e955] [cursor=pointer]:
+              - /url: /watch?v=A6caq3sA_BA&list=RDA6caq3sA_BA&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+            - generic [ref=e957] [cursor=pointer]:
+              - generic [ref=e958]:
+                - generic [ref=e959]:
+                  - heading "Jesse Thomas - Another fool Like Me 2 minutes, 37 seconds" [level=3] [ref=e960]:
+                    - link "Jesse Thomas - Another fool Like Me 2 minutes, 37 seconds" [ref=e961]:
+                      - /url: /watch?v=A6caq3sA_BA&list=RDA6caq3sA_BA&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: Jesse Thomas - Another fool Like Me
+                  - button "Action menu" [ref=e965]:
+                    - generic [ref=e968]:
+                      - img
+                - generic [ref=e971]:
+                  - generic [ref=e972]: 2.6K views
+                  - generic [ref=e973]: •12 years ago
+              - generic [ref=e974]:
+                - link "Go to channel daddynap" [ref=e975]:
+                  - /url: /@daddynap
+                - link "daddynap" [ref=e980]:
+                  - /url: /@daddynap
+              - generic [ref=e981]:
+                - text: Elko Records 1953 B/W Gonna Move To California.
+                - tooltip "tooltip"
+          - generic [ref=e982]:
+            - generic [ref=e985]:
+              - img [ref=e987]:
+                - generic [ref=e989]:
+                  - img
+              - heading "Shorts" [level=2] [ref=e992]
+            - generic [ref=e993]:
+              - generic [ref=e994]:
+                - generic [ref=e997]:
+                  - link [ref=e998] [cursor=pointer]:
+                    - /url: /shorts/4VSheEaGDkw
+                  - generic [ref=e1002] [cursor=pointer]:
+                    - 'link "@codygoggin #hummingbirdguitarsbyjessethomas" [ref=e1003]':
+                      - /url: /shorts/4VSheEaGDkw
+                    - generic [ref=e1004]: 13 views
+                  - button "More actions" [ref=e1006] [cursor=pointer]:
+                    - generic [ref=e1010]:
+                      - img
+                - generic [ref=e1016]:
+                  - link [ref=e1017] [cursor=pointer]:
+                    - /url: /shorts/FiqDIcGfreM
+                  - generic [ref=e1021] [cursor=pointer]:
+                    - 'link "Jesse Thomas: Beverly (Unplugged) 3/31/15" [ref=e1022]':
+                      - /url: /shorts/FiqDIcGfreM
+                    - generic [ref=e1023]: 45 views
+                  - button "More actions" [ref=e1025] [cursor=pointer]:
+                    - generic [ref=e1029]:
+                      - img
+              - generic [ref=e1033]:
+                - generic [ref=e1036]:
+                  - link [ref=e1037] [cursor=pointer]:
+                    - /url: /shorts/VF3hrK35ILE
+                  - generic [ref=e1041] [cursor=pointer]:
+                    - link "Wish You Were Here - Incubus (cover)" [ref=e1042]:
+                      - /url: /shorts/VF3hrK35ILE
+                    - generic [ref=e1043]: 141 views
+                  - button "More actions" [ref=e1045] [cursor=pointer]:
+                    - generic [ref=e1049]:
+                      - img
+                - generic [ref=e1055]:
+                  - link [ref=e1056] [cursor=pointer]:
+                    - /url: /shorts/rcQlCp4KdFY
+                  - generic [ref=e1060] [cursor=pointer]:
+                    - link "Greyhound Bus Blues" [ref=e1061]:
+                      - /url: /shorts/rcQlCp4KdFY
+                    - generic [ref=e1062]: 1K views
+                  - button "More actions" [ref=e1064] [cursor=pointer]:
+                    - generic [ref=e1068]:
+                      - img
+            - button "Show more" [ref=e1075] [cursor=pointer]:
+              - generic [ref=e1076]: Show more
+              - generic [ref=e1080]:
+                - img
+          - generic [ref=e1085]:
+            - link [ref=e1087] [cursor=pointer]:
+              - /url: /watch?v=JhwKzoRdqG0&list=RDJhwKzoRdqG0&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+            - generic [ref=e1089] [cursor=pointer]:
+              - generic [ref=e1090]:
+                - generic [ref=e1091]:
+                  - heading "Jesse Thomas - I'm in Love Again 1 minute, 56 seconds" [level=3] [ref=e1092]:
+                    - link "Jesse Thomas - I'm in Love Again 1 minute, 56 seconds" [ref=e1093]:
+                      - /url: /watch?v=JhwKzoRdqG0&list=RDJhwKzoRdqG0&start_radio=1&pp=ygUvSmVzc2UgVGhvbWFzIGJsdWVzIGd1aXRhciBMb3Vpc2lhbmEgcGVyZm9ybWFuY2WgBwE%3D
+                      - text: Jesse Thomas - I'm in Love Again
+                  - button "Action menu" [ref=e1097]:
+                    - generic [ref=e1100]:
+                      - img
+                - generic [ref=e1103]:
+                  - generic [ref=e1104]: 65 views
+                  - generic [ref=e1105]: •6 years ago
+              - generic [ref=e1106]:
+                - link "Go to channel Jazz Everyday!" [ref=e1107]:
+                  - /url: /@JazzEveryday
+                - link "Jazz Everyday!" [ref=e1112]:
+                  - /url: /@JazzEveryday
+              - generic [ref=e1113]:
+                - text: "Taken from Easy in the Apple Stream on Spotify: https://open.spotify.com/album/3hxFgpIxJ7hK7KJow2EM3Y Stream on Deezer: ..."
+                - tooltip "tooltip"
+          - generic [ref=e1114]:
+            - generic [ref=e1117]:
+              - img [ref=e1119]:
+                - generic [ref=e1121]:
+                  - img
+              - heading "Shorts" [level=2] [ref=e1124]
+            - generic [ref=e1125]:
+              - generic [ref=e1126]:
+                - generic [ref=e1129]:
+                  - link [ref=e1130] [cursor=pointer]:
+                    - /url: /shorts/jm_YM8w1_HM
+                  - generic [ref=e1134] [cursor=pointer]:
+                    - link "Kolter Dancing 2015" [ref=e1135]:
+                      - /url: /shorts/jm_YM8w1_HM
+                    - generic [ref=e1136]: 37 views
+                  - button "More actions" [ref=e1138] [cursor=pointer]:
+                    - generic [ref=e1142]:
+                      - img
+                - generic [ref=e1148]:
+                  - link [ref=e1149] [cursor=pointer]:
+                    - /url: /shorts/CPUSbg_fKqs
+                  - generic [ref=e1153] [cursor=pointer]:
+                    - link "learning some cool jesse thomas a position licks" [ref=e1154]:
+                      - /url: /shorts/CPUSbg_fKqs
+                    - generic [ref=e1155]: 1.1K views
+                  - button "More actions" [ref=e1157] [cursor=pointer]:
+                    - generic [ref=e1161]:
+                      - img
+              - generic [ref=e1165]:
+                - generic [ref=e1168]:
+                  - link [ref=e1169] [cursor=pointer]:
+                    - /url: /shorts/oa7FU7nNWeg
+                  - generic [ref=e1173] [cursor=pointer]:
+                    - 'link "Happy Valentine''s Day From #hummingbirdguitarsbyjessethomas" [ref=e1174]':
+                      - /url: /shorts/oa7FU7nNWeg
+                    - generic [ref=e1175]: 28 views
+                  - button "More actions" [ref=e1177] [cursor=pointer]:
+                    - generic [ref=e1181]:
+                      - img
+                - generic [ref=e1187]:
+                  - link [ref=e1188] [cursor=pointer]:
+                    - /url: /shorts/tF3zNFSoLw0
+                    - img [ref=e1193]:
+                      - generic [ref=e1194]: New
+                  - generic [ref=e1195] [cursor=pointer]:
+                    - 'link "SRV \"Texas Flood\" | Earth Blues cover #bluescommunity #guitar #srv #texasflood #texas #flood" [ref=e1196]':
+                      - /url: /shorts/tF3zNFSoLw0
+                    - generic [ref=e1197]: 14K views
+                  - button "More actions" [ref=e1199] [cursor=pointer]:
+                    - generic [ref=e1203]:
+                      - img
+            - button "Show more" [ref=e1210] [cursor=pointer]:
+              - generic [ref=e1211]: Show more
+              - generic [ref=e1215]:
+                - img
+    - text: •

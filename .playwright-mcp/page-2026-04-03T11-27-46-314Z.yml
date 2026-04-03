@@ -1,0 +1,688 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+      - generic [ref=e30]:
+        - button "Settings" [ref=e35] [cursor=pointer]
+        - link "Sign in" [ref=e39] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DElvis%252BPresley%252Blive%252Bperformance%252B1968%252Bcomeback&hl=en&ec=65620
+          - generic [ref=e42]: Sign in
+  - main [ref=e47]:
+    - generic [ref=e48]:
+      - generic [ref=e50]:
+        - generic [ref=e53]:
+          - tablist [ref=e55]:
+            - tab "All" [selected] [ref=e59] [cursor=pointer]:
+              - generic [ref=e61]: All
+            - tab "Shorts" [ref=e68] [cursor=pointer]:
+              - generic [ref=e70]: Shorts
+            - tab "Videos" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]: Videos
+            - tab "Unwatched" [ref=e86] [cursor=pointer]:
+              - generic [ref=e88]: Unwatched
+            - tab "Watched" [ref=e95] [cursor=pointer]:
+              - generic [ref=e97]: Watched
+            - tab "Recently uploaded" [ref=e104] [cursor=pointer]:
+              - generic [ref=e106]: Recently uploaded
+            - tab "Live" [ref=e113] [cursor=pointer]:
+              - generic [ref=e115]: Live
+          - button "Next" [ref=e123] [cursor=pointer]
+        - link "About these results" [ref=e132] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e133]: About these results
+        - generic [ref=e140]:
+          - button "Search filters" [ref=e142] [cursor=pointer]:
+            - generic [ref=e143]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e154]:
+        - generic [ref=e156]:
+          - link [ref=e158] [cursor=pointer]:
+            - /url: /watch?v=xqBdTn3_0Rw&list=RDxqBdTn3_0Rw&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+            - img [ref=e160]
+            - img [ref=e163]:
+              - generic [ref=e165]: 1:53
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e166] [cursor=pointer]:
+            - generic [ref=e167]:
+              - heading "Elvis Presley - Jailhouse Rock ('68 Comeback Special) 1 minute, 53 seconds" [level=3] [ref=e169]:
+                - link "Elvis Presley - Jailhouse Rock ('68 Comeback Special) 1 minute, 53 seconds" [ref=e170]:
+                  - /url: /watch?v=xqBdTn3_0Rw&list=RDxqBdTn3_0Rw&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis Presley - Jailhouse Rock ('68 Comeback Special)
+              - generic [ref=e173]:
+                - generic [ref=e174]: 32M views
+                - generic [ref=e175]: •7 years ago
+            - generic [ref=e176]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e177]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e179]:
+                - link "Elvis Presley" [ref=e183]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e186]
+            - generic [ref=e188]:
+              - generic [ref=e189]: "\"Jailhouse Rock\" by Elvis Presley from 68 Comeback Special 50th Anniversary Listen to Elvis Presley: https://Elvis.lnk.to/_listenYD ..."
+              - tooltip "tooltip"
+        - generic [ref=e191]:
+          - link [ref=e193] [cursor=pointer]:
+            - /url: /watch?v=bhlWG6wlEv8&list=RDbhlWG6wlEv8&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+            - img [ref=e195]
+            - img [ref=e198]:
+              - generic [ref=e200]: 52:17
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e201] [cursor=pointer]:
+            - generic [ref=e202]:
+              - 'heading "Elvis Presley - Black Leather Sit-Down Show #1 (''68 Comeback Special - June 27th, 1968) 52 minutes" [level=3] [ref=e204]':
+                - 'link "Elvis Presley - Black Leather Sit-Down Show #1 (''68 Comeback Special - June 27th, 1968) 52 minutes" [ref=e205]':
+                  - /url: /watch?v=bhlWG6wlEv8&list=RDbhlWG6wlEv8&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: "Elvis Presley - Black Leather Sit-Down Show #1 ('68 Comeback Special - June 27th, 1968)"
+              - generic [ref=e208]:
+                - generic [ref=e209]: 480K views
+                - generic [ref=e210]: •3 years ago
+            - generic [ref=e211]:
+              - link "Go to channel Raseraa" [ref=e212]:
+                - /url: /@Raseraa
+              - link "Raseraa" [ref=e218]:
+                - /url: /@Raseraa
+            - img "4K" [ref=e221]:
+              - generic [ref=e222]: 4K
+        - generic [ref=e224]:
+          - link [ref=e226] [cursor=pointer]:
+            - /url: /watch?v=u-pP_dCenJA&list=RDu-pP_dCenJA&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+            - img [ref=e228]
+            - img [ref=e231]:
+              - generic [ref=e233]: 3:13
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e234] [cursor=pointer]:
+            - generic [ref=e235]:
+              - heading "Elvis Presley - If I Can Dream ('68 Comeback Special) 3 minutes, 13 seconds" [level=3] [ref=e237]:
+                - link "Elvis Presley - If I Can Dream ('68 Comeback Special) 3 minutes, 13 seconds" [ref=e238]:
+                  - /url: /watch?v=u-pP_dCenJA&list=RDu-pP_dCenJA&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis Presley - If I Can Dream ('68 Comeback Special)
+              - generic [ref=e241]:
+                - generic [ref=e242]: 78M views
+                - generic [ref=e243]: •7 years ago
+            - generic [ref=e244]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e245]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e247]:
+                - link "Elvis Presley" [ref=e251]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e254]
+            - generic [ref=e256]:
+              - generic [ref=e257]: "\"If I Can Dream\" by Elvis Presley from the '68 Comeback Special Listen to Elvis Presley: https://Elvis.lnk.to/_listenYD Ask your ..."
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e260]:
+              - generic [ref=e261]: CC
+        - generic [ref=e263]:
+          - link [ref=e265] [cursor=pointer]:
+            - /url: /watch?v=ttuVUynl5SU&list=RDttuVUynl5SU&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+            - img [ref=e267]
+            - img [ref=e270]:
+              - generic [ref=e272]: 2:12
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e273] [cursor=pointer]:
+            - generic [ref=e274]:
+              - heading "Elvis Presley - Can't Help Falling In Love ('68 Comeback Special) 2 minutes, 12 seconds" [level=3] [ref=e276]:
+                - link "Elvis Presley - Can't Help Falling In Love ('68 Comeback Special) 2 minutes, 12 seconds" [ref=e277]:
+                  - /url: /watch?v=ttuVUynl5SU&list=RDttuVUynl5SU&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis Presley - Can't Help Falling In Love ('68 Comeback Special)
+              - generic [ref=e280]:
+                - generic [ref=e281]: 23M views
+                - generic [ref=e282]: •7 years ago
+            - generic [ref=e283]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e284]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e286]:
+                - link "Elvis Presley" [ref=e290]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e293]
+            - generic [ref=e295]:
+              - generic [ref=e296]: "Elvis Presley \"Can't Help Falling In Love\" Live at the '68 Comeback Special Buy/listen: ..."
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e299]:
+              - generic [ref=e300]: CC
+        - generic [ref=e302] [cursor=pointer]:
+          - link [ref=e303]:
+            - /url: /watch?v=YZe_8u-rGWE&list=PL7uMBlhHG8iEKzXhomLvJRBKTICWH_XCQ
+            - generic [ref=e315]: 29 videos
+          - generic [ref=e318]:
+            - heading "Elvis Presley '68 special full show, complete order" [level=3] [ref=e319]:
+              - link "Elvis Presley '68 special full show, complete order" [ref=e320]:
+                - /url: /watch?v=YZe_8u-rGWE&list=PL7uMBlhHG8iEKzXhomLvJRBKTICWH_XCQ
+            - generic [ref=e322]:
+              - generic [ref=e323]:
+                - link "apollo juarez" [ref=e326]:
+                  - /url: /@apollojuarez5150
+                - generic [ref=e327]: •
+                - link "Playlist" [ref=e330]:
+                  - /url: /@apollojuarez5150
+              - link "Elvis Presley - That's All Right ('68 Comeback Special) · 3:32" [ref=e334]:
+                - /url: /watch?v=YZe_8u-rGWE&list=PL7uMBlhHG8iEKzXhomLvJRBKTICWH_XCQ
+              - link "Elvis Presley - Heartbreak Hotel/Spoken Word ('68 Comeback Special) · 2:34" [ref=e337]:
+                - /url: /watch?v=WVxL1e7ZGLw&list=PL7uMBlhHG8iEKzXhomLvJRBKTICWH_XCQ
+              - link "View full playlist" [ref=e342]:
+                - /url: /playlist?list=PL7uMBlhHG8iEKzXhomLvJRBKTICWH_XCQ
+        - generic [ref=e344]:
+          - link [ref=e346] [cursor=pointer]:
+            - /url: /watch?v=a1qxmPpgOCM&list=RDa1qxmPpgOCM&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+          - generic [ref=e348] [cursor=pointer]:
+            - generic [ref=e349]:
+              - heading "Little Sister/Get Back | Elvis Presley 4K (Live Music Video) Outtake - That's The Way It Is 1970 4 minutes, 36 seconds" [level=3] [ref=e351]:
+                - link "Little Sister/Get Back | Elvis Presley 4K (Live Music Video) Outtake - That's The Way It Is 1970 4 minutes, 36 seconds" [ref=e352]:
+                  - /url: /watch?v=a1qxmPpgOCM&list=RDa1qxmPpgOCM&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Little Sister/Get Back | Elvis Presley 4K (Live Music Video) Outtake - That's The Way It Is 1970
+              - generic [ref=e355]:
+                - generic [ref=e356]: 4M views
+                - generic [ref=e357]: •3 years ago
+            - generic [ref=e358]:
+              - link "Go to channel Akshat Luthra" [ref=e359]:
+                - /url: /@AkshatLuthra
+              - link "Akshat Luthra" [ref=e365]:
+                - /url: /@AkshatLuthra
+            - generic [ref=e366]:
+              - generic [ref=e367]: REMASTERED IN 4K by Akshat Luthra Elvis Presley performs "Little Sister" Live at The International Hotel on August 12, 1970, ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e370]:
+              - generic [ref=e371]: 4K
+        - generic [ref=e373]:
+          - link [ref=e375] [cursor=pointer]:
+            - /url: /watch?v=9179nS0o2sE&list=RD9179nS0o2sE&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+          - generic [ref=e377] [cursor=pointer]:
+            - generic [ref=e378]:
+              - 'heading "Elvis Presley - Medley: Heartbreak Hotel / Hound Dog / All Shook Up (''68 Comeback Special) 3 minutes, 7 seconds" [level=3] [ref=e380]':
+                - 'link "Elvis Presley - Medley: Heartbreak Hotel / Hound Dog / All Shook Up (''68 Comeback Special) 3 minutes, 7 seconds" [ref=e381]':
+                  - /url: /watch?v=9179nS0o2sE&list=RD9179nS0o2sE&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: "Elvis Presley - Medley: Heartbreak Hotel / Hound Dog / All Shook Up ('68 Comeback Special)"
+              - generic [ref=e384]:
+                - generic [ref=e385]: 23M views
+                - generic [ref=e386]: •7 years ago
+            - generic [ref=e387]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e388]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e389]:
+                - link "Elvis Presley" [ref=e393]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e396]
+            - generic [ref=e398]:
+              - generic [ref=e399]: "Elvis Presley \"Heartbreak Hotel / Hound Dog / All Shook Up\" Live at the '68 Comeback Special Buy/listen: ..."
+              - tooltip "tooltip"
+        - generic [ref=e401]:
+          - link [ref=e403] [cursor=pointer]:
+            - /url: /watch?v=KZ64T6gEdC4&list=RDKZ64T6gEdC4&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+          - generic [ref=e405] [cursor=pointer]:
+            - generic [ref=e406]:
+              - heading "Elvis Presley - Trying To Get To You ('68 Comeback Special) 2 minutes, 58 seconds" [level=3] [ref=e408]:
+                - link "Elvis Presley - Trying To Get To You ('68 Comeback Special) 2 minutes, 58 seconds" [ref=e409]:
+                  - /url: /watch?v=KZ64T6gEdC4&list=RDKZ64T6gEdC4&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis Presley - Trying To Get To You ('68 Comeback Special)
+              - generic [ref=e412]:
+                - generic [ref=e413]: 16M views
+                - generic [ref=e414]: •7 years ago
+            - generic [ref=e415]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e416]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e417]:
+                - link "Elvis Presley" [ref=e421]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e424]
+            - generic [ref=e426]:
+              - generic [ref=e427]: "Elvis Presley \"Trying To Get To You\" Live at the '68 Comeback Special Listen to Elvis Presley: https://Elvis.lnk.to/_listenYD Buy the ..."
+              - tooltip "tooltip"
+        - generic [ref=e429]:
+          - link [ref=e431] [cursor=pointer]:
+            - /url: /watch?v=_p40hCmR9Yg&list=RD_p40hCmR9Yg&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e433] [cursor=pointer]:
+            - generic [ref=e434]:
+              - heading "[Full] Elvis '68 Comeback | 2K 60FPS | 16:9 53 minutes" [level=3] [ref=e436]:
+                - link "[Full] Elvis '68 Comeback | 2K 60FPS | 16:9 53 minutes" [ref=e437]:
+                  - /url: /watch?v=_p40hCmR9Yg&list=RD_p40hCmR9Yg&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwHSBwkJ2QoBhyohjO8%3D
+                  - text: "[Full] Elvis '68 Comeback | 2K 60FPS | 16:9"
+              - generic [ref=e440]:
+                - generic [ref=e441]: 190K views
+                - generic [ref=e442]: •2 years ago
+            - generic [ref=e443]:
+              - link "Go to channel Droning Around" [ref=e444]:
+                - /url: /@droningaround2619
+              - link "Droning Around" [ref=e449]:
+                - /url: /@droningaround2619
+            - generic [ref=e450]:
+              - text: "elvis68comeback #rocknroll #nbc I am using intelligent softwares AI to enhance archive footages and soundtracks, I don't mean ..."
+              - tooltip "tooltip"
+            - img "4K" [ref=e453]:
+              - generic [ref=e454]: 4K
+        - generic [ref=e455]:
+          - generic [ref=e458]:
+            - img [ref=e460]
+            - heading "Shorts" [level=2] [ref=e463]
+          - generic [ref=e464]:
+            - generic [ref=e465]:
+              - generic [ref=e468]:
+                - link [ref=e469] [cursor=pointer]:
+                  - /url: /shorts/bLdLS6YIbTE
+                - generic [ref=e473] [cursor=pointer]:
+                  - link "1968 comeback special Elvis singing all I want for Christmas is you and the black leather" [ref=e474]:
+                    - /url: /shorts/bLdLS6YIbTE
+                  - generic [ref=e475]: 27K views
+                - button "More actions" [ref=e477] [cursor=pointer]
+              - generic [ref=e485]:
+                - link [ref=e486] [cursor=pointer]:
+                  - /url: /shorts/xd6uwCzTL9A
+                - generic [ref=e490] [cursor=pointer]:
+                  - link "Elvis Presley, 68 Special" [ref=e491]:
+                    - /url: /shorts/xd6uwCzTL9A
+                  - generic [ref=e492]: 3.3M views
+                - button "More actions" [ref=e494] [cursor=pointer]
+            - generic [ref=e500]:
+              - generic [ref=e503]:
+                - link [ref=e504] [cursor=pointer]:
+                  - /url: /shorts/1OZunCKDCRE
+                - generic [ref=e508] [cursor=pointer]:
+                  - link "Elvis performs \"It Hurts Me\" at his 68 Comeback Special" [ref=e509]:
+                    - /url: /shorts/1OZunCKDCRE
+                  - generic [ref=e510]: 92K views
+                - button "More actions" [ref=e512] [cursor=pointer]
+              - generic [ref=e520]:
+                - link [ref=e521] [cursor=pointer]:
+                  - /url: /shorts/985ajb5OMSk
+                - generic [ref=e525] [cursor=pointer]:
+                  - 'link "Fan gets onstage and gets a kiss from Elvis #usa #elvispresley #elvis #fan #live #fypシ #new #concert" [ref=e526]':
+                    - /url: /shorts/985ajb5OMSk
+                  - generic [ref=e527]: 7.8M views
+                - button "More actions" [ref=e529] [cursor=pointer]
+          - button "Show more" [ref=e538] [cursor=pointer]:
+            - generic [ref=e539]: Show more
+        - generic [ref=e546]:
+          - link [ref=e548] [cursor=pointer]:
+            - /url: /watch?v=dLDEhroSN_w&list=RDdLDEhroSN_w&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+          - generic [ref=e550] [cursor=pointer]:
+            - generic [ref=e551]:
+              - heading "Elvis Presley - If I Can Dream - Show Closer ('68 Comeback Special) 3 minutes, 12 seconds" [level=3] [ref=e553]:
+                - link "Elvis Presley - If I Can Dream - Show Closer ('68 Comeback Special) 3 minutes, 12 seconds" [ref=e554]:
+                  - /url: /watch?v=dLDEhroSN_w&list=RDdLDEhroSN_w&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis Presley - If I Can Dream - Show Closer ('68 Comeback Special)
+              - generic [ref=e557]:
+                - generic [ref=e558]: 619K views
+                - generic [ref=e559]: •6 years ago
+            - generic [ref=e560]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e561]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e562]:
+                - link "Elvis Presley" [ref=e566]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e569]
+            - generic [ref=e571]:
+              - generic [ref=e572]: "\"If I Can Dream - Show Closer\" by Elvis Presley from The '68 Comeback Special Listen to Elvis Presley: ..."
+              - tooltip "tooltip"
+        - generic [ref=e574]:
+          - link [ref=e576] [cursor=pointer]:
+            - /url: /watch?v=ZpoaO6yOGHk&list=RDZpoaO6yOGHk&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+          - generic [ref=e578] [cursor=pointer]:
+            - generic [ref=e579]:
+              - heading "Elvis Presley - Guitar Man Production Number ('68 Comeback Special) 12 minutes, 45 seconds" [level=3] [ref=e581]:
+                - link "Elvis Presley - Guitar Man Production Number ('68 Comeback Special) 12 minutes, 45 seconds" [ref=e582]:
+                  - /url: /watch?v=ZpoaO6yOGHk&list=RDZpoaO6yOGHk&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis Presley - Guitar Man Production Number ('68 Comeback Special)
+              - generic [ref=e585]:
+                - generic [ref=e586]: 728K views
+                - generic [ref=e587]: •7 years ago
+            - generic [ref=e588]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e589]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e590]:
+                - link "Elvis Presley" [ref=e594]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e597]
+            - generic [ref=e599]:
+              - generic [ref=e600]: "\"Guitar Man Production Number\" 68 Comeback Special by Elvis Presley Listen to Elvis Presley: https://Elvis.lnk.to/_listenYD Buy ..."
+              - tooltip "tooltip"
+        - generic [ref=e602]:
+          - link [ref=e604] [cursor=pointer]:
+            - /url: /watch?v=LF5u7b8pAYQ&list=RDLF5u7b8pAYQ&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e606] [cursor=pointer]:
+            - generic [ref=e607]:
+              - heading "Elvis Presley - Are You Lonesome Tonight? ('68 Comeback Special) 2 minutes, 47 seconds" [level=3] [ref=e609]:
+                - link "Elvis Presley - Are You Lonesome Tonight? ('68 Comeback Special) 2 minutes, 47 seconds" [ref=e610]:
+                  - /url: /watch?v=LF5u7b8pAYQ&list=RDLF5u7b8pAYQ&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Elvis Presley - Are You Lonesome Tonight? ('68 Comeback Special)
+              - generic [ref=e613]:
+                - generic [ref=e614]: 3.4M views
+                - generic [ref=e615]: •7 years ago
+            - generic [ref=e616]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e617]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e618]:
+                - link "Elvis Presley" [ref=e622]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e625]
+            - generic [ref=e627]:
+              - generic [ref=e628]: "\"Are You Lonesome Tonight?\" 68 Comeback Special by Elvis Presley Listen to Elvis Presley: https://Elvis.lnk.to/_listenYD Buy the ..."
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e631]:
+              - generic [ref=e632]: CC
+        - generic [ref=e634]:
+          - heading "People also watched" [level=2] [ref=e637]:
+            - generic [ref=e639]: People also watched
+          - generic [ref=e641]:
+            - generic [ref=e642]:
+              - generic [ref=e644]:
+                - link [ref=e646] [cursor=pointer]:
+                  - /url: /watch?v=lAKx6PMeDew&list=RDlAKx6PMeDew&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwHSBwkJ2QoBhyohjO8%3D
+                - generic [ref=e648] [cursor=pointer]:
+                  - generic [ref=e649]:
+                    - heading "Elvis Presley - The Complete 10 August 1970 Opening Show - Las Vegas - with Stereo audio 58 minutes" [level=3] [ref=e651]:
+                      - link "Elvis Presley - The Complete 10 August 1970 Opening Show - Las Vegas - with Stereo audio 58 minutes" [ref=e652]:
+                        - /url: /watch?v=lAKx6PMeDew&list=RDlAKx6PMeDew&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwHSBwkJ2QoBhyohjO8%3D
+                        - text: Elvis Presley - The Complete 10 August 1970 Opening Show - Las Vegas - with Stereo audio
+                    - generic [ref=e655]:
+                      - generic [ref=e656]: 773K views
+                      - generic [ref=e657]: •1 year ago
+                  - generic [ref=e658]:
+                    - link "Go to channel The Ultimate Elvis Channel by Leon" [ref=e659]:
+                      - /url: /@TheUltimateElvisChannelbyLeon
+                    - link "The Ultimate Elvis Channel by Leon" [ref=e664]:
+                      - /url: /@TheUltimateElvisChannelbyLeon
+                  - generic [ref=e665]:
+                    - text: "Buy me a coffee to check my Patreon page for exclusive content : https://www.patreon.com/user/posts?u=63971030 The actual ..."
+                    - tooltip "tooltip"
+                  - generic [ref=e668]:
+                    - generic [ref=e669]:
+                      - generic [ref=e673]: 17 chapters
+                      - button "Intro/That's All Right | Mystery Train/Tiger Man | I Can't Stop Loviing You | Love Me Tender | The Next Step Is Love - The Only Live Rendition | Words | I Just Can't Help Believing - The First Live Rendition | Somerthing - The First Live Rendition | Sweet Caroline | You've Lost That Lovin' Feeling - The First Live Rendition | You Don't Have To Say You Love Me - The First Live Rendition | Polk Salad Annie | Band Introductions | I've Lost You - The First Live Rendition | Bridge Over Troubled Water - The First Live Rendition | Patch It Up - The First Live Rendition | Can't Help Falling In Love"
+                    - button "More" [ref=e678]
+              - generic [ref=e685]:
+                - link [ref=e687] [cursor=pointer]:
+                  - /url: /watch?v=5yHcZ8l8Xus&list=RD5yHcZ8l8Xus&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                - generic [ref=e689] [cursor=pointer]:
+                  - generic [ref=e690]:
+                    - heading "Elvis Presley - Bridge Over Troubled Water live at the Greensboro Coliseum, April 14,1972 (16:9 HQ) 4 minutes, 6 seconds" [level=3] [ref=e692]:
+                      - link "Elvis Presley - Bridge Over Troubled Water live at the Greensboro Coliseum, April 14,1972 (16:9 HQ) 4 minutes, 6 seconds" [ref=e693]:
+                        - /url: /watch?v=5yHcZ8l8Xus&list=RD5yHcZ8l8Xus&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                        - text: Elvis Presley - Bridge Over Troubled Water live at the Greensboro Coliseum, April 14,1972 (16:9 HQ)
+                    - generic [ref=e696]:
+                      - generic [ref=e697]: 1.3M views
+                      - generic [ref=e698]: •5 months ago
+                  - generic [ref=e699]:
+                    - link "Go to channel LongLivetheKing0871" [ref=e700]:
+                      - /url: /@LongLivetheKing0871
+                    - link "LongLivetheKing0871" [ref=e705]:
+                      - /url: /@LongLivetheKing0871
+                  - generic [ref=e706]:
+                    - generic [ref=e707]: Elvis Presley - Bridge Over Troubled Water.
+                    - tooltip "tooltip"
+              - generic [ref=e709]:
+                - link [ref=e711] [cursor=pointer]:
+                  - /url: /watch?v=2_A44IixILo&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2s%3D
+                - generic [ref=e713] [cursor=pointer]:
+                  - generic [ref=e714]:
+                    - heading "Elvis CBS Tv Special 1977 High Definition 50 minutes" [level=3] [ref=e716]:
+                      - link "Elvis CBS Tv Special 1977 High Definition 50 minutes" [ref=e717]:
+                        - /url: /watch?v=2_A44IixILo&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2s%3D
+                        - text: Elvis CBS Tv Special 1977 High Definition
+                    - generic [ref=e720]:
+                      - generic [ref=e721]: 1.4M views
+                      - generic [ref=e722]: •1 year ago
+                  - generic [ref=e723]:
+                    - link "Go to channel The Matt Dollar Show" [ref=e724]:
+                      - /url: /@themattdollarshow
+                    - link "The Matt Dollar Show" [ref=e729]:
+                      - /url: /@themattdollarshow
+                  - generic [ref=e730]:
+                    - generic [ref=e731]: Elvis 1977 CBS Tv special high definition.
+                    - tooltip "tooltip"
+              - generic [ref=e733]:
+                - link [ref=e735] [cursor=pointer]:
+                  - /url: /watch?v=UGHxSH_A_YQ&list=RDUGHxSH_A_YQ&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                - generic [ref=e737] [cursor=pointer]:
+                  - generic [ref=e738]:
+                    - heading "Elvis Presley - If I Can Dream ('68 Comeback Special) | First Time Reaction 6 minutes, 49 seconds" [level=3] [ref=e740]:
+                      - link "Elvis Presley - If I Can Dream ('68 Comeback Special) | First Time Reaction 6 minutes, 49 seconds" [ref=e741]:
+                        - /url: /watch?v=UGHxSH_A_YQ&list=RDUGHxSH_A_YQ&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                        - text: Elvis Presley - If I Can Dream ('68 Comeback Special) | First Time Reaction
+                    - generic [ref=e744]:
+                      - generic [ref=e745]: 10K views
+                      - generic [ref=e746]: •3 days ago
+                  - generic [ref=e747]:
+                    - link "Go to channel InnaSoloMusic" [ref=e748]:
+                      - /url: /@InnaSoloMusic
+                    - link "InnaSoloMusic" [ref=e753]:
+                      - /url: /@InnaSoloMusic
+                  - generic [ref=e754]:
+                    - generic [ref=e755]: Hi guys! This is my first time reaction to Elvis Presley - If I Can Dream ('68 Comeback Special) Thank you so much for watching!
+                    - tooltip "tooltip"
+                  - img "New" [ref=e758]:
+                    - generic [ref=e759]: New
+            - generic "+6 more" [ref=e761] [cursor=pointer]
+        - generic [ref=e763]:
+          - link [ref=e765] [cursor=pointer]:
+            - /url: /watch?v=O6BbL4DrrBo&list=RDO6BbL4DrrBo&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+          - generic [ref=e767] [cursor=pointer]:
+            - generic [ref=e768]:
+              - heading "Elvis Presley - Blue Suede Shoes ('68 Comeback Special) 2 minutes, 10 seconds" [level=3] [ref=e770]:
+                - link "Elvis Presley - Blue Suede Shoes ('68 Comeback Special) 2 minutes, 10 seconds" [ref=e771]:
+                  - /url: /watch?v=O6BbL4DrrBo&list=RDO6BbL4DrrBo&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis Presley - Blue Suede Shoes ('68 Comeback Special)
+              - generic [ref=e774]:
+                - generic [ref=e775]: 12M views
+                - generic [ref=e776]: •7 years ago
+            - generic [ref=e777]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e778]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e779]:
+                - link "Elvis Presley" [ref=e783]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e786]
+            - generic [ref=e788]:
+              - generic [ref=e789]: "\"Blue Suede Shoes\" 68 Comeback Special by Elvis Presley Listen to Elvis Presley: https://Elvis.lnk.to/_listenYD Buy the full '68 ..."
+              - tooltip "tooltip"
+        - generic [ref=e791]:
+          - link [ref=e793] [cursor=pointer]:
+            - /url: /watch?v=ALHWkx7J_lA&list=RDALHWkx7J_lA&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+          - generic [ref=e795] [cursor=pointer]:
+            - generic [ref=e796]:
+              - heading "Elvis Presley - Lawdy Miss Clawdy ('68 Comeback Special) 2 minutes, 27 seconds" [level=3] [ref=e798]:
+                - link "Elvis Presley - Lawdy Miss Clawdy ('68 Comeback Special) 2 minutes, 27 seconds" [ref=e799]:
+                  - /url: /watch?v=ALHWkx7J_lA&list=RDALHWkx7J_lA&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis Presley - Lawdy Miss Clawdy ('68 Comeback Special)
+              - generic [ref=e802]:
+                - generic [ref=e803]: 5.8M views
+                - generic [ref=e804]: •7 years ago
+            - generic [ref=e805]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e806]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e807]:
+                - link "Elvis Presley" [ref=e811]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e814]
+            - generic [ref=e816]:
+              - generic [ref=e817]: "Elvis Presley \"Lawdy Miss Clawdy\" Live at the '68 Comeback Special Listen to Elvis Presley: https://ElvisPresley.lnk.to/listenYD ..."
+              - tooltip "tooltip"
+        - generic [ref=e818]:
+          - generic [ref=e821]:
+            - img [ref=e823]
+            - heading "Shorts" [level=2] [ref=e826]
+          - generic [ref=e827]:
+            - generic [ref=e828]:
+              - generic [ref=e831]:
+                - link [ref=e832] [cursor=pointer]:
+                  - /url: /shorts/j05C7xmLJk8
+                - generic [ref=e836] [cursor=pointer]:
+                  - link "Elvis Presley Talking To Audience In 1968 Comeback Special" [ref=e837]:
+                    - /url: /shorts/j05C7xmLJk8
+                  - generic [ref=e838]: 166K views
+                - button "More actions" [ref=e840] [cursor=pointer]
+              - generic [ref=e848]:
+                - link [ref=e849] [cursor=pointer]:
+                  - /url: /shorts/a4w6CFzHaSs
+                - generic [ref=e853] [cursor=pointer]:
+                  - link "The legendary '68 Comeback Special was filmed on June 27, 1968! 🎸✨" [ref=e854]:
+                    - /url: /shorts/a4w6CFzHaSs
+                  - generic [ref=e855]: 606K views
+                - button "More actions" [ref=e857] [cursor=pointer]
+            - generic [ref=e863]:
+              - generic [ref=e866]:
+                - link [ref=e867] [cursor=pointer]:
+                  - /url: /shorts/HGubpuEEkYQ
+                - generic [ref=e871] [cursor=pointer]:
+                  - link "Elvis Presley One night from the 1968 comeback special" [ref=e872]:
+                    - /url: /shorts/HGubpuEEkYQ
+                  - generic [ref=e873]: 9.4K views
+                - button "More actions" [ref=e875] [cursor=pointer]
+              - generic [ref=e883]:
+                - link [ref=e884] [cursor=pointer]:
+                  - /url: /shorts/wraqMVnOsRc
+                - generic [ref=e888] [cursor=pointer]:
+                  - link "68 Comeback Special-Outtake-Trouble" [ref=e889]:
+                    - /url: /shorts/wraqMVnOsRc
+                  - generic [ref=e890]: 1M views
+                - button "More actions" [ref=e892] [cursor=pointer]
+          - button "Show more" [ref=e901] [cursor=pointer]:
+            - generic [ref=e902]: Show more
+        - generic [ref=e909]:
+          - link [ref=e911] [cursor=pointer]:
+            - /url: /watch?v=4FkyeO_PRlw&list=RD4FkyeO_PRlw&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+          - generic [ref=e913] [cursor=pointer]:
+            - generic [ref=e914]:
+              - heading "Elvis Presley - Opening Production Number ('68 Comeback Special) 3 minutes, 18 seconds" [level=3] [ref=e916]:
+                - link "Elvis Presley - Opening Production Number ('68 Comeback Special) 3 minutes, 18 seconds" [ref=e917]:
+                  - /url: /watch?v=4FkyeO_PRlw&list=RD4FkyeO_PRlw&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis Presley - Opening Production Number ('68 Comeback Special)
+              - generic [ref=e920]:
+                - generic [ref=e921]: 7.2M views
+                - generic [ref=e922]: •7 years ago
+            - generic [ref=e923]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e924]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e925]:
+                - link "Elvis Presley" [ref=e929]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e932]
+            - generic [ref=e934]:
+              - generic [ref=e935]: "Elvis Presley, \"Trouble\" and \"Guitar Man\" Medley, Live at the '68 Comeback Special Buy/listen: ..."
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e938]:
+              - generic [ref=e939]: CC
+        - generic [ref=e941]:
+          - link [ref=e943] [cursor=pointer]:
+            - /url: /watch?v=qvdW75-yJUI&list=RDqvdW75-yJUI&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+          - generic [ref=e945] [cursor=pointer]:
+            - generic [ref=e946]:
+              - heading "Elvis Presley - Trouble (Take1013) (68 Comeback Special) 1 minute, 52 seconds" [level=3] [ref=e948]:
+                - link "Elvis Presley - Trouble (Take1013) (68 Comeback Special) 1 minute, 52 seconds" [ref=e949]:
+                  - /url: /watch?v=qvdW75-yJUI&list=RDqvdW75-yJUI&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis Presley - Trouble (Take1013) (68 Comeback Special)
+              - generic [ref=e952]:
+                - generic [ref=e953]: 3.2M views
+                - generic [ref=e954]: •3 years ago
+            - generic [ref=e955]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e956]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e957]:
+                - link "Elvis Presley" [ref=e961]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e964]
+            - generic [ref=e966]:
+              - generic [ref=e967]: "\"Trouble (Take1013)\" by Elvis Presley live at the '68 Comeback Special Buy the full '68 Comeback Special (50th Anniversary) ..."
+              - tooltip "tooltip"
+        - generic [ref=e969]:
+          - link [ref=e971] [cursor=pointer]:
+            - /url: /watch?v=xA142IsjQiE&list=RDxA142IsjQiE&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+          - generic [ref=e973] [cursor=pointer]:
+            - generic [ref=e974]:
+              - heading "Elvis - If I Can Dream (Official Live Performance) 3 minutes, 12 seconds" [level=3] [ref=e976]:
+                - link "Elvis - If I Can Dream (Official Live Performance) 3 minutes, 12 seconds" [ref=e977]:
+                  - /url: /watch?v=xA142IsjQiE&list=RDxA142IsjQiE&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis - If I Can Dream (Official Live Performance)
+              - generic [ref=e980]:
+                - generic [ref=e981]: 25M views
+                - generic [ref=e982]: •12 years ago
+            - generic [ref=e983]:
+              - link "Go to channel Elvis Presley" [ref=e984]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e985]:
+                - link "Elvis Presley" [ref=e989]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e992]
+            - generic [ref=e994]:
+              - generic [ref=e995]: In celebration of the 45th anniversary of Elvis recording the "'68 Special," we give you the legendary performance of "If I Can ...
+              - tooltip "tooltip"
+        - generic [ref=e997]:
+          - link [ref=e999] [cursor=pointer]:
+            - /url: /watch?v=c5xj4i8Nnac&list=RDc5xj4i8Nnac&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+          - generic [ref=e1001] [cursor=pointer]:
+            - generic [ref=e1002]:
+              - heading "Elvis Presley - Heartbreak Hotel, Hound Dog & All Sook Up 1968 Comeback 3 minutes" [level=3] [ref=e1004]:
+                - link "Elvis Presley - Heartbreak Hotel, Hound Dog & All Sook Up 1968 Comeback 3 minutes" [ref=e1005]:
+                  - /url: /watch?v=c5xj4i8Nnac&list=RDc5xj4i8Nnac&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis Presley - Heartbreak Hotel, Hound Dog & All Sook Up 1968 Comeback
+              - generic [ref=e1008]:
+                - generic [ref=e1009]: 790K views
+                - generic [ref=e1010]: •9 years ago
+            - generic [ref=e1011]:
+              - link "Go to channel TheKing Elvis" [ref=e1012]:
+                - /url: /@thekingelvis5084
+              - link "TheKing Elvis" [ref=e1017]:
+                - /url: /@thekingelvis5084
+        - generic [ref=e1019]:
+          - link [ref=e1021] [cursor=pointer]:
+            - /url: /watch?v=YZe_8u-rGWE&list=RDYZe_8u-rGWE&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+          - generic [ref=e1023] [cursor=pointer]:
+            - generic [ref=e1024]:
+              - heading "Elvis Presley - That's All Right ('68 Comeback Special) 3 minutes, 32 seconds" [level=3] [ref=e1026]:
+                - link "Elvis Presley - That's All Right ('68 Comeback Special) 3 minutes, 32 seconds" [ref=e1027]:
+                  - /url: /watch?v=YZe_8u-rGWE&list=RDYZe_8u-rGWE&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis Presley - That's All Right ('68 Comeback Special)
+              - generic [ref=e1030]:
+                - generic [ref=e1031]: 13M views
+                - generic [ref=e1032]: •7 years ago
+            - generic [ref=e1033]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e1034]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e1035]:
+                - link "Elvis Presley" [ref=e1039]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e1042]
+            - generic [ref=e1044]:
+              - generic [ref=e1045]: "Buy/listen: https://Elvis.lnk.to/68ComebackSpecial!tar About the track: For his 1968 television special, Elvis Presley reunited with ..."
+              - tooltip "tooltip"
+        - generic [ref=e1047]:
+          - link [ref=e1049] [cursor=pointer]:
+            - /url: /watch?v=U_t20f4PiRM&list=RDU_t20f4PiRM&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+          - generic [ref=e1051] [cursor=pointer]:
+            - generic [ref=e1052]:
+              - heading "Elvis Presley - Baby, What You Want Me To Do (Alternate Cut) ('68 Comeback Special) 2 minutes, 44 seconds" [level=3] [ref=e1054]:
+                - link "Elvis Presley - Baby, What You Want Me To Do (Alternate Cut) ('68 Comeback Special) 2 minutes, 44 seconds" [ref=e1055]:
+                  - /url: /watch?v=U_t20f4PiRM&list=RDU_t20f4PiRM&start_radio=1&pp=ygUsRWx2aXMgUHJlc2xleSBsaXZlIHBlcmZvcm1hbmNlIDE5NjggY29tZWJhY2ugBwE%3D
+                  - text: Elvis Presley - Baby, What You Want Me To Do (Alternate Cut) ('68 Comeback Special)
+              - generic [ref=e1058]:
+                - generic [ref=e1059]: 26M views
+                - generic [ref=e1060]: •7 years ago
+            - generic [ref=e1061]:
+              - link "Go to channel ElvisPresleyVEVO" [ref=e1062]:
+                - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+              - generic [ref=e1063]:
+                - link "Elvis Presley" [ref=e1067]:
+                  - /url: /channel/UCW6G95TBLCh5SdC-DHDSf5w
+                - img "Official Artist Channel" [ref=e1070]
+            - generic [ref=e1072]:
+              - generic [ref=e1073]: "\"Baby, What You Want Me To Do (Alternate Cut)\" 68 Comeback Special by Elvis Presley Listen to Elvis Presley: ..."
+              - tooltip "tooltip"

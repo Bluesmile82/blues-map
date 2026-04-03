@@ -1,0 +1,527 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+          - button "Next" [ref=e111] [cursor=pointer]
+        - link "About these results" [ref=e120] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e121]: About these results
+        - generic [ref=e128]:
+          - button "Search filters" [ref=e130] [cursor=pointer]:
+            - generic [ref=e131]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e140]:
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - img "Sponsored" [ref=e152]:
+              - generic [ref=e153]: Sponsored
+              - text: ·
+            - heading "Suggested products" [level=3] [ref=e154]
+            - button [ref=e158] [cursor=pointer]
+          - generic [ref=e161]:
+            - generic [ref=e164]:
+              - generic [ref=e167] [cursor=pointer]:
+                - 'link "Ad: T. Richards: Blues Piano 1 - Blues–Schema – Blue Notes – Improvisation Modern Piano Styles Band 1." [ref=e170]':
+                  - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwj9rK7qydGTAxXlPAYAHU2dJ2cYACICCAEQARoCd3M&co=1&ase=2&gclid=EAIaIQobChMI_ayu6snRkwMV5TwGAB1NnSdnEAQYASABEgIvOPD_BwE&category=acrcp_v1_32&sig=AOD64_0yLt6mJsOxDw-2M9D41V0eFkjlqw&adurl=https://www.stretta-music.es/richards-blues-piano-1-nr-164293.html%3Fex_s%3Dgoogle%26ex_m%3Dpaid%26ex_c%3D20908203315%26ex_t%3Dpla-307937447022%26ex_co%3D686556194566%26ex_a%3D159847410120%26ex_gid%3D%7Bgclid%7D%26gad_source%3D2%26gad_campaignid%3D20908203315&ctype=5&ms=[CLICK_MS]&nx=[NX]&ny=[NY]&nb=[NB]
+                  - 'generic "T. Richards: Blues Piano 1 - Blues–Schema – Blue Notes – Improvisation Modern Piano Styles Band 1" [ref=e171]'
+                - generic [ref=e172]:
+                  - generic "Stretta Music" [ref=e173]
+                  - generic "€29.50" [ref=e174]
+                - generic "+€5.90 shipping" [ref=e176]
+              - generic [ref=e179] [cursor=pointer]:
+                - 'link "Ad: All Blues (Nivel Avanzado, Piano Solo) (Miles Davis) - Partitura Piano." [ref=e184]':
+                  - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwj9rK7qydGTAxXlPAYAHU2dJ2cYACICCAEQAxoCd3M&co=1&ase=2&gclid=EAIaIQobChMI_ayu6snRkwMV5TwGAB1NnSdnEAQYAiABEgInwvD_BwE&category=acrcp_v1_32&sig=AOD64_19-A28RjRhFiv7OdwuhbZMJDY_4Q&adurl=https://tomplay.com/es/piano-sheet-music/miles-davis/all-blues-advanced-level-solo-piano-piano-score%3Fcurrency%3DEUR%26gad_source%3D2%26gad_campaignid%3D22822782172&ctype=5&ms=[CLICK_MS]&nx=[NX]&ny=[NY]&nb=[NB]
+                  - generic "All Blues (Nivel Avanzado, Piano Solo) (Miles Davis) - Partitura Piano" [ref=e185]
+                - generic [ref=e186]:
+                  - generic "Tomplay" [ref=e187]
+                  - generic "€5.99" [ref=e188]
+                - generic "Free shipping" [ref=e190]
+              - generic [ref=e193] [cursor=pointer]:
+                - 'link "Ad: Improvising Blues Piano." [ref=e196]':
+                  - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwj9rK7qydGTAxXlPAYAHU2dJ2cYACICCAEQBRoCd3M&co=1&ase=2&gclid=EAIaIQobChMI_ayu6snRkwMV5TwGAB1NnSdnEAQYAyABEgIcSvD_BwE&category=acrcp_v1_32&sig=AOD64_1TR7lRSMa6TdO-Dl-ZTtfq9K96uw&adurl=https://www.buscalibre.es/libro-improvising-blues-piano/9781847615121/p/53380147%3Fbmkt_source%3Dgoogle%26bmkt_campaign%3D22450965308%26gad_source%3D2%26gad_campaignid%3D22450965308&ctype=5&ms=[CLICK_MS]&nx=[NX]&ny=[NY]&nb=[NB]
+                  - generic "Improvising Blues Piano" [ref=e197]
+                - generic [ref=e198]:
+                  - generic "Buscalibre.es" [ref=e199]
+                  - generic "€36.80" [ref=e200]
+                - generic "Free shipping" [ref=e202]
+              - generic [ref=e205] [cursor=pointer]:
+                - 'link "Ad: Blues Piano Collection." [ref=e208]':
+                  - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwj9rK7qydGTAxXlPAYAHU2dJ2cYACICCAEQBxoCd3M&co=1&ase=2&gclid=EAIaIQobChMI_ayu6snRkwMV5TwGAB1NnSdnEAQYBCABEgKV0fD_BwE&category=acrcp_v1_32&sig=AOD64_19xp0kZr2_cZ17YEsRVmsO6uTJQQ&adurl=https://www.buscalibre.es/libro-blues-piano-collection/9781847725998/p/3523748%3Fbmkt_source%3Dgoogle%26bmkt_campaign%3D22450965308%26gad_source%3D2%26gad_campaignid%3D22450965308&ctype=5&ms=[CLICK_MS]&nx=[NX]&ny=[NY]&nb=[NB]
+                  - generic "Blues Piano Collection" [ref=e209]
+                - generic [ref=e210]:
+                  - generic "Buscalibre.es" [ref=e211]
+                  - generic "€30.29" [ref=e212]
+                - generic "Free shipping" [ref=e214]
+              - generic [ref=e217] [cursor=pointer]:
+                - 'link "Ad: Schott Music Blues Piano 1." [ref=e220]':
+                  - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwj9rK7qydGTAxXlPAYAHU2dJ2cYACICCAEQCRoCd3M&co=1&ase=2&gclid=EAIaIQobChMI_ayu6snRkwMV5TwGAB1NnSdnEAQYBSABEgIUOPD_BwE&category=acrcp_v1_32&sig=AOD64_3-EUoCQyANi3vQe2Ne28QkHBfxRg&adurl=https://www.musicstore.com/es_ES/EUR/Schott-Music-Blues-Piano-1/art-NOT0012918-000%3Fcampaign%3DGShopping/ES%26ProgramUUID%3D8j0KAQMEIJYAAAGcr_9emmwx%26gad_source%3D2%26gad_campaignid%3D23538298466&ctype=5&ms=[CLICK_MS]&nx=[NX]&ny=[NY]&nb=[NB]
+                  - generic "Schott Music Blues Piano 1" [ref=e221]
+                - generic [ref=e222]:
+                  - generic "Music Store Professional ES" [ref=e223]
+                  - generic "€32.00" [ref=e224]
+                - generic "+€9.00 shipping" [ref=e226]
+              - generic [ref=e229] [cursor=pointer]:
+                - 'link "Ad: Easy Blues Piano: For Beginners." [ref=e232]':
+                  - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwj9rK7qydGTAxXlPAYAHU2dJ2cYACICCAEQCxoCd3M&co=1&ase=2&gclid=EAIaIQobChMI_ayu6snRkwMV5TwGAB1NnSdnEAQYBiABEgI3R_D_BwE&category=acrcp_v1_32&sig=AOD64_1_iJV3t6D3smDDSuEw1_1QLGhu1g&adurl=https://www.buscalibre.es/libro-easy-blues-piano-for-beginners/9781999747848/p/52930948%3Fbmkt_source%3Dgoogle%26bmkt_campaign%3D22450965308%26gad_source%3D2%26gad_campaignid%3D22450965308&ctype=5&ms=[CLICK_MS]&nx=[NX]&ny=[NY]&nb=[NB]
+                  - 'generic "Easy Blues Piano: For Beginners" [ref=e233]'
+                - generic [ref=e234]:
+                  - generic "Buscalibre.es" [ref=e235]
+                  - generic "€117.68" [ref=e236]
+                - generic "Free shipping" [ref=e238]
+              - generic [ref=e241] [cursor=pointer]:
+                - 'link "Ad: All Blues (Nivel Avanzado Superior, con Orquesta) (Miles Davis) - Partitura Piano." [ref=e244]':
+                  - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwj9rK7qydGTAxXlPAYAHU2dJ2cYACICCAEQDRoCd3M&co=1&ase=2&gclid=EAIaIQobChMI_ayu6snRkwMV5TwGAB1NnSdnEAQYByABEgI5dvD_BwE&category=acrcp_v1_32&sig=AOD64_2JjmXGrglMaX9lNZSXdjJls-0GMw&adurl=https://tomplay.com/es/piano-sheet-music/miles-davis/all-blues-upper-advanced-level-with-orchestra-piano-score%3Fcurrency%3DEUR%26gad_source%3D2%26gad_campaignid%3D22822782172&ctype=5&ms=[CLICK_MS]&nx=[NX]&ny=[NY]&nb=[NB]
+                  - generic "All Blues (Nivel Avanzado Superior, con Orquesta) (Miles Davis) - Partitura Piano" [ref=e245]
+                - generic [ref=e246]:
+                  - generic "Tomplay" [ref=e247]
+                  - generic "€5.99" [ref=e248]
+                - generic "Free shipping" [ref=e250]
+              - generic [ref=e253] [cursor=pointer]:
+                - 'link "Ad: Blues Piano Legends." [ref=e256]':
+                  - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwj9rK7qydGTAxXlPAYAHU2dJ2cYACICCAEQDxoCd3M&co=1&ase=2&gclid=EAIaIQobChMI_ayu6snRkwMV5TwGAB1NnSdnEAQYCCABEgJ46vD_BwE&category=acrcp_v1_32&sig=AOD64_0at_ehBLKB-FnnPIaemKvswDQtgw&adurl=https://www.buscalibre.es/libro-blues-piano-legends/9781480304550/p/51201693%3Fbmkt_source%3Dgoogle%26bmkt_campaign%3D22450965308%26gad_source%3D2%26gad_campaignid%3D22450965308&ctype=5&ms=[CLICK_MS]&nx=[NX]&ny=[NY]&nb=[NB]
+                  - generic "Blues Piano Legends" [ref=e257]
+                - generic [ref=e258]:
+                  - generic "Buscalibre.es" [ref=e259]
+                  - generic "€31.94" [ref=e260]
+                - generic "Free shipping" [ref=e262]
+            - button "Next" [ref=e265] [cursor=pointer]
+        - generic [ref=e272]:
+          - generic [ref=e274]:
+            - link [ref=e276] [cursor=pointer]:
+              - /url: /watch?v=QRb6a3m74lk&list=RDQRb6a3m74lk&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+            - generic [ref=e278] [cursor=pointer]:
+              - generic [ref=e279]:
+                - heading "Suitcase Blues 2 minutes, 35 seconds" [level=3] [ref=e281]:
+                  - link "Suitcase Blues 2 minutes, 35 seconds" [ref=e282]:
+                    - /url: /watch?v=QRb6a3m74lk&list=RDQRb6a3m74lk&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                    - text: Suitcase Blues
+                - generic [ref=e286]: 756 views
+              - generic [ref=e287]:
+                - link "Go to channel Hersal Thomas - Topic" [ref=e288]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+                - link "Hersal Thomas - Topic" [ref=e293]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+              - generic [ref=e294]:
+                - generic [ref=e295]: Provided to YouTube by The Orchard Enterprises Suitcase Blues · Hersal Thomas Suitcase Blues ℗ 2015 Suncoast Music ...
+                - tooltip "tooltip"
+          - generic [ref=e297]:
+            - link [ref=e299] [cursor=pointer]:
+              - /url: /watch?v=_4Gtlv2LTXM&list=RD_4Gtlv2LTXM&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e301] [cursor=pointer]:
+              - generic [ref=e302]:
+                - heading "Suitcase Blues 2 minutes, 35 seconds" [level=3] [ref=e304]:
+                  - link "Suitcase Blues 2 minutes, 35 seconds" [ref=e305]:
+                    - /url: /watch?v=_4Gtlv2LTXM&list=RD_4Gtlv2LTXM&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+                    - text: Suitcase Blues
+                - generic [ref=e309]: 119 views
+              - generic [ref=e310]:
+                - link "Go to channel Hersal Thomas - Topic" [ref=e311]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+                - link "Hersal Thomas - Topic" [ref=e316]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+              - generic [ref=e317]:
+                - generic [ref=e318]: Provided to YouTube by The Orchard Enterprises Suitcase Blues · Hersal Thomas Head Rag Hop ℗ 2015 JSP Records Released ...
+                - tooltip "tooltip"
+          - generic [ref=e320]:
+            - link [ref=e322] [cursor=pointer]:
+              - /url: /watch?v=Wh-9m3W-p8w&list=RDWh-9m3W-p8w&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+            - generic [ref=e324] [cursor=pointer]:
+              - generic [ref=e325]:
+                - heading "Barrelhouse Blues Piano • The Suitcase Blues (1925) by Hersal Thomas • Ethan Leinwand 3 minutes, 35 seconds" [level=3] [ref=e327]:
+                  - link "Barrelhouse Blues Piano • The Suitcase Blues (1925) by Hersal Thomas • Ethan Leinwand 3 minutes, 35 seconds" [ref=e328]:
+                    - /url: /watch?v=Wh-9m3W-p8w&list=RDWh-9m3W-p8w&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                    - text: Barrelhouse Blues Piano • The Suitcase Blues (1925) by Hersal Thomas • Ethan Leinwand
+                - generic [ref=e331]:
+                  - generic [ref=e332]: 7.6K views
+                  - generic [ref=e333]: •5 years ago
+              - generic [ref=e334]:
+                - link "Go to channel Ethan Leinwand" [ref=e335]:
+                  - /url: /@EthanLeinwand
+                - link "Ethan Leinwand" [ref=e341]:
+                  - /url: /@EthanLeinwand
+              - generic [ref=e342]:
+                - generic [ref=e343]: In the early 1920s, Hersal Thomas rode into Chicago with a suitcase full of piano moves. He was a young prodigy, and he was ...
+                - tooltip "tooltip"
+          - generic [ref=e345]:
+            - link [ref=e347] [cursor=pointer]:
+              - /url: /watch?v=JKUwUmpem-c&list=RDJKUwUmpem-c&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+            - generic [ref=e349] [cursor=pointer]:
+              - generic [ref=e350]:
+                - heading "Suitcase Blues 2 minutes, 35 seconds" [level=3] [ref=e352]:
+                  - link "Suitcase Blues 2 minutes, 35 seconds" [ref=e353]:
+                    - /url: /watch?v=JKUwUmpem-c&list=RDJKUwUmpem-c&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                    - text: Suitcase Blues
+                - generic [ref=e357]: 25 views
+              - generic [ref=e358]:
+                - link "Go to channel Hersal Thomas - Topic" [ref=e359]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+                - link "Hersal Thomas - Topic" [ref=e364]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+              - generic [ref=e365]:
+                - generic [ref=e366]: "Provided to YouTube by Believe SAS Suitcase Blues · Hersal Thomas Chicago Blues ℗ Bamboodi Released on: 2017-03-03 ..."
+                - tooltip "tooltip"
+          - generic [ref=e368]:
+            - link [ref=e370] [cursor=pointer]:
+              - /url: /watch?v=jBQitJLCM5E&list=RDjBQitJLCM5E&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+            - generic [ref=e372] [cursor=pointer]:
+              - generic [ref=e373]:
+                - heading "Suitcase Blues 2 minutes, 33 seconds" [level=3] [ref=e375]:
+                  - link "Suitcase Blues 2 minutes, 33 seconds" [ref=e376]:
+                    - /url: /watch?v=jBQitJLCM5E&list=RDjBQitJLCM5E&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                    - text: Suitcase Blues
+                - generic [ref=e380]: 74 views
+              - generic [ref=e381]:
+                - link "Go to channel Hersal Thomas - Topic" [ref=e382]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+                - link "Hersal Thomas - Topic" [ref=e387]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+              - generic [ref=e388]:
+                - generic [ref=e389]: "Provided to YouTube by IIP-DDS Suitcase Blues · Hersal Thomas Squat It ℗ Roots Released on: 2000-01-01 Artist: Hersal ..."
+                - tooltip "tooltip"
+          - generic [ref=e391]:
+            - link [ref=e393] [cursor=pointer]:
+              - /url: /watch?v=DscDmePFI2c&list=RDDscDmePFI2c&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+            - generic [ref=e395] [cursor=pointer]:
+              - generic [ref=e396]:
+                - heading "Hersal Thomas - Suitcase Blues 2 minutes, 36 seconds" [level=3] [ref=e398]:
+                  - link "Hersal Thomas - Suitcase Blues 2 minutes, 36 seconds" [ref=e399]:
+                    - /url: /watch?v=DscDmePFI2c&list=RDDscDmePFI2c&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                    - text: Hersal Thomas - Suitcase Blues
+                - generic [ref=e402]:
+                  - generic [ref=e403]: 11K views
+                  - generic [ref=e404]: •15 years ago
+              - generic [ref=e405]:
+                - link "Go to channel blindleroygarnett" [ref=e406]:
+                  - /url: /@blindleroygarnett
+                - link "blindleroygarnett" [ref=e411]:
+                  - /url: /@blindleroygarnett
+              - generic [ref=e412]:
+                - text: The original (1925).
+                - tooltip "tooltip"
+          - generic [ref=e414]:
+            - link [ref=e416] [cursor=pointer]:
+              - /url: /watch?v=zHMTVIlC53Y&list=RDzHMTVIlC53Y&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e418] [cursor=pointer]:
+              - generic [ref=e419]:
+                - heading "Suitcase Blues 2 minutes, 35 seconds" [level=3] [ref=e421]:
+                  - link "Suitcase Blues 2 minutes, 35 seconds" [ref=e422]:
+                    - /url: /watch?v=zHMTVIlC53Y&list=RDzHMTVIlC53Y&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+                    - text: Suitcase Blues
+                - generic [ref=e426]: 20 views
+              - generic [ref=e427]:
+                - link "Go to channel Hersal Thomas - Topic" [ref=e428]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+                - link "Hersal Thomas - Topic" [ref=e433]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+              - generic [ref=e434]:
+                - generic [ref=e435]: Provided to YouTube by The Orchard Enterprises Suitcase Blues · Thomas · Hersal Thomas Chicago Urban Blues ℗ 2007 (p) ...
+                - tooltip "tooltip"
+          - generic [ref=e437]:
+            - link [ref=e439] [cursor=pointer]:
+              - /url: /watch?v=m3nWaVH8CSc&list=RDm3nWaVH8CSc&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+            - generic [ref=e441] [cursor=pointer]:
+              - generic [ref=e442]:
+                - heading "Hersal Blues 2 minutes, 53 seconds" [level=3] [ref=e444]:
+                  - link "Hersal Blues 2 minutes, 53 seconds" [ref=e445]:
+                    - /url: /watch?v=m3nWaVH8CSc&list=RDm3nWaVH8CSc&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                    - text: Hersal Blues
+                - generic [ref=e449]: 708 views
+              - generic [ref=e450]:
+                - link "Go to channel Hersal Thomas - Topic" [ref=e451]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+                - link "Hersal Thomas - Topic" [ref=e456]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+              - generic [ref=e457]:
+                - generic [ref=e458]: Provided to YouTube by The Orchard Enterprises Hersal Blues · Hersal Thomas Suitcase Blues ℗ 2015 Suncoast Music ...
+                - tooltip "tooltip"
+          - generic [ref=e460]:
+            - link [ref=e462] [cursor=pointer]:
+              - /url: /watch?v=2f57uJ4bIpI&list=RD2f57uJ4bIpI&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+            - generic [ref=e464] [cursor=pointer]:
+              - generic [ref=e465]:
+                - heading "Suitcase Blues 2 minutes, 35 seconds" [level=3] [ref=e467]:
+                  - link "Suitcase Blues 2 minutes, 35 seconds" [ref=e468]:
+                    - /url: /watch?v=2f57uJ4bIpI&list=RD2f57uJ4bIpI&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                    - text: Suitcase Blues
+                - generic [ref=e472]: 15 views
+              - generic [ref=e473]:
+                - link "Go to channel Hersal Thomas - Topic" [ref=e474]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+                - link "Hersal Thomas - Topic" [ref=e479]:
+                  - /url: /channel/UCHqHZe8ldACJlAhl9qFHZAQ
+              - generic [ref=e480]:
+                - generic [ref=e481]: "Provided to YouTube by ITwinBirdz Suitcase Blues · Hersal Thomas It's Blues Time ℗ Railroad Released on: 2016-08-24 ..."
+                - tooltip "tooltip"
+          - generic [ref=e483]:
+            - link [ref=e485] [cursor=pointer]:
+              - /url: /watch?v=iVjQ94UcUuk&list=RDiVjQ94UcUuk&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+            - generic [ref=e487] [cursor=pointer]:
+              - generic [ref=e488]:
+                - heading "Hersal Thomas-Suitcase Blues 2 minutes, 35 seconds" [level=3] [ref=e490]:
+                  - link "Hersal Thomas-Suitcase Blues 2 minutes, 35 seconds" [ref=e491]:
+                    - /url: /watch?v=iVjQ94UcUuk&list=RDiVjQ94UcUuk&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                    - text: Hersal Thomas-Suitcase Blues
+                - generic [ref=e494]:
+                  - generic [ref=e495]: 528 views
+                  - generic [ref=e496]: •4 years ago
+              - generic [ref=e497]:
+                - link "Go to channel Traveler Into The Blue" [ref=e498]:
+                  - /url: /@TravelerIntoTheBlue
+                - link "Traveler Into The Blue" [ref=e503]:
+                  - /url: /@TravelerIntoTheBlue
+              - generic [ref=e504]:
+                - generic [ref=e505]: Hersal Thomas-Suitcase Blues.
+                - tooltip "tooltip"
+          - generic [ref=e507]:
+            - link [ref=e509] [cursor=pointer]:
+              - /url: /watch?v=LgUl_uEAwlA&list=RDLgUl_uEAwlA&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+            - generic [ref=e511] [cursor=pointer]:
+              - generic [ref=e512]:
+                - heading "Suitcase Blues by Albert Ammons | Eeco Rijken Rapp 4 minutes, 16 seconds" [level=3] [ref=e514]:
+                  - link "Suitcase Blues by Albert Ammons | Eeco Rijken Rapp 4 minutes, 16 seconds" [ref=e515]:
+                    - /url: /watch?v=LgUl_uEAwlA&list=RDLgUl_uEAwlA&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                    - text: Suitcase Blues by Albert Ammons | Eeco Rijken Rapp
+                - generic [ref=e518]:
+                  - generic [ref=e519]: 2.2K views
+                  - generic [ref=e520]: •2 years ago
+              - generic [ref=e521]:
+                - link "Go to channel Eeco Rijken Rapp" [ref=e522]:
+                  - /url: /channel/UCBXZwG2rcPAssvxEDpnunNw
+                - generic [ref=e523]:
+                  - link "Eeco Rijken Rapp" [ref=e527]:
+                    - /url: /channel/UCBXZwG2rcPAssvxEDpnunNw
+                  - img "Official Artist Channel" [ref=e530]
+              - generic [ref=e532]:
+                - generic [ref=e533]: "piano #boogiewoogie #cover Eeco Rijken Rapp plays the Suitcase Blues from Albert Ammons. Original this famous song was ..."
+                - tooltip "tooltip"
+              - img "4K" [ref=e536]:
+                - generic [ref=e537]: 4K
+          - generic [ref=e539]:
+            - link [ref=e541] [cursor=pointer]:
+              - /url: /watch?v=vXm3ToKUJQ4&list=RDvXm3ToKUJQ4&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e543] [cursor=pointer]:
+              - generic [ref=e544]:
+                - heading "Albert Ammons - Suitcase Blues 1939 (Blues Piano Synthesia) 4 minutes, 21 seconds" [level=3] [ref=e546]:
+                  - link "Albert Ammons - Suitcase Blues 1939 (Blues Piano Synthesia) 4 minutes, 21 seconds" [ref=e547]:
+                    - /url: /watch?v=vXm3ToKUJQ4&list=RDvXm3ToKUJQ4&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAdIHCQnZCgGHKiGM7w%3D%3D
+                    - text: Albert Ammons - Suitcase Blues 1939 (Blues Piano Synthesia)
+                - generic [ref=e550]:
+                  - generic [ref=e551]: 1.3K views
+                  - generic [ref=e552]: •9 months ago
+              - generic [ref=e553]:
+                - link "Go to channel itsRemco" [ref=e554]:
+                  - /url: /@itsRemco
+                - link "itsRemco" [ref=e559]:
+                  - /url: /@itsRemco
+              - generic [ref=e560]:
+                - generic [ref=e561]: "Suitcase Blues by Albert Ammons Sequenced by: John Farrell Original recording: https://youtu.be/L0MPrssvO60 Wikipedia: Albert ..."
+                - tooltip "tooltip"
+              - img "4K" [ref=e564]:
+                - generic [ref=e565]: 4K
+          - generic [ref=e567]:
+            - heading "People also watched" [level=2] [ref=e570]:
+              - generic [ref=e572]: People also watched
+            - generic [ref=e574]:
+              - generic [ref=e575]:
+                - generic [ref=e577]:
+                  - link [ref=e579] [cursor=pointer]:
+                    - /url: /watch?v=-GnZPIb0rkw&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlcw%3D%3D
+                  - generic [ref=e581] [cursor=pointer]:
+                    - generic [ref=e582]:
+                      - heading "Bowler Hat and Leather Boots | The Avengers (Laurie Johnson) 19 minutes" [level=3] [ref=e584]:
+                        - link "Bowler Hat and Leather Boots | The Avengers (Laurie Johnson) 19 minutes" [ref=e585]:
+                          - /url: /watch?v=-GnZPIb0rkw&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlcw%3D%3D
+                          - text: Bowler Hat and Leather Boots | The Avengers (Laurie Johnson)
+                      - generic [ref=e588]:
+                        - generic [ref=e589]: 32K views
+                        - generic [ref=e590]: •5 months ago
+                    - generic [ref=e591]:
+                      - link "Go to channel Piano Jazz Concept" [ref=e592]:
+                        - /url: /@Pianojazzconcept
+                      - link "Piano Jazz Concept" [ref=e597]:
+                        - /url: /@Pianojazzconcept
+                    - generic [ref=e598]:
+                      - text: "The Basics of Harmonization: https://www.pianojazzconcept.com/produit/les-bases-de-lharmonisation-2-2/ Index A: https://piano ..."
+                      - tooltip "tooltip"
+                - generic [ref=e600]:
+                  - link [ref=e602] [cursor=pointer]:
+                    - /url: /watch?v=RBu5afyKA7U&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlcw%3D%3D
+                  - generic [ref=e604] [cursor=pointer]:
+                    - generic [ref=e605]:
+                      - heading "Axel Zwingenberger - Suitcase Blues 7 minutes, 34 seconds" [level=3] [ref=e607]:
+                        - link "Axel Zwingenberger - Suitcase Blues 7 minutes, 34 seconds" [ref=e608]:
+                          - /url: /watch?v=RBu5afyKA7U&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlcw%3D%3D
+                          - text: Axel Zwingenberger - Suitcase Blues
+                      - generic [ref=e611]:
+                        - generic [ref=e612]: 6.8K views
+                        - generic [ref=e613]: •12 years ago
+                    - generic [ref=e614]:
+                      - link "Go to channel boogiebluester" [ref=e615]:
+                        - /url: /@boogiebluester
+                      - link "boogiebluester" [ref=e620]:
+                        - /url: /@boogiebluester
+                    - generic [ref=e621]:
+                      - generic [ref=e622]: Recording made on the 28th of September at the Boogie Woogie House Party of Eeco Rijken Rapp in Apeldoorn, The ...
+                      - tooltip "tooltip"
+                - generic [ref=e624]:
+                  - link [ref=e626] [cursor=pointer]:
+                    - /url: /watch?v=2AgUpEWggss&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlcw%3D%3D
+                  - generic [ref=e628] [cursor=pointer]:
+                    - generic [ref=e629]:
+                      - heading "You’ve Been Practicing Harmony Wrong… (feat. Luther Allison) 16 minutes" [level=3] [ref=e631]:
+                        - link "You’ve Been Practicing Harmony Wrong… (feat. Luther Allison) 16 minutes" [ref=e632]:
+                          - /url: /watch?v=2AgUpEWggss&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlcw%3D%3D
+                          - text: You’ve Been Practicing Harmony Wrong… (feat. Luther Allison)
+                      - generic [ref=e635]:
+                        - generic [ref=e636]: 65K views
+                        - generic [ref=e637]: •1 month ago
+                    - generic [ref=e638]:
+                      - link "Go to channel Jazz Lesson Videos" [ref=e639]:
+                        - /url: /@jazzlessonvideos
+                      - link "Jazz Lesson Videos" [ref=e644]:
+                        - /url: /@jazzlessonvideos
+                    - generic [ref=e645]:
+                      - text: Use code "LA25" for $25 OFF Luther Allison's new video course "30-Day Jazz Harmony Chops!
+                      - tooltip "tooltip"
+                    - img "4K" [ref=e648]:
+                      - generic [ref=e649]: 4K
+                    - generic [ref=e652]:
+                      - generic [ref=e653]:
+                        - generic [ref=e657]: 9 chapters
+                        - button "Intro | Drop-2 Major Shapes | Quartal Voicings | Upper Structure Triads & Altered Harmony | Voice Leading with Block Chords | Comping | Sus & Phrygian Dominant | Playing Horizontally | Outro"
+                      - button "More" [ref=e662]
+                - generic [ref=e669]:
+                  - link [ref=e671] [cursor=pointer]:
+                    - /url: /watch?v=HcHT_y451t4&list=RDHcHT_y451t4&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                  - generic [ref=e673] [cursor=pointer]:
+                    - generic [ref=e674]:
+                      - heading "Suitcase Blues 5 minutes, 19 seconds" [level=3] [ref=e676]:
+                        - link "Suitcase Blues 5 minutes, 19 seconds" [ref=e677]:
+                          - /url: /watch?v=HcHT_y451t4&list=RDHcHT_y451t4&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                          - text: Suitcase Blues
+                      - generic [ref=e680]:
+                        - generic [ref=e681]: 3.9K views
+                        - generic [ref=e682]: •16 years ago
+                    - generic [ref=e683]:
+                      - link "Go to channel teaspills" [ref=e684]:
+                        - /url: /@teaspills
+                      - link "teaspills" [ref=e689]:
+                        - /url: /@teaspills
+                    - generic [ref=e690]:
+                      - generic [ref=e691]: Niels von der Leyen plays piano in Los Angeles. June 27, 2009.
+                      - tooltip "tooltip"
+              - generic "+6 more" [ref=e693] [cursor=pointer]
+          - generic [ref=e695]:
+            - link [ref=e697] [cursor=pointer]:
+              - /url: /watch?v=for8cJCcuQM&list=RDfor8cJCcuQM&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+            - generic [ref=e699] [cursor=pointer]:
+              - generic [ref=e700]:
+                - heading "'Suitcase Blues' (Hersal Thomas) - Bill Westcott 3 minutes, 16 seconds" [level=3] [ref=e702]:
+                  - link "'Suitcase Blues' (Hersal Thomas) - Bill Westcott 3 minutes, 16 seconds" [ref=e703]:
+                    - /url: /watch?v=for8cJCcuQM&list=RDfor8cJCcuQM&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                    - text: "'Suitcase Blues' (Hersal Thomas) - Bill Westcott"
+                - generic [ref=e706]:
+                  - generic [ref=e707]: 1.5K views
+                  - generic [ref=e708]: •15 years ago
+              - generic [ref=e709]:
+                - link "Go to channel Bill Westcott" [ref=e710]:
+                  - /url: /@BillWestcottPiano
+                - link "Bill Westcott" [ref=e715]:
+                  - /url: /@BillWestcottPiano
+              - generic [ref=e716]:
+                - generic [ref=e717]: "\"Suitcase Blues\" by Hersal Thomas. Performed by Bill Westcott. Recorded October 13th, 2010 at the Arts and Letters Club of ..."
+                - tooltip "tooltip"
+          - generic [ref=e719]:
+            - link [ref=e721] [cursor=pointer]:
+              - /url: /watch?v=yLXFOwhxFC0&list=RDyLXFOwhxFC0&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+            - generic [ref=e723] [cursor=pointer]:
+              - generic [ref=e724]:
+                - heading "Suitcase Blues - Hersal Thomas 3 minutes, 24 seconds" [level=3] [ref=e726]:
+                  - link "Suitcase Blues - Hersal Thomas 3 minutes, 24 seconds" [ref=e727]:
+                    - /url: /watch?v=yLXFOwhxFC0&list=RDyLXFOwhxFC0&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                    - text: Suitcase Blues - Hersal Thomas
+                - generic [ref=e730]:
+                  - generic [ref=e731]: 14K views
+                  - generic [ref=e732]: •19 years ago
+              - generic [ref=e733]:
+                - link "Go to channel Eeco Rijken Rapp" [ref=e734]:
+                  - /url: /channel/UCBXZwG2rcPAssvxEDpnunNw
+                - generic [ref=e735]:
+                  - link "Eeco Rijken Rapp" [ref=e739]:
+                    - /url: /channel/UCBXZwG2rcPAssvxEDpnunNw
+                  - img "Official Artist Channel" [ref=e742]
+              - generic [ref=e744]:
+                - generic [ref=e745]: Suitcase Blues by Hersal Thomas.
+                - tooltip "tooltip"
+          - generic [ref=e747]:
+            - link [ref=e749] [cursor=pointer]:
+              - /url: /watch?v=sFgxG7ApZvM&list=RDsFgxG7ApZvM&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+            - generic [ref=e751] [cursor=pointer]:
+              - generic [ref=e752]:
+                - heading "Suitcase Blues - Stefan Ulbricht 5 minutes, 30 seconds" [level=3] [ref=e754]:
+                  - link "Suitcase Blues - Stefan Ulbricht 5 minutes, 30 seconds" [ref=e755]:
+                    - /url: /watch?v=sFgxG7ApZvM&list=RDsFgxG7ApZvM&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                    - text: Suitcase Blues - Stefan Ulbricht
+                - generic [ref=e758]:
+                  - generic [ref=e759]: 6.6K views
+                  - generic [ref=e760]: •3 years ago
+              - generic [ref=e761]:
+                - link "Go to channel Stefan Ulbricht" [ref=e762]:
+                  - /url: /@StefanUlbricht
+                - link "Stefan Ulbricht" [ref=e767]:
+                  - /url: /@StefanUlbricht
+              - generic [ref=e768]:
+                - generic [ref=e769]: "suitcaseblues #stefanulbricht #hersalthomas #boogie #blues #albertammons #piano #music #song Hello everybody! Here is my ..."
+                - tooltip "tooltip"
+              - img "4K" [ref=e772]:
+                - generic [ref=e773]: 4K
+          - generic [ref=e775]:
+            - link [ref=e777] [cursor=pointer]:
+              - /url: /watch?v=JBsfEY-lCgg&list=RDJBsfEY-lCgg&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+            - generic [ref=e779] [cursor=pointer]:
+              - generic [ref=e780]:
+                - heading "Suitcase Blues - Hersal Thomas 2 minutes, 48 seconds" [level=3] [ref=e782]:
+                  - link "Suitcase Blues - Hersal Thomas 2 minutes, 48 seconds" [ref=e783]:
+                    - /url: /watch?v=JBsfEY-lCgg&list=RDJBsfEY-lCgg&start_radio=1&pp=ygUoSGVyc2FsIFRob21hcyBibHVlcyBwaWFubyBzdWl0Y2FzZSBibHVlc6AHAQ%3D%3D
+                    - text: Suitcase Blues - Hersal Thomas
+                - generic [ref=e786]:
+                  - generic [ref=e787]: 3.9K views
+                  - generic [ref=e788]: •12 years ago
+              - generic [ref=e789]:
+                - link "Go to channel Eeco Rijken Rapp" [ref=e790]:
+                  - /url: /channel/UCBXZwG2rcPAssvxEDpnunNw
+                - generic [ref=e791]:
+                  - link "Eeco Rijken Rapp" [ref=e795]:
+                    - /url: /channel/UCBXZwG2rcPAssvxEDpnunNw
+                  - img "Official Artist Channel" [ref=e798]
+              - generic [ref=e800]:
+                - generic [ref=e801]: Suitcase Blues from Hersal Thomas Please like / subscribe ..Happy Holidays! http://www.eecoboogiewoogie.com ...
+                - tooltip "tooltip"

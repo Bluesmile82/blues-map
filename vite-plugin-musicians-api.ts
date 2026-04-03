@@ -2,6 +2,9 @@ import type { Plugin, ViteDevServer } from 'vite';
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore — plain JS module
+import { upsertMusician } from './db-sync.js';
 
 const IMAGES_DIR = path.resolve('public/images/musicians');
 const THUMBNAIL_SIZE = 200; // px, square crop
@@ -127,6 +130,7 @@ export function musiciansApiPlugin(): Plugin {
             createBackup('pre-save');
             musicians[index] = updated;
             fs.writeFileSync(MUSICIANS_PATH, JSON.stringify(musicians, null, 2), 'utf-8');
+            upsertMusician(updated);
             console.log(`[musicians-api] ✅ Updated: ${updated.name}`);
             res.end(JSON.stringify(updated));
             return;
@@ -147,6 +151,7 @@ export function musiciansApiPlugin(): Plugin {
             createBackup('pre-save');
             musicians.push(created);
             fs.writeFileSync(MUSICIANS_PATH, JSON.stringify(musicians, null, 2), 'utf-8');
+            upsertMusician(created);
             console.log(`[musicians-api] ✅ Created: ${created.name}`);
             res.end(JSON.stringify(created));
             return;

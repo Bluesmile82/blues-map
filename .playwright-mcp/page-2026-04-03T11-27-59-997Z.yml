@@ -1,0 +1,636 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+            - tab "Under 4 min" [ref=e110] [cursor=pointer]:
+              - generic [ref=e112]: Under 4 min
+            - tab "4 - 20 min" [ref=e119] [cursor=pointer]:
+              - generic [ref=e121]: 4 - 20 min
+            - tab "Over 20 min" [ref=e128] [cursor=pointer]:
+              - generic [ref=e130]: Over 20 min
+          - button "Next" [ref=e138] [cursor=pointer]
+        - link "About these results" [ref=e147] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e148]: About these results
+        - generic [ref=e155]:
+          - button "Search filters" [ref=e157] [cursor=pointer]:
+            - generic [ref=e158]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e169]:
+        - generic [ref=e171]:
+          - link [ref=e173] [cursor=pointer]:
+            - /url: /watch?v=hJiqX16ASZY&list=RDhJiqX16ASZY&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+          - generic [ref=e175] [cursor=pointer]:
+            - generic [ref=e176]:
+              - heading "Katherine Davis and Erwin Helfer 9 minutes, 42 seconds" [level=3] [ref=e178]:
+                - link "Katherine Davis and Erwin Helfer 9 minutes, 42 seconds" [ref=e179]:
+                  - /url: /watch?v=hJiqX16ASZY&list=RDhJiqX16ASZY&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                  - text: Katherine Davis and Erwin Helfer
+              - generic [ref=e182]:
+                - generic [ref=e183]: 2.8K views
+                - generic [ref=e184]: •19 years ago
+            - generic [ref=e185]:
+              - link "Go to channel zaxmania" [ref=e186]:
+                - /url: /@zaxmania
+              - link "zaxmania" [ref=e192]:
+                - /url: /@zaxmania
+            - generic [ref=e193]:
+              - generic [ref=e194]: Music at a backyard party for the Prop Theater in Chicago in 2004. Blues singer Katherine Davis with Erwin Helfer on piano ...
+              - tooltip "tooltip"
+        - generic [ref=e196]:
+          - link [ref=e198] [cursor=pointer]:
+            - /url: /watch?v=pLfYMP6SAJU&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmU%3D
+          - generic [ref=e200] [cursor=pointer]:
+            - generic [ref=e201]:
+              - heading "Katherine Davis' Legends of Chicago Blues Show | Erwin Helfer 1 hour, 2 minutes" [level=3] [ref=e203]:
+                - link "Katherine Davis' Legends of Chicago Blues Show | Erwin Helfer 1 hour, 2 minutes" [ref=e204]:
+                  - /url: /watch?v=pLfYMP6SAJU&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmU%3D
+                  - text: Katherine Davis' Legends of Chicago Blues Show | Erwin Helfer
+              - generic [ref=e207]:
+                - generic [ref=e208]: 155 views
+                - generic [ref=e209]: •4 years ago
+            - generic [ref=e210]:
+              - link "Go to channel Blues Singer Katherine Davis" [ref=e211]:
+                - /url: /@BluesSingerKatherineDavis
+              - link "Blues Singer Katherine Davis" [ref=e217]:
+                - /url: /@BluesSingerKatherineDavis
+            - generic [ref=e218]:
+              - text: "New Rhythm Arts Center livestream program hosted by Katherine Davis. You can support Katherine through paypal: ..."
+              - tooltip "tooltip"
+            - generic [ref=e221]:
+              - generic [ref=e222]:
+                - generic [ref=e226]: 4 moments
+                - button "Favorite Superhero Cartoon Character | Stella | Does Music Help You To Relax | Book on How To Play Blues Piano"
+              - button "More" [ref=e231]
+        - generic [ref=e238]:
+          - link [ref=e240] [cursor=pointer]:
+            - /url: /watch?v=Flwnbc-qNCw&list=RDFlwnbc-qNCw&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+          - generic [ref=e242] [cursor=pointer]:
+            - generic [ref=e243]:
+              - heading "Steven with Erwin Helfer Jam a duet on one piano 5-25-09 1 minute, 38 seconds" [level=3] [ref=e245]:
+                - link "Steven with Erwin Helfer Jam a duet on one piano 5-25-09 1 minute, 38 seconds" [ref=e246]:
+                  - /url: /watch?v=Flwnbc-qNCw&list=RDFlwnbc-qNCw&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                  - text: Steven with Erwin Helfer Jam a duet on one piano 5-25-09
+              - generic [ref=e249]:
+                - generic [ref=e250]: 189 views
+                - generic [ref=e251]: •16 years ago
+            - generic [ref=e252]:
+              - link "Go to channel Piano by Steven Solomon" [ref=e253]:
+                - /url: /@PianobySteven
+              - link "Piano by Steven Solomon" [ref=e259]:
+                - /url: /@PianobySteven
+            - generic [ref=e260]:
+              - generic [ref=e261]: Steven jams with Erwin Helfer, famous veteran Boogie Woogie Jazz Pianist, at a private party on 5-25-09 ...
+              - tooltip "tooltip"
+        - generic [ref=e263]:
+          - link [ref=e265] [cursor=pointer]:
+            - /url: /watch?v=9GLTkonor9c&list=RD9GLTkonor9c&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+            - img [ref=e267]
+            - img [ref=e270]:
+              - generic [ref=e272]: 3:22
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e273] [cursor=pointer]:
+            - generic [ref=e274]:
+              - heading "Pine Tops Boogey, performed by Erwin Helfer 3 minutes, 22 seconds" [level=3] [ref=e276]:
+                - link "Pine Tops Boogey, performed by Erwin Helfer 3 minutes, 22 seconds" [ref=e277]:
+                  - /url: /watch?v=9GLTkonor9c&list=RD9GLTkonor9c&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                  - text: Pine Tops Boogey, performed by Erwin Helfer
+              - generic [ref=e280]:
+                - generic [ref=e281]: 4.9K views
+                - generic [ref=e282]: •15 years ago
+            - generic [ref=e283]:
+              - link "Go to channel Ronald Silberstein" [ref=e284]:
+                - /url: /@ronsilberstein
+              - link "Ronald Silberstein" [ref=e290]:
+                - /url: /@ronsilberstein
+            - generic [ref=e291]:
+              - generic [ref=e292]: Chicago blues legend Erwin Helfer performs Pine Tops Boogey by Pine Tops Smith, first recorded in 1929. This is an impromptu ...
+              - tooltip "tooltip"
+        - generic [ref=e294]:
+          - link [ref=e296] [cursor=pointer]:
+            - /url: /watch?v=1MNLfJnZI8w&list=RD1MNLfJnZI8w&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+          - generic [ref=e298] [cursor=pointer]:
+            - generic [ref=e299]:
+              - 'heading "Erwin Helfer: Boogie Woogie Master LIVE in Riverside Room (2019) 53 minutes" [level=3] [ref=e301]':
+                - 'link "Erwin Helfer: Boogie Woogie Master LIVE in Riverside Room (2019) 53 minutes" [ref=e302]':
+                  - /url: /watch?v=1MNLfJnZI8w&list=RD1MNLfJnZI8w&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                  - text: "Erwin Helfer: Boogie Woogie Master LIVE in Riverside Room (2019)"
+              - generic [ref=e305]:
+                - generic [ref=e306]: 5.5K views
+                - generic [ref=e307]: •7 years ago
+            - generic [ref=e308]:
+              - link "Go to channel Family Piano Co - Max Filkins" [ref=e309]:
+                - /url: /@familypianoco
+              - link "Family Piano Co - Max Filkins" [ref=e314]:
+                - /url: /@familypianoco
+            - generic [ref=e315]:
+              - generic [ref=e316]: First half of Erwin Helfer's performance at Family Piano's Riverside Room in Waukegan, IL on March 23, 2019. For more ...
+              - tooltip "tooltip"
+        - generic [ref=e318]:
+          - link [ref=e320] [cursor=pointer]:
+            - /url: /watch?v=94RFSLDzREI&list=RD94RFSLDzREI&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+          - generic [ref=e322] [cursor=pointer]:
+            - generic [ref=e323]:
+              - heading "Georgia (Hoagy Carmichael) performed by Erwin Helfer 4 minutes, 29 seconds" [level=3] [ref=e325]:
+                - link "Georgia (Hoagy Carmichael) performed by Erwin Helfer 4 minutes, 29 seconds" [ref=e326]:
+                  - /url: /watch?v=94RFSLDzREI&list=RD94RFSLDzREI&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                  - text: Georgia (Hoagy Carmichael) performed by Erwin Helfer
+              - generic [ref=e329]:
+                - generic [ref=e330]: 2.9K views
+                - generic [ref=e331]: •15 years ago
+            - generic [ref=e332]:
+              - link "Go to channel Ronald Silberstein" [ref=e333]:
+                - /url: /@ronsilberstein
+              - link "Ronald Silberstein" [ref=e339]:
+                - /url: /@ronsilberstein
+            - generic [ref=e340]:
+              - generic [ref=e341]: Chicago blues Legend, Erwin Helfer, gives an impromptu concert at his home on Erwin Helfer Way, Chicago, IL. Recorded on ...
+              - tooltip "tooltip"
+        - generic [ref=e343]:
+          - link [ref=e345] [cursor=pointer]:
+            - /url: /watch?v=WURhsy9rgm0&list=RDWURhsy9rgm0&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+          - generic [ref=e347] [cursor=pointer]:
+            - generic [ref=e348]:
+              - heading "Make Me a Pallet on the Floor (Live) 5 minutes, 2 seconds" [level=3] [ref=e350]:
+                - link "Make Me a Pallet on the Floor (Live) 5 minutes, 2 seconds" [ref=e351]:
+                  - /url: /watch?v=WURhsy9rgm0&list=RDWURhsy9rgm0&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                  - text: Make Me a Pallet on the Floor (Live)
+              - generic [ref=e355]: 224 views
+            - generic [ref=e356]:
+              - link "Go to channel Erwin Helfer - Topic" [ref=e357]:
+                - /url: /channel/UClhGDYDfAO19LEypTOUiARA
+              - link "Erwin Helfer - Topic" [ref=e362]:
+                - /url: /channel/UClhGDYDfAO19LEypTOUiARA
+            - generic [ref=e363]:
+              - generic [ref=e364]: Provided to YouTube by CDBaby Make Me a Pallet on the Floor (Live) · Erwin Helfer · Estelle Mama Yancey · Odie Payne Jr ...
+              - tooltip "tooltip"
+        - generic [ref=e366]:
+          - link [ref=e368] [cursor=pointer]:
+            - /url: /watch?v=lnCU-G6dEK8&list=RDlnCU-G6dEK8&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+          - generic [ref=e370] [cursor=pointer]:
+            - generic [ref=e371]:
+              - heading "Day Dreaming (piano) Erwin Helfer 3 minutes, 6 seconds" [level=3] [ref=e373]:
+                - link "Day Dreaming (piano) Erwin Helfer 3 minutes, 6 seconds" [ref=e374]:
+                  - /url: /watch?v=lnCU-G6dEK8&list=RDlnCU-G6dEK8&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                  - text: Day Dreaming (piano) Erwin Helfer
+              - generic [ref=e377]:
+                - generic [ref=e378]: 263 views
+                - generic [ref=e379]: •6 years ago
+            - generic [ref=e380]:
+              - link "Go to channel Caleb Marx" [ref=e381]:
+                - /url: /@kinghippo61
+              - link "Caleb Marx" [ref=e386]:
+                - /url: /@kinghippo61
+            - generic [ref=e387]:
+              - generic [ref=e388]: Cover of Erwin Helfer's “Day Dreaming”.
+              - tooltip "tooltip"
+        - generic [ref=e390]:
+          - link [ref=e392] [cursor=pointer]:
+            - /url: /watch?v=wmr03BClJBs&list=RDwmr03BClJBs&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+          - generic [ref=e394] [cursor=pointer]:
+            - generic [ref=e395]:
+              - heading "Erwin Helfer with John Brumbach and Lou Marini 1 hour, 4 minutes" [level=3] [ref=e397]:
+                - link "Erwin Helfer with John Brumbach and Lou Marini 1 hour, 4 minutes" [ref=e398]:
+                  - /url: /watch?v=wmr03BClJBs&list=RDwmr03BClJBs&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                  - text: Erwin Helfer with John Brumbach and Lou Marini
+              - generic [ref=e401]:
+                - generic [ref=e402]: 1.2K views
+                - generic [ref=e403]: •Streamed 4 years ago
+            - generic [ref=e404]:
+              - link "Go to channel Constellation Chicago" [ref=e405]:
+                - /url: /@constellationchicago
+              - link "Constellation Chicago" [ref=e410]:
+                - /url: /@constellationchicago
+            - generic [ref=e411]:
+              - generic [ref=e412]: Erwin Helfer, a Chicago boogie woogie innovator and master, has been forging his own piano music legacy. Erwin has been ...
+              - tooltip "tooltip"
+        - generic [ref=e414] [cursor=pointer]:
+          - link [ref=e415]:
+            - /url: /watch?v=1MNLfJnZI8w&list=RD1MNLfJnZI8w&start_radio=1
+            - generic [ref=e427]: Mix
+          - generic [ref=e430]:
+            - 'heading "Mix - Erwin Helfer: Boogie Woogie Master LIVE in Riverside Room (2019)" [level=3] [ref=e431]':
+              - 'link "Mix - Erwin Helfer: Boogie Woogie Master LIVE in Riverside Room (2019)" [ref=e432]':
+                - /url: /watch?v=1MNLfJnZI8w&list=RD1MNLfJnZI8w&start_radio=1
+            - generic [ref=e434]:
+              - generic [ref=e436]: David Lewis Luong, Erwin Helfer, Elvis Presley, and more
+              - 'link "Erwin Helfer: Boogie Woogie Master LIVE in Riverside Room (2019) · 53:43" [ref=e440]':
+                - /url: /watch?v=1MNLfJnZI8w&list=RD1MNLfJnZI8w&start_radio=1
+              - link "Best of Boogie Woogie Piano & Boogie Woogie Piano Solo Music · 1:01:54" [ref=e443]:
+                - /url: /watch?v=J7dKgryrNYk&list=RD1MNLfJnZI8w&start_radio=1
+        - generic [ref=e446]:
+          - link [ref=e448] [cursor=pointer]:
+            - /url: /watch?v=C8GC92KryyM&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmU%3D
+          - generic [ref=e450] [cursor=pointer]:
+            - generic [ref=e451]:
+              - heading "2014.03.29 - ERWIN HELFER @ SOUTHERN BLUES NIGHT - HEERLEN video3 3 minutes, 4 seconds" [level=3] [ref=e453]:
+                - link "2014.03.29 - ERWIN HELFER @ SOUTHERN BLUES NIGHT - HEERLEN video3 3 minutes, 4 seconds" [ref=e454]:
+                  - /url: /watch?v=C8GC92KryyM&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmU%3D
+                  - text: 2014.03.29 - ERWIN HELFER @ SOUTHERN BLUES NIGHT - HEERLEN video3
+              - generic [ref=e457]:
+                - generic [ref=e458]: 174 views
+                - generic [ref=e459]: •12 years ago
+            - generic [ref=e460]:
+              - link "Go to channel celis freddy" [ref=e461]:
+                - /url: /@celisfreddy7999
+              - link "celis freddy" [ref=e466]:
+                - /url: /@celisfreddy7999
+            - generic [ref=e467]:
+              - generic [ref=e468]: 2014.03.29 - ERWIN HELFER @ SOUTHERN BLUES NIGHT - HEERLEN video3.
+              - tooltip "tooltip"
+        - generic [ref=e470]:
+          - link [ref=e472] [cursor=pointer]:
+            - /url: /watch?v=C1jpgbHwklg&list=RDC1jpgbHwklg&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+          - generic [ref=e474] [cursor=pointer]:
+            - generic [ref=e475]:
+              - heading "I'm Not Hungy But I Like To Eat - Blues! 3 minutes, 50 seconds" [level=3] [ref=e477]:
+                - link "I'm Not Hungy But I Like To Eat - Blues! 3 minutes, 50 seconds" [ref=e478]:
+                  - /url: /watch?v=C1jpgbHwklg&list=RDC1jpgbHwklg&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                  - text: I'm Not Hungy But I Like To Eat - Blues!
+              - generic [ref=e482]: 340 views
+            - generic [ref=e483]:
+              - link "Go to channel Erwin Helfer - Topic" [ref=e484]:
+                - /url: /channel/UClhGDYDfAO19LEypTOUiARA
+              - link "Erwin Helfer - Topic" [ref=e489]:
+                - /url: /channel/UClhGDYDfAO19LEypTOUiARA
+            - generic [ref=e490]:
+              - generic [ref=e491]: Provided to YouTube by CDBaby I'm Not Hungy But I Like To Eat - Blues! · Erwin Helfer I'm Not Hungry But I Like To Eat - Blues!
+              - tooltip "tooltip"
+        - generic [ref=e493]:
+          - link [ref=e495] [cursor=pointer]:
+            - /url: /watch?v=zww1mTt1TrQ&list=RDzww1mTt1TrQ&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+          - generic [ref=e497] [cursor=pointer]:
+            - generic [ref=e498]:
+              - heading "Just A Closer Walk performed by Erwin Helfer 2 minutes, 56 seconds" [level=3] [ref=e500]:
+                - link "Just A Closer Walk performed by Erwin Helfer 2 minutes, 56 seconds" [ref=e501]:
+                  - /url: /watch?v=zww1mTt1TrQ&list=RDzww1mTt1TrQ&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                  - text: Just A Closer Walk performed by Erwin Helfer
+              - generic [ref=e504]:
+                - generic [ref=e505]: 1K views
+                - generic [ref=e506]: •15 years ago
+            - generic [ref=e507]:
+              - link "Go to channel Ronald Silberstein" [ref=e508]:
+                - /url: /@ronsilberstein
+              - link "Ronald Silberstein" [ref=e513]:
+                - /url: /@ronsilberstein
+            - generic [ref=e514]:
+              - generic [ref=e515]: Chicago blues legend Erwin Helfer performs this gospel tune at an impromptu concert at his home on Erwin Helfer Way, Chicago, ...
+              - tooltip "tooltip"
+        - generic [ref=e517]:
+          - heading "People also watched" [level=2] [ref=e520]:
+            - generic [ref=e522]: People also watched
+          - generic [ref=e524]:
+            - generic [ref=e525]:
+              - generic [ref=e527]:
+                - link [ref=e529] [cursor=pointer]:
+                  - /url: /watch?v=yEqB0SsVnxk&list=RDyEqB0SsVnxk&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                - generic [ref=e531] [cursor=pointer]:
+                  - generic [ref=e532]:
+                    - heading "Happy Boogie-Woogie Groove | Upbeat Piano Rhythm 1 hour" [level=3] [ref=e534]:
+                      - link "Happy Boogie-Woogie Groove | Upbeat Piano Rhythm 1 hour" [ref=e535]:
+                        - /url: /watch?v=yEqB0SsVnxk&list=RDyEqB0SsVnxk&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                        - text: Happy Boogie-Woogie Groove | Upbeat Piano Rhythm
+                    - generic [ref=e538]:
+                      - generic [ref=e539]: 2K views
+                      - generic [ref=e540]: •2 days ago
+                  - generic [ref=e541]:
+                    - link "Go to channel Blues Music" [ref=e542]:
+                      - /url: /@bluesmusic1976
+                    - link "Blues Music" [ref=e547]:
+                      - /url: /@bluesmusic1976
+                  - generic [ref=e548]:
+                    - generic [ref=e549]: Happy Boogie-Woogie Groove, Upbeat Piano Rhythm. This boogie woogie piano session brings a smooth yet upbeat energy, ...
+                    - tooltip "tooltip"
+                  - img "New" [ref=e552]:
+                    - generic [ref=e553]: New
+                  - generic [ref=e556]:
+                    - generic [ref=e557]:
+                      - generic [ref=e561]: 12 chapters
+                      - button "Boogie-Woogie Dance | Happy Feet Jive | Jumpin’ At The Daisy Room | Rock Me Baby Tonight | Feel the beat now | Rock That Boogie Shoes | Boogie queen | Jump The Beat | Tease That Boogie Beat | Shake that dress | Dance With Me, Baby | Boogie Wonderland"
+                    - button "More" [ref=e566]
+              - generic [ref=e573]:
+                - link [ref=e575] [cursor=pointer]:
+                  - /url: /watch?v=CXhftUsvOrQ&list=RDCXhftUsvOrQ&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                - generic [ref=e577] [cursor=pointer]:
+                  - generic [ref=e578]:
+                    - heading "Piano Blues Music - Blues Guitar and Piano Instrumental Ballads to Relax 8 hours" [level=3] [ref=e580]:
+                      - link "Piano Blues Music - Blues Guitar and Piano Instrumental Ballads to Relax 8 hours" [ref=e581]:
+                        - /url: /watch?v=CXhftUsvOrQ&list=RDCXhftUsvOrQ&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                        - text: Piano Blues Music - Blues Guitar and Piano Instrumental Ballads to Relax
+                    - generic [ref=e584]:
+                      - generic [ref=e585]: 1.6M views
+                      - generic [ref=e586]: •4 years ago
+                  - generic [ref=e587]:
+                    - link "Go to channel Blues Lounge" [ref=e588]:
+                      - /url: /channel/UCC4vs_6IdURyXrwYa74k-jw
+                    - generic [ref=e589]:
+                      - link "Blues Lounge" [ref=e593]:
+                        - /url: /channel/UCC4vs_6IdURyXrwYa74k-jw
+                      - img "Official Artist Channel" [ref=e596]
+                  - generic [ref=e598]:
+                    - generic [ref=e599]: Instrumental blues music ballads played on piano and guitar to listen to and relax. By Brian Grey Welcome to our Blues Lounge ...
+                    - tooltip "tooltip"
+              - generic [ref=e601]:
+                - link [ref=e603] [cursor=pointer]:
+                  - /url: /watch?v=UHtNHzKEA3g&list=RDUHtNHzKEA3g&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                - generic [ref=e605] [cursor=pointer]:
+                  - generic [ref=e606]:
+                    - heading "Simon Oslender, Steve Gadd, Will Lee & Bruno Müller - \"In Good Hands\" LIVE feat. Jakob Manz 6 minutes, 46 seconds" [level=3] [ref=e608]:
+                      - link "Simon Oslender, Steve Gadd, Will Lee & Bruno Müller - \"In Good Hands\" LIVE feat. Jakob Manz 6 minutes, 46 seconds" [ref=e609]:
+                        - /url: /watch?v=UHtNHzKEA3g&list=RDUHtNHzKEA3g&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                        - text: Simon Oslender, Steve Gadd, Will Lee & Bruno Müller - "In Good Hands" LIVE feat. Jakob Manz
+                    - generic [ref=e612]:
+                      - generic [ref=e613]: 3.5K views
+                      - generic [ref=e614]: •1 day ago
+                  - generic [ref=e615]:
+                    - link "Go to channel Simon Oslender" [ref=e616]:
+                      - /url: /channel/UCBeRVUsPT2I84ItVkB55RIQ
+                    - generic [ref=e617]:
+                      - link "Simon Oslender" [ref=e621]:
+                        - /url: /channel/UCBeRVUsPT2I84ItVkB55RIQ
+                      - img "Official Artist Channel" [ref=e624]
+                  - generic [ref=e626]:
+                    - generic [ref=e627]: "From the new live album \"On A Roll - Live\": Simon Oslender, Steve Gadd, Will Lee, Bruno Müller and special guest Jakob Manz ..."
+                    - tooltip "tooltip"
+                  - generic [ref=e628]:
+                    - img "New" [ref=e630]:
+                      - generic [ref=e631]: New
+                    - img "4K" [ref=e633]:
+                      - generic [ref=e634]: 4K
+              - generic [ref=e636]:
+                - link [ref=e638] [cursor=pointer]:
+                  - /url: /watch?v=41IIfUKAqYE&list=RD41IIfUKAqYE&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                - generic [ref=e640] [cursor=pointer]:
+                  - generic [ref=e641]:
+                    - heading "Richard Bargel - Erwin Helfer Trio - \"Rock This House\" Köln/Cologne, Germany 14.03.2013 7 minutes, 15 seconds" [level=3] [ref=e643]:
+                      - link "Richard Bargel - Erwin Helfer Trio - \"Rock This House\" Köln/Cologne, Germany 14.03.2013 7 minutes, 15 seconds" [ref=e644]:
+                        - /url: /watch?v=41IIfUKAqYE&list=RD41IIfUKAqYE&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                        - text: Richard Bargel - Erwin Helfer Trio - "Rock This House" Köln/Cologne, Germany 14.03.2013
+                    - generic [ref=e647]:
+                      - generic [ref=e648]: 3.9K views
+                      - generic [ref=e649]: •13 years ago
+                  - generic [ref=e650]:
+                    - link "Go to channel hellmuut2" [ref=e651]:
+                      - /url: /@hellmuut2
+                    - link "hellmuut2" [ref=e656]:
+                      - /url: /@hellmuut2
+                  - generic [ref=e657]:
+                    - generic [ref=e658]: Richard Bargel - Erwin Helfer Trio - Köln/Cologne, Germany 14.03.2013 "Rock This House" - Mississippi Beat/Part 5 im Alten ...
+                    - tooltip "tooltip"
+            - generic "+6 more" [ref=e660] [cursor=pointer]
+        - generic [ref=e662]:
+          - link [ref=e664] [cursor=pointer]:
+            - /url: /watch?v=Oqp-R800l3E&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmU%3D
+          - generic [ref=e666] [cursor=pointer]:
+            - generic [ref=e667]:
+              - heading "Erwin's Elevated Boogie 3 minutes, 5 seconds" [level=3] [ref=e669]:
+                - link "Erwin's Elevated Boogie 3 minutes, 5 seconds" [ref=e670]:
+                  - /url: /watch?v=Oqp-R800l3E&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmU%3D
+                  - text: Erwin's Elevated Boogie
+              - generic [ref=e673]:
+                - generic [ref=e674]: 60 views
+                - generic [ref=e675]: •5 years ago
+            - generic [ref=e676]:
+              - link "Go to channel Bob Hall" [ref=e677]:
+                - /url: /@bigsunflower88
+              - link "Bob Hall" [ref=e682]:
+                - /url: /@bigsunflower88
+            - generic [ref=e683]:
+              - generic [ref=e684]: Chicago pianist Erwin Helfer (see thumbnail) is one of the great originals and a direct connection to the earlier generation of ...
+              - tooltip "tooltip"
+        - generic [ref=e686]:
+          - link [ref=e688] [cursor=pointer]:
+            - /url: /watch?v=UdLiwPdyzD8&list=RDUdLiwPdyzD8&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e690] [cursor=pointer]:
+            - generic [ref=e691]:
+              - heading "Erwin Helfer, Chicago Blues Fest 2022 \"Georgia\" 6 minutes, 58 seconds" [level=3] [ref=e693]:
+                - link "Erwin Helfer, Chicago Blues Fest 2022 \"Georgia\" 6 minutes, 58 seconds" [ref=e694]:
+                  - /url: /watch?v=UdLiwPdyzD8&list=RDUdLiwPdyzD8&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Erwin Helfer, Chicago Blues Fest 2022 "Georgia"
+              - generic [ref=e697]:
+                - generic [ref=e698]: 602 views
+                - generic [ref=e699]: •3 years ago
+            - generic [ref=e700]:
+              - link "Go to channel ImagistStudioPresents ChiTownSoundz" [ref=e701]:
+                - /url: /@Imagist1369
+              - link "ImagistStudioPresents ChiTownSoundz" [ref=e706]:
+                - /url: /@Imagist1369
+            - generic [ref=e707]:
+              - generic [ref=e708]: After a three year absence the Blues Fest returned to Chicago for a four day stint in early June. The blues extravaganza was ...
+              - tooltip "tooltip"
+        - generic [ref=e709]:
+          - generic [ref=e712]:
+            - img [ref=e714]
+            - heading "Shorts" [level=2] [ref=e717]
+          - generic [ref=e718]:
+            - generic [ref=e719]:
+              - generic [ref=e722]:
+                - link [ref=e723] [cursor=pointer]:
+                  - /url: /shorts/YT2CXY2Rmw8
+                - generic [ref=e727] [cursor=pointer]:
+                  - 'link "Please #blues #piano #viral Follow thank you 🙏 😊" [ref=e728]':
+                    - /url: /shorts/YT2CXY2Rmw8
+                  - generic [ref=e729]: 37K views
+                - button "More actions" [ref=e731] [cursor=pointer]
+              - generic [ref=e739]:
+                - link [ref=e740] [cursor=pointer]:
+                  - /url: /shorts/RkM7_f4UIBs
+                - generic [ref=e744] [cursor=pointer]:
+                  - link "Gypsy Jazz Meets Blues – Dark Eyes Piano Live" [ref=e745]:
+                    - /url: /shorts/RkM7_f4UIBs
+                  - generic [ref=e746]: 28K views
+                - button "More actions" [ref=e748] [cursor=pointer]
+            - generic [ref=e754]:
+              - generic [ref=e757]:
+                - link [ref=e758] [cursor=pointer]:
+                  - /url: /shorts/1qeD79RR1sA
+                - generic [ref=e762] [cursor=pointer]:
+                  - link "Been a long day and now I need to play some blues" [ref=e763]:
+                    - /url: /shorts/1qeD79RR1sA
+                  - generic [ref=e764]: 115K views
+                - button "More actions" [ref=e766] [cursor=pointer]
+              - generic [ref=e774]:
+                - link [ref=e775] [cursor=pointer]:
+                  - /url: /shorts/Q41X1xtX42E
+                - generic [ref=e779] [cursor=pointer]:
+                  - link "Boogie Woogie Piano Gets Lady In Green To Dance!" [ref=e780]:
+                    - /url: /shorts/Q41X1xtX42E
+                  - generic [ref=e781]: 1.6M views
+                - button "More actions" [ref=e783] [cursor=pointer]
+          - button "Show more" [ref=e792] [cursor=pointer]:
+            - generic [ref=e793]: Show more
+        - generic [ref=e800]:
+          - link [ref=e802] [cursor=pointer]:
+            - /url: /watch?v=oNFWt8HkI1g&list=RDoNFWt8HkI1g&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+          - generic [ref=e804] [cursor=pointer]:
+            - generic [ref=e805]:
+              - heading "2014.03.29 - ERWIN HELFER @ SOUTHERN BLUES NIGHT - HEERLEN video2 5 minutes, 13 seconds" [level=3] [ref=e807]:
+                - link "2014.03.29 - ERWIN HELFER @ SOUTHERN BLUES NIGHT - HEERLEN video2 5 minutes, 13 seconds" [ref=e808]:
+                  - /url: /watch?v=oNFWt8HkI1g&list=RDoNFWt8HkI1g&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                  - text: 2014.03.29 - ERWIN HELFER @ SOUTHERN BLUES NIGHT - HEERLEN video2
+              - generic [ref=e811]:
+                - generic [ref=e812]: 875 views
+                - generic [ref=e813]: •12 years ago
+            - generic [ref=e814]:
+              - link "Go to channel celis freddy" [ref=e815]:
+                - /url: /@celisfreddy7999
+              - link "celis freddy" [ref=e820]:
+                - /url: /@celisfreddy7999
+            - generic [ref=e821]:
+              - generic [ref=e822]: 2014.03.29 - ERWIN HELFER @ SOUTHERN BLUES NIGHT - HEERLEN video2.
+              - tooltip "tooltip"
+        - generic [ref=e824]:
+          - link [ref=e826] [cursor=pointer]:
+            - /url: /watch?v=n-QuUNawL1I&list=RDn-QuUNawL1I&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e828] [cursor=pointer]:
+            - generic [ref=e829]:
+              - heading "Erwin Helfer, plays for Grandma Janice part 3 7 minutes, 9 seconds" [level=3] [ref=e831]:
+                - link "Erwin Helfer, plays for Grandma Janice part 3 7 minutes, 9 seconds" [ref=e832]:
+                  - /url: /watch?v=n-QuUNawL1I&list=RDn-QuUNawL1I&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Erwin Helfer, plays for Grandma Janice part 3
+              - generic [ref=e835]:
+                - generic [ref=e836]: 188 views
+                - generic [ref=e837]: •15 years ago
+            - generic [ref=e838]:
+              - link "Go to channel Denet Lewis" [ref=e839]:
+                - /url: /@DenetLewis
+              - link "Denet Lewis" [ref=e844]:
+                - /url: /@DenetLewis
+            - generic [ref=e845]:
+              - text: Recorded on September 4, 2010 using a Flip Video camcorder.
+              - tooltip "tooltip"
+        - generic [ref=e846]:
+          - generic [ref=e849]:
+            - img [ref=e851]
+            - heading "Shorts" [level=2] [ref=e854]
+          - generic [ref=e855]:
+            - generic [ref=e856]:
+              - generic [ref=e859]:
+                - link [ref=e860] [cursor=pointer]:
+                  - /url: /shorts/dqbOE3ZoXaM
+                - generic [ref=e864] [cursor=pointer]:
+                  - 'link "Some slow blues at Birdland NYC #jazz #piano #benpatersonmusic" [ref=e865]':
+                    - /url: /shorts/dqbOE3ZoXaM
+                  - generic [ref=e866]: 2.2K views
+                - button "More actions" [ref=e868] [cursor=pointer]
+              - generic [ref=e876]:
+                - link [ref=e877] [cursor=pointer]:
+                  - /url: /shorts/g78e--7yBeY
+                - generic [ref=e881] [cursor=pointer]:
+                  - link "How to play Blues Piano" [ref=e882]:
+                    - /url: /shorts/g78e--7yBeY
+                  - generic [ref=e883]: 201K views
+                - button "More actions" [ref=e885] [cursor=pointer]
+            - generic [ref=e891]:
+              - generic [ref=e894]:
+                - link [ref=e895] [cursor=pointer]:
+                  - /url: /shorts/8RM2RzB1DI4
+                - generic [ref=e899] [cursor=pointer]:
+                  - 'link "This Boogie Will Make You Smile! 🎹🔥 #piano #music #boogie #pianomusic" [ref=e900]':
+                    - /url: /shorts/8RM2RzB1DI4
+                  - generic [ref=e901]: 157K views
+                - button "More actions" [ref=e903] [cursor=pointer]
+              - generic [ref=e911]:
+                - link [ref=e912] [cursor=pointer]:
+                  - /url: /shorts/kKMMf2Mt8vM
+                  - img [ref=e917]:
+                    - generic [ref=e918]: New
+                - generic [ref=e919] [cursor=pointer]:
+                  - link "Chicago Boogie Woogie & Blues Lick" [ref=e920]:
+                    - /url: /shorts/kKMMf2Mt8vM
+                  - generic [ref=e921]: 2.5K views
+                - button "More actions" [ref=e923] [cursor=pointer]
+          - button "Show more" [ref=e932] [cursor=pointer]:
+            - generic [ref=e933]: Show more
+        - generic [ref=e940] [cursor=pointer]:
+          - link [ref=e941]:
+            - /url: /watch?v=mvvlHYiFNpQ&list=PLYodHHQBqGFWaQKOpkjiv_Nzcaha-lqXk
+            - generic [ref=e953]: 62 videos
+          - generic [ref=e956]:
+            - heading "Erwin Helfer blues" [level=3] [ref=e957]:
+              - link "Erwin Helfer blues" [ref=e958]:
+                - /url: /watch?v=mvvlHYiFNpQ&list=PLYodHHQBqGFWaQKOpkjiv_Nzcaha-lqXk
+            - generic [ref=e960]:
+              - generic [ref=e961]:
+                - link "Margie Kreitzer-Osborn" [ref=e964]:
+                  - /url: /@margieosborn
+                - generic [ref=e965]: •
+                - link "Playlist" [ref=e968]:
+                  - /url: /@margieosborn
+              - link "Doxy · 5:54" [ref=e972]:
+                - /url: /watch?v=mvvlHYiFNpQ&list=PLYodHHQBqGFWaQKOpkjiv_Nzcaha-lqXk
+              - link "Ain't Nobody's Business · 5:11" [ref=e975]:
+                - /url: /watch?v=dxcNc41ylLk&list=PLYodHHQBqGFWaQKOpkjiv_Nzcaha-lqXk
+              - link "View full playlist" [ref=e980]:
+                - /url: /playlist?list=PLYodHHQBqGFWaQKOpkjiv_Nzcaha-lqXk
+        - generic [ref=e982]:
+          - link [ref=e984] [cursor=pointer]:
+            - /url: /watch?v=leTmmNA_4G0&list=RDleTmmNA_4G0&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+          - generic [ref=e986] [cursor=pointer]:
+            - generic [ref=e987]:
+              - heading "2014.03.29 - ERWIN HELFER @ SOUTHERN BLUES NIGHT - HEERLEN video1 5 minutes, 39 seconds" [level=3] [ref=e989]:
+                - link "2014.03.29 - ERWIN HELFER @ SOUTHERN BLUES NIGHT - HEERLEN video1 5 minutes, 39 seconds" [ref=e990]:
+                  - /url: /watch?v=leTmmNA_4G0&list=RDleTmmNA_4G0&start_radio=1&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmWgBwE%3D
+                  - text: 2014.03.29 - ERWIN HELFER @ SOUTHERN BLUES NIGHT - HEERLEN video1
+              - generic [ref=e993]:
+                - generic [ref=e994]: 180 views
+                - generic [ref=e995]: •12 years ago
+            - generic [ref=e996]:
+              - link "Go to channel celis freddy" [ref=e997]:
+                - /url: /@celisfreddy7999
+              - link "celis freddy" [ref=e1002]:
+                - /url: /@celisfreddy7999
+            - generic [ref=e1003]:
+              - generic [ref=e1004]: 2014.03.29 - ERWIN HELFER @ SOUTHERN BLUES NIGHT - HEERLEN video1.
+              - tooltip "tooltip"
+        - generic [ref=e1006]:
+          - link [ref=e1008] [cursor=pointer]:
+            - /url: /watch?v=ZSL4yfFSq10&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmXSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e1010] [cursor=pointer]:
+            - generic [ref=e1011]:
+              - heading "ERWIN HELFER AT HOME 3 minutes, 12 seconds" [level=3] [ref=e1013]:
+                - link "ERWIN HELFER AT HOME 3 minutes, 12 seconds" [ref=e1014]:
+                  - /url: /watch?v=ZSL4yfFSq10&pp=ygUdRXJ3aW4gSGVsZmVyIGJsdWVzIHBpYW5vIGxpdmXSBwkJ2QoBhyohjO8%3D
+                  - text: ERWIN HELFER AT HOME
+              - generic [ref=e1017]:
+                - generic [ref=e1018]: 60 views
+                - generic [ref=e1019]: •4 years ago
+            - generic [ref=e1020]:
+              - link "Go to channel Mark Siska" [ref=e1021]:
+                - /url: /@marksiska8959
+              - link "Mark Siska" [ref=e1026]:
+                - /url: /@marksiska8959
+            - generic [ref=e1027]:
+              - generic [ref=e1028]: "Audio from ERWIN HELFER documentary. Erwin at home playing the piano. June 2021 #1."
+              - tooltip "tooltip"

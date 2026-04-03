@@ -1,0 +1,626 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+          - button "Next" [ref=e111] [cursor=pointer]
+        - link "About these results" [ref=e120] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e121]: About these results
+        - generic [ref=e128]:
+          - button "Search filters" [ref=e130] [cursor=pointer]:
+            - generic [ref=e131]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e142]:
+        - generic [ref=e147]:
+          - img [ref=e153]
+          - generic [ref=e155] [cursor=pointer]:
+            - generic [ref=e156]:
+              - link "Masterclass for new guitarists" [ref=e159]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CamGxh6XPafYb1Ien6g_dg9DhDbL2uZmGAaytwL6-E2QQASAAYNW11wKCARdjYS1wdWItNjIxOTgxMTc0NzA0OTM3MaABmq_H-QKoAwTIAwqqBLwCT9D6cNuA8XQT0rnrxJVzcaNd49md1Tbr5PkChTWY4If1JlalUSjD0lFI7Frw8pJD_q-XeCqgLClcR09BQfB1BDqXKNzj2x40OXImNgSZcbmFYx5gCet9BI01csOY8XPfrGL-k0CZPLobr1vphTVwC3ch4sObDcIDpoG6Ds33fBp-Hy6vUiQcWNu3P6MMLaajkKf6mL2kVU5RMm250QdWQRMHaqAQPGjSlCwtNrmzzJplCpU6xTPCocMtSP54_5PKJlTkptr2bdayXUoFFl52Vic3w4M-OTIPwiOn_pC-BRkJzSqhlfT5Mk7U6TuO9LDTJI0aMT6bKlFj9EkaknUiJ_62tghg5TgJC1PGAXDNGJlM0ICv-3jMT-VeOk_S-0PzHfD86PEZ5tULJaWcPZ-1klhmFgLqToW8cH2joYgFq_K95FCSBQgIE3iYlNaGAaAGboAHztC4hgGQBwGoB_LAsQKoB7jEsQKoB-G2sQKoB6XPsQKoB-edsQKoB-idsQKoB--1sQKoB_C1sQKoB_nTsQKoB8nasQKoB6ngsQKoB4QIqAem1LECqAeo0huoB7YHqAewm7ECqAeusbECqAfmvLECqAfKurECqAf9srECqAf3uLECqAf4uLECqAfIz7ECqAfJz7ECqAet4LECqAfNx7ECqAfx0bECqAf81bECqAf71bECqAeM1rECqAeL1rECqAed17ECqAed1LECqAeBxhuoB_yvsQKoB6vFG6gHt6GxAqgH1amxAqgH2KaxAqgH3rWxArgIAdIINwiAwYBQEAEYXjIIo4LAgICAoAw6EoDCgICAkIACgICAgICQhuADKkjZoNI1UBRYiMj8-8rRkwOaCSVodHRwczovL2xlYXJucHJhY3RpY2VwbGF5LmNvbS9zaWdudXAvsQktPOGoT3nMRMgJAMgJigKYCwG6C0MIAxAFGAQgCCgBMBxAAUgAUAFYTmAAaABwAYgBAJgBAaIBCwoAoAIBqAID2AIB2AEBgAIBiAIFugMJdmlicnV6YWJh0AsSogwMKgoKCI7fsQKV4rEC0gwCEAGaDQESqg0CRVPIDQHSDfABaHR0cHM6Ly9sZWFybnByYWN0aWNlcGxheS5jb20vc2lnbnVwLz9hZGJfYWRfaWQ9NzEzMDg5NDY1MTM3JmFkYl9hZF9zb3VyY2U9Z29vZ2xlJmFkYl9jbGlja19pZD17Z2NsaWR9JmFkYl9jYW1wYWlnbl9pZD0yMTY4NTU2NTczOSZhZGJfYWRncm91cF9pZD0xNjY4NDYzMjc0MjYmYWRiX3RhcmdldF9pZD0mYWRiX3BsYWNlbWVudD0mYWRiX3RhcmdldD0mZ2FkX3NvdXJjZT0yJmdhZF9jYW1wYWlnbmlkPTIxNjg1NTY1NzM5uBP___________8BiBQBsBQDwBWBgIBA0BUB2BUBmBYB4hYCCAGAFwGKFxYIAxgBIAEoATABOAFAAUgBUAFYAWACoBcBqRdh6C_q7D-Vy7oXBigAMAA4AdAYAfAYAcIZAggB&gclid=EAIaIQobChMItvv8-8rRkwMV1MNJBx3dATTcEAEYASAAEgLO1fD_BwE&num=1&cid=CAASF-RoeFnhv9FGB_g4A8ZJMrACVZBczXtM&sig=AOD64_0QHc7NsxAewOq5Nu9lbwHDTBrHVw&ms=%5BCLICK_MS%5D&nb=0&nx=%5BNX%5D&ny=%5BNY%5D&dim=%5BDIM%5D
+              - link "Online guitar courses taught by master guitar teacher Paul Davids." [ref=e162]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CamGxh6XPafYb1Ien6g_dg9DhDbL2uZmGAaytwL6-E2QQASAAYNW11wKCARdjYS1wdWItNjIxOTgxMTc0NzA0OTM3MaABmq_H-QKoAwTIAwqqBLwCT9D6cNuA8XQT0rnrxJVzcaNd49md1Tbr5PkChTWY4If1JlalUSjD0lFI7Frw8pJD_q-XeCqgLClcR09BQfB1BDqXKNzj2x40OXImNgSZcbmFYx5gCet9BI01csOY8XPfrGL-k0CZPLobr1vphTVwC3ch4sObDcIDpoG6Ds33fBp-Hy6vUiQcWNu3P6MMLaajkKf6mL2kVU5RMm250QdWQRMHaqAQPGjSlCwtNrmzzJplCpU6xTPCocMtSP54_5PKJlTkptr2bdayXUoFFl52Vic3w4M-OTIPwiOn_pC-BRkJzSqhlfT5Mk7U6TuO9LDTJI0aMT6bKlFj9EkaknUiJ_62tghg5TgJC1PGAXDNGJlM0ICv-3jMT-VeOk_S-0PzHfD86PEZ5tULJaWcPZ-1klhmFgLqToW8cH2joYgFq_K95FCSBQgIE3iYlNaGAaAGboAHztC4hgGQBwGoB_LAsQKoB7jEsQKoB-G2sQKoB6XPsQKoB-edsQKoB-idsQKoB--1sQKoB_C1sQKoB_nTsQKoB8nasQKoB6ngsQKoB4QIqAem1LECqAeo0huoB7YHqAewm7ECqAeusbECqAfmvLECqAfKurECqAf9srECqAf3uLECqAf4uLECqAfIz7ECqAfJz7ECqAet4LECqAfNx7ECqAfx0bECqAf81bECqAf71bECqAeM1rECqAeL1rECqAed17ECqAed1LECqAeBxhuoB_yvsQKoB6vFG6gHt6GxAqgH1amxAqgH2KaxAqgH3rWxArgIAdIINwiAwYBQEAEYXjIIo4LAgICAoAw6EoDCgICAkIACgICAgICQhuADKkjZoNI1UBRYiMj8-8rRkwOaCSVodHRwczovL2xlYXJucHJhY3RpY2VwbGF5LmNvbS9zaWdudXAvsQktPOGoT3nMRMgJAMgJigKYCwG6C0MIAxAFGAQgCCgBMBxAAUgAUAFYTmAAaABwAYgBAJgBAaIBCwoAoAIBqAID2AIB2AEBgAIBiAIFugMJdmlicnV6YWJh0AsSogwMKgoKCI7fsQKV4rEC0gwCEAGaDQESqg0CRVPIDQHSDfABaHR0cHM6Ly9sZWFybnByYWN0aWNlcGxheS5jb20vc2lnbnVwLz9hZGJfYWRfaWQ9NzEzMDg5NDY1MTM3JmFkYl9hZF9zb3VyY2U9Z29vZ2xlJmFkYl9jbGlja19pZD17Z2NsaWR9JmFkYl9jYW1wYWlnbl9pZD0yMTY4NTU2NTczOSZhZGJfYWRncm91cF9pZD0xNjY4NDYzMjc0MjYmYWRiX3RhcmdldF9pZD0mYWRiX3BsYWNlbWVudD0mYWRiX3RhcmdldD0mZ2FkX3NvdXJjZT0yJmdhZF9jYW1wYWlnbmlkPTIxNjg1NTY1NzM5uBP___________8BiBQBsBQDwBWBgIBA0BUB2BUBmBYB4hYCCAGAFwGKFxYIAxgBIAEoATABOAFAAUgBUAFYAWACoBcBqRdh6C_q7D-Vy7oXBigAMAA4AdAYAfAYAcIZAggB&gclid=EAIaIQobChMItvv8-8rRkwMV1MNJBx3dATTcEAEYASAAEgLO1fD_BwE&num=1&cid=CAASF-RoeFnhv9FGB_g4A8ZJMrACVZBczXtM&sig=AOD64_0QHc7NsxAewOq5Nu9lbwHDTBrHVw&ms=%5BCLICK_MS%5D&nb=7&nx=%5BNX%5D&ny=%5BNY%5D&dim=%5BDIM%5D
+              - generic [ref=e163]:
+                - generic [ref=e165]:
+                  - generic [ref=e166]: Sponsored
+                  - text: ·
+                - generic [ref=e168]: Paul Davids guitar
+            - button "My Ad Center" [ref=e171]
+        - generic [ref=e178]:
+          - link [ref=e180] [cursor=pointer]:
+            - /url: /watch?v=j5v-5shfrkw&list=RDj5v-5shfrkw&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e182] [cursor=pointer]:
+            - generic [ref=e183]:
+              - heading "Romance without finance (Tiny Grimes) - Blind Selfie AKA Noé Socha 2 minutes, 57 seconds" [level=3] [ref=e185]:
+                - link "Romance without finance (Tiny Grimes) - Blind Selfie AKA Noé Socha 2 minutes, 57 seconds" [ref=e186]:
+                  - /url: /watch?v=j5v-5shfrkw&list=RDj5v-5shfrkw&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Romance without finance (Tiny Grimes) - Blind Selfie AKA Noé Socha
+              - generic [ref=e189]:
+                - generic [ref=e190]: 175 views
+                - generic [ref=e191]: •6 years ago
+            - generic [ref=e192]:
+              - link "Go to channel Blind Selfie" [ref=e193]:
+                - /url: /@blindselfie5550
+              - link "Blind Selfie" [ref=e199]:
+                - /url: /@blindselfie5550
+            - generic [ref=e200]:
+              - generic [ref=e201]: "Recorded on July 7, 2019 to celebrate Tiny Grimes' birthday. Original track here https://youtu.be/f_hSSKK2KgM Website: ..."
+              - tooltip "tooltip"
+        - generic [ref=e203]:
+          - link [ref=e205] [cursor=pointer]:
+            - /url: /watch?v=-61KOm-md4k&list=RD-61KOm-md4k&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e207] [cursor=pointer]:
+            - generic [ref=e208]:
+              - heading "Tiny Grimes Style Jazz Blues in Bb (Frankie and Johnny) Hideo Date (A=432Hz) 1958 Gibson L-5C 2 minutes, 26 seconds" [level=3] [ref=e210]:
+                - link "Tiny Grimes Style Jazz Blues in Bb (Frankie and Johnny) Hideo Date (A=432Hz) 1958 Gibson L-5C 2 minutes, 26 seconds" [ref=e211]:
+                  - /url: /watch?v=-61KOm-md4k&list=RD-61KOm-md4k&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Tiny Grimes Style Jazz Blues in Bb (Frankie and Johnny) Hideo Date (A=432Hz) 1958 Gibson L-5C
+              - generic [ref=e214]:
+                - generic [ref=e215]: 1.6K views
+                - generic [ref=e216]: •3 years ago
+            - generic [ref=e217]:
+              - link "Go to channel Hideo Date" [ref=e218]:
+                - /url: /@HideoDate
+              - link "Hideo Date" [ref=e224]:
+                - /url: /@HideoDate
+            - generic [ref=e225]:
+              - generic [ref=e226]: Tiny Grimes style jazz blues in Bb.Tiny Grimes was a great jazz and blues guitarist, I used his signature jump blues style to ...
+              - tooltip "tooltip"
+        - generic [ref=e228]:
+          - link [ref=e230] [cursor=pointer]:
+            - /url: /watch?v=kGGIiZR_y0g&list=RDkGGIiZR_y0g&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+          - generic [ref=e232] [cursor=pointer]:
+            - generic [ref=e233]:
+              - heading "Tiny Grimes--\"Never Too Old to Swing,\" Rare 1940's Soundie 2 minutes, 37 seconds" [level=3] [ref=e235]:
+                - link "Tiny Grimes--\"Never Too Old to Swing,\" Rare 1940's Soundie 2 minutes, 37 seconds" [ref=e236]:
+                  - /url: /watch?v=kGGIiZR_y0g&list=RDkGGIiZR_y0g&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                  - text: Tiny Grimes--"Never Too Old to Swing," Rare 1940's Soundie
+              - generic [ref=e239]:
+                - generic [ref=e240]: 22K views
+                - generic [ref=e241]: •3 years ago
+            - generic [ref=e242]:
+              - link "Go to channel Alan Eichler" [ref=e243]:
+                - /url: /@aeichler
+              - link "Alan Eichler" [ref=e249]:
+                - /url: /@aeichler
+            - generic [ref=e250]:
+              - generic [ref=e251]: Jazz and R&B guitarist Tiny Grimes performs "Never Too Old to Swing" in this rare soundie from the 1940's.
+              - tooltip "tooltip"
+        - generic [ref=e253]:
+          - link [ref=e255] [cursor=pointer]:
+            - /url: /watch?v=2R2LYJYqQDY&list=RD2R2LYJYqQDY&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+          - generic [ref=e257] [cursor=pointer]:
+            - generic [ref=e258]:
+              - heading "Tiny Grimes Style Jazz Blues in Bb Solo Jazz Blues Guitar Hideo Date (A=432Hz) 1958 Gibson L-5C 2 minutes, 31 seconds" [level=3] [ref=e260]:
+                - link "Tiny Grimes Style Jazz Blues in Bb Solo Jazz Blues Guitar Hideo Date (A=432Hz) 1958 Gibson L-5C 2 minutes, 31 seconds" [ref=e261]:
+                  - /url: /watch?v=2R2LYJYqQDY&list=RD2R2LYJYqQDY&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                  - text: Tiny Grimes Style Jazz Blues in Bb Solo Jazz Blues Guitar Hideo Date (A=432Hz) 1958 Gibson L-5C
+              - generic [ref=e264]:
+                - generic [ref=e265]: 1.9K views
+                - generic [ref=e266]: •3 years ago
+            - generic [ref=e267]:
+              - link "Go to channel Hideo Date" [ref=e268]:
+                - /url: /@HideoDate
+              - link "Hideo Date" [ref=e274]:
+                - /url: /@HideoDate
+            - generic [ref=e275]:
+              - generic [ref=e276]: Tiny Grimes style jazz blues in Bb. Tiny Grimes was a great jazz and blues guitarist, I used his signature bending style to ...
+              - tooltip "tooltip"
+        - generic [ref=e278]:
+          - link [ref=e280] [cursor=pointer]:
+            - /url: /watch?v=88361qZo6KY&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2U%3D
+          - generic [ref=e282] [cursor=pointer]:
+            - generic [ref=e283]:
+              - heading "Tiny Grimes // Rockin' The Blues Away // Note for Note 2 minutes, 58 seconds" [level=3] [ref=e285]:
+                - link "Tiny Grimes // Rockin' The Blues Away // Note for Note 2 minutes, 58 seconds" [ref=e286]:
+                  - /url: /watch?v=88361qZo6KY&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2U%3D
+                  - text: Tiny Grimes // Rockin' The Blues Away // Note for Note
+              - generic [ref=e289]:
+                - generic [ref=e290]: 2.1K views
+                - generic [ref=e291]: •4 years ago
+            - generic [ref=e292]:
+              - link "Go to channel Swing & Blues Guitar Transcriptions" [ref=e293]:
+                - /url: /@swingandbluesguitar
+              - link "Swing & Blues Guitar Transcriptions" [ref=e299]:
+                - /url: /@swingandbluesguitar
+            - generic [ref=e300]:
+              - generic [ref=e301]: Note for Note transcription of Tiny Grimes guitar part on "Rockin' The Blues Away" by Tiny Grimes and His Rocking Highlanders ...
+              - tooltip "tooltip"
+        - generic [ref=e303]:
+          - link [ref=e305] [cursor=pointer]:
+            - /url: /watch?v=GNy4lB9W8Fs&list=RDGNy4lB9W8Fs&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e307] [cursor=pointer]:
+            - generic [ref=e308]:
+              - heading "Juicy Fruit 2 minutes, 53 seconds" [level=3] [ref=e310]:
+                - link "Juicy Fruit 2 minutes, 53 seconds" [ref=e311]:
+                  - /url: /watch?v=GNy4lB9W8Fs&list=RDGNy4lB9W8Fs&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Juicy Fruit
+              - generic [ref=e315]: 622 views
+            - generic [ref=e316]:
+              - link "Go to channel Tiny Grimes - Topic" [ref=e317]:
+                - /url: /channel/UCUUhjZRgLoQIVjMUotgKkog
+              - link "Tiny Grimes - Topic" [ref=e322]:
+                - /url: /channel/UCUUhjZRgLoQIVjMUotgKkog
+            - generic [ref=e323]:
+              - generic [ref=e324]: Provided to YouTube by The Orchard Enterprises Juicy Fruit · Tiny Grimes · Lloyd Grimes Rhythm & Blues Roots Hits from Harlem, ...
+              - tooltip "tooltip"
+        - generic [ref=e326]:
+          - link [ref=e328] [cursor=pointer]:
+            - /url: /watch?v=XSQD5rslRnc&list=RDXSQD5rslRnc&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+          - generic [ref=e330] [cursor=pointer]:
+            - generic [ref=e331]:
+              - 'heading "78 RPM: Tiny Grimes & his Rockin'' Highlanders - Juicy Fruit 2 minutes, 49 seconds" [level=3] [ref=e333]':
+                - 'link "78 RPM: Tiny Grimes & his Rockin'' Highlanders - Juicy Fruit 2 minutes, 49 seconds" [ref=e334]':
+                  - /url: /watch?v=XSQD5rslRnc&list=RDXSQD5rslRnc&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                  - text: "78 RPM: Tiny Grimes & his Rockin' Highlanders - Juicy Fruit"
+              - generic [ref=e337]:
+                - generic [ref=e338]: 7.9K views
+                - generic [ref=e339]: •12 years ago
+            - generic [ref=e340]:
+              - link "Go to channel BigDaveSwinger" [ref=e341]:
+                - /url: /@BigDaveSwinger
+              - link "BigDaveSwinger" [ref=e346]:
+                - /url: /@BigDaveSwinger
+            - generic [ref=e347]:
+              - text: "NOTE: The material featured in this video is from a non digital, analog source and of \"substandard\" quality. Copyright Disclaimer ..."
+              - tooltip "tooltip"
+        - generic [ref=e348]:
+          - generic [ref=e351]:
+            - img [ref=e353]
+            - heading "Shorts" [level=2] [ref=e356]
+          - generic [ref=e357]:
+            - generic [ref=e358]:
+              - generic [ref=e361]:
+                - link [ref=e362] [cursor=pointer]:
+                  - /url: /shorts/xD9vMeS08NU
+                - generic [ref=e366] [cursor=pointer]:
+                  - link "Charlie Parker - Tiny's Tempo" [ref=e367]:
+                    - /url: /shorts/xD9vMeS08NU
+                  - generic [ref=e368]: 5.3K views
+                - button "More actions" [ref=e370] [cursor=pointer]
+              - generic [ref=e378]:
+                - link [ref=e379] [cursor=pointer]:
+                  - /url: /shorts/ao8WAahnNo8
+                - generic [ref=e383] [cursor=pointer]:
+                  - link "Frankie & Johnny / Tiny Grimes ver" [ref=e384]:
+                    - /url: /shorts/ao8WAahnNo8
+                  - generic [ref=e385]: 771 views
+                - button "More actions" [ref=e387] [cursor=pointer]
+            - generic [ref=e393]:
+              - generic [ref=e396]:
+                - link [ref=e397] [cursor=pointer]:
+                  - /url: /shorts/hrsk9SI1N-E
+                - generic [ref=e401] [cursor=pointer]:
+                  - 'link "For #womenshistorymonth, we honor this uncredited singer next to Tiny Grimes in the 40s. #women" [ref=e402]':
+                    - /url: /shorts/hrsk9SI1N-E
+                  - generic [ref=e403]: 257 views
+                - button "More actions" [ref=e405] [cursor=pointer]
+              - generic [ref=e413]:
+                - link [ref=e414] [cursor=pointer]:
+                  - /url: /shorts/B5OCSJmmJm0
+                - generic [ref=e418] [cursor=pointer]:
+                  - link "The Best \"Forgotten\" Charlie Parker Solo" [ref=e419]:
+                    - /url: /shorts/B5OCSJmmJm0
+                  - generic [ref=e420]: 5K views
+                - button "More actions" [ref=e422] [cursor=pointer]
+          - button "Show more" [ref=e431] [cursor=pointer]:
+            - generic [ref=e432]: Show more
+        - generic [ref=e439]:
+          - link [ref=e441] [cursor=pointer]:
+            - /url: /watch?v=1KQH3VkOZ9w&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2U%3D
+          - generic [ref=e443] [cursor=pointer]:
+            - generic [ref=e444]:
+              - heading "Tiny Grimes comping and Junior Barnard Blues Guitar Lesson teaser 3 minutes, 11 seconds" [level=3] [ref=e446]:
+                - link "Tiny Grimes comping and Junior Barnard Blues Guitar Lesson teaser 3 minutes, 11 seconds" [ref=e447]:
+                  - /url: /watch?v=1KQH3VkOZ9w&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2U%3D
+                  - text: Tiny Grimes comping and Junior Barnard Blues Guitar Lesson teaser
+              - generic [ref=e450]:
+                - generic [ref=e451]: 9K views
+                - generic [ref=e452]: •10 years ago
+            - generic [ref=e453]:
+              - link "Go to channel Tommy Harkenrider" [ref=e454]:
+                - /url: /@TommyHarkenriderguitar
+              - link "Tommy Harkenrider" [ref=e459]:
+                - /url: /@TommyHarkenriderguitar
+            - generic [ref=e460]:
+              - generic [ref=e461]: This is my commercial introducing my module on Tiny Grimes comping and Junior Barnard chord phrases. I figure these two guitar ...
+              - tooltip "tooltip"
+        - generic [ref=e463]:
+          - link [ref=e465] [cursor=pointer]:
+            - /url: /watch?v=p51MT5OMw-I&list=RDp51MT5OMw-I&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e467] [cursor=pointer]:
+            - generic [ref=e468]:
+              - heading "Blues Wail by Tiny Grimes & Coleman Hawkins 6 minutes, 55 seconds" [level=3] [ref=e470]:
+                - link "Blues Wail by Tiny Grimes & Coleman Hawkins 6 minutes, 55 seconds" [ref=e471]:
+                  - /url: /watch?v=p51MT5OMw-I&list=RDp51MT5OMw-I&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Blues Wail by Tiny Grimes & Coleman Hawkins
+              - generic [ref=e474]:
+                - generic [ref=e475]: 82K views
+                - generic [ref=e476]: •14 years ago
+            - generic [ref=e477]:
+              - link "Go to channel MrMusicismagic" [ref=e478]:
+                - /url: /@MrMusicismagic
+              - link "MrMusicismagic" [ref=e483]:
+                - /url: /@MrMusicismagic
+        - generic [ref=e485]:
+          - link [ref=e487] [cursor=pointer]:
+            - /url: /watch?v=wbks0IXGCaI&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2U%3D
+          - generic [ref=e489] [cursor=pointer]:
+            - generic [ref=e490]:
+              - heading "I Can’t Stop Playing This Tiny Grimes Lick 5 minutes, 4 seconds" [level=3] [ref=e492]:
+                - link "I Can’t Stop Playing This Tiny Grimes Lick 5 minutes, 4 seconds" [ref=e493]:
+                  - /url: /watch?v=wbks0IXGCaI&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2U%3D
+                  - text: I Can’t Stop Playing This Tiny Grimes Lick
+              - generic [ref=e496]:
+                - generic [ref=e497]: 12K views
+                - generic [ref=e498]: •4 weeks ago
+            - generic [ref=e499]:
+              - link "Go to channel Markus Bak – Vintage Blues & Jazz Guitar" [ref=e500]:
+                - /url: /@markusbakguitar
+              - link "Markus Bak – Vintage Blues & Jazz Guitar" [ref=e505]:
+                - /url: /@markusbakguitar
+            - generic [ref=e506]:
+              - generic [ref=e507]: Learn how to play this amazing Tiny Grimes Lick from I Found A New Baby. Subscribe for weekly jazz/blues guitar lessons ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e510]:
+              - generic [ref=e511]: 4K
+        - generic [ref=e512]:
+          - generic [ref=e515]:
+            - img [ref=e517]
+            - heading "Shorts" [level=2] [ref=e520]
+          - generic [ref=e521]:
+            - generic [ref=e522]:
+              - generic [ref=e525]:
+                - link [ref=e526] [cursor=pointer]:
+                  - /url: /shorts/DGOtyK95RJw
+                - generic [ref=e530] [cursor=pointer]:
+                  - link "BARNEY KESSEL USING THE BLUES SCALE OVER THE BRIDGE OF GEE BABY AIN’T I GOOD TO YOU" [ref=e531]:
+                    - /url: /shorts/DGOtyK95RJw
+                  - generic [ref=e532]: 416 views
+                - button "More actions" [ref=e534] [cursor=pointer]
+              - generic [ref=e542]:
+                - link [ref=e543] [cursor=pointer]:
+                  - /url: /shorts/5FQEw29aP5E
+                - generic [ref=e547] [cursor=pointer]:
+                  - 'link "Jump blues solo #fender #jumpblues #blues #jazzblues #tbonewalker #billjennings #peeweecrayton" [ref=e548]':
+                    - /url: /shorts/5FQEw29aP5E
+                  - generic [ref=e549]: 789 views
+                - button "More actions" [ref=e551] [cursor=pointer]
+            - generic [ref=e557]:
+              - generic [ref=e560]:
+                - link [ref=e561] [cursor=pointer]:
+                  - /url: /shorts/uZrxl7PlXVU
+                - generic [ref=e565] [cursor=pointer]:
+                  - link "Jazz guitar solo on \"Rose room\"" [ref=e566]:
+                    - /url: /shorts/uZrxl7PlXVU
+                  - generic [ref=e567]: 13K views
+                - button "More actions" [ref=e569] [cursor=pointer]
+              - generic [ref=e577]:
+                - link [ref=e578] [cursor=pointer]:
+                  - /url: /shorts/XYTS2v1WpJ8
+                - generic [ref=e582] [cursor=pointer]:
+                  - 'link "Blues guitar solo in a jazz big band🎸🔥#livemusic #blues #guitarsolo #jazz #guitar #bigband #improv" [ref=e583]':
+                    - /url: /shorts/XYTS2v1WpJ8
+                  - generic [ref=e584]: 8.6K views
+                - button "More actions" [ref=e586] [cursor=pointer]
+          - button "Show more" [ref=e595] [cursor=pointer]:
+            - generic [ref=e596]: Show more
+        - generic [ref=e603]:
+          - link [ref=e605] [cursor=pointer]:
+            - /url: /watch?v=64svdsqOaYI&list=RD64svdsqOaYI&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+          - generic [ref=e607] [cursor=pointer]:
+            - generic [ref=e608]:
+              - heading "Tiny Grimes - ‘Tiny’s Tempo’ Solo Transcription 1 minute, 1 second" [level=3] [ref=e610]:
+                - link "Tiny Grimes - ‘Tiny’s Tempo’ Solo Transcription 1 minute, 1 second" [ref=e611]:
+                  - /url: /watch?v=64svdsqOaYI&list=RD64svdsqOaYI&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                  - text: Tiny Grimes - ‘Tiny’s Tempo’ Solo Transcription
+              - generic [ref=e614]:
+                - generic [ref=e615]: 1.1K views
+                - generic [ref=e616]: •4 years ago
+            - generic [ref=e617]:
+              - link "Go to channel David Delarre" [ref=e618]:
+                - /url: /@DavidDelarre
+              - link "David Delarre" [ref=e623]:
+                - /url: /@DavidDelarre
+            - generic [ref=e624]:
+              - generic [ref=e625]: My good friend and fantastic pianist Judy Carmichael introduced me to Tiny Grimes a few years ago whilst I was working on a ...
+              - tooltip "tooltip"
+        - generic [ref=e627]:
+          - link [ref=e629] [cursor=pointer]:
+            - /url: /watch?v=NVezEORmdU8&list=RDNVezEORmdU8&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+          - generic [ref=e631] [cursor=pointer]:
+            - generic [ref=e632]:
+              - heading "Tiny Grimes - St. Louis Blues 3 minutes, 12 seconds" [level=3] [ref=e634]:
+                - link "Tiny Grimes - St. Louis Blues 3 minutes, 12 seconds" [ref=e635]:
+                  - /url: /watch?v=NVezEORmdU8&list=RDNVezEORmdU8&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                  - text: Tiny Grimes - St. Louis Blues
+              - generic [ref=e638]:
+                - generic [ref=e639]: 3K views
+                - generic [ref=e640]: •14 years ago
+            - generic [ref=e641]:
+              - link "Go to channel irondragsportster" [ref=e642]:
+                - /url: /@irondragsportster
+              - link "irondragsportster" [ref=e647]:
+                - /url: /@irondragsportster
+            - generic [ref=e648]:
+              - generic [ref=e649]: Classic Tiny Grimes post WWII Jazz.
+              - tooltip "tooltip"
+        - generic [ref=e651]:
+          - heading "People also watched" [level=2] [ref=e654]:
+            - generic [ref=e656]: People also watched
+          - generic [ref=e658]:
+            - generic [ref=e659]:
+              - generic [ref=e661]:
+                - link [ref=e663] [cursor=pointer]:
+                  - /url: /watch?v=duzx1VPnues&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2XSBwkJ2QoBhyohjO8%3D
+                - generic [ref=e665] [cursor=pointer]:
+                  - generic [ref=e666]:
+                    - heading "Eric Gales and Little Timmy King play the Blues 2013 in Memphis (Little Jimmy King's TWIN) 16 minutes" [level=3] [ref=e668]:
+                      - link "Eric Gales and Little Timmy King play the Blues 2013 in Memphis (Little Jimmy King's TWIN) 16 minutes" [ref=e669]:
+                        - /url: /watch?v=duzx1VPnues&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2XSBwkJ2QoBhyohjO8%3D
+                        - text: Eric Gales and Little Timmy King play the Blues 2013 in Memphis (Little Jimmy King's TWIN)
+                    - generic [ref=e672]:
+                      - generic [ref=e673]: 5.6K views
+                      - generic [ref=e674]: •7 years ago
+                  - generic [ref=e675]:
+                    - link "Go to channel Eric Gales" [ref=e676]:
+                      - /url: /channel/UC0Gpui0DdJccVj_WGHneBmw
+                    - generic [ref=e677]:
+                      - link "Eric Gales" [ref=e681]:
+                        - /url: /channel/UC0Gpui0DdJccVj_WGHneBmw
+                      - img "Official Artist Channel" [ref=e684]
+                  - generic [ref=e686]:
+                    - text: From the February 8, 2013 Concert in Memphis at Newby's Eric's older brother Danuel joins Eric and Orlando Thomson on Bass ...
+                    - tooltip "tooltip"
+              - generic [ref=e688]:
+                - link [ref=e690] [cursor=pointer]:
+                  - /url: /watch?v=psxNg5VeWV4&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2U%3D
+                - generic [ref=e692] [cursor=pointer]:
+                  - generic [ref=e693]:
+                    - heading "Quick 9th Chord Tiny Grimes lesson from Tommy Harkenrider 7 minutes, 10 seconds" [level=3] [ref=e695]:
+                      - link "Quick 9th Chord Tiny Grimes lesson from Tommy Harkenrider 7 minutes, 10 seconds" [ref=e696]:
+                        - /url: /watch?v=psxNg5VeWV4&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2U%3D
+                        - text: Quick 9th Chord Tiny Grimes lesson from Tommy Harkenrider
+                    - generic [ref=e699]:
+                      - generic [ref=e700]: 2.8K views
+                      - generic [ref=e701]: •2 years ago
+                  - generic [ref=e702]:
+                    - link "Go to channel Tommy Harkenrider" [ref=e703]:
+                      - /url: /@TommyHarkenriderguitar
+                    - link "Tommy Harkenrider" [ref=e708]:
+                      - /url: /@TommyHarkenriderguitar
+                  - generic [ref=e709]:
+                    - generic [ref=e710]: This is for my pals that wanted me to post some quick applicable Tiny Grimes lines that can be grafted into a Blues. This lick will ...
+                    - tooltip "tooltip"
+              - generic [ref=e712]:
+                - link [ref=e714] [cursor=pointer]:
+                  - /url: /watch?v=z0bjljr8zcc&list=RDz0bjljr8zcc&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                - generic [ref=e716] [cursor=pointer]:
+                  - generic [ref=e717]:
+                    - heading "Tiny Grimes Swinging Mama 4 minutes, 29 seconds" [level=3] [ref=e719]:
+                      - link "Tiny Grimes Swinging Mama 4 minutes, 29 seconds" [ref=e720]:
+                        - /url: /watch?v=z0bjljr8zcc&list=RDz0bjljr8zcc&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                        - text: Tiny Grimes Swinging Mama
+                    - generic [ref=e723]:
+                      - generic [ref=e724]: 7.3K views
+                      - generic [ref=e725]: •14 years ago
+                  - generic [ref=e726]:
+                    - link "Go to channel harp60" [ref=e727]:
+                      - /url: /@harp60
+                    - link "harp60" [ref=e732]:
+                      - /url: /@harp60
+              - generic [ref=e734]:
+                - link [ref=e736] [cursor=pointer]:
+                  - /url: /watch?v=NjlWVRgqPBA&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2U%3D
+                - generic [ref=e738] [cursor=pointer]:
+                  - generic [ref=e739]:
+                    - heading "Tommy Harkenrider's Jump Blues Subscription lessons!! with Tiny Webb, Tiny Grimes, and Bill Jennings 8 minutes, 13 seconds" [level=3] [ref=e741]:
+                      - link "Tommy Harkenrider's Jump Blues Subscription lessons!! with Tiny Webb, Tiny Grimes, and Bill Jennings 8 minutes, 13 seconds" [ref=e742]:
+                        - /url: /watch?v=NjlWVRgqPBA&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2U%3D
+                        - text: Tommy Harkenrider's Jump Blues Subscription lessons!! with Tiny Webb, Tiny Grimes, and Bill Jennings
+                    - generic [ref=e745]:
+                      - generic [ref=e746]: 11K views
+                      - generic [ref=e747]: •10 years ago
+                  - generic [ref=e748]:
+                    - link "Go to channel Tommy Harkenrider" [ref=e749]:
+                      - /url: /@TommyHarkenriderguitar
+                    - link "Tommy Harkenrider" [ref=e754]:
+                      - /url: /@TommyHarkenriderguitar
+                  - generic [ref=e755]:
+                    - text: This is a short demo of my bi-weekly subscription product. I thought that it would be cool, in addition to my full production videos to ...
+                    - tooltip "tooltip"
+                  - generic [ref=e758]:
+                    - generic [ref=e759]:
+                      - generic [ref=e763]: 4 moments
+                      - button "Bi-weekly Subscription Lessons! | Tiny Webb with Floyd Dixon | Tiny Grimes | Bill Jennings Get Hot"
+                    - button "More" [ref=e768]
+            - generic "+6 more" [ref=e775] [cursor=pointer]
+        - generic [ref=e777]:
+          - link [ref=e779] [cursor=pointer]:
+            - /url: /watch?v=tQztQT9c9e4&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2U%3D
+          - generic [ref=e781] [cursor=pointer]:
+            - generic [ref=e782]:
+              - heading "Charlie Parker - Tiny's Tempo (Tiny Grimes Guitar Solo) / Bb Blues 1 minute, 48 seconds" [level=3] [ref=e784]:
+                - link "Charlie Parker - Tiny's Tempo (Tiny Grimes Guitar Solo) / Bb Blues 1 minute, 48 seconds" [ref=e785]:
+                  - /url: /watch?v=tQztQT9c9e4&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2U%3D
+                  - text: Charlie Parker - Tiny's Tempo (Tiny Grimes Guitar Solo) / Bb Blues
+              - generic [ref=e788]:
+                - generic [ref=e789]: 539 views
+                - generic [ref=e790]: •1 year ago
+            - generic [ref=e791]:
+              - link "Go to channel 홍윤기" [ref=e792]:
+                - /url: /@%ED%99%8D%EC%9C%A4%EA%B8%B0-l7n
+              - link "홍윤기" [ref=e797]:
+                - /url: /@%ED%99%8D%EC%9C%A4%EA%B8%B0-l7n
+            - generic [ref=e798]:
+              - generic [ref=e799]: "jazz #guitar #tonemasterpro Guitar : D'aquisto Jazzline Jr."
+              - tooltip "tooltip"
+            - img "4K" [ref=e802]:
+              - generic [ref=e803]: 4K
+        - generic [ref=e805]:
+          - link [ref=e807] [cursor=pointer]:
+            - /url: /watch?v=Q1kPKaL_dXo&list=RDQ1kPKaL_dXo&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+          - generic [ref=e809] [cursor=pointer]:
+            - generic [ref=e810]:
+              - heading "JUMP BLUES solo guitar Tiny Grimes T-Bone Walker style 1 minute, 6 seconds" [level=3] [ref=e812]:
+                - link "JUMP BLUES solo guitar Tiny Grimes T-Bone Walker style 1 minute, 6 seconds" [ref=e813]:
+                  - /url: /watch?v=Q1kPKaL_dXo&list=RDQ1kPKaL_dXo&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                  - text: JUMP BLUES solo guitar Tiny Grimes T-Bone Walker style
+              - generic [ref=e816]:
+                - generic [ref=e817]: 1.6K views
+                - generic [ref=e818]: •2 years ago
+            - generic [ref=e819]:
+              - link "Go to channel Pete Schmidt Blues" [ref=e820]:
+                - /url: /@PeteSchmidtBluesGuitar
+              - link "Pete Schmidt Blues" [ref=e825]:
+                - /url: /@PeteSchmidtBluesGuitar
+            - generic [ref=e826]:
+              - generic [ref=e827]: Jump blues guitar solo in an upbeat swing style of Tiny Grimes/T Bone Walker et al using a vintage Silvertone Espanada H63 ...
+              - tooltip "tooltip"
+        - generic [ref=e829]:
+          - link [ref=e831] [cursor=pointer]:
+            - /url: /watch?v=nfKXqmPPwkQ&list=RDnfKXqmPPwkQ&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+          - generic [ref=e833] [cursor=pointer]:
+            - generic [ref=e834]:
+              - heading "Tiny's Exercise ／ Tiny Grimes (Guitar Cover) 48 seconds" [level=3] [ref=e836]:
+                - link "Tiny's Exercise ／ Tiny Grimes (Guitar Cover) 48 seconds" [ref=e837]:
+                  - /url: /watch?v=nfKXqmPPwkQ&list=RDnfKXqmPPwkQ&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                  - text: Tiny's Exercise ／ Tiny Grimes (Guitar Cover)
+              - generic [ref=e840]:
+                - generic [ref=e841]: 658 views
+                - generic [ref=e842]: •9 years ago
+            - generic [ref=e843]:
+              - link "Go to channel speedballtake" [ref=e844]:
+                - /url: /@speedballtake
+              - link "speedballtake" [ref=e849]:
+                - /url: /@speedballtake
+            - generic [ref=e850]:
+              - text: "TinysExercise #TinyGrimes #ArtTatum #IkeQuebec #ArchtopTributeCustom #ATC150CC #GibsonES150 #Gibson #ES150 ..."
+              - tooltip "tooltip"
+        - generic [ref=e852]:
+          - link [ref=e854] [cursor=pointer]:
+            - /url: /watch?v=nnMfqStGShc&list=RDnnMfqStGShc&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+          - generic [ref=e856] [cursor=pointer]:
+            - generic [ref=e857]:
+              - heading "Blues For Connie By Tiny Grimes 4 minutes, 49 seconds" [level=3] [ref=e859]:
+                - link "Blues For Connie By Tiny Grimes 4 minutes, 49 seconds" [ref=e860]:
+                  - /url: /watch?v=nnMfqStGShc&list=RDnnMfqStGShc&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                  - text: Blues For Connie By Tiny Grimes
+              - generic [ref=e863]:
+                - generic [ref=e864]: 3.3K views
+                - generic [ref=e865]: •15 years ago
+            - generic [ref=e866]:
+              - link "Go to channel texpaco" [ref=e867]:
+                - /url: /@texpaco
+              - link "texpaco" [ref=e872]:
+                - /url: /@texpaco
+            - generic [ref=e873]:
+              - generic [ref=e874]: Lloyd "Tiny" Grimes was an American jazz and R&B guitarist notable for playing the tenor guitar, a four-stringed electric instrument ...
+              - tooltip "tooltip"
+        - generic [ref=e876]:
+          - link [ref=e878] [cursor=pointer]:
+            - /url: /watch?v=ZlVWkZ4_W34&list=RDZlVWkZ4_W34&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+          - generic [ref=e880] [cursor=pointer]:
+            - generic [ref=e881]:
+              - heading "The Tiny Grimes Swingtet - C Jam Blues 2 minutes, 50 seconds" [level=3] [ref=e883]:
+                - link "The Tiny Grimes Swingtet - C Jam Blues 2 minutes, 50 seconds" [ref=e884]:
+                  - /url: /watch?v=ZlVWkZ4_W34&list=RDZlVWkZ4_W34&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                  - text: The Tiny Grimes Swingtet - C Jam Blues
+              - generic [ref=e887]:
+                - generic [ref=e888]: 307 views
+                - generic [ref=e889]: •8 years ago
+            - generic [ref=e890]:
+              - link "Go to channel Okmusix" [ref=e891]:
+                - /url: /@Okmusix
+              - link "Okmusix" [ref=e896]:
+                - /url: /@Okmusix
+            - generic [ref=e897]:
+              - text: HI, we would like to present you something new musically speaking. Our tracks are not present in the YouTube library. Our music ...
+              - tooltip "tooltip"
+        - generic [ref=e899]:
+          - link [ref=e901] [cursor=pointer]:
+            - /url: /watch?v=0E8V2Mv48Zs&list=RD0E8V2Mv48Zs&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+          - generic [ref=e903] [cursor=pointer]:
+            - generic [ref=e904]:
+              - heading "\"Romance Without Finance\" - Lloyd \"Tiny\" Grimes (Jazz Guitar Transcription) 43 seconds" [level=3] [ref=e906]:
+                - link "\"Romance Without Finance\" - Lloyd \"Tiny\" Grimes (Jazz Guitar Transcription) 43 seconds" [ref=e907]:
+                  - /url: /watch?v=0E8V2Mv48Zs&list=RD0E8V2Mv48Zs&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                  - text: "\"Romance Without Finance\" - Lloyd \"Tiny\" Grimes (Jazz Guitar Transcription)"
+              - generic [ref=e910]:
+                - generic [ref=e911]: 1K views
+                - generic [ref=e912]: •5 years ago
+            - generic [ref=e913]:
+              - link "Go to channel Let's Transcribe" [ref=e914]:
+                - /url: /@LetsTranscribe
+              - link "Let's Transcribe" [ref=e919]:
+                - /url: /@LetsTranscribe
+            - generic [ref=e920]:
+              - generic [ref=e921]: "Purchase this transcription: https://letstranscribe.store/products/romance-without-finance-lloyd-tiny-grimes-jazz-guitar-transcription ..."
+              - tooltip "tooltip"
+        - generic [ref=e923]:
+          - link [ref=e925] [cursor=pointer]:
+            - /url: /watch?v=5KHVs0hknXQ&list=RD5KHVs0hknXQ&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+          - generic [ref=e927] [cursor=pointer]:
+            - generic [ref=e928]:
+              - 'heading "Tiny''s Tempo: Tiny Grimes Melody, Solo and Riffs Study. 1 minute, 52 seconds" [level=3] [ref=e930]':
+                - 'link "Tiny''s Tempo: Tiny Grimes Melody, Solo and Riffs Study. 1 minute, 52 seconds" [ref=e931]':
+                  - /url: /watch?v=5KHVs0hknXQ&list=RD5KHVs0hknXQ&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                  - text: "Tiny's Tempo: Tiny Grimes Melody, Solo and Riffs Study."
+              - generic [ref=e934]:
+                - generic [ref=e935]: 1.8K views
+                - generic [ref=e936]: •2 years ago
+            - generic [ref=e937]:
+              - link "Go to channel Josep Traver" [ref=e938]:
+                - /url: /@stringcordeta
+              - link "Josep Traver" [ref=e943]:
+                - /url: /@stringcordeta
+            - generic [ref=e944]:
+              - generic [ref=e945]: Transcripció de la melodia, solo i riffs del tema Tiny's Tempo, de Tiny Grimes. El va enregistrar a NY l'any 1944 junt amb Charlie ...
+              - tooltip "tooltip"
+        - generic [ref=e947]:
+          - link [ref=e949] [cursor=pointer]:
+            - /url: /watch?v=g5odsHC4Pmk&list=RDg5odsHC4Pmk&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+          - generic [ref=e951] [cursor=pointer]:
+            - generic [ref=e952]:
+              - heading "Watermelon Man By Tiny Grimes 3 minutes, 34 seconds" [level=3] [ref=e954]:
+                - link "Watermelon Man By Tiny Grimes 3 minutes, 34 seconds" [ref=e955]:
+                  - /url: /watch?v=g5odsHC4Pmk&list=RDg5odsHC4Pmk&start_radio=1&pp=ygUpVGlueSBHcmltZXMgamF6eiBibHVlcyBndWl0YXIgcGVyZm9ybWFuY2WgBwE%3D
+                  - text: Watermelon Man By Tiny Grimes
+              - generic [ref=e958]:
+                - generic [ref=e959]: 15K views
+                - generic [ref=e960]: •15 years ago
+            - generic [ref=e961]:
+              - link "Go to channel texpaco" [ref=e962]:
+                - /url: /@texpaco
+              - link "texpaco" [ref=e967]:
+                - /url: /@texpaco
+            - generic [ref=e968]:
+              - generic [ref=e969]: Lloyd "Tiny" Grimes was an American jazz and R&B guitarist notable for playing the tenor guitar, a four-stringed electric instrument ...
+              - tooltip "tooltip"

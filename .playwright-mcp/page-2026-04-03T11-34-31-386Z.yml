@@ -1,0 +1,250 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+          - button "Next" [ref=e111] [cursor=pointer]
+        - link "About these results" [ref=e120] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e121]: About these results
+        - generic [ref=e128]:
+          - button "Search filters" [ref=e130] [cursor=pointer]:
+            - generic [ref=e131]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e142]:
+        - generic [ref=e144]:
+          - text: "Did you mean:"
+          - link "Paul Gayten New Orleans R&B pianist live" [ref=e145] [cursor=pointer]:
+            - /url: /results?search_query=Paul+Gayten+New+Orleans+R%26B+pianist+live
+            - generic [ref=e146]: Paul Gayten New Orleans R&B pianist live
+        - generic [ref=e147]:
+          - generic [ref=e150]:
+            - img [ref=e152]
+            - heading "Shorts" [level=2] [ref=e155]
+          - generic [ref=e156]:
+            - generic [ref=e157]:
+              - generic [ref=e160]:
+                - link [ref=e161] [cursor=pointer]:
+                  - /url: /shorts/VU2Bg2Gc-xE
+                  - img [ref=e166]:
+                    - generic [ref=e167]: New
+                - generic [ref=e168] [cursor=pointer]:
+                  - link "Ten Spencer Covers Fela Kuti \"Progress\" LIVE | Gov't Majik Felabration New Orleans 2025" [ref=e169]:
+                    - /url: /shorts/VU2Bg2Gc-xE
+                  - generic [ref=e170]: 1K views
+                - button "More actions" [ref=e172] [cursor=pointer]
+              - generic [ref=e180]:
+                - link [ref=e181] [cursor=pointer]:
+                  - /url: /shorts/miPNWZHD_bE
+                - generic [ref=e185] [cursor=pointer]:
+                  - 'link "New Orleans Walk… #piano #pianomusic #pianist #pianoplayer #musician #livemusic #nola #drjohn #funky" [ref=e186]':
+                    - /url: /shorts/miPNWZHD_bE
+                  - generic [ref=e187]: 494 views
+                - button "More actions" [ref=e189] [cursor=pointer]
+            - generic [ref=e195]:
+              - generic [ref=e198]:
+                - link [ref=e199] [cursor=pointer]:
+                  - /url: /shorts/av4PyJyFEnQ
+                - generic [ref=e203] [cursor=pointer]:
+                  - link "🥳🎹 CELEBRATING PAUL GAYTEN 🎹🥳" [ref=e204]:
+                    - /url: /shorts/av4PyJyFEnQ
+                  - generic [ref=e205]: 27 views
+                - button "More actions" [ref=e207] [cursor=pointer]
+              - generic [ref=e215]:
+                - link [ref=e216] [cursor=pointer]:
+                  - /url: /shorts/p6MpzAvfKGk
+                - generic [ref=e220] [cursor=pointer]:
+                  - link "Special show tonight at Hotel Peter and Paul New Orleans! Music starts at 7:30. ❤️✨" [ref=e221]:
+                    - /url: /shorts/p6MpzAvfKGk
+                  - generic [ref=e222]: 59 views
+                - button "More actions" [ref=e224] [cursor=pointer]
+          - button "Show more" [ref=e233] [cursor=pointer]:
+            - generic [ref=e234]: Show more
+        - generic [ref=e241]:
+          - link [ref=e243] [cursor=pointer]:
+            - /url: /watch?v=JBifFvErklk&list=RDJBifFvErklk&start_radio=1&pp=ygUoUGF1bCBHYXl0ZW4gTmV3IE9ybGVhbnMgUm5CIHBpYW5pc3QgbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e245] [cursor=pointer]:
+            - generic [ref=e246]:
+              - 'heading "#NOLA#Rocker #Latin Paul Gayten 78rpm #REGAL 3281 Ooh La La #50s #New#Orleans #Rumba #Piano #Clave 2 minutes, 48 seconds" [level=3] [ref=e248]':
+                - 'link "#NOLA#Rocker #Latin Paul Gayten 78rpm #REGAL 3281 Ooh La La #50s #New#Orleans #Rumba #Piano #Clave 2 minutes, 48 seconds" [ref=e249]':
+                  - /url: /watch?v=JBifFvErklk&list=RDJBifFvErklk&start_radio=1&pp=ygUoUGF1bCBHYXl0ZW4gTmV3IE9ybGVhbnMgUm5CIHBpYW5pc3QgbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: "#NOLA#Rocker #Latin Paul Gayten 78rpm #REGAL 3281 Ooh La La #50s #New#Orleans #Rumba #Piano #Clave"
+              - generic [ref=e252]:
+                - generic [ref=e253]: 90 views
+                - generic [ref=e254]: •3 years ago
+            - generic [ref=e255]:
+              - link "Go to channel TURocker" [ref=e256]:
+                - /url: /@TURocker
+              - link "TURocker" [ref=e262]:
+                - /url: /@TURocker
+            - generic [ref=e263]:
+              - text: "w/his#Orchestra #Louisiana #Rhythm&#Blues."
+              - tooltip "tooltip"
+        - generic [ref=e264]:
+          - generic [ref=e267]:
+            - img [ref=e269]
+            - heading "Shorts" [level=2] [ref=e272]
+          - generic [ref=e273]:
+            - generic [ref=e274]:
+              - generic [ref=e277]:
+                - link [ref=e278] [cursor=pointer]:
+                  - /url: /shorts/v-DVGXsCGww
+                - generic [ref=e282] [cursor=pointer]:
+                  - link "A New Orleans piano man" [ref=e283]:
+                    - /url: /shorts/v-DVGXsCGww
+                  - generic [ref=e284]: 836 views
+                - button "More actions" [ref=e286] [cursor=pointer]
+              - generic [ref=e294]:
+                - link [ref=e295] [cursor=pointer]:
+                  - /url: /shorts/hLPrMLI74zo
+                - generic [ref=e299] [cursor=pointer]:
+                  - link "Piano at Cafe Beignet Canal St. (2024-01-16, New Orleans, LA) [4K]" [ref=e300]:
+                    - /url: /shorts/hLPrMLI74zo
+                  - generic [ref=e301]: 943 views
+                - button "More actions" [ref=e303] [cursor=pointer]
+            - generic [ref=e309]:
+              - generic [ref=e312]:
+                - link [ref=e313] [cursor=pointer]:
+                  - /url: /shorts/XEIgv9lyeVw
+                - generic [ref=e317] [cursor=pointer]:
+                  - 'link "Awesome New Orleans Wedding! #piano #musician #wedding #weddingpianist" [ref=e318]':
+                    - /url: /shorts/XEIgv9lyeVw
+                  - generic [ref=e319]: 1.2K views
+                - button "More actions" [ref=e321] [cursor=pointer]
+              - generic [ref=e329]:
+                - link [ref=e330] [cursor=pointer]:
+                  - /url: /shorts/52BaDucM5mI
+                - generic [ref=e334] [cursor=pointer]:
+                  - link "I thought - LIVE - from the ballad Album Wild Storm is now online" [ref=e335]:
+                    - /url: /shorts/52BaDucM5mI
+                  - generic [ref=e336]: 300 views
+                - button "More actions" [ref=e338] [cursor=pointer]
+          - button "Show more" [ref=e347] [cursor=pointer]:
+            - generic [ref=e348]: Show more
+        - generic [ref=e355]:
+          - link [ref=e357] [cursor=pointer]:
+            - /url: /watch?v=p48UwJObK78&list=RDp48UwJObK78&start_radio=1&pp=ygUoUGF1bCBHYXl0ZW4gTmV3IE9ybGVhbnMgUm5CIHBpYW5pc3QgbGl2ZaAHAQ%3D%3D
+          - generic [ref=e359] [cursor=pointer]:
+            - generic [ref=e360]:
+              - heading "Nervous Boogie by Paul Gayten (cover) 2 minutes, 16 seconds" [level=3] [ref=e362]:
+                - link "Nervous Boogie by Paul Gayten (cover) 2 minutes, 16 seconds" [ref=e363]:
+                  - /url: /watch?v=p48UwJObK78&list=RDp48UwJObK78&start_radio=1&pp=ygUoUGF1bCBHYXl0ZW4gTmV3IE9ybGVhbnMgUm5CIHBpYW5pc3QgbGl2ZaAHAQ%3D%3D
+                  - text: Nervous Boogie by Paul Gayten (cover)
+              - generic [ref=e366]:
+                - generic [ref=e367]: 56 views
+                - generic [ref=e368]: •4 years ago
+            - generic [ref=e369]:
+              - link "Go to channel Bridie King" [ref=e370]:
+                - /url: /@bridieking8750
+              - link "Bridie King" [ref=e375]:
+                - /url: /@bridieking8750
+            - generic [ref=e376]:
+              - generic [ref=e377]: Home recording, love playing this 1950s boogie, it's so much fun. Love New Orleans music.
+              - tooltip "tooltip"
+        - generic [ref=e379]:
+          - link [ref=e381] [cursor=pointer]:
+            - /url: /watch?v=OokvBhxSKU8&list=RDOokvBhxSKU8&start_radio=1&pp=ygUoUGF1bCBHYXl0ZW4gTmV3IE9ybGVhbnMgUm5CIHBpYW5pc3QgbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e383] [cursor=pointer]:
+            - generic [ref=e384]:
+              - heading "Paul Gayten - The Music Goes Round And Round 2 minutes, 7 seconds" [level=3] [ref=e386]:
+                - link "Paul Gayten - The Music Goes Round And Round 2 minutes, 7 seconds" [ref=e387]:
+                  - /url: /watch?v=OokvBhxSKU8&list=RDOokvBhxSKU8&start_radio=1&pp=ygUoUGF1bCBHYXl0ZW4gTmV3IE9ybGVhbnMgUm5CIHBpYW5pc3QgbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: Paul Gayten - The Music Goes Round And Round
+              - generic [ref=e390]:
+                - generic [ref=e391]: 387 views
+                - generic [ref=e392]: •1 year ago
+            - generic [ref=e393]:
+              - link "Go to channel althazarr's good time oldies" [ref=e394]:
+                - /url: /@althazarr
+              - link "althazarr's good time oldies" [ref=e399]:
+                - /url: /@althazarr
+            - generic [ref=e400]:
+              - generic [ref=e401]: Released in September of 1956. Paul Leon Gayten (January 29, 1920 – March 26, 1991) was an American R&B pianist, ...
+              - tooltip "tooltip"
+        - generic [ref=e403]:
+          - link [ref=e405] [cursor=pointer]:
+            - /url: /watch?v=XDSRNRPycHo&pp=ygUoUGF1bCBHYXl0ZW4gTmV3IE9ybGVhbnMgUm5CIHBpYW5pc3QgbGl2ZQ%3D%3D
+          - generic [ref=e407] [cursor=pointer]:
+            - generic [ref=e408]:
+              - heading "Bridie King’s Blues N Boogie play Yellow Dog (Paul Gayten) cover 56 seconds" [level=3] [ref=e410]:
+                - link "Bridie King’s Blues N Boogie play Yellow Dog (Paul Gayten) cover 56 seconds" [ref=e411]:
+                  - /url: /watch?v=XDSRNRPycHo&pp=ygUoUGF1bCBHYXl0ZW4gTmV3IE9ybGVhbnMgUm5CIHBpYW5pc3QgbGl2ZQ%3D%3D
+                  - text: Bridie King’s Blues N Boogie play Yellow Dog (Paul Gayten) cover
+              - generic [ref=e414]:
+                - generic [ref=e415]: 36 views
+                - generic [ref=e416]: •4 years ago
+            - generic [ref=e417]:
+              - link "Go to channel Bridie King" [ref=e418]:
+                - /url: /@bridieking8750
+              - link "Bridie King" [ref=e423]:
+                - /url: /@bridieking8750
+            - generic [ref=e424]:
+              - generic [ref=e425]: Paul Gayten (New Orleans) 1950s instrumental played by Bridie King piano, David 'Fred' Learmonth guitar and Andrew 'Smithy' ...
+              - tooltip "tooltip"
+        - generic [ref=e427]:
+          - link [ref=e429] [cursor=pointer]:
+            - /url: /watch?v=UTupXhXAtnM&list=RDUTupXhXAtnM&start_radio=1&pp=ygUoUGF1bCBHYXl0ZW4gTmV3IE9ybGVhbnMgUm5CIHBpYW5pc3QgbGl2ZaAHAQ%3D%3D
+          - generic [ref=e431] [cursor=pointer]:
+            - generic [ref=e432]:
+              - heading "Paul Gayten Mother Roux (1956) 2 minutes, 31 seconds" [level=3] [ref=e434]:
+                - link "Paul Gayten Mother Roux (1956) 2 minutes, 31 seconds" [ref=e435]:
+                  - /url: /watch?v=UTupXhXAtnM&list=RDUTupXhXAtnM&start_radio=1&pp=ygUoUGF1bCBHYXl0ZW4gTmV3IE9ybGVhbnMgUm5CIHBpYW5pc3QgbGl2ZaAHAQ%3D%3D
+                  - text: Paul Gayten Mother Roux (1956)
+              - generic [ref=e438]:
+                - generic [ref=e439]: 2.7K views
+                - generic [ref=e440]: •10 years ago
+            - generic [ref=e441]:
+              - link "Go to channel randomandrare" [ref=e442]:
+                - /url: /@randomandrare
+              - link "randomandrare" [ref=e447]:
+                - /url: /@randomandrare
+            - generic [ref=e448]:
+              - generic [ref=e449]: I do not own the copyright to this recording. This video is for historical and educational purposes only. Composed by Paul Gayten ...
+              - tooltip "tooltip"
+        - generic [ref=e451]:
+          - link [ref=e453] [cursor=pointer]:
+            - /url: /watch?v=q4EizJ6tjYU&list=RDq4EizJ6tjYU&start_radio=1&pp=ygUoUGF1bCBHYXl0ZW4gTmV3IE9ybGVhbnMgUm5CIHBpYW5pc3QgbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e455] [cursor=pointer]:
+            - generic [ref=e456]:
+              - heading "YELLOW DOG by Paul Gayten (cover by Bridie King) 2 minutes, 57 seconds" [level=3] [ref=e458]:
+                - link "YELLOW DOG by Paul Gayten (cover by Bridie King) 2 minutes, 57 seconds" [ref=e459]:
+                  - /url: /watch?v=q4EizJ6tjYU&list=RDq4EizJ6tjYU&start_radio=1&pp=ygUoUGF1bCBHYXl0ZW4gTmV3IE9ybGVhbnMgUm5CIHBpYW5pc3QgbGl2ZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: YELLOW DOG by Paul Gayten (cover by Bridie King)
+              - generic [ref=e462]:
+                - generic [ref=e463]: 112 views
+                - generic [ref=e464]: •4 years ago
+            - generic [ref=e465]:
+              - link "Go to channel Bridie King" [ref=e466]:
+                - /url: /@bridieking8750
+              - link "Bridie King" [ref=e471]:
+                - /url: /@bridieking8750
+            - generic [ref=e472]:
+              - generic [ref=e473]: Bridie King's Old Skool RnB plays Yellow Dog. Originally this track was recorded in New Orleans in the 1950s by Paul Gayten ...
+              - tooltip "tooltip"

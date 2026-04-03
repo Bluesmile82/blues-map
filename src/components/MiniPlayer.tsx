@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import type { Musician } from '../types';
@@ -24,16 +24,21 @@ interface MiniPlayerProps {
   onLoadVideoConsumed: () => void;
 }
 
+export interface MiniPlayerHandle {
+  play: () => void;
+  pause: () => void;
+}
+
 const PLAYER_DIV_ID = 'mini-player-container';
 const LOADING_TIMEOUT_MS = 15000;
 
-export default function MiniPlayer({
+const MiniPlayer = forwardRef<MiniPlayerHandle, MiniPlayerProps>(function MiniPlayer({
   musician,
   isPlaying,
   onPlayingChange,
   loadVideoId,
   onLoadVideoConsumed,
-}: MiniPlayerProps) {
+}: MiniPlayerProps, ref) {
   const [apiReady, setApiReady] = useState(false);
   const playerRef = useRef<YT.Player | null>(null);
   const playerReadyRef = useRef(false);
@@ -103,6 +108,7 @@ export default function MiniPlayer({
     const videos = videosRef.current;
     const initialVideoId = videos.length > 0 ? videos[0].videoId : '';
 
+    console.log('[MiniPlayer] creating YT.Player, initialVideoId:', initialVideoId);
     playerRef.current = new YT.Player(PLAYER_DIV_ID, {
       videoId: initialVideoId,
       playerVars: {
@@ -111,9 +117,11 @@ export default function MiniPlayer({
         rel: 0,
         modestbranding: 1,
         controls: 0,
+        fs: 0,
       },
       events: {
         onReady: () => {
+          console.log('[MiniPlayer] onReady fired, isPlaying:', isPlayingRef.current);
           playerReadyRef.current = true;
           if (pendingVideoIdRef.current) {
             const vid = pendingVideoIdRef.current;
@@ -130,21 +138,34 @@ export default function MiniPlayer({
           }
         },
         onStateChange: (event: { data: number }) => {
+          console.log('[MiniPlayer] onStateChange:', event.data, 'changingTrack:', changingTrackRef.current);
           if (event.data === YT.PlayerState.PLAYING) {
             changingTrackRef.current = false;
             clearTimeoutLoading();
             onPlayingChangeRef.current(true);
-          } else if (
-            event.data === YT.PlayerState.PAUSED ||
-            event.data === YT.PlayerState.ENDED
-          ) {
+          } else if (event.data === YT.PlayerState.ENDED) {
+            if (!changingTrackRef.current) {
+              const nextIndex = currentIndexRef.current + 1;
+              const videos = videosRef.current;
+              if (nextIndex < videos.length) {
+                currentIndexRef.current = nextIndex;
+                setCurrentIndex(nextIndex);
+                changingTrackRef.current = true;
+                startLoadingTimeout();
+                playerRef.current?.loadVideoById(videos[nextIndex].videoId);
+              } else {
+                // All tracks played, stop
+                onPlayingChangeRef.current(false);
+              }
+            }
+          } else if (event.data === YT.PlayerState.PAUSED) {
             if (!changingTrackRef.current) {
               onPlayingChangeRef.current(false);
             }
           }
         },
         onError: (event: { data: number }) => {
-          console.error('MiniPlayer YT error:', event.data);
+          console.error('[MiniPlayer] YT error:', event.data);
           changingTrackRef.current = false;
           clearTimeoutLoading();
           const nextIndex = currentIndexRef.current + 1;
@@ -155,6 +176,9 @@ export default function MiniPlayer({
             changingTrackRef.current = true;
             startLoadingTimeout();
             playerRef.current?.loadVideoById(videos[nextIndex].videoId);
+          } else {
+            // All videos failed — reset UI
+            onPlayingChangeRef.current(false);
           }
         },
       },
@@ -187,13 +211,17 @@ export default function MiniPlayer({
     currentIndexRef.current = 0;
     setCurrentIndex(0);
 
+    // Prevent trailing PAUSED/ENDED from old video from flipping playing state
+    if (isPlayingRef.current) {
+      changingTrackRef.current = true;
+    }
+
     if (!playerReadyRef.current || !playerRef.current) {
       pendingVideoIdRef.current = newVideoId;
       return;
     }
 
     if (isPlayingRef.current) {
-      changingTrackRef.current = true;
       startLoadingTimeout();
       playerRef.current.loadVideoById(newVideoId);
     } else {
@@ -222,6 +250,21 @@ export default function MiniPlayer({
     onLoadVideoConsumed();
   }, [loadVideoId, onLoadVideoConsumed]);
 
+  useImperativeHandle(ref, () => ({
+    play: () => {
+      console.log('[MiniPlayer] imperative play(), playerReady:', playerReadyRef.current, 'player:', !!playerRef.current);
+      if (playerReadyRef.current && playerRef.current) {
+        playerRef.current.playVideo();
+      }
+    },
+    pause: () => {
+      console.log('[MiniPlayer] imperative pause(), playerReady:', playerReadyRef.current);
+      if (playerReadyRef.current && playerRef.current) {
+        playerRef.current.pauseVideo();
+      }
+    },
+  }));
+
   const navigateTo = (idx: number) => {
     const videos = videosRef.current;
     if (idx < 0 || idx >= videos.length || !playerRef.current) return;
@@ -238,8 +281,9 @@ export default function MiniPlayer({
 
   return (
     <>
-      <div className="pointer-events-none">
-        <div id={PLAYER_DIV_ID} className="w-0 h-0 overflow-hidden" />
+      {/* iOS Safari requires the iframe to have non-zero dimensions to allow programmatic playVideo() */}
+      <div className="pointer-events-none absolute" style={{ width: 1, height: 1, overflow: 'hidden', opacity: 0, position: 'fixed', top: 0, left: 0 }}>
+        <div id={PLAYER_DIV_ID} style={{ width: 1, height: 1 }} />
       </div>
       <AnimatePresence>
         {isPlaying && videos.length > 0 && (
@@ -286,4 +330,6 @@ export default function MiniPlayer({
       </AnimatePresence>
     </>
   );
-}
+});
+
+export default MiniPlayer;

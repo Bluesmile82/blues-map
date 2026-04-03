@@ -1,0 +1,572 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+      - generic [ref=e30]:
+        - button "Settings" [ref=e35] [cursor=pointer]
+        - link "Sign in" [ref=e39] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DArtur%252BMenezes%252Bblues%252Blive&hl=en&ec=65620
+          - generic [ref=e42]: Sign in
+  - main [ref=e47]:
+    - generic [ref=e48]:
+      - generic [ref=e50]:
+        - generic [ref=e53]:
+          - tablist [ref=e55]:
+            - tab "All" [selected] [ref=e59] [cursor=pointer]:
+              - generic [ref=e61]: All
+            - tab "Shorts" [ref=e68] [cursor=pointer]:
+              - generic [ref=e70]: Shorts
+            - tab "Videos" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]: Videos
+            - tab "Unwatched" [ref=e86] [cursor=pointer]:
+              - generic [ref=e88]: Unwatched
+            - tab "Watched" [ref=e95] [cursor=pointer]:
+              - generic [ref=e97]: Watched
+            - tab "Recently uploaded" [ref=e104] [cursor=pointer]:
+              - generic [ref=e106]: Recently uploaded
+            - tab "Live" [ref=e113] [cursor=pointer]:
+              - generic [ref=e115]: Live
+          - button "Next" [ref=e123] [cursor=pointer]
+        - link "About these results" [ref=e132] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e133]: About these results
+        - generic [ref=e140]:
+          - button "Search filters" [ref=e142] [cursor=pointer]:
+            - generic [ref=e143]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e154]:
+        - generic [ref=e156]:
+          - link [ref=e158] [cursor=pointer]:
+            - /url: /watch?v=x4XZ_RlxS_Q&list=RDx4XZ_RlxS_Q&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e160] [cursor=pointer]:
+            - generic [ref=e161]:
+              - heading "OtRo MuNdO Sessions | ARTUR MENEZES - Blues in D Natural | Live [#16] 6 minutes, 9 seconds" [level=3] [ref=e163]:
+                - link "OtRo MuNdO Sessions | ARTUR MENEZES - Blues in D Natural | Live [#16] 6 minutes, 9 seconds" [ref=e164]:
+                  - /url: /watch?v=x4XZ_RlxS_Q&list=RDx4XZ_RlxS_Q&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: OtRo MuNdO Sessions | ARTUR MENEZES - Blues in D Natural | Live [#16]
+              - generic [ref=e167]:
+                - generic [ref=e168]: 964 views
+                - generic [ref=e169]: •1 month ago
+            - generic [ref=e170]:
+              - link "Collaboration channels" [ref=e172]
+              - generic [ref=e192]:
+                - text: OtRo MuNdO MuSiC and Artur Menezes
+                - img [ref=e195]
+            - generic [ref=e196]:
+              - generic [ref=e197]: On a Sunday evening, Artur Menezes stopped by at Villa K in Klausen, South Tyrol (Italy) - during his Europe Tour 2025 - at the ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e200]:
+              - generic [ref=e201]: 4K
+        - generic [ref=e203]:
+          - link [ref=e205] [cursor=pointer]:
+            - /url: /@ArturMenezes
+          - link "Artur Menezes Official Artist Channel @ArturMenezes•15.1K subscribers Artur Menezes is a guitarist, singer, and songwriter crafting heavy, psychedelic rock blended with blues and funk elements." [ref=e209] [cursor=pointer]:
+            - /url: /@ArturMenezes
+            - generic [ref=e210]:
+              - generic [ref=e211]:
+                - generic [ref=e214]: Artur Menezes
+                - img "Official Artist Channel" [ref=e217]
+              - generic [ref=e219]: "@ArturMenezes•15.1K subscribers"
+              - generic [ref=e220]: Artur Menezes is a guitarist, singer, and songwriter crafting heavy, psychedelic rock blended with blues and funk elements.
+        - generic [ref=e222]:
+          - link [ref=e224] [cursor=pointer]:
+            - /url: /watch?v=nt0TIbTz5mA&list=RDnt0TIbTz5mA&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e226] [cursor=pointer]:
+            - generic [ref=e227]:
+              - heading "Arthur Menezes 1 hour, 28 minutes" [level=3] [ref=e229]:
+                - link "Arthur Menezes 1 hour, 28 minutes" [ref=e230]:
+                  - /url: /watch?v=nt0TIbTz5mA&list=RDnt0TIbTz5mA&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: Arthur Menezes
+              - generic [ref=e233]:
+                - generic [ref=e234]: 3.2K views
+                - generic [ref=e235]: •2 years ago
+            - generic [ref=e236]:
+              - link "Go to channel Silfan van der kaap" [ref=e237]:
+                - /url: /@silfanvanderkaap8510
+              - link "Silfan van der kaap" [ref=e242]:
+                - /url: /@silfanvanderkaap8510
+            - generic [ref=e243]:
+              - generic [ref=e244]: Arthur Menezes is a Brazilian blues and blues rock guitarist, singer, and songwriter. He was born on July 14, 1997. Menezes has ...
+              - tooltip "tooltip"
+        - generic [ref=e246]:
+          - link [ref=e248] [cursor=pointer]:
+            - /url: /watch?v=b2gutp4nnto&list=RDb2gutp4nnto&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e250] [cursor=pointer]:
+            - generic [ref=e251]:
+              - heading "Artur Menezes FULL SHOW 2/28/22 Cadillac Zack Presents at the Maui Sugar Mill 1 hour, 37 minutes" [level=3] [ref=e253]:
+                - link "Artur Menezes FULL SHOW 2/28/22 Cadillac Zack Presents at the Maui Sugar Mill 1 hour, 37 minutes" [ref=e254]:
+                  - /url: /watch?v=b2gutp4nnto&list=RDb2gutp4nnto&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: Artur Menezes FULL SHOW 2/28/22 Cadillac Zack Presents at the Maui Sugar Mill
+              - generic [ref=e257]:
+                - generic [ref=e258]: 25K views
+                - generic [ref=e259]: •4 years ago
+            - generic [ref=e260]:
+              - link "Go to channel 1AnitrasDance" [ref=e261]:
+                - /url: /@1AnitrasDance
+              - link "1AnitrasDance" [ref=e267]:
+                - /url: /@1AnitrasDance
+            - generic [ref=e268]:
+              - generic [ref=e269]: "(Filmed by Natasha in 1080 HD) Cadillac Zack Presents: Artur Menezes - Lead Guitar & Vocals, Celso Salim - Guitar, Sam Bolle ..."
+              - tooltip "tooltip"
+            - generic [ref=e272]:
+              - generic [ref=e273]:
+                - generic [ref=e277]: 10 moments
+                - button "Fight For Your Love | Northeast | Any Day Any Time | Give My Money Back | Should Have Never Left | Blues In D Natural | Cissy Strut | Come With Me | Born Under A Bad Sign | Till The Day I Die"
+              - button "More" [ref=e282]
+        - generic [ref=e289]:
+          - link [ref=e291] [cursor=pointer]:
+            - /url: /watch?v=qx5lB2iP2W0&list=RDqx5lB2iP2W0&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e293] [cursor=pointer]:
+            - generic [ref=e294]:
+              - heading "OtRo MuNdO Session | ARTUR MENEZES - Power Of Soul (Jimi Hendrix Cover) | LIVE PERFORMANCE [#9] 7 minutes, 10 seconds" [level=3] [ref=e296]:
+                - link "OtRo MuNdO Session | ARTUR MENEZES - Power Of Soul (Jimi Hendrix Cover) | LIVE PERFORMANCE [#9] 7 minutes, 10 seconds" [ref=e297]:
+                  - /url: /watch?v=qx5lB2iP2W0&list=RDqx5lB2iP2W0&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: OtRo MuNdO Session | ARTUR MENEZES - Power Of Soul (Jimi Hendrix Cover) | LIVE PERFORMANCE [#9]
+              - generic [ref=e300]:
+                - generic [ref=e301]: 41K views
+                - generic [ref=e302]: •5 months ago
+            - generic [ref=e303]:
+              - link "Collaboration channels" [ref=e305]
+              - generic [ref=e330]: OtRo MuNdO MuSiC and 2 more
+            - generic [ref=e331]:
+              - generic [ref=e332]: Otro Mundo Sessions are rare, intimate live performances - raw sound, real emotion, and the human connection behind the music.
+              - tooltip "tooltip"
+            - img "4K" [ref=e335]:
+              - generic [ref=e336]: 4K
+        - generic [ref=e338]:
+          - link [ref=e340] [cursor=pointer]:
+            - /url: /watch?v=Kerq6Fqur8o&list=RDKerq6Fqur8o&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e342] [cursor=pointer]:
+            - generic [ref=e343]:
+              - 'heading "OtRo MuNdO Sessions | ARTUR MENEZES - Hurts Like Hell | LIVE PERFORMANCE #8 5 minutes, 53 seconds" [level=3] [ref=e345]':
+                - 'link "OtRo MuNdO Sessions | ARTUR MENEZES - Hurts Like Hell | LIVE PERFORMANCE #8 5 minutes, 53 seconds" [ref=e346]':
+                  - /url: /watch?v=Kerq6Fqur8o&list=RDKerq6Fqur8o&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: "OtRo MuNdO Sessions | ARTUR MENEZES - Hurts Like Hell | LIVE PERFORMANCE #8"
+              - generic [ref=e349]:
+                - generic [ref=e350]: 7K views
+                - generic [ref=e351]: •6 months ago
+            - generic [ref=e352]:
+              - link "Collaboration channels" [ref=e354]
+              - generic [ref=e379]: OtRo MuNdO MuSiC and 2 more
+            - generic [ref=e380]:
+              - generic [ref=e381]: OtRo MuNdO Sessions are rare, intimate live performances - raw sound, real emotion, and the human connection behind the ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e384]:
+              - generic [ref=e385]: 4K
+        - generic [ref=e387]:
+          - link [ref=e389] [cursor=pointer]:
+            - /url: /watch?v=GbUMJUMUVFA&list=RDGbUMJUMUVFA&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e391] [cursor=pointer]:
+            - generic [ref=e392]:
+              - heading "Cadillac Zack Presents Chris Cain & Artur Menezes - Worried Dream - 4/29/19 Maui Sugar Mill 9 minutes, 35 seconds" [level=3] [ref=e394]:
+                - link "Cadillac Zack Presents Chris Cain & Artur Menezes - Worried Dream - 4/29/19 Maui Sugar Mill 9 minutes, 35 seconds" [ref=e395]:
+                  - /url: /watch?v=GbUMJUMUVFA&list=RDGbUMJUMUVFA&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: Cadillac Zack Presents Chris Cain & Artur Menezes - Worried Dream - 4/29/19 Maui Sugar Mill
+              - generic [ref=e398]:
+                - generic [ref=e399]: 82K views
+                - generic [ref=e400]: •6 years ago
+            - generic [ref=e401]:
+              - link "Go to channel 1AnitrasDance" [ref=e402]:
+                - /url: /@1AnitrasDance
+              - link "1AnitrasDance" [ref=e407]:
+                - /url: /@1AnitrasDance
+            - generic [ref=e408]:
+              - generic [ref=e409]: (Filmed by Natasha in 1080 HD) Cadillac Zack Presents Chris Cain - Guitar & Vocals, Artur Menezes - Guitar, Mike Merritt - Bass, ...
+              - tooltip "tooltip"
+        - generic [ref=e411]:
+          - link [ref=e413] [cursor=pointer]:
+            - /url: /watch?v=SikhDffI3iQ&list=RDSikhDffI3iQ&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e415] [cursor=pointer]:
+            - generic [ref=e416]:
+              - 'heading "ARTUR MENEZES - Full Set (Live in Los Angeles, CA 2021) #JAMINTHEVAN 28 minutes" [level=3] [ref=e418]':
+                - 'link "ARTUR MENEZES - Full Set (Live in Los Angeles, CA 2021) #JAMINTHEVAN 28 minutes" [ref=e419]':
+                  - /url: /watch?v=SikhDffI3iQ&list=RDSikhDffI3iQ&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: "ARTUR MENEZES - Full Set (Live in Los Angeles, CA 2021) #JAMINTHEVAN"
+              - generic [ref=e422]:
+                - generic [ref=e423]: 35K views
+                - generic [ref=e424]: •4 years ago
+            - generic [ref=e425]:
+              - link "Go to channel Jam In The Van" [ref=e426]:
+                - /url: /@JamintheVan
+              - generic [ref=e427]:
+                - link "Jam In The Van" [ref=e431]:
+                  - /url: /@JamintheVan
+                - img "Verified" [ref=e434]
+            - generic [ref=e436]:
+              - generic [ref=e437]: Artur Menezes is an indie artist taking the blues rock scene by storm! As a highly energetic guitarist, singer and songwriter, ...
+              - tooltip "tooltip"
+            - generic [ref=e440]:
+              - generic [ref=e441]:
+                - generic [ref=e445]: 4 moments
+                - button "Devil's Own | Come On | Fight For Your Love | Green Card Blues"
+              - button "More" [ref=e450]
+        - generic [ref=e456]:
+          - generic [ref=e459]:
+            - img [ref=e461]
+            - heading "Shorts" [level=2] [ref=e464]
+          - generic [ref=e465]:
+            - generic [ref=e466]:
+              - generic [ref=e469]:
+                - link [ref=e470] [cursor=pointer]:
+                  - /url: /shorts/G88OIU33go0
+                  - img [ref=e475]:
+                    - generic [ref=e476]: New
+                - generic [ref=e477] [cursor=pointer]:
+                  - link "Brazilian “Baião” + Blues at Lollapalooza 🌵" [ref=e478]:
+                    - /url: /shorts/G88OIU33go0
+                  - generic [ref=e479]: 1.4K views
+                - button "More actions" [ref=e481] [cursor=pointer]
+              - generic [ref=e489]:
+                - link [ref=e490] [cursor=pointer]:
+                  - /url: /shorts/-d_b9DVMxL4
+                - generic [ref=e494] [cursor=pointer]:
+                  - 'link "ARTUR MENEZES - Blues in D-Flat | LIVE PERFORMANCE at OtRo MuNdO Sessions #livemusic #music" [ref=e495]':
+                    - /url: /shorts/-d_b9DVMxL4
+                  - generic [ref=e496]: 1.3K views
+                - button "More actions" [ref=e498] [cursor=pointer]
+            - generic [ref=e504]:
+              - generic [ref=e507]:
+                - link [ref=e508] [cursor=pointer]:
+                  - /url: /shorts/_ZaTA6j36Vk
+                - generic [ref=e512] [cursor=pointer]:
+                  - 'link "Artur Menezes Crazy Chromatic Blues Lick #shorts #arturmenezes #blues" [ref=e513]':
+                    - /url: /shorts/_ZaTA6j36Vk
+                  - generic [ref=e514]: 6.5K views
+                - button "More actions" [ref=e516] [cursor=pointer]
+              - generic [ref=e524]:
+                - link [ref=e525] [cursor=pointer]:
+                  - /url: /shorts/F3yVSyhkMdQ
+                - generic [ref=e529] [cursor=pointer]:
+                  - link "ARTUR MENEZES - Power Of Soul (Jimi Hendrix Cover) | LIVE PERFORMANCE at OtRo MuNdO Sessions" [ref=e530]:
+                    - /url: /shorts/F3yVSyhkMdQ
+                  - generic [ref=e531]: 1.9K views
+                - button "More actions" [ref=e533] [cursor=pointer]
+          - button "Show more" [ref=e542] [cursor=pointer]:
+            - generic [ref=e543]: Show more
+        - generic [ref=e550]:
+          - link [ref=e552] [cursor=pointer]:
+            - /url: /watch?v=qoOx7VEezn4&list=RDqoOx7VEezn4&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e554] [cursor=pointer]:
+            - generic [ref=e555]:
+              - heading "Artur Menezes - Devil's Own - 11/14/20 Carroll Arts Center - Westminster, MD 7 minutes, 6 seconds" [level=3] [ref=e557]:
+                - link "Artur Menezes - Devil's Own - 11/14/20 Carroll Arts Center - Westminster, MD 7 minutes, 6 seconds" [ref=e558]:
+                  - /url: /watch?v=qoOx7VEezn4&list=RDqoOx7VEezn4&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: Artur Menezes - Devil's Own - 11/14/20 Carroll Arts Center - Westminster, MD
+              - generic [ref=e561]:
+                - generic [ref=e562]: 2.6K views
+                - generic [ref=e563]: •5 years ago
+            - generic [ref=e564]:
+              - link "Go to channel 1AnitrasDance" [ref=e565]:
+                - /url: /@1AnitrasDance
+              - link "1AnitrasDance" [ref=e570]:
+                - /url: /@1AnitrasDance
+            - generic [ref=e571]:
+              - generic [ref=e572]: (Filmed by Natasha in 1080 HD) Artur Menezes - Lead Guitar & Vocals, Matt Mitchell - Guitar, Gui Bodi - Bass, Julian Ho - Drums ...
+              - tooltip "tooltip"
+        - generic [ref=e574]:
+          - link [ref=e576] [cursor=pointer]:
+            - /url: /watch?v=1KqZlYdfJgo&list=RD1KqZlYdfJgo&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e578] [cursor=pointer]:
+            - generic [ref=e579]:
+              - heading "Blues Jazz Brasil || Artur Menezes 13 minutes, 29 seconds" [level=3] [ref=e581]:
+                - link "Blues Jazz Brasil || Artur Menezes 13 minutes, 29 seconds" [ref=e582]:
+                  - /url: /watch?v=1KqZlYdfJgo&list=RD1KqZlYdfJgo&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: Blues Jazz Brasil || Artur Menezes
+              - generic [ref=e585]:
+                - generic [ref=e586]: 13K views
+                - generic [ref=e587]: •3 years ago
+            - generic [ref=e588]:
+              - link "Go to channel Blues Jazz Brasil" [ref=e589]:
+                - /url: /@bluesjazzbrasil
+              - link "Blues Jazz Brasil" [ref=e594]:
+                - /url: /@bluesjazzbrasil
+            - generic [ref=e595]:
+              - generic [ref=e596]: Confira como foi o show de Artur Menezes no Blues Jazz Brasil - Porto Alegre.
+              - tooltip "tooltip"
+        - generic [ref=e598]:
+          - link [ref=e600] [cursor=pointer]:
+            - /url: /watch?v=0t2bWNKrmMw&list=RD0t2bWNKrmMw&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e602] [cursor=pointer]:
+            - generic [ref=e603]:
+              - heading "Artur Menezes - Northeast - 5/6/23 Dallas International Guitar Show 6 minutes, 7 seconds" [level=3] [ref=e605]:
+                - link "Artur Menezes - Northeast - 5/6/23 Dallas International Guitar Show 6 minutes, 7 seconds" [ref=e606]:
+                  - /url: /watch?v=0t2bWNKrmMw&list=RD0t2bWNKrmMw&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: Artur Menezes - Northeast - 5/6/23 Dallas International Guitar Show
+              - generic [ref=e609]:
+                - generic [ref=e610]: 732 views
+                - generic [ref=e611]: •2 years ago
+            - generic [ref=e612]:
+              - link "Go to channel 1AnitrasDance" [ref=e613]:
+                - /url: /@1AnitrasDance
+              - link "1AnitrasDance" [ref=e618]:
+                - /url: /@1AnitrasDance
+            - generic [ref=e619]:
+              - generic [ref=e620]: (Filmed by Natasha in 1080 HD) Artur Menezes - Guitar & Vocals, Poliana Magalhaes - Bass, Filmed & recorded at the Dallas ...
+              - tooltip "tooltip"
+        - generic [ref=e621]:
+          - generic [ref=e624]:
+            - img [ref=e626]
+            - heading "Shorts" [level=2] [ref=e629]
+          - generic [ref=e630]:
+            - generic [ref=e631]:
+              - generic [ref=e634]:
+                - link [ref=e635] [cursor=pointer]:
+                  - /url: /shorts/JjtpbWk2-Hc
+                - generic [ref=e639] [cursor=pointer]:
+                  - 'link "Great times at Crossroads! #arturmenezes" [ref=e640]':
+                    - /url: /shorts/JjtpbWk2-Hc
+                  - generic [ref=e641]: 7.1K views
+                - button "More actions" [ref=e643] [cursor=pointer]
+              - generic [ref=e651]:
+                - link [ref=e652] [cursor=pointer]:
+                  - /url: /shorts/4ELEAttbRD0
+                - generic [ref=e656] [cursor=pointer]:
+                  - link "Arthur Menezes / Brezoi / Romania 2025" [ref=e657]:
+                    - /url: /shorts/4ELEAttbRD0
+                  - generic [ref=e658]: 89 views
+                - button "More actions" [ref=e660] [cursor=pointer]
+            - generic [ref=e666]:
+              - generic [ref=e669]:
+                - link [ref=e670] [cursor=pointer]:
+                  - /url: /shorts/pLrItPE6kuY
+                - generic [ref=e674] [cursor=pointer]:
+                  - link "Artur Menezes @ NAMM 2017!" [ref=e675]:
+                    - /url: /shorts/pLrItPE6kuY
+                  - generic [ref=e676]: 1.6K views
+                - button "More actions" [ref=e678] [cursor=pointer]
+              - generic [ref=e686]:
+                - link [ref=e687] [cursor=pointer]:
+                  - /url: /shorts/B_IjtohVuEM
+                - generic [ref=e691] [cursor=pointer]:
+                  - link "Shredding at the Best Of Blues and Rock Festival in Brazil! I call this “The Drill Lick”!" [ref=e692]:
+                    - /url: /shorts/B_IjtohVuEM
+                  - generic [ref=e693]: 2.3K views
+                - button "More actions" [ref=e695] [cursor=pointer]
+          - button "Show more" [ref=e704] [cursor=pointer]:
+            - generic [ref=e705]: Show more
+        - generic [ref=e712]:
+          - link [ref=e714] [cursor=pointer]:
+            - /url: /watch?v=CjuDhQP6rc4&list=RDCjuDhQP6rc4&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB0gcJCdkKAYcqIYzv
+          - generic [ref=e716] [cursor=pointer]:
+            - generic [ref=e717]:
+              - heading "OtRo MuNdO Sessions | ARTUR MENEZES - Fight For Your Love | Live [#18] 7 minutes, 14 seconds" [level=3] [ref=e719]:
+                - link "OtRo MuNdO Sessions | ARTUR MENEZES - Fight For Your Love | Live [#18] 7 minutes, 14 seconds" [ref=e720]:
+                  - /url: /watch?v=CjuDhQP6rc4&list=RDCjuDhQP6rc4&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB0gcJCdkKAYcqIYzv
+                  - text: OtRo MuNdO Sessions | ARTUR MENEZES - Fight For Your Love | Live [#18]
+              - generic [ref=e723]:
+                - generic [ref=e724]: 587 views
+                - generic [ref=e725]: •3 weeks ago
+            - generic [ref=e726]:
+              - link "Collaboration channels" [ref=e728]
+              - generic [ref=e748]:
+                - text: OtRo MuNdO MuSiC and Artur Menezes
+                - img [ref=e751]
+            - generic [ref=e752]:
+              - generic [ref=e753]: On a Sunday evening, Artur Menezes stopped by at Villa K in Klausen, South Tyrol (Italy) - during his Europe Tour 2025 - at the ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e756]:
+              - generic [ref=e757]: 4K
+        - generic [ref=e759]:
+          - link [ref=e761] [cursor=pointer]:
+            - /url: /watch?v=NUHCcUcZuQY&list=RDNUHCcUcZuQY&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB0gcJCdkKAYcqIYzv
+          - generic [ref=e763] [cursor=pointer]:
+            - generic [ref=e764]:
+              - heading "OtRo MuNdO Sessions | ARTUR MENEZES - Time | LIVE PERFORMANCE [#10] 8 minutes, 39 seconds" [level=3] [ref=e766]:
+                - link "OtRo MuNdO Sessions | ARTUR MENEZES - Time | LIVE PERFORMANCE [#10] 8 minutes, 39 seconds" [ref=e767]:
+                  - /url: /watch?v=NUHCcUcZuQY&list=RDNUHCcUcZuQY&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB0gcJCdkKAYcqIYzv
+                  - text: OtRo MuNdO Sessions | ARTUR MENEZES - Time | LIVE PERFORMANCE [#10]
+              - generic [ref=e770]:
+                - generic [ref=e771]: 4.6K views
+                - generic [ref=e772]: •5 months ago
+            - generic [ref=e773]:
+              - link "Collaboration channels" [ref=e775]
+              - generic [ref=e800]: OtRo MuNdO MuSiC and 2 more
+            - generic [ref=e801]:
+              - generic [ref=e802]: OtRo MuNdO Sessions are rare, intimate live performances - raw sound, real emotion, and the human connection behind the ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e805]:
+              - generic [ref=e806]: 4K
+        - generic [ref=e808]:
+          - heading "People also watched" [level=2] [ref=e811]:
+            - generic [ref=e813]: People also watched
+          - generic [ref=e815]:
+            - generic [ref=e816]:
+              - generic [ref=e818]:
+                - link [ref=e820] [cursor=pointer]:
+                  - /url: /watch?v=zi42JDs8Vs4&list=RDzi42JDs8Vs4&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                - generic [ref=e822] [cursor=pointer]:
+                  - generic [ref=e823]:
+                    - heading "120ª Edição | Lucille Berce, Michel Leme, Alexandro Lima, Fernando Amaro | JUL 25 1 hour, 31 minutes" [level=3] [ref=e825]:
+                      - link "120ª Edição | Lucille Berce, Michel Leme, Alexandro Lima, Fernando Amaro | JUL 25 1 hour, 31 minutes" [ref=e826]:
+                        - /url: /watch?v=zi42JDs8Vs4&list=RDzi42JDs8Vs4&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                        - text: 120ª Edição | Lucille Berce, Michel Leme, Alexandro Lima, Fernando Amaro | JUL 25
+                    - generic [ref=e829]:
+                      - generic [ref=e830]: 240 views
+                      - generic [ref=e831]: •11 days ago
+                  - generic [ref=e832]:
+                    - link "Go to channel PlayJazz Festival" [ref=e833]:
+                      - /url: /@playjazzfestival
+                    - link "PlayJazz Festival" [ref=e838]:
+                      - /url: /@playjazzfestival
+                  - generic [ref=e839]:
+                    - text: 120ª edição realizada em 3 julho de 2025, com Lucille Berce - vocal, Michel Leme - guitarra, Alexandro Lima - contrabaixo, ...
+                    - tooltip "tooltip"
+                  - img "4K" [ref=e842]:
+                    - generic [ref=e843]: 4K
+                  - generic [ref=e846]:
+                    - generic [ref=e847]:
+                      - generic [ref=e851]: 10 chapters
+                      - button "01- In a mellow tone | 02- It could happen to You | 03- Speak low | 04- Triste | 05- Influência do jazz | 06- This masquarade | 07- In a sentimental mood | 08- Cheek to cheek | 09- Sunny | 10- Pra quê chorar?"
+                    - button "More" [ref=e856]
+              - generic [ref=e863]:
+                - link [ref=e865] [cursor=pointer]:
+                  - /url: /watch?v=pTxMDfBUl7A&list=RDpTxMDfBUl7A&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                - generic [ref=e867] [cursor=pointer]:
+                  - generic [ref=e868]:
+                    - heading "Artur Menezes - Leave My Girl Alone - 2/27/22 Cadillac Zack Presents at Malainey's in Long Beach 11 minutes, 11 seconds" [level=3] [ref=e870]:
+                      - link "Artur Menezes - Leave My Girl Alone - 2/27/22 Cadillac Zack Presents at Malainey's in Long Beach 11 minutes, 11 seconds" [ref=e871]:
+                        - /url: /watch?v=pTxMDfBUl7A&list=RDpTxMDfBUl7A&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                        - text: Artur Menezes - Leave My Girl Alone - 2/27/22 Cadillac Zack Presents at Malainey's in Long Beach
+                    - generic [ref=e874]:
+                      - generic [ref=e875]: 6.7K views
+                      - generic [ref=e876]: •4 years ago
+                  - generic [ref=e877]:
+                    - link "Go to channel 1AnitrasDance" [ref=e878]:
+                      - /url: /@1AnitrasDance
+                    - link "1AnitrasDance" [ref=e883]:
+                      - /url: /@1AnitrasDance
+                  - generic [ref=e884]:
+                    - generic [ref=e885]: "(Filmed by Natasha in 1080 HD) Cadillac Zack Presents: Artur Menezes - Lead Guitar & Vocals, Celso Salim - Guitar, Sam Bolle ..."
+                    - tooltip "tooltip"
+              - generic [ref=e887]:
+                - link [ref=e889] [cursor=pointer]:
+                  - /url: /watch?v=GmZrBaNOeig&list=RDGmZrBaNOeig&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                - generic [ref=e891] [cursor=pointer]:
+                  - generic [ref=e892]:
+                    - heading "Artur Menezes - Little Wing - 4/28/19 Universal Bar & Grill - Los Angeles, CA 17 minutes" [level=3] [ref=e894]:
+                      - link "Artur Menezes - Little Wing - 4/28/19 Universal Bar & Grill - Los Angeles, CA 17 minutes" [ref=e895]:
+                        - /url: /watch?v=GmZrBaNOeig&list=RDGmZrBaNOeig&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                        - text: Artur Menezes - Little Wing - 4/28/19 Universal Bar & Grill - Los Angeles, CA
+                    - generic [ref=e898]:
+                      - generic [ref=e899]: 19K views
+                      - generic [ref=e900]: •6 years ago
+                  - generic [ref=e901]:
+                    - link "Go to channel 1AnitrasDance" [ref=e902]:
+                      - /url: /@1AnitrasDance
+                    - link "1AnitrasDance" [ref=e907]:
+                      - /url: /@1AnitrasDance
+                  - generic [ref=e908]:
+                    - generic [ref=e909]: (Filmed by Natasha in 1080 HD) Artur Menezes - Guitar & Vocals, Matt Mitchell - Guitar/Sax, Gui Bodi - Bass, Mann Bipin - Drums ...
+                    - tooltip "tooltip"
+              - generic [ref=e911]:
+                - link [ref=e913] [cursor=pointer]:
+                  - /url: /watch?v=S3bwS7YC2KM&list=RDS3bwS7YC2KM&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                - generic [ref=e915] [cursor=pointer]:
+                  - generic [ref=e916]:
+                    - heading "Blues In D Natural - Artur Menezes (Analog Music Hall, Budapest 08/03/2025) 10 minutes, 5 seconds" [level=3] [ref=e918]:
+                      - link "Blues In D Natural - Artur Menezes (Analog Music Hall, Budapest 08/03/2025) 10 minutes, 5 seconds" [ref=e919]:
+                        - /url: /watch?v=S3bwS7YC2KM&list=RDS3bwS7YC2KM&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                        - text: Blues In D Natural - Artur Menezes (Analog Music Hall, Budapest 08/03/2025)
+                    - generic [ref=e922]:
+                      - generic [ref=e923]: 424 views
+                      - generic [ref=e924]: •1 year ago
+                  - generic [ref=e925]:
+                    - link "Go to channel Tamás Jónás" [ref=e926]:
+                      - /url: /@tomika1955
+                    - link "Tamás Jónás" [ref=e931]:
+                      - /url: /@tomika1955
+                  - generic [ref=e932]:
+                    - generic [ref=e933]: ARTUR MENEZES European Tour 2025 Analog Music Hall, Budapest 2025. március 8. Artur Menezes – ének, gitár Marco ...
+                    - tooltip "tooltip"
+            - generic "+6 more" [ref=e935] [cursor=pointer]
+        - generic [ref=e937]:
+          - link [ref=e939] [cursor=pointer]:
+            - /url: /watch?v=IbZE64Qo5qU&list=RDIbZE64Qo5qU&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e941] [cursor=pointer]:
+            - generic [ref=e942]:
+              - heading "Artur Menezes - Blues in D Natural - 1/25/19 Arcadia Blues Club - Arcadia, CA 6 minutes, 16 seconds" [level=3] [ref=e944]:
+                - link "Artur Menezes - Blues in D Natural - 1/25/19 Arcadia Blues Club - Arcadia, CA 6 minutes, 16 seconds" [ref=e945]:
+                  - /url: /watch?v=IbZE64Qo5qU&list=RDIbZE64Qo5qU&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: Artur Menezes - Blues in D Natural - 1/25/19 Arcadia Blues Club - Arcadia, CA
+              - generic [ref=e948]:
+                - generic [ref=e949]: 15K views
+                - generic [ref=e950]: •7 years ago
+            - generic [ref=e951]:
+              - link "Go to channel 1AnitrasDance" [ref=e952]:
+                - /url: /@1AnitrasDance
+              - link "1AnitrasDance" [ref=e957]:
+                - /url: /@1AnitrasDance
+            - generic [ref=e958]:
+              - generic [ref=e959]: (Filmed by Natasha in 1080 HD) Artur Menezes - Guitar & Vocals, Matt Mitchell - Guitar/Sax, Gui Bodi - Bass, Mann Bipin - Drums ...
+              - tooltip "tooltip"
+        - generic [ref=e961]:
+          - link [ref=e963] [cursor=pointer]:
+            - /url: /watch?v=TZab0FzL2j0&list=RDTZab0FzL2j0&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e965] [cursor=pointer]:
+            - generic [ref=e966]:
+              - heading "Artur Menezes - Slow Blues - 18.03.2025 @ Brinc de Zinc, France 4 minutes, 1 second" [level=3] [ref=e968]:
+                - link "Artur Menezes - Slow Blues - 18.03.2025 @ Brinc de Zinc, France 4 minutes, 1 second" [ref=e969]:
+                  - /url: /watch?v=TZab0FzL2j0&list=RDTZab0FzL2j0&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: Artur Menezes - Slow Blues - 18.03.2025 @ Brinc de Zinc, France
+              - generic [ref=e972]:
+                - generic [ref=e973]: 294 views
+                - generic [ref=e974]: •1 year ago
+            - generic [ref=e975]:
+              - link "Go to channel Mick Taylor" [ref=e976]:
+                - /url: /@micktaylor7200
+              - link "Mick Taylor" [ref=e981]:
+                - /url: /@micktaylor7200
+            - generic [ref=e982]:
+              - generic [ref=e983]: Artur Menezes - Slow Blues - 18.03.2025 @ Brinc de Zinc, France Artur Menezes (born July 14, 1997) is a Brazilian blues and ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e986]:
+              - generic [ref=e987]: 4K
+        - generic [ref=e989]:
+          - link [ref=e991] [cursor=pointer]:
+            - /url: /watch?v=-4DdSyLnNNg&list=RD-4DdSyLnNNg&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e993] [cursor=pointer]:
+            - generic [ref=e994]:
+              - heading "Guy King & Artur Menezes - If You Love Me Like You Say - 12/9/19 Maui Sugar Mill 8 minutes, 2 seconds" [level=3] [ref=e996]:
+                - link "Guy King & Artur Menezes - If You Love Me Like You Say - 12/9/19 Maui Sugar Mill 8 minutes, 2 seconds" [ref=e997]:
+                  - /url: /watch?v=-4DdSyLnNNg&list=RD-4DdSyLnNNg&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: Guy King & Artur Menezes - If You Love Me Like You Say - 12/9/19 Maui Sugar Mill
+              - generic [ref=e1000]:
+                - generic [ref=e1001]: 55K views
+                - generic [ref=e1002]: •6 years ago
+            - generic [ref=e1003]:
+              - link "Go to channel 1AnitrasDance" [ref=e1004]:
+                - /url: /@1AnitrasDance
+              - link "1AnitrasDance" [ref=e1009]:
+                - /url: /@1AnitrasDance
+            - generic [ref=e1010]:
+              - generic [ref=e1011]: "(Filmed by Natasha in 1080 HD) Cadillac Zack Presents: Guy King - Guitar & Vocals, Artur Menezes - Guitar, Mike Merritt - Bass, ..."
+              - tooltip "tooltip"
+        - generic [ref=e1013]:
+          - link [ref=e1015] [cursor=pointer]:
+            - /url: /watch?v=xwhitkJ3xzQ&list=RDxwhitkJ3xzQ&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+          - generic [ref=e1017] [cursor=pointer]:
+            - generic [ref=e1018]:
+              - heading "Artur Menezes - Blues In D Natural - 2/20/24 The Hamilton - Washington, DC 5 minutes, 17 seconds" [level=3] [ref=e1020]:
+                - link "Artur Menezes - Blues In D Natural - 2/20/24 The Hamilton - Washington, DC 5 minutes, 17 seconds" [ref=e1021]:
+                  - /url: /watch?v=xwhitkJ3xzQ&list=RDxwhitkJ3xzQ&start_radio=1&pp=ygUYQXJ0dXIgTWVuZXplcyBibHVlcyBsaXZloAcB
+                  - text: Artur Menezes - Blues In D Natural - 2/20/24 The Hamilton - Washington, DC
+              - generic [ref=e1024]:
+                - generic [ref=e1025]: 7.4K views
+                - generic [ref=e1026]: •2 years ago
+            - generic [ref=e1027]:
+              - link "Go to channel 1AnitrasDance" [ref=e1028]:
+                - /url: /@1AnitrasDance
+              - link "1AnitrasDance" [ref=e1033]:
+                - /url: /@1AnitrasDance
+            - generic [ref=e1034]:
+              - generic [ref=e1035]: (Filmed by Natasha in 1080 HD) Artur Menezes - Guitar & Vocals, Poliana Magalhaes - Bass, Joel Clarke - Drums Filmed ...
+              - tooltip "tooltip"

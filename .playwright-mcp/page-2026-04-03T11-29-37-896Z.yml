@@ -1,0 +1,621 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+            - tab "Under 4 min" [ref=e110] [cursor=pointer]:
+              - generic [ref=e112]: Under 4 min
+            - tab "4 - 20 min" [ref=e119] [cursor=pointer]:
+              - generic [ref=e121]: 4 - 20 min
+            - tab "Over 20 min" [ref=e128] [cursor=pointer]:
+              - generic [ref=e130]: Over 20 min
+          - button "Next" [ref=e138] [cursor=pointer]
+        - link "About these results" [ref=e147] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e148]: About these results
+        - generic [ref=e155]:
+          - button "Search filters" [ref=e157] [cursor=pointer]:
+            - generic [ref=e158]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e169]:
+        - generic [ref=e171] [cursor=pointer]:
+          - link [ref=e172]:
+            - /url: /watch?v=hFuuQ3RmOQE&list=PLqguDJW_IEf9yNigyBoukb0HgIPbJHe_X
+            - generic [ref=e184]: 11 videos
+          - generic [ref=e187]:
+            - 'heading "Johnnie Taylor: Live at The Longhorn (1998)" [level=3] [ref=e188]':
+              - 'link "Johnnie Taylor: Live at The Longhorn (1998)" [ref=e189]':
+                - /url: /watch?v=hFuuQ3RmOQE&list=PLqguDJW_IEf9yNigyBoukb0HgIPbJHe_X
+            - generic [ref=e191]:
+              - generic [ref=e192]:
+                - link "Charles Johns" [ref=e195]:
+                  - /url: /@charlesjohns2058
+                - generic [ref=e196]: •
+                - link "Playlist" [ref=e199]:
+                  - /url: /@charlesjohns2058
+              - link "Johnnie Taylor - Who's Makin' Love · 2:29" [ref=e203]:
+                - /url: /watch?v=hFuuQ3RmOQE&list=PLqguDJW_IEf9yNigyBoukb0HgIPbJHe_X
+              - link "Johnnie Taylor - Who's Making Love/Blue Bird · 8:08" [ref=e206]:
+                - /url: /watch?v=cGiTDH2q7do&list=PLqguDJW_IEf9yNigyBoukb0HgIPbJHe_X
+              - link "View full playlist" [ref=e211]:
+                - /url: /playlist?list=PLqguDJW_IEf9yNigyBoukb0HgIPbJHe_X
+        - generic [ref=e213]:
+          - link [ref=e215] [cursor=pointer]:
+            - /url: /watch?v=tNOv4MQk_ps&list=RDtNOv4MQk_ps&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e217] [cursor=pointer]:
+            - generic [ref=e218]:
+              - heading "\"Medley\" - Bobby 'Blue' Bland, Bobby Rush, Johnnie Taylor 11 minutes, 22 seconds" [level=3] [ref=e220]:
+                - link "\"Medley\" - Bobby 'Blue' Bland, Bobby Rush, Johnnie Taylor 11 minutes, 22 seconds" [ref=e221]:
+                  - /url: /watch?v=tNOv4MQk_ps&list=RDtNOv4MQk_ps&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: "\"Medley\" - Bobby 'Blue' Bland, Bobby Rush, Johnnie Taylor"
+              - generic [ref=e224]:
+                - generic [ref=e225]: 5.9M views
+                - generic [ref=e226]: •15 years ago
+            - generic [ref=e227]:
+              - link "Go to channel malacomg" [ref=e228]:
+                - /url: /@malacomg
+              - generic [ref=e230]:
+                - link "malacomg" [ref=e234]:
+                  - /url: /@malacomg
+                - img "Verified" [ref=e237]
+            - generic [ref=e239]:
+              - text: "\"Medley (Stormy Monday Medley, Stormy Monday, She's Putting Something In My Food)\" - Bobby 'Blue' Bland, Bobby Rush, ..."
+              - tooltip "tooltip"
+        - generic [ref=e241]:
+          - link [ref=e243] [cursor=pointer]:
+            - /url: /watch?v=lF_0BK9n35w&list=RDlF_0BK9n35w&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+            - img [ref=e245]
+            - img [ref=e248]:
+              - generic [ref=e250]: 58:34
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e251] [cursor=pointer]:
+            - generic [ref=e252]:
+              - heading "Johnnie Taylor Live in Dallas 58 minutes" [level=3] [ref=e254]:
+                - link "Johnnie Taylor Live in Dallas 58 minutes" [ref=e255]:
+                  - /url: /watch?v=lF_0BK9n35w&list=RDlF_0BK9n35w&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Johnnie Taylor Live in Dallas
+              - generic [ref=e258]:
+                - generic [ref=e259]: 1M views
+                - generic [ref=e260]: •5 years ago
+            - generic [ref=e261]:
+              - link "Go to channel Mr. Baldhead 1" [ref=e262]:
+                - /url: /@baldhead62
+              - link "Mr. Baldhead 1" [ref=e268]:
+                - /url: /@baldhead62
+        - generic [ref=e269]:
+          - generic [ref=e272]:
+            - img [ref=e274]
+            - heading "Shorts" [level=2] [ref=e277]
+          - generic [ref=e278]:
+            - generic [ref=e279]:
+              - generic [ref=e282]:
+                - link [ref=e283] [cursor=pointer]:
+                  - /url: /shorts/fKYSLZu3usM
+                - generic [ref=e287] [cursor=pointer]:
+                  - link "Johnnie Taylor \"Son\" TJ Hooker-Taylor - Soul Blues @ Uptown Comedy Corner - Streetz989ATLTV" [ref=e288]:
+                    - /url: /shorts/fKYSLZu3usM
+                  - generic [ref=e289]: 12K views
+                - button "More actions" [ref=e291] [cursor=pointer]
+              - generic [ref=e299]:
+                - link [ref=e300] [cursor=pointer]:
+                  - /url: /shorts/QVzm3kn_YDA
+                - generic [ref=e304] [cursor=pointer]:
+                  - 'link "Johnny Taylor-Soul Heaven #Youtubeshorts#family #singer #singing #viralvideo #viralshorts" [ref=e305]':
+                    - /url: /shorts/QVzm3kn_YDA
+                  - generic [ref=e306]: 29K views
+                - button "More actions" [ref=e308] [cursor=pointer]
+            - generic [ref=e314]:
+              - generic [ref=e317]:
+                - link [ref=e318] [cursor=pointer]:
+                  - /url: /shorts/MxAln6oPBg0
+                - generic [ref=e322] [cursor=pointer]:
+                  - 'link "Johnnie Taylor performing Who''s Making Love #southernsoul #thebluesisalright" [ref=e323]':
+                    - /url: /shorts/MxAln6oPBg0
+                  - generic [ref=e324]: 2.6K views
+                - button "More actions" [ref=e326] [cursor=pointer]
+              - generic [ref=e334]:
+                - link [ref=e335] [cursor=pointer]:
+                  - /url: /shorts/KPZtm8lieG4
+                - generic [ref=e339] [cursor=pointer]:
+                  - link "The Soulful Journey of Johnnie Taylor 🎤" [ref=e340]:
+                    - /url: /shorts/KPZtm8lieG4
+                  - generic [ref=e341]: 25K views
+                - button "More actions" [ref=e343] [cursor=pointer]
+          - button "Show more" [ref=e352] [cursor=pointer]:
+            - generic [ref=e353]: Show more
+        - generic [ref=e360]:
+          - link [ref=e362] [cursor=pointer]:
+            - /url: /watch?v=3qbx3D2e5PM&list=RD3qbx3D2e5PM&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e364] [cursor=pointer]:
+            - generic [ref=e365]:
+              - heading "Johnnie Taylor - Rome Wasn't Built In A Day (Live) 3 minutes, 3 seconds" [level=3] [ref=e367]:
+                - link "Johnnie Taylor - Rome Wasn't Built In A Day (Live) 3 minutes, 3 seconds" [ref=e368]:
+                  - /url: /watch?v=3qbx3D2e5PM&list=RD3qbx3D2e5PM&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Johnnie Taylor - Rome Wasn't Built In A Day (Live)
+              - generic [ref=e371]:
+                - generic [ref=e372]: 729K views
+                - generic [ref=e373]: •12 years ago
+            - generic [ref=e374]:
+              - link "Go to channel JOHNNIETAYLORVEVO" [ref=e375]:
+                - /url: /channel/UCtNvcEEuZ1vjGOaKdyalKgg
+              - generic [ref=e376]:
+                - link "Johnnie Taylor" [ref=e380]:
+                  - /url: /channel/UCtNvcEEuZ1vjGOaKdyalKgg
+                - img "Official Artist Channel" [ref=e383]
+            - generic [ref=e385]:
+              - generic [ref=e386]: Music video by Johnnie Taylor performing Rome Wasn't Built In A Day.
+              - tooltip "tooltip"
+        - generic [ref=e388]:
+          - link [ref=e390] [cursor=pointer]:
+            - /url: /watch?v=I5FfHkEmYfI&list=RDI5FfHkEmYfI&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e392] [cursor=pointer]:
+            - generic [ref=e393]:
+              - heading "Soul'VenirS Presents Johnnie Taylor Steal Away Prt1 & 2 (LIVE WATTSTAX) Video By Soul'VenirS 8 minutes, 14 seconds" [level=3] [ref=e395]:
+                - link "Soul'VenirS Presents Johnnie Taylor Steal Away Prt1 & 2 (LIVE WATTSTAX) Video By Soul'VenirS 8 minutes, 14 seconds" [ref=e396]:
+                  - /url: /watch?v=I5FfHkEmYfI&list=RDI5FfHkEmYfI&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Soul'VenirS Presents Johnnie Taylor Steal Away Prt1 & 2 (LIVE WATTSTAX) Video By Soul'VenirS
+              - generic [ref=e399]:
+                - generic [ref=e400]: 61K views
+                - generic [ref=e401]: •13 years ago
+            - generic [ref=e402]:
+              - link "Go to channel ALEX aka Soul'VenirS - S.V.S" [ref=e403]:
+                - /url: /@siculamentesardo
+              - link "ALEX aka Soul'VenirS - S.V.S" [ref=e408]:
+                - /url: /@siculamentesardo
+            - generic [ref=e409]:
+              - generic [ref=e410]: Johnnie Taylor Steal Away Prt1 & 2 (LIVE WATTSTAX) Video By Soul'VenirS.
+              - tooltip "tooltip"
+        - generic [ref=e412]:
+          - link [ref=e414] [cursor=pointer]:
+            - /url: /watch?v=4Nt1r0vOpY4&list=RD4Nt1r0vOpY4&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e416] [cursor=pointer]:
+            - generic [ref=e417]:
+              - heading "Johnnie Taylor - Medley 8 minutes, 15 seconds" [level=3] [ref=e419]:
+                - link "Johnnie Taylor - Medley 8 minutes, 15 seconds" [ref=e420]:
+                  - /url: /watch?v=4Nt1r0vOpY4&list=RD4Nt1r0vOpY4&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Johnnie Taylor - Medley
+              - generic [ref=e423]:
+                - generic [ref=e424]: 277K views
+                - generic [ref=e425]: •15 years ago
+            - generic [ref=e426]:
+              - link "Go to channel malacomg" [ref=e427]:
+                - /url: /@malacomg
+              - generic [ref=e428]:
+                - link "malacomg" [ref=e432]:
+                  - /url: /@malacomg
+                - img "Verified" [ref=e435]
+            - generic [ref=e437]:
+              - generic [ref=e438]: Johnnie Taylor - Medley https://malaco.lnk.to/vZcr0ID www.malaco.com.
+              - tooltip "tooltip"
+        - generic [ref=e439]:
+          - generic [ref=e442]:
+            - img [ref=e444]
+            - heading "Shorts" [level=2] [ref=e447]
+          - generic [ref=e448]:
+            - generic [ref=e449]:
+              - generic [ref=e452]:
+                - link [ref=e453] [cursor=pointer]:
+                  - /url: /shorts/WLfdZhzrvFc
+                - generic [ref=e457] [cursor=pointer]:
+                  - link "EJ Jones Covers Johnnie Taylor 🎤 | It Takes REAL Soul to Sing This!" [ref=e458]:
+                    - /url: /shorts/WLfdZhzrvFc
+                  - generic [ref=e459]: 103K views
+                - button "More actions" [ref=e461] [cursor=pointer]
+              - generic [ref=e469]:
+                - link [ref=e470] [cursor=pointer]:
+                  - /url: /shorts/U25G95LWBWM
+                - generic [ref=e474] [cursor=pointer]:
+                  - 'link "A lil Johnnie Taylor warm up #music #soul #southernsoul #JohnneTaylor #live #rehearsal #fyp #vibes" [ref=e475]':
+                    - /url: /shorts/U25G95LWBWM
+                  - generic [ref=e476]: 2.5K views
+                - button "More actions" [ref=e478] [cursor=pointer]
+            - generic [ref=e484]:
+              - generic [ref=e487]:
+                - link [ref=e488] [cursor=pointer]:
+                  - /url: /shorts/49v8gqPjnzo
+                - generic [ref=e492] [cursor=pointer]:
+                  - 'link "🎶 Sippin’ the Blues: Soul Heaven Sunday | Johnnie Taylor – “Soul Heaven”" [ref=e493]':
+                    - /url: /shorts/49v8gqPjnzo
+                  - generic [ref=e494]: 2.4K views
+                - button "More actions" [ref=e496] [cursor=pointer]
+              - generic [ref=e504]:
+                - link [ref=e505] [cursor=pointer]:
+                  - /url: /shorts/4DXWkOoX5Do
+                - generic [ref=e509] [cursor=pointer]:
+                  - link "SOUL HEAVEN" [ref=e510]:
+                    - /url: /shorts/4DXWkOoX5Do
+                  - generic [ref=e511]: 178K views
+                - button "More actions" [ref=e513] [cursor=pointer]
+          - button "Show more" [ref=e522] [cursor=pointer]:
+            - generic [ref=e523]: Show more
+        - generic [ref=e530]:
+          - link [ref=e532] [cursor=pointer]:
+            - /url: /watch?v=2MgDE8mjMSU&list=RD2MgDE8mjMSU&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e534] [cursor=pointer]:
+            - generic [ref=e535]:
+              - heading "Johnnie Taylor's \"Just Because\" and \"Soul Heaven\" by Floyd Taylor 10 minutes, 21 seconds" [level=3] [ref=e537]:
+                - link "Johnnie Taylor's \"Just Because\" and \"Soul Heaven\" by Floyd Taylor 10 minutes, 21 seconds" [ref=e538]:
+                  - /url: /watch?v=2MgDE8mjMSU&list=RD2MgDE8mjMSU&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Johnnie Taylor's "Just Because" and "Soul Heaven" by Floyd Taylor
+              - generic [ref=e541]:
+                - generic [ref=e542]: 3.8K views
+                - generic [ref=e543]: •1 year ago
+            - generic [ref=e544]:
+              - link "Go to channel Southern Soulful Syndication" [ref=e545]:
+                - /url: /@DJSoulMane
+              - link "Southern Soulful Syndication" [ref=e550]:
+                - /url: /@DJSoulMane
+        - generic [ref=e552]:
+          - link [ref=e554] [cursor=pointer]:
+            - /url: /watch?v=2s2XDRdm7v8&list=RD2s2XDRdm7v8&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e556] [cursor=pointer]:
+            - generic [ref=e557]:
+              - heading "Johnnie Taylor - Last Two Dollars 6 minutes, 14 seconds" [level=3] [ref=e559]:
+                - link "Johnnie Taylor - Last Two Dollars 6 minutes, 14 seconds" [ref=e560]:
+                  - /url: /watch?v=2s2XDRdm7v8&list=RD2s2XDRdm7v8&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Johnnie Taylor - Last Two Dollars
+              - generic [ref=e563]:
+                - generic [ref=e564]: 6M views
+                - generic [ref=e565]: •15 years ago
+            - generic [ref=e566]:
+              - link "Go to channel malacomg" [ref=e567]:
+                - /url: /@malacomg
+              - generic [ref=e568]:
+                - link "malacomg" [ref=e572]:
+                  - /url: /@malacomg
+                - img "Verified" [ref=e575]
+            - generic [ref=e577]:
+              - generic [ref=e578]: Johnnie Taylor - "Last Two Dollars" https://malaco.lnk.to/K0neiID www.malaco.com.
+              - tooltip "tooltip"
+        - generic [ref=e580] [cursor=pointer]:
+          - link [ref=e581]:
+            - /url: /watch?v=yRLPGQDWJUk&list=RDfKYSLZu3usM&start_radio=1
+            - generic [ref=e593]: Mix
+          - generic [ref=e596]:
+            - heading "Mix - Johnnie Taylor \"Son\" TJ Hooker-Taylor - Soul Blues @ Uptown Comedy Corner - Streetz989ATLTV" [level=3] [ref=e597]:
+              - link "Mix - Johnnie Taylor \"Son\" TJ Hooker-Taylor - Soul Blues @ Uptown Comedy Corner - Streetz989ATLTV" [ref=e598]:
+                - /url: /watch?v=yRLPGQDWJUk&list=RDfKYSLZu3usM&start_radio=1
+            - generic [ref=e600]:
+              - generic [ref=e602]: Johnnie Taylor, Bobby Womack, and more
+              - link "Running Out Of Lies · 4:52" [ref=e606]:
+                - /url: /watch?v=yRLPGQDWJUk&list=RDfKYSLZu3usM&start_radio=1
+              - link "That's The Way I Feel About 'Cha · 5:11" [ref=e609]:
+                - /url: /watch?v=MOwP-woHsnw&list=RDfKYSLZu3usM&start_radio=1
+        - generic [ref=e612]:
+          - link [ref=e614] [cursor=pointer]:
+            - /url: /watch?v=QZHiaF50f2M&list=RDQZHiaF50f2M&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e616] [cursor=pointer]:
+            - generic [ref=e617]:
+              - heading "Johnnie Taylor - Top Tracks (Livestream) - Classic Soul, R&B, Gospel & Blues 2 hours, 14 minutes" [level=3] [ref=e619]:
+                - link "Johnnie Taylor - Top Tracks (Livestream) - Classic Soul, R&B, Gospel & Blues 2 hours, 14 minutes" [ref=e620]:
+                  - /url: /watch?v=QZHiaF50f2M&list=RDQZHiaF50f2M&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Johnnie Taylor - Top Tracks (Livestream) - Classic Soul, R&B, Gospel & Blues
+              - generic [ref=e623]:
+                - generic [ref=e624]: 32K views
+                - generic [ref=e625]: •Streamed 7 months ago
+            - generic [ref=e626]:
+              - link "Go to channel Johnnie Taylor" [ref=e627]:
+                - /url: /channel/UCtNvcEEuZ1vjGOaKdyalKgg
+              - generic [ref=e628]:
+                - link "Johnnie Taylor" [ref=e632]:
+                  - /url: /channel/UCtNvcEEuZ1vjGOaKdyalKgg
+                - img "Official Artist Channel" [ref=e635]
+            - generic [ref=e637]:
+              - generic [ref=e638]: "Sit back and listen to the top tracks of Stax soul legend Johnnie Taylor! #johnnietaylor #stax #soulsvilleUSA #blues #soulmusic ..."
+              - tooltip "tooltip"
+        - generic [ref=e640]:
+          - link [ref=e642] [cursor=pointer]:
+            - /url: /watch?v=Zp9XZHHdyec&list=RDZp9XZHHdyec&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e644] [cursor=pointer]:
+            - generic [ref=e645]:
+              - heading "Johnnie Taylor on Midnight Special Complete 13 minutes, 46 seconds" [level=3] [ref=e647]:
+                - link "Johnnie Taylor on Midnight Special Complete 13 minutes, 46 seconds" [ref=e648]:
+                  - /url: /watch?v=Zp9XZHHdyec&list=RDZp9XZHHdyec&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Johnnie Taylor on Midnight Special Complete
+              - generic [ref=e651]:
+                - generic [ref=e652]: 93K views
+                - generic [ref=e653]: •1 year ago
+            - generic [ref=e654]:
+              - link "Go to channel zydecodave1" [ref=e655]:
+                - /url: /@zydecodave1
+              - link "zydecodave1" [ref=e660]:
+                - /url: /@zydecodave1
+            - generic [ref=e661]:
+              - text: Both appearances on the Midnight Special TV show back in the 70's.
+              - tooltip "tooltip"
+        - generic [ref=e663]:
+          - link [ref=e665] [cursor=pointer]:
+            - /url: /watch?v=Fw0YBMncjF8&list=RDFw0YBMncjF8&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e667] [cursor=pointer]:
+            - generic [ref=e668]:
+              - heading "\"JODY\" - JOHNNIE TAYLOR - LIVE AT THE SUMMIT CLUB - LOS ANGELES 1972 - INTRODUCTION BY RUFUS THOMAS 4 minutes, 16 seconds" [level=3] [ref=e670]:
+                - link "\"JODY\" - JOHNNIE TAYLOR - LIVE AT THE SUMMIT CLUB - LOS ANGELES 1972 - INTRODUCTION BY RUFUS THOMAS 4 minutes, 16 seconds" [ref=e671]:
+                  - /url: /watch?v=Fw0YBMncjF8&list=RDFw0YBMncjF8&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: "\"JODY\" - JOHNNIE TAYLOR - LIVE AT THE SUMMIT CLUB - LOS ANGELES 1972 - INTRODUCTION BY RUFUS THOMAS"
+              - generic [ref=e674]:
+                - generic [ref=e675]: 10K views
+                - generic [ref=e676]: •5 years ago
+            - generic [ref=e677]:
+              - link "Go to channel Ananta Kusuma Wibawa" [ref=e678]:
+                - /url: /@AnantaKusumaWibawa
+              - link "Ananta Kusuma Wibawa" [ref=e683]:
+                - /url: /@AnantaKusumaWibawa
+            - generic [ref=e684]:
+              - generic [ref=e685]: Better viewed in 720p. Johnnie Taylor performed "Jody" live at The Summit Club, Los Angeles in September 1972. A song that ...
+              - tooltip "tooltip"
+        - generic [ref=e687]:
+          - heading "People also watched" [level=2] [ref=e690]:
+            - generic [ref=e692]: People also watched
+          - generic [ref=e694]:
+            - generic [ref=e695]:
+              - generic [ref=e697]:
+                - link [ref=e699] [cursor=pointer]:
+                  - /url: /watch?v=0_vGIxoFfdY&list=RD0_vGIxoFfdY&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                - generic [ref=e701] [cursor=pointer]:
+                  - generic [ref=e702]:
+                    - heading "Bobby Blue Bland Live on Beale Street 58 minutes" [level=3] [ref=e704]:
+                      - link "Bobby Blue Bland Live on Beale Street 58 minutes" [ref=e705]:
+                        - /url: /watch?v=0_vGIxoFfdY&list=RD0_vGIxoFfdY&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                        - text: Bobby Blue Bland Live on Beale Street
+                    - generic [ref=e708]:
+                      - generic [ref=e709]: 52K views
+                      - generic [ref=e710]: •5 years ago
+                  - generic [ref=e711]:
+                    - link "Go to channel Mr. Baldhead 1" [ref=e712]:
+                      - /url: /@baldhead62
+                    - link "Mr. Baldhead 1" [ref=e717]:
+                      - /url: /@baldhead62
+              - generic [ref=e719]:
+                - link [ref=e721] [cursor=pointer]:
+                  - /url: /watch?v=Ri32Va8Wdf0&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNl
+                - generic [ref=e723] [cursor=pointer]:
+                  - generic [ref=e724]:
+                    - heading "CLASSIC BLUES \"FLOYD TAYLOR'S SPECIAL\" 21 FEB 2014 27 minutes" [level=3] [ref=e726]:
+                      - link "CLASSIC BLUES \"FLOYD TAYLOR'S SPECIAL\" 21 FEB 2014 27 minutes" [ref=e727]:
+                        - /url: /watch?v=Ri32Va8Wdf0&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNl
+                        - text: CLASSIC BLUES "FLOYD TAYLOR'S SPECIAL" 21 FEB 2014
+                    - generic [ref=e730]:
+                      - generic [ref=e731]: 25K views
+                      - generic [ref=e732]: •12 years ago
+                  - generic [ref=e733]:
+                    - link "Go to channel Henry CB" [ref=e734]:
+                      - /url: /@HenryCB6175
+                    - link "Henry CB" [ref=e739]:
+                      - /url: /@HenryCB6175
+                  - generic [ref=e740]:
+                    - generic [ref=e741]: This is a "Classic Blues Special", where Floyd Taylor was our guest 19 October 2013. I got the news that Floyd Taylor passed ...
+                    - tooltip "tooltip"
+              - generic [ref=e743]:
+                - link [ref=e745] [cursor=pointer]:
+                  - /url: /watch?v=_aD42mhyPDo&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNl
+                - generic [ref=e747] [cursor=pointer]:
+                  - generic [ref=e748]:
+                    - heading "BB King and Bobby Blue Bland's Final Concert 41 minutes" [level=3] [ref=e750]:
+                      - link "BB King and Bobby Blue Bland's Final Concert 41 minutes" [ref=e751]:
+                        - /url: /watch?v=_aD42mhyPDo&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNl
+                        - text: BB King and Bobby Blue Bland's Final Concert
+                    - generic [ref=e754]:
+                      - generic [ref=e755]: 1.1M views
+                      - generic [ref=e756]: •10 years ago
+                  - generic [ref=e757]:
+                    - link "Go to channel Southern Soulful Syndication" [ref=e758]:
+                      - /url: /@DJSoulMane
+                    - link "Southern Soulful Syndication" [ref=e763]:
+                      - /url: /@DJSoulMane
+                  - generic [ref=e764]:
+                    - text: Bobby Blue Bland's 80th birthday celebration. BB King stops by and the two legends talk about their history together and sing.
+                    - tooltip "tooltip"
+              - generic [ref=e766]:
+                - link [ref=e768] [cursor=pointer]:
+                  - /url: /watch?v=cSkWIl6tDlk&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNl
+                - generic [ref=e770] [cursor=pointer]:
+                  - generic [ref=e771]:
+                    - heading "Johnnie Taylor Funeral 1 hour, 51 minutes" [level=3] [ref=e773]:
+                      - link "Johnnie Taylor Funeral 1 hour, 51 minutes" [ref=e774]:
+                        - /url: /watch?v=cSkWIl6tDlk&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNl
+                        - text: Johnnie Taylor Funeral
+                    - generic [ref=e777]:
+                      - generic [ref=e778]: 269K views
+                      - generic [ref=e779]: •2 years ago
+                  - generic [ref=e780]:
+                    - link "Go to channel On D Scene Photo and Video" [ref=e781]:
+                      - /url: /@ondscenephotoandvideo8868
+                    - link "On D Scene Photo and Video" [ref=e786]:
+                      - /url: /@ondscenephotoandvideo8868
+            - generic "+6 more" [ref=e788] [cursor=pointer]
+        - generic [ref=e790]:
+          - link [ref=e792] [cursor=pointer]:
+            - /url: /watch?v=Hk0GmC78z5A&list=RDHk0GmC78z5A&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+          - generic [ref=e794] [cursor=pointer]:
+            - generic [ref=e795]:
+              - heading "Johnnie Taylor - Still Called The Blues 2 minutes, 37 seconds" [level=3] [ref=e797]:
+                - link "Johnnie Taylor - Still Called The Blues 2 minutes, 37 seconds" [ref=e798]:
+                  - /url: /watch?v=Hk0GmC78z5A&list=RDHk0GmC78z5A&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+                  - text: Johnnie Taylor - Still Called The Blues
+              - generic [ref=e801]:
+                - generic [ref=e802]: 347K views
+                - generic [ref=e803]: •15 years ago
+            - generic [ref=e804]:
+              - link "Go to channel malacomg" [ref=e805]:
+                - /url: /@malacomg
+              - generic [ref=e806]:
+                - link "malacomg" [ref=e810]:
+                  - /url: /@malacomg
+                - img "Verified" [ref=e813]
+            - generic [ref=e815]:
+              - generic [ref=e816]: Johnnie Taylor - Still Called The Blues https://malaco.lnk.to/oNOvHID www.malaco.com.
+              - tooltip "tooltip"
+        - generic [ref=e818]:
+          - link [ref=e820] [cursor=pointer]:
+            - /url: /watch?v=rki68sfJPcw&list=RDrki68sfJPcw&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e822] [cursor=pointer]:
+            - generic [ref=e823]:
+              - heading "Johnnie Taylor - Just Because 4 minutes, 38 seconds" [level=3] [ref=e825]:
+                - link "Johnnie Taylor - Just Because 4 minutes, 38 seconds" [ref=e826]:
+                  - /url: /watch?v=rki68sfJPcw&list=RDrki68sfJPcw&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Johnnie Taylor - Just Because
+              - generic [ref=e829]:
+                - generic [ref=e830]: 3.1M views
+                - generic [ref=e831]: •15 years ago
+            - generic [ref=e832]:
+              - link "Go to channel malacomg" [ref=e833]:
+                - /url: /@malacomg
+              - generic [ref=e834]:
+                - link "malacomg" [ref=e838]:
+                  - /url: /@malacomg
+                - img "Verified" [ref=e841]
+            - generic [ref=e843]:
+              - generic [ref=e844]: Johnnie Taylor - Just Because https://malaco.lnk.to/oNOvHID www.malaco.com.
+              - tooltip "tooltip"
+        - generic [ref=e846]:
+          - link [ref=e848] [cursor=pointer]:
+            - /url: /watch?v=pl8LDW-P9mU&list=RDpl8LDW-P9mU&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e850] [cursor=pointer]:
+            - generic [ref=e851]:
+              - heading "Johnnie Taylor - Who's Making Love/Blue Bird 6 minutes, 56 seconds" [level=3] [ref=e853]:
+                - link "Johnnie Taylor - Who's Making Love/Blue Bird 6 minutes, 56 seconds" [ref=e854]:
+                  - /url: /watch?v=pl8LDW-P9mU&list=RDpl8LDW-P9mU&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Johnnie Taylor - Who's Making Love/Blue Bird
+              - generic [ref=e857]:
+                - generic [ref=e858]: 671K views
+                - generic [ref=e859]: •15 years ago
+            - generic [ref=e860]:
+              - link "Go to channel malacomg" [ref=e861]:
+                - /url: /@malacomg
+              - generic [ref=e862]:
+                - link "malacomg" [ref=e866]:
+                  - /url: /@malacomg
+                - img "Verified" [ref=e869]
+            - generic [ref=e871]:
+              - generic [ref=e872]: Johnnie Taylor - Little Bluebird https://malaco.lnk.to/vZcr0ID www.malaco.com.
+              - tooltip "tooltip"
+        - generic [ref=e874]:
+          - link [ref=e876] [cursor=pointer]:
+            - /url: /watch?v=NNcht9q5mNQ&list=RDNNcht9q5mNQ&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e878] [cursor=pointer]:
+            - generic [ref=e879]:
+              - heading "Johnny Taylor - Lady My Whole World is you 5 minutes, 53 seconds" [level=3] [ref=e881]:
+                - link "Johnny Taylor - Lady My Whole World is you 5 minutes, 53 seconds" [ref=e882]:
+                  - /url: /watch?v=NNcht9q5mNQ&list=RDNNcht9q5mNQ&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Johnny Taylor - Lady My Whole World is you
+              - generic [ref=e885]:
+                - generic [ref=e886]: 276K views
+                - generic [ref=e887]: •8 years ago
+            - generic [ref=e888]:
+              - link "Go to channel Ruben Quinones" [ref=e889]:
+                - /url: /@RubenQ778
+              - link "Ruben Quinones" [ref=e894]:
+                - /url: /@RubenQ778
+        - generic [ref=e896]:
+          - link [ref=e898] [cursor=pointer]:
+            - /url: /watch?v=cGiTDH2q7do&list=RDcGiTDH2q7do&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e900] [cursor=pointer]:
+            - generic [ref=e901]:
+              - heading "Johnnie Taylor - Who's Making Love/Blue Bird 8 minutes, 8 seconds" [level=3] [ref=e903]:
+                - link "Johnnie Taylor - Who's Making Love/Blue Bird 8 minutes, 8 seconds" [ref=e904]:
+                  - /url: /watch?v=cGiTDH2q7do&list=RDcGiTDH2q7do&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Johnnie Taylor - Who's Making Love/Blue Bird
+              - generic [ref=e907]:
+                - generic [ref=e908]: 265K views
+                - generic [ref=e909]: •15 years ago
+            - generic [ref=e910]:
+              - link "Go to channel malacomg" [ref=e911]:
+                - /url: /@malacomg
+              - generic [ref=e912]:
+                - link "malacomg" [ref=e916]:
+                  - /url: /@malacomg
+                - img "Verified" [ref=e919]
+            - generic [ref=e921]:
+              - generic [ref=e922]: Johnnie Taylor - Little Bluebird https://malaco.lnk.to/vZcr0ID www.malaco.com.
+              - tooltip "tooltip"
+        - generic [ref=e924]:
+          - link [ref=e926] [cursor=pointer]:
+            - /url: /watch?v=sXvTUOt2Bxs&list=RDsXvTUOt2Bxs&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e928] [cursor=pointer]:
+            - generic [ref=e929]:
+              - heading "Soul Heaven - Johnnie Taylor (video compilation) 4 minutes, 52 seconds" [level=3] [ref=e931]:
+                - link "Soul Heaven - Johnnie Taylor (video compilation) 4 minutes, 52 seconds" [ref=e932]:
+                  - /url: /watch?v=sXvTUOt2Bxs&list=RDsXvTUOt2Bxs&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Soul Heaven - Johnnie Taylor (video compilation)
+              - generic [ref=e935]:
+                - generic [ref=e936]: 441K views
+                - generic [ref=e937]: •10 years ago
+            - generic [ref=e938]:
+              - link "Go to channel Bee jAY" [ref=e939]:
+                - /url: /@beejay8114
+              - link "Bee jAY" [ref=e944]:
+                - /url: /@beejay8114
+            - generic [ref=e945]:
+              - generic [ref=e946]: Tribute video for Soul Heaven.. http://lionsvstigers.com | leakingpockets.com As many of the references as I have noted.
+              - tooltip "tooltip"
+        - generic [ref=e948]:
+          - link [ref=e950] [cursor=pointer]:
+            - /url: /watch?v=HCYPuW1-oZo&list=RDHCYPuW1-oZo&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+          - generic [ref=e952] [cursor=pointer]:
+            - generic [ref=e953]:
+              - 'heading "Uniting Generations: Johnnie & Floyd Taylor''s Breathtaking Father-Son Duet 2 minutes, 18 seconds" [level=3] [ref=e955]':
+                - 'link "Uniting Generations: Johnnie & Floyd Taylor''s Breathtaking Father-Son Duet 2 minutes, 18 seconds" [ref=e956]':
+                  - /url: /watch?v=HCYPuW1-oZo&list=RDHCYPuW1-oZo&start_radio=1&pp=ygUqSm9obm5pZSBUYXlsb3Igc291bCBibHVlcyBsaXZlIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+                  - text: "Uniting Generations: Johnnie & Floyd Taylor's Breathtaking Father-Son Duet"
+              - generic [ref=e959]:
+                - generic [ref=e960]: 1.3M views
+                - generic [ref=e961]: •13 years ago
+            - generic [ref=e962]:
+              - link "Go to channel Southern Soulful Syndication" [ref=e963]:
+                - /url: /@DJSoulMane
+              - link "Southern Soulful Syndication" [ref=e968]:
+                - /url: /@DJSoulMane
+            - generic [ref=e969]:
+              - generic [ref=e970]: Clips from Johnnie Taylor and Floyd Taylor edited together. "Just Because" Check out this video about Johnnie Taylor ...
+              - tooltip "tooltip"
+        - generic [ref=e972] [cursor=pointer]:
+          - link [ref=e973]:
+            - /url: /watch?v=wri3mxOejE0&list=PLhDsmCvJXtU8hDR-LoPFXjsHBHMQnAt9j&pp=0gcJCbkEOCosWNin
+            - generic [ref=e985]: 11 videos
+          - generic [ref=e988]:
+            - heading "Johnnie Taylor live" [level=3] [ref=e989]:
+              - link "Johnnie Taylor live" [ref=e990]:
+                - /url: /watch?v=wri3mxOejE0&list=PLhDsmCvJXtU8hDR-LoPFXjsHBHMQnAt9j&pp=0gcJCbkEOCosWNin
+            - generic [ref=e992]:
+              - generic [ref=e993]:
+                - link "Julian Johnson" [ref=e996]:
+                  - /url: /@julianjohnson4883
+                - generic [ref=e997]: •
+                - link "Playlist" [ref=e1000]:
+                  - /url: /@julianjohnson4883
+              - link "Who's Makin' Love (Live) · 2:36" [ref=e1004]:
+                - /url: /watch?v=wri3mxOejE0&list=PLhDsmCvJXtU8hDR-LoPFXjsHBHMQnAt9j
+              - link "Little Bluebird (Live) · 6:57" [ref=e1007]:
+                - /url: /watch?v=7Sq9IZQmNi0&list=PLhDsmCvJXtU8hDR-LoPFXjsHBHMQnAt9j
+              - link "View full playlist" [ref=e1012]:
+                - /url: /playlist?list=PLhDsmCvJXtU8hDR-LoPFXjsHBHMQnAt9j

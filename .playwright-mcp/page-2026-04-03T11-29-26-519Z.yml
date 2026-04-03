@@ -1,0 +1,645 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+          - button "Next" [ref=e111] [cursor=pointer]
+        - link "About these results" [ref=e120] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e121]: About these results
+        - generic [ref=e128]:
+          - button "Search filters" [ref=e130] [cursor=pointer]:
+            - generic [ref=e131]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e142]:
+        - generic [ref=e144]:
+          - link [ref=e146] [cursor=pointer]:
+            - /url: /watch?v=8z74lr3txUk&list=RD8z74lr3txUk&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwHSBwkJ2QoBhyohjO8%3D
+            - img [ref=e148]
+            - img [ref=e151]:
+              - generic [ref=e153]: 7:58
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e154] [cursor=pointer]:
+            - generic [ref=e155]:
+              - heading "Joe Bonamassa Official - \"Midnight Blues\" - Beacon Theatre Live From New York 7 minutes, 58 seconds" [level=3] [ref=e157]:
+                - link "Joe Bonamassa Official - \"Midnight Blues\" - Beacon Theatre Live From New York 7 minutes, 58 seconds" [ref=e158]:
+                  - /url: /watch?v=8z74lr3txUk&list=RD8z74lr3txUk&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Joe Bonamassa Official - "Midnight Blues" - Beacon Theatre Live From New York
+              - generic [ref=e161]:
+                - generic [ref=e162]: 9.7M views
+                - generic [ref=e163]: •9 years ago
+            - generic [ref=e164]:
+              - link "Go to channel JoeBonamassaTV" [ref=e165]:
+                - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+              - generic [ref=e167]:
+                - link "JoeBonamassaTV" [ref=e171]:
+                  - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+                - img "Official Artist Channel" [ref=e174]
+            - generic [ref=e176]:
+              - generic [ref=e177]: "STREAM JOE NOW: https://jbonamassa.com/streaming/ ○ Official Tickets ○ http://jbonamassa.com/tour-dates/ ○ Official Social ..."
+              - tooltip "tooltip"
+        - generic [ref=e179]:
+          - link [ref=e181] [cursor=pointer]:
+            - /url: /watch?v=w86Jym1eZCI&list=RDw86Jym1eZCI&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+            - img [ref=e183]
+            - img [ref=e186]:
+              - generic [ref=e188]: 9:15
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e189] [cursor=pointer]:
+            - generic [ref=e190]:
+              - heading "Joe Bonamassa Official - \"Blues Deluxe\" - Live From The Royal Albert Hall 9 minutes, 15 seconds" [level=3] [ref=e192]:
+                - link "Joe Bonamassa Official - \"Blues Deluxe\" - Live From The Royal Albert Hall 9 minutes, 15 seconds" [ref=e193]:
+                  - /url: /watch?v=w86Jym1eZCI&list=RDw86Jym1eZCI&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: Joe Bonamassa Official - "Blues Deluxe" - Live From The Royal Albert Hall
+              - generic [ref=e196]:
+                - generic [ref=e197]: 1.5M views
+                - generic [ref=e198]: •6 years ago
+            - generic [ref=e199]:
+              - link "Go to channel JoeBonamassaTV" [ref=e200]:
+                - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+              - generic [ref=e202]:
+                - link "JoeBonamassaTV" [ref=e206]:
+                  - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+                - img "Official Artist Channel" [ref=e209]
+            - generic [ref=e211]:
+              - generic [ref=e212]: "STREAM JOE NOW: https://jbonamassa.com/streaming/ ○ Official Tickets ○ http://jbonamassa.com/tour-dates/ ○ Official Social ..."
+              - tooltip "tooltip"
+        - generic [ref=e214]:
+          - link [ref=e216] [cursor=pointer]:
+            - /url: /watch?v=FystVVkY55w&list=RDFystVVkY55w&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+            - img [ref=e218]
+            - img [ref=e221]:
+              - generic [ref=e223]: 1:19:15
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e224] [cursor=pointer]:
+            - generic [ref=e225]:
+              - heading "Joe Bonamassa - Full Concert [HD] | Live at North Sea Jazz Festival 2016 1 hour, 19 minutes" [level=3] [ref=e227]:
+                - link "Joe Bonamassa - Full Concert [HD] | Live at North Sea Jazz Festival 2016 1 hour, 19 minutes" [ref=e228]:
+                  - /url: /watch?v=FystVVkY55w&list=RDFystVVkY55w&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: Joe Bonamassa - Full Concert [HD] | Live at North Sea Jazz Festival 2016
+              - generic [ref=e231]:
+                - generic [ref=e232]: 121K views
+                - generic [ref=e233]: •1 year ago
+            - generic [ref=e234]:
+              - link "Go to channel North Sea Jazz Archive" [ref=e235]:
+                - /url: /@NorthSeaJazzArchive
+              - link "North Sea Jazz Archive" [ref=e241]:
+                - /url: /@NorthSeaJazzArchive
+            - generic [ref=e242]:
+              - generic [ref=e243]: JOE BONAMASSA, HOMAGE TO THE MUSIC OF ERIC CLAPTON, JEFF BECK & JIMMY PAGE Date & location; SUNDAY 10 ...
+              - tooltip "tooltip"
+        - generic [ref=e245]:
+          - link [ref=e247] [cursor=pointer]:
+            - /url: /watch?v=a_DO8E66Tv4&list=RDa_DO8E66Tv4&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+            - img [ref=e249]
+            - img [ref=e252]:
+              - generic [ref=e254]: 1:49:44
+            - generic:
+              - generic: Now playing
+              - generic:
+                - img
+          - generic [ref=e255] [cursor=pointer]:
+            - generic [ref=e256]:
+              - heading "Joe Bonamassa \"Tales of Time\" Full Album! 1 hour, 49 minutes" [level=3] [ref=e258]:
+                - link "Joe Bonamassa \"Tales of Time\" Full Album! 1 hour, 49 minutes" [ref=e259]:
+                  - /url: /watch?v=a_DO8E66Tv4&list=RDa_DO8E66Tv4&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: Joe Bonamassa "Tales of Time" Full Album!
+              - generic [ref=e262]:
+                - generic [ref=e263]: 4M views
+                - generic [ref=e264]: •Streamed 1 year ago
+            - generic [ref=e265]:
+              - link "Go to channel JoeBonamassaTV" [ref=e266]:
+                - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+              - generic [ref=e268]:
+                - link "JoeBonamassaTV" [ref=e272]:
+                  - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+                - img "Official Artist Channel" [ref=e275]
+            - generic [ref=e277]:
+              - generic [ref=e278]: SEE WHEN JOE IS COMING TO YOUR TOWN BELOW! https://joeb.me/ontour See Joe Live In US FALL 2025 Columbus, OH ...
+              - tooltip "tooltip"
+        - generic [ref=e280]:
+          - link [ref=e282] [cursor=pointer]:
+            - /url: /watch?v=ftT-Pisbj6w&list=RDftT-Pisbj6w&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+            - img [ref=e284]
+          - generic [ref=e285] [cursor=pointer]:
+            - generic [ref=e286]:
+              - heading "Joe Bonamassa Live at Carnegie Hall An Acoustic Evening 1 hour, 43 minutes" [level=3] [ref=e288]:
+                - link "Joe Bonamassa Live at Carnegie Hall An Acoustic Evening 1 hour, 43 minutes" [ref=e289]:
+                  - /url: /watch?v=ftT-Pisbj6w&list=RDftT-Pisbj6w&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: Joe Bonamassa Live at Carnegie Hall An Acoustic Evening
+              - generic [ref=e292]:
+                - generic [ref=e293]: 192K views
+                - generic [ref=e294]: •7 years ago
+            - generic [ref=e295]:
+              - link "Go to channel M308" [ref=e296]:
+                - /url: /@sergei308
+              - link "M308" [ref=e302]:
+                - /url: /@sergei308
+            - generic [ref=e303]:
+              - generic [ref=e304]: Joe Bonamassa Live at Carnegie Hall An Acoustic Evening (2017)
+              - tooltip "tooltip"
+        - generic [ref=e306]:
+          - link [ref=e308] [cursor=pointer]:
+            - /url: /watch?v=41t8uSjNWIE&list=RD41t8uSjNWIE&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e310] [cursor=pointer]:
+            - generic [ref=e311]:
+              - heading "Joe Bonamassa \"Live From The Royal Albert Hall\" Watch for FREE! 2 hours, 9 minutes" [level=3] [ref=e313]:
+                - link "Joe Bonamassa \"Live From The Royal Albert Hall\" Watch for FREE! 2 hours, 9 minutes" [ref=e314]:
+                  - /url: /watch?v=41t8uSjNWIE&list=RD41t8uSjNWIE&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Joe Bonamassa "Live From The Royal Albert Hall" Watch for FREE!
+              - generic [ref=e317]:
+                - generic [ref=e318]: 230K views
+                - generic [ref=e319]: •Streamed 1 year ago
+            - generic [ref=e320]:
+              - link "Go to channel JoeBonamassaTV" [ref=e321]:
+                - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+              - generic [ref=e323]:
+                - link "JoeBonamassaTV" [ref=e327]:
+                  - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+                - img "Official Artist Channel" [ref=e330]
+            - generic [ref=e332]:
+              - generic [ref=e333]: "SEE WHEN JOE IS COMING TO YOUR TOWN BELOW! https://joeb.me/ontour See Joe Live In: Columbus, OH Toronto, ON Detroit ..."
+              - tooltip "tooltip"
+        - generic [ref=e335]:
+          - link [ref=e337] [cursor=pointer]:
+            - /url: /watch?v=d2jW0s6hsMU&list=RDd2jW0s6hsMU&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+          - generic [ref=e339] [cursor=pointer]:
+            - generic [ref=e340]:
+              - heading "Joe Bonamassa & Metropole Orkest | Live at North Sea Jazz 2025 26 minutes" [level=3] [ref=e342]:
+                - link "Joe Bonamassa & Metropole Orkest | Live at North Sea Jazz 2025 26 minutes" [ref=e343]:
+                  - /url: /watch?v=d2jW0s6hsMU&list=RDd2jW0s6hsMU&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: Joe Bonamassa & Metropole Orkest | Live at North Sea Jazz 2025
+              - generic [ref=e346]:
+                - generic [ref=e347]: 475K views
+                - generic [ref=e348]: •8 months ago
+            - generic [ref=e349]:
+              - link "Go to channel NTR North Sea Jazz" [ref=e350]:
+                - /url: /@ntrnorthseajazz
+              - link "NTR North Sea Jazz" [ref=e355]:
+                - /url: /@ntrnorthseajazz
+            - generic [ref=e356]:
+              - text: Joe Bonamassa is one of the greatest guitarists of our time. With his sublime technique and raw, honest sound he has been ...
+              - tooltip "tooltip"
+            - generic [ref=e359]:
+              - generic [ref=e360]:
+                - generic [ref=e364]: 3 chapters
+                - button "No Good Place for the Lonely | Sloe Gin | The Ballad of John Henry"
+              - button "More" [ref=e369]
+        - generic [ref=e376]:
+          - link [ref=e378] [cursor=pointer]:
+            - /url: /watch?v=U27NxXGZNZQ&list=RDU27NxXGZNZQ&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+          - generic [ref=e380] [cursor=pointer]:
+            - generic [ref=e381]:
+              - 'heading "Joe Bonamassa Official - \"The Ballad of John Henry\" - Tour de Force: Royal Albert Hall 13 minutes, 32 seconds" [level=3] [ref=e383]':
+                - 'link "Joe Bonamassa Official - \"The Ballad of John Henry\" - Tour de Force: Royal Albert Hall 13 minutes, 32 seconds" [ref=e384]':
+                  - /url: /watch?v=U27NxXGZNZQ&list=RDU27NxXGZNZQ&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: "Joe Bonamassa Official - \"The Ballad of John Henry\" - Tour de Force: Royal Albert Hall"
+              - generic [ref=e387]:
+                - generic [ref=e388]: 2.1M views
+                - generic [ref=e389]: •7 years ago
+            - generic [ref=e390]:
+              - link "Go to channel JoeBonamassaTV" [ref=e391]:
+                - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+              - generic [ref=e392]:
+                - link "JoeBonamassaTV" [ref=e396]:
+                  - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+                - img "Official Artist Channel" [ref=e399]
+            - generic [ref=e401]:
+              - generic [ref=e402]: "STREAM JOE NOW: https://jbonamassa.com/streaming/ ▻ MORE VIDEOS FROM THIS CONCERT: https://joeb.me/YTP_TDFRAH ..."
+              - tooltip "tooltip"
+        - generic [ref=e404]:
+          - link [ref=e406] [cursor=pointer]:
+            - /url: /watch?v=BcnMFCUiH5c&list=RDBcnMFCUiH5c&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+          - generic [ref=e408] [cursor=pointer]:
+            - generic [ref=e409]:
+              - heading "Joe Bonamassa British Blues Explosion Live Blu ray 1 hour, 44 minutes" [level=3] [ref=e411]:
+                - link "Joe Bonamassa British Blues Explosion Live Blu ray 1 hour, 44 minutes" [ref=e412]:
+                  - /url: /watch?v=BcnMFCUiH5c&list=RDBcnMFCUiH5c&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: Joe Bonamassa British Blues Explosion Live Blu ray
+              - generic [ref=e415]:
+                - generic [ref=e416]: 2.8K views
+                - generic [ref=e417]: •1 year ago
+            - generic [ref=e418]:
+              - link "Go to channel BillyStudio365" [ref=e419]:
+                - /url: /@Billy-Studio365
+              - link "BillyStudio365" [ref=e424]:
+                - /url: /@Billy-Studio365
+            - generic [ref=e425]:
+              - generic [ref=e426]: Joe Bonamassa British Blues Explosion Live Blu ray.
+              - tooltip "tooltip"
+        - generic [ref=e427]:
+          - generic [ref=e430]:
+            - img [ref=e432]
+            - heading "Shorts" [level=2] [ref=e435]
+          - generic [ref=e436]:
+            - generic [ref=e437]:
+              - generic [ref=e440]:
+                - link [ref=e441] [cursor=pointer]:
+                  - /url: /shorts/paJ02fvps7E
+                - generic [ref=e445] [cursor=pointer]:
+                  - link "Joe Bonamassa - Midnight Blues (LIVE)" [ref=e446]:
+                    - /url: /shorts/paJ02fvps7E
+                  - generic [ref=e447]: 580K views
+                - button "More actions" [ref=e449] [cursor=pointer]
+              - generic [ref=e457]:
+                - link [ref=e458] [cursor=pointer]:
+                  - /url: /shorts/NymlzEz61FM
+                - generic [ref=e462] [cursor=pointer]:
+                  - link "Joe Bonamassa - Twenty-Four Hour Blues - Live At The Hollywood Bowl With Orchestra" [ref=e463]:
+                    - /url: /shorts/NymlzEz61FM
+                  - generic [ref=e464]: 39K views
+                - button "More actions" [ref=e466] [cursor=pointer]
+            - generic [ref=e472]:
+              - generic [ref=e475]:
+                - link [ref=e476] [cursor=pointer]:
+                  - /url: /shorts/O4XR-2qoDng
+                - generic [ref=e480] [cursor=pointer]:
+                  - link "Joe Bonamassa - Midnight Blues (LIVE)" [ref=e481]:
+                    - /url: /shorts/O4XR-2qoDng
+                  - generic [ref=e482]: 106K views
+                - button "More actions" [ref=e484] [cursor=pointer]
+              - generic [ref=e492]:
+                - link [ref=e493] [cursor=pointer]:
+                  - /url: /shorts/JwhDBheg7V4
+                - generic [ref=e497] [cursor=pointer]:
+                  - link "Joe Bonamassa - 24 Hour Blues at the Hollywood Bowl with LIVE orchestra." [ref=e498]:
+                    - /url: /shorts/JwhDBheg7V4
+                  - generic [ref=e499]: 31K views
+                - button "More actions" [ref=e501] [cursor=pointer]
+          - button "Show more" [ref=e510] [cursor=pointer]:
+            - generic [ref=e511]: Show more
+        - generic [ref=e518]:
+          - link [ref=e520] [cursor=pointer]:
+            - /url: /watch?v=8rXdIOklIi0&list=RD8rXdIOklIi0&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+          - generic [ref=e522] [cursor=pointer]:
+            - generic [ref=e523]:
+              - heading "Joe Bonamassa Official - \"Young Man Blues\" - Beacon Theatre Live From New York 8 minutes, 48 seconds" [level=3] [ref=e525]:
+                - link "Joe Bonamassa Official - \"Young Man Blues\" - Beacon Theatre Live From New York 8 minutes, 48 seconds" [ref=e526]:
+                  - /url: /watch?v=8rXdIOklIi0&list=RD8rXdIOklIi0&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: Joe Bonamassa Official - "Young Man Blues" - Beacon Theatre Live From New York
+              - generic [ref=e529]:
+                - generic [ref=e530]: 284K views
+                - generic [ref=e531]: •11 years ago
+            - generic [ref=e532]:
+              - link "Go to channel JoeBonamassaTV" [ref=e533]:
+                - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+              - generic [ref=e534]:
+                - link "JoeBonamassaTV" [ref=e538]:
+                  - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+                - img "Official Artist Channel" [ref=e541]
+            - generic [ref=e543]:
+              - generic [ref=e544]: "STREAM JOE NOW: https://jbonamassa.com/streaming/ ○ Official Tickets ○ http://jbonamassa.com/tour-dates/ ○ Official Social ..."
+              - tooltip "tooltip"
+        - generic [ref=e546]:
+          - link [ref=e548] [cursor=pointer]:
+            - /url: /watch?v=24XSDpIk-TE&list=RD24XSDpIk-TE&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+          - generic [ref=e550] [cursor=pointer]:
+            - generic [ref=e551]:
+              - heading "Joe Bonamassa Official - \"Dust Bowl\" - Beacon Theatre Live From New York 7 minutes, 3 seconds" [level=3] [ref=e553]:
+                - link "Joe Bonamassa Official - \"Dust Bowl\" - Beacon Theatre Live From New York 7 minutes, 3 seconds" [ref=e554]:
+                  - /url: /watch?v=24XSDpIk-TE&list=RD24XSDpIk-TE&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: Joe Bonamassa Official - "Dust Bowl" - Beacon Theatre Live From New York
+              - generic [ref=e557]:
+                - generic [ref=e558]: 243K views
+                - generic [ref=e559]: •6 years ago
+            - generic [ref=e560]:
+              - link "Go to channel JoeBonamassaTV" [ref=e561]:
+                - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+              - generic [ref=e562]:
+                - link "JoeBonamassaTV" [ref=e566]:
+                  - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+                - img "Official Artist Channel" [ref=e569]
+            - generic [ref=e571]:
+              - generic [ref=e572]: "STREAM JOE NOW: https://jbonamassa.com/streaming/ ○ Official Tickets ○ http://jbonamassa.com/tour-dates/ ○ Official Social ..."
+              - tooltip "tooltip"
+        - generic [ref=e574]:
+          - link [ref=e576] [cursor=pointer]:
+            - /url: /watch?v=adRGd54rUGs&list=RDadRGd54rUGs&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+          - generic [ref=e578] [cursor=pointer]:
+            - generic [ref=e579]:
+              - heading "Joe Bonamassa Official - \"Sloe Gin\" - Live From The Royal Albert Hall 6 minutes, 44 seconds" [level=3] [ref=e581]:
+                - link "Joe Bonamassa Official - \"Sloe Gin\" - Live From The Royal Albert Hall 6 minutes, 44 seconds" [ref=e582]:
+                  - /url: /watch?v=adRGd54rUGs&list=RDadRGd54rUGs&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: Joe Bonamassa Official - "Sloe Gin" - Live From The Royal Albert Hall
+              - generic [ref=e585]:
+                - generic [ref=e586]: 767K views
+                - generic [ref=e587]: •5 years ago
+            - generic [ref=e588]:
+              - link "Go to channel JoeBonamassaTV" [ref=e589]:
+                - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+              - generic [ref=e590]:
+                - link "JoeBonamassaTV" [ref=e594]:
+                  - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+                - img "Official Artist Channel" [ref=e597]
+            - generic [ref=e599]:
+              - generic [ref=e600]: "STREAM JOE NOW: https://jbonamassa.com/streaming/ ○ Official Tickets ○ http://jbonamassa.com/tour-dates/ ○ Official Social ..."
+              - tooltip "tooltip"
+        - generic [ref=e602]:
+          - heading "People also watched" [level=2] [ref=e605]:
+            - generic [ref=e607]: People also watched
+          - generic [ref=e609]:
+            - generic [ref=e610]:
+              - generic [ref=e612]:
+                - link [ref=e614] [cursor=pointer]:
+                  - /url: /watch?v=6L07bI3uPUI&list=RD6L07bI3uPUI&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                - generic [ref=e616] [cursor=pointer]:
+                  - generic [ref=e617]:
+                    - heading "Joe Bonamassa - Full Concert - Westbury Music Fair - Nov 19, 2016 2 hours, 11 minutes" [level=3] [ref=e619]:
+                      - link "Joe Bonamassa - Full Concert - Westbury Music Fair - Nov 19, 2016 2 hours, 11 minutes" [ref=e620]:
+                        - /url: /watch?v=6L07bI3uPUI&list=RD6L07bI3uPUI&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                        - text: Joe Bonamassa - Full Concert - Westbury Music Fair - Nov 19, 2016
+                    - generic [ref=e623]:
+                      - generic [ref=e624]: 249K views
+                      - generic [ref=e625]: •9 years ago
+                  - generic [ref=e626]:
+                    - link "Go to channel William Laird" [ref=e627]:
+                      - /url: /@WilliamLaird64
+                    - link "William Laird" [ref=e632]:
+                      - /url: /@WilliamLaird64
+                  - generic [ref=e633]:
+                    - generic [ref=e634]: Joe Bonamassa - Westbury Music Fair - Nov 19, 2016 Entire show recorded and edited on iPhone 7plus. Please pardon the ...
+                    - tooltip "tooltip"
+              - generic [ref=e636]:
+                - link [ref=e638] [cursor=pointer]:
+                  - /url: /watch?v=6BuRU1EcthU&list=RD6BuRU1EcthU&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                - generic [ref=e640] [cursor=pointer]:
+                  - generic [ref=e641]:
+                    - heading "Joe Bonamassa Full Concert Helsinki Sept 22, 2018 2 hours, 18 minutes" [level=3] [ref=e643]:
+                      - link "Joe Bonamassa Full Concert Helsinki Sept 22, 2018 2 hours, 18 minutes" [ref=e644]:
+                        - /url: /watch?v=6BuRU1EcthU&list=RD6BuRU1EcthU&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                        - text: Joe Bonamassa Full Concert Helsinki Sept 22, 2018
+                    - generic [ref=e647]:
+                      - generic [ref=e648]: 336K views
+                      - generic [ref=e649]: •7 years ago
+                  - generic [ref=e650]:
+                    - link "Go to channel Bimbomable" [ref=e651]:
+                      - /url: /@Bimbomable
+                    - link "Bimbomable" [ref=e656]:
+                      - /url: /@Bimbomable
+                  - generic [ref=e657]:
+                    - text: 1. Introduction 2. King Bee Shakedown 02:53 3. Evil Mama 09:12 4. Jus 'Cos You Can Don't Mean You Should 15:38 5.
+                    - tooltip "tooltip"
+                  - generic [ref=e660]:
+                    - generic [ref=e661]:
+                      - generic [ref=e665]: 17 moments
+                      - 'button "2. King Bee Shakedown | 3. Evil Mama | 4. Jus ''Cos You Can Don''t Mean You Should | 5. Self-Inflicted Wounds | 6. I Get Evil | 7. No Good Place For The Lonely | 8. How Deep This River Runs | 9. Breaking Up Somebody''s Home | 10. Band Introductions | 11. Slow Train | 12. Mountain Time | 13. Boogie With Stu | 14. Last Kiss | 15. Interval | 16. Sloe Gin | 17. Mainline Florida | 18. Bonus: Slow Train before/after editing"'
+                    - button "More" [ref=e670]
+              - generic [ref=e677]:
+                - link [ref=e679] [cursor=pointer]:
+                  - /url: /watch?v=PuZvVCydNUg&list=RDPuZvVCydNUg&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                - generic [ref=e681] [cursor=pointer]:
+                  - generic [ref=e682]:
+                    - heading "JOE BONAMASSA “Full Concert” 4K UHD LIVE The Greek Theater Los Angeles Hollywood, Cal. July 31, 2025 2 hours, 5 minutes" [level=3] [ref=e684]:
+                      - link "JOE BONAMASSA “Full Concert” 4K UHD LIVE The Greek Theater Los Angeles Hollywood, Cal. July 31, 2025 2 hours, 5 minutes" [ref=e685]:
+                        - /url: /watch?v=PuZvVCydNUg&list=RDPuZvVCydNUg&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                        - text: JOE BONAMASSA “Full Concert” 4K UHD LIVE The Greek Theater Los Angeles Hollywood, Cal. July 31, 2025
+                    - generic [ref=e688]:
+                      - generic [ref=e689]: 106K views
+                      - generic [ref=e690]: •8 months ago
+                  - generic [ref=e691]:
+                    - link "Go to channel Ken Chiarito" [ref=e692]:
+                      - /url: /@kenchiarito2112
+                    - link "Ken Chiarito" [ref=e697]:
+                      - /url: /@kenchiarito2112
+                  - generic [ref=e698]:
+                    - generic [ref=e699]: 1) Hope You Realize It (Goodbye Again) 2) Dust Bowl 3) Twenty‐Four Hour Blues (Bobby “Blue” Bland cover) 4) Well, I Done Got ...
+                    - tooltip "tooltip"
+              - generic [ref=e701]:
+                - link [ref=e703] [cursor=pointer]:
+                  - /url: /watch?v=YRm1OC8fc68&list=RDYRm1OC8fc68&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                - generic [ref=e705] [cursor=pointer]:
+                  - generic [ref=e706]:
+                    - heading "Warren Haynes & Joe Bonamassa - Statesboro Blues 3-5-26 Beacon Theater, NYC 8 minutes, 38 seconds" [level=3] [ref=e708]:
+                      - link "Warren Haynes & Joe Bonamassa - Statesboro Blues 3-5-26 Beacon Theater, NYC 8 minutes, 38 seconds" [ref=e709]:
+                        - /url: /watch?v=YRm1OC8fc68&list=RDYRm1OC8fc68&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                        - text: Warren Haynes & Joe Bonamassa - Statesboro Blues 3-5-26 Beacon Theater, NYC
+                    - generic [ref=e712]:
+                      - generic [ref=e713]: 47K views
+                      - generic [ref=e714]: •3 weeks ago
+                  - generic [ref=e715]:
+                    - link "Go to channel sgibson818" [ref=e716]:
+                      - /url: /@sgibson818
+                    - link "sgibson818" [ref=e721]:
+                      - /url: /@sgibson818
+                  - generic [ref=e722]:
+                    - text: "loverocksnyc #godslovewedeliver 10th Anniversary Will Lee, Paul Shaffer, Eric Krasno, Larry Campbell, Steve Gadd, Shawn ..."
+                    - tooltip "tooltip"
+            - generic "+6 more" [ref=e724] [cursor=pointer]
+        - generic [ref=e726]:
+          - link [ref=e728] [cursor=pointer]:
+            - /url: /watch?v=LwjWsf4-Lms&list=RDLwjWsf4-Lms&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+          - generic [ref=e730] [cursor=pointer]:
+            - generic [ref=e731]:
+              - heading "Joe Bonamassa - \"Twenty-Four Hour Blues\" - Live At The Hollywood Bowl With Orchestra 5 minutes, 52 seconds" [level=3] [ref=e733]:
+                - link "Joe Bonamassa - \"Twenty-Four Hour Blues\" - Live At The Hollywood Bowl With Orchestra 5 minutes, 52 seconds" [ref=e734]:
+                  - /url: /watch?v=LwjWsf4-Lms&list=RDLwjWsf4-Lms&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: Joe Bonamassa - "Twenty-Four Hour Blues" - Live At The Hollywood Bowl With Orchestra
+              - generic [ref=e737]:
+                - generic [ref=e738]: 1M views
+                - generic [ref=e739]: •2 years ago
+            - generic [ref=e740]:
+              - link "Go to channel JoeBonamassaTV" [ref=e741]:
+                - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+              - generic [ref=e742]:
+                - link "JoeBonamassaTV" [ref=e746]:
+                  - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+                - img "Official Artist Channel" [ref=e749]
+            - generic [ref=e751]:
+              - generic [ref=e752]: So excited to announce my latest album " Live At The Hollywood Bowl with Orchestra" is now available for preorder, set to release ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e755]:
+              - generic [ref=e756]: 4K
+        - generic [ref=e758]:
+          - link [ref=e760] [cursor=pointer]:
+            - /url: /watch?v=EVqsDkyxohE&list=RDEVqsDkyxohE&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+          - generic [ref=e762] [cursor=pointer]:
+            - generic [ref=e763]:
+              - heading "Rockpalast Watch Party celebrating Joe Bonamassa's ACL Live concert on 04/01/2021 1 hour, 31 minutes" [level=3] [ref=e765]:
+                - link "Rockpalast Watch Party celebrating Joe Bonamassa's ACL Live concert on 04/01/2021 1 hour, 31 minutes" [ref=e766]:
+                  - /url: /watch?v=EVqsDkyxohE&list=RDEVqsDkyxohE&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: Rockpalast Watch Party celebrating Joe Bonamassa's ACL Live concert on 04/01/2021
+              - generic [ref=e769]:
+                - generic [ref=e770]: 2M views
+                - generic [ref=e771]: •Streamed 5 years ago
+            - generic [ref=e772]:
+              - link "Go to channel JoeBonamassaTV" [ref=e773]:
+                - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+              - generic [ref=e774]:
+                - link "JoeBonamassaTV" [ref=e778]:
+                  - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+                - img "Official Artist Channel" [ref=e781]
+            - generic [ref=e783]:
+              - generic [ref=e784]: ONE WEEK TO GO! Celebrate the return of the Blues Rock Power Trio and Joe's return to his roots on April 1st. Enjoy this full ...
+              - tooltip "tooltip"
+        - generic [ref=e785]:
+          - generic [ref=e788]:
+            - img [ref=e790]
+            - heading "Shorts" [level=2] [ref=e793]
+          - generic [ref=e794]:
+            - generic [ref=e795]:
+              - generic [ref=e798]:
+                - link [ref=e799] [cursor=pointer]:
+                  - /url: /shorts/6inoyqK7iSg
+                - generic [ref=e803] [cursor=pointer]:
+                  - link "Joe Bonamassa - Midnight Blues (LIVE)" [ref=e804]:
+                    - /url: /shorts/6inoyqK7iSg
+                  - generic [ref=e805]: 30K views
+                - button "More actions" [ref=e807] [cursor=pointer]
+              - generic [ref=e815]:
+                - link [ref=e816] [cursor=pointer]:
+                  - /url: /shorts/GXDWu5qwGsY
+                - generic [ref=e820] [cursor=pointer]:
+                  - link "Joe Bonamassa Official - Blues Deluxe - Live From The Royal Albert Hall" [ref=e821]:
+                    - /url: /shorts/GXDWu5qwGsY
+                  - generic [ref=e822]: 11K views
+                - button "More actions" [ref=e824] [cursor=pointer]
+            - generic [ref=e830]:
+              - generic [ref=e833]:
+                - link [ref=e834] [cursor=pointer]:
+                  - /url: /shorts/N7HrRjD47Gk
+                - generic [ref=e838] [cursor=pointer]:
+                  - link "Joe Bonamassa Official - \"72nd Street Subway Blues\" - Beacon Theatre Live From New York" [ref=e839]:
+                    - /url: /shorts/N7HrRjD47Gk
+                  - generic [ref=e840]: 14K views
+                - button "More actions" [ref=e842] [cursor=pointer]
+              - generic [ref=e850]:
+                - link [ref=e851] [cursor=pointer]:
+                  - /url: /shorts/DrD1XGbLcqU
+                - generic [ref=e855] [cursor=pointer]:
+                  - link "\"Smokin\" Joe Bonamassa on MTV in 1991" [ref=e856]:
+                    - /url: /shorts/DrD1XGbLcqU
+                  - generic [ref=e857]: 1M views
+                - button "More actions" [ref=e859] [cursor=pointer]
+          - button "Show more" [ref=e868] [cursor=pointer]:
+            - generic [ref=e869]: Show more
+        - generic [ref=e876]:
+          - link [ref=e878] [cursor=pointer]:
+            - /url: /watch?v=wm8AxH-d3S8&list=RDwm8AxH-d3S8&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+          - generic [ref=e880] [cursor=pointer]:
+            - generic [ref=e881]:
+              - 'heading "Joe Bonamassa \"Beacon Theatre: Live From New York\" Happy Hour Watch Party! 1 hour, 54 minutes" [level=3] [ref=e883]':
+                - 'link "Joe Bonamassa \"Beacon Theatre: Live From New York\" Happy Hour Watch Party! 1 hour, 54 minutes" [ref=e884]':
+                  - /url: /watch?v=wm8AxH-d3S8&list=RDwm8AxH-d3S8&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: "Joe Bonamassa \"Beacon Theatre: Live From New York\" Happy Hour Watch Party!"
+              - generic [ref=e887]:
+                - generic [ref=e888]: 124K views
+                - generic [ref=e889]: •Streamed 1 year ago
+            - generic [ref=e890]:
+              - link "Go to channel JoeBonamassaTV" [ref=e891]:
+                - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+              - generic [ref=e892]:
+                - link "JoeBonamassaTV" [ref=e896]:
+                  - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+                - img "Official Artist Channel" [ref=e899]
+            - generic [ref=e901]:
+              - generic [ref=e902]: SEE WHEN JOE IS COMING TO YOUR TOWN BELOW! https://joeb.me/ontour See Joe Live In US FALL 2025 Columbus, OH ...
+              - tooltip "tooltip"
+        - generic [ref=e904]:
+          - link [ref=e906] [cursor=pointer]:
+            - /url: /watch?v=0Cz2yd4Srzc&list=RD0Cz2yd4Srzc&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e908] [cursor=pointer]:
+            - generic [ref=e909]:
+              - heading "Joe Bonamassa - Full Concert [HD] | Live at North Sea Jazz Festival 2007 1 hour, 20 minutes" [level=3] [ref=e911]:
+                - link "Joe Bonamassa - Full Concert [HD] | Live at North Sea Jazz Festival 2007 1 hour, 20 minutes" [ref=e912]:
+                  - /url: /watch?v=0Cz2yd4Srzc&list=RD0Cz2yd4Srzc&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Joe Bonamassa - Full Concert [HD] | Live at North Sea Jazz Festival 2007
+              - generic [ref=e915]:
+                - generic [ref=e916]: 282K views
+                - generic [ref=e917]: •1 year ago
+            - generic [ref=e918]:
+              - link "Go to channel North Sea Jazz Archive" [ref=e919]:
+                - /url: /@NorthSeaJazzArchive
+              - link "North Sea Jazz Archive" [ref=e924]:
+                - /url: /@NorthSeaJazzArchive
+            - generic [ref=e925]:
+              - generic [ref=e926]: "Location & date: SATURDAY 14 JULY 2007 • NILE • Ahoy Hall - Rotterdam - The Netherlands LINEUP Joe Bonamassa (vocals, ..."
+              - tooltip "tooltip"
+        - generic [ref=e928]:
+          - link [ref=e930] [cursor=pointer]:
+            - /url: /@JoeBonamassaTV
+          - link "JoeBonamassaTV Official Artist Channel @JoeBonamassaTV•849K subscribers Bonamassa's career began onstage opening for B.B. King in 1989, when he was only 12 years old. Today, he is hailed worldwide ..." [ref=e934] [cursor=pointer]:
+            - /url: /@JoeBonamassaTV
+            - generic [ref=e935]:
+              - generic [ref=e936]:
+                - generic [ref=e939]: JoeBonamassaTV
+                - img "Official Artist Channel" [ref=e942]
+              - generic [ref=e944]: "@JoeBonamassaTV•849K subscribers"
+              - generic [ref=e945]: Bonamassa's career began onstage opening for B.B. King in 1989, when he was only 12 years old. Today, he is hailed worldwide ...
+        - generic [ref=e947]:
+          - link [ref=e949] [cursor=pointer]:
+            - /url: /watch?v=Pin1Mq8-79o&list=RDPin1Mq8-79o&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e951] [cursor=pointer]:
+            - generic [ref=e952]:
+              - heading "Joe Bonamassa - Full Concert - Live at the North Sea Jazz Festival 2009 1 hour, 16 minutes" [level=3] [ref=e954]:
+                - link "Joe Bonamassa - Full Concert - Live at the North Sea Jazz Festival 2009 1 hour, 16 minutes" [ref=e955]:
+                  - /url: /watch?v=Pin1Mq8-79o&list=RDPin1Mq8-79o&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Joe Bonamassa - Full Concert - Live at the North Sea Jazz Festival 2009
+              - generic [ref=e958]:
+                - generic [ref=e959]: 836K views
+                - generic [ref=e960]: •1 year ago
+            - generic [ref=e961]:
+              - link "Go to channel North Sea Jazz Archive" [ref=e962]:
+                - /url: /@NorthSeaJazzArchive
+              - link "North Sea Jazz Archive" [ref=e967]:
+                - /url: /@NorthSeaJazzArchive
+            - generic [ref=e968]:
+              - generic [ref=e969]: We celebrate of Joe's 47th birthday today, May 8, 2024, with his performance at the North Sea Jazz Festival of 2009.
+              - tooltip "tooltip"
+        - generic [ref=e971]:
+          - link [ref=e973] [cursor=pointer]:
+            - /url: /watch?v=pvvgZMGp5Uo&list=RDpvvgZMGp5Uo&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+          - generic [ref=e975] [cursor=pointer]:
+            - generic [ref=e976]:
+              - heading "Joe Bonamassa Official - \"Sloe Gin\" - Muddy Wolf at Red Rocks 9 minutes, 37 seconds" [level=3] [ref=e978]:
+                - link "Joe Bonamassa Official - \"Sloe Gin\" - Muddy Wolf at Red Rocks 9 minutes, 37 seconds" [ref=e979]:
+                  - /url: /watch?v=pvvgZMGp5Uo&list=RDpvvgZMGp5Uo&start_radio=1&pp=ygUpSm9lIEJvbmFtYXNzYSBsaXZlIGNvbmNlcnQgYmx1ZXMgb2ZmaWNpYWygBwE%3D
+                  - text: Joe Bonamassa Official - "Sloe Gin" - Muddy Wolf at Red Rocks
+              - generic [ref=e982]:
+                - generic [ref=e983]: 8.3M views
+                - generic [ref=e984]: •10 years ago
+            - generic [ref=e985]:
+              - link "Go to channel JoeBonamassaTV" [ref=e986]:
+                - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+              - generic [ref=e987]:
+                - link "JoeBonamassaTV" [ref=e991]:
+                  - /url: /channel/UCcCa2gD7AEA-6SVN8nZw_IA
+                - img "Official Artist Channel" [ref=e994]
+            - generic [ref=e996]:
+              - generic [ref=e997]: "STREAM JOE NOW: https://jbonamassa.com/streaming/ ○ Official Tickets ○ http://jbonamassa.com/tour-dates/ ○ Official Social ..."
+              - tooltip "tooltip"

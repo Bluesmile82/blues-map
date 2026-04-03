@@ -1,0 +1,627 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+            - tab "Under 4 min" [ref=e110] [cursor=pointer]:
+              - generic [ref=e112]: Under 4 min
+            - tab "4 - 20 min" [ref=e119] [cursor=pointer]:
+              - generic [ref=e121]: 4 - 20 min
+            - tab "Over 20 min" [ref=e128] [cursor=pointer]:
+              - generic [ref=e130]: Over 20 min
+          - button "Next" [ref=e138] [cursor=pointer]
+        - link "About these results" [ref=e147] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e148]: About these results
+        - generic [ref=e155]:
+          - button "Search filters" [ref=e157] [cursor=pointer]:
+            - generic [ref=e158]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e169]:
+        - generic [ref=e171]:
+          - link [ref=e173] [cursor=pointer]:
+            - /url: /watch?v=zIXm7anjIMU&list=RDzIXm7anjIMU&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e175] [cursor=pointer]:
+            - generic [ref=e176]:
+              - heading "Lost Memphis Minnie Blues (1934–1943) | Raw Female Guitar, Double Meaning Blues Juke Joint Sessions 28 minutes" [level=3] [ref=e178]:
+                - link "Lost Memphis Minnie Blues (1934–1943) | Raw Female Guitar, Double Meaning Blues Juke Joint Sessions 28 minutes" [ref=e179]:
+                  - /url: /watch?v=zIXm7anjIMU&list=RDzIXm7anjIMU&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Lost Memphis Minnie Blues (1934–1943) | Raw Female Guitar, Double Meaning Blues Juke Joint Sessions
+              - generic [ref=e182]:
+                - generic [ref=e183]: 520 views
+                - generic [ref=e184]: •11 days ago
+            - generic [ref=e185]:
+              - link "Go to channel Slow Out'd" [ref=e186]:
+                - /url: /@slowoutblue
+              - link "Slow Out'd" [ref=e192]:
+                - /url: /@slowoutblue
+            - generic [ref=e193]:
+              - generic [ref=e194]: Lost Memphis Minnie Blues (1934–1943) | Raw Female Guitar, Double Meaning Blues Juke Joint Sessions 🎙️ Lost Memphis ...
+              - tooltip "tooltip"
+        - generic [ref=e195]:
+          - generic [ref=e198]:
+            - img [ref=e200]
+            - heading "Shorts" [level=2] [ref=e203]
+          - generic [ref=e204]:
+            - generic [ref=e205]:
+              - generic [ref=e208]:
+                - link [ref=e209] [cursor=pointer]:
+                  - /url: /shorts/sed25bBBxWk
+                - generic [ref=e213] [cursor=pointer]:
+                  - 'link "Drunken Barrelhouse Blues - Memphis Minnie #bluesmusic #folksong" [ref=e214]':
+                    - /url: /shorts/sed25bBBxWk
+                  - generic [ref=e215]: 7.9K views
+                - button "More actions" [ref=e217] [cursor=pointer]
+              - generic [ref=e225]:
+                - link [ref=e226] [cursor=pointer]:
+                  - /url: /shorts/5jZPWz8km4g
+                - generic [ref=e230] [cursor=pointer]:
+                  - link "when the levee breaks — memphis minnie (open G country blues)" [ref=e231]:
+                    - /url: /shorts/5jZPWz8km4g
+                  - generic [ref=e232]: 2.7K views
+                - button "More actions" [ref=e234] [cursor=pointer]
+            - generic [ref=e240]:
+              - generic [ref=e243]:
+                - link [ref=e244] [cursor=pointer]:
+                  - /url: /shorts/rJuF2cc3V2k
+                - generic [ref=e248] [cursor=pointer]:
+                  - link "memphis minnie! one of the all time great singers! she earned the title queen of the country blues!" [ref=e249]:
+                    - /url: /shorts/rJuF2cc3V2k
+                  - generic [ref=e250]: 2.3K views
+                - button "More actions" [ref=e252] [cursor=pointer]
+              - generic [ref=e260]:
+                - link [ref=e261] [cursor=pointer]:
+                  - /url: /shorts/2w-9VZJOBxE
+                - generic [ref=e265] [cursor=pointer]:
+                  - link "Joliet Bound (Memphis Minnie)variation open G6 www.michel-lelong-music-house.com" [ref=e266]:
+                    - /url: /shorts/2w-9VZJOBxE
+                  - generic [ref=e267]: 1K views
+                - button "More actions" [ref=e269] [cursor=pointer]
+          - button "Show more" [ref=e278] [cursor=pointer]:
+            - generic [ref=e279]: Show more
+        - generic [ref=e286]:
+          - link [ref=e288] [cursor=pointer]:
+            - /url: /watch?v=KM7xn3X8M-Q&list=RDKM7xn3X8M-Q&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e290] [cursor=pointer]:
+            - generic [ref=e291]:
+              - heading "Sue Foley plays Memphis Minnie's Nothin in Rambling 4 minutes, 48 seconds" [level=3] [ref=e293]:
+                - link "Sue Foley plays Memphis Minnie's Nothin in Rambling 4 minutes, 48 seconds" [ref=e294]:
+                  - /url: /watch?v=KM7xn3X8M-Q&list=RDKM7xn3X8M-Q&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Sue Foley plays Memphis Minnie's Nothin in Rambling
+              - generic [ref=e297]:
+                - generic [ref=e298]: 21K views
+                - generic [ref=e299]: •1 year ago
+            - generic [ref=e300]:
+              - link "Go to channel Sue Foley" [ref=e301]:
+                - /url: /channel/UCKDD1eLiMGB74ZvLmOzcNjA
+              - generic [ref=e303]:
+                - link "Sue Foley" [ref=e307]:
+                  - /url: /channel/UCKDD1eLiMGB74ZvLmOzcNjA
+                - img "Official Artist Channel" [ref=e310]
+            - generic [ref=e312]:
+              - text: Recorded Live Oct 2024, at Red Dragon Listening Room, in Baton Rouge LA Video by Daniel Boone Horizon South Media ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e315]:
+              - generic [ref=e316]: 4K
+        - generic [ref=e318]:
+          - link [ref=e320] [cursor=pointer]:
+            - /url: /watch?v=U799GAgDWxQ&list=RDU799GAgDWxQ&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e322] [cursor=pointer]:
+            - generic [ref=e323]:
+              - heading "Memphis Minnie – Midnight Railroad Blues (Chicago Electric Sessions 1942) | Inspired Tribute 43 minutes" [level=3] [ref=e325]:
+                - link "Memphis Minnie – Midnight Railroad Blues (Chicago Electric Sessions 1942) | Inspired Tribute 43 minutes" [ref=e326]:
+                  - /url: /watch?v=U799GAgDWxQ&list=RDU799GAgDWxQ&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Memphis Minnie – Midnight Railroad Blues (Chicago Electric Sessions 1942) | Inspired Tribute
+              - generic [ref=e329]:
+                - generic [ref=e330]: 1.1K views
+                - generic [ref=e331]: •1 month ago
+            - generic [ref=e332]:
+              - link "Go to channel RnB Concert IA" [ref=e333]:
+                - /url: /@RnBconcertIA
+              - link "RnB Concert IA" [ref=e338]:
+                - /url: /@RnBconcertIA
+            - generic [ref=e339]:
+              - generic [ref=e340]: What if a lost 1942 Chicago electric blues session had been recorded live to acetate — raw, intimate, and never commercially ...
+              - tooltip "tooltip"
+        - generic [ref=e342]:
+          - link [ref=e344] [cursor=pointer]:
+            - /url: /watch?v=2uSF4FiMhRI&list=RD2uSF4FiMhRI&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e346] [cursor=pointer]:
+            - generic [ref=e347]:
+              - heading "Memphis Minnie, Big Bill Broonzy & Sister Rosetta Tharpe – Strings & Spirit (1938) [Lost Reels] 47 minutes" [level=3] [ref=e349]:
+                - link "Memphis Minnie, Big Bill Broonzy & Sister Rosetta Tharpe – Strings & Spirit (1938) [Lost Reels] 47 minutes" [ref=e350]:
+                  - /url: /watch?v=2uSF4FiMhRI&list=RD2uSF4FiMhRI&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Memphis Minnie, Big Bill Broonzy & Sister Rosetta Tharpe – Strings & Spirit (1938) [Lost Reels]
+              - generic [ref=e353]:
+                - generic [ref=e354]: 99K views
+                - generic [ref=e355]: •5 months ago
+            - generic [ref=e356]:
+              - link "Go to channel RnB Concert IA" [ref=e357]:
+                - /url: /@RnBconcertIA
+              - link "RnB Concert IA" [ref=e362]:
+                - /url: /@RnBconcertIA
+            - generic [ref=e363]:
+              - generic [ref=e364]: Step into the warmth of gospel-blues fusion with Strings & Spirit (1938) [Lost Acoustic Reels], a rare imagined session uniting ...
+              - tooltip "tooltip"
+        - generic [ref=e365]:
+          - generic [ref=e368]:
+            - img [ref=e370]
+            - heading "Shorts" [level=2] [ref=e373]
+          - generic [ref=e374]:
+            - generic [ref=e375]:
+              - generic [ref=e378]:
+                - link [ref=e379] [cursor=pointer]:
+                  - /url: /shorts/ryeTOpAtE0g
+                - generic [ref=e383] [cursor=pointer]:
+                  - 'link "Highlighting Women In Music : Memphis Minnie #blues #womeninmusic #trailblazer #trendsetter" [ref=e384]':
+                    - /url: /shorts/ryeTOpAtE0g
+                  - generic [ref=e385]: 564 views
+                - button "More actions" [ref=e387] [cursor=pointer]
+              - generic [ref=e395]:
+                - link [ref=e396] [cursor=pointer]:
+                  - /url: /shorts/lR_o74rlq1o
+                - generic [ref=e400] [cursor=pointer]:
+                  - link "Memphis Minnie “What’s the Matter with the Mill” Full video on my channel!" [ref=e401]:
+                    - /url: /shorts/lR_o74rlq1o
+                  - generic [ref=e402]: 1K views
+                - button "More actions" [ref=e404] [cursor=pointer]
+            - generic [ref=e410]:
+              - generic [ref=e413]:
+                - link [ref=e414] [cursor=pointer]:
+                  - /url: /shorts/DEwe7tNVY7I
+                - generic [ref=e418] [cursor=pointer]:
+                  - 'link "Crazy Cryin Blues by Memphis Minnie #bluesguitar #rocknroll #memphisminnie" [ref=e419]':
+                    - /url: /shorts/DEwe7tNVY7I
+                  - generic [ref=e420]: 1.8K views
+                - button "More actions" [ref=e422] [cursor=pointer]
+              - generic [ref=e430]:
+                - link [ref=e431] [cursor=pointer]:
+                  - /url: /shorts/XY7-_FekFIU
+                  - img [ref=e436]:
+                    - generic [ref=e437]: New
+                - generic [ref=e438] [cursor=pointer]:
+                  - link "The Silent Crowd | Deep Memphis Blues" [ref=e439]:
+                    - /url: /shorts/XY7-_FekFIU
+                  - generic [ref=e440]: 1.5K views
+                - button "More actions" [ref=e442] [cursor=pointer]
+          - button "Show more" [ref=e451] [cursor=pointer]:
+            - generic [ref=e452]: Show more
+        - generic [ref=e459]:
+          - link [ref=e461] [cursor=pointer]:
+            - /url: /watch?v=69QT4anPrXY&list=RD69QT4anPrXY&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e463] [cursor=pointer]:
+            - generic [ref=e464]:
+              - heading "Me and My Chauffeur Blues by Memphis Minnie 42 seconds" [level=3] [ref=e466]:
+                - link "Me and My Chauffeur Blues by Memphis Minnie 42 seconds" [ref=e467]:
+                  - /url: /watch?v=69QT4anPrXY&list=RD69QT4anPrXY&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Me and My Chauffeur Blues by Memphis Minnie
+              - generic [ref=e470]:
+                - generic [ref=e471]: 1.8K views
+                - generic [ref=e472]: •3 years ago
+            - generic [ref=e473]:
+              - link "Go to channel Guitarclub4you" [ref=e474]:
+                - /url: /@guitarclub4you
+              - link "Guitarclub4you" [ref=e479]:
+                - /url: /@guitarclub4you
+            - generic [ref=e480]:
+              - generic [ref=e481]: Мой Rutube канал - https://rutube.ru/channel/38186973/ Chauffeur Blues" is a song originally recorded by Memphis Minnie as ...
+              - tooltip "tooltip"
+            - img "4K" [ref=e484]:
+              - generic [ref=e485]: 4K
+        - generic [ref=e487]:
+          - link [ref=e489] [cursor=pointer]:
+            - /url: /watch?v=xb6FZThYUYM&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZw%3D%3D
+          - generic [ref=e491] [cursor=pointer]:
+            - generic [ref=e492]:
+              - heading "The Blues Guitar Styles of Memphis Minnie by Del Rey 2 minutes, 20 seconds" [level=3] [ref=e494]:
+                - link "The Blues Guitar Styles of Memphis Minnie by Del Rey 2 minutes, 20 seconds" [ref=e495]:
+                  - /url: /watch?v=xb6FZThYUYM&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZw%3D%3D
+                  - text: The Blues Guitar Styles of Memphis Minnie by Del Rey
+              - generic [ref=e498]:
+                - generic [ref=e499]: 29K views
+                - generic [ref=e500]: •11 years ago
+            - generic [ref=e501]:
+              - link "Go to channel Homespun Music Instruction" [ref=e502]:
+                - /url: /@HomespunMusicInstruction
+              - link "Homespun Music Instruction" [ref=e507]:
+                - /url: /@HomespunMusicInstruction
+            - generic [ref=e508]:
+              - text: Available at - https://homespun.com/shop/hs_teachingmemphisminnie Unlocking Dazzling Songs, Licks and Solos of a Master ...
+              - tooltip "tooltip"
+        - generic [ref=e510]:
+          - link [ref=e512] [cursor=pointer]:
+            - /url: /watch?v=cxNwmaNpn6o&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZw%3D%3D
+          - generic [ref=e514] [cursor=pointer]:
+            - generic [ref=e515]:
+              - heading "Memphis Minnie Killer Diller Blues Lesson by Johnny Burgin 8 minutes, 54 seconds" [level=3] [ref=e517]:
+                - link "Memphis Minnie Killer Diller Blues Lesson by Johnny Burgin 8 minutes, 54 seconds" [ref=e518]:
+                  - /url: /watch?v=cxNwmaNpn6o&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZw%3D%3D
+                  - text: Memphis Minnie Killer Diller Blues Lesson by Johnny Burgin
+              - generic [ref=e521]:
+                - generic [ref=e522]: 764 views
+                - generic [ref=e523]: •4 months ago
+            - generic [ref=e524]:
+              - link "Go to channel Johnny Burgin" [ref=e525]:
+                - /url: /channel/UCEBHvKSv_hMbkfXjyWPlTgQ
+              - generic [ref=e526]:
+                - link "Johnny Burgin" [ref=e530]:
+                  - /url: /channel/UCEBHvKSv_hMbkfXjyWPlTgQ
+                - img "Official Artist Channel" [ref=e533]
+            - generic [ref=e535]:
+              - generic [ref=e536]: On an endless drive from my last CA show in Folsom to Denver CO, I fired up some Memphis Minnie and her Killer Diller Blues ...
+              - tooltip "tooltip"
+        - generic [ref=e538]:
+          - link [ref=e540] [cursor=pointer]:
+            - /url: /watch?v=hHYBZddvfBs&list=RDhHYBZddvfBs&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e542] [cursor=pointer]:
+            - generic [ref=e543]:
+              - heading "Memphis Minnie – Guitar Queen (1935) [Lost Paramount Reels] | Rare Female Delta Blues Vinyl 51 minutes" [level=3] [ref=e545]:
+                - link "Memphis Minnie – Guitar Queen (1935) [Lost Paramount Reels] | Rare Female Delta Blues Vinyl 51 minutes" [ref=e546]:
+                  - /url: /watch?v=hHYBZddvfBs&list=RDhHYBZddvfBs&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Memphis Minnie – Guitar Queen (1935) [Lost Paramount Reels] | Rare Female Delta Blues Vinyl
+              - generic [ref=e549]:
+                - generic [ref=e550]: 325K views
+                - generic [ref=e551]: •5 months ago
+            - generic [ref=e552]:
+              - link "Go to channel RnB Concert IA" [ref=e553]:
+                - /url: /@RnBconcertIA
+              - link "RnB Concert IA" [ref=e558]:
+                - /url: /@RnBconcertIA
+            - generic [ref=e559]:
+              - generic [ref=e560]: Step back into the 1930s Delta with Memphis Minnie – Guitar Queen (1935) [Lost Paramount Reels], an imagined but vivid ...
+              - tooltip "tooltip"
+        - generic [ref=e562]:
+          - link [ref=e564] [cursor=pointer]:
+            - /url: /watch?v=lYMNFmBV8s0&list=RDlYMNFmBV8s0&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e566] [cursor=pointer]:
+            - generic [ref=e567]:
+              - heading "Memphis Minnie – Steel Strings & Whiskey Dreams (1935) | Delta Blues [Rare Paramount Recordings] 35 minutes" [level=3] [ref=e569]:
+                - link "Memphis Minnie – Steel Strings & Whiskey Dreams (1935) | Delta Blues [Rare Paramount Recordings] 35 minutes" [ref=e570]:
+                  - /url: /watch?v=lYMNFmBV8s0&list=RDlYMNFmBV8s0&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Memphis Minnie – Steel Strings & Whiskey Dreams (1935) | Delta Blues [Rare Paramount Recordings]
+              - generic [ref=e573]:
+                - generic [ref=e574]: 155 views
+                - generic [ref=e575]: •4 months ago
+            - generic [ref=e576]:
+              - link "Go to channel Moments of HeartLove" [ref=e577]:
+                - /url: /@MomentsofHeartLove
+              - link "Moments of HeartLove" [ref=e582]:
+                - /url: /@MomentsofHeartLove
+            - generic [ref=e583]:
+              - generic [ref=e584]: Memphis Minnie – Steel Strings & Whiskey Dreams (1935) | Delta Blues [Rare Paramount Recordings] “Steel Strings & Whiskey ...
+              - tooltip "tooltip"
+        - generic [ref=e586]:
+          - link [ref=e588] [cursor=pointer]:
+            - /url: /watch?v=KiRoNuw5x4M&list=RDKiRoNuw5x4M&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e590] [cursor=pointer]:
+            - generic [ref=e591]:
+              - heading "Memphis Minnie - Me And My Chauffeur Blues 2 minutes, 42 seconds" [level=3] [ref=e593]:
+                - link "Memphis Minnie - Me And My Chauffeur Blues 2 minutes, 42 seconds" [ref=e594]:
+                  - /url: /watch?v=KiRoNuw5x4M&list=RDKiRoNuw5x4M&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Memphis Minnie - Me And My Chauffeur Blues
+              - generic [ref=e597]:
+                - generic [ref=e598]: 269K views
+                - generic [ref=e599]: •17 years ago
+            - generic [ref=e600]:
+              - link "Go to channel anthax1202" [ref=e601]:
+                - /url: /@anthax1202
+              - link "anthax1202" [ref=e606]:
+                - /url: /@anthax1202
+            - generic [ref=e607]:
+              - generic [ref=e608]: "Memphis Minnie, vocal, guitar; Little Son Joe, guitar. Recorded: Chicago, Illinois, May 21, 1941."
+              - tooltip "tooltip"
+        - generic [ref=e610]:
+          - link [ref=e612] [cursor=pointer]:
+            - /url: /watch?v=pMNAgmpCJ8c&list=RDpMNAgmpCJ8c&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e614] [cursor=pointer]:
+            - generic [ref=e615]:
+              - heading "Outdoor Blues 3 minutes, 5 seconds" [level=3] [ref=e617]:
+                - link "Outdoor Blues 3 minutes, 5 seconds" [ref=e618]:
+                  - /url: /watch?v=pMNAgmpCJ8c&list=RDpMNAgmpCJ8c&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Outdoor Blues
+              - generic [ref=e622]: 988 views
+            - generic [ref=e623]:
+              - link "Go to channel Memphis Minnie & Kansas Joe - Topic" [ref=e624]:
+                - /url: /channel/UCUCyq9Bi46NYepBZg_TgPSw
+              - link "Memphis Minnie & Kansas Joe - Topic" [ref=e629]:
+                - /url: /channel/UCUCyq9Bi46NYepBZg_TgPSw
+            - generic [ref=e630]:
+              - generic [ref=e631]: Provided to YouTube by The Orchard Enterprises Outdoor Blues · Memphis Minnie & Kansas Joe Memphis Minnie & Kansas Joe ...
+              - tooltip "tooltip"
+        - generic [ref=e633]:
+          - heading "People also watched" [level=2] [ref=e636]:
+            - generic [ref=e638]: People also watched
+          - generic [ref=e640]:
+            - generic [ref=e641]:
+              - generic [ref=e643]:
+                - link [ref=e645] [cursor=pointer]:
+                  - /url: /watch?v=EYtfuipWLxM&list=RDEYtfuipWLxM&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                - generic [ref=e647] [cursor=pointer]:
+                  - generic [ref=e648]:
+                    - heading "This Quiet Voice Inside Me. The Blues Song You’ll Never Forget 6 minutes, 5 seconds" [level=3] [ref=e650]:
+                      - link "This Quiet Voice Inside Me. The Blues Song You’ll Never Forget 6 minutes, 5 seconds" [ref=e651]:
+                        - /url: /watch?v=EYtfuipWLxM&list=RDEYtfuipWLxM&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                        - text: This Quiet Voice Inside Me. The Blues Song You’ll Never Forget
+                    - generic [ref=e654]:
+                      - generic [ref=e655]: 64K views
+                      - generic [ref=e656]: •4 months ago
+                  - generic [ref=e657]:
+                    - link "Go to channel The King's Blues Club" [ref=e658]:
+                      - /url: /channel/UCLmary6-GWJdKHq9ckbKvIw
+                    - generic [ref=e659]:
+                      - link "The King's Blues Club" [ref=e663]:
+                        - /url: /channel/UCLmary6-GWJdKHq9ckbKvIw
+                      - img "Official Artist Channel" [ref=e666]
+                  - generic [ref=e668]:
+                    - generic [ref=e669]: This Quiet Voice Inside Me – The Blues Song You'll Never Forget Step into the heart of timeless blues with This Quiet Voice Inside ...
+                    - tooltip "tooltip"
+                  - img "4K" [ref=e672]:
+                    - generic [ref=e673]: 4K
+              - generic [ref=e675]:
+                - link [ref=e677] [cursor=pointer]:
+                  - /url: /watch?v=yMNhfcvQ3-s&list=RDyMNhfcvQ3-s&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                - generic [ref=e679] [cursor=pointer]:
+                  - generic [ref=e680]:
+                    - heading "\"More Minnie's Blues\" Acoustic Blues Lesson - Memphis Minnie - TAB avl 16 minutes" [level=3] [ref=e682]:
+                      - link "\"More Minnie's Blues\" Acoustic Blues Lesson - Memphis Minnie - TAB avl 16 minutes" [ref=e683]:
+                        - /url: /watch?v=yMNhfcvQ3-s&list=RDyMNhfcvQ3-s&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                        - text: "\"More Minnie's Blues\" Acoustic Blues Lesson - Memphis Minnie - TAB avl"
+                    - generic [ref=e686]:
+                      - generic [ref=e687]: 9.7K views
+                      - generic [ref=e688]: •3 years ago
+                  - generic [ref=e689]:
+                    - link "Go to channel daddystovepipe" [ref=e690]:
+                      - /url: /@daddystovepipe
+                    - link "daddystovepipe" [ref=e695]:
+                      - /url: /@daddystovepipe
+                  - generic [ref=e696]:
+                    - generic [ref=e697]: TAB for this song is available https://www.daddystovepipe.com/free-guitar-lessons---tab-avl.php or the Open G pack ...
+                    - tooltip "tooltip"
+                  - generic [ref=e700]:
+                    - generic [ref=e701]:
+                      - generic [ref=e705]: 4 moments
+                      - button "Tablature | Intro | Verse 3 | Fourth Verse"
+                    - button "More" [ref=e710]
+              - generic [ref=e717]:
+                - link [ref=e719] [cursor=pointer]:
+                  - /url: /watch?v=RJnLSME4Ezc&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZw%3D%3D
+                - generic [ref=e721] [cursor=pointer]:
+                  - generic [ref=e722]:
+                    - heading "Wes Montgomery trick that turns SCALES into JAZZ! 16 minutes" [level=3] [ref=e724]:
+                      - link "Wes Montgomery trick that turns SCALES into JAZZ! 16 minutes" [ref=e725]:
+                        - /url: /watch?v=RJnLSME4Ezc&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZw%3D%3D
+                        - text: Wes Montgomery trick that turns SCALES into JAZZ!
+                    - generic [ref=e728]:
+                      - generic [ref=e729]: 32K views
+                      - generic [ref=e730]: •5 months ago
+                  - generic [ref=e731]:
+                    - link "Go to channel Jazz Guitar Scrapbook" [ref=e732]:
+                      - /url: /@JazzGuitarScrapbook
+                    - link "Jazz Guitar Scrapbook" [ref=e737]:
+                      - /url: /@JazzGuitarScrapbook
+                  - generic [ref=e738]:
+                    - text: Video PDF available HERE https://ko-fi.com/s/116737c5be Gear - 1968 Gibson ES175 into a Boss GT1 (Fender Twin patch) Two ...
+                    - tooltip "tooltip"
+                  - generic [ref=e741]:
+                    - generic [ref=e742]:
+                      - generic [ref=e746]: 7 chapters
+                      - button "Intro | Putting the Dorian scale in thirds | Technique notes | Let's use them on a tune | Applying to other chord qualities | Applying to II-V-I's | Applying to Blue Bossa"
+                    - button "More" [ref=e751]
+              - generic [ref=e758]:
+                - link [ref=e760] [cursor=pointer]:
+                  - /url: /watch?v=Mjtn7quqbTw&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZw%3D%3D
+                - generic [ref=e762] [cursor=pointer]:
+                  - generic [ref=e763]:
+                    - heading "Memphis Minnie Guitar Lesson Looking The World Over Solo 18 minutes" [level=3] [ref=e765]:
+                      - link "Memphis Minnie Guitar Lesson Looking The World Over Solo 18 minutes" [ref=e766]:
+                        - /url: /watch?v=Mjtn7quqbTw&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZw%3D%3D
+                        - text: Memphis Minnie Guitar Lesson Looking The World Over Solo
+                    - generic [ref=e769]:
+                      - generic [ref=e770]: 4.2K views
+                      - generic [ref=e771]: •5 years ago
+                  - generic [ref=e772]:
+                    - link "Go to channel Old School Blues Guitar" [ref=e773]:
+                      - /url: /@OldSchoolBluesGuitar
+                    - link "Old School Blues Guitar" [ref=e778]:
+                      - /url: /@OldSchoolBluesGuitar
+                  - generic [ref=e779]:
+                    - generic [ref=e780]: Lesson TAB https://drive.google.com/file/d/1qNDZUChb_T-4DgMPjkP5ZPtm856LKaZo/view?usp=sharing Old School Blues ...
+                    - tooltip "tooltip"
+                  - generic [ref=e783]:
+                    - generic [ref=e784]:
+                      - generic [ref=e788]: 6 moments
+                      - button "Chord Shapes | Alternating Bass | Introduction | Rhythm | Turnarounds | Solo"
+                    - button "More" [ref=e793]
+            - generic "+6 more" [ref=e800] [cursor=pointer]
+        - generic [ref=e802]:
+          - link [ref=e804] [cursor=pointer]:
+            - /url: /watch?v=WSlt8-fmvas&list=RDWSlt8-fmvas&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e806] [cursor=pointer]:
+            - generic [ref=e807]:
+              - heading "When The Levee Breaks (Album Version) 3 minutes, 9 seconds" [level=3] [ref=e809]:
+                - link "When The Levee Breaks (Album Version) 3 minutes, 9 seconds" [ref=e810]:
+                  - /url: /watch?v=WSlt8-fmvas&list=RDWSlt8-fmvas&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: When The Levee Breaks (Album Version)
+              - generic [ref=e814]: 473K views
+            - generic [ref=e815]:
+              - link "Go to channel Memphis Minnie & Kansas Joe - Topic" [ref=e816]:
+                - /url: /channel/UCUCyq9Bi46NYepBZg_TgPSw
+              - link "Memphis Minnie & Kansas Joe - Topic" [ref=e821]:
+                - /url: /channel/UCUCyq9Bi46NYepBZg_TgPSw
+            - generic [ref=e822]:
+              - generic [ref=e823]: Provided to YouTube by Columbia/Legacy When The Levee Breaks (Album Version) · Memphis Minnie & Kansas Joe Queen Of ...
+              - tooltip "tooltip"
+        - generic [ref=e825]:
+          - link [ref=e827] [cursor=pointer]:
+            - /url: /watch?v=PkZzlOXnWvU&list=RDPkZzlOXnWvU&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e829] [cursor=pointer]:
+            - generic [ref=e830]:
+              - heading "Good Biscuits- Me & my Chauffeur blues (Memphis Minnie) 3 minutes, 13 seconds" [level=3] [ref=e832]:
+                - link "Good Biscuits- Me & my Chauffeur blues (Memphis Minnie) 3 minutes, 13 seconds" [ref=e833]:
+                  - /url: /watch?v=PkZzlOXnWvU&list=RDPkZzlOXnWvU&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Good Biscuits- Me & my Chauffeur blues (Memphis Minnie)
+              - generic [ref=e836]:
+                - generic [ref=e837]: 46K views
+                - generic [ref=e838]: •12 years ago
+            - generic [ref=e839]:
+              - link "Go to channel leonie evans" [ref=e840]:
+                - /url: /@leonieevans
+              - link "leonie evans" [ref=e845]:
+                - /url: /@leonieevans
+            - generic [ref=e846]:
+              - generic [ref=e847]: Leonie Evans & Ben Sayer's version of Memphis Minnie's Me & my chauffeur blues Buy the E.P here.
+              - tooltip "tooltip"
+        - generic [ref=e849]:
+          - link [ref=e851] [cursor=pointer]:
+            - /url: /watch?v=Ee7Vg3kf0yY&list=RDEe7Vg3kf0yY&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e853] [cursor=pointer]:
+            - generic [ref=e854]:
+              - heading "Hoodoo Lady (Album Version) 3 minutes, 3 seconds" [level=3] [ref=e856]:
+                - link "Hoodoo Lady (Album Version) 3 minutes, 3 seconds" [ref=e857]:
+                  - /url: /watch?v=Ee7Vg3kf0yY&list=RDEe7Vg3kf0yY&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Hoodoo Lady (Album Version)
+              - generic [ref=e861]: 78K views
+            - generic [ref=e862]:
+              - link "Go to channel Memphis Minnie - Topic" [ref=e863]:
+                - /url: /channel/UCEDvzPLo0OO7feD5kRv8wpg
+              - link "Memphis Minnie - Topic" [ref=e868]:
+                - /url: /channel/UCEDvzPLo0OO7feD5kRv8wpg
+            - generic [ref=e869]:
+              - generic [ref=e870]: Provided to YouTube by Legacy/Columbia Hoodoo Lady (Album Version) · Memphis Minnie · Arthur Crudup Hoodoo Lady ...
+              - tooltip "tooltip"
+        - generic [ref=e872]:
+          - link [ref=e874] [cursor=pointer]:
+            - /url: /watch?v=Yhis33IOXN0&list=RDYhis33IOXN0&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e876] [cursor=pointer]:
+            - generic [ref=e877]:
+              - heading "Memphis Minnie - Hoodoo Lady Blues 3 minutes, 8 seconds" [level=3] [ref=e879]:
+                - link "Memphis Minnie - Hoodoo Lady Blues 3 minutes, 8 seconds" [ref=e880]:
+                  - /url: /watch?v=Yhis33IOXN0&list=RDYhis33IOXN0&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Memphis Minnie - Hoodoo Lady Blues
+              - generic [ref=e883]:
+                - generic [ref=e884]: 723K views
+                - generic [ref=e885]: •17 years ago
+            - generic [ref=e886]:
+              - link "Go to channel outoftouch" [ref=e887]:
+                - /url: /@anglinthemtns
+              - link "outoftouch" [ref=e892]:
+                - /url: /@anglinthemtns
+            - generic [ref=e893]:
+              - text: "Lyrics: Hoodoo Lady, how do you do? They tell me you take a boot and turn it to a brand new shoe But don't put that thing on me ..."
+              - tooltip "tooltip"
+        - generic [ref=e895]:
+          - link [ref=e897] [cursor=pointer]:
+            - /url: /watch?v=3_Z1Nxfzmwc&list=RD3_Z1Nxfzmwc&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e899] [cursor=pointer]:
+            - generic [ref=e900]:
+              - heading "Memphis Minnie Blues – Independent Woman Blues Guitar 39 minutes" [level=3] [ref=e902]:
+                - link "Memphis Minnie Blues – Independent Woman Blues Guitar 39 minutes" [ref=e903]:
+                  - /url: /watch?v=3_Z1Nxfzmwc&list=RD3_Z1Nxfzmwc&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Memphis Minnie Blues – Independent Woman Blues Guitar
+              - generic [ref=e906]:
+                - generic [ref=e907]: 616 views
+                - generic [ref=e908]: •2 months ago
+            - generic [ref=e909]:
+              - link "Go to channel RnB Concert IA" [ref=e910]:
+                - /url: /@RnBconcertIA
+              - link "RnB Concert IA" [ref=e915]:
+                - /url: /@RnBconcertIA
+            - generic [ref=e916]:
+              - generic [ref=e917]: Memphis Minnie – Blues – Independent Woman Blues Guitar Step back into the bold, uncompromising world of early blues with ...
+              - tooltip "tooltip"
+        - generic [ref=e919]:
+          - link [ref=e921] [cursor=pointer]:
+            - /url: /watch?v=xEfxLOJ9yBw&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZw%3D%3D
+          - generic [ref=e923] [cursor=pointer]:
+            - generic [ref=e924]:
+              - 'heading "🎸 Blues Chronicles #17: Memphis Minnie - Guitar History Lesson - Reverend Robert Jones 4 minutes, 3 seconds" [level=3] [ref=e926]':
+                - 'link "🎸 Blues Chronicles #17: Memphis Minnie - Guitar History Lesson - Reverend Robert Jones 4 minutes, 3 seconds" [ref=e927]':
+                  - /url: /watch?v=xEfxLOJ9yBw&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZw%3D%3D
+                  - text: "🎸 Blues Chronicles #17: Memphis Minnie - Guitar History Lesson - Reverend Robert Jones"
+              - generic [ref=e930]:
+                - generic [ref=e931]: 9.2K views
+                - generic [ref=e932]: •5 years ago
+            - generic [ref=e933]:
+              - link "Go to channel TrueFire" [ref=e934]:
+                - /url: /@TrueFireTV
+              - generic [ref=e935]:
+                - link "TrueFire" [ref=e939]:
+                  - /url: /@TrueFireTV
+                - img "Verified" [ref=e942]
+            - generic [ref=e944]:
+              - generic [ref=e945]: "Rev. Robert Jones' Blues History Courses on TrueFire: https://bit.ly/34FoPgg \"Where the Blues Began\" Channel: ..."
+              - tooltip "tooltip"
+        - generic [ref=e947]:
+          - link [ref=e949] [cursor=pointer]:
+            - /url: /watch?v=9_9GiOv1Z4k&list=RD9_9GiOv1Z4k&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e951] [cursor=pointer]:
+            - generic [ref=e952]:
+              - heading "Drunken Barrelhouse Blues - Memphis Minnie - LESSON AVAILABLE (TEACHING VIDEO & TABLATURE) 3 minutes, 37 seconds" [level=3] [ref=e954]:
+                - link "Drunken Barrelhouse Blues - Memphis Minnie - LESSON AVAILABLE (TEACHING VIDEO & TABLATURE) 3 minutes, 37 seconds" [ref=e955]:
+                  - /url: /watch?v=9_9GiOv1Z4k&list=RD9_9GiOv1Z4k&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: Drunken Barrelhouse Blues - Memphis Minnie - LESSON AVAILABLE (TEACHING VIDEO & TABLATURE)
+              - generic [ref=e958]:
+                - generic [ref=e959]: 5.1K views
+                - generic [ref=e960]: •11 months ago
+            - generic [ref=e961]:
+              - link "Go to channel Rainer Brunn - Country Blues Picking" [ref=e962]:
+                - /url: /@rainerbrunn-countrybluespi514
+              - link "Rainer Brunn - Country Blues Picking" [ref=e967]:
+                - /url: /@rainerbrunn-countrybluespi514
+            - generic [ref=e968]:
+              - generic [ref=e969]: "A Memphis Minnie classic LESSON AVAILABLE (TEACHING VIDEO & TABLATURE) please mail to: rainer-brunn@gmx.de if you ..."
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e972]:
+              - generic [ref=e973]: CC
+        - generic [ref=e975]:
+          - link [ref=e977] [cursor=pointer]:
+            - /url: /watch?v=IR_iRjKZplI&list=RDIR_iRjKZplI&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+          - generic [ref=e979] [cursor=pointer]:
+            - generic [ref=e980]:
+              - heading "1930s Vintage Blues Gospel – Memphis Minnie, Big Bill Broonzy & Sister Rosetta Tharpe [Lost Reels] 37 minutes" [level=3] [ref=e982]:
+                - link "1930s Vintage Blues Gospel – Memphis Minnie, Big Bill Broonzy & Sister Rosetta Tharpe [Lost Reels] 37 minutes" [ref=e983]:
+                  - /url: /watch?v=IR_iRjKZplI&list=RDIR_iRjKZplI&start_radio=1&pp=ygUlTWVtcGhpcyBNaW5uaWUgYmx1ZXMgZ3VpdGFyIHJlY29yZGluZ6AHAQ%3D%3D
+                  - text: 1930s Vintage Blues Gospel – Memphis Minnie, Big Bill Broonzy & Sister Rosetta Tharpe [Lost Reels]
+              - generic [ref=e986]:
+                - generic [ref=e987]: 5.1K views
+                - generic [ref=e988]: •4 months ago
+            - generic [ref=e989]:
+              - link "Go to channel Old Chicago Blues" [ref=e990]:
+                - /url: /@oldchicagoblues
+              - link "Old Chicago Blues" [ref=e995]:
+                - /url: /@oldchicagoblues
+            - generic [ref=e996]:
+              - generic [ref=e997]: "oldchicagoblues #electricblues #vintageblues 1930s Vintage Blues Gospel – Memphis Minnie, Big Bill Broonzy & Sister Rosetta ..."
+              - tooltip "tooltip"
+            - generic [ref=e1000]:
+              - generic [ref=e1001]:
+                - generic [ref=e1005]: 10 chapters
+                - button "Lift Me From the Shadows | River of My Soul | Echoes of the Soul | Carry Me Through the Storm | River of Grace | Shine on My Road | River of Light | River of Faith | Light Through the Pines | Walking Through the Light"
+              - button "More" [ref=e1010]

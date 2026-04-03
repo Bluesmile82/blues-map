@@ -1,0 +1,620 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+            - tab "Playlists" [ref=e110] [cursor=pointer]:
+              - generic [ref=e112]: Playlists
+            - tab "Under 4 min" [ref=e119] [cursor=pointer]:
+              - generic [ref=e121]: Under 4 min
+            - tab "4 - 20 min" [ref=e128] [cursor=pointer]:
+              - generic [ref=e130]: 4 - 20 min
+            - tab "Over 20 min" [ref=e137] [cursor=pointer]:
+              - generic [ref=e139]: Over 20 min
+          - button "Next" [ref=e147] [cursor=pointer]
+        - link "About these results" [ref=e156] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e157]: About these results
+        - generic [ref=e164]:
+          - button "Search filters" [ref=e166] [cursor=pointer]:
+            - generic [ref=e167]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e178]:
+        - generic [ref=e180]:
+          - link [ref=e182] [cursor=pointer]:
+            - /url: /watch?v=g_o0hVP4YMs&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl
+          - generic [ref=e184] [cursor=pointer]:
+            - generic [ref=e185]:
+              - heading "Irma Thomas, Soul Queen of New Orleans at FQF 2022 28 seconds" [level=3] [ref=e187]:
+                - link "Irma Thomas, Soul Queen of New Orleans at FQF 2022 28 seconds" [ref=e188]:
+                  - /url: /watch?v=g_o0hVP4YMs&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl
+                  - text: Irma Thomas, Soul Queen of New Orleans at FQF 2022
+              - generic [ref=e191]:
+                - generic [ref=e192]: 1.1K views
+                - generic [ref=e193]: •3 years ago
+            - generic [ref=e194]:
+              - link "Go to channel French Quarter Festivals, Inc." [ref=e195]:
+                - /url: /@fqfest
+              - link "French Quarter Festivals, Inc." [ref=e200]:
+                - /url: /@fqfest
+            - generic [ref=e201]:
+              - generic [ref=e202]: Irma Thomas, Soul Queen of New Orleans performs on the Chevron Stage Friday at FQF 2022.
+              - tooltip "tooltip"
+        - generic [ref=e204]:
+          - link [ref=e206] [cursor=pointer]:
+            - /url: /watch?v=IEjFM7PnvfA&list=RDIEjFM7PnvfA&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e208] [cursor=pointer]:
+            - generic [ref=e209]:
+              - heading "Irma Thomas - Full Concert | Live at North Sea Jazz Festival 2006 1 hour, 5 minutes" [level=3] [ref=e211]:
+                - link "Irma Thomas - Full Concert | Live at North Sea Jazz Festival 2006 1 hour, 5 minutes" [ref=e212]:
+                  - /url: /watch?v=IEjFM7PnvfA&list=RDIEjFM7PnvfA&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Irma Thomas - Full Concert | Live at North Sea Jazz Festival 2006
+              - generic [ref=e215]:
+                - generic [ref=e216]: 6.9K views
+                - generic [ref=e217]: •1 year ago
+            - generic [ref=e218]:
+              - link "Go to channel North Sea Jazz Archive" [ref=e219]:
+                - /url: /@NorthSeaJazzArchive
+              - link "North Sea Jazz Archive" [ref=e225]:
+                - /url: /@NorthSeaJazzArchive
+            - generic [ref=e226]:
+              - generic [ref=e227]: ABOUT Singer Irma Thomas was awarded Soul Queen of New Orleans by the authorities of her birthplace. The fact that her way of ...
+              - tooltip "tooltip"
+        - generic [ref=e229]:
+          - link [ref=e231] [cursor=pointer]:
+            - /url: /watch?v=_JksCmW9iIU&list=RD_JksCmW9iIU&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e233] [cursor=pointer]:
+            - generic [ref=e234]:
+              - heading "Irma Thomas, Live in Porretta 1997.mp4 3 minutes, 17 seconds" [level=3] [ref=e236]:
+                - link "Irma Thomas, Live in Porretta 1997.mp4 3 minutes, 17 seconds" [ref=e237]:
+                  - /url: /watch?v=_JksCmW9iIU&list=RD_JksCmW9iIU&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Irma Thomas, Live in Porretta 1997.mp4
+              - generic [ref=e240]:
+                - generic [ref=e241]: 5K views
+                - generic [ref=e242]: •14 years ago
+            - generic [ref=e243]:
+              - link "Go to channel Porretta Soul Festival" [ref=e244]:
+                - /url: /@PorrettaSoulFestival
+              - link "Porretta Soul Festival" [ref=e250]:
+                - /url: /@PorrettaSoulFestival
+            - generic [ref=e251]:
+              - generic [ref=e252]: "\"It's Raining\" performed by Irma Thomas at Porretta Soul Festival 1997. Michael Toles, Guitar; Dywane Thomas, Bass; Al Gamble, ..."
+              - tooltip "tooltip"
+        - generic [ref=e254]:
+          - link [ref=e256] [cursor=pointer]:
+            - /url: /watch?v=PADUnC4xvuE&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl
+          - generic [ref=e258] [cursor=pointer]:
+            - generic [ref=e259]:
+              - heading "RocKwiz Live @ BluesFest - Irma Thomas 2 minutes, 35 seconds" [level=3] [ref=e261]:
+                - link "RocKwiz Live @ BluesFest - Irma Thomas 2 minutes, 35 seconds" [ref=e262]:
+                  - /url: /watch?v=PADUnC4xvuE&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl
+                  - text: RocKwiz Live @ BluesFest - Irma Thomas
+              - generic [ref=e265]:
+                - generic [ref=e266]: 1.6K views
+                - generic [ref=e267]: •14 years ago
+            - generic [ref=e268]:
+              - link "Go to channel RocKwizLive" [ref=e269]:
+                - /url: /@RocKwizLive
+              - link "RocKwizLive" [ref=e274]:
+                - /url: /@RocKwizLive
+            - generic [ref=e275]:
+              - generic [ref=e276]: The Soul Queen Of New Orleans dropped in as a special surprise guest for one of the RocKwiz Live at BluesFest 2011 shows.
+              - tooltip "tooltip"
+        - generic [ref=e278]:
+          - link [ref=e280] [cursor=pointer]:
+            - /url: /watch?v=NeFYSULpW7s&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl
+          - generic [ref=e282] [cursor=pointer]:
+            - generic [ref=e283]:
+              - 'heading "IRMA THOMAS: THE SOUL QUEEN OF NEW ORLEANS – A CONCERT DOCUMENTARY | LPB 31 seconds" [level=3] [ref=e285]':
+                - 'link "IRMA THOMAS: THE SOUL QUEEN OF NEW ORLEANS – A CONCERT DOCUMENTARY | LPB 31 seconds" [ref=e286]':
+                  - /url: /watch?v=NeFYSULpW7s&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl
+                  - text: "IRMA THOMAS: THE SOUL QUEEN OF NEW ORLEANS – A CONCERT DOCUMENTARY | LPB"
+              - generic [ref=e289]:
+                - generic [ref=e290]: 1.9K views
+                - generic [ref=e291]: •4 years ago
+            - generic [ref=e292]:
+              - link "Go to channel Louisiana Public Broadcasting" [ref=e293]:
+                - /url: /@LPBTV
+              - link "Louisiana Public Broadcasting" [ref=e299]:
+                - /url: /@LPBTV
+            - generic [ref=e300]:
+              - generic [ref=e301]: This captivating one-hour concert documentary highlights the successful life and career of the legendary New Orleans Soul ...
+              - tooltip "tooltip"
+        - generic [ref=e303]:
+          - link [ref=e305] [cursor=pointer]:
+            - /url: /watch?v=MQsHxPzmXlU&list=RDMQsHxPzmXlU&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e307] [cursor=pointer]:
+            - generic [ref=e308]:
+              - heading "Irma Thomas Live at New Orleans Jazz & Heritage Festival 2015 22 minutes" [level=3] [ref=e310]:
+                - link "Irma Thomas Live at New Orleans Jazz & Heritage Festival 2015 22 minutes" [ref=e311]:
+                  - /url: /watch?v=MQsHxPzmXlU&list=RDMQsHxPzmXlU&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Irma Thomas Live at New Orleans Jazz & Heritage Festival 2015
+              - generic [ref=e314]:
+                - generic [ref=e315]: 83K views
+                - generic [ref=e316]: •10 years ago
+            - generic [ref=e317]:
+              - link "Go to channel muzline" [ref=e318]:
+                - /url: /@moozline
+              - link "muzline" [ref=e324]:
+                - /url: /@moozline
+            - generic [ref=e325]:
+              - text: "Track list: 1. It's Raining 2. Time Is On My Side 3. Ruler Of My Heart 4. Back Water Blues 5. You Can Have My Husband 6."
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e328]:
+              - generic [ref=e329]: CC
+        - generic [ref=e331] [cursor=pointer]:
+          - link [ref=e332]:
+            - /url: /watch?v=xA95SUq5uJQ&list=PLuJf0roy5RjG6jSzdJxki9cYwFcBN3PjH
+            - generic [ref=e344]: 22 videos
+          - generic [ref=e347]:
+            - heading "The best of Irma Thomas The Soul Queen of New Orleans" [level=3] [ref=e348]:
+              - link "The best of Irma Thomas The Soul Queen of New Orleans" [ref=e349]:
+                - /url: /watch?v=xA95SUq5uJQ&list=PLuJf0roy5RjG6jSzdJxki9cYwFcBN3PjH
+            - generic [ref=e351]:
+              - generic [ref=e352]:
+                - link "Mark LaFave X Seaman's Institute" [ref=e355]:
+                  - /url: /@marklafavexseamansinstitut3628
+                - generic [ref=e356]: •
+                - link "Playlist" [ref=e358]:
+                  - /url: /@marklafavexseamansinstitut3628
+              - link "Gone · 2:18" [ref=e362]:
+                - /url: /watch?v=xA95SUq5uJQ&list=PLuJf0roy5RjG6jSzdJxki9cYwFcBN3PjH
+              - link "Anyone Who Knows What Love Is (Will Understand) · 3:02" [ref=e365]:
+                - /url: /watch?v=1PjY0rrtWRo&list=PLuJf0roy5RjG6jSzdJxki9cYwFcBN3PjH
+              - link "View full playlist" [ref=e370]:
+                - /url: /playlist?list=PLuJf0roy5RjG6jSzdJxki9cYwFcBN3PjH
+        - generic [ref=e372]:
+          - link [ref=e374] [cursor=pointer]:
+            - /url: /watch?v=wSLx1IDKTfc&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl0gcJCdkKAYcqIYzv
+          - generic [ref=e376] [cursor=pointer]:
+            - generic [ref=e377]:
+              - heading "IRMA THOMAS Live @ T-Club Madrid 26092014 3 minutes, 43 seconds" [level=3] [ref=e379]:
+                - link "IRMA THOMAS Live @ T-Club Madrid 26092014 3 minutes, 43 seconds" [ref=e380]:
+                  - /url: /watch?v=wSLx1IDKTfc&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl0gcJCdkKAYcqIYzv
+                  - text: IRMA THOMAS Live @ T-Club Madrid 26092014
+              - generic [ref=e383]:
+                - generic [ref=e384]: 138 views
+                - generic [ref=e385]: •11 years ago
+            - generic [ref=e386]:
+              - link "Go to channel Antonio Moreno Alvarez" [ref=e387]:
+                - /url: /@wasntborntofollow
+              - link "Antonio Moreno Alvarez" [ref=e392]:
+                - /url: /@wasntborntofollow
+            - generic [ref=e393]:
+              - generic [ref=e394]: Fantastic night with the Queen Of New Orleans Soul, with a backing band of gifted spanish musicians. Well done!
+              - tooltip "tooltip"
+        - generic [ref=e396] [cursor=pointer]:
+          - link [ref=e397]:
+            - /url: /watch?v=0yXpNoEUNjc&list=PLpW5KCMOpmHQlvO_WPif-iCmH3iEoC6XG
+            - generic [ref=e409]: 10 videos
+          - generic [ref=e412]:
+            - heading "Irma Thomas - Soul Queen of New Orleans (Full Album)" [level=3] [ref=e413]:
+              - link "Irma Thomas - Soul Queen of New Orleans (Full Album)" [ref=e414]:
+                - /url: /watch?v=0yXpNoEUNjc&list=PLpW5KCMOpmHQlvO_WPif-iCmH3iEoC6XG
+            - generic [ref=e416]:
+              - generic [ref=e417]:
+                - link "woutpeters" [ref=e420]:
+                  - /url: /@woutpeters
+                - generic [ref=e421]: •
+                - link "Playlist" [ref=e424]:
+                  - /url: /@woutpeters
+              - link "Breakaway · 2:30" [ref=e428]:
+                - /url: /watch?v=0yXpNoEUNjc&list=PLpW5KCMOpmHQlvO_WPif-iCmH3iEoC6XG
+              - link "Hittin' on Nothin' · 2:39" [ref=e431]:
+                - /url: /watch?v=vPDzB1bDqdw&list=PLpW5KCMOpmHQlvO_WPif-iCmH3iEoC6XG
+              - link "View full playlist" [ref=e436]:
+                - /url: /playlist?list=PLpW5KCMOpmHQlvO_WPif-iCmH3iEoC6XG
+        - generic [ref=e437]:
+          - generic [ref=e440]:
+            - img [ref=e442]
+            - heading "Shorts" [level=2] [ref=e445]
+          - generic [ref=e446]:
+            - generic [ref=e447]:
+              - generic [ref=e450]:
+                - link [ref=e451] [cursor=pointer]:
+                  - /url: /shorts/jeH0Ed_cKXg
+                - generic [ref=e455] [cursor=pointer]:
+                  - 'link "Irma Thomas- Soul Queen of New Orleans performs at Jazz Fest 2025! #soul #queen #shorts #singer" [ref=e456]':
+                    - /url: /shorts/jeH0Ed_cKXg
+                  - generic [ref=e457]: 485 views
+                - button "More actions" [ref=e459] [cursor=pointer]
+              - generic [ref=e467]:
+                - link [ref=e468] [cursor=pointer]:
+                  - /url: /shorts/6LXdH8np1dA
+                - generic [ref=e472] [cursor=pointer]:
+                  - link "Larry \"Choo\" Campbell, New Orleans Soul Queen Irma Thomas' legendary drummer" [ref=e473]:
+                    - /url: /shorts/6LXdH8np1dA
+                  - generic [ref=e474]: 996 views
+                - button "More actions" [ref=e476] [cursor=pointer]
+            - generic [ref=e482]:
+              - generic [ref=e485]:
+                - link [ref=e486] [cursor=pointer]:
+                  - /url: /shorts/YR5P01r0mmM
+                - generic [ref=e490] [cursor=pointer]:
+                  - link "Irma Thomas in Take Me to the River New Orleans" [ref=e491]:
+                    - /url: /shorts/YR5P01r0mmM
+                  - generic [ref=e492]: 4.4K views
+                - button "More actions" [ref=e494] [cursor=pointer]
+              - generic [ref=e502]:
+                - link [ref=e503] [cursor=pointer]:
+                  - /url: /shorts/DkaNKvX9YUY
+                - generic [ref=e507] [cursor=pointer]:
+                  - link "Irma Thomas live “Time is On My Side” GretnaFest Gretna, LA 10/8/22" [ref=e508]:
+                    - /url: /shorts/DkaNKvX9YUY
+                  - generic [ref=e509]: 693 views
+                - button "More actions" [ref=e511] [cursor=pointer]
+          - button "Show more" [ref=e520] [cursor=pointer]:
+            - generic [ref=e521]: Show more
+        - generic [ref=e528]:
+          - link [ref=e530] [cursor=pointer]:
+            - /url: /watch?v=2CTAHq0VRVg&list=RD2CTAHq0VRVg&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e532] [cursor=pointer]:
+            - generic [ref=e533]:
+              - heading "Irma Thomas - Wind Beneath My Wings (live 1990) 4 minutes, 40 seconds" [level=3] [ref=e535]:
+                - link "Irma Thomas - Wind Beneath My Wings (live 1990) 4 minutes, 40 seconds" [ref=e536]:
+                  - /url: /watch?v=2CTAHq0VRVg&list=RD2CTAHq0VRVg&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Irma Thomas - Wind Beneath My Wings (live 1990)
+              - generic [ref=e539]:
+                - generic [ref=e540]: 717 views
+                - generic [ref=e541]: •2 years ago
+            - generic [ref=e542]:
+              - link "Go to channel slydogmania" [ref=e543]:
+                - /url: /@slydogmania
+              - link "slydogmania" [ref=e548]:
+                - /url: /@slydogmania
+            - generic [ref=e549]:
+              - generic [ref=e550]: Testament to the greatness of New Orleans singer Irma Thomas that she could take a MOR standard and knock it out of the park, ...
+              - tooltip "tooltip"
+        - generic [ref=e552]:
+          - link [ref=e554] [cursor=pointer]:
+            - /url: /watch?v=dfsd5vrv_mU&list=RDdfsd5vrv_mU&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e556] [cursor=pointer]:
+            - generic [ref=e557]:
+              - heading "Irma Thomas - Full Set - Crescent City Blues & BBQ Festival 2024 55 minutes" [level=3] [ref=e559]:
+                - link "Irma Thomas - Full Set - Crescent City Blues & BBQ Festival 2024 55 minutes" [ref=e560]:
+                  - /url: /watch?v=dfsd5vrv_mU&list=RDdfsd5vrv_mU&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Irma Thomas - Full Set - Crescent City Blues & BBQ Festival 2024
+              - generic [ref=e563]:
+                - generic [ref=e564]: 486 views
+                - generic [ref=e565]: •4 months ago
+            - generic [ref=e566]:
+              - link "Go to channel wwozneworleans" [ref=e567]:
+                - /url: /@wwozneworleans
+              - link "wwozneworleans" [ref=e572]:
+                - /url: /@wwozneworleans
+            - generic [ref=e573]:
+              - text: Livestreamed by WWOZ New Orleans on October 11, 2024.
+              - tooltip "tooltip"
+        - generic [ref=e575]:
+          - link [ref=e577] [cursor=pointer]:
+            - /url: /watch?v=SHTlE7zFPTE&list=RDSHTlE7zFPTE&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e579] [cursor=pointer]:
+            - generic [ref=e580]:
+              - heading "Irma Thomas - Time is on My Side (Live at \"Late Night with Conan O'Brien\", January 5 1999) 3 minutes, 10 seconds" [level=3] [ref=e582]:
+                - link "Irma Thomas - Time is on My Side (Live at \"Late Night with Conan O'Brien\", January 5 1999) 3 minutes, 10 seconds" [ref=e583]:
+                  - /url: /watch?v=SHTlE7zFPTE&list=RDSHTlE7zFPTE&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Irma Thomas - Time is on My Side (Live at "Late Night with Conan O'Brien", January 5 1999)
+              - generic [ref=e586]:
+                - generic [ref=e587]: 3.7K views
+                - generic [ref=e588]: •4 years ago
+            - generic [ref=e589]:
+              - link "Go to channel [redacted]" [ref=e590]:
+                - /url: /@redacted2275
+              - link "[redacted]" [ref=e595]:
+                - /url: /@redacted2275
+            - generic [ref=e596]:
+              - generic [ref=e597]: Recorded live at Studio 6A at NBC, New York, broadcast January 5, 1999. Accompanied by The Max Weinberg 7 band. Irma ...
+              - tooltip "tooltip"
+        - generic [ref=e599]:
+          - heading "People also watched" [level=2] [ref=e602]:
+            - generic [ref=e604]: People also watched
+          - generic [ref=e606]:
+            - generic [ref=e607]:
+              - generic [ref=e609]:
+                - link [ref=e611] [cursor=pointer]:
+                  - /url: /watch?v=ARn51hU0E7U&list=RDARn51hU0E7U&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+                - generic [ref=e613] [cursor=pointer]:
+                  - generic [ref=e614]:
+                    - heading "Irma Thomas - Precious Lord @ Pete Fountain funeral 8/17/16 4 minutes, 8 seconds" [level=3] [ref=e616]:
+                      - link "Irma Thomas - Precious Lord @ Pete Fountain funeral 8/17/16 4 minutes, 8 seconds" [ref=e617]:
+                        - /url: /watch?v=ARn51hU0E7U&list=RDARn51hU0E7U&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+                        - text: Irma Thomas - Precious Lord @ Pete Fountain funeral 8/17/16
+                    - generic [ref=e620]:
+                      - generic [ref=e621]: 8K views
+                      - generic [ref=e622]: •9 years ago
+                  - generic [ref=e623]:
+                    - link "Go to channel Jesse Reeks" [ref=e624]:
+                      - /url: /@JessePiano
+                    - link "Jesse Reeks" [ref=e629]:
+                      - /url: /@JessePiano
+                  - generic [ref=e630]:
+                    - text: Accompanied by Jesse Reeks St. Louis Cathedral, New Orleans 8/17/16.
+                    - tooltip "tooltip"
+              - generic [ref=e632]:
+                - link [ref=e634] [cursor=pointer]:
+                  - /url: /watch?v=WAbT2gI6PDg&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl
+                - generic [ref=e636] [cursor=pointer]:
+                  - generic [ref=e637]:
+                    - heading "Irma Thomas Live at WWOZ 35 minutes" [level=3] [ref=e639]:
+                      - link "Irma Thomas Live at WWOZ 35 minutes" [ref=e640]:
+                        - /url: /watch?v=WAbT2gI6PDg&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl
+                        - text: Irma Thomas Live at WWOZ
+                    - generic [ref=e643]:
+                      - generic [ref=e644]: 2.5K views
+                      - generic [ref=e645]: •1 year ago
+                  - generic [ref=e646]:
+                    - link "Go to channel wwozneworleans" [ref=e647]:
+                      - /url: /@wwozneworleans
+                    - link "wwozneworleans" [ref=e652]:
+                      - /url: /@wwozneworleans
+              - generic [ref=e654]:
+                - link [ref=e656] [cursor=pointer]:
+                  - /url: /watch?v=Nihbljiugyw&list=RDNihbljiugyw&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                - generic [ref=e658] [cursor=pointer]:
+                  - generic [ref=e659]:
+                    - heading "Irma Thomas - \"Wish Someone Would Care\" y final de actuación [Lucerna 16/11/2012] 8 minutes, 2 seconds" [level=3] [ref=e661]:
+                      - link "Irma Thomas - \"Wish Someone Would Care\" y final de actuación [Lucerna 16/11/2012] 8 minutes, 2 seconds" [ref=e662]:
+                        - /url: /watch?v=Nihbljiugyw&list=RDNihbljiugyw&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                        - text: Irma Thomas - "Wish Someone Would Care" y final de actuación [Lucerna 16/11/2012]
+                    - generic [ref=e665]:
+                      - generic [ref=e666]: 8.1K views
+                      - generic [ref=e667]: •13 years ago
+                  - generic [ref=e668]:
+                    - link "Go to channel jorjunkel" [ref=e669]:
+                      - /url: /@jorjunkel
+                    - link "jorjunkel" [ref=e674]:
+                      - /url: /@jorjunkel
+                  - generic [ref=e675]:
+                    - text: The 18th Annual Lucerne Blues Festival.
+                    - tooltip "tooltip"
+              - generic [ref=e677]:
+                - link [ref=e679] [cursor=pointer]:
+                  - /url: /watch?v=hai6t8u7_Xw&list=RDhai6t8u7_Xw&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                - generic [ref=e681] [cursor=pointer]:
+                  - generic [ref=e682]:
+                    - heading "Irma Thomas - Its Raining at 2016 NO Jazz Fest 4 minutes, 7 seconds" [level=3] [ref=e684]:
+                      - link "Irma Thomas - Its Raining at 2016 NO Jazz Fest 4 minutes, 7 seconds" [ref=e685]:
+                        - /url: /watch?v=hai6t8u7_Xw&list=RDhai6t8u7_Xw&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                        - text: Irma Thomas - Its Raining at 2016 NO Jazz Fest
+                    - generic [ref=e688]:
+                      - generic [ref=e689]: 1.6K views
+                      - generic [ref=e690]: •9 years ago
+                  - generic [ref=e691]:
+                    - link "Go to channel Les Berenson MD" [ref=e692]:
+                      - /url: /@lesxango
+                    - link "Les Berenson MD" [ref=e697]:
+                      - /url: /@lesxango
+                  - generic [ref=e698]:
+                    - generic [ref=e699]: Irma Thomas - Its Raining at 2016 NO Jazz Fest Tribute to Allen Toussaint P1020706.
+                    - tooltip "tooltip"
+            - generic "+6 more" [ref=e701] [cursor=pointer]
+        - generic [ref=e703] [cursor=pointer]:
+          - link [ref=e704]:
+            - /url: /watch?v=t8MA6512B0Y&list=PLLWQA99eCfHwVcyQzoidhPkvjvpMk20Ds
+            - generic [ref=e716]: 17 videos
+          - generic [ref=e719]:
+            - 'heading "Irma Thomas - The Soul Queen Of New Orleans: 50th Anniversary Celebration (Full Album)" [level=3] [ref=e720]':
+              - 'link "Irma Thomas - The Soul Queen Of New Orleans: 50th Anniversary Celebration (Full Album)" [ref=e721]':
+                - /url: /watch?v=t8MA6512B0Y&list=PLLWQA99eCfHwVcyQzoidhPkvjvpMk20Ds
+            - generic [ref=e723]:
+              - generic [ref=e724]:
+                - link "iamsurgeon" [ref=e727]:
+                  - /url: /@iamsurgeon
+                - generic [ref=e728]: •
+                - link "Playlist" [ref=e731]:
+                  - /url: /@iamsurgeon
+              - link "Got To Bring It With You · 4:15" [ref=e735]:
+                - /url: /watch?v=t8MA6512B0Y&list=PLLWQA99eCfHwVcyQzoidhPkvjvpMk20Ds
+              - link "Let It Be Me · 3:52" [ref=e738]:
+                - /url: /watch?v=0wH9adZOR-A&list=PLLWQA99eCfHwVcyQzoidhPkvjvpMk20Ds
+              - link "View full playlist" [ref=e743]:
+                - /url: /playlist?list=PLLWQA99eCfHwVcyQzoidhPkvjvpMk20Ds
+        - generic [ref=e745]:
+          - link [ref=e747] [cursor=pointer]:
+            - /url: /watch?v=bb1jlAxfGQs&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl
+          - generic [ref=e749] [cursor=pointer]:
+            - generic [ref=e750]:
+              - heading "What Are Irma Thomas Iconic Performances? - Jazz Music Legends 2 minutes, 41 seconds" [level=3] [ref=e752]:
+                - link "What Are Irma Thomas Iconic Performances? - Jazz Music Legends 2 minutes, 41 seconds" [ref=e753]:
+                  - /url: /watch?v=bb1jlAxfGQs&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl
+                  - text: What Are Irma Thomas Iconic Performances? - Jazz Music Legends
+              - generic [ref=e756]:
+                - generic [ref=e757]: 16 views
+                - generic [ref=e758]: •8 months ago
+            - generic [ref=e759]:
+              - link "Go to channel Jazz Music Legends" [ref=e760]:
+                - /url: /@JazzMusicLegends
+              - link "Jazz Music Legends" [ref=e765]:
+                - /url: /@JazzMusicLegends
+            - generic [ref=e766]:
+              - generic [ref=e767]: What Are Irma Thomas Iconic Performances? Irma Thomas, the "Soul Queen of New Orleans," has captivated audiences with her ...
+              - tooltip "tooltip"
+        - generic [ref=e768]:
+          - generic [ref=e771]:
+            - img [ref=e773]
+            - heading "Shorts" [level=2] [ref=e776]
+          - generic [ref=e777]:
+            - generic [ref=e778]:
+              - generic [ref=e781]:
+                - link [ref=e782] [cursor=pointer]:
+                  - /url: /shorts/9eH-Fn9a7oE
+                - generic [ref=e786] [cursor=pointer]:
+                  - link "Irma Thomas" [ref=e787]:
+                    - /url: /shorts/9eH-Fn9a7oE
+                  - generic [ref=e788]: 43 views
+                - button "More actions" [ref=e790] [cursor=pointer]
+              - generic [ref=e798]:
+                - link [ref=e799] [cursor=pointer]:
+                  - /url: /shorts/BKzFUkigzfI
+                - generic [ref=e803] [cursor=pointer]:
+                  - 'link "🎙Irma Thomas: A Legacy in Soul and Jazz | Newvelle Records Sessions" [ref=e804]':
+                    - /url: /shorts/BKzFUkigzfI
+                  - generic [ref=e805]: 461 views
+                - button "More actions" [ref=e807] [cursor=pointer]
+            - generic [ref=e813]:
+              - generic [ref=e816]:
+                - link [ref=e817] [cursor=pointer]:
+                  - /url: /shorts/wIOEOZoQQpw
+                - generic [ref=e821] [cursor=pointer]:
+                  - 'link "Time Is On My Side - The Rolling Stones & Irma Thomas, #short" [ref=e822]':
+                    - /url: /shorts/wIOEOZoQQpw
+                  - generic [ref=e823]: 1.1K views
+                - button "More actions" [ref=e825] [cursor=pointer]
+              - generic [ref=e833]:
+                - link [ref=e834] [cursor=pointer]:
+                  - /url: /shorts/QPZfz2Kuka8
+                - generic [ref=e838] [cursor=pointer]:
+                  - link "It's Raining" [ref=e839]:
+                    - /url: /shorts/QPZfz2Kuka8
+                  - generic [ref=e840]: 577 views
+                - button "More actions" [ref=e842] [cursor=pointer]
+          - button "Show more" [ref=e851] [cursor=pointer]:
+            - generic [ref=e852]: Show more
+        - generic [ref=e859]:
+          - link [ref=e861] [cursor=pointer]:
+            - /url: /watch?v=ANzr5iCkW6Y&list=RDANzr5iCkW6Y&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e863] [cursor=pointer]:
+            - generic [ref=e864]:
+              - heading "Oh Me Oh My (I'm A Fool For You) (Live At Slim's, San Francisco, CA / 8-30-1990 & 8-31-1990) 5 minutes, 19 seconds" [level=3] [ref=e866]:
+                - link "Oh Me Oh My (I'm A Fool For You) (Live At Slim's, San Francisco, CA / 8-30-1990 & 8-31-1990) 5 minutes, 19 seconds" [ref=e867]:
+                  - /url: /watch?v=ANzr5iCkW6Y&list=RDANzr5iCkW6Y&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Oh Me Oh My (I'm A Fool For You) (Live At Slim's, San Francisco, CA / 8-30-1990 & 8-31-1990)
+              - generic [ref=e871]: 7K views
+            - generic [ref=e872]:
+              - link "Go to channel Irma Thomas - Topic" [ref=e873]:
+                - /url: /channel/UCrR95TR30eRNPu-M5o75p1w
+              - generic [ref=e874]:
+                - link "Irma Thomas" [ref=e878]:
+                  - /url: /channel/UCrR95TR30eRNPu-M5o75p1w
+                - img "Official Artist Channel" [ref=e881]
+            - generic [ref=e883]:
+              - generic [ref=e884]: Provided to YouTube by Universal Music Group Oh Me Oh My (I'm A Fool For You) (Live At Slim's, San Francisco, CA / 8-30-1990 ...
+              - tooltip "tooltip"
+        - generic [ref=e886]:
+          - link [ref=e888] [cursor=pointer]:
+            - /url: /watch?v=gl93Hbd83Yw&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl
+          - generic [ref=e890] [cursor=pointer]:
+            - generic [ref=e891]:
+              - heading "Singing in the French Quarter with Irma Thomas 4 minutes, 2 seconds" [level=3] [ref=e893]:
+                - link "Singing in the French Quarter with Irma Thomas 4 minutes, 2 seconds" [ref=e894]:
+                  - /url: /watch?v=gl93Hbd83Yw&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNl
+                  - text: Singing in the French Quarter with Irma Thomas
+              - generic [ref=e897]:
+                - generic [ref=e898]: 688 views
+                - generic [ref=e899]: •6 years ago
+            - generic [ref=e900]:
+              - link "Go to channel WWLTV" [ref=e901]:
+                - /url: /@wwltv
+              - generic [ref=e902]:
+                - link "WWLTV" [ref=e906]:
+                  - /url: /@wwltv
+                - img "Verified" [ref=e909]
+            - generic [ref=e911]:
+              - generic [ref=e912]: The Soul Queen of New Orleans takes a carriage ride for a New Orleans history tour. Irma Thomas says she was fired twice before ...
+              - tooltip "tooltip"
+            - img "Closed captions" [ref=e915]:
+              - generic [ref=e916]: CC
+        - generic [ref=e918]:
+          - link [ref=e920] [cursor=pointer]:
+            - /url: /watch?v=lb2Ziqql17E&list=RDlb2Ziqql17E&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e922] [cursor=pointer]:
+            - generic [ref=e923]:
+              - heading "Don't Mess With My Man(Live) - Irma Thomas - 1958 3 minutes, 30 seconds" [level=3] [ref=e925]:
+                - link "Don't Mess With My Man(Live) - Irma Thomas - 1958 3 minutes, 30 seconds" [ref=e926]:
+                  - /url: /watch?v=lb2Ziqql17E&list=RDlb2Ziqql17E&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Don't Mess With My Man(Live) - Irma Thomas - 1958
+              - generic [ref=e929]:
+                - generic [ref=e930]: 182 views
+                - generic [ref=e931]: •4 years ago
+            - generic [ref=e932]:
+              - link "Go to channel The Vintage Soul Machine" [ref=e933]:
+                - /url: /@thevintagesoulmachine6965
+              - link "The Vintage Soul Machine" [ref=e938]:
+                - /url: /@thevintagesoulmachine6965
+            - generic [ref=e939]:
+              - generic [ref=e940]: This live performance by Irma Thomas was included on the 1978 LP, titled, The Soul Queen Of New Orleans. She kicked off her ...
+              - tooltip "tooltip"
+        - generic [ref=e942]:
+          - link [ref=e944] [cursor=pointer]:
+            - /url: /watch?v=OoPJk-5Yw8k&list=RDOoPJk-5Yw8k&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+          - generic [ref=e946] [cursor=pointer]:
+            - generic [ref=e947]:
+              - heading "Irma Thomas | Live at NOLA Funk Fest 2023 54 minutes" [level=3] [ref=e949]:
+                - link "Irma Thomas | Live at NOLA Funk Fest 2023 54 minutes" [ref=e950]:
+                  - /url: /watch?v=OoPJk-5Yw8k&list=RDOoPJk-5Yw8k&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB0gcJCdkKAYcqIYzv
+                  - text: Irma Thomas | Live at NOLA Funk Fest 2023
+              - generic [ref=e953]:
+                - generic [ref=e954]: 499 views
+                - generic [ref=e955]: •1 year ago
+            - generic [ref=e956]:
+              - link "Go to channel Louisiana Music & Heritage Experience" [ref=e957]:
+                - /url: /@LMHE_Live
+              - link "Louisiana Music & Heritage Experience" [ref=e962]:
+                - /url: /@LMHE_Live
+        - generic [ref=e964]:
+          - link [ref=e966] [cursor=pointer]:
+            - /url: /watch?v=WjSZUcV0Yc8&list=RDWjSZUcV0Yc8&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e968] [cursor=pointer]:
+            - generic [ref=e969]:
+              - heading "Irma Thomas ⭐ Soul Queen of New Orleans ⭐ Ruler of My Heart⭐ ((*1978*)) 2 minutes, 46 seconds" [level=3] [ref=e971]:
+                - link "Irma Thomas ⭐ Soul Queen of New Orleans ⭐ Ruler of My Heart⭐ ((*1978*)) 2 minutes, 46 seconds" [ref=e972]:
+                  - /url: /watch?v=WjSZUcV0Yc8&list=RDWjSZUcV0Yc8&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Irma Thomas ⭐ Soul Queen of New Orleans ⭐ Ruler of My Heart⭐ ((*1978*))
+              - generic [ref=e975]:
+                - generic [ref=e976]: 73 views
+                - generic [ref=e977]: •2 years ago
+            - generic [ref=e978]:
+              - link "Go to channel Entre2Blues" [ref=e979]:
+                - /url: /@gege55
+              - link "Entre2Blues" [ref=e984]:
+                - /url: /@gege55
+            - generic [ref=e985]:
+              - generic [ref=e986]: lbum.........Soul Queen Of New Orleans.........⭐1978.
+              - tooltip "tooltip"
+        - generic [ref=e988]:
+          - link [ref=e990] [cursor=pointer]:
+            - /url: /watch?v=oFVJbPjODcY&list=RDoFVJbPjODcY&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+          - generic [ref=e992] [cursor=pointer]:
+            - generic [ref=e993]:
+              - heading "Irma Thomas, \"Didn't It Rain\" (New Orleans 2016) 3 minutes, 16 seconds" [level=3] [ref=e995]:
+                - link "Irma Thomas, \"Didn't It Rain\" (New Orleans 2016) 3 minutes, 16 seconds" [ref=e996]:
+                  - /url: /watch?v=oFVJbPjODcY&list=RDoFVJbPjODcY&start_radio=1&pp=ygUnSXJtYSBUaG9tYXMgc291bCBxdWVlbiBsaXZlIHBlcmZvcm1hbmNloAcB
+                  - text: Irma Thomas, "Didn't It Rain" (New Orleans 2016)
+              - generic [ref=e999]:
+                - generic [ref=e1000]: 366 views
+                - generic [ref=e1001]: •9 years ago
+            - generic [ref=e1002]:
+              - link "Go to channel LJSimon" [ref=e1003]:
+                - /url: /@ljsimon780
+              - link "LJSimon" [ref=e1008]:
+                - /url: /@ljsimon780
+            - generic [ref=e1009]:
+              - generic [ref=e1010]: The great Irma Thomas, "the soul Queen of New Orleans," started performing as early as 1975 at Jazzfest, and for the last 10 ...
+              - tooltip "tooltip"

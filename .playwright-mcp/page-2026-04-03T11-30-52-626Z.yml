@@ -1,0 +1,719 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - generic [ref=e13]:
+          - link "YouTube Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e19]:
+              - img
+          - generic [ref=e20]: ES
+        - button "Skip navigation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Skip navigation
+      - button "Search" [ref=e31] [cursor=pointer]:
+        - generic [ref=e34]:
+          - img
+        - tooltip "tooltip"
+      - generic [ref=e36]:
+        - button "Settings" [ref=e41] [cursor=pointer]
+        - link "Sign in" [ref=e45] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DNat%252BKing%252BCole%252Blive%252Bperformance%252Btelevision&hl=en&ec=65620
+          - generic [ref=e48]: Sign in
+  - generic [ref=e52]:
+    - main [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e56]:
+          - generic [ref=e59]:
+            - tablist [ref=e61]:
+              - tab "All" [selected] [ref=e65] [cursor=pointer]:
+                - generic [ref=e67]: All
+              - tab "Shorts" [ref=e74] [cursor=pointer]:
+                - generic [ref=e76]: Shorts
+              - tab "Videos" [ref=e83] [cursor=pointer]:
+                - generic [ref=e85]: Videos
+              - tab "Unwatched" [ref=e92] [cursor=pointer]:
+                - generic [ref=e94]: Unwatched
+              - tab "Watched" [ref=e101] [cursor=pointer]:
+                - generic [ref=e103]: Watched
+              - tab "Recently uploaded" [ref=e110] [cursor=pointer]:
+                - generic [ref=e112]: Recently uploaded
+              - tab "Live" [ref=e119] [cursor=pointer]:
+                - generic [ref=e121]: Live
+              - tab "Playlists" [ref=e128] [cursor=pointer]:
+                - generic [ref=e130]: Playlists
+            - button "Next" [ref=e138] [cursor=pointer]
+          - link "About these results" [ref=e147] [cursor=pointer]:
+            - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+            - generic [ref=e148]: About these results
+          - generic [ref=e155]:
+            - button "Search filters" [ref=e157] [cursor=pointer]:
+              - generic [ref=e158]: Filters
+            - tooltip "tooltip"
+        - generic [ref=e169]:
+          - generic [ref=e171]:
+            - link [ref=e173] [cursor=pointer]:
+              - /url: /watch?v=9OIimLXLNh0&list=RD9OIimLXLNh0&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+              - img [ref=e175]
+              - img [ref=e178]:
+                - generic [ref=e180]: 47:24
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e181] [cursor=pointer]:
+              - generic [ref=e182]:
+                - generic [ref=e183]:
+                  - 'heading "Nat King Cole: \"An Evening With Nat King Cole\" - LIVE! 47 minutes" [level=3] [ref=e184]':
+                    - 'link "Nat King Cole: \"An Evening With Nat King Cole\" - LIVE! 47 minutes" [ref=e185]':
+                      - /url: /watch?v=9OIimLXLNh0&list=RD9OIimLXLNh0&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                      - text: "Nat King Cole: \"An Evening With Nat King Cole\" - LIVE!"
+                  - button "Action menu" [ref=e189]
+                - generic [ref=e193]:
+                  - generic [ref=e194]: 240K views
+                  - generic [ref=e195]: •9 years ago
+              - generic [ref=e196]:
+                - link "Go to channel New Orlean Jazz-Pub" [ref=e197]:
+                  - /url: /@neworleanjazz-pub9390
+                - link "New Orlean Jazz-Pub" [ref=e203]:
+                  - /url: /@neworleanjazz-pub9390
+              - generic [ref=e204]:
+                - generic [ref=e205]: Here it is the Complete wold famous BBC TV special from 1963 September by Nat King cole in HD resolution. I gave a little high ...
+                - tooltip "tooltip"
+          - generic [ref=e207]:
+            - link [ref=e209] [cursor=pointer]:
+              - /url: /@NatKingColeMusic
+            - link "Nat King Cole Official Artist Channel @NatKingColeMusic•500K subscribers The official YouTube channel of the incomparable Nat King Cole. Managed with the Nat King Cole Estate." [ref=e213] [cursor=pointer]:
+              - /url: /@NatKingColeMusic
+              - generic [ref=e214]:
+                - generic [ref=e215]:
+                  - generic [ref=e218]: Nat King Cole
+                  - img "Official Artist Channel" [ref=e221]
+                - generic [ref=e223]: "@NatKingColeMusic•500K subscribers"
+                - generic [ref=e224]: The official YouTube channel of the incomparable Nat King Cole. Managed with the Nat King Cole Estate.
+          - generic [ref=e226]:
+            - link [ref=e228] [cursor=pointer]:
+              - /url: /watch?v=YrfsxjEKQhg&list=RDYrfsxjEKQhg&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+              - img [ref=e230]
+              - img [ref=e233]:
+                - generic [ref=e235]: 2:21
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e236] [cursor=pointer]:
+              - generic [ref=e237]:
+                - generic [ref=e238]:
+                  - heading "Nat King Cole \"Orange Colored Sky\" on The Ed Sullivan Show 2 minutes, 21 seconds" [level=3] [ref=e239]:
+                    - link "Nat King Cole \"Orange Colored Sky\" on The Ed Sullivan Show 2 minutes, 21 seconds" [ref=e240]:
+                      - /url: /watch?v=YrfsxjEKQhg&list=RDYrfsxjEKQhg&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                      - text: Nat King Cole "Orange Colored Sky" on The Ed Sullivan Show
+                  - button "Action menu" [ref=e244]
+                - generic [ref=e248]:
+                  - generic [ref=e249]: 67K views
+                  - generic [ref=e250]: •11 months ago
+              - generic [ref=e251]:
+                - link "Go to channel The Ed Sullivan Show" [ref=e252]:
+                  - /url: /@TheEdSullivanShow
+                - generic [ref=e254]:
+                  - link "The Ed Sullivan Show" [ref=e258]:
+                    - /url: /@TheEdSullivanShow
+                  - img "Verified" [ref=e261]
+              - generic [ref=e263]:
+                - generic [ref=e264]: "Nat King Cole \"Orange Colored Sky\" on The Ed Sullivan Show, November 5, 1950. Subscribe now to never miss an update: ..."
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e267]:
+                - generic [ref=e268]: CC
+          - generic [ref=e270]:
+            - link [ref=e272] [cursor=pointer]:
+              - /url: /watch?v=HjRostdhqww&list=RDHjRostdhqww&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+              - img [ref=e274]
+              - img [ref=e277]:
+                - generic [ref=e279]: 47:24
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e280] [cursor=pointer]:
+              - generic [ref=e281]:
+                - generic [ref=e282]:
+                  - heading "Nat King Cole // An Evening With Nat King Cole // 1963 47 minutes" [level=3] [ref=e283]:
+                    - link "Nat King Cole // An Evening With Nat King Cole // 1963 47 minutes" [ref=e284]:
+                      - /url: /watch?v=HjRostdhqww&list=RDHjRostdhqww&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                      - text: Nat King Cole // An Evening With Nat King Cole // 1963
+                  - button "Action menu" [ref=e288]
+                - generic [ref=e292]:
+                  - generic [ref=e293]: 38K views
+                  - generic [ref=e294]: •9 years ago
+              - generic [ref=e295]:
+                - link "Go to channel Global Juke" [ref=e296]:
+                  - /url: /@GlobalJuke
+                - link "Global Juke" [ref=e302]:
+                  - /url: /@GlobalJuke
+              - generic [ref=e303]:
+                - text: Join our Discord at https://discord.gg/JREVfva Bandleader - Ted Heath and his Augmented Orchestra Bass - Charlie Harris Drums ...
+                - tooltip "tooltip"
+          - generic [ref=e305]:
+            - link [ref=e307] [cursor=pointer]:
+              - /url: /watch?v=fAGWhVONL2s&list=RDfAGWhVONL2s&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+              - img [ref=e309]
+              - img [ref=e312]:
+                - generic [ref=e314]: 1:10:49
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e315] [cursor=pointer]:
+              - generic [ref=e316]:
+                - generic [ref=e317]:
+                  - heading "Nat King Cole - For Sentimental Reasons - Legends In Concert 1 hour, 10 minutes" [level=3] [ref=e318]:
+                    - link "Nat King Cole - For Sentimental Reasons - Legends In Concert 1 hour, 10 minutes" [ref=e319]:
+                      - /url: /watch?v=fAGWhVONL2s&list=RDfAGWhVONL2s&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                      - text: Nat King Cole - For Sentimental Reasons - Legends In Concert
+                  - button "Action menu" [ref=e323]
+                - generic [ref=e327]:
+                  - generic [ref=e328]: 861K views
+                  - generic [ref=e329]: •13 years ago
+              - generic [ref=e330]:
+                - link "Go to channel onemediamusic" [ref=e331]:
+                  - /url: /@OneMediaMusic
+                - generic [ref=e333]:
+                  - link "onemediamusic" [ref=e337]:
+                    - /url: /@OneMediaMusic
+                  - img "Verified" [ref=e340]
+              - generic [ref=e342]:
+                - generic [ref=e343]: One outstanding performance, including twenty-seven truly great tracks such as 'For Sentimental Reasons,' 'Is You Is Or Is Ain't ...
+                - tooltip "tooltip"
+          - generic [ref=e345]:
+            - link [ref=e347] [cursor=pointer]:
+              - /url: /watch?v=vUdkZIFY-KI&list=RDvUdkZIFY-KI&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+            - generic [ref=e349] [cursor=pointer]:
+              - generic [ref=e350]:
+                - generic [ref=e351]:
+                  - heading "Nat King Cole \"Smile\" on The Ed Sullivan Show 2 minutes, 59 seconds" [level=3] [ref=e352]:
+                    - link "Nat King Cole \"Smile\" on The Ed Sullivan Show 2 minutes, 59 seconds" [ref=e353]:
+                      - /url: /watch?v=vUdkZIFY-KI&list=RDvUdkZIFY-KI&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                      - text: Nat King Cole "Smile" on The Ed Sullivan Show
+                  - button "Action menu" [ref=e357]
+                - generic [ref=e361]:
+                  - generic [ref=e362]: 41K views
+                  - generic [ref=e363]: •11 months ago
+              - generic [ref=e364]:
+                - link "Go to channel The Ed Sullivan Show" [ref=e365]:
+                  - /url: /@TheEdSullivanShow
+                - generic [ref=e367]:
+                  - link "The Ed Sullivan Show" [ref=e371]:
+                    - /url: /@TheEdSullivanShow
+                  - img "Verified" [ref=e374]
+              - generic [ref=e376]:
+                - generic [ref=e377]: "Nat King Cole \"Smile\" on The Ed Sullivan Show, October 31, 1954. Subscribe now to never miss an update: ..."
+                - tooltip "tooltip"
+          - generic [ref=e379]:
+            - link [ref=e381] [cursor=pointer]:
+              - /url: /watch?v=mij5Ac9hArU&list=RDmij5Ac9hArU&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+            - generic [ref=e383] [cursor=pointer]:
+              - generic [ref=e384]:
+                - generic [ref=e385]:
+                  - heading "The Christmas Song (Live Performance) - Nat 'King' Cole 2 minutes, 24 seconds" [level=3] [ref=e386]:
+                    - link "The Christmas Song (Live Performance) - Nat 'King' Cole 2 minutes, 24 seconds" [ref=e387]:
+                      - /url: /watch?v=mij5Ac9hArU&list=RDmij5Ac9hArU&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                      - text: The Christmas Song (Live Performance) - Nat 'King' Cole
+                  - button "Action menu" [ref=e391]
+                - generic [ref=e395]:
+                  - generic [ref=e396]: 142K views
+                  - generic [ref=e397]: •10 years ago
+              - generic [ref=e398]:
+                - link "Go to channel MusicWorks07" [ref=e399]:
+                  - /url: /@FreedomFighter7402
+                - link "MusicWorks07" [ref=e404]:
+                  - /url: /@FreedomFighter7402
+              - generic [ref=e405]:
+                - generic [ref=e406]: Nat 'King' Cole' The Christmas Song...Live Performance!
+                - tooltip "tooltip"
+          - generic [ref=e408] [cursor=pointer]:
+            - link [ref=e409]:
+              - /url: /watch?v=uM4PibmMRfo&list=PLRNsXAQFt02biQCeGGMKLfj_wM8EOPns6
+              - generic [ref=e421]: 19 videos
+            - generic [ref=e424]:
+              - heading "The Nat King Cole Show- Full Episodes" [level=3] [ref=e425]:
+                - link "The Nat King Cole Show- Full Episodes" [ref=e426]:
+                  - /url: /watch?v=uM4PibmMRfo&list=PLRNsXAQFt02biQCeGGMKLfj_wM8EOPns6
+              - generic [ref=e428]:
+                - generic [ref=e429]:
+                  - link "Nat King Cole" [ref=e432]:
+                    - /url: /@NatKingColeMusic
+                  - generic [ref=e433]: •
+                  - link "Playlist" [ref=e436]:
+                    - /url: /@NatKingColeMusic
+                - link "Billy Preston, Peggy King and more on The Nat King Cole Show I FULL Episode S3 Ep. 8 · 27:30" [ref=e440]:
+                  - /url: /watch?v=uM4PibmMRfo&list=PLRNsXAQFt02biQCeGGMKLfj_wM8EOPns6
+                - link "Cab Calloway and Hugh O'Brian on The Nat King Cole Show I FULL Episode S3 Ep. 6 · 29:10" [ref=e443]:
+                  - /url: /watch?v=g4zMg4wKs4Q&list=PLRNsXAQFt02biQCeGGMKLfj_wM8EOPns6
+                - link "View full playlist" [ref=e448]:
+                  - /url: /playlist?list=PLRNsXAQFt02biQCeGGMKLfj_wM8EOPns6
+          - generic [ref=e450]:
+            - link [ref=e452] [cursor=pointer]:
+              - /url: /watch?v=BhgtDsoWf78&list=RDBhgtDsoWf78&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+            - generic [ref=e454] [cursor=pointer]:
+              - generic [ref=e455]:
+                - generic [ref=e456]:
+                  - heading "Nat King Cole \"Tenderly\" 1957 live 2 minutes, 58 seconds" [level=3] [ref=e457]:
+                    - link "Nat King Cole \"Tenderly\" 1957 live 2 minutes, 58 seconds" [ref=e458]:
+                      - /url: /watch?v=BhgtDsoWf78&list=RDBhgtDsoWf78&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                      - text: Nat King Cole "Tenderly" 1957 live
+                  - button "Action menu" [ref=e462]
+                - generic [ref=e466]:
+                  - generic [ref=e467]: 4.4K views
+                  - generic [ref=e468]: •3 years ago
+              - generic [ref=e469]:
+                - link "Go to channel rhythmn" [ref=e470]:
+                  - /url: /@rhythmn747
+                - link "rhythmn" [ref=e475]:
+                  - /url: /@rhythmn747
+              - generic [ref=e476]:
+                - text: Oscar Peterson - piano Ray Brown - bass Barney Kessel - guitar "Tenderly" is a popular song published in 1946 with music by ...
+                - tooltip "tooltip"
+          - generic [ref=e477]:
+            - generic [ref=e480]:
+              - img [ref=e482]
+              - heading "Shorts" [level=2] [ref=e485]
+            - generic [ref=e486]:
+              - generic [ref=e487]:
+                - generic [ref=e490]:
+                  - link [ref=e491] [cursor=pointer]:
+                    - /url: /shorts/aTPylFz7NSc
+                  - generic [ref=e495] [cursor=pointer]:
+                    - link "In 1957, Nat King Cole brought Jazz at the Philharmonic to TV audiences for the very first time" [ref=e496]:
+                      - /url: /shorts/aTPylFz7NSc
+                    - generic [ref=e497]: 8.7K views
+                  - button "More actions" [ref=e499] [cursor=pointer]
+                - generic [ref=e507]:
+                  - link [ref=e508] [cursor=pointer]:
+                    - /url: /shorts/Dpuas76clTo
+                  - generic [ref=e512] [cursor=pointer]:
+                    - 'link "NAT KING COLE LIVE #natkingcole #qwesttv" [ref=e513]':
+                      - /url: /shorts/Dpuas76clTo
+                    - generic [ref=e514]: 4.1K views
+                  - button "More actions" [ref=e516] [cursor=pointer]
+              - generic [ref=e522]:
+                - generic [ref=e525]:
+                  - link [ref=e526] [cursor=pointer]:
+                    - /url: /shorts/ndCAEuMB9T0
+                  - generic [ref=e530] [cursor=pointer]:
+                    - link "Nothing beat's a Nat piano solo 🎹" [ref=e531]:
+                      - /url: /shorts/ndCAEuMB9T0
+                    - generic [ref=e532]: 20K views
+                  - button "More actions" [ref=e534] [cursor=pointer]
+                - generic [ref=e542]:
+                  - link [ref=e543] [cursor=pointer]:
+                    - /url: /shorts/X_a41q8Eh90
+                  - generic [ref=e547] [cursor=pointer]:
+                    - 'link "On This Day - Nat King Cole Debuts on The Ed Sullivan Show 🎶 #shorts" [ref=e548]':
+                      - /url: /shorts/X_a41q8Eh90
+                    - generic [ref=e549]: 18K views
+                  - button "More actions" [ref=e551] [cursor=pointer]
+            - button "Show more" [ref=e560] [cursor=pointer]:
+              - generic [ref=e561]: Show more
+          - generic [ref=e568] [cursor=pointer]:
+            - link [ref=e569]:
+              - /url: /watch?v=1VAFgcMKy7k&list=PL1Lpcnsvs3JHc3HyEmDHISqNrC9KxDP-E
+              - generic [ref=e581]: 175 videos
+            - generic [ref=e584]:
+              - heading "Nat King Cole TV Show" [level=3] [ref=e585]:
+                - link "Nat King Cole TV Show" [ref=e586]:
+                  - /url: /watch?v=1VAFgcMKy7k&list=PL1Lpcnsvs3JHc3HyEmDHISqNrC9KxDP-E
+              - generic [ref=e588]:
+                - generic [ref=e589]:
+                  - link "David Hermann" [ref=e592]:
+                    - /url: /@davidhermann6729
+                  - generic [ref=e593]: •
+                  - link "Playlist" [ref=e596]:
+                    - /url: /@davidhermann6729
+                - 'link "The Nat \"King\" Cole Show - Episode #3.3 (1957) · 25:40" [ref=e600]':
+                  - /url: /watch?v=1VAFgcMKy7k&list=PL1Lpcnsvs3JHc3HyEmDHISqNrC9KxDP-E
+                - link "The Nat \"King\" Cole Show (9/3/1957) · 26:54" [ref=e603]:
+                  - /url: /watch?v=qa501UWIQBM&list=PL1Lpcnsvs3JHc3HyEmDHISqNrC9KxDP-E
+                - link "View full playlist" [ref=e608]:
+                  - /url: /playlist?list=PL1Lpcnsvs3JHc3HyEmDHISqNrC9KxDP-E
+          - generic [ref=e610]:
+            - link [ref=e612] [cursor=pointer]:
+              - /url: /watch?v=_N8fYM_C8is&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb24%3D
+            - generic [ref=e614] [cursor=pointer]:
+              - generic [ref=e615]:
+                - generic [ref=e616]:
+                  - heading "Intro Theme l The Nat King Cole Show 31 seconds" [level=3] [ref=e617]:
+                    - link "Intro Theme l The Nat King Cole Show 31 seconds" [ref=e618]:
+                      - /url: /watch?v=_N8fYM_C8is&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb24%3D
+                      - text: Intro Theme l The Nat King Cole Show
+                  - button "Action menu" [ref=e622]
+                - generic [ref=e626]:
+                  - generic [ref=e627]: 3.9K views
+                  - generic [ref=e628]: •2 years ago
+              - generic [ref=e629]:
+                - link "Go to channel Nat King Cole" [ref=e630]:
+                  - /url: /channel/UCjP351k141Rq881npFWU2-g
+                - generic [ref=e631]:
+                  - link "Nat King Cole" [ref=e635]:
+                    - /url: /channel/UCjP351k141Rq881npFWU2-g
+                  - img "Official Artist Channel" [ref=e638]
+              - generic [ref=e640]:
+                - generic [ref=e641]: The official video for the intro theme of The Nat King Cole Show (January 14, 1957). Watch full episodes from The Nat King Cole ...
+                - tooltip "tooltip"
+          - generic [ref=e643] [cursor=pointer]:
+            - link [ref=e644]:
+              - /url: /watch?v=pB2yxSipvSU&list=PLQWND5qZhbj0VK_Rnr6wqfmjRmoAubzDy
+              - generic [ref=e656]: 38 videos
+            - generic [ref=e659]:
+              - heading "Nat King Cole on The Ed Sullivan Show" [level=3] [ref=e660]:
+                - link "Nat King Cole on The Ed Sullivan Show" [ref=e661]:
+                  - /url: /watch?v=pB2yxSipvSU&list=PLQWND5qZhbj0VK_Rnr6wqfmjRmoAubzDy
+              - generic [ref=e663]:
+                - generic [ref=e664]:
+                  - link "The Ed Sullivan Show" [ref=e667]:
+                    - /url: /@TheEdSullivanShow
+                    - text: The Ed Sullivan Show
+                    - img [ref=e670]
+                  - generic [ref=e671]: •
+                  - link "Playlist" [ref=e674]:
+                    - /url: /@TheEdSullivanShow
+                - link "Nat King Cole \"This Can't Be Love\" on The Ed Sullivan Show · 2:22" [ref=e678]:
+                  - /url: /watch?v=pB2yxSipvSU&list=PLQWND5qZhbj0VK_Rnr6wqfmjRmoAubzDy
+                - link "Nat King Cole \"Tea For Two\" (Instrumental Version) on The Ed Sullivan Show · 2:15" [ref=e681]:
+                  - /url: /watch?v=_0JDhu8JmXI&list=PLQWND5qZhbj0VK_Rnr6wqfmjRmoAubzDy
+                - link "View full playlist" [ref=e686]:
+                  - /url: /playlist?list=PLQWND5qZhbj0VK_Rnr6wqfmjRmoAubzDy
+          - generic [ref=e688]:
+            - heading "People also watched" [level=2] [ref=e691]:
+              - generic [ref=e693]: People also watched
+            - generic [ref=e695]:
+              - generic [ref=e696]:
+                - generic [ref=e698]:
+                  - link [ref=e700] [cursor=pointer]:
+                    - /url: /watch?v=ZXcdcYxMzP4&list=RDZXcdcYxMzP4&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                  - generic [ref=e702] [cursor=pointer]:
+                    - generic [ref=e703]:
+                      - generic [ref=e704]:
+                        - 'heading "The Nat \"king\" Cole Show, Nbc Tv Broadcast, October 15, 1957 - Jazz At The Philharmonic: 10 minutes, 29 seconds" [level=3] [ref=e705]':
+                          - 'link "The Nat \"king\" Cole Show, Nbc Tv Broadcast, October 15, 1957 - Jazz At The Philharmonic: 10 minutes, 29 seconds" [ref=e706]':
+                            - /url: /watch?v=ZXcdcYxMzP4&list=RDZXcdcYxMzP4&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                            - text: "The Nat \"king\" Cole Show, Nbc Tv Broadcast, October 15, 1957 - Jazz At The Philharmonic:"
+                        - button "Action menu" [ref=e710]
+                      - generic [ref=e714]:
+                        - generic [ref=e715]: 16K views
+                        - generic [ref=e716]: •12 years ago
+                    - generic [ref=e717]:
+                      - link "Go to channel 1jazznews" [ref=e718]:
+                        - /url: /@1jazznews
+                      - link "1jazznews" [ref=e723]:
+                        - /url: /@1jazznews
+                    - generic [ref=e724]:
+                      - generic [ref=e725]: "Jazz At The Philharmonic: Illinois Jacquet - Tenor Sax Nat 'King' Cole - Vocals Ray Brown - Bass Roy Eldridge - Trumpet Stan ..."
+                      - tooltip "tooltip"
+                - generic [ref=e727]:
+                  - link [ref=e729] [cursor=pointer]:
+                    - /url: /watch?v=NbdvOZb5DXE&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb24%3D
+                  - generic [ref=e731] [cursor=pointer]:
+                    - generic [ref=e732]:
+                      - generic [ref=e733]:
+                        - heading "Nat King Cole The Mobil Limb show 1963 (deoldify Color) upscaled with topaz video Enchance AI 1 hour, 4 minutes" [level=3] [ref=e734]:
+                          - link "Nat King Cole The Mobil Limb show 1963 (deoldify Color) upscaled with topaz video Enchance AI 1 hour, 4 minutes" [ref=e735]:
+                            - /url: /watch?v=NbdvOZb5DXE&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb24%3D
+                            - text: Nat King Cole The Mobil Limb show 1963 (deoldify Color) upscaled with topaz video Enchance AI
+                        - button "Action menu" [ref=e739]
+                      - generic [ref=e743]:
+                        - generic [ref=e744]: 10K views
+                        - generic [ref=e745]: •6 years ago
+                    - generic [ref=e746]:
+                      - link "Go to channel Vas-Schwarcz Géza" [ref=e747]:
+                        - /url: /@vas-schwarczgeza4894
+                      - link "Vas-Schwarcz Géza" [ref=e752]:
+                        - /url: /@vas-schwarczgeza4894
+                    - generic [ref=e753]:
+                      - generic [ref=e754]: It was Nat's 101'th birthday a few days ago, so for this nice ocation here is the famous Mobil Limb show from Australia recorded ...
+                      - tooltip "tooltip"
+                    - img "4K" [ref=e757]:
+                      - generic [ref=e758]: 4K
+                - generic [ref=e760]:
+                  - link [ref=e762] [cursor=pointer]:
+                    - /url: /watch?v=CxmyG8wNUA0&list=RDCxmyG8wNUA0&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                  - generic [ref=e764] [cursor=pointer]:
+                    - generic [ref=e765]:
+                      - generic [ref=e766]:
+                        - heading "Nat King Cole & Rosemary Clooney & Perry Como Live - Campfire Medley 8 minutes, 52 seconds" [level=3] [ref=e767]:
+                          - link "Nat King Cole & Rosemary Clooney & Perry Como Live - Campfire Medley 8 minutes, 52 seconds" [ref=e768]:
+                            - /url: /watch?v=CxmyG8wNUA0&list=RDCxmyG8wNUA0&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                            - text: Nat King Cole & Rosemary Clooney & Perry Como Live - Campfire Medley
+                        - button "Action menu" [ref=e772]
+                      - generic [ref=e776]:
+                        - generic [ref=e777]: 21K views
+                        - generic [ref=e778]: •8 years ago
+                    - generic [ref=e779]:
+                      - link "Go to channel Cost Ander" [ref=e780]:
+                        - /url: /@CostAnder
+                      - link "Cost Ander" [ref=e785]:
+                        - /url: /@CostAnder
+                    - generic [ref=e786]:
+                      - text: Perry Como's Kraft Music Hall. October 21, 1959. With Gail Davis, Mitchell Ayres Orchestra and The Ray Charles Singers Red ...
+                      - tooltip "tooltip"
+                    - generic [ref=e789]:
+                      - generic [ref=e790]:
+                        - generic [ref=e794]: 8 moments
+                        - button "Red River Valley | I'm An Old Cow-hand | Cielito Lindo | Cattle Call | Tumbling Tumbleweeds | Buffalo Gals | Twilight On The Trail | Git Along Little Dogies"
+                      - button "More" [ref=e799]
+                - generic [ref=e806]:
+                  - link [ref=e808] [cursor=pointer]:
+                    - /url: /watch?v=jbwPKIPVcPw&list=RDjbwPKIPVcPw&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                  - generic [ref=e810] [cursor=pointer]:
+                    - generic [ref=e811]:
+                      - generic [ref=e812]:
+                        - heading "Nat King Cole - Route 66 (Performance Video) 3 minutes, 11 seconds" [level=3] [ref=e813]:
+                          - link "Nat King Cole - Route 66 (Performance Video) 3 minutes, 11 seconds" [ref=e814]:
+                            - /url: /watch?v=jbwPKIPVcPw&list=RDjbwPKIPVcPw&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                            - text: Nat King Cole - Route 66 (Performance Video)
+                        - button "Action menu" [ref=e818]
+                      - generic [ref=e822]:
+                        - generic [ref=e823]: 147K views
+                        - generic [ref=e824]: •4 years ago
+                    - generic [ref=e825]:
+                      - link "Go to channel Cornerstone Recordings" [ref=e826]:
+                        - /url: /@cornerstonerecordingsofficial
+                      - link "Cornerstone Recordings" [ref=e831]:
+                        - /url: /@cornerstonerecordingsofficial
+                    - generic [ref=e832]:
+                      - generic [ref=e833]: Nat King Cole performing Route 66, live with his trio in 1951. A rare performance video in the form of a Studio Telescription ...
+                      - tooltip "tooltip"
+                    - img "4K" [ref=e836]:
+                      - generic [ref=e837]: 4K
+              - generic "+6 more" [ref=e839] [cursor=pointer]
+          - generic [ref=e841]:
+            - link [ref=e843] [cursor=pointer]:
+              - /url: /watch?v=RQIVkKqCb98&list=RDRQIVkKqCb98&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+            - generic [ref=e845] [cursor=pointer]:
+              - generic [ref=e846]:
+                - generic [ref=e847]:
+                  - heading "Nat King Cole \"Just One Of Those Things\" on The Ed Sullivan Show 3 minutes, 35 seconds" [level=3] [ref=e848]:
+                    - link "Nat King Cole \"Just One Of Those Things\" on The Ed Sullivan Show 3 minutes, 35 seconds" [ref=e849]:
+                      - /url: /watch?v=RQIVkKqCb98&list=RDRQIVkKqCb98&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                      - text: Nat King Cole "Just One Of Those Things" on The Ed Sullivan Show
+                  - button "Action menu" [ref=e853]
+                - generic [ref=e857]:
+                  - generic [ref=e858]: 105K views
+                  - generic [ref=e859]: •5 years ago
+              - generic [ref=e860]:
+                - link "Go to channel The Ed Sullivan Show" [ref=e861]:
+                  - /url: /@TheEdSullivanShow
+                - generic [ref=e862]:
+                  - link "The Ed Sullivan Show" [ref=e866]:
+                    - /url: /@TheEdSullivanShow
+                  - img "Verified" [ref=e869]
+              - generic [ref=e871]:
+                - generic [ref=e872]: "Nat King Cole \"Just One Of Those Things\" on The Ed Sullivan Show on June 10, 1956. Subscribe now to never miss an update: ..."
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e875]:
+                - generic [ref=e876]: CC
+          - generic [ref=e878]:
+            - link [ref=e880] [cursor=pointer]:
+              - /url: /watch?v=qyNQrpgZzpk&list=RDqyNQrpgZzpk&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+            - generic [ref=e882] [cursor=pointer]:
+              - generic [ref=e883]:
+                - generic [ref=e884]:
+                  - heading "Nat King Cole \"Pretend & Nature Boy\" on The Ed Sullivan Show 2 minutes, 42 seconds" [level=3] [ref=e885]:
+                    - link "Nat King Cole \"Pretend & Nature Boy\" on The Ed Sullivan Show 2 minutes, 42 seconds" [ref=e886]:
+                      - /url: /watch?v=qyNQrpgZzpk&list=RDqyNQrpgZzpk&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                      - text: Nat King Cole "Pretend & Nature Boy" on The Ed Sullivan Show
+                  - button "Action menu" [ref=e890]
+                - generic [ref=e894]:
+                  - generic [ref=e895]: 10K views
+                  - generic [ref=e896]: •5 years ago
+              - generic [ref=e897]:
+                - link "Go to channel The Ed Sullivan Show" [ref=e898]:
+                  - /url: /@TheEdSullivanShow
+                - generic [ref=e899]:
+                  - link "The Ed Sullivan Show" [ref=e903]:
+                    - /url: /@TheEdSullivanShow
+                  - img "Verified" [ref=e906]
+              - generic [ref=e908]:
+                - generic [ref=e909]: "Nat King Cole \"Pretend & Nature Boy\" on The Ed Sullivan Show on March 7, 1954. Subscribe now to never miss an update: ..."
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e912]:
+                - generic [ref=e913]: CC
+          - generic [ref=e914]:
+            - generic [ref=e917]:
+              - img [ref=e919]
+              - heading "Shorts" [level=2] [ref=e922]
+            - generic [ref=e923]:
+              - generic [ref=e924]:
+                - generic [ref=e927]:
+                  - link [ref=e928] [cursor=pointer]:
+                    - /url: /shorts/KVg_uNCff-4
+                  - generic [ref=e932] [cursor=pointer]:
+                    - link "Nat King Cole - Unforgettable (Live, 1963) | Unforgettable Nat King Cole | Soul Music" [ref=e933]:
+                      - /url: /shorts/KVg_uNCff-4
+                    - generic [ref=e934]: 215K views
+                  - button "More actions" [ref=e936] [cursor=pointer]
+                - generic [ref=e944]:
+                  - link [ref=e945] [cursor=pointer]:
+                    - /url: /shorts/1IT-NsDsmN4
+                  - generic [ref=e949] [cursor=pointer]:
+                    - link "Nat King Cole on The Danny Kaye Show 12/25/1963" [ref=e950]:
+                      - /url: /shorts/1IT-NsDsmN4
+                    - generic [ref=e951]: 6.8K views
+                  - button "More actions" [ref=e953] [cursor=pointer]
+              - generic [ref=e959]:
+                - generic [ref=e962]:
+                  - link [ref=e963] [cursor=pointer]:
+                    - /url: /shorts/np4hYZcY70o
+                  - generic [ref=e967] [cursor=pointer]:
+                    - 'link "Remembering Tony Bennett: A Rare Gem Unearthed from The Nat King Cole Show 🕊️🎶" [ref=e968]':
+                      - /url: /shorts/np4hYZcY70o
+                    - generic [ref=e969]: 37K views
+                  - button "More actions" [ref=e971] [cursor=pointer]
+                - generic [ref=e979]:
+                  - link [ref=e980] [cursor=pointer]:
+                    - /url: /shorts/AuzNrzyDbWg
+                  - generic [ref=e984] [cursor=pointer]:
+                    - 'link "Nat King Cole & Sammy Davis Jr #natkingcole #sammydavisjr #1950s" [ref=e985]':
+                      - /url: /shorts/AuzNrzyDbWg
+                    - generic [ref=e986]: 45K views
+                  - button "More actions" [ref=e988] [cursor=pointer]
+            - button "Show more" [ref=e997] [cursor=pointer]:
+              - generic [ref=e998]: Show more
+          - generic [ref=e1005]:
+            - link [ref=e1007] [cursor=pointer]:
+              - /url: /watch?v=kxSHBIXfFPE&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb24%3D
+            - generic [ref=e1009] [cursor=pointer]:
+              - generic [ref=e1010]:
+                - generic [ref=e1011]:
+                  - heading "11-Year-Old Billy Preston & Nat 'King' Cole - Blueberry Hill 1957.flv 2 minutes, 46 seconds" [level=3] [ref=e1012]:
+                    - link "11-Year-Old Billy Preston & Nat 'King' Cole - Blueberry Hill 1957.flv 2 minutes, 46 seconds" [ref=e1013]:
+                      - /url: /watch?v=kxSHBIXfFPE&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb24%3D
+                      - text: 11-Year-Old Billy Preston & Nat 'King' Cole - Blueberry Hill 1957.flv
+                  - button "Action menu" [ref=e1017]
+                - generic [ref=e1021]:
+                  - generic [ref=e1022]: 728K views
+                  - generic [ref=e1023]: •16 years ago
+              - generic [ref=e1024]:
+                - link "Go to channel davidepilloni1" [ref=e1025]:
+                  - /url: /@davidepilloni1
+                - link "davidepilloni1" [ref=e1030]:
+                  - /url: /@davidepilloni1
+              - generic [ref=e1031]:
+                - generic [ref=e1032]: Young Billy showing his talent with the King.
+                - tooltip "tooltip"
+          - generic [ref=e1034]:
+            - link [ref=e1036] [cursor=pointer]:
+              - /url: /watch?v=0cKXS3fTldQ&list=RD0cKXS3fTldQ&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+            - generic [ref=e1038] [cursor=pointer]:
+              - generic [ref=e1039]:
+                - generic [ref=e1040]:
+                  - heading "Those Lazy Hazy Crazy Days Of Summer - Nat King Cole (LIVE) 3 minutes, 7 seconds" [level=3] [ref=e1041]:
+                    - link "Those Lazy Hazy Crazy Days Of Summer - Nat King Cole (LIVE) 3 minutes, 7 seconds" [ref=e1042]:
+                      - /url: /watch?v=0cKXS3fTldQ&list=RD0cKXS3fTldQ&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                      - text: Those Lazy Hazy Crazy Days Of Summer - Nat King Cole (LIVE)
+                  - button "Action menu" [ref=e1046]
+                - generic [ref=e1050]:
+                  - generic [ref=e1051]: 55K views
+                  - generic [ref=e1052]: •11 years ago
+              - generic [ref=e1053]:
+                - link "Go to channel Stage Film Television" [ref=e1054]:
+                  - /url: /@stagefilmtelevision9
+                - link "Stage Film Television" [ref=e1059]:
+                  - /url: /@stagefilmtelevision9
+              - generic [ref=e1060]:
+                - generic [ref=e1061]: This is an excerpt from the BBC TV special made by Nat King Cole on his last visit to England in 1963 titled "An Evening With Nat ...
+                - tooltip "tooltip"
+          - generic [ref=e1063]:
+            - link [ref=e1065] [cursor=pointer]:
+              - /url: /watch?v=s-UiloYcLYo&list=RDs-UiloYcLYo&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+            - generic [ref=e1067] [cursor=pointer]:
+              - generic [ref=e1068]:
+                - generic [ref=e1069]:
+                  - heading "Nat King Cole appears in an old italian TV show in 1960 9 minutes, 1 second" [level=3] [ref=e1070]:
+                    - link "Nat King Cole appears in an old italian TV show in 1960 9 minutes, 1 second" [ref=e1071]:
+                      - /url: /watch?v=s-UiloYcLYo&list=RDs-UiloYcLYo&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                      - text: Nat King Cole appears in an old italian TV show in 1960
+                  - button "Action menu" [ref=e1075]
+                - generic [ref=e1079]:
+                  - generic [ref=e1080]: 9.5K views
+                  - generic [ref=e1081]: •10 years ago
+              - generic [ref=e1082]:
+                - link "Go to channel Vas-Schwarcz Géza" [ref=e1083]:
+                  - /url: /@vas-schwarczgeza4894
+                - link "Vas-Schwarcz Géza" [ref=e1088]:
+                  - /url: /@vas-schwarczgeza4894
+              - generic [ref=e1089]:
+                - generic [ref=e1090]: Here's an other treasure of Nat King Cole. I used my latest restoring tecnic to make the video quality the best possible. I left the ...
+                - tooltip "tooltip"
+          - generic [ref=e1092]:
+            - link [ref=e1094] [cursor=pointer]:
+              - /url: /watch?v=TV9aNozI1EY&list=RDTV9aNozI1EY&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+            - generic [ref=e1096] [cursor=pointer]:
+              - generic [ref=e1097]:
+                - generic [ref=e1098]:
+                  - heading "Nat King Cole - \"Autumn Leaves\" - LIVE! 3 minutes, 5 seconds" [level=3] [ref=e1099]:
+                    - link "Nat King Cole - \"Autumn Leaves\" - LIVE! 3 minutes, 5 seconds" [ref=e1100]:
+                      - /url: /watch?v=TV9aNozI1EY&list=RDTV9aNozI1EY&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                      - text: Nat King Cole - "Autumn Leaves" - LIVE!
+                  - button "Action menu" [ref=e1104]
+                - generic [ref=e1108]:
+                  - generic [ref=e1109]: 18K views
+                  - generic [ref=e1110]: •9 years ago
+              - generic [ref=e1111]:
+                - link "Go to channel New Orlean Jazz-Pub" [ref=e1112]:
+                  - /url: /@neworleanjazz-pub9390
+                - link "New Orlean Jazz-Pub" [ref=e1117]:
+                  - /url: /@neworleanjazz-pub9390
+              - generic [ref=e1118]:
+                - generic [ref=e1119]: Excerpt from the October 29th, 1957 episode of The Nat King Cole Show. The falling leaves drift by the window The autumn ...
+                - tooltip "tooltip"
+          - generic [ref=e1121]:
+            - link [ref=e1123] [cursor=pointer]:
+              - /url: /watch?v=0M3uR24_V10&list=RD0M3uR24_V10&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwHSBwkJ2QoBhyohjO8%3D
+            - generic [ref=e1125] [cursor=pointer]:
+              - generic [ref=e1126]:
+                - generic [ref=e1127]:
+                  - heading "Nat King Cole - Mona Lisa (Live HD-Technicolor) 2 minutes, 25 seconds" [level=3] [ref=e1128]:
+                    - link "Nat King Cole - Mona Lisa (Live HD-Technicolor) 2 minutes, 25 seconds" [ref=e1129]:
+                      - /url: /watch?v=0M3uR24_V10&list=RD0M3uR24_V10&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwHSBwkJ2QoBhyohjO8%3D
+                      - text: Nat King Cole - Mona Lisa (Live HD-Technicolor)
+                  - button "Action menu" [ref=e1133]
+                - generic [ref=e1137]:
+                  - generic [ref=e1138]: 637K views
+                  - generic [ref=e1139]: •16 years ago
+              - generic [ref=e1140]:
+                - link "Go to channel Richard Valentine" [ref=e1141]:
+                  - /url: /@val058
+                - link "Richard Valentine" [ref=e1146]:
+                  - /url: /@val058
+              - generic [ref=e1147]:
+                - generic [ref=e1148]: Nice rare technicolor clip of Nat king Cole's classic Mona Lisa. Includes a few words from him at the beginning.
+                - tooltip "tooltip"
+          - generic [ref=e1150]:
+            - link [ref=e1152] [cursor=pointer]:
+              - /url: /watch?v=yoFRx_UjV5Y&list=RDyoFRx_UjV5Y&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+            - generic [ref=e1154] [cursor=pointer]:
+              - generic [ref=e1155]:
+                - generic [ref=e1156]:
+                  - heading "Nat King Cole \"Mona Lisa & Too Young\" on The Ed Sullivan Show 2 minutes, 52 seconds" [level=3] [ref=e1157]:
+                    - link "Nat King Cole \"Mona Lisa & Too Young\" on The Ed Sullivan Show 2 minutes, 52 seconds" [ref=e1158]:
+                      - /url: /watch?v=yoFRx_UjV5Y&list=RDyoFRx_UjV5Y&start_radio=1&pp=ygUpTmF0IEtpbmcgQ29sZSBsaXZlIHBlcmZvcm1hbmNlIHRlbGV2aXNpb26gBwE%3D
+                      - text: Nat King Cole "Mona Lisa & Too Young" on The Ed Sullivan Show
+                  - button "Action menu" [ref=e1162]
+                - generic [ref=e1166]:
+                  - generic [ref=e1167]: 18K views
+                  - generic [ref=e1168]: •5 years ago
+              - generic [ref=e1169]:
+                - link "Go to channel The Ed Sullivan Show" [ref=e1170]:
+                  - /url: /@TheEdSullivanShow
+                - generic [ref=e1171]:
+                  - link "The Ed Sullivan Show" [ref=e1175]:
+                    - /url: /@TheEdSullivanShow
+                  - img "Verified" [ref=e1178]
+              - generic [ref=e1180]:
+                - generic [ref=e1181]: "Nat King Cole \"Mona Lisa & Too Young\" on The Ed Sullivan Show on March 7, 1954. Subscribe now to never miss an update: ..."
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e1184]:
+                - generic [ref=e1185]: CC
+    - text: •

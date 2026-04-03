@@ -1,0 +1,791 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - generic [ref=e13]:
+          - link "YouTube Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e19]:
+              - img
+          - generic [ref=e20]: ES
+        - button "Skip navigation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Skip navigation
+      - button "Search" [ref=e31] [cursor=pointer]:
+        - generic [ref=e34]:
+          - img
+        - tooltip "tooltip"
+      - generic [ref=e36]:
+        - button "Settings" [ref=e41] [cursor=pointer]:
+          - generic [ref=e44]:
+            - img
+        - link "Sign in" [ref=e47] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DJimmy%252BYancey%252Bpiano%252Bsolos%252B1939%252Brecording&hl=en&ec=65620
+          - generic [ref=e51]:
+            - img
+          - generic [ref=e52]: Sign in
+  - generic [ref=e56]:
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e60]:
+          - generic [ref=e63]:
+            - tablist [ref=e65]:
+              - tab "All" [selected] [ref=e69] [cursor=pointer]:
+                - generic [ref=e71]: All
+              - tab "Shorts" [ref=e78] [cursor=pointer]:
+                - generic [ref=e80]: Shorts
+              - tab "Videos" [ref=e87] [cursor=pointer]:
+                - generic [ref=e89]: Videos
+              - tab "Unwatched" [ref=e96] [cursor=pointer]:
+                - generic [ref=e98]: Unwatched
+              - tab "Watched" [ref=e105] [cursor=pointer]:
+                - generic [ref=e107]: Watched
+              - tab "Recently uploaded" [ref=e114] [cursor=pointer]:
+                - generic [ref=e116]: Recently uploaded
+              - tab "Live" [ref=e123] [cursor=pointer]:
+                - generic [ref=e125]: Live
+              - tab "Playlists" [ref=e132] [cursor=pointer]:
+                - generic [ref=e134]: Playlists
+            - button "Next" [ref=e142] [cursor=pointer]:
+              - generic [ref=e146]:
+                - img
+          - link "About these results" [ref=e153] [cursor=pointer]:
+            - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+            - generic [ref=e154]: About these results
+            - generic [ref=e158]:
+              - img
+          - generic [ref=e163]:
+            - button "Search filters" [ref=e165] [cursor=pointer]:
+              - generic [ref=e166]: Filters
+              - generic [ref=e170]:
+                - img
+            - tooltip "tooltip"
+        - generic [ref=e179]:
+          - generic [ref=e181] [cursor=pointer]:
+            - link [ref=e182]:
+              - /url: /watch?v=tAKpzsYcds4&list=PLmJ1Z-JlOGArR1ZDWG9g9tlMu8D5vBDad
+              - generic [ref=e192]:
+                - generic [ref=e195]:
+                  - img
+                - generic [ref=e196]: 11 videos
+            - generic [ref=e199]:
+              - heading "Jimmy Yancey Piano Solo Transcriptions" [level=3] [ref=e200]:
+                - link "Jimmy Yancey Piano Solo Transcriptions" [ref=e201]:
+                  - /url: /watch?v=tAKpzsYcds4&list=PLmJ1Z-JlOGArR1ZDWG9g9tlMu8D5vBDad
+              - generic [ref=e203]:
+                - generic [ref=e204]:
+                  - link "BlueBlackJazz" [ref=e207]:
+                    - /url: /@blueblackjazz
+                  - generic [ref=e208]: •
+                  - link "Playlist" [ref=e211]:
+                    - /url: /@blueblackjazz
+                - link "Jimmy Yancey - Beezum Blues | Boogie woogie transcription · 3:26" [ref=e215]:
+                  - /url: /watch?v=tAKpzsYcds4&list=PLmJ1Z-JlOGArR1ZDWG9g9tlMu8D5vBDad
+                - link "Jimmy Yancey - The Mellow Blues | Boogie woogie transcription · 2:44" [ref=e218]:
+                  - /url: /watch?v=Yl-k8RxEWwY&list=PLmJ1Z-JlOGArR1ZDWG9g9tlMu8D5vBDad
+                - link "View full playlist" [ref=e223]:
+                  - /url: /playlist?list=PLmJ1Z-JlOGArR1ZDWG9g9tlMu8D5vBDad
+          - generic [ref=e225]:
+            - link [ref=e227] [cursor=pointer]:
+              - /url: /watch?v=c4eQbeuX2Y0&list=RDc4eQbeuX2Y0&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+              - img [ref=e229]
+              - img [ref=e232]:
+                - generic [ref=e235]:
+                  - img
+                - generic [ref=e236]: 2:48
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e237] [cursor=pointer]:
+              - generic [ref=e238]:
+                - generic [ref=e239]:
+                  - heading "Jimmy Yancey - Yancey Stomp - 1939 2 minutes, 48 seconds" [level=3] [ref=e240]:
+                    - link "Jimmy Yancey - Yancey Stomp - 1939 2 minutes, 48 seconds" [ref=e241]:
+                      - /url: /watch?v=c4eQbeuX2Y0&list=RDc4eQbeuX2Y0&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: Jimmy Yancey - Yancey Stomp - 1939
+                  - button "Action menu" [ref=e245]:
+                    - generic [ref=e248]:
+                      - img
+                - generic [ref=e251]:
+                  - generic [ref=e252]: 97K views
+                  - generic [ref=e253]: •14 years ago
+              - generic [ref=e254]:
+                - link "Go to channel Will Adams" [ref=e255]:
+                  - /url: /@WillAdamsmusic
+                - link "Will Adams" [ref=e261]:
+                  - /url: /@WillAdamsmusic
+              - generic [ref=e262]:
+                - generic [ref=e263]: The fine barrelhouse stylings of Jimmy Yancey Yancey Stomp, 1939 Enjoy!
+                - tooltip "tooltip"
+          - generic [ref=e265]:
+            - link [ref=e267] [cursor=pointer]:
+              - /url: /watch?v=k5jwZH0fws4&list=RDk5jwZH0fws4&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+              - img [ref=e269]
+              - img [ref=e272]:
+                - generic [ref=e275]:
+                  - img
+                - generic [ref=e276]: 3:21
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e277] [cursor=pointer]:
+              - generic [ref=e278]:
+                - generic [ref=e279]:
+                  - heading "Beezum Blues 3 minutes, 21 seconds" [level=3] [ref=e280]:
+                    - link "Beezum Blues 3 minutes, 21 seconds" [ref=e281]:
+                      - /url: /watch?v=k5jwZH0fws4&list=RDk5jwZH0fws4&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+                      - text: Beezum Blues
+                  - button "Action menu" [ref=e285]:
+                    - generic [ref=e288]:
+                      - img
+                - generic [ref=e292]: 489 views
+              - generic [ref=e293]:
+                - link "Go to channel Jimmy Yancey - Topic" [ref=e294]:
+                  - /url: /channel/UCWc7JXx1dsHfl2i5MALJ9uw
+                - link "Jimmy Yancey - Topic" [ref=e300]:
+                  - /url: /channel/UCWc7JXx1dsHfl2i5MALJ9uw
+              - generic [ref=e301]:
+                - generic [ref=e302]: Provided to YouTube by The Orchard Enterprises Beezum Blues · Jimmy Yancey Jimmy Yancey Vol. 1 1939 - 1940 ℗ 1991 ...
+                - tooltip "tooltip"
+          - generic [ref=e304] [cursor=pointer]:
+            - link [ref=e305]:
+              - /url: /watch?v=BUe0q17cON0&list=PLfJndz0utgONLKLAALGVfQ5KFfTxhxomH&pp=0gcJCbkEOCosWNin
+              - generic [ref=e315]:
+                - generic [ref=e318]:
+                  - img
+                - generic [ref=e319]: 63 videos
+            - generic [ref=e322]:
+              - heading "[Jimmy Yancey] Complete Recorded Works" [level=3] [ref=e323]:
+                - link "[Jimmy Yancey] Complete Recorded Works" [ref=e324]:
+                  - /url: /watch?v=BUe0q17cON0&list=PLfJndz0utgONLKLAALGVfQ5KFfTxhxomH&pp=0gcJCbkEOCosWNin
+              - generic [ref=e326]:
+                - generic [ref=e327]:
+                  - link "Donald Fagen" [ref=e330]:
+                    - /url: /@Donald-Fagen
+                  - generic [ref=e331]: •
+                  - link "Playlist" [ref=e334]:
+                    - /url: /@Donald-Fagen
+                - link "Jimmy's Stuff (Jimmy's Stuff No. 2) · 3:21" [ref=e338]:
+                  - /url: /watch?v=BUe0q17cON0&list=PLfJndz0utgONLKLAALGVfQ5KFfTxhxomH&pp=0gcJCRwBOCosWNin
+                - link "The Fives · 3:11" [ref=e341]:
+                  - /url: /watch?v=BfrR2MDdxRE&list=PLfJndz0utgONLKLAALGVfQ5KFfTxhxomH
+                - link "View full playlist" [ref=e346]:
+                  - /url: /playlist?list=PLfJndz0utgONLKLAALGVfQ5KFfTxhxomH
+          - generic [ref=e348]:
+            - link [ref=e350] [cursor=pointer]:
+              - /url: /watch?v=GDlL3HYN2ig&list=RDGDlL3HYN2ig&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+              - img [ref=e352]
+              - img [ref=e355]:
+                - generic [ref=e358]:
+                  - img
+                - generic [ref=e359]: 2:43
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e360] [cursor=pointer]:
+              - generic [ref=e361]:
+                - generic [ref=e362]:
+                  - heading "Rolling The Stone 2 minutes, 43 seconds" [level=3] [ref=e363]:
+                    - link "Rolling The Stone 2 minutes, 43 seconds" [ref=e364]:
+                      - /url: /watch?v=GDlL3HYN2ig&list=RDGDlL3HYN2ig&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: Rolling The Stone
+                  - button "Action menu" [ref=e368]:
+                    - generic [ref=e371]:
+                      - img
+                - generic [ref=e375]: 793 views
+              - generic [ref=e376]:
+                - link "Go to channel Jimmy Yancey - Topic" [ref=e377]:
+                  - /url: /channel/UCWc7JXx1dsHfl2i5MALJ9uw
+                - link "Jimmy Yancey - Topic" [ref=e383]:
+                  - /url: /channel/UCWc7JXx1dsHfl2i5MALJ9uw
+              - generic [ref=e384]:
+                - generic [ref=e385]: Provided to YouTube by The Orchard Enterprises Rolling The Stone · Jimmy Yancey Jimmy Yancey Vol. 1 1939 - 1940 ℗ 1991 ...
+                - tooltip "tooltip"
+          - generic [ref=e387]:
+            - link [ref=e389] [cursor=pointer]:
+              - /url: /watch?v=oPD42C50FwM&list=RDoPD42C50FwM&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+            - generic [ref=e391] [cursor=pointer]:
+              - generic [ref=e392]:
+                - generic [ref=e393]:
+                  - heading "The Fives - Jimmy Yancey piano solo 1939 - 33 LP RIVERSIDE 3 minutes, 1 second" [level=3] [ref=e394]:
+                    - link "The Fives - Jimmy Yancey piano solo 1939 - 33 LP RIVERSIDE 3 minutes, 1 second" [ref=e395]:
+                      - /url: /watch?v=oPD42C50FwM&list=RDoPD42C50FwM&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: The Fives - Jimmy Yancey piano solo 1939 - 33 LP RIVERSIDE
+                  - button "Action menu" [ref=e399]:
+                    - generic [ref=e402]:
+                      - img
+                - generic [ref=e405]:
+                  - generic [ref=e406]: 639 views
+                  - generic [ref=e407]: •8 years ago
+              - generic [ref=e408]:
+                - link "Go to channel carlo simonettic" [ref=e409]:
+                  - /url: /@simonetticarlo150
+                - link "carlo simonettic" [ref=e415]:
+                  - /url: /@simonetticarlo150
+              - generic [ref=e416]:
+                - text: 33 LP RIVERSIDE 12-114 from my Jazz disks collection, bought by me 1959-1961. ''The Fives'' (Hersal and George W. Thomas) ...
+                - tooltip "tooltip"
+          - generic [ref=e418]:
+            - link [ref=e420] [cursor=pointer]:
+              - /url: /watch?v=AtK_hsq86zY&list=RDAtK_hsq86zY&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+            - generic [ref=e422] [cursor=pointer]:
+              - generic [ref=e423]:
+                - generic [ref=e424]:
+                  - heading "Jimmy Yancey - Boodlin' 3 minutes, 8 seconds" [level=3] [ref=e425]:
+                    - link "Jimmy Yancey - Boodlin' 3 minutes, 8 seconds" [ref=e426]:
+                      - /url: /watch?v=AtK_hsq86zY&list=RDAtK_hsq86zY&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: Jimmy Yancey - Boodlin'
+                  - button "Action menu" [ref=e430]:
+                    - generic [ref=e433]:
+                      - img
+                - generic [ref=e436]:
+                  - generic [ref=e437]: 1K views
+                  - generic [ref=e438]: •11 years ago
+              - generic [ref=e439]:
+                - link "Go to channel Pyramid Music Time Machine" [ref=e440]:
+                  - /url: /@pyramidmusictimemachine5547
+                - link "Pyramid Music Time Machine" [ref=e445]:
+                  - /url: /@pyramidmusictimemachine5547
+              - generic [ref=e446]:
+                - generic [ref=e447]: Jimmy Yancey - Complete Recordings (1939-1950) (1991) Join us ---- https://www.facebook.com/groups/pyramidmtm/ and share ...
+                - tooltip "tooltip"
+          - generic [ref=e449] [cursor=pointer]:
+            - link [ref=e450]:
+              - /url: /watch?v=i4AzRawWO6s&list=PLg1Ix2LXxZ0kSd67MrSM9a7XXzyV9k1Mw
+              - generic [ref=e460]:
+                - generic [ref=e463]:
+                  - img
+                - generic [ref=e464]: 20 videos
+            - generic [ref=e467]:
+              - heading "(463) JIMMY YANCEY (1939-1951) - CLICK & LISTEN CHICAGO PIANO BLUES PLAYLIST - COMPILED BY BLUES LEGENDS" [level=3] [ref=e468]:
+                - link "(463) JIMMY YANCEY (1939-1951) - CLICK & LISTEN CHICAGO PIANO BLUES PLAYLIST - COMPILED BY BLUES LEGENDS" [ref=e469]:
+                  - /url: /watch?v=i4AzRawWO6s&list=PLg1Ix2LXxZ0kSd67MrSM9a7XXzyV9k1Mw
+              - generic [ref=e471]:
+                - generic [ref=e472]:
+                  - link "BLUES LEGENDS" [ref=e475]:
+                    - /url: /@BluesLegends-Official
+                  - generic [ref=e476]: •
+                  - link "Playlist" [ref=e479]:
+                    - /url: /@BluesLegends-Official
+                - link "Jimmy Yancey - Beezum Blues · 3:22" [ref=e483]:
+                  - /url: /watch?v=i4AzRawWO6s&list=PLg1Ix2LXxZ0kSd67MrSM9a7XXzyV9k1Mw
+                - link "Steady Rock Blues · 3:01" [ref=e486]:
+                  - /url: /watch?v=L9yiXWke4Ao&list=PLg1Ix2LXxZ0kSd67MrSM9a7XXzyV9k1Mw
+                - link "View full playlist" [ref=e491]:
+                  - /url: /playlist?list=PLg1Ix2LXxZ0kSd67MrSM9a7XXzyV9k1Mw
+          - generic [ref=e493]:
+            - link [ref=e495] [cursor=pointer]:
+              - /url: /watch?v=nNF45BjV7qU&list=RDnNF45BjV7qU&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+            - generic [ref=e497] [cursor=pointer]:
+              - generic [ref=e498]:
+                - generic [ref=e499]:
+                  - heading "Jimmy Yancey - The Mellow Blues (1939) 2 minutes, 48 seconds" [level=3] [ref=e500]:
+                    - link "Jimmy Yancey - The Mellow Blues (1939) 2 minutes, 48 seconds" [ref=e501]:
+                      - /url: /watch?v=nNF45BjV7qU&list=RDnNF45BjV7qU&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: Jimmy Yancey - The Mellow Blues (1939)
+                  - button "Action menu" [ref=e505]:
+                    - generic [ref=e508]:
+                      - img
+                - generic [ref=e511]:
+                  - generic [ref=e512]: 88 views
+                  - generic [ref=e513]: •22 hours ago
+              - generic [ref=e514]:
+                - link "Go to channel Andy LeMaitre" [ref=e515]:
+                  - /url: /@AndyLeMaitre
+                - link "Andy LeMaitre" [ref=e520]:
+                  - /url: /@AndyLeMaitre
+              - generic [ref=e521]:
+                - generic [ref=e522]: Piano solo. Recorded in Chicago on 25th October 1939.
+                - tooltip "tooltip"
+              - img "New" [ref=e525]:
+                - generic [ref=e526]: New
+          - generic [ref=e528]:
+            - link [ref=e530] [cursor=pointer]:
+              - /url: /watch?v=7iUceTla6dA&list=RD7iUceTla6dA&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+            - generic [ref=e532] [cursor=pointer]:
+              - generic [ref=e533]:
+                - generic [ref=e534]:
+                  - heading "Jimmy Yancey - Five O'Clock (1939) 2 minutes, 52 seconds" [level=3] [ref=e535]:
+                    - link "Jimmy Yancey - Five O'Clock (1939) 2 minutes, 52 seconds" [ref=e536]:
+                      - /url: /watch?v=7iUceTla6dA&list=RD7iUceTla6dA&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: Jimmy Yancey - Five O'Clock (1939)
+                  - button "Action menu" [ref=e540]:
+                    - generic [ref=e543]:
+                      - img
+                - generic [ref=e546]:
+                  - generic [ref=e547]: 857 views
+                  - generic [ref=e548]: •11 years ago
+              - generic [ref=e549]:
+                - link "Go to channel Overjazz" [ref=e550]:
+                  - /url: /@overjazzrecords
+                - link "Overjazz" [ref=e555]:
+                  - /url: /@overjazzrecords
+              - generic [ref=e556]:
+                - generic [ref=e557]: Jimmy Yancey - Five O'Clock (1939)- The Overjazz Channel aims to offer only the best recordings of the begining era of modern ...
+                - tooltip "tooltip"
+          - generic [ref=e559]:
+            - link [ref=e561] [cursor=pointer]:
+              - /url: /watch?v=uv8P8yNuVBM&list=RDuv8P8yNuVBM&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+            - generic [ref=e563] [cursor=pointer]:
+              - generic [ref=e564]:
+                - generic [ref=e565]:
+                  - 'heading "Jimmy Yancey, piano solo: \"Yancey Stomp\" (1939) 2 minutes, 48 seconds" [level=3] [ref=e566]':
+                    - 'link "Jimmy Yancey, piano solo: \"Yancey Stomp\" (1939) 2 minutes, 48 seconds" [ref=e567]':
+                      - /url: /watch?v=uv8P8yNuVBM&list=RDuv8P8yNuVBM&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: "Jimmy Yancey, piano solo: \"Yancey Stomp\" (1939)"
+                  - button "Action menu" [ref=e571]:
+                    - generic [ref=e574]:
+                      - img
+                - generic [ref=e577]:
+                  - generic [ref=e578]: 81 views
+                  - generic [ref=e579]: •3 years ago
+              - generic [ref=e580]:
+                - link "Go to channel Annie Van Auken" [ref=e581]:
+                  - /url: /@AnnieVanAuken
+                - link "Annie Van Auken" [ref=e586]:
+                  - /url: /@AnnieVanAuken
+              - generic [ref=e587]:
+                - generic [ref=e588]: "Recorded Oct. 25, 1939 and released June 7, 1940 on shellac RCA VICTOR 78 #26589-B (BS-44006) Reissued in 1989 on vinyl ..."
+                - tooltip "tooltip"
+          - generic [ref=e590]:
+            - link [ref=e592] [cursor=pointer]:
+              - /url: /watch?v=LWeL3cICNsE&list=RDLWeL3cICNsE&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+            - generic [ref=e594] [cursor=pointer]:
+              - generic [ref=e595]:
+                - generic [ref=e596]:
+                  - heading "Jimmy Yancey - The Five (1939) 3 minutes, 8 seconds" [level=3] [ref=e597]:
+                    - link "Jimmy Yancey - The Five (1939) 3 minutes, 8 seconds" [ref=e598]:
+                      - /url: /watch?v=LWeL3cICNsE&list=RDLWeL3cICNsE&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: Jimmy Yancey - The Five (1939)
+                  - button "Action menu" [ref=e602]:
+                    - generic [ref=e605]:
+                      - img
+                - generic [ref=e608]:
+                  - generic [ref=e609]: 338 views
+                  - generic [ref=e610]: •11 years ago
+              - generic [ref=e611]:
+                - link "Go to channel Overjazz" [ref=e612]:
+                  - /url: /@overjazzrecords
+                - link "Overjazz" [ref=e617]:
+                  - /url: /@overjazzrecords
+              - generic [ref=e618]:
+                - generic [ref=e619]: Jimmy Yancey - The Five (1939)
+                - tooltip "tooltip"
+          - generic [ref=e621]:
+            - heading "People also watched" [level=2] [ref=e624]:
+              - generic [ref=e626]: People also watched
+            - generic [ref=e628]:
+              - generic [ref=e629]:
+                - generic [ref=e631]:
+                  - link [ref=e633] [cursor=pointer]:
+                    - /url: /watch?v=ksdET04mov0&list=RDksdET04mov0&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                  - generic [ref=e635] [cursor=pointer]:
+                    - generic [ref=e636]:
+                      - generic [ref=e637]:
+                        - heading "Ethan Leinwand • Live Concert • Jimmy Yancey, Professor Longhair & more 25 minutes" [level=3] [ref=e638]:
+                          - link "Ethan Leinwand • Live Concert • Jimmy Yancey, Professor Longhair & more 25 minutes" [ref=e639]:
+                            - /url: /watch?v=ksdET04mov0&list=RDksdET04mov0&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                            - text: Ethan Leinwand • Live Concert • Jimmy Yancey, Professor Longhair & more
+                        - button "Action menu" [ref=e643]:
+                          - generic [ref=e646]:
+                            - img
+                      - generic [ref=e649]:
+                        - generic [ref=e650]: 9.5K views
+                        - generic [ref=e651]: •3 years ago
+                    - generic [ref=e652]:
+                      - link "Go to channel Ethan Leinwand" [ref=e653]:
+                        - /url: /@EthanLeinwand
+                      - link "Ethan Leinwand" [ref=e658]:
+                        - /url: /@EthanLeinwand
+                    - generic [ref=e659]:
+                      - generic [ref=e660]: Performance from a blues and boogie-woogie piano concert at the The Focal Point in St. Louis, MO. 0:00:00 - State Street Special ...
+                      - tooltip "tooltip"
+                    - img "4K" [ref=e663]:
+                      - generic [ref=e664]: 4K
+                    - generic [ref=e667]:
+                      - generic [ref=e668]:
+                        - generic [ref=e672]: 6 chapters
+                        - button "State Street Special by Jimmy Yancey | Tipitina by Professor Longhair | Improvisation in Eb | 31 Blues by Bob Call | Yancey Stomp by Jimmy Yancey | Deep Morgan Blues by Henry Brown"
+                      - button "More" [ref=e677]:
+                        - generic [ref=e681]:
+                          - img
+                - generic [ref=e686]:
+                  - link [ref=e688] [cursor=pointer]:
+                    - /url: /watch?v=h2iG99ExXlA&list=RDh2iG99ExXlA&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                  - generic [ref=e690] [cursor=pointer]:
+                    - generic [ref=e691]:
+                      - generic [ref=e692]:
+                        - heading "Jimmy Yancey boogie Mix 16 minutes" [level=3] [ref=e693]:
+                          - link "Jimmy Yancey boogie Mix 16 minutes" [ref=e694]:
+                            - /url: /watch?v=h2iG99ExXlA&list=RDh2iG99ExXlA&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                            - text: Jimmy Yancey boogie Mix
+                        - button "Action menu" [ref=e698]:
+                          - generic [ref=e701]:
+                            - img
+                      - generic [ref=e704]:
+                        - generic [ref=e705]: 6.3K views
+                        - generic [ref=e706]: •7 years ago
+                    - generic [ref=e707]:
+                      - link "Go to channel Henk Koster (Drummie Ank)" [ref=e708]:
+                        - /url: /@HenkKosterDrummieAnk
+                      - link "Henk Koster (Drummie Ank)" [ref=e713]:
+                        - /url: /@HenkKosterDrummieAnk
+                - generic [ref=e715]:
+                  - link [ref=e717] [cursor=pointer]:
+                    - /url: /watch?v=JjyISWo3F8M&list=RDJjyISWo3F8M&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                  - generic [ref=e719] [cursor=pointer]:
+                    - generic [ref=e720]:
+                      - generic [ref=e721]:
+                        - heading "35th and Dearborn - Jimmy Yancey 3 minutes, 57 seconds" [level=3] [ref=e722]:
+                          - link "35th and Dearborn - Jimmy Yancey 3 minutes, 57 seconds" [ref=e723]:
+                            - /url: /watch?v=JjyISWo3F8M&list=RDJjyISWo3F8M&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                            - text: 35th and Dearborn - Jimmy Yancey
+                        - button "Action menu" [ref=e727]:
+                          - generic [ref=e730]:
+                            - img
+                      - generic [ref=e733]:
+                        - generic [ref=e734]: 3.7K views
+                        - generic [ref=e735]: •3 years ago
+                    - generic [ref=e736]:
+                      - link "Go to channel Kristian Olsen" [ref=e737]:
+                        - /url: /@kristian_olsen
+                      - link "Kristian Olsen" [ref=e742]:
+                        - /url: /@kristian_olsen
+                    - generic [ref=e743]:
+                      - generic [ref=e744]: You can find the sheet music for this arrangement at http://kristianolsen.org/35thanddearborn. This is my rendition of my favorite ...
+                      - tooltip "tooltip"
+                - generic [ref=e746]:
+                  - link [ref=e748] [cursor=pointer]:
+                    - /url: /watch?v=fn7qV_aV52A&list=RDfn7qV_aV52A&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                  - generic [ref=e750] [cursor=pointer]:
+                    - generic [ref=e751]:
+                      - generic [ref=e752]:
+                        - heading "The Greatness of Jimmy Yancey 9 minutes, 17 seconds" [level=3] [ref=e753]:
+                          - link "The Greatness of Jimmy Yancey 9 minutes, 17 seconds" [ref=e754]:
+                            - /url: /watch?v=fn7qV_aV52A&list=RDfn7qV_aV52A&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                            - text: The Greatness of Jimmy Yancey
+                        - button "Action menu" [ref=e758]:
+                          - generic [ref=e761]:
+                            - img
+                      - generic [ref=e764]:
+                        - generic [ref=e765]: 8.3K views
+                        - generic [ref=e766]: •5 years ago
+                    - generic [ref=e767]:
+                      - link "Go to channel Andria Rogava" [ref=e768]:
+                        - /url: /@AndriaRogava
+                      - link "Andria Rogava" [ref=e773]:
+                        - /url: /@AndriaRogava
+                    - generic [ref=e774]:
+                      - generic [ref=e775]: In this video I combined three numbers from Jimmy Yancey's memorable, final recording session in Chicago, Illinois on July 18, ...
+                      - tooltip "tooltip"
+              - generic "+6 more" [ref=e777] [cursor=pointer]
+          - generic [ref=e779]:
+            - link [ref=e781] [cursor=pointer]:
+              - /url: /watch?v=KCSK5YDm9rw&list=RDKCSK5YDm9rw&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+            - generic [ref=e783] [cursor=pointer]:
+              - generic [ref=e784]:
+                - generic [ref=e785]:
+                  - heading "Jimmy Yancey - Five O'Clock (1939) 2 minutes, 52 seconds" [level=3] [ref=e786]:
+                    - link "Jimmy Yancey - Five O'Clock (1939) 2 minutes, 52 seconds" [ref=e787]:
+                      - /url: /watch?v=KCSK5YDm9rw&list=RDKCSK5YDm9rw&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: Jimmy Yancey - Five O'Clock (1939)
+                  - button "Action menu" [ref=e791]:
+                    - generic [ref=e794]:
+                      - img
+                - generic [ref=e797]:
+                  - generic [ref=e798]: 23 views
+                  - generic [ref=e799]: •11 years ago
+              - generic [ref=e800]:
+                - link "Go to channel Overjazz" [ref=e801]:
+                  - /url: /@overjazzrecords
+                - link "Overjazz" [ref=e806]:
+                  - /url: /@overjazzrecords
+              - generic [ref=e807]:
+                - generic [ref=e808]: Jimmy Yancey - Five O'Clock (1939)
+                - tooltip "tooltip"
+          - generic [ref=e810]:
+            - link [ref=e812] [cursor=pointer]:
+              - /url: /watch?v=UNtBS-5gSnY&list=RDUNtBS-5gSnY&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+            - generic [ref=e814] [cursor=pointer]:
+              - generic [ref=e815]:
+                - generic [ref=e816]:
+                  - heading "Jimmy yancey 17 minutes" [level=3] [ref=e817]:
+                    - link "Jimmy yancey 17 minutes" [ref=e818]:
+                      - /url: /watch?v=UNtBS-5gSnY&list=RDUNtBS-5gSnY&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+                      - text: Jimmy yancey
+                  - button "Action menu" [ref=e822]:
+                    - generic [ref=e825]:
+                      - img
+                - generic [ref=e828]:
+                  - generic [ref=e829]: 119 views
+                  - generic [ref=e830]: •9 years ago
+              - generic [ref=e831]:
+                - link "Go to channel Maniasrock Joeelindio" [ref=e832]:
+                  - /url: /@maniasrockjoeelindio4775
+                - link "Maniasrock Joeelindio" [ref=e837]:
+                  - /url: /@maniasrockjoeelindio4775
+              - generic [ref=e838]:
+                - generic [ref=e839]: maniasrockjoeelindio4775 Mix Jazz Blues Soul Chicago.20.02.1898 X 17.09.1951 01 South side stuff boogie 1939 02 the fives ...
+                - tooltip "tooltip"
+          - generic [ref=e841]:
+            - link [ref=e843] [cursor=pointer]:
+              - /url: /watch?v=IbBh0mMbazw&list=RDIbBh0mMbazw&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+            - generic [ref=e845] [cursor=pointer]:
+              - generic [ref=e846]:
+                - generic [ref=e847]:
+                  - heading "Jimmy Yancey's Best 6 Piano Solos 18 minutes" [level=3] [ref=e848]:
+                    - link "Jimmy Yancey's Best 6 Piano Solos 18 minutes" [ref=e849]:
+                      - /url: /watch?v=IbBh0mMbazw&list=RDIbBh0mMbazw&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: Jimmy Yancey's Best 6 Piano Solos
+                  - button "Action menu" [ref=e853]:
+                    - generic [ref=e856]:
+                      - img
+                - generic [ref=e859]:
+                  - generic [ref=e860]: 20K views
+                  - generic [ref=e861]: •7 years ago
+              - generic [ref=e862]:
+                - link "Go to channel Blues Piano Sheets" [ref=e863]:
+                  - /url: /@BluesPianoSheets
+                - link "Blues Piano Sheets" [ref=e868]:
+                  - /url: /@BluesPianoSheets
+              - generic [ref=e869]:
+                - generic [ref=e870]: "6 of the best piano blues by Jimmy Yancey. Sheet music available at: https://bluespianosheets.com/ plus sheet music from Otis ..."
+                - tooltip "tooltip"
+              - generic [ref=e873]:
+                - generic [ref=e874]:
+                  - generic [ref=e878]: 6 chapters
+                  - button "La Salle Street Breakdown | How Long Blues | Yancey's Bugle Call | Mournful Blues | South Side Stuff | Yancey Special"
+                - button "More" [ref=e883]:
+                  - generic [ref=e887]:
+                    - img
+          - generic [ref=e892]:
+            - link [ref=e894] [cursor=pointer]:
+              - /url: /watch?v=cos1J1eE1W4&list=RDcos1J1eE1W4&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+            - generic [ref=e896] [cursor=pointer]:
+              - generic [ref=e897]:
+                - generic [ref=e898]:
+                  - heading "How Long Blues - Jimmy Yancey 3 minutes, 38 seconds" [level=3] [ref=e899]:
+                    - link "How Long Blues - Jimmy Yancey 3 minutes, 38 seconds" [ref=e900]:
+                      - /url: /watch?v=cos1J1eE1W4&list=RDcos1J1eE1W4&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: How Long Blues - Jimmy Yancey
+                  - button "Action menu" [ref=e904]:
+                    - generic [ref=e907]:
+                      - img
+                - generic [ref=e910]:
+                  - generic [ref=e911]: 32K views
+                  - generic [ref=e912]: •4 years ago
+              - generic [ref=e913]:
+                - link "Go to channel Kristian Olsen" [ref=e914]:
+                  - /url: /@kristian_olsen
+                - link "Kristian Olsen" [ref=e919]:
+                  - /url: /@kristian_olsen
+              - generic [ref=e920]:
+                - generic [ref=e921]: You can find the sheet music for this arrangement at http://kristianolsen.org/yanceyhowlong. This is my rendition of Jimmy ...
+                - tooltip "tooltip"
+          - generic [ref=e923]:
+            - link [ref=e925] [cursor=pointer]:
+              - /url: /watch?v=Cpgpq2T3dqM&list=RDCpgpq2T3dqM&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+            - generic [ref=e927] [cursor=pointer]:
+              - generic [ref=e928]:
+                - generic [ref=e929]:
+                  - heading "Jimmy Yancey - Beezum Blues (1939) 3 minutes, 33 seconds" [level=3] [ref=e930]:
+                    - link "Jimmy Yancey - Beezum Blues (1939) 3 minutes, 33 seconds" [ref=e931]:
+                      - /url: /watch?v=Cpgpq2T3dqM&list=RDCpgpq2T3dqM&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+                      - text: Jimmy Yancey - Beezum Blues (1939)
+                  - button "Action menu" [ref=e935]:
+                    - generic [ref=e938]:
+                      - img
+                - generic [ref=e941]:
+                  - generic [ref=e942]: 1.1K views
+                  - generic [ref=e943]: •11 years ago
+              - generic [ref=e944]:
+                - link "Go to channel Overjazz" [ref=e945]:
+                  - /url: /@overjazzrecords
+                - link "Overjazz" [ref=e950]:
+                  - /url: /@overjazzrecords
+              - generic [ref=e951]:
+                - generic [ref=e952]: Jimmy Yancey - Beezum Blues (1939)- The Overjazz Channel aims to offer only the best recordings of the begining era of modern ...
+                - tooltip "tooltip"
+          - generic [ref=e954]:
+            - link [ref=e956] [cursor=pointer]:
+              - /url: /watch?v=i4AzRawWO6s&list=RDi4AzRawWO6s&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+            - generic [ref=e958] [cursor=pointer]:
+              - generic [ref=e959]:
+                - generic [ref=e960]:
+                  - heading "Jimmy Yancey - Beezum Blues 3 minutes, 22 seconds" [level=3] [ref=e961]:
+                    - link "Jimmy Yancey - Beezum Blues 3 minutes, 22 seconds" [ref=e962]:
+                      - /url: /watch?v=i4AzRawWO6s&list=RDi4AzRawWO6s&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: Jimmy Yancey - Beezum Blues
+                  - button "Action menu" [ref=e966]:
+                    - generic [ref=e969]:
+                      - img
+                - generic [ref=e972]:
+                  - generic [ref=e973]: 3.7K views
+                  - generic [ref=e974]: •11 years ago
+              - generic [ref=e975]:
+                - link "Go to channel Pyramid Music Time Machine" [ref=e976]:
+                  - /url: /@pyramidmusictimemachine5547
+                - link "Pyramid Music Time Machine" [ref=e981]:
+                  - /url: /@pyramidmusictimemachine5547
+              - generic [ref=e982]:
+                - generic [ref=e983]: Jimmy Yancey - Complete Recordings (1939-1950) (1991) Join us ---- https://www.facebook.com/groups/pyramidmtm/ and share ...
+                - tooltip "tooltip"
+          - generic [ref=e985]:
+            - link [ref=e987] [cursor=pointer]:
+              - /url: /watch?v=3hRrBYqhOPU&list=RD3hRrBYqhOPU&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+            - generic [ref=e989] [cursor=pointer]:
+              - generic [ref=e990]:
+                - generic [ref=e991]:
+                  - heading "Jimmy Yancey - P. L. K. (1939) 3 minutes, 14 seconds" [level=3] [ref=e992]:
+                    - link "Jimmy Yancey - P. L. K. (1939) 3 minutes, 14 seconds" [ref=e993]:
+                      - /url: /watch?v=3hRrBYqhOPU&list=RD3hRrBYqhOPU&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: Jimmy Yancey - P. L. K. (1939)
+                  - button "Action menu" [ref=e997]:
+                    - generic [ref=e1000]:
+                      - img
+                - generic [ref=e1003]:
+                  - generic [ref=e1004]: 23 views
+                  - generic [ref=e1005]: •11 years ago
+              - generic [ref=e1006]:
+                - link "Go to channel Overjazz" [ref=e1007]:
+                  - /url: /@overjazzrecords
+                - link "Overjazz" [ref=e1012]:
+                  - /url: /@overjazzrecords
+              - generic [ref=e1013]:
+                - generic [ref=e1014]: Jimmy Yancey - P. L. K. (1939)
+                - tooltip "tooltip"
+          - generic [ref=e1015]:
+            - generic [ref=e1018]:
+              - img [ref=e1020]:
+                - generic [ref=e1022]:
+                  - img
+              - heading "Shorts" [level=2] [ref=e1025]
+            - generic [ref=e1026]:
+              - generic [ref=e1027]:
+                - generic [ref=e1030]:
+                  - link [ref=e1031] [cursor=pointer]:
+                    - /url: /shorts/9o26gWw8pP4
+                  - generic [ref=e1035] [cursor=pointer]:
+                    - 'link "Learn to play Yancey Special by Jimmy Yancey. Link to tutorial in description #shorts" [ref=e1036]':
+                      - /url: /shorts/9o26gWw8pP4
+                    - generic [ref=e1037]: 1.4K views
+                  - button "More actions" [ref=e1039] [cursor=pointer]:
+                    - generic [ref=e1043]:
+                      - img
+                - generic [ref=e1049]:
+                  - link [ref=e1050] [cursor=pointer]:
+                    - /url: /shorts/BPZMGPQeYfA
+                  - generic [ref=e1054] [cursor=pointer]:
+                    - link "Yancey Special(1)" [ref=e1055]:
+                      - /url: /shorts/BPZMGPQeYfA
+                    - generic [ref=e1056]: 137 views
+                  - button "More actions" [ref=e1058] [cursor=pointer]:
+                    - generic [ref=e1062]:
+                      - img
+              - generic [ref=e1066]:
+                - generic [ref=e1069]:
+                  - link [ref=e1070] [cursor=pointer]:
+                    - /url: /shorts/3oFzg0CWlcA
+                  - generic [ref=e1074] [cursor=pointer]:
+                    - link "Jimmy Yancey Blues - Keyboard Cover on the Medeli M331 (#shorts)" [ref=e1075]:
+                      - /url: /shorts/3oFzg0CWlcA
+                    - generic [ref=e1076]: 1.1K views
+                  - button "More actions" [ref=e1078] [cursor=pointer]:
+                    - generic [ref=e1082]:
+                      - img
+                - generic [ref=e1088]:
+                  - link [ref=e1089] [cursor=pointer]:
+                    - /url: /shorts/ZI8rwtUxgkY
+                  - generic [ref=e1093] [cursor=pointer]:
+                    - 'link "Yancey Special by Jimmy Yancey. Tutorial link in description #shorts #boogie #piano #pianotutorial" [ref=e1094]':
+                      - /url: /shorts/ZI8rwtUxgkY
+                    - generic [ref=e1095]: 1.8K views
+                  - button "More actions" [ref=e1097] [cursor=pointer]:
+                    - generic [ref=e1101]:
+                      - img
+            - button "Show more" [ref=e1108] [cursor=pointer]:
+              - generic [ref=e1109]: Show more
+              - generic [ref=e1113]:
+                - img
+          - generic [ref=e1118]:
+            - link [ref=e1120] [cursor=pointer]:
+              - /url: /watch?v=WSmOhEhQz2Q&list=RDWSmOhEhQz2Q&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+            - generic [ref=e1122] [cursor=pointer]:
+              - generic [ref=e1123]:
+                - generic [ref=e1124]:
+                  - 'heading "35th and Dearborn - Jimmy Yancey Piano Victor Records #27238 3 minutes" [level=3] [ref=e1125]':
+                    - 'link "35th and Dearborn - Jimmy Yancey Piano Victor Records #27238 3 minutes" [ref=e1126]':
+                      - /url: /watch?v=WSmOhEhQz2Q&list=RDWSmOhEhQz2Q&start_radio=1&pp=ygUnSmltbXkgWWFuY2V5IHBpYW5vIHNvbG9zIDE5MzkgcmVjb3JkaW5noAcB
+                      - text: "35th and Dearborn - Jimmy Yancey Piano Victor Records #27238"
+                  - button "Action menu" [ref=e1130]:
+                    - generic [ref=e1133]:
+                      - img
+                - generic [ref=e1136]:
+                  - generic [ref=e1137]: 25 views
+                  - generic [ref=e1138]: •5 years ago
+              - generic [ref=e1139]:
+                - link "Go to channel Westtoledoguy" [ref=e1140]:
+                  - /url: /@Westtoledoguy
+                - link "Westtoledoguy" [ref=e1145]:
+                  - /url: /@Westtoledoguy
+              - img "4K" [ref=e1148]:
+                - generic [ref=e1149]: 4K
+          - generic [ref=e1150]:
+            - generic [ref=e1153]:
+              - img [ref=e1155]:
+                - generic [ref=e1157]:
+                  - img
+              - heading "Shorts" [level=2] [ref=e1160]
+            - generic [ref=e1161]:
+              - generic [ref=e1162]:
+                - generic [ref=e1165]:
+                  - link [ref=e1166] [cursor=pointer]:
+                    - /url: /shorts/5DDYGjMBvs4
+                  - generic [ref=e1170] [cursor=pointer]:
+                    - 'link "Ending of State Street Special #shorts #piano #turorial" [ref=e1171]':
+                      - /url: /shorts/5DDYGjMBvs4
+                    - generic [ref=e1172]: 524 views
+                  - button "More actions" [ref=e1174] [cursor=pointer]:
+                    - generic [ref=e1178]:
+                      - img
+                - generic [ref=e1184]:
+                  - link [ref=e1185] [cursor=pointer]:
+                    - /url: /shorts/ZQbIHgGhjfI
+                  - generic [ref=e1189] [cursor=pointer]:
+                    - link "yancey" [ref=e1190]:
+                      - /url: /shorts/ZQbIHgGhjfI
+                    - generic [ref=e1191]: 808 views
+                  - button "More actions" [ref=e1193] [cursor=pointer]:
+                    - generic [ref=e1197]:
+                      - img
+              - generic [ref=e1201]:
+                - generic [ref=e1204]:
+                  - link [ref=e1205] [cursor=pointer]:
+                    - /url: /shorts/CRuDKP2OEII
+                  - generic [ref=e1209] [cursor=pointer]:
+                    - link "🥳🎹🔥🎶 CELEBRATING JIMMY YANCEY 🎶🔥🎹🥳" [ref=e1210]:
+                      - /url: /shorts/CRuDKP2OEII
+                    - generic [ref=e1211]: 356 views
+                  - button "More actions" [ref=e1213] [cursor=pointer]:
+                    - generic [ref=e1217]:
+                      - img
+                - generic [ref=e1223]:
+                  - link [ref=e1224] [cursor=pointer]:
+                    - /url: /shorts/f-lOth9V9e8
+                  - generic [ref=e1228] [cursor=pointer]:
+                    - 'link "The Boogie Kings Live - Yancey Stomp! 👞🎹 Pt 1 #piano #music #boogiewoogie #boogiewoogiepiano" [ref=e1229]':
+                      - /url: /shorts/f-lOth9V9e8
+                    - generic [ref=e1230]: 194 views
+                  - button "More actions" [ref=e1232] [cursor=pointer]:
+                    - generic [ref=e1236]:
+                      - img
+            - button "Show more" [ref=e1243] [cursor=pointer]:
+              - generic [ref=e1244]: Show more
+              - generic [ref=e1248]:
+                - img
+    - text: •

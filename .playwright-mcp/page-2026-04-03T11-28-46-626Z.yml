@@ -1,0 +1,575 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+          - button "Next" [ref=e111] [cursor=pointer]
+        - link "About these results" [ref=e120] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e121]: About these results
+        - generic [ref=e128]:
+          - button "Search filters" [ref=e130] [cursor=pointer]:
+            - generic [ref=e131]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e140]:
+        - generic [ref=e147]:
+          - img [ref=e153]
+          - generic [ref=e155] [cursor=pointer]:
+            - generic [ref=e156]:
+              - link "Makers Fest 2026 - Mississippi Makers Fest - Two Mississippi Museums" [ref=e159]:
+                - /url: https://www.google.com/aclk?sa=L&pf=1&ai=DChsSEwjQ8PD1ydGTAxXjyXkEHeOqN1UYACICCAEQABoCd2Y&co=1&ase=2&gclid=EAIaIQobChMI0PDw9cnRkwMV48l5BB3jqjdVEAAYASAAEgLpPvD_BwE&category=acrcp_v1_32&sig=AOD64_325_m3koBgPwcZ6cCcmlgdtRQ61Q&adurl=https://msmakersfest.mdah.ms.gov/%3Fgad_source%3D2%26gad_campaignid%3D21118517422%26gclid%3DEAIaIQobChMI0PDw9cnRkwMV48l5BB3jqjdVEAAYASAAEgLpPvD_BwE&ms=[CLICK_MS]&nx=[NX]&ny=[NY]&nb=0
+              - link "A free day-long celebration of the state's rich & diverse music and arts heritage. Event for all ages. Artisans, music, dancing, activities..." [ref=e162]:
+                - /url: https://www.google.com/aclk?sa=L&pf=1&ai=DChsSEwjQ8PD1ydGTAxXjyXkEHeOqN1UYACICCAEQABoCd2Y&co=1&ase=2&gclid=EAIaIQobChMI0PDw9cnRkwMV48l5BB3jqjdVEAAYASAAEgLpPvD_BwE&category=acrcp_v1_32&sig=AOD64_325_m3koBgPwcZ6cCcmlgdtRQ61Q&adurl=https://msmakersfest.mdah.ms.gov/%3Fgad_source%3D2%26gad_campaignid%3D21118517422%26gclid%3DEAIaIQobChMI0PDw9cnRkwMV48l5BB3jqjdVEAAYASAAEgLpPvD_BwE&ms=[CLICK_MS]&nx=[NX]&ny=[NY]&nb=7
+              - generic [ref=e163]:
+                - generic [ref=e165]:
+                  - generic [ref=e166]: Sponsored
+                  - text: ·
+                - generic [ref=e168]: https://msmakersfest.mdah.ms.gov/
+            - button "My Ad Center" [ref=e171]
+        - generic [ref=e178]:
+          - generic [ref=e180]:
+            - link [ref=e182] [cursor=pointer]:
+              - /url: /watch?v=9h-yPPNDI8Q&list=RD9h-yPPNDI8Q&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+            - generic [ref=e184] [cursor=pointer]:
+              - generic [ref=e185]:
+                - heading "Super Chikan @ The Clarksdale Mississippi Cigar Box Guitar Festival 3 minutes, 36 seconds" [level=3] [ref=e187]:
+                  - link "Super Chikan @ The Clarksdale Mississippi Cigar Box Guitar Festival 3 minutes, 36 seconds" [ref=e188]:
+                    - /url: /watch?v=9h-yPPNDI8Q&list=RD9h-yPPNDI8Q&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                    - text: Super Chikan @ The Clarksdale Mississippi Cigar Box Guitar Festival
+                - generic [ref=e191]:
+                  - generic [ref=e192]: 4.4K views
+                  - generic [ref=e193]: •7 years ago
+              - generic [ref=e194]:
+                - link "Go to channel Steve Arvey" [ref=e195]:
+                  - /url: /@SteveArvey
+                - link "Steve Arvey" [ref=e201]:
+                  - /url: /@SteveArvey
+              - generic [ref=e202]:
+                - generic [ref=e203]: Opening Song Called Poor Boy From Mississippi from Super Chikan Johnson.
+                - tooltip "tooltip"
+          - generic [ref=e205]:
+            - link [ref=e207] [cursor=pointer]:
+              - /url: /watch?v=4qwCtzOEaUc&list=RD4qwCtzOEaUc&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+            - generic [ref=e209] [cursor=pointer]:
+              - generic [ref=e210]:
+                - heading "SUPER CHIKAN JOHNSON - 1/3 11 minutes, 43 seconds" [level=3] [ref=e212]:
+                  - link "SUPER CHIKAN JOHNSON - 1/3 11 minutes, 43 seconds" [ref=e213]:
+                    - /url: /watch?v=4qwCtzOEaUc&list=RD4qwCtzOEaUc&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                    - text: SUPER CHIKAN JOHNSON - 1/3
+                - generic [ref=e216]:
+                  - generic [ref=e217]: 131 views
+                  - generic [ref=e218]: •9 years ago
+              - generic [ref=e219]:
+                - link "Go to channel Georges Lemaire" [ref=e220]:
+                  - /url: /@lemaireg
+                - link "Georges Lemaire" [ref=e225]:
+                  - /url: /@lemaireg
+              - generic [ref=e226]:
+                - text: En concert au Spirit of 66 (Verviers - B), le 3 juin 2016.
+                - tooltip "tooltip"
+          - generic [ref=e228]:
+            - link [ref=e230] [cursor=pointer]:
+              - /url: /watch?v=8MVUOfhFxlI&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaQ%3D%3D
+            - generic [ref=e232] [cursor=pointer]:
+              - generic [ref=e233]:
+                - heading "Super Chikan Johnson & Terry Harmonica Bean - Mississippi Delta Blues Festival (2015) Brazil 10 minutes, 35 seconds" [level=3] [ref=e235]:
+                  - link "Super Chikan Johnson & Terry Harmonica Bean - Mississippi Delta Blues Festival (2015) Brazil 10 minutes, 35 seconds" [ref=e236]:
+                    - /url: /watch?v=8MVUOfhFxlI&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaQ%3D%3D
+                    - text: Super Chikan Johnson & Terry Harmonica Bean - Mississippi Delta Blues Festival (2015) Brazil
+                - generic [ref=e239]:
+                  - generic [ref=e240]: 19K views
+                  - generic [ref=e241]: •10 years ago
+              - generic [ref=e242]:
+                - link "Go to channel RawBluesTV" [ref=e243]:
+                  - /url: /@RawBluesTV
+                - link "RawBluesTV" [ref=e249]:
+                  - /url: /@RawBluesTV
+              - generic [ref=e250]:
+                - generic [ref=e251]: "James \"Super Chikan\" Johnson & Terry \"Harmonica\" Bean (harp) with Jelly Roll Boys: Juan Codazzi (guitar), Leonardo \"Batata\" ..."
+                - tooltip "tooltip"
+          - generic [ref=e253]:
+            - link [ref=e255] [cursor=pointer]:
+              - /url: /watch?v=qnyBNsvSOq0&list=RDqnyBNsvSOq0&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+            - generic [ref=e257] [cursor=pointer]:
+              - generic [ref=e258]:
+                - heading "James \"Super Chikan\" Johnson & Jelly Roll Boys - Mississippi Delta Blues Festival (2015) Brazil 7 minutes, 20 seconds" [level=3] [ref=e260]:
+                  - link "James \"Super Chikan\" Johnson & Jelly Roll Boys - Mississippi Delta Blues Festival (2015) Brazil 7 minutes, 20 seconds" [ref=e261]:
+                    - /url: /watch?v=qnyBNsvSOq0&list=RDqnyBNsvSOq0&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                    - text: James "Super Chikan" Johnson & Jelly Roll Boys - Mississippi Delta Blues Festival (2015) Brazil
+                - generic [ref=e264]:
+                  - generic [ref=e265]: 1.5K views
+                  - generic [ref=e266]: •10 years ago
+              - generic [ref=e267]:
+                - link "Go to channel RawBluesTV" [ref=e268]:
+                  - /url: /@RawBluesTV
+                - link "RawBluesTV" [ref=e274]:
+                  - /url: /@RawBluesTV
+              - generic [ref=e275]:
+                - generic [ref=e276]: "Super Chikan (guitar) & Jelly Roll Boys: Juan Codazzi (guitar), Leonardo \"Batata\" Dignart (bass) and Adrian Flores (drums) ..."
+                - tooltip "tooltip"
+          - generic [ref=e278]:
+            - link [ref=e280] [cursor=pointer]:
+              - /url: /watch?v=LWewHaKH70g&list=RDLWewHaKH70g&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+            - generic [ref=e282] [cursor=pointer]:
+              - generic [ref=e283]:
+                - heading "James Super Chikan Johnson Boom Boom 2 minutes, 37 seconds" [level=3] [ref=e285]:
+                  - link "James Super Chikan Johnson Boom Boom 2 minutes, 37 seconds" [ref=e286]:
+                    - /url: /watch?v=LWewHaKH70g&list=RDLWewHaKH70g&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                    - text: James Super Chikan Johnson Boom Boom
+                - generic [ref=e289]:
+                  - generic [ref=e290]: 711 views
+                  - generic [ref=e291]: •3 years ago
+              - generic [ref=e292]:
+                - link "Go to channel Luciano Boca" [ref=e293]:
+                  - /url: /@bluesmouth
+                - link "Luciano Boca" [ref=e299]:
+                  - /url: /@bluesmouth
+              - generic [ref=e300]:
+                - generic [ref=e301]: James Super Chikan Johnson no Poços de Caldas Blues & Jazz Festival com Luciano Boca & Blues Special Band.
+                - tooltip "tooltip"
+          - generic [ref=e303]:
+            - link [ref=e305] [cursor=pointer]:
+              - /url: /watch?v=JRkeWuV4f38&list=RDJRkeWuV4f38&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e307] [cursor=pointer]:
+              - generic [ref=e308]:
+                - heading "Super Chikan performs in Cleveland, Mississippi 5 minutes, 12 seconds" [level=3] [ref=e310]:
+                  - link "Super Chikan performs in Cleveland, Mississippi 5 minutes, 12 seconds" [ref=e311]:
+                    - /url: /watch?v=JRkeWuV4f38&list=RDJRkeWuV4f38&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                    - text: Super Chikan performs in Cleveland, Mississippi
+                - generic [ref=e314]:
+                  - generic [ref=e315]: 89 views
+                  - generic [ref=e316]: •8 years ago
+              - generic [ref=e317]:
+                - link "Go to channel keith fulcher" [ref=e318]:
+                  - /url: /@keithfulcher6696
+                - link "keith fulcher" [ref=e323]:
+                  - /url: /@keithfulcher6696
+              - generic [ref=e324]:
+                - generic [ref=e325]: "Super Chikan performs in Cleveland, Mississippi for the Mississippi Bicentennial. #MS200 #Mississippi."
+                - tooltip "tooltip"
+          - generic [ref=e327]:
+            - link [ref=e329] [cursor=pointer]:
+              - /url: /watch?v=9uA1XiHY9KU&list=RD9uA1XiHY9KU&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+            - generic [ref=e331] [cursor=pointer]:
+              - generic [ref=e332]:
+                - heading "Super Chikan (James \"Super Chikan\" Johnson) Sunflower Blues & Gospel Festival 2010 4 minutes, 35 seconds" [level=3] [ref=e334]:
+                  - link "Super Chikan (James \"Super Chikan\" Johnson) Sunflower Blues & Gospel Festival 2010 4 minutes, 35 seconds" [ref=e335]:
+                    - /url: /watch?v=9uA1XiHY9KU&list=RD9uA1XiHY9KU&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                    - text: Super Chikan (James "Super Chikan" Johnson) Sunflower Blues & Gospel Festival 2010
+                - generic [ref=e338]:
+                  - generic [ref=e339]: 11K views
+                  - generic [ref=e340]: •15 years ago
+              - generic [ref=e341]:
+                - link "Go to channel Bluesville USA" [ref=e342]:
+                  - /url: /@BluesvilleUSA
+                - link "Bluesville USA" [ref=e347]:
+                  - /url: /@BluesvilleUSA
+              - generic [ref=e348]:
+                - generic [ref=e349]: Blues Legend, James "Super Chikan" Johnson, Sunflower River Blues & Gospel Festival, Clarksdale-Mississippi. 2010, Friday ...
+                - tooltip "tooltip"
+          - generic [ref=e351]:
+            - link [ref=e353] [cursor=pointer]:
+              - /url: /watch?v=azekSUJlbUw&list=RDazekSUJlbUw&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+            - generic [ref=e355] [cursor=pointer]:
+              - generic [ref=e356]:
+                - heading "Robert Johnson 3 minutes, 43 seconds" [level=3] [ref=e358]:
+                  - link "Robert Johnson 3 minutes, 43 seconds" [ref=e359]:
+                    - /url: /watch?v=azekSUJlbUw&list=RDazekSUJlbUw&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                    - text: Robert Johnson
+                - generic [ref=e363]: 507 views
+              - generic [ref=e364]:
+                - link "Go to channel Super Chikan - Topic" [ref=e365]:
+                  - /url: /channel/UCpzRTj_lt3yWgKdBoUeyGzw
+                - link "Super Chikan - Topic" [ref=e370]:
+                  - /url: /channel/UCpzRTj_lt3yWgKdBoUeyGzw
+              - generic [ref=e371]:
+                - generic [ref=e372]: "Provided to YouTube by CDBaby Robert Johnson · Super Chikan Chikan Supe ℗ 2005 Super Chikan Released on: 2005-01-01 ..."
+                - tooltip "tooltip"
+          - generic [ref=e374]:
+            - link [ref=e376] [cursor=pointer]:
+              - /url: /watch?v=oUlD-sbHQs0&list=RDoUlD-sbHQs0&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+            - generic [ref=e378] [cursor=pointer]:
+              - generic [ref=e379]:
+                - heading "James \"Super Chikan\" Johnson - Teatro Académico Gil Vicente, Coimbra, Portugal. 2008 1 hour, 36 minutes" [level=3] [ref=e381]:
+                  - link "James \"Super Chikan\" Johnson - Teatro Académico Gil Vicente, Coimbra, Portugal. 2008 1 hour, 36 minutes" [ref=e382]:
+                    - /url: /watch?v=oUlD-sbHQs0&list=RDoUlD-sbHQs0&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                    - text: James "Super Chikan" Johnson - Teatro Académico Gil Vicente, Coimbra, Portugal. 2008
+                - generic [ref=e385]:
+                  - generic [ref=e386]: 645 views
+                  - generic [ref=e387]: •8 years ago
+              - generic [ref=e388]:
+                - link "Go to channel Blues Compartido" [ref=e389]:
+                  - /url: /@bluescompartido5786
+                - link "Blues Compartido" [ref=e394]:
+                  - /url: /@bluescompartido5786
+              - generic [ref=e395]:
+                - generic [ref=e396]: Vocals/Guitars:James "Super Chikan" Johnson Harmonica:?? Drums:Jamiesa "pinky" Turner Keyboards:"Lala" a.k.a Laura Craig ...
+                - tooltip "tooltip"
+          - generic [ref=e397]:
+            - generic [ref=e400]:
+              - img [ref=e402]
+              - heading "Shorts" [level=2] [ref=e405]
+            - generic [ref=e406]:
+              - generic [ref=e407]:
+                - generic [ref=e410]:
+                  - link [ref=e411] [cursor=pointer]:
+                    - /url: /shorts/_Kh2vh8wRpA
+                  - generic [ref=e415] [cursor=pointer]:
+                    - link "Super Chikan at Chicago Blues Festival" [ref=e416]:
+                      - /url: /shorts/_Kh2vh8wRpA
+                    - generic [ref=e417]: 184 views
+                  - button "More actions" [ref=e419] [cursor=pointer]
+                - generic [ref=e427]:
+                  - link [ref=e428] [cursor=pointer]:
+                    - /url: /shorts/V99iTy91bjg
+                  - generic [ref=e432] [cursor=pointer]:
+                    - link "James Super Chikan Johnson" [ref=e433]:
+                      - /url: /shorts/V99iTy91bjg
+                    - generic [ref=e434]: 303 views
+                  - button "More actions" [ref=e436] [cursor=pointer]
+              - generic [ref=e442]:
+                - generic [ref=e445]:
+                  - link [ref=e446] [cursor=pointer]:
+                    - /url: /shorts/IAsvgZ46xow
+                  - generic [ref=e450] [cursor=pointer]:
+                    - 'link "Little Red Rooster Super Chikan #livemusic #shorts #cavernclub" [ref=e451]':
+                      - /url: /shorts/IAsvgZ46xow
+                    - generic [ref=e452]: 57 views
+                  - button "More actions" [ref=e454] [cursor=pointer]
+                - generic [ref=e462]:
+                  - link [ref=e463] [cursor=pointer]:
+                    - /url: /shorts/XVmBF8ifCgk
+                  - generic [ref=e467] [cursor=pointer]:
+                    - link "DRUMMERBOY with Super Chikan" [ref=e468]:
+                      - /url: /shorts/XVmBF8ifCgk
+                    - generic [ref=e469]: 104 views
+                  - button "More actions" [ref=e471] [cursor=pointer]
+            - button "Show more" [ref=e480] [cursor=pointer]:
+              - generic [ref=e481]: Show more
+          - generic [ref=e488]:
+            - link [ref=e490] [cursor=pointer]:
+              - /url: /watch?v=Eqi_j5Glmtc&list=RDEqi_j5Glmtc&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+            - generic [ref=e492] [cursor=pointer]:
+              - generic [ref=e493]:
+                - heading "Super Chikan & The Fighting Cocks - Sippi' Seekan' Saw - LRBC JAN 2014 11 minutes, 35 seconds" [level=3] [ref=e495]:
+                  - link "Super Chikan & The Fighting Cocks - Sippi' Seekan' Saw - LRBC JAN 2014 11 minutes, 35 seconds" [ref=e496]:
+                    - /url: /watch?v=Eqi_j5Glmtc&list=RDEqi_j5Glmtc&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                    - text: Super Chikan & The Fighting Cocks - Sippi' Seekan' Saw - LRBC JAN 2014
+                - generic [ref=e499]:
+                  - generic [ref=e500]: 31K views
+                  - generic [ref=e501]: •12 years ago
+              - generic [ref=e502]:
+                - link "Go to channel Blues on a Budget" [ref=e503]:
+                  - /url: /@BluesonaBudget
+                - link "Blues on a Budget" [ref=e508]:
+                  - /url: /@BluesonaBudget
+              - generic [ref=e509]:
+                - generic [ref=e510]: James "Super Chikan" Johnson (vocals/guitar) and the fabulous Fighting Cocks (Lala Craig (keys/vocals), Heather Falduto (bass) ...
+                - tooltip "tooltip"
+          - generic [ref=e512]:
+            - link [ref=e514] [cursor=pointer]:
+              - /url: /watch?v=DSrHRXz3K8k&list=RDDSrHRXz3K8k&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+            - generic [ref=e516] [cursor=pointer]:
+              - generic [ref=e517]:
+                - 'heading "Music of the Gulf Coast Highway: Delta Blues - James \"Super Chikan\" Johnson 8 minutes, 21 seconds" [level=3] [ref=e519]':
+                  - 'link "Music of the Gulf Coast Highway: Delta Blues - James \"Super Chikan\" Johnson 8 minutes, 21 seconds" [ref=e520]':
+                    - /url: /watch?v=DSrHRXz3K8k&list=RDDSrHRXz3K8k&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                    - text: "Music of the Gulf Coast Highway: Delta Blues - James \"Super Chikan\" Johnson"
+                - generic [ref=e523]:
+                  - generic [ref=e524]: 421 views
+                  - generic [ref=e525]: •7 years ago
+              - generic [ref=e526]:
+                - link "Go to channel Kennedy Center Education Digital Learning" [ref=e527]:
+                  - /url: /@ArtsEdge
+                - link "Kennedy Center Education Digital Learning" [ref=e532]:
+                  - /url: /@ArtsEdge
+              - generic [ref=e533]:
+                - generic [ref=e534]: In the early 19th century, the fertile delta of northwest Mississippi gave rise to a thriving cotton industry. As White cotton planters ...
+                - tooltip "tooltip"
+          - generic [ref=e536]:
+            - heading "People also watched" [level=2] [ref=e539]:
+              - generic [ref=e541]: People also watched
+            - generic [ref=e543]:
+              - generic [ref=e544]:
+                - generic [ref=e546]:
+                  - link [ref=e548] [cursor=pointer]:
+                    - /url: /watch?v=38N06V2pytg&list=RD38N06V2pytg&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                  - generic [ref=e550] [cursor=pointer]:
+                    - generic [ref=e551]:
+                      - heading "hooking up | James Super Chikan Johnson 14 minutes, 35 seconds" [level=3] [ref=e553]:
+                        - link "hooking up | James Super Chikan Johnson 14 minutes, 35 seconds" [ref=e554]:
+                          - /url: /watch?v=38N06V2pytg&list=RD38N06V2pytg&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                          - text: hooking up | James Super Chikan Johnson
+                      - generic [ref=e557]:
+                        - generic [ref=e558]: 8.5K views
+                        - generic [ref=e559]: •11 years ago
+                    - generic [ref=e560]:
+                      - link "Go to channel יניב גריידי" [ref=e561]:
+                        - /url: /@YanivGrady
+                      - link "יניב גריידי" [ref=e566]:
+                        - /url: /@YanivGrady
+                    - generic [ref=e567]:
+                      - text: Bass - Yehu Yaron Drums - Aviv Barak Production - Nobody's Fault Productions Video by - Yaniv Grady Video taken at Barby Club ...
+                      - tooltip "tooltip"
+                - generic [ref=e569]:
+                  - link [ref=e571] [cursor=pointer]:
+                    - /url: /watch?v=AzY2DjM83FA&list=RDAzY2DjM83FA&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                  - generic [ref=e573] [cursor=pointer]:
+                    - generic [ref=e574]:
+                      - heading "Wild Chicken Pickin’ 🔥 “Scratch My Back” — Gibbons & Vaughan LIVE at Antone’s (Jungle Show 12/26/25) 6 minutes, 5 seconds" [level=3] [ref=e576]:
+                        - link "Wild Chicken Pickin’ 🔥 “Scratch My Back” — Gibbons & Vaughan LIVE at Antone’s (Jungle Show 12/26/25) 6 minutes, 5 seconds" [ref=e577]:
+                          - /url: /watch?v=AzY2DjM83FA&list=RDAzY2DjM83FA&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                          - text: Wild Chicken Pickin’ 🔥 “Scratch My Back” — Gibbons & Vaughan LIVE at Antone’s (Jungle Show 12/26/25)
+                      - generic [ref=e580]:
+                        - generic [ref=e581]: 270K views
+                        - generic [ref=e582]: •3 months ago
+                    - generic [ref=e583]:
+                      - link "Go to channel Groovin Gary" [ref=e584]:
+                        - /url: /@GroovinGary
+                      - link "Groovin Gary" [ref=e589]:
+                        - /url: /@GroovinGary
+                    - generic [ref=e590]:
+                      - text: Things got extra greasy during the Jungle Show at Antone's on December 26, 2025 when “Scratch My Back” turned into a ...
+                      - tooltip "tooltip"
+                - generic [ref=e592]:
+                  - link [ref=e594] [cursor=pointer]:
+                    - /url: /watch?v=Lyw9OpzMjNA&list=RDLyw9OpzMjNA&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - generic [ref=e596] [cursor=pointer]:
+                    - generic [ref=e597]:
+                      - 'heading "Super Chikan: Yard Boy Blues @Ground Zero Club ( Aug 2011) 12 minutes, 22 seconds" [level=3] [ref=e599]':
+                        - 'link "Super Chikan: Yard Boy Blues @Ground Zero Club ( Aug 2011) 12 minutes, 22 seconds" [ref=e600]':
+                          - /url: /watch?v=Lyw9OpzMjNA&list=RDLyw9OpzMjNA&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                          - text: "Super Chikan: Yard Boy Blues @Ground Zero Club ( Aug 2011)"
+                      - generic [ref=e603]:
+                        - generic [ref=e604]: 7.2K views
+                        - generic [ref=e605]: •14 years ago
+                    - generic [ref=e606]:
+                      - link "Go to channel Bluesville USA" [ref=e607]:
+                        - /url: /@BluesvilleUSA
+                      - link "Bluesville USA" [ref=e612]:
+                        - /url: /@BluesvilleUSA
+                    - generic [ref=e613]:
+                      - generic [ref=e614]: Super Chikan plays, Yard Boy Blues, (from-Sum' Mo' Chikan-2007), at Ground Zero Club on a Saturday night (August 13, 2011) ...
+                      - tooltip "tooltip"
+                - generic [ref=e616]:
+                  - link [ref=e618] [cursor=pointer]:
+                    - /url: /watch?v=cug4jSz0Xgw&list=RDcug4jSz0Xgw&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                  - generic [ref=e620] [cursor=pointer]:
+                    - generic [ref=e621]:
+                      - heading "Super Chikan Playing a Shotgun Guitar 20 minutes" [level=3] [ref=e623]:
+                        - link "Super Chikan Playing a Shotgun Guitar 20 minutes" [ref=e624]:
+                          - /url: /watch?v=cug4jSz0Xgw&list=RDcug4jSz0Xgw&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                          - text: Super Chikan Playing a Shotgun Guitar
+                      - generic [ref=e627]:
+                        - generic [ref=e628]: 49K views
+                        - generic [ref=e629]: •14 years ago
+                    - generic [ref=e630]:
+                      - link "Go to channel Bluesville USA" [ref=e631]:
+                        - /url: /@BluesvilleUSA
+                      - link "Bluesville USA" [ref=e636]:
+                        - /url: /@BluesvilleUSA
+                    - generic [ref=e637]:
+                      - generic [ref=e638]: Delta Bluesman, Super Chikan, plays one of his unique creations during the , 2011 Juke Joint Festival, Clarksdale Mississippi (at ...
+                      - tooltip "tooltip"
+              - generic "+6 more" [ref=e640] [cursor=pointer]
+          - generic [ref=e642]:
+            - link [ref=e644] [cursor=pointer]:
+              - /url: /watch?v=wD9ZaysWNh0&list=RDwD9ZaysWNh0&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+            - generic [ref=e646] [cursor=pointer]:
+              - generic [ref=e647]:
+                - heading "Hello Mississippi 3 minutes, 36 seconds" [level=3] [ref=e649]:
+                  - link "Hello Mississippi 3 minutes, 36 seconds" [ref=e650]:
+                    - /url: /watch?v=wD9ZaysWNh0&list=RDwD9ZaysWNh0&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                    - text: Hello Mississippi
+                - generic [ref=e654]: 1.3K views
+              - generic [ref=e655]:
+                - link "Go to channel Super Chikan - Topic" [ref=e656]:
+                  - /url: /channel/UCpzRTj_lt3yWgKdBoUeyGzw
+                - link "Super Chikan - Topic" [ref=e661]:
+                  - /url: /channel/UCpzRTj_lt3yWgKdBoUeyGzw
+              - generic [ref=e662]:
+                - generic [ref=e663]: Provided to YouTube by The Orchard Enterprises Hello Mississippi · Super Chikan Chikadelic ℗ 2009 Bluestown Records ...
+                - tooltip "tooltip"
+          - generic [ref=e665]:
+            - link [ref=e667] [cursor=pointer]:
+              - /url: /watch?v=436NpqPhlKU&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaQ%3D%3D
+            - generic [ref=e669] [cursor=pointer]:
+              - generic [ref=e670]:
+                - heading "James \"Super Chikan\" Johnson about Muddy Waters - Delta Blues Museum 4 minutes, 59 seconds" [level=3] [ref=e672]:
+                  - link "James \"Super Chikan\" Johnson about Muddy Waters - Delta Blues Museum 4 minutes, 59 seconds" [ref=e673]:
+                    - /url: /watch?v=436NpqPhlKU&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaQ%3D%3D
+                    - text: James "Super Chikan" Johnson about Muddy Waters - Delta Blues Museum
+                - generic [ref=e676]:
+                  - generic [ref=e677]: 2.5K views
+                  - generic [ref=e678]: •5 years ago
+              - generic [ref=e679]:
+                - link "Go to channel Delta Blues Museum" [ref=e680]:
+                  - /url: /@deltabluesmuseum
+                - link "Delta Blues Museum" [ref=e685]:
+                  - /url: /@deltabluesmuseum
+              - generic [ref=e686]:
+                - generic [ref=e687]: Professional blues musician James "Super Chikan" Johnson talks about his experiences in his youth with Muddy Waters. Funding ...
+                - tooltip "tooltip"
+              - generic [ref=e690]:
+                - generic [ref=e691]:
+                  - generic [ref=e695]: 4 chapters
+                  - button "Intro | Jimmy Reed | Front Porch Party | Dr Taylor"
+                - button "More" [ref=e700]
+          - generic [ref=e707]:
+            - link [ref=e709] [cursor=pointer]:
+              - /url: /watch?v=E4eBQYAEQHc&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaQ%3D%3D
+            - generic [ref=e711] [cursor=pointer]:
+              - generic [ref=e712]:
+                - heading "Super Chikan - Live at the North Sea Jazz Club - Amsterdam 7 minutes, 30 seconds" [level=3] [ref=e714]:
+                  - link "Super Chikan - Live at the North Sea Jazz Club - Amsterdam 7 minutes, 30 seconds" [ref=e715]:
+                    - /url: /watch?v=E4eBQYAEQHc&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaQ%3D%3D
+                    - text: Super Chikan - Live at the North Sea Jazz Club - Amsterdam
+                - generic [ref=e718]:
+                  - generic [ref=e719]: 1K views
+                  - generic [ref=e720]: •10 years ago
+              - generic [ref=e721]:
+                - link "Go to channel DEBLUESRADIO" [ref=e722]:
+                  - /url: /@debluesradio
+                - link "DEBLUESRADIO" [ref=e727]:
+                  - /url: /@debluesradio
+              - generic [ref=e728]:
+                - generic [ref=e729]: More about the blues at www.debluesradio.com ! Straight from the heart of Amsterdam 24/7 the best of the blues!
+                - tooltip "tooltip"
+          - generic [ref=e731]:
+            - link [ref=e733] [cursor=pointer]:
+              - /url: /watch?v=FSkiHPzKt3c&list=RDFSkiHPzKt3c&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+            - generic [ref=e735] [cursor=pointer]:
+              - generic [ref=e736]:
+                - heading "Cleao's Back | James Super Chikan Johnson 6 minutes, 32 seconds" [level=3] [ref=e738]:
+                  - link "Cleao's Back | James Super Chikan Johnson 6 minutes, 32 seconds" [ref=e739]:
+                    - /url: /watch?v=FSkiHPzKt3c&list=RDFSkiHPzKt3c&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAQ%3D%3D
+                    - text: Cleao's Back | James Super Chikan Johnson
+                - generic [ref=e742]:
+                  - generic [ref=e743]: 206 views
+                  - generic [ref=e744]: •11 years ago
+              - generic [ref=e745]:
+                - link "Go to channel יניב גריידי" [ref=e746]:
+                  - /url: /@YanivGrady
+                - link "יניב גריידי" [ref=e751]:
+                  - /url: /@YanivGrady
+              - generic [ref=e752]:
+                - text: Bass - Yehu Yaron Drums - Aviv Barak Production - Nobody's Fault Productions Video by - Yaniv Grady Video taken at Barby Club ...
+                - tooltip "tooltip"
+          - generic [ref=e754]:
+            - link [ref=e756] [cursor=pointer]:
+              - /url: /watch?v=3nIWtDOIbRU&list=RD3nIWtDOIbRU&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAdIHCQnZCgGHKiGM7w%3D%3D
+            - generic [ref=e758] [cursor=pointer]:
+              - generic [ref=e759]:
+                - heading "James \"Super Chikan\" Johnson RFF Oct 13, 2012 2 minutes, 8 seconds" [level=3] [ref=e761]:
+                  - link "James \"Super Chikan\" Johnson RFF Oct 13, 2012 2 minutes, 8 seconds" [ref=e762]:
+                    - /url: /watch?v=3nIWtDOIbRU&list=RD3nIWtDOIbRU&start_radio=1&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                    - text: James "Super Chikan" Johnson RFF Oct 13, 2012
+                - generic [ref=e765]:
+                  - generic [ref=e766]: 154 views
+                  - generic [ref=e767]: •13 years ago
+              - generic [ref=e768]:
+                - link "Go to channel DJGraybeard1" [ref=e769]:
+                  - /url: /@DJGraybeard1
+                - link "DJGraybeard1" [ref=e774]:
+                  - /url: /@DJGraybeard1
+              - generic [ref=e775]:
+                - generic [ref=e776]: James "Super Chikan" Johnson & The Fighting Cocks Delta blues Clarksdale, Mississippi 2012 Richmond Folk Festival.
+                - tooltip "tooltip"
+          - generic [ref=e778]:
+            - link [ref=e780] [cursor=pointer]:
+              - /url: /watch?v=KzcWvJ6RKZo&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaQ%3D%3D
+            - generic [ref=e782] [cursor=pointer]:
+              - generic [ref=e783]:
+                - heading "Super Chikan | Mississippi Roads | MPB 5 minutes, 44 seconds" [level=3] [ref=e785]:
+                  - link "Super Chikan | Mississippi Roads | MPB 5 minutes, 44 seconds" [ref=e786]:
+                    - /url: /watch?v=KzcWvJ6RKZo&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaQ%3D%3D
+                    - text: Super Chikan | Mississippi Roads | MPB
+                - generic [ref=e789]:
+                  - generic [ref=e790]: 37K views
+                  - generic [ref=e791]: •16 years ago
+              - generic [ref=e792]:
+                - link "Go to channel Mississippi Public Broadcasting" [ref=e793]:
+                  - /url: /@MSPublicBroadcasting
+                - link "Mississippi Public Broadcasting" [ref=e798]:
+                  - /url: /@MSPublicBroadcasting
+              - generic [ref=e799]:
+                - generic [ref=e800]: James Super Chikan Johnson is described by his friends as the real deal.Hes a well known blues musician and entertainer but ...
+                - tooltip "tooltip"
+          - generic [ref=e802]:
+            - link [ref=e804] [cursor=pointer]:
+              - /url: /watch?v=ycNYkytnArQ&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaQ%3D%3D
+            - generic [ref=e806] [cursor=pointer]:
+              - generic [ref=e807]:
+                - 'heading "James ''Super Chikan'' Johnson: A Life In Blues | Music Documentary 1 hour, 20 minutes" [level=3] [ref=e809]':
+                  - 'link "James ''Super Chikan'' Johnson: A Life In Blues | Music Documentary 1 hour, 20 minutes" [ref=e810]':
+                    - /url: /watch?v=ycNYkytnArQ&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaQ%3D%3D
+                    - text: "James 'Super Chikan' Johnson: A Life In Blues | Music Documentary"
+                - generic [ref=e813]:
+                  - generic [ref=e814]: 3.4K views
+                  - generic [ref=e815]: •4 months ago
+              - generic [ref=e816]:
+                - link "Go to channel Inside The Music" [ref=e817]:
+                  - /url: /@Inside_The_Music
+                - generic [ref=e818]:
+                  - link "Inside The Music" [ref=e822]:
+                    - /url: /@Inside_The_Music
+                  - img "Verified" [ref=e825]
+              - generic [ref=e827]:
+                - generic [ref=e828]: James 'Super Chikan' Johnson - A Life in Blues* celebrates one of Mississippi's most treasured sons. With interviews featuring ...
+                - tooltip "tooltip"
+          - generic [ref=e830]:
+            - link [ref=e832] [cursor=pointer]:
+              - /url: /watch?v=hk6rONvHUg4&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaQ%3D%3D
+            - generic [ref=e834] [cursor=pointer]:
+              - generic [ref=e835]:
+                - heading "Super Chikan Johnson and Didley Duo pt.1 1 minute, 2 seconds" [level=3] [ref=e837]:
+                  - link "Super Chikan Johnson and Didley Duo pt.1 1 minute, 2 seconds" [ref=e838]:
+                    - /url: /watch?v=hk6rONvHUg4&pp=ygUrU3VwZXIgQ2hpa2FuIEpvaG5zb24gYmx1ZXMgbGl2ZSBNaXNzaXNzaXBwaQ%3D%3D
+                    - text: Super Chikan Johnson and Didley Duo pt.1
+                - generic [ref=e841]:
+                  - generic [ref=e842]: 24 views
+                  - generic [ref=e843]: •6 years ago
+              - generic [ref=e844]:
+                - link "Go to channel Didley Duo" [ref=e845]:
+                  - /url: /@didleyduo7728
+                - link "Didley Duo" [ref=e850]:
+                  - /url: /@didleyduo7728
+              - generic [ref=e851]:
+                - generic [ref=e852]: Mostrando os instrumentos do Didley Duo para o grande percursor e divulgador do diddley bow. O músico de blues americano ...
+                - tooltip "tooltip"
+          - generic [ref=e854]:
+            - link [ref=e856] [cursor=pointer]:
+              - /url: /channel/UCpzRTj_lt3yWgKdBoUeyGzw
+            - link "Super Chikan - Topic 313 subscribers•74 videos James \"Super Chikan\" Johnson is an American blues musician based in Clarksdale, Mississippi. He is the nephew of fellow blues ..." [ref=e860] [cursor=pointer]:
+              - /url: /channel/UCpzRTj_lt3yWgKdBoUeyGzw
+              - generic [ref=e861]:
+                - generic [ref=e865]: Super Chikan - Topic
+                - generic [ref=e866]: 313 subscribers•74 videos
+                - generic [ref=e867]: James "Super Chikan" Johnson is an American blues musician based in Clarksdale, Mississippi. He is the nephew of fellow blues ...

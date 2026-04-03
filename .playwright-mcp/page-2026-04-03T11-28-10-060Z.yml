@@ -1,0 +1,586 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - tablist [ref=e43]:
+            - tab "All" [selected] [ref=e47] [cursor=pointer]:
+              - generic [ref=e49]: All
+            - tab "Shorts" [ref=e56] [cursor=pointer]:
+              - generic [ref=e58]: Shorts
+            - tab "Videos" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: Videos
+            - tab "Unwatched" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: Unwatched
+            - tab "Watched" [ref=e83] [cursor=pointer]:
+              - generic [ref=e85]: Watched
+            - tab "Recently uploaded" [ref=e92] [cursor=pointer]:
+              - generic [ref=e94]: Recently uploaded
+            - tab "Live" [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Live
+          - button "Next" [ref=e111] [cursor=pointer]
+        - link "About these results" [ref=e120] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e121]: About these results
+        - generic [ref=e128]:
+          - button "Search filters" [ref=e130] [cursor=pointer]:
+            - generic [ref=e131]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e142]:
+        - generic [ref=e144]:
+          - link [ref=e146] [cursor=pointer]:
+            - /url: /watch?v=zQnb2gmyn6s&list=RDzQnb2gmyn6s&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e148] [cursor=pointer]:
+            - generic [ref=e149]:
+              - heading "Fred McMullen- Dekalb Chain Gang 3 minutes, 5 seconds" [level=3] [ref=e151]:
+                - link "Fred McMullen- Dekalb Chain Gang 3 minutes, 5 seconds" [ref=e152]:
+                  - /url: /watch?v=zQnb2gmyn6s&list=RDzQnb2gmyn6s&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Fred McMullen- Dekalb Chain Gang
+              - generic [ref=e155]:
+                - generic [ref=e156]: 3K views
+                - generic [ref=e157]: •14 years ago
+            - generic [ref=e158]:
+              - link "Go to channel Traveler Into The Blue" [ref=e159]:
+                - /url: /@TravelerIntoTheBlue
+              - link "Traveler Into The Blue" [ref=e165]:
+                - /url: /@TravelerIntoTheBlue
+            - generic [ref=e166]:
+              - generic [ref=e167]: The little-known McMullen is the wild card here, a slide guitarist also noted for his picking finesse;
+              - tooltip "tooltip"
+        - generic [ref=e169]:
+          - link [ref=e171] [cursor=pointer]:
+            - /url: /watch?v=ddzWF1h-PJc&list=RDddzWF1h-PJc&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e173] [cursor=pointer]:
+            - generic [ref=e174]:
+              - heading "Fred McMullen & Curley Weaver - DeKalb Chain Gang (1933) [Georgia Blues] 3 minutes, 6 seconds" [level=3] [ref=e176]:
+                - link "Fred McMullen & Curley Weaver - DeKalb Chain Gang (1933) [Georgia Blues] 3 minutes, 6 seconds" [ref=e177]:
+                  - /url: /watch?v=ddzWF1h-PJc&list=RDddzWF1h-PJc&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Fred McMullen & Curley Weaver - DeKalb Chain Gang (1933) [Georgia Blues]
+              - generic [ref=e180]:
+                - generic [ref=e181]: 635 views
+                - generic [ref=e182]: •4 years ago
+            - generic [ref=e183]:
+              - link "Go to channel Deep Track Zach" [ref=e184]:
+                - /url: /@deeptrackzach
+              - link "Deep Track Zach" [ref=e190]:
+                - /url: /@deeptrackzach
+            - generic [ref=e191]:
+              - generic [ref=e192]: "B-side on Perfect 0241 Lead Guitar/Vocals: Fred McMullen Second Guitar: Curley Weaver Remastered by Deep Track Zach with ..."
+              - tooltip "tooltip"
+        - generic [ref=e194]:
+          - link [ref=e196] [cursor=pointer]:
+            - /url: /watch?v=67y7dXRQ8cs&list=RD67y7dXRQ8cs&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e198] [cursor=pointer]:
+            - generic [ref=e199]:
+              - heading "Dekalb Chain Gang 3 minutes, 9 seconds" [level=3] [ref=e201]:
+                - link "Dekalb Chain Gang 3 minutes, 9 seconds" [ref=e202]:
+                  - /url: /watch?v=67y7dXRQ8cs&list=RD67y7dXRQ8cs&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Dekalb Chain Gang
+              - generic [ref=e206]: 102 views
+            - generic [ref=e207]:
+              - link "Go to channel Fred McMullen - Topic" [ref=e208]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+              - link "Fred McMullen - Topic" [ref=e213]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+            - generic [ref=e214]:
+              - generic [ref=e215]: "Provided to YouTube by The Orchard Enterprises Dekalb Chain Gang · Fred McMullen Let Me Tell You About the Blues: Atlanta, ..."
+              - tooltip "tooltip"
+        - generic [ref=e217] [cursor=pointer]:
+          - link [ref=e218]:
+            - /url: /watch?v=hdAYdQrXEqg&list=PLg1Ix2LXxZ0llb4ZEpCl0pB_5kOTE8cX4
+            - generic [ref=e230]: 20 videos
+          - generic [ref=e233]:
+            - heading "(671) CURLEY WEAVER (1929-1949) - CLICK & LISTEN PIEDMONT BLUES PLAYLIST" [level=3] [ref=e234]:
+              - link "(671) CURLEY WEAVER (1929-1949) - CLICK & LISTEN PIEDMONT BLUES PLAYLIST" [ref=e235]:
+                - /url: /watch?v=hdAYdQrXEqg&list=PLg1Ix2LXxZ0llb4ZEpCl0pB_5kOTE8cX4
+            - generic [ref=e237]:
+              - generic [ref=e238]:
+                - link "BLUES LEGENDS" [ref=e241]:
+                  - /url: /@BluesLegends-Official
+                - generic [ref=e242]: •
+                - link "Playlist" [ref=e245]:
+                  - /url: /@BluesLegends-Official
+              - link "Curley Weaver Sweet Patunia (1928) · 3:21" [ref=e249]:
+                - /url: /watch?v=hdAYdQrXEqg&list=PLg1Ix2LXxZ0llb4ZEpCl0pB_5kOTE8cX4
+              - link "Georgia Cotton Pickers She Looks So Good (1930) · 3:01" [ref=e252]:
+                - /url: /watch?v=mkXJSctNtmU&list=PLg1Ix2LXxZ0llb4ZEpCl0pB_5kOTE8cX4
+              - link "View full playlist" [ref=e257]:
+                - /url: /playlist?list=PLg1Ix2LXxZ0llb4ZEpCl0pB_5kOTE8cX4
+        - generic [ref=e259]:
+          - link [ref=e261] [cursor=pointer]:
+            - /url: /watch?v=VTLPkJWCxeo&list=RDVTLPkJWCxeo&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e263] [cursor=pointer]:
+            - generic [ref=e264]:
+              - heading "Poor Stranger Blues 3 minutes, 1 second" [level=3] [ref=e266]:
+                - link "Poor Stranger Blues 3 minutes, 1 second" [ref=e267]:
+                  - /url: /watch?v=VTLPkJWCxeo&list=RDVTLPkJWCxeo&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Poor Stranger Blues
+              - generic [ref=e271]: 318 views
+            - generic [ref=e272]:
+              - link "Go to channel Fred McMullen - Topic" [ref=e273]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+              - link "Fred McMullen - Topic" [ref=e278]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+            - generic [ref=e279]:
+              - generic [ref=e280]: Provided to YouTube by The Orchard Enterprises Poor Stranger Blues · Fred McMullen · Curley Weaver Wait and Listen ℗ 2015 ...
+              - tooltip "tooltip"
+        - generic [ref=e282]:
+          - link [ref=e284] [cursor=pointer]:
+            - /url: /watch?v=BZo6-iboiMM&list=RDBZo6-iboiMM&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwHSBwkJ2QoBhyohjO8%3D
+          - generic [ref=e286] [cursor=pointer]:
+            - generic [ref=e287]:
+              - heading "Fred McMullen & Curley Weaver - \"Poor Stranger Blues\" 3 minutes, 1 second" [level=3] [ref=e289]:
+                - link "Fred McMullen & Curley Weaver - \"Poor Stranger Blues\" 3 minutes, 1 second" [ref=e290]:
+                  - /url: /watch?v=BZo6-iboiMM&list=RDBZo6-iboiMM&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwHSBwkJ2QoBhyohjO8%3D
+                  - text: Fred McMullen & Curley Weaver - "Poor Stranger Blues"
+              - generic [ref=e293]:
+                - generic [ref=e294]: 415 views
+                - generic [ref=e295]: •5 years ago
+            - generic [ref=e296]:
+              - link "Go to channel Back to DELTA Channel" [ref=e297]:
+                - /url: /@kamikazu9167
+              - link "Back to DELTA Channel" [ref=e303]:
+                - /url: /@kamikazu9167
+            - generic [ref=e304]:
+              - generic [ref=e305]: GEORGIA BLUES / The Complete of Fred McMullen & Curley Weaver 1928-1933 (Document Records DOCD-5110)
+              - tooltip "tooltip"
+        - generic [ref=e306]:
+          - generic [ref=e309]:
+            - img [ref=e311]
+            - heading "Shorts" [level=2] [ref=e314]
+          - generic [ref=e315]:
+            - generic [ref=e316]:
+              - generic [ref=e319]:
+                - link [ref=e320] [cursor=pointer]:
+                  - /url: /shorts/upWc6pnXLRk
+                - generic [ref=e324] [cursor=pointer]:
+                  - 'link "🥁 The Sacred Triune 3/1 🎸 - Playin Mississippi Fred McDowell #blues #bluesguitar #slideguitar" [ref=e325]':
+                    - /url: /shorts/upWc6pnXLRk
+                  - generic [ref=e326]: 14K views
+                - button "More actions" [ref=e328] [cursor=pointer]
+              - generic [ref=e336]:
+                - link [ref=e337] [cursor=pointer]:
+                  - /url: /shorts/k9b3yrPJ6YA
+                - generic [ref=e341] [cursor=pointer]:
+                  - link "Dan Auerbach teaches Fred Mcdowell's voicing" [ref=e342]:
+                    - /url: /shorts/k9b3yrPJ6YA
+                  - generic [ref=e343]: 16K views
+                - button "More actions" [ref=e345] [cursor=pointer]
+            - generic [ref=e351]:
+              - generic [ref=e354]:
+                - link [ref=e355] [cursor=pointer]:
+                  - /url: /shorts/uiyvvPG43Qo
+                - generic [ref=e359] [cursor=pointer]:
+                  - link "Mississippi Fred McDowell (January 12, 1904 – July 3, 1972) was an American singer and guitar player" [ref=e360]:
+                    - /url: /shorts/uiyvvPG43Qo
+                  - generic [ref=e361]: 3.8K views
+                - button "More actions" [ref=e363] [cursor=pointer]
+              - generic [ref=e371]:
+                - link [ref=e372] [cursor=pointer]:
+                  - /url: /shorts/Wiv4j8O8Vzg
+                - generic [ref=e376] [cursor=pointer]:
+                  - link "Mastering Blues Guitar The Key to Fluid Soloing" [ref=e377]:
+                    - /url: /shorts/Wiv4j8O8Vzg
+                  - generic [ref=e378]: 17K views
+                - button "More actions" [ref=e380] [cursor=pointer]
+          - button "Show more" [ref=e389] [cursor=pointer]:
+            - generic [ref=e390]: Show more
+        - generic [ref=e397]:
+          - link [ref=e399] [cursor=pointer]:
+            - /url: /watch?v=ZNKelpkylVs&list=RDZNKelpkylVs&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e401] [cursor=pointer]:
+            - generic [ref=e402]:
+              - heading "Rolling Mama 2 minutes, 53 seconds" [level=3] [ref=e404]:
+                - link "Rolling Mama 2 minutes, 53 seconds" [ref=e405]:
+                  - /url: /watch?v=ZNKelpkylVs&list=RDZNKelpkylVs&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Rolling Mama
+              - generic [ref=e409]: 296 views
+            - generic [ref=e410]:
+              - link "Go to channel Fred McMullen - Topic" [ref=e411]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+              - link "Fred McMullen - Topic" [ref=e416]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+            - generic [ref=e417]:
+              - generic [ref=e418]: Provided to YouTube by The Orchard Enterprises Rolling Mama · Fred McMullen Georgia Blues ℗ 1992 Document Records ...
+              - tooltip "tooltip"
+        - generic [ref=e420]:
+          - link [ref=e422] [cursor=pointer]:
+            - /url: /watch?v=KHjHwIMrieo&list=RDKHjHwIMrieo&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e424] [cursor=pointer]:
+            - generic [ref=e425]:
+              - heading "Front Porch Blues Session | Mississippi Delta 1930s | Gritty Acoustic Guitar 1 hour, 27 minutes" [level=3] [ref=e427]:
+                - link "Front Porch Blues Session | Mississippi Delta 1930s | Gritty Acoustic Guitar 1 hour, 27 minutes" [ref=e428]:
+                  - /url: /watch?v=KHjHwIMrieo&list=RDKHjHwIMrieo&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Front Porch Blues Session | Mississippi Delta 1930s | Gritty Acoustic Guitar
+              - generic [ref=e431]:
+                - generic [ref=e432]: 2.8K views
+                - generic [ref=e433]: •6 days ago
+            - generic [ref=e434]:
+              - link "Go to channel Delta Blues Radio" [ref=e435]:
+                - /url: /@DeltaBluesRadio-k9l
+              - link "Delta Blues Radio" [ref=e440]:
+                - /url: /@DeltaBluesRadio-k9l
+            - generic [ref=e441]:
+              - generic [ref=e442]: Front Porch Blues Session | Mississippi Delta 1930s | Gritty Acoustic Guitar ...
+              - tooltip "tooltip"
+            - img "New" [ref=e445]:
+              - generic [ref=e446]: New
+        - generic [ref=e448]:
+          - link [ref=e450] [cursor=pointer]:
+            - /url: /watch?v=pObMOpGbdC4&list=RDpObMOpGbdC4&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e452] [cursor=pointer]:
+            - generic [ref=e453]:
+              - heading "Wait and Listen 3 minutes, 7 seconds" [level=3] [ref=e455]:
+                - link "Wait and Listen 3 minutes, 7 seconds" [ref=e456]:
+                  - /url: /watch?v=pObMOpGbdC4&list=RDpObMOpGbdC4&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Wait and Listen
+              - generic [ref=e460]: 179 views
+            - generic [ref=e461]:
+              - link "Go to channel Fred McMullen - Topic" [ref=e462]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+              - link "Fred McMullen - Topic" [ref=e467]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+            - generic [ref=e468]:
+              - generic [ref=e469]: Provided to YouTube by The Orchard Enterprises Wait and Listen · Fred McMullen Wait and Listen ℗ 2015 Suncoast Music ...
+              - tooltip "tooltip"
+        - generic [ref=e470]:
+          - generic [ref=e473]:
+            - img [ref=e475]
+            - heading "Shorts" [level=2] [ref=e478]
+          - generic [ref=e479]:
+            - generic [ref=e480]:
+              - generic [ref=e483]:
+                - link [ref=e484] [cursor=pointer]:
+                  - /url: /shorts/plMg4nW5Dn8
+                - generic [ref=e488] [cursor=pointer]:
+                  - 'link "\"Same Old Blues\" | Melancholy-Playing on a Freddy King Classic #blues" [ref=e489]':
+                    - /url: /shorts/plMg4nW5Dn8
+                  - generic [ref=e490]: 1.5K views
+                - button "More actions" [ref=e492] [cursor=pointer]
+              - generic [ref=e500]:
+                - link [ref=e501] [cursor=pointer]:
+                  - /url: /shorts/IXV_yr1IXoU
+                - generic [ref=e505] [cursor=pointer]:
+                  - 'link "#babypleasedontgo #Fredmcdowell #mississippifredmcdowell #Deltablueslick #slideguitartiff" [ref=e506]':
+                    - /url: /shorts/IXV_yr1IXoU
+                  - generic [ref=e507]: 1.2K views
+                - button "More actions" [ref=e509] [cursor=pointer]
+            - generic [ref=e515]:
+              - generic [ref=e518]:
+                - link [ref=e519] [cursor=pointer]:
+                  - /url: /shorts/xryUdZ2PMGg
+                - generic [ref=e523] [cursor=pointer]:
+                  - 'link "The Evolution of Blues Guitar Playing (1937-1990) #shorts" [ref=e524]':
+                    - /url: /shorts/xryUdZ2PMGg
+                  - generic [ref=e525]: 1.3M views
+                - button "More actions" [ref=e527] [cursor=pointer]
+              - generic [ref=e535]:
+                - link [ref=e536] [cursor=pointer]:
+                  - /url: /shorts/PsFy-egHhjM
+                  - img [ref=e541]:
+                    - generic [ref=e542]: New
+                - generic [ref=e543] [cursor=pointer]:
+                  - link "Corner Store Sessions – Now Available (1949 Chicago Blues Spirit)" [ref=e544]:
+                    - /url: /shorts/PsFy-egHhjM
+                  - generic [ref=e545]: 497 views
+                - button "More actions" [ref=e547] [cursor=pointer]
+          - button "Show more" [ref=e556] [cursor=pointer]:
+            - generic [ref=e557]: Show more
+        - generic [ref=e564]:
+          - link [ref=e566] [cursor=pointer]:
+            - /url: /watch?v=mkXJSctNtmU&list=RDmkXJSctNtmU&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e568] [cursor=pointer]:
+            - generic [ref=e569]:
+              - heading "Georgia Cotton Pickers She Looks So Good (1930) 3 minutes, 1 second" [level=3] [ref=e571]:
+                - link "Georgia Cotton Pickers She Looks So Good (1930) 3 minutes, 1 second" [ref=e572]:
+                  - /url: /watch?v=mkXJSctNtmU&list=RDmkXJSctNtmU&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Georgia Cotton Pickers She Looks So Good (1930)
+              - generic [ref=e575]:
+                - generic [ref=e576]: 4.5K views
+                - generic [ref=e577]: •15 years ago
+            - generic [ref=e578]:
+              - link "Go to channel randomandrare" [ref=e579]:
+                - /url: /@randomandrare
+              - link "randomandrare" [ref=e584]:
+                - /url: /@randomandrare
+            - generic [ref=e585]:
+              - generic [ref=e586]: I do not own the copyright to this recording. This video is for historical and educational purposes. Curley Weaver:Vocals & Guitar ...
+              - tooltip "tooltip"
+        - generic [ref=e588]:
+          - link [ref=e590] [cursor=pointer]:
+            - /url: /watch?v=aL076NbJQgA&list=RDaL076NbJQgA&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e592] [cursor=pointer]:
+            - generic [ref=e593]:
+              - heading "Curley Weaver and Fred McMullen - Wild Cat Kitten 3 minutes, 15 seconds" [level=3] [ref=e595]:
+                - link "Curley Weaver and Fred McMullen - Wild Cat Kitten 3 minutes, 15 seconds" [ref=e596]:
+                  - /url: /watch?v=aL076NbJQgA&list=RDaL076NbJQgA&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Curley Weaver and Fred McMullen - Wild Cat Kitten
+              - generic [ref=e599]:
+                - generic [ref=e600]: 11K views
+                - generic [ref=e601]: •16 years ago
+            - generic [ref=e602]:
+              - link "Go to channel R O T T I N G S T O N E" [ref=e603]:
+                - /url: /@rottingstone
+              - link "R O T T I N G S T O N E" [ref=e608]:
+                - /url: /@rottingstone
+            - generic [ref=e609]:
+              - generic [ref=e610]: Classic Atlanta Blues.
+              - tooltip "tooltip"
+        - generic [ref=e612]:
+          - link [ref=e614] [cursor=pointer]:
+            - /url: /watch?v=gslcBXkvLGY&list=RDgslcBXkvLGY&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e616] [cursor=pointer]:
+            - generic [ref=e617]:
+              - heading "Dekalb Chain Gang 3 minutes, 5 seconds" [level=3] [ref=e619]:
+                - link "Dekalb Chain Gang 3 minutes, 5 seconds" [ref=e620]:
+                  - /url: /watch?v=gslcBXkvLGY&list=RDgslcBXkvLGY&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Dekalb Chain Gang
+              - generic [ref=e624]: 46 views
+            - generic [ref=e625]:
+              - link "Go to channel Fred McMullen - Topic" [ref=e626]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+              - link "Fred McMullen - Topic" [ref=e631]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+            - generic [ref=e632]:
+              - generic [ref=e633]: Provided to YouTube by The Orchard Enterprises Dekalb Chain Gang · Fred McMullen The Best of Slide Guitar Blues,Vol.2 ...
+              - tooltip "tooltip"
+        - generic [ref=e635]:
+          - heading "People also watched" [level=2] [ref=e638]:
+            - generic [ref=e640]: People also watched
+          - generic [ref=e642]:
+            - generic [ref=e643]:
+              - generic [ref=e645]:
+                - link [ref=e647] [cursor=pointer]:
+                  - /url: /watch?v=70uF3uLfFrc&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHM%3D
+                - generic [ref=e649] [cursor=pointer]:
+                  - generic [ref=e650]:
+                    - heading "How to play slide guitar blues in Open D Tuning. The Music Of Mississippi Fred McDowell. 13 minutes, 21 seconds" [level=3] [ref=e652]:
+                      - link "How to play slide guitar blues in Open D Tuning. The Music Of Mississippi Fred McDowell. 13 minutes, 21 seconds" [ref=e653]:
+                        - /url: /watch?v=70uF3uLfFrc&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHM%3D
+                        - text: How to play slide guitar blues in Open D Tuning. The Music Of Mississippi Fred McDowell.
+                    - generic [ref=e656]:
+                      - generic [ref=e657]: 12K views
+                      - generic [ref=e658]: •9 years ago
+                  - generic [ref=e659]:
+                    - link "Go to channel messiahsez" [ref=e660]:
+                      - /url: /@messiahsez
+                    - link "messiahsez" [ref=e665]:
+                      - /url: /@messiahsez
+                  - generic [ref=e666]:
+                    - generic [ref=e667]: Hello sweethearts! I do this for fun and to spread happiness and Love! Guitar Lesson. Blues Guitar Lesson. Thank You!!! Love you ...
+                    - tooltip "tooltip"
+              - generic [ref=e669]:
+                - link [ref=e671] [cursor=pointer]:
+                  - /url: /watch?v=HbCdaO_aXcg&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHM%3D
+                - generic [ref=e673] [cursor=pointer]:
+                  - generic [ref=e674]:
+                    - heading "Write Me A Few Of Your Lines Mississippi Fred McDowell Slide Guitar Lesson (main riff) 17 minutes" [level=3] [ref=e676]:
+                      - link "Write Me A Few Of Your Lines Mississippi Fred McDowell Slide Guitar Lesson (main riff) 17 minutes" [ref=e677]:
+                        - /url: /watch?v=HbCdaO_aXcg&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHM%3D
+                        - text: Write Me A Few Of Your Lines Mississippi Fred McDowell Slide Guitar Lesson (main riff)
+                    - generic [ref=e680]:
+                      - generic [ref=e681]: 6.1K views
+                      - generic [ref=e682]: •4 years ago
+                  - generic [ref=e683]:
+                    - link "Go to channel The Fishin' Musician" [ref=e684]:
+                      - /url: /@thefishinmusician801
+                    - link "The Fishin' Musician" [ref=e689]:
+                      - /url: /@thefishinmusician801
+                  - generic [ref=e690]:
+                    - generic [ref=e691]: Old Facebook lesson from awhile back. Easy breakdown of Write Me A Few Of Your Lines by Mississippi Fred McDowell. Tuning ...
+                    - tooltip "tooltip"
+              - generic [ref=e693]:
+                - link [ref=e695] [cursor=pointer]:
+                  - /url: /watch?v=3dLcs_tX-S4&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHM%3D
+                - generic [ref=e697] [cursor=pointer]:
+                  - generic [ref=e698]:
+                    - 'heading "How to Play: Goin'' Down To The River by Mississippi Fred McDowell - Guitar Lesson (with Tablature) 11 minutes, 21 seconds" [level=3] [ref=e700]':
+                      - 'link "How to Play: Goin'' Down To The River by Mississippi Fred McDowell - Guitar Lesson (with Tablature) 11 minutes, 21 seconds" [ref=e701]':
+                        - /url: /watch?v=3dLcs_tX-S4&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHM%3D
+                        - text: "How to Play: Goin' Down To The River by Mississippi Fred McDowell - Guitar Lesson (with Tablature)"
+                    - generic [ref=e704]:
+                      - generic [ref=e705]: 26K views
+                      - generic [ref=e706]: •13 years ago
+                  - generic [ref=e707]:
+                    - link "Go to channel blahnok" [ref=e708]:
+                      - /url: /@blah148
+                    - link "blahnok" [ref=e713]:
+                      - /url: /@blah148
+                  - generic [ref=e714]:
+                    - generic [ref=e715]: "Link to guitar tabs/tablature: https://ploddings.com/blog/youtube-video-and-tab-directory This is a video for Goin' Down the River ..."
+                    - tooltip "tooltip"
+                  - generic [ref=e716]:
+                    - img "Fundraiser" [ref=e718]:
+                      - generic [ref=e719]: Fundraiser
+                    - img "Closed captions" [ref=e721]:
+                      - generic [ref=e722]: CC
+                  - generic [ref=e725]:
+                    - generic [ref=e726]:
+                      - generic [ref=e730]: 5 moments
+                      - button "tuning with a capo on the third fret | starts with two bass notes on the bottom string | sliding into the fifth fret of the second string | hit the bass notes twice again and then play | hitting kind of eighth notes on that forecourt"
+                    - button "More" [ref=e735]
+              - generic [ref=e742]:
+                - link [ref=e744] [cursor=pointer]:
+                  - /url: /watch?v=hIyD0fhtNVU&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHM%3D
+                - generic [ref=e746] [cursor=pointer]:
+                  - generic [ref=e747]:
+                    - 'heading "🎸 Blues Chronicles #20: Mississippi Fred McDowell - Guitar History Lesson - Reverend Robert Jones 3 minutes, 59 seconds" [level=3] [ref=e749]':
+                      - 'link "🎸 Blues Chronicles #20: Mississippi Fred McDowell - Guitar History Lesson - Reverend Robert Jones 3 minutes, 59 seconds" [ref=e750]':
+                        - /url: /watch?v=hIyD0fhtNVU&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHM%3D
+                        - text: "🎸 Blues Chronicles #20: Mississippi Fred McDowell - Guitar History Lesson - Reverend Robert Jones"
+                    - generic [ref=e753]:
+                      - generic [ref=e754]: 6.6K views
+                      - generic [ref=e755]: •5 years ago
+                  - generic [ref=e756]:
+                    - link "Go to channel TrueFire" [ref=e757]:
+                      - /url: /@TrueFireTV
+                    - generic [ref=e758]:
+                      - link "TrueFire" [ref=e762]:
+                        - /url: /@TrueFireTV
+                      - img "Verified" [ref=e765]
+                  - generic [ref=e767]:
+                    - generic [ref=e768]: "Rev. Robert Jones' Blues History Courses on TrueFire: https://bit.ly/34FoPgg \"Where the Blues Began\" Channel: ..."
+                    - tooltip "tooltip"
+            - generic "+6 more" [ref=e770] [cursor=pointer]
+        - generic [ref=e772]:
+          - link [ref=e774] [cursor=pointer]:
+            - /url: /watch?v=0qdqDID-WKY&list=RD0qdqDID-WKY&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e776] [cursor=pointer]:
+            - generic [ref=e777]:
+              - heading "Just Can't Stand It 2 minutes, 45 seconds" [level=3] [ref=e779]:
+                - link "Just Can't Stand It 2 minutes, 45 seconds" [ref=e780]:
+                  - /url: /watch?v=0qdqDID-WKY&list=RD0qdqDID-WKY&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Just Can't Stand It
+              - generic [ref=e784]: 187 views
+            - generic [ref=e785]:
+              - link "Go to channel Fred McMullen - Topic" [ref=e786]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+              - link "Fred McMullen - Topic" [ref=e791]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+            - generic [ref=e792]:
+              - generic [ref=e793]: Provided to YouTube by The Orchard Enterprises Just Can't Stand It · Fred McMullen · Ruth Willis Wait and Listen ℗ 2015 ...
+              - tooltip "tooltip"
+        - generic [ref=e795]:
+          - link [ref=e797] [cursor=pointer]:
+            - /url: /watch?v=Z7HL0AUFO08&list=RDZ7HL0AUFO08&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e799] [cursor=pointer]:
+            - generic [ref=e800]:
+              - heading "Wait And Listen 3 minutes, 3 seconds" [level=3] [ref=e802]:
+                - link "Wait And Listen 3 minutes, 3 seconds" [ref=e803]:
+                  - /url: /watch?v=Z7HL0AUFO08&list=RDZ7HL0AUFO08&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Wait And Listen
+              - generic [ref=e807]: 459 views
+            - generic [ref=e808]:
+              - link "Go to channel Fred McMullen - Topic" [ref=e809]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+              - link "Fred McMullen - Topic" [ref=e814]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+            - generic [ref=e815]:
+              - generic [ref=e816]: Provided to YouTube by Virgin Music Group Wait And Listen · Fred McMullen The Georgia Blues (1927-1933) ℗ 1991 Shanachie ...
+              - tooltip "tooltip"
+        - generic [ref=e818]:
+          - link [ref=e820] [cursor=pointer]:
+            - /url: /watch?v=CHTP7Pp55e8&list=RDCHTP7Pp55e8&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e822] [cursor=pointer]:
+            - generic [ref=e823]:
+              - heading "Rolling Mama 2 minutes, 53 seconds" [level=3] [ref=e825]:
+                - link "Rolling Mama 2 minutes, 53 seconds" [ref=e826]:
+                  - /url: /watch?v=CHTP7Pp55e8&list=RDCHTP7Pp55e8&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Rolling Mama
+              - generic [ref=e830]: 187 views
+            - generic [ref=e831]:
+              - link "Go to channel Fred McMullen - Topic" [ref=e832]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+              - link "Fred McMullen - Topic" [ref=e837]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+            - generic [ref=e838]:
+              - generic [ref=e839]: Provided to YouTube by The Orchard Enterprises Rolling Mama · Fred McMullen Wait and Listen ℗ 2015 Suncoast Music ...
+              - tooltip "tooltip"
+        - generic [ref=e841]:
+          - link [ref=e843] [cursor=pointer]:
+            - /url: /watch?v=BDAEPnh37b0&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHM%3D
+          - generic [ref=e845] [cursor=pointer]:
+            - generic [ref=e846]:
+              - 'heading "Delta Blues Guitar Lesson: Fred Mc Dowell 6 minutes, 15 seconds" [level=3] [ref=e848]':
+                - 'link "Delta Blues Guitar Lesson: Fred Mc Dowell 6 minutes, 15 seconds" [ref=e849]':
+                  - /url: /watch?v=BDAEPnh37b0&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHM%3D
+                  - text: "Delta Blues Guitar Lesson: Fred Mc Dowell"
+              - generic [ref=e852]:
+                - generic [ref=e853]: 147K views
+                - generic [ref=e854]: •17 years ago
+            - generic [ref=e855]:
+              - link "Go to channel Delta Blues Guitar Lessons" [ref=e856]:
+                - /url: /@DeltaBluesGuitarLessons
+              - link "Delta Blues Guitar Lessons" [ref=e861]:
+                - /url: /@DeltaBluesGuitarLessons
+            - generic [ref=e862]:
+              - generic [ref=e863]: This is "You've Go Move" by Mississippi Fred Mc Dowell played in a open D tuning:D A D F# A D. This is a series of free lessons ...
+              - tooltip "tooltip"
+        - generic [ref=e865]:
+          - link [ref=e867] [cursor=pointer]:
+            - /url: /watch?v=0yibguUnydk&list=RD0yibguUnydk&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e869] [cursor=pointer]:
+            - generic [ref=e870]:
+              - heading "DeKalb Chain Gang 3 minutes, 5 seconds" [level=3] [ref=e872]:
+                - link "DeKalb Chain Gang 3 minutes, 5 seconds" [ref=e873]:
+                  - /url: /watch?v=0yibguUnydk&list=RD0yibguUnydk&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: DeKalb Chain Gang
+              - generic [ref=e877]: 444 views
+            - generic [ref=e878]:
+              - link "Go to channel Fred McMullen - Topic" [ref=e879]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+              - link "Fred McMullen - Topic" [ref=e884]:
+                - /url: /channel/UCSW5IzYI4MvZ2GwHLaXoVdw
+            - generic [ref=e885]:
+              - generic [ref=e886]: Provided to YouTube by The Orchard Enterprises DeKalb Chain Gang · Fred McMullen Georgia Blues ℗ 1992 Document Records ...
+              - tooltip "tooltip"
+        - generic [ref=e888]:
+          - link [ref=e890] [cursor=pointer]:
+            - /url: /watch?v=wLoWHK7svyo&list=RDwLoWHK7svyo&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e892] [cursor=pointer]:
+            - generic [ref=e893]:
+              - heading "Kokomo Blues guitar lesson Mississippi Fred McDowell 14 minutes, 49 seconds" [level=3] [ref=e895]:
+                - link "Kokomo Blues guitar lesson Mississippi Fred McDowell 14 minutes, 49 seconds" [ref=e896]:
+                  - /url: /watch?v=wLoWHK7svyo&list=RDwLoWHK7svyo&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Kokomo Blues guitar lesson Mississippi Fred McDowell
+              - generic [ref=e899]:
+                - generic [ref=e900]: 6.3K views
+                - generic [ref=e901]: •2 months ago
+            - generic [ref=e902]:
+              - link "Go to channel Feedback Guitar Academy" [ref=e903]:
+                - /url: /@FeedbackGuitarAcademy
+              - link "Feedback Guitar Academy" [ref=e908]:
+                - /url: /@FeedbackGuitarAcademy
+            - generic [ref=e909]:
+              - text: https://www.feedbackguitaracademy.com/fga-members-offers Tabs + community to help you use what you just learned We're ...
+              - tooltip "tooltip"
+        - generic [ref=e911]:
+          - link [ref=e913] [cursor=pointer]:
+            - /url: /watch?v=4bfMpx4FOuM&list=RD4bfMpx4FOuM&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+          - generic [ref=e915] [cursor=pointer]:
+            - generic [ref=e916]:
+              - heading "Poor Stranger Blues 2 minutes, 59 seconds" [level=3] [ref=e918]:
+                - link "Poor Stranger Blues 2 minutes, 59 seconds" [ref=e919]:
+                  - /url: /watch?v=4bfMpx4FOuM&list=RD4bfMpx4FOuM&start_radio=1&pp=ygUgRnJlZCBNY011bGxlbiBibHVlcyBndWl0YXIgMTkzMHOgBwE%3D
+                  - text: Poor Stranger Blues
+              - generic [ref=e923]: 21 views
+            - generic [ref=e924]:
+              - link "Go to channel Release - Topic" [ref=e925]:
+                - /url: /channel/UCtmjTApbP5o8sUOrDmOoY8Q
+              - link "Release - Topic" [ref=e930]:
+                - /url: /channel/UCtmjTApbP5o8sUOrDmOoY8Q
+            - generic [ref=e931]:
+              - generic [ref=e932]: Provided to YouTube by Music Video Distributors Inc. Poor Stranger Blues · Fred McMullen & Curly Weaver The Georgia Guitar ...
+              - tooltip "tooltip"

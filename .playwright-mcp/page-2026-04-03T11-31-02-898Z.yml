@@ -1,0 +1,618 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+      - generic [ref=e30]:
+        - button "Settings" [ref=e35] [cursor=pointer]
+        - link "Sign in" [ref=e39] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DOtis%252BRedding%252Blive%252BMonterey%252BOR%252Bconcert%252Bperformance&hl=en&ec=65620
+          - generic [ref=e42]: Sign in
+  - main [ref=e47]:
+    - generic [ref=e48]:
+      - generic [ref=e50]:
+        - generic [ref=e53]:
+          - tablist [ref=e55]:
+            - tab "All" [selected] [ref=e59] [cursor=pointer]:
+              - generic [ref=e61]: All
+            - tab "Shorts" [ref=e68] [cursor=pointer]:
+              - generic [ref=e70]: Shorts
+            - tab "Videos" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]: Videos
+            - tab "Unwatched" [ref=e86] [cursor=pointer]:
+              - generic [ref=e88]: Unwatched
+            - tab "Watched" [ref=e95] [cursor=pointer]:
+              - generic [ref=e97]: Watched
+            - tab "Recently uploaded" [ref=e104] [cursor=pointer]:
+              - generic [ref=e106]: Recently uploaded
+            - tab "Live" [ref=e113] [cursor=pointer]:
+              - generic [ref=e115]: Live
+            - tab "Playlists" [ref=e122] [cursor=pointer]:
+              - generic [ref=e124]: Playlists
+            - tab "Under 4 min" [ref=e131] [cursor=pointer]:
+              - generic [ref=e133]: Under 4 min
+            - tab "4 - 20 min" [ref=e140] [cursor=pointer]:
+              - generic [ref=e142]: 4 - 20 min
+            - tab "Over 20 min" [ref=e149] [cursor=pointer]:
+              - generic [ref=e151]: Over 20 min
+          - button "Next" [ref=e159] [cursor=pointer]
+        - link "About these results" [ref=e168] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e169]: About these results
+        - generic [ref=e176]:
+          - button "Search filters" [ref=e178] [cursor=pointer]:
+            - generic [ref=e179]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e190]:
+        - generic [ref=e192]:
+          - link [ref=e194] [cursor=pointer]:
+            - /url: /watch?v=AqYWfxmAStU&list=RDAqYWfxmAStU&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e196] [cursor=pointer]:
+            - generic [ref=e197]:
+              - heading "Otis Redding live - various, @ Monterey Pop, 1967 18 minutes" [level=3] [ref=e199]:
+                - link "Otis Redding live - various, @ Monterey Pop, 1967 18 minutes" [ref=e200]:
+                  - /url: /watch?v=AqYWfxmAStU&list=RDAqYWfxmAStU&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Otis Redding live - various, @ Monterey Pop, 1967
+              - generic [ref=e203]:
+                - generic [ref=e204]: 94K views
+                - generic [ref=e205]: •3 years ago
+            - generic [ref=e206]:
+              - link "Go to channel retiredcanadian" [ref=e207]:
+                - /url: /@retiredcanadian5595
+              - link "retiredcanadian" [ref=e213]:
+                - /url: /@retiredcanadian5595
+            - generic [ref=e214]:
+              - generic [ref=e215]: Otis Redding (September 9, 1941 - December 10, 1967) @ Monterey Pop, June 17, 1967 performing Shake, Respect, I've Been ...
+              - tooltip "tooltip"
+        - generic [ref=e217]:
+          - link [ref=e219] [cursor=pointer]:
+            - /url: /watch?v=iJHD9SiI5YU&list=RDiJHD9SiI5YU&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e221] [cursor=pointer]:
+            - generic [ref=e222]:
+              - heading "Otis Redding - I've Been Loving You Too Long (To Stop Now) - Monterey Pop Festival - 1967 4 minutes, 3 seconds" [level=3] [ref=e224]:
+                - link "Otis Redding - I've Been Loving You Too Long (To Stop Now) - Monterey Pop Festival - 1967 4 minutes, 3 seconds" [ref=e225]:
+                  - /url: /watch?v=iJHD9SiI5YU&list=RDiJHD9SiI5YU&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: Otis Redding - I've Been Loving You Too Long (To Stop Now) - Monterey Pop Festival - 1967
+              - generic [ref=e228]:
+                - generic [ref=e229]: 366K views
+                - generic [ref=e230]: •4 years ago
+            - generic [ref=e231]:
+              - link "Go to channel cp03" [ref=e232]:
+                - /url: /@cp0303
+              - link "cp03" [ref=e238]:
+                - /url: /@cp0303
+            - generic [ref=e239]:
+              - generic [ref=e240]: Monterey Pop Festival - 1967.
+              - tooltip "tooltip"
+        - generic [ref=e242]:
+          - link [ref=e244] [cursor=pointer]:
+            - /url: /watch?v=OYuL8qn9FoY&list=RDOYuL8qn9FoY&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e246] [cursor=pointer]:
+            - generic [ref=e247]:
+              - heading "Otis Redding - Live Olympia Paris 1966 35 minutes" [level=3] [ref=e249]:
+                - link "Otis Redding - Live Olympia Paris 1966 35 minutes" [ref=e250]:
+                  - /url: /watch?v=OYuL8qn9FoY&list=RDOYuL8qn9FoY&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Otis Redding - Live Olympia Paris 1966
+              - generic [ref=e253]:
+                - generic [ref=e254]: 410K views
+                - generic [ref=e255]: •4 years ago
+            - generic [ref=e256]:
+              - link "Go to channel Real Musics" [ref=e257]:
+                - /url: /@realmusics5508
+              - link "Real Musics" [ref=e263]:
+                - /url: /@realmusics5508
+            - generic [ref=e264]:
+              - text: I was the original uploader of that video years back and at my biggest surprise no one knew about the existence of that footage. so ...
+              - tooltip "tooltip"
+        - generic [ref=e266]:
+          - link [ref=e268] [cursor=pointer]:
+            - /url: /watch?v=NuJTUpJzLOw&list=RDNuJTUpJzLOw&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e270] [cursor=pointer]:
+            - generic [ref=e271]:
+              - heading "Otis Redding - Try A Little Tenderness - Monterey Pop Festival - 1967 4 minutes, 40 seconds" [level=3] [ref=e273]:
+                - link "Otis Redding - Try A Little Tenderness - Monterey Pop Festival - 1967 4 minutes, 40 seconds" [ref=e274]:
+                  - /url: /watch?v=NuJTUpJzLOw&list=RDNuJTUpJzLOw&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Otis Redding - Try A Little Tenderness - Monterey Pop Festival - 1967
+              - generic [ref=e277]:
+                - generic [ref=e278]: 74K views
+                - generic [ref=e279]: •4 years ago
+            - generic [ref=e280]:
+              - link "Go to channel cp03" [ref=e281]:
+                - /url: /@cp0303
+              - link "cp03" [ref=e287]:
+                - /url: /@cp0303
+            - generic [ref=e288]:
+              - generic [ref=e289]: Monterey Pop Festival - 1967.
+              - tooltip "tooltip"
+        - generic [ref=e291]:
+          - link [ref=e293] [cursor=pointer]:
+            - /url: /watch?v=zxyci7b5Ypk&list=RDzxyci7b5Ypk&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e295] [cursor=pointer]:
+            - generic [ref=e296]:
+              - heading "Otis Redding LIVE at MONTEREY 31 minutes" [level=3] [ref=e298]:
+                - link "Otis Redding LIVE at MONTEREY 31 minutes" [ref=e299]:
+                  - /url: /watch?v=zxyci7b5Ypk&list=RDzxyci7b5Ypk&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Otis Redding LIVE at MONTEREY
+              - generic [ref=e302]:
+                - generic [ref=e303]: 1.6K views
+                - generic [ref=e304]: •2 years ago
+            - generic [ref=e305]:
+              - link "Go to channel sounds_greatX" [ref=e306]:
+                - /url: /@soundsgreatx
+              - link "sounds_greatX" [ref=e311]:
+                - /url: /@soundsgreatx
+        - generic [ref=e313]:
+          - link [ref=e315] [cursor=pointer]:
+            - /url: /watch?v=VxlNmNdwqFw&list=RDVxlNmNdwqFw&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e317] [cursor=pointer]:
+            - generic [ref=e318]:
+              - heading "Otis Redding Documentary, 1986. Monterey Pop Festival - June 17, 1967 at the end. VHS tape capture. 30 minutes" [level=3] [ref=e320]:
+                - link "Otis Redding Documentary, 1986. Monterey Pop Festival - June 17, 1967 at the end. VHS tape capture. 30 minutes" [ref=e321]:
+                  - /url: /watch?v=VxlNmNdwqFw&list=RDVxlNmNdwqFw&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Otis Redding Documentary, 1986. Monterey Pop Festival - June 17, 1967 at the end. VHS tape capture.
+              - generic [ref=e324]:
+                - generic [ref=e325]: 303 views
+                - generic [ref=e326]: •10 months ago
+            - generic [ref=e327]:
+              - link "Go to channel Dennis Kesler" [ref=e328]:
+                - /url: /@denniskesler5134
+              - link "Dennis Kesler" [ref=e334]:
+                - /url: /@denniskesler5134
+            - generic [ref=e335]:
+              - generic [ref=e336]: Otis Redding Documentary, 1986. Monterey Pop Festival - June 17, 1967 at the end. VHS tape capture. Steve Cropper, Donald ...
+              - tooltip "tooltip"
+        - generic [ref=e338]:
+          - link [ref=e340] [cursor=pointer]:
+            - /url: /watch?v=qufihus28II&list=RDqufihus28II&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e342] [cursor=pointer]:
+            - generic [ref=e343]:
+              - heading "Otis Redding- Satisfaction ( Live Monterey Pop Festival) 3 minutes, 1 second" [level=3] [ref=e345]:
+                - link "Otis Redding- Satisfaction ( Live Monterey Pop Festival) 3 minutes, 1 second" [ref=e346]:
+                  - /url: /watch?v=qufihus28II&list=RDqufihus28II&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Otis Redding- Satisfaction ( Live Monterey Pop Festival)
+              - generic [ref=e349]:
+                - generic [ref=e350]: 22K views
+                - generic [ref=e351]: •5 years ago
+            - generic [ref=e352]:
+              - link "Go to channel J S" [ref=e353]:
+                - /url: /@JS-sp7wd
+              - link "J S" [ref=e358]:
+                - /url: /@JS-sp7wd
+            - generic [ref=e359]:
+              - generic [ref=e360]: I was there back stage my favorite performer ever. Not a GTO yet. kicks ass on my the Stones version. Saw Otis at Fillmore faster ...
+              - tooltip "tooltip"
+        - generic [ref=e362]:
+          - link [ref=e364] [cursor=pointer]:
+            - /url: /watch?v=WWoDflSKHh4&list=RDWWoDflSKHh4&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e366] [cursor=pointer]:
+            - generic [ref=e367]:
+              - heading "Otis Redding - Respect - Monterey Pop Festival - 1967 3 minutes, 2 seconds" [level=3] [ref=e369]:
+                - link "Otis Redding - Respect - Monterey Pop Festival - 1967 3 minutes, 2 seconds" [ref=e370]:
+                  - /url: /watch?v=WWoDflSKHh4&list=RDWWoDflSKHh4&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Otis Redding - Respect - Monterey Pop Festival - 1967
+              - generic [ref=e373]:
+                - generic [ref=e374]: 33K views
+                - generic [ref=e375]: •4 years ago
+            - generic [ref=e376]:
+              - link "Go to channel cp03" [ref=e377]:
+                - /url: /@cp0303
+              - link "cp03" [ref=e382]:
+                - /url: /@cp0303
+            - generic [ref=e383]:
+              - generic [ref=e384]: Monterey Pop Festival - 1967.
+              - tooltip "tooltip"
+        - generic [ref=e385]:
+          - generic [ref=e388]:
+            - img [ref=e390]
+            - heading "Shorts" [level=2] [ref=e393]
+          - generic [ref=e394]:
+            - generic [ref=e395]:
+              - generic [ref=e398]:
+                - link [ref=e399] [cursor=pointer]:
+                  - /url: /shorts/PN0GDs3H10E
+                - generic [ref=e403] [cursor=pointer]:
+                  - link "Otis Redding 🔥 Went NUCLEAR at Monterey" [ref=e404]:
+                    - /url: /shorts/PN0GDs3H10E
+                  - generic [ref=e405]: 2.8K views
+                - button "More actions" [ref=e407] [cursor=pointer]
+              - generic [ref=e415]:
+                - link [ref=e416] [cursor=pointer]:
+                  - /url: /shorts/Bk5Jrygmy5o
+                - generic [ref=e420] [cursor=pointer]:
+                  - 'link "OTIS REDDING en MONTEREY FEST (USA) #otisredding #bestsong #bluesandrock" [ref=e421]':
+                    - /url: /shorts/Bk5Jrygmy5o
+                  - generic [ref=e422]: 1.3K views
+                - button "More actions" [ref=e424] [cursor=pointer]
+            - generic [ref=e430]:
+              - generic [ref=e433]:
+                - link [ref=e434] [cursor=pointer]:
+                  - /url: /shorts/uJwxM_r-GV4
+                - generic [ref=e438] [cursor=pointer]:
+                  - link "Otis Redding performs “Shake” at the Monterey Pop Festival, 1967" [ref=e439]:
+                    - /url: /shorts/uJwxM_r-GV4
+                  - generic [ref=e440]: 6.7K views
+                - button "More actions" [ref=e442] [cursor=pointer]
+              - generic [ref=e450]:
+                - link [ref=e451] [cursor=pointer]:
+                  - /url: /shorts/k4ThlQ5_q5s
+                - generic [ref=e455] [cursor=pointer]:
+                  - link "Otis Redding Soulful Performances" [ref=e456]:
+                    - /url: /shorts/k4ThlQ5_q5s
+                  - generic [ref=e457]: 7.4K views
+                - button "More actions" [ref=e459] [cursor=pointer]
+          - button "Show more" [ref=e468] [cursor=pointer]:
+            - generic [ref=e469]: Show more
+        - generic [ref=e476] [cursor=pointer]:
+          - link [ref=e477]:
+            - /url: /watch?v=AqYWfxmAStU&list=RDAqYWfxmAStU&start_radio=1
+            - generic [ref=e489]: Mix
+          - generic [ref=e492]:
+            - heading "Mix - Otis Redding live - various, @ Monterey Pop, 1967" [level=3] [ref=e493]:
+              - link "Mix - Otis Redding live - various, @ Monterey Pop, 1967" [ref=e494]:
+                - /url: /watch?v=AqYWfxmAStU&list=RDAqYWfxmAStU&start_radio=1
+            - generic [ref=e496]:
+              - generic [ref=e498]: Otis Redding, The Staple Singers, James Brown, and more
+              - link "Otis Redding live - various, @ Monterey Pop, 1967 · 18:40" [ref=e502]:
+                - /url: /watch?v=AqYWfxmAStU&list=RDAqYWfxmAStU&start_radio=1
+              - link "The Staple Singers Perform \"Respect Yourself\" and \"I'll Take You There\" at the 1999 Inductions · 8:22" [ref=e505]:
+                - /url: /watch?v=CnJtgggdhdg&list=RDAqYWfxmAStU&start_radio=1
+        - generic [ref=e508] [cursor=pointer]:
+          - link [ref=e509]:
+            - /url: /watch?v=pO6yD97Eva4&list=PLzGotn8LeP0fyxKlvPHrEvBEfHPL4_Fk3
+            - generic [ref=e521]: 8 videos
+          - generic [ref=e524]:
+            - heading "OTIS REDDING - LIVE AT THE MONTEREY INTERNATIONAL POP FESTIVAL" [level=3] [ref=e525]:
+              - link "OTIS REDDING - LIVE AT THE MONTEREY INTERNATIONAL POP FESTIVAL" [ref=e526]:
+                - /url: /watch?v=pO6yD97Eva4&list=PLzGotn8LeP0fyxKlvPHrEvBEfHPL4_Fk3
+            - generic [ref=e528]:
+              - generic [ref=e529]:
+                - link "Michael Patton" [ref=e532]:
+                  - /url: /@michaelpatton548
+                - generic [ref=e533]: •
+                - link "Playlist" [ref=e536]:
+                  - /url: /@michaelpatton548
+              - link "Booker-Loo · 4:07" [ref=e540]:
+                - /url: /watch?v=pO6yD97Eva4&list=PLzGotn8LeP0fyxKlvPHrEvBEfHPL4_Fk3
+              - link "Hip Hug-Her · 3:11" [ref=e543]:
+                - /url: /watch?v=zX0o34STG14&list=PLzGotn8LeP0fyxKlvPHrEvBEfHPL4_Fk3
+              - link "View full playlist" [ref=e548]:
+                - /url: /playlist?list=PLzGotn8LeP0fyxKlvPHrEvBEfHPL4_Fk3
+        - generic [ref=e550]:
+          - link [ref=e552] [cursor=pointer]:
+            - /url: /watch?v=IQ9n2_5mbig&list=RDIQ9n2_5mbig&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e554] [cursor=pointer]:
+            - generic [ref=e555]:
+              - heading "Otis Redding \"Try A Little Tenderness\" Live 1967 (Reelin' In The Years Archives) 6 minutes, 19 seconds" [level=3] [ref=e557]:
+                - link "Otis Redding \"Try A Little Tenderness\" Live 1967 (Reelin' In The Years Archives) 6 minutes, 19 seconds" [ref=e558]:
+                  - /url: /watch?v=IQ9n2_5mbig&list=RDIQ9n2_5mbig&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Otis Redding "Try A Little Tenderness" Live 1967 (Reelin' In The Years Archives)
+              - generic [ref=e561]:
+                - generic [ref=e562]: 3.5M views
+                - generic [ref=e563]: •13 years ago
+            - generic [ref=e564]:
+              - link "Go to channel ReelinInTheYears66" [ref=e565]:
+                - /url: /@ReelinInTheYears66
+              - link "ReelinInTheYears66" [ref=e570]:
+                - /url: /@ReelinInTheYears66
+            - generic [ref=e571]:
+              - text: This version of "Try a Little Tenderness" is from the 1967 Stax/Volt tour which we released on DVD in 2007 as "Stax/Volt Revue ...
+              - tooltip "tooltip"
+        - generic [ref=e573]:
+          - heading "People also watched" [level=2] [ref=e576]:
+            - generic [ref=e578]: People also watched
+          - generic [ref=e580]:
+            - generic [ref=e581]:
+              - generic [ref=e583]:
+                - link [ref=e585] [cursor=pointer]:
+                  - /url: /watch?v=miE4GYHHVNk&list=RDmiE4GYHHVNk&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                - generic [ref=e587] [cursor=pointer]:
+                  - generic [ref=e588]:
+                    - heading "Otis Redding - Live 40 minutes" [level=3] [ref=e590]:
+                      - link "Otis Redding - Live 40 minutes" [ref=e591]:
+                        - /url: /watch?v=miE4GYHHVNk&list=RDmiE4GYHHVNk&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                        - text: Otis Redding - Live
+                    - generic [ref=e594]:
+                      - generic [ref=e595]: 49K views
+                      - generic [ref=e596]: •11 years ago
+                  - generic [ref=e597]:
+                    - link "Go to channel vacantmoon" [ref=e598]:
+                      - /url: /@vacantmoon
+                    - link "vacantmoon" [ref=e603]:
+                      - /url: /@vacantmoon
+                  - generic [ref=e604]:
+                    - text: Olympia '67 & London '66.
+                    - tooltip "tooltip"
+              - generic [ref=e606]:
+                - link [ref=e608] [cursor=pointer]:
+                  - /url: /watch?v=rWFyB0JcUww&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZQ%3D%3D
+                - generic [ref=e610] [cursor=pointer]:
+                  - generic [ref=e611]:
+                    - heading "James Brown Told Otis Redding He Would Never Be King — Otis Answered With One Song at the Apollo 28 minutes" [level=3] [ref=e613]:
+                      - link "James Brown Told Otis Redding He Would Never Be King — Otis Answered With One Song at the Apollo 28 minutes" [ref=e614]:
+                        - /url: /watch?v=rWFyB0JcUww&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZQ%3D%3D
+                        - text: James Brown Told Otis Redding He Would Never Be King — Otis Answered With One Song at the Apollo
+                    - generic [ref=e617]:
+                      - generic [ref=e618]: 67K views
+                      - generic [ref=e619]: •4 weeks ago
+                  - generic [ref=e620]:
+                    - link "Go to channel Enes Çam" [ref=e621]:
+                      - /url: /@enescam6563
+                    - link "Enes Çam" [ref=e626]:
+                      - /url: /@enescam6563
+                  - generic [ref=e627]:
+                    - generic [ref=e628]: Backstage at the Apollo Theater in 1966, James Brown confronted a young Otis Redding and told him that singing pretty would ...
+                    - tooltip "tooltip"
+              - generic [ref=e630]:
+                - link [ref=e632] [cursor=pointer]:
+                  - /url: /watch?v=KUG7cHboAbM&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZQ%3D%3D
+                - generic [ref=e634] [cursor=pointer]:
+                  - generic [ref=e635]:
+                    - heading "Otis Redding, Sam and Dave - One night in London. Two film crews. Stax Volt Tour 1967 17 minutes" [level=3] [ref=e637]:
+                      - link "Otis Redding, Sam and Dave - One night in London. Two film crews. Stax Volt Tour 1967 17 minutes" [ref=e638]:
+                        - /url: /watch?v=KUG7cHboAbM&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZQ%3D%3D
+                        - text: Otis Redding, Sam and Dave - One night in London. Two film crews. Stax Volt Tour 1967
+                    - generic [ref=e641]:
+                      - generic [ref=e642]: 25K views
+                      - generic [ref=e643]: •2 years ago
+                  - generic [ref=e644]:
+                    - link "Go to channel MrDomin099 Stone" [ref=e645]:
+                      - /url: /@MrDomin099
+                    - link "MrDomin099 Stone" [ref=e650]:
+                      - /url: /@MrDomin099
+                  - generic [ref=e651]:
+                    - generic [ref=e652]: Otis Redding never had to work so hard as when following Sam and Dave on the historic Stax Volt European tour in March/April ...
+                    - tooltip "tooltip"
+              - generic [ref=e654]:
+                - link [ref=e656] [cursor=pointer]:
+                  - /url: /watch?v=FFbuzfiZmnU&list=RDFFbuzfiZmnU&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                - generic [ref=e658] [cursor=pointer]:
+                  - generic [ref=e659]:
+                    - heading "Booker T & The MG's with the Mar-Keys - live in Oslo, Norway [Colourised] 1967 5 minutes, 20 seconds" [level=3] [ref=e661]:
+                      - link "Booker T & The MG's with the Mar-Keys - live in Oslo, Norway [Colourised] 1967 5 minutes, 20 seconds" [ref=e662]:
+                        - /url: /watch?v=FFbuzfiZmnU&list=RDFFbuzfiZmnU&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                        - text: Booker T & The MG's with the Mar-Keys - live in Oslo, Norway [Colourised] 1967
+                    - generic [ref=e665]:
+                      - generic [ref=e666]: 206K views
+                      - generic [ref=e667]: •2 years ago
+                  - generic [ref=e668]:
+                    - link "Go to channel blues.in.colour" [ref=e669]:
+                      - /url: /@bluesincolour
+                    - link "blues.in.colour" [ref=e674]:
+                      - /url: /@bluesincolour
+                  - generic [ref=e675]:
+                    - text: What a groove! Filmed in Oslo on April 7, 1967 by NRK – the Norwegian public broadcasting corporation. Here's the excellent ...
+                    - tooltip "tooltip"
+            - generic "+6 more" [ref=e677] [cursor=pointer]
+        - generic [ref=e679]:
+          - link [ref=e681] [cursor=pointer]:
+            - /url: /watch?v=RlP_9HRi78Q&list=RDRlP_9HRi78Q&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e683] [cursor=pointer]:
+            - generic [ref=e684]:
+              - heading "Otis Redding at Monterey Pop 3 minutes, 48 seconds" [level=3] [ref=e686]:
+                - link "Otis Redding at Monterey Pop 3 minutes, 48 seconds" [ref=e687]:
+                  - /url: /watch?v=RlP_9HRi78Q&list=RDRlP_9HRi78Q&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Otis Redding at Monterey Pop
+              - generic [ref=e690]:
+                - generic [ref=e691]: 215K views
+                - generic [ref=e692]: •13 years ago
+            - generic [ref=e693]:
+              - link "Go to channel CRITERION" [ref=e694]:
+                - /url: /@criterioncollection
+              - link "CRITERION" [ref=e699]:
+                - /url: /@criterioncollection
+            - generic [ref=e700]:
+              - generic [ref=e701]: "Out now on Blu-ray and DVD: http://www.criterion.com/films/720-monterey-pop."
+              - tooltip "tooltip"
+        - generic [ref=e702]:
+          - generic [ref=e705]:
+            - img [ref=e707]
+            - heading "Shorts" [level=2] [ref=e710]
+          - generic [ref=e711]:
+            - generic [ref=e712]:
+              - generic [ref=e715]:
+                - link [ref=e716] [cursor=pointer]:
+                  - /url: /shorts/GI8n2ULbqJ4
+                - generic [ref=e720] [cursor=pointer]:
+                  - 'link "Otis Redding’s Soul Shines at Monterey ❤️ #MontereyPop" [ref=e721]':
+                    - /url: /shorts/GI8n2ULbqJ4
+                  - generic [ref=e722]: 2.1K views
+                - button "More actions" [ref=e724] [cursor=pointer]
+              - generic [ref=e732]:
+                - link [ref=e733] [cursor=pointer]:
+                  - /url: /shorts/tlf-Zzsuc-A
+                - generic [ref=e737] [cursor=pointer]:
+                  - 'link "The Best Moments of the Monterey Pop Festival (1967) | #shorts #rockfestival" [ref=e738]':
+                    - /url: /shorts/tlf-Zzsuc-A
+                  - generic [ref=e739]: 15K views
+                - button "More actions" [ref=e741] [cursor=pointer]
+            - generic [ref=e747]:
+              - generic [ref=e750]:
+                - link [ref=e751] [cursor=pointer]:
+                  - /url: /shorts/zv0katvQg-A
+                - generic [ref=e755] [cursor=pointer]:
+                  - link "Otis Redding - I've Been Loving You Too Long - Monterey, California, 1967" [ref=e756]:
+                    - /url: /shorts/zv0katvQg-A
+                  - generic [ref=e757]: 1.6K views
+                - button "More actions" [ref=e759] [cursor=pointer]
+              - generic [ref=e767]:
+                - link [ref=e768] [cursor=pointer]:
+                  - /url: /shorts/adwfkzlWLwk
+                - generic [ref=e772] [cursor=pointer]:
+                  - 'link "Jerry Garcia Talks AboutThe Who & Jimi Hendrix & Monterey #gratefuldead #jerrygarcia #shorts" [ref=e773]':
+                    - /url: /shorts/adwfkzlWLwk
+                  - generic [ref=e774]: 54K views
+                - button "More actions" [ref=e776] [cursor=pointer]
+          - button "Show more" [ref=e785] [cursor=pointer]:
+            - generic [ref=e786]: Show more
+        - generic [ref=e793]:
+          - link [ref=e795] [cursor=pointer]:
+            - /url: /watch?v=xlpSxnvSL3Y&list=RDxlpSxnvSL3Y&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e797] [cursor=pointer]:
+            - generic [ref=e798]:
+              - heading "Otis Redding - Shake - Monterey Pop Festival - 1967 3 minutes, 5 seconds" [level=3] [ref=e800]:
+                - link "Otis Redding - Shake - Monterey Pop Festival - 1967 3 minutes, 5 seconds" [ref=e801]:
+                  - /url: /watch?v=xlpSxnvSL3Y&list=RDxlpSxnvSL3Y&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Otis Redding - Shake - Monterey Pop Festival - 1967
+              - generic [ref=e804]:
+                - generic [ref=e805]: 31K views
+                - generic [ref=e806]: •3 years ago
+            - generic [ref=e807]:
+              - link "Go to channel cp03" [ref=e808]:
+                - /url: /@cp0303
+              - link "cp03" [ref=e813]:
+                - /url: /@cp0303
+            - generic [ref=e814]:
+              - generic [ref=e815]: Monterey Pop Festival - 1967.
+              - tooltip "tooltip"
+        - generic [ref=e817]:
+          - link [ref=e819] [cursor=pointer]:
+            - /url: /watch?v=RqNc4XLBguI&list=RDRqNc4XLBguI&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e821] [cursor=pointer]:
+            - generic [ref=e822]:
+              - heading "Otis Redding \"Try A Little Tenderness\" Live 1967 3 minutes, 40 seconds" [level=3] [ref=e824]:
+                - link "Otis Redding \"Try A Little Tenderness\" Live 1967 3 minutes, 40 seconds" [ref=e825]:
+                  - /url: /watch?v=RqNc4XLBguI&list=RDRqNc4XLBguI&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Otis Redding "Try A Little Tenderness" Live 1967
+              - generic [ref=e828]:
+                - generic [ref=e829]: 837K views
+                - generic [ref=e830]: •5 years ago
+            - generic [ref=e831]:
+              - link "Go to channel RochesFan" [ref=e832]:
+                - /url: /@RochesFan
+              - link "RochesFan" [ref=e837]:
+                - /url: /@RochesFan
+            - generic [ref=e838]:
+              - generic [ref=e839]: Cleveland December 9, 1967 His last performance.
+              - tooltip "tooltip"
+        - generic [ref=e841]:
+          - link [ref=e843] [cursor=pointer]:
+            - /url: /watch?v=kUk1WTAReyE&list=RDkUk1WTAReyE&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e845] [cursor=pointer]:
+            - generic [ref=e846]:
+              - heading "Stax Volt Tour 1967 feat. Otis Redding, Booker T. & The MGs, Sam & Dave 25 minutes" [level=3] [ref=e848]:
+                - link "Stax Volt Tour 1967 feat. Otis Redding, Booker T. & The MGs, Sam & Dave 25 minutes" [ref=e849]:
+                  - /url: /watch?v=kUk1WTAReyE&list=RDkUk1WTAReyE&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Stax Volt Tour 1967 feat. Otis Redding, Booker T. & The MGs, Sam & Dave
+              - generic [ref=e852]:
+                - generic [ref=e853]: 615K views
+                - generic [ref=e854]: •4 years ago
+            - generic [ref=e855]:
+              - link "Go to channel bobbynoe1" [ref=e856]:
+                - /url: /@bobbynoe1
+              - link "bobbynoe1" [ref=e861]:
+                - /url: /@bobbynoe1
+            - generic [ref=e862]:
+              - text: "The band: Steve „The Colonel“ Cropper (g), Donald „Duck“ Dunn (b), Al Jackson, Jr. (dr), Booker T. Jones (org), Memphis Horns."
+              - tooltip "tooltip"
+        - generic [ref=e864] [cursor=pointer]:
+          - link [ref=e865]:
+            - /url: /watch?v=qAUgmiAOU5E&list=PLfSr_ISLm5ZoqSH7Vgmct3yVo_FOkNVwq
+            - generic [ref=e877]: 61 videos
+          - generic [ref=e880]:
+            - heading "Monterey Pop Festival 1967" [level=3] [ref=e881]:
+              - link "Monterey Pop Festival 1967" [ref=e882]:
+                - /url: /watch?v=qAUgmiAOU5E&list=PLfSr_ISLm5ZoqSH7Vgmct3yVo_FOkNVwq
+            - generic [ref=e884]:
+              - generic [ref=e885]:
+                - link "Spirit of 66" [ref=e888]:
+                  - /url: /@spiritof6663
+                - generic [ref=e889]: •
+                - link "Playlist" [ref=e892]:
+                  - /url: /@spiritof6663
+                - generic [ref=e893]: •
+                - generic [ref=e894]: Updated yesterday
+              - link "The Association - Along Comes Mary - Monterey Pop Festival - 1967 · 3:51" [ref=e898]:
+                - /url: /watch?v=qAUgmiAOU5E&list=PLfSr_ISLm5ZoqSH7Vgmct3yVo_FOkNVwq
+              - link "Eric Burdon & The Animals - Paint It Black - Monterey Pop Festival - 1967 · 3:59" [ref=e901]:
+                - /url: /watch?v=qxnvzB8OTrI&list=PLfSr_ISLm5ZoqSH7Vgmct3yVo_FOkNVwq
+              - link "View full playlist" [ref=e906]:
+                - /url: /playlist?list=PLfSr_ISLm5ZoqSH7Vgmct3yVo_FOkNVwq
+        - generic [ref=e908] [cursor=pointer]:
+          - link [ref=e909]:
+            - /url: /watch?v=HIoQDG-iRn4&list=PL8j2Ud5lrvRKMwayBPZv0wI8OEEd8-RwZ
+            - generic [ref=e921]: 12 videos
+          - generic [ref=e924]:
+            - heading "Otis redding - Live at monterey pop and more" [level=3] [ref=e925]:
+              - link "Otis redding - Live at monterey pop and more" [ref=e926]:
+                - /url: /watch?v=HIoQDG-iRn4&list=PL8j2Ud5lrvRKMwayBPZv0wI8OEEd8-RwZ
+            - generic [ref=e928]:
+              - generic [ref=e929]:
+                - link "Dakota" [ref=e932]:
+                  - /url: /@dkguitarzan
+                - generic [ref=e933]: •
+                - link "Playlist" [ref=e936]:
+                  - /url: /@dkguitarzan
+              - link "Otis Redding Shake and I've Been Loving you too Long · 4:48" [ref=e940]:
+                - /url: /watch?v=HIoQDG-iRn4&list=PL8j2Ud5lrvRKMwayBPZv0wI8OEEd8-RwZ
+              - link "Otis Redding - Respect (10/14) · 3:33" [ref=e943]:
+                - /url: /watch?v=7BDw-H_hUzw&list=PL8j2Ud5lrvRKMwayBPZv0wI8OEEd8-RwZ
+              - link "View full playlist" [ref=e948]:
+                - /url: /playlist?list=PL8j2Ud5lrvRKMwayBPZv0wI8OEEd8-RwZ
+        - generic [ref=e950]:
+          - link [ref=e952] [cursor=pointer]:
+            - /url: /watch?v=RYOtDq3NUJA&list=RDRYOtDq3NUJA&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+          - generic [ref=e954] [cursor=pointer]:
+            - generic [ref=e955]:
+              - heading "Otis Redding's final performance (1967) 5 minutes, 33 seconds" [level=3] [ref=e957]:
+                - link "Otis Redding's final performance (1967) 5 minutes, 33 seconds" [ref=e958]:
+                  - /url: /watch?v=RYOtDq3NUJA&list=RDRYOtDq3NUJA&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAdIHCQnZCgGHKiGM7w%3D%3D
+                  - text: Otis Redding's final performance (1967)
+              - generic [ref=e961]:
+                - generic [ref=e962]: 1.5M views
+                - generic [ref=e963]: •4 years ago
+            - generic [ref=e964]:
+              - link "Go to channel gldnoldes" [ref=e965]:
+                - /url: /@gldnoldes
+              - link "gldnoldes" [ref=e970]:
+                - /url: /@gldnoldes
+            - generic [ref=e971]:
+              - text: "\"Upbeat\""
+              - tooltip "tooltip"
+        - generic [ref=e973]:
+          - link [ref=e975] [cursor=pointer]:
+            - /url: /watch?v=RUcTKjOQWII&list=RDRUcTKjOQWII&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e977] [cursor=pointer]:
+            - generic [ref=e978]:
+              - heading "Otis Redding, Eric Burdon & Chris Farlowe - Shake (Live, 1966) ♥♫ 5 minutes, 8 seconds" [level=3] [ref=e980]:
+                - link "Otis Redding, Eric Burdon & Chris Farlowe - Shake (Live, 1966) ♥♫ 5 minutes, 8 seconds" [ref=e981]:
+                  - /url: /watch?v=RUcTKjOQWII&list=RDRUcTKjOQWII&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: Otis Redding, Eric Burdon & Chris Farlowe - Shake (Live, 1966) ♥♫
+              - generic [ref=e984]:
+                - generic [ref=e985]: 446K views
+                - generic [ref=e986]: •16 years ago
+            - generic [ref=e987]:
+              - link "Go to channel Eric Burdon Tribute Channel 6 (unofficial)" [ref=e988]:
+                - /url: /@magusmagic6
+              - link "Eric Burdon Tribute Channel 6 (unofficial)" [ref=e993]:
+                - /url: /@magusmagic6
+            - generic [ref=e994]:
+              - generic [ref=e995]: Otis Redding, Eric Burdon & Chris Farlowe with a great live performance of 'Shake', UK TV, London September 16, 1966.
+              - tooltip "tooltip"
+        - generic [ref=e997]:
+          - link [ref=e999] [cursor=pointer]:
+            - /url: /watch?v=74J_SqEVli4&list=RD74J_SqEVli4&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+          - generic [ref=e1001] [cursor=pointer]:
+            - generic [ref=e1002]:
+              - heading "SATISFACTION - BY OTIS REDDING 3 minutes, 7 seconds" [level=3] [ref=e1004]:
+                - link "SATISFACTION - BY OTIS REDDING 3 minutes, 7 seconds" [ref=e1005]:
+                  - /url: /watch?v=74J_SqEVli4&list=RD74J_SqEVli4&start_radio=1&pp=ygUxT3RpcyBSZWRkaW5nIGxpdmUgTW9udGVyZXkgT1IgY29uY2VydCBwZXJmb3JtYW5jZaAHAQ%3D%3D
+                  - text: SATISFACTION - BY OTIS REDDING
+              - generic [ref=e1008]:
+                - generic [ref=e1009]: 178K views
+                - generic [ref=e1010]: •15 years ago
+            - generic [ref=e1011]:
+              - link "Go to channel Chris Salmon" [ref=e1012]:
+                - /url: /@CHRIS123445
+              - link "Chris Salmon" [ref=e1017]:
+                - /url: /@CHRIS123445
+            - generic [ref=e1018]:
+              - generic [ref=e1019]: OTIS REDDING - SINGS SATISFACTION - FROM THE 60s - WHEN HE WAS IN THE UK.
+              - tooltip "tooltip"

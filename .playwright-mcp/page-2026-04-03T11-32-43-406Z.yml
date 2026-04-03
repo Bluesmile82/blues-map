@@ -1,0 +1,706 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - generic [ref=e13]:
+          - link "YouTube Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e19]:
+              - img
+          - generic [ref=e20]: ES
+        - button "Skip navigation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Skip navigation
+      - button "Search" [ref=e31] [cursor=pointer]:
+        - generic [ref=e34]:
+          - img
+        - tooltip "tooltip"
+      - generic [ref=e36]:
+        - button "Settings" [ref=e41] [cursor=pointer]:
+          - generic [ref=e44]:
+            - img
+        - link "Sign in" [ref=e47] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DSunnyland%252BSlim%252Bblues%252Bpiano%252BChicago%252Blive&hl=en&ec=65620
+          - generic [ref=e51]:
+            - img
+          - generic [ref=e52]: Sign in
+  - generic [ref=e56]:
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e60]:
+          - generic [ref=e63]:
+            - tablist [ref=e65]:
+              - tab "All" [selected] [ref=e69] [cursor=pointer]:
+                - generic [ref=e71]: All
+              - tab "Shorts" [ref=e78] [cursor=pointer]:
+                - generic [ref=e80]: Shorts
+              - tab "Videos" [ref=e87] [cursor=pointer]:
+                - generic [ref=e89]: Videos
+              - tab "Unwatched" [ref=e96] [cursor=pointer]:
+                - generic [ref=e98]: Unwatched
+              - tab "Watched" [ref=e105] [cursor=pointer]:
+                - generic [ref=e107]: Watched
+              - tab "Recently uploaded" [ref=e114] [cursor=pointer]:
+                - generic [ref=e116]: Recently uploaded
+              - tab "Live" [ref=e123] [cursor=pointer]:
+                - generic [ref=e125]: Live
+              - tab "Under 4 min" [ref=e132] [cursor=pointer]:
+                - generic [ref=e134]: Under 4 min
+              - tab "4 - 20 min" [ref=e141] [cursor=pointer]:
+                - generic [ref=e143]: 4 - 20 min
+              - tab "Over 20 min" [ref=e150] [cursor=pointer]:
+                - generic [ref=e152]: Over 20 min
+            - button "Next" [ref=e160] [cursor=pointer]:
+              - generic [ref=e164]:
+                - img
+          - link "About these results" [ref=e171] [cursor=pointer]:
+            - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+            - generic [ref=e172]: About these results
+            - generic [ref=e176]:
+              - img
+          - generic [ref=e181]:
+            - button "Search filters" [ref=e183] [cursor=pointer]:
+              - generic [ref=e184]: Filters
+              - generic [ref=e188]:
+                - img
+            - tooltip "tooltip"
+        - generic [ref=e197]:
+          - generic [ref=e199]:
+            - link [ref=e201] [cursor=pointer]:
+              - /url: /watch?v=HJUsNPXiFaI&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZl
+              - img [ref=e203]
+              - img [ref=e206]:
+                - generic [ref=e207]: 4:25
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e208] [cursor=pointer]:
+              - generic [ref=e209]:
+                - generic [ref=e210]:
+                  - heading "Sunnyland Slim - Chicago Blues Festival (1994) Part 3 4 minutes, 25 seconds" [level=3] [ref=e211]:
+                    - link "Sunnyland Slim - Chicago Blues Festival (1994) Part 3 4 minutes, 25 seconds" [ref=e212]:
+                      - /url: /watch?v=HJUsNPXiFaI&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZl
+                      - text: Sunnyland Slim - Chicago Blues Festival (1994) Part 3
+                  - button "Action menu" [ref=e216]:
+                    - generic [ref=e219]:
+                      - img
+                - generic [ref=e222]:
+                  - generic [ref=e223]: 2.9K views
+                  - generic [ref=e224]: •14 years ago
+              - generic [ref=e225]:
+                - link "Go to channel RawBluesTV" [ref=e226]:
+                  - /url: /@RawBluesTV
+                - link "RawBluesTV" [ref=e232]:
+                  - /url: /@RawBluesTV
+              - generic [ref=e233]:
+                - generic [ref=e234]: Sunnyland Slim (vocal & piano) More Blues? www.radiorawblues.com.
+                - tooltip "tooltip"
+          - generic [ref=e236]:
+            - link [ref=e238] [cursor=pointer]:
+              - /url: /watch?v=0d91d6u3ufA&list=RD0d91d6u3ufA&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+              - img [ref=e240]
+              - img [ref=e243]:
+                - generic [ref=e246]:
+                  - img
+                - generic [ref=e247]: 2:32
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e248] [cursor=pointer]:
+              - generic [ref=e249]:
+                - generic [ref=e250]:
+                  - heading "Sunnyland Slim at Delta Fish Market in Chicago 2 minutes, 32 seconds" [level=3] [ref=e251]:
+                    - link "Sunnyland Slim at Delta Fish Market in Chicago 2 minutes, 32 seconds" [ref=e252]:
+                      - /url: /watch?v=0d91d6u3ufA&list=RD0d91d6u3ufA&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunnyland Slim at Delta Fish Market in Chicago
+                  - button "Action menu" [ref=e256]:
+                    - generic [ref=e259]:
+                      - img
+                - generic [ref=e262]:
+                  - generic [ref=e263]: 9.9K views
+                  - generic [ref=e264]: •18 years ago
+              - generic [ref=e265]:
+                - link "Go to channel checker764" [ref=e266]:
+                  - /url: /@checker764
+                - link "checker764" [ref=e272]:
+                  - /url: /@checker764
+              - generic [ref=e273]:
+                - generic [ref=e274]: Sunnyland Slim performing at the late, lamented Delta Fish Market on Chicago's west side, c. early 1980s. The band is Sunnyland ...
+                - tooltip "tooltip"
+          - generic [ref=e276]:
+            - link [ref=e278] [cursor=pointer]:
+              - /url: /watch?v=5zI44ZxLUek&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZl
+              - img [ref=e280]
+              - img [ref=e283]:
+                - generic [ref=e284]: 3:58
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e285] [cursor=pointer]:
+              - generic [ref=e286]:
+                - generic [ref=e287]:
+                  - heading "Sunnyland Slim - Lilly's - Chicago (1987) 3 minutes, 58 seconds" [level=3] [ref=e288]:
+                    - link "Sunnyland Slim - Lilly's - Chicago (1987) 3 minutes, 58 seconds" [ref=e289]:
+                      - /url: /watch?v=5zI44ZxLUek&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZl
+                      - text: Sunnyland Slim - Lilly's - Chicago (1987)
+                  - button "Action menu" [ref=e293]:
+                    - generic [ref=e296]:
+                      - img
+                - generic [ref=e299]:
+                  - generic [ref=e300]: 10K views
+                  - generic [ref=e301]: •14 years ago
+              - generic [ref=e302]:
+                - link "Go to channel RawBluesTV" [ref=e303]:
+                  - /url: /@RawBluesTV
+                - link "RawBluesTV" [ref=e309]:
+                  - /url: /@RawBluesTV
+              - generic [ref=e310]:
+                - generic [ref=e311]: from the France documentary "Sweet Home Chicago" Sunnyland Slim (vocal & piano), Steve Freud (guitar), Sam Burckhardt (sax), ...
+                - tooltip "tooltip"
+          - generic [ref=e313]:
+            - link [ref=e315] [cursor=pointer]:
+              - /url: /watch?v=tg_iewO1rmU&list=RDtg_iewO1rmU&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+              - img [ref=e317]
+              - img [ref=e320]:
+                - generic [ref=e323]:
+                  - img
+                - generic [ref=e324]: 6:36
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e325] [cursor=pointer]:
+              - generic [ref=e326]:
+                - generic [ref=e327]:
+                  - heading "SUNNYLAND SLIM - CHICAGO BLUES FESTIVAL 6 minutes, 36 seconds" [level=3] [ref=e328]:
+                    - link "SUNNYLAND SLIM - CHICAGO BLUES FESTIVAL 6 minutes, 36 seconds" [ref=e329]:
+                      - /url: /watch?v=tg_iewO1rmU&list=RDtg_iewO1rmU&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: SUNNYLAND SLIM - CHICAGO BLUES FESTIVAL
+                  - button "Action menu" [ref=e333]:
+                    - generic [ref=e336]:
+                      - img
+                - generic [ref=e339]:
+                  - generic [ref=e340]: 666 views
+                  - generic [ref=e341]: •4 years ago
+              - generic [ref=e342]:
+                - link "Go to channel Giacomo De Simone" [ref=e343]:
+                  - /url: /@GiacomoDeSimone
+                - link "Giacomo De Simone" [ref=e349]:
+                  - /url: /@GiacomoDeSimone
+              - generic [ref=e350]:
+                - generic [ref=e351]: Albert Luandrew known as Sunnyland Slim, was an American blues pianist who was born in the Mississippi Delta and moved to ...
+                - tooltip "tooltip"
+          - generic [ref=e353]:
+            - link [ref=e355] [cursor=pointer]:
+              - /url: /watch?v=9eavOnMQ0bk&list=RD9eavOnMQ0bk&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB0gcJCdkKAYcqIYzv
+              - img [ref=e357]
+              - img [ref=e360]:
+                - generic [ref=e363]:
+                  - img
+                - generic [ref=e364]: 3:29
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e365] [cursor=pointer]:
+              - generic [ref=e366]:
+                - generic [ref=e367]:
+                  - heading "Sunnyland Slim & Carey Bell Blues Band (Live) 3 minutes, 29 seconds" [level=3] [ref=e368]:
+                    - link "Sunnyland Slim & Carey Bell Blues Band (Live) 3 minutes, 29 seconds" [ref=e369]:
+                      - /url: /watch?v=9eavOnMQ0bk&list=RD9eavOnMQ0bk&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB0gcJCdkKAYcqIYzv
+                      - text: Sunnyland Slim & Carey Bell Blues Band (Live)
+                  - button "Action menu" [ref=e373]:
+                    - generic [ref=e376]:
+                      - img
+                - generic [ref=e379]:
+                  - generic [ref=e380]: 1.4K views
+                  - generic [ref=e381]: •4 years ago
+              - generic [ref=e382]:
+                - link "Go to channel Blues And Jazz Channel" [ref=e383]:
+                  - /url: /@bluesandjazzchannel8717
+                - link "Blues And Jazz Channel" [ref=e389]:
+                  - /url: /@bluesandjazzchannel8717
+              - generic [ref=e390]:
+                - generic [ref=e391]: Sunnyland Slim & Carey Bell Blues Band Self-paced pianist His style is characterized by heavy bass in his left hand and tremolos ...
+                - tooltip "tooltip"
+          - generic [ref=e393]:
+            - link [ref=e395] [cursor=pointer]:
+              - /url: /watch?v=f-JX_U5m4RM&list=RDf-JX_U5m4RM&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+            - generic [ref=e397] [cursor=pointer]:
+              - generic [ref=e398]:
+                - generic [ref=e399]:
+                  - heading "Sunnyland Slim - Tin Pan Alley live [Colourised] 1966 2 minutes, 40 seconds" [level=3] [ref=e400]:
+                    - link "Sunnyland Slim - Tin Pan Alley live [Colourised] 1966 2 minutes, 40 seconds" [ref=e401]:
+                      - /url: /watch?v=f-JX_U5m4RM&list=RDf-JX_U5m4RM&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunnyland Slim - Tin Pan Alley live [Colourised] 1966
+                  - button "Action menu" [ref=e405]:
+                    - generic [ref=e408]:
+                      - img
+                - generic [ref=e411]:
+                  - generic [ref=e412]: 738 views
+                  - generic [ref=e413]: •3 years ago
+              - generic [ref=e414]:
+                - link "Go to channel blues.in.colour" [ref=e415]:
+                  - /url: /@bluesincolour
+                - link "blues.in.colour" [ref=e421]:
+                  - /url: /@bluesincolour
+              - generic [ref=e422]:
+                - generic [ref=e423]: The amazing Sunnyland Slim live on a CBS blues special back in 1966. I don't make anything colourising these videos so please ...
+                - tooltip "tooltip"
+          - generic [ref=e425]:
+            - link [ref=e427] [cursor=pointer]:
+              - /url: /watch?v=Z13QGd-s2Mg&list=RDZ13QGd-s2Mg&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+            - generic [ref=e429] [cursor=pointer]:
+              - generic [ref=e430]:
+                - generic [ref=e431]:
+                  - heading "Sunnyland Slim - 'Come On Home Baby' live Colourised 1964 4 minutes, 6 seconds" [level=3] [ref=e432]:
+                    - link "Sunnyland Slim - 'Come On Home Baby' live Colourised 1964 4 minutes, 6 seconds" [ref=e433]:
+                      - /url: /watch?v=Z13QGd-s2Mg&list=RDZ13QGd-s2Mg&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunnyland Slim - 'Come On Home Baby' live Colourised 1964
+                  - button "Action menu" [ref=e437]:
+                    - generic [ref=e440]:
+                      - img
+                - generic [ref=e443]:
+                  - generic [ref=e444]: 1K views
+                  - generic [ref=e445]: •3 years ago
+              - generic [ref=e446]:
+                - link "Go to channel blues.in.colour" [ref=e447]:
+                  - /url: /@bluesincolour
+                - link "blues.in.colour" [ref=e452]:
+                  - /url: /@bluesincolour
+              - generic [ref=e453]:
+                - generic [ref=e454]: Sunnyland Slim & the brilliant Hubert Sumlin recorded live Sept 1964 and broadcast as part of the series 'Jazz Gehört und ...
+                - tooltip "tooltip"
+          - generic [ref=e456]:
+            - link [ref=e458] [cursor=pointer]:
+              - /url: /watch?v=ReGObLY1ikQ&list=RDReGObLY1ikQ&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+            - generic [ref=e460] [cursor=pointer]:
+              - generic [ref=e461]:
+                - generic [ref=e462]:
+                  - heading "Sunnyland Slim - You Put That Thing On Me (1984 - live viideo) 2 minutes, 54 seconds" [level=3] [ref=e463]:
+                    - link "Sunnyland Slim - You Put That Thing On Me (1984 - live viideo) 2 minutes, 54 seconds" [ref=e464]:
+                      - /url: /watch?v=ReGObLY1ikQ&list=RDReGObLY1ikQ&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunnyland Slim - You Put That Thing On Me (1984 - live viideo)
+                  - button "Action menu" [ref=e468]:
+                    - generic [ref=e471]:
+                      - img
+                - generic [ref=e474]:
+                  - generic [ref=e475]: 2.1K views
+                  - generic [ref=e476]: •10 years ago
+              - generic [ref=e477]:
+                - link "Go to channel Bob Juke" [ref=e478]:
+                  - /url: /@bobjuke4216
+                - link "Bob Juke" [ref=e483]:
+                  - /url: /@bobjuke4216
+              - generic [ref=e484]:
+                - generic [ref=e485]: Great 'Chicago Blues' number.
+                - tooltip "tooltip"
+          - generic [ref=e487]:
+            - link [ref=e489] [cursor=pointer]:
+              - /url: /watch?v=brjOqEZ9xjU&list=RDbrjOqEZ9xjU&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+            - generic [ref=e491] [cursor=pointer]:
+              - generic [ref=e492]:
+                - generic [ref=e493]:
+                  - heading "Sunnyland Slim / Big Voice Odom | Chicago Blues Festival 1974 1 hour, 24 minutes" [level=3] [ref=e494]:
+                    - link "Sunnyland Slim / Big Voice Odom | Chicago Blues Festival 1974 1 hour, 24 minutes" [ref=e495]:
+                      - /url: /watch?v=brjOqEZ9xjU&list=RDbrjOqEZ9xjU&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunnyland Slim / Big Voice Odom | Chicago Blues Festival 1974
+                  - button "Action menu" [ref=e499]:
+                    - generic [ref=e502]:
+                      - img
+                - generic [ref=e505]:
+                  - generic [ref=e506]: 143 views
+                  - generic [ref=e507]: •8 years ago
+              - generic [ref=e508]:
+                - link "Go to channel Catalina Greenholt" [ref=e509]:
+                  - /url: /@catalinagreenholt5741
+                - link "Catalina Greenholt" [ref=e514]:
+                  - /url: /@catalinagreenholt5741
+              - generic [ref=e515]:
+                - generic [ref=e516]: "PERSONNEL: SUNNYLAND SLIM vocal (8-18, 20, 21), piano (8-21) BIG VOICE ODOM vocal (1-7) JIMMY DAWKINS guitar OTIS ..."
+                - tooltip "tooltip"
+          - generic [ref=e518]:
+            - link [ref=e520] [cursor=pointer]:
+              - /url: /watch?v=A21C0C9grlk&list=RDA21C0C9grlk&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+            - generic [ref=e522] [cursor=pointer]:
+              - generic [ref=e523]:
+                - generic [ref=e524]:
+                  - heading "Sunnyland Slim - Live at the DC Blues Society (Full album) 49 minutes" [level=3] [ref=e525]:
+                    - link "Sunnyland Slim - Live at the DC Blues Society (Full album) 49 minutes" [ref=e526]:
+                      - /url: /watch?v=A21C0C9grlk&list=RDA21C0C9grlk&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunnyland Slim - Live at the DC Blues Society (Full album)
+                  - button "Action menu" [ref=e530]:
+                    - generic [ref=e533]:
+                      - img
+                - generic [ref=e536]:
+                  - generic [ref=e537]: 359 views
+                  - generic [ref=e538]: •1 year ago
+              - generic [ref=e539]:
+                - link "Go to channel clacer clacer" [ref=e540]:
+                  - /url: /@clacerclacer2274
+                - link "clacer clacer" [ref=e545]:
+                  - /url: /@clacerclacer2274
+              - generic [ref=e546]:
+                - generic [ref=e547]: Piano Blues, Electric Chicago Blues.
+                - tooltip "tooltip"
+          - generic [ref=e549]:
+            - link [ref=e551] [cursor=pointer]:
+              - /url: /watch?v=ICd-fNX19jQ&list=RDICd-fNX19jQ&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+            - generic [ref=e553] [cursor=pointer]:
+              - generic [ref=e554]:
+                - generic [ref=e555]:
+                  - heading "Sunnyland Slim - Tin Pan Alley 3 minutes, 27 seconds" [level=3] [ref=e556]:
+                    - link "Sunnyland Slim - Tin Pan Alley 3 minutes, 27 seconds" [ref=e557]:
+                      - /url: /watch?v=ICd-fNX19jQ&list=RDICd-fNX19jQ&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunnyland Slim - Tin Pan Alley
+                  - button "Action menu" [ref=e561]:
+                    - generic [ref=e564]:
+                      - img
+                - generic [ref=e567]:
+                  - generic [ref=e568]: 227K views
+                  - generic [ref=e569]: •19 years ago
+              - generic [ref=e570]:
+                - link "Go to channel Kenneth Sutherland" [ref=e571]:
+                  - /url: /@ragbagken
+                - link "Kenneth Sutherland" [ref=e576]:
+                  - /url: /@ragbagken
+              - generic [ref=e577]:
+                - generic [ref=e578]: "\"Blues Masters\" 1966."
+                - tooltip "tooltip"
+          - generic [ref=e580]:
+            - link [ref=e582] [cursor=pointer]:
+              - /url: /watch?v=p2Gbwe-SgTc&list=RDp2Gbwe-SgTc&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+            - generic [ref=e584] [cursor=pointer]:
+              - generic [ref=e585]:
+                - generic [ref=e586]:
+                  - heading "Sunnyland Slim - Everytime I Get To Drinkin' (Live Video - 1969) 3 minutes, 24 seconds" [level=3] [ref=e587]:
+                    - link "Sunnyland Slim - Everytime I Get To Drinkin' (Live Video - 1969) 3 minutes, 24 seconds" [ref=e588]:
+                      - /url: /watch?v=p2Gbwe-SgTc&list=RDp2Gbwe-SgTc&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunnyland Slim - Everytime I Get To Drinkin' (Live Video - 1969)
+                  - button "Action menu" [ref=e592]:
+                    - generic [ref=e595]:
+                      - img
+                - generic [ref=e598]:
+                  - generic [ref=e599]: 38K views
+                  - generic [ref=e600]: •10 years ago
+              - generic [ref=e601]:
+                - link "Go to channel Bob Juke" [ref=e602]:
+                  - /url: /@bobjuke4216
+                - link "Bob Juke" [ref=e607]:
+                  - /url: /@bobjuke4216
+              - generic [ref=e608]:
+                - generic [ref=e609]: "Festival - 1969: Sunnyland Slim - piano; Willie Dixon - bass; Johnny Shines - gtr; Clifton James - drums."
+                - tooltip "tooltip"
+          - generic [ref=e611]:
+            - heading "People also watched" [level=2] [ref=e614]:
+              - generic [ref=e616]: People also watched
+            - generic [ref=e618]:
+              - generic [ref=e619]:
+                - generic [ref=e621]:
+                  - link [ref=e623] [cursor=pointer]:
+                    - /url: /watch?v=L0c0jHHErzw&list=RDL0c0jHHErzw&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                  - generic [ref=e625] [cursor=pointer]:
+                    - generic [ref=e626]:
+                      - generic [ref=e627]:
+                        - heading "Sunnyland Slim Louis Myers Swinging Solo 15 minutes" [level=3] [ref=e628]:
+                          - link "Sunnyland Slim Louis Myers Swinging Solo 15 minutes" [ref=e629]:
+                            - /url: /watch?v=L0c0jHHErzw&list=RDL0c0jHHErzw&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                            - text: Sunnyland Slim Louis Myers Swinging Solo
+                        - button "Action menu" [ref=e633]:
+                          - generic [ref=e636]:
+                            - img
+                      - generic [ref=e639]:
+                        - generic [ref=e640]: 975 views
+                        - generic [ref=e641]: •1 year ago
+                    - generic [ref=e642]:
+                      - link "Go to channel Johnny Burgin" [ref=e643]:
+                        - /url: /channel/UCEBHvKSv_hMbkfXjyWPlTgQ
+                      - generic [ref=e644]:
+                        - link "Johnny Burgin" [ref=e648]:
+                          - /url: /channel/UCEBHvKSv_hMbkfXjyWPlTgQ
+                        - img "Official Artist Channel" [ref=e651]:
+                          - generic [ref=e654]:
+                            - img
+                    - generic [ref=e655]:
+                      - generic [ref=e656]: "Sunnyland Slim's \"Sings the Rag Time Blues\" is a perfect example of everything I love about the ABC BluesWay records: Veteran ..."
+                      - tooltip "tooltip"
+                - generic [ref=e658]:
+                  - link [ref=e660] [cursor=pointer]:
+                    - /url: /watch?v=WGr4UxfHTmw&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZl
+                  - generic [ref=e662] [cursor=pointer]:
+                    - generic [ref=e663]:
+                      - generic [ref=e664]:
+                        - heading "Sunnyland Slim- Long Tall Daddy 51 minutes" [level=3] [ref=e665]:
+                          - link "Sunnyland Slim- Long Tall Daddy 51 minutes" [ref=e666]:
+                            - /url: /watch?v=WGr4UxfHTmw&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZl
+                            - text: Sunnyland Slim- Long Tall Daddy
+                        - button "Action menu" [ref=e670]:
+                          - generic [ref=e673]:
+                            - img
+                      - generic [ref=e676]:
+                        - generic [ref=e677]: 2K views
+                        - generic [ref=e678]: •3 years ago
+                    - generic [ref=e679]:
+                      - link "Go to channel clacer cabeza" [ref=e680]:
+                        - /url: /@clacercabeza1049
+                      - link "clacer cabeza" [ref=e685]:
+                        - /url: /@clacercabeza1049
+                    - generic [ref=e686]:
+                      - generic [ref=e687]: Chicago Blues, Piano Blues,Delta Blues, Electric Chicago Blues.
+                      - tooltip "tooltip"
+                - generic [ref=e689]:
+                  - link [ref=e691] [cursor=pointer]:
+                    - /url: /watch?v=UHtNHzKEA3g&list=RDUHtNHzKEA3g&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                  - generic [ref=e693] [cursor=pointer]:
+                    - generic [ref=e694]:
+                      - generic [ref=e695]:
+                        - heading "Simon Oslender, Steve Gadd, Will Lee & Bruno Müller - \"In Good Hands\" LIVE feat. Jakob Manz 6 minutes, 46 seconds" [level=3] [ref=e696]:
+                          - link "Simon Oslender, Steve Gadd, Will Lee & Bruno Müller - \"In Good Hands\" LIVE feat. Jakob Manz 6 minutes, 46 seconds" [ref=e697]:
+                            - /url: /watch?v=UHtNHzKEA3g&list=RDUHtNHzKEA3g&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                            - text: Simon Oslender, Steve Gadd, Will Lee & Bruno Müller - "In Good Hands" LIVE feat. Jakob Manz
+                        - button "Action menu" [ref=e701]:
+                          - generic [ref=e704]:
+                            - img
+                      - generic [ref=e707]:
+                        - generic [ref=e708]: 3.5K views
+                        - generic [ref=e709]: •1 day ago
+                    - generic [ref=e710]:
+                      - link "Go to channel Simon Oslender" [ref=e711]:
+                        - /url: /channel/UCBeRVUsPT2I84ItVkB55RIQ
+                      - generic [ref=e712]:
+                        - link "Simon Oslender" [ref=e716]:
+                          - /url: /channel/UCBeRVUsPT2I84ItVkB55RIQ
+                        - img "Official Artist Channel" [ref=e719]:
+                          - generic [ref=e722]:
+                            - img
+                    - generic [ref=e723]:
+                      - generic [ref=e724]: "From the new live album \"On A Roll - Live\": Simon Oslender, Steve Gadd, Will Lee, Bruno Müller and special guest Jakob Manz ..."
+                      - tooltip "tooltip"
+                    - generic [ref=e725]:
+                      - img "New" [ref=e727]:
+                        - generic [ref=e728]: New
+                      - img "4K" [ref=e730]:
+                        - generic [ref=e731]: 4K
+                - generic [ref=e733]:
+                  - link [ref=e735] [cursor=pointer]:
+                    - /url: /watch?v=FgJ5wiyXOXs&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZl
+                  - generic [ref=e737] [cursor=pointer]:
+                    - generic [ref=e738]:
+                      - generic [ref=e739]:
+                        - heading "Carey Bell Band - 5/4/1996 - Beale Street Music Festival - Memphis 1 hour, 4 minutes" [level=3] [ref=e740]:
+                          - link "Carey Bell Band - 5/4/1996 - Beale Street Music Festival - Memphis 1 hour, 4 minutes" [ref=e741]:
+                            - /url: /watch?v=FgJ5wiyXOXs&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZl
+                            - text: Carey Bell Band - 5/4/1996 - Beale Street Music Festival - Memphis
+                        - button "Action menu" [ref=e745]:
+                          - generic [ref=e748]:
+                            - img
+                      - generic [ref=e751]:
+                        - generic [ref=e752]: 3K views
+                        - generic [ref=e753]: •5 years ago
+                    - generic [ref=e754]:
+                      - link "Go to channel Dan Ferguson (BLUES VAULT FILMS)" [ref=e755]:
+                        - /url: /@DanFergusonBluesVaultFilms
+                      - link "Dan Ferguson (BLUES VAULT FILMS)" [ref=e760]:
+                        - /url: /@DanFergusonBluesVaultFilms
+                    - generic [ref=e761]:
+                      - generic [ref=e762]: Chicago Blues Harmonica Master Carey Bell. Live in Memphis, Tennessee - May 4, 1996 Beale Street Music Festival Carey Bell ...
+                      - tooltip "tooltip"
+              - generic "+6 more" [ref=e764] [cursor=pointer]
+          - generic [ref=e766]:
+            - link [ref=e768] [cursor=pointer]:
+              - /url: /watch?v=k6QxmXcx8FM&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZl0gcJCdkKAYcqIYzv
+            - generic [ref=e770] [cursor=pointer]:
+              - generic [ref=e771]:
+                - generic [ref=e772]:
+                  - heading "Rev.Billy C.Wirtz plays piano blues Sunnyland Slim style 3 minutes, 14 seconds" [level=3] [ref=e773]:
+                    - link "Rev.Billy C.Wirtz plays piano blues Sunnyland Slim style 3 minutes, 14 seconds" [ref=e774]:
+                      - /url: /watch?v=k6QxmXcx8FM&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZl0gcJCdkKAYcqIYzv
+                      - text: Rev.Billy C.Wirtz plays piano blues Sunnyland Slim style
+                  - button "Action menu" [ref=e778]:
+                    - generic [ref=e781]:
+                      - img
+                - generic [ref=e784]:
+                  - generic [ref=e785]: 250 views
+                  - generic [ref=e786]: •10 years ago
+              - generic [ref=e787]:
+                - link "Go to channel nigelcarp" [ref=e788]:
+                  - /url: /@nigelcarp
+                - link "nigelcarp" [ref=e793]:
+                  - /url: /@nigelcarp
+              - generic [ref=e794]:
+                - generic [ref=e795]: "Westerdam piano bar. Legendary Rhythm & Blues Cruise #25 October 2015 Impromptu video converted to b/w owing to poor ..."
+                - tooltip "tooltip"
+          - generic [ref=e797]:
+            - link [ref=e799] [cursor=pointer]:
+              - /url: /watch?v=3qCt8LxRAys&list=RD3qCt8LxRAys&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+            - generic [ref=e801] [cursor=pointer]:
+              - generic [ref=e802]:
+                - generic [ref=e803]:
+                  - heading "Sunny Land Slim - Plays The Rag Time Blues (1973 Full Album) 35 minutes" [level=3] [ref=e804]:
+                    - link "Sunny Land Slim - Plays The Rag Time Blues (1973 Full Album) 35 minutes" [ref=e805]:
+                      - /url: /watch?v=3qCt8LxRAys&list=RD3qCt8LxRAys&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunny Land Slim - Plays The Rag Time Blues (1973 Full Album)
+                  - button "Action menu" [ref=e809]:
+                    - generic [ref=e812]:
+                      - img
+                - generic [ref=e815]:
+                  - generic [ref=e816]: 148 views
+                  - generic [ref=e817]: •5 months ago
+              - generic [ref=e818]:
+                - link "Go to channel Rafa Jimi" [ref=e819]:
+                  - /url: /@TheRafaJimi
+                - link "Rafa Jimi" [ref=e824]:
+                  - /url: /@TheRafaJimi
+              - generic [ref=e825]:
+                - generic [ref=e826]: Albert Luandrew (September 5, 1906 – March 17, 1995), known as Sunnyland Slim, was an American blues pianist born in the ...
+                - tooltip "tooltip"
+          - generic [ref=e828]:
+            - link [ref=e830] [cursor=pointer]:
+              - /url: /watch?v=g4i2JDyBN5I&list=RDg4i2JDyBN5I&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+            - generic [ref=e832] [cursor=pointer]:
+              - generic [ref=e833]:
+                - generic [ref=e834]:
+                  - heading "Sunnyland Slim You Put That Thang On Me Live National Down Home Blues Festival Atlanta Georgia 1984 3 minutes, 14 seconds" [level=3] [ref=e835]:
+                    - link "Sunnyland Slim You Put That Thang On Me Live National Down Home Blues Festival Atlanta Georgia 1984 3 minutes, 14 seconds" [ref=e836]:
+                      - /url: /watch?v=g4i2JDyBN5I&list=RDg4i2JDyBN5I&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunnyland Slim You Put That Thang On Me Live National Down Home Blues Festival Atlanta Georgia 1984
+                  - button "Action menu" [ref=e840]:
+                    - generic [ref=e843]:
+                      - img
+                - generic [ref=e846]:
+                  - generic [ref=e847]: 1.1K views
+                  - generic [ref=e848]: •4 years ago
+              - generic [ref=e849]:
+                - link "Go to channel LivinTheBlues" [ref=e850]:
+                  - /url: /@livintheblues202
+                - link "LivinTheBlues" [ref=e855]:
+                  - /url: /@livintheblues202
+              - generic [ref=e856]:
+                - text: Reuploaded without the commentary dubbed with the soundboard recording for better audio too. Official Audio Here ...
+                - tooltip "tooltip"
+          - generic [ref=e858]:
+            - link [ref=e860] [cursor=pointer]:
+              - /url: /watch?v=SedJ-ob_G4c&list=RDSedJ-ob_G4c&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+            - generic [ref=e862] [cursor=pointer]:
+              - generic [ref=e863]:
+                - generic [ref=e864]:
+                  - heading "Sunnyland Slim - National Down Home Blues Festival - Atlanta, Georgia (1984) 3 minutes, 23 seconds" [level=3] [ref=e865]:
+                    - link "Sunnyland Slim - National Down Home Blues Festival - Atlanta, Georgia (1984) 3 minutes, 23 seconds" [ref=e866]:
+                      - /url: /watch?v=SedJ-ob_G4c&list=RDSedJ-ob_G4c&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunnyland Slim - National Down Home Blues Festival - Atlanta, Georgia (1984)
+                  - button "Action menu" [ref=e870]:
+                    - generic [ref=e873]:
+                      - img
+                - generic [ref=e876]:
+                  - generic [ref=e877]: 463 views
+                  - generic [ref=e878]: •5 years ago
+              - generic [ref=e879]:
+                - link "Go to channel RawBluesTV" [ref=e880]:
+                  - /url: /@RawBluesTV
+                - link "RawBluesTV" [ref=e885]:
+                  - /url: /@RawBluesTV
+              - generic [ref=e886]:
+                - text: Moonshadow Saloon, Atlanta.
+                - tooltip "tooltip"
+          - generic [ref=e888]:
+            - link [ref=e890] [cursor=pointer]:
+              - /url: /watch?v=5fgmaJHb-lw&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZl
+            - generic [ref=e892] [cursor=pointer]:
+              - generic [ref=e893]:
+                - generic [ref=e894]:
+                  - heading "Sunnyland Slim Alumni Band 2016 Mühle Hunziken/Switzerland 2 hours, 12 minutes" [level=3] [ref=e895]:
+                    - link "Sunnyland Slim Alumni Band 2016 Mühle Hunziken/Switzerland 2 hours, 12 minutes" [ref=e896]:
+                      - /url: /watch?v=5fgmaJHb-lw&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZl
+                      - text: Sunnyland Slim Alumni Band 2016 Mühle Hunziken/Switzerland
+                  - button "Action menu" [ref=e900]:
+                    - generic [ref=e903]:
+                      - img
+                - generic [ref=e906]:
+                  - generic [ref=e907]: 145 views
+                  - generic [ref=e908]: •6 years ago
+              - generic [ref=e909]:
+                - link "Go to channel Urs Philipp Hug" [ref=e910]:
+                  - /url: /@ursphilipphug4334
+                - link "Urs Philipp Hug" [ref=e915]:
+                  - /url: /@ursphilipphug4334
+              - generic [ref=e916]:
+                - generic [ref=e917]: SUNNYLAND SLIM ALUMNI BAND Chicago/USA 8th April 2016 live at Mühle Hunziken/Switzerland a Co-Production of Blues ...
+                - tooltip "tooltip"
+          - generic [ref=e919]:
+            - link [ref=e921] [cursor=pointer]:
+              - /url: /watch?v=tObn73cPLFM&list=RDtObn73cPLFM&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+            - generic [ref=e923] [cursor=pointer]:
+              - generic [ref=e924]:
+                - generic [ref=e925]:
+                  - heading "Sunnyland Slim - Live in Europe 1975 (Full album) 51 minutes" [level=3] [ref=e926]:
+                    - link "Sunnyland Slim - Live in Europe 1975 (Full album) 51 minutes" [ref=e927]:
+                      - /url: /watch?v=tObn73cPLFM&list=RDtObn73cPLFM&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunnyland Slim - Live in Europe 1975 (Full album)
+                  - button "Action menu" [ref=e931]:
+                    - generic [ref=e934]:
+                      - img
+                - generic [ref=e937]:
+                  - generic [ref=e938]: 237 views
+                  - generic [ref=e939]: •1 year ago
+              - generic [ref=e940]:
+                - link "Go to channel clacer clacer" [ref=e941]:
+                  - /url: /@clacerclacer2274
+                - link "clacer clacer" [ref=e946]:
+                  - /url: /@clacerclacer2274
+              - generic [ref=e947]:
+                - generic [ref=e948]: "Electric Piano Blues, Chicago Blues Playlist: 01. It's My baby 02. Smile On My Face 03. Dust My Broom 04. Sunnyland Special 05."
+                - tooltip "tooltip"
+          - generic [ref=e950]:
+            - link [ref=e952] [cursor=pointer]:
+              - /url: /watch?v=p9Jht1gF-FM&list=RDp9Jht1gF-FM&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+            - generic [ref=e954] [cursor=pointer]:
+              - generic [ref=e955]:
+                - generic [ref=e956]:
+                  - heading "Sunnyland Slim live 4 minutes, 36 seconds" [level=3] [ref=e957]:
+                    - link "Sunnyland Slim live 4 minutes, 36 seconds" [ref=e958]:
+                      - /url: /watch?v=p9Jht1gF-FM&list=RDp9Jht1gF-FM&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunnyland Slim live
+                  - button "Action menu" [ref=e962]:
+                    - generic [ref=e965]:
+                      - img
+                - generic [ref=e968]:
+                  - generic [ref=e969]: 3.8K views
+                  - generic [ref=e970]: •9 years ago
+              - generic [ref=e971]:
+                - link "Go to channel Louis X. Erlanger" [ref=e972]:
+                  - /url: /@louisx.erlanger8545
+                - link "Louis X. Erlanger" [ref=e977]:
+                  - /url: /@louisx.erlanger8545
+              - generic [ref=e978]:
+                - generic [ref=e979]: Rare footage of blues piano great Sunnyland Slim live at the G-Note Tavern in Seattle in the early 1980s. Filmed by Sonic Video ...
+                - tooltip "tooltip"
+          - generic [ref=e981]:
+            - link [ref=e983] [cursor=pointer]:
+              - /url: /watch?v=3ACJqkxGYK0&list=RD3ACJqkxGYK0&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+            - generic [ref=e985] [cursor=pointer]:
+              - generic [ref=e986]:
+                - generic [ref=e987]:
+                  - heading "Sunnyland Slim & Blues Band 6 minutes, 50 seconds" [level=3] [ref=e988]:
+                    - link "Sunnyland Slim & Blues Band 6 minutes, 50 seconds" [ref=e989]:
+                      - /url: /watch?v=3ACJqkxGYK0&list=RD3ACJqkxGYK0&start_radio=1&pp=ygUnU3VubnlsYW5kIFNsaW0gYmx1ZXMgcGlhbm8gQ2hpY2FnbyBsaXZloAcB
+                      - text: Sunnyland Slim & Blues Band
+                  - button "Action menu" [ref=e993]:
+                    - generic [ref=e996]:
+                      - img
+                - generic [ref=e999]:
+                  - generic [ref=e1000]: 1K views
+                  - generic [ref=e1001]: •4 years ago
+              - generic [ref=e1002]:
+                - link "Go to channel Blues And Jazz Channel" [ref=e1003]:
+                  - /url: /@bluesandjazzchannel8717
+                - link "Blues And Jazz Channel" [ref=e1008]:
+                  - /url: /@bluesandjazzchannel8717
+              - generic [ref=e1009]:
+                - generic [ref=e1010]: Sunnyland Slim & Blues Band Self-paced pianist His style is characterized by heavy bass in his left hand and tremolos with his ...
+                - tooltip "tooltip"
+    - text: •

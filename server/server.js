@@ -3,6 +3,7 @@ import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
+import { upsertMusician } from '../db-sync.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -57,10 +58,11 @@ app.put('/api/musicians', (req, res) => {
     }
     
     musicians[index] = updatedMusician;
-    
+
     // Write back to file
     fs.writeFileSync(musiciansPath, JSON.stringify(musicians, null, 2), 'utf-8');
-    
+    upsertMusician(updatedMusician);
+
     console.log(`✅ Updated musician: ${updatedMusician.name}`);
     res.json(updatedMusician);
   } catch (error) {
@@ -88,10 +90,11 @@ app.post('/api/musicians', (req, res) => {
     
     // Add new musician
     musicians.push(newMusician);
-    
+
     // Write back to file
     fs.writeFileSync(musiciansPath, JSON.stringify(musicians, null, 2), 'utf-8');
-    
+    upsertMusician(newMusician);
+
     console.log(`✅ Created musician: ${newMusician.name}`);
     res.json(newMusician);
   } catch (error) {

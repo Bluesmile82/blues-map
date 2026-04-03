@@ -1,0 +1,602 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: ES
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - button "Search" [ref=e27] [cursor=pointer]:
+        - tooltip "tooltip"
+      - generic [ref=e30]:
+        - button "Settings" [ref=e35] [cursor=pointer]
+        - link "Sign in" [ref=e39] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253DWillie%252B61%252BBlackwell%252Bblues%252Bguitar%252Brecording&hl=en&ec=65620
+          - generic [ref=e42]: Sign in
+  - main [ref=e47]:
+    - generic [ref=e48]:
+      - generic [ref=e50]:
+        - generic [ref=e53]:
+          - tablist [ref=e55]:
+            - tab "All" [selected] [ref=e59] [cursor=pointer]:
+              - generic [ref=e61]: All
+            - tab "Shorts" [ref=e68] [cursor=pointer]:
+              - generic [ref=e70]: Shorts
+            - tab "Videos" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]: Videos
+            - tab "Unwatched" [ref=e86] [cursor=pointer]:
+              - generic [ref=e88]: Unwatched
+            - tab "Watched" [ref=e95] [cursor=pointer]:
+              - generic [ref=e97]: Watched
+            - tab "Recently uploaded" [ref=e104] [cursor=pointer]:
+              - generic [ref=e106]: Recently uploaded
+            - tab "Live" [ref=e113] [cursor=pointer]:
+              - generic [ref=e115]: Live
+          - button "Next" [ref=e123] [cursor=pointer]
+        - link "About these results" [ref=e132] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e133]: About these results
+        - generic [ref=e140]:
+          - button "Search filters" [ref=e142] [cursor=pointer]:
+            - generic [ref=e143]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e154]:
+        - generic [ref=e156]:
+          - link [ref=e158] [cursor=pointer]:
+            - /url: /watch?v=L7s_hMkYlVM&list=RDL7s_hMkYlVM&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+          - generic [ref=e160] [cursor=pointer]:
+            - generic [ref=e161]:
+              - heading "Willie \"61\" Blackwell Noiseless Motor Blues (1941) 3 minutes, 26 seconds" [level=3] [ref=e163]:
+                - link "Willie \"61\" Blackwell Noiseless Motor Blues (1941) 3 minutes, 26 seconds" [ref=e164]:
+                  - /url: /watch?v=L7s_hMkYlVM&list=RDL7s_hMkYlVM&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                  - text: Willie "61" Blackwell Noiseless Motor Blues (1941)
+              - generic [ref=e167]:
+                - generic [ref=e168]: 3K views
+                - generic [ref=e169]: •16 years ago
+            - generic [ref=e170]:
+              - link "Go to channel randomandrare" [ref=e171]:
+                - /url: /@randomandrare
+              - link "randomandrare" [ref=e177]:
+                - /url: /@randomandrare
+            - generic [ref=e178]:
+              - generic [ref=e179]: I do not own the copyright to this recording. This video is for historical and educational purposes Composed by Willie Blackwell ...
+              - tooltip "tooltip"
+        - generic [ref=e181]:
+          - link [ref=e183] [cursor=pointer]:
+            - /url: /watch?v=yb5lTGKt7vM&list=RDyb5lTGKt7vM&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+          - generic [ref=e185] [cursor=pointer]:
+            - generic [ref=e186]:
+              - heading "Willie \"61\" Blackwell Bald Eagle Blues (1941) 3 minutes, 28 seconds" [level=3] [ref=e188]:
+                - link "Willie \"61\" Blackwell Bald Eagle Blues (1941) 3 minutes, 28 seconds" [ref=e189]:
+                  - /url: /watch?v=yb5lTGKt7vM&list=RDyb5lTGKt7vM&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+                  - text: Willie "61" Blackwell Bald Eagle Blues (1941)
+              - generic [ref=e192]:
+                - generic [ref=e193]: 604 views
+                - generic [ref=e194]: •8 years ago
+            - generic [ref=e195]:
+              - link "Go to channel randomandrare" [ref=e196]:
+                - /url: /@randomandrare
+              - link "randomandrare" [ref=e202]:
+                - /url: /@randomandrare
+            - generic [ref=e203]:
+              - generic [ref=e204]: I do not own the copyright to this recording. This video is for historical and educational purposes only. Composed by Willie ...
+              - tooltip "tooltip"
+        - generic [ref=e206]:
+          - link [ref=e208] [cursor=pointer]:
+            - /url: /watch?v=DAaPMJa3fvQ&list=RDDAaPMJa3fvQ&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+          - generic [ref=e210] [cursor=pointer]:
+            - generic [ref=e211]:
+              - heading "\"Noiseless Motor Blues\" (Willie '61' Blackwell, 1941). 2 minutes, 6 seconds" [level=3] [ref=e213]:
+                - link "\"Noiseless Motor Blues\" (Willie '61' Blackwell, 1941). 2 minutes, 6 seconds" [ref=e214]:
+                  - /url: /watch?v=DAaPMJa3fvQ&list=RDDAaPMJa3fvQ&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                  - text: "\"Noiseless Motor Blues\" (Willie '61' Blackwell, 1941)."
+              - generic [ref=e217]:
+                - generic [ref=e218]: 127 views
+                - generic [ref=e219]: •5 years ago
+            - generic [ref=e220]:
+              - link "Go to channel bluesbada" [ref=e221]:
+                - /url: /@bluesbada
+              - link "bluesbada" [ref=e227]:
+                - /url: /@bluesbada
+        - generic [ref=e229]:
+          - link [ref=e231] [cursor=pointer]:
+            - /url: /watch?v=5HXk5utrsCY&list=RD5HXk5utrsCY&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+          - generic [ref=e233] [cursor=pointer]:
+            - generic [ref=e234]:
+              - heading "Willie '61' Blackwell, Rampaw street blues 3 minutes, 20 seconds" [level=3] [ref=e236]:
+                - link "Willie '61' Blackwell, Rampaw street blues 3 minutes, 20 seconds" [ref=e237]:
+                  - /url: /watch?v=5HXk5utrsCY&list=RD5HXk5utrsCY&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                  - text: Willie '61' Blackwell, Rampaw street blues
+              - generic [ref=e240]:
+                - generic [ref=e241]: 456 views
+                - generic [ref=e242]: •12 years ago
+            - generic [ref=e243]:
+              - link "Go to channel Edith de Ronde" [ref=e244]:
+                - /url: /@edithderonde
+              - link "Edith de Ronde" [ref=e250]:
+                - /url: /@edithderonde
+            - generic [ref=e251]:
+              - generic [ref=e252]: I do not own the copyrights to this recordings, so if it needs to be removed, I will remove it.
+              - tooltip "tooltip"
+        - generic [ref=e254]:
+          - link [ref=e256] [cursor=pointer]:
+            - /url: /watch?v=Xw7wW6rxTs4&list=RDXw7wW6rxTs4&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+          - generic [ref=e258] [cursor=pointer]:
+            - generic [ref=e259]:
+              - heading "Willie \"61\" Blackwell She's Young And Wild (1941) 3 minutes, 18 seconds" [level=3] [ref=e261]:
+                - link "Willie \"61\" Blackwell She's Young And Wild (1941) 3 minutes, 18 seconds" [ref=e262]:
+                  - /url: /watch?v=Xw7wW6rxTs4&list=RDXw7wW6rxTs4&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                  - text: Willie "61" Blackwell She's Young And Wild (1941)
+              - generic [ref=e265]:
+                - generic [ref=e266]: 673 views
+                - generic [ref=e267]: •8 years ago
+            - generic [ref=e268]:
+              - link "Go to channel randomandrare" [ref=e269]:
+                - /url: /@randomandrare
+              - link "randomandrare" [ref=e275]:
+                - /url: /@randomandrare
+            - generic [ref=e276]:
+              - generic [ref=e277]: I do not own the copyright to this recording. This video is for historical and educational purposes only. Composed by Willie ...
+              - tooltip "tooltip"
+        - generic [ref=e279]:
+          - link [ref=e281] [cursor=pointer]:
+            - /url: /watch?v=VHwhVLSLC5w&list=RDVHwhVLSLC5w&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+          - generic [ref=e283] [cursor=pointer]:
+            - generic [ref=e284]:
+              - heading "Willie \"61\" Blackwell - Don't Misuse Me, Baby 3 minutes, 22 seconds" [level=3] [ref=e286]:
+                - link "Willie \"61\" Blackwell - Don't Misuse Me, Baby 3 minutes, 22 seconds" [ref=e287]:
+                  - /url: /watch?v=VHwhVLSLC5w&list=RDVHwhVLSLC5w&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                  - text: Willie "61" Blackwell - Don't Misuse Me, Baby
+              - generic [ref=e290]:
+                - generic [ref=e291]: 1K views
+                - generic [ref=e292]: •13 years ago
+            - generic [ref=e293]:
+              - link "Go to channel The Soul of Sam Collins" [ref=e294]:
+                - /url: /@TheSoulOfSamCollins
+              - link "The Soul of Sam Collins" [ref=e299]:
+                - /url: /@TheSoulOfSamCollins
+            - generic [ref=e300]:
+              - generic [ref=e301]: "Willie \"61\" Blackwell, Beale Street, Memphis 1970 photographer: Mike Rowe source: Back cover of Flyright FLY 541 ..."
+              - tooltip "tooltip"
+        - generic [ref=e303]:
+          - link [ref=e305] [cursor=pointer]:
+            - /url: /watch?v=0X8hztm5w1k&list=RD0X8hztm5w1k&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+          - generic [ref=e307] [cursor=pointer]:
+            - generic [ref=e308]:
+              - heading "Willie \"61\" Blackwell - Chalk My Toy 3 minutes, 12 seconds" [level=3] [ref=e310]:
+                - link "Willie \"61\" Blackwell - Chalk My Toy 3 minutes, 12 seconds" [ref=e311]:
+                  - /url: /watch?v=0X8hztm5w1k&list=RD0X8hztm5w1k&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                  - text: Willie "61" Blackwell - Chalk My Toy
+              - generic [ref=e314]:
+                - generic [ref=e315]: 890 views
+                - generic [ref=e316]: •14 years ago
+            - generic [ref=e317]:
+              - link "Go to channel alzo61" [ref=e318]:
+                - /url: /@alzo61
+              - link "alzo61" [ref=e323]:
+                - /url: /@alzo61
+            - generic [ref=e324]:
+              - generic [ref=e325]: "From the When The Levee Breaks: Mississippi Blues (Rare Cuts 1926-41) (2007) Recorded July 30, 1941 in Chicago; Willie \"61\" ..."
+              - tooltip "tooltip"
+        - generic [ref=e327]:
+          - link [ref=e329] [cursor=pointer]:
+            - /url: /watch?v=B2ZA2eDyWaw&list=RDB2ZA2eDyWaw&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+          - generic [ref=e331] [cursor=pointer]:
+            - generic [ref=e332]:
+              - heading "Machine Gun Blues 3 minutes, 10 seconds" [level=3] [ref=e334]:
+                - link "Machine Gun Blues 3 minutes, 10 seconds" [ref=e335]:
+                  - /url: /watch?v=B2ZA2eDyWaw&list=RDB2ZA2eDyWaw&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                  - text: Machine Gun Blues
+              - generic [ref=e339]: 261 views
+            - generic [ref=e340]:
+              - link "Go to channel Release - Topic" [ref=e341]:
+                - /url: /channel/UC78eWUhRq7i1Erv3x7A6pMQ
+              - link "Release - Topic" [ref=e346]:
+                - /url: /channel/UC78eWUhRq7i1Erv3x7A6pMQ
+            - generic [ref=e347]:
+              - generic [ref=e348]: Provided to YouTube by The Orchard Enterprises Machine Gun Blues · Willie '61' Blackwell Carl Martin / Willie '61' Blackwell ...
+              - tooltip "tooltip"
+        - generic [ref=e350]:
+          - link [ref=e352] [cursor=pointer]:
+            - /url: /watch?v=2EETU6mDaK0&list=RD2EETU6mDaK0&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+          - generic [ref=e354] [cursor=pointer]:
+            - generic [ref=e355]:
+              - heading "Machine Gun Blues - Willie '61' Blackwell 3 minutes, 10 seconds" [level=3] [ref=e357]:
+                - link "Machine Gun Blues - Willie '61' Blackwell 3 minutes, 10 seconds" [ref=e358]:
+                  - /url: /watch?v=2EETU6mDaK0&list=RD2EETU6mDaK0&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+                  - text: Machine Gun Blues - Willie '61' Blackwell
+              - generic [ref=e361]:
+                - generic [ref=e362]: 1.3K views
+                - generic [ref=e363]: •13 years ago
+            - generic [ref=e364]:
+              - link "Go to channel baalhabeit" [ref=e365]:
+                - /url: /@Baalhabait
+              - link "baalhabeit" [ref=e370]:
+                - /url: /@Baalhabait
+            - generic [ref=e371]:
+              - generic [ref=e372]: Machine Gun Blues (1941) by Willie '61' Blackwell.
+              - tooltip "tooltip"
+        - generic [ref=e374]:
+          - link [ref=e376] [cursor=pointer]:
+            - /url: /watch?v=ofSib8xIZwA&list=RDofSib8xIZwA&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+          - generic [ref=e378] [cursor=pointer]:
+            - generic [ref=e379]:
+              - 'heading "Jive # 7- Side B - Willie Blackwell Rides Again on Side B ! Chicago , Illinois 1987- Original 45s 43 minutes" [level=3] [ref=e381]':
+                - 'link "Jive # 7- Side B - Willie Blackwell Rides Again on Side B ! Chicago , Illinois 1987- Original 45s 43 minutes" [ref=e382]':
+                  - /url: /watch?v=ofSib8xIZwA&list=RDofSib8xIZwA&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                  - text: "Jive # 7- Side B - Willie Blackwell Rides Again on Side B ! Chicago , Illinois 1987- Original 45s"
+              - generic [ref=e385]:
+                - generic [ref=e386]: 486 views
+                - generic [ref=e387]: •1 year ago
+            - generic [ref=e388]:
+              - link "Go to channel rickydubra50" [ref=e389]:
+                - /url: /@rickydubra5091
+              - link "rickydubra50" [ref=e394]:
+                - /url: /@rickydubra5091
+            - generic [ref=e395]:
+              - generic [ref=e396]: No one collected or could spin original 45s like Willie B ! Right in his living room , two turntables a mixer and power amp , EQ ...
+              - tooltip "tooltip"
+        - generic [ref=e398]:
+          - link [ref=e400] [cursor=pointer]:
+            - /url: /watch?v=r7alhRrCIos&list=RDr7alhRrCIos&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+          - generic [ref=e402] [cursor=pointer]:
+            - generic [ref=e403]:
+              - heading "\"Bald Eagle Blues\" (Willie '61' Blackwell_1941). 2 minutes, 20 seconds" [level=3] [ref=e405]:
+                - link "\"Bald Eagle Blues\" (Willie '61' Blackwell_1941). 2 minutes, 20 seconds" [ref=e406]:
+                  - /url: /watch?v=r7alhRrCIos&list=RDr7alhRrCIos&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+                  - text: "\"Bald Eagle Blues\" (Willie '61' Blackwell_1941)."
+              - generic [ref=e409]:
+                - generic [ref=e410]: 33 views
+                - generic [ref=e411]: •9 months ago
+            - generic [ref=e412]:
+              - link "Go to channel bluesbada" [ref=e413]:
+                - /url: /@bluesbada
+              - link "bluesbada" [ref=e418]:
+                - /url: /@bluesbada
+            - generic [ref=e419]:
+              - generic [ref=e420]: "countrybluesguitar #countryblues #blues #guitar #bluesguitarist #guitarrablues #acousticblues #bluescommunity."
+              - tooltip "tooltip"
+        - generic [ref=e422]:
+          - link [ref=e424] [cursor=pointer]:
+            - /url: /watch?v=Z9VfZ9vXiz4&list=RDZ9VfZ9vXiz4&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+          - generic [ref=e426] [cursor=pointer]:
+            - generic [ref=e427]:
+              - heading "Willie \"61\" Blackwell - Four O'Clock (Flower) Blues 3 minutes, 24 seconds" [level=3] [ref=e429]:
+                - link "Willie \"61\" Blackwell - Four O'Clock (Flower) Blues 3 minutes, 24 seconds" [ref=e430]:
+                  - /url: /watch?v=Z9VfZ9vXiz4&list=RDZ9VfZ9vXiz4&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                  - text: Willie "61" Blackwell - Four O'Clock (Flower) Blues
+              - generic [ref=e433]:
+                - generic [ref=e434]: 1.4K views
+                - generic [ref=e435]: •13 years ago
+            - generic [ref=e436]:
+              - link "Go to channel alzo61" [ref=e437]:
+                - /url: /@alzo61
+              - link "alzo61" [ref=e442]:
+                - /url: /@alzo61
+            - generic [ref=e443]:
+              - generic [ref=e444]: "From the Mississippi Blues & Gospel: Field Recordings (1934-1942) Recorded July 16, 1942 at Sadie Beck's Plantation, Arkansas ..."
+              - tooltip "tooltip"
+        - generic [ref=e446]:
+          - heading "People also watched" [level=2] [ref=e449]:
+            - generic [ref=e451]: People also watched
+          - generic [ref=e453]:
+            - generic [ref=e454]:
+              - generic [ref=e456]:
+                - link [ref=e458] [cursor=pointer]:
+                  - /url: /watch?v=50UgA0nz8PA&list=RD50UgA0nz8PA&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                - generic [ref=e460] [cursor=pointer]:
+                  - generic [ref=e461]:
+                    - heading "Scrapper Blackwell – Blues Before Sunrise | Acoustic Blues Performance 5 minutes, 29 seconds" [level=3] [ref=e463]:
+                      - link "Scrapper Blackwell – Blues Before Sunrise | Acoustic Blues Performance 5 minutes, 29 seconds" [ref=e464]:
+                        - /url: /watch?v=50UgA0nz8PA&list=RD50UgA0nz8PA&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                        - text: Scrapper Blackwell – Blues Before Sunrise | Acoustic Blues Performance
+                    - generic [ref=e467]:
+                      - generic [ref=e468]: 15K views
+                      - generic [ref=e469]: •16 years ago
+                  - generic [ref=e470]:
+                    - link "Go to channel Acoustic Blues Guitar Lessons - Jim Bruce" [ref=e471]:
+                      - /url: /@JimBruceguitar.com_
+                    - link "Acoustic Blues Guitar Lessons - Jim Bruce" [ref=e476]:
+                      - /url: /@JimBruceguitar.com_
+                  - generic [ref=e477]:
+                    - generic [ref=e478]: Master Texas & Delta fingerstyle → https://jimbruceguitar.com/texasdeltalessons More fingerstyle blues lessons here (playlist) ...
+                    - tooltip "tooltip"
+              - generic [ref=e480]:
+                - link [ref=e482] [cursor=pointer]:
+                  - /url: /watch?v=kDUlN1YwBZ8&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5n
+                - generic [ref=e484] [cursor=pointer]:
+                  - generic [ref=e485]:
+                    - heading "Mississippi Blues Riffs that every guitar player should Know! (Maxwell Street Jimmy Davis) 9 minutes, 52 seconds" [level=3] [ref=e487]:
+                      - link "Mississippi Blues Riffs that every guitar player should Know! (Maxwell Street Jimmy Davis) 9 minutes, 52 seconds" [ref=e488]:
+                        - /url: /watch?v=kDUlN1YwBZ8&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5n
+                        - text: Mississippi Blues Riffs that every guitar player should Know! (Maxwell Street Jimmy Davis)
+                    - generic [ref=e491]:
+                      - generic [ref=e492]: 142K views
+                      - generic [ref=e493]: •1 year ago
+                  - generic [ref=e494]:
+                    - link "Go to channel Feedback Guitar Academy" [ref=e495]:
+                      - /url: /@FeedbackGuitarAcademy
+                    - link "Feedback Guitar Academy" [ref=e500]:
+                      - /url: /@FeedbackGuitarAcademy
+                  - generic [ref=e501]:
+                    - generic [ref=e502]: Work with me — https://www.feedbackguitaracademy.com/blues-starter-pack-opt-in Get the free Blues Starter Pack (tabs + ...
+                    - tooltip "tooltip"
+              - generic [ref=e504]:
+                - link [ref=e506] [cursor=pointer]:
+                  - /url: /watch?v=tviBvlOD9-s&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5n
+                - generic [ref=e508] [cursor=pointer]:
+                  - generic [ref=e509]:
+                    - heading "Mixing Minor And Major Blues Sounds - The One Lick That Shows You How 10 minutes, 45 seconds" [level=3] [ref=e511]:
+                      - link "Mixing Minor And Major Blues Sounds - The One Lick That Shows You How 10 minutes, 45 seconds" [ref=e512]:
+                        - /url: /watch?v=tviBvlOD9-s&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5n
+                        - text: Mixing Minor And Major Blues Sounds - The One Lick That Shows You How
+                    - generic [ref=e515]:
+                      - generic [ref=e516]: 1.5K views
+                      - generic [ref=e517]: •7 days ago
+                  - generic [ref=e518]:
+                    - link "Go to channel Blues Guitar Unleashed" [ref=e519]:
+                      - /url: /@bluesguitarunleashed
+                    - link "Blues Guitar Unleashed" [ref=e524]:
+                      - /url: /@bluesguitarunleashed
+                  - generic [ref=e525]:
+                    - generic [ref=e526]: If you've not heard of mixing the major and minor blues sounds, you're in for a treat today... Not only will we cover why and how ...
+                    - tooltip "tooltip"
+                  - generic [ref=e529]:
+                    - generic [ref=e530]:
+                      - generic [ref=e534]: 4 chapters
+                      - button "Introduction | Why you want to mix the sounds | Why NOT the 3 fret rule | The blues lick that demonstrates this concept"
+                    - button "More" [ref=e539]
+              - generic [ref=e546]:
+                - link [ref=e548] [cursor=pointer]:
+                  - /url: /watch?v=pS4Ic1wrfqA&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5n
+                - generic [ref=e550] [cursor=pointer]:
+                  - generic [ref=e551]:
+                    - heading "Willie Brown | Mississippi Blues (Acoustic Blues Guitar Lesson) Pt 1 5 minutes, 19 seconds" [level=3] [ref=e553]:
+                      - link "Willie Brown | Mississippi Blues (Acoustic Blues Guitar Lesson) Pt 1 5 minutes, 19 seconds" [ref=e554]:
+                        - /url: /watch?v=pS4Ic1wrfqA&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5n
+                        - text: Willie Brown | Mississippi Blues (Acoustic Blues Guitar Lesson) Pt 1
+                    - generic [ref=e557]:
+                      - generic [ref=e558]: 47K views
+                      - generic [ref=e559]: •4 years ago
+                  - generic [ref=e560]:
+                    - link "Go to channel Joes Guitar lessons" [ref=e561]:
+                      - /url: /@JoeMurphysGuitarlessons
+                    - link "Joes Guitar lessons" [ref=e566]:
+                      - /url: /@JoeMurphysGuitarlessons
+                  - generic [ref=e567]:
+                    - generic [ref=e568]: Welcome to this lesson for Mississippi Blues by Willie Brown on acoustic blues guitar. On Patreon I have broken this song down ...
+                    - tooltip "tooltip"
+            - generic "+6 more" [ref=e570] [cursor=pointer]
+        - generic [ref=e572]:
+          - link [ref=e574] [cursor=pointer]:
+            - /url: /watch?v=KxTHswf0DNg&list=RDKxTHswf0DNg&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+          - generic [ref=e576] [cursor=pointer]:
+            - generic [ref=e577]:
+              - heading "Noiseless Motor Blues 3 minutes, 24 seconds" [level=3] [ref=e579]:
+                - link "Noiseless Motor Blues 3 minutes, 24 seconds" [ref=e580]:
+                  - /url: /watch?v=KxTHswf0DNg&list=RDKxTHswf0DNg&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB0gcJCdkKAYcqIYzv
+                  - text: Noiseless Motor Blues
+              - generic [ref=e584]: 82 views
+            - generic [ref=e585]:
+              - link "Go to channel Release - Topic" [ref=e586]:
+                - /url: /channel/UCSsa3GezDLN1VaVvEmzROFg
+              - link "Release - Topic" [ref=e591]:
+                - /url: /channel/UCSsa3GezDLN1VaVvEmzROFg
+            - generic [ref=e592]:
+              - generic [ref=e593]: "Provided to YouTube by The Orchard Enterprises Noiseless Motor Blues · Willie '61' Blackwell When The Levee Breaks: ..."
+              - tooltip "tooltip"
+        - generic [ref=e595]:
+          - link [ref=e597] [cursor=pointer]:
+            - /url: /watch?v=jqCPIuG2Si0&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5n
+          - generic [ref=e599] [cursor=pointer]:
+            - generic [ref=e600]:
+              - heading "Alan Lomax - Interview Willie '61' Blackwell 26 seconds" [level=3] [ref=e602]:
+                - link "Alan Lomax - Interview Willie '61' Blackwell 26 seconds" [ref=e603]:
+                  - /url: /watch?v=jqCPIuG2Si0&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5n
+                  - text: Alan Lomax - Interview Willie '61' Blackwell
+              - generic [ref=e606]:
+                - generic [ref=e607]: 262 views
+                - generic [ref=e608]: •11 years ago
+            - generic [ref=e609]:
+              - link "Go to channel Rafouls Silva" [ref=e610]:
+                - /url: /@rafoulssilva6068
+              - link "Rafouls Silva" [ref=e615]:
+                - /url: /@rafoulssilva6068
+            - generic [ref=e616]:
+              - generic [ref=e617]: Recorded by Alan Lomax (The Land Where The Blues Began)
+              - tooltip "tooltip"
+        - generic [ref=e619]:
+          - link [ref=e621] [cursor=pointer]:
+            - /url: /watch?v=nZEuu9Fn5fA&list=RDnZEuu9Fn5fA&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+          - generic [ref=e623] [cursor=pointer]:
+            - generic [ref=e624]:
+              - heading "Interview With Willie \"61\" Blackwell 28 seconds" [level=3] [ref=e626]:
+                - link "Interview With Willie \"61\" Blackwell 28 seconds" [ref=e627]:
+                  - /url: /watch?v=nZEuu9Fn5fA&list=RDnZEuu9Fn5fA&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                  - text: Interview With Willie "61" Blackwell
+              - generic [ref=e631]: 697 views
+            - generic [ref=e632]:
+              - link "Go to channel Release - Topic" [ref=e633]:
+                - /url: /channel/UCuku7eniawg5ktqwxOsHkbA
+              - link "Release - Topic" [ref=e638]:
+                - /url: /channel/UCuku7eniawg5ktqwxOsHkbA
+            - generic [ref=e639]:
+              - generic [ref=e640]: Provided to YouTube by Universal Music Group Interview With Willie "61" Blackwell · Willie Blackwell The Land Where The Blues ...
+              - tooltip "tooltip"
+        - generic [ref=e642]:
+          - link [ref=e644] [cursor=pointer]:
+            - /url: /watch?v=AmAjsA44lxk&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5n
+          - generic [ref=e646] [cursor=pointer]:
+            - generic [ref=e647]:
+              - heading "Willie '61' Blackwell Machine gun blues 3 minutes, 11 seconds" [level=3] [ref=e649]:
+                - link "Willie '61' Blackwell Machine gun blues 3 minutes, 11 seconds" [ref=e650]:
+                  - /url: /watch?v=AmAjsA44lxk&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5n
+                  - text: Willie '61' Blackwell Machine gun blues
+              - generic [ref=e653]:
+                - generic [ref=e654]: 123 views
+                - generic [ref=e655]: •8 years ago
+            - generic [ref=e656]:
+              - link "Go to channel Blues Blues" [ref=e657]:
+                - /url: /@bluesblues7060
+              - link "Blues Blues" [ref=e662]:
+                - /url: /@bluesblues7060
+        - generic [ref=e664]:
+          - link [ref=e666] [cursor=pointer]:
+            - /url: /watch?v=AETUDxudyEs&list=RDAETUDxudyEs&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+          - generic [ref=e668] [cursor=pointer]:
+            - generic [ref=e669]:
+              - heading "Willie Blackwell Tribute Pt. 1 9 minutes, 28 seconds" [level=3] [ref=e671]:
+                - link "Willie Blackwell Tribute Pt. 1 9 minutes, 28 seconds" [ref=e672]:
+                  - /url: /watch?v=AETUDxudyEs&list=RDAETUDxudyEs&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                  - text: Willie Blackwell Tribute Pt. 1
+              - generic [ref=e675]:
+                - generic [ref=e676]: 304 views
+                - generic [ref=e677]: •15 years ago
+            - generic [ref=e678]:
+              - link "Go to channel Knobbs" [ref=e679]:
+                - /url: /@steveknoebber
+              - link "Knobbs" [ref=e684]:
+                - /url: /@steveknoebber
+            - generic [ref=e685]:
+              - text: Recorded at Martyr's in Chicago, August 29 2010.
+              - tooltip "tooltip"
+        - generic [ref=e687]:
+          - link [ref=e689] [cursor=pointer]:
+            - /url: /watch?v=pwMnUNP6we0&list=RDpwMnUNP6we0&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+          - generic [ref=e691] [cursor=pointer]:
+            - generic [ref=e692]:
+              - heading "Willie '61' Blackwell Rampaw street blues 3 minutes, 15 seconds" [level=3] [ref=e694]:
+                - link "Willie '61' Blackwell Rampaw street blues 3 minutes, 15 seconds" [ref=e695]:
+                  - /url: /watch?v=pwMnUNP6we0&list=RDpwMnUNP6we0&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                  - text: Willie '61' Blackwell Rampaw street blues
+              - generic [ref=e698]:
+                - generic [ref=e699]: 67 views
+                - generic [ref=e700]: •8 years ago
+            - generic [ref=e701]:
+              - link "Go to channel Blues Blues" [ref=e702]:
+                - /url: /@bluesblues7060
+              - link "Blues Blues" [ref=e707]:
+                - /url: /@bluesblues7060
+        - generic [ref=e709]:
+          - link [ref=e711] [cursor=pointer]:
+            - /url: /watch?v=Ym45sQUTplU&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5n
+          - generic [ref=e713] [cursor=pointer]:
+            - generic [ref=e714]:
+              - heading "Willie Blackwell Tribute Pt. 2 13 minutes, 24 seconds" [level=3] [ref=e716]:
+                - link "Willie Blackwell Tribute Pt. 2 13 minutes, 24 seconds" [ref=e717]:
+                  - /url: /watch?v=Ym45sQUTplU&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5n
+                  - text: Willie Blackwell Tribute Pt. 2
+              - generic [ref=e720]:
+                - generic [ref=e721]: 156 views
+                - generic [ref=e722]: •15 years ago
+            - generic [ref=e723]:
+              - link "Go to channel Knobbs" [ref=e724]:
+                - /url: /@steveknoebber
+              - link "Knobbs" [ref=e729]:
+                - /url: /@steveknoebber
+            - generic [ref=e730]:
+              - text: Recorded at Martyr's in Chicago August 29, 2010.
+              - tooltip "tooltip"
+        - generic [ref=e731]:
+          - generic [ref=e734]:
+            - img [ref=e736]
+            - heading "Shorts" [level=2] [ref=e739]
+          - generic [ref=e740]:
+            - generic [ref=e741]:
+              - generic [ref=e744]:
+                - link [ref=e745] [cursor=pointer]:
+                  - /url: /shorts/eXMNrNWhh4U
+                - generic [ref=e749] [cursor=pointer]:
+                  - 'link "How Long Blues by Leroy Carr & Scrapper Blackwell #blues #guitar #piano #naptown" [ref=e750]':
+                    - /url: /shorts/eXMNrNWhh4U
+                  - generic [ref=e751]: 100 views
+                - button "More actions" [ref=e753] [cursor=pointer]
+              - generic [ref=e761]:
+                - link [ref=e762] [cursor=pointer]:
+                  - /url: /shorts/e9b9FtompR8
+                - generic [ref=e766] [cursor=pointer]:
+                  - 'link "#fingerpickingguitar #bluesguitar #guildguitars #scrapperblackwell" [ref=e767]':
+                    - /url: /shorts/e9b9FtompR8
+                  - generic [ref=e768]: 758 views
+                - button "More actions" [ref=e770] [cursor=pointer]
+            - generic [ref=e776]:
+              - generic [ref=e779]:
+                - link [ref=e780] [cursor=pointer]:
+                  - /url: /shorts/TAXV7SOgoN0
+                - generic [ref=e784] [cursor=pointer]:
+                  - link "Willie Mae (B.B.Broonzy) blues guitar lesson by www.michel-lelong-music-house.com" [ref=e785]:
+                    - /url: /shorts/TAXV7SOgoN0
+                  - generic [ref=e786]: 172 views
+                - button "More actions" [ref=e788] [cursor=pointer]
+              - generic [ref=e796]:
+                - link [ref=e797] [cursor=pointer]:
+                  - /url: /shorts/-QJAqhtrR88
+                - generic [ref=e801] [cursor=pointer]:
+                  - 'link "Revisiting Delta Blues Willie Johnson''s 3 Chord Magic | 🎸 Greenwood, Mississippi #acousticblues" [ref=e802]':
+                    - /url: /shorts/-QJAqhtrR88
+                  - generic [ref=e803]: 287 views
+                - button "More actions" [ref=e805] [cursor=pointer]
+          - button "Show more" [ref=e814] [cursor=pointer]:
+            - generic [ref=e815]: Show more
+        - generic [ref=e822]:
+          - link [ref=e824] [cursor=pointer]:
+            - /url: /watch?v=mVYCYq6PEjc&list=RDmVYCYq6PEjc&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+          - generic [ref=e826] [cursor=pointer]:
+            - generic [ref=e827]:
+              - heading "Noiseless Motor Blues 3 minutes, 25 seconds" [level=3] [ref=e829]:
+                - link "Noiseless Motor Blues 3 minutes, 25 seconds" [ref=e830]:
+                  - /url: /watch?v=mVYCYq6PEjc&list=RDmVYCYq6PEjc&start_radio=1&pp=ygUqV2lsbGllIDYxIEJsYWNrd2VsbCBibHVlcyBndWl0YXIgcmVjb3JkaW5noAcB
+                  - text: Noiseless Motor Blues
+              - generic [ref=e834]: 221 views
+            - generic [ref=e835]:
+              - link "Go to channel Release - Topic" [ref=e836]:
+                - /url: /channel/UC78eWUhRq7i1Erv3x7A6pMQ
+              - link "Release - Topic" [ref=e841]:
+                - /url: /channel/UC78eWUhRq7i1Erv3x7A6pMQ
+            - generic [ref=e842]:
+              - generic [ref=e843]: Provided to YouTube by The Orchard Enterprises Noiseless Motor Blues · Willie '61' Blackwell Carl Martin / Willie '61' Blackwell ...
+              - tooltip "tooltip"
+        - generic [ref=e844]:
+          - generic [ref=e847]:
+            - img [ref=e849]
+            - heading "Shorts" [level=2] [ref=e852]
+          - generic [ref=e853]:
+            - generic [ref=e854]:
+              - generic [ref=e857]:
+                - link [ref=e858] [cursor=pointer]:
+                  - /url: /shorts/o4ukyFqjXaY
+                - generic [ref=e862] [cursor=pointer]:
+                  - 'link "One week of Bill’s Cafe. Thank you all for listening🤘🏽 #bluescommunity #guitar #blues" [ref=e863]':
+                    - /url: /shorts/o4ukyFqjXaY
+                  - generic [ref=e864]: 1.2K views
+                - button "More actions" [ref=e866] [cursor=pointer]
+              - generic [ref=e874]:
+                - link [ref=e875] [cursor=pointer]:
+                  - /url: /shorts/zvC9HgM2ykQ
+                - generic [ref=e879] [cursor=pointer]:
+                  - 'link "Happy Birthday Willie Weeks (Aug 5 1947) #onthisday #blues #bassguitar #happybirthday" [ref=e880]':
+                    - /url: /shorts/zvC9HgM2ykQ
+                  - generic [ref=e881]: 403 views
+                - button "More actions" [ref=e883] [cursor=pointer]
+            - generic [ref=e889]:
+              - generic [ref=e892]:
+                - link [ref=e893] [cursor=pointer]:
+                  - /url: /shorts/7BmjjX7hous
+                - generic [ref=e897] [cursor=pointer]:
+                  - 'link "Blues Guitar Dynamics with Austin John #blues #guitar #guitarsolo #bluesmusic #gibson" [ref=e898]':
+                    - /url: /shorts/7BmjjX7hous
+                  - generic [ref=e899]: 671 views
+                - button "More actions" [ref=e901] [cursor=pointer]
+              - generic [ref=e909]:
+                - link [ref=e910] [cursor=pointer]:
+                  - /url: /shorts/-zyxla-7Go8
+                - generic [ref=e914] [cursor=pointer]:
+                  - link "Bill Worrell Band | \"Kinda Makes Me Blue\" | Solo" [ref=e915]:
+                    - /url: /shorts/-zyxla-7Go8
+                  - generic [ref=e916]: 1.4K views
+                - button "More actions" [ref=e918] [cursor=pointer]
+          - button "Show more" [ref=e927] [cursor=pointer]:
+            - generic [ref=e928]: Show more
