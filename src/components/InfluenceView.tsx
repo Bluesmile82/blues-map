@@ -521,6 +521,32 @@ export default function InfluenceView({
     }
   }, [forceZoomToId, deckVS, positions, musicians, onZoomComplete]);
 
+  // Zoom to selectedId on mount (view switch) — fires once positions are ready
+  const zoomedToRef = useRef<string | null>(null);
+  useEffect(() => {
+    if (!selectedId || !deckVS || !positions[selectedId]) return;
+    if (zoomedToRef.current === selectedId) return;
+    const m = musicians.find(mus => mus.id === selectedId);
+    if (m) {
+      zoomedToRef.current = selectedId;
+      goToMusician(m);
+    }
+  }, [selectedId, deckVS, positions, musicians]);
+
+  // Pulse animation for selected musician
+  const [pulsePhase, setPulsePhase] = useState(0);
+  const pulseRafRef = useRef<number>(0);
+  useEffect(() => {
+    if (!selectedId) return;
+    const start = performance.now();
+    const animate = (now: number) => {
+      setPulsePhase(((now - start) % 1800) / 1800);
+      pulseRafRef.current = requestAnimationFrame(animate);
+    };
+    pulseRafRef.current = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(pulseRafRef.current);
+  }, [selectedId]);
+
   // Handle picking
   const onHover = useCallback((info: PickingInfo) => {
     const m = info.object as { musician: Musician } | undefined;
@@ -928,6 +954,33 @@ export default function InfluenceView({
     ];
   }, [dims.width, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, clusterLabelData, visibleMusicianLabels, currentZoom, styleTreePaths]);
 
+  // Pulse ring — outside memo so it re-renders every animation frame
+  const pulseLayer = useMemo(() => {
+    if (!selectedId) return null;
+    const d = musicianData.find((m) => m.musician.id === selectedId);
+    if (!d) return null;
+    const pos = interpolatedPositions[selectedId] ?? d.position;
+    const eased = Math.sin(pulsePhase * Math.PI);
+    const pulseRadius = cappedRadius + eased * cappedRadius * 2.5;
+    const [r, g, b] = getStyleColor(d.musician.bluesStyle);
+    const pulseAlpha = Math.round((1 - pulsePhase) * 200);
+    return new ScatterplotLayer({
+      id: 'pulse-ring',
+      data: [d],
+      getPosition: () => [pos[0] * xExpand, pos[1]] as [number, number],
+      getRadius: pulseRadius,
+      radiusUnits: 'common' as const,
+      getFillColor: [255, 255, 255, 0] as [number, number, number, number],
+      stroked: true,
+      getLineColor: [r, g, b, pulseAlpha] as [number, number, number, number],
+      lineWidthMinPixels: 2,
+      lineWidthMaxPixels: 3,
+      pickable: false,
+      updateTriggers: { getRadius: [pulsePhase], getLineColor: [pulsePhase] },
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedId, musicianData, interpolatedPositions, pulsePhase, cappedRadius, xExpand]);
+
   // Search
   const searchQuery = search.trim().toLowerCase();
   const searchMatches = searchQuery
@@ -1043,7 +1096,7 @@ export default function InfluenceView({
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             viewState={{ zoom: deckVS.zoom, target: deckVS.target, minZoom: deckVS.minZoom, maxZoom: deckVS.maxZoom } as any}
             onViewStateChange={handleViewStateChange}
-            layers={deckLayers}
+            layers={pulseLayer ? [...deckLayers, pulseLayer] : deckLayers}
             getCursor={({ isHovering }) => isHovering ? 'pointer' : 'grab'}
             style={{ position: 'absolute', top: '0', left: '0', right: '0', bottom: '0' }}
           />

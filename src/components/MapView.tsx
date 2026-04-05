@@ -413,21 +413,37 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
     [onZoomChange]
   );
 
-  // Zoom to selected musician
+  // Zoom to selected musician — fires on mount (view switch) and when selectedId changes
+  const zoomedToRef = useRef<string | null>(null);
   useEffect(() => {
-    if (selectedId) {
-      const musician = completeMusicians.find((m) => m.id === selectedId);
-      if (musician) {
-        setViewState({
-          ...viewState,
-          longitude: musician.birthCoords[0],
-          latitude: musician.birthCoords[1],
-          zoom: 6,
-          transitionDuration: 1500,
-        });
-      }
+    if (!selectedId) return;
+    if (zoomedToRef.current === selectedId) return;
+    const musician = completeMusicians.find((m) => m.id === selectedId);
+    if (musician) {
+      zoomedToRef.current = selectedId;
+      setViewState((vs) => ({
+        ...vs,
+        longitude: musician.birthCoords[0],
+        latitude: musician.birthCoords[1],
+        zoom: 6,
+        transitionDuration: 1500,
+      }));
     }
   }, [selectedId, completeMusicians]);
+
+  // Pulse animation for selected musician
+  const [pulsePhase, setPulsePhase] = useState(0);
+  const pulseRafRef = useRef<number>(0);
+  useEffect(() => {
+    if (!selectedId) return;
+    const start = performance.now();
+    const animate = (now: number) => {
+      setPulsePhase(((now - start) % 1800) / 1800);
+      pulseRafRef.current = requestAnimationFrame(animate);
+    };
+    pulseRafRef.current = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(pulseRafRef.current);
+  }, [selectedId]);
 
   const spentPlaces = useMemo<SpentFlat[]>(
     () =>
@@ -762,6 +778,32 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
   ], [spentPlaces, migrationArcs, focusId, onSelect, visibleMapLabels, clusters, points,
     spiderLegs, spideredClusterId, collapseSpider, onClusterClick, viewState, theme, spiderProgress]);
 
+  // Pulse ring — outside memo so it re-renders every animation frame
+  const pulseLayer = useMemo(() => {
+    if (!selectedId) return null;
+    const selectedPoint = points.find((p) => p.musician.id === selectedId);
+    if (!selectedPoint) return null;
+    const eased = Math.sin(pulsePhase * Math.PI);
+    const pulseRadius = 14 + eased * 22;
+    const [r, g, b] = getStyleColor(selectedPoint.musician.bluesStyle);
+    const pulseAlpha = Math.round((1 - pulsePhase) * 200);
+    return new ScatterplotLayer<ClusterPoint>({
+      id: 'pulse-ring',
+      data: [selectedPoint],
+      getPosition: (d) => d.position,
+      getRadius: pulseRadius,
+      radiusUnits: 'pixels' as const,
+      getFillColor: [255, 255, 255, 0] as [number, number, number, number],
+      stroked: true,
+      getLineColor: [r, g, b, pulseAlpha] as [number, number, number, number],
+      lineWidthUnits: 'pixels' as const,
+      getLineWidth: 2,
+      pickable: false,
+      updateTriggers: { getRadius: [pulsePhase], getLineColor: [pulsePhase] },
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedId, points, pulsePhase]);
+
   const hoveredMusician = hovered ? completeMusicians.find((m) => m.id === hovered) : null;
   return (
     <div className="relative w-full h-full">
@@ -808,7 +850,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
           viewState={viewState}
           onViewStateChange={handleViewStateChange}
           controller={true}
-          layers={layers}
+          layers={pulseLayer ? [...layers, pulseLayer] : layers}
           getCursor={({ isHovering }: { isHovering: boolean }) => (isHovering ? 'pointer' : 'grab')}
           onClick={(info: { object?: unknown }) => {
             // Click on empty space collapses spider

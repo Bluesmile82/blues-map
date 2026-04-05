@@ -911,10 +911,10 @@
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmgyIeotgPeB7ykVYBisx5eb-vEUL1bl99B41xOyFapeYVm7invasUQ6dra6pkJZtZb6TXWzAxGJSt3ZY5dHSg5mZZcoYeW2SIUDPq2T6fT66soPrrdVoJ7592mv7dkWh27jf4Iw/s640-rw/2.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Andy_Rodgers_-_Pittsburgh_Pirates_-_1966.jpg",
     "birthDate": "1983-10-18",
-    "birthPlace": "Falkirk, Scotland",
+    "birthPlace": "Liberty, Mississippi",
     "birthCoords": [
-      -3.7844444444444,
-      56.000555555556
+      -90.812,
+      31.158
     ],
     "deathDate": null,
     "deathPlace": null,
@@ -34754,7 +34754,7 @@
     "birthPlace": "Mississippi",
     "birthCoords": [
       -89.5,
-      33.0
+      33
     ],
     "deathDate": null,
     "deathPlace": null,
@@ -34799,5 +34799,905 @@
       "memphis-minnie"
     ],
     "source": "https://en.wikipedia.org/wiki/Jug_band"
+  },
+  {
+    "id": "garfield-akers",
+    "name": "Garfield Akers",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/CottonfieldBlues.jpg?width=500",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/c/c0/CottonfieldBlues.jpg?width=500",
+    "birthDate": "1908-01-01",
+    "birthPlace": "Mississippi",
+    "birthCoords": [
+      -89.993,
+      34.824
+    ],
+    "deathDate": "1959-01-01",
+    "deathPlace": "Hernando, Mississippi",
+    "deathCoords": [
+      -89.993,
+      34.824
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Hernando, Mississippi",
+        "coords": [
+          -89.993,
+          34.824
+        ]
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.15
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "",
+    "albums": [],
+    "description": "Garfield Akers was an American blues singer and guitarist from Hernando, Mississippi, who recorded only four sides in 1929–1930, most notably the two-part 'Cottonfield Blues' with Mississippi Joe Callicott. His driving guitar rhythms and piercing vocal style have been hailed as an early precursor to rock and roll.",
+    "activeFrom": "1929",
+    "influences": [],
+    "influencedBy": [
+      "john-lee-hooker",
+      "robert-wilkins"
+    ],
+    "incomplete": true,
+    "playedWith": [
+      "joe-callicott",
+      "frank-stokes"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Garfield_Akers",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "cecil-augusta",
+    "name": "Cecil Augusta",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1920-01-01",
+    "birthPlace": "Mississippi",
+    "birthCoords": [
+      -89.7,
+      32.9
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=qlQxnrvjS2I",
+    "albums": [
+      {
+        "name": "Alan Lomax: Blues Songbook (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=qlQxnrvjS2I"
+      }
+    ],
+    "description": "Cecil Augusta was an American Delta blues singer and guitarist who recorded two tracks for Alan Lomax in Memphis, Tennessee, in 1959, including 'Stop All the Buses'. Musicologist David Evans described him as a unique acoustic guitarist whose technique anticipated electric blues playing.",
+    "activeFrom": "1959",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Cecil_Augusta",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "nathan-beauregard",
+    "name": "Nathan Beauregard",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/34/NathanBeauregard.jpg?width=500",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/3/34/NathanBeauregard.jpg?width=500",
+    "birthDate": "1892-02-01",
+    "birthPlace": "Benton County, Mississippi",
+    "birthCoords": [
+      -89.17,
+      34.84
+    ],
+    "deathDate": "1970-05-25",
+    "deathPlace": "Memphis, Tennessee",
+    "deathCoords": [
+      -90.05,
+      35.15
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.05,
+          35.15
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ssFBestce3k",
+    "albums": [
+      {
+        "name": "The 1968 Memphis Country Blues Festival (1968)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ssFBestce3k"
+      },
+      {
+        "name": "Memphis Swamp Jam (1969)",
+        "youtubeLink": "https://www.youtube.com/watch?v=iMapqkiq4YM"
+      },
+      {
+        "name": "The Memphis Blues Again Vol. 1 (1971)",
+        "youtubeLink": "https://www.youtube.com/watch?v=O04naQf7cFE"
+      }
+    ],
+    "description": "Nathan Beauregard was a blind American blues singer and guitarist from Benton County, Mississippi. Born blind, he became a musician with a repertoire of pre-blues era songs and dance tunes but was never offered a recording deal during the 1920s race recordings era. Rediscovered in 1968 during the folk and blues revival, he spent his final years performing at festivals and recording on labels including Blue Horizon, Blue Thumb, Arhoolie, and Adelphi.",
+    "activeFrom": "1968",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bukka-white",
+      "furry-lewis",
+      "robert-wilkins",
+      "joe-callicott",
+      "sleepy-john-estes",
+      "mississippi-fred-mcdowell"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Nathan_Beauregard",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "jimmy-bertrand",
+    "name": "Jimmy Bertrand",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1900-02-24",
+    "birthPlace": "Biloxi, Mississippi",
+    "birthCoords": [
+      -88.8853,
+      30.396
+    ],
+    "deathDate": "1960-08-01",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Drums",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=QSsq057PBNQ",
+    "albums": [
+      {
+        "name": "Jimmy Bertrand's Washboard Wizards (1926-1927)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UjVgaZTnX2s"
+      },
+      {
+        "name": "The Blues Stampede (1927)",
+        "youtubeLink": "https://www.youtube.com/watch?v=QSsq057PBNQ"
+      },
+      {
+        "name": "Easy Come Easy Go Blues (1927)",
+        "youtubeLink": "https://www.youtube.com/watch?v=QRFoQbtufi8"
+      }
+    ],
+    "description": "Jimmy Bertrand was an American jazz and blues percussionist born in Biloxi, Mississippi, who was active on the Chicago blues and jazz scene of the 1920s. He recorded with numerous artists and led Jimmy Bertrand's Washboard Wizards, and was also a noted instructor whose pupils included Lionel Hampton.",
+    "activeFrom": "1920",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "blind-blake"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Jimmy_Bertrand",
+    "secondaryInstruments": [
+      "Washboard"
+    ]
+  },
+  {
+    "id": "dennis-binder",
+    "name": "Dennis Binder",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1928-11-18",
+    "birthPlace": "Rosedale, Mississippi",
+    "birthCoords": [
+      -90.874,
+      33.8554
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis, Missouri",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Clarksdale, Mississippi",
+        "coords": [
+          -90.5707,
+          34.2001
+        ]
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=WHNkWFtAN8c",
+    "albums": [
+      {
+        "name": "Hole in That Jug (2007)",
+        "youtubeLink": "https://www.youtube.com/watch?v=8IF43FSO2cY"
+      },
+      {
+        "name": "Long Man Blues (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=WHNkWFtAN8c"
+      }
+    ],
+    "description": "Dennis Binder is an American rhythm and blues musician and singer-songwriter born in Rosedale, Mississippi, best known for his song 'Long Man Blues'. He began his career in the 1950s recording for prominent labels including Chess, Sun, and Modern Records, and collaborated with Ike Turner's Kings of Rhythm.",
+    "activeFrom": "1951",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ike-turner",
+      "earl-hooker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Dennis_Binder",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "mr-bo",
+    "name": "Mr. Bo",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1932-04-07",
+    "birthPlace": "Indianola, Mississippi",
+    "birthCoords": [
+      -90.6459,
+      33.4507
+    ],
+    "deathDate": "1995-09-19",
+    "deathPlace": "Detroit, Michigan",
+    "deathCoords": [
+      -83.0458,
+      42.3314
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Detroit, Michigan",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=loYju3PxJXM",
+    "albums": [
+      {
+        "name": "If Trouble Was Money (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=loYju3PxJXM"
+      }
+    ],
+    "description": "Louis Collins, known professionally as Mr. Bo, was an American electric blues guitarist, singer and songwriter born in Indianola, Mississippi. Primarily working as a live performer in Detroit for four decades, his co-written song 'If Trouble Was Money' was later recorded by both Charlie Musselwhite and Albert Collins.",
+    "activeFrom": "1956",
+    "influences": [
+      "t-bone-walker",
+      "bb-king"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Mr._Bo",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "houston-boines",
+    "name": "Houston Boines",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1918-12-30",
+    "birthPlace": "Hazlehurst, Mississippi",
+    "birthCoords": [
+      -90.6388,
+      31.8626
+    ],
+    "deathDate": "1970-11-08",
+    "deathPlace": "Jackson, Mississippi",
+    "deathCoords": [
+      -90.1848,
+      32.2988
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Greenville, Mississippi",
+        "coords": [
+          -90.9932,
+          33.4096
+        ]
+      },
+      {
+        "place": "Helena, Arkansas",
+        "coords": [
+          -90.592,
+          34.527
+        ]
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Jackson, Mississippi",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=P6bNH9nu88k",
+    "albums": [
+      {
+        "name": "Sun: The Roots Of Rock: Volume 2 - Sam's Blues (1976)",
+        "youtubeLink": "https://www.youtube.com/watch?v=P6bNH9nu88k"
+      },
+      {
+        "name": "The Modern Downhome Blues Sessions, Volume 2 (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=DT6c_JQy4mk"
+      }
+    ],
+    "description": "Houston Boines was an American blues harmonica player and singer from Hazlehurst, Mississippi. Recruited by talent scout Ike Turner, he recorded for Modern Records in 1952 and for Sun Records in 1953. He also broadcast on the legendary King Biscuit Time radio program on KFFA in Helena, Arkansas.",
+    "activeFrom": "1945",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ike-turner",
+      "little-milton",
+      "joe-willie-wilkins"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Houston_Boines",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "charley-booker",
+    "name": "Charley Booker",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1925-09-03",
+    "birthPlace": "Moorhead, Mississippi",
+    "birthCoords": [
+      -90.5043,
+      33.4504
+    ],
+    "deathDate": "1989-09-20",
+    "deathPlace": "South Bend, Indiana",
+    "deathCoords": [
+      -86.252,
+      41.6764
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Leland, Mississippi",
+        "coords": [
+          -90.8968,
+          33.409
+        ]
+      },
+      {
+        "place": "Greenville, Mississippi",
+        "coords": [
+          -91.0457,
+          33.4087
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ttV31MDlFFM",
+    "albums": [
+      {
+        "name": "No Ridin' Blues / Rabbit Blues (1952)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ttV31MDlFFM"
+      },
+      {
+        "name": "Moonrise Blues / Charley's Boogie Woogie (1952)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UcCDHi5sbjo"
+      }
+    ],
+    "description": "Charley Booker was an American blues singer and guitarist from the Mississippi Delta who recorded in the early 1950s for Modern Records. He learned guitar from his uncle, who had played with Charley Patton, and worked with notable musicians including Ike Turner and Elmore James in the Greenville, Mississippi area.",
+    "activeFrom": "1938",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ike-turner",
+      "elmore-james",
+      "sonny-boy-williamson",
+      "little-milton",
+      "joe-willie-wilkins"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Charley_Booker",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "rl-boyce",
+    "name": "R. L. Boyce",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1955-08-15",
+    "birthPlace": "Como, Mississippi",
+    "birthCoords": [
+      -89.9387,
+      34.5065
+    ],
+    "deathDate": "2023-11-09",
+    "deathPlace": "Como, Mississippi",
+    "deathCoords": [
+      -89.9387,
+      34.5065
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Como, Mississippi",
+        "coords": [
+          -89.9387,
+          34.5065
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=HT2FT6M53EQ",
+    "albums": [
+      {
+        "name": "Ain't the Man's Alright (2013)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Roll and Tumble (2017)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Rattlesnake Boogie (2018)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "R. L. Boyce was an American blues singer, songwriter, and guitarist born and raised in Como, Mississippi. A protege of Hill Country blues legends R. L. Burnside and Mississippi Fred McDowell, he began his career playing drums before becoming a Grammy-nominated solo artist. His 2017 album Roll and Tumble was nominated for a Grammy Award, and in 2023 he received a National Heritage Fellowship from the NEA.",
+    "activeFrom": "1965",
+    "influences": [
+      "rl-burnside",
+      "mississippi-fred-mcdowell"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "cedric-burnside",
+      "jessie-mae-hemphill"
+    ],
+    "source": "https://en.wikipedia.org/wiki/R._L._Boyce",
+    "secondaryInstruments": [
+      "Vocals",
+      "Drums"
+    ]
+  },
+  {
+    "id": "jackie-brenston",
+    "name": "Jackie Brenston",
+    "image": "https://upload.wikimedia.org/wikipedia/en/7/7f/Jackie_Brenston.jpg?width=500",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/7/7f/Jackie_Brenston.jpg?width=500",
+    "birthDate": "1930-08-15",
+    "birthPlace": "Clarksdale, Mississippi",
+    "birthCoords": [
+      -90.5726,
+      34.2001
+    ],
+    "deathDate": "1979-12-15",
+    "deathPlace": "Memphis, Tennessee",
+    "deathCoords": [
+      -90.049,
+      35.1495
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Saxophone",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=MWGPznPnxkE",
+    "albums": [
+      {
+        "name": "The Mistreater (2007)",
+        "youtubeLink": "https://www.youtube.com/watch?v=MWGPznPnxkE"
+      }
+    ],
+    "description": "Jackie Brenston was an American singer and saxophonist who, with Ike Turner's band the Kings of Rhythm, recorded 'Rocket 88' in 1951 at Sam Phillips' studio in Memphis. The song reached number one on the Billboard R&B chart and is widely considered one of the first rock and roll records.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ike-turner",
+      "bb-king",
+      "otis-rush",
+      "lowell-fulson",
+      "earl-hooker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Jackie_Brenston",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "eden-brent",
+    "name": "Eden Brent",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Rawa_Blues_Festival_2009_Eden_Brent_01.jpg/500px-Rawa_Blues_Festival_2009_Eden_Brent_01.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Rawa_Blues_Festival_2009_Eden_Brent_01.jpg/500px-Rawa_Blues_Festival_2009_Eden_Brent_01.jpg",
+    "birthDate": "1965-11-16",
+    "birthPlace": "Greenville, Mississippi",
+    "birthCoords": [-91.0563, 33.4098],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {"place": "Greenville, Mississippi", "coords": [-91.0563, 33.4098]},
+      {"place": "Memphis, Tennessee", "coords": [-90.049, 35.1495]}
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=L_kTY1qZ9lg",
+    "albums": [
+      {"name": "Something Cool (2003)", "youtubeLink": "https://www.youtube.com/watch?v=L_kTY1qZ9lg"},
+      {"name": "Mississippi Number One (2008)", "youtubeLink": "https://www.youtube.com/watch?v=DzMk6SRMt3A"},
+      {"name": "Ain't Got No Troubles (2010)", "youtubeLink": "https://www.youtube.com/watch?v=OkhFHB5n8GA"},
+      {"name": "Jigsaw Heart (2014)", "youtubeLink": "https://www.youtube.com/watch?v=bnMcE8HyGmQ"}
+    ],
+    "description": "Eden Brent is an American blues pianist and vocalist from Greenville, Mississippi who combines boogie-woogie with elements of blues, jazz, soul, gospel and pop. A protege of Abie 'Boogaloo' Ames, she earned the nickname 'Little Boogaloo' and won the Blues Foundation's International Blues Challenge in 2006.",
+    "activeFrom": "1994",
+    "influences": [],
+    "influencedBy": ["bessie-smith", "memphis-minnie"],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Eden_Brent",
+    "secondaryInstruments": ["Vocals"]
+  },
+  {
+    "id": "jim-brewer",
+    "name": "Jim Brewer",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1920-10-03",
+    "birthPlace": "Brookhaven, Mississippi",
+    "birthCoords": [-90.4431, 31.5819],
+    "deathDate": "1988-06-03",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [-87.6298, 41.8781],
+    "spentTimePlaces": [
+      {"place": "Chicago, Illinois", "coords": [-87.6298, 41.8781]}
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=K7ZWG1wuWQw",
+    "albums": [
+      {"name": "Jim Brewer (1974)", "youtubeLink": "https://www.youtube.com/watch?v=K7ZWG1wuWQw"},
+      {"name": "Tough Luck (1983)", "youtubeLink": "https://www.youtube.com/watch?v=4giGfBH8zUw"}
+    ],
+    "description": "Jim Brewer was an American blues singer and guitarist born in Brookhaven, Mississippi. He moved to Chicago in the 1940s and became a fixture on Maxwell Street, busking and performing both blues and gospel songs. During the 1960s blues revival, he recorded for Heritage, Flyright, and Testament Records.",
+    "activeFrom": "1940",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": ["arvella-gray"],
+    "source": "https://en.wikipedia.org/wiki/Jim_Brewer_(blues_musician)",
+    "secondaryInstruments": ["Vocals"]
+  },
+  {
+    "id": "big-george-brock",
+    "name": "Big George Brock",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1932-05-16",
+    "birthPlace": "Grenada, Mississippi",
+    "birthCoords": [-89.8089, 33.775],
+    "deathDate": "2020-04-10",
+    "deathPlace": "St. Louis, Missouri",
+    "deathCoords": [-90.1994, 38.627],
+    "spentTimePlaces": [
+      {"place": "St. Louis, Missouri", "coords": [-90.1994, 38.627]}
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "",
+    "albums": [],
+    "description": "Big George Brock was an American blues harmonica player and singer born in Grenada, Mississippi, who moved to St. Louis in 1950 and became a central figure in the city's blues scene. He operated the legendary Club Caravan nightclub where he hosted Muddy Waters, Howlin' Wolf, and Ike and Tina Turner.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": ["muddy-waters", "howlin-wolf"],
+    "incomplete": true,
+    "playedWith": ["muddy-waters", "howlin-wolf", "albert-king", "jimmy-reed", "memphis-minnie"],
+    "source": "https://en.wikipedia.org/wiki/Big_George_Brock",
+    "secondaryInstruments": ["Vocals"]
+  },
+  {
+    "id": "jt-brown",
+    "name": "J. T. Brown",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1918-04-02",
+    "birthPlace": "Mississippi",
+    "birthCoords": [-89.65, 32.35],
+    "deathDate": "1969-11-24",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [-87.6298, 41.8781],
+    "spentTimePlaces": [
+      {"place": "Memphis, Tennessee", "coords": [-90.049, 35.15]},
+      {"place": "Chicago, Illinois", "coords": [-87.6298, 41.8781]}
+    ],
+    "instrument": "Saxophone",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=GFCjxH3egag",
+    "albums": [
+      {"name": "Windy City Boogie (1977)", "youtubeLink": "https://www.youtube.com/watch?v=2ccq9e4-Gzk"},
+      {"name": "Blues Jam in Chicago Vol. 1 with Fleetwood Mac (1969)", "youtubeLink": "https://www.youtube.com/watch?v=_cR8z2fWqfE"}
+    ],
+    "description": "J. T. Brown was an American tenor saxophonist of the Chicago blues era, known for his distinctive braying tone. Born in Mississippi, he became a prolific session musician in Chicago, recording with Elmore James, Howlin' Wolf, and notably appearing on Fleetwood Mac's 1969 Blues Jam in Chicago sessions.",
+    "activeFrom": "1940",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": ["elmore-james", "howlin-wolf", "otis-spann", "willie-dixon", "buddy-guy", "big-walter-horton"],
+    "source": "https://en.wikipedia.org/wiki/J._T._Brown_(musician)",
+    "secondaryInstruments": ["Vocals"]
+  },
+  {
+    "id": "kenny-brown",
+    "name": "Kenny Brown",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Kenny_Brown.jpg/500px-Kenny_Brown.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Kenny_Brown.jpg/500px-Kenny_Brown.jpg",
+    "birthDate": "1953-07-05",
+    "birthPlace": "Selma, Alabama",
+    "birthCoords": [-87.0211, 32.4074],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {"place": "Nesbit, Mississippi", "coords": [-89.9887, 34.8693]},
+      {"place": "Oxford, Mississippi", "coords": [-89.5185, 34.3665]}
+    ],
+    "instrument": "Slide guitar",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=MZ6m8bwVi8w",
+    "albums": [
+      {"name": "Stingray (2003)", "youtubeLink": "https://www.youtube.com/watch?v=yy8M86HWZ9c"}
+    ],
+    "description": "Kenny Brown is an American blues slide guitarist born in Selma, Alabama, and raised in Nesbit, Mississippi, where he apprenticed with Mississippi Joe Callicott from age twelve. He spent over two decades as R.L. Burnside's guitarist and protege, becoming a key figure in the North Mississippi Hill Country blues tradition.",
+    "activeFrom": "1971",
+    "influences": ["cedric-burnside"],
+    "influencedBy": ["joe-callicott", "rl-burnside", "junior-kimbrough"],
+    "incomplete": false,
+    "playedWith": ["rl-burnside", "junior-kimbrough", "cedric-burnside", "asie-payton", "dan-auerbach"],
+    "source": "https://en.wikipedia.org/wiki/Kenny_Brown_(guitarist)",
+    "secondaryInstruments": ["Guitar"]
+  },
+  {
+    "id": "texas-johnny-brown",
+    "name": "Texas Johnny Brown",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Texas_Johnny_Brown.jpg/500px-Texas_Johnny_Brown.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Texas_Johnny_Brown.jpg/500px-Texas_Johnny_Brown.jpg",
+    "birthDate": "1928-02-22",
+    "birthPlace": "Ackerman, Mississippi",
+    "birthCoords": [-89.1748, 33.3101],
+    "deathDate": "2013-07-01",
+    "deathPlace": "Houston, Texas",
+    "deathCoords": [-95.3698, 29.7604],
+    "spentTimePlaces": [
+      {"place": "Houston, Texas", "coords": [-95.3698, 29.7604]}
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=zDwf9jAqVwQ",
+    "albums": [
+      {"name": "Nothin' but the Truth (1998)", "youtubeLink": ""},
+      {"name": "Blues Defender (2002)", "youtubeLink": ""}
+    ],
+    "description": "Texas Johnny Brown was an American blues guitarist, songwriter and singer best known for composing 'Two Steps from the Blues', which became the title track of Bobby Bland's 1961 album. Born in Ackerman, Mississippi, he relocated to Houston, Texas in 1946 where his jazzy guitar style made him a mainstay of the city's blues scene for over six decades.",
+    "activeFrom": "1946",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": ["amos-milburn", "bobby-blue-bland", "lightnin-hopkins", "junior-parker", "lavelle-white"],
+    "source": "https://en.wikipedia.org/wiki/Texas_Johnny_Brown",
+    "secondaryInstruments": ["Vocals"]
+  },
+  {
+    "id": "eddie-burks",
+    "name": "Eddie Burks",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1931-09-17",
+    "birthPlace": "Greenwood, Mississippi",
+    "birthCoords": [-90.18, 33.52],
+    "deathDate": "2005-01-27",
+    "deathPlace": "Miller, Indiana",
+    "deathCoords": [-87.35, 41.6],
+    "spentTimePlaces": [
+      {"place": "Chicago, Illinois", "coords": [-87.6298, 41.8781]}
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=KWntT3gUb2E",
+    "albums": [
+      {"name": "This Old Road (1992)", "youtubeLink": "https://www.youtube.com/watch?v=wBKZgaFIYA8"},
+      {"name": "Comin' Home!", "youtubeLink": "https://www.youtube.com/watch?v=5b3OuKOtg_s"}
+    ],
+    "description": "Eddie Burks was an American blues harmonica player and singer born near Greenwood, Mississippi, who became a fixture on Chicago's Maxwell Street Market in the 1960s and 1970s, earning the nickname 'Jewtown Eddie'. After years as a steel mill worker and storefront church minister, he launched a full-time blues career following the 1968 assassination of Martin Luther King Jr.",
+    "activeFrom": "1968",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": ["eddie-shaw", "jimmy-dawkins"],
+    "source": "https://en.wikipedia.org/wiki/Eddie_Burks_(blues_musician)",
+    "secondaryInstruments": ["Vocals"]
+  },
+  {
+    "id": "charles-caldwell",
+    "name": "Charles Caldwell",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1943-05-18",
+    "birthPlace": "Coffeeville, Mississippi",
+    "birthCoords": [-89.6772, 33.9778],
+    "deathDate": "2003-09-03",
+    "deathPlace": "Coffeeville, Mississippi",
+    "deathCoords": [-89.6772, 33.9778],
+    "spentTimePlaces": [
+      {"place": "Grenada, Mississippi", "coords": [-89.8089, 33.775]}
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=xTleIux-rrg",
+    "albums": [
+      {"name": "Remember Me (2004)", "youtubeLink": "https://www.youtube.com/watch?v=kJT4SkpYSaM"}
+    ],
+    "description": "Charles Caldwell was an American musician from the North Mississippi hill country known for a raw and fiery brand of electric blues. A lifelong resident of Coffeeville, Mississippi, his sole album, Remember Me, was recorded for Fat Possum Records shortly before his death from pancreatic cancer in 2003 and released posthumously to critical acclaim.",
+    "activeFrom": "2002",
+    "influences": [],
+    "influencedBy": ["junior-kimbrough", "john-lee-hooker", "muddy-waters"],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Charles_Caldwell_(bluesman)",
+    "secondaryInstruments": ["Vocals"]
+  },
+  {
+    "id": "eddie-c-campbell",
+    "name": "Eddie C. Campbell",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Eddie_C_Campbell.jpg?width=500",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Eddie_C_Campbell.jpg?width=500",
+    "birthDate": "1939-05-06",
+    "birthPlace": "Duncan, Mississippi",
+    "birthCoords": [-90.7489, 34.0389],
+    "deathDate": "2018-11-20",
+    "deathPlace": "Oak Park, Illinois",
+    "deathCoords": [-87.7887, 41.885],
+    "spentTimePlaces": [
+      {"place": "Chicago, Illinois", "coords": [-87.6298, 41.8781]}
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "",
+    "albums": [
+      {"name": "King of the Jungle (1977)", "youtubeLink": ""},
+      {"name": "Spider Eating Preacher (2012)", "youtubeLink": ""}
+    ],
+    "description": "Eddie C. Campbell was an American Chicago blues guitarist and singer who moved to Chicago at age ten and learned directly from Muddy Waters, Magic Sam, and Otis Rush. He played as a sideman with Howlin' Wolf, Little Walter, and Jimmy Reed before joining Willie Dixon's Chicago Blues All-Stars in 1976.",
+    "activeFrom": "1976",
+    "influences": ["magic-sam", "otis-rush"],
+    "influencedBy": ["muddy-waters", "magic-sam", "otis-rush"],
+    "incomplete": true,
+    "playedWith": ["howlin-wolf", "little-walter", "willie-dixon", "jimmy-reed", "carey-bell"],
+    "source": "https://en.wikipedia.org/wiki/Eddie_C._Campbell",
+    "secondaryInstruments": ["Vocals"]
+  },
+  {
+    "id": "grady-champion",
+    "name": "Grady Champion",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1969-10-10",
+    "birthPlace": "Canton, Mississippi",
+    "birthCoords": [-90.0233, 32.6119],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {"place": "Jackson, Mississippi", "coords": [-90.1848, 32.2988]}
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=YP9T0a2JBqE",
+    "albums": [
+      {"name": "Payin' for My Sins (1999)", "youtubeLink": "https://www.youtube.com/watch?v=YP9T0a2JBqE"},
+      {"name": "Bootleg Whiskey (2014)", "youtubeLink": "https://www.youtube.com/watch?v=0-WSjsiyejc"},
+      {"name": "Steppin' In (2019)", "youtubeLink": "https://www.youtube.com/watch?v=2sUlbd5vGwI"}
+    ],
+    "description": "Grady Champion is an American electric blues harmonicist, singer, guitarist and songwriter born in Canton, Mississippi. He blends authentic Mississippi juke joint blues with modern soul and R&B, winning a Grammy Award in 2003 for co-writing 'Trust Yourself' on Etta James' album Let's Roll. He won the 26th International Blues Challenge in 2010.",
+    "activeFrom": "1998",
+    "influences": [],
+    "influencedBy": ["howlin-wolf", "sonny-boy-williamson", "koko-taylor"],
+    "incomplete": false,
+    "playedWith": ["etta-james"],
+    "source": "https://en.wikipedia.org/wiki/Grady_Champion",
+    "secondaryInstruments": ["Guitar", "Vocals"]
   }
 ]
