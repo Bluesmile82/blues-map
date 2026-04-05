@@ -35406,31 +35406,63 @@
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Rawa_Blues_Festival_2009_Eden_Brent_01.jpg/500px-Rawa_Blues_Festival_2009_Eden_Brent_01.jpg",
     "birthDate": "1965-11-16",
     "birthPlace": "Greenville, Mississippi",
-    "birthCoords": [-91.0563, 33.4098],
+    "birthCoords": [
+      -91.0563,
+      33.4098
+    ],
     "deathDate": null,
     "deathPlace": null,
     "deathCoords": null,
     "spentTimePlaces": [
-      {"place": "Greenville, Mississippi", "coords": [-91.0563, 33.4098]},
-      {"place": "Memphis, Tennessee", "coords": [-90.049, 35.1495]}
+      {
+        "place": "Greenville, Mississippi",
+        "coords": [
+          -91.0563,
+          33.4098
+        ]
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
     ],
     "instrument": "Piano",
     "bluesStyle": "Boogie Woogie",
     "youtubeLink": "https://www.youtube.com/watch?v=L_kTY1qZ9lg",
     "albums": [
-      {"name": "Something Cool (2003)", "youtubeLink": "https://www.youtube.com/watch?v=L_kTY1qZ9lg"},
-      {"name": "Mississippi Number One (2008)", "youtubeLink": "https://www.youtube.com/watch?v=DzMk6SRMt3A"},
-      {"name": "Ain't Got No Troubles (2010)", "youtubeLink": "https://www.youtube.com/watch?v=OkhFHB5n8GA"},
-      {"name": "Jigsaw Heart (2014)", "youtubeLink": "https://www.youtube.com/watch?v=bnMcE8HyGmQ"}
+      {
+        "name": "Something Cool (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=L_kTY1qZ9lg"
+      },
+      {
+        "name": "Mississippi Number One (2008)",
+        "youtubeLink": "https://www.youtube.com/watch?v=DzMk6SRMt3A"
+      },
+      {
+        "name": "Ain't Got No Troubles (2010)",
+        "youtubeLink": "https://www.youtube.com/watch?v=OkhFHB5n8GA"
+      },
+      {
+        "name": "Jigsaw Heart (2014)",
+        "youtubeLink": "https://www.youtube.com/watch?v=bnMcE8HyGmQ"
+      }
     ],
     "description": "Eden Brent is an American blues pianist and vocalist from Greenville, Mississippi who combines boogie-woogie with elements of blues, jazz, soul, gospel and pop. A protege of Abie 'Boogaloo' Ames, she earned the nickname 'Little Boogaloo' and won the Blues Foundation's International Blues Challenge in 2006.",
     "activeFrom": "1994",
     "influences": [],
-    "influencedBy": ["bessie-smith", "memphis-minnie"],
+    "influencedBy": [
+      "bessie-smith",
+      "memphis-minnie"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Eden_Brent",
-    "secondaryInstruments": ["Vocals"]
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   },
   {
     "id": "jim-brewer",
@@ -35439,28 +35471,50 @@
     "image_source": "",
     "birthDate": "1920-10-03",
     "birthPlace": "Brookhaven, Mississippi",
-    "birthCoords": [-90.4431, 31.5819],
+    "birthCoords": [
+      -90.4431,
+      31.5819
+    ],
     "deathDate": "1988-06-03",
     "deathPlace": "Chicago, Illinois",
-    "deathCoords": [-87.6298, 41.8781],
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
     "spentTimePlaces": [
-      {"place": "Chicago, Illinois", "coords": [-87.6298, 41.8781]}
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
     ],
     "instrument": "Guitar",
     "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=K7ZWG1wuWQw",
     "albums": [
-      {"name": "Jim Brewer (1974)", "youtubeLink": "https://www.youtube.com/watch?v=K7ZWG1wuWQw"},
-      {"name": "Tough Luck (1983)", "youtubeLink": "https://www.youtube.com/watch?v=4giGfBH8zUw"}
+      {
+        "name": "Jim Brewer (1974)",
+        "youtubeLink": "https://www.youtube.com/watch?v=K7ZWG1wuWQw"
+      },
+      {
+        "name": "Tough Luck (1983)",
+        "youtubeLink": "https://www.youtube.com/watch?v=4giGfBH8zUw"
+      }
     ],
     "description": "Jim Brewer was an American blues singer and guitarist born in Brookhaven, Mississippi. He moved to Chicago in the 1940s and became a fixture on Maxwell Street, busking and performing both blues and gospel songs. During the 1960s blues revival, he recorded for Heritage, Flyright, and Testament Records.",
     "activeFrom": "1940",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": ["arvella-gray"],
+    "playedWith": [
+      "arvella-gray"
+    ],
     "source": "https://en.wikipedia.org/wiki/Jim_Brewer_(blues_musician)",
-    "secondaryInstruments": ["Vocals"]
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   },
   {
     "id": "big-george-brock",
@@ -35469,12 +35523,24 @@
     "image_source": "",
     "birthDate": "1932-05-16",
     "birthPlace": "Grenada, Mississippi",
-    "birthCoords": [-89.8089, 33.775],
+    "birthCoords": [
+      -89.8089,
+      33.775
+    ],
     "deathDate": "2020-04-10",
     "deathPlace": "St. Louis, Missouri",
-    "deathCoords": [-90.1994, 38.627],
+    "deathCoords": [
+      -90.1994,
+      38.627
+    ],
     "spentTimePlaces": [
-      {"place": "St. Louis, Missouri", "coords": [-90.1994, 38.627]}
+      {
+        "place": "St. Louis, Missouri",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
     ],
     "instrument": "Harmonica",
     "bluesStyle": "St. Louis Blues",
@@ -35483,11 +35549,22 @@
     "description": "Big George Brock was an American blues harmonica player and singer born in Grenada, Mississippi, who moved to St. Louis in 1950 and became a central figure in the city's blues scene. He operated the legendary Club Caravan nightclub where he hosted Muddy Waters, Howlin' Wolf, and Ike and Tina Turner.",
     "activeFrom": "1950",
     "influences": [],
-    "influencedBy": ["muddy-waters", "howlin-wolf"],
+    "influencedBy": [
+      "muddy-waters",
+      "howlin-wolf"
+    ],
     "incomplete": true,
-    "playedWith": ["muddy-waters", "howlin-wolf", "albert-king", "jimmy-reed", "memphis-minnie"],
+    "playedWith": [
+      "muddy-waters",
+      "howlin-wolf",
+      "albert-king",
+      "jimmy-reed",
+      "memphis-minnie"
+    ],
     "source": "https://en.wikipedia.org/wiki/Big_George_Brock",
-    "secondaryInstruments": ["Vocals"]
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   },
   {
     "id": "jt-brown",
@@ -35496,29 +35573,62 @@
     "image_source": "",
     "birthDate": "1918-04-02",
     "birthPlace": "Mississippi",
-    "birthCoords": [-89.65, 32.35],
+    "birthCoords": [
+      -89.65,
+      32.35
+    ],
     "deathDate": "1969-11-24",
     "deathPlace": "Chicago, Illinois",
-    "deathCoords": [-87.6298, 41.8781],
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
     "spentTimePlaces": [
-      {"place": "Memphis, Tennessee", "coords": [-90.049, 35.15]},
-      {"place": "Chicago, Illinois", "coords": [-87.6298, 41.8781]}
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.15
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
     ],
     "instrument": "Saxophone",
     "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=GFCjxH3egag",
     "albums": [
-      {"name": "Windy City Boogie (1977)", "youtubeLink": "https://www.youtube.com/watch?v=2ccq9e4-Gzk"},
-      {"name": "Blues Jam in Chicago Vol. 1 with Fleetwood Mac (1969)", "youtubeLink": "https://www.youtube.com/watch?v=_cR8z2fWqfE"}
+      {
+        "name": "Windy City Boogie (1977)",
+        "youtubeLink": "https://www.youtube.com/watch?v=2ccq9e4-Gzk"
+      },
+      {
+        "name": "Blues Jam in Chicago Vol. 1 with Fleetwood Mac (1969)",
+        "youtubeLink": "https://www.youtube.com/watch?v=_cR8z2fWqfE"
+      }
     ],
     "description": "J. T. Brown was an American tenor saxophonist of the Chicago blues era, known for his distinctive braying tone. Born in Mississippi, he became a prolific session musician in Chicago, recording with Elmore James, Howlin' Wolf, and notably appearing on Fleetwood Mac's 1969 Blues Jam in Chicago sessions.",
     "activeFrom": "1940",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": ["elmore-james", "howlin-wolf", "otis-spann", "willie-dixon", "buddy-guy", "big-walter-horton"],
+    "playedWith": [
+      "elmore-james",
+      "howlin-wolf",
+      "otis-spann",
+      "willie-dixon",
+      "buddy-guy",
+      "big-walter-horton"
+    ],
     "source": "https://en.wikipedia.org/wiki/J._T._Brown_(musician)",
-    "secondaryInstruments": ["Vocals"]
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   },
   {
     "id": "kenny-brown",
@@ -35527,28 +35637,60 @@
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Kenny_Brown.jpg/500px-Kenny_Brown.jpg",
     "birthDate": "1953-07-05",
     "birthPlace": "Selma, Alabama",
-    "birthCoords": [-87.0211, 32.4074],
+    "birthCoords": [
+      -87.0211,
+      32.4074
+    ],
     "deathDate": null,
     "deathPlace": null,
     "deathCoords": null,
     "spentTimePlaces": [
-      {"place": "Nesbit, Mississippi", "coords": [-89.9887, 34.8693]},
-      {"place": "Oxford, Mississippi", "coords": [-89.5185, 34.3665]}
+      {
+        "place": "Nesbit, Mississippi",
+        "coords": [
+          -89.9887,
+          34.8693
+        ]
+      },
+      {
+        "place": "Oxford, Mississippi",
+        "coords": [
+          -89.5185,
+          34.3665
+        ]
+      }
     ],
     "instrument": "Slide guitar",
     "bluesStyle": "Hill Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=MZ6m8bwVi8w",
     "albums": [
-      {"name": "Stingray (2003)", "youtubeLink": "https://www.youtube.com/watch?v=yy8M86HWZ9c"}
+      {
+        "name": "Stingray (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=yy8M86HWZ9c"
+      }
     ],
     "description": "Kenny Brown is an American blues slide guitarist born in Selma, Alabama, and raised in Nesbit, Mississippi, where he apprenticed with Mississippi Joe Callicott from age twelve. He spent over two decades as R.L. Burnside's guitarist and protege, becoming a key figure in the North Mississippi Hill Country blues tradition.",
     "activeFrom": "1971",
-    "influences": ["cedric-burnside"],
-    "influencedBy": ["joe-callicott", "rl-burnside", "junior-kimbrough"],
+    "influences": [
+      "cedric-burnside"
+    ],
+    "influencedBy": [
+      "joe-callicott",
+      "rl-burnside",
+      "junior-kimbrough"
+    ],
     "incomplete": false,
-    "playedWith": ["rl-burnside", "junior-kimbrough", "cedric-burnside", "asie-payton", "dan-auerbach"],
+    "playedWith": [
+      "rl-burnside",
+      "junior-kimbrough",
+      "cedric-burnside",
+      "asie-payton",
+      "dan-auerbach"
+    ],
     "source": "https://en.wikipedia.org/wiki/Kenny_Brown_(guitarist)",
-    "secondaryInstruments": ["Guitar"]
+    "secondaryInstruments": [
+      "Guitar"
+    ]
   },
   {
     "id": "texas-johnny-brown",
@@ -35557,28 +35699,54 @@
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Texas_Johnny_Brown.jpg/500px-Texas_Johnny_Brown.jpg",
     "birthDate": "1928-02-22",
     "birthPlace": "Ackerman, Mississippi",
-    "birthCoords": [-89.1748, 33.3101],
+    "birthCoords": [
+      -89.1748,
+      33.3101
+    ],
     "deathDate": "2013-07-01",
     "deathPlace": "Houston, Texas",
-    "deathCoords": [-95.3698, 29.7604],
+    "deathCoords": [
+      -95.3698,
+      29.7604
+    ],
     "spentTimePlaces": [
-      {"place": "Houston, Texas", "coords": [-95.3698, 29.7604]}
+      {
+        "place": "Houston, Texas",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      }
     ],
     "instrument": "Guitar",
     "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=zDwf9jAqVwQ",
     "albums": [
-      {"name": "Nothin' but the Truth (1998)", "youtubeLink": ""},
-      {"name": "Blues Defender (2002)", "youtubeLink": ""}
+      {
+        "name": "Nothin' but the Truth (1998)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Blues Defender (2002)",
+        "youtubeLink": ""
+      }
     ],
     "description": "Texas Johnny Brown was an American blues guitarist, songwriter and singer best known for composing 'Two Steps from the Blues', which became the title track of Bobby Bland's 1961 album. Born in Ackerman, Mississippi, he relocated to Houston, Texas in 1946 where his jazzy guitar style made him a mainstay of the city's blues scene for over six decades.",
     "activeFrom": "1946",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": ["amos-milburn", "bobby-blue-bland", "lightnin-hopkins", "junior-parker", "lavelle-white"],
+    "playedWith": [
+      "amos-milburn",
+      "bobby-blue-bland",
+      "lightnin-hopkins",
+      "junior-parker",
+      "lavelle-white"
+    ],
     "source": "https://en.wikipedia.org/wiki/Texas_Johnny_Brown",
-    "secondaryInstruments": ["Vocals"]
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   },
   {
     "id": "eddie-burks",
@@ -35587,28 +35755,51 @@
     "image_source": "",
     "birthDate": "1931-09-17",
     "birthPlace": "Greenwood, Mississippi",
-    "birthCoords": [-90.18, 33.52],
+    "birthCoords": [
+      -90.18,
+      33.52
+    ],
     "deathDate": "2005-01-27",
     "deathPlace": "Miller, Indiana",
-    "deathCoords": [-87.35, 41.6],
+    "deathCoords": [
+      -87.35,
+      41.6
+    ],
     "spentTimePlaces": [
-      {"place": "Chicago, Illinois", "coords": [-87.6298, 41.8781]}
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
     ],
     "instrument": "Harmonica",
     "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=KWntT3gUb2E",
     "albums": [
-      {"name": "This Old Road (1992)", "youtubeLink": "https://www.youtube.com/watch?v=wBKZgaFIYA8"},
-      {"name": "Comin' Home!", "youtubeLink": "https://www.youtube.com/watch?v=5b3OuKOtg_s"}
+      {
+        "name": "This Old Road (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=wBKZgaFIYA8"
+      },
+      {
+        "name": "Comin' Home!",
+        "youtubeLink": "https://www.youtube.com/watch?v=5b3OuKOtg_s"
+      }
     ],
     "description": "Eddie Burks was an American blues harmonica player and singer born near Greenwood, Mississippi, who became a fixture on Chicago's Maxwell Street Market in the 1960s and 1970s, earning the nickname 'Jewtown Eddie'. After years as a steel mill worker and storefront church minister, he launched a full-time blues career following the 1968 assassination of Martin Luther King Jr.",
     "activeFrom": "1968",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": ["eddie-shaw", "jimmy-dawkins"],
+    "playedWith": [
+      "eddie-shaw",
+      "jimmy-dawkins"
+    ],
     "source": "https://en.wikipedia.org/wiki/Eddie_Burks_(blues_musician)",
-    "secondaryInstruments": ["Vocals"]
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   },
   {
     "id": "charles-caldwell",
@@ -35617,27 +35808,48 @@
     "image_source": "",
     "birthDate": "1943-05-18",
     "birthPlace": "Coffeeville, Mississippi",
-    "birthCoords": [-89.6772, 33.9778],
+    "birthCoords": [
+      -89.6772,
+      33.9778
+    ],
     "deathDate": "2003-09-03",
     "deathPlace": "Coffeeville, Mississippi",
-    "deathCoords": [-89.6772, 33.9778],
+    "deathCoords": [
+      -89.6772,
+      33.9778
+    ],
     "spentTimePlaces": [
-      {"place": "Grenada, Mississippi", "coords": [-89.8089, 33.775]}
+      {
+        "place": "Grenada, Mississippi",
+        "coords": [
+          -89.8089,
+          33.775
+        ]
+      }
     ],
     "instrument": "Guitar",
     "bluesStyle": "Hill Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=xTleIux-rrg",
     "albums": [
-      {"name": "Remember Me (2004)", "youtubeLink": "https://www.youtube.com/watch?v=kJT4SkpYSaM"}
+      {
+        "name": "Remember Me (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=kJT4SkpYSaM"
+      }
     ],
     "description": "Charles Caldwell was an American musician from the North Mississippi hill country known for a raw and fiery brand of electric blues. A lifelong resident of Coffeeville, Mississippi, his sole album, Remember Me, was recorded for Fat Possum Records shortly before his death from pancreatic cancer in 2003 and released posthumously to critical acclaim.",
     "activeFrom": "2002",
     "influences": [],
-    "influencedBy": ["junior-kimbrough", "john-lee-hooker", "muddy-waters"],
+    "influencedBy": [
+      "junior-kimbrough",
+      "john-lee-hooker",
+      "muddy-waters"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Charles_Caldwell_(bluesman)",
-    "secondaryInstruments": ["Vocals"]
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   },
   {
     "id": "eddie-c-campbell",
@@ -35646,28 +35858,61 @@
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Eddie_C_Campbell.jpg?width=500",
     "birthDate": "1939-05-06",
     "birthPlace": "Duncan, Mississippi",
-    "birthCoords": [-90.7489, 34.0389],
+    "birthCoords": [
+      -90.7489,
+      34.0389
+    ],
     "deathDate": "2018-11-20",
     "deathPlace": "Oak Park, Illinois",
-    "deathCoords": [-87.7887, 41.885],
+    "deathCoords": [
+      -87.7887,
+      41.885
+    ],
     "spentTimePlaces": [
-      {"place": "Chicago, Illinois", "coords": [-87.6298, 41.8781]}
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
     ],
     "instrument": "Guitar",
     "bluesStyle": "Chicago Blues",
     "youtubeLink": "",
     "albums": [
-      {"name": "King of the Jungle (1977)", "youtubeLink": ""},
-      {"name": "Spider Eating Preacher (2012)", "youtubeLink": ""}
+      {
+        "name": "King of the Jungle (1977)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Spider Eating Preacher (2012)",
+        "youtubeLink": ""
+      }
     ],
     "description": "Eddie C. Campbell was an American Chicago blues guitarist and singer who moved to Chicago at age ten and learned directly from Muddy Waters, Magic Sam, and Otis Rush. He played as a sideman with Howlin' Wolf, Little Walter, and Jimmy Reed before joining Willie Dixon's Chicago Blues All-Stars in 1976.",
     "activeFrom": "1976",
-    "influences": ["magic-sam", "otis-rush"],
-    "influencedBy": ["muddy-waters", "magic-sam", "otis-rush"],
+    "influences": [
+      "magic-sam",
+      "otis-rush"
+    ],
+    "influencedBy": [
+      "muddy-waters",
+      "magic-sam",
+      "otis-rush"
+    ],
     "incomplete": true,
-    "playedWith": ["howlin-wolf", "little-walter", "willie-dixon", "jimmy-reed", "carey-bell"],
+    "playedWith": [
+      "howlin-wolf",
+      "little-walter",
+      "willie-dixon",
+      "jimmy-reed",
+      "carey-bell"
+    ],
     "source": "https://en.wikipedia.org/wiki/Eddie_C._Campbell",
-    "secondaryInstruments": ["Vocals"]
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   },
   {
     "id": "grady-champion",
@@ -35676,28 +35921,1461 @@
     "image_source": "",
     "birthDate": "1969-10-10",
     "birthPlace": "Canton, Mississippi",
-    "birthCoords": [-90.0233, 32.6119],
+    "birthCoords": [
+      -90.0233,
+      32.6119
+    ],
     "deathDate": null,
     "deathPlace": null,
     "deathCoords": null,
     "spentTimePlaces": [
-      {"place": "Jackson, Mississippi", "coords": [-90.1848, 32.2988]}
+      {
+        "place": "Jackson, Mississippi",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      }
     ],
     "instrument": "Harmonica",
     "bluesStyle": "Soul Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=YP9T0a2JBqE",
     "albums": [
-      {"name": "Payin' for My Sins (1999)", "youtubeLink": "https://www.youtube.com/watch?v=YP9T0a2JBqE"},
-      {"name": "Bootleg Whiskey (2014)", "youtubeLink": "https://www.youtube.com/watch?v=0-WSjsiyejc"},
-      {"name": "Steppin' In (2019)", "youtubeLink": "https://www.youtube.com/watch?v=2sUlbd5vGwI"}
+      {
+        "name": "Payin' for My Sins (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=YP9T0a2JBqE"
+      },
+      {
+        "name": "Bootleg Whiskey (2014)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0-WSjsiyejc"
+      },
+      {
+        "name": "Steppin' In (2019)",
+        "youtubeLink": "https://www.youtube.com/watch?v=2sUlbd5vGwI"
+      }
     ],
     "description": "Grady Champion is an American electric blues harmonicist, singer, guitarist and songwriter born in Canton, Mississippi. He blends authentic Mississippi juke joint blues with modern soul and R&B, winning a Grammy Award in 2003 for co-writing 'Trust Yourself' on Etta James' album Let's Roll. He won the 26th International Blues Challenge in 2010.",
     "activeFrom": "1998",
     "influences": [],
-    "influencedBy": ["howlin-wolf", "sonny-boy-williamson", "koko-taylor"],
+    "influencedBy": [
+      "howlin-wolf",
+      "sonny-boy-williamson",
+      "koko-taylor"
+    ],
     "incomplete": false,
-    "playedWith": ["etta-james"],
+    "playedWith": [
+      "etta-james"
+    ],
     "source": "https://en.wikipedia.org/wiki/Grady_Champion",
-    "secondaryInstruments": ["Guitar", "Vocals"]
+    "secondaryInstruments": [
+      "Guitar",
+      "Vocals"
+    ]
+  },
+  {
+    "id": "willie-clayton",
+    "name": "Willie Clayton",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1955-03-29",
+    "birthPlace": "Indianola, Mississippi",
+    "birthCoords": [
+      -90.6375,
+      33.4511
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Indianola, Mississippi",
+        "coords": [
+          -90.6375,
+          33.4511
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=5fLDqZB7UiQ",
+    "albums": [
+      {
+        "name": "Something To Talk About (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=R-lZUSiyRLI"
+      },
+      {
+        "name": "The Last Man Standing (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=W3gaOHJt3BE"
+      }
+    ],
+    "description": "Willie Clayton is an American soul-blues singer and songwriter born in Indianola, Mississippi, who relocated to Chicago in 1971 and became a prominent figure in Chicago blues alongside Buddy Guy, Koko Taylor, and Little Milton. He has recorded over 25 albums since the 1980s with multiple chart successes on the Billboard Top Blues Albums and R&B charts.",
+    "activeFrom": "1969",
+    "influences": [],
+    "influencedBy": [
+      "buddy-guy",
+      "koko-taylor",
+      "little-milton"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Willie_Clayton",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "lee-cooper",
+    "name": "Lee Cooper",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1924-11-06",
+    "birthPlace": "Lexington, Mississippi",
+    "birthCoords": [
+      -90.0511,
+      33.1144
+    ],
+    "deathDate": "1964-10-15",
+    "deathPlace": "Iowa City, Iowa",
+    "deathCoords": [
+      -91.4947,
+      41.6208
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=-8EgB8x4POU",
+    "albums": [],
+    "description": "Lee Cooper was an American blues guitarist from Lexington, Mississippi, who succeeded Willie Johnson as Howlin' Wolf's lead guitarist and played on many of Wolf's most successful Chess Records sessions. Eddie Boyd called him 'the best guitar I ever played with,' and his aggressive licks anticipated those of Chuck Berry by several years.",
+    "activeFrom": "1940",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "howlin-wolf",
+      "eddie-boyd",
+      "big-bill-broonzy",
+      "washboard-sam",
+      "jimmy-witherspoon",
+      "big-walter-horton",
+      "kansas-city-red"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Lee_Cooper_(guitarist)",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "george-cummings",
+    "name": "George Cummings",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1938-07-28",
+    "birthPlace": "Meridian, Mississippi",
+    "birthCoords": [
+      -88.7036,
+      32.364
+    ],
+    "deathDate": "2024-12-14",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Nashville, Tennessee",
+        "coords": [
+          -86.7816,
+          36.1627
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=UPrixYOTNHw",
+    "albums": [
+      {
+        "name": "Doctor Hook (1972)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UPrixYOTNHw"
+      },
+      {
+        "name": "Sloppy Seconds (1973)",
+        "youtubeLink": "https://www.youtube.com/watch?v=5Rk6tyBW9Uo"
+      },
+      {
+        "name": "The Final Years: Big Joe Williams (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uqtr2pIUk7s"
+      }
+    ],
+    "description": "George Cummings was an American guitarist and songwriter born in Meridian, Mississippi, best known as the founder and naming member of Dr. Hook & the Medicine Show. He collaborated with Delta bluesman Big Joe Williams at Muscle Shoals in 1978 on one of Williams' final recordings.",
+    "activeFrom": "1959",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/George_Cummings",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "eddie-cusic",
+    "name": "Eddie Cusic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Eddie_Cusic_2014.jpg?width=500",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Eddie_Cusic_2014.jpg?width=500",
+    "birthDate": "1926-01-04",
+    "birthPlace": "Wilmot, Mississippi",
+    "birthCoords": [
+      -90.9,
+      33.33
+    ],
+    "deathDate": "2015-08-11",
+    "deathPlace": "Leland, Mississippi",
+    "deathCoords": [
+      -90.9023,
+      33.4047
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Leland, Mississippi",
+        "coords": [
+          -90.9023,
+          33.4047
+        ]
+      },
+      {
+        "place": "Greenville, Mississippi",
+        "coords": [
+          -91.0632,
+          33.4076
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=jDUTSGP1XRw",
+    "albums": [
+      {
+        "name": "I Want to Boogie (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=5k01JqeUHsE"
+      },
+      {
+        "name": "Leland Mississippi Blues (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=OEvs4hdvsfA"
+      }
+    ],
+    "description": "Eddie Cusic was an American Mississippi Delta blues guitarist, singer, and songwriter born in Wilmot, Mississippi. In the early 1950s he formed the Rhythm Aces, a band that included Little Milton, whom Cusic taught to play guitar. His debut album was released in 1998 and hailed as a significant blues discovery.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [
+      "little-milton"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "little-milton"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Eddie_Cusic",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "lester-davenport",
+    "name": "Lester Davenport",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Lester_Davenport.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Lester_Davenport.jpg",
+    "birthDate": "1932-01-16",
+    "birthPlace": "Tchula, Mississippi",
+    "birthCoords": [
+      -90.2225,
+      33.1808
+    ],
+    "deathDate": "2009-03-17",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Tchula, Mississippi",
+        "coords": [
+          -90.2225,
+          33.1808
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=svoPNk4-pbw",
+    "albums": [
+      {
+        "name": "When the Blues Hit You (1992)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "I Smell a Rat (2002)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Lester Davenport was a Chicago blues harmonica player and singer who moved from Mississippi to Chicago at age 14. He backed Bo Diddley on a 1955 Chess Records session and played with Snooky Pryor, Homesick James, and others before releasing his debut album at age 60.",
+    "activeFrom": "1946",
+    "influences": [
+      "little-walter"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bo-diddley",
+      "snooky-pryor",
+      "arthur-spires",
+      "homesick-james",
+      "kansas-city-red",
+      "maxwell-street-jimmy-davis",
+      "john-primer"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Lester_Davenport",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "jamie-davis",
+    "name": "James Lee Davis III",
+    "birthDate": "1983-09-03",
+    "birthPlace": "Tupelo, Mississippi",
+    "birthCoords": [
+      -88.703,
+      34.2576
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=gVAYVbXmj9k",
+    "image": null,
+    "description": "Jamie Davis is a Mississippi-born country, soul, and blues rock musician best known as the lead singer and guitarist of Jamie Davis & Soul Gravy. The band's 2006 single \"Mississippi Moonshine\" brought them regional recognition throughout the South. Davis later gained wider fame as a Nashville songwriter, co-writing Luke Combs' hit \"The Kind of Love We Make.\"",
+    "activeFrom": "2005",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Mississippi Moonshine",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "The Blue Album",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "Jamie Davis & Soul Gravy",
+        "youtubeLink": null,
+        "sort_order": 3
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Booneville, Mississippi",
+        "coords": [
+          -88.9531,
+          34.5068
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Starkville, Mississippi",
+        "coords": [
+          -88.8053,
+          33.4504
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Nashville, Tennessee",
+        "coords": [
+          -86.7816,
+          36.1627
+        ],
+        "sort_order": 3
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [],
+    "playedWith": []
+  },
+  {
+    "id": "little-sammy-davis",
+    "name": "Little Sammy Davis",
+    "birthDate": "1928-11-28",
+    "birthPlace": "Winona, Mississippi",
+    "birthCoords": [
+      -89.7395,
+      33.4863
+    ],
+    "deathDate": "2018-02-16",
+    "deathPlace": "Middletown, New York",
+    "deathCoords": [
+      -74.4229,
+      41.4459
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=OYoG5P0pkNw",
+    "image": null,
+    "description": "Little Sammy Davis was a blues harmonica player and singer born in Winona, Mississippi, who toured extensively with Earl Hooker and performed alongside Muddy Waters, Jimmy Reed, and Little Walter during the Chicago blues era. After a two-decade absence from music, he was rediscovered in the 1990s and launched a celebrated comeback, becoming a regular on the Imus in the Morning radio show and later joining Levon Helm's band for the Midnight Ramble concerts.",
+    "activeFrom": "1940",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "I Ain't Lyin'",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "The Midnight Ramble Sessions Volume One",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "Ten Years and Forty Days",
+        "youtubeLink": null,
+        "sort_order": 3
+      },
+      {
+        "name": "Travelin' Man",
+        "youtubeLink": null,
+        "sort_order": 4
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Winona, Mississippi",
+        "coords": [
+          -89.7395,
+          33.4863
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Miami, Florida",
+        "coords": [
+          -80.1918,
+          25.7617
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 3
+      },
+      {
+        "place": "Woodstock, New York",
+        "coords": [
+          -74.1182,
+          42.0409
+        ],
+        "sort_order": 4
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals",
+      "Guitar"
+    ],
+    "influences": [],
+    "influencedBy": [
+      "little-walter"
+    ],
+    "playedWith": [
+      "pinetop-perkins",
+      "ike-turner",
+      "earl-hooker",
+      "albert-king",
+      "muddy-waters",
+      "jimmy-reed",
+      "little-walter",
+      "eddie-kirkland"
+    ]
+  },
+  {
+    "id": "mattie-delaney",
+    "name": "Mattie Delaney",
+    "birthDate": "1905",
+    "birthPlace": "Tchula, Mississippi",
+    "birthCoords": [
+      -90.2225,
+      33.1808
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9WToDxX_0Ic",
+    "image": null,
+    "description": "Mattie Delaney was an American Delta blues singer and guitarist active in the late 1920s and 1930s, known for recording only two songs for Vocalion Records in February 1930. She was unusual for a female performer of her era in that she accompanied herself on guitar and sang topical songs. Her recorded output, \"Down the Big Road Blues\" and \"Tallahatchie River Blues,\" showcases a raw, country blues style deeply rooted in the Mississippi Delta tradition.",
+    "activeFrom": "1927",
+    "incomplete": true,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Mississippi Girls (1928-1931)",
+        "youtubeLink": null,
+        "sort_order": 1
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Tchula, Mississippi",
+        "coords": [
+          -90.2225,
+          33.1808
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ],
+        "sort_order": 2
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [
+      "tommy-johnson"
+    ],
+    "playedWith": []
+  },
+  {
+    "id": "johnny-drummer",
+    "name": "Johnny Drummer",
+    "birthDate": "1938-03-01",
+    "birthPlace": "Alligator, Mississippi",
+    "birthCoords": [
+      -90.7206,
+      34.09
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "instrument": "Keyboards",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=oxDBeggORC0",
+    "image": null,
+    "description": "Johnny Drummer (born Thessex Johns) is a Chicago blues and soul blues multi-instrumentalist from Alligator, Mississippi, who moved to Chicago in 1959. He became a fixture on the city's blues scene, playing drums for Eddie King and sitting in with legends like Muddy Waters and Big Walter Horton before forming his own band, the Starliters.",
+    "activeFrom": "1960",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "It's So Nice",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "Unleaded Blues",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "Rockin' in the Juke Joint",
+        "youtubeLink": null,
+        "sort_order": 3
+      },
+      {
+        "name": "Ain't Gonna Worry",
+        "youtubeLink": null,
+        "sort_order": 4
+      },
+      {
+        "name": "20th Anniversary Collection",
+        "youtubeLink": null,
+        "sort_order": 5
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Alligator, Mississippi",
+        "coords": [
+          -90.7206,
+          34.09
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 2
+      }
+    ],
+    "secondaryInstruments": [
+      "Drums",
+      "Harmonica"
+    ],
+    "influences": [],
+    "influencedBy": [
+      "little-milton",
+      "ike-turner"
+    ],
+    "playedWith": [
+      "lovie-lee",
+      "carey-bell",
+      "eddie-king",
+      "big-walter-horton",
+      "junior-wells",
+      "sammy-lawhorn",
+      "eddie-shaw",
+      "koko-taylor",
+      "zz-hill",
+      "willie-mabon",
+      "muddy-waters",
+      "otis-spann"
+    ]
+  },
+  {
+    "id": "calep-emphrey-jr",
+    "name": "Calep H. Emphrey Jr.",
+    "birthDate": "1949-05-01",
+    "birthPlace": "Greenville, Mississippi",
+    "birthCoords": [
+      -91.058,
+      33.4089
+    ],
+    "deathDate": "2017-04-25",
+    "deathPlace": "Greenville, Mississippi",
+    "deathCoords": [
+      -91.058,
+      33.4089
+    ],
+    "instrument": "Drums",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=pgd_uhkUqNg",
+    "image": null,
+    "description": "Calep H. Emphrey Jr. was a blues drummer best known as the drummer for B.B. King's band for over 30 years, from 1977 to 2009. Born in Greenville, Mississippi, he began his career with Little Milton's band before playing with Freddie King and Albert King, earning a reputation as a master of the left-handed shuffle.",
+    "activeFrom": "1969",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Handcuffed to the Blues",
+        "youtubeLink": null,
+        "sort_order": 1
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Greenville, Mississippi",
+        "coords": [
+          -91.058,
+          33.4089
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Itta Bena, Mississippi",
+        "coords": [
+          -90.3218,
+          33.4937
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Houston, Texas",
+        "coords": [
+          -95.3698,
+          29.7604
+        ],
+        "sort_order": 3
+      }
+    ],
+    "secondaryInstruments": [
+      "French Horn",
+      "Saxophone"
+    ],
+    "influences": [],
+    "influencedBy": [],
+    "playedWith": [
+      "bb-king",
+      "freddie-king",
+      "albert-king",
+      "little-milton",
+      "clarence-gatemouth-brown"
+    ]
+  },
+  {
+    "id": "little-willie-farmer",
+    "name": "Willie Cris Farmer",
+    "birthDate": "1956-06-02",
+    "birthPlace": "Duck Hill, Mississippi",
+    "birthCoords": [
+      -89.7112,
+      33.6332
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "instrument": "Guitar",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=7z0UJvJUp-E",
+    "image": null,
+    "description": "Little Willie Farmer is a Mississippi Hill Country blues guitarist, singer, and songwriter who spent three decades running an auto repair shop in Duck Hill while performing on evenings and weekends. Discovered via YouTube in 2016, he has released two critically acclaimed albums and was described by DownBeat as one of the real finds in recent memory.",
+    "activeFrom": "1970",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "I'm Coming Back Home",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "The Man from the Hill",
+        "youtubeLink": null,
+        "sort_order": 2
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Duck Hill, Mississippi",
+        "coords": [
+          -89.7112,
+          33.6332
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Clarksdale, Mississippi",
+        "coords": [
+          -90.5702,
+          34.2006
+        ],
+        "sort_order": 3
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [
+      "bb-king",
+      "lightnin-hopkins",
+      "howlin-wolf",
+      "little-milton"
+    ],
+    "playedWith": [
+      "bobby-rush"
+    ]
+  },
+  {
+    "id": "leroy-foster",
+    "name": "Baby Face Leroy Foster",
+    "birthDate": "1923-02-01",
+    "birthPlace": "Algoma, Mississippi",
+    "birthCoords": [
+      -89.0336,
+      34.1789
+    ],
+    "deathDate": "1958-05-26",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=n6sepAhnsDI",
+    "image": null,
+    "description": "Baby Face Leroy Foster was an American blues singer, guitarist and drummer who played a significant role in the development of the postwar electric Chicago blues sound as a member of Muddy Waters early band. His 1950 Parkway recording of Rollin and Tumblin with Little Walter and Muddy Waters remains a notable example of early Chicago blues.",
+    "activeFrom": "1946",
+    "incomplete": false,
+    "source": "research",
+    "albums": [],
+    "spentTimePlaces": [
+      {
+        "place": "Algoma, Mississippi",
+        "coords": [
+          -89.0336,
+          34.1789
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 2
+      }
+    ],
+    "secondaryInstruments": [
+      "Drums",
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [
+      "sonny-boy-williamson-i",
+      "doctor-clayton"
+    ],
+    "playedWith": [
+      "muddy-waters",
+      "jimmy-rogers",
+      "little-walter",
+      "sunnyland-slim",
+      "snooky-pryor",
+      "jb-lenoir"
+    ]
+  },
+  {
+    "id": "blind-roosevelt-graves",
+    "name": "Le Moise Roosevelt Graves",
+    "birthDate": "1909",
+    "birthPlace": "Rose Hill, Mississippi",
+    "birthCoords": [
+      -89.04,
+      32.1
+    ],
+    "deathDate": "1962",
+    "deathPlace": "Gulfport, Mississippi",
+    "deathCoords": [
+      -89.09,
+      30.37
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=56rjRNQ1fPY",
+    "image": null,
+    "description": "Blind Roosevelt Graves was a pre-war blues guitarist and singer from Mississippi who recorded both sacred and secular music in the late 1920s and 1930s. His 1929 recording Crazy About My Baby has been cited as possibly the first rock and roll recording, and he made the earliest known version of Guitar Boogie.",
+    "activeFrom": "1929",
+    "incomplete": true,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Complete Recorded Works 1929-1936",
+        "youtubeLink": null,
+        "sort_order": 1
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Rose Hill, Mississippi",
+        "coords": [
+          -89.04,
+          32.1
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Hattiesburg, Mississippi",
+        "coords": [
+          -89.29,
+          31.33
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Gulfport, Mississippi",
+        "coords": [
+          -89.09,
+          30.37
+        ],
+        "sort_order": 3
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [],
+    "playedWith": []
+  },
+  {
+    "id": "zac-harmon",
+    "name": "William Zach Harmon",
+    "birthDate": "1950s",
+    "birthPlace": "Jackson, Mississippi",
+    "birthCoords": [
+      -90.1848,
+      32.2988
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "instrument": "Guitar",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=-K_VLbxA1dM",
+    "image": null,
+    "description": "Zac Harmon is an award-winning blues guitarist, singer, and songwriter born and raised in Jackson, Mississippi, whose music continues the lineage of the historic Farish Street blues tradition. He won the International Blues Challenge in 2004 and the Blues Music Award for Best New Artist Debut in 2006, building on decades of experience performing alongside legends like Sam Myers and Z.Z. Hill.",
+    "activeFrom": "1970",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Live at Babe and Ricky's Inn",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "The Blues According To Zacariah",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "Shot in the Kill Zone",
+        "youtubeLink": null,
+        "sort_order": 3
+      },
+      {
+        "name": "From the Root",
+        "youtubeLink": null,
+        "sort_order": 4
+      },
+      {
+        "name": "Music Is Medicine",
+        "youtubeLink": null,
+        "sort_order": 5
+      },
+      {
+        "name": "Right Man Right Now",
+        "youtubeLink": null,
+        "sort_order": 6
+      },
+      {
+        "name": "Mississippi BarBQ",
+        "youtubeLink": null,
+        "sort_order": 7
+      },
+      {
+        "name": "Long As I Got My Guitar",
+        "youtubeLink": null,
+        "sort_order": 8
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Jackson, Mississippi",
+        "coords": [
+          -90.1848,
+          32.2988
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ],
+        "sort_order": 3
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [
+      "elmore-james",
+      "bb-king",
+      "albert-king",
+      "freddie-king",
+      "bobby-blue-bland"
+    ],
+    "playedWith": [
+      "sam-myers",
+      "zz-hill",
+      "bobby-rush",
+      "lucky-peterson",
+      "anson-funderburgh"
+    ]
+  },
+  {
+    "id": "king-solomon-hill",
+    "name": "King Solomon Hill",
+    "birthDate": "1897-07-18",
+    "birthPlace": "McComb, Mississippi",
+    "birthCoords": [
+      -90.452,
+      31.2449
+    ],
+    "deathDate": "1940-08-13",
+    "deathPlace": "Sibley, Louisiana",
+    "deathCoords": [
+      -93.2943,
+      32.3901
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=H71LloAf_fA",
+    "image": null,
+    "description": "King Solomon Hill was the recording name of Joe Holmes, a self-taught blues guitarist and singer from McComb, Mississippi, who recorded six songs for Paramount Records in 1932. His recordings feature an eerie falsetto and raw slide guitar played with a cow bone, producing a haunting sound that has captivated blues enthusiasts for decades.",
+    "activeFrom": "1920",
+    "incomplete": true,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Presenting King Solomon Hill",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "The Gone Dead Train",
+        "youtubeLink": null,
+        "sort_order": 2
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "McComb, Mississippi",
+        "coords": [
+          -90.452,
+          31.2449
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Sibley, Louisiana",
+        "coords": [
+          -93.2943,
+          32.3901
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Shreveport, Louisiana",
+        "coords": [
+          -93.7502,
+          32.5252
+        ],
+        "sort_order": 3
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [
+      "blind-lemon-jefferson",
+      "sam-collins",
+      "lonnie-johnson"
+    ],
+    "playedWith": [
+      "sam-collins",
+      "ramblin-thomas",
+      "big-joe-williams"
+    ]
+  },
+  {
+    "id": "raymond-hill",
+    "name": "Raymond Hill",
+    "birthDate": "1933-04-29",
+    "birthPlace": "Clarksdale, Mississippi",
+    "birthCoords": [
+      -90.5726,
+      34.2001
+    ],
+    "deathDate": "1996-04-16",
+    "deathPlace": "Clarksdale, Mississippi",
+    "deathCoords": [
+      -90.5726,
+      34.2001
+    ],
+    "instrument": "Saxophone",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=KbRa80FnS-8",
+    "image": null,
+    "description": "Raymond Hill was an American tenor saxophonist and singer best known as a member of Ike Turner's Kings of Rhythm in the 1950s. He played the celebrated saxophone solo on Rocket 88 (1951), often cited as the first rock and roll record.",
+    "activeFrom": "1951",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Sun Records: The Blues Years 1950-1956",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "Sun: The Roots Of Rock Volume 3",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "Sun: The Roots Of Rock Volume 11",
+        "youtubeLink": null,
+        "sort_order": 3
+      },
+      {
+        "name": "The Sun Sessions",
+        "youtubeLink": null,
+        "sort_order": 4
+      },
+      {
+        "name": "That Kat Sure Could Play! 1951-1957",
+        "youtubeLink": null,
+        "sort_order": 5
+      },
+      {
+        "name": "Sessionography Vol. 1",
+        "youtubeLink": null,
+        "sort_order": 6
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Clarksdale, Mississippi",
+        "coords": [
+          -90.5726,
+          34.2001
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "East St. Louis, Illinois",
+        "coords": [
+          -90.15,
+          38.624
+        ],
+        "sort_order": 3
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 4
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [],
+    "playedWith": [
+      "ike-turner",
+      "howlin-wolf",
+      "junior-parker",
+      "albert-king",
+      "jackie-brenston",
+      "dennis-binder",
+      "robert-nighthawk",
+      "sonny-boy-williamson"
+    ]
+  },
+  {
+    "id": "rosa-lee-hill",
+    "name": "Rosa Lee Hill",
+    "birthDate": "1910-09-25",
+    "birthPlace": "Como, Mississippi",
+    "birthCoords": [
+      -89.8851,
+      34.5087
+    ],
+    "deathDate": "1968-10-22",
+    "deathPlace": "Senatobia, Mississippi",
+    "deathCoords": [
+      -89.9718,
+      34.6166
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=k2sTm5cowGY",
+    "image": null,
+    "description": "Rosa Lee Hill was a Hill Country blues guitarist and singer born in Como, Mississippi, the daughter of multi-instrumentalist Sid Hemphill. She developed a broody, hypnotic acoustic style characteristic of the north Mississippi tradition, and her songs were recorded by Alan Lomax in 1959.",
+    "activeFrom": "1920",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Rosa Lee Hill and Friends",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "Southern Journey Vol. 3: 61 Highway Mississippi",
+        "youtubeLink": null,
+        "sort_order": 2
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Como, Mississippi",
+        "coords": [
+          -89.8851,
+          34.5087
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Senatobia, Mississippi",
+        "coords": [
+          -89.9718,
+          34.6166
+        ],
+        "sort_order": 2
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [
+      "sid-hemphill"
+    ],
+    "playedWith": [
+      "sid-hemphill",
+      "jessie-mae-hemphill"
+    ]
+  },
+  {
+    "id": "tony-hollins",
+    "name": "Tony Hollins",
+    "birthDate": "1909-06-25",
+    "birthPlace": "Oktibbeha County, Mississippi",
+    "birthCoords": [
+      -88.8065,
+      33.4505
+    ],
+    "deathDate": "1957-01",
+    "deathPlace": "Clarksdale, Mississippi",
+    "deathCoords": [
+      -90.5726,
+      34.2001
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=k8th6IcGL40",
+    "image": null,
+    "description": "Tony Hollins was a Delta blues singer, guitarist, and songwriter best known for Crawlin King Snake and Cross Cut Saw Blues, both later popularized by John Lee Hooker. Hollins was a formative influence on Hooker, teaching him guitar and giving him his first instrument.",
+    "activeFrom": "1920",
+    "incomplete": true,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Chicago Blues Vol. 1 (1939-1951)",
+        "youtubeLink": null,
+        "sort_order": 1
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Oktibbeha County, Mississippi",
+        "coords": [
+          -88.8065,
+          33.4505
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Clarksdale, Mississippi",
+        "coords": [
+          -90.5726,
+          34.2001
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 3
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [
+      "john-lee-hooker"
+    ],
+    "influencedBy": [],
+    "playedWith": [
+      "sunnyland-slim"
+    ]
+  },
+  {
+    "id": "homemade-jamz-blues-band",
+    "name": "Homemade Jamz Blues Band",
+    "birthDate": "2007",
+    "birthPlace": "Tupelo, Mississippi",
+    "birthCoords": [
+      -88.7047,
+      34.2577
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=4VlCwLH_xWE",
+    "image": null,
+    "description": "Homemade Jamz Blues Band is a Tupelo, Mississippi-based blues trio consisting of siblings Ryan, Kyle, and Taya Perry. In 2007 they became the youngest blues band to sign a record deal and have toured extensively across North America and Europe with their authentic Delta-rooted sound.",
+    "activeFrom": "2007",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Pay Me No Mind",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "I Got Blues for You",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "The Game",
+        "youtubeLink": null,
+        "sort_order": 3
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Tupelo, Mississippi",
+        "coords": [
+          -88.7047,
+          34.2577
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ],
+        "sort_order": 2
+      }
+    ],
+    "secondaryInstruments": [
+      "Bass",
+      "Drums",
+      "Harmonica",
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [
+      "bb-king",
+      "muddy-waters"
+    ],
+    "playedWith": []
+  },
+  {
+    "id": "calvin-jackson",
+    "name": "Calvin Jackson",
+    "birthDate": "1961-01-22",
+    "birthPlace": "Holly Springs, Mississippi",
+    "birthCoords": [
+      -89.447,
+      34.776
+    ],
+    "deathDate": "2015-02-10",
+    "deathPlace": "Senatobia, Mississippi",
+    "deathCoords": [
+      -89.9705,
+      34.9919
+    ],
+    "instrument": "Drums",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=zRQvMfST0n0",
+    "image": null,
+    "description": "Calvin Jackson was a North Mississippi blues drummer considered an innovator in the Hill Country blues style, incorporating elements of the regional fife and drum band tradition into blues band settings. He was the father of Cedric Burnside and performed extensively with R.L. Burnside.",
+    "activeFrom": "1977",
+    "incomplete": true,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Goin Down South",
+        "youtubeLink": null,
+        "sort_order": 1
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Holly Springs, Mississippi",
+        "coords": [
+          -89.447,
+          34.776
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Netherlands",
+        "coords": [
+          5.2913,
+          52.1326
+        ],
+        "sort_order": 2
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [],
+    "playedWith": [
+      "rl-burnside",
+      "junior-kimbrough",
+      "jessie-mae-hemphill",
+      "rl-boyce"
+    ]
   }
 ]
