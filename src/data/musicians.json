@@ -31623,7 +31623,7 @@
     "secondaryInstruments": []
   },
   {
-    "id": "w.c.-handy",
+    "id": "w-c-handy",
     "name": "W.C. Handy",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNs4lgiIyMgSt8xjDFVBzK8fEWbW8fM8jY9fxad_CiUUi3nDKaz_6uOnGqLZF111Xx8CGUoTzhv9GToYdG3dSy55LnVDonnsrDQmtm8GqzRykr3HcCGueBNyWphn16z5d1tDoVz2P5ActH/s1600/W.C.+HANDY+%25281873-1958%2529.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/a/a7/W._C._Handy_%281941_Van_Vechten_portrait%29.jpg",
@@ -37376,6 +37376,1172 @@
       "junior-kimbrough",
       "jessie-mae-hemphill",
       "rl-boyce"
+    ]
+  },
+  {
+    "id": "vasti-jackson",
+    "name": "Vasti Jackson",
+    "birthDate": "1959-10-20",
+    "birthPlace": "McComb, Mississippi",
+    "birthCoords": [
+      -90.4532,
+      31.2444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=y01C760-1Rk",
+    "image": null,
+    "description": "Vasti Jackson is an American electric blues guitarist, singer, songwriter, and record producer from McComb, Mississippi. He served as musical director and guitarist for legends including Z.Z. Hill, Johnnie Taylor, Little Milton, and Bobby Bland, and played on B.B. King's Grammy-winning album Blues Summit. His 2016 album The Soul of Jimmie Rodgers was nominated for a Grammy Award.",
+    "activeFrom": "1980",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Vas-tie Jackson",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "No Borders to the Blues",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "Bourbon Street Blues: Live in Nashville",
+        "youtubeLink": null,
+        "sort_order": 3
+      },
+      {
+        "name": "Stimulus Man",
+        "youtubeLink": null,
+        "sort_order": 4
+      },
+      {
+        "name": "New Orleans Rhythm Soul Blues",
+        "youtubeLink": null,
+        "sort_order": 5
+      },
+      {
+        "name": "The Soul of Jimmie Rodgers",
+        "youtubeLink": null,
+        "sort_order": 6
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "McComb, Mississippi",
+        "coords": [
+          -90.4532,
+          31.2444
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Jackson, Mississippi",
+        "coords": [
+          -90.1848,
+          32.2988
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Hattiesburg, Mississippi",
+        "coords": [
+          -89.2903,
+          31.3271
+        ],
+        "sort_order": 3
+      },
+      {
+        "place": "New Orleans, Louisiana",
+        "coords": [
+          -90.0715,
+          29.9511
+        ],
+        "sort_order": 4
+      },
+      {
+        "place": "Nashville, Tennessee",
+        "coords": [
+          -86.7816,
+          36.1627
+        ],
+        "sort_order": 5
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [
+      "lonnie-johnson",
+      "tommy-johnson",
+      "arthur-big-boy-crudup"
+    ],
+    "playedWith": [
+      "zz-hill",
+      "johnnie-taylor",
+      "little-milton",
+      "bobby-blue-bland",
+      "katie-webster",
+      "bb-king",
+      "koko-taylor",
+      "bobby-rush"
+    ]
+  },
+  {
+    "id": "monkey-joe",
+    "name": "Monkey Joe",
+    "birthDate": "1906-01-26",
+    "birthPlace": "Shelby County, Tennessee",
+    "birthCoords": [
+      -89.9,
+      35.15
+    ],
+    "deathDate": "1967-11-16",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=nc1GbcORw2Q",
+    "image": null,
+    "description": "Jesse L. Coleman, known as Monkey Joe, was an American country blues pianist and singer who recorded for Bluebird, Vocalion, and Okeh Records from the 1930s into the 1960s. He worked in juke joints in Jackson, Mississippi during the 1930s and later became a fixture in Chicago blues clubs during the 1960s blues revival.",
+    "activeFrom": "1930",
+    "incomplete": true,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Complete Recorded Works 1935-1941 Vol. 1",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "Complete Recorded Works 1935-1941 Vol. 2",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "Crescent City Blues",
+        "youtubeLink": null,
+        "sort_order": 3
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Shelby County, Tennessee",
+        "coords": [
+          -89.9,
+          35.15
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Jackson, Mississippi",
+        "coords": [
+          -90.1848,
+          32.2988
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 3
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [],
+    "playedWith": [
+      "little-brother-montgomery",
+      "big-bill-broonzy"
+    ]
+  },
+  {
+    "id": "jimmy-johnson",
+    "name": "Jimmy Johnson",
+    "birthDate": "1928-11-25",
+    "birthPlace": "Holly Springs, Mississippi",
+    "birthCoords": [
+      -89.4474,
+      34.7709
+    ],
+    "deathDate": "2022-01-31",
+    "deathPlace": "Harvey, Illinois",
+    "deathCoords": [
+      -87.6634,
+      41.507
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=GKQbr6yrKSw",
+    "image": null,
+    "description": "Jimmy Johnson was a celebrated Chicago blues guitarist and singer who moved from Holly Springs, Mississippi to Chicago in 1950. Initially working as a welder, he did not release his first solo album until age 50, but was inducted into the Blues Hall of Fame in 2016 and named Blues Artist of the Year by Living Blues in 2021.",
+    "activeFrom": "1959",
+    "incomplete": true,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Jimmy Johnson & Luther Johnson",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "Tobacco Road",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "North/South",
+        "youtubeLink": null,
+        "sort_order": 3
+      },
+      {
+        "name": "Bar Room Preacher",
+        "youtubeLink": null,
+        "sort_order": 4
+      },
+      {
+        "name": "I'm a Jockey",
+        "youtubeLink": null,
+        "sort_order": 5
+      },
+      {
+        "name": "Every Road Ends Somewhere",
+        "youtubeLink": null,
+        "sort_order": 6
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Holly Springs, Mississippi",
+        "coords": [
+          -89.4474,
+          34.7709
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 2
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals",
+      "Piano"
+    ],
+    "influences": [],
+    "influencedBy": [],
+    "playedWith": [
+      "freddie-king",
+      "albert-king",
+      "magic-sam",
+      "otis-rush",
+      "buddy-guy",
+      "jimmy-dawkins",
+      "luther-guitar-junior-johnson"
+    ]
+  },
+  {
+    "id": "syl-johnson",
+    "name": "Syl Johnson",
+    "birthDate": "1936-07-01",
+    "birthPlace": "Holly Springs, Mississippi",
+    "birthCoords": [
+      -89.4472,
+      34.7611
+    ],
+    "deathDate": "2022-02-06",
+    "deathPlace": "Mableton, Georgia",
+    "deathCoords": [
+      -84.5761,
+      33.8183
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=8c5OrULCA-s",
+    "image": null,
+    "description": "Syl Johnson was an American blues and soul singer, guitarist, and harmonica player who built his career in Chicago after moving from Holly Springs, Mississippi as a teenager. He recorded his most successful material at Hi Records in Memphis including the R&B hit Take Me to the River and the breakbeat classic Different Strokes.",
+    "activeFrom": "1959",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Dresses Too Short",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "Is It Because I'm Black?",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "Back for a Taste of Your Love",
+        "youtubeLink": null,
+        "sort_order": 3
+      },
+      {
+        "name": "Diamond in the Rough",
+        "youtubeLink": null,
+        "sort_order": 4
+      },
+      {
+        "name": "Total Explosion",
+        "youtubeLink": null,
+        "sort_order": 5
+      },
+      {
+        "name": "Uptown Shakedown",
+        "youtubeLink": null,
+        "sort_order": 6
+      },
+      {
+        "name": "Ms. Fine Brown Frame",
+        "youtubeLink": null,
+        "sort_order": 7
+      },
+      {
+        "name": "Back in the Game",
+        "youtubeLink": null,
+        "sort_order": 8
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Holly Springs, Mississippi",
+        "coords": [
+          -89.4472,
+          34.7611
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ],
+        "sort_order": 3
+      }
+    ],
+    "secondaryInstruments": [
+      "Guitar",
+      "Harmonica"
+    ],
+    "influences": [],
+    "influencedBy": [
+      "magic-sam",
+      "howlin-wolf",
+      "jimmy-reed",
+      "billy-boy-arnold",
+      "junior-wells",
+      "freddie-king"
+    ],
+    "playedWith": [
+      "magic-sam",
+      "howlin-wolf",
+      "jimmy-reed",
+      "billy-boy-arnold",
+      "junior-wells",
+      "freddie-king"
+    ]
+  },
+  {
+    "id": "calvin-fuzz-jones",
+    "name": "Calvin Fuzz Jones",
+    "birthDate": "1926-06-09",
+    "birthPlace": "Greenwood, Mississippi",
+    "birthCoords": [
+      -90.1801,
+      33.5162
+    ],
+    "deathDate": "2010-08-09",
+    "deathPlace": "Southaven, Mississippi",
+    "deathCoords": [
+      -89.9784,
+      34.9888
+    ],
+    "instrument": "Bass",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=O74xMRegxiw",
+    "image": null,
+    "description": "Calvin Jones was an American electric blues bassist and singer from Greenwood, Mississippi, best known for his decade-long tenure in Muddy Waters backing band from 1970 to 1980. He co-founded the Legendary Blues Band and appeared in the 1980 film The Blues Brothers performing on Maxwell Street in Chicago.",
+    "activeFrom": "1960",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Eye to Eye",
+        "youtubeLink": null,
+        "sort_order": 1
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Greenwood, Mississippi",
+        "coords": [
+          -90.1801,
+          33.5162
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Inverness, Mississippi",
+        "coords": [
+          -90.2901,
+          33.1957
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 3
+      },
+      {
+        "place": "Senatobia, Mississippi",
+        "coords": [
+          -89.9703,
+          34.9912
+        ],
+        "sort_order": 4
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [],
+    "playedWith": [
+      "muddy-waters",
+      "howlin-wolf",
+      "james-cotton",
+      "little-walter",
+      "elmore-james",
+      "pinetop-perkins",
+      "willie-big-eyes-smith",
+      "luther-guitar-junior-johnson",
+      "bob-margolin",
+      "ronnie-earl",
+      "hubert-sumlin",
+      "john-lee-hooker",
+      "big-walter-horton",
+      "sam-lay",
+      "lurrie-bell",
+      "barrelhouse-chuck",
+      "jb-lenoir"
+    ]
+  },
+  {
+    "id": "little-johnny-jones",
+    "name": "Little Johnny Jones",
+    "birthDate": "1924-11-01",
+    "birthPlace": "Jackson, Mississippi",
+    "birthCoords": [
+      -90.1848,
+      32.2988
+    ],
+    "deathDate": "1964-11-19",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=F55Xyxj9tUo",
+    "image": null,
+    "description": "Little Johnny Jones was a Chicago blues pianist and singer best known for his work with Tampa Red, Muddy Waters, and Elmore James. His 1949 recording Big Town Playboy is regarded as a classic of the genre.",
+    "activeFrom": "1946",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Big Town Playboy",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "Live in Chicago with Billy Boy Arnold",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "Doin The Best I Can",
+        "youtubeLink": null,
+        "sort_order": 3
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Jackson, Mississippi",
+        "coords": [
+          -90.1848,
+          32.2988
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 2
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals",
+      "Harmonica"
+    ],
+    "influences": [
+      "big-maceo-merriweather"
+    ],
+    "influencedBy": [],
+    "playedWith": [
+      "tampa-red",
+      "muddy-waters",
+      "elmore-james",
+      "little-walter",
+      "albert-king",
+      "jimmy-rogers",
+      "howlin-wolf",
+      "billy-boy-arnold",
+      "junior-wells",
+      "magic-sam",
+      "homesick-james",
+      "otis-spann",
+      "eddie-taylor"
+    ]
+  },
+  {
+    "id": "willie-kent",
+    "name": "Willie Kent",
+    "birthDate": "1936-02-24",
+    "birthPlace": "Inverness, Mississippi",
+    "birthCoords": [
+      -90.5911,
+      33.3542
+    ],
+    "deathDate": "2006-03-02",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.645,
+      41.78
+    ],
+    "instrument": "Bass",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=0RH1TzKH3aw",
+    "image": null,
+    "description": "Willie Kent was an American Chicago blues singer, bassist and songwriter who won the W.C. Handy Award for Best Blues Bassist for ten consecutive years from 1995 to 2004.",
+    "activeFrom": "1950",
+    "incomplete": true,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Ghetto",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "Ain't It Nice",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "Too Hurt To Cry",
+        "youtubeLink": null,
+        "sort_order": 3
+      },
+      {
+        "name": "Make Room for the Blues",
+        "youtubeLink": null,
+        "sort_order": 4
+      },
+      {
+        "name": "Comin' Alive!",
+        "youtubeLink": null,
+        "sort_order": 5
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Inverness, Mississippi",
+        "coords": [
+          -90.5911,
+          33.3542
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 2
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [],
+    "playedWith": [
+      "fenton-robinson",
+      "hubert-sumlin",
+      "jimmy-johnson",
+      "carey-bell",
+      "buster-benton",
+      "john-littlejohn",
+      "lil-ed-williams"
+    ]
+  },
+  {
+    "id": "willie-king",
+    "name": "Willie King",
+    "birthDate": "1943-03-18",
+    "birthPlace": "Prairie Point, Mississippi",
+    "birthCoords": [
+      -88.5353,
+      33.1553
+    ],
+    "deathDate": "2009-03-08",
+    "deathPlace": "Old Memphis, Alabama",
+    "deathCoords": [
+      -88.2272,
+      33.2331
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=3srCrVIee9c",
+    "image": null,
+    "description": "Willie King was an Alabama-based blues guitarist, singer, and community activist whose raw, driving blues drew comparisons to Junior Kimbrough and R.L. Burnside. He founded the Freedom Creek Festival and his socially conscious songwriting addressed injustices of life in the rural South.",
+    "activeFrom": "1961",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "I Am The Blues",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "Freedom Creek",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "Living in a New World",
+        "youtubeLink": null,
+        "sort_order": 3
+      },
+      {
+        "name": "Jukin' At Bettie's",
+        "youtubeLink": null,
+        "sort_order": 4
+      },
+      {
+        "name": "One Love",
+        "youtubeLink": null,
+        "sort_order": 5
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Prairie Point, Mississippi",
+        "coords": [
+          -88.5353,
+          33.1553
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Old Memphis, Alabama",
+        "coords": [
+          -88.2272,
+          33.2331
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 3
+      },
+      {
+        "place": "Aliceville, Alabama",
+        "coords": [
+          -88.1536,
+          33.1334
+        ],
+        "sort_order": 4
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [
+      "howlin-wolf",
+      "muddy-waters",
+      "lightnin-hopkins",
+      "john-lee-hooker",
+      "junior-kimbrough"
+    ],
+    "influencedBy": [],
+    "playedWith": [
+      "t-model-ford",
+      "sam-lay",
+      "david-honeyboy-edwards"
+    ]
+  },
+  {
+    "id": "big-daddy-kinsey",
+    "name": "Big Daddy Kinsey",
+    "birthDate": "1927-03-18",
+    "birthPlace": "Pleasant Grove, Mississippi",
+    "birthCoords": [
+      -90.0894,
+      34.4392
+    ],
+    "deathDate": "2001-04-03",
+    "deathPlace": "Gary, Indiana",
+    "deathCoords": [
+      -87.3464,
+      41.5935
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=loHDAoOs2Rg",
+    "image": null,
+    "description": "Lester Kinsey Jr., known as Big Daddy Kinsey, was a Chicago blues singer, guitarist, and harmonica player who formed The Kinsey Report with his sons. His 1993 album I Am the Blues featured guest appearances from Buddy Guy, James Cotton, and Pinetop Perkins.",
+    "activeFrom": "1950",
+    "incomplete": true,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Bad Situation",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "Can't Let Go",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "I Am the Blues",
+        "youtubeLink": null,
+        "sort_order": 3
+      },
+      {
+        "name": "Ramblin' Man",
+        "youtubeLink": null,
+        "sort_order": 4
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Pleasant Grove, Mississippi",
+        "coords": [
+          -90.0894,
+          34.4392
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Gary, Indiana",
+        "coords": [
+          -87.3464,
+          41.5935
+        ],
+        "sort_order": 2
+      }
+    ],
+    "secondaryInstruments": [
+      "Harmonica",
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [
+      "muddy-waters",
+      "howlin-wolf"
+    ],
+    "playedWith": [
+      "buddy-guy",
+      "james-cotton",
+      "pinetop-perkins"
+    ]
+  },
+  {
+    "id": "ernest-lane",
+    "name": "Ernest Lane",
+    "birthDate": "1931-03-16",
+    "birthPlace": "Clarksdale, Mississippi",
+    "birthCoords": [
+      -90.5726,
+      34.2001
+    ],
+    "deathDate": "2012-07-08",
+    "deathPlace": "Culver City, California",
+    "deathCoords": [
+      -118.3964,
+      34.0211
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=XWStllJHJo8",
+    "image": null,
+    "description": "Ernest Lane was an American blues pianist from Clarksdale, Mississippi who learned boogie-woogie piano from Pinetop Perkins as a boy alongside his childhood friend Ike Turner. Over six decades he performed with Robert Nighthawk, Willie Dixon, Canned Heat, and the Ike and Tina Turner Revue.",
+    "activeFrom": "1949",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "The Blues Is Back!",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "Born with the Blues",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "72 Miles From Memphis",
+        "youtubeLink": null,
+        "sort_order": 3
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Clarksdale, Mississippi",
+        "coords": [
+          -90.5726,
+          34.2001
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ],
+        "sort_order": 3
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals",
+      "Organ"
+    ],
+    "influences": [
+      "pinetop-perkins"
+    ],
+    "influencedBy": [],
+    "playedWith": [
+      "ike-turner",
+      "robert-nighthawk",
+      "willie-dixon",
+      "earl-hooker",
+      "george-harmonica-smith"
+    ]
+  },
+  {
+    "id": "floyd-lee",
+    "name": "Floyd Lee",
+    "birthDate": "1933-08-20",
+    "birthPlace": "Lamar, Mississippi",
+    "birthCoords": [
+      -89.315,
+      34.9122
+    ],
+    "deathDate": "2020-06-07",
+    "deathPlace": "Columbus, Ohio",
+    "deathCoords": [
+      -82.9988,
+      39.9612
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=rITgKAaBhF8",
+    "image": null,
+    "description": "Floyd Lee was an American blues musician born in Lamar, Mississippi who became a founding member of Music Under New York and performed in subway stations in Harlem for nearly 30 years.",
+    "activeFrom": "1950",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Mean Blues",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "Aint Doin Nothin Wrong",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "Full Moon Lightnin",
+        "youtubeLink": null,
+        "sort_order": 3
+      },
+      {
+        "name": "Doctors, Devils & Drugs",
+        "youtubeLink": null,
+        "sort_order": 4
+      },
+      {
+        "name": "The Amogla Sessions",
+        "youtubeLink": null,
+        "sort_order": 5
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Lamar, Mississippi",
+        "coords": [
+          -89.315,
+          34.9122
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 3
+      },
+      {
+        "place": "Harlem, New York",
+        "coords": [
+          -73.9442,
+          40.8116
+        ],
+        "sort_order": 4
+      },
+      {
+        "place": "Columbus, Ohio",
+        "coords": [
+          -82.9988,
+          39.9612
+        ],
+        "sort_order": 5
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [],
+    "influencedBy": [
+      "guitar-slim"
+    ],
+    "playedWith": [
+      "jimmy-reed",
+      "bo-diddley",
+      "john-lee-hooker"
+    ]
+  },
+  {
+    "id": "bobby-lounge",
+    "name": "Bobby Lounge",
+    "birthDate": "1950",
+    "birthPlace": "McComb, Mississippi",
+    "birthCoords": [
+      -90.4716,
+      31.2445
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "instrument": "Piano",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=4Wxn8boLdxc",
+    "image": null,
+    "description": "Bobby Lounge (born Dub Brock) is an American blues pianist and singer-songwriter from McComb, Mississippi known for his outrageous barrelhouse piano playing and sardonic songs about Southern life.",
+    "activeFrom": "1975",
+    "incomplete": false,
+    "source": "research",
+    "albums": [
+      {
+        "name": "I Remember the Night Your Trailer Burned Down",
+        "youtubeLink": null,
+        "sort_order": 1
+      },
+      {
+        "name": "Ten Foot Woman",
+        "youtubeLink": null,
+        "sort_order": 2
+      },
+      {
+        "name": "Bobbys Back in Town Live",
+        "youtubeLink": null,
+        "sort_order": 3
+      },
+      {
+        "name": "Somethins Wrong",
+        "youtubeLink": null,
+        "sort_order": 4
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "McComb, Mississippi",
+        "coords": [
+          -90.4716,
+          31.2445
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Ruston, Louisiana",
+        "coords": [
+          -92.6406,
+          32.5297
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Mandeville, Louisiana",
+        "coords": [
+          -90.0781,
+          30.3692
+        ],
+        "sort_order": 3
+      },
+      {
+        "place": "New Orleans, Louisiana",
+        "coords": [
+          -90.0715,
+          29.9511
+        ],
+        "sort_order": 4
+      }
+    ],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "influences": [
+      "professor-longhair",
+      "fats-domino",
+      "dr-john"
+    ],
+    "influencedBy": [],
+    "playedWith": [
+      "fats-domino",
+      "irma-thomas",
+      "allen-toussaint"
+    ]
+  },
+  {
+    "id": "mississippi-matilda",
+    "name": "Mississippi Matilda",
+    "birthDate": "1914-01-27",
+    "birthPlace": "Hattiesburg, Mississippi",
+    "birthCoords": [
+      -89.3083,
+      31.3271
+    ],
+    "deathDate": "1978-11-15",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": null,
+    "image": null,
+    "description": "Mississippi Matilda was an American Delta blues singer and songwriter who recorded four self-penned sides for Bluebird Records in 1936. She is best known for her signature song Hard Working Woman.",
+    "activeFrom": "1930",
+    "incomplete": true,
+    "source": "research",
+    "albums": [
+      {
+        "name": "Mississippi Blues Vol. 3 (1936-1942)",
+        "youtubeLink": null,
+        "sort_order": 1
+      }
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Hattiesburg, Mississippi",
+        "coords": [
+          -89.3083,
+          31.3271
+        ],
+        "sort_order": 1
+      },
+      {
+        "place": "Bogalusa, Louisiana",
+        "coords": [
+          -89.8451,
+          30.7846
+        ],
+        "sort_order": 2
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ],
+        "sort_order": 3
+      }
+    ],
+    "secondaryInstruments": [],
+    "influences": [],
+    "influencedBy": [],
+    "playedWith": [
+      "mississippi-sheiks"
     ]
   }
 ]
