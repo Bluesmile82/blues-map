@@ -4,8 +4,8 @@ import path from 'path';
 
 const { Client } = pg;
 
-const CONNECTION_STRING = process.env.DATABASE_URL ||
-  'postgresql://tsdbadmin:nghoutq5n90sd2qs@c04pgd6ggy.kwvblendjh.tsdb.cloud.timescale.com:36363/tsdb';
+if (!process.env.DATABASE_URL) throw new Error('DATABASE_URL environment variable is required');
+const CONNECTION_STRING = process.env.DATABASE_URL;
 
 const musiciansPath = path.resolve('src/data/musicians.json');
 

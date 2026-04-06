@@ -6,9 +6,8 @@ import pg from 'pg';
 
 const { Pool } = pg;
 
-const CONNECTION_STRING =
-  process.env.DATABASE_URL ||
-  'postgresql://tsdbadmin:nghoutq5n90sd2qs@c04pgd6ggy.kwvblendjh.tsdb.cloud.timescale.com:36363/tsdb';
+if (!process.env.DATABASE_URL) throw new Error('DATABASE_URL environment variable is required');
+const CONNECTION_STRING = process.env.DATABASE_URL;
 
 // Reuse a single connection pool across calls
 let pool = null;

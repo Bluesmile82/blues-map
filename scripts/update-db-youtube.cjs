@@ -3,8 +3,8 @@
 const { Client } = require('pg');
 const fs = require('fs');
 
-// Connection details from Ghost MCP
-const connectionString = 'postgresql://tsdbadmin:nghoutq5n90sd2qs@c04pgd6ggy.kwvblendjh.tsdb.cloud.timescale.com:36363/tsdb';
+if (!process.env.DATABASE_URL) throw new Error('DATABASE_URL environment variable is required');
+const connectionString = process.env.DATABASE_URL;
 
 async function main() {
   console.log('🔌 Connecting to database...');
