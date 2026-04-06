@@ -17,21 +17,23 @@ const BACKUP_INTERVAL_MS = 30 * 60 * 1000; // 30 minutes
 
 // Load environment variables based on mode
 const mode = process.env.NODE_ENV || 'development';
-const envPath = path.resolve(`.env.${mode}`);
 let EDIT_MODE = process.env.VITE_ENABLE_EDIT_MODE === 'true';
-if (fs.existsSync(envPath)) {
-  const envContent = fs.readFileSync(envPath, 'utf-8');
-  envContent.split('\n').forEach(line => {
-    const [key, ...values] = line.split('=');
-    if (key && values.length > 0) {
-      const value = values.join('=');
-      if (key === 'VITE_ENABLE_EDIT_MODE' && value === 'true') {
-        EDIT_MODE = true;
+for (const envFile of ['.env', `.env.${mode}`]) {
+  const envPath = path.resolve(envFile);
+  if (fs.existsSync(envPath)) {
+    const envContent = fs.readFileSync(envPath, 'utf-8');
+    envContent.split('\n').forEach(line => {
+      const [key, ...values] = line.split('=');
+      if (key && values.length > 0) {
+        const value = values.join('=');
+        if (key === 'VITE_ENABLE_EDIT_MODE' && value === 'true') {
+          EDIT_MODE = true;
+        }
+        if (!(key in process.env)) process.env[key] = value;
       }
-      process.env[key] = value;
-    }
-  });
-  console.log(`[musicians-api] ✅ Loaded .env.${mode}`);
+    });
+    console.log(`[musicians-api] ✅ Loaded ${envFile}`);
+  }
 }
 
 function readBody(req: IncomingMessage): Promise<string> {
