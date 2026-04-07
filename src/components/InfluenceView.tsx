@@ -1630,12 +1630,14 @@ export default function InfluenceView({
             ))}
           </div>
 
-          {/* Hover tooltip */}
-          {hovered && !selectedId && (() => {
-            const m = displayMusicians.find((x) => x.id === hovered);
+          {/* Hover/selection tooltip */}
+          {(hovered || selectedId) && (() => {
+            const tooltipId = hovered ?? selectedId;
+            const m = displayMusicians.find((x) => x.id === tooltipId);
             if (!m) return null;
+            const isSelected = m.id === selectedId && !hovered;
             return (
-              <div className="absolute bottom-4 sm:bottom-5 left-1/2 -translate-x-1/2 max-w-[90vw] bg-bg-subtle/95 border border-accent/60 rounded-lg px-3 sm:px-4 py-2 sm:py-2.5 flex items-center gap-2 sm:gap-3 pointer-events-none z-50 shadow-lg overflow-hidden">
+              <div className={`absolute bottom-4 sm:bottom-5 left-1/2 -translate-x-1/2 max-w-[90vw] bg-bg-subtle/95 border rounded-lg px-3 sm:px-4 py-2 sm:py-2.5 flex items-center gap-2 sm:gap-3 pointer-events-none z-50 shadow-lg overflow-hidden ${isSelected ? 'border-accent' : 'border-accent/60'}`}>
                 <strong className="text-ink text-xs sm:text-sm truncate">{m.name}</strong>
                 <span className="text-ink3 text-xs shrink-0">
                   {getYear(m.birthDate)}{m.deathDate ? ` – ${getYear(m.deathDate)}` : ''}
@@ -1644,8 +1646,8 @@ export default function InfluenceView({
                   {t(`styles.${m.bluesStyle}`, m.bluesStyle)}
                 </span>
               </div>
-             );
-           })()}
+            );
+          })()}
 
           {/* Gesture Hints - Mobile Only */}
           {isMobile && gestureHintShown && (
