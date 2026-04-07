@@ -24,8 +24,9 @@ function parseUrl(pathname: string): { view: ViewType | null; musicianId: string
   const listMatch = pathname.match(/^\/list\/([a-z0-9]+)$/i);
   if (listMatch) return { view: null, musicianId: null, listSlug: listMatch[1] };
 
-  const parts = pathname.split('/').filter(Boolean); // e.g. ['card', 'robert-johnson'] or ['robert-johnson']
+  const parts = pathname.split('/').filter(Boolean);
   if (parts.length === 0) return { view: null, musicianId: null, listSlug: null };
+  if (parts[0] === 'admin') return { view: null, musicianId: null, listSlug: null };
 
   if (parts[0] in VIEW_SLUGS) {
     return { view: VIEW_SLUGS[parts[0]], musicianId: parts[1] ?? null, listSlug: null };
@@ -57,7 +58,7 @@ const initialMusician = (() => {
   }
   
   // If on card view and no musician specified, select a random musician
-  if (initialParsed.view === 'card' || initialParsed.view === null) {
+  if (initialParsed.view === 'card' || (initialParsed.view === null && !initialParsed.musicianId && window.location.pathname !== '/admin')) {
     const musiciansArray = musiciansData as unknown as Musician[];
     if (musiciansArray.length === 0) return null;
     
