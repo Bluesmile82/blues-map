@@ -252,16 +252,12 @@ export default function InfluenceView({
       return { positions: {} as InfluenceLayout, styleZones: [] as StyleZone[], decadeTicks: [] };
 
     const { w, h } = worldRef.current;
-    // When a selection is active, shrink the layout width proportionally so musicians are closer together
-    const totalCount = musicians.length || 1;
-    const visibleCount = displayMusicians.length || 1;
-    const selectionScale = selectedId ? Math.max(0.15, Math.sqrt(visibleCount / totalCount)) : 1;
     const layoutOptions: LayoutOptions = { groupBy, scatter, naturalPositions, config: layoutConfig };
-    const { positions, styleZones } = computeTreeLayout(displayMusicians, w * selectionScale, h, layoutOptions);
+    const { positions, styleZones } = computeTreeLayout(displayMusicians, w, h, layoutOptions);
 
     const decadeTicks = computeDecadeTicks(h / 2, h);
     return { positions, styleZones, decadeTicks };
-  }, [displayMusicians, musicians, selectedId, groupBy, scatter, naturalPositions, layoutConfig, WW, WH]);
+  }, [displayMusicians, groupBy, scatter, naturalPositions, layoutConfig, WW, WH]);
 
   const clusters = useMemo(() => {
     if (!dims.width || !dims.height || !worldRef.current)
@@ -403,21 +399,44 @@ export default function InfluenceView({
 
   const focusId = hovered ?? selectedId;
 
-  // Compute connected IDs for a given musician (influences, influencedBy, playedWith in all directions)
-  const getConnectedIds = (m: Musician): Set<string> => new Set([
+  // Pre-build reverse lookup maps so getConnectedIds is O(1) per musician
+  const reverseInfluenceMap = useMemo(() => {
+    const map = new Map<string, string[]>();
+    displayMusicians.forEach((m) => {
+      m.influences.forEach((srcId) => {
+        if (!map.has(srcId)) map.set(srcId, []);
+        map.get(srcId)!.push(m.id);
+      });
+    });
+    return map;
+  }, [displayMusicians]);
+
+  const reversePlayedWithMap = useMemo(() => {
+    const map = new Map<string, string[]>();
+    displayMusicians.forEach((m) => {
+      (m.playedWith ?? []).forEach((peerId) => {
+        if (!map.has(peerId)) map.set(peerId, []);
+        map.get(peerId)!.push(m.id);
+      });
+    });
+    return map;
+  }, [displayMusicians]);
+
+  const getConnectedIds = useCallback((m: Musician): Set<string> => new Set([
     m.id,
     ...m.influences,
     ...(m.influencedBy ?? []),
-    ...displayMusicians.filter((x) => x.influences.includes(m.id)).map((x) => x.id),
+    ...(reverseInfluenceMap.get(m.id) ?? []),
     ...(m.playedWith ?? []),
-    ...displayMusicians.filter((x) => (x.playedWith ?? []).includes(m.id)).map((x) => x.id),
-  ]);
+    ...(reversePlayedWithMap.get(m.id) ?? []),
+  ]), [reverseInfluenceMap, reversePlayedWithMap]);
 
   // When a musician is selected, its network is the fixed visible set
-  const selectedMusician = selectedId ? displayMusicians.find((m) => m.id === selectedId) : null;
-  const selectionRelatedIds: Set<string> | null = selectedMusician
-    ? getConnectedIds(selectedMusician)
-    : null;
+  const selectionRelatedIds = useMemo<Set<string> | null>(() => {
+    if (!selectedId) return null;
+    const m = displayMusicians.find((x) => x.id === selectedId);
+    return m ? getConnectedIds(m) : null;
+  }, [selectedId, displayMusicians, getConnectedIds]);
 
   // Edge highlighting: when a musician is selected, always use the selected musician's
   // connections — hovering a related musician does NOT switch the highlighted edges
@@ -600,33 +619,25 @@ export default function InfluenceView({
     }
   }, [onSelect, deckVS, currentZoom, positions, isMobile]);
 
-  const deckLayers = useMemo(() => {
-    if (!dims.width || !worldRef.current) return [];
-
-    const { w, h } = worldRef.current;
+  // Pre-compute edge geometry — only recalculate when positions change, not on hover/zoom
+  const lifespanData = useMemo(() => {
+    if (!worldRef.current) return [];
+    const { h } = worldRef.current;
     const halfH = h / 2;
-    const xe = xExpand;
-    const sx = (x: number) => x * xe;
-
-    const tickLines = decadeTicks.map(({ year, y }) => ({
-      path: [[-w / 2 * xe, y], [w / 2 * xe, y]] as [Position2D, Position2D],
-      year,
-    }));
-
-    const lifespanData = displayMusicians
+    return displayMusicians
       .map((m) => {
         const pos = interpolatedPositions[m.id];
         if (!pos) return null;
-        const x = sx(pos[0]);
         const yBirth = yearToWorldY(getYear(m.birthDate), halfH, h, 100);
         const deathYear = m.deathDate ? getYear(m.deathDate) : 2025;
         const yDeath = yearToWorldY(deathYear, halfH, h, 100);
-        return { musician: m, path: [[x, yBirth], [x, yDeath]] as [Position2D, Position2D] };
+        return { musician: m, x: pos[0], yBirth, yDeath };
       })
-      .filter(Boolean) as { musician: Musician; path: [Position2D, Position2D] }[];
+      .filter(Boolean) as { musician: Musician; x: number; yBirth: number; yDeath: number }[];
+  }, [displayMusicians, interpolatedPositions]);
 
-    // Compute edges using interpolated positions so they connect to clustered nodes
-    const edges = displayMusicians.flatMap((m) =>
+  const edges = useMemo(() => {
+    return displayMusicians.flatMap((m) =>
       m.influences
         .map((srcId) => {
           const from = interpolatedPositions[srcId] ?? positions[srcId];
@@ -636,14 +647,16 @@ export default function InfluenceView({
         })
         .filter(Boolean)
     ) as { path: Position2D[]; targetId: string; sourceId: string }[];
+  }, [displayMusicians, interpolatedPositions, positions]);
 
-    const seenPlayedWithPairs = new Set<string>();
-    const playedWithEdges = displayMusicians.flatMap((m) =>
+  const playedWithEdges = useMemo(() => {
+    const seenPairs = new Set<string>();
+    return displayMusicians.flatMap((m) =>
       (m.playedWith ?? [])
         .map((srcId) => {
-          const pairKey = [m.id, srcId].sort().join('|');
-          if (seenPlayedWithPairs.has(pairKey)) return null;
-          seenPlayedWithPairs.add(pairKey);
+          const pairKey = m.id < srcId ? `${m.id}\0${srcId}` : `${srcId}\0${m.id}`;
+          if (seenPairs.has(pairKey)) return null;
+          seenPairs.add(pairKey);
           const from = interpolatedPositions[srcId] ?? positions[srcId];
           const to = interpolatedPositions[m.id] ?? positions[m.id];
           if (!from || !to) return null;
@@ -651,6 +664,29 @@ export default function InfluenceView({
         })
         .filter(Boolean)
     ) as { path: Position2D[]; targetId: string; sourceId: string }[];
+  }, [displayMusicians, interpolatedPositions, positions]);
+
+  // Pre-build style color map so getColor callbacks avoid O(n) find() per node
+  const edgeTargetStyleMap = useMemo(() => {
+    const map = new Map<string, string>();
+    displayMusicians.forEach((m) => map.set(m.id, m.bluesStyle));
+    return map;
+  }, [displayMusicians]);
+
+  const tickLines = useMemo(() => {
+    if (!worldRef.current) return [];
+    const { w } = worldRef.current;
+    return decadeTicks.map(({ year, y }) => ({
+      path: [[-w / 2, y], [w / 2, y]] as [Position2D, Position2D],
+      year,
+    }));
+  }, [decadeTicks]);
+
+  const deckLayers = useMemo(() => {
+    if (!dims.width || !worldRef.current) return [];
+
+    const xe = xExpand;
+    const sx = (x: number) => x * xe;
 
     // Style tree alpha: fully visible when fully clustered, fades out as nodes expand
     const treeRatio = currentZoom <= CLUSTER_ZOOM_START
@@ -738,7 +774,7 @@ export default function InfluenceView({
       new PathLayer({
         id: 'lifespan-dim',
         data: lifespanData.filter((d) => (!focusId || d.musician.id !== focusId) && clusterCompression < 0.5),
-        getPath: (d) => d.path,
+        getPath: (d) => [[sx(d.x), d.yBirth], [sx(d.x), d.yDeath]] as [Position2D, Position2D],
         getColor: (d): [number, number, number, number] => {
           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
           return [r, g, b, focusId ? 20 : 50];
@@ -747,6 +783,7 @@ export default function InfluenceView({
         widthUnits: 'pixels' as const,
         pickable: false,
         updateTriggers: {
+          getPath: [xExpand, interpolatedPositions],
           getColor: [focusId],
           data: [clusterCompression],
         },
@@ -756,7 +793,7 @@ export default function InfluenceView({
         ? [new PathLayer({
           id: 'lifespan-focus',
           data: lifespanData.filter((d) => d.musician.id === focusId),
-          getPath: (d) => d.path,
+          getPath: (d) => [[sx(d.x), d.yBirth], [sx(d.x), d.yDeath]] as [Position2D, Position2D],
           getColor: (d): [number, number, number, number] => {
             const [r, g, b] = getStyleColor(d.musician.bluesStyle);
             return [r, g, b, 200];
@@ -764,6 +801,7 @@ export default function InfluenceView({
           getWidth: 10,
           widthUnits: 'pixels' as const,
           pickable: false,
+          updateTriggers: { getPath: [xExpand, interpolatedPositions] },
         })]
         : []),
       // Influence edges (dim)
@@ -774,8 +812,7 @@ export default function InfluenceView({
           : edges,
         getPath: (d) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
         getColor: (d): [number, number, number, number] => {
-          const m = displayMusicians.find((x) => x.id === d.targetId);
-          return [...getStyleColor(m?.bluesStyle ?? ''), effectiveRelatedIds ? 1 : 10] as [number, number, number, number];
+          return [...getStyleColor(edgeTargetStyleMap.get(d.targetId) ?? ''), effectiveRelatedIds ? 1 : 10] as [number, number, number, number];
         },
         getWidth: 1,
         widthUnits: 'pixels' as const,
@@ -794,8 +831,7 @@ export default function InfluenceView({
           }),
           getPath: (d) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
           getColor: (d): [number, number, number, number] => {
-            const m = displayMusicians.find((x) => x.id === d.targetId);
-            return [...getStyleColor(m?.bluesStyle ?? ''), 210] as [number, number, number, number];
+            return [...getStyleColor(edgeTargetStyleMap.get(d.targetId) ?? ''), 210] as [number, number, number, number];
           },
           getWidth: 2,
           widthUnits: 'pixels' as const,
@@ -972,7 +1008,7 @@ export default function InfluenceView({
         },
       })] : []),
     ];
-  }, [dims.width, decadeTicks, styleZones, effectiveRelatedIds, positions, focusId, displayMusicians, musicianData, selectedId, hovered, groupBy, WW, WH, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, clusterLabelData, visibleMusicianLabels, currentZoom, styleTreePaths]);
+  }, [dims.width, tickLines, styleZones, effectiveRelatedIds, focusId, musicianData, selectedId, hovered, groupBy, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, clusterLabelData, visibleMusicianLabels, currentZoom, styleTreePaths, lifespanData, edges, playedWithEdges, edgeTargetStyleMap, theme, hoveredStyle, favoritesChecker, pulsePhase]);
 
   // Pulse ring — outside memo so it re-renders every animation frame
   const pulseLayer = useMemo(() => {

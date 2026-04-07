@@ -163,7 +163,7 @@ export const DEFAULT_LAYOUT_CONFIG: LayoutConfig = {
   playedWithWeight: 1,
   yAnchorStrength: 0.8,
   softCenterStrength: 0.02,
-  simulationIterations: 300,
+  simulationIterations: 150,
 };
 
 export interface LayoutOptions {
