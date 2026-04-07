@@ -7,6 +7,7 @@ import MusicianPanel from './components/MusicianPanel';
 import EditPanel from './components/EditPanel';
 import FloatingVideoPlayer from './components/FloatingVideoPlayer';
 import CreditsPage from './components/CreditsPage';
+import AnalyticsDashboard from './components/AnalyticsDashboard';
 import PublicListView from './components/lists/PublicListView';
 import { useAnalytics, trackMusicianView, trackSongPlay } from './hooks/useAnalytics';
 import type { Musician } from './types';
@@ -85,6 +86,7 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
   const [isCreating, setIsCreating] = useState(false);
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
   const [showCredits, setShowCredits] = useState(false);
+  const [showAnalytics, setShowAnalytics] = useState(window.location.pathname === '/admin');
   const [forceZoomToId, setForceZoomToId] = useState<string | null>(null);
   const [filteredMusicians, setFilteredMusicians] = useState<Musician[]>(musiciansData as unknown as Musician[]);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
@@ -217,7 +219,10 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
   // Sync URL → selection + view on browser back/forward
   useEffect(() => {
     const onPop = () => {
-      const parsed = parseUrl(window.location.pathname);
+      const pathname = window.location.pathname;
+      setShowAnalytics(pathname === '/admin');
+      if (pathname === '/admin') return;
+      const parsed = parseUrl(pathname);
       if (parsed.listSlug) {
         setPublicListSlug(parsed.listSlug);
         setSelected(null);
@@ -315,6 +320,10 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
 
       {showCredits && (
         <CreditsPage onClose={() => setShowCredits(false)} />
+      )}
+
+      {showAnalytics && (
+        <AnalyticsDashboard onClose={() => { setShowAnalytics(false); window.history.pushState(null, '', '/'); }} />
       )}
 
       {EDIT_MODE_ENABLED && editing && (

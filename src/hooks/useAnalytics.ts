@@ -7,7 +7,21 @@ let country: string | null = null
 
 const isLocalhost = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
 
-if (!isLocalhost) {
+const ADMIN_SECRET = 'bluesmap'
+
+function checkAdminBypass() {
+  const params = new URLSearchParams(location.search)
+  if (params.get('admin') === ADMIN_SECRET) {
+    document.cookie = `admin=1;max-age=${60 * 60 * 24 * 365};path=/;samesite=strict`
+    return true
+  }
+  return document.cookie.includes('admin=1')
+}
+
+const isAdmin = checkAdminBypass()
+const skipTracking = isLocalhost || isAdmin
+
+if (!skipTracking) {
   fetch('https://ipapi.co/json/')
   .then((r) => r.json())
   .then((data) => {
@@ -27,7 +41,7 @@ interface QueuedEvent {
 const eventQueue: QueuedEvent[] = []
 
 async function flush() {
-  if (isLocalhost) return
+  if (skipTracking) return
   if (eventQueue.length === 0) return
   const events = eventQueue.splice(0)
   const rows = events.map((e) => ({
@@ -47,7 +61,7 @@ async function flush() {
 }
 
 export function trackPageView(path: string) {
-  if (isLocalhost) return
+  if (skipTracking) return
   eventQueue.push({
     event: 'page_view',
     path,
@@ -58,7 +72,7 @@ export function trackPageView(path: string) {
 }
 
 export function trackMusicianView(musicianId: string) {
-  if (isLocalhost) return
+  if (skipTracking) return
   eventQueue.push({
     event: 'musician_view',
     path: window.location.pathname,
@@ -69,7 +83,7 @@ export function trackMusicianView(musicianId: string) {
 }
 
 export function trackSongPlay(musicianId: string, videoUrl?: string) {
-  if (isLocalhost) return
+  if (skipTracking) return
   eventQueue.push({
     event: 'song_play',
     path: window.location.pathname,
@@ -80,7 +94,7 @@ export function trackSongPlay(musicianId: string, videoUrl?: string) {
 }
 
 export function trackTimeSpent(seconds: number, musicianId?: string | null) {
-  if (isLocalhost) return
+  if (skipTracking) return
   eventQueue.push({
     event: 'time_spent',
     path: window.location.pathname,
