@@ -10,6 +10,7 @@ CREATE TABLE analytics_events (
   metadata jsonb,
   referrer text,
   screen_size text,
+  country text,
   created_at timestamptz NOT NULL DEFAULT now()
 );
 
@@ -25,3 +26,4 @@ CREATE INDEX idx_analytics_events_event ON analytics_events (event);
 CREATE INDEX idx_analytics_events_created_at ON analytics_events (created_at);
 CREATE INDEX idx_analytics_events_musician_id ON analytics_events (musician_id);
 CREATE INDEX idx_analytics_events_session_id ON analytics_events (session_id);
+CREATE INDEX idx_analytics_events_country ON analytics_events (country);

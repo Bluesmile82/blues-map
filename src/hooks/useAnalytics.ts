@@ -3,6 +3,18 @@ import { supabase } from '../lib/supabase'
 
 const sessionId = crypto.randomUUID()
 const screenSize = `${screen.width}x${screen.height}`
+let country: string | null = null
+
+const isLocalhost = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
+
+if (!isLocalhost) {
+  fetch('https://ipapi.co/json/')
+  .then((r) => r.json())
+  .then((data) => {
+    if (data.country_code) country = data.country_code
+  })
+  .catch(() => {})
+}
 
 interface QueuedEvent {
   event: string
@@ -15,6 +27,7 @@ interface QueuedEvent {
 const eventQueue: QueuedEvent[] = []
 
 async function flush() {
+  if (isLocalhost) return
   if (eventQueue.length === 0) return
   const events = eventQueue.splice(0)
   const rows = events.map((e) => ({
@@ -25,6 +38,7 @@ async function flush() {
     metadata: e.metadata,
     referrer: e.referrer,
     screen_size: screenSize,
+    country,
   }))
   const { error } = await supabase.from('analytics_events').insert(rows)
   if (error) {
@@ -33,6 +47,7 @@ async function flush() {
 }
 
 export function trackPageView(path: string) {
+  if (isLocalhost) return
   eventQueue.push({
     event: 'page_view',
     path,
@@ -43,6 +58,7 @@ export function trackPageView(path: string) {
 }
 
 export function trackMusicianView(musicianId: string) {
+  if (isLocalhost) return
   eventQueue.push({
     event: 'musician_view',
     path: window.location.pathname,
@@ -53,6 +69,7 @@ export function trackMusicianView(musicianId: string) {
 }
 
 export function trackSongPlay(musicianId: string, videoUrl?: string) {
+  if (isLocalhost) return
   eventQueue.push({
     event: 'song_play',
     path: window.location.pathname,
@@ -63,6 +80,7 @@ export function trackSongPlay(musicianId: string, videoUrl?: string) {
 }
 
 export function trackTimeSpent(seconds: number, musicianId?: string | null) {
+  if (isLocalhost) return
   eventQueue.push({
     event: 'time_spent',
     path: window.location.pathname,
