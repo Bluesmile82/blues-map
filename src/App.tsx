@@ -8,6 +8,7 @@ import EditPanel from './components/EditPanel';
 import FloatingVideoPlayer from './components/FloatingVideoPlayer';
 import CreditsPage from './components/CreditsPage';
 import PublicListView from './components/lists/PublicListView';
+import { useAnalytics, trackMusicianView, trackSongPlay } from './hooks/useAnalytics';
 import type { Musician } from './types';
 import musiciansData from './data/musicians.json';
 
@@ -87,6 +88,7 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
   const [forceZoomToId, setForceZoomToId] = useState<string | null>(null);
   const [filteredMusicians, setFilteredMusicians] = useState<Musician[]>(musiciansData as unknown as Musician[]);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+  const { setCurrentMusician } = useAnalytics();
 
   const handleViewChange = useCallback((newView: ViewType) => {
     setView(newView);
@@ -147,15 +149,19 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
       setSelected(musician);
       setManualVideoUrl(null);
       window.history.pushState(null, '', buildUrl(view, musician.id));
+      trackMusicianView(musician.id);
+      setCurrentMusician(musician.id);
       if (musician.youtubeLink) {
         setVideoMusician(musician);
         setShowPlayer(true);
+        trackSongPlay(musician.id, musician.youtubeLink);
       }
     }
   }, [editMode, view]);
 
   const handleClose = useCallback(() => {
     setSelected(null);
+    setCurrentMusician(null);
     window.history.pushState(null, '', buildUrl(view, null));
   }, [view]);
 
@@ -278,7 +284,7 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
           onNavigate={handleSelect}
           editMode={false}
           onEdit={handleEdit}
-          onPlayVideo={(url) => { setManualVideoUrl(url); setShowPlayer(true); setVideoMusician(selected); }}
+          onPlayVideo={(url) => { setManualVideoUrl(url); setShowPlayer(true); setVideoMusician(selected); trackSongPlay(selected.id, url); }}
           videoMusician={videoMusician}
           manualVideoUrl={manualVideoUrl}
           autoplay={autoplay}
