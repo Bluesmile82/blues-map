@@ -22,10 +22,10 @@ const isAdmin = checkAdminBypass()
 const skipTracking = isLocalhost || isAdmin
 
 if (!skipTracking) {
-  fetch('https://ipapi.co/json/')
+  fetch('https://api.country.is/')
   .then((r) => r.json())
   .then((data) => {
-    if (data.country_code) country = data.country_code
+    if (data.country) country = data.country
   })
   .catch(() => {})
 }

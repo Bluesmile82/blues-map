@@ -38,14 +38,16 @@ function BarChart({ data, maxCount, label }: { data: { label: string; count: num
 export default function AnalyticsDashboard({ onClose }: { onClose: () => void }) {
   const [events, setEvents] = useState<AnalyticsEvent[]>([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     async function load() {
-      const { data } = await supabase
+      const { data, error: err } = await supabase
         .from('analytics_events')
         .select('event, path, musician_id, country, created_at, metadata, session_id')
         .order('created_at', { ascending: false })
         .limit(10000)
+      if (err) setError(err.message)
       if (data) setEvents(data as AnalyticsEvent[])
       setLoading(false)
     }
@@ -55,7 +57,7 @@ export default function AnalyticsDashboard({ onClose }: { onClose: () => void })
   if (loading) {
     return (
       <div className="fixed inset-0 z-50 bg-white dark:bg-gray-900 flex items-center justify-center">
-        <p className="text-gray-500 dark:text-gray-400">Loading analytics...</p>
+        <p className="text-gray-500 dark:text-gray-400">{error ? `Error: ${error}` : 'Loading analytics...'}</p>
       </div>
     )
   }
