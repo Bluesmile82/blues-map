@@ -16,8 +16,9 @@ dist-ssr
 src/data/backups/
 
 # Environment variables
-.env.development
-.env.production
+.env
+.env.*
+!.env.production
 
 # Editor directories and files
 .vscode/*
@@ -30,8 +31,6 @@ src/data/backups/
 *.sln
 *.sw?
 data/favourites.json
-.env.development
-.env.production
 
 *storybook.log
 storybook-static

@@ -252,12 +252,16 @@ export default function InfluenceView({
       return { positions: {} as InfluenceLayout, styleZones: [] as StyleZone[], decadeTicks: [] };
 
     const { w, h } = worldRef.current;
+    // When a selection is active, shrink the layout width proportionally so musicians are closer together
+    const totalCount = musicians.length || 1;
+    const visibleCount = displayMusicians.length || 1;
+    const selectionScale = selectedId ? Math.max(0.15, Math.sqrt(visibleCount / totalCount)) : 1;
     const layoutOptions: LayoutOptions = { groupBy, scatter, naturalPositions, config: layoutConfig };
-    const { positions, styleZones } = computeTreeLayout(displayMusicians, w, h, layoutOptions);
+    const { positions, styleZones } = computeTreeLayout(displayMusicians, w * selectionScale, h, layoutOptions);
 
     const decadeTicks = computeDecadeTicks(h / 2, h);
     return { positions, styleZones, decadeTicks };
-  }, [displayMusicians, groupBy, scatter, naturalPositions, layoutConfig, WW, WH]);
+  }, [displayMusicians, musicians, selectedId, groupBy, scatter, naturalPositions, layoutConfig, WW, WH]);
 
   const clusters = useMemo(() => {
     if (!dims.width || !dims.height || !worldRef.current)
@@ -398,19 +402,27 @@ export default function InfluenceView({
   }, [clusters, clusterCompression, styleZones, deckVS?.zoom, groupBy, styleLabelY]);
 
   const focusId = hovered ?? selectedId;
-  const focusedMusician = focusId ? displayMusicians.find((m) => m.id === focusId) : null;
-  const relatedIds: Set<string> | null = focusedMusician
-    ? new Set([
-      focusedMusician.id,
-      ...focusedMusician.influences,
-      ...displayMusicians.filter((m) => m.influences.includes(focusId!)).map((m) => m.id),
-      ...(focusedMusician.playedWith ?? []),
-      ...displayMusicians.filter((m) => (m.playedWith ?? []).includes(focusId!)).map((m) => m.id),
-    ])
+
+  // Compute connected IDs for a given musician (influences, influencedBy, playedWith in all directions)
+  const getConnectedIds = (m: Musician): Set<string> => new Set([
+    m.id,
+    ...m.influences,
+    ...(m.influencedBy ?? []),
+    ...displayMusicians.filter((x) => x.influences.includes(m.id)).map((x) => x.id),
+    ...(m.playedWith ?? []),
+    ...displayMusicians.filter((x) => (x.playedWith ?? []).includes(m.id)).map((x) => x.id),
+  ]);
+
+  // When a musician is selected, its network is the fixed visible set
+  const selectedMusician = selectedId ? displayMusicians.find((m) => m.id === selectedId) : null;
+  const selectionRelatedIds: Set<string> | null = selectedMusician
+    ? getConnectedIds(selectedMusician)
     : null;
 
-  const effectiveRelatedIds: Set<string> | null = relatedIds
-    ? relatedIds
+  // Edge highlighting: when a musician is selected, always use the selected musician's
+  // connections — hovering a related musician does NOT switch the highlighted edges
+  const effectiveRelatedIds: Set<string> | null = selectionRelatedIds
+    ? selectionRelatedIds
     : hoveredStyle
       ? new Set(displayMusicians.filter((m) => {
         const clusterValue = groupBy === 'instrument' ? m.instrument : m.bluesStyle;
@@ -431,15 +443,16 @@ export default function InfluenceView({
   const cappedIconSize = ICON_SIZE * overlapFactor;
   const cappedTextSize = 14 * overlapFactor;
 
-  // Build musician data for layers
+  // Build musician data for layers — when a musician is selected, only show its network
   const musicianData = useMemo(() => {
-    return displayMusicians.map((m) => {
-      const pos = positions[m.id];
-      if (!pos) return null;
-
-      return { musician: m, position: pos };
-    }).filter(Boolean) as { musician: Musician; position: Position2D }[];
-  }, [displayMusicians, positions]);
+    return displayMusicians
+      .filter((m) => !selectionRelatedIds || selectionRelatedIds.has(m.id))
+      .map((m) => {
+        const pos = positions[m.id];
+        if (!pos) return null;
+        return { musician: m, position: pos };
+      }).filter(Boolean) as { musician: Musician; position: Position2D }[];
+  }, [displayMusicians, positions, selectionRelatedIds]);
 
   // CPU-side collision filtering for musician labels
   const visibleMusicianLabels = useMemo(() => {
@@ -646,8 +659,8 @@ export default function InfluenceView({
     const treeAlpha = Math.round(treeRatio * 200);
 
     return [
-      // Style evolution tree — edges between cluster labels (visible at low zoom only)
-      ...(treeAlpha > 0 && groupBy === 'style' ? [
+      // Style evolution tree — edges between cluster labels (hidden when a musician is selected)
+      ...(treeAlpha > 0 && groupBy === 'style' && !selectedId ? [
         new PathLayer({
           id: 'style-tree-edges',
           data: styleTreePaths,
@@ -773,7 +786,12 @@ export default function InfluenceView({
       ...(effectiveRelatedIds
         ? [new PathLayer({
           id: 'edges-highlight',
-          data: edges.filter((e) => effectiveRelatedIds.has(e.sourceId) && effectiveRelatedIds.has(e.targetId)),
+          data: edges.filter((e) => {
+            const anchorId = selectedId ?? focusId;
+            return anchorId
+              ? e.sourceId === anchorId || e.targetId === anchorId
+              : effectiveRelatedIds.has(e.sourceId) && effectiveRelatedIds.has(e.targetId);
+          }),
           getPath: (d) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
           getColor: (d): [number, number, number, number] => {
             const m = displayMusicians.find((x) => x.id === d.targetId);
@@ -789,11 +807,13 @@ export default function InfluenceView({
       ...(effectiveRelatedIds
         ? [new PathLayer({
           id: 'played-with-highlight',
-          data: playedWithEdges.filter((e) =>
-            focusId
-              ? e.sourceId === focusId || e.targetId === focusId
-              : effectiveRelatedIds.has(e.sourceId) && effectiveRelatedIds.has(e.targetId)
-          ),
+          data: playedWithEdges.filter((e) => {
+            // When a musician is selected, only show their own playedWith edges (ignore hover)
+            const anchorId = selectedId ?? focusId;
+            return anchorId
+              ? e.sourceId === anchorId || e.targetId === anchorId
+              : effectiveRelatedIds.has(e.sourceId) && effectiveRelatedIds.has(e.targetId);
+          }),
           getPath: (d) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
           getColor: (): [number, number, number, number] => theme === 'dark' ? [255, 255, 255, 150] : [0, 0, 0, 90],
           getWidth: 2,
@@ -920,8 +940,8 @@ export default function InfluenceView({
           data: [visibleMusicianLabels],
         },
       }),
-      // Cluster labels — CPU-side greedy deoverlap (clusterLabelData already filtered)
-      ...(clusterLabelData.length > 0 ? [new TextLayer({
+      // Cluster labels — hidden when a musician is selected
+      ...(!selectedId && clusterLabelData.length > 0 ? [new TextLayer({
         id: 'cluster-labels',
         data: clusterLabelData,
         getPosition: (d) => [sx(d.zoneX), d.position[1]] as Position2D,

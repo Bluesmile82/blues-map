@@ -365,6 +365,21 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
     ];
   }, [viewState]);
 
+  // When a musician is selected, compute its connected network (influences, influencedBy, playedWith)
+  const selectionRelatedIds = useMemo<Set<string> | null>(() => {
+    if (!selectedId) return null;
+    const m = completeMusicians.find((x) => x.id === selectedId);
+    if (!m) return null;
+    return new Set([
+      m.id,
+      ...m.influences,
+      ...(m.influencedBy ?? []),
+      ...completeMusicians.filter((x) => x.influences.includes(selectedId)).map((x) => x.id),
+      ...(m.playedWith ?? []),
+      ...completeMusicians.filter((x) => (x.playedWith ?? []).includes(selectedId)).map((x) => x.id),
+    ]);
+  }, [selectedId, completeMusicians]);
+
   // Clustering + spidering
   const {
     clusters,
@@ -380,6 +395,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
     zoom: viewState.zoom,
     bounds: viewportBounds,
     selectedId,
+    visibleIds: selectionRelatedIds,
   });
 
   // Spider expand animation (0 → 1)
@@ -481,21 +497,23 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
     const FONT_PX = 11;
     const CHAR_W = FONT_PX * 0.55;
 
-    const candidates = points.map((p) => {
-      const [lng, lat] = p.position;
-      const screenX = lng * pxPerDeg;
-      const screenY = -lat * pxPerDeg;
-      const textW = p.musician.name.length * CHAR_W;
-      const isFocused = p.musician.id === focusId;
-      return {
-        point: p,
-        screenX,
-        screenY,
-        halfW: textW / 2 + 6,
-        halfH: FONT_PX / 2 + 6,
-        priority: isFocused ? 2 : p.spidered ? 1 : 0,
-      };
-    });
+    const candidates = points
+      .filter((p) => !selectionRelatedIds || selectionRelatedIds.has(p.musician.id))
+      .map((p) => {
+        const [lng, lat] = p.position;
+        const screenX = lng * pxPerDeg;
+        const screenY = -lat * pxPerDeg;
+        const textW = p.musician.name.length * CHAR_W;
+        const isFocused = p.musician.id === focusId;
+        return {
+          point: p,
+          screenX,
+          screenY,
+          halfW: textW / 2 + 6,
+          halfH: FONT_PX / 2 + 6,
+          priority: isFocused ? 2 : p.spidered ? 1 : 0,
+        };
+      });
 
     candidates.sort((a, b) => b.priority - a.priority);
 
@@ -514,7 +532,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       if (!overlaps) placed.push(c);
     }
     return placed.map((c) => c.point);
-  }, [points, viewState.zoom, focusId]);
+  }, [points, viewState.zoom, focusId, selectionRelatedIds]);
 
   const layers = useMemo(() => [
     // Migration arcs (only for focused musician)
@@ -547,13 +565,14 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       getFillColor: [0, 0, 0, 0],
       stroked: true,
       getLineColor: (d): [number, number, number, number] => {
+        if (selectionRelatedIds && !selectionRelatedIds.has(d.musicianId)) return [0, 0, 0, 0];
         const a = !focusId || d.musicianId === focusId ? 160 : 30;
         return [...getStyleColor(d.musician.bluesStyle), a] as [number, number, number, number];
       },
       lineWidthUnits: 'pixels' as const,
       getLineWidth: 1.5,
       pickable: false,
-      updateTriggers: { getRadius: [focusId], getLineColor: [focusId] },
+      updateTriggers: { getRadius: [focusId, selectionRelatedIds], getLineColor: [focusId, selectionRelatedIds] },
     }),
 
     // Cluster pie chart wedges — computed inline, depth test disabled so they render above spent-places
@@ -717,11 +736,13 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
         return id === focusId ? 14 : 10;
       },
       getFillColor: (d): [number, number, number, number] => {
+        if (selectionRelatedIds && !selectionRelatedIds.has(d.musician.id)) return [0, 0, 0, 0];
         const a = !focusId || d.musician.id === focusId ? 220 : 140;
         return [...getStyleColor(d.musician.bluesStyle), a] as [number, number, number, number];
       },
       stroked: true,
       getLineColor: (d): [number, number, number, number] => {
+        if (selectionRelatedIds && !selectionRelatedIds.has(d.musician.id)) return [0, 0, 0, 0];
         const a = d.musician.id === focusId ? 255 : !focusId ? 180 : 20;
         return [255, 255, 255, a];
       },
@@ -742,8 +763,8 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
         setListHovered(null);
       },
       updateTriggers: {
-        getFillColor: [focusId],
-        getLineColor: [focusId],
+        getFillColor: [focusId, selectionRelatedIds],
+        getLineColor: [focusId, selectionRelatedIds],
         getRadius: [focusId],
         getPosition: [spiderProgress],
         data: [focusId],
@@ -775,7 +796,7 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       pickable: false,
       updateTriggers: { getColor: [focusId], getSize: [focusId], getBackgroundColor: [theme] },
     }),
-  ], [spentPlaces, migrationArcs, focusId, onSelect, visibleMapLabels, clusters, points,
+  ], [spentPlaces, migrationArcs, focusId, selectionRelatedIds, onSelect, visibleMapLabels, clusters, points,
     spiderLegs, spideredClusterId, collapseSpider, onClusterClick, viewState, theme, spiderProgress]);
 
   // Pulse ring — outside memo so it re-renders every animation frame

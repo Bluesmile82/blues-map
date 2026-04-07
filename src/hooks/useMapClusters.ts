@@ -137,6 +137,8 @@ interface UseMapClustersOptions {
   bounds: [number, number, number, number] | null;
   /** Currently selected musician ID — always shown even if inside a cluster */
   selectedId: string | null;
+  /** When set, only show musicians whose IDs are in this set */
+  visibleIds?: Set<string> | null;
   /** Cluster radius in pixels (default 50) */
   clusterRadius?: number;
   /** Max zoom at which clusters are generated (default 14) */
@@ -148,6 +150,7 @@ export function useMapClusters({
   zoom,
   bounds,
   selectedId,
+  visibleIds = null,
   clusterRadius = 50,
   maxClusterZoom = 14,
 }: UseMapClustersOptions) {
@@ -204,7 +207,8 @@ export function useMapClusters({
 
         // If this cluster is spidered, expand it into individual points
         if (clusterId === spideredClusterId) {
-          const leaves = index.getLeaves(clusterId, Infinity);
+          const allLeaves = index.getLeaves(clusterId, Infinity);
+          const leaves = visibleIds ? allLeaves.filter(l => visibleIds.has(l.properties.musicianId)) : allLeaves;
           const center = coords;
           const { positions: spiderPositions, radiusPx: spiderR } = forcePositions(center, leaves.length, zoom);
           spiderRadiusPx = spiderR;
@@ -227,11 +231,16 @@ export function useMapClusters({
             });
           }
         } else {
+          const allLeaves = index.getLeaves(clusterId, Infinity);
+          const visibleLeaves = visibleIds ? allLeaves.filter(l => visibleIds.has(l.properties.musicianId)) : allLeaves;
+
+          // Skip cluster entirely if none of its members are visible
+          if (visibleIds && visibleLeaves.length === 0) continue;
+
           // Check if the selected musician is inside this cluster — extract it
           let selectedExtracted = false;
           if (selectedId) {
-            const leaves = index.getLeaves(clusterId, Infinity);
-            for (const leaf of leaves) {
+            for (const leaf of visibleLeaves) {
               if (leaf.properties.musicianId === selectedId) {
                 const musician = musicianMap.get(selectedId);
                 if (musician) {
@@ -248,9 +257,9 @@ export function useMapClusters({
             }
           }
 
-          // Find most common blues style in cluster for coloring
-          const sampleLeaves = index.getLeaves(clusterId, 20);
+          // Build style distribution from visible leaves only
           const styleCounts = new Map<string, number>();
+          const sampleLeaves = visibleLeaves.slice(0, 20);
           for (const leaf of sampleLeaves) {
             const m = musicianMap.get(leaf.properties.musicianId);
             if (m) {
@@ -266,12 +275,26 @@ export function useMapClusters({
             }
           }
 
-          const clusterCount = props.point_count as number;
+          const visibleCount = visibleLeaves.length - (selectedExtracted ? 1 : 0);
+          if (visibleCount <= 0) continue;
+
+          // A cluster of 1 visible musician — extract as individual point instead
+          if (visibleCount === 1) {
+            const remaining = visibleLeaves.find(l => l.properties.musicianId !== selectedId);
+            if (remaining) {
+              const musician = musicianMap.get(remaining.properties.musicianId);
+              if (musician) {
+                points.push({ type: 'musician', musician, position: coords, spidered: false });
+              }
+            }
+            continue;
+          }
+
           clusters.push({
             type: 'cluster',
             clusterId,
             position: coords,
-            count: selectedExtracted ? clusterCount - 1 : clusterCount,
+            count: visibleCount,
             bluesStyle: topStyle,
             styleDistribution: Object.fromEntries(styleCounts),
           });
@@ -279,7 +302,7 @@ export function useMapClusters({
       } else {
         // Individual point (not clustered)
         const musician = musicianMap.get(props.musicianId as string);
-        if (musician) {
+        if (musician && (!visibleIds || visibleIds.has(musician.id))) {
           points.push({
             type: 'musician',
             musician,
@@ -291,7 +314,7 @@ export function useMapClusters({
     }
 
     return { clusters, points, spiderLegs, spiderRadiusPx };
-  }, [index, bounds, zoom, spideredClusterId, musicianMap, selectedId]);
+  }, [index, bounds, zoom, spideredClusterId, musicianMap, selectedId, visibleIds]);
 
   // ── Actions ────────────────────────────────────────────────────────────────
 

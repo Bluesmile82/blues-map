@@ -38543,5 +38543,1630 @@
     "playedWith": [
       "mississippi-sheiks"
     ]
+  },
+  {
+    "id": "lafayette-leake",
+    "name": "Lafayette Leake",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Lafayette_Leake.jpg/500px-Lafayette_Leake.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Lafayette_Leake.jpg/500px-Lafayette_Leake.jpg",
+    "birthDate": "1919-06-01",
+    "birthPlace": "Winona, Mississippi",
+    "birthCoords": [
+      -89.7281,
+      33.4835
+    ],
+    "deathDate": "1990-08-14",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=U4XRX8yj424",
+    "albums": [
+      {
+        "name": "Easy Blues (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6gaaG32lIqo"
+      },
+      {
+        "name": "Feel So Blue (1978)",
+        "youtubeLink": "https://www.youtube.com/watch?v=pCqB2kvyTBY"
+      },
+      {
+        "name": "Might is Right! (1960)",
+        "youtubeLink": "https://www.youtube.com/watch?v=U4XRX8yj424"
+      }
+    ],
+    "description": "Lafayette Leake was an American blues and jazz pianist, organist, vocalist and composer who played for Chess Records as a session musician, and as a member of the Big Three Trio, during the formative years of Chicago blues. He played piano on many of Chuck Berry's recordings, including the classic original rendition of 'Johnny B. Goode', and was a longtime member of Willie Dixon's Chicago Blues All-Stars.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "willie-dixon"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Lafayette_Leake",
+    "secondaryInstruments": [
+      "Organ",
+      "Vocals"
+    ]
+  },
+  {
+    "id": "tommy-mcclennan",
+    "name": "Tommy McClennan",
+    "image": "https://upload.wikimedia.org/wikipedia/en/2/2f/American_blues_guitarist_Tommy_McClennan.png",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/2/2f/American_blues_guitarist_Tommy_McClennan.png",
+    "birthDate": "1905-01-04",
+    "birthPlace": "Durant, Mississippi",
+    "birthCoords": [
+      -89.685,
+      32.889
+    ],
+    "deathDate": "1961-05-09",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.63,
+      41.878
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Yazoo City, Mississippi",
+        "coords": [
+          -90.406,
+          32.855
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.63,
+          41.878
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=6RQkh2xsx6Q",
+    "albums": [
+      {
+        "name": "The Bluebird Recordings 1939-1942 (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=pP324qGTrj8"
+      },
+      {
+        "name": "Whiskey Head Woman (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6RQkh2xsx6Q"
+      },
+      {
+        "name": "Cross Cut Saw (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=CuFZ0CvZXms"
+      }
+    ],
+    "description": "Tommy McClennan was an American Delta blues singer and guitarist born in Durant, Mississippi. Known for his rough, energetic playing style, he recorded for Bluebird Records from 1939 to 1942, producing classics like 'Bottle It Up and Go', 'Cross Cut Saw Blues', and 'Whiskey Head Woman'. His songs were later covered by Albert King and Bob Dylan.",
+    "activeFrom": "1939",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Tommy_McClennan",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "lc-mckinley",
+    "name": "L. C. McKinley",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1918-10-22",
+    "birthPlace": "Winona, Mississippi",
+    "birthCoords": [
+      -89.7279,
+      33.4859
+    ],
+    "deathDate": "1970-01-19",
+    "deathPlace": "East Chicago, Indiana",
+    "deathCoords": [
+      -87.5137,
+      41.6389
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Vaiden, Mississippi",
+        "coords": [
+          -89.7279,
+          33.4968
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=JXE0IA-pke8",
+    "albums": [
+      {
+        "name": "Chicago Blues in the Groove (1982)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JXE0IA-pke8"
+      },
+      {
+        "name": "Vee Jay Screaming Blues Guitar (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=eJbrmjxf758"
+      },
+      {
+        "name": "Sharpest Man in Town (1959)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xufbf7aja_0"
+      }
+    ],
+    "description": "L. C. McKinley was an American Chicago blues guitarist born in Winona, Mississippi, who relocated to Chicago in 1941 and became a regular performer at the 708 Club. He worked as a session musician on recordings mostly in the 1950s, backing artists like Eddie Boyd on the Billboard R&B chart-topping \"Five Long Years.\" His best-known tracks include \"Weeping Willow Blues\" and \"Nit Wit,\" and his guitar playing was influenced by T-Bone Walker.",
+    "activeFrom": "1947",
+    "influences": [],
+    "influencedBy": [
+      "t-bone-walker"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "eddie-boyd",
+      "curtis-jones"
+    ],
+    "source": "https://en.wikipedia.org/wiki/L._C._McKinley",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "hayes-mcmullan",
+    "name": "Hayes McMullan",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1902-01-29",
+    "birthPlace": "Murphreesboro, Mississippi",
+    "birthCoords": [
+      -89.97417,
+      33.89944
+    ],
+    "deathDate": "1986-05-01",
+    "deathPlace": "Tutwiler, Mississippi",
+    "deathCoords": [
+      -90.43333,
+      34.01722
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Tallahatchie County, Mississippi",
+        "coords": [
+          -90.17,
+          33.95
+        ]
+      },
+      {
+        "place": "Tutwiler, Mississippi",
+        "coords": [
+          -90.43333,
+          34.01722
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=LCQBgLq4ghk",
+    "albums": [
+      {
+        "name": "Everyday Seem Like Murder Here (2017)",
+        "youtubeLink": "https://www.youtube.com/watch?v=LCQBgLq4ghk"
+      }
+    ],
+    "description": "Hayes McMullan was an American Delta blues singer, guitarist and songwriter born in Tallahatchie County, Mississippi. He played alongside Charley Patton in the 1920s before quitting the blues to join a church in the 1930s. His music was preserved through recordings made by musicologist Gayle Dean Wardlow in 1967-68, and his song 'Smoke Like Lightning' later became the Howlin' Wolf classic 'Smokestack Lightnin'.",
+    "activeFrom": "1920",
+    "influences": [],
+    "influencedBy": [
+      "charley-patton"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "charley-patton"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Hayes_McMullan",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "mississippi-slim",
+    "name": "Mississippi Slim",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1943-08-13",
+    "birthPlace": "Shelby, Mississippi",
+    "birthCoords": [
+      -90.76528,
+      33.95083
+    ],
+    "deathDate": "2010-04-14",
+    "deathPlace": "Greenville, Mississippi",
+    "deathCoords": [
+      -91.0632,
+      33.4076
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Greenville, Mississippi",
+        "coords": [
+          -91.0632,
+          33.4076
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=E0zgZNu7saQ",
+    "albums": [
+      {
+        "name": "You Can't Lose the Blues (2008)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cnuOPVAZ9Vc"
+      }
+    ],
+    "description": "Walter Horn Jr., known as Mississippi Slim, was an American blues singer born in Shelby, Mississippi who grew up in Greenville. He moved to Chicago in 1968 where he performed in clubs and became known for his flamboyant stage presence, touring with artists such as Junior Wells. He returned to Mississippi in 1994 and remained active in the blues scene until his death in 2010.",
+    "activeFrom": "1960",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "junior-wells"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Mississippi_Slim_(blues_musician)",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "mckinley-mitchell",
+    "name": "McKinley Mitchell",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1934-12-25",
+    "birthPlace": "Jackson, Mississippi",
+    "birthCoords": [
+      -90.1848,
+      32.2988
+    ],
+    "deathDate": "1986-01-18",
+    "deathPlace": "Chicago Heights, Illinois",
+    "deathCoords": [
+      -87.6362,
+      41.507
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Jackson, Mississippi",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dM8kEWWg4Mc",
+    "albums": [
+      {
+        "name": "The Town I Live In (1962)",
+        "youtubeLink": "https://www.youtube.com/watch?v=_uRYdPreQac"
+      },
+      {
+        "name": "Trouble Blues (1976)",
+        "youtubeLink": "https://www.youtube.com/watch?v=YofPuCoAtbI"
+      },
+      {
+        "name": "Run To Love (1978)",
+        "youtubeLink": "https://www.youtube.com/watch?v=4AR_Gzqj3aY"
+      }
+    ],
+    "description": "McKinley Mitchell was an American Chicago-based blues and rhythm and blues singer who began his career performing gospel music. His 1962 record 'The Town I Live In' became a national R&B hit, peaking at number 8 on the Billboard R&B chart. He recorded for labels including Boxer, One-derful, Chess Records (with Willie Dixon), and Malaco, and was praised by critic Robert Christgau for his soulful style blending Bobby Bland and Brook Benton influences.",
+    "activeFrom": "1959",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "willie-dixon"
+    ],
+    "source": "https://en.wikipedia.org/wiki/McKinley_Mitchell",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "sonny-boy-nelson",
+    "name": "Sonny Boy Nelson",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1908-12-23",
+    "birthPlace": "Utica, Mississippi",
+    "birthCoords": [
+      -90.62222,
+      32.10583
+    ],
+    "deathDate": "1998-11-04",
+    "deathPlace": "Greenville, Mississippi",
+    "deathCoords": [
+      -91.04833,
+      33.38472
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Shelby, Mississippi",
+        "coords": [
+          -90.76528,
+          33.95083
+        ]
+      },
+      {
+        "place": "Hollandale, Mississippi",
+        "coords": [
+          -90.85306,
+          33.17611
+        ]
+      },
+      {
+        "place": "Greenville, Mississippi",
+        "coords": [
+          -91.04833,
+          33.38472
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=SbG1lBeAZ10",
+    "albums": [
+      {
+        "name": "Complete Recordings (1936)",
+        "youtubeLink": "https://www.youtube.com/watch?v=SbG1lBeAZ10"
+      }
+    ],
+    "description": "Sonny Boy Nelson, born Eugene Powell, was an American Delta blues musician from Utica, Mississippi who mastered multiple instruments including guitar, banjo, harmonica, mandolin, and violin. He recorded fifteen sides for Bluebird Records in 1936 alongside his wife Mississippi Matilda and members of the Mississippi Sheiks. His acoustic country blues approach was later overshadowed by electric blues styles.",
+    "activeFrom": "1936",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "mississippi-matilda",
+      "mississippi-sheiks"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Sonny_Boy_Nelson",
+    "secondaryInstruments": [
+      "Banjo",
+      "Harmonica",
+      "Mandolin",
+      "Violin",
+      "Vocals"
+    ]
+  },
+  {
+    "id": "bertha-lee-pate",
+    "name": "Bertha Lee Pate",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1902-06-17",
+    "birthPlace": "Flora, Mississippi",
+    "birthCoords": [
+      -90.31417,
+      32.54333
+    ],
+    "deathDate": "1975-05-10",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.62778,
+      41.88194
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Lula, Mississippi",
+        "coords": [
+          -90.47778,
+          34.45444
+        ]
+      },
+      {
+        "place": "Holly Ridge, Mississippi",
+        "coords": [
+          -90.75333,
+          33.44556
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.62778,
+          41.88194
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=l9tptTlCbW0",
+    "albums": [
+      {
+        "name": "Yellow Bee (1934)",
+        "youtubeLink": "https://www.youtube.com/watch?v=l9tptTlCbW0"
+      },
+      {
+        "name": "Mind Reader Blues (1934)",
+        "youtubeLink": "https://www.youtube.com/watch?v=PMPxyQCYJgY"
+      }
+    ],
+    "description": "Bertha Lee Pate was an American classic female blues singer active in the 1920s and 1930s, best known as the common-law wife and recording partner of Delta blues legend Charley Patton. She recorded three of her own songs with Patton accompanying her on guitar during his final sessions in 1934. Little else is known of her life beyond these recordings, which remain the only documents of her voice.",
+    "activeFrom": "1930",
+    "influences": [],
+    "influencedBy": [
+      "charley-patton"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "charley-patton"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Bertha_Lee_Pate",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "dion-payton",
+    "name": "Dion Payton",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1950-10-21",
+    "birthPlace": "Greenwood, Mississippi",
+    "birthCoords": [
+      -90.1794,
+      33.5162
+    ],
+    "deathDate": "2021-03-12",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=-S_6AJUgFPc",
+    "albums": [
+      {
+        "name": "All Your Affection Is Gone (1987)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Dion Payton was an American Chicago blues guitarist and singer born in Greenwood, Mississippi. He gained recording experience at Chess Records with gospel groups before touring with Millie Jackson, Albert King, and O.V. Wright. He assembled the 43rd Street Blues Band in 1985, serving as the weekend house band at Kingston Mines and as Junior Wells's backing band at the Checkerboard Lounge, becoming a legendary figure in Chicago's underground blues scene.",
+    "activeFrom": "1975",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "lonnie-brooks",
+      "albert-king",
+      "junior-wells"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Dion_Payton",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "robert-petway",
+    "name": "Robert Petway",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1903-01-01",
+    "birthPlace": "Itta Bena, Mississippi",
+    "birthCoords": [
+      -90.32444,
+      33.4975
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Yazoo City, Mississippi",
+        "coords": [
+          -90.41361,
+          32.84722
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=E9z7eCCRAtY",
+    "albums": [
+      {
+        "name": "The Complete Recordings (1941-1942)",
+        "youtubeLink": "https://www.youtube.com/watch?v=E9z7eCCRAtY"
+      },
+      {
+        "name": "Catfish Blues (1941)",
+        "youtubeLink": "https://www.youtube.com/watch?v=BT2-GC4EZfU"
+      },
+      {
+        "name": "Rockin' Chair Blues (1941)",
+        "youtubeLink": "https://www.youtube.com/watch?v=8_kl-ZDOdx0"
+      }
+    ],
+    "description": "Robert Petway was an American Delta blues singer and guitarist who recorded only 16 songs across two sessions for Bluebird Records in Chicago in 1941 and 1942. His composition 'Catfish Blues' became one of the most influential blues songs ever recorded, directly inspiring Muddy Waters' 'Rollin' Stone' and giving the Rolling Stones their name. Despite his enormous influence, virtually nothing is known about his life after his final recording session.",
+    "activeFrom": "1941",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Robert_Petway",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "brewer-phillips",
+    "name": "Brewer Phillips",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1924-11-16",
+    "birthPlace": "Coila, Mississippi",
+    "birthCoords": [
+      -89.97111,
+      33.39528
+    ],
+    "deathDate": "1999-08-30",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=swmEmXxVvtU",
+    "albums": [
+      {
+        "name": "Whole Lotta Blues (1982)",
+        "youtubeLink": "https://www.youtube.com/watch?v=swmEmXxVvtU"
+      },
+      {
+        "name": "Homebrew (1996)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Brewer Phillips was an American blues guitarist born on a plantation in Coila, Mississippi, who learned the blues from Memphis Minnie at an early age. He is best known as the rhythm guitarist in Hound Dog Taylor's HouseRockers, whose raw two-guitar attack defined Chicago's South Side juke joint sound. After Taylor's death in 1975, Phillips recorded under his own name for Delmark and JSP Records and continued performing with J. B. Hutto and Lil' Ed Williams.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [
+      "memphis-minnie",
+      "hound-dog-taylor"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "hound-dog-taylor",
+      "j-b-hutto",
+      "lil-ed-williams"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Brewer_Phillips",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "irene-scruggs",
+    "name": "Irene Scruggs",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1901-12-07",
+    "birthPlace": "Lamont, Mississippi",
+    "birthCoords": [
+      -91.07611,
+      33.53528
+    ],
+    "deathDate": "1981-07-20",
+    "deathPlace": "Trier, Germany",
+    "deathCoords": [
+      6.64139,
+      49.75667
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis, Missouri",
+        "coords": [
+          -90.19778,
+          38.62722
+        ]
+      },
+      {
+        "place": "Paris, France",
+        "coords": [
+          2.3522,
+          48.8567
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=LHuJ88mcfNk",
+    "albums": [
+      {
+        "name": "Itching Heel (1930)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xEa8Kr_LKlY"
+      },
+      {
+        "name": "Married Man Blues (1930)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9NuZ7GuO1Qs"
+      }
+    ],
+    "description": "Irene Scruggs was an American country blues singer, also billed as Chocolate Brown and Dixie Nolan. Born in rural Mississippi and raised in St. Louis, she recorded for Okeh Records starting in 1924 and collaborated with notable musicians including Lonnie Johnson, Blind Blake, and Little Brother Montgomery. She later moved to Europe, settling in Paris and eventually Germany, where she died in 1981.",
+    "activeFrom": "1924",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "lonnie-johnson",
+      "blind-blake",
+      "little-brother-montgomery"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Irene_Scruggs",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "preston-shannon",
+    "name": "Preston Shannon",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1947-10-23",
+    "birthPlace": "Olive Branch, Mississippi",
+    "birthCoords": [
+      -89.7959,
+      34.962
+    ],
+    "deathDate": "2018-01-22",
+    "deathPlace": "Memphis, Tennessee",
+    "deathCoords": [
+      -90.049,
+      35.1495
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=SwvuSFqNT4k",
+    "albums": [
+      {
+        "name": "Break the Ice (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=TYfSHKGrcfM"
+      },
+      {
+        "name": "Midnight in Memphis (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uBfwmZYjO2w"
+      },
+      {
+        "name": "All in Time (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=bBnIMaiIjsA"
+      }
+    ],
+    "description": "Preston Shannon was an American electric blues and soul blues guitarist, singer and songwriter, hailed as the reigning 'King of Beale Street' in Memphis. Born in Olive Branch, Mississippi, he relocated to Memphis at age eight and became a fixture on the city's blues scene, known for his powerful guitar work and soulful voice. He released six albums between 1994 and 2014 and was a regular performer at B.B. King's Blues Club on Beale Street.",
+    "activeFrom": "1980",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Preston_Shannon",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "henry-sloan",
+    "name": "Henry Sloan",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1870-01-01",
+    "birthPlace": "Hinds County, Mississippi",
+    "birthCoords": [
+      -90.4387,
+      32.2668
+    ],
+    "deathDate": "1948-03-13",
+    "deathPlace": "Crittenden County, Arkansas",
+    "deathCoords": [
+      -90.3082,
+      35.2126
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Dockery Plantation, Mississippi",
+        "coords": [
+          -90.3689,
+          33.8913
+        ]
+      },
+      {
+        "place": "West Memphis, Arkansas",
+        "coords": [
+          -90.1843,
+          35.1465
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=h2wdp9XK10Y",
+    "albums": [],
+    "description": "Henry Sloan was an American musician, one of the earliest figures in the history of Delta Blues. Very little is known for certain about his life, other than that he tutored Charlie Patton in the ways of the blues. He left no known recordings, but both Tommy Johnson and Son House stated that Patton \"dogged every step\" of Sloan's.",
+    "activeFrom": "1890",
+    "influences": [
+      "charley-patton",
+      "tommy-johnson",
+      "son-house"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "charley-patton"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Henry_Sloan",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "henry-speller",
+    "name": "Henry Speller",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1900-01-01",
+    "birthPlace": "Panther Burn, Mississippi",
+    "birthCoords": [
+      -90.8976,
+      32.9054
+    ],
+    "deathDate": "1997-01-01",
+    "deathPlace": "Memphis, Tennessee",
+    "deathCoords": [
+      -90.049,
+      35.1495
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Leland, Mississippi",
+        "coords": [
+          -90.8968,
+          33.4059
+        ]
+      },
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "",
+    "albums": [],
+    "description": "Henry Speller was an American Delta blues musician and self-taught visual artist from Panther Burn, Mississippi who spent most of his adult life in Memphis, Tennessee. He played blues guitar and harmonica on Beale Street and performed with Muddy Waters and Howlin' Wolf, who urged him to join his band in Chicago, but Speller declined. His artwork is held in the permanent collections of the Metropolitan Museum of Art, the Smithsonian, and the National Gallery of Art.",
+    "activeFrom": "1941",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "muddy-waters",
+      "howlin-wolf"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Henry_Speller",
+    "secondaryInstruments": [
+      "Harmonica",
+      "Vocals"
+    ]
+  },
+  {
+    "id": "houston-stackhouse",
+    "name": "Houston Stackhouse",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1910-09-28",
+    "birthPlace": "Wesson, Mississippi",
+    "birthCoords": [
+      -90.39694,
+      31.69917
+    ],
+    "deathDate": "1980-09-23",
+    "deathPlace": "Helena, Arkansas",
+    "deathCoords": [
+      -90.58611,
+      34.52917
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Crystal Springs, Mississippi",
+        "coords": [
+          -90.3568,
+          31.9102
+        ]
+      },
+      {
+        "place": "Helena, Arkansas",
+        "coords": [
+          -90.58611,
+          34.52917
+        ]
+      },
+      {
+        "place": "Dundee, Mississippi",
+        "coords": [
+          -90.7843,
+          34.2298
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Cryin' Won't Help You (1972)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Big Road Blues (1999)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Houston Stackhouse was an American Delta blues guitarist and singer best known for his association with Robert Nighthawk, whom he taught to play guitar. A key figure in the Mississippi Delta blues scene, he performed on the legendary King Biscuit Time radio program and played alongside Robert Johnson, Sonny Boy Williamson II, and Pinetop Perkins, though he remained largely undiscovered outside the Delta until the blues revival of the late 1960s.",
+    "activeFrom": "1935",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "robert-nighthawk",
+      "robert-johnson",
+      "sonny-boy-williamson-ii",
+      "pinetop-perkins",
+      "joe-willie-wilkins",
+      "frank-frost"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Houston_Stackhouse",
+    "secondaryInstruments": [
+      "Vocals",
+      "Harmonica"
+    ]
+  },
+  {
+    "id": "greg-fingers-taylor",
+    "name": "Greg \"Fingers\" Taylor",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1952-06-03",
+    "birthPlace": "Wichita, Kansas",
+    "birthCoords": [
+      -97.3375,
+      37.6922
+    ],
+    "deathDate": "2023-11-23",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Jackson, Mississippi",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      },
+      {
+        "place": "Fort Lauderdale, Florida",
+        "coords": [
+          -80.1373,
+          26.1224
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Xi4Xjg59iRk",
+    "albums": [
+      {
+        "name": "Harpoon Man (1984)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Xi4Xjg59iRk"
+      },
+      {
+        "name": "Chest Pains (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=j6CmX9FLOSM"
+      },
+      {
+        "name": "Old Rock 'n' Roller (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=GgXlVs2pUs4"
+      }
+    ],
+    "description": "Greg \"Fingers\" Taylor was an American harmonica player best known for his long tenure with Jimmy Buffett's Coral Reefer Band from 1974 to 2000. Born in Wichita, Kansas and raised in Mississippi, he earned his nickname playing keyboards before taking up harmonica. He released five solo studio albums blending blues, rock, and Gulf Coast sounds, and was nicknamed \"The Harpoon Man\" for his distinctive harmonica style.",
+    "activeFrom": "1969",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Greg_%22Fingers%22_Taylor",
+    "secondaryInstruments": [
+      "Vocals",
+      "Keyboards"
+    ]
+  },
+  {
+    "id": "james-thomas",
+    "name": "James Thomas",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1926-10-14",
+    "birthPlace": "Eden, Mississippi",
+    "birthCoords": [
+      -90.2823,
+      32.9876
+    ],
+    "deathDate": "1993-06-26",
+    "deathPlace": "Greenville, Mississippi",
+    "deathCoords": [
+      -91.0618,
+      33.4101
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Leland, Mississippi",
+        "coords": [
+          -90.8962,
+          33.4054
+        ]
+      },
+      {
+        "place": "Greenville, Mississippi",
+        "coords": [
+          -91.0618,
+          33.4101
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9lXiViAspwk",
+    "albums": [
+      {
+        "name": "The Blues Are Alive and Well (1969)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Highway 61 Blues 1968-82",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "James 'Son' Thomas was an American Delta blues guitarist, singer, and sculptor from Eden, Mississippi. A self-taught musician influenced by Arthur 'Big Boy' Crudup, he became known through films by the Center for Southern Folklore in the 1970s and recorded for several small labels. He also gained recognition as a folk artist, creating unfired clay sculptures that reflected his philosophy that 'we all end up in the clay.'",
+    "activeFrom": "1968",
+    "influences": [],
+    "influencedBy": [
+      "arthur-big-boy-crudup"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "eddie-cusic"
+    ],
+    "source": "https://en.wikipedia.org/wiki/James_Thomas_(blues_musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "rufus-thomas",
+    "name": "Rufus Thomas",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1917-03-26",
+    "birthPlace": "Cayce, Mississippi",
+    "birthCoords": [
+      -89.424,
+      34.872
+    ],
+    "deathDate": "2001-12-15",
+    "deathPlace": "Memphis, Tennessee",
+    "deathCoords": [
+      -90.049,
+      35.1495
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=8lCI63H1neY",
+    "albums": [
+      {
+        "name": "Walking the Dog (1963)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Fw1KAlQSYjw"
+      },
+      {
+        "name": "Do the Funky Chicken (1970)",
+        "youtubeLink": "https://www.youtube.com/watch?v=46H1O8hb6U0"
+      }
+    ],
+    "description": "Rufus C. Thomas, Jr. was an American rhythm-and-blues, funk, soul and blues singer, songwriter, dancer, DJ and comic entertainer from Memphis, Tennessee. Known as \"The World's Oldest Teenager,\" he recorded for Chess, Sun, and Stax Records, producing dance hits like \"Walking the Dog\" and \"Do the Funky Chicken.\" He embodied the spirit of Memphis music perhaps more than any other artist, serving as mentor, MC, and radio DJ on WDIA across five decades.",
+    "activeFrom": "1936",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Rufus_Thomas",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "sharde-thomas",
+    "name": "Shardé Thomas",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1990-01-01",
+    "birthPlace": "Coldwater, Mississippi",
+    "birthCoords": [
+      -89.2084,
+      34.6832
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Como, Mississippi",
+        "coords": [
+          -89.8737,
+          34.509
+        ]
+      },
+      {
+        "place": "Senatobia, Mississippi",
+        "coords": [
+          -89.9687,
+          34.6176
+        ]
+      }
+    ],
+    "instrument": "Fife",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=K8yfQ1EzzYg",
+    "albums": [
+      {
+        "name": "What Do I Do? (2010)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Shardé Thomas is an American fife player in the vanishing American fife and drum blues tradition, and the granddaughter of legendary fife master Othar Turner. She assumed leadership of the Rising Star Fife and Drum Band at age 12 after her grandfather's death in 2003, stepping in to record on Corey Harris's Mississippi to Mali album dedicated to Turner. She plays a homemade cane fife and continues to preserve the North Mississippi hill country fife and drum tradition.",
+    "activeFrom": "2003",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "corey-harris",
+      "rl-boyce"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Shard%C3%A9_Thomas",
+    "secondaryInstruments": [
+      "Drums",
+      "Vocals"
+    ]
+  },
+  {
+    "id": "paul-thorn",
+    "name": "Paul Thorn",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1964-07-13",
+    "birthPlace": "Kenosha, Wisconsin",
+    "birthCoords": [
+      -87.8212,
+      42.5847
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Tupelo, Mississippi",
+        "coords": [
+          -88.7034,
+          34.2576
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=r6ZhQd9c-b8",
+    "albums": [
+      {
+        "name": "Hammer and Nail (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=VlOMbXNqeDY"
+      },
+      {
+        "name": "Mission Temple Fireworks Stand (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=x-FhapPZ0h8"
+      },
+      {
+        "name": "What the Hell Is Goin' On? (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=fGqNjBdSCV4"
+      }
+    ],
+    "description": "Paul Thorn is an American singer-songwriter from Tupelo, Mississippi, whose music blends Southern rock, blues, country, and Americana. Before his music career, he was a professional boxer with a 14-4 record, including a nationally televised bout against Roberto Duran. He has released over a dozen albums, with Don't Let the Devil Ride reaching number one on the Billboard Blues Albums chart.",
+    "activeFrom": "1997",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "robert-cray"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Paul_Thorn",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "otha-turner",
+    "name": "Otha Turner",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1907-06-02",
+    "birthPlace": "Canton, Mississippi",
+    "birthCoords": [
+      -90.03,
+      32.61
+    ],
+    "deathDate": "2003-02-27",
+    "deathPlace": "Gravel Springs, Mississippi",
+    "deathCoords": [
+      -89.94,
+      34.51
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Gravel Springs, Mississippi",
+        "coords": [
+          -89.94,
+          34.51
+        ]
+      },
+      {
+        "place": "Como, Mississippi",
+        "coords": [
+          -89.94,
+          34.51
+        ]
+      }
+    ],
+    "instrument": "Fife",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ngQMhUOoL-8",
+    "albums": [
+      {
+        "name": "Everybody Hollerin' Goat (1998)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "From Senegal to Senatobia (1999)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Othar 'Otha' Turner was one of the last well-known practitioners of the vanishing American fife and drum blues tradition, living his entire life as a farmer near Como in northern Mississippi. He led the Rising Star Fife and Drum Band, hosted legendary annual Labor Day goat-roast picnics, and received a National Heritage Fellowship from the NEA in 1992. His track 'Shimmy She Wobble' was featured in Martin Scorsese's 2002 film Gangs of New York.",
+    "activeFrom": "1923",
+    "influences": [],
+    "influencedBy": [
+      "sid-hemphill"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "jessie-mae-hemphill"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Othar_Turner",
+    "secondaryInstruments": [
+      "Drums"
+    ]
+  },
+  {
+    "id": "lc-ulmer",
+    "name": "L. C. Ulmer",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1928-08-28",
+    "birthPlace": "Stringer, Mississippi",
+    "birthCoords": [
+      -89.552,
+      31.949
+    ],
+    "deathDate": "2016-02-14",
+    "deathPlace": "Ellisville, Mississippi",
+    "deathCoords": [
+      -89.201,
+      31.601
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Laurel, Mississippi",
+        "coords": [
+          -89.131,
+          31.694
+        ]
+      },
+      {
+        "place": "Joliet, Illinois",
+        "coords": [
+          -88.083,
+          41.525
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=SkE3zbX33yU",
+    "albums": [
+      {
+        "name": "Blues Come Yonder (2011)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Lee Chester 'L. C.' Ulmer was an American Delta blues musician and multi-instrumentalist from Stringer, Mississippi. A one-man band performer for over half a century, he played at festivals and clubs throughout the Deep South, appeared in the documentaries M for Mississippi (2008) and I Am the Blues (2015), and recorded the album Blues Come Yonder in 2011.",
+    "activeFrom": "1940",
+    "influences": [],
+    "influencedBy": [
+      "blind-roosevelt-graves"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "muddy-waters"
+    ],
+    "source": "https://en.wikipedia.org/wiki/L._C._Ulmer",
+    "secondaryInstruments": [
+      "Harmonica",
+      "Vocals"
+    ]
+  },
+  {
+    "id": "wade-walton",
+    "name": "Wade Walton",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1919-10-10",
+    "birthPlace": "Lombardy, Mississippi",
+    "birthCoords": [
+      -90.60694,
+      33.90556
+    ],
+    "deathDate": "2000-01-10",
+    "deathPlace": "St. Louis, Missouri",
+    "deathCoords": [
+      -90.1994,
+      38.627
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Clarksdale, Mississippi",
+        "coords": [
+          -90.5726,
+          34.2001
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=HFCwsWENy74",
+    "albums": [
+      {
+        "name": "Shake 'Em On Down (1963)",
+        "youtubeLink": "https://www.youtube.com/watch?v=yeoau5T2LVc"
+      }
+    ],
+    "description": "Wade Walton was a Delta blues musician and beloved barber from Clarksdale, Mississippi, whose Big Six barbershop became a legendary gathering place for blues musicians. Proficient on guitar, harmonica, and the razor strop, he played with Ike Turner's Kings of Rhythm and counted Howlin' Wolf, Muddy Waters, and Sonny Boy Williamson II among his barbershop patrons. He recorded for Arhoolie and Bluesville Records and was honored with a Mississippi Blues Trail marker.",
+    "activeFrom": "1958",
+    "influences": [],
+    "influencedBy": [
+      "tony-hollins"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "ike-turner",
+      "howlin-wolf",
+      "muddy-waters",
+      "sonny-boy-williamson-ii"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Wade_Walton",
+    "secondaryInstruments": [
+      "Harmonica"
+    ]
+  },
+  {
+    "id": "walter-ward",
+    "name": "Walter Ward",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1940-08-28",
+    "birthPlace": "Jackson, Mississippi",
+    "birthCoords": [
+      -90.1848,
+      32.2988
+    ],
+    "deathDate": "2006-12-11",
+    "deathPlace": "Northridge, California",
+    "deathCoords": [
+      -118.537,
+      34.2283
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=QIUzVGtxQCY",
+    "albums": [
+      {
+        "name": "Western Movies (1958)",
+        "youtubeLink": "https://www.youtube.com/watch?v=QIUzVGtxQCY"
+      },
+      {
+        "name": "(Baby) Hully Gully (1959)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6fMlfXmHsb4"
+      }
+    ],
+    "description": "Walter Ward was an American R&B singer and lead vocalist of The Olympics, born in Jackson, Mississippi. He began singing professionally as a child in a gospel group before moving to Los Angeles, where he formed The Olympics and scored a number 8 hit with 'Western Movies' in 1958. His song 'Well (Baby Please Don't Go)' was later recorded by John Lennon during the Imagine sessions.",
+    "activeFrom": "1954",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Walter_Ward_(singer)",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "artie-blues-boy-white",
+    "name": "Artie \"Blues Boy\" White",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1937-04-16",
+    "birthPlace": "Vicksburg, Mississippi",
+    "birthCoords": [
+      -90.8775,
+      32.3525
+    ],
+    "deathDate": "2013-04-20",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Clarksdale, Mississippi",
+        "coords": [
+          -90.5726,
+          34.2001
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=J0QcrR_C538",
+    "albums": [
+      {
+        "name": "Can We Get Together (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=J0QcrR_C538"
+      },
+      {
+        "name": "Different Shades of Blue (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=H5j2ignrc0s"
+      },
+      {
+        "name": "Can't Get Enough (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=h4FT4HE7C4o"
+      }
+    ],
+    "description": "Artie 'Blues Boy' White was an American blues and soul singer born in Vicksburg, Mississippi, who moved to Chicago in 1956 and became one of the foremost Chicago practitioners of Southern Soul music. Known for his flamboyant costumes and stage presence, he headlined the 2000 Chicago Blues Festival and recorded over a dozen albums including collaborations with Little Milton Campbell.",
+    "activeFrom": "1956",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "little-milton"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Artie_%22Blues_Boy%22_White",
+    "secondaryInstruments": [
+      "Guitar"
+    ]
+  },
+  {
+    "id": "smokey-wilson",
+    "name": "Smokey Wilson",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1936-07-11",
+    "birthPlace": "Glen Allan, Mississippi",
+    "birthCoords": [
+      -91.0862,
+      33.5289
+    ],
+    "deathDate": "2015-09-08",
+    "deathPlace": "Los Angeles, California",
+    "deathCoords": [
+      -118.2437,
+      34.0522
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Lake Village, Arkansas",
+        "coords": [
+          -91.2833,
+          33.3296
+        ]
+      },
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=U0_G0mBJGvM",
+    "albums": [
+      {
+        "name": "88th Street Blues (1983)",
+        "youtubeLink": "https://www.youtube.com/watch?v=U0_G0mBJGvM"
+      },
+      {
+        "name": "Sings the Blues (1978)",
+        "youtubeLink": "https://www.youtube.com/watch?v=j3XaVOjPiQ8"
+      }
+    ],
+    "description": "Robert Lee 'Smokey' Wilson was an American West Coast blues guitarist born in Glen Allan, Mississippi and raised in Lake Village, Arkansas. He moved to Los Angeles in 1970 and opened the Pioneer Club in Watts, where he booked blues greats including Big Joe Turner, Percy Mayfield, and Albert Collins. His down-to-earth Delta-influenced guitar playing earned him international recognition in the 1990s with acclaimed albums on Bullseye Blues.",
+    "activeFrom": "1970",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "big-joe-turner"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Smokey_Wilson",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "ike-zimmerman",
+    "name": "Ike Zimmerman",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1907-04-27",
+    "birthPlace": "Grady, Alabama",
+    "birthCoords": [
+      -86.20111,
+      31.995
+    ],
+    "deathDate": "1967-08-03",
+    "deathPlace": "Compton, California",
+    "deathCoords": [
+      -118.225,
+      33.89667
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Beauregard, Mississippi",
+        "coords": [
+          -90.38806,
+          31.72167
+        ]
+      },
+      {
+        "place": "Itta Bena, Mississippi",
+        "coords": [
+          -90.32444,
+          33.4975
+        ]
+      },
+      {
+        "place": "Compton, California",
+        "coords": [
+          -118.225,
+          33.89667
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "",
+    "albums": [],
+    "description": "Isaiah 'Ike' Zimmerman was an American Delta blues guitarist who is recognized as Robert Johnson's main guitar teacher. He lived near Beauregard, Mississippi, where Johnson lived with his family for about a year to study guitar, often practicing together in local cemeteries. Though he never recorded commercially, Zimmerman was a highly skilled musician who also played harmonica in local juke joints and lumber camps across Mississippi.",
+    "activeFrom": "1920",
+    "influences": [
+      "robert-johnson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "robert-johnson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Ike_Zimmerman",
+    "secondaryInstruments": [
+      "Harmonica"
+    ]
   }
 ]
