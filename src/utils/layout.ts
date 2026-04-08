@@ -398,6 +398,73 @@ export function computeTreeLayout(
     xPos[node.id] = node.x ?? xPos[node.id];
   });
 
+  // --- Post-simulation 2D greedy push-apart ---
+  // Resolves remaining circle overlaps per zone using pairwise distance checks.
+  // Uses the visual node radius (34 = NODE_RADIUS 32 + 2px padding) to avoid
+  // over-spreading. Prefers X displacement; allows Y drift when horizontal
+  // space is exhausted, then recenters vertical clusters toward their year.
+  if (!options.naturalPositions) {
+    const PUSH_R = 34;
+    const MIN_DIST = 2 * PUSH_R;
+    const PASSES = 25;
+
+    for (const style of presentStyles) {
+      const group = byStyle[style];
+      if (!group || group.length <= 1) continue;
+      const [zoneStart, zoneEnd] = styleZoneMap[style];
+      const zoneW = zoneEnd - zoneStart;
+      const margin = zoneW * 0.06;
+
+      const zoneNodes = group.map((m) => ({
+        id: m.id,
+        x: xPos[m.id],
+        y: yPos[m.id],
+        yearY: yPos[m.id],
+      }));
+
+      for (let pass = 0; pass < PASSES; pass++) {
+        for (let i = 0; i < zoneNodes.length; i++) {
+          for (let j = i + 1; j < zoneNodes.length; j++) {
+            const a = zoneNodes[i];
+            const b = zoneNodes[j];
+            const dx = b.x - a.x;
+            const dy = b.y - a.y;
+            const distSq = dx * dx + dy * dy;
+
+            if (distSq < MIN_DIST * MIN_DIST && distSq > 0) {
+              const dist = Math.sqrt(distSq);
+              const overlap = MIN_DIST - dist;
+              const nx = dx / dist;
+              const ny = dy / dist;
+
+              // Push both nodes apart equally along the collision axis
+              a.x -= nx * overlap * 0.5;
+              a.y -= ny * overlap * 0.5;
+              b.x += nx * overlap * 0.5;
+              b.y += ny * overlap * 0.5;
+
+              // Clamp X to zone bounds
+              a.x = Math.max(zoneStart + margin, Math.min(zoneEnd - margin, a.x));
+              b.x = Math.max(zoneStart + margin, Math.min(zoneEnd - margin, b.x));
+            }
+          }
+        }
+      }
+
+      // Re-center: for nodes that drifted vertically, pull their Y back toward
+      // the original year position (preserving relative offsets within the cluster)
+      for (const n of zoneNodes) {
+        const drift = n.y - n.yearY;
+        n.y = n.yearY + drift * 0.5;
+      }
+
+      zoneNodes.forEach((n) => {
+        xPos[n.id] = n.x;
+        yPos[n.id] = n.y;
+      });
+    }
+  }
+
   const positions: InfluenceLayout = {};
   musicians.forEach((m) => {
     positions[m.id] = [xPos[m.id] ?? 0, yPos[m.id] ?? 0];

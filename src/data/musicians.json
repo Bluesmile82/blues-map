@@ -39478,7 +39478,9 @@
     ],
     "description": "Houston Stackhouse was an American Delta blues guitarist and singer best known for his association with Robert Nighthawk, whom he taught to play guitar. A key figure in the Mississippi Delta blues scene, he performed on the legendary King Biscuit Time radio program and played alongside Robert Johnson, Sonny Boy Williamson II, and Pinetop Perkins, though he remained largely undiscovered outside the Delta until the blues revival of the late 1960s.",
     "activeFrom": "1935",
-    "influences": [],
+    "influences": [
+      "tommy-johnson"
+    ],
     "influencedBy": [
       "robert-nighthawk"
     ],
