@@ -1354,7 +1354,7 @@
   {
     "id": "arthur-crudup",
     "name": "Arthur Crudup",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Arthur_Crudup_1950s.jpg/440px-Arthur_Crudup_1950s.jpg",
+    "image": "https://cdn.britannica.com/05/134605-050-CCDB5A14/Arthur-Crudup-1969.jpg?w=300",
     "image_source": "Wikipedia",
     "birthDate": "1905-08-24",
     "birthPlace": "Forest, Mississippi",
@@ -8344,7 +8344,7 @@
       }
     ],
     "description": "Edward Riley Boyd (November 25, 1914 – July 13, 1994) was an American blues pianist, singer and songwriter, best known for his recordings in the early 1950s, including the number one R&B chart hit \"Five Long Years\".",
-    "activeFrom": "1988",
+    "activeFrom": "1940",
     "influences": [
       "leroy-carr",
       "roosevelt-sykes"
@@ -11325,7 +11325,7 @@
   {
     "id": "guitar-nubbit",
     "name": "Guitar Nubbit",
-    "image": "/images/musicians/guitar-nubbit.png",
+    "image": "https://i.discogs.com/TmGbb0m5UxDVDWUogj91vIUDHDpckVaRmGM1MSEQ-Uk/rs:fit/g:sm/q:90/h:400/w:354/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI0MDk5/NDYtMTYxNTkwNTY2/OS04NTkxLmpwZWc.jpeg",
     "image_source": null,
     "birthDate": "1923-11-23",
     "birthPlace": "Fort Lauderdale, Florida",
@@ -11342,11 +11342,11 @@
     "spentTimePlaces": [],
     "instrument": "Guitar",
     "bluesStyle": "Chicago Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=IAdsvRk3mAQ",
+    "youtubeLink": "https://www.youtube.com/watch?v=cejkfyRURao",
     "albums": [
       {
         "name": "Georgia Chain Gang (1962)",
-        "youtubeLink": "https://www.youtube.com/watch?v=IAdsvRk3mAQ"
+        "youtubeLink": "https://www.youtube.com/watch?v=-58TL21FvcQ"
       }
     ],
     "description": "Alvin Hankerson (November 23, 1923 – June 30, 1995), better known as Guitar Nubbit, was an American blues guitarist and singer.  His most notable song was \"Georgia Chain Gang\", which was originally released in 1962 as a single on Bluestown Records. \nHe was the uncle of the folk music singer and autoharp player Dorris Henderson.",
@@ -16091,7 +16091,7 @@
   {
     "id": "johnny-laws",
     "name": "Johnny Laws",
-    "image": "/images/musicians/johnny-laws.png",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzv5T-NCrJW02JAbbzLBfa61XrXrDTFXaQsF4CfHw2B0PVuhFgGz-eM3ymWhONx-DJPJ-oslUB4Z4QXpR01RQZcslTfuDFMsewfvEcTMyZUJPT98a6C4sx10xDBg3vaeCjVXj4n8vt46_ayC7bkpFHYsxCN0udhoIleyoE667L4_pbOjEXCz5tWJ6GTR9N/s320/500x500-000000-80-0-0.jpg",
     "image_source": null,
     "birthDate": "1943-01-12",
     "birthPlace": "Chicago, Illinois",
@@ -35219,7 +35219,7 @@
   {
     "id": "charley-booker",
     "name": "Charley Booker",
-    "image": "",
+    "image": "https://wirz.de/music/bookerch/grafik/booker34.jpg",
     "image_source": "",
     "birthDate": "1925-09-03",
     "birthPlace": "Moorhead, Mississippi",
@@ -35264,7 +35264,9 @@
     ],
     "description": "Charley Booker was an American blues singer and guitarist from the Mississippi Delta who recorded in the early 1950s for Modern Records. He learned guitar from his uncle, who had played with Charley Patton, and worked with notable musicians including Ike Turner and Elmore James in the Greenville, Mississippi area.",
     "activeFrom": "1938",
-    "influences": [],
+    "influences": [
+      "charley-patton"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -39424,7 +39426,7 @@
   {
     "id": "houston-stackhouse",
     "name": "Houston Stackhouse",
-    "image": "",
+    "image": "https://alchetron.com/cdn/houston-stackhouse-224cdade-1f16-4abc-8acf-2b24f7eb148-resize-750.png",
     "image_source": "",
     "birthDate": "1910-09-28",
     "birthPlace": "Wesson, Mississippi",
@@ -39463,21 +39465,23 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "Delta Blues",
-    "youtubeLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=GQ5deZ6yhPY",
     "albums": [
       {
         "name": "Cryin' Won't Help You (1972)",
-        "youtubeLink": ""
+        "youtubeLink": "https://www.youtube.com/watch?v=PBdqWbIfJh8&list=PLpnG2psBH4QuHRA-IOVeC61YTII5_TdMY"
       },
       {
         "name": "Big Road Blues (1999)",
-        "youtubeLink": ""
+        "youtubeLink": "https://www.youtube.com/watch?v=GQ5deZ6yhPY&list=RDGQ5deZ6yhPY&start_radio=1"
       }
     ],
     "description": "Houston Stackhouse was an American Delta blues guitarist and singer best known for his association with Robert Nighthawk, whom he taught to play guitar. A key figure in the Mississippi Delta blues scene, he performed on the legendary King Biscuit Time radio program and played alongside Robert Johnson, Sonny Boy Williamson II, and Pinetop Perkins, though he remained largely undiscovered outside the Delta until the blues revival of the late 1960s.",
     "activeFrom": "1935",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "robert-nighthawk"
+    ],
     "incomplete": false,
     "playedWith": [
       "robert-nighthawk",
@@ -39832,7 +39836,7 @@
   {
     "id": "lc-ulmer",
     "name": "L. C. Ulmer",
-    "image": "",
+    "image": "https://msfolkdirectory.org/wp-content/uploads/2020/06/IMG_4260.jpg.FI_.jpg",
     "image_source": "",
     "birthDate": "1928-08-28",
     "birthPlace": "Stringer, Mississippi",
