@@ -158,7 +158,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
     [completeMusicians],
   );
 
-  const current = completeMusicians.find(m => m.id === selectedId) ?? completeMusicians[0];
+  const current = completeMusicians.find(m => m.id === selectedId);
 
   // Search logic
   const searchQuery = search.trim().toLowerCase();
@@ -169,7 +169,10 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   // Auto-select if nothing is selected
   useEffect(() => {
     if (!selectedId && completeMusicians.length > 0) {
-      onSelect(completeMusicians[0]);
+      const array = new Uint32Array(1);
+      crypto.getRandomValues(array);
+      const idx = array[0] % completeMusicians.length;
+      onSelect(completeMusicians[idx]);
     }
   }, [selectedId, completeMusicians, onSelect]);
 
