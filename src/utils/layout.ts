@@ -46,6 +46,7 @@ export const STYLE_ORDER = [
   'Soul Blues',
   'Detroit Blues',
   'British Blues',
+  'Blues Rock',
 ];
 
 // Primary instrument ordering (roughly by prevalence/era in blues)
@@ -92,6 +93,7 @@ export const STYLE_ABBREVIATIONS: Record<string, string> = {
   'St. Louis Blues': 'ST. LOUIS',
   'Jazz': 'JAZZ',
   'British Blues': 'BRITISH',
+  'Blues Rock': 'BLUES ROCK',
   'Gospel': 'GOSPEL',
 };
 
@@ -168,9 +170,9 @@ export const DEFAULT_LAYOUT_CONFIG: LayoutConfig = {
 
 export interface LayoutOptions {
   groupBy: GroupBy;
-  scatter: boolean; // If true, use hash-based scatter; if false, use simple sorted lines
-  naturalPositions?: boolean; // If true, disable style zone constraints in force layout
-  config?: Partial<LayoutConfig>; // Configuration overrides for force simulation
+  scatter: boolean;
+  naturalPositions?: boolean;
+  config?: Partial<LayoutConfig>;
 }
 
 /**
@@ -222,7 +224,7 @@ export function computeTreeLayout(
   // Assign style zones: proportional to musician count, with a minimum fraction
   const totalMusicians = musicians.length;
   const usableWidth = width - 2 * PADDING_X;
-  const minFraction = 0.5 / presentStyles.length; // minimum half an "equal share"
+  const minFraction = 0.5 / presentStyles.length;
 
   const rawFractions = presentStyles.map((s) =>
     Math.max(minFraction, (byStyle[s]?.length ?? 0) / totalMusicians)
@@ -658,6 +660,7 @@ export const STYLE_ERA_YEAR: Readonly<Record<string, number>> = {
   'Rythm and Blues': 1946,
   'Soul Blues': 1955,
   'British Blues': 1960,
+  'Blues Rock': 1965,
 };
 
 // Historical blues style evolution tree: [parent, child]
@@ -682,6 +685,8 @@ export const STYLE_TREE_EDGES: ReadonlyArray<[string, string]> = [
   ['Boogie Woogie', 'Jump Blues'],
   ['Chicago Blues', 'Detroit Blues'],
   ['Chicago Blues', 'British Blues'],
+  ['British Blues', 'Blues Rock'],
+  ['Chicago Blues', 'Blues Rock'],
   ['Jump Blues', 'Rythm and Blues'],
   ['Jump Blues', 'West Coast Blues'],
   ['Rythm and Blues', 'Soul Blues'],

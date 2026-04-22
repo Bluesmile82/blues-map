@@ -8,6 +8,8 @@ interface MobileBottomToolbarProps {
   onZoomOut: () => void;
   onReset: () => void;
   onFilterToggle: () => void;
+  onExpandAll?: () => void;
+  allExpanded?: boolean;
   filterCount?: number;
   filterLabel?: string;
   filterActive?: boolean;
@@ -20,6 +22,8 @@ export default function MobileBottomToolbar({
   onZoomOut,
   onReset,
   onFilterToggle,
+  onExpandAll,
+  allExpanded = false,
   filterCount = 0,
   filterLabel = 'Filters',
   filterActive = false,
@@ -49,6 +53,24 @@ export default function MobileBottomToolbar({
               </span>
             )}
           </motion.button>
+
+          {onExpandAll && groupBy === 'style' && (
+            <motion.button
+              onClick={onExpandAll}
+              className="flex flex-col items-center justify-center min-w-[64px] min-h-[56px] px-2 rounded-lg active:bg-bg-hover transition-colors touch-manipulation"
+              whileTap={{ scale: 0.95 }}
+              aria-label={allExpanded ? 'Collapse all' : 'Expand all'}
+            >
+              <svg className="w-6 h-6 text-accent mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {allExpanded ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 14l6-6 6 6" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 10l6 6 6-6" />
+                )}
+              </svg>
+              <span className="text-2xs text-ink3">{allExpanded ? 'Collapse' : 'Expand'}</span>
+            </motion.button>
+          )}
 
           {onGroupByChange && groupBy != null && (
             <div className="flex items-center bg-bg3/50 rounded-lg p-1 min-h-[48px]">

@@ -131,7 +131,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "https://www.youtube.com/watch?v=1mOVlNdAgw4",
     "albums": [
       {
@@ -9295,6 +9295,9 @@
     "secondaryInstruments": [
       "Keyboards",
       "Vocals"
+    ],
+    "secondaryStyles": [
+      "Blues Rock"
     ]
   },
   {
@@ -14033,7 +14036,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=jWybHYf1zHg",
     "albums": [
       {
@@ -14743,7 +14746,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "British Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "https://www.youtube.com/watch?v=E8fSX0jJimQ",
     "albums": [
       {
@@ -14782,7 +14785,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "https://www.youtube.com/watch?v=w86Jym1eZCI",
     "albums": [],
     "description": "Joe Bonamassa is a modern blues virtuoso who began his career touring with B.B. King at age 12. He has scored numerous number 1 albums on the US charts and created the Keeping The Blues Alive Records label to promote blues talent.",
@@ -15471,6 +15474,9 @@
       "Harmonica",
       "Piano",
       "Vocals"
+    ],
+    "secondaryStyles": [
+      "Blues Rock"
     ]
   },
   {
@@ -16585,7 +16591,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "https://www.youtube.com/watch?v=QzUcxc4B3qw",
     "albums": [
       {
@@ -17773,7 +17779,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "https://www.youtube.com/watch?v=amf74JUEtn4",
     "albums": [],
     "description": "Kenny Wayne Shepherd (born Kenneth Wayne Brobst; June 12, 1977) is an American guitarist.  He has released several studio albums and experienced significant commercial success as a blues rock artist.",
@@ -24954,6 +24960,9 @@
     "source": "https://en.wikipedia.org/wiki/Peter_Green_(musician)",
     "secondaryInstruments": [
       "Vocals"
+    ],
+    "secondaryStyles": [
+      "Blues Rock"
     ]
   },
   {
@@ -27318,7 +27327,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "https://www.youtube.com/watch?v=2JGi8gnLM2g",
     "albums": [
       {
@@ -30767,7 +30776,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Texas Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "",
     "albums": [
       {
@@ -34115,7 +34124,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "https://www.youtube.com/watch?v=jZUNJTdMkOw",
     "albums": [
       {

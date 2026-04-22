@@ -19,8 +19,9 @@ function parseCoords(geom) {
 
 async function exportMusicians() {
   const client = new Client({ connectionString: CONNECTION_STRING });
-  await client.connect();
-  console.log('Connected to database');
+  try {
+    await client.connect();
+    console.log('Connected to database');
 
   const { rows: musicians } = await client.query(
     "SELECT *, ST_AsText(birth_coords) as birth_coords_text, ST_AsText(death_coords) as death_coords_text FROM musicians ORDER BY id"
@@ -88,8 +89,9 @@ async function exportMusicians() {
 
   fs.writeFileSync(musiciansPath, JSON.stringify(output, null, 2), 'utf-8');
   console.log(`Exported ${output.length} musicians to ${musiciansPath}`);
-
-  await client.end();
+  } finally {
+    await client.end();
+  }
 }
 
 exportMusicians().catch((err) => {

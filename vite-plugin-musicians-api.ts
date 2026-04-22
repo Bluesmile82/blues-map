@@ -132,7 +132,7 @@ export function musiciansApiPlugin(): Plugin {
             createBackup('pre-save');
             musicians[index] = updated;
             fs.writeFileSync(MUSICIANS_PATH, JSON.stringify(musicians, null, 2), 'utf-8');
-            upsertMusician(updated);
+            await upsertMusician(updated);
             console.log(`[musicians-api] ✅ Updated: ${updated.name}`);
             res.end(JSON.stringify(updated));
             return;
@@ -153,7 +153,7 @@ export function musiciansApiPlugin(): Plugin {
             createBackup('pre-save');
             musicians.push(created);
             fs.writeFileSync(MUSICIANS_PATH, JSON.stringify(musicians, null, 2), 'utf-8');
-            upsertMusician(created);
+            await upsertMusician(created);
             console.log(`[musicians-api] ✅ Created: ${created.name}`);
             res.end(JSON.stringify(created));
             return;

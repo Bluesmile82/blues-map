@@ -11,14 +11,15 @@ const musiciansPath = path.resolve('src/data/musicians.json');
 
 async function importMusicians() {
   const client = new Client({ connectionString: CONNECTION_STRING });
-  await client.connect();
-  console.log('Connected to database');
+  try {
+    await client.connect();
+    console.log('Connected to database');
 
-  const musicians = JSON.parse(fs.readFileSync(musiciansPath, 'utf-8'));
-  console.log(`Importing ${musicians.length} musicians...`);
+    const musicians = JSON.parse(fs.readFileSync(musiciansPath, 'utf-8'));
+    console.log(`Importing ${musicians.length} musicians...`);
 
-  await client.query('BEGIN');
-  await client.query('TRUNCATE musician_relationships, secondary_instruments, albums, spent_time_places, musicians CASCADE');
+    await client.query('BEGIN');
+    await client.query('TRUNCATE musician_relationships, secondary_instruments, albums, spent_time_places, musicians CASCADE');
 
   const musicianMap = new Map(musicians.map((m) => [m.id, m]));
   const referencedIds = new Set();
@@ -164,8 +165,9 @@ async function importMusicians() {
   Instruments:     ${r.instruments}
   Spent Time Places: ${r.places}
   Relationships:   ${r.relationships}`);
-
-  await client.end();
+  } finally {
+    await client.end();
+  }
 }
 
 importMusicians().catch((err) => {

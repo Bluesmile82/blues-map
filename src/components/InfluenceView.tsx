@@ -87,7 +87,7 @@ export default function InfluenceView({
   const [clusterCompression, setClusterCompression] = useState(1.0); // 1.0 = clustered, 0.0 = expanded
   const [groupBy, setGroupBy] = useState<GroupBy>('style');
   const [scatter, setScatter] = useState(true);
-  const [naturalPositions, setNaturalPositions] = useState(false);
+  const [naturalPositions, setNaturalPositions] = useState(true);
   const [layoutConfig, setLayoutConfig] = useState<LayoutConfig>(DEFAULT_LAYOUT_CONFIG);
   const [showConfig, setShowConfig] = useState(false);
   const [search, setSearch] = useState('');
@@ -99,6 +99,7 @@ export default function InfluenceView({
   const [filtersCollapsed, setFiltersCollapsed] = useState(isMobile);
   const [gestureHintShown, setGestureHintShown] = useState(false);
   const [previewMusician, setPreviewMusician] = useState<Musician | null>(null);
+  const [expandedStyles, setExpandedStyles] = useState<Set<string>>(new Set());
 
   const user = useAtomValue(userAtom);
   const lists = useAtomValue(listsAtom);
@@ -184,6 +185,22 @@ export default function InfluenceView({
 
   // View state
   const [deckVS, setDeckVS] = useState<DeckVS | null>(null);
+  const deckVSRef = useRef<DeckVS | null>(null);
+  const [labelVS, setLabelVS] = useState<{ zoom: number; target: [number, number] } | null>(null);
+
+  // Sync label positions at 60fps from ref for snappy HTML overlays
+  useEffect(() => {
+    let running = true;
+    const sync = () => {
+      if (!running) return;
+      if (deckVSRef.current) {
+        setLabelVS({ zoom: deckVSRef.current.zoom, target: deckVSRef.current.target });
+      }
+      requestAnimationFrame(sync);
+    };
+    sync();
+    return () => { running = false; };
+  }, []);
 
   // Track cursor X in canvas space (center = 0) for stable cursor-centered zoom
   const cursorScreenXRef = useRef(0);
@@ -219,7 +236,7 @@ export default function InfluenceView({
   }, []);
 
   // Init world size and deck view state
-  const WIDTH_MULTIPLIER = 2;
+  const WIDTH_MULTIPLIER = 1.4;
 
   useEffect(() => {
     if (dims.width <= 0 || dims.height <= 0 || deckVS !== null) return;
@@ -236,28 +253,167 @@ export default function InfluenceView({
     const sidebarOffset = dims.width >= 640 ? SIDEBAR_PX / (2 * scale) : 0;
     const initialTargetX = -sidebarOffset;
 
-    setDeckVS({
+    const initialVS = {
       target: [initialTargetX, 0, 0],
       zoom: fitZoom,
       minZoom: fitZoom,
       maxZoom: 2.5,
-    });
+    };
+    deckVSRef.current = initialVS;
+    setDeckVS(initialVS);
   }, [dims.width, dims.height, deckVS]);
 
   const WW = worldRef.current?.w ?? 1400;
   const WH = worldRef.current?.h ?? 2500;
 
-  const { positions, styleZones, decadeTicks } = useMemo(() => {
+  // Cache base layout (expensive force simulation) — only recomputes when musicians/config change
+  const baseLayout = useMemo(() => {
     if (!dims.width || !dims.height || !worldRef.current)
-      return { positions: {} as InfluenceLayout, styleZones: [] as StyleZone[], decadeTicks: [] };
+      return { positions: {} as InfluenceLayout, styleZones: [] as StyleZone[] };
 
     const { w, h } = worldRef.current;
     const layoutOptions: LayoutOptions = { groupBy, scatter, naturalPositions, config: layoutConfig };
-    const { positions, styleZones } = computeTreeLayout(displayMusicians, w, h, layoutOptions);
-
-    const decadeTicks = computeDecadeTicks(h / 2, h);
-    return { positions, styleZones, decadeTicks };
+    return computeTreeLayout(displayMusicians, w, h, layoutOptions);
   }, [displayMusicians, groupBy, scatter, naturalPositions, layoutConfig, WW, WH]);
+
+  // Rescale zone widths based on expandedStyles — O(n) instead of re-running simulation
+  const { positions, styleZones } = useMemo(() => {
+    if (expandedStyles.size === 0 || baseLayout.styleZones.length === 0)
+      return { positions: baseLayout.positions, styleZones: baseLayout.styleZones };
+
+    const { w } = worldRef.current ?? { w: WW };
+    const halfW = w / 2;
+    const PADDING_X = 80;
+    const usableWidth = w - 2 * PADDING_X;
+    const EXPANDED_BOOST = 8;
+
+    const zoneByStyle = Object.fromEntries(baseLayout.styleZones.map(z => [z.style, z]));
+    const presentStyles = baseLayout.styleZones.map(z => z.style);
+    const totalMusicians = displayMusicians.length;
+    const minFraction = 0.5 / presentStyles.length;
+
+    const rawFractions = presentStyles.map((s) => {
+      const count = displayMusicians.filter(m => m.bluesStyle === s).length;
+      const base = Math.max(minFraction, count / totalMusicians);
+      return expandedStyles.has(s) ? base * EXPANDED_BOOST : base;
+    });
+    const totalFraction = rawFractions.reduce((s, f) => s + f, 0);
+
+    let xCursor = -halfW + PADDING_X;
+    const newZoneMap: Record<string, { start: number; end: number }> = {};
+    const newStyleZones: StyleZone[] = [];
+
+    presentStyles.forEach((style, i) => {
+      const zoneW = (rawFractions[i] / totalFraction) * usableWidth;
+      newZoneMap[style] = { start: xCursor, end: xCursor + zoneW };
+      newStyleZones.push({ style, x: xCursor, width: zoneW });
+      xCursor += zoneW;
+    });
+
+    // Deterministic hash for consistent scatter
+    const hash = (str: string) => {
+      let h = 0;
+      for (let i = 0; i < str.length; i++) {
+        h = ((h << 5) - h + str.charCodeAt(i)) | 0;
+      }
+      return (h & 0x7fffffff) / 0x7fffffff;
+    };
+
+    // Rescale positions: re-scatter expanded zones, center collapsed
+    const expandedByStyle: Record<string, { id: string; y: number }[]> = {};
+    displayMusicians.forEach(m => {
+      if (expandedStyles.has(m.bluesStyle)) {
+        if (!expandedByStyle[m.bluesStyle]) expandedByStyle[m.bluesStyle] = [];
+        expandedByStyle[m.bluesStyle].push({ id: m.id, y: baseLayout.positions[m.id]?.[1] ?? 0 });
+      }
+    });
+
+    const newPositions: InfluenceLayout = {};
+    for (const [id, [x, y]] of Object.entries(baseLayout.positions)) {
+      const m = displayMusicians.find(mu => mu.id === id);
+      if (!m) { newPositions[id] = [x, y]; continue; }
+
+      const style = m.bluesStyle;
+      const oldZone = zoneByStyle[style];
+      const newZone = newZoneMap[style];
+      if (!oldZone || !newZone || newZone.start === newZone.end) {
+        newPositions[id] = [x, y];
+        continue;
+      }
+
+      const oldStart = oldZone.x;
+      const oldEnd = oldZone.x + oldZone.width;
+      const oldMid = (oldStart + oldEnd) / 2;
+
+      if (expandedStyles.has(style)) {
+        // Expanded: re-scatter using hash to fill the full wider zone
+        newPositions[id] = [x, y]; // placeholder, set below after scatter
+      } else {
+        // Collapsed: center the compact cluster within the narrower zone
+        const mid = (newZone.start + newZone.end) / 2;
+        newPositions[id] = [mid + (x - oldMid), y];
+      }
+    }
+
+    // Re-scatter expanded musicians with collision push-apart
+    const PUSH_R = 34;
+    const MIN_DIST = 2 * PUSH_R;
+    const PASSES = 15;
+
+    for (const [style, nodes] of Object.entries(expandedByStyle)) {
+      const zone = newZoneMap[style];
+      if (!zone) continue;
+      const margin = (zone.end - zone.start) * 0.06;
+      const zoneW = zone.end - zone.start - 2 * margin;
+
+      // Initial scatter across full zone width using hash
+      const scattered = nodes.map(n => ({
+        id: n.id,
+        x: zone.start + margin + hash(n.id + style) * zoneW,
+        y: n.y,
+        yearY: n.y,
+      }));
+
+      // Collision push-apart
+      for (let pass = 0; pass < PASSES; pass++) {
+        for (let i = 0; i < scattered.length; i++) {
+          for (let j = i + 1; j < scattered.length; j++) {
+            const a = scattered[i];
+            const b = scattered[j];
+            const dx = b.x - a.x;
+            const dy = b.y - a.y;
+            const distSq = dx * dx + dy * dy;
+
+            if (distSq < MIN_DIST * MIN_DIST && distSq > 0) {
+              const dist = Math.sqrt(distSq);
+              const overlap = MIN_DIST - dist;
+              const nx = dx / dist;
+              const ny = dy / dist;
+              a.x -= nx * overlap * 0.5;
+              a.y -= ny * overlap * 0.5;
+              b.x += nx * overlap * 0.5;
+              b.y += ny * overlap * 0.5;
+              a.x = Math.max(zone.start + margin, Math.min(zone.end - margin, a.x));
+              b.x = Math.max(zone.start + margin, Math.min(zone.end - margin, b.x));
+            }
+          }
+        }
+      }
+
+      // Re-center Y drift
+      for (const n of scattered) {
+        n.y = n.yearY + (n.y - n.yearY) * 0.5;
+        newPositions[n.id] = [n.x, n.y];
+      }
+    }
+
+    return { positions: newPositions, styleZones: newStyleZones };
+  }, [baseLayout, expandedStyles, displayMusicians, WW]);
+
+  const decadeTicks = useMemo(() => {
+    if (!worldRef.current) return [];
+    return computeDecadeTicks(worldRef.current.h / 2, worldRef.current.h);
+  }, [WH]);
 
   const clusters = useMemo(() => {
     if (!dims.width || !dims.height || !worldRef.current)
@@ -288,6 +444,23 @@ export default function InfluenceView({
     }
     return result;
   }, [clusters, positions, groupBy, WH]);
+
+  const toggleStyleExpansion = useCallback((style: string) => {
+    setExpandedStyles(prev => {
+      const next = new Set(prev);
+      if (next.has(style)) next.delete(style);
+      else next.add(style);
+      return next;
+    });
+  }, []);
+
+  const expandAllStyles = useCallback(() => {
+    setExpandedStyles(new Set(Object.keys(clusters)));
+  }, [clusters]);
+
+  const collapseAllStyles = useCallback(() => {
+    setExpandedStyles(new Set());
+  }, []);
 
   const styleTreePaths = useMemo(() => {
     if (groupBy !== 'style' || Object.keys(clusters).length === 0) return [] as StyleTreePath[];
@@ -334,17 +507,12 @@ export default function InfluenceView({
   }, [positions, clusters, clusterCompression, musicianMap, groupBy]);
 
   const clusterLabelData = useMemo(() => {
-    if (clusterCompression <= 0.1) return [];
-    const zoom = deckVS?.zoom ?? 0;
-    const xe = Math.max(1, Math.pow(2, Math.max(0, zoom - EXPAND_ZOOM_THRESHOLD)));
-    const scale = Math.pow(2, zoom);
     const zoneByStyle = Object.fromEntries(styleZones.map((z) => [z.style, z]));
 
-    // Build candidates with estimated screen bounds
-    const FONT_PX = 12; // matches getSize in the layer
-    const CHAR_W = FONT_PX * 0.6; // approximate character width
-    const PAD_X = 12; // backgroundPadding horizontal
-    const PAD_Y = 12; // backgroundPadding vertical
+    const FONT_PX = 12;
+    const CHAR_W = FONT_PX * 0.6;
+    const PAD_X = 12;
+    const PAD_Y = 12;
 
     const candidates = Object.entries(clusters)
       .filter(([_, cluster]) => cluster.count > 0)
@@ -353,40 +521,36 @@ export default function InfluenceView({
         const zoneX = zone ? zone.x + zone.width / 2 : cluster.center[0];
         const shortName = style.replace(' Blues', '');
         const text = groupBy === 'style' ? shortName : style;
-        const worldX = zoneX * xe;
-        // Use era-year-based Y for style grouping, cluster center for instruments
         const labelY = groupBy === 'style' ? (styleLabelY[style] ?? cluster.center[1]) : cluster.center[1];
-        const worldY = labelY;
-        // Screen-space bounds (pixels)
         const textW = text.length * CHAR_W + PAD_X * 2;
         const textH = FONT_PX + PAD_Y * 2;
-        // Screen position (relative to viewport center)
-        const screenX = worldX * scale;
-        const screenY = worldY * scale;
         return {
           style,
-          position: [cluster.center[0], labelY] as Position2D,
+          position: [zoneX, labelY] as Position2D,
           zoneX,
           zoneWidth: zone?.width ?? 0,
           count: cluster.count,
           shortName,
-          screenX,
-          screenY,
-          halfW: textW / 2,
-          halfH: textH / 2,
+          textW,
+          textH,
         };
       })
       // Sort by priority: wider zones first (more important styles)
       .sort((a, b) => b.zoneWidth - a.zoneWidth);
 
     // Greedy placement: skip labels that overlap already-placed ones
+    // Use world-space positions for overlap check (zoom-independent)
     const placed: typeof candidates = [];
     for (const c of candidates) {
+      const worldHalfW = (c.textW / 2) / 64; // approximate world-space half-width
+      const worldHalfH = (c.textH / 2) / 64;
       let overlaps = false;
       for (const p of placed) {
+        const pWorldHalfW = (p.textW / 2) / 64;
+        const pWorldHalfH = (p.textH / 2) / 64;
         if (
-          Math.abs(c.screenX - p.screenX) < c.halfW + p.halfW &&
-          Math.abs(c.screenY - p.screenY) < c.halfH + p.halfH
+          Math.abs(c.position[0] - p.position[0]) < worldHalfW + pWorldHalfW &&
+          Math.abs(c.position[1] - p.position[1]) < worldHalfH + pWorldHalfH
         ) {
           overlaps = true;
           break;
@@ -395,7 +559,7 @@ export default function InfluenceView({
       if (!overlaps) placed.push(c);
     }
     return placed;
-  }, [clusters, clusterCompression, styleZones, deckVS?.zoom, groupBy, styleLabelY]);
+  }, [clusters, styleZones, groupBy, styleLabelY]);
 
   const focusId = hovered ?? selectedId;
 
@@ -463,22 +627,25 @@ export default function InfluenceView({
   const cappedTextSize = 14 * overlapFactor;
 
   // Build musician data for layers — when a musician is selected, only show its network
+  // All musicians kept for transitions; collapsed styles render with radius 0 and alpha 0
   const musicianData = useMemo(() => {
     return displayMusicians
       .filter((m) => !selectionRelatedIds || selectionRelatedIds.has(m.id))
       .map((m) => {
         const pos = positions[m.id];
         if (!pos) return null;
-        return { musician: m, position: pos };
-      }).filter(Boolean) as { musician: Musician; position: Position2D }[];
-  }, [displayMusicians, positions, selectionRelatedIds]);
+        const clusterValue = groupBy === 'instrument' ? m.instrument : m.bluesStyle;
+        return { musician: m, position: pos, isExpanded: expandedStyles.has(clusterValue) };
+      }).filter(Boolean) as { musician: Musician; position: Position2D; isExpanded: boolean }[];
+  }, [displayMusicians, positions, selectionRelatedIds, expandedStyles, groupBy]);
 
-  // CPU-side collision filtering for musician labels
+  // CPU-side collision filtering for musician labels (only expanded styles)
   const visibleMusicianLabels = useMemo(() => {
     if (currentZoom <= CLUSTER_DETAILS_ZOOM) return [];
+    const expandedData = musicianData.filter(d => d.isExpanded);
     const filtered = effectiveRelatedIds
-      ? musicianData.filter((d) => effectiveRelatedIds.has(d.musician.id))
-      : musicianData;
+      ? expandedData.filter((d) => effectiveRelatedIds.has(d.musician.id))
+      : expandedData;
 
     const scale = Math.pow(2, currentZoom);
     const xe = Math.max(1, Math.pow(2, Math.max(0, currentZoom - EXPAND_ZOOM_THRESHOLD)));
@@ -579,15 +746,21 @@ export default function InfluenceView({
     return () => cancelAnimationFrame(pulseRafRef.current);
   }, [selectedId]);
 
-  // Handle picking
+  // Handle picking — ignore collapsed musicians
   const onHover = useCallback((info: PickingInfo) => {
-    const m = info.object as { musician: Musician } | undefined;
-    const musicianId = m?.musician?.id ?? null;
+    const m = info.object as { musician: Musician; isExpanded?: boolean } | undefined;
+    const musician = m?.musician ?? null;
+    if (musician && m?.isExpanded === false) {
+      setHovered(null);
+      setHoveredStyle(null);
+      return;
+    }
+    const musicianId = musician?.id ?? null;
     setHovered(musicianId);
     if (musicianId) {
-      const musician = displayMusicians.find(x => x.id === musicianId);
-      if (musician) {
-        const hoveredValue = groupBy === 'instrument' ? musician.instrument : musician.bluesStyle;
+      const found = displayMusicians.find(x => x.id === musicianId);
+      if (found) {
+        const hoveredValue = groupBy === 'instrument' ? found.instrument : found.bluesStyle;
         setHoveredStyle(hoveredValue);
       }
     } else {
@@ -596,7 +769,8 @@ export default function InfluenceView({
   }, [displayMusicians, groupBy]);
 
   const onClick = useCallback((info: PickingInfo) => {
-    const m = info.object as { musician: Musician } | undefined;
+    const m = info.object as { musician: Musician; isExpanded?: boolean } | undefined;
+    if (m?.musician && m?.isExpanded === false) return;
     if (m?.musician) {
       // On mobile, show preview instead of opening panel directly
       if (isMobile) {
@@ -688,27 +862,34 @@ export default function InfluenceView({
     const xe = xExpand;
     const sx = (x: number) => x * xe;
 
-    // Style tree alpha: fully visible when fully clustered, fades out as nodes expand
+    // Style tree alpha: reduced when styles are expanded
+    const hasExpanded = expandedStyles.size > 0;
     const treeRatio = currentZoom <= CLUSTER_ZOOM_START
       ? 1
       : Math.max(0, 1 - (currentZoom - CLUSTER_ZOOM_START) / (CLUSTER_ZOOM_END - CLUSTER_ZOOM_START));
-    const treeAlpha = Math.round(treeRatio * 200);
+    const baseTreeAlpha = Math.round(treeRatio * 200);
+    const treeAlpha = hasExpanded ? Math.round(baseTreeAlpha * 0.1) : baseTreeAlpha;
+
+    // Filter tree edges: hide edges connected to expanded styles
+    const filteredTreePaths = hasExpanded
+      ? styleTreePaths.filter(p => !expandedStyles.has(p.fromStyle) && !expandedStyles.has(p.toStyle))
+      : styleTreePaths;
 
     return [
       // Style evolution tree — edges between cluster labels (hidden when a musician is selected)
-      ...(treeAlpha > 0 && groupBy === 'style' && !selectedId ? [
+      ...(treeAlpha > 0 && groupBy === 'style' && !selectedId && filteredTreePaths.length > 0 ? [
         new PathLayer({
           id: 'style-tree-edges',
-          data: styleTreePaths,
+          data: filteredTreePaths,
           getPath: (d: StyleTreePath) => d.path.map((p: Position2D) => [sx(p[0]), p[1]] as Position2D),
           getColor: (d: StyleTreePath): [number, number, number, number] => {
             const [r, g, b] = getStyleColor(d.toStyle) as [number, number, number];
-            return [r, g, b, treeAlpha];
+            return [r, g, b, treeAlpha / 4];
           },
-          getWidth: 4,
+          getWidth: 2,
           widthUnits: 'pixels' as const,
           pickable: false,
-          updateTriggers: { getColor: [treeAlpha], getPath: [xExpand] },
+          updateTriggers: { getColor: [treeAlpha, expandedStyles], getPath: [xExpand], data: [filteredTreePaths] },
         }),
       ] : []),
       // Decade grid lines
@@ -731,6 +912,7 @@ export default function InfluenceView({
           return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
         },
         getRadius: (d) => {
+          if (!d.isExpanded) return 0;
           if (currentZoom <= CLUSTER_DETAILS_ZOOM) {
             return cappedRadius + (currentZoom * 13);
           }
@@ -738,6 +920,7 @@ export default function InfluenceView({
         },
         getFillColor: (d): [number, number, number, number] => {
           const [r, g, b] = getStyleColor(d.musician.bluesStyle);
+          if (!d.isExpanded) return [r, g, b, 0];
           const styleMatch = !hoveredStyle || d.musician.bluesStyle === hoveredStyle;
           const dimmed = (currentZoom > CLUSTER_DETAILS_ZOOM && effectiveRelatedIds && !effectiveRelatedIds.has(d.musician.id)) || !styleMatch;
           const isSelected = d.musician.id === selectedId;
@@ -765,7 +948,11 @@ export default function InfluenceView({
         },
         transitions: {
           getRadius: {
-            duration: 150,
+            duration: 400,
+            easing: (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
+          },
+          getFillColor: {
+            duration: 400,
             easing: (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
           },
         },
@@ -860,10 +1047,10 @@ export default function InfluenceView({
           updateTriggers: { getPath: [xExpand] },
         })]
         : []),
-      // Musician photos
+      // Musician photos (only expanded styles)
       new IconLayer({
         id: 'musician-photos',
-        data: currentZoom > CLUSTER_DETAILS_ZOOM ? musicianData : [],
+        data: currentZoom > CLUSTER_DETAILS_ZOOM ? musicianData.filter(d => d.isExpanded) : [],
         getPosition: (d) => {
           const interpolated = interpolatedPositions[d.musician.id];
           return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
@@ -976,39 +1163,9 @@ export default function InfluenceView({
           data: [visibleMusicianLabels],
         },
       }),
-      // Cluster labels — hidden when a musician is selected
-      ...(!selectedId && clusterLabelData.length > 0 ? [new TextLayer({
-        id: 'cluster-labels',
-        data: clusterLabelData,
-        getPosition: (d) => [sx(d.zoneX), d.position[1]] as Position2D,
-        getText: (d) => {
-          const name = groupBy === 'style' ? d.shortName : d.style;
-          const isHovered = hoveredStyle === d.style;
-          return isHovered ? `${name} (${d.count})` : name;
-        },
-        background: true,
-        backgroundPadding: [6, 6, 6, 6],
-        backgroundBorderRadius: 16,
-        getBackgroundColor: (d: { style: string }) => {
-          const [r, g, b] = getStyleColor(d.style) as [number, number, number];
-          return [r, g, b, 180] as [number, number, number, number];
-        },
-        getSize: () => 20,
-        getColor: () => theme === 'dark' ? [255, 255, 255, 255] : [20, 20, 20, 255],
-        getTextAnchor: 'middle',
-        getAlignmentBaseline: 'center',
-        fontWeight: '700',
-        outlineWidth: 6,
-        outlineColor: [0, 0, 0, 255],
-        sizeUnits: 'pixels' as const,
-        pickable: false,
-        updateTriggers: {
-          getPosition: [xExpand],
-          getText: [hoveredStyle, groupBy],
-        },
-      })] : []),
+      // Cluster labels are rendered as HTML overlays below for clickability
     ];
-  }, [dims.width, tickLines, styleZones, effectiveRelatedIds, focusId, musicianData, selectedId, hovered, groupBy, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, clusterLabelData, visibleMusicianLabels, currentZoom, styleTreePaths, lifespanData, edges, playedWithEdges, edgeTargetStyleMap, theme, hoveredStyle, favoritesChecker, pulsePhase]);
+  }, [dims.width, tickLines, styleZones, effectiveRelatedIds, focusId, musicianData, selectedId, hovered, groupBy, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, visibleMusicianLabels, currentZoom, styleTreePaths, expandedStyles, lifespanData, edges, playedWithEdges, edgeTargetStyleMap, theme, hoveredStyle, favoritesChecker, pulsePhase]);
 
   // Pulse ring — outside memo so it re-renders every animation frame
   const pulseLayer = useMemo(() => {
@@ -1034,7 +1191,7 @@ export default function InfluenceView({
       pickable: false,
       updateTriggers: { getRadius: [pulsePhase], getLineColor: [pulsePhase] },
     });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedId, musicianData, interpolatedPositions, pulsePhase, cappedRadius, xExpand]);
 
   // Search
@@ -1066,7 +1223,9 @@ export default function InfluenceView({
         0,
       ];
 
-      setDeckVS({ ...deckVS!, zoom: currentZoom, target: currentTarget });
+      const newVS = { ...deckVS!, zoom: currentZoom, target: currentTarget };
+      deckVSRef.current = newVS;
+      setDeckVS(newVS);
 
       if (progress < 1) {
         requestAnimationFrame(animate);
@@ -1081,7 +1240,9 @@ export default function InfluenceView({
   const handleZoom = useCallback((delta: number) => {
     if (!deckVS) return;
     const newZoom = Math.max(deckVS.minZoom, Math.min(deckVS.maxZoom, deckVS.zoom + delta));
-    setDeckVS({ ...deckVS, zoom: newZoom });
+    const newVS = { ...deckVS, zoom: newZoom };
+    deckVSRef.current = newVS;
+    setDeckVS(newVS);
   }, [deckVS]);
 
   const handleReset = useCallback(() => {
@@ -1089,7 +1250,9 @@ export default function InfluenceView({
     const { width } = dimsRef.current;
     const scale = Math.pow(2, deckVS.minZoom);
     const sidebarOffset = width >= 640 ? SIDEBAR_PX / (2 * scale) : 0;
-    setDeckVS({ ...deckVS, target: [-sidebarOffset, 0, 0], zoom: deckVS.minZoom });
+    const newVS = { ...deckVS, target: [-sidebarOffset, 0, 0], zoom: deckVS.minZoom };
+    deckVSRef.current = newVS;
+    setDeckVS(newVS);
   }, [deckVS]);
 
   const handleViewStateChange = useCallback(({ viewState }: { viewState: unknown }) => {
@@ -1129,10 +1292,52 @@ export default function InfluenceView({
       const sidebarWorldOffset = width >= 640 ? SIDEBAR_PX / (2 * s) : 0;
       const ctx = Math.max(-maxTx - sidebarWorldOffset, Math.min(maxTx, compensatedTx));
       const cty = Math.max(-maxTy, Math.min(maxTy, ty));
-
-      return { ...prev, target: [ctx, cty, 0], zoom: z };
+      const newVS = { ...prev, target: [ctx, cty, 0], zoom: z };
+      deckVSRef.current = newVS;
+      return newVS;
     });
   }, []);
+
+  const resolvedLabels = useMemo(() => {
+    if (!labelVS) return [];
+    const s = 2 ** labelVS.zoom;
+    const xe = Math.max(1, Math.pow(2, Math.max(0, labelVS.zoom - EXPAND_ZOOM_THRESHOLD)));
+
+    const items = clusterLabelData.map(d => {
+      const screenX = dims.width / 2 + (d.zoneX * xe - labelVS.target[0]) * s;
+      const screenY = dims.height / 2 + (d.position[1] - labelVS.target[1]) * s;
+      const name = d.shortName;
+      const estW = name.length * 8 + 24;
+      const estH = 28;
+      return { style: d.style, screenX, screenY, estW, estH, count: d.count };
+    });
+
+    items.sort((a, b) => a.screenY - b.screenY);
+
+    const PAD = 4;
+    for (let pass = 0; pass < 5; pass++) {
+      for (let i = 0; i < items.length; i++) {
+        for (let j = i + 1; j < items.length; j++) {
+          const a = items[i];
+          const b = items[j];
+          if (Math.abs(a.screenX - b.screenX) >= (a.estW + b.estW) / 2 + PAD) continue;
+          const overlapY = (a.estH + b.estH) / 2 + PAD - Math.abs(a.screenY - b.screenY);
+          if (overlapY > 0) {
+            const push = overlapY / 2;
+            if (a.screenY <= b.screenY) {
+              a.screenY -= push;
+              b.screenY += push;
+            } else {
+              a.screenY += push;
+              b.screenY -= push;
+            }
+          }
+        }
+      }
+    }
+
+    return items;
+  }, [labelVS, clusterLabelData, dims.width, dims.height, groupBy]);
 
   return (
     <div
@@ -1177,6 +1382,50 @@ export default function InfluenceView({
               );
             })}
           </div>
+
+          {/* Clickable cluster labels (style or instrument) */}
+          {!selectedId && resolvedLabels.map((d) => {
+            if (d.screenX < -100 || d.screenX > dims.width + 100 || d.screenY < -50 || d.screenY > dims.height + 50) return null;
+
+            const isExpanded = expandedStyles.has(d.style);
+            const isHovered = hoveredStyle === d.style;
+            const labelOpacity = isExpanded ? 1 : isHovered ? 0.85 : 0.5;
+            const name = groupBy === 'style' ? d.style.replace(' Blues', '') : d.style;
+            const label = isHovered ? `${name} (${d.count})` : name;
+            const [r, g, b] = getStyleColor(d.style);
+            const bgColor = isExpanded
+              ? `rgba(${r},${g},${b},1)`
+              : `rgba(${r},${g},${b},0.3)`;
+
+            return (
+              <button
+                key={d.style}
+                onClick={() => toggleStyleExpansion(d.style)}
+                onMouseEnter={() => setHoveredStyle(d.style)}
+                onMouseLeave={() => setHoveredStyle(null)}
+                className="absolute z-20 px-3 py-1 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap cursor-pointer transition-all duration-150 hover:scale-110 hover:shadow-lg"
+                style={{
+                  left: d.screenX,
+                  top: d.screenY,
+                  transform: 'translate(-50%, -50%)',
+                  backgroundColor: bgColor,
+                  color: theme === 'dark' ? '#fff' : '#141414',
+                  border: `2px solid rgba(${r},${g},${b},${isExpanded ? 1 : 0.6})`,
+                  opacity: labelOpacity,
+                  textShadow: '0 1px 3px rgba(0,0,0,0.8)',
+                  boxShadow: isExpanded ? `0 0 12px rgba(${r},${g},${b},0.4)` : '0 1px 4px rgba(0,0,0,0.3)',
+                }}
+              >
+                {label}
+                {isExpanded && (
+                  <ChevronUp className="w-3 h-3 inline ml-1 opacity-70" />
+                )}
+                {!isExpanded && (
+                  <ChevronDown className="w-3 h-3 inline ml-1 opacity-70" />
+                )}
+              </button>
+            );
+          })}
 
           {/* Filter panel - desktop always visible, mobile when not collapsed */}
           <div className={`absolute left-3 sm:left-16 top-3 sm:top-4 z-40 w-50 border border-accent/50 bg-bg/5 backdrop-blur-xs rounded-lg ${isMobile && filtersCollapsed ? 'hidden' : ''}`} style={{ width: 'min(220px, calc(100vw - 1.5rem))' }}>
@@ -1368,6 +1617,13 @@ export default function InfluenceView({
                 </button>
               ))}
             </div>
+
+            <button
+              onClick={expandedStyles.size === Object.keys(clusters).length ? collapseAllStyles : expandAllStyles}
+              className="px-2 sm:px-3 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase transition-all bg-bg/50 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60"
+              >
+                {expandedStyles.size === Object.keys(clusters).length ? 'Collapse All' : 'Expand All'}
+              </button>
 
             {import.meta.env.DEV && !isMobile && (
               <>
@@ -1593,8 +1849,8 @@ export default function InfluenceView({
           </div>
 
 
-           {/* Timeline legend */}
-           <div className={`absolute right-3 sm:right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none transition-all ${isMobile ? 'top-4 right-4' : 'bottom-6'}`}>
+          {/* Timeline legend */}
+          <div className={`absolute right-3 sm:right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none transition-all ${isMobile ? 'top-4 right-4' : 'bottom-6'}`}>
             <p className="text-2xs text-accent tracking-widest uppercase mb-1">{t('timeline.legend.title')}</p>
             {[
               { label: t('timeline.legend.musician'), el: <span className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" /> },
@@ -1683,11 +1939,13 @@ export default function InfluenceView({
               onZoomOut={() => handleZoom(-0.2)}
               onReset={handleReset}
               onFilterToggle={() => setFiltersCollapsed(!filtersCollapsed)}
+              onExpandAll={expandedStyles.size === Object.keys(clusters).length ? collapseAllStyles : expandAllStyles}
+              allExpanded={expandedStyles.size === Object.keys(clusters).length && Object.keys(clusters).length > 0}
               filterCount={yearRange ? 1 : 0}
             />
           )}
         </>
-       )}
-     </div>
+      )}
+    </div>
   );
 }

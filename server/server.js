@@ -44,24 +44,21 @@ app.get('/api/musicians', (req, res) => {
   }
 });
 
-app.put('/api/musicians', (req, res) => {
+app.put('/api/musicians', async (req, res) => {
   try {
     const updatedMusician = req.body;
-    
-    // Read current musicians
+
     const musicians = JSON.parse(fs.readFileSync(musiciansPath, 'utf-8'));
-    
-    // Find and update the musician
+
     const index = musicians.findIndex(m => m.id === updatedMusician.id);
     if (index === -1) {
       return res.status(404).json({ error: 'Musician not found' });
     }
-    
+
     musicians[index] = updatedMusician;
 
-    // Write back to file
     fs.writeFileSync(musiciansPath, JSON.stringify(musicians, null, 2), 'utf-8');
-    upsertMusician(updatedMusician);
+    await upsertMusician(updatedMusician);
 
     console.log(`✅ Updated musician: ${updatedMusician.name}`);
     res.json(updatedMusician);
@@ -71,29 +68,25 @@ app.put('/api/musicians', (req, res) => {
   }
 });
 
-app.post('/api/musicians', (req, res) => {
+app.post('/api/musicians', async (req, res) => {
   try {
     const newMusician = req.body;
-    
+
     if (!newMusician.id) {
       return res.status(400).json({ error: 'Musician ID is required' });
     }
-    
-    // Read current musicians
+
     const musicians = JSON.parse(fs.readFileSync(musiciansPath, 'utf-8'));
-    
-    // Check if musician already exists
+
     const exists = musicians.find(m => m.id === newMusician.id);
     if (exists) {
       return res.status(409).json({ error: 'Musician already exists' });
     }
-    
-    // Add new musician
+
     musicians.push(newMusician);
 
-    // Write back to file
     fs.writeFileSync(musiciansPath, JSON.stringify(musicians, null, 2), 'utf-8');
-    upsertMusician(newMusician);
+    await upsertMusician(newMusician);
 
     console.log(`✅ Created musician: ${newMusician.name}`);
     res.json(newMusician);

@@ -10,9 +10,25 @@ const { Pool } = pg;
 let pool = null;
 function getPool() {
   if (!process.env.DATABASE_URL) throw new Error('DATABASE_URL environment variable is required');
-  if (!pool) pool = new Pool({ connectionString: process.env.DATABASE_URL, max: 3 });
+  if (!pool) pool = new Pool({
+    connectionString: process.env.DATABASE_URL,
+    max: 3,
+    connectionTimeoutMillis: 5000,
+    idleTimeoutMillis: 10000,
+  });
   return pool;
 }
+
+function drainPool() {
+  if (pool) {
+    pool.end().then(() => {
+      pool = null;
+    }).catch(() => {});
+  }
+}
+
+process.on('SIGTERM', drainPool);
+process.on('SIGINT', drainPool);
 
 function toPoint(coords) {
   if (coords && coords.length === 2 && !isNaN(coords[0]) && !isNaN(coords[1])) {
