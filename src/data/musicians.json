@@ -530,7 +530,7 @@
   {
     "id": "alec-seward",
     "name": "Alec Seward",
-    "image": "/images/musicians/alec-seward.png",
+    "image": "https://media.s-bol.com/wKNx6Gvknkwg/550x549.jpg",
     "image_source": null,
     "birthDate": "1902-03-16",
     "birthPlace": "Charles City County, Virginia",
@@ -6041,7 +6041,7 @@
   {
     "id": "clara-mcdaniel",
     "name": "Clara McDaniel",
-    "image": "/images/musicians/clara-mcdaniel.png",
+    "image": "http://www.bluesaccess.com/No_32/Clara1.jpg",
     "image_source": null,
     "birthDate": "1948-11-26",
     "birthPlace": "Pontiac, Michigan",
@@ -6063,7 +6063,7 @@
     ],
     "instrument": "Vocals",
     "bluesStyle": "Delta Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=6IzfA4DWh6s",
+    "youtubeLink": "https://www.youtube.com/watch?v=HMEyyB1ucW8",
     "albums": [
       {
         "name": "Unwanted Child (1997)",
@@ -11742,7 +11742,7 @@
   {
     "id": "harmonica-slim",
     "name": "Harmonica Slim",
-    "image": null,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg02roTAg2rYTwIOBvajcKGwnbQU8bbPrr0izN1eXDjgbsoyUxjfAqqdM3cu5kAwed7WFeRg2kI0NDJun3WKSlMXWp2N1-CxSO5tbL6gZ81c1_WRB2RiGl0fHgdzpXi_j8R2tldoQ/s1254/HARMONICA+SLIM+LA+BONA.png",
     "image_source": null,
     "birthDate": "1934-12-21",
     "birthPlace": "Texarkana, Arkansas",
@@ -11764,7 +11764,7 @@
     ],
     "instrument": "Harmonica",
     "bluesStyle": "Texas Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=LuAat82uCCM",
+    "youtubeLink": "https://www.youtube.com/watch?v=H1aKA6btF3s",
     "albums": [
       {
         "name": "Vita Records Present the Rockin’ Blues (1982)",
@@ -22463,9 +22463,9 @@
   {
     "id": "memphis-jug-band",
     "name": "Memphis Jug Band",
-    "image": null,
+    "image": "https://www.downhomemusic.com/wp-content/uploads/2015/12/memphis-jug-2.jpg",
     "image_source": null,
-    "birthDate": null,
+    "birthDate": "1927-01-01",
     "birthPlace": "Memphis, Tennessee",
     "birthCoords": [
       -90.049,
@@ -22477,7 +22477,7 @@
     "spentTimePlaces": [],
     "instrument": "Jug",
     "bluesStyle": "Memphis Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=G7KNmW9a75Y",
+    "youtubeLink": "https://www.youtube.com/watch?v=JlfIEpdrUhI",
     "albums": [],
     "description": "The Memphis Jug Band was a musical group active from the mid-1920s to the late 1950s. They recorded more sides than any other prewar jug band and their \"Stealin' Stealin'\" was covered by the Grateful Dead.",
     "activeFrom": "1926",
@@ -30677,7 +30677,7 @@
   {
     "id": "terry-harmonica-bean",
     "name": "Terry \"Harmonica\" Bean",
-    "image": null,
+    "image": "https://www.spectable.com/image/original/7/203863.jpg",
     "image_source": null,
     "birthDate": "1961-01-26",
     "birthPlace": "Pontotoc, Mississippi",
@@ -30820,9 +30820,9 @@
   {
     "id": "the-mannish-boys",
     "name": "The Mannish Boys",
-    "image": null,
+    "image": "https://img.apmcdn.org/8d800d63915efcc8b0f95852f6ee704e78bf128d/uncropped/66c5a1-20160307-the-manish-boys.jpg",
     "image_source": null,
-    "birthDate": null,
+    "birthDate": "2004-01-01",
     "birthPlace": "Los Angeles, California",
     "birthCoords": [
       -118.2437,
@@ -36796,7 +36796,7 @@
     "instrument": "Guitar",
     "bluesStyle": "Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=56rjRNQ1fPY",
-    "image": null,
+    "image": "https://wbssmedia.com/artist_images/full_thumb/354963344BLINDROOSEVELTGRAVESB1.png",
     "description": "Blind Roosevelt Graves was a pre-war blues guitarist and singer from Mississippi who recorded both sacred and secular music in the late 1920s and 1930s. His 1929 recording Crazy About My Baby has been cited as possibly the first rock and roll recording, and he made the earliest known version of Guitar Boogie.",
     "activeFrom": "1929",
     "incomplete": true,
