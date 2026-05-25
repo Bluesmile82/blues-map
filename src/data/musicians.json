@@ -40183,5 +40183,170 @@
     "secondaryInstruments": [
       "Harmonica"
     ]
+  },
+  {
+    "id": "charles-haffer-jr",
+    "name": "Charles Haffer Jr.",
+    "image": "",
+    "image_source": "",
+    "birthDate": null,
+    "birthPlace": "Clarksdale, Mississippi",
+    "birthCoords": [
+      -90.5726,
+      34.2001
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=fuQ2ifelaYw",
+    "albums": [
+      {
+        "name": "Strange Things Happening in the Land (1942)",
+        "youtubeLink": "https://www.youtube.com/watch?v=fuQ2ifelaYw"
+      }
+    ],
+    "description": "Charles Haffer Jr. was a blues and sacred singer recorded by Alan Lomax and Lewis Jones on July 23, 1942, at Nelson's Funeral Home in Clarksdale, Mississippi. His song 'Strange Things Happening in the Land' is a chilling commentary on African-American civil rights, and he also recorded spirituals like 'I'll Be Glad to See the Son When He Comes' and the ballad 'The Titanic' during the same session.",
+    "activeFrom": "1942",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://archive.culturalequity.org/person/haffer-charles-jr"
+  },
+  {
+    "id": "zuzu-bollin",
+    "name": "Zuzu Bollin",
+    "image": "https://i.discogs.com/JrO3f4r3bThu3HfUZh4yPGeBn_pvBo0r11Nk7-O8WsA/rs:fit/g:sm/q:90/h:600/w:483/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxMjU0/NzctMTY0MTc0NDcw/OC04NTI0LmpwZWc.jpeg",
+    "image_source": "discogs",
+    "birthDate": "1922-09-05",
+    "birthPlace": "Frisco, Texas",
+    "birthCoords": [
+      -96.8233,
+      33.1507
+    ],
+    "deathDate": "1990-10-02",
+    "deathPlace": "Dallas, Texas",
+    "deathCoords": [
+      -96.7969,
+      32.7767
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Dallas, Texas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      },
+      {
+        "place": "Fort Worth, Texas",
+        "coords": [
+          -97.3209,
+          32.7555
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=0u5vefxVE0o",
+    "albums": [
+      {
+        "name": "Texas Bluesman (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0u5vefxVE0o"
+      },
+      {
+        "name": "Why Don't You Eat Where You Slept Last Night / Matchbox Blues (1951)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Vp5PnOTu1Ps"
+      },
+      {
+        "name": "Headlight Blues (1952)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0Mzba5xSpUg"
+      }
+    ],
+    "description": "Zuzu Bollin (born A.D. Bollin) was an American Texas blues guitarist and singer from Frisco, Texas, whose nickname came from Zu Zu ginger snap cookies. He recorded the regional blues classics 'Why Don't You Eat Where You Slept Last Night' and 'Headlight Blues' in 1951 on the Torch label with a band featuring David 'Fathead' Newman and Leroy Cooper, but his career faded until blues enthusiast Chuck Nevitt rediscovered him in 1987. His comeback produced the acclaimed album Texas Bluesman (1989) on Antone's Records, featuring Duke Robillard, and included performances at the Chicago Blues Festival and a European tour before his death from cancer in 1990.",
+    "activeFrom": "1947",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "duke-robillard",
+      "david-fathead-newman"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Zuzu_Bollin",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "david-fathead-newman",
+    "name": "David 'Fathead' Newman",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/David_Fathead_Newman.jpg/500px-David_Fathead_Newman.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/David_Fathead_Newman.jpg/500px-David_Fathead_Newman.jpg",
+    "birthDate": "1933-02-24",
+    "birthPlace": "Corsicana, Texas",
+    "birthCoords": [
+      -96.4689,
+      32.0954
+    ],
+    "deathDate": "2009-01-20",
+    "deathPlace": "Kingston, New York",
+    "deathCoords": [
+      -73.9974,
+      41.927
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Dallas, Texas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      },
+      {
+        "place": "Woodstock, New York",
+        "coords": [
+          -74.1182,
+          41.9282
+        ]
+      }
+    ],
+    "instrument": "Saxophone",
+    "bluesStyle": "Jazz",
+    "youtubeLink": "https://www.youtube.com/watch?v=thpdT7tNeyA",
+    "albums": [
+      {
+        "name": "Fathead: Ray Charles Presents David 'Fathead' Newman (1958)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9xB6NkprG0o"
+      },
+      {
+        "name": "Straight Ahead (1961)",
+        "youtubeLink": "https://www.youtube.com/watch?v=7uD2VX1VoJs"
+      },
+      {
+        "name": "The Blessing (2009)",
+        "youtubeLink": "https://www.youtube.com/watch?v=E0-VEQWHNk0"
+      }
+    ],
+    "description": "David 'Fathead' Newman was an American jazz and rhythm-and-blues saxophonist best known for his work as a sideman on seminal 1950s and 1960s recordings by Ray Charles. A leading proponent of the 'Texas Tenor' saxophone style, Newman recorded over 38 albums as a leader and played with artists including Aretha Franklin, B.B. King, and Herbie Mann. His soulful, bluesy approach to the tenor saxophone made him one of the most distinctive voices in soul jazz.",
+    "activeFrom": "1954",
+    "influences": [],
+    "influencedBy": [
+      "louis-jordan"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "ray-charles",
+      "aretha-franklin",
+      "bb-king",
+      "dr-john",
+      "eric-clapton"
+    ],
+    "source": "https://en.wikipedia.org/wiki/David_%22Fathead%22_Newman",
+    "secondaryInstruments": [
+      "Flute"
+    ]
   }
 ]
