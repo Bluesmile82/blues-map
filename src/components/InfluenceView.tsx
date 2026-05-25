@@ -462,6 +462,19 @@ export default function InfluenceView({
     setExpandedStyles(new Set());
   }, []);
 
+  useEffect(() => {
+    if (!selectedId) return;
+    const m = completeMusicians.find(m => m.id === selectedId);
+    if (m?.bluesStyle) {
+      setExpandedStyles(prev => {
+        if (prev.has(m.bluesStyle)) return prev;
+        const next = new Set(prev);
+        next.add(m.bluesStyle);
+        return next;
+      });
+    }
+  }, [selectedId, completeMusicians]);
+
   const styleTreePaths = useMemo(() => {
     if (groupBy !== 'style' || Object.keys(clusters).length === 0) return [] as StyleTreePath[];
     const zoneByStyle = Object.fromEntries(styleZones.map(z => [z.style, z]));
