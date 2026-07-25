@@ -40348,5 +40348,53 @@
     "secondaryInstruments": [
       "Flute"
     ]
+  },
+  {
+    "id": "mercy-dee-walton",
+    "name": "Mercy Dee Walton",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1915-08-03",
+    "birthPlace": "Waco",
+    "birthCoords": [
+      -97.14722222222223,
+      31.549166666666668
+    ],
+    "deathDate": "1962-12-02",
+    "deathPlace": "Stockton",
+    "deathCoords": [
+      -121.2925,
+      37.9575
+    ],
+    "spentTimePlaces": [
+      {
+        "name": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Piano, Voice",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=oEmlT9E-zW4",
+    "albums": [
+      {
+        "name": "Troublesome Mind (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=RYskLMCVc5s"
+      },
+      {
+        "name": "One Room Country Shack (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UnorsB4A2FM"
+      }
+    ],
+    "description": "Mercy Dee Walton (born Mercy Davis Walton, August 3, 1915 – December 2, 1962) was an American jump blues pianist, singer and songwriter, whose compositions went from blues to R&B numbers.  According to journalist Tony Russell in his book The Blues - From Robert Johnson to Robert Cray, \"Walton created a series of memorable blues about the unattractiveness of rural life, sardonically aimed at the black migrant workers in southern California who constituted his typical audience\".",
+    "activeFrom": "1949",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "daily-routine",
+    "secondaryInstruments": []
   }
 ]
