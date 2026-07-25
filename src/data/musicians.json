@@ -40353,7 +40353,7 @@
     "id": "mercy-dee-walton",
     "name": "Mercy Dee Walton",
     "image": "",
-    "image_source": null,
+    "image_source": "",
     "birthDate": "1915-08-03",
     "birthPlace": "Waco",
     "birthCoords": [
@@ -40368,14 +40368,14 @@
     ],
     "spentTimePlaces": [
       {
-        "name": "Texas",
+        "place": "Texas",
         "coords": [
           -99.9018,
           31.9686
         ]
       }
     ],
-    "instrument": "Piano, Voice",
+    "instrument": "Piano",
     "bluesStyle": "West Coast Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=oEmlT9E-zW4",
     "albums": [
@@ -40395,6 +40395,8 @@
     "incomplete": true,
     "playedWith": [],
     "source": "daily-routine",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
