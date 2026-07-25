@@ -1892,7 +1892,8 @@
       "muddy-waters",
       "john-lee-hooker",
       "t-bone-walker",
-      "robert-lockwood-jr"
+      "robert-lockwood-jr",
+      "roy-brown"
     ],
     "influencedBy": [
       "albert-king",
@@ -3995,7 +3996,8 @@
     "activeFrom": "1952",
     "influences": [
       "bb-king",
-      "howlin-wolf"
+      "howlin-wolf",
+      "roy-brown"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -9138,7 +9140,9 @@
     "albums": [],
     "description": "Elvis Presley, the \"King of Rock and Roll,\" fused country, rhythm and blues, and gospel into rockabilly. Recording at Sun Records in Memphis, he became one of the best-selling music artists in history with over 500 million records sold.",
     "activeFrom": "1953",
-    "influences": [],
+    "influences": [
+      "roy-brown"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -32772,7 +32776,9 @@
       "jimmy-rushing",
       "big-joe-turner"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "roy-brown"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Wynonie_Harris",
@@ -40348,5 +40354,67 @@
     "secondaryInstruments": [
       "Flute"
     ]
+  },
+  {
+    "id": "roy-brown",
+    "name": "Roy Brown",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Roy_Brown_publicity_photo.jpg",
+    "image_source": null,
+    "birthDate": "1920-09-10",
+    "birthPlace": "Kinder, Louisiana",
+    "birthCoords": [
+      -92.8467,
+      30.4867
+    ],
+    "deathDate": "1981-05-25",
+    "deathPlace": "San Fernando, California",
+    "deathCoords": [
+      -118.4389,
+      34.2872
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=brIX5VWdQug",
+    "albums": [
+      {
+        "name": "Good Rocking Tonight (1978)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Cou9iBfb2uc"
+      },
+      {
+        "name": "San Francisco Blues Festival, Volume 1 (1981)",
+        "youtubeLink": "https://www.youtube.com/watch?v=FTRHoODxbo8"
+      },
+      {
+        "name": "Mighty Mighty Man! (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=rhp8jMykAVg"
+      },
+      {
+        "name": "Good Rocking Tonight: The Best of Roy Brown (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Cou9iBfb2uc"
+      },
+      {
+        "name": "Battle of the Blues, Volume 4 (1994)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "The Complete Imperial Recordings (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=yax4hfHXNW8"
+      }
+    ],
+    "description": "Roy Brown (September 10, 1920 – May 25, 1981) was a pioneering American blues shouter whose 1947 recording of his own song \"Good Rocking Tonight\" is widely cited as one of the records that pointed the way from jump blues toward rock and roll. His impassioned, gospel-inflected vocal delivery and dozens of R&B chart hits for De Luxe Records between 1948 and 1951, including \"Hard Luck Blues,\" made him one of the biggest R&B stars of the era and a direct influence on a generation of singers who followed.",
+    "activeFrom": "1945",
+    "influences": [
+      "wynonie-harris"
+    ],
+    "influencedBy": [
+      "elvis-presley",
+      "bb-king",
+      "bobby-blue-bland"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Roy_Brown_(blues_musician)",
+    "secondaryInstruments": []
   }
 ]
