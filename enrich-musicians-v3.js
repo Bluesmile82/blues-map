@@ -1265,6 +1265,30 @@ function computeInfluencedBy(musicians) {
 }
 
 async function main() {
+  // ponytail: --musician <id> enriches one entry only (daily-add path); no arg = full DB as before
+  const argv = process.argv.slice(2);
+  const onlyId = argv.includes('--musician') ? argv[argv.indexOf('--musician') + 1] : null;
+
+  if (onlyId) {
+    const idx = musicians.findIndex(m => m.id === onlyId);
+    if (idx === -1) { console.error(`No musician with id "${onlyId}"`); process.exit(1); }
+    musicians[idx] = await enrichMusician(musicians[idx], idx, musicians.length);
+    await enrichOptionalFields(musicians[idx], musicians, 0, 1);
+    // Only wire reciprocal links for the new artist — avoid rewriting influencedBy for the whole DB.
+    const nm = musicians[idx];
+    (nm.influences || []).forEach(infId => {
+      const t = musicians.find(m => m.id === infId);
+      if (t && !(t.influencedBy || []).includes(nm.id)) (t.influencedBy ??= []).push(nm.id);
+    });
+    (nm.influencedBy || []).forEach(byId => {
+      const t = musicians.find(m => m.id === byId);
+      if (t && !(t.influences || []).includes(nm.id)) (t.influences ??= []).push(nm.id);
+    });
+    fs.writeFileSync('./src/data/musicians.json', JSON.stringify(musicians, null, 2));
+    console.log(`✅ Enriched ${onlyId}`);
+    return;
+  }
+
   const toProcess = musicians.filter(needsEnrichment);
   console.log(`🎸 Blues musician enrichment`);
   console.log(`   Total: ${musicians.length} | Needs work: ${toProcess.length}\n`);
