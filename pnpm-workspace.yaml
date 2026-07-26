@@ -1,0 +1,2 @@
+patchedDependencies:
+  '@luma.gl/core@9.2.6': patches/@luma.gl__core@9.2.6.patch

@@ -4,19 +4,30 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@luma.gl/core@9.2.6':
+    hash: 2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756
+    path: patches/@luma.gl__core@9.2.6.patch
+
 importers:
 
   .:
     dependencies:
+      '@deck.gl/core':
+        specifier: ^9.2.11
+        version: 9.2.11
+      '@deck.gl/extensions':
+        specifier: ^9.2.11
+        version: 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))
       '@deck.gl/geo-layers':
         specifier: ^9.2.11
-        version: 9.2.11(@deck.gl/core@9.2.11)(@deck.gl/extensions@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))))(@deck.gl/layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))))(@deck.gl/mesh-layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/gltf@9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@loaders.gl/core@4.3.4)(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))
+        version: 9.2.11(b273fdc80f601960d538e4beb566224b)
       '@deck.gl/layers':
         specifier: ^9.2.11
-        version: 9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))
+        version: 9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))
       '@deck.gl/react':
         specifier: ^9.2.11
-        version: 9.2.11(@deck.gl/core@9.2.11)(@deck.gl/widgets@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 9.2.11(@deck.gl/core@9.2.11)(@deck.gl/widgets@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@radix-ui/react-tooltip':
         specifier: ^1.2.8
         version: 1.2.8(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -37,7 +48,7 @@ importers:
         version: 7.9.0
       deck.gl:
         specifier: ^9.2.11
-        version: 9.2.11(@arcgis/core@4.34.8)(@luma.gl/constants@9.2.6)(@luma.gl/gltf@9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))(@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6))(@math.gl/web-mercator@4.1.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 9.2.11(@arcgis/core@4.34.8)(@luma.gl/constants@9.2.6)(@luma.gl/gltf@9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))(@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))(@math.gl/web-mercator@4.1.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       express:
         specifier: ^5.2.1
         version: 5.2.1
@@ -135,9 +146,6 @@ importers:
       globals:
         specifier: ^16.5.0
         version: 16.5.0
-      patch-package:
-        specifier: ^8.0.1
-        version: 8.0.1
       playwright:
         specifier: ^1.58.2
         version: 1.58.2
@@ -1988,9 +1996,6 @@ packages:
   '@webcomponents/shadycss@1.11.2':
     resolution: {integrity: sha512-vRq+GniJAYSBmTRnhCYPAPq6THYqovJ/gzGThWbgEZUQaBccndGTi1hdiUP15HzEco0I6t4RCtXyX0rsSmwgPw==}
 
-  '@yarnpkg/lockfile@1.1.0':
-    resolution: {integrity: sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ==}
-
   '@zip.js/zip.js@2.8.23':
     resolution: {integrity: sha512-RB+RLnxPJFPrGvQ9rgO+4JOcsob6lD32OcF0QE0yg24oeW9q8KnTTNlugcDaIveEcCbclobJcZP+fLQ++sH0bw==}
     engines: {bun: '>=0.7.0', deno: '>=1.0.0', node: '>=18.0.0'}
@@ -2096,10 +2101,6 @@ packages:
     resolution: {integrity: sha512-h+DEnpVvxmfVefa4jFbCf5HdH5YMDXRsmKflpf1pILZWRFlTbJpxeU55nJl4Smt5HQaGzg1o6RHFPJaOqnmBDg==}
     engines: {node: 18 || 20 || >=22}
 
-  braces@3.0.3:
-    resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
-    engines: {node: '>=8'}
-
   brotli@1.3.3:
     resolution: {integrity: sha512-oTKjJdShmDuGW94SyyaoQvAjf30dZaHnjJ8uAF+u2/vGJkJbJPJAT1gDiOJP5v1Zb6f9KEyW/1HpuaWIXtGHPg==}
 
@@ -2178,10 +2179,6 @@ packages:
         optional: true
       '@chromatic-com/playwright':
         optional: true
-
-  ci-info@3.9.0:
-    resolution: {integrity: sha512-NIxF55hv4nSqQswkAeiOi1r83xy8JldOFDTWiug55KBu9Jnblncd2U6ViHmYgHf01TPZS77NJBhBMKdWj9HQMQ==}
-    engines: {node: '>=8'}
 
   cliui@8.0.1:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
@@ -2731,10 +2728,6 @@ packages:
     resolution: {integrity: sha512-sJslQKU2uM33qH5nqewAwVB2QgR6w1aMNsYUp3aN5rMRyXEwJGmZvaWzeJFNTOXWlHQyBFCWrdj3fV/fsTOX8w==}
     engines: {node: '>= 10.4.0'}
 
-  fill-range@7.1.1:
-    resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
-    engines: {node: '>=8'}
-
   finalhandler@2.1.1:
     resolution: {integrity: sha512-S8KoZgRZN+a5rNwqTxlZZePjT/4cnm0ROV70LedRHZ0p8u9fRID0hJUZQpkKLzro8LfmC8sx23bY6tVNxv8pQA==}
     engines: {node: '>= 18.0.0'}
@@ -2742,9 +2735,6 @@ packages:
   find-up@5.0.0:
     resolution: {integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==}
     engines: {node: '>=10'}
-
-  find-yarn-workspace-root@2.0.0:
-    resolution: {integrity: sha512-1IMnbjt4KzsQfnhnzNd8wUEgXZ44IzZaZmnLYx7D5FZlaHt2gW20Cri8Q+E/t5tIj4+epTBub+2Zxu/vNILzqQ==}
 
   flat-cache@4.0.1:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
@@ -2780,10 +2770,6 @@ packages:
   fresh@2.0.0:
     resolution: {integrity: sha512-Rx/WycZ60HOaqLKAi6cHRKKI7zxWbJ31MhntmtwMoaTeF7XFH9hhBp8vITaMidfljRQ6eYWCKkaTK+ykVJHP2A==}
     engines: {node: '>= 0.8'}
-
-  fs-extra@10.1.0:
-    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
-    engines: {node: '>=12'}
 
   fsevents@2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
@@ -2969,11 +2955,6 @@ packages:
     resolution: {integrity: sha512-PwwhEakHVKTdRNVOw+/Gyh0+MzlCl4R6qKvkhuvLtPMggI1WAHt9sOwZxQLSGpUaDnrdyDsomoRgNnCfKNSXXg==}
     engines: {node: '>= 0.4'}
 
-  is-docker@2.2.1:
-    resolution: {integrity: sha512-F+i2BKsFrH66iaUFc0woD8sLy8getkwTwtOBjvs56Cx4CgJDeKQeqfz8wAYiSb8JOprWhHH5p77PbmYCvvUuXQ==}
-    engines: {node: '>=8'}
-    hasBin: true
-
   is-docker@3.0.0:
     resolution: {integrity: sha512-eljcgEDlEns/7AXFosB5K/2nCM4P7FQPkGc/DWLy5rmFEWvZayGrik1d9/QIY5nJ4f9YsVvBkA6kJpHn9rISdQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
@@ -3007,10 +2988,6 @@ packages:
     engines: {node: '>=14.16'}
     hasBin: true
 
-  is-number@7.0.0:
-    resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
-    engines: {node: '>=0.12.0'}
-
   is-plain-object@2.0.4:
     resolution: {integrity: sha512-h5PpgXkWitc38BBMYawTYMWJHFZJVnBquFE57xFpjB8pJFiF6gZ+bU+WyI/yqXiFR5mdLsgYNaPe8uao6Uv9Og==}
     engines: {node: '>=0.10.0'}
@@ -3022,19 +2999,12 @@ packages:
     resolution: {integrity: sha512-MjYsKHO5O7mCsmRGxWcLWheFqN9DJ/2TmngvjKXihe6efViPqc274+Fx/4fYj/r03+ESvBdTXK0V6tA3rgez1g==}
     engines: {node: '>= 0.4'}
 
-  is-wsl@2.2.0:
-    resolution: {integrity: sha512-fKzAra0rGJUUBwGBgNkHZuToZcn+TtXHpeCgmkMJMMYx1sQDYaCSyjJBSCa2nH1DGm7s3n1oBnohoVTBaN7Lww==}
-    engines: {node: '>=8'}
-
   is-wsl@3.1.1:
     resolution: {integrity: sha512-e6rvdUCiQCAuumZslxRJWR/Doq4VpPR82kqclvcS0efgt430SlGIk05vdCN58+VrzgtIcfNODjozVielycD4Sw==}
     engines: {node: '>=16'}
 
   isarray@1.0.0:
     resolution: {integrity: sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==}
-
-  isarray@2.0.5:
-    resolution: {integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==}
 
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
@@ -3113,10 +3083,6 @@ packages:
   json-stable-stringify-without-jsonify@1.0.1:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
 
-  json-stable-stringify@1.3.0:
-    resolution: {integrity: sha512-qtYiSSFlwot9XHtF9bD9c7rwKjr+RecWT//ZnPvSmEjpV5mmPOCN4j8UjY5hbjNkOwZ/jQv3J6R1/pL7RwgMsg==}
-    engines: {node: '>= 0.4'}
-
   json-stringify-pretty-compact@3.0.0:
     resolution: {integrity: sha512-Rc2suX5meI0S3bfdZuA7JMFBGkJ875ApfVyq2WHELjBiiG22My/l7/8zPpH/CfFVQHuVLd8NLR0nv6vi0BYYKA==}
 
@@ -3131,9 +3097,6 @@ packages:
   jsonfile@6.2.0:
     resolution: {integrity: sha512-FGuPw30AdOIUTRMC2OMRtQV+jkVj2cfPqSeWXv1NEAJ1qZ5zb1X6z1mFhbfOB/iy3ssJCD+3KuZ8r8C3uVFlAg==}
 
-  jsonify@0.0.1:
-    resolution: {integrity: sha512-2/Ki0GcmuqSrgFyelQq9M05y7PS0mEwuIzrf3f1fPqkVDVRvZrPZtVSMHxdgo8Aq0sxAOb/cr2aqqA3LeWHVPg==}
-
   jszip@3.10.1:
     resolution: {integrity: sha512-xXDvecyTpGLrqFrvkrUSoxxfJI5AH7U8zxxtVclpsUtMCq4JQ290LY8AW5c7Ggnr/Y/oK+bQMbqK2qmtk3pN4g==}
 
@@ -3142,9 +3105,6 @@ packages:
 
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
-
-  klaw-sync@6.0.0:
-    resolution: {integrity: sha512-nIeuVSzdCCs6TDPTqI8w1Yre34sSq7AkZ4B3sfOBbI2CgVSB4Du4aLQijFU2+lhAFCwt9+42Hel6lQNIv6AntQ==}
 
   ktx-parse@0.7.1:
     resolution: {integrity: sha512-FeA3g56ksdFNwjXJJsc1CCc7co+AJYDp6ipIp878zZ2bU8kWROatLYf39TQEd4/XRSUvBXovQ8gaVKWPXsCLEQ==}
@@ -3315,10 +3275,6 @@ packages:
     resolution: {integrity: sha512-Snk314V5ayFLhp3fkUREub6WtjBfPdCPY1Ln8/8munuLuiYhsABgBVWsozAG+MWMbVEvcdcpbi9R7ww22l9Q3g==}
     engines: {node: '>=18'}
 
-  micromatch@4.0.8:
-    resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
-    engines: {node: '>=8.6'}
-
   mime-db@1.54.0:
     resolution: {integrity: sha512-aU5EJuIN2WDemCcAp2vFBfp/m4EAhWJnUNSSw0ixs7/kXbd6Pg64EmwJkNdFhB8aWt1sH2CTXrLxo/iAGV3oPQ==}
     engines: {node: '>= 0.6'}
@@ -3415,10 +3371,6 @@ packages:
     resolution: {integrity: sha512-YgBpdJHPyQ2UE5x+hlSXcnejzAvD0b22U2OuAP+8OnlJT+PjWPxtgmGqKKc+RgTM63U9gN0YzrYc71R2WT/hTA==}
     engines: {node: '>=18'}
 
-  open@7.4.2:
-    resolution: {integrity: sha512-MVHddDVweXZF3awtlAS+6pgKLlm/JgxZ90+/NBurBoQctVOOB/zDdVjcyPzQ+0laDGbsWgrRkflI65sQeOgT9Q==}
-    engines: {node: '>=8'}
-
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
     engines: {node: '>= 0.8.0'}
@@ -3444,11 +3396,6 @@ packages:
   parseurl@1.3.3:
     resolution: {integrity: sha512-CiyeOxFT/JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1GnsUVEL0p63hoG1fcj3fHynXi9NYO4nWOL+qQ==}
     engines: {node: '>= 0.8'}
-
-  patch-package@8.0.1:
-    resolution: {integrity: sha512-VsKRIA8f5uqHQ7NGhwIna6Bx6D9s/1iXlA1hthBVBEbkq+t4kXD0HHt+rJhf/Z+Ci0F/HCB2hvn0qLdLG+Qxlw==}
-    engines: {node: '>=14', npm: '>5'}
-    hasBin: true
 
   path-exists@4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
@@ -3523,10 +3470,6 @@ packages:
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
-
-  picomatch@2.3.1:
-    resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
-    engines: {node: '>=8.6'}
 
   picomatch@4.0.3:
     resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
@@ -3816,10 +3759,6 @@ packages:
     resolution: {integrity: sha512-2wcC/oGxHis/BoHkkPwldgiPSYcpZK3JU28WoMVv55yHJgcZ8rlXvuG9iZggz+sU1d4bRgIGASwyWqjxu3FM0g==}
     engines: {node: '>=18'}
 
-  slash@2.0.0:
-    resolution: {integrity: sha512-ZYKh3Wh2z1PpEXWr0MpSBZ0V6mZHAQfYevttO11c51CaWjGTaadiKZ+wVt1PbMlDV5qhMFslpZCemhwOK7C89A==}
-    engines: {node: '>=6'}
-
   snappyjs@0.6.1:
     resolution: {integrity: sha512-YIK6I2lsH072UE0aOFxxY1dPDCS43I5ktqHpeAsuLNYWkE5pGxRGWfDM4/vSUfNzXjC1Ivzt3qx31PCLmc9yqg==}
 
@@ -3983,14 +3922,6 @@ packages:
   tinyspy@4.0.4:
     resolution: {integrity: sha512-azl+t0z7pw/z958Gy9svOTuzqIk6xq+NSheJzn5MMWtWTFywIacg2wUlzKFGtt3cthx0r2SxMK0yzJOR0IES7Q==}
     engines: {node: '>=14.0.0'}
-
-  tmp@0.2.5:
-    resolution: {integrity: sha512-voyz6MApa1rQGUxT3E+BK7/ROe8itEx7vD8/HEvt4xwXucvQ5G5oeEiHkmHZJuBO21RpOf+YYm9MOivj709jow==}
-    engines: {node: '>=14.14'}
-
-  to-regex-range@5.0.1:
-    resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
-    engines: {node: '>=8.0'}
 
   toidentifier@1.0.1:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
@@ -4460,36 +4391,36 @@ snapshots:
       - '@chromatic-com/cypress'
       - '@chromatic-com/playwright'
 
-  '@deck.gl/aggregation-layers@9.2.11(@deck.gl/core@9.2.11)(@deck.gl/layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))))(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))':
+  '@deck.gl/aggregation-layers@9.2.11(@deck.gl/core@9.2.11)(@deck.gl/layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))))(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))':
     dependencies:
       '@deck.gl/core': 9.2.11
-      '@deck.gl/layers': 9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))
+      '@deck.gl/layers': 9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))
       '@luma.gl/constants': 9.2.6
-      '@luma.gl/core': 9.2.6
-      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))
-      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6)
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
+      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))
+      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
       '@math.gl/core': 4.1.0
       '@math.gl/web-mercator': 4.1.0
       d3-hexbin: 0.2.2
 
-  '@deck.gl/arcgis@9.2.11(@arcgis/core@4.34.8)(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6))':
+  '@deck.gl/arcgis@9.2.11(@arcgis/core@4.34.8)(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))(@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))':
     dependencies:
       '@arcgis/core': 4.34.8
       '@deck.gl/core': 9.2.11
       '@luma.gl/constants': 9.2.6
-      '@luma.gl/core': 9.2.6
-      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))
-      '@luma.gl/webgl': 9.2.6(@luma.gl/core@9.2.6)
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
+      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))
+      '@luma.gl/webgl': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
       esri-loader: 3.7.0
 
-  '@deck.gl/carto@9.2.11(6b4ab9c7fbd4ee0293d55ee81ea831f6)':
+  '@deck.gl/carto@9.2.11(a68605b7ed8dcbb8275ec50f70fab1c5)':
     dependencies:
       '@carto/api-client': 0.5.24(@loaders.gl/core@4.3.4)
-      '@deck.gl/aggregation-layers': 9.2.11(@deck.gl/core@9.2.11)(@deck.gl/layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))))(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))
+      '@deck.gl/aggregation-layers': 9.2.11(@deck.gl/core@9.2.11)(@deck.gl/layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))))(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))
       '@deck.gl/core': 9.2.11
-      '@deck.gl/extensions': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))
-      '@deck.gl/geo-layers': 9.2.11(@deck.gl/core@9.2.11)(@deck.gl/extensions@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))))(@deck.gl/layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))))(@deck.gl/mesh-layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/gltf@9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@loaders.gl/core@4.3.4)(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))
-      '@deck.gl/layers': 9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))
+      '@deck.gl/extensions': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))
+      '@deck.gl/geo-layers': 9.2.11(b273fdc80f601960d538e4beb566224b)
+      '@deck.gl/layers': 9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))
       '@loaders.gl/compression': 4.3.4(@loaders.gl/core@4.3.4)
       '@loaders.gl/core': 4.3.4
       '@loaders.gl/gis': 4.3.4(@loaders.gl/core@4.3.4)
@@ -4497,8 +4428,8 @@ snapshots:
       '@loaders.gl/mvt': 4.3.4(@loaders.gl/core@4.3.4)
       '@loaders.gl/schema': 4.3.4(@loaders.gl/core@4.3.4)
       '@loaders.gl/tiles': 4.3.4(@loaders.gl/core@4.3.4)
-      '@luma.gl/core': 9.2.6
-      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6)
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
+      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
       '@math.gl/web-mercator': 4.1.0
       '@types/d3-array': 3.2.2
       '@types/d3-color': 1.4.5
@@ -4519,10 +4450,10 @@ snapshots:
       '@loaders.gl/core': 4.3.4
       '@loaders.gl/images': 4.3.4(@loaders.gl/core@4.3.4)
       '@luma.gl/constants': 9.2.6
-      '@luma.gl/core': 9.2.6
-      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))
-      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6)
-      '@luma.gl/webgl': 9.2.6(@luma.gl/core@9.2.6)
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
+      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))
+      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
+      '@luma.gl/webgl': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
       '@math.gl/core': 4.1.0
       '@math.gl/sun': 4.1.0
       '@math.gl/types': 4.1.0
@@ -4534,21 +4465,21 @@ snapshots:
       gl-matrix: 3.4.4
       mjolnir.js: 3.0.0
 
-  '@deck.gl/extensions@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))':
+  '@deck.gl/extensions@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))':
     dependencies:
       '@deck.gl/core': 9.2.11
       '@luma.gl/constants': 9.2.6
-      '@luma.gl/core': 9.2.6
-      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))
-      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6)
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
+      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))
+      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
       '@math.gl/core': 4.1.0
 
-  '@deck.gl/geo-layers@9.2.11(@deck.gl/core@9.2.11)(@deck.gl/extensions@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))))(@deck.gl/layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))))(@deck.gl/mesh-layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/gltf@9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@loaders.gl/core@4.3.4)(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))':
+  '@deck.gl/geo-layers@9.2.11(b273fdc80f601960d538e4beb566224b)':
     dependencies:
       '@deck.gl/core': 9.2.11
-      '@deck.gl/extensions': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))
-      '@deck.gl/layers': 9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))
-      '@deck.gl/mesh-layers': 9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/gltf@9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))
+      '@deck.gl/extensions': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))
+      '@deck.gl/layers': 9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))
+      '@deck.gl/mesh-layers': 9.2.11(0e8dd06ed875b3ed9d64517a15635abf)
       '@loaders.gl/3d-tiles': 4.3.4(@loaders.gl/core@4.3.4)
       '@loaders.gl/core': 4.3.4
       '@loaders.gl/gis': 4.3.4(@loaders.gl/core@4.3.4)
@@ -4558,10 +4489,10 @@ snapshots:
       '@loaders.gl/terrain': 4.3.4(@loaders.gl/core@4.3.4)
       '@loaders.gl/tiles': 4.3.4(@loaders.gl/core@4.3.4)
       '@loaders.gl/wms': 4.3.4(@loaders.gl/core@4.3.4)
-      '@luma.gl/core': 9.2.6
-      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))
-      '@luma.gl/gltf': 9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))
-      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6)
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
+      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))
+      '@luma.gl/gltf': 9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))
+      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
       '@math.gl/core': 4.1.0
       '@math.gl/culling': 4.1.0
       '@math.gl/web-mercator': 4.1.0
@@ -4572,12 +4503,12 @@ snapshots:
     transitivePeerDependencies:
       - '@luma.gl/constants'
 
-  '@deck.gl/google-maps@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6))':
+  '@deck.gl/google-maps@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))':
     dependencies:
       '@deck.gl/core': 9.2.11
       '@luma.gl/constants': 9.2.6
-      '@luma.gl/core': 9.2.6
-      '@luma.gl/webgl': 9.2.6(@luma.gl/core@9.2.6)
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
+      '@luma.gl/webgl': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
       '@math.gl/core': 4.1.0
       '@types/google.maps': 3.58.1
 
@@ -4586,51 +4517,51 @@ snapshots:
       '@deck.gl/core': 9.2.11
       jsep: 0.3.5
 
-  '@deck.gl/layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))':
+  '@deck.gl/layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))':
     dependencies:
       '@deck.gl/core': 9.2.11
       '@loaders.gl/core': 4.3.4
       '@loaders.gl/images': 4.3.4(@loaders.gl/core@4.3.4)
       '@loaders.gl/schema': 4.3.4(@loaders.gl/core@4.3.4)
-      '@luma.gl/core': 9.2.6
-      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))
-      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6)
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
+      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))
+      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
       '@mapbox/tiny-sdf': 2.0.7
       '@math.gl/core': 4.1.0
       '@math.gl/polygon': 4.1.0
       '@math.gl/web-mercator': 4.1.0
       earcut: 2.2.4
 
-  '@deck.gl/mapbox@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@math.gl/web-mercator@4.1.0)':
+  '@deck.gl/mapbox@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@math.gl/web-mercator@4.1.0)':
     dependencies:
       '@deck.gl/core': 9.2.11
       '@luma.gl/constants': 9.2.6
-      '@luma.gl/core': 9.2.6
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
       '@math.gl/web-mercator': 4.1.0
 
-  '@deck.gl/mesh-layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/gltf@9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))':
+  '@deck.gl/mesh-layers@9.2.11(0e8dd06ed875b3ed9d64517a15635abf)':
     dependencies:
       '@deck.gl/core': 9.2.11
       '@loaders.gl/gltf': 4.3.4(@loaders.gl/core@4.3.4)
       '@loaders.gl/schema': 4.3.4(@loaders.gl/core@4.3.4)
-      '@luma.gl/core': 9.2.6
-      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))
-      '@luma.gl/gltf': 9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))
-      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6)
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
+      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))
+      '@luma.gl/gltf': 9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))
+      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
     transitivePeerDependencies:
       - '@loaders.gl/core'
 
-  '@deck.gl/react@9.2.11(@deck.gl/core@9.2.11)(@deck.gl/widgets@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@deck.gl/react@9.2.11(@deck.gl/core@9.2.11)(@deck.gl/widgets@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@deck.gl/core': 9.2.11
-      '@deck.gl/widgets': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6)
+      '@deck.gl/widgets': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
 
-  '@deck.gl/widgets@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6)':
+  '@deck.gl/widgets@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))':
     dependencies:
       '@deck.gl/core': 9.2.11
-      '@luma.gl/core': 9.2.6
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
       preact: 10.28.4
 
   '@emnapi/runtime@1.8.1':
@@ -5146,7 +5077,7 @@ snapshots:
 
   '@luma.gl/constants@9.2.6': {}
 
-  '@luma.gl/core@9.2.6':
+  '@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)':
     dependencies:
       '@math.gl/types': 4.1.0
       '@probe.gl/env': 4.1.1
@@ -5154,37 +5085,37 @@ snapshots:
       '@probe.gl/stats': 4.1.1
       '@types/offscreencanvas': 2019.7.3
 
-  '@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))':
+  '@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))':
     dependencies:
-      '@luma.gl/core': 9.2.6
-      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6)
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
+      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
       '@math.gl/core': 4.1.0
       '@math.gl/types': 4.1.0
       '@probe.gl/log': 4.1.1
       '@probe.gl/stats': 4.1.1
 
-  '@luma.gl/gltf@9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))':
+  '@luma.gl/gltf@9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))':
     dependencies:
       '@loaders.gl/core': 4.3.4
       '@loaders.gl/gltf': 4.3.4(@loaders.gl/core@4.3.4)
       '@loaders.gl/textures': 4.3.4(@loaders.gl/core@4.3.4)
       '@luma.gl/constants': 9.2.6
-      '@luma.gl/core': 9.2.6
-      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))
-      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6)
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
+      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))
+      '@luma.gl/shadertools': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
       '@math.gl/core': 4.1.0
 
-  '@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)':
+  '@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))':
     dependencies:
-      '@luma.gl/core': 9.2.6
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
       '@math.gl/core': 4.1.0
       '@math.gl/types': 4.1.0
       wgsl_reflect: 1.2.3
 
-  '@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6)':
+  '@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))':
     dependencies:
       '@luma.gl/constants': 9.2.6
-      '@luma.gl/core': 9.2.6
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
       '@math.gl/types': 4.1.0
       '@probe.gl/env': 4.1.1
 
@@ -6351,8 +6282,6 @@ snapshots:
 
   '@webcomponents/shadycss@1.11.2': {}
 
-  '@yarnpkg/lockfile@1.1.0': {}
-
   '@zip.js/zip.js@2.8.23': {}
 
   a5-js@0.5.0:
@@ -6450,10 +6379,6 @@ snapshots:
     dependencies:
       balanced-match: 4.0.4
 
-  braces@3.0.3:
-    dependencies:
-      fill-range: 7.1.1
-
   brotli@1.3.3:
     dependencies:
       base64-js: 1.5.1
@@ -6528,8 +6453,6 @@ snapshots:
   check-error@2.1.3: {}
 
   chromatic@13.3.5: {}
-
-  ci-info@3.9.0: {}
 
   cliui@8.0.1:
     dependencies:
@@ -6814,24 +6737,24 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
-  deck.gl@9.2.11(@arcgis/core@4.34.8)(@luma.gl/constants@9.2.6)(@luma.gl/gltf@9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))(@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6))(@math.gl/web-mercator@4.1.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+  deck.gl@9.2.11(@arcgis/core@4.34.8)(@luma.gl/constants@9.2.6)(@luma.gl/gltf@9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))(@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))(@math.gl/web-mercator@4.1.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
-      '@deck.gl/aggregation-layers': 9.2.11(@deck.gl/core@9.2.11)(@deck.gl/layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))))(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))
-      '@deck.gl/arcgis': 9.2.11(@arcgis/core@4.34.8)(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6))
-      '@deck.gl/carto': 9.2.11(6b4ab9c7fbd4ee0293d55ee81ea831f6)
+      '@deck.gl/aggregation-layers': 9.2.11(@deck.gl/core@9.2.11)(@deck.gl/layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))))(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))
+      '@deck.gl/arcgis': 9.2.11(@arcgis/core@4.34.8)(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))(@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))
+      '@deck.gl/carto': 9.2.11(a68605b7ed8dcbb8275ec50f70fab1c5)
       '@deck.gl/core': 9.2.11
-      '@deck.gl/extensions': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))
-      '@deck.gl/geo-layers': 9.2.11(@deck.gl/core@9.2.11)(@deck.gl/extensions@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))))(@deck.gl/layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))))(@deck.gl/mesh-layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/gltf@9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@loaders.gl/core@4.3.4)(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))
-      '@deck.gl/google-maps': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6))
+      '@deck.gl/extensions': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))
+      '@deck.gl/geo-layers': 9.2.11(b273fdc80f601960d538e4beb566224b)
+      '@deck.gl/google-maps': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/webgl@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))
       '@deck.gl/json': 9.2.11(@deck.gl/core@9.2.11)
-      '@deck.gl/layers': 9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))
-      '@deck.gl/mapbox': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@math.gl/web-mercator@4.1.0)
-      '@deck.gl/mesh-layers': 9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/gltf@9.2.6(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6)(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6)))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))
-      '@deck.gl/react': 9.2.11(@deck.gl/core@9.2.11)(@deck.gl/widgets@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@deck.gl/widgets': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6)
+      '@deck.gl/layers': 9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))
+      '@deck.gl/mapbox': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/constants@9.2.6)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@math.gl/web-mercator@4.1.0)
+      '@deck.gl/mesh-layers': 9.2.11(0e8dd06ed875b3ed9d64517a15635abf)
+      '@deck.gl/react': 9.2.11(@deck.gl/core@9.2.11)(@deck.gl/widgets@9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@deck.gl/widgets': 9.2.11(@deck.gl/core@9.2.11)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))
       '@loaders.gl/core': 4.3.4
-      '@luma.gl/core': 9.2.6
-      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6)(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6))
+      '@luma.gl/core': 9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)
+      '@luma.gl/engine': 9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))
     optionalDependencies:
       '@arcgis/core': 4.34.8
       react: 19.2.4
@@ -7147,10 +7070,6 @@ snapshots:
 
   filesize@10.1.6: {}
 
-  fill-range@7.1.1:
-    dependencies:
-      to-regex-range: 5.0.1
-
   finalhandler@2.1.1:
     dependencies:
       debug: 4.4.3
@@ -7166,10 +7085,6 @@ snapshots:
     dependencies:
       locate-path: 6.0.0
       path-exists: 4.0.0
-
-  find-yarn-workspace-root@2.0.0:
-    dependencies:
-      micromatch: 4.0.8
 
   flat-cache@4.0.1:
     dependencies:
@@ -7196,12 +7111,6 @@ snapshots:
       react-dom: 19.2.4(react@19.2.4)
 
   fresh@2.0.0: {}
-
-  fs-extra@10.1.0:
-    dependencies:
-      graceful-fs: 4.2.11
-      jsonfile: 6.2.0
-      universalify: 2.0.1
 
   fsevents@2.3.2:
     optional: true
@@ -7358,8 +7267,6 @@ snapshots:
       call-bound: 1.0.4
       has-tostringtag: 1.0.2
 
-  is-docker@2.2.1: {}
-
   is-docker@3.0.0: {}
 
   is-error@2.2.2: {}
@@ -7382,8 +7289,6 @@ snapshots:
     dependencies:
       is-docker: 3.0.0
 
-  is-number@7.0.0: {}
-
   is-plain-object@2.0.4:
     dependencies:
       isobject: 3.0.1
@@ -7397,17 +7302,11 @@ snapshots:
       has-tostringtag: 1.0.2
       hasown: 2.0.2
 
-  is-wsl@2.2.0:
-    dependencies:
-      is-docker: 2.2.1
-
   is-wsl@3.1.1:
     dependencies:
       is-inside-container: 1.0.0
 
   isarray@1.0.0: {}
-
-  isarray@2.0.5: {}
 
   isexe@2.0.0: {}
 
@@ -7457,14 +7356,6 @@ snapshots:
 
   json-stable-stringify-without-jsonify@1.0.1: {}
 
-  json-stable-stringify@1.3.0:
-    dependencies:
-      call-bind: 1.0.8
-      call-bound: 1.0.4
-      isarray: 2.0.5
-      jsonify: 0.0.1
-      object-keys: 1.1.1
-
   json-stringify-pretty-compact@3.0.0: {}
 
   json-stringify-pretty-compact@4.0.0: {}
@@ -7476,8 +7367,6 @@ snapshots:
       universalify: 2.0.1
     optionalDependencies:
       graceful-fs: 4.2.11
-
-  jsonify@0.0.1: {}
 
   jszip@3.10.1:
     dependencies:
@@ -7491,10 +7380,6 @@ snapshots:
   keyv@4.5.4:
     dependencies:
       json-buffer: 3.0.1
-
-  klaw-sync@6.0.0:
-    dependencies:
-      graceful-fs: 4.2.11
 
   ktx-parse@0.7.1: {}
 
@@ -7658,11 +7543,6 @@ snapshots:
 
   merge-descriptors@2.0.0: {}
 
-  micromatch@4.0.8:
-    dependencies:
-      braces: 3.0.3
-      picomatch: 2.3.1
-
   mime-db@1.54.0: {}
 
   mime-types@3.0.2:
@@ -7739,11 +7619,6 @@ snapshots:
       is-inside-container: 1.0.0
       wsl-utils: 0.1.0
 
-  open@7.4.2:
-    dependencies:
-      is-docker: 2.2.1
-      is-wsl: 2.2.0
-
   optionator@0.9.4:
     dependencies:
       deep-is: 0.1.4
@@ -7770,23 +7645,6 @@ snapshots:
       callsites: 3.1.0
 
   parseurl@1.3.3: {}
-
-  patch-package@8.0.1:
-    dependencies:
-      '@yarnpkg/lockfile': 1.1.0
-      chalk: 4.1.2
-      ci-info: 3.9.0
-      cross-spawn: 7.0.6
-      find-yarn-workspace-root: 2.0.0
-      fs-extra: 10.1.0
-      json-stable-stringify: 1.3.0
-      klaw-sync: 6.0.0
-      minimist: 1.2.8
-      open: 7.4.2
-      semver: 7.7.4
-      slash: 2.0.0
-      tmp: 0.2.5
-      yaml: 2.8.3
 
   path-exists@4.0.0: {}
 
@@ -7857,8 +7715,6 @@ snapshots:
       split2: 4.2.0
 
   picocolors@1.1.1: {}
-
-  picomatch@2.3.1: {}
 
   picomatch@4.0.3: {}
 
@@ -8224,8 +8080,6 @@ snapshots:
       mrmime: 2.0.1
       totalist: 3.0.1
 
-  slash@2.0.0: {}
-
   snappyjs@0.6.1: {}
 
   sort-asc@0.2.0: {}
@@ -8365,12 +8219,6 @@ snapshots:
   tinyrainbow@3.1.0: {}
 
   tinyspy@4.0.4: {}
-
-  tmp@0.2.5: {}
-
-  to-regex-range@5.0.1:
-    dependencies:
-      is-number: 7.0.0
 
   toidentifier@1.0.1: {}
 
@@ -8549,7 +8397,8 @@ snapshots:
 
   yallist@3.1.1: {}
 
-  yaml@2.8.3: {}
+  yaml@2.8.3:
+    optional: true
 
   yargs-parser@21.1.1: {}
 

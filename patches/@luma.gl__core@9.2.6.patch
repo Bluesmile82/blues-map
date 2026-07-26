@@ -1,83 +1,7 @@
-diff --git a/node_modules/@luma.gl/core/dist/adapter-utils/get-attribute-from-layouts.d.ts b/node_modules/@luma.gl/core/dist/adapter-utils/get-attribute-from-layouts.d.ts
-index 6cf85d8..e1b3a11 100644
---- a/node_modules/@luma.gl/core/dist/adapter-utils/get-attribute-from-layouts.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter-utils/get-attribute-from-layouts.d.ts
-@@ -1,38 +1,38 @@
--import type { PrimitiveDataType, NormalizedDataType } from "../shadertypes/data-types/data-types.js";
--import type { AttributeShaderType } from "../shadertypes/data-types/shader-types.js";
--import type { VertexFormat } from "../shadertypes/vertex-arrays/vertex-formats.js";
--import type { ShaderLayout } from "../adapter/types/shader-layout.js";
--import type { BufferLayout } from "../adapter/types/buffer-layout.js";
-+import type { PrimitiveDataType, NormalizedDataType } from "../../src/shadertypes/data-types/data-types.js";
-+import type { AttributeShaderType } from "../../src/shadertypes/data-types/shader-types.js";
-+import type { VertexFormat } from "../../src/shadertypes/vertex-arrays/vertex-formats.js";
-+import type { ShaderLayout } from "../../src/adapter/types/shader-layout.js";
-+import type { BufferLayout } from "../../src/adapter/types/buffer-layout.js";
- /** Resolved info for a buffer / attribute combination to help backend configure it correctly */
- export type AttributeInfo = {
--    /** Attribute name */
--    attributeName: string;
--    /** Location in shader */
--    location: number;
--    /** Type / precision used in shader (buffer values may be converted) */
--    shaderType: AttributeShaderType;
--    /** Calculations are done in this type in the shader's attribute declaration */
--    primitiveType: PrimitiveDataType;
--    /** Components refer to the number of components in the shader's attribute declaration */
--    shaderComponents: 1 | 2 | 3 | 4;
--    /** It is the shader attribute declaration that determines whether GPU will process as integer or float */
--    integer: boolean;
--    /** BufferName */
--    bufferName: string;
--    /** Format of buffer data */
--    vertexFormat: VertexFormat;
--    /** Memory data type refers to the data type in the buffer */
--    bufferDataType: NormalizedDataType;
--    /** Components refer to the number of components in the buffer's vertex format */
--    bufferComponents: 1 | 2 | 3 | 4;
--    /** Normalization is encoded in the buffer layout's vertex format... */
--    normalized: boolean;
--    /** If not specified, the step mode is inferred from the attribute name in the shader (contains string instance) */
--    stepMode: 'vertex' | 'instance';
--    /** The byteOffset is encoded in or calculated from the buffer layout */
--    byteOffset: number;
--    /** The byteStride is encoded in or calculated from the buffer layout */
--    byteStride: number;
-+  /** Attribute name */
-+  attributeName: string;
-+  /** Location in shader */
-+  location: number;
-+  /** Type / precision used in shader (buffer values may be converted) */
-+  shaderType: AttributeShaderType;
-+  /** Calculations are done in this type in the shader's attribute declaration */
-+  primitiveType: PrimitiveDataType;
-+  /** Components refer to the number of components in the shader's attribute declaration */
-+  shaderComponents: 1 | 2 | 3 | 4;
-+  /** It is the shader attribute declaration that determines whether GPU will process as integer or float */
-+  integer: boolean;
-+  /** BufferName */
-+  bufferName: string;
-+  /** Format of buffer data */
-+  vertexFormat: VertexFormat;
-+  /** Memory data type refers to the data type in the buffer */
-+  bufferDataType: NormalizedDataType;
-+  /** Components refer to the number of components in the buffer's vertex format */
-+  bufferComponents: 1 | 2 | 3 | 4;
-+  /** Normalization is encoded in the buffer layout's vertex format... */
-+  normalized: boolean;
-+  /** If not specified, the step mode is inferred from the attribute name in the shader (contains string instance) */
-+  stepMode: 'vertex' | 'instance';
-+  /** The byteOffset is encoded in or calculated from the buffer layout */
-+  byteOffset: number;
-+  /** The byteStride is encoded in or calculated from the buffer layout */
-+  byteStride: number;
- };
- /**
-  * Map from "attribute names" to "resolved attribute infos"
-diff --git a/node_modules/@luma.gl/core/dist/adapter/adapter.d.ts b/node_modules/@luma.gl/core/dist/adapter/adapter.d.ts
-index 52d6a4a..787d285 100644
---- a/node_modules/@luma.gl/core/dist/adapter/adapter.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/adapter.d.ts
+diff --git a/dist/adapter/adapter.d.ts b/dist/adapter/adapter.d.ts
+index 52d6a4a2c73de7e63d0bf52f4bac3d69921a9778..787d285656aee71630c955b93dbaac211747bfa4 100644
+--- a/dist/adapter/adapter.d.ts
++++ b/dist/adapter/adapter.d.ts
 @@ -1,24 +1,24 @@
 -import { Device, DeviceProps } from "./device.js";
 +import { Device, DeviceProps } from "../../src/adapter/device.js";
@@ -122,10 +46,10 @@ index 52d6a4a..787d285 100644
  }
  //# sourceMappingURL=adapter.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/canvas-context.d.ts b/node_modules/@luma.gl/core/dist/adapter/canvas-context.d.ts
-index 029390d..2ac53da 100644
---- a/node_modules/@luma.gl/core/dist/adapter/canvas-context.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/canvas-context.d.ts
+diff --git a/dist/adapter/canvas-context.d.ts b/dist/adapter/canvas-context.d.ts
+index 029390db5724537f66d4bf67ef67d84ff14e02f5..2ac53daf1756403605a4ec55a669fa7f6cb102cc 100644
+--- a/dist/adapter/canvas-context.d.ts
++++ b/dist/adapter/canvas-context.d.ts
 @@ -1,34 +1,34 @@
 -import type { Device } from "./device.js";
 -import type { Framebuffer } from "./resources/framebuffer.js";
@@ -445,10 +369,10 @@ index 029390d..2ac53da 100644
  }
  //# sourceMappingURL=canvas-context.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/canvas-context.js b/node_modules/@luma.gl/core/dist/adapter/canvas-context.js
-index d4436e1..9d75d8e 100644
---- a/node_modules/@luma.gl/core/dist/adapter/canvas-context.js
-+++ b/node_modules/@luma.gl/core/dist/adapter/canvas-context.js
+diff --git a/dist/adapter/canvas-context.js b/dist/adapter/canvas-context.js
+index d4436e12f2fdfde833d7c942066db523ee61c90e..9d75d8e47d935a835ad187d28277d3cbabd5924c 100644
+--- a/dist/adapter/canvas-context.js
++++ b/dist/adapter/canvas-context.js
 @@ -166,7 +166,7 @@ export class CanvasContext {
      }
      /** Returns the biggest allowed framebuffer size. @todo Allow the application to limit this? */
@@ -458,10 +382,10 @@ index d4436e1..9d75d8e 100644
          return [maxTextureDimension, maxTextureDimension];
      }
      /** Update the canvas drawing buffer size. Called automatically if props.autoResize is true. */
-diff --git a/node_modules/@luma.gl/core/dist/adapter/device.d.ts b/node_modules/@luma.gl/core/dist/adapter/device.d.ts
-index 3e6348b..95da355 100644
---- a/node_modules/@luma.gl/core/dist/adapter/device.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/device.d.ts
+diff --git a/dist/adapter/device.d.ts b/dist/adapter/device.d.ts
+index 3e6348b30971f8bfe6b0c91914713a65b1173638..95da355439b4813080bb5b9ded7b56be4d68a4cf 100644
+--- a/dist/adapter/device.d.ts
++++ b/dist/adapter/device.d.ts
 @@ -1,24 +1,24 @@
 -import { StatsManager } from "../utils/stats-manager.js";
 -import type { VertexFormat, VertexFormatInfo } from "../shadertypes/vertex-arrays/vertex-formats.js";
@@ -1250,10 +1174,10 @@ index 3e6348b..95da355 100644
 +export { };
  //# sourceMappingURL=device.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/luma.d.ts b/node_modules/@luma.gl/core/dist/adapter/luma.d.ts
-index 34f525a..bd9a5a8 100644
---- a/node_modules/@luma.gl/core/dist/adapter/luma.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/luma.d.ts
+diff --git a/dist/adapter/luma.d.ts b/dist/adapter/luma.d.ts
+index 34f525ae8120656d391d843ad3f98540434eee8c..bd9a5a8f1dd8140eb6320653069f8384c209543f 100644
+--- a/dist/adapter/luma.d.ts
++++ b/dist/adapter/luma.d.ts
 @@ -1,27 +1,27 @@
  import type { Log } from '@probe.gl/log';
 -import type { DeviceProps } from "./device.js";
@@ -1395,10 +1319,10 @@ index 34f525a..bd9a5a8 100644
  }
  /**
   * Entry point to the luma.gl GPU abstraction
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/buffer.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/buffer.d.ts
-index b45a4d2..888469a 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/buffer.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/buffer.d.ts
+diff --git a/dist/adapter/resources/buffer.d.ts b/dist/adapter/resources/buffer.d.ts
+index b45a4d20c2248f3bc7edb38f5d861c3a338470ba..888469ace509cd723f36ca82e88020a7ca5c6d24 100644
+--- a/dist/adapter/resources/buffer.d.ts
++++ b/dist/adapter/resources/buffer.d.ts
 @@ -1,71 +1,71 @@
 -import type { Device } from "../device.js";
 -import { Resource, ResourceProps } from "./resource.js";
@@ -1535,10 +1459,10 @@ index b45a4d2..888469a 100644
  }
  //# sourceMappingURL=buffer.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/command-buffer.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/command-buffer.d.ts
-index d4d02e9..15f3033 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/command-buffer.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/command-buffer.d.ts
+diff --git a/dist/adapter/resources/command-buffer.d.ts b/dist/adapter/resources/command-buffer.d.ts
+index d4d02e9658381e927f598ecb187e2a56d884a1ea..15f3033bec4a9156467125d2f69f21d241661e75 100644
+--- a/dist/adapter/resources/command-buffer.d.ts
++++ b/dist/adapter/resources/command-buffer.d.ts
 @@ -1,12 +1,12 @@
 -import { Device } from "../device.js";
 -import { Resource, ResourceProps } from "./resource.js";
@@ -1558,10 +1482,10 @@ index d4d02e9..15f3033 100644
  }
  //# sourceMappingURL=command-buffer.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/command-encoder.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/command-encoder.d.ts
-index ede91ae..7257823 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/command-encoder.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/command-encoder.d.ts
+diff --git a/dist/adapter/resources/command-encoder.d.ts b/dist/adapter/resources/command-encoder.d.ts
+index ede91ae22bcb4530c454bf185ed1efa6384af223..7257823ea8940d56d28bc75a9e5ff179aaae8369 100644
+--- a/dist/adapter/resources/command-encoder.d.ts
++++ b/dist/adapter/resources/command-encoder.d.ts
 @@ -1,127 +1,127 @@
 -import { Device } from "../device.js";
 -import { Resource, ResourceProps } from "./resource.js";
@@ -1799,10 +1723,10 @@ index ede91ae..7257823 100644
  }
  //# sourceMappingURL=command-encoder.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/compute-pass.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/compute-pass.d.ts
-index 030952d..fc2a042 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/compute-pass.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/compute-pass.d.ts
+diff --git a/dist/adapter/resources/compute-pass.d.ts b/dist/adapter/resources/compute-pass.d.ts
+index 030952d5f6baa04dd7aea9c1c79204853962b58f..fc2a042744595a565b44e7a717704126dd2c7b03 100644
+--- a/dist/adapter/resources/compute-pass.d.ts
++++ b/dist/adapter/resources/compute-pass.d.ts
 @@ -1,42 +1,42 @@
 -import { Resource, ResourceProps } from "./resource.js";
 -import { ComputePipeline } from "./compute-pipeline.js";
@@ -1884,10 +1808,10 @@ index 030952d..fc2a042 100644
  }
  //# sourceMappingURL=compute-pass.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/compute-pipeline.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/compute-pipeline.d.ts
-index 7d6ffc0..fe9cd4a 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/compute-pipeline.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/compute-pipeline.d.ts
+diff --git a/dist/adapter/resources/compute-pipeline.d.ts b/dist/adapter/resources/compute-pipeline.d.ts
+index 7d6ffc0dd3c5b81130180db860df4729edadc38e..fe9cd4a10c494e1056d550541aa95e2e6ba2e1a1 100644
+--- a/dist/adapter/resources/compute-pipeline.d.ts
++++ b/dist/adapter/resources/compute-pipeline.d.ts
 @@ -1,35 +1,35 @@
 -import { Resource, ResourceProps } from "./resource.js";
 -import type { ComputeShaderLayout, Binding } from "../types/shader-layout.js";
@@ -1949,10 +1873,10 @@ index 7d6ffc0..fe9cd4a 100644
  }
  //# sourceMappingURL=compute-pipeline.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/external-texture.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/external-texture.d.ts
-index ac0d7eb..2245b1e 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/external-texture.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/external-texture.d.ts
+diff --git a/dist/adapter/resources/external-texture.d.ts b/dist/adapter/resources/external-texture.d.ts
+index ac0d7eb701d22cd8f674a4ad4884d5288dd9eccd..2245b1e9adb6160f4799ed701552341a95b373ec 100644
+--- a/dist/adapter/resources/external-texture.d.ts
++++ b/dist/adapter/resources/external-texture.d.ts
 @@ -1,12 +1,12 @@
 -import type { Device } from "../device.js";
 -import { Resource, ResourceProps } from "./resource.js";
@@ -1974,10 +1898,10 @@ index ac0d7eb..2245b1e 100644
  }
  //# sourceMappingURL=external-texture.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/framebuffer.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/framebuffer.d.ts
-index a31d2c2..8fe6ea6 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/framebuffer.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/framebuffer.d.ts
+diff --git a/dist/adapter/resources/framebuffer.d.ts b/dist/adapter/resources/framebuffer.d.ts
+index a31d2c240b122c69c3245844208a1bfb1d68bddf..8fe6ea6196c7796bd0a526eb39bdca9da1a574d7 100644
+--- a/dist/adapter/resources/framebuffer.d.ts
++++ b/dist/adapter/resources/framebuffer.d.ts
 @@ -1,62 +1,62 @@
 -import type { TextureFormatColor, TextureFormatDepthStencil, TextureFormat } from "../../shadertypes/textures/texture-formats.js";
 -import type { Device } from "../device.js";
@@ -2093,10 +2017,10 @@ index a31d2c2..8fe6ea6 100644
  }
  //# sourceMappingURL=framebuffer.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/pipeline-layout.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/pipeline-layout.d.ts
-index eb3bcdd..e085c61 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/pipeline-layout.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/pipeline-layout.d.ts
+diff --git a/dist/adapter/resources/pipeline-layout.d.ts b/dist/adapter/resources/pipeline-layout.d.ts
+index eb3bcddd5bf73ba840672fc102a5c8bdd0fbdb8a..e085c6104ad0df8fd566c35018ac238472f54caa 100644
+--- a/dist/adapter/resources/pipeline-layout.d.ts
++++ b/dist/adapter/resources/pipeline-layout.d.ts
 @@ -1,13 +1,13 @@
 -import { Device } from "../device.js";
 -import { ShaderLayout } from "../types/shader-layout.js";
@@ -2119,10 +2043,10 @@ index eb3bcdd..e085c61 100644
  }
  //# sourceMappingURL=pipeline-layout.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/query-set.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/query-set.d.ts
-index 3078524..b24c63a 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/query-set.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/query-set.d.ts
+diff --git a/dist/adapter/resources/query-set.d.ts b/dist/adapter/resources/query-set.d.ts
+index 307852437ece02b4156741a2019cd99b459205ea..b24c63a4552582d9b3b346f0a6c6e9358526f112 100644
+--- a/dist/adapter/resources/query-set.d.ts
++++ b/dist/adapter/resources/query-set.d.ts
 @@ -1,5 +1,5 @@
 -import type { Device } from "../device.js";
 -import { Resource, ResourceProps } from "./resource.js";
@@ -2163,10 +2087,10 @@ index 3078524..b24c63a 100644
  }
  //# sourceMappingURL=query-set.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/render-pass.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/render-pass.d.ts
-index 8bc67b6..a007577 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/render-pass.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/render-pass.d.ts
+diff --git a/dist/adapter/resources/render-pass.d.ts b/dist/adapter/resources/render-pass.d.ts
+index 8bc67b6246f9873424abe1b1ce2fe1d7e6f7ecd1..a007577b0e4d5fef572daf031df46c3bca31da3d 100644
+--- a/dist/adapter/resources/render-pass.d.ts
++++ b/dist/adapter/resources/render-pass.d.ts
 @@ -1,39 +1,39 @@
  import type { NumberArray4, TypedArray } from '@math.gl/types';
 -import type { Device } from "../device.js";
@@ -2295,10 +2219,10 @@ index 8bc67b6..a007577 100644
  }
  //# sourceMappingURL=render-pass.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/render-pipeline.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/render-pipeline.d.ts
-index 75b6a29..0fd45c8 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/render-pipeline.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/render-pipeline.d.ts
+diff --git a/dist/adapter/resources/render-pipeline.d.ts b/dist/adapter/resources/render-pipeline.d.ts
+index 75b6a295e8b60bd30dceb24dd5f97575b4cd3496..0fd45c8f230f325b4f467d7bfa5d397bc0f192f4 100644
+--- a/dist/adapter/resources/render-pipeline.d.ts
++++ b/dist/adapter/resources/render-pipeline.d.ts
 @@ -1,92 +1,92 @@
 -import type { Device } from "../device.js";
 -import type { UniformValue } from "../types/uniforms.js";
@@ -2476,10 +2400,10 @@ index 75b6a29..0fd45c8 100644
  }
  //# sourceMappingURL=render-pipeline.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/resource.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/resource.d.ts
-index 26b8fcc..9b1d724 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/resource.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/resource.d.ts
+diff --git a/dist/adapter/resources/resource.d.ts b/dist/adapter/resources/resource.d.ts
+index 26b8fcc09d781f8fa6061b156bf7a984446378ea..9b1d724dc24d9d0045238a88551feb00fcaed7f5 100644
+--- a/dist/adapter/resources/resource.d.ts
++++ b/dist/adapter/resources/resource.d.ts
 @@ -1,74 +1,74 @@
 -import type { Device } from "../device.js";
 +import type { Device } from "../../../src/adapter/device.js";
@@ -2622,10 +2546,10 @@ index 26b8fcc..9b1d724 100644
  }
  //# sourceMappingURL=resource.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/sampler.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/sampler.d.ts
-index bfbbea9..bb653a6 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/sampler.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/sampler.d.ts
+diff --git a/dist/adapter/resources/sampler.d.ts b/dist/adapter/resources/sampler.d.ts
+index bfbbea9cda239ca30e27f633632d42f9ddbffa9a..bb653a629fd0a1a64db52da4a1b5a91875bb5658 100644
+--- a/dist/adapter/resources/sampler.d.ts
++++ b/dist/adapter/resources/sampler.d.ts
 @@ -1,6 +1,6 @@
 -import type { Device } from "../device.js";
 -import { CompareFunction } from "../types/parameters.js";
@@ -2699,10 +2623,10 @@ index bfbbea9..bb653a6 100644
  }
  //# sourceMappingURL=sampler.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/shader.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/shader.d.ts
-index 5d06f61..e5dd183 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/shader.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/shader.d.ts
+diff --git a/dist/adapter/resources/shader.d.ts b/dist/adapter/resources/shader.d.ts
+index 5d06f61655f9f315772f904631924bcc7c40ef32..e5dd1830a9516e4091ba569bb9094c33e4254b7e 100644
+--- a/dist/adapter/resources/shader.d.ts
++++ b/dist/adapter/resources/shader.d.ts
 @@ -1,51 +1,51 @@
 -import type { Device } from "../device.js";
 -import { Resource, ResourceProps } from "./resource.js";
@@ -2795,10 +2719,10 @@ index 5d06f61..e5dd183 100644
  }
  //# sourceMappingURL=shader.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/texture-view.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/texture-view.d.ts
-index 4cf8b80..4f626eb 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/texture-view.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/texture-view.d.ts
+diff --git a/dist/adapter/resources/texture-view.d.ts b/dist/adapter/resources/texture-view.d.ts
+index 4cf8b80db0fcde4a42c8b6e3e58916c48dfc2805..4f626eb56427505ba32ab5c811cbf9968b2f29e4 100644
+--- a/dist/adapter/resources/texture-view.d.ts
++++ b/dist/adapter/resources/texture-view.d.ts
 @@ -1,32 +1,32 @@
 -import type { Device } from "../device.js";
 -import type { Texture } from "./texture.js";
@@ -2858,10 +2782,10 @@ index 4cf8b80..4f626eb 100644
  }
  //# sourceMappingURL=texture-view.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/texture.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/texture.d.ts
-index 90120e8..3b1b89e 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/texture.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/texture.d.ts
+diff --git a/dist/adapter/resources/texture.d.ts b/dist/adapter/resources/texture.d.ts
+index 90120e88fa41eb3e8431896e26e9385d1b3cd52b..3b1b89e4c10b3c201d80b8ec9254a04519fc3415 100644
+--- a/dist/adapter/resources/texture.d.ts
++++ b/dist/adapter/resources/texture.d.ts
 @@ -1,86 +1,86 @@
  import { TypedArray } from '@math.gl/types';
 -import type { Device } from "../device.js";
@@ -3170,10 +3094,10 @@ index 90120e8..3b1b89e 100644
  }
  //# sourceMappingURL=texture.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/transform-feedback.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/transform-feedback.d.ts
-index 7e9829c..c246eb3 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/transform-feedback.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/transform-feedback.d.ts
+diff --git a/dist/adapter/resources/transform-feedback.d.ts b/dist/adapter/resources/transform-feedback.d.ts
+index 7e9829cc6bb1a9fc1c663832b0bc6802b3ca18dc..c246eb3489abd9937b2be9097dc00f4b499f77ab 100644
+--- a/dist/adapter/resources/transform-feedback.d.ts
++++ b/dist/adapter/resources/transform-feedback.d.ts
 @@ -1,30 +1,30 @@
 -import type { Device } from "../device.js";
 -import { PrimitiveTopology } from "../types/parameters.js";
@@ -3226,10 +3150,10 @@ index 7e9829c..c246eb3 100644
  }
  //# sourceMappingURL=transform-feedback.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/resources/vertex-array.d.ts b/node_modules/@luma.gl/core/dist/adapter/resources/vertex-array.d.ts
-index 3180e17..29e500e 100644
---- a/node_modules/@luma.gl/core/dist/adapter/resources/vertex-array.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/resources/vertex-array.d.ts
+diff --git a/dist/adapter/resources/vertex-array.d.ts b/dist/adapter/resources/vertex-array.d.ts
+index 3180e172c8a02bdc52bcae7fdb63919d22f00e73..29e500e26b1ca0f76a661cc4d0969d3fce5c3476 100644
+--- a/dist/adapter/resources/vertex-array.d.ts
++++ b/dist/adapter/resources/vertex-array.d.ts
 @@ -1,15 +1,15 @@
 -import type { TypedArray } from "../../types.js";
 -import { AttributeInfo } from "../../adapter-utils/get-attribute-from-layouts.js";
@@ -3301,10 +3225,10 @@ index 3180e17..29e500e 100644
  }
  //# sourceMappingURL=vertex-array.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/types/attachments.d.ts b/node_modules/@luma.gl/core/dist/adapter/types/attachments.d.ts
-index a0630a2..ec67cab 100644
---- a/node_modules/@luma.gl/core/dist/adapter/types/attachments.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/types/attachments.d.ts
+diff --git a/dist/adapter/types/attachments.d.ts b/dist/adapter/types/attachments.d.ts
+index a0630a2ad9fa8633100c4f10fd5b2349211e0c7c..ec67cab78ae0adfa1a14e477b497071b031d7dd2 100644
+--- a/dist/adapter/types/attachments.d.ts
++++ b/dist/adapter/types/attachments.d.ts
 @@ -1,33 +1,33 @@
 -import type { TextureFormatColor, TextureFormatDepthStencil, TextureFormat } from "../../shadertypes/textures/texture-formats.js";
 -import type { Texture } from "../resources/texture.js";
@@ -3436,10 +3360,10 @@ index a0630a2..ec67cab 100644
 +export { };
  //# sourceMappingURL=attachments.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/types/buffer-layout.d.ts b/node_modules/@luma.gl/core/dist/adapter/types/buffer-layout.d.ts
-index bed3664..42a9cef 100644
---- a/node_modules/@luma.gl/core/dist/adapter/types/buffer-layout.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/types/buffer-layout.d.ts
+diff --git a/dist/adapter/types/buffer-layout.d.ts b/dist/adapter/types/buffer-layout.d.ts
+index bed3664fd35fc1b66ab7ab382c794219003c9177..42a9cefd7a4f7b555c607806c06b8b06ef248123 100644
+--- a/dist/adapter/types/buffer-layout.d.ts
++++ b/dist/adapter/types/buffer-layout.d.ts
 @@ -1,4 +1,4 @@
 -import type { VertexFormat } from "../../shadertypes/vertex-arrays/vertex-formats.js";
 +import type { VertexFormat } from "../../../src/shadertypes/vertex-arrays/vertex-formats.js";
@@ -3488,10 +3412,10 @@ index bed3664..42a9cef 100644
  };
  //# sourceMappingURL=buffer-layout.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/types/parameters.d.ts b/node_modules/@luma.gl/core/dist/adapter/types/parameters.d.ts
-index f883f79..00f3918 100644
---- a/node_modules/@luma.gl/core/dist/adapter/types/parameters.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/types/parameters.d.ts
+diff --git a/dist/adapter/types/parameters.d.ts b/dist/adapter/types/parameters.d.ts
+index f883f793e3fb55ebc8c0ef1a2674ef33f2a46762..00f3918b633038ed8fd1a3f0558723a5a13db3f2 100644
+--- a/dist/adapter/types/parameters.d.ts
++++ b/dist/adapter/types/parameters.d.ts
 @@ -1,5 +1,5 @@
  import { NumberArray4, NumberArray6 } from '@math.gl/types';
 -import { TextureFormatDepthStencil } from "../../shadertypes/textures/texture-formats.js";
@@ -3706,10 +3630,10 @@ index f883f79..00f3918 100644
 +export { };
  //# sourceMappingURL=parameters.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/adapter/types/shader-layout.d.ts b/node_modules/@luma.gl/core/dist/adapter/types/shader-layout.d.ts
-index ae6891c..259e93f 100644
---- a/node_modules/@luma.gl/core/dist/adapter/types/shader-layout.d.ts
-+++ b/node_modules/@luma.gl/core/dist/adapter/types/shader-layout.d.ts
+diff --git a/dist/adapter/types/shader-layout.d.ts b/dist/adapter/types/shader-layout.d.ts
+index ae6891c0d3aec30ca38c93ebbf1ba2c23f040ba5..259e93fed689df2c4ed5daaf10abedd9233c85a4 100644
+--- a/dist/adapter/types/shader-layout.d.ts
++++ b/dist/adapter/types/shader-layout.d.ts
 @@ -1,9 +1,9 @@
 -import type { TextureFormat } from "../../shadertypes/textures/texture-formats.js";
 -import type { VariableShaderType, AttributeShaderType } from "../../shadertypes/data-types/shader-types.js";
@@ -4018,10 +3942,86 @@ index ae6891c..259e93f 100644
  }
  //# sourceMappingURL=shader-layout.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/index.d.ts b/node_modules/@luma.gl/core/dist/index.d.ts
-index 1eb0685..99d509f 100644
---- a/node_modules/@luma.gl/core/dist/index.d.ts
-+++ b/node_modules/@luma.gl/core/dist/index.d.ts
+diff --git a/dist/adapter-utils/get-attribute-from-layouts.d.ts b/dist/adapter-utils/get-attribute-from-layouts.d.ts
+index 6cf85d8d573b1799094a35bdc304ce8ab01d1922..e1b3a114a2d1e0c9b1ac6dc5217d42ced76119b2 100644
+--- a/dist/adapter-utils/get-attribute-from-layouts.d.ts
++++ b/dist/adapter-utils/get-attribute-from-layouts.d.ts
+@@ -1,38 +1,38 @@
+-import type { PrimitiveDataType, NormalizedDataType } from "../shadertypes/data-types/data-types.js";
+-import type { AttributeShaderType } from "../shadertypes/data-types/shader-types.js";
+-import type { VertexFormat } from "../shadertypes/vertex-arrays/vertex-formats.js";
+-import type { ShaderLayout } from "../adapter/types/shader-layout.js";
+-import type { BufferLayout } from "../adapter/types/buffer-layout.js";
++import type { PrimitiveDataType, NormalizedDataType } from "../../src/shadertypes/data-types/data-types.js";
++import type { AttributeShaderType } from "../../src/shadertypes/data-types/shader-types.js";
++import type { VertexFormat } from "../../src/shadertypes/vertex-arrays/vertex-formats.js";
++import type { ShaderLayout } from "../../src/adapter/types/shader-layout.js";
++import type { BufferLayout } from "../../src/adapter/types/buffer-layout.js";
+ /** Resolved info for a buffer / attribute combination to help backend configure it correctly */
+ export type AttributeInfo = {
+-    /** Attribute name */
+-    attributeName: string;
+-    /** Location in shader */
+-    location: number;
+-    /** Type / precision used in shader (buffer values may be converted) */
+-    shaderType: AttributeShaderType;
+-    /** Calculations are done in this type in the shader's attribute declaration */
+-    primitiveType: PrimitiveDataType;
+-    /** Components refer to the number of components in the shader's attribute declaration */
+-    shaderComponents: 1 | 2 | 3 | 4;
+-    /** It is the shader attribute declaration that determines whether GPU will process as integer or float */
+-    integer: boolean;
+-    /** BufferName */
+-    bufferName: string;
+-    /** Format of buffer data */
+-    vertexFormat: VertexFormat;
+-    /** Memory data type refers to the data type in the buffer */
+-    bufferDataType: NormalizedDataType;
+-    /** Components refer to the number of components in the buffer's vertex format */
+-    bufferComponents: 1 | 2 | 3 | 4;
+-    /** Normalization is encoded in the buffer layout's vertex format... */
+-    normalized: boolean;
+-    /** If not specified, the step mode is inferred from the attribute name in the shader (contains string instance) */
+-    stepMode: 'vertex' | 'instance';
+-    /** The byteOffset is encoded in or calculated from the buffer layout */
+-    byteOffset: number;
+-    /** The byteStride is encoded in or calculated from the buffer layout */
+-    byteStride: number;
++  /** Attribute name */
++  attributeName: string;
++  /** Location in shader */
++  location: number;
++  /** Type / precision used in shader (buffer values may be converted) */
++  shaderType: AttributeShaderType;
++  /** Calculations are done in this type in the shader's attribute declaration */
++  primitiveType: PrimitiveDataType;
++  /** Components refer to the number of components in the shader's attribute declaration */
++  shaderComponents: 1 | 2 | 3 | 4;
++  /** It is the shader attribute declaration that determines whether GPU will process as integer or float */
++  integer: boolean;
++  /** BufferName */
++  bufferName: string;
++  /** Format of buffer data */
++  vertexFormat: VertexFormat;
++  /** Memory data type refers to the data type in the buffer */
++  bufferDataType: NormalizedDataType;
++  /** Components refer to the number of components in the buffer's vertex format */
++  bufferComponents: 1 | 2 | 3 | 4;
++  /** Normalization is encoded in the buffer layout's vertex format... */
++  normalized: boolean;
++  /** If not specified, the step mode is inferred from the attribute name in the shader (contains string instance) */
++  stepMode: 'vertex' | 'instance';
++  /** The byteOffset is encoded in or calculated from the buffer layout */
++  byteOffset: number;
++  /** The byteStride is encoded in or calculated from the buffer layout */
++  byteStride: number;
+ };
+ /**
+  * Map from "attribute names" to "resolved attribute infos"
+diff --git a/dist/index.d.ts b/dist/index.d.ts
+index 1eb0685c1b48f93aa713d3796eaedf0455a95185..99d509ffc1185b0053dd44e9eb50e8d6256be138 100644
+--- a/dist/index.d.ts
++++ b/dist/index.d.ts
 @@ -1,70 +1,70 @@
 -export type { AttachDeviceProps, CreateDeviceProps } from "./adapter/luma.js";
 -export { luma } from "./adapter/luma.js";
@@ -4163,10 +4163,10 @@ index 1eb0685..99d509f 100644
 +export { getTextureFormatDefinition as _getTextureFormatDefinition, getTextureFormatTable as _getTextureFormatTable } from "../src/shadertypes/textures/texture-format-table.js";
  //# sourceMappingURL=index.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/portable/uniform-block.d.ts b/node_modules/@luma.gl/core/dist/portable/uniform-block.d.ts
-index eeb48c9..161802a 100644
---- a/node_modules/@luma.gl/core/dist/portable/uniform-block.d.ts
-+++ b/node_modules/@luma.gl/core/dist/portable/uniform-block.d.ts
+diff --git a/dist/portable/uniform-block.d.ts b/dist/portable/uniform-block.d.ts
+index eeb48c96a1b9afc487819ce943cd22cffe9e2b31..161802a0448918998bf55093d44be32b8a784d4b 100644
+--- a/dist/portable/uniform-block.d.ts
++++ b/dist/portable/uniform-block.d.ts
 @@ -1,28 +1,28 @@
 -import type { VariableShaderType } from "../shadertypes/data-types/shader-types.js";
 -import type { UniformValue } from "../adapter/types/uniforms.js";
@@ -4218,10 +4218,10 @@ index eeb48c9..161802a 100644
  }
  //# sourceMappingURL=uniform-block.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/portable/uniform-buffer-layout.d.ts b/node_modules/@luma.gl/core/dist/portable/uniform-buffer-layout.d.ts
-index c54a260..e71274d 100644
---- a/node_modules/@luma.gl/core/dist/portable/uniform-buffer-layout.d.ts
-+++ b/node_modules/@luma.gl/core/dist/portable/uniform-buffer-layout.d.ts
+diff --git a/dist/portable/uniform-buffer-layout.d.ts b/dist/portable/uniform-buffer-layout.d.ts
+index c54a260ca3f9bdc1bb370c4bfcd102de49b5d0dd..e71274d25d65f61b223b6a9dccffea6a23f4d66d 100644
+--- a/dist/portable/uniform-buffer-layout.d.ts
++++ b/dist/portable/uniform-buffer-layout.d.ts
 @@ -1,28 +1,28 @@
 -import type { PrimitiveDataType } from "../shadertypes/data-types/data-types.js";
 -import type { VariableShaderType } from "../shadertypes/data-types/shader-types.js";
@@ -4273,10 +4273,10 @@ index c54a260..e71274d 100644
  }
  //# sourceMappingURL=uniform-buffer-layout.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/portable/uniform-store.d.ts b/node_modules/@luma.gl/core/dist/portable/uniform-store.d.ts
-index a4ad9a3..36e4879 100644
---- a/node_modules/@luma.gl/core/dist/portable/uniform-store.d.ts
-+++ b/node_modules/@luma.gl/core/dist/portable/uniform-store.d.ts
+diff --git a/dist/portable/uniform-store.d.ts b/dist/portable/uniform-store.d.ts
+index a4ad9a35950487498e08a1b951fde94be36ebec1..36e48795ed2e884d7db275cefe90d1feb1942773 100644
+--- a/dist/portable/uniform-store.d.ts
++++ b/dist/portable/uniform-store.d.ts
 @@ -1,9 +1,9 @@
 -import type { VariableShaderType } from "../shadertypes/data-types/shader-types.js";
 -import type { UniformValue } from "../adapter/types/uniforms.js";
@@ -4384,10 +4384,10 @@ index a4ad9a3..36e4879 100644
  }
  //# sourceMappingURL=uniform-store.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/shadertypes/data-types/decode-data-types.d.ts b/node_modules/@luma.gl/core/dist/shadertypes/data-types/decode-data-types.d.ts
-index ce46e9b..2afb120 100644
---- a/node_modules/@luma.gl/core/dist/shadertypes/data-types/decode-data-types.d.ts
-+++ b/node_modules/@luma.gl/core/dist/shadertypes/data-types/decode-data-types.d.ts
+diff --git a/dist/shadertypes/data-types/decode-data-types.d.ts b/dist/shadertypes/data-types/decode-data-types.d.ts
+index ce46e9ba046799ac6f15f365c0446f617d1c1580..2afb120d6d00c6aee69f93f5901dd849075fca93 100644
+--- a/dist/shadertypes/data-types/decode-data-types.d.ts
++++ b/dist/shadertypes/data-types/decode-data-types.d.ts
 @@ -1,5 +1,5 @@
 -import { TypedArray, TypedArrayConstructor } from "../../types.js";
 -import { SignedDataType, NormalizedDataType, DataTypeInfo } from "./data-types.js";
@@ -4396,10 +4396,10 @@ index ce46e9b..2afb120 100644
  /**
   * Gets info about a data type constant (signed or normalized)
   * @returns underlying primitive / signed types, byte length, normalization, integer, signed flags
-diff --git a/node_modules/@luma.gl/core/dist/shadertypes/data-types/decode-shader-types.d.ts b/node_modules/@luma.gl/core/dist/shadertypes/data-types/decode-shader-types.d.ts
-index 8de4eda..e60ceda 100644
---- a/node_modules/@luma.gl/core/dist/shadertypes/data-types/decode-shader-types.d.ts
-+++ b/node_modules/@luma.gl/core/dist/shadertypes/data-types/decode-shader-types.d.ts
+diff --git a/dist/shadertypes/data-types/decode-shader-types.d.ts b/dist/shadertypes/data-types/decode-shader-types.d.ts
+index 8de4edabd7329c6723a20b9362cc93e38b034010..e60ceda30c3931acab7f2dce3109f9875e2055f8 100644
+--- a/dist/shadertypes/data-types/decode-shader-types.d.ts
++++ b/dist/shadertypes/data-types/decode-shader-types.d.ts
 @@ -1,9 +1,9 @@
 -import { PrimitiveDataType } from "./data-types.js";
 -import type { VariableShaderType, AttributeShaderType, AttributeShaderTypeInfo, VariableShaderTypeAlias, AttributeShaderTypeAlias } from "./shader-types.js";
@@ -4414,10 +4414,10 @@ index 8de4eda..e60ceda 100644
  };
  /** Decodes a vertex type, returning byte length and flags (integer, signed, normalized) */
  export declare function getAttributeShaderTypeInfo(attributeType: AttributeShaderType): AttributeShaderTypeInfo;
-diff --git a/node_modules/@luma.gl/core/dist/shadertypes/data-types/shader-types.d.ts b/node_modules/@luma.gl/core/dist/shadertypes/data-types/shader-types.d.ts
-index 3820d3b..e6b69e8 100644
---- a/node_modules/@luma.gl/core/dist/shadertypes/data-types/shader-types.d.ts
-+++ b/node_modules/@luma.gl/core/dist/shadertypes/data-types/shader-types.d.ts
+diff --git a/dist/shadertypes/data-types/shader-types.d.ts b/dist/shadertypes/data-types/shader-types.d.ts
+index 3820d3b52a4a10f939a1580a20b4c61a0cb12d70..e6b69e8d0cc3af0b5d2fedca55648a995ae8bb00 100644
+--- a/dist/shadertypes/data-types/shader-types.d.ts
++++ b/dist/shadertypes/data-types/shader-types.d.ts
 @@ -1,4 +1,4 @@
 -import type { PrimitiveDataType } from "./data-types.js";
 +import type { PrimitiveDataType } from "../../../src/shadertypes/data-types/data-types.js";
@@ -4465,10 +4465,10 @@ index 3820d3b..e6b69e8 100644
 +export { };
  //# sourceMappingURL=shader-types.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/shadertypes/textures/texture-format-decoder.d.ts b/node_modules/@luma.gl/core/dist/shadertypes/textures/texture-format-decoder.d.ts
-index c48918a..a4fbcb6 100644
---- a/node_modules/@luma.gl/core/dist/shadertypes/textures/texture-format-decoder.d.ts
-+++ b/node_modules/@luma.gl/core/dist/shadertypes/textures/texture-format-decoder.d.ts
+diff --git a/dist/shadertypes/textures/texture-format-decoder.d.ts b/dist/shadertypes/textures/texture-format-decoder.d.ts
+index c48918ad4daf1f8e073c420aeb1328ba4394ab52..a4fbcb60c96a7561e8906fa3cf60494df2a71487 100644
+--- a/dist/shadertypes/textures/texture-format-decoder.d.ts
++++ b/dist/shadertypes/textures/texture-format-decoder.d.ts
 @@ -1,18 +1,18 @@
 -import type { TextureFormat, TextureFormatCompressed, TextureFormatInfo, TextureFormatCapabilities, TextureFormatColor } from "./texture-formats.js";
 +import type { TextureFormat, TextureFormatCompressed, TextureFormatInfo, TextureFormatCapabilities, TextureFormatColor } from "../../../src/shadertypes/textures/texture-formats.js";
@@ -4503,10 +4503,10 @@ index c48918a..a4fbcb6 100644
  export declare const textureFormatDecoder: TextureFormatDecoder;
  //# sourceMappingURL=texture-format-decoder.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/shadertypes/textures/texture-format-table.d.ts b/node_modules/@luma.gl/core/dist/shadertypes/textures/texture-format-table.d.ts
-index 99c47ff..3883456 100644
---- a/node_modules/@luma.gl/core/dist/shadertypes/textures/texture-format-table.d.ts
-+++ b/node_modules/@luma.gl/core/dist/shadertypes/textures/texture-format-table.d.ts
+diff --git a/dist/shadertypes/textures/texture-format-table.d.ts b/dist/shadertypes/textures/texture-format-table.d.ts
+index 99c47ff6b04e4f79d1de5ba13c5fade58b9ef306..38834560f56869a2f6144e2786a517db4c21037b 100644
+--- a/dist/shadertypes/textures/texture-format-table.d.ts
++++ b/dist/shadertypes/textures/texture-format-table.d.ts
 @@ -1,27 +1,27 @@
 -import { TextureFormat, TextureFeature, TextureFormatInfo } from "./texture-formats.js";
 +import { TextureFormat, TextureFeature, TextureFormatInfo } from "../../../src/shadertypes/textures/texture-formats.js";
@@ -4555,10 +4555,10 @@ index 99c47ff..3883456 100644
 +export { };
  //# sourceMappingURL=texture-format-table.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/shadertypes/textures/texture-formats.d.ts b/node_modules/@luma.gl/core/dist/shadertypes/textures/texture-formats.d.ts
-index 2098d92..27637b8 100644
---- a/node_modules/@luma.gl/core/dist/shadertypes/textures/texture-formats.d.ts
-+++ b/node_modules/@luma.gl/core/dist/shadertypes/textures/texture-formats.d.ts
+diff --git a/dist/shadertypes/textures/texture-formats.d.ts b/dist/shadertypes/textures/texture-formats.d.ts
+index 2098d924a8e9684e7aaf6828f6da95105cc5b3f4..27637b8f4dff82b0b08e245fae6a1b1b9de0cfaa 100644
+--- a/dist/shadertypes/textures/texture-formats.d.ts
++++ b/dist/shadertypes/textures/texture-formats.d.ts
 @@ -1,55 +1,55 @@
 -import { NormalizedDataType } from "../data-types/data-types.js";
 +import { NormalizedDataType } from "../../../src/shadertypes/data-types/data-types.js";
@@ -4667,10 +4667,10 @@ index 2098d92..27637b8 100644
 +export { };
  //# sourceMappingURL=texture-formats.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/shadertypes/vertex-arrays/decode-vertex-format.d.ts b/node_modules/@luma.gl/core/dist/shadertypes/vertex-arrays/decode-vertex-format.d.ts
-index a47d759..7313eba 100644
---- a/node_modules/@luma.gl/core/dist/shadertypes/vertex-arrays/decode-vertex-format.d.ts
-+++ b/node_modules/@luma.gl/core/dist/shadertypes/vertex-arrays/decode-vertex-format.d.ts
+diff --git a/dist/shadertypes/vertex-arrays/decode-vertex-format.d.ts b/dist/shadertypes/vertex-arrays/decode-vertex-format.d.ts
+index a47d75945837689ea19f8895f8c58a5337c1d062..7313ebab813864c6eddb5c0b75952c5440324ddb 100644
+--- a/dist/shadertypes/vertex-arrays/decode-vertex-format.d.ts
++++ b/dist/shadertypes/vertex-arrays/decode-vertex-format.d.ts
 @@ -1,6 +1,6 @@
 -import type { TypedArray } from "../../types.js";
 -import type { PrimitiveDataType, SignedDataType } from "../data-types/data-types.js";
@@ -4692,10 +4692,10 @@ index a47d759..7313eba 100644
  }): VertexFormat;
  //# sourceMappingURL=decode-vertex-format.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/shadertypes/vertex-arrays/vertex-formats.d.ts b/node_modules/@luma.gl/core/dist/shadertypes/vertex-arrays/vertex-formats.d.ts
-index 754034a..5f1d0be 100644
---- a/node_modules/@luma.gl/core/dist/shadertypes/vertex-arrays/vertex-formats.d.ts
-+++ b/node_modules/@luma.gl/core/dist/shadertypes/vertex-arrays/vertex-formats.d.ts
+diff --git a/dist/shadertypes/vertex-arrays/vertex-formats.d.ts b/dist/shadertypes/vertex-arrays/vertex-formats.d.ts
+index 754034a0c9a8b3765f256d33540d08cb2340e760..5f1d0be90ea3bfb7ebd7f48dba1da9dd767b3ae4 100644
+--- a/dist/shadertypes/vertex-arrays/vertex-formats.d.ts
++++ b/dist/shadertypes/vertex-arrays/vertex-formats.d.ts
 @@ -1,4 +1,4 @@
 -import { NormalizedDataType } from "../data-types/data-types.js";
 +import { NormalizedDataType } from "../../../src/shadertypes/data-types/data-types.js";
@@ -4741,10 +4741,10 @@ index 754034a..5f1d0be 100644
  };
  //# sourceMappingURL=vertex-formats.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/dist/utils/array-utils-flat.d.ts b/node_modules/@luma.gl/core/dist/utils/array-utils-flat.d.ts
-index 980cc01..ee579e0 100644
---- a/node_modules/@luma.gl/core/dist/utils/array-utils-flat.d.ts
-+++ b/node_modules/@luma.gl/core/dist/utils/array-utils-flat.d.ts
+diff --git a/dist/utils/array-utils-flat.d.ts b/dist/utils/array-utils-flat.d.ts
+index 980cc01c9bf090485b91a9b377bcd0e9416bd58f..ee579e0f39b3d6ed152fd4d3e6806e074cf6f48a 100644
+--- a/dist/utils/array-utils-flat.d.ts
++++ b/dist/utils/array-utils-flat.d.ts
 @@ -1,4 +1,4 @@
 -import type { TypedArray } from "../types.js";
 +import type { TypedArray } from "../../src/types.js";
@@ -4752,10 +4752,10 @@ index 980cc01..ee579e0 100644
  export declare function getScratchArray(Type: any, length: number): TypedArray;
  //# sourceMappingURL=array-utils-flat.d.ts.map
 \ No newline at end of file
-diff --git a/node_modules/@luma.gl/core/src/adapter/canvas-context.ts b/node_modules/@luma.gl/core/src/adapter/canvas-context.ts
-index ddaeb27..c39c5ea 100644
---- a/node_modules/@luma.gl/core/src/adapter/canvas-context.ts
-+++ b/node_modules/@luma.gl/core/src/adapter/canvas-context.ts
+diff --git a/src/adapter/canvas-context.ts b/src/adapter/canvas-context.ts
+index ddaeb2723e8f4a67b2260bca35ab9bc61c38bb5f..c39c5eaa6e12c703612d48fa203fe85613bd2435 100644
+--- a/src/adapter/canvas-context.ts
++++ b/src/adapter/canvas-context.ts
 @@ -235,7 +235,7 @@ export abstract class CanvasContext {
  
    /** Returns the biggest allowed framebuffer size. @todo Allow the application to limit this? */
