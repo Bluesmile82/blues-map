@@ -3360,7 +3360,8 @@
       "jb-lenoir",
       "t-bone-walker",
       "ramblin-thomas",
-      "archie-edwards"
+      "archie-edwards",
+      "robert-pete-williams"
     ],
     "incomplete": false,
     "playedWith": [
@@ -24666,7 +24667,8 @@
     "influences": [],
     "influencedBy": [
       "robert-johnson",
-      "champion-jack-dupree"
+      "champion-jack-dupree",
+      "robert-pete-williams"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -40516,5 +40518,70 @@
       "Piano",
       "Vocals"
     ]
+  },
+  {
+    "id": "robert-pete-williams",
+    "name": "Robert Pete Williams",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Pete%20Williams.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1914-03-14",
+    "birthPlace": "Zachary",
+    "birthCoords": [
+      -91.1567,
+      30.655
+    ],
+    "deathDate": "1980-12-31",
+    "deathPlace": "Rosedale",
+    "deathCoords": [
+      -91.4617,
+      30.44
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Baton Rouge",
+        "coords": [
+          -91.1871,
+          30.4515
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=TmpQu-bJoFA",
+    "albums": [
+      {
+        "name": "Angola Prisoners' Blues (1959)",
+        "youtubeLink": "https://www.youtube.com/watch?v=F4UlkAHTd8c"
+      },
+      {
+        "name": "Free Again (1961)",
+        "youtubeLink": "https://www.youtube.com/watch?v=MUJE14fiHyQ"
+      }
+    ],
+    "description": "Robert Pete Williams (March 14, 1914 – December 31, 1980) was an American Louisiana blues musician.  His music characteristically employed unconventional structures and guitar tunings, and his songs are often about the time he served in prison.  His song \"I've Grown So Ugly\" has been covered by Captain Beefheart, on his album Safe as Milk (1967), and by The Black Keys, on Rubber Factory (2004).",
+    "activeFrom": "1959",
+    "influences": [
+      "peetie-wheatstraw",
+      "blind-lemon-jefferson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Robert_Pete_Williams",
+    "secondaryInstruments": []
   }
 ]
