@@ -11527,7 +11527,8 @@
     "influencedBy": [
       "junior-watson",
       "buddy-guy",
-      "walter-wolfman-washington"
+      "walter-wolfman-washington",
+      "johnny-guitar-watson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -13969,7 +13970,9 @@
     "albums": [],
     "description": "Jimi Hendrix was an American guitarist widely regarded as one of the greatest of all time. He pioneered the use of guitar feedback and distortion in mainstream rock, and his albums Are You Experienced and Electric Ladyland are landmarks of rock music.",
     "activeFrom": "1962",
-    "influences": [],
+    "influences": [
+      "johnny-guitar-watson"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -16314,7 +16317,8 @@
       "etta-james",
       "big-mama-thornton",
       "wynonie-harris",
-      "charles-brown"
+      "charles-brown",
+      "johnny-guitar-watson"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Otis",
     "secondaryInstruments": [
@@ -30152,7 +30156,8 @@
       "lowell-fulson",
       "clarence-garlow",
       "pete-mayes",
-      "sean-costello"
+      "sean-costello",
+      "johnny-guitar-watson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -40415,6 +40420,98 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Roy_Brown_(blues_musician)",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "johnny-guitar-watson",
+    "name": "Johnny \"Guitar\" Watson",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Johnny%20Guitar%20Watson-1996.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1935-02-03",
+    "birthPlace": "Houston",
+    "birthCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "deathDate": "1996-05-17",
+    "deathPlace": "Yokohama",
+    "deathCoords": [
+      139.63422222222223,
+      35.45033333333333
+    ],
+    "spentTimePlaces": [
+      {
+        "name": "Houston",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      {
+        "name": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "name": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "name": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      }
+    ],
+    "instrument": "Guitar, Piano, Voice",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=EiMiAnEO3-o",
+    "albums": [
+      {
+        "name": "2 in Blues (1963)",
+        "youtubeLink": "https://www.youtube.com/watch?v=eQiiu2z-JoQ"
+      },
+      {
+        "name": "Gangster Of Love (1977)",
+        "youtubeLink": "https://www.youtube.com/watch?v=c9HP17lAIVo"
+      },
+      {
+        "name": "The Very Best of Johnny \"Guitar\" Watson (1981)",
+        "youtubeLink": "https://www.youtube.com/watch?v=jF6cZTlWfow"
+      },
+      {
+        "name": "Hit the Highway (1983)",
+        "youtubeLink": "https://www.youtube.com/watch?v=wsaUhTLTQVk"
+      },
+      {
+        "name": "I Heard That! (1985)",
+        "youtubeLink": "https://www.youtube.com/watch?v=-P2k8G5I81E"
+      },
+      {
+        "name": "3 Hours Past Midnight (1986)",
+        "youtubeLink": "https://www.youtube.com/watch?v=XL1R8ICIJgg"
+      }
+    ],
+    "description": "John Watson Jr.  (February 3, 1935 – May 17, 1996), often known professionally as Johnny \"Guitar\" Watson, was an American musician.  A flamboyant showman and electric guitarist in the style of T-Bone Walker, his recording career spanned 40 years, and encompassed rhythm and blues, funk and soul music.",
+    "activeFrom": "1952",
+    "influences": [
+      "t-bone-walker",
+      "guitar-slim"
+    ],
+    "influencedBy": [
+      "jimi-hendrix"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "johnny-otis"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Johnny_%22Guitar%22_Watson",
     "secondaryInstruments": []
   }
 ]
