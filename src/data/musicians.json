@@ -40585,5 +40585,65 @@
     "secondaryInstruments": [
       "Vocals"
     ]
+  },
+  {
+    "id": "geeshie-wiley",
+    "name": "Geeshie Wiley",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1908-11-14",
+    "birthPlace": "Louisiana",
+    "birthCoords": [
+      -92,
+      31
+    ],
+    "deathDate": "1950-07-29",
+    "deathPlace": "Texas",
+    "deathCoords": [
+      -100,
+      31
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Houston",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=oAKfy2W70Qg",
+    "albums": [
+      {
+        "name": "Mississippi Masters: Early American Blues Classics 1927-35 (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=oAKfy2W70Qg"
+      }
+    ],
+    "description": "Geeshie Wiley was an American country blues singer and guitar player who recorded six songs for Paramount Records, issued on three records in April 1930. According to the blues historian Don Kent, Wiley \"may well have been the rural South's greatest female blues singer and musician\". Little is known of her life, and there are no known photographs of her.",
+    "activeFrom": "1928",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Geeshie_Wiley",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
