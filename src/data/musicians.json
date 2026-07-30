@@ -1599,7 +1599,9 @@
       "little-buddy-doyle",
       "willie-61-blackwell"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "rick-estrin"
+    ],
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson",
@@ -8758,7 +8760,8 @@
       "john-lee-hooker",
       "big-walter-horton",
       "elmore-james",
-      "willie-dixon"
+      "willie-dixon",
+      "rick-estrin"
     ],
     "source": "https://en.wikipedia.org/wiki/Eddie_Taylor_Jr.",
     "secondaryInstruments": []
@@ -15427,7 +15430,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "howlin-wolf"
+      "howlin-wolf",
+      "rick-estrin"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Littlejohn",
     "secondaryInstruments": []
@@ -16210,7 +16214,8 @@
       "john-lee-hooker",
       "little-walter",
       "memphis-slim",
-      "snooky-pryor"
+      "snooky-pryor",
+      "rick-estrin"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_\"Man\"_Young",
     "secondaryInstruments": [
@@ -19915,7 +19920,8 @@
     ],
     "influencedBy": [
       "little-hatch",
-      "jimmy-mccracklin"
+      "jimmy-mccracklin",
+      "rick-estrin"
     ],
     "incomplete": false,
     "playedWith": [
@@ -20837,7 +20843,8 @@
       "ray-charles",
       "jimmy-mccracklin",
       "john-lee-hooker",
-      "jimmy-rogers"
+      "jimmy-rogers",
+      "rick-estrin"
     ],
     "source": "https://en.wikipedia.org/wiki/Lowell_Fulson",
     "secondaryInstruments": [
@@ -23604,7 +23611,8 @@
       "john-lee-hooker",
       "bb-king",
       "eric-clapton",
-      "albert-collins"
+      "albert-collins",
+      "rick-estrin"
     ],
     "source": "https://en.wikipedia.org/wiki/Muddy_Waters",
     "secondaryInstruments": [
@@ -29415,7 +29423,8 @@
       "james-cotton",
       "hip-linkchain",
       "junior-wells",
-      "gene-birdlegg-pittman"
+      "gene-birdlegg-pittman",
+      "rick-estrin"
     ],
     "incomplete": false,
     "playedWith": [
@@ -33053,7 +33062,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "rick-estrin"
+    ],
     "source": "https://en.wikipedia.org/wiki/Z.Z._Hill",
     "secondaryInstruments": []
   },
@@ -33805,7 +33816,8 @@
       "carey-bell",
       "lightnin-hopkins",
       "james-cotton",
-      "eddie-taylor"
+      "eddie-taylor",
+      "rick-estrin"
     ],
     "source": "https://en.wikipedia.org/wiki/Sam_Lay",
     "secondaryInstruments": [
@@ -40651,6 +40663,7 @@
     ]
   },
   {
+<<<<<<< HEAD
     "id": "ruth-brown",
     "name": "Ruth Brown",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruth%20Brown%201996.jpg?width=500",
@@ -40701,10 +40714,54 @@
     "activeFrom": "1949",
     "influences": [
       "billie-holiday"
+=======
+    "id": "rick-estrin",
+    "name": "Rick Estrin",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rick%20Estrin%202007.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1949-10-05",
+    "birthPlace": "San Francisco",
+    "birthCoords": [
+      -122.41944444444445,
+      37.775
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=qEz3E2hOQdw",
+    "albums": [
+      {
+        "name": "Twisted (2009)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Groovin' in Greaseland (2017)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6Sicnu9qIAs"
+      }
+    ],
+    "description": "Rick Estrin is an American blues harmonica player and vocalist known for his sharp, witty songwriting and slick, sophisticated harmonica style rooted in the Chicago tradition of Little Walter and Sonny Boy Williamson II. As a teenager he moved to Chicago, where he learned firsthand from South Side blues veterans, before returning to California and fronting Little Charlie & the Nightcats for thirty years and later Rick Estrin & The Nightcats. He has won multiple Blues Music Awards, including for Best Instrumentalist–Harmonica, and his song \"My Next Ex-Wife\" won Song of the Year in 1994.",
+    "activeFrom": "1969",
+    "influences": [
+      "sonny-boy-williamson",
+      "little-walter",
+      "baby-boy-warren"
+>>>>>>> origin/main
     ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
+<<<<<<< HEAD
       "charles-brown",
       "bonnie-raitt"
     ],
@@ -40712,6 +40769,19 @@
     "secondaryInstruments": [
       "Piano",
       "Keyboards"
+=======
+      "lowell-fulson",
+      "zz-hill",
+      "sam-lay",
+      "john-littlejohn",
+      "eddie-taylor",
+      "johnny-man-young",
+      "muddy-waters"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Rick_Estrin",
+    "secondaryInstruments": [
+      "Vocals"
+>>>>>>> origin/main
     ]
   }
 ]
