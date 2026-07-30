@@ -40663,7 +40663,6 @@
     ]
   },
   {
-<<<<<<< HEAD
     "id": "ruth-brown",
     "name": "Ruth Brown",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruth%20Brown%201996.jpg?width=500",
@@ -40714,7 +40713,20 @@
     "activeFrom": "1949",
     "influences": [
       "billie-holiday"
-=======
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "charles-brown",
+      "bonnie-raitt"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Ruth_Brown",
+    "secondaryInstruments": [
+      "Piano",
+      "Keyboards"
+    ]
+  },
+  {
     "id": "rick-estrin",
     "name": "Rick Estrin",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rick%20Estrin%202007.jpg?width=500",
@@ -40756,20 +40768,10 @@
       "sonny-boy-williamson",
       "little-walter",
       "baby-boy-warren"
->>>>>>> origin/main
     ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-<<<<<<< HEAD
-      "charles-brown",
-      "bonnie-raitt"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Ruth_Brown",
-    "secondaryInstruments": [
-      "Piano",
-      "Keyboards"
-=======
       "lowell-fulson",
       "zz-hill",
       "sam-lay",
@@ -40781,7 +40783,6 @@
     "source": "https://en.wikipedia.org/wiki/Rick_Estrin",
     "secondaryInstruments": [
       "Vocals"
->>>>>>> origin/main
     ]
   }
 ]
