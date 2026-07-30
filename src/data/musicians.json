@@ -4235,7 +4235,8 @@
       "john-lee-hooker",
       "bb-king",
       "stevie-ray-vaughan",
-      "mississippi-fred-mcdowell"
+      "mississippi-fred-mcdowell",
+      "ruth-brown"
     ],
     "source": "https://en.wikipedia.org/wiki/Bonnie_Raitt",
     "secondaryInstruments": [
@@ -5621,7 +5622,9 @@
       "pete-mayes"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "ruth-brown"
+    ],
     "source": "https://en.wikipedia.org/wiki/Charles_Brown_(musician)",
     "secondaryInstruments": [
       "Vocals"
@@ -33546,7 +33549,8 @@
     ],
     "influencedBy": [
       "nina-simone",
-      "etta-james"
+      "etta-james",
+      "ruth-brown"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -40656,6 +40660,70 @@
     "source": "https://en.wikipedia.org/wiki/Geeshie_Wiley",
     "secondaryInstruments": [
       "Vocals"
+    ]
+  },
+  {
+    "id": "ruth-brown",
+    "name": "Ruth Brown",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruth%20Brown%201996.jpg?width=500",
+    "image_source": "",
+    "birthDate": "1928-01-12",
+    "birthPlace": "Portsmouth",
+    "birthCoords": [
+      -76.29827,
+      36.83543
+    ],
+    "deathDate": "2006-11-17",
+    "deathPlace": "Las Vegas",
+    "deathCoords": [
+      -115.14861111111111,
+      36.16722222222222
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=hJSYMEhb00c",
+    "albums": [
+      {
+        "name": "Rockin' With Ruth (1984)",
+        "youtubeLink": "https://www.youtube.com/watch?v=rLyDwzmZ4k4"
+      },
+      {
+        "name": "Miss Rhythm (Greatest Hits and More) (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uduop03xdho"
+      },
+      {
+        "name": "Rockin' in Rhythm: The Best of Ruth Brown (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=pQJ5qzX4m-g"
+      },
+      {
+        "name": "Miss Rhythm: The Rest & More of the Best (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=EBfw0Oxg9DM"
+      },
+      {
+        "name": "Mama, He Treats Your Daughter Mean and Other Hits (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=BqmGZRGvKC8"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Ruth Brown 1949-1950 (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=w98sREhULms"
+      }
+    ],
+    "description": "Ruth Alston Brown (née Weston; January 12, 1928 – November 17, 2006) was an American singer-songwriter and actress, sometimes referred to as the \"Queen of R&B\".  She was noted for bringing a pop music style to R&B music in a series of hit songs for Atlantic Records in the 1950s, such as \"So Long\", \"Teardrops from My Eyes\" and \"(Mama) He Treats Your Daughter Mean\".  For these contributions, Atlantic became known as \"the house that Ruth built\" (alluding to the popular nickname for the old Yankee Stadium).",
+    "activeFrom": "1949",
+    "influences": [
+      "billie-holiday"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "charles-brown",
+      "bonnie-raitt"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Ruth_Brown",
+    "secondaryInstruments": [
+      "Piano",
+      "Keyboards"
     ]
   },
   {
