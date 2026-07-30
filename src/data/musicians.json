@@ -40804,42 +40804,42 @@
     ],
     "spentTimePlaces": [
       {
-        "name": "Mississippi",
+        "place": "Mississippi",
         "coords": [
           -89.3985,
           32.3547
         ]
       },
       {
-        "name": "Chicago",
+        "place": "Chicago",
         "coords": [
           -87.6298,
           41.8781
         ]
       },
       {
-        "name": "Jackson",
+        "place": "Jackson",
         "coords": [
           -90.1848,
           32.2988
         ]
       },
       {
-        "name": "Memphis",
+        "place": "Memphis",
         "coords": [
           -90.049,
           35.1495
         ]
       },
       {
-        "name": "San Francisco",
+        "place": "San Francisco",
         "coords": [
           -122.4194,
           37.7749
         ]
       }
     ],
-    "instrument": "Voice",
+    "instrument": "Vocals",
     "bluesStyle": "Soul Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=TRhZNqThm3U",
     "albums": [
