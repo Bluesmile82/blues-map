@@ -350,7 +350,8 @@
     ],
     "influencedBy": [
       "stevie-ray-vaughan",
-      "sean-costello"
+      "sean-costello",
+      "larry-davis"
     ],
     "incomplete": false,
     "playedWith": [
@@ -362,7 +363,8 @@
       "ike-turner",
       "jimmy-reed",
       "mike-bloomfield",
-      "john-mayall"
+      "john-mayall",
+      "larry-davis"
     ],
     "source": "https://en.wikipedia.org/wiki/Albert_King",
     "secondaryInstruments": [
@@ -9777,7 +9779,8 @@
       "muddy-waters",
       "jimmy-rogers",
       "magic-sam",
-      "willie-dixon"
+      "willie-dixon",
+      "larry-davis"
     ],
     "source": "https://en.wikipedia.org/wiki/Fenton_Robinson",
     "secondaryInstruments": [
@@ -29835,7 +29838,8 @@
       "albert-king",
       "buddy-guy",
       "john-lee-hooker",
-      "albert-collins"
+      "albert-collins",
+      "larry-davis"
     ],
     "influencedBy": [
       "sean-costello"
@@ -34439,7 +34443,8 @@
     "incomplete": false,
     "playedWith": [
       "dr-john",
-      "fats-domino"
+      "fats-domino",
+      "larry-davis"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Booker",
     "secondaryInstruments": [
@@ -40782,6 +40787,53 @@
     ],
     "source": "https://en.wikipedia.org/wiki/Rick_Estrin",
     "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "larry-davis",
+    "name": "Larry Davis",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Larry%20Davis.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1936-12-04",
+    "birthPlace": "Pine Bluff, Arkansas",
+    "birthCoords": [
+      -92.0043,
+      34.2284
+    ],
+    "deathDate": "1994-04-19",
+    "deathPlace": "Los Angeles, California",
+    "deathCoords": [
+      -118.24368,
+      34.05223
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=lPs6Hv3nzLw",
+    "albums": [
+      {
+        "name": "Sweet Little Angel: Kent Recordings 1968-69",
+        "youtubeLink": "https://www.youtube.com/watch?v=c1T-mfk6qWc"
+      }
+    ],
+    "description": "Larry Davis was an American Texas and soul blues singer, guitarist, and bassist best known for writing (with Joseph Scott) and originally recording \"Texas Flood\" in 1958 for Duke Records, a song later made famous by Stevie Ray Vaughan. He began his career as a drummer before switching to bass, played in Albert King's band and absorbed King's guitar style, and partnered in the mid-1950s with guitarist Fenton Robinson, who played guitar on the original \"Texas Flood\" session. After a 1972 motorcycle accident sidelined him for years, Davis staged a comeback in the 1980s, winning four W.C. Handy Awards in 1982.",
+    "activeFrom": "1950s",
+    "influences": [
+      "albert-king"
+    ],
+    "influencedBy": [
+      "stevie-ray-vaughan"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "fenton-robinson",
+      "james-booker",
+      "albert-king"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Larry_Davis_(blues_musician)",
+    "secondaryInstruments": [
+      "Bass",
       "Vocals"
     ]
   }
