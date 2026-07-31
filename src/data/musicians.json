@@ -40784,5 +40784,99 @@
     "secondaryInstruments": [
       "Vocals"
     ]
+  },
+  {
+    "id": "denise-lasalle",
+    "name": "Denise LaSalle",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Denise-LaSalle-2009-Monterey.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1934-07-16",
+    "birthPlace": "Leflore County, Mississippi",
+    "birthCoords": [
+      -90.3,
+      33.55
+    ],
+    "deathDate": "2018-01-08",
+    "deathPlace": "Jackson, Tennessee",
+    "deathCoords": [
+      -88.8139,
+      35.6145
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "San Francisco",
+        "coords": [
+          -122.4194,
+          37.7749
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=TRhZNqThm3U",
+    "albums": [
+      {
+        "name": "On the Loose / Trapped by a Thing Called Love (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=s7qvvJWkUXk"
+      },
+      {
+        "name": "This Real Woman (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Mjgu6q_sImc"
+      },
+      {
+        "name": "My Toot Toot - The Definitive Anthology (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ZL3Wwo6RGyw"
+      },
+      {
+        "name": "A Little Bit Naughty (2008)",
+        "youtubeLink": "https://www.youtube.com/watch?v=iU94AFdApGI"
+      },
+      {
+        "name": "At Her Best (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=7ZKjRKRdXWw"
+      },
+      {
+        "name": "Making A Good Thing Better - The Complete Westbound Singles 1970-76 (2013)",
+        "youtubeLink": "https://www.youtube.com/watch?v=E06fUSJnnlY"
+      }
+    ],
+    "description": "Denise LaSalle was a Mississippi-born singer-songwriter who became one of the leading voices of Southern soul-blues, scoring a number-one R&B hit with \"Trapped by a Thing Called Love\" in 1971. A prolific songwriter as much as a performer, she signed with Malaco Records in the early 1980s and penned hits for labelmates including Z.Z. Hill, helping define the label's deep soul-blues sound alongside artists like Bobby \"Blue\" Bland and Little Milton. Following the death of Koko Taylor in 2009, LaSalle was widely hailed as the new \"Queen of the Blues\" and was inducted into the Blues Hall of Fame in 2011.",
+    "activeFrom": "1967",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "zz-hill"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Denise_LaSalle",
+    "secondaryInstruments": []
   }
 ]
