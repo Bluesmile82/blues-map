@@ -40952,21 +40952,21 @@
     ],
     "spentTimePlaces": [
       {
-        "name": "Houston",
+        "place": "Houston",
         "coords": [
           -95.3698,
           29.7604
         ]
       },
       {
-        "name": "Texas",
+        "place": "Texas",
         "coords": [
           -99.9018,
           31.9686
         ]
       }
     ],
-    "instrument": "Guitar, Voice",
+    "instrument": "Guitar",
     "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=2gNC-wL-Icc",
     "albums": [
@@ -40994,6 +40994,8 @@
       "lightnin-hopkins"
     ],
     "source": "https://en.wikipedia.org/wiki/Peppermint_Harris",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
