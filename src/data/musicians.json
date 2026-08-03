@@ -41043,7 +41043,7 @@
       34.8
     ],
     "spentTimePlaces": [],
-    "instrument": "Guitar, Voice",
+    "instrument": "Guitar",
     "bluesStyle": "Hill Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=LeN4d6oBsTw",
     "albums": [
@@ -41068,6 +41068,8 @@
       "robert-nighthawk"
     ],
     "source": "https://en.wikipedia.org/wiki/CeDell_Davis",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
