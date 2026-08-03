@@ -2405,7 +2405,8 @@
     "activeFrom": "1936",
     "influences": [],
     "influencedBy": [
-      "gus-cannon"
+      "gus-cannon",
+      "eddie-cleanhead-vinson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -13276,7 +13277,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "jimmy-witherspoon"
+      "jimmy-witherspoon",
+      "eddie-cleanhead-vinson"
     ],
     "source": "https://en.wikipedia.org/wiki/Jay_McShann",
     "secondaryInstruments": [
@@ -14524,7 +14526,8 @@
     "activeFrom": "1929",
     "influences": [],
     "influencedBy": [
-      "wynonie-harris"
+      "wynonie-harris",
+      "eddie-cleanhead-vinson"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -16330,7 +16333,8 @@
       "big-mama-thornton",
       "wynonie-harris",
       "charles-brown",
-      "johnny-guitar-watson"
+      "johnny-guitar-watson",
+      "eddie-cleanhead-vinson"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Otis",
     "secondaryInstruments": [
@@ -27018,7 +27022,9 @@
       "carey-bell"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "eddie-cleanhead-vinson"
+    ],
     "source": "https://en.wikipedia.org/wiki/Roomful_of_Blues",
     "secondaryInstruments": [
       "Saxophone",
@@ -40930,5 +40936,89 @@
     ],
     "source": "https://en.wikipedia.org/wiki/Denise_LaSalle",
     "secondaryInstruments": []
+  },
+  {
+    "id": "eddie-cleanhead-vinson",
+    "name": "Eddie \"Cleanhead\" Vinson",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eddie%20Vinson.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1917-12-18",
+    "birthPlace": "Houston",
+    "birthCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "deathDate": "1988-07-02",
+    "deathPlace": "Los Angeles",
+    "deathCoords": [
+      -118.24368,
+      34.05223
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Saxophone",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=wrlIF8qajpM",
+    "albums": [
+      {
+        "name": "Mr. Cleanhead Steps Out (1985)",
+        "youtubeLink": "https://www.youtube.com/watch?v=vJmGdIFvVSw"
+      },
+      {
+        "name": "Battle of the Blues, Volume 4 (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=rxVXPEM39JE"
+      },
+      {
+        "name": "The Blues Collection: Eddie Vinson, Cleanhead Blues (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=J0vUqvfHQeQ"
+      },
+      {
+        "name": "Blues, Boogie & Bebop - Meat's Too High (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=eiM1B3YSmPQ"
+      },
+      {
+        "name": "Rare Blues Grooves (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Gf-IWIwNVUI"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Eddie Vinson 1945-1947 (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Tw2IMWa7aQE"
+      },
+      {
+        "name": "Eddie \"Cleanhead\" Vinson & Roomful of Blues (1982)",
+        "youtubeLink": "https://www.youtube.com/watch?v=4ucPlIw8wzg"
+      }
+    ],
+    "description": "Eddie \"Cleanhead\" Vinson (December 18, 1917 - July 2, 1988) was an American jump blues alto saxophonist and blues shouter from Houston, Texas, nicknamed for a lye-straightening mishap that left him bald. He scored R&B hits such as \"Kidney Stew Blues\" and \"Old Maid Boogie\" with his own big band in the late 1940s (a young John Coltrane briefly played in its sax section), and he blended gutbucket blues vocals with bebop-inflected horn playing throughout his career. After a comeback via the Johnny Otis Revue in the 1960s-70s, he remained a vital live and recording presence into the 1980s, including a celebrated pairing with the swing-revival band Roomful of Blues.",
+    "activeFrom": "1932",
+    "influences": [
+      "big-joe-turner",
+      "jimmy-rushing"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "johnny-otis",
+      "jay-mcshann",
+      "roomful-of-blues"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Eddie_%22Cleanhead%22_Vinson",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
