@@ -26689,12 +26689,15 @@
       "jim-jackson",
       "fruteland-jackson"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "cedell-davis"
+    ],
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson",
       "joe-willie-wilkins",
-      "tampa-red"
+      "tampa-red",
+      "cedell-davis"
     ],
     "source": "https://en.wikipedia.org/wiki/Robert_Nighthawk",
     "secondaryInstruments": [
@@ -29433,7 +29436,8 @@
       "hip-linkchain",
       "junior-wells",
       "gene-birdlegg-pittman",
-      "rick-estrin"
+      "rick-estrin",
+      "cedell-davis"
     ],
     "incomplete": false,
     "playedWith": [
@@ -41020,5 +41024,50 @@
     "secondaryInstruments": [
       "Vocals"
     ]
+  },
+  {
+    "id": "cedell-davis",
+    "name": "Cedell Davis",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1927-06-09",
+    "birthPlace": "Helena",
+    "birthCoords": [
+      -90.58611111111111,
+      34.52916666666667
+    ],
+    "deathDate": "2017-09-27",
+    "deathPlace": "Arkansas",
+    "deathCoords": [
+      -92.2,
+      34.8
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=LeN4d6oBsTw",
+    "albums": [
+      {
+        "name": "Feel Like Doin' Something Wrong (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=RvevhguQ7oA"
+      },
+      {
+        "name": "The Horror of It All (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=2wtHSebkqn4"
+      }
+    ],
+    "description": "CeDell Davis was a Delta blues guitarist and singer from Helena, Arkansas whose sound was reshaped by childhood polio, which left his fretting hand unable to form conventional chords; he adapted by dragging a butter knife across the strings, producing a dissonant, clattering slide style that critic Robert Palmer described as 'a welter of metal-stress harmonic transients.' Davis spent roughly a decade playing bass and guitar in Robert Nighthawk's band around Helena before a 1957 police raid left him paralyzed from the waist down, confining him to a wheelchair for the rest of his life. Rediscovered by Palmer in the 1990s, he recorded a series of raw, unconventional albums for Fat Possum Records that made him a cult figure of the hill country blues revival.",
+    "activeFrom": "1953",
+    "influences": [
+      "robert-nighthawk",
+      "sonny-boy-williamson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "robert-nighthawk"
+    ],
+    "source": "https://en.wikipedia.org/wiki/CeDell_Davis",
+    "secondaryInstruments": []
   }
 ]
