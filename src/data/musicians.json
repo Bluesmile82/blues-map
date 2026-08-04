@@ -285,7 +285,8 @@
       "rory-gallagher",
       "champion-jack-dupree",
       "mike-bloomfield",
-      "john-mayall"
+      "john-mayall",
+      "chris-cain"
     ],
     "source": "https://en.wikipedia.org/wiki/Albert_Collins",
     "secondaryInstruments": [
@@ -351,7 +352,8 @@
     "influencedBy": [
       "stevie-ray-vaughan",
       "sean-costello",
-      "larry-davis"
+      "larry-davis",
+      "chris-cain"
     ],
     "incomplete": false,
     "playedWith": [
@@ -364,7 +366,8 @@
       "jimmy-reed",
       "mike-bloomfield",
       "john-mayall",
-      "larry-davis"
+      "larry-davis",
+      "chris-cain"
     ],
     "source": "https://en.wikipedia.org/wiki/Albert_King",
     "secondaryInstruments": [
@@ -1904,7 +1907,8 @@
       "buddy-guy",
       "stevie-ray-vaughan",
       "bobby-blue-bland",
-      "sean-costello"
+      "sean-costello",
+      "chris-cain"
     ],
     "incomplete": false,
     "playedWith": [
@@ -4664,7 +4668,8 @@
       "memphis-slim",
       "stevie-ray-vaughan",
       "bb-king",
-      "alexis-korner"
+      "alexis-korner",
+      "chris-cain"
     ],
     "source": "https://en.wikipedia.org/wiki/Phil_Guy",
     "secondaryInstruments": [
@@ -5806,7 +5811,8 @@
       "bb-king",
       "james-cotton",
       "big-joe-duskin",
-      "dave-peabody"
+      "dave-peabody",
+      "chris-cain"
     ],
     "source": "https://en.wikipedia.org/wiki/Charlie_Musselwhite",
     "secondaryInstruments": [
@@ -6042,7 +6048,8 @@
       "buddy-guy",
       "tedeschi-trucks-band",
       "artur-menezes",
-      "grace-bowers"
+      "grace-bowers",
+      "chris-cain"
     ],
     "source": "13 Modern Blues Guitarists to keep on your radar in 2025; The Visual Pulse of the Blues",
     "secondaryInstruments": [
@@ -9119,7 +9126,8 @@
       "john-mayall",
       "paul-butterfield",
       "john-lee-hooker",
-      "bb-king"
+      "bb-king",
+      "chris-cain"
     ],
     "source": "https://en.wikipedia.org/wiki/Elvin_Bishop",
     "secondaryInstruments": [
@@ -14605,7 +14613,8 @@
     "incomplete": false,
     "playedWith": [
       "jay-mcshann",
-      "t-bone-walker"
+      "t-bone-walker",
+      "chris-cain"
     ],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Witherspoon",
     "secondaryInstruments": []
@@ -14813,13 +14822,15 @@
     "influences": [
       "bb-king",
       "muddy-waters",
-      "howlin-wolf"
+      "howlin-wolf",
+      "chris-cain"
     ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "bb-king",
-      "john-mayall"
+      "john-mayall",
+      "chris-cain"
     ],
     "source": "13 Most Legendary And Famous Blues Artists of All Time",
     "secondaryInstruments": [
@@ -15949,7 +15960,8 @@
     "playedWith": [
       "albert-collins",
       "robert-cray",
-      "stevie-ray-vaughan"
+      "stevie-ray-vaughan",
+      "chris-cain"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Copeland",
     "secondaryInstruments": [
@@ -16813,7 +16825,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "chris-cain"
+    ],
     "source": null,
     "secondaryInstruments": []
   },
@@ -41077,7 +41091,8 @@
     "playedWith": [
       "johnny-otis",
       "jay-mcshann",
-      "roomful-of-blues"
+      "roomful-of-blues",
+      "chris-cain"
     ],
     "source": "https://en.wikipedia.org/wiki/Eddie_%22Cleanhead%22_Vinson",
     "secondaryInstruments": [
@@ -41129,6 +41144,80 @@
     "source": "https://en.wikipedia.org/wiki/CeDell_Davis",
     "secondaryInstruments": [
       "Vocals"
+    ]
+  },
+  {
+    "id": "chris-cain",
+    "name": "Chris Cain",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1955-11-19",
+    "birthPlace": "San Jose, California",
+    "birthCoords": [
+      -121.8863,
+      37.3382
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Ez0DEQSdqVQ",
+    "albums": [
+      {
+        "name": "Late Night City Blues (1987)",
+        "youtubeLink": "https://www.youtube.com/watch?v=znvZySEMorY"
+      },
+      {
+        "name": "Cuttin' Loose (1990)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Can't Buy a Break (1992)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Somewhere Along the Way (1995)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Raisin' Cain (2021)",
+        "youtubeLink": "https://www.youtube.com/watch?v=VvQDzDvppGo"
+      },
+      {
+        "name": "Good Intentions Gone Bad (2024)",
+        "youtubeLink": "https://www.youtube.com/watch?v=M0dj3HXqu-U"
+      }
+    ],
+    "description": "Chris Cain is a San Jose, California guitarist, singer, and songwriter whose fluid, jazz-inflected soloing and smoky baritone voice made him one of the leading West Coast blues stylists to emerge in the late 1980s. His 1987 debut album 'Late Night City Blues' earned four Blues Music Award nominations, including Guitarist of the Year, launching a recording career that spanned Blind Pig, Blue Rock-It, and Alligator Records. Mentored in his youth by B.B. King and Albert King, whose influence shaped his singing and playing, Cain in turn became a touchstone for younger guitarists such as Joe Bonamassa, who has called him one of his favorite players.",
+    "activeFrom": "1987",
+    "influences": [
+      "bb-king",
+      "albert-king"
+    ],
+    "influencedBy": [
+      "joe-bonamassa"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "albert-king",
+      "albert-collins",
+      "buddy-guy",
+      "eddie-cleanhead-vinson",
+      "johnny-copeland",
+      "jimmy-witherspoon",
+      "joe-bonamassa",
+      "charlie-musselwhite",
+      "elvin-bishop",
+      "christone-kingfish-ingram",
+      "josh-smith"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Chris_Cain",
+    "secondaryInstruments": [
+      "Vocals",
+      "Piano",
+      "Saxophone"
     ]
   }
 ]
