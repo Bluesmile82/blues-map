@@ -41257,7 +41257,7 @@
         ]
       }
     ],
-    "instrument": "Guitar, Voice",
+    "instrument": "Guitar",
     "bluesStyle": "Memphis Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=awAZSGGxRJw",
     "albums": [
@@ -41285,6 +41285,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Michael_Burks",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
