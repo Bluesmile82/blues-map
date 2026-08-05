@@ -353,7 +353,8 @@
       "stevie-ray-vaughan",
       "sean-costello",
       "larry-davis",
-      "chris-cain"
+      "chris-cain",
+      "michael-burks"
     ],
     "incomplete": false,
     "playedWith": [
@@ -10357,7 +10358,8 @@
       "magic-sam"
     ],
     "influencedBy": [
-      "sean-costello"
+      "sean-costello",
+      "michael-burks"
     ],
     "incomplete": false,
     "playedWith": [
@@ -13993,7 +13995,9 @@
     "influences": [
       "johnny-guitar-watson"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "michael-burks"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Jimi_Hendrix",
@@ -41219,5 +41223,68 @@
       "Piano",
       "Saxophone"
     ]
+  },
+  {
+    "id": "michael-burks",
+    "name": "Michael Burks",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Burks%20in%20Iceland.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Burks%20in%20Iceland.jpg?width=500",
+    "birthDate": "1957-07-30",
+    "birthPlace": "Milwaukee",
+    "birthCoords": [
+      -87.95,
+      43.05
+    ],
+    "deathDate": "2012-05-06",
+    "deathPlace": "Atlanta",
+    "deathCoords": [
+      -84.38972222222222,
+      33.754444444444445
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Camden, Arkansas",
+        "coords": [
+          -92.8343,
+          33.5851
+        ]
+      }
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=awAZSGGxRJw",
+    "albums": [
+      {
+        "name": "I Smell Smoke",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Iron Man",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Show of Strength",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Michael Burks (1957-2012) was an American electric blues guitarist and singer raised in Camden, Arkansas, where his father's friendship with Albert King gave the young Burks direct exposure to King's stinging, string-bending guitar style. Burks fused that Albert King foundation with the fire of Jimi Hendrix and Freddie King to create a hard-edged, rock-tinged blues sound, releasing acclaimed albums like \"I Smell Smoke\" (2003) and \"Iron Man\" (2008) on Alligator Records. Widely regarded as one of the most powerful blues-rock guitarists of his generation, he earned multiple Blues Music Award nominations before his sudden death in 2012.",
+    "activeFrom": "1999",
+    "influences": [
+      "albert-king",
+      "freddie-king",
+      "jimi-hendrix"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Michael_Burks",
+    "secondaryInstruments": []
   }
 ]
