@@ -41246,28 +41246,28 @@
     ],
     "spentTimePlaces": [
       {
-        "name": "Mississippi",
+        "place": "Mississippi",
         "coords": [
           -89.3985,
           32.3547
         ]
       },
       {
-        "name": "Memphis",
+        "place": "Memphis",
         "coords": [
           -90.049,
           35.1495
         ]
       },
       {
-        "name": "Chicago",
+        "place": "Chicago",
         "coords": [
           -87.6298,
           41.8781
         ]
       }
     ],
-    "instrument": "Voice",
+    "instrument": "Vocals",
     "bluesStyle": "Soul Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=WF5_83BuU4o",
     "albums": [
