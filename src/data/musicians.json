@@ -16397,10 +16397,14 @@
     "albums": [],
     "description": "Johnny Rawls (born September 10, 1951) is an American soul blues singer, guitarist, arranger, songwriter, and record producer.  He was influenced by the deep soul and gospel music of the 1960s, as performed by O.  V.",
     "activeFrom": "1971",
-    "influences": [],
+    "influences": [
+      "otis-clay"
+    ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "otis-clay"
+    ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Rawls",
     "secondaryInstruments": [
       "Vocals"
@@ -27781,7 +27785,9 @@
     "description": "Sam Cooke was the \"King of Soul\" who pioneered the genre, inspiring Otis Redding, Aretha Franklin, and Al Green. His hits include \"You Send Me\" and \"A Change Is Gonna Come.\"",
     "activeFrom": "1951",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "otis-clay"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sam_Cooke",
@@ -33288,7 +33294,8 @@
     ],
     "influencedBy": [
       "aretha-franklin",
-      "mavis-staples"
+      "mavis-staples",
+      "otis-clay"
     ],
     "incomplete": false,
     "playedWith": [
@@ -41219,5 +41226,90 @@
       "Piano",
       "Saxophone"
     ]
+  },
+  {
+    "id": "otis-clay",
+    "name": "Otis Clay",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/OtisClay%20LBBF1997%202.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1942-02-11",
+    "birthPlace": "Waxhaw, Mississippi",
+    "birthCoords": [
+      -90.9692,
+      33.9175
+    ],
+    "deathDate": "2016-01-08",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "name": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "name": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "name": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Voice",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=WF5_83BuU4o",
+    "albums": [
+      {
+        "name": "Trying to Live My Life Without You (1972)",
+        "youtubeLink": "https://www.youtube.com/watch?v=feHdkQC-SCM"
+      },
+      {
+        "name": "I Can't Take It (1977)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Sci5Tq4o_r4"
+      },
+      {
+        "name": "The Only Way Is Up (1982)",
+        "youtubeLink": "https://www.youtube.com/watch?v=v-u5ebM71u4"
+      },
+      {
+        "name": "Watch Me Now (1989)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Got to Find a Way (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=w_ENENFUs8M"
+      },
+      {
+        "name": "When the Gates Swing Open (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Chu7iLw0IkM"
+      }
+    ],
+    "description": "Otis Clay (1942–2016) was a Mississippi-born, Chicago-based soul and blues singer whose gospel-rooted, deep-soul voice made him one of the great soul blues stylists of the postwar era. Backed by Willie Mitchell and the Hi Rhythm Section, he cut the deep-soul classics \"Trying to Live My Life Without You\" and \"I Can't Take It\" for Hi Records in the 1970s, songs that became blues and soul standards later covered by Bob Seger and Ann Peebles among others. He remained a fixture on the blues and soul circuit for decades, recording for Blind Pig and Alligator-affiliated labels, was inducted into the Blues Hall of Fame in 2013, and continued performing gospel and blues shows in Chicago until his death.",
+    "activeFrom": "1957",
+    "influences": [
+      "sam-cooke",
+      "mahalia-jackson"
+    ],
+    "influencedBy": [
+      "johnny-rawls"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "johnny-rawls"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Otis_Clay",
+    "secondaryInstruments": []
   }
 ]
