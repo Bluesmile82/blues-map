@@ -4597,8 +4597,8 @@
   {
     "id": "buddy-guy",
     "name": "Buddy Guy",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Phil_Guy.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/0/01/Phil_Guy.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Buddy_Guy_2008_%283x4_cropped%29.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Buddy_Guy_2008_%283x4_cropped%29.jpg",
     "birthDate": "1936-07-30",
     "birthPlace": "Lettsworth, Louisiana",
     "birthCoords": [
@@ -4673,7 +4673,7 @@
       "chris-cain",
       "jack-owens"
     ],
-    "source": "https://en.wikipedia.org/wiki/Phil_Guy",
+    "source": "https://en.wikipedia.org/wiki/Buddy_Guy",
     "secondaryInstruments": [
       "Vocals"
     ]
