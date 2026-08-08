@@ -4597,8 +4597,8 @@
   {
     "id": "buddy-guy",
     "name": "Buddy Guy",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Phil_Guy.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/0/01/Phil_Guy.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Buddy_Guy_2008_%283x4_cropped%29.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Buddy_Guy_2008_%283x4_cropped%29.jpg",
     "birthDate": "1936-07-30",
     "birthPlace": "Lettsworth, Louisiana",
     "birthCoords": [
@@ -4670,9 +4670,10 @@
       "stevie-ray-vaughan",
       "bb-king",
       "alexis-korner",
-      "chris-cain"
+      "chris-cain",
+      "jack-owens"
     ],
-    "source": "https://en.wikipedia.org/wiki/Phil_Guy",
+    "source": "https://en.wikipedia.org/wiki/Buddy_Guy",
     "secondaryInstruments": [
       "Vocals"
     ]
@@ -12453,7 +12454,8 @@
     "incomplete": false,
     "playedWith": [
       "howlin-wolf",
-      "muddy-waters"
+      "muddy-waters",
+      "jack-owens"
     ],
     "source": "https://en.wikipedia.org/wiki/Hubert_Sumlin",
     "secondaryInstruments": [
@@ -13723,7 +13725,8 @@
       "buddy-guy",
       "b.b.-king",
       "eric-clapton",
-      "albert-collins"
+      "albert-collins",
+      "jack-owens"
     ],
     "source": "https://en.wikipedia.org/wiki/Jeff_Healey",
     "secondaryInstruments": [
@@ -26393,7 +26396,8 @@
       "buddy-guy",
       "jimmie-vaughan",
       "stevie-ray-vaughan",
-      "bonnie-raitt"
+      "bonnie-raitt",
+      "jack-owens"
     ],
     "source": "https://en.wikipedia.org/wiki/Robert_Cray",
     "secondaryInstruments": [
@@ -28888,7 +28892,8 @@
       "robert-johnson",
       "j-b-hutto",
       "etta-james",
-      "hip-linkchain"
+      "hip-linkchain",
+      "jack-owens"
     ],
     "incomplete": false,
     "playedWith": [
@@ -41370,6 +41375,63 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Michael_Burks",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "jack-owens",
+    "name": "Jack Owens",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Jack_Owens.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Jack_Owens.jpg",
+    "birthDate": "1904-11-17",
+    "birthPlace": "Bentonia, Mississippi",
+    "birthCoords": [
+      -90.3681,
+      32.6439
+    ],
+    "deathDate": "1997-02-09",
+    "deathPlace": "Yazoo City, Mississippi",
+    "deathCoords": [
+      -90.4136,
+      32.8472
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.7416
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=2qBKWWLHP7w",
+    "albums": [
+      {
+        "name": "It Must Have Been the Devil (1971)",
+        "youtubeLink": "https://www.youtube.com/watch?v=VzluUC5Smqw"
+      },
+      {
+        "name": "Bentonia Country Blues (1979)",
+        "youtubeLink": "https://www.youtube.com/watch?v=CVKRHn2jINw"
+      }
+    ],
+    "description": "Jack Owens was a Bentonia, Mississippi bluesman who spent most of his life farming, selling bootleg liquor, and running a weekend juke joint rather than pursuing a professional recording career. Alongside his neighbor Skip James, he was a leading exponent of the eerie, minor-key 'Bentonia School' of Delta blues, though he sang in his natural voice rather than James's falsetto and used his own guitar tunings. Not recorded until he was rediscovered by musicologist David Evans in 1966, Owens went on to record for Testament and Albatross Records, tour blues festivals in the US and Europe with harmonica player Bud Spires, and receive a 1993 National Heritage Fellowship.",
+    "activeFrom": "1966",
+    "influences": [
+      "skip-james"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "buddy-guy",
+      "hubert-sumlin",
+      "jeff-healey",
+      "robert-cray"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Jack_Owens_(blues_singer)",
     "secondaryInstruments": [
       "Vocals"
     ]
