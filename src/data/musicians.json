@@ -2947,7 +2947,8 @@
       "otis-rush",
       "earl-hooker",
       "howlin-wolf",
-      "muddy-waters"
+      "muddy-waters",
+      "jody-williams"
     ],
     "source": "https://en.wikipedia.org/wiki/Billy_Boy_Arnold",
     "secondaryInstruments": [
@@ -3703,12 +3704,14 @@
     ],
     "influencedBy": [
       "buddy-guy",
-      "eric-clapton"
+      "eric-clapton",
+      "jody-williams"
     ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
-      "buddy-guy"
+      "buddy-guy",
+      "jody-williams"
     ],
     "source": null,
     "secondaryInstruments": [
@@ -12375,6 +12378,7 @@
       "junior-parker",
       "ike-turner",
       "son-house",
+      "jody-williams",
       "charley-patton",
       "johnny-shines",
       "floyd-jones",
@@ -14467,7 +14471,8 @@
       "robert-lockwood-jr",
       "snooky-pryor",
       "howlin-wolf",
-      "lowell-fulson"
+      "lowell-fulson",
+      "jody-williams"
     ],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Rogers",
     "secondaryInstruments": [
@@ -24122,7 +24127,8 @@
     "activeFrom": "1956",
     "influences": [
       "muddy-waters",
-      "ethel-waters"
+      "ethel-waters",
+      "jody-williams"
     ],
     "influencedBy": [
       "sean-costello"
@@ -24132,7 +24138,8 @@
       "magic-sam",
       "muddy-waters",
       "buddy-guy",
-      "albert-king"
+      "albert-king",
+      "jody-williams"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Rush",
     "secondaryInstruments": [
@@ -24235,7 +24242,8 @@
       "bb-king",
       "howlin-wolf",
       "big-walter-horton",
-      "robert-lockwood-jr"
+      "robert-lockwood-jr",
+      "jody-williams"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Spann",
     "secondaryInstruments": []
@@ -28323,7 +28331,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "jody-williams"
+    ],
     "source": "https://en.wikipedia.org/wiki/Sean_Costello",
     "secondaryInstruments": [
       "Vocals"
@@ -29476,7 +29486,8 @@
       "robert-lockwood-jr",
       "robert-johnson",
       "howlin-wolf",
-      "big-joe-williams"
+      "big-joe-williams",
+      "jody-williams"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
     "secondaryInstruments": [
@@ -30997,7 +31008,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "jody-williams"
+    ],
     "source": "https://en.wikipedia.org/wiki/Tinsley_Ellis",
     "secondaryInstruments": []
   },
@@ -41432,6 +41445,74 @@
       "robert-cray"
     ],
     "source": "https://en.wikipedia.org/wiki/Jack_Owens_(blues_singer)",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "jody-williams",
+    "name": "Jody Williams",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1935-02-03",
+    "birthPlace": "Mobile, Alabama",
+    "birthCoords": [
+      -88.0399,
+      30.6944
+    ],
+    "deathDate": "2018-12-01",
+    "deathPlace": "Munster, Indiana",
+    "deathCoords": [
+      -87.5089,
+      41.5484
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=0Ne8UIGZ55g",
+    "albums": [
+      {
+        "name": "Return of a Legend (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=fHw_vSb_kOc"
+      },
+      {
+        "name": "You Left Me in the Dark (2004)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "In Session: Diary of a Chicago Bluesman 1954-1962 (2018)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Jody Williams was a Chicago blues guitarist whose distinctive string-bending and inventive chord voicings made him one of the most in-demand session players of the 1950s, even though his name rarely appeared on the records he shaped. Taught guitar by his childhood friend Bo Diddley, Williams played sessions and toured behind Howlin' Wolf, Billy Boy Arnold, and others, and his blistering solo on Bo Diddley's \"Who Do You Love?\" is regarded as one of the great early rock and roll guitar performances; his riffs also directly influenced fellow Chicago guitarist Otis Rush. After decades away from music, Williams staged a celebrated comeback beginning in 2000, recording with Sean Costello and Tinsley Ellis, and was inducted into the Blues Hall of Fame in 2013.",
+    "activeFrom": "1954",
+    "influences": [
+      "bo-diddley"
+    ],
+    "influencedBy": [
+      "otis-rush"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "howlin-wolf",
+      "billy-boy-arnold",
+      "otis-rush",
+      "otis-spann",
+      "jimmy-rogers",
+      "sonny-boy-williamson",
+      "bo-diddley",
+      "sean-costello",
+      "tinsley-ellis"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Jody_Williams_(blues_musician)",
     "secondaryInstruments": [
       "Vocals"
     ]
