@@ -581,7 +581,8 @@
       "brownie-mcghee",
       "sonny-terry",
       "woody-guthrie",
-      "lead-belly"
+      "lead-belly",
+      "larry-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Alec_Seward",
     "secondaryInstruments": [
@@ -2495,7 +2496,8 @@
       "sonny-boy-williamson-i",
       "lonnie-johnson",
       "roosevelt-sykes",
-      "memphis-slim"
+      "memphis-slim",
+      "larry-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Joe_Williams",
     "secondaryInstruments": [
@@ -3259,7 +3261,8 @@
     ],
     "influencedBy": [
       "carolina-slim",
-      "archie-edwards"
+      "archie-edwards",
+      "larry-johnson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -4589,7 +4592,8 @@
       "lightnin-hopkins",
       "big-joe-williams",
       "champion-jack-dupree",
-      "big-bill-broonzy"
+      "big-bill-broonzy",
+      "larry-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Brownie_McGhee",
     "secondaryInstruments": [
@@ -25990,10 +25994,13 @@
     ],
     "influencedBy": [
       "roy-book-binder",
-      "jimmy-mccracklin"
+      "jimmy-mccracklin",
+      "larry-johnson"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "larry-johnson"
+    ],
     "source": "https://en.wikipedia.org/wiki/Reverend_Gary_Davis",
     "secondaryInstruments": [
       "Harmonica"
@@ -41513,6 +41520,52 @@
       "tinsley-ellis"
     ],
     "source": "https://en.wikipedia.org/wiki/Jody_Williams_(blues_musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "larry-johnson",
+    "name": "Larry Johnson",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Larry_Johnson_%28cropped%29.jpg/500px-Larry_Johnson_%28cropped%29.jpg",
+    "image_source": null,
+    "birthDate": "1938-05-15",
+    "birthPlace": "Wrightsville, Georgia",
+    "birthCoords": [
+      -82.7203,
+      32.725
+    ],
+    "deathDate": "2016-08-06",
+    "deathPlace": "Harlem, New York City",
+    "deathCoords": [
+      -73.948372222222,
+      40.809033333333
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=KFXGwqHaV-U",
+    "albums": [
+      {
+        "name": "Fast and Funky (1971)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Ayanz1nMiBM"
+      }
+    ],
+    "description": "Larry Johnson was a Piedmont blues guitarist and singer from Wrightsville, Georgia, whose fingerpicking style was shaped directly by Blind Boy Fuller's records and, after he settled in New York, by years of mentorship and live performances alongside Reverend Gary Davis. A fixture of the 1960s New York folk-blues revival, he recorded steadily from his 1962 debut single through acclaimed acoustic albums like Fast and Funky (1971), helping carry the Piedmont blues tradition into the postwar era.",
+    "activeFrom": "1962",
+    "influences": [
+      "blind-boy-fuller",
+      "reverend-gary-davis"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "reverend-gary-davis",
+      "alec-seward",
+      "big-joe-williams",
+      "brownie-mcghee"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Larry_Johnson_(musician)",
     "secondaryInstruments": [
       "Vocals"
     ]
