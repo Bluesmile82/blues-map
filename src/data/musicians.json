@@ -16135,7 +16135,8 @@
     "playedWith": [
       "jimmy-mccracklin",
       "big-mama-thornton",
-      "johnny-fuller"
+      "johnny-fuller",
+      "big-jay-mcneely"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Heartsman",
     "secondaryInstruments": [
@@ -16362,7 +16363,8 @@
       "wynonie-harris",
       "charles-brown",
       "johnny-guitar-watson",
-      "eddie-cleanhead-vinson"
+      "eddie-cleanhead-vinson",
+      "big-jay-mcneely"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Otis",
     "secondaryInstruments": [
@@ -41569,5 +41571,64 @@
     "secondaryInstruments": [
       "Vocals"
     ]
+  },
+  {
+    "id": "big-jay-mcneely",
+    "name": "Big Jay McNeely",
+    "image": "",
+    "image_source": "",
+    "birthDate": "1927-04-29",
+    "birthPlace": "Los Angeles, California",
+    "birthCoords": [
+      -118.2437,
+      34.0522
+    ],
+    "deathDate": "2018-09-16",
+    "deathPlace": "Moreno Valley, California",
+    "deathCoords": [
+      -117.2298,
+      33.9425
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Saxophone",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=1ZSsuUTXRxU",
+    "albums": [
+      {
+        "name": "The Deacon's Hop (1949)",
+        "youtubeLink": "https://www.youtube.com/watch?v=dnVl-D5v7Ys"
+      },
+      {
+        "name": "Big Jay McNeely in 3-D (1956)",
+        "youtubeLink": "https://www.youtube.com/watch?v=NSTicwMec7g"
+      },
+      {
+        "name": "There's Something on Your Mind (1959)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Live at Cisco's (1963)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Big Jay McNeely (born Cecil James McNeely) was a Los Angeles tenor saxophonist and one of the definitive practitioners of the honking, screaming R&B sax style, working audiences into a frenzy with wild stage antics while blasting distorted, repetitive riffs. His instrumental \"The Deacon's Hop\" topped the Billboard R&B chart in 1949, and along with Louis Jordan he is remembered as one of the \"forgotten fathers of rock 'n' roll,\" since the honking-sax approach he pioneered fed directly into the sound of early rock and roll. After a decade away from music working as a postman, he returned to a long international touring career from the 1980s onward, remaining a fixture of the European blues and boogie-woogie festival circuit until his death in 2018.",
+    "activeFrom": "1948",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "johnny-otis",
+      "johnny-heartsman"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Big_Jay_McNeely",
+    "secondaryInstruments": []
   }
 ]
