@@ -41650,7 +41650,7 @@
     "deathPlace": null,
     "deathCoords": null,
     "spentTimePlaces": [],
-    "instrument": "Guitar, Voice",
+    "instrument": "Guitar",
     "bluesStyle": "West Coast Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=OEr3TBi89H0",
     "albums": [
@@ -41676,6 +41676,8 @@
       "john-mayall"
     ],
     "source": "https://en.wikipedia.org/wiki/Coco_Montoya",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
