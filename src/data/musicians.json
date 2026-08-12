@@ -273,7 +273,8 @@
     ],
     "influencedBy": [
       "stevie-ray-vaughan",
-      "sean-costello"
+      "sean-costello",
+      "coco-montoya"
     ],
     "incomplete": false,
     "playedWith": [
@@ -286,7 +287,8 @@
       "champion-jack-dupree",
       "mike-bloomfield",
       "john-mayall",
-      "chris-cain"
+      "chris-cain",
+      "coco-montoya"
     ],
     "source": "https://en.wikipedia.org/wiki/Albert_Collins",
     "secondaryInstruments": [
@@ -15515,7 +15517,8 @@
       "eric-clapton",
       "john-lee-hooker",
       "otis-rush",
-      "peter-green"
+      "peter-green",
+      "coco-montoya"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Mayall",
     "secondaryInstruments": [
@@ -24137,7 +24140,8 @@
       "jody-williams"
     ],
     "influencedBy": [
-      "sean-costello"
+      "sean-costello",
+      "coco-montoya"
     ],
     "incomplete": false,
     "playedWith": [
@@ -41630,5 +41634,50 @@
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Jay_McNeely",
     "secondaryInstruments": []
+  },
+  {
+    "id": "coco-montoya",
+    "name": "Coco Montoya",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Coco%20Montoya%207Dec2007.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1951-10-02",
+    "birthPlace": "Santa Monica",
+    "birthCoords": [
+      -118.48138888889,
+      34.021944444444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=OEr3TBi89H0",
+    "albums": [
+      {
+        "name": "The Essential Coco Montoya (2009)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uCXkmUtsW6o"
+      },
+      {
+        "name": "The Best of Coco Montoya - The Alligator Records Years (2015)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Xomp2RtmRKw"
+      }
+    ],
+    "description": "Henry \"Coco\" Montoya is an American blues guitarist and singer who was discovered by Albert Collins in the mid-1970s, initially as his drummer, before Collins urged him onto guitar and shaped his searing, string-bending style. From 1984 to 1993 he was a featured guitarist in John Mayall's Bluesbreakers, and he went on to a long solo career on Alligator Records, becoming known for fusing Collins' Texas-style attack with the soulful phrasing of Otis Rush.",
+    "activeFrom": "1977",
+    "influences": [
+      "albert-collins",
+      "otis-rush"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "albert-collins",
+      "john-mayall"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Coco_Montoya",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
