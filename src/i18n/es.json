@@ -24,7 +24,9 @@
     "editMode": "Modo edición",
     "menu": "Menú",
     "lightDarkMode": "Modo claro/oscuro",
-    "card": "Tarjeta"
+    "card": "Tarjeta",
+    "playlist": "Playlist",
+    "playlistWizard": "Asistente de playlist"
   },
   "card": {
     "flipToMap": "Clic para ver lugares",
@@ -334,5 +336,41 @@
     "Vocals": "Voz",
     "Voice": "Voz",
     "Washboard": "Tabla de lavar"
+  },
+  "playlist": {
+    "title": "Asistente de playlist",
+    "close": "Cerrar playlist",
+    "anyStyle": "Cualquier estilo",
+    "relatedTo": "Relacionados con",
+    "direction": "Orden cronológico",
+    "forward": "Hacia delante",
+    "backward": "Hacia atrás",
+    "length": "Longitud de la playlist",
+    "empty": "Ningún músico coincide con estos filtros.",
+    "count": "{{count}} canciones",
+    "openInYoutube": "YouTube",
+    "play": "Reproducir",
+    "remove": "Quitar a {{name}}",
+    "skip": "Siguiente canción",
+    "anyMusician": "Cualquier músico — busca para elegir",
+    "clearRelatedTo": "Quitar",
+    "shuffle": "Mezclar — sortear otro conjunto",
+    "share": "Compartir",
+    "linkCopied": "Enlace copiado",
+    "shareFailed": "No se pudo copiar el enlace",
+    "save": "Guardar",
+    "saveToYoutube": "Guardar como playlist de YouTube",
+    "saveToLists": "Guardar en mis listas",
+    "saveNeedsSignIn": "Inicia sesión para guardar",
+    "savedToList": "Guardada como «{{name}}»",
+    "saveFailed": "No se pudo guardar la lista",
+    "showQueue": "Ver playlist completa",
+    "hideQueue": "Ocultar playlist",
+    "yearFrom": "Año inicial de actividad",
+    "yearTo": "Año final de actividad",
+    "activePlaylist": "Playlist activa",
+    "edit": "Editar",
+    "editActive": "Editar esta playlist en el asistente",
+    "editingActive": "Editando la playlist activa"
   }
 }

@@ -2,14 +2,7 @@ import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from 're
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import type { Musician } from '../types';
-
-
-
-function extractVideoId(url: string | null | undefined): string | null {
-  if (!url) return null;
-  const match = url.match(/[?&]v=([^&#]+)/) || url.match(/youtu\.be\/([^?&#]+)/);
-  return match ? match[1] : null;
-}
+import { extractVideoId } from '../utils/youtube';
 
 interface VideoEntry {
   label: string;

@@ -13,6 +13,9 @@ importers:
 
   .:
     dependencies:
+      '@deck.gl/aggregation-layers':
+        specifier: ^9.2.11
+        version: 9.2.11(@deck.gl/core@9.2.11)(@deck.gl/layers@9.2.11(@deck.gl/core@9.2.11)(@loaders.gl/core@4.3.4)(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756)))))(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/engine@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))(@luma.gl/shadertools@9.2.6(@luma.gl/core@9.2.6(patch_hash=2f98dd6ad1c41c63b9aacfa1748ef1b3e51f59a09de11a0f6ed2b0b93bdb2756))))
       '@deck.gl/core':
         specifier: ^9.2.11
         version: 9.2.11
@@ -2273,6 +2276,7 @@ packages:
 
   crypto-js@4.2.0:
     resolution: {integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==}
+    deprecated: Active development of CryptoJS has been discontinued. This library is no longer maintained.
 
   css.escape@1.5.1:
     resolution: {integrity: sha512-YUifsXXuknHlUsmlgyY0PKzgPOr7/FjCePfHNt0jxm83wHZi44VDMQ7/fGNkjY3/jV1MC+1CmZbaHzugyeRtpg==}

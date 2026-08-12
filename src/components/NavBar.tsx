@@ -11,6 +11,7 @@ interface NavBarProps {
   onCreateNew: () => void;
   editModeEnabled: boolean;
   onRandom: () => void;
+  onPlaylist: () => void;
   onCredits: () => void;
   autoplay: boolean;
   onAutoplayChange: (autoplay: boolean) => void;
@@ -18,7 +19,7 @@ interface NavBarProps {
   onThemeChange: (theme: 'light' | 'dark') => void;
 }
 
-export default function NavBar({ view, onViewChange, editMode, onEditModeChange, onCreateNew, editModeEnabled, onRandom, onCredits, autoplay, onAutoplayChange, theme, onThemeChange }: NavBarProps) {
+export default function NavBar({ view, onViewChange, editMode, onEditModeChange, onCreateNew, editModeEnabled, onRandom, onPlaylist, onCredits, autoplay, onAutoplayChange, theme, onThemeChange }: NavBarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { t, i18n } = useTranslation();
 
@@ -92,6 +93,10 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
           <span className="text-ui text-accent shrink-0">⚄</span>
           <span className="hidden sm:inline opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto group-hover:ml-2 transition-all duration-500 whitespace-nowrap">{t('nav.random')}</span>
         </button>
+        <button onClick={onPlaylist} className="flex items-center gap-2 px-3 pt-1 pb-1.5 rounded-lg text-ui font-medium tracking-wide border transition-all duration-500 overflow-hidden w-10 hover:w-auto bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink group" title={t('nav.playlistWizard')}>
+          <span className="text-ui text-accent shrink-0">♫</span>
+          <span className="hidden sm:inline opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto group-hover:ml-2 transition-all duration-500 whitespace-nowrap">{t('nav.playlist')}</span>
+        </button>
         <button onClick={onCredits} className="flex items-center gap-2 px-3 pt-1 pb-1.5 text-ui font-medium tracking-wide text-ink3 hover:text-ink group" title={t('nav.creditsLegal')}>
           {t('nav.credits')}
         </button>
@@ -163,6 +168,13 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
               >
                 <span className="text-lg text-accent">⚄</span>
                 <span className="text-sm">{t('nav.randomMusician')}</span>
+              </button>
+              <button
+                onClick={() => { onPlaylist(); setMobileMenuOpen(false) }}
+                className="flex items-center gap-3 px-3 pt-1 pb-1.5.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
+              >
+                <span className="text-lg text-accent">♫</span>
+                <span className="text-sm">{t('nav.playlistWizard')}</span>
               </button>
               <button
                 onClick={() => { onThemeChange(theme === 'light' ? 'dark' : 'light'); setMobileMenuOpen(false) }}

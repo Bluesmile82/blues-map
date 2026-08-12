@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import NavBar from './components/NavBar';
 import InfluenceView from './components/InfluenceView';
 import MapView from './components/MapView';
@@ -9,6 +9,8 @@ import FloatingVideoPlayer from './components/FloatingVideoPlayer';
 import CreditsPage from './components/CreditsPage';
 import AnalyticsDashboard from './components/AnalyticsDashboard';
 import PublicListView from './components/lists/PublicListView';
+import PlaylistWizard, { PlaylistBar } from './components/PlaylistWizard';
+import { parseSharedPlaylist } from './utils/playlist';
 import { useAnalytics, trackMusicianView, trackSongPlay } from './hooks/useAnalytics';
 import type { Musician } from './types';
 import musiciansData from './data/musicians.json';
@@ -92,6 +94,18 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
   const [filteredMusicians, setFilteredMusicians] = useState<Musician[]>(musiciansData as unknown as Musician[]);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
   const { setCurrentMusician } = useAnalytics();
+
+  // Playlist wizard
+  const [showWizard, setShowWizard] = useState(false);
+  /** Non-null when the wizard was opened to edit an existing queue rather than draw a new one */
+  const [wizardQueue, setWizardQueue] = useState<Musician[] | null>(null);
+  const [playlist, setPlaylist] = useState<Musician[]>([]);
+  const [playlistIndex, setPlaylistIndex] = useState(0);
+  // Refs so the YouTube "ended" callback always sees the live queue/position
+  const playlistRef = useRef<Musician[]>([]);
+  const playlistIndexRef = useRef(0);
+  playlistRef.current = playlist;
+  playlistIndexRef.current = playlistIndex;
 
   const handleViewChange = useCallback((newView: ViewType) => {
     setView(newView);
@@ -183,6 +197,50 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
     handleSelect(pick);
   }, [filteredMusicians, musicians, handleSelect]);
 
+  /** Move the playlist to `idx` — selects the musician, which zooms the view and starts its song. */
+  const playPlaylistAt = useCallback((idx: number) => {
+    const queue = playlistRef.current;
+    if (idx < 0 || idx >= queue.length) {
+      setPlaylist([]);
+      setPlaylistIndex(0);
+      return;
+    }
+    playlistIndexRef.current = idx;
+    setPlaylistIndex(idx);
+    const musician = queue[idx];
+    setForceZoomToId(musician.id);
+    handleSelect(musician);
+  }, [handleSelect]);
+
+  const handleStartPlaylist = useCallback((queue: Musician[]) => {
+    if (queue.length === 0) return;
+    playlistRef.current = queue;
+    setPlaylist(queue);
+    setShowWizard(false);
+    // The timeline is where "focus moves to each musician" is visible
+    setView('influence');
+    playPlaylistAt(0);
+  }, [playPlaylistAt]);
+
+  const handlePlaylistNext = useCallback(() => playPlaylistAt(playlistIndexRef.current + 1), [playPlaylistAt]);
+
+  const handleStopPlaylist = useCallback(() => {
+    setPlaylist([]);
+    setPlaylistIndex(0);
+  }, []);
+
+  const playlistActive = playlist.length > 0;
+
+  // Restore a playlist shared via ?playlist=id1,id2,… (order preserved)
+  useEffect(() => {
+    const ids = parseSharedPlaylist(window.location.search);
+    if (ids.length === 0) return;
+    const queue = ids.map((id) => musicians.find((m) => m.id === id)).filter(Boolean) as Musician[];
+    if (queue.length > 0) handleStartPlaylist(queue);
+    // Mount only: a shared link is consumed once, then normal navigation takes over
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const handleEdit = useCallback(() => {
     setEditing(selected);
     setSelected(null);
@@ -247,6 +305,7 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
         onCreateNew={handleCreateNew}
         editModeEnabled={EDIT_MODE_ENABLED}
         onRandom={handleRandom}
+        onPlaylist={() => { setWizardQueue(null); setShowWizard(true); }}
         onCredits={() => setShowCredits(true)}
         autoplay={autoplay}
         onAutoplayChange={setAutoplay}
@@ -293,14 +352,15 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
           onPlayVideo={(url) => { setManualVideoUrl(url); setShowPlayer(true); setVideoMusician(selected); trackSongPlay(selected.id, url); }}
           videoMusician={videoMusician}
           manualVideoUrl={manualVideoUrl}
-          autoplay={autoplay}
+          autoplay={autoplay || playlistActive}
           onVideoClose={() => setShowPlayer(false)}
+          onVideoEnded={playlistActive ? handlePlaylistNext : undefined}
           isMobile={isMobile}
           bottomInset={isMobile ? 72 : 0}
         />
       )}
 
-      {!isMobile && videoMusician && showPlayer && !editMode && view !== 'card' && (
+      {!isMobile && videoMusician && showPlayer && !editMode && (view !== 'card' || playlistActive) && (
         <div className="block">
           <FloatingVideoPlayer
             key={videoMusician.id}
@@ -314,9 +374,31 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
             initialW={videoPlayerW}
             onPositionChange={setVideoPlayerPos}
             onSizeChange={setVideoPlayerW}
-            autoplay={autoplay}
+            autoplay={autoplay || playlistActive}
+            onEnded={playlistActive ? handlePlaylistNext : undefined}
           />
         </div>
+      )}
+
+      {showWizard && (
+        <PlaylistWizard
+          musicians={musicians}
+          selected={selected}
+          initialQueue={wizardQueue}
+          onPlay={handleStartPlaylist}
+          onClose={() => setShowWizard(false)}
+        />
+      )}
+
+      {playlistActive && (
+        <PlaylistBar
+          queue={playlist}
+          index={playlistIndex}
+          onSkip={handlePlaylistNext}
+          onStop={handleStopPlaylist}
+          onSelect={(m) => playPlaylistAt(playlist.indexOf(m))}
+          onEdit={() => { setWizardQueue(playlist); setShowWizard(true); }}
+        />
       )}
 
       {showCredits && (

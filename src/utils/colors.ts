@@ -83,9 +83,17 @@ export const STYLE_COLORS: Record<string, RGB> = {
   'Gospel': [231, 76, 60],
 };
 
+// getStyleColor is called from deck.gl accessors — once per node per frame — so the
+// substring scan over every style name is memoised.
+const styleColorCache = new Map<string, RGB>();
+
 export function getStyleColor(style: string, alpha?: number): RGB | RGBA {
-  const key = Object.keys(STYLE_COLORS).find((k) => style.includes(k));
-  const rgb: RGB = key ? STYLE_COLORS[key] : [150, 150, 150];
+  let rgb = styleColorCache.get(style);
+  if (!rgb) {
+    const key = Object.keys(STYLE_COLORS).find((k) => style.includes(k));
+    rgb = key ? STYLE_COLORS[key] : [150, 150, 150];
+    styleColorCache.set(style, rgb);
+  }
   return alpha !== undefined ? [...rgb, alpha] as RGBA : rgb;
 }
 

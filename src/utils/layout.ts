@@ -596,7 +596,7 @@ export function computeDecadeTicks(
   return ticks;
 }
 
-export function bezierPath(p0: Position2D, p1: Position2D, numPts = 32): Position2D[] {
+export function bezierPath(p0: Position2D, p1: Position2D, numPts = 12): Position2D[] {
   const dx = p1[0] - p0[0];
   const dy = p1[1] - p0[1];
   const cx = (p0[0] + p1[0]) / 2 + dy * 0.22;

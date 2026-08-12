@@ -36,6 +36,8 @@ interface MusicianPanelProps {
   manualVideoUrl?: string | null | undefined;
   autoplay?: boolean;
   onVideoClose?: () => void;
+  /** Fired when the embedded mobile video finishes — used by the playlist */
+  onVideoEnded?: () => void;
   isMobile?: boolean;
   /** Pixel height of bottom toolbar to sit above (0 when no toolbar) */
   bottomInset?: number;
@@ -43,7 +45,7 @@ interface MusicianPanelProps {
   cardMode?: boolean;
 }
 
-export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, videoMusician, manualVideoUrl, autoplay, onVideoClose, isMobile, bottomInset = 0, cardMode = false }: MusicianPanelProps) {
+export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, videoMusician, manualVideoUrl, autoplay, onVideoClose, onVideoEnded, isMobile, bottomInset = 0, cardMode = false }: MusicianPanelProps) {
   const [panelHeight, setPanelHeight] = useState<PanelHeight>('full');
   const completeMusicians = useMemo(() => musicians.filter((m) =>
     m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.activeFrom
@@ -515,6 +517,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
               manualVideoUrl={manualVideoUrl ?? null}
               onClose={onVideoClose ?? (() => { })}
               autoplay={autoplay ?? false}
+              onEnded={onVideoEnded}
             />
           </div>
         )}

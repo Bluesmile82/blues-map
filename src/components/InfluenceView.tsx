@@ -4,10 +4,12 @@ import { AnimatePresence } from 'framer-motion';
 import DeckGL from '@deck.gl/react';
 import { OrthographicView } from '@deck.gl/core';
 import { PathLayer, ScatterplotLayer, TextLayer, IconLayer } from '@deck.gl/layers';
+import { HeatmapLayer } from '@deck.gl/aggregation-layers';
 import { PathStyleExtension } from '@deck.gl/extensions';
 import type { PickingInfo } from '@deck.gl/core';
 import type { Musician } from '../types';
 import { getStyleColor, getStyleHex } from '../utils/colors';
+import { buildRelatedIndex } from '../utils/relations';
 import SearchInput from './SearchInput';
 import BluesStyleLegend from './BluesStyleLegend';
 import GestureHint from './GestureHint';
@@ -51,8 +53,13 @@ const CLUSTER_ZOOM_END = 0.3;   // Above this: fully expanded
 
 const SIDEBAR_PX = 250; // Approximate width of filter sidebar + left margin on sm+ screens
 const CLUSTER_DETAILS_ZOOM = 0.3; // Above this: show musician names and images
+const MAX_FIT_ZOOM = 1.4; // Ceiling when framing a network, so a lone node doesn't fill the screen
+const PANEL_PX = 416; // Width of the musician detail panel (sm:w-[26rem]) floating on the right
 
 type DeckVS = { target: [number, number, number]; zoom: number; minZoom: number; maxZoom: number; transitionDuration?: number; transitionEasing?: (t: number) => number };
+
+// Shared empty array — a fresh [] would make deck.gl re-diff the layer every render
+const NO_DATA: never[] = [];
 
 export default function InfluenceView({
   musicians,
@@ -232,6 +239,13 @@ export default function InfluenceView({
       setDims({ width, height });
     });
     ro.observe(el);
+    // Seed from the current box: if no resize is ever observed the view would
+    // otherwise stay stuck at 0×0 and never leave the loading spinner.
+    const { width, height } = el.getBoundingClientRect();
+    if (width > 0 && height > 0) {
+      dimsRef.current = { width, height };
+      setDims({ width, height });
+    }
     return () => ro.disconnect();
   }, []);
 
@@ -292,9 +306,14 @@ export default function InfluenceView({
     const totalMusicians = displayMusicians.length;
     const minFraction = 0.5 / presentStyles.length;
 
+    // Single pass instead of a find()/filter() per musician — this memo reruns on every
+    // style expand/collapse, and O(n²) here is what made the points slow to appear.
+    const byId = new Map(displayMusicians.map(m => [m.id, m]));
+    const countByStyle = new Map<string, number>();
+    displayMusicians.forEach(m => countByStyle.set(m.bluesStyle, (countByStyle.get(m.bluesStyle) ?? 0) + 1));
+
     const rawFractions = presentStyles.map((s) => {
-      const count = displayMusicians.filter(m => m.bluesStyle === s).length;
-      const base = Math.max(minFraction, count / totalMusicians);
+      const base = Math.max(minFraction, (countByStyle.get(s) ?? 0) / totalMusicians);
       return expandedStyles.has(s) ? base * EXPANDED_BOOST : base;
     });
     const totalFraction = rawFractions.reduce((s, f) => s + f, 0);
@@ -330,7 +349,7 @@ export default function InfluenceView({
 
     const newPositions: InfluenceLayout = {};
     for (const [id, [x, y]] of Object.entries(baseLayout.positions)) {
-      const m = displayMusicians.find(mu => mu.id === id);
+      const m = byId.get(id);
       if (!m) { newPositions[id] = [x, y]; continue; }
 
       const style = m.bluesStyle;
@@ -576,55 +595,24 @@ export default function InfluenceView({
 
   const focusId = hovered ?? selectedId;
 
-  // Pre-build reverse lookup maps so getConnectedIds is O(1) per musician
-  const reverseInfluenceMap = useMemo(() => {
-    const map = new Map<string, string[]>();
-    displayMusicians.forEach((m) => {
-      m.influences.forEach((srcId) => {
-        if (!map.has(srcId)) map.set(srcId, []);
-        map.get(srcId)!.push(m.id);
-      });
-    });
-    return map;
-  }, [displayMusicians]);
-
-  const reversePlayedWithMap = useMemo(() => {
-    const map = new Map<string, string[]>();
-    displayMusicians.forEach((m) => {
-      (m.playedWith ?? []).forEach((peerId) => {
-        if (!map.has(peerId)) map.set(peerId, []);
-        map.get(peerId)!.push(m.id);
-      });
-    });
-    return map;
-  }, [displayMusicians]);
-
-  const getConnectedIds = useCallback((m: Musician): Set<string> => new Set([
-    m.id,
-    ...m.influences,
-    ...(m.influencedBy ?? []),
-    ...(reverseInfluenceMap.get(m.id) ?? []),
-    ...(m.playedWith ?? []),
-    ...(reversePlayedWithMap.get(m.id) ?? []),
-  ]), [reverseInfluenceMap, reversePlayedWithMap]);
+  const relatedIndex = useMemo(() => buildRelatedIndex(displayMusicians), [displayMusicians]);
 
   // When a musician is selected, its network is the fixed visible set
-  const selectionRelatedIds = useMemo<Set<string> | null>(() => {
-    if (!selectedId) return null;
-    const m = displayMusicians.find((x) => x.id === selectedId);
-    return m ? getConnectedIds(m) : null;
-  }, [selectedId, displayMusicians, getConnectedIds]);
+  const selectionRelatedIds = useMemo<Set<string> | null>(
+    () => (selectedId ? relatedIndex(selectedId) : null),
+    [selectedId, relatedIndex],
+  );
+
+  // Hovering a musician previews its own network
+  const hoverRelatedIds = useMemo<Set<string> | null>(
+    () => (hovered ? relatedIndex(hovered) : null),
+    [hovered, relatedIndex],
+  );
 
   // Edge highlighting: when a musician is selected, always use the selected musician's
-  // connections — hovering a related musician does NOT switch the highlighted edges
-  const effectiveRelatedIds: Set<string> | null = selectionRelatedIds
-    ? selectionRelatedIds
-    : hoveredStyle
-      ? new Set(displayMusicians.filter((m) => {
-        const clusterValue = groupBy === 'instrument' ? m.instrument : m.bluesStyle;
-        return clusterValue === hoveredStyle;
-      }).map((m) => m.id))
-      : null;
+  // connections — hovering a related musician does NOT switch the highlighted edges.
+  // Hovering a style shows a density heatmap instead, so it contributes no related set.
+  const effectiveRelatedIds: Set<string> | null = selectionRelatedIds ?? hoverRelatedIds;
 
   const currentZoom = deckVS?.zoom ?? 0;
 
@@ -639,8 +627,96 @@ export default function InfluenceView({
   const cappedIconSize = ICON_SIZE * overlapFactor;
   const cappedTextSize = 14 * overlapFactor;
 
-  // Build musician data for layers — when a musician is selected, only show its network
-  // All musicians kept for transitions; collapsed styles render with radius 0 and alpha 0
+  /** Animate the camera to a world target + zoom over 500ms. */
+  const animateTo = useCallback((endTarget: [number, number, number], targetZoom: number) => {
+    const base = deckVSRef.current;
+    if (!base) return;
+    const startZoom = base.zoom;
+    const startTarget = base.target;
+
+    const duration = 500;
+    const startTime = performance.now();
+
+    const animate = (currentTime: number) => {
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+      const eased = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+      const newVS = {
+        ...base,
+        zoom: startZoom + (targetZoom - startZoom) * eased,
+        target: [
+          startTarget[0] + (endTarget[0] - startTarget[0]) * eased,
+          startTarget[1] + (endTarget[1] - startTarget[1]) * eased,
+          0,
+        ] as [number, number, number],
+      };
+      deckVSRef.current = newVS;
+      setDeckVS(newVS);
+
+      if (progress < 1) requestAnimationFrame(animate);
+    };
+
+    requestAnimationFrame(animate);
+  }, []);
+
+  /**
+   * Frame a set of musicians so all of them (and therefore all the connections
+   * between them) are on screen. X positions are stretched by `xExpand`, which is
+   * itself a function of zoom, so the fit is solved by a few fixed-point passes.
+   */
+  const fitToIds = useCallback((ids: string[]) => {
+    const vs = deckVSRef.current;
+    const { width, height } = dimsRef.current;
+    if (!vs || !width || !height) return;
+
+    const pts = ids.map((id) => positions[id]).filter(Boolean) as Position2D[];
+    if (pts.length === 0) return;
+
+    const xs = pts.map((p) => p[0]);
+    const ys = pts.map((p) => p[1]);
+    const minX = Math.min(...xs), maxX = Math.max(...xs);
+    const minY = Math.min(...ys), maxY = Math.max(...ys);
+
+    // The filter sidebar and the musician panel float over the canvas, so the usable
+    // band is narrower than the viewport and isn't centred on it.
+    const PAD = 80;
+    const leftInset = width >= 640 ? SIDEBAR_PX : 0;
+    const rightInset = width >= 640 ? PANEL_PX : 0;
+    const availW = Math.max(1, width - PAD - leftInset - rightInset);
+    const availH = Math.max(1, height - PAD);
+
+    let zoom = vs.zoom;
+    for (let i = 0; i < 6; i++) {
+      const xe = Math.max(1, Math.pow(2, Math.max(0, zoom - EXPAND_ZOOM_THRESHOLD)));
+      const fit = Math.min(
+        Math.log2(availW / Math.max(1, (maxX - minX) * xe)),
+        Math.log2(availH / Math.max(1, maxY - minY)),
+      );
+      // Cap so a lone node doesn't fill the screen; otherwise honour the fit, even if
+      // a large network has to be shown below the detail-zoom threshold
+      zoom = Math.max(vs.minZoom, Math.min(MAX_FIT_ZOOM, fit));
+    }
+
+    const xe = Math.max(1, Math.pow(2, Math.max(0, zoom - EXPAND_ZOOM_THRESHOLD)));
+    const scale = Math.pow(2, zoom);
+    // Shift the camera so the network lands in the middle of the *uncovered* band
+    const shift = (leftInset - rightInset) / 2 / scale;
+    animateTo([((minX + maxX) / 2) * xe - shift, (minY + maxY) / 2, 0], zoom);
+  }, [positions, animateTo]);
+
+  /** Select a musician and frame its whole network. */
+  const goToMusician = useCallback((m: Musician) => {
+    if (!positions[m.id]) return;
+    const network = relatedIndex(m.id);
+    fitToIds([...network].filter((id) => positions[id]));
+    onSelect(m);
+    setSearch('');
+  }, [positions, relatedIndex, fitToIds, onSelect]);
+
+  // Build musician data for layers — when a musician is selected, only show its network.
+  // All musicians kept for transitions; collapsed styles render with radius 0 and alpha 0,
+  // except musicians in the focused network, which are always revealed so the related
+  // musicians themselves show up — not just the lines pointing at them.
   const musicianData = useMemo(() => {
     return displayMusicians
       .filter((m) => !selectionRelatedIds || selectionRelatedIds.has(m.id))
@@ -648,17 +724,21 @@ export default function InfluenceView({
         const pos = positions[m.id];
         if (!pos) return null;
         const clusterValue = groupBy === 'instrument' ? m.instrument : m.bluesStyle;
-        return { musician: m, position: pos, isExpanded: expandedStyles.has(clusterValue) };
+        const isRelated = effectiveRelatedIds?.has(m.id) ?? false;
+        return { musician: m, position: pos, isExpanded: expandedStyles.has(clusterValue) || isRelated };
       }).filter(Boolean) as { musician: Musician; position: Position2D; isExpanded: boolean }[];
-  }, [displayMusicians, positions, selectionRelatedIds, expandedStyles, groupBy]);
+  }, [displayMusicians, positions, selectionRelatedIds, effectiveRelatedIds, expandedStyles, groupBy]);
+
+  // Stable identity so the photo IconLayer doesn't re-diff (and repack its texture
+  // atlas of ~700 remote images) on every zoom step.
+  const expandedMusicianData = useMemo(() => musicianData.filter(d => d.isExpanded), [musicianData]);
 
   // CPU-side collision filtering for musician labels (only expanded styles)
   const visibleMusicianLabels = useMemo(() => {
     if (currentZoom <= CLUSTER_DETAILS_ZOOM) return [];
-    const expandedData = musicianData.filter(d => d.isExpanded);
     const filtered = effectiveRelatedIds
-      ? expandedData.filter((d) => effectiveRelatedIds.has(d.musician.id))
-      : expandedData;
+      ? expandedMusicianData.filter((d) => effectiveRelatedIds.has(d.musician.id))
+      : expandedMusicianData;
 
     const scale = Math.pow(2, currentZoom);
     const xe = Math.max(1, Math.pow(2, Math.max(0, currentZoom - EXPAND_ZOOM_THRESHOLD)));
@@ -687,11 +767,20 @@ export default function InfluenceView({
       };
     });
 
+    // Cull off-screen labels before the O(n²) placement pass — this runs on every zoom step
+    const offX = (deckVS?.target[0] ?? 0) * scale - dims.width / 2;
+    const offY = (deckVS?.target[1] ?? 0) * scale - dims.height / 2;
+    const onScreen = candidates.filter((c) => {
+      const px = c.screenX - offX;
+      const py = c.screenY - offY;
+      return px > -80 && px < dims.width + 80 && py > -40 && py < dims.height + 40;
+    });
+
     // Selected/hovered first so they always win placement
-    candidates.sort((a, b) => b.priority - a.priority);
+    onScreen.sort((a, b) => b.priority - a.priority);
 
     const placed: typeof candidates = [];
-    for (const c of candidates) {
+    for (const c of onScreen) {
       let overlaps = false;
       for (const p of placed) {
         if (
@@ -705,7 +794,7 @@ export default function InfluenceView({
       if (!overlaps) placed.push(c);
     }
     return placed;
-  }, [currentZoom, musicianData, effectiveRelatedIds, interpolatedPositions, cappedTextSize, cappedRadius, selectedId, hovered]);
+  }, [currentZoom, deckVS, dims.width, dims.height, expandedMusicianData, effectiveRelatedIds, interpolatedPositions, cappedTextSize, cappedRadius, selectedId, hovered]);
 
   // Update cluster compression based on zoom
   useEffect(() => {
@@ -717,33 +806,38 @@ export default function InfluenceView({
     } else if (zoom >= CLUSTER_ZOOM_END) {
       setClusterCompression(0.0);
     } else {
-      // Linear interpolation between start and end
+      // Linear interpolation between start and end, quantised to 10 steps: compression
+      // feeds interpolatedPositions → all the bezier edge geometry, and recomputing that
+      // on every wheel event was the main cost while zooming.
       const progress = (zoom - CLUSTER_ZOOM_START) / (CLUSTER_ZOOM_END - CLUSTER_ZOOM_START);
-      setClusterCompression(1.0 - progress);
+      setClusterCompression(Math.round((1.0 - progress) * 10) / 10);
     }
   }, [deckVS?.zoom]);
 
-  // Handle external zoom trigger (e.g., from random selection)
+  /** Ids to frame so a musician and everyone it connects to are all visible */
+  const networkIds = useCallback(
+    (id: string) => [...relatedIndex(id)].filter((peer) => positions[peer]),
+    [relatedIndex, positions],
+  );
+
+  // Handle external zoom trigger (e.g., from random selection or the playlist)
   useEffect(() => {
     if (!forceZoomToId || !deckVS || !positions[forceZoomToId]) return;
-    const m = musicians.find(mus => mus.id === forceZoomToId);
-    if (m) {
-      goToMusician(m);
-      onZoomComplete?.();
-    }
-  }, [forceZoomToId, deckVS, positions, musicians, onZoomComplete]);
+    fitToIds(networkIds(forceZoomToId));
+    onZoomComplete?.();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [forceZoomToId, deckVS, positions, onZoomComplete]);
 
-  // Zoom to selectedId on mount (view switch) — fires once positions are ready
-  const zoomedToRef = useRef<string | null>(null);
+  // Frame the selection's network on mount (view switch) and again once expanding
+  // its style has shifted the layout
+  const zoomedToRef = useRef<{ id: string; positions: InfluenceLayout } | null>(null);
   useEffect(() => {
     if (!selectedId || !deckVS || !positions[selectedId]) return;
-    if (zoomedToRef.current === selectedId) return;
-    const m = musicians.find(mus => mus.id === selectedId);
-    if (m) {
-      zoomedToRef.current = selectedId;
-      goToMusician(m);
-    }
-  }, [selectedId, deckVS, positions, musicians]);
+    if (zoomedToRef.current?.id === selectedId && zoomedToRef.current.positions === positions) return;
+    zoomedToRef.current = { id: selectedId, positions };
+    fitToIds(networkIds(selectedId));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedId, deckVS, positions]);
 
   // Pulse animation for selected musician
   const [pulsePhase, setPulsePhase] = useState(0);
@@ -759,27 +853,17 @@ export default function InfluenceView({
     return () => cancelAnimationFrame(pulseRafRef.current);
   }, [selectedId]);
 
-  // Handle picking — ignore collapsed musicians
+  // Handle picking — ignore collapsed musicians.
+  // Hovering a musician highlights its own network; style highlighting comes from
+  // the cluster labels / legend only (which render a heatmap instead).
   const onHover = useCallback((info: PickingInfo) => {
     const m = info.object as { musician: Musician; isExpanded?: boolean } | undefined;
-    const musician = m?.musician ?? null;
-    if (musician && m?.isExpanded === false) {
+    if (m?.musician && m.isExpanded === false) {
       setHovered(null);
-      setHoveredStyle(null);
       return;
     }
-    const musicianId = musician?.id ?? null;
-    setHovered(musicianId);
-    if (musicianId) {
-      const found = displayMusicians.find(x => x.id === musicianId);
-      if (found) {
-        const hoveredValue = groupBy === 'instrument' ? found.instrument : found.bluesStyle;
-        setHoveredStyle(hoveredValue);
-      }
-    } else {
-      setHoveredStyle(null);
-    }
-  }, [displayMusicians, groupBy]);
+    setHovered(m?.musician?.id ?? null);
+  }, []);
 
   const onClick = useCallback((info: PickingInfo) => {
     const m = info.object as { musician: Musician; isExpanded?: boolean } | undefined;
@@ -789,14 +873,8 @@ export default function InfluenceView({
       if (isMobile) {
         setPreviewMusician(m.musician);
       } else {
-        // Zoom to musician if zoomed out below detail visibility threshold
-        if (deckVS && currentZoom < CLUSTER_DETAILS_ZOOM) {
-          const pos = positions[m.musician.id];
-          if (pos) {
-            goToMusician(m.musician);
-          }
-        }
-        onSelect(m.musician);
+        // Select and frame the whole network so every connection is visible
+        goToMusician(m.musician);
       }
     } else {
       // Clicked on empty space - close preview
@@ -804,7 +882,8 @@ export default function InfluenceView({
         setPreviewMusician(null);
       }
     }
-  }, [onSelect, deckVS, currentZoom, positions, isMobile]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [goToMusician, isMobile]);
 
   // Pre-compute edge geometry — only recalculate when positions change, not on hover/zoom
   const lifespanData = useMemo(() => {
@@ -869,6 +948,19 @@ export default function InfluenceView({
     }));
   }, [decadeTicks]);
 
+  // Hovering a style shows where its musicians are concentrated, rather than its links
+  const heatmapPoints = useMemo(() => {
+    if (!hoveredStyle) return null;
+    const pts: Position2D[] = [];
+    for (const m of displayMusicians) {
+      const key = groupBy === 'instrument' ? m.instrument : m.bluesStyle;
+      if (key !== hoveredStyle) continue;
+      const p = interpolatedPositions[m.id] ?? positions[m.id];
+      if (p) pts.push([p[0] * xExpand, p[1]]);
+    }
+    return pts.length > 0 ? pts : null;
+  }, [hoveredStyle, displayMusicians, groupBy, interpolatedPositions, positions, xExpand]);
+
   const deckLayers = useMemo(() => {
     if (!dims.width || !worldRef.current) return [];
 
@@ -889,6 +981,30 @@ export default function InfluenceView({
       : styleTreePaths;
 
     return [
+      // Density heatmap for the hovered style — drawn under everything else
+      ...(heatmapPoints ? [
+        new HeatmapLayer<Position2D>({
+          id: 'style-heatmap',
+          data: heatmapPoints,
+          getPosition: (d) => d,
+          getWeight: 1,
+          radiusPixels: 70,
+          intensity: 1,
+          threshold: 0.05,
+          aggregation: 'SUM',
+          pickable: false,
+          colorRange: (([r, g, b]) => [
+            [0, 0, 0, 0],
+            [r, g, b, 40],
+            [r, g, b, 80],
+            [r, g, b, 120],
+            [r, g, b, 160],
+            [r, g, b, 200],
+            [r, g, b, 240],
+          ])(getStyleColor(hoveredStyle ?? '') as [number, number, number]),
+          updateTriggers: { data: [heatmapPoints] },
+        }),
+      ] : []),
       // Style evolution tree — edges between cluster labels (hidden when a musician is selected)
       ...(treeAlpha > 0 && groupBy === 'style' && !selectedId && filteredTreePaths.length > 0 ? [
         new PathLayer({
@@ -1063,7 +1179,7 @@ export default function InfluenceView({
       // Musician photos (only expanded styles)
       new IconLayer({
         id: 'musician-photos',
-        data: currentZoom > CLUSTER_DETAILS_ZOOM ? musicianData.filter(d => d.isExpanded) : [],
+        data: currentZoom > CLUSTER_DETAILS_ZOOM ? expandedMusicianData : NO_DATA,
         getPosition: (d) => {
           const interpolated = interpolatedPositions[d.musician.id];
           return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
@@ -1178,7 +1294,9 @@ export default function InfluenceView({
       }),
       // Cluster labels are rendered as HTML overlays below for clickability
     ];
-  }, [dims.width, tickLines, styleZones, effectiveRelatedIds, focusId, musicianData, selectedId, hovered, groupBy, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusters, clusterCompression, visibleMusicianLabels, currentZoom, styleTreePaths, expandedStyles, lifespanData, edges, playedWithEdges, edgeTargetStyleMap, theme, hoveredStyle, favoritesChecker, pulsePhase]);
+    // pulsePhase is deliberately absent — it drives `pulseLayer` only, and including it
+    // here rebuilt every layer on every animation frame.
+  }, [dims.width, tickLines, effectiveRelatedIds, focusId, musicianData, expandedMusicianData, selectedId, hovered, groupBy, xExpand, cappedRadius, cappedIconSize, cappedTextSize, onHover, onClick, interpolatedPositions, clusterCompression, visibleMusicianLabels, currentZoom, styleTreePaths, expandedStyles, lifespanData, edges, playedWithEdges, edgeTargetStyleMap, theme, hoveredStyle, favoritesChecker, heatmapPoints]);
 
   // Pulse ring — outside memo so it re-renders every animation frame
   const pulseLayer = useMemo(() => {
@@ -1212,43 +1330,6 @@ export default function InfluenceView({
   const searchMatches = searchQuery
     ? displayMusicians.filter((m) => m.name.toLowerCase().includes(searchQuery)).slice(0, 8)
     : [];
-
-  const goToMusician = useCallback((m: Musician, minZoom = CLUSTER_DETAILS_ZOOM) => {
-    const pos = positions[m.id];
-    if (!pos || !deckVS) return;
-    const targetZoom = Math.max(minZoom, deckVS.zoom) + 0.1;
-    const startZoom = deckVS.zoom;
-    const startTarget = deckVS.target;
-    const endTarget: [number, number, number] = [pos[0] * Math.max(1, Math.pow(2, Math.max(0, targetZoom - EXPAND_ZOOM_THRESHOLD))), pos[1], 0];
-
-    const duration = 500;
-    const startTime = performance.now();
-
-    const animate = (currentTime: number) => {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
-
-      const currentZoom = startZoom + (targetZoom - startZoom) * eased;
-      const currentTarget: [number, number, number] = [
-        startTarget[0] + (endTarget[0] - startTarget[0]) * eased,
-        startTarget[1] + (endTarget[1] - startTarget[1]) * eased,
-        0,
-      ];
-
-      const newVS = { ...deckVS!, zoom: currentZoom, target: currentTarget };
-      deckVSRef.current = newVS;
-      setDeckVS(newVS);
-
-      if (progress < 1) {
-        requestAnimationFrame(animate);
-      }
-    };
-
-    requestAnimationFrame(animate);
-    onSelect(m);
-    setSearch('');
-  }, [positions, deckVS, onSelect]);
 
   const handleZoom = useCallback((delta: number) => {
     if (!deckVS) return;
@@ -1634,9 +1715,9 @@ export default function InfluenceView({
             <button
               onClick={expandedStyles.size === Object.keys(clusters).length ? collapseAllStyles : expandAllStyles}
               className="px-2 sm:px-3 py-1 rounded-lg text-2xs sm:text-xs font-semibold tracking-wide uppercase transition-all bg-bg/50 border border-border-subtle text-ink3 hover:text-ink hover:border-accent/60"
-              >
-                {expandedStyles.size === Object.keys(clusters).length ? 'Collapse All' : 'Expand All'}
-              </button>
+            >
+              {expandedStyles.size === Object.keys(clusters).length ? 'Collapse All' : 'Expand All'}
+            </button>
 
             {import.meta.env.DEV && !isMobile && (
               <>

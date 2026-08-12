@@ -975,7 +975,7 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
                   <div className="h-1 shrink-0" style={{ background: hex }} />
                   <div className="relative flex-1 min-h-0 overflow-hidden">
                     <img
-                      src={current.image}
+                      src={current.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(current.name)}&background=333&color=fff&size=400`}
                       alt={current.name}
                       draggable={false}
                       className="w-full h-full object-cover pointer-events-none"

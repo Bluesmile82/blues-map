@@ -24,7 +24,9 @@
     "editMode": "Edit Mode",
     "menu": "Menu",
     "lightDarkMode": "Light/Dark Mode",
-    "card": "Card"
+    "card": "Card",
+    "playlist": "Playlist",
+    "playlistWizard": "Playlist Wizard"
   },
   "card": {
     "flipToMap": "Click to see places",
@@ -334,5 +336,41 @@
     "Vocals": "Vocals",
     "Voice": "Vocals",
     "Washboard": "Washboard"
+  },
+  "playlist": {
+    "title": "Playlist Wizard",
+    "close": "Close playlist",
+    "anyStyle": "Any style",
+    "relatedTo": "Related to",
+    "direction": "Chronological order",
+    "forward": "Forward",
+    "backward": "Backward",
+    "length": "Playlist length",
+    "empty": "No musicians match these filters.",
+    "count": "{{count}} songs",
+    "openInYoutube": "YouTube",
+    "play": "Play",
+    "remove": "Remove {{name}}",
+    "skip": "Next song",
+    "anyMusician": "Any musician — search to pick one",
+    "clearRelatedTo": "Clear",
+    "shuffle": "Shuffle — draw a new set",
+    "share": "Share",
+    "linkCopied": "Link copied",
+    "shareFailed": "Could not copy the link",
+    "save": "Save",
+    "saveToYoutube": "Save as YouTube playlist",
+    "saveToLists": "Save to my lists",
+    "saveNeedsSignIn": "Sign in to save to lists",
+    "savedToList": "Saved as \"{{name}}\"",
+    "saveFailed": "Could not save the list",
+    "showQueue": "Show full playlist",
+    "hideQueue": "Hide playlist",
+    "yearFrom": "Earliest active year",
+    "yearTo": "Latest active year",
+    "activePlaylist": "Active playlist",
+    "edit": "Edit",
+    "editActive": "Edit this playlist in the wizard",
+    "editingActive": "Editing the active playlist"
   }
 }

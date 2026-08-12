@@ -1,14 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Album } from '../types';
-
-
-
-function extractVideoId(url: string | null | undefined): string | null {
-  if (!url) return null;
-  const match = url.match(/[?&]v=([^&#]+)/) || url.match(/youtu\.be\/([^?&#]+)/);
-  return match ? match[1] : null;
-}
+import { extractVideoId } from '../utils/youtube';
 
 interface VideoEntry {
   label: string;
@@ -22,6 +15,8 @@ interface MobileVideoPlayerProps {
   manualVideoUrl: string | null;
   onClose: () => void;
   autoplay?: boolean;
+  /** Fired when the current video finishes — used by the playlist */
+  onEnded?: () => void;
 }
 
 export default function MobileVideoPlayer({
@@ -31,8 +26,12 @@ export default function MobileVideoPlayer({
   manualVideoUrl,
   onClose,
   autoplay = true,
+  onEnded,
 }: MobileVideoPlayerProps) {
   const { t } = useTranslation();
+  // Ref so the YT event closure always sees the current callback
+  const onEndedRef = useRef(onEnded);
+  onEndedRef.current = onEnded;
   const playerRef = useRef<YT.Player | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [apiReady, setApiReady] = useState(false);
@@ -107,6 +106,7 @@ export default function MobileVideoPlayer({
             const state = event.data;
             console.log('Player state changed:', state, 'PLAYING:', YT.PlayerState.PLAYING);
             setIsPlaying(state === YT.PlayerState.PLAYING);
+            if (state === YT.PlayerState.ENDED) onEndedRef.current?.();
           },
           onError: (event) => {
             console.error('YouTube player error:', event.data);
@@ -116,6 +116,9 @@ export default function MobileVideoPlayer({
               playerRef.current?.loadVideoById(videosRef.current[nextIndex].videoId);
               setCurrentIndex(nextIndex);
               currentIndexRef.current = nextIndex;
+            } else {
+              // Nothing left to fall back to — let the playlist move on instead of stalling
+              onEndedRef.current?.();
             }
           },
         },

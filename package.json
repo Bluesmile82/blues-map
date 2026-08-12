@@ -9,6 +9,7 @@
     "backup": "node -e \"const fs=require('fs'),path=require('path');const d=path.resolve('src/data/backups');if(!fs.existsSync(d))fs.mkdirSync(d,{recursive:true});const ts=new Date().toISOString().replace(/[:.]/g,'-');fs.copyFileSync('src/data/musicians.json',path.join(d,'musicians-manual-'+ts+'.json'));console.log('Backup created');\"",
     "build": "vite build",
     "lint": "eslint .",
+    "test": "vitest run --project unit",
     "preview": "vite preview",
     "deploy": "npm run build && netlify deploy --prod --dir=dist",
     "server": "node server/server.js",
@@ -24,6 +25,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@deck.gl/aggregation-layers": "^9.2.11",
     "@deck.gl/core": "^9.2.11",
     "@deck.gl/extensions": "^9.2.11",
     "@deck.gl/geo-layers": "^9.2.11",

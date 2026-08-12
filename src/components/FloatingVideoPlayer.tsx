@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import type { Album } from '../types';
+import { extractVideoId } from '../utils/youtube';
 
 declare global {
   interface Window {
@@ -30,12 +31,6 @@ declare namespace YT {
   const PlayerState: { PLAYING: number; PAUSED: number; ENDED: number };
 }
 
-function extractVideoId(url: string | null): string | null {
-  if (!url) return null;
-  const match = url.match(/[?&]v=([^&#]+)/) || url.match(/youtu\.be\/([^?&#]+)/);
-  return match ? match[1] : null;
-}
-
 interface VideoEntry {
   label: string;
   videoId: string;
@@ -53,12 +48,17 @@ interface Props {
   onPositionChange?: (pos: { x: number; y: number }) => void;
   onSizeChange?: (w: number) => void;
   autoplay?: boolean;
+  /** Fired when the last available video for this musician finishes — used by the playlist */
+  onEnded?: () => void;
 }
 
 const MIN_W = 200;
 const MAX_W = 720;
 
-export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, manualVideoUrl, onClose, initialPos, initialW, onPositionChange, onSizeChange, autoplay = true }: Props) {
+export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, manualVideoUrl, onClose, initialPos, initialW, onPositionChange, onSizeChange, autoplay = true, onEnded }: Props) {
+  // Ref so the YT event closure always sees the current callback
+  const onEndedRef = useRef(onEnded);
+  onEndedRef.current = onEnded;
   const playerRef = useRef<YT.Player | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [apiReady, setApiReady] = useState(false);
@@ -200,6 +200,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
         },
         onStateChange: ({ data }) => {
           setIsPlaying(data === window.YT.PlayerState.PLAYING);
+          if (data === window.YT.PlayerState.ENDED) onEndedRef.current?.();
         },
         onError: () => {
           const nextIndex = currentIndexRef.current + 1;
@@ -207,6 +208,9 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
             currentIndexRef.current = nextIndex;
             setCurrentIndex(nextIndex);
             playerRef.current?.loadVideoById(videosRef.current[nextIndex].videoId);
+          } else {
+            // Nothing left to fall back to — let the playlist move on instead of stalling
+            onEndedRef.current?.();
           }
         },
       },
