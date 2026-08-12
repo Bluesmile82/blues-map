@@ -1925,7 +1925,8 @@
       "jimmie-vaughan",
       "buddy-guy",
       "albert-king",
-      "freddie-king"
+      "freddie-king",
+      "barbara-lynn"
     ],
     "source": "https://en.wikipedia.org/wiki/B._B._King",
     "secondaryInstruments": [
@@ -7703,7 +7704,8 @@
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
-      "the-band"
+      "the-band",
+      "barbara-lynn"
     ],
     "source": "https://en.wikipedia.org/wiki/Dr._John",
     "secondaryInstruments": [
@@ -9172,7 +9174,9 @@
     "influences": [
       "roy-brown"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "barbara-lynn"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Elvis_Presley",
@@ -11559,7 +11563,8 @@
       "junior-watson",
       "buddy-guy",
       "walter-wolfman-washington",
-      "johnny-guitar-watson"
+      "johnny-guitar-watson",
+      "barbara-lynn"
     ],
     "incomplete": false,
     "playedWith": [
@@ -12676,7 +12681,8 @@
       "albert-king",
       "keb-mo",
       "lightnin-hopkins",
-      "etta-james"
+      "etta-james",
+      "barbara-lynn"
     ],
     "source": "https://en.wikipedia.org/wiki/Ike_Turner",
     "secondaryInstruments": [
@@ -14368,7 +14374,8 @@
     "activeFrom": "1946",
     "influences": [],
     "influencedBy": [
-      "john-p-hammond"
+      "john-p-hammond",
+      "barbara-lynn"
     ],
     "incomplete": false,
     "playedWith": [
@@ -24066,7 +24073,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "barbara-lynn"
+    ],
     "source": "https://en.wikipedia.org/wiki/Otis_Redding",
     "secondaryInstruments": []
   },
@@ -26908,7 +26917,9 @@
     "albums": [],
     "description": "The Rolling Stones are an English rock band formed in London in 1962, rooted in Chicago blues covers. Their 2016 blues album Blue & Lonesome won a Grammy Award.",
     "activeFrom": "1962",
-    "influences": [],
+    "influences": [
+      "barbara-lynn"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -27818,7 +27829,9 @@
       "otis-clay"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "barbara-lynn"
+    ],
     "source": "https://en.wikipedia.org/wiki/Sam_Cooke",
     "secondaryInstruments": []
   },
@@ -41676,6 +41689,88 @@
       "john-mayall"
     ],
     "source": "https://en.wikipedia.org/wiki/Coco_Montoya",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "barbara-lynn",
+    "name": "Barbara Lynn",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/BarbaraLynn%20nojhf%20Apr252008.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1942-01-16",
+    "birthPlace": "Beaumont",
+    "birthCoords": [
+      -94.126666666667,
+      30.08
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Houston, Texas",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=CBN_4janUpg",
+    "albums": [
+      {
+        "name": "The Best of Barbara Lynn: The Atlantic Years (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ZBHT0eM2780"
+      },
+      {
+        "name": "You’ll Lose a Good Thing (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JKyjRbL-tXA"
+      },
+      {
+        "name": "Promises (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=J0vUqvfHQeQ"
+      },
+      {
+        "name": "The Crazy Cajun Recordings (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=fDFwF79fPAE"
+      },
+      {
+        "name": "Bluesoul Belles, Vol. 2 (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=J0vUqvfHQeQ"
+      },
+      {
+        "name": "The Jamie Singles Collection: 1962-1965 (2008)",
+        "youtubeLink": "https://www.youtube.com/watch?v=CBN_4janUpg"
+      }
+    ],
+    "description": "Barbara Lynn (born Barbara Lynn Ozen, later Barbara Lynn Cumby, January 16, 1942) is an American rhythm and blues and electric blues guitarist, singer and songwriter.  She is best known for her R&B chart-topping hit, \"You'll Lose a Good Thing\" (1962).  In 2018, Lynn received a National Heritage Fellowship.",
+    "activeFrom": "1962",
+    "influences": [
+      "guitar-slim",
+      "jimmy-reed",
+      "elvis-presley"
+    ],
+    "influencedBy": [
+      "rolling-stones"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "dr-john",
+      "bb-king",
+      "ike-turner",
+      "sam-cooke",
+      "otis-redding"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Barbara_Lynn",
     "secondaryInstruments": [
       "Vocals"
     ]
