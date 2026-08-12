@@ -15726,8 +15726,8 @@
   {
     "id": "johnnie-marshall",
     "name": "Johnnie Marshall",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/JohnnieJohnson1996.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/9/9b/JohnnieJohnson1996.jpg",
+    "image": "",
+    "image_source": "",
     "birthDate": "1961-06-02",
     "birthPlace": "Whigham, Georgia",
     "birthCoords": [
@@ -15753,7 +15753,7 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Johnnie_Johnson_(musician)",
+    "source": "https://en.wikipedia.org/wiki/Johnnie_Marshall",
     "secondaryInstruments": [
       "Vocals"
     ]
@@ -19432,8 +19432,8 @@
   {
     "id": "little-freddie-king",
     "name": "Little Freddie King",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Freddie_King_1975_4.jpg/500px-Freddie_King_1975_4.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Freddie_King_1975_4.jpg/500px-Freddie_King_1975_4.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Little_Freddie_King_FQF_2012_2.jpg/500px-Little_Freddie_King_FQF_2012_2.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Little_Freddie_King_FQF_2012_2.jpg/500px-Little_Freddie_King_FQF_2012_2.jpg",
     "birthDate": "1940-07-19",
     "birthPlace": "McComb",
     "birthCoords": [
@@ -19461,7 +19461,7 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "Chicago Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=pSAz_lVLIJo",
+    "youtubeLink": "https://www.youtube.com/watch?v=fKEYM-hfVbM",
     "albums": [],
     "description": "Little Freddie King (born Fread Eugene Martin, July 19, 1940) is an American Delta blues guitarist.  Despite the name, his style is not based on that of Freddie King, but is more influenced by John Lee Hooker and his approach to electric blues is original.",
     "activeFrom": "1960",
@@ -19469,7 +19469,7 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Freddie_King",
+    "source": "https://en.wikipedia.org/wiki/Little_Freddie_King",
     "secondaryInstruments": [
       "Vocals"
     ]
@@ -19829,8 +19829,8 @@
   {
     "id": "little-sonny",
     "name": "Little Sonny",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Sonny_Boy_Williamson_II_montaje.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Sonny_Boy_Williamson_II_montaje.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Little_Sonny_in_concert_1981.jpg/500px-Little_Sonny_in_concert_1981.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Little_Sonny_in_concert_1981.jpg/500px-Little_Sonny_in_concert_1981.jpg",
     "birthDate": "1932-10-06",
     "birthPlace": "Greensboro",
     "birthCoords": [
@@ -19872,7 +19872,7 @@
     ],
     "incomplete": false,
     "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
+    "source": "https://en.wikipedia.org/wiki/Little_Sonny",
     "secondaryInstruments": [
       "Vocals"
     ]
@@ -27929,8 +27929,8 @@
   {
     "id": "sam-taylor-jr",
     "name": "Sam Taylor Jr.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sam_taylor_lg.jpg/500px-Sam_taylor_lg.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sam_taylor_lg.jpg/500px-Sam_taylor_lg.jpg",
+    "image": "",
+    "image_source": "",
     "birthDate": "1934-10-25",
     "birthPlace": "Mobile, Alabama",
     "birthCoords": [
@@ -27976,7 +27976,7 @@
       "big-joe-turner",
       "t-bone-walker"
     ],
-    "source": null,
+    "source": "https://en.wikipedia.org/wiki/Sam_Taylor_Jr.",
     "secondaryInstruments": [
       "Vocals"
     ]
@@ -29620,8 +29620,8 @@
   {
     "id": "sonny-rodgers",
     "name": "Sonny Rodgers",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/MightyMoRodgers398Flickr.jpg/500px-MightyMoRodgers398Flickr.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/MightyMoRodgers398Flickr.jpg/500px-MightyMoRodgers398Flickr.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Sonny_Boy_Rodgers_1970_by_JTT.jpg/500px-Sonny_Boy_Rodgers_1970_by_JTT.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Sonny_Boy_Rodgers_1970_by_JTT.jpg/500px-Sonny_Boy_Rodgers_1970_by_JTT.jpg",
     "birthDate": "1939-12-04",
     "birthPlace": "Hughes",
     "birthCoords": [
@@ -29653,7 +29653,7 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Mighty_Mo_Rodgers",
+    "source": "https://en.wikipedia.org/wiki/Sonny_Rodgers",
     "secondaryInstruments": []
   },
   {
@@ -32542,8 +32542,8 @@
   {
     "id": "willie-love",
     "name": "Willie Love",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Willie_Dixon.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Willie_Dixon.jpg",
+    "image": "",
+    "image_source": "",
     "birthDate": "1906-11-04",
     "birthPlace": "Duncan, Mississippi",
     "birthCoords": [
@@ -32610,7 +32610,7 @@
       "joe-willie-wilkins",
       "eddie-shaw"
     ],
-    "source": "https://en.wikipedia.org/wiki/Willie_Dixon",
+    "source": "https://en.wikipedia.org/wiki/Willie_Love",
     "secondaryInstruments": [
       "Vocals"
     ]
