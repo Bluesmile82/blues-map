@@ -274,7 +274,8 @@
     "influencedBy": [
       "stevie-ray-vaughan",
       "sean-costello",
-      "coco-montoya"
+      "coco-montoya",
+      "toronzo-cannon"
     ],
     "incomplete": false,
     "playedWith": [
@@ -1912,7 +1913,8 @@
       "stevie-ray-vaughan",
       "bobby-blue-bland",
       "sean-costello",
-      "chris-cain"
+      "chris-cain",
+      "toronzo-cannon"
     ],
     "incomplete": false,
     "playedWith": [
@@ -4663,7 +4665,8 @@
       "bb-king"
     ],
     "influencedBy": [
-      "stevie-ray-vaughan"
+      "stevie-ray-vaughan",
+      "toronzo-cannon"
     ],
     "incomplete": false,
     "playedWith": [
@@ -5381,7 +5384,8 @@
     "incomplete": false,
     "playedWith": [
       "albert-king",
-      "carey-bell"
+      "carey-bell",
+      "toronzo-cannon"
     ],
     "source": "https://en.wikipedia.org/wiki/Carl_Weathersby",
     "secondaryInstruments": []
@@ -10369,7 +10373,8 @@
     ],
     "influencedBy": [
       "sean-costello",
-      "michael-burks"
+      "michael-burks",
+      "toronzo-cannon"
     ],
     "incomplete": false,
     "playedWith": [
@@ -14009,7 +14014,8 @@
       "johnny-guitar-watson"
     ],
     "influencedBy": [
-      "michael-burks"
+      "michael-burks",
+      "toronzo-cannon"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -21571,7 +21577,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "toronzo-cannon"
+    ],
     "source": "https://en.wikipedia.org/wiki/L.V._Banks",
     "secondaryInstruments": [
       "Vocals"
@@ -41676,6 +41684,66 @@
       "john-mayall"
     ],
     "source": "https://en.wikipedia.org/wiki/Coco_Montoya",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "toronzo-cannon",
+    "name": "Toronzo Cannon",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Toronzo%20Cannon%20plays%20guitar%20through%20legs.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1968-02-14",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ky1Z3iVNmfs",
+    "albums": [
+      {
+        "name": "Leaving Mood",
+        "youtubeLink": "https://www.youtube.com/watch?v=3RSfnuZuxXg"
+      },
+      {
+        "name": "John The Conquer Root",
+        "youtubeLink": "https://www.youtube.com/watch?v=5-_0rvlAxPI"
+      },
+      {
+        "name": "The Chicago Way",
+        "youtubeLink": "https://www.youtube.com/watch?v=o4115VsQiTE"
+      },
+      {
+        "name": "The Preacher, The Politician or the Pimp",
+        "youtubeLink": "https://www.youtube.com/watch?v=n4lLHIMIHS8"
+      },
+      {
+        "name": "Shut Up & Play!",
+        "youtubeLink": "https://www.youtube.com/watch?v=sx0Xf-FIjJk"
+      }
+    ],
+    "description": "Toronzo Cannon is a Chicago blues guitarist, vocalist and songwriter who grew up on the city's South Side near Theresa's Lounge, absorbing the electric blues of Buddy Guy and Junior Wells before taking up guitar himself in his twenties. A longtime CTA bus driver, he built his reputation gigging nights and weekends around Chicago before signing to Delmark and later Alligator Records, where his gritty guitar work and sharp, socially observant songwriting on albums like The Chicago Way and The Preacher, The Politician or the Pimp earned him multiple Blues Music Award nominations and recognition as one of the leading voices of contemporary Chicago blues.",
+    "activeFrom": "1996",
+    "influences": [
+      "albert-collins",
+      "bb-king",
+      "freddie-king",
+      "buddy-guy",
+      "jimi-hendrix"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "carl-weathersby",
+      "lv-banks"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Toronzo_Cannon",
     "secondaryInstruments": [
       "Vocals"
     ]
