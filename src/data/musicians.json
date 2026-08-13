@@ -41747,5 +41747,78 @@
     "secondaryInstruments": [
       "Vocals"
     ]
+  },
+  {
+    "id": "pops-staples",
+    "name": "Pops Staples",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Pop_Staples_2000.jpg/500px-Pop_Staples_2000.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Pop_Staples_2000.jpg/500px-Pop_Staples_2000.jpg",
+    "birthDate": "1914-12-28",
+    "birthPlace": "Winona, Mississippi",
+    "birthCoords": [
+      -89.7277,
+      33.4823
+    ],
+    "deathDate": "2000-12-19",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=2jW8d88SPM8",
+    "albums": [
+      {
+        "name": "Jammed Together (1969)",
+        "youtubeLink": "https://www.youtube.com/watch?v=TRKglUShHTg"
+      },
+      {
+        "name": "Father Father (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=2jW8d88SPM8"
+      },
+      {
+        "name": "Peace to the Neighborhood (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=dEmYBRpIcnQ"
+      }
+    ],
+    "description": "Roebuck \"Pops\" Staples was an American gospel and R&B guitarist and singer, patriarch of the Staple Singers alongside his children Mavis, Pervis, Yvonne, and Cleotha. Raised near the Dockery Plantation, he grew up hearing Charley Patton, Robert Johnson, and Son House, and carried their raw Delta guitar tone into gospel music after moving to Chicago in 1935. The family group’s hits \"I’ll Take You There\" and \"Respect Yourself\" fused gospel conviction with soul and civil-rights era protest. He later recorded a solo blues album, Father Father, winning the 1995 Grammy for Best Contemporary Blues Album, despite insisting for decades that he did not play the blues.",
+    "activeFrom": "1948",
+    "influences": [
+      "charley-patton",
+      "robert-johnson",
+      "son-house"
+    ],
+    "influencedBy": [
+      "bonnie-raitt"
+    ],
+    "playedWith": [
+      "mavis-staples",
+      "the-band"
+    ],
+    "secondaryStyles": [
+      "Soul Blues"
+    ],
+    "incomplete": false,
+    "source": "https://en.wikipedia.org/wiki/Pops_Staples"
   }
 ]
