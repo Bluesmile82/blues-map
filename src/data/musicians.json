@@ -41939,14 +41939,14 @@
     ],
     "spentTimePlaces": [
       {
-        "name": "Texas",
+        "place": "Texas",
         "coords": [
           -99.9018,
           31.9686
         ]
       },
       {
-        "name": "Houston",
+        "place": "Houston",
         "coords": [
           -95.3698,
           29.7604
