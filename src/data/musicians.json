@@ -42007,21 +42007,21 @@
     ],
     "spentTimePlaces": [
       {
-        "name": "Oakland",
+        "place": "Oakland",
         "coords": [
           -122.2712,
           37.8044
         ]
       },
       {
-        "name": "Texas",
+        "place": "Texas",
         "coords": [
           -99.9018,
           31.9686
         ]
       },
       {
-        "name": "Los Angeles",
+        "place": "Los Angeles",
         "coords": [
           -118.2437,
           34.0522
@@ -42054,6 +42054,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Roy_Hawkins",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
