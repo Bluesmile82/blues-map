@@ -14381,7 +14381,8 @@
     "influences": [],
     "influencedBy": [
       "john-p-hammond",
-      "barbara-lynn"
+      "barbara-lynn",
+      "juke-boy-bonner"
     ],
     "incomplete": false,
     "playedWith": [
@@ -18944,7 +18945,8 @@
       "alvin-youngblood-hart",
       "slim-harpo",
       "carolina-slim",
-      "peppermint-harris"
+      "peppermint-harris",
+      "juke-boy-bonner"
     ],
     "incomplete": false,
     "playedWith": [
@@ -21772,7 +21774,8 @@
       "otis-rush",
       "buddy-guy",
       "willie-dixon",
-      "charlie-musselwhite"
+      "charlie-musselwhite",
+      "juke-boy-bonner"
     ],
     "source": "https://en.wikipedia.org/wiki/Magic_Sam",
     "secondaryInstruments": [
@@ -29054,7 +29057,8 @@
       "lightnin-hopkins"
     ],
     "influencedBy": [
-      "the-fabulous-thunderbirds"
+      "the-fabulous-thunderbirds",
+      "juke-boy-bonner"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -41915,5 +41919,69 @@
     ],
     "incomplete": false,
     "source": "https://en.wikipedia.org/wiki/Pops_Staples"
+  },
+  {
+    "id": "juke-boy-bonner",
+    "name": "Juke Boy Bonner",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Juke%20Boy%20Bonner%20AABF%201970%20JT.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1932-03-22",
+    "birthPlace": "Bellville",
+    "birthCoords": [
+      -96.2586,
+      29.9472
+    ],
+    "deathDate": "1978-06-29",
+    "deathPlace": "Houston",
+    "deathCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Houston",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=fn17UbzWwOc",
+    "albums": [
+      {
+        "name": "I'm Going Back to the Country",
+        "youtubeLink": "https://www.youtube.com/watch?v=8xJ9Hu0R4NY"
+      },
+      {
+        "name": "The Struggle",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Weldon H. Philip Bonner, better known as Juke Boy Bonner, was a Texas blues singer, guitarist, and harmonica player who performed as a self-accompanied \"one-man band.\" Self-taught on guitar from age twelve and steeped in the juke joints of the Houston area, he recorded original songs for Goldband, Storyville, and Arhoolie Records, including the acclaimed albums \"I'm Going Back to the Country\" (1968) and \"The Struggle\" (1969), and toured Europe in 1969 alongside Clifton Chenier and Magic Sam.",
+    "activeFrom": "1948",
+    "influences": [
+      "lightnin-hopkins",
+      "jimmy-reed",
+      "slim-harpo"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "magic-sam"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Juke_Boy_Bonner",
+    "secondaryInstruments": [
+      "Harmonica",
+      "Vocals"
+    ]
   }
 ]
