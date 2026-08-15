@@ -1905,7 +1905,8 @@
       "john-lee-hooker",
       "t-bone-walker",
       "robert-lockwood-jr",
-      "roy-brown"
+      "roy-brown",
+      "roy-hawkins"
     ],
     "influencedBy": [
       "albert-king",
@@ -5643,7 +5644,8 @@
     "influencedBy": [
       "percy-mayfield",
       "paul-gayten",
-      "pete-mayes"
+      "pete-mayes",
+      "roy-hawkins"
     ],
     "incomplete": false,
     "playedWith": [
@@ -25882,7 +25884,8 @@
       "nat-king-cole",
       "charles-brown",
       "louis-jordan",
-      "art-tatum"
+      "art-tatum",
+      "roy-hawkins"
     ],
     "influencedBy": [
       "percy-mayfield",
@@ -33502,7 +33505,8 @@
       "ray-charles",
       "mahalia-jackson",
       "bessie-smith",
-      "otis-redding"
+      "otis-redding",
+      "roy-hawkins"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -41981,6 +41985,76 @@
     "source": "https://en.wikipedia.org/wiki/Juke_Boy_Bonner",
     "secondaryInstruments": [
       "Harmonica",
+      "Vocals"
+    ]
+  },
+  {
+    "id": "roy-hawkins",
+    "name": "Roy Hawkins",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1903-02-07",
+    "birthPlace": "Jefferson",
+    "birthCoords": [
+      -94.3494,
+      32.7611
+    ],
+    "deathDate": "1974-03-19",
+    "deathPlace": "Compton",
+    "deathCoords": [
+      -118.225,
+      33.896666666667
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Oakland",
+        "coords": [
+          -122.2712,
+          37.8044
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=vQzu9SIEi1Y",
+    "albums": [
+      {
+        "name": "The Thrill Is Gone (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=vr2ZUJPonF8"
+      },
+      {
+        "name": "Bad Luck Is Falling (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=AH7rmOA7M8g"
+      }
+    ],
+    "description": "Roy Theodore Hawkins was a Texas-born, Oakland-based blues singer and pianist whose \"soulful, doom-laden\" style, shaped in part by Charles Brown's moody after-hours piano blues, was discovered by producer Bob Geddins in the mid-1940s. His 1950 hit \"Why Do Things Happen to Me\" and 1951 single \"The Thrill Is Gone\" for Modern Records established him as a key figure of the postwar West Coast blues scene. \"The Thrill Is Gone\" was later reworked into a career-defining hit for B.B. King, and Hawkins's songs were also covered by Ray Charles and Aretha Franklin.",
+    "activeFrom": "1945",
+    "influences": [
+      "charles-brown"
+    ],
+    "influencedBy": [
+      "bb-king",
+      "ray-charles",
+      "aretha-franklin"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Roy_Hawkins",
+    "secondaryInstruments": [
       "Vocals"
     ]
   }
