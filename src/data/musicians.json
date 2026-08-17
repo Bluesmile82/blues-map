@@ -42087,7 +42087,7 @@
     "deathPlace": null,
     "deathCoords": null,
     "spentTimePlaces": [],
-    "instrument": "Harmonica, Voice",
+    "instrument": "Harmonica",
     "bluesStyle": "Jump Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=--AF7MvEe0w",
     "albums": [
@@ -42115,6 +42115,8 @@
       "the-fabulous-thunderbirds"
     ],
     "source": "https://en.wikipedia.org/wiki/Kim_Wilson",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
