@@ -1030,7 +1030,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "kim-wilson"
+    ],
     "source": "https://en.wikipedia.org/wiki/Anson_Funderburgh",
     "secondaryInstruments": []
   },
@@ -2845,7 +2847,8 @@
     "influencedBy": [
       "james-cotton",
       "little-walter",
-      "carey-bell"
+      "carey-bell",
+      "kim-wilson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -8054,7 +8057,8 @@
     "incomplete": false,
     "playedWith": [
       "jimmie-vaughan",
-      "ronnie-earl"
+      "ronnie-earl",
+      "kim-wilson"
     ],
     "source": "https://en.wikipedia.org/wiki/Duke_Robillard",
     "secondaryInstruments": [
@@ -13031,7 +13035,9 @@
       "lil-ed-williams",
       "lester-williams"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "kim-wilson"
+    ],
     "incomplete": false,
     "playedWith": [
       "howlin-wolf",
@@ -14116,7 +14122,8 @@
       "bb-king",
       "eric-clapton",
       "robert-cray",
-      "buddy-guy"
+      "buddy-guy",
+      "kim-wilson"
     ],
     "source": "https://en.wikipedia.org/wiki/Jimmie_Vaughan",
     "secondaryInstruments": [
@@ -17253,7 +17260,9 @@
       "lester-williams",
       "sista-monica-parker"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "kim-wilson"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -19986,7 +19995,8 @@
     "influencedBy": [
       "little-hatch",
       "jimmy-mccracklin",
-      "rick-estrin"
+      "rick-estrin",
+      "kim-wilson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23666,7 +23676,8 @@
       "guitar-slim",
       "slim-harpo",
       "lonesome-sundown",
-      "otis-rush"
+      "otis-rush",
+      "kim-wilson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -29519,7 +29530,8 @@
       "junior-wells",
       "gene-birdlegg-pittman",
       "rick-estrin",
-      "cedell-davis"
+      "cedell-davis",
+      "kim-wilson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30929,7 +30941,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "kim-wilson"
+    ],
     "source": "https://en.wikipedia.org/wiki/The_Fabulous_Thunderbirds",
     "secondaryInstruments": [
       "Bass",
@@ -42057,5 +42071,50 @@
     "secondaryInstruments": [
       "Vocals"
     ]
+  },
+  {
+    "id": "kim-wilson",
+    "name": "Kim Wilson",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/KimWilson1996.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1951-01-06",
+    "birthPlace": "Detroit",
+    "birthCoords": [
+      -83.0475,
+      42.331666666667
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Harmonica, Voice",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=--AF7MvEe0w",
+    "albums": [
+      {
+        "name": "The Complete My Blues Sessions (2013)",
+        "youtubeLink": "https://www.youtube.com/watch?v=5O4jRO3UVSo"
+      }
+    ],
+    "description": "Kim Wilson is an American blues vocalist and harmonica player best known as the longtime frontman of The Fabulous Thunderbirds, whose 1986 hits 'Tuff Enuff' and 'Wrap It Up' brought contemporary blues to mainstream radio. A first-call harmonica player steeped in the Chicago blues tradition, he has backed and recorded with numerous blues greats over a solo career that runs alongside his work with the Thunderbirds.",
+    "activeFrom": "1974",
+    "influences": [
+      "little-walter",
+      "muddy-waters",
+      "james-cotton",
+      "junior-wells",
+      "sonny-boy-williamson",
+      "big-walter-horton"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "jimmie-vaughan",
+      "duke-robillard",
+      "anson-funderburgh",
+      "the-fabulous-thunderbirds"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Kim_Wilson",
+    "secondaryInstruments": []
   }
 ]
