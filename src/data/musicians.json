@@ -11695,10 +11695,11 @@
     "activeFrom": "1898",
     "influences": [
       "big-joe-turner",
-      "ike-turner",
       "titus-turner"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "ike-turner"
+    ],
     "incomplete": false,
     "playedWith": [
       "jim-jackson",
@@ -12679,11 +12680,9 @@
     "description": "Izear Luster \"Ike\" Turner Jr.  (November 5, 1931 – December 12, 2007) was an American musician, bandleader, songwriter, record producer, and talent scout.  An early pioneer of 1950s rock and roll, he is best known for his work in the 1960s and 1970s with his wife Tina Turner as the leader of the Ike & Tina Turner Revue.",
     "activeFrom": "1951",
     "influences": [
-      "rosco-gordon"
-    ],
-    "influencedBy": [
       "gus-cannon"
     ],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "bb-king",
@@ -42164,7 +42163,7 @@
       },
       {
         "name": "Volume 2: The Memphis Sessions (1982)",
-        "youtubeLink": "https://www.youtube.com/watch?v=J0vUqvfHQeQ"
+        "youtubeLink": null
       },
       {
         "name": "Let's Get High (1990)",
@@ -42175,15 +42174,13 @@
         "youtubeLink": "https://www.youtube.com/watch?v=1HCjU8vWzK8"
       }
     ],
-    "description": "Rosco Gordon (1928-2002) was a Memphis blues pianist and singer whose off-beat, syncopated shuffle rhythm — heard on hits like 'Booted' (1951) and 'No More Doggin'' (1952) — became a widely cited forerunner of the rhythms that shaped Jamaican ska and reggae. A product of the same Beale Street scene that produced B.B. King, Bobby 'Blue' Bland, and Junior Parker, he recorded prolifically for Sun, RPM/Modern, Duke, and Vee-Jay through the 1950s before relocating to New York, where he ran a dry-cleaning business and continued performing blues until his death.",
+    "description": "Rosco Gordon (1928-2002) was a Memphis blues pianist and singer whose off-beat, syncopated shuffle rhythm — heard on hits like 'Booted' (1951) and No More Doggin' (1952) — became a widely cited forerunner of the rhythms that shaped Jamaican ska and reggae. A product of the same Beale Street scene that produced B.B. King, Bobby 'Blue' Bland, and Junior Parker, he recorded prolifically for Sun, RPM/Modern, Duke, and Vee-Jay through the 1950s before relocating to New York, where he ran a dry-cleaning business and continued performing blues until his death.",
     "activeFrom": "1950",
     "influences": [
       "amos-milburn",
       "louis-jordan"
     ],
-    "influencedBy": [
-      "ike-turner"
-    ],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "bb-king",
