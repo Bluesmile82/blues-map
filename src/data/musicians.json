@@ -852,7 +852,8 @@
     "activeFrom": "1947",
     "influences": [],
     "influencedBy": [
-      "paul-gayten"
+      "paul-gayten",
+      "rosco-gordon"
     ],
     "incomplete": false,
     "playedWith": [
@@ -1931,7 +1932,8 @@
       "buddy-guy",
       "albert-king",
       "freddie-king",
-      "barbara-lynn"
+      "barbara-lynn",
+      "rosco-gordon"
     ],
     "source": "https://en.wikipedia.org/wiki/B._B._King",
     "secondaryInstruments": [
@@ -4027,7 +4029,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "rosco-gordon"
+    ],
     "source": "https://en.wikipedia.org/wiki/Bobby_Bland",
     "secondaryInstruments": []
   },
@@ -11691,10 +11695,11 @@
     "activeFrom": "1898",
     "influences": [
       "big-joe-turner",
-      "ike-turner",
       "titus-turner"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "ike-turner"
+    ],
     "incomplete": false,
     "playedWith": [
       "jim-jackson",
@@ -12674,10 +12679,10 @@
     ],
     "description": "Izear Luster \"Ike\" Turner Jr.  (November 5, 1931 – December 12, 2007) was an American musician, bandleader, songwriter, record producer, and talent scout.  An early pioneer of 1950s rock and roll, he is best known for his work in the 1960s and 1970s with his wife Tina Turner as the leader of the Ike & Tina Turner Revue.",
     "activeFrom": "1951",
-    "influences": [],
-    "influencedBy": [
+    "influences": [
       "gus-cannon"
     ],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "bb-king",
@@ -17102,7 +17107,8 @@
       "howlin-wolf",
       "bobby-blue-bland",
       "bb-king",
-      "ike-turner"
+      "ike-turner",
+      "rosco-gordon"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Parker",
     "secondaryInstruments": [
@@ -20745,7 +20751,9 @@
     "description": "Louis Thomas Jordan (July 8, 1908 – February 4, 1975) was an American saxophonist, multi-instrumentalist, songwriter and bandleader who was popular from the late 1930s to the early 1950s.  Known as \"the King of the Jukebox\", he earned his highest profile towards the end of the swing era. \nSpecializing in the alto sax, Jordan played all forms of the saxophone, as well as piano and clarinet.",
     "activeFrom": "1932",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "rosco-gordon"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Caldonia",
@@ -42120,6 +42128,69 @@
     "secondaryInstruments": [
       "Vocals"
     ]
+  },
+  {
+    "id": "rosco-gordon",
+    "name": "Rosco Gordon",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1928-04-10",
+    "birthPlace": "Memphis",
+    "birthCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "deathDate": "2002-07-11",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.00611111111111,
+      40.71277777777778
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Gbfnh1oVTk0",
+    "albums": [
+      {
+        "name": "The Legendary Sun Performers: Rosco Gordon (1977)",
+        "youtubeLink": "https://www.youtube.com/watch?v=J0vUqvfHQeQ"
+      },
+      {
+        "name": "The Best Of Rosco Gordon Volume One (1980)",
+        "youtubeLink": "https://www.youtube.com/watch?v=W3u8cncvRIw"
+      },
+      {
+        "name": "No More Doggin’ (1982)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Is62Y7_U1-Y"
+      },
+      {
+        "name": "Volume 2: The Memphis Sessions (1982)",
+        "youtubeLink": null
+      },
+      {
+        "name": "Let's Get High (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=VTOb74-kFGs"
+      },
+      {
+        "name": "Rosco's Rhythm (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=1HCjU8vWzK8"
+      }
+    ],
+    "description": "Rosco Gordon (1928-2002) was a Memphis blues pianist and singer whose off-beat, syncopated shuffle rhythm — heard on hits like 'Booted' (1951) and No More Doggin' (1952) — became a widely cited forerunner of the rhythms that shaped Jamaican ska and reggae. A product of the same Beale Street scene that produced B.B. King, Bobby 'Blue' Bland, and Junior Parker, he recorded prolifically for Sun, RPM/Modern, Duke, and Vee-Jay through the 1950s before relocating to New York, where he ran a dry-cleaning business and continued performing blues until his death.",
+    "activeFrom": "1950",
+    "influences": [
+      "amos-milburn",
+      "louis-jordan"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bb-king",
+      "bobby-blue-bland",
+      "junior-parker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Rosco_Gordon",
+    "secondaryInstruments": []
   },
   {
     "id": "hammie-nixon",
