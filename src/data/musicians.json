@@ -29029,7 +29029,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "sonny-boy-williamson-i"
+      "sonny-boy-williamson-i",
+      "hammie-nixon"
     ],
     "source": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
     "secondaryInstruments": []
@@ -32982,7 +32983,8 @@
     "incomplete": false,
     "playedWith": [
       "sleepy-john-estes",
-      "taj-mahal"
+      "taj-mahal",
+      "hammie-nixon"
     ],
     "source": "https://en.wikipedia.org/wiki/Yank_Rachell",
     "secondaryInstruments": [
@@ -42118,5 +42120,48 @@
     "secondaryInstruments": [
       "Vocals"
     ]
+  },
+  {
+    "id": "hammie-nixon",
+    "name": "Hammie Nixon",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1908-01-22",
+    "birthPlace": "Brownsville",
+    "birthCoords": [
+      -89.260902,
+      35.590558
+    ],
+    "deathDate": "1984-08-17",
+    "deathPlace": "Jackson",
+    "deathCoords": [
+      -88.81775,
+      35.614444444444445
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Harmonica",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=14mbn4sWXgM",
+    "albums": [
+      {
+        "name": "Tennessee Blues Vol.2 (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=l9-G1hZsZg0"
+      },
+      {
+        "name": "The Man Who Cried The Blues 1929-1941 (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=4SxCV6YcbSU"
+      }
+    ],
+    "description": "Hammie Nixon was an American blues harmonica and jug player from Brownsville, Tennessee, best known as the lifelong musical partner of guitarist Sleepy John Estes, with whom he performed and recorded from the late 1920s into the 1970s. His driving, vocal-like harmonica lines and jug-band rhythms anchored Estes' recordings for Victor, Decca, and later Delmark, helping define the raw, conversational sound of West Tennessee country blues. Nixon also recorded and toured with mandolinist Yank Rachell, and remained active into the folk and blues revival, performing at festivals well into the 1980s.",
+    "activeFrom": "1929",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "sleepy-john-estes",
+      "yank-rachell"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Hammie_Nixon",
+    "secondaryInstruments": []
   }
 ]
