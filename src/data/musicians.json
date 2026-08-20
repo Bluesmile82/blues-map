@@ -3910,7 +3910,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "nappy-brown"
+    ],
     "source": "https://en.wikipedia.org/wiki/Bob_Margolin",
     "secondaryInstruments": []
   },
@@ -17179,7 +17181,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "nappy-brown"
+    ],
     "source": "https://en.wikipedia.org/wiki/Junior_Watson",
     "secondaryInstruments": [
       "Vocals"
@@ -25904,7 +25908,8 @@
       "charles-brown",
       "louis-jordan",
       "art-tatum",
-      "roy-hawkins"
+      "roy-hawkins",
+      "nappy-brown"
     ],
     "influencedBy": [
       "percy-mayfield",
@@ -28391,7 +28396,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "jody-williams"
+      "jody-williams",
+      "nappy-brown"
     ],
     "source": "https://en.wikipedia.org/wiki/Sean_Costello",
     "secondaryInstruments": [
@@ -32918,7 +32924,8 @@
       "big-joe-turner"
     ],
     "influencedBy": [
-      "roy-brown"
+      "roy-brown",
+      "nappy-brown"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -40559,7 +40566,8 @@
     "influencedBy": [
       "elvis-presley",
       "bb-king",
-      "bobby-blue-bland"
+      "bobby-blue-bland",
+      "nappy-brown"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -42236,5 +42244,70 @@
     "secondaryInstruments": [
       "Jug"
     ]
+  },
+  {
+    "id": "nappy-brown",
+    "name": "Nappy Brown",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/NappyBrownTokyo1996.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1929-10-12",
+    "birthPlace": "Charlotte",
+    "birthCoords": [
+      -80.843333333333,
+      35.226944444444
+    ],
+    "deathDate": "2008-09-20",
+    "deathPlace": "Charlotte",
+    "deathCoords": [
+      -80.843333333333,
+      35.226944444444
+    ],
+    "spentTimePlaces": [
+      {
+        "name": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Voice",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Ij5b_vx1lQg",
+    "albums": [
+      {
+        "name": "I Done Got Over (1984)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cXZ321AaE5g"
+      },
+      {
+        "name": "Night Time Is the Right Time (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=yV51YIZxQYw"
+      },
+      {
+        "name": "Down in the Alley: The Complete Savoy Singles As & Bs 1954-1962 (2016)",
+        "youtubeLink": "https://www.youtube.com/watch?v=PKE9TW5NGec"
+      },
+      {
+        "name": "Don't Be Angry",
+        "youtubeLink": "https://www.youtube.com/watch?v=J0vUqvfHQeQ"
+      }
+    ],
+    "description": "Napoleon Brown Goodson Culp, known as Nappy Brown, was an American blues and R&B shouter from Charlotte, North Carolina, whose gospel-rooted, melismatic vocal style helped bridge 1950s jump blues and the emerging sound of soul music. Recording for Savoy Records, he scored hits including \"Don't Be Angry\" (No. 2 R&B, 1955) and \"Night Time Is the Right Time\" (1957), the latter later popularized by Ray Charles. After decades away from music, Brown made a celebrated comeback in the 1980s and 1990s, recording and performing with blues musicians including Bob Margolin, Junior Watson, and Sean Costello until his death in 2008.",
+    "activeFrom": "1954",
+    "influences": [
+      "roy-brown",
+      "wynonie-harris"
+    ],
+    "influencedBy": [
+      "ray-charles"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "bob-margolin",
+      "junior-watson",
+      "sean-costello"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Nappy_Brown",
+    "secondaryInstruments": []
   }
 ]
