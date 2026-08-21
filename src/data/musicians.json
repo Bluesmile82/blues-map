@@ -217,7 +217,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "meade-lux-lewis"
+      "meade-lux-lewis",
+      "pete-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Albert_Ammons",
     "secondaryInstruments": []
@@ -2427,7 +2428,8 @@
     "incomplete": false,
     "playedWith": [
       "meade-lux-lewis",
-      "t-bone-walker"
+      "t-bone-walker",
+      "pete-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Joe_Turner",
     "secondaryInstruments": []
@@ -12684,7 +12686,9 @@
     "influences": [
       "gus-cannon"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "pete-johnson"
+    ],
     "incomplete": false,
     "playedWith": [
       "bb-king",
@@ -22515,7 +22519,9 @@
       "big-maceo-merriweather"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "pete-johnson"
+    ],
     "source": "https://en.wikipedia.org/wiki/Meade_Lux_Lewis",
     "secondaryInstruments": []
   },
@@ -42308,6 +42314,52 @@
       "sean-costello"
     ],
     "source": "https://en.wikipedia.org/wiki/Nappy_Brown",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "pete-johnson",
+    "name": "Pete Johnson",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pete%20Johnson%2C%20New%20York%2C%20N.Y.%2C%20ca.%20Aug.%201946%20(William%20P.%20Gottlieb%2004651).jpg?width=500",
+    "image_source": null,
+    "birthDate": "1904-03-25",
+    "birthPlace": "Kansas City, Missouri",
+    "birthCoords": [
+      -94.583333333333,
+      39.05
+    ],
+    "deathDate": "1967-03-23",
+    "deathPlace": "Buffalo, New York",
+    "deathCoords": [
+      -78.87805555555556,
+      42.88638888888889
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=zLnxZMI_Fsw",
+    "albums": [
+      {
+        "name": "Roll 'Em Pete",
+        "youtubeLink": "https://www.youtube.com/watch?v=-cNW2dZMyWE"
+      },
+      {
+        "name": "Sixth Avenue Express",
+        "youtubeLink": "https://www.youtube.com/watch?v=zLnxZMI_Fsw"
+      }
+    ],
+    "description": "Pete Johnson was a Kansas City-born boogie-woogie pianist whose driving left-hand basslines and inventive right-hand improvisation made him, alongside Albert Ammons and Meade \"Lux\" Lewis, one-third of the celebrated \"Boogie Woogie Trio\" that helped ignite the national boogie-woogie craze after their 1938 appearance at John Hammond's \"From Spirituals to Swing\" concert at Carnegie Hall. His 1938 recording of \"Roll 'Em Pete\" with singer Big Joe Turner is widely cited as a forerunner of rock and roll, and his 1948 instrumental \"Rocket Boogie '88'\" directly influenced Ike Turner's 1951 hit \"Rocket 88,\" often called one of the first rock and roll records. Johnson later performed regularly at New York's Café Society before declining health curtailed his career, and he died in Buffalo, New York, in 1967.",
+    "activeFrom": "1922",
+    "influences": [
+      "ike-turner"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "big-joe-turner",
+      "albert-ammons",
+      "meade-lux-lewis"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Pete_Johnson_(musician)",
     "secondaryInstruments": []
   }
 ]
