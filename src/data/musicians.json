@@ -12684,11 +12684,10 @@
     "description": "Izear Luster \"Ike\" Turner Jr.  (November 5, 1931 – December 12, 2007) was an American musician, bandleader, songwriter, record producer, and talent scout.  An early pioneer of 1950s rock and roll, he is best known for his work in the 1960s and 1970s with his wife Tina Turner as the leader of the Ike & Tina Turner Revue.",
     "activeFrom": "1951",
     "influences": [
-      "gus-cannon"
-    ],
-    "influencedBy": [
+      "gus-cannon",
       "pete-johnson"
     ],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "bb-king",
@@ -22520,7 +22519,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "pete-johnson"
+      "pete-johnson",
+      "albert-ammons"
     ],
     "source": "https://en.wikipedia.org/wiki/Meade_Lux_Lewis",
     "secondaryInstruments": []
@@ -42349,10 +42349,10 @@
     ],
     "description": "Pete Johnson was a Kansas City-born boogie-woogie pianist whose driving left-hand basslines and inventive right-hand improvisation made him, alongside Albert Ammons and Meade \"Lux\" Lewis, one-third of the celebrated \"Boogie Woogie Trio\" that helped ignite the national boogie-woogie craze after their 1938 appearance at John Hammond's \"From Spirituals to Swing\" concert at Carnegie Hall. His 1938 recording of \"Roll 'Em Pete\" with singer Big Joe Turner is widely cited as a forerunner of rock and roll, and his 1948 instrumental \"Rocket Boogie '88'\" directly influenced Ike Turner's 1951 hit \"Rocket 88,\" often called one of the first rock and roll records. Johnson later performed regularly at New York's Café Society before declining health curtailed his career, and he died in Buffalo, New York, in 1967.",
     "activeFrom": "1922",
-    "influences": [
+    "influences": [],
+    "influencedBy": [
       "ike-turner"
     ],
-    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "big-joe-turner",
