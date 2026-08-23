@@ -42338,7 +42338,7 @@
         ]
       }
     ],
-    "instrument": "Guitar, Voice",
+    "instrument": "Guitar",
     "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=gLiN4kT1AVc",
     "albums": [
@@ -42369,6 +42369,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lil%27_Son_Jackson",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
