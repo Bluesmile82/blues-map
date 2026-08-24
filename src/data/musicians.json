@@ -25919,7 +25919,8 @@
     ],
     "influencedBy": [
       "percy-mayfield",
-      "quincy-jones"
+      "quincy-jones",
+      "latimore"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -30301,7 +30302,8 @@
       "clarence-garlow",
       "pete-mayes",
       "sean-costello",
-      "johnny-guitar-watson"
+      "johnny-guitar-watson",
+      "latimore"
     ],
     "incomplete": false,
     "playedWith": [
@@ -42315,6 +42317,52 @@
     ],
     "source": "https://en.wikipedia.org/wiki/Nappy_Brown",
     "secondaryInstruments": []
+  },
+  {
+    "id": "latimore",
+    "name": "Latimore",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Latimore.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1939-09-07",
+    "birthPlace": "Charleston, Tennessee",
+    "birthCoords": [
+      -84.756837,
+      35.284366
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=AFQ7xN3TYY4",
+    "albums": [
+      {
+        "name": "Sweet Vibrations (1976)",
+        "youtubeLink": "https://www.youtube.com/watch?v=377FX6dixjY"
+      },
+      {
+        "name": "Let's Straighten It Out (1974)",
+        "youtubeLink": "https://www.youtube.com/watch?v=J_ULnqVY7FM"
+      },
+      {
+        "name": "Somethin' 'Bout 'Cha (1976)",
+        "youtubeLink": "https://www.youtube.com/watch?v=-0b6FHliM2E"
+      }
+    ],
+    "description": "Latimore (born Benjamin William Lattimore) is an American soul-blues singer and pianist who became a key figure in the Miami soul scene of the 1970s, working as a session pianist for Henry Stone's TK Records while building his own recording career. His 1974 single 'Let's Straighten It Out' topped the R&B chart and became a soul-blues standard, and his jazzy reworking of T-Bone Walker's 'Stormy Monday' was an earlier hit. He was inducted into the Blues Hall of Fame in 2017 in recognition of his decades-long contribution to soul blues.",
+    "activeFrom": "1965",
+    "influences": [
+      "ray-charles",
+      "t-bone-walker"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Latimore_(musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   },
   {
     "id": "pete-johnson",
