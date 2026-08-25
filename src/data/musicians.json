@@ -42433,42 +42433,42 @@
     ],
     "spentTimePlaces": [
       {
-        "name": "London",
+        "place": "London",
         "coords": [
           -0.1276,
           51.5074
         ]
       },
       {
-        "name": "Nashville",
+        "place": "Nashville",
         "coords": [
           -86.7816,
           36.1627
         ]
       },
       {
-        "name": "Memphis",
+        "place": "Memphis",
         "coords": [
           -90.049,
           35.1495
         ]
       },
       {
-        "name": "Chicago",
+        "place": "Chicago",
         "coords": [
           -87.6298,
           41.8781
         ]
       },
       {
-        "name": "Texas",
+        "place": "Texas",
         "coords": [
           -99.9018,
           31.9686
         ]
       },
       {
-        "name": "Cincinnati",
+        "place": "Cincinnati",
         "coords": [
           -84.512,
           39.1031
