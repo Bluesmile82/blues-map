@@ -26589,7 +26589,8 @@
       "robert-lockwood-jr",
       "johny-shines",
       "ramblin-thomas",
-      "keb-mo"
+      "keb-mo",
+      "lonnie-mack"
     ],
     "incomplete": false,
     "playedWith": [
@@ -29966,7 +29967,8 @@
       "buddy-guy",
       "john-lee-hooker",
       "albert-collins",
-      "larry-davis"
+      "larry-davis",
+      "lonnie-mack"
     ],
     "influencedBy": [
       "sean-costello"
@@ -29977,7 +29979,8 @@
       "albert-king",
       "buddy-guy",
       "john-lee-hooker",
-      "albert-collins"
+      "albert-collins",
+      "lonnie-mack"
     ],
     "source": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
     "secondaryInstruments": [
@@ -30303,7 +30306,8 @@
       "pete-mayes",
       "sean-costello",
       "johnny-guitar-watson",
-      "latimore"
+      "latimore",
+      "lonnie-mack"
     ],
     "incomplete": false,
     "playedWith": [
@@ -42409,5 +42413,98 @@
     ],
     "source": "https://en.wikipedia.org/wiki/Pete_Johnson_(musician)",
     "secondaryInstruments": []
+  },
+  {
+    "id": "lonnie-mack",
+    "name": "Lonnie Mack",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/LonnieMackRisingSun.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1941-07-18",
+    "birthPlace": "West Harrison",
+    "birthCoords": [
+      -84.8208,
+      39.2614
+    ],
+    "deathDate": "2016-04-21",
+    "deathPlace": "Nashville",
+    "deathCoords": [
+      -86.77444444444444,
+      36.16222222222222
+    ],
+    "spentTimePlaces": [
+      {
+        "name": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "name": "Nashville",
+        "coords": [
+          -86.7816,
+          36.1627
+        ]
+      },
+      {
+        "name": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "name": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "name": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "name": "Cincinnati",
+        "coords": [
+          -84.512,
+          39.1031
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Blues Rock",
+    "youtubeLink": "https://www.youtube.com/watch?v=O9HUazfV0DI",
+    "albums": [
+      {
+        "name": "The Wham of that Memphis Man!",
+        "youtubeLink": "https://www.youtube.com/watch?v=f_e_K9rFMTg"
+      },
+      {
+        "name": "Strike Like Lightning",
+        "youtubeLink": "https://www.youtube.com/watch?v=4GsqNRBIr9s"
+      }
+    ],
+    "description": "Lonnie Mack (born Lonnie McIntosh) was an Indiana-born guitarist and singer whose 1963 instrumental hits \"Memphis\" and \"Wham!\", recorded on a Gibson Flying V, fused blues phrasing with blistering speed and helped pioneer the blues-rock guitar solo years before the genre had a name. His album The Wham of that Memphis Man! became a touchstone for a generation of rock and blues guitarists, and his raw, string-bending style directly shaped the playing of Stevie Ray Vaughan, who cited Mack as his first guitar hero and later produced Mack's acclaimed 1985 comeback album Strike Like Lightning. Mack also worked as a session guitarist and bassist in Cincinnati in the late 1950s and early 1960s, and is widely credited alongside Freddie King and Albert King as a bridge between blues, country, and rock guitar traditions.",
+    "activeFrom": "1954",
+    "influences": [
+      "robert-johnson",
+      "t-bone-walker"
+    ],
+    "influencedBy": [
+      "stevie-ray-vaughan"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "stevie-ray-vaughan"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Lonnie_Mack",
+    "secondaryInstruments": [
+      "Bass guitar",
+      "Vocals"
+    ]
   }
 ]
