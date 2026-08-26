@@ -3388,7 +3388,8 @@
       "t-bone-walker",
       "ramblin-thomas",
       "archie-edwards",
-      "robert-pete-williams"
+      "robert-pete-williams",
+      "lil-son-jackson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -20382,7 +20383,8 @@
     "activeFrom": "1925",
     "influences": [],
     "influencedBy": [
-      "ramblin-thomas"
+      "ramblin-thomas",
+      "lil-son-jackson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -42317,6 +42319,67 @@
     ],
     "source": "https://en.wikipedia.org/wiki/Nappy_Brown",
     "secondaryInstruments": []
+  },
+  {
+    "id": "lil-son-jackson",
+    "name": "Lil' Son Jackson",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1915-08-16",
+    "birthPlace": "Tyler",
+    "birthCoords": [
+      -95.30055555555556,
+      32.350833333333334
+    ],
+    "deathDate": "1976-05-30",
+    "deathPlace": "Dallas",
+    "deathCoords": [
+      -96.808888888889,
+      32.779166666667
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=gLiN4kT1AVc",
+    "albums": [
+      {
+        "name": "Rockin’ an’ Rollin’ (1961)",
+        "youtubeLink": "https://www.youtube.com/watch?v=WSQtSwguPBA"
+      },
+      {
+        "name": "The Complete Imperial Recordings (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6qakoPH9vwY"
+      },
+      {
+        "name": "Lil’ Son Jackson, Volume 2: Restless Blues (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=reY-r_KHiyw"
+      },
+      {
+        "name": "Lil’ Son Jackson, Volume 1: Rockin’ and Rollin’ (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=_Uh75UmUqJw"
+      }
+    ],
+    "description": "Melvin \"Lil' Son\" Jackson was a Texas blues singer and guitarist whose spare, plaintive style echoed the country-blues tradition of Blind Lemon Jefferson while anticipating the smoother postwar sound of the 1950s. Discovered by producer Bill Quinn in 1948, he scored a regional hit with 'Freedom Train Blues' for Gold Star Records before recording for Imperial Records through the mid-1950s, then largely retired from music after a car accident until a brief comeback recording session in 1960.",
+    "activeFrom": "1946",
+    "influences": [
+      "blind-lemon-jefferson",
+      "lonnie-johnson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Lil%27_Son_Jackson",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   },
   {
     "id": "latimore",
