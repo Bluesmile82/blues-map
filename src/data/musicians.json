@@ -42642,7 +42642,7 @@
       41.88194444444444
     ],
     "spentTimePlaces": [],
-    "instrument": "Guitar, Voice",
+    "instrument": "Guitar",
     "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=EoEUZsEUWeA",
     "albums": [
@@ -42669,6 +42669,8 @@
       "jimmy-dawkins"
     ],
     "source": "https://en.wikipedia.org/wiki/Mighty_Joe_Young",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
