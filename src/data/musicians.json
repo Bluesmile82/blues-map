@@ -3388,7 +3388,8 @@
       "t-bone-walker",
       "ramblin-thomas",
       "archie-edwards",
-      "robert-pete-williams"
+      "robert-pete-williams",
+      "lil-son-jackson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -9079,7 +9080,8 @@
     "influencedBy": [
       "j-b-hutto",
       "etta-james",
-      "hip-linkchain"
+      "hip-linkchain",
+      "sonny-landreth"
     ],
     "incomplete": false,
     "playedWith": [
@@ -9344,9 +9346,10 @@
       "albert-king",
       "jimmy-reed",
       "muddy-waters",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "sonny-landreth"
     ],
-    "source": "https://en.wikipedia.org/wiki/Eric_Clapton_(album)",
+    "source": "https://en.wikipedia.org/wiki/Eric_Clapton",
     "secondaryInstruments": [
       "Keyboards",
       "Vocals"
@@ -20382,7 +20385,8 @@
     "activeFrom": "1925",
     "influences": [],
     "influencedBy": [
-      "ramblin-thomas"
+      "ramblin-thomas",
+      "lil-son-jackson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23185,7 +23189,8 @@
     "activeFrom": "1928",
     "influences": [],
     "influencedBy": [
-      "taj-mahal"
+      "taj-mahal",
+      "sonny-landreth"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26590,7 +26595,8 @@
       "johny-shines",
       "ramblin-thomas",
       "keb-mo",
-      "lonnie-mack"
+      "lonnie-mack",
+      "sonny-landreth"
     ],
     "incomplete": false,
     "playedWith": [
@@ -42323,6 +42329,67 @@
     "secondaryInstruments": []
   },
   {
+    "id": "lil-son-jackson",
+    "name": "Lil' Son Jackson",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1915-08-16",
+    "birthPlace": "Tyler",
+    "birthCoords": [
+      -95.30055555555556,
+      32.350833333333334
+    ],
+    "deathDate": "1976-05-30",
+    "deathPlace": "Dallas",
+    "deathCoords": [
+      -96.808888888889,
+      32.779166666667
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=gLiN4kT1AVc",
+    "albums": [
+      {
+        "name": "Rockin’ an’ Rollin’ (1961)",
+        "youtubeLink": "https://www.youtube.com/watch?v=WSQtSwguPBA"
+      },
+      {
+        "name": "The Complete Imperial Recordings (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6qakoPH9vwY"
+      },
+      {
+        "name": "Lil’ Son Jackson, Volume 2: Restless Blues (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=reY-r_KHiyw"
+      },
+      {
+        "name": "Lil’ Son Jackson, Volume 1: Rockin’ and Rollin’ (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=_Uh75UmUqJw"
+      }
+    ],
+    "description": "Melvin \"Lil' Son\" Jackson was a Texas blues singer and guitarist whose spare, plaintive style echoed the country-blues tradition of Blind Lemon Jefferson while anticipating the smoother postwar sound of the 1950s. Discovered by producer Bill Quinn in 1948, he scored a regional hit with 'Freedom Train Blues' for Gold Star Records before recording for Imperial Records through the mid-1950s, then largely retired from music after a car accident until a brief comeback recording session in 1960.",
+    "activeFrom": "1946",
+    "influences": [
+      "blind-lemon-jefferson",
+      "lonnie-johnson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Lil%27_Son_Jackson",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
     "id": "latimore",
     "name": "Latimore",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Latimore.jpg?width=500",
@@ -42506,5 +42573,52 @@
       "Bass guitar",
       "Vocals"
     ]
+  },
+  {
+    "id": "sonny-landreth",
+    "name": "Sonny Landreth",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1951-02-01",
+    "birthPlace": "Canton, Mississippi",
+    "birthCoords": [
+      -90.0317,
+      32.6119
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=VoGxhzrAEt4",
+    "albums": [
+      {
+        "name": "Prodigal Son: The Collection (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Uu067pALmVQ"
+      },
+      {
+        "name": "Prodigal Son (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=I4KHFRWJ6Lo"
+      },
+      {
+        "name": "Mississippi Blues (2010)",
+        "youtubeLink": "https://www.youtube.com/watch?v=3NKcMAuwEbk"
+      }
+    ],
+    "description": "Sonny Landreth is a Louisiana slide guitarist celebrated for pioneering a 'slide-behind-the-slide' technique, fretting notes with his left hand behind the slide so he can sound chords, bass lines, and melody simultaneously. Raised in Lafayette, Louisiana, and steeped in the region's Cajun and zydeco traditions alongside Delta blues, he served as guitarist in zydeco king Clifton Chenier's band before launching a solo career, and he became a recurring guest at Eric Clapton's Crossroads Guitar Festivals, where Clapton has praised him as one of the most underrated guitarists alive. His fusion of swamp blues, rock, and Louisiana roots music has made him one of the most influential and technically innovative slide guitarists of his generation.",
+    "activeFrom": "1973",
+    "influences": [
+      "robert-johnson",
+      "elmore-james",
+      "mississippi-john-hurt"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "eric-clapton"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Sonny_Landreth",
+    "secondaryInstruments": []
   }
 ]
