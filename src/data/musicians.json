@@ -9080,7 +9080,8 @@
     "influencedBy": [
       "j-b-hutto",
       "etta-james",
-      "hip-linkchain"
+      "hip-linkchain",
+      "sonny-landreth"
     ],
     "incomplete": false,
     "playedWith": [
@@ -9345,9 +9346,10 @@
       "albert-king",
       "jimmy-reed",
       "muddy-waters",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "sonny-landreth"
     ],
-    "source": "https://en.wikipedia.org/wiki/Eric_Clapton_(album)",
+    "source": "https://en.wikipedia.org/wiki/Eric_Clapton",
     "secondaryInstruments": [
       "Keyboards",
       "Vocals"
@@ -23187,7 +23189,8 @@
     "activeFrom": "1928",
     "influences": [],
     "influencedBy": [
-      "taj-mahal"
+      "taj-mahal",
+      "sonny-landreth"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26591,7 +26594,8 @@
       "robert-lockwood-jr",
       "johny-shines",
       "ramblin-thomas",
-      "keb-mo"
+      "keb-mo",
+      "sonny-landreth"
     ],
     "incomplete": false,
     "playedWith": [
@@ -42471,6 +42475,53 @@
       "meade-lux-lewis"
     ],
     "source": "https://en.wikipedia.org/wiki/Pete_Johnson_(musician)",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "sonny-landreth",
+    "name": "Sonny Landreth",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1951-02-01",
+    "birthPlace": "Canton, Mississippi",
+    "birthCoords": [
+      -90.0317,
+      32.6119
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=VoGxhzrAEt4",
+    "albums": [
+      {
+        "name": "Prodigal Son: The Collection (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Uu067pALmVQ"
+      },
+      {
+        "name": "Prodigal Son (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=I4KHFRWJ6Lo"
+      },
+      {
+        "name": "Mississippi Blues (2010)",
+        "youtubeLink": "https://www.youtube.com/watch?v=3NKcMAuwEbk"
+      }
+    ],
+    "description": "Sonny Landreth is a Louisiana slide guitarist celebrated for pioneering a 'slide-behind-the-slide' technique, fretting notes with his left hand behind the slide so he can sound chords, bass lines, and melody simultaneously. Raised in Lafayette, Louisiana, and steeped in the region's Cajun and zydeco traditions alongside Delta blues, he served as guitarist in zydeco king Clifton Chenier's band before launching a solo career, and he became a recurring guest at Eric Clapton's Crossroads Guitar Festivals, where Clapton has praised him as one of the most underrated guitarists alive. His fusion of swamp blues, rock, and Louisiana roots music has made him one of the most influential and technically innovative slide guitarists of his generation.",
+    "activeFrom": "1973",
+    "influences": [
+      "robert-johnson",
+      "elmore-james",
+      "mississippi-john-hurt"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "eric-clapton"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Sonny_Landreth",
     "secondaryInstruments": []
   }
 ]
