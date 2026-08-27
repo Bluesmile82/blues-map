@@ -12481,7 +12481,8 @@
     "influences": [
       "charley-patton",
       "robert-johnson",
-      "t-bone-walker"
+      "t-bone-walker",
+      "byther-smith"
     ],
     "influencedBy": [
       "eric-clapton",
@@ -13563,7 +13564,8 @@
       "muddy-waters",
       "john-lee-hooker",
       "blind-lemon-jefferson",
-      "lightnin-hopkins"
+      "lightnin-hopkins",
+      "byther-smith"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -26674,7 +26676,8 @@
     "description": "Robert Lockwood Jr. was the only guitarist to have learned directly from Robert Johnson, who lived with Lockwood's mother for 10 years. He pioneered blues radio as one of the first black entertainers on King Biscuit Time in 1941, collaborated extensively with Sonny Boy Williamson II, and played on Little Walter's #1 hit 'My Babe'. He won a Grammy Award in 2008 for Best Traditional Blues Album.",
     "activeFrom": "1935",
     "influences": [
-      "robert-johnson"
+      "robert-johnson",
+      "byther-smith"
     ],
     "influencedBy": [
       "bb-king"
@@ -42619,6 +42622,68 @@
       "eric-clapton"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Landreth",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "byther-smith",
+    "name": "Byther Smith",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1932-04-17",
+    "birthPlace": "Monticello, Mississippi",
+    "birthCoords": [
+      -90.11,
+      31.5542
+    ],
+    "deathDate": "2021-09-10",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM",
+    "albums": [
+      {
+        "name": "Addressing the Nation with the Blues (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM"
+      },
+      {
+        "name": "Housefire (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=V73PLNEkQYg"
+      },
+      {
+        "name": "Mississippi Kid (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=P1LsnyjQJgo"
+      }
+    ],
+    "description": "Byther Smith was a Chicago blues guitarist and singer born in Monticello, Mississippi, who migrated to Chicago in the mid-1950s at the urging of his first cousin J.B. Lenoir. He built his reputation as a first-call rhythm and session guitarist, working regularly behind Otis Rush, playing alongside Junior Wells at Theresa's Tavern, and touring with Big Mama Thornton and George \"Harmonica\" Smith, before stepping out as a bandleader with albums like Addressing the Nation with the Blues and Housefire. His tough, deeply personal songwriting and stinging, economical guitar style made him one of the most respected sidemen-turned-leaders of Chicago's postwar blues scene.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [
+      "jb-lenoir",
+      "robert-lockwood-jr",
+      "hubert-sumlin"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "otis-rush",
+      "junior-wells",
+      "sunnyland-slim",
+      "big-mama-thornton",
+      "george-harmonica-smith"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Byther_Smith",
     "secondaryInstruments": []
   }
 ]
