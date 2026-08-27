@@ -12481,14 +12481,14 @@
     "influences": [
       "charley-patton",
       "robert-johnson",
-      "t-bone-walker",
-      "byther-smith"
+      "t-bone-walker"
     ],
     "influencedBy": [
       "eric-clapton",
       "keith-richards",
       "jimi-hendrix",
-      "stevie-ray-vaughan"
+      "stevie-ray-vaughan",
+      "byther-smith"
     ],
     "incomplete": false,
     "playedWith": [
@@ -13564,10 +13564,11 @@
       "muddy-waters",
       "john-lee-hooker",
       "blind-lemon-jefferson",
-      "lightnin-hopkins",
+      "lightnin-hopkins"
+    ],
+    "influencedBy": [
       "byther-smith"
     ],
-    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson",
@@ -26676,11 +26677,11 @@
     "description": "Robert Lockwood Jr. was the only guitarist to have learned directly from Robert Johnson, who lived with Lockwood's mother for 10 years. He pioneered blues radio as one of the first black entertainers on King Biscuit Time in 1941, collaborated extensively with Sonny Boy Williamson II, and played on Little Walter's #1 hit 'My Babe'. He won a Grammy Award in 2008 for Best Traditional Blues Album.",
     "activeFrom": "1935",
     "influences": [
-      "robert-johnson",
-      "byther-smith"
+      "robert-johnson"
     ],
     "influencedBy": [
-      "bb-king"
+      "bb-king",
+      "byther-smith"
     ],
     "incomplete": false,
     "playedWith": [
@@ -42669,12 +42670,12 @@
     ],
     "description": "Byther Smith was a Chicago blues guitarist and singer born in Monticello, Mississippi, who migrated to Chicago in the mid-1950s at the urging of his first cousin J.B. Lenoir. He built his reputation as a first-call rhythm and session guitarist, working regularly behind Otis Rush, playing alongside Junior Wells at Theresa's Tavern, and touring with Big Mama Thornton and George \"Harmonica\" Smith, before stepping out as a bandleader with albums like Addressing the Nation with the Blues and Housefire. His tough, deeply personal songwriting and stinging, economical guitar style made him one of the most respected sidemen-turned-leaders of Chicago's postwar blues scene.",
     "activeFrom": "1955",
-    "influences": [],
-    "influencedBy": [
+    "influences": [
       "jb-lenoir",
       "robert-lockwood-jr",
       "hubert-sumlin"
     ],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "otis-rush",
@@ -42684,6 +42685,8 @@
       "george-harmonica-smith"
     ],
     "source": "https://en.wikipedia.org/wiki/Byther_Smith",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
