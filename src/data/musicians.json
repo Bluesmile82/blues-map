@@ -42646,7 +42646,7 @@
     "deathCoords": null,
     "spentTimePlaces": [
       {
-        "name": "Chicago",
+        "place": "Chicago",
         "coords": [
           -87.6298,
           41.8781
