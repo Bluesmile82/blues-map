@@ -527,7 +527,9 @@
     "influences": [
       "ma-rainey"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "georgia-white"
+    ],
     "incomplete": false,
     "playedWith": [
       "bessie-smith",
@@ -2048,7 +2050,8 @@
       "ma-rainey"
     ],
     "influencedBy": [
-      "lucille-hegamin"
+      "lucille-hegamin",
+      "georgia-white"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -2226,7 +2229,8 @@
       "son-house",
       "blind-lemon-jefferson",
       "roosevelt-sykes",
-      "lonnie-johnson"
+      "lonnie-johnson",
+      "georgia-white"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Bill_Broonzy",
     "secondaryInstruments": [
@@ -5002,7 +5006,8 @@
       "peetie-wheatstraw",
       "memphis-minnie",
       "scrapper-blackwell",
-      "leroy-carr"
+      "leroy-carr",
+      "georgia-white"
     ],
     "source": "https://en.wikipedia.org/wiki/Bumble_Bee_Slim",
     "secondaryInstruments": [
@@ -12581,7 +12586,9 @@
     "influences": [
       "ma-rainey"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "georgia-white"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Ida_Cox",
@@ -20393,7 +20400,8 @@
       "victoria-spivey",
       "alger-texas-alexander",
       "bessie-smith",
-      "roosevelt-sykes"
+      "roosevelt-sykes",
+      "georgia-white"
     ],
     "source": "https://en.wikipedia.org/wiki/Lonnie_Johnson_(musician)",
     "secondaryInstruments": [
@@ -21722,7 +21730,8 @@
     "influencedBy": [
       "bessie-smith",
       "alberta-hunter",
-      "lucille-hegamin"
+      "lucille-hegamin",
+      "georgia-white"
     ],
     "incomplete": false,
     "playedWith": [
@@ -42620,5 +42629,61 @@
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Landreth",
     "secondaryInstruments": []
+  },
+  {
+    "id": "georgia-white",
+    "name": "Georgia White",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1903-03-09",
+    "birthPlace": "Sandersville, Georgia",
+    "birthCoords": [
+      -82.809722222222,
+      32.981944444444
+    ],
+    "deathDate": "1980",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "name": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=N3PMbRYYCV4",
+    "albums": [
+      {
+        "name": "You Done Lost Your Good Thing Now (1935)",
+        "youtubeLink": "https://www.youtube.com/watch?v=OmxMC5h7mso"
+      },
+      {
+        "name": "Alley Boogie (1937)",
+        "youtubeLink": "https://www.youtube.com/watch?v=irl07IzYkm4"
+      }
+    ],
+    "description": "Georgia White was an American classic blues singer and pianist who became one of the most prolific female blues recording artists of the 1930s, cutting well over 100 sides for Decca between 1935 and 1941. Raised in Sandersville, Georgia before settling in Chicago, she is best remembered for the risque hit \"You Done Lost Your Good Thing Now\" and the instrumental \"Alley Boogie,\" and she frequently recorded and toured alongside guitarist Lonnie Johnson and fellow Chicago blues singer Bumble Bee Slim before joining Big Bill Broonzy's Laughing Trio as pianist in the late 1940s. Her smooth, confident vocal style carried the classic blues tradition of Bessie Smith and Ma Rainey into the swing era.",
+    "activeFrom": "1923",
+    "influences": [
+      "bessie-smith",
+      "ma-rainey",
+      "ida-cox",
+      "alberta-hunter"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "lonnie-johnson",
+      "bumble-bee-slim",
+      "big-bill-broonzy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Georgia_White",
+    "secondaryInstruments": [
+      "Piano"
+    ]
   }
 ]
