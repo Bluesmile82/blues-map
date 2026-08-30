@@ -42641,7 +42641,7 @@
     "id": "ana-popovic",
     "name": "Ana Popović",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ana%20Popovic%20HagenU.jpg?width=500",
-    "image_source": null,
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Ana%20Popovic%20HagenU.jpg?width=500",
     "birthDate": "1976-05-13",
     "birthPlace": "Belgrade",
     "birthCoords": [
@@ -42653,21 +42653,21 @@
     "deathCoords": null,
     "spentTimePlaces": [
       {
-        "name": "Memphis",
+        "place": "Memphis",
         "coords": [
           -90.049,
           35.1495
         ]
       },
       {
-        "name": "Los Angeles",
+        "place": "Los Angeles",
         "coords": [
           -118.2437,
           34.0522
         ]
       }
     ],
-    "instrument": "Guitar, Voice",
+    "instrument": "Guitar",
     "bluesStyle": "Soul Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=Ytj3RTjljnQ",
     "albums": [
@@ -42703,6 +42703,8 @@
       "lucky-peterson"
     ],
     "source": "https://en.wikipedia.org/wiki/Ana_Popovi%C4%87",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
