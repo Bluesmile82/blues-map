@@ -276,7 +276,8 @@
       "stevie-ray-vaughan",
       "sean-costello",
       "coco-montoya",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -358,7 +359,8 @@
       "sean-costello",
       "larry-davis",
       "chris-cain",
-      "michael-burks"
+      "michael-burks",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -1919,7 +1921,8 @@
       "bobby-blue-bland",
       "sean-costello",
       "chris-cain",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -9081,7 +9084,8 @@
       "j-b-hutto",
       "etta-james",
       "hip-linkchain",
-      "sonny-landreth"
+      "sonny-landreth",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -10395,7 +10399,8 @@
     "influencedBy": [
       "sean-costello",
       "michael-burks",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -14042,7 +14047,8 @@
     ],
     "influencedBy": [
       "michael-burks",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -14884,7 +14890,8 @@
     "playedWith": [
       "bb-king",
       "john-mayall",
-      "chris-cain"
+      "chris-cain",
+      "ana-popovic"
     ],
     "source": "13 Most Legendary And Famous Blues Artists of All Time",
     "secondaryInstruments": [
@@ -17696,7 +17703,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "ana-popovic"
+    ],
     "source": "https://en.wikipedia.org/wiki/Keb'_Mo'",
     "secondaryInstruments": [
       "Mandolin",
@@ -21158,7 +21167,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "ana-popovic"
+    ],
     "source": "https://en.wikipedia.org/wiki/Lucky_Peterson",
     "secondaryInstruments": [
       "Organ",
@@ -23700,7 +23711,8 @@
       "slim-harpo",
       "lonesome-sundown",
       "otis-rush",
-      "kim-wilson"
+      "kim-wilson",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26596,7 +26608,8 @@
       "ramblin-thomas",
       "keb-mo",
       "lonnie-mack",
-      "sonny-landreth"
+      "sonny-landreth",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -29977,7 +29990,8 @@
       "lonnie-mack"
     ],
     "influencedBy": [
-      "sean-costello"
+      "sean-costello",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30540,7 +30554,8 @@
       "etta-james",
       "john-lee-hooker",
       "bonnie-raitt",
-      "johnny-winter"
+      "johnny-winter",
+      "ana-popovic"
     ],
     "source": "https://en.wikipedia.org/wiki/Taj_Mahal_(musician)",
     "secondaryInstruments": [
@@ -34154,7 +34169,8 @@
       "bb-king",
       "bobby-blue-bland",
       "albert-king",
-      "etta-james"
+      "etta-james",
+      "ana-popovic"
     ],
     "source": null,
     "secondaryInstruments": []
@@ -42619,6 +42635,74 @@
       "eric-clapton"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Landreth",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "ana-popovic",
+    "name": "Ana Popović",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ana%20Popovic%20HagenU.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1976-05-13",
+    "birthPlace": "Belgrade",
+    "birthCoords": [
+      20.456944444444446,
+      44.81777777777778
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "name": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "name": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Ytj3RTjljnQ",
+    "albums": [
+      {
+        "name": "Can You Stand the Heat (2013)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9bXaY5f8Ok0"
+      },
+      {
+        "name": "Trilogy (2016)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Ytj3RTjljnQ"
+      }
+    ],
+    "description": "Ana Popović is a Serbian-born blues, blues-rock, and soul-blues guitarist and singer who grew up in Belgrade immersed in her father's record collection of Albert King, Muddy Waters, B.B. King, Elmore James, and Stevie Ray Vaughan. She began performing with the Belgrade band Hush as a teenager before relocating to the Netherlands to study jazz guitar, then built an international solo career from a base in Memphis and later Los Angeles, becoming one of the few women to be nominated for Blues Music Award Guitarist of the Year. Known for her fiery slide and lead playing and genre-crossing albums that fuse blues with funk, soul, and jazz, she has recorded and toured alongside artists including Joe Bonamassa, Keb' Mo', and Taj Mahal.",
+    "activeFrom": "1995",
+    "influences": [
+      "stevie-ray-vaughan",
+      "albert-king",
+      "jimi-hendrix",
+      "robert-johnson",
+      "albert-collins",
+      "muddy-waters",
+      "bb-king",
+      "freddie-king",
+      "elmore-james"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "joe-bonamassa",
+      "keb-mo",
+      "taj-mahal",
+      "tony-coleman",
+      "lucky-peterson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Ana_Popovi%C4%87",
     "secondaryInstruments": []
   }
 ]
