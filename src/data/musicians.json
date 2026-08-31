@@ -4680,7 +4680,8 @@
     ],
     "influencedBy": [
       "stevie-ray-vaughan",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "mighty-joe-young"
     ],
     "incomplete": false,
     "playedWith": [
@@ -10396,7 +10397,8 @@
     "influencedBy": [
       "sean-costello",
       "michael-burks",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "mighty-joe-young"
     ],
     "incomplete": false,
     "playedWith": [
@@ -24202,7 +24204,8 @@
     ],
     "influencedBy": [
       "sean-costello",
-      "coco-montoya"
+      "coco-montoya",
+      "mighty-joe-young"
     ],
     "incomplete": false,
     "playedWith": [
@@ -42675,6 +42678,55 @@
     "source": "https://en.wikipedia.org/wiki/Louis_Myers",
     "secondaryInstruments": [
       "Harmonica"
+    ]
+  },
+  {
+    "id": "mighty-joe-young",
+    "name": "Mighty Joe Young",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mighty%20Joe%20Young.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1927-09-23",
+    "birthPlace": "Shreveport",
+    "birthCoords": [
+      -93.76277777777777,
+      32.50805555555556
+    ],
+    "deathDate": "1999-03-24",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=EoEUZsEUWeA",
+    "albums": [
+      {
+        "name": "Bluesy Josephine (1976)",
+        "youtubeLink": "https://www.youtube.com/watch?v=F0t3hfF805Q"
+      }
+    ],
+    "description": "Mighty Joe Young was a Chicago blues guitarist and singer known for a soul-drenched take on the city's tough West Side sound. After moving from Louisiana to Milwaukee and then Chicago, he became one of the scene's most reliable session and backing guitarists, playing on Magic Sam's landmark albums West Side Soul and Black Magic before leading his own bands and recording for Delmark, Ovation, and Blind Pig.",
+    "activeFrom": "1955",
+    "influences": [
+      "freddie-king",
+      "buddy-guy",
+      "otis-rush"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "billy-boy-arnold",
+      "otis-rush",
+      "magic-sam",
+      "jimmy-rogers",
+      "willie-dixon",
+      "jimmy-dawkins"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Mighty_Joe_Young",
+    "secondaryInstruments": [
+      "Vocals"
     ]
   }
 ]
