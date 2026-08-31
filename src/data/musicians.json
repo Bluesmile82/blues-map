@@ -3526,7 +3526,8 @@
     "activeFrom": "1927",
     "influences": [],
     "influencedBy": [
-      "ramblin-thomas"
+      "ramblin-thomas",
+      "lc-robinson"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -15438,7 +15439,8 @@
     "playedWith": [
       "eddie-taylor",
       "luther-allison",
-      "mike-bloomfield"
+      "mike-bloomfield",
+      "lc-robinson"
     ],
     "source": "https://en.wikipedia.org/wiki/Boom_Boom_(John_Lee_Hooker_song)",
     "secondaryInstruments": [
@@ -22800,7 +22802,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "lc-robinson"
+    ],
     "source": null,
     "secondaryInstruments": [
       "Vocals"
@@ -23714,7 +23718,8 @@
       "bb-king",
       "eric-clapton",
       "albert-collins",
-      "rick-estrin"
+      "rick-estrin",
+      "lc-robinson"
     ],
     "source": "https://en.wikipedia.org/wiki/Muddy_Waters",
     "secondaryInstruments": [
@@ -42620,5 +42625,59 @@
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Landreth",
     "secondaryInstruments": []
+  },
+  {
+    "id": "lc-robinson",
+    "name": "L.C. Robinson",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1914-05-13",
+    "birthPlace": "Brenham, Texas",
+    "birthCoords": [
+      -96.396944444444,
+      30.161944444444
+    ],
+    "deathDate": "1976-09-26",
+    "deathPlace": "Berkeley, California",
+    "deathCoords": [
+      -122.26805555556,
+      37.870277777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=D_3RSsqlV9A",
+    "albums": [
+      {
+        "name": "Mojo in My Hand (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=J0vUqvfHQeQ"
+      }
+    ],
+    "description": "L. C. \"Good Rockin'\" Robinson (born Louis Charles Robinson; May 13, 1914 – September 26, 1976) was an American blues singer, guitarist, steel guitarist, and fiddle player. Raised in Brenham, Texas, he was reputedly mentored in bottleneck slide guitar by Blind Willie Johnson and later took up steel guitar under the influence of Western swing musician Leon McAuliffe. After relocating to the San Francisco Bay Area, he became a fixture of the West Coast blues scene, recording for Arhoolie and World Pacific and backing artists such as Mercy Dee Walton and John Lee Hooker.",
+    "activeFrom": "1930",
+    "influences": [
+      "blind-willie-johnson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "muddy-waters",
+      "john-lee-hooker",
+      "mercy-dee"
+    ],
+    "source": "https://en.wikipedia.org/wiki/L._C._Robinson",
+    "secondaryInstruments": [
+      "Vocals",
+      "Steel Guitar",
+      "Fiddle"
+    ]
   }
 ]
