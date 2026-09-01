@@ -12490,7 +12490,8 @@
       "eric-clapton",
       "keith-richards",
       "jimi-hendrix",
-      "stevie-ray-vaughan"
+      "stevie-ray-vaughan",
+      "byther-smith"
     ],
     "incomplete": false,
     "playedWith": [
@@ -13568,7 +13569,9 @@
       "blind-lemon-jefferson",
       "lightnin-hopkins"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "byther-smith"
+    ],
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson",
@@ -26685,7 +26688,8 @@
       "robert-johnson"
     ],
     "influencedBy": [
-      "bb-king"
+      "bb-king",
+      "byther-smith"
     ],
     "incomplete": false,
     "playedWith": [
@@ -42678,6 +42682,69 @@
     "source": "https://en.wikipedia.org/wiki/Louis_Myers",
     "secondaryInstruments": [
       "Harmonica"
+    ]
+  },
+  {
+    "id": "byther-smith",
+    "name": "Byther Smith",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1932-04-17",
+    "birthPlace": "Monticello, Mississippi",
+    "birthCoords": [
+      -90.11,
+      31.5542
+    ],
+    "deathDate": "2021-09-10",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM",
+    "albums": [
+      {
+        "name": "Addressing the Nation with the Blues (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM"
+      },
+      {
+        "name": "Housefire (1991)"
+      },
+      {
+        "name": "Mississippi Kid (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=P1LsnyjQJgo"
+      }
+    ],
+    "description": "Byther Smith was a Chicago blues guitarist and singer born in Monticello, Mississippi, who migrated to Chicago in the mid-1950s at the urging of his first cousin J.B. Lenoir. He built his reputation as a first-call rhythm and session guitarist, working regularly behind Otis Rush, playing alongside Junior Wells at Theresa's Tavern, and touring with Big Mama Thornton and George \"Harmonica\" Smith, before stepping out as a bandleader with albums like Addressing the Nation with the Blues and Housefire. His tough, deeply personal songwriting and stinging, economical guitar style made him one of the most respected sidemen-turned-leaders of Chicago's postwar blues scene.",
+    "activeFrom": "1955",
+    "influences": [
+      "jb-lenoir",
+      "robert-lockwood-jr",
+      "hubert-sumlin"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "otis-rush",
+      "junior-wells",
+      "sunnyland-slim",
+      "big-mama-thornton",
+      "george-harmonica-smith"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Byther_Smith",
+    "secondaryInstruments": [
+      "Vocals"
     ]
   },
   {
