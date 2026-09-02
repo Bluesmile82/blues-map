@@ -3022,7 +3022,7 @@
       "lurrie-bell",
       "son-seals",
       "buddy-guy",
-      "eddie-clearwater"
+      "eddy-clearwater"
     ],
     "source": "https://en.wikipedia.org/wiki/Billy_Branch",
     "secondaryInstruments": [
@@ -21804,7 +21804,7 @@
     "activeFrom": "1957",
     "influences": [],
     "influencedBy": [
-      "eddie-clearwater"
+      "eddy-clearwater"
     ],
     "incomplete": false,
     "playedWith": [
@@ -24207,7 +24207,7 @@
       "sean-costello",
       "coco-montoya",
       "mighty-joe-young",
-      "eddie-clearwater"
+      "eddy-clearwater"
     ],
     "incomplete": false,
     "playedWith": [
@@ -27014,7 +27014,7 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "eddie-clearwater"
+      "eddy-clearwater"
     ],
     "source": "https://en.wikipedia.org/wiki/Ronnie_Baker_Brooks",
     "secondaryInstruments": [
@@ -42747,15 +42747,15 @@
     ]
   },
   {
-    "id": "eddie-clearwater",
-    "name": "Eddie Clearwater",
+    "id": "eddy-clearwater",
+    "name": "Eddy Clearwater",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eddy%20Clearwater.jpg?width=500",
     "image_source": null,
     "birthDate": "1935-01-10",
     "birthPlace": "Macon, Mississippi",
     "birthCoords": [
-      -83.6324,
-      32.84069
+      -88.56083,
+      33.1125
     ],
     "deathDate": "2018-06-01",
     "deathPlace": "Skokie, Illinois",
@@ -42779,7 +42779,7 @@
         ]
       }
     ],
-    "instrument": "Guitar, Voice",
+    "instrument": "Guitar",
     "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=piX7fKFprAc",
     "albums": [
@@ -42800,7 +42800,9 @@
       "ronnie-baker-brooks",
       "billy-branch"
     ],
-    "source": "https://en.wikipedia.org/wiki/Eddie_Clearwater",
-    "secondaryInstruments": []
+    "source": "https://en.wikipedia.org/wiki/Eddy_Clearwater",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
