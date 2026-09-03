@@ -4684,7 +4684,8 @@
     ],
     "influencedBy": [
       "stevie-ray-vaughan",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "mighty-joe-young"
     ],
     "incomplete": false,
     "playedWith": [
@@ -10248,7 +10249,8 @@
       "jimmy-rogers",
       "elmore-james",
       "otis-rush",
-      "junior-wells"
+      "junior-wells",
+      "louis-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Fred_Below",
     "secondaryInstruments": []
@@ -10400,7 +10402,8 @@
     "influencedBy": [
       "sean-costello",
       "michael-burks",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "mighty-joe-young"
     ],
     "incomplete": false,
     "playedWith": [
@@ -12492,7 +12495,8 @@
       "eric-clapton",
       "keith-richards",
       "jimi-hendrix",
-      "stevie-ray-vaughan"
+      "stevie-ray-vaughan",
+      "byther-smith"
     ],
     "incomplete": false,
     "playedWith": [
@@ -13572,7 +13576,9 @@
       "blind-lemon-jefferson",
       "lightnin-hopkins"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "byther-smith"
+    ],
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson",
@@ -17292,7 +17298,8 @@
       "earl-hooker",
       "buddy-guy",
       "little-walter",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "louis-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Wells",
     "secondaryInstruments": [
@@ -20028,7 +20035,8 @@
       "sonny-boy-williamson",
       "memphis-minnie",
       "johnny-shines",
-      "otis-rush"
+      "otis-rush",
+      "louis-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Little_Walter",
     "secondaryInstruments": [
@@ -23709,7 +23717,8 @@
       "slim-harpo",
       "lonesome-sundown",
       "otis-rush",
-      "kim-wilson"
+      "kim-wilson",
+      "louis-myers"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23723,7 +23732,8 @@
       "bb-king",
       "eric-clapton",
       "albert-collins",
-      "rick-estrin"
+      "rick-estrin",
+      "louis-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Muddy_Waters",
     "secondaryInstruments": [
@@ -24206,7 +24216,8 @@
     ],
     "influencedBy": [
       "sean-costello",
-      "coco-montoya"
+      "coco-montoya",
+      "mighty-joe-young"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26686,7 +26697,8 @@
       "robert-johnson"
     ],
     "influencedBy": [
-      "bb-king"
+      "bb-king",
+      "byther-smith"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26809,7 +26821,8 @@
       "fruteland-jackson"
     ],
     "influencedBy": [
-      "cedell-davis"
+      "cedell-davis",
+      "louis-myers"
     ],
     "incomplete": false,
     "playedWith": [
@@ -42684,6 +42697,168 @@
     "source": "https://en.wikipedia.org/wiki/Georgia_White",
     "secondaryInstruments": [
       "Piano"
+    ]
+  },
+  {
+    "id": "louis-myers",
+    "name": "Louis Myers",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1929-09-18",
+    "birthPlace": "Byhalia, Mississippi",
+    "birthCoords": [
+      -89.687,
+      34.8654
+    ],
+    "deathDate": "1994-09-05",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=W7ynQQoOe9A",
+    "albums": [
+      {
+        "name": "I'm a Southern Man",
+        "youtubeLink": "https://www.youtube.com/watch?v=7TrEkfVhRhQ"
+      },
+      {
+        "name": "Tell My Story Movin'",
+        "youtubeLink": "https://www.youtube.com/watch?v=zU3xqGq3DRs"
+      }
+    ],
+    "description": "Louis Myers was a Chicago blues guitarist and harmonica player, born in Byhalia, Mississippi, who moved north as a child and became a foundational figure in the postwar Chicago blues sound. As co-founder of the Aces (also known as the Four Aces), alongside his bassist brother Dave Myers and drummer Fred Below, he backed Little Walter on the era-defining 1952 hit \"Juke\" and later spent years as Junior Wells's guitarist, helping to shape the interlocking guitar-and-harmonica interplay that defined Chicago blues. He also recorded as a bandleader in his own right, releasing albums such as I'm a Southern Man and Tell My Story Movin' that showcased his fluid, tremolo-picked guitar style.",
+    "activeFrom": "1947",
+    "influences": [
+      "muddy-waters",
+      "robert-nighthawk"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "fred-below",
+      "little-walter",
+      "junior-wells",
+      "muddy-waters"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Louis_Myers",
+    "secondaryInstruments": [
+      "Harmonica"
+    ]
+  },
+  {
+    "id": "byther-smith",
+    "name": "Byther Smith",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1932-04-17",
+    "birthPlace": "Monticello, Mississippi",
+    "birthCoords": [
+      -90.11,
+      31.5542
+    ],
+    "deathDate": "2021-09-10",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM",
+    "albums": [
+      {
+        "name": "Addressing the Nation with the Blues (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM"
+      },
+      {
+        "name": "Housefire (1991)"
+      },
+      {
+        "name": "Mississippi Kid (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=P1LsnyjQJgo"
+      }
+    ],
+    "description": "Byther Smith was a Chicago blues guitarist and singer born in Monticello, Mississippi, who migrated to Chicago in the mid-1950s at the urging of his first cousin J.B. Lenoir. He built his reputation as a first-call rhythm and session guitarist, working regularly behind Otis Rush, playing alongside Junior Wells at Theresa's Tavern, and touring with Big Mama Thornton and George \"Harmonica\" Smith, before stepping out as a bandleader with albums like Addressing the Nation with the Blues and Housefire. His tough, deeply personal songwriting and stinging, economical guitar style made him one of the most respected sidemen-turned-leaders of Chicago's postwar blues scene.",
+    "activeFrom": "1955",
+    "influences": [
+      "jb-lenoir",
+      "robert-lockwood-jr",
+      "hubert-sumlin"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "otis-rush",
+      "junior-wells",
+      "sunnyland-slim",
+      "big-mama-thornton",
+      "george-harmonica-smith"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Byther_Smith",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "mighty-joe-young",
+    "name": "Mighty Joe Young",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mighty%20Joe%20Young.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1927-09-23",
+    "birthPlace": "Shreveport",
+    "birthCoords": [
+      -93.76277777777777,
+      32.50805555555556
+    ],
+    "deathDate": "1999-03-24",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=EoEUZsEUWeA",
+    "albums": [
+      {
+        "name": "Bluesy Josephine (1976)",
+        "youtubeLink": "https://www.youtube.com/watch?v=F0t3hfF805Q"
+      }
+    ],
+    "description": "Mighty Joe Young was a Chicago blues guitarist and singer known for a soul-drenched take on the city's tough West Side sound. After moving from Louisiana to Milwaukee and then Chicago, he became one of the scene's most reliable session and backing guitarists, playing on Magic Sam's landmark albums West Side Soul and Black Magic before leading his own bands and recording for Delmark, Ovation, and Blind Pig.",
+    "activeFrom": "1955",
+    "influences": [
+      "freddie-king",
+      "buddy-guy",
+      "otis-rush"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "billy-boy-arnold",
+      "otis-rush",
+      "magic-sam",
+      "jimmy-rogers",
+      "willie-dixon",
+      "jimmy-dawkins"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Mighty_Joe_Young",
+    "secondaryInstruments": [
+      "Vocals"
     ]
   }
 ]
