@@ -276,7 +276,8 @@
       "stevie-ray-vaughan",
       "sean-costello",
       "coco-montoya",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -358,7 +359,8 @@
       "sean-costello",
       "larry-davis",
       "chris-cain",
-      "michael-burks"
+      "michael-burks",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -527,7 +529,9 @@
     "influences": [
       "ma-rainey"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "georgia-white"
+    ],
     "incomplete": false,
     "playedWith": [
       "bessie-smith",
@@ -1919,7 +1923,8 @@
       "bobby-blue-bland",
       "sean-costello",
       "chris-cain",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -2048,7 +2053,8 @@
       "ma-rainey"
     ],
     "influencedBy": [
-      "lucille-hegamin"
+      "lucille-hegamin",
+      "georgia-white"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -2226,7 +2232,8 @@
       "son-house",
       "blind-lemon-jefferson",
       "roosevelt-sykes",
-      "lonnie-johnson"
+      "lonnie-johnson",
+      "georgia-white"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Bill_Broonzy",
     "secondaryInstruments": [
@@ -4681,7 +4688,8 @@
     ],
     "influencedBy": [
       "stevie-ray-vaughan",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "mighty-joe-young"
     ],
     "incomplete": false,
     "playedWith": [
@@ -5003,7 +5011,8 @@
       "peetie-wheatstraw",
       "memphis-minnie",
       "scrapper-blackwell",
-      "leroy-carr"
+      "leroy-carr",
+      "georgia-white"
     ],
     "source": "https://en.wikipedia.org/wiki/Bumble_Bee_Slim",
     "secondaryInstruments": [
@@ -9082,7 +9091,8 @@
       "j-b-hutto",
       "etta-james",
       "hip-linkchain",
-      "sonny-landreth"
+      "sonny-landreth",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -10244,7 +10254,8 @@
       "jimmy-rogers",
       "elmore-james",
       "otis-rush",
-      "junior-wells"
+      "junior-wells",
+      "louis-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Fred_Below",
     "secondaryInstruments": []
@@ -10396,7 +10407,9 @@
     "influencedBy": [
       "sean-costello",
       "michael-burks",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "mighty-joe-young",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -12488,7 +12501,8 @@
       "eric-clapton",
       "keith-richards",
       "jimi-hendrix",
-      "stevie-ray-vaughan"
+      "stevie-ray-vaughan",
+      "byther-smith"
     ],
     "incomplete": false,
     "playedWith": [
@@ -12582,7 +12596,9 @@
     "influences": [
       "ma-rainey"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "georgia-white"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Ida_Cox",
@@ -13566,7 +13582,9 @@
       "blind-lemon-jefferson",
       "lightnin-hopkins"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "byther-smith"
+    ],
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson",
@@ -14043,7 +14061,8 @@
     ],
     "influencedBy": [
       "michael-burks",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -14885,7 +14904,8 @@
     "playedWith": [
       "bb-king",
       "john-mayall",
-      "chris-cain"
+      "chris-cain",
+      "ana-popovic"
     ],
     "source": "13 Most Legendary And Famous Blues Artists of All Time",
     "secondaryInstruments": [
@@ -17287,7 +17307,8 @@
       "earl-hooker",
       "buddy-guy",
       "little-walter",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "louis-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Wells",
     "secondaryInstruments": [
@@ -17698,7 +17719,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "ana-popovic"
+    ],
     "source": "https://en.wikipedia.org/wiki/Keb'_Mo'",
     "secondaryInstruments": [
       "Mandolin",
@@ -20023,7 +20046,8 @@
       "sonny-boy-williamson",
       "memphis-minnie",
       "johnny-shines",
-      "otis-rush"
+      "otis-rush",
+      "louis-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Little_Walter",
     "secondaryInstruments": [
@@ -20395,7 +20419,8 @@
       "victoria-spivey",
       "alger-texas-alexander",
       "bessie-smith",
-      "roosevelt-sykes"
+      "roosevelt-sykes",
+      "georgia-white"
     ],
     "source": "https://en.wikipedia.org/wiki/Lonnie_Johnson_(musician)",
     "secondaryInstruments": [
@@ -21160,7 +21185,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "ana-popovic"
+    ],
     "source": "https://en.wikipedia.org/wiki/Lucky_Peterson",
     "secondaryInstruments": [
       "Organ",
@@ -21724,7 +21751,8 @@
     "influencedBy": [
       "bessie-smith",
       "alberta-hunter",
-      "lucille-hegamin"
+      "lucille-hegamin",
+      "georgia-white"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23704,7 +23732,9 @@
       "slim-harpo",
       "lonesome-sundown",
       "otis-rush",
-      "kim-wilson"
+      "kim-wilson",
+      "louis-myers",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23719,6 +23749,7 @@
       "eric-clapton",
       "albert-collins",
       "rick-estrin",
+      "louis-myers",
       "lc-robinson"
     ],
     "source": "https://en.wikipedia.org/wiki/Muddy_Waters",
@@ -24202,7 +24233,8 @@
     ],
     "influencedBy": [
       "sean-costello",
-      "coco-montoya"
+      "coco-montoya",
+      "mighty-joe-young"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26601,7 +26633,8 @@
       "ramblin-thomas",
       "keb-mo",
       "lonnie-mack",
-      "sonny-landreth"
+      "sonny-landreth",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26682,7 +26715,8 @@
       "robert-johnson"
     ],
     "influencedBy": [
-      "bb-king"
+      "bb-king",
+      "byther-smith"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26805,7 +26839,8 @@
       "fruteland-jackson"
     ],
     "influencedBy": [
-      "cedell-davis"
+      "cedell-davis",
+      "louis-myers"
     ],
     "incomplete": false,
     "playedWith": [
@@ -29982,7 +30017,8 @@
       "lonnie-mack"
     ],
     "influencedBy": [
-      "sean-costello"
+      "sean-costello",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30545,7 +30581,8 @@
       "etta-james",
       "john-lee-hooker",
       "bonnie-raitt",
-      "johnny-winter"
+      "johnny-winter",
+      "ana-popovic"
     ],
     "source": "https://en.wikipedia.org/wiki/Taj_Mahal_(musician)",
     "secondaryInstruments": [
@@ -34159,7 +34196,8 @@
       "bb-king",
       "bobby-blue-bland",
       "albert-king",
-      "etta-james"
+      "etta-james",
+      "ana-popovic"
     ],
     "source": null,
     "secondaryInstruments": []
@@ -42625,6 +42663,292 @@
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Landreth",
     "secondaryInstruments": []
+  },
+  {
+    "id": "ana-popovic",
+    "name": "Ana Popović",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ana%20Popovic%20HagenU.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Ana%20Popovic%20HagenU.jpg?width=500",
+    "birthDate": "1976-05-13",
+    "birthPlace": "Belgrade",
+    "birthCoords": [
+      20.456944444444446,
+      44.81777777777778
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Ytj3RTjljnQ",
+    "albums": [
+      {
+        "name": "Can You Stand the Heat (2013)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9bXaY5f8Ok0"
+      },
+      {
+        "name": "Trilogy (2016)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Ytj3RTjljnQ"
+      }
+    ],
+    "description": "Ana Popović is a Serbian-born blues, blues-rock, and soul-blues guitarist and singer who grew up in Belgrade immersed in her father's record collection of Albert King, Muddy Waters, B.B. King, Elmore James, and Stevie Ray Vaughan. She began performing with the Belgrade band Hush as a teenager before relocating to the Netherlands to study jazz guitar, then built an international solo career from a base in Memphis and later Los Angeles, becoming one of the few women to be nominated for Blues Music Award Guitarist of the Year. Known for her fiery slide and lead playing and genre-crossing albums that fuse blues with funk, soul, and jazz, she has recorded and toured alongside artists including Joe Bonamassa, Keb' Mo', and Taj Mahal.",
+    "activeFrom": "1995",
+    "influences": [
+      "stevie-ray-vaughan",
+      "albert-king",
+      "jimi-hendrix",
+      "robert-johnson",
+      "albert-collins",
+      "muddy-waters",
+      "bb-king",
+      "freddie-king",
+      "elmore-james"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "joe-bonamassa",
+      "keb-mo",
+      "taj-mahal",
+      "tony-coleman",
+      "lucky-peterson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Ana_Popovi%C4%87",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "georgia-white",
+    "name": "Georgia White",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1903-03-09",
+    "birthPlace": "Sandersville, Georgia",
+    "birthCoords": [
+      -82.809722222222,
+      32.981944444444
+    ],
+    "deathDate": "1980",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=N3PMbRYYCV4",
+    "albums": [
+      {
+        "name": "You Done Lost Your Good Thing Now (1935)",
+        "youtubeLink": "https://www.youtube.com/watch?v=OmxMC5h7mso"
+      },
+      {
+        "name": "Alley Boogie (1937)",
+        "youtubeLink": "https://www.youtube.com/watch?v=irl07IzYkm4"
+      }
+    ],
+    "description": "Georgia White was an American classic blues singer and pianist who became one of the most prolific female blues recording artists of the 1930s, cutting well over 100 sides for Decca between 1935 and 1941. Raised in Sandersville, Georgia before settling in Chicago, she is best remembered for the risque hit \"You Done Lost Your Good Thing Now\" and the instrumental \"Alley Boogie,\" and she frequently recorded and toured alongside guitarist Lonnie Johnson and fellow Chicago blues singer Bumble Bee Slim before joining Big Bill Broonzy's Laughing Trio as pianist in the late 1940s. Her smooth, confident vocal style carried the classic blues tradition of Bessie Smith and Ma Rainey into the swing era.",
+    "activeFrom": "1923",
+    "influences": [
+      "bessie-smith",
+      "ma-rainey",
+      "ida-cox",
+      "alberta-hunter"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "lonnie-johnson",
+      "bumble-bee-slim",
+      "big-bill-broonzy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Georgia_White",
+    "secondaryInstruments": [
+      "Piano"
+    ]
+  },
+  {
+    "id": "louis-myers",
+    "name": "Louis Myers",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1929-09-18",
+    "birthPlace": "Byhalia, Mississippi",
+    "birthCoords": [
+      -89.687,
+      34.8654
+    ],
+    "deathDate": "1994-09-05",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=W7ynQQoOe9A",
+    "albums": [
+      {
+        "name": "I'm a Southern Man",
+        "youtubeLink": "https://www.youtube.com/watch?v=7TrEkfVhRhQ"
+      },
+      {
+        "name": "Tell My Story Movin'",
+        "youtubeLink": "https://www.youtube.com/watch?v=zU3xqGq3DRs"
+      }
+    ],
+    "description": "Louis Myers was a Chicago blues guitarist and harmonica player, born in Byhalia, Mississippi, who moved north as a child and became a foundational figure in the postwar Chicago blues sound. As co-founder of the Aces (also known as the Four Aces), alongside his bassist brother Dave Myers and drummer Fred Below, he backed Little Walter on the era-defining 1952 hit \"Juke\" and later spent years as Junior Wells's guitarist, helping to shape the interlocking guitar-and-harmonica interplay that defined Chicago blues. He also recorded as a bandleader in his own right, releasing albums such as I'm a Southern Man and Tell My Story Movin' that showcased his fluid, tremolo-picked guitar style.",
+    "activeFrom": "1947",
+    "influences": [
+      "muddy-waters",
+      "robert-nighthawk"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "fred-below",
+      "little-walter",
+      "junior-wells",
+      "muddy-waters"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Louis_Myers",
+    "secondaryInstruments": [
+      "Harmonica"
+    ]
+  },
+  {
+    "id": "byther-smith",
+    "name": "Byther Smith",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1932-04-17",
+    "birthPlace": "Monticello, Mississippi",
+    "birthCoords": [
+      -90.11,
+      31.5542
+    ],
+    "deathDate": "2021-09-10",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM",
+    "albums": [
+      {
+        "name": "Addressing the Nation with the Blues (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM"
+      },
+      {
+        "name": "Housefire (1991)"
+      },
+      {
+        "name": "Mississippi Kid (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=P1LsnyjQJgo"
+      }
+    ],
+    "description": "Byther Smith was a Chicago blues guitarist and singer born in Monticello, Mississippi, who migrated to Chicago in the mid-1950s at the urging of his first cousin J.B. Lenoir. He built his reputation as a first-call rhythm and session guitarist, working regularly behind Otis Rush, playing alongside Junior Wells at Theresa's Tavern, and touring with Big Mama Thornton and George \"Harmonica\" Smith, before stepping out as a bandleader with albums like Addressing the Nation with the Blues and Housefire. His tough, deeply personal songwriting and stinging, economical guitar style made him one of the most respected sidemen-turned-leaders of Chicago's postwar blues scene.",
+    "activeFrom": "1955",
+    "influences": [
+      "jb-lenoir",
+      "robert-lockwood-jr",
+      "hubert-sumlin"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "otis-rush",
+      "junior-wells",
+      "sunnyland-slim",
+      "big-mama-thornton",
+      "george-harmonica-smith"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Byther_Smith",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "mighty-joe-young",
+    "name": "Mighty Joe Young",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mighty%20Joe%20Young.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1927-09-23",
+    "birthPlace": "Shreveport",
+    "birthCoords": [
+      -93.76277777777777,
+      32.50805555555556
+    ],
+    "deathDate": "1999-03-24",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=EoEUZsEUWeA",
+    "albums": [
+      {
+        "name": "Bluesy Josephine (1976)",
+        "youtubeLink": "https://www.youtube.com/watch?v=F0t3hfF805Q"
+      }
+    ],
+    "description": "Mighty Joe Young was a Chicago blues guitarist and singer known for a soul-drenched take on the city's tough West Side sound. After moving from Louisiana to Milwaukee and then Chicago, he became one of the scene's most reliable session and backing guitarists, playing on Magic Sam's landmark albums West Side Soul and Black Magic before leading his own bands and recording for Delmark, Ovation, and Blind Pig.",
+    "activeFrom": "1955",
+    "influences": [
+      "freddie-king",
+      "buddy-guy",
+      "otis-rush"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "billy-boy-arnold",
+      "otis-rush",
+      "magic-sam",
+      "jimmy-rogers",
+      "willie-dixon",
+      "jimmy-dawkins"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Mighty_Joe_Young",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   },
   {
     "id": "lc-robinson",
