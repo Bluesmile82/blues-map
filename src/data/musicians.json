@@ -15022,8 +15022,7 @@
     ],
     "influencedBy": [
       "clarence-garlow",
-      "pete-mayes",
-      "bobby-parker"
+      "pete-mayes"
     ],
     "incomplete": false,
     "playedWith": [
@@ -42973,7 +42972,7 @@
       38.94277777777778
     ],
     "spentTimePlaces": [],
-    "instrument": "Guitar, Voice",
+    "instrument": "Guitar",
     "bluesStyle": "Rythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=QdqvFUjeY_0",
     "albums": [
@@ -43006,6 +43005,8 @@
       "sam-cooke"
     ],
     "source": "https://en.wikipedia.org/wiki/Bobby_Parker_(guitarist)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   }
 ]
