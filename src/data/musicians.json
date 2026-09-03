@@ -3732,7 +3732,8 @@
     "playedWith": [
       "muddy-waters",
       "buddy-guy",
-      "jody-williams"
+      "jody-williams",
+      "bobby-parker"
     ],
     "source": null,
     "secondaryInstruments": [
@@ -9338,7 +9339,9 @@
     "albums": [],
     "description": "Eric Patrick Clapton (born 30 March 1945) is an English rock and blues guitarist, singer, and songwriter.  He is regarded as one of the most successful and influential guitarists in rock music.  Clapton ranked second in Rolling Stone's list of the \"100 Greatest Guitarists of All Time\" and fourth in Gibson's \"Top 50 Guitarists of All Time\".",
     "activeFrom": "1962",
-    "influences": [],
+    "influences": [
+      "bobby-parker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -15012,7 +15015,8 @@
     ],
     "influencedBy": [
       "clarence-garlow",
-      "pete-mayes"
+      "pete-mayes",
+      "bobby-parker"
     ],
     "incomplete": false,
     "playedWith": [
@@ -15557,7 +15561,9 @@
     ],
     "description": "John Brumwell Mayall  (29 November 1933 – 22 July 2024) was an English blues and rock musician, songwriter and producer.  In the 1960s, he formed John Mayall & the Bluesbreakers, a band that has counted among its members some of the most famous blues and blues rock musicians of all-time.  A singer, guitarist, harmonica player, and keyboardist, he had a career that spanned nearly seven decades, remaining an active musician until his death aged 90.",
     "activeFrom": "1956",
-    "influences": [],
+    "influences": [
+      "bobby-parker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -25945,7 +25951,8 @@
     "influencedBy": [
       "percy-mayfield",
       "quincy-jones",
-      "latimore"
+      "latimore",
+      "bobby-parker"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -26914,7 +26921,9 @@
     "albums": [],
     "description": "Robin Trower is an English rock guitarist from Procol Harum whose blues-infused 1974 album Bridge of Sighs became a gold-certified classic.",
     "activeFrom": "1962",
-    "influences": [],
+    "influences": [
+      "bobby-parker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -27904,7 +27913,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "barbara-lynn"
+      "barbara-lynn",
+      "bobby-parker"
     ],
     "source": "https://en.wikipedia.org/wiki/Sam_Cooke",
     "secondaryInstruments": []
@@ -42860,5 +42870,58 @@
     "secondaryInstruments": [
       "Vocals"
     ]
+  },
+  {
+    "id": "bobby-parker",
+    "name": "Bobby Parker",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bobby%20Parker.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1937-08-31",
+    "birthPlace": "Lafayette, Louisiana",
+    "birthCoords": [
+      -92.012649,
+      30.243062
+    ],
+    "deathDate": "2013-10-31",
+    "deathPlace": "Bowie, Maryland",
+    "deathCoords": [
+      -76.73027777777777,
+      38.94277777777778
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar, Voice",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=QdqvFUjeY_0",
+    "albums": [
+      {
+        "name": "Bent Out of Shape",
+        "youtubeLink": "https://www.youtube.com/watch?v=HDdSDPskta8"
+      },
+      {
+        "name": "Shine Me Up",
+        "youtubeLink": "https://www.youtube.com/watch?v=6hIM3gnQhTU"
+      },
+      {
+        "name": "Soul of the Blues",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Bobby Parker was a Louisiana-born, Washington D.C.-based blues guitarist and singer best known for his 1961 single 'Watch Your Step,' whose driving guitar riff -- inspired by Dizzy Gillespie's 'Manteca' and Ray Charles' 'What'd I Say' -- was later echoed in The Beatles' 'I Feel Fine' and Led Zeppelin's 'Moby Dick.' A journeyman guitarist who toured behind Bo Diddley, Sam Cooke, and other R&B stars through the 1950s, his fierce, horn-inflected style made him a touchstone for British blues-rock guitarists including Eric Clapton, John Mayall, and Robin Trower.",
+    "activeFrom": "1956",
+    "influences": [
+      "ray-charles"
+    ],
+    "influencedBy": [
+      "eric-clapton",
+      "john-mayall",
+      "robin-trower"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "bo-diddley",
+      "sam-cooke"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Bobby_Parker_(guitarist)",
+    "secondaryInstruments": []
   }
 ]
