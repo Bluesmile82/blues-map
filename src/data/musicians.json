@@ -3533,7 +3533,8 @@
     "activeFrom": "1927",
     "influences": [],
     "influencedBy": [
-      "ramblin-thomas"
+      "ramblin-thomas",
+      "lc-robinson"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -15458,7 +15459,8 @@
     "playedWith": [
       "eddie-taylor",
       "luther-allison",
-      "mike-bloomfield"
+      "mike-bloomfield",
+      "lc-robinson"
     ],
     "source": "https://en.wikipedia.org/wiki/Boom_Boom_(John_Lee_Hooker_song)",
     "secondaryInstruments": [
@@ -22828,7 +22830,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "lc-robinson"
+    ],
     "source": null,
     "secondaryInstruments": [
       "Vocals"
@@ -23745,7 +23749,8 @@
       "eric-clapton",
       "albert-collins",
       "rick-estrin",
-      "louis-myers"
+      "louis-myers",
+      "lc-robinson"
     ],
     "source": "https://en.wikipedia.org/wiki/Muddy_Waters",
     "secondaryInstruments": [
@@ -42660,289 +42665,343 @@
     "secondaryInstruments": []
   },
   {
-  "id": "ana-popovic",
-  "name": "Ana Popović",
-  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ana%20Popovic%20HagenU.jpg?width=500",
-  "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Ana%20Popovic%20HagenU.jpg?width=500",
-  "birthDate": "1976-05-13",
-  "birthPlace": "Belgrade",
-  "birthCoords": [
-    20.456944444444446,
-    44.81777777777778
-  ],
-  "deathDate": null,
-  "deathPlace": null,
-  "deathCoords": null,
-  "spentTimePlaces": [
-    {
-      "place": "Memphis",
-      "coords": [
-        -90.049,
-        35.1495
-      ]
-    },
-    {
-      "place": "Los Angeles",
-      "coords": [
-        -118.2437,
-        34.0522
-      ]
-    }
-  ],
-  "instrument": "Guitar",
-  "bluesStyle": "Soul Blues",
-  "youtubeLink": "https://www.youtube.com/watch?v=Ytj3RTjljnQ",
-  "albums": [
-    {
-      "name": "Can You Stand the Heat (2013)",
-      "youtubeLink": "https://www.youtube.com/watch?v=9bXaY5f8Ok0"
-    },
-    {
-      "name": "Trilogy (2016)",
-      "youtubeLink": "https://www.youtube.com/watch?v=Ytj3RTjljnQ"
-    }
-  ],
-  "description": "Ana Popović is a Serbian-born blues, blues-rock, and soul-blues guitarist and singer who grew up in Belgrade immersed in her father's record collection of Albert King, Muddy Waters, B.B. King, Elmore James, and Stevie Ray Vaughan. She began performing with the Belgrade band Hush as a teenager before relocating to the Netherlands to study jazz guitar, then built an international solo career from a base in Memphis and later Los Angeles, becoming one of the few women to be nominated for Blues Music Award Guitarist of the Year. Known for her fiery slide and lead playing and genre-crossing albums that fuse blues with funk, soul, and jazz, she has recorded and toured alongside artists including Joe Bonamassa, Keb' Mo', and Taj Mahal.",
-  "activeFrom": "1995",
-  "influences": [
-    "stevie-ray-vaughan",
-    "albert-king",
-    "jimi-hendrix",
-    "robert-johnson",
-    "albert-collins",
-    "muddy-waters",
-    "bb-king",
-    "freddie-king",
-    "elmore-james"
-  ],
-  "influencedBy": [],
-  "incomplete": false,
-  "playedWith": [
-    "joe-bonamassa",
-    "keb-mo",
-    "taj-mahal",
-    "tony-coleman",
-    "lucky-peterson"
-  ],
-  "source": "https://en.wikipedia.org/wiki/Ana_Popovi%C4%87",
-  "secondaryInstruments": []
+    "id": "ana-popovic",
+    "name": "Ana Popović",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ana%20Popovic%20HagenU.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Ana%20Popovic%20HagenU.jpg?width=500",
+    "birthDate": "1976-05-13",
+    "birthPlace": "Belgrade",
+    "birthCoords": [
+      20.456944444444446,
+      44.81777777777778
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Ytj3RTjljnQ",
+    "albums": [
+      {
+        "name": "Can You Stand the Heat (2013)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9bXaY5f8Ok0"
+      },
+      {
+        "name": "Trilogy (2016)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Ytj3RTjljnQ"
+      }
+    ],
+    "description": "Ana Popović is a Serbian-born blues, blues-rock, and soul-blues guitarist and singer who grew up in Belgrade immersed in her father's record collection of Albert King, Muddy Waters, B.B. King, Elmore James, and Stevie Ray Vaughan. She began performing with the Belgrade band Hush as a teenager before relocating to the Netherlands to study jazz guitar, then built an international solo career from a base in Memphis and later Los Angeles, becoming one of the few women to be nominated for Blues Music Award Guitarist of the Year. Known for her fiery slide and lead playing and genre-crossing albums that fuse blues with funk, soul, and jazz, she has recorded and toured alongside artists including Joe Bonamassa, Keb' Mo', and Taj Mahal.",
+    "activeFrom": "1995",
+    "influences": [
+      "stevie-ray-vaughan",
+      "albert-king",
+      "jimi-hendrix",
+      "robert-johnson",
+      "albert-collins",
+      "muddy-waters",
+      "bb-king",
+      "freddie-king",
+      "elmore-james"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "joe-bonamassa",
+      "keb-mo",
+      "taj-mahal",
+      "tony-coleman",
+      "lucky-peterson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Ana_Popovi%C4%87",
+    "secondaryInstruments": []
   },
   {
-  "id": "georgia-white",
-  "name": "Georgia White",
-  "image": "",
-  "image_source": null,
-  "birthDate": "1903-03-09",
-  "birthPlace": "Sandersville, Georgia",
-  "birthCoords": [
-    -82.809722222222,
-    32.981944444444
-  ],
-  "deathDate": "1980",
-  "deathPlace": null,
-  "deathCoords": null,
-  "spentTimePlaces": [
-    {
-      "place": "Chicago",
-      "coords": [
-        -87.6298,
-        41.8781
-      ]
-    }
-  ],
-  "instrument": "Vocals",
-  "bluesStyle": "Classic Blues",
-  "youtubeLink": "https://www.youtube.com/watch?v=N3PMbRYYCV4",
-  "albums": [
-    {
-      "name": "You Done Lost Your Good Thing Now (1935)",
-      "youtubeLink": "https://www.youtube.com/watch?v=OmxMC5h7mso"
-    },
-    {
-      "name": "Alley Boogie (1937)",
-      "youtubeLink": "https://www.youtube.com/watch?v=irl07IzYkm4"
-    }
-  ],
-  "description": "Georgia White was an American classic blues singer and pianist who became one of the most prolific female blues recording artists of the 1930s, cutting well over 100 sides for Decca between 1935 and 1941. Raised in Sandersville, Georgia before settling in Chicago, she is best remembered for the risque hit \"You Done Lost Your Good Thing Now\" and the instrumental \"Alley Boogie,\" and she frequently recorded and toured alongside guitarist Lonnie Johnson and fellow Chicago blues singer Bumble Bee Slim before joining Big Bill Broonzy's Laughing Trio as pianist in the late 1940s. Her smooth, confident vocal style carried the classic blues tradition of Bessie Smith and Ma Rainey into the swing era.",
-  "activeFrom": "1923",
-  "influences": [
-    "bessie-smith",
-    "ma-rainey",
-    "ida-cox",
-    "alberta-hunter"
-  ],
-  "influencedBy": [],
-  "incomplete": false,
-  "playedWith": [
-    "lonnie-johnson",
-    "bumble-bee-slim",
-    "big-bill-broonzy"
-  ],
-  "source": "https://en.wikipedia.org/wiki/Georgia_White",
-  "secondaryInstruments": [
-    "Piano"
-  ]
+    "id": "georgia-white",
+    "name": "Georgia White",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1903-03-09",
+    "birthPlace": "Sandersville, Georgia",
+    "birthCoords": [
+      -82.809722222222,
+      32.981944444444
+    ],
+    "deathDate": "1980",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=N3PMbRYYCV4",
+    "albums": [
+      {
+        "name": "You Done Lost Your Good Thing Now (1935)",
+        "youtubeLink": "https://www.youtube.com/watch?v=OmxMC5h7mso"
+      },
+      {
+        "name": "Alley Boogie (1937)",
+        "youtubeLink": "https://www.youtube.com/watch?v=irl07IzYkm4"
+      }
+    ],
+    "description": "Georgia White was an American classic blues singer and pianist who became one of the most prolific female blues recording artists of the 1930s, cutting well over 100 sides for Decca between 1935 and 1941. Raised in Sandersville, Georgia before settling in Chicago, she is best remembered for the risque hit \"You Done Lost Your Good Thing Now\" and the instrumental \"Alley Boogie,\" and she frequently recorded and toured alongside guitarist Lonnie Johnson and fellow Chicago blues singer Bumble Bee Slim before joining Big Bill Broonzy's Laughing Trio as pianist in the late 1940s. Her smooth, confident vocal style carried the classic blues tradition of Bessie Smith and Ma Rainey into the swing era.",
+    "activeFrom": "1923",
+    "influences": [
+      "bessie-smith",
+      "ma-rainey",
+      "ida-cox",
+      "alberta-hunter"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "lonnie-johnson",
+      "bumble-bee-slim",
+      "big-bill-broonzy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Georgia_White",
+    "secondaryInstruments": [
+      "Piano"
+    ]
   },
   {
-  "id": "louis-myers",
-  "name": "Louis Myers",
-  "image": "",
-  "image_source": null,
-  "birthDate": "1929-09-18",
-  "birthPlace": "Byhalia, Mississippi",
-  "birthCoords": [
-    -89.687,
-    34.8654
-  ],
-  "deathDate": "1994-09-05",
-  "deathPlace": "Chicago, Illinois",
-  "deathCoords": [
-    -87.6298,
-    41.8781
-  ],
-  "spentTimePlaces": [],
-  "instrument": "Guitar",
-  "bluesStyle": "Chicago Blues",
-  "youtubeLink": "https://www.youtube.com/watch?v=W7ynQQoOe9A",
-  "albums": [
-    {
-      "name": "I'm a Southern Man",
-      "youtubeLink": "https://www.youtube.com/watch?v=7TrEkfVhRhQ"
-    },
-    {
-      "name": "Tell My Story Movin'",
-      "youtubeLink": "https://www.youtube.com/watch?v=zU3xqGq3DRs"
-    }
-  ],
-  "description": "Louis Myers was a Chicago blues guitarist and harmonica player, born in Byhalia, Mississippi, who moved north as a child and became a foundational figure in the postwar Chicago blues sound. As co-founder of the Aces (also known as the Four Aces), alongside his bassist brother Dave Myers and drummer Fred Below, he backed Little Walter on the era-defining 1952 hit \"Juke\" and later spent years as Junior Wells's guitarist, helping to shape the interlocking guitar-and-harmonica interplay that defined Chicago blues. He also recorded as a bandleader in his own right, releasing albums such as I'm a Southern Man and Tell My Story Movin' that showcased his fluid, tremolo-picked guitar style.",
-  "activeFrom": "1947",
-  "influences": [
-    "muddy-waters",
-    "robert-nighthawk"
-  ],
-  "influencedBy": [],
-  "incomplete": false,
-  "playedWith": [
-    "fred-below",
-    "little-walter",
-    "junior-wells",
-    "muddy-waters"
-  ],
-  "source": "https://en.wikipedia.org/wiki/Louis_Myers",
-  "secondaryInstruments": [
-    "Harmonica"
-  ]
+    "id": "louis-myers",
+    "name": "Louis Myers",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1929-09-18",
+    "birthPlace": "Byhalia, Mississippi",
+    "birthCoords": [
+      -89.687,
+      34.8654
+    ],
+    "deathDate": "1994-09-05",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=W7ynQQoOe9A",
+    "albums": [
+      {
+        "name": "I'm a Southern Man",
+        "youtubeLink": "https://www.youtube.com/watch?v=7TrEkfVhRhQ"
+      },
+      {
+        "name": "Tell My Story Movin'",
+        "youtubeLink": "https://www.youtube.com/watch?v=zU3xqGq3DRs"
+      }
+    ],
+    "description": "Louis Myers was a Chicago blues guitarist and harmonica player, born in Byhalia, Mississippi, who moved north as a child and became a foundational figure in the postwar Chicago blues sound. As co-founder of the Aces (also known as the Four Aces), alongside his bassist brother Dave Myers and drummer Fred Below, he backed Little Walter on the era-defining 1952 hit \"Juke\" and later spent years as Junior Wells's guitarist, helping to shape the interlocking guitar-and-harmonica interplay that defined Chicago blues. He also recorded as a bandleader in his own right, releasing albums such as I'm a Southern Man and Tell My Story Movin' that showcased his fluid, tremolo-picked guitar style.",
+    "activeFrom": "1947",
+    "influences": [
+      "muddy-waters",
+      "robert-nighthawk"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "fred-below",
+      "little-walter",
+      "junior-wells",
+      "muddy-waters"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Louis_Myers",
+    "secondaryInstruments": [
+      "Harmonica"
+    ]
   },
   {
-  "id": "byther-smith",
-  "name": "Byther Smith",
-  "image": "",
-  "image_source": null,
-  "birthDate": "1932-04-17",
-  "birthPlace": "Monticello, Mississippi",
-  "birthCoords": [
-    -90.11,
-    31.5542
-  ],
-  "deathDate": "2021-09-10",
-  "deathPlace": "Chicago, Illinois",
-  "deathCoords": [
-    -87.6298,
-    41.8781
-  ],
-  "spentTimePlaces": [
-    {
-      "place": "Chicago, Illinois",
-      "coords": [
-        -87.6298,
-        41.8781
-      ]
-    }
-  ],
-  "instrument": "Guitar",
-  "bluesStyle": "Chicago Blues",
-  "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM",
-  "albums": [
-    {
-      "name": "Addressing the Nation with the Blues (1989)",
-      "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM"
-    },
-    {
-      "name": "Housefire (1991)"
-    },
-    {
-      "name": "Mississippi Kid (1996)",
-      "youtubeLink": "https://www.youtube.com/watch?v=P1LsnyjQJgo"
-    }
-  ],
-  "description": "Byther Smith was a Chicago blues guitarist and singer born in Monticello, Mississippi, who migrated to Chicago in the mid-1950s at the urging of his first cousin J.B. Lenoir. He built his reputation as a first-call rhythm and session guitarist, working regularly behind Otis Rush, playing alongside Junior Wells at Theresa's Tavern, and touring with Big Mama Thornton and George \"Harmonica\" Smith, before stepping out as a bandleader with albums like Addressing the Nation with the Blues and Housefire. His tough, deeply personal songwriting and stinging, economical guitar style made him one of the most respected sidemen-turned-leaders of Chicago's postwar blues scene.",
-  "activeFrom": "1955",
-  "influences": [
-    "jb-lenoir",
-    "robert-lockwood-jr",
-    "hubert-sumlin"
-  ],
-  "influencedBy": [],
-  "incomplete": false,
-  "playedWith": [
-    "otis-rush",
-    "junior-wells",
-    "sunnyland-slim",
-    "big-mama-thornton",
-    "george-harmonica-smith"
-  ],
-  "source": "https://en.wikipedia.org/wiki/Byther_Smith",
-  "secondaryInstruments": [
-    "Vocals"
-  ]
+    "id": "byther-smith",
+    "name": "Byther Smith",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1932-04-17",
+    "birthPlace": "Monticello, Mississippi",
+    "birthCoords": [
+      -90.11,
+      31.5542
+    ],
+    "deathDate": "2021-09-10",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM",
+    "albums": [
+      {
+        "name": "Addressing the Nation with the Blues (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM"
+      },
+      {
+        "name": "Housefire (1991)"
+      },
+      {
+        "name": "Mississippi Kid (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=P1LsnyjQJgo"
+      }
+    ],
+    "description": "Byther Smith was a Chicago blues guitarist and singer born in Monticello, Mississippi, who migrated to Chicago in the mid-1950s at the urging of his first cousin J.B. Lenoir. He built his reputation as a first-call rhythm and session guitarist, working regularly behind Otis Rush, playing alongside Junior Wells at Theresa's Tavern, and touring with Big Mama Thornton and George \"Harmonica\" Smith, before stepping out as a bandleader with albums like Addressing the Nation with the Blues and Housefire. His tough, deeply personal songwriting and stinging, economical guitar style made him one of the most respected sidemen-turned-leaders of Chicago's postwar blues scene.",
+    "activeFrom": "1955",
+    "influences": [
+      "jb-lenoir",
+      "robert-lockwood-jr",
+      "hubert-sumlin"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "otis-rush",
+      "junior-wells",
+      "sunnyland-slim",
+      "big-mama-thornton",
+      "george-harmonica-smith"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Byther_Smith",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
   },
   {
-  "id": "mighty-joe-young",
-  "name": "Mighty Joe Young",
-  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mighty%20Joe%20Young.jpg?width=500",
-  "image_source": null,
-  "birthDate": "1927-09-23",
-  "birthPlace": "Shreveport",
-  "birthCoords": [
-    -93.76277777777777,
-    32.50805555555556
-  ],
-  "deathDate": "1999-03-24",
-  "deathPlace": "Chicago",
-  "deathCoords": [
-    -87.62777777777778,
-    41.88194444444444
-  ],
-  "spentTimePlaces": [],
-  "instrument": "Guitar",
-  "bluesStyle": "Chicago Blues",
-  "youtubeLink": "https://www.youtube.com/watch?v=EoEUZsEUWeA",
-  "albums": [
-    {
-      "name": "Bluesy Josephine (1976)",
-      "youtubeLink": "https://www.youtube.com/watch?v=F0t3hfF805Q"
-    }
-  ],
-  "description": "Mighty Joe Young was a Chicago blues guitarist and singer known for a soul-drenched take on the city's tough West Side sound. After moving from Louisiana to Milwaukee and then Chicago, he became one of the scene's most reliable session and backing guitarists, playing on Magic Sam's landmark albums West Side Soul and Black Magic before leading his own bands and recording for Delmark, Ovation, and Blind Pig.",
-  "activeFrom": "1955",
-  "influences": [
-    "freddie-king",
-    "buddy-guy",
-    "otis-rush"
-  ],
-  "influencedBy": [],
-  "incomplete": false,
-  "playedWith": [
-    "billy-boy-arnold",
-    "otis-rush",
-    "magic-sam",
-    "jimmy-rogers",
-    "willie-dixon",
-    "jimmy-dawkins"
-  ],
-  "source": "https://en.wikipedia.org/wiki/Mighty_Joe_Young",
-  "secondaryInstruments": [
-    "Vocals"
-  ]
+    "id": "mighty-joe-young",
+    "name": "Mighty Joe Young",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mighty%20Joe%20Young.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1927-09-23",
+    "birthPlace": "Shreveport",
+    "birthCoords": [
+      -93.76277777777777,
+      32.50805555555556
+    ],
+    "deathDate": "1999-03-24",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=EoEUZsEUWeA",
+    "albums": [
+      {
+        "name": "Bluesy Josephine (1976)",
+        "youtubeLink": "https://www.youtube.com/watch?v=F0t3hfF805Q"
+      }
+    ],
+    "description": "Mighty Joe Young was a Chicago blues guitarist and singer known for a soul-drenched take on the city's tough West Side sound. After moving from Louisiana to Milwaukee and then Chicago, he became one of the scene's most reliable session and backing guitarists, playing on Magic Sam's landmark albums West Side Soul and Black Magic before leading his own bands and recording for Delmark, Ovation, and Blind Pig.",
+    "activeFrom": "1955",
+    "influences": [
+      "freddie-king",
+      "buddy-guy",
+      "otis-rush"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "billy-boy-arnold",
+      "otis-rush",
+      "magic-sam",
+      "jimmy-rogers",
+      "willie-dixon",
+      "jimmy-dawkins"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Mighty_Joe_Young",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "lc-robinson",
+    "name": "L.C. Robinson",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1914-05-13",
+    "birthPlace": "Brenham, Texas",
+    "birthCoords": [
+      -96.396944444444,
+      30.161944444444
+    ],
+    "deathDate": "1976-09-26",
+    "deathPlace": "Berkeley, California",
+    "deathCoords": [
+      -122.26805555556,
+      37.870277777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=h6V5SBR_xpo",
+    "albums": [
+      {
+        "name": "Mojo in My Hand (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=8vkmp4xvFHI"
+      }
+    ],
+    "description": "L. C. \"Good Rockin'\" Robinson (born Louis Charles Robinson; May 13, 1914 – September 26, 1976) was an American blues singer, guitarist, steel guitarist, and fiddle player. Raised in Brenham, Texas, he was reputedly mentored in bottleneck slide guitar by Blind Willie Johnson and later took up steel guitar under the influence of Western swing musician Leon McAuliffe. After relocating to the San Francisco Bay Area, he became a fixture of the West Coast blues scene, recording for Arhoolie and World Pacific and backing artists such as Mercy Dee Walton and John Lee Hooker.",
+    "activeFrom": "1930",
+    "influences": [
+      "blind-willie-johnson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "muddy-waters",
+      "john-lee-hooker",
+      "mercy-dee"
+    ],
+    "source": "https://en.wikipedia.org/wiki/L._C._Robinson",
+    "secondaryInstruments": [
+      "Vocals",
+      "Slide guitar",
+      "Fiddle"
+    ]
   }
 ]
