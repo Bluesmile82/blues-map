@@ -2220,7 +2220,9 @@
       "jim-jackson",
       "fruteland-jackson"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "wizz-jones"
+    ],
     "incomplete": false,
     "playedWith": [
       "memphis-minnie",
@@ -9348,6 +9350,7 @@
     "description": "Eric Patrick Clapton (born 30 March 1945) is an English rock and blues guitarist, singer, and songwriter.  He is regarded as one of the most successful and influential guitarists in rock music.  Clapton ranked second in Rolling Stone's list of the \"100 Greatest Guitarists of All Time\" and fourth in Gibson's \"Top 50 Guitarists of All Time\".",
     "activeFrom": "1962",
     "influences": [
+      "wizz-jones",
       "bobby-parker"
     ],
     "influencedBy": [],
@@ -26114,7 +26117,8 @@
     "influencedBy": [
       "roy-book-binder",
       "jimmy-mccracklin",
-      "larry-johnson"
+      "larry-johnson",
+      "wizz-jones"
     ],
     "incomplete": false,
     "playedWith": [
@@ -42972,6 +42976,48 @@
     "secondaryInstruments": [
       "Vocals"
     ]
+  },
+  {
+    "id": "wizz-jones",
+    "name": "Wizz Jones",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/W-Jones-81.jpg",
+    "image_source": null,
+    "birthDate": "1939-04-25",
+    "birthPlace": "Thornton Heath",
+    "birthCoords": [
+      -0.1086,
+      51.4002
+    ],
+    "deathDate": "2025-04-27",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "British Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=zwdXDIDkhts",
+    "albums": [
+      {
+        "name": "The Village Thing Tapes (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=AE-oxuJmUak"
+      },
+      {
+        "name": "A Life On The Road 1964 - 2014 (2015)",
+        "youtubeLink": "https://www.youtube.com/watch?v=sqoxBwrmmow"
+      }
+    ],
+    "description": "Raymond Ronald \"Wizz\" Jones (25 April 1939 – 27 April 2025) was an English acoustic guitarist, and singer-songwriter.  He performed from the late 1950s and recorded from 1965 until 2025.  He possessed what was described as \"unparalleled virtuosity\" on the guitar and worked with many of the notable guitarists of the British folk revival, such as John Renbourn and Bert Jansch.",
+    "activeFrom": "1958",
+    "influences": [
+      "big-bill-broonzy",
+      "reverend-gary-davis"
+    ],
+    "influencedBy": [
+      "eric-clapton"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Wizz_Jones",
+    "secondaryInstruments": []
   },
   {
     "id": "eddy-clearwater",
