@@ -1652,7 +1652,9 @@
     "albums": [],
     "description": "Baby Tate (born Bessie Mae Tate, January 28, 1919 – August 21, 1974) was an American Piedmont blues singer and guitarist. She performed and recorded in the 1960s folk blues revival, showcasing traditional country blues style.",
     "activeFrom": "1930",
-    "influences": [],
+    "influences": [
+      "blind-willie-walker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -15381,7 +15383,9 @@
     "albums": [],
     "description": "John Jackson was a Piedmont blues musician from Virginia who learned guitar from Blind Blake 78s. He received a National Heritage Fellowship from the NEA in 1986.",
     "activeFrom": "1929",
-    "influences": [],
+    "influences": [
+      "blind-willie-walker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -16976,7 +16980,8 @@
     "activeFrom": "1928",
     "influences": [
       "blind-blake",
-      "blind-willie-johnson"
+      "blind-willie-johnson",
+      "blind-willie-walker"
     ],
     "influencedBy": [
       "terry-garland"
@@ -16988,7 +16993,8 @@
       "leroy-carr",
       "scrapper-blackwell",
       "lucille-hegamin",
-      "victoria-spivey"
+      "victoria-spivey",
+      "blind-willie-walker"
     ],
     "source": "https://en.wikipedia.org/wiki/Josh_White",
     "secondaryInstruments": []
@@ -26092,7 +26098,8 @@
     "influences": [
       "blind-blake",
       "lonnie-johnson",
-      "blind-willie-johnson"
+      "blind-willie-johnson",
+      "blind-willie-walker"
     ],
     "influencedBy": [
       "roy-book-binder",
@@ -26101,7 +26108,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "larry-johnson"
+      "larry-johnson",
+      "blind-willie-walker"
     ],
     "source": "https://en.wikipedia.org/wiki/Reverend_Gary_Davis",
     "secondaryInstruments": [
@@ -42949,6 +42957,50 @@
     "secondaryInstruments": [
       "Vocals"
     ]
+  },
+  {
+    "id": "blind-willie-walker",
+    "name": "Blind Willie Walker",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1896",
+    "birthPlace": "South Carolina",
+    "birthCoords": [
+      -81,
+      34
+    ],
+    "deathDate": "1933-03-04",
+    "deathPlace": "Greenville",
+    "deathCoords": [
+      -82.385555555556,
+      34.844444444444
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=tLfgC5C-jD0",
+    "albums": [
+      {
+        "name": "Ragtime Blues Guitar Complete (1927-1930)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Q6Qa2ICfu5M"
+      }
+    ],
+    "description": "Blind Willie Walker (April 1896 – March 4, 1933) was a Piedmont blues guitarist from the Greenville-Spartanburg area of South Carolina, celebrated by fellow musicians as one of the most dexterous ragtime-blues guitarists of his generation. He left behind only two issued recordings, \"South Carolina Rag\" and \"Dupree Blues,\" cut for Columbia in Atlanta in 1930, yet his intricate, syncopated fingerpicking left a lasting mark on the Piedmont style. Reverend Gary Davis, who played alongside him as a young man, and Josh White, who accompanied him in the 1920s, both singled him out as among the finest guitarists they ever heard.",
+    "activeFrom": "1916",
+    "influences": [],
+    "influencedBy": [
+      "baby-tate",
+      "john-jackson",
+      "josh-white",
+      "reverend-gary-davis"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "reverend-gary-davis",
+      "josh-white"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Blind_Willie_Walker",
+    "secondaryInstruments": []
   },
   {
     "id": "lc-robinson",
