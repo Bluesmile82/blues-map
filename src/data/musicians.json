@@ -276,7 +276,8 @@
       "stevie-ray-vaughan",
       "sean-costello",
       "coco-montoya",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -358,7 +359,8 @@
       "sean-costello",
       "larry-davis",
       "chris-cain",
-      "michael-burks"
+      "michael-burks",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -527,7 +529,9 @@
     "influences": [
       "ma-rainey"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "georgia-white"
+    ],
     "incomplete": false,
     "playedWith": [
       "bessie-smith",
@@ -1648,7 +1652,9 @@
     "albums": [],
     "description": "Baby Tate (born Bessie Mae Tate, January 28, 1919 – August 21, 1974) was an American Piedmont blues singer and guitarist. She performed and recorded in the 1960s folk blues revival, showcasing traditional country blues style.",
     "activeFrom": "1930",
-    "influences": [],
+    "influences": [
+      "blind-willie-walker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -1919,7 +1925,8 @@
       "bobby-blue-bland",
       "sean-costello",
       "chris-cain",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -2048,7 +2055,8 @@
       "ma-rainey"
     ],
     "influencedBy": [
-      "lucille-hegamin"
+      "lucille-hegamin",
+      "georgia-white"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -2228,7 +2236,8 @@
       "son-house",
       "blind-lemon-jefferson",
       "roosevelt-sykes",
-      "lonnie-johnson"
+      "lonnie-johnson",
+      "georgia-white"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Bill_Broonzy",
     "secondaryInstruments": [
@@ -3023,7 +3032,8 @@
       "willie-dixon",
       "lurrie-bell",
       "son-seals",
-      "buddy-guy"
+      "buddy-guy",
+      "eddy-clearwater"
     ],
     "source": "https://en.wikipedia.org/wiki/Billy_Branch",
     "secondaryInstruments": [
@@ -3528,7 +3538,8 @@
     "activeFrom": "1927",
     "influences": [],
     "influencedBy": [
-      "ramblin-thomas"
+      "ramblin-thomas",
+      "lc-robinson"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -3730,7 +3741,8 @@
     "playedWith": [
       "muddy-waters",
       "buddy-guy",
-      "jody-williams"
+      "jody-williams",
+      "bobby-parker"
     ],
     "source": null,
     "secondaryInstruments": [
@@ -5005,7 +5017,8 @@
       "peetie-wheatstraw",
       "memphis-minnie",
       "scrapper-blackwell",
-      "leroy-carr"
+      "leroy-carr",
+      "georgia-white"
     ],
     "source": "https://en.wikipedia.org/wiki/Bumble_Bee_Slim",
     "secondaryInstruments": [
@@ -9084,7 +9097,8 @@
       "j-b-hutto",
       "etta-james",
       "hip-linkchain",
-      "sonny-landreth"
+      "sonny-landreth",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -9336,7 +9350,8 @@
     "description": "Eric Patrick Clapton (born 30 March 1945) is an English rock and blues guitarist, singer, and songwriter.  He is regarded as one of the most successful and influential guitarists in rock music.  Clapton ranked second in Rolling Stone's list of the \"100 Greatest Guitarists of All Time\" and fourth in Gibson's \"Top 50 Guitarists of All Time\".",
     "activeFrom": "1962",
     "influences": [
-      "wizz-jones"
+      "wizz-jones",
+      "bobby-parker"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -10248,7 +10263,8 @@
       "jimmy-rogers",
       "elmore-james",
       "otis-rush",
-      "junior-wells"
+      "junior-wells",
+      "louis-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Fred_Below",
     "secondaryInstruments": []
@@ -10401,7 +10417,8 @@
       "sean-costello",
       "michael-burks",
       "toronzo-cannon",
-      "mighty-joe-young"
+      "mighty-joe-young",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -12493,7 +12510,8 @@
       "eric-clapton",
       "keith-richards",
       "jimi-hendrix",
-      "stevie-ray-vaughan"
+      "stevie-ray-vaughan",
+      "byther-smith"
     ],
     "incomplete": false,
     "playedWith": [
@@ -12587,7 +12605,9 @@
     "influences": [
       "ma-rainey"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "georgia-white"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Ida_Cox",
@@ -13571,7 +13591,9 @@
       "blind-lemon-jefferson",
       "lightnin-hopkins"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "byther-smith"
+    ],
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson",
@@ -14048,7 +14070,8 @@
     ],
     "influencedBy": [
       "michael-burks",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -14890,7 +14913,8 @@
     "playedWith": [
       "bb-king",
       "john-mayall",
-      "chris-cain"
+      "chris-cain",
+      "ana-popovic"
     ],
     "source": "13 Most Legendary And Famous Blues Artists of All Time",
     "secondaryInstruments": [
@@ -15366,7 +15390,9 @@
     "albums": [],
     "description": "John Jackson was a Piedmont blues musician from Virginia who learned guitar from Blind Blake 78s. He received a National Heritage Fellowship from the NEA in 1986.",
     "activeFrom": "1929",
-    "influences": [],
+    "influences": [
+      "blind-willie-walker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -15444,7 +15470,8 @@
     "playedWith": [
       "eddie-taylor",
       "luther-allison",
-      "mike-bloomfield"
+      "mike-bloomfield",
+      "lc-robinson"
     ],
     "source": "https://en.wikipedia.org/wiki/Boom_Boom_(John_Lee_Hooker_song)",
     "secondaryInstruments": [
@@ -15550,7 +15577,9 @@
     ],
     "description": "John Brumwell Mayall  (29 November 1933 – 22 July 2024) was an English blues and rock musician, songwriter and producer.  In the 1960s, he formed John Mayall & the Bluesbreakers, a band that has counted among its members some of the most famous blues and blues rock musicians of all-time.  A singer, guitarist, harmonica player, and keyboardist, he had a career that spanned nearly seven decades, remaining an active musician until his death aged 90.",
     "activeFrom": "1956",
-    "influences": [],
+    "influences": [
+      "bobby-parker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -16960,7 +16989,8 @@
     "activeFrom": "1928",
     "influences": [
       "blind-blake",
-      "blind-willie-johnson"
+      "blind-willie-johnson",
+      "blind-willie-walker"
     ],
     "influencedBy": [
       "terry-garland"
@@ -16972,7 +17002,8 @@
       "leroy-carr",
       "scrapper-blackwell",
       "lucille-hegamin",
-      "victoria-spivey"
+      "victoria-spivey",
+      "blind-willie-walker"
     ],
     "source": "https://en.wikipedia.org/wiki/Josh_White",
     "secondaryInstruments": []
@@ -17291,7 +17322,8 @@
       "earl-hooker",
       "buddy-guy",
       "little-walter",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "louis-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Wells",
     "secondaryInstruments": [
@@ -17702,7 +17734,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "ana-popovic"
+    ],
     "source": "https://en.wikipedia.org/wiki/Keb'_Mo'",
     "secondaryInstruments": [
       "Mandolin",
@@ -20027,7 +20061,8 @@
       "sonny-boy-williamson",
       "memphis-minnie",
       "johnny-shines",
-      "otis-rush"
+      "otis-rush",
+      "louis-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Little_Walter",
     "secondaryInstruments": [
@@ -20399,7 +20434,8 @@
       "victoria-spivey",
       "alger-texas-alexander",
       "bessie-smith",
-      "roosevelt-sykes"
+      "roosevelt-sykes",
+      "georgia-white"
     ],
     "source": "https://en.wikipedia.org/wiki/Lonnie_Johnson_(musician)",
     "secondaryInstruments": [
@@ -21164,7 +21200,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "ana-popovic"
+    ],
     "source": "https://en.wikipedia.org/wiki/Lucky_Peterson",
     "secondaryInstruments": [
       "Organ",
@@ -21728,7 +21766,8 @@
     "influencedBy": [
       "bessie-smith",
       "alberta-hunter",
-      "lucille-hegamin"
+      "lucille-hegamin",
+      "georgia-white"
     ],
     "incomplete": false,
     "playedWith": [
@@ -21803,7 +21842,9 @@
     "description": "Samuel Gene Maghett (February 14, 1937 – December 1, 1969), known as Magic Sam, was an American Chicago blues musician.  He was born in Grenada County, Mississippi, and learned to play the blues from listening to records by Muddy Waters and Little Walter.  After moving to Chicago at the age of 19, he was signed by Cobra Records and became well known as a bluesman after the release of his first record, \"All Your Love\", in 1957.",
     "activeFrom": "1957",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "eddy-clearwater"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -22806,7 +22847,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "lc-robinson"
+    ],
     "source": null,
     "secondaryInstruments": [
       "Vocals"
@@ -23706,7 +23749,9 @@
       "slim-harpo",
       "lonesome-sundown",
       "otis-rush",
-      "kim-wilson"
+      "kim-wilson",
+      "louis-myers",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23720,7 +23765,9 @@
       "bb-king",
       "eric-clapton",
       "albert-collins",
-      "rick-estrin"
+      "rick-estrin",
+      "louis-myers",
+      "lc-robinson"
     ],
     "source": "https://en.wikipedia.org/wiki/Muddy_Waters",
     "secondaryInstruments": [
@@ -24204,7 +24251,8 @@
     "influencedBy": [
       "sean-costello",
       "coco-montoya",
-      "mighty-joe-young"
+      "mighty-joe-young",
+      "eddy-clearwater"
     ],
     "incomplete": false,
     "playedWith": [
@@ -25932,7 +25980,8 @@
     "influencedBy": [
       "percy-mayfield",
       "quincy-jones",
-      "latimore"
+      "latimore",
+      "bobby-parker"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -26062,7 +26111,8 @@
     "influences": [
       "blind-blake",
       "lonnie-johnson",
-      "blind-willie-johnson"
+      "blind-willie-johnson",
+      "blind-willie-walker"
     ],
     "influencedBy": [
       "roy-book-binder",
@@ -26072,7 +26122,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "larry-johnson"
+      "larry-johnson",
+      "blind-willie-walker"
     ],
     "source": "https://en.wikipedia.org/wiki/Reverend_Gary_Davis",
     "secondaryInstruments": [
@@ -26604,7 +26655,8 @@
       "ramblin-thomas",
       "keb-mo",
       "lonnie-mack",
-      "sonny-landreth"
+      "sonny-landreth",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26685,7 +26737,8 @@
       "robert-johnson"
     ],
     "influencedBy": [
-      "bb-king"
+      "bb-king",
+      "byther-smith"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26808,7 +26861,8 @@
       "fruteland-jackson"
     ],
     "influencedBy": [
-      "cedell-davis"
+      "cedell-davis",
+      "louis-myers"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26900,7 +26954,9 @@
     "albums": [],
     "description": "Robin Trower is an English rock guitarist from Procol Harum whose blues-infused 1974 album Bridge of Sighs became a gold-certified classic.",
     "activeFrom": "1962",
-    "influences": [],
+    "influences": [
+      "bobby-parker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -27010,7 +27066,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "eddy-clearwater"
+    ],
     "source": "https://en.wikipedia.org/wiki/Ronnie_Baker_Brooks",
     "secondaryInstruments": [
       "Vocals"
@@ -27890,7 +27948,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "barbara-lynn"
+      "barbara-lynn",
+      "bobby-parker"
     ],
     "source": "https://en.wikipedia.org/wiki/Sam_Cooke",
     "secondaryInstruments": []
@@ -29985,7 +30044,8 @@
       "lonnie-mack"
     ],
     "influencedBy": [
-      "sean-costello"
+      "sean-costello",
+      "ana-popovic"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30548,7 +30608,8 @@
       "etta-james",
       "john-lee-hooker",
       "bonnie-raitt",
-      "johnny-winter"
+      "johnny-winter",
+      "ana-popovic"
     ],
     "source": "https://en.wikipedia.org/wiki/Taj_Mahal_(musician)",
     "secondaryInstruments": [
@@ -34162,7 +34223,8 @@
       "bb-king",
       "bobby-blue-bland",
       "albert-king",
-      "etta-james"
+      "etta-james",
+      "ana-popovic"
     ],
     "source": null,
     "secondaryInstruments": []
@@ -42630,6 +42692,243 @@
     "secondaryInstruments": []
   },
   {
+    "id": "ana-popovic",
+    "name": "Ana Popović",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ana%20Popovic%20HagenU.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Ana%20Popovic%20HagenU.jpg?width=500",
+    "birthDate": "1976-05-13",
+    "birthPlace": "Belgrade",
+    "birthCoords": [
+      20.456944444444446,
+      44.81777777777778
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Ytj3RTjljnQ",
+    "albums": [
+      {
+        "name": "Can You Stand the Heat (2013)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9bXaY5f8Ok0"
+      },
+      {
+        "name": "Trilogy (2016)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Ytj3RTjljnQ"
+      }
+    ],
+    "description": "Ana Popović is a Serbian-born blues, blues-rock, and soul-blues guitarist and singer who grew up in Belgrade immersed in her father's record collection of Albert King, Muddy Waters, B.B. King, Elmore James, and Stevie Ray Vaughan. She began performing with the Belgrade band Hush as a teenager before relocating to the Netherlands to study jazz guitar, then built an international solo career from a base in Memphis and later Los Angeles, becoming one of the few women to be nominated for Blues Music Award Guitarist of the Year. Known for her fiery slide and lead playing and genre-crossing albums that fuse blues with funk, soul, and jazz, she has recorded and toured alongside artists including Joe Bonamassa, Keb' Mo', and Taj Mahal.",
+    "activeFrom": "1995",
+    "influences": [
+      "stevie-ray-vaughan",
+      "albert-king",
+      "jimi-hendrix",
+      "robert-johnson",
+      "albert-collins",
+      "muddy-waters",
+      "bb-king",
+      "freddie-king",
+      "elmore-james"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "joe-bonamassa",
+      "keb-mo",
+      "taj-mahal",
+      "tony-coleman",
+      "lucky-peterson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Ana_Popovi%C4%87",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "georgia-white",
+    "name": "Georgia White",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1903-03-09",
+    "birthPlace": "Sandersville, Georgia",
+    "birthCoords": [
+      -82.809722222222,
+      32.981944444444
+    ],
+    "deathDate": "1980",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=N3PMbRYYCV4",
+    "albums": [
+      {
+        "name": "You Done Lost Your Good Thing Now (1935)",
+        "youtubeLink": "https://www.youtube.com/watch?v=OmxMC5h7mso"
+      },
+      {
+        "name": "Alley Boogie (1937)",
+        "youtubeLink": "https://www.youtube.com/watch?v=irl07IzYkm4"
+      }
+    ],
+    "description": "Georgia White was an American classic blues singer and pianist who became one of the most prolific female blues recording artists of the 1930s, cutting well over 100 sides for Decca between 1935 and 1941. Raised in Sandersville, Georgia before settling in Chicago, she is best remembered for the risque hit \"You Done Lost Your Good Thing Now\" and the instrumental \"Alley Boogie,\" and she frequently recorded and toured alongside guitarist Lonnie Johnson and fellow Chicago blues singer Bumble Bee Slim before joining Big Bill Broonzy's Laughing Trio as pianist in the late 1940s. Her smooth, confident vocal style carried the classic blues tradition of Bessie Smith and Ma Rainey into the swing era.",
+    "activeFrom": "1923",
+    "influences": [
+      "bessie-smith",
+      "ma-rainey",
+      "ida-cox",
+      "alberta-hunter"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "lonnie-johnson",
+      "bumble-bee-slim",
+      "big-bill-broonzy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Georgia_White",
+    "secondaryInstruments": [
+      "Piano"
+    ]
+  },
+  {
+    "id": "louis-myers",
+    "name": "Louis Myers",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1929-09-18",
+    "birthPlace": "Byhalia, Mississippi",
+    "birthCoords": [
+      -89.687,
+      34.8654
+    ],
+    "deathDate": "1994-09-05",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=W7ynQQoOe9A",
+    "albums": [
+      {
+        "name": "I'm a Southern Man",
+        "youtubeLink": "https://www.youtube.com/watch?v=7TrEkfVhRhQ"
+      },
+      {
+        "name": "Tell My Story Movin'",
+        "youtubeLink": "https://www.youtube.com/watch?v=zU3xqGq3DRs"
+      }
+    ],
+    "description": "Louis Myers was a Chicago blues guitarist and harmonica player, born in Byhalia, Mississippi, who moved north as a child and became a foundational figure in the postwar Chicago blues sound. As co-founder of the Aces (also known as the Four Aces), alongside his bassist brother Dave Myers and drummer Fred Below, he backed Little Walter on the era-defining 1952 hit \"Juke\" and later spent years as Junior Wells's guitarist, helping to shape the interlocking guitar-and-harmonica interplay that defined Chicago blues. He also recorded as a bandleader in his own right, releasing albums such as I'm a Southern Man and Tell My Story Movin' that showcased his fluid, tremolo-picked guitar style.",
+    "activeFrom": "1947",
+    "influences": [
+      "muddy-waters",
+      "robert-nighthawk"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "fred-below",
+      "little-walter",
+      "junior-wells",
+      "muddy-waters"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Louis_Myers",
+    "secondaryInstruments": [
+      "Harmonica"
+    ]
+  },
+  {
+    "id": "byther-smith",
+    "name": "Byther Smith",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1932-04-17",
+    "birthPlace": "Monticello, Mississippi",
+    "birthCoords": [
+      -90.11,
+      31.5542
+    ],
+    "deathDate": "2021-09-10",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM",
+    "albums": [
+      {
+        "name": "Addressing the Nation with the Blues (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uHbZBJD8zsM"
+      },
+      {
+        "name": "Housefire (1991)"
+      },
+      {
+        "name": "Mississippi Kid (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=P1LsnyjQJgo"
+      }
+    ],
+    "description": "Byther Smith was a Chicago blues guitarist and singer born in Monticello, Mississippi, who migrated to Chicago in the mid-1950s at the urging of his first cousin J.B. Lenoir. He built his reputation as a first-call rhythm and session guitarist, working regularly behind Otis Rush, playing alongside Junior Wells at Theresa's Tavern, and touring with Big Mama Thornton and George \"Harmonica\" Smith, before stepping out as a bandleader with albums like Addressing the Nation with the Blues and Housefire. His tough, deeply personal songwriting and stinging, economical guitar style made him one of the most respected sidemen-turned-leaders of Chicago's postwar blues scene.",
+    "activeFrom": "1955",
+    "influences": [
+      "jb-lenoir",
+      "robert-lockwood-jr",
+      "hubert-sumlin"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "otis-rush",
+      "junior-wells",
+      "sunnyland-slim",
+      "big-mama-thornton",
+      "george-harmonica-smith"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Byther_Smith",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
     "id": "mighty-joe-young",
     "name": "Mighty Joe Young",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mighty%20Joe%20Young.jpg?width=500",
@@ -42681,7 +42980,7 @@
   {
     "id": "wizz-jones",
     "name": "Wizz Jones",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/W-Jones-81.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/W-Jones-81.jpg",
     "image_source": null,
     "birthDate": "1939-04-25",
     "birthPlace": "Thornton Heath",
@@ -42718,6 +43017,216 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Wizz_Jones",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "eddy-clearwater",
+    "name": "Eddy Clearwater",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eddy%20Clearwater.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1935-01-10",
+    "birthPlace": "Macon, Mississippi",
+    "birthCoords": [
+      -88.56083,
+      33.1125
+    ],
+    "deathDate": "2018-06-01",
+    "deathPlace": "Skokie, Illinois",
+    "deathCoords": [
+      -87.73277777777778,
+      42.033611111111114
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Birmingham, Alabama",
+        "coords": [
+          -86.8025,
+          33.5207
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=piX7fKFprAc",
+    "albums": [
+      {
+        "name": "Hillbilly Blues (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6Xt_pBuApTQ"
+      }
+    ],
+    "description": "Eddy Clearwater (born Edward Harrington, 1935-2018), nicknamed \"The Chief\" for the Native American headdress he wore onstage, was a left-handed Chicago blues guitarist known for fusing hard-driving West Side blues with the twang of Chuck Berry-style rock and roll and the fervor of the gospel music he grew up singing. After moving from Mississippi to Chicago in 1950, he learned the trade alongside Magic Sam and Otis Rush before building a decades-long career centered on Chicago clubs like Kingston Mines, releasing acclaimed albums such as The Chief and West Side Strut on Rooster Blues and Alligator Records.",
+    "activeFrom": "1953",
+    "influences": [
+      "magic-sam",
+      "otis-rush"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ronnie-baker-brooks",
+      "billy-branch"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Eddy_Clearwater",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "blind-willie-walker",
+    "name": "Blind Willie Walker",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1896",
+    "birthPlace": "South Carolina",
+    "birthCoords": [
+      -81,
+      34
+    ],
+    "deathDate": "1933-03-04",
+    "deathPlace": "Greenville",
+    "deathCoords": [
+      -82.385555555556,
+      34.844444444444
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=tLfgC5C-jD0",
+    "albums": [
+      {
+        "name": "Ragtime Blues Guitar Complete (1927-1930)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Q6Qa2ICfu5M"
+      }
+    ],
+    "description": "Blind Willie Walker (April 1896 – March 4, 1933) was a Piedmont blues guitarist from the Greenville-Spartanburg area of South Carolina, celebrated by fellow musicians as one of the most dexterous ragtime-blues guitarists of his generation. He left behind only two issued recordings, \"South Carolina Rag\" and \"Dupree Blues,\" cut for Columbia in Atlanta in 1930, yet his intricate, syncopated fingerpicking left a lasting mark on the Piedmont style. Reverend Gary Davis, who played alongside him as a young man, and Josh White, who accompanied him in the 1920s, both singled him out as among the finest guitarists they ever heard.",
+    "activeFrom": "1916",
+    "influences": [],
+    "influencedBy": [
+      "baby-tate",
+      "john-jackson",
+      "josh-white",
+      "reverend-gary-davis"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "reverend-gary-davis",
+      "josh-white"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Blind_Willie_Walker",
+    "secondaryInstruments": []
+  },
+  {
+    "id": "lc-robinson",
+    "name": "L.C. Robinson",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1914-05-13",
+    "birthPlace": "Brenham, Texas",
+    "birthCoords": [
+      -96.396944444444,
+      30.161944444444
+    ],
+    "deathDate": "1976-09-26",
+    "deathPlace": "Berkeley, California",
+    "deathCoords": [
+      -122.26805555556,
+      37.870277777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=h6V5SBR_xpo",
+    "albums": [
+      {
+        "name": "Mojo in My Hand (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=8vkmp4xvFHI"
+      }
+    ],
+    "description": "L. C. \"Good Rockin'\" Robinson (born Louis Charles Robinson; May 13, 1914 – September 26, 1976) was an American blues singer, guitarist, steel guitarist, and fiddle player. Raised in Brenham, Texas, he was reputedly mentored in bottleneck slide guitar by Blind Willie Johnson and later took up steel guitar under the influence of Western swing musician Leon McAuliffe. After relocating to the San Francisco Bay Area, he became a fixture of the West Coast blues scene, recording for Arhoolie and World Pacific and backing artists such as Mercy Dee Walton and John Lee Hooker.",
+    "activeFrom": "1930",
+    "influences": [
+      "blind-willie-johnson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "muddy-waters",
+      "john-lee-hooker",
+      "mercy-dee"
+    ],
+    "source": "https://en.wikipedia.org/wiki/L._C._Robinson",
+    "secondaryInstruments": [
+      "Vocals",
+      "Slide guitar",
+      "Fiddle"
+    ]
+  },
+  {
+    "id": "bobby-parker",
+    "name": "Bobby Parker",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bobby%20Parker.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1937-08-31",
+    "birthPlace": "Lafayette, Louisiana",
+    "birthCoords": [
+      -92.012649,
+      30.243062
+    ],
+    "deathDate": "2013-10-31",
+    "deathPlace": "Bowie, Maryland",
+    "deathCoords": [
+      -76.73027777777777,
+      38.94277777777778
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=QdqvFUjeY_0",
+    "albums": [
+      {
+        "name": "Bent Out of Shape",
+        "youtubeLink": "https://www.youtube.com/watch?v=HDdSDPskta8"
+      },
+      {
+        "name": "Shine Me Up",
+        "youtubeLink": "https://www.youtube.com/watch?v=6hIM3gnQhTU"
+      },
+      {
+        "name": "Soul of the Blues",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Bobby Parker was a Louisiana-born, Washington D.C.-based blues guitarist and singer best known for his 1961 single 'Watch Your Step,' whose driving guitar riff -- inspired by Dizzy Gillespie's 'Manteca' and Ray Charles' 'What'd I Say' -- was later echoed in The Beatles' 'I Feel Fine' and Led Zeppelin's 'Moby Dick.' A journeyman guitarist who toured behind Bo Diddley, Sam Cooke, and other R&B stars through the 1950s, his fierce, horn-inflected style made him a touchstone for British blues-rock guitarists including Eric Clapton, John Mayall, and Robin Trower.",
+    "activeFrom": "1956",
+    "influences": [
+      "ray-charles"
+    ],
+    "influencedBy": [
+      "eric-clapton",
+      "john-mayall",
+      "robin-trower"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "bo-diddley",
+      "sam-cooke"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Bobby_Parker_(guitarist)",
     "secondaryInstruments": [
       "Vocals"
     ]
