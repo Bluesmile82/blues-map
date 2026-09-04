@@ -83,6 +83,7 @@ app.post('/api/musicians', async (req, res) => {
       return res.status(409).json({ error: 'Musician already exists' });
     }
 
+    newMusician.createdAt = newMusician.createdAt || new Date().toISOString().slice(0, 10);
     musicians.push(newMusician);
 
     fs.writeFileSync(musiciansPath, JSON.stringify(musicians, null, 2), 'utf-8');

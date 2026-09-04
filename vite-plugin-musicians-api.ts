@@ -150,6 +150,7 @@ export function musiciansApiPlugin(): Plugin {
               res.end(JSON.stringify({ error: 'Musician already exists' }));
               return;
             }
+            created.createdAt = created.createdAt || new Date().toISOString().slice(0, 10);
             createBackup('pre-save');
             musicians.push(created);
             fs.writeFileSync(MUSICIANS_PATH, JSON.stringify(musicians, null, 2), 'utf-8');
