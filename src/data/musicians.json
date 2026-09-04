@@ -3030,7 +3030,8 @@
       "willie-dixon",
       "lurrie-bell",
       "son-seals",
-      "buddy-guy"
+      "buddy-guy",
+      "eddy-clearwater"
     ],
     "source": "https://en.wikipedia.org/wiki/Billy_Branch",
     "secondaryInstruments": [
@@ -21833,7 +21834,9 @@
     "description": "Samuel Gene Maghett (February 14, 1937 – December 1, 1969), known as Magic Sam, was an American Chicago blues musician.  He was born in Grenada County, Mississippi, and learned to play the blues from listening to records by Muddy Waters and Little Walter.  After moving to Chicago at the age of 19, he was signed by Cobra Records and became well known as a bluesman after the release of his first record, \"All Your Love\", in 1957.",
     "activeFrom": "1957",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "eddy-clearwater"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -24240,7 +24243,8 @@
     "influencedBy": [
       "sean-costello",
       "coco-montoya",
-      "mighty-joe-young"
+      "mighty-joe-young",
+      "eddy-clearwater"
     ],
     "incomplete": false,
     "playedWith": [
@@ -27050,7 +27054,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "eddy-clearwater"
+    ],
     "source": "https://en.wikipedia.org/wiki/Ronnie_Baker_Brooks",
     "secondaryInstruments": [
       "Vocals"
@@ -42954,6 +42960,65 @@
       "jimmy-dawkins"
     ],
     "source": "https://en.wikipedia.org/wiki/Mighty_Joe_Young",
+    "secondaryInstruments": [
+      "Vocals"
+    ]
+  },
+  {
+    "id": "eddy-clearwater",
+    "name": "Eddy Clearwater",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eddy%20Clearwater.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1935-01-10",
+    "birthPlace": "Macon, Mississippi",
+    "birthCoords": [
+      -88.56083,
+      33.1125
+    ],
+    "deathDate": "2018-06-01",
+    "deathPlace": "Skokie, Illinois",
+    "deathCoords": [
+      -87.73277777777778,
+      42.033611111111114
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Birmingham, Alabama",
+        "coords": [
+          -86.8025,
+          33.5207
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=piX7fKFprAc",
+    "albums": [
+      {
+        "name": "Hillbilly Blues (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6Xt_pBuApTQ"
+      }
+    ],
+    "description": "Eddy Clearwater (born Edward Harrington, 1935-2018), nicknamed \"The Chief\" for the Native American headdress he wore onstage, was a left-handed Chicago blues guitarist known for fusing hard-driving West Side blues with the twang of Chuck Berry-style rock and roll and the fervor of the gospel music he grew up singing. After moving from Mississippi to Chicago in 1950, he learned the trade alongside Magic Sam and Otis Rush before building a decades-long career centered on Chicago clubs like Kingston Mines, releasing acclaimed albums such as The Chief and West Side Strut on Rooster Blues and Alligator Records.",
+    "activeFrom": "1953",
+    "influences": [
+      "magic-sam",
+      "otis-rush"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ronnie-baker-brooks",
+      "billy-branch"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Eddy_Clearwater",
     "secondaryInstruments": [
       "Vocals"
     ]
