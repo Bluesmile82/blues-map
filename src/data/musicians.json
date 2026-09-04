@@ -54,7 +54,8 @@
     "source": "12 Essential Contemporary Blues Artists",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "adolphus-bell",
@@ -113,7 +114,8 @@
     "source": "https://en.wikipedia.org/wiki/Adolphus_Bell",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "alan-wilson",
@@ -155,7 +157,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "albert-ammons",
@@ -221,7 +224,8 @@
       "pete-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Albert_Ammons",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "albert-collins",
@@ -296,7 +300,8 @@
     "source": "https://en.wikipedia.org/wiki/Albert_Collins",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "albert-king",
@@ -379,7 +384,8 @@
     "source": "https://en.wikipedia.org/wiki/Albert_King",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "albert-washington",
@@ -428,7 +434,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Albert_Washington",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "albert-white",
@@ -465,7 +472,8 @@
     "source": "https://en.wikipedia.org/wiki/Albert_White",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "alberta-hunter",
@@ -539,7 +547,8 @@
       "victoria-spivey"
     ],
     "source": "https://en.wikipedia.org/wiki/Alberta_Hunter",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "alec-seward",
@@ -595,7 +604,8 @@
     "source": "https://en.wikipedia.org/wiki/Alec_Seward",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "alexis-korner",
@@ -658,7 +668,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "alger-texas-alexander",
@@ -710,7 +721,8 @@
       "lowell-fulson"
     ],
     "source": "https://en.wikipedia.org/wiki/J._T._Smith_(musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "allen-toussaint",
@@ -741,7 +753,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Allen_Toussaint",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "alvin-youngblood-hart",
@@ -801,7 +814,8 @@
       "Mandolin",
       "Banjo",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "amos-milburn",
@@ -868,7 +882,8 @@
     "source": "https://en.wikipedia.org/wiki/Amos_Milburn",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "andrew-odom",
@@ -919,7 +934,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Andrew_Odom",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "andy-rodgers",
@@ -953,7 +969,8 @@
     "source": "https://en.wikipedia.org/wiki/Andy_Rodgers_(musician)",
     "secondaryInstruments": [
       "Harmonica"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "angela-strehli",
@@ -1000,7 +1017,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Angela_Strehli",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "anson-funderburgh",
@@ -1040,7 +1058,8 @@
       "kim-wilson"
     ],
     "source": "https://en.wikipedia.org/wiki/Anson_Funderburgh",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "arbee-stidham",
@@ -1116,7 +1135,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Arbee_Stidham",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "archie-edwards",
@@ -1185,7 +1205,8 @@
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "aron-burton",
@@ -1234,7 +1255,8 @@
     "secondaryInstruments": [
       "Bass",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "arthur-big-boy-crudup",
@@ -1314,7 +1336,8 @@
     "source": "https://en.wikipedia.org/wiki/Arthur_Crudup",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "arthur-big-boy-spires",
@@ -1367,7 +1390,8 @@
     "source": "https://en.wikipedia.org/wiki/Big_Boy_(nickname)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "arthur-crudup",
@@ -1427,7 +1451,8 @@
     "source": "https://en.wikipedia.org/wiki/Arthur_Crudup",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "artur-menezes",
@@ -1455,7 +1480,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Artur_Menezes",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "arvella-gray",
@@ -1513,7 +1539,8 @@
     "secondaryInstruments": [
       "Vocals",
       "Dobro"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "asie-payton",
@@ -1548,7 +1575,8 @@
     "source": "https://en.wikipedia.org/wiki/Asie_Payton",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "baby-boy-warren",
@@ -1629,7 +1657,8 @@
       "calvin-frazier"
     ],
     "source": "https://en.wikipedia.org/wiki/Baby_Boy_Warren",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "baby-tate",
@@ -1668,7 +1697,8 @@
     "source": "https://en.wikipedia.org/wiki/Grady_Tate",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "barbecue-bob",
@@ -1762,7 +1792,8 @@
     "source": "https://en.wikipedia.org/wiki/Barbecue_Bob",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "barkin-bill-smith",
@@ -1810,7 +1841,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Barkin'_Bill_Smith",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "barrelhouse-chuck",
@@ -1851,7 +1883,8 @@
     "source": "https://en.wikipedia.org/wiki/Barrelhouse_Chuck",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bb-king",
@@ -1946,7 +1979,8 @@
     "source": "https://en.wikipedia.org/wiki/B._B._King",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bernice-edwards",
@@ -2001,7 +2035,8 @@
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bessie-smith",
@@ -2061,7 +2096,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lucille_Bogan",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bessie-tucker",
@@ -2128,7 +2164,8 @@
       "jesse-thomas"
     ],
     "source": "https://en.wikipedia.org/wiki/Bessie_Tucker",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "big-bill-broonzy",
@@ -2242,7 +2279,8 @@
     "source": "https://en.wikipedia.org/wiki/Big_Bill_Broonzy",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "big-boy-henry",
@@ -2286,7 +2324,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Big_Boy",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "big-jack-johnson",
@@ -2337,7 +2376,8 @@
     "secondaryInstruments": [
       "Mandolin",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "big-joe-duskin",
@@ -2390,7 +2430,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Big_Joe_Duskin",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "big-joe-turner",
@@ -2443,7 +2484,8 @@
       "pete-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Joe_Turner",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "big-joe-williams",
@@ -2525,7 +2567,8 @@
     "source": "https://en.wikipedia.org/wiki/Big_Joe_Williams",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "big-john-wrencher",
@@ -2583,7 +2626,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Big_John_Wrencher",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "big-maceo-merriweather",
@@ -2674,7 +2718,8 @@
       "sleepy-john-estes"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Maceo_Merriweather",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "big-mama-thornton",
@@ -2778,7 +2823,8 @@
     "source": "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "big-walter-horton",
@@ -2878,7 +2924,8 @@
       "koko-taylor"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Walter_Horton",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bill-jennings",
@@ -2909,7 +2956,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "billy-boy-arnold",
@@ -2980,7 +3028,8 @@
     "secondaryInstruments": [
       "Vocals",
       "Guitar"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "billy-branch",
@@ -3038,7 +3087,8 @@
     "source": "https://en.wikipedia.org/wiki/Billy_Branch",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "billy-wright",
@@ -3071,7 +3121,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Billy_Wright_(musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "black-ace",
@@ -3139,7 +3190,8 @@
       "oscar-buddy-woods"
     ],
     "source": "https://en.wikipedia.org/wiki/Black_Ace_(disambiguation)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "blind-blake",
@@ -3207,7 +3259,8 @@
     "source": "https://en.wikipedia.org/wiki/Blind_Blake",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "blind-blues-darby",
@@ -3240,7 +3293,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Teddy_Darby",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "blind-boy-fuller",
@@ -3299,7 +3353,8 @@
     "source": "https://en.wikipedia.org/wiki/Blind_Boy_Fuller",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "blind-john-davis",
@@ -3352,7 +3407,8 @@
     "source": "https://en.wikipedia.org/wiki/Blind_Blake",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "blind-lemon-jefferson",
@@ -3411,7 +3467,8 @@
     "source": "https://en.wikipedia.org/wiki/Blind_Lemon_Jefferson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "blind-mississippi-morris",
@@ -3449,7 +3506,8 @@
     "source": "https://en.wikipedia.org/wiki/Blind_Mississippi_Morris",
     "secondaryInstruments": [
       "Guitar"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "blind-willie-johnson",
@@ -3547,7 +3605,8 @@
     "secondaryInstruments": [
       "Slide guitar",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "blind-willie-mctell",
@@ -3613,7 +3672,8 @@
     "source": "https://en.wikipedia.org/wiki/Blind_Willie_McTell",
     "secondaryInstruments": [
       "Harmonica"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bo-carter",
@@ -3673,7 +3733,8 @@
     "source": "https://en.wikipedia.org/wiki/Bo_Carter",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bo-diddley",
@@ -3747,7 +3808,8 @@
     "source": null,
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bob-corritore",
@@ -3810,7 +3872,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bob-gaddy",
@@ -3858,7 +3921,8 @@
     "source": "https://en.wikipedia.org/wiki/Bob_Gaddy",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bob-kirkpatrick",
@@ -3893,7 +3957,8 @@
     "source": "https://en.wikipedia.org/wiki/Bob_Kirkpatrick_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bob-margolin",
@@ -3931,7 +3996,8 @@
       "nappy-brown"
     ],
     "source": "https://en.wikipedia.org/wiki/Bob_Margolin",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bob-stroger",
@@ -4007,7 +4073,8 @@
     "secondaryInstruments": [
       "Vocals",
       "Guitar"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bobby-blue-bland",
@@ -4052,7 +4119,8 @@
       "rosco-gordon"
     ],
     "source": "https://en.wikipedia.org/wiki/Bobby_Bland",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bobby-rush",
@@ -4112,7 +4180,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bobo-jenkins",
@@ -4183,7 +4252,8 @@
     "source": "https://en.wikipedia.org/wiki/Bobo_Jenkins",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bonnie-raitt",
@@ -4287,7 +4357,8 @@
     "source": "https://en.wikipedia.org/wiki/Bonnie_Raitt",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "boo-boo-davis",
@@ -4335,7 +4406,8 @@
       "Harmonica",
       "Harp",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "booba-barnes",
@@ -4388,7 +4460,8 @@
     "source": "https://en.wikipedia.org/wiki/Booba_Barnes",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "boogie-bill-webb",
@@ -4448,7 +4521,8 @@
     "source": "https://en.wikipedia.org/wiki/Boogie_Bill_Webb",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "boogie-woogie-red",
@@ -4494,7 +4568,8 @@
     "source": "https://en.wikipedia.org/wiki/Boogie-woogie",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "boyd-gilmore",
@@ -4554,7 +4629,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Bobby_Rush_(musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "brownie-mcghee",
@@ -4631,7 +4707,8 @@
     "secondaryInstruments": [
       "Piano",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "buddy-guy",
@@ -4717,7 +4794,8 @@
     "source": "https://en.wikipedia.org/wiki/Buddy_Guy",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "buddy-moss",
@@ -4783,7 +4861,8 @@
       "brownie-mcghee"
     ],
     "source": "https://en.wikipedia.org/wiki/Buddy_Moss",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "buffalo-nichols",
@@ -4839,7 +4918,8 @@
     "source": null,
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bukka-white",
@@ -4940,7 +5020,8 @@
     "source": "https://en.wikipedia.org/wiki/Bukka_White",
     "secondaryInstruments": [
       "Piano"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bumble-bee-slim",
@@ -5023,7 +5104,8 @@
     "source": "https://en.wikipedia.org/wiki/Bumble_Bee_Slim",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "buster-benton",
@@ -5066,7 +5148,8 @@
     "source": "https://en.wikipedia.org/wiki/Buster_Benton",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "buster-pickens",
@@ -5127,7 +5210,8 @@
       "lightnin-hopkins"
     ],
     "source": "https://en.wikipedia.org/wiki/Buster_Pickens",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "cab-calloway",
@@ -5197,7 +5281,8 @@
     "source": "https://en.wikipedia.org/wiki/Cab_Calloway",
     "secondaryInstruments": [
       "Drums"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "calvin-frazier",
@@ -5251,7 +5336,8 @@
     "source": "https://en.wikipedia.org/wiki/Calvin_Frazier",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "calvin-leavy",
@@ -5284,7 +5370,8 @@
     "source": "https://en.wikipedia.org/wiki/Calvin_Leavy",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "carey-bell",
@@ -5364,7 +5451,8 @@
     "source": "https://en.wikipedia.org/wiki/Carey_Bell",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "carl-weathersby",
@@ -5418,7 +5506,8 @@
       "toronzo-cannon"
     ],
     "source": "https://en.wikipedia.org/wiki/Carl_Weathersby",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "carolina-slim",
@@ -5465,7 +5554,8 @@
     "source": "https://en.wikipedia.org/wiki/Guitar_Slim",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "casey-bill-weldon",
@@ -5524,7 +5614,8 @@
       "peetie-wheatstraw"
     ],
     "source": "https://en.wikipedia.org/wiki/Casey_Bill_Weldon",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "cedric-burnside",
@@ -5565,7 +5656,8 @@
     "secondaryInstruments": [
       "Guitar",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "champion-jack-dupree",
@@ -5618,7 +5710,8 @@
     "source": "https://en.wikipedia.org/wiki/Champion_Jack_Dupree",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "charles-brown",
@@ -5682,7 +5775,8 @@
     "source": "https://en.wikipedia.org/wiki/Charles_Brown_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "charley-lincoln",
@@ -5737,7 +5831,8 @@
     "source": "https://en.wikipedia.org/wiki/Charley_Lincoln",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "charley-patton",
@@ -5807,7 +5902,8 @@
     "source": "https://en.wikipedia.org/wiki/Charley_Patton",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "charlie-musselwhite",
@@ -5865,7 +5961,8 @@
       "Guitar",
       "Harp",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "charlie-specks-mcfadden",
@@ -5909,7 +6006,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/McFadden_(surname)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "chico-banks",
@@ -5945,7 +6043,8 @@
       "magic-slim"
     ],
     "source": "https://en.wikipedia.org/wiki/Chico_Banks",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "chris-beard",
@@ -5988,7 +6087,8 @@
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "chris-thomas-king",
@@ -6038,7 +6138,8 @@
     "source": "https://en.wikipedia.org/wiki/Chris_Thomas_King",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "christone-kingfish-ingram",
@@ -6100,7 +6201,8 @@
     "source": "13 Modern Blues Guitarists to keep on your radar in 2025; The Visual Pulse of the Blues",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "clara-mcdaniel",
@@ -6146,7 +6248,8 @@
       "muddy-waters"
     ],
     "source": "https://en.wikipedia.org/wiki/Clara_McDaniel",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "clara-smith",
@@ -6214,7 +6317,8 @@
       "bessie-smith"
     ],
     "source": "https://en.wikipedia.org/wiki/Clara_Smith",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "clarence-garlow",
@@ -6275,7 +6379,8 @@
     "secondaryInstruments": [
       "Guitar",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "clarence-gatemouth-brown",
@@ -6372,7 +6477,8 @@
       "Viola",
       "Mandolin",
       "Harmonica"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "colin-james",
@@ -6417,7 +6523,8 @@
     "source": "https://en.wikipedia.org/wiki/Colin_James",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "coot-grant",
@@ -6472,7 +6579,8 @@
       "bessie-smith"
     ],
     "source": "https://en.wikipedia.org/wiki/Coot_Grant",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "cootie-stark",
@@ -6521,7 +6629,8 @@
     "source": "https://en.wikipedia.org/wiki/Cootie_Stark",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "corey-harris",
@@ -6595,7 +6704,8 @@
     "secondaryInstruments": [
       "Banjo",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "cow-cow-davenport",
@@ -6663,7 +6773,8 @@
     "secondaryInstruments": [
       "Organ",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "cripple-clarence-lofton",
@@ -6740,7 +6851,8 @@
     "source": "https://en.wikipedia.org/wiki/Cripple_Clarence_Lofton",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "curley-weaver",
@@ -6801,7 +6913,8 @@
     "source": "https://en.wikipedia.org/wiki/Curley_Weaver",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "curtis-jones",
@@ -6854,7 +6967,8 @@
     "source": null,
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "curtis-salgado",
@@ -6928,7 +7042,8 @@
     "source": "https://en.wikipedia.org/wiki/Curtis_Salgado",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "cyril-davies",
@@ -6974,7 +7089,8 @@
     "source": "https://en.wikipedia.org/wiki/Cyril_Davies",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "dan-auerbach",
@@ -7044,7 +7160,8 @@
     "source": null,
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "dan-pickett",
@@ -7091,7 +7208,8 @@
     "source": "https://en.wikipedia.org/wiki/Dan_Pickett_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "dan-sane",
@@ -7142,7 +7260,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Dan_Sane",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "dave-peabody",
@@ -7180,7 +7299,8 @@
     "source": "https://en.wikipedia.org/wiki/Dave_Peabody",
     "secondaryInstruments": [
       "Harmonica"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "david-honeyboy-edwards",
@@ -7255,7 +7375,8 @@
     "source": "https://en.wikipedia.org/wiki/David_\"Honeyboy\"_Edwards",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "debbie-davies",
@@ -7287,7 +7408,8 @@
       "john-mayall"
     ],
     "source": "https://en.wikipedia.org/wiki/Debbie_Davies",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "deborah-coleman",
@@ -7320,7 +7442,8 @@
     "source": "https://en.wikipedia.org/wiki/Deborah_Coleman",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "delbert-mcclinton",
@@ -7394,7 +7517,8 @@
     "secondaryInstruments": [
       "Guitar",
       "Piano"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "demetria-taylor",
@@ -7435,7 +7559,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Demetria_Taylor",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "denny-freeman",
@@ -7489,7 +7614,8 @@
     "secondaryInstruments": [
       "Piano",
       "Organ"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "dexter-allen",
@@ -7534,7 +7660,8 @@
     "source": "https://en.wikipedia.org/wiki/Dexter_Allen",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "dk-harrell",
@@ -7584,7 +7711,8 @@
     "source": "The Best 12 True to the Blues Albums of 2025 So Far; The Evolution of the Blues",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "doctor-clayton",
@@ -7630,7 +7758,8 @@
     "source": "https://en.wikipedia.org/wiki/Doctor_Clayton",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "doug-quattlebaum",
@@ -7681,7 +7810,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Doug_Quattlebaum",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "dr-john",
@@ -7744,7 +7874,8 @@
     "source": "https://en.wikipedia.org/wiki/Dr._John",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "dr-ross",
@@ -7817,7 +7948,8 @@
       "Harmonica",
       "Drums",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "drink-small",
@@ -7867,7 +7999,8 @@
     "source": "https://en.wikipedia.org/wiki/Drink_Small",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "duane-allman",
@@ -7983,7 +8116,8 @@
     "secondaryInstruments": [
       "Dobro",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "duke-henderson",
@@ -8027,7 +8161,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Duke_Henderson",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "duke-robillard",
@@ -8088,7 +8223,8 @@
     "source": "https://en.wikipedia.org/wiki/Duke_Robillard",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "earl-hooker",
@@ -8188,7 +8324,8 @@
       "little-walter"
     ],
     "source": "https://en.wikipedia.org/wiki/Earl_Hooker",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "earl-king",
@@ -8267,7 +8404,8 @@
     "source": "https://en.wikipedia.org/wiki/Earl_King",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "earring-george-mayweather",
@@ -8317,7 +8455,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Earring_George_Mayweather",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ed-bell",
@@ -8352,7 +8491,8 @@
     "source": "https://en.wikipedia.org/wiki/Ed_Bell_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eddie-boyd",
@@ -8427,7 +8567,8 @@
       "tampa-red"
     ],
     "source": "https://en.wikipedia.org/wiki/Eddie_Boyd",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eddie-guitar-burns",
@@ -8500,7 +8641,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eddie-king",
@@ -8539,7 +8681,8 @@
     "source": "https://en.wikipedia.org/wiki/Eddie_King_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eddie-kirkland",
@@ -8619,7 +8762,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eddie-mapp",
@@ -8663,7 +8807,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Eddie_Mapp",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eddie-shaw",
@@ -8728,7 +8873,8 @@
       "willie-dixon"
     ],
     "source": "https://en.wikipedia.org/wiki/Eddie_Shaw",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eddie-taylor",
@@ -8822,7 +8968,8 @@
       "rick-estrin"
     ],
     "source": "https://en.wikipedia.org/wiki/Eddie_Taylor_Jr.",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eddie-taylor-jr",
@@ -8860,7 +9007,8 @@
     "source": "https://en.wikipedia.org/wiki/Eddie_Taylor_Jr.",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "edith-north-johnson",
@@ -8892,7 +9040,8 @@
     "source": "https://en.wikipedia.org/wiki/Edith_North_Johnson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "edmonia-henderson",
@@ -8931,7 +9080,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Edmonia_Henderson",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "edna-hicks",
@@ -8967,7 +9117,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Edna_Hicks",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "elizabeth-cotten",
@@ -9019,7 +9170,8 @@
     "secondaryInstruments": [
       "Banjo",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "elmore-james",
@@ -9112,7 +9264,8 @@
     "source": "https://en.wikipedia.org/wiki/Elmore_James",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "elvin-bishop",
@@ -9182,7 +9335,8 @@
     "source": "https://en.wikipedia.org/wiki/Elvin_Bishop",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "elvis-presley",
@@ -9217,7 +9371,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Elvis_Presley",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eric-bibb",
@@ -9283,7 +9438,8 @@
       "rory-block"
     ],
     "source": "https://en.wikipedia.org/wiki/Eric_Bibb",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eric-clapton",
@@ -9376,7 +9532,8 @@
     ],
     "secondaryStyles": [
       "Blues Rock"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "erwin-helfer",
@@ -9404,7 +9561,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Erwin_Helfer",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ethel-finnie",
@@ -9445,7 +9603,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Ethel_Finnie",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ethel-waters",
@@ -9519,7 +9678,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Ethel_Waters",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "etta-baker",
@@ -9558,7 +9718,8 @@
     "secondaryInstruments": [
       "Guitar",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "etta-james",
@@ -9670,7 +9831,8 @@
     "source": "https://en.wikipedia.org/wiki/Etta_James",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "fantastic-negrito",
@@ -9729,7 +9891,8 @@
     "source": null,
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "fats-domino",
@@ -9779,7 +9942,8 @@
     "source": "https://en.wikipedia.org/wiki/Fats_Domino",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "fenton-robinson",
@@ -9850,7 +10014,8 @@
     "source": "https://en.wikipedia.org/wiki/Fenton_Robinson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "floyd-council",
@@ -9886,7 +10051,8 @@
     "secondaryInstruments": [
       "Mandolin",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "floyd-dixon",
@@ -9962,7 +10128,8 @@
     "source": "https://en.wikipedia.org/wiki/Floyd_Dixon",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "floyd-jones",
@@ -10019,7 +10186,8 @@
       "jimmy-rogers"
     ],
     "source": "https://en.wikipedia.org/wiki/Floyd_Jones",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "forest-city-joe",
@@ -10080,7 +10248,8 @@
     "source": "https://en.wikipedia.org/wiki/Forest_City_Joe",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "frank-stokes",
@@ -10136,7 +10305,8 @@
     "source": "https://en.wikipedia.org/wiki/Frank_Stokes_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "frankie-lee-sims",
@@ -10205,7 +10375,8 @@
       "albert-collins"
     ],
     "source": "https://en.wikipedia.org/wiki/Frankie_Lee_Sims",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "fred-below",
@@ -10267,7 +10438,8 @@
       "louis-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Fred_Below",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "fred-mcmullen",
@@ -10306,7 +10478,8 @@
       "buddy-moss"
     ],
     "source": "https://en.wikipedia.org/wiki/Fred_McMullen",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "freddie-king",
@@ -10441,7 +10614,8 @@
     "source": "https://en.wikipedia.org/wiki/Freddie_King",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "fruteland-jackson",
@@ -10496,7 +10670,8 @@
     "source": "https://en.wikipedia.org/wiki/Fruteland_Jackson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "furry-lewis",
@@ -10585,7 +10760,8 @@
       "sleepy-john-estes"
     ],
     "source": "https://en.wikipedia.org/wiki/Furry_Lewis",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "gabriel-brown",
@@ -10638,7 +10814,8 @@
     "source": null,
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "gary-clark-jr",
@@ -10714,7 +10891,8 @@
     "source": "Gary Clark Jr. : When My Train Pulls In - Relix; GaryClarkJr",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "gary-primich",
@@ -10760,7 +10938,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "gatemouth-moore",
@@ -10844,7 +11023,8 @@
       "jimmy-witherspoon"
     ],
     "source": "https://en.wikipedia.org/wiki/Gatemouth_Moore",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "gene-birdlegg-pittman",
@@ -10887,7 +11067,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Gene_\"Birdlegg\"_Pittman",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "george-harmonica-smith",
@@ -10973,7 +11154,8 @@
       "big-joe-turner"
     ],
     "source": "https://en.wikipedia.org/wiki/George_\"Harmonica\"_Smith",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "george-higgs",
@@ -11006,7 +11188,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/George_Higgs",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "george-mojo-buford",
@@ -11059,7 +11242,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/George_\"Mojo\"_Buford",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "georgia-tom-dorsey",
@@ -11148,7 +11332,8 @@
       "tampa-red"
     ],
     "source": "https://en.wikipedia.org/wiki/Thomas_A._Dorsey",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "gladys-bentley",
@@ -11213,7 +11398,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Gladys_Bentley",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "golden-big-wheeler",
@@ -11259,7 +11445,8 @@
     "source": "https://en.wikipedia.org/wiki/Golden_\"Big\"_Wheeler",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "good-rockin-charles",
@@ -11313,7 +11500,8 @@
     "source": "https://en.wikipedia.org/wiki/Good_Rockin'_Charles",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "grace-bowers",
@@ -11357,7 +11545,8 @@
       "eric-clapton"
     ],
     "source": "13 Modern Blues Guitarists to keep on your radar in 2025; The Evolution of the Blues: A Comprehensive Analysis",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "grady-gaines",
@@ -11407,7 +11596,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Grady_Gaines",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "guitar-nubbit",
@@ -11443,7 +11633,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Guitar_Nubbit",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "guitar-pete-franklin",
@@ -11490,7 +11681,8 @@
     "secondaryInstruments": [
       "Piano",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "guitar-shorty",
@@ -11567,7 +11759,8 @@
     "source": "https://en.wikipedia.org/wiki/Guitar_Shorty",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "guitar-slim",
@@ -11622,7 +11815,8 @@
     "source": "https://en.wikipedia.org/wiki/Guitar_Slim",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "guitar-slim-jr",
@@ -11662,7 +11856,8 @@
     "source": "https://en.wikipedia.org/wiki/Guitar_Slim",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "gus-cannon",
@@ -11740,7 +11935,8 @@
     "source": "https://en.wikipedia.org/wiki/Gus_Cannon",
     "secondaryInstruments": [
       "Guitar"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "guy-davis",
@@ -11781,7 +11977,8 @@
     "secondaryInstruments": [
       "Banjo",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "hambone-willie-newbern",
@@ -11824,7 +12021,8 @@
       "sleepy-john-estes"
     ],
     "source": "https://en.wikipedia.org/wiki/Hambone_Willie_Newbern",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "harmonica-slim",
@@ -11874,7 +12072,8 @@
     "source": "https://en.wikipedia.org/wiki/Alan_Wilson_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "harrison-kennedy",
@@ -11909,7 +12108,8 @@
       "eric-bibb"
     ],
     "source": "https://en.wikipedia.org/wiki/Harrison_Kennedy_(musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "henry-gray",
@@ -11951,7 +12151,8 @@
     "source": "https://en.wikipedia.org/wiki/Henry_Gray_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "henry-qualls",
@@ -12018,7 +12219,8 @@
     "source": "https://en.wikipedia.org/wiki/Henry_Qualls",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "henry-son-sims",
@@ -12068,7 +12270,8 @@
       "robert-nighthawk"
     ],
     "source": "https://en.wikipedia.org/wiki/Zoot_Sims",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "henry-townsend",
@@ -12109,7 +12312,8 @@
     "secondaryInstruments": [
       "Piano",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "hersal-thomas",
@@ -12140,7 +12344,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "hip-linkchain",
@@ -12203,7 +12408,8 @@
     "source": "https://en.wikipedia.org/wiki/Hip_Linkchain",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "homesick-james",
@@ -12271,7 +12477,8 @@
     "source": "https://en.wikipedia.org/wiki/Homesick_James",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "hound-dog-taylor",
@@ -12351,7 +12558,8 @@
       "Piano",
       "Slide guitar",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "howlin-wolf",
@@ -12447,7 +12655,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "hubert-sumlin",
@@ -12522,7 +12731,8 @@
     "source": "https://en.wikipedia.org/wiki/Hubert_Sumlin",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ida-cox",
@@ -12611,7 +12821,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Ida_Cox",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ike-turner",
@@ -12739,7 +12950,8 @@
       "Piano",
       "Keyboards",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "irma-thomas",
@@ -12767,7 +12979,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Irma_Thomas",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "isaac-scott",
@@ -12803,7 +13016,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Isaac_Scott_(musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ishmon-bracey",
@@ -12867,7 +13081,8 @@
     "source": "https://en.wikipedia.org/wiki/Ishmon_Bracey",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "j-b-hutto",
@@ -12930,7 +13145,8 @@
     "source": "https://en.wikipedia.org/wiki/J._B._Hutto",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "j-t-funny-papa-smith",
@@ -12965,7 +13181,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/J._T._Smith_(musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "james-armstrong",
@@ -13000,7 +13217,8 @@
     "source": "https://en.wikipedia.org/wiki/James_Armstrong_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "james-cotton",
@@ -13099,7 +13317,8 @@
     "secondaryInstruments": [
       "Drum kit",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "james-crutchfield",
@@ -13145,7 +13364,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/James_Crutchfield",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "james-harman",
@@ -13200,7 +13420,8 @@
       "Guitar",
       "Piano",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "james-super-chikan-johnson",
@@ -13245,7 +13466,8 @@
     "source": "https://en.wikipedia.org/wiki/Super_Chikan",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "james-thunderbird-davis",
@@ -13292,7 +13514,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Larry_Davis_(blues_musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jay-mcshann",
@@ -13363,7 +13586,8 @@
     "source": "https://en.wikipedia.org/wiki/Jay_McShann",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jay-owens",
@@ -13398,7 +13622,8 @@
     "source": "https://en.wikipedia.org/wiki/Jay_Owens_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jaybird-coleman",
@@ -13454,7 +13679,8 @@
     "secondaryInstruments": [
       "Guitar",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jazz-gillum",
@@ -13531,7 +13757,8 @@
       "memphis-slim"
     ],
     "source": "https://en.wikipedia.org/wiki/Jazz_Gillum",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jb-lenoir",
@@ -13606,7 +13833,8 @@
     "source": "https://en.wikipedia.org/wiki/J._B._Lenoir",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jd-short",
@@ -13666,7 +13894,8 @@
       "son-house"
     ],
     "source": "https://en.wikipedia.org/wiki/J.D._Short",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jeff-beck",
@@ -13736,7 +13965,8 @@
       "stevie-ray-vaughan"
     ],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jeff-healey",
@@ -13802,7 +14032,8 @@
     "secondaryInstruments": [
       "Vocals",
       "Trumpet"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jesse-dayton",
@@ -13830,7 +14061,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jesse-fuller",
@@ -13896,7 +14128,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jesse-thomas",
@@ -13927,7 +14160,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jessie-mae-hemphill",
@@ -13992,7 +14226,8 @@
       "Drums",
       "Tambourine",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jim-jackson",
@@ -14039,7 +14274,8 @@
     "source": "https://en.wikipedia.org/wiki/Jim_Jackson_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jimi-hendrix",
@@ -14076,7 +14312,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Jimi_Hendrix",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jimmie-lee-robinson",
@@ -14109,7 +14346,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Jimmie_Lee_Robinson",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jimmie-vaughan",
@@ -14170,7 +14408,8 @@
     "source": "https://en.wikipedia.org/wiki/Jimmie_Vaughan",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jimmy-burns",
@@ -14215,7 +14454,8 @@
     "source": "https://en.wikipedia.org/wiki/Jimmy_Burns",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jimmy-dawkins",
@@ -14273,7 +14513,8 @@
     "source": "https://en.wikipedia.org/wiki/Jimmy_Dawkins",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jimmy-mccracklin",
@@ -14363,7 +14604,8 @@
     "source": "https://en.wikipedia.org/wiki/Jimmy_McCracklin",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jimmy-reed",
@@ -14443,7 +14685,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jimmy-rogers",
@@ -14549,7 +14792,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jimmy-rushing",
@@ -14623,7 +14867,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Rushing",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jimmy-witherspoon",
@@ -14700,7 +14945,8 @@
       "chris-cain"
     ],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Witherspoon",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jimmy-yancey",
@@ -14731,7 +14977,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Yancey",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jj-malone",
@@ -14764,7 +15011,8 @@
     "source": "https://en.wikipedia.org/wiki/J.J._Malone",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jo-ann-kelly",
@@ -14832,7 +15080,8 @@
     "source": "https://en.wikipedia.org/wiki/Jo_Ann_Kelly",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "joanne-shaw-taylor",
@@ -14879,7 +15128,8 @@
     "source": "13 Modern Blues Guitarists to keep on your radar in 2025",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "joe-bonamassa",
@@ -14919,7 +15169,8 @@
     "source": "13 Most Legendary And Famous Blues Artists of All Time",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "joe-callicott",
@@ -14978,7 +15229,8 @@
     "source": "https://en.wikipedia.org/wiki/Mississippi_Joe_Callicott",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "joe-louis-walker",
@@ -15051,7 +15303,8 @@
     "source": "https://en.wikipedia.org/wiki/Joe_Louis_Walker",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "joe-pullum",
@@ -15099,7 +15352,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Joe_Pullum",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "joe-willie-wilkins",
@@ -15169,7 +15423,8 @@
     "source": "https://en.wikipedia.org/wiki/Joe_Willie_Wilkins",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "john-cephas",
@@ -15228,7 +15483,8 @@
     "source": "https://en.wikipedia.org/wiki/Cephas_&_Wiggins",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "john-dee-holeman",
@@ -15264,7 +15520,8 @@
     "source": "https://en.wikipedia.org/wiki/John_Dee_Holeman",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "john-hammond",
@@ -15314,7 +15571,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "john-henry-barbee",
@@ -15364,7 +15622,8 @@
     "source": "https://en.wikipedia.org/wiki/John_Henry_Barbee",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "john-jackson",
@@ -15397,7 +15656,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "john-lee-hooker",
@@ -15476,7 +15736,8 @@
     "source": "https://en.wikipedia.org/wiki/Boom_Boom_(John_Lee_Hooker_song)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "john-littlejohn",
@@ -15538,7 +15799,8 @@
       "rick-estrin"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Littlejohn",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "john-mayall",
@@ -15599,7 +15861,8 @@
     ],
     "secondaryStyles": [
       "Blues Rock"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "john-p-hammond",
@@ -15659,7 +15922,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "john-primer",
@@ -15741,7 +16005,8 @@
     "source": "https://en.wikipedia.org/wiki/John_Primer",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnnie-bassett",
@@ -15795,7 +16060,8 @@
     "source": "https://en.wikipedia.org/wiki/Johnnie_Bassett",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnnie-marshall",
@@ -15830,7 +16096,8 @@
     "source": "https://en.wikipedia.org/wiki/Johnnie_Marshall",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnnie-taylor",
@@ -15861,7 +16128,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Johnnie_Taylor",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-b-moore",
@@ -15924,7 +16192,8 @@
     "source": "https://en.wikipedia.org/wiki/Johnny_B._Moore",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-big-moose-walker",
@@ -15984,7 +16253,8 @@
       "Organ",
       "Guitar",
       "Piano"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-copeland",
@@ -16056,7 +16326,8 @@
     "source": "https://en.wikipedia.org/wiki/Johnny_Copeland",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-dyer",
@@ -16104,7 +16375,8 @@
     "source": "https://en.wikipedia.org/wiki/Johnny_Dyer",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-fuller",
@@ -16159,7 +16431,8 @@
     "secondaryInstruments": [
       "Vocals",
       "Piano"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-heartsman",
@@ -16216,7 +16489,8 @@
     "secondaryInstruments": [
       "Flute",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-laws",
@@ -16260,7 +16534,8 @@
       "buster-benton"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Laws",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-man-young",
@@ -16329,7 +16604,8 @@
     "source": "https://en.wikipedia.org/wiki/Johnny_\"Man\"_Young",
     "secondaryInstruments": [
       "Mandolin"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-mars",
@@ -16369,7 +16645,8 @@
     "source": "https://en.wikipedia.org/wiki/Johnny_Mars",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-otis",
@@ -16444,7 +16721,8 @@
     "secondaryInstruments": [
       "Vibraphone",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-rawls",
@@ -16500,7 +16778,8 @@
     "source": "https://en.wikipedia.org/wiki/Johnny_Rawls",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-shines",
@@ -16573,7 +16852,8 @@
       "snooky-pryor"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Shines",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-temple",
@@ -16659,7 +16939,8 @@
     "source": "https://en.wikipedia.org/wiki/Johnny_Temple_(blues_musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-winter",
@@ -16773,7 +17054,8 @@
       "Mandolin",
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-yard-dog-jones",
@@ -16831,7 +17113,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jontavious-willis",
@@ -16895,7 +17178,8 @@
     "source": "https://en.wikipedia.org/wiki/Jontavious_Willis",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "josh-smith",
@@ -16925,7 +17209,8 @@
       "chris-cain"
     ],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "josh-white",
@@ -17006,7 +17291,8 @@
       "blind-willie-walker"
     ],
     "source": "https://en.wikipedia.org/wiki/Josh_White",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "junior-kimbrough",
@@ -17076,7 +17362,8 @@
     "source": "https://en.wikipedia.org/wiki/Junior_Kimbrough",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "junior-parker",
@@ -17158,7 +17445,8 @@
     "source": "https://en.wikipedia.org/wiki/Junior_Parker",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "junior-watson",
@@ -17230,7 +17518,8 @@
     "source": "https://en.wikipedia.org/wiki/Junior_Watson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "junior-wells",
@@ -17328,7 +17617,8 @@
     "source": "https://en.wikipedia.org/wiki/Junior_Wells",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "kansas-city-red",
@@ -17383,7 +17673,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Kansas_City_Red",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "kansas-joe-mccoy",
@@ -17463,7 +17754,8 @@
     "source": "https://en.wikipedia.org/wiki/Kansas_Joe_McCoy",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "karen-carroll",
@@ -17506,7 +17798,8 @@
     "source": "https://en.wikipedia.org/wiki/Karen_Carroll",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "katherine-henderson",
@@ -17542,7 +17835,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "katie-webster",
@@ -17601,7 +17895,8 @@
     "source": "https://en.wikipedia.org/wiki/Katie_Webster",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "kc-douglas",
@@ -17682,7 +17977,8 @@
     "source": null,
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "keb-mo",
@@ -17742,7 +18038,8 @@
       "Mandolin",
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "kelly-joe-phelps",
@@ -17780,7 +18077,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Kelly_Joe_Phelps",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "kenny-beedy-eyes-smith",
@@ -17831,7 +18129,8 @@
       "Piano",
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "kenny-neal",
@@ -17897,7 +18196,8 @@
     "source": "https://en.wikipedia.org/wiki/Kenny_Neal",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "kenny-wayne-shepherd",
@@ -17946,7 +18246,8 @@
     "source": "https://en.wikipedia.org/wiki/Kenny_Wayne_Shepherd",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "kip-anderson",
@@ -17987,7 +18288,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Kip_Anderson",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "kirk-fletcher",
@@ -18028,7 +18330,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Kirk_Fletcher",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "kitty-brown",
@@ -18071,7 +18374,8 @@
       "leroy-morton"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Brown",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "koko-taylor",
@@ -18130,7 +18434,8 @@
       "muddy-waters"
     ],
     "source": "https://en.wikipedia.org/wiki/Koko_Taylor",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "kokomo-arnold",
@@ -18205,7 +18510,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Kokomo_Arnold",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lacy-gibson",
@@ -18251,7 +18557,8 @@
     "source": "https://en.wikipedia.org/wiki/Lacy_Gibson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lady-bianca",
@@ -18281,7 +18588,8 @@
     "source": "https://en.wikipedia.org/wiki/Lady_Bianca",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "laith-al-saadi",
@@ -18324,7 +18632,8 @@
     "source": "https://en.wikipedia.org/wiki/Laith_Al-Saadi",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "larry-garner",
@@ -18354,7 +18663,8 @@
     "source": "https://en.wikipedia.org/wiki/Larry_Garner",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "larry-mccray",
@@ -18388,7 +18698,8 @@
     "source": "https://en.wikipedia.org/wiki/Larry_McCray",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lavelle-white",
@@ -18433,7 +18744,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lavelle_White",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lazy-lester",
@@ -18511,7 +18823,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lc-green",
@@ -18575,7 +18888,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lead-belly",
@@ -18659,7 +18973,8 @@
     "source": "https://en.wikipedia.org/wiki/Lead_Belly",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lee-gates",
@@ -18706,7 +19021,8 @@
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lefty-bates",
@@ -18745,7 +19061,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lefty_Bates",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lefty-dizz",
@@ -18798,7 +19115,8 @@
     "source": "https://en.wikipedia.org/wiki/Lefty_Dizz",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "leroy-carr",
@@ -18873,7 +19191,8 @@
     "source": "https://en.wikipedia.org/wiki/Leroy_Carr",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "leroy-morton",
@@ -18901,7 +19220,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lester-williams",
@@ -18944,7 +19264,8 @@
     "source": "https://en.wikipedia.org/wiki/Lester_Williams_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lightnin-hopkins",
@@ -19029,7 +19350,8 @@
     "secondaryInstruments": [
       "Piano",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lightnin-slim",
@@ -19103,7 +19425,8 @@
     "source": "https://en.wikipedia.org/wiki/Lightnin'_Slim",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lil-dave-thompson",
@@ -19147,7 +19470,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lil'_Dave_Thompson",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lil-ed-williams",
@@ -19185,7 +19509,8 @@
     "source": "https://en.wikipedia.org/wiki/Lil'_Ed_Williams",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lil-green",
@@ -19253,7 +19578,8 @@
       "big-bill-broonzy"
     ],
     "source": "https://en.wikipedia.org/wiki/Lil_Green",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lil-mcclintock",
@@ -19281,7 +19607,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lil_McClintock",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "linsey-alexander",
@@ -19341,7 +19668,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Linsey_Alexander",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-arthur-duncan",
@@ -19396,7 +19724,8 @@
     "source": "https://en.wikipedia.org/wiki/Little_Arthur_Duncan",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-brother-montgomery",
@@ -19466,7 +19795,8 @@
       "otis-rush"
     ],
     "source": "https://en.wikipedia.org/wiki/Little_Brother_Montgomery",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-buddy-doyle",
@@ -19512,7 +19842,8 @@
     "source": "https://en.wikipedia.org/wiki/Little_Buddy_Doyle",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-freddie-king",
@@ -19557,7 +19888,8 @@
     "source": "https://en.wikipedia.org/wiki/Little_Freddie_King",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-hat-jones",
@@ -19603,7 +19935,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Little_Hat_Jones",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-hatch",
@@ -19673,7 +20006,8 @@
     "source": "https://en.wikipedia.org/wiki/Little_Hatch",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-jimmy-king",
@@ -19708,7 +20042,8 @@
     "source": "https://en.wikipedia.org/wiki/Little_Jimmy_King",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-joe-blue",
@@ -19782,7 +20117,8 @@
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-milton",
@@ -19842,7 +20178,8 @@
     "source": "https://en.wikipedia.org/wiki/Little_Milton",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-smokey-smothers",
@@ -19909,7 +20246,8 @@
     "source": "https://en.wikipedia.org/wiki/Little_Smokey_Smothers",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-sonny",
@@ -19960,7 +20298,8 @@
     "source": "https://en.wikipedia.org/wiki/Little_Sonny",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-sonny-jones",
@@ -19990,7 +20329,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sonny_Landreth",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-walter",
@@ -20067,7 +20407,8 @@
     "source": "https://en.wikipedia.org/wiki/Little_Walter",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-willie-littlefield",
@@ -20150,7 +20491,8 @@
     "source": "https://en.wikipedia.org/wiki/Little_Willie_Littlefield",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lonesome-sundown",
@@ -20238,7 +20580,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lonesome_Sundown",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "long-john-hunter",
@@ -20284,7 +20627,8 @@
     "source": "https://en.wikipedia.org/wiki/Long_John_Hunter",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lonnie-brooks",
@@ -20348,7 +20692,8 @@
     "source": "https://en.wikipedia.org/wiki/Lonnie_Brooks",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lonnie-chatmon",
@@ -20376,7 +20721,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lonnie-johnson",
@@ -20441,7 +20787,8 @@
     "secondaryInstruments": [
       "Piano",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lonnie-pitchford",
@@ -20484,7 +20831,8 @@
     "source": "https://en.wikipedia.org/wiki/Lonnie_Pitchford",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lonnie-shields",
@@ -20534,7 +20882,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lonnie_Shields",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lottie-kimbrough",
@@ -20575,7 +20924,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lottie_Kimbrough",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lou-ann-barton",
@@ -20619,7 +20969,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lou_Ann_Barton",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lou-rawls",
@@ -20669,7 +21020,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lou_Rawls",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "louie-lasky",
@@ -20716,7 +21068,8 @@
     "source": "https://www.wirz.de/music/lasky.htm",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "louis-jordan",
@@ -20813,7 +21166,8 @@
     "secondaryInstruments": [
       "Clarinet",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "louisiana-red",
@@ -20871,7 +21225,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lovie-lee",
@@ -20917,7 +21272,8 @@
     "source": "https://en.wikipedia.org/wiki/Lovie_Lee",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lowell-fulson",
@@ -20985,7 +21341,8 @@
     "source": "https://en.wikipedia.org/wiki/Lowell_Fulson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lucille-bogan",
@@ -21067,7 +21424,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lucille_Bogan",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lucille-hegamin",
@@ -21140,7 +21498,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lucille_Hegamin",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lucky-peterson",
@@ -21207,7 +21566,8 @@
     "secondaryInstruments": [
       "Organ",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "luke-jordan",
@@ -21274,7 +21634,8 @@
     "source": null,
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "luke-long-gone-miles",
@@ -21325,7 +21686,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/The_Chambers_Brothers",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lurrie-bell",
@@ -21355,7 +21717,8 @@
     "source": "https://en.wikipedia.org/wiki/Lurrie_Bell",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "luther-allison",
@@ -21442,7 +21805,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "luther-georgia-boy-johnson",
@@ -21500,7 +21864,8 @@
     "source": "https://en.wikipedia.org/wiki/Luther_\"Georgia_Boy\"_Johnson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "luther-guitar-junior-johnson",
@@ -21559,7 +21924,8 @@
     "source": "https://en.wikipedia.org/wiki/Luther_\"Guitar_Junior\"_Johnson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "luther-tucker",
@@ -21605,7 +21971,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Luther_Tucker",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lv-banks",
@@ -21667,7 +22034,8 @@
     "source": "https://en.wikipedia.org/wiki/L.V._Banks",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lv-johnson",
@@ -21712,7 +22080,8 @@
     "source": "https://en.wikipedia.org/wiki/L.V._Johnson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ma-rainey",
@@ -21775,7 +22144,8 @@
       "bessie-smith"
     ],
     "source": "https://en.wikipedia.org/wiki/Ma_Rainey",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "magic-sam",
@@ -21858,7 +22228,8 @@
     "source": "https://en.wikipedia.org/wiki/Magic_Sam",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "magic-slim",
@@ -21938,7 +22309,8 @@
     "source": "https://en.wikipedia.org/wiki/Magic_Slim",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mamie-smith",
@@ -22009,7 +22381,8 @@
     "source": "https://en.wikipedia.org/wiki/Mamie_Smith",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mance-lipscomb",
@@ -22078,7 +22451,8 @@
     "source": "https://en.wikipedia.org/wiki/Mance_Lipscomb",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "marcia-ball",
@@ -22133,7 +22507,8 @@
     "source": "Female Blues Musicians And Singers: 16 Influential Artists",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "marcus-king",
@@ -22184,7 +22559,8 @@
     "source": "13 Modern Blues Guitarists to keep on your radar in 2025; Best Blues Guitarists of 2022",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "margie-evans",
@@ -22225,7 +22601,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Margie_Evans",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "marquise-knox",
@@ -22280,7 +22657,8 @@
     "source": null,
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mary-johnson",
@@ -22315,7 +22693,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Robert_Johnson",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "matt-guitar-murphy",
@@ -22387,7 +22766,8 @@
       "otis-spann"
     ],
     "source": "https://en.wikipedia.org/wiki/Steppin'_Out_(instrumental)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "maurice-john-vaughn",
@@ -22438,7 +22818,8 @@
     "secondaryInstruments": [
       "Guitar",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "maxwell-street-jimmy-davis",
@@ -22513,7 +22894,8 @@
     "source": "https://en.wikipedia.org/wiki/Maxwell_Street_Jimmy_Davis",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "meade-lux-lewis",
@@ -22574,7 +22956,8 @@
       "albert-ammons"
     ],
     "source": "https://en.wikipedia.org/wiki/Meade_Lux_Lewis",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "melvin-taylor",
@@ -22624,7 +23007,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Melvin_Taylor",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "memphis-jug-band",
@@ -22652,7 +23036,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "memphis-minnie",
@@ -22721,7 +23106,8 @@
     "source": "https://en.wikipedia.org/wiki/Memphis_Minnie",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "memphis-slim",
@@ -22798,7 +23184,8 @@
     "source": "https://en.wikipedia.org/wiki/Memphis_Slim",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mercy-dee",
@@ -22853,7 +23240,8 @@
     "source": null,
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mighty-mo-rodgers",
@@ -22898,7 +23286,8 @@
     "source": "https://en.wikipedia.org/wiki/Mighty_Mo_Rodgers",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mike-bloomfield",
@@ -22996,7 +23385,8 @@
     "secondaryInstruments": [
       "Piano",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mike-wheeler",
@@ -23034,7 +23424,8 @@
     "source": "https://en.wikipedia.org/wiki/Mike_Wheeler_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mike-zito",
@@ -23096,7 +23487,8 @@
     "source": "https://en.wikipedia.org/wiki/Mike_Zito",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mississippi-fred-mcdowell",
@@ -23170,7 +23562,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Mississippi_Fred_McDowell",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mississippi-john-hurt",
@@ -23252,7 +23645,8 @@
     "source": "https://en.wikipedia.org/wiki/Mississippi_John_Hurt",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mississippi-sheiks",
@@ -23323,7 +23717,8 @@
     "secondaryInstruments": [
       "Fiddle",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "moody-jones",
@@ -23378,7 +23773,8 @@
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mose-allison",
@@ -23454,7 +23850,8 @@
     "source": "https://en.wikipedia.org/wiki/Mose_Allison",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mose-vinson",
@@ -23497,7 +23894,8 @@
     "source": "https://en.wikipedia.org/wiki/Mose_Vinson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "moses-whispering-smith",
@@ -23545,7 +23943,8 @@
     "source": "https://en.wikipedia.org/wiki/Moses_\"Whispering\"_Smith",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mozelle-alderson",
@@ -23596,7 +23995,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Mozelle_Alderson",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mr-sipp",
@@ -23676,7 +24076,8 @@
     "source": "https://en.wikipedia.org/wiki/Castro_Coleman",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "muddy-waters",
@@ -23773,7 +24174,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "nat-king-cole",
@@ -23804,7 +24206,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Nat_King_Cole",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "neal-pattman",
@@ -23844,7 +24247,8 @@
     "source": "https://en.wikipedia.org/wiki/Neal_Pattman",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "odessa-harris",
@@ -23902,7 +24306,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Odessa_Harris",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "odie-payne",
@@ -23943,7 +24348,8 @@
     "source": "https://en.wikipedia.org/wiki/Odie_Payne",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ora-alexander",
@@ -23984,7 +24390,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "oscar-buddy-woods",
@@ -24046,7 +24453,8 @@
     "source": "https://en.wikipedia.org/wiki/Oscar_\"Buddy\"_Woods",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "otis-big-smokey-smothers",
@@ -24099,7 +24507,8 @@
     "source": "https://en.wikipedia.org/wiki/Otis_\"Big_Smokey\"_Smothers",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "otis-grand",
@@ -24144,7 +24553,8 @@
     "source": "https://en.wikipedia.org/wiki/Otis_Grand",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "otis-redding",
@@ -24177,7 +24587,8 @@
       "barbara-lynn"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Redding",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "otis-rush",
@@ -24265,7 +24676,8 @@
     "source": "https://en.wikipedia.org/wiki/Otis_Rush",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "otis-spann",
@@ -24367,7 +24779,8 @@
       "jody-williams"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Spann",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "otis-taylor",
@@ -24403,7 +24816,8 @@
     "secondaryInstruments": [
       "Banjo",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "papa-charlie-jackson",
@@ -24473,7 +24887,8 @@
     "source": "https://en.wikipedia.org/wiki/Papa_Charlie_Jackson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "papa-charlie-mccoy",
@@ -24530,7 +24945,8 @@
     "source": "https://en.wikipedia.org/wiki/Papa_Charlie_McCoy",
     "secondaryInstruments": [
       "Mandolin"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "paul-butterfield",
@@ -24596,7 +25012,8 @@
     "source": "https://en.wikipedia.org/wiki/The_Paul_Butterfield_Blues_Band",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "paul-gayten",
@@ -24647,7 +25064,8 @@
     "source": "https://en.wikipedia.org/wiki/Paul_Gayten",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "paul-wine-jones",
@@ -24702,7 +25120,8 @@
     "source": "https://en.wikipedia.org/wiki/Old_Bottles_-_New_Wine",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "pee-wee-crayton",
@@ -24779,7 +25198,8 @@
     "source": "https://en.wikipedia.org/wiki/Pee_Wee_Crayton",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "peetie-wheatstraw",
@@ -24850,7 +25270,8 @@
     "secondaryInstruments": [
       "Guitar",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "peg-leg-howell",
@@ -24898,7 +25319,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Peg_Leg_Howell",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "peg-leg-sam",
@@ -24957,7 +25379,8 @@
     "source": "https://en.wikipedia.org/wiki/Peg_Leg_Sam",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "percy-mayfield",
@@ -25016,7 +25439,8 @@
     "source": "https://en.wikipedia.org/wiki/Percy_Mayfield",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "pete-mayes",
@@ -25078,7 +25502,8 @@
     "source": "https://en.wikipedia.org/wiki/Pete_Mayes",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "peter-green",
@@ -25147,7 +25572,8 @@
     ],
     "secondaryStyles": [
       "Blues Rock"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "phil-guy",
@@ -25197,7 +25623,8 @@
     "source": "https://en.wikipedia.org/wiki/Phil_Guy",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "phil-wiggins",
@@ -25245,7 +25672,8 @@
       "john-cephas"
     ],
     "source": "https://en.wikipedia.org/wiki/Cephas_&_Wiggins",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "philip-walker",
@@ -25316,7 +25744,8 @@
     "source": "https://www.allmusic.com/artist/philip-walker-mn0000203228",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "piano-red",
@@ -25389,7 +25818,8 @@
     "source": "https://en.wikipedia.org/wiki/Piano_Red",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "pinetop-perkins",
@@ -25462,7 +25892,8 @@
     "secondaryInstruments": [
       "Piano",
       "Synthesizer"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "pinetop-smith",
@@ -25493,7 +25924,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "pinetop-sparks",
@@ -25543,7 +25975,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Pinetop_Sparks",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "pink-anderson",
@@ -25589,7 +26022,8 @@
     "source": "https://en.wikipedia.org/wiki/Pink_Anderson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "precious-bryant",
@@ -25648,7 +26082,8 @@
     "source": "https://en.wikipedia.org/wiki/Precious_Bryant",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "professor-eddie-lusk",
@@ -25684,7 +26119,8 @@
     "secondaryInstruments": [
       "Keyboards",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "professor-longhair",
@@ -25727,7 +26163,8 @@
     "source": "https://en.wikipedia.org/wiki/Professor_Longhair",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "pyeng-threadgill",
@@ -25768,7 +26205,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Pyeng_Threadgill",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "raful-neal",
@@ -25828,7 +26266,8 @@
     "source": "https://en.wikipedia.org/wiki/Raful_Neal",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ramblin-thomas",
@@ -25914,7 +26353,8 @@
     "source": "https://en.wikipedia.org/wiki/Ramblin'_Thomas",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ray-charles",
@@ -25988,7 +26428,8 @@
     "source": "https://en.wikipedia.org/wiki/Ray_Charles",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "red-nelson",
@@ -26021,7 +26462,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Red_Nelson_(musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "reverend-gary-davis",
@@ -26128,7 +26570,8 @@
     "source": "https://en.wikipedia.org/wiki/Reverend_Gary_Davis",
     "secondaryInstruments": [
       "Harmonica"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "richard-hacksaw-harney",
@@ -26197,7 +26640,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Richard_\"Hacksaw\"_Harney",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "rick-franklin",
@@ -26230,7 +26674,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Rick_Franklin",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "rl-burnside",
@@ -26324,7 +26769,8 @@
     "source": "https://en.wikipedia.org/wiki/R._L._Burnside",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "robben-ford",
@@ -26363,7 +26809,8 @@
     "source": "https://en.wikipedia.org/wiki/Robben_Ford",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "robert-belfour",
@@ -26426,7 +26873,8 @@
     "source": "https://en.wikipedia.org/wiki/Robert_Belfour",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "robert-big-mojo-elem",
@@ -26475,7 +26923,8 @@
     "source": "https://en.wikipedia.org/wiki/Robert_\"Big_Mojo\"_Elem",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "robert-cray",
@@ -26541,7 +26990,8 @@
     "source": "https://en.wikipedia.org/wiki/Robert_Cray",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "robert-curtis-smith",
@@ -26598,7 +27048,8 @@
     "source": "https://en.wikipedia.org/wiki/Robert_Curtis_Smith",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "robert-johnson",
@@ -26671,7 +27122,8 @@
     "source": "https://en.wikipedia.org/wiki/Robert_Johnson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "robert-lockwood-jr",
@@ -26747,7 +27199,8 @@
       "johnny-shines"
     ],
     "source": "https://en.wikipedia.org/wiki/Robert_Lockwood_Jr.",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "robert-nighthawk",
@@ -26874,7 +27327,8 @@
     "source": "https://en.wikipedia.org/wiki/Robert_Nighthawk",
     "secondaryInstruments": [
       "Guitar"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "robert-wilkins",
@@ -26931,7 +27385,8 @@
     "source": null,
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "robin-trower",
@@ -26961,7 +27416,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Robin_Trower",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "rod-piazza",
@@ -27010,7 +27466,8 @@
     "source": "https://en.wikipedia.org/wiki/Rod_Piazza",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "rolling-stones",
@@ -27040,7 +27497,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/The_Rolling_Stones",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ronnie-baker-brooks",
@@ -27072,7 +27530,8 @@
     "source": "https://en.wikipedia.org/wiki/Ronnie_Baker_Brooks",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ronnie-earl",
@@ -27136,7 +27595,8 @@
       "roomful-of-blues"
     ],
     "source": "https://en.wikipedia.org/wiki/Ronnie_Earl",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "roomful-of-blues",
@@ -27214,7 +27674,8 @@
       "Bass",
       "Drums",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "roosevelt-sykes",
@@ -27286,7 +27747,8 @@
       "lonnie-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Roosevelt_Sykes",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "rory-block",
@@ -27337,7 +27799,8 @@
     "source": "https://en.wikipedia.org/wiki/Rory_Block",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "rory-gallagher",
@@ -27422,7 +27885,8 @@
       "Mandolin",
       "Accordion",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "roscoe-shelton",
@@ -27458,7 +27922,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Roscoe_Shelton",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "roy-book-binder",
@@ -27502,7 +27967,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Roy_Book_Binder",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "roy-buchanan",
@@ -27575,7 +28041,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Roy_Buchanan",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "roy-milton",
@@ -27646,7 +28113,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Roy_Milton",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "roy-rogers",
@@ -27712,7 +28180,8 @@
     "source": "https://en.wikipedia.org/wiki/Roy_Rogers_(guitarist)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ruthie-foster",
@@ -27771,7 +28240,8 @@
     "source": null,
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "saffire-the-uppity-blues-women",
@@ -27807,7 +28277,8 @@
     "secondaryInstruments": [
       "Piano",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sam-chatmon",
@@ -27878,7 +28349,8 @@
       "Mandolin",
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sam-collins",
@@ -27916,7 +28388,8 @@
     "source": "https://en.wikipedia.org/wiki/Sam_Collins_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sam-cooke",
@@ -27952,7 +28425,8 @@
       "bobby-parker"
     ],
     "source": "https://en.wikipedia.org/wiki/Sam_Cooke",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sam-myers",
@@ -28021,7 +28495,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sam_Myers",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sam-taylor",
@@ -28060,7 +28535,8 @@
     "source": "https://en.wikipedia.org/wiki/Sam_Taylor_(blues_musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sam-taylor-jr",
@@ -28115,7 +28591,8 @@
     "source": "https://en.wikipedia.org/wiki/Sam_Taylor_Jr.",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "samantha-fish",
@@ -28174,7 +28651,8 @@
     "secondaryInstruments": [
       "Cigar Box Guitar",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sammy-lawhorn",
@@ -28218,7 +28696,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sammy_Lawhorn",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sampson-pittman-t",
@@ -28249,7 +28728,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sandra-hall",
@@ -28290,7 +28770,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sara-martin",
@@ -28360,7 +28841,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sarah_Martin",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "scrapper-blackwell",
@@ -28431,7 +28913,8 @@
       "leroy-carr"
     ],
     "source": "https://en.wikipedia.org/wiki/Scrapper_Blackwell",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sean-costello",
@@ -28483,7 +28966,8 @@
     "source": "https://en.wikipedia.org/wiki/Sean_Costello",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "selwyn-birchwood",
@@ -28533,7 +29017,8 @@
     "source": "Spotlight: The High Voltage Blues of Selwyn Birchwood; Selwyn Birchwood announces new album",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "shakey-jake-harris",
@@ -28590,7 +29075,8 @@
     "source": "https://en.wikipedia.org/wiki/Shakey_Jake_Harris",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "shemekia-copeland",
@@ -28631,7 +29117,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Shemekia_Copeland",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sherman-robertson",
@@ -28683,7 +29170,8 @@
     "source": "https://en.wikipedia.org/wiki/Sherman_Robertson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "shirley-griffith",
@@ -28731,7 +29219,8 @@
     "source": "https://en.wikipedia.org/wiki/Shirley_Griffith",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sid-hemphill",
@@ -28789,7 +29278,8 @@
       "Guitar",
       "Quills",
       "Cane Fife"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "silas-hogan",
@@ -28843,7 +29333,8 @@
     "source": "https://en.wikipedia.org/wiki/Silas_Hogan",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sippie-wallace",
@@ -28918,7 +29409,8 @@
     "source": "https://en.wikipedia.org/wiki/Sippie_Wallace",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sista-monica-parker",
@@ -28956,7 +29448,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sista_Monica_Parker",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "skeeter-brandon",
@@ -28994,7 +29487,8 @@
     "source": "https://en.wikipedia.org/wiki/Skeeter_Brandon",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "skip-james",
@@ -29061,7 +29555,8 @@
     "secondaryInstruments": [
       "Piano",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sleepy-john-estes",
@@ -29128,7 +29623,8 @@
       "hammie-nixon"
     ],
     "source": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "slim-harpo",
@@ -29176,7 +29672,8 @@
     "secondaryInstruments": [
       "Guitar",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "smokey-hogg",
@@ -29240,7 +29737,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Smokey_Hogg",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "smoky-babe",
@@ -29286,7 +29784,8 @@
     "source": "https://en.wikipedia.org/wiki/Smoky_Babe",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "snooks-eaglin",
@@ -29352,7 +29851,8 @@
     "source": "https://en.wikipedia.org/wiki/Snooks_Eaglin",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "snooky-pryor",
@@ -29407,7 +29907,8 @@
     "source": "https://en.wikipedia.org/wiki/Snooky_Pryor",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "son-bonds",
@@ -29447,7 +29948,8 @@
     "source": "https://en.wikipedia.org/wiki/Son_Bonds",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "son-house",
@@ -29508,7 +30010,8 @@
     "source": "https://en.wikipedia.org/wiki/Son_House",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "son-seals",
@@ -29561,7 +30064,8 @@
     "source": "https://en.wikipedia.org/wiki/Son_Seals",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sonny-boy-williamson",
@@ -29641,7 +30145,8 @@
     "source": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sonny-boy-williamson-i",
@@ -29717,7 +30222,8 @@
       "big-joe-williams"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_I",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sonny-rhodes",
@@ -29755,7 +30261,8 @@
     "source": "https://en.wikipedia.org/wiki/Sonny_Rhodes",
     "secondaryInstruments": [
       "Guitar"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sonny-rodgers",
@@ -29794,7 +30301,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sonny_Rodgers",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sonny-terry",
@@ -29865,7 +30373,8 @@
     "secondaryInstruments": [
       "Jew's harp",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "speckled-red",
@@ -29919,7 +30428,8 @@
     "source": "https://en.wikipedia.org/wiki/Speckled_Red",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "st-louis-jimmy-oden",
@@ -29976,7 +30486,8 @@
     "source": "https://en.wikipedia.org/wiki/St._Louis_Jimmy_Oden",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "stevie-ray-vaughan",
@@ -30059,7 +30570,8 @@
     "source": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sue-foley",
@@ -30102,7 +30614,8 @@
     "source": "https://en.wikipedia.org/wiki/Sue_Foley",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sugaray-rayford",
@@ -30167,7 +30680,8 @@
       "the-mannish-boys"
     ],
     "source": "12 Essential Contemporary Blues Artists",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sunnyland-slim",
@@ -30229,7 +30743,8 @@
     "source": "https://en.wikipedia.org/wiki/Sunnyland_Slim",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "susan-tedeschi",
@@ -30275,7 +30790,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sylvester-weaver",
@@ -30312,7 +30828,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sylvester_Weaver_(musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "t-bone-walker",
@@ -30393,7 +30910,8 @@
     "source": "https://en.wikipedia.org/wiki/T-Bone_Walker",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tab-benoit",
@@ -30441,7 +30959,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Tab_Benoit",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tabby-thomas",
@@ -30497,7 +31016,8 @@
     "source": "https://en.wikipedia.org/wiki/Tabby_Thomas",
     "secondaryInstruments": [
       "Piano"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tail-dragger-jones",
@@ -30547,7 +31067,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Tail_Dragger_Jones",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "taj-mahal",
@@ -30616,7 +31137,8 @@
       "Piano",
       "Banjo",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tampa-red",
@@ -30701,7 +31223,8 @@
     "source": "https://en.wikipedia.org/wiki/Tampa_Red",
     "secondaryInstruments": [
       "Piano"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ted-bogan",
@@ -30752,7 +31275,8 @@
     "source": "https://en.wikipedia.org/wiki/Ted_Bogan",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ted-hawkins",
@@ -30809,7 +31333,8 @@
     "source": "https://en.wikipedia.org/wiki/Ted_Hawkins",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tedeschi-trucks-band",
@@ -30837,7 +31362,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "teeny-tucker",
@@ -30865,7 +31391,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Teeny_Tucker",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "terry-garland",
@@ -30906,7 +31433,8 @@
     "source": "https://en.wikipedia.org/wiki/Terry_Garland",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "terry-harmonica-bean",
@@ -30949,7 +31477,8 @@
     "source": "https://en.wikipedia.org/wiki/Terry_\"Harmonica\"_Bean",
     "secondaryInstruments": [
       "Guitar"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "the-band",
@@ -30977,7 +31506,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/The_Band",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "the-fabulous-thunderbirds",
@@ -31051,7 +31581,8 @@
       "Bass",
       "Drums",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "the-mannish-boys",
@@ -31079,7 +31610,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "thornetta-davis",
@@ -31123,7 +31655,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Thornetta_Davis",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tinsley-ellis",
@@ -31169,7 +31702,8 @@
       "jody-williams"
     ],
     "source": "https://en.wikipedia.org/wiki/Tinsley_Ellis",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tiny-grimes",
@@ -31200,7 +31734,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Tiny_Grimes",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "titus-turner",
@@ -31250,7 +31785,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Titus_Turner",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tom-delaney",
@@ -31280,7 +31816,8 @@
     "source": "https://en.wikipedia.org/wiki/Delaney_(surname)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tommy-johnson",
@@ -31336,7 +31873,8 @@
     "source": "https://en.wikipedia.org/wiki/Tommy_Johnson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tracy-nelson",
@@ -31364,7 +31902,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "turner-foddrell",
@@ -31400,7 +31939,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Turner_Foddrell",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tutu-jones",
@@ -31445,7 +31985,8 @@
     "source": "https://en.wikipedia.org/wiki/Tutu_Jones",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tyler-bryant",
@@ -31491,7 +32032,8 @@
     "source": "13 Modern Blues Guitarists to keep on your radar in 2025",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "up-wilson",
@@ -31541,7 +32083,8 @@
     "source": "https://en.wikipedia.org/wiki/Alan_Wilson_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "valerie-wellington",
@@ -31580,7 +32123,8 @@
       "sunnyland-slim"
     ],
     "source": "https://en.wikipedia.org/wiki/Valerie_Wellington",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "van-morrison",
@@ -31649,7 +32193,8 @@
       "Harmonica",
       "Saxophone",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "vanessa-collier",
@@ -31726,7 +32271,8 @@
     "source": "https://en.wikipedia.org/wiki/Vanessa_Collier",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "victoria-spivey",
@@ -31809,7 +32355,8 @@
     "source": "https://en.wikipedia.org/wiki/Victoria_Spivey",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "virginia-liston",
@@ -31867,7 +32414,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Virginia_Liston",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "w-c-handy",
@@ -31942,7 +32490,8 @@
     "secondaryInstruments": [
       "Cornet",
       "Piano"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "walter-brown",
@@ -31981,7 +32530,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Rich_Brown_(blues_musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "walter-roland",
@@ -32033,7 +32583,8 @@
     "secondaryInstruments": [
       "Piano",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "walter-vinson",
@@ -32094,7 +32645,8 @@
     "secondaryInstruments": [
       "Violin",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "walter-wolfman-washington",
@@ -32155,7 +32707,8 @@
     "source": "https://en.wikipedia.org/wiki/Walter_\"Wolfman\"_Washington",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "washboard-sam",
@@ -32228,7 +32781,8 @@
     "source": "https://en.wikipedia.org/wiki/Washboard_Sam",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "washboard-willie",
@@ -32281,7 +32835,8 @@
     "secondaryInstruments": [
       "Vocals",
       "Harmonica"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "whistlin-alex-moore",
@@ -32329,7 +32884,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Whistlin'_Alex_Moore",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "william-clarke",
@@ -32377,7 +32933,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/William_Clarke_(musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "willie-61-blackwell",
@@ -32408,7 +32965,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "willie-brown",
@@ -32452,7 +33010,8 @@
     "source": "https://en.wikipedia.org/wiki/Willie_Brown_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "willie-cobbs",
@@ -32500,7 +33059,8 @@
     "source": "https://en.wikipedia.org/wiki/Willie_Cobbs",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "willie-d-warren",
@@ -32567,7 +33127,8 @@
     "source": "https://en.wikipedia.org/wiki/List_of_blues_musicians",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "willie-dixon",
@@ -32685,7 +33246,8 @@
     "secondaryInstruments": [
       "Bass",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "willie-love",
@@ -32761,7 +33323,8 @@
     "source": "https://en.wikipedia.org/wiki/Willie_Love",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "willie-mabon",
@@ -32833,7 +33396,8 @@
     "secondaryInstruments": [
       "Vocals",
       "Harmonica"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "willie-trice",
@@ -32869,7 +33433,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Willie_Trice",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "woodrow-adams",
@@ -32916,7 +33481,8 @@
     "source": "https://en.wikipedia.org/wiki/Woodrow_Adams",
     "secondaryInstruments": [
       "Guitar"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "woody-guthrie",
@@ -32947,7 +33513,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Woody_Guthrie",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "wynonie-harris",
@@ -33019,7 +33586,8 @@
     "source": "https://en.wikipedia.org/wiki/Wynonie_Harris",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "yank-rachell",
@@ -33092,7 +33660,8 @@
     "secondaryInstruments": [
       "Guitar",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "z-z-hill",
@@ -33179,7 +33748,8 @@
     "source": "https://en.wikipedia.org/wiki/Z._Z._Hill",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "zora-young",
@@ -33225,7 +33795,8 @@
       "willie-dixon"
     ],
     "source": "https://en.wikipedia.org/wiki/Travelin'_Light_(Zora_Young_album)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "zz-hill",
@@ -33283,7 +33854,8 @@
       "rick-estrin"
     ],
     "source": "https://en.wikipedia.org/wiki/Z.Z._Hill",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sister-rosetta-tharpe",
@@ -33366,7 +33938,8 @@
     "secondaryInstruments": [
       "Vocals",
       "Piano"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "marie-knight",
@@ -33421,7 +33994,8 @@
     "source": "https://en.wikipedia.org/wiki/Marie_Knight",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mahalia-jackson",
@@ -33483,7 +34057,8 @@
       "georgia-tom-dorsey"
     ],
     "source": "https://en.wikipedia.org/wiki/Mahalia_Jackson",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mavis-staples",
@@ -33549,7 +34124,8 @@
       "levon-helm"
     ],
     "source": "https://en.wikipedia.org/wiki/Mavis_Staples",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "aretha-franklin",
@@ -33632,7 +34208,8 @@
     "source": "https://en.wikipedia.org/wiki/Aretha_Franklin",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "nina-simone",
@@ -33705,7 +34282,8 @@
     "source": "https://en.wikipedia.org/wiki/Nina_Simone",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "billie-holiday",
@@ -33774,7 +34352,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Billie_Holiday",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ella-fitzgerald",
@@ -33839,7 +34418,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Ella_Fitzgerald",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "t-model-ford",
@@ -33902,7 +34482,8 @@
     "source": "https://en.wikipedia.org/wiki/T-Model_Ford",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bernard-allison",
@@ -33966,7 +34547,8 @@
     "source": "https://en.wikipedia.org/wiki/Bernard_Allison",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sam-lay",
@@ -34041,7 +34623,8 @@
     "source": "https://en.wikipedia.org/wiki/Sam_Lay",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sam-carr",
@@ -34107,7 +34690,8 @@
       "buddy-guy"
     ],
     "source": "https://en.wikipedia.org/wiki/Sam_Carr",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "willie-big-eyes-smith",
@@ -34178,7 +34762,8 @@
     "source": "https://en.wikipedia.org/wiki/Willie_%22Big_Eyes%22_Smith",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tony-coleman",
@@ -34227,7 +34812,8 @@
       "ana-popovic"
     ],
     "source": null,
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "nathan-east",
@@ -34288,7 +34874,8 @@
     "source": "https://en.wikipedia.org/wiki/Nathan_East",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jason-ricci",
@@ -34347,7 +34934,8 @@
     "source": "https://en.wikipedia.org/wiki/Jason_Ricci",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "walter-trout",
@@ -34406,7 +34994,8 @@
     "source": "https://en.wikipedia.org/wiki/Walter_Trout",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnnie-johnson",
@@ -34471,7 +35060,8 @@
       "ike-turner"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnnie_Johnson",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mitch-woods",
@@ -34525,7 +35115,8 @@
     "source": "https://en.wikipedia.org/wiki/Mitch_Woods",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sugar-pie-desanto",
@@ -34597,7 +35188,8 @@
       "muddy-waters"
     ],
     "source": "https://en.wikipedia.org/wiki/Sugar_Pie_DeSanto",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "james-booker",
@@ -34666,7 +35258,8 @@
     "secondaryInstruments": [
       "Vocals",
       "Organ"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jonny-lang",
@@ -34741,7 +35334,8 @@
     "source": "https://en.wikipedia.org/wiki/Jonny_Lang",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "frank-frost",
@@ -34814,7 +35408,8 @@
     "secondaryInstruments": [
       "Vocals",
       "Harmonica"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "de-ford-bailey",
@@ -34865,7 +35460,8 @@
     "influencedBy": [],
     "playedWith": [],
     "incomplete": false,
-    "source": "https://en.wikipedia.org/wiki/DeFord_Bailey"
+    "source": "https://en.wikipedia.org/wiki/DeFord_Bailey",
+    "createdAt": "2026-09-03"
   },
   {
     "id": "watermelon-slim",
@@ -34931,7 +35527,8 @@
       "robert-cray",
       "champion-jack-dupree"
     ],
-    "source": "https://en.wikipedia.org/wiki/Watermelon_Slim"
+    "source": "https://en.wikipedia.org/wiki/Watermelon_Slim",
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-nicholas",
@@ -35002,7 +35599,8 @@
       "duke-robillard",
       "ronnie-earl"
     ],
-    "source": "https://en.wikipedia.org/wiki/Johnny_Nicholas"
+    "source": "https://en.wikipedia.org/wiki/Johnny_Nicholas",
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jed-davenport",
@@ -35057,7 +35655,8 @@
       "kansas-joe-mccoy",
       "memphis-minnie"
     ],
-    "source": "https://en.wikipedia.org/wiki/Jug_band"
+    "source": "https://en.wikipedia.org/wiki/Jug_band",
+    "createdAt": "2026-09-03"
   },
   {
     "id": "garfield-akers",
@@ -35111,7 +35710,8 @@
     "source": "https://en.wikipedia.org/wiki/Garfield_Akers",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "cecil-augusta",
@@ -35154,7 +35754,8 @@
     "source": "https://en.wikipedia.org/wiki/Cecil_Augusta",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "nathan-beauregard",
@@ -35215,7 +35816,8 @@
     "source": "https://en.wikipedia.org/wiki/Nathan_Beauregard",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jimmy-bertrand",
@@ -35271,7 +35873,8 @@
     "source": "https://en.wikipedia.org/wiki/Jimmy_Bertrand",
     "secondaryInstruments": [
       "Washboard"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "dennis-binder",
@@ -35342,7 +35945,8 @@
     "source": "https://en.wikipedia.org/wiki/Dennis_Binder",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mr-bo",
@@ -35398,7 +36002,8 @@
     "source": "https://en.wikipedia.org/wiki/Mr._Bo",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "houston-boines",
@@ -35473,7 +36078,8 @@
     "source": "https://en.wikipedia.org/wiki/Houston_Boines",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "charley-booker",
@@ -35538,7 +36144,8 @@
     "source": "https://en.wikipedia.org/wiki/Charley_Booker",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "rl-boyce",
@@ -35599,7 +36206,8 @@
     "secondaryInstruments": [
       "Vocals",
       "Drums"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jackie-brenston",
@@ -35658,7 +36266,8 @@
     "source": "https://en.wikipedia.org/wiki/Jackie_Brenston",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eden-brent",
@@ -35723,7 +36332,8 @@
     "source": "https://en.wikipedia.org/wiki/Eden_Brent",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jim-brewer",
@@ -35775,7 +36385,8 @@
     "source": "https://en.wikipedia.org/wiki/Jim_Brewer_(blues_musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "big-george-brock",
@@ -35825,7 +36436,8 @@
     "source": "https://en.wikipedia.org/wiki/Big_George_Brock",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jt-brown",
@@ -35889,7 +36501,8 @@
     "source": "https://en.wikipedia.org/wiki/J._T._Brown_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "kenny-brown",
@@ -35951,7 +36564,8 @@
     "source": "https://en.wikipedia.org/wiki/Kenny_Brown_(guitarist)",
     "secondaryInstruments": [
       "Guitar"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "texas-johnny-brown",
@@ -36007,7 +36621,8 @@
     "source": "https://en.wikipedia.org/wiki/Texas_Johnny_Brown",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eddie-burks",
@@ -36060,7 +36675,8 @@
     "source": "https://en.wikipedia.org/wiki/Eddie_Burks_(blues_musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "charles-caldwell",
@@ -36110,7 +36726,8 @@
     "source": "https://en.wikipedia.org/wiki/Charles_Caldwell_(bluesman)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eddie-c-campbell",
@@ -36173,7 +36790,8 @@
     "source": "https://en.wikipedia.org/wiki/Eddie_C._Campbell",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "grady-champion",
@@ -36231,7 +36849,8 @@
     "secondaryInstruments": [
       "Guitar",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "willie-clayton",
@@ -36287,7 +36906,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Willie_Clayton",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lee-cooper",
@@ -36334,7 +36954,8 @@
       "kansas-city-red"
     ],
     "source": "https://en.wikipedia.org/wiki/Lee_Cooper_(guitarist)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "george-cummings",
@@ -36385,7 +37006,8 @@
     "source": "https://en.wikipedia.org/wiki/George_Cummings",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eddie-cusic",
@@ -36446,7 +37068,8 @@
     "source": "https://en.wikipedia.org/wiki/Eddie_Cusic",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lester-davenport",
@@ -36513,7 +37136,8 @@
     "source": "https://en.wikipedia.org/wiki/Lester_Davenport",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jamie-davis",
@@ -36583,7 +37207,8 @@
     ],
     "influences": [],
     "influencedBy": [],
-    "playedWith": []
+    "playedWith": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-sammy-davis",
@@ -36681,7 +37306,8 @@
       "jimmy-reed",
       "little-walter",
       "eddie-kirkland"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mattie-delaney",
@@ -36735,7 +37361,8 @@
     "influencedBy": [
       "tommy-johnson"
     ],
-    "playedWith": []
+    "playedWith": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-drummer",
@@ -36824,7 +37451,8 @@
       "willie-mabon",
       "muddy-waters",
       "otis-spann"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "calep-emphrey-jr",
@@ -36894,7 +37522,8 @@
       "albert-king",
       "little-milton",
       "clarence-gatemouth-brown"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-willie-farmer",
@@ -36966,7 +37595,8 @@
     ],
     "playedWith": [
       "bobby-rush"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "leroy-foster",
@@ -37026,7 +37656,8 @@
       "sunnyland-slim",
       "snooky-pryor",
       "jb-lenoir"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "blind-roosevelt-graves",
@@ -37089,7 +37720,8 @@
     ],
     "influences": [],
     "influencedBy": [],
-    "playedWith": []
+    "playedWith": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "zac-harmon",
@@ -37196,7 +37828,8 @@
       "bobby-rush",
       "lucky-peterson",
       "anson-funderburgh"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "king-solomon-hill",
@@ -37272,7 +37905,8 @@
       "sam-collins",
       "ramblin-thomas",
       "big-joe-williams"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "raymond-hill",
@@ -37377,7 +38011,8 @@
       "dennis-binder",
       "robert-nighthawk",
       "sonny-boy-williamson"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "rosa-lee-hill",
@@ -37442,7 +38077,8 @@
     "playedWith": [
       "sid-hemphill",
       "jessie-mae-hemphill"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tony-hollins",
@@ -37509,7 +38145,8 @@
     "influencedBy": [],
     "playedWith": [
       "sunnyland-slim"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "homemade-jamz-blues-band",
@@ -37577,7 +38214,8 @@
       "bb-king",
       "muddy-waters"
     ],
-    "playedWith": []
+    "playedWith": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "calvin-jackson",
@@ -37637,7 +38275,8 @@
       "junior-kimbrough",
       "jessie-mae-hemphill",
       "rl-boyce"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "vasti-jackson",
@@ -37751,7 +38390,8 @@
       "bb-king",
       "koko-taylor",
       "bobby-rush"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "monkey-joe",
@@ -37827,7 +38467,8 @@
     "playedWith": [
       "little-brother-montgomery",
       "big-bill-broonzy"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jimmy-johnson",
@@ -37916,7 +38557,8 @@
       "buddy-guy",
       "jimmy-dawkins",
       "luther-guitar-junior-johnson"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "syl-johnson",
@@ -38029,7 +38671,8 @@
       "billy-boy-arnold",
       "junior-wells",
       "freddie-king"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "calvin-fuzz-jones",
@@ -38118,7 +38761,8 @@
       "lurrie-bell",
       "barrelhouse-chuck",
       "jb-lenoir"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "little-johnny-jones",
@@ -38200,7 +38844,8 @@
       "homesick-james",
       "otis-spann",
       "eddie-taylor"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "willie-kent",
@@ -38283,7 +38928,8 @@
       "buster-benton",
       "john-littlejohn",
       "lil-ed-williams"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "willie-king",
@@ -38384,7 +39030,8 @@
       "t-model-ford",
       "sam-lay",
       "david-honeyboy-edwards"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "big-daddy-kinsey",
@@ -38462,7 +39109,8 @@
       "buddy-guy",
       "james-cotton",
       "pinetop-perkins"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ernest-lane",
@@ -38544,7 +39192,8 @@
       "willie-dixon",
       "earl-hooker",
       "george-harmonica-smith"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "floyd-lee",
@@ -38649,7 +39298,8 @@
       "jimmy-reed",
       "bo-diddley",
       "john-lee-hooker"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bobby-lounge",
@@ -38740,7 +39390,8 @@
       "fats-domino",
       "irma-thomas",
       "allen-toussaint"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mississippi-matilda",
@@ -38803,7 +39454,8 @@
     "influencedBy": [],
     "playedWith": [
       "mississippi-sheiks"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lafayette-leake",
@@ -38860,7 +39512,8 @@
     "secondaryInstruments": [
       "Organ",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "tommy-mcclennan",
@@ -38921,7 +39574,8 @@
     "source": "https://en.wikipedia.org/wiki/Tommy_McClennan",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lc-mckinley",
@@ -38987,7 +39641,8 @@
     "source": "https://en.wikipedia.org/wiki/L._C._McKinley",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "hayes-mcmullan",
@@ -39044,7 +39699,8 @@
     "source": "https://en.wikipedia.org/wiki/Hayes_McMullan",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mississippi-slim",
@@ -39097,7 +39753,8 @@
       "junior-wells"
     ],
     "source": "https://en.wikipedia.org/wiki/Mississippi_Slim_(blues_musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "mckinley-mitchell",
@@ -39158,7 +39815,8 @@
       "willie-dixon"
     ],
     "source": "https://en.wikipedia.org/wiki/McKinley_Mitchell",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sonny-boy-nelson",
@@ -39225,7 +39883,8 @@
       "Mandolin",
       "Violin",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "bertha-lee-pate",
@@ -39291,7 +39950,8 @@
       "charley-patton"
     ],
     "source": "https://en.wikipedia.org/wiki/Bertha_Lee_Pate",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "dion-payton",
@@ -39341,7 +40001,8 @@
     "source": "https://en.wikipedia.org/wiki/Dion_Payton",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "robert-petway",
@@ -39399,7 +40060,8 @@
     "source": "https://en.wikipedia.org/wiki/Robert_Petway",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "brewer-phillips",
@@ -39463,7 +40125,8 @@
     "source": "https://en.wikipedia.org/wiki/Brewer_Phillips",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "irene-scruggs",
@@ -39522,7 +40185,8 @@
       "little-brother-montgomery"
     ],
     "source": "https://en.wikipedia.org/wiki/Irene_Scruggs",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "preston-shannon",
@@ -39576,7 +40240,8 @@
     "source": "https://en.wikipedia.org/wiki/Preston_Shannon",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "henry-sloan",
@@ -39628,7 +40293,8 @@
       "charley-patton"
     ],
     "source": "https://en.wikipedia.org/wiki/Henry_Sloan",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "henry-speller",
@@ -39680,7 +40346,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "houston-stackhouse",
@@ -39756,7 +40423,8 @@
     "secondaryInstruments": [
       "Vocals",
       "Harmonica"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "greg-fingers-taylor",
@@ -39815,7 +40483,8 @@
     "secondaryInstruments": [
       "Vocals",
       "Keyboards"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "james-thomas",
@@ -39876,7 +40545,8 @@
     "source": "https://en.wikipedia.org/wiki/James_Thomas_(blues_musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "rufus-thomas",
@@ -39924,7 +40594,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Rufus_Thomas",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sharde-thomas",
@@ -39978,7 +40649,8 @@
     "secondaryInstruments": [
       "Drums",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "paul-thorn",
@@ -40031,7 +40703,8 @@
     "source": "https://en.wikipedia.org/wiki/Paul_Thorn",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "otha-turner",
@@ -40092,7 +40765,8 @@
     "source": "https://en.wikipedia.org/wiki/Othar_Turner",
     "secondaryInstruments": [
       "Drums"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lc-ulmer",
@@ -40150,7 +40824,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "wade-walton",
@@ -40203,7 +40878,8 @@
     "source": "https://en.wikipedia.org/wiki/Wade_Walton",
     "secondaryInstruments": [
       "Harmonica"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "walter-ward",
@@ -40251,7 +40927,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Walter_Ward_(singer)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "artie-blues-boy-white",
@@ -40314,7 +40991,8 @@
     "source": "https://en.wikipedia.org/wiki/Artie_%22Blues_Boy%22_White",
     "secondaryInstruments": [
       "Guitar"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "smokey-wilson",
@@ -40373,7 +41051,8 @@
     "source": "https://en.wikipedia.org/wiki/Smokey_Wilson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ike-zimmerman",
@@ -40432,7 +41111,8 @@
     "source": "https://en.wikipedia.org/wiki/Ike_Zimmerman",
     "secondaryInstruments": [
       "Harmonica"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "charles-haffer-jr",
@@ -40464,7 +41144,8 @@
     "influencedBy": [],
     "incomplete": true,
     "playedWith": [],
-    "source": "https://archive.culturalequity.org/person/haffer-charles-jr"
+    "source": "https://archive.culturalequity.org/person/haffer-charles-jr",
+    "createdAt": "2026-09-03"
   },
   {
     "id": "zuzu-bollin",
@@ -40528,7 +41209,8 @@
     "source": "https://en.wikipedia.org/wiki/Zuzu_Bollin",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "david-fathead-newman",
@@ -40597,7 +41279,8 @@
     "source": "https://en.wikipedia.org/wiki/David_%22Fathead%22_Newman",
     "secondaryInstruments": [
       "Flute"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "roy-brown",
@@ -40660,7 +41343,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Roy_Brown_(blues_musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "johnny-guitar-watson",
@@ -40755,7 +41439,8 @@
     "secondaryInstruments": [
       "Piano",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "robert-pete-williams",
@@ -40822,7 +41507,8 @@
     "source": "https://en.wikipedia.org/wiki/Robert_Pete_Williams",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "geeshie-wiley",
@@ -40882,7 +41568,8 @@
     "source": "https://en.wikipedia.org/wiki/Geeshie_Wiley",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ruth-brown",
@@ -40946,7 +41633,8 @@
     "secondaryInstruments": [
       "Piano",
       "Keyboards"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "rick-estrin",
@@ -41005,7 +41693,8 @@
     "source": "https://en.wikipedia.org/wiki/Rick_Estrin",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "larry-davis",
@@ -41052,7 +41741,8 @@
     "secondaryInstruments": [
       "Bass",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "denise-lasalle",
@@ -41146,7 +41836,8 @@
       "zz-hill"
     ],
     "source": "https://en.wikipedia.org/wiki/Denise_LaSalle",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "peppermint-harris",
@@ -41210,7 +41901,8 @@
     "source": "https://en.wikipedia.org/wiki/Peppermint_Harris",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "eddie-cleanhead-vinson",
@@ -41288,7 +41980,8 @@
     "source": "https://en.wikipedia.org/wiki/Eddie_%22Cleanhead%22_Vinson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "cedell-davis",
@@ -41335,7 +42028,8 @@
     "source": "https://en.wikipedia.org/wiki/CeDell_Davis",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "chris-cain",
@@ -41409,7 +42103,8 @@
       "Vocals",
       "Piano",
       "Saxophone"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "otis-clay",
@@ -41494,7 +42189,8 @@
       "johnny-rawls"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Clay",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "michael-burks",
@@ -41552,7 +42248,8 @@
     "source": "https://en.wikipedia.org/wiki/Michael_Burks",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jack-owens",
@@ -41609,7 +42306,8 @@
     "source": "https://en.wikipedia.org/wiki/Jack_Owens_(blues_singer)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "jody-williams",
@@ -41677,7 +42375,8 @@
     "source": "https://en.wikipedia.org/wiki/Jody_Williams_(blues_musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "larry-johnson",
@@ -41723,7 +42422,8 @@
     "source": "https://en.wikipedia.org/wiki/Larry_Johnson_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "big-jay-mcneely",
@@ -41782,7 +42482,8 @@
       "johnny-heartsman"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Jay_McNeely",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "coco-montoya",
@@ -41827,7 +42528,8 @@
     "source": "https://en.wikipedia.org/wiki/Coco_Montoya",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "barbara-lynn",
@@ -41909,7 +42611,8 @@
     "source": "https://en.wikipedia.org/wiki/Barbara_Lynn",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "toronzo-cannon",
@@ -41969,7 +42672,8 @@
     "source": "https://en.wikipedia.org/wiki/Toronzo_Cannon",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "pops-staples",
@@ -42042,7 +42746,8 @@
       "Soul Blues"
     ],
     "incomplete": false,
-    "source": "https://en.wikipedia.org/wiki/Pops_Staples"
+    "source": "https://en.wikipedia.org/wiki/Pops_Staples",
+    "createdAt": "2026-09-03"
   },
   {
     "id": "juke-boy-bonner",
@@ -42106,7 +42811,8 @@
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "roy-hawkins",
@@ -42176,7 +42882,8 @@
     "source": "https://en.wikipedia.org/wiki/Roy_Hawkins",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "kim-wilson",
@@ -42223,7 +42930,8 @@
     "source": "https://en.wikipedia.org/wiki/Kim_Wilson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "rosco-gordon",
@@ -42286,7 +42994,8 @@
       "junior-parker"
     ],
     "source": "https://en.wikipedia.org/wiki/Rosco_Gordon",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "hammie-nixon",
@@ -42331,7 +43040,8 @@
     "source": "https://en.wikipedia.org/wiki/Hammie_Nixon",
     "secondaryInstruments": [
       "Jug"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "nappy-brown",
@@ -42396,7 +43106,8 @@
       "sean-costello"
     ],
     "source": "https://en.wikipedia.org/wiki/Nappy_Brown",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lil-son-jackson",
@@ -42457,7 +43168,8 @@
     "source": "https://en.wikipedia.org/wiki/Lil%27_Son_Jackson",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "latimore",
@@ -42503,7 +43215,8 @@
     "source": "https://en.wikipedia.org/wiki/Latimore_(musician)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "pete-johnson",
@@ -42549,7 +43262,8 @@
       "meade-lux-lewis"
     ],
     "source": "https://en.wikipedia.org/wiki/Pete_Johnson_(musician)",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "lonnie-mack",
@@ -42642,7 +43356,8 @@
     "secondaryInstruments": [
       "Bass guitar",
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "sonny-landreth",
@@ -42689,7 +43404,8 @@
       "eric-clapton"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Landreth",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "ana-popovic",
@@ -42757,7 +43473,8 @@
       "lucky-peterson"
     ],
     "source": "https://en.wikipedia.org/wiki/Ana_Popovi%C4%87",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-04"
   },
   {
     "id": "georgia-white",
@@ -42813,7 +43530,8 @@
     "source": "https://en.wikipedia.org/wiki/Georgia_White",
     "secondaryInstruments": [
       "Piano"
-    ]
+    ],
+    "createdAt": "2026-09-04"
   },
   {
     "id": "louis-myers",
@@ -42863,7 +43581,8 @@
     "source": "https://en.wikipedia.org/wiki/Louis_Myers",
     "secondaryInstruments": [
       "Harmonica"
-    ]
+    ],
+    "createdAt": "2026-09-04"
   },
   {
     "id": "byther-smith",
@@ -42926,7 +43645,8 @@
     "source": "https://en.wikipedia.org/wiki/Byther_Smith",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-04"
   },
   {
     "id": "mighty-joe-young",
@@ -42975,7 +43695,8 @@
     "source": "https://en.wikipedia.org/wiki/Mighty_Joe_Young",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-03"
   },
   {
     "id": "wizz-jones",
@@ -43017,7 +43738,8 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Wizz_Jones",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-04"
   },
   {
     "id": "eddy-clearwater",
@@ -43076,7 +43798,8 @@
     "source": "https://en.wikipedia.org/wiki/Eddy_Clearwater",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-04"
   },
   {
     "id": "blind-willie-walker",
@@ -43120,7 +43843,8 @@
       "josh-white"
     ],
     "source": "https://en.wikipedia.org/wiki/Blind_Willie_Walker",
-    "secondaryInstruments": []
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-04"
   },
   {
     "id": "lc-robinson",
@@ -43174,7 +43898,8 @@
       "Vocals",
       "Slide guitar",
       "Fiddle"
-    ]
+    ],
+    "createdAt": "2026-09-04"
   },
   {
     "id": "bobby-parker",
@@ -43229,6 +43954,7 @@
     "source": "https://en.wikipedia.org/wiki/Bobby_Parker_(guitarist)",
     "secondaryInstruments": [
       "Vocals"
-    ]
+    ],
+    "createdAt": "2026-09-04"
   }
 ]

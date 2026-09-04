@@ -61,6 +61,16 @@ async function exportMusicians() {
     map.get(r.from_musician_id).push(r.to_musician_id);
   }
 
+  // createdAt lives only in the JSON (no DB column), so carry it over on export when available
+  let createdAtById = new Map();
+  try {
+    createdAtById = new Map(
+      JSON.parse(fs.readFileSync(musiciansPath, 'utf-8')).map((m) => [m.id, m.createdAt])
+    );
+  } catch {
+    // Allow export to proceed even if musicians.json is missing or invalid.
+  }
+
   const output = musicians.map((m) => ({
     id: m.id,
     name: m.name,
@@ -85,6 +95,7 @@ async function exportMusicians() {
     playedWith: playedWith.get(m.id) || [],
     source: m.source,
     secondaryInstruments: instrumentsByMusician.get(m.id) || [],
+    createdAt: createdAtById.get(m.id) || new Date().toISOString().slice(0, 10),
   }));
 
   fs.writeFileSync(musiciansPath, JSON.stringify(output, null, 2), 'utf-8');

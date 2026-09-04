@@ -446,6 +446,7 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
             influences: [],
             influencedBy: [],
             playedWith: [],
+            createdAt: new Date().toISOString().slice(0, 10),
           }}
           musicians={musicians}
           onClose={() => setIsCreating(false)}

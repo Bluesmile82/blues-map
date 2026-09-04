@@ -32,4 +32,5 @@ export interface Musician {
   playedWith: string[];
   secondaryStyles?: string[];
   incomplete?: boolean;
+  createdAt: string;
 }

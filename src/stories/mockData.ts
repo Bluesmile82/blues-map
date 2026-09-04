@@ -28,6 +28,7 @@ export const mockMusician: Musician = {
   influencedBy: [],
   playedWith: [],
   secondaryStyles: ['Country Blues'],
+  createdAt: '2026-09-03',
 }
 
 export const mockMusicianWithConnections: Musician = {
