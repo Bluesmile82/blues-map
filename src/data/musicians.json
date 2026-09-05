@@ -1974,7 +1974,8 @@
       "albert-king",
       "freddie-king",
       "barbara-lynn",
-      "rosco-gordon"
+      "rosco-gordon",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/B._B._King",
     "secondaryInstruments": [
@@ -2909,7 +2910,8 @@
       "james-cotton",
       "little-walter",
       "carey-bell",
-      "kim-wilson"
+      "kim-wilson",
+      "willie-nix"
     ],
     "incomplete": false,
     "playedWith": [
@@ -2921,7 +2923,8 @@
       "john-lee-hooker",
       "floyd-jones",
       "david-honeyboy-edwards",
-      "koko-taylor"
+      "koko-taylor",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Walter_Horton",
     "secondaryInstruments": [],
@@ -8965,7 +8968,8 @@
       "big-walter-horton",
       "elmore-james",
       "willie-dixon",
-      "rick-estrin"
+      "rick-estrin",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Eddie_Taylor_Jr.",
     "secondaryInstruments": [],
@@ -9259,7 +9263,8 @@
       "big-joe-turner",
       "eddie-taylor",
       "willie-dixon",
-      "tampa-red"
+      "tampa-red",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Elmore_James",
     "secondaryInstruments": [
@@ -12943,7 +12948,8 @@
       "keb-mo",
       "lightnin-hopkins",
       "etta-james",
-      "barbara-lynn"
+      "barbara-lynn",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Ike_Turner",
     "secondaryInstruments": [
@@ -15418,7 +15424,8 @@
       "mose-vinson",
       "robert-nighthawk",
       "roosevelt-sykes",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Joe_Willie_Wilkins",
     "secondaryInstruments": [
@@ -16849,7 +16856,8 @@
       "willie-dixon",
       "robert-lockwood-jr",
       "mississippi-fred-mcdowell",
-      "snooky-pryor"
+      "snooky-pryor",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Shines",
     "secondaryInstruments": [],
@@ -23179,7 +23187,8 @@
     "playedWith": [
       "big-bill-broonzy",
       "sonny-boy-williamson-i",
-      "jimmy-rogers"
+      "jimmy-rogers",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Memphis_Slim",
     "secondaryInstruments": [
@@ -29902,7 +29911,8 @@
       "sonny-boy-williamson-i",
       "sonny-boy-williamson",
       "floyd-jones",
-      "jimmy-rogers"
+      "jimmy-rogers",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Snooky_Pryor",
     "secondaryInstruments": [
@@ -30131,7 +30141,8 @@
       "gene-birdlegg-pittman",
       "rick-estrin",
       "cedell-davis",
-      "kim-wilson"
+      "kim-wilson",
+      "willie-nix"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30140,7 +30151,8 @@
       "robert-johnson",
       "howlin-wolf",
       "big-joe-williams",
-      "jody-williams"
+      "jody-williams",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
     "secondaryInstruments": [
@@ -30738,7 +30750,8 @@
     "playedWith": [
       "muddy-waters",
       "howlin-wolf",
-      "b.b.-king"
+      "b.b.-king",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Sunnyland_Slim",
     "secondaryInstruments": [
@@ -33055,7 +33068,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "willie-nix"
+    ],
     "source": "https://en.wikipedia.org/wiki/Willie_Cobbs",
     "secondaryInstruments": [
       "Vocals"
@@ -33318,7 +33333,8 @@
       "sonny-boy-williamson",
       "elmore-james",
       "joe-willie-wilkins",
-      "eddie-shaw"
+      "eddie-shaw",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_Love",
     "secondaryInstruments": [
@@ -43956,5 +43972,70 @@
       "Vocals"
     ],
     "createdAt": "2026-09-04"
+  },
+  {
+    "id": "willie-nix",
+    "name": "Willie Nix",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1922-08-06",
+    "birthPlace": "Memphis",
+    "birthCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "deathDate": "1991-07-08",
+    "deathPlace": "Leland",
+    "deathCoords": [
+      -90.897222222222,
+      33.405
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Drums",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9vFc6YdolwY",
+    "albums": [
+      {
+        "name": "Nervous Wreck / No More Love (Chance Records, 1953)",
+        "youtubeLink": "https://www.youtube.com/watch?v=BZ-qsStTsGQ"
+      }
+    ],
+    "description": "Willie Nix was a Memphis blues singer and drummer known as \"the Memphis Blues Boy,\" who began as a dancer and comedian with the Rabbit Foot Minstrels before turning to music in the postwar Beale Street scene. As a house drummer and bandleader he backed and recorded with Sonny Boy Williamson II, Elmore James, and other Memphis and Chicago blues mainstays, cutting sides for RPM, Chess/Checker, Sun, and Chance in the early 1950s. His compositions \"Nervous Wreck\" and the Sun single \"Baker Shop Boogie\"/\"Seems Like a Million Years\" are still prized for their driving beat and sharp lyricism, though he stopped recording after the mid-1950s.",
+    "activeFrom": "1951",
+    "influences": [
+      "sonny-boy-williamson",
+      "big-walter-horton"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bb-king",
+      "sonny-boy-williamson",
+      "joe-willie-wilkins",
+      "willie-love",
+      "big-walter-horton",
+      "elmore-james",
+      "johnny-shines",
+      "memphis-slim",
+      "ike-turner",
+      "willie-cobbs",
+      "eddie-taylor",
+      "sunnyland-slim",
+      "snooky-pryor"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Willie_Nix",
+    "secondaryInstruments": [
+      "Vocals",
+      "Guitar"
+    ],
+    "createdAt": "2026-09-05"
   }
 ]
