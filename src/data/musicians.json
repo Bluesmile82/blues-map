@@ -1323,7 +1323,9 @@
     "description": "Arthur William \"Big Boy\" Crudup (August 24, 1905 – March 28, 1974) was an American Delta blues singer, songwriter and guitarist.  He is best known, outside blues circles, for his songs \"That's All Right\" (1946), \"My Baby Left Me\" and \"So Glad You're Mine\", later recorded by Elvis Presley and other artists.",
     "activeFrom": "1939",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "clarence-carter"
+    ],
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson",
@@ -14682,7 +14684,8 @@
     "influencedBy": [
       "john-p-hammond",
       "barbara-lynn",
-      "juke-boy-bonner"
+      "juke-boy-bonner",
+      "clarence-carter"
     ],
     "incomplete": false,
     "playedWith": [
@@ -15732,7 +15735,8 @@
       "stevie-ray-vaughan",
       "jb-lenoir",
       "albert-collins",
-      "maxwell-street-jimmy-davis"
+      "maxwell-street-jimmy-davis",
+      "clarence-carter"
     ],
     "incomplete": false,
     "playedWith": [
@@ -19343,7 +19347,8 @@
       "slim-harpo",
       "carolina-slim",
       "peppermint-harris",
-      "juke-boy-bonner"
+      "juke-boy-bonner",
+      "clarence-carter"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26433,7 +26438,8 @@
       "percy-mayfield",
       "quincy-jones",
       "latimore",
-      "bobby-parker"
+      "bobby-parker",
+      "clarence-carter"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -32793,7 +32799,9 @@
     "description": "Robert Clifford Brown (July 15, 1910 – November 6, 1966), known professionally as Washboard Sam, was an American blues musician and singer.",
     "activeFrom": "1935",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "clarence-carter"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Washboard_Sam",
@@ -34224,7 +34232,9 @@
       "otis-redding",
       "roy-hawkins"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "clarence-carter"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Aretha_Franklin",
@@ -44089,5 +44099,85 @@
       "Vocals"
     ],
     "createdAt": "2026-09-05"
+  },
+  {
+    "id": "clarence-carter",
+    "name": "Clarence Carter",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Clarence%20Carter%20(48591893891).jpg?width=500",
+    "image_source": null,
+    "birthDate": "1936-01-14",
+    "birthPlace": "Montgomery",
+    "birthCoords": [
+      -86.3,
+      32.3675
+    ],
+    "deathDate": "2026-05-13",
+    "deathPlace": "Atlanta",
+    "deathCoords": [
+      -84.38972222222222,
+      33.754444444444445
+    ],
+    "spentTimePlaces": [
+      {
+        "name": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "name": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      }
+    ],
+    "instrument": "Voice, Guitar",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=TXAb56g0mRM",
+    "albums": [
+      {
+        "name": "Patches (1982)",
+        "youtubeLink": "https://www.youtube.com/watch?v=J0vUqvfHQeQ"
+      },
+      {
+        "name": "The Best of Clarence Carter: The Dr.’s Greatest Prescriptions (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=mWYORXq_-f0"
+      },
+      {
+        "name": "Snatching It Back: The Best Of (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=38BCklcvALI"
+      },
+      {
+        "name": "Legendary Clarence Carter (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=J0vUqvfHQeQ"
+      },
+      {
+        "name": "Slip Away and Other Hits (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=mWYORXq_-f0"
+      },
+      {
+        "name": "Testifyin’ / This Is Clarence Carter (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=QnLc7jtKi-k"
+      }
+    ],
+    "description": "Clarence George Carter (January 14, 1936 – May 13, 2026) was an American singer, songwriter, musician, and record producer.  His most successful songs include \"Slip Away\", \"Back Door Santa\" (both released 1968), \"Patches\" (1970), and \"Strokin'\" (1986).",
+    "activeFrom": "1962",
+    "influences": [
+      "ray-charles",
+      "john-lee-hooker",
+      "lightnin-hopkins",
+      "jimmy-reed",
+      "aretha-franklin",
+      "arthur-big-boy-crudup",
+      "washboard-sam"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Clarence_Carter",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-06"
   }
 ]
