@@ -44119,21 +44119,21 @@
     ],
     "spentTimePlaces": [
       {
-        "name": "London",
+        "place": "London",
         "coords": [
           -0.1276,
           51.5074
         ]
       },
       {
-        "name": "Atlanta",
+        "place": "Atlanta",
         "coords": [
           -84.388,
           33.749
         ]
       }
     ],
-    "instrument": "Voice, Guitar",
+    "instrument": "Vocals",
     "bluesStyle": "Soul Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=TXAb56g0mRM",
     "albums": [
@@ -44177,7 +44177,9 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Clarence_Carter",
-    "secondaryInstruments": [],
+    "secondaryInstruments": [
+      "Guitar"
+    ],
     "createdAt": "2026-09-06"
   }
 ]
