@@ -5769,7 +5769,8 @@
       "percy-mayfield",
       "paul-gayten",
       "pete-mayes",
-      "roy-hawkins"
+      "roy-hawkins",
+      "tommy-tucker"
     ],
     "incomplete": false,
     "playedWith": [
@@ -21166,7 +21167,8 @@
     "activeFrom": "1932",
     "influences": [],
     "influencedBy": [
-      "rosco-gordon"
+      "rosco-gordon",
+      "tommy-tucker"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -21227,7 +21229,8 @@
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
-      "john-lee-hooker"
+      "john-lee-hooker",
+      "tommy-tucker"
     ],
     "source": "https://en.wikipedia.org/wiki/Tab_Benoit",
     "secondaryInstruments": [
@@ -31399,7 +31402,9 @@
     "albums": [],
     "description": "Regina B.  Higginbotham (born January 22, 1958) known professionally as Teeny Tucker is an American electric blues and new blues singer and songwriter.  She is the daughter of the late blues musician  Tommy Tucker.",
     "activeFrom": "1978",
-    "influences": [],
+    "influences": [
+      "tommy-tucker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -33255,7 +33260,8 @@
       "memphis-slim",
       "jimmy-rogers",
       "big-walter-horton",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "tommy-tucker"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_Dixon",
     "secondaryInstruments": [
@@ -44032,6 +44038,53 @@
       "snooky-pryor"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_Nix",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-05"
+  },
+  {
+    "id": "tommy-tucker",
+    "name": "Tommy Tucker",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1933-03-05",
+    "birthPlace": "Springfield",
+    "birthCoords": [
+      -83.804166666667,
+      39.926944444444
+    ],
+    "deathDate": "1982-01-22",
+    "deathPlace": "Newark",
+    "deathCoords": [
+      -74.17222222222222,
+      40.73555555555556
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9n69ZitcXKM",
+    "albums": [
+      {
+        "name": "Hi-Heel Sneakers",
+        "youtubeLink": "https://www.youtube.com/watch?v=9n69ZitcXKM"
+      }
+    ],
+    "description": "Tommy Tucker (born Robert Higginbotham) was an American blues singer, songwriter, and pianist best known for his 1964 hit \"Hi-Heel Sneakers,\" an uptempo twelve-bar blues that reached No. 11 on the Billboard Hot 100 and became a blues and R&B standard covered by countless artists. Recorded for Checker Records with producer Herb Abramson, the song established Tucker as a distinctive voice in the piano-driven rhythm-and-blues tradition, though he stepped away from music for much of the late 1960s before returning to record and tour through the 1970s.",
+    "activeFrom": "1961",
+    "influences": [
+      "louis-jordan",
+      "charles-brown"
+    ],
+    "influencedBy": [
+      "teeny-tucker"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "louisiana-red",
+      "willie-dixon"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Tommy_Tucker_(singer)",
     "secondaryInstruments": [
       "Vocals"
     ],
