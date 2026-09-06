@@ -1974,7 +1974,8 @@
       "albert-king",
       "freddie-king",
       "barbara-lynn",
-      "rosco-gordon"
+      "rosco-gordon",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/B._B._King",
     "secondaryInstruments": [
@@ -2909,7 +2910,8 @@
       "james-cotton",
       "little-walter",
       "carey-bell",
-      "kim-wilson"
+      "kim-wilson",
+      "willie-nix"
     ],
     "incomplete": false,
     "playedWith": [
@@ -2921,7 +2923,8 @@
       "john-lee-hooker",
       "floyd-jones",
       "david-honeyboy-edwards",
-      "koko-taylor"
+      "koko-taylor",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Walter_Horton",
     "secondaryInstruments": [],
@@ -8094,7 +8097,7 @@
     "description": "Howard Duane Allman was an American rock and blues guitarist and the founder and original leader of the Allman Brothers Band. Known for his expressive slide guitar playing and inventive improvisational skills, he was ranked #2 in Rolling Stone's list of the 100 greatest guitarists of all time. A sought-after session musician, he performed with Wilson Pickett, Aretha Franklin, and Herbie Mann, and contributed to Derek and the Dominos' Layla and Other Assorted Love Songs. He died in a motorcycle crash at age 24.",
     "activeFrom": "1961",
     "influences": [
-      "b.b.-king",
+      "bb-king",
       "elmore-james",
       "robert-johnson",
       "muddy-waters",
@@ -8966,7 +8969,8 @@
       "big-walter-horton",
       "elmore-james",
       "willie-dixon",
-      "rick-estrin"
+      "rick-estrin",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Eddie_Taylor_Jr.",
     "secondaryInstruments": [],
@@ -9260,7 +9264,8 @@
       "big-joe-turner",
       "eddie-taylor",
       "willie-dixon",
-      "tampa-red"
+      "tampa-red",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Elmore_James",
     "secondaryInstruments": [
@@ -12944,7 +12949,8 @@
       "keb-mo",
       "lightnin-hopkins",
       "etta-james",
-      "barbara-lynn"
+      "barbara-lynn",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Ike_Turner",
     "secondaryInstruments": [
@@ -14012,7 +14018,7 @@
     "activeFrom": "1981",
     "influences": [
       "stevie-ray-vaughan",
-      "b.b.-king",
+      "bb-king",
       "eric-clapton",
       "albert-collins",
       "albert-king",
@@ -14024,7 +14030,7 @@
     "playedWith": [
       "stevie-ray-vaughan",
       "buddy-guy",
-      "b.b.-king",
+      "bb-king",
       "eric-clapton",
       "albert-collins",
       "jack-owens"
@@ -15419,7 +15425,8 @@
       "mose-vinson",
       "robert-nighthawk",
       "roosevelt-sykes",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Joe_Willie_Wilkins",
     "secondaryInstruments": [
@@ -16850,7 +16857,8 @@
       "willie-dixon",
       "robert-lockwood-jr",
       "mississippi-fred-mcdowell",
-      "snooky-pryor"
+      "snooky-pryor",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Shines",
     "secondaryInstruments": [],
@@ -20168,7 +20176,7 @@
     "description": "Little Milton (James Milton Campbell) was an influential electric blues guitarist and singer who spanned blues, soul, and R&B. He recorded for Sun Records in the early 1950s before joining Bobbin Records in St. Louis. His biggest hit 'We're Gonna Make It' (1965) became a blues standard. Moving to Chess Records in Chicago, he developed a sophisticated urban blues sound that influenced Southern soul. Milton's smooth vocals and tasteful guitar work made him a bridge between traditional blues and modern soul music.",
     "activeFrom": "1953",
     "influences": [
-      "b.b.-king",
+      "bb-king",
       "buddy-guy"
     ],
     "influencedBy": [],
@@ -23182,7 +23190,8 @@
     "playedWith": [
       "big-bill-broonzy",
       "sonny-boy-williamson-i",
-      "jimmy-rogers"
+      "jimmy-rogers",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Memphis_Slim",
     "secondaryInstruments": [
@@ -29905,7 +29914,8 @@
       "sonny-boy-williamson-i",
       "sonny-boy-williamson",
       "floyd-jones",
-      "jimmy-rogers"
+      "jimmy-rogers",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Snooky_Pryor",
     "secondaryInstruments": [
@@ -30134,7 +30144,8 @@
       "gene-birdlegg-pittman",
       "rick-estrin",
       "cedell-davis",
-      "kim-wilson"
+      "kim-wilson",
+      "willie-nix"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30143,7 +30154,8 @@
       "robert-johnson",
       "howlin-wolf",
       "big-joe-williams",
-      "jody-williams"
+      "jody-williams",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
     "secondaryInstruments": [
@@ -30741,7 +30753,8 @@
     "playedWith": [
       "muddy-waters",
       "howlin-wolf",
-      "b.b.-king"
+      "bb-king",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Sunnyland_Slim",
     "secondaryInstruments": [
@@ -33060,7 +33073,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "willie-nix"
+    ],
     "source": "https://en.wikipedia.org/wiki/Willie_Cobbs",
     "secondaryInstruments": [
       "Vocals"
@@ -33324,7 +33339,8 @@
       "sonny-boy-williamson",
       "elmore-james",
       "joe-willie-wilkins",
-      "eddie-shaw"
+      "eddie-shaw",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_Love",
     "secondaryInstruments": [
@@ -33851,7 +33867,7 @@
     "description": "Z.Z. Hill was a popular blues and soul singer who successfully blended traditional blues with Southern soul. Starting in the 1950s recording for various labels, he found his greatest success with Malaco Records in Jackson, Mississippi. His 1982 album 'Down Home' became a landmark of modern blues, featuring his biggest hit 'Down Home Blues'. Hill's smooth yet powerful voice conveyed both deep emotion and jukejoint energy, making him one of the most successful blues artists of the 1980s.",
     "activeFrom": "1958",
     "influences": [
-      "b.b.-king",
+      "bb-king",
       "bobby-blue-bland"
     ],
     "influencedBy": [],
@@ -43964,6 +43980,70 @@
     "createdAt": "2026-09-04"
   },
   {
+    "id": "willie-nix",
+    "name": "Willie Nix",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1922-08-06",
+    "birthPlace": "Memphis",
+    "birthCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "deathDate": "1991-07-08",
+    "deathPlace": "Leland",
+    "deathCoords": [
+      -90.897222222222,
+      33.405
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Drums",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9vFc6YdolwY",
+    "albums": [
+      {
+        "name": "Nervous Wreck / No More Love (Chance Records, 1953)",
+        "youtubeLink": "https://www.youtube.com/watch?v=BZ-qsStTsGQ"
+      }
+    ],
+    "description": "Willie Nix was a Memphis blues singer and drummer known as \"the Memphis Blues Boy,\" who began as a dancer and comedian with the Rabbit Foot Minstrels before turning to music in the postwar Beale Street scene. As a house drummer and bandleader he backed and recorded with Sonny Boy Williamson II, Elmore James, and other Memphis and Chicago blues mainstays, cutting sides for RPM, Chess/Checker, Sun, and Chance in the early 1950s. His compositions \"Nervous Wreck\" and the Sun single \"Baker Shop Boogie\"/\"Seems Like a Million Years\" are still prized for their driving beat and sharp lyricism, though he stopped recording after the mid-1950s.",
+    "activeFrom": "1951",
+    "influences": [
+      "sonny-boy-williamson",
+      "big-walter-horton"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bb-king",
+      "sonny-boy-williamson",
+      "joe-willie-wilkins",
+      "willie-love",
+      "big-walter-horton",
+      "elmore-james",
+      "johnny-shines",
+      "memphis-slim",
+      "ike-turner",
+      "willie-cobbs",
+      "eddie-taylor",
+      "sunnyland-slim",
+      "snooky-pryor"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Willie_Nix",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-05"
+  },
+  {
     "id": "tommy-tucker",
     "name": "Tommy Tucker",
     "image": "",
@@ -44008,6 +44088,6 @@
     "secondaryInstruments": [
       "Vocals"
     ],
-    "createdAt": "2026-09-04"
+    "createdAt": "2026-09-05"
   }
 ]
