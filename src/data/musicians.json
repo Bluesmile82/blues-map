@@ -877,7 +877,8 @@
     "incomplete": false,
     "playedWith": [
       "charles-brown",
-      "johnny-otis"
+      "johnny-otis",
+      "wayne-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Amos_Milburn",
     "secondaryInstruments": [
@@ -4116,7 +4117,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "rosco-gordon"
+      "rosco-gordon",
+      "wayne-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Bobby_Bland",
     "secondaryInstruments": [],
@@ -4789,7 +4791,8 @@
       "bb-king",
       "alexis-korner",
       "chris-cain",
-      "jack-owens"
+      "jack-owens",
+      "wayne-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Buddy_Guy",
     "secondaryInstruments": [
@@ -9259,7 +9262,8 @@
       "big-joe-turner",
       "eddie-taylor",
       "willie-dixon",
-      "tampa-red"
+      "tampa-red",
+      "wayne-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Elmore_James",
     "secondaryInstruments": [
@@ -9507,7 +9511,8 @@
     "activeFrom": "1962",
     "influences": [
       "wizz-jones",
-      "bobby-parker"
+      "bobby-parker",
+      "wayne-bennett"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -9938,7 +9943,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "wayne-bennett"
+    ],
     "source": "https://en.wikipedia.org/wiki/Fats_Domino",
     "secondaryInstruments": [
       "Vocals"
@@ -13311,7 +13318,8 @@
       "joe-louis-walker",
       "paul-butterfield",
       "mike-bloomfield",
-      "johnny-winter"
+      "johnny-winter",
+      "wayne-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Cotton",
     "secondaryInstruments": [
@@ -14679,7 +14687,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "Based on the context provided"
+      "Based on the context provided",
+      "wayne-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Reed",
     "secondaryInstruments": [
@@ -17440,7 +17449,8 @@
       "bobby-blue-bland",
       "bb-king",
       "ike-turner",
-      "rosco-gordon"
+      "rosco-gordon",
+      "wayne-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Parker",
     "secondaryInstruments": [
@@ -24671,7 +24681,8 @@
       "muddy-waters",
       "buddy-guy",
       "albert-king",
-      "jody-williams"
+      "jody-williams",
+      "wayne-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Rush",
     "secondaryInstruments": [
@@ -30898,7 +30909,8 @@
       "sean-costello",
       "johnny-guitar-watson",
       "latimore",
-      "lonnie-mack"
+      "lonnie-mack",
+      "wayne-bennett"
     ],
     "incomplete": false,
     "playedWith": [
@@ -41204,7 +41216,8 @@
     "incomplete": false,
     "playedWith": [
       "duke-robillard",
-      "david-fathead-newman"
+      "david-fathead-newman",
+      "wayne-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Zuzu_Bollin",
     "secondaryInstruments": [
@@ -43956,5 +43969,72 @@
       "Vocals"
     ],
     "createdAt": "2026-09-04"
+  },
+  {
+    "id": "wayne-bennett",
+    "name": "Wayne Bennett",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1932-12-13",
+    "birthPlace": "Sulphur, Oklahoma",
+    "birthCoords": [
+      -96.975277777778,
+      34.509166666667
+    ],
+    "deathDate": "1992-11-28",
+    "deathPlace": "New Orleans, Louisiana",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Ardmore, Oklahoma",
+        "coords": [
+          -97.1436,
+          34.1743
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=d8Tig8SgKSA",
+    "albums": [
+      {
+        "name": "Casanova (Your Playing Days Are Over) (1967)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UTyPMbjogeY"
+      }
+    ],
+    "description": "Wayne Bennett was an American blues guitarist best known for his long tenure as Bobby \"Blue\" Bland's guitarist between the late 1950s and mid-1980s, developing a jazz-tinged blues style rooted in T-Bone Walker that made his solos on \"Stormy Monday\" and \"Wishing Well\" touchstones for a generation of guitarists, including Eric Clapton. Beyond his work with Bland, he was a prolific Chicago session guitarist who recorded with Otis Rush, Buddy Guy, Jimmy Reed, Elmore James, and gospel groups such as the Five Blind Boys of Mississippi.",
+    "activeFrom": "1950",
+    "influences": [
+      "t-bone-walker"
+    ],
+    "influencedBy": [
+      "eric-clapton"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "bobby-blue-bland",
+      "otis-rush",
+      "buddy-guy",
+      "jimmy-reed",
+      "elmore-james",
+      "amos-milburn",
+      "junior-parker",
+      "james-cotton",
+      "fats-domino",
+      "zuzu-bollin"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Wayne_Bennett_(blues_guitarist)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-08"
   }
 ]
