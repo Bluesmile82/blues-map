@@ -663,7 +663,8 @@
       "bobby-bland",
       "peter-green",
       "muddy-waters",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "duster-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Alexis_Korner",
     "secondaryInstruments": [
@@ -12569,7 +12570,8 @@
       "freddie-king",
       "big-mama-thornton",
       "sonny-terry",
-      "brownie-mcghee"
+      "brownie-mcghee",
+      "duster-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Hound_Dog_Taylor",
     "secondaryInstruments": [
@@ -14696,7 +14698,8 @@
       "john-p-hammond",
       "barbara-lynn",
       "juke-boy-bonner",
-      "clarence-carter"
+      "clarence-carter",
+      "duster-bennett"
     ],
     "incomplete": false,
     "playedWith": [
@@ -15874,7 +15877,8 @@
       "john-lee-hooker",
       "otis-rush",
       "peter-green",
-      "coco-montoya"
+      "coco-montoya",
+      "duster-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Mayall",
     "secondaryInstruments": [
@@ -23208,7 +23212,8 @@
       "big-bill-broonzy",
       "sonny-boy-williamson-i",
       "jimmy-rogers",
-      "willie-nix"
+      "willie-nix",
+      "duster-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Memphis_Slim",
     "secondaryInstruments": [
@@ -25594,7 +25599,8 @@
       "otis-spann",
       "big-walter-horton",
       "willie-dixon",
-      "buddy-guy"
+      "buddy-guy",
+      "duster-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Peter_Green_(musician)",
     "secondaryInstruments": [
@@ -44334,6 +44340,60 @@
     ],
     "source": "https://en.wikipedia.org/wiki/Wayne_Bennett_(blues_guitarist)",
     "secondaryInstruments": [],
+    "createdAt": "2026-09-08"
+  },
+  {
+    "id": "duster-bennett",
+    "name": "Duster Bennett",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Mayall%20and%20Duster%20Bennett%201970.JPG?width=500",
+    "image_source": null,
+    "birthDate": "1946-09-23",
+    "birthPlace": "Welshpool",
+    "birthCoords": [
+      -3.14725,
+      52.659661111111
+    ],
+    "deathDate": "1976-03-26",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "British Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=qZ-ZdaNfBH4",
+    "albums": [
+      {
+        "name": "Smiling Like I'm Happy",
+        "youtubeLink": "https://www.youtube.com/watch?v=hItmFaskeZE"
+      }
+    ],
+    "description": "Anthony \"Duster\" Bennett (23 September 1946 – 26 March 1976) was a British blues singer and musician.  Based in London, his first album Smiling Like I'm Happy saw him playing as a one-man band, playing a bass drum with his foot and blowing a harmonica on a rack while strumming a 1952 Les Paul Goldtop guitar given to him in 1968 by Peter Green.  Backed by his girlfriend Stella Sutton and the original Fleetwood Mac on three tracks, the album was well received.",
+    "activeFrom": "1966",
+    "influences": [
+      "jimmy-reed"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "peter-green",
+      "john-mayall",
+      "memphis-slim",
+      "hound-dog-taylor",
+      "alexis-korner"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Duster_Bennett",
+    "secondaryInstruments": [
+      "Harmonica",
+      "Vocals",
+      "Drums"
+    ],
     "createdAt": "2026-09-08"
   }
 ]
