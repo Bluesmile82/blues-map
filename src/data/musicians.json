@@ -365,7 +365,8 @@
       "larry-davis",
       "chris-cain",
       "michael-burks",
-      "ana-popovic"
+      "ana-popovic",
+      "jarekus-singleton"
     ],
     "incomplete": false,
     "playedWith": [
@@ -1961,7 +1962,8 @@
       "sean-costello",
       "chris-cain",
       "toronzo-cannon",
-      "ana-popovic"
+      "ana-popovic",
+      "jarekus-singleton"
     ],
     "incomplete": false,
     "playedWith": [
@@ -10599,7 +10601,8 @@
       "michael-burks",
       "toronzo-cannon",
       "mighty-joe-young",
-      "ana-popovic"
+      "ana-popovic",
+      "jarekus-singleton"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30577,7 +30580,8 @@
     ],
     "influencedBy": [
       "sean-costello",
-      "ana-popovic"
+      "ana-popovic",
+      "jarekus-singleton"
     ],
     "incomplete": false,
     "playedWith": [
@@ -44181,5 +44185,76 @@
       "Guitar"
     ],
     "createdAt": "2026-09-06"
+  },
+  {
+    "id": "jarekus-singleton",
+    "name": "Jarekus Singleton",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1984-07-11",
+    "birthPlace": "Clinton, Mississippi",
+    "birthCoords": [
+      -90.3217,
+      32.3417
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Zv-3edlmzZw",
+    "albums": [
+      {
+        "name": "Heartfelt (2011)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Refuse To Lose (2014)",
+        "youtubeLink": "https://www.youtube.com/watch?v=LqdS-JfpLKo"
+      },
+      {
+        "name": "The Bridge, Part 1 (2018)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Jarekus Singleton (born July 11, 1984, in Clinton, Mississippi, United States) is an American blues guitarist, singer and songwriter.  Refuse To Lose was his first nationally and internationally distributed album.  It was released on the Chicago-based independent blues record label Alligator Records on May 6, 2014.",
+    "activeFrom": "2009",
+    "influences": [
+      "bb-king",
+      "freddie-king",
+      "albert-king",
+      "stevie-ray-vaughan"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Jarekus_Singleton",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-07"
   }
 ]
