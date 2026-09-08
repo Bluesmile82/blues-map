@@ -597,7 +597,7 @@ function parseSpentTimePlacesFromWikitext(wikitext, birthPlace) {
     addCity(sentence);
   }
 
-  return [...found.entries()].map(([name, coords]) => ({ name, coords }));
+  return [...found.entries()].map(([place, coords]) => ({ place, coords }));
 }
 
 async function getSpentTimePlacesFromWikipedia(musicianName, birthPlace) {
@@ -643,7 +643,7 @@ async function enrichOptionalFields(musician, allMusicians, index, total) {
     const places = parseSpentTimePlacesFromWikitext(content, musician.birthPlace || '');
     if (places.length) {
       musician.spentTimePlaces = places;
-      console.log(`  [${index + 1}/${total}] ${musician.name}: spentTime → ${places.map(p => p.name).join(', ')}`);
+      console.log(`  [${index + 1}/${total}] ${musician.name}: spentTime → ${places.map(p => p.place).join(', ')}`);
       changed = true;
     }
   }
@@ -969,9 +969,16 @@ async function enrichMusician(musician, index, total) {
           if (label) names.push(label);
         }
         if (names.length) {
-          // Capitalise each instrument
-          musician.instrument = names.map(n => n.charAt(0).toUpperCase() + n.slice(1)).join(', ');
-          console.log(`  ✓ Instrument: ${musician.instrument}`);
+          // Capitalise each instrument, normalise "Voice" to match dataset convention
+          const normalized = names.map(n => {
+            const cap = n.charAt(0).toUpperCase() + n.slice(1);
+            return cap === 'Voice' ? 'Vocals' : cap;
+          });
+          musician.instrument = normalized[0];
+          if (normalized.length > 1) {
+            musician.secondaryInstruments = [...(musician.secondaryInstruments || []), ...normalized.slice(1)];
+          }
+          console.log(`  ✓ Instrument: ${normalized.join(', ')}`);
         }
       }
 
@@ -1056,12 +1063,12 @@ async function enrichMusician(musician, index, total) {
           const { name, coords } = await resolvePlace([claim]);
           await delay(150);
           if (name) {
-            places.push({ name, coords: coords || [0, 0] });
+            places.push({ place: name, coords: coords || [0, 0] });
           }
         }
         if (places.length) {
           musician.spentTimePlaces = places;
-          console.log(`  ✓ Spent time: ${places.map(p => p.name).join(', ')} (Wikidata)`);
+          console.log(`  ✓ Spent time: ${places.map(p => p.place).join(', ')} (Wikidata)`);
         }
       }
 
@@ -1071,7 +1078,7 @@ async function enrichMusician(musician, index, total) {
         await delay(DELAY_MS);
         if (places.length) {
           musician.spentTimePlaces = places;
-          console.log(`  ✓ Spent time: ${places.map(p => p.name).join(', ')} (Wikipedia)`);
+          console.log(`  ✓ Spent time: ${places.map(p => p.place).join(', ')} (Wikipedia)`);
         }
       }
 

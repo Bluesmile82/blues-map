@@ -365,7 +365,8 @@
       "larry-davis",
       "chris-cain",
       "michael-burks",
-      "ana-popovic"
+      "ana-popovic",
+      "jarekus-singleton"
     ],
     "incomplete": false,
     "playedWith": [
@@ -1324,7 +1325,9 @@
     "description": "Arthur William \"Big Boy\" Crudup (August 24, 1905 – March 28, 1974) was an American Delta blues singer, songwriter and guitarist.  He is best known, outside blues circles, for his songs \"That's All Right\" (1946), \"My Baby Left Me\" and \"So Glad You're Mine\", later recorded by Elvis Presley and other artists.",
     "activeFrom": "1939",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "clarence-carter"
+    ],
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson",
@@ -1960,7 +1963,8 @@
       "sean-costello",
       "chris-cain",
       "toronzo-cannon",
-      "ana-popovic"
+      "ana-popovic",
+      "jarekus-singleton"
     ],
     "incomplete": false,
     "playedWith": [
@@ -1975,7 +1979,8 @@
       "albert-king",
       "freddie-king",
       "barbara-lynn",
-      "rosco-gordon"
+      "rosco-gordon",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/B._B._King",
     "secondaryInstruments": [
@@ -2910,7 +2915,8 @@
       "james-cotton",
       "little-walter",
       "carey-bell",
-      "kim-wilson"
+      "kim-wilson",
+      "willie-nix"
     ],
     "incomplete": false,
     "playedWith": [
@@ -2922,7 +2928,8 @@
       "john-lee-hooker",
       "floyd-jones",
       "david-honeyboy-edwards",
-      "koko-taylor"
+      "koko-taylor",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Walter_Horton",
     "secondaryInstruments": [],
@@ -5769,7 +5776,8 @@
       "percy-mayfield",
       "paul-gayten",
       "pete-mayes",
-      "roy-hawkins"
+      "roy-hawkins",
+      "tommy-tucker"
     ],
     "incomplete": false,
     "playedWith": [
@@ -8096,7 +8104,7 @@
     "description": "Howard Duane Allman was an American rock and blues guitarist and the founder and original leader of the Allman Brothers Band. Known for his expressive slide guitar playing and inventive improvisational skills, he was ranked #2 in Rolling Stone's list of the 100 greatest guitarists of all time. A sought-after session musician, he performed with Wilson Pickett, Aretha Franklin, and Herbie Mann, and contributed to Derek and the Dominos' Layla and Other Assorted Love Songs. He died in a motorcycle crash at age 24.",
     "activeFrom": "1961",
     "influences": [
-      "b.b.-king",
+      "bb-king",
       "elmore-james",
       "robert-johnson",
       "muddy-waters",
@@ -8968,7 +8976,8 @@
       "big-walter-horton",
       "elmore-james",
       "willie-dixon",
-      "rick-estrin"
+      "rick-estrin",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Eddie_Taylor_Jr.",
     "secondaryInstruments": [],
@@ -9263,6 +9272,7 @@
       "eddie-taylor",
       "willie-dixon",
       "tampa-red",
+      "willie-nix",
       "wayne-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Elmore_James",
@@ -10598,7 +10608,8 @@
       "michael-burks",
       "toronzo-cannon",
       "mighty-joe-young",
-      "ana-popovic"
+      "ana-popovic",
+      "jarekus-singleton"
     ],
     "incomplete": false,
     "playedWith": [
@@ -12950,7 +12961,8 @@
       "keb-mo",
       "lightnin-hopkins",
       "etta-james",
-      "barbara-lynn"
+      "barbara-lynn",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Ike_Turner",
     "secondaryInstruments": [
@@ -14019,7 +14031,7 @@
     "activeFrom": "1981",
     "influences": [
       "stevie-ray-vaughan",
-      "b.b.-king",
+      "bb-king",
       "eric-clapton",
       "albert-collins",
       "albert-king",
@@ -14031,7 +14043,7 @@
     "playedWith": [
       "stevie-ray-vaughan",
       "buddy-guy",
-      "b.b.-king",
+      "bb-king",
       "eric-clapton",
       "albert-collins",
       "jack-owens"
@@ -14683,7 +14695,8 @@
     "influencedBy": [
       "john-p-hammond",
       "barbara-lynn",
-      "juke-boy-bonner"
+      "juke-boy-bonner",
+      "clarence-carter"
     ],
     "incomplete": false,
     "playedWith": [
@@ -15427,7 +15440,8 @@
       "mose-vinson",
       "robert-nighthawk",
       "roosevelt-sykes",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Joe_Willie_Wilkins",
     "secondaryInstruments": [
@@ -15733,7 +15747,8 @@
       "stevie-ray-vaughan",
       "jb-lenoir",
       "albert-collins",
-      "maxwell-street-jimmy-davis"
+      "maxwell-street-jimmy-davis",
+      "clarence-carter"
     ],
     "incomplete": false,
     "playedWith": [
@@ -16858,7 +16873,8 @@
       "willie-dixon",
       "robert-lockwood-jr",
       "mississippi-fred-mcdowell",
-      "snooky-pryor"
+      "snooky-pryor",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Shines",
     "secondaryInstruments": [],
@@ -19344,7 +19360,8 @@
       "slim-harpo",
       "carolina-slim",
       "peppermint-harris",
-      "juke-boy-bonner"
+      "juke-boy-bonner",
+      "clarence-carter"
     ],
     "incomplete": false,
     "playedWith": [
@@ -20177,7 +20194,7 @@
     "description": "Little Milton (James Milton Campbell) was an influential electric blues guitarist and singer who spanned blues, soul, and R&B. He recorded for Sun Records in the early 1950s before joining Bobbin Records in St. Louis. His biggest hit 'We're Gonna Make It' (1965) became a blues standard. Moving to Chess Records in Chicago, he developed a sophisticated urban blues sound that influenced Southern soul. Milton's smooth vocals and tasteful guitar work made him a bridge between traditional blues and modern soul music.",
     "activeFrom": "1953",
     "influences": [
-      "b.b.-king",
+      "bb-king",
       "buddy-guy"
     ],
     "influencedBy": [],
@@ -21168,7 +21185,8 @@
     "activeFrom": "1932",
     "influences": [],
     "influencedBy": [
-      "rosco-gordon"
+      "rosco-gordon",
+      "tommy-tucker"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -21229,7 +21247,8 @@
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
-      "john-lee-hooker"
+      "john-lee-hooker",
+      "tommy-tucker"
     ],
     "source": "https://en.wikipedia.org/wiki/Tab_Benoit",
     "secondaryInstruments": [
@@ -23189,7 +23208,8 @@
     "playedWith": [
       "big-bill-broonzy",
       "sonny-boy-williamson-i",
-      "jimmy-rogers"
+      "jimmy-rogers",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Memphis_Slim",
     "secondaryInstruments": [
@@ -26432,7 +26452,8 @@
       "percy-mayfield",
       "quincy-jones",
       "latimore",
-      "bobby-parker"
+      "bobby-parker",
+      "clarence-carter"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -29913,7 +29934,8 @@
       "sonny-boy-williamson-i",
       "sonny-boy-williamson",
       "floyd-jones",
-      "jimmy-rogers"
+      "jimmy-rogers",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Snooky_Pryor",
     "secondaryInstruments": [
@@ -30142,7 +30164,8 @@
       "gene-birdlegg-pittman",
       "rick-estrin",
       "cedell-davis",
-      "kim-wilson"
+      "kim-wilson",
+      "willie-nix"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30151,7 +30174,8 @@
       "robert-johnson",
       "howlin-wolf",
       "big-joe-williams",
-      "jody-williams"
+      "jody-williams",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
     "secondaryInstruments": [
@@ -30567,7 +30591,8 @@
     ],
     "influencedBy": [
       "sean-costello",
-      "ana-popovic"
+      "ana-popovic",
+      "jarekus-singleton"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30749,7 +30774,8 @@
     "playedWith": [
       "muddy-waters",
       "howlin-wolf",
-      "b.b.-king"
+      "bb-king",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Sunnyland_Slim",
     "secondaryInstruments": [
@@ -31398,7 +31424,9 @@
     "albums": [],
     "description": "Regina B.  Higginbotham (born January 22, 1958) known professionally as Teeny Tucker is an American electric blues and new blues singer and songwriter.  She is the daughter of the late blues musician  Tommy Tucker.",
     "activeFrom": "1978",
-    "influences": [],
+    "influences": [
+      "tommy-tucker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -32787,7 +32815,9 @@
     "description": "Robert Clifford Brown (July 15, 1910 – November 6, 1966), known professionally as Washboard Sam, was an American blues musician and singer.",
     "activeFrom": "1935",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "clarence-carter"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Washboard_Sam",
@@ -33067,7 +33097,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "willie-nix"
+    ],
     "source": "https://en.wikipedia.org/wiki/Willie_Cobbs",
     "secondaryInstruments": [
       "Vocals"
@@ -33252,7 +33284,8 @@
       "memphis-slim",
       "jimmy-rogers",
       "big-walter-horton",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "tommy-tucker"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_Dixon",
     "secondaryInstruments": [
@@ -33330,7 +33363,8 @@
       "sonny-boy-williamson",
       "elmore-james",
       "joe-willie-wilkins",
-      "eddie-shaw"
+      "eddie-shaw",
+      "willie-nix"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_Love",
     "secondaryInstruments": [
@@ -33857,7 +33891,7 @@
     "description": "Z.Z. Hill was a popular blues and soul singer who successfully blended traditional blues with Southern soul. Starting in the 1950s recording for various labels, he found his greatest success with Malaco Records in Jackson, Mississippi. His 1982 album 'Down Home' became a landmark of modern blues, featuring his biggest hit 'Down Home Blues'. Hill's smooth yet powerful voice conveyed both deep emotion and jukejoint energy, making him one of the most successful blues artists of the 1980s.",
     "activeFrom": "1958",
     "influences": [
-      "b.b.-king",
+      "bb-king",
       "bobby-blue-bland"
     ],
     "influencedBy": [],
@@ -34214,7 +34248,9 @@
       "otis-redding",
       "roy-hawkins"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "clarence-carter"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Aretha_Franklin",
@@ -43969,6 +44005,270 @@
       "Vocals"
     ],
     "createdAt": "2026-09-04"
+  },
+  {
+    "id": "willie-nix",
+    "name": "Willie Nix",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1922-08-06",
+    "birthPlace": "Memphis",
+    "birthCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "deathDate": "1991-07-08",
+    "deathPlace": "Leland",
+    "deathCoords": [
+      -90.897222222222,
+      33.405
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Drums",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9vFc6YdolwY",
+    "albums": [
+      {
+        "name": "Nervous Wreck / No More Love (Chance Records, 1953)",
+        "youtubeLink": "https://www.youtube.com/watch?v=BZ-qsStTsGQ"
+      }
+    ],
+    "description": "Willie Nix was a Memphis blues singer and drummer known as \"the Memphis Blues Boy,\" who began as a dancer and comedian with the Rabbit Foot Minstrels before turning to music in the postwar Beale Street scene. As a house drummer and bandleader he backed and recorded with Sonny Boy Williamson II, Elmore James, and other Memphis and Chicago blues mainstays, cutting sides for RPM, Chess/Checker, Sun, and Chance in the early 1950s. His compositions \"Nervous Wreck\" and the Sun single \"Baker Shop Boogie\"/\"Seems Like a Million Years\" are still prized for their driving beat and sharp lyricism, though he stopped recording after the mid-1950s.",
+    "activeFrom": "1951",
+    "influences": [
+      "sonny-boy-williamson",
+      "big-walter-horton"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bb-king",
+      "sonny-boy-williamson",
+      "joe-willie-wilkins",
+      "willie-love",
+      "big-walter-horton",
+      "elmore-james",
+      "johnny-shines",
+      "memphis-slim",
+      "ike-turner",
+      "willie-cobbs",
+      "eddie-taylor",
+      "sunnyland-slim",
+      "snooky-pryor"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Willie_Nix",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-05"
+  },
+  {
+    "id": "tommy-tucker",
+    "name": "Tommy Tucker",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1933-03-05",
+    "birthPlace": "Springfield",
+    "birthCoords": [
+      -83.804166666667,
+      39.926944444444
+    ],
+    "deathDate": "1982-01-22",
+    "deathPlace": "Newark",
+    "deathCoords": [
+      -74.17222222222222,
+      40.73555555555556
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9n69ZitcXKM",
+    "albums": [
+      {
+        "name": "Hi-Heel Sneakers",
+        "youtubeLink": "https://www.youtube.com/watch?v=9n69ZitcXKM"
+      }
+    ],
+    "description": "Tommy Tucker (born Robert Higginbotham) was an American blues singer, songwriter, and pianist best known for his 1964 hit \"Hi-Heel Sneakers,\" an uptempo twelve-bar blues that reached No. 11 on the Billboard Hot 100 and became a blues and R&B standard covered by countless artists. Recorded for Checker Records with producer Herb Abramson, the song established Tucker as a distinctive voice in the piano-driven rhythm-and-blues tradition, though he stepped away from music for much of the late 1960s before returning to record and tour through the 1970s.",
+    "activeFrom": "1961",
+    "influences": [
+      "louis-jordan",
+      "charles-brown"
+    ],
+    "influencedBy": [
+      "teeny-tucker"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "louisiana-red",
+      "willie-dixon"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Tommy_Tucker_(singer)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-05"
+  },
+  {
+    "id": "clarence-carter",
+    "name": "Clarence Carter",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Clarence%20Carter%20(48591893891).jpg?width=500",
+    "image_source": null,
+    "birthDate": "1936-01-14",
+    "birthPlace": "Montgomery",
+    "birthCoords": [
+      -86.3,
+      32.3675
+    ],
+    "deathDate": "2026-05-13",
+    "deathPlace": "Atlanta",
+    "deathCoords": [
+      -84.38972222222222,
+      33.754444444444445
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=J0vUqvfHQeQ",
+    "albums": [
+      {
+        "name": "Patches (1982)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "The Best of Clarence Carter: The Dr.’s Greatest Prescriptions (1991)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Snatching It Back: The Best Of (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=38BCklcvALI"
+      },
+      {
+        "name": "Legendary Clarence Carter (1995)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Slip Away and Other Hits (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=mWYORXq_-f0"
+      },
+      {
+        "name": "Testifyin’ / This Is Clarence Carter (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=QnLc7jtKi-k"
+      }
+    ],
+    "description": "Clarence George Carter (January 14, 1936 – May 13, 2026) was an American singer, songwriter, musician, and record producer.  His most successful songs include \"Slip Away\", \"Back Door Santa\" (both released 1968), \"Patches\" (1970), and \"Strokin'\" (1986).",
+    "activeFrom": "1962",
+    "influences": [
+      "ray-charles",
+      "john-lee-hooker",
+      "lightnin-hopkins",
+      "jimmy-reed",
+      "aretha-franklin",
+      "arthur-big-boy-crudup",
+      "washboard-sam"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Clarence_Carter",
+    "secondaryInstruments": [
+      "Guitar"
+    ],
+    "createdAt": "2026-09-06"
+  },
+  {
+    "id": "jarekus-singleton",
+    "name": "Jarekus Singleton",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1984-07-11",
+    "birthPlace": "Clinton, Mississippi",
+    "birthCoords": [
+      -90.3217,
+      32.3417
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Zv-3edlmzZw",
+    "albums": [
+      {
+        "name": "Heartfelt (2011)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Refuse To Lose (2014)",
+        "youtubeLink": "https://www.youtube.com/watch?v=LqdS-JfpLKo"
+      },
+      {
+        "name": "The Bridge, Part 1 (2018)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Jarekus Singleton (born July 11, 1984, in Clinton, Mississippi, United States) is an American blues guitarist, singer and songwriter.  Refuse To Lose was his first nationally and internationally distributed album.  It was released on the Chicago-based independent blues record label Alligator Records on May 6, 2014.",
+    "activeFrom": "2009",
+    "influences": [
+      "bb-king",
+      "freddie-king",
+      "albert-king",
+      "stevie-ray-vaughan"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Jarekus_Singleton",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-07"
   },
   {
     "id": "wayne-bennett",
