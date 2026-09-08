@@ -302,12 +302,7 @@
     "instrument": "Guitar",
     "bluesStyle": "Delta Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=nMvFa3qteu8",
-    "albums": [
-      {
-        "name": "Based on the context provided",
-        "youtubeLink": null
-      }
-    ],
+    "albums": [],
     "description": "Son House was the crucial link between the Delta blues generation of Charley Patton and the later work of Robert Johnson and Muddy Waters. His tortured vocals and slide guitar captured the raw emotional power of the blues at its most elemental.",
     "activeFrom": "1927",
     "influences": [
@@ -6703,12 +6698,7 @@
     "instrument": "Guitar",
     "bluesStyle": "Georgia Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=G1iK5fslbWE",
-    "albums": [
-      {
-        "name": "Based on the context provided",
-        "youtubeLink": null
-      }
-    ],
+    "albums": [],
     "description": "Blind Willie McTell (born William Samuel McTier; circa 1903 – August 19, 1959) was an American Piedmont blues and ragtime singer, songwriter and guitarist.  He played in a fluid, syncopated finger picking guitar style common among many East Coast, Piedmont blues players.  Like his Atlanta contemporaries, he came to use twelve-string guitars exclusively.",
     "activeFrom": "1927",
     "influences": [],
@@ -15721,12 +15711,7 @@
     "instrument": "Harmonica",
     "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=QSNyn2TIFaU",
-    "albums": [
-      {
-        "name": "Based on the context provided",
-        "youtubeLink": null
-      }
-    ],
+    "albums": [],
     "description": "Charles Douglas Musselwhite (born January 31, 1944) is an American blues harmonica player and bandleader who came to prominence, along with Mike Bloomfield, Paul Butterfield, and Elvin Bishop, as a pivotal figure in helping to revive the Chicago Blues movement of the 1960s.  He has often been identified as a \"white bluesman\".  \nMusselwhite was reportedly the inspiration for Elwood Blues, the character played by Dan Aykroyd in the 1980 film, The Blues Brothers.",
     "activeFrom": "1967",
     "influences": [],
@@ -16503,9 +16488,7 @@
       "john-p-hammond"
     ],
     "incomplete": false,
-    "playedWith": [
-      "Based on the context provided"
-    ],
+    "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Reed",
     "secondaryInstruments": [
       "Harmonica",

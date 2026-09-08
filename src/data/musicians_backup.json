@@ -295,10 +295,6 @@
     "bluesStyle": "Delta Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=nMvFa3qteu8",
     "albums": [
-      {
-        "name": "Based on the context provided",
-        "youtubeLink": null
-      }
     ],
     "description": "Son House was the crucial link between the Delta blues generation of Charley Patton and the later work of Robert Johnson and Muddy Waters. His tortured vocals and slide guitar captured the raw emotional power of the blues at its most elemental.",
     "activeFrom": "1927",
@@ -6436,12 +6432,7 @@
     "instrument": "Guitar, Harmonica",
     "bluesStyle": "Georgia Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=G1iK5fslbWE",
-    "albums": [
-      {
-        "name": "Based on the context provided",
-        "youtubeLink": null
-      }
-    ],
+    "albums": [],
     "description": "Blind Willie McTell (born William Samuel McTier; circa 1903 – August 19, 1959) was an American Piedmont blues and ragtime singer, songwriter and guitarist.  He played in a fluid, syncopated finger picking guitar style common among many East Coast, Piedmont blues players.  Like his Atlanta contemporaries, he came to use twelve-string guitars exclusively.",
     "activeFrom": "1927",
     "influences": [],
@@ -7896,12 +7887,7 @@
     "instrument": "Guitar",
     "bluesStyle": "Georgia Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=jsq8HtKy_o8",
-    "albums": [
-      {
-        "name": "Based on the context provided",
-        "youtubeLink": null
-      }
-    ],
+    "albums": [],
     "description": "Curley James Weaver (March 25, 1906 – September 20, 1962) was an American blues musician, also known as Slim Gordon.",
     "activeFrom": "1925",
     "influences": [],
@@ -14312,12 +14298,7 @@
     "instrument": "Guitar, Harmonica, Piano, Voice",
     "bluesStyle": "British Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=IYoJ7Qh1Sx8",
-    "albums": [
-      {
-        "name": "Based on the context provided",
-        "youtubeLink": null
-      }
-    ],
+    "albums": [],
     "description": "John Brumwell Mayall  (29 November 1933 – 22 July 2024) was an English blues and rock musician, songwriter and producer.  In the 1960s, he formed John Mayall & the Bluesbreakers, a band that has counted among its members some of the most famous blues and blues rock musicians of all-time.  A singer, guitarist, harmonica player, and keyboardist, he had a career that spanned nearly seven decades, remaining an active musician until his death aged 90.",
     "activeFrom": "1956",
     "influences": [],
@@ -15071,12 +15052,7 @@
     "instrument": "Harmonica, Guitar, Voice, Harp",
     "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=QSNyn2TIFaU",
-    "albums": [
-      {
-        "name": "Based on the context provided",
-        "youtubeLink": null
-      }
-    ],
+    "albums": [],
     "description": "Charles Douglas Musselwhite (born January 31, 1944) is an American blues harmonica player and bandleader who came to prominence, along with Mike Bloomfield, Paul Butterfield, and Elvin Bishop, as a pivotal figure in helping to revive the Chicago Blues movement of the 1960s.  He has often been identified as a \"white bluesman\".  \nMusselwhite was reportedly the inspiration for Elwood Blues, the character played by Dan Aykroyd in the 1980 film, The Blues Brothers.",
     "activeFrom": "1967",
     "influences": [],
@@ -15813,9 +15789,7 @@
       "john-p-hammond"
     ],
     "incomplete": false,
-    "playedWith": [
-      "Based on the context provided"
-    ],
+    "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Reed"
   },
   {
