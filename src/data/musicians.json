@@ -10631,7 +10631,8 @@
       "muddy-waters",
       "howlin-wolf",
       "t-bone-walker",
-      "eric-clapton"
+      "eric-clapton",
+      "joe-doucet"
     ],
     "source": "https://en.wikipedia.org/wiki/Freddie_King",
     "secondaryInstruments": [
@@ -44463,5 +44464,58 @@
     "source": "https://en.wikipedia.org/wiki/Joe_%22Guitar%22_Hughes",
     "secondaryInstruments": [],
     "createdAt": "2026-09-09"
+  },
+  {
+    "id": "joe-doucet",
+    "name": "Joe Doucet",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1942",
+    "birthPlace": "Louisiana",
+    "birthCoords": [
+      -92.3288,
+      30.9843
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Louisiana",
+        "coords": [
+          -92.3288,
+          30.9843
+        ]
+      },
+      {
+        "place": "Houston, Texas",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=C2f--49MWLs",
+    "albums": [
+      {
+        "name": "Houston's Third Ward Blues",
+        "youtubeLink": "https://www.youtube.com/watch?v=d6PteebHiYQ"
+      }
+    ],
+    "description": "Joe Doucet (born 1942) is a Louisiana-born Creole blues guitarist and singer who relocated to Houston, Texas in 1962, gigging steadily on the city's blues circuit and working as a sideman in the bands of Clifton Chenier and Freddie King before falling out of the music business during the disco era. Rediscovered in the mid-2000s by blues historian Roger Wood after an impromptu sidewalk performance, Doucet returned to recording with his 2006 debut album Houston's Third Ward Blues on Dialtone Records, blending original songs and blues covers with the zydeco influences of his Creole upbringing.",
+    "activeFrom": "1962",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "freddie-king"
+    ],
+    "source": "http://www.bluenight.com/BluesBytes/su0307.html",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
   }
 ]
