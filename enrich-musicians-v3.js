@@ -324,38 +324,58 @@ async function getImage(musicianName, wikidataId) {
     } catch { /* continue */ }
   }
 
-  // 2. Wikipedia pageimages API (works for Commons-hosted images)
-  try {
-    const url = `${WIKIPEDIA_API}?action=query&titles=${encodeURIComponent(musicianName)}&prop=pageimages&pithumbsize=500&piprop=thumbnail|original&format=json&origin=*&redirects=1`;
-    const data = await fetchJSON(url);
-    const pages = data?.query?.pages || {};
-    const page = Object.values(pages)[0];
-    // Prefer original (full size) over thumbnail
-    if (page?.original?.source) return page.original.source;
-    if (page?.thumbnail?.source) return page.thumbnail.source;
-  } catch { /* continue */ }
+  // 2 & 3. Wikipedia pageimages / images-list, tried against the same
+  // disambiguation-suffix title variants used elsewhere (searchWikidataEntity,
+  // getWikipediaDescription) — a bare name lookup can land on an unrelated
+  // page (a different "Ted Taylor") or miss the disambiguated one entirely.
+  const titleVariants = [
+    musicianName,
+    `${musicianName} (musician)`,
+    `${musicianName} (singer)`,
+    `${musicianName} (blues musician)`,
+    `${musicianName} (blues singer)`,
+  ];
 
-  // 3. Wikipedia images list — picks the first portrait-like image on the page
-  // Handles fair-use images hosted on en.wikipedia (not in Commons)
-  try {
-    const url = `${WIKIPEDIA_API}?action=query&titles=${encodeURIComponent(musicianName)}&prop=images&imlimit=20&format=json&origin=*&redirects=1`;
-    const data = await fetchJSON(url);
-    const pages = data?.query?.pages || {};
-    const page = Object.values(pages)[0];
-    const images = page?.images || [];
-    // Skip icons, logos, flags — pick the first likely portrait photo
-    const skip = /flag|icon|logo|commons|wiki|symbol|signature|map|svg/i;
-    const candidate = images.find(img => !skip.test(img.title));
-    if (candidate) {
-      // Resolve the actual file URL via imageinfo API
-      const infoUrl = `${WIKIPEDIA_API}?action=query&titles=${encodeURIComponent(candidate.title)}&prop=imageinfo&iiprop=url&format=json&origin=*`;
-      const infoData = await fetchJSON(infoUrl);
-      const infoPages = infoData?.query?.pages || {};
-      const infoPage = Object.values(infoPages)[0];
-      const fileUrl = infoPage?.imageinfo?.[0]?.url;
-      if (fileUrl) return fileUrl;
-    }
-  } catch { /* continue */ }
+  for (const title of titleVariants) {
+    // 2. Wikipedia pageimages API (works for Commons-hosted images)
+    try {
+      const url = `${WIKIPEDIA_API}?action=query&titles=${encodeURIComponent(title)}&prop=pageimages&pithumbsize=500&piprop=thumbnail|original&format=json&origin=*&redirects=1`;
+      const data = await fetchJSON(url);
+      const pages = data?.query?.pages || {};
+      const page = Object.values(pages)[0];
+      if (!page?.missing) {
+        // Prefer original (full size) over thumbnail
+        if (page?.original?.source) return page.original.source;
+        if (page?.thumbnail?.source) return page.thumbnail.source;
+      }
+    } catch { /* continue */ }
+
+    // 3. Wikipedia images list — picks the first portrait-like image on the page
+    // Handles fair-use images hosted on en.wikipedia (not in Commons)
+    try {
+      const url = `${WIKIPEDIA_API}?action=query&titles=${encodeURIComponent(title)}&prop=images&imlimit=20&format=json&origin=*&redirects=1`;
+      const data = await fetchJSON(url);
+      const pages = data?.query?.pages || {};
+      const page = Object.values(pages)[0];
+      if (!page?.missing) {
+        const images = page?.images || [];
+        // Skip icons, logos, flags — pick the first likely portrait photo
+        const skip = /flag|icon|logo|commons|wiki|symbol|signature|map|svg/i;
+        const candidate = images.find(img => !skip.test(img.title));
+        if (candidate) {
+          // Resolve the actual file URL via imageinfo API
+          const infoUrl = `${WIKIPEDIA_API}?action=query&titles=${encodeURIComponent(candidate.title)}&prop=imageinfo&iiprop=url&format=json&origin=*`;
+          const infoData = await fetchJSON(infoUrl);
+          const infoPages = infoData?.query?.pages || {};
+          const infoPage = Object.values(infoPages)[0];
+          const fileUrl = infoPage?.imageinfo?.[0]?.url;
+          if (fileUrl) return fileUrl;
+        }
+      }
+    } catch { /* continue */ }
+
+    await delay(150);
+  }
 
   return '';
 }
@@ -945,22 +965,11 @@ async function getCoordsFromMusicBrainzArea(areaMbid) {
 // ---------------------------------------------------------------------------
 
 async function getImageFromWikimediaCommons(musicianName) {
-  try {
-    // Search Commons for files tagged with the musician's name
-    const searchUrl = `https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(musicianName + ' blues musician')}&srnamespace=6&format=json&origin=*&srlimit=10`;
-    const data = await fetchJSON(searchUrl);
-    const hits = data?.query?.search || [];
+  const skip = /flag|icon|logo|map|svg|symbol|cover|album|signature|sheet/i;
+  const portrait = /portrait|photo|photograph|image|picture/i;
 
-    const skip = /flag|icon|logo|map|svg|symbol|cover|album|signature|sheet/i;
-    const portrait = /portrait|photo|photograph|image|picture/i;
-
-    // Try portrait-tagged results first, then any non-skipped result
-    const candidates = [
-      ...hits.filter(h => portrait.test(h.title) && !skip.test(h.title)),
-      ...hits.filter(h => !skip.test(h.title) && !portrait.test(h.title)),
-    ];
-
-    for (const hit of candidates.slice(0, 5)) {
+  async function resolveFirstImage(hits) {
+    for (const hit of hits.slice(0, 5)) {
       const infoUrl = `https://commons.wikimedia.org/w/api.php?action=query&titles=${encodeURIComponent(hit.title)}&prop=imageinfo&iiprop=url|mime&format=json&origin=*`;
       const infoData = await fetchJSON(infoUrl);
       const infoPages = infoData?.query?.pages || {};
@@ -972,6 +981,39 @@ async function getImageFromWikimediaCommons(musicianName) {
       await delay(200);
     }
     return '';
+  }
+
+  try {
+    // 1. Commons category for the person — curated by editors, so a match
+    // here is far more trustworthy than a free-text search.
+    const catUrl = `https://commons.wikimedia.org/w/api.php?action=query&list=categorymembers&cmtitle=${encodeURIComponent('Category:' + musicianName)}&cmtype=file&cmlimit=10&format=json&origin=*`;
+    const catData = await fetchJSON(catUrl);
+    const catHits = (catData?.query?.categorymembers || []).filter(h => !skip.test(h.title));
+    const catCandidates = [
+      ...catHits.filter(h => portrait.test(h.title)),
+      ...catHits.filter(h => !portrait.test(h.title)),
+    ];
+    const catImage = await resolveFirstImage(catCandidates);
+    if (catImage) return catImage;
+    await delay(200);
+  } catch { /* continue */ }
+
+  try {
+    // 2. Title-anchored search — the artist's name must appear in the file
+    // title itself (intitle:), not merely somewhere in the file's
+    // description/OCR text. A bare `srsearch` for "<name> blues musician"
+    // matches any file whose description happens to mention those words
+    // (e.g. it once returned an unrelated "Guitars at Smithsonian" photo).
+    const searchUrl = `https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(`intitle:"${musicianName}"`)}&srnamespace=6&format=json&origin=*&srlimit=10`;
+    const data = await fetchJSON(searchUrl);
+    const hits = (data?.query?.search || []).filter(h => !skip.test(h.title));
+
+    // Try portrait-tagged results first, then any other title-anchored result
+    const candidates = [
+      ...hits.filter(h => portrait.test(h.title)),
+      ...hits.filter(h => !portrait.test(h.title)),
+    ];
+    return await resolveFirstImage(candidates);
   } catch {
     return '';
   }
@@ -1267,13 +1309,6 @@ async function enrichMusician(musician, index, total) {
         }
       }
 
-      // Image
-      if (!musician.image || musician.image === '') {
-        musician.image = await getImage(musician.name, wikidataId);
-        if (musician.image) console.log(`  ✓ Image found`);
-        else console.log(`  ⚠ No image found`);
-      }
-
       // Albums (only if empty) — try Wikidata SPARQL first, then MusicBrainz
       if (musician.albums.length === 0) {
         let rawAlbums = await getAlbumsFromWikidata(wikidataId);
@@ -1304,6 +1339,16 @@ async function enrichMusician(musician, index, total) {
     } catch (err) {
       console.warn(`  ✗ Wikidata entity error:`, err.message);
     }
+  }
+
+  // Image — independent of whether a Wikidata entity was found: P18 needs
+  // wikidataId, but the Wikipedia infobox lookup inside getImage() only
+  // needs the artist's name, so it must not be skipped just because the
+  // Wikidata search above failed or was rate-limited.
+  if (!musician.image || musician.image === '') {
+    musician.image = await getImage(musician.name, wikidataId);
+    if (musician.image) console.log(`  ✓ Image found`);
+    else console.log(`  ⚠ No image found`);
   }
 
   // ── Step 1b: MusicBrainz person record — fills gaps Wikidata couldn't ────
