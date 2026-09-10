@@ -79,7 +79,11 @@ function delay(ms) {
   return new Promise(r => setTimeout(r, ms));
 }
 
-async function fetchJSON(url, options = {}, timeout = 12000) {
+/** Counts lookups that failed for transport reasons rather than "not found". */
+let softFailures = 0;
+export function getSoftFailureCount() { return softFailures; }
+
+async function fetchJSONOnce(url, options = {}, timeout = 12000) {
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), timeout);
   try {
@@ -94,10 +98,44 @@ async function fetchJSON(url, options = {}, timeout = 12000) {
     });
     clearTimeout(id);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    return await res.json();
+    const text = await res.text();
+    // Wikimedia returns a plain-text throttle notice with a 200 status, which
+    // JSON.parse would turn into an indistinguishable "not found".
+    if (/^\s*You are making too many requests/i.test(text)) {
+      throw new Error('RATE_LIMITED');
+    }
+    return JSON.parse(text);
   } catch (err) {
     clearTimeout(id);
     throw err;
+  }
+}
+
+/**
+ * Retry with exponential backoff on throttling/transport errors.
+ *
+ * Without this, a rate-limit response was swallowed by the callers' bare
+ * `catch {}` and reported as "no Wikidata entity found" — which is how real
+ * Wikipedia pages (Barrelhouse Buck McFarland, Springback James) came back
+ * empty and got filled in by hand.
+ */
+async function fetchJSON(url, options = {}, timeout = 12000) {
+  const delays = [1000, 3000, 8000];
+  for (let attempt = 0; ; attempt++) {
+    try {
+      return await fetchJSONOnce(url, options, timeout);
+    } catch (err) {
+      const retryable = /RATE_LIMITED|HTTP 429|HTTP 5\d\d|aborted|fetch failed|ETIMEDOUT|ECONNRESET/i
+        .test(err.message || '');
+      if (!retryable || attempt >= delays.length) {
+        if (retryable) {
+          softFailures++;
+          console.warn(`    ⚠ Giving up after ${delays.length + 1} attempts: ${err.message}`);
+        }
+        throw err;
+      }
+      await delay(delays[attempt]);
+    }
   }
 }
 
@@ -1518,6 +1556,16 @@ async function main() {
   fs.writeFileSync('./src/data/musicians.json', JSON.stringify(musicians, null, 2));
   const totalTime = Math.round((Date.now() - startTime) / 1000);
   console.log(`✅ Done in ${totalTime}s — ${musicians.length} musicians processed`);
+
+  // Surface degraded runs: fields may be blank because lookups were throttled,
+  // not because the data is genuinely absent. Exit non-zero so callers notice.
+  if (softFailures > 0) {
+    console.error(`\n⚠ ${softFailures} lookup(s) failed after retries (network/rate-limit).`);
+    console.error('  Missing fields may be incomplete data, NOT confirmed-absent data.');
+    console.error('  Re-run before hand-filling anything.');
+    // eslint-disable-next-line no-undef
+    process.exitCode = 1;
+  }
 }
 
 // Only run the ETL when invoked directly — allows importing the pure
