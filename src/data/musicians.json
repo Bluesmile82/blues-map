@@ -281,7 +281,8 @@
       "sean-costello",
       "coco-montoya",
       "toronzo-cannon",
-      "ana-popovic"
+      "ana-popovic",
+      "joe-guitar-hughes"
     ],
     "incomplete": false,
     "playedWith": [
@@ -4126,7 +4127,8 @@
     "incomplete": false,
     "playedWith": [
       "rosco-gordon",
-      "wayne-bennett"
+      "wayne-bennett",
+      "joe-guitar-hughes"
     ],
     "source": "https://en.wikipedia.org/wiki/Bobby_Bland",
     "secondaryInstruments": [],
@@ -6477,7 +6479,8 @@
       "t-bone-walker"
     ],
     "influencedBy": [
-      "pete-mayes"
+      "pete-mayes",
+      "joe-guitar-hughes"
     ],
     "incomplete": false,
     "playedWith": [
@@ -16348,7 +16351,8 @@
       "albert-collins",
       "robert-cray",
       "stevie-ray-vaughan",
-      "chris-cain"
+      "chris-cain",
+      "joe-guitar-hughes"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Copeland",
     "secondaryInstruments": [
@@ -19364,7 +19368,8 @@
       "carolina-slim",
       "peppermint-harris",
       "juke-boy-bonner",
-      "clarence-carter"
+      "clarence-carter",
+      "joe-guitar-hughes"
     ],
     "incomplete": false,
     "playedWith": [
@@ -25533,7 +25538,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "joe-guitar-hughes"
+    ],
     "source": "https://en.wikipedia.org/wiki/Pete_Mayes",
     "secondaryInstruments": [
       "Vocals"
@@ -30941,7 +30948,8 @@
       "johnny-guitar-watson",
       "latimore",
       "lonnie-mack",
-      "wayne-bennett"
+      "wayne-bennett",
+      "joe-guitar-hughes"
     ],
     "incomplete": false,
     "playedWith": [
@@ -36662,7 +36670,9 @@
     "description": "Texas Johnny Brown was an American blues guitarist, songwriter and singer best known for composing 'Two Steps from the Blues', which became the title track of Bobby Bland's 1961 album. Born in Ackerman, Mississippi, he relocated to Houston, Texas in 1946 where his jazzy guitar style made him a mainstay of the city's blues scene for over six decades.",
     "activeFrom": "1946",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "joe-guitar-hughes"
+    ],
     "incomplete": false,
     "playedWith": [
       "amos-milburn",
@@ -41483,7 +41493,8 @@
       "guitar-slim"
     ],
     "influencedBy": [
-      "jimi-hendrix"
+      "jimi-hendrix",
+      "joe-guitar-hughes"
     ],
     "incomplete": false,
     "playedWith": [
@@ -44395,5 +44406,62 @@
       "Drums"
     ],
     "createdAt": "2026-09-08"
+  },
+  {
+    "id": "joe-guitar-hughes",
+    "name": "Joe \"Guitar\" Hughes",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Joe%20Guitar%20Hughes.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1937-09-29",
+    "birthPlace": "Houston",
+    "birthCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "deathDate": "2003-05-20",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=tN77a82Tvig",
+    "albums": [
+      {
+        "name": "Craftsman",
+        "youtubeLink": "https://www.youtube.com/watch?v=vgQdRb65tw0"
+      },
+      {
+        "name": "If You Want to See the Blues",
+        "youtubeLink": "https://www.youtube.com/watch?v=tN77a82Tvig"
+      }
+    ],
+    "description": "Joe \"Guitar\" Hughes (born Maurice Hughes; September 29, 1937 - May 20, 2003) was a mainstay of the Houston, Texas blues scene for half a century, co-founding the Dukes of Rhythm with childhood friend Johnny Copeland in 1952 and anchoring the house band at Shady's Playhouse in Houston's Third Ward through the early 1960s. He later toured as a sideman with the Upsetters, played lead guitar in Bobby \"Blue\" Bland's touring band, and in the 1980s and 90s built an international following through regular appearances at the Blues Estafette in Utrecht, releasing five solo albums along the way. Though he never achieved the wider fame of contemporaries like Albert Collins or Johnny Clyde Copeland, Hughes was a defining voice of Houston's Third Ward blues guitar tradition.",
+    "activeFrom": "1952",
+    "influences": [
+      "lightnin-hopkins",
+      "albert-collins",
+      "clarence-gatemouth-brown",
+      "johnny-guitar-watson",
+      "texas-johnny-brown",
+      "t-bone-walker"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "johnny-copeland",
+      "bobby-blue-bland",
+      "pete-mayes"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Joe_%22Guitar%22_Hughes",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-09"
   }
 ]
