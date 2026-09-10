@@ -10631,7 +10631,8 @@
       "muddy-waters",
       "howlin-wolf",
       "t-bone-walker",
-      "eric-clapton"
+      "eric-clapton",
+      "joe-doucet"
     ],
     "source": "https://en.wikipedia.org/wiki/Freddie_King",
     "secondaryInstruments": [
@@ -17923,7 +17924,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "otis-redding"
+      "otis-redding",
+      "clifton-chenier"
     ],
     "source": "https://en.wikipedia.org/wiki/Katie_Webster",
     "secondaryInstruments": [
@@ -44463,5 +44465,112 @@
     "source": "https://en.wikipedia.org/wiki/Joe_%22Guitar%22_Hughes",
     "secondaryInstruments": [],
     "createdAt": "2026-09-09"
+  },
+  {
+    "id": "joe-doucet",
+    "name": "Joe Doucet",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1942",
+    "birthPlace": "Louisiana",
+    "birthCoords": [
+      -92.3288,
+      30.9843
+    ],
+    "deathDate": "2010-11-29",
+    "deathPlace": "Houston, Texas",
+    "deathCoords": [
+      -95.3698,
+      29.7604
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Louisiana",
+        "coords": [
+          -92.3288,
+          30.9843
+        ]
+      },
+      {
+        "place": "Houston, Texas",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=C2f--49MWLs",
+    "albums": [
+      {
+        "name": "Houston's Third Ward Blues",
+        "youtubeLink": "https://www.youtube.com/watch?v=d6PteebHiYQ"
+      }
+    ],
+    "description": "Joe Doucet (1942 - November 29, 2010) was a Louisiana-born Creole blues guitarist and singer who relocated to Houston, Texas in 1962, gigging steadily on the city's blues circuit and working as a sideman in the bands of Clifton Chenier and Freddie King before falling out of the music business during the disco era. Rediscovered in the mid-2000s by blues historian Roger Wood after an impromptu sidewalk performance, Doucet returned to recording with his only album, Houston's Third Ward Blues, on Dialtone Records in 2006, blending original songs and blues covers with the zydeco influences of his Creole upbringing.",
+    "activeFrom": "1962",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "freddie-king",
+      "clifton-chenier"
+    ],
+    "source": "http://www.bluenight.com/BluesBytes/su0307.html",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "clifton-chenier",
+    "name": "Clifton Chenier",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1925-06-25",
+    "birthPlace": "St. Landry Parish",
+    "birthCoords": [
+      -92,
+      30.6
+    ],
+    "deathDate": "1987-12-12",
+    "deathPlace": "Lafayette",
+    "deathCoords": [
+      -92.012649,
+      30.243062
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=TPWqMAPa_GE",
+    "albums": [
+      {
+        "name": "Bayou Blues (1970)",
+        "youtubeLink": "https://www.youtube.com/watch?v=VU-nEomj0Mg"
+      },
+      {
+        "name": "Bogalusa Boogie (1975)",
+        "youtubeLink": "https://www.youtube.com/watch?v=QV4JxgCHSlM"
+      },
+      {
+        "name": "I'm Here! (1982)",
+        "youtubeLink": "https://www.youtube.com/watch?v=TPWqMAPa_GE"
+      }
+    ],
+    "description": "Clifton Chenier (1925-1987), known as the 'King of Zydeco,' was a Louisiana Creole accordionist and singer who electrified the traditional squeezebox sound of rural Louisiana and fused it with African American blues, rhythm and blues, and Afro-Caribbean rhythms to create the modern zydeco style. Fronting his Red Hot Louisiana Band for decades, he became zydeco's first major national star, winning the first Grammy Award ever given for a zydeco recording in 1984 for his album I'm Here!, and was inducted into the Blues Hall of Fame in 1989. His raw, blues-soaked accordion playing and his years working the same Gulf Coast blues circuit as artists like Joe Doucet made him a central bridge figure between Louisiana Creole music and the broader blues tradition.",
+    "activeFrom": "1954",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "joe-doucet",
+      "katie-webster"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Clifton_Chenier",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
   }
 ]
