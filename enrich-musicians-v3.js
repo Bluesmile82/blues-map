@@ -129,9 +129,43 @@ async function fetchText(url, options = {}, timeout = 12000) {
 
 const MUSIC_ENTITY_TERMS = ['musician', 'singer', 'guitarist', 'blues', 'pianist', 'vocalist',
   'saxophonist', 'harmonica', 'american', 'songwriter', 'guitarist', 'bassist', 'drummer',
-  'musician', 'jazz', 'gospel', 'country', 'recording artist'];
+  'musician', 'jazz', 'gospel', 'country', 'recording artist',
+  // groups/bands — Harlem Hamfats et al. are not described as "musician"
+  'band', 'group', 'duo', 'trio', 'quartet', 'ensemble', 'orchestra'];
 
-async function searchWikidataEntity(name) {
+/**
+ * Reject a Wikidata entity whose birth/death year contradicts what we already
+ * know about the musician. This is the guard that stops the gospel Bill Gaither
+ * (b. 1936) from overwriting our blues Bill Gaither (1910-1970).
+ * Returns true when the entity is safe to use.
+ */
+async function datesAgree(qid, musician) {
+  const known = {
+    birth: musician?.birthDate ? parseInt(musician.birthDate.slice(0, 4)) : null,
+    death: musician?.deathDate ? parseInt(musician.deathDate.slice(0, 4)) : null,
+  };
+  if (!known.birth && !known.death) return true;  // nothing to check against
+
+  try {
+    const entity = await getWikidataEntity(qid);
+    const claims = entity?.claims || {};
+    const got = {
+      birth: parseInt((parseWikidataDate(claims.P569?.[0]) || '').slice(0, 4)),
+      death: parseInt((parseWikidataDate(claims.P570?.[0]) || '').slice(0, 4)),
+    };
+    for (const k of ['birth', 'death']) {
+      // ponytail: 2-year slack absorbs the genuinely disputed birth years
+      // common in pre-war blues sources; widen only if false rejects show up.
+      if (known[k] && got[k] && Math.abs(known[k] - got[k]) > 2) {
+        console.log(`  ✗ Rejected ${qid}: ${k} year ${got[k]} vs known ${known[k]}`);
+        return false;
+      }
+    }
+  } catch { /* can't verify — allow */ }
+  return true;
+}
+
+async function searchWikidataEntity(name, musician) {
   // Strategy 1: Wikipedia sitelinks — try "Name (musician)" variants first to avoid ambiguity
   const titleVariants = [
     `${name} (musician)`,
@@ -150,18 +184,22 @@ async function searchWikidataEntity(name) {
       if (page?.missing) continue;  // page doesn't exist
       const qid = page?.pageprops?.wikibase_item;
       if (qid) {
-        // Validate this entity is a person/musician via its Wikidata description
+        // Validate this entity is a person/musician/group via its Wikidata description
+        let entDesc = '';
         try {
           const entUrl = `${WIKIDATA_API}?action=wbgetentities&ids=${qid}&props=descriptions&languages=en&format=json&origin=*`;
           const entData = await fetchJSON(entUrl);
-          const entDesc = entData?.entities?.[qid]?.descriptions?.en?.value || '';
-          if (MUSIC_ENTITY_TERMS.some(t => entDesc.toLowerCase().includes(t))) {
-            return { id: qid, label: name };
-          }
-          // If plain name matched something non-music, skip and try text search
-          if (title === name) continue;
-        } catch { /* accept */ }
-        return { id: qid, label: name };
+          entDesc = entData?.entities?.[qid]?.descriptions?.en?.value || '';
+        } catch { /* no description — fall through to the date check */ }
+
+        // A missing description is not disqualifying (many pre-war blues
+        // entities have none); a description that exists and is clearly
+        // non-musical is.
+        if (entDesc && !MUSIC_ENTITY_TERMS.some(t => entDesc.toLowerCase().includes(t))) {
+          continue;
+        }
+        if (!(await datesAgree(qid, musician))) continue;
+        return { id: qid, label: name, description: entDesc };
       }
     } catch { /* continue */ }
     await delay(150);
@@ -175,10 +213,12 @@ async function searchWikidataEntity(name) {
       const url = `${WIKIDATA_API}?action=wbsearchentities&search=${encodeURIComponent(query)}&language=en&format=json&origin=*&limit=5`;
       const data = await fetchJSON(url);
       const results = data.search || [];
-      const best = results.find(r =>
+      const candidates = results.filter(r =>
         MUSIC_ENTITY_TERMS.some(t => (r.description || '').toLowerCase().includes(t))
-      ) || (query === name ? null : results[0]);
-      if (best) return best;
+      );
+      for (const cand of candidates) {
+        if (await datesAgree(cand.id, musician)) return cand;
+      }
     } catch { /* continue */ }
     await delay(200);
   }
@@ -398,6 +438,44 @@ function getInfoboxField(wikitext, fieldName) {
   return m ? m[1].trim() : '';
 }
 
+/**
+ * Match a candidate name against the dataset.
+ *
+ * Full name only. Surname-only matching is what linked "Jimmy Rogers" (the
+ * 1920s yodeler Jimmie Rodgers, not in our DB) to both Roy Rogers and our
+ * Jimmy Rogers — a single surname is never enough to identify a musician.
+ */
+function findMusicianByName(cand, allMusicians) {
+  const norm = (s) => s.toLowerCase()
+    .replace(/["'`]/g, '')          // drop quotes around nicknames
+    .replace(/\([^)]*\)/g, '')      // drop "(musician)" disambiguators
+    .replace(/\s+/g, ' ').trim();
+  const c = norm(cand);
+  if (!c.includes(' ')) return null;  // single token — never enough
+  return allMusicians.find(m => {
+    const n = norm(m.name);
+    if (n === c) return true;
+    // Allow nickname-stripped equality: "Leonard Baby Doo Caston" vs "Leonard Caston"
+    const bare = (x) => x.split(' ').filter(Boolean);
+    const nb = bare(n), cb = bare(c);
+    return nb.length > 1 && cb.length > 1 &&
+      nb[0] === cb[0] && nb[nb.length - 1] === cb[cb.length - 1];
+  }) || null;
+}
+
+/**
+ * An influence must predate the influenced. Anyone born later than, or within
+ * a few years of, the subject cannot plausibly be an early influence on them.
+ */
+function plausibleInfluence(influencer, subject) {
+  const yr = (m) => m?.birthDate ? parseInt(m.birthDate.slice(0, 4)) : NaN;
+  const a = yr(influencer), b = yr(subject);
+  if (isNaN(a) || isNaN(b)) return true;  // unknown dates — allow
+  // ponytail: 5-year floor. An influence born after the subject is impossible;
+  // a near-peer needs human review, so we drop it rather than guess.
+  return a <= b - 5;
+}
+
 /** Extract musician IDs from a text fragment containing [[Wiki links]] or plain names. */
 function extractMusicianIds(text, allMusicians) {
   // Collect all [[Link|Display]] and [[Link]] targets
@@ -408,11 +486,7 @@ function extractMusicianIds(text, allMusicians) {
 
   const matched = new Set();
   for (const cand of candidates) {
-    const found = allMusicians.find(m =>
-      m.name.toLowerCase() === cand.toLowerCase() ||
-      (cand.split(' ').pop().length > 4 &&
-        m.name.split(' ').pop().toLowerCase() === cand.split(' ').pop().toLowerCase())
-    );
+    const found = findMusicianByName(cand, allMusicians);
     if (found) matched.add(found.id);
   }
   return [...matched];
@@ -470,21 +544,22 @@ function parseInfluencesFromWikitext(wikitext, musicianName, allMusicians) {
 
     for (const m of allMusicians) {
       if (m.name === musicianName || m.name.split(' ').every(w => musicianName.includes(w))) continue;
-      const lastName = m.name.split(' ').pop();
-      if (
-        afterPhrase.includes(m.name) ||
-        (lastName.length > 4 && afterPhrase.includes(lastName))
-      ) {
-        matched.add(m.id);
-      }
+      // Full name only — surname matching produced false links (see findMusicianByName)
+      if (afterPhrase.includes(m.name)) matched.add(m.id);
     }
   }
 
   // Remove self-reference
-  const selfId = allMusicians.find(m => m.name === musicianName)?.id;
-  if (selfId) matched.delete(selfId);
+  const self = allMusicians.find(m => m.name === musicianName);
+  if (self) matched.delete(self.id);
 
-  return [...matched];
+  // Chronology: an influence must predate the subject
+  return [...matched].filter(id => {
+    const inf = allMusicians.find(m => m.id === id);
+    if (plausibleInfluence(inf, self)) return true;
+    console.log(`    ⚠ Dropped implausible influence ${inf?.name} → ${musicianName} (born after)`);
+    return false;
+  });
 }
 
 /**
@@ -533,7 +608,13 @@ function parseInfluencedByFromWikitext(wikitext, musician, allMusicians) {
     }
   }
 
-  return [...matched];
+  // Reverse chronology: those this musician influenced must postdate them
+  return [...matched].filter(id => {
+    const other = allMusicians.find(m => m.id === id);
+    if (plausibleInfluence(musician, other)) return true;
+    console.log(`    ⚠ Dropped implausible influencedBy ${musician.name} → ${other?.name} (born before)`);
+    return false;
+  });
 }
 
 async function getInfluencesFromWikipedia(musicianName, allMusicians) {
@@ -656,19 +737,79 @@ async function enrichOptionalFields(musician, allMusicians, index, total) {
 // Filters out non-embeddable videos via oEmbed (returns 401 if embed disabled)
 // ---------------------------------------------------------------------------
 
-async function isEmbeddable(videoId) {
+/**
+ * oEmbed serves double duty: a 200 means the video is embeddable, and the
+ * payload carries title + channel, which we need to confirm the video is
+ * actually the artist we searched for.
+ */
+async function fetchOEmbed(videoId) {
   try {
     const r = await fetch(
       `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`,
       { headers: { 'User-Agent': 'BluesMapETL/3.0 (educational project)' } }
     );
-    return r.status === 200;
+    if (r.status !== 200) return null;
+    return await r.json();
   } catch {
-    return false;
+    return null;
   }
 }
 
-async function searchYouTube(query, maxResults = 1) {
+async function isEmbeddable(videoId) {
+  return (await fetchOEmbed(videoId)) !== null;
+}
+
+/**
+ * Reject placeholder titles and AI-generated uploads.
+ *
+ * These pass an artist-name check (an AI upload usually names the artist in
+ * the title) but are not recordings of the musician. Historic blues sides are
+ * a favourite target for "AI restored/remastered" reuploads and for synthetic
+ * tracks in a dead artist's style.
+ */
+const JUNK_TITLE = new RegExp([
+  '^\\s*(untitled|unknown|no title|title|track ?\\d*|audio|video)\\s*$',
+  '\\bai[- ]?(generated|cover|music|song|remaster\\w*|restor\\w*|voice|vocal)',
+  '\\b(generated|created|made|produced) (by|with|using) (ai|a\\.i\\.|suno|udio|chatgpt)',
+  '\\b(suno|udio|riffusion)\\b',
+  '\\bdeep ?fake\\b',
+  '\\b(text|prompt)[- ]to[- ](music|song|speech)\\b',
+  '\\bai\\b[^a-z0-9]{0,3}(blues|version|remix|model)',
+].join('|'), 'i');
+
+/** True when a video's title/channel looks like a placeholder or AI upload. */
+function isJunkVideo(meta) {
+  const title = (meta?.title || '').trim();
+  if (!title) return true;
+  if (JUNK_TITLE.test(title)) return true;
+  if (JUNK_TITLE.test(meta?.author_name || '')) return true;
+  return false;
+}
+
+/**
+ * True when the video's title or channel actually mentions the artist.
+ * Requires every significant word of the name to appear, so a search for
+ * "Barrelhouse Buck McFarland" cannot settle for an unrelated barrelhouse
+ * piano compilation.
+ */
+function videoMentionsArtist(meta, artistName) {
+  if (!artistName) return true;
+  const hay = `${meta?.title || ''} ${meta?.author_name || ''}`
+    .toLowerCase().replace(/[^a-z0-9 ]/g, ' ');
+  const words = artistName.toLowerCase()
+    .replace(/[^a-z0-9 ]/g, ' ')
+    .split(/\s+/)
+    .filter(w => w.length > 2);   // drop initials and short particles
+  if (!words.length) return true;
+  return words.every(w => hay.includes(w));
+}
+
+/**
+ * @param {string} query        search terms
+ * @param {number} maxResults   how many links to return
+ * @param {string} artistName   when set, results must mention this artist
+ */
+async function searchYouTube(query, maxResults = 1, artistName = '') {
   try {
     const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}&hl=en`;
     const html = await fetchText(url);
@@ -677,16 +818,22 @@ async function searchYouTube(query, maxResults = 1) {
       .map(m => m[1]);
     const unique = [...new Set(ids)];
 
-    // Check embeddability for candidates until we have enough
-    const embeddable = [];
+    // Check embeddability + artist match for candidates until we have enough
+    const accepted = [];
     for (const id of unique.slice(0, 10)) {
-      if (await isEmbeddable(id)) {
-        embeddable.push(`https://www.youtube.com/watch?v=${id}`);
-        if (embeddable.length >= maxResults) break;
+      const meta = await fetchOEmbed(id);
+      if (meta && isJunkVideo(meta)) {
+        console.log(`    ⚠ Skipped junk/AI video: "${meta.title}"`);
+      } else if (meta && videoMentionsArtist(meta, artistName)) {
+        accepted.push(`https://www.youtube.com/watch?v=${id}`);
+        if (accepted.length >= maxResults) break;
       }
       await delay(300);
     }
-    return embeddable;
+    if (!accepted.length && artistName) {
+      console.log(`    ⚠ No YouTube result mentioned "${artistName}" — leaving blank`);
+    }
+    return accepted;
   } catch (err) {
     console.warn(`    ⚠ YouTube search failed for "${query}":`, err.message);
     return [];
@@ -913,7 +1060,7 @@ async function enrichMusician(musician, index, total) {
 
   // ── Step 1: Find Wikidata entity ──────────────────────────────────────────
   try {
-    const result = await searchWikidataEntity(musician.name);
+    const result = await searchWikidataEntity(musician.name, musician);
     if (result) {
       wikidataId = result.id;
       console.log(`  ✓ Wikidata: ${wikidataId} — ${result.description || '?'}`);
@@ -1105,7 +1252,7 @@ async function enrichMusician(musician, index, total) {
           const enrichedAlbums = [];
           for (const album of rawAlbums.slice(0, 6)) {
             const label = album.year ? `${album.name} (${album.year})` : album.name;
-            const ytLinks = await searchYouTube(`"${album.name}" ${musician.name} full album`);
+            const ytLinks = await searchYouTube(`"${album.name}" ${musician.name} full album`, 1, musician.name);
             await delay(DELAY_MS);
             enrichedAlbums.push({
               name: label,
@@ -1211,7 +1358,7 @@ async function enrichMusician(musician, index, total) {
 
   if (!musician.youtubeLink || musician.youtubeLink === '') {
     const query = `${musician.name} blues ${musician.bluesStyle || ''} performance`;
-    const links = await searchYouTube(query.trim());
+    const links = await searchYouTube(query.trim(), 1, musician.name);
     if (links[0]) {
       musician.youtubeLink = links[0];
       console.log(`  ✓ YouTube: ${musician.youtubeLink}`);
@@ -1227,7 +1374,7 @@ async function enrichMusician(musician, index, total) {
     console.log(`  Searching YouTube for ${albumsMissingYt.length} album(s)...`);
     for (const album of albumsMissingYt) {
       const query = `${musician.name} "${album.name.replace(/ \(\d{4}\)$/, '')}"`;
-      const links = await searchYouTube(query);
+      const links = await searchYouTube(query, 1, musician.name);
       if (links[0]) {
         album.youtubeLink = links[0];
         console.log(`    ✓ ${album.name} → ${links[0]}`);
@@ -1345,10 +1492,15 @@ async function main() {
     if (!m.youtubeLink) continue;
     const id = m.youtubeLink.split('v=')[1];
     if (!id) continue;
-    if (!(await isEmbeddable(id))) {
-      console.log(`  ⚠ ${m.name}: non-embeddable, searching replacement...`);
+    const meta = await fetchOEmbed(id);
+    const bad = !meta ? 'non-embeddable'
+      : isJunkVideo(meta) ? `junk/AI title ("${meta.title}")`
+        : !videoMentionsArtist(meta, m.name) ? `title does not mention artist ("${meta.title}")`
+          : null;
+    if (bad) {
+      console.log(`  ⚠ ${m.name}: ${bad}, searching replacement...`);
       const query = `${m.name} blues ${m.bluesStyle || ''} performance`;
-      const links = await searchYouTube(query.trim());
+      const links = await searchYouTube(query.trim(), 1, m.name);
       if (links[0]) {
         m.youtubeLink = links[0];
         console.log(`    ✓ Replaced → ${links[0]}`);
@@ -1368,4 +1520,10 @@ async function main() {
   console.log(`✅ Done in ${totalTime}s — ${musicians.length} musicians processed`);
 }
 
-main().catch(console.error);
+// Only run the ETL when invoked directly — allows importing the pure
+// validation helpers from tests.
+if (process.argv[1] && import.meta.url === `file://${process.argv[1]}`) {
+  main().catch(console.error);
+}
+
+export { findMusicianByName, plausibleInfluence, isJunkVideo, videoMentionsArtist };
