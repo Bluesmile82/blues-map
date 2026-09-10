@@ -3365,7 +3365,8 @@
     "influencedBy": [
       "carolina-slim",
       "archie-edwards",
-      "larry-johnson"
+      "larry-johnson",
+      "guitar-gabriel"
     ],
     "incomplete": false,
     "playedWith": [
@@ -4199,7 +4200,9 @@
     "description": "Bobby Rush (born Emmett Ellis Jr., November 23, 1946) is an American blues and R&B musician, singer and songwriter. A veteran of the chitlin' circuit, Rush is known for his energetic stage shows and hits like 'Chicken Heads' and 'Sue'. He has been recording for over 50 years and won a Grammy Award in 2017.",
     "activeFrom": "1955",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "mel-waiters"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Bobby_Rush_(musician)",
@@ -11840,7 +11843,8 @@
       "buddy-guy",
       "walter-wolfman-washington",
       "johnny-guitar-watson",
-      "barbara-lynn"
+      "barbara-lynn",
+      "chick-willis"
     ],
     "incomplete": false,
     "playedWith": [
@@ -12580,7 +12584,9 @@
     "influences": [
       "elmore-james"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "studebaker-john"
+    ],
     "incomplete": false,
     "playedWith": [
       "little-walter",
@@ -26635,7 +26641,8 @@
       "roy-book-binder",
       "jimmy-mccracklin",
       "larry-johnson",
-      "wizz-jones"
+      "wizz-jones",
+      "guitar-gabriel"
     ],
     "incomplete": false,
     "playedWith": [
@@ -37000,7 +37007,8 @@
     "influencedBy": [
       "buddy-guy",
       "koko-taylor",
-      "little-milton"
+      "little-milton",
+      "mel-waiters"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -41931,7 +41939,9 @@
     "description": "Denise LaSalle was a Mississippi-born singer-songwriter who became one of the leading voices of Southern soul-blues, scoring a number-one R&B hit with \"Trapped by a Thing Called Love\" in 1971. A prolific songwriter as much as a performer, she signed with Malaco Records in the early 1980s and penned hits for labelmates including Z.Z. Hill, helping define the label's deep soul-blues sound alongside artists like Bobby \"Blue\" Bland and Little Milton. Following the death of Koko Taylor in 2009, LaSalle was widely hailed as the new \"Queen of the Blues\" and was inducted into the Blues Hall of Fame in 2011.",
     "activeFrom": "1967",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "mel-waiters"
+    ],
     "incomplete": false,
     "playedWith": [
       "zz-hill"
@@ -43311,7 +43321,9 @@
       "ray-charles",
       "t-bone-walker"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "mel-waiters"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Latimore_(musician)",
@@ -45310,6 +45322,483 @@
     "playedWith": [],
     "source": "https://www.discogs.com/artist/2749782-Johnnie-Strauss",
     "secondaryInstruments": [],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "derek-trucks",
+    "name": "Derek Trucks",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Susan_Tedeschi_%26_Derek_Trucks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1979-06-08",
+    "birthPlace": "Jacksonville",
+    "birthCoords": [
+      -81.65,
+      30.316666666667
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      },
+      {
+        "place": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=3I2jnA8L4xU",
+    "albums": [
+      {
+        "name": "Songlines (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=CNBOdbseu84"
+      }
+    ],
+    "description": "Derek Trucks (born June 8, 1979) is an American guitarist, songwriter, and founder of The Derek Trucks Band.  He became an official member of The Allman Brothers Band in 1999.  In 2010, he formed the Tedeschi Trucks Band with his wife, blues singer/guitarist Susan Tedeschi.",
+    "activeFrom": "1999",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "duane-allman",
+      "susan-tedeschi"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Derek_Trucks",
+    "secondaryInstruments": [
+      "Slide guitar",
+      "Dobro",
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "ac-reed",
+    "name": "A.C. Reed",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20C%20Reed.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1926-05-09",
+    "birthPlace": "Wardell, Missouri",
+    "birthCoords": [
+      -89.8306,
+      36.4331
+    ],
+    "deathDate": "2004-02-24",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      }
+    ],
+    "instrument": "Saxophone",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ZHBz-0_MqxE",
+    "albums": [
+      {
+        "name": "Take These Blues and Shove 'Em (1982)",
+        "youtubeLink": "https://www.youtube.com/watch?v=f1pMAgOtcVY"
+      }
+    ],
+    "description": "Aaron Corthen (May 9, 1926 – February 24, 2004), known as A. C.  Reed,  was an American blues saxophonist, closely associated with the Chicago blues scene from the 1940s into the 2000s.",
+    "activeFrom": "1946",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "earl-hooker",
+      "willie-mabon",
+      "buddy-guy",
+      "junior-wells",
+      "albert-collins",
+      "son-seals"
+    ],
+    "source": "https://en.wikipedia.org/wiki/A.C._Reed",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "marvin-sease",
+    "name": "Marvin Sease",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1946-02-16",
+    "birthPlace": "Blackville",
+    "birthCoords": [
+      -81.272777777778,
+      33.356944444444
+    ],
+    "deathDate": "2011-02-08",
+    "deathPlace": "Vicksburg",
+    "deathCoords": [
+      -90.8775,
+      32.3525
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=hXMOvXO-Pjk",
+    "albums": [
+      {
+        "name": "The Best Of Marvin Sease (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=1FrXuNcVdwY"
+      },
+      {
+        "name": "20th Century Masters: The Millennium Collection: The Best of Marvin Sease (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=POu4tmXU0tw"
+      }
+    ],
+    "description": "Marvin Monnie Sease (February 16, 1946 – February 8, 2011) was an American blues and soul singer-songwriter known for his gospel-infused vocal style and erotic lyrics.",
+    "activeFrom": "1966",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Marvin_Sease",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "ted-taylor",
+    "name": "Ted Taylor",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ted%20Taylor%20(1969).png?width=500",
+    "image_source": null,
+    "birthDate": "1934-02-16",
+    "birthPlace": "Okmulgee, Oklahoma",
+    "birthCoords": [
+      -95.96333333,
+      35.62444444
+    ],
+    "deathDate": "1987-10-23",
+    "deathPlace": "Lake Charles, Louisiana",
+    "deathCoords": [
+      -93.23666667,
+      30.19722222
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=erEpgT_hTXg",
+    "albums": [
+      {
+        "name": "Shades of Blue (1969)",
+        "youtubeLink": "https://www.youtube.com/watch?v=erEpgT_hTXg"
+      }
+    ],
+    "description": "Ted Taylor was an American soul and blues singer known for his distinctive high tenor voice, scoring his biggest hit with \"Stay Away from My Baby\" (1965). He recorded prolifically for labels including Okeh, Ronn, and Jewel through the 1960s and 70s, blending soul, blues, and gospel influences, and his recordings have since been widely sampled in hip-hop.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Ted_Taylor_(singer)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "guitar-gabriel",
+    "name": "Guitar Gabriel",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1925-10-12",
+    "birthPlace": "Decatur",
+    "birthCoords": [
+      -84.2978,
+      33.7714
+    ],
+    "deathDate": "1996-04-02",
+    "deathPlace": "Winston-Salem",
+    "deathCoords": [
+      -80.260555555556,
+      36.1025
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Pittsburgh",
+        "coords": [
+          -79.9959,
+          40.4406
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=8JoW-XPkxyE",
+    "albums": [
+      {
+        "name": "Deep in the South (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=vMkePegy_7E"
+      }
+    ],
+    "description": "Guitar Gabriel (born Robert Lewis Jones) was a Piedmont blues guitarist and singer who developed a raw, idiosyncratic style he called \"Toot Blues,\" blending Piedmont, Chicago, and Texas blues with gospel. After decades traveling with medicine shows and playing juke joints largely unrecorded, he was rediscovered in the early 1990s by folklorist Tim Duffy, whose Music Maker Relief Foundation brought Gabriel to Carnegie Hall and Lincoln Center before his death in 1996.",
+    "activeFrom": "1935",
+    "influences": [
+      "blind-boy-fuller",
+      "reverend-gary-davis"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bo-diddley",
+      "lightnin-hopkins",
+      "muddy-waters",
+      "bb-king",
+      "jimmy-reed"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Guitar_Gabriel",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "nora-jean-bruso",
+    "name": "Nora Jean Bruso",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Nora_Jean_Bruso%2C_2010_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": null,
+    "birthDate": "1956-06-21",
+    "birthPlace": "Greenwood, Mississippi",
+    "birthCoords": [
+      -90.1801,
+      33.5162
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Greenwood",
+        "coords": [
+          -90.1801,
+          33.5162
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=QmjJAG-O-yE",
+    "albums": [
+      {
+        "name": "Going Back to Mississippi (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=QmjJAG-O-yE"
+      }
+    ],
+    "description": "Nora Jean Wallace (formerly Bruso) (born June 21, 1956) is an American Chicago and electric blues singer and songwriter.  She has penned over 700 songs, and worked with Carl Weathersby and Dave Specter. \nFellow blues singer, Koko Taylor once commented, \"Nora Jean sounds just like I did when I was her age.\"",
+    "activeFrom": "1976",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "carl-weathersby",
+      "jimmy-dawkins",
+      "lurrie-bell"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Nora_Jean_Bruso",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "chick-willis",
+    "name": "Chick Willis",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Chick_Willis_James_Harrell.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": null,
+    "birthDate": "1934-09-24",
+    "birthPlace": "Cabaniss",
+    "birthCoords": [
+      -83.879444444444,
+      33.153333333333
+    ],
+    "deathDate": "2013-12-07",
+    "deathPlace": "Forsyth",
+    "deathCoords": [
+      -83.9381,
+      33.035
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=JuYdZMoqD7U",
+    "albums": [
+      {
+        "name": "Stoop Down Baby... Let Your Daddy See (1972)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JuYdZMoqD7U"
+      }
+    ],
+    "description": "Chick Willis was an American blues singer and guitarist, and a cousin of R&B star Chuck Willis, whom he served as chauffeur before Chuck's death in 1958. He is best remembered for the risqué 1972 jukebox hit \"Stoop Down Baby, Let Your Daddy See,\" and he continued recording prolifically for labels such as Ichiban through the 1980s and 90s, citing Guitar Slim as a major influence on his raw, showmanship-driven style.",
+    "activeFrom": "1954",
+    "influences": [
+      "guitar-slim"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "elmore-james"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Chick_Willis",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "big-walter-price",
+    "name": "Big Walter Price",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Big_Walter_Price_publicity_photo_for_Peacock_Records.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": null,
+    "birthDate": "1917-08-02",
+    "birthPlace": "Gonzales, Texas",
+    "birthCoords": [
+      -97.4514,
+      29.5019
+    ],
+    "deathDate": "2012-03-07",
+    "deathPlace": "Houston, Texas",
+    "deathCoords": [
+      -95.3698,
+      29.7604
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dsxXi_In-D4",
+    "albums": [
+      {
+        "name": "Calling Margie (1955)",
+        "youtubeLink": "https://www.youtube.com/watch?v=3b6Mcs6SJfM"
+      }
+    ],
+    "description": "Big Walter Price (August 2, 1917 − March 7, 2012) was an American blues singer, songwriter and pianist. \nBorn near Gonzales, Texas, he moved to San Antonio in 1928, where he released his first song, \"Calling Margie\", in 1955.  In that year, he moved to Houston, where he lived until his death.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Big_Walter_Price",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "mel-waiters",
+    "name": "Mel Waiters",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1956-06-25",
+    "birthPlace": "San Antonio",
+    "birthCoords": [
+      -98.49388888888889,
+      29.425
+    ],
+    "deathDate": "2015-05-28",
+    "deathPlace": "San Antonio",
+    "deathCoords": [
+      -98.49388888888889,
+      29.425
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=wWuQ53WqF9Q",
+    "albums": [
+      {
+        "name": "Hit It and Quit It (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=vqkn9IJulr4"
+      }
+    ],
+    "description": "Mel Waiters (June 25, 1956 – May 28, 2015) was an American southern soul singer born and raised in San Antonio, Texas.  In the early 1970s, he began singing in the church choir and nightclubs.  Additionally, he was a radio DJ and entertainer on military bases around this time.",
+    "activeFrom": "1976",
+    "influences": [
+      "denise-lasalle",
+      "bobby-rush",
+      "latimore",
+      "willie-clayton"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Mel_Waiters",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "studebaker-john",
+    "name": "Studebaker John",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Studebaker%20John.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1952-11-05",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=pj8GtkCGpgU",
+    "albums": [
+      {
+        "name": "Too Tough (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=t00-MjxCBf4"
+      }
+    ],
+    "description": "Studebaker John (born John Grimaldi) is a Chicago blues guitarist and harmonica player who formed his band the Hawks in the 1970s while working construction jobs by day. His slide guitar style, shaped by Hound Dog Taylor, and gritty harmonica playing became a mainstay of Blind Pig Records releases in the 1990s, and his music has been featured in films by director Atom Egoyan.",
+    "activeFrom": "1972",
+    "influences": [
+      "hound-dog-taylor"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Studebaker_John",
+    "secondaryInstruments": [
+      "Harmonica"
+    ],
     "createdAt": "2026-09-10"
   }
 ]
