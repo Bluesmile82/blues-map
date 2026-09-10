@@ -2282,7 +2282,9 @@
       "blind-lemon-jefferson",
       "roosevelt-sykes",
       "lonnie-johnson",
-      "georgia-white"
+      "georgia-white",
+      "big-boy-teddy-edwards",
+      "jimmie-gordon"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Bill_Broonzy",
     "secondaryInstruments": [
@@ -3273,37 +3275,49 @@
     "createdAt": "2026-09-03"
   },
   {
-    "id": "blind-blues-darby",
-    "name": "Blind Blues Darby",
+    "id": "blind-teddy-darby",
+    "name": "Blind Teddy Darby",
     "image": null,
     "image_source": null,
-    "birthDate": "1900",
-    "birthPlace": "Virginia",
+    "birthDate": "1906-03-02",
+    "birthPlace": "Henderson, Kentucky",
     "birthCoords": [
-      -78.6569,
-      37.4316
+      -87.59,
+      37.8362
     ],
-    "deathDate": null,
+    "deathDate": "1975",
     "deathPlace": null,
     "deathCoords": null,
-    "spentTimePlaces": [],
-    "instrument": "Vocals",
-    "bluesStyle": "Piedmont Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=aEhDZoNTmbE",
-    "albums": [
+    "spentTimePlaces": [
       {
-        "name": "Blind Blues Darby Complete Recorded Works (1935-1937) (Document Records, 1994)",
-        "youtubeLink": "https://www.youtube.com/watch?v=aEhDZoNTmbE"
+        "place": "St. Louis, Missouri",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
       }
     ],
-    "description": "Blind Blues Darby (born c. 1900) was an American country blues singer and guitarist active in the 1930s. He recorded several sides for Vocalion Records in 1935-1936, accompanied by guitarist Josh White, showcasing a raw, rural blues style typical of the East Coast Piedmont tradition.",
-    "activeFrom": "1935",
+    "instrument": "Guitar",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=cYovrfjSweA",
+    "albums": [
+      {
+        "name": "Complete Recorded Works (1929-1937)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cYovrfjSweA"
+      }
+    ],
+    "description": "Theodore Roosevelt \"Blind Teddy\" Darby (March 2, 1906 - December 1975) was an American blues singer and guitarist born in Henderson, Kentucky, who moved to St. Louis, Missouri as a child. He lost his eyesight to glaucoma in 1926 and recorded prolifically between 1929 and 1937 for Paramount, Victor, Bluebird, Vocalion and Decca under a string of aliases including Blind Darby, Blind Blues Darby and Blind Squire Turner. He occasionally accompanied fellow St. Louis blues singer Peetie Wheatstraw and was himself backed at live shows by his cousin, barrelhouse pianist Tommy Webb, before retiring from the blues in the late 1930s to become an ordained deacon.",
+    "activeFrom": "1929",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "peetie-wheatstraw"
+    ],
     "source": "https://en.wikipedia.org/wiki/Teddy_Darby",
-    "secondaryInstruments": [],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
     "createdAt": "2026-09-03"
   },
   {
@@ -5112,7 +5126,8 @@
       "memphis-minnie",
       "scrapper-blackwell",
       "leroy-carr",
-      "georgia-white"
+      "georgia-white",
+      "jimmie-gordon"
     ],
     "source": "https://en.wikipedia.org/wiki/Bumble_Bee_Slim",
     "secondaryInstruments": [
@@ -16967,7 +16982,8 @@
     "playedWith": [
       "skip-james",
       "kansas-joe-mccoy",
-      "big-walter-horton"
+      "big-walter-horton",
+      "harlem-hamfats"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Temple_(blues_musician)",
     "secondaryInstruments": [
@@ -17783,7 +17799,9 @@
     "playedWith": [
       "memphis-minnie",
       "papa-charlie-mccoy",
-      "robert-nighthawk"
+      "robert-nighthawk",
+      "jimmie-gordon",
+      "harlem-hamfats"
     ],
     "source": "https://en.wikipedia.org/wiki/Kansas_Joe_McCoy",
     "secondaryInstruments": [
@@ -19219,7 +19237,10 @@
     "influencedBy": [
       "ted-bogan",
       "bumble-bee-slim",
-      "eddie-boyd"
+      "eddie-boyd",
+      "leonard-baby-doo-caston",
+      "bill-gaither",
+      "frank-springback-james"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -19825,7 +19846,8 @@
     "activeFrom": "1969",
     "influences": [],
     "influencedBy": [
-      "willie-dixon"
+      "willie-dixon",
+      "lee-green"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23140,7 +23162,8 @@
       "big-bill-broonzy",
       "sonny-boy-williamson",
       "sonny-boy-williamson-i",
-      "tampa-red"
+      "tampa-red",
+      "jimmie-gordon"
     ],
     "source": "https://en.wikipedia.org/wiki/Memphis_Minnie",
     "secondaryInstruments": [
@@ -24925,7 +24948,9 @@
       "big-bill-broonzy"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "big-boy-teddy-edwards"
+    ],
     "source": "https://en.wikipedia.org/wiki/Papa_Charlie_Jackson",
     "secondaryInstruments": [
       "Vocals"
@@ -24982,7 +25007,9 @@
     "playedWith": [
       "memphis-minnie",
       "kansas-joe-mccoy",
-      "robert-nighthawk"
+      "robert-nighthawk",
+      "jimmie-gordon",
+      "harlem-hamfats"
     ],
     "source": "https://en.wikipedia.org/wiki/Papa_Charlie_McCoy",
     "secondaryInstruments": [
@@ -25307,7 +25334,9 @@
       "robert-pete-williams"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "blind-teddy-darby"
+    ],
     "source": "https://en.wikipedia.org/wiki/Peetie_Wheatstraw",
     "secondaryInstruments": [
       "Guitar",
@@ -27783,7 +27812,9 @@
     "albums": [],
     "description": "Roosevelt Sykes (January 31, 1906 – July 17, 1983) was an American blues musician, also known as \"the Honeydripper.",
     "activeFrom": "1921",
-    "influences": [],
+    "influences": [
+      "lee-green"
+    ],
     "influencedBy": [
       "eddie-boyd"
     ],
@@ -28956,7 +28987,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "leroy-carr"
+      "leroy-carr",
+      "jimmie-gordon"
     ],
     "source": "https://en.wikipedia.org/wiki/Scrapper_Blackwell",
     "secondaryInstruments": [],
@@ -29666,7 +29698,8 @@
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson-i",
-      "hammie-nixon"
+      "hammie-nixon",
+      "charlie-pickett"
     ],
     "source": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
     "secondaryInstruments": [],
@@ -33300,7 +33333,8 @@
       "jimmy-rogers",
       "big-walter-horton",
       "sonny-boy-williamson",
-      "tommy-tucker"
+      "tommy-tucker",
+      "leonard-baby-doo-caston"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_Dixon",
     "secondaryInstruments": [
@@ -43102,7 +43136,8 @@
     "incomplete": false,
     "playedWith": [
       "sleepy-john-estes",
-      "yank-rachell"
+      "yank-rachell",
+      "charlie-pickett"
     ],
     "source": "https://en.wikipedia.org/wiki/Hammie_Nixon",
     "secondaryInstruments": [
@@ -44571,6 +44606,710 @@
     "secondaryInstruments": [
       "Vocals"
     ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "leonard-baby-doo-caston",
+    "name": "Leonard \"Baby Doo\" Caston",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1917-06-02",
+    "birthPlace": "Sumrall, Mississippi",
+    "birthCoords": [
+      -89.6539,
+      31.4432
+    ],
+    "deathDate": "1987-08-22",
+    "deathPlace": "Minneapolis, Minnesota",
+    "deathCoords": [
+      -93.265,
+      44.9778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.5,
+          32.5
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=eLIkOa5Up1w",
+    "albums": [],
+    "description": "Leonard \"Baby Doo\" Caston (June 2, 1917 - August 22, 1987) was an American blues pianist, guitarist and songwriter best known as a member of Willie Dixon's Big Three Trio, which recorded for Columbia and OKeh from 1946 to 1952. Raised in Mississippi on the piano styles of Leroy Carr and Art Tatum, Caston moved to Chicago in 1938, co-founded the Ink Spots-styled vocal group the Five Breezes, and remained active on the Chicago blues scene, reuniting with Dixon for performances as late as 1984, until his death in 1987.",
+    "activeFrom": "1938",
+    "influences": [
+      "leroy-carr"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "willie-dixon",
+      "gene-gilmore"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Leonard_Caston",
+    "secondaryInstruments": [
+      "Guitar",
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "big-boy-teddy-edwards",
+    "name": "\"Big Boy\" Teddy Edwards",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "Chicago, Illinois",
+    "birthCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Tiple",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=tjqKZzC9ceA",
+    "albums": [],
+    "description": "\"Big Boy\" Teddy Edwards was an American blues musician active in the Chicago area who recorded 23 songs between 1930 and 1936 for labels including Vocalion, Melotone, Bluebird, Brunswick and Decca. He was the only recorded blues tiple player of his era, and his 1934 song \"Louise\" was later covered by Big Bill Broonzy as \"Louise Louise Blues\"; almost nothing else is documented about his life.",
+    "activeFrom": "1930",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "big-bill-broonzy",
+      "papa-charlie-jackson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/%22Big_Boy%22_Teddy_Edwards",
+    "secondaryInstruments": [
+      "Guitar"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "bill-gaither",
+    "name": "Bill Gaither",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1910-04-21",
+    "birthPlace": "Belmont, Bullitt County, Kentucky",
+    "birthCoords": [
+      -85.6941,
+      37.9542
+    ],
+    "deathDate": "1970-10-30",
+    "deathPlace": "Indianapolis, Indiana",
+    "deathCoords": [
+      -86.1581,
+      39.7684
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Louisville, Kentucky",
+        "coords": [
+          -85.7585,
+          38.2527
+        ]
+      },
+      {
+        "place": "Indianapolis, Indiana",
+        "coords": [
+          -86.1581,
+          39.7684
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=DzKwGQJnt8M",
+    "albums": [],
+    "description": "William Arthur \"Bill\" Gaither (April 21, 1910 - October 30, 1970), also known as \"Little Bill\" Gaither, was an American blues guitarist and singer who recorded over one hundred songs in the 1930s and 1940s for Decca and Okeh. After the 1935 death of his friend and idol Leroy Carr, Gaither was billed as \"Leroy's Buddy\" and carried on Carr's piano-and-guitar blues style, often in partnership with pianist Gilbert \"Honey\" Hill. He later ran a radio repair shop in Louisville, Kentucky, and died in Indianapolis in 1970.",
+    "activeFrom": "1935",
+    "influences": [
+      "leroy-carr"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "honey-hill"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Bill_Gaither_(blues_musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "jimmie-gordon",
+    "name": "Jimmie Gordon",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1906",
+    "birthPlace": "Chicago, Illinois",
+    "birthCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=eeMo9of5bVE",
+    "albums": [],
+    "description": "Jimmie Gordon (b. c. 1906) was an American Chicago blues pianist, singer and songwriter, active from 1934 to 1946, who recorded 67 tracks mostly for Decca Records. His biggest hit was \"I'd Rather Drink Muddy Water\" (1936), and his song \"Mean Mistreater\" was later recorded by Muddy Waters and Johnny Winter. He worked as an accompanist to Memphis Minnie, Bumble Bee Slim and Big Bill Broonzy, and backed his own sessions with musicians including Scrapper Blackwell, the McCoy brothers and members of the Harlem Hamfats.",
+    "activeFrom": "1934",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "memphis-minnie",
+      "bumble-bee-slim",
+      "big-bill-broonzy",
+      "scrapper-blackwell",
+      "papa-charlie-mccoy",
+      "kansas-joe-mccoy",
+      "harlem-hamfats"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Jimmie_Gordon",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "harlem-hamfats",
+    "name": "Harlem Hamfats",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "",
+    "birthCoords": [
+      0,
+      0
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Various",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=NNC6C861vrE",
+    "albums": [],
+    "description": "The Harlem Hamfats were a Chicago band formed in 1936 by guitarist Kansas Joe McCoy and his brother Papa Charlie McCoy, blending blues, Dixieland and swing jazz into danceable, riff-based dance music. Originally assembled by Decca Records as a house backing band for singers such as Johnny Temple and Rosetta Howard, their own hit \"Oh! Red\" and songs like \"Why Don't You Do Right?\" (as \"The Weed Smoker's Dream\") made them stars in their own right before they disbanded in 1938, and their sound is regarded as an important forerunner of rhythm and blues and rock and roll.",
+    "activeFrom": "1936",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "kansas-joe-mccoy",
+      "papa-charlie-mccoy",
+      "johnny-temple",
+      "jimmie-gordon"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Harlem_Hamfats",
+    "secondaryInstruments": [
+      "Guitar",
+      "Trumpet",
+      "Clarinet",
+      "Piano",
+      "Bass",
+      "Drums"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "frank-springback-james",
+    "name": "Frank \"Springback\" James",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "St. Louis, Missouri",
+    "birthCoords": [
+      -90.1994,
+      38.627
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis, Missouri",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "",
+    "albums": [],
+    "description": "Frank \"Springback\" James was an American blues and boogie-woogie pianist, singer and songwriter who cut eighteen sides between 1934 and 1937 for Champion, Decca, Bluebird and ARC, usually accompanied by guitarist Willie Bee James. His playing blended St. Louis and Chicago blues styles and showed the clear influence of Leroy Carr, and his lyrics ranged from the erotic \"Snake Hip Blues\" to the seemingly autobiographical \"Poor Coal Loader\" and \"Will My Bad Luck Ever Change?\". Little else is known of his life.",
+    "activeFrom": "1934",
+    "influences": [
+      "leroy-carr"
+    ],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Frank_%22Springback%22_James",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "barrelhouse-buck-mcfarland",
+    "name": "Barrelhouse Buck McFarland",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1903-09-16",
+    "birthPlace": "Alton, Illinois",
+    "birthCoords": [
+      -90.184,
+      38.8906
+    ],
+    "deathDate": "1962-04-08",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis, Missouri",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=KxEquL9i1BI",
+    "albums": [
+      {
+        "name": "Alton Blues",
+        "youtubeLink": "https://www.youtube.com/watch?v=KxEquL9i1BI"
+      }
+    ],
+    "description": "Thomas F. \"Barrelhouse Buck\" McFarland (September 16, 1903 - April 8, 1962) was an American blues and boogie-woogie pianist, singer and composer, born in Alton, Illinois, who moved with his family to St. Louis before World War I. He learned piano by mixing with itinerant pianists passing through the city and playing local house parties and clubs, and began recording in 1929 with \"St. Louis Fire Blues\" and \"On Your Way\", which became the blueprint for much of his later work; he recorded again in the 1930s and made a final \"barrelhouse\" session decades later, not long before his death.",
+    "activeFrom": "1929",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Barrelhouse_Buck_McFarland",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "walter-coleman",
+    "name": "Walter Coleman",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1907",
+    "birthPlace": "Georgia",
+    "birthCoords": [
+      -83.6,
+      32.6
+    ],
+    "deathDate": "1936",
+    "deathPlace": "Cincinnati, Ohio",
+    "deathCoords": [
+      -84.512,
+      39.1031
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Cincinnati, Ohio",
+        "coords": [
+          -84.512,
+          39.1031
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=y7DTRZ-PPA8",
+    "albums": [
+      {
+        "name": "Cincinnati Blues 1928-1936 (with the Cincinnati Jug Band)",
+        "youtubeLink": "https://www.youtube.com/watch?v=-lzIpelvYw8"
+      }
+    ],
+    "description": "Walter Coleman was an American blues harmonica player and singer who, with his brother Bob, led the Cincinnati Jug Band, a fixture of the George Street red-light district in Cincinnati, Ohio during the late 1920s and 1930s. The Georgia-born brothers first recorded together in Chicago in January 1929 and made their final sides for Decca in 1936; a few months later Walter Coleman, then 29, was found dead in a Cincinnati obituary with no official cause listed, though it is suspected he was murdered while performing on George Street.",
+    "activeFrom": "1929",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Cincinnati_Jug_Band",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "gene-gilmore",
+    "name": "Gene Gilmore",
+    "image": "https://i.discogs.com/chue7vStK1m9pmcIsdAyb8TddVO_MO6Dj9gMq_Vx-u8/rs:fit/g:sm/q:90/h:656/w:528/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxNTAx/NzUtMTc1MDU5OTIw/NS00MzI1LnBuZw.jpeg",
+    "image_source": "https://www.discogs.com/artist/2150175-Gene-Gilmore",
+    "birthDate": "",
+    "birthPlace": "Chicago, Illinois",
+    "birthCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=QVHsg8V_cko",
+    "albums": [],
+    "description": "Eugene \"Gene\" Gilmore (also billed as Jimmy Gilmore) was an American blues singer active in Chicago, a member of the vocal group the Five Breezes alongside Leonard \"Baby Doo\" Caston and Willie Dixon, and of Four Jumps of Jive. He first recorded for Decca in 1939 and is best known for \"The Natchez Fire\" and \"The Death of Walter Barnes\", topical recordings about the catastrophic 1940 Rhythm Club fire in Natchez, Mississippi that killed bandleader Walter Barnes.",
+    "activeFrom": "1939",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "leonard-baby-doo-caston"
+    ],
+    "source": "https://adp.library.ucsb.edu/index.php/matrix/refer/2000283176",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "honey-hill",
+    "name": "Honey Hill",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1912-01-08",
+    "birthPlace": "Indianapolis, Indiana",
+    "birthCoords": [
+      -86.1581,
+      39.7684
+    ],
+    "deathDate": "1953",
+    "deathPlace": "Indianapolis, Indiana",
+    "deathCoords": [
+      -86.1581,
+      39.7684
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Indianapolis, Indiana",
+        "coords": [
+          -86.1581,
+          39.7684
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Y78IMIBTcYI",
+    "albums": [],
+    "description": "Gilbert \"Honey\" Hill (January 8, 1912 - 1953) was an American blues pianist from Indianapolis, Indiana, who partnered with guitarist and singer Bill Gaither to form a duo modeled on the piano-and-guitar blues of Leroy Carr and Scrapper Blackwell. Beginning in the winter of 1935, shortly after Carr's death, Hill and Gaither recorded together prolifically, cutting over seventy songs between 1936 and 1940.",
+    "activeFrom": "1935",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bill-gaither"
+    ],
+    "source": "https://www.wfyi.org/programs/echoes-indiana-avenue/radio/the-music-of-naptown-blues-pianist-honey-hill",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "lee-green",
+    "name": "Lee Green",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1900",
+    "birthPlace": "Mississippi",
+    "birthCoords": [
+      -89.5,
+      32.5
+    ],
+    "deathDate": "1945",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Vicksburg, Mississippi",
+        "coords": [
+          -90.8779,
+          32.3526
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Erxq8yZJyh0",
+    "albums": [],
+    "description": "Leothus \"Lee\" Green, also known as Pork Chops, was an American blues pianist born around 1900 in Mississippi who worked as a clothes presser in Vicksburg while touring the Lower Mississippi River Basin as an itinerant pianist. Taught the \"44 Blues\" by Little Brother Montgomery in Sondheimer, Louisiana in 1922, Green in turn mentored a young Roosevelt Sykes, teaching him the tune and the style that Sykes would popularize as \"44 Blues\" in 1929, making Green a key link between Montgomery and Sykes in the lineage of the piece. He recorded around forty sides between 1929 and 1937 and is believed to have died around 1945.",
+    "activeFrom": "1929",
+    "influences": [
+      "little-brother-montgomery"
+    ],
+    "influencedBy": [
+      "roosevelt-sykes"
+    ],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://sundayblues.org/?p=7250",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "alice-moore",
+    "name": "Alice Moore",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1904",
+    "birthPlace": "Tennessee",
+    "birthCoords": [
+      -86.5804,
+      35.5175
+    ],
+    "deathDate": "1950",
+    "deathPlace": "St. Louis, Missouri",
+    "deathCoords": [
+      -90.1994,
+      38.627
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis, Missouri",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ncAiEAbfoZQ",
+    "albums": [
+      {
+        "name": "Black and Evil Blues",
+        "youtubeLink": "https://www.youtube.com/watch?v=ncAiEAbfoZQ"
+      }
+    ],
+    "description": "Alice Moore, known as \"Little Alice\" or \"Little Alice From St. Louis\", was an American blues singer born around 1904 in Tennessee who had settled in St. Louis, Missouri by 1925. Her penetrating, nasal vocal tone and somber, funereal delivery defined her signature song \"Black and Evil Blues\", first cut for Paramount in 1929 and popular enough that she re-recorded it three more times through the 1930s across an eight-year recording career that produced thirty-six sides.",
+    "activeFrom": "1929",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://sundayblues.org/?p=196",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "art-mckay",
+    "name": "Art McKay",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "Chicago, Illinois",
+    "birthCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=wSrQKCsUHFc",
+    "albums": [],
+    "description": "Art McKay (real name Arthur McKay) was an American blues singer who recorded for Decca Records in Chicago in 1934 and 1937, including \"Central Limited Blues\". Almost no other biographical detail about him is documented.",
+    "activeFrom": "1934",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://www.discogs.com/artist/648209-Art-McKay",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "shorty-bob-parker",
+    "name": "Shorty Bob Parker",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "Charlotte, North Carolina",
+    "birthCoords": [
+      -80.8431,
+      35.2271
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Charlotte, North Carolina",
+        "coords": [
+          -80.8431,
+          35.2271
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=d88RVvqf8bI",
+    "albums": [],
+    "description": "Shorty Bob Parker was an American blues pianist and singer about whom almost nothing biographical is known. He recorded six sides of his own, including \"So Cold in China\", and backed fellow blues singer Kid Prince Moore on piano for six more numbers, all cut in a single session in Charlotte, North Carolina on June 6, 1938.",
+    "activeFrom": "1938",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://adp.library.ucsb.edu/index.php/mastertalent/detail/207688/Parker_Shorty_Bob",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "charlie-pickett",
+    "name": "Charlie Pickett",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1911",
+    "birthPlace": "Brownsville, Tennessee",
+    "birthCoords": [
+      -89.262,
+      35.5934
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Brownsville, Tennessee",
+        "coords": [
+          -89.262,
+          35.5934
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=CuMGUSD28iM",
+    "albums": [],
+    "description": "Charlie Pickett (born 1911) was an American country blues guitarist and singer, best known as Sleepy John Estes's sometime second guitarist. He backed Estes on nineteen numbers at sessions in 1937 and 1938 alongside harmonica player Hammie Nixon, and cut four sides of his own for Decca in 1937, including \"Let Me Squeeze Your Lemon\" and \"Down the Highway\", released in 1940.",
+    "activeFrom": "1937",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "sleepy-john-estes",
+      "hammie-nixon"
+    ],
+    "source": "https://sundayblues.org/?tag=charlie-pickett",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "johnnie-strauss",
+    "name": "Johnnie Strauss",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "Chicago, Illinois",
+    "birthCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=moz9dhTpyVI",
+    "albums": [],
+    "description": "Johnnie Strauss was an American female blues singer who recorded four titles for Decca Records in Chicago in 1934, including \"St. Louis Johnnie Blues\" and \"Hard Working Woman\". Almost no other biographical detail about her is documented.",
+    "activeFrom": "1934",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://www.discogs.com/artist/2749782-Johnnie-Strauss",
+    "secondaryInstruments": [],
     "createdAt": "2026-09-10"
   }
 ]
