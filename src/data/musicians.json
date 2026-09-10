@@ -11836,15 +11836,15 @@
     "description": "Guitar Slim (Eddie Jones) was a flamboyant New Orleans blues guitarist whose distorted, feedback-laced electric guitar tone and wild showmanship were decades ahead of his time. His 1953 smash 'The Things That I Used to Do,' arranged by a young Ray Charles, sold over a million copies. He profoundly influenced Buddy Guy, Jimi Hendrix, and the entire lineage of rock lead guitar.",
     "activeFrom": "1951",
     "influences": [
-      "muddy-waters",
-      "chick-willis"
+      "muddy-waters"
     ],
     "influencedBy": [
       "junior-watson",
       "buddy-guy",
       "walter-wolfman-washington",
       "johnny-guitar-watson",
-      "barbara-lynn"
+      "barbara-lynn",
+      "chick-willis"
     ],
     "incomplete": false,
     "playedWith": [
@@ -12582,10 +12582,11 @@
     "description": "Theodore Roosevelt \"Hound Dog\" Taylor (April 12, 1915 – December 17, 1975) was an American Chicago blues guitarist and singer.",
     "activeFrom": "1957",
     "influences": [
-      "elmore-james",
+      "elmore-james"
+    ],
+    "influencedBy": [
       "studebaker-john"
     ],
-    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "little-walter",
@@ -45618,7 +45619,7 @@
         "youtubeLink": "https://www.youtube.com/watch?v=QmjJAG-O-yE"
       }
     ],
-    "description": "Nora Jean Wallace (formerly Bruso) (born June 21, 1956) is an American Chicago and electric blues singer and songwriter.  She has penned over 700 songs, and worked with Carl Weathersby and Dave Specter. \nFellow blues singer, Koko Taylor once commented, \"Nora Jean sounds just like I did when I was her age.",
+    "description": "Nora Jean Wallace (formerly Bruso) (born June 21, 1956) is an American Chicago and electric blues singer and songwriter.  She has penned over 700 songs, and worked with Carl Weathersby and Dave Specter. \nFellow blues singer, Koko Taylor once commented, \"Nora Jean sounds just like I did when I was her age.\"",
     "activeFrom": "1976",
     "influences": [],
     "influencedBy": [],
@@ -45661,10 +45662,10 @@
     ],
     "description": "Chick Willis was an American blues singer and guitarist, and a cousin of R&B star Chuck Willis, whom he served as chauffeur before Chuck's death in 1958. He is best remembered for the risqué 1972 jukebox hit \"Stoop Down Baby, Let Your Daddy See,\" and he continued recording prolifically for labels such as Ichiban through the 1980s and 90s, citing Guitar Slim as a major influence on his raw, showmanship-driven style.",
     "activeFrom": "1954",
-    "influences": [],
-    "influencedBy": [
+    "influences": [
       "guitar-slim"
     ],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "elmore-james"
@@ -45788,10 +45789,10 @@
     ],
     "description": "Studebaker John (born John Grimaldi) is a Chicago blues guitarist and harmonica player who formed his band the Hawks in the 1970s while working construction jobs by day. His slide guitar style, shaped by Hound Dog Taylor, and gritty harmonica playing became a mainstay of Blind Pig Records releases in the 1990s, and his music has been featured in films by director Atom Egoyan.",
     "activeFrom": "1972",
-    "influences": [],
-    "influencedBy": [
+    "influences": [
       "hound-dog-taylor"
     ],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Studebaker_John",
