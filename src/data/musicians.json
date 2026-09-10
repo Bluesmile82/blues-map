@@ -44669,10 +44669,10 @@
     "image": "",
     "image_source": null,
     "birthDate": "",
-    "birthPlace": "",
+    "birthPlace": "Chicago, Illinois",
     "birthCoords": [
-      0,
-      0
+      -87.6298,
+      41.8781
     ],
     "deathDate": null,
     "deathPlace": null,
@@ -44764,15 +44764,23 @@
     "image": "",
     "image_source": null,
     "birthDate": "1906",
-    "birthPlace": "",
+    "birthPlace": "Chicago, Illinois",
     "birthCoords": [
-      0,
-      0
+      -87.6298,
+      41.8781
     ],
     "deathDate": null,
     "deathPlace": null,
     "deathCoords": null,
-    "spentTimePlaces": [],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
     "instrument": "Piano",
     "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=eeMo9of5bVE",
@@ -44852,15 +44860,23 @@
     "image": "",
     "image_source": null,
     "birthDate": "",
-    "birthPlace": "",
+    "birthPlace": "St. Louis, Missouri",
     "birthCoords": [
-      0,
-      0
+      -90.1994,
+      38.627
     ],
     "deathDate": null,
     "deathPlace": null,
     "deathCoords": null,
-    "spentTimePlaces": [],
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis, Missouri",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
     "instrument": "Piano",
     "bluesStyle": "St. Louis Blues",
     "youtubeLink": "",
@@ -44973,24 +44989,32 @@
   {
     "id": "gene-gilmore",
     "name": "Gene Gilmore",
-    "image": "",
-    "image_source": null,
+    "image": "https://i.discogs.com/chue7vStK1m9pmcIsdAyb8TddVO_MO6Dj9gMq_Vx-u8/rs:fit/g:sm/q:90/h:656/w:528/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxNTAx/NzUtMTc1MDU5OTIw/NS00MzI1LnBuZw.jpeg",
+    "image_source": "https://www.discogs.com/artist/2150175-Gene-Gilmore",
     "birthDate": "",
-    "birthPlace": "",
+    "birthPlace": "Chicago, Illinois",
     "birthCoords": [
-      0,
-      0
+      -87.6298,
+      41.8781
     ],
     "deathDate": null,
     "deathPlace": null,
     "deathCoords": null,
-    "spentTimePlaces": [],
-    "instrument": "",
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
     "bluesStyle": "Chicago Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=QVHsg8V_cko",
     "albums": [],
-    "description": "Eugene \"Gene\" Gilmore was an American blues singer and pianist active in Chicago in the late 1930s and early 1940s, recording for Decca Records under producer Mayo Williams. He is best known for \"The Natchez Fire\" and \"The Death of Walter Barnes\", topical recordings about the catastrophic 1940 Rhythm Club fire in Natchez, Mississippi that killed bandleader Walter Barnes, and for a test recording made as part of a trio with Leonard \"Baby Doo\" Caston and Arthur Dixon.",
-    "activeFrom": "1938",
+    "description": "Eugene \"Gene\" Gilmore (also billed as Jimmy Gilmore) was an American blues singer active in Chicago, a member of the vocal group the Five Breezes alongside Leonard \"Baby Doo\" Caston and Willie Dixon, and of Four Jumps of Jive. He first recorded for Decca in 1939 and is best known for \"The Natchez Fire\" and \"The Death of Walter Barnes\", topical recordings about the catastrophic 1940 Rhythm Club fire in Natchez, Mississippi that killed bandleader Walter Barnes.",
+    "activeFrom": "1939",
     "influences": [],
     "influencedBy": [],
     "incomplete": true,
@@ -45139,21 +45163,29 @@
     "image": "",
     "image_source": null,
     "birthDate": "",
-    "birthPlace": "",
+    "birthPlace": "Chicago, Illinois",
     "birthCoords": [
-      0,
-      0
+      -87.6298,
+      41.8781
     ],
     "deathDate": null,
     "deathPlace": null,
     "deathCoords": null,
-    "spentTimePlaces": [],
-    "instrument": "",
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
     "bluesStyle": "Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=wSrQKCsUHFc",
     "albums": [],
-    "description": "Art McKay was an obscure American blues musician of the 1930s, known today only through his recording \"Central Limited Blues\" (1934). No other biographical or discographical details about him are documented.",
-    "activeFrom": "",
+    "description": "Art McKay (real name Arthur McKay) was an American blues singer who recorded for Decca Records in Chicago in 1934 and 1937, including \"Central Limited Blues\". Almost no other biographical detail about him is documented.",
+    "activeFrom": "1934",
     "influences": [],
     "influencedBy": [],
     "incomplete": true,
@@ -45168,10 +45200,10 @@
     "image": "",
     "image_source": null,
     "birthDate": "",
-    "birthPlace": "",
+    "birthPlace": "Charlotte, North Carolina",
     "birthCoords": [
-      0,
-      0
+      -80.8431,
+      35.2271
     ],
     "deathDate": null,
     "deathPlace": null,
@@ -45207,10 +45239,10 @@
     "image": "",
     "image_source": null,
     "birthDate": "1911",
-    "birthPlace": "",
+    "birthPlace": "Brownsville, Tennessee",
     "birthCoords": [
-      0,
-      0
+      -89.262,
+      35.5934
     ],
     "deathDate": null,
     "deathPlace": null,
@@ -45249,21 +45281,29 @@
     "image": "",
     "image_source": null,
     "birthDate": "",
-    "birthPlace": "",
+    "birthPlace": "Chicago, Illinois",
     "birthCoords": [
-      0,
-      0
+      -87.6298,
+      41.8781
     ],
     "deathDate": null,
     "deathPlace": null,
     "deathCoords": null,
-    "spentTimePlaces": [],
-    "instrument": "",
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
     "bluesStyle": "St. Louis Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=moz9dhTpyVI",
     "albums": [],
-    "description": "Johnnie Strauss was an obscure American blues singer known today mainly through recordings such as \"St. Louis Johnnie Blues\" and \"Hard Working Woman\". Almost no biographical or discographical detail about them survives.",
-    "activeFrom": "",
+    "description": "Johnnie Strauss was an American female blues singer who recorded four titles for Decca Records in Chicago in 1934, including \"St. Louis Johnnie Blues\" and \"Hard Working Woman\". Almost no other biographical detail about her is documented.",
+    "activeFrom": "1934",
     "influences": [],
     "influencedBy": [],
     "incomplete": true,
