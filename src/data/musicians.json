@@ -45365,7 +45365,7 @@
     ],
     "description": "Derek Trucks (born June 8, 1979) is an American guitarist, songwriter, and founder of The Derek Trucks Band.  He became an official member of The Allman Brothers Band in 1999.  In 2010, he formed the Tedeschi Trucks Band with his wife, blues singer/guitarist Susan Tedeschi.",
     "activeFrom": "1999",
-    "influences": [],
+    "influences": ["duane-allman"],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -45375,8 +45375,7 @@
     "source": "https://en.wikipedia.org/wiki/Derek_Trucks",
     "secondaryInstruments": [
       "Slide guitar",
-      "Dobro",
-      "Vocals"
+      "Dobro"
     ],
     "createdAt": "2026-09-10"
   },
@@ -45547,7 +45546,7 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "Piedmont Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=8JoW-XPkxyE",
+    "youtubeLink": "https://www.youtube.com/watch?v=QBwxODG35o0",
     "albums": [
       {
         "name": "Deep in the South (1992)",
