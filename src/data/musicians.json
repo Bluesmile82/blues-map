@@ -45425,7 +45425,9 @@
     ],
     "description": "Derek Trucks (born June 8, 1979) is an American guitarist, songwriter, and founder of The Derek Trucks Band.  He became an official member of The Allman Brothers Band in 1999.  In 2010, he formed the Tedeschi Trucks Band with his wife, blues singer/guitarist Susan Tedeschi.",
     "activeFrom": "1999",
-    "influences": ["duane-allman"],
+    "influences": [
+      "duane-allman"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -46060,8 +46062,20 @@
       43.45
     ],
     "spentTimePlaces": [
-      "Los Angeles",
-      "Austin"
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      {
+        "place": "Austin",
+        "coords": [
+          -97.7431,
+          30.2672
+        ]
+      }
     ],
     "instrument": "Guitar",
     "bluesStyle": "Texas Blues",
@@ -46228,7 +46242,7 @@
         "youtubeLink": "https://www.youtube.com/watch?v=b-pdRA6TBlY"
       }
     ],
-    "description": "Nick Moss (born December 15, 1969, Chicago, Illinois, United States) is an American Chicago blues and electric blues musician.  He has released 15 albums to date, all on his own label, Blue Bella Records label.  He has played with Buddy Scott, Jimmy Dawkins, Jimmy Rogers and the Legendary Blues Band.",
+    "description": "Nick Moss (born December 15, 1969, Chicago, Illinois, United States) is an American Chicago blues and electric blues musician.  He has released 15 albums to date, all on his own label, Blue Bella Records.  He has played with Buddy Scott, Jimmy Dawkins, Jimmy Rogers and the Legendary Blues Band.",
     "activeFrom": "1990",
     "influences": [
       "jimmy-dawkins",
@@ -46290,7 +46304,7 @@
       }
     ],
     "description": "Sarah Streeter (January 31, 1953 – June 13, 2015), better known by her stage name Big Time Sarah, was an American blues singer.",
-    "activeFrom": "2015",
+    "activeFrom": "1970",
     "influences": [
       "sunnyland-slim"
     ],
