@@ -296,7 +296,9 @@
       "mike-bloomfield",
       "john-mayall",
       "chris-cain",
-      "coco-montoya"
+      "coco-montoya",
+      "mel-brown",
+      "trudy-lynn"
     ],
     "source": "https://en.wikipedia.org/wiki/Albert_Collins",
     "secondaryInstruments": [
@@ -358,7 +360,8 @@
     "activeFrom": "1953",
     "influences": [
       "muddy-waters",
-      "bb-king"
+      "bb-king",
+      "detroit-junior"
     ],
     "influencedBy": [
       "stevie-ray-vaughan",
@@ -881,7 +884,8 @@
     "playedWith": [
       "charles-brown",
       "johnny-otis",
-      "wayne-bennett"
+      "wayne-bennett",
+      "detroit-junior"
     ],
     "source": "https://en.wikipedia.org/wiki/Amos_Milburn",
     "secondaryInstruments": [
@@ -1982,7 +1986,8 @@
       "freddie-king",
       "barbara-lynn",
       "rosco-gordon",
-      "willie-nix"
+      "willie-nix",
+      "mel-brown"
     ],
     "source": "https://en.wikipedia.org/wiki/B._B._King",
     "secondaryInstruments": [
@@ -2099,7 +2104,8 @@
     ],
     "influencedBy": [
       "lucille-hegamin",
-      "georgia-white"
+      "georgia-white",
+      "candye-kane"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -2716,7 +2722,8 @@
       "tampa-red"
     ],
     "influencedBy": [
-      "henry-gray"
+      "henry-gray",
+      "detroit-junior"
     ],
     "incomplete": false,
     "playedWith": [
@@ -2817,7 +2824,9 @@
     "description": "Willie Mae \"Big Mama\" Thornton (December 11, 1926 – July 25, 1984), was an American singer and songwriter of blues and R&B. \nThe Encyclopedia of Pop, Rock and Soul described Thornton by saying: \"Her booming voice, sometimes 200-pound frame, and exuberant stage manner had audiences stomping their feet and shouting encouragement in R&B theaters from coast to coast from the early 1950s on\".  Thornton's strong and important vocal style and her confidence on stage made her a huge influence on early blues and rock and roll, even though she rarely received proper credit and compensation for her work.",
     "activeFrom": "1947",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "candye-kane"
+    ],
     "incomplete": false,
     "playedWith": [
       "buddy-guy",
@@ -4018,7 +4027,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "nappy-brown"
+      "nappy-brown",
+      "candye-kane"
     ],
     "source": "https://en.wikipedia.org/wiki/Bob_Margolin",
     "secondaryInstruments": [],
@@ -4092,7 +4102,8 @@
       "fred-below",
       "eddie-taylor",
       "carey-bell",
-      "pinetop-perkins"
+      "pinetop-perkins",
+      "deitra-farr"
     ],
     "source": "https://en.wikipedia.org/wiki/Bob_Stroger",
     "secondaryInstruments": [
@@ -4138,12 +4149,15 @@
       "howlin-wolf",
       "roy-brown"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "little-johnny-taylor"
+    ],
     "incomplete": false,
     "playedWith": [
       "rosco-gordon",
       "wayne-bennett",
-      "joe-guitar-hughes"
+      "joe-guitar-hughes",
+      "mel-brown"
     ],
     "source": "https://en.wikipedia.org/wiki/Bobby_Bland",
     "secondaryInstruments": [],
@@ -4819,7 +4833,8 @@
       "alexis-korner",
       "chris-cain",
       "jack-owens",
-      "wayne-bennett"
+      "wayne-bennett",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Buddy_Guy",
     "secondaryInstruments": [
@@ -5534,7 +5549,8 @@
     "playedWith": [
       "albert-king",
       "carey-bell",
-      "toronzo-cannon"
+      "toronzo-cannon",
+      "trudy-lynn"
     ],
     "source": "https://en.wikipedia.org/wiki/Carl_Weathersby",
     "secondaryInstruments": [],
@@ -7590,7 +7606,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "deitra-farr"
+    ],
     "source": "https://en.wikipedia.org/wiki/Demetria_Taylor",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -8588,7 +8606,9 @@
       "leroy-carr",
       "roosevelt-sykes"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "detroit-junior"
+    ],
     "incomplete": false,
     "playedWith": [
       "buddy-guy",
@@ -8597,7 +8617,8 @@
       "john-mayall",
       "peter-green",
       "jazz-gillum",
-      "tampa-red"
+      "tampa-red",
+      "detroit-junior"
     ],
     "source": "https://en.wikipedia.org/wiki/Eddie_Boyd",
     "secondaryInstruments": [],
@@ -9596,7 +9617,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "big-time-sarah"
+    ],
     "source": "https://en.wikipedia.org/wiki/Erwin_Helfer",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -9857,13 +9880,16 @@
     ],
     "influencedBy": [
       "j-b-hutto",
-      "hip-linkchain"
+      "hip-linkchain",
+      "trudy-lynn",
+      "candye-kane"
     ],
     "incomplete": false,
     "playedWith": [
       "bessie-smith",
       "albert-collins",
-      "bb-king"
+      "bb-king",
+      "mel-brown"
     ],
     "source": "https://en.wikipedia.org/wiki/Etta_James",
     "secondaryInstruments": [
@@ -12694,7 +12720,8 @@
       "floyd-jones",
       "willie-brown",
       "luther-allison",
-      "albert-king"
+      "albert-king",
+      "detroit-junior"
     ],
     "source": "https://en.wikipedia.org/wiki/Howlin'_Wolf",
     "secondaryInstruments": [
@@ -14549,13 +14576,16 @@
     "description": "James Henry “Jimmy” Dawkins (October 24, 1936 – April 10, 2013)  was an American Chicago blues and electric blues guitarist and singer.  He is generally considered to have been a practitioner of the \"West Side sound\" of Chicago blues.",
     "activeFrom": "1951",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "nick-moss"
+    ],
     "incomplete": false,
     "playedWith": [
       "magic-sam",
       "otis-rush",
       "luther-allison",
-      "albert-king"
+      "albert-king",
+      "nick-moss"
     ],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Dawkins",
     "secondaryInstruments": [
@@ -14824,7 +14854,8 @@
     "activeFrom": "1946",
     "influences": [],
     "influencedBy": [
-      "junior-watson"
+      "junior-watson",
+      "nick-moss"
     ],
     "incomplete": false,
     "playedWith": [
@@ -14835,7 +14866,8 @@
       "snooky-pryor",
       "howlin-wolf",
       "lowell-fulson",
-      "jody-williams"
+      "jody-williams",
+      "nick-moss"
     ],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Rogers",
     "secondaryInstruments": [
@@ -15782,7 +15814,9 @@
       "eddie-taylor",
       "luther-allison",
       "mike-bloomfield",
-      "lc-robinson"
+      "lc-robinson",
+      "detroit-junior",
+      "mel-brown"
     ],
     "source": "https://en.wikipedia.org/wiki/Boom_Boom_(John_Lee_Hooker_song)",
     "secondaryInstruments": [
@@ -16768,7 +16802,8 @@
       "charles-brown",
       "johnny-guitar-watson",
       "eddie-cleanhead-vinson",
-      "big-jay-mcneely"
+      "big-jay-mcneely",
+      "mel-brown"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Otis",
     "secondaryInstruments": [
@@ -17668,7 +17703,8 @@
       "buddy-guy",
       "little-walter",
       "sonny-boy-williamson",
-      "louis-myers"
+      "louis-myers",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Wells",
     "secondaryInstruments": [
@@ -18477,11 +18513,15 @@
     "activeFrom": "1964",
     "influences": [
       "memphis-minnie",
-      "big-mama-thornton"
+      "big-mama-thornton",
+      "detroit-junior"
     ],
     "influencedBy": [
       "bonnie-raitt",
-      "shemekia-copeland"
+      "shemekia-copeland",
+      "deitra-farr",
+      "diunna-greenleaf",
+      "trudy-lynn"
     ],
     "incomplete": false,
     "playedWith": [
@@ -20238,7 +20278,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "albert-king"
+      "albert-king",
+      "trudy-lynn"
     ],
     "source": "https://en.wikipedia.org/wiki/Little_Milton",
     "secondaryInstruments": [
@@ -20457,7 +20498,8 @@
       "little-hatch",
       "jimmy-mccracklin",
       "rick-estrin",
-      "kim-wilson"
+      "kim-wilson",
+      "paul-delay"
     ],
     "incomplete": false,
     "playedWith": [
@@ -21627,7 +21669,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "ana-popovic"
+      "ana-popovic",
+      "trudy-lynn"
     ],
     "source": "https://en.wikipedia.org/wiki/Lucky_Peterson",
     "secondaryInstruments": [
@@ -22371,7 +22414,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "magic-sam"
+      "magic-sam",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Magic_Slim",
     "secondaryInstruments": [
@@ -24836,7 +24880,9 @@
     "description": "Otis Spann (March 21, 1924, or 1930 – April 24, 1970) was an American blues musician many consider the leading postwar Chicago blues pianist.",
     "activeFrom": "1944",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "detroit-junior"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -25966,7 +26012,8 @@
       "bb-king",
       "jimmy-rogers",
       "robert-nighthawk",
-      "ike-turner"
+      "ike-turner",
+      "diunna-greenleaf"
     ],
     "source": "https://en.wikipedia.org/wiki/Pinetop_Perkins",
     "secondaryInstruments": [
@@ -28501,7 +28548,8 @@
     "activeFrom": "1951",
     "influences": [],
     "influencedBy": [
-      "otis-clay"
+      "otis-clay",
+      "diunna-greenleaf"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30229,7 +30277,8 @@
       "howlin-wolf",
       "big-joe-williams",
       "jody-williams",
-      "willie-nix"
+      "willie-nix",
+      "mel-brown"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
     "secondaryInstruments": [
@@ -30823,13 +30872,16 @@
       "robert-johnson",
       "big-maceo"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "big-time-sarah"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
       "howlin-wolf",
       "bb-king",
-      "willie-nix"
+      "willie-nix",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Sunnyland_Slim",
     "secondaryInstruments": [
@@ -30991,14 +31043,16 @@
       "latimore",
       "lonnie-mack",
       "wayne-bennett",
-      "joe-guitar-hughes"
+      "joe-guitar-hughes",
+      "mel-brown"
     ],
     "incomplete": false,
     "playedWith": [
       "bb-king",
       "buddy-guy",
       "john-lee-hooker",
-      "muddy-waters"
+      "muddy-waters",
+      "mel-brown"
     ],
     "source": "https://en.wikipedia.org/wiki/T-Bone_Walker",
     "secondaryInstruments": [
@@ -33894,7 +33948,8 @@
       "buddy-guy",
       "albert-king",
       "bb-king",
-      "willie-dixon"
+      "willie-dixon",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Travelin'_Light_(Zora_Young_album)",
     "secondaryInstruments": [],
@@ -34027,7 +34082,8 @@
       "elvis-presley",
       "eric-clapton",
       "jeff-beck",
-      "keith-richards"
+      "keith-richards",
+      "diunna-greenleaf"
     ],
     "incomplete": false,
     "playedWith": [
@@ -34305,7 +34361,8 @@
       "roy-hawkins"
     ],
     "influencedBy": [
-      "clarence-carter"
+      "clarence-carter",
+      "diunna-greenleaf"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -34646,7 +34703,8 @@
     "incomplete": false,
     "playedWith": [
       "koko-taylor",
-      "luther-allison"
+      "luther-allison",
+      "trudy-lynn"
     ],
     "source": "https://en.wikipedia.org/wiki/Bernard_Allison",
     "secondaryInstruments": [
@@ -41732,7 +41790,9 @@
     "influences": [
       "billie-holiday"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "candye-kane"
+    ],
     "incomplete": false,
     "playedWith": [
       "charles-brown",
@@ -45365,7 +45425,9 @@
     ],
     "description": "Derek Trucks (born June 8, 1979) is an American guitarist, songwriter, and founder of The Derek Trucks Band.  He became an official member of The Allman Brothers Band in 1999.  In 2010, he formed the Tedeschi Trucks Band with his wife, blues singer/guitarist Susan Tedeschi.",
     "activeFrom": "1999",
-    "influences": ["duane-allman"],
+    "influences": [
+      "duane-allman"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -45799,5 +45861,560 @@
       "Harmonica"
     ],
     "createdAt": "2026-09-10"
+  },
+  {
+    "id": "detroit-junior",
+    "name": "Detroit Junior",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1931-10-26",
+    "birthPlace": "Haynes",
+    "birthCoords": [
+      -90.793333333333,
+      34.89
+    ],
+    "deathDate": "2005-08-09",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=YC7rpZo1Rwo",
+    "albums": [
+      {
+        "name": "Blues on the Internet (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=YC7rpZo1Rwo"
+      }
+    ],
+    "description": "Emery Williams Jr.  (October 26, 1931 – August 9, 2005), known as Detroit Junior, was an American blues pianist, vocalist and songwriter.  He is known for songs such as \"So Unhappy\", \"Call My Job\", \"If I Hadn't Been High\", \"Ella\" and \"Money Tree\".",
+    "activeFrom": "1956",
+    "influences": [
+      "otis-spann",
+      "big-maceo-merriweather",
+      "eddie-boyd"
+    ],
+    "influencedBy": [
+      "albert-king",
+      "koko-taylor"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "eddie-boyd",
+      "howlin-wolf",
+      "john-lee-hooker",
+      "amos-milburn"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Detroit_Junior",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-11"
+  },
+  {
+    "id": "deitra-farr",
+    "name": "Deitra Farr",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Deitra-Farr%20Chicago%20Blues%20Fest%202012-06-10%20photoby%20Adam%20Bielawski.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1957-08-01",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=L3c9cM1aMcQ",
+    "albums": [
+      {
+        "name": "The Search Is Over (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=4ddD9nrODjs"
+      }
+    ],
+    "description": "Deitra Farr (born August 1, 1957) is an American blues, soul and gospel singer-songwriter.",
+    "activeFrom": "1977",
+    "influences": [
+      "koko-taylor"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bob-stroger",
+      "demetria-taylor"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Deitra_Farr",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-11"
+  },
+  {
+    "id": "diunna-greenleaf",
+    "name": "Diunna Greenleaf",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1957-10-06",
+    "birthPlace": "Houston",
+    "birthCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Houston",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=pssA4DAzktI",
+    "albums": [
+      {
+        "name": "Trying to Hold On (2011)",
+        "youtubeLink": "https://www.youtube.com/watch?v=DXaQ7a2kyuE"
+      }
+    ],
+    "description": "Diunna Greenleaf (born October 6, 1957) is an American blues singer and songwriter. \nAt the 2014 Blues Music Awards, Greenleaf won the Koko Taylor Award (Traditional Blues Female), beating fellow nominees Teeny Tucker, Lavelle White, Trudy Lynn, and Zora Young.",
+    "activeFrom": "1977",
+    "influences": [
+      "sam-cooke",
+      "sister-rosetta-tharpe",
+      "koko-taylor",
+      "aretha-franklin"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "pinetop-perkins"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Diunna_Greenleaf",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-11"
+  },
+  {
+    "id": "mel-brown",
+    "name": "Mel Brown",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mel%20Brown.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1939-10-07",
+    "birthPlace": "Jackson",
+    "birthCoords": [
+      -90.18472222222223,
+      32.29888888888889
+    ],
+    "deathDate": "2009-03-20",
+    "deathPlace": "Kitchener",
+    "deathCoords": [
+      -80.48333333333333,
+      43.45
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      {
+        "place": "Austin",
+        "coords": [
+          -97.7431,
+          30.2672
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ZzBbonIkLPY",
+    "albums": [
+      {
+        "name": "Chicken Fat (1967)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ZzBbonIkLPY"
+      }
+    ],
+    "description": "Mel Brown was an American blues guitarist and singer best remembered for his decade-long tenure backing Bobby \"Blue\" Bland, and for session and touring work with Sonny Boy Williamson II, Johnny Otis, Etta James, T-Bone Walker, and John Lee Hooker. A member of Austin's Antone's house band from the 1980s onward, he blended greasy Texas-style guitar lines with soul and jazz phrasing across more than a dozen solo albums, starting with 1967's Chicken Fat.",
+    "activeFrom": "1963",
+    "influences": [
+      "t-bone-walker"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "sonny-boy-williamson",
+      "johnny-otis",
+      "etta-james",
+      "t-bone-walker",
+      "john-lee-hooker",
+      "bb-king",
+      "albert-collins",
+      "bobby-blue-bland"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Mel_Brown_(guitarist)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-11"
+  },
+  {
+    "id": "paul-delay",
+    "name": "Paul deLay",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Paul_Delay_HotHell_French_Twinks_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1952-01-31",
+    "birthPlace": "Portland",
+    "birthCoords": [
+      -122.67916666666666,
+      45.515
+    ],
+    "deathDate": "2007-03-07",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Harmonica",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dk6H8dIWoJU",
+    "albums": [
+      {
+        "name": "Ocean of Tears (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=IE1u-RBPfmI"
+      }
+    ],
+    "description": "Paul Joseph deLay (January 31, 1952 – March 7, 2007) was an American blues vocalist and harmonicist.",
+    "activeFrom": "1970",
+    "influences": [
+      "little-walter"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Paul_deLay",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-11"
+  },
+  {
+    "id": "little-johnny-taylor",
+    "name": "Little Johnny Taylor",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1943-02-11",
+    "birthPlace": "Gregory",
+    "birthCoords": [
+      -91.3431,
+      35.1553
+    ],
+    "deathDate": "2002-05-17",
+    "deathPlace": "Conway",
+    "deathCoords": [
+      -92.453333333333,
+      35.087222222222
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Nashville",
+        "coords": [
+          -86.7816,
+          36.1627
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=LAzlqxrHl28",
+    "albums": [
+      {
+        "name": "Part-Time Love (1981)",
+        "youtubeLink": "https://www.youtube.com/watch?v=nDjHWuqz0iQ"
+      },
+      {
+        "name": "The Galaxy Years (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=B1FvSYxkwv0"
+      },
+      {
+        "name": "Greatest Hits (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=NZTdT0AE4bw"
+      },
+      {
+        "name": "Everybody Knows About My Good Thing / Open House At My House (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=c50tS-p9jNk"
+      }
+    ],
+    "description": "Little Johnny Taylor (born Johnny Lamont Merrett; February 11, 1943 – May 17, 2002) was an American blues and soul singer.  He made recordings throughout the 1960s and 1970s, and continued public performances through the 1980s and 1990s.",
+    "activeFrom": "1950",
+    "influences": [
+      "bobby-blue-bland"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Little_Johnny_Taylor",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-11"
+  },
+  {
+    "id": "nick-moss",
+    "name": "Nick Moss",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nickmoss.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1969-12-15",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=BnxYpfeSp2U",
+    "albums": [
+      {
+        "name": "Get Your Back Into It! (2023)",
+        "youtubeLink": "https://www.youtube.com/watch?v=b-pdRA6TBlY"
+      }
+    ],
+    "description": "Nick Moss (born December 15, 1969, Chicago, Illinois, United States) is an American Chicago blues and electric blues musician.  He has released 15 albums to date, all on his own label, Blue Bella Records.  He has played with Buddy Scott, Jimmy Dawkins, Jimmy Rogers and the Legendary Blues Band.",
+    "activeFrom": "1990",
+    "influences": [
+      "jimmy-dawkins",
+      "jimmy-rogers"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "jimmy-dawkins",
+      "jimmy-rogers"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Nick_Moss",
+    "secondaryInstruments": [
+      "Harmonica",
+      "Vocals"
+    ],
+    "createdAt": "2026-09-11"
+  },
+  {
+    "id": "big-time-sarah",
+    "name": "Big Time Sarah",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1953-01-31",
+    "birthPlace": "Coldwater",
+    "birthCoords": [
+      -89.9739,
+      34.6897
+    ],
+    "deathDate": "2015-06-13",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=7e8CgAFEQMU",
+    "albums": [
+      {
+        "name": "Lay It on 'Em Girls (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ZC5wHR98Dic"
+      }
+    ],
+    "description": "Sarah Streeter (January 31, 1953 – June 13, 2015), better known by her stage name Big Time Sarah, was an American blues singer.",
+    "activeFrom": "1970",
+    "influences": [
+      "sunnyland-slim"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "magic-slim",
+      "buddy-guy",
+      "junior-wells",
+      "sunnyland-slim",
+      "zora-young",
+      "erwin-helfer"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Big_Time_Sarah",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-11"
+  },
+  {
+    "id": "trudy-lynn",
+    "name": "Trudy Lynn",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Chicago_blues_30nov1991Trudy_Lynn_scan0005.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": null,
+    "birthDate": "1947-08-09",
+    "birthPlace": "Houston",
+    "birthCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=BIRZndjTGJs",
+    "albums": [
+      {
+        "name": "Golden Girl (2022)",
+        "youtubeLink": "https://www.youtube.com/watch?v=BIRZndjTGJs"
+      }
+    ],
+    "description": "Trudy Lynn (born August 9, 1947) is an American electric blues and soul blues singer and songwriter, whose recorded work has been released on twelve studio albums, one live album, and four compilation albums. \nThe AllMusic journalist, Alex Henderson, noted that \"Lynn isn't one to hold back emotionally; like Koko Taylor and Etta James, she screams, shouts, testifies and gets her points across in a highly convincing way\".",
+    "activeFrom": "1967",
+    "influences": [
+      "koko-taylor",
+      "etta-james"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "albert-collins",
+      "little-milton",
+      "bernard-allison",
+      "carl-weathersby",
+      "lucky-peterson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Trudy_Lynn",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-11"
+  },
+  {
+    "id": "candye-kane",
+    "name": "Candye Kane",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Candye%20Kane%202012.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1961-11-13",
+    "birthPlace": "Ventura",
+    "birthCoords": [
+      -119.254206,
+      34.26778
+    ],
+    "deathDate": "2016-05-06",
+    "deathPlace": "Los Angeles",
+    "deathCoords": [
+      -118.380676,
+      34.075198
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=b_vqGAPaQfQ",
+    "albums": [
+      {
+        "name": "The Toughest Girl Alive (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=b_vqGAPaQfQ"
+      }
+    ],
+    "description": "Candice Caleb (November 13, 1961 – May 6, 2016), known professionally as Candye Kane, was an American adult film star; and later a blues singer.",
+    "activeFrom": "1986",
+    "influences": [
+      "big-mama-thornton",
+      "etta-james",
+      "bessie-smith",
+      "ruth-brown"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bob-margolin"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Candye_Kane",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-11"
   }
 ]
