@@ -1982,7 +1982,8 @@
       "freddie-king",
       "barbara-lynn",
       "rosco-gordon",
-      "willie-nix"
+      "willie-nix",
+      "johnny-ace"
     ],
     "source": "https://en.wikipedia.org/wiki/B._B._King",
     "secondaryInstruments": [
@@ -2099,7 +2100,8 @@
     ],
     "influencedBy": [
       "lucille-hegamin",
-      "georgia-white"
+      "georgia-white",
+      "lavern-baker"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -2491,7 +2493,8 @@
     "playedWith": [
       "meade-lux-lewis",
       "t-bone-walker",
-      "pete-johnson"
+      "pete-johnson",
+      "eddie-bo"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Joe_Turner",
     "secondaryInstruments": [],
@@ -2920,7 +2923,8 @@
       "little-walter",
       "carey-bell",
       "kim-wilson",
-      "willie-nix"
+      "willie-nix",
+      "mark-hummel"
     ],
     "incomplete": false,
     "playedWith": [
@@ -4136,14 +4140,19 @@
     "influences": [
       "bb-king",
       "howlin-wolf",
-      "roy-brown"
+      "roy-brown",
+      "johnny-ace"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "tyrone-davis"
+    ],
     "incomplete": false,
     "playedWith": [
       "rosco-gordon",
       "wayne-bennett",
-      "joe-guitar-hughes"
+      "joe-guitar-hughes",
+      "johnny-ace",
+      "tyrone-davis"
     ],
     "source": "https://en.wikipedia.org/wiki/Bobby_Bland",
     "secondaryInstruments": [],
@@ -5477,7 +5486,8 @@
       "james-cotton",
       "john-lee-hooker",
       "lovie-lee",
-      "jimmy-rogers"
+      "jimmy-rogers",
+      "mark-hummel"
     ],
     "source": "https://en.wikipedia.org/wiki/Carey_Bell",
     "secondaryInstruments": [
@@ -5798,7 +5808,8 @@
       "paul-gayten",
       "pete-mayes",
       "roy-hawkins",
-      "tommy-tucker"
+      "tommy-tucker",
+      "johnny-ace"
     ],
     "incomplete": false,
     "playedWith": [
@@ -5967,7 +5978,9 @@
     "description": "Charles Douglas Musselwhite (born January 31, 1944) is an American blues harmonica player and bandleader who came to prominence, along with Mike Bloomfield, Paul Butterfield, and Elvin Bishop, as a pivotal figure in helping to revive the Chicago Blues movement of the 1960s.  He has often been identified as a \"white bluesman\".  \nMusselwhite was reportedly the inspiration for Elwood Blues, the character played by Dan Aykroyd in the 1980 film, The Blues Brothers.",
     "activeFrom": "1967",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "mark-hummel"
+    ],
     "incomplete": false,
     "playedWith": [
       "mike-bloomfield",
@@ -5986,7 +5999,8 @@
       "james-cotton",
       "big-joe-duskin",
       "dave-peabody",
-      "chris-cain"
+      "chris-cain",
+      "mark-hummel"
     ],
     "source": "https://en.wikipedia.org/wiki/Charlie_Musselwhite",
     "secondaryInstruments": [
@@ -7188,7 +7202,8 @@
     "incomplete": false,
     "playedWith": [
       "dr-john",
-      "marcus-king"
+      "marcus-king",
+      "jimmy-duck-holmes"
     ],
     "source": null,
     "secondaryInstruments": [
@@ -8432,7 +8447,8 @@
       "professor-longhair",
       "snooks-eaglin",
       "ronnie-earl",
-      "roomful-of-blues"
+      "roomful-of-blues",
+      "eddie-bo"
     ],
     "source": "https://en.wikipedia.org/wiki/Earl_King",
     "secondaryInstruments": [
@@ -9971,7 +9987,8 @@
     "description": "Fats Domino (Antoine Domino Jr.) was an American pianist and singer-songwriter who pioneered rock and roll and R&B. One of the most popular artists of the 1950s and early 1960s, his relaxed boogie-woogie piano style and warm vocals helped define the New Orleans sound. His hits 'Ain't That a Shame' and 'Blueberry Hill' were crossover successes that sold millions. He sold more than 65 million records and had 35 Top 40 hits, making him one of the best-selling artists of his era.",
     "activeFrom": "1949",
     "influences": [
-      "professor-longhair"
+      "professor-longhair",
+      "smiley-lewis"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -11852,7 +11869,8 @@
       "t-bone-walker",
       "clarence-gatemouth-brown",
       "muddy-waters",
-      "ray-charles"
+      "ray-charles",
+      "eddie-bo"
     ],
     "source": "https://en.wikipedia.org/wiki/Guitar_Slim",
     "secondaryInstruments": [
@@ -13358,7 +13376,8 @@
       "paul-butterfield",
       "mike-bloomfield",
       "johnny-winter",
-      "wayne-bennett"
+      "wayne-bennett",
+      "mark-hummel"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Cotton",
     "secondaryInstruments": [
@@ -13460,7 +13479,8 @@
       "bb-king",
       "t-bone-walker",
       "lowell-fulson",
-      "albert-collins"
+      "albert-collins",
+      "kid-ramos"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Harman",
     "secondaryInstruments": [
@@ -15903,7 +15923,8 @@
       "otis-rush",
       "peter-green",
       "coco-montoya",
-      "duster-bennett"
+      "duster-bennett",
+      "mark-hummel"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Mayall",
     "secondaryInstruments": [
@@ -16759,7 +16780,9 @@
     "description": "Johnny Otis (December 28, 1921 – January 17, 2012), born Ioannis Alexandres Veliotes (Greek: Ιωάννης Αλέξανδρος Βελιώτης), was an American singer, musician, composer, bandleader, record producer, talent scout, and preacher.  He was a seminal influence on American R&B and rock and roll.  He discovered numerous artists early in their careers who went on to become highly successful in their own right, including Little Esther Phillips, Etta James, Alan O'Day, Big Mama Thornton, Johnny Ace, Jackie Wilson, Little Willie John, Hank Ballard, and The Robins, Sugar Pie DeSanto, among many others.",
     "activeFrom": "1940",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "esther-phillips"
+    ],
     "incomplete": false,
     "playedWith": [
       "etta-james",
@@ -16768,7 +16791,8 @@
       "charles-brown",
       "johnny-guitar-watson",
       "eddie-cleanhead-vinson",
-      "big-jay-mcneely"
+      "big-jay-mcneely",
+      "esther-phillips"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Otis",
     "secondaryInstruments": [
@@ -17496,7 +17520,8 @@
       "bb-king",
       "ike-turner",
       "rosco-gordon",
-      "wayne-bennett"
+      "wayne-bennett",
+      "johnny-ace"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Parker",
     "secondaryInstruments": [
@@ -20238,7 +20263,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "albert-king"
+      "albert-king",
+      "tyrone-davis"
     ],
     "source": "https://en.wikipedia.org/wiki/Little_Milton",
     "secondaryInstruments": [
@@ -20457,7 +20483,8 @@
       "little-hatch",
       "jimmy-mccracklin",
       "rick-estrin",
-      "kim-wilson"
+      "kim-wilson",
+      "mark-hummel"
     ],
     "incomplete": false,
     "playedWith": [
@@ -22621,7 +22648,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "dan-auerbach"
+      "dan-auerbach",
+      "jimmy-duck-holmes"
     ],
     "source": "13 Modern Blues Guitarists to keep on your radar in 2025; Best Blues Guitarists of 2022",
     "secondaryInstruments": [
@@ -25069,7 +25097,8 @@
     ],
     "influencedBy": [
       "bonnie-raitt",
-      "eric-clapton"
+      "eric-clapton",
+      "mark-hummel"
     ],
     "incomplete": false,
     "playedWith": [
@@ -27746,7 +27775,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "eddie-cleanhead-vinson"
+      "eddie-cleanhead-vinson",
+      "kid-ramos"
     ],
     "source": "https://en.wikipedia.org/wiki/Roomful_of_Blues",
     "secondaryInstruments": [
@@ -29628,7 +29658,8 @@
       "j-b-hutto",
       "etta-james",
       "hip-linkchain",
-      "jack-owens"
+      "jack-owens",
+      "jimmy-duck-holmes"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31669,7 +31700,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "kim-wilson"
+      "kim-wilson",
+      "kid-ramos"
     ],
     "source": "https://en.wikipedia.org/wiki/The_Fabulous_Thunderbirds",
     "secondaryInstruments": [
@@ -31703,7 +31735,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "kid-ramos"
+    ],
     "source": null,
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -41736,7 +41770,8 @@
     "incomplete": false,
     "playedWith": [
       "charles-brown",
-      "bonnie-raitt"
+      "bonnie-raitt",
+      "lavern-baker"
     ],
     "source": "https://en.wikipedia.org/wiki/Ruth_Brown",
     "secondaryInstruments": [
@@ -41938,13 +41973,16 @@
     ],
     "description": "Denise LaSalle was a Mississippi-born singer-songwriter who became one of the leading voices of Southern soul-blues, scoring a number-one R&B hit with \"Trapped by a Thing Called Love\" in 1971. A prolific songwriter as much as a performer, she signed with Malaco Records in the early 1980s and penned hits for labelmates including Z.Z. Hill, helping define the label's deep soul-blues sound alongside artists like Bobby \"Blue\" Bland and Little Milton. Following the death of Koko Taylor in 2009, LaSalle was widely hailed as the new \"Queen of the Blues\" and was inducted into the Blues Hall of Fame in 2011.",
     "activeFrom": "1967",
-    "influences": [],
+    "influences": [
+      "tyrone-davis"
+    ],
     "influencedBy": [
       "mel-waiters"
     ],
     "incomplete": false,
     "playedWith": [
-      "zz-hill"
+      "zz-hill",
+      "tyrone-davis"
     ],
     "source": "https://en.wikipedia.org/wiki/Denise_LaSalle",
     "secondaryInstruments": [],
@@ -42406,7 +42444,9 @@
     "influences": [
       "skip-james"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "jimmy-duck-holmes"
+    ],
     "incomplete": false,
     "playedWith": [
       "buddy-guy",
@@ -43102,7 +43142,8 @@
     "playedWith": [
       "bb-king",
       "bobby-blue-bland",
-      "junior-parker"
+      "junior-parker",
+      "johnny-ace"
     ],
     "source": "https://en.wikipedia.org/wiki/Rosco_Gordon",
     "secondaryInstruments": [],
@@ -45799,5 +45840,680 @@
       "Harmonica"
     ],
     "createdAt": "2026-09-10"
+  },
+  {
+    "id": "johnny-ace",
+    "name": "Johnny Ace",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/12/Johnny_Ace_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1929-06-09",
+    "birthPlace": "Memphis",
+    "birthCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "deathDate": "1954-12-25",
+    "deathPlace": "Houston",
+    "deathCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Houston",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=T7-M8v7bHas",
+    "albums": [
+      {
+        "name": "Memorial Album (1987)",
+        "youtubeLink": "https://www.youtube.com/watch?v=1dCDlZ4GNzg"
+      },
+      {
+        "name": "Memorial Album (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=1dCDlZ4GNzg"
+      },
+      {
+        "name": "The Complete Duke Recordings (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=5f4t2N_Zdw0"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Johnny Ace 1951-1954 (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=GRIjG8Aed_Y"
+      },
+      {
+        "name": "Ace’s Wild! The Complete Solo Sides and Sessions (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=OiaOMCN-5II"
+      },
+      {
+        "name": "Complete Duke Recordings and More (2023)",
+        "youtubeLink": "https://www.youtube.com/watch?v=5f4t2N_Zdw0"
+      }
+    ],
+    "description": "John Marshall Alexander Jr.  (June 9, 1929 – December 25, 1954), known by the stage name Johnny Ace, was an American rhythm-and-blues singer.  He had a string of hit singles in the mid-1950s.",
+    "activeFrom": "1949",
+    "influences": [
+      "charles-brown"
+    ],
+    "influencedBy": [
+      "bobby-blue-bland"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "bb-king",
+      "bobby-blue-bland",
+      "junior-parker",
+      "rosco-gordon"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Johnny_Ace",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-12"
+  },
+  {
+    "id": "lavern-baker",
+    "name": "LaVern Baker",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/LaVern%20Baker%201956.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1929-11-11",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": "1997-03-10",
+    "deathPlace": "Queens",
+    "deathCoords": [
+      -73.82805555555555,
+      40.71361111111111
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=LZAC8P1gOfI",
+    "albums": [
+      {
+        "name": "The Best of Lavern Baker (1962)",
+        "youtubeLink": "https://www.youtube.com/watch?v=eBxjKSYQu_A"
+      },
+      {
+        "name": "Real Gone Gal (1984)",
+        "youtubeLink": "https://www.youtube.com/watch?v=v0pxsR39F3w"
+      },
+      {
+        "name": "Precious Memories / Sings Bessie Smith (1985)",
+        "youtubeLink": "https://www.youtube.com/watch?v=K19BW-tM904"
+      },
+      {
+        "name": "Soul on Fire: The Best of LaVern Baker (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=eBxjKSYQu_A"
+      },
+      {
+        "name": "Lavern / Lavern Baker (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xIhQrhN_450"
+      },
+      {
+        "name": "See See Rider / Blues Ballads (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=7cbj-gxvFe0"
+      }
+    ],
+    "description": "Delores LaVern Baker (born Delores Evans; November 11, 1929 – March 10, 1997) was an American rhythm and blues singer who had several hit records on the pop charts in the 1950s and early 1960s.  Her most successful records were \"Tweedle Dee\" (1955), \"Jim Dandy\" (1956), and \"I Cried a Tear\" (1958). \nBaker was inducted into the Rock and Roll Hall of Fame in 1991.",
+    "activeFrom": "1946",
+    "influences": [
+      "bessie-smith"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ruth-brown"
+    ],
+    "source": "https://en.wikipedia.org/wiki/LaVern_Baker",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-12"
+  },
+  {
+    "id": "tyrone-davis",
+    "name": "Tyrone Davis",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tyrone%20Davis%20oct%201970.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1938-05-04",
+    "birthPlace": "Greenville",
+    "birthCoords": [
+      -91.05194444444444,
+      33.39944444444444
+    ],
+    "deathDate": "2005-02-09",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=QUGLXEeevyc",
+    "albums": [
+      {
+        "name": "Greatest Hits (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UETI8IP6E8w"
+      },
+      {
+        "name": "The Best of Tyrone Davis: In the Mood (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=s88yoZ824GA"
+      },
+      {
+        "name": "Greatest Hits (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=p2KrYjhK_iU"
+      },
+      {
+        "name": "Dakar Records A's & B's - The Hit Singles (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UETI8IP6E8w"
+      },
+      {
+        "name": "Give It Up (Turn It Loose): The Very Best of the Columbia Years (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=s88yoZ824GA"
+      },
+      {
+        "name": "The Ultimate (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=40QlP2sLOiQ"
+      }
+    ],
+    "description": "Tyrone Davis (born Tyrone D.  Fettson or Tyrone D.  Branch, October 3, 1937 – February 9, 2005) (although many sources have his date of birth as May 4, 1938) was an American blues and soul singer with a long list of hit records over more than 20 years.",
+    "activeFrom": "1968",
+    "influences": [
+      "bobby-blue-bland"
+    ],
+    "influencedBy": [
+      "denise-lasalle"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "bobby-blue-bland",
+      "little-milton",
+      "denise-lasalle"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Tyrone_Davis",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-12"
+  },
+  {
+    "id": "smiley-lewis",
+    "name": "Smiley Lewis",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/a4/Smiley-Lewis-1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1913-07-05",
+    "birthPlace": "Calcasieu Parish",
+    "birthCoords": [
+      -93.36,
+      30.23
+    ],
+    "deathDate": "1966-10-07",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.07833333333333,
+          29.976111111111113
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=25JNEA0sftc",
+    "albums": [
+      {
+        "name": "I Hear You Knocking (1986)",
+        "youtubeLink": "https://www.youtube.com/watch?v=pIjDUIFORlw"
+      },
+      {
+        "name": "New Orleans Bounce 30 of His Best (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=WhykkJUr4FY"
+      },
+      {
+        "name": "Shame, Shame, Shame (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=_IKv3QVCZq8"
+      },
+      {
+        "name": "The Best of Smiley Lewis: I Hear You Knocking (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Oyyq4Fj-ndo"
+      },
+      {
+        "name": "The Fat Man: The Essential Early Fats Domino (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=RpFVyTE4ums"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Smiley Lewis 1947-1952 (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9k4fdjN_sLk"
+      }
+    ],
+    "description": "Overton Amos Lemons (July 5, 1913 – October 7, 1966), known as Smiley Lewis, was an American New Orleans rhythm and blues singer and guitarist.  The music journalist Tony Russell wrote that \"Lewis was the unluckiest man in New Orleans.  He hit on a formula for slow-rocking, small-band numbers like 'The Bells Are Ringing' and 'I Hear You Knocking' only to have Fats Domino come up behind him with similar music with a more ingratiating delivery.",
+    "activeFrom": "1947",
+    "influences": [],
+    "influencedBy": [
+      "fats-domino"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Smiley_Lewis",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-12"
+  },
+  {
+    "id": "eddie-bo",
+    "name": "Eddie Bo",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Eddie_Bo_2004.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": null,
+    "birthDate": "1930-09-20",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "2009-03-18",
+    "deathPlace": "Picayune",
+    "deathCoords": [
+      -89.680277777778,
+      30.528055555556
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.07833333333333,
+          29.976111111111113
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=LSC_HZAxpWQ",
+    "albums": [
+      {
+        "name": "The Hook and Sling (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=QFd2YnMOUxY"
+      },
+      {
+        "name": "The Best of Eddie Bo (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=k_DYTjM45zQ"
+      },
+      {
+        "name": "In the Pocket With (2011)",
+        "youtubeLink": "https://www.youtube.com/watch?v=yYfC2SYELpI"
+      },
+      {
+        "name": "Baby I'm Wise: The Complete Ric Singles 1959-1962 (2015)",
+        "youtubeLink": "https://www.youtube.com/watch?v=fu8ZbmtaxD8"
+      },
+      {
+        "name": "I Love to Rock 'n' Roll",
+        "youtubeLink": "https://www.youtube.com/watch?v=nADpdFd9Tyw"
+      }
+    ],
+    "description": "Edwin Joseph Bocage (September 20, 1930 – March 18, 2009), known as Eddie Bo, was an American singer and pianist from New Orleans.   Schooled in jazz, he was known for his blues, soul and funk recordings, compositions, productions and arrangements.   He debuted on Ace Records in 1955 and released more single records than anyone in New Orleans other than Fats Domino.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "big-joe-turner",
+      "earl-king",
+      "guitar-slim"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Eddie_Bo",
+    "secondaryInstruments": [
+      "Vocals",
+      "Trumpet"
+    ],
+    "createdAt": "2026-09-12"
+  },
+  {
+    "id": "mark-hummel",
+    "name": "Mark Hummel",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Markhummel.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1955-12-15",
+    "birthPlace": "New Haven",
+    "birthCoords": [
+      -72.925,
+      41.308333333333
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "San Francisco",
+        "coords": [
+          -122.4194,
+          37.7749
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9m9_7EE15uI",
+    "albums": [
+      {
+        "name": "Blues Harp Meltdown (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=SdEUajQTPSw"
+      },
+      {
+        "name": "Odds & Ends (2008)",
+        "youtubeLink": "https://www.youtube.com/watch?v=tm633DTW24c"
+      },
+      {
+        "name": "Harmonica Party",
+        "youtubeLink": "https://www.youtube.com/watch?v=7WNHGefSOSc"
+      }
+    ],
+    "description": "Mark Hummel (born December 15, 1955) is an American blues harmonica player, vocalist, songwriter, and long-time bandleader of the Blues Survivors.  Since 1991, Hummel has produced the Blues Harmonica Blowout tour, of which he is also a featured performer.  The shows have featured blues harmonica players such as James Cotton, Carey Bell, John Mayall and Charlie Musselwhite.",
+    "activeFrom": "1977",
+    "influences": [
+      "little-walter",
+      "big-walter-horton",
+      "paul-butterfield",
+      "charlie-musselwhite"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "james-cotton",
+      "carey-bell",
+      "john-mayall",
+      "charlie-musselwhite"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Mark_Hummel",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-12"
+  },
+  {
+    "id": "kid-ramos",
+    "name": "Kid Ramos",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kid-Ramos-2008-SF.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1959-01-13",
+    "birthPlace": "Fullerton",
+    "birthCoords": [
+      -117.92861111111,
+      33.88
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=F4cO2Gn-LjM",
+    "albums": [
+      {
+        "name": "Two Hands One Heart (1995)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Kid Ramos (1999)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "West Coast House Party (2000)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Greasy Kid Stuff (2001)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Old School (2018)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Kid Ramos (born January 13, 1959) is an American electric blues and blues rock guitarist, singer and songwriter.  Ramos has released four solo albums since 1995 on Black Top and Evidence Records.   He has worked with James Harman, Roomful of Blues, the Big Rhythm Combo, The Fabulous Thunderbirds, The Mannish Boys, Bobby Jones and Los Fabulocos.",
+    "activeFrom": "1980",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "james-harman",
+      "roomful-of-blues",
+      "the-fabulous-thunderbirds",
+      "the-mannish-boys"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Kid_Ramos",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-12"
+  },
+  {
+    "id": "esther-phillips",
+    "name": "Esther Phillips",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Esther%20Phillips.png?width=500",
+    "image_source": null,
+    "birthDate": "1935-12-23",
+    "birthPlace": "Galveston",
+    "birthCoords": [
+      -94.795,
+      29.301388888888887
+    ],
+    "deathDate": "1984-08-07",
+    "deathPlace": "Carson",
+    "deathCoords": [
+      -118.25972222222,
+      33.839722222222
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Houston",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=NBysLMM8QK8",
+    "albums": [
+      {
+        "name": "Ladies Sing the Blues: Roots of Rock ’n’ Roll, Vol. 5 (1979)",
+        "youtubeLink": "https://www.youtube.com/watch?v=EmlUlYOTYBU"
+      },
+      {
+        "name": "The Complete Savoy Recordings With Johnny Otis (1984)",
+        "youtubeLink": "https://www.youtube.com/watch?v=hNCZPaSG2jM"
+      },
+      {
+        "name": "Bad Baad Girl! (1985)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Set Me Free (1986)",
+        "youtubeLink": "https://www.youtube.com/watch?v=f9akpIHiSLM"
+      },
+      {
+        "name": "I Paid My Dues (1988)",
+        "youtubeLink": "https://www.youtube.com/watch?v=2sCEfXGrsS0"
+      },
+      {
+        "name": "The Best of Esther Phillips (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6k-6SzCT1Oc"
+      }
+    ],
+    "description": "Esther Phillips (born Esther Mae Jones; December 23, 1935 – August 7, 1984) was an American blues, R&B, and soul singer discovered by bandleader Johnny Otis at age fourteen, who launched her to stardom as \"Little Esther\" with a string of number-one R&B hits including \"Double Crossing Blues\" (1950). After a career interrupted by addiction through the 1950s, she staged a celebrated comeback in the 1960s and '70s, earning a Grammy nomination for her soulful reworking of \"Home Is Where the Hatred Is\" and remaining a versatile vocal stylist across blues, jazz, and soul until her death in 1984.",
+    "activeFrom": "1949",
+    "influences": [
+      "johnny-otis"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "johnny-otis"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Esther_Phillips",
+    "secondaryInstruments": [
+      "Piano"
+    ],
+    "createdAt": "2026-09-12"
+  },
+  {
+    "id": "jimmy-duck-holmes",
+    "name": "Jimmy \"Duck\" Holmes",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Jimmy_Duck_Holmes_%26_Dylan_Walshe_At_The_Blue_Front_Cafe%2C_Mississippi_2016.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1947-07-28",
+    "birthPlace": "Bentonia",
+    "birthCoords": [
+      -90.368055555556,
+      32.643888888889
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=PXEWNwvdFzY",
+    "albums": [
+      {
+        "name": "Back to Bentonia (2006)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Cypress Grove (2019)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Jimmy \"Duck\" Holmes (born July 28, 1947) is an American blues musician and proprietor of the Blue Front Cafe on the Mississippi Blues Trail, the oldest surviving juke joint in Mississippi.   Holmes is known as the last of the Bentonia bluesmen, as he is the last blues musician to play the Bentonia School.   Like Skip James and Jack Owens and other blues musicians from Bentonia, Mississippi, Holmes learned to play the blues from Henry Stuckey, the originator of the Bentonia blues.",
+    "activeFrom": "1967",
+    "influences": [
+      "jack-owens",
+      "skip-james"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "dan-auerbach",
+      "marcus-king"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Jimmy_%22Duck%22_Holmes",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-12"
+  },
+  {
+    "id": "bo-weavil-jackson",
+    "name": "Bo Weavil Jackson",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "",
+    "birthCoords": [
+      0,
+      0
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=6vhMsWcEq9E",
+    "albums": [],
+    "description": "Bo Weavil Jackson (dates and places of birth and death unknown) was an American blues singer and guitarist.  He was one of the first country bluesmen to be recorded, in 1926, for Paramount Records and Vocalion Records.  On the latter label he was credited as Sam Butler, which has become the name most commonly used to identify him.",
+    "activeFrom": "1926",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Bo_Weavil_Jackson",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-12"
   }
 ]
