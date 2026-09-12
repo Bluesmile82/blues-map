@@ -45406,7 +45406,9 @@
     ],
     "description": "Derek Trucks (born June 8, 1979) is an American guitarist, songwriter, and founder of The Derek Trucks Band.  He became an official member of The Allman Brothers Band in 1999.  In 2010, he formed the Tedeschi Trucks Band with his wife, blues singer/guitarist Susan Tedeschi.",
     "activeFrom": "1999",
-    "influences": ["duane-allman"],
+    "influences": [
+      "duane-allman"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -45844,7 +45846,7 @@
   {
     "id": "johnny-ace",
     "name": "Johnny Ace",
-    "image": "https://upload.wikimedia.org/wikipedia/en/1/12/Johnny_Ace_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/12/Johnny_Ace_photo.jpg",
     "image_source": null,
     "birthDate": "1929-06-09",
     "birthPlace": "Memphis",
@@ -45964,7 +45966,7 @@
         ]
       }
     ],
-    "instrument": "",
+    "instrument": "Vocals",
     "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=LZAC8P1gOfI",
     "albums": [
@@ -46090,7 +46092,7 @@
   {
     "id": "smiley-lewis",
     "name": "Smiley Lewis",
-    "image": "https://upload.wikimedia.org/wikipedia/en/a/a4/Smiley-Lewis-1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/a4/Smiley-Lewis-1.jpg",
     "image_source": null,
     "birthDate": "1913-07-05",
     "birthPlace": "Calcasieu Parish",
@@ -46142,7 +46144,7 @@
         "youtubeLink": "https://www.youtube.com/watch?v=9k4fdjN_sLk"
       }
     ],
-    "description": "Overton Amos Lemons (July 5, 1913 – October 7, 1966), known as Smiley Lewis, was an American New Orleans rhythm and blues singer and guitarist.  The music journalist Tony Russell wrote that \"Lewis was the unluckiest man in New Orleans.  He hit on a formula for slow-rocking, small-band numbers like 'The Bells Are Ringing' and 'I Hear You Knocking' only to have Fats Domino come up behind him with similar music with a more ingratiating delivery.",
+    "description": "Overton Amos Lemons (July 5, 1913 – October 7, 1966), known as Smiley Lewis, was an American New Orleans rhythm and blues singer and guitarist.  The music journalist Tony Russell wrote that \"Lewis was the unluckiest man in New Orleans.  He hit on a formula for slow-rocking, small-band numbers like 'The Bells Are Ringing' and 'I Hear You Knocking' only to have Fats Domino come up behind him with similar music with a more ingratiating delivery.\"",
     "activeFrom": "1947",
     "influences": [],
     "influencedBy": [
@@ -46157,7 +46159,7 @@
   {
     "id": "eddie-bo",
     "name": "Eddie Bo",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Eddie_Bo_2004.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Eddie_Bo_2004.jpg",
     "image_source": null,
     "birthDate": "1930-09-20",
     "birthPlace": "New Orleans",
@@ -46427,7 +46429,7 @@
   {
     "id": "jimmy-duck-holmes",
     "name": "Jimmy \"Duck\" Holmes",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Jimmy_Duck_Holmes_%26_Dylan_Walshe_At_The_Blue_Front_Cafe%2C_Mississippi_2016.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Jimmy_Duck_Holmes_%26_Dylan_Walshe_At_The_Blue_Front_Cafe%2C_Mississippi_2016.png",
     "image_source": null,
     "birthDate": "1947-07-28",
     "birthPlace": "Bentonia",
