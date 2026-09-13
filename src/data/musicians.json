@@ -358,7 +358,8 @@
     "activeFrom": "1953",
     "influences": [
       "muddy-waters",
-      "bb-king"
+      "bb-king",
+      "detroit-junior"
     ],
     "influencedBy": [
       "stevie-ray-vaughan",
@@ -881,7 +882,8 @@
     "playedWith": [
       "charles-brown",
       "johnny-otis",
-      "wayne-bennett"
+      "wayne-bennett",
+      "detroit-junior"
     ],
     "source": "https://en.wikipedia.org/wiki/Amos_Milburn",
     "secondaryInstruments": [
@@ -1966,7 +1968,8 @@
       "chris-cain",
       "toronzo-cannon",
       "ana-popovic",
-      "jarekus-singleton"
+      "jarekus-singleton",
+      "mem-shannon"
     ],
     "incomplete": false,
     "playedWith": [
@@ -2491,7 +2494,8 @@
     "playedWith": [
       "meade-lux-lewis",
       "t-bone-walker",
-      "pete-johnson"
+      "pete-johnson",
+      "doug-macleod"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Joe_Turner",
     "secondaryInstruments": [],
@@ -2828,7 +2832,8 @@
       "otis-spann",
       "luther-guitar-junior-johnson",
       "bb-king",
-      "clarence-gatemouth-brown"
+      "clarence-gatemouth-brown",
+      "doug-macleod"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
     "secondaryInstruments": [
@@ -4819,7 +4824,8 @@
       "alexis-korner",
       "chris-cain",
       "jack-owens",
-      "wayne-bennett"
+      "wayne-bennett",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Buddy_Guy",
     "secondaryInstruments": [
@@ -8354,7 +8360,8 @@
       "buddy-guy",
       "muddy-waters",
       "albert-collins",
-      "little-walter"
+      "little-walter",
+      "little-mack-simmons"
     ],
     "source": "https://en.wikipedia.org/wiki/Earl_Hooker",
     "secondaryInstruments": [],
@@ -8588,7 +8595,9 @@
       "leroy-carr",
       "roosevelt-sykes"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "detroit-junior"
+    ],
     "incomplete": false,
     "playedWith": [
       "buddy-guy",
@@ -8597,7 +8606,8 @@
       "john-mayall",
       "peter-green",
       "jazz-gillum",
-      "tampa-red"
+      "tampa-red",
+      "detroit-junior"
     ],
     "source": "https://en.wikipedia.org/wiki/Eddie_Boyd",
     "secondaryInstruments": [],
@@ -11182,7 +11192,8 @@
       "little-walter"
     ],
     "influencedBy": [
-      "lucille-hegamin"
+      "lucille-hegamin",
+      "doug-macleod"
     ],
     "incomplete": false,
     "playedWith": [
@@ -11192,7 +11203,8 @@
       "champion-jack-dupree",
       "otis-spann",
       "t-bone-walker",
-      "big-joe-turner"
+      "big-joe-turner",
+      "doug-macleod"
     ],
     "source": "https://en.wikipedia.org/wiki/George_\"Harmonica\"_Smith",
     "secondaryInstruments": [],
@@ -12694,7 +12706,8 @@
       "floyd-jones",
       "willie-brown",
       "luther-allison",
-      "albert-king"
+      "albert-king",
+      "detroit-junior"
     ],
     "source": "https://en.wikipedia.org/wiki/Howlin'_Wolf",
     "secondaryInstruments": [
@@ -13358,7 +13371,8 @@
       "paul-butterfield",
       "mike-bloomfield",
       "johnny-winter",
-      "wayne-bennett"
+      "wayne-bennett",
+      "little-mack-simmons"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Cotton",
     "secondaryInstruments": [
@@ -15347,7 +15361,8 @@
       "muddy-waters",
       "otis-rush",
       "robert-lockwood-jr",
-      "taj-mahal"
+      "taj-mahal",
+      "charlie-baty"
     ],
     "source": "https://en.wikipedia.org/wiki/Joe_Louis_Walker",
     "secondaryInstruments": [
@@ -15782,7 +15797,8 @@
       "eddie-taylor",
       "luther-allison",
       "mike-bloomfield",
-      "lc-robinson"
+      "lc-robinson",
+      "detroit-junior"
     ],
     "source": "https://en.wikipedia.org/wiki/Boom_Boom_(John_Lee_Hooker_song)",
     "secondaryInstruments": [
@@ -16052,7 +16068,8 @@
       "lurrie-bell",
       "pinetop-perkins",
       "buddy-guy",
-      "otis-spann"
+      "otis-spann",
+      "little-mack-simmons"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Primer",
     "secondaryInstruments": [
@@ -17569,7 +17586,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "nappy-brown"
+      "nappy-brown",
+      "charlie-baty"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Watson",
     "secondaryInstruments": [
@@ -17668,7 +17686,8 @@
       "buddy-guy",
       "little-walter",
       "sonny-boy-williamson",
-      "louis-myers"
+      "louis-myers",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Wells",
     "secondaryInstruments": [
@@ -18477,11 +18496,13 @@
     "activeFrom": "1964",
     "influences": [
       "memphis-minnie",
-      "big-mama-thornton"
+      "big-mama-thornton",
+      "detroit-junior"
     ],
     "influencedBy": [
       "bonnie-raitt",
-      "shemekia-copeland"
+      "shemekia-copeland",
+      "big-time-sarah"
     ],
     "incomplete": false,
     "playedWith": [
@@ -20457,7 +20478,8 @@
       "little-hatch",
       "jimmy-mccracklin",
       "rick-estrin",
-      "kim-wilson"
+      "kim-wilson",
+      "little-mack-simmons"
     ],
     "incomplete": false,
     "playedWith": [
@@ -21224,7 +21246,8 @@
     "influences": [],
     "influencedBy": [
       "rosco-gordon",
-      "tommy-tucker"
+      "tommy-tucker",
+      "jack-mcvea"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -21403,7 +21426,8 @@
       "jimmy-mccracklin",
       "john-lee-hooker",
       "jimmy-rogers",
-      "rick-estrin"
+      "rick-estrin",
+      "doug-macleod"
     ],
     "source": "https://en.wikipedia.org/wiki/Lowell_Fulson",
     "secondaryInstruments": [
@@ -22371,7 +22395,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "magic-sam"
+      "magic-sam",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Magic_Slim",
     "secondaryInstruments": [
@@ -22441,7 +22466,8 @@
     "activeFrom": "1900",
     "influences": [],
     "influencedBy": [
-      "lucille-hegamin"
+      "lucille-hegamin",
+      "trixie-smith"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -25268,7 +25294,8 @@
       "lowell-fulson",
       "freddie-king",
       "jimmy-mccracklin",
-      "johnny-otis"
+      "johnny-otis",
+      "doug-macleod"
     ],
     "source": "https://en.wikipedia.org/wiki/Pee_Wee_Crayton",
     "secondaryInstruments": [
@@ -27404,7 +27431,8 @@
       "sonny-boy-williamson",
       "joe-willie-wilkins",
       "tampa-red",
-      "cedell-davis"
+      "cedell-davis",
+      "little-mack-simmons"
     ],
     "source": "https://en.wikipedia.org/wiki/Robert_Nighthawk",
     "secondaryInstruments": [
@@ -30219,7 +30247,8 @@
       "rick-estrin",
       "cedell-davis",
       "kim-wilson",
-      "willie-nix"
+      "willie-nix",
+      "little-mack-simmons"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30829,7 +30858,8 @@
       "muddy-waters",
       "howlin-wolf",
       "bb-king",
-      "willie-nix"
+      "willie-nix",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Sunnyland_Slim",
     "secondaryInstruments": [
@@ -30991,14 +31021,16 @@
       "latimore",
       "lonnie-mack",
       "wayne-bennett",
-      "joe-guitar-hughes"
+      "joe-guitar-hughes",
+      "charlie-baty"
     ],
     "incomplete": false,
     "playedWith": [
       "bb-king",
       "buddy-guy",
       "john-lee-hooker",
-      "muddy-waters"
+      "muddy-waters",
+      "jack-mcvea"
     ],
     "source": "https://en.wikipedia.org/wiki/T-Bone_Walker",
     "secondaryInstruments": [
@@ -31364,7 +31396,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "carl-martin"
+    ],
     "source": "https://en.wikipedia.org/wiki/Ted_Bogan",
     "secondaryInstruments": [
       "Vocals"
@@ -32174,7 +32208,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "robert-ealey"
+    ],
     "source": "https://en.wikipedia.org/wiki/Alan_Wilson_(musician)",
     "secondaryInstruments": [
       "Vocals"
@@ -39034,7 +39070,8 @@
       "carey-bell",
       "buster-benton",
       "john-littlejohn",
-      "lil-ed-williams"
+      "lil-ed-williams",
+      "little-mack-simmons"
     ],
     "createdAt": "2026-09-03"
   },
@@ -41797,7 +41834,8 @@
       "john-littlejohn",
       "eddie-taylor",
       "johnny-man-young",
-      "muddy-waters"
+      "muddy-waters",
+      "charlie-baty"
     ],
     "source": "https://en.wikipedia.org/wiki/Rick_Estrin",
     "secondaryInstruments": [
@@ -42086,7 +42124,8 @@
       "johnny-otis",
       "jay-mcshann",
       "roomful-of-blues",
-      "chris-cain"
+      "chris-cain",
+      "doug-macleod"
     ],
     "source": "https://en.wikipedia.org/wiki/Eddie_%22Cleanhead%22_Vinson",
     "secondaryInstruments": [
@@ -45365,7 +45404,9 @@
     ],
     "description": "Derek Trucks (born June 8, 1979) is an American guitarist, songwriter, and founder of The Derek Trucks Band.  He became an official member of The Allman Brothers Band in 1999.  In 2010, he formed the Tedeschi Trucks Band with his wife, blues singer/guitarist Susan Tedeschi.",
     "activeFrom": "1999",
-    "influences": ["duane-allman"],
+    "influences": [
+      "duane-allman"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -45793,11 +45834,501 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "little-mack-simmons"
+    ],
     "source": "https://en.wikipedia.org/wiki/Studebaker_John",
     "secondaryInstruments": [
       "Harmonica"
     ],
     "createdAt": "2026-09-10"
+  },
+  {
+    "id": "detroit-junior",
+    "name": "Detroit Junior",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1931-10-26",
+    "birthPlace": "Haynes, Arkansas",
+    "birthCoords": [
+      -90.793333333333,
+      34.89
+    ],
+    "deathDate": "2005-08-09",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ZOeXEtnDXhk",
+    "albums": [
+      {
+        "name": "Living Chicago Blues, Volume 6 (1980)",
+        "youtubeLink": "https://www.youtube.com/watch?v=pdzr6KVRlys"
+      }
+    ],
+    "description": "Emery Williams Jr.  (October 26, 1931 – August 9, 2005), known as Detroit Junior, was an American blues pianist, vocalist and songwriter.  He is known for songs such as \"So Unhappy\", \"Call My Job\", \"If I Hadn't Been High\", \"Ella\" and \"Money Tree\".",
+    "activeFrom": "1950",
+    "influences": [
+      "eddie-boyd"
+    ],
+    "influencedBy": [
+      "koko-taylor",
+      "albert-king"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "eddie-boyd",
+      "john-lee-hooker",
+      "amos-milburn",
+      "howlin-wolf"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Detroit_Junior",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-13"
+  },
+  {
+    "id": "trixie-smith",
+    "name": "Trixie Smith",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Trixie_Smith_and_Jennifer_Hinckley_--_Southeast_Region_%2810706711616%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1895",
+    "birthPlace": "Atlanta, Georgia",
+    "birthCoords": [
+      -84.38972222222222,
+      33.754444444444445
+    ],
+    "deathDate": "1943-09-21",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.00611111111111,
+      40.71277777777778
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Vaudeville Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=a1LR3ftPMJs",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 1: 1922-1924 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=vJkjIdZvmcI"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 2: 1925-1939 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=W2i2DGki4cQ"
+      }
+    ],
+    "description": "Trixie Smith was an American classic blues singer and vaudeville entertainer whose 1922 recording \"My Man Rocks Me (With One Steady Roll)\" is often cited as one of the earliest records to use \"rock\" and \"roll\" in a sexual, secular sense, foreshadowing the language of rock and roll decades later. Active on Black Swan and Paramount Records through the 1920s and on Decca in the 1930s, she recorded alongside major jazz figures including Louis Armstrong, Fletcher Henderson's Orchestra, and Sidney Bechet, and also appeared in several films, including work with director Oscar Micheaux.",
+    "activeFrom": "1920",
+    "influences": [
+      "mamie-smith"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Trixie_Smith",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-13"
+  },
+  {
+    "id": "doug-macleod",
+    "name": "Doug MacLeod",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doug%20mcleod9529.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1946-04-21",
+    "birthPlace": "New York City",
+    "birthCoords": [
+      -74.00611111111111,
+      40.71277777777778
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=yeM6xQJTMhg",
+    "albums": [
+      {
+        "name": "Come to Find (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=FcDjRdpqgo4"
+      }
+    ],
+    "description": "Doug MacLeod (born April 21, 1946) is an American acoustic blues storyteller, songwriter, and guitarist.  He previously served as the voice for the Blues Showcase of Continental Airlines.  Over his career, MacLeod has won multiple Blues Music Awards, including Acoustic Artist of the Year in 2023.",
+    "activeFrom": "1966",
+    "influences": [
+      "george-harmonica-smith"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "george-harmonica-smith",
+      "big-joe-turner",
+      "pee-wee-crayton",
+      "eddie-cleanhead-vinson",
+      "lowell-fulson",
+      "big-mama-thornton"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Doug_MacLeod_(musician)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-13"
+  },
+  {
+    "id": "mem-shannon",
+    "name": "Mem Shannon",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Mem_Shannon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": null,
+    "birthDate": "1959-12-21",
+    "birthPlace": "New Orleans, Louisiana",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=rtt9blO1n3c",
+    "albums": [
+      {
+        "name": "A Cab Driver's Blues (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=vx2kLCkoq5A"
+      }
+    ],
+    "description": "Mem Shannon (born December 21, 1959, in New Orleans, Louisiana, United States) is an American blues musician.   He is currently signed to Toronto's NorthernBlues Music.  Shannon is a former taxi-cab driver turned bluesman.",
+    "activeFrom": "1979",
+    "influences": [
+      "bb-king"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Mem_Shannon",
+    "secondaryInstruments": [
+      "Clarinet"
+    ],
+    "createdAt": "2026-09-13"
+  },
+  {
+    "id": "charlie-baty",
+    "name": "Charlie Baty",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rick%20Estrin%20%26%20The%20Nightcats%20with%20Charlie%20Baty%20Rawa%20Blues%202010%20008.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1953-01-01",
+    "birthPlace": "Sacramento, California",
+    "birthCoords": [
+      -121.4944,
+      38.5816
+    ],
+    "deathDate": "2020-03-06",
+    "deathPlace": "Vacaville, California",
+    "deathCoords": [
+      -121.9877,
+      38.3566
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=27bZtJ6gF0c",
+    "albums": [
+      {
+        "name": "Night Vision (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=zpxwC9VwHl4"
+      }
+    ],
+    "description": "Charlie \"Little Charlie\" Baty was an American blues guitarist who co-founded Little Charlie & the Nightcats in Sacramento in 1976 with harmonica player and vocalist Rick Estrin, building a reputation for fusing jump blues, swing, and West Coast blues with jazz-inflected guitar solos. The band toured internationally for decades and released acclaimed albums including Night Vision, before Baty stepped back from touring in 2008 and the group continued as Rick Estrin & The Nightcats.",
+    "activeFrom": "1976",
+    "influences": [
+      "t-bone-walker"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "rick-estrin",
+      "junior-watson",
+      "joe-louis-walker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Charlie_Baty",
+    "secondaryInstruments": [
+      "Harmonica"
+    ],
+    "createdAt": "2026-09-13"
+  },
+  {
+    "id": "carl-martin",
+    "name": "Carl Martin",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carl%20Martin%201973.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1906-04-01",
+    "birthPlace": "Big Stone Gap, Virginia",
+    "birthCoords": [
+      -82.7768,
+      36.8651
+    ],
+    "deathDate": "1979-05-10",
+    "deathPlace": "Pontiac, Michigan",
+    "deathCoords": [
+      -83.291,
+      42.6389
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=pp1HtBq9S6E",
+    "albums": [
+      {
+        "name": "Crow Jane (1935)",
+        "youtubeLink": "https://www.youtube.com/watch?v=oDTYjYNsCw0"
+      }
+    ],
+    "description": "Carl Martin (April 1 or 15, 1906 – May 10, 1979) was an American Piedmont blues musician and vocalist who was proficient at playing several instruments and performed in various musical styles. \nMartin was born in Big Stone Gap, Virginia.  He made his earliest recordings as a member of several groups, including the Four Keys, the Tennessee Chocolate Drops, and the Wandering Troubadours.",
+    "activeFrom": "1934",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ted-bogan"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Carl_Martin_(musician)",
+    "secondaryInstruments": [
+      "Mandolin",
+      "Vocals"
+    ],
+    "createdAt": "2026-09-13"
+  },
+  {
+    "id": "robert-ealey",
+    "name": "Robert Ealey",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/1985602-28-RobertEaley.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1925-12-06",
+    "birthPlace": "Texarkana, Texas",
+    "birthCoords": [
+      -94.0377,
+      33.4251
+    ],
+    "deathDate": "2001-03-08",
+    "deathPlace": "Fort Worth, Texas",
+    "deathCoords": [
+      -97.3308,
+      32.7555
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=NX780U5JraE",
+    "albums": [
+      {
+        "name": "Live at the New Bluebird Nite Club (1993)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Robert Daniel Ealey (December 6, 1925 – March 8, 2001) was an American electric blues singer, who performed Texas blues. Among other releases, he recorded a couple of albums for Black Top Records in the 1990s, having earlier formed a duo called the Boogie Chillun Boys with fellow Fort Worth guitarist U.P. Wilson. He co-owned and performed for over thirty years at the Bluebird Club in Fort Worth, a base that made him a mentor figure to younger Texas blues players.",
+    "activeFrom": "1951",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "up-wilson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Robert_Ealey",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-13"
+  },
+  {
+    "id": "jack-mcvea",
+    "name": "Jack McVea",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Black_%26_White_Record.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1914-11-05",
+    "birthPlace": "Los Angeles, California",
+    "birthCoords": [
+      -118.2437,
+      34.0522
+    ],
+    "deathDate": "2000-12-27",
+    "deathPlace": "Los Angeles, California",
+    "deathCoords": [
+      -118.2437,
+      34.0522
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Saxophone",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=tfiNGVA1968",
+    "albums": [
+      {
+        "name": "Open the Door, Richard (1984 compilation)",
+        "youtubeLink": "https://www.youtube.com/watch?v=eYHwmFp2jY8"
+      }
+    ],
+    "description": "Jack McVea was an American jazz and jump blues saxophonist and clarinetist who joined Lionel Hampton's orchestra in 1940 before leading his own combo on Black & White Records. His 1946 novelty recording \"Open the Door, Richard,\" featuring vocalist Rabon Tarrant, became a national hit and one of the defining records of the jump blues era, and he continued recording and performing in Los Angeles, including a long-running residency with the Royal Street Bachelors at Disneyland.",
+    "activeFrom": "1940",
+    "influences": [
+      "louis-jordan"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "t-bone-walker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Jack_McVea",
+    "secondaryInstruments": [
+      "Clarinet"
+    ],
+    "createdAt": "2026-09-13"
+  },
+  {
+    "id": "little-mack-simmons",
+    "name": "Little Mack Simmons",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Little%20Mack%20Simmons.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1933-01-25",
+    "birthPlace": "Twist, Arkansas",
+    "birthCoords": [
+      -90.507222222222,
+      35.376111111111
+    ],
+    "deathDate": "2000-10-24",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ziS9NUv9ASo",
+    "albums": [
+      {
+        "name": "The Best of Little Mack Simmons",
+        "youtubeLink": "https://www.youtube.com/watch?v=e579giTQSKE"
+      }
+    ],
+    "description": "Malcolm \"Little Mack\" Simmons (January 25, 1933 – October 24, 2000) was an American Chicago blues harmonica player, singer, and songwriter.  He ran the Simmons Records label in the 1970s.",
+    "activeFrom": "1954",
+    "influences": [
+      "sonny-boy-williamson",
+      "little-walter"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "james-cotton",
+      "robert-nighthawk",
+      "earl-hooker",
+      "studebaker-john",
+      "john-primer",
+      "willie-kent"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Little_Mack_Simmons",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-13"
+  },
+  {
+    "id": "big-time-sarah",
+    "name": "Big Time Sarah",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1953-01-31",
+    "birthPlace": "Coldwater, Mississippi",
+    "birthCoords": [
+      -89.9739,
+      34.6897
+    ],
+    "deathDate": "2015-06-13",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=7e8CgAFEQMU",
+    "albums": [
+      {
+        "name": "Lay It on 'em Girls (1993)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Sarah Streeter (January 31, 1953 – June 13, 2015), better known by her stage name Big Time Sarah, was an American blues singer.",
+    "activeFrom": "1967",
+    "influences": [
+      "koko-taylor"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "magic-slim",
+      "buddy-guy",
+      "junior-wells",
+      "sunnyland-slim"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Big_Time_Sarah",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-13"
   }
 ]
