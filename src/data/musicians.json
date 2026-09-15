@@ -358,7 +358,8 @@
     "activeFrom": "1953",
     "influences": [
       "muddy-waters",
-      "bb-king"
+      "bb-king",
+      "detroit-junior"
     ],
     "influencedBy": [
       "stevie-ray-vaughan",
@@ -881,7 +882,8 @@
     "playedWith": [
       "charles-brown",
       "johnny-otis",
-      "wayne-bennett"
+      "wayne-bennett",
+      "detroit-junior"
     ],
     "source": "https://en.wikipedia.org/wiki/Amos_Milburn",
     "secondaryInstruments": [
@@ -4138,7 +4140,9 @@
       "howlin-wolf",
       "roy-brown"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "tyrone-davis"
+    ],
     "incomplete": false,
     "playedWith": [
       "rosco-gordon",
@@ -4819,7 +4823,8 @@
       "alexis-korner",
       "chris-cain",
       "jack-owens",
-      "wayne-bennett"
+      "wayne-bennett",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Buddy_Guy",
     "secondaryInstruments": [
@@ -8354,7 +8359,8 @@
       "buddy-guy",
       "muddy-waters",
       "albert-collins",
-      "little-walter"
+      "little-walter",
+      "little-mack-simmons"
     ],
     "source": "https://en.wikipedia.org/wiki/Earl_Hooker",
     "secondaryInstruments": [],
@@ -8597,7 +8603,8 @@
       "john-mayall",
       "peter-green",
       "jazz-gillum",
-      "tampa-red"
+      "tampa-red",
+      "detroit-junior"
     ],
     "source": "https://en.wikipedia.org/wiki/Eddie_Boyd",
     "secondaryInstruments": [],
@@ -9546,7 +9553,9 @@
       "bobby-parker",
       "wayne-bennett"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "gary-moore"
+    ],
     "incomplete": false,
     "playedWith": [
       "john-mayall",
@@ -11844,7 +11853,8 @@
       "walter-wolfman-washington",
       "johnny-guitar-watson",
       "barbara-lynn",
-      "chick-willis"
+      "chick-willis",
+      "guitar-gable"
     ],
     "incomplete": false,
     "playedWith": [
@@ -12694,7 +12704,8 @@
       "floyd-jones",
       "willie-brown",
       "luther-allison",
-      "albert-king"
+      "albert-king",
+      "detroit-junior"
     ],
     "source": "https://en.wikipedia.org/wiki/Howlin'_Wolf",
     "secondaryInstruments": [
@@ -13358,7 +13369,8 @@
       "paul-butterfield",
       "mike-bloomfield",
       "johnny-winter",
-      "wayne-bennett"
+      "wayne-bennett",
+      "little-mack-simmons"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Cotton",
     "secondaryInstruments": [
@@ -15782,7 +15794,9 @@
       "eddie-taylor",
       "luther-allison",
       "mike-bloomfield",
-      "lc-robinson"
+      "lc-robinson",
+      "detroit-junior",
+      "kim-simmonds"
     ],
     "source": "https://en.wikipedia.org/wiki/Boom_Boom_(John_Lee_Hooker_song)",
     "secondaryInstruments": [
@@ -15903,7 +15917,8 @@
       "otis-rush",
       "peter-green",
       "coco-montoya",
-      "duster-bennett"
+      "duster-bennett",
+      "gary-moore"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Mayall",
     "secondaryInstruments": [
@@ -16052,7 +16067,8 @@
       "lurrie-bell",
       "pinetop-perkins",
       "buddy-guy",
-      "otis-spann"
+      "otis-spann",
+      "little-mack-simmons"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Primer",
     "secondaryInstruments": [
@@ -17668,7 +17684,8 @@
       "buddy-guy",
       "little-walter",
       "sonny-boy-williamson",
-      "louis-myers"
+      "louis-myers",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Wells",
     "secondaryInstruments": [
@@ -18477,7 +18494,8 @@
     "activeFrom": "1964",
     "influences": [
       "memphis-minnie",
-      "big-mama-thornton"
+      "big-mama-thornton",
+      "detroit-junior"
     ],
     "influencedBy": [
       "bonnie-raitt",
@@ -18876,7 +18894,8 @@
       "lightnin-slim",
       "kenny-neal",
       "lucky-peterson",
-      "jimmie-vaughan"
+      "jimmie-vaughan",
+      "guitar-gable"
     ],
     "source": "https://en.wikipedia.org/wiki/Lazy_Lester",
     "secondaryInstruments": [
@@ -20235,7 +20254,9 @@
       "bb-king",
       "buddy-guy"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "tyrone-davis"
+    ],
     "incomplete": false,
     "playedWith": [
       "albert-king"
@@ -22371,7 +22392,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "magic-sam"
+      "magic-sam",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Magic_Slim",
     "secondaryInstruments": [
@@ -25634,7 +25656,8 @@
       "eric-clapton"
     ],
     "influencedBy": [
-      "lonesome-sundown"
+      "lonesome-sundown",
+      "gary-moore"
     ],
     "incomplete": false,
     "playedWith": [
@@ -27189,7 +27212,8 @@
       "keb-mo",
       "lonnie-mack",
       "sonny-landreth",
-      "ana-popovic"
+      "ana-popovic",
+      "frank-edwards"
     ],
     "incomplete": false,
     "playedWith": [
@@ -27397,14 +27421,16 @@
     ],
     "influencedBy": [
       "cedell-davis",
-      "louis-myers"
+      "louis-myers",
+      "little-mack-simmons"
     ],
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson",
       "joe-willie-wilkins",
       "tampa-red",
-      "cedell-davis"
+      "cedell-davis",
+      "little-mack-simmons"
     ],
     "source": "https://en.wikipedia.org/wiki/Robert_Nighthawk",
     "secondaryInstruments": [
@@ -29753,7 +29779,9 @@
       "juke-boy-bonner"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "guitar-gable"
+    ],
     "source": "https://en.wikipedia.org/wiki/Slim_Harpo",
     "secondaryInstruments": [
       "Guitar",
@@ -30823,13 +30851,16 @@
       "robert-johnson",
       "big-maceo"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "big-time-sarah"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
       "howlin-wolf",
       "bb-king",
-      "willie-nix"
+      "willie-nix",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Sunnyland_Slim",
     "secondaryInstruments": [
@@ -31209,7 +31240,9 @@
     ],
     "description": "Taj Mahal (born Henry St. Claire Fredericks, May 17, 1942) is an American blues musician. A multi-instrumentalist who plays guitar, piano, and banjo, he has been a leading figure in blues and world music since the 1960s, known for incorporating diverse musical influences into his blues foundation.",
     "activeFrom": "1964",
-    "influences": [],
+    "influences": [
+      "henry-thomas"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -32874,7 +32907,9 @@
       "clarence-carter"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "frank-edwards"
+    ],
     "source": "https://en.wikipedia.org/wiki/Washboard_Sam",
     "secondaryInstruments": [
       "Vocals"
@@ -33894,7 +33929,8 @@
       "buddy-guy",
       "albert-king",
       "bb-king",
-      "willie-dixon"
+      "willie-dixon",
+      "big-time-sarah"
     ],
     "source": "https://en.wikipedia.org/wiki/Travelin'_Light_(Zora_Young_album)",
     "secondaryInstruments": [],
@@ -39034,7 +39070,8 @@
       "carey-bell",
       "buster-benton",
       "john-littlejohn",
-      "lil-ed-williams"
+      "lil-ed-williams",
+      "little-mack-simmons"
     ],
     "createdAt": "2026-09-03"
   },
@@ -42293,7 +42330,8 @@
       "mahalia-jackson"
     ],
     "influencedBy": [
-      "johnny-rawls"
+      "johnny-rawls",
+      "tyrone-davis"
     ],
     "incomplete": false,
     "playedWith": [
@@ -45799,5 +45837,590 @@
       "Harmonica"
     ],
     "createdAt": "2026-09-10"
+  },
+  {
+    "id": "henry-thomas",
+    "name": "Henry Thomas",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Thomas%20Blues%20Musician.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1874",
+    "birthPlace": "Big Sandy",
+    "birthCoords": [
+      -95.1122,
+      32.5847
+    ],
+    "deathDate": "1930",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=-GXkW5RjRs8",
+    "albums": [
+      {
+        "name": "Texas Worried Blues (Complete Recorded Works 1927-1929) (1990)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Ragtime Texas: Complete Recorded Works in Chronological Order (1927-1929) (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=NwqogSuDdio"
+      },
+      {
+        "name": "Texas Blues: Early Blues Masters From the Lone Star State (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=b8NJ-MIfFHI"
+      },
+      {
+        "name": "Bull Doze Blues (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ds3wXLxM6kg"
+      }
+    ],
+    "description": "Henry Thomas (1874 – 1930) was an American country blues singer, songster and musician. Although his recording career, in the late 1920s, was brief, Thomas influenced performers including Bob Dylan, Taj Mahal, the Lovin' Spoonful, the Grateful Dead, and Canned Heat. Often billed as \"Ragtime Texas\", Thomas's style is an early example of what later became known as Texas blues guitar.",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [
+      "taj-mahal"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Henry_Thomas_(blues_musician)",
+    "secondaryInstruments": [
+      "Quills",
+      "Vocals"
+    ],
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": "gary-moore",
+    "name": "Gary Moore",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gary-Moore-at-Pite-Havsbad.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1952-04-04",
+    "birthPlace": "Belfast",
+    "birthCoords": [
+      -5.93,
+      54.596666666666664
+    ],
+    "deathDate": "2011-02-06",
+    "deathPlace": "Estepona",
+    "deathCoords": [
+      -5.149444444444445,
+      36.42444444444445
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "British Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dwc7ZEYfWYc",
+    "albums": [
+      {
+        "name": "The Best of Gary Moore: Nuclear Attack (1985)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UpocxpMmCug"
+      },
+      {
+        "name": "Parisienne Walkways (1987)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xulcsArPlF0"
+      },
+      {
+        "name": "And Then the Man Said to His Guitar… (1988)",
+        "youtubeLink": "https://www.youtube.com/watch?v=t1kHdIU8Uek"
+      },
+      {
+        "name": "Hot & Heavy Metal (1988)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cVaKky3J3LI"
+      },
+      {
+        "name": "Milestones (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0h0fLUweizI"
+      },
+      {
+        "name": "13 Rock Hard Hits (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=z-3ecGiY02E"
+      }
+    ],
+    "description": "Robert William Gary Moore (4 April 1952 – 6 February 2011) was a Northern Irish musician. Over the course of his career, he played in various groups and performed a range of music, including blues, blues rock, hard rock, heavy metal, and jazz fusion. Influenced by Peter Green and Eric Clapton, Moore began his career in the late 1960s when he joined Skid Row, with whom he released two albums.",
+    "activeFrom": "1969",
+    "influences": [
+      "eric-clapton",
+      "peter-green"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "john-mayall"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Gary_Moore",
+    "secondaryInstruments": [
+      "Gibson Flying V",
+      "Fender Stratocaster",
+      "Jackson Soloist"
+    ],
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": "detroit-junior",
+    "name": "Detroit Junior",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/Detroit_Junior_College_pic.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1931-10-26",
+    "birthPlace": "Haynes",
+    "birthCoords": [
+      -90.793333333333,
+      34.89
+    ],
+    "deathDate": "2005-08-09",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=84rlwkhfr78",
+    "albums": [
+      {
+        "name": "Living Chicago Blues, Volume 6 (1980)",
+        "youtubeLink": "https://www.youtube.com/watch?v=pdzr6KVRlys"
+      }
+    ],
+    "description": "Emery Williams Jr., known as Detroit Junior (1931-2005), was a Chicago blues pianist, vocalist and songwriter known for songs including \"So Unhappy,\" \"Call My Job\" and \"If I Hadn't Been High.\" He backed touring musicians such as John Lee Hooker and Amos Milburn in Detroit before Eddie Boyd brought him to Chicago in 1956, and he later toured and recorded with Howlin' Wolf's band in the early 1970s. His songs were covered by artists including Koko Taylor and Albert King, and he remained a fixture of Chicago blues clubs until his death.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [
+      "koko-taylor",
+      "albert-king"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "eddie-boyd",
+      "john-lee-hooker",
+      "amos-milburn",
+      "howlin-wolf"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Detroit_Junior",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": "tyrone-davis",
+    "name": "Tyrone Davis",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tyrone%20Davis%20oct%201970.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1938-05-04",
+    "birthPlace": "Greenville",
+    "birthCoords": [
+      -91.05194444444444,
+      33.39944444444444
+    ],
+    "deathDate": "2005-02-09",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=QUGLXEeevyc",
+    "albums": [
+      {
+        "name": "Greatest Hits (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=p2KrYjhK_iU"
+      },
+      {
+        "name": "The Best of Tyrone Davis: In the Mood (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=s88yoZ824GA"
+      },
+      {
+        "name": "Greatest Hits (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=p2KrYjhK_iU"
+      },
+      {
+        "name": "Dakar Records A's & B's - The Hit Singles (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UETI8IP6E8w"
+      },
+      {
+        "name": "Give It Up (Turn It Loose): The Very Best of the Columbia Years (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=s88yoZ824GA"
+      },
+      {
+        "name": "The Ultimate (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=40QlP2sLOiQ"
+      }
+    ],
+    "description": "Tyrone Davis (born Tyrone D. Fettson or Tyrone D. Branch, October 3, 1937 – February 9, 2005) (although many sources have his date of birth as May 4, 1938) was an American blues and soul singer with a long list of hit records over more than 20 years.",
+    "activeFrom": "1968",
+    "influences": [
+      "bobby-blue-bland",
+      "little-milton",
+      "otis-clay"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Tyrone_Davis",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": "ann-peebles",
+    "name": "Ann Peebles",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ann%20Peebles%20performing%20at%20the%20Beale%20Street%20Music%20Festival%20in%202007.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1947-04-27",
+    "birthPlace": "St. Louis",
+    "birthCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Khcwl0duFqE",
+    "albums": [
+      {
+        "name": "I'm Gonna Tear Your Playhouse Down (1985)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cyMsvE8UcbI"
+      },
+      {
+        "name": "99 Lbs (1987)",
+        "youtubeLink": "https://www.youtube.com/watch?v=2fhPwjHuX2U"
+      },
+      {
+        "name": "Greatest Hits (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=jeGZUZdF5V4"
+      },
+      {
+        "name": "Tellin' It & If This Is Heaven (1992)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Straight From the Heart & I Can't Stand the Rain (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=FdBbVySu6_Y"
+      },
+      {
+        "name": "This Is Ann Peebles & The Handwriting Is on the Wall (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=LhdmJM8Bd4g"
+      }
+    ],
+    "description": "Ann Lee Peebles (born April 27, 1947) is a retired American singer and songwriter who gained popularity for her Memphis soul albums of the 1970s while signed to Hi Records. Her most successful singles include \"I Can't Stand the Rain,\" which she wrote with her husband Don Bryant and radio broadcaster Bernie Miller, and \"I'm Gonna Tear Your Playhouse Down.\" In 2014, she was inducted into the Memphis Music Hall of Fame.",
+    "activeFrom": "1969",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Ann_Peebles",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": "frank-edwards",
+    "name": "Frank Edwards",
+    "image": "https://upload.wikimedia.org/wikipedia/en/c/c2/Crystal_Clear_app_Login_Manager_2.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1909-03-20",
+    "birthPlace": "Washington",
+    "birthCoords": [
+      -82.739305555556,
+      33.736805555556
+    ],
+    "deathDate": "2002-03-22",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=C_BYeF_5vEQ",
+    "albums": [
+      {
+        "name": "Chicken Raid (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=34rhe-mCQGA"
+      }
+    ],
+    "description": "Frank Edwards (March 20, 1909 - March 22, 2002) was an American Piedmont blues guitarist, harmonica player and singer from Washington, Georgia, also billed over his long career as Mr. Frank, Black Frank and Mr. Cleanhead. He recorded across five decades, from OKeh Records in 1940 through Trix Records in the 1970s and the Music Maker Relief Foundation late in life, with signature recordings including \"Three Women Blues\" and a 1941 cover of Robert Johnson's \"Terraplane Blues\" cut alongside Washboard Sam.",
+    "activeFrom": "1940",
+    "influences": [
+      "robert-johnson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "washboard-sam"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Frank_Edwards_(blues_musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": "guitar-gable",
+    "name": "Guitar Gable",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1937-08-17",
+    "birthPlace": "Bellevue",
+    "birthCoords": [
+      -93.52222222,
+      32.67333333
+    ],
+    "deathDate": "2017-01-28",
+    "deathPlace": "Opelousas",
+    "deathCoords": [
+      -92.0815,
+      30.533527777777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Baton Rouge",
+        "coords": [
+          -91.1871,
+          30.4515
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=NgsdbqRtwCc",
+    "albums": [
+      {
+        "name": "This Should Go On Forever (1957)",
+        "youtubeLink": "https://www.youtube.com/watch?v=NgsdbqRtwCc"
+      }
+    ],
+    "description": "Gabriel Perrodin (August 17, 1937 – January 28, 2017), known as Guitar Gable, was an American Louisiana blues, swamp blues and swamp pop musician. He was best known for recording the original version of \"This Should Go On Forever\", and his part in the vibrant swamp blues and pop scene in Louisiana in the 1950s and early 1960s.",
+    "activeFrom": "1957",
+    "influences": [
+      "guitar-slim"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "slim-harpo",
+      "lazy-lester"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Guitar_Gable",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": "little-mack-simmons",
+    "name": "Little Mack Simmons",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Little%20Mack%20Simmons.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1933-01-25",
+    "birthPlace": "Twist",
+    "birthCoords": [
+      -90.507222222222,
+      35.376111111111
+    ],
+    "deathDate": "2000-10-24",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ziS9NUv9ASo",
+    "albums": [
+      {
+        "name": "The Best of Little Mack Simmons",
+        "youtubeLink": "https://www.youtube.com/watch?v=e579giTQSKE"
+      }
+    ],
+    "description": "Malcolm \"Little Mack\" Simmons (January 25, 1933 – October 24, 2000) was an American Chicago blues harmonica player, singer, and songwriter. He ran the Simmons Records label in the 1970s.",
+    "activeFrom": "1954",
+    "influences": [
+      "robert-nighthawk"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "robert-nighthawk",
+      "james-cotton",
+      "john-primer",
+      "willie-kent",
+      "earl-hooker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Little_Mack_Simmons",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": "big-time-sarah",
+    "name": "Big Time Sarah",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1953-01-31",
+    "birthPlace": "Coldwater",
+    "birthCoords": [
+      -89.9739,
+      34.6897
+    ],
+    "deathDate": "2015-06-13",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=7e8CgAFEQMU",
+    "albums": [
+      {
+        "name": "Lay It on 'Em Girls (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Wv9JV2McEMI"
+      }
+    ],
+    "description": "Sarah Streeter (January 31, 1953 - June 13, 2015), known as Big Time Sarah, was a Chicago blues singer who started out in gospel choirs before turning to the blues clubs of Chicago's South Side as a teenager. She performed alongside Magic Slim, Buddy Guy, Junior Wells and Zora Young, and her work with Sunnyland Slim led to her first solo single on his Airway Records label. From 1989 she fronted her own band, the BTS Express, recording a string of albums for Delmark Records into the 2010s.",
+    "activeFrom": "1975",
+    "influences": [
+      "sunnyland-slim"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "magic-slim",
+      "buddy-guy",
+      "junior-wells",
+      "sunnyland-slim",
+      "zora-young"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Big_Time_Sarah",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": "kim-simmonds",
+    "name": "Kim Simmonds",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kim%20Simmonds%202002%20(cropped).jpg?width=500",
+    "image_source": null,
+    "birthDate": "1947-12-05",
+    "birthPlace": "Newbridge",
+    "birthCoords": [
+      -3.136,
+      51.67
+    ],
+    "deathDate": "2022-12-13",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "British Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=oQTpoboiU40",
+    "albums": [
+      {
+        "name": "Hellbound Train (1972)",
+        "youtubeLink": "https://www.youtube.com/watch?v=N6TkCLDcC7o"
+      }
+    ],
+    "description": "Kim Maiden Simmonds (5 December 1947 – 13 December 2022) was a Welsh musician. He was the founder, guitarist, primary songwriter and sole constant member of the blues rock band Savoy Brown, which he formed in 1965. Simmonds had led Savoy Brown since its inception, appearing on every Savoy Brown release.",
+    "activeFrom": "1965",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "john-lee-hooker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Kim_Simmonds",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-15"
   }
 ]
