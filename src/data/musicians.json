@@ -9599,7 +9599,9 @@
       "bobby-parker",
       "wayne-bennett"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "gary-moore"
+    ],
     "incomplete": false,
     "playedWith": [
       "john-mayall",
@@ -11910,7 +11912,8 @@
       "walter-wolfman-washington",
       "johnny-guitar-watson",
       "barbara-lynn",
-      "chick-willis"
+      "chick-willis",
+      "guitar-gable"
     ],
     "incomplete": false,
     "playedWith": [
@@ -15863,7 +15866,8 @@
       "mike-bloomfield",
       "lc-robinson",
       "detroit-junior",
-      "mel-brown"
+      "mel-brown",
+      "kim-simmonds"
     ],
     "source": "https://en.wikipedia.org/wiki/Boom_Boom_(John_Lee_Hooker_song)",
     "secondaryInstruments": [
@@ -15986,7 +15990,8 @@
       "coco-montoya",
       "duster-bennett",
       "mark-hummel",
-      "long-john-baldry"
+      "long-john-baldry",
+      "gary-moore"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Mayall",
     "secondaryInstruments": [
@@ -18974,7 +18979,8 @@
       "lightnin-slim",
       "kenny-neal",
       "lucky-peterson",
-      "jimmie-vaughan"
+      "jimmie-vaughan",
+      "guitar-gable"
     ],
     "source": "https://en.wikipedia.org/wiki/Lazy_Lester",
     "secondaryInstruments": [
@@ -25760,7 +25766,8 @@
       "eric-clapton"
     ],
     "influencedBy": [
-      "lonesome-sundown"
+      "lonesome-sundown",
+      "gary-moore"
     ],
     "incomplete": false,
     "playedWith": [
@@ -27318,7 +27325,8 @@
       "keb-mo",
       "lonnie-mack",
       "sonny-landreth",
-      "ana-popovic"
+      "ana-popovic",
+      "frank-edwards"
     ],
     "incomplete": false,
     "playedWith": [
@@ -29890,7 +29898,9 @@
       "juke-boy-bonner"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "guitar-gable"
+    ],
     "source": "https://en.wikipedia.org/wiki/Slim_Harpo",
     "secondaryInstruments": [
       "Guitar",
@@ -33031,7 +33041,9 @@
       "clarence-carter"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "frank-edwards"
+    ],
     "source": "https://en.wikipedia.org/wiki/Washboard_Sam",
     "secondaryInstruments": [
       "Vocals"
@@ -45986,7 +45998,7 @@
   {
     "id": "detroit-junior",
     "name": "Detroit Junior",
-    "image": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/Detroit_Junior_College_pic.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "image_source": null,
     "birthDate": "1931-10-26",
     "birthPlace": "Haynes, Arkansas",
@@ -48502,5 +48514,278 @@
     "source": "https://en.wikipedia.org/wiki/Edith_Wilson_(singer)",
     "secondaryInstruments": [],
     "createdAt": "2026-09-17"
+  },
+  {
+    "id": "gary-moore",
+    "name": "Gary Moore",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gary-Moore-at-Pite-Havsbad.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1952-04-04",
+    "birthPlace": "Belfast",
+    "birthCoords": [
+      -5.93,
+      54.596666666666664
+    ],
+    "deathDate": "2011-02-06",
+    "deathPlace": "Estepona",
+    "deathCoords": [
+      -5.149444444444445,
+      36.42444444444445
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "British Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dwc7ZEYfWYc",
+    "albums": [
+      {
+        "name": "The Best of Gary Moore: Nuclear Attack (1985)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UpocxpMmCug"
+      },
+      {
+        "name": "Parisienne Walkways (1987)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xulcsArPlF0"
+      },
+      {
+        "name": "And Then the Man Said to His Guitar… (1988)",
+        "youtubeLink": "https://www.youtube.com/watch?v=t1kHdIU8Uek"
+      },
+      {
+        "name": "Hot & Heavy Metal (1988)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cVaKky3J3LI"
+      },
+      {
+        "name": "Milestones (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0h0fLUweizI"
+      },
+      {
+        "name": "13 Rock Hard Hits (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=z-3ecGiY02E"
+      }
+    ],
+    "description": "Robert William Gary Moore (4 April 1952 – 6 February 2011) was a Northern Irish musician. Over the course of his career, he played in various groups and performed a range of music, including blues, blues rock, hard rock, heavy metal, and jazz fusion. Influenced by Peter Green and Eric Clapton, Moore began his career in the late 1960s when he joined Skid Row, with whom he released two albums.",
+    "activeFrom": "1969",
+    "influences": [
+      "eric-clapton",
+      "peter-green"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "john-mayall"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Gary_Moore",
+    "secondaryInstruments": [
+      "Gibson Flying V",
+      "Fender Stratocaster",
+      "Jackson Soloist"
+    ],
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": "ann-peebles",
+    "name": "Ann Peebles",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ann%20Peebles%20performing%20at%20the%20Beale%20Street%20Music%20Festival%20in%202007.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1947-04-27",
+    "birthPlace": "St. Louis",
+    "birthCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Khcwl0duFqE",
+    "albums": [
+      {
+        "name": "I'm Gonna Tear Your Playhouse Down (1985)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cyMsvE8UcbI"
+      },
+      {
+        "name": "99 Lbs (1987)",
+        "youtubeLink": "https://www.youtube.com/watch?v=2fhPwjHuX2U"
+      },
+      {
+        "name": "Greatest Hits (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=jeGZUZdF5V4"
+      },
+      {
+        "name": "Tellin' It & If This Is Heaven (1992)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Straight From the Heart & I Can't Stand the Rain (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=FdBbVySu6_Y"
+      },
+      {
+        "name": "This Is Ann Peebles & The Handwriting Is on the Wall (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=LhdmJM8Bd4g"
+      }
+    ],
+    "description": "Ann Lee Peebles (born April 27, 1947) is a retired American singer and songwriter who gained popularity for her Memphis soul albums of the 1970s while signed to Hi Records. Her most successful singles include \"I Can't Stand the Rain,\" which she wrote with her husband Don Bryant and radio broadcaster Bernie Miller, and \"I'm Gonna Tear Your Playhouse Down.\" In 2014, she was inducted into the Memphis Music Hall of Fame.",
+    "activeFrom": "1969",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Ann_Peebles",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": "frank-edwards",
+    "name": "Frank Edwards",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1909-03-20",
+    "birthPlace": "Washington",
+    "birthCoords": [
+      -82.739305555556,
+      33.736805555556
+    ],
+    "deathDate": "2002-03-22",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=C_BYeF_5vEQ",
+    "albums": [
+      {
+        "name": "Chicken Raid (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=34rhe-mCQGA"
+      }
+    ],
+    "description": "Frank Edwards (March 20, 1909 - March 22, 2002) was an American Piedmont blues guitarist, harmonica player and singer from Washington, Georgia, also billed over his long career as Mr. Frank, Black Frank and Mr. Cleanhead. He recorded across five decades, from OKeh Records in 1940 through Trix Records in the 1970s and the Music Maker Relief Foundation late in life, with signature recordings including \"Three Women Blues\" and a 1941 cover of Robert Johnson's \"Terraplane Blues\" cut alongside Washboard Sam.",
+    "activeFrom": "1940",
+    "influences": [
+      "robert-johnson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "washboard-sam"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Frank_Edwards_(blues_musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": "guitar-gable",
+    "name": "Guitar Gable",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1937-08-17",
+    "birthPlace": "Bellevue",
+    "birthCoords": [
+      -93.52222222,
+      32.67333333
+    ],
+    "deathDate": "2017-01-28",
+    "deathPlace": "Opelousas",
+    "deathCoords": [
+      -92.0815,
+      30.533527777777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Baton Rouge",
+        "coords": [
+          -91.1871,
+          30.4515
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=NgsdbqRtwCc",
+    "albums": [
+      {
+        "name": "This Should Go On Forever (1957)",
+        "youtubeLink": "https://www.youtube.com/watch?v=NgsdbqRtwCc"
+      }
+    ],
+    "description": "Gabriel Perrodin (August 17, 1937 – January 28, 2017), known as Guitar Gable, was an American Louisiana blues, swamp blues and swamp pop musician. He was best known for recording the original version of \"This Should Go On Forever\", and his part in the vibrant swamp blues and pop scene in Louisiana in the 1950s and early 1960s.",
+    "activeFrom": "1957",
+    "influences": [
+      "guitar-slim"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "slim-harpo",
+      "lazy-lester"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Guitar_Gable",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": "kim-simmonds",
+    "name": "Kim Simmonds",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kim%20Simmonds%202002%20(cropped).jpg?width=500",
+    "image_source": null,
+    "birthDate": "1947-12-05",
+    "birthPlace": "Newbridge",
+    "birthCoords": [
+      -3.136,
+      51.67
+    ],
+    "deathDate": "2022-12-13",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "British Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=oQTpoboiU40",
+    "albums": [
+      {
+        "name": "Hellbound Train (1972)",
+        "youtubeLink": "https://www.youtube.com/watch?v=N6TkCLDcC7o"
+      }
+    ],
+    "description": "Kim Maiden Simmonds (5 December 1947 – 13 December 2022) was a Welsh musician. He was the founder, guitarist, primary songwriter and sole constant member of the blues rock band Savoy Brown, which he formed in 1965. Simmonds had led Savoy Brown since its inception, appearing on every Savoy Brown release.",
+    "activeFrom": "1965",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "john-lee-hooker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Kim_Simmonds",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-15"
   }
 ]
