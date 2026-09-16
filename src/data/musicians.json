@@ -215,7 +215,8 @@
     "influences": [
       "pinetop-smith",
       "hersal-thomas",
-      "jimmy-yancey"
+      "jimmy-yancey",
+      "charlie-spand"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -657,7 +658,9 @@
       "muddy-waters",
       "sonny-boy-williamson"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "long-john-baldry"
+    ],
     "incomplete": false,
     "playedWith": [
       "cyril-davies",
@@ -668,7 +671,8 @@
       "peter-green",
       "muddy-waters",
       "sonny-boy-williamson",
-      "duster-bennett"
+      "duster-bennett",
+      "long-john-baldry"
     ],
     "source": "https://en.wikipedia.org/wiki/Alexis_Korner",
     "secondaryInstruments": [
@@ -3276,7 +3280,9 @@
       "ted-bogan"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "charlie-spand"
+    ],
     "source": "https://en.wikipedia.org/wiki/Blind_Blake",
     "secondaryInstruments": [
       "Vocals"
@@ -7127,13 +7133,16 @@
     "description": "Cyril Davies (23 January 1932 – 7 January 1964) was an English blues musician, and one of the first blues harmonica players in England.",
     "activeFrom": "1957",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "long-john-baldry"
+    ],
     "incomplete": false,
     "playedWith": [
       "alexis-korner",
       "muddy-waters",
       "sonny-terry",
-      "brownie-mcghee"
+      "brownie-mcghee",
+      "long-john-baldry"
     ],
     "source": "https://en.wikipedia.org/wiki/Cyril_Davies",
     "secondaryInstruments": [
@@ -9420,7 +9429,8 @@
     "description": "Elvis Presley, the \"King of Rock and Roll,\" fused country, rhythm and blues, and gospel into rockabilly. Recording at Sun Records in Memphis, he became one of the best-selling music artists in history with over 500 million records sold.",
     "activeFrom": "1953",
     "influences": [
-      "roy-brown"
+      "roy-brown",
+      "smiley-lewis"
     ],
     "influencedBy": [
       "barbara-lynn"
@@ -10500,7 +10510,8 @@
       "elmore-james",
       "otis-rush",
       "junior-wells",
-      "louis-myers"
+      "louis-myers",
+      "dave-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Fred_Below",
     "secondaryInstruments": [],
@@ -11998,7 +12009,9 @@
       "jim-jackson",
       "furry-lewis",
       "bukka-white",
-      "blind-blake"
+      "blind-blake",
+      "noah-lewis",
+      "will-shade"
     ],
     "source": "https://en.wikipedia.org/wiki/Gus_Cannon",
     "secondaryInstruments": [
@@ -13385,7 +13398,8 @@
       "paul-butterfield",
       "mike-bloomfield",
       "johnny-winter",
-      "wayne-bennett"
+      "wayne-bennett",
+      "pat-hare"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Cotton",
     "secondaryInstruments": [
@@ -16141,7 +16155,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "lowell-fulson"
+      "lowell-fulson",
+      "alberta-adams"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnnie_Bassett",
     "secondaryInstruments": [
@@ -17531,7 +17546,8 @@
       "bb-king",
       "ike-turner",
       "rosco-gordon",
-      "wayne-bennett"
+      "wayne-bennett",
+      "pat-hare"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Parker",
     "secondaryInstruments": [
@@ -17704,7 +17720,8 @@
       "little-walter",
       "sonny-boy-williamson",
       "louis-myers",
-      "big-time-sarah"
+      "big-time-sarah",
+      "dave-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Wells",
     "secondaryInstruments": [
@@ -20509,7 +20526,8 @@
       "memphis-minnie",
       "johnny-shines",
       "otis-rush",
-      "louis-myers"
+      "louis-myers",
+      "dave-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Little_Walter",
     "secondaryInstruments": [
@@ -21266,7 +21284,8 @@
     "influences": [],
     "influencedBy": [
       "rosco-gordon",
-      "tommy-tucker"
+      "tommy-tucker",
+      "smiley-lewis"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -22485,7 +22504,8 @@
     "activeFrom": "1900",
     "influences": [],
     "influencedBy": [
-      "lucille-hegamin"
+      "lucille-hegamin",
+      "trixie-smith"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -23145,7 +23165,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "will-shade"
+    ],
     "source": null,
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -24282,7 +24304,9 @@
       "albert-collins",
       "rick-estrin",
       "louis-myers",
-      "lc-robinson"
+      "lc-robinson",
+      "dave-myers",
+      "pat-hare"
     ],
     "source": "https://en.wikipedia.org/wiki/Muddy_Waters",
     "secondaryInstruments": [
@@ -25379,7 +25403,9 @@
     ],
     "description": "William Bunch (December 21, 1902 – December 21, 1941), known as Peetie Wheatstraw, was an American musician, an influential figure among 1930s blues singers.",
     "activeFrom": "1930",
-    "influences": [],
+    "influences": [
+      "walter-davis"
+    ],
     "influencedBy": [
       "robert-johnson",
       "champion-jack-dupree",
@@ -27875,7 +27901,8 @@
     "incomplete": false,
     "playedWith": [
       "victoria-spivey",
-      "lonnie-johnson"
+      "lonnie-johnson",
+      "walter-davis"
     ],
     "source": "https://en.wikipedia.org/wiki/Roosevelt_Sykes",
     "secondaryInstruments": [],
@@ -29754,7 +29781,8 @@
     "playedWith": [
       "sonny-boy-williamson-i",
       "hammie-nixon",
-      "charlie-pickett"
+      "charlie-pickett",
+      "noah-lewis"
     ],
     "source": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
     "secondaryInstruments": [],
@@ -30620,7 +30648,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "walter-davis"
+    ],
     "source": "https://en.wikipedia.org/wiki/St._Louis_Jimmy_Oden",
     "secondaryInstruments": [
       "Vocals"
@@ -31796,7 +31826,9 @@
     ],
     "description": "Thornetta Davis (born August 11, 1963) is an American Detroit blues and rhythm and blues singer.  She has opened for Bonnie Raitt, Gladys Knight, and Etta James, and sang backing vocals on Bob Seger's 1991 album, The Fire Inside.  She also worked with Kid Rock and Alberta Adams, and has released three solo albums.",
     "activeFrom": "1987",
-    "influences": [],
+    "influences": [
+      "alberta-adams"
+    ],
     "influencedBy": [
       "roy-book-binder",
       "jimmy-mccracklin"
@@ -33810,7 +33842,8 @@
     "playedWith": [
       "sleepy-john-estes",
       "taj-mahal",
-      "hammie-nixon"
+      "hammie-nixon",
+      "noah-lewis"
     ],
     "source": "https://en.wikipedia.org/wiki/Yank_Rachell",
     "secondaryInstruments": [
@@ -34508,7 +34541,8 @@
     "influencedBy": [
       "nina-simone",
       "etta-james",
-      "ruth-brown"
+      "ruth-brown",
+      "alberta-adams"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -43201,13 +43235,16 @@
     ],
     "description": "Hammie Nixon was an American blues harmonica and jug player from Brownsville, Tennessee, best known as the lifelong musical partner of guitarist Sleepy John Estes, with whom he performed and recorded from the late 1920s into the 1970s. His driving, vocal-like harmonica lines and jug-band rhythms anchored Estes' recordings for Victor, Decca, and later Delmark, helping define the raw, conversational sound of West Tennessee country blues. Nixon also recorded and toured with mandolinist Yank Rachell, and remained active into the folk and blues revival, performing at festivals well into the 1980s.",
     "activeFrom": "1929",
-    "influences": [],
+    "influences": [
+      "noah-lewis"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "sleepy-john-estes",
       "yank-rachell",
-      "charlie-pickett"
+      "charlie-pickett",
+      "noah-lewis"
     ],
     "source": "https://en.wikipedia.org/wiki/Hammie_Nixon",
     "secondaryInstruments": [
@@ -43750,7 +43787,8 @@
       "fred-below",
       "little-walter",
       "junior-wells",
-      "muddy-waters"
+      "muddy-waters",
+      "dave-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Louis_Myers",
     "secondaryInstruments": [
@@ -45174,7 +45212,8 @@
       "little-brother-montgomery"
     ],
     "influencedBy": [
-      "roosevelt-sykes"
+      "roosevelt-sykes",
+      "walter-davis"
     ],
     "incomplete": true,
     "playedWith": [],
@@ -46416,5 +46455,491 @@
     "source": "https://en.wikipedia.org/wiki/Candye_Kane",
     "secondaryInstruments": [],
     "createdAt": "2026-09-11"
+  },
+  {
+    "id": "noah-lewis",
+    "name": "Noah Lewis",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cannon'sJugStompers.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1895-09-03",
+    "birthPlace": "Henning",
+    "birthCoords": [
+      -89.5775,
+      35.673611111111
+    ],
+    "deathDate": "1961-02-07",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Harmonica",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=yyD_k2GmQdg",
+    "albums": [
+      {
+        "name": "The Complete Recorded Works in Chronological Order, Volume 2: 12 September 1929 to 28 November 1930 (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=rMgRXxreIbM"
+      },
+      {
+        "name": "First Recordings With Lewis & Rachel / The Legendary 1928–1930 Recordings (2002)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Noah Lewis (September 3, 1891 – February 7, 1961) was an American jug band and country blues musician, generally known for playing the harmonica.",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [
+      "hammie-nixon"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "gus-cannon",
+      "sleepy-john-estes",
+      "yank-rachell",
+      "hammie-nixon"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Noah_Lewis",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-16"
+  },
+  {
+    "id": "will-shade",
+    "name": "Will Shade",
+    "image": "https://upload.wikimedia.org/wikipedia/en/c/c1/Will_Shade%27s_gravestone%2C_Memphis%2C_2008.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1898-02-05",
+    "birthPlace": "Memphis",
+    "birthCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "deathDate": "1966-09-18",
+    "deathPlace": "Memphis",
+    "deathCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Harmonica",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=2AIUO7twW6c",
+    "albums": [],
+    "description": "William Shade Jr.  (February 5, 1893 – September 18, 1966) was a Memphis blues musician, best known for his leadership of the Memphis Jug Band.  He was commonly called Son Brimmer, a nickname from his grandmother Annie Brimmer (son is short for grandson).",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "memphis-jug-band",
+      "gus-cannon"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Will_Shade",
+    "secondaryInstruments": [
+      "Guitar",
+      "Vocals"
+    ],
+    "createdAt": "2026-09-16"
+  },
+  {
+    "id": "dave-myers",
+    "name": "Dave Myers",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1926-03-30",
+    "birthPlace": "Byhalia",
+    "birthCoords": [
+      -89.6873,
+      34.8973
+    ],
+    "deathDate": "2001-09-03",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Bass",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=WYqjPxBCJDI",
+    "albums": [],
+    "description": "Dave Myers was an American blues bass guitarist who, with his brother Louis Myers and drummer Fred Below, formed the Chicago rhythm section known as the Aces. The band served as Little Walter's backing group through the mid-1950s and also recorded and toured with Muddy Waters and Junior Wells, helping define the driving, amplified sound of postwar Chicago blues. Myers is also credited with playing bass on Bo Diddley's influential 1955 debut single.",
+    "activeFrom": "1947",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "louis-myers",
+      "fred-below",
+      "little-walter",
+      "junior-wells",
+      "muddy-waters"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Dave_Myers_(musician)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-16"
+  },
+  {
+    "id": "pat-hare",
+    "name": "Pat Hare",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/54/American_blues_guitarist_Pat_Hare.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1930-12-20",
+    "birthPlace": "Cherry Valley",
+    "birthCoords": [
+      -90.752777777778,
+      35.403611111111
+    ],
+    "deathDate": "1980-09-26",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=BC6Z18m5hJI",
+    "albums": [],
+    "description": "Auburn \"Pat\" Hare (December 20, 1930 – September 26, 1980) was an American electric blues guitarist and singer.  His heavily distorted, power chord–driven electric guitar performances in the early 1950s is considered an important precursor of heavy metal music.  His guitar work with Little Junior's Blue Flames had a major influence on the rockabilly style, and his guitar playing on blues records by artists such as Muddy Waters was influential among 1960s British Invasion blues rock bands such as the Rolling Stones and the Yardbirds.",
+    "activeFrom": "1962",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "james-cotton",
+      "muddy-waters",
+      "junior-parker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Pat_Hare",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-16"
+  },
+  {
+    "id": "alberta-adams",
+    "name": "Alberta Adams",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/AlbertaAdamsDec06.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1917-07-26",
+    "birthPlace": "Indianapolis",
+    "birthCoords": [
+      -86.158055555556,
+      39.768611111111
+    ],
+    "deathDate": "2014-12-25",
+    "deathPlace": "Dearborn",
+    "deathCoords": [
+      -83.213480555556,
+      42.311330555556
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=YTuqxh_e4Gk",
+    "albums": [
+      {
+        "name": "Born With the Blues (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=30MHbpSxuQ4"
+      }
+    ],
+    "description": "Alberta Adams (July 26, 1917 – December 25, 2014) was an American blues singer. \nRaised in Detroit, Michigan, she began performing as a tap dancer and nightclub singer in the 1930s.  In 1952, she signed a recording contract with Chess Records and recorded with Red Saunders for the label.",
+    "activeFrom": "1938",
+    "influences": [
+      "billie-holiday"
+    ],
+    "influencedBy": [
+      "thornetta-davis"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "johnnie-bassett"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Alberta_Adams",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-16"
+  },
+  {
+    "id": "smiley-lewis",
+    "name": "Smiley Lewis",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/a4/Smiley-Lewis-1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1913-07-05",
+    "birthPlace": "Calcasieu Parish",
+    "birthCoords": [
+      -93.36,
+      30.23
+    ],
+    "deathDate": "1966-10-07",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.07833333333333,
+          29.976111111111113
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=VyJ4pjHjY5M",
+    "albums": [
+      {
+        "name": "I Hear You Knocking (1986)",
+        "youtubeLink": "https://www.youtube.com/watch?v=86rvCc_LfK8"
+      },
+      {
+        "name": "New Orleans Bounce 30 of His Best (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=WhykkJUr4FY"
+      },
+      {
+        "name": "Shame, Shame, Shame (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=71u75Mfy1Fo"
+      },
+      {
+        "name": "The Best of Smiley Lewis: I Hear You Knocking (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Oyyq4Fj-ndo"
+      },
+      {
+        "name": "The Fat Man: The Essential Early Fats Domino (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=RpFVyTE4ums"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Smiley Lewis 1947-1952 (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=7Vk0QlgXNMY"
+      }
+    ],
+    "description": "Overton Amos Lemons (July 5, 1913 – October 7, 1966), known as Smiley Lewis, was an American New Orleans rhythm and blues singer and guitarist.  The music journalist Tony Russell wrote that \"Lewis was the unluckiest man in New Orleans.  He hit on a formula for slow-rocking, small-band numbers like 'The Bells Are Ringing' and 'I Hear You Knocking' only to have Fats Domino come up behind him with similar music with a more ingratiating delivery.",
+    "activeFrom": "1947",
+    "influences": [
+      "louis-jordan"
+    ],
+    "influencedBy": [
+      "elvis-presley"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Smiley_Lewis",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-16"
+  },
+  {
+    "id": "long-john-baldry",
+    "name": "Long John Baldry",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Long%20John%20Baldry%20photo%201972.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1941-01-12",
+    "birthPlace": "East Haddon",
+    "birthCoords": [
+      -1.0261,
+      52.3106
+    ],
+    "deathDate": "2005-07-21",
+    "deathPlace": "Vancouver",
+    "deathCoords": [
+      -123.1138888888889,
+      49.26083333333333
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "British Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=C8-4DXj_ZOY",
+    "albums": [
+      {
+        "name": "Long John's Blues (1965)",
+        "youtubeLink": "https://www.youtube.com/watch?v=C8-4DXj_ZOY"
+      }
+    ],
+    "description": "John William \"Long John\" Baldry (12 January 1941 – 21 July 2005) was a British and Canadian musician and actor.  In the 1960s, he was one of the first British vocalists to sing the blues in clubs and shared the stage with many British musicians including the Rolling Stones, the Animals and the Beatles.  Before achieving stardom, Rod Stewart and Elton John were members of bands led by Baldry.",
+    "activeFrom": "1965",
+    "influences": [
+      "alexis-korner",
+      "cyril-davies"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "alexis-korner",
+      "cyril-davies"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Long_John_Baldry",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-16"
+  },
+  {
+    "id": "trixie-smith",
+    "name": "Trixie Smith",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Trixie_Smith_and_Jennifer_Hinckley_--_Southeast_Region_%2810706711616%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1895",
+    "birthPlace": "Atlanta",
+    "birthCoords": [
+      -84.38972222222222,
+      33.754444444444445
+    ],
+    "deathDate": "1943-09-21",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.00611111111111,
+      40.71277777777778
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Vaudeville Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=jT1Kv83QFKc",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 1: 1922-1924 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=vJkjIdZvmcI"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 2: 1925-1939 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=oG3R4klBrOc"
+      }
+    ],
+    "description": "Trixie Smith (c. 1885/1895 – September 21, 1943), was an American blues singer and film actress.  She made four dozen recordings and appeared in five films.",
+    "activeFrom": "1920",
+    "influences": [
+      "mamie-smith"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Trixie_Smith",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-16"
+  },
+  {
+    "id": "walter-davis",
+    "name": "Walter Davis",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1911",
+    "birthPlace": "Grenada",
+    "birthCoords": [
+      -89.8095,
+      33.7757
+    ],
+    "deathDate": "1963-10-22",
+    "deathPlace": "St. Louis",
+    "deathCoords": [
+      -90.1994,
+      38.627
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=xtSuFZC2ypc",
+    "albums": [
+      {
+        "name": "Complete Recorded Works 1933-1952 In Chronological Order Vol. 1 (2 August 1933 To 28 July 1935) (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xtSuFZC2ypc"
+      },
+      {
+        "name": "Complete Recorded Works 1933-1952 In Chronological Order Volume 2 (28 July 1935 To 5 May 1937) (1994)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Walter Davis was an American blues pianist and singer from the St. Louis blues scene, and one of the most prolific artists on Bluebird Records through the 1930s and 1940s. His mournful, half-spoken vocal delivery and rolling piano style, showcased on records such as \"M & O Blues,\" made him one of the most widely imitated blues singers of the prewar era, until a stroke in the early 1950s ended his career.",
+    "activeFrom": "1930",
+    "influences": [
+      "lee-green"
+    ],
+    "influencedBy": [
+      "peetie-wheatstraw"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "roosevelt-sykes",
+      "st-louis-jimmy-oden"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Walter_Davis_(musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-16"
+  },
+  {
+    "id": "charlie-spand",
+    "name": "Charlie Spand",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1893",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Richmond",
+        "coords": [
+          -77.4605,
+          37.5407
+        ]
+      },
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=4B0Iya1xe38",
+    "albums": [
+      {
+        "name": "'Soon This Morning' - Charlie Spand 1929-1931 (1981)",
+        "youtubeLink": "https://www.youtube.com/watch?v=4B0Iya1xe38"
+      },
+      {
+        "name": "The Complete Paramounts in Chronological Order (1992)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Charlie Spand (May 8, 1893 – after 1958) was an American blues and boogie-woogie pianist and singer, noted for his barrelhouse style.  He was deemed one of the most influential piano players of the 1920s.  Little is known of his life outside of music, and his total recordings amount to 33 tracks.",
+    "activeFrom": "1981",
+    "influences": [],
+    "influencedBy": [
+      "albert-ammons"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "blind-blake"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Charlie_Spand",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-16"
   }
 ]
