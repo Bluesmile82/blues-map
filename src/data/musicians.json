@@ -46461,7 +46461,7 @@
     "name": "Noah Lewis",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cannon'sJugStompers.jpg?width=500",
     "image_source": null,
-    "birthDate": "1895-09-03",
+    "birthDate": "1891-09-03",
     "birthPlace": "Henning",
     "birthCoords": [
       -89.5775,
@@ -46506,7 +46506,7 @@
     "name": "Will Shade",
     "image": "https://upload.wikimedia.org/wikipedia/en/c/c1/Will_Shade%27s_gravestone%2C_Memphis%2C_2008.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
     "image_source": null,
-    "birthDate": "1898-02-05",
+    "birthDate": "1893-02-05",
     "birthPlace": "Memphis",
     "birthCoords": [
       -90.05194444444444,
@@ -46589,8 +46589,11 @@
       35.403611111111
     ],
     "deathDate": "1980-09-26",
-    "deathPlace": null,
-    "deathCoords": null,
+    "deathPlace": "Saint Paul",
+    "deathCoords": [
+      -93.09,
+      44.9537
+    ],
     "spentTimePlaces": [
       {
         "place": "New York",
@@ -46605,7 +46608,7 @@
     "youtubeLink": "https://www.youtube.com/watch?v=BC6Z18m5hJI",
     "albums": [],
     "description": "Auburn \"Pat\" Hare (December 20, 1930 – September 26, 1980) was an American electric blues guitarist and singer.  His heavily distorted, power chord–driven electric guitar performances in the early 1950s is considered an important precursor of heavy metal music.  His guitar work with Little Junior's Blue Flames had a major influence on the rockabilly style, and his guitar playing on blues records by artists such as Muddy Waters was influential among 1960s British Invasion blues rock bands such as the Rolling Stones and the Yardbirds.",
-    "activeFrom": "1962",
+    "activeFrom": "1950",
     "influences": [],
     "influencedBy": [],
     "incomplete": true,
@@ -46726,7 +46729,7 @@
         "youtubeLink": "https://www.youtube.com/watch?v=7Vk0QlgXNMY"
       }
     ],
-    "description": "Overton Amos Lemons (July 5, 1913 – October 7, 1966), known as Smiley Lewis, was an American New Orleans rhythm and blues singer and guitarist.  The music journalist Tony Russell wrote that \"Lewis was the unluckiest man in New Orleans.  He hit on a formula for slow-rocking, small-band numbers like 'The Bells Are Ringing' and 'I Hear You Knocking' only to have Fats Domino come up behind him with similar music with a more ingratiating delivery.",
+    "description": "Overton Amos Lemons (July 5, 1913 – October 7, 1966), known as Smiley Lewis, was an American New Orleans rhythm and blues singer and guitarist.  The music journalist Tony Russell wrote that \"Lewis was the unluckiest man in New Orleans.  He hit on a formula for slow-rocking, small-band numbers like 'The Bells Are Ringing' and 'I Hear You Knocking' only to have Fats Domino come up behind him with similar music with a more ingratiating delivery.\"",
     "activeFrom": "1947",
     "influences": [
       "louis-jordan"
@@ -46814,7 +46817,7 @@
         "youtubeLink": "https://www.youtube.com/watch?v=oG3R4klBrOc"
       }
     ],
-    "description": "Trixie Smith (c. 1885/1895 – September 21, 1943), was an American blues singer and film actress.  She made four dozen recordings and appeared in five films.",
+    "description": "Trixie Smith (c. 1885/1895 – September 21, 1943) was an American blues singer and film actress.  She made four dozen recordings and appeared in five films.",
     "activeFrom": "1920",
     "influences": [
       "mamie-smith"
@@ -46882,10 +46885,10 @@
     "image": "",
     "image_source": null,
     "birthDate": "1893",
-    "birthPlace": "Chicago",
+    "birthPlace": "Columbus",
     "birthCoords": [
-      -87.62777777777778,
-      41.88194444444444
+      -88.4273,
+      33.4957
     ],
     "deathDate": null,
     "deathPlace": null,
@@ -46927,7 +46930,7 @@
       }
     ],
     "description": "Charlie Spand (May 8, 1893 – after 1958) was an American blues and boogie-woogie pianist and singer, noted for his barrelhouse style.  He was deemed one of the most influential piano players of the 1920s.  Little is known of his life outside of music, and his total recordings amount to 33 tracks.",
-    "activeFrom": "1981",
+    "activeFrom": "1920",
     "influences": [],
     "influencedBy": [
       "albert-ammons"
