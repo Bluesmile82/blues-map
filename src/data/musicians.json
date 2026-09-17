@@ -878,7 +878,9 @@
     ],
     "description": "Amos Milburn was one of the most important figures in the transition from blues to rhythm and blues in the late 1940s and early 1950s. His rollicking piano style and party-themed songs like 'Chicken Shack Boogie' and 'Bad, Bad Whiskey' earned him a string of R&B number-one hits on Aladdin Records, making him a foundational figure in the evolution toward rock and roll.",
     "activeFrom": "1947",
-    "influences": [],
+    "influences": [
+      "joe-liggins"
+    ],
     "influencedBy": [
       "paul-gayten",
       "rosco-gordon"
@@ -5836,7 +5838,8 @@
       "pete-mayes",
       "roy-hawkins",
       "tommy-tucker",
-      "johnny-ace"
+      "johnny-ace",
+      "chuck-willis"
     ],
     "incomplete": false,
     "playedWith": [
@@ -9905,7 +9908,8 @@
     "influences": [
       "skip-james",
       "elmore-james",
-      "colin-james"
+      "colin-james",
+      "big-maybelle"
     ],
     "influencedBy": [
       "j-b-hutto",
@@ -9918,7 +9922,8 @@
       "bessie-smith",
       "albert-collins",
       "bb-king",
-      "mel-brown"
+      "mel-brown",
+      "little-willie-john"
     ],
     "source": "https://en.wikipedia.org/wiki/Etta_James",
     "secondaryInstruments": [
@@ -10688,7 +10693,8 @@
       "toronzo-cannon",
       "mighty-joe-young",
       "ana-popovic",
-      "jarekus-singleton"
+      "jarekus-singleton",
+      "stan-webb"
     ],
     "incomplete": false,
     "playedWith": [
@@ -22307,7 +22313,8 @@
       "alberta-hunter",
       "lucille-hegamin",
       "georgia-white",
-      "trixie-smith"
+      "trixie-smith",
+      "chuck-willis"
     ],
     "incomplete": false,
     "playedWith": [
@@ -24332,7 +24339,8 @@
       "otis-rush",
       "kim-wilson",
       "louis-myers",
-      "ana-popovic"
+      "ana-popovic",
+      "long-john-baldry"
     ],
     "incomplete": false,
     "playedWith": [
@@ -24761,7 +24769,9 @@
     "albums": [],
     "description": "Otis Redding, the \"King of Soul,\" recorded for Stax Records and released classics like \"Try a Little Tenderness\" and \"Sittin' On the Dock of the Bay.\" He died tragically at 26 in a plane crash.",
     "activeFrom": "1958",
-    "influences": [],
+    "influences": [
+      "chuck-willis"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -30347,7 +30357,8 @@
       "cedell-davis",
       "kim-wilson",
       "willie-nix",
-      "little-mack-simmons"
+      "little-mack-simmons",
+      "long-john-baldry"
     ],
     "incomplete": false,
     "playedWith": [
@@ -34451,7 +34462,8 @@
       "mahalia-jackson",
       "bessie-smith",
       "otis-redding",
-      "roy-hawkins"
+      "roy-hawkins",
+      "big-maybelle"
     ],
     "influencedBy": [
       "clarence-carter",
@@ -41601,7 +41613,9 @@
       "nappy-brown"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "tiny-bradshaw"
+    ],
     "source": "https://en.wikipedia.org/wiki/Roy_Brown_(blues_musician)",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -48014,7 +48028,9 @@
     "activeFrom": "1962",
     "influences": [
       "lead-belly",
-      "big-bill-broonzy"
+      "big-bill-broonzy",
+      "muddy-waters",
+      "sonny-boy-williamson"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -48029,5 +48045,486 @@
       "Harmonica"
     ],
     "createdAt": "2026-09-14"
+  },
+  {
+    "id": "joe-liggins",
+    "name": "Joe Liggins",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/9f/Joe_Liggins.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1916-07-09",
+    "birthPlace": "Guthrie",
+    "birthCoords": [
+      -97.435833333333,
+      35.856388888889
+    ],
+    "deathDate": "1987-07-26",
+    "deathPlace": "Lynwood, California",
+    "deathCoords": [
+      -118.2114,
+      33.9308
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ot4RecNqewE",
+    "albums": [
+      {
+        "name": "Joe Liggins And The Honeydrippers (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=FXgoaoPTgDQ"
+      },
+      {
+        "name": "Dripper's Boogie, Vol 2 (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=NewqTwaDIJo"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Joe Liggins 1944-1946 (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=s7p6hbXB2Co"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Joe Liggins 1946-1948 (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=XsqSM3N0J-A"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Joe Liggins 1948-1950 (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=s7p6hbXB2Co"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Joe Liggins 1950-1952 (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UogrycMGbIs"
+      }
+    ],
+    "description": "Joseph Christopher Liggins Jr.  (born Theodro Elliott; July 9, 1916 – July 26, 1987) was an American R&B, jazz and blues pianist and vocalist who led Joe Liggins and his Honeydrippers in the 1940s and 1950s.  His band appeared often on the Billboard magazine charts.",
+    "activeFrom": "1939",
+    "influences": [],
+    "influencedBy": [
+      "amos-milburn"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Joe_Liggins",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-17"
+  },
+  {
+    "id": "tiny-bradshaw",
+    "name": "Tiny Bradshaw",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tiny%20Bradshaw.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1907-09-23",
+    "birthPlace": "Youngstown",
+    "birthCoords": [
+      -80.649166666667,
+      41.096388888889
+    ],
+    "deathDate": "1958-11-26",
+    "deathPlace": "Cincinnati",
+    "deathCoords": [
+      -84.5125,
+      39.1
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=QopqR6hLO4U",
+    "albums": [
+      {
+        "name": "Walk That Mess! The Best of the King Years (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Vu3IdLKyVCg"
+      },
+      {
+        "name": "The EP Collection...Plus (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=B3ize_MnDm0"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Tiny Bradshaw 1934-1947 (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=B3ize_MnDm0"
+      },
+      {
+        "name": "Breaking Up the House (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=B3ize_MnDm0"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Tiny Bradshaw 1949-1951 (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=7CnIBDjtRao"
+      },
+      {
+        "name": "Heavy Juice 1950-1955 (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UPndkX03R1I"
+      }
+    ],
+    "description": "Myron Carlton \"Tiny\" Bradshaw (September 23, 1907 – November 26, 1958) was an American jazz and rhythm and blues bandleader, composer, singer, pianist, and drummer.   His biggest hit was \"Well Oh Well\" in 1950, and the following year he recorded \"The Train Kept A-Rollin'\", a song that was pivotal to the development of rock and roll.  Bradshaw co-wrote and sang on both records.",
+    "activeFrom": "1934",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "roy-brown",
+      "big-maybelle"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Tiny_Bradshaw",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-17"
+  },
+  {
+    "id": "big-maybelle",
+    "name": "Big Maybelle",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Big%20Maybelle.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1924-05-01",
+    "birthPlace": "Jackson",
+    "birthCoords": [
+      -88.81775,
+      35.614444444444445
+    ],
+    "deathDate": "1972-01-23",
+    "deathPlace": "Cleveland, Ohio",
+    "deathCoords": [
+      -81.6944,
+      41.4993
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dcbHok0GhTQ",
+    "albums": [
+      {
+        "name": "Ladies Sing the Blues: Roots of Rock ’n’ Roll, Vol. 5 (1979)",
+        "youtubeLink": "https://www.youtube.com/watch?v=oqZsa4wCgZU"
+      },
+      {
+        "name": "Roots Of R'n' R, Blues And Early Soul, Vol. 13 (1984)",
+        "youtubeLink": "https://www.youtube.com/watch?v=u2aWMbcgPBM"
+      },
+      {
+        "name": "Blues, Candy & Big Maybelle (1986)",
+        "youtubeLink": "https://www.youtube.com/watch?v=36oEFFrrSG8"
+      },
+      {
+        "name": "The Complete OKeh Sessions, 1952–55 (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=5wlW_m9fYi8"
+      },
+      {
+        "name": "The Last of Big Maybelle (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=mtlH5kib7rU"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Big Maybelle 1944-1953 (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Rn3WMnHDhUM"
+      }
+    ],
+    "description": "Mabel Louise Smith (May 1, 1924 – January 23, 1972), known professionally as Big Maybelle, was an American R&B singer.  Her 1956 hit single \"Candy\" received the Grammy Hall of Fame Award in 1999.",
+    "activeFrom": "1944",
+    "influences": [],
+    "influencedBy": [
+      "etta-james",
+      "aretha-franklin"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "tiny-bradshaw"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Big_Maybelle",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-17"
+  },
+  {
+    "id": "chuck-willis",
+    "name": "Chuck Willis",
+    "image": "https://upload.wikimedia.org/wikipedia/en/e/ef/Chuck_Willis.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1926-01-31",
+    "birthPlace": "Atlanta",
+    "birthCoords": [
+      -84.38972222222222,
+      33.754444444444445
+    ],
+    "deathDate": "1958-04-10",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=usGbaI9AuRY",
+    "albums": [
+      {
+        "name": "I Remember Chuck Willis (1962)",
+        "youtubeLink": "https://www.youtube.com/watch?v=YjHudI6dVGw"
+      },
+      {
+        "name": "Let’s Jump Tonight (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=QlSv6hNDtLQ"
+      },
+      {
+        "name": "Stroll On: The Chuck Willis Collection (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=WMW2OF5MRVQ"
+      },
+      {
+        "name": "I Remember Chuck Willis / The King of Stroll (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=WMW2OF5MRVQ"
+      },
+      {
+        "name": "Chuck Willis Wails! The Complete Recordings, 1951-1956 (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=bSFI_TyISXQ"
+      },
+      {
+        "name": "The Complete Chuck Willis 1951-1957: Early Recordings And First R'n'B Hits (2009)",
+        "youtubeLink": "https://www.youtube.com/watch?v=bSFI_TyISXQ"
+      }
+    ],
+    "description": "Harold \"Chuck\" Willis (January 31, 1926 – April 10, 1958) was an American rhythm and blues singer and songwriter known as the \"King of the Stroll\" for his role in popularizing that dance. His 1957 recording of \"C. C. Rider\" (based on the Ma Rainey standard) and the 1958 hit \"What Am I Living For\" both topped the Billboard R&B chart. His smooth, blues-rooted vocal style, indebted to Charles Brown, made him an important bridge between 1950s R&B and the emerging soul sound, influencing artists such as Otis Redding, who covered several of his songs.",
+    "activeFrom": "1950",
+    "influences": [
+      "charles-brown",
+      "ma-rainey"
+    ],
+    "influencedBy": [
+      "otis-redding"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Chuck_Willis",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-17"
+  },
+  {
+    "id": "little-willie-john",
+    "name": "Little Willie John",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Little%20Willie%20John%20press%20photo.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1937-11-15",
+    "birthPlace": "Cullendale, Arkansas",
+    "birthCoords": [
+      -92.8232,
+      33.6187
+    ],
+    "deathDate": "1968-05-26",
+    "deathPlace": "Detroit",
+    "deathCoords": [
+      -83.0475,
+      42.331666666667
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Rythm and Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=szz27BuDgeU",
+    "albums": [
+      {
+        "name": "The Sweet, the Hot, the Teen-Age Beat (1964)",
+        "youtubeLink": "https://www.youtube.com/watch?v=OFVHZFDs68w"
+      }
+    ],
+    "description": "William Edward \"Little Willie\" John (November 15, 1937 – May 26, 1968) was an American R&B singer who performed in the 1950s and early 1960s.  He is best known for his successes on the record charts, with songs such as \"All Around the World\" (1955), \"Need Your Love So Bad\" (1956), \"Talk to Me, Talk to Me\" (1958), \"Leave My Kitten Alone\" (1960), \"Sleep\" (1960), and his number-one R&B hit \"Fever\" (1956). \nAn important figure in R&B music of the 1950s, he faded into obscurity in the 1960s and died while serving a prison sentence for manslaughter.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "etta-james"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Little_Willie_John",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-17"
+  },
+  {
+    "id": "washington-phillips",
+    "name": "Washington Phillips",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Washington%20Phillips.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1880-01-11",
+    "birthPlace": "Freestone County, Texas",
+    "birthCoords": [
+      -96.2833,
+      31.6275
+    ],
+    "deathDate": "1954-09-20",
+    "deathPlace": "Teague",
+    "deathCoords": [
+      -96.2833,
+      31.6275
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      },
+      {
+        "place": "Houston",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=NoOX9-kcv7g",
+    "albums": [
+      {
+        "name": "Storefront and Street Corner Gospel (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=C6Qk-d5oFNQ"
+      },
+      {
+        "name": "The Key to the Kingdom (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=C6Qk-d5oFNQ"
+      },
+      {
+        "name": "Washington Phillips (2015)",
+        "youtubeLink": "https://www.youtube.com/watch?v=or1oZ35NA2U"
+      },
+      {
+        "name": "Washington Phillips and His Manzarene Dreams (2016)",
+        "youtubeLink": "https://www.youtube.com/watch?v=MjXjz9DXwkk"
+      }
+    ],
+    "description": "George Washington \"Wash\" Phillips (January 11, 1880 – September 20, 1954) was an American gospel and gospel blues singer and instrumentalist.  The exact nature of the instrument or instruments he played is uncertain, being identified only as \"novelty accompaniment\" on the labels of the 78 rpm records released during his lifetime.",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Washington_Phillips",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-17"
+  },
+  {
+    "id": "stan-webb",
+    "name": "Stan Webb",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Stan%20webb%202019.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1946-02-03",
+    "birthPlace": "Fulham",
+    "birthCoords": [
+      -0.2138,
+      51.4767
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "British Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=LDwt0lomMyA",
+    "albums": [
+      {
+        "name": "40 Blue Fingers, Freshly Packed and Ready to Serve (1968)",
+        "youtubeLink": "https://www.youtube.com/watch?v=4XERINEVKhI"
+      },
+      {
+        "name": "100 Ton Chicken (1969)",
+        "youtubeLink": "https://www.youtube.com/watch?v=aZg4WobMEhc"
+      }
+    ],
+    "description": "Stanley Frederick Webb is an English blues guitarist and singer who founded the band Chicken Shack in 1965 and has remained its sole constant member ever since. His guitar playing, closely modeled on Freddie King, and use of a wireless cord to walk through the audience mid-solo made him one of the standout instrumentalists of the late-1960s British blues boom. Chicken Shack, which for several years featured singer-keyboardist Christine Perfect (later Christine McVie of Fleetwood Mac), scored a UK top-20 hit with their version of the Etta James song \"I'd Rather Go Blind\".",
+    "activeFrom": "1965",
+    "influences": [
+      "freddie-king"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Stan_Webb_(guitarist)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-17"
+  },
+  {
+    "id": "edith-wilson",
+    "name": "Edith Wilson",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Edith%20Wilson%20Aunt%20Jemima%201956.JPG?width=500",
+    "image_source": null,
+    "birthDate": "1896-09-02",
+    "birthPlace": "Louisville",
+    "birthCoords": [
+      -85.75138888888888,
+      38.25611111111111
+    ],
+    "deathDate": "1981-03-30",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Vaudeville Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=hmh84wT9C24",
+    "albums": [
+      {
+        "name": "Edith and Lena Wilson - Complete Recorded Works 1924-1931, Volume 2 (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=F1f0g_vbuKM"
+      }
+    ],
+    "description": "Edith Wilson (née Goodall; September 2, 1896 – March 30, 1981) was an American blues singer, vaudeville performer, and actress from Louisville, Kentucky. Recording in the classic female blues style during the 1920s with Johnny Dunn's Original Jazz Hounds, she scored an early hit with \"Nervous Blues\" (1921) and went on to a stage and screen career spanning nearly six decades, including Broadway revues and a long-running role as the radio and television voice of Aunt Jemima.",
+    "activeFrom": "1919",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Edith_Wilson_(singer)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-17"
   }
 ]
