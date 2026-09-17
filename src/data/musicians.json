@@ -217,7 +217,9 @@
       "hersal-thomas",
       "jimmy-yancey"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "cecil-gant"
+    ],
     "incomplete": false,
     "playedWith": [
       "meade-lux-lewis",
@@ -668,7 +670,8 @@
       "peter-green",
       "muddy-waters",
       "sonny-boy-williamson",
-      "duster-bennett"
+      "duster-bennett",
+      "long-john-baldry"
     ],
     "source": "https://en.wikipedia.org/wiki/Alexis_Korner",
     "secondaryInstruments": [
@@ -2275,7 +2278,8 @@
       "fruteland-jackson"
     ],
     "influencedBy": [
-      "wizz-jones"
+      "wizz-jones",
+      "long-john-baldry"
     ],
     "incomplete": false,
     "playedWith": [
@@ -2583,7 +2587,8 @@
       "lonnie-johnson",
       "roosevelt-sykes",
       "memphis-slim",
-      "larry-johnson"
+      "larry-johnson",
+      "charley-jordan"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Joe_Williams",
     "secondaryInstruments": [
@@ -4159,7 +4164,8 @@
     ],
     "influencedBy": [
       "tyrone-davis",
-      "little-johnny-taylor"
+      "little-johnny-taylor",
+      "ov-wright"
     ],
     "incomplete": false,
     "playedWith": [
@@ -4168,7 +4174,8 @@
       "joe-guitar-hughes",
       "johnny-ace",
       "tyrone-davis",
-      "mel-brown"
+      "mel-brown",
+      "pat-hare"
     ],
     "source": "https://en.wikipedia.org/wiki/Bobby_Bland",
     "secondaryInstruments": [],
@@ -4755,7 +4762,8 @@
       "big-joe-williams",
       "champion-jack-dupree",
       "big-bill-broonzy",
-      "larry-johnson"
+      "larry-johnson",
+      "sugar-blue"
     ],
     "source": "https://en.wikipedia.org/wiki/Brownie_McGhee",
     "secondaryInstruments": [
@@ -5670,7 +5678,8 @@
     "playedWith": [
       "memphis-minnie",
       "bumble-bee-slim",
-      "peetie-wheatstraw"
+      "peetie-wheatstraw",
+      "charley-jordan"
     ],
     "source": "https://en.wikipedia.org/wiki/Casey_Bill_Weldon",
     "secondaryInstruments": [],
@@ -7149,7 +7158,8 @@
       "alexis-korner",
       "muddy-waters",
       "sonny-terry",
-      "brownie-mcghee"
+      "brownie-mcghee",
+      "long-john-baldry"
     ],
     "source": "https://en.wikipedia.org/wiki/Cyril_Davies",
     "secondaryInstruments": [
@@ -10017,7 +10027,8 @@
     "activeFrom": "1949",
     "influences": [
       "professor-longhair",
-      "smiley-lewis"
+      "smiley-lewis",
+      "cecil-gant"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -10696,7 +10707,8 @@
       "howlin-wolf",
       "t-bone-walker",
       "eric-clapton",
-      "joe-doucet"
+      "joe-doucet",
+      "tyrone-davis"
     ],
     "source": "https://en.wikipedia.org/wiki/Freddie_King",
     "secondaryInstruments": [
@@ -12744,7 +12756,8 @@
       "willie-brown",
       "luther-allison",
       "albert-king",
-      "detroit-junior"
+      "detroit-junior",
+      "pat-hare"
     ],
     "source": "https://en.wikipedia.org/wiki/Howlin'_Wolf",
     "secondaryInstruments": [
@@ -13410,7 +13423,8 @@
       "johnny-winter",
       "wayne-bennett",
       "mark-hummel",
-      "little-mack-simmons"
+      "little-mack-simmons",
+      "pat-hare"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Cotton",
     "secondaryInstruments": [
@@ -15965,7 +15979,8 @@
       "peter-green",
       "coco-montoya",
       "duster-bennett",
-      "mark-hummel"
+      "mark-hummel",
+      "long-john-baldry"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Mayall",
     "secondaryInstruments": [
@@ -16893,7 +16908,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "otis-clay"
+      "otis-clay",
+      "ov-wright"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Rawls",
     "secondaryInstruments": [
@@ -17564,7 +17580,8 @@
       "ike-turner",
       "rosco-gordon",
       "wayne-bennett",
-      "johnny-ace"
+      "johnny-ace",
+      "pat-hare"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Parker",
     "secondaryInstruments": [
@@ -19094,7 +19111,8 @@
     ],
     "influencedBy": [
       "sonny-terry",
-      "brownie-mcghee"
+      "brownie-mcghee",
+      "long-john-baldry"
     ],
     "incomplete": false,
     "playedWith": [
@@ -20537,7 +20555,8 @@
       "kim-wilson",
       "mark-hummel",
       "paul-delay",
-      "little-mack-simmons"
+      "little-mack-simmons",
+      "sugar-blue"
     ],
     "incomplete": false,
     "playedWith": [
@@ -21367,7 +21386,8 @@
     "playedWith": [
       "muddy-waters",
       "john-lee-hooker",
-      "tommy-tucker"
+      "tommy-tucker",
+      "sugar-blue"
     ],
     "source": "https://en.wikipedia.org/wiki/Tab_Benoit",
     "secondaryInstruments": [
@@ -22286,7 +22306,8 @@
       "bessie-smith",
       "alberta-hunter",
       "lucille-hegamin",
-      "georgia-white"
+      "georgia-white",
+      "trixie-smith"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23101,7 +23122,8 @@
     "activeFrom": "1927",
     "influences": [],
     "influencedBy": [
-      "big-maceo-merriweather"
+      "big-maceo-merriweather",
+      "cecil-gant"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23255,7 +23277,8 @@
       "sonny-boy-williamson",
       "sonny-boy-williamson-i",
       "tampa-red",
-      "jimmie-gordon"
+      "jimmie-gordon",
+      "charley-jordan"
     ],
     "source": "https://en.wikipedia.org/wiki/Memphis_Minnie",
     "secondaryInstruments": [
@@ -23335,7 +23358,8 @@
       "sonny-boy-williamson-i",
       "jimmy-rogers",
       "willie-nix",
-      "duster-bennett"
+      "duster-bennett",
+      "sugar-blue"
     ],
     "source": "https://en.wikipedia.org/wiki/Memphis_Slim",
     "secondaryInstruments": [
@@ -24324,7 +24348,8 @@
       "albert-collins",
       "rick-estrin",
       "louis-myers",
-      "lc-robinson"
+      "lc-robinson",
+      "pat-hare"
     ],
     "source": "https://en.wikipedia.org/wiki/Muddy_Waters",
     "secondaryInstruments": [
@@ -25431,7 +25456,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "blind-teddy-darby"
+      "blind-teddy-darby",
+      "charley-jordan"
     ],
     "source": "https://en.wikipedia.org/wiki/Peetie_Wheatstraw",
     "secondaryInstruments": [
@@ -27145,7 +27171,9 @@
     ],
     "description": "Robert William Cray (born August 1, 1953) is an American blues guitarist and singer.  He has led his own band and won five Grammy Awards.",
     "activeFrom": "1974",
-    "influences": [],
+    "influences": [
+      "ov-wright"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -27669,7 +27697,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "sugar-blue"
+    ],
     "source": "https://en.wikipedia.org/wiki/The_Rolling_Stones",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -27921,7 +27951,9 @@
     "incomplete": false,
     "playedWith": [
       "victoria-spivey",
-      "lonnie-johnson"
+      "lonnie-johnson",
+      "sugar-blue",
+      "charley-jordan"
     ],
     "source": "https://en.wikipedia.org/wiki/Roosevelt_Sykes",
     "secondaryInstruments": [],
@@ -31313,7 +31345,10 @@
     ],
     "description": "Taj Mahal (born Henry St. Claire Fredericks, May 17, 1942) is an American blues musician. A multi-instrumentalist who plays guitar, piano, and banjo, he has been a leading figure in blues and world music since the 1960s, known for incorporating diverse musical influences into his blues foundation.",
     "activeFrom": "1964",
-    "influences": [],
+    "influences": [
+      "henry-thomas",
+      "ov-wright"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -33452,7 +33487,8 @@
       "big-walter-horton",
       "sonny-boy-williamson",
       "tommy-tucker",
-      "leonard-baby-doo-caston"
+      "leonard-baby-doo-caston",
+      "sugar-blue"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_Dixon",
     "secondaryInstruments": [
@@ -42414,7 +42450,8 @@
     "activeFrom": "1957",
     "influences": [
       "sam-cooke",
-      "mahalia-jackson"
+      "mahalia-jackson",
+      "ov-wright"
     ],
     "influencedBy": [
       "johnny-rawls"
@@ -43494,7 +43531,8 @@
     "activeFrom": "1922",
     "influences": [],
     "influencedBy": [
-      "ike-turner"
+      "ike-turner",
+      "cecil-gant"
     ],
     "incomplete": false,
     "playedWith": [
@@ -46663,7 +46701,7 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tyrone%20Davis%20oct%201970.jpg?width=500",
     "image_source": null,
     "birthDate": "1938-05-04",
-    "birthPlace": "Greenville",
+    "birthPlace": "Greenville, Mississippi",
     "birthCoords": [
       -91.05194444444444,
       33.39944444444444
@@ -46719,7 +46757,7 @@
         "youtubeLink": "https://www.youtube.com/watch?v=40QlP2sLOiQ"
       }
     ],
-    "description": "Tyrone Davis (born Tyrone D.  Fettson or Tyrone D.  Branch, October 3, 1937 – February 9, 2005) (although many sources have his date of birth as May 4, 1938) was an American blues and soul singer with a long list of hit records over more than 20 years.",
+    "description": "Tyrone Davis was a Chicago soul-blues singer known as the \"king of romantic Chicago soul\" for his smooth, pleading vocal style. After working as a valet and chauffeur for Freddie King and singing in Chicago clubs, he broke through with the 1968 R&B chart-topper \"Can I Change My Mind\" and went on to score two more number-one R&B hits, \"Turn Back the Hands of Time\" (1970) and \"Turning Point\" (1975), becoming one of the defining voices of Southern soul-blues through the 1970s.",
     "activeFrom": "1968",
     "influences": [
       "bobby-blue-bland"
@@ -46731,7 +46769,8 @@
     "playedWith": [
       "bobby-blue-bland",
       "little-milton",
-      "denise-lasalle"
+      "denise-lasalle",
+      "freddie-king"
     ],
     "source": "https://en.wikipedia.org/wiki/Tyrone_Davis",
     "secondaryInstruments": [],
@@ -47200,7 +47239,8 @@
     "description": "Trixie Smith was an American classic blues singer and vaudeville entertainer whose 1922 recording \"My Man Rocks Me (With One Steady Roll)\" is often cited as one of the earliest records to use \"rock\" and \"roll\" in a sexual, secular sense, foreshadowing the language of rock and roll decades later. Active on Black Swan and Paramount Records through the 1920s and on Decca in the 1930s, she recorded alongside major jazz figures including Louis Armstrong, Fletcher Henderson's Orchestra, and Sidney Bechet, and also appeared in several films, including work with director Oscar Micheaux.",
     "activeFrom": "1920",
     "influences": [
-      "mamie-smith"
+      "mamie-smith",
+      "ma-rainey"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -47530,5 +47570,464 @@
       "Vocals"
     ],
     "createdAt": "2026-09-13"
+  },
+  {
+    "id": "sugar-blue",
+    "name": "Sugar Blue",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/SugarBlue1988.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1949-12-16",
+    "birthPlace": "New York City, New York",
+    "birthCoords": [
+      -73.948372222222,
+      40.809033333333
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=elMXUPzKJAY",
+    "albums": [
+      {
+        "name": "Blue Blazes (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=elMXUPzKJAY"
+      }
+    ],
+    "description": "Sugar Blue (born James Joshua Whiting, 1949) is a virtuoso Chicago blues harmonica player known for a rapid-fire, overblowing technique that pushed the instrument into jazz-influenced territory. Discovered busking on the streets of Paris by Mick Jagger, he played the searing harmonica solo on the Rolling Stones' 1978 hit \"Miss You\" and went on to become a mainstay of Willie Dixon's Chicago Blues All Stars, winning a Grammy for the 1988 album Hidden Charms.",
+    "activeFrom": "1969",
+    "influences": [
+      "little-walter"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "louisiana-red",
+      "willie-dixon",
+      "memphis-slim",
+      "brownie-mcghee",
+      "rolling-stones",
+      "roosevelt-sykes"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Sugar_Blue",
+    "secondaryInstruments": [
+      "Vocals",
+      "Piano"
+    ],
+    "createdAt": "2026-09-14"
+  },
+  {
+    "id": "charley-jordan",
+    "name": "Charley Jordan",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1890-07-11",
+    "birthPlace": "Mabelvale, Arkansas",
+    "birthCoords": [
+      -92.3971,
+      34.6926
+    ],
+    "deathDate": "1954-11-15",
+    "deathPlace": "St. Louis",
+    "deathCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=nPteLuuS54s",
+    "albums": [
+      {
+        "name": "The Best of Charley Jordan 1930-1936 (1982)",
+        "youtubeLink": "https://www.youtube.com/watch?v=nPteLuuS54s"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Vol. 1: June 1930 to 17 March 1931 (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=sRQrtKRo0BE"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Vol. 3: 31 October 1935 to 2 November 1937 (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=sRQrtKRo0BE"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 2: 28 September 1931 to c. August 1934 (1992)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "It Ain't Clean (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=PC_Bdt1eOOw"
+      }
+    ],
+    "description": "Charley Jordan was a St. Louis blues guitarist, singer and talent scout whose distinctive fingerpicking and gravelly vocals made him a fixture of the city's pre-war blues scene. Originally from Mabelvale, Arkansas, he recorded prolifically for Vocalion and Decca between 1930 and 1937, and worked alongside Peetie Wheatstraw, Roosevelt Sykes, Memphis Minnie and Big Joe Williams as both a performer and a talent scout who helped other Arkansas and Mississippi musicians get recorded.",
+    "activeFrom": "1930",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "peetie-wheatstraw",
+      "roosevelt-sykes",
+      "casey-bill-weldon",
+      "memphis-minnie",
+      "big-joe-williams"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Charley_Jordan",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-14"
+  },
+  {
+    "id": "henry-thomas",
+    "name": "Henry Thomas",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Thomas%20Blues%20Musician.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1874",
+    "birthPlace": "Big Sandy",
+    "birthCoords": [
+      -95.1122,
+      32.5847
+    ],
+    "deathDate": "1930",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=NwqogSuDdio",
+    "albums": [
+      {
+        "name": "Texas Worried Blues (Complete Recorded Works 1927-1929) (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=NwqogSuDdio"
+      },
+      {
+        "name": "Ragtime Texas: Complete Recorded Works in Chronological Order (1927-1929) (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=NwqogSuDdio"
+      },
+      {
+        "name": "Texas Blues: Early Blues Masters From the Lone Star State (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=b8NJ-MIfFHI"
+      },
+      {
+        "name": "Bull Doze Blues (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ds3wXLxM6kg"
+      }
+    ],
+    "description": "Henry Thomas, billed as \"Ragtime Texas,\" was an itinerant Texas songster who rode freight trains across the state from the 1890s onward, playing guitar and the quills (a cane panpipe) at picnics, dances and work camps. His brief but vital recording career for Vocalion in 1927-1929 preserved a pre-blues songster repertoire reaching back into the 19th century, and his \"Bull Doze Blues\" supplied the melody and refrain for Canned Heat's 1968 hit \"Going Up the Country,\" cementing his influence on the folk and blues revival generation, including Bob Dylan and Taj Mahal.",
+    "activeFrom": "1890",
+    "influences": [],
+    "influencedBy": [
+      "taj-mahal"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Henry_Thomas_(musician)",
+    "secondaryInstruments": [
+      "Quills",
+      "Vocals"
+    ],
+    "createdAt": "2026-09-14"
+  },
+  {
+    "id": "pat-hare",
+    "name": "Pat Hare",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/54/American_blues_guitarist_Pat_Hare.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1930-12-20",
+    "birthPlace": "Cherry Valley, Arkansas",
+    "birthCoords": [
+      -90.752777777778,
+      35.403611111111
+    ],
+    "deathDate": "1980-09-26",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=BC6Z18m5hJI",
+    "albums": [],
+    "description": "Pat Hare was a Memphis blues guitarist whose brutally distorted, overdriven guitar tone on records like James Cotton's \"Cotton Crop Blues\" (1954) is often cited as one of the earliest recorded ancestors of heavy metal guitar. A first-call session man at Sun Records, he backed Howlin' Wolf, Junior Parker, James Cotton and Bobby \"Blue\" Bland before joining Muddy Waters' touring band, and his ferocious guitar work influenced a generation of British blues-rock guitarists in the 1960s.",
+    "activeFrom": "1951",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "howlin-wolf",
+      "james-cotton",
+      "muddy-waters",
+      "bobby-blue-bland",
+      "junior-parker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Pat_Hare",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-14"
+  },
+  {
+    "id": "ov-wright",
+    "name": "O.V. Wright",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/19/Small_photo_of_O.V._Wright_for_info_box.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1939-10-09",
+    "birthPlace": "Shelby County, Tennessee",
+    "birthCoords": [
+      -89.89,
+      35.18
+    ],
+    "deathDate": "1980-11-16",
+    "deathPlace": "Memphis",
+    "deathCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=elIEMb9chDA",
+    "albums": [
+      {
+        "name": "A Nickel and a Nail and Ace of Spades (1971)",
+        "youtubeLink": "https://www.youtube.com/watch?v=elIEMb9chDA"
+      }
+    ],
+    "description": "O.V. Wright was a Memphis soul-blues singer whose anguished, gospel-rooted voice made him one of Southern soul's most revered vocalists among blues audiences. Recording for Back Beat and later Hi Records with producer Willie Mitchell, he scored deep-soul classics such as \"That's How Strong My Love Is\" (1964) and \"A Nickel and a Nail\" (1971), and his intense, emotionally raw delivery became a direct influence on later singers including Otis Clay, Robert Cray and Taj Mahal.",
+    "activeFrom": "1959",
+    "influences": [
+      "bobby-blue-bland"
+    ],
+    "influencedBy": [
+      "robert-cray",
+      "otis-clay",
+      "taj-mahal"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "johnny-rawls"
+    ],
+    "source": "https://en.wikipedia.org/wiki/O._V._Wright",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-14"
+  },
+  {
+    "id": "cecil-gant",
+    "name": "Cecil Gant",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/36/Cecil_Gant.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1913-04-04",
+    "birthPlace": "Columbia, Tennessee",
+    "birthCoords": [
+      -87.0353,
+      35.6151
+    ],
+    "deathDate": "1951-02-04",
+    "deathPlace": "Nashville",
+    "deathCoords": [
+      -86.77444444444444,
+      36.16222222222222
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=cpoIJZfLtyI",
+    "albums": [
+      {
+        "name": "Cecil Gant (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cWXjrwNxIxQ"
+      },
+      {
+        "name": "The Blues Collection: Cecil Gant, Blues in LA (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=w41bjhJ7gKg"
+      },
+      {
+        "name": "The Complete Recordings Volume 2 - 1945 (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cpoIJZfLtyI"
+      },
+      {
+        "name": "The Complete Recordings Volume 1 - 1944 (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cpoIJZfLtyI"
+      },
+      {
+        "name": "The Complete Recordings Volume 3 - 1945-1946 (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cpoIJZfLtyI"
+      },
+      {
+        "name": "The Complete Recordings Volume 4 - 1946-1949 (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cpoIJZfLtyI"
+      }
+    ],
+    "description": "Cecil Gant was a Tennessee blues pianist and singer nicknamed \"The G.I. Sing-Sation\" after his 1944 ballad \"I Wonder,\" recorded while he was still in Army uniform, became a massive R&B hit. Equally comfortable with tender ballads and hard-driving boogie-woogie piano workouts, Gant's contrasting two-sided singles were highly influential on post-war jump blues and early rock and roll piano style, with his ballad phrasing later echoed in the work of Fats Domino.",
+    "activeFrom": "1935",
+    "influences": [
+      "pete-johnson",
+      "meade-lux-lewis",
+      "albert-ammons"
+    ],
+    "influencedBy": [
+      "fats-domino"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Cecil_Gant",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-14"
+  },
+  {
+    "id": "william-moore",
+    "name": "William Moore",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1893-03-03",
+    "birthPlace": "Dover, Georgia",
+    "birthCoords": [
+      -81.6987,
+      32.5343
+    ],
+    "deathDate": "1951-11-22",
+    "deathPlace": "Warrenton, Virginia",
+    "deathCoords": [
+      -77.7961,
+      38.7146
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=M7Yz6zzlU8Y",
+    "albums": [
+      {
+        "name": "Old Country Rock / Raggin' the Blues (1929)",
+        "youtubeLink": "https://www.youtube.com/watch?v=M7Yz6zzlU8Y"
+      }
+    ],
+    "description": "William Moore was a Virginia blues guitarist and the only Virginian country bluesman to record for Paramount Records, cutting sixteen sides in Chicago in 1928. Born in Dover, Georgia and raised in Tappahannock, Virginia, where he worked as a barber, Moore played a facile, ragtime-inflected guitar style exemplified by tracks like \"Old Country Rock\" that helped define the melodic, syncopated sound of Piedmont blues guitar.",
+    "activeFrom": "1928",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/William_Moore_(musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-14"
+  },
+  {
+    "id": "long-john-baldry",
+    "name": "Long John Baldry",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Long%20John%20Baldry%20photo%201972.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1941-01-12",
+    "birthPlace": "East Haddon, Northamptonshire, England",
+    "birthCoords": [
+      -1.0261,
+      52.3106
+    ],
+    "deathDate": "2005-07-21",
+    "deathPlace": "Vancouver, British Columbia, Canada",
+    "deathCoords": [
+      -123.1138888888889,
+      49.26083333333333
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "British Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=C8-4DXj_ZOY",
+    "albums": [
+      {
+        "name": "Long John's Blues (1965)",
+        "youtubeLink": "https://www.youtube.com/watch?v=C8-4DXj_ZOY"
+      }
+    ],
+    "description": "Long John Baldry was a towering figure of the early British blues revival, singing with Alexis Korner's Blues Incorporated on 1962's R&B from the Marquee, widely regarded as the first British blues album, and later fronting Cyril Davies' R&B All Stars after Davies' death in 1964. His bands the Hoochie Coochie Men and Bluesology gave a young Rod Stewart and Reg Dwight (later Elton John) their start, and his deep, resonant voice — shaped by early covers of Lead Belly and Big Bill Broonzy — made him one of the most influential blues singers to emerge from the London club scene.",
+    "activeFrom": "1962",
+    "influences": [
+      "lead-belly",
+      "big-bill-broonzy"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "alexis-korner",
+      "cyril-davies",
+      "john-mayall"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Long_John_Baldry",
+    "secondaryInstruments": [
+      "Guitar",
+      "Harmonica"
+    ],
+    "createdAt": "2026-09-14"
   }
 ]
