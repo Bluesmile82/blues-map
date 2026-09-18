@@ -377,11 +377,24 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
 
         {/* ── Scrollable body ── */}
         <div className="flex-1 overflow-y-auto">
-          <div className="px-5 py-6 sm:px-12 sm:py-10 flex flex-col gap-6 sm:gap-10">
+          <div className="px-5 py-6 sm:px-12 sm:py-10 flex flex-col gap-6">
 
             {/* Description */}
             {musician.description && (
               <p className="text-ui text-ink leading-[1.75]">{musician.description}</p>
+            )}
+
+            {/* More info */}
+            {musician.source?.startsWith('http') && (
+              <a
+                href={musician.source}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ui underline underline-offset-4 self-start"
+                style={{ color: hex }}
+              >
+                {t('musician.moreInfo')} ↗
+              </a>
             )}
 
             {/* Listen */}
