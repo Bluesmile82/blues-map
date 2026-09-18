@@ -216,7 +216,8 @@
       "pinetop-smith",
       "hersal-thomas",
       "jimmy-yancey",
-      "charlie-spand"
+      "charlie-spand",
+      "jimmy-blythe"
     ],
     "influencedBy": [
       "cecil-gant"
@@ -2116,7 +2117,8 @@
       "lucille-hegamin",
       "georgia-white",
       "lavern-baker",
-      "candye-kane"
+      "candye-kane",
+      "chippie-hill"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -3510,7 +3512,8 @@
       "ramblin-thomas",
       "archie-edwards",
       "robert-pete-williams",
-      "lil-son-jackson"
+      "lil-son-jackson",
+      "thomas-shaw"
     ],
     "incomplete": false,
     "playedWith": [
@@ -3647,7 +3650,9 @@
     ],
     "description": "Willie Johnson (January 25, 1897 – September 18, 1945), commonly known as Blind Willie Johnson, was an American gospel blues singer and guitarist.  His landmark recordings completed between 1927 and 1930, thirty songs in all, display a combination of powerful chest voice singing, slide guitar skills and originality that has influenced generations of musicians.  His records sold well though as a street performer and preacher, he had little wealth in his lifetime.",
     "activeFrom": "1927",
-    "influences": [],
+    "influences": [
+      "edward-w-clayborn"
+    ],
     "influencedBy": [
       "ramblin-thomas",
       "lc-robinson"
@@ -13305,7 +13310,8 @@
     "activeFrom": "1930",
     "influences": [],
     "influencedBy": [
-      "lucille-hegamin"
+      "lucille-hegamin",
+      "thomas-shaw"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -17436,7 +17442,8 @@
     "influences": [
       "blind-blake",
       "blind-willie-johnson",
-      "blind-willie-walker"
+      "blind-willie-walker",
+      "blind-joe-taggart"
     ],
     "influencedBy": [
       "terry-garland"
@@ -20971,7 +20978,8 @@
       "alger-texas-alexander",
       "bessie-smith",
       "roosevelt-sykes",
-      "georgia-white"
+      "georgia-white",
+      "chippie-hill"
     ],
     "source": "https://en.wikipedia.org/wiki/Lonnie_Johnson_(musician)",
     "secondaryInstruments": [
@@ -22335,12 +22343,15 @@
       "lucille-hegamin",
       "georgia-white",
       "trixie-smith",
-      "chuck-willis"
+      "chuck-willis",
+      "chippie-hill"
     ],
     "incomplete": false,
     "playedWith": [
       "tampa-red",
-      "bessie-smith"
+      "bessie-smith",
+      "chippie-hill",
+      "jimmy-blythe"
     ],
     "source": "https://en.wikipedia.org/wiki/Ma_Rainey",
     "secondaryInstruments": [],
@@ -26153,7 +26164,9 @@
     "albums": [],
     "description": "Pinetop Smith was a boogie-woogie pianist whose 1928 recording \"Pinetop's Boogie Woogie\" was the first known use of the term on record. He died at 24 in a dance-hall fight.",
     "activeFrom": "1920",
-    "influences": [],
+    "influences": [
+      "jimmy-blythe"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -26580,7 +26593,8 @@
       "luther-georgia-boy-johnson"
     ],
     "influencedBy": [
-      "johnny-heartsman"
+      "johnny-heartsman",
+      "thomas-shaw"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -31495,7 +31509,8 @@
       "sonny-boy-williamson",
       "memphis-minnie",
       "big-maceo-merriweather",
-      "big-bill-broonzy"
+      "big-bill-broonzy",
+      "chippie-hill"
     ],
     "source": "https://en.wikipedia.org/wiki/Tampa_Red",
     "secondaryInstruments": [
@@ -32149,7 +32164,8 @@
     ],
     "influencedBy": [
       "robert-johnson",
-      "son-house"
+      "son-house",
+      "babe-stovall"
     ],
     "incomplete": false,
     "playedWith": [
@@ -41818,7 +41834,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "butch-cage"
+    ],
     "source": "https://en.wikipedia.org/wiki/Robert_Pete_Williams",
     "secondaryInstruments": [
       "Vocals"
@@ -44831,7 +44849,9 @@
     "description": "Clifton Chenier (1925-1987), known as the 'King of Zydeco,' was a Louisiana Creole accordionist and singer who electrified the traditional squeezebox sound of rural Louisiana and fused it with African American blues, rhythm and blues, and Afro-Caribbean rhythms to create the modern zydeco style. Fronting his Red Hot Louisiana Band for decades, he became zydeco's first major national star, winning the first Grammy Award ever given for a zydeco recording in 1984 for his album I'm Here!, and was inducted into the Blues Hall of Fame in 1989. His raw, blues-soaked accordion playing and his years working the same Gulf Coast blues circuit as artists like Joe Doucet made him a central bridge figure between Louisiana Creole music and the broader blues tradition.",
     "activeFrom": "1954",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "rockin-sidney"
+    ],
     "incomplete": false,
     "playedWith": [
       "joe-doucet",
@@ -47303,7 +47323,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "jimmy-blythe"
+    ],
     "source": "https://en.wikipedia.org/wiki/Trixie_Smith",
     "secondaryInstruments": [],
     "createdAt": "2026-09-13"
@@ -49108,5 +49130,516 @@
       "Vocals"
     ],
     "createdAt": "2026-09-16"
+  },
+  {
+    "id": "chippie-hill",
+    "name": "Chippie Hill",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bertha%20Chippie%20Hill%2C%20New%20York%2C%20N.Y.%2C%20between%201946%20and%201948%20(William%20P.%20Gottlieb).jpg?width=500",
+    "image_source": null,
+    "birthDate": "1905-03-15",
+    "birthPlace": "Charleston",
+    "birthCoords": [
+      -79.93194444444444,
+      32.78333333333333
+    ],
+    "deathDate": "1950-05-07",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.00611111111111,
+      40.71277777777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Vaudeville Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=BXpZkAcpTAI",
+    "albums": [
+      {
+        "name": "The Complete Recorded Works 1925-1929 in Chronological Order (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=SV69afpN9Yk"
+      }
+    ],
+    "description": "Bertha \"Chippie\" Hill (March 15, 1905 – May 7, 1950) was an American blues and vaudeville singer and dancer, best known for her recordings with Louis Armstrong.",
+    "activeFrom": "1925",
+    "influences": [
+      "bessie-smith",
+      "ma-rainey"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "lonnie-johnson",
+      "tampa-red",
+      "ma-rainey"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Chippie_Hill",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-18"
+  },
+  {
+    "id": "blind-joe-taggart",
+    "name": "Blind Joe Taggart",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1892-08-16",
+    "birthPlace": "Abbeville",
+    "birthCoords": [
+      -82.379166666667,
+      34.178611111111
+    ],
+    "deathDate": "1961-01-15",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=uxGYtHlhWDE",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, Vol. 1: 1926-1928 (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ryLkdu8Hmks"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Vol. 2: 1929-1934 (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Vy7bxiX7R2Q"
+      }
+    ],
+    "description": "Joel Washington Taggart (August 16, 1892 – January 15, 1961), usually known as Blind Joe Taggart, was an American country blues and gospel singer and guitarist who recorded in the 1920s and 1930s.  Though primarily a performer of evangelistic gospel songs, he also recorded secular music under a number of pseudonyms including Blind Joe Amos, Blind Jeremiah Taylor, Blind Tim Russell, Blind Joe Donnel, and possibly Blind Percy and Six Cylinder Smith.",
+    "activeFrom": "1926",
+    "influences": [],
+    "influencedBy": [
+      "josh-white"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Blind_Joe_Taggart",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-18"
+  },
+  {
+    "id": "edward-w-clayborn",
+    "name": "Edward W. Clayborn",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1880-03-10",
+    "birthPlace": "Richmond, Alabama",
+    "birthCoords": [
+      -87.055,
+      32.11417
+    ],
+    "deathDate": "1978",
+    "deathPlace": "Pittsburgh, Pennsylvania",
+    "deathCoords": [
+      -79.9959,
+      40.4406
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=LGIwLVxrPYQ",
+    "albums": [
+      {
+        "name": "Complete Recorded Works 1926 - 1928 in Chronological Order (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ocE_-lW5FR4"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Vol. 2: 1929-1934 (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ocE_-lW5FR4"
+      },
+      {
+        "name": "I Have a Home in the Sky (2015)",
+        "youtubeLink": "https://www.youtube.com/watch?v=x48x3TFx0b4"
+      }
+    ],
+    "description": "Reverend Edward W. Clayborn (March 10, 1880 – January 1978) was an American musician, known as the \"Guitar Evangelist\".  He sang a form of blues gospel similar to Blind Willie Johnson.",
+    "activeFrom": "1926",
+    "influences": [],
+    "influencedBy": [
+      "blind-willie-johnson"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Edward_W._Clayborn",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-18"
+  },
+  {
+    "id": "rockin-sidney",
+    "name": "Rockin' Sidney",
+    "image": "https://upload.wikimedia.org/wikipedia/en/7/7b/Rockin_sidney.png",
+    "image_source": null,
+    "birthDate": "1938-04-09",
+    "birthPlace": "Lebeau",
+    "birthCoords": [
+      -91.976944444444,
+      30.731388888889
+    ],
+    "deathDate": "1998-02-25",
+    "deathPlace": "Lake Charles",
+    "deathCoords": [
+      -93.208611111111,
+      30.214722222222
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=R4Pd2QmR2BI",
+    "albums": [
+      {
+        "name": "My Toot-Toot (1985)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0HM7cbw4A0Q"
+      }
+    ],
+    "description": "Sidney Simien (April 9, 1938 – February 25, 1998), known professionally as Rockin' Sidney, was an American R&B, zydeco, and soul musician who began recording in the late 1950s and continued performing until his death.  He is best known for his 1985 single \"My Toot-Toot\", which reached top 20 on the Billboard Hot Country Songs charts and earned him a Grammy Award.",
+    "activeFrom": "1957",
+    "influences": [
+      "clifton-chenier"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Rockin'_Sidney",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-18"
+  },
+  {
+    "id": "blind-mamie-forehand",
+    "name": "Blind Mamie Forehand",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1895",
+    "birthPlace": "Alabama",
+    "birthCoords": [
+      -86.9023,
+      32.3182
+    ],
+    "deathDate": "1936",
+    "deathPlace": "Memphis, Tennessee",
+    "deathCoords": [
+      -90.049,
+      35.1495
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Birmingham, Alabama",
+        "coords": [
+          -86.8025,
+          33.5207
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=wkc23XCRCyA",
+    "albums": [
+      {
+        "name": "Storefront and Street Corner Gospel (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=wkc23XCRCyA"
+      }
+    ],
+    "description": "Mamie Forehand was a blind American gospel singer who, with her husband A. C. Forehand on guitar, recorded four sides for Victor Records in Memphis in February 1927, accompanying her plaintive vocals with a triangle or finger cymbals. Her recording \"Wouldn't Mind Dying\" is regarded as one of the earliest and starkest examples of pre-war gospel blues committed to record. The couple, both blind, had settled in Birmingham, Alabama before moving to Memphis around 1930, where Mamie died a few years later.",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/A._C._and_Mamie_Forehand",
+    "secondaryInstruments": [
+      "Triangle"
+    ],
+    "createdAt": "2026-09-18"
+  },
+  {
+    "id": "jimmy-blythe",
+    "name": "Jimmy Blythe",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1901-05-20",
+    "birthPlace": "Keene",
+    "birthCoords": [
+      -84.6411156,
+      37.9430853
+    ],
+    "deathDate": "1931-06-14",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=iBVuaogxX-8",
+    "albums": [
+      {
+        "name": "Jimmy Blythe: In Chronological Order 1924-1931 (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=V6nGV0VPcpY"
+      },
+      {
+        "name": "Messin' Around Blues (2007)",
+        "youtubeLink": "https://www.youtube.com/watch?v=I1UTQJFmPXY"
+      }
+    ],
+    "description": "James Louis Blythe (May 20, 1901 – June 14, 1931) was an American jazz and boogie-woogie pianist and composer.  Blythe is known to have recorded as many as 300 piano rolls, and his song \"Chicago Stomp\" is considered one of the earliest examples of boogie-woogie music to be recorded.",
+    "activeFrom": "1922",
+    "influences": [],
+    "influencedBy": [
+      "pinetop-smith",
+      "albert-ammons"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "ma-rainey",
+      "trixie-smith"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Jimmy_Blythe",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-18"
+  },
+  {
+    "id": "babe-stovall",
+    "name": "Babe Stovall",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hedwig%20Gorski%20with%20blues%20singer%20Babe%20Stoval%20Mississippi%201973.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1907-10-14",
+    "birthPlace": "Tylertown",
+    "birthCoords": [
+      -90.1428,
+      31.1161
+    ],
+    "deathDate": "1974-09-21",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9LlLbNo8mSQ",
+    "albums": [
+      {
+        "name": "The Old Ace: Mississippi Blues & Religious Songs (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=yf3SEsbvGQk"
+      }
+    ],
+    "description": "Jewell Stovall, better known as Babe Stovall (October 14, 1907 – September 21, 1974), was an American Delta blues singer and guitarist. \nStovall was born in Tylertown, Mississippi, United States, in 1907, the youngest of eleven children (thus his nickname \"Babe\").  He learned to play the guitar by the age of eight, and his guitar playing style was influenced by Tommy Johnson, whom he had met in Mississippi around 1930.",
+    "activeFrom": "1927",
+    "influences": [
+      "tommy-johnson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Babe_Stovall",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-18"
+  },
+  {
+    "id": "butch-cage",
+    "name": "Butch Cage",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1894-03-16",
+    "birthPlace": "Meadville, Mississippi",
+    "birthCoords": [
+      -90.89083,
+      31.47306
+    ],
+    "deathDate": "1975-12",
+    "deathPlace": "Zachary, Louisiana",
+    "deathCoords": [
+      -91.15667,
+      30.655
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Fiddle",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=kbcKAcG624c",
+    "albums": [
+      {
+        "name": "Country Negro Jam Sessions (1961)",
+        "youtubeLink": "https://www.youtube.com/watch?v=kbcKAcG624c"
+      }
+    ],
+    "description": "James \"Butch\" Cage was a Louisiana fiddler who kept alive the nineteenth-century African American string-band fiddle tradition into the second half of the twentieth century. Discovered in 1959 by folklorist Harry Oster playing house parties and dances around Zachary, Louisiana, with guitarist Willie B. Thomas, the duo became a sensation at the 1960 Newport Folk Festival, introducing pre-blues fiddle-and-guitar music to a national audience.",
+    "activeFrom": "1959",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "robert-pete-williams"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Butch_Cage_and_Willie_B._Thomas",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-18"
+  },
+  {
+    "id": "robert-shaw",
+    "name": "Robert Shaw",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1908-08-09",
+    "birthPlace": "Stafford",
+    "birthCoords": [
+      -95.5633,
+      29.6242
+    ],
+    "deathDate": "1985-05-18",
+    "deathPlace": "Austin, Texas",
+    "deathCoords": [
+      -97.7431,
+      30.2672
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "Kansas City",
+        "coords": [
+          -94.5786,
+          39.0997
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=eB_VG_MqaDA",
+    "albums": [
+      {
+        "name": "The Ma Grinder (Texas Barrelhouse Piano) (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cXnT1HpFHSs"
+      }
+    ],
+    "description": "Robert Shaw (August 9, 1908 – May 18, 1985) was an American blues and boogie-woogie pianist, best known for his 1963 album, The Ma Grinder.",
+    "activeFrom": "1929",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Robert_Shaw_(blues_musician)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-18"
+  },
+  {
+    "id": "thomas-shaw",
+    "name": "Thomas Shaw",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1908-03-04",
+    "birthPlace": "Brenham",
+    "birthCoords": [
+      -96.396944444444,
+      30.161944444444
+    ],
+    "deathDate": "1977-02-24",
+    "deathPlace": "San Diego",
+    "deathCoords": [
+      -117.1625,
+      32.715
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=0Ia4aE6LUpw",
+    "albums": [
+      {
+        "name": "Blind Lemon's Buddy (1972)",
+        "youtubeLink": "https://www.youtube.com/watch?v=v0B-2bbpYSs"
+      }
+    ],
+    "description": "Thomas Edgar Shaw (March 4, 1908 – February 24, 1977) was an American blues singer and guitarist.",
+    "activeFrom": "1928",
+    "influences": [
+      "blind-lemon-jefferson",
+      "j-t-funny-papa-smith",
+      "ramblin-thomas"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Thomas_Shaw_(blues_musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-18"
   }
 ]
