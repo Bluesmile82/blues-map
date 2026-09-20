@@ -2118,7 +2118,8 @@
       "georgia-white",
       "lavern-baker",
       "candye-kane",
-      "chippie-hill"
+      "chippie-hill",
+      "maggie-jones"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -2961,7 +2962,8 @@
       "floyd-jones",
       "david-honeyboy-edwards",
       "koko-taylor",
-      "willie-nix"
+      "willie-nix",
+      "joe-hill-louis"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Walter_Horton",
     "secondaryInstruments": [],
@@ -6852,7 +6854,9 @@
     "influences": [],
     "influencedBy": [
       "meade-lux-lewis",
-      "albert-ammons"
+      "albert-ammons",
+      "montana-taylor",
+      "romeo-nelson"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -11717,7 +11721,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "roy-gaines"
+    ],
     "source": "https://en.wikipedia.org/wiki/Grady_Gaines",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -22586,7 +22592,11 @@
     "influences": [],
     "influencedBy": [
       "lucille-hegamin",
-      "trixie-smith"
+      "trixie-smith",
+      "rosa-henderson",
+      "maggie-jones",
+      "viola-mccoy",
+      "josie-miles"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -24111,7 +24121,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "joe-hill-louis"
+    ],
     "source": "https://en.wikipedia.org/wiki/Mose_Vinson",
     "secondaryInstruments": [
       "Vocals"
@@ -26167,7 +26179,9 @@
     "influences": [
       "jimmy-blythe"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "montana-taylor"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Pinetop_Smith",
@@ -26673,7 +26687,9 @@
       "clarence-carter"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "roy-gaines"
+    ],
     "source": "https://en.wikipedia.org/wiki/Ray_Charles",
     "secondaryInstruments": [
       "Vocals"
@@ -31184,7 +31200,9 @@
       "wayne-bennett",
       "joe-guitar-hughes",
       "mel-brown",
-      "charlie-baty"
+      "charlie-baty",
+      "goree-carter",
+      "roy-gaines"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31510,7 +31528,8 @@
       "memphis-minnie",
       "big-maceo-merriweather",
       "big-bill-broonzy",
-      "chippie-hill"
+      "chippie-hill",
+      "romeo-nelson"
     ],
     "source": "https://en.wikipedia.org/wiki/Tampa_Red",
     "secondaryInstruments": [
@@ -34236,7 +34255,9 @@
     ],
     "description": "Sister Rosetta Tharpe was an American singer, songwriter, and guitarist who gained popularity in the 1930s and 1940s with her gospel recordings, characterized by a unique mixture of spiritual lyrics and electric guitar. She was the first great recording star of gospel music and was among the first gospel musicians to appeal to rhythm and blues and rock and roll audiences, later being referred to as 'the original soul sister' and 'the Godmother of rock and roll'. Her guitar-playing technique had a profound influence on the development of British blues in the 1960s.",
     "activeFrom": "1938",
-    "influences": [],
+    "influences": [
+      "arizona-dranes"
+    ],
     "influencedBy": [
       "elvis-presley",
       "eric-clapton",
@@ -47287,8 +47308,8 @@
   {
     "id": "trixie-smith",
     "name": "Trixie Smith",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Trixie_Smith_and_Jennifer_Hinckley_--_Southeast_Region_%2810706711616%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_source": null,
+    "image": "https://alchetron.com/cdn/trixie-smith-5236f1a8-c6dd-492c-998d-53b384d0fb2-resize-750.jpeg",
+    "image_source": "alchetron.com",
     "birthDate": "1895",
     "birthPlace": "Atlanta, Georgia",
     "birthCoords": [
@@ -48371,7 +48392,9 @@
       "otis-redding"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "roy-gaines"
+    ],
     "source": "https://en.wikipedia.org/wiki/Chuck_Willis",
     "secondaryInstruments": [],
     "createdAt": "2026-09-17"
@@ -49641,5 +49664,555 @@
       "Vocals"
     ],
     "createdAt": "2026-09-18"
+  },
+  {
+    "id": "rosa-henderson",
+    "name": "Rosa Henderson",
+    "image": "https://syncopatedtimes.com/wp-content/uploads/2020/11/rosa-henderson.jpeg",
+    "image_source": "syncopatedtimes.com",
+    "birthDate": "1896-11-24",
+    "birthPlace": "Henderson",
+    "birthCoords": [
+      -87.5808,
+      37.8356
+    ],
+    "deathDate": "1968-04-06",
+    "deathPlace": "Roosevelt Island",
+    "deathCoords": [
+      -73.9493046,
+      40.7626016
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Vaudeville Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=_H2p7sCFS4E",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 1: 1923 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=_H2p7sCFS4E"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 4: 1926-1931 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=KGtvZeY9vZk"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 2: 1924 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=pofHEfXeiuE"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 3: 1924-1926 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ybKBu-yjtUY"
+      },
+      {
+        "name": "1923-1931 (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=KGtvZeY9vZk"
+      }
+    ],
+    "description": "Rosa Henderson (November 24, 1896 – April 6, 1968) was an American jazz and classic female blues singer and vaudeville entertainer of the Harlem Renaissance era.  One commentator noted that \"her large record output and continuing success on the stage indicate the popularity of her big voice and engaging persona\".",
+    "activeFrom": "1923",
+    "influences": [
+      "mamie-smith"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Rosa_Henderson",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-19"
+  },
+  {
+    "id": "maggie-jones",
+    "name": "Maggie Jones",
+    "image": "http://slc.s.l.pic.centerblog.net/o/4b897754.jpg",
+    "image_source": "centerblog.net",
+    "birthDate": "1894-03",
+    "birthPlace": "Hillsboro",
+    "birthCoords": [
+      -97.1244,
+      32.0094
+    ],
+    "deathDate": "1940-03-09",
+    "deathPlace": "Fort Worth, Texas",
+    "deathCoords": [
+      -97.3308,
+      32.7555
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Vaudeville Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=8OfbxiaWa-Q",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 1: August 1923 to April 1925 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=LyI-B8QsaY0"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 2: Maggie Jones, May 1925 to June 1926 / Gladys Bentley, 1928-1929 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=l3Bz6AzzJt4"
+      }
+    ],
+    "description": "Maggie Jones (born Fae Barnes, March 1894 – March 9, 1940) was an American classic blues singer and pianist billed as \"The Texas Nightingale,\" the first singer from Texas to record. She cut 38 sides between 1923 and 1926, accompanied at times by Louis Armstrong and Fletcher Henderson, on songs ranging from standard blues fare to pointed commentary on Jim Crow such as \"North Bound Blues.\"",
+    "activeFrom": "1923",
+    "influences": [
+      "mamie-smith",
+      "bessie-smith"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Maggie_Jones_(blues_musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-19"
+  },
+  {
+    "id": "viola-mccoy",
+    "name": "Viola McCoy",
+    "image": "https://alchetron.com/cdn/viola-mccoy-e9e5a1a2-10e7-43e3-98ab-a06bec3ee93-resize-750.jpeg",
+    "image_source": "alchetron.com",
+    "birthDate": "1900",
+    "birthPlace": "Mississippi",
+    "birthCoords": [
+      -89.3985,
+      32.3547
+    ],
+    "deathDate": "1956",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Indianapolis",
+        "coords": [
+          -86.1581,
+          39.7684
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Vaudeville Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=kUfMHbTyzLQ",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 1: 1923 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JU8Rjm0S_po"
+      },
+      {
+        "name": "Complete Recorded Works In Chronological Order, Volume 2: 1924-1926 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=pofHEfXeiuE"
+      }
+    ],
+    "description": "Viola McCoy (c.  1900 – c.  1956) was an American blues singer who performed in the classic female blues style during a career that lasted from the early 1920s to the late 1930s.",
+    "activeFrom": "1923",
+    "influences": [
+      "mamie-smith"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Viola_McCoy",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-19"
+  },
+  {
+    "id": "arizona-dranes",
+    "name": "Arizona Dranes",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Goldman_Wolf_Music_Store_November_1926_ad_with_Arizona_Dranes_and_Louis_Armstrong.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": null,
+    "birthDate": "1889-05-04",
+    "birthPlace": "Sherman",
+    "birthCoords": [
+      -96.61,
+      33.6411
+    ],
+    "deathDate": "1963-07-27",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=fkK1gEJn5ko",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, 1926-1929 (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=RjYtFMH4saA"
+      },
+      {
+        "name": "He Is My Story: The Sanctified Soul of Arizona Dranes (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uUpbHxbpN3w"
+      }
+    ],
+    "description": "Juanita \"Arizona\" Dranes (May 4, 1889 or 1891 – July 27, 1963) was an American blind female gospel singer and pianist.  Dranes was one of the first gospel artists to bring the musical styles of Holiness churches' religious music to the public in her records for Okeh Records and performances in the 1920s.  She was also one of the first professional women gospel singers.",
+    "activeFrom": "1926",
+    "influences": [],
+    "influencedBy": [
+      "sister-rosetta-tharpe"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Arizona_Dranes",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-19"
+  },
+  {
+    "id": "montana-taylor",
+    "name": "Montana Taylor",
+    "image": "https://i.ytimg.com/vi/YEr12wLBGHg/hqdefault.jpg",
+    "image_source": "discogs",
+    "birthDate": "1903",
+    "birthPlace": "Butte",
+    "birthCoords": [
+      -112.52972222222,
+      46.006388888889
+    ],
+    "deathDate": "1958",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Cleveland",
+        "coords": [
+          -81.6944,
+          41.4993
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=vS78Vz9Xjqc",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order (1929-1946) (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=F-ilbMhlr1E"
+      }
+    ],
+    "description": "Arthur \"Montana\" Taylor (1903 – c. 1958) was an American boogie-woogie and piano blues pianist, best known for his recordings in the 1940s, and regarded as the leading exponent of the \"barrelhouse\" style of playing.",
+    "activeFrom": "1923",
+    "influences": [
+      "cow-cow-davenport",
+      "pinetop-smith"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Montana_Taylor",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-19"
+  },
+  {
+    "id": "romeo-nelson",
+    "name": "Romeo Nelson",
+    "image": "https://wbssmedia.com/artist_images/full_thumb/89013196ROMEONELSONB1.jpg",
+    "image_source": "wbssmedia.com",
+    "birthDate": "1902-03-12",
+    "birthPlace": "Springfield",
+    "birthCoords": [
+      -86.8786,
+      36.4994
+    ],
+    "deathDate": "1974-05-17",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=_1LtuR98JI8",
+    "albums": [
+      {
+        "name": "Boogie Woogie Piano: Historic Recordings by Pioneer Piano Men",
+        "youtubeLink": "https://www.youtube.com/watch?v=_1LtuR98JI8"
+      }
+    ],
+    "description": "Iromeio \"Romeo\" Nelson (March 12, 1902 – May 17, 1974) was an American boogie woogie pianist whose 1929 recordings for Vocalion, including \"Head Rag Hop\" and \"Turning the Stone,\" are regarded as some of the finest and fastest boogie woogie showpieces on record. Born in Springfield, Tennessee, he moved to Chicago as a child and spent most of his life playing piano at rent parties in the city, though he was largely forgotten by the public after his brief recording career ended.",
+    "activeFrom": "1929",
+    "influences": [
+      "cow-cow-davenport"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "tampa-red"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Romeo_Nelson",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-19"
+  },
+  {
+    "id": "goree-carter",
+    "name": "Goree Carter",
+    "image": "https://i.ytimg.com/vi/xZlESMXHFfY/maxresdefault.jpg",
+    "image_source": "sentirelblues.com",
+    "birthDate": "1931-01-01",
+    "birthPlace": "Houston",
+    "birthCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "deathDate": "1990-12-27",
+    "deathPlace": "Houston",
+    "deathCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=yKQbwVsW4c8",
+    "albums": [
+      {
+        "name": "The Complete Recordings Volume 1 1949-1951 (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=yKQbwVsW4c8"
+      }
+    ],
+    "description": "Goree Carter (January 1, 1931 – December 27, 1990) was an American blues and rock and roll pioneer from Houston, Texas, who also recorded under the names Little T-Bone and Rocky Thompson. He is best known for his 1949 single \"Rock Awhile,\" which several music historians have cited as a strong contender for the first rock and roll record, thanks to its over-driven electric guitar sound that anticipated Chuck Berry's style by several years.",
+    "activeFrom": "1949",
+    "influences": [
+      "t-bone-walker"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Goree_Carter",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-19"
+  },
+  {
+    "id": "roy-gaines",
+    "name": "Roy Gaines",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Roy%20Gaines.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1937-08-12",
+    "birthPlace": "Waskom",
+    "birthCoords": [
+      -94.0639,
+      32.4783
+    ],
+    "deathDate": "2021-08-11",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Houston",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=y_NFeh8cHFg",
+    "albums": [
+      {
+        "name": "I Got The T-Bone Walker Blues (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=AIc5iyq04k4"
+      }
+    ],
+    "description": "Roy James Gaines (August 12, 1937 – August 11, 2021) was an American Texas blues and electric blues guitarist, singer and songwriter.  He wrote and recorded the song \"A Hell of a Night\", which was first issued on his 1982 album Gainelining.  He was the younger brother of the blues musician Grady Gaines.",
+    "activeFrom": "1952",
+    "influences": [
+      "t-bone-walker"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "grady-gaines",
+      "ray-charles",
+      "chuck-willis"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Roy_Gaines",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-19"
+  },
+  {
+    "id": "joe-hill-louis",
+    "name": "Joe Hill Louis",
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/80/American_blues_musician_Joe_Hill_Louis.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1921-09-23",
+    "birthPlace": "Memphis, Tennessee",
+    "birthCoords": [
+      -90.049,
+      35.1495
+    ],
+    "deathDate": "1957-08-05",
+    "deathPlace": "Memphis",
+    "deathCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=CrKzu3OfAus",
+    "albums": [
+      {
+        "name": "The Be-Bop Boy with Walter Horton and Mose Vinson (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Rgr5ySZxO48"
+      },
+      {
+        "name": "Boogie In The Park (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Ftf5ucC2_oQ"
+      },
+      {
+        "name": "King Of The One Man Bands - Key Postwar Cuts 1949-1954 (2008)",
+        "youtubeLink": "https://www.youtube.com/watch?v=CrKzu3OfAus"
+      }
+    ],
+    "description": "Lester Hill (September 23, 1921 – August 5, 1957), known professionally as Joe Hill Louis, was an American singer, guitarist, harmonica player and one-man band.  He was one of a small number of one-man blues bands (along with fellow Memphis bluesman Doctor Ross) to have recorded commercially in the 1950s.  He was also a session musician for Sun Records.",
+    "activeFrom": "1949",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "big-walter-horton",
+      "mose-vinson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Joe_Hill_Louis",
+    "secondaryInstruments": [
+      "Harmonica",
+      "Vocals"
+    ],
+    "createdAt": "2026-09-19"
+  },
+  {
+    "id": "josie-miles",
+    "name": "Josie Miles",
+    "image": "https://i.discogs.com/Qy9AXL4IENdmg2q_7YM89jh8_IN6Y03mJzNDz5fy5oM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTQy/NTU5LTE1OTI4MzUz/MTgtODkwMy5qcGVn.jpeg",
+    "image_source": "discogs",
+    "birthDate": "1900",
+    "birthPlace": "Summerville",
+    "birthCoords": [
+      -80.17565,
+      33.0185
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Kansas City",
+        "coords": [
+          -94.5786,
+          39.0997
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Vaudeville Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=EmU9XYmD378",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order: Volume 1 (August 1922-September 1924) (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=2TcpWZ2XJFQ"
+      },
+      {
+        "name": "Complete Recorded Works In Chronological Order: Volume 2 (1924-1925) (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Ajisg4cMDTE"
+      }
+    ],
+    "description": "Josie Miles (c.  1900 – c.  1953–65) was an American vaudeville and blues singer.",
+    "activeFrom": "1922",
+    "influences": [
+      "mamie-smith"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Josie_Miles",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-19"
   }
 ]
