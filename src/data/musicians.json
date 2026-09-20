@@ -49159,7 +49159,7 @@
     ],
     "instrument": "Vocals",
     "bluesStyle": "Vaudeville Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=BXpZkAcpTAI",
+    "youtubeLink": "https://www.youtube.com/watch?v=SV69afpN9Yk",
     "albums": [
       {
         "name": "The Complete Recorded Works 1925-1929 in Chronological Order (1994)",
@@ -49398,8 +49398,8 @@
   {
     "id": "jimmy-blythe",
     "name": "Jimmy Blythe",
-    "image": "",
-    "image_source": null,
+    "image": "https://www.discogs.com/artist/647979-Jimmy-Blythe",
+    "image_source": "discogs",
     "birthDate": "1901-05-20",
     "birthPlace": "Keene",
     "birthCoords": [
@@ -49509,8 +49509,8 @@
   {
     "id": "butch-cage",
     "name": "Butch Cage",
-    "image": "",
-    "image_source": null,
+    "image": "https://media.gettyimages.com/id/1049266508/photo/american-blues-musician-butch-cage-somewhere-in-louisiana-probably-new-orleans-ca-1959.jpg?s=612x612&w=gi&k=20&c=7tJhr6Nld6JW6i1XQzo99D44s-Cgh6dSYK8X7O6JEIc=",
+    "image_source": "JP Jazz archive",
     "birthDate": "1894-03-16",
     "birthPlace": "Meadville, Mississippi",
     "birthCoords": [
@@ -49550,8 +49550,8 @@
   {
     "id": "robert-shaw",
     "name": "Robert Shaw",
-    "image": "",
-    "image_source": null,
+    "image": "https://ecsmedia.pl/c/texas-barrelhouse-piano-b-iext150439888.jpg",
+    "image_source": "ecsmedia.pl",
     "birthDate": "1908-08-09",
     "birthPlace": "Stafford",
     "birthCoords": [
@@ -49582,11 +49582,11 @@
     ],
     "instrument": "Piano",
     "bluesStyle": "Texas Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=eB_VG_MqaDA",
+    "youtubeLink": "https://www.youtube.com/watch?v=qKkQIVLa-e0",
     "albums": [
       {
         "name": "The Ma Grinder (Texas Barrelhouse Piano) (1992)",
-        "youtubeLink": "https://www.youtube.com/watch?v=cXnT1HpFHSs"
+        "youtubeLink": "https://www.youtube.com/watch?v=6CpmdFK1wJ0"
       }
     ],
     "description": "Robert Shaw (August 9, 1908 – May 18, 1985) was an American blues and boogie-woogie pianist, best known for his 1963 album, The Ma Grinder.",
@@ -49602,8 +49602,8 @@
   {
     "id": "thomas-shaw",
     "name": "Thomas Shaw",
-    "image": "",
-    "image_source": null,
+    "image": "https://i0.wp.com/sundayblues.org/wp-content/uploads/2012/05/shaw4.jpg?resize=500%2C500",
+    "image_source": "https://sundayblues.org/",
     "birthDate": "1908-03-04",
     "birthPlace": "Brenham",
     "birthCoords": [
