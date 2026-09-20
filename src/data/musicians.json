@@ -3515,12 +3515,14 @@
       "archie-edwards",
       "robert-pete-williams",
       "lil-son-jackson",
-      "thomas-shaw"
+      "thomas-shaw",
+      "elzadie-robinson"
     ],
     "incomplete": false,
     "playedWith": [
       "lead-belly",
-      "t-bone-walker"
+      "t-bone-walker",
+      "elzadie-robinson"
     ],
     "source": "https://en.wikipedia.org/wiki/Blind_Lemon_Jefferson",
     "secondaryInstruments": [
@@ -9823,7 +9825,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "blind-blake"
+      "blind-blake",
+      "algia-mae-hinton"
     ],
     "source": "https://en.wikipedia.org/wiki/Etta_Baker",
     "secondaryInstruments": [
@@ -12476,7 +12479,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "hociel-thomas"
+    ],
     "source": "https://en.wikipedia.org/wiki/Hersal_Thomas",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -15670,7 +15675,8 @@
     "incomplete": false,
     "playedWith": [
       "melvin-taylor",
-      "taj-mahal"
+      "taj-mahal",
+      "algia-mae-hinton"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Dee_Holeman",
     "secondaryInstruments": [
@@ -18073,7 +18079,8 @@
     "incomplete": false,
     "playedWith": [
       "otis-redding",
-      "clifton-chenier"
+      "clifton-chenier",
+      "carol-fran"
     ],
     "source": "https://en.wikipedia.org/wiki/Katie_Webster",
     "secondaryInstruments": [
@@ -29679,7 +29686,9 @@
     ],
     "description": "Sippie Wallace (born Beulah Belle Thomas; November 1, 1898 – November 1, 1986) was an American blues singer, pianist and songwriter.  Her early career in tent shows gained her the billing \"The Texas Nightingale\".  Between 1923 and 1927, she recorded over 40 songs for Okeh Records, many written by her or her brothers, George and Hersal Thomas.",
     "activeFrom": "1923",
-    "influences": [],
+    "influences": [
+      "hociel-thomas"
+    ],
     "influencedBy": [
       "bonnie-raitt",
       "victoria-spivey"
@@ -48196,10 +48205,13 @@
     "activeFrom": "1939",
     "influences": [],
     "influencedBy": [
-      "amos-milburn"
+      "amos-milburn",
+      "jimmy-liggins"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "jimmy-liggins"
+    ],
     "source": "https://en.wikipedia.org/wiki/Joe_Liggins",
     "secondaryInstruments": [],
     "createdAt": "2026-09-17"
@@ -50214,5 +50226,513 @@
     "source": "https://en.wikipedia.org/wiki/Josie_Miles",
     "secondaryInstruments": [],
     "createdAt": "2026-09-19"
+  },
+  {
+    "id": "saunders-king",
+    "name": "Saunders King",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Saunders%20King.png?width=500",
+    "image_source": null,
+    "birthDate": "1909-03-13",
+    "birthPlace": "Caddo Parish",
+    "birthCoords": [
+      -93.88,
+      32.58
+    ],
+    "deathDate": "2000-08-31",
+    "deathPlace": "San Rafael",
+    "deathCoords": [
+      -122.53083333333333,
+      37.973333333333336
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Oakland",
+        "coords": [
+          -122.2712,
+          37.8044
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=s74Tj2RjOns",
+    "albums": [
+      {
+        "name": "Cool Blues, Jumps & Shuffles (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ub_1hIPCgYo"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Saunders King 1942-1948 (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=8t5iy6EqlmA"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Saunders King 1948-1954 (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=13NP85NVWjM"
+      }
+    ],
+    "description": "Saunders Samuel King (March 13, 1909 – August 31, 2000) was an American R&B and blues guitarist and singer.",
+    "activeFrom": "1938",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Saunders_King",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "algia-mae-hinton",
+    "name": "Algia Mae Hinton",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1929-08-29",
+    "birthPlace": "Johnston County",
+    "birthCoords": [
+      -78.37,
+      35.52
+    ],
+    "deathDate": "2018-02-08",
+    "deathPlace": "Middlesex",
+    "deathCoords": [
+      -78.203333333333,
+      35.789722222222
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=WYwAp5Budd4",
+    "albums": [],
+    "description": "Algia Mae Hinton (née O'Neal; August 29, 1929 – February 8, 2018) was an American Piedmont blues guitarist and vocalist, based in Johnston County, North Carolina, United States.",
+    "activeFrom": "1949",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "john-dee-holeman",
+      "etta-baker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Algia_Mae_Hinton",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "elzadie-robinson",
+    "name": "Elzadie Robinson",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1900",
+    "birthPlace": "Louisiana",
+    "birthCoords": [
+      -92,
+      31
+    ],
+    "deathDate": "1975-01-17",
+    "deathPlace": "Flint",
+    "deathCoords": [
+      -83.693333333333,
+      43.018888888889
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=R7No4UYRRlQ",
+    "albums": [
+      {
+        "name": "Complete Recorded Works Volume 2 (1928-1929) (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JI81YQwq9cA"
+      },
+      {
+        "name": "Complete Recorded Works Volume 1 (1926-1928) (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JI81YQwq9cA"
+      }
+    ],
+    "description": "Elzadie Robinson (c. 1900 – January 17, 1975) was an American classic blues singer from Logansport, Louisiana, who recorded extensively for Paramount Records between 1926 and 1929. Several of her sides feature the guitar accompaniment of Blind Lemon Jefferson, and her plaintive, blues-shouting vocal style placed her among the notable female blues singers of the era.",
+    "activeFrom": "1926",
+    "influences": [
+      "blind-lemon-jefferson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "blind-lemon-jefferson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Elzadie_Robinson",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "lizzie-miles",
+    "name": "Lizzie Miles",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Lizzie%20Miles%20LCCN2004663330.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1895-03-31",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "1963-03-17",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=kDF_wsTOjRo",
+    "albums": [
+      {
+        "name": "Complete Recorded Works In Chronological Order Volume 3 (1928-1939) (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=gxJ0aHgBNGQ"
+      },
+      {
+        "name": "Complete Recorded Works In Chronological Order Volume 2 (1923-1928) (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=m0s36s-d3Us"
+      },
+      {
+        "name": "Complete Recorded Works In Chronological Order Volume 1 (1922-1923) (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=m0s36s-d3Us"
+      }
+    ],
+    "description": "Elizabeth Mary Landreaux (March 31, 1895 – March 17, 1963), known by the stage name Lizzie Miles, was an Afro-Creole blues singer in the United States.",
+    "activeFrom": "1922",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Lizzie_Miles",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "jimmy-liggins",
+    "name": "Jimmy Liggins",
+    "image": "https://upload.wikimedia.org/wikipedia/en/b/b1/Jimmy_Liggins.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1922-10-14",
+    "birthPlace": "Earlsboro",
+    "birthCoords": [
+      -96.798333333333,
+      35.296944444444
+    ],
+    "deathDate": "1983-07-18",
+    "deathPlace": "Durham",
+    "deathCoords": [
+      -78.89861111111111,
+      35.994166666666665
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=FCcU4uomwss",
+    "albums": [
+      {
+        "name": "Jimmy Liggins And His Drops Of Joy (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=keqUY68wN9Q"
+      },
+      {
+        "name": "Rough Weather Blues Vol. 2 (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=X5Rhk73slmE"
+      }
+    ],
+    "description": "Jimmy Liggins was an American blues and R&B guitarist, singer, and bandleader from Newby, Oklahoma. He formed his group the Drops of Joy in the late 1940s, scoring hits such as \"Drunk\" and \"Cadillac Boogie\" with a driving jump-blues sound closely related to that of his older brother, pianist and bandleader Joe Liggins.",
+    "activeFrom": "1946",
+    "influences": [
+      "joe-liggins"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "joe-liggins"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Jimmy_Liggins",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "hociel-thomas",
+    "name": "Hociel Thomas",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1904-07-10",
+    "birthPlace": "Houston",
+    "birthCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "deathDate": "1952-08-22",
+    "deathPlace": "Oakland",
+    "deathCoords": [
+      -122.25,
+      37.8
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Oakland",
+        "coords": [
+          -122.2712,
+          37.8044
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=jwgUx8y9a6o",
+    "albums": [],
+    "description": "Hociel Thomas (July 10, 1904 – August 22, 1952) was an American blues singer and pianist in the classic female blues style.",
+    "activeFrom": "1924",
+    "influences": [],
+    "influencedBy": [
+      "sippie-wallace"
+    ],
+    "incomplete": true,
+    "playedWith": [
+      "hersal-thomas"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Hociel_Thomas",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "martha-copeland",
+    "name": "Martha Copeland",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1891",
+    "birthPlace": "Portsmouth",
+    "birthCoords": [
+      -76.29827,
+      36.83543
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Vaudeville Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=PmX6HUH_zzQ",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 1: September 1923 to August 1927 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ct62Mm8GKWI"
+      },
+      {
+        "name": "Martha Copeland: Complete Recorded Works in Chronological Order, Volume 2: October 1927 to August 1928 / Irene Scruggs: The Remaining Title, 1926-1930 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ct62Mm8GKWI"
+      }
+    ],
+    "description": "Martha Copeland (c.  1891–1894; date of death unknown) was an American classic female blues singer.  She recorded 34 songs between 1923 and 1928.",
+    "activeFrom": "1923",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Martha_Copeland",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "carol-fran",
+    "name": "Carol Fran",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carol%20Fran%202014.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1933-10-23",
+    "birthPlace": "Lafayette",
+    "birthCoords": [
+      -92.012649,
+      30.243062
+    ],
+    "deathDate": "2021-09-01",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=WVTZuQiy2qg",
+    "albums": [
+      {
+        "name": "Bluesoul Belles: The Complete Calla, Port & Roulette Recordings (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=28y8rxMf0f8"
+      }
+    ],
+    "description": "Carol Fran (born Carol Augustus Anthony; October 23, 1933 – September 1, 2021) was an American soul blues singer, pianist, and songwriter, best known for her string of single releases in the 1950s and 1960s, and her later musical association with her husband, Clarence Hollimon.  She released six albums since 1992 including four as a duo with Hollimon.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "katie-webster"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Carol_Fran",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "ray-agee",
+    "name": "Ray Agee",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1921-04-10",
+    "birthPlace": "Dixons Mills",
+    "birthCoords": [
+      -87.7875,
+      32.0581
+    ],
+    "deathDate": "1989-04-15",
+    "deathPlace": "Los Angeles",
+    "deathCoords": [
+      -118.24368,
+      34.05223
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=WtCVRRSxby0",
+    "albums": [
+      {
+        "name": "Tin Pan Alley (1982)",
+        "youtubeLink": "https://www.youtube.com/watch?v=e_X9RYYyHSg"
+      }
+    ],
+    "description": "Raymond Clinton \"Ray\" Agee (April 10, 1921 – April 15, 1989) was an American blues and R&B singer and songwriter who recorded over a hundred tracks between the early 1950s and mid-1970s, and is described at AllMusic as \"a fine, versatile blues singer whose work deserves a wider audience\".",
+    "activeFrom": "1953",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Ray_Agee",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "elder-roma-wilson",
+    "name": "Elder Roma Wilson",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Elder%20Roma%20Wilson%202015.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1910-12-22",
+    "birthPlace": "Hickory Flat",
+    "birthCoords": [
+      -89.1889,
+      34.6181
+    ],
+    "deathDate": "2018-10-25",
+    "deathPlace": "Detroit",
+    "deathCoords": [
+      -83.0475,
+      42.331666666667
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=yleMNI6GkHk",
+    "albums": [],
+    "description": "Elder Roma Wilson (December 22, 1910 – October 25, 2018) was an American gospel harmonica player and singer.  A clergyman, Wilson discovered he had a degree of notability later in his life, having previously been unaware of interest in his work.",
+    "activeFrom": "1926",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Elder_Roma_Wilson",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-20"
   }
 ]
