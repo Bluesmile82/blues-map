@@ -105,6 +105,30 @@ export function getYear(dateStr: string): number {
   return new Date(dateStr).getFullYear();
 }
 
+/** Year for display, or '' when the date is missing or unparseable (bands have none). */
+export function formatYear(dateStr?: string | null): string {
+  const year = dateStr ? new Date(dateStr).getFullYear() : NaN;
+  return Number.isNaN(year) ? '' : String(year);
+}
+
+/** "1911–1979", "1911", or '' */
+export function formatYearRange(birthDate?: string | null, deathDate?: string | null): string {
+  return [formatYear(birthDate), formatYear(deathDate)].filter(Boolean).join('\u2013');
+}
+
+// ponytail: labels passed in so layout.ts stays free of i18n
+/** "b. 1911 — d. 1979", "b. 1924 — active", or just "active" when no dates are known. */
+export function formatLifespan(
+  birthDate: string | null | undefined,
+  deathDate: string | null | undefined,
+  labels: { born: string; died: string; active: string },
+): string {
+  const born = formatYear(birthDate);
+  const died = formatYear(deathDate);
+  const end = died ? `${labels.died} ${died}` : labels.active;
+  return born ? `${labels.born} ${born} \u2014 ${end}` : end;
+}
+
 export interface InfluenceLayout {
   [id: string]: Position2D;
 }

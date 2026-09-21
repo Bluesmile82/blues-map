@@ -28,6 +28,7 @@ import {
   STYLE_ERA_YEAR,
   bezierPath,
   getYear,
+  formatYearRange,
   yearToWorldY,
   interpolatePosition,
   DEFAULT_LAYOUT_CONFIG,
@@ -893,7 +894,7 @@ export default function InfluenceView({
     return displayMusicians
       .map((m) => {
         const pos = interpolatedPositions[m.id];
-        if (!pos) return null;
+        if (!pos || !m.birthDate) return null;
         const yBirth = yearToWorldY(getYear(m.birthDate), halfH, h, 100);
         const deathYear = m.deathDate ? getYear(m.deathDate) : 2025;
         const yDeath = yearToWorldY(deathYear, halfH, h, 100);
@@ -1989,9 +1990,11 @@ export default function InfluenceView({
             return (
               <div className={`absolute bottom-4 sm:bottom-5 left-1/2 -translate-x-1/2 max-w-[90vw] bg-bg-subtle/95 border rounded-lg px-3 sm:px-4 py-2 sm:py-2.5 flex items-center gap-2 sm:gap-3 pointer-events-none z-50 shadow-lg overflow-hidden ${isSelected ? 'border-accent' : 'border-accent/60'}`}>
                 <strong className="text-ink text-xs sm:text-sm truncate">{m.name}</strong>
-                <span className="text-ink3 text-xs shrink-0">
-                  {getYear(m.birthDate)}{m.deathDate ? ` – ${getYear(m.deathDate)}` : ''}
-                </span>
+                {formatYearRange(m.birthDate, m.deathDate) && (
+                  <span className="text-ink3 text-xs shrink-0">
+                    {formatYearRange(m.birthDate, m.deathDate)}
+                  </span>
+                )}
                 <span className="hidden sm:inline text-xs px-1.5 py-0.5 rounded shrink-0" style={{ color: getStyleHex(m.bluesStyle), border: `1px solid ${getStyleHex(m.bluesStyle)}40`, background: `${getStyleHex(m.bluesStyle)}15` }}>
                   {t(`styles.${m.bluesStyle}`, m.bluesStyle)}
                 </span>
