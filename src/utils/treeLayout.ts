@@ -25,6 +25,8 @@ export const CANOPY_Y = 120;
 const TREE_H = (YEAR_MAX - YEAR_MIN) * PX_PER_YEAR;
 export const GROUND_Y = CANOPY_Y + TREE_H;
 export const TRUNK_BASE_Y = GROUND_Y + 420;
+// How far below the trunk's base the buttress roots sit.
+const ROOT_DROP = 110;
 
 const SLOT = 30;            // horizontal room per musician in a row
 const SLICE_PAD = 44;
@@ -655,15 +657,17 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
   });
 
   // Buttress roots: tapered wedges spreading out of the base, not hairline strokes.
+  // They are drawn behind the trunk, so they start low enough to stay hidden where
+  // they leave it and only read once they are clear of the wood.
   const roots = [-1, 1].flatMap((dir) =>
     [0.5, 0.9, 1.35].map((spread, i) => {
       const len = (420 + i * 300) * dir;
-      const startY = TRUNK_BASE_Y - 210 + i * 46;
+      const startY = TRUNK_BASE_Y - 210 + ROOT_DROP + i * 46;
       const pts = cubicPoints(
         [trunkX + dir * 30, startY],
         [trunkX + len * 0.35, startY + 70 * spread],
-        [trunkX + len * 0.7, TRUNK_BASE_Y + 60 * spread],
-        [trunkX + len, TRUNK_BASE_Y + 120 * spread]
+        [trunkX + len * 0.7, TRUNK_BASE_Y + ROOT_DROP + 60 * spread],
+        [trunkX + len, TRUNK_BASE_Y + ROOT_DROP + 120 * spread]
       );
       return taperedPath(pts, 96 - i * 22, 4);
     })
