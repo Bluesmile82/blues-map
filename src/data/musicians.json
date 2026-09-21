@@ -864,7 +864,7 @@
       }
     ],
     "instrument": "Piano",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=7GvfIx_-Xm4",
     "albums": [
       {
@@ -959,13 +959,13 @@
     "name": "Andy Rodgers",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmgyIeotgPeB7ykVYBisx5eb-vEUL1bl99B41xOyFapeYVm7invasUQ6dra6pkJZtZb6TXWzAxGJSt3ZY5dHSg5mZZcoYeW2SIUDPq2T6fT66soPrrdVoJ7592mv7dkWh27jf4Iw/s640-rw/2.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Andy_Rodgers_-_Pittsburgh_Pirates_-_1966.jpg",
-    "birthDate": "1983-10-18",
+    "birthDate": "1922-03-14",
     "birthPlace": "Liberty, Mississippi",
     "birthCoords": [
       -90.812,
       31.158
     ],
-    "deathDate": null,
+    "deathDate": "2004-08-14",
     "deathPlace": null,
     "deathCoords": null,
     "spentTimePlaces": [],
@@ -974,7 +974,7 @@
     "youtubeLink": "https://www.youtube.com/watch?v=NhTNlMdci2M&t=83s",
     "albums": [],
     "description": "Andy Rodgers (March 14, 1922 – August 14, 2004) was an American Delta blues harmonicist, guitarist, singer, and songwriter. A flamboyant character, known commonly as the Midnight Cowboy, Rodgers worked part-time as a musician for most of his lifetime, finally recording two albums in the 1990s.",
-    "activeFrom": "1988",
+    "activeFrom": "1930",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
@@ -1061,7 +1061,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=YiHS3hit2V4",
     "albums": [],
     "description": "Anson Funderburgh (born James Anson Funderburgh; November 14, 1954) is an American blues guitar player and bandleader of Anson Funderburgh and the Rockets since 1978.  The band's style incorporates both Chicago blues and Texas blues.",
@@ -1489,7 +1489,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=x4XZ_RlxS_Q",
     "albums": [],
     "description": "Artur Menezes is a Brazilian blues guitarist who won the Gibson/Albert King Award for Best Guitarist in 2018. He blends fiery blues with jazz grooves and Brazilian rhythms and was selected by Eric Clapton for the Crossroads Guitar Festival.",
@@ -1760,7 +1760,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Georgia Blues",
+    "bluesStyle": "Piedmont Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=wEuwKpdByT8",
     "albums": [
       {
@@ -2392,7 +2392,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Hill Country Blues",
+    "bluesStyle": "Delta Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=a9svGgc1Hg4",
     "albums": [],
     "description": "Big Jack Johnson (July 30, 1940 – March 14, 2011) was an American electric blues musician from Lambert, Mississippi. A key figure in the Hill Country blues tradition, Johnson was known for his raw, electrified Delta blues sound and his work with the Jelly Roll Kings. He played guitar, mandolin, and vocals, and won a W.C. Handy Award in 2003 for Best Acoustic Blues Album. Johnson was also called 'The Oil Man' due to his work driving trucks for Shell Oil.",
@@ -3515,12 +3515,14 @@
       "archie-edwards",
       "robert-pete-williams",
       "lil-son-jackson",
-      "thomas-shaw"
+      "thomas-shaw",
+      "elzadie-robinson"
     ],
     "incomplete": false,
     "playedWith": [
       "lead-belly",
-      "t-bone-walker"
+      "t-bone-walker",
+      "elzadie-robinson"
     ],
     "source": "https://en.wikipedia.org/wiki/Blind_Lemon_Jefferson",
     "secondaryInstruments": [
@@ -3716,7 +3718,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Georgia Blues",
+    "bluesStyle": "Piedmont Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=G1iK5fslbWE",
     "albums": [],
     "description": "Blind Willie McTell (born William Samuel McTier; circa 1903 – August 19, 1959) was an American Piedmont blues and ragtime singer, songwriter and guitarist.  He played in a fluid, syncopated finger picking guitar style common among many East Coast, Piedmont blues players.  Like his Atlanta contemporaries, he came to use twelve-string guitars exclusively.",
@@ -3830,7 +3832,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=nzRXHhs6wSc",
     "albums": [
       {
@@ -4200,7 +4202,7 @@
     "name": "Bobby Rush",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Bobby_Rush_1999.jpg/500px-Bobby_Rush_1999.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Bobby_Rush_1999.jpg/500px-Bobby_Rush_1999.jpg",
-    "birthDate": "1946-11-23",
+    "birthDate": "1933-11-10",
     "birthPlace": "Albany, Georgia",
     "birthCoords": [
       -84.165555555556,
@@ -4243,8 +4245,8 @@
         "youtubeLink": "https://www.youtube.com/watch?v=kW8YUun-sHQ"
       }
     ],
-    "description": "Bobby Rush (born Emmett Ellis Jr., November 23, 1946) is an American blues and R&B musician, singer and songwriter. A veteran of the chitlin' circuit, Rush is known for his energetic stage shows and hits like 'Chicken Heads' and 'Sue'. He has been recording for over 50 years and won a Grammy Award in 2017.",
-    "activeFrom": "1955",
+    "description": "Bobby Rush (born Emmett Ellis Jr., November 10, 1933) is an American blues and R&B musician, singer and songwriter. A veteran of the chitlin' circuit, Rush is known for his energetic stage shows and hits like 'Chicken Heads' and 'Sue'. He has been recording for over 50 years and won a Grammy Award in 2017.",
+    "activeFrom": "1951",
     "influences": [],
     "influencedBy": [
       "mel-waiters"
@@ -4389,7 +4391,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=f56_Eg4i89c",
     "albums": [
       {
@@ -4518,7 +4520,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Hill Country Blues",
+    "bluesStyle": "Delta Blues",
     "youtubeLink": "https://www.discogs.com/release/9566665-Roosevelt-Booba-Barnes-The-Playboys-The-Heartbroken-Man",
     "albums": [
       {
@@ -4838,7 +4840,7 @@
       }
     ],
     "description": "Buddy Guy bridged the Chicago blues tradition with the coming rock era. His wild, feedback-drenched guitar style directly influenced Jimi Hendrix, Eric Clapton, and Stevie Ray Vaughan, who all cited him as a primary inspiration.",
-    "activeFrom": "1968",
+    "activeFrom": "1958",
     "influences": [
       "guitar-slim",
       "muddy-waters",
@@ -5829,7 +5831,7 @@
       }
     ],
     "instrument": "Piano",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=fUyC2l--fSw",
     "albums": [
       {
@@ -5897,7 +5899,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Georgia Blues",
+    "bluesStyle": "Piedmont Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=rFbfWr-Hbu8",
     "albums": [
       {
@@ -6585,7 +6587,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "https://www.youtube.com/watch?v=El0vqK1_sA4",
     "albums": [
       {
@@ -7489,7 +7491,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=ficyWMOsXI4",
     "albums": [],
     "description": "Debbie Davies (born August 22, 1952) is an American blues guitarist. \nDavies was born in Los Angeles, California, United States.  She has been the featured guitarist in several female based bands including Maggie Mayall and the Cadillacs (led by John Mayall's wife), and Fingers Taylor and the Ladyfinger Revue (who opened for Jimmy Buffett during his 1991 tour).",
@@ -7525,7 +7527,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=GMhlVrqXjQM",
     "albums": [],
     "description": "Deborah Coleman (October 3, 1956 – April 12, 2018) was an American blues musician.  Coleman won the Orville Gibson Award for \"Best Blues Guitarist, Female\" in 2001, and was nominated for a W. C.",
@@ -9038,7 +9040,7 @@
         "youtubeLink": "https://www.youtube.com/watch?v=SZBZOQXnTU4"
       },
       {
-        "name": "Masters of Modern Blues (1994)",
+        "name": "Masters of Contemporary Blues (1994)",
         "youtubeLink": "https://www.youtube.com/watch?v=DOG7pdd4VJk"
       },
       {
@@ -9462,7 +9464,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Vocals",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=xqBdTn3_0Rw",
     "albums": [],
     "description": "Elvis Presley, the \"King of Rock and Roll,\" fused country, rhythm and blues, and gospel into rockabilly. Recording at Sun Records in Memphis, he became one of the best-selling music artists in history with over 500 million records sold.",
@@ -9823,7 +9825,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "blind-blake"
+      "blind-blake",
+      "algia-mae-hinton"
     ],
     "source": "https://en.wikipedia.org/wiki/Etta_Baker",
     "secondaryInstruments": [
@@ -9974,7 +9977,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "",
     "albums": [
       {
@@ -10282,7 +10285,7 @@
     "youtubeLink": "https://www.youtube.com/watch?v=egWFCjlVxFE",
     "albums": [
       {
-        "name": "Masters of Modern Blues (1994)",
+        "name": "Masters of Contemporary Blues (1994)",
         "youtubeLink": "https://www.youtube.com/watch?v=DOG7pdd4VJk"
       },
       {
@@ -10868,7 +10871,7 @@
       }
     ],
     "description": "Walter E.  \"Furry\" Lewis (March 6, 1893 or 1899 – September 14, 1981) was an American country blues guitarist and songwriter from Memphis, Tennessee.  He was one of the earliest of the blues musicians active in the 1920s to be brought out of retirement and given new opportunities to record during the folk blues revival of the 1960s.",
-    "activeFrom": "1900",
+    "activeFrom": "1927",
     "influences": [
       "bessie-smith",
       "blind-lemon-jefferson"
@@ -11038,7 +11041,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=veyaeiPfMK8",
     "albums": [
       {
@@ -11510,7 +11513,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=j-LTJNasTMc",
     "albums": [
       {
@@ -11974,7 +11977,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "New Orleans Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=IGGLhvB_cII",
     "albums": [],
     "description": "Guitar Slim Jr.  (born Rodney Glenn Armstrong, August 24, 1952, New Orleans, Louisiana, United States) is an American New Orleans blues guitarist and singer.  Over his lengthy playing career, he has worked with numerous other blues musicians.",
@@ -12476,7 +12479,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "hociel-thomas"
+    ],
     "source": "https://en.wikipedia.org/wiki/Hersal_Thomas",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -12921,7 +12926,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=iPtud_bNeAw",
     "albums": [
       {
@@ -13213,7 +13218,7 @@
       }
     ],
     "description": "Ishmon Bracey was an American Delta blues singer-guitarist and one of the Jackson, Mississippi area's earliest recording blues artists. Alongside his contemporary Tommy Johnson, Bracey recorded for Victor and Paramount Records in the late 1920s, producing enduring tracks like 'Saturday Blues' and 'Trouble Hearted Blues.' He retired from music in 1951 after becoming a Baptist minister but later helped researchers rediscover Skip James.",
-    "activeFrom": "1910",
+    "activeFrom": "1928",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
@@ -13600,7 +13605,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Hill Country Blues",
+    "bluesStyle": "Delta Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=8MVUOfhFxlI",
     "albums": [],
     "description": "James 'Super Chikan' Johnson (born February 16, 1951) is an American Hill Country blues musician from Darling, Mississippi. The nephew of Big Jack Johnson, Super Chikan is a leading contemporary exponent of the North Mississippi Hill Country blues style. He began playing as a child on a diddley bow and bought his first guitar at age 13. Since his 1997 debut album, he has won multiple Blues Music Awards and is known for performing regularly at Morgan Freeman's Ground Zero blues club in Clarksdale. He also handcrafts artistic guitars from recycled parts.",
@@ -13690,7 +13695,7 @@
       }
     ],
     "instrument": "Piano",
-    "bluesStyle": "Jazz",
+    "bluesStyle": "Kansas City Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=rn96-UaQWTk",
     "albums": [
       {
@@ -14070,7 +14075,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "British Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "https://www.youtube.com/watch?v=6Q0p7yXoOVg",
     "albums": [
       {
@@ -14141,7 +14146,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=kag0TsZzxpw",
     "albums": [
       {
@@ -14442,7 +14447,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "British Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "https://www.youtube.com/watch?v=MyzTq5fhc4w",
     "albums": [],
     "description": "Jimi Hendrix was an American guitarist widely regarded as one of the greatest of all time. He pioneered the use of guitar feedback and distortion in mainstream rock, and his albums Are You Experienced and Electric Ladyland are landmarks of rock music.",
@@ -15670,7 +15675,8 @@
     "incomplete": false,
     "playedWith": [
       "melvin-taylor",
-      "taj-mahal"
+      "taj-mahal",
+      "algia-mae-hinton"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Dee_Holeman",
     "secondaryInstruments": [
@@ -15803,7 +15809,7 @@
     "youtubeLink": "https://www.youtube.com/watch?v=AkEhtfPN084",
     "albums": [],
     "description": "John Jackson was a Piedmont blues musician from Virginia who learned guitar from Blind Blake 78s. He received a National Heritage Fellowship from the NEA in 1986.",
-    "activeFrom": "1929",
+    "activeFrom": "1964",
     "influences": [
       "blind-willie-walker"
     ],
@@ -15949,7 +15955,7 @@
       }
     ],
     "description": "John Wesley Funchess (April 16, 1931 – February 1, 1994) known professionally as John (or Johnny) Littlejohn, was an American electric blues slide guitarist.  He was active on the Chicago blues circuit from the 1950s to the 1980s.",
-    "activeFrom": "1984",
+    "activeFrom": "1968",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
@@ -16253,7 +16259,7 @@
       }
     ],
     "description": "Johnnie B. Marshall Jr. (born June 2, 1961) is an American electric blues guitarist, songwriter, and singer. A contemporary blues artist, Marshall blends traditional blues with modern elements and has released several albums showcasing his guitar work and vocals.",
-    "activeFrom": "1969",
+    "activeFrom": "1998",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
@@ -16932,7 +16938,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Soul Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=eoraL1NU0pg",
     "albums": [],
     "description": "Johnny Rawls (born September 10, 1951) is an American soul blues singer, guitarist, arranger, songwriter, and record producer.  He was influenced by the deep soul and gospel music of the 1960s, as performed by O.  V.",
@@ -17032,13 +17038,13 @@
     "name": "Johnny Temple",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Johnny_Temple.jpg/500px-Johnny_Temple.jpg",
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Johnny_Temple.jpg/500px-Johnny_Temple.jpg",
-    "birthDate": "1927-08-08",
+    "birthDate": "1906-10-18",
     "birthPlace": "Lexington, North Carolina",
     "birthCoords": [
       -80.258611111111,
       35.816666666667
     ],
-    "deathDate": "1994-01-09",
+    "deathDate": "1968-11-22",
     "deathPlace": "Anderson",
     "deathCoords": [
       -82.65027777777777,
@@ -17098,7 +17104,7 @@
         "youtubeLink": "https://www.youtube.com/watch?v=p7vR_NSlFBo"
       }
     ],
-    "description": "Johnny Temple (August 8, 1927 – January 9, 1994) was an American country blues singer and guitarist. He recorded for Decca Records in the 1930s and 1940s and was known for his distinctive vocal style and guitar work in the country blues tradition.",
+    "description": "Johnny Temple (October 18, 1906 – November 22, 1968) was an American country blues singer and guitarist. He recorded for Decca Records in the 1930s and 1940s and was known for his distinctive vocal style and guitar work in the country blues tradition.",
     "activeFrom": "1935",
     "influences": [],
     "influencedBy": [],
@@ -17370,7 +17376,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=yDV_wYzrPWs",
     "albums": [],
     "description": "Josh Smith is a blues guitarist and record producer who began playing festivals at age 10. He was ranked number 16 on Guitar World's list of the 30 best blues guitarists in the world.",
@@ -17523,7 +17529,7 @@
       }
     ],
     "description": "Junior Kimbrough, along with R.L. Burnside, created and defined the hypnotic, droning sound of North Mississippi Hill Country blues. His juke joint in Holly Springs was legendary, and his repetitive, trance-like grooves heavily influenced the Black Keys and other modern blues-rock acts.",
-    "activeFrom": "1992",
+    "activeFrom": "1968",
     "influences": [
       "charley-patton",
       "fred-mcdowell"
@@ -18073,7 +18079,8 @@
     "incomplete": false,
     "playedWith": [
       "otis-redding",
-      "clifton-chenier"
+      "clifton-chenier",
+      "carol-fran"
     ],
     "source": "https://en.wikipedia.org/wiki/Katie_Webster",
     "secondaryInstruments": [
@@ -18129,7 +18136,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Hill Country Blues",
+    "bluesStyle": "Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=QsTfCITzISM",
     "albums": [
       {
@@ -18360,7 +18367,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Swamp Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=MlJ2oPtmvo0",
     "albums": [
       {
@@ -18659,7 +18666,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Georgia Blues",
+    "bluesStyle": "Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=v7cCfuAj8sc",
     "albums": [
       {
@@ -18764,7 +18771,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Piano",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=IAdsvRk3mAQ",
     "albums": [],
     "description": "Lady Bianca (born August 8, 1953) is an American electric blues singer, songwriter and arranger.  Lady Bianca has worked as a session singer, depicted Billie Holiday on stage, and since 1995 released six solo albums, three of which were nominated for a Grammy Award. \nShe is currently based in Oakland, California.",
@@ -18803,7 +18810,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=B3JktPnAFLQ",
     "albums": [
       {
@@ -18870,7 +18877,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=vHWVl_pQxlE",
     "albums": [],
     "description": "Larry McCray (born April 5, 1960), is an American blues guitarist and singer from Magnolia, Arkansas.",
@@ -19763,7 +19770,7 @@
       }
     ],
     "description": "Lil Green (probably born Lillie May Johnson; December 22, 1901 (some sources give 1905, 1910 or 1919) – April 14, 1954) was an American classic female blues singer and songwriter.  She was among the leading female rhythm and blues singers of the 1940s, with a sensual soprano voice.   Gospel singer R.",
-    "activeFrom": "1924",
+    "activeFrom": "1940",
     "influences": [],
     "influencedBy": [
       "lonesome-sundown"
@@ -19980,7 +19987,7 @@
       }
     ],
     "description": "Eurreal Wilford \"Little Brother\" Montgomery (April 18, 1906 – September 6, 1985) was an American jazz, boogie-woogie and blues pianist and singer. \nLargely self-taught, Montgomery was an important blues pianist with an original style.  He was also versatile, working in jazz bands, including larger ensembles that used written arrangements.",
-    "activeFrom": "1969",
+    "activeFrom": "1930",
     "influences": [],
     "influencedBy": [
       "willie-dixon",
@@ -20221,7 +20228,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Memphis Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=1dX3diiJRFg",
     "albums": [
       {
@@ -21155,7 +21162,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=aeNffTTUKxQ",
     "albums": [
       {
@@ -21232,7 +21239,7 @@
     "name": "Louie Lasky",
     "image": null,
     "image_source": null,
-    "birthDate": "1924",
+    "birthDate": null,
     "birthPlace": "Chicago, Illinois",
     "birthCoords": [
       -87.6298,
@@ -22563,7 +22570,7 @@
       }
     ],
     "instrument": "Piano",
-    "bluesStyle": "Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=Vn_ZfWjnX9Y",
     "albums": [
       {
@@ -23254,7 +23261,7 @@
     "youtubeLink": "https://www.youtube.com/watch?v=JlfIEpdrUhI",
     "albums": [],
     "description": "The Memphis Jug Band was a musical group active from the mid-1920s to the late 1950s. They recorded more sides than any other prewar jug band and their \"Stealin' Stealin'\" was covered by the Grateful Dead.",
-    "activeFrom": "1926",
+    "activeFrom": "1927",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
@@ -23400,7 +23407,7 @@
       }
     ],
     "description": "John Len Chatman (September 3, 1915 – February 24, 1988), known professionally as Memphis Slim, was an American blues pianist, singer, and composer.   He led a series of bands that, reflecting the popular appeal of jump blues, included saxophones, bass, drums, and piano.  A song he first cut in 1947, \"Every Day I Have the Blues\", has become a blues standard, recorded by many other artists.",
-    "activeFrom": "1972",
+    "activeFrom": "1940",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
@@ -24367,7 +24374,7 @@
       }
     ],
     "description": "Born McKinley Morganfield, Muddy Waters moved from the Mississippi Delta to Chicago and electrified the blues, creating the template for modern Chicago blues and influencing virtually every rock band of the British Invasion.",
-    "activeFrom": "1960",
+    "activeFrom": "1941",
     "influences": [
       "son-house",
       "robert-johnson"
@@ -24576,7 +24583,7 @@
     "youtubeLink": "https://www.youtube.com/watch?v=yUDxw5cn890",
     "albums": [],
     "description": "Odie Payne (August 27, 1926 – March 1, 1989) was an American Chicago blues drummer.  Over his long career he worked with a range of musicians, including Sonny Boy Williamson II, Muddy Waters, Jimmy Rogers, Eddie Taylor, Little Johnny Jones, Tampa Red, Otis Rush, Yank Rachell, Sleepy John Estes, Little Brother Montgomery, Memphis Minnie, Magic Sam, Chuck Berry, and Buddy Guy.",
-    "activeFrom": "1930",
+    "activeFrom": "1949",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
@@ -24770,7 +24777,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=juHNImFQRyQ",
     "albums": [
       {
@@ -25295,7 +25302,7 @@
       }
     ],
     "instrument": "Piano",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=eXSWpZQA6JU",
     "albums": [],
     "description": "Paul Gayten was a pioneering New Orleans R&B pianist and bandleader who helped shape the city's distinctive musical sound. He worked with early New Orleans musicians including Dave Bartholomew and was an influential figure in the development of rhythm and blues. His 1947 recording 'Annie's Rainbow' was one of the first R&B hits to come out of New Orleans.",
@@ -25347,7 +25354,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Hill Country Blues",
+    "bluesStyle": "Delta Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=VRP2q7hsfMk",
     "albums": [
       {
@@ -25552,7 +25559,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Georgia Blues",
+    "bluesStyle": "Piedmont Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=ynSTctR5148",
     "albums": [
       {
@@ -25668,7 +25675,7 @@
       }
     ],
     "instrument": "Piano",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=mxgSqmyIUAo",
     "albums": [
       {
@@ -26066,7 +26073,7 @@
       }
     ],
     "description": "Willie Lee Perryman (October 19, 1911 – July 25, 1985), usually known professionally as Piano Red and later in life as Dr.  Feelgood, was an American blues musician, the first to hit the pop music charts.  He was a self-taught pianist who played in the barrelhouse blues style (a loud percussive type of blues piano suitable for noisy bars or taverns).",
-    "activeFrom": "1974",
+    "activeFrom": "1950",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
@@ -27208,7 +27215,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=Kh5lcx0kAMo",
     "albums": [
       {
@@ -27674,7 +27681,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "British Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "https://www.youtube.com/watch?v=WCQqfLxh3c8",
     "albums": [],
     "description": "Robin Trower is an English rock guitarist from Procol Harum whose blues-infused 1974 album Bridge of Sighs became a gold-certified classic.",
@@ -27850,7 +27857,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=t96ADwQo52U",
     "albums": [
       {
@@ -28755,7 +28762,7 @@
       }
     ],
     "instrument": "Harmonica",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Delta Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=U8urwQ0-5Pc",
     "albums": [
       {
@@ -29093,7 +29100,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=jsO1_wHpwI8",
     "albums": [
       {
@@ -29223,7 +29230,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=9cZWIoSrMwc",
     "albums": [],
     "description": "Sean Costello (April 16, 1979 – April 15, 2008) was an American blues guitarist and singer. A prodigy who was performing with local bands in Atlanta by age 14, he was widely regarded as one of the most promising young blues musicians of his generation. Costello's playing blended traditional electric blues with soul, rock, and jazz influences. He released four acclaimed albums before his untimely death at age 28, just one day before his 29th birthday.",
@@ -29679,7 +29686,9 @@
     ],
     "description": "Sippie Wallace (born Beulah Belle Thomas; November 1, 1898 – November 1, 1986) was an American blues singer, pianist and songwriter.  Her early career in tent shows gained her the billing \"The Texas Nightingale\".  Between 1923 and 1927, she recorded over 40 songs for Okeh Records, many written by her or her brothers, George and Hersal Thomas.",
     "activeFrom": "1923",
-    "influences": [],
+    "influences": [
+      "hociel-thomas"
+    ],
     "influencedBy": [
       "bonnie-raitt",
       "victoria-spivey"
@@ -30891,7 +30900,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Texas Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=psCOkofZj9I",
     "albums": [
       {
@@ -31060,7 +31069,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=D_96KMJEhy0",
     "albums": [
       {
@@ -31243,7 +31252,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Swamp Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=lu2QSzuGx80",
     "albums": [
       {
@@ -32002,7 +32011,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=KuSfsgEOg28",
     "albums": [
       {
@@ -32044,7 +32053,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=kGGIiZR_y0g",
     "albums": [],
     "description": "Tiny Grimes was a jazz and R&B guitarist notable for his electric four-string tenor guitar. He co-headlined the first Moondog Coronation Ball in 1952, considered the first rock and roll concert.",
@@ -32631,7 +32640,7 @@
       }
     ],
     "instrument": "Piano",
-    "bluesStyle": "Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=FndPdji87p0",
     "albums": [
       {
@@ -32781,7 +32790,7 @@
       }
     ],
     "instrument": "Trumpet",
-    "bluesStyle": "Classic Blues",
+    "bluesStyle": "Memphis Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=cSuTTSOctGw",
     "albums": [
       {
@@ -32832,7 +32841,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Vocals",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=V2rhQVdS1d4",
     "albums": [
       {
@@ -32959,7 +32968,7 @@
       }
     ],
     "description": "Walter Vinson (February 2, 1901 – April 22, 1975) was an American Memphis blues guitarist, singer and songwriter.  He was a member of the Mississippi Sheiks, worked with Bo Chatmon and his brothers, and co-wrote the blues standard \"Sitting on Top of the World\".  He is erroneously known as Walter Vincson or Walter Vincent.",
-    "activeFrom": "1970",
+    "activeFrom": "1930",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
@@ -35252,7 +35261,7 @@
       }
     ],
     "instrument": "Harmonica",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=VSjvs_OGNNc",
     "albums": [
       {
@@ -35375,7 +35384,7 @@
       }
     ],
     "instrument": "Piano",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=B0yZ-OQpfMY",
     "albums": [
       {
@@ -35503,7 +35512,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=cxsaNsB15c0",
     "albums": [
       {
@@ -35636,7 +35645,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=bb6wkH7g7zM",
     "albums": [
       {
@@ -36265,7 +36274,7 @@
       }
     ],
     "instrument": "Piano",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=WHNkWFtAN8c",
     "albums": [
       {
@@ -36587,7 +36596,7 @@
       }
     ],
     "instrument": "Saxophone",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=MWGPznPnxkE",
     "albums": [
       {
@@ -38271,7 +38280,7 @@
       34.2001
     ],
     "instrument": "Saxophone",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=KbRa80FnS-8",
     "image": null,
     "description": "Raymond Hill was an American tenor saxophonist and singer best known as a member of Ike Turner's Kings of Rhythm in the 1950s. He played the celebrated saxophone solo on Rocket 88 (1951), often cited as the first rock and roll record.",
@@ -40805,7 +40814,7 @@
       }
     ],
     "instrument": "Harmonica",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=Xi4Xjg59iRk",
     "albums": [
       {
@@ -41256,7 +41265,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=QIUzVGtxQCY",
     "albums": [
       {
@@ -41944,7 +41953,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Vocals",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=hJSYMEhb00c",
     "albums": [
       {
@@ -42366,7 +42375,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Hill Country Blues",
+    "bluesStyle": "Delta Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=LeN4d6oBsTw",
     "albums": [
       {
@@ -44296,7 +44305,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Guitar",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=QdqvFUjeY_0",
     "albums": [
       {
@@ -44416,7 +44425,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Piano",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=9n69ZitcXKM",
     "albums": [
       {
@@ -45620,7 +45629,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "https://www.youtube.com/watch?v=3I2jnA8L4xU",
     "albums": [
       {
@@ -46418,7 +46427,7 @@
       }
     ],
     "description": "Little Johnny Taylor (born Johnny Lamont Merrett; February 11, 1943 – May 17, 2002) was an American blues and soul singer.  He made recordings throughout the 1960s and 1970s, and continued public performances through the 1980s and 1990s.",
-    "activeFrom": "1950",
+    "activeFrom": "1960",
     "influences": [
       "bobby-blue-bland"
     ],
@@ -46753,7 +46762,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Classic Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=LZAC8P1gOfI",
     "albums": [
       {
@@ -47324,7 +47333,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Vocals",
-    "bluesStyle": "Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=a1LR3ftPMJs",
     "albums": [
       {
@@ -48196,10 +48205,13 @@
     "activeFrom": "1939",
     "influences": [],
     "influencedBy": [
-      "amos-milburn"
+      "amos-milburn",
+      "jimmy-liggins"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "jimmy-liggins"
+    ],
     "source": "https://en.wikipedia.org/wiki/Joe_Liggins",
     "secondaryInstruments": [],
     "createdAt": "2026-09-17"
@@ -48300,7 +48312,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=dcbHok0GhTQ",
     "albums": [
       {
@@ -48362,7 +48374,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Vocals",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=usGbaI9AuRY",
     "albums": [
       {
@@ -48426,7 +48438,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Rythm and Blues",
+    "bluesStyle": "Rhythm and Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=szz27BuDgeU",
     "albums": [
       {
@@ -48575,7 +48587,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=hmh84wT9C24",
     "albums": [
       {
@@ -48627,7 +48639,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "British Blues",
+    "bluesStyle": "Blues Rock",
     "youtubeLink": "https://www.youtube.com/watch?v=dwc7ZEYfWYc",
     "albums": [
       {
@@ -49014,7 +49026,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Classic Blues",
+    "bluesStyle": "Detroit Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=YTuqxh_e4Gk",
     "albums": [
       {
@@ -49181,7 +49193,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=SV69afpN9Yk",
     "albums": [
       {
@@ -49684,7 +49696,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Vocals",
-    "bluesStyle": "Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=_H2p7sCFS4E",
     "albums": [
       {
@@ -49739,7 +49751,7 @@
     ],
     "spentTimePlaces": [],
     "instrument": "Piano",
-    "bluesStyle": "Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=8OfbxiaWa-Q",
     "albums": [
       {
@@ -49804,7 +49816,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=kUfMHbTyzLQ",
     "albums": [
       {
@@ -50191,7 +50203,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=EmU9XYmD378",
     "albums": [
       {
@@ -50214,5 +50226,513 @@
     "source": "https://en.wikipedia.org/wiki/Josie_Miles",
     "secondaryInstruments": [],
     "createdAt": "2026-09-19"
+  },
+  {
+    "id": "saunders-king",
+    "name": "Saunders King",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Saunders%20King.png?width=500",
+    "image_source": null,
+    "birthDate": "1909-03-13",
+    "birthPlace": "Caddo Parish",
+    "birthCoords": [
+      -93.88,
+      32.58
+    ],
+    "deathDate": "2000-08-31",
+    "deathPlace": "San Rafael",
+    "deathCoords": [
+      -122.53083333333333,
+      37.973333333333336
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Oakland",
+        "coords": [
+          -122.2712,
+          37.8044
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=s74Tj2RjOns",
+    "albums": [
+      {
+        "name": "Cool Blues, Jumps & Shuffles (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ub_1hIPCgYo"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Saunders King 1942-1948 (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=8t5iy6EqlmA"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Saunders King 1948-1954 (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=13NP85NVWjM"
+      }
+    ],
+    "description": "Saunders Samuel King (March 13, 1909 – August 31, 2000) was an American R&B and blues guitarist and singer.",
+    "activeFrom": "1938",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Saunders_King",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "algia-mae-hinton",
+    "name": "Algia Mae Hinton",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1929-08-29",
+    "birthPlace": "Johnston County",
+    "birthCoords": [
+      -78.37,
+      35.52
+    ],
+    "deathDate": "2018-02-08",
+    "deathPlace": "Middlesex",
+    "deathCoords": [
+      -78.203333333333,
+      35.789722222222
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=WYwAp5Budd4",
+    "albums": [],
+    "description": "Algia Mae Hinton (née O'Neal; August 29, 1929 – February 8, 2018) was an American Piedmont blues guitarist and vocalist, based in Johnston County, North Carolina, United States.",
+    "activeFrom": "1949",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "john-dee-holeman",
+      "etta-baker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Algia_Mae_Hinton",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "elzadie-robinson",
+    "name": "Elzadie Robinson",
+    "image": "https://i0.wp.com/oldtimeblues.net/wp-content/uploads/2018/07/Elzadie.jpg?w=851",
+    "image_source": "oldtimeblues.net",
+    "birthDate": "1900",
+    "birthPlace": "Louisiana",
+    "birthCoords": [
+      -92,
+      31
+    ],
+    "deathDate": "1975-01-17",
+    "deathPlace": "Flint",
+    "deathCoords": [
+      -83.693333333333,
+      43.018888888889
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=R7No4UYRRlQ",
+    "albums": [
+      {
+        "name": "Complete Recorded Works Volume 2 (1928-1929) (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JI81YQwq9cA"
+      },
+      {
+        "name": "Complete Recorded Works Volume 1 (1926-1928) (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JI81YQwq9cA"
+      }
+    ],
+    "description": "Elzadie Robinson (c. 1900 – January 17, 1975) was an American classic blues singer from Logansport, Louisiana, who recorded extensively for Paramount Records between 1926 and 1929. Several of her sides feature the guitar accompaniment of Blind Lemon Jefferson, and her plaintive, blues-shouting vocal style placed her among the notable female blues singers of the era.",
+    "activeFrom": "1926",
+    "influences": [
+      "blind-lemon-jefferson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "blind-lemon-jefferson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Elzadie_Robinson",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "lizzie-miles",
+    "name": "Lizzie Miles",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Lizzie%20Miles%20LCCN2004663330.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1895-03-31",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "1963-03-17",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=kDF_wsTOjRo",
+    "albums": [
+      {
+        "name": "Complete Recorded Works In Chronological Order Volume 3 (1928-1939) (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=gxJ0aHgBNGQ"
+      },
+      {
+        "name": "Complete Recorded Works In Chronological Order Volume 2 (1923-1928) (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=m0s36s-d3Us"
+      },
+      {
+        "name": "Complete Recorded Works In Chronological Order Volume 1 (1922-1923) (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=m0s36s-d3Us"
+      }
+    ],
+    "description": "Elizabeth Mary Landreaux (March 31, 1895 – March 17, 1963), known by the stage name Lizzie Miles, was an Afro-Creole blues singer in the United States.",
+    "activeFrom": "1922",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Lizzie_Miles",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "jimmy-liggins",
+    "name": "Jimmy Liggins",
+    "image": "https://upload.wikimedia.org/wikipedia/en/b/b1/Jimmy_Liggins.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1922-10-14",
+    "birthPlace": "Earlsboro",
+    "birthCoords": [
+      -96.798333333333,
+      35.296944444444
+    ],
+    "deathDate": "1983-07-18",
+    "deathPlace": "Durham",
+    "deathCoords": [
+      -78.89861111111111,
+      35.994166666666665
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=FCcU4uomwss",
+    "albums": [
+      {
+        "name": "Jimmy Liggins And His Drops Of Joy (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=keqUY68wN9Q"
+      },
+      {
+        "name": "Rough Weather Blues Vol. 2 (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=X5Rhk73slmE"
+      }
+    ],
+    "description": "Jimmy Liggins was an American blues and R&B guitarist, singer, and bandleader from Newby, Oklahoma. He formed his group the Drops of Joy in the late 1940s, scoring hits such as \"Drunk\" and \"Cadillac Boogie\" with a driving jump-blues sound closely related to that of his older brother, pianist and bandleader Joe Liggins.",
+    "activeFrom": "1946",
+    "influences": [
+      "joe-liggins"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "joe-liggins"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Jimmy_Liggins",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "hociel-thomas",
+    "name": "Hociel Thomas",
+    "image": "https://alchetron.com/cdn/hociel-thomas-08dad7c3-677e-4e53-99c8-9db502f25b4-resize-750.jpeg",
+    "image_source": "alchetron.com",
+    "birthDate": "1904-07-10",
+    "birthPlace": "Houston",
+    "birthCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "deathDate": "1952-08-22",
+    "deathPlace": "Oakland",
+    "deathCoords": [
+      -122.25,
+      37.8
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Oakland",
+        "coords": [
+          -122.2712,
+          37.8044
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=jwgUx8y9a6o",
+    "albums": [],
+    "description": "Hociel Thomas (July 10, 1904 – August 22, 1952) was an American blues singer and pianist in the classic female blues style.",
+    "activeFrom": "1924",
+    "influences": [],
+    "influencedBy": [
+      "sippie-wallace"
+    ],
+    "incomplete": true,
+    "playedWith": [
+      "hersal-thomas"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Hociel_Thomas",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "martha-copeland",
+    "name": "Martha Copeland",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1891",
+    "birthPlace": "Portsmouth",
+    "birthCoords": [
+      -76.29827,
+      36.83543
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=PmX6HUH_zzQ",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 1: September 1923 to August 1927 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ct62Mm8GKWI"
+      },
+      {
+        "name": "Martha Copeland: Complete Recorded Works in Chronological Order, Volume 2: October 1927 to August 1928 / Irene Scruggs: The Remaining Title, 1926-1930 (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ct62Mm8GKWI"
+      }
+    ],
+    "description": "Martha Copeland (c.  1891–1894; date of death unknown) was an American classic female blues singer.  She recorded 34 songs between 1923 and 1928.",
+    "activeFrom": "1923",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Martha_Copeland",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "carol-fran",
+    "name": "Carol Fran",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carol%20Fran%202014.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1933-10-23",
+    "birthPlace": "Lafayette",
+    "birthCoords": [
+      -92.012649,
+      30.243062
+    ],
+    "deathDate": "2021-09-01",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=OZa77dptXfE",
+    "albums": [
+      {
+        "name": "Bluesoul Belles: The Complete Calla, Port & Roulette Recordings (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=pISkLpDh4cw&list=RDpISkLpDh4cw&start_radio=1"
+      }
+    ],
+    "description": "Carol Fran (born Carol Augustus Anthony; October 23, 1933 – September 1, 2021) was an American soul blues singer, pianist, and songwriter, best known for her string of single releases in the 1950s and 1960s, and her later musical association with her husband, Clarence Hollimon.  She released six albums since 1992 including four as a duo with Hollimon.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "katie-webster"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Carol_Fran",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "ray-agee",
+    "name": "Ray Agee",
+    "image": "https://i.discogs.com/_x9hSIF_4FeFETbc-K_rQos-1D8GQaN33JBH8_I-mzo/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTk2ODUw/My0xMzUzODcxMjQ4/LTY4NjQuanBlZw.jpeg",
+    "image_source": "discogs",
+    "birthDate": "1921-04-10",
+    "birthPlace": "Dixons Mills",
+    "birthCoords": [
+      -87.7875,
+      32.0581
+    ],
+    "deathDate": "1989-04-15",
+    "deathPlace": "Los Angeles",
+    "deathCoords": [
+      -118.24368,
+      34.05223
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=WtCVRRSxby0",
+    "albums": [
+      {
+        "name": "Tin Pan Alley (1982)",
+        "youtubeLink": "https://www.youtube.com/watch?v=e_X9RYYyHSg"
+      }
+    ],
+    "description": "Raymond Clinton \"Ray\" Agee (April 10, 1921 – April 15, 1989) was an American blues and R&B singer and songwriter who recorded over a hundred tracks between the early 1950s and mid-1970s, and is described at AllMusic as \"a fine, versatile blues singer whose work deserves a wider audience\".",
+    "activeFrom": "1953",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Ray_Agee",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": "elder-roma-wilson",
+    "name": "Elder Roma Wilson",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Elder%20Roma%20Wilson%202015.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1910-12-22",
+    "birthPlace": "Hickory Flat",
+    "birthCoords": [
+      -89.1889,
+      34.6181
+    ],
+    "deathDate": "2018-10-25",
+    "deathPlace": "Detroit",
+    "deathCoords": [
+      -83.0475,
+      42.331666666667
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=yleMNI6GkHk",
+    "albums": [],
+    "description": "Elder Roma Wilson (December 22, 1910 – October 25, 2018) was an American gospel harmonica player and singer.  A clergyman, Wilson discovered he had a degree of notability later in his life, having previously been unaware of interest in his work.",
+    "activeFrom": "1926",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Elder_Roma_Wilson",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-20"
   }
 ]

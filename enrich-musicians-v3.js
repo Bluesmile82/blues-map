@@ -25,8 +25,8 @@ const DELAY_MS = 600;
 // Canonical blues styles (must match colors.ts)
 const CANONICAL_STYLES = [
   'Delta Blues', 'Hill Country Blues', 'Country Blues', 'Boogie Woogie',
-  'Classic Blues', 'Vaudeville Blues', 'Texas Blues', 'Swamp Blues',
-  'New Orleans Blues', 'Memphis Blues', 'Kansas City Blues', 'Chicago Blues', 'Rythm and Blues', 'Detroit Blues', 'Soul Blues',
+  'Classic Blues', 'Texas Blues', 'Swamp Blues',
+  'New Orleans Blues', 'Memphis Blues', 'Kansas City Blues', 'Chicago Blues', 'Rhythm and Blues', 'Detroit Blues', 'Soul Blues',
   'West Coast Blues', 'Jump Blues', 'Georgia Blues', 'Piedmont Blues', 'Jazz', 'British Blues', 'Gospel',
 ];
 
@@ -46,14 +46,14 @@ function mapToCanonicalStyle(genreLabels) {
     if (l.includes('country blues') || l.includes('folk blues') || l.includes('rural blues')) return 'Country Blues';
     if (l.includes('boogie')) return 'Boogie Woogie';
     if (l.includes('classic blues')) return 'Classic Blues';
-    if (l.includes('vaudeville')) return 'Vaudeville Blues';
+    if (l.includes('vaudeville')) return 'Classic Blues';
     if (l.includes('texas')) return 'Texas Blues';
     if (l.includes('swamp')) return 'Swamp Blues';
     if (l.includes('new orleans')) return 'New Orleans Blues';
     if (l.includes('memphis')) return 'Memphis Blues';
     if (l.includes('kansas city')) return 'Kansas City Blues';
     if (l.includes('chicago')) return 'Chicago Blues';
-    if (l.includes('rhythm and blues') || l.includes('r&b')) return 'Rythm and Blues';
+    if (l.includes('rhythm and blues') || l.includes('r&b')) return 'Rhythm and Blues';
     if (l.includes('detroit')) return 'Detroit Blues';
     if (l.includes('soul blues')) return 'Soul Blues';
     if (l.includes('west coast')) return 'West Coast Blues';
