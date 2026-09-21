@@ -44,6 +44,7 @@ export const STYLE_ORDER = [
   'Soul Blues',
   'Detroit Blues',
   'British Blues',
+  'Blues Rock',
   'Contemporary Blues',
 ];
 
@@ -698,6 +699,10 @@ export const STYLE_TREE_EDGES: ReadonlyArray<[string, string]> = [
   ['Jazz', 'Kansas City Blues'],
   ['Jazz', 'New Orleans Blues'],
   ['Jazz', 'Jump Blues'],
+  // T-Bone's Charlie Christian phrasing, the Nat Cole-model piano trios and
+  // Johnny Otis's swing band: the West Coast sound is jazz-schooled, and jazz
+  // being its earliest parent puts the limb beside Jump where it belongs.
+  ['Jazz', 'West Coast Blues'],
   ['Gospel', 'Soul Blues'],
   ['Boogie Woogie', 'St. Louis Blues'],
   ['Boogie Woogie', 'Jump Blues'],
