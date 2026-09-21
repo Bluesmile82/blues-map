@@ -883,7 +883,8 @@
     "description": "Amos Milburn was one of the most important figures in the transition from blues to rhythm and blues in the late 1940s and early 1950s. His rollicking piano style and party-themed songs like 'Chicken Shack Boogie' and 'Bad, Bad Whiskey' earned him a string of R&B number-one hits on Aladdin Records, making him a foundational figure in the evolution toward rock and roll.",
     "activeFrom": "1947",
     "influences": [
-      "joe-liggins"
+      "joe-liggins",
+      "charles-brown"
     ],
     "influencedBy": [
       "paul-gayten",
@@ -1895,7 +1896,12 @@
     "albums": [],
     "description": "Barrelhouse Chuck (born Harvey Charles Goering; July 10, 1958 – December 12, 2016) was an American Chicago blues and electric blues pianist, keyboardist, singer, and songwriter. \nHe claimed to be the only Chicago blues pianist to have studied under Sunnyland Slim, Pinetop Perkins, Blind John Davis, Detroit Junior, and Little Brother Montgomery.   His work appeared on sixteen albums.",
     "activeFrom": "1983",
-    "influences": [],
+    "influences": [
+      "blind-john-davis",
+      "pinetop-perkins",
+      "sunnyland-slim",
+      "detroit-junior"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -2283,7 +2289,8 @@
     "influences": [
       "papa-charlie-jackson",
       "jim-jackson",
-      "fruteland-jackson"
+      "fruteland-jackson",
+      "tampa-red"
     ],
     "influencedBy": [
       "wizz-jones",
@@ -3928,7 +3935,8 @@
     "activeFrom": "1979",
     "influences": [
       "big-walter-horton",
-      "junior-wells"
+      "junior-wells",
+      "carey-bell"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -4768,7 +4776,9 @@
     ],
     "description": "Walter Brown \"Brownie\" McGhee (November 30, 1915 – February 16, 1996) was an American folk and Piedmont blues singer and guitarist, best known for his collaboration with the harmonica player Sonny Terry.",
     "activeFrom": "1961",
-    "influences": [],
+    "influences": [
+      "blind-boy-fuller"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -8406,7 +8416,8 @@
     "description": "Earl Zebedee Hooker (January 15, 1930 – April 21, 1970) was a Chicago blues guitarist known for his slide guitar playing.  Considered a \"musician's musician\", he performed with blues artists such as Sonny Boy Williamson II, Junior Wells, and John Lee Hooker and fronted his own bands.  An early player of the electric guitar, Hooker was influenced by the modern urban styles of T-Bone Walker and Robert Nighthawk.",
     "activeFrom": "1952",
     "influences": [
-      "t-bone-walker"
+      "t-bone-walker",
+      "robert-nighthawk"
     ],
     "influencedBy": [
       "junior-watson",
@@ -8780,7 +8791,9 @@
     ],
     "description": "Eddie King (April 21, 1938 – March 14, 2012) was an American Chicago blues guitarist, singer and songwriter. A protégé of Slim Harpo, King recorded for several labels and worked with Freddie King and other Chicago blues legends.",
     "activeFrom": "1955",
-    "influences": [],
+    "influences": [
+      "slim-harpo"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -9618,7 +9631,9 @@
     "influences": [
       "wizz-jones",
       "bobby-parker",
-      "wayne-bennett"
+      "wayne-bennett",
+      "albert-king",
+      "buddy-guy"
     ],
     "influencedBy": [
       "gary-moore"
@@ -13439,7 +13454,8 @@
       "sonny-boy-williamson-i",
       "little-sonny",
       "lil-ed-williams",
-      "lester-williams"
+      "lester-williams",
+      "howlin-wolf"
     ],
     "influencedBy": [
       "kim-wilson"
@@ -14456,7 +14472,9 @@
     "description": "Jimi Hendrix was an American guitarist widely regarded as one of the greatest of all time. He pioneered the use of guitar feedback and distortion in mainstream rock, and his albums Are You Experienced and Electric Ladyland are landmarks of rock music.",
     "activeFrom": "1962",
     "influences": [
-      "johnny-guitar-watson"
+      "johnny-guitar-watson",
+      "buddy-guy",
+      "guitar-slim"
     ],
     "influencedBy": [
       "michael-burks",
@@ -14548,7 +14566,9 @@
     ],
     "description": "Jimmie Lawrence Vaughan Jr.  (born March 20, 1951) is an American blues rock guitarist and singer based in Austin, Texas.  A founding member of The Fabulous Thunderbirds, he is the older brother of the deceased Texas blues guitarist Stevie Ray Vaughan.",
     "activeFrom": "1964",
-    "influences": [],
+    "influences": [
+      "albert-collins"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -15814,7 +15834,8 @@
     "description": "John Jackson was a Piedmont blues musician from Virginia who learned guitar from Blind Blake 78s. He received a National Heritage Fellowship from the NEA in 1986.",
     "activeFrom": "1964",
     "influences": [
-      "blind-willie-walker"
+      "blind-willie-walker",
+      "blind-blake"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -20087,7 +20108,9 @@
     "albums": [],
     "description": "Little Freddie King (born Fread Eugene Martin, July 19, 1940) is an American Delta blues guitarist.  Despite the name, his style is not based on that of Freddie King, but is more influenced by John Lee Hooker and his approach to electric blues is original.",
     "activeFrom": "1960",
-    "influences": [],
+    "influences": [
+      "john-lee-hooker"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -21902,7 +21925,9 @@
     ],
     "description": "Luke \"Long Gone\" Miles (May 8, 1925 – November 22, 1987) was an American Texas blues and electric blues singer and songwriter.  He was a protégé of Lightnin' Hopkins and variously recorded or performed with Hopkins, Sonny Terry, Brownie McGhee and Willie Chambers.  Miles is best known for his 1964 album Country Born, issued by World Pacific Records.",
     "activeFrom": "1952",
-    "influences": [],
+    "influences": [
+      "lightnin-hopkins"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -23179,7 +23204,9 @@
     ],
     "description": "Anderson Meade \"Lux\" Lewis (September 4, 1905 – June 7, 1964) was an American pianist and composer, remembered for his playing in the boogie-woogie style.  His best-known work, \"Honky Tonk Train Blues\", has been recorded by many artists.",
     "activeFrom": "1927",
-    "influences": [],
+    "influences": [
+      "hersal-thomas"
+    ],
     "influencedBy": [
       "big-maceo-merriweather",
       "cecil-gant"
@@ -23520,7 +23547,11 @@
     "albums": [],
     "description": "Mighty Mo Rodgers (born July 24, 1942) is an American electric blues musician, singer, songwriter, and record producer, who has released eight albums to date.  He has been influenced by the work of Aretha Franklin, Bobby Bland, Eddie Boyd, Jimmy Reed, Otis Redding, Sam & Dave, and Willie Dixon. \nBonnie Raitt noted that \"Mo Rodgers' music is a breath of fresh air in the blues/R&B world.",
     "activeFrom": "1962",
-    "influences": [],
+    "influences": [
+      "aretha-franklin",
+      "eddie-boyd",
+      "jimmy-reed"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -24380,7 +24411,8 @@
     "activeFrom": "1941",
     "influences": [
       "son-house",
-      "robert-johnson"
+      "robert-johnson",
+      "willie-brown"
     ],
     "influencedBy": [
       "little-walter",
@@ -24447,7 +24479,9 @@
     "albums": [],
     "description": "Nat King Cole was an American jazz pianist and singer whose hits include \"Unforgettable,\" \"Mona Lisa,\" and \"The Christmas Song.\" He was the first Black American to host a nationally broadcast television show.",
     "activeFrom": "1934",
-    "influences": [],
+    "influences": [
+      "leroy-carr"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -26687,7 +26721,9 @@
       "louis-jordan",
       "art-tatum",
       "roy-hawkins",
-      "nappy-brown"
+      "nappy-brown",
+      "cow-cow-davenport",
+      "leroy-carr"
     ],
     "influencedBy": [
       "percy-mayfield",
@@ -27138,7 +27174,8 @@
     "activeFrom": "1980",
     "influences": [
       "junior-kimbrough",
-      "rl-burnside"
+      "rl-burnside",
+      "otha-turner"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -27249,7 +27286,8 @@
     "description": "Robert William Cray (born August 1, 1953) is an American blues guitarist and singer.  He has led his own band and won five Grammy Awards.",
     "activeFrom": "1974",
     "influences": [
-      "ov-wright"
+      "ov-wright",
+      "albert-collins"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -27317,7 +27355,9 @@
     "albums": [],
     "description": "Robert Curtis Smith (February 17, 1930 – November 10, 2010) was a Piedmont blues singer, guitarist and songwriter from Cruger, Mississippi, US. \nSmith was influenced by Big Bill Broonzy.  He recorded one album, for Bluesville Records, released in 1963.",
     "activeFrom": "1950",
-    "influences": [],
+    "influences": [
+      "big-bill-broonzy"
+    ],
     "influencedBy": [
       "lucille-hegamin"
     ],
@@ -27372,7 +27412,8 @@
     "activeFrom": "1931",
     "influences": [
       "son-house",
-      "skip-james"
+      "skip-james",
+      "willie-brown"
     ],
     "influencedBy": [
       "sonny-boy-williamson",
@@ -27590,7 +27631,9 @@
     "influences": [
       "papa-charlie-jackson",
       "jim-jackson",
-      "fruteland-jackson"
+      "fruteland-jackson",
+      "joe-willie-wilkins",
+      "tampa-red"
     ],
     "influencedBy": [
       "cedell-davis",
@@ -30667,7 +30710,9 @@
     ],
     "description": "Saunders Terrell (October 24, 1911 – March 11, 1986), known as Sonny Terry, was an American Piedmont blues and folk musician, who was known for his energetic blues harmonica style, which frequently included vocal whoops and hollers and occasionally imitations of trains and fox hunts.",
     "activeFrom": "1930",
-    "influences": [],
+    "influences": [
+      "blind-boy-fuller"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -33302,7 +33347,9 @@
     "albums": [],
     "description": "Willie \"61\" Blackwell was a country blues guitarist who took his nickname from Route 61. He was recorded by Alan Lomax in 1942 and was reportedly taught guitar by Robert Johnson.",
     "activeFrom": "1930",
-    "influences": [],
+    "influences": [
+      "robert-johnson"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -39997,7 +40044,9 @@
     ],
     "description": "L. C. McKinley was an American Chicago blues guitarist born in Winona, Mississippi, who relocated to Chicago in 1941 and became a regular performer at the 708 Club. He worked as a session musician on recordings mostly in the 1950s, backing artists like Eddie Boyd on the Billboard R&B chart-topping \"Five Long Years.\" His best-known tracks include \"Weeping Willow Blues\" and \"Nit Wit,\" and his guitar playing was influenced by T-Bone Walker.",
     "activeFrom": "1947",
-    "influences": [],
+    "influences": [
+      "t-bone-walker"
+    ],
     "influencedBy": [
       "t-bone-walker"
     ],
@@ -40773,7 +40822,8 @@
     "description": "Houston Stackhouse was an American Delta blues guitarist and singer best known for his association with Robert Nighthawk, whom he taught to play guitar. A key figure in the Mississippi Delta blues scene, he performed on the legendary King Biscuit Time radio program and played alongside Robert Johnson, Sonny Boy Williamson II, and Pinetop Perkins, though he remained largely undiscovered outside the Delta until the blues revival of the late 1960s.",
     "activeFrom": "1935",
     "influences": [
-      "tommy-johnson"
+      "tommy-johnson",
+      "joe-willie-wilkins"
     ],
     "influencedBy": [
       "robert-nighthawk"
@@ -45354,7 +45404,10 @@
     "albums": [],
     "description": "Gilbert \"Honey\" Hill (January 8, 1912 - 1953) was an American blues pianist from Indianapolis, Indiana, who partnered with guitarist and singer Bill Gaither to form a duo modeled on the piano-and-guitar blues of Leroy Carr and Scrapper Blackwell. Beginning in the winter of 1935, shortly after Carr's death, Hill and Gaither recorded together prolifically, cutting over seventy songs between 1936 and 1940.",
     "activeFrom": "1935",
-    "influences": [],
+    "influences": [
+      "scrapper-blackwell",
+      "leroy-carr"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [

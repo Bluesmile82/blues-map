@@ -87,14 +87,52 @@ collisions remain and are expected:
   (`Z. Z. Hill` / `Z.Z. Hill`). These want merging, which is a data decision,
   not a script's.
 
+## The descriptions already in the file
+
+```bash
+node mine-influences-from-descriptions.js --dry-run    # report only
+node mine-influences-from-descriptions.js              # apply + write the review list
+```
+
+383 entries name another musician on the map in their own prose. Naming is not
+influencing, so a mention only becomes an edge when a **cue phrase in the same
+sentence, before the name**, says which way it runs:
+
+| Cue group | Example | Result |
+|---|---|---|
+| ancestor | "a protégé of Slim Harpo", "learned guitar from Blind Blake" | the named musician goes into the subject's `influences` |
+| descendant | "influenced Robert Cray", "an influence on Eric Clapton" | the subject goes into the named musician's `influences` |
+| collaboration | "recorded with", "toured with", "brother of" | recognised and skipped, so it is never read as influence |
+| none | "alongside Meade Lux Lewis", "a cousin of Lightnin' Hopkins" | written to `influence-candidates.md` for a human |
+
+The last run: **39 new edges**, 39 already recorded, 188 skipped as
+collaboration, 541 left for review.
+
+### Two traps the cue matching has to handle
+
+Both of these produced backwards edges before they were fixed, so keep them in
+mind if you add cues:
+
+- **A cue inside a word.** "A self-taught musician, he received informal
+  lessons from Sonny Boy Williamson I" matched `taught` and filed Arnold as
+  Williamson's influence. Cues now have to stand as their own word, and a
+  preceding hyphen disqualifies them.
+- **The passive with its object in the middle.** "taught guitar **by** Robert
+  Johnson" and "mentored in bottleneck slide **by** Blind Willie Johnson" run
+  the opposite way to "taught Robert Johnson", and a bare verb cue cannot tell
+  them apart. A standalone `by` or `from` between the cue and the name flips
+  the direction.
+
+`influence-candidates.md` is regenerated on every run and is the natural place
+to work from by hand — the relationships in it are real, they just need a
+reader to say which way they point.
+
 ## Other sources, ranked
 
 1. **Wikidata P737** — done, see above. Free, structured, low yield.
-2. **The descriptions already in `musicians.json`** — 383 entries name another
-   musician on the map in their own prose, worth ~600 candidate links. Naming
-   isn't influencing, though: "recorded with" and "was a protégé of" are
-   different relationships, so this needs cue-phrase classification rather
-   than a blind import.
+2. **The descriptions already in `musicians.json`** — done, see above. 39
+   edges auto-filed, 541 mentions left in `influence-candidates.md` for a
+   reader.
 3. **DBpedia `dbo:influencedBy`** — extracted from the Influences field that
    Wikipedia's musician infobox used to carry and has since dropped. Older
    dumps still hold it for pre-war artists whose current articles don't. Same

@@ -19,6 +19,7 @@
     "etl:musician": "node etl-claude-enrich.js --musician",
     "enrich": "node enrich-musicians-v3.js",
     "enrich:influences": "node enrich-influences-wikidata.js",
+    "enrich:influences:text": "node mine-influences-from-descriptions.js",
     "db:import": "node db-import.js",
     "db:export": "node db-export.js",
     "db:push": "node db-import.js && node db-export.js",
