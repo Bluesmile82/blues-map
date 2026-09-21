@@ -28,7 +28,7 @@ const LEAF_PATH =
   'C -.2 -1.8 -.08 -2.1 0 -2.25 C .08 -2.1 .2 -1.8 .22 -1.55 ' +
   'C .34 -1.6 .55 -1.72 .78 -1.75 C .85 -1.6 .62 -1.35 .42 -1.15 ' +
   'C .55 -1 .8 -.95 1 -.75 C .75 -.55 .25 -.6 0 -.55 Z';
-const LEAF_SCALE = 7.6;
+const LEAF_SCALE = 10.5;
 
 const WOOD = { light: '#6b4a2f', dark: '#7a5537' };
 const WOOD_DARK = { light: '#4a3220', dark: '#523822' };
@@ -214,11 +214,11 @@ export default function TreeView({
   // --- static tree geometry: never re-renders on zoom or hover
   const woodwork = useMemo(() => (
     <g stroke={woodDark} strokeWidth={1.6} strokeLinejoin="round">
-      <path d={tree.trunk} fill={wood} opacity={0.92} />
-      {/* roots over the trunk, so they read as buttresses rather than a fringe */}
+      {/* roots behind the trunk, in the same wood, so they spread out from under it */}
       {tree.roots.map((d, i) => (
-        <path key={`root${i}`} d={d} fill={woodDark} opacity={0.9} />
+        <path key={`root${i}`} d={d} fill={wood} opacity={0.92} />
       ))}
+      <path d={tree.trunk} fill={wood} opacity={0.92} />
       {tree.branches.map((b) => (
         <path
           key={b.key}
@@ -304,7 +304,7 @@ export default function TreeView({
               </g>
             )}
             {/* generous hit area — leaves are tiny */}
-            <circle cx={n.x} cy={n.y} r={n.tier === 2 ? 11 : 14} fill="transparent" />
+            <circle cx={n.x} cy={n.y} r={n.tier === 2 ? 15 : 16} fill="transparent" />
           </g>
         );
       })}
@@ -337,7 +337,10 @@ export default function TreeView({
       return [lx - styleFont * 0.7, l.labelY - half, lx + styleFont * 0.7, l.labelY + half] as
         [number, number, number, number];
     });
-    const out: Array<{ n: TreeMusician; x: number; y: number; anchor: 'start' | 'end' }> = [];
+    const out: Array<{
+      n: TreeMusician; x: number; y: number; anchor: 'start' | 'end';
+      box: [number, number, number, number];
+    }> = [];
 
     for (const n of candidates) {
       const right = n.x >= n.ax;
@@ -353,7 +356,7 @@ export default function TreeView({
       const hits = placed.some((p) => box[0] < p[2] && box[2] > p[0] && box[1] < p[3] && box[3] > p[1]);
       if (hits) continue;
       placed.push(box);
-      out.push({ n, x: lx, y: n.y, anchor: right ? 'start' : 'end' });
+      out.push({ n, x: lx, y: n.y, anchor: right ? 'start' : 'end', box });
       if (out.length >= MAX_LABELS) break;
     }
     return out;
@@ -465,11 +468,25 @@ export default function TreeView({
             ))}
           </g>
 
-          {/* musician names */}
-          <g pointerEvents="none">
-            {labels.map(({ n, x, y, anchor }) => (
-              <text
+          {/* musician names — hovering one is the same as hovering its leaf */}
+          <g>
+            {labels.map(({ n, x, y, anchor, box }) => (
+              <g
                 key={n.m.id}
+                style={{ cursor: 'pointer' }}
+                onMouseEnter={() => setHovered(n)}
+                onMouseLeave={() => setHovered((h) => (h?.m.id === n.m.id ? null : h))}
+                onClick={() => onSelect(n.m)}
+              >
+              <rect
+                x={box[0]}
+                y={box[1]}
+                width={box[2] - box[0]}
+                height={box[3] - box[1]}
+                fill="transparent"
+              />
+              <text
+                pointerEvents="none"
                 x={x}
                 y={y + fontPx * 0.34 / transform.k}
                 textAnchor={anchor}
@@ -484,6 +501,7 @@ export default function TreeView({
               >
                 {n.m.name}
               </text>
+              </g>
             ))}
           </g>
         </g>

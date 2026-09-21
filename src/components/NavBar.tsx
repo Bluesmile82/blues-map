@@ -34,7 +34,6 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
         {([
           { id: 'card', label: t('nav.card') },
           { id: 'map', label: t('nav.map') },
-          { id: 'influence', label: t('nav.timeline') },
           { id: 'tree', label: t('nav.tree') },
         ] as const).map(({ id, label }) => (
           <button
@@ -50,7 +49,6 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
       <div className="sm:hidden flex bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5 ml-auto">
         {([
           { id: 'card', label: t('nav.card') },
-          { id: 'influence', label: t('nav.timeline') },
           { id: 'tree', label: t('nav.tree') },
         ] as const).map(({ id, label }) => (
           <button
