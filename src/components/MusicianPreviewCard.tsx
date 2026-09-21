@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { Musician } from '../types';
 import { getStyleHex } from '../utils/colors';
-import { getYear } from '../utils/layout';
+import { formatLifespan } from '../utils/layout';
 
 interface MusicianPreviewCardProps {
   musician: Musician;
@@ -76,10 +76,11 @@ export default function MusicianPreviewCard({ musician, onViewDetails, onClose, 
               </div>
 
               <p className="text-ink3 text-xs leading-relaxed">
-                {musician.birthPlace} · {t('musician.bornAbbr')} {getYear(musician.birthDate)}
-                {musician.deathDate
-                  ? ` — ${t('musician.diedAbbr')} ${getYear(musician.deathDate)}`
-                  : ` — ${t('musician.active')}`}
+                {musician.birthPlace} · {formatLifespan(musician.birthDate, musician.deathDate, {
+                  born: t('musician.bornAbbr'),
+                  died: t('musician.diedAbbr'),
+                  active: t('musician.active'),
+                })}
               </p>
 
               <p className="text-ink2 text-xs mt-0.5">{musician.instrument.split(', ')[0]}</p>

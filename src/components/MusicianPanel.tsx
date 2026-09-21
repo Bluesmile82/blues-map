@@ -2,7 +2,7 @@ import { useMemo, useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Musician } from '../types';
 import { getStyleHex, getStyleColor, STYLE_HEX } from '../utils/colors';
-import { getYear } from '../utils/layout';
+import { formatLifespan, formatYear, formatYearRange } from '../utils/layout';
 import { useAtomValue } from 'jotai';
 import { userAtom } from '../atoms/auth';
 import { isMusicianFavoritedAtom } from '../atoms/lists';
@@ -228,8 +228,8 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
               <div className="flex-1 min-w-0 pr-10">
                 <h2 className="text-ink font-bold text-base leading-tight truncate">{musician.name}</h2>
                 <p className="text-ink3 text-2xs mt-0.5 truncate">
-                  {t(`styles.${musician.bluesStyle}`, musician.bluesStyle)} · {musician.birthPlace} · {getYear(musician.birthDate)}
-                  {musician.deathDate ? `–${getYear(musician.deathDate)}` : ''}
+                  {t(`styles.${musician.bluesStyle}`, musician.bluesStyle)} · {musician.birthPlace}
+                  {formatYearRange(musician.birthDate, musician.deathDate) && ` · ${formatYearRange(musician.birthDate, musician.deathDate)}`}
                 </p>
               </div>
             </div>
@@ -312,10 +312,11 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                 })}
               </div>
               <p className="text-ink3 text-2xs sm:text-ui leading-relaxed font-medium">
-                {musician.birthPlace} · {t('musician.bornAbbr')} {getYear(musician.birthDate)}
-                {musician.deathDate
-                  ? ` — ${t('musician.diedAbbr')} ${getYear(musician.deathDate)}`
-                  : ` — ${t('musician.active')}`}
+                {musician.birthPlace} · {formatLifespan(musician.birthDate, musician.deathDate, {
+                  born: t('musician.bornAbbr'),
+                  died: t('musician.diedAbbr'),
+                  active: t('musician.active'),
+                })}
               </p>
               <p className="text-ink2 text-2xs sm:text-ui mt-0.5">{[musician.instrument, ...(musician.secondaryInstruments ?? [])].map(i => t(`instruments.${i}`, i)).join(', ')}</p>
               {editMode && (
@@ -504,9 +505,9 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
             {/* Details */}
             <Section title={t('musician.details')} r={r} g={g} b={b} hex={hex}>
               <div className="flex flex-col gap-2">
-                <DetailRow label={t('musician.born')} value={`${musician.birthDate.split('-')[0]} — ${musician.birthPlace}`} />
+                <DetailRow label={t('musician.born')} value={[formatYear(musician.birthDate), musician.birthPlace].filter(Boolean).join(' — ')} />
                 {musician.deathDate && musician.deathPlace && (
-                  <DetailRow label={t('musician.died')} value={`${musician.deathDate.split('-')[0]} — ${musician.deathPlace}`} />
+                  <DetailRow label={t('musician.died')} value={[formatYear(musician.deathDate), musician.deathPlace].filter(Boolean).join(' — ')} />
                 )}
                 {musician.spentTimePlaces.length > 0 && (
                   <DetailRow label={t('musician.activeIn')} value={musician.spentTimePlaces.map((s) => s.place).join(', ')} />
