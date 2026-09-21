@@ -683,6 +683,9 @@ export const STYLE_TREE_EDGES: ReadonlyArray<[string, string]> = [
   ['New Orleans Blues', 'Swamp Blues'],
   ['New Orleans Blues', 'Rhythm and Blues'],
   ['Memphis Blues', 'Chicago Blues'],
+  // Stax and Hi: the Memphis soul line, and the strongest cross-style influence
+  // flow in the data that the tree did not already carry.
+  ['Memphis Blues', 'Soul Blues'],
   ['Chicago Blues', 'Detroit Blues'],
   ['Chicago Blues', 'British Blues'],
   ['Chicago Blues', 'Blues Rock'],
