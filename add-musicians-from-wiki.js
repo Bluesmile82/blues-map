@@ -42,7 +42,7 @@ const STYLE_MAP = {
   'acoustic blues': 'Country Blues',
   'gospel blues': 'Gospel',
   'jump blues': 'Jump Blues',
-  'rhythm and blues': 'Rythm and Blues',
+  'rhythm and blues': 'Rhythm and Blues',
   'soul blues': 'Soul Blues',
   'swamp blues': 'Swamp Blues',
   'louisiana blues': 'New Orleans Blues',

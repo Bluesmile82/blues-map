@@ -26,7 +26,7 @@ const DELAY_MS = 600;
 const CANONICAL_STYLES = [
   'Delta Blues', 'Hill Country Blues', 'Country Blues', 'Boogie Woogie',
   'Classic Blues', 'Texas Blues', 'Swamp Blues',
-  'New Orleans Blues', 'Memphis Blues', 'Kansas City Blues', 'Chicago Blues', 'Rythm and Blues', 'Detroit Blues', 'Soul Blues',
+  'New Orleans Blues', 'Memphis Blues', 'Kansas City Blues', 'Chicago Blues', 'Rhythm and Blues', 'Detroit Blues', 'Soul Blues',
   'West Coast Blues', 'Jump Blues', 'Georgia Blues', 'Piedmont Blues', 'Jazz', 'British Blues', 'Gospel',
 ];
 
@@ -53,7 +53,7 @@ function mapToCanonicalStyle(genreLabels) {
     if (l.includes('memphis')) return 'Memphis Blues';
     if (l.includes('kansas city')) return 'Kansas City Blues';
     if (l.includes('chicago')) return 'Chicago Blues';
-    if (l.includes('rhythm and blues') || l.includes('r&b')) return 'Rythm and Blues';
+    if (l.includes('rhythm and blues') || l.includes('r&b')) return 'Rhythm and Blues';
     if (l.includes('detroit')) return 'Detroit Blues';
     if (l.includes('soul blues')) return 'Soul Blues';
     if (l.includes('west coast')) return 'West Coast Blues';

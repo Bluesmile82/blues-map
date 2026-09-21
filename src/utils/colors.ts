@@ -15,7 +15,7 @@ export const CANONICAL_STYLES = [
   'Memphis Blues',
   'Kansas City Blues',
   'Chicago Blues',
-  'Rythm and Blues',
+  'Rhythm and Blues',
   'Detroit Blues',
   'Soul Blues',
   'West Coast Blues',
@@ -25,7 +25,7 @@ export const CANONICAL_STYLES = [
   'Jazz',
   'British Blues',
   'Blues Rock',
-  'Modern Blues',
+  'Contemporary Blues',
   'Gospel',
 ] as const;
 
@@ -67,7 +67,7 @@ export const STYLE_COLORS: Record<string, RGB> = {
   'Memphis Blues': [180, 60, 100],
   'Kansas City Blues': [120, 90, 210],
   'Chicago Blues': [74, 144, 217],
-  'Rythm and Blues': [46, 204, 113],
+  'Rhythm and Blues': [46, 204, 113],
   'Detroit Blues': [155, 155, 155],
   'Soul Blues': [233, 30, 99],
   'West Coast Blues': [40, 130, 200],
@@ -77,7 +77,7 @@ export const STYLE_COLORS: Record<string, RGB> = {
   'Jazz': [26, 188, 156],
   'British Blues': [90, 130, 200],
   'Blues Rock': [211, 47, 47],
-  'Modern Blues': [0, 150, 160],
+  'Contemporary Blues': [0, 150, 160],
   'Gospel': [231, 76, 60],
 };
 

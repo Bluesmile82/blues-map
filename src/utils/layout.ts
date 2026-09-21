@@ -40,11 +40,11 @@ export const STYLE_ORDER = [
   'Memphis Blues',
   'Kansas City Blues',
   'Chicago Blues',
-  'Rythm and Blues',
+  'Rhythm and Blues',
   'Soul Blues',
   'Detroit Blues',
   'British Blues',
-  'Modern Blues',
+  'Contemporary Blues',
 ];
 
 // Primary instrument ordering (roughly by prevalence/era in blues)
@@ -80,7 +80,7 @@ export const STYLE_ABBREVIATIONS: Record<string, string> = {
   'Memphis Blues': 'MEMPHIS',
   'Kansas City Blues': 'KANSAS CITY',
   'Chicago Blues': 'CHICAGO',
-  'Rythm and Blues': 'R&B',
+  'Rhythm and Blues': 'R&B',
   'Detroit Blues': 'DETROIT',
   'Soul Blues': 'SOUL',
   'West Coast Blues': 'WEST COAST',
@@ -90,7 +90,7 @@ export const STYLE_ABBREVIATIONS: Record<string, string> = {
   'Jazz': 'JAZZ',
   'British Blues': 'BRITISH',
   'Blues Rock': 'BLUES ROCK',
-  'Modern Blues': 'MODERN',
+  'Contemporary Blues': 'CONTEMPORARY',
   'Gospel': 'GOSPEL',
 };
 
@@ -652,11 +652,11 @@ export const STYLE_ERA_YEAR: Readonly<Record<string, number>> = {
   'Jump Blues': 1940,
   'Detroit Blues': 1943,
   'West Coast Blues': 1946,
-  'Rythm and Blues': 1946,
+  'Rhythm and Blues': 1946,
   'Soul Blues': 1955,
   'British Blues': 1960,
   'Blues Rock': 1965,
-  'Modern Blues': 1970,
+  'Contemporary Blues': 1970,
 };
 
 // Historical blues style evolution tree: [parent, child]
@@ -681,17 +681,17 @@ export const STYLE_TREE_EDGES: ReadonlyArray<[string, string]> = [
   ['Texas Blues', 'Swamp Blues'],
   ['Texas Blues', 'West Coast Blues'],
   ['New Orleans Blues', 'Swamp Blues'],
-  ['New Orleans Blues', 'Rythm and Blues'],
+  ['New Orleans Blues', 'Rhythm and Blues'],
   ['Memphis Blues', 'Chicago Blues'],
   ['Chicago Blues', 'Detroit Blues'],
   ['Chicago Blues', 'British Blues'],
   ['Chicago Blues', 'Blues Rock'],
   ['British Blues', 'Blues Rock'],
-  ['Chicago Blues', 'Modern Blues'],
-  ['Texas Blues', 'Modern Blues'],
-  ['Jump Blues', 'Rythm and Blues'],
+  ['Chicago Blues', 'Contemporary Blues'],
+  ['Texas Blues', 'Contemporary Blues'],
+  ['Jump Blues', 'Rhythm and Blues'],
   ['Jump Blues', 'West Coast Blues'],
-  ['Rythm and Blues', 'Soul Blues'],
+  ['Rhythm and Blues', 'Soul Blues'],
 ];
 export interface StyleTreePath {
   path: Position2D[];
