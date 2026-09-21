@@ -25,7 +25,7 @@ const DELAY_MS = 600;
 // Canonical blues styles (must match colors.ts)
 const CANONICAL_STYLES = [
   'Delta Blues', 'Hill Country Blues', 'Country Blues', 'Boogie Woogie',
-  'Classic Blues', 'Vaudeville Blues', 'Texas Blues', 'Swamp Blues',
+  'Classic Blues', 'Texas Blues', 'Swamp Blues',
   'New Orleans Blues', 'Memphis Blues', 'Kansas City Blues', 'Chicago Blues', 'Rythm and Blues', 'Detroit Blues', 'Soul Blues',
   'West Coast Blues', 'Jump Blues', 'Georgia Blues', 'Piedmont Blues', 'Jazz', 'British Blues', 'Gospel',
 ];
@@ -46,7 +46,7 @@ function mapToCanonicalStyle(genreLabels) {
     if (l.includes('country blues') || l.includes('folk blues') || l.includes('rural blues')) return 'Country Blues';
     if (l.includes('boogie')) return 'Boogie Woogie';
     if (l.includes('classic blues')) return 'Classic Blues';
-    if (l.includes('vaudeville')) return 'Vaudeville Blues';
+    if (l.includes('vaudeville')) return 'Classic Blues';
     if (l.includes('texas')) return 'Texas Blues';
     if (l.includes('swamp')) return 'Swamp Blues';
     if (l.includes('new orleans')) return 'New Orleans Blues';

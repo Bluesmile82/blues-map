@@ -37,7 +37,7 @@ const STYLE_MAP = {
   'electric blues': 'Chicago Blues',
   'boogie woogie': 'Boogie Woogie',
   'classic female blues': 'Classic Blues',
-  'vaudeville blues': 'Vaudeville Blues',
+  'vaudeville blues': 'Classic Blues',
   'jug band': 'Country Blues',
   'acoustic blues': 'Country Blues',
   'gospel blues': 'Gospel',
