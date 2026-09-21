@@ -26,7 +26,8 @@
     "lightDarkMode": "Light/Dark Mode",
     "card": "Card",
     "playlist": "Playlist",
-    "playlistWizard": "Playlist Wizard"
+    "playlistWizard": "Playlist Wizard",
+    "tree": "Tree"
   },
   "card": {
     "flipToMap": "Click to see places",
@@ -373,5 +374,9 @@
     "edit": "Edit",
     "editActive": "Edit this playlist in the wizard",
     "editingActive": "Editing the active playlist"
+  },
+  "tree": {
+    "fit": "Whole tree",
+    "influenced": "influenced"
   }
 }

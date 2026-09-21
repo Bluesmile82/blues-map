@@ -2,7 +2,7 @@ import { useMemo, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useAtomValue } from 'jotai';
 import {
-  X, Play, SkipForward, Youtube, Shuffle, Share2, Check, Bookmark,
+  X, Play, SkipForward, SkipBack, Youtube, Shuffle, Share2, Check, Bookmark,
   ChevronDown, ChevronUp, ListPlus, ListMusic, Pencil,
 } from 'lucide-react';
 import type { Musician } from '../types';
@@ -427,6 +427,7 @@ export function PlaylistBar({
   queue,
   index,
   onSkip,
+  onPrev,
   onStop,
   onSelect,
   onEdit,
@@ -434,6 +435,7 @@ export function PlaylistBar({
   queue: Musician[];
   index: number;
   onSkip: () => void;
+  onPrev: () => void;
   onStop: () => void;
   onSelect: (m: Musician) => void;
   /** Reopen this exact queue in the wizard to edit and save it */
@@ -489,9 +491,20 @@ export function PlaylistBar({
           {open ? <ChevronDown className="w-3 h-3 opacity-70" /> : <ChevronUp className="w-3 h-3 opacity-70" />}
         </button>
         <span className="text-ui text-ink truncate max-w-[40vw] sm:max-w-xs">{current.name}</span>
-        <button onClick={onSkip} className="text-ink3 hover:text-ink shrink-0 p-1" aria-label={t('playlist.skip')}>
-          <SkipForward className="w-4 h-4" />
+        <button
+          onClick={onPrev}
+          disabled={index === 0}
+          className="text-ink3 hover:text-ink shrink-0 p-1 disabled:opacity-30 disabled:hover:text-ink3"
+          aria-label={t('playlist.previous', { defaultValue: 'Previous' })}
+        >
+          <SkipBack className="w-4 h-4" />
         </button>
+        {/* At the end of the queue there is nothing to skip to — only back */}
+        {index < queue.length - 1 && (
+          <button onClick={onSkip} className="text-ink3 hover:text-ink shrink-0 p-1" aria-label={t('playlist.skip')}>
+            <SkipForward className="w-4 h-4" />
+          </button>
+        )}
         <button onClick={onStop} className="text-ink3 hover:text-accent2 shrink-0 p-1" aria-label={t('playlist.close')}>
           <X className="w-4 h-4" />
         </button>

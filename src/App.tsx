@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import NavBar from './components/NavBar';
 import InfluenceView from './components/InfluenceView';
+import TreeView from './components/TreeView';
 import MapView from './components/MapView';
 import CardView from './components/CardView';
 import MusicianPanel from './components/MusicianPanel';
@@ -17,9 +18,9 @@ import musiciansData from './data/musicians.json';
 
 const EDIT_MODE_ENABLED = import.meta.env.VITE_ENABLE_EDIT_MODE === 'true';
 
-export type ViewType = 'influence' | 'map' | 'card';
-const VIEW_SLUGS: Record<string, ViewType> = { timeline: 'influence', map: 'map', card: 'card' };
-const VIEW_TO_SLUG: Record<ViewType, string> = { influence: 'timeline', map: 'map', card: 'card' };
+export type ViewType = 'influence' | 'tree' | 'map' | 'card';
+const VIEW_SLUGS: Record<string, ViewType> = { timeline: 'influence', tree: 'tree', map: 'map', card: 'card' };
+const VIEW_TO_SLUG: Record<ViewType, string> = { influence: 'timeline', tree: 'tree', map: 'map', card: 'card' };
 
 /** Parse pathname into { view, musicianId, listSlug } */
 function parseUrl(pathname: string): { view: ViewType | null; musicianId: string | null; listSlug: string | null } {
@@ -200,11 +201,7 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
   /** Move the playlist to `idx` — selects the musician, which zooms the view and starts its song. */
   const playPlaylistAt = useCallback((idx: number) => {
     const queue = playlistRef.current;
-    if (idx < 0 || idx >= queue.length) {
-      setPlaylist([]);
-      setPlaylistIndex(0);
-      return;
-    }
+    if (queue.length === 0 || idx < 0 || idx >= queue.length) return;
     playlistIndexRef.current = idx;
     setPlaylistIndex(idx);
     const musician = queue[idx];
@@ -217,12 +214,13 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
     playlistRef.current = queue;
     setPlaylist(queue);
     setShowWizard(false);
-    // The timeline is where "focus moves to each musician" is visible
-    setView('influence');
+    // The tree is where "focus moves to each musician" is visible
+    setView('tree');
     playPlaylistAt(0);
   }, [playPlaylistAt]);
 
   const handlePlaylistNext = useCallback(() => playPlaylistAt(playlistIndexRef.current + 1), [playPlaylistAt]);
+  const handlePlaylistPrev = useCallback(() => playPlaylistAt(playlistIndexRef.current - 1), [playPlaylistAt]);
 
   const handleStopPlaylist = useCallback(() => {
     setPlaylist([]);
@@ -230,6 +228,7 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
   }, []);
 
   const playlistActive = playlist.length > 0;
+  const playlistHasNext = playlistActive && playlistIndex < playlist.length - 1;
 
   // Restore a playlist shared via ?playlist=id1,id2,… (order preserved)
   useEffect(() => {
@@ -332,6 +331,8 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
           <>
             {view === 'influence' ? (
               <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} forceZoomToId={forceZoomToId} onZoomComplete={() => setForceZoomToId(null)} onFilteredMusiciansChange={setFilteredMusicians} theme={theme} isMobile={isMobile} />
+            ) : view === 'tree' ? (
+              <TreeView key="tree" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} forceZoomToId={forceZoomToId} onZoomComplete={() => setForceZoomToId(null)} onFilteredMusiciansChange={setFilteredMusicians} theme={theme} isMobile={isMobile} />
             ) : view === 'map' ? (
               <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} theme={theme} isMobile={isMobile} />
             ) : (
@@ -354,7 +355,7 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
           manualVideoUrl={manualVideoUrl}
           autoplay={autoplay || playlistActive}
           onVideoClose={() => setShowPlayer(false)}
-          onVideoEnded={playlistActive ? handlePlaylistNext : undefined}
+          onVideoEnded={playlistHasNext ? handlePlaylistNext : undefined}
           isMobile={isMobile}
           bottomInset={isMobile ? 72 : 0}
         />
@@ -375,7 +376,7 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
             onPositionChange={setVideoPlayerPos}
             onSizeChange={setVideoPlayerW}
             autoplay={autoplay || playlistActive}
-            onEnded={playlistActive ? handlePlaylistNext : undefined}
+            onEnded={playlistHasNext ? handlePlaylistNext : undefined}
           />
         </div>
       )}
@@ -395,6 +396,7 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
           queue={playlist}
           index={playlistIndex}
           onSkip={handlePlaylistNext}
+          onPrev={handlePlaylistPrev}
           onStop={handleStopPlaylist}
           onSelect={(m) => playPlaylistAt(playlist.indexOf(m))}
           onEdit={() => { setWizardQueue(playlist); setShowWizard(true); }}

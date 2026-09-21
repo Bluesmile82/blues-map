@@ -4,7 +4,7 @@ import SearchInput from './SearchInput'
 import { useAtomValue } from 'jotai'
 import { userAtom } from '../atoms/auth'
 import { listsAtom, favoritesMapAtom } from '../atoms/lists'
-import { CANONICAL_STYLES, STYLE_COLORS } from '../utils/colors'
+import { CANONICAL_STYLES, STYLE_COLORS, CANONICAL_INSTRUMENTS, getInstrumentHex } from '../utils/colors'
 
 interface FiltersPanelProps {
   searchValue: string
@@ -18,6 +18,10 @@ interface FiltersPanelProps {
   styleFilter: string | null
   onStyleFilterChange: (style: string | null) => void
   availableStyles: string[]
+  /** Omit both to hide the instrument section */
+  instrumentFilter?: string | null
+  onInstrumentFilterChange?: (instrument: string | null) => void
+  availableInstruments?: string[]
   yearRange: [number, number] | null
   minYear: number
   maxYear: number
@@ -40,6 +44,9 @@ export default function FiltersPanel({
   styleFilter,
   onStyleFilterChange,
   availableStyles,
+  instrumentFilter = null,
+  onInstrumentFilterChange,
+  availableInstruments = [],
   yearRange,
   minYear,
   maxYear,
@@ -52,6 +59,7 @@ export default function FiltersPanel({
   const { t } = useTranslation()
   const [localCollapsed, setLocalCollapsed] = useState(collapsed)
   const [legendOpen, setLegendOpen] = useState(false)
+  const [instrumentsOpen, setInstrumentsOpen] = useState(false)
 
   const user = useAtomValue(userAtom)
   const lists = useAtomValue(listsAtom)
@@ -197,6 +205,55 @@ export default function FiltersPanel({
             </div>
           )}
         </div>
+
+        {/* Instrument filter */}
+        {onInstrumentFilterChange && availableInstruments.length > 0 && (
+          <div className="bg-bg/50 border border-border-subtle rounded-lg">
+            <button
+              onClick={() => setInstrumentsOpen(!instrumentsOpen)}
+              className="flex items-center justify-between w-full px-3 py-2 text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
+            >
+              <span>{t('filters.instrument', { defaultValue: 'Instrument' })}</span>
+              <span className="text-3xs opacity-60">{instrumentsOpen ? '▲' : '▼'}</span>
+            </button>
+
+            {instrumentsOpen && (
+              <div className="px-3 pb-2 max-h-48 overflow-y-auto">
+                {CANONICAL_INSTRUMENTS.filter((i) => availableInstruments.includes(i)).map((instrument) => {
+                  const hex = getInstrumentHex(instrument)
+                  const isActive = instrumentFilter === instrument
+
+                  return (
+                    <div
+                      key={instrument}
+                      className="flex items-center gap-2 px-2 py-1 cursor-pointer transition-colors hover:bg-bg-hover rounded"
+                      style={{ background: isActive ? `${hex}26` : undefined, color: isActive ? hex : undefined }}
+                      onClick={() => onInstrumentFilterChange(isActive ? null : instrument)}
+                    >
+                      <span
+                        className="w-2 h-2 rounded-full shrink-0 transition-transform"
+                        style={{ background: hex, transform: isActive ? 'scale(1.3)' : 'scale(1)' }}
+                      />
+                      <span className={`text-label flex-1 ${isActive ? '' : 'text-ink2'}`}>
+                        {t(`instruments.${instrument}`, instrument)}
+                      </span>
+                      {isActive && <span className="text-2xs opacity-50">✕</span>}
+                    </div>
+                  )
+                })}
+
+                {instrumentFilter && (
+                  <button
+                    onClick={() => onInstrumentFilterChange(null)}
+                    className="w-full px-2 py-1 text-2xs text-ink3 hover:text-ink hover:bg-bg-hover transition-colors text-left rounded"
+                  >
+                    {t('filters.clearFilter')}
+                  </button>
+                )}
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Year range filter */}
         <div className="bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-1.5">
