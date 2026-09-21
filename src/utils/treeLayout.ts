@@ -249,16 +249,16 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
   });
   const styles = [...byStyle.keys()];
 
-  // --- style tree: primary parent = the earliest documented ancestor, the rest are grafts
+  // --- style tree: a style's limb grows from the FIRST parent STYLE_TREE_EDGES
+  // lists for it; any later parent is a graft. Edge order is the declaration,
+  // so a style whose main line is the younger of its ancestors (Contemporary
+  // Blues out of Chicago, not Texas) can say so.
   const parentOf = new Map<string, string>();
   const grafts: Array<[string, string]> = [];
-  const era = (s: string) => STYLE_ERA_YEAR[s] ?? YEAR_MIN;
   STYLE_TREE_EDGES.forEach(([p, c]) => {
     if (!byStyle.has(p) || !byStyle.has(c)) return;
-    const current = parentOf.get(c);
-    if (!current) parentOf.set(c, p);
-    else if (era(p) < era(current)) { grafts.push([current, c]); parentOf.set(c, p); }
-    else grafts.push([p, c]);
+    if (parentOf.has(c)) grafts.push([p, c]);
+    else parentOf.set(c, p);
   });
 
   const children = new Map<string, string[]>();
@@ -270,6 +270,7 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
   const rootStyles = styles.filter((s) => !parentOf.has(s)).sort((a, b) => orderIdx(a) - orderIdx(b));
 
   // --- effective fork year: a style never forks below its parent
+  const era = (s: string) => STYLE_ERA_YEAR[s] ?? YEAR_MIN;
   const effEra = new Map<string, number>();
   const walk = (style: string, floor: number, seen: Set<string>) => {
     if (seen.has(style)) return;
