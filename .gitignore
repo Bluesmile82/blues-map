@@ -34,3 +34,6 @@ data/favourites.json
 
 *storybook.log
 storybook-static
+
+# Wikidata QID lookup cache (enrich-influences-wikidata.js)
+.wikidata-qids.json

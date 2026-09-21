@@ -733,7 +733,7 @@
       "blind-lemon-jefferson",
       "lowell-fulson"
     ],
-    "source": "https://en.wikipedia.org/wiki/J._T._Smith_(musician)",
+    "source": "https://en.wikipedia.org/wiki/Alger_%22Texas%22_Alexander",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
   },
@@ -2123,7 +2123,7 @@
     ],
     "incomplete": false,
     "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Lucille_Bogan",
+    "source": "https://en.wikipedia.org/wiki/Bessie_Smith",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
   },
@@ -3461,7 +3461,7 @@
     ],
     "incomplete": false,
     "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Blind_Blake",
+    "source": "https://en.wikipedia.org/wiki/Blind_John_Davis",
     "secondaryInstruments": [
       "Vocals"
     ],
@@ -4705,7 +4705,7 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Bobby_Rush_(musician)",
+    "source": "https://en.wikipedia.org/wiki/Boyd_Gilmore",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
   },
@@ -5634,7 +5634,7 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Guitar_Slim",
+    "source": "https://en.wikipedia.org/wiki/Carolina_Slim",
     "secondaryInstruments": [
       "Vocals"
     ],
@@ -5969,7 +5969,9 @@
     ],
     "description": "Charley Patton is considered the 'Father of the Delta Blues'. His bold, percussive guitar style, showmanship, and raw vocal power established the foundations of the Delta blues tradition that all subsequent players built upon.",
     "activeFrom": "1911",
-    "influences": [],
+    "influences": [
+      "henry-sloan"
+    ],
     "influencedBy": [
       "son-house",
       "skip-james",
@@ -9072,7 +9074,7 @@
       "rick-estrin",
       "willie-nix"
     ],
-    "source": "https://en.wikipedia.org/wiki/Eddie_Taylor_Jr.",
+    "source": "https://en.wikipedia.org/wiki/Eddie_Taylor",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
   },
@@ -10055,7 +10057,8 @@
     "influences": [
       "professor-longhair",
       "smiley-lewis",
-      "cecil-gant"
+      "cecil-gant",
+      "amos-milburn"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -11988,7 +11991,7 @@
     "playedWith": [
       "stevie-ray-vaughan"
     ],
-    "source": "https://en.wikipedia.org/wiki/Guitar_Slim",
+    "source": "https://en.wikipedia.org/wiki/Guitar_Slim_Jr.",
     "secondaryInstruments": [
       "Vocals"
     ],
@@ -12206,7 +12209,7 @@
       "ray-charles",
       "lowell-fulson"
     ],
-    "source": "https://en.wikipedia.org/wiki/Alan_Wilson_(musician)",
+    "source": "https://en.wikipedia.org/wiki/Harmonica_Slim",
     "secondaryInstruments": [
       "Vocals"
     ],
@@ -13664,7 +13667,7 @@
     ],
     "incomplete": false,
     "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Larry_Davis_(blues_musician)",
+    "source": "https://en.wikipedia.org/wiki/James_%22Thunderbird%22_Davis",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
   },
@@ -18314,7 +18317,7 @@
       "henry-townsend",
       "willie-dixon"
     ],
-    "source": "https://en.wikipedia.org/wiki/Willie_%22Big_Eyes%22_Smith",
+    "source": null,
     "secondaryInstruments": [
       "Piano",
       "Harmonica",
@@ -20533,7 +20536,7 @@
     ],
     "incomplete": false,
     "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Sonny_Landreth",
+    "source": "https://en.wikipedia.org/wiki/Little_Sonny_Jones",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
   },
@@ -21437,7 +21440,7 @@
       "tommy-tucker",
       "sugar-blue"
     ],
-    "source": "https://en.wikipedia.org/wiki/Tab_Benoit",
+    "source": "https://en.wikipedia.org/wiki/Louisiana_Red",
     "secondaryInstruments": [
       "Harmonica",
       "Vocals"
@@ -22922,7 +22925,7 @@
     ],
     "incomplete": false,
     "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Robert_Johnson",
+    "source": "https://en.wikipedia.org/wiki/Mary_Johnson_(singer)",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
   },
@@ -27768,7 +27771,10 @@
     "description": "The Rolling Stones are an English rock band formed in London in 1962, rooted in Chicago blues covers. Their 2016 blues album Blue & Lonesome won a Grammy Award.",
     "activeFrom": "1962",
     "influences": [
-      "barbara-lynn"
+      "barbara-lynn",
+      "elmore-james",
+      "muddy-waters",
+      "robert-johnson"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -32412,7 +32418,7 @@
     "playedWith": [
       "robert-ealey"
     ],
-    "source": "https://en.wikipedia.org/wiki/Alan_Wilson_(musician)",
+    "source": "https://en.wikipedia.org/wiki/U.P._Wilson",
     "secondaryInstruments": [
       "Vocals"
     ],
@@ -34548,7 +34554,12 @@
       "bessie-smith",
       "otis-redding",
       "roy-hawkins",
-      "big-maybelle"
+      "big-maybelle",
+      "nat-king-cole",
+      "ella-fitzgerald",
+      "billie-holiday",
+      "nina-simone",
+      "sister-rosetta-tharpe"
     ],
     "influencedBy": [
       "clarence-carter",
@@ -44324,7 +44335,8 @@
     "description": "Bobby Parker was a Louisiana-born, Washington D.C.-based blues guitarist and singer best known for his 1961 single 'Watch Your Step,' whose driving guitar riff -- inspired by Dizzy Gillespie's 'Manteca' and Ray Charles' 'What'd I Say' -- was later echoed in The Beatles' 'I Feel Fine' and Led Zeppelin's 'Moby Dick.' A journeyman guitarist who toured behind Bo Diddley, Sam Cooke, and other R&B stars through the 1950s, his fierce, horn-inflected style made him a touchstone for British blues-rock guitarists including Eric Clapton, John Mayall, and Robin Trower.",
     "activeFrom": "1956",
     "influences": [
-      "ray-charles"
+      "ray-charles",
+      "t-bone-walker"
     ],
     "influencedBy": [
       "eric-clapton",
