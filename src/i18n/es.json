@@ -26,7 +26,8 @@
     "lightDarkMode": "Modo claro/oscuro",
     "card": "Tarjeta",
     "playlist": "Playlist",
-    "playlistWizard": "Asistente de playlist"
+    "playlistWizard": "Asistente de playlist",
+    "tree": "Árbol"
   },
   "card": {
     "flipToMap": "Clic para ver lugares",
@@ -373,5 +374,9 @@
     "edit": "Editar",
     "editActive": "Editar esta playlist en el asistente",
     "editingActive": "Editando la playlist activa"
+  },
+  "tree": {
+    "fit": "Árbol completo",
+    "influenced": "influidos"
   }
 }
