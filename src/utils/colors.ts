@@ -25,6 +25,7 @@ export const CANONICAL_STYLES = [
   'Jazz',
   'British Blues',
   'Blues Rock',
+  'Modern Blues',
   'Gospel',
 ] as const;
 
@@ -76,6 +77,7 @@ export const STYLE_COLORS: Record<string, RGB> = {
   'Jazz': [26, 188, 156],
   'British Blues': [90, 130, 200],
   'Blues Rock': [211, 47, 47],
+  'Modern Blues': [0, 150, 160],
   'Gospel': [231, 76, 60],
 };
 

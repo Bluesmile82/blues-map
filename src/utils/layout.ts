@@ -44,7 +44,7 @@ export const STYLE_ORDER = [
   'Soul Blues',
   'Detroit Blues',
   'British Blues',
-  'Blues Rock',
+  'Modern Blues',
 ];
 
 // Primary instrument ordering (roughly by prevalence/era in blues)
@@ -90,6 +90,7 @@ export const STYLE_ABBREVIATIONS: Record<string, string> = {
   'Jazz': 'JAZZ',
   'British Blues': 'BRITISH',
   'Blues Rock': 'BLUES ROCK',
+  'Modern Blues': 'MODERN',
   'Gospel': 'GOSPEL',
 };
 
@@ -655,6 +656,7 @@ export const STYLE_ERA_YEAR: Readonly<Record<string, number>> = {
   'Soul Blues': 1955,
   'British Blues': 1960,
   'Blues Rock': 1965,
+  'Modern Blues': 1970,
 };
 
 // Historical blues style evolution tree: [parent, child]
@@ -685,6 +687,8 @@ export const STYLE_TREE_EDGES: ReadonlyArray<[string, string]> = [
   ['Chicago Blues', 'British Blues'],
   ['Chicago Blues', 'Blues Rock'],
   ['British Blues', 'Blues Rock'],
+  ['Chicago Blues', 'Modern Blues'],
+  ['Texas Blues', 'Modern Blues'],
   ['Jump Blues', 'Rythm and Blues'],
   ['Jump Blues', 'West Coast Blues'],
   ['Rythm and Blues', 'Soul Blues'],
