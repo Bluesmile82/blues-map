@@ -40,3 +40,6 @@ storybook-static
 
 # Wikipedia article text cache (mine-influences-from-wikipedia.js)
 .wikipedia-extracts.json
+
+# Claude influence answers cache (classify-influences-claude.js)
+.claude-influences.json

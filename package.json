@@ -22,6 +22,7 @@
     "enrich:influences:text": "node mine-influences-from-descriptions.js",
     "enrich:influences:dbpedia": "node enrich-influences-dbpedia.js",
     "enrich:influences:wiki": "node mine-influences-from-wikipedia.js",
+    "enrich:influences:llm": "node classify-influences-claude.js",
     "db:import": "node db-import.js",
     "db:export": "node db-export.js",
     "db:push": "node db-import.js && node db-export.js",

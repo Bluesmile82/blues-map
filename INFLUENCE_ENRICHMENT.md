@@ -184,20 +184,79 @@ whose subject is neither the article's subject nor the named musician. The
 chronology guard catches the worst of them. If that is too loose for a given
 pass, read `--dry-run --verbose` output before applying.
 
+## Claude reading the same articles
+
+```bash
+node classify-influences-claude.js --sample-prompt     # see what gets sent, no key needed
+ANTHROPIC_API_KEY=sk-ant-... node classify-influences-claude.js --dry-run
+ANTHROPIC_API_KEY=sk-ant-... node classify-influences-claude.js
+```
+
+Cue matching keeps getting one thing wrong that no pattern can fix: deciding
+*whose* sentence it is. "Eddie's mother was a self-taught pianist in the style
+of Professor Longhair" and "Alan Lomax learned from Muddy Waters that Johnson
+had performed" both parse perfectly and mean something other than what the
+matcher concludes. Reading fixes that, so this pass hands the passages to
+Claude and asks for structured edges.
+
+It reuses the article cache from the Wikipedia pass, so it downloads nothing.
+
+### What gets sent
+
+Not whole articles — only sentences that name another musician on the map with
+an influence word in them or next to them, plus their neighbours for context.
+**421 musicians qualify, averaging 812 characters each**, which is roughly
+200k input tokens for the whole run: under a dollar at Sonnet rates, less with
+`--model claude-haiku-4-5-20251001`. Answers are cached per musician in
+`.claude-influences.json` (gitignored), so an interrupted run resumes free.
+
+The prompt names the musicians actually present in the passages with their
+ids, tells Claude to use only what the passages state rather than its own
+knowledge of blues history, to skip third parties and hedges, and to return
+`[]` when unsure.
+
+### Nothing it returns is trusted on its own
+
+Every proposed edge has to survive four checks, and the run's own test data
+exercised all of them:
+
+| Check | Catches |
+|---|---|
+| both ids on the map | `bob-dylan → alan-wilson` — not a musician this map carries |
+| the quote is really in the passages | an invented sentence about Skip James that reads plausibly and is not in the article |
+| one end is the article's subject | an edge between two other people mentioned in passing |
+| chronology | an influencer whose career starts 10+ years later |
+
+Rejections are written to `influence-candidates-claude.md` with the reason and
+the quote, because some of them are real. The chronology check is the blunt
+one: it rejects *"Al Wilson taught Son House how to play Son House"*, which is
+true — Wilson taught House his own pre-war repertoire before House's comeback
+— but reads as a 38-year inversion. A young musician teaching an elder their
+own back catalogue is rare enough to be worth a human look rather than an
+automatic pass.
+
+### Running it
+
+It needs `ANTHROPIC_API_KEY` in the environment; `--sample-prompt` works
+without one and prints exactly what would be sent. Start with `--limit 20
+--dry-run` and read the edges before letting it write.
+
 ## Other sources, ranked
 
 1. **Wikidata P737** — done, see above. Free, structured, low yield.
 2. **The descriptions already in `musicians.json`** — done. 39 edges
    auto-filed, ~540 mentions left in `influence-candidates.md` for a reader.
 3. **The full Wikipedia articles** — done, see above, and the best yield of
-   any source: 144 edges.
-4. **DBpedia** — tried, and it is a dead end for this dataset. See below.
-5. **MusicBrainz** — probed and rejected *for influence*: Muddy Waters' artist
+   any automated source: 144 edges.
+4. **Claude reading those same articles** — the script is written and checked;
+   it needs an API key to run. Aimed at the errors cue matching cannot avoid.
+5. **DBpedia** — tried, and it is a dead end for this dataset. See below.
+6. **MusicBrainz** — probed and rejected *for influence*: Muddy Waters' artist
    relationships are band membership, parents, supporting musicians and
    tributes; Howlin' Wolf has exactly one `teacher` link; Robert Johnson has
    none. It is, however, the best source going for **`playedWith`**, which is
    the thinnest of the three relation fields.
-6. **AllMusic** — by far the best curated "Influenced By" / "Followers" lists
+7. **AllMusic** — by far the best curated "Influenced By" / "Followers" lists
    for blues, but there's no API and scraping is against their terms. Use it
    by hand for the trunk-tier musicians, where the edges shape the tree most.
 
