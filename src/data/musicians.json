@@ -51155,11 +51155,11 @@
     "name": "Hattie Hart",
     "image": "",
     "image_source": null,
-    "birthDate": "",
-    "birthPlace": "",
+    "birthDate": "1900",
+    "birthPlace": "Memphis, Tennessee",
     "birthCoords": [
-      0,
-      0
+      -90.049,
+      35.1495
     ],
     "deathDate": null,
     "deathPlace": null,
@@ -51193,7 +51193,7 @@
     "activeFrom": "1928",
     "influences": [],
     "influencedBy": [],
-    "incomplete": true,
+    "incomplete": false,
     "playedWith": [
       "memphis-jug-band",
       "will-shade"
