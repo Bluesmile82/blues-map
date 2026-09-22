@@ -27,7 +27,9 @@ export interface Musician {
   albums: Album[];
   description: string;
   activeFrom: string;
+  /** Musicians this one influenced. */
   influences: string[];
+  /** Musicians who influenced this one. */
   influencedBy: string[];
   playedWith: string[];
   secondaryStyles?: string[];

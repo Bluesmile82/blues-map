@@ -1,28 +1,29 @@
 # Influence enrichment
 
-How to add `influences` links to `src/data/musicians.json` without hand-editing
+How to add influence links to `src/data/musicians.json` without hand-editing
 them one at a time, and what to expect from each source.
 
 ## The fields, and which way they point
 
-Two fields hold the influence graph, and **their names are the opposite of
-what they hold**. This is the single thing to get right before touching them.
+| Field | Holds |
+|---|---|
+| `influencedBy` | the musicians who influenced **this** one (ancestors) |
+| `influences` | the musicians **this one** influenced (descendants) |
 
-| Field | Actually holds | Evidence |
-|---|---|---|
-| `influences` | the musicians who influenced **this** one (ancestors) | of the edges where both years are known, 663 point back in time vs 155 forward |
-| `influencedBy` | the musicians **this one** influenced (descendants) | 458 point forward vs 191 back — e.g. Albert King's `influencedBy` is Stevie Ray Vaughan |
+They used to hold the opposite of what they say — `influences` carried
+ancestors — and every view compensated by labelling it "Influenced by". The
+contents were swapped so the names are now literal; if you are reading an old
+branch or a database row written before that, expect the reverse.
 
-`influences` is the authoritative one. The card view reads it for "Influenced
-by" and derives "Influenced" by scanning every other musician's `influences`
-for the current id — it never reads `influencedBy` at all
-([CardView.tsx](src/components/CardView.tsx)). The tree view unions both when
-scoring, so an edge recorded in either field still draws.
+**Write a new edge into the influenced musician's `influencedBy`.** Either end
+may record an edge and the views read both, so a mirrored entry in the other
+musician's `influences` counts as already present and is not duplicated.
 
-**So: write every new edge into the influenced musician's `influences`.** One
-field, one direction. Don't add to `influencedBy`; 489 of its entries are
-already mirrors of an `influences` edge, and growing it further just spreads
-the same graph across two places.
+One caveat for the Supabase round trip: `db-import.js` and `db-export.js` map
+these to `relationship_type` values `influences` / `influenced_by`, so rows
+written to the database before the swap carry the old meaning. Run
+`npm run db:import` once to push the corrected direction before exporting
+from the database again.
 
 ## Wikidata (P737)
 
@@ -41,7 +42,7 @@ What it does:
 3. Asks Wikidata for [P737 "influenced by"](https://www.wikidata.org/wiki/Property:P737)
    in both directions, in batches of 200 QIDs.
 4. Keeps a pair only when **both** ends are musicians on the map, then appends
-   the influencer to the influenced musician's `influences`.
+   the influencer to the influenced musician's `influencedBy`.
 
 ### What it yielded (September 2026)
 
@@ -74,18 +75,16 @@ another. That check caught a real bug on the first run: **Mary Johnson**'s
 source was `/wiki/Robert_Johnson`, so the Rolling Stones' debt to Robert
 Johnson was being written against a 1920s St. Louis singer.
 
-Nine such wrong URLs were fixed (Bessie Smith pointed at Lucille Bogan, Blind
-John Davis at Blind Blake, Boyd Gilmore at Bobby Rush, and so on). Four
-collisions remain and are expected:
+Thirteen such wrong URLs were fixed (Bessie Smith pointed at Lucille Bogan,
+Blind John Davis at Blind Blake, Boyd Gilmore at Bobby Rush, Eddie Taylor at
+his son, and so on). The other collisions it surfaced are all now resolved
+too: twelve entries sourced to `List_of_blues_musicians` were pointed at their
+own articles (eleven had one; Chris Beard is at `Chris_Beard_(singer)`), and
+the two duplicate entries — Arthur Crudup and Z.Z. Hill, each present twice
+under different spellings — were merged.
 
-- `Q832500` — twelve entries whose source is `List_of_blues_musicians`. They
-  have no article of their own, so they can't be enriched this way.
-- `Q2328240` — John Cephas and Phil Wiggins genuinely share the Cephas &
-  Wiggins article.
-- `Q709044` and `Q135815` — **duplicate entries**: Arthur Crudup appears twice
-  (as `Arthur Crudup` and `Arthur "Big Boy" Crudup`) and so does Z.Z. Hill
-  (`Z. Z. Hill` / `Z.Z. Hill`). These want merging, which is a data decision,
-  not a script's.
+820 of 844 musicians now resolve, and **one** collision remains, correctly:
+John Cephas and Phil Wiggins genuinely share the Cephas & Wiggins article.
 
 ## The descriptions already in the file
 
@@ -133,10 +132,33 @@ reader to say which way they point.
 2. **The descriptions already in `musicians.json`** — done, see above. 39
    edges auto-filed, 541 mentions left in `influence-candidates.md` for a
    reader.
-3. **DBpedia `dbo:influencedBy`** — extracted from the Influences field that
-   Wikipedia's musician infobox used to carry and has since dropped. Older
-   dumps still hold it for pre-war artists whose current articles don't. Same
-   shape of job as the Wikidata pass.
+3. **DBpedia** — tried, and it is a dead end for this dataset. See below.
 4. **AllMusic** — by far the best curated "Influenced By" / "Followers" lists
    for blues, but there's no API and scraping is against their terms. Use it
    by hand for the trunk-tier musicians, where the edges shape the tree most.
+
+## DBpedia — tried, and empty
+
+```bash
+node enrich-influences-dbpedia.js --dry-run
+```
+
+The idea was sound: DBpedia extracts influence triples from the Influences /
+Influenced fields that Wikipedia's musician infobox used to carry and has
+since dropped, so it might hold edges no longer stated anywhere else. It
+doesn't, at least not for blues.
+
+Querying `dbo:influencedBy`, `dbo:influenced`, `dbp:influencedBy` and
+`dbp:influences` in both directions over all 825 resolvable resources returned
+**3 pairs, none with both ends on the map**, and the few it did return are
+junk extractions — a Colombian novelist cited as an influence on a blues
+musician.
+
+The properties themselves are still populated (5,732 `dbo:influencedBy` and
+9,798 `dbp:influences` triples exist), but `dbr:Muddy_Waters` and
+`dbr:Eric_Clapton` have none: what survives in the current snapshot is mostly
+writers and philosophers, whose infoboxes kept the field. DBpedia regenerates
+from current dumps, so the old musician values are simply gone.
+
+The script is kept because it costs one run to check, and a future snapshot or
+a historical dump could change the answer. Don't expect it to.

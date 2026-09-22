@@ -20,8 +20,6 @@ edge was written. Read and file by hand.
   > A cousin of Lightnin' Hopkins, the two recorded together in the late 1940s.
 - **Arthur "Big Boy" Crudup** ~ Elvis Presley
   > He is best known, outside blues circles, for his songs "That's All Right" (1946), "My Baby Left Me" and "So Glad You're Mine", later recorded by Elvis Presley and other artists.
-- **Arthur Crudup** ~ Elvis Presley
-  > Arthur 'Big Boy' Crudup was a Delta blues singer and songwriter who wrote three of Elvis Presley's early hits: 'That's All Right', 'My Baby Left Me', and 'So Glad You're Mine'.
 - **Artur Menezes** ~ Albert King
   > Artur Menezes is a Brazilian blues guitarist who won the Gibson/Albert King Award for Best Guitarist in 2018.
 - **Artur Menezes** ~ Eric Clapton

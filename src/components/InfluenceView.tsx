@@ -905,7 +905,7 @@ export default function InfluenceView({
 
   const edges = useMemo(() => {
     return displayMusicians.flatMap((m) =>
-      m.influences
+      (m.influencedBy ?? [])
         .map((srcId) => {
           const from = interpolatedPositions[srcId] ?? positions[srcId];
           const to = interpolatedPositions[m.id] ?? positions[m.id];

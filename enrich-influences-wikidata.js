@@ -1,5 +1,5 @@
 /**
- * Fill in `influences` from Wikidata's P737 ("influenced by").
+ * Fill in `influencedBy` from Wikidata's P737 ("influenced by").
  *
  *   node enrich-influences-wikidata.js [--dry-run] [--verbose]
  *
@@ -7,11 +7,10 @@
  * Wikidata QID, then one SPARQL query per batch asks for P737 in both
  * directions. A pair counts only when BOTH ends are on the map.
  *
- * Direction matters: in musicians.json `influences` holds the people who
- * influenced THIS musician (the ancestors), which is the same direction as
- * P737. `influencedBy`, despite the name, holds descendants; it is a
- * redundant reverse index that the card view ignores, so nothing is written
- * to it here — an edge already recorded there is simply not added twice.
+ * Direction matters: `influencedBy` holds the people who influenced THIS
+ * musician, the same direction as P737, so that is where a new edge goes.
+ * `influences` holds the reverse — the people this musician influenced — and
+ * an edge already recorded there is not added twice.
  */
 import fs from 'fs';
 
@@ -187,10 +186,10 @@ async function main() {
     }
     if (influencerId === influencedId) return;
     const target = byId.get(influencedId);
-    target.influences ??= [];
-    const mirrored = (byId.get(influencerId).influencedBy ?? []).includes(influencedId);
-    if (target.influences.includes(influencerId) || mirrored) { already++; return; }
-    target.influences.push(influencerId);
+    target.influencedBy ??= [];
+    const mirrored = (byId.get(influencerId).influences ?? []).includes(influencedId);
+    if (target.influencedBy.includes(influencerId) || mirrored) { already++; return; }
+    target.influencedBy.push(influencerId);
     added++;
     log.push(`  + ${byId.get(influencerId).name} → ${target.name}`);
   });

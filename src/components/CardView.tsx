@@ -307,13 +307,18 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
 
   // Resolve relationships
   const influencers = useMemo(
-    () => (current?.influences ?? []).map(id => musicianMap[id]).filter(Boolean) as Musician[],
+    () => (current?.influencedBy ?? []).map(id => musicianMap[id]).filter(Boolean) as Musician[],
     [current, musicianMap],
   );
-  const influenced = useMemo(
-    () => completeMusicians.filter(m => m.influences.includes(current?.id ?? '')),
-    [current, completeMusicians],
-  );
+  // Either end of an edge may record it, so read this musician's own list and
+  // everyone who names them as an influence.
+  const influenced = useMemo(() => {
+    const ids = new Set(current?.influences ?? []);
+    completeMusicians.forEach((m) => {
+      if ((m.influencedBy ?? []).includes(current?.id ?? '')) ids.add(m.id);
+    });
+    return [...ids].map((id) => musicianMap[id]).filter(Boolean) as Musician[];
+  }, [current, completeMusicians, musicianMap]);
   const playedWith = useMemo(
     () => ((current?.playedWith ?? []).map(id => musicianMap[id]).filter(Boolean)) as Musician[],
     [current, musicianMap],

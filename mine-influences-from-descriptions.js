@@ -1,5 +1,5 @@
 /**
- * Mine `influences` out of the descriptions already in musicians.json.
+ * Mine `influencedBy` out of the descriptions already in musicians.json.
  *
  *   node mine-influences-from-descriptions.js [--dry-run] [--verbose]
  *
@@ -9,7 +9,7 @@
  * edge when a cue phrase in the same sentence says which way it runs, and
  * everything else is written to influence-candidates.md for a human to read.
  *
- * Direction follows the file's own convention: `influences` holds the people
+ * Direction follows the file's own convention: `influencedBy` holds the people
  * who influenced that musician. See INFLUENCE_ENRICHMENT.md.
  */
 import fs from 'fs';
@@ -135,10 +135,10 @@ musicians.forEach((subject) => {
         review.push(`- **${subject.name}** ~ ${name}\n  > ${sentence.trim()}`);
         return;
       }
-      target.influences ??= [];
-      const mirrored = (byId.get(source).influencedBy ?? []).includes(target.id);
-      if (target.influences.includes(source) || mirrored) { already++; return; }
-      target.influences.push(source);
+      target.influencedBy ??= [];
+      const mirrored = (byId.get(source).influences ?? []).includes(target.id);
+      if (target.influencedBy.includes(source) || mirrored) { already++; return; }
+      target.influencedBy.push(source);
       added++;
       applied.push(`  + ${byId.get(source).name} → ${target.name}   [${cue}]`);
     });

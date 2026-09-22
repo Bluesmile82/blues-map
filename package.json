@@ -20,6 +20,7 @@
     "enrich": "node enrich-musicians-v3.js",
     "enrich:influences": "node enrich-influences-wikidata.js",
     "enrich:influences:text": "node mine-influences-from-descriptions.js",
+    "enrich:influences:dbpedia": "node enrich-influences-dbpedia.js",
     "db:import": "node db-import.js",
     "db:export": "node db-export.js",
     "db:push": "node db-import.js && node db-export.js",
