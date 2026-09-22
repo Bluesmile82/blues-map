@@ -13,91 +13,14 @@
  * who influenced that musician. See INFLUENCE_ENRICHMENT.md.
  */
 import fs from 'fs';
+import { classify } from './influence-cues.js';
 
 const DATA = './src/data/musicians.json';
 const REVIEW = './influence-candidates.md';
 const MIN_NAME = 9;      // shorter names ("Bo Carter") collide with ordinary prose
-const WINDOW = 60;       // how far before a name a cue may sit and still bind to it
 
 const dryRun = process.argv.includes('--dry-run');
 const verbose = process.argv.includes('--verbose');
-
-// The mentioned musician influenced the subject.
-const ANCESTOR = [
-  'influenced by', 'inspired by', 'influence of', 'in the tradition of',
-  'protégé of', 'protege of', 'disciple of', 'student of', 'apprenticed to',
-  'learned from', 'learned guitar from', 'learned to play from', 'learned his',
-  'lessons from', 'took lessons from',
-  'taught by', 'mentored by', 'studied with', 'studied under', 'tutored by',
-  'in the style of', 'modeled on', 'modelled on', 'modeled after', 'patterned after',
-  'idolized', 'idolised', 'drew on', 'drew heavily from', 'drawing on',
-  'following in the footsteps of', 'echoing', 'covering', 'after hearing',
-];
-// The subject influenced the mentioned musician.
-const DESCENDANT = [
-  'influenced', 'an influence on', 'influence on', 'inspired', 'mentored',
-  'taught', 'mentor to', 'championed', 'echoed in the work of', 'echoed in',
-  'paved the way for', 'passed his', 'handed down to',
-];
-// Not an influence at all — recognised so it is not mistaken for one.
-const COLLABORATION = [
-  'recorded with', 'played with', 'performed with', 'toured with', 'worked with',
-  'accompanied by', 'accompanied', 'backed by', 'backed', 'sideman', 'sideman for',
-  'member of', 'joined', 'formed', 'duo with', 'partnership with', 'sat in with',
-  'collaborated with', 'collaborations with', 'appeared with', 'billed with',
-  'married to', 'brother of', 'sister of', 'son of', 'daughter of', 'father of',
-];
-
-const norm = (s) => s.toLowerCase().replace(/[’']/g, "'");
-
-/**
- * The cue that binds to a name at `at`, or null: nearest cue ending before it.
- * A cue has to stand as its own word — without this, "self-taught musician"
- * reads as "taught" and files the lesson in the wrong direction.
- */
-const isLetter = (ch) => !!ch && /\p{L}/u.test(ch);
-function cueBefore(sentence, at, cues) {
-  const hay = norm(sentence);
-  let best = null;
-  for (const cue of cues) {
-    let from = 0;
-    for (;;) {
-      const i = hay.indexOf(norm(cue), from);
-      if (i === -1 || i >= at) break;
-      from = i + 1;
-      const before = hay[i - 1];
-      if (isLetter(before) || before === '-') continue;
-      if (isLetter(hay[i + cue.length])) continue;
-      const gap = at - (i + cue.length);
-      if (gap >= 0 && gap <= WINDOW && (!best || gap < best.gap)) best = { cue, gap };
-    }
-  }
-  return best;
-}
-
-function classify(sentence, at) {
-  // "influenced by" must win over "influenced", so ancestors are tested first
-  // and a collaboration cue closer to the name beats a distant influence one.
-  const a = cueBefore(sentence, at, ANCESTOR);
-  const d = cueBefore(sentence, at, DESCENDANT);
-  const c = cueBefore(sentence, at, COLLABORATION);
-  const best = [
-    a && { kind: 'ancestor', ...a },
-    d && { kind: 'descendant', ...d },
-    c && { kind: 'collaboration', ...c },
-  ].filter(Boolean).sort((x, y) => x.gap - y.gap)[0];
-  if (!best) return { kind: 'unclear', cue: null };
-
-  // The passive puts its object between the verb and the name: "taught guitar
-  // BY Robert Johnson" and "mentored in slide FROM Blind Willie Johnson" run
-  // the opposite way to "taught Robert Johnson", and a bare verb cue cannot
-  // tell them apart. A standalone by/from in the gap settles it.
-  const gapText = sentence.slice(at - best.gap, at);
-  if (best.kind === 'descendant' && /\b(by|from)\b/i.test(gapText)) {
-    return { kind: 'ancestor', cue: `${best.cue} … ${/\bby\b/i.test(gapText) ? 'by' : 'from'}` };
-  }
-  return best;
-}
 
 const musicians = JSON.parse(fs.readFileSync(DATA, 'utf-8'));
 const byId = new Map(musicians.map((m) => [m.id, m]));

@@ -119,21 +119,85 @@ mind if you add cues:
 - **The passive with its object in the middle.** "taught guitar **by** Robert
   Johnson" and "mentored in bottleneck slide **by** Blind Willie Johnson" run
   the opposite way to "taught Robert Johnson", and a bare verb cue cannot tell
-  them apart. A standalone `by` or `from` between the cue and the name flips
-  the direction.
+  them apart. A standalone `by` between the cue and the name flips it.
+  `from` does **not** — "influenced players **from** Otis Rush **to** Eric
+  Clapton" is a range, and reading it as a passive reverses five true edges.
+- **A copula between the cue and the name.** "a significant early influence on
+  Toussaint **was** the piano style of Professor Longhair" puts the influencer
+  in the predicate, so the name after the cue is not the cue's object. Those
+  go to a reader rather than being guessed at.
 
 `influence-candidates.md` is regenerated on every run and is the natural place
 to work from by hand — the relationships in it are real, they just need a
 reader to say which way they point.
 
+## The full Wikipedia article
+
+```bash
+node mine-influences-from-wikipedia.js --dry-run          # report only
+node mine-influences-from-wikipedia.js --limit 40         # try it on a few first
+node mine-influences-from-wikipedia.js                    # apply + write the review list
+```
+
+The `description` field averages ~350 characters; the article behind it
+averages ~6,700, and most of what Wikipedia says about who taught whom lives
+in that difference. Same cue matching as the descriptions pass — both import
+`influence-cues.js` — plus guards, because a full article talks about people
+other than its subject.
+
+**The last run: 144 new edges**, 138 already recorded, 910 read as
+collaboration, 39 held back by a guard, 5,799 mentions with no cue at all.
+That is nearly four times what the descriptions gave.
+
+### One request per article
+
+Whole-article extracts cannot be batched: ask for twenty and the API answers
+*"exlimit was too large for a whole article extracts request, lowered to 1"*
+and returns one. So it is 787 requests, about 40 minutes with the throttling,
+cached in `.wikipedia-extracts.json` (gitignored, ~5 MB) so later runs are
+instant.
+
+### The guards, and why each one exists
+
+Every one of these was added after watching it produce a wrong edge in a dry
+run:
+
+| Guard | The sentence that earned it |
+|---|---|
+| third party | "**Eddie's mother** was a self-taught pianist in the style of Professor Longhair" — about his mother |
+| hedge | "Elvis Presley **may well have** seen Harris perform" |
+| reported speech | "Alan Lomax **learned from** Muddy Waters **that** Johnson had performed…" — being told, not taught |
+| both directions at once | "Watson discussed his **influences** and those he had **influenced**, referencing Guitar Slim" |
+| chronology | an influencer whose career starts 10+ years *after* the person they supposedly influenced — caught Saffire "influencing" Big Mama Thornton, and Ike Turner "influencing" Pinetop Perkins |
+
+The first four send the sentence to `influence-candidates-wikipedia.md` with
+the reason attached. The chronology one is worth keeping even when it fires on
+a true edge, because the other explanation is a wrong `activeFrom` — it found
+both Sonny Boy Williamson II (listed 1959, recorded from 1941) and Black Ace
+(listed 1960, recorded 1937) that way.
+
+### Expected error rate
+
+Spot-checking two samples of the applied edges by reading the source sentence,
+roughly **one in twenty-five still points the wrong way** — usually a sentence
+whose subject is neither the article's subject nor the named musician. The
+chronology guard catches the worst of them. If that is too loose for a given
+pass, read `--dry-run --verbose` output before applying.
+
 ## Other sources, ranked
 
 1. **Wikidata P737** — done, see above. Free, structured, low yield.
-2. **The descriptions already in `musicians.json`** — done, see above. 39
-   edges auto-filed, 541 mentions left in `influence-candidates.md` for a
-   reader.
-3. **DBpedia** — tried, and it is a dead end for this dataset. See below.
-4. **AllMusic** — by far the best curated "Influenced By" / "Followers" lists
+2. **The descriptions already in `musicians.json`** — done. 39 edges
+   auto-filed, ~540 mentions left in `influence-candidates.md` for a reader.
+3. **The full Wikipedia articles** — done, see above, and the best yield of
+   any source: 144 edges.
+4. **DBpedia** — tried, and it is a dead end for this dataset. See below.
+5. **MusicBrainz** — probed and rejected *for influence*: Muddy Waters' artist
+   relationships are band membership, parents, supporting musicians and
+   tributes; Howlin' Wolf has exactly one `teacher` link; Robert Johnson has
+   none. It is, however, the best source going for **`playedWith`**, which is
+   the thinnest of the three relation fields.
+6. **AllMusic** — by far the best curated "Influenced By" / "Followers" lists
    for blues, but there's no API and scraping is against their terms. Use it
    by hand for the trunk-tier musicians, where the edges shape the tree most.
 

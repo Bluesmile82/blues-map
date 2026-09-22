@@ -37,3 +37,6 @@ storybook-static
 
 # Wikidata QID lookup cache (enrich-influences-wikidata.js)
 .wikidata-qids.json
+
+# Wikipedia article text cache (mine-influences-from-wikipedia.js)
+.wikipedia-extracts.json

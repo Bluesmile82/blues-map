@@ -144,7 +144,11 @@
     "description": "Alan Wilson (July 4, 1943 – September 3, 1970), known as 'The Blind Owl', was an American musician, best known as the co-founder, lead guitarist, and co-lead singer of the blues-rock band Canned Heat. His distinctive high voice and slide guitar playing were key elements of the band's sound.",
     "activeFrom": "1965",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "john-lee-hooker",
+      "little-walter",
+      "skip-james"
+    ],
     "incomplete": false,
     "playedWith": [
       "son-house",
@@ -286,7 +290,9 @@
     "influencedBy": [
       "lightnin-hopkins",
       "john-lee-hooker",
-      "t-bone-walker"
+      "t-bone-walker",
+      "albert-king",
+      "clarence-gatemouth-brown"
     ],
     "incomplete": false,
     "playedWith": [
@@ -1807,7 +1813,9 @@
     "influences": [
       "lucille-hegamin"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "jimmy-witherspoon"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Barkin'_Bill_Smith",
@@ -2414,7 +2422,9 @@
     "description": "Joseph L.  \"Big Joe\" Duskin (February 10, 1921 – May 6, 2007) was an American blues and boogie-woogie pianist.  He is best known for his debut album, Cincinnati Stomp (1978), and the tracks \"Well, Well Baby\" and \"I Met a Girl Named Martha\".",
     "activeFrom": "1941",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "pete-johnson"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Big_Joe_Duskin",
@@ -3181,7 +3191,8 @@
     "influences": [],
     "influencedBy": [
       "oscar-buddy-woods",
-      "smokey-hogg"
+      "smokey-hogg",
+      "ramblin-thomas"
     ],
     "incomplete": false,
     "playedWith": [
@@ -3355,7 +3366,8 @@
       "guitar-gabriel"
     ],
     "influencedBy": [
-      "charley-patton"
+      "charley-patton",
+      "reverend-gary-davis"
     ],
     "incomplete": false,
     "playedWith": [
@@ -3887,7 +3899,10 @@
     "influencedBy": [
       "big-walter-horton",
       "junior-wells",
-      "carey-bell"
+      "carey-bell",
+      "muddy-waters",
+      "lester-davenport",
+      "louis-myers"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -4139,7 +4154,8 @@
       "bb-king",
       "howlin-wolf",
       "roy-brown",
-      "johnny-ace"
+      "johnny-ace",
+      "nat-king-cole"
     ],
     "incomplete": false,
     "playedWith": [
@@ -4380,7 +4396,9 @@
     "description": "Bonnie Lynn Raitt (; born November 8, 1949) is an American singer-songwriter.  In 1971, Raitt released her self-titled debut album.  Following this, she released a series of critically acclaimed roots-influenced albums that incorporated elements of rock, blues, country, and folk.",
     "activeFrom": "1971",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "ma-rainey"
+    ],
     "incomplete": false,
     "playedWith": [
       "john-lee-hooker",
@@ -5181,7 +5199,9 @@
     "description": "Arley \"Buster\" Benton (July 19, 1932 – January 20, 1996) was an American blues guitarist and singer.  He played guitar in Willie Dixon's Blues All-Stars and is best known for his solo rendition of Dixon's song \"Spider in My Stew. \" Benton was tenacious, and despite the amputation of parts of both legs in the latter part of his lengthy career, he never stopped playing his own version of Chicago blues.",
     "activeFrom": "1958",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "sam-cooke"
+    ],
     "incomplete": false,
     "playedWith": [
       "willie-dixon"
@@ -5468,7 +5488,8 @@
       "billy-branch"
     ],
     "influencedBy": [
-      "roomful-of-blues"
+      "roomful-of-blues",
+      "little-walter"
     ],
     "incomplete": false,
     "playedWith": [
@@ -6085,7 +6106,13 @@
     "description": "Chico Banks (March 7, 1962 – December 3, 2008) was an American Chicago blues guitarist and singer.  He released one album, in 1997 on Evidence Music, produced by Larry Hoffman.  Banks was both a band leader and sideman, having played with Chicago's blues musicians from his late teens until his death at the age of 46.",
     "activeFrom": "1978",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "jimi-hendrix",
+      "albert-king",
+      "buddy-guy",
+      "magic-sam",
+      "otis-clay"
+    ],
     "incomplete": false,
     "playedWith": [
       "buddy-guy",
@@ -6132,7 +6159,10 @@
     "description": "Chris Beard (born February 18, 1973) is an American blues guitarist, singer and songwriter. The son of blues guitarist Joe Beard, Chris has continued the family tradition, releasing albums that blend traditional blues with contemporary elements.",
     "activeFrom": "1993",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "buddy-guy",
+      "luther-allison"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Chris_Beard_(singer)",
@@ -6239,7 +6269,9 @@
       "buddy-guy",
       "albert-king",
       "freddie-king",
-      "bb-king"
+      "bb-king",
+      "lightnin-hopkins",
+      "robert-johnson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -6669,7 +6701,10 @@
     "description": "Johnny Miller (December 27, 1927 – April 14, 2005), known as Cootie Stark, was an American Piedmont blues guitarist, singer, and songwriter.  His best remembered recordings were \"Metal Bottoms\" and \"Sandyland. \" Stark was known as the \"King of the Piedmont Blues.",
     "activeFrom": "1945",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "pink-anderson",
+      "peg-leg-sam"
+    ],
     "incomplete": false,
     "playedWith": [
       "pink-anderson",
@@ -7134,7 +7169,10 @@
     "influences": [
       "long-john-baldry"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "little-walter",
+      "muddy-waters"
+    ],
     "incomplete": false,
     "playedWith": [
       "alexis-korner",
@@ -7866,7 +7904,9 @@
     "description": "Elijah Douglas Quattlebaum  (January 22, 1929  – March 1, 1996), better known as  Doug Quattlebaum, was an American Piedmont blues guitarist, singer and songwriter.  He recorded one single for Gotham Records in 1953, but was offered another opportunity following his employment as an ice cream salesman.",
     "activeFrom": "1949",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "blind-boy-fuller"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Doug_Quattlebaum",
@@ -8695,7 +8735,10 @@
     "description": "Eddie \"Guitar\" Burns (February 8, 1928 – December 12, 2012) was an American Detroit blues guitarist, harmonica player, and singer and songwriter.  Among Detroit bluesmen, Burns was deemed to have been exceeded in stature by only John Lee Hooker.",
     "activeFrom": "1948",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "sonny-boy-williamson-i",
+      "big-bill-broonzy"
+    ],
     "incomplete": false,
     "playedWith": [
       "john-lee-hooker",
@@ -8742,7 +8785,10 @@
     "activeFrom": "1955",
     "influences": [],
     "influencedBy": [
-      "slim-harpo"
+      "slim-harpo",
+      "little-walter",
+      "howlin-wolf",
+      "muddy-waters"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -8927,7 +8973,8 @@
     "influences": [],
     "influencedBy": [
       "muddy-waters",
-      "howlin-wolf"
+      "howlin-wolf",
+      "hubert-sumlin"
     ],
     "incomplete": false,
     "playedWith": [
@@ -9320,7 +9367,10 @@
       "sonny-landreth",
       "ana-popovic"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "robert-johnson",
+      "kokomo-arnold"
+    ],
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson",
@@ -9438,7 +9488,10 @@
     ],
     "influencedBy": [
       "roy-brown",
-      "smiley-lewis"
+      "smiley-lewis",
+      "rufus-thomas",
+      "jimmy-reed",
+      "jimmy-liggins"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -9585,7 +9638,9 @@
       "bobby-parker",
       "wayne-bennett",
       "albert-king",
-      "buddy-guy"
+      "buddy-guy",
+      "freddie-king",
+      "lonnie-mack"
     ],
     "incomplete": false,
     "playedWith": [
@@ -9903,7 +9958,9 @@
       "skip-james",
       "elmore-james",
       "colin-james",
-      "big-maybelle"
+      "big-maybelle",
+      "johnny-guitar-watson",
+      "clarence-carter"
     ],
     "incomplete": false,
     "playedWith": [
@@ -10209,7 +10266,9 @@
     "description": "Floyd Dixon (February 8, 1929 – July 26, 2006) was an American rhythm-and-blues pianist and singer.",
     "activeFrom": "1949",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "charles-brown"
+    ],
     "incomplete": false,
     "playedWith": [
       "charles-brown",
@@ -11157,7 +11216,8 @@
       "sonny-boy-williamson-i",
       "little-sonny",
       "lil-ed-williams",
-      "lester-williams"
+      "lester-williams",
+      "sonny-terry"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -11590,7 +11650,8 @@
       "sonny-boy-williamson-i",
       "little-sonny",
       "lil-ed-williams",
-      "lester-williams"
+      "lester-williams",
+      "sonny-boy-williamson"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -11903,7 +11964,10 @@
       "guitar-gable"
     ],
     "influencedBy": [
-      "muddy-waters"
+      "muddy-waters",
+      "clarence-gatemouth-brown",
+      "t-bone-walker",
+      "willie-d-warren"
     ],
     "incomplete": false,
     "playedWith": [
@@ -12738,7 +12802,9 @@
     "influencedBy": [
       "charley-patton",
       "son-house",
-      "robert-johnson"
+      "robert-johnson",
+      "mississippi-sheiks",
+      "sonny-boy-williamson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -13037,7 +13103,9 @@
     "influences": [],
     "influencedBy": [
       "gus-cannon",
-      "pete-johnson"
+      "pete-johnson",
+      "pinetop-perkins",
+      "ernest-lane"
     ],
     "incomplete": false,
     "playedWith": [
@@ -13124,7 +13192,9 @@
     "description": "Isaac Scott (June 11, 1945 – November 16, 2001) was an American blues guitarist and singer. Based in the Pacific Northwest, Scott was known for his West Coast blues style and his work in the Seattle blues scene.",
     "activeFrom": "1965",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "albert-collins"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Isaac_Scott_(musician)",
@@ -13324,7 +13394,10 @@
     "description": "James Armstrong (born November 3, 1961) is an American blues guitarist, singer and songwriter. Based in Detroit, Armstrong has released several albums and is known for his contemporary take on the Chicago blues tradition.",
     "activeFrom": "1980",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "albert-king",
+      "robert-cray"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/James_Armstrong_(musician)",
@@ -13407,7 +13480,8 @@
       "little-sonny",
       "lil-ed-williams",
       "lester-williams",
-      "howlin-wolf"
+      "howlin-wolf",
+      "little-walter"
     ],
     "incomplete": false,
     "playedWith": [
@@ -13579,7 +13653,10 @@
     "description": "James 'Super Chikan' Johnson (born February 16, 1951) is an American Hill Country blues musician from Darling, Mississippi. The nephew of Big Jack Johnson, Super Chikan is a leading contemporary exponent of the North Mississippi Hill Country blues style. He began playing as a child on a diddley bow and bought his first guitar at age 13. Since his 1997 debut album, he has won multiple Blues Music Awards and is known for performing regularly at Morgan Freeman's Ground Zero blues club in Clarksdale. He also handcrafts artistic guitars from recycled parts.",
     "activeFrom": "1997",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "john-lee-hooker",
+      "muddy-waters"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Super_Chikan",
@@ -14428,7 +14505,9 @@
     "influencedBy": [
       "johnny-guitar-watson",
       "buddy-guy",
-      "guitar-slim"
+      "guitar-slim",
+      "albert-king",
+      "mose-allison"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -14715,7 +14794,8 @@
       "boo-boo-davis",
       "james-thunderbird-davis",
       "guy-davis",
-      "thornetta-davis"
+      "thornetta-davis",
+      "walter-davis"
     ],
     "incomplete": false,
     "playedWith": [
@@ -14804,7 +14884,9 @@
       "clarence-carter",
       "duster-bennett"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "eddie-taylor"
+    ],
     "incomplete": false,
     "playedWith": [
       "wayne-bennett"
@@ -15201,7 +15283,9 @@
     "description": "Jo Ann Kelly (5 January 1944 – 21 October 1990) was an English blues singer and guitarist.  She is respected for her strong blues vocal style and for playing country blues guitar.",
     "activeFrom": "1962",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "memphis-minnie"
+    ],
     "incomplete": false,
     "playedWith": [
       "mississippi-fred-mcdowell",
@@ -15248,7 +15332,11 @@
     "description": "Joanne Shaw Taylor is an English blues rock guitarist discovered by Dave Stewart at age sixteen. Known for her punchy lead tones on her favorite Telecaster, she delivers soulful performances and is currently based in Nashville.",
     "activeFrom": "2002",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "stevie-ray-vaughan",
+      "albert-collins",
+      "jimi-hendrix"
+    ],
     "incomplete": false,
     "playedWith": [
       "dave-stewart",
@@ -15287,7 +15375,9 @@
       "bb-king",
       "muddy-waters",
       "howlin-wolf",
-      "chris-cain"
+      "chris-cain",
+      "john-mayall",
+      "lonnie-mack"
     ],
     "incomplete": false,
     "playedWith": [
@@ -15859,7 +15949,8 @@
     ],
     "influencedBy": [
       "charley-patton",
-      "son-house"
+      "son-house",
+      "robert-petway"
     ],
     "incomplete": false,
     "playedWith": [
@@ -16325,7 +16416,9 @@
       "tail-dragger-jones",
       "johnny-yard-dog-jones",
       "paul-wine-jones",
-      "tutu-jones"
+      "tutu-jones",
+      "magic-sam",
+      "jimmy-reed"
     ],
     "incomplete": false,
     "playedWith": [
@@ -16672,7 +16765,9 @@
     "description": "Johnny Laws (January 12, 1943 – March 28, 2021) was an American Chicago blues guitarist, singer and songwriter.  A regular performer for over half a century in Chicago's South Side clubs, Laws released two albums, including Burnin' in My Soul, of which Blues & Rhythm magazine in November 1999 noted, \"It's a real shame that Johnny Laws has been unjustly ignored in the past...  This is an enjoyable CD...",
     "activeFrom": "1963",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "jimmy-reed"
+    ],
     "incomplete": false,
     "playedWith": [
       "jimmy-reed",
@@ -17258,7 +17353,10 @@
     "influences": [
       "johnny-b-moore"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "robert-johnson",
+      "t-bone-walker"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Johnny_\"Yard_Dog\"_Jones",
@@ -17760,7 +17858,8 @@
       "junior-parker",
       "lil-ed-williams",
       "lester-williams",
-      "sista-monica-parker"
+      "sista-monica-parker",
+      "little-walter"
     ],
     "incomplete": false,
     "playedWith": [
@@ -18531,7 +18630,9 @@
     "influences": [
       "pete-mayes"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "louis-jordan"
+    ],
     "incomplete": false,
     "playedWith": [
       "leroy-morton"
@@ -20347,7 +20448,8 @@
     "influences": [],
     "influencedBy": [
       "bb-king",
-      "buddy-guy"
+      "buddy-guy",
+      "t-bone-walker"
     ],
     "incomplete": false,
     "playedWith": [
@@ -20959,7 +21061,9 @@
       "ramblin-thomas",
       "lil-son-jackson"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "robert-johnson"
+    ],
     "incomplete": false,
     "playedWith": [
       "victoria-spivey",
@@ -21011,7 +21115,9 @@
     "description": "Lonnie Pitchford (October 8, 1955 – November 8, 1998) was an American blues musician and instrument maker from Lexington, Mississippi, United States.   He was one of only a handful of young African American musicians from Mississippi who had learned and was continuing the Delta blues and country blues traditions of the older generations. \nIn addition to the acoustic and electric guitar, Pitchford was skilled at the one-string guitar and diddley bow, a one-string instrument of African origin, as well as the double bass, piano and harmonica.",
     "activeFrom": "1975",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "robert-johnson"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lonnie_Pitchford",
@@ -22855,7 +22961,9 @@
     "activeFrom": "2009",
     "influences": [],
     "influencedBy": [
-      "muddy-waters"
+      "muddy-waters",
+      "jimmy-reed",
+      "henry-townsend"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23158,7 +23266,8 @@
       "cecil-gant"
     ],
     "influencedBy": [
-      "hersal-thomas"
+      "hersal-thomas",
+      "jimmy-yancey"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23388,7 +23497,9 @@
     "description": "John Len Chatman (September 3, 1915 – February 24, 1988), known professionally as Memphis Slim, was an American blues pianist, singer, and composer.   He led a series of bands that, reflecting the popular appeal of jump blues, included saxophones, bass, drums, and piano.  A song he first cut in 1947, \"Every Day I Have the Blues\", has become a blues standard, recorded by many other artists.",
     "activeFrom": "1940",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "big-bill-broonzy"
+    ],
     "incomplete": false,
     "playedWith": [
       "big-bill-broonzy",
@@ -24065,7 +24176,9 @@
     "description": "Mose John Allison Jr.  (November 11, 1927 – November 15, 2016) was an American jazz and blues pianist, singer, and songwriter.  He became notable for playing a unique mix of blues and modern jazz, both singing and playing piano.",
     "activeFrom": "1956",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "percy-mayfield"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Mose_Allison",
@@ -24377,7 +24490,9 @@
     "influencedBy": [
       "son-house",
       "robert-johnson",
-      "willie-brown"
+      "willie-brown",
+      "big-bill-broonzy",
+      "robert-petway"
     ],
     "incomplete": false,
     "playedWith": [
@@ -24465,7 +24580,9 @@
     "description": "Neal Pattman (January 10, 1926 – May 4, 2005) was an American electric blues harmonica player, singer and songwriter.  Sometimes billed as Big Daddy Pattman, he is best known for his self-penned tracks, \"Prison Blues\" and \"Goin' Back To Georgia\".   In the latter, and most notable stages of his long career, Pattman worked with Cootie Stark, Taj Mahal, Dave Peabody, Jimmy Rip, Kenny Wayne Shepherd, Guitar Gabriel, and Lee Konitz.",
     "activeFrom": "1950",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "sonny-terry"
+    ],
     "incomplete": false,
     "playedWith": [
       "cootie-stark",
@@ -24811,7 +24928,8 @@
     "activeFrom": "1958",
     "influences": [],
     "influencedBy": [
-      "chuck-willis"
+      "chuck-willis",
+      "sam-cooke"
     ],
     "incomplete": false,
     "playedWith": [
@@ -24894,7 +25012,8 @@
     "influencedBy": [
       "muddy-waters",
       "ethel-waters",
-      "jody-williams"
+      "jody-williams",
+      "albert-king"
     ],
     "incomplete": false,
     "playedWith": [
@@ -25803,7 +25922,8 @@
       "gary-moore"
     ],
     "influencedBy": [
-      "eric-clapton"
+      "eric-clapton",
+      "otis-rush"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26601,7 +26721,8 @@
       "lonnie-johnson",
       "mary-johnson",
       "luther-guitar-junior-johnson",
-      "luther-georgia-boy-johnson"
+      "luther-georgia-boy-johnson",
+      "blind-blake"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -26931,7 +27052,12 @@
     "description": "Frederick \"Rick\" Franklin (born March 16, 1952) is an American Piedmont blues guitarist, singer and songwriter.  With various other musicians, Franklin has released four albums to date and works as a blues musicologist.",
     "activeFrom": "1981",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "mississippi-john-hurt",
+      "big-bill-broonzy",
+      "blind-blake",
+      "bo-carter"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Rick_Franklin",
@@ -27376,7 +27502,8 @@
     "influencedBy": [
       "son-house",
       "skip-james",
-      "willie-brown"
+      "willie-brown",
+      "ramblin-thomas"
     ],
     "incomplete": false,
     "playedWith": [
@@ -27767,7 +27894,9 @@
       "barbara-lynn",
       "elmore-james",
       "muddy-waters",
-      "robert-johnson"
+      "robert-johnson",
+      "bo-diddley",
+      "mose-allison"
     ],
     "incomplete": false,
     "playedWith": [
@@ -28159,7 +28288,8 @@
     "influences": [],
     "influencedBy": [
       "zora-young",
-      "johnny-man-young"
+      "johnny-man-young",
+      "big-bill-broonzy"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -29612,7 +29742,9 @@
     "description": "Silas Hogan (September 15, 1911 – January 9, 1994) was an American blues musician who played swamp blues and Louisiana blues.  His most notable recordings are \"Airport Blues\" and \"Lonesome La La\".  He was the front man of the Rhythm Ramblers.",
     "activeFrom": "1960",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "jimmy-reed"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Silas_Hogan",
@@ -30025,7 +30157,9 @@
     "description": "Andrew \"Smokey\" Hogg (January 27, 1914 – May 1, 1960) was an American post-war Texas blues and country blues musician.",
     "activeFrom": "1945",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "peetie-wheatstraw"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Smokey_Hogg",
@@ -30661,7 +30795,8 @@
     "activeFrom": "1930",
     "influences": [],
     "influencedBy": [
-      "blind-boy-fuller"
+      "blind-boy-fuller",
+      "sonny-boy-williamson-i"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30722,7 +30857,9 @@
     "description": "Rufus George Perryman (October 23, 1892 – January 2, 1973), known as Speckled Red, was an American blues and boogie-woogie piano player and singer noted for his recordings of \"The Dirty Dozens\", exchanges of insults and vulgar remarks that have long been a part of African-American folklore.",
     "activeFrom": "1929",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "charlie-spand"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Speckled_Red",
@@ -30859,7 +30996,10 @@
       "john-lee-hooker",
       "albert-collins",
       "larry-davis",
-      "lonnie-mack"
+      "lonnie-mack",
+      "johnny-winter",
+      "jimi-hendrix",
+      "johnny-guitar-watson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31084,7 +31224,12 @@
     "description": "Susan Tedeschi (; born November 9, 1970) is an American singer and guitarist.  A multiple Grammy Award nominee, she is a member of the Tedeschi Trucks Band, a conglomeration of her band, her husband Derek Trucks' band, and other musicians.",
     "activeFrom": "1995",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "johnny-guitar-watson",
+      "stevie-ray-vaughan",
+      "freddie-king",
+      "buddy-guy"
+    ],
     "incomplete": false,
     "playedWith": [
       "bb-king",
@@ -31378,7 +31523,9 @@
     "influences": [
       "johnny-b-moore"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "howlin-wolf"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Tail_Dragger_Jones",
@@ -32228,7 +32375,11 @@
     "description": "Tracy Nelson is a country and blues singer who fronted Mother Earth in the late 1960s San Francisco scene. Her signature song \"Down So Low\" has been covered by Linda Ronstadt and Etta James.",
     "activeFrom": "1965",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "howlin-wolf",
+      "muddy-waters",
+      "otis-spann"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Tracy_Nelson_(singer)",
@@ -33338,7 +33489,9 @@
     "influences": [
       "pete-mayes"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "tommy-johnson"
+    ],
     "incomplete": false,
     "playedWith": [
       "charley-patton",
@@ -33655,7 +33808,9 @@
     "description": "Willie Love Jr.  (November 4, 1906 – August 19, 1953) was an American Delta blues pianist.  He is best known for his association with and accompaniment of Sonny Boy Williamson II.",
     "activeFrom": "1940",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "leroy-carr"
+    ],
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson",
@@ -33853,7 +34008,9 @@
     "description": "Woody Guthrie was a folk musician known as the \"Dust Bowl Troubadour\" for songs like \"This Land Is Your Land.\" His 1940 album Dust Bowl Ballads influenced Bob Dylan, Johnny Cash, and Bruce Springsteen.",
     "activeFrom": "1930",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "lead-belly"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Woody_Guthrie",
@@ -34089,7 +34246,8 @@
     "influences": [],
     "influencedBy": [
       "bb-king",
-      "bobby-blue-bland"
+      "bobby-blue-bland",
+      "sam-cooke"
     ],
     "incomplete": false,
     "playedWith": [
@@ -34345,7 +34503,8 @@
     "influencedBy": [
       "bessie-smith",
       "ma-rainey",
-      "mamie-smith"
+      "mamie-smith",
+      "georgia-tom-dorsey"
     ],
     "incomplete": false,
     "playedWith": [
@@ -35290,7 +35449,8 @@
       "eric-clapton",
       "albert-king",
       "bb-king",
-      "freddie-king"
+      "freddie-king",
+      "peter-green"
     ],
     "incomplete": false,
     "playedWith": [
@@ -36857,7 +37017,8 @@
       "junior-kimbrough"
     ],
     "influencedBy": [
-      "cedric-burnside"
+      "cedric-burnside",
+      "joe-callicott"
     ],
     "incomplete": false,
     "playedWith": [
@@ -37957,7 +38118,9 @@
       "sonny-boy-williamson-i",
       "doctor-clayton"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "doctor-clayton"
+    ],
     "playedWith": [
       "muddy-waters",
       "jimmy-rogers",
@@ -38857,7 +39020,10 @@
       "Piano"
     ],
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "buddy-guy",
+      "otis-rush"
+    ],
     "playedWith": [
       "freddie-king",
       "albert-king",
@@ -40721,7 +40887,10 @@
     ],
     "influencedBy": [
       "tommy-johnson",
-      "joe-willie-wilkins"
+      "joe-willie-wilkins",
+      "blind-lemon-jefferson",
+      "lonnie-johnson",
+      "blind-blake"
     ],
     "incomplete": false,
     "playedWith": [
@@ -41581,7 +41750,9 @@
     "influences": [
       "louis-jordan"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "louis-jordan"
+    ],
     "incomplete": false,
     "playedWith": [
       "ray-charles",
@@ -43686,7 +43857,8 @@
     ],
     "influencedBy": [
       "robert-johnson",
-      "t-bone-walker"
+      "t-bone-walker",
+      "freddie-king"
     ],
     "incomplete": false,
     "playedWith": [
@@ -44666,7 +44838,8 @@
     "activeFrom": "1966",
     "influences": [],
     "influencedBy": [
-      "jimmy-reed"
+      "jimmy-reed",
+      "joe-hill-louis"
     ],
     "incomplete": false,
     "playedWith": [
@@ -44891,7 +45064,8 @@
     "activeFrom": "1938",
     "influences": [],
     "influencedBy": [
-      "leroy-carr"
+      "leroy-carr",
+      "jimmy-rogers"
     ],
     "incomplete": false,
     "playedWith": [
@@ -45601,7 +45775,10 @@
     "activeFrom": "1999",
     "influences": [],
     "influencedBy": [
-      "duane-allman"
+      "duane-allman",
+      "albert-king",
+      "john-lee-hooker",
+      "howlin-wolf"
     ],
     "incomplete": false,
     "playedWith": [
@@ -45747,7 +45924,9 @@
     "description": "Ted Taylor was an American soul and blues singer known for his distinctive high tenor voice, scoring his biggest hit with \"Stay Away from My Baby\" (1965). He recorded prolifically for labels including Okeh, Ronn, and Jewel through the 1960s and 70s, blending soul, blues, and gospel influences, and his recordings have since been widely sampled in hip-hop.",
     "activeFrom": "1955",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "little-willie-john"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Ted_Taylor_(singer)",
@@ -46390,7 +46569,8 @@
     "activeFrom": "1960",
     "influences": [],
     "influencedBy": [
-      "bobby-blue-bland"
+      "bobby-blue-bland",
+      "little-willie-john"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -47991,7 +48171,8 @@
     "influencedBy": [
       "pete-johnson",
       "meade-lux-lewis",
-      "albert-ammons"
+      "albert-ammons",
+      "charles-brown"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -48632,7 +48813,8 @@
     "influences": [],
     "influencedBy": [
       "eric-clapton",
-      "peter-green"
+      "peter-green",
+      "roy-buchanan"
     ],
     "incomplete": false,
     "playedWith": [
@@ -48701,7 +48883,10 @@
     "description": "Ann Lee Peebles (born April 27, 1947) is a retired American singer and songwriter who gained popularity for her Memphis soul albums of the 1970s while signed to Hi Records. Her most successful singles include \"I Can't Stand the Rain,\" which she wrote with her husband Don Bryant and radio broadcaster Bernie Miller, and \"I'm Gonna Tear Your Playhouse Down.\" In 2014, she was inducted into the Memphis Music Hall of Fame.",
     "activeFrom": "1969",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "aretha-franklin",
+      "muddy-waters"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Ann_Peebles",
@@ -49335,7 +49520,8 @@
     "activeFrom": "1957",
     "influences": [],
     "influencedBy": [
-      "clifton-chenier"
+      "clifton-chenier",
+      "slim-harpo"
     ],
     "incomplete": false,
     "playedWith": [],
