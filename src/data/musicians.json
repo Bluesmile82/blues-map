@@ -4426,7 +4426,8 @@
     "influences": [],
     "influencedBy": [
       "ma-rainey",
-      "etta-james"
+      "etta-james",
+      "mississippi-fred-mcdowell"
     ],
     "incomplete": false,
     "playedWith": [
@@ -9556,7 +9557,8 @@
       "jimmy-reed",
       "jimmy-liggins",
       "fats-domino",
-      "josh-white"
+      "josh-white",
+      "ray-charles"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -9715,7 +9717,8 @@
       "robert-johnson",
       "little-walter",
       "jesse-fuller",
-      "jimmy-reed"
+      "jimmy-reed",
+      "otis-rush"
     ],
     "incomplete": false,
     "playedWith": [
@@ -10035,7 +10038,8 @@
       "colin-james",
       "big-maybelle",
       "johnny-guitar-watson",
-      "clarence-carter"
+      "clarence-carter",
+      "otis-redding"
     ],
     "incomplete": false,
     "playedWith": [
@@ -16210,7 +16214,8 @@
       "jimmie-lee-robinson",
       "lead-belly",
       "albert-ammons",
-      "pinetop-smith"
+      "pinetop-smith",
+      "mose-allison"
     ],
     "incomplete": false,
     "playedWith": [
@@ -17430,7 +17435,8 @@
     "influencedBy": [
       "muddy-waters",
       "bb-king",
-      "bobby-blue-bland"
+      "bobby-blue-bland",
+      "robert-johnson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -18442,7 +18448,8 @@
     "activeFrom": "1980",
     "influences": [],
     "influencedBy": [
-      "robert-johnson"
+      "robert-johnson",
+      "reverend-gary-davis"
     ],
     "incomplete": false,
     "playedWith": [
@@ -20856,7 +20863,8 @@
     ],
     "influencedBy": [
       "muddy-waters",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "moody-jones"
     ],
     "incomplete": false,
     "playedWith": [
@@ -22512,7 +22520,10 @@
     "description": "L. V.  Banks (October 28, 1932 – May 2, 2011) was an American Chicago blues and soul blues guitarist, singer and songwriter.",
     "activeFrom": "1950",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "howlin-wolf",
+      "little-milton"
+    ],
     "incomplete": false,
     "playedWith": [
       "toronzo-cannon"
@@ -22705,7 +22716,10 @@
     "influences": [
       "eddy-clearwater"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "muddy-waters",
+      "little-walter"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -22994,7 +23008,10 @@
     "activeFrom": "1970",
     "influences": [],
     "influencedBy": [
-      "professor-longhair"
+      "professor-longhair",
+      "fats-domino",
+      "james-booker",
+      "irma-thomas"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23047,7 +23064,9 @@
     "activeFrom": "2015",
     "influences": [],
     "influencedBy": [
-      "robin-trower"
+      "robin-trower",
+      "duane-allman",
+      "albert-king"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23095,7 +23114,12 @@
     "description": "Margie Evans (born Marjorie Ann Johnson; July 17, 1939 – March 19, 2021) was an American blues and gospel singer and songwriter.  She started recording in the late 1960s and continued to record for five decades.   She secured two hit singles on the US Billboard R&B chart.",
     "activeFrom": "1960",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "bessie-smith",
+      "ma-rainey",
+      "big-maybelle",
+      "big-mama-thornton"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Margie_Evans",
@@ -23796,7 +23820,9 @@
     "influencedBy": [
       "aretha-franklin",
       "eddie-boyd",
-      "jimmy-reed"
+      "jimmy-reed",
+      "otis-redding",
+      "willie-dixon"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -23887,7 +23913,11 @@
     "influences": [],
     "influencedBy": [
       "albert-king",
-      "josh-white"
+      "josh-white",
+      "big-joe-williams",
+      "otis-rush",
+      "freddie-king",
+      "ray-charles"
     ],
     "incomplete": false,
     "playedWith": [
@@ -25082,7 +25112,11 @@
     "influences": [
       "george-higgs"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "otis-rush",
+      "johnny-otis",
+      "t-bone-walker"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Otis_Grand",
@@ -25118,7 +25152,9 @@
     "influences": [],
     "influencedBy": [
       "chuck-willis",
-      "sam-cooke"
+      "sam-cooke",
+      "eric-clapton",
+      "jimi-hendrix"
     ],
     "incomplete": false,
     "playedWith": [
@@ -25307,7 +25343,9 @@
     "influences": [
       "detroit-junior"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "big-maceo-merriweather"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -26048,7 +26086,8 @@
       "willie-brown",
       "clarence-gatemouth-brown",
       "walter-brown",
-      "johnny-big-moose-walker"
+      "johnny-big-moose-walker",
+      "lowell-fulson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26436,7 +26475,8 @@
     "influences": [],
     "influencedBy": [
       "robert-johnson",
-      "earl-hooker"
+      "earl-hooker",
+      "pinetop-smith"
     ],
     "incomplete": false,
     "playedWith": [
@@ -27209,7 +27249,9 @@
     "description": "Richard \"Hacksaw\" Harney (July 16, 1902 – December 25, 1973) was an American Delta blues guitarist and pianist.  He first entered a recording studio with his brother Maylon in 1928, to wax guitar work backing for separate tracks by Pearl Dickson and Walter Rhodes.  However,  Harney recorded rarely, until his belated solo album, Sweet Man (1972).",
     "activeFrom": "1922",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "blind-blake"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Richard_\"Hacksaw\"_Harney",
@@ -27247,7 +27289,8 @@
       "mississippi-john-hurt",
       "big-bill-broonzy",
       "blind-blake",
-      "bo-carter"
+      "bo-carter",
+      "tampa-red"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -27488,7 +27531,10 @@
     "description": "Robert \"Big Mojo\" Elem (January 22, 1928 – February 5, 1997) was an American Chicago blues bass guitarist and singer.  Although he recorded only one studio album in his long career, Elem was a part of the Chicago blues scene for over 40 years.  He variously backed Arthur \"Big Boy\" Spires, Lester Davenport, Freddie King, Magic Sam, Junior Wells, Shakey Jake Harris, Jimmy Dawkins, Luther Allison, and Otis Rush.",
     "activeFrom": "1948",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "robert-nighthawk",
+      "ike-turner"
+    ],
     "incomplete": false,
     "playedWith": [
       "freddie-king",
@@ -27698,7 +27744,12 @@
       "ramblin-thomas",
       "blind-willie-johnson",
       "charley-patton",
-      "lonnie-johnson"
+      "lonnie-johnson",
+      "richard-hacksaw-harney",
+      "ike-zimmerman",
+      "leroy-carr",
+      "blind-lemon-jefferson",
+      "blind-blake"
     ],
     "incomplete": false,
     "playedWith": [
@@ -27898,7 +27949,7 @@
       }
     ],
     "description": "Robert Lee McCollum (November 30, 1909 – November 5, 1967) was an American blues musician who played and recorded under the pseudonyms Robert Lee McCoy and Robert Nighthawk.  He was the father of the blues musician Sam Carr.  Nighthawk was inducted into the Blues Hall of Fame in 1983.",
-    "activeFrom": "1921",
+    "activeFrom": "1937",
     "influences": [
       "cedell-davis",
       "louis-myers"
@@ -28005,7 +28056,8 @@
     "activeFrom": "1962",
     "influences": [],
     "influencedBy": [
-      "bobby-parker"
+      "bobby-parker",
+      "jimi-hendrix"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -28096,7 +28148,11 @@
       "blind-boy-fuller",
       "etta-james",
       "jimmy-reed",
-      "little-walter"
+      "little-walter",
+      "otis-redding",
+      "howlin-wolf",
+      "t-bone-walker",
+      "fats-domino"
     ],
     "incomplete": false,
     "playedWith": [
@@ -28128,7 +28184,10 @@
     "description": "Ronnie Baker Brooks (born January 23, 1967) is an American Chicago blues and soul blues guitarist, singer and songwriter.  He was a respected club performer in Chicago, even before recording three solo albums for Watchdog Records.   The son of fellow Chicago blues musician Lonnie Brooks, he is the brother of another blues guitarist, Wayne Baker Brooks.",
     "activeFrom": "1987",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "willie-dixon",
+      "buddy-guy"
+    ],
     "incomplete": false,
     "playedWith": [
       "eddy-clearwater"
@@ -28405,7 +28464,11 @@
     "description": "Aurora \"Rory\" Block (born November 6, 1949) is an American blues guitarist and singer, a notable exponent of the country blues style.",
     "activeFrom": "1964",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "mississippi-john-hurt",
+      "reverend-gary-davis",
+      "son-house"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Rory_Block",
@@ -28576,7 +28639,8 @@
       "boo-boo-davis",
       "james-thunderbird-davis",
       "guy-davis",
-      "thornetta-davis"
+      "thornetta-davis",
+      "pink-anderson"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -28884,7 +28948,11 @@
     "description": "Saffire – The Uppity Blues Women was a three-woman blues musical ensemble in the Washington, D. C.  area.",
     "activeFrom": "1987",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "big-mama-thornton",
+      "ida-cox",
+      "koko-taylor"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Saffire_%E2%80%93_The_Uppity_Blues_Women",
@@ -29256,7 +29324,8 @@
       "bonnie-raitt",
       "stevie-ray-vaughan",
       "tom-petty",
-      "rolling-stones"
+      "rolling-stones",
+      "mike-zito"
     ],
     "incomplete": false,
     "playedWith": [
@@ -29626,7 +29695,8 @@
       "muddy-waters",
       "albert-king",
       "lightnin-hopkins",
-      "albert-collins"
+      "albert-collins",
+      "jimi-hendrix"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -29782,7 +29852,9 @@
     "description": "Sherman Robertson (October 27, 1948 – January 28, 2021) was an American blues guitarist and singer who has been described as \"one part zydeco, one part swamp blues, one part electric blues and one part classic rhythm and blues.",
     "activeFrom": "1968",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "freddie-king"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sherman_Robertson",
@@ -29831,7 +29903,9 @@
     "description": "Shirley  Griffith (April 26, 1907 – June 18, 1974) was an American male blues singer and guitarist, mainly based in Indianapolis.  He is best known for his recordings \"Walkin' Blues\" and \"Bad Luck Blues\".",
     "activeFrom": "1928",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "tommy-johnson"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Shirley_Griffith",
@@ -30066,7 +30140,10 @@
     "influences": [
       "junior-wells"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "aretha-franklin",
+      "sam-cooke"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sista_Monica_Parker",
@@ -32873,7 +32950,8 @@
       "lead-belly",
       "sonny-boy-williamson",
       "lightnin-hopkins",
-      "jimmy-reed"
+      "jimmy-reed",
+      "ray-charles"
     ],
     "incomplete": false,
     "playedWith": [
@@ -40256,7 +40334,9 @@
     "description": "Tommy McClennan was an American Delta blues singer and guitarist born in Durant, Mississippi. Known for his rough, energetic playing style, he recorded for Bluebird Records from 1939 to 1942, producing classics like 'Bottle It Up and Go', 'Cross Cut Saw Blues', and 'Whiskey Head Woman'. His songs were later covered by Albert King and Bob Dylan.",
     "activeFrom": "1939",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "richard-hacksaw-harney"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Tommy_McClennan",
@@ -40560,7 +40640,9 @@
     "description": "Sonny Boy Nelson, born Eugene Powell, was an American Delta blues musician from Utica, Mississippi who mastered multiple instruments including guitar, banjo, harmonica, mandolin, and violin. He recorded fifteen sides for Bluebird Records in 1936 alongside his wife Mississippi Matilda and members of the Mississippi Sheiks. His acoustic country blues approach was later overshadowed by electric blues styles.",
     "activeFrom": "1936",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "richard-hacksaw-harney"
+    ],
     "incomplete": false,
     "playedWith": [
       "mississippi-matilda",
@@ -43978,7 +44060,9 @@
       "ike-turner",
       "cecil-gant"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "pinetop-smith"
+    ],
     "incomplete": false,
     "playedWith": [
       "big-joe-turner",

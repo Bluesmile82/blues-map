@@ -17,5 +17,3 @@ stated in a way the checks could not confirm.
   > Their duet style influenced the young Memphis Minnie in duets with her husband, Kansas Joe McCoy.
 - **Frankie Lee Sims** — _influencer starts 19y later_
   > T-Bone Walker acknowledged Sims's influence on his style of playing, and Hopkins got some ideas from him.
-- **Joe Willie Wilkins** — _influencer starts 20y later_
-  > He influenced his contemporaries Houston Stackhouse, Robert Nighthawk, David Honeyboy Edwards, and Jimmy Rogers
