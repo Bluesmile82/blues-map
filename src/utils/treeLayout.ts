@@ -228,9 +228,9 @@ function orderIdx(style: string): number {
 /** How many musicians each one is documented as having influenced, plus collaboration reach. */
 export function computeScores(musicians: Musician[]): Map<string, number> {
   const downstream = new Map<string, Set<string>>();
-  musicians.forEach((m) => downstream.set(m.id, new Set(m.influencedBy ?? [])));
-  // `influences` lists a musician's own ancestors — so it is a downstream edge for them.
-  musicians.forEach((m) => (m.influences ?? []).forEach((id) => downstream.get(id)?.add(m.id)));
+  musicians.forEach((m) => downstream.set(m.id, new Set(m.influences ?? [])));
+  // `influencedBy` lists a musician's own ancestors — a downstream edge for them.
+  musicians.forEach((m) => (m.influencedBy ?? []).forEach((id) => downstream.get(id)?.add(m.id)));
 
   const scores = new Map<string, number>();
   musicians.forEach((m) => {

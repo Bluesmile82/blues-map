@@ -583,16 +583,16 @@ export default function EditPanel({ musician, musicians, onClose, onSave, onDele
 
             <MusicianSelect
               label={t('editPanel.influencedByLabel')}
-              selected={formData.influences}
-              onChange={(ids) => handleChange('influences', ids)}
+              selected={formData.influencedBy}
+              onChange={(ids) => handleChange('influencedBy', ids)}
               musicians={musicians}
               placeholder={t('editPanel.influencedByPlaceholder')}
             />
 
             <MusicianSelect
               label={t('editPanel.influencedLabel')}
-              selected={formData.influencedBy}
-              onChange={(ids) => handleChange('influencedBy', ids)}
+              selected={formData.influences}
+              onChange={(ids) => handleChange('influences', ids)}
               musicians={musicians}
               placeholder={t('editPanel.influencedPlaceholder')}
             />

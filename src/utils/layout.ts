@@ -341,8 +341,8 @@ export function computeTreeLayout(
   musicians.forEach((m) => {
     const keyM = groupBy === 'style' ? m.bluesStyle : primaryInstrument(m.instrument);
 
-    // Process influences
-    m.influences.forEach((peerId) => {
+    // Process influences, recorded from either end
+    [...(m.influences ?? []), ...(m.influencedBy ?? [])].forEach((peerId) => {
       const peer = musicianById[peerId];
       if (!peer) return;
       if (!options.naturalPositions) {

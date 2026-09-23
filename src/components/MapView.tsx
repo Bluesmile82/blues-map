@@ -374,7 +374,9 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       m.id,
       ...m.influences,
       ...(m.influencedBy ?? []),
-      ...completeMusicians.filter((x) => x.influences.includes(selectedId)).map((x) => x.id),
+      ...completeMusicians
+        .filter((x) => x.influences.includes(selectedId) || (x.influencedBy ?? []).includes(selectedId))
+        .map((x) => x.id),
       ...(m.playedWith ?? []),
       ...completeMusicians.filter((x) => (x.playedWith ?? []).includes(selectedId)).map((x) => x.id),
     ]);

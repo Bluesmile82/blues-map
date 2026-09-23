@@ -52,8 +52,10 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   ), [musicians]);
   const musicianMap = useMemo(() => Object.fromEntries(completeMusicians.map((m) => [m.id, m])), [completeMusicians]);
 
-  const influencers = musician.influences.map((id) => musicianMap[id]).filter(Boolean) as Musician[];
-  const influenced = completeMusicians.filter((m) => m.influences.includes(musician.id));
+  const influencers = (musician.influencedBy ?? []).map((id) => musicianMap[id]).filter(Boolean) as Musician[];
+  const influenced = completeMusicians.filter(
+    (m) => (m.influencedBy ?? []).includes(musician.id) || (musician.influences ?? []).includes(m.id)
+  );
   const playedWith = (musician.playedWith ?? []).map((id) => musicianMap[id]).filter(Boolean) as Musician[];
   const hex = getStyleHex(musician.bluesStyle);
   const [r, g, b] = getStyleColor(musician.bluesStyle) as [number, number, number];
