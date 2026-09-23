@@ -6,7 +6,11 @@
  *   ANTHROPIC_API_KEY=sk-ant-... node classify-influences-claude.js [options]
  *
  * Options:
- *   --dry-run          ask Claude, print the edges, write nothing
+ *   --dry-run          print the edges, write nothing
+ *   --offline          never call the API: classify with whatever answers are
+ *                      already cached, which lets a Claude session fill the
+ *                      cache by hand (see --dump-prompts)
+ *   --dump-prompts F   write the prompts as JSON to F and exit (no API call)
  *   --sample-prompt    print the prompt for one musician and exit (no API call)
  *   --limit N          only the first N musicians
  *   --model NAME       default claude-sonnet-5; claude-haiku-4-5-20251001 is cheaper
@@ -33,6 +37,8 @@ const MAX_PASSAGE_CHARS = 9000;
 
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
+const offline = args.includes('--offline');
+const dumpPrompts = args.includes('--dump-prompts') ? args[args.indexOf('--dump-prompts') + 1] : null;
 const samplePrompt = args.includes('--sample-prompt');
 const verbose = args.includes('--verbose');
 const limit = args.includes('--limit') ? Number(args[args.indexOf('--limit') + 1]) : Infinity;
@@ -179,15 +185,25 @@ if (samplePrompt) {
   process.exit(0);
 }
 
-if (!API_KEY) {
-  console.error('\nANTHROPIC_API_KEY is required. Use --sample-prompt to inspect the prompt without a key.\n');
+if (dumpPrompts) {
+  fs.writeFileSync(dumpPrompts, JSON.stringify(
+    targets.map(({ m, p }) => ({ id: m.id, name: m.name, candidates: p.present, passages: p.text })), null, 2));
+  console.log(`Wrote ${targets.length} prompts to ${dumpPrompts}`);
+  process.exit(0);
+}
+
+if (!API_KEY && !offline) {
+  console.error('\nANTHROPIC_API_KEY is required, or pass --offline to use only cached answers.');
+  console.error('--sample-prompt and --dump-prompts need no key.\n');
   process.exit(1);
 }
 
 const cache = fs.existsSync(CACHE) ? JSON.parse(fs.readFileSync(CACHE, 'utf-8')) : {};
 let inTok = 0, outTok = 0, asked = 0;
 
+let missing = 0;
 for (const [i, { m, p }] of targets.entries()) {
+  if (cache[m.id] === undefined && offline) { missing++; continue; }
   if (cache[m.id] === undefined) {
     const { text, usage } = await askClaude(buildPrompt(m, p));
     cache[m.id] = parseEdges(text);
@@ -201,8 +217,9 @@ for (const [i, { m, p }] of targets.entries()) {
     process.stdout.write(`\r  ${i + 1}/${targets.length} (${asked} asked)`);
   }
 }
-fs.writeFileSync(CACHE, JSON.stringify(cache));
+if (!offline) fs.writeFileSync(CACHE, JSON.stringify(cache));
 process.stdout.write('\n');
+if (missing) console.log(`  ${missing} of ${targets.length} have no cached answer and were skipped (--offline)`);
 
 let added = 0, already = 0, rejected = 0;
 const applied = [];

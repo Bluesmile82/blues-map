@@ -147,7 +147,13 @@
     "influencedBy": [
       "john-lee-hooker",
       "little-walter",
-      "skip-james"
+      "skip-james",
+      "robert-johnson",
+      "son-house",
+      "charley-patton",
+      "tommy-johnson",
+      "bukka-white",
+      "muddy-waters"
     ],
     "incomplete": false,
     "playedWith": [
@@ -224,7 +230,8 @@
       "hersal-thomas",
       "jimmy-yancey",
       "charlie-spand",
-      "jimmy-blythe"
+      "jimmy-blythe",
+      "meade-lux-lewis"
     ],
     "incomplete": false,
     "playedWith": [
@@ -292,7 +299,9 @@
       "john-lee-hooker",
       "t-bone-walker",
       "albert-king",
-      "clarence-gatemouth-brown"
+      "clarence-gatemouth-brown",
+      "frankie-lee-sims",
+      "guitar-slim"
     ],
     "incomplete": false,
     "playedWith": [
@@ -380,7 +389,8 @@
     "influencedBy": [
       "muddy-waters",
       "bb-king",
-      "detroit-junior"
+      "detroit-junior",
+      "joe-willie-wilkins"
     ],
     "incomplete": false,
     "playedWith": [
@@ -668,7 +678,8 @@
     ],
     "influencedBy": [
       "muddy-waters",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "josh-white"
     ],
     "incomplete": false,
     "playedWith": [
@@ -768,7 +779,9 @@
     "description": "Allen Toussaint was an influential New Orleans musician, songwriter, arranger, and record producer. He wrote hits like \"Right Place, Wrong Time\" and \"Lady Marmalade\" and produced hundreds of recordings over a six-decade career.",
     "activeFrom": "1958",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "professor-longhair"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Allen_Toussaint",
@@ -894,7 +907,8 @@
     ],
     "influencedBy": [
       "joe-liggins",
-      "charles-brown"
+      "charles-brown",
+      "leroy-carr"
     ],
     "incomplete": false,
     "playedWith": [
@@ -1155,7 +1169,9 @@
     "description": "Arbee William Stidham (February 9, 1917 – April 26, 1988) was an American blues singer and multi-instrumentalist. \nAccording to the authors of the book All Music Guide to the Blues: The Definitive Guide to the Blues, Stidham was \"exactly the sort of singer that thrived in the R&B or 'race' market after World War II; although essentially a bluesman, he wasn't a blues purist...  his mixture of blues, jazz and gospel made him quite popular...",
     "activeFrom": "1948",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "big-bill-broonzy"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Arbee_Stidham",
@@ -1756,7 +1772,8 @@
       "blind-willie-mctell"
     ],
     "influencedBy": [
-      "curley-weaver"
+      "curley-weaver",
+      "blind-lemon-jefferson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -1859,7 +1876,8 @@
       "blind-john-davis",
       "pinetop-perkins",
       "sunnyland-slim",
-      "detroit-junior"
+      "detroit-junior",
+      "little-brother-montgomery"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -2252,7 +2270,10 @@
       "papa-charlie-jackson",
       "jim-jackson",
       "fruteland-jackson",
-      "tampa-red"
+      "tampa-red",
+      "blind-blake",
+      "son-house",
+      "blind-lemon-jefferson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -2708,7 +2729,9 @@
     "influencedBy": [
       "roosevelt-sykes",
       "meade-lux-lewis",
-      "tampa-red"
+      "tampa-red",
+      "leroy-carr",
+      "albert-ammons"
     ],
     "incomplete": false,
     "playedWith": [
@@ -2811,7 +2834,9 @@
     "influences": [
       "candye-kane"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "bessie-smith"
+    ],
     "incomplete": false,
     "playedWith": [
       "buddy-guy",
@@ -2917,7 +2942,9 @@
       "willie-nix",
       "mark-hummel"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "hammie-nixon"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -3902,7 +3929,8 @@
       "carey-bell",
       "muddy-waters",
       "lester-davenport",
-      "louis-myers"
+      "louis-myers",
+      "little-mack-simmons"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -4397,7 +4425,8 @@
     "activeFrom": "1971",
     "influences": [],
     "influencedBy": [
-      "ma-rainey"
+      "ma-rainey",
+      "etta-james"
     ],
     "incomplete": false,
     "playedWith": [
@@ -4568,7 +4597,9 @@
     "description": "Boogie Bill Webb (March 24, 1924 – August 22, 1990) was an American Louisiana blues and rhythm-and-blues guitarist, singer and songwriter.  His music combined Mississippi country blues with New Orleans R&B.  His best-known recordings are \"Bad Dog\" and \"Drinkin' and Stinkin'\".",
     "activeFrom": "1947",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "tommy-johnson"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Boogie_Bill_Webb",
@@ -4746,7 +4777,8 @@
     "activeFrom": "1961",
     "influences": [],
     "influencedBy": [
-      "blind-boy-fuller"
+      "blind-boy-fuller",
+      "jim-jackson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -5489,7 +5521,10 @@
     ],
     "influencedBy": [
       "roomful-of-blues",
-      "little-walter"
+      "little-walter",
+      "sonny-boy-williamson-i",
+      "sonny-boy-williamson",
+      "hound-dog-taylor"
     ],
     "incomplete": false,
     "playedWith": [
@@ -5834,7 +5869,9 @@
       "johnny-ace",
       "chuck-willis"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "leroy-carr"
+    ],
     "incomplete": false,
     "playedWith": [
       "ruth-brown"
@@ -6111,7 +6148,8 @@
       "albert-king",
       "buddy-guy",
       "magic-sam",
-      "otis-clay"
+      "otis-clay",
+      "tyrone-davis"
     ],
     "incomplete": false,
     "playedWith": [
@@ -6271,7 +6309,9 @@
       "freddie-king",
       "bb-king",
       "lightnin-hopkins",
-      "robert-johnson"
+      "robert-johnson",
+      "muddy-waters",
+      "jimi-hendrix"
     ],
     "incomplete": false,
     "playedWith": [
@@ -6703,7 +6743,9 @@
     "influences": [],
     "influencedBy": [
       "pink-anderson",
-      "peg-leg-sam"
+      "peg-leg-sam",
+      "josh-white",
+      "baby-tate"
     ],
     "incomplete": false,
     "playedWith": [
@@ -7245,7 +7287,12 @@
       "robert-johnson",
       "mississippi-fred-mcdowell",
       "junior-watson",
-      "john-lee-hooker"
+      "john-lee-hooker",
+      "robert-nighthawk",
+      "t-model-ford",
+      "hound-dog-taylor",
+      "kokomo-arnold",
+      "son-house"
     ],
     "incomplete": false,
     "playedWith": [
@@ -7651,7 +7698,12 @@
     "description": "Demetria M.  Taylor (born February 28, 1973) is an American Chicago blues singer and songwriter.  Her father was Eddie Taylor, a fellow Chicago blues musician.",
     "activeFrom": "1993",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "etta-james",
+      "bessie-smith",
+      "big-mama-thornton",
+      "koko-taylor"
+    ],
     "incomplete": false,
     "playedWith": [
       "deitra-farr"
@@ -7963,7 +8015,8 @@
     "influencedBy": [
       "professor-longhair",
       "allen-toussaint",
-      "fats-domino"
+      "fats-domino",
+      "bo-diddley"
     ],
     "incomplete": false,
     "playedWith": [
@@ -8093,7 +8146,11 @@
     "description": "Drink Small (born January 28, 1933) is an American soul blues and electric blues guitarist, pianist, singer, and songwriter.  He is known as The Blues Doctor and has been influenced by a variety of musical styles including gospel and country music.",
     "activeFrom": "1955",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "john-lee-hooker",
+      "fats-domino",
+      "blind-boy-fuller"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Drink_Small",
@@ -8204,7 +8261,8 @@
       "freddie-king",
       "taj-mahal",
       "eric-clapton",
-      "buddy-guy"
+      "buddy-guy",
+      "albert-king"
     ],
     "incomplete": false,
     "playedWith": [
@@ -8410,7 +8468,9 @@
     ],
     "influencedBy": [
       "t-bone-walker",
-      "robert-nighthawk"
+      "robert-nighthawk",
+      "tampa-red",
+      "houston-stackhouse"
     ],
     "incomplete": false,
     "playedWith": [
@@ -8553,7 +8613,8 @@
       "sonny-boy-williamson-i",
       "little-sonny",
       "lil-ed-williams",
-      "lester-williams"
+      "lester-williams",
+      "little-walter"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -9443,7 +9504,9 @@
     "description": "Elvin Richard Bishop (born October 21, 1942) is an American blues and rock music singer, guitarist, bandleader, and songwriter.  He was inducted into the Rock and Roll Hall of Fame as a member of the Paul Butterfield Blues Band in 2015, and in the Blues Hall of Fame as a solo artist in 2016.",
     "activeFrom": "1963",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "little-smokey-smothers"
+    ],
     "incomplete": false,
     "playedWith": [
       "mike-bloomfield",
@@ -9491,7 +9554,9 @@
       "smiley-lewis",
       "rufus-thomas",
       "jimmy-reed",
-      "jimmy-liggins"
+      "jimmy-liggins",
+      "fats-domino",
+      "josh-white"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -9557,7 +9622,9 @@
     "description": "Eric Charles Bibb (born August 16, 1951) is a Grammy-nominated American-born blues singer and songwriter.",
     "activeFrom": "1962",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "bukka-white"
+    ],
     "incomplete": false,
     "playedWith": [
       "rory-block"
@@ -9640,7 +9707,15 @@
       "albert-king",
       "buddy-guy",
       "freddie-king",
-      "lonnie-mack"
+      "lonnie-mack",
+      "big-bill-broonzy",
+      "blind-boy-fuller",
+      "the-band",
+      "muddy-waters",
+      "robert-johnson",
+      "little-walter",
+      "jesse-fuller",
+      "jimmy-reed"
     ],
     "incomplete": false,
     "playedWith": [
@@ -10514,7 +10589,9 @@
     "description": "Frankie Lee Sims (April 30, 1917 – May 10, 1970) was an American singer-songwriter and electric blues guitarist.  He released nine singles during his career, one of which, \"Lucy Mae Blues\" (1953), was a regional hit.  Two compilation albums of his work were released posthumously.",
     "activeFrom": "1948",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "little-hat-jones"
+    ],
     "incomplete": false,
     "playedWith": [
       "lightnin-hopkins",
@@ -10743,7 +10820,8 @@
       "memphis-slim",
       "little-walter",
       "hound-dog-taylor",
-      "magic-sam"
+      "magic-sam",
+      "jimmie-lee-robinson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -10818,7 +10896,12 @@
       "robert-nighthawk",
       "big-bill-broonzy"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "johnny-shines",
+      "howlin-wolf",
+      "muddy-waters",
+      "robert-johnson"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Fruteland_Jackson",
@@ -11033,7 +11116,10 @@
       "elizabeth-cotten",
       "albert-king",
       "freddie-king",
-      "bb-king"
+      "bb-king",
+      "buddy-guy",
+      "jimmy-reed",
+      "stevie-ray-vaughan"
     ],
     "incomplete": false,
     "playedWith": [
@@ -11340,7 +11426,8 @@
     "activeFrom": "1950",
     "influences": [],
     "influencedBy": [
-      "otis-grand"
+      "otis-grand",
+      "peg-leg-sam"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -11651,7 +11738,8 @@
       "little-sonny",
       "lil-ed-williams",
       "lester-williams",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "little-walter"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -11834,7 +11922,10 @@
     "description": "Edward Lamonte Franklin (January 16, 1928 – July 31, 1975), better known as Guitar Pete Franklin, was an American blues singer, musician and songwriter.  His best known track was \"Guitar Pete's Blues\". \nFranklin variously worked with a number of fellow blues musicians including St.",
     "activeFrom": "1948",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "scrapper-blackwell",
+      "leroy-carr"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Guitar_Pete_Franklin",
@@ -12567,7 +12658,8 @@
       "little-sonny",
       "colin-james",
       "lil-ed-williams",
-      "lester-williams"
+      "lester-williams",
+      "little-milton"
     ],
     "incomplete": false,
     "playedWith": [
@@ -12804,7 +12896,15 @@
       "son-house",
       "robert-johnson",
       "mississippi-sheiks",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "blind-willie-johnson",
+      "blind-lemon-jefferson",
+      "ma-rainey",
+      "lonnie-johnson",
+      "tampa-red",
+      "blind-blake",
+      "tommy-johnson",
+      "leroy-carr"
     ],
     "incomplete": false,
     "playedWith": [
@@ -13105,7 +13205,9 @@
       "gus-cannon",
       "pete-johnson",
       "pinetop-perkins",
-      "ernest-lane"
+      "ernest-lane",
+      "amos-milburn",
+      "louis-jordan"
     ],
     "incomplete": false,
     "playedWith": [
@@ -13155,7 +13257,12 @@
     "description": "Known as the \"Soul Queen of New Orleans,\" Irma Thomas has a six-decade career. She won a Grammy in 2007 for Best Contemporary Blues Album for After the Rain.",
     "activeFrom": "1959",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "etta-james",
+      "mahalia-jackson",
+      "john-lee-hooker",
+      "percy-mayfield"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Irma_Thomas",
@@ -13193,7 +13300,8 @@
     "activeFrom": "1965",
     "influences": [],
     "influencedBy": [
-      "albert-collins"
+      "albert-collins",
+      "jimi-hendrix"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -13552,7 +13660,9 @@
     "description": "James Crutchfield (May 25, 1912 – December 7, 2001) was a St.  Louis barrelhouse blues singer, piano player and songwriter whose career spanned seven decades.  His repertoire consisted of original and classic blues and boogie-woogie and Depression-era popular songs.",
     "activeFrom": "1931",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "little-brother-montgomery"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/James_Crutchfield",
@@ -14152,7 +14262,10 @@
       "bb-king",
       "buddy-guy",
       "otis-rush",
-      "lightnin-hopkins"
+      "lightnin-hopkins",
+      "freddie-king",
+      "lonnie-mack",
+      "jimmy-reed"
     ],
     "incomplete": false,
     "playedWith": [
@@ -14507,7 +14620,13 @@
       "buddy-guy",
       "guitar-slim",
       "albert-king",
-      "mose-allison"
+      "mose-allison",
+      "elmore-james",
+      "muddy-waters",
+      "howlin-wolf",
+      "robert-johnson",
+      "elvis-presley",
+      "jimmy-reed"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -14650,7 +14769,9 @@
     "description": "Jimmy Burns (born February 27, 1943) is an American soul blues and electric blues guitarist, singer and songwriter.  Although he was born in the Mississippi Delta, Burns has spent nearly all his life in Chicago.  His elder brother, Eddie \"Guitar\" Burns, was a Detroit blues musician.",
     "activeFrom": "1960",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "lightnin-hopkins"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Burns",
@@ -14987,7 +15108,9 @@
       "junior-watson",
       "nick-moss"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "joe-willie-wilkins"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -15148,7 +15271,8 @@
     "activeFrom": "1949",
     "influences": [],
     "influencedBy": [
-      "jay-mcshann"
+      "jay-mcshann",
+      "leroy-carr"
     ],
     "incomplete": false,
     "playedWith": [
@@ -15284,7 +15408,8 @@
     "activeFrom": "1962",
     "influences": [],
     "influencedBy": [
-      "memphis-minnie"
+      "memphis-minnie",
+      "elvis-presley"
     ],
     "incomplete": false,
     "playedWith": [
@@ -15377,7 +15502,14 @@
       "howlin-wolf",
       "chris-cain",
       "john-mayall",
-      "lonnie-mack"
+      "lonnie-mack",
+      "eric-clapton",
+      "rory-gallagher",
+      "stevie-ray-vaughan",
+      "peter-green",
+      "gary-moore",
+      "robert-johnson",
+      "t-bone-walker"
     ],
     "incomplete": false,
     "playedWith": [
@@ -15501,7 +15633,9 @@
       "t-bone-walker",
       "bb-king",
       "meade-lux-lewis",
-      "amos-milburn"
+      "amos-milburn",
+      "pete-johnson",
+      "otis-redding"
     ],
     "incomplete": false,
     "playedWith": [
@@ -15733,7 +15867,9 @@
     "description": "John Dee Holeman  (April 4, 1929 – April 30, 2021) was an American Piedmont blues guitarist, singer, and songwriter.  His music includes elements of Texas blues, R&B and African-American string-band music.  In his younger days he was also known for his proficiency as a buckdancer.",
     "activeFrom": "1949",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "blind-boy-fuller"
+    ],
     "incomplete": false,
     "playedWith": [
       "melvin-taylor",
@@ -15938,7 +16074,7 @@
       }
     ],
     "description": "With his hypnotic, droning boogie guitar style and raw, personal lyrics, John Lee Hooker was a force unto himself. His 1989 comeback album 'The Healer' brought him a new generation of fans and collaborators.",
-    "activeFrom": "1962",
+    "activeFrom": "1948",
     "influences": [
       "bb-king",
       "stevie-ray-vaughan",
@@ -16070,7 +16206,11 @@
     "activeFrom": "1956",
     "influences": [],
     "influencedBy": [
-      "bobby-parker"
+      "bobby-parker",
+      "jimmie-lee-robinson",
+      "lead-belly",
+      "albert-ammons",
+      "pinetop-smith"
     ],
     "incomplete": false,
     "playedWith": [
@@ -16285,7 +16425,8 @@
     "influencedBy": [
       "albert-king",
       "bb-king",
-      "t-bone-walker"
+      "t-bone-walker",
+      "tiny-grimes"
     ],
     "incomplete": false,
     "playedWith": [
@@ -16418,7 +16559,8 @@
       "paul-wine-jones",
       "tutu-jones",
       "magic-sam",
-      "jimmy-reed"
+      "jimmy-reed",
+      "john-lee-hooker"
     ],
     "incomplete": false,
     "playedWith": [
@@ -16607,7 +16749,9 @@
     "description": "Johnny Dyer (December 7, 1938 – November 11, 2014) was an American electric blues harmonicist and singer.  He made numerous recordings, both as a solo performer and with other musicians.",
     "activeFrom": "1968",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "little-walter"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Johnny_Dyer",
@@ -16766,7 +16910,8 @@
     "activeFrom": "1963",
     "influences": [],
     "influencedBy": [
-      "jimmy-reed"
+      "jimmy-reed",
+      "buster-benton"
     ],
     "incomplete": false,
     "playedWith": [
@@ -17355,7 +17500,8 @@
     ],
     "influencedBy": [
       "robert-johnson",
-      "t-bone-walker"
+      "t-bone-walker",
+      "little-walter"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -17419,7 +17565,9 @@
     "influencedBy": [
       "taj-mahal",
       "blind-willie-mctell",
-      "curley-weaver"
+      "curley-weaver",
+      "keb-mo",
+      "muddy-waters"
     ],
     "incomplete": false,
     "playedWith": [
@@ -17683,7 +17831,9 @@
     "influences": [
       "junior-wells"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "sonny-boy-williamson"
+    ],
     "incomplete": false,
     "playedWith": [
       "sonny-boy-williamson",
@@ -17927,7 +18077,9 @@
     "description": "Arthur Lee Stevenson (May 7, 1926 – May 7, 1991), known as Kansas City Red, was an American blues drummer and singer who played a major role in the development of urban blues.  He performed and recorded with many notable blues artists, such as David \"Honeyboy\" Edwards, Robert Nighthawk, Sunnyland Slim, and Walter Horton.",
     "activeFrom": "1947",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "david-honeyboy-edwards"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Kansas_City_Red",
@@ -18146,7 +18298,8 @@
     "activeFrom": "1959",
     "influences": [],
     "influencedBy": [
-      "professor-longhair"
+      "professor-longhair",
+      "albert-ammons"
     ],
     "incomplete": false,
     "playedWith": [
@@ -18451,7 +18604,9 @@
     "activeFrom": "1997",
     "influences": [],
     "influencedBy": [
-      "raful-neal"
+      "raful-neal",
+      "slim-harpo",
+      "buddy-guy"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -18637,7 +18792,7 @@
     "playedWith": [
       "leroy-morton"
     ],
-    "source": "https://en.wikipedia.org/wiki/James_Brown",
+    "source": "https://en.wikipedia.org/wiki/Kitty_Brown",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
   },
@@ -18820,7 +18975,12 @@
     "description": "Lacy Gibson (May 1, 1936 – April 11, 2011) was an American Chicago blues guitarist, singer and songwriter.  He notably recorded the songs \"My Love Is Real\" and \"Switchy Titchy\" and in a long and varied career worked with Buddy Guy and Son Seals. \nOne commentator noted that Gibson \"developed a large and varied repertoire after long stays with numerous bands, many recording sessions, and performances in Chicago nightclubs\".",
     "activeFrom": "1956",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "sunnyland-slim",
+      "muddy-waters",
+      "lefty-bates",
+      "wayne-bennett"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lacy_Gibson",
@@ -18926,7 +19086,11 @@
     "description": "Larry Garner (born July 8, 1952 in New Orleans, Louisiana, United States) is a Louisiana blues musician best known for his 1994 album Too Blues.",
     "activeFrom": "1972",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "silas-hogan",
+      "jimi-hendrix",
+      "henry-gray"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Larry_Garner",
@@ -19532,7 +19696,9 @@
       "junior-wells",
       "gene-birdlegg-pittman"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "t-bone-walker"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Lester_Williams_(musician)",
@@ -19610,7 +19776,8 @@
     ],
     "influencedBy": [
       "blind-lemon-jefferson",
-      "alger-texas-alexander"
+      "alger-texas-alexander",
+      "frankie-lee-sims"
     ],
     "incomplete": false,
     "playedWith": [
@@ -19848,7 +20015,9 @@
     "influences": [
       "lonesome-sundown"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "billie-holiday"
+    ],
     "incomplete": false,
     "playedWith": [
       "big-bill-broonzy"
@@ -19940,7 +20109,10 @@
     "description": "Linsey Alexander (July 23, 1942 – February 22, 2025) was an American blues songwriter, vocalist, and guitarist.  He was a fixture in clubs on Chicago's North Side for nearly two decades and played with numerous blues musicians, including Buddy Guy, A. C.",
     "activeFrom": "1960",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "rosco-gordon",
+      "elvis-presley"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Linsey_Alexander",
@@ -19992,7 +20164,9 @@
     "description": "Little Arthur Duncan (February 5, 1934 – August 20, 2008) was an American Chicago blues and electric blues harmonica player, singer, and songwriter.  He was a member of the Backscratchers and over his career was associated with Earl Hooker, Twist Turner, Illinois Slim and Rick Kreher.",
     "activeFrom": "1950",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "little-walter"
+    ],
     "incomplete": false,
     "playedWith": [
       "earl-hooker"
@@ -20278,7 +20452,8 @@
     "influences": [],
     "influencedBy": [
       "little-walter",
-      "snooky-pryor"
+      "snooky-pryor",
+      "junior-wells"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -20449,7 +20624,8 @@
     "influencedBy": [
       "bb-king",
       "buddy-guy",
-      "t-bone-walker"
+      "t-bone-walker",
+      "joe-willie-wilkins"
     ],
     "incomplete": false,
     "playedWith": [
@@ -20574,7 +20750,9 @@
       "junior-wells",
       "gene-birdlegg-pittman"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "sonny-boy-williamson"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Little_Sonny",
@@ -20665,7 +20843,7 @@
       }
     ],
     "description": "Little Walter revolutionized blues harmonica by amplifying it and treating it like a horn instrument. His innovative technique with Muddy Waters' band and as a solo artist made him the definitive Chicago blues harp player.",
-    "activeFrom": "1958",
+    "activeFrom": "1947",
     "influences": [
       "little-hatch",
       "jimmy-mccracklin",
@@ -20772,7 +20950,10 @@
     "description": "Willie Littlefield, Jr. , billed as Little Willie Littlefield (September 16, 1931 – June 23, 2013), was an American R&B and boogie-woogie pianist and singer whose early recordings \"formed a vital link between boogie-woogie and rock and roll\".  Littlefield was regarded as a teenage wonder and overnight sensation when in 1949, at the age of 18, he popularized the triplet piano style on his Modern Records debut single, \"It's Midnight\".",
     "activeFrom": "1949",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "charles-brown",
+      "amos-milburn"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Little_Willie_Littlefield",
@@ -20862,7 +21043,8 @@
       "lc-green",
       "peter-green",
       "muddy-waters",
-      "ethel-waters"
+      "ethel-waters",
+      "john-lee-hooker"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -21169,7 +21351,10 @@
     "activeFrom": "1976",
     "influences": [],
     "influencedBy": [
-      "bb-king"
+      "bb-king",
+      "sam-carr",
+      "frank-frost",
+      "big-jack-johnson"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -23700,7 +23885,10 @@
     "description": "Michael Bernard Bloomfield (July 28, 1943 – February 15, 1981) was an American blues guitarist and composer.   Born in Chicago, he became one of the first popular music stars of the 1960s to earn his reputation almost entirely on his instrumental prowess, as he rarely sang before 1969.  Respected for his guitar playing, Bloomfield knew and played with many of Chicago's blues musicians before achieving his own fame and was instrumental in popularizing blues music in the mid-1960s.",
     "activeFrom": "1964",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "albert-king",
+      "josh-white"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -24545,7 +24733,8 @@
     "activeFrom": "1934",
     "influences": [],
     "influencedBy": [
-      "leroy-carr"
+      "leroy-carr",
+      "josh-white"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -25923,7 +26112,8 @@
     ],
     "influencedBy": [
       "eric-clapton",
-      "otis-rush"
+      "otis-rush",
+      "freddie-king"
     ],
     "incomplete": false,
     "playedWith": [
@@ -26800,7 +26990,8 @@
       "roy-hawkins",
       "nappy-brown",
       "cow-cow-davenport",
-      "leroy-carr"
+      "leroy-carr",
+      "josh-white"
     ],
     "incomplete": false,
     "playedWith": [
@@ -27363,7 +27554,8 @@
     "influences": [],
     "influencedBy": [
       "ov-wright",
-      "albert-collins"
+      "albert-collins",
+      "albert-king"
     ],
     "incomplete": false,
     "playedWith": [
@@ -27503,7 +27695,10 @@
       "son-house",
       "skip-james",
       "willie-brown",
-      "ramblin-thomas"
+      "ramblin-thomas",
+      "blind-willie-johnson",
+      "charley-patton",
+      "lonnie-johnson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -27858,7 +28053,8 @@
     "activeFrom": "1967",
     "influences": [],
     "influencedBy": [
-      "george-harmonica-smith"
+      "george-harmonica-smith",
+      "little-walter"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -27896,7 +28092,11 @@
       "muddy-waters",
       "robert-johnson",
       "bo-diddley",
-      "mose-allison"
+      "mose-allison",
+      "blind-boy-fuller",
+      "etta-james",
+      "jimmy-reed",
+      "little-walter"
     ],
     "incomplete": false,
     "playedWith": [
@@ -28289,7 +28489,8 @@
     "influencedBy": [
       "zora-young",
       "johnny-man-young",
-      "big-bill-broonzy"
+      "big-bill-broonzy",
+      "blind-boy-fuller"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -29528,7 +29729,9 @@
     "description": "Charon Shemekia Copeland (born April 10, 1979) is an American electric blues vocalist.  She has released 12 albums, won nine Blues Music Awards, and won five Blues Blast Music Awards.  In 2024, Copeland received nominations at the 67th Annual Grammy Awards for Best American Roots Performance, Best American Roots Song, and Best Contemporary Blues Album.",
     "activeFrom": "1996",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "etta-james"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Shemekia_Copeland",
@@ -30999,7 +31202,9 @@
       "lonnie-mack",
       "johnny-winter",
       "jimi-hendrix",
-      "johnny-guitar-watson"
+      "johnny-guitar-watson",
+      "freddie-king",
+      "lightnin-hopkins"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31228,7 +31433,8 @@
       "johnny-guitar-watson",
       "stevie-ray-vaughan",
       "freddie-king",
-      "buddy-guy"
+      "buddy-guy",
+      "koko-taylor"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31356,7 +31562,9 @@
       "roy-gaines"
     ],
     "influencedBy": [
-      "blind-lemon-jefferson"
+      "blind-lemon-jefferson",
+      "leroy-carr",
+      "lonnie-johnson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -32664,7 +32872,8 @@
       "john-lee-hooker",
       "lead-belly",
       "sonny-boy-williamson",
-      "lightnin-hopkins"
+      "lightnin-hopkins",
+      "jimmy-reed"
     ],
     "incomplete": false,
     "playedWith": [
@@ -34009,7 +34218,8 @@
     "activeFrom": "1930",
     "influences": [],
     "influencedBy": [
-      "lead-belly"
+      "lead-belly",
+      "josh-white"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -35516,7 +35726,9 @@
     "description": "Johnnie Clyde Johnson was an American pianist who played jazz, blues, and rock and roll. His work with Chuck Berry led to his induction into the Rock and Roll Hall of Fame, and he was the leader of Albert King's rhythm section during King's most prolific period. He was a cornerstone of the St. Louis blues scene.",
     "activeFrom": "1952",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "albert-ammons"
+    ],
     "incomplete": false,
     "playedWith": [
       "eric-clapton",
@@ -41917,7 +42129,8 @@
     ],
     "influencedBy": [
       "t-bone-walker",
-      "guitar-slim"
+      "guitar-slim",
+      "clarence-gatemouth-brown"
     ],
     "incomplete": false,
     "playedWith": [
@@ -45778,7 +45991,8 @@
       "duane-allman",
       "albert-king",
       "john-lee-hooker",
-      "howlin-wolf"
+      "howlin-wolf",
+      "elmore-james"
     ],
     "incomplete": false,
     "playedWith": [
@@ -49232,7 +49446,8 @@
       "peetie-wheatstraw"
     ],
     "influencedBy": [
-      "lee-green"
+      "lee-green",
+      "blind-lemon-jefferson"
     ],
     "incomplete": false,
     "playedWith": [
