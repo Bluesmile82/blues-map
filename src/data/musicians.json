@@ -14632,7 +14632,8 @@
       "elvis-presley",
       "jimmy-reed",
       "t-bone-walker",
-      "van-morrison"
+      "van-morrison",
+      "robert-petway"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -19774,7 +19775,7 @@
       }
     ],
     "description": "Sam John 'Lightnin'' Hopkins was one of the most prolific and influential Texas bluesmen. His spare, fingerpicking guitar style and spontaneous, storytelling approach created hundreds of recordings that defined the country blues tradition. His influence on folk and blues revival movements was immense.",
-    "activeFrom": "1959",
+    "activeFrom": "1946",
     "influences": [
       "jb-lenoir",
       "albert-collins",
@@ -25161,7 +25162,8 @@
       "chuck-willis",
       "sam-cooke",
       "eric-clapton",
-      "jimi-hendrix"
+      "jimi-hendrix",
+      "rufus-thomas"
     ],
     "incomplete": false,
     "playedWith": [
@@ -28161,7 +28163,8 @@
       "howlin-wolf",
       "t-bone-walker",
       "fats-domino",
-      "the-band"
+      "the-band",
+      "pops-staples"
     ],
     "incomplete": false,
     "playedWith": [
@@ -36341,7 +36344,9 @@
     "influences": [
       "mississippi-fred-mcdowell"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "mississippi-fred-mcdowell"
+    ],
     "incomplete": false,
     "playedWith": [
       "bonnie-raitt",
@@ -37374,7 +37379,10 @@
     ],
     "influencedBy": [
       "cedric-burnside",
-      "joe-callicott"
+      "joe-callicott",
+      "junior-kimbrough",
+      "johnny-winter",
+      "johnny-shines"
     ],
     "incomplete": false,
     "playedWith": [
@@ -37602,7 +37610,8 @@
     ],
     "influencedBy": [
       "magic-sam",
-      "otis-rush"
+      "otis-rush",
+      "muddy-waters"
     ],
     "incomplete": true,
     "playedWith": [
@@ -37665,7 +37674,11 @@
       "sonny-boy-williamson",
       "koko-taylor"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "howlin-wolf",
+      "sonny-boy-williamson",
+      "koko-taylor"
+    ],
     "incomplete": false,
     "playedWith": [
       "etta-james"
@@ -38263,7 +38276,9 @@
       "little-milton",
       "ike-turner"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "junior-wells"
+    ],
     "playedWith": [
       "lovie-lee",
       "carey-bell",
@@ -38829,7 +38844,9 @@
       "Vocals"
     ],
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "houston-stackhouse"
+    ],
     "playedWith": [
       "ike-turner",
       "howlin-wolf",
@@ -38901,7 +38918,9 @@
     "influences": [
       "sid-hemphill"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "sid-hemphill"
+    ],
     "playedWith": [
       "sid-hemphill",
       "jessie-mae-hemphill"
@@ -40125,7 +40144,9 @@
     "influences": [
       "guitar-slim"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "guitar-slim"
+    ],
     "playedWith": [
       "jimmy-reed",
       "bo-diddley",
@@ -40953,7 +40974,9 @@
       "memphis-minnie",
       "hound-dog-taylor"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "memphis-minnie"
+    ],
     "incomplete": false,
     "playedWith": [
       "hound-dog-taylor",
@@ -41379,7 +41402,9 @@
     "influences": [
       "arthur-crudup"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "arthur-crudup"
+    ],
     "incomplete": false,
     "playedWith": [
       "eddie-cusic"
@@ -41432,7 +41457,9 @@
     "description": "Rufus C. Thomas, Jr. was an American rhythm-and-blues, funk, soul and blues singer, songwriter, dancer, DJ and comic entertainer from Memphis, Tennessee. Known as \"The World's Oldest Teenager,\" he recorded for Chess, Sun, and Stax Records, producing dance hits like \"Walking the Dog\" and \"Do the Funky Chicken.\" He embodied the spirit of Memphis music perhaps more than any other artist, serving as mentor, MC, and radio DJ on WDIA across five decades.",
     "activeFrom": "1936",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "gatemouth-moore"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Rufus_Thomas",
@@ -41657,7 +41684,12 @@
     "influences": [
       "blind-roosevelt-graves"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "blind-lemon-jefferson",
+      "blind-boy-fuller",
+      "tampa-red",
+      "peetie-wheatstraw"
+    ],
     "incomplete": false,
     "playedWith": [
       "muddy-waters"
@@ -41825,7 +41857,9 @@
     "description": "Artie 'Blues Boy' White was an American blues and soul singer born in Vicksburg, Mississippi, who moved to Chicago in 1956 and became one of the foremost Chicago practitioners of Southern Soul music. Known for his flamboyant costumes and stage presence, he headlined the 2000 Chicago Blues Festival and recorded over a dozen albums including collaborations with Little Milton Campbell.",
     "activeFrom": "1956",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "little-milton"
+    ],
     "incomplete": false,
     "playedWith": [
       "little-milton"
