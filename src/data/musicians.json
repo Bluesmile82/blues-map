@@ -2943,7 +2943,8 @@
       "mark-hummel"
     ],
     "influencedBy": [
-      "hammie-nixon"
+      "hammie-nixon",
+      "will-shade"
     ],
     "incomplete": false,
     "playedWith": [
@@ -6044,7 +6045,9 @@
     "influences": [
       "mark-hummel"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "will-shade"
+    ],
     "incomplete": false,
     "playedWith": [
       "mike-bloomfield",
@@ -8263,7 +8266,8 @@
       "taj-mahal",
       "eric-clapton",
       "buddy-guy",
-      "albert-king"
+      "albert-king",
+      "lonnie-mack"
     ],
     "incomplete": false,
     "playedWith": [
@@ -14633,7 +14637,8 @@
       "jimmy-reed",
       "t-bone-walker",
       "van-morrison",
-      "robert-petway"
+      "robert-petway",
+      "lonnie-mack"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -23924,7 +23929,8 @@
       "big-joe-williams",
       "otis-rush",
       "freddie-king",
-      "ray-charles"
+      "ray-charles",
+      "lonnie-mack"
     ],
     "incomplete": false,
     "playedWith": [
@@ -28164,7 +28170,8 @@
       "t-bone-walker",
       "fats-domino",
       "the-band",
-      "pops-staples"
+      "pops-staples",
+      "pat-hare"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30858,7 +30865,8 @@
       "long-john-baldry"
     ],
     "influencedBy": [
-      "robert-johnson"
+      "robert-johnson",
+      "will-shade"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30943,7 +30951,8 @@
       "gene-birdlegg-pittman"
     ],
     "influencedBy": [
-      "sleepy-john-estes"
+      "sleepy-john-estes",
+      "will-shade"
     ],
     "incomplete": false,
     "playedWith": [
@@ -43816,7 +43825,15 @@
       "james-cotton",
       "junior-wells",
       "sonny-boy-williamson",
-      "big-walter-horton"
+      "big-walter-horton",
+      "jimmy-rogers",
+      "eddie-taylor",
+      "albert-collins",
+      "george-harmonica-smith",
+      "luther-tucker",
+      "pee-wee-crayton",
+      "slim-harpo",
+      "lazy-lester"
     ],
     "incomplete": false,
     "playedWith": [
@@ -44255,7 +44272,9 @@
     "influencedBy": [
       "robert-johnson",
       "t-bone-walker",
-      "freddie-king"
+      "freddie-king",
+      "jimmy-reed",
+      "ray-charles"
     ],
     "incomplete": false,
     "playedWith": [
@@ -45408,7 +45427,10 @@
     "influences": [
       "rockin-sidney"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "muddy-waters",
+      "peetie-wheatstraw"
+    ],
     "incomplete": false,
     "playedWith": [
       "joe-doucet",
@@ -46176,7 +46198,9 @@
       "albert-king",
       "john-lee-hooker",
       "howlin-wolf",
-      "elmore-james"
+      "elmore-james",
+      "johnny-winter",
+      "freddie-king"
     ],
     "incomplete": false,
     "playedWith": [
@@ -49212,7 +49236,11 @@
     "influencedBy": [
       "eric-clapton",
       "peter-green",
-      "roy-buchanan"
+      "roy-buchanan",
+      "jeff-beck",
+      "jimi-hendrix",
+      "john-mayall",
+      "albert-king"
     ],
     "incomplete": false,
     "playedWith": [
@@ -49583,7 +49611,9 @@
       "thornetta-davis"
     ],
     "influencedBy": [
-      "billie-holiday"
+      "billie-holiday",
+      "big-joe-turner",
+      "lavern-baker"
     ],
     "incomplete": false,
     "playedWith": [
@@ -49810,7 +49840,9 @@
     "influences": [
       "josh-white"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "blind-willie-johnson"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Blind_Joe_Taggart",
@@ -51203,7 +51235,9 @@
     "description": "Raymond Clinton \"Ray\" Agee (April 10, 1921 – April 15, 1989) was an American blues and R&B singer and songwriter who recorded over a hundred tracks between the early 1950s and mid-1970s, and is described at AllMusic as \"a fine, versatile blues singer whose work deserves a wider audience\".",
     "activeFrom": "1953",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "charles-brown"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Ray_Agee",

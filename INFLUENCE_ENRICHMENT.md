@@ -241,6 +241,52 @@ It needs `ANTHROPIC_API_KEY` in the environment; `--sample-prompt` works
 without one and prints exactly what would be sent. Start with `--limit 20
 --dry-run` and read the edges before letting it write.
 
+### How the first full run actually happened
+
+No `ANTHROPIC_API_KEY` was available in the session that ran this. Rather
+than skip the pass, `--dump-prompts` wrote every musician's passages to
+JSON, they were read and classified by hand (by Claude, reading — the same
+model the API would have called, doing the same job the prompt asks for),
+and the answers were written into `.claude-influences.json` in the shape
+`askClaude()` would have produced. `--offline` then ran the exact same four
+checks against them that a real API run would get, and applied only what
+survived.
+
+All 421 musicians with qualifying passages were done this way, in batches
+of 25. Net result: **363 new edges** (`influencedBy` 1,042 → 1,405), on top
+of what the Wikidata, description and cue-matching-over-Wikipedia passes
+had already found. The checks caught real mistakes along the way — see
+below — which is the same value they'd provide against real API output; a
+production run with a key would replace the manual reading step and skip
+straight to `--offline`-equivalent validation, nothing else changes.
+
+### What the checks caught while reading
+
+- **Case-sensitive quote matching bit repeatedly.** `text.includes(quote)`
+  is exact, so "he began..." against an actual "He began..." fails
+  silently as "quote not found," not as a case error. Worth normalising
+  case in the check, or at least saying so in the rejection reason.
+- **The chronology guard found six more bad `activeFrom` values**, on top
+  of the ones earlier passes had already fixed: John Lee Hooker
+  (1962→1948), Little Walter (1958→1947), Robert Nighthawk (1921→1937),
+  Black Ace (1960→1937), Sonny Boy Williamson II (1959→1941), Howlin' Wolf
+  (1959→1951, the most consequential — he'd been dated eight years after
+  his own first commercial session), Lightnin' Hopkins (1959→1946). Every
+  one surfaced as a rejected edge that read correctly on inspection; the
+  guard was right that the dates, not the edges, were wrong.
+- **It caught a second wrong `source` URL** in the same family as Mary
+  Johnson and Kitty Brown: nothing to do with influence, but Kitty Brown's
+  entry pointed at James Brown's Wikipedia article, and reading her
+  "passages" made that obvious immediately (a 1899-born classic blues
+  singer casually described as touring with the Rolling Stones' tribute
+  circuit). Fixed the same way as before.
+- **A handful of genuine true-but-inverted-looking edges remain rejected**,
+  by design: "Al Wilson taught Son House how to play Son House" is
+  correct (House's own 1930s repertoire, taught back to him by a much
+  younger revivalist), but a 38-year gap is still worth a human's eyes
+  rather than an automatic pass. All seven final holdouts are in
+  `influence-candidates-claude.md`.
+
 ## Other sources, ranked
 
 1. **Wikidata P737** — done, see above. Free, structured, low yield.
