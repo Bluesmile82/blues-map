@@ -3405,7 +3405,9 @@
       "reverend-gary-davis",
       "floyd-council",
       "sonny-terry",
-      "brownie-mcghee"
+      "brownie-mcghee",
+      "richard-trice",
+      "bull-city-red"
     ],
     "source": "https://en.wikipedia.org/wiki/Blind_Boy_Fuller",
     "secondaryInstruments": [
@@ -12283,7 +12285,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "howlin-wolf"
+      "howlin-wolf",
+      "clarence-edwards"
     ],
     "source": "https://en.wikipedia.org/wiki/Henry_Gray_(musician)",
     "secondaryInstruments": [
@@ -16655,7 +16658,8 @@
       "jimmy-mccracklin",
       "big-mama-thornton",
       "johnny-fuller",
-      "big-jay-mcneely"
+      "big-jay-mcneely",
+      "al-king"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnny_Heartsman",
     "secondaryInstruments": [
@@ -19387,7 +19391,9 @@
       "frank-springback-james"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "charles-avery"
+    ],
     "source": "https://en.wikipedia.org/wiki/Leroy_Carr",
     "secondaryInstruments": [
       "Vocals"
@@ -21639,7 +21645,9 @@
       "josh-white"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "charles-avery"
+    ],
     "source": "https://en.wikipedia.org/wiki/Lucille_Bogan",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -23266,7 +23274,9 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "will-shade"
+      "will-shade",
+      "charlie-burse",
+      "hattie-hart"
     ],
     "source": "https://en.wikipedia.org/wiki/Memphis_Jug_Band",
     "secondaryInstruments": [],
@@ -23795,10 +23805,13 @@
     "influences": [],
     "influencedBy": [
       "terry-garland",
-      "kelly-joe-phelps"
+      "kelly-joe-phelps",
+      "johnny-woods"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "johnny-woods"
+    ],
     "source": "https://en.wikipedia.org/wiki/Mississippi_Fred_McDowell",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -24179,7 +24192,9 @@
       "lucille-hegamin"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "clarence-edwards"
+    ],
     "source": "https://en.wikipedia.org/wiki/Moses_\"Whispering\"_Smith",
     "secondaryInstruments": [
       "Vocals"
@@ -26732,7 +26747,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "charles-avery"
+    ],
     "source": "https://en.wikipedia.org/wiki/Red_Nelson_(musician)",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -26838,7 +26855,8 @@
     "incomplete": false,
     "playedWith": [
       "larry-johnson",
-      "blind-willie-walker"
+      "blind-willie-walker",
+      "bull-city-red"
     ],
     "source": "https://en.wikipedia.org/wiki/Reverend_Gary_Davis",
     "secondaryInstruments": [
@@ -27038,7 +27056,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "johnny-woods"
+    ],
     "source": "https://en.wikipedia.org/wiki/R._L._Burnside",
     "secondaryInstruments": [
       "Vocals"
@@ -29616,7 +29636,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "clarence-edwards"
+    ],
     "source": "https://en.wikipedia.org/wiki/Silas_Hogan",
     "secondaryInstruments": [
       "Vocals"
@@ -30429,7 +30451,8 @@
       "kim-wilson",
       "willie-nix",
       "little-mack-simmons",
-      "long-john-baldry"
+      "long-john-baldry",
+      "polka-dot-slim"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31538,7 +31561,8 @@
       "big-maceo-merriweather",
       "big-bill-broonzy",
       "chippie-hill",
-      "romeo-nelson"
+      "romeo-nelson",
+      "charles-avery"
     ],
     "source": "https://en.wikipedia.org/wiki/Tampa_Red",
     "secondaryInstruments": [
@@ -32682,7 +32706,8 @@
       "lonnie-johnson",
       "big-joe-williams",
       "roosevelt-sykes",
-      "alberta-hunter"
+      "alberta-hunter",
+      "charles-avery"
     ],
     "source": "https://en.wikipedia.org/wiki/Victoria_Spivey",
     "secondaryInstruments": [
@@ -33773,7 +33798,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "richard-trice"
+    ],
     "source": "https://en.wikipedia.org/wiki/Willie_Trice",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -48952,7 +48979,9 @@
     "incomplete": true,
     "playedWith": [
       "memphis-jug-band",
-      "gus-cannon"
+      "gus-cannon",
+      "charlie-burse",
+      "hattie-hart"
     ],
     "source": "https://en.wikipedia.org/wiki/Will_Shade",
     "secondaryInstruments": [
@@ -50734,5 +50763,490 @@
       "Vocals"
     ],
     "createdAt": "2026-09-20"
+  },
+  {
+    "id": "clarence-edwards",
+    "name": "Clarence Edwards",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1933-03-25",
+    "birthPlace": "Lindsay, Louisiana",
+    "birthCoords": [
+      -91.05,
+      30.85
+    ],
+    "deathDate": "1993-05-20",
+    "deathPlace": "Baton Rouge",
+    "deathCoords": [
+      -91.178611111111,
+      30.4475
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=fS77AFEAdLM",
+    "albums": [
+      {
+        "name": "Baton Rouge Downhome Blues (2023)",
+        "youtubeLink": "https://www.youtube.com/watch?v=OhkJanfsTDQ"
+      }
+    ],
+    "description": "Clarence Edwards (March 25, 1933 – May 20, 1993) was an American blues musician from Louisiana, best known for his recordings of \"Lonesome Bedroom Blues\" and \"I Want Somebody\".  It was not until the late 1980s that Edwards was able to establish his reputation as a blues performer, assisted by his producer and manager Stephen Coleridge.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "silas-hogan",
+      "henry-gray",
+      "moses-whispering-smith"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Clarence_Edwards_(blues_musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-22"
+  },
+  {
+    "id": "charles-avery",
+    "name": "Charles Avery",
+    "image": "https://static.wixstatic.com/media/e6597e_740f1da4a4e44b47adeb842b871dff2d~mv2.png/v1/fill/w_596,h_391,al_c,lg_1,q_85/e6597e_740f1da4a4e44b47adeb842b871dff2d~mv2.png",
+    "image_source": "compendium-musicum.com",
+    "birthDate": "1892-02-02",
+    "birthPlace": "Brighton, Alabama",
+    "birthCoords": [
+      -86.95,
+      33.5151
+    ],
+    "deathDate": "1974-09-11",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=bFcRaSuRAGg",
+    "albums": [
+      {
+        "name": "Dearborn Street Breakdown",
+        "youtubeLink": "https://www.youtube.com/watch?v=bFcRaSuRAGg"
+      }
+    ],
+    "description": "Charles Avery was an American blues and boogie-woogie pianist active in Chicago during the late 1920s and 1930s. Though he recorded only one commercially released track under his own name, \"Dearborn Street Breakdown\" (1929) for Paramount Records, he was a sought-after session accompanist, backing Leroy Carr, Tampa Red, Lucille Bogan, Victoria Spivey and other prominent blues artists of the era.",
+    "activeFrom": "1928",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "leroy-carr",
+      "tampa-red",
+      "lucille-bogan",
+      "victoria-spivey",
+      "red-nelson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Charles_Avery_(pianist)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-22"
+  },
+  {
+    "id": "johnny-woods",
+    "name": "Johnny Woods",
+    "image": "https://64.media.tumblr.com/31740ee22e5dc01bbd208de74e8a6886/0ab3e7827442d530-13/s1280x1920/d5469d6b4cf5508ee73497de331e6146b37de105.jpg",
+    "image_source": "oblivion records blog",
+    "birthDate": "1917-11-01",
+    "birthPlace": "Looxahoma, Mississippi",
+    "birthCoords": [
+      -89.83694,
+      34.59722
+    ],
+    "deathDate": "1990-02-01",
+    "deathPlace": "Olive Branch",
+    "deathCoords": [
+      -89.8417,
+      34.9603
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=2tW1OF7mh2Y",
+    "albums": [
+      {
+        "name": "Going Down South (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9mpLk5JVMKY"
+      }
+    ],
+    "description": "Johnny Woods (November 1, 1917 – February 1, 1990) was an American blues singer and harmonica player in the north Mississippi hill country blues style. \nWoods was born in Looxahoma, Mississippi, a small town just west of Mississippi Highway 35.  His harmonica playing first gained attention in the 1960s, when he was a duet partner with the guitarist and singer Mississippi Fred McDowell.",
+    "activeFrom": "1960",
+    "influences": [
+      "mississippi-fred-mcdowell"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "mississippi-fred-mcdowell",
+      "rl-burnside"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Johnny_Woods",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-22"
+  },
+  {
+    "id": "polka-dot-slim",
+    "name": "Polka Dot Slim",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhw8AgRJHWYxinoeuvnxHtvKAu1wItD3on3VbY5ac8kHyyru6AGe3fUKIDB6K1gGaf6tc-AePTHiJz47sge7MZxiLk85hQeJWQreEfeXMOeSRNS2-M3PvjgFKvLVKTGPUE8O2E5BBIq8EKrVPuhpoSENhvBF6Cjx-V_0dvbFS_JAd7rUhjDUVDNyxBn5oAI/w640-h640/Forrest%20City%20Joe%20&%20Polka%20Dot%20Slim%20-%20Downhome%20Delta%20Harmonica%20-%20Front.jpg",
+    "image_source": "yardraw.blogspot.com",
+    "birthDate": "1926-12-09",
+    "birthPlace": "Woodville, Mississippi",
+    "birthCoords": [
+      -91.2997,
+      31.1028
+    ],
+    "deathDate": "1981-06-22",
+    "deathPlace": "Oakland, California",
+    "deathCoords": [
+      -122.2712,
+      37.8044
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=hit-ZxoggV0",
+    "albums": [
+      {
+        "name": "A Thing You Gotta Face / Ain't Broke, Ain't Hungry",
+        "youtubeLink": "https://www.youtube.com/watch?v=hit-ZxoggV0"
+      }
+    ],
+    "description": "Willie Monroe Vincent (December 9, 1926 – June 22, 1981), who used the stage name Polka Dot Slim and was also credited as Vince Monroe, Mr.  Calhoun, and Poka-A-Dot Slim, was an American blues singer and harmonica player.",
+    "activeFrom": "1957",
+    "influences": [
+      "sonny-boy-williamson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Polka_Dot_Slim",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-22"
+  },
+  {
+    "id": "cousin-joe",
+    "name": "Cousin Joe",
+    "image": "https://alchetron.com/cdn/cousin-joe-19f40321-f49b-4529-b778-3d15d0eec09-resize-750.jpeg",
+    "image_source": "alchetron.com",
+    "birthDate": "1907-12-20",
+    "birthPlace": "Wallace, Louisiana",
+    "birthCoords": [
+      -90.549,
+      29.929
+    ],
+    "deathDate": "1989-10-02",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.07833333333333,
+          29.976111111111113
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=KJeBta1d2zU",
+    "albums": [
+      {
+        "name": "I Never Harmed An Onion (2008)",
+        "youtubeLink": "https://www.youtube.com/watch?v=CN5GDUPeKXw"
+      },
+      {
+        "name": "Blues Masters, Volume 6 (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=XukRvZbVVng"
+      }
+    ],
+    "description": "Pleasant Joseph, known as Cousin Joe, (December 20, 1907 – October 2, 1989) was a New Orleans blues and jazz singer, famous for his 1940s recordings with Sidney Bechet and Mezz Mezzrow.",
+    "activeFrom": "1925",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Cousin_Joe",
+    "secondaryInstruments": [
+      "Vocals",
+      "Guitar"
+    ],
+    "createdAt": "2026-09-22"
+  },
+  {
+    "id": "charlie-burse",
+    "name": "Charlie Burse",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjFmroI_64dRP5ph2a6Ls35fmFGdvmQ3k5uSHc0SMdmNR0dB-aJYqiRHjGpb7jmWoESqwIjAd5pSBapMizVC2EVQqib0GABKVFhkHcdyv7ZO9E7t1ZRk97zlB4IYqcjqEt1ckGkPazjJQ/s1600/bdr-171021.jpg",
+    "image_source": "blinddogradio.blogspot.com",
+    "birthDate": "1901-08-25",
+    "birthPlace": "Decatur, Alabama",
+    "birthCoords": [
+      -86.983392,
+      34.580992
+    ],
+    "deathDate": "1965-12-20",
+    "deathPlace": "Memphis",
+    "deathCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Mandolin",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Od1jZbx-lrE",
+    "albums": [
+      {
+        "name": "Charlie Burse And his Memphis Mudcats: Memphis Highway Stomp",
+        "youtubeLink": "https://www.youtube.com/watch?v=OIAdKuNHkLY"
+      }
+    ],
+    "description": "Charlie Burse (August 25, 1901 – December 20, 1965) was an American blues musician, best known for his work with the Memphis Jug Band.  His nicknames included \"Laughing Charlie,\" \"Uke Kid Burse\" and \"The Ukulele Kid. \" The \"uke\" in his nicknames referred to the first instrument he was known for, the tenor banjo, which was commonly called a \"ukulele-banjo\" in the South.",
+    "activeFrom": "1921",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "will-shade",
+      "memphis-jug-band"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Charlie_Burse",
+    "secondaryInstruments": [
+      "Banjo",
+      "Tenor guitar"
+    ],
+    "createdAt": "2026-09-22"
+  },
+  {
+    "id": "richard-trice",
+    "name": "Richard Trice",
+    "image": "https://www.wirz.de/music/tricewil/grafik/tricer14.jpg",
+    "image_source": "sentirelblues.com",
+    "birthDate": "1917-11-16",
+    "birthPlace": "Chapel Hill, North Carolina",
+    "birthCoords": [
+      -79.049922222222,
+      35.907308333333
+    ],
+    "deathDate": "2000-04-06",
+    "deathPlace": "Burnsville",
+    "deathCoords": [
+      -82.2975,
+      35.9186
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=NmtbGZZBZmQ",
+    "albums": [
+      {
+        "name": "Lazy Bug Blues",
+        "youtubeLink": "https://www.youtube.com/watch?v=NmtbGZZBZmQ"
+      }
+    ],
+    "description": "Richard Trice (November 16, 1917 – April 6, 2000) was an American blues guitarist, singer and songwriter.  He released two singles.  He lived most of his life in his native North Carolina and played in its regional blues style, often referred to as Piedmont blues, East Coast blues, or more generally country blues.",
+    "activeFrom": "1937",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "willie-trice",
+      "blind-boy-fuller"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Richard_Trice",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-22"
+  },
+  {
+    "id": "bull-city-red",
+    "name": "Bull City Red",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1917-02-19",
+    "birthPlace": "Durham, North Carolina",
+    "birthCoords": [
+      -78.89861111111111,
+      35.994166666666665
+    ],
+    "deathDate": "1958-10-01",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=USoxOz3OsAM",
+    "albums": [
+      {
+        "name": "Mississippi River",
+        "youtubeLink": "https://www.youtube.com/watch?v=USoxOz3OsAM"
+      }
+    ],
+    "description": "Bull City Red (born George Washington, February 19, 1917 – October 1958) was an American Piedmont blues guitarist, singer, and predominantly washboard player, most closely associated with Blind Boy Fuller and the Reverend Gary Davis.  Little is known of his life outside of his recording career.",
+    "activeFrom": "1937",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "blind-boy-fuller",
+      "reverend-gary-davis"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Bull_City_Red",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-22"
+  },
+  {
+    "id": "hattie-hart",
+    "name": "Hattie Hart",
+    "image": "https://alchetron.com/cdn/hattie-hart-94f1dacc-1e4a-4fc5-9f46-af49f5f45b1-resize-750.jpeg",
+    "image_source": "alchetron.com",
+    "birthDate": "1900",
+    "birthPlace": "Memphis, Tennessee",
+    "birthCoords": [
+      -90.049,
+      35.1495
+    ],
+    "deathDate": "1946",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=B5aZtofb17Y",
+    "albums": [
+      {
+        "name": "Coldest Stuff in Town",
+        "youtubeLink": "https://www.youtube.com/watch?v=B5aZtofb17Y"
+      }
+    ],
+    "description": "Hattie Hart (c.  1900 - after 1946) was an American Memphis blues singer and songwriter.  She was active as a recording artist from the late 1920s to the mid-1930s.",
+    "activeFrom": "1928",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "memphis-jug-band",
+      "will-shade"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Hattie_Hart",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-22"
+  },
+  {
+    "id": "al-king",
+    "name": "Al King",
+    "image": "https://target.scene7.com/is/image/Target/GUEST_73e2108b-a94c-4996-8463-fff4dfa7faf4",
+    "image_source": "target.com",
+    "birthDate": "1923-08-08",
+    "birthPlace": "Monroe, Louisiana",
+    "birthCoords": [
+      -92.1183,
+      32.5094
+    ],
+    "deathDate": "1999-01-21",
+    "deathPlace": "Oakland, California",
+    "deathCoords": [
+      -122.2712,
+      37.8044
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=36GJvxcO0pU",
+    "albums": [
+      {
+        "name": "Together (The Complete Kent and Modern Recordings)",
+        "youtubeLink": "https://www.youtube.com/watch?v=VoWKMTpLWqA"
+      }
+    ],
+    "description": "Alvin K.  Smith (August 8, 1923 – January 21, 1999), who performed and recorded as Al King,  was an American blues singer and songwriter. \nKing was born in Monroe, Louisiana.",
+    "activeFrom": "1957",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "johnny-heartsman"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Al_King",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-22"
   }
 ]
