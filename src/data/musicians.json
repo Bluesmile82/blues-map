@@ -223,8 +223,7 @@
     "description": "Albert Ammons was one of the three great boogie-woogie pianists of the late 1930s alongside Meade Lux Lewis and Pete Johnson. His powerful left-hand bass patterns and energetic style helped bring boogie-woogie from Chicago clubs to Carnegie Hall and international audiences.",
     "activeFrom": "1936",
     "influences": [
-      "cecil-gant",
-      "george-w-thomas"
+      "cecil-gant"
     ],
     "influencedBy": [
       "pinetop-smith",
@@ -232,7 +231,8 @@
       "jimmy-yancey",
       "charlie-spand",
       "jimmy-blythe",
-      "meade-lux-lewis"
+      "meade-lux-lewis",
+      "george-w-thomas"
     ],
     "incomplete": false,
     "playedWith": [
@@ -3515,11 +3515,10 @@
       "robert-pete-williams",
       "lil-son-jackson",
       "thomas-shaw",
-      "elzadie-robinson"
-    ],
-    "influencedBy": [
+      "elzadie-robinson",
       "ralph-willis"
     ],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "lead-belly",
@@ -4782,11 +4781,12 @@
     ],
     "description": "Walter Brown \"Brownie\" McGhee (November 30, 1915 – February 16, 1996) was an American folk and Piedmont blues singer and guitarist, best known for his collaboration with the harmonica player Sonny Terry.",
     "activeFrom": "1961",
-    "influences": [],
+    "influences": [
+      "tarheel-slim"
+    ],
     "influencedBy": [
       "blind-boy-fuller",
-      "jim-jackson",
-      "tarheel-slim"
+      "jim-jackson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -14487,10 +14487,10 @@
     "albums": [],
     "description": "Jesse \"Babyface\" Thomas was a Louisiana blues guitarist whose performing career spanned eight decades. He recorded \"Blue Goose Blues\" for Victor Records in 1929.",
     "activeFrom": "1929",
-    "influences": [],
-    "influencedBy": [
+    "influences": [
       "lafayette-thomas"
     ],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Jesse_Thomas_(musician)",
@@ -17464,14 +17464,13 @@
     ],
     "description": "John Dawson Winter III (February 23, 1944 – July 16, 2014) was an American singer, guitarist, songwriter, and record producer.  Winter was known for his high-energy blues rock albums, live performances, and slide guitar playing from the late 1960s into the early 2000s.  He also produced three Grammy Award–winning albums for blues singer and guitarist Muddy Waters.",
     "activeFrom": "1964",
-    "influences": [
-      "julius-daniels"
-    ],
+    "influences": [],
     "influencedBy": [
       "muddy-waters",
       "bb-king",
       "bobby-blue-bland",
-      "robert-johnson"
+      "robert-johnson",
+      "julius-daniels"
     ],
     "incomplete": false,
     "playedWith": [
@@ -22160,10 +22159,10 @@
     ],
     "description": "Luke Jordan was an American blues guitarist and vocalist from Lynchburg, Virginia. Known for his smooth, relaxed tenor voice contrasting with harsher Delta blues singers, he recorded for Victor Records in Charlotte in 1927 and in New York in 1929. His song 'Church Bells Blues' was later recorded by Ralph Willis and David Bromberg.",
     "activeFrom": "1927",
-    "influences": [],
-    "influencedBy": [
+    "influences": [
       "ralph-willis"
     ],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Luke_Jordan",
@@ -23515,12 +23514,12 @@
     "activeFrom": "1927",
     "influences": [
       "big-maceo-merriweather",
-      "cecil-gant",
-      "george-w-thomas"
+      "cecil-gant"
     ],
     "influencedBy": [
       "hersal-thomas",
-      "jimmy-yancey"
+      "jimmy-yancey",
+      "george-w-thomas"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31743,13 +31742,13 @@
       "mel-brown",
       "charlie-baty",
       "goree-carter",
-      "roy-gaines"
+      "roy-gaines",
+      "lafayette-thomas"
     ],
     "influencedBy": [
       "blind-lemon-jefferson",
       "leroy-carr",
-      "lonnie-johnson",
-      "lafayette-thomas"
+      "lonnie-johnson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -42286,11 +42285,11 @@
       "elvis-presley",
       "bb-king",
       "bobby-blue-bland",
-      "nappy-brown"
+      "nappy-brown",
+      "tommy-ridgley"
     ],
     "influencedBy": [
-      "wynonie-harris",
-      "tommy-ridgley"
+      "wynonie-harris"
     ],
     "incomplete": false,
     "playedWith": [
@@ -49545,11 +49544,10 @@
     "description": "Noah Lewis (September 3, 1891 – February 7, 1961) was an American jug band and country blues musician, generally known for playing the harmonica.",
     "activeFrom": "1927",
     "influences": [
-      "hammie-nixon"
-    ],
-    "influencedBy": [
+      "hammie-nixon",
       "memphis-willie-b"
     ],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "gus-cannon",
@@ -51974,10 +51972,10 @@
     ],
     "description": "Allen Rathel Bunn (September 24, 1923 – August 21, 1977), who was sometimes credited as Alden Bunn and who performed as Tarheel Slim, was an American singer, guitarist and songwriter whose work spanned gospel, blues, doowop, R&B, pop, and rockabilly.   After singing in various gospel groups he became a member of The Larks before recording with his wife Anna Lee \"Little Ann\" Sandford, and then as a solo performer.",
     "activeFrom": "1951",
-    "influences": [
+    "influences": [],
+    "influencedBy": [
       "brownie-mcghee"
     ],
-    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "sonny-terry",
@@ -52036,11 +52034,11 @@
     "albums": [],
     "description": "George Washington Thomas Jr.  (March 9, 1883 – March 6, 1937) was an American blues and jazz pianist and songwriter.   He wrote several influential early boogie-woogie piano pieces including \"The New Orleans Hop Scop Blues\", \"The Fives\", and \"The Rocks\", which some believe he may have recorded himself under the name Clay Custer.",
     "activeFrom": "1900",
-    "influences": [],
-    "influencedBy": [
+    "influences": [
       "meade-lux-lewis",
       "albert-ammons"
     ],
+    "influencedBy": [],
     "incomplete": true,
     "playedWith": [
       "sippie-wallace",
@@ -52102,10 +52100,10 @@
     ],
     "description": "Memphis Willie B.  (November 4, 1911 – October 5, 1993) was an American Memphis blues guitarist, harmonica player, singer and songwriter. \nHe was known for his work with Jack Kelly's Jug Busters and the Memphis Jug Band.",
     "activeFrom": "1930",
-    "influences": [
+    "influences": [],
+    "influencedBy": [
       "noah-lewis"
     ],
-    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "robert-johnson",
@@ -52161,11 +52159,11 @@
     ],
     "description": "Lafayette Jerl Thomas (June 13, 1928 – May 20, 1977) was an American blues singer, and guitarist.",
     "activeFrom": "1947",
-    "influences": [
+    "influences": [],
+    "influencedBy": [
       "jesse-thomas",
       "t-bone-walker"
     ],
-    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "jimmy-mccracklin",
@@ -52209,10 +52207,10 @@
     ],
     "description": "Thomas Herman Ridgley (October 30, 1925 – August 11, 1999) was an American R&B singer, pianist, songwriter and bandleader in New Orleans, Louisiana.  In a musical career lasting half a century Ridgley was a stalwart of the New Orleans rhythm and blues scene.   Although he never had a national hit, unlike several of his contemporaries, he made numerous, popular recordings that sold mainly in New Orleans and Louisiana beginning in 1949 with a final release in 1995.",
     "activeFrom": "1949",
-    "influences": [
+    "influences": [],
+    "influencedBy": [
       "roy-brown"
     ],
-    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "ray-charles",
@@ -52259,10 +52257,10 @@
     ],
     "description": "Julius Daniels (November 20, 1901 – October 18, 1947) was an American Piedmont blues musician.  His song \"99 Year Blues\" appeared on the box set Anthology of American Folk Music and has been covered by Jim Kweskin, Chris Smither, Johnny Winter, Charlie Parr and Hot Tuna on their album Burgers. \nDaniels was born in Denmark, South Carolina, United States.",
     "activeFrom": "1927",
-    "influences": [],
-    "influencedBy": [
+    "influences": [
       "johnny-winter"
     ],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Julius_Daniels",
@@ -52302,11 +52300,11 @@
     ],
     "description": "Ralph Willis (c.  1910 – June 11, 1957) was an American Piedmont blues and country blues singer, guitarist and songwriter.  Some of his Savoy records were released under the pseudonyms Washboard Pete, Alabama Slim, and Sleepy Joe.",
     "activeFrom": "1944",
-    "influences": [
+    "influences": [],
+    "influencedBy": [
       "blind-lemon-jefferson",
       "luke-jordan"
     ],
-    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "brownie-mcghee",
@@ -52346,7 +52344,7 @@
       }
     ],
     "description": "Adele Hall Ward, better known as Vera Hall (April 6, 1902 – January 29, 1964), was an American folk singer from the Livingston, Alabama region.  Best known for her 1937 song \"Trouble So Hard\", she was inducted into the Alabama Women's Hall of Fame in 2005.",
-    "activeFrom": "1960",
+    "activeFrom": "1937",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
