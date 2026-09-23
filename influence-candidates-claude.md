@@ -7,7 +7,7 @@ stated in a way the checks could not confirm.
 
 - **Alan Wilson** — _influencer starts 38y later_
   > Al Wilson taught Son House how to play Son House.
-- **Andy Rodgers** — _influencer starts 29y later_
+- **Andy Rodgers** — _influencer starts 11y later_
   > His cousins, Sonny Boy Williamson II and Bo Diddley, inspired him to become a musician.
 - **Andy Rodgers** — _influencer starts 21y later_
   > His cousins, Sonny Boy Williamson II and Bo Diddley, inspired him to become a musician.
@@ -17,3 +17,5 @@ stated in a way the checks could not confirm.
   > Their duet style influenced the young Memphis Minnie in duets with her husband, Kansas Joe McCoy.
 - **Frankie Lee Sims** — _influencer starts 19y later_
   > T-Bone Walker acknowledged Sims's influence on his style of playing, and Hopkins got some ideas from him.
+- **Woodrow Adams** — _influencer starts 14y later_
+  > The song was inspired by Adams's life on a plantation and emulates the instrumental and melodic style of Howlin' Wolf, who taught Adams how to play harmonica

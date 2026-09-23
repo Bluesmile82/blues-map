@@ -3214,7 +3214,7 @@
       }
     ],
     "description": "Black Ace (Babe Kyro Lemon Turner) was a Texas blues musician known for playing a National steel guitar flat on his lap. He hosted a radio show in Fort Worth in the late 1930s and recorded his signature song 'Black Ace'. He was rediscovered in 1960 and recorded for Arhoolie Records.",
-    "activeFrom": "1960",
+    "activeFrom": "1937",
     "influences": [],
     "influencedBy": [
       "oscar-buddy-woods",
@@ -12888,7 +12888,7 @@
       }
     ],
     "description": "Chester Arthur Burnett, known as Howlin' Wolf, was a massive physical presence with a ferocious performing style. His Chess Records work with Willie Dixon produced some of the greatest blues recordings ever made.",
-    "activeFrom": "1959",
+    "activeFrom": "1951",
     "influences": [
       "buddy-guy",
       "bobby-blue-bland",
@@ -14630,7 +14630,9 @@
       "howlin-wolf",
       "robert-johnson",
       "elvis-presley",
-      "jimmy-reed"
+      "jimmy-reed",
+      "t-bone-walker",
+      "van-morrison"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -15113,7 +15115,8 @@
       "nick-moss"
     ],
     "influencedBy": [
-      "joe-willie-wilkins"
+      "joe-willie-wilkins",
+      "sonny-boy-williamson-i"
     ],
     "incomplete": false,
     "playedWith": [
@@ -17325,7 +17328,9 @@
     "description": "Johnny Temple (October 18, 1906 – November 22, 1968) was an American country blues singer and guitarist. He recorded for Decca Records in the 1930s and 1940s and was known for his distinctive vocal style and guitar work in the country blues tradition.",
     "activeFrom": "1935",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "skip-james"
+    ],
     "incomplete": false,
     "playedWith": [
       "skip-james",
@@ -20864,7 +20869,8 @@
     "influencedBy": [
       "muddy-waters",
       "sonny-boy-williamson",
-      "moody-jones"
+      "moody-jones",
+      "sonny-boy-williamson-i"
     ],
     "incomplete": false,
     "playedWith": [
@@ -24710,7 +24716,8 @@
       "robert-johnson",
       "willie-brown",
       "big-bill-broonzy",
-      "robert-petway"
+      "robert-petway",
+      "sonny-boy-williamson-i"
     ],
     "incomplete": false,
     "playedWith": [
@@ -27031,7 +27038,8 @@
       "nappy-brown",
       "cow-cow-davenport",
       "leroy-carr",
-      "josh-white"
+      "josh-white",
+      "mahalia-jackson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -28152,7 +28160,8 @@
       "otis-redding",
       "howlin-wolf",
       "t-bone-walker",
-      "fats-domino"
+      "fats-domino",
+      "the-band"
     ],
     "incomplete": false,
     "playedWith": [
@@ -29101,7 +29110,9 @@
       "otis-clay",
       "diunna-greenleaf"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "mahalia-jackson"
+    ],
     "incomplete": false,
     "playedWith": [
       "barbara-lynn",
@@ -30366,7 +30377,8 @@
     ],
     "influencedBy": [
       "muddy-waters",
-      "lightnin-hopkins"
+      "lightnin-hopkins",
+      "jimmy-reed"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30438,7 +30450,8 @@
     "activeFrom": "1945",
     "influences": [],
     "influencedBy": [
-      "peetie-wheatstraw"
+      "peetie-wheatstraw",
+      "black-ace"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -30601,7 +30614,8 @@
       "little-hatch"
     ],
     "influencedBy": [
-      "sonny-boy-williamson-i"
+      "sonny-boy-williamson-i",
+      "sonny-boy-williamson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -30825,7 +30839,7 @@
       }
     ],
     "description": "Sonny Boy Williamson II (Aleck Ford Miller) was one of the most charismatic and idiosyncratic figures in blues. His King Biscuit Time radio show made him a household name in the South, and his European tours inspired the British blues boom.",
-    "activeFrom": "1959",
+    "activeFrom": "1941",
     "influences": [
       "little-walter",
       "alexis-korner",
@@ -30967,7 +30981,10 @@
     "description": "Clarence Smith (born Clarence Edward Mauldin; November 3, 1940 – December 14, 2021), known as Sonny Rhodes, was an American blues singer and lap steel guitar player.  He recorded over two hundred songs.  \"I'm what you call a self-proclaimed Disciple of the Blues!",
     "activeFrom": "1958",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "t-bone-walker",
+      "pee-wee-crayton"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sonny_Rhodes",
@@ -31009,7 +31026,10 @@
     "description": "Oliver Lee \"Sonny\" Rodgers (December 4, 1939 – May 7, 1990) was an American electric blues guitarist, singer and songwriter.  He won a W. C.",
     "activeFrom": "1960",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "robert-nighthawk",
+      "muddy-waters"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sonny_Rodgers",
@@ -31281,7 +31301,13 @@
       "jimi-hendrix",
       "johnny-guitar-watson",
       "freddie-king",
-      "lightnin-hopkins"
+      "lightnin-hopkins",
+      "jimmie-vaughan",
+      "otis-rush",
+      "muddy-waters",
+      "jimmy-rogers",
+      "howlin-wolf",
+      "guitar-slim"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31333,7 +31359,9 @@
     "description": "Sue Foley (born March 29, 1968) is a Canadian multi-award-winning blues guitarist and singer/songwriter known for her fiery Texas blues style and refined acoustic touch.  A five-time Blues Music Award winner for Traditional Blues Female,   and a Juno recipient, she has shared the stage with musicians including B. B.",
     "activeFrom": "1992",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "rolling-stones"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Sue_Foley",
@@ -31511,7 +31539,19 @@
       "stevie-ray-vaughan",
       "freddie-king",
       "buddy-guy",
-      "koko-taylor"
+      "koko-taylor",
+      "mississippi-john-hurt",
+      "lightnin-hopkins",
+      "bonnie-raitt",
+      "irma-thomas",
+      "etta-james",
+      "aretha-franklin",
+      "otis-rush",
+      "ronnie-earl",
+      "otis-clay",
+      "ray-charles",
+      "billie-holiday",
+      "mahalia-jackson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31699,7 +31739,8 @@
     "influences": [],
     "influencedBy": [
       "tabby-thomas",
-      "henry-gray"
+      "henry-gray",
+      "raful-neal"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -31809,7 +31850,9 @@
       "johnny-b-moore"
     ],
     "influencedBy": [
-      "howlin-wolf"
+      "howlin-wolf",
+      "muddy-waters",
+      "willie-dixon"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -31866,7 +31909,13 @@
     "influences": [],
     "influencedBy": [
       "henry-thomas",
-      "ov-wright"
+      "ov-wright",
+      "jimmy-reed",
+      "son-house",
+      "sleepy-john-estes",
+      "big-mama-thornton",
+      "howlin-wolf",
+      "sonny-terry"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31959,7 +32008,10 @@
       "elmore-james"
     ],
     "influencedBy": [
-      "muddy-waters"
+      "muddy-waters",
+      "ma-rainey",
+      "bessie-smith",
+      "ida-cox"
     ],
     "incomplete": false,
     "playedWith": [
@@ -32791,7 +32843,8 @@
     "influences": [],
     "influencedBy": [
       "muddy-waters",
-      "jeff-beck"
+      "jeff-beck",
+      "rolling-stones"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -32843,7 +32896,9 @@
     "description": "Huary Perry \"U. P. \" Wilson (September 4, 1934 – September 22, 2004) was an American electric blues guitarist and singer who performed Texas blues.",
     "activeFrom": "1964",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "frankie-lee-sims"
+    ],
     "incomplete": false,
     "playedWith": [
       "robert-ealey"
@@ -32951,7 +33006,12 @@
       "sonny-boy-williamson",
       "lightnin-hopkins",
       "jimmy-reed",
-      "ray-charles"
+      "ray-charles",
+      "sonny-terry",
+      "brownie-mcghee",
+      "mahalia-jackson",
+      "woody-guthrie",
+      "mose-allison"
     ],
     "incomplete": false,
     "playedWith": [
@@ -33031,7 +33091,10 @@
       "professor-longhair",
       "ray-charles",
       "snooks-eaglin",
-      "louis-jordan"
+      "louis-jordan",
+      "tedeschi-trucks-band",
+      "aretha-franklin",
+      "bonnie-raitt"
     ],
     "incomplete": false,
     "playedWith": [
@@ -34215,7 +34278,9 @@
     "description": "William Augusta Trice (February 10, 1908 – December 11, 1976) was an American blues guitarist, singer and songwriter.  He released two singles and an album.  He remained loyal to his native North Carolina and its regional blues style, often referred to as Piedmont blues, East Coast blues, or more generally country blues.",
     "activeFrom": "1930",
     "influences": [],
-    "influencedBy": [],
+    "influencedBy": [
+      "reverend-gary-davis"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Willie_Trice",
@@ -35677,7 +35742,8 @@
     "activeFrom": "1995",
     "influences": [],
     "influencedBy": [
-      "little-walter"
+      "little-walter",
+      "paul-butterfield"
     ],
     "incomplete": false,
     "playedWith": [
