@@ -50810,8 +50810,8 @@
   {
     "id": "charles-avery",
     "name": "Charles Avery",
-    "image": "",
-    "image_source": null,
+    "image": "https://static.wixstatic.com/media/e6597e_740f1da4a4e44b47adeb842b871dff2d~mv2.png/v1/fill/w_596,h_391,al_c,lg_1,q_85/e6597e_740f1da4a4e44b47adeb842b871dff2d~mv2.png",
+    "image_source": "compendium-musicum.com",
     "birthDate": "1892-02-02",
     "birthPlace": "Brighton, Alabama",
     "birthCoords": [
@@ -50853,8 +50853,8 @@
   {
     "id": "johnny-woods",
     "name": "Johnny Woods",
-    "image": "",
-    "image_source": null,
+    "image": "https://64.media.tumblr.com/31740ee22e5dc01bbd208de74e8a6886/0ab3e7827442d530-13/s1280x1920/d5469d6b4cf5508ee73497de331e6146b37de105.jpg",
+    "image_source": "oblivion records blog",
     "birthDate": "1917-11-01",
     "birthPlace": "Looxahoma, Mississippi",
     "birthCoords": [
@@ -50878,7 +50878,7 @@
     ],
     "instrument": "Harmonica",
     "bluesStyle": "Hill Country Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=-Doq-3_ouqg",
+    "youtubeLink": "https://www.youtube.com/watch?v=2tW1OF7mh2Y",
     "albums": [
       {
         "name": "Going Down South (1998)",
@@ -50905,8 +50905,8 @@
   {
     "id": "polka-dot-slim",
     "name": "Polka Dot Slim",
-    "image": "",
-    "image_source": null,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhw8AgRJHWYxinoeuvnxHtvKAu1wItD3on3VbY5ac8kHyyru6AGe3fUKIDB6K1gGaf6tc-AePTHiJz47sge7MZxiLk85hQeJWQreEfeXMOeSRNS2-M3PvjgFKvLVKTGPUE8O2E5BBIq8EKrVPuhpoSENhvBF6Cjx-V_0dvbFS_JAd7rUhjDUVDNyxBn5oAI/w640-h640/Forrest%20City%20Joe%20&%20Polka%20Dot%20Slim%20-%20Downhome%20Delta%20Harmonica%20-%20Front.jpg",
+    "image_source": "yardraw.blogspot.com",
     "birthDate": "1926-12-09",
     "birthPlace": "Woodville, Mississippi",
     "birthCoords": [
@@ -50961,8 +50961,8 @@
   {
     "id": "cousin-joe",
     "name": "Cousin Joe",
-    "image": "",
-    "image_source": null,
+    "image": "https://alchetron.com/cdn/cousin-joe-19f40321-f49b-4529-b778-3d15d0eec09-resize-750.jpeg",
+    "image_source": "alchetron.com",
     "birthDate": "1907-12-20",
     "birthPlace": "Wallace, Louisiana",
     "birthCoords": [
@@ -51013,8 +51013,8 @@
   {
     "id": "charlie-burse",
     "name": "Charlie Burse",
-    "image": "",
-    "image_source": null,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjFmroI_64dRP5ph2a6Ls35fmFGdvmQ3k5uSHc0SMdmNR0dB-aJYqiRHjGpb7jmWoESqwIjAd5pSBapMizVC2EVQqib0GABKVFhkHcdyv7ZO9E7t1ZRk97zlB4IYqcjqEt1ckGkPazjJQ/s1600/bdr-171021.jpg",
+    "image_source": "blinddogradio.blogspot.com",
     "birthDate": "1901-08-25",
     "birthPlace": "Decatur, Alabama",
     "birthCoords": [
@@ -51064,8 +51064,8 @@
   {
     "id": "richard-trice",
     "name": "Richard Trice",
-    "image": "",
-    "image_source": null,
+    "image": "https://www.wirz.de/music/tricewil/grafik/tricer14.jpg",
+    "image_source": "sentirelblues.com",
     "birthDate": "1917-11-16",
     "birthPlace": "Chapel Hill, North Carolina",
     "birthCoords": [
@@ -51153,15 +51153,15 @@
   {
     "id": "hattie-hart",
     "name": "Hattie Hart",
-    "image": "",
-    "image_source": null,
+    "image": "https://alchetron.com/cdn/hattie-hart-94f1dacc-1e4a-4fc5-9f46-af49f5f45b1-resize-750.jpeg",
+    "image_source": "alchetron.com",
     "birthDate": "1900",
     "birthPlace": "Memphis, Tennessee",
     "birthCoords": [
       -90.049,
       35.1495
     ],
-    "deathDate": null,
+    "deathDate": "1946",
     "deathPlace": null,
     "deathCoords": null,
     "spentTimePlaces": [
@@ -51205,8 +51205,8 @@
   {
     "id": "al-king",
     "name": "Al King",
-    "image": "",
-    "image_source": null,
+    "image": "https://target.scene7.com/is/image/Target/GUEST_73e2108b-a94c-4996-8463-fff4dfa7faf4",
+    "image_source": "target.com",
     "birthDate": "1923-08-08",
     "birthPlace": "Monroe, Louisiana",
     "birthCoords": [
