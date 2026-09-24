@@ -51872,8 +51872,8 @@
   {
     "id": "mama-yancey",
     "name": "Mama Yancey",
-    "image": "",
-    "image_source": null,
+    "image": "https://i.discogs.com/1eUv40J7Zdc0pvCzt5b6vxIPgYaSfkGxjwGO4gGqmWY/rs:fit/g:sm/q:90/h:565/w:522/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE0NjM4/MjItMTYzNjg5OTI1/NS05Nzk0LmpwZWc.jpeg",
+    "image_source": "discogs",
     "birthDate": "1896-01-01",
     "birthPlace": "Cairo",
     "birthCoords": [
@@ -52030,7 +52030,7 @@
     ],
     "instrument": "Piano",
     "bluesStyle": "Boogie Woogie",
-    "youtubeLink": "https://www.youtube.com/watch?v=atiuiTfPLTA",
+    "youtubeLink": "https://www.youtube.com/watch?v=dVIMeG7Xe34",
     "albums": [],
     "description": "George Washington Thomas Jr.  (March 9, 1883 – March 6, 1937) was an American blues and jazz pianist and songwriter.   He wrote several influential early boogie-woogie piano pieces including \"The New Orleans Hop Scop Blues\", \"The Fives\", and \"The Rocks\", which some believe he may have recorded himself under the name Clay Custer.",
     "activeFrom": "1900",
@@ -52052,8 +52052,8 @@
   {
     "id": "memphis-willie-b",
     "name": "Memphis Willie B.",
-    "image": "",
-    "image_source": null,
+    "image": "https://alchetron.com/cdn/memphis-willie-b-51d3df96-055f-400b-92d1-f9a19fe1452-resize-750.jpg",
+    "image_source": "alchetron.com",
     "birthDate": "1911-11-04",
     "birthPlace": "Shelby County",
     "birthCoords": [
@@ -52125,8 +52125,8 @@
   {
     "id": "lafayette-thomas",
     "name": "Lafayette Thomas",
-    "image": "",
-    "image_source": null,
+    "image": "https://alchetron.com/cdn/lafayette-thomas-5f49cb9f-b54c-45f2-9d2a-4a888cbfc08-resize-750.jpeg",
+    "image_source": "alchetron.com",
     "birthDate": "1928-06-13",
     "birthPlace": "Shreveport",
     "birthCoords": [
@@ -52223,7 +52223,7 @@
   {
     "id": "julius-daniels",
     "name": "Julius Daniels",
-    "image": "",
+    "image": "https://i.ytimg.com/vi/fSGYSb8CD9E/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGMgYyhjMA8=&rs=AOn4CLAQ2zcA9H093Xw_ykS-F3i8xQ_Zpw",
     "image_source": null,
     "birthDate": "1901-11-20",
     "birthPlace": "Denmark",
@@ -52270,8 +52270,8 @@
   {
     "id": "ralph-willis",
     "name": "Ralph Willis",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Ralph_Willis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-    "image_source": null,
+    "image": "https://i.discogs.com/5MsK1hEaGLIMRQwmOpetXQ4K0h5WBN73pgZudIElUdY/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE2MjI5/NTktMTQ2NDU5Nzk2/Ni03NzMxLmpwZWc.jpeg",
+    "image_source": "discogs",
     "birthDate": "1910",
     "birthPlace": "Birmingham",
     "birthCoords": [
