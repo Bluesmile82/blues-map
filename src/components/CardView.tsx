@@ -1434,8 +1434,6 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
                 setShowDrawer(false);
               }}
               onNavigate={onSelect}
-              editMode={false}
-              onEdit={() => { }}
               onPlayVideo={(url: string) => {
                 const m = url.match(/[?&]v=([^&#]+)/) || url.match(/youtu\.be\/([^?&#]+)/);
                 if (m) {

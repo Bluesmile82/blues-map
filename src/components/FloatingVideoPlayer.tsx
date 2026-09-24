@@ -50,12 +50,21 @@ interface Props {
   autoplay?: boolean;
   /** Fired when the last available video for this musician finishes — used by the playlist */
   onEnded?: () => void;
+  /** Minimised state lives in the parent: this component is remounted on every
+      musician change, so anything kept here would be lost with each track. */
+  minimized?: boolean;
+  onMinimizedChange?: (minimized: boolean) => void;
+  /** Reports real play/pause transitions, so a track change can carry on playing. */
+  onPlayingChange?: (playing: boolean) => void;
 }
 
 const MIN_W = 200;
+const MINI_W = 258;   // the minimised bar: who is playing, and the transport
+const MINI_H = 92;    // its own corner, which the tree's left column steps around
+const MINI_GAP = 14;
 const MAX_W = 720;
 
-export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, manualVideoUrl, onClose, initialPos, initialW, onPositionChange, onSizeChange, autoplay = true, onEnded }: Props) {
+export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, manualVideoUrl, onClose, initialPos, initialW, onPositionChange, onSizeChange, autoplay = true, onEnded, minimized = false, onMinimizedChange, onPlayingChange }: Props) {
   // Ref so the YT event closure always sees the current callback
   const onEndedRef = useRef(onEnded);
   onEndedRef.current = onEnded;
@@ -70,6 +79,21 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
   const [pos, setPos] = useState<{ x: number; y: number } | null>(initialPos ?? null);
   const [w, setW] = useState(initialW ?? 320);
   const [isDragging, setIsDragging] = useState(false);
+  const setMinimized = (v: boolean) => onMinimizedChange?.(v);
+  const [viewportH, setViewportH] = useState(() => window.innerHeight);
+  const reportedOnce = useRef(false);
+  useEffect(() => {
+    // The mount-time `false` is this instance booting, not the user pausing.
+    if (!reportedOnce.current) { reportedOnce.current = true; return; }
+    onPlayingChange?.(isPlaying);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isPlaying]);
+
+  useEffect(() => {
+    const onResize = () => setViewportH(window.innerHeight);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
   const [resizeDir, setResizeDir] = useState<ResizeDir | null>(null);
   const dragOffset = useRef({ dx: 0, dy: 0 });
   const resizeStart = useRef({ mouseX: 0, w: 0, x: 0, dir: 'se' as ResizeDir });
@@ -83,6 +107,15 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
     const id = extractVideoId(album.youtubeLink);
     if (id) videos.push({ label: album.name, videoId: id });
   }
+
+  /**
+   * Autoplay is read when the player is built, never reacted to. It used to sit
+   * in that effect's dependency list, and since it now carries "was playing",
+   * pressing play flipped it — which tore the player down and rebuilt it under
+   * the track that had just started.
+   */
+  const autoplayRef = useRef(autoplay);
+  autoplayRef.current = autoplay;
 
   // Use refs so the onError closure always sees fresh values
   const videosRef = useRef(videos);
@@ -190,10 +223,10 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
 
     playerRef.current = new window.YT.Player('yt-floating-player', {
       videoId: videosRef.current[0].videoId,
-      playerVars: { autoplay: autoplay ? 1 : 0, modestbranding: 1, rel: 0 },
+      playerVars: { autoplay: autoplayRef.current ? 1 : 0, modestbranding: 1, rel: 0 },
       events: {
         onReady: ({ target }) => {
-          if (autoplay) {
+          if (autoplayRef.current) {
             target.playVideo();
             setIsPlaying(true);
           }
@@ -223,7 +256,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
         playerRef.current = null;
       }
     };
-  }, [apiReady, musicianName, youtubeUrl, albums.length, autoplay]);
+  }, [apiReady, musicianName, youtubeUrl, albums.length]);
 
   // When caller requests a specific video (e.g. album link clicked in panel)
   useEffect(() => {
@@ -267,6 +300,9 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
   if (videos.length === 0 || pos === null) return null;
 
   const currentLabel = videos[currentIndex]?.label ?? musicianName;
+  const box = minimized
+    ? { x: MINI_GAP, y: viewportH - MINI_H - MINI_GAP, width: MINI_W }
+    : { x: pos.x, y: pos.y, width: w };
 
   return (
     <>
@@ -283,56 +319,88 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
       )}
 
       <div
-        className='fixed z-50 rounded-lg border border-border-subtle overflow-hidden'
+        className='fixed z-50 rounded-lg border border-border-subtle overflow-hidden bg-bg-elevated'
         style={{
-          left: pos.x,
-          top: pos.y,
-          width: w,
+          left: box.x,
+          top: box.y,
+          width: box.width,
+          // animate the trip to the corner, but never while the user is dragging
+          transition: isDragging || resizeDir ? 'none' : 'left .3s ease-out, top .3s ease-out, width .3s ease-out',
         }}
       >
         {/* Header — drag handle */}
         <div
-          className="flex items-center justify-between px-3 py-2 bg-bg/40 backdrop-blur-sm"
-          style={{ cursor: isDragging ? 'grabbing' : 'grab', userSelect: 'none' }}
-          onMouseDown={handleDragStart}
+          className="flex items-center justify-between px-3 py-2 bg-bg-elevated/90 backdrop-blur-sm"
+          style={{
+            cursor: minimized ? 'default' : isDragging ? 'grabbing' : 'grab',
+            userSelect: 'none',
+          }}
+          onMouseDown={minimized ? undefined : handleDragStart}
         >
           <div className="flex items-center gap-2 min-w-0 pr-2">
-            {/* Drag indicator dots */}
-            <svg width="10" height="14" viewBox="0 0 10 14" fill="rgba(255,255,255,0.25)" className="shrink-0">
-              <circle cx="2.5" cy="2.5" r="1.5" />
-              <circle cx="7.5" cy="2.5" r="1.5" />
-              <circle cx="2.5" cy="7" r="1.5" />
-              <circle cx="7.5" cy="7" r="1.5" />
-              <circle cx="2.5" cy="11.5" r="1.5" />
-              <circle cx="7.5" cy="11.5" r="1.5" />
-            </svg>
+            {/* Drag indicator dots — in the theme's ink, not a fixed white. Parked
+                in the corner there is nothing to drag, so they go. */}
+            {!minimized && (
+              <svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor" className="shrink-0 text-ink3">
+                <circle cx="2.5" cy="2.5" r="1.5" />
+                <circle cx="7.5" cy="2.5" r="1.5" />
+                <circle cx="2.5" cy="7" r="1.5" />
+                <circle cx="7.5" cy="7" r="1.5" />
+                <circle cx="2.5" cy="11.5" r="1.5" />
+                <circle cx="7.5" cy="11.5" r="1.5" />
+              </svg>
+            )}
             <div className="flex flex-col min-w-0">
-              <span className="text-ink text-sm font-medium truncate">{musicianName}</span>
+              <span className={`text-ink font-medium truncate ${minimized ? 'text-xs' : 'text-sm'}`}>
+                {musicianName}
+              </span>
               {currentLabel !== musicianName && (
-                <span className="text-ink3/70 text-xs truncate">{currentLabel}</span>
+                <span className={`text-ink3 truncate ${minimized ? 'text-2xs' : 'text-xs'}`}>
+                  {currentLabel}
+                </span>
               )}
             </div>
           </div>
-          <button
-            onClick={onClose}
-            onMouseDown={(e) => e.stopPropagation()}
-            className="text-ink3/60 hover:text-ink transition-colors text-lg leading-none shrink-0"
-            aria-label="Close player"
-          >
-            ✕
-          </button>
+          <div className="flex items-center gap-2 shrink-0">
+            <button
+              onClick={() => setMinimized(!minimized)}
+              onMouseDown={(e) => e.stopPropagation()}
+              className="grid h-7 w-7 place-items-center rounded text-ink3 hover:text-ink hover:bg-bg-hover transition-colors"
+              aria-label={minimized ? 'Restore player' : 'Minimise player'}
+            >
+              <svg viewBox="0 0 16 16" className="h-4 w-4" fill="none" stroke="currentColor"
+                strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                {minimized ? <path d="M6 2H2v4M10 14h4v-4" /> : <path d="M3 8h10" />}
+              </svg>
+            </button>
+            <button
+              onClick={onClose}
+              onMouseDown={(e) => e.stopPropagation()}
+              className="text-ink3 hover:text-ink transition-colors text-lg leading-none"
+              aria-label="Close player"
+            >
+              ✕
+            </button>
+          </div>
         </div>
 
-        {/* Video */}
-        <div style={{ position: 'relative', paddingBottom: '56.25%' }}>
-          <div
-            id="yt-floating-player"
-            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-          />
+        {/* Video. Clipped rather than unmounted when minimised — taking the
+            iframe out of the DOM would tear the YouTube player down mid-track,
+            and collapsing its box to nothing makes the browser treat it as
+            offscreen and throttle playback. So an outer box of zero height hides
+            a player that still believes it is full size. */}
+        <div style={{ height: minimized ? 0 : undefined, overflow: 'hidden' }}>
+          <div style={{ position: 'relative', paddingBottom: '56.25%' }}>
+            <div
+              id="yt-floating-player"
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            />
+          </div>
         </div>
 
-        {/* Controls */}
-        <div className="flex items-center justify-center gap-3 px-3 py-3 bg-bg/50 backdrop-blur-sm">
+        {/* Controls — the whole of the minimised window */}
+        <div className={`flex items-center justify-center gap-2 bg-bg-elevated/90 backdrop-blur-sm ${minimized ? 'px-2 py-1.5' : 'px-3 py-3 gap-3'}`}>
+
           {videos.length > 1 && (
             <button
               onClick={() => handleNavigate(currentIndex - 1)}
@@ -388,8 +456,8 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
         </div>
 
         {/* Track indicator (only when multiple videos) */}
-        {videos.length > 1 && (
-          <div className="flex items-center justify-center gap-1 pb-2 bg-bg/50">
+        {videos.length > 1 && !minimized && (
+          <div className="flex items-center justify-center gap-1 pb-2 bg-bg-elevated/90">
             {videos.map((v, i) => (
               <button
                 key={i}
@@ -408,7 +476,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
         )}
 
         {/* Resize handles — all 4 corners */}
-        {([
+        {!minimized && ([
           { dir: 'nw', style: { top: 0, left: 0, cursor: 'nw-resize' } },
           { dir: 'ne', style: { top: 0, right: 0, cursor: 'ne-resize' } },
           { dir: 'sw', style: { bottom: 0, left: 0, cursor: 'sw-resize' } },

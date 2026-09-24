@@ -1566,18 +1566,6 @@ export default function InfluenceView({
                             <span className="w-3 h-3 rounded-full shrink-0" style={{ background: hex }} />
                             <span className="text-ui text-ink flex-1 truncate">{m.name}</span>
                             <span className="text-2xs shrink-0" style={{ color: hex }}>{t(`styles.${m.bluesStyle}`, m.bluesStyle).replace(' Blues', '')}</span>
-                            {import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
-                              <svg
-                                className="w-4 h-4 shrink-0"
-                                viewBox="0 0 24 24"
-                                fill={isFav ? "currentColor" : "none"}
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                style={{ color: isFav ? '#c8872a' : '#6b5c4a' }}
-                              >
-                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                              </svg>
-                            )}
                           </button>
                         );
                       })}

@@ -6,10 +6,6 @@ import type { ViewType } from '../App'
 interface NavBarProps {
   view: ViewType;
   onViewChange: (view: ViewType) => void;
-  editMode: boolean;
-  onEditModeChange: (editMode: boolean) => void;
-  onCreateNew: () => void;
-  editModeEnabled: boolean;
   onRandom: () => void;
   onPlaylist: () => void;
   onCredits: () => void;
@@ -19,7 +15,7 @@ interface NavBarProps {
   onThemeChange: (theme: 'light' | 'dark') => void;
 }
 
-export default function NavBar({ view, onViewChange, editMode, onEditModeChange, onCreateNew, editModeEnabled, onRandom, onPlaylist, onCredits, autoplay, onAutoplayChange, theme, onThemeChange }: NavBarProps) {
+export default function NavBar({ view, onViewChange, onRandom, onPlaylist, onCredits, autoplay, onAutoplayChange, theme, onThemeChange }: NavBarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { t, i18n } = useTranslation();
 
@@ -32,9 +28,9 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
       {/* View switch - desktop */}
       <div className="hidden sm:flex bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5">
         {([
-          { id: 'card', label: t('nav.card') },
-          { id: 'map', label: t('nav.map') },
           { id: 'tree', label: t('nav.tree') },
+          { id: 'map', label: t('nav.map') },
+          { id: 'card', label: t('nav.card') },
         ] as const).map(({ id, label }) => (
           <button
             key={id}
@@ -48,8 +44,8 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
       {/* View switch - mobile (no map) */}
       <div className="sm:hidden flex bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5 ml-auto">
         {([
-          { id: 'card', label: t('nav.card') },
           { id: 'tree', label: t('nav.tree') },
+          { id: 'card', label: t('nav.card') },
         ] as const).map(({ id, label }) => (
           <button
             key={id}
@@ -100,27 +96,6 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
         <button onClick={onCredits} className="flex items-center gap-2 px-3 pt-1 pb-1.5 text-ui font-medium tracking-wide text-ink3 hover:text-ink group" title={t('nav.creditsLegal')}>
           {t('nav.credits')}
         </button>
-        {editModeEnabled && editMode && (
-          <button
-            onClick={onCreateNew}
-            className="flex items-center gap-2 px-3 pt-1 pb-1.5 rounded-lg text-ui font-medium tracking-wide border transition-all duration-500 overflow-hidden w-10 hover:w-auto bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink group"
-          >
-            <span className="text-ui text-accent shrink-0">+</span>
-            <span className="hidden sm:inline opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto group-hover:ml-2 transition-all duration-500 whitespace-nowrap">{t('nav.newMusician')}</span>
-          </button>
-        )}
-        {editModeEnabled && (
-          <button
-            onClick={() => onEditModeChange(!editMode)}
-            className={[
-              'flex items-center gap-2 px-3 pt-1 pb-1.5 rounded-lg text-ui font-medium tracking-wide border transition-all duration-500 overflow-hidden w-10 hover:w-auto',
-              'bg-transparent border-border text-ink3 hover:bg-bg-hover hover:border-border-hover hover:text-ink group',
-            ].join(' ')}
-          >
-            <span className="text-ui text-accent shrink-0">{editMode ? '✓' : '✎'}</span>
-            <span className="hidden sm:inline opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto group-hover:ml-2 transition-all duration-500 whitespace-nowrap">{editMode ? t('nav.done') : t('nav.edit')}</span>
-          </button>
-        )}
         <div className="flex items-center bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5">
           <button
             onClick={() => { i18n.changeLanguage('en'); localStorage.setItem('language', 'en'); }}
@@ -197,33 +172,6 @@ export default function NavBar({ view, onViewChange, editMode, onEditModeChange,
                 <span className="text-lg text-accent">©</span>
                 <span className="text-sm">{t('nav.credits')}</span>
               </button>
-              {editModeEnabled && editMode && (
-                <button
-                  onClick={() => { onCreateNew(); setMobileMenuOpen(false) }}
-                  className="flex items-center gap-3 px-3 pt-1 pb-1.5.5 rounded-lg text-accent hover:bg-bg-hover transition-colors text-left"
-                >
-                  <span className="text-lg">+</span>
-                  <span className="text-sm">{t('nav.newMusician')}</span>
-                </button>
-              )}
-              {editModeEnabled && (
-                <button
-                  onClick={() => { onEditModeChange(!editMode); setMobileMenuOpen(false) }}
-                  className="flex items-center gap-3 px-3 pt-1 pb-1.5.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
-                >
-                  <span className="text-lg text-accent">{editMode ? '✓' : '✎'}</span>
-                  <span className="text-sm">{editMode ? t('nav.done') : t('nav.edit')}</span>
-                </button>
-              )}
-              {editModeEnabled && (
-                <button
-                  onClick={() => { onEditModeChange(!editMode); setMobileMenuOpen(false) }}
-                  className="flex items-center gap-3 px-3 pt-1 pb-1.5.5 rounded-lg text-ink hover:bg-bg-hover transition-colors text-left"
-                >
-                  <span className="text-lg">{editMode ? '✓' : '✎'}</span>
-                  <span className="text-sm">{editMode ? t('nav.doneEditing') : t('nav.editMode')}</span>
-                </button>
-              )}
               <div className="flex items-center gap-3 px-3 py-1.5">
                 <div className="flex items-center bg-bg/50 border border-border-subtle rounded-lg p-0.5 gap-0.5">
                   <button

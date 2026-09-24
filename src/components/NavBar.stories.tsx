@@ -16,12 +16,8 @@ const meta: Meta<typeof NavBar> = {
   ],
   args: {
     view: 'influence',
-    editMode: false,
-    editModeEnabled: false,
     autoplay: false,
     onViewChange: () => {},
-    onEditModeChange: () => {},
-    onCreateNew: () => {},
     onRandom: () => {},
     onCredits: () => {},
     onAutoplayChange: () => {},
@@ -50,6 +46,5 @@ export const AutoplayOn: Story = {
 }
 
 export const EditModeEnabled: Story = {
-  args: { editModeEnabled: true, editMode: true },
   decorators: [withJotai({ user: null })],
 }
