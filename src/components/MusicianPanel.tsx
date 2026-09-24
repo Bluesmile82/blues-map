@@ -1,4 +1,7 @@
 import { useMemo, useState, useEffect, useRef, useCallback } from 'react';
+
+/** Width of the Tree view's year rail, which the collapse tab must not cover. */
+const YEAR_RAIL_W = 64;
 import { useTranslation } from 'react-i18next';
 import type { Musician } from '../types';
 import { getStyleHex, getStyleColor, STYLE_HEX } from '../utils/colors';
@@ -29,8 +32,6 @@ interface MusicianPanelProps {
   musicians: Musician[];
   onClose: () => void;
   onNavigate: (musician: Musician) => void;
-  editMode: boolean;
-  onEdit: () => void;
   onPlayVideo: (url: string) => void;
   videoMusician?: Musician | null;
   manualVideoUrl?: string | null | undefined;
@@ -45,7 +46,7 @@ interface MusicianPanelProps {
   cardMode?: boolean;
 }
 
-export default function MusicianPanel({ musician, musicians, onClose, onNavigate, editMode, onEdit, onPlayVideo, videoMusician, manualVideoUrl, autoplay, onVideoClose, onVideoEnded, isMobile, bottomInset = 0, cardMode = false }: MusicianPanelProps) {
+export default function MusicianPanel({ musician, musicians, onClose, onNavigate, onPlayVideo, videoMusician, manualVideoUrl, autoplay, onVideoClose, onVideoEnded, isMobile, bottomInset = 0, cardMode = false }: MusicianPanelProps) {
   const [panelHeight, setPanelHeight] = useState<PanelHeight>('full');
   const completeMusicians = useMemo(() => musicians.filter((m) =>
     m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.activeFrom
@@ -166,9 +167,30 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   }, [snapPx]);
 
   const currentH = dragH ?? snapPx;
+  /** desktop only: slide the sidebar off to the right to get at the view behind it */
+  const [collapsed, setCollapsed] = useState(false);
 
   return (
     <>
+      {!isMobile && !cardMode && (
+        <button
+          onClick={() => setCollapsed((c) => !c)}
+          aria-label={collapsed ? t('musician.expandPanel', { defaultValue: 'Show panel' })
+            : t('musician.collapsePanel', { defaultValue: 'Hide panel' })}
+          className="fixed z-[90] grid h-16 w-7 place-items-center rounded-l-lg
+            border border-r-0 border-border-subtle bg-bg-elevated text-ink3 shadow-lg
+            transition-[right] duration-300 ease-out hover:text-ink"
+          // At the top of the panel's edge. Once the panel slides away it would sit
+          // on top of the tree's year rail, so it stops short of it.
+          style={{ top: 72, right: collapsed ? YEAR_RAIL_W : '26rem' }}
+        >
+          <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor"
+            strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+            <path d={collapsed ? 'M15 18l-6-6 6-6' : 'M9 18l6-6-6-6'} />
+          </svg>
+        </button>
+      )}
+
       <div
         className={`fixed z-80 flex flex-col overflow-hidden shadow-2xl border-t border-border-subtle
           ${isMobile
@@ -179,7 +201,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
           bottom: bottomInset,
           height: currentH,
           transition: dragH !== null ? 'none' : 'height 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-        } : undefined}
+        } : { transform: collapsed ? 'translateX(100%)' : 'none' }}
       >
         {/* Mobile drag handle — only this area is draggable */}
         <div
@@ -321,14 +343,6 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
                 })}
               </p>
               <p className="text-ink2 text-2xs sm:text-ui mt-0.5">{[musician.instrument, ...(musician.secondaryInstruments ?? [])].map(i => t(`instruments.${i}`, i)).join(', ')}</p>
-              {editMode && (
-                <button
-                  onClick={onEdit}
-                  className="mt-2 inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-accent text-bg rounded text-xs sm:text-sm font-medium hover:bg-accent/90 transition-colors"
-                >
-                  ✏️ {t('musician.editBtn')}
-                </button>
-              )}
               {/* Favorite buttons */}
               <div className="flex items-center gap-2 mt-3 sm:mt-4">
                 <button

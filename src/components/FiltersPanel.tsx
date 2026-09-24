@@ -7,8 +7,9 @@ import { listsAtom, favoritesMapAtom } from '../atoms/lists'
 import { CANONICAL_STYLES, STYLE_COLORS, CANONICAL_INSTRUMENTS, getInstrumentHex } from '../utils/colors'
 
 interface FiltersPanelProps {
-  searchValue: string
-  onSearchChange: (value: string) => void
+  /** Omit both to hide the find-by-name box — the Tree view has its own */
+  searchValue?: string
+  onSearchChange?: (value: string) => void
   textFilterValue: string
   onTextFilterChange: (value: string) => void
   showFavoritesOnly: boolean
@@ -80,7 +81,7 @@ export default function FiltersPanel({
       {(isCollapsed || !isMobile) && (
         <button
           onClick={() => setCollapsed(!isCollapsed)}
-          className="flex items-center justify-between w-full px-3 py-2 bg-bg-subtle/95 border border-border-subtle rounded-lg text-ink text-sm font-bold backdrop-blur-sm hover:border-border transition-colors"
+          className="flex items-center justify-between w-full px-3 py-2 bg-bg-subtle border border-border-subtle rounded-lg text-ink text-sm font-bold backdrop-blur-sm hover:border-border transition-colors"
         >
           <span>{t('filters.title')}</span>
           <svg
@@ -97,13 +98,15 @@ export default function FiltersPanel({
       {/* Filters content */}
       <div className={`${isCollapsed ? 'hidden' : 'flex'} flex-col gap-2`}>
         {/* Search by name */}
-        <div className="relative">
-          <SearchInput
-            value={searchValue}
-            onChange={onSearchChange}
-            placeholder={t('filters.findByName')}
-          />
-        </div>
+        {onSearchChange && (
+          <div className="relative">
+            <SearchInput
+              value={searchValue ?? ''}
+              onChange={onSearchChange}
+              placeholder={t('filters.findByName')}
+            />
+          </div>
+        )}
 
         {/* Search by description/albums */}
         <SearchInput
@@ -119,7 +122,7 @@ export default function FiltersPanel({
 
         {/* Favorites filter - only show when logged in */}
         {user && (
-          <div className="bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
+          <div className="bg-bg-elevated border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
             <div className="flex items-center gap-2">
               <input
                 type="checkbox"
@@ -153,7 +156,7 @@ export default function FiltersPanel({
         )}
 
         {/* Blues style legend */}
-        <div className="bg-bg/50 border border-border-subtle rounded-lg">
+        <div className="bg-bg-elevated border border-border-subtle rounded-lg">
           <button
             onClick={() => setLegendOpen(!legendOpen)}
             className="flex items-center justify-between w-full px-3 py-2 text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
@@ -171,10 +174,11 @@ export default function FiltersPanel({
                 return (
                   <div
                     key={style}
-                    className="flex items-center gap-2 px-2 py-1 cursor-pointer transition-colors hover:bg-bg-hover rounded"
+                    className="flex items-center gap-2 px-2 py-1 cursor-pointer transition-colors hover:bg-bg-hover rounded text-ink2"
                     style={{
                       background: isActive ? `rgba(${r},${g},${b},0.15)` : undefined,
-                      color: isActive ? `rgb(${r},${g},${b})` : 'rgba(255,255,255,0.65)',
+                      // unset, not white: the panel is light in the light theme
+                      color: isActive ? `rgb(${r},${g},${b})` : undefined,
                     }}
                     onClick={() => onStyleFilterChange(isActive ? null : style)}
                   >
@@ -208,7 +212,7 @@ export default function FiltersPanel({
 
         {/* Instrument filter */}
         {onInstrumentFilterChange && availableInstruments.length > 0 && (
-          <div className="bg-bg/50 border border-border-subtle rounded-lg">
+          <div className="bg-bg-elevated border border-border-subtle rounded-lg">
             <button
               onClick={() => setInstrumentsOpen(!instrumentsOpen)}
               className="flex items-center justify-between w-full px-3 py-2 text-2xs text-accent tracking-widest uppercase hover:text-accent2 transition-colors"
@@ -256,7 +260,7 @@ export default function FiltersPanel({
         )}
 
         {/* Year range filter */}
-        <div className="bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-1.5">
+        <div className="bg-bg-elevated border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-1.5">
           <div className="flex items-center justify-between">
             <span className="text-2xs text-accent tracking-widest uppercase">{t('filters.activeYears')}</span>
             {yearRange && (

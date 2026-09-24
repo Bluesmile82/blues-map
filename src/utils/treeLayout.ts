@@ -25,22 +25,27 @@ export const CANOPY_Y = 120;
 const TREE_H = (YEAR_MAX - YEAR_MIN) * PX_PER_YEAR;
 export const GROUND_Y = CANOPY_Y + TREE_H;
 export const TRUNK_BASE_Y = GROUND_Y + 420;
-// How far below the trunk's base the buttress roots sit.
-const ROOT_DROP = 110;
+// Where the flare meets the soil and the roots run out. The last stretch of the
+// trunk is buried, so the base widens into the ground instead of stopping on it.
+export const SOIL_Y = TRUNK_BASE_Y - 40;
 
-const SLOT = 30;            // horizontal room per musician in a row
+const SLOT = 34;            // horizontal room per musician in a row
 const SLICE_PAD = 44;
 const ROW_H = 30;           // minimum vertical gap between two musicians on the same limb
-const MIN_SLICE = 150;
+const MIN_SLICE = 170;
 // The influential stay on the wood; the quiet ones ride out on twigs.
-const LIMB_REACH = [12, 30];      // tier 0 and tier 1, straight off the limb
-const TWIG_BASE = 30;             // first leaf on a twig, measured from the limb
-const TWIG_STEP = 26;             // each further leaf out along the twig
-const TWIG_SPAN = 150;            // a twig only gathers leaves within this much height
+const LIMB_REACH = [14, 34];      // tier 0 and tier 1, straight off the limb
+const TWIG_BASE = 38;             // first leaf on a twig, measured from the limb
+const TWIG_STEP = 33;             // each further leaf out along the twig
+const TWIG_RISE = 11;             // how much a twig climbs with each leaf it carries
+const LEAF_STEM = 17;             // how far a leaf stands off the twig it grows on
+const TWIG_SPAN = 170;            // a twig only gathers leaves within this much height
 const TWIG_MIN = 3;               // never grow a twig for fewer leaves than this
 const TWIG_MAX = 6;
 const MIN_ERA_GAP = 6;      // a child style forks at least this many years above its parent
-const MIN_SEP = 26;         // no two musicians ever end up closer than this
+// No two musicians end up closer than this. A leaf is ~30 units across, so this
+// is what keeps every one of them its own target for a fingertip.
+const MIN_SEP = 34;
 
 export type Tier = 0 | 1 | 2; // 0 = trunk-worthy, 1 = branch, 2 = leaf
 const MAJOR_COUNT = 36;
@@ -56,11 +61,20 @@ export interface TreeMusician {
   /** where this musician's twig leaves the limb */
   ax: number;
   ay: number;
+  /** where its own stem leaves that twig — on the limb itself for the tier-0/1 marks */
+  sx: number;
+  sy: number;
+  /** which side of its limb this musician sits on: -1 left, 1 right */
+  side: -1 | 1;
   tier: Tier;
   score: number;
   /** the twig this leaf grows on, or null when it sits straight on the limb */
   twig: string | null;
-  /** leaf orientation, degrees */
+  /**
+   * Leaf rotation in degrees — 0 points straight up. Set from the final geometry
+   * once everything has settled, so a leaf always aims along its twig, away from
+   * the wood it grows on.
+   */
   angle: number;
 }
 
@@ -72,6 +86,8 @@ export interface TreeBranch {
   style: string;
   /** a second parent — the style has another documented ancestor */
   graft: boolean;
+  /** grain lines along the bough, on the thick ones only */
+  grain?: string[];
 }
 
 export interface TreeLimb {
@@ -116,6 +132,8 @@ export interface BluesTree {
   trunkX: number;
   minX: number;
   maxX: number;
+  /** the deepest the roots reach, so the whole tree can be framed */
+  bottomY: number;
 }
 
 export type YearScale = (year: number) => number;
@@ -195,6 +213,60 @@ function taperedPath(pts: Pt[], w0: number, w1: number): string {
     right.push(`${(pts[i][0] - nx).toFixed(1)} ${(pts[i][1] - ny).toFixed(1)}`);
   }
   return `M ${left.join(' L ')} L ${right.reverse().join(' L ')} Z`;
+}
+
+/**
+ * Outline a polyline as a closed shape whose width at each point comes from
+ * `widthAt(t)`. `taperedPath` only interpolates between two ends; this is for a
+ * shape that swells and closes again.
+ */
+function ribbon(pts: Pt[], widthAt: (t: number) => number): string {
+  const left: string[] = [];
+  const right: string[] = [];
+  for (let i = 0; i < pts.length; i++) {
+    const a = pts[Math.max(0, i - 1)];
+    const b = pts[Math.min(pts.length - 1, i + 1)];
+    const len = Math.hypot(b[0] - a[0], b[1] - a[1]) || 1;
+    const hw = widthAt(i / (pts.length - 1)) / 2;
+    const nx = (-(b[1] - a[1]) / len) * hw;
+    const ny = ((b[0] - a[0]) / len) * hw;
+    left.push(`${(pts[i][0] + nx).toFixed(1)} ${(pts[i][1] + ny).toFixed(1)}`);
+    right.push(`${(pts[i][0] - nx).toFixed(1)} ${(pts[i][1] - ny).toFixed(1)}`);
+  }
+  return `M ${left.join(' L ')} L ${right.reverse().join(' L ')} Z`;
+}
+
+/**
+ * The same line shifted sideways, by a constant or by however much the given
+ * function asks for at that point along it. A constant draws a grain line
+ * alongside a bough; a wave gives the bough itself its undulation.
+ */
+function offset(pts: Pt[], d: number | ((t: number) => number)): Pt[] {
+  const at = typeof d === 'number' ? () => d : d;
+  return pts.map((p, i) => {
+    const a = pts[Math.max(0, i - 1)];
+    const b = pts[Math.min(pts.length - 1, i + 1)];
+    const len = Math.hypot(b[0] - a[0], b[1] - a[1]) || 1;
+    const k = at(i / (pts.length - 1));
+    return [p[0] - ((b[1] - a[1]) / len) * k, p[1] + ((b[0] - a[0]) / len) * k] as Pt;
+  });
+}
+
+/**
+ * Wood is never a drafting curve. Rolls the line along its own length, fading
+ * to nothing at both ends so the joins at either end stay clean.
+ */
+function undulate(pts: Pt[], amp: number, seed: string): Pt[] {
+  const phase = noise(seed) * Math.PI * 2;
+  return offset(pts, (t) => Math.sin(t * Math.PI) * amp * Math.sin(t * 4.3 + phase));
+}
+
+/**
+ * The rotation, in degrees, that turns a shape drawn pointing up into one
+ * pointing from `from` to `to`. SVG's y grows downwards, so "up" is (0,-1).
+ */
+function aim(from: Pt, to: Pt): number {
+  return (Math.atan2(to[0] - from[0], from[1] - to[1]) * 180) / Math.PI;
 }
 
 /** Catmull-Rom through the points — wood bends, it does not turn corners. */
@@ -335,8 +407,9 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
   styles.forEach((s) => {
     const years = byStyle.get(s)!.map(activeYear);
     limbBottomY.set(s, yearToY(Math.min(effEra.get(s)!, ...years)));
-    limbTopY.set(s, yearToY(Math.max(effEra.get(s)!, ...years)) - 26);
-    sway.set(s, (noise(s) - 0.5) * 26);
+    // stops at the last musician on it — no bare wood past the final leaf
+    limbTopY.set(s, yearToY(Math.max(effEra.get(s)!, ...years)));
+    sway.set(s, (noise(s) - 0.5) * 78);
   });
 
   // Limbs run vertically. A style is then a single readable column, which is the
@@ -348,7 +421,10 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
     const top = limbTopY.get(style)!;
     const t = bottom === top ? 0 : Math.max(0, Math.min(1, (bottom - y) / (bottom - top)));
     const s1 = sway.get(style) ?? 0;
-    return base + Math.sin(t * Math.PI) * s1 + Math.sin(t * Math.PI * 3.1 + s1) * s1 * 0.45;
+    return base
+      + Math.sin(t * Math.PI) * s1
+      + Math.sin(t * Math.PI * 3.1 + s1) * s1 * 0.4
+      + Math.sin(t * Math.PI * 6.7 + s1 * 2) * s1 * 0.18;
   };
 
   // --- musicians
@@ -414,10 +490,13 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
           y,
           ax,
           ay: y,
+          sx: ax,
+          sy: y,
+          side: x >= ax ? 1 : -1,
           tier: tierOf.get(m.id)!,
           score: scores.get(m.id)!,
           twig,
-          angle: (Math.atan2(-9, x - ax || 1) * 180) / Math.PI + (noise(m.id + 'a') - 0.5) * 26,
+          angle: 0,   // set from the settled geometry, once the twigs are drawn
         });
       };
 
@@ -446,7 +525,10 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
         intoTwigs([...members].sort(byAge), yOf).forEach((group, gi) => {
           const twig = group.length >= TWIG_MIN ? `${style}|${side}|${gi}` : null;
           group.forEach((m, i) => {
-            const y = yOf(m);
+            // A twig climbs as it reaches out. Without the rise, a year that
+            // several musicians share lays them in a flat row and the branch
+            // reads as a fish bone rather than a twig.
+            const y = yOf(m) - (twig ? i * TWIG_RISE : 0);
             const reach = twig ? TWIG_BASE + i * TWIG_STEP : LIMB_REACH[1];
             put(m, limbX(style, y) + dir * reach, y, twig);
           });
@@ -502,14 +584,28 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
   const nodes = [...byId.values()];
 
   // --- branch geometry
+  // A bough leaves its parent heading out, opens into a long sweeping corner and
+  // only straightens where the limb takes over. The corner is wide on purpose:
+  // a branch that runs flat and then turns ninety degrees reads as plumbing.
   const forkPoints = (from: string, to: string): Pt[] => {
     const y1 = limbBottomY.get(to)!;
     const x1 = limbX(to, y1);
     const reach = Math.abs(x1 - (axisOf.get(from) ?? 0));
     const startY = Math.min(limbBottomY.get(from)!, y1 + Math.max(6 * ROW_H, reach * 0.3));
     const x0 = limbX(from, startY);
-    const midY = (startY + y1) / 2;
-    return cubicPoints([x0, startY], [x0, midY], [x1, midY], [x1, y1]);
+    const dir = Math.sign(x1 - x0) || 1;
+    const climb = startY - y1;
+    return undulate(
+      cubicPoints(
+        [x0, startY],
+        [x0 + dir * reach * 0.40, startY - climb * 0.20],
+        [x1 - dir * reach * 0.28, y1 + climb * 0.55],
+        [x1, y1],
+        28
+      ),
+      Math.min(14, reach * 0.02),
+      `${from}>${to}`
+    );
   };
 
   const subtreeCount = new Map<string, number>();
@@ -526,32 +622,66 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
 
   // Root styles leave the trunk at their own era, always above the ground line.
   const trunkTopY = Math.min(...rootStyles.map((s) => limbBottomY.get(s)!));
+  // The big limbs leave the trunk at staggered heights, the one that reaches
+  // furthest lowest down — an oak carries its longest limbs nearest the ground.
+  const forkHeight = new Map(
+    [...rootStyles]
+      .sort((a, b) => Math.abs(limbX(b, limbBottomY.get(b)!)) - Math.abs(limbX(a, limbBottomY.get(a)!)))
+      .map((s, i) => [s, GROUND_Y - 30 - i * 38] as [string, number])
+  );
   const branches: TreeBranch[] = rootStyles.map((s) => {
     const y1 = limbBottomY.get(s)!;
     const x1 = limbX(s, y1);
-    const y0 = Math.min(GROUND_Y - 30, y1 + Math.max(3.5 * ROW_H, Math.abs(x1 - trunkX) * 0.3));
+    const y0 = Math.max(y1 + 2.5 * ROW_H, Math.min(GROUND_Y - 30, forkHeight.get(s)!));
     const dir = Math.sign(x1 - trunkX) || 1;
+    const reach = Math.abs(x1 - trunkX);
+    const climb = y0 - y1;
     const w = thickness(subtreeCount.get(s) ?? 1);
-    const pts = cubicPoints(
-      [trunkX + dir * 26, y0],
-      [trunkX + dir * 26, (y0 + y1) / 2],
-      [x1, (y0 + y1) / 2],
-      [x1, y1]
+    // where the bough hands over to the limb, so the two read as one piece of wood
+    const tipW = thickness(byStyle.get(s)!.length);
+    const pts = undulate(
+      cubicPoints(
+        [trunkX + dir * 26, y0],
+        [trunkX + dir * reach * 0.44, y0 - climb * 0.16],
+        [x1 - dir * reach * 0.30, y1 + climb * 0.58],
+        [x1, y1],
+        40
+      ),
+      Math.min(22, reach * 0.02),
+      `trunk>${s}`
     );
     return {
       key: `trunk>${s}`,
-      d: taperedPath(pts, w * 1.5, w),
+      d: taperedPath(pts, w * 2.3, tipW),
       w,
       color: getStyleHex(s),
       style: s,
       graft: false,
+      // The boughs off the trunk are the only branches wide enough to show grain.
+      grain: w < 26 ? undefined : [-0.46, -0.28, -0.08, 0.12, 0.3, 0.5].map((f, gi) => {
+        const g = noise(`${s}grain${gi}`);
+        const from = 0.05 + g * 0.3;              // its own stretch of the bough
+        const to = Math.min(0.97, from + 0.3 + noise(`${s}grain${gi}b`) * 0.5);
+        const lo = Math.round(from * (pts.length - 1));
+        const hi = Math.round(to * (pts.length - 1));
+        const run = pts.slice(lo, hi + 1);
+        const wide = 2 + g * 4;
+        return ribbon(
+          offset(run, (t) => {
+            const along = from + (to - from) * t;
+            return f * (w * 2.3 + (tipW - w * 2.3) * along) * 0.4;
+          }),
+          (t) => Math.sin(Math.min(1, t * 7) * (Math.PI / 2)) * (1 - t) ** 0.7 * wide
+        );
+      }),
     };
   });
   parentOf.forEach((p, c) => {
     const w = thickness(subtreeCount.get(c) ?? 1);
+    const pts = forkPoints(p, c);
     branches.push({
       key: `${p}>${c}`,
-      d: taperedPath(forkPoints(p, c), w * 1.35, w),
+      d: taperedPath(pts, w * 1.9, thickness(byStyle.get(c)!.length)),
       w,
       color: getStyleHex(c),
       style: c,
@@ -611,27 +741,57 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
     if (g) g.push(n);
     else twigGroups.set(n.twig, [n]);
   });
-  const twigs: TreeTwig[] = [...twigGroups.entries()].map(([key, leaves]) => {
+  const twigs: TreeTwig[] = [];
+
+
+  twigGroups.forEach((leaves, key) => {
     leaves.sort((a, b) => b.y - a.y); // from the limb outwards
     const root = leaves[0];
     const dir = Math.sign(root.x - root.ax) || 1;
-    const pts: Pt[] = [
-      [root.ax - dir * 5, root.ay + 26],
-      [root.ax + dir * 14, root.ay + 8],
-      ...leaves.map((n) => [n.x, n.y] as Pt),
-    ];
+    const elbow: Pt = [root.ax + dir * 15, root.ay + 3];
+    // The twig runs through where the layout placed the leaves; each leaf then
+    // steps off it sideways on a short stem. Sitting the leaves ON the twig made
+    // it look like a skewer — a leaf grows out of a shoot, not along it.
+    const spine: Pt[] = leaves.map((n) => [n.x, n.y] as Pt);
+    const pts: Pt[] = [[root.ax - dir * 3, root.ay + 10], elbow, ...spine];
     const tip = leaves[leaves.length - 1];
     const prev = leaves[Math.max(0, leaves.length - 2)];
-    pts.push([tip.x + (tip.x - prev.x) * 0.3, tip.y + (tip.y - prev.y) * 0.3]);
-    return { key, d: taperedPath(smooth(pts), 11, 2), style: root.style };
+    const run: Pt = [tip.x - prev.x || dir * 20, tip.y - prev.y || -20];
+    // Where the twig would have carried on, used only to give the last leaf its
+    // heading. The wood itself ends on the final leaf.
+    const beyond: Pt = [tip.x + run[0] * 0.35, tip.y + run[1] * 0.35];
+    twigs.push({ key, d: taperedPath(smooth(pts), 7.5, 0.7), style: root.style });
+
+    // Leaves alternate sides along the twig and stand straight out of it.
+    leaves.forEach((n, i) => {
+      const a = i === 0 ? elbow : spine[i - 1];
+      const b = i === leaves.length - 1 ? beyond : spine[i + 1];
+      const len = Math.hypot(b[0] - a[0], b[1] - a[1]) || 1;
+      const out = i % 2 === 0 ? 1 : -1;
+      n.sx = n.x;
+      n.sy = n.y;
+      n.x += (-(b[1] - a[1]) / len) * out * LEAF_STEM;
+      n.y += ((b[0] - a[0]) / len) * out * LEAF_STEM;
+    });
+
   });
+
+
+
+  // Stepping the leaves off their twigs put some of them back within touching
+  // distance of a neighbouring twig, so the spacing is relaxed once more. Only
+  // then is the heading fixed, from each stem's base to where its leaf ended up.
+  separate(byId);
+  nodes.forEach((n) => { n.angle = aim([n.sx, n.sy], [n.x, n.y]); });
 
   // --- trunk + roots, after a sweetgum: one straight central leader that keeps
   // going up through the crown, standing on a flared, buttressed base.
   const trunkTop = trunkTopY - 5.5 * ROW_H;
-  const HALF_BASE = 190;
-  const HALF_NECK = 64;
-  const HALF_TOP = 26;
+  // A trunk you could believe carries this canopy: heavy at the flare, still
+  // substantial where the first boughs leave it, tapering to a leader.
+  const HALF_BASE = 330;
+  const HALF_NECK = 130;
+  const HALF_TOP = 34;
   const neckY = GROUND_Y - (GROUND_Y - trunkTop) * 0.12;
   // Up the left side, across the top, back down the right.
   const flank = (dir: number, up: boolean) => {
@@ -644,32 +804,103 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
   };
   const trunk = `${flank(-1, true)} L ${trunkX + HALF_TOP} ${trunkTop} ${flank(1, false)} Z`;
 
-  // Bark: a few grain lines that follow the trunk, the way the reference is inked.
-  const bark = [-0.62, -0.3, -0.06, 0.2, 0.46, 0.72].map((f, i) => {
-    const wobble = (noise(`bark${i}`) - 0.5) * 26;
-    const pts = cubicPoints(
-      [trunkX + f * HALF_BASE * 0.72, TRUNK_BASE_Y - 60],
-      [trunkX + f * HALF_NECK * 1.3 + wobble, neckY + 30],
-      [trunkX + f * HALF_NECK * 0.8 - wobble, neckY - (neckY - trunkTop) * 0.5],
-      [trunkX + f * HALF_TOP * 0.9, trunkTop + 30]
-    );
-    return taperedPath(pts, 5, 1.5);
+  /**
+   * Bark: the gaps between the ridges, not lines scratched onto the trunk. Each
+   * is a broad lens, fat through its belly and pinched shut at both ends, and
+   * each wanders on its own phase over its own stretch of the trunk. Even
+   * hairline strokes all running the full height read as combing, which is what
+   * the reference very much does not look like.
+   */
+  const halfAt = (y: number) =>
+    y > neckY
+      ? HALF_BASE + (HALF_NECK - HALF_BASE) * Math.min(1, (TRUNK_BASE_Y - y) / Math.max(1, TRUNK_BASE_Y - neckY))
+      : HALF_NECK + (HALF_TOP - HALF_NECK) * Math.min(1, (neckY - y) / Math.max(1, neckY - trunkTop));
+
+  const bark = [
+    -0.86, -0.72, -0.59, -0.46, -0.34, -0.22, -0.1, 0.02, 0.14, 0.26,
+    0.38, 0.5, 0.62, 0.74, 0.86, -0.64, -0.28, 0.08, 0.44, 0.7,
+  ].map((f, i) => {
+    const n = noise(`bark${i}`);
+    const n2 = noise(`bark${i}b`);
+    const n3 = noise(`bark${i}c`);
+    // Its own stretch of trunk. Lengths run from a short fleck to most of the
+    // height, which is what stops a set of strokes looking like a comb.
+    const span = TRUNK_BASE_Y - trunkTop;
+    const y0 = TRUNK_BASE_Y - 20 - n * span * 0.5;
+    const y1 = Math.max(trunkTop + 30, y0 - span * (0.08 + n2 * 0.52));
+    const pts: Pt[] = [];
+    const steps = 26;
+    for (let j = 0; j <= steps; j++) {
+      const t = j / steps;
+      const y = y0 + (y1 - y0) * t;
+      // A drawn stroke follows the form it describes. Barely any lateral wander,
+      // just enough to keep it off a ruler — the length and the taper carry the
+      // character, not the wobble.
+      const wander = Math.sin(t * Math.PI * (0.9 + n3 * 1.1) + n * 6.3) * 0.05
+        + Math.sin(t * Math.PI * (2.4 + n * 1.6) + n2 * 6.3) * 0.022;
+      // held at a fraction of the trunk's current half-width, so it rides in as
+      // the trunk narrows instead of walking out through the side
+      pts.push([trunkX + (f + wander) * halfAt(y) * 0.88, y]);
+    }
+    // Fat low down and drawn out to a point at the top, the way a loaded nib
+    // leaves a stroke.
+    const belly = 9 + n3 * 17;
+    return ribbon(pts, (t) => {
+      const y = y0 + (y1 - y0) * t;
+      const taper = Math.sin(Math.min(1, t * 9) * (Math.PI / 2)) * (1 - t) ** 0.8;
+      return taper * Math.min(belly, halfAt(y) * 0.2);
+    });
   });
 
-  // Buttress roots: tapered wedges spreading out of the base, not hairline strokes.
-  // They are drawn behind the trunk, so they start low enough to stay hidden where
-  // they leave it and only read once they are clear of the wood.
+  // Buttress roots: tapered wedges spreading out of the base, not hairline
+  // strokes. They are drawn behind the trunk, so they start low enough to stay
+  // hidden where they leave it and only read once they are clear of the wood.
+  // Each one splits into toes at the end — a root that stops in a single point
+  // looks like a tail.
+  let rootBottom = TRUNK_BASE_Y;
   const roots = [-1, 1].flatMap((dir) =>
-    [0.5, 0.9, 1.35].map((spread, i) => {
-      const len = (420 + i * 300) * dir;
-      const startY = TRUNK_BASE_Y - 210 + ROOT_DROP + i * 46;
-      const pts = cubicPoints(
-        [trunkX + dir * 30, startY],
-        [trunkX + len * 0.35, startY + 70 * spread],
-        [trunkX + len * 0.7, TRUNK_BASE_Y + ROOT_DROP + 60 * spread],
-        [trunkX + len, TRUNK_BASE_Y + ROOT_DROP + 120 * spread]
-      );
-      return taperedPath(pts, 96 - i * 22, 4);
+    [0.3, 0.6, 0.95, 1.4].flatMap((spread, i) => {
+      // Long and shallow. A root that dives steeply reads as a tentacle; the
+      // ones that carry a tree run out just under the soil.
+      const len = (560 + i * 400) * dir;
+      const startY = TRUNK_BASE_Y - 250 + i * 66;
+      // The buttress arches over the soil before it dives — that hump above the
+      // ground line is what tells you the tree is standing on something.
+      const crestY = SOIL_Y - 54 + i * 16;
+      const endY = SOIL_Y + 40 + 66 * spread;
+      const end: Pt = [trunkX + len, endY];
+      const w = 150 - i * 28;
+      const paths = [
+        taperedPath(
+          undulate(
+            cubicPoints(
+              [trunkX + dir * 40, startY],
+              [trunkX + len * 0.24, crestY],
+              [trunkX + len * 0.68, crestY + (endY - crestY) * 0.55],
+              end,
+              26
+            ),
+            9,
+            `root${dir}${i}`
+          ),
+          w, 13
+        ),
+      ];
+      // two toes, one carrying on and one dipping under
+      [[0.75, 0.2], [0.36, 0.85]].forEach(([reach, dip], t) => {
+        const toe = 200 * reach + noise(`toe${dir}${i}${t}`) * 80;
+        rootBottom = Math.max(rootBottom, endY + 30 + dip * 90);
+        paths.push(taperedPath(
+          cubicPoints(
+            end,
+            [end[0] + dir * toe * 0.4, endY + 10 + dip * 34],
+            [end[0] + dir * toe * 0.8, endY + 26 + dip * 68],
+            [end[0] + dir * toe, endY + 30 + dip * 90]
+          ),
+          13, 2
+        ));
+      });
+      return paths;
     })
   );
 
@@ -716,5 +947,6 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
     // a little room for the names that hang off the outermost nodes
     minX: Math.min(-400, ...xs) - 650,
     maxX: Math.max(400, ...xs) + 650,
+    bottomY: rootBottom,
   };
 }

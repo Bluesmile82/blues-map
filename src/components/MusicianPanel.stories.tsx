@@ -10,11 +10,9 @@ const meta: Meta<typeof MusicianPanel> = {
   args: {
     musician: mockMusician,
     musicians: [mockMusician, mockMusicianWithConnections],
-    editMode: false,
     autoplay: false,
     onClose: () => {},
     onNavigate: () => {},
-    onEdit: () => {},
     onPlayVideo: () => {},
   },
 }

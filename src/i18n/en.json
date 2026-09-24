@@ -17,11 +17,6 @@
     "random": "Random",
     "creditsLegal": "Credits & Legal",
     "credits": "Credits",
-    "newMusician": "New Musician",
-    "done": "Done",
-    "doneEditing": "Done Editing",
-    "edit": "Edit",
-    "editMode": "Edit Mode",
     "menu": "Menu",
     "lightDarkMode": "Light/Dark Mode",
     "card": "Card",
@@ -95,7 +90,9 @@
     "active": "active",
     "died": "Died",
     "activeIn": "Active in",
-    "image": "Image"
+    "image": "Image",
+    "collapsePanel": "Hide panel",
+    "expandPanel": "Show panel"
   },
   "map": {
     "close": "Close",
@@ -376,6 +373,21 @@
   },
   "tree": {
     "fit": "Whole tree",
-    "influenced": "influenced"
+    "influenced": "influenced",
+    "detailAll": "All names",
+    "detailAuto": "Auto",
+    "findMusician": "Find a musician…",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "centerSelected": "Centre on the selected musician",
+    "linkInfluencedBy": "Influenced by",
+    "linkInfluences": "Influences",
+    "linkPlayedWith": "Played with",
+    "display": "Display",
+    "legend": "How to read this",
+    "legendAxis": "Height is the year a musician became active.",
+    "legendMajor": "The most influential",
+    "legendNotable": "Notable",
+    "legendLeaf": "Everyone else, as a leaf"
   }
 }

@@ -242,7 +242,6 @@ function MusicianSidebar({
               const isHovered = musician.id === hoveredId;
               const hex = getStyleHex(musician.bluesStyle);
               const [r, g, b] = getStyleColor(musician.bluesStyle) as [number, number, number];
-              const isFav = favorites(musician.id);
 
               return (
                 <button
@@ -298,22 +297,6 @@ function MusicianSidebar({
                   </div>
 
                   {/* Favorite star indicator */}
-                  {import.meta.env.VITE_ENABLE_EDIT_MODE === 'true' && (
-                    <svg
-                      className="w-4 h-4 shrink-0 cursor-pointer hover:scale-110 transition-transform"
-                      viewBox="0 0 24 24"
-                      fill={isFav ? "currentColor" : "none"}
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      style={{ color: isFav ? '#c8872a' : '#6b5c4a' }}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        // Toggle favorite functionality removed - using jotai state instead
-                      }}
-                    >
-                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                    </svg>
-                  )}
 
                   {/* Selection indicator */}
                   {isSelected && (

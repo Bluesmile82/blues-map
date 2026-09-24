@@ -5,7 +5,6 @@ import TreeView from './components/TreeView';
 import MapView from './components/MapView';
 import CardView from './components/CardView';
 import MusicianPanel from './components/MusicianPanel';
-import EditPanel from './components/EditPanel';
 import FloatingVideoPlayer from './components/FloatingVideoPlayer';
 import CreditsPage from './components/CreditsPage';
 import AnalyticsDashboard from './components/AnalyticsDashboard';
@@ -16,7 +15,6 @@ import { useAnalytics, trackMusicianView, trackSongPlay } from './hooks/useAnaly
 import type { Musician } from './types';
 import musiciansData from './data/musicians.json';
 
-const EDIT_MODE_ENABLED = import.meta.env.VITE_ENABLE_EDIT_MODE === 'true';
 
 export type ViewType = 'influence' | 'tree' | 'map' | 'card';
 const VIEW_SLUGS: Record<string, ViewType> = { timeline: 'influence', tree: 'tree', map: 'map', card: 'card' };
@@ -44,10 +42,11 @@ function buildUrl(view: ViewType, musicianId: string | null): string {
 }
 
 export default function App() {
-  const [musicians, setMusicians] = useState<Musician[]>(musiciansData as unknown as Musician[]);
+  const musicians = musiciansData as unknown as Musician[];
 
   const initialParsed = parseUrl(window.location.pathname);
-  const [view, setView] = useState<ViewType>(initialParsed.view ?? 'card');
+  // The tree is the front door: the whole story at a glance, nobody picked for you.
+  const [view, setView] = useState<ViewType>(initialParsed.view ?? 'tree');
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     const stored = localStorage.getItem('theme');
     return (stored === 'dark' || stored === 'light') ? stored : 'light';
@@ -60,8 +59,9 @@ const initialMusician = (() => {
     return (musiciansData as unknown as Musician[]).find((m) => m.id === id) ?? null;
   }
   
-  // If on card view and no musician specified, select a random musician
-  if (initialParsed.view === 'card' || (initialParsed.view === null && !initialParsed.musicianId && window.location.pathname !== '/admin')) {
+  // The card view is the one that needs somebody on it; a bare URL opens the
+  // tree with nothing selected.
+  if (initialParsed.view === 'card') {
     const musiciansArray = musiciansData as unknown as Musician[];
     if (musiciansArray.length === 0) return null;
     
@@ -77,8 +77,11 @@ const initialMusician = (() => {
   return null;
 })();
 const [selected, setSelected] = useState<Musician | null>(initialMusician);
-  const [editMode, setEditMode] = useState(false);
   const [showPlayer, setShowPlayer] = useState(!!initialMusician?.youtubeLink);
+  // The player is keyed on the musician, so it is torn down and rebuilt on every
+  // change of track. These two outlive it: parked stays parked, playing keeps playing.
+  const [playerMinimized, setPlayerMinimized] = useState(false);
+  const [playerPlaying, setPlayerPlaying] = useState(false);
   const [manualVideoUrl, setManualVideoUrl] = useState<string | null>(null);
   const [autoplay, setAutoplay] = useState(() => {
     const stored = localStorage.getItem('autoplay');
@@ -86,8 +89,6 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
   });
   // Tracks whose video is in the player — independent of the info panel (persists when panel closes)
   const [videoMusician, setVideoMusician] = useState<Musician | null>(initialMusician ?? null);
-  const [editing, setEditing] = useState<Musician | null>(null);
-  const [isCreating, setIsCreating] = useState(false);
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
   const [showCredits, setShowCredits] = useState(false);
   const [showAnalytics, setShowAnalytics] = useState(window.location.pathname === '/admin');
@@ -161,21 +162,17 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
   }, [videoPlayerW]);
 
   const handleSelect = useCallback((musician: Musician) => {
-    if (editMode) {
-      setEditing(musician);
-    } else {
-      setSelected(musician);
-      setManualVideoUrl(null);
-      window.history.pushState(null, '', buildUrl(view, musician.id));
-      trackMusicianView(musician.id);
-      setCurrentMusician(musician.id);
-      if (musician.youtubeLink) {
-        setVideoMusician(musician);
-        setShowPlayer(true);
-        trackSongPlay(musician.id, musician.youtubeLink);
-      }
+    setSelected(musician);
+    setManualVideoUrl(null);
+    window.history.pushState(null, '', buildUrl(view, musician.id));
+    trackMusicianView(musician.id);
+    setCurrentMusician(musician.id);
+    if (musician.youtubeLink) {
+      setVideoMusician(musician);
+      setShowPlayer(true);
+      trackSongPlay(musician.id, musician.youtubeLink);
     }
-  }, [editMode, view]);
+  }, [view]);
 
   const handleClose = useCallback(() => {
     setSelected(null);
@@ -240,40 +237,6 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const handleEdit = useCallback(() => {
-    setEditing(selected);
-    setSelected(null);
-  }, [selected]);
-
-  const handleCreateNew = useCallback(() => {
-    setIsCreating(true);
-    setSelected(null);
-  }, []);
-
-  const handleSave = useCallback(async (updated: Musician, isNew: boolean) => {
-    const newMusicians = isNew
-      ? [...musicians, updated]
-      : musicians.map(m => m.id === updated.id ? updated : m);
-
-    setMusicians(newMusicians);
-
-    try {
-      await fetch('/api/musicians', {
-        method: isNew ? 'POST' : 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(updated)
-      });
-    } catch (e) {
-      console.error('Error saving to server:', e);
-    }
-  }, [musicians]);
-
-  const handleDelete = useCallback((musicianId: string) => {
-    setMusicians(prev => prev.filter(m => m.id !== musicianId));
-    setEditing(null);
-    setSelected(null);
-  }, []);
-
   // Sync URL → selection + view on browser back/forward
   useEffect(() => {
     const onPop = () => {
@@ -299,10 +262,6 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
       <NavBar
         view={view}
         onViewChange={handleViewChange}
-        editMode={editMode}
-        onEditModeChange={setEditMode}
-        onCreateNew={handleCreateNew}
-        editModeEnabled={EDIT_MODE_ENABLED}
         onRandom={handleRandom}
         onPlaylist={() => { setWizardQueue(null); setShowWizard(true); }}
         onCredits={() => setShowCredits(true)}
@@ -342,14 +301,12 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
         )}
       </main>
 
-      {selected && !editMode && view !== 'card' && (
+      {selected && view !== 'card' && (
         <MusicianPanel
           musician={selected}
           musicians={musicians}
           onClose={handleClose}
           onNavigate={handleSelect}
-          editMode={false}
-          onEdit={handleEdit}
           onPlayVideo={(url) => { setManualVideoUrl(url); setShowPlayer(true); setVideoMusician(selected); trackSongPlay(selected.id, url); }}
           videoMusician={videoMusician}
           manualVideoUrl={manualVideoUrl}
@@ -361,7 +318,7 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
         />
       )}
 
-      {!isMobile && videoMusician && showPlayer && !editMode && (view !== 'card' || playlistActive) && (
+      {!isMobile && videoMusician && showPlayer && (view !== 'card' || playlistActive) && (
         <div className="block">
           <FloatingVideoPlayer
             key={videoMusician.id}
@@ -375,8 +332,11 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
             initialW={videoPlayerW}
             onPositionChange={setVideoPlayerPos}
             onSizeChange={setVideoPlayerW}
-            autoplay={autoplay || playlistActive}
+            autoplay={autoplay || playlistActive || playerPlaying}
             onEnded={playlistHasNext ? handlePlaylistNext : undefined}
+            minimized={playerMinimized}
+            onMinimizedChange={setPlayerMinimized}
+            onPlayingChange={setPlayerPlaying}
           />
         </div>
       )}
@@ -411,51 +371,7 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
         <AnalyticsDashboard onClose={() => { setShowAnalytics(false); window.history.pushState(null, '', '/'); }} />
       )}
 
-      {EDIT_MODE_ENABLED && editing && (
-        <EditPanel
-          musician={editing}
-          musicians={musicians}
-          onClose={() => {
-            setEditing(null);
-            setSelected(null);
-          }}
-          onSave={(musician) => handleSave(musician, false)}
-          onDelete={handleDelete}
-          isNew={false}
-        />
-      )}
 
-      {EDIT_MODE_ENABLED && isCreating && (
-        <EditPanel
-          musician={{
-            id: '',
-            name: '',
-            image: '',
-            image_source: '',
-            birthDate: '',
-            birthPlace: '',
-            birthCoords: [0, 0],
-            deathDate: null,
-            deathPlace: null,
-            deathCoords: null,
-            spentTimePlaces: [],
-            instrument: '',
-            bluesStyle: '',
-            youtubeLink: '',
-            albums: [],
-            description: '',
-            activeFrom: '',
-            influences: [],
-            influencedBy: [],
-            playedWith: [],
-            createdAt: new Date().toISOString().slice(0, 10),
-          }}
-          musicians={musicians}
-          onClose={() => setIsCreating(false)}
-          onSave={(musician) => handleSave(musician, true)}
-          isNew={true}
-        />
-      )}
     </div>
   );
 }

@@ -17,11 +17,6 @@
     "random": "Aleatorio",
     "creditsLegal": "Créditos y legal",
     "credits": "Créditos",
-    "newMusician": "Nuevo músico",
-    "done": "Listo",
-    "doneEditing": "Dejar de editar",
-    "edit": "Editar",
-    "editMode": "Modo edición",
     "menu": "Menú",
     "lightDarkMode": "Modo claro/oscuro",
     "card": "Tarjeta",
@@ -95,7 +90,9 @@
     "active": "activo",
     "died": "Fallecimiento",
     "activeIn": "Activo en",
-    "image": "Imagen"
+    "image": "Imagen",
+    "collapsePanel": "Ocultar panel",
+    "expandPanel": "Mostrar panel"
   },
   "map": {
     "close": "Cerrar",
@@ -376,6 +373,21 @@
   },
   "tree": {
     "fit": "Árbol completo",
-    "influenced": "influidos"
+    "influenced": "influidos",
+    "detailAll": "Todos los nombres",
+    "detailAuto": "Auto",
+    "findMusician": "Buscar músico…",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar",
+    "centerSelected": "Centrar en el músico seleccionado",
+    "linkInfluencedBy": "Influido por",
+    "linkInfluences": "Influye a",
+    "linkPlayedWith": "Tocó con",
+    "display": "Visualización",
+    "legend": "Cómo leer el árbol",
+    "legendAxis": "La altura es el año en que el músico empezó.",
+    "legendMajor": "Los más influyentes",
+    "legendNotable": "Destacados",
+    "legendLeaf": "El resto, como hoja"
   }
 }
