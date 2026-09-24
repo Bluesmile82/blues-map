@@ -346,17 +346,6 @@ export default function TreeView({
       {tree.twigs.map((tw) => (
         <path key={tw.key} d={tw.d} fill="url(#tree-wood)" />
       ))}
-      {/* Grain, painted in the page colour so it reads as ink left out of the
-          mass rather than a line drawn over it — that negative-space bark is
-          what makes the reference look inked instead of filled. */}
-      <g stroke="none" className="fill-bg">
-        {tree.branches.flatMap((b) =>
-          (b.grain ?? []).map((d, i) => <path key={`${b.key}g${i}`} d={d} opacity={0.5} />)
-        )}
-        {tree.bark.map((d, i) => (
-          <path key={`bark${i}`} d={d} opacity={0.42} />
-        ))}
-      </g>
     </g>
   ), [tree, ink]);
 
@@ -926,80 +915,79 @@ export default function TreeView({
           className="flex flex-col gap-2 overflow-y-auto [scrollbar-width:thin] [&::-webkit-scrollbar]:w-1.5"
           style={{ maxHeight: `calc(100vh - 3.5rem - 0.75rem - 56px - ${PLAYER_GAP}px)` }}
         >
-        <FiltersPanel
-          textFilterValue={textFilter}
-          onTextFilterChange={setTextFilter}
-          showFavoritesOnly={showFavoritesOnly}
-          onFavoritesOnlyChange={setShowFavoritesOnly}
-          filterListId={filterListId}
-          onFilterListIdChange={setFilterListId}
-          styleFilter={styleFilter}
-          onStyleFilterChange={onStyleFilterChange}
-          availableStyles={availableStyles}
-          instrumentFilter={instrumentFilter}
-          onInstrumentFilterChange={setInstrumentFilter}
-          availableInstruments={availableInstruments}
-          yearRange={yearRange}
-          minYear={minYear}
-          maxYear={maxYear}
-          onYearRangeChange={setYearRange}
-          displayMusiciansCount={shown.length}
-          collapsed={filtersCollapsed}
-          onCollapsedChange={setFiltersCollapsed}
-          isMobile={isMobile}
-        />
+          <FiltersPanel
+            textFilterValue={textFilter}
+            onTextFilterChange={setTextFilter}
+            showFavoritesOnly={showFavoritesOnly}
+            onFavoritesOnlyChange={setShowFavoritesOnly}
+            filterListId={filterListId}
+            onFilterListIdChange={setFilterListId}
+            styleFilter={styleFilter}
+            onStyleFilterChange={onStyleFilterChange}
+            availableStyles={availableStyles}
+            instrumentFilter={instrumentFilter}
+            onInstrumentFilterChange={setInstrumentFilter}
+            availableInstruments={availableInstruments}
+            yearRange={yearRange}
+            minYear={minYear}
+            maxYear={maxYear}
+            onYearRangeChange={setYearRange}
+            displayMusiciansCount={shown.length}
+            collapsed={filtersCollapsed}
+            onCollapsedChange={setFiltersCollapsed}
+            isMobile={isMobile}
+          />
 
-        {/* What the tree draws, as opposed to which musicians it draws */}
-        <div className="flex flex-col rounded-lg border border-border-subtle bg-bg-subtle">
-          <button
-            onClick={() => setConfigOpen((o) => !o)}
-            className="flex w-full items-center justify-between px-3 py-2 text-sm font-bold text-ink"
-          >
-            <span>{t('tree.display', { defaultValue: 'Display' })}</span>
-            <svg
-              className={`h-4 w-4 transition-transform ${configOpen ? 'rotate-180' : ''}`}
-              fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          {/* What the tree draws, as opposed to which musicians it draws */}
+          <div className="flex flex-col rounded-lg border border-border-subtle bg-bg-subtle">
+            <button
+              onClick={() => setConfigOpen((o) => !o)}
+              className="flex w-full items-center justify-between px-3 py-2 text-sm font-bold text-ink"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
+              <span>{t('tree.display', { defaultValue: 'Display' })}</span>
+              <svg
+                className={`h-4 w-4 transition-transform ${configOpen ? 'rotate-180' : ''}`}
+                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
 
-          {configOpen && (
-            <div className="flex flex-col gap-2 px-3 pb-3">
-              <div className="flex overflow-hidden rounded-lg border border-border-subtle">
+            {configOpen && (
+              <div className="flex flex-col gap-2 px-3 pb-3">
+                <div className="flex overflow-hidden rounded-lg border border-border-subtle">
+                  {([
+                    [null, t('tree.detailAuto', { defaultValue: 'Auto' })],
+                    [2, t('tree.detailAll', { defaultValue: 'All names' })],
+                  ] as const).map(([level, label]) => (
+                    <button
+                      key={String(level)}
+                      onClick={() => setDetailOverride(level)}
+                      className={`flex-1 px-2 py-1.5 text-2xs uppercase tracking-wide transition-colors ${detailOverride === level ? 'bg-accent text-bg font-semibold' : 'text-ink3 hover:text-ink'
+                        }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+
                 {([
-                  [null, t('tree.detailAuto', { defaultValue: 'Auto' })],
-                  [2, t('tree.detailAll', { defaultValue: 'All names' })],
-                ] as const).map(([level, label]) => (
-                  <button
-                    key={String(level)}
-                    onClick={() => setDetailOverride(level)}
-                    className={`flex-1 px-2 py-1.5 text-2xs uppercase tracking-wide transition-colors ${
-                      detailOverride === level ? 'bg-accent text-bg font-semibold' : 'text-ink3 hover:text-ink'
-                    }`}
-                  >
+                  ['ancestor', t('tree.linkInfluencedBy', { defaultValue: 'Influenced by' })],
+                  ['descendant', t('tree.linkInfluences', { defaultValue: 'Influences' })],
+                  ['played', t('tree.linkPlayedWith', { defaultValue: 'Played with' })],
+                ] as const).map(([kind, label]) => (
+                  <label key={kind} className="flex cursor-pointer items-center gap-2 text-2xs text-ink2">
+                    <input
+                      type="checkbox"
+                      checked={linkKinds[kind]}
+                      onChange={(e) => setLinkKinds((k) => ({ ...k, [kind]: e.target.checked }))}
+                    />
                     {label}
-                  </button>
+                  </label>
                 ))}
               </div>
-
-              {([
-                ['ancestor', t('tree.linkInfluencedBy', { defaultValue: 'Influenced by' })],
-                ['descendant', t('tree.linkInfluences', { defaultValue: 'Influences' })],
-                ['played', t('tree.linkPlayedWith', { defaultValue: 'Played with' })],
-              ] as const).map(([kind, label]) => (
-                <label key={kind} className="flex cursor-pointer items-center gap-2 text-2xs text-ink2">
-                  <input
-                    type="checkbox"
-                    checked={linkKinds[kind]}
-                    onChange={(e) => setLinkKinds((k) => ({ ...k, [kind]: e.target.checked }))}
-                  />
-                  {label}
-                </label>
-              ))}
-            </div>
-          )}
-        </div>
+            )}
+          </div>
         </div>
       </div>
 

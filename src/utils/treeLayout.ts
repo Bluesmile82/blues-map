@@ -27,7 +27,7 @@ export const GROUND_Y = CANOPY_Y + TREE_H;
 export const TRUNK_BASE_Y = GROUND_Y + 420;
 // Where the flare meets the soil and the roots run out. The last stretch of the
 // trunk is buried, so the base widens into the ground instead of stopping on it.
-export const SOIL_Y = TRUNK_BASE_Y - 40;
+export const SOIL_Y = TRUNK_BASE_Y + 20;
 
 const SLOT = 34;            // horizontal room per musician in a row
 const SLICE_PAD = 44;
@@ -127,7 +127,6 @@ export interface BluesTree {
   limbs: TreeLimb[];
   twigs: TreeTwig[];
   trunk: string;
-  bark: string[];
   roots: string[];
   trunkX: number;
   minX: number;
@@ -789,9 +788,9 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
   const trunkTop = trunkTopY - 5.5 * ROW_H;
   // A trunk you could believe carries this canopy: heavy at the flare, still
   // substantial where the first boughs leave it, tapering to a leader.
-  const HALF_BASE = 330;
-  const HALF_NECK = 130;
-  const HALF_TOP = 34;
+  const HALF_BASE = 200;
+  const HALF_NECK = 100;
+  const HALF_TOP = 14;
   const neckY = GROUND_Y - (GROUND_Y - trunkTop) * 0.12;
   // Up the left side, across the top, back down the right.
   const flank = (dir: number, up: boolean) => {
@@ -803,54 +802,6 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
       : `C ${trunkX + dir * HALF_TOP * 1.5} ${trunkTop + 120}, ${trunkX + dir * HALF_NECK * 0.82} ${neckY - (neckY - trunkTop) * 0.45}, ${trunkX + dir * HALF_NECK} ${neckY} C ${trunkX + dir * HALF_NECK * 1.1} ${neckY + 40}, ${trunkX + dir * HALF_BASE * 0.62} ${GROUND_Y - 60}, ${base}`;
   };
   const trunk = `${flank(-1, true)} L ${trunkX + HALF_TOP} ${trunkTop} ${flank(1, false)} Z`;
-
-  /**
-   * Bark: the gaps between the ridges, not lines scratched onto the trunk. Each
-   * is a broad lens, fat through its belly and pinched shut at both ends, and
-   * each wanders on its own phase over its own stretch of the trunk. Even
-   * hairline strokes all running the full height read as combing, which is what
-   * the reference very much does not look like.
-   */
-  const halfAt = (y: number) =>
-    y > neckY
-      ? HALF_BASE + (HALF_NECK - HALF_BASE) * Math.min(1, (TRUNK_BASE_Y - y) / Math.max(1, TRUNK_BASE_Y - neckY))
-      : HALF_NECK + (HALF_TOP - HALF_NECK) * Math.min(1, (neckY - y) / Math.max(1, neckY - trunkTop));
-
-  const bark = [
-    -0.86, -0.72, -0.59, -0.46, -0.34, -0.22, -0.1, 0.02, 0.14, 0.26,
-    0.38, 0.5, 0.62, 0.74, 0.86, -0.64, -0.28, 0.08, 0.44, 0.7,
-  ].map((f, i) => {
-    const n = noise(`bark${i}`);
-    const n2 = noise(`bark${i}b`);
-    const n3 = noise(`bark${i}c`);
-    // Its own stretch of trunk. Lengths run from a short fleck to most of the
-    // height, which is what stops a set of strokes looking like a comb.
-    const span = TRUNK_BASE_Y - trunkTop;
-    const y0 = TRUNK_BASE_Y - 20 - n * span * 0.5;
-    const y1 = Math.max(trunkTop + 30, y0 - span * (0.08 + n2 * 0.52));
-    const pts: Pt[] = [];
-    const steps = 26;
-    for (let j = 0; j <= steps; j++) {
-      const t = j / steps;
-      const y = y0 + (y1 - y0) * t;
-      // A drawn stroke follows the form it describes. Barely any lateral wander,
-      // just enough to keep it off a ruler — the length and the taper carry the
-      // character, not the wobble.
-      const wander = Math.sin(t * Math.PI * (0.9 + n3 * 1.1) + n * 6.3) * 0.05
-        + Math.sin(t * Math.PI * (2.4 + n * 1.6) + n2 * 6.3) * 0.022;
-      // held at a fraction of the trunk's current half-width, so it rides in as
-      // the trunk narrows instead of walking out through the side
-      pts.push([trunkX + (f + wander) * halfAt(y) * 0.88, y]);
-    }
-    // Fat low down and drawn out to a point at the top, the way a loaded nib
-    // leaves a stroke.
-    const belly = 9 + n3 * 17;
-    return ribbon(pts, (t) => {
-      const y = y0 + (y1 - y0) * t;
-      const taper = Math.sin(Math.min(1, t * 9) * (Math.PI / 2)) * (1 - t) ** 0.8;
-      return taper * Math.min(belly, halfAt(y) * 0.2);
-    });
-  });
 
   // Buttress roots: tapered wedges spreading out of the base, not hairline
   // strokes. They are drawn behind the trunk, so they start low enough to stay
@@ -941,7 +892,6 @@ export function computeBluesTree(musicians: Musician[]): BluesTree {
     limbs,
     twigs,
     trunk,
-    bark,
     roots,
     trunkX,
     // a little room for the names that hang off the outermost nodes
