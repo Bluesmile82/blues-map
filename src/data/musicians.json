@@ -231,7 +231,8 @@
       "jimmy-yancey",
       "charlie-spand",
       "jimmy-blythe",
-      "meade-lux-lewis"
+      "meade-lux-lewis",
+      "george-w-thomas"
     ],
     "incomplete": false,
     "playedWith": [
@@ -3514,7 +3515,8 @@
       "robert-pete-williams",
       "lil-son-jackson",
       "thomas-shaw",
-      "elzadie-robinson"
+      "elzadie-robinson",
+      "ralph-willis"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -4779,7 +4781,9 @@
     ],
     "description": "Walter Brown \"Brownie\" McGhee (November 30, 1915 – February 16, 1996) was an American folk and Piedmont blues singer and guitarist, best known for his collaboration with the harmonica player Sonny Terry.",
     "activeFrom": "1961",
-    "influences": [],
+    "influences": [
+      "tarheel-slim"
+    ],
     "influencedBy": [
       "blind-boy-fuller",
       "jim-jackson"
@@ -4793,7 +4797,9 @@
       "champion-jack-dupree",
       "big-bill-broonzy",
       "larry-johnson",
-      "sugar-blue"
+      "sugar-blue",
+      "tarheel-slim",
+      "ralph-willis"
     ],
     "source": "https://en.wikipedia.org/wiki/Brownie_McGhee",
     "secondaryInstruments": [
@@ -11004,7 +11010,8 @@
       "jim-jackson",
       "frank-stokes",
       "bukka-white",
-      "sleepy-john-estes"
+      "sleepy-john-estes",
+      "memphis-willie-b"
     ],
     "source": "https://en.wikipedia.org/wiki/Furry_Lewis",
     "secondaryInstruments": [],
@@ -12199,7 +12206,8 @@
       "bukka-white",
       "blind-blake",
       "noah-lewis",
-      "will-shade"
+      "will-shade",
+      "memphis-willie-b"
     ],
     "source": "https://en.wikipedia.org/wiki/Gus_Cannon",
     "secondaryInstruments": [
@@ -12613,7 +12621,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "hociel-thomas"
+      "hociel-thomas",
+      "george-w-thomas"
     ],
     "source": "https://en.wikipedia.org/wiki/Hersal_Thomas",
     "secondaryInstruments": [],
@@ -13275,7 +13284,9 @@
       "percy-mayfield"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "tommy-ridgley"
+    ],
     "source": "https://en.wikipedia.org/wiki/Irma_Thomas",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -13898,7 +13909,8 @@
     "incomplete": false,
     "playedWith": [
       "jimmy-witherspoon",
-      "eddie-cleanhead-vinson"
+      "eddie-cleanhead-vinson",
+      "julia-lee"
     ],
     "source": "https://en.wikipedia.org/wiki/Jay_McShann",
     "secondaryInstruments": [
@@ -14475,7 +14487,9 @@
     "albums": [],
     "description": "Jesse \"Babyface\" Thomas was a Louisiana blues guitarist whose performing career spanned eight decades. He recorded \"Blue Goose Blues\" for Victor Records in 1929.",
     "activeFrom": "1929",
-    "influences": [],
+    "influences": [
+      "lafayette-thomas"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -14941,7 +14955,8 @@
       "big-joe-turner",
       "big-mama-thornton",
       "etta-james",
-      "lowell-fulson"
+      "lowell-fulson",
+      "lafayette-thomas"
     ],
     "source": "https://en.wikipedia.org/wiki/Jimmy_McCracklin",
     "secondaryInstruments": [
@@ -15327,7 +15342,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "mama-yancey"
+    ],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Yancey",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -15850,7 +15867,8 @@
     "incomplete": false,
     "playedWith": [
       "phil-wiggins",
-      "archie-edwards"
+      "archie-edwards",
+      "tarheel-slim"
     ],
     "source": "https://en.wikipedia.org/wiki/Cephas_&_Wiggins",
     "secondaryInstruments": [
@@ -17451,7 +17469,8 @@
       "muddy-waters",
       "bb-king",
       "bobby-blue-bland",
-      "robert-johnson"
+      "robert-johnson",
+      "julius-daniels"
     ],
     "incomplete": false,
     "playedWith": [
@@ -20267,7 +20286,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "otis-rush"
+      "otis-rush",
+      "lafayette-thomas"
     ],
     "source": "https://en.wikipedia.org/wiki/Little_Brother_Montgomery",
     "secondaryInstruments": [],
@@ -22139,7 +22159,9 @@
     ],
     "description": "Luke Jordan was an American blues guitarist and vocalist from Lynchburg, Virginia. Known for his smooth, relaxed tenor voice contrasting with harsher Delta blues singers, he recorded for Victor Records in Charlotte in 1927 and in New York in 1929. His song 'Church Bells Blues' was later recorded by Ralph Willis and David Bromberg.",
     "activeFrom": "1927",
-    "influences": [],
+    "influences": [
+      "ralph-willis"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -23496,7 +23518,8 @@
     ],
     "influencedBy": [
       "hersal-thomas",
-      "jimmy-yancey"
+      "jimmy-yancey",
+      "george-w-thomas"
     ],
     "incomplete": false,
     "playedWith": [
@@ -23738,7 +23761,8 @@
       "jimmy-rogers",
       "willie-nix",
       "duster-bennett",
-      "sugar-blue"
+      "sugar-blue",
+      "lafayette-thomas"
     ],
     "source": "https://en.wikipedia.org/wiki/Memphis_Slim",
     "secondaryInstruments": [
@@ -27066,7 +27090,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "roy-gaines"
+      "roy-gaines",
+      "tommy-ridgley"
     ],
     "source": "https://en.wikipedia.org/wiki/Ray_Charles",
     "secondaryInstruments": [
@@ -27795,7 +27820,8 @@
       "johnny-shines",
       "robert-lockwood-jr",
       "elmore-james",
-      "howlin-wolf"
+      "howlin-wolf",
+      "memphis-willie-b"
     ],
     "source": "https://en.wikipedia.org/wiki/Robert_Johnson",
     "secondaryInstruments": [
@@ -30144,7 +30170,9 @@
       "hociel-thomas"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "george-w-thomas"
+    ],
     "source": "https://en.wikipedia.org/wiki/Sippie_Wallace",
     "secondaryInstruments": [
       "Vocals"
@@ -30900,7 +30928,8 @@
       "big-joe-williams",
       "jody-williams",
       "willie-nix",
-      "mel-brown"
+      "mel-brown",
+      "memphis-willie-b"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
     "secondaryInstruments": [
@@ -31137,7 +31166,9 @@
     "playedWith": [
       "brownie-mcghee",
       "big-joe-williams",
-      "blind-boy-fuller"
+      "blind-boy-fuller",
+      "tarheel-slim",
+      "ralph-willis"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Terry",
     "secondaryInstruments": [
@@ -31711,7 +31742,8 @@
       "mel-brown",
       "charlie-baty",
       "goree-carter",
-      "roy-gaines"
+      "roy-gaines",
+      "lafayette-thomas"
     ],
     "influencedBy": [
       "blind-lemon-jefferson",
@@ -33883,7 +33915,8 @@
     "playedWith": [
       "charley-patton",
       "son-house",
-      "robert-johnson"
+      "robert-johnson",
+      "memphis-willie-b"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_Brown_(musician)",
     "secondaryInstruments": [
@@ -36046,7 +36079,8 @@
     "playedWith": [
       "etta-james",
       "willie-dixon",
-      "muddy-waters"
+      "muddy-waters",
+      "lafayette-thomas"
     ],
     "source": "https://en.wikipedia.org/wiki/Sugar_Pie_DeSanto",
     "secondaryInstruments": [],
@@ -36568,7 +36602,8 @@
     "incomplete": true,
     "playedWith": [
       "joe-callicott",
-      "frank-stokes"
+      "frank-stokes",
+      "memphis-willie-b"
     ],
     "source": "https://en.wikipedia.org/wiki/Garfield_Akers",
     "secondaryInstruments": [
@@ -42250,7 +42285,8 @@
       "elvis-presley",
       "bb-king",
       "bobby-blue-bland",
-      "nappy-brown"
+      "nappy-brown",
+      "tommy-ridgley"
     ],
     "influencedBy": [
       "wynonie-harris"
@@ -44847,7 +44883,8 @@
     "playedWith": [
       "muddy-waters",
       "john-lee-hooker",
-      "mercy-dee"
+      "mercy-dee",
+      "lafayette-thomas"
     ],
     "source": "https://en.wikipedia.org/wiki/L._C._Robinson",
     "secondaryInstruments": [
@@ -49507,7 +49544,8 @@
     "description": "Noah Lewis (September 3, 1891 – February 7, 1961) was an American jug band and country blues musician, generally known for playing the harmonica.",
     "activeFrom": "1927",
     "influences": [
-      "hammie-nixon"
+      "hammie-nixon",
+      "memphis-willie-b"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -49552,7 +49590,8 @@
       "memphis-jug-band",
       "gus-cannon",
       "charlie-burse",
-      "hattie-hart"
+      "hattie-hart",
+      "memphis-willie-b"
     ],
     "source": "https://en.wikipedia.org/wiki/Will_Shade",
     "secondaryInstruments": [
@@ -50776,7 +50815,8 @@
     "incomplete": false,
     "playedWith": [
       "big-walter-horton",
-      "mose-vinson"
+      "mose-vinson",
+      "memphis-willie-b"
     ],
     "source": "https://en.wikipedia.org/wiki/Joe_Hill_Louis",
     "secondaryInstruments": [
@@ -51135,7 +51175,8 @@
     "influencedBy": [],
     "incomplete": true,
     "playedWith": [
-      "hersal-thomas"
+      "hersal-thomas",
+      "george-w-thomas"
     ],
     "source": "https://en.wikipedia.org/wiki/Hociel_Thomas",
     "secondaryInstruments": [
@@ -51827,5 +51868,550 @@
     "source": "https://en.wikipedia.org/wiki/Al_King",
     "secondaryInstruments": [],
     "createdAt": "2026-09-22"
+  },
+  {
+    "id": "mama-yancey",
+    "name": "Mama Yancey",
+    "image": "https://i.discogs.com/1eUv40J7Zdc0pvCzt5b6vxIPgYaSfkGxjwGO4gGqmWY/rs:fit/g:sm/q:90/h:565/w:522/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE0NjM4/MjItMTYzNjg5OTI1/NS05Nzk0LmpwZWc.jpeg",
+    "image_source": "discogs",
+    "birthDate": "1896-01-01",
+    "birthPlace": "Cairo",
+    "birthCoords": [
+      -89.180277777778,
+      37.013055555556
+    ],
+    "deathDate": "1986-04-19",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=O_1gbPF9Huw",
+    "albums": [
+      {
+        "name": "Pure Blues (1958)",
+        "youtubeLink": "https://www.youtube.com/watch?v=FqmMjbtRxPw"
+      },
+      {
+        "name": "The Best of Jimmy Yancey (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=O_1gbPF9Huw"
+      }
+    ],
+    "description": "Estelle \"Mama\" Yancey (January 1, 1896 – April 19, 1986) was an American blues singer.  She was nominated four times for Blues Music Awards as Traditional Blues Female Artist.",
+    "activeFrom": "1943",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "jimmy-yancey"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Mama_Yancey",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-23"
+  },
+  {
+    "id": "tarheel-slim",
+    "name": "Tarheel Slim",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/5a/Tarheel_Slim.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1923-09-24",
+    "birthPlace": "Bailey",
+    "birthCoords": [
+      -78.11306,
+      35.78056
+    ],
+    "deathDate": "1977-08-21",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.006,
+      40.7128
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=YIX7p1_rxwk",
+    "albums": [
+      {
+        "name": "Dan Pickett & Tarheel Slim (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JxdM6KvYdrY"
+      },
+      {
+        "name": "The Ultimate R&B Collection (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=XPWvJttSxao"
+      },
+      {
+        "name": "No Time at All (1975)",
+        "youtubeLink": "https://www.youtube.com/watch?v=TwzJt9Tw_Fk"
+      }
+    ],
+    "description": "Allen Rathel Bunn (September 24, 1923 – August 21, 1977), who was sometimes credited as Alden Bunn and who performed as Tarheel Slim, was an American singer, guitarist and songwriter whose work spanned gospel, blues, doowop, R&B, pop, and rockabilly.   After singing in various gospel groups he became a member of The Larks before recording with his wife Anna Lee \"Little Ann\" Sandford, and then as a solo performer.",
+    "activeFrom": "1951",
+    "influences": [],
+    "influencedBy": [
+      "brownie-mcghee"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "sonny-terry",
+      "brownie-mcghee",
+      "john-cephas"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Tarheel_Slim",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-23"
+  },
+  {
+    "id": "george-w-thomas",
+    "name": "George W. Thomas",
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/01/George_Washington_Thomas.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1883-03-09",
+    "birthPlace": "Pine Bluff",
+    "birthCoords": [
+      -92.00319444444445,
+      34.22844444444444
+    ],
+    "deathDate": "1937-03-06",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Houston",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=dVIMeG7Xe34",
+    "albums": [],
+    "description": "George Washington Thomas Jr.  (March 9, 1883 – March 6, 1937) was an American blues and jazz pianist and songwriter.   He wrote several influential early boogie-woogie piano pieces including \"The New Orleans Hop Scop Blues\", \"The Fives\", and \"The Rocks\", which some believe he may have recorded himself under the name Clay Custer.",
+    "activeFrom": "1900",
+    "influences": [
+      "meade-lux-lewis",
+      "albert-ammons"
+    ],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "sippie-wallace",
+      "hersal-thomas",
+      "hociel-thomas"
+    ],
+    "source": "https://en.wikipedia.org/wiki/George_W._Thomas",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-23"
+  },
+  {
+    "id": "memphis-willie-b",
+    "name": "Memphis Willie B.",
+    "image": "https://alchetron.com/cdn/memphis-willie-b-51d3df96-055f-400b-92d1-f9a19fe1452-resize-750.jpg",
+    "image_source": "alchetron.com",
+    "birthDate": "1911-11-04",
+    "birthPlace": "Shelby County",
+    "birthCoords": [
+      -89.89,
+      35.18
+    ],
+    "deathDate": "1993-10-05",
+    "deathPlace": "Memphis",
+    "deathCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=jv0LGH4WGck",
+    "albums": [
+      {
+        "name": "Introducing Memphis Willie B. (1961)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JRpFEu4U0nA"
+      }
+    ],
+    "description": "Memphis Willie B.  (November 4, 1911 – October 5, 1993) was an American Memphis blues guitarist, harmonica player, singer and songwriter. \nHe was known for his work with Jack Kelly's Jug Busters and the Memphis Jug Band.",
+    "activeFrom": "1930",
+    "influences": [],
+    "influencedBy": [
+      "noah-lewis"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "robert-johnson",
+      "garfield-akers",
+      "sonny-boy-williamson",
+      "willie-brown",
+      "will-shade",
+      "joe-hill-louis",
+      "gus-cannon",
+      "furry-lewis"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Memphis_Willie_B.",
+    "secondaryInstruments": [
+      "Harmonica",
+      "Vocals"
+    ],
+    "createdAt": "2026-09-23"
+  },
+  {
+    "id": "lafayette-thomas",
+    "name": "Lafayette Thomas",
+    "image": "https://alchetron.com/cdn/lafayette-thomas-5f49cb9f-b54c-45f2-9d2a-4a888cbfc08-resize-750.jpeg",
+    "image_source": "alchetron.com",
+    "birthDate": "1928-06-13",
+    "birthPlace": "Shreveport",
+    "birthCoords": [
+      -93.76277777777777,
+      32.50805555555556
+    ],
+    "deathDate": "1977-05-20",
+    "deathPlace": "Brisbane",
+    "deathCoords": [
+      -122.41916666667,
+      37.680833333333
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "San Francisco",
+        "coords": [
+          -122.4194,
+          37.7749
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ERbKjzSKWzI",
+    "albums": [
+      {
+        "name": "Oakland Blues (1969)",
+        "youtubeLink": "https://www.youtube.com/watch?v=pXkjK8zCIO0"
+      }
+    ],
+    "description": "Lafayette Jerl Thomas (June 13, 1928 – May 20, 1977) was an American blues singer, and guitarist.",
+    "activeFrom": "1947",
+    "influences": [],
+    "influencedBy": [
+      "jesse-thomas",
+      "t-bone-walker"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "jimmy-mccracklin",
+      "lc-robinson",
+      "memphis-slim",
+      "little-brother-montgomery",
+      "sugar-pie-desanto"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Lafayette_Thomas",
+    "secondaryInstruments": [
+      "Piano"
+    ],
+    "createdAt": "2026-09-23"
+  },
+  {
+    "id": "tommy-ridgley",
+    "name": "Tommy Ridgley",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tommy%20Ridgley%201996.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1925-10-30",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "1999-08-11",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=TWyMPZhlAwU",
+    "albums": [
+      {
+        "name": "Blues & Rhythm Series: The Chronological Tommy Ridgley 1949-1954 (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=am8qkblaLE8"
+      }
+    ],
+    "description": "Thomas Herman Ridgley (October 30, 1925 – August 11, 1999) was an American R&B singer, pianist, songwriter and bandleader in New Orleans, Louisiana.  In a musical career lasting half a century Ridgley was a stalwart of the New Orleans rhythm and blues scene.   Although he never had a national hit, unlike several of his contemporaries, he made numerous, popular recordings that sold mainly in New Orleans and Louisiana beginning in 1949 with a final release in 1995.",
+    "activeFrom": "1949",
+    "influences": [],
+    "influencedBy": [
+      "roy-brown"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "ray-charles",
+      "irma-thomas"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Tommy_Ridgley",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-23"
+  },
+  {
+    "id": "julius-daniels",
+    "name": "Julius Daniels",
+    "image": "https://i.ytimg.com/vi/fSGYSb8CD9E/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGMgYyhjMA8=&rs=AOn4CLAQ2zcA9H093Xw_ykS-F3i8xQ_Zpw",
+    "image_source": null,
+    "birthDate": "1901-11-20",
+    "birthPlace": "Denmark",
+    "birthCoords": [
+      -81.142222222222,
+      33.321111111111
+    ],
+    "deathDate": "1947-10-18",
+    "deathPlace": "Charlotte",
+    "deathCoords": [
+      -80.843333333333,
+      35.226944444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Charlotte",
+        "coords": [
+          -80.8431,
+          35.2271
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=66xwq9NYFv4",
+    "albums": [
+      {
+        "name": "Atlanta Blues 1927-30: The Complete Recordings of Julius Daniels and Lil McClintock (1986)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UuZ2fXUo7Ig"
+      }
+    ],
+    "description": "Julius Daniels (November 20, 1901 – October 18, 1947) was an American Piedmont blues musician.  His song \"99 Year Blues\" appeared on the box set Anthology of American Folk Music and has been covered by Jim Kweskin, Chris Smither, Johnny Winter, Charlie Parr and Hot Tuna on their album Burgers. \nDaniels was born in Denmark, South Carolina, United States.",
+    "activeFrom": "1927",
+    "influences": [
+      "johnny-winter"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Julius_Daniels",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-23"
+  },
+  {
+    "id": "ralph-willis",
+    "name": "Ralph Willis",
+    "image": "https://i.discogs.com/5MsK1hEaGLIMRQwmOpetXQ4K0h5WBN73pgZudIElUdY/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE2MjI5/NTktMTQ2NDU5Nzk2/Ni03NzMxLmpwZWc.jpeg",
+    "image_source": "discogs",
+    "birthDate": "1910",
+    "birthPlace": "Birmingham",
+    "birthCoords": [
+      -86.80944444444444,
+      33.5175
+    ],
+    "deathDate": "1957-06-11",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.00611111111111,
+      40.71277777777778
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=pJeeaPiHDms",
+    "albums": [
+      {
+        "name": "Complete Recorded Works In Chronological Order. Volume 2: 1950/51-1953 Plus The Complete Leroy Dallas 1949-1962 (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=q1FR8T_U8Jo"
+      },
+      {
+        "name": "Complete Recorded Works In Chronological Order. Volume 1: 1944-1950-51 (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ZqsbT8zO7jY"
+      }
+    ],
+    "description": "Ralph Willis (c.  1910 – June 11, 1957) was an American Piedmont blues and country blues singer, guitarist and songwriter.  Some of his Savoy records were released under the pseudonyms Washboard Pete, Alabama Slim, and Sleepy Joe.",
+    "activeFrom": "1944",
+    "influences": [],
+    "influencedBy": [
+      "blind-lemon-jefferson",
+      "luke-jordan"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "brownie-mcghee",
+      "sonny-terry"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Ralph_Willis_(blues_musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-23"
+  },
+  {
+    "id": "vera-hall",
+    "name": "Vera Hall",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vera%20Hall%20at%20the%20home%20of%20Mrs.%20Ruby%20Pickens%20Tartt%2C%20Livingston%2C%20Alabama.tif?width=500",
+    "image_source": null,
+    "birthDate": "1902-04-06",
+    "birthPlace": "Livingston",
+    "birthCoords": [
+      -88.188161,
+      32.587332
+    ],
+    "deathDate": "1964-01-29",
+    "deathPlace": "Tuscaloosa",
+    "deathCoords": [
+      -87.534722222222,
+      33.206666666667
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=AGwYD31dweo",
+    "albums": [
+      {
+        "name": "Negro Folk Music of Alabama, Volume V: Spirituals (1960)",
+        "youtubeLink": "https://www.youtube.com/watch?v=2g29dVqhf34"
+      }
+    ],
+    "description": "Adele Hall Ward, better known as Vera Hall (April 6, 1902 – January 29, 1964), was an American folk singer from the Livingston, Alabama region.  Best known for her 1937 song \"Trouble So Hard\", she was inducted into the Alabama Women's Hall of Fame in 2005.",
+    "activeFrom": "1937",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Vera_Hall",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-23"
+  },
+  {
+    "id": "julia-lee",
+    "name": "Julia Lee",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/66/Julia_Lee.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1902-10-31",
+    "birthPlace": "Boonville",
+    "birthCoords": [
+      -92.7417,
+      38.965
+    ],
+    "deathDate": "1958-12-08",
+    "deathPlace": "Kansas City",
+    "deathCoords": [
+      -94.5786,
+      39.0997
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ObLhM_RNsbY",
+    "albums": [
+      {
+        "name": "Tonight's The Night (1982)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JynavMIWTZY"
+      },
+      {
+        "name": "Kansas City Star (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=kylM4SaZ_Yk"
+      },
+      {
+        "name": "Gotta Gimme What'cha Got (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JljpibXFzgI"
+      },
+      {
+        "name": "Snatch and Grab It 1944-1949 (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=h-K4unWvAEw"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Julia Lee 1927-1946 (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9xeEO236Nfs"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Julia Lee 1947 (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ElwbiZHRpO8"
+      }
+    ],
+    "description": "Julia Lee (October 31, 1902 – December 8, 1958) was an American jump blues and \"dirty blues\" singer and pianist from Kansas City, Missouri, best known for risqué, double-entendre novelty hits such as \"King Size Papa\" and \"(Opportunity Knocks But Once) Snatch and Grab It,\" both No. 1 R&B hits in the late 1940s. She began recording in the 1920s with her brother George E. Lee's territory band before becoming a fixture of Kansas City's 12th Street nightclub scene for three decades, later recording extensively for Capitol Records backed by top swing and jump-blues session players.",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "jay-mcshann"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Julia_Lee_(musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-23"
   }
 ]
