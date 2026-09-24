@@ -431,8 +431,16 @@ export default function TreeView({
   const fontPx = detail === 0 ? 15 : detail === 1 ? 13 : 12;
   const styleFontPx = detail === 0 ? 17 : 15;
 
-  // --- labels: as many as fit at this zoom, laid out greedily so none collide
-  const labels = useMemo(() => {
+  /**
+   * Labels: as many as fit at this zoom, laid out greedily so none collide.
+   *
+   * Deliberately knows nothing about what the pointer is on. The layout is
+   * greedy, so giving the hovered musician priority reshuffled the whole set
+   * behind them — every name on screen jumped, and the one under the cursor
+   * could land somewhere else entirely, which meant it never received the
+   * mouseleave that should have ended the hover.
+   */
+  const baseLabels = useMemo(() => {
     const k = transform.k;
     if (!dims.width) return [];
     // visible world rect, with a margin so labels near the edge still get placed
@@ -442,11 +450,8 @@ export default function TreeView({
     const y1 = (dims.height - transform.y + 60) / k;
 
     const candidates = tree.nodes
-      // The pinned one is exempt from both the tier cut and the viewport cut: if
-      // the pointer found it, its name has to appear.
-      .filter((n) => n.m.id === pinnedId ||
-        (n.tier <= detail && !isDimmed(n) && n.x > x0 && n.x < x1 && n.y > y0 && n.y < y1))
-      .sort((a, b) => (a.m.id === pinnedId ? -1 : b.m.id === pinnedId ? 1 : b.score - a.score));
+      .filter((n) => n.tier <= detail && !isDimmed(n) && n.x > x0 && n.x < x1 && n.y > y0 && n.y < y1)
+      .sort((a, b) => b.score - a.score);
 
     const fontWorld = fontPx / k;
     // The style names are already on the canvas, so claim their boxes first —
@@ -492,17 +497,36 @@ export default function TreeView({
         ly = y;
         break;
       }
-      // the pinned name goes down wherever it lands, clash or not
-      if (!box) {
-        if (n.m.id !== pinnedId) continue;
-        box = [right ? lx : lx - w, n.y - fontWorld * 0.62, right ? lx + w : lx, n.y + fontWorld * 0.62];
-      }
+      if (!box) continue;
       placed.push(box);
       out.push({ n, x: lx, y: ly, anchor: right ? 'start' : 'end', box });
       if (out.length >= MAX_LABELS) break;
     }
     return out;
-  }, [tree, transform, dims, isDimmed, pinnedId, detail, filterActive, fontPx, styleFontPx]);
+  }, [tree, transform, dims, isDimmed, detail, filterActive, fontPx, styleFontPx]);
+
+  /**
+   * Whoever the pointer or the selection is on always gets their name, whatever
+   * their rank and whatever it collides with — added on top of the settled
+   * layout so that nothing else has to move to make room.
+   */
+  const labels = useMemo(() => {
+    const n = pinnedId ? tree.byId.get(pinnedId) : null;
+    if (!n || baseLabels.some((l) => l.n.m.id === pinnedId)) return baseLabels;
+    const fontWorld = fontPx / transform.k;
+    const right = n.side > 0;
+    const pad = n.tier === 0 ? 26 : n.tier === 1 ? 16 : 24;
+    const lx = n.x + (right ? pad : -pad);
+    const w = n.m.name.length * fontWorld * 0.54;
+    return [...baseLabels, {
+      n,
+      x: lx,
+      y: n.y,
+      anchor: (right ? 'start' : 'end') as 'start' | 'end',
+      box: [right ? lx : lx - w, n.y - fontWorld * 0.62, right ? lx + w : lx, n.y + fontWorld * 0.62] as
+        [number, number, number, number],
+    }];
+  }, [baseLabels, pinnedId, tree, fontPx, transform.k]);
 
   /**
    * Who influenced whom, read from both ends. An edge lives on whichever record
@@ -727,13 +751,13 @@ export default function TreeView({
             />
           )}
 
-          {/* Musician names — hovering one is the same as hovering its leaf. The
-              pinned name is drawn in a layer of its own rather than sorted to the
-              end of this one: re-ordering the list moved DOM nodes out from under
-              the cursor mid-hover, and the mouseleave that should have cleared the
-              hover never arrived, so the selected musician never got its focus back. */}
+          {/* Musician names — hovering one is the same as hovering its leaf. One
+              group, stable order: splitting the pinned name into a layer of its
+              own unmounted it from this one the moment you touched it, and an
+              element that unmounts never fires the mouseleave that ends the
+              hover, so the hover stuck. */}
           <g>
-            {labels.filter((l) => l.n.m.id !== pinnedId).map(({ n, x, y, anchor, box }) => {
+            {labels.map(({ n, x, y, anchor, box }) => {
               const hot = n.m.id === pinnedId;
               // grows under the cursor, which is the whole feedback — no tooltip
               const size = (hot ? fontPx * 1.25 : fontPx) / transform.k;
@@ -784,56 +808,6 @@ export default function TreeView({
             })}
           </g>
 
-          <g>
-            {labels.filter((l) => l.n.m.id === pinnedId).map(({ n, x, y, anchor, box }) => {
-              const hot = n.m.id === pinnedId;
-              // grows under the cursor, which is the whole feedback — no tooltip
-              const size = (hot ? fontPx * 1.25 : fontPx) / transform.k;
-              // baseline held at the un-grown size, so the name swells in place
-              const baseline = (fontPx / transform.k) * 0.34;
-              return (
-                <g
-                  key={n.m.id}
-                  style={{ cursor: 'pointer' }}
-                  onMouseEnter={() => setHovered(n)}
-                  onMouseLeave={() => setHovered((h) => (h?.m.id === n.m.id ? null : h))}
-                  onClick={() => onSelect(n.m)}
-                >
-                  <rect
-                    x={box[0]}
-                    y={box[1]}
-                    width={box[2] - box[0]}
-                    height={box[3] - box[1]}
-                    fill="transparent"
-                  />
-                  {/* a name shifted off its line needs a leader back to its leaf */}
-                  {Math.abs(y - n.y) > 1 && (
-                    <line
-                      x1={n.x} y1={n.y} x2={x} y2={y}
-                      stroke={n.color} strokeWidth={1 / transform.k} opacity={0.4}
-                    />
-                  )}
-                  <text
-                    pointerEvents="none"
-                    x={x}
-                    y={y + baseline}
-                    textAnchor={anchor}
-                    fontSize={size}
-                    className={hot ? undefined : 'fill-ink'}
-                    fill={hot ? n.color : undefined}
-                    style={{ fontWeight: hot || n.tier === 0 ? 700 : 400 }}
-                    paintOrder="stroke"
-                    stroke="var(--color-bg)"
-                    strokeWidth={(hot ? 4 : 2.6) / transform.k}
-                    strokeLinejoin="round"
-                    opacity={hot ? 1 : n.tier === 2 ? 0.78 : n.tier === 1 ? 0.92 : 1}
-                  >
-                    {n.m.name}
-                  </text>
-                </g>
-              );
-            })}
-          </g>
         </g>
 
         {/* year rail, pinned to the right edge over its own strip so the scale

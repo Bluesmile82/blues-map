@@ -108,6 +108,15 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
     if (id) videos.push({ label: album.name, videoId: id });
   }
 
+  /**
+   * Autoplay is read when the player is built, never reacted to. It used to sit
+   * in that effect's dependency list, and since it now carries "was playing",
+   * pressing play flipped it — which tore the player down and rebuilt it under
+   * the track that had just started.
+   */
+  const autoplayRef = useRef(autoplay);
+  autoplayRef.current = autoplay;
+
   // Use refs so the onError closure always sees fresh values
   const videosRef = useRef(videos);
   videosRef.current = videos;
@@ -214,10 +223,10 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
 
     playerRef.current = new window.YT.Player('yt-floating-player', {
       videoId: videosRef.current[0].videoId,
-      playerVars: { autoplay: autoplay ? 1 : 0, modestbranding: 1, rel: 0 },
+      playerVars: { autoplay: autoplayRef.current ? 1 : 0, modestbranding: 1, rel: 0 },
       events: {
         onReady: ({ target }) => {
-          if (autoplay) {
+          if (autoplayRef.current) {
             target.playVideo();
             setIsPlaying(true);
           }
@@ -247,7 +256,7 @@ export default function FloatingVideoPlayer({ youtubeUrl, albums, musicianName, 
         playerRef.current = null;
       }
     };
-  }, [apiReady, musicianName, youtubeUrl, albums.length, autoplay]);
+  }, [apiReady, musicianName, youtubeUrl, albums.length]);
 
   // When caller requests a specific video (e.g. album link clicked in panel)
   useEffect(() => {
