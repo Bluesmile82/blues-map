@@ -52512,8 +52512,8 @@
   {
     "id": "rosetta-howard",
     "name": "Rosetta Howard",
-    "image": "",
-    "image_source": null,
+    "image": "https://alchetron.com/cdn/rosetta-howard-1b53658c-ba52-44b8-938c-e698a3fbea3-resize-750.jpeg",
+    "image_source": "alchetron.com",
     "birthDate": "1913-08-30",
     "birthPlace": "Woodruff County, Arkansas",
     "birthCoords": [
@@ -52686,8 +52686,8 @@
   {
     "id": "h-bomb-ferguson",
     "name": "H-Bomb Ferguson",
-    "image": "",
-    "image_source": null,
+    "image": "https://alchetron.com/cdn/h-bomb-ferguson-804c603c-c8d1-4620-bb84-a395cad08af-resize-750.jpeg",
+    "image_source": "alchetron.com",
     "birthDate": "1929-05-09",
     "birthPlace": "Charleston, South Carolina",
     "birthCoords": [
@@ -52802,8 +52802,8 @@
   {
     "id": "jimmy-wilson",
     "name": "Jimmy Wilson",
-    "image": "",
-    "image_source": null,
+    "image": "https://static.wixstatic.com/media/7d98f5_f42fdfa55c7b480b9d326054124344b7~mv2.jpg/v1/fill/w_818,h_1000,al_c,q_85,usm_0.66_1.00_0.01/7d98f5_f42fdfa55c7b480b9d326054124344b7~mv2.jpg",
+    "image_source": "https://blueslegends5.wixsite.com/",
     "birthDate": "1921",
     "birthPlace": "Louisiana",
     "birthCoords": [
@@ -52819,11 +52819,11 @@
     "spentTimePlaces": [],
     "instrument": "Vocals",
     "bluesStyle": "West Coast Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=QjtwKhjzSCA",
+    "youtubeLink": "https://www.youtube.com/watch?v=y6vtFU2DTAY",
     "albums": [
       {
         "name": "Tin Pan Alley (1953)",
-        "youtubeLink": "https://www.youtube.com/watch?v=QjtwKhjzSCA"
+        "youtubeLink": "https://www.youtube.com/watch?v=K2xZeUMloF0"
       }
     ],
     "description": "Jimmy Wilson (possibly January 21, 1918, 1921 or 1923 – February 5, 1965 or February 24, 1966) was an American West Coast blues singer, best known for his 1953 hit \"Tin Pan Alley\".",
@@ -52939,8 +52939,8 @@
   {
     "id": "henry-rufe-johnson",
     "name": "Henry \"Rufe\" Johnson",
-    "image": "",
-    "image_source": null,
+    "image": "https://i.ytimg.com/vi/HVNuhE3FHWs/maxresdefault.jpg",
+    "image_source": "sentirelblues.com",
     "birthDate": "1908-10-02",
     "birthPlace": "Bogansville, South Carolina",
     "birthCoords": [
@@ -52984,17 +52984,20 @@
   {
     "id": "merline-johnson",
     "name": "Merline Johnson",
-    "image": "",
-    "image_source": null,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLKyuBs0lbJwTK7iCE8EPD_GYpX43NC8JkH5PH1K7pHGV61PfOe17xPJxtSxJ6-DDkzqiE1_rNF_kPMw94MCS_sfAEH0mPcqxa_B-HpCJEmGSkeonOXF8g9SaM1IwCkyBe14imdEqBEwd32G9CPm7SzRSF1db5-joqwjovEy0XOOzrdwCHrfEHAgS5TgzB/s16000/front.JPG",
+    "image_source": "opubisdarosa.blogspot.com",
     "birthDate": "1910",
     "birthPlace": "Mississippi",
     "birthCoords": [
       -90,
       33
     ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
+    "deathDate": "2005-06-19",
+    "deathPlace": "Syracuse",
+    "deathCoords": [
+      -76.144423,
+      43.046899
+    ],
     "spentTimePlaces": [
       {
         "place": "Chicago",
@@ -53006,11 +53009,11 @@
     ],
     "instrument": "Vocals",
     "bluesStyle": "Classic Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=Dyqtu-enb1c",
+    "youtubeLink": "https://www.youtube.com/watch?v=TnkyjdYoZ-o",
     "albums": [
       {
         "name": "Don't You Make Me High (1938)",
-        "youtubeLink": "https://www.youtube.com/watch?v=Dyqtu-enb1c"
+        "youtubeLink": "https://www.youtube.com/watch?v=bbxXQAGX2HQ"
       }
     ],
     "description": "Merline Johnson (born c.  1912 or 1918, date of death unknown) was an American blues singer in the 1930s and 1940s, billed as The Yas Yas Girl.  \"Yas yas\" was a euphemism for buttocks in hokum blues songs such as Blind Boy Fuller's \"Get Yer Yas Yas Out\" and James \"Stump\" Johnson's \"The Duck's Yas-Yas-Yas\".",
