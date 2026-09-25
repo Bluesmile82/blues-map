@@ -781,7 +781,8 @@
     "activeFrom": "1958",
     "influences": [],
     "influencedBy": [
-      "professor-longhair"
+      "professor-longhair",
+      "tuts-washington"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -2099,7 +2100,8 @@
       "lavern-baker",
       "candye-kane",
       "chippie-hill",
-      "maggie-jones"
+      "maggie-jones",
+      "monette-moore"
     ],
     "influencedBy": [
       "ma-rainey"
@@ -8028,7 +8030,8 @@
       "professor-longhair",
       "allen-toussaint",
       "fats-domino",
-      "bo-diddley"
+      "bo-diddley",
+      "tuts-washington"
     ],
     "incomplete": false,
     "playedWith": [
@@ -10171,7 +10174,8 @@
       "professor-longhair",
       "smiley-lewis",
       "cecil-gant",
-      "amos-milburn"
+      "amos-milburn",
+      "tuts-washington"
     ],
     "incomplete": false,
     "playedWith": [
@@ -21683,7 +21687,8 @@
       "rosco-gordon",
       "tommy-tucker",
       "jack-mcvea",
-      "smiley-lewis"
+      "smiley-lewis",
+      "bull-moose-jackson"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -22677,7 +22682,8 @@
       "georgia-white",
       "trixie-smith",
       "chuck-willis",
-      "chippie-hill"
+      "chippie-hill",
+      "monette-moore"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -23664,7 +23670,8 @@
       "big-mama-thornton",
       "koko-taylor",
       "bonnie-raitt",
-      "baby-boy-warren"
+      "baby-boy-warren",
+      "rosetta-howard"
     ],
     "influencedBy": [
       "frank-stokes",
@@ -26574,7 +26581,8 @@
     "description": "Pinetop Smith was a boogie-woogie pianist whose 1928 recording \"Pinetop's Boogie Woogie\" was the first known use of the term on record. He died at 24 in a dance-hall fight.",
     "activeFrom": "1920",
     "influences": [
-      "montana-taylor"
+      "montana-taylor",
+      "sammy-price"
     ],
     "influencedBy": [
       "jimmy-blythe"
@@ -26815,7 +26823,9 @@
     "influences": [
       "walter-wolfman-washington"
     ],
-    "influencedBy": [],
+    "influencedBy": [
+      "tuts-washington"
+    ],
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Professor_Longhair",
@@ -31743,7 +31753,8 @@
       "charlie-baty",
       "goree-carter",
       "roy-gaines",
-      "lafayette-thomas"
+      "lafayette-thomas",
+      "jimmy-wilson"
     ],
     "influencedBy": [
       "blind-lemon-jefferson",
@@ -34501,7 +34512,8 @@
     "activeFrom": "1935",
     "influences": [
       "roy-brown",
-      "nappy-brown"
+      "nappy-brown",
+      "h-bomb-ferguson"
     ],
     "influencedBy": [
       "jimmy-rushing",
@@ -36141,7 +36153,8 @@
       "professor-longhair",
       "fats-domino",
       "ray-charles",
-      "art-tatum"
+      "art-tatum",
+      "tuts-washington"
     ],
     "incomplete": false,
     "playedWith": [
@@ -52413,5 +52426,608 @@
       "Vocals"
     ],
     "createdAt": "2026-09-23"
+  },
+  {
+    "id": "monette-moore",
+    "name": "Monette Moore",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Illustration_of_Susie_Smith_in_an_Ajax_Records_advertisement.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": null,
+    "birthDate": "1902-05-19",
+    "birthPlace": "Gainesville, Texas",
+    "birthCoords": [
+      -97.1403,
+      33.6303
+    ],
+    "deathDate": "1962-10-21",
+    "deathPlace": "Garden Grove, California",
+    "deathCoords": [
+      -117.960278,
+      33.778889
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=RXGy3KIH0cI",
+    "albums": [
+      {
+        "name": "Complete Recorded Works In Chronological Order Volume 2 (1924-1932) (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=anRWlquCHr0"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order Volume 1 (1923-1924) (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=TVDp9gy7Ih0"
+      }
+    ],
+    "description": "Monette Moore (May 19, 1902 – October 21, 1962) was an American classic blues and jazz singer and pianist from Gainesville, Texas. She taught herself piano as a teenager in Kansas City, then recorded 44 songs for labels including Paramount and Ajax between 1923 and 1927 — some issued under the pseudonym Susie Smith — before moving into cabaret, film, and Broadway work in later decades.",
+    "activeFrom": "1920",
+    "influences": [],
+    "influencedBy": [
+      "ma-rainey",
+      "bessie-smith"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Monette_Moore",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-24"
+  },
+  {
+    "id": "rosetta-howard",
+    "name": "Rosetta Howard",
+    "image": "https://alchetron.com/cdn/rosetta-howard-1b53658c-ba52-44b8-938c-e698a3fbea3-resize-750.jpeg",
+    "image_source": "alchetron.com",
+    "birthDate": "1913-08-30",
+    "birthPlace": "Woodruff County, Arkansas",
+    "birthCoords": [
+      -91.36,
+      35.29
+    ],
+    "deathDate": "1974",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Xv9D0NLw11o",
+    "albums": [
+      {
+        "name": "Complete Recorded Works 1929-1947 in Chronological Order (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=MnOYoKQdZJU"
+      }
+    ],
+    "description": "Rosetta Howard (August 30, 1913 – October 8, 1974) was an American blues singer born in Woodruff County, Arkansas, who relocated to Chicago and began singing professionally in the early 1930s. From 1937 she recorded extensively with the Harlem Hamfats and other Decca house bands, cutting hokum and blues sides such as \"If You're a Viper\" and \"Let Your Linen Hang Low\" that made her one of the label's most prolific female blues voices of the era.",
+    "activeFrom": "1932",
+    "influences": [],
+    "influencedBy": [
+      "memphis-minnie"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Rosetta_Howard",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-24"
+  },
+  {
+    "id": "reverend-j-m-gates",
+    "name": "Reverend J. M. Gates",
+    "image": "https://upload.wikimedia.org/wikipedia/en/d/d7/J.M._Gates.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1884-07-14",
+    "birthPlace": "Hogansville, Georgia",
+    "birthCoords": [
+      -84.9092,
+      33.17
+    ],
+    "deathDate": "1945-08-18",
+    "deathPlace": "Atlanta",
+    "deathCoords": [
+      -84.38972222222222,
+      33.754444444444445
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      {
+        "place": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=qUwG6NYPIzs",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 5: 1927 (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0SaKN85H920"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 2: September 1926 (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=8jI0NYcpUJg"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 7: 1929-1930 (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0SaKN85H920"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 9: August 1934 to October 1941 (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=CmFGHmB8NcQ"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 1: April to September 1926 (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=8jI0NYcpUJg"
+      },
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 4: December 1926 (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=8jI0NYcpUJg"
+      }
+    ],
+    "description": "Reverend J. M. Gates (July 14, 1884 – August 18, 1945) was an American Baptist preacher from Atlanta, Georgia, who became the most commercially successful recording preacher of the pre-war era, cutting over 200 sides of sermons and gospel songs between 1926 and 1941. His debut recording, \"Death's Black Train Is Coming,\" sold over 35,000 copies within months, and his rhythmic call-and-response style, preached before his own congregation and pressed straight to disc, helped establish the recorded sermon as a commercial genre alongside blues and gospel music. He served as pastor of Mount Calvary Baptist Church in Atlanta from 1914 until his death.",
+    "activeFrom": "1926",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Reverend_J._M._Gates",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-24"
+  },
+  {
+    "id": "bull-moose-jackson",
+    "name": "Bull Moose Jackson",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/9c/Bull_Moose_Jackson.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1919-04-22",
+    "birthPlace": "Cleveland, Ohio",
+    "birthCoords": [
+      -81.69472222222223,
+      41.49916666666667
+    ],
+    "deathDate": "1989-07-31",
+    "deathPlace": "Cleveland, Ohio",
+    "deathCoords": [
+      -81.69472222222223,
+      41.49916666666667
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Saxophone",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Rws_7mLTqj8",
+    "albums": [
+      {
+        "name": "Bull Moose Jackson Sings His All‐Time Hits (1959)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Wapoc46gVoU"
+      },
+      {
+        "name": "Greatest Hits (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=iF3vyTZFS7Q"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Bull Moose Jackson 1945-1947 (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=bTaWxxiZhF4"
+      },
+      {
+        "name": "A Proper Introduction to Bull Moose Jackson: Bad Man Jackson (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Rws_7mLTqj8"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Bull Moose Jackson 1947-1950 (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=bTaWxxiZhF4"
+      },
+      {
+        "name": "Big Ten-Inch Record: The Very Best of Bull Moose Jackson (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Rws_7mLTqj8"
+      }
+    ],
+    "description": "Benjamin Clarence \"Bull Moose\" Jackson (April 22, 1919 – July 31, 1989) was an American jump blues singer and saxophonist from Cleveland, Ohio, who led his group the Buffalo Bearcats to a string of R&B chart hits in the late 1940s. Alongside romantic ballads, he became known for raucous, sexually suggestive jump blues sides such as \"I Want a Bowlegged Woman\" and \"Big Ten Inch Record,\" making him one of the era's leading performers of dirty blues.",
+    "activeFrom": "1943",
+    "influences": [
+      "h-bomb-ferguson"
+    ],
+    "influencedBy": [
+      "louis-jordan"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Bull_Moose_Jackson",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-24"
+  },
+  {
+    "id": "h-bomb-ferguson",
+    "name": "H-Bomb Ferguson",
+    "image": "https://alchetron.com/cdn/h-bomb-ferguson-804c603c-c8d1-4620-bb84-a395cad08af-resize-750.jpeg",
+    "image_source": "alchetron.com",
+    "birthDate": "1929-05-09",
+    "birthPlace": "Charleston, South Carolina",
+    "birthCoords": [
+      -79.93194444444444,
+      32.78333333333333
+    ],
+    "deathDate": "2006-11-26",
+    "deathPlace": "Cincinnati",
+    "deathCoords": [
+      -84.5125,
+      39.1
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=-TDiPa9hdoM",
+    "albums": [
+      {
+        "name": "A Little Rock & Roll for Everybody (1960)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9L5D970QEp0"
+      },
+      {
+        "name": "Life Is Hard (1986)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xSX7jtZgj4I"
+      },
+      {
+        "name": "Rock H-Bomb Rock! (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Q0buizoTvqA"
+      },
+      {
+        "name": "Big City Blues: 1951-54 (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xSX7jtZgj4I"
+      },
+      {
+        "name": "Rock, H-Bomb, Rock!!!",
+        "youtubeLink": "https://www.youtube.com/watch?v=xSX7jtZgj4I"
+      }
+    ],
+    "description": "Robert Percell Ferguson (May 9, 1929 – November 26, 2006), who performed as H-Bomb Ferguson, was an American jump blues singer.  He was an early pioneer of the rock and roll style of the mid-1950s, featuring driving rhythm, intensely shouted vocals, honking tenor saxophone solos, and outlandish personal appearance.   Ferguson sang and played piano in a flamboyant style, wearing colorful wigs.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [
+      "bull-moose-jackson",
+      "wynonie-harris"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/H-Bomb_Ferguson",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-24"
+  },
+  {
+    "id": "tuts-washington",
+    "name": "Tuts Washington",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuts%20Washington%20at%20piano.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1907-01-24",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "1984-08-05",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Mtes8daaJYo",
+    "albums": [
+      {
+        "name": "New Orleans Piano Professor (1983)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Bn-S5n3IvgI"
+      }
+    ],
+    "description": "Isidore \"Tuts\" Washington (January 24, 1907 – August 5, 1984) was an American blues and boogie-woogie pianist from New Orleans who was largely self-taught, beginning at age ten, and became a leading dance-band and Dixieland pianist in the city through the 1920s and 1930s. He rarely recorded, but his sole album, New Orleans Piano Professor (1983), captured the rolling, syncopated \"professor\" style he passed on directly to Fats Domino, Professor Longhair, James Booker, Dr. John, and Allen Toussaint, all of whom cited him as a formative influence on New Orleans piano blues.",
+    "activeFrom": "1925",
+    "influences": [
+      "fats-domino",
+      "professor-longhair",
+      "james-booker",
+      "dr-john",
+      "allen-toussaint"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Tuts_Washington",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-24"
+  },
+  {
+    "id": "jimmy-wilson",
+    "name": "Jimmy Wilson",
+    "image": "https://static.wixstatic.com/media/7d98f5_f42fdfa55c7b480b9d326054124344b7~mv2.jpg/v1/fill/w_818,h_1000,al_c,q_85,usm_0.66_1.00_0.01/7d98f5_f42fdfa55c7b480b9d326054124344b7~mv2.jpg",
+    "image_source": "https://blueslegends5.wixsite.com/",
+    "birthDate": "1921",
+    "birthPlace": "Louisiana",
+    "birthCoords": [
+      -92,
+      31
+    ],
+    "deathDate": "1965-02-05",
+    "deathPlace": "Dallas",
+    "deathCoords": [
+      -96.808888888889,
+      32.779166666667
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=y6vtFU2DTAY",
+    "albums": [
+      {
+        "name": "Tin Pan Alley (1953)",
+        "youtubeLink": "https://www.youtube.com/watch?v=K2xZeUMloF0"
+      }
+    ],
+    "description": "Jimmy Wilson (possibly January 21, 1918, 1921 or 1923 – February 5, 1965 or February 24, 1966) was an American West Coast blues singer, best known for his 1953 hit \"Tin Pan Alley\".",
+    "activeFrom": "1951",
+    "influences": [],
+    "influencedBy": [
+      "t-bone-walker"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Jimmy_Wilson_(blues_musician)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-24"
+  },
+  {
+    "id": "sammy-price",
+    "name": "Sammy Price",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wilbur%20De%20Paris%2C%20Sammy%20Price%2C%20Sidney%20De%20Paris%2C%20Eddie%20Barefield%2C%20and%20Charlie%20Traeger%2C%20Jimmy%20Ryan's%20(Club)%2C%20New%20York%2C%20ca.%20July%201947%20(William%20P.%20Gottlieb%2002031).jpg?width=500",
+    "image_source": null,
+    "birthDate": "1908-10-06",
+    "birthPlace": "Honey Grove",
+    "birthCoords": [
+      -95.9072,
+      33.5861
+    ],
+    "deathDate": "1992-04-14",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.00611111111111,
+      40.71277777777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=gOrnsme4F-M",
+    "albums": [
+      {
+        "name": "Barrelhouse and Blues (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=2PTUiioGW78"
+      },
+      {
+        "name": "The Chronological Classics: Sam Price 1942-1945 (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JLHER8osSu0"
+      },
+      {
+        "name": "Sammy Price and the Blues Singers, Vol. 1: 1938-1941 (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=dth73D6hWBE"
+      },
+      {
+        "name": "Sammy Price and the Blues Singers, Vol. 2: 1939-1949 (2001)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Jazz in Paris: Sammy Price and Doc Cheatham Play George Gershwin (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=GrSekXm6mWw"
+      },
+      {
+        "name": "Americans Swinging in Paris (2002)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Samuel Blythe Price (October 6, 1908 – April 14, 1992) was an American boogie-woogie and blues pianist from Honey Grove, Texas, who was leading his own band in Dallas by age 18 before relocating to New York in 1938. As Decca Records' house pianist for over a decade, he backed countless blues and gospel recordings, including sessions with Sister Rosetta Tharpe and Big Bill Broonzy, and in 1977 was crowned \"King of Boogie-Woogie\" by fellow pianist Eubie Blake.",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [
+      "pinetop-smith"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "sister-rosetta-tharpe",
+      "big-bill-broonzy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Sammy_Price",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-24"
+  },
+  {
+    "id": "henry-rufe-johnson",
+    "name": "Henry \"Rufe\" Johnson",
+    "image": "https://i.ytimg.com/vi/HVNuhE3FHWs/maxresdefault.jpg",
+    "image_source": "sentirelblues.com",
+    "birthDate": "1908-10-02",
+    "birthPlace": "Bogansville, South Carolina",
+    "birthCoords": [
+      -81.68,
+      34.76
+    ],
+    "deathDate": "1974-02-04",
+    "deathPlace": "Union, South Carolina",
+    "deathCoords": [
+      -81.6237,
+      34.7154
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Qf2_tmxjaew",
+    "albums": [
+      {
+        "name": "The Union County Flash! (1973)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Qf2_tmxjaew"
+      }
+    ],
+    "description": "Henry \"Rufe\" Johnson (October 2, 1908 – February 4, 1974) was an American Piedmont blues guitarist, harmonica player, pianist, banjo player, and singer from Union County, South Carolina, known for occasionally playing slide guitar with a pocket knife. Discovered late in life by blues historians, he performed and recorded alongside his childhood friend Peg Leg Sam and fellow guitarist Baby Tate, finally reaching a wider audience with his sole album, The Union County Flash! (1973), released the year before his death.",
+    "activeFrom": "1970",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "peg-leg-sam",
+      "baby-tate"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Henry_%22Rufe%22_Johnson",
+    "secondaryInstruments": [
+      "Vocals",
+      "Harmonica",
+      "Piano",
+      "Banjo"
+    ],
+    "createdAt": "2026-09-24"
+  },
+  {
+    "id": "merline-johnson",
+    "name": "Merline Johnson",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLKyuBs0lbJwTK7iCE8EPD_GYpX43NC8JkH5PH1K7pHGV61PfOe17xPJxtSxJ6-DDkzqiE1_rNF_kPMw94MCS_sfAEH0mPcqxa_B-HpCJEmGSkeonOXF8g9SaM1IwCkyBe14imdEqBEwd32G9CPm7SzRSF1db5-joqwjovEy0XOOzrdwCHrfEHAgS5TgzB/s16000/front.JPG",
+    "image_source": "opubisdarosa.blogspot.com",
+    "birthDate": "1910",
+    "birthPlace": "Mississippi",
+    "birthCoords": [
+      -90,
+      33
+    ],
+    "deathDate": "2005-06-19",
+    "deathPlace": "Syracuse",
+    "deathCoords": [
+      -76.144423,
+      43.046899
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.62777777777778,
+          41.88194444444444
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=TnkyjdYoZ-o",
+    "albums": [
+      {
+        "name": "Don't You Make Me High (1938)",
+        "youtubeLink": "https://www.youtube.com/watch?v=bbxXQAGX2HQ"
+      }
+    ],
+    "description": "Merline Johnson (born c.  1912 or 1918, date of death unknown) was an American blues singer in the 1930s and 1940s, billed as The Yas Yas Girl.  \"Yas yas\" was a euphemism for buttocks in hokum blues songs such as Blind Boy Fuller's \"Get Yer Yas Yas Out\" and James \"Stump\" Johnson's \"The Duck's Yas-Yas-Yas\".",
+    "activeFrom": "1937",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "big-bill-broonzy",
+      "lonnie-johnson",
+      "blind-john-davis"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Merline_Johnson",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-24"
   }
 ]
