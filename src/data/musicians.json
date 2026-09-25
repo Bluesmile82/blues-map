@@ -52982,6 +52982,54 @@
     "createdAt": "2026-09-24"
   },
   {
+    "id": "paul-williams",
+    "name": "Paul Williams",
+    "image": "https://alchetron.com/cdn/paul-williams-saxophonist-30837540-e251-466a-b415-1ddf0ed79d8-resize-750.jpeg",
+    "image_source": "alchetron.com",
+    "birthDate": "1915-07-13",
+    "birthPlace": "Lewisburg, Tennessee",
+    "birthCoords": [
+      -86.7955,
+      35.4487
+    ],
+    "deathDate": "2002-09-14",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.006,
+      40.7128
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      }
+    ],
+    "instrument": "Tenor saxophone",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=vlGYaH3TgN4",
+    "albums": [
+      {
+        "name": "The Huckle-Buck (1948)",
+        "youtubeLink": "https://www.youtube.com/watch?v=vlGYaH3TgN4"
+      }
+    ],
+    "description": "Paul 'Hucklebuck' Williams (July 13, 1915 – September 14, 2002) was an American tenor saxophonist and bandleader whose 1948 instrumental 'The Huckle-Buck' topped the R&B chart for 14 weeks and became one of the biggest jump blues hits of its era. His raw, honking tenor sax delivery and showmanship on stage helped define the jump blues sound of the late 1940s and directly shaped the next generation of honking saxophonists, including Jimmy Preston and Big Jay McNeely, who carried the style into early rock and roll.",
+    "activeFrom": "1936",
+    "influences": [
+      "jimmy-preston",
+      "big-jay-mcneely"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Paul_Williams_(saxophonist)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-25"
+  },
+  {
     "id": "merline-johnson",
     "name": "Merline Johnson",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLKyuBs0lbJwTK7iCE8EPD_GYpX43NC8JkH5PH1K7pHGV61PfOe17xPJxtSxJ6-DDkzqiE1_rNF_kPMw94MCS_sfAEH0mPcqxa_B-HpCJEmGSkeonOXF8g9SaM1IwCkyBe14imdEqBEwd32G9CPm7SzRSF1db5-joqwjovEy0XOOzrdwCHrfEHAgS5TgzB/s16000/front.JPG",
@@ -53029,5 +53077,52 @@
     "source": "https://en.wikipedia.org/wiki/Merline_Johnson",
     "secondaryInstruments": [],
     "createdAt": "2026-09-24"
+  },
+  {
+    "id": "jimmy-preston",
+    "name": "Jimmy Preston",
+    "image": "https://www.spontaneouslunacy.net/wp-content/uploads/2019/08/Jimmy-Preston-photo.jpg",
+    "image_source": "spontaneouslunacy.net",
+    "birthDate": "1913-08-18",
+    "birthPlace": "Chester",
+    "birthCoords": [
+      -75.372777777778,
+      39.847222222222
+    ],
+    "deathDate": "1984-12-17",
+    "deathPlace": "Philadelphia",
+    "deathCoords": [
+      -75.163611111111,
+      39.952777777778
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Saxophone",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Jp3-7pD3kdw",
+    "albums": [
+      {
+        "name": "Jimmy Preston (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=_bJftAClYRA"
+      },
+      {
+        "name": "Jimmy Preston, Volume 2: Rock the Joint (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=GBt34cdqGKI"
+      },
+      {
+        "name": "Jimmy Preston 1948-50 (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=_bJftAClYRA"
+      }
+    ],
+    "description": "James Alfred Smith Preston (August 18, 1913 – December 17, 1984) was an American R&B bandleader, alto saxophonist, drummer and singer who made an important contribution to early rock and roll.",
+    "activeFrom": "1945",
+    "influences": [],
+    "influencedBy": [
+      "paul-williams"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Jimmy_Preston",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-25"
   }
 ]
