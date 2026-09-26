@@ -3659,7 +3659,8 @@
     "activeFrom": "1927",
     "influences": [
       "ramblin-thomas",
-      "lc-robinson"
+      "lc-robinson",
+      "blind-willie-davis"
     ],
     "influencedBy": [
       "edward-w-clayborn"
@@ -3727,7 +3728,9 @@
     "description": "Blind Willie McTell (born William Samuel McTier; circa 1903 – August 19, 1959) was an American Piedmont blues and ragtime singer, songwriter and guitarist.  He played in a fluid, syncopated finger picking guitar style common among many East Coast, Piedmont blues players.  Like his Atlanta contemporaries, he came to use twelve-string guitars exclusively.",
     "activeFrom": "1927",
     "influences": [
-      "taj-mahal"
+      "taj-mahal",
+      "pearly-brown",
+      "cora-mae-bryant"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -4946,7 +4949,8 @@
     "activeFrom": "1930",
     "influences": [
       "blind-willie-mctell",
-      "josh-white"
+      "josh-white",
+      "cora-mae-bryant"
     ],
     "influencedBy": [
       "blind-blake",
@@ -6909,7 +6913,8 @@
       "meade-lux-lewis",
       "albert-ammons",
       "montana-taylor",
-      "romeo-nelson"
+      "romeo-nelson",
+      "jabo-williams"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -7045,7 +7050,9 @@
     "albums": [],
     "description": "Curley James Weaver was an American blues musician known for his work with Barbecue Bob and Blind Willie McTell. He was a key figure in the Atlanta blues scene and recorded extensively from 1928 to 1949, working with various labels including Columbia, Okeh, and Vocalion.",
     "activeFrom": "1925",
-    "influences": [],
+    "influences": [
+      "cora-mae-bryant"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -12428,7 +12435,8 @@
     "incomplete": false,
     "playedWith": [
       "howlin-wolf",
-      "clarence-edwards"
+      "clarence-edwards",
+      "lil-buck-sinegal"
     ],
     "source": "https://en.wikipedia.org/wiki/Henry_Gray_(musician)",
     "secondaryInstruments": [
@@ -19296,7 +19304,8 @@
       "kenny-neal",
       "lucky-peterson",
       "jimmie-vaughan",
-      "guitar-gable"
+      "guitar-gable",
+      "lil-buck-sinegal"
     ],
     "source": "https://en.wikipedia.org/wiki/Lazy_Lester",
     "secondaryInstruments": [
@@ -21870,7 +21879,8 @@
       "john-lee-hooker",
       "jimmy-rogers",
       "rick-estrin",
-      "doug-macleod"
+      "doug-macleod",
+      "lloyd-glenn"
     ],
     "source": "https://en.wikipedia.org/wiki/Lowell_Fulson",
     "secondaryInstruments": [
@@ -23614,7 +23624,8 @@
     "playedWith": [
       "will-shade",
       "charlie-burse",
-      "hattie-hart"
+      "hattie-hart",
+      "laura-dukes"
     ],
     "source": "https://en.wikipedia.org/wiki/Memphis_Jug_Band",
     "secondaryInstruments": [],
@@ -28864,7 +28875,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "camille-howard"
+    ],
     "source": "https://en.wikipedia.org/wiki/Roy_Milton",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -30036,7 +30049,8 @@
     "description": "Sid Hemphill (1876-1963) was a blind blues multi-instrumentalist and bandleader from Panola County, Mississippi, who led his own string band and fife-and-drum ensemble across Northern Mississippi for decades. Recorded by Alan Lomax in 1942 and 1959, Hemphill played fiddle, banjo, guitar, quills, and cane fife, blending old-time, blues, spirituals, and African polyrhythmic traditions. His music connected Mississippi Hill Country traditions with deep African roots.",
     "activeFrom": "1890",
     "influences": [
-      "jessie-mae-hemphill"
+      "jessie-mae-hemphill",
+      "napoleon-strickland"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -30452,7 +30466,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "guitar-gable"
+      "guitar-gable",
+      "lil-buck-sinegal"
     ],
     "source": "https://en.wikipedia.org/wiki/Slim_Harpo",
     "secondaryInstruments": [
@@ -31768,7 +31783,8 @@
       "john-lee-hooker",
       "muddy-waters",
       "mel-brown",
-      "jack-mcvea"
+      "jack-mcvea",
+      "lloyd-glenn"
     ],
     "source": "https://en.wikipedia.org/wiki/T-Bone_Walker",
     "secondaryInstruments": [
@@ -41713,7 +41729,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "jessie-mae-hemphill"
+      "jessie-mae-hemphill",
+      "napoleon-strickland"
     ],
     "source": "https://en.wikipedia.org/wiki/Othar_Turner",
     "secondaryInstruments": [
@@ -45511,7 +45528,8 @@
     "incomplete": false,
     "playedWith": [
       "joe-doucet",
-      "katie-webster"
+      "katie-webster",
+      "lil-buck-sinegal"
     ],
     "source": "https://en.wikipedia.org/wiki/Clifton_Chenier",
     "secondaryInstruments": [
@@ -49604,7 +49622,8 @@
       "gus-cannon",
       "charlie-burse",
       "hattie-hart",
-      "memphis-willie-b"
+      "memphis-willie-b",
+      "laura-dukes"
     ],
     "source": "https://en.wikipedia.org/wiki/Will_Shade",
     "secondaryInstruments": [
@@ -53124,5 +53143,473 @@
     "source": "https://en.wikipedia.org/wiki/Jimmy_Preston",
     "secondaryInstruments": [],
     "createdAt": "2026-09-25"
+  },
+  {
+    "id": "jabo-williams",
+    "name": "Jabo Williams",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1895",
+    "birthPlace": "Birmingham",
+    "birthCoords": [
+      -86.80944444444444,
+      33.5175
+    ],
+    "deathDate": "1953",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=jCv3XOuh2bI",
+    "albums": [
+      {
+        "name": "Pratt City Blues / Jab's Blues (1932)",
+        "youtubeLink": "https://www.youtube.com/watch?v=tUNseIPMBxo"
+      }
+    ],
+    "description": "Jabo Williams (possible 1895 – 1953 or 1954) was an American boogie-woogie and blues pianist and songwriter.  His total recorded output was a mere eight sides, which included his two best-known \"stunningly primitive\" songs, \"Pratt City Blues\" and \"Jab's Blues\" (1932).  Details of his life outside of music are scanty.",
+    "activeFrom": "1932",
+    "influences": [],
+    "influencedBy": [
+      "cow-cow-davenport"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Jabo_Williams",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-26"
+  },
+  {
+    "id": "blind-willie-davis",
+    "name": "Blind Willie Davis",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "",
+    "birthCoords": [
+      0,
+      0
+    ],
+    "deathDate": "2000",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=BbMfR5kzzko",
+    "albums": [],
+    "description": "Blind Willie Davis  (c.  1890s – 1930s) was an American blind gospel blues singer who recorded in the 1920s. \nDavis recorded six sides for Paramount Records in 1928 and 1929.",
+    "activeFrom": "",
+    "influences": [],
+    "influencedBy": [
+      "blind-willie-johnson"
+    ],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Blind_Willie_Davis",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-26"
+  },
+  {
+    "id": "hadda-brooks",
+    "name": "Hadda Brooks",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/In%20a%20Lonely%20Place%20-%20trailer%20-%2004.png?width=500",
+    "image_source": null,
+    "birthDate": "1916-10-29",
+    "birthPlace": "Los Angeles",
+    "birthCoords": [
+      -118.24368,
+      34.05223
+    ],
+    "deathDate": "2002-11-21",
+    "deathPlace": "Los Angeles",
+    "deathCoords": [
+      -118.24368,
+      34.05223
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=bAKrjkm3vk0",
+    "albums": [
+      {
+        "name": "That's My Desire (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=_hRVoyNn3dM"
+      },
+      {
+        "name": "Jump Back Honey: The Complete Okeh Sessions (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=5vbLYiWXOm0"
+      },
+      {
+        "name": "I've Got News for You (1999)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Swingin' The Boogie: Volume 2 (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=GXjAEWhZ_xA"
+      },
+      {
+        "name": "That's Where I Came In - The Modern Recordings 1946-47 (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JzUnVwmsUAI"
+      }
+    ],
+    "description": "Hadda Brooks (born Hattie L. Hapgood October 29, 1916 – November 21, 2002) was an American pianist, vocalist and composer, who occasionally appeared playing the piano in film. Billed as \"Queen of the Boogie\", she was inducted in the Rhythm and Blues Foundation Hall of Fame in 1993.",
+    "activeFrom": "1945",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Hadda_Brooks",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-26"
+  },
+  {
+    "id": "lloyd-glenn",
+    "name": "Lloyd Glenn",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1909-11-21",
+    "birthPlace": "San Antonio",
+    "birthCoords": [
+      -98.49388888888889,
+      29.425
+    ],
+    "deathDate": "1985-05-23",
+    "deathPlace": "Los Angeles",
+    "deathCoords": [
+      -118.24368,
+      34.05223
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dd34m4pcWk4",
+    "albums": [
+      {
+        "name": "Honky Tonk Train (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xReuhXLSYZM"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Lloyd Glenn 1947-1950 (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=pObylR5bEss"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Lloyd Glenn 1951-1952 (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=s7Qm0oj6V_k"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Lloyd Glenn 1954-1957 (2008)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ttdxbcdslVM"
+      },
+      {
+        "name": "Boogie Woogie Shuffle Time - West Coast Blues From California's Greatest Piano Man (2016)",
+        "youtubeLink": "https://www.youtube.com/watch?v=CbSs_GeEycs"
+      }
+    ],
+    "description": "Lloyd Colquitt Glenn (November 21, 1909 – May 23, 1985) was an American R&B pianist, bandleader and arranger, who was a pioneer of the \"West Coast\" blues style.",
+    "activeFrom": "1936",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "t-bone-walker",
+      "lowell-fulson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Lloyd_Glenn",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-26"
+  },
+  {
+    "id": "napoleon-strickland",
+    "name": "Napoleon Strickland",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1919-10-01",
+    "birthPlace": "Como",
+    "birthCoords": [
+      -89.9414,
+      34.5133
+    ],
+    "deathDate": "2001-07-21",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      }
+    ],
+    "instrument": "Fife",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=GGpNIgVpQQU",
+    "albums": [],
+    "description": "Napoleon Strickland (October 1, 1919 – July 21, 2001), sometimes known as Napolian Strickland, was an American fife and drum blues artist, and songwriter, and vocalist specializing in country blues, specifically North Mississippi hill country blues.  He also played guitar, drums, harmonica, fife, and all manner of percussion instruments.",
+    "activeFrom": "1939",
+    "influences": [],
+    "influencedBy": [
+      "sid-hemphill"
+    ],
+    "incomplete": true,
+    "playedWith": [
+      "otha-turner"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Napoleon_Strickland",
+    "secondaryInstruments": [
+      "Guitar",
+      "Drums",
+      "Harmonica"
+    ],
+    "createdAt": "2026-09-26"
+  },
+  {
+    "id": "pearly-brown",
+    "name": "Pearly Brown",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/fe/PearlyBrown.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1915-08-18",
+    "birthPlace": "Abbeville",
+    "birthCoords": [
+      -83.3075,
+      31.991666666667
+    ],
+    "deathDate": "1986-06-28",
+    "deathPlace": "Plains",
+    "deathCoords": [
+      -84.393333333333,
+      32.033611111111
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=skolZ5rBxyc",
+    "albums": [
+      {
+        "name": "Georgia Street Singer (1961)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uZRbfrdHbYg"
+      }
+    ],
+    "description": "Reverend (or Blind) Pearly Brown (August 18, 1915 – June 28, 1986) was an American singer and guitarist, known primarily as a street performer.  He also played harmonica and accordion.  Brown's repertoire included gospel blues, blues, country, and spirituals.",
+    "activeFrom": "1935",
+    "influences": [],
+    "influencedBy": [
+      "blind-willie-mctell"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Pearly_Brown",
+    "secondaryInstruments": [
+      "Vocals",
+      "Harmonica"
+    ],
+    "createdAt": "2026-09-26"
+  },
+  {
+    "id": "lil-buck-sinegal",
+    "name": "Lil' Buck Sinegal",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Lil'%20Buck%20Sinegal%20-%202015%20-%20(17436682186).jpg?width=500",
+    "image_source": null,
+    "birthDate": "1944-01-14",
+    "birthPlace": "Lafayette",
+    "birthCoords": [
+      -92.012649,
+      30.243062
+    ],
+    "deathDate": "2019-06-10",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=pFdA86IVCw8",
+    "albums": [],
+    "description": "Paul Alton \"Lil' Buck\" Sinegal (January 14, 1944 – June 10, 2019) was an American blues and zydeco guitarist and singer. He worked as a session guitarist for Excello Records behind Slim Harpo and Lazy Lester, and later spent decades as Clifton Chenier’s guitarist, helping define the swamp blues and zydeco sound of Lafayette, Louisiana.",
+    "activeFrom": "1962",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "slim-harpo",
+      "lazy-lester",
+      "henry-gray",
+      "clifton-chenier"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Lil'_Buck_Sinegal",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-26"
+  },
+  {
+    "id": "laura-dukes",
+    "name": "Laura Dukes",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1907-06-10",
+    "birthPlace": "Memphis",
+    "birthCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "deathDate": "1992-10-14",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Mandolin",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=YJY3gLCdHiw",
+    "albums": [],
+    "description": "Laura Ella Dukes  (June 10, 1907 – October 10 or 14, 1992), sometimes credited as Little Laura Dukes, was an American blues singer, dancer, and mandolin, banjo and ukulele player.  She performed and recorded in Memphis, Tennessee, from the 1920s to the 1980s.",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "will-shade",
+      "memphis-jug-band"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Laura_Dukes",
+    "secondaryInstruments": [
+      "Banjo",
+      "Ukulele",
+      "Vocals"
+    ],
+    "createdAt": "2026-09-26"
+  },
+  {
+    "id": "cora-mae-bryant",
+    "name": "Cora Mae Bryant",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1926-05-01",
+    "birthPlace": "Oxford",
+    "birthCoords": [
+      -83.87,
+      33.6242
+    ],
+    "deathDate": "2008-10-30",
+    "deathPlace": "Oxford",
+    "deathCoords": [
+      -83.87,
+      33.6242
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=SMQwGYzpWwE",
+    "albums": [],
+    "description": "Cora Mae Bryant (May 1, 1926 – October 30, 2008) was an American blues musician.  She was the daughter of another American blues musician, Curley Weaver.  Bryant released two solo albums in her lifetime on the Music Maker label.",
+    "activeFrom": "1967",
+    "influences": [],
+    "influencedBy": [
+      "curley-weaver",
+      "blind-willie-mctell",
+      "buddy-moss"
+    ],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Cora_Mae_Bryant",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-26"
+  },
+  {
+    "id": "camille-howard",
+    "name": "Camille Howard",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CamilleHoward-newspaperphoto1948.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1914-03-29",
+    "birthPlace": "Galveston",
+    "birthCoords": [
+      -94.795,
+      29.301388888888887
+    ],
+    "deathDate": "1993-03-10",
+    "deathPlace": "Los Angeles",
+    "deathCoords": [
+      -118.24368,
+      34.05223
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      },
+      {
+        "place": "Greenwood",
+        "coords": [
+          -90.1801,
+          33.5162
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=uPpr30pi-xI",
+    "albums": [
+      {
+        "name": "Vol. 2: X-temporaneous Boogie (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=XFgfp-5Quj0"
+      }
+    ],
+    "description": "Camille Howard (March 29, 1914 – March 10, 1993) was an American blues and boogie-woogie pianist and singer who rose to prominence as the pianist in Roy Milton's Solid Senders in the 1940s. Her rapid, dexterous boogie-woogie playing powered Milton's hits and her own solo recordings for Specialty Records, including \"X-Temporaneous Boogie\" (1948), making her one of the era's most influential West Coast blues pianists.",
+    "activeFrom": "1945",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "roy-milton"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Camille_Howard",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-26"
   }
 ]
