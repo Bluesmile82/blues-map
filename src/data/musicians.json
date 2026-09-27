@@ -53611,5 +53611,408 @@
     "source": "https://en.wikipedia.org/wiki/Camille_Howard",
     "secondaryInstruments": [],
     "createdAt": "2026-09-26"
+  },
+  {
+    "id": "ivory-joe-hunter",
+    "name": "Ivory Joe Hunter",
+    "image": "https://upload.wikimedia.org/wikipedia/en/e/ed/Ivory_Joe_Hunter_musician.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1914-10-10",
+    "birthPlace": "Jasper County",
+    "birthCoords": [
+      -94.03,
+      30.74
+    ],
+    "deathDate": "1974-11-08",
+    "deathPlace": "Memphis",
+    "deathCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=cR-vWupjlPM",
+    "albums": [
+      {
+        "name": "Sings Sixteen of His Greatest Hits (1988)",
+        "youtubeLink": "https://www.youtube.com/watch?v=rRlstqwRwcg"
+      },
+      {
+        "name": "Since I Met You Baby: The Best Of Ivory Joe Hunter (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=eSMP_VvzxJo"
+      },
+      {
+        "name": "Ivory Joe Hunter / Ivory Joe Sings The Old & The New (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=mLzlfdOh7Ak"
+      },
+      {
+        "name": "Blues, Ballads & Rock 'n' Roll (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=y_t20sWJUfY"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Ivory Joe Hunter 1945-1947 (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=5Gj32KUfOy4"
+      },
+      {
+        "name": "I Almost Lost My Mind: 1945-50 (2001)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Ivory Joe Hunter (October 10, 1914 – November 8, 1974) was an American rhythm-and-blues singer, songwriter, and pianist.   After a series of hits on the US R&B chart starting in the mid-1940s, he became more widely known for his hit recording \"Since I Met You Baby\" (1956).  He was billed as The Baron of the Boogie, and also known as The Happiest Man Alive.",
+    "activeFrom": "1933",
+    "influences": [],
+    "influencedBy": [
+      "blind-lemon-jefferson"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Ivory_Joe_Hunter",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-27"
+  },
+  {
+    "id": "booker-t-laury",
+    "name": "Booker T. Laury",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitiNGv9XssbVPyyNhjv1rUg9LaMTkJscU0Ld0Ui6IZe7vXEsImIgw8n0_CJoQ6cZF2ae9UiHPOQSSPtckzaU5Gq6x9g3I5ulSZN4PCnWTzwOGHJg03N7RYOl7cPIXU1LsTbWYVdg/s1600/BOOKET+T..jpg",
+    "image_source": "sentirelblues.com",
+    "birthDate": "1914-09-02",
+    "birthPlace": "Memphis",
+    "birthCoords": [
+      -90.05194444444444,
+      35.14611111111111
+    ],
+    "deathDate": "1995-09-23",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=mPAWicp8bTo",
+    "albums": [
+      {
+        "name": "Nothing But the Blues (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0-lkbqNY5xs"
+      }
+    ],
+    "description": "Lawrence \"Booker T. \" Laury (September 2, 1914 – September 23, 1995) was an American boogie-woogie, blues, gospel and jazz pianist and singer.  Laury worked with Memphis Slim and Mose Vinson but did not record his debut album until he was in his late sixties.",
+    "activeFrom": "1935",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "memphis-slim",
+      "mose-vinson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Booker_T._Laury",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-27"
+  },
+  {
+    "id": "jimmy-nelson",
+    "name": "Jimmy Nelson",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/JimmyT99Nelson%20Sept21996.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1919-04-07",
+    "birthPlace": "Philadelphia",
+    "birthCoords": [
+      -75.163611111111,
+      39.952777777778
+    ],
+    "deathDate": "2007-07-29",
+    "deathPlace": "Houston",
+    "deathCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=1zqQGLQlCyo",
+    "albums": [
+      {
+        "name": "Cry Hard Luck (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=NEb-sWUC-GE"
+      }
+    ],
+    "description": "James Nelson (April 7, 1919 – July 29, 2007), known as Jimmy \"T99\" Nelson, was an American jump blues and rhythm and blues shouter and songwriter.  With a recording career that spanned over 50 years, Jimmy \"T99\" Nelson became a distinguished elder statesman of American music.  His best known recordings are \"T-99 Blues\" and \"Meet Me With Your Black Dress On\".",
+    "activeFrom": "1948",
+    "influences": [],
+    "influencedBy": [
+      "big-joe-turner"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Jimmy_Nelson_(singer)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-27"
+  },
+  {
+    "id": "buddy-johnson",
+    "name": "Buddy Johnson",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Buddy%20Johnson.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1915-01-10",
+    "birthPlace": "Darlington",
+    "birthCoords": [
+      -79.868611111111,
+      34.301388888889
+    ],
+    "deathDate": "1977-02-09",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.00611111111111,
+      40.71277777777778
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=KZCFyGG7gYM",
+    "albums": [
+      {
+        "name": "Buddy & Ella Johnson: 1953-1964 (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=BvTbm8Bjeb0"
+      },
+      {
+        "name": "Jukebox Hits (1940-1951) (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=BvTbm8Bjeb0"
+      }
+    ],
+    "description": "Woodrow Wilson \"Buddy\" Johnson (January 10, 1915 – February 9, 1977) was an American jump blues pianist and bandleader active from the 1930s through the 1960s.  His songs were often performed by his sister Ella Johnson, most notably \"Since I Fell for You\", which became a jazz standard, as did \"Save Your Love For Me\".",
+    "activeFrom": "1939",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Buddy_Johnson",
+    "secondaryInstruments": [
+      "Saxophone"
+    ],
+    "createdAt": "2026-09-27"
+  },
+  {
+    "id": "willie-baker",
+    "name": "Willie Baker",
+    "image": "https://thedocumentrecordsstore.com/wp-content/uploads/2017/12/BDCD-6027-768x765.jpg",
+    "image_source": "https://thedocumentrecordsstore.com/",
+    "birthDate": "",
+    "birthPlace": "Pierce County, Georgia",
+    "birthCoords": [
+      -82.2999,
+      31.4463
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Richmond, Indiana",
+        "coords": [
+          -84.8902,
+          39.8289
+        ]
+      }
+    ],
+    "instrument": "",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=crcooshWP4E",
+    "albums": [],
+    "description": "Willie Baker was an American Piedmont blues guitarist, singer and songwriter.  He recorded eight tracks, playing a twelve-string guitar to back his own strong vocals.  All of his recordings took place in January and March 1929 in Richmond, Indiana, United States.",
+    "activeFrom": "",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Willie_Baker",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-27"
+  },
+  {
+    "id": "frank-hutchison",
+    "name": "Frank Hutchison",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/FrankHutchison.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1897-03-20",
+    "birthPlace": "Raleigh County",
+    "birthCoords": [
+      -81.26,
+      37.78
+    ],
+    "deathDate": "1945-11-09",
+    "deathPlace": "Dayton",
+    "deathCoords": [
+      -84.2,
+      39.766666666667
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=jguvUHepISU",
+    "albums": [
+      {
+        "name": "Worried Blues (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=1uayROlsHuM"
+      },
+      {
+        "name": "Complete Works, Volume One",
+        "youtubeLink": "https://www.youtube.com/watch?v=7GvgwHI2WKs"
+      }
+    ],
+    "description": "Frank Hutchison (March 20, 1897 – November 9, 1945) was an American early country blues and Piedmont blues musician and songwriter.  Okeh Records promotional materials referred to him as “The Pride of West Virginia,” and he is thought to be the first non-African American musician to record in the country blues idiom.  Hutchison was best known as a slide guitar player, where he held the guitar in his lap and used a pen knife as a slide.",
+    "activeFrom": "1926",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Frank_Hutchison",
+    "secondaryInstruments": [
+      "Harmonica",
+      "Vocals"
+    ],
+    "createdAt": "2026-09-27"
+  },
+  {
+    "id": "boyd-rivers",
+    "name": "Boyd Rivers",
+    "image": "https://sundayblues.org/wp-content/uploads/2022/03/BOYD-RIVERS-Pickens-Ms.-10.25.1980-2.jpg",
+    "image_source": "https://sundayblues.org/",
+    "birthDate": "1934-12-25",
+    "birthPlace": "Madison County",
+    "birthCoords": [
+      -90.03,
+      32.63
+    ],
+    "deathDate": "1993-11-22",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=oMyQJVkkbgk",
+    "albums": [
+      {
+        "name": "You Can't Make Me Doubt (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Lw2msLnbRiQ"
+      }
+    ],
+    "description": "Boyd Rivers (December 25, 1934 – November 22, 1993) was an American gospel blues singer and guitarist.  He was born near Pickens in Madison County, Mississippi and started playing blues guitar at the age of 13, but three years later switched into spirituals.  After moving to Canton, Mississippi he was first recorded by Alan Lomax, John Bishop and Worth Long in 1979.",
+    "activeFrom": "1954",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Boyd_Rivers",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-27"
+  },
+  {
+    "id": "robert-lowery",
+    "name": "Robert Lowery",
+    "image": "https://i.discogs.com/-olvNcbX2H8-WflvHQVPmbXnDQ_xv4stWyJpd90AZQI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTY0/MjE0LTE1NjA2OTg1/NzQtNzY4MS5qcGVn.jpeg",
+    "image_source": "discogs",
+    "birthDate": "1931-04-08",
+    "birthPlace": "Union County, Arkansas",
+    "birthCoords": [
+      -92.5882,
+      33.1857
+    ],
+    "deathDate": "2016-10-25",
+    "deathPlace": "Santa Cruz, California",
+    "deathCoords": [
+      -122.0308,
+      36.9741
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Oakland, California",
+        "coords": [
+          -122.2712,
+          37.8044
+        ]
+      },
+      {
+        "place": "Santa Cruz, California",
+        "coords": [
+          -122.0308,
+          36.9741
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=djMkUzyzvC8",
+    "albums": [
+      {
+        "name": "The Earthquake Blues (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=djMkUzyzvC8"
+      }
+    ],
+    "description": "Robert Lee Lowery (April 8, 1931 – October 25, 2016) was an American Delta and country blues singer and guitarist from Union County, Arkansas who absorbed the styles of Robert Johnson, Lightnin' Hopkins, and Blind Boy Fuller as a teenager. After relocating to Santa Cruz, California, he backed Big Mama Thornton and went on to perform acoustic and slide guitar blues at major festivals, including the San Francisco Blues Festival and Bill Clinton's 1993 presidential inauguration.",
+    "activeFrom": "1957",
+    "influences": [],
+    "influencedBy": [
+      "robert-johnson",
+      "lightnin-hopkins",
+      "blind-boy-fuller",
+      "arthur-crudup"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "big-mama-thornton"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Robert_Lowery_(musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-27"
   }
 ]
