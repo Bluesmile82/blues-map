@@ -187,7 +187,7 @@ export default function MobileVideoPlayer({
   const hasMultiple = videos.length > 1;
 
   return (
-    <div className="shrink-0 border-t border-border-subtle bg-bg/50 relative h-[300px]">
+    <div className="shrink-0 border-t border-border-subtle bg-bg/50 relative h-[200px]">
       {!apiReady && (
         <div className="absolute inset-0 flex items-center justify-center bg-bg/50 z-10">
           <div className="text-ink3/50 text-xs">{t('video.loading')}</div>

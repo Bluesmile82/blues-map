@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <title>Report wrong info — The Blues Map</title>
+    <title data-i18n="title">Report wrong info — The Blues Map</title>
     <link rel="icon" type="image/svg+xml" href="/blues-icon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet" />
     <style>
@@ -33,8 +33,8 @@
   <body>
     <main>
       <div id="sent">
-        <h1>Thanks!</h1>
-        <p class="lede">Your correction is on its way. <a href="/">Back to the map</a></p>
+        <h1 data-i18n="thanks">Thanks!</h1>
+        <p class="lede"><span data-i18n="onItsWay">Your correction is on its way.</span> <a href="/" data-i18n="back">Back to the map</a></p>
       </div>
 
       <form id="form" name="musician-feedback" method="POST" action="/feedback.html?sent=1"
@@ -42,21 +42,46 @@
         <input type="hidden" name="form-name" value="musician-feedback" />
         <p class="hp"><label>Leave this empty: <input name="bot-field" /></label></p>
 
-        <h1>Something wrong?</h1>
-        <p class="lede">Tell us what's off about a musician and we'll fix it. Sources help a lot.</p>
+        <h1 data-i18n="h1">Something wrong?</h1>
+        <p class="lede" data-i18n="lede">Tell us what's off about a musician and we'll fix it. Sources help a lot.</p>
 
-        <label><span>Musician</span><input type="text" name="musician" required /></label>
-        <label><span>What's wrong?</span><textarea name="whats-wrong" required></textarea></label>
-        <label><span>What's the correct info? <em>(optional)</em></span><textarea name="correct-info"></textarea></label>
-        <label><span>Sources <em>(links, books, liner notes — optional)</em></span><textarea name="sources"></textarea></label>
-        <label><span>Your email <em>(optional, only if you want a reply)</em></span><input type="email" name="email" /></label>
+        <label><span data-i18n="musician">Musician</span><input type="text" name="musician" required /></label>
+        <label><span data-i18n="whatsWrong">What's wrong?</span><textarea name="whats-wrong" required></textarea></label>
+        <label><span data-i18n="correctInfo">What's the correct info? <em>(optional)</em></span><textarea name="correct-info"></textarea></label>
+        <label><span data-i18n="sources">Sources <em>(links, books, liner notes — optional)</em></span><textarea name="sources"></textarea></label>
+        <label><span data-i18n="email">Your email <em>(optional, only if you want a reply)</em></span><input type="email" name="email" /></label>
 
         <div data-netlify-recaptcha="true"></div>
-        <p><button type="submit">Send feedback</button></p>
+        <p><button type="submit" data-i18n="send">Send feedback</button></p>
       </form>
     </main>
     <script>
+      // ponytail: static page, so no i18next — one dict, English is the markup default
+      var es = {
+        title: 'Informar de un error — Mapa del Blues',
+        thanks: '\u00a1Gracias!',
+        onItsWay: 'Tu correcci\u00f3n va en camino.',
+        back: 'Volver al mapa',
+        h1: '\u00bfAlgo est\u00e1 mal?',
+        lede: 'Cu\u00e9ntanos qu\u00e9 falla en un m\u00fasico y lo corregimos. Las fuentes ayudan mucho.',
+        musician: 'M\u00fasico',
+        whatsWrong: '\u00bfQu\u00e9 est\u00e1 mal?',
+        correctInfo: '\u00bfCu\u00e1l es la informaci\u00f3n correcta? <em>(opcional)</em>',
+        sources: 'Fuentes <em>(enlaces, libros, notas del disco \u2014 opcional)</em>',
+        email: 'Tu correo <em>(opcional, solo si quieres respuesta)</em>',
+        send: 'Enviar',
+      };
+
       var p = new URLSearchParams(location.search);
+      if ((p.get('lang') || navigator.language || '').slice(0, 2) === 'es') {
+        document.documentElement.lang = 'es';
+        document.querySelectorAll('[data-i18n]').forEach(function (el) {
+          var v = es[el.dataset.i18n];
+          if (v) el.innerHTML = v;
+        });
+        form.action += '&lang=es';
+      }
+
       if (p.get('sent')) { form.style.display = 'none'; sent.style.display = 'block'; }
       if (p.get('musician')) form.musician.value = p.get('musician');
     </script>

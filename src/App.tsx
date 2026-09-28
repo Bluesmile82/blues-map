@@ -314,7 +314,7 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
           onVideoClose={() => setShowPlayer(false)}
           onVideoEnded={playlistHasNext ? handlePlaylistNext : undefined}
           isMobile={isMobile}
-          bottomInset={isMobile ? 72 : 0}
+          bottomInset={0}
         />
       )}
 

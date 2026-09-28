@@ -67,7 +67,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
   const { toggleFavorite } = useLists();
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showListsDropdown, setShowListsDropdown] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   // Reset to full when musician changes
   const [, setCanClose] = useState(false);
@@ -416,7 +416,7 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
 
             {/* Report wrong info — static Netlify form, see public/feedback.html */}
             <a
-              href={`/feedback.html?musician=${encodeURIComponent(musician.name)}`}
+              href={`/feedback.html?musician=${encodeURIComponent(musician.name)}&lang=${i18n.language}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-ui underline underline-offset-4 self-start text-ink3 hover:text-ink"

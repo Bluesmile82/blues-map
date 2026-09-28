@@ -353,8 +353,6 @@ export default function TreeView({
   // Leaves first, so an influential musician always wins the click where hit areas overlap.
   const drawOrder = useMemo(() => [...tree.nodes].sort((a, b) => b.tier - a.tier), [tree]);
 
-  // left to right, the order the limbs stand in
-  const railStyles = useMemo(() => [...tree.limbs].sort((a, b) => a.midX - b.midX), [tree]);
 
   const marks = useMemo(() => (
     <g>
@@ -1023,25 +1021,8 @@ export default function TreeView({
         </button>
       </div>
 
-      {/* Branch rail: the way into the tree on a phone, where the whole canopy
-          can never be both visible and readable at once. Tap a style, read that
-          limb. On a desktop the style names on the limbs themselves do this. */}
-      {isMobile && (
-        <div className="absolute bottom-2 left-0 right-0 z-30 px-2">
-          <div className="flex gap-1.5 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            {railStyles.map((l) => (
-              <button
-                key={l.style}
-                onClick={() => zoomToLimb(l.style)}
-                className="shrink-0 px-2.5 py-1.5 rounded-full bg-bg/85 border border-border-subtle text-2xs font-semibold uppercase tracking-wide backdrop-blur-sm active:bg-bg-hover"
-                style={{ color: l.color }}
-              >
-                {getStyleAbbreviation(l.style)}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
+      {/* ponytail: the mobile style rail is gone — it stole the bottom of the screen
+          from the musician drawer. zoomToLimb still exists for the desktop limb labels. */}
 
       {/* Map controls: alone at the edge, or shifted over when the column is out */}
       <div
