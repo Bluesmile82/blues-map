@@ -414,6 +414,16 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
               </a>
             )}
 
+            {/* Report wrong info — static Netlify form, see public/feedback.html */}
+            <a
+              href={`/feedback.html?musician=${encodeURIComponent(musician.name)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ui underline underline-offset-4 self-start text-ink3 hover:text-ink"
+            >
+              {t('musician.reportIssue')} ↗
+            </a>
+
             {/* Listen */}
             {musician.youtubeLink && (
               <Section title={t('musician.listen')} r={r} g={g} b={b} hex={hex}>

@@ -92,7 +92,8 @@
     "activeIn": "Activo en",
     "image": "Imagen",
     "collapsePanel": "Ocultar panel",
-    "expandPanel": "Mostrar panel"
+    "expandPanel": "Mostrar panel",
+    "reportIssue": "Informar de un error"
   },
   "map": {
     "close": "Cerrar",
