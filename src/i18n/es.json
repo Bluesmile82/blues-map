@@ -44,8 +44,7 @@
     "pause": "Pausar",
     "search": "Buscar",
     "favorite": "Favorito",
-    "addToList": "Añadir a Lista",
-    "enableTilt": "Activar efecto inclinación"
+    "addToList": "Añadir a Lista"
   },
   "mobile": {
     "gestureHintPinch": "Pellizca para acercar o alejar",

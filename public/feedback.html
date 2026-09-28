@@ -8,68 +8,95 @@
     <link rel="icon" type="image/svg+xml" href="/blues-icon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet" />
     <style>
-      :root { --bg:#0a0805; --bg2:#0f0c07; --border:#396E7F; --ink:#fff; --ink3:#CBDBBD; --accent:#4c93a9; }
+      :root { --bg:#0a0805; --bg2:#0f0c07; --border:#396E7F; --ink:#fff; --ink3:#CBDBBD; --accent:#8fc4d4; }
       * { box-sizing: border-box; }
       body { margin:0; padding:2rem 1rem; background:var(--bg); color:var(--ink);
              font-family:'Oswald',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; }
       main { max-width:640px; margin:0 auto; }
       h1 { font-weight:500; font-size:1.75rem; margin:0 0 .5rem; }
+      h1:focus { outline:none; }
       p.lede { color:var(--ink3); margin:0 0 2rem; line-height:1.6; }
       label { display:block; margin:0 0 1.25rem; font-size:1rem; }
       label > span { display:block; margin-bottom:.4rem; }
-      label > span em { color:var(--ink3); font-style:normal; font-size:.85rem; }
+      .hint { color:var(--ink3); font-size:.85rem; }
       input, textarea { width:100%; padding:.65rem .75rem; background:var(--bg2); color:var(--ink);
                         border:1px solid var(--border); border-radius:6px; font:inherit; font-size:1rem; }
-      input:focus, textarea:focus { outline:2px solid var(--accent); outline-offset:1px; }
       textarea { min-height:6rem; resize:vertical; }
-      button { padding:.7rem 1.5rem; background:rgba(76,147,169,.15); color:var(--accent);
-               border:1px solid var(--border); border-radius:6px; font:inherit; font-size:1rem; }
-      button:hover { background:rgba(76,147,169,.3); }
+      .actions { display:flex; gap:.75rem; align-items:center; flex-wrap:wrap; margin:0; }
+      button, .btn { display:inline-flex; align-items:center; justify-content:center;
+                     min-height:44px; padding:.7rem 1.5rem; border-radius:6px; font:inherit; font-size:1rem;
+                     background:rgba(143,196,212,.15); color:var(--accent);
+                     border:1px solid var(--border); text-decoration:none; }
+      .btn.secondary { background:none; color:var(--ink3); border-color:var(--ink3); }
+      button:hover, .btn:hover { background:rgba(143,196,212,.3); }
       a { color:var(--accent); }
+      :focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
+      input:focus, textarea:focus { outline:3px solid var(--accent); outline-offset:0; }
       .hp { position:absolute; left:-9999px; }
       #sent { display:none; }
+      @media (prefers-reduced-motion: no-preference) { html { scroll-behavior:smooth; } }
     </style>
   </head>
   <body>
     <main>
       <div id="sent">
-        <h1 data-i18n="thanks">Thanks!</h1>
+        <h1 tabindex="-1" data-i18n="thanks">Thanks!</h1>
         <p class="lede"><span data-i18n="onItsWay">Your correction is on its way.</span> <a href="/" data-i18n="back">Back to the map</a></p>
       </div>
 
       <form id="form" name="musician-feedback" method="POST" action="/feedback.html?sent=1"
+            aria-labelledby="formTitle" aria-describedby="formLede"
             data-netlify="true" data-netlify-recaptcha="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="musician-feedback" />
-        <p class="hp"><label>Leave this empty: <input name="bot-field" /></label></p>
+        <p class="hp" aria-hidden="true"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
 
-        <h1 data-i18n="h1">Something wrong?</h1>
-        <p class="lede" data-i18n="lede">Tell us what's off about a musician and we'll fix it. Sources help a lot.</p>
+        <h1 id="formTitle" data-i18n="h1">Something wrong?</h1>
+        <p class="lede" id="formLede" data-i18n="lede">Tell us what's off about a musician and we'll fix it. Sources help a lot.</p>
 
-        <label><span data-i18n="musician">Musician</span><input type="text" name="musician" required /></label>
-        <label><span data-i18n="whatsWrong">What's wrong?</span><textarea name="whats-wrong" required></textarea></label>
-        <label><span data-i18n="correctInfo">What's the correct info? <em>(optional)</em></span><textarea name="correct-info"></textarea></label>
-        <label><span data-i18n="sources">Sources <em>(links, books, liner notes — optional)</em></span><textarea name="sources"></textarea></label>
-        <label><span data-i18n="email">Your email <em>(optional, only if you want a reply)</em></span><input type="email" name="email" /></label>
+        <label>
+          <span data-i18n="musician">Musician <span class="hint">(required)</span></span>
+          <input type="text" name="musician" required autocomplete="off" />
+        </label>
+        <label>
+          <span data-i18n="whatsWrong">What's wrong? <span class="hint">(required)</span></span>
+          <textarea name="whats-wrong" required></textarea>
+        </label>
+        <label>
+          <span data-i18n="correctInfo">What's the correct info? <span class="hint">(optional)</span></span>
+          <textarea name="correct-info"></textarea>
+        </label>
+        <label>
+          <span data-i18n="sources">Sources <span class="hint">(links, books, liner notes — optional)</span></span>
+          <textarea name="sources"></textarea>
+        </label>
+        <label>
+          <span data-i18n="email">Your email <span class="hint">(optional, only if you want a reply)</span></span>
+          <input type="email" name="email" autocomplete="email" />
+        </label>
 
         <div data-netlify-recaptcha="true"></div>
-        <p><button type="submit" data-i18n="send">Send feedback</button></p>
+        <p class="actions">
+          <button type="submit" data-i18n="send">Send feedback</button>
+          <a href="/" class="btn secondary" data-i18n="cancel">Cancel</a>
+        </p>
       </form>
     </main>
     <script>
       // ponytail: static page, so no i18next — one dict, English is the markup default
       var es = {
         title: 'Informar de un error — Mapa del Blues',
-        thanks: '\u00a1Gracias!',
-        onItsWay: 'Tu correcci\u00f3n va en camino.',
+        thanks: '¡Gracias!',
+        onItsWay: 'Tu corrección va en camino.',
         back: 'Volver al mapa',
-        h1: '\u00bfAlgo est\u00e1 mal?',
-        lede: 'Cu\u00e9ntanos qu\u00e9 falla en un m\u00fasico y lo corregimos. Las fuentes ayudan mucho.',
-        musician: 'M\u00fasico',
-        whatsWrong: '\u00bfQu\u00e9 est\u00e1 mal?',
-        correctInfo: '\u00bfCu\u00e1l es la informaci\u00f3n correcta? <em>(opcional)</em>',
-        sources: 'Fuentes <em>(enlaces, libros, notas del disco \u2014 opcional)</em>',
-        email: 'Tu correo <em>(opcional, solo si quieres respuesta)</em>',
+        h1: '¿Algo está mal?',
+        lede: 'Cuéntanos qué falla en un músico y lo corregimos. Las fuentes ayudan mucho.',
+        musician: 'Músico <span class="hint">(obligatorio)</span>',
+        whatsWrong: '¿Qué está mal? <span class="hint">(obligatorio)</span>',
+        correctInfo: '¿Cuál es la información correcta? <span class="hint">(opcional)</span>',
+        sources: 'Fuentes <span class="hint">(enlaces, libros, notas del disco — opcional)</span>',
+        email: 'Tu correo <span class="hint">(opcional, solo si quieres respuesta)</span>',
         send: 'Enviar',
+        cancel: 'Cancelar',
       };
 
       var p = new URLSearchParams(location.search);
@@ -82,7 +109,11 @@
         form.action += '&lang=es';
       }
 
-      if (p.get('sent')) { form.style.display = 'none'; sent.style.display = 'block'; }
+      if (p.get('sent')) {
+        form.style.display = 'none';
+        sent.style.display = 'block';
+        sent.querySelector('h1').focus(); // land screen readers on the confirmation
+      }
       if (p.get('musician')) form.musician.value = p.get('musician');
     </script>
   </body>

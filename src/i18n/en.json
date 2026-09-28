@@ -44,8 +44,7 @@
     "pause": "Pause",
     "search": "Search",
     "favorite": "Favorite",
-    "addToList": "Add to List",
-    "enableTilt": "Enable tilt effect"
+    "addToList": "Add to List"
   },
   "mobile": {
     "gestureHintPinch": "Pinch to zoom in and out",

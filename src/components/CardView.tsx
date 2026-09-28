@@ -135,13 +135,6 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   const isMusicianFavorited = useAtomValue(isMusicianFavoritedAtom);
   const { toggleFavorite } = useLists();
 
-  // Gyroscope state - use ref to avoid re-renders
-  const gyroRef = useRef({ alpha: 0, beta: 0, gamma: 0, enabled: false });
-  const smoothBetaRef = useRef(0);
-  const smoothGammaRef = useRef(0);
-  const [gyroPermissionGranted, setGyroPermissionGranted] = useState(false);
-  const [gyroNeedsPrompt, setGyroNeedsPrompt] = useState(false);
-
   // Navigation history stack: each entry = "I was at musicianId and pressed direction to get here"
   const [history, setHistory] = useState<HistoryEntry[]>([]);
 
@@ -193,117 +186,8 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
     }
   }, [current?.id]);
 
-  // Mobile: determine if iOS gyro prompt is needed (must run before the tilt effect)
-  useEffect(() => {
-    if (!isMobile) return;
-    if (
-      typeof DeviceOrientationEvent !== 'undefined' &&
-      typeof (DeviceOrientationEvent as any).requestPermission === 'function'
-    ) {
-      // iOS 13+ — needs a user gesture before we can request permission
-      setGyroNeedsPrompt(true);
-    } else {
-      // Android / non-iOS — attach listener directly, no prompt needed
-      setGyroPermissionGranted(true);
-    }
-  }, [isMobile]);
-
-  const handleGyroPermissionRequest = useCallback(async () => {
-    try {
-      const permissionState = await (DeviceOrientationEvent as any).requestPermission();
-      if (permissionState === 'granted') {
-        setGyroPermissionGranted(true);
-      }
-    } catch (error) {
-      console.log('Gyroscope permission denied or error:', error);
-    }
-    setGyroNeedsPrompt(false);
-  }, []);
-
-  // Mobile: apply subtle constant 3D tilt with gyroscope
-  useEffect(() => {
-    if (!isMobile || !tiltWrapperRef.current) return;
-
-    smoothBetaRef.current = 0;
-    smoothGammaRef.current = 0;
-
-    let animationFrameId: number;
-    let startTime = Date.now();
-
-    // Gyroscope handler
-    const handleOrientation = (event: DeviceOrientationEvent) => {
-      const beta = event.beta || 0;   // x-axis tilt (-180 to 180)
-      const gamma = event.gamma || 0;  // y-axis tilt (-90 to 90)
-
-      gyroRef.current = {
-        alpha: event.alpha || 0,
-        beta: beta,
-        gamma: gamma,
-        enabled: true
-      };
-    };
-
-    if (gyroPermissionGranted) {
-      window.addEventListener('deviceorientation', handleOrientation);
-      gyroRef.current.enabled = true;
-    }
-
-    const animate = () => {
-      if (!tiltWrapperRef.current || isTouchingRef.current) return;
-
-      const elapsed = Date.now() - startTime;
-
-      // Use gyroscope if available and enabled, otherwise fall back to animation only
-      let rotX: number, rotY: number;
-
-      if (gyroRef.current.enabled) {
-        const targetBeta = Math.max(-45, Math.min(45, gyroRef.current.beta - 90));
-        const targetGamma = Math.max(-30, Math.min(30, gyroRef.current.gamma));
-
-        smoothBetaRef.current += (targetBeta - smoothBetaRef.current) * 0.08;
-        smoothGammaRef.current += (targetGamma - smoothGammaRef.current) * 0.08;
-
-        const deadZone = 0.8;
-        const dBeta = Math.abs(smoothBetaRef.current) < deadZone ? 0 : smoothBetaRef.current;
-        const dGamma = Math.abs(smoothGammaRef.current) < deadZone ? 0 : smoothGammaRef.current;
-
-        const gyroRotX = dBeta * 0.4;
-        const gyroRotY = -dGamma * 0.5;
-
-        const animRotX = Math.sin(elapsed * 0.001) * 1.5;
-        const animRotY = Math.cos(elapsed * 0.0012) * 1.5;
-
-        rotX = gyroRotX + animRotX;
-        rotY = gyroRotY + animRotY;
-      } else {
-        // Fallback to animation only — no bias so card rests neutral
-        rotX = Math.sin(elapsed * 0.002) * 4;
-        rotY = Math.cos(elapsed * 0.0025) * 5;
-      }
-
-      tiltWrapperRef.current.style.transition = 'transform 0.1s linear, box-shadow 0.15s ease';
-      tiltWrapperRef.current.style.transform =
-        `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.03)`;
-
-      const shadowX = -rotY * 2;
-      const shadowY = -rotX * 2;
-      tiltWrapperRef.current.style.boxShadow = `
-        ${shadowX}px ${shadowY}px 30px rgba(0,0,0,0.25),
-        ${shadowX * 0.5}px ${shadowY * 0.5}px 60px rgba(0,0,0,0.15)
-      `;
-
-      animationFrameId = requestAnimationFrame(animate);
-    };
-
-    animate();
-
-    return () => {
-      if (animationFrameId) {
-        cancelAnimationFrame(animationFrameId);
-      }
-      window.removeEventListener('deviceorientation', handleOrientation);
-    };
-  }, [isMobile, current?.id, gyroPermissionGranted]);
+  // ponytail: no mobile tilt — the gyro wobble and its iOS permission button are gone.
+  // The desktop pointer tilt below is untouched.
 
   // Resolve relationships
   const influencers = useMemo(
@@ -1185,18 +1069,6 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
               </div>
               <span className="text-[9px] text-ink3 uppercase tracking-wide font-medium">{t('card.addToList')}</span>
             </motion.button>
-          </div>
-        )}
-
-        {/* iOS gyroscope permission prompt — above the info button */}
-        {gyroNeedsPrompt && (
-          <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-50">
-            <button
-              onClick={handleGyroPermissionRequest}
-              className="px-4 py-2 rounded-full bg-accent text-white text-sm font-medium shadow-lg active:scale-95 transition-transform"
-            >
-              {t('card.enableTilt')}
-            </button>
           </div>
         )}
 
