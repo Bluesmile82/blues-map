@@ -5714,13 +5714,8 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "Country Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=Gar6di7eyEM",
-    "albums": [
-      {
-        "name": "Based on the provided context",
-        "youtubeLink": null
-      }
-    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=dk9F2SbO2OQ",
+    "albums": [],
     "description": "William \"Casey Bill\" Weldon (February 2, 1901, or December 10, 1909 – September 28, 1972) was an American country blues musician. \nSome details of Weldon's life are unconfirmed.   According to some sources, he was born in Pine Bluff, Arkansas, and later lived and worked in Chicago.",
     "activeFrom": "1936",
     "influences": [],
@@ -12275,8 +12270,8 @@
   {
     "id": "hambone-willie-newbern",
     "name": "Hambone Willie Newbern",
-    "image": null,
-    "image_source": null,
+    "image": "https://i.pinimg.com/564x/d6/9b/12/d69b12e3d071b178af8d9fb0c5de61cc.jpg",
+    "image_source": "sentirelblues.com",
     "birthDate": "1899",
     "birthPlace": "Tennessee",
     "birthCoords": [
@@ -12297,7 +12292,7 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "Country Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=axUWxvSNIVs",
+    "youtubeLink": "https://www.youtube.com/watch?v=Qyx2Z647kJ4",
     "albums": [
       {
         "name": "The Greatest Songsters: Complete Recorded Works in Chronological Order, 1927-1929 (1990)",
@@ -12423,7 +12418,7 @@
     "spentTimePlaces": [],
     "instrument": "Piano",
     "bluesStyle": "Swamp Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=gz8c_mpEZs8",
+    "youtubeLink": "https://www.youtube.com/watch?v=mYtEtYgA",
     "albums": [
       {
         "name": "The Henry Gray & Bob Corritore Sessions - Vol. 1 - Blues Won't Let Me Take My Rest (2015)",
@@ -17784,7 +17779,7 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "Hill Country Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=kUZQkf3FG3U",
+    "youtubeLink": "https://www.youtube.com/watch?v=4PD31AM1cpA",
     "albums": [
       {
         "name": "All Night Long (1992)",
@@ -22194,8 +22189,8 @@
   {
     "id": "luke-long-gone-miles",
     "name": "Luke \"Long Gone\" Miles",
-    "image": null,
-    "image_source": null,
+    "image": "https://i.discogs.com/m5wm38ZN5QNciYPKmxWCslV2S5gGdaKqahd7DUxFSyg/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTU1MDgy/Mi0xMjk4NjUzNTgw/LmpwZWc.jpeg",
+    "image_source": "discogs",
     "birthDate": "1925-05-08",
     "birthPlace": "Caddo Parish, Louisiana",
     "birthCoords": [
@@ -22226,11 +22221,11 @@
     ],
     "instrument": "Vocals",
     "bluesStyle": "Texas Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=BSO2K62LbWE",
+    "youtubeLink": "https://www.youtube.com/watch?v=dSANvSEDytA",
     "albums": [
       {
         "name": "Country Born (1964)",
-        "youtubeLink": "https://www.youtube.com/watch?v=BSO2K62LbWE"
+        "youtubeLink": "https://www.youtube.com/watch?v=dSANvSEDytA"
       }
     ],
     "description": "Luke \"Long Gone\" Miles (May 8, 1925 – November 22, 1987) was an American Texas blues and electric blues singer and songwriter.  He was a protégé of Lightnin' Hopkins and variously recorded or performed with Hopkins, Sonny Terry, Brownie McGhee and Willie Chambers.  Miles is best known for his 1964 album Country Born, issued by World Pacific Records.",
@@ -27772,8 +27767,8 @@
   {
     "id": "robert-johnson",
     "name": "Robert Johnson",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Robert_Johnson%2C_c._1935_-_NARA_-_281675.jpg/500px-Robert_Johnson%2C_c._1935_-_NARA_-_281675.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Robert_Johnson%2C_c._1935_-_NARA_-_281675.jpg/500px-Robert_Johnson%2C_c._1935_-_NARA_-_281675.jpg",
+    "image": "https://cdn-p.smehost.net/sites/a7d8bb5057e2458a81ad086b668a2d06/wp-content/uploads/2015/12/4502248.jpg",
+    "image_source": "therobertjohnsonfoundation.org",
     "birthDate": "1911-05-08",
     "birthPlace": "Hazlehurst, Mississippi",
     "birthCoords": [
@@ -30725,8 +30720,8 @@
   {
     "id": "son-bonds",
     "name": "Son Bonds",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Father_and_Son_Firefighters_Strengthen_Bonds_During_Deployment_%288686977%29.jpg/500px-Father_and_Son_Firefighters_Strengthen_Bonds_During_Deployment_%288686977%29.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Father_and_Son_Firefighters_Strengthen_Bonds_During_Deployment_%288686977%29.jpg/500px-Father_and_Son_Firefighters_Strengthen_Bonds_During_Deployment_%288686977%29.jpg",
+    "image": "https://alchetron.com/cdn/son-bonds-b6edc79f-e72b-443b-ae19-a6476549b5a-resize-750.jpeg",
+    "image_source": "alchetron.com",
     "birthDate": "1909-03-16",
     "birthPlace": "Brownsville, Tennessee",
     "birthCoords": [
@@ -30742,11 +30737,11 @@
     "spentTimePlaces": [],
     "instrument": "Guitar",
     "bluesStyle": "Country Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=PVi_lu-eSF0",
+    "youtubeLink": "https://www.youtube.com/watch?v=Z1893ZBkXaE",
     "albums": [
       {
         "name": "Complete Recorded Works in Chronological Order 1934–41 (Wolf Records, 1991)",
-        "youtubeLink": "https://www.youtube.com/watch?v=PVi_lu-eSF0"
+        "youtubeLink": "https://www.youtube.com/watch?v=Z1893ZBkXaE"
       }
     ],
     "description": "Abraham John Bond Jr. , known as Son Bonds (March 16, 1909 – August 31, 1947), was an American country blues guitarist, singer and songwriter.  He was a working associate of Sleepy John Estes and Hammie Nixon.",
@@ -31706,8 +31701,8 @@
   {
     "id": "t-bone-walker",
     "name": "T-Bone Walker",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/T-Bone_Walker_in_1942.jpg/500px-T-Bone_Walker_in_1942.jpg",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/T-Bone_Walker_in_1942.jpg/500px-T-Bone_Walker_in_1942.jpg",
+    "image": "https://media.gettyimages.com/id/74299835/photo/photo-of-t-bone-walker.jpg?s=1024x1024&w=gi&k=20&c=oXEptg-_Tbb3xtWLg7lOqVyQjtyhcSSP0glld_7MKp0=",
+    "image_source": "media.gettyimages.com",
     "birthDate": "1910-05-28",
     "birthPlace": "Linden, Texas",
     "birthCoords": [
@@ -32549,7 +32544,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Delta Blues",
+    "bluesStyle": "Detroit Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=CIgbPEv1YwI",
     "albums": [
       {
