@@ -53147,8 +53147,8 @@
   {
     "id": "jabo-williams",
     "name": "Jabo Williams",
-    "image": "",
-    "image_source": null,
+    "image": "https://www.wirz.de/music/willjabo/grafik/willjabo14.jpg",
+    "image_source": "sentirelblues.com",
     "birthDate": "1895",
     "birthPlace": "Birmingham",
     "birthCoords": [
@@ -53169,7 +53169,7 @@
     ],
     "instrument": "Piano",
     "bluesStyle": "Boogie Woogie",
-    "youtubeLink": "https://www.youtube.com/watch?v=jCv3XOuh2bI",
+    "youtubeLink": "https://www.youtube.com/watch?v=y4tEzZGoNF8",
     "albums": [
       {
         "name": "Pratt City Blues / Jab's Blues (1932)",
@@ -53193,13 +53193,13 @@
     "name": "Blind Willie Davis",
     "image": "",
     "image_source": null,
-    "birthDate": "",
+    "birthDate": "1890",
     "birthPlace": "",
     "birthCoords": [
       0,
       0
     ],
-    "deathDate": "2000",
+    "deathDate": "1930",
     "deathPlace": null,
     "deathCoords": null,
     "spentTimePlaces": [],
@@ -53279,8 +53279,8 @@
   {
     "id": "lloyd-glenn",
     "name": "Lloyd Glenn",
-    "image": "",
-    "image_source": null,
+    "image": "https://alchetron.com/cdn/lloyd-glenn-f963e731-e0c6-41b4-aa30-f98a7b75475-resize-750.jpeg",
+    "image_source": "alchetron.com",
     "birthDate": "1909-11-21",
     "birthPlace": "San Antonio",
     "birthCoords": [
@@ -53343,8 +53343,8 @@
   {
     "id": "napoleon-strickland",
     "name": "Napoleon Strickland",
-    "image": "",
-    "image_source": null,
+    "image": "https://2.bp.blogspot.com/-RENRfwcvv_M/Vb3tQkl8ijI/AAAAAAAACzk/Z-bTDGqbiVM/s1600/Strickland3.jpg",
+    "image_source": "alchetron.com",
     "birthDate": "1919-10-01",
     "birthPlace": "Como",
     "birthCoords": [
@@ -53405,7 +53405,7 @@
     "spentTimePlaces": [],
     "instrument": "Guitar",
     "bluesStyle": "Gospel",
-    "youtubeLink": "https://www.youtube.com/watch?v=skolZ5rBxyc",
+    "youtubeLink": "https://www.youtube.com/watch?v=FF97PhKRG2M",
     "albums": [
       {
         "name": "Georgia Street Singer (1961)",
@@ -53464,8 +53464,8 @@
   {
     "id": "laura-dukes",
     "name": "Laura Dukes",
-    "image": "",
-    "image_source": null,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjdiYyElxH7f7LTJu0_b7YcE4c-D3v8vPE6MeZIM62LaYLcMixs--Pl3HlvzugPdFbkbaqZTJ3xeEVjJ8A19ri45yMf_LyOGXANQkYp-akN_FLJ0iEYaWxZKHzAFyxDff2DPWLbEUZPnSlf9eKOLf_6V14zyG8nYpYRsNR8gnuyOI7J1-x11rv6Afu/w1200-h630-p-k-no-nu/bdr-230328.jpg",
+    "image_source": "blinddogradio.blogspot.com",
     "birthDate": "1907-06-10",
     "birthPlace": "Memphis",
     "birthCoords": [
@@ -53508,8 +53508,8 @@
   {
     "id": "cora-mae-bryant",
     "name": "Cora Mae Bryant",
-    "image": "",
-    "image_source": null,
+    "image": "https://blogger.googleusercontent.com/img/a/AVvXsEgvT9iGtWAzsvLUMHZiVbf8mhqvjYiOs5HMiCMbowjElDZi4ojmIfyP1pOp0vx-Ij5E6pg6AT-zVGFGyUE3zDHwp_pFgdt2rOTgCbvRRuh0vswPVJfNbkjUUir3c0vbTddvzuUFSL0RV7IHmfauyGNIxFQ5npizNglTKQywH4TzVwTTbSLRfb4=w640-h635-rw",
+    "image_source": "sentirelblues.com",
     "birthDate": "1926-05-01",
     "birthPlace": "Oxford",
     "birthCoords": [
