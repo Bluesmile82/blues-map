@@ -318,7 +318,8 @@
       "chris-cain",
       "coco-montoya",
       "mel-brown",
-      "trudy-lynn"
+      "trudy-lynn",
+      "dave-alexander"
     ],
     "source": "https://en.wikipedia.org/wiki/Albert_Collins",
     "secondaryInstruments": [
@@ -1242,7 +1243,8 @@
       "skip-james",
       "john-jackson",
       "john-cephas",
-      "phil-wiggins"
+      "phil-wiggins",
+      "flora-molton"
     ],
     "source": "https://en.wikipedia.org/wiki/Archie_Edwards",
     "secondaryInstruments": [
@@ -2853,7 +2855,8 @@
       "luther-guitar-junior-johnson",
       "bb-king",
       "clarence-gatemouth-brown",
-      "doug-macleod"
+      "doug-macleod",
+      "dave-alexander"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
     "secondaryInstruments": [
@@ -4898,7 +4901,8 @@
       "chris-cain",
       "jack-owens",
       "wayne-bennett",
-      "big-time-sarah"
+      "big-time-sarah",
+      "dave-alexander"
     ],
     "source": "https://en.wikipedia.org/wiki/Buddy_Guy",
     "secondaryInstruments": [
@@ -15879,7 +15883,8 @@
     "playedWith": [
       "phil-wiggins",
       "archie-edwards",
-      "tarheel-slim"
+      "tarheel-slim",
+      "flora-molton"
     ],
     "source": "https://en.wikipedia.org/wiki/Cephas_&_Wiggins",
     "secondaryInstruments": [
@@ -16059,7 +16064,9 @@
       "blind-blake"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "flora-molton"
+    ],
     "source": "https://en.wikipedia.org/wiki/John_Jackson_(blues_musician)",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -24799,7 +24806,8 @@
       "louis-myers",
       "lc-robinson",
       "pat-hare",
-      "dave-myers"
+      "dave-myers",
+      "dave-alexander"
     ],
     "source": "https://en.wikipedia.org/wiki/Muddy_Waters",
     "secondaryInstruments": [
@@ -54015,5 +54023,106 @@
       "Vocals"
     ],
     "createdAt": "2026-09-27"
+  },
+  {
+    "id": "dave-alexander",
+    "name": "Dave Alexander",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1938-03-10",
+    "birthPlace": "Shreveport, Louisiana",
+    "birthCoords": [
+      -93.7502,
+      32.5252
+    ],
+    "deathDate": "2012-01-08",
+    "deathPlace": "Marshall, Texas",
+    "deathCoords": [
+      -94.3674,
+      32.5449
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Oakland, California",
+        "coords": [
+          -122.2712,
+          37.8044
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=3iMpQ2qsCdM",
+    "albums": [
+      {
+        "name": "The Rattler (1972)",
+        "youtubeLink": "https://www.youtube.com/watch?v=3iMpQ2qsCdM"
+      },
+      {
+        "name": "The Raven (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=DQQwYMZ6Xco"
+      }
+    ],
+    "description": "David Alexander Elam (March 10, 1938 – January 8, 2012), known as Dave Alexander and later as Omar Sharriff, was an American West Coast blues singer and self-taught pianist who moved to Oakland, California in 1957 and became a mainstay of the Bay Area blues scene, backing Big Mama Thornton, Jimmy Witherspoon, Muddy Waters, Buddy Guy, and Albert Collins. He recorded a series of albums for Arhoolie Records in the 1970s and, after adopting the name Omar Sharriff in the mid-1970s, continued performing and writing for Living Blues magazine until his death.",
+    "activeFrom": "1957",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "big-mama-thornton",
+      "muddy-waters",
+      "buddy-guy",
+      "albert-collins"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Dave_Alexander_(blues_musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-28"
+  },
+  {
+    "id": "flora-molton",
+    "name": "Flora Molton",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/f5/Flora_Molton.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1908-03-12",
+    "birthPlace": "Louisa County",
+    "birthCoords": [
+      -77.96,
+      37.99
+    ],
+    "deathDate": "1990-05-31",
+    "deathPlace": "Washington, D.C.",
+    "deathCoords": [
+      -77.036666666667,
+      38.895
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=LXCdCipPGwg",
+    "albums": [
+      {
+        "name": "Gospel Blues",
+        "youtubeLink": "https://www.youtube.com/watch?v=LXCdCipPGwg"
+      }
+    ],
+    "description": "Flora E. Molton (née Rollins; March 12, 1908 – May 31, 1990) was an American street singer and slide guitar player who performed gospel and blues music in Washington, D.C.",
+    "activeFrom": "1943",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "archie-edwards",
+      "john-jackson",
+      "john-cephas"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Flora_Molton",
+    "secondaryInstruments": [
+      "Vocals",
+      "Harmonica",
+      "Tambourine"
+    ],
+    "createdAt": "2026-09-28"
   }
 ]
