@@ -232,7 +232,8 @@
       "charlie-spand",
       "jimmy-blythe",
       "meade-lux-lewis",
-      "george-w-thomas"
+      "george-w-thomas",
+      "will-ezell"
     ],
     "incomplete": false,
     "playedWith": [
@@ -2104,7 +2105,8 @@
       "candye-kane",
       "chippie-hill",
       "maggie-jones",
-      "monette-moore"
+      "monette-moore",
+      "helen-humes"
     ],
     "influencedBy": [
       "ma-rainey"
@@ -3302,7 +3304,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "charlie-spand"
+      "charlie-spand",
+      "will-ezell"
     ],
     "source": "https://en.wikipedia.org/wiki/Blind_Blake",
     "secondaryInstruments": [
@@ -3667,7 +3670,8 @@
     "influences": [
       "ramblin-thomas",
       "lc-robinson",
-      "blind-willie-davis"
+      "blind-willie-davis",
+      "elder-utah-smith"
     ],
     "influencedBy": [
       "edward-w-clayborn"
@@ -10179,7 +10183,9 @@
     "albums": [],
     "description": "Fats Domino (Antoine Domino Jr.) was an American pianist and singer-songwriter who pioneered rock and roll and R&B. One of the most popular artists of the 1950s and early 1960s, his relaxed boogie-woogie piano style and warm vocals helped define the New Orleans sound. His hits 'Ain't That a Shame' and 'Blueberry Hill' were crossover successes that sold millions. He sold more than 65 million records and had 35 Top 40 hits, making him one of the best-selling artists of his era.",
     "activeFrom": "1949",
-    "influences": [],
+    "influences": [
+      "al-carnival-time-johnson"
+    ],
     "influencedBy": [
       "professor-longhair",
       "smiley-lewis",
@@ -13925,7 +13931,8 @@
     "playedWith": [
       "jimmy-witherspoon",
       "eddie-cleanhead-vinson",
-      "julia-lee"
+      "julia-lee",
+      "crown-prince-waterford"
     ],
     "source": "https://en.wikipedia.org/wiki/Jay_McShann",
     "secondaryInstruments": [
@@ -15246,7 +15253,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "helen-humes"
+    ],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Rushing",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -18363,7 +18372,8 @@
     "playedWith": [
       "otis-redding",
       "clifton-chenier",
-      "carol-fran"
+      "carol-fran",
+      "warren-storm"
     ],
     "source": "https://en.wikipedia.org/wiki/Katie_Webster",
     "secondaryInstruments": [
@@ -19311,7 +19321,8 @@
       "lucky-peterson",
       "jimmie-vaughan",
       "guitar-gable",
-      "lil-buck-sinegal"
+      "lil-buck-sinegal",
+      "warren-storm"
     ],
     "source": "https://en.wikipedia.org/wiki/Lazy_Lester",
     "secondaryInstruments": [
@@ -19927,7 +19938,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "warren-storm"
+    ],
     "source": "https://en.wikipedia.org/wiki/Lightnin'_Slim",
     "secondaryInstruments": [
       "Vocals"
@@ -21704,7 +21717,8 @@
       "tommy-tucker",
       "jack-mcvea",
       "smiley-lewis",
-      "bull-moose-jackson"
+      "bull-moose-jackson",
+      "big-john-greer"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -22949,7 +22963,9 @@
       "rosa-henderson",
       "maggie-jones",
       "viola-mccoy",
-      "josie-miles"
+      "josie-miles",
+      "hazel-meyers",
+      "helen-humes"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -31778,7 +31794,8 @@
       "goree-carter",
       "roy-gaines",
       "lafayette-thomas",
-      "jimmy-wilson"
+      "jimmy-wilson",
+      "jimmy-nolen"
     ],
     "influencedBy": [
       "blind-lemon-jefferson",
@@ -34545,7 +34562,9 @@
       "big-joe-turner"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "big-john-greer"
+    ],
     "source": "https://en.wikipedia.org/wiki/Wynonie_Harris",
     "secondaryInstruments": [
       "Vocals"
@@ -44280,13 +44299,15 @@
       "cecil-gant"
     ],
     "influencedBy": [
-      "pinetop-smith"
+      "pinetop-smith",
+      "will-ezell"
     ],
     "incomplete": false,
     "playedWith": [
       "big-joe-turner",
       "albert-ammons",
-      "meade-lux-lewis"
+      "meade-lux-lewis",
+      "crown-prince-waterford"
     ],
     "source": "https://en.wikipedia.org/wiki/Pete_Johnson_(musician)",
     "secondaryInstruments": [],
@@ -47609,7 +47630,8 @@
     "description": "Overton Amos Lemons (July 5, 1913 – October 7, 1966), known as Smiley Lewis, was an American New Orleans rhythm and blues singer and guitarist.  The music journalist Tony Russell wrote that \"Lewis was the unluckiest man in New Orleans.  He hit on a formula for slow-rocking, small-band numbers like 'The Bells Are Ringing' and 'I Hear You Knocking' only to have Fats Domino come up behind him with similar music with a more ingratiating delivery.\"",
     "activeFrom": "1947",
     "influences": [
-      "fats-domino"
+      "fats-domino",
+      "al-carnival-time-johnson"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -52704,7 +52726,9 @@
       "louis-jordan"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "big-john-greer"
+    ],
     "source": "https://en.wikipedia.org/wiki/Bull_Moose_Jackson",
     "secondaryInstruments": [
       "Vocals"
@@ -52856,7 +52880,9 @@
     ],
     "description": "Jimmy Wilson (possibly January 21, 1918, 1921 or 1923 – February 5, 1965 or February 24, 1966) was an American West Coast blues singer, best known for his 1953 hit \"Tin Pan Alley\".",
     "activeFrom": "1951",
-    "influences": [],
+    "influences": [
+      "jimmy-nolen"
+    ],
     "influencedBy": [
       "t-bone-walker"
     ],
@@ -54124,5 +54150,580 @@
       "Tambourine"
     ],
     "createdAt": "2026-09-28"
+  },
+  {
+    "id": "hazel-meyers",
+    "name": "Hazel Meyers",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hazel%20Meyers.jpg?width=500",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "",
+    "birthCoords": [
+      0,
+      0
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ghSZeWES9Uw",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order Volume 1 (1923-1924) (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=j7nKFTWNpdI"
+      }
+    ],
+    "description": "Hazel Meyers was an American classic female blues and country blues singer.  She spent most of her career in black vaudeville and on recordings she was billed as a blues artist.  Her more famous numbers included \"Heartbreaking Blues\" and \"Blackville After Dark\", both sung in her contralto voice.",
+    "activeFrom": "1923",
+    "influences": [],
+    "influencedBy": [
+      "mamie-smith"
+    ],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Hazel_Meyers",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-29"
+  },
+  {
+    "id": "helen-humes",
+    "name": "Helen Humes",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Helen%20Humes.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1913-06-23",
+    "birthPlace": "Louisville",
+    "birthCoords": [
+      -85.75138888888888,
+      38.25611111111111
+    ],
+    "deathDate": "1981-09-09",
+    "deathPlace": "Santa Monica",
+    "deathCoords": [
+      -118.48138888889,
+      34.021944444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      },
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=IyH0fEbzWxY",
+    "albums": [
+      {
+        "name": "New Million Dollar Secret (1987)",
+        "youtubeLink": "https://www.youtube.com/watch?v=StQ5Y1d6jI4"
+      },
+      {
+        "name": "The New Year's Eve (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=qrjts9RfBgg"
+      },
+      {
+        "name": "The Chronological Classics: Helen Humes 1927-1945 (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=qrjts9RfBgg"
+      },
+      {
+        "name": "The Chronological Classics: Helen Humes 1945-1947 (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=qrjts9RfBgg"
+      },
+      {
+        "name": "Complete 1927-1950 Studio Recordings (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=qrjts9RfBgg"
+      },
+      {
+        "name": "The Chronological Classics: Helen Humes 1948-1950 (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=qrjts9RfBgg"
+      }
+    ],
+    "description": "Helen Humes (June 23, 1913 – September 13, 1981) was an American singer.  She was a blues, R&B and classic popular singer.",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [
+      "bessie-smith",
+      "mamie-smith"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "jimmy-rushing"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Helen_Humes",
+    "secondaryInstruments": [
+      "Piano",
+      "Pipe organ"
+    ],
+    "createdAt": "2026-09-29"
+  },
+  {
+    "id": "will-ezell",
+    "name": "Will Ezell",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1892-12-23",
+    "birthPlace": "Brenham",
+    "birthCoords": [
+      -96.396944444444,
+      30.161944444444
+    ],
+    "deathDate": "1963-08-02",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=Lf9r--N2Zy0",
+    "albums": [
+      {
+        "name": "Complete Recorded Works In Chronological Order (1927-1931) (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=c0_NkLGJwCg"
+      }
+    ],
+    "description": "William Ezell (December 23, 1892 – August 2, 1963), was an American blues, jazz, ragtime and boogie-woogie pianist and occasional singer, who was also billed as Will Ezell.  He regularly contributed to recordings made by Paramount Records in the late 1920s and early 1930s.  Ezell was noted by the music journalist Bruce Eder as \"a technically brilliant pianist, showing the strong influence of jazz as well as blues in his work\".",
+    "activeFrom": "1927",
+    "influences": [
+      "albert-ammons",
+      "pete-johnson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "blind-blake"
+    ],
+    "source": "https://en.wikipedia.org/wiki/William_Ezell",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-29"
+  },
+  {
+    "id": "elder-utah-smith",
+    "name": "Elder Utah Smith",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1906",
+    "birthPlace": "Shreveport, Louisiana",
+    "birthCoords": [
+      -93.7502,
+      32.5252
+    ],
+    "deathDate": "1965-01-24",
+    "deathPlace": "New Orleans, Louisiana",
+    "deathCoords": [
+      -90.0715,
+      29.9511
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=VtiJmGFmlsM",
+    "albums": [
+      {
+        "name": "I Got Two Wings: Incidents and Anecdotes of the Two-Winged Preacher and Electric Guitar Evangelist",
+        "youtubeLink": "https://www.youtube.com/watch?v=VtiJmGFmlsM"
+      }
+    ],
+    "description": "Elder Utah Smith was a gospel blues guitar evangelist from Shreveport, Louisiana, known as the \"Two-Winged Preacher\" for performing with a pair of large white wings strapped to his back. An early adopter of the electric guitar among gospel street singers, he preached and played fierce, blues-inflected slide guitar for the Church of God in Christ across the South from the late 1920s onward. His signature recording, \"I Got Two Wings\", cut in 1944 and reprised on later sessions, fused Delta blues guitar technique with sanctified fervor and influenced the tradition of electric gospel guitar evangelism.",
+    "activeFrom": "1928",
+    "influences": [],
+    "influencedBy": [
+      "blind-willie-johnson"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Elder_Utah_Smith",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-29"
+  },
+  {
+    "id": "warren-storm",
+    "name": "Warren Storm",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Warren_Storm_at_New_Orleans_Jazz_%26_Heritage_Festival%2C_New_Orleans%2C_LA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": null,
+    "birthDate": "1937-02-18",
+    "birthPlace": "Abbeville",
+    "birthCoords": [
+      -92.129166666667,
+      29.9725
+    ],
+    "deathDate": "2021-09-07",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Baton Rouge",
+        "coords": [
+          -91.1871,
+          30.4515
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Drum kit",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=C6Z1_4yfNEk",
+    "albums": [
+      {
+        "name": "Boppin' Tonight: The Legendary Jay Miller Sessions, Volume 6 (1977)",
+        "youtubeLink": "https://www.youtube.com/watch?v=wMCm_1NacvQ"
+      },
+      {
+        "name": "Mama Mama Mama 1958-1961: The Legendary Jay Miller Sessions, Volume 39 (1984)",
+        "youtubeLink": "https://www.youtube.com/watch?v=L8L07gxTpVA"
+      },
+      {
+        "name": "King Of The Dance Halls (The Crazy Cajun Recordings) (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=BPYVb6q0nLc"
+      },
+      {
+        "name": "The Bad Times Make The Good Times 1964-1986 (2015)",
+        "youtubeLink": "https://www.youtube.com/watch?v=3cFnglekVV8"
+      },
+      {
+        "name": "Prisoner's Song (2023)",
+        "youtubeLink": "https://www.youtube.com/watch?v=yh5pbG8eQJI"
+      }
+    ],
+    "description": "Warren Storm (né Schexnider; February 18, 1937 – September 7, 2021) was an American drummer and vocalist, known as a pioneer of the musical genre swamp pop; a combination of rhythm and blues, country and western, and Cajun music and black Creole music.",
+    "activeFrom": "1956",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "lazy-lester",
+      "lightnin-slim",
+      "katie-webster"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Warren_Storm",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-29"
+  },
+  {
+    "id": "james-sugar-boy-crawford",
+    "name": "James \"Sugar Boy\" Crawford",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/SugarBoyCrawfordApr281996.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1934-10-12",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "2012-09-15",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.07833333333333,
+          29.976111111111113
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=v0iiJrpFdwA",
+    "albums": [
+      {
+        "name": "The Chronological \"Sugar Boy\" Crawford 1953-1954 (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=PgOrIar_qGk"
+      }
+    ],
+    "description": "James \"Sugar Boy\" Crawford, Jr.  (October 12, 1934  – September 15, 2012) was an American R&B musician based in New Orleans.  He was the author of \"Jock-A-Mo\" (1954), which was later rerecorded as \"Iko Iko\" by the Dixie Cups, and became a huge hit.",
+    "activeFrom": "1950",
+    "influences": [
+      "al-carnival-time-johnson"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/James_%22Sugar_Boy%22_Crawford",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-29"
+  },
+  {
+    "id": "al-carnival-time-johnson",
+    "name": "Al \"Carnival Time\" Johnson",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/AlJohnsonWikipedia.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1939-06-20",
+    "birthPlace": "Lower Ninth Ward",
+    "birthCoords": [
+      -90.0128,
+      29.9703
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Houston",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=FyEyTdqUYO4",
+    "albums": [
+      {
+        "name": "Carnival Time (single)",
+        "youtubeLink": "https://www.youtube.com/watch?v=QNPRg0nxnpk"
+      }
+    ],
+    "description": "Al \"Carnival Time\" Johnson (born June 20, 1939, in New Orleans, Louisiana) is an American singer and piano player best known for the Mardi Gras song  \"Carnival Time\".",
+    "activeFrom": "1954",
+    "influences": [],
+    "influencedBy": [
+      "james-sugar-boy-crawford",
+      "smiley-lewis",
+      "fats-domino"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Al_%22Carnival_Time%22_Johnson",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-29"
+  },
+  {
+    "id": "jimmy-nolen",
+    "name": "Jimmy Nolen",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1934-04-03",
+    "birthPlace": "Oklahoma City",
+    "birthCoords": [
+      -97.53527777777778,
+      35.48222222222222
+    ],
+    "deathDate": "1983-12-18",
+    "deathPlace": "Atlanta",
+    "deathCoords": [
+      -84.38972222222222,
+      33.754444444444445
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      },
+      {
+        "place": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=M4La3_Gdhl8",
+    "albums": [
+      {
+        "name": "Scratchin' (Federal Records Anthology)",
+        "youtubeLink": null
+      }
+    ],
+    "description": "Jimmy Nolen (April 3, 1934 – December 18, 1983) was an American guitarist, known for his distinctive \"chicken scratch\" lead guitar playing in James Brown's bands.  In its survey of \"The 100 Greatest Guitarists of All Time,\" the English magazine Mojo ranks Nolen number 12.  Rolling Stone named Nolen the 12th greatest guitarist of all time in 2023.",
+    "activeFrom": "1954",
+    "influences": [],
+    "influencedBy": [
+      "t-bone-walker",
+      "jimmy-wilson"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Jimmy_Nolen",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-29"
+  },
+  {
+    "id": "crown-prince-waterford",
+    "name": "Crown Prince Waterford",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1916-10-26",
+    "birthPlace": "Jonesboro",
+    "birthCoords": [
+      -90.7,
+      35.833333333333
+    ],
+    "deathDate": "2007-02-01",
+    "deathPlace": "Jacksonville, Florida",
+    "deathCoords": [
+      -81.65,
+      30.316666666667
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=MPXZu6CupI4",
+    "albums": [
+      {
+        "name": "Blues & Rhythm Series: The Chronological Crown Prince Waterford 1946-1950 (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=DsZNRnXcU34"
+      },
+      {
+        "name": "Swingin' Small Combos Kansas City Style - Volume 2 (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=r-wKA-0qRw8"
+      }
+    ],
+    "description": "Solomon Charles Waterford (October 26, 1916 – February 1, 2007), known as Crown Prince Waterford, was an American jazz and blues singer who recorded in the 1940s and 1950s with Jay McShann, Pete Johnson and others.",
+    "activeFrom": "1935",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "pete-johnson",
+      "jay-mcshann"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Crown_Prince_Waterford",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-29"
+  },
+  {
+    "id": "big-john-greer",
+    "name": "Big John Greer",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1923-11-21",
+    "birthPlace": "Hot Springs",
+    "birthCoords": [
+      -93.05527777777777,
+      34.50361111111111
+    ],
+    "deathDate": "1972-05-12",
+    "deathPlace": "Hot Springs",
+    "deathCoords": [
+      -93.05527777777777,
+      34.50361111111111
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      }
+    ],
+    "instrument": "Saxophone",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9FEyndzdmG8",
+    "albums": [
+      {
+        "name": "R&B in New York City (1988)",
+        "youtubeLink": "https://www.youtube.com/watch?v=aIy8QtaQx-0"
+      },
+      {
+        "name": "Rockin' With Big John (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=KnCJjXthhYA"
+      },
+      {
+        "name": "I'm The Fat Man (2007)",
+        "youtubeLink": "https://www.youtube.com/watch?v=S0Aa2cLLzsA"
+      }
+    ],
+    "description": "John Marshall \"Big John\" Greer (November 21, 1923 – May 12, 1972) was an American blues tenor saxophonist and vocalist, best known for his recordings from 1948 to 1956, which included \"Got You on My Mind\" and \"Bottle It Up and Go\". \nBorn in Hot Springs, Arkansas, United States, Greer was a friend of Henry Glover from childhood, and both attended college at Alabama A&M together.  Glover was playing in Lucky Millinder's band when Bull Moose Jackson left the group in 1948; Glover suggested that Greer be chosen as Jackson's replacement.",
+    "activeFrom": "1948",
+    "influences": [],
+    "influencedBy": [
+      "louis-jordan"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "wynonie-harris",
+      "bull-moose-jackson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Big_John_Greer",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-29"
   }
 ]
