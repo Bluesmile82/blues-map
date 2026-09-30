@@ -750,7 +750,8 @@
     "playedWith": [
       "lightnin-hopkins",
       "blind-lemon-jefferson",
-      "lowell-fulson"
+      "lowell-fulson",
+      "elvie-thomas"
     ],
     "source": "https://en.wikipedia.org/wiki/Alger_%22Texas%22_Alexander",
     "secondaryInstruments": [],
@@ -2042,7 +2043,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "black-boy-shine"
+    ],
     "source": "https://en.wikipedia.org/wiki/Bernice_Edwards",
     "secondaryInstruments": [
       "Vocals"
@@ -2104,7 +2107,8 @@
       "candye-kane",
       "chippie-hill",
       "maggie-jones",
-      "monette-moore"
+      "monette-moore",
+      "lillian-glinn"
     ],
     "influencedBy": [
       "ma-rainey"
@@ -2177,7 +2181,8 @@
     "incomplete": false,
     "playedWith": [
       "k-d-johnson",
-      "jesse-thomas"
+      "jesse-thomas",
+      "ida-may-mack"
     ],
     "source": "https://en.wikipedia.org/wiki/Bessie_Tucker",
     "secondaryInstruments": [],
@@ -3302,7 +3307,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "charlie-spand"
+      "charlie-spand",
+      "will-ezell"
     ],
     "source": "https://en.wikipedia.org/wiki/Blind_Blake",
     "secondaryInstruments": [
@@ -3400,7 +3406,8 @@
       "archie-edwards",
       "larry-johnson",
       "guitar-gabriel",
-      "robert-lowery"
+      "robert-lowery",
+      "boo-hanks"
     ],
     "influencedBy": [
       "charley-patton",
@@ -5324,7 +5331,8 @@
     "incomplete": false,
     "playedWith": [
       "alger-texas-alexander",
-      "lightnin-hopkins"
+      "lightnin-hopkins",
+      "black-boy-shine"
     ],
     "source": "https://en.wikipedia.org/wiki/Buster_Pickens",
     "secondaryInstruments": [],
@@ -6917,7 +6925,8 @@
       "albert-ammons",
       "montana-taylor",
       "romeo-nelson",
-      "jabo-williams"
+      "jabo-williams",
+      "will-ezell"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -6999,7 +7008,8 @@
       "charley-lincoln",
       "fred-mcmullen",
       "buddy-moss",
-      "eddie-mapp"
+      "eddie-mapp",
+      "will-ezell"
     ],
     "source": "https://en.wikipedia.org/wiki/Cripple_Clarence_Lofton",
     "secondaryInstruments": [
@@ -21974,7 +21984,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "charles-avery"
+      "charles-avery",
+      "will-ezell"
     ],
     "source": "https://en.wikipedia.org/wiki/Lucille_Bogan",
     "secondaryInstruments": [],
@@ -22700,7 +22711,8 @@
       "trixie-smith",
       "chuck-willis",
       "chippie-hill",
-      "monette-moore"
+      "monette-moore",
+      "lillian-glinn"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -38672,7 +38684,9 @@
     ],
     "influences": [],
     "influencedBy": [],
-    "playedWith": [],
+    "playedWith": [
+      "will-ezell"
+    ],
     "createdAt": "2026-09-03"
   },
   {
@@ -42560,7 +42574,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "elvie-thomas"
+    ],
     "source": "https://en.wikipedia.org/wiki/Geeshie_Wiley",
     "secondaryInstruments": [
       "Vocals"
@@ -49841,7 +49857,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "blind-blake"
+      "blind-blake",
+      "will-ezell"
     ],
     "source": "https://en.wikipedia.org/wiki/Charlie_Spand",
     "secondaryInstruments": [
@@ -50315,7 +50332,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "black-boy-shine"
+    ],
     "source": "https://en.wikipedia.org/wiki/Robert_Shaw_(blues_musician)",
     "secondaryInstruments": [],
     "createdAt": "2026-09-18"
@@ -51053,7 +51072,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "blind-lemon-jefferson"
+      "blind-lemon-jefferson",
+      "will-ezell"
     ],
     "source": "https://en.wikipedia.org/wiki/Elzadie_Robinson",
     "secondaryInstruments": [],
@@ -52640,7 +52660,10 @@
     ],
     "description": "Reverend J. M. Gates (July 14, 1884 – August 18, 1945) was an American Baptist preacher from Atlanta, Georgia, who became the most commercially successful recording preacher of the pre-war era, cutting over 200 sides of sermons and gospel songs between 1926 and 1941. His debut recording, \"Death's Black Train Is Coming,\" sold over 35,000 copies within months, and his rhythmic call-and-response style, preached before his own congregation and pressed straight to disc, helped establish the recorded sermon as a commercial genre alongside blues and gospel music. He served as pastor of Mount Calvary Baptist Church in Atlanta from 1914 until his death.",
     "activeFrom": "1926",
-    "influences": [],
+    "influences": [
+      "reverend-a-w-nix",
+      "reverend-j-c-burnett"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -54122,6 +54145,561 @@
       "Vocals",
       "Harmonica",
       "Tambourine"
+    ],
+    "createdAt": "2026-09-28"
+  },
+  {
+    "id": "lillian-glinn",
+    "name": "Lillian Glinn",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhd-CKYw7b1CAK7EA1SXKmRQ_YzvKLCf-UuTkUmK0finIk2irqVn_afZOWAzm3CUkGEScD_uApZ3MWGiHgio8xRLydiFeclMl9wK_c5CoBS_qWsz2AnRRtkO429PEJotTocyGnd/s1600/Lillian-Glinn-Complete-Recorded-Works-In-Chronological-Order-1994-FLAC.jpg",
+    "image_source": "sentirelblues.com",
+    "birthDate": "1902-05-10",
+    "birthPlace": "Hillsboro, Texas",
+    "birthCoords": [
+      -97.1244,
+      32.0094
+    ],
+    "deathDate": "1978-07-22",
+    "deathPlace": "Richmond, California",
+    "deathCoords": [
+      -122.34777777778,
+      37.935833333333
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      },
+      {
+        "place": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=USOhgW6zkOE",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, 1927-1929 (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=kFCaHnDETh4"
+      }
+    ],
+    "description": "Lillian Glinn (May 10, 1902 – July 22, 1978) was an American classic female blues and country blues singer and songwriter. She spent most of her career in black vaudeville. Among her popular recordings were \"Black Man Blues,\" \"Doggin' Me Blues\" and \"Atlanta Blues.\"",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [
+      "bessie-smith",
+      "ma-rainey"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Lillian_Glinn",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-28"
+  },
+  {
+    "id": "ida-may-mack",
+    "name": "Ida May Mack",
+    "image": "https://i.discogs.com/9fb_4EVBYXTuz-6Q3PwGm-O4iylJgCxgPckKCxRabhM/rs:fit/g:sm/q:90/h:500/w:304/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTg3MzEz/MC0xMjUxNjgwNjI5/LmpwZWc.jpeg",
+    "image_source": "discogs",
+    "birthDate": "",
+    "birthPlace": "",
+    "birthCoords": [
+      0,
+      0
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=4TGzmLWAa2o",
+    "albums": [],
+    "description": "Ida May Mack or Ida Mae Mack was an American classic female blues, country blues, and Texas blues singer and songwriter. She recorded eight songs in 1928, four of which she recorded twice. Six of these tracks were released at the time.",
+    "activeFrom": "",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "bessie-tucker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Ida_May_Mack",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-28"
+  },
+  {
+    "id": "will-ezell",
+    "name": "Will Ezell",
+    "image": "https://i.ebayimg.com/images/g/9aoAAOSw~sNboHhs/s-l400.jpg",
+    "image_source": "ebay",
+    "birthDate": "1892-12-23",
+    "birthPlace": "Brenham, Texas",
+    "birthCoords": [
+      -96.396944444444,
+      30.161944444444
+    ],
+    "deathDate": "1963-08-02",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=Lf9r--N2Zy0",
+    "albums": [
+      {
+        "name": "Complete Recorded Works In Chronological Order (1927-1931) (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=c0_NkLGJwCg"
+      }
+    ],
+    "description": "William Ezell (December 23, 1892 – August 2, 1963), was an American blues, jazz, ragtime and boogie-woogie pianist and occasional singer, who was also billed as Will Ezell. He regularly contributed to recordings made by Paramount Records in the late 1920s and early 1930s. Ezell was noted by the music journalist Bruce Eder as \"a technically brilliant pianist, showing the strong influence of jazz as well as blues in his work\".",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [
+      "cow-cow-davenport"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "elzadie-robinson",
+      "lucille-bogan",
+      "blind-blake",
+      "charlie-spand",
+      "blind-roosevelt-graves",
+      "cripple-clarence-lofton"
+    ],
+    "source": "https://en.wikipedia.org/wiki/William_Ezell",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-28"
+  },
+  {
+    "id": "black-boy-shine",
+    "name": "Black Boy Shine",
+    "image": "https://m.media-amazon.com/images/I/61HBquEEf1L.jpg",
+    "image_source": "amazon.com",
+    "birthDate": "1908-09-12",
+    "birthPlace": "Fort Bend County, Texas",
+    "birthCoords": [
+      -95.7594,
+      29.5822
+    ],
+    "deathDate": "1952-03-28",
+    "deathPlace": "Sugar Land, Texas",
+    "deathCoords": [
+      -95.6349,
+      29.6197
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Houston",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      {
+        "place": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=wylqvZeKyZc",
+    "albums": [
+      {
+        "name": "Unissued Test Pressings and Alternate Takes, 1934-1937 (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=BdaiYeTqSi8"
+      }
+    ],
+    "description": "Black Boy Shine (c. September 12, 1908 – March 28, 1952), born Harold Holiday, was an American Texas blues pianist, singer and songwriter. Little is known of his life outside of his recording career.",
+    "activeFrom": "1935",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "robert-shaw",
+      "buster-pickens",
+      "bernice-edwards"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Black_Boy_Shine",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-28"
+  },
+  {
+    "id": "blue-lu-barker",
+    "name": "Blue Lu Barker",
+    "image": "https://delmark.com/wp-content/uploads/2018/06/DE684.jpg",
+    "image_source": "delmark.com",
+    "birthDate": "1913-11-13",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "1998-05-07",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=GD0ZC-oV9WU",
+    "albums": [
+      {
+        "name": "The Chronological Classics: Blue Lu Barker 1938-1939 (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=t9GoDz4bj-c"
+      },
+      {
+        "name": "Don’t You Feel My Leg: Apollo’s Lady Blues Singers (1996)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "The Chronological Classics: Blue Lu Barker 1946-1949 (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=_vtv7yYfQP8"
+      },
+      {
+        "name": "Blues Masters, Volume 13 (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=4850TRL_XJY"
+      }
+    ],
+    "description": "Louisa \"Blue Lu\" Barker (née Louise Dupont) (November 13, 1913 – May 7, 1998) was an American jazz and blues singer. Her better-known recordings include \"Don't You Feel My Leg\" (1938), which she wrote with her husband; \"Georgia Grind\"; and \"Look What Baby's Got for You\". She was born in New Orleans, Louisiana, and often sang and performed with her husband, guitarist Danny Barker, a regular of the New Orleans music scene.",
+    "activeFrom": "1938",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Blue_Lu_Barker",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-28"
+  },
+  {
+    "id": "reverend-a-w-nix",
+    "name": "Reverend A. W. Nix",
+    "image": "https://images.findagrave.com/photos/2024/335/140935179_5926b910-8d44-4373-b559-553d59ebf498.png",
+    "image_source": "findagrave.com",
+    "birthDate": "1880-11-30",
+    "birthPlace": "Rusk County, Texas",
+    "birthCoords": [
+      -94.76,
+      32.11
+    ],
+    "deathDate": "1949-01-10",
+    "deathPlace": "Philadelphia, Pennsylvania",
+    "deathCoords": [
+      -75.1652,
+      39.9526
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=1_-4bCtSuEA",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, Volume 1: 1927-1928 (1995)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Rev. A. W. Nix: In Chronological Order, 1928-1930 / Rev. Emmett Dickinson: Last Recording Sessions, 1931 (1996)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Reverend A. W. Nix (November 30, 1880 – January 10, 1949) was an American preacher who recorded 54 sermons and gospel songs in the late 1920s and early 1930s.",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [
+      "reverend-j-m-gates"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Reverend_A._W._Nix",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-28"
+  },
+  {
+    "id": "reverend-j-c-burnett",
+    "name": "Reverend J. C. Burnett",
+    "image": "https://i.discogs.com/V5WfK1btI5J0Ts3mXbGbyGZ74cM3GFeiin6kr3WRnmU/rs:fit/g:sm/q:90/h:780/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM0MTkx/Ni0xNTkzNjI0NDUy/LTk2OTAuanBlZw.jpeg",
+    "image_source": "discogs",
+    "birthDate": "",
+    "birthPlace": "Mobile, Alabama",
+    "birthCoords": [
+      -88.0399,
+      30.6944
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=1zjirLjBYaU",
+    "albums": [
+      {
+        "name": "Complete Recorded Works In Chronological Order, Volume 1: 1926-1927 (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=1zjirLjBYaU"
+      },
+      {
+        "name": "Complete Recorded Works In Chronological Order, Volume 2: 1927-1945 (1997)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Reverend J. C. Burnett was an American preacher who recorded gospel songs and sermons extensively in the late-1920s and intermittently thereafter until the 1940s.",
+    "activeFrom": "1926",
+    "influences": [],
+    "influencedBy": [
+      "reverend-j-m-gates"
+    ],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Reverend_J._C._Burnett",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-28"
+  },
+  {
+    "id": "scott-dunbar",
+    "name": "Scott Dunbar",
+    "image": "https://www.wirz.de/music/dunbar/grafik/dunbar54.jpg",
+    "image_source": "www.wirz.de",
+    "birthDate": "1904-06-06",
+    "birthPlace": "Lake Mary, Wilkinson County, Mississippi",
+    "birthCoords": [
+      -91.3021,
+      31.1096
+    ],
+    "deathDate": "1994-10-01",
+    "deathPlace": "Centreville, Mississippi",
+    "deathCoords": [
+      -91.0662,
+      31.0929
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=DyN889NgL4s",
+    "albums": [
+      {
+        "name": "From Lake Mary (1970)",
+        "youtubeLink": "https://www.youtube.com/watch?v=y2cxpy7fq6c"
+      }
+    ],
+    "description": "Scott Dunbar (June 6, 1904 – October 1, 1994) was a self-taught blues guitarist and singer from Lake Mary, Mississippi, who worked most of his life as a fisherman and river guide. Largely undocumented until folklorist Frederic Ramsey Jr. and later William Ferris recorded him starting in 1954, his highly individual guitar style and vocal technique blending yodeling and scat singing were captured on the 1970 album From Lake Mary.",
+    "activeFrom": "1924",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Scott_Dunbar",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-28"
+  },
+  {
+    "id": "elvie-thomas",
+    "name": "Elvie Thomas",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1891-08-07",
+    "birthPlace": "Houston, Texas",
+    "birthCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "deathDate": "1979-05-20",
+    "deathPlace": "Houston, Texas",
+    "deathCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=vmj23UrVF80",
+    "albums": [],
+    "description": "Elvie Thomas (August 7, 1891 – May 20, 1979) was an American country blues guitarist and singer from Houston, Texas, remembered chiefly for her 1930 Paramount Records sessions with Geeshie Wiley, on which she sang lead on \"Motherless Child Blues\" and \"Over to My House\" and played guitar behind Wiley on \"Last Kind Words Blues\" and \"Skinny Leg Blues\". During the 1920s and 1930s she also performed around Texas with Alger \"Texas\" Alexander, and in later life she sang in her church choir in Houston.",
+    "activeFrom": "1908",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "geeshie-wiley",
+      "alger-texas-alexander"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Elvie_Thomas",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-28"
+  },
+  {
+    "id": "boo-hanks",
+    "name": "Boo Hanks",
+    "image": "https://media.gettyimages.com/id/164167426/photo/boo-hanks-at-damrosch-park-bandshell.jpg?s=1024x1024&w=gi&k=20&c=YftsU7malJbeYjQ460nKPfJpg6mCLDj-pZv7DjWAPag=",
+    "image_source": "media.gettyimages.com",
+    "birthDate": "1928-04-30",
+    "birthPlace": "Vance County, North Carolina",
+    "birthCoords": [
+      -78.4031,
+      36.3296
+    ],
+    "deathDate": "2016-04-15",
+    "deathPlace": "Durham, North Carolina",
+    "deathCoords": [
+      -78.8986,
+      35.994
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=xbe7q8G0GQc",
+    "albums": [
+      {
+        "name": "Pickin' Low Cotton (2007)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xbe7q8G0GQc"
+      },
+      {
+        "name": "Buffalo Junction (2012)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "James Arthur \"Boo\" Hanks (April 30, 1928 – April 15, 2016) was an American Piedmont blues guitarist and singer. He was billed as the last of the Piedmont blues musicians. Hanks recorded two albums in his lifetime, Pickin' Low Cotton (2007) and Buffalo Junction (2012), both released by the Music Maker record label.",
+    "activeFrom": "1940",
+    "influences": [],
+    "influencedBy": [
+      "blind-boy-fuller"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Boo_Hanks",
+    "secondaryInstruments": [
+      "Vocals"
     ],
     "createdAt": "2026-09-28"
   }
