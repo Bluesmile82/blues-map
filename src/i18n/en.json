@@ -61,6 +61,8 @@
     "musicians": "musicians",
     "shown": "shown",
     "showFavoritesOnly": "Show favorites only",
+    "showIncomplete": "Show incomplete profiles",
+    "onlyIncomplete": "Only incomplete profiles",
     "allLists": "All lists",
     "bluesStyle": "Blues Style",
     "clearFilter": "Clear filter",

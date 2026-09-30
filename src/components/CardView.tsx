@@ -7,6 +7,7 @@ import {
   Guitar, Piano, Mic, Drum, Music, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, Info, Dice5, Play, Pause, Search, Heart, ListPlus
 } from 'lucide-react';
 import type { Musician } from '../types';
+import { passesIncompleteFilter } from '../utils/musicianVisibility';
 import { getStyleHex, getStyleColor } from '../utils/colors';
 import MobileVideoPlayer from './MobileVideoPlayer';
 import MusicianPanel from './MusicianPanel';
@@ -101,12 +102,14 @@ interface CardViewProps {
   selectedId: string | null;
   styleFilter: string | null;
   onStyleFilterChange: (s: string | null) => void;
+  showIncomplete: boolean;
+  onlyIncomplete: boolean;
   theme: 'light' | 'dark';
   isMobile: boolean;
   autoplay: boolean;
 }
 
-export default function CardView({ musicians, onSelect, selectedId, theme, isMobile, autoplay = false }: CardViewProps) {
+export default function CardView({ musicians, onSelect, selectedId, showIncomplete, onlyIncomplete, theme, isMobile, autoplay = false }: CardViewProps) {
   const { t } = useTranslation();
   const [isFlipped, setIsFlipped] = useState(false);
   const [slideDir, setSlideDir] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
@@ -149,8 +152,11 @@ export default function CardView({ musicians, onSelect, selectedId, theme, isMob
   const [chain, setChain] = useState<{ sourceId: string; direction: Direction; pool: Musician[]; index: number } | null>(null);
 
   const completeMusicians = useMemo(
-    () => musicians.filter(m => m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.activeFrom),
-    [musicians],
+    () => musicians.filter(m =>
+      m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.activeFrom
+      && passesIncompleteFilter(m, { showIncomplete, onlyIncomplete })
+    ),
+    [musicians, showIncomplete, onlyIncomplete],
   );
 
   const musicianMap = useMemo(

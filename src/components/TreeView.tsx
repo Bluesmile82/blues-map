@@ -14,6 +14,7 @@ import {
   type TreeMusician,
 } from '../utils/treeLayout';
 import FiltersPanel from './FiltersPanel';
+import { passesIncompleteFilter } from '../utils/musicianVisibility';
 import SearchInput from './SearchInput';
 import { useAtomValue } from 'jotai';
 import { favoritesMapAtom } from '../atoms/lists';
@@ -83,6 +84,10 @@ type Props = {
   selectedId: string | null;
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
+  showIncomplete: boolean;
+  onShowIncompleteChange: (show: boolean) => void;
+  onlyIncomplete: boolean;
+  onOnlyIncompleteChange: (only: boolean) => void;
   forceZoomToId?: string | null;
   onZoomComplete?: () => void;
   onFilteredMusiciansChange?: (musicians: Musician[]) => void;
@@ -96,6 +101,10 @@ export default function TreeView({
   selectedId,
   styleFilter,
   onStyleFilterChange,
+  showIncomplete,
+  onShowIncompleteChange,
+  onlyIncomplete,
+  onOnlyIncompleteChange,
   forceZoomToId,
   onZoomComplete,
   onFilteredMusiciansChange,
@@ -282,6 +291,7 @@ export default function TreeView({
   }, [showFavoritesOnly, filterListId, favoritesMap]);
 
   const matches = useCallback((m: Musician) => {
+    if (!passesIncompleteFilter(m, { showIncomplete, onlyIncomplete })) return false;
     if (styleFilter && m.bluesStyle !== styleFilter) return false;
     if (instrumentFilter) {
       const played = [m.instrument, ...(m.secondaryInstruments ?? [])];
@@ -297,9 +307,9 @@ export default function TreeView({
     }
     if (favoritesChecker && !favoritesChecker(m.id)) return false;
     return true;
-  }, [styleFilter, instrumentFilter, text, yearRange, favoritesChecker]);
+  }, [styleFilter, instrumentFilter, text, yearRange, favoritesChecker, showIncomplete, onlyIncomplete]);
 
-  const filterActive = !!(styleFilter || instrumentFilter || text || yearRange || favoritesChecker);
+  const filterActive = !!(styleFilter || instrumentFilter || text || yearRange || favoritesChecker || onlyIncomplete);
   const isDimmed = useCallback((n: TreeMusician) => !matches(n.m), [matches]);
 
   const shown = useMemo(() => musicians.filter(matches), [musicians, matches]);
@@ -896,6 +906,10 @@ export default function TreeView({
             onFavoritesOnlyChange={setShowFavoritesOnly}
             filterListId={filterListId}
             onFilterListIdChange={setFilterListId}
+            showIncomplete={showIncomplete}
+            onShowIncompleteChange={onShowIncompleteChange}
+            onlyIncomplete={onlyIncomplete}
+            onOnlyIncompleteChange={onOnlyIncompleteChange}
             styleFilter={styleFilter}
             onStyleFilterChange={onStyleFilterChange}
             availableStyles={availableStyles}

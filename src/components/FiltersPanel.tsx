@@ -16,6 +16,10 @@ interface FiltersPanelProps {
   onFavoritesOnlyChange: (show: boolean) => void
   filterListId: string | null
   onFilterListIdChange: (listId: string | null) => void
+  showIncomplete: boolean
+  onShowIncompleteChange: (show: boolean) => void
+  onlyIncomplete: boolean
+  onOnlyIncompleteChange: (only: boolean) => void
   styleFilter: string | null
   onStyleFilterChange: (style: string | null) => void
   availableStyles: string[]
@@ -42,6 +46,10 @@ export default function FiltersPanel({
   onFavoritesOnlyChange,
   filterListId,
   onFilterListIdChange,
+  showIncomplete,
+  onShowIncompleteChange,
+  onlyIncomplete,
+  onOnlyIncompleteChange,
   styleFilter,
   onStyleFilterChange,
   availableStyles,
@@ -154,6 +162,27 @@ export default function FiltersPanel({
             )}
           </div>
         )}
+
+        {/* Incomplete-profile filter */}
+        <div className="bg-bg-elevated border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              checked={showIncomplete || onlyIncomplete}
+              disabled={onlyIncomplete}
+              onChange={(e) => onShowIncompleteChange(e.target.checked)}
+            />
+            <span className="text-label text-ink3">{t('filters.showIncomplete')}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              checked={onlyIncomplete}
+              onChange={(e) => onOnlyIncompleteChange(e.target.checked)}
+            />
+            <span className="text-label text-ink3">{t('filters.onlyIncomplete')}</span>
+          </div>
+        </div>
 
         {/* Blues style legend */}
         <div className="bg-bg-elevated border border-border-subtle rounded-lg">
