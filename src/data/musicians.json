@@ -54151,8 +54151,8 @@
   {
     "id": "lillian-glinn",
     "name": "Lillian Glinn",
-    "image": "",
-    "image_source": null,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhd-CKYw7b1CAK7EA1SXKmRQ_YzvKLCf-UuTkUmK0finIk2irqVn_afZOWAzm3CUkGEScD_uApZ3MWGiHgio8xRLydiFeclMl9wK_c5CoBS_qWsz2AnRRtkO429PEJotTocyGnd/s1600/Lillian-Glinn-Complete-Recorded-Works-In-Chronological-Order-1994-FLAC.jpg",
+    "image_source": "sentirelblues.com",
     "birthDate": "1902-05-10",
     "birthPlace": "Hillsboro, Texas",
     "birthCoords": [
@@ -54213,8 +54213,8 @@
   {
     "id": "ida-may-mack",
     "name": "Ida May Mack",
-    "image": "",
-    "image_source": null,
+    "image": "https://i.discogs.com/9fb_4EVBYXTuz-6Q3PwGm-O4iylJgCxgPckKCxRabhM/rs:fit/g:sm/q:90/h:500/w:304/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTg3MzEz/MC0xMjUxNjgwNjI5/LmpwZWc.jpeg",
+    "image_source": "discogs",
     "birthDate": "",
     "birthPlace": "",
     "birthCoords": [
@@ -54266,8 +54266,8 @@
   {
     "id": "will-ezell",
     "name": "Will Ezell",
-    "image": "",
-    "image_source": null,
+    "image": "https://i.ebayimg.com/images/g/9aoAAOSw~sNboHhs/s-l400.jpg",
+    "image_source": "ebay",
     "birthDate": "1892-12-23",
     "birthPlace": "Brenham, Texas",
     "birthCoords": [
@@ -54336,8 +54336,8 @@
   {
     "id": "black-boy-shine",
     "name": "Black Boy Shine",
-    "image": "",
-    "image_source": null,
+    "image": "https://m.media-amazon.com/images/I/61HBquEEf1L.jpg",
+    "image_source": "amazon.com",
     "birthDate": "1908-09-12",
     "birthPlace": "Fort Bend County, Texas",
     "birthCoords": [
@@ -54406,8 +54406,8 @@
   {
     "id": "blue-lu-barker",
     "name": "Blue Lu Barker",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/S_Louis_Cemetery_2_NOLA_Danny_Barker_Blue_Lu_Barker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_source": null,
+    "image": "https://delmark.com/wp-content/uploads/2018/06/DE684.jpg",
+    "image_source": "delmark.com",
     "birthDate": "1913-11-13",
     "birthPlace": "New Orleans",
     "birthCoords": [
@@ -54455,8 +54455,8 @@
   {
     "id": "reverend-a-w-nix",
     "name": "Reverend A. W. Nix",
-    "image": "",
-    "image_source": null,
+    "image": "https://images.findagrave.com/photos/2024/335/140935179_5926b910-8d44-4373-b559-553d59ebf498.png",
+    "image_source": "findagrave.com",
     "birthDate": "1880-11-30",
     "birthPlace": "Rusk County, Texas",
     "birthCoords": [
@@ -54513,8 +54513,8 @@
   {
     "id": "reverend-j-c-burnett",
     "name": "Reverend J. C. Burnett",
-    "image": "",
-    "image_source": null,
+    "image": "https://i.discogs.com/V5WfK1btI5J0Ts3mXbGbyGZ74cM3GFeiin6kr3WRnmU/rs:fit/g:sm/q:90/h:780/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM0MTkx/Ni0xNTkzNjI0NDUy/LTk2OTAuanBlZw.jpeg",
+    "image_source": "discogs",
     "birthDate": "",
     "birthPlace": "Mobile, Alabama",
     "birthCoords": [
@@ -54535,7 +54535,7 @@
     ],
     "instrument": "Vocals",
     "bluesStyle": "Gospel",
-    "youtubeLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=1zjirLjBYaU",
     "albums": [
       {
         "name": "Complete Recorded Works In Chronological Order, Volume 1: 1926-1927 (1997)",
@@ -54561,8 +54561,8 @@
   {
     "id": "scott-dunbar",
     "name": "Scott Dunbar",
-    "image": "",
-    "image_source": null,
+    "image": "https://www.wirz.de/music/dunbar/grafik/dunbar54.jpg",
+    "image_source": "www.wirz.de",
     "birthDate": "1904-06-06",
     "birthPlace": "Lake Mary, Wilkinson County, Mississippi",
     "birthCoords": [
@@ -54633,7 +54633,7 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "Country Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=qoJVSmTF9Nk",
+    "youtubeLink": "https://www.youtube.com/watch?v=vmj23UrVF80",
     "albums": [],
     "description": "Elvie Thomas (August 7, 1891 – May 20, 1979) was an American country blues guitarist and singer from Houston, Texas, remembered chiefly for her 1930 Paramount Records sessions with Geeshie Wiley, on which she sang lead on \"Motherless Child Blues\" and \"Over to My House\" and played guitar behind Wiley on \"Last Kind Words Blues\" and \"Skinny Leg Blues\". During the 1920s and 1930s she also performed around Texas with Alger \"Texas\" Alexander, and in later life she sang in her church choir in Houston.",
     "activeFrom": "1908",
@@ -54653,8 +54653,8 @@
   {
     "id": "boo-hanks",
     "name": "Boo Hanks",
-    "image": "",
-    "image_source": null,
+    "image": "https://media.gettyimages.com/id/164167426/photo/boo-hanks-at-damrosch-park-bandshell.jpg?s=1024x1024&w=gi&k=20&c=YftsU7malJbeYjQ460nKPfJpg6mCLDj-pZv7DjWAPag=",
+    "image_source": "media.gettyimages.com",
     "birthDate": "1928-04-30",
     "birthPlace": "Vance County, North Carolina",
     "birthCoords": [
