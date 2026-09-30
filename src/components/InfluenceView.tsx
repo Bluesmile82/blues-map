@@ -10,6 +10,7 @@ import type { PickingInfo } from '@deck.gl/core';
 import type { Musician } from '../types';
 import { getStyleColor, getStyleHex } from '../utils/colors';
 import { buildRelatedIndex } from '../utils/relations';
+import { passesIncompleteFilter } from '../utils/musicianVisibility';
 import SearchInput from './SearchInput';
 import BluesStyleLegend from './BluesStyleLegend';
 import GestureHint from './GestureHint';
@@ -68,6 +69,10 @@ export default function InfluenceView({
   selectedId,
   styleFilter,
   onStyleFilterChange,
+  showIncomplete,
+  onShowIncompleteChange,
+  onlyIncomplete,
+  onOnlyIncompleteChange,
   forceZoomToId,
   onZoomComplete,
   onFilteredMusiciansChange,
@@ -79,6 +84,10 @@ export default function InfluenceView({
   selectedId: string | null;
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
+  showIncomplete: boolean;
+  onShowIncompleteChange: (show: boolean) => void;
+  onlyIncomplete: boolean;
+  onOnlyIncompleteChange: (only: boolean) => void;
   forceZoomToId?: string | null;
   onZoomComplete?: () => void;
   onFilteredMusiciansChange?: (musicians: Musician[]) => void;
@@ -146,6 +155,7 @@ export default function InfluenceView({
   const completeMusicians = useMemo(() => {
     const valid = musicians.filter((m) =>
       m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.activeFrom
+      && passesIncompleteFilter(m, { showIncomplete, onlyIncomplete })
     );
     const styleFiltered = styleFilter ? valid.filter((m) => m.bluesStyle === styleFilter) : valid;
 
@@ -161,7 +171,7 @@ export default function InfluenceView({
       : yearFiltered;
 
     return favoritesFiltered;
-  }, [musicians, styleFilter, yearRange, showFavoritesOnly, favoritesChecker]);
+  }, [musicians, styleFilter, yearRange, showFavoritesOnly, favoritesChecker, showIncomplete, onlyIncomplete]);
 
   // Report filtered musicians to parent for random selection
   useEffect(() => {
@@ -1615,6 +1625,27 @@ export default function InfluenceView({
                     )}
                   </div>
                 )}
+
+                {/* Incomplete-profile filter */}
+                <div className="bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="checkbox"
+                      checked={showIncomplete || onlyIncomplete}
+                      disabled={onlyIncomplete}
+                      onChange={(e) => onShowIncompleteChange(e.target.checked)}
+                    />
+                    <span className="text-label text-ink3">{t('filters.showIncomplete')}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="checkbox"
+                      checked={onlyIncomplete}
+                      onChange={(e) => onOnlyIncompleteChange(e.target.checked)}
+                    />
+                    <span className="text-label text-ink3">{t('filters.onlyIncomplete')}</span>
+                  </div>
+                </div>
 
                 {/* Year range filter */}
                 <div className="bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-1.5">

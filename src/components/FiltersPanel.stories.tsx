@@ -28,6 +28,8 @@ function Controlled() {
   const [text, setText] = useState('')
   const [favOnly, setFavOnly] = useState(false)
   const [listId, setListId] = useState<string | null>(null)
+  const [showIncomplete, setShowIncomplete] = useState(false)
+  const [onlyIncomplete, setOnlyIncomplete] = useState(false)
   const [style, setStyle] = useState<string | null>(null)
   const [yearRange, setYearRange] = useState<[number, number] | null>(null)
 
@@ -41,6 +43,10 @@ function Controlled() {
       onFavoritesOnlyChange={setFavOnly}
       filterListId={listId}
       onFilterListIdChange={setListId}
+      showIncomplete={showIncomplete}
+      onShowIncompleteChange={setShowIncomplete}
+      onlyIncomplete={onlyIncomplete}
+      onOnlyIncompleteChange={setOnlyIncomplete}
       styleFilter={style}
       onStyleFilterChange={setStyle}
       availableStyles={availableStyles}
@@ -76,6 +82,10 @@ export const Collapsed: Story = {
         onFavoritesOnlyChange={() => {}}
         filterListId={null}
         onFilterListIdChange={() => {}}
+        showIncomplete={false}
+        onShowIncompleteChange={() => {}}
+        onlyIncomplete={false}
+        onOnlyIncompleteChange={() => {}}
         styleFilter={null}
         onStyleFilterChange={() => {}}
         availableStyles={availableStyles}

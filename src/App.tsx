@@ -90,6 +90,8 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
   // Tracks whose video is in the player — independent of the info panel (persists when panel closes)
   const [videoMusician, setVideoMusician] = useState<Musician | null>(initialMusician ?? null);
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
+  const [showIncomplete, setShowIncomplete] = useState(false);
+  const [onlyIncomplete, setOnlyIncomplete] = useState(false);
   const [showCredits, setShowCredits] = useState(false);
   const [showAnalytics, setShowAnalytics] = useState(window.location.pathname === '/admin');
   const [forceZoomToId, setForceZoomToId] = useState<string | null>(null);
@@ -289,13 +291,13 @@ const [selected, setSelected] = useState<Musician | null>(initialMusician);
         {!publicListSlug && (
           <>
             {view === 'influence' ? (
-              <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} forceZoomToId={forceZoomToId} onZoomComplete={() => setForceZoomToId(null)} onFilteredMusiciansChange={setFilteredMusicians} theme={theme} isMobile={isMobile} />
+              <InfluenceView key="influence" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} showIncomplete={showIncomplete} onShowIncompleteChange={setShowIncomplete} onlyIncomplete={onlyIncomplete} onOnlyIncompleteChange={setOnlyIncomplete} forceZoomToId={forceZoomToId} onZoomComplete={() => setForceZoomToId(null)} onFilteredMusiciansChange={setFilteredMusicians} theme={theme} isMobile={isMobile} />
             ) : view === 'tree' ? (
-              <TreeView key="tree" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} forceZoomToId={forceZoomToId} onZoomComplete={() => setForceZoomToId(null)} onFilteredMusiciansChange={setFilteredMusicians} theme={theme} isMobile={isMobile} />
+              <TreeView key="tree" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} showIncomplete={showIncomplete} onShowIncompleteChange={setShowIncomplete} onlyIncomplete={onlyIncomplete} onOnlyIncompleteChange={setOnlyIncomplete} forceZoomToId={forceZoomToId} onZoomComplete={() => setForceZoomToId(null)} onFilteredMusiciansChange={setFilteredMusicians} theme={theme} isMobile={isMobile} />
             ) : view === 'map' ? (
-              <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} theme={theme} isMobile={isMobile} />
+              <MapView key="map" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} showIncomplete={showIncomplete} onShowIncompleteChange={setShowIncomplete} onlyIncomplete={onlyIncomplete} onOnlyIncompleteChange={setOnlyIncomplete} theme={theme} isMobile={isMobile} />
             ) : (
-              <CardView key="card" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} theme={theme} isMobile={isMobile} autoplay={autoplay} />
+              <CardView key="card" musicians={musicians} onSelect={handleSelect} selectedId={selected?.id ?? null} styleFilter={styleFilter} onStyleFilterChange={setStyleFilter} showIncomplete={showIncomplete} onlyIncomplete={onlyIncomplete} theme={theme} isMobile={isMobile} autoplay={autoplay} />
             )}
           </>
         )}

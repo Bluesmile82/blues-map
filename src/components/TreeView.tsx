@@ -14,6 +14,7 @@ import {
   type TreeMusician,
 } from '../utils/treeLayout';
 import FiltersPanel from './FiltersPanel';
+import { passesIncompleteFilter } from '../utils/musicianVisibility';
 import SearchInput from './SearchInput';
 import { useAtomValue } from 'jotai';
 import { favoritesMapAtom } from '../atoms/lists';
@@ -83,6 +84,10 @@ type Props = {
   selectedId: string | null;
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
+  showIncomplete: boolean;
+  onShowIncompleteChange: (show: boolean) => void;
+  onlyIncomplete: boolean;
+  onOnlyIncompleteChange: (only: boolean) => void;
   forceZoomToId?: string | null;
   onZoomComplete?: () => void;
   onFilteredMusiciansChange?: (musicians: Musician[]) => void;
@@ -96,6 +101,10 @@ export default function TreeView({
   selectedId,
   styleFilter,
   onStyleFilterChange,
+  showIncomplete,
+  onShowIncompleteChange,
+  onlyIncomplete,
+  onOnlyIncompleteChange,
   forceZoomToId,
   onZoomComplete,
   onFilteredMusiciansChange,
@@ -131,7 +140,14 @@ export default function TreeView({
 
   const favoritesMap = useAtomValue(favoritesMapAtom);
 
-  const tree = useMemo(() => computeBluesTree(musicians), [musicians]);
+  // Incomplete profiles are excluded from the tree outright, not just dimmed —
+  // the checkboxes below are the only way back in, mirroring the other views.
+  const visibleMusicians = useMemo(
+    () => musicians.filter((m) => passesIncompleteFilter(m, { showIncomplete, onlyIncomplete })),
+    [musicians, showIncomplete, onlyIncomplete],
+  );
+
+  const tree = useMemo(() => computeBluesTree(visibleMusicians), [visibleMusicians]);
   const yearToY = tree.yearToY;
   const ink = INK[theme];
 
@@ -250,13 +266,13 @@ export default function TreeView({
   const searchHits = useMemo(() => {
     const q = search.trim().toLowerCase();
     if (!q) return [];
-    return musicians
+    return visibleMusicians
       .filter((m) => m.name.toLowerCase().includes(q))
       .sort((a, b) =>
         a.name.toLowerCase().indexOf(q) - b.name.toLowerCase().indexOf(q) ||
         a.name.localeCompare(b.name))
       .slice(0, 8);
-  }, [search, musicians]);
+  }, [search, visibleMusicians]);
 
   const jumpTo = useCallback((m: Musician) => {
     const node = tree.byId.get(m.id);
@@ -299,26 +315,26 @@ export default function TreeView({
     return true;
   }, [styleFilter, instrumentFilter, text, yearRange, favoritesChecker]);
 
-  const filterActive = !!(styleFilter || instrumentFilter || text || yearRange || favoritesChecker);
+  const filterActive = !!(styleFilter || instrumentFilter || text || yearRange || favoritesChecker || onlyIncomplete);
   const isDimmed = useCallback((n: TreeMusician) => !matches(n.m), [matches]);
 
-  const shown = useMemo(() => musicians.filter(matches), [musicians, matches]);
+  const shown = useMemo(() => visibleMusicians.filter(matches), [visibleMusicians, matches]);
   useEffect(() => { onFilteredMusiciansChange?.(shown); }, [shown, onFilteredMusiciansChange]);
 
   const availableStyles = useMemo(
-    () => [...new Set(musicians.map((m) => m.bluesStyle))],
-    [musicians]
+    () => [...new Set(visibleMusicians.map((m) => m.bluesStyle))],
+    [visibleMusicians]
   );
   const availableInstruments = useMemo(
-    () => [...new Set(musicians.flatMap((m) => [m.instrument, ...(m.secondaryInstruments ?? [])]))].filter(Boolean),
-    [musicians]
+    () => [...new Set(visibleMusicians.flatMap((m) => [m.instrument, ...(m.secondaryInstruments ?? [])]))].filter(Boolean),
+    [visibleMusicians]
   );
   const { minYear, maxYear } = useMemo(() => {
-    const years = musicians.map(activeYear);
+    const years = visibleMusicians.map(activeYear);
     return years.length
       ? { minYear: Math.min(...years), maxYear: Math.max(...years) }
       : { minYear: 1890, maxYear: 2021 };
-  }, [musicians]);
+  }, [visibleMusicians]);
 
   // --- static tree geometry: never re-renders on zoom or hover
   const woodwork = useMemo(() => (
@@ -543,12 +559,12 @@ export default function TreeView({
       const d = desc.get(from);
       if (d) d.add(to); else desc.set(from, new Set([to]));
     };
-    musicians.forEach((m) => {
+    visibleMusicians.forEach((m) => {
       (m.influencedBy ?? []).forEach((id) => link(id, m.id));
       (m.influences ?? []).forEach((id) => link(m.id, id));
     });
     return { anc, desc };
-  }, [musicians]);
+  }, [visibleMusicians]);
 
   // --- connections of the focused musician
   const focus = hovered ?? (selectedId ? tree.byId.get(selectedId) ?? null : null);
@@ -896,6 +912,10 @@ export default function TreeView({
             onFavoritesOnlyChange={setShowFavoritesOnly}
             filterListId={filterListId}
             onFilterListIdChange={setFilterListId}
+            showIncomplete={showIncomplete}
+            onShowIncompleteChange={onShowIncompleteChange}
+            onlyIncomplete={onlyIncomplete}
+            onOnlyIncompleteChange={onOnlyIncompleteChange}
             styleFilter={styleFilter}
             onStyleFilterChange={onStyleFilterChange}
             availableStyles={availableStyles}

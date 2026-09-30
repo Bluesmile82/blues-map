@@ -18,6 +18,7 @@ import { useMapClusters } from '../hooks/useMapClusters';
 import type { ClusterGroup, ClusterPoint, SpiderLeg } from '../hooks/useMapClusters';
 import { useTranslation } from 'react-i18next';
 import { ChevronUp, ChevronDown } from 'lucide-react';
+import { passesIncompleteFilter } from '../utils/musicianVisibility';
 
 const MAP_STYLES = {
   light: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
@@ -61,6 +62,10 @@ interface MapViewProps {
   selectedId: string | null;
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
+  showIncomplete: boolean;
+  onShowIncompleteChange: (show: boolean) => void;
+  onlyIncomplete: boolean;
+  onOnlyIncompleteChange: (only: boolean) => void;
   theme: 'light' | 'dark';
   isMobile: boolean;
 }
@@ -73,6 +78,10 @@ function MusicianSidebar({
   hoveredId,
   styleFilter,
   onStyleFilterChange,
+  showIncomplete,
+  onShowIncompleteChange,
+  onlyIncomplete,
+  onOnlyIncompleteChange,
   isMobile,
 }: {
   musicians: Musician[];
@@ -82,6 +91,10 @@ function MusicianSidebar({
   hoveredId: string | null;
   styleFilter: string | null;
   onStyleFilterChange: (style: string | null) => void;
+  showIncomplete: boolean;
+  onShowIncompleteChange: (show: boolean) => void;
+  onlyIncomplete: boolean;
+  onOnlyIncompleteChange: (only: boolean) => void;
   isMobile?: boolean;
 }) {
   const { t } = useTranslation();
@@ -202,6 +215,33 @@ function MusicianSidebar({
             </div>
           )}
 
+          {/* Incomplete-profile filter */}
+          <div className="mb-3 bg-bg/50 border border-border-subtle rounded-lg px-3 py-2 flex flex-col gap-2">
+            <div className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                id="map-incomplete-filter"
+                checked={showIncomplete || onlyIncomplete}
+                disabled={onlyIncomplete}
+                onChange={(e) => onShowIncompleteChange(e.target.checked)}
+              />
+              <label htmlFor="map-incomplete-filter" className="text-label text-ink3 cursor-pointer">
+                {t('filters.showIncomplete')}
+              </label>
+            </div>
+            <div className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                id="map-only-incomplete-filter"
+                checked={onlyIncomplete}
+                onChange={(e) => onOnlyIncompleteChange(e.target.checked)}
+              />
+              <label htmlFor="map-only-incomplete-filter" className="text-label text-ink3 cursor-pointer">
+                {t('filters.onlyIncomplete')}
+              </label>
+            </div>
+          </div>
+
           {/* Blues Style Legend - collapsible */}
           <div className="mb-3 bg-bg/50 border border-border-subtle rounded-lg px-3 py-2">
             <BluesStyleLegend
@@ -320,14 +360,15 @@ function MusicianSidebar({
   );
 }
 
-export default function MapView({ musicians, onSelect, selectedId, styleFilter, onStyleFilterChange, theme, isMobile }: MapViewProps) {
+export default function MapView({ musicians, onSelect, selectedId, styleFilter, onStyleFilterChange, showIncomplete, onShowIncompleteChange, onlyIncomplete, onOnlyIncompleteChange, theme, isMobile }: MapViewProps) {
   const { t } = useTranslation();
   const completeMusicians = useMemo(() => {
     const valid = musicians.filter((m) =>
       m.name && m.bluesStyle && m.instrument && m.description && m.birthPlace && m.activeFrom
+      && passesIncompleteFilter(m, { showIncomplete, onlyIncomplete })
     );
     return styleFilter ? valid.filter((m) => m.bluesStyle === styleFilter) : valid;
-  }, [musicians, styleFilter]);
+  }, [musicians, styleFilter, showIncomplete, onlyIncomplete]);
 
   const [hovered, setHovered] = useState<string | null>(null);
   const [listHovered, setListHovered] = useState<string | null>(null);
@@ -830,6 +871,10 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
             hoveredId={listHovered}
             styleFilter={styleFilter}
             onStyleFilterChange={onStyleFilterChange}
+            showIncomplete={showIncomplete}
+            onShowIncompleteChange={onShowIncompleteChange}
+            onlyIncomplete={onlyIncomplete}
+            onOnlyIncompleteChange={onOnlyIncompleteChange}
             isMobile
           />
         </div>
@@ -846,6 +891,10 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
             hoveredId={listHovered}
             styleFilter={styleFilter}
             onStyleFilterChange={onStyleFilterChange}
+            showIncomplete={showIncomplete}
+            onShowIncompleteChange={onShowIncompleteChange}
+            onlyIncomplete={onlyIncomplete}
+            onOnlyIncompleteChange={onOnlyIncompleteChange}
           />
         </div>
       )}
