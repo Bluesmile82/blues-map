@@ -52681,7 +52681,8 @@
     "activeFrom": "1926",
     "influences": [
       "reverend-a-w-nix",
-      "reverend-j-c-burnett"
+      "reverend-j-c-burnett",
+      "d-c-rice"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -55234,5 +55235,44 @@
       "Vocals"
     ],
     "createdAt": "2026-09-29"
+  },
+  {
+    "id": "d-c-rice",
+    "name": "D. C. Rice",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1888",
+    "birthPlace": "Barbour County, Alabama",
+    "birthCoords": [
+      -85.396111111111,
+      31.865833333333
+    ],
+    "deathDate": "1973-03-01",
+    "deathPlace": "Montgomery, Alabama",
+    "deathCoords": [
+      -86.3,
+      32.3668
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=unXQzokLDRY",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, 1928-1930 (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=X6p_cQy0tFw"
+      }
+    ],
+    "description": "Reverend D. C. Rice was a Chicago-based Pentecostal preacher whose 1928-1930 Vocalion recordings fused sermon and song in the chanted, blues-inflected style pioneered by contemporaries like Reverend J. M. Gates. Backed by his singing congregation on calls like \"He Is My Story\" and \"I'm in the Battlefield for My Lord\", Rice was among the most prolific recording preachers of the pre-war era, helping popularize the fervent sermon-and-response format that fed directly into later gospel blues and soul-gospel recordings.",
+    "activeFrom": "1928",
+    "influences": [],
+    "influencedBy": [
+      "reverend-j-m-gates"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/D.C._Rice",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-30"
   }
 ]
