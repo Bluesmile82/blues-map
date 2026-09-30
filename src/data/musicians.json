@@ -54336,8 +54336,8 @@
   {
     "id": "elder-utah-smith",
     "name": "Elder Utah Smith",
-    "image": "",
-    "image_source": null,
+    "image": "https://carnegie-hall.imgix.net/acb0887d-c648-4c10-831c-782985e30cca/Rev_Utah_Smith.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C331%2C500",
+    "image_source": "/carnegie-hall.imgix.net",
     "birthDate": "1906",
     "birthPlace": "Shreveport, Louisiana",
     "birthCoords": [
@@ -54353,7 +54353,7 @@
     "spentTimePlaces": [],
     "instrument": "Guitar",
     "bluesStyle": "Gospel",
-    "youtubeLink": "https://www.youtube.com/watch?v=VtiJmGFmlsM",
+    "youtubeLink": "https://www.youtube.com/watch?v=WIlR2CCeJ4s",
     "albums": [
       {
         "name": "I Got Two Wings: Incidents and Anecdotes of the Two-Winged Preacher and Electric Guitar Evangelist",
@@ -54496,7 +54496,7 @@
     "id": "al-carnival-time-johnson",
     "name": "Al \"Carnival Time\" Johnson",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/AlJohnsonWikipedia.jpg?width=500",
-    "image_source": null,
+    "image_source": "Wikimedia Commons",
     "birthDate": "1939-06-20",
     "birthPlace": "Lower Ninth Ward",
     "birthCoords": [
@@ -54528,7 +54528,7 @@
     "albums": [
       {
         "name": "Carnival Time (single)",
-        "youtubeLink": "https://www.youtube.com/watch?v=QNPRg0nxnpk"
+        "youtubeLink": "https://www.youtube.com/watch?v=axNmY5nnmjA"
       }
     ],
     "description": "Al \"Carnival Time\" Johnson (born June 20, 1939, in New Orleans, Louisiana) is an American singer and piano player best known for the Mardi Gras song  \"Carnival Time\".",
@@ -54548,8 +54548,8 @@
   {
     "id": "jimmy-nolen",
     "name": "Jimmy Nolen",
-    "image": "",
-    "image_source": null,
+    "image": "https://i.discogs.com/aMnnvbc2c3KJYWt_3hEe5_kGZMG-EJTQkh6WgHMBP0A/rs:fit/g:sm/q:90/h:315/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5MTQ2/MC0xNTM1MTk1NTc4/LTU3NDguanBlZw.jpeg",
+    "image_source": "discogs",
     "birthDate": "1934-04-03",
     "birthPlace": "Oklahoma City",
     "birthCoords": [
@@ -54580,7 +54580,7 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "West Coast Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=M4La3_Gdhl8",
+    "youtubeLink": "https://www.youtube.com/watch?v=gzyfc566UOQ",
     "albums": [
       {
         "name": "Scratchin' (Federal Records Anthology)",
@@ -54603,8 +54603,8 @@
   {
     "id": "crown-prince-waterford",
     "name": "Crown Prince Waterford",
-    "image": "",
-    "image_source": null,
+    "image": "https://jimmckaba.com/wp-content/uploads/Crown-Prince-Waterford.png",
+    "image_source": "jimmckaba.com",
     "birthDate": "1916-10-26",
     "birthPlace": "Jonesboro",
     "birthCoords": [
@@ -54669,8 +54669,8 @@
   {
     "id": "big-john-greer",
     "name": "Big John Greer",
-    "image": "",
-    "image_source": null,
+    "image": "https://alchetron.com/cdn/big-john-greer-eaeb1e1b-95b1-4b91-9516-b7c088a3c6f-resize-750.jpeg",
+    "image_source": "alchetron.com",
     "birthDate": "1923-11-21",
     "birthPlace": "Hot Springs",
     "birthCoords": [
