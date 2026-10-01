@@ -55306,8 +55306,8 @@
   {
     "id": "priscilla-bowman",
     "name": "Priscilla Bowman",
-    "image": "",
-    "image_source": null,
+    "image": "https://www.uncamarvy.com/PriscillaBowman/bowman56.jpg",
+    "image_source": "www.uncamarvy.com",
     "birthDate": "1928-05-30",
     "birthPlace": "Kansas City, Kansas",
     "birthCoords": [
@@ -55323,7 +55323,7 @@
     "spentTimePlaces": [],
     "instrument": "Vocals",
     "bluesStyle": "Kansas City Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=UVM43FjdK-A",
+    "youtubeLink": "https://www.youtube.com/watch?v=O-egFLtRi5g",
     "albums": [
       {
         "name": "A Rockin' Good Way (2018)",
@@ -55347,8 +55347,8 @@
   {
     "id": "tommy-bankhead",
     "name": "Tommy Bankhead",
-    "image": "",
-    "image_source": null,
+    "image": "https://stlbluestalent.net/wp-content/uploads/2024/12/TommyBankhead1_fs.jpg",
+    "image_source": "https://stlbluestalent.net",
     "birthDate": "1931-10-24",
     "birthPlace": "Lake Cormorant, Mississippi",
     "birthCoords": [
@@ -55422,11 +55422,11 @@
     ],
     "instrument": "Guitar",
     "bluesStyle": "St. Louis Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=QFKKbR3TTUE",
+    "youtubeLink": "https://www.youtube.com/watch?v=0T9jPeDPrzg",
     "albums": [
       {
         "name": "The Urban Soul of Bennie Smith (1993)",
-        "youtubeLink": ""
+        "youtubeLink": "https://www.youtube.com/watch?v=bvjn3_adtUY"
       }
     ],
     "description": "Bennie Smith (October 5, 1933 – September 10, 2006) was an American St. Louis blues guitarist considered one of the city's patriarchs of electric blues, active as a performer, session musician, and mentor for over fifty years. He played guitar on Tina Turner's first recording, \"Boxtop,\" in 1958, and the St. Louis Board of Aldermen later honored him as the \"Dean of St. Louis Electric Guitarists.\"",
@@ -55449,8 +55449,8 @@
   {
     "id": "wesley-wallace",
     "name": "Wesley Wallace",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/1892_IC.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_source": null,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3Pw4UA4uFeuc9TtMnfXoPKhWmsT2GplUf6GqVattlW5pCezUirxNHnVQsOjPt0alyuE00d3yxEzjcCT3hngKh_-9FvOlNA0L0IF3K2mRyHzYufznXCD-5JAxuchoD_KA-227l/s1600/WESLEY.jpg",
+    "image_source": "sentirelblues.com"x,
     "birthDate": "",
     "birthPlace": "",
     "birthCoords": [
@@ -55493,8 +55493,8 @@
   {
     "id": "deacon-john",
     "name": "Deacon John",
-    "image": "",
-    "image_source": null,
+    "image": "https://i.discogs.com/JzUsAKpUIwn0KgkqcfpkqGzRcwLtjLWFTMypXvdH23k/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2ODg0/MTY5LTE2ODI0Njcw/NjktNTA0MC5qcGVn.jpeg",
+    "image_source": "discogs",
     "birthDate": "1941-06-23",
     "birthPlace": "New Orleans, Louisiana",
     "birthCoords": [
@@ -55566,7 +55566,7 @@
     ],
     "instrument": "Vocals",
     "bluesStyle": "New Orleans Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=BbdPF6kdkow",
+    "youtubeLink": "https://www.youtube.com/watch?v=enRmXCSxGx0",
     "albums": [
       {
         "name": "Y'All Ready Now? ... Plus (1991)",
@@ -55613,7 +55613,7 @@
     ],
     "instrument": "Vocals",
     "bluesStyle": "New Orleans Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=nvtfZSMOVKg",
+    "youtubeLink": "https://www.youtube.com/watch?v=m7AsVIuZNrA",
     "albums": [
       {
         "name": "The Jimmy Castor Bunch / The Casuals / Chris Kenner / The Manhattans (La grande storia del rock) (1982)",
@@ -55655,8 +55655,8 @@
   {
     "id": "huey-piano-smith",
     "name": "Huey \"Piano\" Smith",
-    "image": "",
-    "image_source": null,
+    "image": "https://www.rollingstone.com/wp-content/uploads/2023/02/huey-piano-smith.jpg?w=1581&h=1054&crop=1",
+    "image_source": "rollingstone.com",
     "birthDate": "1934-01-26",
     "birthPlace": "New Orleans",
     "birthCoords": [
@@ -55688,7 +55688,7 @@
       },
       {
         "name": "This Is… Huey ‘Piano’ Smith (1998)",
-        "youtubeLink": "https://www.youtube.com/watch?v=-Y9VJssr0-E"
+        "youtubeLink": "https://www.youtube.com/watch?v=UixlPnv6vHU"
       },
       {
         "name": "That’ll Get It (Even More of the Best) (1999)",
