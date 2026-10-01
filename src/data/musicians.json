@@ -223,7 +223,8 @@
     "description": "Albert Ammons was one of the three great boogie-woogie pianists of the late 1930s alongside Meade Lux Lewis and Pete Johnson. His powerful left-hand bass patterns and energetic style helped bring boogie-woogie from Chicago clubs to Carnegie Hall and international audiences.",
     "activeFrom": "1936",
     "influences": [
-      "cecil-gant"
+      "cecil-gant",
+      "huey-piano-smith"
     ],
     "influencedBy": [
       "pinetop-smith",
@@ -787,7 +788,10 @@
       "tuts-washington"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "deacon-john",
+      "chris-kenner"
+    ],
     "source": "https://en.wikipedia.org/wiki/Allen_Toussaint",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -1986,7 +1990,8 @@
       "rosco-gordon",
       "willie-nix",
       "johnny-ace",
-      "mel-brown"
+      "mel-brown",
+      "bennie-smith"
     ],
     "source": "https://en.wikipedia.org/wiki/B._B._King",
     "secondaryInstruments": [
@@ -6616,7 +6621,8 @@
     "activeFrom": "1947",
     "influences": [
       "pete-mayes",
-      "joe-guitar-hughes"
+      "joe-guitar-hughes",
+      "bennie-smith"
     ],
     "influencedBy": [
       "louis-jordan",
@@ -8059,7 +8065,9 @@
     "playedWith": [
       "muddy-waters",
       "the-band",
-      "barbara-lynn"
+      "barbara-lynn",
+      "deacon-john",
+      "jessie-hill"
     ],
     "source": "https://en.wikipedia.org/wiki/Dr._John",
     "secondaryInstruments": [
@@ -8600,7 +8608,8 @@
       "snooks-eaglin",
       "ronnie-earl",
       "roomful-of-blues",
-      "eddie-bo"
+      "eddie-bo",
+      "huey-piano-smith"
     ],
     "source": "https://en.wikipedia.org/wiki/Earl_King",
     "secondaryInstruments": [
@@ -9479,7 +9488,8 @@
       "willie-dixon",
       "tampa-red",
       "willie-nix",
-      "wayne-bennett"
+      "wayne-bennett",
+      "tommy-bankhead"
     ],
     "source": "https://en.wikipedia.org/wiki/Elmore_James",
     "secondaryInstruments": [
@@ -10192,7 +10202,8 @@
     "description": "Fats Domino (Antoine Domino Jr.) was an American pianist and singer-songwriter who pioneered rock and roll and R&B. One of the most popular artists of the 1950s and early 1960s, his relaxed boogie-woogie piano style and warm vocals helped define the New Orleans sound. His hits 'Ain't That a Shame' and 'Blueberry Hill' were crossover successes that sold millions. He sold more than 65 million records and had 35 Top 40 hits, making him one of the best-selling artists of his era.",
     "activeFrom": "1949",
     "influences": [
-      "al-carnival-time-johnson"
+      "al-carnival-time-johnson",
+      "huey-piano-smith"
     ],
     "influencedBy": [
       "professor-longhair",
@@ -12112,7 +12123,8 @@
       "clarence-gatemouth-brown",
       "muddy-waters",
       "ray-charles",
-      "eddie-bo"
+      "eddie-bo",
+      "huey-piano-smith"
     ],
     "source": "https://en.wikipedia.org/wiki/Guitar_Slim",
     "secondaryInstruments": [
@@ -12613,7 +12625,8 @@
       "robert-johnson",
       "willie-brown",
       "son-house",
-      "jd-short"
+      "jd-short",
+      "tommy-bankhead"
     ],
     "source": "https://en.wikipedia.org/wiki/Henry_Townsend_(musician)",
     "secondaryInstruments": [
@@ -12975,7 +12988,8 @@
       "luther-allison",
       "albert-king",
       "detroit-junior",
-      "pat-hare"
+      "pat-hare",
+      "tommy-bankhead"
     ],
     "source": "https://en.wikipedia.org/wiki/Howlin'_Wolf",
     "secondaryInstruments": [
@@ -13052,7 +13066,8 @@
     "playedWith": [
       "howlin-wolf",
       "muddy-waters",
-      "jack-owens"
+      "jack-owens",
+      "bennie-smith"
     ],
     "source": "https://en.wikipedia.org/wiki/Hubert_Sumlin",
     "secondaryInstruments": [
@@ -13274,7 +13289,8 @@
       "lightnin-hopkins",
       "etta-james",
       "barbara-lynn",
-      "willie-nix"
+      "willie-nix",
+      "bennie-smith"
     ],
     "source": "https://en.wikipedia.org/wiki/Ike_Turner",
     "secondaryInstruments": [
@@ -13314,7 +13330,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "tommy-ridgley"
+      "tommy-ridgley",
+      "deacon-john"
     ],
     "source": "https://en.wikipedia.org/wiki/Irma_Thomas",
     "secondaryInstruments": [],
@@ -13940,7 +13957,8 @@
       "jimmy-witherspoon",
       "eddie-cleanhead-vinson",
       "julia-lee",
-      "crown-prince-waterford"
+      "crown-prince-waterford",
+      "priscilla-bowman"
     ],
     "source": "https://en.wikipedia.org/wiki/Jay_McShann",
     "secondaryInstruments": [
@@ -15839,7 +15857,8 @@
       "robert-nighthawk",
       "roosevelt-sykes",
       "sonny-boy-williamson",
-      "willie-nix"
+      "willie-nix",
+      "tommy-bankhead"
     ],
     "source": "https://en.wikipedia.org/wiki/Joe_Willie_Wilkins",
     "secondaryInstruments": [
@@ -23370,7 +23389,9 @@
     ],
     "description": "Matthew Tyler Murphy (December 29, 1929 – June 15, 2018), known as Matt \"Guitar\" Murphy, was an American blues guitarist and singer-songwriter.  He was associated with Memphis Slim, The Blues Brothers and Howlin' Wolf.  In 2012, Murphy was elected to the Blues Hall of Fame.",
     "activeFrom": "1948",
-    "influences": [],
+    "influences": [
+      "bennie-smith"
+    ],
     "influencedBy": [
       "howlin-wolf"
     ],
@@ -23563,7 +23584,8 @@
     "activeFrom": "1927",
     "influences": [
       "big-maceo-merriweather",
-      "cecil-gant"
+      "cecil-gant",
+      "huey-piano-smith"
     ],
     "influencedBy": [
       "hersal-thomas",
@@ -26866,7 +26888,8 @@
     "description": "Professor Longhair, born Henry Roeland Byrd, was the founding father of New Orleans blues piano. His singular style fused boogie woogie, Cuban rumba rhythms, and barrelhouse blues into something entirely his own. 'Tipitina,' his signature song, gave its name to one of New Orleans' most beloved music venues. He was the direct inspiration for Dr. John, Allen Toussaint, and virtually every New Orleans pianist that followed.",
     "activeFrom": "1948",
     "influences": [
-      "walter-wolfman-washington"
+      "walter-wolfman-washington",
+      "huey-piano-smith"
     ],
     "influencedBy": [
       "tuts-washington"
@@ -28085,7 +28108,8 @@
       "joe-willie-wilkins",
       "tampa-red",
       "cedell-davis",
-      "little-mack-simmons"
+      "little-mack-simmons",
+      "tommy-bankhead"
     ],
     "source": "https://en.wikipedia.org/wiki/Robert_Nighthawk",
     "secondaryInstruments": [
@@ -31069,7 +31093,8 @@
     "incomplete": false,
     "playedWith": [
       "sleepy-john-estes",
-      "big-joe-williams"
+      "big-joe-williams",
+      "tommy-bankhead"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_I",
     "secondaryInstruments": [],
@@ -42650,7 +42675,8 @@
     "description": "Ruth Alston Brown (née Weston; January 12, 1928 – November 17, 2006) was an American singer-songwriter and actress, sometimes referred to as the \"Queen of R&B\".  She was noted for bringing a pop music style to R&B music in a series of hit songs for Atlantic Records in the 1950s, such as \"So Long\", \"Teardrops from My Eyes\" and \"(Mama) He Treats Your Daughter Mean\".  For these contributions, Atlantic became known as \"the house that Ruth built\" (alluding to the popular nickname for the old Yankee Stadium).",
     "activeFrom": "1949",
     "influences": [
-      "candye-kane"
+      "candye-kane",
+      "priscilla-bowman"
     ],
     "influencedBy": [
       "billie-holiday"
@@ -44310,7 +44336,8 @@
     "activeFrom": "1922",
     "influences": [
       "ike-turner",
-      "cecil-gant"
+      "cecil-gant",
+      "huey-piano-smith"
     ],
     "influencedBy": [
       "pinetop-smith"
@@ -50895,7 +50922,8 @@
     "playedWith": [
       "big-walter-horton",
       "mose-vinson",
-      "memphis-willie-b"
+      "memphis-willie-b",
+      "tommy-bankhead"
     ],
     "source": "https://en.wikipedia.org/wiki/Joe_Hill_Louis",
     "secondaryInstruments": [
@@ -55272,6 +55300,429 @@
     "incomplete": false,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/D.C._Rice",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-30"
+  },
+  {
+    "id": "priscilla-bowman",
+    "name": "Priscilla Bowman",
+    "image": "https://www.uncamarvy.com/PriscillaBowman/bowman56.jpg",
+    "image_source": "www.uncamarvy.com",
+    "birthDate": "1928-05-30",
+    "birthPlace": "Kansas City, Kansas",
+    "birthCoords": [
+      -94.583333333333,
+      39.05
+    ],
+    "deathDate": "1988-07-24",
+    "deathPlace": "Kansas City",
+    "deathCoords": [
+      -94.583333333333,
+      39.05
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Kansas City Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=O-egFLtRi5g",
+    "albums": [
+      {
+        "name": "A Rockin' Good Way (2018)",
+        "youtubeLink": "https://www.youtube.com/watch?v=weQ_bVdSL7U"
+      }
+    ],
+    "description": "Priscilla Bowman (born Priscilla I. Mills, May 30, 1928 – July 24, 1988) was an American jazz and rhythm and blues singer, who had a No. 1 hit single on the Billboard magazine R&B chart in 1955 with the song \"Hands Off\".",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [
+      "ruth-brown"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "jay-mcshann"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Priscilla_Bowman",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-30"
+  },
+  {
+    "id": "tommy-bankhead",
+    "name": "Tommy Bankhead",
+    "image": "https://stlbluestalent.net/wp-content/uploads/2024/12/TommyBankhead1_fs.jpg",
+    "image_source": "https://stlbluestalent.net",
+    "birthDate": "1931-10-24",
+    "birthPlace": "Lake Cormorant, Mississippi",
+    "birthCoords": [
+      -90.2144,
+      34.9042
+    ],
+    "deathDate": "2000-12-16",
+    "deathPlace": "St. Louis",
+    "deathCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=y--TlNwMqu4",
+    "albums": [
+      {
+        "name": "Bankhead (1983)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Tommy Bankhead (October 24, 1931 – December 16, 2000) was an American Delta blues guitarist and singer who played with Howlin' Wolf, Sonny Boy Williamson I, Elmore James (his cousin), Joe Willie Wilkins, Robert Nighthawk, and Joe Hill Louis. He sometimes played the bass guitar and harmonica. He released a few albums under his own name.",
+    "activeFrom": "1951",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "howlin-wolf",
+      "sonny-boy-williamson-i",
+      "elmore-james",
+      "joe-willie-wilkins",
+      "robert-nighthawk",
+      "joe-hill-louis",
+      "henry-townsend"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Tommy_Bankhead",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-30"
+  },
+  {
+    "id": "bennie-smith",
+    "name": "Bennie Smith",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bennie%20Smith%20St%20Louis%20circa%202004.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1933-10-05",
+    "birthPlace": "St. Louis, Missouri",
+    "birthCoords": [
+      -90.1994,
+      38.627
+    ],
+    "deathDate": "2006-09-10",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=0T9jPeDPrzg",
+    "albums": [
+      {
+        "name": "The Urban Soul of Bennie Smith (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=bvjn3_adtUY"
+      }
+    ],
+    "description": "Bennie Smith (October 5, 1933 – September 10, 2006) was an American St. Louis blues guitarist considered one of the city's patriarchs of electric blues, active as a performer, session musician, and mentor for over fifty years. He played guitar on Tina Turner's first recording, \"Boxtop,\" in 1958, and the St. Louis Board of Aldermen later honored him as the \"Dean of St. Louis Electric Guitarists.\"",
+    "activeFrom": "1953",
+    "influences": [],
+    "influencedBy": [
+      "clarence-gatemouth-brown",
+      "matt-guitar-murphy"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "bb-king",
+      "hubert-sumlin",
+      "ike-turner"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Bennie_Smith",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-30"
+  },
+  {
+    "id": "wesley-wallace",
+    "name": "Wesley Wallace",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3Pw4UA4uFeuc9TtMnfXoPKhWmsT2GplUf6GqVattlW5pCezUirxNHnVQsOjPt0alyuE00d3yxEzjcCT3hngKh_-9FvOlNA0L0IF3K2mRyHzYufznXCD-5JAxuchoD_KA-227l/s1600/WESLEY.jpg",
+    "image_source": "sentirelblues.com"x,
+    "birthDate": "",
+    "birthPlace": "",
+    "birthCoords": [
+      0,
+      0
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=sPOy_0TdPjo",
+    "albums": [],
+    "description": "Wesley Wallace was an American blues and boogie-woogie pianist known for two remarkable solo recordings made in Grafton, Wisconsin in November 1929: \"No. 29,\" a train song imitating a steam locomotive, and \"Fanny Lee Blues.\" Little is known of his life, but his recordings — built entirely on the I and IV chords with the V chord omitted — are prized by collectors as evidence of a singular, prodigious talent.",
+    "activeFrom": "1929",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Wesley_Wallace",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-30"
+  },
+  {
+    "id": "deacon-john",
+    "name": "Deacon John",
+    "image": "https://i.discogs.com/JzUsAKpUIwn0KgkqcfpkqGzRcwLtjLWFTMypXvdH23k/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2ODg0/MTY5LTE2ODI0Njcw/NjktNTA0MC5qcGVn.jpeg",
+    "image_source": "discogs",
+    "birthDate": "1941-06-23",
+    "birthPlace": "New Orleans, Louisiana",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=eLqUT3Rb3KA",
+    "albums": [
+      {
+        "name": "Deacon John's Jump Blues (2003)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Deacon John (John Moore) is a New Orleans guitarist, singer, and bandleader who became one of the city's most in-demand session musicians from the late 1950s onward, playing on hit recordings by Allen Toussaint, Irma Thomas, and other Crescent City stars. Though he never achieved major national fame under his own name, he is a pillar of the New Orleans R&B and blues scene, inducted into the Louisiana Blues Hall of Fame in 2000.",
+    "activeFrom": "1958",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "allen-toussaint",
+      "irma-thomas",
+      "dr-john"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Deacon_John_Moore",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-09-30"
+  },
+  {
+    "id": "jessie-hill",
+    "name": "Jessie Hill",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/JessieHillatJazzFest1996.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1932-12-09",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "1996-09-17",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=enRmXCSxGx0",
+    "albums": [
+      {
+        "name": "Y'All Ready Now? ... Plus (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=OUU1i4dn24o"
+      }
+    ],
+    "description": "Jessie Hill (December 9, 1932 – September 17, 1996) was an American R&B and Louisiana blues singer and songwriter, best remembered for the classic song \"Ooh Poo Pah Doo\".",
+    "activeFrom": "1951",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "dr-john"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Jessie_Hill",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-30"
+  },
+  {
+    "id": "chris-kenner",
+    "name": "Chris Kenner",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/f1/Chris_kenner.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1929-12-25",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "1976-01-25",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=m7AsVIuZNrA",
+    "albums": [
+      {
+        "name": "The Jimmy Castor Bunch / The Casuals / Chris Kenner / The Manhattans (La grande storia del rock) (1982)",
+        "youtubeLink": "https://www.youtube.com/watch?v=DHdzzggBXic"
+      },
+      {
+        "name": "I Like It Like That (1987)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Utg3e9K5zP4"
+      },
+      {
+        "name": "The Chris Kenner Collection: Land of 1000 Dances (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0errG9DR_kM"
+      },
+      {
+        "name": "32 Greatest Hits From New Orleans (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Utg3e9K5zP4"
+      },
+      {
+        "name": "Chris Kenner Selected Favorites (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Utg3e9K5zP4"
+      },
+      {
+        "name": "I Like It Like That: The Definitive Chris Kenner Collection 1956-1968 (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Utg3e9K5zP4"
+      }
+    ],
+    "description": "Christophe Kenner (December 25, 1929 – January 25, 1976) was an American, New Orleans–based R&B singer and songwriter, best known for two hit singles in the early 1960s, \"I Like It Like That\" and \"Land of 1000 Dances\", which became staples in the repertoires of many other musicians.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "allen-toussaint"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Chris_Kenner",
+    "secondaryInstruments": [],
+    "createdAt": "2026-09-30"
+  },
+  {
+    "id": "huey-piano-smith",
+    "name": "Huey \"Piano\" Smith",
+    "image": "https://www.rollingstone.com/wp-content/uploads/2023/02/huey-piano-smith.jpg?w=1581&h=1054&crop=1",
+    "image_source": "rollingstone.com",
+    "birthDate": "1934-01-26",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "2023-02-13",
+    "deathPlace": "Baton Rouge",
+    "deathCoords": [
+      -91.178611111111,
+      30.4475
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ryz8ixlTFfs",
+    "albums": [
+      {
+        "name": "Pitta Pattin’ (1987)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9NzLwqkmsOI"
+      },
+      {
+        "name": "This Is… Huey ‘Piano’ Smith (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=UixlPnv6vHU"
+      },
+      {
+        "name": "That’ll Get It (Even More of the Best) (1999)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Blues Masters, Volume 15 (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9NzLwqkmsOI"
+      },
+      {
+        "name": "It Do Me Good: The Banashak & Sansu Sessions 1966–1978 (2012)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Don’t You Just Know It: The Very Best of 1956–1962 (2016)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6sxnXO2RjVg"
+      }
+    ],
+    "description": "Huey Pierce \"Piano\" Smith (January 26, 1934 – February 13, 2023) was an American R&B pianist and session musician whose sound was influential in the development of rock and roll. His piano playing incorporated the boogie-woogie styles of Pete Johnson, Meade Lux Lewis, and Albert Ammons, the jazz style of Jelly Roll Morton and the R&B style of Fats Domino. Steve Huey of AllMusic noted that \"At the peak of his game, Smith epitomized New Orleans R&B at its most infectious and rollicking, as showcased on his classic signature tune, \"Rockin' Pneumonia and the Boogie Woogie Flu\".",
+    "activeFrom": "1949",
+    "influences": [],
+    "influencedBy": [
+      "professor-longhair",
+      "pete-johnson",
+      "meade-lux-lewis",
+      "albert-ammons",
+      "fats-domino"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "earl-king",
+      "guitar-slim"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Huey_%22Piano%22_Smith",
     "secondaryInstruments": [],
     "createdAt": "2026-09-30"
   }
