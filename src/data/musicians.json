@@ -8513,14 +8513,14 @@
     "activeFrom": "1952",
     "influences": [
       "junior-watson",
-      "maxwell-street-jimmy-davis"
+      "maxwell-street-jimmy-davis",
+      "billy-gayles"
     ],
     "influencedBy": [
       "t-bone-walker",
       "robert-nighthawk",
       "tampa-red",
-      "houston-stackhouse",
-      "billy-gayles"
+      "houston-stackhouse"
     ],
     "incomplete": false,
     "playedWith": [
@@ -28121,15 +28121,15 @@
     "activeFrom": "1937",
     "influences": [
       "cedell-davis",
-      "louis-myers"
+      "louis-myers",
+      "billy-gayles"
     ],
     "influencedBy": [
       "papa-charlie-jackson",
       "jim-jackson",
       "fruteland-jackson",
       "joe-willie-wilkins",
-      "tampa-red",
-      "billy-gayles"
+      "tampa-red"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31116,12 +31116,12 @@
       "hip-linkchain",
       "earring-george-mayweather",
       "junior-wells",
-      "gene-birdlegg-pittman"
+      "gene-birdlegg-pittman",
+      "doc-terry"
     ],
     "influencedBy": [
       "sleepy-john-estes",
-      "will-shade",
-      "doc-terry"
+      "will-shade"
     ],
     "incomplete": false,
     "playedWith": [
@@ -56179,10 +56179,10 @@
     ],
     "description": "Terry Adail (December 14, 1921 – August 23, 2001), known professionally as Doc Terry, was an American blues musician who started playing the harmonica at the age of 12, influenced by Sonny Boy Williamson I whom he would hear play at country picnics in Greenville, Mississippi.  During his career, Terry played with blues musicians such as Muddy Waters, Howlin' Wolf, Yank Rachell and Henry Townsend.",
     "activeFrom": "1941",
-    "influences": [
+    "influences": [],
+    "influencedBy": [
       "sonny-boy-williamson-i"
     ],
-    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -56288,11 +56288,11 @@
     ],
     "description": "Billy Gayles (October 19, 1931 – April 8, 1993) was an American rhythm & blues drummer and vocalist.  Gayles was a member of Ike Turner's Kings of Rhythm in the 1950s with whom he recorded for Flair Records and Federal Records as the lead vocalist.  Gayles also backed various musicians, including Earl Hooker, Robert Nighthawk, Otis Rush, Albert King, and Richard Arnold \"Groove\" Holmes.",
     "activeFrom": "",
-    "influences": [
+    "influences": [],
+    "influencedBy": [
       "earl-hooker",
       "robert-nighthawk"
     ],
-    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "earl-hooker",
