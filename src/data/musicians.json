@@ -4916,7 +4916,8 @@
       "jack-owens",
       "wayne-bennett",
       "big-time-sarah",
-      "dave-alexander"
+      "dave-alexander",
+      "schoolboy-cleve"
     ],
     "source": "https://en.wikipedia.org/wiki/Buddy_Guy",
     "secondaryInstruments": [
@@ -8059,7 +8060,8 @@
       "allen-toussaint",
       "fats-domino",
       "bo-diddley",
-      "tuts-washington"
+      "tuts-washington",
+      "walter-papoose-nelson"
     ],
     "incomplete": false,
     "playedWith": [
@@ -9260,7 +9262,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "james-stump-johnson"
+    ],
     "source": "https://en.wikipedia.org/wiki/Edith_North_Johnson",
     "secondaryInstruments": [
       "Vocals"
@@ -10214,7 +10218,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "wayne-bennett"
+      "wayne-bennett",
+      "walter-papoose-nelson"
     ],
     "source": "https://en.wikipedia.org/wiki/Fats_Domino",
     "secondaryInstruments": [
@@ -15081,7 +15086,8 @@
       "barbara-lynn",
       "juke-boy-bonner",
       "clarence-carter",
-      "duster-bennett"
+      "duster-bennett",
+      "harmonica-shah"
     ],
     "influencedBy": [
       "eddie-taylor"
@@ -18092,7 +18098,8 @@
     "description": "Junior Wells (born Amos Wells Blakemore Jr. ; December 9, 1934 – January 15, 1998) was an American singer, harmonica player, and recording artist.  He is best known for his signature song \"Messin' with the Kid\" and his 1965 album Hoodoo Man Blues, described by the critic Bill Dahl as \"one of the truly classic blues albums of the 1960s\".",
     "activeFrom": "1950",
     "influences": [
-      "kim-wilson"
+      "kim-wilson",
+      "harmonica-shah"
     ],
     "influencedBy": [
       "sonny-boy-williamson",
@@ -19335,7 +19342,8 @@
     "influences": [
       "anson-funderburgh",
       "the-fabulous-thunderbirds",
-      "buddy-guy"
+      "buddy-guy",
+      "harmonica-shah"
     ],
     "influencedBy": [
       "lightnin-slim"
@@ -19966,7 +19974,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "warren-storm"
+      "warren-storm",
+      "schoolboy-cleve"
     ],
     "source": "https://en.wikipedia.org/wiki/Lightnin'_Slim",
     "secondaryInstruments": [
@@ -20852,7 +20861,8 @@
       "hip-linkchain",
       "earring-george-mayweather",
       "junior-wells",
-      "gene-birdlegg-pittman"
+      "gene-birdlegg-pittman",
+      "harmonica-shah"
     ],
     "influencedBy": [
       "sonny-boy-williamson"
@@ -20956,7 +20966,8 @@
       "mark-hummel",
       "paul-delay",
       "little-mack-simmons",
-      "sugar-blue"
+      "sugar-blue",
+      "harmonica-shah"
     ],
     "influencedBy": [
       "muddy-waters",
@@ -21347,7 +21358,8 @@
     "activeFrom": "1925",
     "influences": [
       "ramblin-thomas",
-      "lil-son-jackson"
+      "lil-son-jackson",
+      "clifford-gibson"
     ],
     "influencedBy": [
       "robert-johnson"
@@ -24855,7 +24867,8 @@
       "lc-robinson",
       "pat-hare",
       "dave-myers",
-      "dave-alexander"
+      "dave-alexander",
+      "schoolboy-cleve"
     ],
     "source": "https://en.wikipedia.org/wiki/Muddy_Waters",
     "secondaryInstruments": [
@@ -26895,7 +26908,9 @@
       "tuts-washington"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "walter-papoose-nelson"
+    ],
     "source": "https://en.wikipedia.org/wiki/Professor_Longhair",
     "secondaryInstruments": [
       "Vocals"
@@ -30997,7 +31012,8 @@
       "willie-nix",
       "little-mack-simmons",
       "long-john-baldry",
-      "polka-dot-slim"
+      "polka-dot-slim",
+      "schoolboy-cleve"
     ],
     "influencedBy": [
       "robert-johnson",
@@ -55725,5 +55741,372 @@
     "source": "https://en.wikipedia.org/wiki/Huey_%22Piano%22_Smith",
     "secondaryInstruments": [],
     "createdAt": "2026-09-30"
+  },
+  {
+    "id": "clifford-gibson",
+    "name": "Clifford Gibson",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7GxI2YzAGc3RazVzMqqq38IQzWKfOcOOHQG01ilgLk7XiFbKllVOR7dR5R-7M7pJ0m_7VNc565SNWA5dka73GjMX-t4-vxPBYDk6RZhZ30FTQ6VppBaHD5WO2soXLHJmDzWVJWeyXA57fBKeWIqJX7DJ1HKWOiphF0_5t2KodvlI4iyIYaNyavKiMmsY/s1536/Gibson.jpeg",
+    "image_source": "todoalbumblues.com",
+    "birthDate": "1901-04-17",
+    "birthPlace": "Louisville",
+    "birthCoords": [
+      -85.75138888888888,
+      38.25611111111111
+    ],
+    "deathDate": "1963-12-21",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dJ_dMUyxC-Y",
+    "albums": [
+      {
+        "name": "Beat You Doing It (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=lqVJb8HI7a0"
+      },
+      {
+        "name": "Complete Recorded Works 1929-1931 In Chronological Order (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=j_w0-Gxxrxg"
+      }
+    ],
+    "description": "Clifford \"Grandpappy\" Gibson (April 17, 1901 – December 21, 1963) was an American blues singer and guitarist best known for \"Bad Luck Dice\" and \"Hard Headed Blues.\" Born in Louisville, Kentucky, he moved to St. Louis in the 1920s and became one of the city's earliest urban blues stylists, recording prolifically for QRS and Victor from 1929. His intricate, vibrato-laden guitar playing closely paralleled that of Lonnie Johnson, though Gibson's sharper tone and use of a high capo and open tunings gave his sound a distinct identity.",
+    "activeFrom": "1929",
+    "influences": [],
+    "influencedBy": [
+      "lonnie-johnson"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Clifford_Gibson",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-01"
+  },
+  {
+    "id": "james-stump-johnson",
+    "name": "James \"Stump\" Johnson",
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/48/Stump_ducks.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1902-01-17",
+    "birthPlace": "Clarksville",
+    "birthCoords": [
+      -87.3594444,
+      36.5297222
+    ],
+    "deathDate": "1969-12-05",
+    "deathPlace": "St. Louis",
+    "deathCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Si2CQFDn7_8",
+    "albums": [
+      {
+        "name": "Complete Recorded Works In Chronological Order (1929-1964) (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Si2CQFDn7_8"
+      }
+    ],
+    "description": "James \"Stump\" Johnson (January 17, 1902 – December 5, 1969) was an American blues pianist and singer from St. Louis, nicknamed for his squat, under-five-foot stature. The brother of St. Louis music promoter Jesse Johnson, he made his recording debut for QRS in 1928 alongside his sister-in-law Edith North Johnson, and his composition \"The Duck's Yas Yas Yas\" became a barrelhouse standard after being recorded by Oliver Cobb's Rhythm Kings in 1929.",
+    "activeFrom": "1928",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "edith-north-johnson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/James_%22Stump%22_Johnson",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-01"
+  },
+  {
+    "id": "archibald",
+    "name": "Archibald",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/ae/Leon_Gross_Archibald.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1916-09-14",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "1973-01-08",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Pe3FaO-pZbo",
+    "albums": [
+      {
+        "name": "Crescent City Bounce (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Pe3FaO-pZbo"
+      }
+    ],
+    "description": "John Leon Gross (1912 or 1916 – January 8, 1973), who performed as Archibald, was a New Orleans pianist and singer whose rolling, rumba-inflected left hand helped define the city's postwar piano sound. His 1950 recording of \"Stack-A-Lee\" (a version of \"Stagger Lee\"), cut at Cosimo Matassa's J&M Studio under bandleader Dave Bartholomew, reached the national R&B top ten and remains one of the most influential early readings of the Stagger Lee ballad tradition.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Archibald_(musician)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-01"
+  },
+  {
+    "id": "harmonica-shah",
+    "name": "Harmonica Shah",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8L5dhhgpUUXjE1dAfGThTV6ZFuVZ0Q8R0I8hjpHol_3MrsiBi0j8b-pFkbORsPHnPP_Zkg9DFvjWXyaBsSfTjASRWpYRypuai1gv2ynr6VuBo1E7Ix6n8zklk4oCvpPkcLWiYuF1GY1hy/s1600/IMG_3852harmonica_shah.jpg",
+    "image_source": "https://somvalvulado.blogspot.com/",
+    "birthDate": "1946-03-31",
+    "birthPlace": "Oakland",
+    "birthCoords": [
+      -122.25,
+      37.8
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=5Y8zWlSPlcs",
+    "albums": [
+      {
+        "name": "Raw And Acoustic - The Detroit Sessions Vol. Two (2014)",
+        "youtubeLink": "https://www.youtube.com/watch?v=qmc6gB2e6NU"
+      },
+      {
+        "name": "That's Raw - The Detroit Sessions Volume One (2014)",
+        "youtubeLink": "https://www.youtube.com/watch?v=DH9Yh6k5Yeo"
+      }
+    ],
+    "description": "Harmonica Shah (born Thaddeus Louis Hall, March 31, 1946) is an American Detroit blues harmonicist and singer. After relocating to Detroit in 1967 and working for years at Ford Motor Company, he took up the harmonica in the mid-1970s while driving a taxicab and immersed himself in the city's blues jam scene, eventually recording albums such as \"That's Raw\" and \"Raw and Acoustic\" that carry on the raw, amplified Detroit blues sound pioneered by John Lee Hooker and Little Sonny.",
+    "activeFrom": "1976",
+    "influences": [],
+    "influencedBy": [
+      "junior-wells",
+      "jimmy-reed",
+      "little-walter",
+      "lazy-lester",
+      "little-sonny"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Harmonica_Shah",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-01"
+  },
+  {
+    "id": "walter-papoose-nelson",
+    "name": "Walter \"Papoose\" Nelson",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/57/Papoose_Nelson.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1932-07-26",
+    "birthPlace": "New Orleans, Louisiana",
+    "birthCoords": [
+      -90.0715,
+      29.9511
+    ],
+    "deathDate": "1962-02-28",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.006,
+      40.7128
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans, Louisiana",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=60Rmcl2bIUI",
+    "albums": [],
+    "description": "Walter Charles Nelson Jr. (July 26, 1932 – February 28, 1962), known as Walter \"Papoose\" Nelson, was a New Orleans guitarist best known as a key session player on Fats Domino's classic hit records from 1950 onward, as well as for his work behind Professor Longhair. Taught guitar by his father alongside his brother Lawrence \"Prince La La\" Nelson, he became a mentor to a teenage Mac Rebennack (later Dr. John) before dying of a drug overdose in New York while on tour with Domino's band at age 29.",
+    "activeFrom": "",
+    "influences": [
+      "dr-john"
+    ],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "fats-domino",
+      "professor-longhair"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Walter_%22Papoose%22_Nelson",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-01"
+  },
+  {
+    "id": "schoolboy-cleve",
+    "name": "Schoolboy Cleve",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1YZ2IeVQ0U0H3Ipq1aLSzeKdB7yBMvM2ZJZD4tKzeqOZVrvJhHK39e4eMlVf7pcB3kDeCWmFiQiWmLEku4hm-KkrjmbX7nWSp0DWP_vfjq5jmCRvpwihIlZSJHnKCI4zuIWAe/w1200-h630-p-k-no-nu/schoolboy.jpg",
+    "image_source": "sentirelblues.com",
+    "birthDate": "1925-06-10",
+    "birthPlace": "East Baton Rouge Parish, Louisiana",
+    "birthCoords": [
+      -91.1871,
+      30.4515
+    ],
+    "deathDate": "2008-02-05",
+    "deathPlace": "Daly City, California",
+    "deathCoords": [
+      -122.4694,
+      37.6879
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      {
+        "place": "Cleveland",
+        "coords": [
+          -81.6944,
+          41.4993
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=bAAd75w0FNc",
+    "albums": [],
+    "description": "Schoolboy Cleve (born Cleveland White, June 10, 1925 – February 5, 2008) was a Louisiana swamp blues harmonica player from East Baton Rouge Parish. He learned harmonica technique directly from Sonny Boy Williamson, recorded alongside Lightnin' Slim in the mid-1950s, and cut sides under his own name for the Feature and Ace labels, later crossing paths with Muddy Waters and Buddy Guy before relocating to California in 1960.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [
+      "sonny-boy-williamson"
+    ],
+    "incomplete": true,
+    "playedWith": [
+      "lightnin-slim",
+      "muddy-waters",
+      "buddy-guy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Schoolboy_Cleve",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-01"
+  },
+  {
+    "id": "one-string-sam",
+    "name": "One String Sam",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDcPsvbZW0teW-ZTfln2l_UkJjSJlsI-45Kp2t3SKOg2SlYm2jWmh8TTiGNwXJJERXZ1yeHFvCArlECY05FmvuNCUfgEIiQjg1iUVNOjAs4jOSdZR4nOFd0aGWvmN3wQVovcY_UQ/s16000-rw/image.png",
+    "image_source": "sentirelblues.com",
+    "birthDate": "",
+    "birthPlace": "",
+    "birthCoords": [
+      0,
+      0
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Detroit, Michigan",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      }
+    ],
+    "instrument": "Diddley Bow",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=H2GlAA5iiG8",
+    "albums": [],
+    "description": "One String Sam (born Sam Wilson) was a Detroit street musician who performed on a homemade one-string diddley bow. In 1956 he walked into Joe Von Battle's Joe's Record Shop on Hastings Street and cut his only two sides, \"I Need a Hundred Dollars\" and \"My Baby, Oooo,\" an eerie, hypnotic country-blues sound almost unique on record; he resurfaced decades later to perform at the Ann Arbor Blues and Jazz Festival in 1973 and 1974.",
+    "activeFrom": "1956",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/One_String_Sam",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-01"
+  },
+  {
+    "id": "sugar-boy-crawford",
+    "name": "Sugar Boy Crawford",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/SugarBoyCrawfordApr281996.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1934-10-12",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "2012-09-15",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.07833333333333,
+          29.976111111111113
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=sMjTqsbDeLo",
+    "albums": [
+      {
+        "name": "The Chronological \"Sugar Boy\" Crawford 1953-1954 (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=PgOrIar_qGk"
+      }
+    ],
+    "description": "James \"Sugar Boy\" Crawford Jr. (October 12, 1934 – September 15, 2012) was a New Orleans pianist and bandleader whose 1954 recording \"Jock-A-Mo,\" cut with his band the Cane Cutters, set down the call-and-response Mardi Gras Indian chant that became the standard \"Iko Iko\" after the Dixie Cups' 1965 hit version. His career was cut short in 1963 after a severe beating by state troopers left him unable to continue performing, but \"Jock-A-Mo\" remains one of the most covered and influential songs to come out of New Orleans rhythm and blues.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/James_%22Sugar_Boy%22_Crawford",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-01"
   }
 ]
