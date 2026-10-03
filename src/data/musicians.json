@@ -407,7 +407,9 @@
       "mike-bloomfield",
       "john-mayall",
       "larry-davis",
-      "chris-cain"
+      "chris-cain",
+      "billy-gayles",
+      "erskine-oglesby"
     ],
     "source": "https://en.wikipedia.org/wiki/Albert_King",
     "secondaryInstruments": [
@@ -1435,7 +1437,8 @@
     "influences": [
       "elvis-presley",
       "clarence-carter",
-      "robert-lowery"
+      "robert-lowery",
+      "billy-davis"
     ],
     "influencedBy": [
       "tommy-johnson",
@@ -8531,7 +8534,8 @@
       "muddy-waters",
       "albert-collins",
       "little-walter",
-      "little-mack-simmons"
+      "little-mack-simmons",
+      "billy-gayles"
     ],
     "source": "https://en.wikipedia.org/wiki/Earl_Hooker",
     "secondaryInstruments": [],
@@ -13295,7 +13299,9 @@
       "etta-james",
       "barbara-lynn",
       "willie-nix",
-      "bennie-smith"
+      "bennie-smith",
+      "billy-gayles",
+      "erskine-oglesby"
     ],
     "source": "https://en.wikipedia.org/wiki/Ike_Turner",
     "secondaryInstruments": [
@@ -16526,7 +16532,8 @@
     "incomplete": false,
     "playedWith": [
       "lowell-fulson",
-      "alberta-adams"
+      "alberta-adams",
+      "joe-weaver"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnnie_Bassett",
     "secondaryInstruments": [
@@ -20744,7 +20751,8 @@
     "playedWith": [
       "albert-king",
       "tyrone-davis",
-      "trudy-lynn"
+      "trudy-lynn",
+      "erskine-oglesby"
     ],
     "source": "https://en.wikipedia.org/wiki/Little_Milton",
     "secondaryInstruments": [
@@ -21371,7 +21379,8 @@
       "bessie-smith",
       "roosevelt-sykes",
       "georgia-white",
-      "chippie-hill"
+      "chippie-hill",
+      "myra-taylor"
     ],
     "source": "https://en.wikipedia.org/wiki/Lonnie_Johnson_(musician)",
     "secondaryInstruments": [
@@ -25388,7 +25397,8 @@
       "buddy-guy",
       "albert-king",
       "jody-williams",
-      "wayne-bennett"
+      "wayne-bennett",
+      "billy-gayles"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Rush",
     "secondaryInstruments": [
@@ -26719,7 +26729,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "dorothea-trowbridge"
+    ],
     "source": "https://en.wikipedia.org/wiki/Pinetop_Sparks",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -28124,7 +28136,8 @@
       "tampa-red",
       "cedell-davis",
       "little-mack-simmons",
-      "tommy-bankhead"
+      "tommy-bankhead",
+      "billy-gayles"
     ],
     "source": "https://en.wikipedia.org/wiki/Robert_Nighthawk",
     "secondaryInstruments": [
@@ -28575,7 +28588,8 @@
       "lonnie-johnson",
       "sugar-blue",
       "charley-jordan",
-      "walter-davis"
+      "walter-davis",
+      "dorothea-trowbridge"
     ],
     "source": "https://en.wikipedia.org/wiki/Roosevelt_Sykes",
     "secondaryInstruments": [],
@@ -36058,7 +36072,8 @@
       "buddy-guy",
       "john-lee-hooker",
       "albert-king",
-      "ike-turner"
+      "ike-turner",
+      "clayton-love"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnnie_Johnson",
     "secondaryInstruments": [],
@@ -55831,7 +55846,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "edith-north-johnson"
+      "edith-north-johnson",
+      "dorothea-trowbridge"
     ],
     "source": "https://en.wikipedia.org/wiki/James_%22Stump%22_Johnson",
     "secondaryInstruments": [
@@ -56108,5 +56124,415 @@
     "source": "https://en.wikipedia.org/wiki/James_%22Sugar_Boy%22_Crawford",
     "secondaryInstruments": [],
     "createdAt": "2026-10-01"
+  },
+  {
+    "id": "joe-weaver",
+    "name": "Joe Weaver",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Frank_Jarsoe_%28i.e.%2C_Jarose%3F%29%2C_%28left_end%29%2C_7_Fayette_St._Mellins_%28i.e.%2C_Mellens%3F%29_Court%2C_said_11_years_old._Pin_boy_in_Les_Miserables_Alleys%2C_made_%243.75_last_week._Joe_Weaver%2C_%28right_end%29%2C_10_LOC_nclc.02385.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1934-08-27",
+    "birthPlace": "Detroit, Michigan",
+    "birthCoords": [
+      -83.0475,
+      42.331666666667
+    ],
+    "deathDate": "2006-07-05",
+    "deathPlace": "Southfield",
+    "deathCoords": [
+      -83.221666666667,
+      42.473333333333
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=2zfFaqetOfY",
+    "albums": [
+      {
+        "name": "15-40 Special",
+        "youtubeLink": "https://www.youtube.com/watch?v=2zfFaqetOfY"
+      }
+    ],
+    "description": "Joe Weaver (August 27, 1934 – July 5, 2006) was an American Detroit blues, electric blues and R&B pianist, singer and bandleader.  His best known recording was \"Baby I Love You So\" (1955), and he was a founding member of both the Blue Note Orchestra and the Motor City Rhythm & Blues Pioneers.  Over his lengthy but staggered career, Weaver worked with various musicians including the Four Tops, Marvin Gaye, John Lee Hooker, Nathaniel Mayer, the Miracles, Martha Reeves, Nolan Strong & the Diablos, Andre Williams, Nancy Wilson, and Stevie Wonder.",
+    "activeFrom": "1952",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "johnnie-bassett",
+      "john-lee-hooker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Joe_Weaver",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-03"
+  },
+  {
+    "id": "billy-davis",
+    "name": "Billy Davis",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1938-04-29",
+    "birthPlace": "Bentonia, Mississippi",
+    "birthCoords": [
+      -90.37222,
+      32.64611
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Southfield, Michigan",
+        "coords": [
+          -83.221666666667,
+          42.473333333333
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=lYUlwR57xDc",
+    "albums": [
+      {
+        "name": "I Remember",
+        "youtubeLink": "https://www.youtube.com/watch?v=lYUlwR57xDc"
+      }
+    ],
+    "description": "Billy Davis is a Detroit blues guitarist, singer, and songwriter born in Bentonia, Mississippi, who moved to Detroit as a child and became one of the city's most enduring electric blues guitarists. He toured and recorded as a member of Hank Ballard & the Midnighters from 1958 to 1965, worked as a session guitarist for Jackie Wilson, the Isley Brothers, the Drifters, and Ben E. King, and in 1959 befriended and mentored a teenage Jimi Hendrix, teaching him guitar technique. He was inducted into the Rock and Roll Hall of Fame in 2012 for his work with the Midnighters and continues to perform in the Detroit area.",
+    "activeFrom": "1958",
+    "influences": [],
+    "influencedBy": [
+      "arthur-crudup"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Billy_Davis_(guitarist)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-03"
+  },
+  {
+    "id": "myra-taylor",
+    "name": "Myra Taylor",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Myra%20Taylor%20at%20her%2094th%20birthday%20party%20at%20Knuckleheads%20Saloon.png?width=500",
+    "image_source": null,
+    "birthDate": "1917-02-24",
+    "birthPlace": "Bonner Springs",
+    "birthCoords": [
+      -94.8792,
+      39.0667
+    ],
+    "deathDate": "2011-12-09",
+    "deathPlace": "Kansas City",
+    "deathCoords": [
+      -94.583333333333,
+      39.05
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Kansas City Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=zw_IgOlzjbA",
+    "albums": [
+      {
+        "name": "Spider and the Fly (1946)",
+        "youtubeLink": "https://www.youtube.com/watch?v=oUeh51CrM50"
+      },
+      {
+        "name": "My Night to Dream (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=-r4yjgq72Dk"
+      }
+    ],
+    "description": "Myra Taylor (February 24, 1917 – December 9, 2011) was a Kansas City blues and jazz singer known for a vocal style one reviewer described as having \"a subtle sob and a real blues vibrato.\" She rose to prominence fronting Harlan Leonard and His Rockets, scoring a hit with \"Spider and the Fly\" (1946), and went on to perform for eight decades, including USO tours through 32 countries, remaining one of the last voices of Kansas City's 1930s blues and jazz heyday.",
+    "activeFrom": "1940",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "lonnie-johnson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Myra_Taylor_(singer)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-03"
+  },
+  {
+    "id": "floyd-smith",
+    "name": "Floyd Smith",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Floyd%20Smith%20and%20Dick%20Wilson%2C%20Howard%20Theater%2C%20Washington%2C%20D.C.%2C%20not%20after%201941%20(William%20P.%20Gottlieb%2007871).jpg?width=500",
+    "image_source": null,
+    "birthDate": "1917-01-25",
+    "birthPlace": "St. Louis",
+    "birthCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "deathDate": "1982-03-29",
+    "deathPlace": "Indianapolis",
+    "deathCoords": [
+      -86.158055555556,
+      39.768611111111
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=lXYZ4AicW4s",
+    "albums": [
+      {
+        "name": "Floyd's Guitar Blues (1947 re-recording)",
+        "youtubeLink": "https://www.youtube.com/watch?v=lXYZ4AicW4s"
+      }
+    ],
+    "description": "Floyd George Smith (January 25, 1917 – March 29, 1982), also credited as Floyd \"Guitar\" Smith, was a St. Louis-born guitarist whose 1939 recording of \"Floyd's Guitar Blues\" with Andy Kirk and His Twelve Clouds of Joy is widely considered the first hit record built around a blues solo on electric (steel) guitar, helping establish the instrument in blues and jazz. He spent his career in territory bands including Andy Kirk's orchestra and later led his own small combos, re-recording his signature tune for a new generation of listeners.",
+    "activeFrom": "1937",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Floyd_Smith_(musician)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-03"
+  },
+  {
+    "id": "billy-gayles",
+    "name": "Billy Gayles",
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/89/Billy-Gayles.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1931-10-19",
+    "birthPlace": "Sikeston, Missouri",
+    "birthCoords": [
+      -89.5879,
+      36.8767
+    ],
+    "deathDate": "1993-04-08",
+    "deathPlace": "St. Louis",
+    "deathCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Drums",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "I'm Tore Up / If I Never Had Known You (1956)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xFlKxsGSmdQ"
+      }
+    ],
+    "description": "Billy Gayles (October 19, 1931 – April 8, 1993) was an American rhythm & blues drummer and vocalist.  Gayles was a member of Ike Turner's Kings of Rhythm in the 1950s with whom he recorded for Flair Records and Federal Records as the lead vocalist.  Gayles also backed various musicians, including Earl Hooker, Robert Nighthawk, Otis Rush, Albert King, and Richard Arnold \"Groove\" Holmes.",
+    "activeFrom": "1954",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ike-turner",
+      "earl-hooker",
+      "robert-nighthawk",
+      "otis-rush",
+      "albert-king",
+      "clayton-love"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Billy_Gayles",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-03"
+  },
+  {
+    "id": "clayton-love",
+    "name": "Clayton Love",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1927-11-16",
+    "birthPlace": "Mattson, Mississippi",
+    "birthCoords": [
+      -90.51,
+      34.0978
+    ],
+    "deathDate": "2010-02-28",
+    "deathPlace": "St. Louis",
+    "deathCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Vicksburg",
+        "coords": [
+          -90.8773,
+          32.3526
+        ]
+      },
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=wYaLZjsCtbE",
+    "albums": [
+      {
+        "name": "Strange Kind of Feeling (1993)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Bobbin Blues Masters, Volume 1 (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=fvXyrb-syT4"
+      }
+    ],
+    "description": "Clayton D. Love Jr. (November 16, 1927 – February 28, 2010) was an American blues pianist who grew up in Clarksdale, Mississippi and led his own band, the Shufflers, in the early 1950s before recording for the Trumpet, Aladdin, Modern, Groove, and Bobbin labels. He later became a vocalist and pianist with Ike Turner's Kings of Rhythm, singing lead on several of the group's Federal Records sides in 1957, and in his later years he reunited with former Kings of Rhythm bandmates for European tours and the 1991 album Rockin' Eighty-Eights alongside Johnnie Johnson.",
+    "activeFrom": "1951",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ike-turner",
+      "billy-gayles",
+      "erskine-oglesby",
+      "johnnie-johnson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Clayton_Love",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-03"
+  },
+  {
+    "id": "erskine-oglesby",
+    "name": "Erskine Oglesby",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1937-01-20",
+    "birthPlace": "St. Louis",
+    "birthCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "deathDate": "2004-03-07",
+    "deathPlace": "St. Louis",
+    "deathCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Saxophone",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=5jnGv0B50Cc",
+    "albums": [
+      {
+        "name": "Jack and Coke",
+        "youtubeLink": "https://www.youtube.com/watch?v=5jnGv0B50Cc"
+      }
+    ],
+    "description": "Erskine Oglesby (January 20, 1937 – March 7, 2004) was a St. Louis tenor saxophonist and blues singer who, as a teenager, played in a local band alongside a young Chuck Berry. He later performed as a baritone saxophonist and vocalist with Ike Turner's Kings of Rhythm, recording and touring with artists including Albert King and Little Milton, and in the late 1990s and 2000s he released solo albums on the Black & Tan Records label, including Blues Dancin' (2000) and Honkin' & Shoutin' (2001).",
+    "activeFrom": "1953",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ike-turner",
+      "albert-king",
+      "little-milton",
+      "clayton-love"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Erskine_Oglesby",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-03"
+  },
+  {
+    "id": "dorothea-trowbridge",
+    "name": "Dorothea Trowbridge",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1914",
+    "birthPlace": "Dublin, Georgia",
+    "birthCoords": [
+      -82.9183,
+      32.5375
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=lx8rJ8jTf8o",
+    "albums": [
+      {
+        "name": "Slavin' Mama Blues / Bad Luck Blues (1933)",
+        "youtubeLink": "https://www.youtube.com/watch?v=lx8rJ8jTf8o"
+      }
+    ],
+    "description": "Dorothea Trowbridge (born c.  1914), first name also spelled Dorthea, Doretha, was an American blues singer active in St.  Louis in the 1930s.",
+    "activeFrom": "1934",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "james-stump-johnson",
+      "pinetop-sparks",
+      "roosevelt-sykes"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Dorothea_Trowbridge",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-03"
   }
 ]
