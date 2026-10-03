@@ -408,7 +408,6 @@
       "john-mayall",
       "larry-davis",
       "chris-cain",
-      "billy-gayles",
       "erskine-oglesby"
     ],
     "source": "https://en.wikipedia.org/wiki/Albert_King",
@@ -8534,8 +8533,7 @@
       "muddy-waters",
       "albert-collins",
       "little-walter",
-      "little-mack-simmons",
-      "billy-gayles"
+      "little-mack-simmons"
     ],
     "source": "https://en.wikipedia.org/wiki/Earl_Hooker",
     "secondaryInstruments": [],
@@ -13300,7 +13298,6 @@
       "barbara-lynn",
       "willie-nix",
       "bennie-smith",
-      "billy-gayles",
       "erskine-oglesby"
     ],
     "source": "https://en.wikipedia.org/wiki/Ike_Turner",
@@ -16532,8 +16529,7 @@
     "incomplete": false,
     "playedWith": [
       "lowell-fulson",
-      "alberta-adams",
-      "joe-weaver"
+      "alberta-adams"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnnie_Bassett",
     "secondaryInstruments": [
@@ -25397,8 +25393,7 @@
       "buddy-guy",
       "albert-king",
       "jody-williams",
-      "wayne-bennett",
-      "billy-gayles"
+      "wayne-bennett"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Rush",
     "secondaryInstruments": [
@@ -26729,9 +26724,7 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [
-      "dorothea-trowbridge"
-    ],
+    "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Pinetop_Sparks",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -28136,8 +28129,7 @@
       "tampa-red",
       "cedell-davis",
       "little-mack-simmons",
-      "tommy-bankhead",
-      "billy-gayles"
+      "tommy-bankhead"
     ],
     "source": "https://en.wikipedia.org/wiki/Robert_Nighthawk",
     "secondaryInstruments": [
@@ -28588,8 +28580,7 @@
       "lonnie-johnson",
       "sugar-blue",
       "charley-jordan",
-      "walter-davis",
-      "dorothea-trowbridge"
+      "walter-davis"
     ],
     "source": "https://en.wikipedia.org/wiki/Roosevelt_Sykes",
     "secondaryInstruments": [],
@@ -55846,8 +55837,7 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "edith-north-johnson",
-      "dorothea-trowbridge"
+      "edith-north-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/James_%22Stump%22_Johnson",
     "secondaryInstruments": [
@@ -56126,56 +56116,6 @@
     "createdAt": "2026-10-01"
   },
   {
-    "id": "joe-weaver",
-    "name": "Joe Weaver",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Frank_Jarsoe_%28i.e.%2C_Jarose%3F%29%2C_%28left_end%29%2C_7_Fayette_St._Mellins_%28i.e.%2C_Mellens%3F%29_Court%2C_said_11_years_old._Pin_boy_in_Les_Miserables_Alleys%2C_made_%243.75_last_week._Joe_Weaver%2C_%28right_end%29%2C_10_LOC_nclc.02385.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_source": null,
-    "birthDate": "1934-08-27",
-    "birthPlace": "Detroit, Michigan",
-    "birthCoords": [
-      -83.0475,
-      42.331666666667
-    ],
-    "deathDate": "2006-07-05",
-    "deathPlace": "Southfield",
-    "deathCoords": [
-      -83.221666666667,
-      42.473333333333
-    ],
-    "spentTimePlaces": [
-      {
-        "place": "Chicago",
-        "coords": [
-          -87.6298,
-          41.8781
-        ]
-      }
-    ],
-    "instrument": "Piano",
-    "bluesStyle": "Detroit Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=2zfFaqetOfY",
-    "albums": [
-      {
-        "name": "15-40 Special",
-        "youtubeLink": "https://www.youtube.com/watch?v=2zfFaqetOfY"
-      }
-    ],
-    "description": "Joe Weaver (August 27, 1934 – July 5, 2006) was an American Detroit blues, electric blues and R&B pianist, singer and bandleader.  His best known recording was \"Baby I Love You So\" (1955), and he was a founding member of both the Blue Note Orchestra and the Motor City Rhythm & Blues Pioneers.  Over his lengthy but staggered career, Weaver worked with various musicians including the Four Tops, Marvin Gaye, John Lee Hooker, Nathaniel Mayer, the Miracles, Martha Reeves, Nolan Strong & the Diablos, Andre Williams, Nancy Wilson, and Stevie Wonder.",
-    "activeFrom": "1952",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [
-      "johnnie-bassett",
-      "john-lee-hooker"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Joe_Weaver",
-    "secondaryInstruments": [
-      "Vocals"
-    ],
-    "createdAt": "2026-10-03"
-  },
-  {
     "id": "billy-davis",
     "name": "Billy Davis",
     "image": "",
@@ -56302,67 +56242,6 @@
     "createdAt": "2026-10-03"
   },
   {
-    "id": "billy-gayles",
-    "name": "Billy Gayles",
-    "image": "https://upload.wikimedia.org/wikipedia/en/8/89/Billy-Gayles.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_source": null,
-    "birthDate": "1931-10-19",
-    "birthPlace": "Sikeston, Missouri",
-    "birthCoords": [
-      -89.5879,
-      36.8767
-    ],
-    "deathDate": "1993-04-08",
-    "deathPlace": "St. Louis",
-    "deathCoords": [
-      -90.19944444444444,
-      38.62638888888889
-    ],
-    "spentTimePlaces": [
-      {
-        "place": "Chicago",
-        "coords": [
-          -87.6298,
-          41.8781
-        ]
-      },
-      {
-        "place": "St. Louis",
-        "coords": [
-          -90.1994,
-          38.627
-        ]
-      }
-    ],
-    "instrument": "Drums",
-    "bluesStyle": "St. Louis Blues",
-    "youtubeLink": "",
-    "albums": [
-      {
-        "name": "I'm Tore Up / If I Never Had Known You (1956)",
-        "youtubeLink": "https://www.youtube.com/watch?v=xFlKxsGSmdQ"
-      }
-    ],
-    "description": "Billy Gayles (October 19, 1931 – April 8, 1993) was an American rhythm & blues drummer and vocalist.  Gayles was a member of Ike Turner's Kings of Rhythm in the 1950s with whom he recorded for Flair Records and Federal Records as the lead vocalist.  Gayles also backed various musicians, including Earl Hooker, Robert Nighthawk, Otis Rush, Albert King, and Richard Arnold \"Groove\" Holmes.",
-    "activeFrom": "1954",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [
-      "ike-turner",
-      "earl-hooker",
-      "robert-nighthawk",
-      "otis-rush",
-      "albert-king",
-      "clayton-love"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Billy_Gayles",
-    "secondaryInstruments": [
-      "Vocals"
-    ],
-    "createdAt": "2026-10-03"
-  },
-  {
     "id": "clayton-love",
     "name": "Clayton Love",
     "image": "",
@@ -56422,7 +56301,6 @@
     "incomplete": false,
     "playedWith": [
       "ike-turner",
-      "billy-gayles",
       "erskine-oglesby",
       "johnnie-johnson"
     ],
@@ -56480,59 +56358,6 @@
     "secondaryInstruments": [
       "Vocals"
     ],
-    "createdAt": "2026-10-03"
-  },
-  {
-    "id": "dorothea-trowbridge",
-    "name": "Dorothea Trowbridge",
-    "image": "",
-    "image_source": null,
-    "birthDate": "1914",
-    "birthPlace": "Dublin, Georgia",
-    "birthCoords": [
-      -82.9183,
-      32.5375
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [
-      {
-        "place": "St. Louis",
-        "coords": [
-          -90.1994,
-          38.627
-        ]
-      },
-      {
-        "place": "Chicago",
-        "coords": [
-          -87.6298,
-          41.8781
-        ]
-      }
-    ],
-    "instrument": "Vocals",
-    "bluesStyle": "St. Louis Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=lx8rJ8jTf8o",
-    "albums": [
-      {
-        "name": "Slavin' Mama Blues / Bad Luck Blues (1933)",
-        "youtubeLink": "https://www.youtube.com/watch?v=lx8rJ8jTf8o"
-      }
-    ],
-    "description": "Dorothea Trowbridge (born c.  1914), first name also spelled Dorthea, Doretha, was an American blues singer active in St.  Louis in the 1930s.",
-    "activeFrom": "1934",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [
-      "james-stump-johnson",
-      "pinetop-sparks",
-      "roosevelt-sykes"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Dorothea_Trowbridge",
-    "secondaryInstruments": [],
     "createdAt": "2026-10-03"
   }
 ]
