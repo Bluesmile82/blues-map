@@ -1972,7 +1972,8 @@
       "t-bone-walker",
       "robert-lockwood-jr",
       "roy-brown",
-      "roy-hawkins"
+      "roy-hawkins",
+      "robert-penn"
     ],
     "incomplete": false,
     "playedWith": [
@@ -28567,7 +28568,8 @@
       "eddie-boyd"
     ],
     "influencedBy": [
-      "lee-green"
+      "lee-green",
+      "clayton-love"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31104,7 +31106,8 @@
     ],
     "influencedBy": [
       "sleepy-john-estes",
-      "will-shade"
+      "will-shade",
+      "doc-terry"
     ],
     "incomplete": false,
     "playedWith": [
@@ -56108,5 +56111,407 @@
     "source": "https://en.wikipedia.org/wiki/James_%22Sugar_Boy%22_Crawford",
     "secondaryInstruments": [],
     "createdAt": "2026-10-01"
+  },
+  {
+    "id": "clayton-love",
+    "name": "Clayton Love",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1927-11-16",
+    "birthPlace": "Mattson, Mississippi",
+    "birthCoords": [
+      -90.51,
+      34.0978
+    ],
+    "deathDate": "2010-02-28",
+    "deathPlace": "St. Louis, Missouri",
+    "deathCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Vicksburg",
+        "coords": [
+          -90.8773,
+          32.3526
+        ]
+      },
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=wYaLZjsCtbE",
+    "albums": [
+      {
+        "name": "Strange Kind of Feeling (1993)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Bobbin Blues Masters, Volume 1 (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=fvXyrb-syT4"
+      }
+    ],
+    "description": "Clayton D. Love Jr. (November 16, 1927 – February 28, 2010) was an American blues pianist, who led his own band, the Shufflers, in the early 1950s.",
+    "activeFrom": "1951",
+    "influences": [
+      "roosevelt-sykes"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ike-turner",
+      "johnnie-johnson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Clayton_Love",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-04"
+  },
+  {
+    "id": "billy-gayles",
+    "name": "Billy Gayles",
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/89/Billy-Gayles.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1931-10-19",
+    "birthPlace": "Sikeston, Missouri",
+    "birthCoords": [
+      -89.5876,
+      36.8761
+    ],
+    "deathDate": "1993-04-08",
+    "deathPlace": "St. Louis, Missouri",
+    "deathCoords": [
+      -90.1994,
+      38.627
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Drums",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=QQ8BLyCUeKs",
+    "albums": [
+      {
+        "name": "I'm Tore Up / If I Never Had Known You (1956)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Billy Gayles (October 19, 1931 – April 8, 1993) was an American rhythm & blues drummer and vocalist. Gayles was a member of Ike Turner's Kings of Rhythm in the 1950s with whom he recorded for Flair Records and Federal Records as the lead vocalist. Gayles also backed various musicians, including Earl Hooker, Robert Nighthawk, Otis Rush, Albert King, and Richard Arnold \"Groove\" Holmes.",
+    "activeFrom": "1954",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ike-turner",
+      "earl-hooker",
+      "robert-nighthawk",
+      "otis-rush",
+      "albert-king"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Billy_Gayles",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-04"
+  },
+  {
+    "id": "bessie-mae-smith",
+    "name": "Bessie Mae Smith",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "",
+    "birthCoords": [
+      0,
+      0
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=FqQIVrzHjDs",
+    "albums": [
+      {
+        "name": "St. Louis Bessie (Bessie Mae Smith) (1927-30) (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=FqQIVrzHjDs"
+      },
+      {
+        "name": "St. Louis Women. Vol. 1: St. Louis Bessie (Mae Smith) 1927-1928 and Alice Moore 1929 (1994)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Bessie Mae Smith was an American blues singer from St. Louis, who recorded for the Okeh, Vocalion and Paramount record labels under a variety of names between 1927 and 1941. She is reported to have been married to Delta bluesman Big Joe Williams, who sometimes credited her with writing his song \"Baby, Please Don't Go\".",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "big-joe-williams"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Bessie_Mae_Smith",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-04"
+  },
+  {
+    "id": "doc-terry",
+    "name": "Doc Terry",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1921-12-14",
+    "birthPlace": "Sunflower, Mississippi",
+    "birthCoords": [
+      -90.5134,
+      33.4926
+    ],
+    "deathDate": "2001-08-23",
+    "deathPlace": "East St. Louis, Illinois",
+    "deathCoords": [
+      -90.1559,
+      38.6244
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=y--TlNwMqu4",
+    "albums": [
+      {
+        "name": "Rock With Doc (D.T.P. Records)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Terry Adail (December 14, 1921 – August 23, 2001), known professionally as Doc Terry, was an American blues musician who started playing the harmonica at the age of 12, influenced by Sonny Boy Williamson I whom he would hear play at country picnics in Greenville, Mississippi. During his career, Terry played with blues musicians such as Muddy Waters, Howlin' Wolf, Yank Rachell and Henry Townsend.",
+    "activeFrom": "1948",
+    "influences": [
+      "sonny-boy-williamson-i"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "muddy-waters",
+      "howlin-wolf",
+      "yank-rachell",
+      "henry-townsend",
+      "boo-boo-davis"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Doc_Terry",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-04"
+  },
+  {
+    "id": "dorothea-trowbridge",
+    "name": "Dorothea Trowbridge",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1914",
+    "birthPlace": "Dublin, Georgia",
+    "birthCoords": [
+      -82.9183,
+      32.5375
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=lx8rJ8jTf8o",
+    "albums": [
+      {
+        "name": "Slavin' Mama Blues / Bad Luck Blues (1933)",
+        "youtubeLink": "https://www.youtube.com/watch?v=lx8rJ8jTf8o"
+      }
+    ],
+    "description": "Dorothea Trowbridge (born c. 1914), first name also spelled Dorthea, Doretha, was an American blues singer active in St. Louis in the 1930s.",
+    "activeFrom": "1933",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "james-stump-johnson",
+      "pinetop-sparks",
+      "roosevelt-sykes"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Dorothea_Trowbridge",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-04"
+  },
+  {
+    "id": "jeremiah-johnson",
+    "name": "Jeremiah Johnson",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1972",
+    "birthPlace": "St. Louis, Missouri",
+    "birthCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=-vDyNCzILek",
+    "albums": [
+      {
+        "name": "Blues Heart Attack (2016)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Jeremiah Johnson (born 1972) is an American blues singer, guitarist and songwriter. His music blends elements of St. Louis blues, southern rock, and country.",
+    "activeFrom": "1999",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Jeremiah_Johnson_(blues_musician)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-04"
+  },
+  {
+    "id": "kim-massie",
+    "name": "Kim Massie",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kim%20Massie%2C%20November%205%2C%202010%20in%20San%20Francisco.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1958-04-19",
+    "birthPlace": "St. Louis, Missouri",
+    "birthCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "deathDate": "2020-10-12",
+    "deathPlace": "St. Louis, Missouri",
+    "deathCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=azICfJRIfIs",
+    "albums": [
+      {
+        "name": "Soul Serenade (2012)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Kim Massie (April 19, 1958 – October 12, 2020) was an American blues and soul singer who performed mostly in her native St. Louis, Missouri. Schooled in the gospel choirs of East St. Louis, Illinois, she returned to St. Louis in 1999, was discovered sitting in with saxophonist Oliver Sain, and went on to become one of the city's most celebrated blues vocalists, fronting her own band, the Solid Senders.",
+    "activeFrom": "1999",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Kim_Massie",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-04"
+  },
+  {
+    "id": "robert-penn",
+    "name": "Robert Penn",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "Riverside, California",
+    "birthCoords": [
+      -117.3725,
+      33.98222222222222
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=xm7gozEFYbc",
+    "albums": [],
+    "description": "Robert Penn is an American blues guitarist and singer, born in Riverside, California, who relocated to Detroit, Michigan in his youth and became part of the city's blues scene. Leading his own Robert Penn Blues Band, he has performed as an international touring blues artist alongside B.B. King, Aretha Franklin, and Ray Charles.",
+    "activeFrom": "",
+    "influences": [
+      "bb-king"
+    ],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "bb-king",
+      "aretha-franklin",
+      "ray-charles"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Robert_Penn_(musician)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-04"
   }
 ]
