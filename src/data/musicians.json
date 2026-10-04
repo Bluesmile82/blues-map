@@ -1963,7 +1963,8 @@
       "toronzo-cannon",
       "ana-popovic",
       "jarekus-singleton",
-      "mem-shannon"
+      "mem-shannon",
+      "robert-penn"
     ],
     "influencedBy": [
       "robert-johnson",
@@ -1972,8 +1973,7 @@
       "t-bone-walker",
       "robert-lockwood-jr",
       "roy-brown",
-      "roy-hawkins",
-      "robert-penn"
+      "roy-hawkins"
     ],
     "incomplete": false,
     "playedWith": [
@@ -28565,11 +28565,11 @@
     "description": "Roosevelt Sykes (January 31, 1906 – July 17, 1983) was an American blues musician, also known as \"the Honeydripper.",
     "activeFrom": "1921",
     "influences": [
-      "eddie-boyd"
+      "eddie-boyd",
+      "clayton-love"
     ],
     "influencedBy": [
-      "lee-green",
-      "clayton-love"
+      "lee-green"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31102,12 +31102,12 @@
       "hip-linkchain",
       "earring-george-mayweather",
       "junior-wells",
-      "gene-birdlegg-pittman"
+      "gene-birdlegg-pittman",
+      "doc-terry"
     ],
     "influencedBy": [
       "sleepy-john-estes",
-      "will-shade",
-      "doc-terry"
+      "will-shade"
     ],
     "incomplete": false,
     "playedWith": [
@@ -56167,10 +56167,10 @@
     ],
     "description": "Clayton D. Love Jr. (November 16, 1927 – February 28, 2010) was an American blues pianist, who led his own band, the Shufflers, in the early 1950s.",
     "activeFrom": "1951",
-    "influences": [
+    "influences": [],
+    "influencedBy": [
       "roosevelt-sykes"
     ],
-    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "ike-turner",
@@ -56339,10 +56339,10 @@
     ],
     "description": "Terry Adail (December 14, 1921 – August 23, 2001), known professionally as Doc Terry, was an American blues musician who started playing the harmonica at the age of 12, influenced by Sonny Boy Williamson I whom he would hear play at country picnics in Greenville, Mississippi. During his career, Terry played with blues musicians such as Muddy Waters, Howlin' Wolf, Yank Rachell and Henry Townsend.",
     "activeFrom": "1948",
-    "influences": [
+    "influences": [],
+    "influencedBy": [
       "sonny-boy-williamson-i"
     ],
-    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -56500,10 +56500,10 @@
     "albums": [],
     "description": "Robert Penn is an American blues guitarist and singer, born in Riverside, California, who relocated to Detroit, Michigan in his youth and became part of the city's blues scene. Leading his own Robert Penn Blues Band, he has performed as an international touring blues artist alongside B.B. King, Aretha Franklin, and Ray Charles.",
     "activeFrom": "",
-    "influences": [
+    "influences": [],
+    "influencedBy": [
       "bb-king"
     ],
-    "influencedBy": [],
     "incomplete": true,
     "playedWith": [
       "bb-king",
