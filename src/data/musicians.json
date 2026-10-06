@@ -294,7 +294,8 @@
       "coco-montoya",
       "toronzo-cannon",
       "ana-popovic",
-      "joe-guitar-hughes"
+      "joe-guitar-hughes",
+      "bryan-lee"
     ],
     "influencedBy": [
       "lightnin-hopkins",
@@ -387,7 +388,8 @@
       "chris-cain",
       "michael-burks",
       "ana-popovic",
-      "jarekus-singleton"
+      "jarekus-singleton",
+      "bryan-lee"
     ],
     "influencedBy": [
       "muddy-waters",
@@ -792,7 +794,8 @@
     "incomplete": false,
     "playedWith": [
       "deacon-john",
-      "chris-kenner"
+      "chris-kenner",
+      "danny-white"
     ],
     "source": "https://en.wikipedia.org/wiki/Allen_Toussaint",
     "secondaryInstruments": [],
@@ -8072,7 +8075,8 @@
       "the-band",
       "barbara-lynn",
       "deacon-john",
-      "jessie-hill"
+      "jessie-hill",
+      "danny-white"
     ],
     "source": "https://en.wikipedia.org/wiki/Dr._John",
     "secondaryInstruments": [
@@ -8616,7 +8620,8 @@
       "ronnie-earl",
       "roomful-of-blues",
       "eddie-bo",
-      "huey-piano-smith"
+      "huey-piano-smith",
+      "danny-white"
     ],
     "source": "https://en.wikipedia.org/wiki/Earl_King",
     "secondaryInstruments": [
@@ -9482,7 +9487,8 @@
       "etta-james",
       "hip-linkchain",
       "sonny-landreth",
-      "ana-popovic"
+      "ana-popovic",
+      "bryan-lee"
     ],
     "influencedBy": [
       "robert-johnson",
@@ -13304,7 +13310,10 @@
       "willie-nix",
       "bennie-smith",
       "erskine-oglesby",
-      "billy-gayles"
+      "billy-gayles",
+      "oliver-sain",
+      "vernon-guy",
+      "stacy-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Ike_Turner",
     "secondaryInstruments": [
@@ -13693,7 +13702,8 @@
       "wayne-bennett",
       "mark-hummel",
       "little-mack-simmons",
-      "pat-hare"
+      "pat-hare",
+      "larry-thurston"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Cotton",
     "secondaryInstruments": [
@@ -18773,7 +18783,8 @@
       "bb-king",
       "clarence-gatemouth-brown",
       "pinetop-perkins",
-      "henry-townsend"
+      "henry-townsend",
+      "bryan-lee"
     ],
     "source": "https://en.wikipedia.org/wiki/Kenny_Wayne_Shepherd",
     "secondaryInstruments": [
@@ -20757,7 +20768,8 @@
       "albert-king",
       "tyrone-davis",
       "trudy-lynn",
-      "erskine-oglesby"
+      "erskine-oglesby",
+      "oliver-sain"
     ],
     "source": "https://en.wikipedia.org/wiki/Little_Milton",
     "secondaryInstruments": [
@@ -23425,7 +23437,8 @@
     "playedWith": [
       "muddy-waters",
       "james-cotton",
-      "otis-spann"
+      "otis-spann",
+      "larry-thurston"
     ],
     "source": "https://en.wikipedia.org/wiki/Steppin'_Out_(instrumental)",
     "secondaryInstruments": [],
@@ -31050,7 +31063,8 @@
       "jody-williams",
       "willie-nix",
       "mel-brown",
-      "memphis-willie-b"
+      "memphis-willie-b",
+      "oliver-sain"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
     "secondaryInstruments": [
@@ -36082,7 +36096,8 @@
       "john-lee-hooker",
       "albert-king",
       "ike-turner",
-      "clayton-love"
+      "clayton-love",
+      "larry-thurston"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnnie_Johnson",
     "secondaryInstruments": [],
@@ -56817,5 +56832,374 @@
     "source": "https://en.wikipedia.org/wiki/Blanche_Thomas",
     "secondaryInstruments": [],
     "createdAt": "2026-10-02"
+  },
+  {
+    "id": "oliver-sain",
+    "name": "Oliver Sain",
+    "image": "https://alchetron.com/cdn/oliver-sain-d831f48b-0dd0-4912-b054-58f1e0d4303-resize-750.jpeg",
+    "image_source": "alchetron.com",
+    "birthDate": "1932-03-01",
+    "birthPlace": "Dundee",
+    "birthCoords": [
+      -90.4556,
+      34.5242
+    ],
+    "deathDate": "2003-10-28",
+    "deathPlace": "St. Louis",
+    "deathCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Saxophone",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=G1pCE440wIM",
+    "albums": [
+      {
+        "name": "Party Hearty: The Best of Oliver Sain (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Bee5d_v38CE"
+      }
+    ],
+    "description": "Oliver Sain Jr. (March 1, 1932 – October 28, 2003) was an American saxophonist, drummer, bandleader, songwriter and record producer who became a central figure of the St. Louis blues and soul scene. He worked as a drummer behind Sonny Boy Williamson II and spent nearly a decade in Ike Turner's Kings of Rhythm before settling in St. Louis, where he led his own band, served as musical director for Little Milton, discovered singer Fontella Bass, and ran the influential Archway Studios, producing records for countless local artists.",
+    "activeFrom": "1949",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "sonny-boy-williamson",
+      "ike-turner",
+      "little-milton",
+      "vernon-guy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Oliver_Sain",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-05"
+  },
+  {
+    "id": "vernon-guy",
+    "name": "Vernon Guy",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1945-03-21",
+    "birthPlace": "St. Louis",
+    "birthCoords": [
+      -90.1994,
+      38.627
+    ],
+    "deathDate": "1998-09-10",
+    "deathPlace": "St. Louis",
+    "deathCoords": [
+      -90.1994,
+      38.627
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=oiq5cRjTjLA",
+    "albums": [],
+    "description": "Vernon Guy (March 21, 1945 – September 10, 1998) was an American R&B vocalist based in St.  Louis.  Early in his career he toured with bandleader Ike Turner in the Ike & Tina Turner Revue.",
+    "activeFrom": "1961",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "ike-turner",
+      "oliver-sain",
+      "stacy-johnson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Vernon_Guy",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-05"
+  },
+  {
+    "id": "larry-thurston",
+    "name": "Larry Thurston",
+    "image": "https://g123-media.sos-ch-gva-2.exoscale-cdn.com/filer_public_thumbnails/filer_public/e1/3c/e13cde9a-2b55-4c9b-aa12-888198d88915/claude-nobs-the-blues-brothers-montreux-52862-bass-guitar-original-photograph.jpg__600x0_q85_subsampling-2_upscale.jpg",
+    "image_source": "https://www.photo123.ch/en/artists/18714/dany-gignoux-original-photograph/",
+    "birthDate": "",
+    "birthPlace": "",
+    "birthCoords": [
+      0,
+      0
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Soul Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=G3E8aGz2HFY",
+    "albums": [],
+    "description": "Larry \"T\" Thurston is an American soul, R&B, and blues singer, who sang as the lead vocalist for Matt Murphy's band and the Blues Brothers.",
+    "activeFrom": "1980",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "james-cotton",
+      "matt-guitar-murphy",
+      "johnnie-johnson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Larry_Thurston",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-05"
+  },
+  {
+    "id": "stacy-johnson",
+    "name": "Stacy Johnson",
+    "image": "https://stlbluestalent.net/wp-content/uploads/2024/01/StaceyJohnson.jpg",
+    "image_source": "https://stlbluestalent.net/",
+    "birthDate": "1945-04-13",
+    "birthPlace": "St. Louis",
+    "birthCoords": [
+      -90.1994,
+      38.627
+    ],
+    "deathDate": "2017-05-11",
+    "deathPlace": "St. Louis",
+    "deathCoords": [
+      -90.1994,
+      38.627
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Vo-SMUbptTc",
+    "albums": [
+      {
+        "name": "Remove My Doubts (1963)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Vo-SMUbptTc"
+      }
+    ],
+    "description": "Stacy Johnson (April 13, 1945 – May 11, 2017) was an American R&B singer and songwriter best known as a vocalist in the Ike & Tina Turner Revue.  Johnson also released solo records and sang in the St.  Louis based group the Sharpees led by Benny Sharp.",
+    "activeFrom": "1962",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ike-turner",
+      "vernon-guy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Stacy_Johnson_(singer)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-05"
+  },
+  {
+    "id": "ada-brown",
+    "name": "Ada Brown",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ada%20Brown.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1890-05-01",
+    "birthPlace": "Kansas City",
+    "birthCoords": [
+      -94.676388888889,
+      39.106666666667
+    ],
+    "deathDate": "1950-03-30",
+    "deathPlace": "Kansas City",
+    "deathCoords": [
+      -94.676388888889,
+      39.106666666667
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Kansas City Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=IJMplr0tDIY",
+    "albums": [],
+    "description": "Ada Scott Brown (May 1, 1890 – March 30, 1950) was an American blues and jazz singer and actress.  She is best known for her recordings of \"Ill Natural Blues,\" \"Break o' Day Blues,\" and \"Evil Mama Blues.\"",
+    "activeFrom": "1919",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Ada_Brown_(singer)",
+    "secondaryInstruments": [
+      "Piano"
+    ],
+    "createdAt": "2026-10-05"
+  },
+  {
+    "id": "bryan-lee",
+    "name": "Bryan Lee",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bryan%20Lee%20blues.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1943-03-16",
+    "birthPlace": "Two Rivers",
+    "birthCoords": [
+      -87.576388888889,
+      44.155
+    ],
+    "deathDate": "2020-08-21",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=xtppANkiJh0",
+    "albums": [
+      {
+        "name": "Bryan Lee's Greatest Hits (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=tJTaURW08gU"
+      }
+    ],
+    "description": "Bryan Lee (March 16, 1943 – August 21, 2020) was an American blues guitarist and singer based in New Orleans, Louisiana.  He was also known by the nickname 'Braille Blues Daddy' and was a fixture on Bourbon Street since the 1980s.",
+    "activeFrom": "1982",
+    "influences": [],
+    "influencedBy": [
+      "elmore-james",
+      "albert-king",
+      "albert-collins"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "kenny-wayne-shepherd"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Bryan_Lee",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-05"
+  },
+  {
+    "id": "danny-white",
+    "name": "Danny White",
+    "image": "https://d2rvw07oc82cxt.cloudfront.net/wp-content/uploads/2018/10/02142451/Danny-White-publicity-photo.jpeg",
+    "image_source": "acloserwalknola.com",
+    "birthDate": "1931-07-06",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "1996-01-05",
+    "deathPlace": "Capitol Heights, Maryland",
+    "deathCoords": [
+      -76.9144,
+      38.8862
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.07833333333333,
+          29.976111111111113
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=uVNzyw5SqR0",
+    "albums": [],
+    "description": "Joseph Daniel \"Danny\" White (July 6, 1931 – January 5, 1996) was a New Orleans rhythm and blues singer and bandleader best known for his 1958 regional hit \"Kiss Tomorrow Goodbye,\" cut at Cosimo Matassa's studio with Allen Toussaint on piano, and for his 1962 Wardell Quezergue-produced hit \"Loan Me Your Handkerchief,\" written by Earl King and featuring Mac Rebennack (Dr. John) on piano. He led the popular club band Danny White and the Cavaliers on Bourbon Street before later managing the funk group the Meters.",
+    "activeFrom": "1958",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "earl-king",
+      "dr-john",
+      "allen-toussaint"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Danny_White_(New_Orleans_musician)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-05"
+  },
+  {
+    "id": "effie-smith",
+    "name": "Effie Smith",
+    "image": "https://alchetron.com/cdn/effie-smith-c98b63a9-2b90-41ad-be54-26ade4f8bba-resize-750.jpeg",
+    "image_source": "alchetron.com",
+    "birthDate": "1914-04-10",
+    "birthPlace": "McAlester",
+    "birthCoords": [
+      -95.766388888889,
+      34.933055555556
+    ],
+    "deathDate": "1977-02-11",
+    "deathPlace": "Los Angeles",
+    "deathCoords": [
+      -118.24368,
+      34.05223
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=PmmfMMCS0bw",
+    "albums": [
+      {
+        "name": "Vita Records Present the Rockin’ Blues (1982)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Effie Smith 1945-1953 (2004)",
+        "youtubeLink": "https://www.youtube.com/watch?v=PmmfMMCS0bw"
+      }
+    ],
+    "description": "Effie Smith (born Effie Mae Blu or Bly, April 10, 1914 – February 11, 1977) was an American blues and jazz singer and comedian, best known for \"Dial That Telephone\", a song she first recorded in 1953 which became an R&B hit in 1965. \nShe was born in McAlester, Oklahoma, and after an early marriage took the surname of her husband, Fred Smith.   By 1940 she was living in Los Angeles, California, with her two children, and was working as a singer in a WPA project.",
+    "activeFrom": "1940",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Effie_Smith",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-05"
   }
 ]
