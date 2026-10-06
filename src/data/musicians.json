@@ -56553,7 +56553,7 @@
       }
     ],
     "description": "Billy Gayles (October 19, 1931 – April 8, 1993) was an American rhythm & blues drummer and vocalist.  Gayles was a member of Ike Turner's Kings of Rhythm in the 1950s with whom he recorded for Flair Records and Federal Records as the lead vocalist.  Gayles also backed various musicians, including Earl Hooker, Robert Nighthawk, Otis Rush, Albert King, and Richard Arnold \"Groove\" Holmes.",
-    "activeFrom": "",
+    "activeFrom": "1956",
     "influences": [
       "earl-hooker",
       "robert-nighthawk"
@@ -56670,7 +56670,7 @@
       }
     ],
     "description": "The Butler Twins were an American Detroit blues and electric blues duo of the twin brothers Clarence (January 21, 1942 – December 22, 2003) and Curtis Butler (January 21, 1942 – April 9, 2004).  Longtime semiprofessional performers in the local blues scene in Detroit, they gained international recognition following the recording of three albums in the late 1990s.  Their best-known track was \"The Butler's Boogie\".",
-    "activeFrom": "",
+    "activeFrom": "1995",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
@@ -56775,7 +56775,7 @@
     "activeFrom": "",
     "influences": [],
     "influencedBy": [],
-    "incomplete": false,
+    "incomplete": true,
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/New_Orleans_Willie_Jackson",
     "secondaryInstruments": [],
