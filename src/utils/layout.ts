@@ -15,37 +15,34 @@ const MAX_YEAR = 2026;
 
 export type GroupBy = 'style' | 'instrument';
 
-// Tree-shaped style ordering — foundational styles at the CENTER, descendants spread outward.
-// Left branch: Country Blues descendants (outermost → center)
-// Center: Country Blues, Delta Blues, Gospel (the three roots / oldest styles)
-// Right branch: Delta Blues descendants (center → outermost)
+// Left-to-right order of the style limbs in the Tree view: siblings are laid out
+// in this order. Delta sits between its closest kin, Country/Piedmont on one side
+// and Hill Country on the other; the rest is ordered to keep every parent→child
+// and graft line short. The canopy is centred, so the trunk forks below them.
 export const STYLE_ORDER = [
-  // ← Left branch (Country Blues family, outermost first)
-  'Swamp Blues',
-  'New Orleans Blues',
-  'Texas Blues',
-  'Piedmont Blues',
-  'St. Louis Blues',
-  'Classic Blues',
-  'Jazz',
+  'Gospel',
+  'Soul Blues',
+  'Rhythm and Blues',
   'Jump Blues',
+  'Kansas City Blues',
   'West Coast Blues',
-  // — Center (foundational roots) —
+  'Jazz',
+  'New Orleans Blues',
+  'Swamp Blues',
+  'St. Louis Blues',
+  'Boogie Woogie',
+  'Texas Blues',
+  'Classic Blues',
+  'Piedmont Blues',
   'Country Blues',
   'Delta Blues',
-  'Gospel',
-  // Right branch (Delta Blues family, center first) →
   'Hill Country Blues',
-  'Boogie Woogie',
   'Memphis Blues',
-  'Kansas City Blues',
+  'Contemporary Blues',
   'Chicago Blues',
-  'Rhythm and Blues',
-  'Soul Blues',
   'Detroit Blues',
   'British Blues',
   'Blues Rock',
-  'Contemporary Blues',
 ];
 
 // Primary instrument ordering (roughly by prevalence/era in blues)
@@ -687,10 +684,10 @@ export const STYLE_ERA_YEAR: Readonly<Record<string, number>> = {
 // Historical blues style evolution tree: [parent, child]
 // Older / foundational styles are roots; newer derived styles are leaves.
 export const STYLE_TREE_EDGES: ReadonlyArray<[string, string]> = [
+  // The first edge listed for a style is its limb; any later one is a graft.
   ['Delta Blues', 'Hill Country Blues'],
   ['Delta Blues', 'Memphis Blues'],
   ['Delta Blues', 'Chicago Blues'],
-  ['Delta Blues', 'Boogie Woogie'],
   ['Country Blues', 'Piedmont Blues'],
   ['Country Blues', 'Texas Blues'],
   ['Country Blues', 'Classic Blues'],
@@ -700,30 +697,35 @@ export const STYLE_TREE_EDGES: ReadonlyArray<[string, string]> = [
   ['Jazz', 'New Orleans Blues'],
   ['Jazz', 'Jump Blues'],
   // T-Bone's Charlie Christian phrasing, the Nat Cole-model piano trios and
-  // Johnny Otis's swing band: the West Coast sound is jazz-schooled, and jazz
-  // being its earliest parent puts the limb beside Jump where it belongs.
+  // Johnny Otis's swing band: the West Coast sound is jazz-schooled.
   ['Jazz', 'West Coast Blues'],
-  ['Gospel', 'Soul Blues'],
+  // Boogie woogie is barrelhouse piano out of the East Texas lumber and
+  // turpentine camps, not Delta guitar.
+  ['Texas Blues', 'Boogie Woogie'],
   ['Boogie Woogie', 'St. Louis Blues'],
   ['Boogie Woogie', 'Jump Blues'],
   ['Kansas City Blues', 'Jump Blues'],
+  // Swamp is Louisiana (Baton Rouge, Excello); Lightnin' Hopkins is the graft.
+  ['New Orleans Blues', 'Swamp Blues'],
   ['Texas Blues', 'Swamp Blues'],
   ['Texas Blues', 'West Coast Blues'],
-  ['New Orleans Blues', 'Swamp Blues'],
+  // R&B grows out of jump (Louis Jordan); New Orleans fed it.
+  ['Jump Blues', 'Rhythm and Blues'],
   ['New Orleans Blues', 'Rhythm and Blues'],
-  ['Memphis Blues', 'Chicago Blues'],
-  // Stax and Hi: the Memphis soul line, and the strongest cross-style influence
-  // flow in the data that the tree did not already carry.
+  // Soul blues is R&B sung with gospel phrasing; Stax and Hi are the Memphis line.
+  ['Rhythm and Blues', 'Soul Blues'],
+  ['Gospel', 'Soul Blues'],
   ['Memphis Blues', 'Soul Blues'],
+  ['Memphis Blues', 'Chicago Blues'],
+  // Boogie's Chicago years (Pinetop Smith, Ammons, Lewis) fed the city's blues piano.
+  ['Boogie Woogie', 'Chicago Blues'],
   ['Chicago Blues', 'Detroit Blues'],
   ['Chicago Blues', 'British Blues'],
   ['Chicago Blues', 'Blues Rock'],
   ['British Blues', 'Blues Rock'],
   ['Chicago Blues', 'Contemporary Blues'],
   ['Texas Blues', 'Contemporary Blues'],
-  ['Jump Blues', 'Rhythm and Blues'],
   ['Jump Blues', 'West Coast Blues'],
-  ['Rhythm and Blues', 'Soul Blues'],
 ];
 export interface StyleTreePath {
   path: Position2D[];
