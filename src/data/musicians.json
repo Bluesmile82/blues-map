@@ -56131,8 +56131,8 @@
   {
     "id": "doc-terry",
     "name": "Doc Terry",
-    "image": "",
-    "image_source": null,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnzDZbrt4yFxAVVbw2Ry_x9IJJV5vGAfVQvKSpfr1XLcAgMGoUWEvSJgHyR4iA5f6HTM5pA3Ti1qjSi0pbTprnuXkAV-BLM2XPRUOwMNwBM_TB5tuXaOX6saafaQSlRhGAH9NIFdR_nokQkJxCvfeRCS0AiKN_wKOIqTDBw8-HcaeSp9Oi91nLmw/w1200-h630-p-k-no-nu/DOC%20TERRY.jpg",
+    "image_source": "sentirelblues.com",
     "birthDate": "1921-12-14",
     "birthPlace": "Sunflower, Mississippi",
     "birthCoords": [
@@ -56179,10 +56179,8 @@
     ],
     "description": "Terry Adail (December 14, 1921 – August 23, 2001), known professionally as Doc Terry, was an American blues musician who started playing the harmonica at the age of 12, influenced by Sonny Boy Williamson I whom he would hear play at country picnics in Greenville, Mississippi.  During his career, Terry played with blues musicians such as Muddy Waters, Howlin' Wolf, Yank Rachell and Henry Townsend.",
     "activeFrom": "1941",
-    "influences": [],
-    "influencedBy": [
-      "sonny-boy-williamson-i"
-    ],
+    "influences": ["sonny-boy-williamson-i"],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "muddy-waters",
@@ -56197,8 +56195,8 @@
   {
     "id": "dorothea-trowbridge",
     "name": "Dorothea Trowbridge",
-    "image": "",
-    "image_source": null,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyavz9vlr_ztAL5OTfaJzy8IKDH1plMYgbu9GdAXlhcO_iqFcoc61tfMMmA_5m8t0wn1Q7W4UEr8BiatK1f27dFJsqnWAcrQQNdfXYUMkxwcl84rsttD5MUf4nSlO40UuJLltrqjQpiUQKUfsepupm9aZIpgtOSj750U_iKplc-4W7bQf1fI3y8Q/w1200-h630-p-k-no-nu/DOROTHEA.jpg",
+    "image_source": "sentirelblues.com",
     "birthDate": "1914",
     "birthPlace": "Dublin, Georgia",
     "birthCoords": [
@@ -56288,11 +56286,11 @@
     ],
     "description": "Billy Gayles (October 19, 1931 – April 8, 1993) was an American rhythm & blues drummer and vocalist.  Gayles was a member of Ike Turner's Kings of Rhythm in the 1950s with whom he recorded for Flair Records and Federal Records as the lead vocalist.  Gayles also backed various musicians, including Earl Hooker, Robert Nighthawk, Otis Rush, Albert King, and Richard Arnold \"Groove\" Holmes.",
     "activeFrom": "",
-    "influences": [],
-    "influencedBy": [
+    "influences": [
       "earl-hooker",
       "robert-nighthawk"
     ],
+    "influencedBy": [],
     "incomplete": false,
     "playedWith": [
       "earl-hooker",
@@ -56310,8 +56308,8 @@
   {
     "id": "big-miller",
     "name": "Big Miller",
-    "image": "",
-    "image_source": null,
+    "image": "https://yardbirdsuite.com/wp-content/uploads/2022/11/Big-Miller-color.jpg",
+    "image_source": "yardbirdsuite.com",
     "birthDate": "1922-12-18",
     "birthPlace": "Sioux City, Iowa",
     "birthCoords": [
@@ -56367,8 +56365,8 @@
   {
     "id": "the-butler-twins",
     "name": "The Butler Twins",
-    "image": "",
-    "image_source": null,
+    "image": "https://i.discogs.com/PGZqjG_YSsZltHhWFRkUF7FmApD2SoPDeP2D_i1OA3g/rs:fit/g:sm/q:90/h:600/w:579/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE0MjIy/MjUtMTQwNDMyNzQ1/OC05MDI5LmpwZWc.jpeg",
+    "image_source": "discogs",
     "birthDate": "1942-01-21",
     "birthPlace": "Killen, Alabama",
     "birthCoords": [
@@ -56419,8 +56417,8 @@
   {
     "id": "joe-weaver",
     "name": "Joe Weaver",
-    "image": "",
-    "image_source": null,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIlJgDGlKsgtwPnMe-euqvvIXtk6XlM_6N515TTxwEXx8eNk6NuM_rnZ4gsVgRtg9Xg0SID0_RyWBGNux1-VeqWTJHr3uFWpWggknuTKfrVp8PSzB4r_FvGmSNM_LTblYr_LCUjE-mQ5XcQ8dFNNFwmpPc6P9-lYEJYjPOBH2MA-tdvwchYUi63c0QhLLn/s280/joeweaver.jpg",
+    "image_source": "fromthevaults-boppinbob.blogspot.com",
     "birthDate": "1934-08-27",
     "birthPlace": "Detroit",
     "birthCoords": [
@@ -56497,7 +56495,7 @@
       }
     ],
     "instrument": "Vocals",
-    "bluesStyle": "Vaudeville Blues",
+    "bluesStyle": "Classic Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=yFEFzNcwHuo",
     "albums": [
       {
@@ -56518,8 +56516,8 @@
   {
     "id": "blanche-thomas",
     "name": "Blanche Thomas",
-    "image": "",
-    "image_source": null,
+    "image": "https://originalconcertposters.org/wp-content/pics/Blanche_Thomas_Memorial_Concert_Poster_1977_New_Orleans_01_zhcu.jpg",
+    "image_source": "originalconcertposters.org",
     "birthDate": "1922-10-05",
     "birthPlace": "New Orleans, Louisiana",
     "birthCoords": [
