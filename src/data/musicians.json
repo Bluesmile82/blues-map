@@ -56118,8 +56118,8 @@
   {
     "id": "billy-davis",
     "name": "Billy Davis",
-    "image": "",
-    "image_source": null,
+    "image": "https://localhop-prod.s3.amazonaws.com/uploads/a1c68db844501601dd9d14c910e5c6dd_Billy%20Davis%20photo%20by%20Richard%20Blondy.jpg",
+    "image_source": "events.getlocalhop.com",
     "birthDate": "1938-04-29",
     "birthPlace": "Bentonia, Mississippi",
     "birthCoords": [
@@ -56244,8 +56244,8 @@
   {
     "id": "clayton-love",
     "name": "Clayton Love",
-    "image": "",
-    "image_source": null,
+    "image": "https://blogger.googleusercontent.com/img/a/AVvXsEhjMEJqyjFXUUNp8-28iKxkQw5mMTaEcSqOUTyDh0cGGlNhjMeiMyxbRg5HGnNyvEYbEoxtabgObXm5A0OczGhDtwicQwvv2gTWe-fUCPiT3QG5_Nh5z-W5kF8i5lF2edWQzkXCBFT4tH7NJR3bmSHKkcrxvDyyAmVZS3pKByhRWCf2zu52Vx4=w1200-h630-p-k-no-nu",
+    "image_source": "sentirelblues.blogspot.com",
     "birthDate": "1927-11-16",
     "birthPlace": "Mattson, Mississippi",
     "birthCoords": [
@@ -56311,8 +56311,8 @@
   {
     "id": "erskine-oglesby",
     "name": "Erskine Oglesby",
-    "image": "",
-    "image_source": null,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0AL0eBDBQw8v2zpQhaVfIjyvU4LndC-LA2DvyYH6PbM9K5joWqR5OcwZVlSM78aNPE4eQTSBTT9QTF9lq-Ulcn4MCMVgARv0oufBfTARkF3M7t2BqqASi0vpR5W3fHIuVU6jj0qv58b3i/s1600/COVER.jpg",
+    "image_source": "egrojworld.blogspot.com",
     "birthDate": "1937-01-20",
     "birthPlace": "St. Louis",
     "birthCoords": [
