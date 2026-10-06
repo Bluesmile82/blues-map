@@ -56241,54 +56241,6 @@
     "createdAt": "2026-10-04"
   },
   {
-    "id": "bessie-mae-smith",
-    "name": "Bessie Mae Smith",
-    "image": "",
-    "image_source": null,
-    "birthDate": "",
-    "birthPlace": "",
-    "birthCoords": [
-      0,
-      0
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [
-      {
-        "place": "St. Louis",
-        "coords": [
-          -90.1994,
-          38.627
-        ]
-      }
-    ],
-    "instrument": "",
-    "bluesStyle": "St. Louis Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=FqQIVrzHjDs",
-    "albums": [
-      {
-        "name": "St. Louis Bessie (Bessie Mae Smith) (1927-30) (1989)",
-        "youtubeLink": "https://www.youtube.com/watch?v=FqQIVrzHjDs"
-      },
-      {
-        "name": "St. Louis Women. Vol. 1: St. Louis Bessie (Mae Smith) 1927-1928 and Alice Moore 1929 (1994)",
-        "youtubeLink": ""
-      }
-    ],
-    "description": "Bessie Mae Smith was an American blues singer from St. Louis, who recorded for the Okeh, Vocalion and Paramount record labels under a variety of names between 1927 and 1941. She is reported to have been married to Delta bluesman Big Joe Williams, who sometimes credited her with writing his song \"Baby, Please Don't Go\".",
-    "activeFrom": "1927",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": true,
-    "playedWith": [
-      "big-joe-williams"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Bessie_Mae_Smith",
-    "secondaryInstruments": [],
-    "createdAt": "2026-10-04"
-  },
-  {
     "id": "doc-terry",
     "name": "Doc Terry",
     "image": "",
@@ -56411,8 +56363,8 @@
   {
     "id": "jeremiah-johnson",
     "name": "Jeremiah Johnson",
-    "image": "",
-    "image_source": null,
+    "image": "https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/148821/beacd5596fd34ab5c8196233135f1c76da045c7f/original/blues-heart-attack-edit.jpg/!!/b:W1siZXh0cmFjdCIseyJsZWZ0IjoyNTUsInRvcCI6MCwid2lkdGgiOjY0MiwiaGVpZ2h0Ijo2NDJ9XSxbInJlc2l6ZSIsOTQyXSxbIm1heCJdLFsid2UiXV0%3D/meta:eyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg",
+    "image_source": "jeremiahjohnsonband.com",
     "birthDate": "1972",
     "birthPlace": "St. Louis, Missouri",
     "birthCoords": [
@@ -56482,8 +56434,8 @@
   {
     "id": "robert-penn",
     "name": "Robert Penn",
-    "image": "",
-    "image_source": null,
+    "image": "https://media1.jpc.de/image/w600/front/0/0808459946951.jpg",
+    "image_source": "jpc.de",
     "birthDate": "",
     "birthPlace": "Riverside, California",
     "birthCoords": [
