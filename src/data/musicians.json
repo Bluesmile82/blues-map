@@ -56836,8 +56836,8 @@
   {
     "id": "oliver-sain",
     "name": "Oliver Sain",
-    "image": "",
-    "image_source": null,
+    "image": "https://alchetron.com/cdn/oliver-sain-d831f48b-0dd0-4912-b054-58f1e0d4303-resize-750.jpeg",
+    "image_source": "alchetron.com",
     "birthDate": "1932-03-01",
     "birthPlace": "Dundee",
     "birthCoords": [
@@ -56946,7 +56946,7 @@
     ],
     "instrument": "Vocals",
     "bluesStyle": "St. Louis Blues",
-    "youtubeLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=oiq5cRjTjLA",
     "albums": [],
     "description": "Vernon Guy (March 21, 1945 – September 10, 1998) was an American R&B vocalist based in St.  Louis.  Early in his career he toured with bandleader Ike Turner in the Ike & Tina Turner Revue.",
     "activeFrom": "1961",
@@ -56965,8 +56965,8 @@
   {
     "id": "larry-thurston",
     "name": "Larry Thurston",
-    "image": "",
-    "image_source": null,
+    "image": "https://g123-media.sos-ch-gva-2.exoscale-cdn.com/filer_public_thumbnails/filer_public/e1/3c/e13cde9a-2b55-4c9b-aa12-888198d88915/claude-nobs-the-blues-brothers-montreux-52862-bass-guitar-original-photograph.jpg__600x0_q85_subsampling-2_upscale.jpg",
+    "image_source": "https://www.photo123.ch/en/artists/18714/dany-gignoux-original-photograph/",
     "birthDate": "",
     "birthPlace": "",
     "birthCoords": [
@@ -56978,7 +56978,7 @@
     "deathCoords": null,
     "spentTimePlaces": [],
     "instrument": "Vocals",
-    "bluesStyle": "St. Louis Blues",
+    "bluesStyle": "Soul Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=G3E8aGz2HFY",
     "albums": [],
     "description": "Larry \"T\" Thurston is an American soul, R&B, and blues singer, who sang as the lead vocalist for Matt Murphy's band and the Blues Brothers.",
@@ -56998,8 +56998,8 @@
   {
     "id": "stacy-johnson",
     "name": "Stacy Johnson",
-    "image": "",
-    "image_source": null,
+    "image": "https://stlbluestalent.net/wp-content/uploads/2024/01/StaceyJohnson.jpg",
+    "image_source": "https://stlbluestalent.net/",
     "birthDate": "1945-04-13",
     "birthPlace": "St. Louis",
     "birthCoords": [
@@ -57120,8 +57120,8 @@
   {
     "id": "danny-white",
     "name": "Danny White",
-    "image": "",
-    "image_source": null,
+    "image": "https://d2rvw07oc82cxt.cloudfront.net/wp-content/uploads/2018/10/02142451/Danny-White-publicity-photo.jpeg",
+    "image_source": "acloserwalknola.com",
     "birthDate": "1931-07-06",
     "birthPlace": "New Orleans",
     "birthCoords": [
@@ -57145,13 +57145,13 @@
     ],
     "instrument": "Vocals",
     "bluesStyle": "New Orleans Blues",
-    "youtubeLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=uVNzyw5SqR0",
     "albums": [],
     "description": "Joseph Daniel \"Danny\" White (July 6, 1931 – January 5, 1996) was a New Orleans rhythm and blues singer and bandleader best known for his 1958 regional hit \"Kiss Tomorrow Goodbye,\" cut at Cosimo Matassa's studio with Allen Toussaint on piano, and for his 1962 Wardell Quezergue-produced hit \"Loan Me Your Handkerchief,\" written by Earl King and featuring Mac Rebennack (Dr. John) on piano. He led the popular club band Danny White and the Cavaliers on Bourbon Street before later managing the funk group the Meters.",
     "activeFrom": "1958",
     "influences": [],
     "influencedBy": [],
-    "incomplete": true,
+    "incomplete": false,
     "playedWith": [
       "earl-king",
       "dr-john",
@@ -57164,8 +57164,8 @@
   {
     "id": "effie-smith",
     "name": "Effie Smith",
-    "image": "",
-    "image_source": null,
+    "image": "https://alchetron.com/cdn/effie-smith-c98b63a9-2b90-41ad-be54-26ade4f8bba-resize-750.jpeg",
+    "image_source": "alchetron.com",
     "birthDate": "1914-04-10",
     "birthPlace": "McAlester",
     "birthCoords": [
