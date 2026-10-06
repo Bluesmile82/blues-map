@@ -408,6 +408,7 @@
       "john-mayall",
       "larry-davis",
       "chris-cain",
+      "erskine-oglesby",
       "billy-gayles"
     ],
     "source": "https://en.wikipedia.org/wiki/Albert_King",
@@ -1436,7 +1437,8 @@
     "influences": [
       "elvis-presley",
       "clarence-carter",
-      "robert-lowery"
+      "robert-lowery",
+      "billy-davis"
     ],
     "influencedBy": [
       "tommy-johnson",
@@ -13301,6 +13303,7 @@
       "barbara-lynn",
       "willie-nix",
       "bennie-smith",
+      "erskine-oglesby",
       "billy-gayles"
     ],
     "source": "https://en.wikipedia.org/wiki/Ike_Turner",
@@ -20753,7 +20756,8 @@
     "playedWith": [
       "albert-king",
       "tyrone-davis",
-      "trudy-lynn"
+      "trudy-lynn",
+      "erskine-oglesby"
     ],
     "source": "https://en.wikipedia.org/wiki/Little_Milton",
     "secondaryInstruments": [
@@ -21380,7 +21384,8 @@
       "bessie-smith",
       "roosevelt-sykes",
       "georgia-white",
-      "chippie-hill"
+      "chippie-hill",
+      "myra-taylor"
     ],
     "source": "https://en.wikipedia.org/wiki/Lonnie_Johnson_(musician)",
     "secondaryInstruments": [
@@ -36076,7 +36081,8 @@
       "buddy-guy",
       "john-lee-hooker",
       "albert-king",
-      "ike-turner"
+      "ike-turner",
+      "clayton-love"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnnie_Johnson",
     "secondaryInstruments": [],
@@ -56129,6 +56135,251 @@
     "createdAt": "2026-10-01"
   },
   {
+    "id": "billy-davis",
+    "name": "Billy Davis",
+    "image": "https://localhop-prod.s3.amazonaws.com/uploads/a1c68db844501601dd9d14c910e5c6dd_Billy%20Davis%20photo%20by%20Richard%20Blondy.jpg",
+    "image_source": "events.getlocalhop.com",
+    "birthDate": "1938-04-29",
+    "birthPlace": "Bentonia, Mississippi",
+    "birthCoords": [
+      -90.37222,
+      32.64611
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Southfield, Michigan",
+        "coords": [
+          -83.221666666667,
+          42.473333333333
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=lYUlwR57xDc",
+    "albums": [
+      {
+        "name": "I Remember",
+        "youtubeLink": "https://www.youtube.com/watch?v=lYUlwR57xDc"
+      }
+    ],
+    "description": "Billy Davis is a Detroit blues guitarist, singer, and songwriter born in Bentonia, Mississippi, who moved to Detroit as a child and became one of the city's most enduring electric blues guitarists. He toured and recorded as a member of Hank Ballard & the Midnighters from 1958 to 1965, worked as a session guitarist for Jackie Wilson, the Isley Brothers, the Drifters, and Ben E. King, and in 1959 befriended and mentored a teenage Jimi Hendrix, teaching him guitar technique. He was inducted into the Rock and Roll Hall of Fame in 2012 for his work with the Midnighters and continues to perform in the Detroit area.",
+    "activeFrom": "1958",
+    "influences": [],
+    "influencedBy": [
+      "arthur-crudup"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Billy_Davis_(guitarist)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-03"
+  },
+  {
+    "id": "myra-taylor",
+    "name": "Myra Taylor",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Myra%20Taylor%20at%20her%2094th%20birthday%20party%20at%20Knuckleheads%20Saloon.png?width=500",
+    "image_source": null,
+    "birthDate": "1917-02-24",
+    "birthPlace": "Bonner Springs",
+    "birthCoords": [
+      -94.8792,
+      39.0667
+    ],
+    "deathDate": "2011-12-09",
+    "deathPlace": "Kansas City",
+    "deathCoords": [
+      -94.583333333333,
+      39.05
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Kansas City Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=zw_IgOlzjbA",
+    "albums": [
+      {
+        "name": "Spider and the Fly (1946)",
+        "youtubeLink": "https://www.youtube.com/watch?v=oUeh51CrM50"
+      },
+      {
+        "name": "My Night to Dream (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=-r4yjgq72Dk"
+      }
+    ],
+    "description": "Myra Taylor (February 24, 1917 – December 9, 2011) was a Kansas City blues and jazz singer known for a vocal style one reviewer described as having \"a subtle sob and a real blues vibrato.\" She rose to prominence fronting Harlan Leonard and His Rockets, scoring a hit with \"Spider and the Fly\" (1946), and went on to perform for eight decades, including USO tours through 32 countries, remaining one of the last voices of Kansas City's 1930s blues and jazz heyday.",
+    "activeFrom": "1940",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "lonnie-johnson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Myra_Taylor_(singer)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-03"
+  },
+  {
+    "id": "floyd-smith",
+    "name": "Floyd Smith",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Floyd%20Smith%20and%20Dick%20Wilson%2C%20Howard%20Theater%2C%20Washington%2C%20D.C.%2C%20not%20after%201941%20(William%20P.%20Gottlieb%2007871).jpg?width=500",
+    "image_source": null,
+    "birthDate": "1917-01-25",
+    "birthPlace": "St. Louis",
+    "birthCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "deathDate": "1982-03-29",
+    "deathPlace": "Indianapolis",
+    "deathCoords": [
+      -86.158055555556,
+      39.768611111111
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=lXYZ4AicW4s",
+    "albums": [
+      {
+        "name": "Floyd's Guitar Blues (1947 re-recording)",
+        "youtubeLink": "https://www.youtube.com/watch?v=lXYZ4AicW4s"
+      }
+    ],
+    "description": "Floyd George Smith (January 25, 1917 – March 29, 1982), also credited as Floyd \"Guitar\" Smith, was a St. Louis-born guitarist whose 1939 recording of \"Floyd's Guitar Blues\" with Andy Kirk and His Twelve Clouds of Joy is widely considered the first hit record built around a blues solo on electric (steel) guitar, helping establish the instrument in blues and jazz. He spent his career in territory bands including Andy Kirk's orchestra and later led his own small combos, re-recording his signature tune for a new generation of listeners.",
+    "activeFrom": "1937",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Floyd_Smith_(musician)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-03"
+  },
+  {
+    "id": "clayton-love",
+    "name": "Clayton Love",
+    "image": "https://blogger.googleusercontent.com/img/a/AVvXsEhjMEJqyjFXUUNp8-28iKxkQw5mMTaEcSqOUTyDh0cGGlNhjMeiMyxbRg5HGnNyvEYbEoxtabgObXm5A0OczGhDtwicQwvv2gTWe-fUCPiT3QG5_Nh5z-W5kF8i5lF2edWQzkXCBFT4tH7NJR3bmSHKkcrxvDyyAmVZS3pKByhRWCf2zu52Vx4=w1200-h630-p-k-no-nu",
+    "image_source": "sentirelblues.blogspot.com",
+    "birthDate": "1927-11-16",
+    "birthPlace": "Mattson, Mississippi",
+    "birthCoords": [
+      -90.51,
+      34.0978
+    ],
+    "deathDate": "2010-02-28",
+    "deathPlace": "St. Louis",
+    "deathCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "Vicksburg",
+        "coords": [
+          -90.8773,
+          32.3526
+        ]
+      },
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=wYaLZjsCtbE",
+    "albums": [
+      {
+        "name": "Strange Kind of Feeling (1993)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Bobbin Blues Masters, Volume 1 (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=fvXyrb-syT4"
+      }
+    ],
+    "description": "Clayton D. Love Jr. (November 16, 1927 – February 28, 2010) was an American blues pianist who grew up in Clarksdale, Mississippi and led his own band, the Shufflers, in the early 1950s before recording for the Trumpet, Aladdin, Modern, Groove, and Bobbin labels. He later became a vocalist and pianist with Ike Turner's Kings of Rhythm, singing lead on several of the group's Federal Records sides in 1957, and in his later years he reunited with former Kings of Rhythm bandmates for European tours and the 1991 album Rockin' Eighty-Eights alongside Johnnie Johnson.",
+    "activeFrom": "1951",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ike-turner",
+      "erskine-oglesby",
+      "johnnie-johnson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Clayton_Love",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-03"
+  },
+  {
+    "id": "erskine-oglesby",
+    "name": "Erskine Oglesby",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0AL0eBDBQw8v2zpQhaVfIjyvU4LndC-LA2DvyYH6PbM9K5joWqR5OcwZVlSM78aNPE4eQTSBTT9QTF9lq-Ulcn4MCMVgARv0oufBfTARkF3M7t2BqqASi0vpR5W3fHIuVU6jj0qv58b3i/s1600/COVER.jpg",
+    "image_source": "egrojworld.blogspot.com",
+    "birthDate": "1937-01-20",
+    "birthPlace": "St. Louis",
+    "birthCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "deathDate": "2004-03-07",
+    "deathPlace": "St. Louis",
+    "deathCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Saxophone",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=5jnGv0B50Cc",
+    "albums": [
+      {
+        "name": "Jack and Coke",
+        "youtubeLink": "https://www.youtube.com/watch?v=5jnGv0B50Cc"
+      }
+    ],
+    "description": "Erskine Oglesby (January 20, 1937 – March 7, 2004) was a St. Louis tenor saxophonist and blues singer who, as a teenager, played in a local band alongside a young Chuck Berry. He later performed as a baritone saxophonist and vocalist with Ike Turner's Kings of Rhythm, recording and touring with artists including Albert King and Little Milton, and in the late 1990s and 2000s he released solo albums on the Black & Tan Records label, including Blues Dancin' (2000) and Honkin' & Shoutin' (2001).",
+    "activeFrom": "1953",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ike-turner",
+      "albert-king",
+      "little-milton",
+      "clayton-love"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Erskine_Oglesby",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-03"
+  },
+  {
     "id": "doc-terry",
     "name": "Doc Terry",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnzDZbrt4yFxAVVbw2Ry_x9IJJV5vGAfVQvKSpfr1XLcAgMGoUWEvSJgHyR4iA5f6HTM5pA3Ti1qjSi0pbTprnuXkAV-BLM2XPRUOwMNwBM_TB5tuXaOX6saafaQSlRhGAH9NIFdR_nokQkJxCvfeRCS0AiKN_wKOIqTDBw8-HcaeSp9Oi91nLmw/w1200-h630-p-k-no-nu/DOC%20TERRY.jpg",
@@ -56179,7 +56430,9 @@
     ],
     "description": "Terry Adail (December 14, 1921 – August 23, 2001), known professionally as Doc Terry, was an American blues musician who started playing the harmonica at the age of 12, influenced by Sonny Boy Williamson I whom he would hear play at country picnics in Greenville, Mississippi.  During his career, Terry played with blues musicians such as Muddy Waters, Howlin' Wolf, Yank Rachell and Henry Townsend.",
     "activeFrom": "1941",
-    "influences": ["sonny-boy-williamson-i"],
+    "influences": [
+      "sonny-boy-williamson-i"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
