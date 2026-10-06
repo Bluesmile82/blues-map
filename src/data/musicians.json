@@ -407,7 +407,8 @@
       "mike-bloomfield",
       "john-mayall",
       "larry-davis",
-      "chris-cain"
+      "chris-cain",
+      "billy-gayles"
     ],
     "source": "https://en.wikipedia.org/wiki/Albert_King",
     "secondaryInstruments": [
@@ -8512,7 +8513,8 @@
     "activeFrom": "1952",
     "influences": [
       "junior-watson",
-      "maxwell-street-jimmy-davis"
+      "maxwell-street-jimmy-davis",
+      "billy-gayles"
     ],
     "influencedBy": [
       "t-bone-walker",
@@ -8531,7 +8533,8 @@
       "muddy-waters",
       "albert-collins",
       "little-walter",
-      "little-mack-simmons"
+      "little-mack-simmons",
+      "billy-gayles"
     ],
     "source": "https://en.wikipedia.org/wiki/Earl_Hooker",
     "secondaryInstruments": [],
@@ -12631,7 +12634,8 @@
       "willie-brown",
       "son-house",
       "jd-short",
-      "tommy-bankhead"
+      "tommy-bankhead",
+      "doc-terry"
     ],
     "source": "https://en.wikipedia.org/wiki/Henry_Townsend_(musician)",
     "secondaryInstruments": [
@@ -12994,7 +12998,8 @@
       "albert-king",
       "detroit-junior",
       "pat-hare",
-      "tommy-bankhead"
+      "tommy-bankhead",
+      "doc-terry"
     ],
     "source": "https://en.wikipedia.org/wiki/Howlin'_Wolf",
     "secondaryInstruments": [
@@ -13295,7 +13300,8 @@
       "etta-james",
       "barbara-lynn",
       "willie-nix",
-      "bennie-smith"
+      "bennie-smith",
+      "billy-gayles"
     ],
     "source": "https://en.wikipedia.org/wiki/Ike_Turner",
     "secondaryInstruments": [
@@ -13963,7 +13969,8 @@
       "eddie-cleanhead-vinson",
       "julia-lee",
       "crown-prince-waterford",
-      "priscilla-bowman"
+      "priscilla-bowman",
+      "big-miller"
     ],
     "source": "https://en.wikipedia.org/wiki/Jay_McShann",
     "secondaryInstruments": [
@@ -16190,7 +16197,8 @@
       "lc-robinson",
       "detroit-junior",
       "mel-brown",
-      "kim-simmonds"
+      "kim-simmonds",
+      "joe-weaver"
     ],
     "source": "https://en.wikipedia.org/wiki/Boom_Boom_(John_Lee_Hooker_song)",
     "secondaryInstruments": [
@@ -16526,7 +16534,8 @@
     "incomplete": false,
     "playedWith": [
       "lowell-fulson",
-      "alberta-adams"
+      "alberta-adams",
+      "joe-weaver"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnnie_Bassett",
     "secondaryInstruments": [
@@ -24868,7 +24877,8 @@
       "pat-hare",
       "dave-myers",
       "dave-alexander",
-      "schoolboy-cleve"
+      "schoolboy-cleve",
+      "doc-terry"
     ],
     "source": "https://en.wikipedia.org/wiki/Muddy_Waters",
     "secondaryInstruments": [
@@ -25388,7 +25398,8 @@
       "buddy-guy",
       "albert-king",
       "jody-williams",
-      "wayne-bennett"
+      "wayne-bennett",
+      "billy-gayles"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Rush",
     "secondaryInstruments": [
@@ -26719,7 +26730,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "dorothea-trowbridge"
+    ],
     "source": "https://en.wikipedia.org/wiki/Pinetop_Sparks",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -28108,7 +28121,8 @@
     "activeFrom": "1937",
     "influences": [
       "cedell-davis",
-      "louis-myers"
+      "louis-myers",
+      "billy-gayles"
     ],
     "influencedBy": [
       "papa-charlie-jackson",
@@ -28124,7 +28138,8 @@
       "tampa-red",
       "cedell-davis",
       "little-mack-simmons",
-      "tommy-bankhead"
+      "tommy-bankhead",
+      "billy-gayles"
     ],
     "source": "https://en.wikipedia.org/wiki/Robert_Nighthawk",
     "secondaryInstruments": [
@@ -28575,7 +28590,8 @@
       "lonnie-johnson",
       "sugar-blue",
       "charley-jordan",
-      "walter-davis"
+      "walter-davis",
+      "dorothea-trowbridge"
     ],
     "source": "https://en.wikipedia.org/wiki/Roosevelt_Sykes",
     "secondaryInstruments": [],
@@ -31100,7 +31116,8 @@
       "hip-linkchain",
       "earring-george-mayweather",
       "junior-wells",
-      "gene-birdlegg-pittman"
+      "gene-birdlegg-pittman",
+      "doc-terry"
     ],
     "influencedBy": [
       "sleepy-john-estes",
@@ -34688,7 +34705,8 @@
       "sleepy-john-estes",
       "taj-mahal",
       "hammie-nixon",
-      "noah-lewis"
+      "noah-lewis",
+      "doc-terry"
     ],
     "source": "https://en.wikipedia.org/wiki/Yank_Rachell",
     "secondaryInstruments": [
@@ -55831,7 +55849,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "edith-north-johnson"
+      "edith-north-johnson",
+      "dorothea-trowbridge"
     ],
     "source": "https://en.wikipedia.org/wiki/James_%22Stump%22_Johnson",
     "secondaryInstruments": [
@@ -56108,5 +56127,442 @@
     "source": "https://en.wikipedia.org/wiki/James_%22Sugar_Boy%22_Crawford",
     "secondaryInstruments": [],
     "createdAt": "2026-10-01"
+  },
+  {
+    "id": "doc-terry",
+    "name": "Doc Terry",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnzDZbrt4yFxAVVbw2Ry_x9IJJV5vGAfVQvKSpfr1XLcAgMGoUWEvSJgHyR4iA5f6HTM5pA3Ti1qjSi0pbTprnuXkAV-BLM2XPRUOwMNwBM_TB5tuXaOX6saafaQSlRhGAH9NIFdR_nokQkJxCvfeRCS0AiKN_wKOIqTDBw8-HcaeSp9Oi91nLmw/w1200-h630-p-k-no-nu/DOC%20TERRY.jpg",
+    "image_source": "sentirelblues.com",
+    "birthDate": "1921-12-14",
+    "birthPlace": "Sunflower, Mississippi",
+    "birthCoords": [
+      -90.7562,
+      33.5595
+    ],
+    "deathDate": "2001-08-23",
+    "deathPlace": "East St. Louis, Illinois",
+    "deathCoords": [
+      -90.1504,
+      38.6244
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=nkynRP8lj_0",
+    "albums": [
+      {
+        "name": "Live at the St. Louis Blues Festival (1990)",
+        "youtubeLink": "https://www.youtube.com/watch?v=nkynRP8lj_0"
+      }
+    ],
+    "description": "Terry Adail (December 14, 1921 – August 23, 2001), known professionally as Doc Terry, was an American blues musician who started playing the harmonica at the age of 12, influenced by Sonny Boy Williamson I whom he would hear play at country picnics in Greenville, Mississippi.  During his career, Terry played with blues musicians such as Muddy Waters, Howlin' Wolf, Yank Rachell and Henry Townsend.",
+    "activeFrom": "1941",
+    "influences": ["sonny-boy-williamson-i"],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "muddy-waters",
+      "howlin-wolf",
+      "yank-rachell",
+      "henry-townsend"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Doc_Terry",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-02"
+  },
+  {
+    "id": "dorothea-trowbridge",
+    "name": "Dorothea Trowbridge",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyavz9vlr_ztAL5OTfaJzy8IKDH1plMYgbu9GdAXlhcO_iqFcoc61tfMMmA_5m8t0wn1Q7W4UEr8BiatK1f27dFJsqnWAcrQQNdfXYUMkxwcl84rsttD5MUf4nSlO40UuJLltrqjQpiUQKUfsepupm9aZIpgtOSj750U_iKplc-4W7bQf1fI3y8Q/w1200-h630-p-k-no-nu/DOROTHEA.jpg",
+    "image_source": "sentirelblues.com",
+    "birthDate": "1914",
+    "birthPlace": "Dublin, Georgia",
+    "birthCoords": [
+      -82.9183,
+      32.5375
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=lx8rJ8jTf8o",
+    "albums": [
+      {
+        "name": "Slavin' Mama Blues (1935)",
+        "youtubeLink": "https://www.youtube.com/watch?v=lx8rJ8jTf8o"
+      }
+    ],
+    "description": "Dorothea Trowbridge (born c.  1914), first name also spelled Dorthea, Doretha, was an American blues singer active in St.  Louis in the 1930s.",
+    "activeFrom": "1934",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "pinetop-sparks",
+      "james-stump-johnson",
+      "roosevelt-sykes"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Dorothea_Trowbridge",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-02"
+  },
+  {
+    "id": "billy-gayles",
+    "name": "Billy Gayles",
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/89/Billy-Gayles.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1931-10-19",
+    "birthPlace": "Sikeston, Missouri",
+    "birthCoords": [
+      -89.5879,
+      36.8767
+    ],
+    "deathDate": "1993-04-08",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      }
+    ],
+    "instrument": "Drums",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=eGvV0-vGFME",
+    "albums": [
+      {
+        "name": "I'm Tore Up (1956)",
+        "youtubeLink": "https://www.youtube.com/watch?v=eGvV0-vGFME"
+      }
+    ],
+    "description": "Billy Gayles (October 19, 1931 – April 8, 1993) was an American rhythm & blues drummer and vocalist.  Gayles was a member of Ike Turner's Kings of Rhythm in the 1950s with whom he recorded for Flair Records and Federal Records as the lead vocalist.  Gayles also backed various musicians, including Earl Hooker, Robert Nighthawk, Otis Rush, Albert King, and Richard Arnold \"Groove\" Holmes.",
+    "activeFrom": "",
+    "influences": [
+      "earl-hooker",
+      "robert-nighthawk"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "earl-hooker",
+      "robert-nighthawk",
+      "otis-rush",
+      "albert-king",
+      "ike-turner"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Billy_Gayles",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-02"
+  },
+  {
+    "id": "big-miller",
+    "name": "Big Miller",
+    "image": "https://yardbirdsuite.com/wp-content/uploads/2022/11/Big-Miller-color.jpg",
+    "image_source": "yardbirdsuite.com",
+    "birthDate": "1922-12-18",
+    "birthPlace": "Sioux City, Iowa",
+    "birthCoords": [
+      -96.395555555556,
+      42.498055555556
+    ],
+    "deathDate": "1992-06-09",
+    "deathPlace": "Edmonton, Alberta, Canada",
+    "deathCoords": [
+      -113.5,
+      53.533333333333
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Kansas City",
+        "coords": [
+          -94.5786,
+          39.0997
+        ]
+      },
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Trombone",
+    "bluesStyle": "Kansas City Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=FHxe0fzkqhk",
+    "albums": [
+      {
+        "name": "A Blues (1959, with Bob Brookmeyer)",
+        "youtubeLink": "https://www.youtube.com/watch?v=FHxe0fzkqhk"
+      }
+    ],
+    "description": "Clarence Horatius \"Big\" Miller (December 18, 1922 – June 9, 1992) was an American jazz and blues singer and trombonist, chiefly associated with the Kansas City blues style. Raised in Topeka, Kansas near Kansas City, he became a powerful blues shouter who performed with the orchestras of Jay McShann and Lionel Hampton before reaching national prominence at the 1958 Newport Jazz Festival. He later settled in Edmonton, Alberta, where he helped found the Edmonton Jazz Society and the Jazz City Festival.",
+    "activeFrom": "1949",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "jay-mcshann"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Big_Miller",
+    "secondaryInstruments": [
+      "Double bass",
+      "Vocals"
+    ],
+    "createdAt": "2026-10-02"
+  },
+  {
+    "id": "the-butler-twins",
+    "name": "The Butler Twins",
+    "image": "https://i.discogs.com/PGZqjG_YSsZltHhWFRkUF7FmApD2SoPDeP2D_i1OA3g/rs:fit/g:sm/q:90/h:600/w:579/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE0MjIy/MjUtMTQwNDMyNzQ1/OC05MDI5LmpwZWc.jpeg",
+    "image_source": "discogs",
+    "birthDate": "1942-01-21",
+    "birthPlace": "Killen, Alabama",
+    "birthCoords": [
+      -87.5556,
+      34.868
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "Detroit",
+        "coords": [
+          -83.0458,
+          42.3314
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=akEciE9wxD0",
+    "albums": [
+      {
+        "name": "Inner City Blues",
+        "youtubeLink": "https://www.youtube.com/watch?v=akEciE9wxD0"
+      }
+    ],
+    "description": "The Butler Twins were an American Detroit blues and electric blues duo of the twin brothers Clarence (January 21, 1942 – December 22, 2003) and Curtis Butler (January 21, 1942 – April 9, 2004).  Longtime semiprofessional performers in the local blues scene in Detroit, they gained international recognition following the recording of three albums in the late 1990s.  Their best-known track was \"The Butler's Boogie\".",
+    "activeFrom": "",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/The_Butler_Twins",
+    "secondaryInstruments": [
+      "Harmonica",
+      "Vocals"
+    ],
+    "createdAt": "2026-10-02"
+  },
+  {
+    "id": "joe-weaver",
+    "name": "Joe Weaver",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIlJgDGlKsgtwPnMe-euqvvIXtk6XlM_6N515TTxwEXx8eNk6NuM_rnZ4gsVgRtg9Xg0SID0_RyWBGNux1-VeqWTJHr3uFWpWggknuTKfrVp8PSzB4r_FvGmSNM_LTblYr_LCUjE-mQ5XcQ8dFNNFwmpPc6P9-lYEJYjPOBH2MA-tdvwchYUi63c0QhLLn/s280/joeweaver.jpg",
+    "image_source": "fromthevaults-boppinbob.blogspot.com",
+    "birthDate": "1934-08-27",
+    "birthPlace": "Detroit",
+    "birthCoords": [
+      -83.0475,
+      42.331666666667
+    ],
+    "deathDate": "2006-07-05",
+    "deathPlace": "Southfield",
+    "deathCoords": [
+      -83.221666666667,
+      42.473333333333
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=2zfFaqetOfY",
+    "albums": [
+      {
+        "name": "15-40 Special (Deluxe 6006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=2zfFaqetOfY"
+      }
+    ],
+    "description": "Joe Weaver (August 27, 1934 – July 5, 2006) was an American Detroit blues, electric blues and R&B pianist, singer and bandleader.  His best known recording was \"Baby I Love You So\" (1955), and he was a founding member of both the Blue Note Orchestra and the Motor City Rhythm & Blues Pioneers.  Over his lengthy but staggered career, Weaver worked with various musicians including the Four Tops, Marvin Gaye, John Lee Hooker, Nathaniel Mayer, the Miracles, Martha Reeves, Nolan Strong & the Diablos, Andre Williams, Nancy Wilson, and Stevie Wonder.",
+    "activeFrom": "1952",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "johnnie-bassett",
+      "john-lee-hooker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Joe_Weaver",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-02"
+  },
+  {
+    "id": "new-orleans-willie-jackson",
+    "name": "New Orleans Willie Jackson",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1896",
+    "birthPlace": "Louisiana",
+    "birthCoords": [
+      -91.9623,
+      30.9843
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=yFEFzNcwHuo",
+    "albums": [
+      {
+        "name": "Old New Orleans Blues (Columbia 14136-D)",
+        "youtubeLink": "https://www.youtube.com/watch?v=yFEFzNcwHuo"
+      }
+    ],
+    "description": "New Orleans Willie Jackson (1896 or 1897 – after 1930) was an American blues and jazz singer active in New Orleans and New York City during the 1920s, performing blues, jazz, and comic numbers. He frequently appeared with pianist Steve Lewis at Spanish Fort in New Orleans and recorded for Columbia Records between 1926 and 1928, also singing with King Oliver's Dixie Syncopators. His recording of \"T.B. Blues\" was the first to put the song on disc, and tracks such as \"How Long\" and \"She Keeps It Up All the Time\" remain staples of New Orleans blues and jazz reissue anthologies.",
+    "activeFrom": "",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/New_Orleans_Willie_Jackson",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-02"
+  },
+  {
+    "id": "blanche-thomas",
+    "name": "Blanche Thomas",
+    "image": "https://originalconcertposters.org/wp-content/pics/Blanche_Thomas_Memorial_Concert_Poster_1977_New_Orleans_01_zhcu.jpg",
+    "image_source": "originalconcertposters.org",
+    "birthDate": "1922-10-05",
+    "birthPlace": "New Orleans, Louisiana",
+    "birthCoords": [
+      -90.05,
+      29.96666667
+    ],
+    "deathDate": "1977-04-21",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=aA75etyAYR8",
+    "albums": [
+      {
+        "name": "St. Louis Blues, with Papa French & His New Orleans Jazz Band (1964)",
+        "youtubeLink": "https://www.youtube.com/watch?v=aA75etyAYR8"
+      }
+    ],
+    "description": "Blanche Thomas (October 5, 1922 – April 21, 1977) was an American blues and jazz singer based in New Orleans who began performing in her mid-teens before becoming a featured vocalist in Dave Bartholomew's band at the Dew Drop Inn. She recorded her debut single, \"You Ain't So Such A Much,\" for Imperial Records in 1954 and later appeared in Elvis Presley's 1958 film King Creole. Thomas became a fixture of the Bourbon Street club scene, touring Europe and performing at Carnegie Hall and the Kennedy Center alongside traditional New Orleans jazz bands led by Papa French.",
+    "activeFrom": "1937",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Blanche_Thomas",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-02"
   }
 ]
