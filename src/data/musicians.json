@@ -4923,7 +4923,8 @@
       "wayne-bennett",
       "big-time-sarah",
       "dave-alexander",
-      "schoolboy-cleve"
+      "schoolboy-cleve",
+      "joanna-connor"
     ],
     "source": "https://en.wikipedia.org/wiki/Buddy_Guy",
     "secondaryInstruments": [
@@ -13703,7 +13704,8 @@
       "mark-hummel",
       "little-mack-simmons",
       "pat-hare",
-      "larry-thurston"
+      "larry-thurston",
+      "joanna-connor"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Cotton",
     "secondaryInstruments": [
@@ -18143,7 +18145,9 @@
       "sonny-boy-williamson",
       "louis-myers",
       "big-time-sarah",
-      "dave-myers"
+      "dave-myers",
+      "albert-castiglia",
+      "joanna-connor"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Wells",
     "secondaryInstruments": [
@@ -24867,7 +24871,8 @@
       "kim-wilson",
       "louis-myers",
       "ana-popovic",
-      "long-john-baldry"
+      "long-john-baldry",
+      "mud-morganfield"
     ],
     "influencedBy": [
       "son-house",
@@ -45654,7 +45659,8 @@
     "playedWith": [
       "joe-doucet",
       "katie-webster",
-      "lil-buck-sinegal"
+      "lil-buck-sinegal",
+      "buckwheat-zydeco"
     ],
     "source": "https://en.wikipedia.org/wiki/Clifton_Chenier",
     "secondaryInstruments": [
@@ -46487,7 +46493,8 @@
       "buddy-guy",
       "junior-wells",
       "albert-collins",
-      "son-seals"
+      "son-seals",
+      "joanna-connor"
     ],
     "source": "https://en.wikipedia.org/wiki/A.C._Reed",
     "secondaryInstruments": [
@@ -57201,5 +57208,345 @@
     "source": "https://en.wikipedia.org/wiki/Effie_Smith",
     "secondaryInstruments": [],
     "createdAt": "2026-10-05"
+  },
+  {
+    "id": "buckwheat-zydeco",
+    "name": "Buckwheat Zydeco",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Buckwheat%20Zydeco.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Buckwheat_Zydeco.jpg",
+    "birthDate": "1947-11-14",
+    "birthPlace": "Lafayette",
+    "birthCoords": [
+      -92.012649,
+      30.243062
+    ],
+    "deathDate": "2016-09-24",
+    "deathPlace": "Lafayette",
+    "deathCoords": [
+      -92.012649,
+      30.243062
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=bM_tBVo-VUM",
+    "albums": [
+      {
+        "name": "Menagerie: The Essential Zydeco Collection (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uRRW3aine6Y"
+      },
+      {
+        "name": "The Best of Louisiana Zydeco (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0yYu2FDmlj0"
+      },
+      {
+        "name": "The Buckwheat Zydeco Story - A 20-Year Party (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=dAg_agRBZIA"
+      },
+      {
+        "name": "Ultimate Collection (2000)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Classics (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=u0yMYfxTqX4"
+      },
+      {
+        "name": "20th Century Masters: The Millennium Collection: The Best of Buckwheat Zydeco (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0yYu2FDmlj0"
+      }
+    ],
+    "description": "Buckwheat Zydeco (born Stanley Dural Jr. ; November 14, 1947 – September 24, 2016), was an American accordionist and zydeco musician.  He was one of the few zydeco artists to achieve mainstream success.",
+    "activeFrom": "1971",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "clifton-chenier"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Buckwheat_Zydeco",
+    "secondaryInstruments": [
+      "Vocals",
+      "Piano"
+    ],
+    "createdAt": "2026-10-07"
+  },
+  {
+    "id": "boozoo-chavis",
+    "name": "Boozoo Chavis",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Boozoochavis.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Boozoochavis.jpg",
+    "birthDate": "1930-10-23",
+    "birthPlace": "Lake Charles",
+    "birthCoords": [
+      -93.208611111111,
+      30.214722222222
+    ],
+    "deathDate": "2001-05-05",
+    "deathPlace": "Austin",
+    "deathCoords": [
+      -97.733333333333,
+      30.3
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=sYOf8Jjv-pc",
+    "albums": [
+      {
+        "name": "Zydeco Hee Haw (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=V7IzAgz-xtc"
+      },
+      {
+        "name": "Boozoo Hoodoo!: The Songs of Boozoo Chavis (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=sYOf8Jjv-pc"
+      }
+    ],
+    "description": "Wilson Anthony \"Boozoo\" Chavis (pronounced CHAY-viss) (October 23, 1930 – May 5, 2001) was an American accordion player, singer, songwriter and bandleader.   He was one of the pioneers of zydeco, the fusion of Louisiana Creole and blues music developed in southwest Louisiana.",
+    "activeFrom": "1954",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Boozoo_Chavis",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-07"
+  },
+  {
+    "id": "mud-morganfield",
+    "name": "Mud Morganfield",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mud%202.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Mud_2.jpg",
+    "birthDate": "1954-09-27",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=4vW4FAPHwP8",
+    "albums": [
+      {
+        "name": "Fall Waters Fall (2008)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Portrait (2022)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ve32as3tAUI"
+      }
+    ],
+    "description": "Larry \"Mud\" Morganfield (born September 27, 1954) is an American blues singer.  He is the eldest son of Muddy Waters and the half-brother of Big Bill Morganfield.",
+    "activeFrom": "2008",
+    "influences": [],
+    "influencedBy": [
+      "muddy-waters"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Mud_Morganfield",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-07"
+  },
+  {
+    "id": "joanna-connor",
+    "name": "Joanna Connor",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Joanna-connors%20DSC01929.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Joanna-connors_DSC01929.jpg",
+    "birthDate": "1962-08-31",
+    "birthPlace": "Brooklyn, New York City",
+    "birthCoords": [
+      -73.94972222222222,
+      40.65083333333333
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=KTHMXiTbssQ",
+    "albums": [
+      {
+        "name": "Believe It! (1989)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Joanna Connor (born August 31, 1962) is an American Chicago-based blues singer, songwriter and guitarist.",
+    "activeFrom": "1987",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "james-cotton",
+      "junior-wells",
+      "buddy-guy",
+      "ac-reed"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Joanna_Connor",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-07"
+  },
+  {
+    "id": "albert-castiglia",
+    "name": "Albert Castiglia",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Albert_Castiglia_09_%2814764578356%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Albert_Castiglia_09_(14764578356).jpg",
+    "birthDate": "1969-08-12",
+    "birthPlace": "New York City, New York",
+    "birthCoords": [
+      -74.006,
+      40.7128
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Miami, Florida",
+        "coords": [
+          -80.1918,
+          25.7617
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=nK-F0aPZSSc",
+    "albums": [
+      {
+        "name": "Burn (2004)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Albert Castiglia (born August 12, 1969) is an American blues singer, songwriter and guitarist.  Castiglia has variously worked alongside Junior Wells, Sandra Hall, Aron Burton, Pinetop Perkins, Melvin Taylor, Sugar Blue, Phil Guy, Ronnie Earl, Billy Boy Arnold, Ronnie Baker Brooks, John Primer, Lurrie Bell, Jerry Portnoy, Larry McCray, Eddy Clearwater and Otis Clay. \nAllMusic noted that \"Castiglia combines hardcore blues with soul, rock, and country flavors for a sound that will appeal to rockers and blues purists alike.",
+    "activeFrom": "1990",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "junior-wells"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Albert_Castiglia",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-07"
+  },
+  {
+    "id": "danielle-nicole",
+    "name": "Danielle Nicole",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Danielle%20Nicole.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Danielle_Nicole.jpg",
+    "birthDate": "1983-07-20",
+    "birthPlace": "Kansas City",
+    "birthCoords": [
+      -94.583333333333,
+      39.05
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Bass guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=UAZautd3_WE",
+    "albums": [
+      {
+        "name": "Danielle Nicole (2015)",
+        "youtubeLink": "https://www.youtube.com/watch?v=5qTTWWL5MZg"
+      }
+    ],
+    "description": "Danielle Nicole  (born Danielle Nicole Schnebelen, July 20, 1983) is an American blues/soul musician born in Kansas City, Missouri, United States.  Her self-titled solo debut EP was released March 10, 2015, on Concord Records.  The self-titled EP features Grammy Award-winning producer and guitarist Anders Osborne, Galactic's co-founding drummer Stanton Moore, and keyboardist Mike Sedovic.",
+    "activeFrom": "2015",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Danielle_Nicole",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-07"
   }
 ]
