@@ -57282,7 +57282,9 @@
     ],
     "description": "Buckwheat Zydeco (born Stanley Dural Jr. ; November 14, 1947 – September 24, 2016), was an American accordionist and zydeco musician.  He was one of the few zydeco artists to achieve mainstream success.",
     "activeFrom": "1971",
-    "influences": [],
+    "influences": [
+      "beau-jocque"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
@@ -57333,6 +57335,62 @@
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Mud_Morganfield",
     "secondaryInstruments": [],
+    "createdAt": "2026-10-07"
+  },
+  {
+    "id": "beau-jocque",
+    "name": "Beau Jocque",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/BeauJocque1997.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:BeauJocque1997.jpg",
+    "birthDate": "1953-11-01",
+    "birthPlace": "Duralde, Louisiana",
+    "birthCoords": [
+      -92.4332,
+      30.5932
+    ],
+    "deathDate": "1999-09-10",
+    "deathPlace": "Louisiana",
+    "deathCoords": [
+      -92,
+      31
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=VCcIphtyFZs",
+    "albums": [
+      {
+        "name": "Best of Beau Jocque (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Op18hPN6Ivc"
+      }
+    ],
+    "description": "Beau Jocque (born Andrus Espre; November 1, 1953 – September 10, 1999) was a Louisiana French Creole zydeco musician and songwriter active in the 1990s. \nBeau Jocque is known for his gruff vocals, his fusion of many musical styles into zydeco, and above all, for the powerful energy of his rhythm and sound.   Backed by the Hi-Rollers, he became one of the top dance-hall acts of his musical decade.",
+    "activeFrom": "1991",
+    "influences": [],
+    "influencedBy": [
+      "buckwheat-zydeco"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Beau_Jocque",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
     "createdAt": "2026-10-07"
   }
 ]
