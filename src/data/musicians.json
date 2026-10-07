@@ -4923,8 +4923,7 @@
       "wayne-bennett",
       "big-time-sarah",
       "dave-alexander",
-      "schoolboy-cleve",
-      "joanna-connor"
+      "schoolboy-cleve"
     ],
     "source": "https://en.wikipedia.org/wiki/Buddy_Guy",
     "secondaryInstruments": [
@@ -13704,8 +13703,7 @@
       "mark-hummel",
       "little-mack-simmons",
       "pat-hare",
-      "larry-thurston",
-      "joanna-connor"
+      "larry-thurston"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Cotton",
     "secondaryInstruments": [
@@ -18145,9 +18143,7 @@
       "sonny-boy-williamson",
       "louis-myers",
       "big-time-sarah",
-      "dave-myers",
-      "albert-castiglia",
-      "joanna-connor"
+      "dave-myers"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Wells",
     "secondaryInstruments": [
@@ -46493,8 +46489,7 @@
       "buddy-guy",
       "junior-wells",
       "albert-collins",
-      "son-seals",
-      "joanna-connor"
+      "son-seals"
     ],
     "source": "https://en.wikipedia.org/wiki/A.C._Reed",
     "secondaryInstruments": [
@@ -57301,62 +57296,6 @@
     "createdAt": "2026-10-07"
   },
   {
-    "id": "boozoo-chavis",
-    "name": "Boozoo Chavis",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Boozoochavis.jpg?width=500",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Boozoochavis.jpg",
-    "birthDate": "1930-10-23",
-    "birthPlace": "Lake Charles",
-    "birthCoords": [
-      -93.208611111111,
-      30.214722222222
-    ],
-    "deathDate": "2001-05-05",
-    "deathPlace": "Austin",
-    "deathCoords": [
-      -97.733333333333,
-      30.3
-    ],
-    "spentTimePlaces": [
-      {
-        "place": "Chicago",
-        "coords": [
-          -87.6298,
-          41.8781
-        ]
-      },
-      {
-        "place": "New Orleans",
-        "coords": [
-          -90.0715,
-          29.9511
-        ]
-      }
-    ],
-    "instrument": "Accordion",
-    "bluesStyle": "Swamp Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=sYOf8Jjv-pc",
-    "albums": [
-      {
-        "name": "Zydeco Hee Haw (1991)",
-        "youtubeLink": "https://www.youtube.com/watch?v=V7IzAgz-xtc"
-      },
-      {
-        "name": "Boozoo Hoodoo!: The Songs of Boozoo Chavis (2003)",
-        "youtubeLink": "https://www.youtube.com/watch?v=sYOf8Jjv-pc"
-      }
-    ],
-    "description": "Wilson Anthony \"Boozoo\" Chavis (pronounced CHAY-viss) (October 23, 1930 – May 5, 2001) was an American accordion player, singer, songwriter and bandleader.   He was one of the pioneers of zydeco, the fusion of Louisiana Creole and blues music developed in southwest Louisiana.",
-    "activeFrom": "1954",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Boozoo_Chavis",
-    "secondaryInstruments": [],
-    "createdAt": "2026-10-07"
-  },
-  {
     "id": "mud-morganfield",
     "name": "Mud Morganfield",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mud%202.jpg?width=500",
@@ -57394,159 +57333,6 @@
     "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Mud_Morganfield",
     "secondaryInstruments": [],
-    "createdAt": "2026-10-07"
-  },
-  {
-    "id": "joanna-connor",
-    "name": "Joanna Connor",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Joanna-connors%20DSC01929.jpg?width=500",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Joanna-connors_DSC01929.jpg",
-    "birthDate": "1962-08-31",
-    "birthPlace": "Brooklyn, New York City",
-    "birthCoords": [
-      -73.94972222222222,
-      40.65083333333333
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [
-      {
-        "place": "Chicago",
-        "coords": [
-          -87.6298,
-          41.8781
-        ]
-      },
-      {
-        "place": "New York",
-        "coords": [
-          -74.006,
-          40.7128
-        ]
-      }
-    ],
-    "instrument": "Guitar",
-    "bluesStyle": "Contemporary Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=KTHMXiTbssQ",
-    "albums": [
-      {
-        "name": "Believe It! (1989)",
-        "youtubeLink": ""
-      }
-    ],
-    "description": "Joanna Connor (born August 31, 1962) is an American Chicago-based blues singer, songwriter and guitarist.",
-    "activeFrom": "1987",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [
-      "james-cotton",
-      "junior-wells",
-      "buddy-guy",
-      "ac-reed"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Joanna_Connor",
-    "secondaryInstruments": [
-      "Vocals"
-    ],
-    "createdAt": "2026-10-07"
-  },
-  {
-    "id": "albert-castiglia",
-    "name": "Albert Castiglia",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Albert_Castiglia_09_%2814764578356%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Albert_Castiglia_09_(14764578356).jpg",
-    "birthDate": "1969-08-12",
-    "birthPlace": "New York City, New York",
-    "birthCoords": [
-      -74.006,
-      40.7128
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [
-      {
-        "place": "Miami, Florida",
-        "coords": [
-          -80.1918,
-          25.7617
-        ]
-      },
-      {
-        "place": "Chicago, Illinois",
-        "coords": [
-          -87.6298,
-          41.8781
-        ]
-      }
-    ],
-    "instrument": "Guitar",
-    "bluesStyle": "Contemporary Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=nK-F0aPZSSc",
-    "albums": [
-      {
-        "name": "Burn (2004)",
-        "youtubeLink": ""
-      }
-    ],
-    "description": "Albert Castiglia (born August 12, 1969) is an American blues singer, songwriter and guitarist.  Castiglia has variously worked alongside Junior Wells, Sandra Hall, Aron Burton, Pinetop Perkins, Melvin Taylor, Sugar Blue, Phil Guy, Ronnie Earl, Billy Boy Arnold, Ronnie Baker Brooks, John Primer, Lurrie Bell, Jerry Portnoy, Larry McCray, Eddy Clearwater and Otis Clay. \nAllMusic noted that \"Castiglia combines hardcore blues with soul, rock, and country flavors for a sound that will appeal to rockers and blues purists alike.",
-    "activeFrom": "1990",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [
-      "junior-wells"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Albert_Castiglia",
-    "secondaryInstruments": [
-      "Vocals"
-    ],
-    "createdAt": "2026-10-07"
-  },
-  {
-    "id": "danielle-nicole",
-    "name": "Danielle Nicole",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Danielle%20Nicole.jpg?width=500",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Danielle_Nicole.jpg",
-    "birthDate": "1983-07-20",
-    "birthPlace": "Kansas City",
-    "birthCoords": [
-      -94.583333333333,
-      39.05
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [
-      {
-        "place": "New Orleans",
-        "coords": [
-          -90.0715,
-          29.9511
-        ]
-      }
-    ],
-    "instrument": "Bass guitar",
-    "bluesStyle": "Contemporary Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=UAZautd3_WE",
-    "albums": [
-      {
-        "name": "Danielle Nicole (2015)",
-        "youtubeLink": "https://www.youtube.com/watch?v=5qTTWWL5MZg"
-      }
-    ],
-    "description": "Danielle Nicole  (born Danielle Nicole Schnebelen, July 20, 1983) is an American blues/soul musician born in Kansas City, Missouri, United States.  Her self-titled solo debut EP was released March 10, 2015, on Concord Records.  The self-titled EP features Grammy Award-winning producer and guitarist Anders Osborne, Galactic's co-founding drummer Stanton Moore, and keyboardist Mike Sedovic.",
-    "activeFrom": "2015",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Danielle_Nicole",
-    "secondaryInstruments": [
-      "Vocals"
-    ],
     "createdAt": "2026-10-07"
   }
 ]
