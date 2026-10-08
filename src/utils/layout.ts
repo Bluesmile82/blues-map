@@ -58,7 +58,6 @@ export const INSTRUMENT_ORDER = [
   'Vocals',
   'Voice',
   'Bass',
-  'Bass Guitar',
   'Drums',
   'Percussion',
   'Saxophone',
