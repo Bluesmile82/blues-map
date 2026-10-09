@@ -4235,7 +4235,8 @@
       "johnny-ace",
       "tyrone-davis",
       "mel-brown",
-      "pat-hare"
+      "pat-hare",
+      "willie-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Bobby_Bland",
     "secondaryInstruments": [],
@@ -13014,7 +13015,8 @@
       "detroit-junior",
       "pat-hare",
       "tommy-bankhead",
-      "doc-terry"
+      "doc-terry",
+      "willie-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Howlin'_Wolf",
     "secondaryInstruments": [
@@ -17979,7 +17981,8 @@
       "rosco-gordon",
       "wayne-bennett",
       "johnny-ace",
-      "pat-hare"
+      "pat-hare",
+      "willie-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Junior_Parker",
     "secondaryInstruments": [
@@ -24921,7 +24924,8 @@
       "dave-myers",
       "dave-alexander",
       "schoolboy-cleve",
-      "doc-terry"
+      "doc-terry",
+      "willie-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Muddy_Waters",
     "secondaryInstruments": [
@@ -34414,7 +34418,8 @@
       "elmore-james",
       "joe-willie-wilkins",
       "eddie-shaw",
-      "willie-nix"
+      "willie-nix",
+      "willie-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_Love",
     "secondaryInstruments": [
@@ -37579,7 +37584,8 @@
       "otis-spann",
       "willie-dixon",
       "buddy-guy",
-      "big-walter-horton"
+      "big-walter-horton",
+      "willie-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/J._T._Brown_(musician)",
     "secondaryInstruments": [
@@ -45205,7 +45211,8 @@
       "willie-cobbs",
       "eddie-taylor",
       "sunnyland-slim",
-      "snooky-pryor"
+      "snooky-pryor",
+      "willie-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_Nix",
     "secondaryInstruments": [
@@ -45687,7 +45694,8 @@
     "description": "Clifton Chenier (1925-1987), known as the 'King of Zydeco,' was a Louisiana Creole accordionist and singer who electrified the traditional squeezebox sound of rural Louisiana and fused it with African American blues, rhythm and blues, and Afro-Caribbean rhythms to create the modern zydeco style. Fronting his Red Hot Louisiana Band for decades, he became zydeco's first major national star, winning the first Grammy Award ever given for a zydeco recording in 1984 for his album I'm Here!, and was inducted into the Blues Hall of Fame in 1989. His raw, blues-soaked accordion playing and his years working the same Gulf Coast blues circuit as artists like Joe Doucet made him a central bridge figure between Louisiana Creole music and the broader blues tradition.",
     "activeFrom": "1954",
     "influences": [
-      "rockin-sidney"
+      "rockin-sidney",
+      "c-j-chenier"
     ],
     "influencedBy": [
       "muddy-waters",
@@ -45699,7 +45707,8 @@
       "katie-webster",
       "lil-buck-sinegal",
       "buckwheat-zydeco",
-      "boozoo-chavis"
+      "boozoo-chavis",
+      "c-j-chenier"
     ],
     "source": "https://en.wikipedia.org/wiki/Clifton_Chenier",
     "secondaryInstruments": [
@@ -57853,5 +57862,147 @@
     "source": "https://en.wikipedia.org/wiki/Queen_Ida",
     "secondaryInstruments": [],
     "createdAt": "2026-10-06"
+  },
+  {
+    "id": "c-j-chenier",
+    "name": "C. J. Chenier",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/C.J.%20Chenier.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:C.J._Chenier.jpg",
+    "birthDate": "1957-09-28",
+    "birthPlace": "Port Arthur",
+    "birthCoords": [
+      -93.94,
+      29.885
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=OO2kUFFZ38E",
+    "albums": [
+      {
+        "name": "Step It Up! (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=AFmqiFVd1nI"
+      }
+    ],
+    "description": "C. J. Chenier is an American zydeco accordionist and singer, the son of \"King of Zydeco\" Clifton Chenier. He joined his father's Red Hot Louisiana Band on saxophone in 1978 and took over as its accordionist and bandleader after his father's death in 1987, carrying the family's zydeco-blues sound to a new generation through recordings for Alligator Records.",
+    "activeFrom": "1978",
+    "influences": [],
+    "influencedBy": [
+      "clifton-chenier"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "clifton-chenier"
+    ],
+    "source": "https://en.wikipedia.org/wiki/C._J._Chenier",
+    "secondaryInstruments": [
+      "Saxophone"
+    ],
+    "createdAt": "2026-10-08"
+  },
+  {
+    "id": "willie-johnson",
+    "name": "Willie Johnson",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Willie-Johnson-by-James-Fraher-Chicago-1984-square.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Willie-Johnson-by-James-Fraher-Chicago-1984-square.jpg",
+    "birthDate": "1923-03-04",
+    "birthPlace": "Senatobia, Mississippi",
+    "birthCoords": [
+      -89.9698,
+      34.6161
+    ],
+    "deathDate": "1995-02-26",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=n6yNHHY9XE0",
+    "albums": [],
+    "description": "Willie Johnson (1923-1995) was the principal electric guitarist in Howlin' Wolf's first band, providing the raucous, distorted guitar sound heard on Wolf's Memphis recordings of 1951-1953, including \"How Many More Years.\" He later worked and recorded with Memphis and Chicago blues artists including Willie Love, Junior Parker, and Muddy Waters, and was posthumously inducted into the Blues Hall of Fame in 2017.",
+    "activeFrom": "1948",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "howlin-wolf",
+      "muddy-waters",
+      "willie-love",
+      "willie-nix",
+      "junior-parker",
+      "bobby-blue-bland",
+      "jt-brown"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Willie_Johnson_(guitarist)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-08"
+  },
+  {
+    "id": "geno-delafose",
+    "name": "Geno Delafose",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/GenoDelafose2006.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:GenoDelafose2006.jpg",
+    "birthDate": "1971-02-06",
+    "birthPlace": "Eunice",
+    "birthCoords": [
+      -92.4169,
+      30.4936
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=nC1I95aEX68",
+    "albums": [
+      {
+        "name": "French Rockin' Boogie (1994)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Le Cowboy Creole (2007)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Geno Delafose is an American zydeco accordionist and singer from Eunice, Louisiana, who grew up playing rubboard in his father John Delafose's band before switching to accordion in the early 1990s. His \"nouveau zydeco\" sound blends traditional Creole and Cajun music with country and western influences, and his 2007 album Le Cowboy Creole earned a Grammy nomination.",
+    "activeFrom": "1994",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Geno_Delafose",
+    "secondaryInstruments": [
+      "Rubboard"
+    ],
+    "createdAt": "2026-10-08"
   }
 ]
