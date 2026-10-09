@@ -24894,7 +24894,8 @@
       "kim-wilson",
       "louis-myers",
       "ana-popovic",
-      "long-john-baldry"
+      "long-john-baldry",
+      "mud-morganfield"
     ],
     "influencedBy": [
       "son-house",
@@ -45705,6 +45706,7 @@
       "joe-doucet",
       "katie-webster",
       "lil-buck-sinegal",
+      "buckwheat-zydeco",
       "boozoo-chavis",
       "c-j-chenier"
     ],
@@ -57255,6 +57257,195 @@
     "source": "https://en.wikipedia.org/wiki/Effie_Smith",
     "secondaryInstruments": [],
     "createdAt": "2026-10-05"
+  },
+  {
+    "id": "buckwheat-zydeco",
+    "name": "Buckwheat Zydeco",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Buckwheat%20Zydeco.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Buckwheat_Zydeco.jpg",
+    "birthDate": "1947-11-14",
+    "birthPlace": "Lafayette",
+    "birthCoords": [
+      -92.012649,
+      30.243062
+    ],
+    "deathDate": "2016-09-24",
+    "deathPlace": "Lafayette",
+    "deathCoords": [
+      -92.012649,
+      30.243062
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=bM_tBVo-VUM",
+    "albums": [
+      {
+        "name": "Menagerie: The Essential Zydeco Collection (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=uRRW3aine6Y"
+      },
+      {
+        "name": "The Best of Louisiana Zydeco (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0yYu2FDmlj0"
+      },
+      {
+        "name": "The Buckwheat Zydeco Story - A 20-Year Party (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=dAg_agRBZIA"
+      },
+      {
+        "name": "Ultimate Collection (2000)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Classics (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=u0yMYfxTqX4"
+      },
+      {
+        "name": "20th Century Masters: The Millennium Collection: The Best of Buckwheat Zydeco (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=0yYu2FDmlj0"
+      }
+    ],
+    "description": "Buckwheat Zydeco (born Stanley Dural Jr.; November 14, 1947 – September 24, 2016), was an American accordionist and zydeco musician.  He was one of the few zydeco artists to achieve mainstream success.",
+    "activeFrom": "1971",
+    "influences": [
+      "beau-jocque"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "clifton-chenier"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Buckwheat_Zydeco",
+    "secondaryInstruments": [
+      "Vocals",
+      "Piano"
+    ],
+    "createdAt": "2026-10-07"
+  },
+  {
+    "id": "mud-morganfield",
+    "name": "Mud Morganfield",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mud%202.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Mud_2.jpg",
+    "birthDate": "1954-09-27",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=4vW4FAPHwP8",
+    "albums": [
+      {
+        "name": "Fall Waters Fall (2008)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Portrait (2022)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ve32as3tAUI"
+      }
+    ],
+    "description": "Larry \"Mud\" Morganfield (born September 27, 1954) is an American blues singer.  He is the eldest son of Muddy Waters and the half-brother of Big Bill Morganfield.",
+    "activeFrom": "2008",
+    "influences": [],
+    "influencedBy": [
+      "muddy-waters"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Mud_Morganfield",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-07"
+  },
+  {
+    "id": "beau-jocque",
+    "name": "Beau Jocque",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/BeauJocque1997.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:BeauJocque1997.jpg",
+    "birthDate": "1953-11-01",
+    "birthPlace": "Duralde, Louisiana",
+    "birthCoords": [
+      -92.4332,
+      30.5932
+    ],
+    "deathDate": "1999-09-10",
+    "deathPlace": "Louisiana",
+    "deathCoords": [
+      -92,
+      31
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=VCcIphtyFZs",
+    "albums": [
+      {
+        "name": "Best of Beau Jocque (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Op18hPN6Ivc"
+      }
+    ],
+    "description": "Beau Jocque (born Andrus Espre; November 1, 1953 – September 10, 1999) was a Louisiana French Creole zydeco musician and songwriter active in the 1990s. \nBeau Jocque is known for his gruff vocals, his fusion of many musical styles into zydeco, and above all, for the powerful energy of his rhythm and sound.   Backed by the Hi-Rollers, he became one of the top dance-hall acts of his musical decade.",
+    "activeFrom": "1991",
+    "influences": [],
+    "influencedBy": [
+      "buckwheat-zydeco"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Beau_Jocque",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-07"
   },
   {
     "id": "eric-gales",
