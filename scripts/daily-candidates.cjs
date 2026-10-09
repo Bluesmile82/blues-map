@@ -57,17 +57,68 @@ const AWARD_PAGES = [
   'International Blues Challenge',
 ];
 
+const MUSICIAN = /blues|musician|singer|vocalist|songwriter|guitarist|pianist|harmonica|drummer|bassist|saxophonist|composer|performer/i;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// English Wikipedia API call, backing off when rate-limited ("You are making too many requests").
+async function wiki(params) {
+  for (const wait of [0, 5000, 15000, 45000]) {
+    await sleep(wait || 1000);
+    const res = await fetch('https://en.wikipedia.org/w/api.php?' + new URLSearchParams({ action: 'query', format: 'json', ...params }), { headers: { 'User-Agent': 'BluesMapRoutine/1.0 (educational)' } });
+    try { return await res.json(); } catch {}
+  }
+  throw new Error('Wikipedia API kept rate-limiting');
+}
+
 // Articles linked from a Wikipedia page whose short description looks like a musician.
 async function linkedMusicians(page) {
   const found = [];
   let cont = {};
   do {
-    const params = new URLSearchParams({ action: 'query', format: 'json', generator: 'links', titles: page, gplnamespace: 0, gpllimit: 'max', prop: 'description', redirects: 1, ...cont });
-    const j = await (await fetch('https://en.wikipedia.org/w/api.php?' + params, { headers: { 'User-Agent': 'BluesMapRoutine/1.0 (educational)' } })).json();
-    for (const x of Object.values(j.query?.pages || {})) if (/blues|musician|singer|guitarist|pianist|harmonica/i.test(x.description || '')) found.push(x);
+    const j = await wiki({ generator: 'links', titles: page, gplnamespace: 0, gpllimit: 'max', prop: 'description', redirects: 1, ...cont });
+    for (const x of Object.values(j.query?.pages || {})) if (MUSICIAN.test(x.description || '')) found.push(x);
     cont = j.continue || {};
-    await new Promise((r) => setTimeout(r, 500));
   } while (cont.gplcontinue);
+  return found;
+}
+
+// Musicians tagged on the Blanco y Negro Blues podcast (Blogger labels), resolved to
+// English Wikipedia articles. Labels without an English article (many Spanish artists) are skipped.
+async function podcastMusicians() {
+  const episodes = {};
+  for (let i = 1; ; i += 150) {
+    const feed = (await (await fetch(`https://blancoynegroblues.blogspot.com/feeds/posts/summary?alt=json&max-results=150&start-index=${i}`)).json()).feed;
+    for (const post of feed.entry || []) for (const c of post.category || []) episodes[c.term.trim()] = (episodes[c.term.trim()] || 0) + 1;
+    if ((feed.entry || []).length < 150) break;
+  }
+  // Tags whose spelling defeats both exact lookup and search.
+  const TAG_FIX = { 'Darrell Nulish': 'Darrell Nulisch', "Shakura S'Aida Johnson etc.": "Shakura S'Aida" };
+  for (const [tag, fixed] of Object.entries(TAG_FIX)) if (episodes[tag]) { episodes[fixed] = (episodes[fixed] || 0) + episodes[tag]; delete episodes[tag]; }
+  const labels = Object.keys(episodes), found = [], unmatched = [];
+  for (let i = 0; i < labels.length; i += 50) {
+    const batch = labels.slice(i, i + 50);
+    const q = (await wiki({ titles: batch.join('|'), redirects: 1, prop: 'description' })).query;
+    const to = Object.fromEntries([...(q.normalized || []), ...(q.redirects || [])].map((x) => [x.from, x.to]));
+    const pages = Object.values(q.pages);
+    for (const label of batch) {
+      let t = label;
+      while (to[t]) t = to[t];
+      const page = pages.find((x) => x.title === t && !('missing' in x));
+      if (page) { if (MUSICIAN.test(page.description || '')) found.push({ ...page, label, episodes: episodes[label] }); }
+      else unmatched.push(label);
+    }
+  }
+  // Tags are often lowercase or misspelled ("muddy waters", "LOnnie Brooks"): fall back to
+  // Wikipedia search and accept the top hit if it's a musician sharing a name word with the tag.
+  const notFound = [];
+  for (const label of unmatched) {
+    const hit = Object.values((await wiki({ generator: 'search', gsrsearch: label, gsrlimit: 1, prop: 'description' })).query?.pages || {})[0];
+    const surname = tokens(label).at(-1); // must match the surname, not just any word ("Oscar" ≠ Oscar Levant)
+    const shared = hit && surname && tokens(hit.title).includes(surname);
+    if (hit && shared && MUSICIAN.test(hit.description || '')) found.push({ ...hit, label, episodes: episodes[label] });
+    else notFound.push(label);
+  }
+  console.log(`\nPodcast tags with no English Wikipedia musician article (${notFound.length}, includes bands, shows and Spanish artists): ${notFound.join(' | ')}`);
   return found;
 }
 
@@ -116,22 +167,23 @@ async function candidates() {
     return { name: b.pLabel.value, url: b.article.value, desc: b.desc?.value || '', genres: b.genres.value, sl: +b.sl.value, era, awards: b.awards.value ? b.awards.value.split('|') : [] };
   });
 
-  // Recognition: musicians linked from Wikipedia's blues award pages. Wikidata
-  // rarely records these awards, so this is the main signal for contemporary artists.
+  // Recognition: musicians linked from Wikipedia's blues award pages (Wikidata
+  // rarely records these awards) and musicians featured on the Blanco y Negro Blues podcast.
   const byUrl = new Map(out.map((c) => [title(c.url), c]));
-  for (const page of AWARD_PAGES) {
-    for (const x of await linkedMusicians(page)) {
-      const key = x.title.toLowerCase();
-      if (srcs.has(key) || names.has(key) || BANNED.test(x.description || '') || /album|song|standard|band|group|label|festival|producer|executive/i.test(x.description || '')) continue;
-      if (!byUrl.has(key)) byUrl.set(key, { name: x.title, url: 'https://en.wikipedia.org/wiki/' + encodeURIComponent(x.title.replace(/ /g, '_')), desc: x.description || '', genres: '?', sl: 0, era: decade(+(x.description || '').match(/\b(1[89]\d\d|20\d\d)\b/)?.[0] + 20 || 0), awards: [] });
-      byUrl.get(key).awards.push(page);
-    }
-  }
+  const add = (x, tag, anyStyle = false) => {
+    const key = x.title.toLowerCase(), d = x.description || '';
+    if (srcs.has(key) || names.has(key) || (x.label && names.has(x.label.toLowerCase()))) return;
+    if ((!anyStyle && BANNED.test(d)) || /album|song|standard|band|group|trio|label|festival|producer|executive|style of|form of/i.test(d)) return;
+    if (!byUrl.has(key)) byUrl.set(key, { name: x.title, url: 'https://en.wikipedia.org/wiki/' + encodeURIComponent(x.title.replace(/ /g, '_')), desc: d, genres: '?', sl: 0, era: decade(+d.match(/\b(1[89]\d\d|20\d\d)\b/)?.[0] + 20 || 0), awards: [] });
+    byUrl.get(key).awards.push(tag);
+  };
+  for (const page of AWARD_PAGES) for (const x of await linkedMusicians(page)) add(x, page);
+  for (const x of await podcastMusicians()) add(x, `Blanco y Negro Blues podcast (${x.episodes} episode${x.episodes > 1 ? 's' : ''})`, true); // podcast picks: any style
   const scored = [...byUrl.values()]
     .map((c) => ({ ...c, score: c.sl + 10 * c.awards.length + (thin(c.era) ? 15 : 0) }))
     .sort((a, b) => b.score - a.score);
   console.log(`\nMissing candidates (${scored.length}), best first — still run "check" on each pick:`);
-  for (const c of scored.slice(0, 100)) {
+  for (const c of scored.filter((c, i) => i < 100 || c.awards.length)) { // top 100 plus everyone with recognition
     console.log(`  ${String(c.score).padStart(3)}  ${c.name} | ${c.era ? c.era + 's' : 'era ?'}${thin(c.era) ? ' (thin)' : ''} | ${c.genres} | ${c.desc} | ${c.url}`);
     if (c.awards.length) console.log(`         recognition: ${c.awards.join('; ')}`);
   }
