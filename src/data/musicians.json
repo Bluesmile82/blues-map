@@ -58130,10 +58130,6 @@
       {
         "name": "Blind Pig Presents: The Very Best of Tommy Castro (2016)",
         "youtubeLink": "https://www.youtube.com/watch?v=YbSmcqwEWuo"
-      },
-      {
-        "name": "The Essential Tommy Castro",
-        "youtubeLink": "https://www.youtube.com/watch?v=mFGSJInwguo"
       }
     ],
     "description": "Tommy Castro (born April 15, 1955) is an American blues, R&B, and rock guitarist and singer.  He has been recording since the mid-1990s.  His music has taken him from local stages to national and international touring.",
@@ -58181,7 +58177,7 @@
         "youtubeLink": "https://www.youtube.com/watch?v=noI67tQHybY"
       }
     ],
-    "description": "Janiva Magness (born January 30, 1957) is an American Grammy Award nominated blues, soul, and Americana singer, songwriter, and author.  To date she has released 16 albums. \nThe Blues Foundation named Magness the B.",
+    "description": "Janiva Magness (born January 30, 1957) is an American Grammy Award-nominated blues, soul, and Americana singer, songwriter, and author who has released 16 albums to date. The Blues Foundation named her the B.B. King Entertainer of the Year in 2009, and she has since earned seven Blues Music Awards.",
     "activeFrom": "1980",
     "influences": [],
     "influencedBy": [],
@@ -58208,7 +58204,7 @@
     "deathPlace": null,
     "deathCoords": null,
     "spentTimePlaces": [],
-    "instrument": "Vocals",
+    "instrument": "Guitar",
     "bluesStyle": "Contemporary Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=OOeA0YfrtUQ",
     "albums": [
@@ -58227,7 +58223,9 @@
       "johnny-winter"
     ],
     "source": "https://en.wikipedia.org/wiki/Monster_Mike_Welch",
-    "secondaryInstruments": [],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
     "createdAt": "2026-10-09"
   },
   {
