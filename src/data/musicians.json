@@ -58012,43 +58012,6 @@
     "createdAt": "2026-10-08"
   },
   {
-    "id": "monster-mike-welch",
-    "name": "Monster Mike Welch",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Monster-Mike-Welch-DSC02254%20sh.jpg?width=500",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Monster-Mike-Welch-DSC02254_sh.jpg",
-    "birthDate": "1979-06-11",
-    "birthPlace": "Boston, Massachusetts",
-    "birthCoords": [
-      -71.0589,
-      42.3601
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [],
-    "instrument": "Guitar",
-    "bluesStyle": "Contemporary Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=OOeA0YfrtUQ",
-    "albums": [
-      {
-        "name": "Cryin' Hey! Monster Mike Welch Plays the Blues (2005)",
-        "youtubeLink": "https://www.youtube.com/watch?v=Sm1qL_a55YU"
-      }
-    ],
-    "description": "Monster Mike Welch is an American electric blues guitarist, singer and songwriter from Boston who first drew notice as a teenage prodigy and went on to front Sugar Ray & the Bluetones. He has recorded and toured with Darrell Nulisch and, as the Welch-Ledbetter Connection with singer Mike Ledbetter, won a Blues Music Award.",
-    "activeFrom": "1992",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [
-      "darrell-nulisch",
-      "mike-ledbetter"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Monster_Mike_Welch",
-    "secondaryInstruments": [],
-    "createdAt": "2026-10-10"
-  },
-  {
     "id": "john-lee-hooker-jr",
     "name": "John Lee Hooker Jr.",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/JohnLeeHookerJr06.jpg?width=500",
@@ -58152,55 +58115,6 @@
     "createdAt": "2026-10-10"
   },
   {
-    "id": "linda-hopkins",
-    "name": "Linda Hopkins",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Linda%20Hopkins.jpg?width=500",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Linda_Hopkins.jpg",
-    "birthDate": "1924-12-14",
-    "birthPlace": "New Orleans, Louisiana",
-    "birthCoords": [
-      -90.0783,
-      29.9761
-    ],
-    "deathDate": "2017-04-10",
-    "deathPlace": "Milwaukee, Wisconsin",
-    "deathCoords": [
-      -87.95,
-      43.05
-    ],
-    "spentTimePlaces": [
-      {
-        "place": "New York",
-        "coords": [
-          -74.006,
-          40.7128
-        ]
-      }
-    ],
-    "instrument": "Vocals",
-    "bluesStyle": "New Orleans Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=ErTkQK2Z-U0",
-    "albums": [
-      {
-        "name": "Ladies Sing the Blues: Roots of Rock ’n’ Roll, Vol. 5 (1979)",
-        "youtubeLink": "https://www.youtube.com/watch?v=efZcgwq-qUU"
-      },
-      {
-        "name": "Rock and Roll Blues: The Early Years of 'the Kid' (2008)",
-        "youtubeLink": "https://www.youtube.com/watch?v=H4745_9_Ih4"
-      }
-    ],
-    "description": "Linda Hopkins was a New Orleans-born blues and gospel singer known for her powerful, gospel-rooted voice and her stage tribute to Bessie Smith, \"Me and Bessie.\" She won a Grammy Award for Best Traditional Blues Recording and was inducted into the Blues Hall of Fame.",
-    "activeFrom": "1951",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Linda_Hopkins",
-    "secondaryInstruments": [],
-    "createdAt": "2026-10-10"
-  },
-  {
     "id": "darrell-nulisch",
     "name": "Darrell Nulisch",
     "image": "",
@@ -58246,8 +58160,7 @@
     "incomplete": false,
     "playedWith": [
       "anson-funderburgh",
-      "ronnie-earl",
-      "monster-mike-welch"
+      "ronnie-earl"
     ],
     "source": "https://en.wikipedia.org/wiki/Darrell_Nulisch",
     "secondaryInstruments": [
@@ -58342,7 +58255,7 @@
       "otis-rush"
     ],
     "incomplete": false,
-    "playedWith": ["monster-mike-welch"],
+    "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Mike_Ledbetter",
     "secondaryInstruments": [
       "Guitar"
