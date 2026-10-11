@@ -4099,7 +4099,8 @@
     "incomplete": false,
     "playedWith": [
       "nappy-brown",
-      "candye-kane"
+      "candye-kane",
+      "matt-hill"
     ],
     "source": "https://en.wikipedia.org/wiki/Bob_Margolin",
     "secondaryInstruments": [],
@@ -6114,7 +6115,8 @@
       "big-joe-duskin",
       "dave-peabody",
       "chris-cain",
-      "mark-hummel"
+      "mark-hummel",
+      "rockin-johnny-burgin"
     ],
     "source": "https://en.wikipedia.org/wiki/Charlie_Musselwhite",
     "secondaryInstruments": [
@@ -31549,7 +31551,8 @@
       "muddy-waters",
       "jimmy-rogers",
       "howlin-wolf",
-      "guitar-slim"
+      "guitar-slim",
+      "w-c-clark"
     ],
     "incomplete": false,
     "playedWith": [
@@ -31558,7 +31561,8 @@
       "buddy-guy",
       "john-lee-hooker",
       "albert-collins",
-      "lonnie-mack"
+      "lonnie-mack",
+      "w-c-clark"
     ],
     "source": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
     "secondaryInstruments": [
@@ -35181,7 +35185,8 @@
     "influences": [],
     "influencedBy": [
       "mahalia-jackson",
-      "sam-cooke"
+      "sam-cooke",
+      "odetta"
     ],
     "incomplete": false,
     "playedWith": [
@@ -58004,5 +58009,407 @@
       "Rubboard"
     ],
     "createdAt": "2026-10-08"
+  },
+  {
+    "id": "rockin-dopsie",
+    "name": "Rockin' Dopsie",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1932-02-10",
+    "birthPlace": "Carencro",
+    "birthCoords": [
+      -92.0436,
+      30.3142
+    ],
+    "deathDate": "1993-08-26",
+    "deathPlace": "Opelousas",
+    "deathCoords": [
+      -92.0815,
+      30.533527777777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=pYt7nM8htC8",
+    "albums": [
+      {
+        "name": "Doin' the Zydeco (1976)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Saturday Night Zydeco (1988)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Alton Jay Rubin (February 10, 1932 – August 26, 1993), who performed as Rockin' Dopsie (sometimes Rockin' Dupsee), was an American zydeco singer and accordion player who had success first in Europe and later in the United States.  He played accordion on \"That Was Your Mother\" on Paul Simon's album Graceland (1986).",
+    "activeFrom": "1970",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Rockin'_Dopsie",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-11"
+  },
+  {
+    "id": "odetta",
+    "name": "Odetta",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Odetta.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Odetta.jpg",
+    "birthDate": "1930-12-31",
+    "birthPlace": "Birmingham",
+    "birthCoords": [
+      -86.80944444444444,
+      33.5175
+    ],
+    "deathDate": "2008-12-02",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.00611111111111,
+      40.71277777777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "San Francisco",
+        "coords": [
+          -122.4194,
+          37.7749
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=hzc20VmMCl8",
+    "albums": [
+      {
+        "name": "Odetta (1963)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6vvGaCR7Nfw"
+      },
+      {
+        "name": "The Best of Odetta (1967)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Christmas Spirituals (1988)",
+        "youtubeLink": "https://www.youtube.com/watch?v=A67XRzkBKAw"
+      },
+      {
+        "name": "The Best of Odetta: Ballads and Blues (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=6vvGaCR7Nfw"
+      },
+      {
+        "name": "Best of the Vanguard Years (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Wssv-T-E-Do"
+      },
+      {
+        "name": "Livin' With the Blues (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=DRPSkHrfdqc"
+      }
+    ],
+    "description": "Odetta Holmes (December 31, 1930 – December 2, 2008), known mononymously as Odetta, was an American singer, songwriter, and actress.  Referred to as \"The Voice of the Civil Rights Movement\", her musical repertoire consisted largely of American folk music, blues, jazz, and spirituals.  \nAn important figure in the American folk music revival of the 1950s and 1960s, she influenced many of the key figures of the folk-revival of that time, including Bob Dylan, Joan Baez, Mavis Staples, and Janis Joplin.",
+    "activeFrom": "1944",
+    "influences": [
+      "mavis-staples"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Odetta",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-11"
+  },
+  {
+    "id": "w-c-clark",
+    "name": "W. C. Clark",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/WCClark1996.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:WCClark1996.jpg",
+    "birthDate": "1939-11-16",
+    "birthPlace": "Austin",
+    "birthCoords": [
+      -97.733333333333,
+      30.3
+    ],
+    "deathDate": "2024-03-02",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ooogzf_i2iA",
+    "albums": [
+      {
+        "name": "Heart of Gold (1994)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "From Austin with Soul (2002)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Wesley Curley Clark (November 16, 1939 – March 2, 2024) was an American blues musician.  He is known as the \"Godfather of Austin Blues\" for his influence on the Austin, Texas, blues scene since the late 1960s.",
+    "activeFrom": "1970",
+    "influences": [
+      "stevie-ray-vaughan"
+    ],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "stevie-ray-vaughan"
+    ],
+    "source": "https://en.wikipedia.org/wiki/W._C._Clark",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-11"
+  },
+  {
+    "id": "eugene-bridges",
+    "name": "Eugene Bridges",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eugene%20Hideaway%20Bridges%20(14240955735).jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Eugene_Hideaway_Bridges_(14240955735).jpg",
+    "birthDate": "1963-03-30",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Mngh2sFYckw",
+    "albums": [
+      {
+        "name": "Born to Be Blue (1998)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Jump the Joint (2003)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Eugene Bridges (born March 30, 1963), usually credited as Eugene \"Hideaway\" Bridges, is an American blues and soul singer, songwriter, guitarist, and bandleader who has released seven albums and has performed widely in the US, Asia, Europe, Australia, and New Zealand.",
+    "activeFrom": "1998",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Eugene_Bridges",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-11"
+  },
+  {
+    "id": "matt-hill",
+    "name": "Matt Hill",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Matt%20Hill.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Matt_Hill.jpg",
+    "birthDate": "1985-06-17",
+    "birthPlace": "Rocky Mount",
+    "birthCoords": [
+      -77.805572,
+      35.954112
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=iccxrDXKNLM",
+    "albums": [
+      {
+        "name": "On the Floor (2010)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Tappin' That Thang (2012)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Matt Hill (born June 17, 1985) is an American electric blues singer, guitarist and songwriter.  To date, Hill has released two albums, and he has also gained a reputation for his energetic live performances. \nHill won a Blues Music Award in May 2011, in the category of 'Best New Artist Debut' for his first album, On the Floor.",
+    "activeFrom": "2010",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bob-margolin"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Matt_Hill_(musician)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-11"
+  },
+  {
+    "id": "seasick-steve",
+    "name": "Seasick Steve",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/SeasickSteve.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:SeasickSteve.jpg",
+    "birthDate": "1951-03-19",
+    "birthPlace": "Oakland",
+    "birthCoords": [
+      -122.25,
+      37.8
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=88f3ARTs6e0",
+    "albums": [
+      {
+        "name": "Dog House Music (2006)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Walkin’ Man: The Best of Seasick Steve (2011)",
+        "youtubeLink": "https://www.youtube.com/watch?v=bKxWtlsbr9Y"
+      }
+    ],
+    "description": "Steven Gene Wold (né Leach; March 19, 1951), commonly known as Seasick Steve, is an American blues musician.    He plays mostly personalized guitars and sings, usually about his early life doing casual work.   From the late 1960s, he worked as a musician and recording engineer in the US and Europe; he played bass in Shanti and was in a disco band called Crystal Grass as well as other bands.",
+    "activeFrom": "2004",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Seasick_Steve",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-11"
+  },
+  {
+    "id": "dave-specter",
+    "name": "Dave Specter",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dave_Specter_La_Vila_Joiosa_9_Mar_2024.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Dave_Specter_La_Vila_Joiosa_9_Mar_2024.jpg",
+    "birthDate": "1963-05-21",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=SfntezeUTsA",
+    "albums": [
+      {
+        "name": "Bluebird Blues (1991)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Six String Soul: 30 Years On Delmark (2021)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Yk8eZkT6d8A"
+      }
+    ],
+    "description": "Dave Specter (born May 21, 1963) is an American Chicago blues and jazz guitarist.",
+    "activeFrom": "1991",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Dave_Specter",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-11"
+  },
+  {
+    "id": "rockin-johnny-burgin",
+    "name": "Rockin' Johnny Burgin",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Johnnyburgin-2017byFrankyBruneel.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Johnnyburgin-2017byFrankyBruneel.jpg",
+    "birthDate": "1969-07-17",
+    "birthPlace": "Williamsport",
+    "birthCoords": [
+      -77.0186,
+      41.2444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Cincinnati",
+        "coords": [
+          -84.512,
+          39.1031
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Xy_nzwMfs9w",
+    "albums": [
+      {
+        "name": "Johnny Burgin Live (2019)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Johnny Burgin (born July 17, 1969) is an American blues guitarist, musician, and harmonica player.  Since 1997, he has released ten albums under his name and has contributed to various recordings.",
+    "activeFrom": "1997",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "charlie-musselwhite"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Rockin'_Johnny_Burgin",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-11"
   }
 ]
