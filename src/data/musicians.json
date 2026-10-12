@@ -1107,7 +1107,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "kim-wilson"
+      "kim-wilson",
+      "darrell-nulisch"
     ],
     "source": "https://en.wikipedia.org/wiki/Anson_Funderburgh",
     "secondaryInstruments": [],
@@ -4906,7 +4907,8 @@
       "stevie-ray-vaughan",
       "toronzo-cannon",
       "mighty-joe-young",
-      "tommy-castro"
+      "tommy-castro",
+      "mike-ledbetter"
     ],
     "influencedBy": [
       "guitar-slim",
@@ -16220,7 +16222,8 @@
       "jb-lenoir",
       "albert-collins",
       "maxwell-street-jimmy-davis",
-      "clarence-carter"
+      "clarence-carter",
+      "john-lee-hooker-jr"
     ],
     "influencedBy": [
       "charley-patton",
@@ -16237,7 +16240,8 @@
       "mel-brown",
       "kim-simmonds",
       "joe-weaver",
-      "mac-arnold"
+      "mac-arnold",
+      "ry-cooder"
     ],
     "source": "https://en.wikipedia.org/wiki/Boom_Boom_(John_Lee_Hooker_song)",
     "secondaryInstruments": [
@@ -25450,7 +25454,8 @@
       "sean-costello",
       "coco-montoya",
       "mighty-joe-young",
-      "eddy-clearwater"
+      "eddy-clearwater",
+      "mike-ledbetter"
     ],
     "influencedBy": [
       "muddy-waters",
@@ -28510,7 +28515,8 @@
     "incomplete": false,
     "playedWith": [
       "roomful-of-blues",
-      "albert-castiglia"
+      "albert-castiglia",
+      "darrell-nulisch"
     ],
     "source": "https://en.wikipedia.org/wiki/Ronnie_Earl",
     "secondaryInstruments": [],
@@ -58457,5 +58463,258 @@
     "source": "https://en.wikipedia.org/wiki/Benny_Turner",
     "secondaryInstruments": [],
     "createdAt": "2026-10-09"
+  },
+  {
+    "id": "john-lee-hooker-jr",
+    "name": "John Lee Hooker Jr.",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/JohnLeeHookerJr06.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:JohnLeeHookerJr06.jpg",
+    "birthDate": "1952-01-15",
+    "birthPlace": "Detroit, Michigan",
+    "birthCoords": [
+      -83.0458,
+      42.3314
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Vocals",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=msTD0GnE9LY",
+    "albums": [
+      {
+        "name": "Blues with a Vengeance (2004)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "John Lee Hooker Jr. is an American blues singer and Christian minister, the son of influential blues singer John Lee Hooker. His style brings a modernized, soul-inflected edge to the family's Detroit blues tradition, and his debut album earned a Grammy nomination.",
+    "activeFrom": "2004",
+    "influences": [],
+    "influencedBy": [
+      "john-lee-hooker"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/John_Lee_Hooker_Jr.",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-10"
+  },
+  {
+    "id": "ry-cooder",
+    "name": "Ry Cooder",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ry%20Cooder%20playing.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Ry_Cooder_playing.jpg",
+    "birthDate": "1947-03-15",
+    "birthPlace": "Los Angeles, California",
+    "birthCoords": [
+      -118.24368,
+      34.05223
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "San Francisco",
+        "coords": [
+          -122.4194,
+          37.7749
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=2BaF1i9BOFo",
+    "albums": [
+      {
+        "name": "Why Don't You Try Me Tonight: The Best of Ry Cooder (1985)",
+        "youtubeLink": "https://www.youtube.com/watch?v=qCPPGfkR01M"
+      },
+      {
+        "name": "If Walls Could Sing (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=SR3y6u6nagI"
+      },
+      {
+        "name": "River Rescue: The Very Best of Ry Cooder (1994)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Music by Ry Cooder (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=X6ymVaq3Fqk"
+      },
+      {
+        "name": "The Soundtracks: The Border / Alamo Bay (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=rZw735P7XGo"
+      },
+      {
+        "name": "The Ry Cooder Anthology: The UFO Has Landed (2008)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JbSijckDgTI"
+      }
+    ],
+    "description": "Ry Cooder is an American slide guitarist, songwriter and producer whose playing has carried Delta and West Coast blues phrasing into film scores, roots and world-music collaborations. He toured and recorded with John Lee Hooker and Taj Mahal, won Grammy Awards for his blues and roots work, and later produced the Buena Vista Social Club album.",
+    "activeFrom": "1967",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "john-lee-hooker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Ry_Cooder",
+    "secondaryInstruments": [
+      "Mandolin",
+      "Vocals"
+    ],
+    "createdAt": "2026-10-10"
+  },
+  {
+    "id": "darrell-nulisch",
+    "name": "Darrell Nulisch",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1952-09-14",
+    "birthPlace": "Dallas, Texas",
+    "birthCoords": [
+      -96.797,
+      32.7767
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=jVfESC-hOHg",
+    "albums": [
+      {
+        "name": "Thru the Years: A Retrospective (1992)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Darrell Nulisch is an American electric blues singer and harmonica player from Dallas who made his name fronting Anson Funderburgh and the Rockets, then Ronnie Earl's Broadcasters, before a solo career built on a soul-steeped vocal style. He has recorded extensively with guitarist Monster Mike Welch.",
+    "activeFrom": "1992",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "anson-funderburgh",
+      "ronnie-earl"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Darrell_Nulisch",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-10"
+  },
+  {
+    "id": "deanna-bogart",
+    "name": "Deanna Bogart",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Deanna1.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Deanna1.jpg",
+    "birthDate": "1959-09-05",
+    "birthPlace": "Detroit, Michigan",
+    "birthCoords": [
+      -83.0458,
+      42.3314
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=R5RlKGNE8e4",
+    "albums": [
+      {
+        "name": "Just a Wish Away (2014)",
+        "youtubeLink": "https://www.youtube.com/watch?v=XzonC-z2dHo"
+      }
+    ],
+    "description": "Deanna Bogart is an American blues and boogie-woogie pianist, saxophonist and singer whose energetic piano style and horn playing have made her a fixture of the festival circuit. She has won multiple Blues Music Awards in the Instrumentalist – Horn category.",
+    "activeFrom": "1979",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Deanna_Bogart",
+    "secondaryInstruments": [
+      "Vocals",
+      "Saxophone",
+      "Guitar"
+    ],
+    "createdAt": "2026-10-10"
+  },
+  {
+    "id": "mike-ledbetter",
+    "name": "Mike Ledbetter",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mike-ledbetter%20DSC03747.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Mike-ledbetter_DSC03747.jpg",
+    "birthDate": "1985-04-27",
+    "birthPlace": "Elgin, Illinois",
+    "birthCoords": [
+      -88.2812,
+      42.0372
+    ],
+    "deathDate": "2019-01-21",
+    "deathPlace": "Elgin, Illinois",
+    "deathCoords": [
+      -88.2812,
+      42.0372
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=seo-efWDxEY",
+    "albums": [
+      {
+        "name": "Right Place, Right Time (2017)",
+        "youtubeLink": "https://www.youtube.com/watch?v=chXQ5Ghl_U8"
+      }
+    ],
+    "description": "Mike Ledbetter was an American blues singer and guitarist from the Chicago scene, trained as an operatic tenor but shaped by Otis Rush and Buddy Guy. With guitarist Monster Mike Welch he recorded \"Right Place, Right Time,\" winner of the 2018 Blues Music Award for Traditional Blues Album of the Year, before his sudden death in 2019 at age 33.",
+    "activeFrom": "2000",
+    "influences": [],
+    "influencedBy": [
+      "buddy-guy",
+      "otis-rush"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Mike_Ledbetter",
+    "secondaryInstruments": [
+      "Guitar"
+    ],
+    "createdAt": "2026-10-10"
   }
 ]
