@@ -2534,7 +2534,8 @@
       "t-bone-walker",
       "pete-johnson",
       "eddie-bo",
-      "doug-macleod"
+      "doug-macleod",
+      "axel-zwingenberger"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Joe_Turner",
     "secondaryInstruments": [],
@@ -4104,7 +4105,8 @@
     "playedWith": [
       "nappy-brown",
       "candye-kane",
-      "matt-hill"
+      "matt-hill",
+      "fiona-boyes"
     ],
     "source": "https://en.wikipedia.org/wiki/Bob_Margolin",
     "secondaryInstruments": [],
@@ -5806,7 +5808,9 @@
       "rl-burnside"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "richard-johnston"
+    ],
     "source": "https://en.wikipedia.org/wiki/Cedric_Burnside",
     "secondaryInstruments": [
       "Guitar",
@@ -5860,7 +5864,8 @@
       "alexis-korner",
       "john-mayall",
       "eric-clapton",
-      "albert-collins"
+      "albert-collins",
+      "axel-zwingenberger"
     ],
     "source": "https://en.wikipedia.org/wiki/Champion_Jack_Dupree",
     "secondaryInstruments": [
@@ -9712,7 +9717,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "rory-block"
+      "rory-block",
+      "knut-reiersrud"
     ],
     "source": "https://en.wikipedia.org/wiki/Eric_Bibb",
     "secondaryInstruments": [],
@@ -13110,7 +13116,8 @@
       "howlin-wolf",
       "muddy-waters",
       "jack-owens",
-      "bennie-smith"
+      "bennie-smith",
+      "fiona-boyes"
     ],
     "source": "https://en.wikipedia.org/wiki/Hubert_Sumlin",
     "secondaryInstruments": [
@@ -14009,7 +14016,8 @@
       "julia-lee",
       "crown-prince-waterford",
       "priscilla-bowman",
-      "big-miller"
+      "big-miller",
+      "axel-zwingenberger"
     ],
     "source": "https://en.wikipedia.org/wiki/Jay_McShann",
     "secondaryInstruments": [
@@ -14648,7 +14656,9 @@
     ],
     "description": "Jessie Mae Hemphill was an American electric guitarist, songwriter, and vocalist specializing in North Mississippi hill country blues. Granddaughter of fife-and-drum band leader Sid Hemphill, she began playing guitar at age seven and drums in her grandfather's band. She won W.C. Handy Awards in 1987 and 1988. A 1993 stroke paralyzed her left side, ending her guitar playing.",
     "activeFrom": "1950",
-    "influences": [],
+    "influences": [
+      "richard-johnston"
+    ],
     "influencedBy": [
       "sid-hemphill"
     ],
@@ -17908,7 +17918,8 @@
     "activeFrom": "1968",
     "influences": [
       "buddy-guy",
-      "luther-dickinson"
+      "luther-dickinson",
+      "richard-johnston"
     ],
     "influencedBy": [
       "charley-patton",
@@ -24920,7 +24931,8 @@
       "louis-myers",
       "ana-popovic",
       "long-john-baldry",
-      "mud-morganfield"
+      "mud-morganfield",
+      "big-bill-morganfield"
     ],
     "influencedBy": [
       "son-house",
@@ -27622,7 +27634,8 @@
     "description": "R.  L.  Burnside (November 23, 1926 – September 1, 2005) was an American hill country blues singer, songwriter, and guitarist.",
     "activeFrom": "1960",
     "influences": [
-      "luther-dickinson"
+      "luther-dickinson",
+      "richard-johnston"
     ],
     "influencedBy": [
       "mississippi-fred-mcdowell",
@@ -28518,7 +28531,8 @@
     "playedWith": [
       "roomful-of-blues",
       "albert-castiglia",
-      "darrell-nulisch"
+      "darrell-nulisch",
+      "john-campbell"
     ],
     "source": "https://en.wikipedia.org/wiki/Ronnie_Earl",
     "secondaryInstruments": [],
@@ -30373,7 +30387,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "george-w-thomas"
+      "george-w-thomas",
+      "axel-zwingenberger"
     ],
     "source": "https://en.wikipedia.org/wiki/Sippie_Wallace",
     "secondaryInstruments": [
@@ -44325,7 +44340,8 @@
     "playedWith": [
       "bob-margolin",
       "junior-watson",
-      "sean-costello"
+      "sean-costello",
+      "knut-reiersrud"
     ],
     "source": "https://en.wikipedia.org/wiki/Nappy_Brown",
     "secondaryInstruments": [],
@@ -59123,5 +59139,373 @@
       "Guitar"
     ],
     "createdAt": "2026-10-10"
+  },
+  {
+    "id": "big-bill-morganfield",
+    "name": "Big Bill Morganfield",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Big%20Bill%20Morganfield2.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Big_Bill_Morganfield2.jpg",
+    "birthDate": "1956-06-19",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Ek08AhjlHYI",
+    "albums": [
+      {
+        "name": "Rising Son (1999)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Ramblin' Mind (2001)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Blues in the Blood (2003)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "William \"Big Bill\" Morganfield (born June 19, 1956) is an American blues singer and guitarist.  He is the son of McKinley Morganfield, also known as Muddy Waters, and the half-brother of Mud Morganfield.",
+    "activeFrom": "1990",
+    "influences": [],
+    "influencedBy": [
+      "muddy-waters"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Big_Bill_Morganfield",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "richard-johnston",
+    "name": "Richard Johnston",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "Mississippi",
+    "birthCoords": [
+      -90,
+      33
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=DGtz4Rjy1Ec",
+    "albums": [
+      {
+        "name": "Foot Hill Stomp (2002)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Official Bootleg #1 (2004)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Richard Wayne Johnston is an American country blues musician.  In 2001 he won the Blues Foundation's International Blues Challenge and its Albert King Award for most promising blues guitarist. \nHis work as a street musician on Beale Street in Memphis, Tennessee, was documented in the Alabama PBS film Richard Johnston: Hill Country Troubadour.",
+    "activeFrom": "",
+    "influences": [],
+    "influencedBy": [
+      "rl-burnside",
+      "junior-kimbrough",
+      "jessie-mae-hemphill"
+    ],
+    "incomplete": true,
+    "playedWith": [
+      "cedric-burnside"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Richard_Johnston_(musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "knut-reiersrud",
+    "name": "Knut Reiersrud",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Knut%20Reiersrud%20at%20Notodden%20bluesfest%202013.JPG?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Knut_Reiersrud_at_Notodden_bluesfest_2013.JPG",
+    "birthDate": "1961-02-12",
+    "birthPlace": "Oslo",
+    "birthCoords": [
+      10.738888888888889,
+      59.913333333333334
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=mWD0v9pGzOg",
+    "albums": [
+      {
+        "name": "Blues Detour (2014)",
+        "youtubeLink": "https://www.youtube.com/watch?v=IRpWtaEksZ0"
+      }
+    ],
+    "description": "Knut Reiersrud (born 12 February 1961) is a Norwegian blues guitarist.  His work also incorporates elements of Norwegian traditional music and African music.  Reiersrud has recorded and played with David Lindley, the Blind Boys Of Alabama, Rickie Lee Jones, Nina Hagen and Swedish blues musician Sven Zetterberg.",
+    "activeFrom": "1979",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "nappy-brown",
+      "eric-bibb"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Knut_Reiersrud",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "john-campbell",
+    "name": "John Campbell",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1952-01-20",
+    "birthPlace": "Shreveport, Louisiana",
+    "birthCoords": [
+      -93.7502,
+      32.5252
+    ],
+    "deathDate": "1993-06-13",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.006,
+      40.7128
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "A Man and His Blues (1988)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "One Believer (1991)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Howlin' Mercy (1993)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "John Campbell was an American blues guitarist and singer from Shreveport, Louisiana, known for a dark, slide-heavy electric sound sometimes called \"swamp gothic\" blues. Signed to Elektra, he released the acclaimed albums One Believer (1991) and Howlin' Mercy (1993) before his sudden death at 41.",
+    "activeFrom": "1975",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "ronnie-earl"
+    ],
+    "source": "https://en.wikipedia.org/wiki/John_Campbell_(blues_guitarist)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "gaye-adegbalola",
+    "name": "Gaye Adegbalola",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gaye%20Adegbalola%2C%202016%20(cropped).jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Gaye_Adegbalola,_2016_(cropped).jpg",
+    "birthDate": "1944-03-21",
+    "birthPlace": "Fredericksburg",
+    "birthCoords": [
+      -77.470778,
+      38.301829
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=TDqtltXALPQ",
+    "albums": [
+      {
+        "name": "Bitter Sweet Blues (1999)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Blues In All Flavors (2012)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Gaye Adegbalola (born Gaye Todd; March 21, 1944) is an American blues singer and guitarist, teacher, lecturer, activist, and photographer.",
+    "activeFrom": "1984",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Gaye_Adegbalola",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "axel-zwingenberger",
+    "name": "Axel Zwingenberger",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Zwingenberger.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Zwingenberger.jpg",
+    "birthDate": "1955-05-07",
+    "birthPlace": "Hamburg",
+    "birthCoords": [
+      10,
+      53.55
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=nS7AZdSvt8A",
+    "albums": [
+      {
+        "name": "Boogie Woogie Classics (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=baBy0vChOIA"
+      }
+    ],
+    "description": "Axel Zwingenberger (German: [ˌaksl̩ ˈt͡svɪŋənˌbɛʁɡɐ] ; born 7 May 1955) is a German blues and boogie-woogie pianist and songwriter.",
+    "activeFrom": "1975",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "big-joe-turner",
+      "champion-jack-dupree",
+      "sippie-wallace",
+      "jay-mcshann"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Axel_Zwingenberger",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "buddy-scott",
+    "name": "Buddy Scott",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/37/Buddy_Scott.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": "https://en.wikipedia.org/wiki/File:Buddy_Scott.jpg",
+    "birthDate": "1935-01-09",
+    "birthPlace": "Goodman, Mississippi",
+    "birthCoords": [
+      -89.917,
+      33.0188
+    ],
+    "deathDate": "1994-02-05",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=jiMhU1vEGbY",
+    "albums": [
+      {
+        "name": "Bad Avenue (1993)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Kenneth \"Buddy\" Scott (January 9, 1935 – February 5, 1994) was an American blues guitarist. \nScott was born in Goodman, Mississippi, United States and came from a family of Chicago blues musicians.   Both of his brothers, vocalist Howard and guitarist Walter, played locally, and his son is Kenneth \"Hollywood\" Scott.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Buddy_Scott",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "fiona-boyes",
+    "name": "Fiona Boyes",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/20_Fiona_Boyes_Merlefest_2014_Wilkesboro_NC_9266_(13927008609).jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:20_Fiona_Boyes_Merlefest_2014_Wilkesboro_NC_9266_(13927008609).jpg",
+    "birthDate": "",
+    "birthPlace": "Melbourne, Australia",
+    "birthCoords": [
+      144.9631,
+      -37.8136
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=quRoX2Ym-Lk",
+    "albums": [
+      {
+        "name": "Blues in My Heart (2000)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Lucky 13 (2006)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Fiona Boyes is an Australian blues musician.  She has been recording for more than 25 years and tours regularly in Australia, the United States, and Europe.  She was part of the Australian female Blues band, The Mojo's, in the 1990s alongside Annie Packer, Gina Woods, Kaz Dalla Rosa and Paula Dowes.",
+    "activeFrom": "1990",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "hubert-sumlin",
+      "bob-margolin"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Fiona_Boyes",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-13"
   }
 ]
