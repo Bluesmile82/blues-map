@@ -4104,8 +4104,7 @@
     "playedWith": [
       "nappy-brown",
       "candye-kane",
-      "matt-hill",
-      "fiona-boyes"
+      "matt-hill"
     ],
     "source": "https://en.wikipedia.org/wiki/Bob_Margolin",
     "secondaryInstruments": [],
@@ -13117,8 +13116,7 @@
       "howlin-wolf",
       "muddy-waters",
       "jack-owens",
-      "bennie-smith",
-      "fiona-boyes"
+      "bennie-smith"
     ],
     "source": "https://en.wikipedia.org/wiki/Hubert_Sumlin",
     "secondaryInstruments": [
@@ -24936,8 +24934,7 @@
       "louis-myers",
       "ana-popovic",
       "long-john-baldry",
-      "mud-morganfield",
-      "big-bill-morganfield"
+      "mud-morganfield"
     ],
     "influencedBy": [
       "son-house",
@@ -26735,8 +26732,7 @@
       "robert-nighthawk",
       "ike-turner",
       "diunna-greenleaf",
-      "albert-castiglia",
-      "big-bill-morganfield"
+      "albert-castiglia"
     ],
     "source": "https://en.wikipedia.org/wiki/Pinetop_Perkins",
     "secondaryInstruments": [
@@ -35890,8 +35886,7 @@
       "johnny-winter",
       "big-walter-horton",
       "jimmy-rogers",
-      "little-walter",
-      "big-bill-morganfield"
+      "little-walter"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_%22Big_Eyes%22_Smith",
     "secondaryInstruments": [
@@ -57451,9 +57446,7 @@
       "muddy-waters"
     ],
     "incomplete": false,
-    "playedWith": [
-      "big-bill-morganfield"
-    ],
+    "playedWith": [],
     "source": "https://en.wikipedia.org/wiki/Mud_Morganfield",
     "secondaryInstruments": [],
     "createdAt": "2026-10-07"
@@ -59193,55 +59186,6 @@
     "createdAt": "2026-10-14"
   },
   {
-    "id": "big-bill-morganfield",
-    "name": "Big Bill Morganfield",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Big%20Bill%20Morganfield2.jpg?width=500",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Big_Bill_Morganfield2.jpg",
-    "birthDate": "1956-06-19",
-    "birthPlace": "Chicago",
-    "birthCoords": [
-      -87.62777777777778,
-      41.88194444444444
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [
-      {
-        "place": "Atlanta",
-        "coords": [
-          -84.388,
-          33.749
-        ]
-      }
-    ],
-    "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=Ek08AhjlHYI",
-    "albums": [
-      {
-        "name": "Rising Son (1999)"
-      }
-    ],
-    "description": "Big Bill Morganfield is an American blues singer and guitarist, the son of Muddy Waters, who did not take up music seriously until after his father's death in 1983. His 1999 debut album \"Rising Son,\" featuring Pinetop Perkins and Willie \"Big Eyes\" Smith, won the W.C. Handy Award for Best New Blues Artist in 2000.",
-    "activeFrom": "1990",
-    "influences": [],
-    "influencedBy": [
-      "muddy-waters"
-    ],
-    "incomplete": false,
-    "playedWith": [
-      "mud-morganfield",
-      "pinetop-perkins",
-      "willie-big-eyes-smith"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Big_Bill_Morganfield",
-    "secondaryInstruments": [
-      "Vocals"
-    ],
-    "createdAt": "2026-10-14"
-  },
-  {
     "id": "johnny-sansone",
     "name": "Johnny Sansone",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Johnny_Sansone_%287314701954%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
@@ -59305,44 +59249,6 @@
       "Accordion",
       "Guitar",
       "Piano",
-      "Vocals"
-    ],
-    "createdAt": "2026-10-14"
-  },
-  {
-    "id": "fiona-boyes",
-    "name": "Fiona Boyes",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/20_Fiona_Boyes_Merlefest_2014_Wilkesboro_NC_9266_%2813927008609%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_source": "https://commons.wikimedia.org/wiki/File:20_Fiona_Boyes_Merlefest_2014_Wilkesboro_NC_9266_(13927008609).jpg",
-    "birthDate": "",
-    "birthPlace": "",
-    "birthCoords": [
-      0,
-      0
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [],
-    "instrument": "Guitar",
-    "bluesStyle": "Contemporary Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=quRoX2Ym-Lk",
-    "albums": [
-      {
-        "name": "Blues in My Heart (2000)"
-      }
-    ],
-    "description": "Fiona Boyes is an Australian blues guitarist and singer who has toured and recorded internationally for more than 25 years. In 2003 she became the first non-American to win the solo/duo category at the International Blues Challenge in Memphis, and she has since earned multiple Blues Music Award nominations.",
-    "activeFrom": "1980",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": true,
-    "playedWith": [
-      "hubert-sumlin",
-      "bob-margolin"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Fiona_Boyes",
-    "secondaryInstruments": [
       "Vocals"
     ],
     "createdAt": "2026-10-14"
