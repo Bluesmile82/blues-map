@@ -58157,7 +58157,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "radoslav-lorkovic"
+    ],
     "source": "https://en.wikipedia.org/wiki/Odetta",
     "secondaryInstruments": [],
     "createdAt": "2026-10-11"
@@ -59123,5 +59125,195 @@
       "Guitar"
     ],
     "createdAt": "2026-10-10"
+  },
+  {
+    "id": "bjorn-berge",
+    "name": "Bjørn Berge",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bjoern%20Berge%201999.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Bjoern%20Berge%201999.jpg?width=500",
+    "birthDate": "1968-09-23",
+    "birthPlace": "Haugesund Municipality",
+    "birthCoords": [
+      5.27551,
+      59.41015
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=EZfoNvsQYFI",
+    "albums": [
+      {
+        "name": "Stringmachine (2001)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Bjørn Berge is a Norwegian one-man-band blues guitarist and singer known for his percussive slide-guitar style. He won the Spellemannprisen (Norwegian Grammy) for Blues in both 2001, for \"Stringmachine,\" and 2002, for \"Illustrated Man,\" and tours extensively across Europe.",
+    "activeFrom": "1988",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Bj%C3%B8rn_Berge",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-15"
+  },
+  {
+    "id": "john-brim",
+    "name": "John Brim",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1922-04-10",
+    "birthPlace": "Hopkinsville",
+    "birthCoords": [
+      -87.48861,
+      36.85444
+    ],
+    "deathDate": "2003-10-01",
+    "deathPlace": "Gary",
+    "deathCoords": [
+      -87.345555555556,
+      41.580833333333
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Indianapolis",
+        "coords": [
+          -86.1581,
+          39.7684
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=MWOfESUmMGs",
+    "albums": [
+      {
+        "name": "Whose Muddy Shoes (1968)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "John Brim was an American Chicago blues guitarist, songwriter and singer best known for writing and recording \"Ice Cream Man,\" later covered by Van Halen. His wife Grace Brim played drums in his band, the Gary Kings, and he recorded for Parrot, Checker, and other Chicago labels in the early 1950s.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/John_Brim",
+    "secondaryInstruments": [
+      "Harmonica"
+    ],
+    "createdAt": "2026-10-15"
+  },
+  {
+    "id": "frank-bey",
+    "name": "Frank Bey",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Frank%20Bey.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Frank%20Bey.jpg?width=500",
+    "birthDate": "1946-01-17",
+    "birthPlace": "Millen",
+    "birthCoords": [
+      -81.94194,
+      32.80528
+    ],
+    "deathDate": "2020-06-07",
+    "deathPlace": "Glenolden",
+    "deathCoords": [
+      -75.2925,
+      39.8989
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Philadelphia",
+        "coords": [
+          -75.1652,
+          39.9526
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=cmXewpl8amw",
+    "albums": [
+      {
+        "name": "All My Dues Are Paid (2020)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Frank Bey was an American blues singer who grew up singing gospel in Georgia before working as a driver for Otis Redding's publicity man and touring with the Moorish Vanguard. After decades away from music, he returned in the 2000s and partnered with guitarist Anthony Paule in California, earning a Grammy nomination for Best Traditional Blues Album for \"All My Dues Are Paid\" (2020).",
+    "activeFrom": "1966",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Frank_Bey",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-15"
+  },
+  {
+    "id": "radoslav-lorkovic",
+    "name": "Radoslav Lorković",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Radoslav%20Lorkovic%20-%202008%20Woody%20Guthrie%20Folk%20Festival.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Radoslav%20Lorkovic%20-%202008%20Woody%20Guthrie%20Folk%20Festival.jpg?width=500",
+    "birthDate": "1958-09-03",
+    "birthPlace": "Zagreb",
+    "birthCoords": [
+      15.977222222222222,
+      45.81305555555556
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      }
+    ],
+    "instrument": "Accordion",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=FrrwiY4Zbig",
+    "albums": [
+      {
+        "name": "Clear and Cold (1990)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Radoslav Lorković (born September 3, 1958) is a Croatian-born and classically trained folk and blues musician, known in particular for his flair on the piano and accordion.  He has six solo studio recordings, three live albums and has recorded and performed with numerous artists including Odetta, Asleep at the Wheel, Jimmy LaFave, Shawn Mullins, Greg Brown, Richard Shindell, Ellis Paul, Susan Werner, Ronny Cox, Dave Moore, Andy White, Bo Ramsey, and Ramsay Midwood.  His 51 year career as a touring musician has taken him around the world, where he has performed from castles in Italy to Carnegie Hall.",
+    "activeFrom": "1975",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "odetta"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Radoslav_Lorkovi%C4%87",
+    "secondaryInstruments": [
+      "Piano",
+      "Hammond organ",
+      "Wurlitzer Electric Piano"
+    ],
+    "createdAt": "2026-10-15"
   }
 ]
