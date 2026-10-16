@@ -2006,7 +2006,8 @@
       "mel-brown",
       "bennie-smith",
       "mac-arnold",
-      "anthony-geraci"
+      "anthony-geraci",
+      "david-gogo"
     ],
     "source": "https://en.wikipedia.org/wiki/B._B._King",
     "secondaryInstruments": [
@@ -14481,7 +14482,8 @@
       "bb-king",
       "eric-clapton",
       "albert-collins",
-      "jack-owens"
+      "jack-owens",
+      "david-gogo"
     ],
     "source": "https://en.wikipedia.org/wiki/Jeff_Healey",
     "secondaryInstruments": [
@@ -21861,7 +21863,8 @@
       "jack-mcvea",
       "smiley-lewis",
       "bull-moose-jackson",
-      "big-john-greer"
+      "big-john-greer",
+      "chuck-berry"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -24956,7 +24959,8 @@
       "louis-myers",
       "ana-popovic",
       "long-john-baldry",
-      "mud-morganfield"
+      "mud-morganfield",
+      "chuck-berry"
     ],
     "influencedBy": [
       "son-house",
@@ -25511,7 +25515,8 @@
       "jody-williams",
       "wayne-bennett",
       "billy-gayles",
-      "anthony-geraci"
+      "anthony-geraci",
+      "david-gogo"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Rush",
     "secondaryInstruments": [
@@ -31604,7 +31609,8 @@
       "sean-costello",
       "ana-popovic",
       "jarekus-singleton",
-      "eric-gales"
+      "eric-gales",
+      "david-gogo"
     ],
     "influencedBy": [
       "bb-king",
@@ -31999,7 +32005,8 @@
       "roy-gaines",
       "lafayette-thomas",
       "jimmy-wilson",
-      "jimmy-nolen"
+      "jimmy-nolen",
+      "chuck-berry"
     ],
     "influencedBy": [
       "blind-lemon-jefferson",
@@ -36223,7 +36230,8 @@
       "albert-king",
       "ike-turner",
       "clayton-love",
-      "larry-thurston"
+      "larry-thurston",
+      "chuck-berry"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnnie_Johnson",
     "secondaryInstruments": [],
@@ -59519,5 +59527,236 @@
     "source": "https://en.wikipedia.org/wiki/Knut_Reiersrud",
     "secondaryInstruments": [],
     "createdAt": "2026-10-12"
+  },
+  {
+    "id": "chuck-berry",
+    "name": "Chuck Berry",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chuck%20Berry%20(8275961).jpeg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Chuck_Berry_(8275961).jpeg",
+    "birthDate": "1926-10-18",
+    "birthPlace": "St. Louis",
+    "birthCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "deathDate": "2017-03-18",
+    "deathPlace": "St. Charles",
+    "deathCoords": [
+      -90.511666666667,
+      38.788611111111
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York City",
+        "coords": [
+          -74.00611111111111,
+          40.71277777777778
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=qaE7C-hf6Wg",
+    "albums": [
+      {
+        "name": "Rhythm & Blues Rendez-Vous (1962)",
+        "youtubeLink": "https://www.youtube.com/watch?v=E2de1oWjIfc"
+      },
+      {
+        "name": "More Chuck Berry (1963)",
+        "youtubeLink": "https://www.youtube.com/watch?v=DN-KTphWEb8"
+      },
+      {
+        "name": "The Latest and the Greatest (1964)",
+        "youtubeLink": "https://www.youtube.com/watch?v=R4o8w7l13Oc"
+      },
+      {
+        "name": "You Never Can Tell (1964)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Fow6Jez755U"
+      },
+      {
+        "name": "Chuck Berry (1966)",
+        "youtubeLink": "https://www.youtube.com/watch?v=FkkoArGwrk8"
+      },
+      {
+        "name": "I'm a Rocker (1970)",
+        "youtubeLink": "https://www.youtube.com/watch?v=7E4qoHABedE"
+      }
+    ],
+    "description": "Chuck Berry was an American guitarist, singer, and songwriter from St. Louis whose innovative guitar riffs and showmanship fused blues, boogie-woogie, and country into rock and roll. Backed for decades by St. Louis blues pianist Johnnie Johnson, he wrote and recorded blues-rooted classics such as \"Maybellene\" and \"Johnny B. Goode\" that influenced generations of guitarists.",
+    "activeFrom": "1953",
+    "influences": [],
+    "influencedBy": [
+      "muddy-waters",
+      "louis-jordan",
+      "t-bone-walker"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "johnnie-johnson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Chuck_Berry",
+    "secondaryInstruments": [
+      "Gibson ES-335",
+      "Fender Telecaster",
+      "Fender Stratocaster"
+    ],
+    "createdAt": "2026-10-16"
+  },
+  {
+    "id": "winifred-atwell",
+    "name": "Winifred Atwell",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/f4/Winifred_Atwell.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": "https://en.wikipedia.org/wiki/File:Winifred_Atwell.jpg",
+    "birthDate": "1914-02-27",
+    "birthPlace": "Tunapuna",
+    "birthCoords": [
+      -61.3833,
+      10.6333
+    ],
+    "deathDate": "1983-02-28",
+    "deathPlace": "Sydney",
+    "deathCoords": [
+      151.21,
+      -33.867777777777775
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=uo37ZlHGvRw",
+    "albums": [
+      {
+        "name": "The Winifred Atwell Collection (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=N6Vhfaf0SJo"
+      },
+      {
+        "name": "The Best Of Winifred Atwell (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=N6Vhfaf0SJo"
+      },
+      {
+        "name": "Honky Tonk Piano Party (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=gPoFrWJZIDQ"
+      },
+      {
+        "name": "Dixie Boogie (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=CGHZEI5HwSo"
+      },
+      {
+        "name": "Honky Tonk Boogie (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=gPoFrWJZIDQ"
+      },
+      {
+        "name": "Winifred Atwell",
+        "youtubeLink": "https://www.youtube.com/watch?v=N6Vhfaf0SJo"
+      }
+    ],
+    "description": "Una Winifred Atwell (27 February or 27 April 1910 or 1914 – 28 February 1983) was a pianist and composer born in the country of Trinidad who migrated to Britain and who enjoyed great popularity in Britain and Australia from the 1950s with a series of boogie-woogie and ragtime hits, selling over 20 million records.  She was the first black artist to have a number-one hit in the UK singles chart and had the first piano instrumental to reach number one in the UK singles chart, with \"Let's Have Another Party\" in 1954, and as of 2023, remains the only female instrumentalist to do so.",
+    "activeFrom": "1946",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Winifred_Atwell",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-16"
+  },
+  {
+    "id": "david-gogo",
+    "name": "David Gogo",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Gogo%202011.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:David_Gogo_2011.jpg",
+    "birthDate": "1969-03-18",
+    "birthPlace": "Nanaimo",
+    "birthCoords": [
+      -123.93638888889,
+      49.164166666667
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9rAXRj3V8K8",
+    "albums": [
+      {
+        "name": "Skeleton Key (2002)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "David Gogo (born March 18, 1969), is a Canadian blues guitarist, singer-songwriter and bandleader who is currently signed to the independent Cordova Bay Records label.  He was formerly signed to EMI Records.  Between 1994 and 2024, he released 16 solo albums.",
+    "activeFrom": "1984",
+    "influences": [],
+    "influencedBy": [
+      "stevie-ray-vaughan"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "jeff-healey",
+      "bb-king",
+      "otis-rush"
+    ],
+    "source": "https://en.wikipedia.org/wiki/David_Gogo",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-16"
+  },
+  {
+    "id": "matt-andersen",
+    "name": "Matt Andersen",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Matt%20Andersen.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Matt_Andersen.jpg",
+    "birthDate": "",
+    "birthPlace": "Perth-Andover",
+    "birthCoords": [
+      -67.6984,
+      46.7393
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Canada",
+        "coords": [
+          -109,
+          56
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=fYqeOU5WQsk",
+    "albums": [
+      {
+        "name": "Weightless (2014)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Matt Andersen is a Canadian blues guitarist and singer-songwriter from Perth-Andover, New Brunswick.  He is a Juno Award nominee.  His musical career started in 2002 with the New Brunswick band Flat Top.",
+    "activeFrom": "2002",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Matt_Andersen",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-16"
   }
 ]
