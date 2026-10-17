@@ -8109,7 +8109,8 @@
       "barbara-lynn",
       "deacon-john",
       "jessie-hill",
-      "danny-white"
+      "danny-white",
+      "terrance-simien"
     ],
     "source": "https://en.wikipedia.org/wiki/Dr._John",
     "secondaryInstruments": [
@@ -13858,7 +13859,8 @@
       "t-bone-walker",
       "lowell-fulson",
       "albert-collins",
-      "kid-ramos"
+      "kid-ramos",
+      "enrico-crivellaro"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Harman",
     "secondaryInstruments": [
@@ -28559,7 +28561,8 @@
       "roomful-of-blues",
       "albert-castiglia",
       "darrell-nulisch",
-      "anthony-geraci"
+      "anthony-geraci",
+      "al-copley"
     ],
     "source": "https://en.wikipedia.org/wiki/Ronnie_Earl",
     "secondaryInstruments": [],
@@ -28632,7 +28635,8 @@
     "incomplete": false,
     "playedWith": [
       "eddie-cleanhead-vinson",
-      "kid-ramos"
+      "kid-ramos",
+      "al-copley"
     ],
     "source": "https://en.wikipedia.org/wiki/Roomful_of_Blues",
     "secondaryInstruments": [
@@ -36088,7 +36092,8 @@
     "incomplete": false,
     "playedWith": [
       "johnny-winter",
-      "billy-branch"
+      "billy-branch",
+      "enrico-crivellaro"
     ],
     "source": "https://en.wikipedia.org/wiki/Jason_Ricci",
     "secondaryInstruments": [
@@ -58645,7 +58650,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "rl-burnside"
+      "rl-burnside",
+      "enrico-crivellaro"
     ],
     "source": "https://en.wikipedia.org/wiki/Janiva_Magness",
     "secondaryInstruments": [],
@@ -59519,5 +59525,241 @@
     "source": "https://en.wikipedia.org/wiki/Knut_Reiersrud",
     "secondaryInstruments": [],
     "createdAt": "2026-10-12"
+  },
+  {
+    "id": "leo-welch",
+    "name": "Leo Welch",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1932-03-22",
+    "birthPlace": "Sabougla, Mississippi",
+    "birthCoords": [
+      -89.34,
+      33.94
+    ],
+    "deathDate": "2017-12-19",
+    "deathPlace": "Mississippi",
+    "deathCoords": [
+      -90,
+      33
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=XEYWUpLZ_pw",
+    "albums": [
+      {
+        "name": "Sabougla Voices (2014)",
+        "youtubeLink": null
+      }
+    ],
+    "description": "Leo \"Bud\" Welch (March 22, 1932 – December 19, 2017) was an American gospel blues guitarist and singer from Mississippi who spent decades performing in church and juke joints before being discovered and recorded for the first time at age 81. His debut album, Sabougla Voices (2014), and its follow-up, I Don't Prefer No Blues (2015), won him wide critical acclaim as one of the last of the old-school Mississippi bluesmen.",
+    "activeFrom": "2014",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Leo_Welch",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-17"
+  },
+  {
+    "id": "enrico-crivellaro",
+    "name": "Enrico Crivellaro",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Oerknor%20NiX%20BBlues%20Club%20Enrico%20Crivellaro.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Oerknor_NiX_BBlues_Club_Enrico_Crivellaro.jpg",
+    "birthDate": "",
+    "birthPlace": "Padua, Italy",
+    "birthCoords": [
+      11.873333333333333,
+      45.40777777777778
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Y0NAJjXlLJU",
+    "albums": [
+      {
+        "name": "Mojo Zone (2009)",
+        "youtubeLink": "https://www.youtube.com/watch?v=5s_G-m13Hm0"
+      }
+    ],
+    "description": "Enrico Crivellaro is an Italian blues guitarist from Padua known for his swinging, jazz-inflected electric blues style. He has toured internationally and recorded or performed with American blues artists including Jason Ricci, James Harman, and Janiva Magness, earning international awards for his guitar playing.",
+    "activeFrom": "1997",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "jason-ricci",
+      "janiva-magness",
+      "james-harman"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Enrico_Crivellaro",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-17"
+  },
+  {
+    "id": "al-copley",
+    "name": "Al Copley",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Al%20Copley%202007%20(cropped).jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Al_Copley_2007_(cropped).jpg",
+    "birthDate": "1952-04-29",
+    "birthPlace": "Buffalo, New York",
+    "birthCoords": [
+      -78.87805555555556,
+      42.88638888888889
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ns-8xkSm0SE",
+    "albums": [
+      {
+        "name": "A Handful of Keys (1986)",
+        "youtubeLink": null
+      }
+    ],
+    "description": "Al Copley is an American blues pianist, singer and arranger who co-founded the jump-blues band Roomful of Blues in 1967 and anchored its horn-driven sound on piano for 16 years. He later built a solo career across Europe and the US, earning two Grammy nominations for Best Traditional Blues Album and recording with artists including Eddie \"Cleanhead\" Vinson and Lou Rawls.",
+    "activeFrom": "1967",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "roomful-of-blues",
+      "ronnie-earl"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Al_Copley",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-17"
+  },
+  {
+    "id": "carolyn-wonderland",
+    "name": "Carolyn Wonderland",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carolyn%20Wonderland%20by%20Ron%20Baker.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Carolyn_Wonderland_by_Ron_Baker.jpg",
+    "birthDate": "1972-11-09",
+    "birthPlace": "Houston, Texas",
+    "birthCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=7RK6Mlss2jk",
+    "albums": [
+      {
+        "name": "Moon Goes Missing (2017)",
+        "youtubeLink": "https://www.youtube.com/watch?v=vRM13ZknAsg"
+      }
+    ],
+    "description": "Carolyn Wonderland is an American blues guitarist, singer and songwriter from the Houston and Austin blues scenes known for her fiery slide and electric guitar work. In April 2018 she became the first woman to serve as lead guitarist in John Mayall's band, taking her Texas blues sound on international tours.",
+    "activeFrom": "1992",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Carolyn_Wonderland",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-17"
+  },
+  {
+    "id": "terrance-simien",
+    "name": "Terrance Simien",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/TerranceSimienFeb08.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:TerranceSimienFeb08.jpg",
+    "birthDate": "1965-09-03",
+    "birthPlace": "Mallet, Louisiana",
+    "birthCoords": [
+      -92,
+      30.6
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=7b__WPvLFSY",
+    "albums": [
+      {
+        "name": "Jam the Jazzfest (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=97GVrgsub1o"
+      }
+    ],
+    "description": "Terrance Simien is an American zydeco musician, accordionist and songwriter from Louisiana who formed his band, Terrance Simien and the Mallet Playboys, as a teenager and helped bring zydeco to international audiences. He and his group the Zydeco Experience won the first-ever Grammy Award for Best Zydeco or Cajun Music Album in 2008 and another Grammy for Best Regional Roots Music Album in 2014.",
+    "activeFrom": "1985",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "dr-john"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Terrance_Simien",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-17"
+  },
+  {
+    "id": "chubby-carrier",
+    "name": "Chubby Carrier",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chubby%20Carrier%20knuckleheads.png?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Chubby_Carrier_knuckleheads.png",
+    "birthDate": "1967-07-01",
+    "birthPlace": "Lafayette, Louisiana",
+    "birthCoords": [
+      -92.012649,
+      30.243062
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=4q9bsMjE8eY",
+    "albums": [
+      {
+        "name": "Zydeco Junkie (2010)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JeyIKzgzFIQ"
+      }
+    ],
+    "description": "Roy \"Chubby\" Carrier is an American zydeco accordionist from a prominent Louisiana zydeco family who leads Chubby Carrier and the Bayou Swamp Band. His 2010 album Zydeco Junkie won the Grammy Award for Best Zydeco or Cajun Music Album.",
+    "activeFrom": "1979",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Chubby_Carrier",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-17"
   }
 ]
