@@ -8120,7 +8120,8 @@
       "barbara-lynn",
       "deacon-john",
       "jessie-hill",
-      "danny-white"
+      "danny-white",
+      "terrance-simien"
     ],
     "source": "https://en.wikipedia.org/wiki/Dr._John",
     "secondaryInstruments": [
@@ -13871,7 +13872,8 @@
       "t-bone-walker",
       "lowell-fulson",
       "albert-collins",
-      "kid-ramos"
+      "kid-ramos",
+      "enrico-crivellaro"
     ],
     "source": "https://en.wikipedia.org/wiki/James_Harman",
     "secondaryInstruments": [
@@ -28590,8 +28592,9 @@
       "roomful-of-blues",
       "albert-castiglia",
       "darrell-nulisch",
-      "john-campbell",
-      "anthony-geraci"
+      "anthony-geraci",
+      "al-copley",
+      "john-campbell"
     ],
     "source": "https://en.wikipedia.org/wiki/Ronnie_Earl",
     "secondaryInstruments": [],
@@ -28664,7 +28667,8 @@
     "incomplete": false,
     "playedWith": [
       "eddie-cleanhead-vinson",
-      "kid-ramos"
+      "kid-ramos",
+      "al-copley"
     ],
     "source": "https://en.wikipedia.org/wiki/Roomful_of_Blues",
     "secondaryInstruments": [
@@ -36123,7 +36127,8 @@
     "incomplete": false,
     "playedWith": [
       "johnny-winter",
-      "billy-branch"
+      "billy-branch",
+      "enrico-crivellaro"
     ],
     "source": "https://en.wikipedia.org/wiki/Jason_Ricci",
     "secondaryInstruments": [
@@ -58686,7 +58691,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "rl-burnside"
+      "rl-burnside",
+      "enrico-crivellaro"
     ],
     "source": "https://en.wikipedia.org/wiki/Janiva_Magness",
     "secondaryInstruments": [],
@@ -59217,315 +59223,51 @@
     "createdAt": "2026-10-10"
   },
   {
-    "id": "marty-sammon",
-    "name": "Marty Sammon",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marty%20Sammon.jpg?width=500",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Marty_Sammon.jpg",
-    "birthDate": "1977-10-14",
-    "birthPlace": "Chicago",
+    "id": "fiona-boyes",
+    "name": "Fiona Boyes",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/20_Fiona_Boyes_Merlefest_2014_Wilkesboro_NC_9266_%2813927008609%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": "https://commons.wikimedia.org/wiki/File:20_Fiona_Boyes_Merlefest_2014_Wilkesboro_NC_9266_(13927008609).jpg",
+    "birthDate": "1962-07-21",
+    "birthPlace": "",
     "birthCoords": [
-      -87.62777777777778,
-      41.88194444444444
+      0,
+      0
     ],
-    "deathDate": "2022-10-15",
-    "deathPlace": "New Orleans",
-    "deathCoords": [
-      -90.07833333333333,
-      29.976111111111113
-    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
     "spentTimePlaces": [],
-    "instrument": "Piano",
-    "bluesStyle": "Chicago Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=MVnJeug5osE",
-    "albums": [
-      {
-        "name": "Blues Keyboard Method (2015)"
-      }
-    ],
-    "description": "Marty Sammon was an American blues keyboardist who grew up on the South Side of Chicago, where he began sitting in on the Chicago blues circuit as a teenager. He spent years as a touring and session pianist for Otis Rush, Phil Guy, and finally Buddy Guy, becoming a fixture of modern Chicago blues, and wrote the instructional book \"Blues Keyboard Method.\"",
-    "activeFrom": "1993",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [
-      "buddy-guy",
-      "otis-rush",
-      "phil-guy"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Marty_Sammon",
-    "secondaryInstruments": [
-      "Vocals"
-    ],
-    "createdAt": "2026-10-14"
-  },
-  {
-    "id": "johnny-sansone",
-    "name": "Johnny Sansone",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Johnny_Sansone_%287314701954%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Johnny_Sansone_(7314701954).jpg",
-    "birthDate": "1957-09-27",
-    "birthPlace": "Orange, New Jersey",
-    "birthCoords": [
-      -74.2324,
-      40.7712
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [
-      {
-        "place": "Chicago",
-        "coords": [
-          -87.6298,
-          41.8781
-        ]
-      },
-      {
-        "place": "New Orleans",
-        "coords": [
-          -90.0715,
-          29.9511
-        ]
-      },
-      {
-        "place": "Texas",
-        "coords": [
-          -99.9018,
-          31.9686
-        ]
-      }
-    ],
-    "instrument": "Harmonica",
-    "bluesStyle": "Swamp Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=ZLMr-_DRgJ8",
-    "albums": [
-      {
-        "name": "Crescent City Moon (1997)"
-      }
-    ],
-    "description": "John Sansone (born September 27, 1957), also known as Jumpin' Johnny Sansone, is an American electric blues singer, songwriter, harmonicist, accordionist, guitarist and piano player. He was nominated for seven music awards in 2012, including a Blues Music Award which he won. To date, he has been involved in the release of twelve original albums.",
-    "activeFrom": "1980",
-    "influences": [],
-    "influencedBy": [
-      "james-cotton",
-      "junior-wells"
-    ],
-    "incomplete": false,
-    "playedWith": [
-      "jimmy-rogers",
-      "sonny-landreth",
-      "robert-lockwood-jr",
-      "david-honeyboy-edwards"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Johnny_Sansone",
-    "secondaryInstruments": [
-      "Accordion",
-      "Guitar",
-      "Piano",
-      "Vocals"
-    ],
-    "createdAt": "2026-10-14"
-  },
-  {
-    "id": "carolyn-wonderland",
-    "name": "Carolyn Wonderland",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carolyn%20Wonderland%20by%20Ron%20Baker.jpg?width=500",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Carolyn_Wonderland_by_Ron_Baker.jpg",
-    "birthDate": "1972-11-09",
-    "birthPlace": "Houston",
-    "birthCoords": [
-      -95.383055555556,
-      29.762777777778
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [
-      {
-        "place": "Texas",
-        "coords": [
-          -99.9018,
-          31.9686
-        ]
-      }
-    ],
     "instrument": "Guitar",
     "bluesStyle": "Contemporary Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=dS5FF8wMjvE",
+    "youtubeLink": "https://www.youtube.com/watch?v=quRoX2Ym-Lk",
     "albums": [
       {
-        "name": "Miss Understood (2008)"
-      }
-    ],
-    "description": "Carolyn Wonderland is an American blues singer-songwriter and guitarist from Houston who built her reputation touring the Texas blues circuit out of Austin. In 2018 she joined John Mayall's touring band as lead guitarist, and her album \"Miss Understood\" spent months on the Roots Music Report chart.",
-    "activeFrom": "1992",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [
-      "john-mayall"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Carolyn_Wonderland",
-    "secondaryInstruments": [
-      "Vocals",
-      "Mandolin",
-      "Trumpet",
-      "Piano"
-    ],
-    "createdAt": "2026-10-14"
-  },
-  {
-    "id": "gary-wiggins",
-    "name": "Gary Wiggins",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Detroit%20Gary%20Wiggins.jpg?width=500",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Detroit_Gary_Wiggins.jpg",
-    "birthDate": "1952-11-10",
-    "birthPlace": "Inkster",
-    "birthCoords": [
-      -83.314166666667,
-      42.2925
-    ],
-    "deathDate": "2020-11-22",
-    "deathPlace": "Bissingen an der Teck, Germany",
-    "deathCoords": [
-      9.4833,
-      48.6167
-    ],
-    "spentTimePlaces": [
-      {
-        "place": "London",
-        "coords": [
-          -0.1276,
-          51.5074
-        ]
-      }
-    ],
-    "instrument": "Saxophone",
-    "bluesStyle": "Detroit Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=UvBN1ioTwiw",
-    "albums": [
-      {
-        "name": "Acoustic Soul (1992)"
-      }
-    ],
-    "description": "\"Detroit\" Gary Wiggins was an American blues and jazz saxophonist who started out as a teenager in Bobo Jenkins' Detroit blues band before touring widely across the West Coast and Chicago blues scenes. After relocating to Europe in 1983 he became a leading ambassador for American blues there, co-founding the Berlin Blues Café and recording with Katie Webster and other blues veterans.",
-    "activeFrom": "1966",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": false,
-    "playedWith": [
-      "bobo-jenkins",
-      "eddie-cleanhead-vinson",
-      "katie-webster",
-      "charlie-musselwhite",
-      "louisiana-red",
-      "carey-bell"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Gary_Wiggins_(musician)",
-    "secondaryInstruments": [
-      "Vocals"
-    ],
-    "createdAt": "2026-10-14"
-  },
-  {
-    "id": "big-bill-morganfield",
-    "name": "Big Bill Morganfield",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Big%20Bill%20Morganfield2.jpg?width=500",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Big_Bill_Morganfield2.jpg",
-    "birthDate": "1956-06-19",
-    "birthPlace": "Chicago",
-    "birthCoords": [
-      -87.62777777777778,
-      41.88194444444444
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [
-      {
-        "place": "Atlanta",
-        "coords": [
-          -84.388,
-          33.749
-        ]
-      }
-    ],
-    "instrument": "Guitar",
-    "bluesStyle": "Chicago Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=Ek08AhjlHYI",
-    "albums": [
-      {
-        "name": "Rising Son (1999)",
+        "name": "Blues in My Heart (2000)",
         "youtubeLink": ""
       },
       {
-        "name": "Ramblin' Mind (2001)",
+        "name": "Lucky 13 (2006)",
         "youtubeLink": ""
       },
       {
-        "name": "Blues in the Blood (2003)",
+        "name": "Live From Bluesville (2008)",
         "youtubeLink": ""
       }
     ],
-    "description": "William \"Big Bill\" Morganfield (born June 19, 1956) is an American blues singer and guitarist.  He is the son of McKinley Morganfield, also known as Muddy Waters, and the half-brother of Mud Morganfield.",
+    "description": "Fiona Boyes is an Australian blues musician.  She has been recording for more than 25 years and tours regularly in Australia, the United States, and Europe.  She was part of the Australian female Blues band, The Mojo's, in the 1990s alongside Annie Packer, Gina Woods, Kaz Dalla Rosa and Paula Dowes.",
     "activeFrom": "1990",
     "influences": [],
-    "influencedBy": [
-      "muddy-waters"
-    ],
-    "incomplete": false,
-    "playedWith": [],
-    "source": "https://en.wikipedia.org/wiki/Big_Bill_Morganfield",
-    "secondaryInstruments": [
-      "Vocals"
-    ],
-    "createdAt": "2026-10-13"
-  },
-  {
-    "id": "richard-johnston",
-    "name": "Richard Johnston",
-    "image": "",
-    "image_source": null,
-    "birthDate": "",
-    "birthPlace": "Mississippi",
-    "birthCoords": [
-      -90,
-      33
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [],
-    "instrument": "Guitar",
-    "bluesStyle": "Hill Country Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=DGtz4Rjy1Ec",
-    "albums": [
-      {
-        "name": "Foot Hill Stomp (2002)",
-        "youtubeLink": ""
-      },
-      {
-        "name": "Official Bootleg #1 (2004)",
-        "youtubeLink": ""
-      }
-    ],
-    "description": "Richard Wayne Johnston is an American country blues musician.  In 2001 he won the Blues Foundation's International Blues Challenge and its Albert King Award for most promising blues guitarist. \nHis work as a street musician on Beale Street in Memphis, Tennessee, was documented in the Alabama PBS film Richard Johnston: Hill Country Troubadour.",
-    "activeFrom": "",
-    "influences": [],
-    "influencedBy": [
-      "rl-burnside",
-      "junior-kimbrough",
-      "jessie-mae-hemphill"
-    ],
+    "influencedBy": [],
     "incomplete": true,
     "playedWith": [
-      "cedric-burnside"
+      "hubert-sumlin",
+      "bob-margolin"
     ],
-    "source": "https://en.wikipedia.org/wiki/Richard_Johnston_(musician)",
+    "source": "https://en.wikipedia.org/wiki/Fiona_Boyes",
     "secondaryInstruments": [
       "Vocals"
     ],
-    "createdAt": "2026-10-13"
+    "createdAt": "2026-10-12"
   },
   {
     "id": "terry-hanck",
@@ -59831,6 +59573,509 @@
     "createdAt": "2026-10-12"
   },
   {
+    "id": "leo-welch",
+    "name": "Leo Welch",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1932-03-22",
+    "birthPlace": "Sabougla, Mississippi",
+    "birthCoords": [
+      -89.34,
+      33.94
+    ],
+    "deathDate": "2017-12-19",
+    "deathPlace": "Mississippi",
+    "deathCoords": [
+      -90,
+      33
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=XEYWUpLZ_pw",
+    "albums": [
+      {
+        "name": "Sabougla Voices (2014)",
+        "youtubeLink": null
+      }
+    ],
+    "description": "Leo \"Bud\" Welch (March 22, 1932 – December 19, 2017) was an American gospel blues guitarist and singer from Mississippi who spent decades performing in church and juke joints before being discovered and recorded for the first time at age 81. His debut album, Sabougla Voices (2014), and its follow-up, I Don't Prefer No Blues (2015), won him wide critical acclaim as one of the last of the old-school Mississippi bluesmen.",
+    "activeFrom": "2014",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Leo_Welch",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-17"
+  },
+  {
+    "id": "enrico-crivellaro",
+    "name": "Enrico Crivellaro",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Oerknor%20NiX%20BBlues%20Club%20Enrico%20Crivellaro.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Oerknor_NiX_BBlues_Club_Enrico_Crivellaro.jpg",
+    "birthDate": "",
+    "birthPlace": "Padua, Italy",
+    "birthCoords": [
+      11.873333333333333,
+      45.40777777777778
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Y0NAJjXlLJU",
+    "albums": [
+      {
+        "name": "Mojo Zone (2009)",
+        "youtubeLink": "https://www.youtube.com/watch?v=5s_G-m13Hm0"
+      }
+    ],
+    "description": "Enrico Crivellaro is an Italian blues guitarist from Padua known for his swinging, jazz-inflected electric blues style. He has toured internationally and recorded or performed with American blues artists including Jason Ricci, James Harman, and Janiva Magness, earning international awards for his guitar playing.",
+    "activeFrom": "1997",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "jason-ricci",
+      "janiva-magness",
+      "james-harman"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Enrico_Crivellaro",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-17"
+  },
+  {
+    "id": "al-copley",
+    "name": "Al Copley",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Al%20Copley%202007%20(cropped).jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Al_Copley_2007_(cropped).jpg",
+    "birthDate": "1952-04-29",
+    "birthPlace": "Buffalo, New York",
+    "birthCoords": [
+      -78.87805555555556,
+      42.88638888888889
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ns-8xkSm0SE",
+    "albums": [
+      {
+        "name": "A Handful of Keys (1986)",
+        "youtubeLink": null
+      }
+    ],
+    "description": "Al Copley is an American blues pianist, singer and arranger who co-founded the jump-blues band Roomful of Blues in 1967 and anchored its horn-driven sound on piano for 16 years. He later built a solo career across Europe and the US, earning two Grammy nominations for Best Traditional Blues Album and recording with artists including Eddie \"Cleanhead\" Vinson and Lou Rawls.",
+    "activeFrom": "1967",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "roomful-of-blues",
+      "ronnie-earl"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Al_Copley",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-17"
+  },
+  {
+    "id": "carolyn-wonderland",
+    "name": "Carolyn Wonderland",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carolyn%20Wonderland%20by%20Ron%20Baker.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Carolyn_Wonderland_by_Ron_Baker.jpg",
+    "birthDate": "1972-11-09",
+    "birthPlace": "Houston",
+    "birthCoords": [
+      -95.383055555556,
+      29.762777777778
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dS5FF8wMjvE",
+    "albums": [
+      {
+        "name": "Miss Understood (2008)"
+      }
+    ],
+    "description": "Carolyn Wonderland is an American blues singer-songwriter and guitarist from Houston who built her reputation touring the Texas blues circuit out of Austin. In 2018 she joined John Mayall's touring band as lead guitarist, and her album \"Miss Understood\" spent months on the Roots Music Report chart.",
+    "activeFrom": "1992",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "john-mayall"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Carolyn_Wonderland",
+    "secondaryInstruments": [
+      "Vocals",
+      "Mandolin",
+      "Trumpet",
+      "Piano"
+    ],
+    "createdAt": "2026-10-14"
+  },
+  {
+    "id": "terrance-simien",
+    "name": "Terrance Simien",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/TerranceSimienFeb08.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:TerranceSimienFeb08.jpg",
+    "birthDate": "1965-09-03",
+    "birthPlace": "Mallet, Louisiana",
+    "birthCoords": [
+      -92,
+      30.6
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=7b__WPvLFSY",
+    "albums": [
+      {
+        "name": "Jam the Jazzfest (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=97GVrgsub1o"
+      }
+    ],
+    "description": "Terrance Simien is an American zydeco musician, accordionist and songwriter from Louisiana who formed his band, Terrance Simien and the Mallet Playboys, as a teenager and helped bring zydeco to international audiences. He and his group the Zydeco Experience won the first-ever Grammy Award for Best Zydeco or Cajun Music Album in 2008 and another Grammy for Best Regional Roots Music Album in 2014.",
+    "activeFrom": "1985",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "dr-john"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Terrance_Simien",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-17"
+  },
+  {
+    "id": "chubby-carrier",
+    "name": "Chubby Carrier",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chubby%20Carrier%20knuckleheads.png?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Chubby_Carrier_knuckleheads.png",
+    "birthDate": "1967-07-01",
+    "birthPlace": "Lafayette, Louisiana",
+    "birthCoords": [
+      -92.012649,
+      30.243062
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Accordion",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=4q9bsMjE8eY",
+    "albums": [
+      {
+        "name": "Zydeco Junkie (2010)",
+        "youtubeLink": "https://www.youtube.com/watch?v=JeyIKzgzFIQ"
+      }
+    ],
+    "description": "Roy \"Chubby\" Carrier is an American zydeco accordionist from a prominent Louisiana zydeco family who leads Chubby Carrier and the Bayou Swamp Band. His 2010 album Zydeco Junkie won the Grammy Award for Best Zydeco or Cajun Music Album.",
+    "activeFrom": "1979",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Chubby_Carrier",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-17"
+  },
+  {
+    "id": "marty-sammon",
+    "name": "Marty Sammon",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marty%20Sammon.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Marty_Sammon.jpg",
+    "birthDate": "1977-10-14",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": "2022-10-15",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=MVnJeug5osE",
+    "albums": [
+      {
+        "name": "Blues Keyboard Method (2015)"
+      }
+    ],
+    "description": "Marty Sammon was an American blues keyboardist who grew up on the South Side of Chicago, where he began sitting in on the Chicago blues circuit as a teenager. He spent years as a touring and session pianist for Otis Rush, Phil Guy, and finally Buddy Guy, becoming a fixture of modern Chicago blues, and wrote the instructional book \"Blues Keyboard Method.\"",
+    "activeFrom": "1993",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "buddy-guy",
+      "otis-rush",
+      "phil-guy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Marty_Sammon",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-14"
+  },
+  {
+    "id": "johnny-sansone",
+    "name": "Johnny Sansone",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Johnny_Sansone_%287314701954%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Johnny_Sansone_(7314701954).jpg",
+    "birthDate": "1957-09-27",
+    "birthPlace": "Orange, New Jersey",
+    "birthCoords": [
+      -74.2324,
+      40.7712
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ZLMr-_DRgJ8",
+    "albums": [
+      {
+        "name": "Crescent City Moon (1997)"
+      }
+    ],
+    "description": "John Sansone (born September 27, 1957), also known as Jumpin' Johnny Sansone, is an American electric blues singer, songwriter, harmonicist, accordionist, guitarist and piano player. He was nominated for seven music awards in 2012, including a Blues Music Award which he won. To date, he has been involved in the release of twelve original albums.",
+    "activeFrom": "1980",
+    "influences": [],
+    "influencedBy": [
+      "james-cotton",
+      "junior-wells"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "jimmy-rogers",
+      "sonny-landreth",
+      "robert-lockwood-jr",
+      "david-honeyboy-edwards"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Johnny_Sansone",
+    "secondaryInstruments": [
+      "Accordion",
+      "Guitar",
+      "Piano",
+      "Vocals"
+    ],
+    "createdAt": "2026-10-14"
+  },
+  {
+    "id": "gary-wiggins",
+    "name": "Gary Wiggins",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Detroit%20Gary%20Wiggins.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Detroit_Gary_Wiggins.jpg",
+    "birthDate": "1952-11-10",
+    "birthPlace": "Inkster",
+    "birthCoords": [
+      -83.314166666667,
+      42.2925
+    ],
+    "deathDate": "2020-11-22",
+    "deathPlace": "Bissingen an der Teck, Germany",
+    "deathCoords": [
+      9.4833,
+      48.6167
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      }
+    ],
+    "instrument": "Saxophone",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=UvBN1ioTwiw",
+    "albums": [
+      {
+        "name": "Acoustic Soul (1992)"
+      }
+    ],
+    "description": "\"Detroit\" Gary Wiggins was an American blues and jazz saxophonist who started out as a teenager in Bobo Jenkins' Detroit blues band before touring widely across the West Coast and Chicago blues scenes. After relocating to Europe in 1983 he became a leading ambassador for American blues there, co-founding the Berlin Blues Café and recording with Katie Webster and other blues veterans.",
+    "activeFrom": "1966",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bobo-jenkins",
+      "eddie-cleanhead-vinson",
+      "katie-webster",
+      "charlie-musselwhite",
+      "louisiana-red",
+      "carey-bell"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Gary_Wiggins_(musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-14"
+  },
+  {
+    "id": "big-bill-morganfield",
+    "name": "Big Bill Morganfield",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Big%20Bill%20Morganfield2.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Big_Bill_Morganfield2.jpg",
+    "birthDate": "1956-06-19",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Ek08AhjlHYI",
+    "albums": [
+      {
+        "name": "Rising Son (1999)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Ramblin' Mind (2001)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Blues in the Blood (2003)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "William \"Big Bill\" Morganfield (born June 19, 1956) is an American blues singer and guitarist.  He is the son of McKinley Morganfield, also known as Muddy Waters, and the half-brother of Mud Morganfield.",
+    "activeFrom": "1990",
+    "influences": [],
+    "influencedBy": [
+      "muddy-waters"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Big_Bill_Morganfield",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "richard-johnston",
+    "name": "Richard Johnston",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "Mississippi",
+    "birthCoords": [
+      -90,
+      33
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=DGtz4Rjy1Ec",
+    "albums": [
+      {
+        "name": "Foot Hill Stomp (2002)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Official Bootleg #1 (2004)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Richard Wayne Johnston is an American country blues musician.  In 2001 he won the Blues Foundation's International Blues Challenge and its Albert King Award for most promising blues guitarist. \nHis work as a street musician on Beale Street in Memphis, Tennessee, was documented in the Alabama PBS film Richard Johnston: Hill Country Troubadour.",
+    "activeFrom": "",
+    "influences": [],
+    "influencedBy": [
+      "rl-burnside",
+      "junior-kimbrough",
+      "jessie-mae-hemphill"
+    ],
+    "incomplete": true,
+    "playedWith": [
+      "cedric-burnside"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Richard_Johnston_(musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-13"
+  },
+  {
     "id": "john-campbell",
     "name": "John Campbell",
     "image": "",
@@ -60019,53 +60264,6 @@
       "Vocals"
     ],
     "createdAt": "2026-10-13"
-  },
-  {
-    "id": "fiona-boyes",
-    "name": "Fiona Boyes",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/20_Fiona_Boyes_Merlefest_2014_Wilkesboro_NC_9266_%2813927008609%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_source": "https://commons.wikimedia.org/wiki/File:20_Fiona_Boyes_Merlefest_2014_Wilkesboro_NC_9266_(13927008609).jpg",
-    "birthDate": "1962-07-21",
-    "birthPlace": "",
-    "birthCoords": [
-      0,
-      0
-    ],
-    "deathDate": null,
-    "deathPlace": null,
-    "deathCoords": null,
-    "spentTimePlaces": [],
-    "instrument": "Guitar",
-    "bluesStyle": "Contemporary Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=quRoX2Ym-Lk",
-    "albums": [
-      {
-        "name": "Blues in My Heart (2000)",
-        "youtubeLink": ""
-      },
-      {
-        "name": "Lucky 13 (2006)",
-        "youtubeLink": ""
-      },
-      {
-        "name": "Live From Bluesville (2008)",
-        "youtubeLink": ""
-      }
-    ],
-    "description": "Fiona Boyes is an Australian blues musician.  She has been recording for more than 25 years and tours regularly in Australia, the United States, and Europe.  She was part of the Australian female Blues band, The Mojo's, in the 1990s alongside Annie Packer, Gina Woods, Kaz Dalla Rosa and Paula Dowes.",
-    "activeFrom": "1990",
-    "influences": [],
-    "influencedBy": [],
-    "incomplete": true,
-    "playedWith": [
-      "hubert-sumlin",
-      "bob-margolin"
-    ],
-    "source": "https://en.wikipedia.org/wiki/Fiona_Boyes",
-    "secondaryInstruments": [
-      "Vocals"
-    ],
-    "createdAt": "2026-10-12"
   },
   {
     "id": "bjorn-berge",
