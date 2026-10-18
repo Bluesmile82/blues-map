@@ -2006,7 +2006,8 @@
       "mel-brown",
       "bennie-smith",
       "mac-arnold",
-      "anthony-geraci"
+      "anthony-geraci",
+      "david-gogo"
     ],
     "source": "https://en.wikipedia.org/wiki/B._B._King",
     "secondaryInstruments": [
@@ -2539,6 +2540,7 @@
       "pete-johnson",
       "eddie-bo",
       "doug-macleod",
+      "axel-zwingenberger",
       "anthony-geraci"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Joe_Turner",
@@ -4386,7 +4388,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "gary-wiggins"
+    ],
     "source": "https://en.wikipedia.org/wiki/Bobo_Jenkins",
     "secondaryInstruments": [
       "Vocals"
@@ -4951,7 +4955,8 @@
       "dave-alexander",
       "schoolboy-cleve",
       "joanna-connor",
-      "victor-wainwright"
+      "victor-wainwright",
+      "marty-sammon"
     ],
     "source": "https://en.wikipedia.org/wiki/Buddy_Guy",
     "secondaryInstruments": [
@@ -5617,7 +5622,8 @@
       "john-lee-hooker",
       "lovie-lee",
       "jimmy-rogers",
-      "mark-hummel"
+      "mark-hummel",
+      "gary-wiggins"
     ],
     "source": "https://en.wikipedia.org/wiki/Carey_Bell",
     "secondaryInstruments": [
@@ -5819,7 +5825,9 @@
       "rl-burnside"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "richard-johnston"
+    ],
     "source": "https://en.wikipedia.org/wiki/Cedric_Burnside",
     "secondaryInstruments": [
       "Guitar",
@@ -5873,7 +5881,8 @@
       "alexis-korner",
       "john-mayall",
       "eric-clapton",
-      "albert-collins"
+      "albert-collins",
+      "axel-zwingenberger"
     ],
     "source": "https://en.wikipedia.org/wiki/Champion_Jack_Dupree",
     "secondaryInstruments": [
@@ -6137,7 +6146,8 @@
       "mark-hummel",
       "rockin-johnny-burgin",
       "ben-harper",
-      "anthony-geraci"
+      "anthony-geraci",
+      "gary-wiggins"
     ],
     "source": "https://en.wikipedia.org/wiki/Charlie_Musselwhite",
     "secondaryInstruments": [
@@ -7593,7 +7603,8 @@
       "robert-lockwood-jr",
       "henry-townsend",
       "pinetop-perkins",
-      "sonny-boy-williamson"
+      "sonny-boy-williamson",
+      "johnny-sansone"
     ],
     "source": "https://en.wikipedia.org/wiki/David_\"Honeyboy\"_Edwards",
     "secondaryInstruments": [
@@ -9730,7 +9741,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "rory-block"
+      "rory-block",
+      "knut-reiersrud"
     ],
     "source": "https://en.wikipedia.org/wiki/Eric_Bibb",
     "secondaryInstruments": [],
@@ -13719,7 +13731,8 @@
     "description": "James Henry Cotton (July 1, 1935 – March 16, 2017) was an American blues harmonica player, singer/songwriter, who performed and recorded with many fellow blues artists, including Howlin' Wolf and Muddy Waters and with his own band The James Cotton Blues Band. \nCotton began his professional career being mentored by Sonny Boy Williamson II and playing the blues harp in Howlin' Wolf's band in the early 1950s.  He spent 12 years touring with Muddy Waters and appeared on At Newport 60, which is considered by Rolling Stone's 500 Greatest Album's of All Times.",
     "activeFrom": "1953",
     "influences": [
-      "kim-wilson"
+      "kim-wilson",
+      "johnny-sansone"
     ],
     "influencedBy": [
       "sonny-boy-williamson",
@@ -14035,7 +14048,8 @@
       "julia-lee",
       "crown-prince-waterford",
       "priscilla-bowman",
-      "big-miller"
+      "big-miller",
+      "axel-zwingenberger"
     ],
     "source": "https://en.wikipedia.org/wiki/Jay_McShann",
     "secondaryInstruments": [
@@ -14483,7 +14497,8 @@
       "bb-king",
       "eric-clapton",
       "albert-collins",
-      "jack-owens"
+      "jack-owens",
+      "david-gogo"
     ],
     "source": "https://en.wikipedia.org/wiki/Jeff_Healey",
     "secondaryInstruments": [
@@ -14674,7 +14689,9 @@
     ],
     "description": "Jessie Mae Hemphill was an American electric guitarist, songwriter, and vocalist specializing in North Mississippi hill country blues. Granddaughter of fife-and-drum band leader Sid Hemphill, she began playing guitar at age seven and drums in her grandfather's band. She won W.C. Handy Awards in 1987 and 1988. A 1993 stroke paralyzed her left side, ending her guitar playing.",
     "activeFrom": "1950",
-    "influences": [],
+    "influences": [
+      "richard-johnston"
+    ],
     "influencedBy": [
       "sid-hemphill"
     ],
@@ -15280,7 +15297,8 @@
       "lowell-fulson",
       "jody-williams",
       "nick-moss",
-      "anthony-geraci"
+      "anthony-geraci",
+      "johnny-sansone"
     ],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Rogers",
     "secondaryInstruments": [
@@ -16399,7 +16417,8 @@
       "duster-bennett",
       "mark-hummel",
       "long-john-baldry",
-      "gary-moore"
+      "gary-moore",
+      "carolyn-wonderland"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Mayall",
     "secondaryInstruments": [
@@ -17935,7 +17954,8 @@
     "activeFrom": "1968",
     "influences": [
       "buddy-guy",
-      "luther-dickinson"
+      "luther-dickinson",
+      "richard-johnston"
     ],
     "influencedBy": [
       "charley-patton",
@@ -18185,7 +18205,8 @@
     "activeFrom": "1950",
     "influences": [
       "kim-wilson",
-      "harmonica-shah"
+      "harmonica-shah",
+      "johnny-sansone"
     ],
     "influencedBy": [
       "sonny-boy-williamson",
@@ -18496,7 +18517,8 @@
       "otis-redding",
       "clifton-chenier",
       "carol-fran",
-      "warren-storm"
+      "warren-storm",
+      "gary-wiggins"
     ],
     "source": "https://en.wikipedia.org/wiki/Katie_Webster",
     "secondaryInstruments": [
@@ -21863,7 +21885,8 @@
       "jack-mcvea",
       "smiley-lewis",
       "bull-moose-jackson",
-      "big-john-greer"
+      "big-john-greer",
+      "chuck-berry"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -21927,7 +21950,8 @@
       "muddy-waters",
       "john-lee-hooker",
       "tommy-tucker",
-      "sugar-blue"
+      "sugar-blue",
+      "gary-wiggins"
     ],
     "source": "https://en.wikipedia.org/wiki/Louisiana_Red",
     "secondaryInstruments": [
@@ -24958,7 +24982,9 @@
       "louis-myers",
       "ana-popovic",
       "long-john-baldry",
-      "mud-morganfield"
+      "mud-morganfield",
+      "big-bill-morganfield",
+      "chuck-berry"
     ],
     "influencedBy": [
       "son-house",
@@ -25513,7 +25539,9 @@
       "jody-williams",
       "wayne-bennett",
       "billy-gayles",
-      "anthony-geraci"
+      "anthony-geraci",
+      "marty-sammon",
+      "david-gogo"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Rush",
     "secondaryInstruments": [
@@ -26485,7 +26513,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "albert-castiglia"
+      "albert-castiglia",
+      "marty-sammon"
     ],
     "source": "https://en.wikipedia.org/wiki/Phil_Guy",
     "secondaryInstruments": [
@@ -27663,7 +27692,8 @@
     "description": "R.  L.  Burnside (November 23, 1926 – September 1, 2005) was an American hill country blues singer, songwriter, and guitarist.",
     "activeFrom": "1960",
     "influences": [
-      "luther-dickinson"
+      "luther-dickinson",
+      "richard-johnston"
     ],
     "influencedBy": [
       "mississippi-fred-mcdowell",
@@ -28131,7 +28161,8 @@
     "playedWith": [
       "sonny-boy-williamson",
       "robert-johnson",
-      "johnny-shines"
+      "johnny-shines",
+      "johnny-sansone"
     ],
     "source": "https://en.wikipedia.org/wiki/Robert_Lockwood_Jr.",
     "secondaryInstruments": [],
@@ -28562,7 +28593,8 @@
       "albert-castiglia",
       "darrell-nulisch",
       "anthony-geraci",
-      "al-copley"
+      "al-copley",
+      "john-campbell"
     ],
     "source": "https://en.wikipedia.org/wiki/Ronnie_Earl",
     "secondaryInstruments": [],
@@ -30418,7 +30450,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "george-w-thomas"
+      "george-w-thomas",
+      "axel-zwingenberger"
     ],
     "source": "https://en.wikipedia.org/wiki/Sippie_Wallace",
     "secondaryInstruments": [
@@ -31608,7 +31641,8 @@
       "sean-costello",
       "ana-popovic",
       "jarekus-singleton",
-      "eric-gales"
+      "eric-gales",
+      "david-gogo"
     ],
     "influencedBy": [
       "bb-king",
@@ -32003,7 +32037,8 @@
       "roy-gaines",
       "lafayette-thomas",
       "jimmy-wilson",
-      "jimmy-nolen"
+      "jimmy-nolen",
+      "chuck-berry"
     ],
     "influencedBy": [
       "blind-lemon-jefferson",
@@ -36228,7 +36263,8 @@
       "albert-king",
       "ike-turner",
       "clayton-love",
-      "larry-thurston"
+      "larry-thurston",
+      "chuck-berry"
     ],
     "source": "https://en.wikipedia.org/wiki/Johnnie_Johnson",
     "secondaryInstruments": [],
@@ -43231,7 +43267,8 @@
       "jay-mcshann",
       "roomful-of-blues",
       "chris-cain",
-      "doug-macleod"
+      "doug-macleod",
+      "gary-wiggins"
     ],
     "source": "https://en.wikipedia.org/wiki/Eddie_%22Cleanhead%22_Vinson",
     "secondaryInstruments": [
@@ -44377,7 +44414,8 @@
     "playedWith": [
       "bob-margolin",
       "junior-watson",
-      "sean-costello"
+      "sean-costello",
+      "knut-reiersrud"
     ],
     "source": "https://en.wikipedia.org/wiki/Nappy_Brown",
     "secondaryInstruments": [],
@@ -44685,7 +44723,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "eric-clapton"
+      "eric-clapton",
+      "johnny-sansone"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Landreth",
     "secondaryInstruments": [],
@@ -58211,7 +58250,9 @@
     ],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "radoslav-lorkovic"
+    ],
     "source": "https://en.wikipedia.org/wiki/Odetta",
     "secondaryInstruments": [],
     "createdAt": "2026-10-11"
@@ -59186,7 +59227,7 @@
     "name": "Fiona Boyes",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/20_Fiona_Boyes_Merlefest_2014_Wilkesboro_NC_9266_%2813927008609%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "image_source": "https://commons.wikimedia.org/wiki/File:20_Fiona_Boyes_Merlefest_2014_Wilkesboro_NC_9266_(13927008609).jpg",
-    "birthDate": "",
+    "birthDate": "1962-07-21",
     "birthPlace": "",
     "birthCoords": [
       0,
@@ -59223,7 +59264,9 @@
       "bob-margolin"
     ],
     "source": "https://en.wikipedia.org/wiki/Fiona_Boyes",
-    "secondaryInstruments": [],
+    "secondaryInstruments": [
+      "Vocals"
+    ],
     "createdAt": "2026-10-12"
   },
   {
@@ -59521,7 +59564,10 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "nappy-brown",
+      "eric-bibb"
+    ],
     "source": "https://en.wikipedia.org/wiki/Knut_Reiersrud",
     "secondaryInstruments": [],
     "createdAt": "2026-10-12"
@@ -59654,7 +59700,7 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carolyn%20Wonderland%20by%20Ron%20Baker.jpg?width=500",
     "image_source": "https://commons.wikimedia.org/wiki/File:Carolyn_Wonderland_by_Ron_Baker.jpg",
     "birthDate": "1972-11-09",
-    "birthPlace": "Houston, Texas",
+    "birthPlace": "Houston",
     "birthCoords": [
       -95.383055555556,
       29.762777777778
@@ -59672,25 +59718,29 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Texas Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=7RK6Mlss2jk",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dS5FF8wMjvE",
     "albums": [
       {
-        "name": "Moon Goes Missing (2017)",
-        "youtubeLink": "https://www.youtube.com/watch?v=vRM13ZknAsg"
+        "name": "Miss Understood (2008)"
       }
     ],
-    "description": "Carolyn Wonderland is an American blues guitarist, singer and songwriter from the Houston and Austin blues scenes known for her fiery slide and electric guitar work. In April 2018 she became the first woman to serve as lead guitarist in John Mayall's band, taking her Texas blues sound on international tours.",
+    "description": "Carolyn Wonderland is an American blues singer-songwriter and guitarist from Houston who built her reputation touring the Texas blues circuit out of Austin. In 2018 she joined John Mayall's touring band as lead guitarist, and her album \"Miss Understood\" spent months on the Roots Music Report chart.",
     "activeFrom": "1992",
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "john-mayall"
+    ],
     "source": "https://en.wikipedia.org/wiki/Carolyn_Wonderland",
     "secondaryInstruments": [
-      "Vocals"
+      "Vocals",
+      "Mandolin",
+      "Trumpet",
+      "Piano"
     ],
-    "createdAt": "2026-10-17"
+    "createdAt": "2026-10-14"
   },
   {
     "id": "terrance-simien",
@@ -59761,5 +59811,879 @@
     "source": "https://en.wikipedia.org/wiki/Chubby_Carrier",
     "secondaryInstruments": [],
     "createdAt": "2026-10-17"
+  },
+  {
+    "id": "marty-sammon",
+    "name": "Marty Sammon",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marty%20Sammon.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Marty_Sammon.jpg",
+    "birthDate": "1977-10-14",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": "2022-10-15",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=MVnJeug5osE",
+    "albums": [
+      {
+        "name": "Blues Keyboard Method (2015)"
+      }
+    ],
+    "description": "Marty Sammon was an American blues keyboardist who grew up on the South Side of Chicago, where he began sitting in on the Chicago blues circuit as a teenager. He spent years as a touring and session pianist for Otis Rush, Phil Guy, and finally Buddy Guy, becoming a fixture of modern Chicago blues, and wrote the instructional book \"Blues Keyboard Method.\"",
+    "activeFrom": "1993",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "buddy-guy",
+      "otis-rush",
+      "phil-guy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Marty_Sammon",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-14"
+  },
+  {
+    "id": "johnny-sansone",
+    "name": "Johnny Sansone",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Johnny_Sansone_%287314701954%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Johnny_Sansone_(7314701954).jpg",
+    "birthDate": "1957-09-27",
+    "birthPlace": "Orange, New Jersey",
+    "birthCoords": [
+      -74.2324,
+      40.7712
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=ZLMr-_DRgJ8",
+    "albums": [
+      {
+        "name": "Crescent City Moon (1997)"
+      }
+    ],
+    "description": "John Sansone (born September 27, 1957), also known as Jumpin' Johnny Sansone, is an American electric blues singer, songwriter, harmonicist, accordionist, guitarist and piano player. He was nominated for seven music awards in 2012, including a Blues Music Award which he won. To date, he has been involved in the release of twelve original albums.",
+    "activeFrom": "1980",
+    "influences": [],
+    "influencedBy": [
+      "james-cotton",
+      "junior-wells"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "jimmy-rogers",
+      "sonny-landreth",
+      "robert-lockwood-jr",
+      "david-honeyboy-edwards"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Johnny_Sansone",
+    "secondaryInstruments": [
+      "Accordion",
+      "Guitar",
+      "Piano",
+      "Vocals"
+    ],
+    "createdAt": "2026-10-14"
+  },
+  {
+    "id": "gary-wiggins",
+    "name": "Gary Wiggins",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Detroit%20Gary%20Wiggins.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Detroit_Gary_Wiggins.jpg",
+    "birthDate": "1952-11-10",
+    "birthPlace": "Inkster",
+    "birthCoords": [
+      -83.314166666667,
+      42.2925
+    ],
+    "deathDate": "2020-11-22",
+    "deathPlace": "Bissingen an der Teck, Germany",
+    "deathCoords": [
+      9.4833,
+      48.6167
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      }
+    ],
+    "instrument": "Saxophone",
+    "bluesStyle": "Detroit Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=UvBN1ioTwiw",
+    "albums": [
+      {
+        "name": "Acoustic Soul (1992)"
+      }
+    ],
+    "description": "\"Detroit\" Gary Wiggins was an American blues and jazz saxophonist who started out as a teenager in Bobo Jenkins' Detroit blues band before touring widely across the West Coast and Chicago blues scenes. After relocating to Europe in 1983 he became a leading ambassador for American blues there, co-founding the Berlin Blues Café and recording with Katie Webster and other blues veterans.",
+    "activeFrom": "1966",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "bobo-jenkins",
+      "eddie-cleanhead-vinson",
+      "katie-webster",
+      "charlie-musselwhite",
+      "louisiana-red",
+      "carey-bell"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Gary_Wiggins_(musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-14"
+  },
+  {
+    "id": "big-bill-morganfield",
+    "name": "Big Bill Morganfield",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Big%20Bill%20Morganfield2.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Big_Bill_Morganfield2.jpg",
+    "birthDate": "1956-06-19",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Ek08AhjlHYI",
+    "albums": [
+      {
+        "name": "Rising Son (1999)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Ramblin' Mind (2001)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Blues in the Blood (2003)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "William \"Big Bill\" Morganfield (born June 19, 1956) is an American blues singer and guitarist.  He is the son of McKinley Morganfield, also known as Muddy Waters, and the half-brother of Mud Morganfield.",
+    "activeFrom": "1990",
+    "influences": [],
+    "influencedBy": [
+      "muddy-waters"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Big_Bill_Morganfield",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "richard-johnston",
+    "name": "Richard Johnston",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "Mississippi",
+    "birthCoords": [
+      -90,
+      33
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Hill Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=DGtz4Rjy1Ec",
+    "albums": [
+      {
+        "name": "Foot Hill Stomp (2002)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "Official Bootleg #1 (2004)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Richard Wayne Johnston is an American country blues musician.  In 2001 he won the Blues Foundation's International Blues Challenge and its Albert King Award for most promising blues guitarist. \nHis work as a street musician on Beale Street in Memphis, Tennessee, was documented in the Alabama PBS film Richard Johnston: Hill Country Troubadour.",
+    "activeFrom": "",
+    "influences": [],
+    "influencedBy": [
+      "rl-burnside",
+      "junior-kimbrough",
+      "jessie-mae-hemphill"
+    ],
+    "incomplete": true,
+    "playedWith": [
+      "cedric-burnside"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Richard_Johnston_(musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "john-campbell",
+    "name": "John Campbell",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1952-01-20",
+    "birthPlace": "Shreveport, Louisiana",
+    "birthCoords": [
+      -93.7502,
+      32.5252
+    ],
+    "deathDate": "1993-06-13",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.006,
+      40.7128
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=3kseTbNi35o",
+    "albums": [
+      {
+        "name": "A Man and His Blues (1988)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "One Believer (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=3kseTbNi35o"
+      },
+      {
+        "name": "Howlin' Mercy (1993)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "John Campbell was an American blues guitarist and singer from Shreveport, Louisiana, known for a dark, slide-heavy electric sound sometimes called \"swamp gothic\" blues. Signed to Elektra, he released the acclaimed albums One Believer (1991) and Howlin' Mercy (1993) before his sudden death at 41.",
+    "activeFrom": "1975",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "ronnie-earl"
+    ],
+    "source": "https://en.wikipedia.org/wiki/John_Campbell_(blues_guitarist)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "gaye-adegbalola",
+    "name": "Gaye Adegbalola",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gaye%20Adegbalola%2C%202016%20(cropped).jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Gaye_Adegbalola,_2016_(cropped).jpg",
+    "birthDate": "1944-03-21",
+    "birthPlace": "Fredericksburg",
+    "birthCoords": [
+      -77.470778,
+      38.301829
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=KC1mgjNTuvw",
+    "albums": [
+      {
+        "name": "Bitter Sweet Blues (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ROqBZVWgo9Q"
+      },
+      {
+        "name": "Blues In All Flavors (2012)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Gaye Adegbalola (born Gaye Todd; March 21, 1944) is an American blues singer and guitarist, teacher, lecturer, activist, and photographer.",
+    "activeFrom": "1984",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Gaye_Adegbalola",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "axel-zwingenberger",
+    "name": "Axel Zwingenberger",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Zwingenberger.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Zwingenberger.jpg",
+    "birthDate": "1955-05-07",
+    "birthPlace": "Hamburg",
+    "birthCoords": [
+      10,
+      53.55
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=nS7AZdSvt8A",
+    "albums": [
+      {
+        "name": "Boogie Woogie Classics (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=baBy0vChOIA"
+      }
+    ],
+    "description": "Axel Zwingenberger (German: [ˌaksl̩ ˈt͡svɪŋənˌbɛʁɡɐ] ; born 7 May 1955) is a German blues and boogie-woogie pianist and songwriter.",
+    "activeFrom": "1975",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "big-joe-turner",
+      "champion-jack-dupree",
+      "sippie-wallace",
+      "jay-mcshann"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Axel_Zwingenberger",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "buddy-scott",
+    "name": "Buddy Scott",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/37/Buddy_Scott.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": "https://en.wikipedia.org/wiki/File:Buddy_Scott.jpg",
+    "birthDate": "1935-01-09",
+    "birthPlace": "Goodman, Mississippi",
+    "birthCoords": [
+      -89.917,
+      33.0188
+    ],
+    "deathDate": "1994-02-05",
+    "deathPlace": "Chicago",
+    "deathCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=jiMhU1vEGbY",
+    "albums": [
+      {
+        "name": "Bad Avenue (1993)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Kenneth \"Buddy\" Scott (January 9, 1935 – February 5, 1994) was an American blues guitarist. \nScott was born in Goodman, Mississippi, United States and came from a family of Chicago blues musicians.   Both of his brothers, vocalist Howard and guitarist Walter, played locally, and his son is Kenneth \"Hollywood\" Scott.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Buddy_Scott",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": "bjorn-berge",
+    "name": "Bjørn Berge",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bjoern%20Berge%201999.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Bjoern%20Berge%201999.jpg?width=500",
+    "birthDate": "1968-09-23",
+    "birthPlace": "Haugesund Municipality",
+    "birthCoords": [
+      5.27551,
+      59.41015
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=EZfoNvsQYFI",
+    "albums": [
+      {
+        "name": "Stringmachine (2001)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Bjørn Berge is a Norwegian one-man-band blues guitarist and singer known for his percussive slide-guitar style. He won the Spellemannprisen (Norwegian Grammy) for Blues in both 2001, for \"Stringmachine,\" and 2002, for \"Illustrated Man,\" and tours extensively across Europe.",
+    "activeFrom": "1988",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Bj%C3%B8rn_Berge",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-15"
+  },
+  {
+    "id": "john-brim",
+    "name": "John Brim",
+    "image": "https://hoptownchronicle.org/wp-content/uploads/2020/05/John-Brim.webp",
+    "image_source": "hoptownchronicle.org",
+    "birthDate": "1922-04-10",
+    "birthPlace": "Hopkinsville",
+    "birthCoords": [
+      -87.48861,
+      36.85444
+    ],
+    "deathDate": "2003-10-01",
+    "deathPlace": "Gary",
+    "deathCoords": [
+      -87.345555555556,
+      41.580833333333
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Indianapolis",
+        "coords": [
+          -86.1581,
+          39.7684
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=MWOfESUmMGs",
+    "albums": [
+      {
+        "name": "Whose Muddy Shoes (1968)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "John Brim was an American Chicago blues guitarist, songwriter and singer best known for writing and recording \"Ice Cream Man,\" later covered by Van Halen. His wife Grace Brim played drums in his band, the Gary Kings, and he recorded for Parrot, Checker, and other Chicago labels in the early 1950s.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/John_Brim",
+    "secondaryInstruments": [
+      "Harmonica"
+    ],
+    "createdAt": "2026-10-15"
+  },
+  {
+    "id": "frank-bey",
+    "name": "Frank Bey",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Frank%20Bey.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Frank%20Bey.jpg?width=500",
+    "birthDate": "1946-01-17",
+    "birthPlace": "Millen",
+    "birthCoords": [
+      -81.94194,
+      32.80528
+    ],
+    "deathDate": "2020-06-07",
+    "deathPlace": "Glenolden",
+    "deathCoords": [
+      -75.2925,
+      39.8989
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Philadelphia",
+        "coords": [
+          -75.1652,
+          39.9526
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=cmXewpl8amw",
+    "albums": [
+      {
+        "name": "All My Dues Are Paid (2020)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Frank Bey was an American blues singer who grew up singing gospel in Georgia before working as a driver for Otis Redding's publicity man and touring with the Moorish Vanguard. After decades away from music, he returned in the 2000s and partnered with guitarist Anthony Paule in California, earning a Grammy nomination for Best Traditional Blues Album for \"All My Dues Are Paid\" (2020).",
+    "activeFrom": "1966",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Frank_Bey",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-15"
+  },
+  {
+    "id": "radoslav-lorkovic",
+    "name": "Radoslav Lorković",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Radoslav%20Lorkovic%20-%202008%20Woody%20Guthrie%20Folk%20Festival.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Radoslav%20Lorkovic%20-%202008%20Woody%20Guthrie%20Folk%20Festival.jpg?width=500",
+    "birthDate": "1958-09-03",
+    "birthPlace": "Zagreb",
+    "birthCoords": [
+      15.977222222222222,
+      45.81305555555556
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      },
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      }
+    ],
+    "instrument": "Accordion",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=FrrwiY4Zbig",
+    "albums": [
+      {
+        "name": "Clear and Cold (1990)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Radoslav Lorković (born September 3, 1958) is a Croatian-born and classically trained folk and blues musician, known in particular for his flair on the piano and accordion.  He has six solo studio recordings, three live albums and has recorded and performed with numerous artists including Odetta, Asleep at the Wheel, Jimmy LaFave, Shawn Mullins, Greg Brown, Richard Shindell, Ellis Paul, Susan Werner, Ronny Cox, Dave Moore, Andy White, Bo Ramsey, and Ramsay Midwood.  His 51 year career as a touring musician has taken him around the world, where he has performed from castles in Italy to Carnegie Hall.",
+    "activeFrom": "1975",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "odetta"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Radoslav_Lorkovi%C4%87",
+    "secondaryInstruments": [
+      "Piano",
+      "Hammond organ",
+      "Wurlitzer Electric Piano"
+    ],
+    "createdAt": "2026-10-15"
+  },
+  {
+    "id": "chuck-berry",
+    "name": "Chuck Berry",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chuck%20Berry%20(8275961).jpeg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Chuck_Berry_(8275961).jpeg",
+    "birthDate": "1926-10-18",
+    "birthPlace": "St. Louis",
+    "birthCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "deathDate": "2017-03-18",
+    "deathPlace": "St. Charles",
+    "deathCoords": [
+      -90.511666666667,
+      38.788611111111
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York City",
+        "coords": [
+          -74.00611111111111,
+          40.71277777777778
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "St. Louis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=qaE7C-hf6Wg",
+    "albums": [
+      {
+        "name": "Rhythm & Blues Rendez-Vous (1962)",
+        "youtubeLink": "https://www.youtube.com/watch?v=E2de1oWjIfc"
+      },
+      {
+        "name": "More Chuck Berry (1963)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "The Latest and the Greatest (1964)",
+        "youtubeLink": ""
+      },
+      {
+        "name": "You Never Can Tell (1964)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Fow6Jez755U"
+      },
+      {
+        "name": "Chuck Berry (1966)",
+        "youtubeLink": "https://www.youtube.com/watch?v=FkkoArGwrk8"
+      },
+      {
+        "name": "I'm a Rocker (1970)",
+        "youtubeLink": "https://www.youtube.com/watch?v=7E4qoHABedE"
+      }
+    ],
+    "description": "Chuck Berry was an American guitarist, singer, and songwriter from St. Louis whose innovative guitar riffs and showmanship fused blues, boogie-woogie, and country into rock and roll. Backed for decades by St. Louis blues pianist Johnnie Johnson, he wrote and recorded blues-rooted classics such as \"Maybellene\" and \"Johnny B. Goode\" that influenced generations of guitarists.",
+    "activeFrom": "1953",
+    "influences": [],
+    "influencedBy": [
+      "muddy-waters",
+      "louis-jordan",
+      "t-bone-walker"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "johnnie-johnson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Chuck_Berry",
+    "secondaryInstruments": [
+      "Gibson ES-335",
+      "Fender Telecaster",
+      "Fender Stratocaster"
+    ],
+    "createdAt": "2026-10-16"
+  },
+  {
+    "id": "winifred-atwell",
+    "name": "Winifred Atwell",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/f4/Winifred_Atwell.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": "https://en.wikipedia.org/wiki/File:Winifred_Atwell.jpg",
+    "birthDate": "1914-02-27",
+    "birthPlace": "Tunapuna",
+    "birthCoords": [
+      -61.3833,
+      10.6333
+    ],
+    "deathDate": "1983-02-28",
+    "deathPlace": "Sydney",
+    "deathCoords": [
+      151.21,
+      -33.867777777777775
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=uo37ZlHGvRw",
+    "albums": [
+      {
+        "name": "The Winifred Atwell Collection (1994)",
+        "youtubeLink": "https://www.youtube.com/watch?v=N6Vhfaf0SJo"
+      },
+      {
+        "name": "The Best Of Winifred Atwell (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=N6Vhfaf0SJo"
+      },
+      {
+        "name": "Honky Tonk Piano Party (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=gPoFrWJZIDQ"
+      },
+      {
+        "name": "Dixie Boogie (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=CGHZEI5HwSo"
+      },
+      {
+        "name": "Honky Tonk Boogie (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=gPoFrWJZIDQ"
+      },
+      {
+        "name": "Winifred Atwell",
+        "youtubeLink": "https://www.youtube.com/watch?v=N6Vhfaf0SJo"
+      }
+    ],
+    "description": "Una Winifred Atwell (27 February or 27 April 1910 or 1914 – 28 February 1983) was a pianist and composer born in the country of Trinidad who migrated to Britain and who enjoyed great popularity in Britain and Australia from the 1950s with a series of boogie-woogie and ragtime hits, selling over 20 million records.  She was the first black artist to have a number-one hit in the UK singles chart and had the first piano instrumental to reach number one in the UK singles chart, with \"Let's Have Another Party\" in 1954, and as of 2023, remains the only female instrumentalist to do so.",
+    "activeFrom": "1946",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Winifred_Atwell",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-16"
+  },
+  {
+    "id": "david-gogo",
+    "name": "David Gogo",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Gogo%202011.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:David_Gogo_2011.jpg",
+    "birthDate": "1969-03-18",
+    "birthPlace": "Nanaimo",
+    "birthCoords": [
+      -123.93638888889,
+      49.164166666667
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9rAXRj3V8K8",
+    "albums": [
+      {
+        "name": "Skeleton Key (2002)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "David Gogo (born March 18, 1969), is a Canadian blues guitarist, singer-songwriter and bandleader who is currently signed to the independent Cordova Bay Records label.  He was formerly signed to EMI Records.  Between 1994 and 2024, he released 16 solo albums.",
+    "activeFrom": "1984",
+    "influences": [],
+    "influencedBy": [
+      "stevie-ray-vaughan"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "jeff-healey",
+      "bb-king",
+      "otis-rush"
+    ],
+    "source": "https://en.wikipedia.org/wiki/David_Gogo",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-16"
+  },
+  {
+    "id": "matt-andersen",
+    "name": "Matt Andersen",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Matt%20Andersen.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Matt_Andersen.jpg",
+    "birthDate": "",
+    "birthPlace": "Perth-Andover",
+    "birthCoords": [
+      -67.6984,
+      46.7393
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Canada",
+        "coords": [
+          -109,
+          56
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=fYqeOU5WQsk",
+    "albums": [
+      {
+        "name": "Weightless (2014)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Matt Andersen is a Canadian blues guitarist and singer-songwriter from Perth-Andover, New Brunswick.  He is a Juno Award nominee.  His musical career started in 2002 with the New Brunswick band Flat Top.",
+    "activeFrom": "2002",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Matt_Andersen",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-16"
   }
 ]
