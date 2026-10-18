@@ -59529,8 +59529,8 @@
   {
     "id": "leo-welch",
     "name": "Leo Welch",
-    "image": "",
-    "image_source": null,
+    "image": "https://alchetron.com/cdn/leo-welch-d8a14eed-42ce-445e-92ec-d9d806fe7e5-resize-750.jpeg",
+    "image_source": "alchetron.com",
     "birthDate": "1932-03-22",
     "birthPlace": "Sabougla, Mississippi",
     "birthCoords": [
@@ -59553,7 +59553,7 @@
       }
     ],
     "instrument": "Guitar",
-    "bluesStyle": "Gospel",
+    "bluesStyle": "Hill Country Blues",
     "youtubeLink": "https://www.youtube.com/watch?v=XEYWUpLZ_pw",
     "albums": [
       {
