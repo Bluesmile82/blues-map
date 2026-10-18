@@ -49581,11 +49581,7 @@
       "john-mayall"
     ],
     "source": "https://en.wikipedia.org/wiki/Gary_Moore",
-    "secondaryInstruments": [
-      "Gibson Flying V",
-      "Fender Stratocaster",
-      "Jackson Soloist"
-    ],
+    "secondaryInstruments": [],
     "createdAt": "2026-09-15"
   },
   {
@@ -59197,13 +59193,13 @@
   {
     "id": "richard-johnston",
     "name": "Richard Johnston",
-    "image": "",
-    "image_source": null,
-    "birthDate": "",
-    "birthPlace": "Mississippi",
+    "image": "https://alchetron.com/cdn/richard-johnston-musician-3d38bed0-78be-4e6d-b93a-8c06065ee30-resize-750.jpeg",
+    "image_source": "alchetron.com",
+    "birthDate": "01-01-1977",
+    "birthPlace": "Houston, Texas",
     "birthCoords": [
-      -90,
-      33
+      -95.3698,
+      29.7604
     ],
     "deathDate": null,
     "deathPlace": null,
@@ -59230,7 +59226,7 @@
       "junior-kimbrough",
       "jessie-mae-hemphill"
     ],
-    "incomplete": true,
+    "incomplete": false,
     "playedWith": [
       "cedric-burnside"
     ],
@@ -59280,8 +59276,8 @@
   {
     "id": "john-campbell",
     "name": "John Campbell",
-    "image": "",
-    "image_source": null,
+    "image": "https://alchetron.com/cdn/john-campbell-blues-guitarist-44a87957-0d4b-46cc-a5c8-46e9cd5c617-resize-750.jpeg",
+    "image_source": "alchetron.com",
     "birthDate": "1952-01-20",
     "birthPlace": "Shreveport, Louisiana",
     "birthCoords": [
@@ -59297,7 +59293,7 @@
     "spentTimePlaces": [],
     "instrument": "Guitar",
     "bluesStyle": "Swamp Blues",
-    "youtubeLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=3kseTbNi35o",
     "albums": [
       {
         "name": "A Man and His Blues (1988)",
@@ -59305,7 +59301,7 @@
       },
       {
         "name": "One Believer (1991)",
-        "youtubeLink": ""
+        "youtubeLink": "https://www.youtube.com/watch?v=3kseTbNi35o"
       },
       {
         "name": "Howlin' Mercy (1993)",
@@ -59343,11 +59339,11 @@
     "spentTimePlaces": [],
     "instrument": "Guitar",
     "bluesStyle": "Contemporary Blues",
-    "youtubeLink": "https://www.youtube.com/watch?v=TDqtltXALPQ",
+    "youtubeLink": "https://www.youtube.com/watch?v=KC1mgjNTuvw",
     "albums": [
       {
         "name": "Bitter Sweet Blues (1999)",
-        "youtubeLink": ""
+        "youtubeLink": "https://www.youtube.com/watch?v=ROqBZVWgo9Q"
       },
       {
         "name": "Blues In All Flavors (2012)",
@@ -59472,7 +59468,7 @@
     "name": "Fiona Boyes",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/20_Fiona_Boyes_Merlefest_2014_Wilkesboro_NC_9266_(13927008609).jpg?width=500",
     "image_source": "https://commons.wikimedia.org/wiki/File:20_Fiona_Boyes_Merlefest_2014_Wilkesboro_NC_9266_(13927008609).jpg",
-    "birthDate": "",
+    "birthDate": "1950-06-09",
     "birthPlace": "Melbourne, Australia",
     "birthCoords": [
       144.9631,
@@ -59499,13 +59495,13 @@
     "activeFrom": "1990",
     "influences": [],
     "influencedBy": [],
-    "incomplete": true,
+    "incomplete": false,
     "playedWith": [
       "hubert-sumlin",
       "bob-margolin"
     ],
     "source": "https://en.wikipedia.org/wiki/Fiona_Boyes",
-    "secondaryInstruments": [],
+    "secondaryInstruments": ["Vocals"],
     "createdAt": "2026-10-13"
   }
 ]
