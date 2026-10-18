@@ -2007,7 +2007,8 @@
       "bennie-smith",
       "mac-arnold",
       "anthony-geraci",
-      "david-gogo"
+      "david-gogo",
+      "calvin-owens"
     ],
     "source": "https://en.wikipedia.org/wiki/B._B._King",
     "secondaryInstruments": [
@@ -2131,7 +2132,8 @@
       "monette-moore",
       "lillian-glinn",
       "helen-humes",
-      "linda-hopkins"
+      "linda-hopkins",
+      "diamond-teeth-mary"
     ],
     "influencedBy": [
       "ma-rainey"
@@ -3439,7 +3441,8 @@
       "larry-johnson",
       "guitar-gabriel",
       "robert-lowery",
-      "boo-hanks"
+      "boo-hanks",
+      "frank-hovington"
     ],
     "influencedBy": [
       "charley-patton",
@@ -6147,7 +6150,8 @@
       "rockin-johnny-burgin",
       "ben-harper",
       "anthony-geraci",
-      "gary-wiggins"
+      "gary-wiggins",
+      "andrew-jr-boy-jones"
     ],
     "source": "https://en.wikipedia.org/wiki/Charlie_Musselwhite",
     "secondaryInstruments": [
@@ -10968,7 +10972,8 @@
       "eric-clapton",
       "joe-doucet",
       "tyrone-davis",
-      "benny-turner"
+      "benny-turner",
+      "andrew-jr-boy-jones"
     ],
     "source": "https://en.wikipedia.org/wiki/Freddie_King",
     "secondaryInstruments": [
@@ -16698,7 +16703,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "andrew-jr-boy-jones"
+    ],
     "source": "https://en.wikipedia.org/wiki/Johnnie_Taylor",
     "secondaryInstruments": [],
     "createdAt": "2026-09-03"
@@ -21092,7 +21099,8 @@
       "paul-delay",
       "little-mack-simmons",
       "sugar-blue",
-      "harmonica-shah"
+      "harmonica-shah",
+      "jerry-mccain"
     ],
     "influencedBy": [
       "muddy-waters",
@@ -60685,5 +60693,349 @@
       "Vocals"
     ],
     "createdAt": "2026-10-16"
+  },
+  {
+    "id": "lil-johnson",
+    "name": "Lil Johnson",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1900-01-01",
+    "birthPlace": "",
+    "birthCoords": [
+      0,
+      0
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Cook County, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=-wvXHtG5i7U",
+    "albums": [],
+    "description": "Lil Johnson was an American singer known for her \"dirty blues\" and hokum recordings made in Chicago. She first recorded in 1929 and returned to the studio from 1935 to 1937, cutting over 40 sides for Vocalion in a vigorous, sometimes abrasive style, often with pianist Black Bob.",
+    "activeFrom": "1929",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Lil_Johnson",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-18"
+  },
+  {
+    "id": "diamond-teeth-mary",
+    "name": "Diamond Teeth Mary",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Mary_McClain_%28L%29_and_Ida_Goodson_performing_at_the_1982_Florida_Folk_Festival-_White_Springs%2C_Florida_%287703908538%29.jpg/500px-Mary_McClain_%28L%29_and_Ida_Goodson_performing_at_the_1982_Florida_Folk_Festival-_White_Springs%2C_Florida_%287703908538%29.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Mary_McClain_%28L%29_and_Ida_Goodson_performing_at_the_1982_Florida_Folk_Festival-_White_Springs%2C_Florida_%287703908538%29.jpg/500px-Mary_McClain_%28L%29_and_Ida_Goodson_performing_at_the_1982_Florida_Folk_Festival-_White_Springs%2C_Florida_%287703908538%29.jpg",
+    "birthDate": "1902-08-27",
+    "birthPlace": "Huntington, West Virginia",
+    "birthCoords": [
+      -82.4452,
+      38.4192
+    ],
+    "deathDate": "2000-04-04",
+    "deathPlace": "St. Petersburg, Florida",
+    "deathCoords": [
+      -82.6403,
+      27.7676
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Bradenton, Manatee County, Florida",
+        "coords": [
+          -82.5751,
+          27.4989
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=RgHkuYrQJP8",
+    "albums": [],
+    "description": "Born Mary Smith and later known as \"Diamond Teeth\" Mary McClain for the diamonds she set into her front teeth, she was a blues and gospel singer and vaudeville entertainer who ran away to join a circus at thirteen. She toured nightclubs, theaters, and minstrel shows for decades, was promoted as the \"Queen of the Blues,\" and later shifted toward gospel music after settling in Florida.",
+    "activeFrom": "1915",
+    "influences": [],
+    "influencedBy": [
+      "bessie-smith"
+    ],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Diamond_Teeth_Mary",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-18"
+  },
+  {
+    "id": "frank-hovington",
+    "name": "Frank Hovington",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1919-01-09",
+    "birthPlace": "Reading, Pennsylvania",
+    "birthCoords": [
+      -75.9269,
+      40.3356
+    ],
+    "deathDate": "1982-06-21",
+    "deathPlace": "Felton, Delaware",
+    "deathCoords": [
+      -75.5789,
+      39.0023
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Frederica, Kent County, Delaware",
+        "coords": [
+          -75.5844,
+          39.0098
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=41MxwJUtUdA",
+    "albums": [],
+    "description": "Also known as \"Guitar Frank\", Frank Hovington was a Piedmont blues guitarist and banjo player who lived his whole life near Frederica, Delaware. His thumb-driven guitar style, modeled on Blind Boy Fuller, was documented by folklorists Peter B. Lowry, Dick Spottswood, and Bruce Bastin, but he rarely performed outside Delaware and missed the wider recognition festival touring could have brought.",
+    "activeFrom": "1935",
+    "influences": [],
+    "influencedBy": [
+      "blind-boy-fuller"
+    ],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Frank_Hovington",
+    "secondaryInstruments": [
+      "Banjo",
+      "Vocals"
+    ],
+    "createdAt": "2026-10-18"
+  },
+  {
+    "id": "jerry-mccain",
+    "name": "Jerry McCain",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/f8/Jerry_McCain_photo.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/en/f/f8/Jerry_McCain_photo.jpg",
+    "birthDate": "1930-06-19",
+    "birthPlace": "Gadsden, Alabama",
+    "birthCoords": [
+      -86.0066,
+      34.0143
+    ],
+    "deathDate": "2012-03-28",
+    "deathPlace": "Gadsden, Alabama",
+    "deathCoords": [
+      -86.0066,
+      34.0143
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "London",
+        "coords": [
+          -0.1276,
+          51.5074
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=owx0FlMVKZk",
+    "albums": [
+      {
+        "name": "Choo Choo Rock (1981)",
+        "youtubeLink": "https://www.youtube.com/watch?v=_fIgiCKtzT8"
+      },
+      {
+        "name": "Strange Kind of Feeling (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=n54J53VZZyI"
+      },
+      {
+        "name": "That's What They Want: The Best of Jerry McCain (1995)",
+        "youtubeLink": "https://www.youtube.com/watch?v=vPpEwGcMZAI"
+      },
+      {
+        "name": "Rock ’n’ Roll Ball (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=OzAMYVDiOHI"
+      },
+      {
+        "name": "The Jig’s Up: Complete 50’s Recordings (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=1tX3Ri4MOtA"
+      },
+      {
+        "name": "Good Stuff! (1999)",
+        "youtubeLink": "https://www.youtube.com/watch?v=F5FU6okcwVM"
+      }
+    ],
+    "description": "Jerry \"Boogie\" McCain was an electric blues harmonica player, guitarist, and singer from Gadsden, Alabama, who developed an amplified harmonica style after meeting Little Walter in 1953. He recorded for Trumpet, Excello, Okeh, Jewel, and Ichiban over six decades, and a harmonica concerto written in his honor premiered at Lincoln Center in 1997.",
+    "activeFrom": "1953",
+    "influences": [],
+    "influencedBy": [
+      "little-walter"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Jerry_McCain",
+    "secondaryInstruments": [
+      "Guitar",
+      "Vocals"
+    ],
+    "createdAt": "2026-10-18"
+  },
+  {
+    "id": "arthur-gunter",
+    "name": "Arthur Gunter",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Publicity_photo_of_Arthur_Gunter_%28cropped%29.jpg/500px-Publicity_photo_of_Arthur_Gunter_%28cropped%29.jpg",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Publicity_photo_of_Arthur_Gunter_%28cropped%29.jpg/500px-Publicity_photo_of_Arthur_Gunter_%28cropped%29.jpg",
+    "birthDate": "1926-05-23",
+    "birthPlace": "Vesta, Oglethorpe County, Georgia",
+    "birthCoords": [
+      -83.1088,
+      33.8673
+    ],
+    "deathDate": "1976-03-16",
+    "deathPlace": "Port Huron, Michigan",
+    "deathCoords": [
+      -82.4299,
+      42.9709
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Nashville, Davidson County, Tennessee",
+        "coords": [
+          -86.7816,
+          36.1627
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Blues Masters, Volume 7 (2012)",
+        "youtubeLink": "https://www.youtube.com/watch?v=SvQGYwqe1xE"
+      },
+      {
+        "name": "Baby Let's Play House - The Complete Excello Singles 1954-1961 (2016)",
+        "youtubeLink": "https://www.youtube.com/watch?v=xUxru2Hrrjo"
+      }
+    ],
+    "description": "Arthur Gunter was a Nashville-based blues singer and guitarist best known for writing and recording \"Baby Let's Play House,\" which reached the Billboard R&B chart in 1954 and was later covered by Elvis Presley. He recorded for Excello Records through 1961 before his career wound down in the mid-1960s.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Arthur_Gunter",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-18"
+  },
+  {
+    "id": "andrew-jr-boy-jones",
+    "name": "Andrew \"Jr. Boy\" Jones",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1948-10-16",
+    "birthPlace": "Dallas, Texas",
+    "birthCoords": [
+      -96.797,
+      32.7767
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=xmhpKsMgaG4",
+    "albums": [],
+    "description": "Andrew \"Jr. Boy\" Jones is a Dallas-born Texas blues guitarist and singer who joined Freddie King's backing band, the Thunderbirds, at seventeen before becoming a session and touring musician for Bobby Patterson, Johnnie Taylor, and Charlie Musselwhite. He began releasing solo albums in 1997 after decades as a sideman.",
+    "activeFrom": "1965",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "freddie-king",
+      "charlie-musselwhite",
+      "johnnie-taylor"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Andrew_%22Jr._Boy%22_Jones",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-18"
+  },
+  {
+    "id": "calvin-owens",
+    "name": "Calvin Owens",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1929-04-23",
+    "birthPlace": "Houston, Texas",
+    "birthCoords": [
+      -95.3698,
+      29.7604
+    ],
+    "deathDate": "2008-02-21",
+    "deathPlace": "Houston, Texas",
+    "deathCoords": [
+      -95.3698,
+      29.7604
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Houston",
+        "coords": [
+          -95.3698,
+          29.7604
+        ]
+      }
+    ],
+    "instrument": "Trumpet",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=YfY9_t17n00",
+    "albums": [],
+    "description": "Calvin Owens was a Houston blues trumpeter, bandleader, and composer who served as B.B. King's first music director in the 1950s and later returned as his bandleader in 1978. He also led his own orchestra, produced for Peacock Records, and founded Sawdust Alley Records.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "bb-king"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Calvin_Owens",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-18"
   }
 ]
