@@ -16,8 +16,10 @@ const tokens = (s) => s.toLowerCase().replace(/[^a-z0-9 -]/g, '').split(/[\s-]+/
 
 function taken() {
   try { sh('git', 'fetch', '-q', 'origin', '+refs/heads/*:refs/remotes/origin/*'); } catch {}
-  let branches = [];
-  try { branches = sh('gh', 'pr', 'list', '--state', 'open', '--limit', '100', '--json', 'headRefName', '-q', '.[].headRefName').split('\n').filter(Boolean); } catch {}
+  // No silent fallback: checking main only lets open PRs add the same musician twice.
+  let branches;
+  try { branches = sh('gh', 'pr', 'list', '--state', 'open', '--limit', '100', '--json', 'headRefName', '-q', '.[].headRefName').split('\n').filter(Boolean); }
+  catch { console.error('ERROR: "gh pr list" failed (is gh installed and authenticated?). Open PRs can\'t be checked for duplicates; stopping.'); process.exit(2); }
   const all = new Map();
   for (const ref of ['origin/main', ...branches.map((b) => `origin/${b}`)]) {
     let arr;
@@ -54,8 +56,7 @@ const AWARD_PAGES = [
   'Blues Music Award',
   'Grammy Award for Best Traditional Blues Album',
   'Grammy Award for Best Contemporary Blues Album',
-  'International Blues Challenge',
-];
+]; // International Blues Challenge left out: amateur contest, mostly modern unknowns
 
 const MUSICIAN = /blues|musician|singer|vocalist|songwriter|guitarist|pianist|harmonica|drummer|bassist|saxophonist|composer|performer/i;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -82,6 +83,33 @@ async function linkedMusicians(page) {
   return found;
 }
 
+// Names → English Wikipedia articles by exact title (following redirects), 50 per request.
+// found = musician articles; unmatched = no article. Non-musician articles are in neither.
+async function lookupTitles(labels) {
+  const found = [], unmatched = [];
+  for (let i = 0; i < labels.length; i += 50) {
+    const batch = labels.slice(i, i + 50);
+    const q = (await wiki({ titles: batch.join('|'), redirects: 1, prop: 'description' })).query;
+    const to = Object.fromEntries([...(q.normalized || []), ...(q.redirects || [])].map((x) => [x.from, x.to]));
+    const pages = Object.values(q.pages);
+    for (const label of batch) {
+      let t = label;
+      while (to[t]) t = to[t];
+      const page = pages.find((x) => x.title === t && !('missing' in x));
+      if (page) { if (MUSICIAN.test(page.description || '')) found.push({ ...page, label }); }
+      else unmatched.push(label);
+    }
+  }
+  return { found, unmatched };
+}
+
+// Pre-war artists from new-musicians.md (the repo's old candidate list), resolved to
+// English Wikipedia articles. ponytail: exact titles only; a search per miss (~370) would hit rate limits.
+async function preWarListMusicians() {
+  const names = require('fs').readFileSync('new-musicians.md', 'utf8').split('\n').map((s) => s.replace(/"/g, '').trim()).filter(Boolean);
+  return (await lookupTitles(names)).found;
+}
+
 // Musicians tagged on the Blanco y Negro Blues podcast (Blogger labels), resolved to
 // English Wikipedia articles. Labels without an English article (many Spanish artists) are skipped.
 async function podcastMusicians() {
@@ -94,20 +122,8 @@ async function podcastMusicians() {
   // Tags whose spelling defeats both exact lookup and search.
   const TAG_FIX = { 'Darrell Nulish': 'Darrell Nulisch', "Shakura S'Aida Johnson etc.": "Shakura S'Aida" };
   for (const [tag, fixed] of Object.entries(TAG_FIX)) if (episodes[tag]) { episodes[fixed] = (episodes[fixed] || 0) + episodes[tag]; delete episodes[tag]; }
-  const labels = Object.keys(episodes), found = [], unmatched = [];
-  for (let i = 0; i < labels.length; i += 50) {
-    const batch = labels.slice(i, i + 50);
-    const q = (await wiki({ titles: batch.join('|'), redirects: 1, prop: 'description' })).query;
-    const to = Object.fromEntries([...(q.normalized || []), ...(q.redirects || [])].map((x) => [x.from, x.to]));
-    const pages = Object.values(q.pages);
-    for (const label of batch) {
-      let t = label;
-      while (to[t]) t = to[t];
-      const page = pages.find((x) => x.title === t && !('missing' in x));
-      if (page) { if (MUSICIAN.test(page.description || '')) found.push({ ...page, label, episodes: episodes[label] }); }
-      else unmatched.push(label);
-    }
-  }
+  const { found: hits, unmatched } = await lookupTitles(Object.keys(episodes));
+  const found = hits.map((x) => ({ ...x, episodes: episodes[x.label] }));
   // Tags are often lowercase or misspelled ("muddy waters", "LOnnie Brooks"): fall back to
   // Wikipedia search and accept the top hit if it's a musician sharing a name word with the tag.
   const notFound = [];
@@ -127,20 +143,23 @@ async function candidates() {
   const counts = {};
   for (const m of db) counts[m.bluesStyle] = (counts[m.bluesStyle] || 0) + 1;
   console.log('Style counts (main + open PRs), fewest first:');
-  for (const [s, n] of Object.entries(counts).sort((a, b) => a[1] - b[1])) console.log(`  ${String(n).padStart(4)}  ${s}${BANNED.test(s) ? '  (do not add)' : ''}`);
+  for (const [s, n] of Object.entries(counts).sort((a, b) => a[1] - b[1])) console.log(`  ${String(n).padStart(4)}  ${s}${BANNED.test(s) ? '  (do not add)' : s === 'Contemporary Blues' ? '  (catch-all, not a target)' : ''}`);
 
   // Era = decade the career started (activeFrom, else birth year + 20).
   const decade = (y) => (y ? Math.floor(y / 10) * 10 : null);
   const eraOf = (m) => decade(+(m.activeFrom || '').match(/\d{4}/)?.[0] || (+(m.birthDate || '').match(/\d{4}/)?.[0] + 20 || 0));
   const eras = {};
   for (const m of db) { const e = eraOf(m); if (e) eras[e] = (eras[e] || 0) + 1; }
-  const thin = (e) => e && e >= 1920 && (eras[e] || 0) < 70; // ponytail: fixed threshold; pre-1920 has almost no recordings to add
+  // Priority = careers that started 1920–1969, the recorded blues tradition. A count threshold
+  // ("fewer than N per decade") flagged every post-1970 decade forever and tilted picks modern.
+  // ponytail: fixed window; pre-1920 has almost no recordings to add
+  const priority = (e) => e >= 1920 && e < 1970;
   console.log('\nEra counts (career start decade):');
-  for (const [e, n] of Object.entries(eras).sort((a, b) => a[0] - b[0])) console.log(`  ${String(n).padStart(4)}  ${e}s${thin(+e) ? '  (thin)' : ''}`);
+  for (const [e, n] of Object.entries(eras).sort((a, b) => a[0] - b[0])) console.log(`  ${String(n).padStart(4)}  ${e}s${priority(+e) ? '  (priority)' : ''}`);
 
   // Wikidata: people tagged with blues or a blues subgenre. Score = Wikipedia
   // language editions (international reach) + 10 per blues award / Grammy /
-  // Hall of Fame / Heritage Fellowship, + 15 if their era is thin in the DB.
+  // Hall of Fame / Heritage Fellowship, + 15 if their career started in a priority era.
   // ponytail: plain "blues" tag is noisy (pop stars), so it only counts when the description says blues.
   const q = `SELECT ?p ?pLabel ?desc ?article ?sl (MIN(?start) AS ?from) (MIN(?born) AS ?birth)
       (GROUP_CONCAT(DISTINCT ?gLabel;separator="|") AS ?genres) (GROUP_CONCAT(DISTINCT ?aLabel;separator="|") AS ?awards) WHERE {
@@ -179,12 +198,13 @@ async function candidates() {
   };
   for (const page of AWARD_PAGES) for (const x of await linkedMusicians(page)) add(x, page);
   for (const x of await podcastMusicians()) add(x, `Blanco y Negro Blues podcast (${x.episodes} episode${x.episodes > 1 ? 's' : ''})`, true); // podcast picks: any style
+  for (const x of await preWarListMusicians()) add(x, 'pre-war candidate list (new-musicians.md)');
   const scored = [...byUrl.values()]
-    .map((c) => ({ ...c, score: c.sl + 10 * c.awards.length + (thin(c.era) ? 15 : 0) }))
+    .map((c) => ({ ...c, score: c.sl + 10 * c.awards.length + (priority(c.era) ? 15 : 0) }))
     .sort((a, b) => b.score - a.score);
   console.log(`\nMissing candidates (${scored.length}), best first — still run "check" on each pick:`);
   for (const c of scored.filter((c, i) => i < 100 || c.awards.length)) { // top 100 plus everyone with recognition
-    console.log(`  ${String(c.score).padStart(3)}  ${c.name} | ${c.era ? c.era + 's' : 'era ?'}${thin(c.era) ? ' (thin)' : ''} | ${c.genres} | ${c.desc} | ${c.url}`);
+    console.log(`  ${String(c.score).padStart(3)}  ${c.name} | ${c.era ? c.era + 's' : 'era ?'}${priority(c.era) ? ' (priority)' : ''} | ${c.genres} | ${c.desc} | ${c.url}`);
     if (c.awards.length) console.log(`         recognition: ${c.awards.join('; ')}`);
   }
 }
