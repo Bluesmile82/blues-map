@@ -1,14 +1,20 @@
-Add up to EIGHT new blues musicians to src/data/musicians.json and open ONE pull request. You are in a fresh checkout of the blues-map repo. Keep the change self-contained.
+Add up to EIGHT new blues musicians to src/data/musicians.json, all in ONE rolling pull request that collects every day's additions until the owner merges it. You are in a fresh checkout of the blues-map repo. Keep the change self-contained.
 
-GOAL: fill underpopulated styles and add influential artists who are missing. Do NOT add Jazz, British Blues, Soul Blues, Rhythm and Blues or Blues Rock artists. Quality over quantity: 4 good entries with images beat 8 obscure ones without. If fewer than 8 good candidates exist, add fewer.
+GOAL: add influential artists who are missing, mostly from the classic era (careers that started 1920–1969), and fill underpopulated styles. Do NOT add Jazz, British Blues, Soul Blues, Rhythm and Blues or Blues Rock artists. Quality over quantity: 4 good entries with images beat 8 obscure ones without. If fewer than 8 good candidates exist, add fewer.
+
+0. GET ON THE ROLLING BRANCH
+   Find the open rolling PR: gh pr list --state open --search "Daily blues musicians in:title" --json number,headRefName
+   - If one exists: git fetch origin <headRefName> && git checkout <headRefName> && git merge origin/main. If the merge conflicts in musicians.json, keep both sides (every entry from main AND every entry from the branch), then check the JSON parses and nothing is duplicated (step 7). Commit the merge.
+   - If none exists: git checkout -b claude/daily-musicians origin/main (the previous one was merged or closed; it's fine to replace the old remote branch).
+   If gh fails here, stop and report it. Don't fall back to a new PR.
 
 1. SEE WHAT'S TAKEN AND WHAT'S MISSING
    Run: node scripts/daily-candidates.cjs
-   It reads origin/main AND every open PR branch, so musicians in unmerged PRs count as taken. It prints:
-   - style counts, fewest first. Pick mostly from the 6 smallest styles that aren't marked "do not add" (today: Kansas City, Detroit, Contemporary, Hill Country, Swamp, St. Louis).
-   - era counts by the decade each career started. Decades marked "(thin)" are underrepresented (today: everything from the 1970s on).
-   - scored missing candidates, best first. Score = number of Wikipedia language editions (international reach) + 10 for each blues award or Hall of Fame page that links to them + 15 if their era is thin. The "recognition:" line shows where they're linked from: Blues Hall of Fame, Blues Music Awards, the blues Grammys, International Blues Challenge, or the Blanco y Negro Blues podcast (https://blancoynegroblues.blogspot.com, artists tagged on its episodes). Musicians featured on the podcast were picked by the repo owner, so prefer them: include at least one per run while any remain.
-   Mix the picks: at least half from thin eras and/or small styles. For artists active since 1970, recognition (a Blues Music Award, a blues Grammy, Hall of Fame induction, international touring or awards) is the main sign they belong; don't add contemporary artists who have none. Skip non-performers (label owners, producers), non-blues artists (country, pop, rock, desert blues) and anyone in a banned style. Use the score to rank, not as a verdict.
+   It reads origin/main AND every open PR branch, so musicians in unmerged PRs count as taken. If it exits with "gh pr list failed", stop and report it: picking without that check creates duplicates. It prints:
+   - style counts, fewest first. Pick mostly from the smallest styles that aren't marked "do not add". Contemporary Blues is a catch-all, not a target, even though it looks small.
+   - era counts by the decade each career started. Decades marked "(priority)" are 1920–1969, the classic recorded era.
+   - scored missing candidates, best first. Score = number of Wikipedia language editions (international reach) + 10 for each recognition source + 15 if their career started in a priority era. The "recognition:" line shows the sources: Blues Hall of Fame, Blues Music Awards, the blues Grammys, the Blanco y Negro Blues podcast (https://blancoynegroblues.blogspot.com, artists tagged on its episodes), or the pre-war candidate list (new-musicians.md). Podcast and pre-war list artists were picked by the repo owner, so prefer them: include at least one of each per run while any remain.
+   ERA MIX: every pick but one must have started their career before 1970. At most ONE artist per run whose career started in 1970 or later, and only one with a Blues Music Award, a blues Grammy or a Blues Hall of Fame induction. If no such artist fits, add none from that era. Skip non-performers (label owners, producers), non-blues artists (country, pop, rock and roll, desert blues) and anyone in a banned style. Use the score to rank, not as a verdict.
    You may also pick artists from your own knowledge of blues history: sidemen who mattered (e.g. Howlin' Wolf's guitarist Willie Johnson), regional scene leaders, zydeco/swamp pioneers. Every pick needs an English Wikipedia article.
    Prefer artists whose Wikipedia article has a photo. Check before you pick:
    https://en.wikipedia.org/w/api.php?action=query&titles=<Title>&prop=pageimages&format=json
@@ -44,11 +50,12 @@ GOAL: fill underpopulated styles and add influential artists who are missing. Do
    - Run the duplicate check again for each added id. Open PRs may have changed while you worked.
    - git diff should show only the new blocks plus a few reciprocal-link lines.
 
-8. PR: create branch daily-musicians-<today>, commit ONLY src/data/musicians.json ("data: add <names>"), push, then run gh pr create to main.
-   Title: "Add blues musicians: <first 3 names>, and N more".
-   Body: one bullet per musician linking to <netlify-preview-url>/map/<id>. Nothing else. Don't request a Copilot review.
-   If you have to resolve merge conflicts with main, re-run step 2's check afterwards and confirm that none of your entries were lost or duplicated.
+8. PR: on the branch from step 0, commit ONLY src/data/musicians.json ("data: add <names>").
+   - Rolling PR already open: git push, then append to its body (gh pr view <number> --json body, then gh pr edit <number> --body ...): a "### <today>" heading followed by one bullet per new musician linking to <netlify-preview-url>/map/<id>. Keep the earlier days' sections.
+   - No open PR: git push --force -u origin claude/daily-musicians, then gh pr create to main with title "Daily blues musicians" and the same body format ("### <today>" + bullets).
+   Nothing else in the body. Don't request a Copilot review. Never open a second PR.
+   If you resolved merge conflicts in step 0, re-run step 2's check for every musician in the PR, not just today's, and confirm none were lost or duplicated.
 
-If nothing new passes the checks, don't open a PR. Report that no artist was added.
+If nothing new passes the checks, don't commit or push. Report that no artist was added.
 
-FINAL REPORT: list the added ids with their style, era and recognition, and the ids added without an image.
+FINAL REPORT: list the added ids with their style, era and recognition, the ids added without an image, and the rolling PR's URL with its total musician count.
