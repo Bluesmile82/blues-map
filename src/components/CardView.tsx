@@ -986,13 +986,13 @@ export default function CardView({ musicians, onSelect, selectedId, showIncomple
                   <div className="h-1 shrink-0" style={{ background: hex }} />
                   <div className="relative flex-1 min-h-0 overflow-hidden">
                     <img
-                      src={current.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(current.name)}&background=333&color=fff&size=400`}
+                      src={current.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(current.name)}&background=2b3a5c&color=f2b84b&size=400`}
                       alt={current.name}
                       draggable={false}
                       className="w-full h-full object-cover pointer-events-none"
                       style={{ filter: 'sepia(8%) contrast(1.05)' }}
                       onError={(e) => {
-                        (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(current.name)}&background=333&color=fff&size=400`;
+                        (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(current.name)}&background=2b3a5c&color=f2b84b&size=400`;
                       }}
                     />
                     <div className="absolute top-2 right-2 w-6 h-6 rotate-45 rounded-sm shadow-lg opacity-90 flex items-center justify-center" style={{ background: hex }} >
@@ -1134,7 +1134,7 @@ export default function CardView({ musicians, onSelect, selectedId, showIncomple
           }}
           className="absolute top-3 left-3 z-50 flex flex-col items-center gap-0.5"
         >
-          <div className={`w-11 h-11 flex items-center justify-center rounded-full backdrop-blur-sm border shadow-md transition-colors ${miniPlayerActive ? 'bg-accent text-white border-accent' : 'bg-bg/80 border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover'}`}>
+          <div className={`w-11 h-11 flex items-center justify-center rounded-full backdrop-blur-sm border shadow-md transition-colors ${miniPlayerActive ? 'bg-accent text-bg border-accent' : 'bg-bg/80 border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover'}`}>
             {miniPlayerActive ? <Pause size={20} /> : <Play size={20} />}
           </div>
           <span className="text-[9px] text-ink3 uppercase tracking-wide font-medium">{miniPlayerActive ? t('card.pause') : t('card.play')}</span>
@@ -1161,7 +1161,7 @@ export default function CardView({ musicians, onSelect, selectedId, showIncomple
             onClick={() => setShowSearch(v => !v)}
             className="flex flex-col items-center gap-0.5"
           >
-            <div className={`w-11 h-11 flex items-center justify-center rounded-full backdrop-blur-sm border shadow-md transition-colors ${showSearch ? 'bg-accent text-white border-accent' : 'bg-bg/80 border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover'}`}>
+            <div className={`w-11 h-11 flex items-center justify-center rounded-full backdrop-blur-sm border shadow-md transition-colors ${showSearch ? 'bg-accent text-bg border-accent' : 'bg-bg/80 border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover'}`}>
               <Search size={20} />
             </div>
             <span className="text-[9px] text-ink3 uppercase tracking-wide font-medium">{t('card.search')}</span>
@@ -1199,7 +1199,7 @@ export default function CardView({ musicians, onSelect, selectedId, showIncomple
           <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-50">
             <button
               onClick={handleGyroPermissionRequest}
-              className="px-4 py-2 rounded-full bg-accent text-white text-sm font-medium shadow-lg active:scale-95 transition-transform"
+              className="px-4 py-2 rounded-full bg-accent text-bg text-sm font-medium shadow-lg active:scale-95 transition-transform"
             >
               {t('card.enableTilt')}
             </button>
@@ -1422,7 +1422,7 @@ export default function CardView({ musicians, onSelect, selectedId, showIncomple
               onClick={() => {
                 setShowDrawer(true);
               }}
-              className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2 bg-accent text-white px-5 py-3 rounded-full shadow-lg active:scale-95 transition-transform touch-manipulation"
+              className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2 bg-accent text-bg px-5 py-3 rounded-full shadow-lg active:scale-95 transition-transform touch-manipulation"
             >
               <Info size={18} />
               <span className="text-sm font-semibold">{t('card.fullInfo')}</span>
@@ -1479,7 +1479,7 @@ export default function CardView({ musicians, onSelect, selectedId, showIncomple
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.1 }}
           onClick={() => setShowSearch(v => !v)}
-          className={`flex items-center justify-center w-10 h-10 rounded-full backdrop-blur-sm border shadow-md transition-colors ${showSearch ? 'bg-accent text-white border-accent' : 'bg-bg/80 border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover'}`}
+          className={`flex items-center justify-center w-10 h-10 rounded-full backdrop-blur-sm border shadow-md transition-colors ${showSearch ? 'bg-accent text-bg border-accent' : 'bg-bg/80 border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover'}`}
           title={t('card.search')}
         >
           <Search size={18} />
@@ -1708,6 +1708,7 @@ function PaginatedArrowRow({
   isMobile: boolean;
   maxVisible: number;
 }) {
+  const { t } = useTranslation();
   const [page, setPage] = useState(0);
   const total = musicians.length;
   const needsPaging = total > maxVisible;
@@ -1727,7 +1728,7 @@ function PaginatedArrowRow({
           whileTap={{ scale: 0.9 }}
           onClick={(e) => { e.stopPropagation(); prevPage(); }}
           className="flex items-center justify-center w-6 h-6 rounded-full bg-bg/60 border border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover transition-colors shrink-0"
-          title="Previous"
+          aria-label={t('card.previousPage')}
         >
           <ChevronLeft size={12} />
         </motion.button>
@@ -1751,7 +1752,7 @@ function PaginatedArrowRow({
           whileTap={{ scale: 0.9 }}
           onClick={(e) => { e.stopPropagation(); nextPage(); }}
           className="flex items-center justify-center w-6 h-6 rounded-full bg-bg/60 border border-border-subtle text-ink3 hover:text-ink hover:bg-bg-hover transition-colors shrink-0"
-          title="Next"
+          aria-label={t('card.nextPage')}
         >
           <ChevronRight size={12} />
         </motion.button>
@@ -1787,6 +1788,7 @@ function PlayedWithRow({
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={() => setPage(p => p - 1)}
+          aria-label={t('card.previousPage')}
           disabled={!needsPaging || page === 0}
           className="flex items-center justify-center w-6 h-6 rounded-full bg-bg/60 border border-border-subtle text-ink3 hover:text-ink transition-colors shrink-0 disabled:opacity-40 disabled:pointer-events-none"
         >
@@ -1806,6 +1808,7 @@ function PlayedWithRow({
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={() => setPage(p => p + 1)}
+            aria-label={t('card.nextPage')}
             className="flex items-center justify-center w-6 h-6 rounded-full bg-bg/60 border border-border-subtle text-ink3 hover:text-ink transition-colors shrink-0"
           >
             <ChevronRight size={12} />

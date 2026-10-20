@@ -5,6 +5,7 @@ import { ScatterplotLayer, ArcLayer, TextLayer, LineLayer, SolidPolygonLayer } f
 import type { MapViewState } from '@deck.gl/core';
 import Map from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import type { StyleSpecification } from 'maplibre-gl';
 import type { Musician } from '../types';
 import { getStyleColor, getStyleHex } from '../utils/colors';
 import { getStyleAbbreviation } from '../utils/layout';
@@ -23,6 +24,12 @@ import { passesIncompleteFilter } from '../utils/musicianVisibility';
 const MAP_STYLES = {
   light: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
   dark: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
+};
+
+// Patchwork fabrics for the basemap: land, the odd park patch, water
+const MAP_TINT = {
+  light: { land: '#eadfcb', landcover: '#e2d4bb', water: '#b9c6cf' },
+  dark: { land: '#22304d', landcover: '#26355a', water: '#152038' },
 };
 
 const INITIAL_VIEW_STATE: MapViewState = {
@@ -299,13 +306,13 @@ function MusicianSidebar({
                   {/* Avatar */}
                   <div className="relative shrink-0">
                     <img
-                      src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=40`}
+                      src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=2b3a5c&color=f2b84b&size=40`}
                       alt={musician.name}
                       className="w-11 h-11 rounded-full object-cover"
                       style={{ filter: 'sepia(8%) contrast(1.02)' }}
                       onError={(e) => {
                         (e.target as HTMLImageElement).src =
-                          `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=40`;
+                          `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=2b3a5c&color=f2b84b&size=40`;
                       }}
                     />
                     <div
@@ -374,6 +381,28 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
   const [listHovered, setListHovered] = useState<string | null>(null);
   const [viewState, setViewState] = useState<MapViewState>(INITIAL_VIEW_STATE);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [showMigration, setShowMigration] = useState(false);
+
+  // The basemap, dyed in the patchwork fabrics. Patching the style JSON (rather than
+  // painting after load) keeps the tint when the theme switches the style in place.
+  // ponytail: if the fetch fails the plain CARTO style stays, untinted.
+  const [mapStyle, setMapStyle] = useState<StyleSpecification | string>(MAP_STYLES[theme]);
+  useEffect(() => {
+    let live = true;
+    fetch(MAP_STYLES[theme])
+      .then((r) => r.json() as Promise<StyleSpecification>)
+      .then((style) => {
+        const tint = MAP_TINT[theme];
+        for (const layer of style.layers) {
+          if (layer.type === 'background') layer.paint = { ...layer.paint, 'background-color': tint.land };
+          else if (layer.type === 'fill' && layer.id.includes('water')) layer.paint = { ...layer.paint, 'fill-color': tint.water };
+          else if (layer.type === 'fill' && /land|park|wood|grass/.test(layer.id)) layer.paint = { ...layer.paint, 'fill-color': tint.landcover };
+        }
+        if (live) setMapStyle(style);
+      })
+      .catch(() => {});
+    return () => { live = false; };
+  }, [theme]);
 
   // Compute viewport bounds from viewState for supercluster
   const viewportBounds = useMemo<[number, number, number, number] | null>(() => {
@@ -514,6 +543,27 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
     [completeMusicians]
   );
 
+  // Migration layer: one arc per musician who moved far, birthplace → the farthest
+  // place they lived. spentTimePlaces isn't in time order, so "farthest" stands in
+  // for "where they ended up". Overlapping arcs build up into the big corridors.
+  // A tour abroad shouldn't hide a move at home, so places on the birthplace's side
+  // of the Atlantic win; abroad only counts when there was no big move at home.
+  // ponytail: flat degree distance with a cos(lat) squash, fine at continental scale.
+  const migrationFlows = useMemo<MigrationArc[]>(() => {
+    if (!showMigration) return [];
+    const MIN_MOVE = 1.5;
+    return completeMusicians.flatMap((m) => {
+      const [bx, by] = m.birthCoords;
+      const dist = ([x, y]: [number, number]) => Math.hypot((x - bx) * Math.cos((by * Math.PI) / 180), y - by);
+      const farthest = (cs: [number, number][]) =>
+        cs.reduce<[number, number] | null>((best, c) => (!best || dist(c) > dist(best) ? c : best), null);
+      const places = (m.spentTimePlaces ?? []).flatMap((s) => (s?.coords ? [s.coords] : []));
+      const home = farthest(places.filter(([x]) => (x < -30) === (bx < -30)));
+      const far = home && dist(home) >= MIN_MOVE ? home : farthest(places);
+      return far && dist(far) >= MIN_MOVE ? [{ source: m.birthCoords, target: far, musician: m }] : [];
+    });
+  }, [completeMusicians, showMigration]);
+
   const focusId = hovered ?? listHovered ?? selectedId;
 
   // CPU-side collision filtering for labels (only unclustered individual points)
@@ -561,6 +611,22 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
   }, [points, viewState.zoom, focusId, selectionRelatedIds]);
 
   const layers = useMemo(() => [
+    // Migration layer (everyone, when toggled on); fades back while a musician is focused
+    new ArcLayer<MigrationArc>({
+      id: 'migration-flows',
+      data: migrationFlows,
+      getSourcePosition: (d) => d.source,
+      getTargetPosition: (d) => d.target,
+      getSourceColor: (d): [number, number, number, number] =>
+        [...getStyleColor(d.musician.bluesStyle), focusId ? 10 : 45] as [number, number, number, number],
+      getTargetColor: (d): [number, number, number, number] =>
+        [...getStyleColor(d.musician.bluesStyle), focusId ? 30 : 180] as [number, number, number, number],
+      getWidth: 1.6,
+      getHeight: 0.5,
+      pickable: false,
+      updateTriggers: { getSourceColor: [focusId], getTargetColor: [focusId] },
+    }),
+
     // Migration arcs (only for focused musician)
     new ArcLayer<MigrationArc>({
       id: 'arcs',
@@ -811,18 +877,18 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
       getPixelOffset: [0, -32] as [number, number],
       getColor: (d): [number, number, number, number] => {
         const a = !focusId || d.musician.id === focusId ? 220 : d.spidered ? 180 : 10;
-        return theme === 'dark' ? [255, 255, 255, a] : [0, 0, 0, a];
+        return theme === 'dark' ? [246, 235, 211, a] : [26, 37, 64, a];
       },
       getTextAnchor: 'middle' as const,
       fontFamily: 'Georgia, serif',
       background: true,
       getBackgroundColor: (): [number, number, number, number] =>
-        theme === 'dark' ? [20, 15, 10, 180] : [255, 252, 248, 200],
+        theme === 'dark' ? [26, 37, 64, 200] : [251, 246, 236, 220],
       backgroundPadding: [4, 2] as [number, number],
       pickable: false,
-      updateTriggers: { getColor: [focusId], getSize: [focusId], getBackgroundColor: [theme] },
+      updateTriggers: { getColor: [focusId, theme], getSize: [focusId], getBackgroundColor: [theme] },
     }),
-  ], [spentPlaces, migrationArcs, focusId, selectionRelatedIds, onSelect, visibleMapLabels, clusters, points,
+  ], [spentPlaces, migrationArcs, migrationFlows, focusId, selectionRelatedIds, onSelect, visibleMapLabels, clusters, points,
     spiderLegs, spideredClusterId, collapseSpider, onClusterClick, viewState, theme, spiderProgress]);
 
   // Pulse ring — outside memo so it re-renders every animation frame
@@ -914,24 +980,21 @@ export default function MapView({ musicians, onSelect, selectedId, styleFilter, 
             }
           }}
         >
-          <Map
-            mapStyle={MAP_STYLES[theme]}
-            onLoad={(evt) => {
-              if (theme === 'light') {
-                const map = evt.target;
-                const layers = map.getStyle().layers;
-                layers?.forEach((layer: { type?: string; id?: string }) => {
-                  if (layer.type === 'fill' && layer.id?.includes('land')) {
-                    map.setPaintProperty(layer.id, 'fill-color', '#c8c5c4');
-                  }
-                });
-              }
-            }}
-          />
+          <Map mapStyle={mapStyle} />
         </DeckGL>
 
         {/* Legend */}
         <div className={`absolute right-6 bg-bg/50 border border-bg3 rounded-md px-4 py-3 flex flex-col gap-1.5 pointer-events-none transition-all ${isMobile ? 'bottom-16' : 'bottom-6'}`}>
+          <button
+            type="button"
+            aria-pressed={showMigration}
+            onClick={() => setShowMigration((v) => !v)}
+            title={t('map.migrationHint')}
+            className={`pointer-events-auto mb-1 px-3 py-1.5 rounded-md border text-xs font-semibold tracking-wide transition-colors ${showMigration ? 'bg-accent text-bg border-accent' : 'border-border text-ink2 hover:border-accent hover:text-ink'}`}
+          >
+            {t('map.migrationLayer')}
+            {showMigration && <span className="font-normal opacity-80"> · {migrationFlows.length}</span>}
+          </button>
           <p className="text-2xs text-accent tracking-widest uppercase mb-1">{t('map.legend.title')}</p>
           {[
             { label: t('map.legend.birthPlace'), el: <span className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" /> },

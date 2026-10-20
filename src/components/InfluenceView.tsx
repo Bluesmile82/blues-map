@@ -1196,7 +1196,7 @@ export default function InfluenceView({
           return interpolated ? [sx(interpolated[0]), interpolated[1]] as Position2D : [sx(d.position[0]), d.position[1]];
         },
         getIcon: (d) => ({
-          url: d.musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(d.musician.name)}&background=251a0d&color=c8872a&size=80`,
+          url: d.musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(d.musician.name)}&background=2b3a5c&color=f2b84b&size=80`,
           width: 128,
           height: 128,
           mask: false,

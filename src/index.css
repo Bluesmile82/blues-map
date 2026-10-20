@@ -1,41 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&family=Karla:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
+/* Patchwork: quilt fabrics for surfaces, thread colours for ink, stitched borders. */
 @theme {
-  /* ── Light Mode Backgrounds (default) ───────────────────────────────────── */
-  --color-bg:          #e0e0e0;  /* warm light gray – app bg, navbar */
-  --color-bg2:         #ccc7c6;  /* panels, filter backgrounds */
-  --color-bg3:         #b2afae;  /* elevated surfaces, chips */
-  --color-bg-subtle:   #ccc7c6;
-  --color-bg-elevated: #f2f0ef;
-  --color-bg-hover:    #b6b3b2;  /* hover backgrounds */
-  --color-bg-deep:     #aba8a7;  /* deep hover */
+  /* ── Light Mode Backgrounds (default) — cream cotton ─────────────────── */
+  --color-bg:          #f3ebdd;  /* app bg, navbar */
+  --color-bg2:         #eadfcb;  /* panels, filter backgrounds */
+  --color-bg3:         #dccdb2;  /* elevated surfaces, chips */
+  --color-bg-subtle:   #eadfcb;
+  --color-bg-elevated: #fbf6ec;
+  --color-bg-hover:    #e2d4bb;  /* hover backgrounds */
+  --color-bg-deep:     #d3c2a3;  /* deep hover */
 
-  /* ── Light Mode Borders ───────────────────────────────────────── */
-  --color-border-subtle: #a8a6a6;
-  --color-border:        #9a9999;
-  --color-border-hover:  #8c8b8b;
+  /* ── Light Mode Borders — tan thread ─────────────────────────────────── */
+  --color-border-subtle: #cbb894;
+  --color-border:        #8a7550;  /* ≥3:1 on panels, so control edges show */
+  --color-border-hover:  #6f5e40;
 
-  /* ── Light Mode Text ──────────────────────────────────────────── */
-  --color-ink:      #0f0f0f;  /* almost black - main text */
-  --color-ink2:     #2a2a2a;  /* secondary body text */
-  --color-ink3:     #5a5858;  /* muted metadata */
-  --color-ink-warm: #3a3838;  /* warm hover text */
+  /* ── Light Mode Text — indigo ink ────────────────────────────────────── */
+  --color-ink:      #1a2540;
+  --color-ink2:     #2b3a5c;
+  --color-ink3:     #4a5470;
+  --color-ink-warm: #3a4a70;
 
-  /* ── Light Mode Accent (darker steel blue) ──────────────────────────── */
-  --color-accent:  #2E6B7F;  /* darker for light mode */
-  --color-accent2: #4A8FA6;
-  --color-accent3: #68A9BD;
+  /* ── Light Mode Accent — red-clay patch ──────────────────────────────── */
+  --color-accent:  #943622;
+  /* On cream the hover shades get darker, not lighter, so links keep their contrast */
+  --color-accent2: #8a3220;
+  --color-accent3: #7a2b1b;
 
   /* ── Light Mode Primary CTA ─────────────────────── */
-  --color-primary:  #2E6B7F;
-  --color-primary2: #4A8FA6;
+  --color-primary:  #943622;
+  --color-primary2: #8a3220;
 
   /* ── Light Mode Status ───────────────────────────────────────── */
-  --color-success:    #2d7a3f;  /* darker for light mode */
-  --color-success-bg: #E8F5E9;
-  --color-danger:     #c53030;
-  --color-danger-bg:  #FEE2E2;
+  --color-success:    #2b6127;
+  --color-success-bg: #e3ecd5;
+  --color-danger:     #a02a22;
+  --color-danger-bg:  #f6dcd4;
 
   /* ── Typography scale ─────────────────────────────── */
   --text-3xs:   0.75rem;   /* ~12px — smallest labels */
@@ -44,44 +46,59 @@
   --text-ui:    1.0rem;    /* ~16px — panel body text, button text */
 
   /* ── Font families ────────────────────────────────── */
-  --font-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif
+  --font-serif: 'Young Serif', Georgia, serif;
 }
 
-/* Dark mode colors - applied when .dark class is present */
+/* Dark mode colors - applied when .dark class is present — indigo quilt */
 .dark {
-  --color-bg:          #0a0805;  /* deepest – app bg, navbar */
-  --color-bg2:         #0f0c07;  /* panels, filter backgrounds */
-  --color-bg3:         #141008;  /* elevated surfaces, chips */
-  --color-bg-subtle:   #0f0c07;
-  --color-bg-elevated: #141008;
-  --color-bg-hover:    #1a1208;  /* hover / active backgrounds */
-  --color-bg-deep:     #251a0d;  /* deep hover (close button) */
+  --color-bg:          #1a2540;  /* deepest – app bg, navbar */
+  --color-bg2:         #22304d;  /* panels, filter backgrounds */
+  --color-bg3:         #2b3a5c;  /* elevated surfaces, chips */
+  --color-bg-subtle:   #22304d;
+  --color-bg-elevated: #2b3a5c;
+  --color-bg-hover:    #34466c;  /* hover / active backgrounds */
+  --color-bg-deep:     #3a4a70;  /* deep hover (close button) */
 
-  /* ── Dark Mode Borders ───────────────────────────────────────── */
-  --color-border-subtle: #264954;
-  --color-border:        #396E7F;
-  --color-border-hover:  #4c93a9;
+  /* ── Dark Mode Borders — stitching ───────────────────────────── */
+  --color-border-subtle: #3a4a70;
+  --color-border:        #7d8db3;  /* ≥3:1 on panels */
+  --color-border-hover:  #b9c3d9;
 
-  /* ── Dark Mode Text ──────────────────────────────────────────── */
-  --color-ink:      #ffffff;
-  --color-ink2:     #E0E9D8;  /* secondary / body text */
-  --color-ink3:     #CBDBBD;  /* muted / metadata */
-  --color-ink-warm: #f0e6d3;  /* warm hover text */
+  /* ── Dark Mode Text — cream thread ───────────────────────────── */
+  --color-ink:      #f6ebd3;
+  --color-ink2:     #e6dcc4;
+  --color-ink3:     #b9c3d9;  /* muted / metadata */
+  --color-ink-warm: #f6ebd3;
 
-  /* ── Dark Mode Accent (steel blue) ──────────────────────────── */
-  --color-accent:  #4c93a9;
-  --color-accent2: #80b6c6;
-  --color-accent3: #9cc6d3;
+  /* ── Dark Mode Accent — mustard patch ───────────────────────── */
+  --color-accent:  #f2b84b;
+  --color-accent2: #f5c976;
+  --color-accent3: #f8d99b;
 
   /* ── Dark Mode Primary CTA ─────────────────────── */
-  --color-primary:  #4c93a9;
-  --color-primary2: #80b6c6;
+  --color-primary:  #f2b84b;
+  --color-primary2: #f5c976;
 
   /* ── Dark Mode Status ───────────────────────────────────────── */
-  --color-success:    #4ade80;
-  --color-success-bg: #14230d;
-  --color-danger:     #f87171;
-  --color-danger-bg:  #230d0d;
+  --color-success:    #7fc98f;
+  --color-success-bg: #1f3a33;
+  --color-danger:     #ff8a7e;
+  --color-danger-bg:  #3a2230;
+}
+
+/* Every seam is stitched. Tailwind's border utilities read --tw-border-style,
+   so set that too; `border-solid` still opts back out. */
+@layer base {
+  *, ::before, ::after { --tw-border-style: dashed; border-style: dashed; }
+  /* Keyboard focus is a stitch too, in the accent thread (≥6:1 in both themes) */
+  :focus-visible { outline: 2px dashed var(--color-accent); outline-offset: 2px; }
+}
+
+/* Headings and the brand are set in the quilt's serif; it has a single weight. */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -92,8 +109,8 @@ html, body, #root {
   overflow: hidden;
   background: var(--color-bg);
   color: var(--color-ink);
-  font-family: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  letter-spacing: 0.03em;
+  font-family: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -214,6 +231,15 @@ a:hover { color: var(--color-accent3); }
   * {
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
+  }
+
+  /* iOS zooms into any field under 16px on focus. Pinch-zoom stays allowed
+     (no maximum-scale), so keep typing fields at 16px instead. Unlayered,
+     so it wins over text-sm/text-xs utilities on these elements. */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+  select,
+  textarea {
+    font-size: 16px;
   }
 
   button:active,

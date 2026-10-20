@@ -43,13 +43,13 @@ export default function MusicianPreviewCard({ musician, onViewDetails, onClose, 
             {/* Avatar */}
             <div className="relative shrink-0">
               <img
-                src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=80`}
+                src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=2b3a5c&color=f2b84b&size=80`}
                 alt={musician.name}
                 className="w-20 h-20 rounded-full object-cover"
                 style={{ filter: 'sepia(8%) contrast(1.05)' }}
                 onError={(e) => {
                   (e.target as HTMLImageElement).src =
-                    `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=80`;
+                    `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=2b3a5c&color=f2b84b&size=80`;
                 }}
               />
               <div

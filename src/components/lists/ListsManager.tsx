@@ -190,7 +190,7 @@ export default function ListsManager({ onClose }: ListsManagerProps) {
             <button
               type="submit"
               disabled={creating || !newListName.trim()}
-              className="px-4 py-2 rounded-lg bg-primary hover:bg-primary2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium text-ink"
+              className="px-4 py-2 rounded-lg bg-primary hover:bg-primary2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium text-bg"
             >
               {creating ? '...' : t('lists.create')}
             </button>

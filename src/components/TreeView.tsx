@@ -866,7 +866,8 @@ export default function TreeView({
           // parked just off the left edge, its own gutter included
           transform: leftOpen ? 'none' : 'translateX(calc(-100% - 0.75rem))',
         }}
-        aria-hidden={!leftOpen}
+        // inert, not just aria-hidden: a parked panel must also drop out of the tab order
+        inert={!leftOpen}
       >
         {/* outside the scroll area: the results list has to be free to overflow */}
         <div className="relative">

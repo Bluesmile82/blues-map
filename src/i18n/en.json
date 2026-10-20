@@ -45,7 +45,9 @@
     "search": "Search",
     "favorite": "Favorite",
     "addToList": "Add to List",
-    "enableTilt": "Enable tilt effect"
+    "enableTilt": "Enable tilt effect",
+    "previousPage": "Previous page",
+    "nextPage": "Next page"
   },
   "mobile": {
     "gestureHintPinch": "Pinch to zoom in and out",
@@ -99,6 +101,8 @@
   "map": {
     "close": "Close",
     "musicians": "Musicians",
+    "migrationLayer": "Show migration",
+    "migrationHint": "Birthplace → the farthest place each musician lived",
     "searchByNameOrBirthplace": "Search by name or birthplace...",
     "noMusiciansFound": "No musicians found matching your search",
     "activeInDecade": "Active in",
@@ -284,7 +288,9 @@
   "video": {
     "randomMusician": "Random Musician",
     "loading": "Loading...",
-    "closeVideo": "Close video"
+    "closeVideo": "Close video",
+    "previous": "Previous video",
+    "next": "Next video"
   },
   "styles": {
     "Delta Blues": "Delta Blues",
