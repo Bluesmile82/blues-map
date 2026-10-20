@@ -50,7 +50,7 @@ function MusicianItem({
           className="w-11 h-11 rounded-full object-cover"
           style={{ filter: 'sepia(8%) contrast(1.02)' }}
           onError={(e) => {
-            ;(e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=40`
+            ;(e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=2b3a5c&color=f2b84b&size=40`
           }}
         />
         <div

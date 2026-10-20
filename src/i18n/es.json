@@ -45,7 +45,9 @@
     "search": "Buscar",
     "favorite": "Favorito",
     "addToList": "Añadir a Lista",
-    "enableTilt": "Activar efecto inclinación"
+    "enableTilt": "Activar efecto inclinación",
+    "previousPage": "Página anterior",
+    "nextPage": "Página siguiente"
   },
   "mobile": {
     "gestureHintPinch": "Pellizca para acercar o alejar",
@@ -99,6 +101,8 @@
   "map": {
     "close": "Cerrar",
     "musicians": "Músicos",
+    "migrationLayer": "Mostrar migración",
+    "migrationHint": "Lugar de nacimiento → el lugar más lejano donde vivió cada músico",
     "searchByNameOrBirthplace": "Buscar por nombre o lugar de nacimiento...",
     "noMusiciansFound": "No se encontraron músicos",
     "activeInDecade": "Activos en",
@@ -284,7 +288,9 @@
   "video": {
     "randomMusician": "Músico aleatorio",
     "loading": "Cargando...",
-    "closeVideo": "Cerrar video"
+    "closeVideo": "Cerrar video",
+    "previous": "Vídeo anterior",
+    "next": "Vídeo siguiente"
   },
   "styles": {
     "Delta Blues": "Blues del Delta",
