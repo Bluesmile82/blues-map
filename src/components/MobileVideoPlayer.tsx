@@ -206,8 +206,9 @@ export default function MobileVideoPlayer({
             <>
               <button
                 onClick={() => handleNavigate(currentIndex - 1)}
+                aria-label={t('video.previous')}
                 disabled={currentIndex === 0}
-                className="p-1.5 rounded text-ink3/70 hover:text-ink hover:bg-bg3/30 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-ink3/70"
+                className="p-1.5 rounded text-ink3 hover:text-ink hover:bg-bg3/30 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-ink3"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -215,8 +216,9 @@ export default function MobileVideoPlayer({
               </button>
               <button
                 onClick={() => handleNavigate(currentIndex + 1)}
+                aria-label={t('video.next')}
                 disabled={currentIndex === videos.length - 1}
-                className="p-1.5 rounded text-ink3/70 hover:text-ink hover:bg-bg3/30 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-ink3/70"
+                className="p-1.5 rounded text-ink3 hover:text-ink hover:bg-bg3/30 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-ink3"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -226,7 +228,8 @@ export default function MobileVideoPlayer({
           )}
           <button
             onClick={onClose}
-            className="p-1.5 rounded text-ink3/70 hover:text-ink hover:bg-bg3/30"
+            aria-label={t('video.closeVideo')}
+            className="p-1.5 rounded text-ink3 hover:text-ink hover:bg-bg3/30"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -253,6 +256,7 @@ export default function MobileVideoPlayer({
             <>
               <button
                 onClick={() => handleNavigate(currentIndex - 1)}
+                aria-label={t('video.previous')}
                 disabled={currentIndex === 0}
                 className="p-1 rounded text-ink/90 hover:bg-bg3/30 disabled:opacity-30"
               >
@@ -265,6 +269,7 @@ export default function MobileVideoPlayer({
               </span>
               <button
                 onClick={() => handleNavigate(currentIndex + 1)}
+                aria-label={t('video.next')}
                 disabled={currentIndex === videos.length - 1}
                 className="p-1 rounded text-ink/90 hover:bg-bg3/30 disabled:opacity-30"
               >

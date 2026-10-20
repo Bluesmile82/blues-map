@@ -101,7 +101,7 @@ export default function AuthModal({ onClose }: AuthModalProps) {
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full px-4 py-2.5 rounded-lg bg-primary hover:bg-primary2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium text-ink"
+                className="w-full px-4 py-2.5 rounded-lg bg-primary hover:bg-primary2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium text-bg"
               >
                 {submitting ? t('auth.loading') : mode === 'signin' ? t('auth.signIn') : t('auth.createAccount')}
               </button>

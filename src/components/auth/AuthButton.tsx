@@ -27,7 +27,7 @@ export default function AuthButton() {
           onClick={() => setShowMenu(!showMenu)}
           className="flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-bg-hover transition-colors"
         >
-          <div className="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-sm font-medium text-ink">
+          <div className="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-sm font-medium text-bg">
             {user.email?.[0].toUpperCase() ?? '?'}
           </div>
         </button>
@@ -70,7 +70,7 @@ export default function AuthButton() {
     <>
       <button
         onClick={() => setShowModal(true)}
-        className="px-3 py-1.5 rounded-lg bg-primary hover:bg-primary2 transition-colors text-sm font-medium text-ink"
+        className="px-3 py-1.5 rounded-lg bg-primary hover:bg-primary2 transition-colors text-sm font-medium text-bg"
       >
         {t('auth.signIn')}
       </button>

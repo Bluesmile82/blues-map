@@ -95,7 +95,7 @@ export default function ListsDropdown({ musicianId, onClose }: ListsDropdownProp
             <button
               type="submit"
               disabled={creating || !newListName.trim()}
-              className="px-3 py-1.5 text-sm rounded-lg bg-primary hover:bg-primary2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-ink font-medium"
+              className="px-3 py-1.5 text-sm rounded-lg bg-primary hover:bg-primary2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-bg font-medium"
             >
               {creating ? '...' : t('lists.add')}
             </button>

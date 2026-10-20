@@ -237,13 +237,13 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
             <div className="flex gap-3 items-center">
               <div className="relative shrink-0">
                 <img
-                  src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=80`}
+                  src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=2b3a5c&color=f2b84b&size=80`}
                   alt={musician.name}
                   className="w-11 h-11 rounded-full object-cover"
                   style={{ filter: 'sepia(8%) contrast(1.05)' }}
                   onError={(e) => {
                     (e.target as HTMLImageElement).src =
-                      `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=80`;
+                      `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=2b3a5c&color=f2b84b&size=80`;
                   }}
                 />
                 <div className="absolute inset-[-2px] rounded-full pointer-events-none"
@@ -283,13 +283,13 @@ export default function MusicianPanel({ musician, musicians, onClose, onNavigate
             {/* Avatar with colored ring */}
             <div className="relative shrink-0 mt-0.5">
               <img
-                src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=200`}
+                src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=2b3a5c&color=f2b84b&size=200`}
                 alt={musician.name}
                 className="w-[64px] h-[64px] sm:w-[88px] sm:h-[88px] rounded-full object-cover"
                 style={{ filter: 'sepia(8%) contrast(1.05)' }}
                 onError={(e) => {
                   (e.target as HTMLImageElement).src =
-                    `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=200`;
+                    `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=2b3a5c&color=f2b84b&size=200`;
                 }}
               />
               {/* Outer glow ring */}
@@ -597,12 +597,12 @@ function MusicianChip({ musician, onClick }: { musician: Musician; onClick: () =
     >
       <div className="relative shrink-0">
         <img
-          src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=40`}
-          alt={musician.name}
+          src={musician.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=2b3a5c&color=f2b84b&size=40`}
+          alt=""
           className="w-7.5 h-7.5 rounded-full object-cover"
           onError={(e) => {
             (e.target as HTMLImageElement).src =
-              `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=251a0d&color=c8872a&size=40`;
+              `https://ui-avatars.com/api/?name=${encodeURIComponent(musician.name)}&background=2b3a5c&color=f2b84b&size=40`;
           }}
         />
         <div className="absolute inset-0 rounded-full pointer-events-none"
