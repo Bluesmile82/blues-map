@@ -15020,7 +15020,9 @@
       "otis-rush",
       "luther-allison",
       "albert-king",
-      "nick-moss"
+      "nick-moss",
+      "cash-mccall",
+      "george-wild-child-butler"
     ],
     "source": "https://en.wikipedia.org/wiki/Jimmy_Dawkins",
     "secondaryInstruments": [
@@ -22908,7 +22910,8 @@
       "chuck-willis",
       "chippie-hill",
       "monette-moore",
-      "lillian-glinn"
+      "lillian-glinn",
+      "mae-glover"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -34461,7 +34464,8 @@
       "buddy-guy",
       "memphis-slim",
       "jimmy-rogers",
-      "biscuit-miller"
+      "biscuit-miller",
+      "cash-mccall"
     ],
     "influencedBy": [
       "little-brother-montgomery"
@@ -34480,7 +34484,9 @@
       "sonny-boy-williamson",
       "tommy-tucker",
       "leonard-baby-doo-caston",
-      "sugar-blue"
+      "sugar-blue",
+      "cash-mccall",
+      "george-wild-child-butler"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_Dixon",
     "secondaryInstruments": [
@@ -43510,7 +43516,8 @@
     "playedWith": [
       "johnny-rawls",
       "albert-castiglia",
-      "benny-turner"
+      "benny-turner",
+      "cash-mccall"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Clay",
     "secondaryInstruments": [],
@@ -61355,5 +61362,293 @@
     "source": "https://en.wikipedia.org/wiki/Jerry_Portnoy",
     "secondaryInstruments": [],
     "createdAt": "2026-10-19"
+  },
+  {
+    "id": "cash-mccall",
+    "name": "Cash McCall",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cash%20McCall.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1941-01-28",
+    "birthPlace": "New Madrid",
+    "birthCoords": [
+      -89.535833333333,
+      36.587777777778
+    ],
+    "deathDate": "2019-04-20",
+    "deathPlace": "Merrillville",
+    "deathCoords": [
+      -87.3336,
+      41.4833
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=VU9D91lMnFg",
+    "albums": [
+      {
+        "name": "Omega Man (1973)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Cash McCall (born Maurice Dollison Jr. ; January 28, 1941 – April 20, 2019) was an American electric blues guitarist, singer and songwriter.  He was best known for his 1966 R&B hit \"When You Wake Up\".",
+    "activeFrom": "1963",
+    "influences": [],
+    "influencedBy": [
+      "willie-dixon"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "willie-dixon",
+      "otis-clay",
+      "jimmy-dawkins",
+      "george-wild-child-butler"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Cash_McCall_(musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-20"
+  },
+  {
+    "id": "fillmore-slim",
+    "name": "Fillmore Slim",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fillmore%20Slim.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1935",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Los Angeles",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Oakland",
+        "coords": [
+          -122.2712,
+          37.8044
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=EYTEWjUAxaI",
+    "albums": [
+      {
+        "name": "Born to Sing the Blues (1987)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Clarence Sims (born November 7, 1934), best known by his stage name, Fillmore Slim, is an American blues vocalist and guitarist with five albums to his credit.  During the 1960s and 1970s, he was also a known pimp in San Francisco, referred to several times as \"The West Coast Godfather of the Game\" and \"The Pope of Pimping\".",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Fillmore_Slim",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-20"
+  },
+  {
+    "id": "dave-snaker-ray",
+    "name": "Dave \"Snaker\" Ray",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dave%20%22Snaker%22%20Ray.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1943-08-17",
+    "birthPlace": "Saint Paul",
+    "birthCoords": [
+      -93.093611111111,
+      44.944166666667
+    ],
+    "deathDate": "2002-11-28",
+    "deathPlace": "Minneapolis",
+    "deathCoords": [
+      -93.26916666666666,
+      44.981944444444444
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=LFeno-By-t8",
+    "albums": [
+      {
+        "name": "Legacy (2014)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Dave \"Snaker\" Ray (August 17, 1943 – November 28, 2002) was an American blues singer and guitarist from St.  Paul, Minnesota, and was associated with Spider John Koerner and Tony \"Little Sun\" Glover in the early Sixties folk revival.  Together, the three released albums under the name Koerner, Ray & Glover.",
+    "activeFrom": "1963",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Dave_%22Snaker%22_Ray",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-20"
+  },
+  {
+    "id": "mae-glover",
+    "name": "Mae Glover",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1906-09-09",
+    "birthPlace": "Maury County",
+    "birthCoords": [
+      -87.08,
+      35.62
+    ],
+    "deathDate": "1985-03-27",
+    "deathPlace": "Iuka",
+    "deathCoords": [
+      -88.195833333333,
+      34.810555555556
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Richmond",
+        "coords": [
+          -77.4605,
+          37.5407
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=qCgSWZzQOTY",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, 1927-1931 (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=21rO4ay5oS4"
+      }
+    ],
+    "description": "Mae Glover (September 9, 1906 – March 27, 1985) was an American country blues singer.  Over a lengthy career she recorded under various pseudonyms and performed regularly in her adopted hometown, earning her the nickname of \"the Mother of Beale Street.",
+    "activeFrom": "1929",
+    "influences": [],
+    "influencedBy": [
+      "ma-rainey"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Mae_Glover",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-20"
+  },
+  {
+    "id": "virgil-childers",
+    "name": "Virgil Childers",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1901",
+    "birthPlace": "Blacksburg",
+    "birthCoords": [
+      -81.5121,
+      35.1676
+    ],
+    "deathDate": "1939-12-10",
+    "deathPlace": "Shelby",
+    "deathCoords": [
+      -81.5362,
+      35.2921
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=y_UqQL-ZxNQ",
+    "albums": [],
+    "description": "Virgil Childers (c.  1901 – December 10, 1939) was an American blues musician, who hailed from South Carolina, United States.",
+    "activeFrom": "1938",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Virgil_Childers",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-20"
+  },
+  {
+    "id": "george-wild-child-butler",
+    "name": "George \"Wild Child\" Butler",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1936-10-01",
+    "birthPlace": "Autaugaville",
+    "birthCoords": [
+      -86.65337,
+      32.43241
+    ],
+    "deathDate": "2005-03-01",
+    "deathPlace": "Windsor",
+    "deathCoords": [
+      -83.03526,
+      42.31729
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Open Up Baby (1966)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "George \"Wild Child\" Butler (October 1, 1936 – March 1, 2005) was an American blues harmonica player, and vocalist.",
+    "activeFrom": "1956",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "willie-dixon",
+      "jimmy-dawkins",
+      "cash-mccall"
+    ],
+    "source": "https://en.wikipedia.org/wiki/George_%22Wild_Child%22_Butler",
+    "secondaryInstruments": [
+      "Harmonica",
+      "Vocals"
+    ],
+    "createdAt": "2026-10-20"
   }
 ]
