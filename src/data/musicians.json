@@ -4866,7 +4866,8 @@
       "larry-johnson",
       "sugar-blue",
       "tarheel-slim",
-      "ralph-willis"
+      "ralph-willis",
+      "stick-mcghee"
     ],
     "source": "https://en.wikipedia.org/wiki/Brownie_McGhee",
     "secondaryInstruments": [
@@ -13080,7 +13081,8 @@
       "pat-hare",
       "tommy-bankhead",
       "doc-terry",
-      "willie-johnson"
+      "willie-johnson",
+      "billy-davenport"
     ],
     "source": "https://en.wikipedia.org/wiki/Howlin'_Wolf",
     "secondaryInstruments": [
@@ -25040,7 +25042,8 @@
       "willie-johnson",
       "mac-arnold",
       "anthony-geraci",
-      "jerry-portnoy"
+      "jerry-portnoy",
+      "billy-davenport"
     ],
     "source": "https://en.wikipedia.org/wiki/Muddy_Waters",
     "secondaryInstruments": [
@@ -25565,7 +25568,8 @@
       "billy-gayles",
       "anthony-geraci",
       "marty-sammon",
-      "david-gogo"
+      "david-gogo",
+      "billy-davenport"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Rush",
     "secondaryInstruments": [
@@ -34486,7 +34490,8 @@
       "leonard-baby-doo-caston",
       "sugar-blue",
       "cash-mccall",
-      "george-wild-child-butler"
+      "george-wild-child-butler",
+      "billy-davenport"
     ],
     "source": "https://en.wikipedia.org/wiki/Willie_Dixon",
     "secondaryInstruments": [
@@ -61650,5 +61655,300 @@
       "Vocals"
     ],
     "createdAt": "2026-10-20"
+  },
+  {
+    "id": "stick-mcghee",
+    "name": "Stick McGhee",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Grave_of_Granville_Henry_McGhee.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1917-03-23",
+    "birthPlace": "Knoxville",
+    "birthCoords": [
+      -83.92333333333333,
+      35.961666666666666
+    ],
+    "deathDate": "1961-08-15",
+    "deathPlace": "The Bronx",
+    "deathCoords": [
+      -73.87333333333333,
+      40.846666666666664
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=6_W6maKht_I",
+    "albums": [
+      {
+        "name": "Sticks McGhee, Volume 1: 1947-1951 (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=G-q35X_WQH4"
+      },
+      {
+        "name": "Sticks McGhee, Volume 2: 1951-1960, and the Complete Recorded Works of John Hogg, Stormy Herman, Square Walton and Levi Seabury (1997)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9FyLTH4NR8U"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Sticks McGhee 1947-1951 (2001)",
+        "youtubeLink": "https://www.youtube.com/watch?v=R-RSgRrp-Rw"
+      },
+      {
+        "name": "Blues & Rhythm Series: The Chronological Sticks McGhee 1951-1959 (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9FyLTH4NR8U"
+      },
+      {
+        "name": "New York Blues and R&B 1947–1955 (2007)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9FyLTH4NR8U"
+      }
+    ],
+    "description": "Granville Henry \"Stick\" McGhee (March 23, 1918 – August 15, 1961) was an American jump blues guitarist, singer and songwriter, best known for his blues song \"Drinkin' Wine, Spo-Dee-O-Dee\", which he wrote with J. Mayo Williams.",
+    "activeFrom": "1947",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "brownie-mcghee"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Stick_McGhee",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-21"
+  },
+  {
+    "id": "rabbit-brown",
+    "name": "Rabbit Brown",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1880",
+    "birthPlace": "New Orleans",
+    "birthCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "deathDate": "1937",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=MKHkG0GxA0E",
+    "albums": [
+      {
+        "name": "The Greatest Songsters: Complete Recorded Works in Chronological Order, 1927-1929 (1990)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Richard \"Rabbit\" Brown (c. 1880—1937) was an American blues guitarist and composer. His music has been characterized as a mixture of blues, pop songs, and original topical ballads.",
+    "activeFrom": "1910",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Rabbit_Brown",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-21"
+  },
+  {
+    "id": "roosevelt-grey-ghost-williams",
+    "name": "Roosevelt \"Grey Ghost\" Williams",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1903-12-07",
+    "birthPlace": "Bastrop, Texas",
+    "birthCoords": [
+      -97.316944444444,
+      30.111944444444
+    ],
+    "deathDate": "1996-07-17",
+    "deathPlace": "Austin, Texas",
+    "deathCoords": [
+      -97.733333333333,
+      30.3
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "",
+    "albums": [],
+    "description": "Roosevelt Thomas \"Grey Ghost\" Williams was an American blues pianist whose career spanned 70 years, from the 1920s through the 1990s. He was part of the \"Santa Fe Group\", a loose circle of Black barrelhouse pianists who played the juke joints along the Atchison, Topeka and Santa Fe Railway in Texas, and he recorded the album Grey Ghost late in life after being rediscovered.",
+    "activeFrom": "1920",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Roosevelt_Williams",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-21"
+  },
+  {
+    "id": "ironing-board-sam",
+    "name": "Ironing Board Sam",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1939-07-17",
+    "birthPlace": "Rock Hill",
+    "birthCoords": [
+      -81.026111111111,
+      34.938055555556
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Keyboard instrument",
+    "bluesStyle": "Memphis Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=9FWyOor_oZQ",
+    "albums": [
+      {
+        "name": "Human Touch (1996)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Samuel Moore (born July 17, 1939), who performs and records as Ironing Board Sam, is an American electric blues keyboardist, singer and songwriter, who has released a small number of singles and albums. His musical career, despite several low points, has spanned over fifty years, and he released a new album in 2012. \"I'll tell you one thing, it's the blues,\" he stated.",
+    "activeFrom": "1959",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Ironing_Board_Sam",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-21"
+  },
+  {
+    "id": "herman-e-johnson",
+    "name": "Herman E. Johnson",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1909-08-18",
+    "birthPlace": "Zachary",
+    "birthCoords": [
+      -91.1567,
+      30.655
+    ],
+    "deathDate": "1975-02-02",
+    "deathPlace": "Zachary",
+    "deathCoords": [
+      -91.1567,
+      30.655
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=xLNiMAHenNQ",
+    "albums": [
+      {
+        "name": "Louisiana Country Blues (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=gyh6vfti9PU"
+      }
+    ],
+    "description": "Herman E. Johnson (born August 18, 1909 – February 2, 1975) was an American country blues guitarist. He was recorded by folklorist Harry Oster in Louisiana, in 1961.",
+    "activeFrom": "1930",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Herman_E._Johnson",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-21"
+  },
+  {
+    "id": "billy-davenport",
+    "name": "Billy Davenport",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1931-04-23",
+    "birthPlace": "Chicago",
+    "birthCoords": [
+      -87.62777777777778,
+      41.88194444444444
+    ],
+    "deathDate": "1999-12-24",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Drums",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "",
+    "albums": [],
+    "description": "Billy Davenport was an American blues drummer from Chicago best known for his work backing Howlin' Wolf, Otis Rush, Muddy Waters and Willie Dixon in the city's electric blues clubs during the 1950s and 1960s. He later joined the Paul Butterfield Blues Band, playing drums on their influential 1966 album East-West.",
+    "activeFrom": "1951",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "howlin-wolf",
+      "otis-rush",
+      "muddy-waters",
+      "willie-dixon"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Billy_Davenport",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-21"
+  },
+  {
+    "id": "king-biscuit-boy",
+    "name": "King Biscuit Boy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/King_Biscuit_Boy.png/500px-King_Biscuit_Boy.png",
+    "image_source": "https://commons.wikimedia.org/wiki/File:King_Biscuit_Boy.png",
+    "birthDate": "1944-03-09",
+    "birthPlace": "Hamilton",
+    "birthCoords": [
+      -79.869166666667,
+      43.256666666667
+    ],
+    "deathDate": "2003-01-05",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Harmonica",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=sw140shzL_E",
+    "albums": [
+      {
+        "name": "Badly Bent: The Best of King Biscuit Boy (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=ax4nOW7WFRA"
+      }
+    ],
+    "description": "Richard Alfred Newell (March 9, 1944 – January 5, 2003), better known by his stage name, King Biscuit Boy, was a Canadian blues musician. He was the first Canadian blues artist to chart on the Billboard Hot 100 in the U.S.",
+    "activeFrom": "1961",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/King_Biscuit_Boy",
+    "secondaryInstruments": [
+      "Guitar",
+      "Vocals"
+    ],
+    "createdAt": "2026-10-21"
   }
 ]
