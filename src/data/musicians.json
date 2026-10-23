@@ -2534,7 +2534,8 @@
     "influences": [
       "gus-cannon",
       "eddie-cleanhead-vinson",
-      "jimmy-nelson"
+      "jimmy-nelson",
+      "doc-pomus"
     ],
     "influencedBy": [],
     "incomplete": false,
@@ -8131,7 +8132,8 @@
       "deacon-john",
       "jessie-hill",
       "danny-white",
-      "terrance-simien"
+      "terrance-simien",
+      "coco-robicheaux"
     ],
     "source": "https://en.wikipedia.org/wiki/Dr._John",
     "secondaryInstruments": [
@@ -27510,7 +27512,8 @@
       "jimmy-mccracklin",
       "larry-johnson",
       "wizz-jones",
-      "guitar-gabriel"
+      "guitar-gabriel",
+      "dave-van-ronk"
     ],
     "influencedBy": [
       "blind-blake",
@@ -61950,5 +61953,250 @@
       "Vocals"
     ],
     "createdAt": "2026-10-21"
+  },
+  {
+    "id": "doc-pomus",
+    "name": "Doc Pomus",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doc%20Pomus%201947%20(cropped).jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Doc%20Pomus%201947%20(cropped).jpg?width=500",
+    "birthDate": "1925-06-27",
+    "birthPlace": "Brooklyn",
+    "birthCoords": [
+      -73.94972222222222,
+      40.65083333333333
+    ],
+    "deathDate": "1991-03-14",
+    "deathPlace": "New York City",
+    "deathCoords": [
+      -74.00611111111111,
+      40.71277777777778
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "Jackson",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=m2BVK0itNnQ",
+    "albums": [
+      {
+        "name": "Blues In The Red (2006)",
+        "youtubeLink": "https://www.youtube.com/watch?v=VcXEKld1uMg"
+      },
+      {
+        "name": "You Can't Hip a Square: The Doc Pomus Songwriting Demos (2025)",
+        "youtubeLink": "https://www.youtube.com/watch?v=mxG2GeBUZm8"
+      }
+    ],
+    "description": "Jerome Solon Felder (June 27, 1925 – March 14, 1991), known professionally as Doc Pomus, was an American blues singer and songwriter.  He is best known as the co-writer of many rock and roll hits.  Pomus was inducted into the Rock and Roll Hall of Fame as a non-performer in 1992, the Songwriters Hall of Fame (1992), and the Blues Hall of Fame (2012).",
+    "activeFrom": "1944",
+    "influences": [],
+    "influencedBy": [
+      "big-joe-turner"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Doc_Pomus",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-23"
+  },
+  {
+    "id": "dave-van-ronk",
+    "name": "Dave Van Ronk",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dave%20Van%20Ronk.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/Dave%20Van%20Ronk.jpg?width=500",
+    "birthDate": "1936-06-30",
+    "birthPlace": "Brooklyn",
+    "birthCoords": [
+      -73.94972222222222,
+      40.65083333333333
+    ],
+    "deathDate": "2002-02-10",
+    "deathPlace": "Manhattan",
+    "deathCoords": [
+      -73.994166666667,
+      40.728333333333
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      },
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      {
+        "place": "St. Louis",
+        "coords": [
+          -90.1994,
+          38.627
+        ]
+      },
+      {
+        "place": "Atlanta",
+        "coords": [
+          -84.388,
+          33.749
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=56qo9sinSdc",
+    "albums": [
+      {
+        "name": "Inside Dave Van Ronk (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=GSbhxN0_Qbs"
+      },
+      {
+        "name": "The Folkways Years 1959-61 (1991)",
+        "youtubeLink": "https://www.youtube.com/watch?v=sSHvXOHGC7o"
+      },
+      {
+        "name": "A Chrestomathy (1992)",
+        "youtubeLink": "https://www.youtube.com/watch?v=PinASXndL6k"
+      },
+      {
+        "name": "Two Sides of Dave Van Ronk (2002)",
+        "youtubeLink": "https://www.youtube.com/watch?v=H3z7NxFbZzA"
+      },
+      {
+        "name": "The Mayor of MacDougal Street: Rarities 1957-1969 (2005)",
+        "youtubeLink": "https://www.youtube.com/watch?v=sSHvXOHGC7o"
+      },
+      {
+        "name": "Sings Ballads, Blues, And A Spiritual 1959-'61 (2010)",
+        "youtubeLink": "https://www.youtube.com/watch?v=sSHvXOHGC7o"
+      }
+    ],
+    "description": "David Kenneth Ritz Van Ronk (June 30, 1936 – February 10, 2002) was an American folk singer.  An important figure in the American folk music revival and New York City's Greenwich Village scene in the 1960s, he was nicknamed the \"Mayor of MacDougal Street\". \nVan Ronk's work ranged from old English ballads to blues, gospel, rock, New Orleans jazz, and swing.",
+    "activeFrom": "1959",
+    "influences": [],
+    "influencedBy": [
+      "reverend-gary-davis"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Dave_Van_Ronk",
+    "secondaryInstruments": [
+      "Vocals",
+      "Piano"
+    ],
+    "createdAt": "2026-10-23"
+  },
+  {
+    "id": "coco-robicheaux",
+    "name": "Coco Robicheaux",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Coco_Tribute_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Coco_Tribute_2013.jpg",
+    "birthDate": "1947-10-25",
+    "birthPlace": "Merced",
+    "birthCoords": [
+      -120.48305555556,
+      37.302222222222
+    ],
+    "deathDate": "2011-11-25",
+    "deathPlace": "New Orleans",
+    "deathCoords": [
+      -90.07833333333333,
+      29.976111111111113
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "New Orleans Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=K-eIRmuX4TA",
+    "albums": [
+      {
+        "name": "Spiritland (1994)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Curtis John Arceneaux (October 25, 1947 – November 25, 2011) better known by the name Coco Robicheaux, was an American blues musician from Ascension Parish, Louisiana, United States. \nHe was born in Merced, California, United States, the son of Herman Arceneaux from Ascension Parish, Louisiana and Virginia Grant of Waushara County, Wisconsin.   His father was of Acadian (Cajun) descent, while on his mother's side his ancestry included English, Norwegian, Scottish, German, Dutch, Welsh, and Native American (Mohawk).",
+    "activeFrom": "1994",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "dr-john"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Coco_Robicheaux",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-23"
+  },
+  {
+    "id": "rob-hoeke",
+    "name": "Rob Hoeke",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/RobHoeke.jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/Special:FilePath/RobHoeke.jpg?width=500",
+    "birthDate": "1939-01-09",
+    "birthPlace": "Haarlem",
+    "birthCoords": [
+      4.635555555555555,
+      52.381388888888885
+    ],
+    "deathDate": "1999-11-06",
+    "deathPlace": "Krommenie",
+    "deathCoords": [
+      4.7666666666667,
+      52.5
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=QBaXJoxyneg",
+    "albums": [
+      {
+        "name": "25 Years Rhythm & Blues and Boogie Woogie (1989)",
+        "youtubeLink": "https://www.youtube.com/watch?v=rqU26qPnSUg"
+      },
+      {
+        "name": "Margio (1998)",
+        "youtubeLink": "https://www.youtube.com/watch?v=jddrBP7Wx9M"
+      },
+      {
+        "name": "The Golden Years of Dutch Pop Music (A&B Sides 1963-1979) (2016)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Rob Hoeke (9 January 1939 – 6 November 1999) was a Dutch singer, pianist, composer and songwriter most famous for his renditions in the field of Boogie-woogie releasing over 20 albums.  Besides that he played and recorded in a musical variety of styles ranging from Blues, Soul, Rock and Rhythm & Blues.",
+    "activeFrom": "1957",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Rob_Hoeke",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-23"
   }
 ]
