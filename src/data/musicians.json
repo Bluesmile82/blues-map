@@ -3347,7 +3347,8 @@
     "incomplete": false,
     "playedWith": [
       "charlie-spand",
-      "will-ezell"
+      "will-ezell",
+      "too-tight-henry"
     ],
     "source": "https://en.wikipedia.org/wiki/Blind_Blake",
     "secondaryInstruments": [
@@ -3579,7 +3580,8 @@
     "playedWith": [
       "lead-belly",
       "t-bone-walker",
-      "elzadie-robinson"
+      "elzadie-robinson",
+      "too-tight-henry"
     ],
     "source": "https://en.wikipedia.org/wiki/Blind_Lemon_Jefferson",
     "secondaryInstruments": [
@@ -11538,7 +11540,8 @@
       "otis-spann",
       "t-bone-walker",
       "big-joe-turner",
-      "doug-macleod"
+      "doug-macleod",
+      "harmonica-fats"
     ],
     "source": "https://en.wikipedia.org/wiki/George_\"Harmonica\"_Smith",
     "secondaryInstruments": [],
@@ -12474,7 +12477,8 @@
       "t-bone-walker",
       "pee-wee-crayton",
       "ray-charles",
-      "lowell-fulson"
+      "lowell-fulson",
+      "harmonica-fats"
     ],
     "source": "https://en.wikipedia.org/wiki/Harmonica_Slim",
     "secondaryInstruments": [
@@ -31478,7 +31482,9 @@
     ],
     "description": "Saunders Terrell (October 24, 1911 – March 11, 1986), known as Sonny Terry, was an American Piedmont blues and folk musician, who was known for his energetic blues harmonica style, which frequently included vocal whoops and hollers and occasionally imitations of trains and fox hunts.",
     "activeFrom": "1930",
-    "influences": [],
+    "influences": [
+      "harmonica-fats"
+    ],
     "influencedBy": [
       "blind-boy-fuller",
       "sonny-boy-williamson-i"
@@ -36907,7 +36913,8 @@
     "incomplete": false,
     "playedWith": [
       "kansas-joe-mccoy",
-      "memphis-minnie"
+      "memphis-minnie",
+      "too-tight-henry"
     ],
     "source": "https://en.wikipedia.org/wiki/Jug_band",
     "createdAt": "2026-09-03"
@@ -57298,7 +57305,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "mary-h-bradford"
+    ],
     "source": "https://en.wikipedia.org/wiki/Ada_Brown_(singer)",
     "secondaryInstruments": [
       "Piano"
@@ -62198,5 +62207,176 @@
       "Vocals"
     ],
     "createdAt": "2026-10-23"
+  },
+  {
+    "id": "mary-h-bradford",
+    "name": "Mary H. Bradford",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Bennie_Moten%27s_Kansas_City_Orchestra%2C_1923.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "",
+    "birthCoords": [
+      0,
+      0
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Kansas City",
+        "coords": [
+          -94.5786,
+          39.0997
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Kansas City Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=brVDnBx46I0",
+    "albums": [],
+    "description": "Mary H.  Bradford (or Auntie Mary Bradford) was an American blues singer, songwriter, composer, and lyricist.  She performed and recorded with Bennie Moten, Ada Brown, and Bennie Moten's Kansas City Orchestra.",
+    "activeFrom": "1923",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "ada-brown"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Mary_H._Bradford",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-24"
+  },
+  {
+    "id": "harmonica-fats",
+    "name": "Harmonica Fats",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1927-09-08",
+    "birthPlace": "McDade, Bossier Parish, Louisiana",
+    "birthCoords": [
+      -93.7321,
+      32.5151
+    ],
+    "deathDate": "2000-01-03",
+    "deathPlace": "Los Angeles, California",
+    "deathCoords": [
+      -118.2437,
+      34.0522
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Harmonica",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=wbOzaZ0VwjE",
+    "albums": [],
+    "description": "Harmonica Fats (born Harvey Blackston, September 8, 1927 – January 3, 2000) was an American blues harmonica player who was active in the 1950s through to the 1990s.  Fats first achieved success with his cover version of the Hank Ballard song \"Tore Up\" in 1962, which established him as an in-demand session and touring musician.  He is also remembered for his collaboration with blues guitarist Bernie Pearl, a partnership that resulted in four albums.",
+    "activeFrom": "1954",
+    "influences": [],
+    "influencedBy": [
+      "sonny-terry"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "george-harmonica-smith",
+      "harmonica-slim"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Harmonica_Fats",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-24"
+  },
+  {
+    "id": "too-tight-henry",
+    "name": "Too Tight Henry",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1897-06-05",
+    "birthPlace": "Georgia, United States",
+    "birthCoords": [
+      -83.6,
+      32.9
+    ],
+    "deathDate": "1971-08-16",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "",
+    "albums": [],
+    "description": "Too Tight Henry, born Henry Lee Castle (June 5, 1897 or 1899 – August 16, 1971), was an American blues musician who recorded four songs for Columbia Records and Brunswick Records in 1928 and 1930.",
+    "activeFrom": "1928",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "blind-blake",
+      "blind-lemon-jefferson",
+      "jed-davenport"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Too_Tight_Henry",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-24"
+  },
+  {
+    "id": "paul-geremia",
+    "name": "Paul Geremia",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/PaulGermia.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1944-04-21",
+    "birthPlace": "Providence",
+    "birthCoords": [
+      -71.41283,
+      41.82399
+    ],
+    "deathDate": "2026-03-14",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=lZB9IOBAIwA",
+    "albums": [
+      {
+        "name": "I Really Don’t Mind Livin’ / My Kinda Place (1996)",
+        "youtubeLink": "https://www.youtube.com/watch?v=wXelyQ1y6Jc"
+      },
+      {
+        "name": "Love My Stuff (2011)",
+        "youtubeLink": "https://www.youtube.com/watch?v=cbeqNlF1dCY"
+      }
+    ],
+    "description": "Paul Geremia (April 21, 1944 – March 14, 2026) was an American blues singer and acoustic guitarist. \nGeremia, who was of Italian heritage, was born in Providence, Rhode Island, United States.  He recorded his first album in 1968, having been significantly influenced by both the rural blues tradition and the folk music revival of the 1960s.",
+    "activeFrom": "1966",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Paul_Geremia",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-24"
   }
 ]
