@@ -31097,7 +31097,8 @@
       "alvin-youngblood-hart"
     ],
     "influencedBy": [
-      "charley-patton"
+      "charley-patton",
+      "rubin-lacey"
     ],
     "incomplete": false,
     "playedWith": [
@@ -32093,7 +32094,8 @@
       "muddy-waters",
       "mel-brown",
       "jack-mcvea",
-      "lloyd-glenn"
+      "lloyd-glenn",
+      "coley-jones"
     ],
     "source": "https://en.wikipedia.org/wiki/T-Bone_Walker",
     "secondaryInstruments": [
@@ -62378,5 +62380,289 @@
       "Vocals"
     ],
     "createdAt": "2026-10-24"
+  },
+  {
+    "id": "rubin-lacey",
+    "name": "Rubin Lacey",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1901-01-02",
+    "birthPlace": "Pelahatchie, Mississippi",
+    "birthCoords": [
+      -89.8098,
+      32.2924
+    ],
+    "deathDate": "1969-11-14",
+    "deathPlace": "Corcoran, California",
+    "deathCoords": [
+      -119.5604,
+      36.0977
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Jackson, Mississippi",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      },
+      {
+        "place": "Lancaster, California",
+        "coords": [
+          -118.1542,
+          34.6868
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "",
+    "albums": [],
+    "description": "Rubin Lacey was a Mississippi country blues guitarist and singer who became one of the most popular blues performers around Jackson, Mississippi, in the late 1920s. His distinctive bottleneck slide style directly influenced Son House. He recorded two sides for Paramount Records in 1928 before giving up the blues in the early 1930s to become a Baptist preacher.",
+    "activeFrom": "1927",
+    "influences": [
+      "son-house"
+    ],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Rubin_Lacey",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-25"
+  },
+  {
+    "id": "roosevelt-antrim",
+    "name": "Roosevelt Antrim",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1903",
+    "birthPlace": "Hodges, South Carolina",
+    "birthCoords": [
+      -82.1543,
+      34.2804
+    ],
+    "deathDate": "1948-05-21",
+    "deathPlace": "Charlotte, North Carolina",
+    "deathCoords": [
+      -80.8431,
+      35.2271
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Charlotte",
+        "coords": [
+          -80.8431,
+          35.2271
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=WK74i3rMld0",
+    "albums": [],
+    "description": "Roosevelt Antrim was a South Carolina-born blues singer about whom little is known beyond a single 1937 session for Bluebird Records in Charlotte, North Carolina. The four songs he cut there, three twelve-bar blues and one in the Piedmont blues idiom, make up his entire surviving recorded legacy. He died in Charlotte in 1948.",
+    "activeFrom": "1937",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Roosevelt_Antrim",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-25"
+  },
+  {
+    "id": "coley-jones",
+    "name": "Coley Jones",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1885",
+    "birthPlace": "Dallas, Texas",
+    "birthCoords": [
+      -96.797,
+      32.7767
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      },
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Mandolin",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=hq4ATjxSfNc",
+    "albums": [
+      {
+        "name": "Coley Jones and The Dallas String Band 1927-29 (Matchbox Bluesmaster Series, 1983)",
+        "youtubeLink": "https://www.youtube.com/watch?v=hq4ATjxSfNc"
+      }
+    ],
+    "description": "Coley Jones was a country blues mandolin player and leader of the Dallas String Band, one of the most influential Texas string bands of the 1920s. The group recorded for Columbia Records between 1927 and 1929, blending blues, ragtime, and folk material, and its ranks later included a young T-Bone Walker. Jones's version of \"Drunkard's Special\" was later anthologized on Harry Smith's Anthology of American Folk Music.",
+    "activeFrom": "1927",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "t-bone-walker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Coley_Jones",
+    "secondaryInstruments": [
+      "Guitar",
+      "Vocals"
+    ],
+    "createdAt": "2026-10-25"
+  },
+  {
+    "id": "johnny-williams",
+    "name": "Johnny Williams",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1906-05-15",
+    "birthPlace": "Alexandria, Louisiana",
+    "birthCoords": [
+      -92.4451,
+      31.3113
+    ],
+    "deathDate": "2006-03-06",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "",
+    "albums": [],
+    "description": "Johnny Williams was a Chicago blues guitarist and singer, known as \"Uncle Johnny,\" who learned to play in the Mississippi Delta before moving to Chicago in 1938. He was among the first postwar performers to record electric blues, cutting sides from 1947 into the early 1950s while working day jobs in the city's meatpacking industry. He left secular music in 1959 after a religious conversion and spent the rest of his long life as a Baptist deacon.",
+    "activeFrom": "1930",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Johnny_Williams_(blues_musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-25"
+  },
+  {
+    "id": "finis-tasby",
+    "name": "Finis Tasby",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Finis-Tasby-2008-San-Francisco-Blues.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1939-02-01",
+    "birthPlace": "Nevada, Texas",
+    "birthCoords": [
+      -96.2886,
+      33.0362
+    ],
+    "deathDate": "2014-11-02",
+    "deathPlace": "Orange, California",
+    "deathCoords": [
+      -117.8531,
+      33.7879
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Dallas, Texas",
+        "coords": [
+          -96.797,
+          32.7767
+        ]
+      },
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "",
+    "albums": [],
+    "description": "Finis Tasby was a Texas-born, Los Angeles-based blues singer who got his start as bassist for the Thunderbirds, the Dallas house band that backed Z.Z. Hill, Lowell Fulson, and other touring blues stars in the 1960s. After relocating to Los Angeles in 1973 he built a career as a solo vocalist, recording for Ace Records and other labels. In the 2000s he became the frontman for the acclaimed West Coast blues revue band the Mannish Boys.",
+    "activeFrom": "1958",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Finis_Tasby",
+    "secondaryInstruments": [
+      "Bass guitar",
+      "Drums"
+    ],
+    "createdAt": "2026-10-25"
+  },
+  {
+    "id": "cortelia-clark",
+    "name": "Cortelia Clark",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1906",
+    "birthPlace": "Chicago, Illinois",
+    "birthCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "deathDate": "1969-12-24",
+    "deathPlace": "Nashville, Tennessee",
+    "deathCoords": [
+      -86.7816,
+      36.1627
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Nashville, Tennessee",
+        "coords": [
+          -86.7816,
+          36.1627
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=1NyuDuQsLEc",
+    "albums": [
+      {
+        "name": "Blues in the Street (RCA Victor, 1966)",
+        "youtubeLink": ""
+      }
+    ],
+    "description": "Cortelia Clark was a blind blues singer and guitarist who busked on the streets of Nashville, Tennessee, through the 1950s and 1960s. His only album, Blues in the Street, was recorded live on the sidewalk and won the Grammy Award for Best Folk Recording in 1966. He died in a house fire in Nashville in 1969.",
+    "activeFrom": "1955",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Cortelia_Clark",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-25"
   }
 ]
