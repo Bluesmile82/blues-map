@@ -321,7 +321,8 @@
       "coco-montoya",
       "mel-brown",
       "trudy-lynn",
-      "dave-alexander"
+      "dave-alexander",
+      "back-alley-john"
     ],
     "source": "https://en.wikipedia.org/wiki/Albert_Collins",
     "secondaryInstruments": [
@@ -2329,6 +2330,7 @@
       "georgia-white",
       "big-boy-teddy-edwards",
       "jimmie-gordon",
+      "brother-john-sellers",
       "howard-armstrong"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Bill_Broonzy",
@@ -4870,7 +4872,8 @@
       "sugar-blue",
       "tarheel-slim",
       "ralph-willis",
-      "stick-mcghee"
+      "stick-mcghee",
+      "leroy-dallas"
     ],
     "source": "https://en.wikipedia.org/wiki/Brownie_McGhee",
     "secondaryInstruments": [
@@ -16135,7 +16138,9 @@
       "robert-johnson"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "back-alley-john"
+    ],
     "source": "https://en.wikipedia.org/wiki/John_Hammond_(musician)",
     "secondaryInstruments": [
       "Harmonica",
@@ -35277,7 +35282,8 @@
       "aretha-franklin",
       "mavis-staples",
       "otis-clay",
-      "linda-hopkins"
+      "linda-hopkins",
+      "brother-john-sellers"
     ],
     "influencedBy": [
       "bessie-smith",
@@ -44283,7 +44289,8 @@
       "jimmie-vaughan",
       "duke-robillard",
       "anson-funderburgh",
-      "the-fabulous-thunderbirds"
+      "the-fabulous-thunderbirds",
+      "back-alley-john"
     ],
     "source": "https://en.wikipedia.org/wiki/Kim_Wilson",
     "secondaryInstruments": [
@@ -62664,5 +62671,275 @@
       "Vocals"
     ],
     "createdAt": "2026-10-25"
+  },
+  {
+    "id": "willie-lofton",
+    "name": "Willie Lofton",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/fb/Willie_Lofton.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_source": null,
+    "birthDate": "1905",
+    "birthPlace": "Florence, Mississippi",
+    "birthCoords": [
+      -90.1219,
+      32.1539
+    ],
+    "deathDate": "1962",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Mississippi",
+        "coords": [
+          -89.3985,
+          32.3547
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Delta Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=rpP2xsWb0cM",
+    "albums": [
+      {
+        "name": "Dark Road Blues (Decca, 1934)",
+        "youtubeLink": "https://www.youtube.com/watch?v=rpP2xsWb0cM"
+      }
+    ],
+    "description": "Willie \"Poor Boy\" Lofton (January 1897 – 1956 or c.  1962) was an American Delta blues singer-guitarist.  He recorded eight sides for Decca Records and Bluebird Records, adopting a style strikingly similar to Tommy Johnson's.",
+    "activeFrom": "1925",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Willie_Lofton",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-26"
+  },
+  {
+    "id": "leroy-dallas",
+    "name": "Leroy Dallas",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1909-12-24",
+    "birthPlace": "Mobile, Alabama",
+    "birthCoords": [
+      -88.0399,
+      30.6954
+    ],
+    "deathDate": "1967-09",
+    "deathPlace": "Brooklyn, New York",
+    "deathCoords": [
+      -73.9442,
+      40.6782
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Knoxville, Tennessee",
+        "coords": [
+          -83.9207,
+          35.9606
+        ]
+      },
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=W0hPWCBei5A",
+    "albums": [
+      {
+        "name": "Your Sweet Man's Blues (Sittin' In With, 1949)",
+        "youtubeLink": "https://www.youtube.com/watch?v=W0hPWCBei5A"
+      }
+    ],
+    "description": "Leroy Dallas (December 24, 1909 – September, 1967) was an American blues guitarist, singer and songwriter.  Amongst his more notable numbers were \"Good Morning Blues\" and \"Jump Little Children, Jump\" (both 1948).  He performed with Brownie McGhee and with Frank Edwards and recorded eight tracks in his own name between 1948 and 1962.",
+    "activeFrom": "1937",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "brownie-mcghee"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Leroy_Dallas",
+    "secondaryInstruments": [
+      "Vocals",
+      "Washboard"
+    ],
+    "createdAt": "2026-10-26"
+  },
+  {
+    "id": "elder-charles-beck",
+    "name": "Elder Charles Beck",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1900",
+    "birthPlace": "Mobile, Alabama",
+    "birthCoords": [
+      -88.052672222222,
+      30.727669444444
+    ],
+    "deathDate": "1972",
+    "deathPlace": "Ghana",
+    "deathCoords": [
+      -0.187,
+      5.6037
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Memphis, Tennessee",
+        "coords": [
+          -90.049,
+          35.1495
+        ]
+      },
+      {
+        "place": "Jackson, Mississippi",
+        "coords": [
+          -90.1848,
+          32.2988
+        ]
+      },
+      {
+        "place": "Buffalo, New York",
+        "coords": [
+          -78.8784,
+          42.8864
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=Jdl3aEu5yr8",
+    "albums": [
+      {
+        "name": "Urban Holiness Service (1957)",
+        "youtubeLink": "https://www.youtube.com/watch?v=Jdl3aEu5yr8"
+      }
+    ],
+    "description": "Elder Charles Beck (ca.  1900–1972) was an American gospel musician and evangelist.  A seminal figure in the formative years of modern African-American gospel music, he is responsible for an extensive recording discography, which included over 60 songs over the span of two decades.",
+    "activeFrom": "1930",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Elder_Charles_D._Beck",
+    "secondaryInstruments": [
+      "Trumpet"
+    ],
+    "createdAt": "2026-10-26"
+  },
+  {
+    "id": "brother-john-sellers",
+    "name": "Brother John Sellers",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1924-05-27",
+    "birthPlace": "Clarksdale, Mississippi",
+    "birthCoords": [
+      -90.57022222222223,
+      34.20063888888889
+    ],
+    "deathDate": "1999-03-27",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago, Illinois",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      {
+        "place": "New York, New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Gospel",
+    "youtubeLink": "https://www.youtube.com/watch?v=z6_tGbYTqnE",
+    "albums": [
+      {
+        "name": "Brother John Sellers (Vanguard, 1954)",
+        "youtubeLink": "https://www.youtube.com/watch?v=z6_tGbYTqnE"
+      }
+    ],
+    "description": "Brother John Sellers (May 27, 1924, Clarksdale, Mississippi, United States – March 27, 1999, Manhattan) was an American gospel and folk singer. \nSellers played in gospel tent shows while young.  He was discovered by Mahalia Jackson, who brought him to Chicago in the 1930s to perform with her.",
+    "activeFrom": "1935",
+    "influences": [],
+    "influencedBy": [
+      "mahalia-jackson"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "big-bill-broonzy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Brother_John_Sellers",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-26"
+  },
+  {
+    "id": "back-alley-john",
+    "name": "Back Alley John",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Back_Alley_John_and_Drew_Nelson_1983_3.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": null,
+    "birthDate": "1955-02-10",
+    "birthPlace": "Ottawa, Ontario",
+    "birthCoords": [
+      -75.6972,
+      45.4215
+    ],
+    "deathDate": "2006-06-22",
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Venice, California",
+        "coords": [
+          -118.4695,
+          33.985
+        ]
+      },
+      {
+        "place": "Ottawa, Ontario",
+        "coords": [
+          -75.6972,
+          45.4215
+        ]
+      }
+    ],
+    "instrument": "Harmonica",
+    "bluesStyle": "Contemporary Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=RWLzE4Qqvx4",
+    "albums": [],
+    "description": "John Carl David Wilson (February 10, 1955 – June 22, 2006), known as Back Alley John, was a Canadian blues singer, songwriter and harmonica player.",
+    "activeFrom": "1969",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "kim-wilson",
+      "john-hammond",
+      "albert-collins"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Back_Alley_John",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-26"
   }
 ]
