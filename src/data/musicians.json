@@ -2010,7 +2010,8 @@
       "mac-arnold",
       "anthony-geraci",
       "david-gogo",
-      "calvin-owens"
+      "calvin-owens",
+      "willie-weepin-robinson"
     ],
     "source": "https://en.wikipedia.org/wiki/B._B._King",
     "secondaryInstruments": [
@@ -4512,7 +4513,8 @@
       "bb-king",
       "stevie-ray-vaughan",
       "mississippi-fred-mcdowell",
-      "ruth-brown"
+      "ruth-brown",
+      "willie-weepin-robinson"
     ],
     "source": "https://en.wikipedia.org/wiki/Bonnie_Raitt",
     "secondaryInstruments": [
@@ -8385,7 +8387,8 @@
     "playedWith": [
       "johnny-winter",
       "eric-clapton",
-      "otis-rush"
+      "otis-rush",
+      "johnny-jenkins"
     ],
     "source": "https://en.wikipedia.org/wiki/Duane_Allman",
     "secondaryInstruments": [
@@ -14823,7 +14826,8 @@
       "t-bone-walker",
       "van-morrison",
       "robert-petway",
-      "lonnie-mack"
+      "lonnie-mack",
+      "johnny-jenkins"
     ],
     "incomplete": false,
     "playedWith": [],
@@ -25485,7 +25489,8 @@
     ],
     "incomplete": false,
     "playedWith": [
-      "barbara-lynn"
+      "barbara-lynn",
+      "johnny-jenkins"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Redding",
     "secondaryInstruments": [],
@@ -31963,7 +31968,8 @@
       "buddy-guy",
       "john-lee-hooker",
       "bonnie-raitt",
-      "johnny-winter"
+      "johnny-winter",
+      "willie-weepin-robinson"
     ],
     "source": "https://en.wikipedia.org/wiki/Susan_Tedeschi",
     "secondaryInstruments": [
@@ -62941,5 +62947,130 @@
     "source": "https://en.wikipedia.org/wiki/Back_Alley_John",
     "secondaryInstruments": [],
     "createdAt": "2026-10-26"
+  },
+  {
+    "id": "hollywood-fats",
+    "name": "Hollywood Fats",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Canned%20Heat%20at%20Woodstock%20Reunion%201979%20(cropped).jpg?width=500",
+    "image_source": "https://commons.wikimedia.org/wiki/File:Canned_Heat_at_Woodstock_Reunion_1979_(cropped).jpg",
+    "birthDate": "1954-03-17",
+    "birthPlace": "Los Angeles",
+    "birthCoords": [
+      -118.24368,
+      34.05223
+    ],
+    "deathDate": "1986-12-08",
+    "deathPlace": "Los Angeles",
+    "deathCoords": [
+      -118.24368,
+      34.05223
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=GLJocGvw9YM",
+    "albums": [],
+    "description": "Michael Leonard Mann (March 17, 1954 – December 8, 1986), known as Hollywood Fats, was an American blues guitarist, active in Los Angeles, California.",
+    "activeFrom": "1974",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Hollywood_Fats",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-27"
+  },
+  {
+    "id": "johnny-jenkins",
+    "name": "Johnny Jenkins",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1939-03-05",
+    "birthPlace": "Macon",
+    "birthCoords": [
+      -83.6324,
+      32.84069
+    ],
+    "deathDate": "2006-06-26",
+    "deathPlace": "Macon",
+    "deathCoords": [
+      -83.6324,
+      32.84069
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "",
+    "albums": [
+      {
+        "name": "Ton-Ton Macoute! (1970)",
+        "youtubeLink": null
+      }
+    ],
+    "description": "Johnny Edward Jenkins (March 5, 1939 – June 26, 2006) was an American left-handed blues guitarist who helped launch the career of Otis Redding, leading the Pinetoppers, the band in which Redding first sang. His flamboyant style of guitar playing also influenced Jimi Hendrix, and his 1970 album Ton-Ton Macoute! featured a young Duane Allman on guitar and dobro.",
+    "activeFrom": "1962",
+    "influences": [
+      "jimi-hendrix"
+    ],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "otis-redding",
+      "duane-allman"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Johnny_Jenkins",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-27"
+  },
+  {
+    "id": "willie-weepin-robinson",
+    "name": "Willie \"Weepin'\" Robinson",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1926-07-06",
+    "birthPlace": "Atlanta, Georgia",
+    "birthCoords": [
+      -84.388,
+      33.749
+    ],
+    "deathDate": "2007-12-30",
+    "deathPlace": "Jamaica Plain, Boston, Massachusetts",
+    "deathCoords": [
+      -71.1097,
+      42.3098
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Trenton, New Jersey",
+        "coords": [
+          -74.7429,
+          40.2171
+        ]
+      },
+      {
+        "place": "Boston, Massachusetts",
+        "coords": [
+          -71.0589,
+          42.3601
+        ]
+      }
+    ],
+    "instrument": "Vocals",
+    "bluesStyle": "Classic Blues",
+    "youtubeLink": "",
+    "albums": [],
+    "description": "Willie \"Weepin'\" Robinson was an American blues singer who began his career in the 1950s as an emcee and singer at a Trenton, New Jersey nightclub, later touring with B.B. King's orchestra. He settled in Boston in 1959, where he remained a fixture of the local blues club scene for decades, performing alongside younger admirers such as Susan Tedeschi and Bonnie Raitt.",
+    "activeFrom": "1950",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "bb-king",
+      "susan-tedeschi",
+      "bonnie-raitt"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Willie_Robinson_(singer)",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-27"
   }
 ]
