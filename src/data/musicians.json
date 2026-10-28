@@ -224,7 +224,8 @@
     "activeFrom": "1936",
     "influences": [
       "cecil-gant",
-      "huey-piano-smith"
+      "huey-piano-smith",
+      "rob-agerbeek"
     ],
     "influencedBy": [
       "pinetop-smith",
@@ -3174,7 +3175,8 @@
       "buddy-guy",
       "eddy-clearwater",
       "biscuit-miller",
-      "anthony-geraci"
+      "anthony-geraci",
+      "carlos-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Billy_Branch",
     "secondaryInstruments": [
@@ -10185,7 +10187,8 @@
       "albert-collins",
       "bb-king",
       "mel-brown",
-      "little-willie-john"
+      "little-willie-john",
+      "kal-david"
     ],
     "source": "https://en.wikipedia.org/wiki/Etta_James",
     "secondaryInstruments": [
@@ -16451,7 +16454,8 @@
       "mark-hummel",
       "long-john-baldry",
       "gary-moore",
-      "carolyn-wonderland"
+      "carolyn-wonderland",
+      "kal-david"
     ],
     "source": "https://en.wikipedia.org/wiki/John_Mayall",
     "secondaryInstruments": [
@@ -20603,7 +20607,9 @@
       "john-lee-hooker"
     ],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "alabama-slim"
+    ],
     "source": "https://en.wikipedia.org/wiki/Little_Freddie_King",
     "secondaryInstruments": [
       "Vocals"
@@ -23771,7 +23777,8 @@
     "influences": [
       "big-maceo-merriweather",
       "cecil-gant",
-      "huey-piano-smith"
+      "huey-piano-smith",
+      "rob-agerbeek"
     ],
     "influencedBy": [
       "hersal-thomas",
@@ -25585,7 +25592,8 @@
       "anthony-geraci",
       "marty-sammon",
       "david-gogo",
-      "billy-davenport"
+      "billy-davenport",
+      "carlos-johnson"
     ],
     "source": "https://en.wikipedia.org/wiki/Otis_Rush",
     "secondaryInstruments": [
@@ -31170,7 +31178,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "carlos-johnson"
+    ],
     "source": "https://en.wikipedia.org/wiki/Son_Seals",
     "secondaryInstruments": [
       "Vocals"
@@ -43885,7 +43895,8 @@
     "incomplete": false,
     "playedWith": [
       "albert-collins",
-      "john-mayall"
+      "john-mayall",
+      "kal-david"
     ],
     "source": "https://en.wikipedia.org/wiki/Coco_Montoya",
     "secondaryInstruments": [
@@ -44633,7 +44644,8 @@
     "influences": [
       "ike-turner",
       "cecil-gant",
-      "huey-piano-smith"
+      "huey-piano-smith",
+      "rob-agerbeek"
     ],
     "influencedBy": [
       "pinetop-smith"
@@ -61863,7 +61875,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "alabama-slim"
+    ],
     "source": "https://en.wikipedia.org/wiki/Ironing_Board_Sam",
     "secondaryInstruments": [
       "Vocals"
@@ -63072,5 +63086,247 @@
     "source": "https://en.wikipedia.org/wiki/Willie_Robinson_(singer)",
     "secondaryInstruments": [],
     "createdAt": "2026-10-27"
+  },
+  {
+    "id": "alabama-slim",
+    "name": "Alabama Slim",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Alabama_Slim.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": null,
+    "birthDate": "1939-03-29",
+    "birthPlace": "Vance, Alabama",
+    "birthCoords": [
+      -87.2611,
+      33.1465
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New Orleans, Louisiana",
+        "coords": [
+          -90.0715,
+          29.9511
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Swamp Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=v0_jhaG7_o0",
+    "albums": [
+      {
+        "name": "The Parlor (2021)",
+        "youtubeLink": "https://www.youtube.com/watch?v=yGgDliMJ5-I"
+      }
+    ],
+    "description": "Milton Frazier (born March 29, 1939), known professionally as Alabama Slim, is an American blues singer, guitarist, and songwriter.  It was noted that he \"plays a minimal guitar style with a piercing attack\".  Playing on-and-off since the 1950s, Alabama Slim has been involved in the recording of four albums since 2007, having had assistance both from Little Freddie King and the Music Maker Relief Foundation.",
+    "activeFrom": "1965",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "little-freddie-king",
+      "ironing-board-sam"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Alabama_Slim",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-28"
+  },
+  {
+    "id": "prince-albert-hunt",
+    "name": "Prince Albert Hunt",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1896-12-20",
+    "birthPlace": "Terrell, Texas",
+    "birthCoords": [
+      -96.2753,
+      32.7357
+    ],
+    "deathDate": "1931-03-21",
+    "deathPlace": "Dallas, Texas",
+    "deathCoords": [
+      -96.797,
+      32.7767
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      {
+        "place": "Dallas",
+        "coords": [
+          -96.7969,
+          32.7767
+        ]
+      }
+    ],
+    "instrument": "Fiddle",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=odYTDUYKUmI",
+    "albums": [
+      {
+        "name": "Blues in the Bottle (1928)",
+        "youtubeLink": "https://www.youtube.com/watch?v=odYTDUYKUmI"
+      }
+    ],
+    "description": "Archie \"Prince\" Albert Hunt (December 20, 1896 – March 21, 1931) from Terrell, Texas was an American country blues fiddle player.  He was one of the founders of the musical genre later defined as Western swing. \nHunt was born as Archie Albert Hunt in Terrell, Texas to Archibald Hunt and Manasa Emma Lee Skates.",
+    "activeFrom": "1922",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Prince_Albert_Hunt",
+    "secondaryInstruments": [
+      "Vocals",
+      "Guitar"
+    ],
+    "createdAt": "2026-10-28"
+  },
+  {
+    "id": "kal-david",
+    "name": "Kal David",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Kal_David_%28Lindenbrauerei_Unna%29_IMGP1216_smial_wp.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "image_source": null,
+    "birthDate": "1943-06-15",
+    "birthPlace": "Chicago, Illinois",
+    "birthCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "deathDate": "2022-08-16",
+    "deathPlace": "Palm Springs",
+    "deathCoords": [
+      -116.53027777778,
+      33.823888888889
+    ],
+    "spentTimePlaces": [
+      {
+        "place": "Los Angeles, California",
+        "coords": [
+          -118.2437,
+          34.0522
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "West Coast Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=qHJOECtb-lU",
+    "albums": [
+      {
+        "name": "The Fabulous Rhinestones (1972)",
+        "youtubeLink": "https://www.youtube.com/watch?v=PVoqzGLIP24"
+      }
+    ],
+    "description": "David Raskin (June 15, 1943 – August 16, 2022), who performed as Kal David, was an American blues guitarist, singer and songwriter, whose 50-year musical career in Illinois, New York, and California extended through various phases, including a highly regarded stint with Columbia Records in the early 1970s.",
+    "activeFrom": "1962",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "coco-montoya",
+      "etta-james",
+      "john-mayall"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Kal_David",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-28"
+  },
+  {
+    "id": "rob-agerbeek",
+    "name": "Rob Agerbeek",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rob-Agerbeek.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1937-09-28",
+    "birthPlace": "Batavia, Dutch East Indies",
+    "birthCoords": [
+      106.8456,
+      -6.2088
+    ],
+    "deathDate": "2023-07-05",
+    "deathPlace": "The Hague, Netherlands",
+    "deathCoords": [
+      4.3007,
+      52.0705
+    ],
+    "spentTimePlaces": [],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "https://www.youtube.com/watch?v=n80UKc52lvQ",
+    "albums": [
+      {
+        "name": "Beatles Boogies (1971)",
+        "youtubeLink": "https://www.youtube.com/watch?v=VjMttpYwp78"
+      }
+    ],
+    "description": "Robbert Arris Jules Agerbeek (28 September 1937 – 5 July 2023) was an Indo Dutch boogie-woogie and jazz pianist and winner of several jazz concourses in the Netherlands in the late 1950s.  He was regarded as one of Europe's finest jazz pianists, covering the full spectrum of jazz styles from his early days of Boogie-Woogie to Chicago traditional Jazz, swing and contemporary jazz.  Agerbeek gained recognition as a highly regarded accompanist for numerous renowned American jazz musicians who toured and resided in Europe during the 1960s and 1970s.",
+    "activeFrom": "1956",
+    "influences": [],
+    "influencedBy": [
+      "albert-ammons",
+      "pete-johnson",
+      "meade-lux-lewis"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Rob_Agerbeek",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-28"
+  },
+  {
+    "id": "carlos-johnson",
+    "name": "Carlos Johnson",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CarlosJohnson2008.jpg?width=500",
+    "image_source": null,
+    "birthDate": "1953-01-17",
+    "birthPlace": "Chicago, Illinois",
+    "birthCoords": [
+      -87.6298,
+      41.8781
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Chicago Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=Iir_Lu6mKxU",
+    "albums": [
+      {
+        "name": "My Name Is Carlos Johnson (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=9IKR6FaCnfI"
+      }
+    ],
+    "description": "Carlos Johnson (born January 17, 1953) is an American blues guitarist and singer.   He is left-handed, but plays a right-handed instrument upside-down like players such as Otis Rush, Albert King, and Jimi Hendrix.  Johnson is known for his aggressive playing which has attracted audiences in Chicago blue scene since the 1970s.",
+    "activeFrom": "1970s",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "billy-branch",
+      "son-seals",
+      "otis-rush"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Carlos_Johnson_(blues_musician)",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-28"
   }
 ]
