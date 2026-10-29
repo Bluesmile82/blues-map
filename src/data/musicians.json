@@ -2333,7 +2333,8 @@
       "big-boy-teddy-edwards",
       "jimmie-gordon",
       "brother-john-sellers",
-      "howard-armstrong"
+      "howard-armstrong",
+      "joshua-altheimer"
     ],
     "source": "https://en.wikipedia.org/wiki/Big_Bill_Broonzy",
     "secondaryInstruments": [
@@ -21543,7 +21544,8 @@
       "roosevelt-sykes",
       "georgia-white",
       "chippie-hill",
-      "myra-taylor"
+      "myra-taylor",
+      "joshua-altheimer"
     ],
     "source": "https://en.wikipedia.org/wiki/Lonnie_Johnson_(musician)",
     "secondaryInstruments": [
@@ -22202,7 +22204,8 @@
     "incomplete": false,
     "playedWith": [
       "charles-avery",
-      "will-ezell"
+      "will-ezell",
+      "sonny-scott"
     ],
     "source": "https://en.wikipedia.org/wiki/Lucille_Bogan",
     "secondaryInstruments": [],
@@ -31353,7 +31356,8 @@
     "playedWith": [
       "sleepy-john-estes",
       "big-joe-williams",
-      "tommy-bankhead"
+      "tommy-bankhead",
+      "joshua-altheimer"
     ],
     "source": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_I",
     "secondaryInstruments": [],
@@ -32100,7 +32104,8 @@
       "lafayette-thomas",
       "jimmy-wilson",
       "jimmy-nolen",
-      "chuck-berry"
+      "chuck-berry",
+      "t-d-bell"
     ],
     "influencedBy": [
       "blind-lemon-jefferson",
@@ -33842,7 +33847,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": false,
-    "playedWith": [],
+    "playedWith": [
+      "sonny-scott"
+    ],
     "source": "https://en.wikipedia.org/wiki/Walter_Roland",
     "secondaryInstruments": [
       "Piano",
@@ -34044,7 +34051,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "frank-edwards"
+      "frank-edwards",
+      "joshua-altheimer"
     ],
     "source": "https://en.wikipedia.org/wiki/Washboard_Sam",
     "secondaryInstruments": [
@@ -46546,7 +46554,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": true,
-    "playedWith": [],
+    "playedWith": [
+      "kid-prince-moore"
+    ],
     "source": "https://adp.library.ucsb.edu/index.php/mastertalent/detail/207688/Parker_Shorty_Bob",
     "secondaryInstruments": [
       "Vocals"
@@ -51700,7 +51710,8 @@
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [
-      "katie-webster"
+      "katie-webster",
+      "clarence-hollimon"
     ],
     "source": "https://en.wikipedia.org/wiki/Carol_Fran",
     "secondaryInstruments": [
@@ -56537,7 +56548,9 @@
     ],
     "description": "Floyd George Smith (January 25, 1917 – March 29, 1982), also credited as Floyd \"Guitar\" Smith, was a St. Louis-born guitarist whose 1939 recording of \"Floyd's Guitar Blues\" with Andy Kirk and His Twelve Clouds of Joy is widely considered the first hit record built around a blues solo on electric (steel) guitar, helping establish the instrument in blues and jazz. He spent his career in territory bands including Andy Kirk's orchestra and later led his own small combos, re-recording his signature tune for a new generation of listeners.",
     "activeFrom": "1937",
-    "influences": [],
+    "influences": [
+      "gene-phillips"
+    ],
     "influencedBy": [],
     "incomplete": false,
     "playedWith": [],
@@ -61826,7 +61839,9 @@
     "influences": [],
     "influencedBy": [],
     "incomplete": true,
-    "playedWith": [],
+    "playedWith": [
+      "t-d-bell"
+    ],
     "source": "https://en.wikipedia.org/wiki/Roosevelt_Williams",
     "secondaryInstruments": [],
     "createdAt": "2026-10-21"
@@ -63328,5 +63343,303 @@
       "Vocals"
     ],
     "createdAt": "2026-10-28"
+  },
+  {
+    "id": "t-d-bell",
+    "name": "T. D. Bell",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1922-12-26",
+    "birthPlace": "Belltown, Lee County, Texas",
+    "birthCoords": [
+      -96.96,
+      30.31
+    ],
+    "deathDate": "1999-01-09",
+    "deathPlace": "Austin, Texas",
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dC8JPJ38tUw",
+    "albums": [
+      {
+        "name": "It's About Time (1992)",
+        "youtubeLink": null
+      }
+    ],
+    "description": "T. D. Bell, nicknamed \"Little T-Bone,\" was an American blues guitarist and a mainstay of the Austin, Texas blues scene from the late 1940s through the 1960s. Heavily influenced by T-Bone Walker, he fronted his own band the Cadillacs and backed touring stars such as B.B. King and Bobby Bland, before teaming with pianist Erbie Bowser for a decades-long partnership that culminated in a Grammy-nominated album and a 1994 performance at Carnegie Hall.",
+    "activeFrom": "1949",
+    "influences": [],
+    "influencedBy": [
+      "t-bone-walker"
+    ],
+    "incomplete": false,
+    "playedWith": [
+      "erbie-bowser",
+      "roosevelt-grey-ghost-williams"
+    ],
+    "source": "https://en.wikipedia.org/wiki/T._D._Bell",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-29"
+  },
+  {
+    "id": "erbie-bowser",
+    "name": "Erbie Bowser",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1918-05-05",
+    "birthPlace": "Davilla, Texas",
+    "birthCoords": [
+      -95.638611111111,
+      31.758055555556
+    ],
+    "deathDate": "1995-08-15",
+    "deathPlace": "Austin, Texas",
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Texas",
+        "coords": [
+          -99.9018,
+          31.9686
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=dC8JPJ38tUw",
+    "albums": [
+      {
+        "name": "It's About Time (1992)",
+        "youtubeLink": null
+      }
+    ],
+    "description": "Erbie Bowser (May 5, 1918 – August 15, 1995) was an American blues pianist and singer. \nBowser was born in Davilla, Texas, moving with his parents to Palestine, Texas as a child.   He grew up in a musical family, and learned piano, joining the North Carolina Cotton Pickers Review in his teens.",
+    "activeFrom": "1940s",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "t-d-bell"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Erbie_Bowser",
+    "secondaryInstruments": [
+      "Vocals"
+    ],
+    "createdAt": "2026-10-29"
+  },
+  {
+    "id": "clarence-hollimon",
+    "name": "Clarence Hollimon",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1937-10-24",
+    "birthPlace": "Houston, Texas",
+    "birthCoords": [
+      -95.3698,
+      29.7604
+    ],
+    "deathDate": "2000-04-23",
+    "deathPlace": "Houston, Texas",
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New York City, New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Texas Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=DWB9li3c6JU",
+    "albums": [
+      {
+        "name": "Soul Sensation! (1992)",
+        "youtubeLink": null
+      }
+    ],
+    "description": "Clarence \"Gristle\" Hollimon was an American blues guitarist from Houston's Fifth Ward who became a top session player for Don Robey's Duke and Peacock labels, backing artists such as Bobby \"Blue\" Bland and Junior Parker. In 1983 he married singer Carol Fran, and the duo, billed as Fran and Hollimon, recorded together for over a decade and performed at the 1996 Summer Olympics.",
+    "activeFrom": "1950s",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": false,
+    "playedWith": [
+      "carol-fran"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Clarence_Hollimon",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-29"
+  },
+  {
+    "id": "gene-phillips",
+    "name": "Gene Phillips",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1915-05-25",
+    "birthPlace": "St. Louis, Missouri",
+    "birthCoords": [
+      -90.19944444444444,
+      38.62638888888889
+    ],
+    "deathDate": "1990-01-10",
+    "deathPlace": "Lakewood, California",
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Jump Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=jz0X5OP6utE",
+    "albums": [
+      {
+        "name": "Swinging the Blues (2000)",
+        "youtubeLink": "https://www.youtube.com/watch?v=q1ZxejJSFdE"
+      },
+      {
+        "name": "Drinkin' and Stinkin' (2003)",
+        "youtubeLink": "https://www.youtube.com/watch?v=mpJ3pYXsArI"
+      }
+    ],
+    "description": "Gene Phillips was an American jump blues guitarist and singer, and a pioneer of the lap steel guitar. Based in Los Angeles, he recorded for Modern Records through the Bihari brothers, fronting his own group the Rhythm Aces, and was taught lap steel technique by fellow guitarist Floyd Smith.",
+    "activeFrom": "1940s",
+    "influences": [],
+    "influencedBy": [
+      "floyd-smith"
+    ],
+    "incomplete": false,
+    "playedWith": [],
+    "source": "https://en.wikipedia.org/wiki/Gene_Phillips_(guitarist)",
+    "secondaryInstruments": [
+      "Lap steel guitar",
+      "Vocals"
+    ],
+    "createdAt": "2026-10-29"
+  },
+  {
+    "id": "joshua-altheimer",
+    "name": "Joshua Altheimer",
+    "image": "",
+    "image_source": null,
+    "birthDate": "1910-05-17",
+    "birthPlace": "Altheimer, Arkansas",
+    "birthCoords": [
+      -92.2,
+      34.8
+    ],
+    "deathDate": "1940-11-18",
+    "deathPlace": "Chicago, Illinois",
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "Chicago",
+        "coords": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    ],
+    "instrument": "Piano",
+    "bluesStyle": "Boogie Woogie",
+    "youtubeLink": "",
+    "albums": [],
+    "description": "Joshua Altheimer (May 17, 1910 – November 18, 1940) was an American pianist who is remembered for accompanying Big Bill Broonzy, Lonnie Johnson, Sonny Boy Williamson and others on influential blues recordings made in Chicago in the 1930s.  He was described by Broonzy as \"the best blues piano player I ever heard\", and by blues historian Hugues Panassié as \"the greatest blues pianist on records\".",
+    "activeFrom": "1937",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "big-bill-broonzy",
+      "sonny-boy-williamson-i",
+      "washboard-sam",
+      "lonnie-johnson"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Joshua_Altheimer",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-29"
+  },
+  {
+    "id": "sonny-scott",
+    "name": "Sonny Scott",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "Alabama",
+    "birthCoords": [
+      0,
+      0
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [],
+    "instrument": "Guitar",
+    "bluesStyle": "Country Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=5liU1CploZQ",
+    "albums": [],
+    "description": "Sonny Scott was an American country blues guitarist, singer and songwriter, primarily noted for his association with Walter Roland and Lucille Bogan.  In 1933, Scott recorded seventeen tracks in his own name, although only twelve were released at the time.  AllMusic noted that his vocal and guitar styling was similar to Ed Bell, Blind Boy Fuller, Curley Weaver, Furry Lewis, and Buddy Moss.",
+    "activeFrom": "1933",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "walter-roland",
+      "lucille-bogan"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Sonny_Scott",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-29"
+  },
+  {
+    "id": "kid-prince-moore",
+    "name": "Kid Prince Moore",
+    "image": "",
+    "image_source": null,
+    "birthDate": "",
+    "birthPlace": "",
+    "birthCoords": [
+      0,
+      0
+    ],
+    "deathDate": null,
+    "deathPlace": null,
+    "deathCoords": null,
+    "spentTimePlaces": [
+      {
+        "place": "New York",
+        "coords": [
+          -74.006,
+          40.7128
+        ]
+      }
+    ],
+    "instrument": "Guitar",
+    "bluesStyle": "Piedmont Blues",
+    "youtubeLink": "https://www.youtube.com/watch?v=-jBYKoJkbKw",
+    "albums": [
+      {
+        "name": "Complete Recorded Works in Chronological Order, 1936-1938 (1993)",
+        "youtubeLink": "https://www.youtube.com/watch?v=hZspt_78sNc"
+      }
+    ],
+    "description": "\"Kid\" Prince Moore was an American blues musician, from the United States, who recorded 17 songs from 1936 to 1938.  Moore played in a Piedmont blues style, similar to that of Blind Blake.  Moore also recorded two Gospel Music tracks, \"Church Bells\" and \"Sign of Judgement\".",
+    "activeFrom": "1936",
+    "influences": [],
+    "influencedBy": [],
+    "incomplete": true,
+    "playedWith": [
+      "shorty-bob-parker"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Kid_Prince_Moore",
+    "secondaryInstruments": [],
+    "createdAt": "2026-10-29"
   }
 ]
